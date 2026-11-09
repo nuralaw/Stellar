@@ -6,7 +6,8 @@ import mark from "../../public/logo-mark.png";
 import markDark from "../../public/logo-mark-dark.png";
 
 /** The "S" mark only. Height is set via className (e.g. "h-10"); width follows. */
-export function LogoMark({ className = "h-8" }: { className?: string }) {
+export function LogoMark({ className = "h-8", variant = "auto" }: { className?: string; variant?: "auto" | "onDark" }) {
+  if (variant === "onDark") return <Image src={markDark} alt="" className={`w-auto ${className}`} />;
   return (
     <>
       <Image src={mark} alt="" className={`w-auto dark:hidden ${className}`} />

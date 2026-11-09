@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Collapsible sidebar. <html data-sidebar="collapsed"> is set before paint (see layout.tsx).
+   sb-collapsed: anything on the page while collapsed (e.g. content padding).
+   rail: the desktop sidebar ([data-rail]) and its children while collapsed. */
+@custom-variant sb-collapsed (&:where([data-sidebar="collapsed"] *));
+@custom-variant rail (&:where([data-sidebar="collapsed"] [data-rail], [data-sidebar="collapsed"] [data-rail] *));
+
 /*
   Palette: orange + gray, 60-30-10 rule
   60% — dominant neutrals: page background, cards        (bg, surface, surface-2, ink, muted, line)
