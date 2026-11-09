@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Design tokens. Use via Tailwind: bg-bg, bg-surface, text-ink, text-muted, border-line, bg-primary, text-accent… */
+:root {
+  --bg: #f8f8f5;
+  --surface: #ffffff;
+  --surface-2: #f0f0ea;
+  --ink: #12141f;
+  --muted: #5b5f72;
+  --line: #e3e3dc;
+  --primary: #3a3fd4;
+  --primary-hover: #2f33b8;
+  --primary-ink: #ffffff;
+  --primary-soft: #e9eafd;
+  --accent: #f2a516;
+  --accent-soft: #fdf1d8;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d16;
+    --surface: #131624;
+    --surface-2: #1b1f31;
+    --ink: #eceef6;
+    --muted: #9a9fb5;
+    --line: #262a3e;
+    --primary: #7b80ff;
+    --primary-hover: #959aff;
+    --primary-ink: #0b0d16;
+    --primary-soft: #1e2149;
+    --accent: #f5b73b;
+    --accent-soft: #33280f;
+    --success: #4ade80;
+    --success-soft: #0f2a1a;
+    --danger: #f87171;
+    --danger-soft: #2f1414;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--primary-soft);
+}
