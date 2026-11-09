@@ -55,14 +55,32 @@ export function SiteHeader() {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden"; // no page scroll behind the open sidebar
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
   }, [open]);
 
   return (
     <>
       <header className="sticky top-0 z-30 border-b border-side-line bg-side">
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 md:px-8">
-          <Logo eager variant="onDark" />
+          <div className="flex items-center gap-2">
+            {/* Opens the slide-out sidebar (all screen sizes) */}
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              aria-label="Open menu"
+              aria-expanded={open}
+              aria-controls="site-sidebar"
+              className="-ml-2 grid h-10 w-10 place-items-center rounded-lg text-side-ink transition-colors hover:bg-side-2"
+            >
+              <Icon d="M4 6h16M4 12h16M4 18h16" className="h-6 w-6" />
+            </button>
+            <Logo eager variant="onDark" />
+          </div>
 
           {/* Desktop nav */}
           <nav className="mx-auto hidden items-center gap-1 lg:flex" aria-label="Main">
@@ -105,29 +123,19 @@ export function SiteHeader() {
             >
               Sign in
             </Link>
-
-            {/* Mobile: menu button */}
-            <button
-              type="button"
-              onClick={() => setOpen(true)}
-              aria-label="Open menu"
-              aria-expanded={open}
-              className="grid h-10 w-10 place-items-center rounded-lg text-side-ink hover:bg-side-2 lg:hidden"
-            >
-              <Icon d="M4 6h16M4 12h16M4 18h16" className="h-6 w-6" />
-            </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile drawer */}
+      {/* Slide-out sidebar */}
       <div
-        className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
         onClick={close}
         aria-hidden="true"
       />
       <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-72 max-w-[85vw] flex-col gap-8 border-r border-side-line bg-side p-4 shadow-xl transition-transform lg:hidden ${
+        id="site-sidebar"
+        className={`fixed inset-y-0 left-0 z-50 flex w-72 max-w-[85vw] flex-col gap-8 overflow-y-auto border-r border-side-line bg-side p-4 shadow-2xl transition-transform duration-300 ease-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Menu"
@@ -144,7 +152,7 @@ export function SiteHeader() {
             <Icon d="M6 6l12 12M18 6 6 18" />
           </button>
         </div>
-        <nav className="flex flex-1 flex-col gap-6" aria-label="Main mobile">
+        <nav className="flex flex-1 flex-col gap-6" aria-label="Sidebar">
           <DrawerGroup title="Learn" items={MAIN_NAV} pathname={pathname} onNavigate={close} />
           <DrawerGroup title="Account" items={ACCOUNT_NAV} pathname={pathname} onNavigate={close} />
         </nav>
