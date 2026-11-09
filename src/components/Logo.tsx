@@ -15,13 +15,30 @@ export function LogoMark({ className = "h-8" }: { className?: string }) {
   );
 }
 
-/** Full "Stellar" wordmark linking home. */
-export function Logo({ className = "h-7", eager = false }: { className?: string; eager?: boolean }) {
+/**
+ * Full "Stellar" wordmark linking home.
+ * variant "auto" follows the color scheme; "onDark" always uses the light version (for charcoal surfaces).
+ */
+export function Logo({
+  className = "h-7",
+  eager = false,
+  variant = "auto",
+}: {
+  className?: string;
+  eager?: boolean;
+  variant?: "auto" | "onDark";
+}) {
   const loading = eager ? "eager" : "lazy";
   return (
     <Link href="/" aria-label="Stellar home" className="inline-flex shrink-0 items-center">
-      <Image src={logo} alt="Stellar" loading={loading} className={`w-auto dark:hidden ${className}`} />
-      <Image src={logoDark} alt="Stellar" loading={loading} className={`hidden w-auto dark:block ${className}`} />
+      {variant === "onDark" ? (
+        <Image src={logoDark} alt="Stellar" loading={loading} className={`w-auto ${className}`} />
+      ) : (
+        <>
+          <Image src={logo} alt="Stellar" loading={loading} className={`w-auto dark:hidden ${className}`} />
+          <Image src={logoDark} alt="Stellar" loading={loading} className={`hidden w-auto dark:block ${className}`} />
+        </>
+      )}
     </Link>
   );
 }

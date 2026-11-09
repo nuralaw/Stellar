@@ -17,7 +17,7 @@ function Icon({ d, className = "h-5 w-5" }: { d: string; className?: string }) {
 function NavGroup({ title, items, pathname, onNavigate }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void }) {
   return (
     <div>
-      <p className="px-3 pb-2 text-[11px] font-semibold tracking-wider text-muted uppercase">{title}</p>
+      <p className="px-3 pb-2 text-[11px] font-semibold tracking-wider text-side-muted uppercase">{title}</p>
       <ul className="space-y-1">
         {items.map((item) => {
           const active = isActive(pathname, item.href);
@@ -28,7 +28,7 @@ function NavGroup({ title, items, pathname, onNavigate }: { title: string; items
                 onClick={onNavigate}
                 aria-current={active ? "page" : undefined}
                 className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                  active ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink"
+                  active ? "bg-primary/15 text-accent" : "text-side-muted hover:bg-side-2 hover:text-side-ink"
                 }`}
               >
                 <Icon d={item.icon} />
@@ -44,14 +44,14 @@ function NavGroup({ title, items, pathname, onNavigate }: { title: string; items
 
 function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
   return (
-    <div className="rounded-xl border border-line bg-bg p-3">
+    <div className="rounded-xl border border-side-line bg-side-2 p-3">
       <Link href="/profile" onClick={onNavigate} className="flex items-center gap-3 rounded-lg">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary-soft text-primary">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-accent">
           <Icon d={ACCOUNT_NAV[0].icon} />
         </span>
         <span className="min-w-0">
-          <span className="block truncate text-sm font-semibold">Guest student</span>
-          <span className="block truncate text-xs text-muted">Sign in to save progress</span>
+          <span className="block truncate text-sm font-semibold text-side-ink">Guest student</span>
+          <span className="block truncate text-xs text-side-muted">Sign in to save progress</span>
         </span>
       </Link>
       <Link
@@ -69,7 +69,7 @@ function SidebarContent({ pathname, onNavigate }: { pathname: string; onNavigate
   return (
     <div className="flex h-full flex-col gap-8 p-4">
       <div className="px-2 pt-2">
-        <Logo eager />
+        <Logo eager variant="onDark" />
       </div>
       <nav className="flex flex-1 flex-col gap-6" aria-label="Main">
         <NavGroup title="Learn" items={MAIN_NAV} pathname={pathname} onNavigate={onNavigate} />
@@ -95,30 +95,30 @@ export function Sidebar() {
   return (
     <>
       {/* Desktop: fixed sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 border-r border-line bg-surface lg:block">
+      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 border-r border-side-line bg-side lg:block">
         <SidebarContent pathname={pathname} onNavigate={() => {}} />
       </aside>
 
       {/* Mobile: top bar + drawer */}
-      <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-line bg-bg/85 px-4 backdrop-blur lg:hidden">
-        <Logo eager className="h-6" />
+      <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden">
+        <Logo eager variant="onDark" className="h-6" />
         <button
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           aria-expanded={open}
-          className="grid h-10 w-10 place-items-center rounded-lg text-ink hover:bg-surface-2"
+          className="grid h-10 w-10 place-items-center rounded-lg text-side-ink hover:bg-side-2"
         >
           <Icon d="M4 6h16M4 12h16M4 18h16" className="h-6 w-6" />
         </button>
       </div>
       <div
-        className={`fixed inset-0 z-40 bg-black/40 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
         onClick={close}
         aria-hidden="true"
       />
       <aside
-        className={`fixed inset-y-0 left-0 z-50 w-72 max-w-[85vw] border-r border-line bg-surface shadow-xl transition-transform lg:hidden ${
+        className={`fixed inset-y-0 left-0 z-50 w-72 max-w-[85vw] border-r border-side-line bg-side shadow-xl transition-transform lg:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Menu"
@@ -128,7 +128,7 @@ export function Sidebar() {
           type="button"
           onClick={close}
           aria-label="Close menu"
-          className="absolute top-4 right-3 grid h-9 w-9 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink"
+          className="absolute top-4 right-3 grid h-9 w-9 place-items-center rounded-lg text-side-muted hover:bg-side-2 hover:text-side-ink"
         >
           <Icon d="M6 6l12 12M18 6 6 18" />
         </button>

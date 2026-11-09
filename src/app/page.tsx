@@ -101,7 +101,7 @@ function SectionBreakdown({ id }: { id: SectionId }) {
               <span className="tabular-nums text-muted">≈{d.weight}</span>
             </div>
             <div className="mt-1.5 h-1.5 rounded-full bg-surface-2">
-              <div className="h-full rounded-full bg-primary" style={{ width: d.weight }} />
+              <div className="h-full rounded-full bg-muted" style={{ width: d.weight }} />
             </div>
           </li>
         ))}
@@ -194,12 +194,14 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 md:px-8 pt-8">
-        <div className="rounded-3xl bg-primary px-6 py-12 text-center text-primary-ink md:py-16">
-          <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">Start preparing today. It&apos;s free.</h2>
-          <p className="mx-auto mt-3 max-w-lg opacity-85">No credit card, no trial. Just practice.</p>
+        <div className="rounded-3xl bg-side px-6 py-12 text-center text-side-ink md:py-16">
+          <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
+            Start preparing today. <span className="text-accent">It&apos;s free.</span>
+          </h2>
+          <p className="mx-auto mt-3 max-w-lg text-side-muted">No credit card, no trial. Just practice.</p>
           <Link
             href="/practice"
-            className="mt-8 inline-block rounded-xl bg-surface px-6 py-3 font-semibold text-ink transition-opacity hover:opacity-90"
+            className="mt-8 inline-block rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover"
           >
             Start practicing
           </Link>
