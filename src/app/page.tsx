@@ -114,13 +114,13 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-16 pb-20 md:px-8 xl:grid-cols-[1.1fr_1fr] md:pt-20">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-16 pb-20 md:px-8 lg:grid-cols-[1.1fr_1fr] md:pt-20">
         <div>
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             100% free · Digital SAT format
           </p>
-          <h1 className="text-4xl leading-[1.08] font-bold tracking-tight text-balance md:text-5xl 2xl:text-6xl">
+          <h1 className="text-4xl leading-[1.08] font-bold tracking-tight text-balance md:text-5xl lg:text-6xl">
             Your free path to a higher SAT score.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-pretty text-muted">
@@ -148,7 +148,7 @@ export default function Home() {
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 md:px-8 py-16">
         <h2 className="text-2xl font-bold tracking-tight md:text-3xl">Everything you need to prepare</h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map((f) => (
             <Link
               key={f.title}

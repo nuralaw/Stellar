@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { InlineScript } from "@/components/InlineScript";
-import { Sidebar } from "@/components/Sidebar";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
-import { THEME_INIT_SCRIPT } from "@/lib/theme";
+import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,15 +28,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full font-sans">
-        <InlineScript html={THEME_INIT_SCRIPT + SIDEBAR_INIT_SCRIPT} />
-        <Sidebar />
-        {/* Desktop theme switch, top-right corner (mobile one lives in the top bar) */}
-        <ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid" />
-        <div className="flex min-h-screen flex-col transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px]">
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </div>
+      <body className="flex min-h-full flex-col font-sans">
+        <InlineScript html={THEME_INIT_SCRIPT} />
+        <SiteHeader />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
