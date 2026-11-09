@@ -6,8 +6,8 @@ Stack: Next.js 16 (App Router) + Tailwind 4 + Supabase, deployed on Vercel.
 Start: 2026-11-10 · Target launch: 2026-11-29
 
 ## Week 1 — Foundation & question bank
-- [x] **Day 1** — Scaffold, design tokens (light/dark), site layout, landing page, SAT taxonomy + question data model, logo, header navigation, theme switch
-- [ ] **Day 2** — Student profile page (`/profile`): name/avatar, target score, test date + countdown, stats overview; header profile menu (saved in browser until Supabase on Day 5)
+- [x] **Day 1** — Scaffold, design tokens (light/dark), site layout, landing page, SAT taxonomy + question data model, logo, sidebar navigation
+- [ ] **Day 2** — Student profile page (`/profile`): name/avatar, target score, test date + countdown, stats overview; sidebar profile card (saved in browser until Supabase on Day 5)
 - [ ] **Day 2** — Practice mode UI: pick section/domain/difficulty, answer, instant feedback, explanations; KaTeX math rendering
 - [ ] **Day 3** — Math content batch #1 (Algebra, Advanced Math)
 - [ ] **Day 4** — R&W content batch #1 (all 4 domains)
