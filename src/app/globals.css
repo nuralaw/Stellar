@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Theme: dark: utilities follow <html data-theme="dark">, not the OS setting. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* Collapsible sidebar. <html data-sidebar="collapsed"> is set before paint (see layout.tsx).
    sb-collapsed: anything on the page while collapsed (e.g. content padding).
    rail: the desktop sidebar ([data-rail]) and its children while collapsed. */
@@ -41,33 +44,32 @@
   --danger-soft: #fee2e2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111112;
-    --surface: #1a1a1c;
-    --surface-2: #232326;
-    --ink: #ededee;
-    --muted: #9d9da3;
-    --line: #2b2b2f;
+/* Dark theme: <html data-theme="dark"> is set before paint from saved choice or system preference. */
+:root[data-theme="dark"] {
+  --bg: #111112;
+  --surface: #1a1a1c;
+  --surface-2: #232326;
+  --ink: #ededee;
+  --muted: #9d9da3;
+  --line: #2b2b2f;
 
-    --side: #0a0a0b;
-    --side-2: #18181a;
-    --side-ink: #ededee;
-    --side-muted: #8e8e94;
-    --side-line: #232326;
+  --side: #0a0a0b;
+  --side-2: #18181a;
+  --side-ink: #ededee;
+  --side-muted: #8e8e94;
+  --side-line: #232326;
 
-    --primary: #fb923c;
-    --primary-hover: #fdba74;
-    --primary-ink: #1a1a1c;
-    --primary-soft: #2e1d10;
-    --accent: #fb923c;
-    --accent-soft: #33210f;
+  --primary: #fb923c;
+  --primary-hover: #fdba74;
+  --primary-ink: #1a1a1c;
+  --primary-soft: #2e1d10;
+  --accent: #fb923c;
+  --accent-soft: #33210f;
 
-    --success: #4ade80;
-    --success-soft: #0f2a1a;
-    --danger: #f87171;
-    --danger-soft: #2f1414;
-  }
+  --success: #4ade80;
+  --success-soft: #0f2a1a;
+  --danger: #f87171;
+  --danger-soft: #2f1414;
 }
 
 @theme inline {
@@ -103,4 +105,11 @@ body {
 
 ::selection {
   background: var(--accent-soft);
+}
+
+/* Theme switch uses a View Transition; disable the default cross-fade so the circular reveal shows. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

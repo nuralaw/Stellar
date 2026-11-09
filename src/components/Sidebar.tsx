@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 import { ACCOUNT_NAV, MAIN_NAV, isActive, type NavItem } from "@/lib/nav";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 
@@ -133,15 +134,18 @@ export function Sidebar() {
       {/* Mobile: top bar + slide-in drawer */}
       <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden">
         <Logo eager variant="onDark" className="h-6" />
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          aria-label="Open menu"
-          aria-expanded={open}
-          className="grid h-10 w-10 place-items-center rounded-lg text-side-ink hover:bg-side-2"
-        >
-          <Icon d="M4 6h16M4 12h16M4 18h16" className="h-6 w-6" />
-        </button>
+        <div className="flex items-center gap-1">
+          <ThemeToggle className="text-side-ink hover:bg-side-2" />
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
+            aria-expanded={open}
+            className="grid h-10 w-10 place-items-center rounded-lg text-side-ink hover:bg-side-2"
+          >
+            <Icon d="M4 6h16M4 12h16M4 18h16" className="h-6 w-6" />
+          </button>
+        </div>
       </div>
       <div
         className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
