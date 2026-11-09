@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { NAV } from "./SiteHeader";
+import { MAIN_NAV } from "@/lib/nav";
 
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-line">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1fr_auto]">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1fr_auto] md:px-8">
         <div className="space-y-3">
           <Logo />
           <p className="max-w-md text-sm text-muted">
@@ -13,8 +13,8 @@ export function SiteFooter() {
             lessons.
           </p>
         </div>
-        <nav className="flex gap-6 text-sm" aria-label="Footer">
-          {NAV.map((item) => (
+        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+          {MAIN_NAV.filter((i) => i.href !== "/").map((item) => (
             <Link key={item.href} href={item.href} className="text-muted hover:text-ink">
               {item.label}
             </Link>
@@ -22,7 +22,7 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className="border-t border-line">
-        <p className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed text-muted">
+        <p className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed text-muted md:px-8">
           SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse,
           this website. All practice questions on Stellar are original.
         </p>
