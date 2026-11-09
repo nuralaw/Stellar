@@ -11,7 +11,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
-        <Logo />
+        <Logo eager />
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
           {NAV.map((item) => (
             <Link

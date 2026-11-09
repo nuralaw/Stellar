@@ -8,10 +8,11 @@
   --ink: #12141f;
   --muted: #5b5f72;
   --line: #e3e3dc;
-  --primary: #3a3fd4;
-  --primary-hover: #2f33b8;
+  /* Brand blue, sampled from the logo */
+  --primary: #2457d6;
+  --primary-hover: #1c47b5;
   --primary-ink: #ffffff;
-  --primary-soft: #e9eafd;
+  --primary-soft: #e6ecfc;
   --accent: #f2a516;
   --accent-soft: #fdf1d8;
   --success: #15803d;
@@ -28,10 +29,10 @@
     --ink: #eceef6;
     --muted: #9a9fb5;
     --line: #262a3e;
-    --primary: #7b80ff;
-    --primary-hover: #959aff;
+    --primary: #7a9cff;
+    --primary-hover: #94b0ff;
     --primary-ink: #0b0d16;
-    --primary-soft: #1e2149;
+    --primary-soft: #17224a;
     --accent: #f5b73b;
     --accent-soft: #33280f;
     --success: #4ade80;
