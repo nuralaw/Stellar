@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
-import { ACCOUNT_NAV, MAIN_NAV, isActive, type NavItem } from "@/lib/nav";
+import { ACCOUNT_NAV, NAV_GROUPS, isActive, type NavItem } from "@/lib/nav";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { reviewQueue } from "@/lib/review";
@@ -123,8 +123,10 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
           </button>
         )}
       </div>
-      <nav className="flex flex-1 flex-col gap-6" aria-label="Main">
-        <NavGroup title="Learn" items={MAIN_NAV} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
+      <nav className="flex flex-1 flex-col gap-5" aria-label="Main">
+        {NAV_GROUPS.map((g) => (
+          <NavGroup key={g.title} title={g.title} items={g.items} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
+        ))}
         <NavGroup title="Account" items={ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
       </nav>
       <ProfileCard onNavigate={onNavigate} />
