@@ -29,8 +29,9 @@ const fmtDay = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString(
 /**
  * Month calendar of study activity: each day shows how many questions were answered (shade = amount).
  * Official SAT dates and the student's own test day are marked. Click a day for its breakdown.
+ * compact: small cells with just the date and shade (Home); counts show in the day box below.
  */
-export function StudyCalendar({ days, now, testDate }: { days: Map<string, DayStats>; now: number; testDate: string | null }) {
+export function StudyCalendar({ days, now, testDate, compact = false }: { days: Map<string, DayStats>; now: number; testDate: string | null; compact?: boolean }) {
   const today = localDay(now);
   const first = [...days.keys()].sort()[0];
   // Navigable range: from the first study month (or this month) to the test month / two months ahead.
@@ -93,6 +94,11 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
             </button>
           )}
         </div>
+        {compact ? (
+          <p className="text-[13px] text-muted tabular-nums">
+            <span className="font-semibold text-ink">{monthTotal.toLocaleString("en-US")}</span> this month · {activeDays} active {activeDays === 1 ? "day" : "days"}
+          </p>
+        ) : (
         <dl className="flex gap-5 text-sm">
           <div>
             <dt className="text-xs text-muted">This month</dt>
@@ -107,9 +113,10 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
             <dd className="font-semibold tabular-nums">{best}</dd>
           </div>
         </dl>
+        )}
       </div>
 
-      <div className="mt-4 grid grid-cols-7 gap-1 sm:gap-1.5" role="grid" aria-label={`Study activity, ${fmtMonth(month)}`}>
+      <div className={`grid grid-cols-7 ${compact ? "mt-3 gap-1" : "mt-4 gap-1 sm:gap-1.5"}`} role="grid" aria-label={`Study activity, ${fmtMonth(month)}`}>
         {WEEKDAYS.map((w) => (
           <span key={w} className="pb-1 text-center text-xs font-medium text-muted" role="columnheader">
             <span className="sm:hidden">{w[0]}</span>
@@ -137,19 +144,22 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
               aria-selected={selected === iso}
               title={label}
               style={{ background: fill(l) }}
-              className={`relative flex aspect-square flex-col rounded-lg border p-1 text-left transition-shadow sm:aspect-auto sm:h-20 sm:p-2 ${
-                l < 0 ? (future ? "border-transparent bg-transparent" : "border-transparent bg-surface-2/40") : "border-transparent"
+              className={`relative flex rounded-lg border transition-shadow ${compact ? "h-9 items-center justify-center sm:h-10" : "aspect-square flex-col p-1 text-left sm:aspect-auto sm:h-20 sm:p-2"} ${
+                l < 0 ? (future || compact ? "border-transparent bg-transparent hover:bg-surface-2/60" : "border-transparent bg-surface-2/40") : "border-transparent"
               } ${isTest ? "ring-2 ring-accent ring-offset-1 ring-offset-surface" : iso === today ? "ring-2 ring-ink/70 ring-offset-1 ring-offset-surface" : ""} ${
                 selected === iso && !isTest && iso !== today ? "ring-2 ring-primary/50" : ""
               } hover:shadow-md`}
             >
-              <span className={`text-[10px] leading-none font-medium sm:text-xs ${l >= 2 ? "text-white/85" : future ? "text-muted/60" : "text-muted"}`}>
+              <span className={`leading-none font-medium ${compact ? "text-[13px] tabular-nums" : "text-[10px] sm:text-xs"} ${l >= 2 ? "text-white/85" : future ? "text-muted/60" : "text-muted"}`}>
                 {Number(iso.slice(8))}
               </span>
-              {n > 0 && (
+              {n > 0 && !compact && (
                 <span className={`mt-auto self-center text-xs font-bold tabular-nums sm:self-end sm:text-lg ${l >= 2 ? "text-white" : "text-ink"}`}>{n}</span>
               )}
-              {(sat || isTest) && (
+              {(sat || isTest) && compact && (
+                <span className={`absolute top-1 right-1 h-1.5 w-1.5 rounded-full ${isTest ? "bg-accent" : "bg-ink/70"}`} aria-hidden="true" />
+              )}
+              {(sat || isTest) && !compact && (
                 <span
                   className={`absolute top-1 right-1 rounded px-1 text-[8px] leading-tight font-bold tracking-wide uppercase sm:text-[9px] ${
                     isTest ? "bg-accent text-white" : "bg-ink/80 text-bg"
@@ -174,21 +184,21 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
           ))}
           More
         </span>
-        <span className="tabular-nums">1–9 · 10–29 · 30–59 · 60+ questions</span>
+        {!compact && <span className="tabular-nums">1–9 · 10–29 · 30–59 · 60+ questions</span>}
         {satInView && (
           <span className="flex items-center gap-1.5">
-            <span className="rounded bg-ink/80 px-1 text-[9px] font-bold text-bg">SAT</span> official test date
+            {compact ? <span className="h-1.5 w-1.5 rounded-full bg-ink/70" /> : <span className="rounded bg-ink/80 px-1 text-[9px] font-bold text-bg">SAT</span>} official SAT date
           </span>
         )}
         {testDate && monthKey(testDate) === month && (
           <span className="flex items-center gap-1.5">
-            <span className="rounded bg-accent px-1 text-[9px] font-bold text-white">TEST</span> your test day
+            {compact ? <span className="h-1.5 w-1.5 rounded-full bg-accent" /> : <span className="rounded bg-accent px-1 text-[9px] font-bold text-white">TEST</span>} your test day
           </span>
         )}
       </div>
 
       {/* Selected day */}
-      <div className="mt-4 rounded-xl bg-surface-2/60 px-4 py-3 text-sm" aria-live="polite">
+      <div className={`rounded-xl bg-surface-2/60 px-4 text-sm ${compact ? "mt-3 py-2.5" : "mt-4 py-3"}`} aria-live="polite">
         <p className="font-semibold">
           {fmtDay(selected)}
           {selected === today && <span className="ml-2 text-xs font-medium text-muted">today</span>}

@@ -3,15 +3,14 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { computeStats } from "@/lib/stats";
-import { SectionCard, TopicBreakdown } from "./Breakdown";
 import { StudyCalendar } from "./StudyCalendar";
 import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
-import { AccuracyDonut } from "./AccuracyDonut";
 import { Countdown } from "./Countdown";
-import { ScoreChart } from "./ScoreChart";
 import { SatDatePicker } from "./SatDatePicker";
-import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults, type TestResult } from "@/lib/store";
+import { Card, Skeleton, milestone } from "./parts";
+import { STATS_ICON } from "@/lib/nav";
+import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 import { SyncNudge } from "@/components/SyncNudge";
@@ -22,25 +21,6 @@ const SCORE_PRESETS = [1200, 1300, 1400, 1500];
 function greeting(now: number) {
   const h = new Date(now).getHours();
   return h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
-}
-
-function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-2xl border border-line bg-surface p-5 ${className}`}>{children}</div>;
-}
-
-function Skeleton({ className = "" }: { className?: string }) {
-  return <div className={`animate-pulse rounded-lg bg-surface-2 ${className}`} />;
-}
-
-function EmptyChart({ text, href = "/practice", link = "Start practicing" }: { text: string; href?: string; link?: string }) {
-  return (
-    <div className="grid h-44 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
-      <p className="text-sm text-muted">{text}</p>
-      <Link href={href} className="mt-2 text-sm font-semibold text-primary hover:underline">
-        {link} →
-      </Link>
-    </div>
-  );
 }
 
 /** Per-browser "don't show again" flags (checklist, first-run plan). */
@@ -111,11 +91,6 @@ function hoursToMidnight(now: number) {
   const d = new Date(now);
   d.setHours(24, 0, 0, 0);
   return Math.max(1, Math.ceil((d.getTime() - now) / 3_600_000));
-}
-
-/** Next round hundred above the latest score, capped at the target: a near finish line. */
-function milestone(latest: number, target: number) {
-  return Math.min(target, Math.floor(latest / 100) * 100 + 100);
 }
 
 function CheckIcon() {
@@ -208,34 +183,6 @@ function GettingStarted({ steps, onDismiss }: { steps: Step[]; onDismiss: () => 
           </li>
         ))}
       </ol>
-    </div>
-  );
-}
-
-// ---------- first score (one test: no trend yet) ----------
-
-function FirstScore({ r, target }: { r: TestResult; target: number | null }) {
-  return (
-    <div className="flex h-60 flex-col justify-between rounded-xl bg-surface-2/40 p-5">
-      <div>
-        <p className="text-[13px] text-muted">Your first practice test</p>
-        <p className="mt-1 text-5xl font-bold tracking-tight tabular-nums">{r.total}</p>
-        <p className="mt-2 text-sm text-muted tabular-nums">
-          Reading and Writing <span className="font-semibold text-ink">{r.rw}</span> · Math <span className="font-semibold text-ink">{r.math}</span>
-          {target !== null && r.total < target && (
-            <>
-              {" "}
-              · next milestone <span className="font-semibold text-ink">{milestone(r.total, target)}</span>
-            </>
-          )}
-        </p>
-      </div>
-      <p className="text-sm text-muted">
-        Take one more test to see your trend.{" "}
-        <Link href="/test" className="font-semibold text-primary hover:underline">
-          Practice tests →
-        </Link>
-      </p>
     </div>
   );
 }
@@ -471,85 +418,81 @@ export function Dashboard() {
         )}
       </div>
 
-      {/* Headline numbers */}
-      <div className="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <Card>
-          <p className="text-sm font-medium text-muted">Latest test score</p>
-          {!hydrated ? (
-            <Skeleton className="mt-3 h-10 w-24" />
-          ) : latest ? (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{latest.total}</p>
-              <p className={tile}>
-                {change === null || change === 0 ? `R&W ${latest.rw} · Math ${latest.math}` : `${change > 0 ? "+" : "−"}${Math.abs(change)} since your first test`}
-              </p>
-            </>
-          ) : (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight text-muted">—</p>
-              <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary hover:underline">
-                take a practice test →
-              </Link>
-            </>
-          )}
-        </Card>
-
-        <Card>
-          <div className="flex items-start justify-between gap-2">
-            <p className="text-sm font-medium text-muted">Target score</p>
-            {hydrated && hasGoal && !planOpen && (
-              <button type="button" onClick={openPlan} className="-mt-1 -mr-2 rounded-lg px-2 py-1 text-[13px] font-medium text-muted hover:bg-surface-2 hover:text-ink">
-                Edit
-              </button>
+      {/* Headline numbers + a compact study calendar */}
+      <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)]">
+        <div className="grid grid-cols-2 content-start gap-4 sm:grid-cols-3 lg:auto-rows-fr lg:grid-cols-1 lg:content-stretch">
+          <Card>
+            <p className="text-sm font-medium text-muted">Latest test score</p>
+            {!hydrated ? (
+              <Skeleton className="mt-3 h-10 w-24" />
+            ) : latest ? (
+              <>
+                <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{latest.total}</p>
+                <p className={tile}>
+                  {change === null || change === 0 ? `R&W ${latest.rw} · Math ${latest.math}` : `${change > 0 ? "+" : "−"}${Math.abs(change)} since your first test`}
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="mt-2 text-4xl font-bold tracking-tight text-muted">—</p>
+                <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary hover:underline">
+                  take a practice test →
+                </Link>
+              </>
             )}
-          </div>
-          {!hydrated ? (
-            <Skeleton className="mt-3 h-10 w-24" />
-          ) : profile.targetScore === null ? (
-            <button type="button" onClick={openPlan} className="mt-3 text-left font-semibold text-primary hover:underline">
-              Set a target score →
-            </button>
-          ) : (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{profile.targetScore}</p>
-              <p className={tile}>
-                {!latest
-                  ? "out of 1600"
-                  : latest.total >= profile.targetScore
-                    ? "reached 🎉"
-                    : `next milestone ${milestone(latest.total, profile.targetScore)} (+${milestone(latest.total, profile.targetScore) - latest.total})`}
-              </p>
-            </>
-          )}
-        </Card>
+          </Card>
+
+          <Card>
+            <div className="flex items-start justify-between gap-2">
+              <p className="text-sm font-medium text-muted">Target score</p>
+              {hydrated && hasGoal && !planOpen && (
+                <button type="button" onClick={openPlan} className="-mt-1 -mr-2 rounded-lg px-2 py-1 text-[13px] font-medium text-muted hover:bg-surface-2 hover:text-ink">
+                  Edit
+                </button>
+              )}
+            </div>
+            {!hydrated ? (
+              <Skeleton className="mt-3 h-10 w-24" />
+            ) : profile.targetScore === null ? (
+              <button type="button" onClick={openPlan} className="mt-3 text-left font-semibold text-primary hover:underline">
+                Set a target score →
+              </button>
+            ) : (
+              <>
+                <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{profile.targetScore}</p>
+                <p className={tile}>
+                  {!latest
+                    ? "out of 1600"
+                    : latest.total >= profile.targetScore
+                      ? "reached 🎉"
+                      : `next milestone ${milestone(latest.total, profile.targetScore)} (+${milestone(latest.total, profile.targetScore) - latest.total})`}
+                </p>
+              </>
+            )}
+          </Card>
+
+          <Card className="col-span-2 sm:col-span-1">
+            <p className="text-sm font-medium text-muted">Study streak</p>
+            {!hydrated ? (
+              <Skeleton className="mt-3 h-10 w-24" />
+            ) : (
+              <>
+                <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
+                  {stats.streak}
+                  <span className="ml-1.5 text-base font-medium text-muted">{stats.streak === 1 ? "day" : "days"}</span>
+                </p>
+                <p className={stats.streak > 0 && !stats.today ? "mt-1 text-[13px] font-medium text-accent" : tile}>
+                  {stats.today ? "kept today ✓" : stats.streak > 0 ? `ends in ${hoursToMidnight(now)} h` : "start one today"}
+                </p>
+              </>
+            )}
+          </Card>
+        </div>
 
         <Card>
-          <p className="text-sm font-medium text-muted">Questions answered</p>
-          {!hydrated ? (
-            <Skeleton className="mt-3 h-10 w-24" />
-          ) : (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{stats.overall.answered.toLocaleString("en-US")}</p>
-              <p className={tile}>{stats.overall.answered ? `${stats.overall.accuracy}% correct` : "none yet"}</p>
-            </>
-          )}
-        </Card>
-
-        <Card>
-          <p className="text-sm font-medium text-muted">Study streak</p>
-          {!hydrated ? (
-            <Skeleton className="mt-3 h-10 w-24" />
-          ) : (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
-                {stats.streak}
-                <span className="ml-1.5 text-base font-medium text-muted">{stats.streak === 1 ? "day" : "days"}</span>
-              </p>
-              <p className={stats.streak > 0 && !stats.today ? "mt-1 text-[13px] font-medium text-accent" : tile}>
-                {stats.today ? "kept today ✓" : stats.streak > 0 ? `ends in ${hoursToMidnight(now)} h` : "start one today"}
-              </p>
-            </>
-          )}
+          <h2 className="font-semibold">Study calendar</h2>
+          <p className="mt-0.5 text-[13px] text-muted">Questions answered each day</p>
+          <div className="mt-4">{hydrated ? <StudyCalendar days={stats.days} now={now} testDate={profile.testDate} compact /> : <Skeleton className="h-80 rounded-xl" />}</div>
         </Card>
       </div>
 
@@ -558,62 +501,28 @@ export function Dashboard() {
         <SyncNudge />
       </div>
 
-      {/* Charts */}
-      <div className="mt-6 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
-        <Card>
-          <h2 className="font-semibold">Score trend</h2>
-          <p className="mt-0.5 text-[13px] text-muted">Your total score on each practice test (400–1600)</p>
-          <div className="mt-4">
-            {!hydrated ? (
-              <Skeleton className="h-60 rounded-xl" />
-            ) : history.length > 1 ? (
-              <ScoreChart points={history} target={profile.targetScore} />
-            ) : latest ? (
-              <FirstScore r={latest} target={profile.targetScore} />
-            ) : (
-              <EmptyChart text="Your score trend appears after your first practice test." href="/test" link="Take a practice test" />
-            )}
-          </div>
-        </Card>
-        <Card>
-          <h2 className="font-semibold">Correct vs incorrect</h2>
-          <p className="mt-0.5 text-[13px] text-muted">Every question you&apos;ve answered</p>
-          <div className="mt-4">
-            {!hydrated ? (
-              <Skeleton className="h-44 rounded-xl" />
-            ) : stats.overall.answered ? (
-              <AccuracyDonut correct={stats.overall.correct} wrong={stats.overall.answered - stats.overall.correct} />
-            ) : (
-              <EmptyChart text="Answer questions to see how many you get right." />
-            )}
-          </div>
-        </Card>
-      </div>
-
-      {/* Study calendar */}
-      <div className="mt-6 rounded-2xl border border-line bg-surface p-5">
-        <div className="mb-4">
-          <h2 className="font-semibold">Study calendar</h2>
-          <p className="mt-0.5 text-[13px] text-muted">Questions you answered each day, with official SAT dates and your test day</p>
-        </div>
-        {hydrated ? <StudyCalendar days={stats.days} now={now} testDate={profile.testDate} /> : <Skeleton className="h-96 rounded-xl" />}
-      </div>
-
-      {/* By section */}
-      <h2 className="mt-8 font-semibold">By section</h2>
-      <div className="mt-3 grid gap-4 md:grid-cols-2">
-        {hydrated ? (
-          (["rw", "math"] as SectionId[]).map((s) => <SectionCard key={s} s={s} stats={stats} />)
-        ) : (
-          <>
-            <Skeleton className="h-96 rounded-2xl" />
-            <Skeleton className="h-96 rounded-2xl" />
-          </>
-        )}
-      </div>
-
-      {/* By topic */}
-      <div className="mt-6">{hydrated ? <TopicBreakdown stats={stats} /> : <Skeleton className="h-[40rem] rounded-2xl" />}</div>
+      {/* Everything else lives on /statistics */}
+      <Link
+        href="/statistics"
+        className="group mt-4 flex items-center gap-4 rounded-2xl border border-line bg-surface p-5 transition-colors hover:border-muted"
+      >
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-surface-2 text-muted group-hover:text-ink" aria-hidden="true">
+          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d={STATS_ICON} />
+          </svg>
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block font-semibold">Statistics</span>
+          <span className="mt-0.5 block text-[13px] text-muted">
+            {hydrated && stats.overall.answered
+              ? `${stats.overall.answered.toLocaleString("en-US")} questions · ${stats.overall.accuracy}% correct · score trend, sections and topics`
+              : "Score trend, accuracy, sections and topics"}
+          </span>
+        </span>
+        <span className="text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden="true">
+          →
+        </span>
+      </Link>
     </section>
   );
 }
