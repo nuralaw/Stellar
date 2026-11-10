@@ -227,12 +227,9 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
               {n > 0 && !compact && (
                 <span className={`relative mt-auto self-center text-xs font-bold tabular-nums sm:self-end sm:text-lg ${l >= 2 ? "text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.65)]" : "text-ink"}`}>{n}</span>
               )}
-              {(sat || isTest) && compact && (
-                <span className={`absolute top-1 right-1 h-1.5 w-1.5 rounded-full ${isTest ? "bg-accent" : "bg-ink/70"}`} aria-hidden="true" />
-              )}
-              {(sat || isTest) && !compact && (
+              {(sat || isTest) && (
                 <span
-                  className={`absolute top-1 right-1 rounded px-1 text-[8px] leading-tight font-bold tracking-wide uppercase sm:text-[9px] ${
+                  className={`absolute rounded px-1 text-[8px] leading-tight font-bold tracking-wide uppercase ${compact ? "top-0.5 right-0.5" : "top-1 right-1 sm:text-[9px]"} ${
                     isTest ? "bg-accent text-white" : "bg-ink/80 text-bg"
                   }`}
                 >
@@ -260,12 +257,12 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
         {!compact && <span className="tabular-nums">1–9 · 10–29 · 30–59 · 60+ questions</span>}
         {satInView && (
           <span className="flex items-center gap-1.5">
-            {compact ? <span className="h-1.5 w-1.5 rounded-full bg-ink/70" /> : <span className="rounded bg-ink/80 px-1 text-[9px] font-bold text-bg">SAT</span>} official SAT date
+            <span className="rounded bg-ink/80 px-1 text-[9px] font-bold text-bg">SAT</span> official SAT date
           </span>
         )}
         {testDate && monthKey(testDate) === month && (
           <span className="flex items-center gap-1.5">
-            {compact ? <span className="h-1.5 w-1.5 rounded-full bg-accent" /> : <span className="rounded bg-accent px-1 text-[9px] font-bold text-white">TEST</span>} your test day
+            <span className="rounded bg-accent px-1 text-[9px] font-bold text-white">TEST</span> your test day
           </span>
         )}
       </div>
