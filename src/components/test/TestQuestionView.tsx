@@ -57,6 +57,7 @@ export function TestQuestionView({
 
       {q.type === "mcq" ? (
         <div className="space-y-2.5">
+          {q.choicesImage && <Figure src={q.choicesImage} caption="Answer choices" />}
           {LETTERS.map((l) => {
             let state: ChoiceState = response === l ? "selected" : "idle";
             if (review) state = l === q.answer ? "correct" : response === l ? "wrong" : "dim";

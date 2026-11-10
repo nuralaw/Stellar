@@ -16,6 +16,8 @@ export interface TestQuestion {
   choices?: Record<ChoiceLetter, string>;
   /** Picture choices (graphs), per letter. */
   choiceImages?: Partial<Record<ChoiceLetter, string>>;
+  /** All four choices as one picture. */
+  choicesImage?: string;
   /** MCQ letter, or accepted grid-in values. */
   answer: ChoiceLetter | string[];
   domain: string;

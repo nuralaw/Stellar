@@ -108,6 +108,20 @@ function subscribe(listener: () => void) {
   };
 }
 
+// ---- anonymous participant id (competition leaderboards) ----
+/** A random id for this browser, created on first use. It identifies the student on leaderboards until sign-in exists. */
+export function getUserId(): string {
+  let id: string | null = null;
+  try {
+    id = localStorage.getItem("stellar:uid");
+    if (!id) {
+      id = crypto.randomUUID();
+      localStorage.setItem("stellar:uid", id);
+    }
+  } catch {}
+  return id ?? "00000000-0000-0000-0000-000000000000";
+}
+
 // ---- profile ----
 export function getProfile(): Profile {
   return read(KEYS.profile, (raw) => ({ ...DEFAULT_PROFILE, ...JSON.parse(raw) }) as Profile, DEFAULT_PROFILE);

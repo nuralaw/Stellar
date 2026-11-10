@@ -48,3 +48,6 @@ next-env.d.ts
 # generated practice tests (npm run tests:build) and review scratch
 /content/tests/dist/
 /content/tests/.work/
+
+# local competition data (dev fallback store)
+/.data/
