@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Calculator } from "@/components/Calculator";
+import { CalculatorDock } from "@/components/CalculatorDock";
 import { I, Icon } from "@/components/bank/icons";
 import { addAttempts, addTestResult, saveTestSession, useHydrated, useTestResults, useTestSession, type TestResult, type TestSession } from "@/lib/store";
 import { MODULE_INFO, testName, type ModuleId, type PracticeTest, type TestQuestion } from "@/lib/test-types";
@@ -330,31 +330,8 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
         </div>
       </div>
 
-      <div className={showCalc ? "lg:grid lg:grid-cols-[minmax(360px,0.8fr)_minmax(0,1fr)] lg:items-start lg:gap-6" : ""}>
-        {isMath && calcUsed && (
-          <aside
-            aria-label="Desmos graphing calculator"
-            className={
-              showCalc
-                ? "fixed inset-x-0 bottom-0 z-40 flex h-[50dvh] flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-2xl lg:sticky lg:top-20 lg:z-auto lg:mt-5 lg:h-[calc(100vh-7rem)] lg:rounded-2xl lg:shadow-none"
-                : "hidden"
-            }
-          >
-            <div className="flex shrink-0 items-center justify-between border-b border-line px-3 py-2">
-              <p className="flex items-center gap-2 pl-1 text-sm font-semibold">
-                <Icon d={I.calculator} className="h-4 w-4 text-muted" /> Desmos Calculator
-              </p>
-              <button type="button" onClick={() => setCalcOpen(false)} aria-label="Close calculator" className="grid h-8 w-8 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink">
-                <Icon d={I.x} className="h-4 w-4" />
-              </button>
-            </div>
-            <div className="min-h-0 flex-1">
-              <Calculator visible={showCalc} />
-            </div>
-          </aside>
-        )}
-
-        <div className={`min-w-0 ${showCalc ? "pb-[50dvh] lg:pb-0" : ""}`}>
+      <CalculatorDock used={isMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-20 lg:h-[calc(100vh-7rem)]">
+        <div>
           {checking ? (
             <CheckYourWork
               qs={qs}
@@ -394,7 +371,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
           )}
 
           {/* Bottom bar */}
-          <div className={`sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8 ${showCalc ? "max-lg:bottom-[50dvh] lg:mx-0 lg:px-0" : ""}`}>
+          <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
             <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
               <Navigator qs={qs} s={s} pos={checking ? -1 : pos} answered={answered} onPick={(i) => { setPos(i); setChecking(false); }} onCheck={() => setChecking(true)} />
               <div className="flex-1" />
@@ -417,7 +394,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
             </div>
           </div>
         </div>
-      </div>
+      </CalculatorDock>
     </section>
   );
 }

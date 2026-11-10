@@ -45,6 +45,15 @@ export function Calculator({ visible }: { visible: boolean }) {
     if (visible) requestAnimationFrame(() => calc.current?.resize());
   }, [visible]);
 
+  // Re-measure whenever the panel is resized (drag handle, − / +, window resize).
+  useEffect(() => {
+    const el = host.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => calc.current?.resize());
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [error]);
+
   if (error)
     return (
       <div className="grid h-full place-content-center gap-3 p-6 text-center text-sm">

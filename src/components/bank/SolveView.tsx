@@ -6,7 +6,7 @@ import { addAttempt, toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain } from "@/lib/taxonomy";
 import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
-import { Calculator } from "@/components/Calculator";
+import { CalculatorDock } from "@/components/CalculatorDock";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
 import { I, Icon } from "./icons";
@@ -259,7 +259,6 @@ export function SolveView({
   const [hasMath] = useState(() => run.ids.some((x) => run.items.get(x)?.section === "math"));
   const [calcOpen, setCalcOpen] = useState(false);
   const [calcUsed, setCalcUsed] = useState(false);
-  const [calcWide, setCalcWide] = useState(false);
   // Timing: ms spent per question before it was answered, plus when the current one was opened.
   const [spent, setSpent] = useState<Record<string, number>>({});
   const [enteredAt, setEnteredAt] = useState(() => Date.now());
@@ -428,44 +427,9 @@ export function SolveView({
         </div>
       </div>
 
-      <div className={showCalc ? `lg:grid lg:items-start lg:gap-6 ${calcWide ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]" : "lg:grid-cols-[minmax(360px,0.8fr)_minmax(0,1fr)]"}` : ""}>
-        {/* Desmos calculator: docked left on desktop, bottom sheet on mobile */}
-        {hasMath && calcUsed && (
-          <aside
-            aria-label="Desmos graphing calculator"
-            className={
-              showCalc
-                ? "fixed inset-x-0 bottom-0 z-40 flex h-[50dvh] flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-2xl lg:sticky lg:top-28 lg:z-auto lg:mt-5 lg:h-[calc(100vh-8.5rem)] lg:rounded-2xl lg:shadow-none"
-                : "hidden"
-            }
-          >
-            <div className="flex shrink-0 items-center justify-between border-b border-line px-3 py-2">
-              <p className="flex items-center gap-2 pl-1 text-sm font-semibold">
-                <Icon d={I.calculator} className="h-4 w-4 text-muted" />
-                Desmos Calculator
-              </p>
-              <div className="flex items-center gap-1">
-                <button
-                  type="button"
-                  onClick={() => setCalcWide((v) => !v)}
-                  aria-label={calcWide ? "Make calculator narrower" : "Make calculator wider"}
-                  title={calcWide ? "Narrower" : "Wider"}
-                  className="hidden h-8 w-8 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink lg:grid"
-                >
-                  <Icon d={calcWide ? I.shrink : I.expand} className="h-4 w-4" />
-                </button>
-                <button type="button" onClick={() => setCalcOpen(false)} aria-label="Close calculator" title="Close" className="grid h-8 w-8 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink">
-                  <Icon d={I.x} className="h-4 w-4" />
-                </button>
-              </div>
-            </div>
-            <div className="min-h-0 flex-1">
-              <Calculator visible={showCalc} />
-            </div>
-          </aside>
-        )}
-
-        <div className={`min-w-0 ${showCalc ? "pb-[50dvh] max-lg:[&_.qc-actions]:bottom-[50dvh] lg:pb-0 lg:[&_.qc-actions]:mx-0 lg:[&_.qc-actions]:px-0" : ""}`}>
+      {/* Desmos calculator: docked left on desktop (drag to resize), bottom sheet on mobile */}
+      <CalculatorDock used={hasMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-28 lg:h-[calc(100vh-8.5rem)]">
+        <div>
           {/* Meta */}
           {meta && (
             <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
@@ -536,7 +500,7 @@ export function SolveView({
             <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
           </p>
         </div>
-      </div>
+      </CalculatorDock>
     </section>
   );
 }
