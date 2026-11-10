@@ -1,0 +1,771 @@
+[
+  {
+    "id": "m-0041",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0 the account holds 604 dollars, so the starting value is 604. Each year the amount is multiplied by 606.42/604 ≈ 1.004, so the growth factor is 1 + 0.004. That gives n = 604(1 + 0.004)^t. Choice B has the right growth factor but leaves out the starting amount, so it would give n = 1 when t = 0."
+  },
+  {
+    "id": "m-0042",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Match coefficients. The x^3 term gives 5a = 20, so a = 4. The x term gives 4a - 3b = -2, so 16 - 3b = -2 and b = 6. Then ab = 4 · 6 = 24 (check: the x^2 term is -ab + 15 = -24 + 15 = -9, which matches). The other choices come from mismatching coefficients, for example solving for b with the wrong sign."
+  },
+  {
+    "id": "m-0043",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation factors as (x - 3)(x - 9) = 0, so x = 3 or x = 9. You can also check the discriminant: (-12)^2 - 4(1)(27) = 144 - 108 = 36, which is positive, so there are exactly two distinct real solutions. Choice B would require the discriminant to be 0."
+  },
+  {
+    "id": "m-0044",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since g(0) = 1, the coefficient in front is 1. Each time x increases by 1, g(x) is multiplied by 1/25 (1 to 1/25 to 1/625), so g(x) = (1/25)^x. Check: (1/25)^(-1) = 25. Choice C, 25^x, would grow instead of shrink as x increases."
+  },
+  {
+    "id": "m-0045",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x^2 - 5 is a difference of squares because 5 = (sqrt(5))^2, so it factors as (x + sqrt(5))(x - sqrt(5)). Multiplying back gives x^2 - sqrt(5)x + sqrt(5)x - 5 = x^2 - 5. Choices A and B are perfect squares, which have a middle term of ±2sqrt(5)x and a constant of +5."
+  },
+  {
+    "id": "m-0046",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor: 3x^2 + 20x - 63 = (3x - 7)(x + 9), since 3x · 9 - 7x = 20x and -7 · 9 = -63. So 3x - 7 is a factor but x - 9 is not (x + 9 is). Choice C is tempting if you mix up the sign in x + 9."
+  },
+  {
+    "id": "m-0047",
+    "answer": [
+      "7/6",
+      "1.166",
+      "1.167"
+    ],
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite with rational exponents: sqrt(x^5) = x^(5/2) and cbrt(x^4) = x^(4/3). Dividing means subtracting exponents: 5/2 - 4/3 = 15/6 - 8/6 = 7/6. So a/b = 7/6. A common mistake is to divide the exponents instead of subtracting them."
+  },
+  {
+    "id": "m-0048",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At x = 0, h(0) = 1.23, so the starting value is 1.23, which rules out A and B. The values increase, so the growth factor must be greater than 1: 1.23(1.12)^2 ≈ 1.54 and 1.23(1.12)^4 ≈ 1.94, matching the table. Choice C has a factor of 0.12, which would make the heights shrink."
+  },
+  {
+    "id": "m-0049",
+    "answer": [
+      "20"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "At x = 0, f(0) = -a^0 + b = -1 + b, so f(0) - 12 = b - 13. Setting b - 13 = -75/7 gives b = 91/7 - 75/7 = 16/7. Since ab = 320/7, a = (320/7)/(16/7) = 20. Don't forget that a^0 = 1, not 0."
+  },
+  {
+    "id": "m-0050",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph of f is a parabola opening upward with zeros at x = 44 and x = 46. The minimum is at the vertex, halfway between the zeros: (44 + 46)/2 = 45. Choices A and C are where f(x) = 0, not where it is smallest, and -1 is the minimum value f(45), not the x-value."
+  },
+  {
+    "id": "m-0051",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When x = 0 (the year 2012), f(0) = 4,000(0.75)^0 = 4,000. So 4,000 is the estimated beetle population in 2012. The yearly percent decrease comes from 0.75 (a 25% decrease), not from 4,000, so choices C and D are wrong."
+  },
+  {
+    "id": "m-0052",
+    "answer": [
+      "16"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite as r^2 + (q - 2)r + 55 = 0. No real solutions means the discriminant is negative: (q - 2)^2 - 4(55) < 0, so (q - 2)^2 < 220. Since 14^2 = 196 < 220 but 15^2 = 225 > 220, the largest q - 2 can be is 14, so q = 16. With q = 17 the discriminant is 225 - 220 = 5, which is positive."
+  },
+  {
+    "id": "m-0053",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The population doubles each time the exponent t/790 increases by 1, which happens every 790 minutes. Check: f(790) = 40,000(2)^1 = 80,000, twice the starting amount. Choice C, 1,580, is the time to quadruple."
+  },
+  {
+    "id": "m-0054",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Read points from the graph: it starts at (0, 0), reaches its lowest point at (3, -12), and comes back to sea level at (6, 0). Only the table in choice C lists those pairs. Choice B uses 12 instead of -12 even though the curve is below sea level."
+  },
+  {
+    "id": "m-0055",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An absolute value equation splits into two cases: x + 45 = 48 or x + 45 = -48. These give x = 3 or x = -93, and the positive solution is 3. Choice C, 93, drops the negative sign from the second case."
+  },
+  {
+    "id": "m-0056",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "P(8) means the input t = 8, which is 8 years after 1984. The output 32.91 is the predicted population in millions. So 8 years after 1984 the predicted population was about 32.91 million. Choice D swaps the input and output."
+  },
+  {
+    "id": "m-0057",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract t from both sides: 6r - t = 7s. Then divide by 7: s = (6r - t)/7. Choice B multiplies by 7 instead of dividing, and choice C only divides part of the left side by 7."
+  },
+  {
+    "id": "m-0058",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A 7% increase each month means multiplying by 1 + 0.07 = 1.07 each month, starting at 1,300. So c = 1,300(1.07)^m. Choice A uses 0.07, which would make the number shrink, and choice C uses 1.7, which is a 70% increase."
+  },
+  {
+    "id": "m-0059",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The denominator is a perfect square: x^2 + 10x + 25 = (x + 5)^2. So 1/(x + 5)^2 = 4, which means (x + 5)^2 = 1/4 and x + 5 = 1/2 or -1/2. Only 1/2 is listed. The other choices do not square to 1/4."
+  },
+  {
+    "id": "m-0060",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute 144: f(144) = 4 + sqrt(144) = 4 + 12 = 16. Choice D comes from 4 + 144/2, which halves 144 instead of taking its square root."
+  },
+  {
+    "id": "m-0061",
+    "answer": [
+      "231"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let u = 58 - x, which must be at least 0 because it equals a square root. Then k - x = u^2 becomes k - 58 + u = u^2, so u^2 - u + (58 - k) = 0. The two roots of this quadratic add to 1, so when k is just above 57.75 both roots are nonnegative and there are two solutions. The smallest k giving exactly one solution is when the roots coincide: 1 - 4(58 - k) = 0, so k = 57.75 and 4k = 231."
+  },
+  {
+    "id": "m-0062",
+    "answer": [
+      "48"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Shifting up 6 units gives g(x) = f(x) + 6. Then f(4) = (4 - 1)(4 + 3)(4 - 2) = 3 · 7 · 2 = 42, so b = g(4) = 42 + 6 = 48. A common mistake is to shift sideways instead of up by evaluating f at a different x."
+  },
+  {
+    "id": "m-0063",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute 3: g(3) = sqrt(8 · 3 + 1) = sqrt(25) = 5. Choice D, 25, forgets to take the square root."
+  },
+  {
+    "id": "m-0064",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every term has a factor of 8x. Dividing each term by 8x gives x^9, -x^8, and 11, so the expression equals 8x(x^9 - x^8 + 11). Choice C factors out 8x but does not lower the powers of x, so it would expand to 8x^11 - 8x^10 + 88x^2."
+  },
+  {
+    "id": "m-0065",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "If the width is w, the length is 2w, so the area is 2w · w = 2w^2 = 162. Then w^2 = 81 and w = 9 meters. Choice B, 18, is the length, not the width."
+  },
+  {
+    "id": "m-0066",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The maximum point (1.8, 51.84) is the vertex, so the equation has the form h = a(t - 1.8)^2 + 51.84. Choice D fits this, and it checks out: at t = 0 or t = 3.6, h = -16(1.8)^2 + 51.84 = -51.84 + 51.84 = 0, ground level. Choice C has the right shape but a maximum height of -3.6, which is below ground."
+  },
+  {
+    "id": "m-0067",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Factor out 100: 100x^2 + 2,600 = 100(x^2 + 26), since 100 · 26 = 2,600. Choice A, 100(26x^2), equals 2,600x^2, a single term rather than a sum."
+  },
+  {
+    "id": "m-0068",
+    "answer": [
+      "27"
+    ],
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Combine the right side over x(x + 51): p(x + 51) + wx = 29x + 102. Setting x = 0 gives 51p = 102, so p = 2. Then the x terms give p + w = 29, so w = 27. Check: 2(x + 51) + 27x = 29x + 102."
+  },
+  {
+    "id": "m-0069",
+    "answer": [
+      "-324"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The y-intercept gives f(0) = a^0 + b = 1 + b = -323, so b = -324. Check with the x-intercept: a^2 - 324 = 0 gives a = 18, which works. A common mistake is to treat a^0 as 0 and answer -323."
+  },
+  {
+    "id": "m-0070",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sample starts at 830 cells and doubles every 25 minutes, so it is multiplied by 2 each time x increases by 25. That is f(x) = 830(2)^(x/25). Choice A uses 1/2, which would model the cells halving instead of doubling."
+  },
+  {
+    "id": "m-0071",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Find c by evaluating any of the equations at x = 0: for example, 22(1.5)^1 = 33 and 49.5(1.5)^(-1) = 33. So c = 33, and only f(x) = 33(1.5)^x shows 33 as the coefficient. The other choices define the same function, but their coefficients (22, 49.5, 74.25) are not f(0)."
+  },
+  {
+    "id": "m-0072",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An increase of 4% each year means the salary is multiplied by 1 + 0.04 = 1.04 every year, so a = 1.04. Choice A, 0.04, would shrink the salary to 4% of its value each year, and choice D, 1.4, is a 40% increase."
+  },
+  {
+    "id": "m-0073",
+    "answer": [
+      "5"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of a = (v_f - 12)/5 by 5 to get 5a = v_f - 12. Then add 12: v_f = 5a + 12. Comparing with v_f = xa + y gives x = 5 (and y = 12). A common mistake is to answer 1/5 by not clearing the fraction."
+  },
+  {
+    "id": "m-0074",
+    "answer": [
+      "6"
+    ],
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expanding ry^4(15y - 9) gives 15ry^5 - 9ry^4. Matching with 90y^5 - 54y^4 gives 15r = 90 and 9r = 54, so r = 6 either way."
+  },
+  {
+    "id": "m-0075",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The x-intercepts are where y = f(x) = 0, so a is a unit price that gives a revenue of $0. Factoring, f(x) = -500x(x - 50), so a = 50 dollars. Choice B describes the vertex, which is at x = 25, halfway between the intercepts."
+  },
+  {
+    "id": "m-0076",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When x = 0 (the year 2008), f(0) = 3,000(0.75)^0 = 3,000. So 3,000 is the estimated population in 2008. The yearly percent decrease comes from 0.75 (a 25% decrease), not from 3,000, so choices A and B are wrong."
+  },
+  {
+    "id": "m-0077",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the common denominator (x - 2)(x + 5): the numerator is 2(x + 5) + 3(x - 2) = 2x + 10 + 3x - 6 = 5x + 4. So r = 5 and t = 4, and rt = 20. Choice A comes from a sign error that makes t = -4, but t must be positive."
+  },
+  {
+    "id": "m-0078",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only like terms can be combined: 6x + 5x = 11x, and 4y stays as it is. So the expression equals 11x + 4y. Choice A adds the 4 from the y-term to the x-terms, which is not allowed because x and y are different variables."
+  },
+  {
+    "id": "m-0079",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand the square: (1.5x - 2.4)^2 = 2.25x^2 - 7.2x + 5.76. Subtracting (5.2x^2 - 6.4) means subtracting 5.2x^2 and adding 6.4: 2.25x^2 - 5.2x^2 - 7.2x + 5.76 + 6.4 = -2.95x^2 - 7.2x + 12.16. Choice D subtracts 6.4 instead of adding it."
+  },
+  {
+    "id": "m-0080",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The count doubles each day, so on day n it is 2.5 × 10^5 · 2^(n - 1). Setting this equal to 5.12 × 10^8 gives 2^(n - 1) = (5.12 × 10^8)/(2.5 × 10^5) = 2,048 = 2^11. So n - 1 = 11 and n = 12. Choice C, day 11, forgets that day 1 already has 2.5 × 10^5 before any doubling."
+  },
+  {
+    "id": "m-0081",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply the numbers and combine like variables: 8 · 7 = 56, y · y = y^2, and z · z = z^2. So the product is 56y^2z^2. Choice B misses the second factor of z."
+  },
+  {
+    "id": "m-0082",
+    "answer": [
+      "120"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the quadratic formula with a = 2, b = -8, c = -7: x = (8 ± sqrt(64 - 4(2)(-7)))/(2 · 2) = (8 ± sqrt(64 + 56))/4 = (8 ± sqrt(120))/4. Matching (8 - sqrt(k))/4 gives k = 120. A common slip is to compute 64 - 56 = 8 by forgetting that c is negative."
+  },
+  {
+    "id": "m-0083",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When t = 0 (the year 2010), D = 5,640(1.9)^0 = 5,640. So 5,640 is the estimated data traffic in 2010. Choice C describes D itself, the output for any t, not the starting value."
+  },
+  {
+    "id": "m-0084",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At an intersection both equations give the same y, so 76 = x^2 - 5. Then x^2 = 81 and x = 9 or x = -9. Only -9 is listed. Choice D, 76, is the y-value of the intersection, not the x-value."
+  },
+  {
+    "id": "m-0085",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 5: (7m)/5 = n + p. Then subtract p: n = (7m)/5 - p. Choice D subtracts 5 instead of dividing by 5."
+  },
+  {
+    "id": "m-0086",
+    "answer": [
+      "4/225",
+      ".0177",
+      ".0178"
+    ],
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write each root as a power: root[5](70n) = (70n)^(1/5) and (root[6](70n))^2 = (70n)^(2/6) = (70n)^(1/3). Multiplying adds exponents: 1/5 + 1/3 = 8/15. So 30x = 8/15, which gives x = 8/450 = 4/225. A common mistake is to stop at 8/15, which is 30x, not x."
+  },
+  {
+    "id": "m-0087",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Move everything to one side: 2x^2 - 2x - 5 = 0. The quadratic formula gives x = (2 ± sqrt(4 + 40))/4 = (2 ± 2sqrt(11))/4 = (1 ± sqrt(11))/2. So (1 + sqrt(11))/2 is a solution. Choice C divides only the 1 by 2, not the sqrt(11)."
+  },
+  {
+    "id": "m-0088",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since f(-9) = f(3), the axis of symmetry is halfway between them, at x = -3, so -4/(2a) = -3 and a = 2/3. That makes II (a ≥ 1) false. The vertex value is k = f(-3) = 9(2/3) - 12 + c = c - 6, and k < 0 only tells us c < 6, so c could be positive (for example, c = 1). So neither statement must be true."
+  },
+  {
+    "id": "m-0089",
+    "answer": [
+      "7"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An x-intercept is where the graph meets the x-axis (y = 0). The parabola touches the x-axis only at its vertex, x = 7. The marked points at x = 6 and x = 8 have y = 3, so they are not intercepts."
+  },
+  {
+    "id": "m-0090",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The square of any real number is 0 or positive, so x^2 can never equal -841. The equation has zero real solutions. Choice B would be right for x^2 = 841, which has solutions 29 and -29."
+  },
+  {
+    "id": "m-0091",
+    "answer": [
+      "81/4",
+      "20.25"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The line 2y = c is the horizontal line y = c/2. A horizontal line meets a parabola at exactly one point only at the vertex. For y = -2x^2 + 9x, the vertex is at x = -9/(2(-2)) = 9/4, where y = -2(81/16) + 81/4 = 81/8. So c/2 = 81/8 and c = 81/4. A common mistake is to answer 81/8, which is y, not c."
+  },
+  {
+    "id": "m-0092",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The graph crosses the x-axis at x = 0 and x = 4 and only touches it at x = -5, so (x + 5) must be a squared factor. Also, both ends of the graph point down, which fits an even-degree polynomial with a negative leading coefficient: -(1/10)x(x - 4)(x + 5)^2 has degree 4. Choice A has degree 3, so its ends would point in opposite directions and it would cross at x = -5."
+  },
+  {
+    "id": "m-0093",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The population is multiplied by 1.04 (a 4% increase) each time the exponent (6/4)t increases by 1. That happens when t increases by 4/6 = 2/3 of a year. In months, (2/3) · 12 = 8, so n = 8. Choice C, 18, comes from using 6/4 of a year instead of 4/6."
+  },
+  {
+    "id": "m-0094",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the right sides equal: 5x + 4 = 5x^2 + 4, so 5x^2 - 5x = 0 and 5x(x - 1) = 0, giving x = 0 or x = 1. When x = 0, y = 4, so (0, 4) is a solution. Choice A has the right x but the wrong y; (8, 44) satisfies only the first equation."
+  },
+  {
+    "id": "m-0095",
+    "answer": [
+      "30",
+      "-30"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 7 to both sides: (d - 30)(d + 30) = 0. A product is 0 only when a factor is 0, so d = 30 or d = -30. Either value is a solution."
+  },
+  {
+    "id": "m-0096",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The vertex of f is at x = -64/(2 · 4) = -8, so f reaches its minimum when its input is -8. For g(x) = f(x + 5), that input is x + 5 = -8, so x = -13. Shifting by +5 inside moves the graph 5 units left. Choice D, -3, moves it right instead."
+  },
+  {
+    "id": "m-0097",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = 0 at the x-intercepts of the graph. The curve crosses the x-axis three times: near x = -1, at x = 4, and near x = 7. So there are three values of x. The turning points do not touch the x-axis, so they add no extra zeros."
+  },
+  {
+    "id": "m-0098",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "These are like terms, so subtract the coefficients and keep x^3: 11x^3 - 5x^3 = 6x^3. Choice C changes the exponent, but combining like terms never changes the exponent."
+  },
+  {
+    "id": "m-0099",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms are like terms in x^2, so add the coefficients: 50 + 5 = 55, giving 55x^2. Choice A multiplies the coefficients instead of adding them."
+  },
+  {
+    "id": "m-0100",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "low",
+    "note": "Source image shows only choices A-C; the graph for choice D is missing.",
+    "explanation": "Each y-value in the table is the cube of x (1^3 = 1, 2^3 = 8, 3^3 = 27), so the relationship is y = x^3. The graph in choice B passes through (0, 0) and (1, 1) and rises steeply, matching y = x^3. Choice C has the same shape but is shifted up 1, so it misses (0, 0), and choice A falls from left to right."
+  },
+  {
+    "id": "m-0101",
+    "answer": [
+      "-419"
+    ],
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The x-term comes from the outer and inner products: 3x · 6 = 18x and -23 · 19x = -437x. Adding them gives b = 18 - 437 = -419. A common mistake is to drop the negative sign on 23."
+  },
+  {
+    "id": "m-0102",
+    "answer": [
+      "-24"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The vertex is at (-1, -8), so y = 2(x + 1)^2 - 8 = 2x^2 + 4x - 6. That gives b = 4 and c = -6, so bc = -24. Check with the marked point (0, -6): the y-intercept is c = -6, as shown."
+  },
+  {
+    "id": "m-0103",
+    "answer": [
+      "94"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Take the square root of both sides: x - 47 = 1 or x - 47 = -1. So x = 48 or x = 46, and the sum is 48 + 46 = 94. Remember the negative root, or you will only get 48."
+  },
+  {
+    "id": "m-0104",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Substitute x = -5 into the circle: 25 + y^2 = 36, so y^2 = 11, and since y < 0, y = -sqrt(11). The point is also on the line, so -sqrt(11) = m(-5) + b/4. Then b/4 = 5m - sqrt(11), and b = 20m - 4sqrt(11). Choice B divides by 4 instead of multiplying by 4."
+  },
+  {
+    "id": "m-0105",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The end of November 2012 is x = 0 months, so read the y-intercept of the graph: it starts at y = 5. So the model predicts 5 active projects then. Choice D, 9, is the maximum, reached at x = 4."
+  },
+  {
+    "id": "m-0106",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Simplify inside the parentheses first: 4w + 3w = 7w. Then 20w - 7w = 13w. Choice D, 21w, comes from subtracting 4w but adding 3w, forgetting that the minus sign applies to both terms."
+  },
+  {
+    "id": "m-0107",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the common denominator (x + 1)(4x - 5). The numerator becomes 4(x + 1) - 1(4x - 5) = 4x + 4 - 4x + 5 = 9. So the expression equals 9/((x + 1)(4x - 5)). Choice C comes from forgetting to distribute the minus sign to -5."
+  },
+  {
+    "id": "m-0108",
+    "answer": [
+      "76"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Translating up 4 units means g(x) = f(x) + 4. First f(0) = (0 - 6)(0 - 2)(0 + 6) = (-6)(-2)(6) = 72. So g(0) = 72 + 4 = 76."
+  },
+  {
+    "id": "m-0109",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "low",
+    "note": "Prompt formula is garbled (stray '2' line; numerator shows 'x - x - a'). Solved assuming g(x) = (x^2 - x - a)/(denominator with constant term -b); answer does not depend on the other denominator terms.",
+    "explanation": "Assuming the numerator is x^2 - x - a: since g(-22) = 0, the numerator is 0 at x = -22, so 484 + 22 - a = 0 and a = 506. The point (0, 22) gives g(0) = (-a)/(-b) = a/b = 22, so b = 506/22 = 23. Choice B, 22, confuses b with the y-value of the given point."
+  },
+  {
+    "id": "m-0110",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 3: 3(x + 5) = 3x + 15. Then 3x + 15 - 6 = 3x + 9. Choice D multiplies the x by 15 instead of distributing the 3 to both terms."
+  },
+  {
+    "id": "m-0111",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution to a system is the point where the graphs meet. The line and the curve touch at the marked point (2, 4), so the solution is (2, 4). Choice B is close to where the line crosses the y-axis, which is on only one of the graphs."
+  },
+  {
+    "id": "m-0112",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set each factor equal to 0: x = 4, x = -2, and x = 1. Their product is 4 · (-2) · 1 = -8. Choice A, 8, drops the negative sign from -2."
+  },
+  {
+    "id": "m-0113",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If (x^2 - c)/(x - b) = x + b, then x^2 - c = (x - b)(x + b) = x^2 - b^2, so c = b^2. Since b is a positive integer, c must be a perfect square. Of the choices, only 4 = 2^2 works (with b = 2)."
+  },
+  {
+    "id": "m-0114",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply both sides by x + 5: 2(x + 1) = (x + 5) - 1, so 2x + 2 = x + 4 and x = 2. Check: 2(3)/7 = 6/7 and 1 - 1/7 = 6/7. Choice A does not work: at x = 0 the left side is 2/5 but the right side is 4/5."
+  },
+  {
+    "id": "m-0115",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply term by term: (3/5)x · 6x = (18x^2)/5, (3/5)x · (-5) = -3x, (7/6) · 6x = 7x, and (7/6)(-5) = -35/6. The x-terms combine to -3x + 7x = 4x, giving (18x^2)/5 + 4x - 35/6. Choice A forgets the middle terms, and choice C gets the sign of 4x wrong."
+  },
+  {
+    "id": "m-0116",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In each match one player is eliminated, so half the remaining players are eliminated each round: 120 in round 1, 60 in round 2, 30 in round 3, and 15 in round 4. The formula p = 240(1/2)^r gives 240(1/2) = 120 for r = 1 and halves each round after that. Choice A gives 15/2 for round 1, which is far too small."
+  },
+  {
+    "id": "m-0117",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The area is x(x - 15) = 76, so x^2 - 15x - 76 = 0, which factors as (x - 19)(x + 4) = 0. A length must be positive, so x = 19 (the width is 19 - 15 = 4, and 19 · 4 = 76). Choice A, 4, is the width, not x."
+  },
+  {
+    "id": "m-0118",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0, P = C = 12,000. After 4 hours, 24,000 = 12,000(2)^(4r), so 2^(4r) = 2 and 4r = 1, giving r = 1/4. Choice C, 4, is the doubling time in hours, not the rate r."
+  },
+  {
+    "id": "m-0119",
+    "answer": [
+      "-3"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Square both sides: (x - 2)^2 = 3x + 34, so x^2 - 4x + 4 = 3x + 34 and x^2 - 7x - 30 = 0. This factors as (x - 10)(x + 3) = 0, so x = 10 or x = -3. Check x = -3: sqrt(25) = 5 on both sides, so it works and is the smallest solution. The left side sqrt((x - 2)^2) is |x - 2|, which is why a negative x can still work."
+  },
+  {
+    "id": "m-0120",
+    "answer": [
+      "0",
+      "3"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: x^2 - 4x + 4 = 4 - x. Then x^2 - 3x = 0, so x(x - 3) = 0 and x = 0 or x = 3. Check: x = 0 gives y = 4 in both equations, and x = 3 gives y = 1 in both."
+  }
+]

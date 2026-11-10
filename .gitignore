@@ -42,3 +42,4 @@ next-env.d.ts
 
 # generated question bank (npm run bank:build)
 /content/bank/dist/
+/content/bank/.work/
