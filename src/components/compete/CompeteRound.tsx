@@ -6,6 +6,7 @@ import { useFocusMode } from "@/lib/focus";
 import { exitFullscreen } from "@/lib/fullscreen";
 import { I, Icon } from "@/components/bank/icons";
 import { TestQuestionView } from "@/components/test/TestQuestionView";
+import { QuestionStrip } from "@/components/test/QuestionStrip";
 import { ROUNDS, ROUND_SIZE, type CompetitionQuestion, type ReviewItem, type RoundId } from "@/lib/competition";
 import type { TestQuestion } from "@/lib/test-types";
 import type { ChoiceLetter, Difficulty } from "@/lib/types";
@@ -277,23 +278,15 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
             Submit
           </button>
         </div>
-        {/* progress strip */}
-        <div className="mt-2.5 flex gap-1" aria-hidden="true">
-          {qs.map((x, i) => (
-            <button
-              key={x.id}
-              type="button"
-              tabIndex={-1}
-              onClick={() => {
-                setPos(i);
-                setChecking(false);
-              }}
-              className="group flex h-3 flex-1 items-center"
-            >
-              <span className={`block w-full rounded-full ${i === pos && !checking ? "h-2 bg-primary" : responses[x.id] ? "h-1 bg-primary/60" : "h-1 bg-line group-hover:h-1.5"}`} />
-            </button>
-          ))}
-        </div>
+        {/* Question switcher: hover a segment for its number and difficulty */}
+        <QuestionStrip
+          items={qs.map((x) => ({ key: x.id, difficulty: x.difficulty, answered: Boolean(responses[x.id]) }))}
+          pos={checking ? null : pos}
+          onPick={(i) => {
+            setPos(i);
+            setChecking(false);
+          }}
+        />
       </div>
 
       {leaving && (

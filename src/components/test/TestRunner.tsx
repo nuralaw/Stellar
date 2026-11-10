@@ -12,6 +12,7 @@ import { isTestCorrect, scaledScore } from "@/lib/test-score";
 import type { ChoiceLetter } from "@/lib/types";
 import type { SectionId } from "@/lib/taxonomy";
 import { TestQuestionView } from "./TestQuestionView";
+import { QuestionStrip } from "./QuestionStrip";
 import { TestResults } from "./TestResults";
 
 const btnPrimary =
@@ -330,6 +331,15 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
             </button>
           )}
         </div>
+        {/* Question switcher: hover a segment for its number and difficulty */}
+        <QuestionStrip
+          items={qs.map((x) => ({ key: x.key, difficulty: x.difficulty, answered: Boolean(s.responses[x.key]), marked: s.marked.includes(x.key) }))}
+          pos={checking ? null : pos}
+          onPick={(i) => {
+            setPos(i);
+            setChecking(false);
+          }}
+        />
       </div>
 
       <CalculatorDock used={isMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-20" fullHeight="calc(100vh - 7rem)">
