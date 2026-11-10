@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Avatar, fileToAvatar, isPhotoAvatar } from "@/components/Avatar";
 import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useProfile } from "@/lib/store";
 import { COUNTRY_ZONES } from "@/lib/tz-data";
 import { countryList, countryName, countryOfZone, deviceZone, mainZone, utcOffsetLabel, zoneCity } from "@/lib/timezone";
@@ -74,9 +75,31 @@ function Editor() {
   const attempts = useAttempts();
   const [name, setName] = useState(profile.name);
   const [avatar, setAvatar] = useState(profile.avatar);
+  /** Uploaded photo (saved or just picked), kept as an option even while an emoji is selected. */
+  const [photo, setPhoto] = useState<string | null>(isPhotoAvatar(profile.avatar) ? profile.avatar : null);
+  const [uploading, setUploading] = useState(false);
+  const [photoError, setPhotoError] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
   const [saved, setSaved] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
   const dirty = name.trim() !== profile.name || avatar !== profile.avatar;
+
+  const onFile = async (file: File | undefined) => {
+    if (!file) return;
+    setUploading(true);
+    setPhotoError(null);
+    try {
+      const url = await fileToAvatar(file);
+      setPhoto(url);
+      setAvatar(url);
+      setSaved(false);
+    } catch (err) {
+      setPhotoError((err as Error).message);
+    } finally {
+      setUploading(false);
+      if (fileRef.current) fileRef.current.value = "";
+    }
+  };
 
   const save = (e: React.FormEvent) => {
     e.preventDefault();
@@ -88,7 +111,7 @@ function Editor() {
     <div className="space-y-6">
       <form onSubmit={save} className="rounded-2xl border border-line bg-surface p-6">
         <div className="flex items-center gap-4">
-          <span className="grid h-20 w-20 shrink-0 place-items-center rounded-full bg-accent-soft text-5xl">{avatar}</span>
+          <Avatar value={avatar} className="h-20 w-20 text-5xl" alt="Your avatar" />
           <div className="min-w-0">
             <p className="truncate text-xl font-semibold">{name.trim() || "Guest student"}</p>
             <p className="text-sm text-muted">{attempts.length} questions answered</p>
@@ -112,6 +135,40 @@ function Editor() {
 
         <p className="mt-6 text-sm font-medium text-muted">Avatar</p>
         <div className="mt-2 flex flex-wrap gap-2" role="radiogroup" aria-label="Avatar">
+          {photo && (
+            <span className="relative">
+              <button
+                type="button"
+                role="radio"
+                aria-checked={avatar === photo}
+                aria-label="Your photo"
+                onClick={() => {
+                  setAvatar(photo);
+                  setSaved(false);
+                }}
+                className={`grid h-12 w-12 place-items-center rounded-full border p-0.5 transition-colors ${
+                  avatar === photo ? "border-primary ring-1 ring-primary" : "border-line hover:border-muted"
+                }`}
+              >
+                <Avatar value={photo} className="h-full w-full" />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setPhoto(null);
+                  if (avatar === photo) setAvatar(isPhotoAvatar(profile.avatar) ? AVATARS[0] : profile.avatar);
+                  setSaved(false);
+                }}
+                aria-label="Remove photo"
+                title="Remove photo"
+                className="absolute -top-1 -right-1 grid h-5 w-5 place-items-center rounded-full border border-line bg-surface text-muted shadow-sm hover:text-danger"
+              >
+                <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" aria-hidden="true">
+                  <path d="M7 7l10 10M17 7 7 17" />
+                </svg>
+              </button>
+            </span>
+          )}
           {AVATARS.map((a) => (
             <button
               key={a}
@@ -130,6 +187,28 @@ function Editor() {
             </button>
           ))}
         </div>
+
+        {/* Upload your own */}
+        <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <input ref={fileRef} type="file" accept="image/png,image/jpeg,image/webp,image/gif" className="sr-only" id="avatar-file" onChange={(e) => onFile(e.target.files?.[0])} />
+          <button
+            type="button"
+            onClick={() => fileRef.current?.click()}
+            disabled={uploading}
+            className="inline-flex items-center gap-2 rounded-xl border border-line px-4 py-2 text-sm font-semibold transition-colors hover:bg-surface-2 disabled:opacity-50"
+          >
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 16V4m0 0-4 4m4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" />
+            </svg>
+            {uploading ? "Processing…" : photo ? "Upload another photo" : "Upload your photo"}
+          </button>
+          <span className="text-xs text-muted">JPG, PNG or WebP · cropped to a square</span>
+        </div>
+        {photoError && (
+          <p className="mt-2 text-sm text-danger" role="alert">
+            {photoError}
+          </p>
+        )}
 
         <div className="mt-8 flex items-center gap-3">
           <button
@@ -176,6 +255,7 @@ function Editor() {
                   setConfirmReset(false);
                   setName("");
                   setAvatar(AVATARS[0]);
+                  setPhoto(null);
                 }}
                 className="rounded-lg bg-danger px-4 py-2 font-semibold text-surface"
               >

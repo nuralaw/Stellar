@@ -7,6 +7,7 @@ import { getUserId, updateProfile, useHydrated, useProfile } from "@/lib/store";
 import { CompeteRound, RoundReview, WARN_ICON, fmtDuration, type RoundData } from "./CompeteRound";
 import { exitFullscreen, requestFullscreenNow, useCanFullscreen } from "@/lib/fullscreen";
 import { PAGE } from "@/lib/ui";
+import { isPhotoAvatar } from "@/components/Avatar";
 
 interface Hub {
   week: string;
@@ -142,7 +143,7 @@ export function Competition() {
       const res = await fetch("/api/competition/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ round: r, userId, name: profile.name, avatar: profile.avatar }),
+        body: JSON.stringify({ round: r, userId, name: profile.name, avatar: isPhotoAvatar(profile.avatar) ? "🙂" : profile.avatar }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);

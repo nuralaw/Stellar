@@ -14,6 +14,7 @@ import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 import { SyncNudge } from "@/components/SyncNudge";
+import { Avatar } from "@/components/Avatar";
 import { reviewQueue, type MistakeCard } from "@/lib/review";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
@@ -369,7 +370,7 @@ export function Dashboard() {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <Link href="/profile" title="Edit profile" className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-accent-soft text-3xl">
-            {hydrated ? profile.avatar : ""}
+            {hydrated ? <Avatar value={profile.avatar} className="h-14 w-14 text-3xl" /> : ""}
           </Link>
           <div>
             {hydrated ? (

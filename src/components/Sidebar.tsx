@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { ACCOUNT_NAV, NAV_GROUPS, isActive, type NavItem } from "@/lib/nav";
+import { Avatar, isPhotoAvatar } from "./Avatar";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { reviewQueue } from "@/lib/review";
@@ -80,9 +81,13 @@ function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
   return (
     <div className="rounded-xl border border-side-line bg-side-2 p-3 rail:border-0 rail:bg-transparent rail:p-0">
       <Link href="/profile" onClick={onNavigate} title="Profile" className="flex items-center gap-3 rounded-lg rail:justify-center">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-xl text-accent">
-          {hydrated ? profile.avatar : <Icon d={ACCOUNT_NAV[0].icon} />}
-        </span>
+        {hydrated && isPhotoAvatar(profile.avatar) ? (
+          <Avatar value={profile.avatar} className="h-10 w-10" />
+        ) : (
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-xl text-accent">
+            {hydrated ? profile.avatar : <Icon d={ACCOUNT_NAV[0].icon} />}
+          </span>
+        )}
         <span className="min-w-0 rail:sr-only">
           <span className="block truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
           <span className="block truncate text-xs text-side-muted">Saved on this device</span>
