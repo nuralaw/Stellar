@@ -5,7 +5,8 @@ import { useState } from "react";
 import { computeStats, type Tally } from "@/lib/stats";
 import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
-import { Countdown, formatIsoDate } from "./Countdown";
+import { Countdown } from "./Countdown";
+import { SatDatePicker } from "./SatDatePicker";
 import { updateProfile, useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 
@@ -41,7 +42,7 @@ function pct(t: Tally) {
 function GoalsForm({ onDone }: { onDone: () => void }) {
   const profile = useProfile();
   const now = useNow();
-  const official = upcomingSatDates(todayIn(effectiveZone(profile.testTimeZone), now || 0)).slice(0, 6);
+  const official = upcomingSatDates(todayIn(effectiveZone(profile.testTimeZone), now || 0));
   const [score, setScore] = useState(profile.targetScore?.toString() ?? "");
   const [date, setDate] = useState(profile.testDate ?? "");
   const n = Number(score);
@@ -90,36 +91,10 @@ function GoalsForm({ onDone }: { onDone: () => void }) {
           {!scoreValid && <p className="mt-2 text-xs text-danger">Enter a multiple of 10 between 400 and 1600.</p>}
         </div>
         <div>
-          <p className="text-sm font-medium text-muted">Test date</p>
-          <div className="mt-2 flex flex-wrap gap-1.5" role="radiogroup" aria-label="Official SAT dates">
-            {official.map((d) => (
-              <button
-                key={d.date}
-                type="button"
-                role="radio"
-                aria-checked={date === d.date}
-                onClick={() => setDate(d.date)}
-                title={d.anticipated ? "Anticipated date (not confirmed by College Board yet)" : "Official SAT date"}
-                className={`rounded-full border px-2.5 py-0.5 text-xs font-medium ${
-                  date === d.date ? "border-primary bg-primary-soft text-primary" : "border-line text-muted hover:text-ink"
-                }`}
-              >
-                {formatIsoDate(d.date, { month: "short", day: "numeric", year: "numeric" })}
-                {d.anticipated && "*"}
-              </button>
-            ))}
-          </div>
-          <label htmlFor="testdate" className="sr-only">
+          <label htmlFor="testdate" className="text-sm font-medium text-muted">
             Test date
           </label>
-          <input
-            id="testdate"
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            className="mt-3 block w-full rounded-xl border border-line bg-bg px-4 py-2.5 outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-          />
-          <p className="mt-2 text-xs text-muted">Pick an official SAT date or enter your own. * = anticipated, not confirmed yet.</p>
+          <SatDatePicker value={date} onChange={setDate} dates={official} />
         </div>
       </div>
       <div className="mt-5 flex gap-2">
