@@ -1283,11 +1283,12 @@
   "sourceImage": "/bank/img/math/math_0100_full.webp",
   "prompt": "x | y\n0 | 0\n1 | 1\n2 | 8\n3 | 27\nThe table shown includes some values of x and their corresponding values of y. Which of the following graphs in the xy-plane could represent the relationship between x and y ?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_0100_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]
@@ -2810,11 +2811,12 @@
   "sourceImage": "/bank/img/math/math_0231_full.webp",
   "prompt": "y = 4(2^x)\nWhich of the following is the graph in the xy-plane of the given equation?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_0231_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]
@@ -4442,11 +4444,12 @@
   "sourceImage": "/bank/img/math/math_0358_full.webp",
   "prompt": "f(x) = x^2 + 4\nThe function f is defined as shown. Which of the following graphs in the xy-plane could be the graph of y = f(x)?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_0358_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]
@@ -8552,11 +8555,12 @@
   "sourceImage": "/bank/img/math/math_0703_full.webp",
   "prompt": "x + 5y = 5\n2x - y = -4\nWhich of the following graphs in the xy-plane could be used to solve the system of equations above?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_0703_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]
@@ -9814,11 +9818,12 @@
   "sourceImage": "/bank/img/math/math_0799_full.webp",
   "prompt": "ax + by = b\nIn the equation above, a and b are constants and 0 < a < b. Which of the following could represent the graph of the equation in the xy-plane?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_0799_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]
@@ -14201,11 +14206,12 @@
   "sourceImage": "/bank/img/math/math_1153_full.webp",
   "prompt": "Which of the following is the graph of the equation y = 2x - 5 in the xy-plane?",
   "choices": {
-   "A": "[figure]",
-   "B": "[figure]",
-   "C": "[figure]",
-   "D": "[figure]"
+   "A": "",
+   "B": "",
+   "C": "",
+   "D": ""
   },
+  "choicesImage": "/bank/img/math/math_1153_full.webp",
   "flags": [
    "formulas_read_from_image"
   ]

@@ -10,8 +10,8 @@ Start: 2026-11-10 · Target launch: 2026-11-29
 - [x] **Day 2** — Home tab (`/`) personal dashboard: target score, test date + countdown, stats overview (saved in browser until Supabase on Day 5)
 - [x] **Day 2** — Student profile page (`/profile`): name/avatar; sidebar profile card
 - [x] **Day 2** — Practice mode UI: pick section/domain/difficulty, answer, instant feedback, explanations; KaTeX math rendering; 18 seed questions + `npm run check:content`
-- [ ] **Day 3** — Math content batch #1 (Algebra, Advanced Math)
-- [ ] **Day 4** — R&W content batch #1 (all 4 domains)
+- [x] **Day 3** — Imported question bank (3,770 Qs from sat_questions.xlsx), answers + explanations for every question
+- [x] **Day 4** — Question Bank UI: filters by topic → skill, difficulty, status; list + solve mode; bookmarks; review list (content/bank/REVIEW.md)
 - [ ] **Day 5** — Supabase: project, auth (email magic link + Google), `profiles` table, sign-in UI  ← *needs Supabase keys*
 - [ ] **Day 6** — Save attempts to DB, dashboard with accuracy per domain/skill
 - [ ] **Day 7** — Buffer, review, bug fixes

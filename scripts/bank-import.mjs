@@ -98,6 +98,10 @@ function mathQuestion(r) {
     if (r.choices_image || Object.values(q.choices).every((c) => c === CHOICE_IMG)) {
       q.choicesImage = image("math", r.choices_image);
       for (const k of Object.keys(q.choices)) if (q.choices[k] === CHOICE_IMG) q.choices[k] = "";
+    } else if (Object.values(q.choices).every((c) => c === "[figure]") && r.question_image) {
+      // Graph choices that only exist on the full original page: show that page as the choices image.
+      q.choicesImage = image("math", r.question_image);
+      for (const k of Object.keys(q.choices)) q.choices[k] = "";
     }
   }
   if (r.flags) q.flags = r.flags.split(/[,;]\s*/).filter(Boolean);

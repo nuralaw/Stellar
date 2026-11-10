@@ -1,0 +1,797 @@
+[
+ {
+  "id": "m-1801",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Volume = length · width · height, so 2,736 = 19 · 8 · h = 152h. Dividing gives h = 2,736/152 = 18. Choice D, 152, is the base area, not the height."
+ },
+ {
+  "id": "m-1802",
+  "answer": [
+   "47"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The angles marked x° and 133° sit next to each other along line j, so they form a straight angle: x + 133 = 180, which gives x = 47. The parallel line k isn't needed here."
+ },
+ {
+  "id": "m-1803",
+  "answer": [
+   "4"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "For similar solids, the volume ratio is the cube of the length ratio. 972/36 = 27 = 3^3, so each edge of P is 3 times the matching edge of Q. The edge of Q is 12/3 = 4 cm. Dividing 12 by 27 would wrongly use the volume ratio for lengths."
+ },
+ {
+  "id": "m-1804",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Perimeter = x + y + z, so 22 = 9 + 7 + z = 16 + z, giving z = 6. Choice D, 16, is x + y, not z."
+ },
+ {
+  "id": "m-1805",
+  "answer": [
+   "44/3",
+   "14.66",
+   "14.67"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Area = (1/2)(RT)(ST), so 792 = (1/2)(72)(ST) and ST = 22. Since LK is parallel to RT, triangle SKL is similar to triangle STR with ratio LK/RT = 24/72 = 1/3, so SK = 22/3. Then KT = ST - SK = 22 - 22/3 = 44/3."
+ },
+ {
+  "id": "m-1806",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A 45° arc is 45/360 = 1/8 of the circle, so the arc length is 1/8 of the circumference. Circumference = 8 · 3 = 24 inches. Choice A just repeats the arc length."
+ },
+ {
+  "id": "m-1807",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The sides of length 9 and 4 meet at the right angle, so they are the base and height. Area = (1/2)(9)(4) = 18. Choice B adds the two sides instead of using the area formula."
+ },
+ {
+  "id": "m-1808",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A circle with center (h, k) and radius r is (x - h)^2 + (y - k)^2 = r^2. With h = -8, k = 6, and r = 5, this is (x + 8)^2 + (y - 6)^2 = 25. Choice A flips the signs of the center, and choice D uses r instead of r^2."
+ },
+ {
+  "id": "m-1809",
+  "answer": [
+   "70"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "At line t, the 110° angle is above t and left of line c. The matching (corresponding) angle at line s is also 110°, and x° sits next to it on the other side of c, so x = 180 - 110 = 70."
+ },
+ {
+  "id": "m-1810",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In triangle ABC, angle B = 90° and angle A = 18°, so angle C = 180 - 90 - 18 = 72°. Since C corresponds to F in the congruent triangle, angle F = 72°. Choice A is the measure of angle A (and D)."
+ },
+ {
+  "id": "m-1811",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Volume = (1/3)(base area)(h), so 71,148π = (1/3)(5,929π)h, giving h = 36. The base area 5,929π = πr^2 gives r = 77. The slant height is sqrt(36^2 + 77^2) = sqrt(7,225) = 85. Choice B is the height, not the slant height."
+ },
+ {
+  "id": "m-1812",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area of a triangle = (1/2)(base)(height) = (1/2)(10)(70) = 350 square centimeters. Choice A forgets the 1/2."
+ },
+ {
+  "id": "m-1813",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "A circle touches the y-axis at exactly one point when the distance from its center to the y-axis, |h|, equals its radius. Every circle here has radius 4, and only choice C has center (4, 9) with |h| = 4. In A and B the center is 8 units away (no intersection); in D the center is on the y-axis (two intersections)."
+ },
+ {
+  "id": "m-1814",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The base area is 70,560 - 38,160 = 32,400, so each base side is sqrt(32,400) = 180 inches. Each lateral face has area 38,160/4 = 9,540 = (1/2)(180)(slant height), so the slant height is 106. The height, slant height, and half the base side form a right triangle: h = sqrt(106^2 - 90^2) = sqrt(3,136) = 56. Choice C is the slant height."
+ },
+ {
+  "id": "m-1815",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "By the Pythagorean theorem, c^2 = 11^2 + 9^2 = 121 + 81 = 202, so c = sqrt(202). Choice D forgets the square root, and choice C just adds the legs."
+ },
+ {
+  "id": "m-1816",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "In right triangle BDC, angle C = 60° and BC = 12, so BD = 12 sin 60° = 6sqrt(3). In right triangle ABD, angle ABD = 30°, so AD = BD · tan 30° = 6sqrt(3) · (1/sqrt(3)) = 6. Choice D is the length of BD."
+ },
+ {
+  "id": "m-1817",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width = 36 · 34 = 1,224 square centimeters. Choice A adds the sides, and choice B is the perimeter."
+ },
+ {
+  "id": "m-1818",
+  "answer": [
+   "5800"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Volume = base area · height. The base area is 10 · 10 = 100, so the volume is 100 · 58 = 5,800 cubic inches."
+ },
+ {
+  "id": "m-1819",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The area of a square is side · side, so the area is 94 · 94. Choice C, 4 · 94, is the perimeter."
+ },
+ {
+  "id": "m-1820",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The x° angle (above n, left of k) and the 145° angle (below n, right of k) are vertical angles, so x = 145. Vertical angles are always equal, so choices A, B, and D are wrong."
+ },
+ {
+  "id": "m-1821",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The circle's center is (6, -5), which is the midpoint of diameter PQ. From P(10, -5) to the center, x drops by 4, so Q is 4 more to the left: (6 - 4, -5) = (2, -5). Choice C is the center itself."
+ },
+ {
+  "id": "m-1822",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Angles r° and s° are opposite each other where the two lines cross, so they are vertical angles and are equal: s = 53. Choice C would be the result for a linear pair, but r and s are not adjacent."
+ },
+ {
+  "id": "m-1823",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Statement I gives right angles at A and D, and angles ACB and DCE are vertical angles, but three equal angles only prove similarity, not congruence (no side is known). Statement II gives AC = DC and the vertical angles, but without I we don't know angle D is a right angle, so we lack a second matching angle. Neither statement alone is enough."
+ },
+ {
+  "id": "m-1824",
+  "answer": [
+   "126"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Volume of a pyramid = (1/3)(base area)(height) = (1/3)(27 · 2)(7) = (1/3)(378) = 126 cubic centimeters. Forgetting the 1/3 gives 378."
+ },
+ {
+  "id": "m-1825",
+  "answer": [
+   "-52"
+  ],
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The circle is (x + 5)^2 + (y - 2)^2 = 81. Expanding gives x^2 + 10x + 25 + y^2 - 4y + 4 = 81, so x^2 + y^2 + 10x - 4y - 52 = 0. Therefore c = 25 + 4 - 81 = -52."
+ },
+ {
+  "id": "m-1826",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Since ℓ is parallel to j, angle ACD equals the x° angle at A, so angle ACD = angle AEF = x°, which makes EG parallel to CD. Then triangle AEF ~ triangle ACD, and EF = 0.5CD means AF = 0.5AD, so F is the midpoint of AD. Triangle DFG ~ triangle DAB with ratio DF/DA = 1/2, so FG = 0.5AB (II is true). Then AB = 4.5CD = 9EF, so I is false, and EF/FG = 0.5/2.25 = 2/9 while AF/FD = 1, so III is false.",
+  "fix": {
+   "prompt": "In the figure, EG and AD intersect at point F, and line ℓ is parallel to line j. If EF = 0.5CD and FG = 2.25CD, which of the following must be true?\nI. AB = 2.25EF\nII. FG = 0.5AB\nIII. (EF)/(FG) = (AF)/(FD)"
+  }
+ },
+ {
+  "id": "m-1827",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The radius is the distance from C(h, k) to A(h + 1, k + sqrt(102)): r^2 = 1^2 + (sqrt(102))^2 = 103. Since angle ACB is a right angle and CA = CB = r, AB is the hypotenuse of an isosceles right triangle: AB = sqrt(r^2 + r^2) = sqrt(206). Choice B doubles sqrt(102) instead of using the radius.",
+  "fix": {
+   "prompt": "In the xy-plane, a circle has center C with coordinates (h, k). Points A and B lie on the circle. Point A has coordinates (h + 1, k + sqrt(102)), and ∠ACB is a right angle. What is the length of AB?"
+  }
+ },
+ {
+  "id": "m-1828",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In (x - h)^2 + (y - k)^2 = r^2, the right side is r^2. Here r^2 = 81, so r = 9. Choice D is r^2, not r."
+ },
+ {
+  "id": "m-1829",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The legs are 12 and 3 and the hypotenuse is c, so the Pythagorean theorem gives 12^2 + 3^2 = c^2. Choice D subtracts, which would only apply if c were a leg."
+ },
+ {
+  "id": "m-1830",
+  "answer": [
+   "12"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The diagonal is the hypotenuse of a right triangle whose legs are the sides: (3sqrt(17))^2 = 3^2 + L^2, so 153 = 9 + L^2 and L^2 = 144. The longer side is L = 12."
+ },
+ {
+  "id": "m-1831",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "c is the hypotenuse, so c = sqrt(9^2 + 6^2) = sqrt(117) ≈ 10.8. Choice C just adds the legs, and choice D is half of 117."
+ },
+ {
+  "id": "m-1832",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Circle A has center (0, 2). Moving it down 4 units gives center (0, -2), so circle B is x^2 + (y + 2)^2 = 36. Choice B moves the center up instead, and choices C and D shift it sideways."
+ },
+ {
+  "id": "m-1833",
+  "answer": [
+   "36"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "By the Pythagorean theorem, RS^2 = (4sqrt(82))^2 - 4^2 = 1,312 - 16 = 1,296, so RS = sqrt(1,296) = 36."
+ },
+ {
+  "id": "m-1834",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Let s be the base side. One prism has K = 2s^2 + 4(90)s = 2s^2 + 360s. The glued prism has height 180, so its surface area is 2s^2 + 720s. Setting 2s^2 + 720s = (92/47)(2s^2 + 360s) and multiplying by 47 gives 94s^2 + 33,840s = 184s^2 + 33,120s, so 90s^2 = 720s and s = 8."
+ },
+ {
+  "id": "m-1835",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Angle POT is a straight angle, 180°. Removing angles POQ and ROT leaves angle QOR = 180 - 30 - 30 = 120°. In radians, 120 · π/180 = (2/3)π. Choice A, (5/6)π, is 150°, which subtracts only one 30° angle."
+ },
+ {
+  "id": "m-1836",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Since LM is parallel to PQ, triangles LMR and QPR are similar (alternate interior angles and vertical angles at R), with MR matching PR and LR matching QR. So QR/7 = 11/6, giving QR = 77/6. Then LQ = LR + RQ = 7 + 77/6 = 119/6. Choice B is only RQ."
+ },
+ {
+  "id": "m-1837",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Because BD is parallel to AE, angle AEC equals angle BDC, which is 58°. In triangle ACE, angle CAE = 180 - 62 - 58 = 60°. Choice A is angle AEC."
+ },
+ {
+  "id": "m-1838",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Since QS is a diameter, arcs PS and PQ together make a semicircle of length 144π/2 = 72π. With PS = 2PQ, 3PQ = 72π, so PQ = 24π and PS = 48π. Arc QR is cut off by the vertical angle to arc PS, so it also has length 48π. Choice A is arc PQ."
+ },
+ {
+  "id": "m-1839",
+  "answer": [
+   "47"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Draw a line through C parallel to AB and DE. It splits angle C into two parts; one part pairs with angle B and the other with angle D as same-side interior angles, so each pair adds to 180°. That means B + C + D = 360, so C = 360 - 139 - 174 = 47."
+ },
+ {
+  "id": "m-1840",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The volume of a cylinder is πr^2h. With radius 2r and height h/2, the volume is π(2r)^2(h/2) = 2πr^2h, twice the original. So the volume is 2 · 22 = 44 cubic centimeters. Choice B assumes the changes cancel, but doubling the radius quadruples the area."
+ },
+ {
+  "id": "m-1841",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The 24° angle (below r, right of t) and the x° angle (above s, left of t) are alternate interior angles. If they are equal, the lines are parallel, so x = 24 is enough. Choices A and C would make the lines not parallel."
+ },
+ {
+  "id": "m-1842",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Since 24° and 66° are complementary, sin 24° = cos 66° and cos 24° = sin 66°. Substituting gives (cos 66°)(cos 66°) + (cos 24°)(cos 24°) = (cos 66°)^2 + (cos 24°)^2. Choice D equals 2(cos 66°)^2, which isn't the same."
+ },
+ {
+  "id": "m-1843",
+  "answer": [
+   "565"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "cos Z = adjacent/hypotenuse. The side adjacent to Z is 560 and the hypotenuse is 565, so cos Z = 560/565 and c = 565."
+ },
+ {
+  "id": "m-1844",
+  "answer": [
+   "162"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The 162° angle (above r, left of n) and the x° angle (above s, left of n) are corresponding angles. Because r is parallel to s, they are equal, so x = 162."
+ },
+ {
+  "id": "m-1845",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "c is the hypotenuse, so by the Pythagorean theorem c^2 = 4^2 + 5^2 and c = sqrt(4^2 + 5^2). Choice C forgets to square the legs."
+ },
+ {
+  "id": "m-1846",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width, so 630 = 70w and w = 630/70 = 9 inches. Choice D subtracts instead of dividing."
+ },
+ {
+  "id": "m-1847",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width = 17 · 7 = 119 cm^2. Choice B is the perimeter, and choice A adds the sides."
+ },
+ {
+  "id": "m-1848",
+  "answer": [
+   "45"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The two legs are both 32, so the triangle is an isosceles right triangle. Its two acute angles are equal and add to 90°, so x = 45."
+ },
+ {
+  "id": "m-1849",
+  "answer": [
+   "16"
+  ],
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "A 45° arc is 45/360 = 1/8 of the circumference, so the circumference is 8 · 4π = 32π. Since circumference = 2πr, r = 32π/(2π) = 16."
+ },
+ {
+  "id": "m-1850",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The diagonal is the hypotenuse of a right triangle with the sides as legs: (5sqrt(17))^2 = 5^2 + L^2, so 425 = 25 + L^2 and L^2 = 400. The longer side is 20. Choice D forgets the square root."
+ },
+ {
+  "id": "m-1851",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "To convert radians to degrees, multiply by 180°/π (since π radians = 180°). So the difference is -(5/6)π · 180°/π = -150°. Choice C uses the degrees-to-radians factor, and choice A uses 360° instead of 180°."
+ },
+ {
+  "id": "m-1852",
+  "answer": [
+   "3"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width, so 57 = 19w and w = 57/19 = 3 inches."
+ },
+ {
+  "id": "m-1853",
+  "answer": [
+   "1/6",
+   ".1666",
+   ".1667",
+   "0.1667"
+  ],
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "With radius 1, the circumference is 2π(1) = 2π. The fraction is (π/3)/(2π) = 1/6."
+ },
+ {
+  "id": "m-1854",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Since triangle ABC is congruent to triangle BDE, AB = BD = r = 54 and BC = DE = s = 26. Point C lies on BD, so CD = BD - BC = 54 - 26 = 28."
+ },
+ {
+  "id": "m-1855",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The diagonal of an inscribed square is a diameter: 2 · (20sqrt(2))/2 = 20sqrt(2). A square's diagonal is side · sqrt(2), so the side is 20sqrt(2)/sqrt(2) = 20. Choice C is the diagonal."
+ },
+ {
+  "id": "m-1856",
+  "answer": [
+   "21/29",
+   ".7241",
+   "0.7241"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "tan A = 21/20 means the legs are 21 and 20 (scaled), so the hypotenuse is sqrt(21^2 + 20^2) = 29 and sin A = 21/29. Similar triangles have equal corresponding angles, so angle D = angle A and sin D = 21/29. The 2.9 scale factor doesn't change angle measures."
+ },
+ {
+  "id": "m-1857",
+  "answer": [
+   "24.5",
+   "49/2"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The points are (-3, 4), (5, 3), and (4, -3). Enclose the triangle in the rectangle from x = -3 to 5 and y = -3 to 4, with area 8 · 7 = 56. Subtract the three corner right triangles: (1/2)(8)(1) = 4, (1/2)(1)(6) = 3, and (1/2)(7)(7) = 24.5. The area is 56 - 4 - 3 - 24.5 = 24.5."
+ },
+ {
+  "id": "m-1858",
+  "answer": [
+   "1681"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "When lengths are multiplied by k, areas are multiplied by k^2. Here k = 41, so the area of A is 41^2 = 1,681 times the area of B. Answering 41 forgets to square the scale factor."
+ },
+ {
+  "id": "m-1859",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Angles w° and z° are opposite each other where the two lines cross, so they are vertical angles and are equal: z = 136. Choice B, 44, would be a linear pair, but w and z aren't adjacent."
+ },
+ {
+  "id": "m-1860",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The radius of B is 129n/3n = 43 times the radius of A. Area depends on r^2, so the area of B is 43^2 = 1,849 times the area of A. Choice A forgets to square the ratio."
+ },
+ {
+  "id": "m-1861",
+  "answer": [
+   "1800"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = (1/2)(base)(height) = (1/2)(40)(90) = 1,800 square centimeters."
+ },
+ {
+  "id": "m-1862",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "For the two acute angles of a right triangle, the opposite and adjacent legs swap, so their tangents are reciprocals. The reciprocal of sqrt(3)/3 is 3/sqrt(3). Tangents of acute angles are positive, so A and B are out; C would only work for a 45° angle."
+ },
+ {
+  "id": "m-1863",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The radius is 22/2 = 11, so the volume is πr^2h = π(11^2)(6) = 726π cubic centimeters. Choice D uses the diameter as the radius."
+ },
+ {
+  "id": "m-1864",
+  "answer": [
+   "4"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "PQ is opposite the 30° angle and QR = 8 is the hypotenuse. In a 30-60-90 triangle, the side opposite 30° is half the hypotenuse, so PQ = 4."
+ },
+ {
+  "id": "m-1865",
+  "answer": [
+   "180"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A square has 4 equal sides, so its perimeter is 4 · 45 = 180."
+ },
+ {
+  "id": "m-1866",
+  "answer": [
+   "50.5",
+   "101/2"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Lines r, s, and q form a triangle. Its angle at the top is a = 43° (vertical angles), and its angle where s meets q is 180 - 122 = 58°, so its angle where r meets q is 180 - 43 - 58 = 79°. Because q is parallel to t, r makes the same 79° angle with t, so the angle below t between t and r is 180 - 79 = 101°. That angle is split into two equal parts, so 2w = 101 and w = 50.5."
+ },
+ {
+  "id": "m-1867",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width = 4 · 2 = 8 cm^2. Choice C is the perimeter, and choice A adds the sides."
+ },
+ {
+  "id": "m-1868",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The segment runs from (-6, 4) to (3, 10), so its length is sqrt(9^2 + 6^2) = sqrt(117) = 3sqrt(13). Area = (1/2)(3sqrt(13))(L) = 36sqrt(13), so (3/2)L = 36 and L = 24. Choice C is the length of the leg shown."
+ },
+ {
+  "id": "m-1869",
+  "answer": "C",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "With CD = EF, FC = DE, and shared side DF, triangles FCD and DEF are congruent (SSS), with D matching F. So angle CDF = angle EFD = y = 30°. Then angle CDE = angle CDF + angle FDE = 30 + 65 = 95°. Choice B uses only angle x."
+ },
+ {
+  "id": "m-1870",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A dilation changes side lengths but keeps angle measures. Angle V' matches angle V, which is 25°. Choice B halves 76, but 76 is a side length, not an angle."
+ },
+ {
+  "id": "m-1871",
+  "answer": "B",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The area of square X is 9^2 = 81, so the total area is 81 + 32 = 113 square centimeters. Choice D is only the square's area."
+ },
+ {
+  "id": "m-1872",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Square N has side sqrt(49) = 7 feet, so square M has side 6 · 7 = 42 feet and area 42^2 = 1,764 square feet. Equivalently, area scales by 6^2 = 36: 36 · 49 = 1,764. Choice C multiplies 49 by 6 instead of 36."
+ },
+ {
+  "id": "m-1873",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Volume = base area · height, so 2,187 = 81h and h = 2,187/81 = 27 centimeters."
+ },
+ {
+  "id": "m-1874",
+  "answer": [
+   "52/53",
+   ".9811",
+   "0.9811"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "TR = 53 is the hypotenuse, so TS = sqrt(53^2 - (sqrt(105))^2) = sqrt(2,809 - 105) = sqrt(2,704) = 52. sin R = opposite/hypotenuse = TS/TR = 52/53."
+ },
+ {
+  "id": "m-1875",
+  "answer": [
+   "2048"
+  ],
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Area = length · width = 64 · 32 = 2,048 square inches."
+ },
+ {
+  "id": "m-1876",
+  "answer": [
+   "480"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "In right triangle ABC, BC = sqrt(34 - 9) = 5. Triangles ABC and ADE are similar (shared angle A, right angles at C and E), and AE = 3 + 21 = 24 is 8 times AC. So DE = 8 · 5 = 40, and the area of ADE is (1/2)(24)(40) = 480."
+ },
+ {
+  "id": "m-1877",
+  "answer": "D",
+  "domain": "geometry-trig",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Surface area = 2(4·5 + 4·6 + 5·6) = 2(20 + 24 + 30) = 148 square inches. Choice B forgets to double, and choice C is the volume."
+ },
+ {
+  "id": "m-1878",
+  "answer": [
+   "63"
+  ],
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In triangle ABC, angle B = 90° and angle A = 27°, so angle C = 180 - 90 - 27 = 63°. Since C corresponds to F, angle F = 63°."
+ },
+ {
+  "id": "m-1879",
+  "answer": [
+   "7/50",
+   ".14",
+   "0.14"
+  ],
+  "domain": "geometry-trig",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Angle E matches angle B, and in right triangle ABC the acute angles A and B are complementary, so tan B = 1/tan A. Therefore tan E = 7/50 = 0.14."
+ },
+ {
+  "id": "m-1880",
+  "answer": "A",
+  "domain": "geometry-trig",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The 130° angle and the angle between line j and line n inside the figure form a linear pair, so j meets n at 50°. The two a° angles show k meets the parallel lines at the same 50° angle. Line ℓ is perpendicular to m, so k, ℓ, and m form a right triangle with angles 90° and 50°, giving b = 180 - 90 - 50 = 40."
+ }
+]

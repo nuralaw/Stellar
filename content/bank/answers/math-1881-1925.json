@@ -1,0 +1,447 @@
+[
+  {
+    "id": "m-1881",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle A has center (-2, 0) and radius sqrt(9) = 3. Shifting down 6 units moves the center to (-2, -6), which gives (y + 6)^2, and doubling the radius gives radius 6, so r^2 = 36 = (4)(9). That is (x + 2)^2 + (y + 6)^2 = (4)(9). Choice C uses (y - 6), which would shift the circle up, and choices B and D multiply the squared terms instead of changing r^2."
+  },
+  {
+    "id": "m-1882",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An equilateral triangle has all three sides equal. Since AB = BC = 4,680 mm, the triangle is equilateral exactly when AC is also 4,680 mm. The other choices make AC shorter, giving an isosceles triangle that is not equilateral."
+  },
+  {
+    "id": "m-1883",
+    "answer": [
+      "36"
+    ],
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The area of a triangle is (1/2)·base·height. So 36 = (1/2)·b·2 = b, and the base is 36 units. A common slip is forgetting the 1/2 and getting 18."
+  },
+  {
+    "id": "m-1884",
+    "answer": [
+      "30"
+    ],
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because BD is parallel to AE, triangles CBD and CAE are similar. In right triangle CBD, CB = 8 and BD = 6, so CD = sqrt(8^2 + 6^2) = 10. The scale factor is AE/BD = 18/6 = 3, so CE = 3·10 = 30."
+  },
+  {
+    "id": "m-1885",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A hemisphere's volume is half a sphere's: (1/2)(4/3)πr^3 = (2/3)πr^3. With r = 27, this is (2/3)π(19,683) ≈ 41,224, so the closest choice is 41,200. The other choices come from using the wrong formula or forgetting to cube the radius."
+  },
+  {
+    "id": "m-1886",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 134° angle at line j and angle x at line k are same-side interior angles (both between the lines, on the left of t). The lines are parallel if those angles add to 180°, so x = 46 proves j ∥ k. Choice C fails because w is vertical to the 134° angle, so w = 134 is always true. Choices B and D would need y = 134 or z = 46 to work."
+  },
+  {
+    "id": "m-1887",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The circle has center (-3, 1) and r^2 = 25. A point is inside if (x + 3)^2 + (y - 1)^2 < 25. For (3, 2): 6^2 + 1^2 = 37 > 25, so it is outside. The others give 20, 0, and 10, all less than 25, so they are inside."
+  },
+  {
+    "id": "m-1888",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Similar triangles have equal corresponding angles. Since M corresponds to Q, angle Q also measures 53°. Choice A is the other acute angle of the triangle, not the angle corresponding to M."
+  },
+  {
+    "id": "m-1889",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at R, so QS is the hypotenuse. Side SR = 25 is opposite angle Q, so sin Q = 25/QS, which gives QS = 25/(sin Q). Choice C would be correct only if 25 were the side adjacent to Q."
+  },
+  {
+    "id": "m-1890",
+    "answer": [
+      "15/17",
+      "45/51",
+      ".8823",
+      ".8824",
+      "0.882"
+    ],
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Angle J is the right angle, so KL is the hypotenuse and cos K = JK/KL = 24/51. The third side is JL = sqrt(51^2 - 24^2) = sqrt(2025) = 45. Then cos L = JL/KL = 45/51 = 15/17. (In a right triangle, the cosine of one acute angle equals the sine of the other.)"
+  },
+  {
+    "id": "m-1891",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A dilation changes side lengths but keeps angle measures the same. Angle X corresponds to angle A, which measures 60°, so angle X is 60°. The scale factor and d = 16 only affect side lengths."
+  },
+  {
+    "id": "m-1892",
+    "answer": [
+      "54"
+    ],
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since AB = BC and O is the midpoint of DE (parallel to AC), BF is the perpendicular bisector of AC. In right triangle AFO, angle OAF = 30°, so angle AOF = 60° and angle AOB = 120°. Because AO = BO, angles OAB and OBA are each 30°, so angle BAC = 60° and the triangle is equilateral with AB = BC = 81. Then BF = AF·sqrt(3) and OF = AF/sqrt(3), so BF = 3·OF and BO = (2/3)BF. Since DE ∥ AC, BE = (2/3)·81 = 54."
+  },
+  {
+    "id": "m-1893",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The volume of a cylinder is (base area)·(height). So 432 = 24h, giving h = 432/24 = 18 cm. Choice D multiplies instead of dividing."
+  },
+  {
+    "id": "m-1894",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angle B = 36·(π/216) = π/6 radians, which is 30°. So cos B = cos 30° = sqrt(3)/2. Choice B is sin 30°, not cos 30°."
+  },
+  {
+    "id": "m-1895",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two acute angles of a right triangle add to 90°. So the other angle is 90 - 51 = 39°. Choice D just repeats the given angle."
+  },
+  {
+    "id": "m-1896",
+    "answer": [
+      "3"
+    ],
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Convert 60° to radians: 60·(π/180) = π/3. So π/n = π/3, which means n = 3.",
+    "fix": {
+      "prompt": "The measure of angle L is 60 degrees. If the measure of angle L is π/n radians, where n is a constant, what is the value of n?"
+    }
+  },
+  {
+    "id": "m-1897",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The prism's edges are 6 cm, 2 cm, and 3 cm. Its volume is ℓwh = 6·2·3 = 36 cubic centimeters. Choice D adds the edges instead of multiplying them."
+  },
+  {
+    "id": "m-1898",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use XY = 26 as the base; the height is the altitude from Z. In the right triangle with hypotenuse XZ = 19 and angle 54° at X, that altitude is 19 sin 54°. So the area is (1/2)(26)(19 sin 54°) = 247 sin 54°. Choice D forgets the 1/2, and choice A leaves out the sine factor."
+  },
+  {
+    "id": "m-1899",
+    "answer": [
+      "11/28",
+      ".3928",
+      ".3929",
+      "0.393"
+    ],
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The side of length 11 is adjacent to angle x°, and 28 is the hypotenuse. So cos x° = adjacent/hypotenuse = 11/28."
+  },
+  {
+    "id": "m-1900",
+    "answer": [
+      "49"
+    ],
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle F has radius sqrt(25) = 5, so circle G has radius 5 + 2 = 7. In the circle equation, the right side is r^2, so p = 7^2 = 49. Adding 2 to 25 (getting 27) is the common mistake."
+  },
+  {
+    "id": "m-1901",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If cos(Q) = sin(R) for acute angles, then Q and R are complementary: Q + R = 90. So (x + 61) + (4x + 4) = 90, giving 5x + 65 = 90 and x = 5. Check: Q = 66° and R = 24°, which add to 90°."
+  },
+  {
+    "id": "m-1902",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The can's volume is (base area)·(height) = 75·10 = 750 cm^3. The syrup fills 110 cm^3 of that, so the fruit takes up 750 - 110 = 640 cm^3. Choice D is the whole can, not just the fruit."
+  },
+  {
+    "id": "m-1903",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area = (1/2)·base·height = (1/2)(56)(112) = 3,136 square centimeters. Choice D forgets the 1/2."
+  },
+  {
+    "id": "m-1904",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The triangle has a right angle and two 45° angles, so it is an isosceles right triangle and its two legs are equal. The legs are x and 24, so x = 24. Choice B confuses an angle measure with a side length."
+  },
+  {
+    "id": "m-1905",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The triangle's angles add to 180°, so the top angle is 180 - 70 - 50 = 60°. Where the extended sides cross, angle x sits next to that 60° angle along a straight line, so x = 180 - 60 = 120. Choice A (110) would come from using only the 70° angle."
+  },
+  {
+    "id": "m-1906",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The length is 7 + 40 = 47 cm. The area is length times width: 47·7 = 329 square centimeters. Choice C adds the length and width instead of multiplying."
+  },
+  {
+    "id": "m-1907",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles add to 180°, so angle C = 180 - 54 - 90 = 36°. Then k/2 = 36, so k = 72. Choice A is the angle measure itself, not k."
+  },
+  {
+    "id": "m-1908",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The longest side, sqrt(80), is the hypotenuse, so the legs are 2sqrt(2) and 6sqrt(2). (Check: 8 + 72 = 80.) The area is (1/2)(2sqrt(2))(6sqrt(2)) = (1/2)(24) = 12. Choice D forgets the 1/2."
+  },
+  {
+    "id": "m-1909",
+    "answer": [
+      "4.5",
+      "9/2"
+    ],
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Angle ABC is a right angle and BD is the altitude to the hypotenuse, so triangles ADB and BDC are similar. That gives AD/BD = BD/DC, or 8/6 = 6/DC. So DC = 36/8 = 4.5."
+  },
+  {
+    "id": "m-1910",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set the volume formula from the figure equal to 473: 7πk^3/48 = 473. Then k^3 = 473·48/(7π) ≈ 1,032.4, so k ≈ 10.11 cm. Checking: 7π(10.11)^3/48 ≈ 473."
+  },
+  {
+    "id": "m-1911",
+    "answer": [
+      "1660"
+    ],
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each obtuse angle is supplementary to the acute angle, so each obtuse angle is 180 - (9x - 560) = 740 - 9x. The sum of one acute and three obtuse angles is (9x - 560) + 3(740 - 9x) = 1660 - 18x. Matching this to -18x + w gives w = 1660."
+  },
+  {
+    "id": "m-1912",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Perimeter = 2(length + width) = 2(4 + 9) = 26 inches. Choice A adds only one length and one width."
+  },
+  {
+    "id": "m-1913",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The radius squared is the squared distance from (-4, 5) to (-8, 8): (-4)^2 + 3^2 = 25. With center (-4, 5), the equation is (x + 4)^2 + (y - 5)^2 = 25. Choice B uses the radius 5 instead of r^2, and choices A and C have the signs flipped."
+  },
+  {
+    "id": "m-1914",
+    "answer": [
+      "39312"
+    ],
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A tangent is perpendicular to the radius at the point of tangency, so triangles OAE and OUE are right triangles with hypotenuse OE = 510 and leg 78. The other leg is sqrt(510^2 - 78^2) = sqrt(254,016) = 504. Each triangle has area (1/2)(78)(504) = 19,656, so the quadrilateral's area is 2·19,656 = 39,312."
+  },
+  {
+    "id": "m-1915",
+    "answer": [
+      "16.875",
+      "135/8"
+    ],
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "When side lengths scale by a factor k, area scales by k^2. Triangle ABC's sides are 4 times as long, so its area is 16 times as large. So the area of DEF is 270/16 = 16.875 square inches. Dividing by 4 instead of 16 is the common mistake."
+  },
+  {
+    "id": "m-1916",
+    "answer": [
+      "-2"
+    ],
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Complete the squares: (x - 5)^2 + (y - 4)^2 = 14n + 41, so circle A has center (5, 4) and r^2 = 14n + 41. Circle B has the same center and twice the radius, so its r^2 is 4 times as big. From (11, 8): 6^2 + 4^2 = 52, so circle A's r^2 = 52/4 = 13. Then 14n + 41 = 13 gives n = -2."
+  },
+  {
+    "id": "m-1917",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since angle X is a right angle and XW ⊥ YZ, angle Z equals angle YXW (both are complementary to angle Y). In right triangle XWY, tan(YXW) = WY/WX = 572/429 = 4/3. So tan Z = 4/3. Choice B flips the ratio."
+  },
+  {
+    "id": "m-1918",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Move terms and complete the squares: x^2 + 14x + 49 + y^2 - 6y + 9 = 109 + 49 + 9, so (x + 7)^2 + (y - 3)^2 = 167. The radius is sqrt(167). Choice A forgets to add the completing-the-square constants."
+  },
+  {
+    "id": "m-1919",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Angle x and the 142° angle sit side by side on line q, forming a straight line. So they are supplementary: x + 142 = 180. The parallel lines are not needed for this step."
+  },
+  {
+    "id": "m-1920",
+    "answer": "A",
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "42π is 21 full turns of 2π, so it ends at the same place as angle 0 on the unit circle. Therefore sin 42π = sin 0 = 0."
+  },
+  {
+    "id": "m-1921",
+    "answer": "D",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area = length·width = 56·28 = 1,568 square inches. Choice C is the perimeter, not the area."
+  },
+  {
+    "id": "m-1922",
+    "answer": [
+      "12"
+    ],
+    "domain": "geometry-trig",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In a 30°-60°-90° triangle, the sides are a, a·sqrt(3), and 2a. The perimeter is a(3 + sqrt(3)) = 18 + 6sqrt(3) = 6(3 + sqrt(3)), so a = 6. The longest side (the hypotenuse) is 2a = 12."
+  },
+  {
+    "id": "m-1923",
+    "answer": "B",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A cube has 6 equal square faces, so 6s^2 = 54, s^2 = 9, and s = 3 m. The volume is 3^3 = 27 cubic meters. Choice A divides the surface area by 3 instead of finding the edge."
+  },
+  {
+    "id": "m-1924",
+    "answer": "C",
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The vertices are at (±5, 0) and (0, ±5), so each diagonal is 10 units long. The area of a square is half the product of its diagonals: (1/2)(10)(10) = 50. Equivalently, each side is 5sqrt(2), and (5sqrt(2))^2 = 50. Choice D forgets the 1/2."
+  },
+  {
+    "id": "m-1925",
+    "answer": [
+      "5"
+    ],
+    "domain": "geometry-trig",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 6: (6 - 3)^2 + (c - 5)^2 = 9, so 9 + (c - 5)^2 = 9. Then (c - 5)^2 = 0 and c = 5. The point (6, 5) is the rightmost point of the circle."
+  }
+]

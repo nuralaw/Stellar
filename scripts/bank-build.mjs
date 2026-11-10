@@ -31,7 +31,7 @@ const parseNumeric = (s) => {
 // Corrections of extraction errors (source files stay untouched):
 //   content/bank/fixes.json = { "<id>": { prompt?, passage?, choices?: {A?..D?}, table? } }
 //   and/or a "fix" object on an answers entry (same shape).
-const FIX_FIELDS = ["prompt", "passage", "choices", "table"];
+const FIX_FIELDS = ["prompt", "passage", "choices", "table", "choicesImage"];
 const FIXES_FILE = path.join(BANK, "fixes.json");
 const fileFixes = fs.existsSync(FIXES_FILE) ? read(FIXES_FILE) : {};
 

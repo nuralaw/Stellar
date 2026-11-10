@@ -11,7 +11,8 @@
     "bank:build": "node scripts/bank-build.mjs",
     "bank:check": "node scripts/bank-build.mjs --check",
     "prebuild": "npm run bank:build",
-    "predev": "npm run bank:build"
+    "predev": "npm run bank:build",
+    "bank:review": "node scripts/bank-review.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
