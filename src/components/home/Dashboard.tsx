@@ -306,6 +306,24 @@ export function Dashboard() {
                 <div className="mt-2">
                   <Bar value={hydrated ? d.accuracy : null} />
                 </div>
+                <ul className="mt-3 flex flex-wrap gap-1.5" aria-label={`${d.domain.name} skills`}>
+                  {d.skills.map((s) => (
+                    <li key={s.skill.id}>
+                      <Link
+                        href={`/practice?section=${d.domain.section}&skills=${s.skill.id}`}
+                        title={`Practice ${s.skill.name}`}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-xs text-muted transition-colors hover:border-primary/50 hover:text-ink"
+                      >
+                        {s.skill.name}
+                        {hydrated && s.accuracy !== null && (
+                          <span className={`font-semibold tabular-nums ${s.accuracy >= 70 ? "text-success" : s.accuracy >= 40 ? "text-accent" : "text-danger"}`}>
+                            {s.accuracy}%
+                          </span>
+                        )}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </li>
             ))}
           </ul>

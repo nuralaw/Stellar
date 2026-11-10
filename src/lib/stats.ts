@@ -36,7 +36,10 @@ export function computeStats(attempts: Attempt[], now: number) {
   const bySection = Object.fromEntries(
     (["rw", "math"] as SectionId[]).map((s) => [s, tally(attempts.filter((a) => a.section === s))]),
   ) as Record<SectionId, Tally>;
-  const byDomain = DOMAINS.map((d) => ({ domain: d, ...tally(attempts.filter((a) => a.domain === d.id)) }));
+  const byDomain = DOMAINS.map((d) => {
+    const mine = attempts.filter((a) => a.domain === d.id);
+    return { domain: d, ...tally(mine), skills: d.skills.map((s) => ({ skill: s, ...tally(mine.filter((a) => a.skill === s.id)) })) };
+  });
   // Weakest domain: lowest accuracy among domains with at least 3 answers.
   const weakest = byDomain
     .filter((d) => d.answered >= 3 && d.accuracy !== null)

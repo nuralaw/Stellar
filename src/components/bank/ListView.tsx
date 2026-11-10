@@ -153,6 +153,17 @@ export function ListView({
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  // Keep the page behind the mobile filter sheet from scrolling.
+  useEffect(() => {
+    if (!sheet) return;
+    const el = document.documentElement;
+    const prev = el.style.overflow;
+    el.style.overflow = "hidden";
+    return () => {
+      el.style.overflow = prev;
+    };
+  }, [sheet]);
+
   const pct = (a: number, b: number) => (b ? Math.round((a / b) * 100) : 0);
   const doneHere = filtered.filter((it) => results.has(it.id)).length;
   const setCount = setSize ? Math.min(setSize, filtered.length) : filtered.length;
@@ -296,8 +307,27 @@ export function ListView({
               doneBySkill={progress.doneBySkill}
               totalBySkill={progress.totalBySkill}
             />
+            <div className="border-t border-line px-5 py-4 sm:hidden">
+              <h3 className="mb-3 text-[11px] font-semibold tracking-[0.08em] text-muted uppercase">Sort by</h3>
+              <div className="flex rounded-xl bg-surface-2 p-1" role="radiogroup" aria-label="Sort by">
+                {SORTS.map((s) => (
+                  <button
+                    key={s.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={filters.sort === s.id}
+                    onClick={() => set({ sort: s.id })}
+                    className={`flex-1 rounded-lg px-2 py-2 text-sm font-semibold transition-colors ${
+                      filters.sort === s.id ? "bg-surface text-ink shadow-sm" : "text-muted hover:text-ink"
+                    }`}
+                  >
+                    {s.id === "number" ? "Number" : s.id === "easy-first" ? "Easiest" : "Hardest"}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
-          <div className="shrink-0 border-t border-line p-4 lg:hidden">
+          <div className="shrink-0 border-t border-line p-4 pb-[max(1rem,env(safe-area-inset-bottom))] lg:hidden">
             <button type="button" onClick={() => setSheet(false)} className="w-full rounded-xl bg-primary py-3 font-semibold text-primary-ink">
               Show {fmt(filtered.length)} {filtered.length === 1 ? "question" : "questions"}
             </button>
@@ -319,7 +349,7 @@ export function ListView({
                 type="search"
                 value={filters.search}
                 onChange={(e) => set({ search: e.target.value })}
-                placeholder="Search by words or question #"
+                placeholder="Search text or #"
                 className="h-11 w-full rounded-xl border border-line bg-surface pr-10 pl-10 text-sm outline-none transition-shadow placeholder:text-muted focus:border-primary focus:ring-3 focus:ring-primary/15 [&::-webkit-search-cancel-button]:hidden"
               />
               {filters.search ? (
@@ -445,6 +475,10 @@ export function ListView({
                           |
                         </span>
                         <span className="font-medium">{skillName(it)}</span>
+                        <span className="inline-flex items-center gap-1 capitalize sm:hidden">
+                          <span className={`h-1.5 w-1.5 rounded-full ${DIFF_STYLE[it.difficulty as Difficulty].dot}`} aria-hidden="true" />
+                          {it.difficulty}
+                        </span>
                         {filters.bank === "all" && it.source === "cb" && (
                           <span className="inline-flex items-center gap-1 text-muted" title={`Source: ${SOURCES[it.source].name}`}>
                             <Icon d={I.badge} className="h-3.5 w-3.5" />

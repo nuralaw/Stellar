@@ -111,7 +111,7 @@ function ChoiceRow({
         onClick={onSelect}
         disabled={locked}
         aria-pressed={state === "selected"}
-        className={`group flex min-h-14 w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-left transition-[background-color,border-color,opacity] ${box} ${struck && !locked ? "opacity-45" : ""}`}
+        className={`group flex min-h-14 w-full items-center gap-3 rounded-xl border px-3 py-3 text-left sm:gap-3.5 sm:px-4 transition-[background-color,border-color,opacity] ${box} ${struck && !locked ? "opacity-45" : ""}`}
       >
         <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border-[1.5px] text-sm font-semibold transition-colors ${badge}`}>
           {state === "correct" ? <Icon d={I.check} className="h-4 w-4" strokeWidth={2.8} /> : state === "wrong" ? <Icon d={I.x} className="h-4 w-4" strokeWidth={2.8} /> : letter}
@@ -297,7 +297,7 @@ export function QuestionCard({
 
       {checked && (
         <div className={`overflow-hidden rounded-2xl border ${correct ? "border-success/40" : "border-danger/40"}`} role="status">
-          <div className={`flex flex-wrap items-center gap-x-3 gap-y-1 px-5 py-3.5 ${correct ? "bg-success-soft" : "bg-danger-soft"}`}>
+          <div className={`flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3.5 sm:px-5 ${correct ? "bg-success-soft" : "bg-danger-soft"}`}>
             <span className={`grid h-7 w-7 place-items-center rounded-full text-surface ${correct ? "bg-success" : "bg-danger"}`}>
               <Icon d={correct ? I.check : I.x} className="h-4 w-4" strokeWidth={2.8} />
             </span>
@@ -311,7 +311,7 @@ export function QuestionCard({
               {timeSpent !== undefined && timeSpent > 0 && <span className={!correct ? "ml-3" : ""}>Time: {fmtTime(timeSpent)}</span>}
             </p>
           </div>
-          <div className="bg-surface px-5 py-4">
+          <div className="bg-surface px-4 py-4 sm:px-5">
             <p className="text-[11px] font-semibold tracking-[0.08em] text-muted uppercase">Explanation</p>
             <div className="mt-2 text-[15px] leading-relaxed">
               <RichText text={q.explanation} math={math} />
@@ -324,7 +324,7 @@ export function QuestionCard({
 
   const actions = (
     <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
         <button type="button" onClick={onPrev} disabled={!onPrev} className={btnGhost} aria-label="Previous question">
           <Icon d={I.chevronL} className="h-4 w-4" />
           <span className="hidden sm:inline">Back</span>
@@ -357,15 +357,15 @@ export function QuestionCard({
     return (
       <div>
         <div className="grid overflow-hidden rounded-2xl border border-line bg-surface lg:grid-cols-2">
-          <div className="border-b border-line p-6 md:p-8 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto lg:border-r lg:border-b-0">{stimulus}</div>
-          <div className="p-6 md:p-8">{answerArea}</div>
+          <div className="border-b border-line p-4 sm:p-6 md:p-8 lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto lg:border-r lg:border-b-0">{stimulus}</div>
+          <div className="p-4 sm:p-6 md:p-8">{answerArea}</div>
         </div>
         {actions}
       </div>
     );
   return (
     <div>
-      <div className="rounded-2xl border border-line bg-surface p-6 md:p-8">
+      <div className="rounded-2xl border border-line bg-surface p-4 sm:p-6 md:p-8">
         {!math && q.passage && <div className="mb-6">{stimulus}</div>}
         {answerArea}
       </div>

@@ -51,21 +51,21 @@ function Navigator({ ids, session, bookmarks, pos, go }: { ids: string[]; sessio
   }, [open]);
 
   return (
-    <div className="relative" ref={ref}>
+    <div className="sm:relative" ref={ref}>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-line bg-surface px-3 text-sm font-semibold tabular-nums transition-colors hover:bg-surface-2"
+        className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-line bg-surface px-2.5 text-sm font-semibold tabular-nums transition-colors hover:bg-surface-2 sm:px-3"
       >
         <Icon d={I.grid} className="h-4 w-4 text-muted" />
         {pos + 1}
         <span className="font-medium text-muted">/ {ids.length}</span>
-        <Icon d={I.chevronD} className={`h-3.5 w-3.5 text-muted transition-transform ${open ? "rotate-180" : ""}`} />
+        <Icon d={I.chevronD} className={`hidden h-3.5 w-3.5 text-muted transition-transform sm:block ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
-        <div role="dialog" aria-label="All questions" className="absolute top-full right-0 z-40 mt-2 w-[min(22rem,calc(100vw-2rem))] rounded-2xl border border-line bg-surface p-4 shadow-xl">
+        <div role="dialog" aria-label="All questions" className="absolute inset-x-4 top-full z-40 mt-2 rounded-2xl border border-line bg-surface p-4 shadow-xl sm:inset-x-auto sm:right-0 sm:w-[22rem]">
           <div className="flex items-center justify-between">
             <p className="text-sm font-semibold">Questions</p>
             <p className="text-xs text-muted tabular-nums">
@@ -345,7 +345,7 @@ export function SolveView({
     <section className={`mx-auto px-4 md:px-8 ${showCalc ? "max-w-[1600px]" : wide ? "max-w-7xl" : "max-w-4xl"}`}>
       {/* Toolbar */}
       <div className="sticky top-14 z-20 -mx-4 border-b border-line bg-bg/90 px-4 pt-3 backdrop-blur md:-mx-8 md:px-8 lg:top-0 lg:pr-20">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-2 sm:gap-3">
           <div className="flex min-w-0 items-center gap-2">
             <button type="button" onClick={onExit} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
               <Icon d={I.chevronL} className="h-4 w-4" />
@@ -354,7 +354,7 @@ export function SolveView({
             <span className="hidden h-5 w-px bg-line md:block" aria-hidden="true" />
             <span className="hidden truncate text-sm font-semibold md:block">{run.title}</span>
           </div>
-          <div className="flex shrink-0 items-center gap-1.5">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
             {hasMath && (
               <button
                 type="button"
@@ -374,7 +374,7 @@ export function SolveView({
               onClick={() => setShowTimer((v) => !v)}
               title={showTimer ? "Hide timer" : "Show timer"}
               aria-label={showTimer ? `Time on this question ${fmtTime(secs)}. Hide timer` : "Show timer"}
-              className={`inline-flex h-9 items-center gap-1.5 rounded-lg px-2.5 text-sm font-medium tabular-nums transition-colors hover:bg-surface-2 ${answer ? "text-muted" : "text-ink"}`}
+              className={`inline-flex h-9 items-center gap-1.5 rounded-lg px-2 text-sm font-medium tabular-nums transition-colors hover:bg-surface-2 sm:px-2.5 ${answer ? "text-muted" : "text-ink"}`}
             >
               <Icon d={I.clock} className="h-4 w-4 text-muted" />
               {showTimer ? fmtTime(secs) : <span className="text-muted">Show</span>}
@@ -390,7 +390,7 @@ export function SolveView({
               <Icon d={I.star} className="h-4.5 w-4.5" filled={marked} />
             </button>
             <Navigator ids={run.ids} session={session} bookmarks={bookmarks} pos={pos} go={go} />
-            <button type="button" onClick={finish} className="ml-0.5 h-9 rounded-lg bg-ink px-3.5 text-sm font-semibold text-bg transition-opacity hover:opacity-85">
+            <button type="button" onClick={finish} className="ml-0.5 h-9 rounded-lg bg-ink px-3 text-sm font-semibold text-bg transition-opacity hover:opacity-85 sm:px-3.5">
               Finish
             </button>
           </div>
@@ -435,7 +435,7 @@ export function SolveView({
             aria-label="Desmos graphing calculator"
             className={
               showCalc
-                ? "fixed inset-x-0 bottom-0 z-40 flex h-[65vh] flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-2xl lg:sticky lg:top-28 lg:z-auto lg:mt-5 lg:h-[calc(100vh-8.5rem)] lg:rounded-2xl lg:shadow-none"
+                ? "fixed inset-x-0 bottom-0 z-40 flex h-[50dvh] flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-2xl lg:sticky lg:top-28 lg:z-auto lg:mt-5 lg:h-[calc(100vh-8.5rem)] lg:rounded-2xl lg:shadow-none"
                 : "hidden"
             }
           >
@@ -465,14 +465,14 @@ export function SolveView({
           </aside>
         )}
 
-        <div className={`min-w-0 ${showCalc ? "lg:[&_.qc-actions]:mx-0 lg:[&_.qc-actions]:px-0" : ""}`}>
+        <div className={`min-w-0 ${showCalc ? "pb-[50dvh] max-lg:[&_.qc-actions]:bottom-[50dvh] lg:pb-0 lg:[&_.qc-actions]:mx-0 lg:[&_.qc-actions]:px-0" : ""}`}>
           {/* Meta */}
           {meta && (
             <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
               <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold text-ink">{SECTIONS[meta.section].short}</span>
-              <span className="rounded-md border border-line px-2 py-0.5 font-medium">{SOURCES[meta.source].name}</span>
-              <span>{getDomain(meta.domain)?.name}</span>
-              <Icon d={I.chevronR} className="h-3 w-3" />
+              <span className="hidden rounded-md border border-line px-2 py-0.5 font-medium sm:inline">{SOURCES[meta.source].name}</span>
+              <span className="hidden sm:inline">{getDomain(meta.domain)?.name}</span>
+              <Icon d={I.chevronR} className="hidden h-3 w-3 sm:block" />
               <span className="font-medium text-ink">{skillName(meta)}</span>
               <DifficultyBadge d={meta.difficulty as Difficulty} />
               <span className="font-mono">#{meta.n}</span>

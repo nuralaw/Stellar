@@ -133,10 +133,68 @@ for (const [id, raw] of source) {
   // Only public fields go to the site (confidence / reviewer notes stay in the answers files).
   // source: who wrote the question ("cb" = College Board). The xlsx import is all College Board.
   out.push({ ...q, source: q.source ?? "cb", answer: a.answer, explanation: a.explanation, domain: a.domain, skill: a.skill, difficulty: a.difficulty });
+}
+
+// Difficulty calibration. The xlsx has no difficulty; solver labels are a good *ordering* but skew easy
+// (e.g. linear functions 157 easy / 7 hard). Within each skill: sort by solver label, break ties with
+// difficulty signals, then split into thirds. Answers files keep the solver's original label.
+const LEVELS = ["easy", "medium", "hard"];
+const SHARE = { easy: 1 / 3, medium: 1 / 3 }; // hard = the rest
+const textLen = (q) =>
+  [q.passage, q.prompt, ...Object.values(q.choices ?? {})].filter(Boolean).join(" ").length;
+const signals = (q) => {
+  const a = answers.get(q.id);
+  const s = {
+    explanation: q.explanation.length, // proxy for number of solution steps
+    text: textLen(q),
+    unsure: a.confidence === "high" ? 0 : 1,
+  };
+  if (q.section === "math") {
+    s.gridIn = q.type === "spr" ? 1 : 0;
+    s.visual = q.figure || q.table || q.sourceImage ? 1 : 0;
+    s.abstract = /\bconstants?\b|infinitely many|no solution|how many (real )?solutions|\bdiscriminant\b/i.test(q.prompt) ? 1 : 0;
+  }
+  return s;
+};
+const WEIGHTS = { explanation: 3, text: 2, unsure: 1, gridIn: 1.5, visual: 0.5, abstract: 2 };
+
+/** Percentile rank (0..1) of each value within its list; ties share a rank. */
+const percentiles = (vals) => {
+  const sorted = [...vals].sort((x, y) => x - y);
+  return vals.map((v) => (vals.length < 2 ? 0.5 : sorted.indexOf(v) / (vals.length - 1)));
+};
+
+const bySkill = new Map();
+for (const q of out) {
+  const k = `${q.section}/${q.skill}`;
+  if (!bySkill.has(k)) bySkill.set(k, []);
+  bySkill.get(k).push(q);
+}
+const recalibrated = { up: 0, down: 0 };
+for (const group of bySkill.values()) {
+  const sig = group.map(signals);
+  const names = Object.keys(sig[0]);
+  const pct = Object.fromEntries(names.map((n) => [n, percentiles(sig.map((s) => s[n]))]));
+  const totalW = names.reduce((t, n) => t + WEIGHTS[n], 0);
+  // Solver label dominates (0, 1, 2); the signal score (0..1) only orders questions within a label.
+  const score = group.map((q, i) => LEVELS.indexOf(q.difficulty) + (0.999 * names.reduce((t, n) => t + WEIGHTS[n] * pct[n][i], 0)) / totalW);
+  const order = group.map((_, i) => i).sort((x, y) => score[x] - score[y] || group[x].id.localeCompare(group[y].id));
+  const cutEasy = Math.round(group.length * SHARE.easy);
+  const cutMedium = cutEasy + Math.round(group.length * SHARE.medium);
+  order.forEach((i, rank) => {
+    const next = rank < cutEasy ? "easy" : rank < cutMedium ? "medium" : "hard";
+    const diff = LEVELS.indexOf(next) - LEVELS.indexOf(group[i].difficulty);
+    if (diff > 0) recalibrated.up++;
+    if (diff < 0) recalibrated.down++;
+    group[i].difficulty = next;
+  });
+}
+
+for (const q of out) {
   // counts[section][domain][skill][difficulty]
-  const dom = (counts[q.section][a.domain] ??= {});
-  const sk = (dom[a.skill] ??= { easy: 0, medium: 0, hard: 0 });
-  sk[a.difficulty]++;
+  const dom = (counts[q.section][q.domain] ??= {});
+  const sk = (dom[q.skill] ??= { easy: 0, medium: 0, hard: 0 });
+  sk[q.difficulty]++;
   counts.total++;
 }
 
@@ -157,5 +215,6 @@ fs.writeFileSync(path.join(BANK, "dist", "questions.json"), JSON.stringify(out))
 fs.writeFileSync(path.join(BANK, "dist", "index.json"), JSON.stringify(index));
 fs.writeFileSync(path.join(BANK, "dist", "counts.json"), JSON.stringify(counts, null, 1) + "\n");
 console.log(
-  `Bank: ${out.length} live questions (of ${source.size} imported; ${answers.size} answered, ${lowConfidence} low-confidence held back)`,
+  `Bank: ${out.length} live questions (of ${source.size} imported; ${answers.size} answered, ${lowConfidence} low-confidence held back)` +
+    `; difficulty calibrated: ${recalibrated.up} harder, ${recalibrated.down} easier than solver label`,
 );
