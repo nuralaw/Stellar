@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { computeStats, type Tally } from "@/lib/stats";
 import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
+import { scoreHistory } from "@/lib/score";
+import { AccuracyDonut } from "./AccuracyDonut";
 import { Countdown } from "./Countdown";
+import { ScoreChart } from "./ScoreChart";
 import { SatDatePicker } from "./SatDatePicker";
 import { updateProfile, useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
@@ -29,6 +32,17 @@ function Bar({ value }: { value: number | null }) {
   return (
     <div className="h-2 overflow-hidden rounded-full bg-surface-2">
       <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${value ?? 0}%` }} />
+    </div>
+  );
+}
+
+function EmptyChart({ text }: { text: string }) {
+  return (
+    <div className="grid h-44 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
+      <p className="text-sm text-muted">{text}</p>
+      <Link href="/practice" className="mt-2 text-sm font-semibold text-primary hover:underline">
+        Start practicing →
+      </Link>
     </div>
   );
 }
@@ -119,6 +133,9 @@ export function Dashboard() {
   const now = useNow(); // 0 during server prerender
   const stats = computeStats(attempts, now);
   const hasGoal = profile.targetScore !== null || profile.testDate !== null;
+  const history = useMemo(() => scoreHistory(attempts), [attempts]);
+  const latest = history[history.length - 1];
+  const change = history.length > 1 ? latest.total - history[0].total : null;
 
   return (
     <section className="mx-auto max-w-6xl px-4 pt-10 pb-6 md:px-8 md:pt-14">
@@ -137,7 +154,7 @@ export function Dashboard() {
             ) : (
               <Skeleton className="h-8 w-64" />
             )}
-            <p className="mt-1 text-muted">Free Digital SAT prep. Here&apos;s where you stand.</p>
+            <p className="mt-1 text-muted">Here&apos;s your progress.</p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -159,8 +176,27 @@ export function Dashboard() {
         )}
       </div>
 
-      {/* Goal + headline stats */}
-      <div className="mt-4 grid gap-4 sm:grid-cols-3">
+      {/* Headline numbers */}
+      <div className="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <Card>
+          <p className="text-sm font-medium text-muted">Estimated score</p>
+          {!hydrated ? (
+            <Skeleton className="mt-3 h-10 w-24" />
+          ) : latest ? (
+            <>
+              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{latest.total}</p>
+              <p className="mt-1 text-xs text-muted">
+                {change === null || change === 0 ? "from your practice" : `${change > 0 ? "+" : "−"}${Math.abs(change)} since your first day`}
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="mt-2 text-4xl font-bold tracking-tight text-muted">—</p>
+              <p className="mt-1 text-xs text-muted">answer a few questions</p>
+            </>
+          )}
+        </Card>
+
         <Card>
           <p className="text-sm font-medium text-muted">Target score</p>
           {!hydrated ? (
@@ -172,21 +208,21 @@ export function Dashboard() {
           ) : (
             <>
               <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{profile.targetScore}</p>
-              <p className="mt-1 text-xs text-muted">out of 1600</p>
+              <p className="mt-1 text-xs text-muted">
+                {latest ? (latest.total >= profile.targetScore ? "reached 🎉" : `${profile.targetScore - latest.total} to go`) : "out of 1600"}
+              </p>
             </>
           )}
         </Card>
 
         <Card>
-          <p className="text-sm font-medium text-muted">Accuracy</p>
+          <p className="text-sm font-medium text-muted">Questions answered</p>
           {!hydrated ? (
             <Skeleton className="mt-3 h-10 w-24" />
           ) : (
             <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{pct(stats.overall)}</p>
-              <p className="mt-1 text-xs text-muted">
-                {stats.overall.correct} of {stats.overall.answered} correct
-              </p>
+              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{stats.overall.answered.toLocaleString("en-US")}</p>
+              <p className="mt-1 text-xs text-muted">{stats.today} today</p>
             </>
           )}
         </Card>
@@ -201,7 +237,7 @@ export function Dashboard() {
                 {stats.streak}
                 <span className="ml-1.5 text-base font-medium text-muted">{stats.streak === 1 ? "day" : "days"}</span>
               </p>
-              <p className="mt-1 text-xs text-muted">{stats.today} answered today</p>
+              <p className="mt-1 text-xs text-muted">{stats.today ? "keep it going" : "practice today to keep it"}</p>
             </>
           )}
         </Card>
@@ -221,6 +257,36 @@ export function Dashboard() {
           <GoalsForm onDone={() => setEditing(false)} />
         </div>
       )}
+
+      {/* Charts */}
+      <div className="mt-6 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
+        <Card>
+          <h2 className="font-semibold">Estimated score</h2>
+          <p className="mt-0.5 text-xs text-muted">By study day, from your answers; harder questions count more. The practice test will give a real score.</p>
+          <div className="mt-4">
+            {!hydrated ? (
+              <Skeleton className="h-60 rounded-xl" />
+            ) : history.length ? (
+              <ScoreChart points={history} target={profile.targetScore} />
+            ) : (
+              <EmptyChart text="Your score trend appears after your first answers." />
+            )}
+          </div>
+        </Card>
+        <Card>
+          <h2 className="font-semibold">Correct vs incorrect</h2>
+          <p className="mt-0.5 text-xs text-muted">Every question you&apos;ve answered</p>
+          <div className="mt-4">
+            {!hydrated ? (
+              <Skeleton className="h-44 rounded-xl" />
+            ) : stats.overall.answered ? (
+              <AccuracyDonut correct={stats.overall.correct} wrong={stats.overall.answered - stats.overall.correct} />
+            ) : (
+              <EmptyChart text="Answer questions to see how many you get right." />
+            )}
+          </div>
+        </Card>
+      </div>
 
       {/* Stats overview */}
       <div className="mt-6 grid gap-4 lg:grid-cols-[1fr_1.4fr]">

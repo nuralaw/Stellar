@@ -42,6 +42,9 @@
   --success-soft: #dcfce7;
   --danger: #b91c1c;
   --danger-soft: #fee2e2;
+  /* charts: correct / incorrect pair checked for color-blind separation (with labels as backup) */
+  --chart-correct: #15803d;
+  --chart-wrong: #e11d48;
 }
 
 /* Dark theme: <html data-theme="dark"> is set before paint from saved choice or system preference. */
@@ -70,6 +73,9 @@
   --success-soft: #0f2a1a;
   --danger: #f87171;
   --danger-soft: #2f1414;
+
+  --chart-correct: #15803d;
+  --chart-wrong: #f43f5e;
 }
 
 @theme inline {
@@ -94,6 +100,8 @@
   --color-success-soft: var(--success-soft);
   --color-danger: var(--danger);
   --color-danger-soft: var(--danger-soft);
+  --color-chart-correct: var(--chart-correct);
+  --color-chart-wrong: var(--chart-wrong);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
