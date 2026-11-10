@@ -265,7 +265,7 @@ export function QuestionCard({
             let state: ChoiceState = response === l ? "selected" : "idle";
             if (checked) state = l === q.answer ? "correct" : response === l ? "wrong" : "dim";
             return (
-              <ChoiceRow key={l} letter={l} text={q.choices[l]} state={state} math={math} struck={struck.has(l)} onSelect={() => select(l)} onStrike={() => strike(l)} />
+              <ChoiceRow key={l} letter={l} text={q.choices[l]} image={q.choiceImages?.[l]} state={state} math={math} struck={struck.has(l)} onSelect={() => select(l)} onStrike={() => strike(l)} />
             );
           })}
         </div>

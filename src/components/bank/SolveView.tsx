@@ -475,7 +475,7 @@ export function SolveView({
               <Icon d={I.chevronR} className="hidden h-3 w-3 sm:block" />
               <span className="font-medium text-ink">{skillName(meta)}</span>
               <DifficultyBadge d={meta.difficulty as Difficulty} />
-              <span className="font-mono">#{meta.n}</span>
+              {q?.origin ? <span className="hidden sm:inline" title="Where this question comes from">{q.origin}</span> : <span className="font-mono">#{meta.n}</span>}
               {was !== undefined && !answer && (
                 <span className={`rounded-full px-2 py-0.5 font-medium ${was ? "bg-success-soft text-success" : "bg-danger-soft text-danger"}`}>
                   Previously {was ? "correct" : "incorrect"}

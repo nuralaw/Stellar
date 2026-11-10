@@ -238,7 +238,7 @@ export function ListView({
           <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-surface-2">
             <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${Math.max(sec.done ? 1.5 : 0, pct(sec.done, sec.total))}%` }} />
           </div>
-          <p className="mt-2 text-xs text-muted">{filters.bank === "cb" ? "In the College Board bank" : "Across all questions"}</p>
+          <p className="mt-2 text-xs text-muted">{filters.bank === "cb" ? "In the College Board bank" : "In the general bank"}</p>
         </div>
       </div>
 

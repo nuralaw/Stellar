@@ -1,7 +1,7 @@
 // Where questions come from, and the question banks built from them.
 // Every question carries a `source`; a bank is a set of sources shown together on /practice.
 
-export type SourceId = "cb" | "stellar";
+export type SourceId = "cb" | "past" | "stellar";
 
 export interface Source {
   id: SourceId;
@@ -12,6 +12,7 @@ export interface Source {
 
 export const SOURCES: Record<SourceId, Source> = {
   cb: { id: "cb", name: "College Board", short: "College Board" },
+  past: { id: "past", name: "Past SAT papers", short: "Past paper" },
   stellar: { id: "stellar", name: "Stellar", short: "Stellar" },
 };
 
@@ -26,7 +27,8 @@ export interface Bank {
 }
 
 export const BANKS: Bank[] = [
-  { id: "all", name: "All questions", description: "Every practice question on Stellar, including College Board questions.", sources: null },
+  // "all" is the general bank (id kept for old links): everything except College Board.
+  { id: "all", name: "General", description: "Questions from past SAT papers, sorted by topic and difficulty.", sources: ["past", "stellar"] },
   { id: "cb", name: "College Board", description: "Only questions from the official College Board question bank.", sources: ["cb"] },
 ];
 

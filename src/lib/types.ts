@@ -25,6 +25,8 @@ interface QuestionBase {
   figure?: { src: string; caption?: string; fullPage?: boolean };
   /** Original page image, for checking transcribed formulas. */
   sourceImage?: string;
+  /** Where it was taken from, e.g. "May 2024 INT A · Math M1 Q5" (past-paper questions). */
+  origin?: string;
   explanation: string;
 }
 
@@ -33,6 +35,8 @@ export interface MCQuestion extends QuestionBase {
   /** Empty strings when the choices are only shown in choicesImage. */
   choices: Record<ChoiceLetter, string>;
   choicesImage?: string;
+  /** Picture choices (graphs), per letter. */
+  choiceImages?: Partial<Record<ChoiceLetter, string>>;
   answer: ChoiceLetter;
 }
 

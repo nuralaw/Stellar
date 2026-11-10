@@ -140,6 +140,79 @@ for (const [id, raw] of source) {
   counts.total++;
 }
 
+// ---- Past-paper questions (content/tests/dist, built by tests:build) → the general bank ----
+// Ids must stay stable (progress is stored by id) and keep the "rw-<n>" / "m-<n>" shape the client parses:
+// n = 10000 + test ordinal × 100 + position in the section (R&W 1–54, Math 1–44). Ordinals live in
+// content/tests/bank-ids.json and are only ever appended. Exact duplicates (same text in several papers) are added once;
+// answers flagged unsure are held back like low-confidence bank answers.
+const TESTS = path.join(ROOT, "content", "tests");
+const TESTS_DIST = path.join(TESTS, "dist");
+let pastAdded = 0;
+let pastDupes = 0;
+let pastUnsure = 0;
+if (fs.existsSync(TESTS_DIST)) {
+  const ORD_FILE = path.join(TESTS, "bank-ids.json");
+  const ord = fs.existsSync(ORD_FILE) ? read(ORD_FILE) : {};
+  const testFiles = fs.readdirSync(TESTS_DIST).filter((f) => /^\d{4}-.*\.json$/.test(f)).sort();
+  let next = Math.max(0, ...Object.values(ord)) + 1;
+  let ordChanged = false;
+  for (const f of testFiles) {
+    const id = f.replace(/\.json$/, "");
+    if (!(id in ord)) {
+      ord[id] = next++;
+      ordChanged = true;
+    }
+  }
+  if (ordChanged) fs.writeFileSync(ORD_FILE, JSON.stringify(ord, null, 1) + "\n");
+
+  const seenText = new Set();
+  const textKey = (q) => `${q.section}|${q.passage ?? ""}|${q.prompt}|${JSON.stringify(q.choices ?? {})}`.toLowerCase().replace(/[^a-z0-9|]+/g, "");
+  for (const f of testFiles.sort((a, b) => ord[a.replace(/\.json$/, "")] - ord[b.replace(/\.json$/, "")])) {
+    const test = read(path.join(TESTS_DIST, f));
+    const o = ord[test.id];
+    for (const qs of Object.values(test.modules)) {
+      for (const q of qs) {
+        if (!q.explanation || !q.difficulty || q.answer === null) continue; // not reviewed
+        if (q.unsure) {
+          pastUnsure++;
+          continue;
+        }
+        const k = textKey(q);
+        if (seenText.has(k)) {
+          pastDupes++;
+          continue;
+        }
+        seenText.add(k);
+        const pos = (q.module - 1) * (q.section === "rw" ? 27 : 22) + q.n;
+        const bq = {
+          id: `${q.section === "rw" ? "rw" : "m"}-${10000 + o * 100 + pos}`,
+          section: q.section,
+          type: q.type,
+          source: "past",
+          origin: `${test.title} · ${q.section === "rw" ? "R&W" : "Math"} M${q.module} Q${q.n}`,
+          ...(q.passage ? { passage: q.passage } : {}),
+          prompt: q.prompt,
+          ...(q.table ? { table: q.table } : {}),
+          ...(q.figure ? { figure: { src: q.figure.src } } : {}),
+          ...(q.type === "mcq" ? { choices: q.choices } : {}),
+          ...(q.choiceImages ? { choiceImages: q.choiceImages } : {}),
+          answer: q.answer,
+          explanation: q.explanation,
+          domain: q.domain,
+          skill: q.skill,
+          difficulty: q.difficulty,
+        };
+        out.push(bq);
+        const dom = (counts[q.section][q.domain] ??= {});
+        const sk = (dom[q.skill] ??= { easy: 0, medium: 0, hard: 0 });
+        sk[q.difficulty]++;
+        counts.total++;
+        pastAdded++;
+      }
+    }
+  }
+}
+
 // Compact index for the question-bank list: [id, domain, skill, difficulty (e|m|h), preview, source].
 const PREVIEW_LEN = 170;
 const preview = (q) => {
@@ -157,5 +230,6 @@ fs.writeFileSync(path.join(BANK, "dist", "questions.json"), JSON.stringify(out))
 fs.writeFileSync(path.join(BANK, "dist", "index.json"), JSON.stringify(index));
 fs.writeFileSync(path.join(BANK, "dist", "counts.json"), JSON.stringify(counts, null, 1) + "\n");
 console.log(
-  `Bank: ${out.length} live questions (of ${source.size} imported; ${answers.size} answered, ${lowConfidence} low-confidence held back)`,
+  `Bank: ${out.length} live questions (${out.length - pastAdded} College Board of ${source.size} imported, ${lowConfidence} low-confidence held back; ` +
+    `${pastAdded} from past papers, ${pastDupes} duplicates skipped, ${pastUnsure} unsure held back)`,
 );
