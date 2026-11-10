@@ -6,6 +6,7 @@ import { addAttempt, toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain } from "@/lib/taxonomy";
 import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
+import { Calculator } from "@/components/Calculator";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
 import { I, Icon } from "./icons";
@@ -254,6 +255,11 @@ export function SolveView({
   const [error, setError] = useState<string | null>(null);
   const [retry, setRetry] = useState(0);
   const [showTimer, setShowTimer] = useState(true);
+  // Desmos calculator (math sets): mounted on first open, then kept so expressions survive between questions.
+  const [hasMath] = useState(() => run.ids.some((x) => run.items.get(x)?.section === "math"));
+  const [calcOpen, setCalcOpen] = useState(false);
+  const [calcUsed, setCalcUsed] = useState(false);
+  const [calcWide, setCalcWide] = useState(false);
   // Timing: ms spent per question before it was answered, plus when the current one was opened.
   const [spent, setSpent] = useState<Record<string, number>>({});
   const [enteredAt, setEnteredAt] = useState(() => Date.now());
@@ -312,6 +318,7 @@ export function SolveView({
     if (finished) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if ((e.target as Element | null)?.closest?.("[data-calculator]")) return; // arrows pan the Desmos graph
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement) return;
       if (e.key === "ArrowRight") go(pos + 1);
       if (e.key === "ArrowLeft") go(pos - 1);
@@ -328,9 +335,14 @@ export function SolveView({
   const was = prior.get(id);
   const secs = answer ? answer.secs : Math.floor(((spent[id] ?? 0) + Math.max(0, now - enteredAt)) / 1000);
   const wide = meta?.section !== "math";
+  const showCalc = hasMath && calcOpen;
+  const toggleCalc = () => {
+    setCalcUsed(true);
+    setCalcOpen((v) => !v);
+  };
 
   return (
-    <section className={`mx-auto px-4 md:px-8 ${wide ? "max-w-7xl" : "max-w-4xl"}`}>
+    <section className={`mx-auto px-4 md:px-8 ${showCalc ? "max-w-[1600px]" : wide ? "max-w-7xl" : "max-w-4xl"}`}>
       {/* Toolbar */}
       <div className="sticky top-14 z-20 -mx-4 border-b border-line bg-bg/90 px-4 pt-3 backdrop-blur md:-mx-8 md:px-8 lg:top-0 lg:pr-20">
         <div className="flex items-center justify-between gap-3">
@@ -343,6 +355,20 @@ export function SolveView({
             <span className="hidden truncate text-sm font-semibold md:block">{run.title}</span>
           </div>
           <div className="flex shrink-0 items-center gap-1.5">
+            {hasMath && (
+              <button
+                type="button"
+                onClick={toggleCalc}
+                aria-pressed={calcOpen}
+                title={calcOpen ? "Hide calculator" : "Open Desmos calculator"}
+                className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 text-sm font-semibold transition-colors ${
+                  calcOpen ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface text-ink hover:bg-surface-2"
+                }`}
+              >
+                <Icon d={I.calculator} className="h-4.5 w-4.5" />
+                <span className="hidden sm:inline">Calculator</span>
+              </button>
+            )}
             <button
               type="button"
               onClick={() => setShowTimer((v) => !v)}
@@ -402,75 +428,115 @@ export function SolveView({
         </div>
       </div>
 
-      {/* Meta */}
-      {meta && (
-        <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
-          <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold text-ink">{SECTIONS[meta.section].short}</span>
-          <span className="rounded-md border border-line px-2 py-0.5 font-medium">{SOURCES[meta.source].name}</span>
-          <span>{getDomain(meta.domain)?.name}</span>
-          <Icon d={I.chevronR} className="h-3 w-3" />
-          <span className="font-medium text-ink">{skillName(meta)}</span>
-          <DifficultyBadge d={meta.difficulty as Difficulty} />
-          <span className="font-mono">#{meta.n}</span>
-          {was !== undefined && !answer && (
-            <span className={`rounded-full px-2 py-0.5 font-medium ${was ? "bg-success-soft text-success" : "bg-danger-soft text-danger"}`}>
-              Previously {was ? "correct" : "incorrect"}
-            </span>
-          )}
-          {answeredCount > 0 && (
-            <span className="ml-auto tabular-nums">
-              Score: <span className="font-semibold text-ink">{correctCount}</span>/{answeredCount}
-            </span>
-          )}
-        </div>
-      )}
+      <div className={showCalc ? `lg:grid lg:items-start lg:gap-6 ${calcWide ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]" : "lg:grid-cols-[minmax(360px,0.8fr)_minmax(0,1fr)]"}` : ""}>
+        {/* Desmos calculator: docked left on desktop, bottom sheet on mobile */}
+        {hasMath && calcUsed && (
+          <aside
+            aria-label="Desmos graphing calculator"
+            className={
+              showCalc
+                ? "fixed inset-x-0 bottom-0 z-40 flex h-[65vh] flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-2xl lg:sticky lg:top-28 lg:z-auto lg:mt-5 lg:h-[calc(100vh-8.5rem)] lg:rounded-2xl lg:shadow-none"
+                : "hidden"
+            }
+          >
+            <div className="flex shrink-0 items-center justify-between border-b border-line px-3 py-2">
+              <p className="flex items-center gap-2 pl-1 text-sm font-semibold">
+                <Icon d={I.calculator} className="h-4 w-4 text-muted" />
+                Desmos Calculator
+              </p>
+              <div className="flex items-center gap-1">
+                <button
+                  type="button"
+                  onClick={() => setCalcWide((v) => !v)}
+                  aria-label={calcWide ? "Make calculator narrower" : "Make calculator wider"}
+                  title={calcWide ? "Narrower" : "Wider"}
+                  className="hidden h-8 w-8 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink lg:grid"
+                >
+                  <Icon d={calcWide ? I.shrink : I.expand} className="h-4 w-4" />
+                </button>
+                <button type="button" onClick={() => setCalcOpen(false)} aria-label="Close calculator" title="Close" className="grid h-8 w-8 place-items-center rounded-lg text-muted hover:bg-surface-2 hover:text-ink">
+                  <Icon d={I.x} className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+            <div className="min-h-0 flex-1">
+              <Calculator visible={showCalc} />
+            </div>
+          </aside>
+        )}
 
-      <div className="mt-4">
-        {error ? (
-          <div className="rounded-2xl border border-danger/40 bg-danger-soft p-6 text-sm">
-            Couldn&apos;t load this question ({error}).{" "}
-            <button
-              type="button"
-              onClick={() => {
-                setError(null);
-                setRetry((n) => n + 1);
-              }}
-              className="font-semibold underline"
-            >
-              Try again
-            </button>
-          </div>
-        ) : !q ? (
-          <div className={`grid gap-0 overflow-hidden rounded-2xl border border-line bg-surface ${wide ? "lg:grid-cols-2" : ""}`} aria-label="Loading question">
-            {[0, 1].slice(0, wide ? 2 : 1).map((k) => (
-              <div key={k} className="space-y-3 p-8">
-                {[92, 100, 85, 96, 60].map((w, i) => (
-                  <div key={i} className="h-3.5 animate-pulse rounded bg-surface-2" style={{ width: `${w}%` }} />
+        <div className={`min-w-0 ${showCalc ? "lg:[&_.qc-actions]:mx-0 lg:[&_.qc-actions]:px-0" : ""}`}>
+          {/* Meta */}
+          {meta && (
+            <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
+              <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold text-ink">{SECTIONS[meta.section].short}</span>
+              <span className="rounded-md border border-line px-2 py-0.5 font-medium">{SOURCES[meta.source].name}</span>
+              <span>{getDomain(meta.domain)?.name}</span>
+              <Icon d={I.chevronR} className="h-3 w-3" />
+              <span className="font-medium text-ink">{skillName(meta)}</span>
+              <DifficultyBadge d={meta.difficulty as Difficulty} />
+              <span className="font-mono">#{meta.n}</span>
+              {was !== undefined && !answer && (
+                <span className={`rounded-full px-2 py-0.5 font-medium ${was ? "bg-success-soft text-success" : "bg-danger-soft text-danger"}`}>
+                  Previously {was ? "correct" : "incorrect"}
+                </span>
+              )}
+              {answeredCount > 0 && (
+                <span className="ml-auto tabular-nums">
+                  Score: <span className="font-semibold text-ink">{correctCount}</span>/{answeredCount}
+                </span>
+              )}
+            </div>
+          )}
+
+          <div className="mt-4">
+            {error ? (
+              <div className="rounded-2xl border border-danger/40 bg-danger-soft p-6 text-sm">
+                Couldn&apos;t load this question ({error}).{" "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setError(null);
+                    setRetry((n) => n + 1);
+                  }}
+                  className="font-semibold underline"
+                >
+                  Try again
+                </button>
+              </div>
+            ) : !q ? (
+              <div className={`grid gap-0 overflow-hidden rounded-2xl border border-line bg-surface ${wide ? "lg:grid-cols-2" : ""}`} aria-label="Loading question">
+                {[0, 1].slice(0, wide ? 2 : 1).map((k) => (
+                  <div key={k} className="space-y-3 p-8">
+                    {[92, 100, 85, 96, 60].map((w, i) => (
+                      <div key={i} className="h-3.5 animate-pulse rounded bg-surface-2" style={{ width: `${w}%` }} />
+                    ))}
+                  </div>
                 ))}
               </div>
-            ))}
+            ) : (
+              <QuestionCard
+                key={q.id}
+                q={q}
+                saved={answer}
+                timeSpent={answer?.secs}
+                nextLabel={pos + 1 < total ? "Next" : "See results"}
+                onNext={next}
+                onPrev={pos > 0 ? () => go(pos - 1) : undefined}
+                onAnswered={(ok, response) => {
+                  const t = Date.now();
+                  const s = Math.round(((spent[q.id] ?? 0) + (t - enteredAt)) / 1000);
+                  setSession((m) => (q.id in m ? m : { ...m, [q.id]: { response, correct: ok, secs: s } }));
+                  addAttempt({ qid: q.id, section: q.section, domain: q.domain, skill: q.skill, difficulty: q.difficulty, correct: ok, at: t });
+                }}
+              />
+            )}
           </div>
-        ) : (
-          <QuestionCard
-            key={q.id}
-            q={q}
-            saved={answer}
-            timeSpent={answer?.secs}
-            nextLabel={pos + 1 < total ? "Next" : "See results"}
-            onNext={next}
-            onPrev={pos > 0 ? () => go(pos - 1) : undefined}
-            onAnswered={(ok, response) => {
-              const t = Date.now();
-              const s = Math.round(((spent[q.id] ?? 0) + (t - enteredAt)) / 1000);
-              setSession((m) => (q.id in m ? m : { ...m, [q.id]: { response, correct: ok, secs: s } }));
-              addAttempt({ qid: q.id, section: q.section, domain: q.domain, skill: q.skill, difficulty: q.difficulty, correct: ok, at: t });
-            }}
-          />
-        )}
+          <p className="mt-2 mb-6 hidden text-center text-xs text-muted md:block">
+            <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
+          </p>
+        </div>
       </div>
-      <p className="mt-2 mb-6 hidden text-center text-xs text-muted md:block">
-        <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
-      </p>
     </section>
   );
 }

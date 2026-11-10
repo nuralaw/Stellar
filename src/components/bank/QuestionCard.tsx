@@ -206,6 +206,7 @@ export function QuestionCard({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if ((e.target as Element | null)?.closest?.("[data-calculator]")) return; // keys typed into Desmos
       const typing = e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement;
       if (e.key === "Enter") {
         if (e.target instanceof HTMLButtonElement || (typing && !(e.target as HTMLElement).dataset.answer)) return;
@@ -322,7 +323,7 @@ export function QuestionCard({
   );
 
   const actions = (
-    <div className="sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
+    <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
       <div className="flex items-center gap-2">
         <button type="button" onClick={onPrev} disabled={!onPrev} className={btnGhost} aria-label="Previous question">
           <Icon d={I.chevronL} className="h-4 w-4" />
