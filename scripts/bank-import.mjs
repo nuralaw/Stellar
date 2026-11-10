@@ -109,7 +109,6 @@ const wb = new ExcelJS.Workbook();
 await wb.xlsx.readFile(XLSX);
 const rw = readSheet(wb.getWorksheet("English")).map(rwQuestion);
 const math = readSheet(wb.getWorksheet("Math")).map(mathQuestion);
-
 fs.mkdirSync(OUT_JSON, { recursive: true });
 fs.writeFileSync(path.join(OUT_JSON, "rw.json"), JSON.stringify(rw, null, 1) + "\n");
 fs.writeFileSync(path.join(OUT_JSON, "math.json"), JSON.stringify(math, null, 1) + "\n");

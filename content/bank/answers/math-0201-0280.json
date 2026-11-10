@@ -1,0 +1,762 @@
+[
+ {
+  "id": "m-0201",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "f(x) = 0 happens where the graph touches the x-axis. The graph levels off along the horizontal asymptote y = -7 on the left and drops further down on the right, so every point on it is below the x-axis. It never reaches y = 0, so there are zero such values of x. Choice C would be true only if the curve crossed the x-axis once."
+ },
+ {
+  "id": "m-0202",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The table x-values are -6, -5, and 4, which are exactly the zeros of f, so f(-6) = f(-5) = f(4) = 0. Then y = f(x) - 3 gives 0 - 3 = -3 for all three. Only the table in choice B shows y = -3 every time. Choice D shows +3, which would be f(x) + 3."
+ },
+ {
+  "id": "m-0203",
+  "answer": [
+   "15",
+   "-5"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "An absolute value equal to 10 means the inside is either 10 or -10. So x - 5 = 10 gives x = 15, and x - 5 = -10 gives x = -5. Either value works: |15 - 5| = 10 and |-5 - 5| = 10."
+ },
+ {
+  "id": "m-0204",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Write 42ak over the denominator k: 42ak = (42ak^2)/k. Adding gives (42a + 42ak^2)/k, and factoring out 42a gives (42a(k^2 + 1))/k. Choice C has k + 1 instead of k^2 + 1, which comes from forgetting to multiply 42ak by k."
+ },
+ {
+  "id": "m-0205",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = 3 into the second equation: y = (15 - 3)^2 = 12^2 = 144. Then xy = 3 · 144 = 432. Choice B (54) comes from using 15 - 3 = 12 incorrectly or not squaring."
+ },
+ {
+  "id": "m-0206",
+  "answer": [
+   "77"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = 2: f(2) = 2^2 + 2 + 71 = 4 + 2 + 71 = 77."
+ },
+ {
+  "id": "m-0207",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Let the second integer be x, so the first is 2x + 11. Then x(2x + 11) = 546, or 2x^2 + 11x - 546 = 0, which factors as (x - 14)(2x + 39) = 0. The positive solution is x = 14, and the first integer is 2(14) + 11 = 39. Check: 14 · 39 = 546, so the smaller integer is 14. Choice C is the larger integer."
+ },
+ {
+  "id": "m-0208",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Every 12 months (one year), the exponent x/12 increases by 1, so the value is multiplied by 0.64. Keeping 64% of the value means losing 100% - 64% = 36% each year, so p = 36. Choice D (64) is the percent that remains, not the percent lost."
+ },
+ {
+  "id": "m-0209",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To isolate p, subtract 34 from both sides: p = q + r - 34. Choice A adds 34 instead of subtracting it."
+ },
+ {
+  "id": "m-0210",
+  "answer": [
+   "-1"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "A quadratic has exactly one solution when its discriminant b^2 - 4ac equals 0. Here a = -16, b = -8, and the constant is c, so (-8)^2 - 4(-16)(c) = 64 + 64c = 0. Solving gives c = -1. Check: -16x^2 - 8x - 1 = -(4x + 1)^2, which has the single solution x = -1/4."
+ },
+ {
+  "id": "m-0211",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Divide powers by subtracting exponents: x^(-2 - 1/3) = x^(-7/3) and y^(1/2 - (-1)) = y^(3/2). So the expression is y^(3/2)/x^(7/3). Since y^(3/2) = y sqrt(y) and x^(7/3) = x^2 · x^(1/3) = x^2 cbrt(x), the result is (y sqrt(y))/(x^2 cbrt(x)). Choice B uses x^(2/3), which comes from adding -2 and 1/3 incorrectly."
+ },
+ {
+  "id": "m-0212",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In the point (x, y), x is the molecular weight and y is the estimated boiling point. So (149.02, 186.05) means a paraffin weighing 149.02 grams per mole has an estimated boiling point of 186.05 degrees Celsius. Choice A swaps the two values, and the graph keeps rising through this point, so it is neither a minimum nor a maximum."
+ },
+ {
+  "id": "m-0213",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Multiply both sides by y to get 1/(4x) + xy^2z = 1/(3z). Then xy^2z = 1/(3z) - 1/(4x) = (4x - 3z)/(12xz). Dividing by xz gives y^2 = (4x - 3z)/(12x^2z^2), and since y is positive, y = sqrt((4x - 3z)/(12x^2z^2)). Choice A is y^2, not y."
+ },
+ {
+  "id": "m-0214",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where the graph crosses the y-axis, which is where x = 0. The point there is (0, f(0)), so its y-coordinate c equals f(0). The other choices are values of f at points that are not on the y-axis."
+ },
+ {
+  "id": "m-0215",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "At the surface, the depth is t = 0. Then f(0) = 500(0.5)^0 = 500 · 1 = 500 particles. Choice B (12) is the number of millimeters it takes for the intensity to halve, not a particle count."
+ },
+ {
+  "id": "m-0216",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Factor: 5x^2 - 37x - 24 = (5x + 3)(x - 8). The solutions are x = -3/5 and x = 8, so the positive solution is 8. Check: 5(64) - 37(8) - 24 = 320 - 296 - 24 = 0. Choice A has the wrong sign; -3/5 is the negative solution."
+ },
+ {
+  "id": "m-0217",
+  "answer": [
+   "15000"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "From 1659 to 1959 is 300 years, which is 300/75 = 4 doubling periods. So the 1959 population is 2^4 = 16 times the 1659 population. The 1659 population was 240,000/16 = 15,000."
+ },
+ {
+  "id": "m-0218",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "medium",
+  "explanation": "Solutions to the system are the points where the horizontal line crosses the parabola. The line meets the parabola at about x = 4 on the left and x = 6 on the right, so 4 is a possible x-value. Choice B (5) is the x-coordinate of the vertex, which lies above the line, and 7.2 is the line's y-value, not an x-value."
+ },
+ {
+  "id": "m-0219",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Expanding (hx + k)(x + j) gives hx^2 + (hj + k)x + kj. Matching to 4x^2 + bx - 45 gives kj = -45, so 45/k = -j. Since j is an integer, 45/k must be an integer. The other expressions can be fractions; for example, h = 4, k = 9, j = -5 gives b = -11, so b/h, b/k and 45/h are not integers."
+ },
+ {
+  "id": "m-0220",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In (x, y), x is the number of days after the launch and y is the estimated stock price. So (1, 83) means 1 day after the launch the estimated price is $83. Check: 0.25 - 7.5 + 90.25 = 83. Choice D swaps the roles of x and y, and the model is not linear, so it doesn't change by a fixed amount each day."
+ },
+ {
+  "id": "m-0221",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Increasing by 70% means multiplying by 1 + 0.70 = 1.70. This happens once every 2 days, so after x days it has happened x/2 times: f(x) = 233(1.70)^(x/2). Choice A uses 0.70, which would be a 30% decrease, and choice D would apply the growth twice per day."
+ },
+ {
+  "id": "m-0222",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The year 2010 corresponds to x = 0, so you need the y-intercept. The graph starts at the point (0, 20,000), so the model estimates 20,000 residents in 2010. Choice D (25,000) is the estimate for about 4 years later."
+ },
+ {
+  "id": "m-0223",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The square of a real number is never negative, so (x - 1)^2 can't equal -4. The equation has zero real solutions. Choice B would be right if the equation were (x - 1)^2 = 4."
+ },
+ {
+  "id": "m-0224",
+  "answer": [
+   "22"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The equation says x^2 = 22^2, so x = 22 or x = -22. The positive solution is 22."
+ },
+ {
+  "id": "m-0225",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Every term is even, so 2x^2 + 38x + 10 = 2(x^2 + 19x + 5), which shows 2 is a factor. The constant term 10 has no x, so no expression with x (like 5x or 38x) can be a factor of every term."
+ },
+ {
+  "id": "m-0226",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Factor both: f(x) = x(x^2 - 9) = x(x - 3)(x + 3) and g(x) = (x - 3)(x + 1). For x > 3, the common factor x - 3 is not zero and cancels, leaving (x(x + 3))/(x + 1). Choice C keeps the wrong factor, x - 3, in the numerator."
+ },
+ {
+  "id": "m-0227",
+  "answer": [
+   "2",
+   "-12"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Factor: z^2 + 10z - 24 = (z + 12)(z - 2) = 0, so z = -12 or z = 2. Either value is a solution. Check: 4 + 20 - 24 = 0."
+ },
+ {
+  "id": "m-0228",
+  "answer": [
+   "6"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The x-intercept is where the graph crosses the x-axis. The marked point is at (6, 0), so the x-coordinate is 6. Don't confuse this with the horizontal asymptote y = -2 on the left."
+ },
+ {
+  "id": "m-0229",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The parabola y = -3(x - 18)^2 + 15 opens downward with vertex (18, 15), so its highest y-value is 15. The line y = 18 lies entirely above that, so the graphs never meet: zero intersection points. Choice A would be right only if the line passed through the vertex at y = 15."
+ },
+ {
+  "id": "m-0230",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = -1: (-1)^3 + 3(-1)^2 - 6(-1) - 1 = -1 + 3 + 6 - 1 = 7. Choice B (-7) comes from mistakes with the signs, such as treating -6(-1) as -6."
+ },
+ {
+  "id": "m-0231",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "low",
+  "note": "Graph for choice D is missing from the source image; answer chosen by eliminating A, B and C.",
+  "explanation": "The graph of y = 4(2^x) has y-intercept 4 and rises as x increases, with y = 16 at x = 2 and y = 32 at x = 3. Graphs A and B fall from left to right, so they show decay, not growth. Graph C rises but is about 30 at x = 2 and over 100 at x = 3, which grows too fast for 4(2^x). That leaves choice D."
+ },
+ {
+  "id": "m-0232",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The x-intercept is where the graph crosses the x-axis (y = 0). The curve crosses at a positive x-value of about 5, so the x-intercept is (5, 0). Choice A has the wrong sign, and (2, 0) is not on the graph since the y-value at x = 2 is about 2."
+ },
+ {
+  "id": "m-0233",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Expanding gives (1/3)(x - k)(x + k) = (1/3)(x^2 - k^2) = (1/3)x^2 - (1/3)k^2. Matching constants, (1/3)k^2 = 2, so k^2 = 6 and k = sqrt(6). Choice B (6) is k^2, not k."
+ },
+ {
+  "id": "m-0234",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Each time n goes up by 1, the value is multiplied by 0.19, so f(n) is 19% of f(n - 1). That is 100% - 19% = 81% less, so p = 81. Choice A (19) is the percent that remains."
+ },
+ {
+  "id": "m-0235",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = -1: the numerator is (-1)^2 - 6(-1) + 3 = 1 + 6 + 3 = 10 and the denominator is -1 - 1 = -2. So f(-1) = 10/(-2) = -5. Choice D forgets that the denominator is negative."
+ },
+ {
+  "id": "m-0236",
+  "answer": [
+   "41/81",
+   ".5061",
+   ".5062"
+  ],
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Write the left side as a power: cbrt(p^2) = p^(2/3). Substituting t = p^(3n-1) gives t^(9/7) = p^(9(3n - 1)/7). Setting the exponents equal: 9(3n - 1)/7 = 2/3, so 3n - 1 = 14/27, 3n = 41/27, and n = 41/81 (about 0.5062)."
+ },
+ {
+  "id": "m-0237",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Use the discriminant b^2 - 4ac = 10^2 - 4(5)(16) = 100 - 320 = -220. A negative discriminant means the equation has no real solutions. Exactly one solution would need the discriminant to be 0."
+ },
+ {
+  "id": "m-0238",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "In vertex form f(x) = (1/9)(x - 7)^2 + 3, the vertex is (7, 3). The coefficient 1/9 is positive, so the parabola opens upward and the vertex is the lowest point: the ball's minimum height was 3 inches (at 7 seconds). Choice B uses the x-coordinate 7, which is a time, not a height."
+ },
+ {
+  "id": "m-0239",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Let the height be h, so the base is h + 12. The area is (1/2)h(h + 12) = 270, so h^2 + 12h - 540 = 0, which factors as (h + 30)(h - 18) = 0. The height is 18 cm (base 30 cm, and (1/2)(18)(30) = 270). Choice C (30) is the base."
+ },
+ {
+  "id": "m-0240",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The graph of y = f(x) + 4 passes through (0, 8) and (2, 0). For y = -3^x + d, x = 0 gives -1 + d = 8, so d = 9, and x = 2 checks: -9 + 9 = 0. So f(x) + 4 = -3^x + 9, which means f(x) = -3^x + 5. Choice D is the equation of the graph shown, not of f."
+ },
+ {
+  "id": "m-0241",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "From the second equation, y = -x - 1. Substitute: x^2 + 2x + 1 = -x - 1, so x^2 + 3x + 2 = 0 and (x + 1)(x + 2) = 0. The solutions are x = -1 (y = 0) and x = -2 (y = 1), so y_1 + y_2 = 0 + 1 = 1. Choice A (-3) is the sum of the x-values."
+ },
+ {
+  "id": "m-0242",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The input w is the width and the output f(w) is the area. So f(14) = 1,176 means a width of 14 ft gives an area of 1,176 square feet. Check: the length is 6 · 14 = 84 ft and 14 · 84 = 1,176. Choice B calls 1,176 the length, but the function gives area."
+ },
+ {
+  "id": "m-0243",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Distribute: x(2x + 7) = 2x^2 + 7x. Matching with 2x^2 + ax gives a = 7. Choice A (2) is the coefficient of x^2."
+ },
+ {
+  "id": "m-0244",
+  "answer": [
+   "1.1",
+   "11/10"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "At t = 0, h(0) = b, so b = 19.36. The ball reaches the floor when h(t) = 0: -16t^2 + 19.36 = 0, so t^2 = 19.36/16 = 1.21 and t = 1.1 seconds (time can't be negative)."
+ },
+ {
+  "id": "m-0245",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Write f(x) = ax^2 + bx + c. From f(0) = 14, c = 14. Then f(1) = a + b + 14 = 20 and f(-1) = a - b + 14 = 10, so a + b = 6 and a - b = -4. Solving gives a = 1 and b = 5, so f(x) = x^2 + 5x + 14. Choice A gives f(1) = 20 but f(-1) = 14, not 10."
+ },
+ {
+  "id": "m-0246",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is at t = 0, which is the end of 1998. f(0) = 8,000(0.65)^0 = 8,000, so the model estimates 8,000 coupons were sent at the end of 1998. Choice B calls 8,000 a minimum, but since the function decreases, 8,000 is actually the largest value."
+ },
+ {
+  "id": "m-0247",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The solution to a system is the point where the two graphs intersect. The line and the curve cross at the marked point (4, 5). Choice B (0, 4) is only the curve's y-intercept, which is not on the line."
+ },
+ {
+  "id": "m-0248",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Flip both sides (or cross-multiply): t - 2 = 6/(u - 3). Add 2: t = 6/(u - 3) + 2 = (6 + 2(u - 3))/(u - 3) = (2u)/(u - 3). Check with u = 5: the original gives 2 = 6/(t - 2), so t = 5, and 2(5)/(5 - 3) = 5."
+ },
+ {
+  "id": "m-0249",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Exactly one solution means the discriminant is 0: 30^2 - 4(-9)(c) = 900 + 36c = 0, so c = -25. Check: -9x^2 + 30x - 25 = -(3x - 5)^2, which is zero only at x = 5/3."
+ },
+ {
+  "id": "m-0250",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "note": "Prompt fixed in fixes.json (stray exponent line).",
+  "explanation": "The equation is x^2/sqrt(x^2 - c^2) = c^2/sqrt(x^2 - c^2) + 39. Subtract the c^2 fraction: (x^2 - c^2)/sqrt(x^2 - c^2) = 39, and since A/sqrt(A) = sqrt(A), this is sqrt(x^2 - c^2) = 39. Squaring gives x^2 = c^2 + 39^2, so x = sqrt(c^2 + 39^2) or x = -sqrt(c^2 + 39^2). Choice C has the subtraction in the wrong order."
+ },
+ {
+  "id": "m-0251",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "In f(x) = -6(3)^x - 3, the term -6(3)^x is always negative and gets more negative without bound as x grows, so f decreases forever and has no minimum (it only approaches -3 from below on the left). Likewise g(x) = -3(6)^x decreases without bound and has no minimum. So neither function has a minimum value of -3."
+ },
+ {
+  "id": "m-0252",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A product is zero when a factor is zero: 3x = 0, x - 4 = 0, or x + 5 = 0, giving x = 0, 4, or -5. Only 0 is listed. Choice A (-4) has the wrong sign for the factor x - 4, and 3 is just a coefficient."
+ },
+ {
+  "id": "m-0253",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Since 10,000 = 10^4, set 10^(5x-8) = 10^4, so 5x - 8 = 4. Then 5x = 12 and x = 12/5. Choice D (4) is the exponent, not x."
+ },
+ {
+  "id": "m-0254",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Complete the square: w^2 + 12w + 36 = 40 + 36, so (w + 6)^2 = 76. Then w + 6 = ± sqrt(76) = ± 2sqrt(19), so w = -6 ± 2sqrt(19). Choice A has the wrong sign on the 6."
+ },
+ {
+  "id": "m-0255",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "f(2) = 2(3^2) = 2 · 9 = 18. Choice D (36) comes from computing (2 · 3)^2 instead of applying the exponent first."
+ },
+ {
+  "id": "m-0256",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Kinetic energy is (1/2)mv^2, so 18 = (1/2)(4)v^2 = 2v^2. Then v^2 = 9 and v = 3 meters per second. Choice C (9) is v^2, not v."
+ },
+ {
+  "id": "m-0257",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The solution is where the line and the V-shaped graph intersect, which is the marked point (1, 5). Choice D (4, 2) is the vertex of the absolute value graph, which is not on the line."
+ },
+ {
+  "id": "m-0258",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "In vertex form, y = a(x - 9)^2 - 14. Since the vertex is below the x-axis and the parabola crosses it twice, it must open upward, so a > 0. Notice a + b + c is just y at x = 1: a(1 - 9)^2 - 14 = 64a - 14, which is greater than -14. Only -12 is greater than -14 (it works for a = 1/32)."
+ },
+ {
+  "id": "m-0259",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where the graph crosses the y-axis, so x = 0. The curve crosses at y = 8, so the y-intercept is (0, 8). Choice C uses the horizontal asymptote y = 6, which the curve never reaches."
+ },
+ {
+  "id": "m-0260",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Divide both sides by 8: j = (k + 15m)/8. Choice B divides only the 15m by 8, but the whole right side must be divided."
+ },
+ {
+  "id": "m-0261",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "For p, the y-intercept is p(0) = a(4.1)^0 + b = a + b, which isn't a constant shown in the equation (a and b appear separately). For r, r(0) = a(4.1)^b, which also isn't shown directly. Since b < 0, a + b can't equal a or b, so neither equation displays the y-intercept."
+ },
+ {
+  "id": "m-0262",
+  "answer": [
+   "7"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The parabola meets the y-axis at its marked vertex, which is at height 7. So the point is (0, 7) and y = 7."
+ },
+ {
+  "id": "m-0263",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "From the first equation, y = -8x - 11. Substitute into the second: 2x^2 = -8x - 11 + 341, so 2x^2 + 8x - 330 = 0, or x^2 + 4x - 165 = 0. This factors as (x + 15)(x - 11) = 0, so x = -15 or x = 11. Only -15 is listed."
+ },
+ {
+  "id": "m-0264",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "If p(a) = 0, then x - a is a factor of p. The table shows p(-1) = 0 and p(2) = 0, so x + 1 and x - 2 are factors, and so is their product (x + 1)(x - 2). Choice C has the signs reversed; p(1) = -1 and p(-2) = 5 are not zero."
+ },
+ {
+  "id": "m-0265",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The starting height is 22 feet, and each bounce keeps 85% of the previous maximum height, so each bounce multiplies the height by 0.85. After n bounces, h(n) = 22(0.85)^n. Choice D swaps the starting value and the percent."
+ },
+ {
+  "id": "m-0266",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where the graph crosses the y-axis (x = 0). The curve crosses at y = -6, so the y-intercept is (0, -6). Choice B swaps the coordinates, and y = -5 is the horizontal asymptote."
+ },
+ {
+  "id": "m-0267",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The input x is time in seconds and the output h(x) is height in feet. So h(1.4) = 1.64 means 1.4 seconds after being thrown, the object is 1.64 feet high. Choice B swaps time and height, and h gives height, not speed."
+ },
+ {
+  "id": "m-0268",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The line passes through (0, 0) and (1, 5), so its slope is 5 and its equation is y = 5x. The parabola opens upward with vertex (0, -8), so it is y = x^2 - 8. Choice B has a line with negative slope, but the line shown rises from left to right."
+ },
+ {
+  "id": "m-0269",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Subtract 331.3 from both sides: v - 331.3 = 0.606T. Then divide by 0.606: T = (v - 331.3)/0.606. Choice C adds 331.3 instead of subtracting it."
+ },
+ {
+  "id": "m-0270",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "f(2) = 2^3 + 9 = 8 + 9 = 17. Choice B (15) comes from computing 2 · 3 instead of 2^3."
+ },
+ {
+  "id": "m-0271",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Distribute the minus sign: 7x^3 + 7x - 6x^3 + 3x. Combine like terms: (7 - 6)x^3 + (7 + 3)x = x^3 + 10x. Choice D forgets to change -3x to +3x."
+ },
+ {
+  "id": "m-0272",
+  "answer": [
+   "29/3",
+   "9.666",
+   "9.667"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Expand both sides: x^2 + x - 56 = 4x^2 - 28x. Move everything to one side: 3x^2 - 29x + 56 = 0. The sum of the solutions of ax^2 + bx + c = 0 is -b/a = 29/3. Check: the solutions are 7 and 8/3, and 7 + 8/3 = 29/3."
+ },
+ {
+  "id": "m-0273",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "low",
+  "note": "The answer-choice image is blank, so the four graphs can't be compared; letter is a placeholder guess.",
+  "explanation": "Launching from a platform 2 feet shorter lowers every height by 2 feet, so the new graph is the original graph shifted down 2 units. Its y-intercept moves from (0, 7) to (0, 5), and its highest point drops from about 8.3 feet to about 6.3 feet. The correct graph starts at a height of 5 and has the same shape as the original, just 2 units lower."
+ },
+ {
+  "id": "m-0274",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "A parabola is symmetric about the vertical line through its vertex, x = -3. The given intercept x = -17/4 is 17/4 - 12/4 = 5/4 to the left of -3, so the other intercept is 5/4 to the right: -3 + 5/4 = -7/4. So it is (-7/4, 0). Choice C (5/4, 0) is the distance, not the location."
+ },
+ {
+  "id": "m-0275",
+  "answer": [
+   "-12"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The vertex lies on the axis of symmetry, which is halfway between the two zeros. The midpoint of -20 and -4 is (-20 + (-4))/2 = -12, so r = -12."
+ },
+ {
+  "id": "m-0276",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The zeros of f are x = -3 and x = -1, and the vertex is halfway between them at x = (-3 + (-1))/2 = -2. Since -3 < -2 < 1, the vertex's x-coordinate is in the interval in choice B. Choices C and D use positive values, which come from reading the zeros with the wrong signs."
+ },
+ {
+  "id": "m-0277",
+  "answer": [
+   "7/24",
+   ".2916",
+   ".2917"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Rewrite the right side as a power of 4: cbrt(4^7) = 4^(7/3). With equal bases, the exponents are equal: 8c = 7/3, so c = 7/24 (about 0.2917)."
+ },
+ {
+  "id": "m-0278",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute y = x^2 into the first equation: x + x^2 = 12, so x^2 + x - 12 = 0 and (x + 4)(x - 3) = 0. So x = 3 or x = -4, and only 3 is listed. Check: 3 + 9 = 12."
+ },
+ {
+  "id": "m-0279",
+  "answer": [
+   "14"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "No real solutions means the parabola y = x^2 + 8x + k never reaches y = -2.5. Completing the square, y = (x + 4)^2 + k - 16, so its minimum value is k - 16. We need k - 16 > -2.5, so k > 13.5. The least integer that works is 14 (k = 13 would give a minimum of -3, which crosses the line)."
+ },
+ {
+  "id": "m-0280",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Multiply: (2x + 3)(7x - 2) = 14x^2 - 4x + 21x - 6 = 14x^2 + 17x - 6. Subtract h(x): 14x^2 + 17x - 6 - (5x + 6) = 14x^2 + 12x - 12. So b = 12. Choice D (22) comes from adding 5x instead of subtracting it."
+ }
+]

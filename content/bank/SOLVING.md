@@ -59,4 +59,14 @@ Fields `figure.src`, `choicesImage`, `sourceImage` point to `/bank/img/<rw|math>
 
 `figure.fullPage: true` means the figure is only available as the full original page image. Questions flagged `formulas_read_from_image` had formulas transcribed from an image — if the text looks garbled, check `sourceImage` and solve from the image. If you still can't determine the answer, use `confidence: "low"`.
 
+## Fixing garbled text
+
+If the question text is garbled by extraction (e.g. an exponent on its own line like `"2\nx/25 = 36"`, broken `|` bars, a choice that's only `[figure]`) **and you can see the correct text** (in `sourceImage`, a figure, or it's unambiguous), add a `fix` object with the corrected fields — only `prompt`, `passage`, `choices` (any of A–D), or `table`:
+
+```json
+{ "id": "m-0378", "answer": "B", ..., "fix": { "prompt": "x^2/25 = 36\nWhat is a solution to the given equation?" } }
+```
+
+The fix is applied when the site is built, so students see the corrected text. With a correct fix the answer can be `high` confidence. If you **can't** tell what the original said, don't guess a fix — use `confidence: "low"` and a `note`. Choice images that are missing choices (only A shown) can't be fixed → `low`.
+
 R&W `<u>…</u>` marks underlined text. Tables are in `table`.

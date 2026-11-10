@@ -28,11 +28,33 @@ const parseNumeric = (s) => {
   return f && Number(f[3]) !== 0 ? (f[1] ? -1 : 1) * (Number(f[2]) / Number(f[3])) : null;
 };
 
+// Corrections of extraction errors (source files stay untouched):
+//   content/bank/fixes.json = { "<id>": { prompt?, passage?, choices?: {A?..D?}, table? } }
+//   and/or a "fix" object on an answers entry (same shape).
+const FIX_FIELDS = ["prompt", "passage", "choices", "table"];
+const FIXES_FILE = path.join(BANK, "fixes.json");
+const fileFixes = fs.existsSync(FIXES_FILE) ? read(FIXES_FILE) : {};
+
+function validateFix(fix, q) {
+  if (fix === undefined) return [];
+  if (typeof fix !== "object" || fix === null) return ["fix must be an object"];
+  const errs = Object.keys(fix).filter((k) => !FIX_FIELDS.includes(k)).map((k) => `fix: field "${k}" not allowed`);
+  if (fix.choices && (q.type !== "mcq" || Object.keys(fix.choices).some((k) => !["A", "B", "C", "D"].includes(k))))
+    errs.push("fix.choices must be {A..D} on a multiple-choice question");
+  return errs;
+}
+
+function applyFix(q, fix) {
+  if (!fix) return q;
+  return { ...q, ...fix, ...(fix.choices ? { choices: { ...q.choices, ...fix.choices } } : {}) };
+}
+
 /** Returns a list of problems for one answers entry. */
 function validate(a) {
   const errs = [];
   const q = source.get(a.id);
   if (!q) return [`unknown id`];
+  errs.push(...validateFix(a.fix, q));
   const d = DOMAINS[a.domain];
   if (!d) errs.push(`unknown domain "${a.domain}"`);
   else {
@@ -92,9 +114,18 @@ if (checkOnly) {
 const out = [];
 const counts = { total: 0, rw: {}, math: {} };
 let lowConfidence = 0;
-for (const [id, q] of source) {
+for (const [id, file] of Object.entries(fileFixes)) {
+  const errs = source.has(id) ? validateFix(file, source.get(id)) : ["unknown id"];
+  if (errs.length) {
+    console.error(`fixes.json ${id}: ${errs.join("; ")}`);
+    process.exit(1);
+  }
+}
+
+for (const [id, raw] of source) {
   const a = answers.get(id);
   if (!a) continue;
+  const q = applyFix(applyFix(raw, fileFixes[id]), a.fix);
   if (a.confidence === "low") {
     lowConfidence++;
     continue;
