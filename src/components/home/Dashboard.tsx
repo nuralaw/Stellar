@@ -412,7 +412,7 @@ export function Dashboard() {
       {/* Test-day countdown */}
       <div className="mt-4">
         {hydrated ? (
-          <Countdown testDate={profile.testDate} testTimeZone={profile.testTimeZone} onPickDate={openPlan} />
+          <Countdown testDate={profile.testDate} testTimeZone={profile.testTimeZone} />
         ) : (
           <Skeleton className="h-40 rounded-2xl" />
         )}
