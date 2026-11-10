@@ -23,6 +23,11 @@ export const MAX_BASE = (Object.keys(ROUND_MIX) as Difficulty[]).reduce((n, d) =
 export const SPEED_BONUS = 0.5;
 /** Answers saved / submitted up to this long after the time limit still count (network slack). */
 export const GRACE_MS = 60_000;
+/**
+ * A round must be taken in one sitting, in full screen. A started round that is opened again (or seen on the hub)
+ * more than this long after it started means the student left it: the attempt is annulled.
+ */
+export const REOPEN_MS = 15_000;
 
 export function computeScore(correct: Record<Difficulty, number>, seconds: number, limitSeconds: number) {
   const base = (Object.keys(POINTS) as Difficulty[]).reduce((n, d) => n + (correct[d] ?? 0) * POINTS[d], 0);
@@ -108,7 +113,7 @@ export interface Board {
 
 export interface MyRound {
   round: RoundId;
-  status: "none" | "running" | "done";
+  status: "none" | "running" | "done" | "annulled";
   startedAt?: number;
   endsAt?: number;
   score?: number;

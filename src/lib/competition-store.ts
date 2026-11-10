@@ -27,6 +27,8 @@ export interface Entry {
   bonus?: number;
   score?: number;
   seconds?: number;
+  /** Left full screen (or the page) mid-round: scored 0, kept off the leaderboards. */
+  annulled?: boolean;
 }
 
 export class StoreUnavailable extends Error {}
@@ -110,6 +112,7 @@ const toRow = (e: Partial<Entry>): Row => {
     bonus: "bonus",
     score: "score",
     seconds: "seconds",
+    annulled: "annulled",
   };
   for (const [key, v] of Object.entries(e)) if (map[key] && v !== undefined) r[map[key]] = v;
   return r;
@@ -130,6 +133,7 @@ const fromRow = (r: Row): Entry => ({
   bonus: r.bonus == null ? undefined : Number(r.bonus),
   score: r.score == null ? undefined : Number(r.score),
   seconds: r.seconds == null ? undefined : Number(r.seconds),
+  annulled: r.annulled === true ? true : undefined,
 });
 
 async function sb(query: string, init: RequestInit = {}) {

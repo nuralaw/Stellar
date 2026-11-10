@@ -18,9 +18,13 @@ create table if not exists public.competition_entries (
   bonus         integer,
   score         integer,
   seconds       integer,
+  annulled      boolean not null default false, -- left full screen mid-round: score 0, off the boards
   primary key (week, round, user_id)
 );
 
 create index if not exists competition_entries_board on public.competition_entries (week, score desc) where submitted_at is not null;
 
 alter table public.competition_entries enable row level security;
+
+-- Added 2026-11-11 (full-screen rule). Safe to re-run on an existing table.
+alter table public.competition_entries add column if not exists annulled boolean not null default false;

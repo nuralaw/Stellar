@@ -3,6 +3,7 @@ import { getQuestionsByIds, sampleQuestions } from "./bank";
 import { isCorrect } from "./answers";
 import {
   GRACE_MS,
+  REOPEN_MS,
   ROUNDS,
   ROUND_MIX,
   computeScore,
@@ -85,8 +86,8 @@ export async function startRound(round: RoundId, userId: string, name: string, a
   if (!e) {
     e = await store.create({ week, round, userId, name, avatar, ids: pick(round), startedAt: now, responses: {} });
   }
-  // Running past the deadline without a submit: grade what was saved.
-  if (e.submittedAt === undefined && now > deadline(e) + GRACE_MS) e = await finish(e, e.responses, now);
+  // Opened again after it started: the student left the round (full screen / page) → the attempt is annulled.
+  if (e.submittedAt === undefined && now - e.startedAt > REOPEN_MS) e = await annul(e, now);
   const qs = getQuestionsByIds(e.ids);
   return {
     week,
@@ -120,6 +121,23 @@ export async function submitRound(week: string, round: RoundId, userId: string, 
   return { result: resultOf(e), review: review(qs, e.responses) };
 }
 
+/** Called by the round page when the student leaves full screen (or the page) before submitting. */
+export async function annulRound(week: string, round: RoundId, userId: string, now: number) {
+  let e = await store.get(week, round, userId);
+  if (!e) throw new BadRequest("Round not started");
+  if (e.submittedAt === undefined) e = await annul(e, now);
+  const qs = getQuestionsByIds(e.ids);
+  return { result: resultOf(e), review: review(qs, e.responses) };
+}
+
+async function annul(e: Entry, now: number): Promise<Entry> {
+  const limit = ROUNDS[e.round].minutes * 60;
+  const seconds = Math.min(limit, Math.max(1, Math.round((Math.min(now, deadline(e)) - e.startedAt) / 1000)));
+  const patch = { submittedAt: now, correct: { easy: 0, medium: 0, hard: 0 }, base: 0, bonus: 0, score: 0, seconds, annulled: true };
+  await store.update(e.week, e.round, e.userId, patch);
+  return { ...e, ...patch };
+}
+
 async function finish(e: Entry, responses: Record<string, string>, now: number): Promise<Entry> {
   const qs = getQuestionsByIds(e.ids);
   const correct: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0 };
@@ -133,7 +151,7 @@ async function finish(e: Entry, responses: Record<string, string>, now: number):
 }
 
 function resultOf(e: Entry) {
-  return { score: e.score!, base: e.base!, bonus: e.bonus!, correct: e.correct!, seconds: e.seconds! };
+  return { score: e.score!, base: e.base!, bonus: e.bonus!, correct: e.correct!, seconds: e.seconds!, ...(e.annulled ? { annulled: true } : {}) };
 }
 
 /* ---------------- leaderboards ---------------- */
@@ -147,7 +165,8 @@ function rank(rows: Omit<LeaderRow, "rank">[]): LeaderRow[] {
 }
 
 export async function boards(week: string, userId: string | null, now: number, top = 50) {
-  const done = await store.finished(week);
+  // Annulled attempts don't appear on the boards.
+  const done = (await store.finished(week)).filter((e) => !e.annulled);
   const byRound = (round: RoundId) =>
     rank(
       done
@@ -178,8 +197,10 @@ export async function boards(week: string, userId: string | null, now: number, t
       (["rw", "math"] as RoundId[]).map(async (round): Promise<MyRound> => {
         const e = await store.get(week, round, userId);
         if (!e) return { round, status: "none" };
-        if (e.submittedAt === undefined && now <= deadline(e) + GRACE_MS) return { round, status: "running", startedAt: e.startedAt, endsAt: deadline(e) };
-        const f = e.submittedAt === undefined ? await finish(e, e.responses, now) : e;
+        if (e.submittedAt === undefined && now - e.startedAt <= REOPEN_MS) return { round, status: "running", startedAt: e.startedAt, endsAt: deadline(e) };
+        // Started but left without submitting → annulled.
+        const f = e.submittedAt === undefined ? await annul(e, now) : e;
+        if (f.annulled) return { round, status: "annulled", ...resultOf(f) };
         return { round, status: "done", ...resultOf(f), rank: all[round].find((r) => r.userId === userId)?.rank };
       }),
     );

@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { MAX_BASE, POINTS, ROUNDS, ROUND_MIX, ROUND_SIZE, SPEED_BONUS, shiftWeek, weekLabel, type Board, type MyRound, type RoundId } from "@/lib/competition";
 import { getUserId, updateProfile, useHydrated, useProfile } from "@/lib/store";
-import { CompeteRound, RoundReview, fmtDuration, type RoundData } from "./CompeteRound";
+import { CompeteRound, RoundReview, WARN_ICON, fmtDuration, type RoundData } from "./CompeteRound";
+import { exitFullscreen, requestFullscreenNow, useCanFullscreen } from "@/lib/fullscreen";
 import { PAGE } from "@/lib/ui";
 
 interface Hub {
@@ -32,6 +33,63 @@ function timeLeft(ms: number) {
 
 const MEDAL = ["🥇", "🥈", "🥉"];
 
+/** Shown before a round starts: one attempt, and leaving full screen annuls it. */
+function StartWarning({ round, fullscreen, busy, onCancel, onStart }: { round: RoundId; fullscreen: boolean; busy: boolean; onCancel: () => void; onStart: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onCancel();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onCancel]);
+  return (
+    <div className="fixed inset-0 z-50 grid place-items-center bg-black/55 px-4" onClick={onCancel}>
+      <div
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="start-warning-title"
+        onClick={(e) => e.stopPropagation()}
+        className="w-full max-w-md rounded-2xl border border-line bg-surface p-6 shadow-2xl"
+      >
+        <span className="grid h-12 w-12 place-items-center rounded-full bg-danger-soft text-danger">
+          <Icon d={WARN_ICON} className="h-6 w-6" strokeWidth={2} />
+        </span>
+        <h2 id="start-warning-title" className="mt-4 text-xl font-bold tracking-tight">
+          Before you start the {ROUNDS[round].name} round
+        </h2>
+        <ul className="mt-3 space-y-2 text-sm text-muted">
+          <li>
+            • <span className="font-semibold text-ink">One attempt.</span> Once you start, this week&apos;s attempt is used — even if it goes badly.
+          </li>
+          <li>
+            •{" "}
+            {fullscreen ? (
+              <>
+                <span className="font-semibold text-ink">The round opens in full screen.</span> If you leave full screen (Esc, switching tabs, reloading or closing the page),
+                the attempt is <span className="font-semibold text-danger">annulled</span>: 0 points and off the leaderboard.
+              </>
+            ) : (
+              <>
+                <span className="font-semibold text-ink">Stay on this page.</span> If you switch apps or tabs, reload or close the page, the attempt is{" "}
+                <span className="font-semibold text-danger">annulled</span>: 0 points and off the leaderboard.
+              </>
+            )}
+          </li>
+          <li>
+            • The timer ({ROUNDS[round].minutes} min) starts right away and doesn&apos;t pause.
+          </li>
+        </ul>
+        <div className="mt-6 flex flex-wrap gap-2">
+          <button type="button" onClick={onStart} disabled={busy} className={`${btnPrimary} flex-1`}>
+            {busy ? "Starting…" : fullscreen ? "Start in full screen" : "I understand, start"}
+          </button>
+          <button type="button" onClick={onCancel} className="rounded-xl px-4 py-2.5 font-semibold text-muted hover:bg-surface-2 hover:text-ink">
+            Not now
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 async function fetchHub(userId: string, week: string | null): Promise<Hub> {
   const res = await fetch(`/api/competition?userId=${userId}${week ? `&week=${week}` : ""}`, { cache: "no-store" });
   const json = await res.json();
@@ -49,6 +107,9 @@ export function Competition() {
   const [round, setRound] = useState<RoundData | null>(null);
   const [starting, setStarting] = useState<RoundId | null>(null);
   const [nameDraft, setNameDraft] = useState("");
+  /** Round whose "before you start" warning is open. */
+  const [gate, setGate] = useState<RoundId | null>(null);
+  const canFullscreen = useCanFullscreen();
 
   const userId = useMemo(() => (hydrated ? getUserId() : null), [hydrated]);
 
@@ -88,10 +149,22 @@ export function Competition() {
       setRound(json);
       window.scrollTo({ top: 0 });
     } catch (e) {
+      exitFullscreen();
       setError((e as Error).message);
     } finally {
       setStarting(null);
     }
+  };
+
+  /** "I understand": go full screen first (needs this click), then start the round. */
+  const startGated = async (r: RoundId) => {
+    if (canFullscreen && !(await requestFullscreenNow())) {
+      setGate(null);
+      setError("Your browser didn't allow full screen, so the round wasn't started. Try again, or use another browser.");
+      return;
+    }
+    setGate(null);
+    await open(r);
   };
 
   const back = () => {
@@ -179,6 +252,7 @@ export function Competition() {
                   <span className="rounded-lg bg-success-soft px-2 py-1 text-xs font-semibold text-success">Done{m.rank ? ` · #${m.rank}` : ""}</span>
                 )}
                 {m?.status === "running" && <span className="rounded-lg bg-accent-soft px-2 py-1 text-xs font-semibold text-accent">In progress</span>}
+                {m?.status === "annulled" && <span className="rounded-lg bg-danger-soft px-2 py-1 text-xs font-semibold text-danger">Annulled</span>}
               </div>
               {m?.status === "done" ? (
                 <div className="mt-4 flex items-end gap-6">
@@ -197,6 +271,8 @@ export function Competition() {
                     <p className="text-lg font-semibold tabular-nums">{fmtDuration(m.seconds ?? 0)}</p>
                   </div>
                 </div>
+              ) : m?.status === "annulled" ? (
+                <p className="mt-4 text-sm text-muted">You left full screen during this round, so the attempt was annulled: 0 points and off the leaderboard. Next chance: Monday.</p>
               ) : (
                 <p className="mt-4 text-sm text-muted">
                   {m?.status === "running"
@@ -209,11 +285,11 @@ export function Competition() {
               <div className="mt-auto pt-5">
                 <button
                   type="button"
-                  onClick={() => open(r)}
+                  onClick={() => (m?.status === "done" || m?.status === "annulled" || m?.status === "running" ? open(r) : setGate(r))}
                   disabled={!userId || needsName || starting !== null || !hub || !isCurrent}
-                  className={m?.status === "done" ? "rounded-xl border border-line px-5 py-2.5 font-semibold hover:bg-surface-2 disabled:opacity-40" : btnPrimary}
+                  className={m?.status === "done" || m?.status === "annulled" ? "rounded-xl border border-line px-5 py-2.5 font-semibold hover:bg-surface-2 disabled:opacity-40" : btnPrimary}
                 >
-                  {starting === r ? "Loading…" : m?.status === "done" ? "Review answers" : m?.status === "running" ? "Continue" : "Start round"}
+                  {starting === r ? "Loading…" : m?.status === "done" || m?.status === "annulled" ? "Review answers" : m?.status === "running" ? "Continue" : "Start round"}
                 </button>
               </div>
             </div>
@@ -230,6 +306,7 @@ export function Competition() {
           </li>
           <li>• Speed bonus: up to +{SPEED_BONUS * 100}% of your answer points, shrinking the longer you take. Finish in half the time → +{(SPEED_BONUS * 50).toFixed(0)}%.</li>
           <li>• One attempt per round each week. Answers are saved as you go; when time runs out the round is submitted.</li>
+          <li>• The round runs in full screen. Leaving full screen (Esc, switching tabs, reloading) annuls the attempt: 0 points, off the leaderboard, no retry that week.</li>
           <li>• Overall = R&amp;W + Math. Ties go to the faster time. A new week starts every Monday 00:00 UTC.</li>
         </ul>
       </details>
@@ -341,6 +418,10 @@ export function Competition() {
           </table>
         )}
       </div>
+      {gate && (
+        <StartWarning round={gate} fullscreen={canFullscreen} busy={starting !== null} onCancel={() => setGate(null)} onStart={() => startGated(gate)} />
+      )}
+
       {b && b.total > 0 && (
         <p className="mt-2 text-sm text-muted tabular-nums">
           {b.total} participant{b.total === 1 ? "" : "s"}

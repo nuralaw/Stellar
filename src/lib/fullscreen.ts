@@ -43,3 +43,13 @@ export function useCanFullscreen(): boolean {
     () => false,
   );
 }
+
+/** Asks for full screen and reports whether the page is now full screen (call from a click handler). */
+export async function requestFullscreenNow(): Promise<boolean> {
+  try {
+    if (!document.fullscreenElement) await document.documentElement.requestFullscreen({ navigationUI: "hide" });
+    return Boolean(document.fullscreenElement);
+  } catch {
+    return false;
+  }
+}

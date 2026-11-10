@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
 import { useFocusMode } from "@/lib/focus";
+import { exitFullscreen } from "@/lib/fullscreen";
 import { I, Icon } from "@/components/bank/icons";
 import { TestQuestionView } from "@/components/test/TestQuestionView";
 import { ROUNDS, ROUND_SIZE, type CompetitionQuestion, type ReviewItem, type RoundId } from "@/lib/competition";
@@ -27,6 +28,8 @@ export interface RoundResult {
   bonus: number;
   correct: Record<Difficulty, number>;
   seconds: number;
+  /** Left full screen mid-round: 0 points, off the leaderboard. */
+  annulled?: boolean;
 }
 
 const btnPrimary =
@@ -73,9 +76,17 @@ async function post(path: string, body: unknown) {
   return json;
 }
 
-/** A round in progress: answer, autosave, submit. Calls onDone with the graded round. */
+export const WARN_ICON = "M12 3 2 20h20L12 3Zm0 6v5m0 3h.01";
+
+/**
+ * A round in progress: answer, autosave, submit. Calls onDone with the graded round.
+ * One sitting, in full screen: leaving full screen (or, where full screen isn't available, leaving the page) annuls
+ * the attempt. onExit runs if that annul can't reach the server (the hub annuls it on the next load anyway).
+ */
 export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData; userId: string; onDone: (d: RoundData) => void; onExit: () => void }) {
   useFocusMode();
+  // Where the browser has no full screen (iPhone Safari), the rule is "don't leave the page" instead.
+  const [fsRule] = useState(() => typeof document !== "undefined" && document.fullscreenEnabled);
   const qs = data.questions;
   // Server clock offset so the timer matches the server's deadline.
   const [skew] = useState(() => data.now - Date.now());
@@ -125,6 +136,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
       try {
         localStorage.removeItem(draftKey(data));
       } catch {}
+      exitFullscreen(); // submitted.current is set, so this doesn't count as leaving
       onDone({ ...data, responses, result: r.result, review: r.review });
     } catch (e) {
       submitted.current = false;
@@ -133,6 +145,42 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
       setSending(false);
     }
   };
+
+  // Leaving full screen (or the page) before submitting annuls the attempt.
+  const [leaving, setLeaving] = useState(false);
+  useEffect(() => {
+    const body = JSON.stringify({ week: data.week, round: data.round, userId });
+    const leave = async () => {
+      if (submitted.current) return;
+      submitted.current = true;
+      setLeaving(true);
+      try {
+        localStorage.removeItem(draftKey(data));
+      } catch {}
+      try {
+        const r = await post("/api/competition/annul", JSON.parse(body));
+        onDone({ ...data, responses, result: r.result, review: r.review });
+      } catch {
+        onExit();
+      }
+    };
+    const onFullscreen = () => !document.fullscreenElement && leave();
+    const onVisibility = () => document.visibilityState === "hidden" && leave();
+    // Reload / close / navigate away: the request has to survive the page going away.
+    const onPageHide = () => {
+      if (submitted.current) return;
+      submitted.current = true;
+      navigator.sendBeacon?.("/api/competition/annul", new Blob([body], { type: "application/json" }));
+    };
+    if (fsRule) document.addEventListener("fullscreenchange", onFullscreen);
+    else document.addEventListener("visibilitychange", onVisibility);
+    window.addEventListener("pagehide", onPageHide);
+    return () => {
+      document.removeEventListener("fullscreenchange", onFullscreen);
+      document.removeEventListener("visibilitychange", onVisibility);
+      window.removeEventListener("pagehide", onPageHide);
+    };
+  });
 
   // Time's up → submit.
   useEffect(() => {
@@ -198,6 +246,13 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
             </p>
           </div>
           <span
+            className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-danger/40 bg-danger-soft px-2.5 text-xs font-semibold text-danger"
+            title={fsRule ? "Leaving full screen annuls this attempt" : "Leaving this page annuls this attempt"}
+          >
+            <Icon d={WARN_ICON} className="h-4 w-4" strokeWidth={2} />
+            <span className="hidden md:inline">{fsRule ? "Stay in full screen" : "Stay on this page"}</span>
+          </span>
+          <span
             className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 font-mono text-sm font-semibold tabular-nums ${lowTime ? "border-danger/50 bg-danger-soft text-danger" : "border-line bg-surface"}`}
             aria-label="Time left"
           >
@@ -240,6 +295,18 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
           ))}
         </div>
       </div>
+
+      {leaving && (
+        <div className="fixed inset-0 z-50 grid place-items-center bg-bg/80 px-4 backdrop-blur" role="alertdialog" aria-live="assertive">
+          <div className="max-w-sm rounded-2xl border border-danger/40 bg-surface p-6 text-center shadow-2xl">
+            <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-danger-soft text-danger">
+              <Icon d={WARN_ICON} className="h-6 w-6" strokeWidth={2} />
+            </span>
+            <p className="mt-3 font-semibold">{fsRule ? "You left full screen" : "You left the page"}</p>
+            <p className="mt-1 text-sm text-muted">This attempt is being annulled…</p>
+          </div>
+        </div>
+      )}
 
       <CalculatorDock used={isMath && calcUsed} open={isMath && calcOpen} onClose={() => setCalcOpen(false)} stickyClass="lg:top-24" fullHeight="calc(100vh - 7.5rem)">
         <div>
@@ -295,10 +362,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
 
           <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
             <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
-              <button type="button" onClick={onExit} className={btnGhost} title="Leave — the timer keeps running">
-                <Icon d={I.chevronL} className="h-4 w-4" />
-                <span className="hidden sm:inline">Leaderboard</span>
-              </button>
+              <p className="hidden text-xs text-muted sm:block">One attempt · {fsRule ? "leaving full screen" : "leaving this page"} annuls it</p>
               <div className="flex-1" />
               {!checking && (
                 <>
@@ -334,6 +398,18 @@ export function RoundReview({ data, rank, onBack }: { data: RoundData; rank?: nu
         <Icon d={I.chevronL} className="h-4 w-4" /> Leaderboard
       </button>
       <h1 className="mt-4 text-3xl font-bold tracking-tight">{ROUNDS[data.round].name} round</h1>
+      {r.annulled && (
+        <div className="mt-5 flex items-start gap-3 rounded-2xl border border-danger/40 bg-danger-soft px-5 py-4" role="alert">
+          <Icon d={WARN_ICON} className="mt-0.5 h-5 w-5 shrink-0 text-danger" strokeWidth={2} />
+          <div>
+            <p className="font-semibold text-danger">Attempt annulled</p>
+            <p className="mt-0.5 text-sm text-ink/80">
+              You left full screen during the round, so it scores 0 and isn&apos;t on the leaderboard. Your one attempt for this week is used — the next round opens on
+              Monday.
+            </p>
+          </div>
+        </div>
+      )}
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-line bg-surface p-5">
