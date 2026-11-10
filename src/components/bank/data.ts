@@ -18,14 +18,16 @@ export interface BankItem {
   preview: string;
 }
 
-export type Status = "all" | "new" | "incorrect" | "correct" | "bookmarked";
+export type Status = "all" | "new" | "solved" | "incorrect" | "correct" | "bookmarked";
+/** Status tabs above the list. ("correct" still works from a URL but has no tab.) */
 export const STATUSES: { id: Status; label: string }[] = [
   { id: "all", label: "All" },
-  { id: "new", label: "Not attempted" },
+  { id: "new", label: "Unsolved" },
+  { id: "solved", label: "Solved" },
   { id: "incorrect", label: "Incorrect" },
-  { id: "correct", label: "Correct" },
   { id: "bookmarked", label: "Bookmarked" },
 ];
+const STATUS_IDS: Status[] = ["all", "new", "solved", "incorrect", "correct", "bookmarked"];
 export const DIFFS: Difficulty[] = ["easy", "medium", "hard"];
 
 export type Sort = "number" | "easy-first" | "hard-first";
@@ -134,6 +136,8 @@ export function statusOf(id: string, results: Map<string, boolean>, bookmarks: S
       return true;
     case "new":
       return !results.has(id);
+    case "solved":
+      return results.has(id);
     case "incorrect":
       return results.get(id) === false;
     case "correct":
@@ -192,7 +196,7 @@ export function filtersFromParams(p: URLSearchParams): Filters {
     section,
     skills,
     difficulties,
-    status: st && STATUSES.some((s) => s.id === st) ? st : "all",
+    status: st && STATUS_IDS.includes(st) ? st : "all",
     search: p.get("q") ?? "",
     sort: SORTS.some((s) => s.id === p.get("sort")) ? (p.get("sort") as Sort) : "number",
   };

@@ -500,6 +500,7 @@ export function SolveView({
                   Previously {was ? "correct" : "incorrect"}
                 </span>
               )}
+              {was === undefined && !answer && <span className="rounded-full border border-line px-2 py-0.5 font-medium">Unsolved</span>}
               <span className="ml-auto flex items-center gap-3">
                 {answeredCount > 0 && (
                   <span className="tabular-nums">
