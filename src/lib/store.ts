@@ -15,6 +15,8 @@ export interface Profile {
   targetScore: number | null;
   /** Local date "YYYY-MM-DD". */
   testDate: string | null;
+  /** IANA time zone of the test location (picked by country in Profile); null = this device's zone. */
+  testTimeZone: string | null;
 }
 
 export interface Attempt {
@@ -28,7 +30,7 @@ export interface Attempt {
   at: number;
 }
 
-export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null };
+export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null, testTimeZone: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
 const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks" } as const;

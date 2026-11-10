@@ -1,8 +1,73 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useProfile } from "@/lib/store";
+import { COUNTRY_ZONES } from "@/lib/tz-data";
+import { countryList, countryName, countryOfZone, deviceZone, mainZone, utcOffsetLabel, zoneCity } from "@/lib/timezone";
+
+const selectCls =
+  "mt-2 block w-full max-w-sm cursor-pointer rounded-xl border border-line bg-bg px-4 py-2.5 outline-none focus:border-primary focus:ring-1 focus:ring-primary";
+
+/** Where the student takes the SAT: sets the time zone of the Home countdown. */
+function TestLocation() {
+  const profile = useProfile();
+  const [countries] = useState(countryList);
+  const [now] = useState(() => Date.now());
+  const device = deviceZone();
+  const deviceCountry = countryOfZone(device);
+  const tz = profile.testTimeZone;
+  const cc = tz ? countryOfZone(tz) : undefined;
+  const zones = cc ? COUNTRY_ZONES[cc] : [];
+  const label = (z: string) => `${zoneCity(z)} (${utcOffsetLabel(z, now)})`;
+
+  // Home's "Change" link points here; the section renders after hydration, so scroll to it ourselves.
+  useEffect(() => {
+    if (window.location.hash === "#test-location") document.getElementById("test-location")?.scrollIntoView({ block: "start" });
+  }, []);
+
+  return (
+    <div id="test-location" className="scroll-mt-20 rounded-2xl border border-line bg-surface p-6">
+      <h2 className="font-semibold">Test location</h2>
+      <p className="mt-1 text-sm text-muted">The test-day countdown on Home counts down to 8:00 a.m. in this country&apos;s time.</p>
+
+      <label htmlFor="test-country" className="mt-5 block text-sm font-medium text-muted">
+        Country
+      </label>
+      <select
+        id="test-country"
+        value={cc ?? ""}
+        onChange={(e) => updateProfile({ testTimeZone: e.target.value ? (mainZone(e.target.value) ?? null) : null })}
+        className={selectCls}
+      >
+        <option value="">Automatic: this device ({deviceCountry ? countryName(deviceCountry) : label(device)})</option>
+        {countries.map((c) => (
+          <option key={c.code} value={c.code}>
+            {c.name}
+          </option>
+        ))}
+      </select>
+
+      {zones.length > 1 && (
+        <>
+          <label htmlFor="test-zone" className="mt-4 block text-sm font-medium text-muted">
+            Time zone
+          </label>
+          <select id="test-zone" value={tz ?? ""} onChange={(e) => updateProfile({ testTimeZone: e.target.value })} className={selectCls}>
+            {zones.map(([z, note]) => (
+              <option key={z} value={z}>
+                {label(z)}
+                {note ? ` · ${note}` : ""}
+              </option>
+            ))}
+          </select>
+        </>
+      )}
+
+      <p className="mt-3 text-xs text-muted">Current: {label(tz ?? device)}{tz ? "" : " · detected from this device"}</p>
+    </div>
+  );
+}
 
 function Editor() {
   const profile = useProfile();
@@ -77,6 +142,8 @@ function Editor() {
           {saved && !dirty && <span className="text-sm font-medium text-success">Saved</span>}
         </div>
       </form>
+
+      <TestLocation />
 
       <div className="rounded-2xl border border-line bg-surface p-6">
         <h2 className="font-semibold">Your goal and progress</h2>

@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { computeStats, daysUntil, type Tally } from "@/lib/stats";
+import { computeStats, type Tally } from "@/lib/stats";
+import { upcomingSatDates } from "@/lib/sat-dates";
+import { effectiveZone, todayIn } from "@/lib/timezone";
+import { Countdown, formatIsoDate } from "./Countdown";
 import { updateProfile, useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 
@@ -11,11 +14,6 @@ const SCORE_PRESETS = [1200, 1300, 1400, 1500];
 function greeting(now: number) {
   const h = new Date(now).getHours();
   return h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
-}
-
-function formatDate(iso: string) {
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Date(y, m - 1, d).toLocaleDateString(undefined, { weekday: "short", month: "long", day: "numeric", year: "numeric" });
 }
 
 function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -42,6 +40,8 @@ function pct(t: Tally) {
 
 function GoalsForm({ onDone }: { onDone: () => void }) {
   const profile = useProfile();
+  const now = useNow();
+  const official = upcomingSatDates(todayIn(effectiveZone(profile.testTimeZone), now || 0)).slice(0, 6);
   const [score, setScore] = useState(profile.targetScore?.toString() ?? "");
   const [date, setDate] = useState(profile.testDate ?? "");
   const n = Number(score);
@@ -90,7 +90,26 @@ function GoalsForm({ onDone }: { onDone: () => void }) {
           {!scoreValid && <p className="mt-2 text-xs text-danger">Enter a multiple of 10 between 400 and 1600.</p>}
         </div>
         <div>
-          <label htmlFor="testdate" className="text-sm font-medium text-muted">
+          <p className="text-sm font-medium text-muted">Test date</p>
+          <div className="mt-2 flex flex-wrap gap-1.5" role="radiogroup" aria-label="Official SAT dates">
+            {official.map((d) => (
+              <button
+                key={d.date}
+                type="button"
+                role="radio"
+                aria-checked={date === d.date}
+                onClick={() => setDate(d.date)}
+                title={d.anticipated ? "Anticipated date (not confirmed by College Board yet)" : "Official SAT date"}
+                className={`rounded-full border px-2.5 py-0.5 text-xs font-medium ${
+                  date === d.date ? "border-primary bg-primary-soft text-primary" : "border-line text-muted hover:text-ink"
+                }`}
+              >
+                {formatIsoDate(d.date, { month: "short", day: "numeric", year: "numeric" })}
+                {d.anticipated && "*"}
+              </button>
+            ))}
+          </div>
+          <label htmlFor="testdate" className="sr-only">
             Test date
           </label>
           <input
@@ -98,9 +117,9 @@ function GoalsForm({ onDone }: { onDone: () => void }) {
             type="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="mt-2 block w-full rounded-xl border border-line bg-bg px-4 py-2.5 outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+            className="mt-3 block w-full rounded-xl border border-line bg-bg px-4 py-2.5 outline-none focus:border-primary focus:ring-1 focus:ring-primary"
           />
-          <p className="mt-2 text-xs text-muted">Check official test dates on the College Board website.</p>
+          <p className="mt-2 text-xs text-muted">Pick an official SAT date or enter your own. * = anticipated, not confirmed yet.</p>
         </div>
       </div>
       <div className="mt-5 flex gap-2">
@@ -124,7 +143,6 @@ export function Dashboard() {
   const [editing, setEditing] = useState(false);
   const now = useNow(); // 0 during server prerender
   const stats = computeStats(attempts, now);
-  const days = hydrated && profile.testDate ? daysUntil(profile.testDate, new Date(now)) : null;
   const hasGoal = profile.targetScore !== null || profile.testDate !== null;
 
   return (
@@ -157,27 +175,17 @@ export function Dashboard() {
         </div>
       </div>
 
-      {/* Goal + headline stats */}
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <p className="text-sm font-medium text-muted">Test day</p>
-          {!hydrated ? (
-            <Skeleton className="mt-3 h-10 w-24" />
-          ) : days === null ? (
-            <button type="button" onClick={() => setEditing(true)} className="mt-3 text-left font-semibold text-primary hover:underline">
-              Set your test date →
-            </button>
-          ) : (
-            <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
-                {days > 0 ? days : days === 0 ? "Today" : "Done"}
-                {days > 0 && <span className="ml-1.5 text-base font-medium text-muted">{days === 1 ? "day left" : "days left"}</span>}
-              </p>
-              <p className="mt-1 text-xs text-muted">{formatDate(profile.testDate!)}</p>
-            </>
-          )}
-        </Card>
+      {/* Test-day countdown */}
+      <div className="mt-8">
+        {hydrated ? (
+          <Countdown testDate={profile.testDate} testTimeZone={profile.testTimeZone} onPickDate={() => setEditing(true)} />
+        ) : (
+          <Skeleton className="h-40 rounded-2xl" />
+        )}
+      </div>
 
+      {/* Goal + headline stats */}
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
         <Card>
           <p className="text-sm font-medium text-muted">Target score</p>
           {!hydrated ? (

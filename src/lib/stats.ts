@@ -53,11 +53,3 @@ export function computeStats(attempts: Attempt[], now: number) {
     today: attempts.filter((a) => dayKey(a.at) === dayKey(now)).length,
   };
 }
-
-/** Whole days from today (local) until a "YYYY-MM-DD" date; negative if past. */
-export function daysUntil(date: string, now: Date): number {
-  const [y, m, d] = date.split("-").map(Number);
-  const target = new Date(y, m - 1, d);
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  return Math.round((target.getTime() - today.getTime()) / 86_400_000);
-}
