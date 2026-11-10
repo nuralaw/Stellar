@@ -62,7 +62,7 @@ export function TestList({ tests }: { tests: TestIndexRow[] }) {
       {recommended && (
         <Link
           href={`/test/${recommended.id}`}
-          className="group mt-6 flex flex-wrap items-center gap-4 rounded-2xl border border-line bg-surface px-5 py-4 transition-colors hover:border-primary/50"
+          className="group mt-6 flex flex-col gap-4 rounded-2xl border border-line bg-surface px-5 py-4 transition-colors hover:border-primary/50 sm:flex-row sm:items-center"
         >
           <span className="min-w-0 flex-1">
             <span className="text-sm font-medium text-primary">Recommended next</span>
@@ -71,7 +71,7 @@ export function TestList({ tests }: { tests: TestIndexRow[] }) {
               The newest full test you haven&apos;t taken · {questionCount(recommended)} questions · {fmtMinutes(minutesOf(recommended))}
             </span>
           </span>
-          <span className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors group-hover:bg-primary-hover">
+          <span className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors group-hover:bg-primary-hover">
             <Icon d={I.play} className="h-4 w-4" filled />
             Start test
           </span>

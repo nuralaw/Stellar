@@ -7,7 +7,8 @@ import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { ACCOUNT_NAV, MAIN_NAV, isActive, type NavItem } from "@/lib/nav";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
-import { useHydrated, useProfile } from "@/lib/store";
+import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
+import { reviewQueue } from "@/lib/review";
 
 function toggleCollapsed() {
   const el = document.documentElement;
@@ -26,7 +27,15 @@ function Icon({ d, className = "h-5 w-5" }: { d: string; className?: string }) {
   );
 }
 
-function NavGroup({ title, items, pathname, onNavigate }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void }) {
+/** Mistakes due for review today (sidebar badge). */
+function useDueCount() {
+  const hydrated = useHydrated();
+  const attempts = useAttempts();
+  const now = useNow();
+  return hydrated && now ? reviewQueue(attempts, now).due.length : 0;
+}
+
+function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void; badges?: Record<string, number> }) {
   return (
     <div>
       <p className="px-3 pb-2 text-[11px] font-semibold tracking-wider whitespace-nowrap text-side-muted uppercase rail:hidden">{title}</p>
@@ -45,8 +54,16 @@ function NavGroup({ title, items, pathname, onNavigate }: { title: string; items
                   active ? "bg-primary/15 text-accent" : "text-side-muted hover:bg-side-2 hover:text-side-ink"
                 }`}
               >
-                <Icon d={item.icon} />
-                <span className="whitespace-nowrap rail:sr-only">{item.label}</span>
+                <span className="relative">
+                  <Icon d={item.icon} />
+                  {badges[item.href] > 0 && <span className="absolute -top-0.5 -right-0.5 hidden h-2 w-2 rounded-full bg-primary rail:block" aria-hidden="true" />}
+                </span>
+                <span className="flex-1 whitespace-nowrap rail:sr-only">{item.label}</span>
+                {badges[item.href] > 0 && (
+                  <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[11px] leading-none font-semibold text-accent tabular-nums rail:hidden" title={`${badges[item.href]} due today`}>
+                    {badges[item.href]}
+                  </span>
+                )}
               </Link>
             </li>
           );
@@ -84,6 +101,7 @@ function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
 }
 
 function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: string; onNavigate: () => void; collapsible?: boolean }) {
+  const due = useDueCount();
   return (
     <div className="flex h-full flex-col gap-8 p-4 rail:px-3">
       <div className="flex items-center justify-between gap-2 px-2 pt-2 rail:flex-col rail:gap-4 rail:px-0">
@@ -106,7 +124,7 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
         )}
       </div>
       <nav className="flex flex-1 flex-col gap-6" aria-label="Main">
-        <NavGroup title="Learn" items={MAIN_NAV} pathname={pathname} onNavigate={onNavigate} />
+        <NavGroup title="Learn" items={MAIN_NAV} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
         <NavGroup title="Account" items={ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
       </nav>
       <ProfileCard onNavigate={onNavigate} />

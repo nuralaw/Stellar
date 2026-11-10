@@ -443,7 +443,7 @@ export function ListView({
                 type="button"
                 onClick={() => onPractice(filtered, setSize)}
                 disabled={!filtered.length}
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none"
               >
                 <Icon d={I.play} className="h-4 w-4" filled />
                 <span>

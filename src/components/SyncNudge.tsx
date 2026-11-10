@@ -42,7 +42,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
           <path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4 4 0 0 1-.5 9.5H7zM12 11v5M9.5 13.5 12 11l2.5 2.5" />
         </svg>
       </span>
-      <div className="min-w-0 flex-1">
+      <div className="min-w-[12rem] flex-1">
         <p className="font-semibold">Don&apos;t lose your {n.toLocaleString("en-US")} answers</p>
         <p className="mt-0.5 text-sm text-muted">They&apos;re saved only in this browser. Sign in to keep your progress on every device.</p>
       </div>

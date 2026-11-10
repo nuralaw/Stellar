@@ -312,7 +312,7 @@ export function Competition() {
                       <span className="text-lg leading-none">{r.avatar}</span>
                       <span className="truncate font-medium">{r.name}</span>
                       {r.me && <span className="shrink-0 rounded bg-primary px-1.5 py-0.5 text-[10px] font-bold text-primary-ink uppercase">You</span>}
-                      {board === "overall" && r.rounds < 2 && <span className="shrink-0 text-xs text-muted">1 round</span>}
+                      {board === "overall" && r.rounds < 2 && <span className="hidden shrink-0 text-xs text-muted sm:inline">1 round</span>}
                     </span>
                   </td>
                   <td className="px-2 py-3 text-right font-bold tabular-nums">{r.score}</td>

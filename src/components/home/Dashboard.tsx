@@ -15,6 +15,7 @@ import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 import { SyncNudge } from "@/components/SyncNudge";
+import { reviewQueue, type MistakeCard } from "@/lib/review";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
 
@@ -61,15 +62,28 @@ const PLAN_KEY = "stellar:plan-skipped";
 type Stats = ReturnType<typeof computeStats>;
 const SET_SIZE = 10;
 
-/** The one set we'd suggest right now: weakest skill -> weakest domain -> new questions in the chosen section. */
-function nextUp(stats: Stats, focus: SectionId | null) {
+/** The one set we'd suggest right now: due mistakes -> weakest skill -> weakest domain -> new questions in the chosen section. */
+function nextUp(stats: Stats, focus: SectionId | null, due: MistakeCard[]) {
+  if (due.length) {
+    const math = due.filter((c) => c.section === "math").length;
+    return {
+      href: "/mistakes?review=1",
+      title: `Review ${due.length} ${due.length === 1 ? "mistake" : "mistakes"}`,
+      why: "Due today — reviewing on time is what makes them stick",
+      section: (math === due.length ? "math" : math ? "mixed" : "rw") as SectionId | "mixed",
+      count: due.length,
+      cta: `Review ${due.length}`,
+    };
+  }
   const f = stats.focus[0];
   if (f)
     return {
       href: `/practice?section=${f.domain.section}&skills=${f.skill.id}&status=new&practice=${SET_SIZE}`,
       title: f.skill.name,
       why: `${f.accuracy}% correct so far — your weakest topic`,
-      section: f.domain.section,
+      section: f.domain.section as SectionId | "mixed",
+      count: SET_SIZE,
+      cta: `Practice ${SET_SIZE} questions`,
     };
   const d = stats.weakest;
   if (d && (d.accuracy ?? 100) < 75)
@@ -77,14 +91,18 @@ function nextUp(stats: Stats, focus: SectionId | null) {
       href: `/practice?section=${d.domain.section}&domain=${d.domain.id}&status=new&practice=${SET_SIZE}`,
       title: d.domain.name,
       why: `${d.accuracy}% correct so far — your weakest area`,
-      section: d.domain.section,
+      section: d.domain.section as SectionId | "mixed",
+      count: SET_SIZE,
+      cta: `Practice ${SET_SIZE} questions`,
     };
   const sec: SectionId = focus ?? (stats.bySection.rw.answered > stats.bySection.math.answered ? "math" : "rw");
   return {
     href: `/practice?section=${sec}&status=new&practice=${SET_SIZE}`,
     title: `New ${SECTIONS[sec].name} questions`,
     why: stats.overall.answered ? "Fresh questions you haven't seen yet" : "A mixed first set to find your strong and weak spots",
-    section: sec,
+    section: sec as SectionId | "mixed",
+    count: SET_SIZE,
+    cta: `Practice ${SET_SIZE} questions`,
   };
 }
 
@@ -144,9 +162,9 @@ function TodayCard({ stats, next, now }: { stats: Stats; next: ReturnType<typeof
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <Link href={next.href} className="rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors hover:bg-primary-hover">
-            Practice {SET_SIZE} questions
+            {next.cta}
           </Link>
-          <span className="text-[13px] text-muted">about {estMinutes(SET_SIZE, next.section)} min</span>
+          <span className="text-[13px] text-muted">about {estMinutes(next.count, next.section)} min</span>
         </div>
       </div>
     </div>
@@ -338,7 +356,8 @@ export function Dashboard() {
   const history = useMemo(() => tests.filter(isFullTest).sort((a, b) => a.at - b.at), [tests]);
   const latest = history[history.length - 1];
   const change = history.length > 1 ? latest.total - history[0].total : null;
-  const next = nextUp(stats, profile.focusSection);
+  const due = useMemo(() => (now ? reviewQueue(attempts, now).due : []), [attempts, now]);
+  const next = nextUp(stats, profile.focusSection, due);
 
   // Brand-new student: open "Build your plan" right away (until saved or skipped).
   const firstRun = hydrated && !hasGoal && attempts.length === 0 && !readFlag(PLAN_KEY);

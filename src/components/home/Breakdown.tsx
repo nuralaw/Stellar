@@ -177,9 +177,12 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
                   <Link href={`/practice?section=${d.domain.section}&skills=${s.skill.id}`} className="group block" title={`Practice ${s.skill.name}`}>
                     <div className="flex items-center justify-between gap-2 text-sm">
                       <span className="min-w-0 truncate group-hover:text-primary">{s.skill.name}</span>
-                      <span className="flex items-center gap-2">
-                        <span className="text-xs text-muted tabular-nums">{s.answered ? `${pct(s)} · ${s.answered}` : ""}</span>
-                        <MasteryPill t={s} />
+                      <span className="flex shrink-0 items-center gap-2">
+                        <span className="text-xs whitespace-nowrap text-muted tabular-nums">{s.answered ? `${pct(s)} · ${s.answered}` : ""}</span>
+                        {/* Phones: the % and bar say enough; only flag the skills that need attention. */}
+                        <span className={mastery(s) === "weak" || mastery(s) === "strong" ? "" : "hidden sm:inline"}>
+                          <MasteryPill t={s} />
+                        </span>
                       </span>
                     </div>
                     <div className="mt-1.5">

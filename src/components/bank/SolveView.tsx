@@ -10,11 +10,14 @@ import { CalculatorDock } from "@/components/CalculatorDock";
 import { useFocusMode } from "@/lib/focus";
 import { SyncNudge } from "@/components/SyncNudge";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
+import { ReportButton } from "./ReportButton";
 import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
 import { I, Icon } from "./icons";
 
 export interface Run {
   ids: string[];
+  /** Where "back" goes, e.g. "Mistakes" (default "Question Bank"). */
+  from?: string;
   items: Map<string, BankItem>;
   title: string;
   start: number;
@@ -150,7 +153,7 @@ function Summary({
   return (
     <section className="mx-auto max-w-3xl px-4 py-10 md:px-8 md:py-14">
       <button type="button" onClick={onExit} className="inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
-        <Icon d={I.chevronL} className="h-4 w-4" /> Question Bank
+        <Icon d={I.chevronL} className="h-4 w-4" /> {run.from ?? "Question Bank"}
       </button>
 
       <div className="mt-4 rounded-3xl border border-line bg-surface p-6 text-center md:p-10">
@@ -187,12 +190,21 @@ function Summary({
             </button>
           )}
           <button type="button" onClick={onExit} className="rounded-xl border border-line bg-surface px-5 py-3 font-semibold transition-colors hover:bg-surface-2">
-            Back to Question Bank
+            Back to {run.from ?? "Question Bank"}
           </button>
           <Link href="/" className="rounded-xl px-5 py-3 font-semibold text-muted transition-colors hover:text-ink">
             View progress
           </Link>
         </div>
+        {wrong.length > 0 && (
+          <p className="mt-6 text-sm text-muted">
+            Your {wrong.length === 1 ? "mistake comes" : "mistakes come"} back tomorrow in{" "}
+            <Link href="/mistakes" className="font-semibold text-primary hover:underline">
+              Mistakes
+            </Link>{" "}
+            for a spaced review.
+          </p>
+        )}
         <SyncNudge variant="inline" />
       </div>
 
@@ -352,7 +364,7 @@ export function SolveView({
           <div className="flex min-w-0 items-center gap-2">
             <button type="button" onClick={onExit} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
               <Icon d={I.chevronL} className="h-4 w-4" />
-              <span className="hidden sm:inline">Question Bank</span>
+              <span className="hidden sm:inline">{run.from ?? "Question Bank"}</span>
             </button>
             <span className="hidden h-5 w-px bg-line md:block" aria-hidden="true" />
             <span className="hidden truncate text-sm font-semibold md:block">{run.title}</span>
@@ -451,11 +463,14 @@ export function SolveView({
                   Previously {was ? "correct" : "incorrect"}
                 </span>
               )}
-              {answeredCount > 0 && (
-                <span className="ml-auto tabular-nums">
-                  Score: <span className="font-semibold text-ink">{correctCount}</span>/{answeredCount}
-                </span>
-              )}
+              <span className="ml-auto flex items-center gap-3">
+                {answeredCount > 0 && (
+                  <span className="tabular-nums">
+                    Score: <span className="font-semibold text-ink">{correctCount}</span>/{answeredCount}
+                  </span>
+                )}
+                <ReportButton qid={id} />
+              </span>
             </div>
           )}
 
