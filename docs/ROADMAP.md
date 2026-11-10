@@ -39,9 +39,9 @@ Days 1–4 done in one session: site shell, design, Home dashboard, profile, ful
 - [ ] **Day 7** — Buffer, review, bug fixes
 
 ## Week 2 — Practice test & lessons
-- [ ] **Day 8** — Test engine: modules, timer, question navigator, mark-for-review, Desmos calculator  ← *needs Desmos API key*
-- [ ] **Day 9** — Adaptive module 2 (easier/harder by module 1 result), score estimate 400–1600
-- [ ] **Day 10** — Results page, answer review with explanations, save test results
+- [x] **Day 8** — Test engine: modules, timer, question navigator, mark-for-review, Desmos calculator (done 2026-11-10 with 71 past papers)
+- [ ] **Day 9** — Adaptive module 2 (easier/harder by module 1 result) — *past papers have one module 2 only, so tests are linear*; score estimate 400–1600 ✓
+- [x] **Day 10** — Results page, answer review with explanations, save test results
 - [ ] **Day 11** — Math content batch #2 (PSDA, Geometry & Trig) + practice test #1 math modules
 - [ ] **Day 12** — R&W content batch #2 + practice test #1 R&W modules
 - [ ] **Day 13** — Lessons system (MDX), Math lessons
