@@ -7,13 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:content": "node scripts/check-content.mts"
+    "bank:import": "node scripts/bank-import.mjs",
+    "bank:build": "node scripts/bank-build.mjs",
+    "bank:check": "node scripts/bank-build.mjs --check",
+    "prebuild": "npm run bank:build",
+    "predev": "npm run bank:build"
   },
   "dependencies": {
-    "katex": "^0.19.1",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
@@ -22,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "exceljs": "^4.4.0",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   }

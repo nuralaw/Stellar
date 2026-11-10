@@ -34,7 +34,7 @@ Start: 2026-11-10 · Target launch: 2026-11-29
 - [ ] **Day 20** — Launch 🚀
 
 ## Content targets (MVP)
-- Question bank: ~250 original questions (no copied College Board material)
+- Question bank: 3,770 imported questions (sat_questions.xlsx), answers + explanations written per batch
 - 1 full adaptive practice test (~150 questions incl. both module-2 variants)
 - ~16 lessons (one per major skill group)
 

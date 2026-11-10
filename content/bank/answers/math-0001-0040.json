@@ -1,0 +1,375 @@
+[
+ {
+  "id": "m-0001",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The area of a rectangle is length · width. Since the length is 15 times the width w, the length is 15w, and y = (15w)(w) multiplies the length by the width. So 15w is the length of the rectangle in feet. Choice D describes w, not 15w, and the area is the whole product y."
+ },
+ {
+  "id": "m-0002",
+  "answer": [
+   "44"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Increasing x by 6 increases the exponent x/3 by 6/3 = 2, so f(x) gets multiplied by (1.20)^2 = 1.44. Multiplying by 1.44 is a 44% increase, so p = 44. A common mistake is to answer 20, which is the increase for every 3 units of x, not 6."
+ },
+ {
+  "id": "m-0003",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Multiply both sides of v = -w/(150x) by 150x to get 150vx = -w. Then multiply by -1: w = -150vx. Choice B divides by x instead of multiplying, which does not undo the division in the original equation."
+ },
+ {
+  "id": "m-0004",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "When multiplying powers with the same base, add the exponents: m^(4+1) = m^5, q^(4+5) = q^9, and z^(-1+3) = z^2. So the product is m^5q^9z^2. Choice A multiplies the q exponents instead of adding them."
+ },
+ {
+  "id": "m-0005",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each solution of the system is a point where the line and the parabola meet. In the graph, the line crosses the parabola once on the left side (near x = -6) and once on the right side (near x = 9). That is 2 intersection points, so the system has 2 solutions. Choice B would require the line to just touch the parabola at one point."
+ },
+ {
+  "id": "m-0006",
+  "answer": "B",
+  "domain": "algebra",
+  "skill": "linear-inequalities",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Every term in 6x - 9y > 12 is divisible by 3. Dividing both sides by the positive number 3 keeps the inequality sign the same and gives 2x - 3y > 4. Choice C swaps the coefficients of x and y, which changes the inequality."
+ },
+ {
+  "id": "m-0007",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Set the two expressions for y equal: x + 1 = x^2 + x. Subtract x from both sides to get x^2 = 1, so x = 1 or x = -1. Only -1 is a choice. Check: when x = -1, both equations give y = 0."
+ },
+ {
+  "id": "m-0008",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The greatest common factor of 16x^3y^2 and 14xy is 2xy. Dividing each term by 2xy gives 8x^2y and 7, so the expression equals 2xy(8x^2y + 7). Choice A gives 16x^2y^2 for the first term when expanded, which is wrong."
+ },
+ {
+  "id": "m-0009",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "4a^2 = (2a)^2, 25b^2 = (5b)^2, and 20ab = 2(2a)(5b), so the polynomial is a perfect square: (2a + 5b)^2. Therefore 2a + 5b is a factor. Choice C, 4a + 5b, would give 16a^2 for the first term when squared."
+ },
+ {
+  "id": "m-0010",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "pv = (3x + 4)(x + 5) = 3x^2 + 19x + 20. Then -2p = -6x - 8 and v = x + 5. Adding: 3x^2 + 19x + 20 - 6x - 8 + x + 5 = 3x^2 + 14x + 17. Choice C is only the product pv."
+ },
+ {
+  "id": "m-0011",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Since a > 7, the base a/7 is greater than 1, so 9(a/7)^(x+c) is always positive and always increasing, getting close to 0 on the left and growing without bound on the right. Subtracting b (a positive number) shifts the graph down, so its values run from just above -b up to infinity, always increasing. An increasing graph that goes from negative values to positive values crosses the x-axis exactly once."
+ },
+ {
+  "id": "m-0012",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Use the quadratic formula with a = 1, b = -1, c = -1: x = (1 ± sqrt(1 + 4))/2 = (1 ± sqrt(5))/2. Choice D has the wrong sign in front of 1; those are the solutions of x^2 + x - 1 = 0."
+ },
+ {
+  "id": "m-0013",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Factor out 3: 3(x^2 - 5x + 6) = 3(x - 2)(x - 3) = 0. So x = 2 or x = 3, which are two different real solutions. You can also check the discriminant: (-15)^2 - 4(3)(18) = 225 - 216 = 9 > 0, which means two real solutions."
+ },
+ {
+  "id": "m-0014",
+  "answer": [
+   "14"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Let the second integer be n, so the first is 2n + 5 and n(2n + 5) = 462. This gives 2n^2 + 5n - 462 = 0, which factors as (n - 14)(2n + 33) = 0, so n = 14 (it must be positive). The first integer is 2(14) + 5 = 33, and 14 · 33 = 462. The smaller integer is 14."
+ },
+ {
+  "id": "m-0015",
+  "answer": [
+   "609"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Because a < 0, 15a is negative, so |15a| = -15a. Then g(15a) = -15a/a - 14 = -15 - 14 = -29. In the same way, g(7a) = -7 - 14 = -21. The product is (-29)(-21) = 609. Forgetting that |15a| = -15a would give 1 and -7 instead."
+ },
+ {
+  "id": "m-0016",
+  "answer": "C",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "At the time of purchase, x = 0 years. Then y = 7,400(0.87)^0 = 7,400(1) = 7,400 dollars. Choice B, 6,438, is the value after 1 year."
+ },
+ {
+  "id": "m-0017",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where x = 0, meaning 0 months after purchase, which is the moment the tablet was bought. The graph meets the y-axis at 225, so the tablet's estimated value was $225 when it was purchased. Choice B describes the value at 24 months, which is about $50, not $225."
+ },
+ {
+  "id": "m-0018",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Combine like terms: x + 2x = 3x and 5 + (-3) = 2. So the expression equals 3x + 2. Choice D comes from adding 3 instead of subtracting it."
+ },
+ {
+  "id": "m-0019",
+  "answer": "A",
+  "domain": "algebra",
+  "skill": "linear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Since g(x) = f(x)/(x + 3), we get f(x) = g(x)(x + 3). From the table: f(-27) = 3(-24) = -72, f(-9) = 0(-6) = 0, and f(21) = 5(24) = 120. The slope is (120 - 0)/(21 - (-9)) = 4, so f(x) = 4(x + 9) = 4x + 36, and the y-intercept is (0, 36). Check: f(-27) = -108 + 36 = -72."
+ },
+ {
+  "id": "m-0020",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The numerator has a common factor of (x - 7): 8x(x - 7) - 3(x - 7) = (8x - 3)(x - 7). The denominator is 2x - 14 = 2(x - 7). Since x > 7, x - 7 is not zero and cancels, leaving (8x - 3)/2. Choice D comes from expanding the numerator incorrectly; the correct expansion is 8x^2 - 59x + 21."
+ },
+ {
+  "id": "m-0021",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "At the intersection point, x = 49. Substituting into the second equation gives y = sqrt(49) + 9 = 7 + 9 = 16. Choice B, 40, comes from subtracting 9 from 49 instead of taking the square root of 49 first."
+ },
+ {
+  "id": "m-0022",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Set h(x) = 0: 2(x - 4)^2 = 32, so (x - 4)^2 = 16 and x - 4 = ±4. That gives x = 0 or x = 8. Since (0, 0) is one intercept, t = 8. Choice C, 4, is the x-coordinate of the vertex, not an x-intercept."
+ },
+ {
+  "id": "m-0023",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "low",
+  "explanation": "Translating a graph up 4 units adds 4 to every y-value and leaves every x-value the same. The original parabola has its vertex at (2, -2), so the new vertex is at (2, 2), with the same shape and opening upward. The graph in choice A has its vertex at (2, 2) and is the same shape. A graph with its vertex moved left or right, or down to (2, -6), would be a different translation.",
+  "note": "choices image only shows choice A; B-D missing in source"
+ },
+ {
+  "id": "m-0024",
+  "answer": [
+   "1728"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The parabola opens upward, so its minimum is at the vertex, x = -b/(2a) = 48/2 = 24. Then f(24) = 576 - 1,152 + 2,304 = 1,728. You can also complete the square: f(x) = (x - 24)^2 + 1,728. Note that 24 is where the minimum happens, not the minimum value."
+ },
+ {
+  "id": "m-0025",
+  "answer": [
+   "9"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Combine like terms: 2|4 - x| + 3|4 - x| = 5|4 - x| = 25, so |4 - x| = 5. Then 4 - x = 5 or 4 - x = -5, giving x = -1 or x = 9. The positive solution is 9."
+ },
+ {
+  "id": "m-0026",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is f(0) = (-8)(2)^0 + 22 = -8 + 22 = 14, so it is (0, 14). Choice C, (0, 22), forgets that 2^0 = 1 still leaves the -8 term."
+ },
+ {
+  "id": "m-0027",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The x-coordinate is time in seconds and the y-coordinate is height in meters. So the point (1.0, 4.8) means that 1.0 second after launch, the ball is 4.8 meters above the ground. Choice B mixes up the two coordinates, and the initial height is the y-intercept (about 3.7 meters), not this point."
+ },
+ {
+  "id": "m-0028",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The graph is a downward-opening parabola, so its maximum is at the vertex, x = -b/(2a) = -1,400/(2 · -100) = 7. So the revenue is greatest when the ticket price is increased by $7. Choice C, 14, is 1,400/100 without the factor of 2."
+ },
+ {
+  "id": "m-0029",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Complete the square: x^2 - 2x = 9, so x^2 - 2x + 1 = 10 and (x - 1)^2 = 10. Then x = 1 ± sqrt(10), so k = 10. Choice D, 40, comes from the discriminant 4 + 36 = 40, which still has to be divided by 2 under the square root."
+ },
+ {
+  "id": "m-0030",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Solve for p(x): p(x) = x^2 - 57. Since x^2 is never less than 0, the smallest value of p(x) happens at x = 0 and equals -57. Choice A, -3,249, is -(57^2), which has no role here."
+ },
+ {
+  "id": "m-0031",
+  "answer": [
+   "6"
+  ],
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The line is y = 2.25. Setting -4x^2 + bx = 2.25 gives 4x^2 - bx + 2.25 = 0. Exactly one intersection means this quadratic has exactly one solution, so the discriminant is 0: b^2 - 4(4)(2.25) = b^2 - 36 = 0. Since b is positive, b = 6."
+ },
+ {
+  "id": "m-0032",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where x = 0, which means 0 years after 1997, so the year 1997. f(0) = 9,000(0.66)^0 = 9,000. So the company sent an estimated 9,000 advertisements in 1997. Choice B is wrong because the function is decreasing, so 9,000 is the maximum, not the minimum."
+ },
+ {
+  "id": "m-0033",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Add like terms: 9x^3 + 6x^3 = 15x^3, the only x^2 term is 5x^2, the only x term is 5x, and 7 + (-5) = 2. The sum is 15x^3 + 5x^2 + 5x + 2. Choices A and C add the exponents, but adding terms never changes exponents."
+ },
+ {
+  "id": "m-0034",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Each term is 4 times the one before, so the terms are 9, 9(4), 9(4^2), and so on. The nth term has been multiplied by 4 a total of n - 1 times, so w = 9(4^(n-1)). Check: n = 1 gives 9(4^0) = 9. Choice C would make the first term 36."
+ },
+ {
+  "id": "m-0035",
+  "answer": "D",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The y-intercept of f is f(0) = a(1 + 2.2^b). For g to equal f, k = 2.2^b, so g(0) = a(1 + k), which is not a single constant or coefficient shown in g. For h to equal f, m = a(2.2^b), so h(0) = a + m, which is also not shown on its own. Since neither form displays a(1 + 2.2^b) directly, the answer is neither."
+ },
+ {
+  "id": "m-0036",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In y = -16(x - 5.6)^2 + 502, the vertex is (5.6, 502), and because the parabola opens downward it is a maximum. So the rocket reaches its maximum height of 502 feet at x = 5.6 seconds. Choice A uses -16, which controls the shape of the parabola, not the time."
+ },
+ {
+  "id": "m-0037",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "From the first equation, y = x - 1. Substitute: x + (x - 1) = x^2 - 3, so x^2 - 2x - 2 = 0 and x = 1 ± sqrt(3). Then y = x - 1 = ±sqrt(3), so (1 + sqrt(3), sqrt(3)) is a solution. Check: x - y = 1 and x + y = 1 + 2sqrt(3) = x^2 - 3. Choice D satisfies x - y = 1, but x^2 - 3 = 2 while x + y = 2sqrt(5) - 1, so it fails the second equation."
+ },
+ {
+  "id": "m-0038",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where the graph crosses the y-axis (x = 0). The graph crosses the y-axis at y = -5, so the y-intercept is (0, -5). Choice C, -4, is the horizontal asymptote the graph approaches on the right, not the y-intercept."
+ },
+ {
+  "id": "m-0039",
+  "answer": "B",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Treat x^2 as a single variable u: u^2 - u - 6 = (u - 3)(u + 2). Replacing u with x^2 gives (x^2 + 2)(x^2 - 3). Check: x^4 - 3x^2 + 2x^2 - 6 = x^4 - x^2 - 6. Choice C gives a middle term of +x^2 instead of -x^2."
+ },
+ {
+  "id": "m-0040",
+  "answer": "A",
+  "domain": "advanced-math",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Expand each part: (2x + 5)^2 = 4x^2 + 20x + 25, -(x - 2) = -x + 2, and 2(x + 3) = 2x + 6. Adding gives 4x^2 + 21x + 33. Choice B forgets that subtracting (x - 2) adds 2, using -2 instead."
+ }
+]

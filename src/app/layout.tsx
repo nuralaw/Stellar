@@ -6,7 +6,6 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import { SiteFooter } from "@/components/SiteFooter";
-import "katex/dist/katex.min.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s · Stellar",
   },
   description:
-    "Free Digital SAT practice: hundreds of original questions with explanations, full-length adaptive practice tests, and clear lessons for Math and Reading & Writing.",
+    "Free Digital SAT practice: thousands of real-format questions with explanations, full-length adaptive practice tests, and clear lessons for Math and Reading & Writing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

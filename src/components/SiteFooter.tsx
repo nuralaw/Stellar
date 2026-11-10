@@ -24,7 +24,7 @@ export function SiteFooter() {
       <div className="border-t border-side-line">
         <p className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed md:px-8">
           SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse,
-          this website. All practice questions on Stellar are original.
+          this website.
         </p>
       </div>
     </footer>

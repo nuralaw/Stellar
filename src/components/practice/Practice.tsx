@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
-import { QUESTIONS } from "@/content/questions";
-import { MathText } from "@/components/MathText";
+import { useEffect, useState } from "react";
+import { RichText } from "@/components/RichText";
 import { isCorrect } from "@/lib/answers";
-import { addAttempt } from "@/lib/store";
+import { addAttempt, getAttempts } from "@/lib/store";
 import { DOMAINS, SECTIONS, domainsFor, getDomain, type SectionId } from "@/lib/taxonomy";
-import type { ChoiceLetter, Difficulty, Question } from "@/lib/types";
+import type { BankCounts, ChoiceLetter, Difficulty, Question } from "@/lib/types";
 
 type DifficultyFilter = Difficulty | "all";
 interface Filter {
@@ -17,20 +16,15 @@ interface Filter {
   difficulty: DifficultyFilter;
 }
 
+const SESSION_SIZE = 10;
 const LETTERS: ChoiceLetter[] = ["A", "B", "C", "D"];
 const DIFFICULTIES: DifficultyFilter[] = ["all", "easy", "medium", "hard"];
 
-function matches(q: Question, f: Filter) {
-  return q.section === f.section && (f.domain === "all" || q.domain === f.domain) && (f.difficulty === "all" || q.difficulty === f.difficulty);
-}
-
-function shuffle<T>(list: T[]): T[] {
-  const a = [...list];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+function countFor(counts: BankCounts, f: Filter) {
+  const sec = counts[f.section];
+  return Object.entries(sec)
+    .filter(([d]) => f.domain === "all" || d === f.domain)
+    .reduce((sum, [, byDiff]) => sum + (f.difficulty === "all" ? byDiff.easy + byDiff.medium + byDiff.hard : byDiff[f.difficulty]), 0);
 }
 
 function skillName(q: Question) {
@@ -45,16 +39,28 @@ function initialFilter(params: URLSearchParams): Filter {
   return { section, domain, difficulty: diff && DIFFICULTIES.includes(diff) ? diff : "all" };
 }
 
+async function fetchQuestions(f: Filter): Promise<Question[]> {
+  // Prefer questions this student hasn't seen yet (most recent 300 in this section).
+  const seen = getAttempts()
+    .filter((a) => a.section === f.section)
+    .slice(-300)
+    .map((a) => a.qid);
+  const qs = new URLSearchParams({ section: f.section, domain: f.domain, difficulty: f.difficulty, limit: String(SESSION_SIZE) });
+  if (seen.length) qs.set("exclude", [...new Set(seen)].join(","));
+  const res = await fetch(`/api/questions?${qs}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return (await res.json()).questions as Question[];
+}
+
 // ---------- small UI pieces ----------
 
-function Chip({ active, onClick, children, disabled }: { active: boolean; onClick: () => void; children: React.ReactNode; disabled?: boolean }) {
+function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      disabled={disabled}
       aria-pressed={active}
-      className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+      className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
         active ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface text-muted hover:border-muted hover:text-ink"
       }`}
     >
@@ -77,16 +83,42 @@ function DifficultyBadge({ d }: { d: Difficulty }) {
   );
 }
 
+function Figure({ src, caption, fullPage }: { src: string; caption?: string; fullPage?: boolean }) {
+  return (
+    <figure className="space-y-2">
+      {caption && <figcaption className="text-sm font-semibold">{caption}</figcaption>}
+      {/* Figures are scans on white; keep them on white in dark mode too. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={caption ?? (fullPage ? "Original question page with figure" : "Figure for this question")} loading="lazy" className="w-full rounded-lg border border-line bg-white p-2" />
+    </figure>
+  );
+}
+
 // ---------- setup ----------
 
-function Setup({ filter, setFilter, onStart }: { filter: Filter; setFilter: (f: Filter) => void; onStart: () => void }) {
-  const count = (f: Filter) => QUESTIONS.filter((q) => matches(q, f)).length;
-  const available = count(filter);
+function Setup({
+  counts,
+  filter,
+  setFilter,
+  onStart,
+  loading,
+  error,
+}: {
+  counts: BankCounts;
+  filter: Filter;
+  setFilter: (f: Filter) => void;
+  onStart: () => void;
+  loading: boolean;
+  error: string | null;
+}) {
+  const available = countFor(counts, filter);
 
   return (
     <section className="mx-auto max-w-3xl px-4 py-10 md:px-8 md:py-14">
       <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Practice</h1>
-      <p className="mt-2 text-muted">Pick a section, a topic, and a difficulty. You&apos;ll get instant feedback and a full explanation for every question.</p>
+      <p className="mt-2 text-muted">
+        Pick a section, a topic, and a difficulty. Each session is {SESSION_SIZE} questions with instant feedback and a full explanation.
+      </p>
 
       <h2 className="mt-10 text-sm font-semibold tracking-wider text-muted uppercase">Section</h2>
       <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -98,12 +130,12 @@ function Setup({ filter, setFilter, onStart }: { filter: Filter; setFilter: (f: 
               type="button"
               onClick={() => setFilter({ section: s, domain: "all", difficulty: filter.difficulty })}
               aria-pressed={active}
-              className={`rounded-2xl border p-5 text-left transition-colors ${
-                active ? "border-primary bg-primary-soft" : "border-line bg-surface hover:border-muted"
-              }`}
+              className={`rounded-2xl border p-5 text-left transition-colors ${active ? "border-primary bg-primary-soft" : "border-line bg-surface hover:border-muted"}`}
             >
               <span className={`block font-semibold ${active ? "text-primary" : ""}`}>{SECTIONS[s].name}</span>
-              <span className="mt-1 block text-sm text-muted">{count({ section: s, domain: "all", difficulty: "all" })} questions</span>
+              <span className="mt-1 block text-sm text-muted">
+                {countFor(counts, { section: s, domain: "all", difficulty: "all" }).toLocaleString("en-US")} questions
+              </span>
             </button>
           );
         })}
@@ -116,7 +148,7 @@ function Setup({ filter, setFilter, onStart }: { filter: Filter; setFilter: (f: 
         </Chip>
         {domainsFor(filter.section).map((d) => (
           <Chip key={d.id} active={filter.domain === d.id} onClick={() => setFilter({ ...filter, domain: d.id })}>
-            {d.name} <span className="opacity-60">· {count({ ...filter, domain: d.id, difficulty: "all" })}</span>
+            {d.name} <span className="opacity-60">· {countFor(counts, { ...filter, domain: d.id, difficulty: "all" })}</span>
           </Chip>
         ))}
       </div>
@@ -134,21 +166,22 @@ function Setup({ filter, setFilter, onStart }: { filter: Filter; setFilter: (f: 
         <button
           type="button"
           onClick={onStart}
-          disabled={available === 0}
+          disabled={available === 0 || loading}
           className="rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Start · {available} {available === 1 ? "question" : "questions"}
+          {loading ? "Loading…" : `Start · ${Math.min(SESSION_SIZE, available)} questions`}
         </button>
         {available === 0 && <p className="text-sm text-muted">No questions for this combination yet — try another topic or difficulty.</p>}
+        {error && <p className="text-sm text-danger">Couldn&apos;t load questions ({error}). Please try again.</p>}
       </div>
-      <p className="mt-6 text-xs text-muted">New questions are added regularly. Tip: use keys A–D to choose and Enter to check.</p>
+      <p className="mt-6 text-xs text-muted">Tip: use keys A–D to choose and Enter to check.</p>
     </section>
   );
 }
 
 // ---------- question ----------
 
-function DataTable({ table }: { table: NonNullable<Question["table"]> }) {
+function DataTable({ table, math }: { table: NonNullable<Question["table"]>; math: boolean }) {
   return (
     <div className="overflow-x-auto">
       <table className="w-full border-collapse text-sm">
@@ -157,7 +190,7 @@ function DataTable({ table }: { table: NonNullable<Question["table"]> }) {
           <tr>
             {table.headers.map((h, i) => (
               <th key={i} className="border border-line bg-surface-2 px-3 py-2 text-left font-semibold">
-                <MathText text={h} />
+                <RichText text={h} math={math} />
               </th>
             ))}
           </tr>
@@ -167,7 +200,7 @@ function DataTable({ table }: { table: NonNullable<Question["table"]> }) {
             <tr key={i}>
               {r.map((c, j) => (
                 <td key={j} className="border border-line px-3 py-2">
-                  <MathText text={c} />
+                  <RichText text={c} math={math} />
                 </td>
               ))}
             </tr>
@@ -178,17 +211,9 @@ function DataTable({ table }: { table: NonNullable<Question["table"]> }) {
   );
 }
 
-function ChoiceButton({
-  letter,
-  text,
-  state,
-  onSelect,
-}: {
-  letter: ChoiceLetter;
-  text: string;
-  state: "idle" | "selected" | "correct" | "wrong" | "dim";
-  onSelect: () => void;
-}) {
+type ChoiceState = "idle" | "selected" | "correct" | "wrong" | "dim";
+
+function ChoiceButton({ letter, text, state, math, onSelect }: { letter: ChoiceLetter; text: string; state: ChoiceState; math: boolean; onSelect: () => void }) {
   const styles = {
     idle: "border-line bg-surface hover:border-muted",
     selected: "border-primary bg-primary-soft ring-1 ring-primary",
@@ -211,9 +236,7 @@ function ChoiceButton({
       className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${styles}`}
     >
       <span className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border text-xs font-semibold ${badge}`}>{letter}</span>
-      <span className="min-w-0 flex-1">
-        <MathText text={text} />
-      </span>
+      <span className="min-w-0 flex-1">{text ? <RichText text={text} math={math} /> : <span className="text-muted">Choice {letter} (see image above)</span>}</span>
     </button>
   );
 }
@@ -241,21 +264,46 @@ function QuestionView({
   onNext: () => void;
   onExit: () => void;
 }) {
+  const [showSource, setShowSource] = useState(false);
+  const math = q.section === "math";
   const correct = checked && isCorrect(q, response);
-  const hasStimulus = Boolean(q.passage || q.table);
+  // R&W: passage/table/graph go in the left column (like the real test). Math: everything in one column.
+  const twoColumn = !math && Boolean(q.passage || q.table || q.figure);
+
+  const stimulus = (
+    <div className="space-y-5">
+      {q.passage && <RichText text={q.passage} math={math} />}
+      {q.table && <DataTable table={q.table} math={math} />}
+      {q.figure && <Figure {...q.figure} />}
+    </div>
+  );
 
   const answerArea = (
     <div className="space-y-5">
+      {math && (q.table || q.figure) && stimulus}
       <div className="text-[15px] leading-relaxed font-medium">
-        <MathText text={q.prompt} />
+        <RichText text={q.prompt} math={math} />
       </div>
+      {q.sourceImage && !q.figure?.fullPage && (
+        <div>
+          <button type="button" onClick={() => setShowSource((v) => !v)} className="text-xs font-medium text-muted underline-offset-2 hover:text-ink hover:underline">
+            {showSource ? "Hide original" : "Formulas look off? View the original"}
+          </button>
+          {showSource && (
+            <div className="mt-2">
+              <Figure src={q.sourceImage} fullPage />
+            </div>
+          )}
+        </div>
+      )}
 
       {q.type === "mcq" ? (
         <div className="space-y-2.5">
+          {q.choicesImage && <Figure src={q.choicesImage} caption="Answer choices" />}
           {LETTERS.map((l) => {
-            let state: "idle" | "selected" | "correct" | "wrong" | "dim" = response === l ? "selected" : "idle";
+            let state: ChoiceState = response === l ? "selected" : "idle";
             if (checked) state = l === q.answer ? "correct" : response === l ? "wrong" : "dim";
-            return <ChoiceButton key={l} letter={l} text={q.choices[l]} state={state} onSelect={() => setResponse(l)} />;
+            return <ChoiceButton key={l} letter={l} text={q.choices[l]} state={state} math={math} onSelect={() => setResponse(l)} />;
           })}
         </div>
       ) : (
@@ -292,22 +340,13 @@ function QuestionView({
         <div className="space-y-4">
           <div className={`rounded-2xl border p-5 ${correct ? "border-success/40 bg-success-soft" : "border-danger/40 bg-danger-soft"}`}>
             <p className={`font-semibold ${correct ? "text-success" : "text-danger"}`}>
-              {correct
-                ? "Correct!"
-                : q.type === "mcq"
-                  ? `Not quite — the correct answer is ${q.answer}.`
-                  : `Not quite — the correct answer is ${q.answer[0]}.`}
+              {correct ? "Correct!" : `Not quite — the correct answer is ${q.type === "mcq" ? q.answer : q.answer[0]}.`}
             </p>
             <div className="mt-3 text-[15px] leading-relaxed">
-              <MathText text={q.explanation} />
+              <RichText text={q.explanation} math={math} />
             </div>
           </div>
-          <button
-            type="button"
-            onClick={onNext}
-            autoFocus
-            className="rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover"
-          >
+          <button type="button" onClick={onNext} autoFocus className="rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover">
             {position === total ? "See results" : "Next question →"}
           </button>
         </div>
@@ -338,21 +377,16 @@ function QuestionView({
         <DifficultyBadge d={q.difficulty} />
       </div>
 
-      {hasStimulus ? (
+      {twoColumn ? (
         <div className="mt-5 grid gap-6 lg:grid-cols-2 lg:gap-0">
-          <div className="space-y-5 rounded-2xl border border-line bg-surface p-6 text-[15px] leading-relaxed lg:rounded-r-none">
-            {q.passage && <MathText text={q.passage} />}
-            {q.passage2 && (
-              <div className="border-t border-line pt-5">
-                <MathText text={q.passage2} />
-              </div>
-            )}
-            {q.table && <DataTable table={q.table} />}
-          </div>
+          <div className="rounded-2xl border border-line bg-surface p-6 text-[15px] leading-relaxed lg:rounded-r-none">{stimulus}</div>
           <div className="rounded-2xl border border-line bg-surface p-6 lg:rounded-l-none lg:border-l-0">{answerArea}</div>
         </div>
       ) : (
-        <div className="mt-5 max-w-3xl rounded-2xl border border-line bg-surface p-6">{answerArea}</div>
+        <div className="mt-5 max-w-3xl rounded-2xl border border-line bg-surface p-6">
+          {!math && q.passage && <div className="mb-5 text-[15px] leading-relaxed">{stimulus}</div>}
+          {answerArea}
+        </div>
       )}
     </section>
   );
@@ -360,7 +394,7 @@ function QuestionView({
 
 // ---------- results ----------
 
-function Results({ session, onAgain, onExit }: { session: { answered: number; correct: number }; onAgain: () => void; onExit: () => void }) {
+function Results({ session, onAgain, onExit, loading }: { session: { answered: number; correct: number }; onAgain: () => void; onExit: () => void; loading: boolean }) {
   const pct = session.answered ? Math.round((session.correct / session.answered) * 100) : 0;
   return (
     <section className="mx-auto max-w-xl px-4 py-16 text-center md:px-8">
@@ -371,8 +405,13 @@ function Results({ session, onAgain, onExit }: { session: { answered: number; co
       </p>
       <p className="mt-2 text-muted">{pct}% correct</p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <button type="button" onClick={onAgain} className="rounded-xl bg-primary px-5 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover">
-          Practice again
+        <button
+          type="button"
+          onClick={onAgain}
+          disabled={loading}
+          className="rounded-xl bg-primary px-5 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:opacity-40"
+        >
+          {loading ? "Loading…" : `Next ${SESSION_SIZE} questions`}
         </button>
         <button type="button" onClick={onExit} className="rounded-xl border border-line bg-surface px-5 py-3 font-semibold transition-colors hover:bg-surface-2">
           Change filters
@@ -387,7 +426,7 @@ function Results({ session, onAgain, onExit }: { session: { answered: number; co
 
 // ---------- main ----------
 
-export function Practice() {
+export function Practice({ counts }: { counts: BankCounts }) {
   const params = useSearchParams();
   const [filter, setFilter] = useState<Filter>(() => initialFilter(params));
   const [phase, setPhase] = useState<"setup" | "question" | "done">("setup");
@@ -396,18 +435,30 @@ export function Practice() {
   const [response, setResponse] = useState("");
   const [checked, setChecked] = useState(false);
   const [session, setSession] = useState({ answered: 0, correct: 0 });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const pool = useMemo(() => QUESTIONS.filter((q) => matches(q, filter)), [filter]);
   const q = queue[index];
 
-  const start = () => {
-    setQueue(shuffle(pool));
-    setIndex(0);
-    setResponse("");
-    setChecked(false);
-    setSession({ answered: 0, correct: 0 });
-    setPhase("question");
-    window.scrollTo({ top: 0 });
+  const start = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const qs = await fetchQuestions(filter);
+      if (!qs.length) throw new Error("no questions");
+      setQueue(qs);
+      setIndex(0);
+      setResponse("");
+      setChecked(false);
+      setSession({ answered: 0, correct: 0 });
+      setPhase("question");
+      window.scrollTo({ top: 0 });
+    } catch (e) {
+      setError((e as Error).message);
+      setPhase("setup");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const check = () => {
@@ -419,9 +470,8 @@ export function Practice() {
   };
 
   const next = () => {
-    if (index + 1 >= queue.length) {
-      setPhase("done");
-    } else {
+    if (index + 1 >= queue.length) setPhase("done");
+    else {
       setIndex(index + 1);
       setResponse("");
       setChecked(false);
@@ -436,7 +486,7 @@ export function Practice() {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const typing = e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement;
       if (e.key === "Enter") {
-        if (e.target instanceof HTMLButtonElement) return; // let the focused button handle it
+        if (e.target instanceof HTMLButtonElement) return; // the focused button handles Enter itself
         e.preventDefault();
         if (checked) next();
         else check();
@@ -451,10 +501,11 @@ export function Practice() {
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  if (phase === "setup") return <Setup filter={filter} setFilter={setFilter} onStart={start} />;
-  if (phase === "done" || !q) return <Results session={session} onAgain={start} onExit={() => setPhase("setup")} />;
+  if (phase === "setup") return <Setup counts={counts} filter={filter} setFilter={setFilter} onStart={start} loading={loading} error={error} />;
+  if (phase === "done" || !q) return <Results session={session} onAgain={start} onExit={() => setPhase("setup")} loading={loading} />;
   return (
     <QuestionView
+      key={q.id}
       q={q}
       position={index + 1}
       total={queue.length}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Practice } from "@/components/practice/Practice";
+import { getCounts } from "@/lib/bank";
 
 export const metadata: Metadata = {
   title: "Practice",
@@ -8,9 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const counts = getCounts();
   return (
     <Suspense fallback={<div className="mx-auto max-w-3xl px-4 py-14 text-muted md:px-8">Loading practice…</div>}>
-      <Practice />
+      <Practice counts={counts} />
     </Suspense>
   );
 }

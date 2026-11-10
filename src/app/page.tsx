@@ -5,7 +5,7 @@ import { domainsFor, SECTIONS, type SectionId } from "@/lib/taxonomy";
 const FEATURES = [
   {
     title: "Question bank",
-    body: "Original Math and Reading & Writing questions, sorted by skill and difficulty, each with a step-by-step explanation.",
+    body: "Thousands of Math and Reading & Writing questions, sorted by skill and difficulty, each with a step-by-step explanation.",
     href: "/practice",
     icon: "M4 6h16M4 12h16M4 18h10",
   },

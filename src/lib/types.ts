@@ -3,35 +3,47 @@ import type { SectionId } from "./taxonomy";
 export type Difficulty = "easy" | "medium" | "hard";
 export type ChoiceLetter = "A" | "B" | "C" | "D";
 
+/**
+ * A question from the bank (content/bank/source + content/bank/answers, merged by scripts/bank-build.mjs).
+ * Text is plain: math uses ^ exponent, _ subscript, sqrt( ), a/b; R&W may contain <u>underline</u>.
+ */
 interface QuestionBase {
-  /** Stable unique id, e.g. "m-alg-001". Never reuse or change once published. */
+  /** "rw-0001" / "m-0001". Never change once published (progress is stored by id). */
   id: string;
   section: SectionId;
   domain: string;
   skill: string;
   difficulty: Difficulty;
-  /** Optional passage / table / context shown above the prompt. Supports $inline$ and $$block$$ math. */
   passage?: string;
-  /** Second passage for Cross-Text Connections. */
-  passage2?: string;
-  /** Optional data table (Command of Evidence: Quantitative, data questions). Cells support math. */
-  table?: { caption?: string; headers: string[]; rows: string[][] };
   prompt: string;
-  /** Step-by-step explanation shown after answering. */
+  /** Data table shown with the question. */
+  table?: { caption?: string; headers: string[]; rows: string[][] };
+  /** Graph / diagram. fullPage = the whole original page image (figure wasn't extracted separately). */
+  figure?: { src: string; caption?: string; fullPage?: boolean };
+  /** Original page image, for checking transcribed formulas. */
+  sourceImage?: string;
   explanation: string;
 }
 
-/** Multiple choice (A–D). */
 export interface MCQuestion extends QuestionBase {
   type: "mcq";
+  /** Empty strings when the choices are only shown in choicesImage. */
   choices: Record<ChoiceLetter, string>;
+  choicesImage?: string;
   answer: ChoiceLetter;
 }
 
-/** Student-produced response (math grid-in). Any listed answer is accepted, e.g. ["3/4", ".75", "0.75"]. */
+/** Student-produced response (grid-in). Any listed value (or a numeric equivalent) is accepted. */
 export interface SPRQuestion extends QuestionBase {
   type: "spr";
   answer: string[];
 }
 
 export type Question = MCQuestion | SPRQuestion;
+
+/** Per section → domain → difficulty counts of live questions (content/bank/dist/counts.json). */
+export interface BankCounts {
+  total: number;
+  rw: Record<string, Record<Difficulty, number>>;
+  math: Record<string, Record<Difficulty, number>>;
+}
