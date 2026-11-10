@@ -16,7 +16,7 @@ const DIFF: Record<Difficulty, { label: string; dot: string; bar: string; chip: 
 };
 
 /**
- * The thin question switcher under a test / round toolbar. Hovering a segment lifts it, tints it with the
+ * The thin question switcher under a test / round toolbar. Hovering a segment turns it into a square-cornered block, tints it with the
  * question's difficulty and pops up a small card (number, difficulty, answered / marked); click to jump there.
  */
 export function QuestionStrip({ items, pos, onPick }: { items: StripItem[]; pos: number | null; onPick: (i: number) => void }) {
@@ -35,10 +35,10 @@ export function QuestionStrip({ items, pos, onPick }: { items: StripItem[]; pos:
             tabIndex={-1}
             onClick={() => onPick(i)}
             aria-label={`Question ${i + 1}${d ? `, ${d.label}` : ""}${it.answered ? ", answered" : ""}${it.marked ? ", marked for review" : ""}`}
-            className="group relative flex h-4 flex-1 items-center"
+            className="group relative flex h-5 flex-1 items-center"
           >
             <span
-              className={`block w-full rounded-full transition-all duration-150 group-hover:h-2.5 ${current ? "h-2 bg-primary" : it.answered ? "h-1 bg-primary/60" : "h-1 bg-line"} ${
+              className={`block w-full rounded-[4px] transition-all duration-150 group-hover:h-3 group-hover:rounded-[2px] ${current ? "h-2 bg-primary" : it.answered ? "h-1 bg-primary/60" : "h-1 bg-line"} ${
                 d && !current ? d.bar : ""
               }`}
             />
