@@ -330,7 +330,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
         </div>
       </div>
 
-      <CalculatorDock used={isMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-20 lg:h-[calc(100vh-7rem)]">
+      <CalculatorDock used={isMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-20" fullHeight="calc(100vh - 7rem)">
         <div>
           {checking ? (
             <CheckYourWork

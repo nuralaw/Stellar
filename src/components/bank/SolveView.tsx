@@ -428,7 +428,7 @@ export function SolveView({
       </div>
 
       {/* Desmos calculator: docked left on desktop (drag to resize), bottom sheet on mobile */}
-      <CalculatorDock used={hasMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-28 lg:h-[calc(100vh-8.5rem)]">
+      <CalculatorDock used={hasMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-28" fullHeight="calc(100vh - 8.5rem)">
         <div>
           {/* Meta */}
           {meta && (
