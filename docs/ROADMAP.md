@@ -5,6 +5,28 @@ Stack: Next.js 16 (App Router) + Tailwind 4 + Supabase, deployed on Vercel.
 
 Start: 2026-11-10 · Target launch: 2026-11-29
 
+## Status (end of 2026-11-10)
+Days 1–4 done in one session: site shell, design, Home dashboard, profile, full question bank
+(3,770 questions answered, 3,755 live) and the Question Bank UI. Progress is stored in the browser only.
+
+## Goals for 2026-11-11
+**Before we start (you):**
+- [ ] Create a Supabase project (supabase.com) and send the Project URL + anon key
+- [ ] Optional: Google OAuth client (I'll walk you through it) — otherwise email-only sign-in first
+- [ ] Request a Desmos API key (needed for the practice test, Day 8)
+- [ ] Skim content/bank/REVIEW.md — 15 hidden questions need a look at the original PDF
+
+**Build (Day 5 + Day 6):**
+- [ ] Supabase auth: email magic link (+ Google), `/login` page, sign out, sidebar card shows the real user
+- [ ] Database: `profiles`, `attempts`, `bookmarks` tables with row-level security
+- [ ] Sync: save answers/bookmarks/goal to the account; on first sign-in, move existing browser progress into it
+- [ ] Home dashboard reads from the account when signed in (browser storage stays as the guest fallback)
+
+**Polish:**
+- [ ] Re-check difficulty labels (currently skewed to Easy, e.g. Algebra 422 easy / 37 hard)
+- [ ] Mobile pass on the Question Bank (filters drawer, solve view, navigator)
+- [ ] Home "By topic": link straight to skills in the Question Bank
+
 ## Week 1 — Foundation & question bank
 - [x] **Day 1** — Scaffold, design tokens (light/dark), site layout, landing page, SAT taxonomy + question data model, logo, orange/gray palette (60-30-10), collapsible sidebar, theme switch
 - [x] **Day 2** — Home tab (`/`) personal dashboard: target score, test date + countdown, stats overview (saved in browser until Supabase on Day 5)
