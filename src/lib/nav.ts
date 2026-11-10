@@ -33,7 +33,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     title: "Tournaments",
     items: [
-      { href: "/compete", label: "Compete", icon: "M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" },
+      { href: "/compete", label: "Weekly tournament", icon: "M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" },
     ],
   },
 ];

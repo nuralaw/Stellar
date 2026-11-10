@@ -185,7 +185,7 @@ export function Competition() {
     <div className={PAGE}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Weekly competition</h1>
+          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Weekly tournament</h1>
           <p className="mt-2 max-w-2xl text-muted">
             Two rounds every week. Everyone gets their own random questions: {ROUND_MIX.easy} easy, {ROUND_MIX.medium} medium and {ROUND_MIX.hard} hard. Answer fast and
             right to climb the leaderboard.
