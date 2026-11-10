@@ -12,6 +12,7 @@ import { INTERVALS, dueLabel, reviewQueue, type MistakeCard } from "@/lib/review
 import { useAttempts, useBookmarks, useHydrated, useNow } from "@/lib/store";
 import type { Difficulty } from "@/lib/types";
 import { PAGE, estMinutes } from "@/lib/ui";
+import { enterFullscreen } from "@/lib/fullscreen";
 
 type Tab = "due" | "upcoming" | "mastered";
 const TABS: { id: Tab; label: string; short: string }[] = [
@@ -54,6 +55,7 @@ export function Mistakes() {
   const shown = lists[tab];
 
   const start = (ids: string[], title: string, at = 0) => {
+    enterFullscreen(); // works when called from the click that opened the set
     setRun({ ids, items: byId, title, start: at, from: "Mistakes" });
     window.scrollTo({ top: 0 });
   };

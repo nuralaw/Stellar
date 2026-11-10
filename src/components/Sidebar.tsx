@@ -149,13 +149,13 @@ export function Sidebar() {
       {/* Desktop: collapsible sidebar (full width ↔ icon rail) */}
       <aside
         data-rail
-        className="fixed inset-y-0 left-0 z-30 hidden w-64 overflow-x-hidden overflow-y-auto border-r border-side-line bg-side transition-[width] duration-200 ease-out lg:block rail:w-[72px]"
+        className="fixed inset-y-0 left-0 z-30 hidden w-64 overflow-x-hidden overflow-y-auto border-r border-side-line bg-side transition-[width] duration-200 ease-out lg:block rail:w-[72px] focus-mode:hidden!"
       >
         <SidebarContent pathname={pathname} onNavigate={() => {}} collapsible />
       </aside>
 
       {/* Mobile: top bar + slide-in drawer */}
-      <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden">
+      <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden focus-mode:hidden">
         <Logo eager variant="onDark" className="h-6" />
         <div className="flex items-center gap-1">
           <ThemeToggle className="text-side-ink hover:bg-side-2" />

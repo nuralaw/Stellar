@@ -2,6 +2,7 @@
 
 import { RichText } from "@/components/RichText";
 import { ChoiceRow, DataTable, Figure, type ChoiceState } from "@/components/bank/QuestionCard";
+import { Highlightable } from "@/components/bank/Highlighter";
 import type { ChoiceLetter } from "@/lib/types";
 import type { TestQuestion } from "@/lib/test-types";
 import { isTestCorrect } from "@/lib/test-score";
@@ -28,16 +29,24 @@ export function TestQuestionView({
   review?: boolean;
 }) {
   const math = q.section === "math";
-  const twoColumn = !math && Boolean(q.passage || q.table || q.figure);
+  // Text, tables and pictures on the left, the question on the right (math has no passages).
+  const twoColumn = Boolean(q.table || q.figure || (!math && q.passage));
+  // Highlight key: the question key repeats across tests ("rw1-01"), so add a bit of its text.
+  const hk = `test:${q.key}:${(q.passage ?? q.prompt).slice(0, 32)}`;
   const correct = isTestCorrect(q, response);
 
   const stimulus = (
     <div className="space-y-5">
-      {q.passage && (
-        <div className="text-base leading-[1.75]">
-          <RichText text={q.passage} math={math} />
-        </div>
-      )}
+      {q.passage &&
+        (math ? (
+          <div className="text-base leading-[1.75]">
+            <RichText text={q.passage} math />
+          </div>
+        ) : (
+          <Highlightable hkey={`${hk}:passage`} className="text-base leading-[1.75]">
+            <RichText text={q.passage} math={false} />
+          </Highlightable>
+        ))}
       {q.table && <DataTable table={q.table} math={math} />}
       {q.figure && <Figure src={q.figure.src} />}
     </div>
@@ -45,15 +54,20 @@ export function TestQuestionView({
 
   const answerArea = (
     <div className="space-y-5">
-      {math && (q.table || q.figure) && stimulus}
-      {math && q.passage && (
+      {math && !twoColumn && q.passage && (
         <div className="text-base leading-relaxed">
           <RichText text={q.passage} math />
         </div>
       )}
-      <div className="text-base leading-relaxed font-medium">
-        <RichText text={q.prompt} math={math} />
-      </div>
+      {math ? (
+        <div className="text-base leading-relaxed font-medium">
+          <RichText text={q.prompt} math />
+        </div>
+      ) : (
+        <Highlightable hkey={`${hk}:prompt`} className="text-base leading-relaxed font-medium">
+          <RichText text={q.prompt} math={false} />
+        </Highlightable>
+      )}
 
       {q.type === "mcq" ? (
         <div className="space-y-2.5">
@@ -129,7 +143,6 @@ export function TestQuestionView({
     );
   return (
     <div className="rounded-2xl border border-line bg-surface p-4 sm:p-6 md:p-8">
-      {!math && q.passage && <div className="mb-6">{stimulus}</div>}
       {answerArea}
     </div>
   );

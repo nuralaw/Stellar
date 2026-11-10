@@ -34,8 +34,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <InlineScript html={THEME_INIT_SCRIPT + SIDEBAR_INIT_SCRIPT} />
         <Sidebar />
         {/* Desktop theme switch, top-right corner (mobile one lives in the top bar) */}
-        <ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid" />
-        <div className="flex min-h-screen flex-col transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px]">
+        <ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />
+        <div className="flex min-h-screen flex-col transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px] focus-mode:pl-0!">
           <main className="flex-1">{children}</main>
           <SiteFooter />
         </div>

@@ -5,6 +5,7 @@ import { RichText } from "@/components/RichText";
 import { isCorrect } from "@/lib/answers";
 import type { ChoiceLetter, Difficulty, Question } from "@/lib/types";
 import { I, Icon } from "./icons";
+import { Highlightable } from "./Highlighter";
 
 const LETTERS: ChoiceLetter[] = ["A", "B", "C", "D"];
 
@@ -167,6 +168,7 @@ export function QuestionCard({
   onPrev,
   nextLabel,
   timeSpent,
+  leftActions,
 }: {
   q: Question;
   saved?: { response: string };
@@ -177,6 +179,8 @@ export function QuestionCard({
   nextLabel: string;
   /** Seconds spent, shown in the feedback once answered. */
   timeSpent?: number;
+  /** Extra buttons in the bottom-left of the action bar (e.g. Shuffle). */
+  leftActions?: React.ReactNode;
 }) {
   const [response, setResponse] = useState(saved?.response ?? "");
   const [checked, setChecked] = useState(Boolean(saved));
@@ -184,8 +188,9 @@ export function QuestionCard({
   const [showSource, setShowSource] = useState(false);
   const math = q.section === "math";
   const correct = checked && isCorrect(q, response);
-  // R&W: passage / table / graph on the left, question on the right (like the real test).
-  const twoColumn = !math && Boolean(q.passage || q.table || q.figure);
+  // Text, tables and pictures on the left, the question on the right (like the official questions).
+  // Math has no passages; a table or figure goes left.
+  const twoColumn = Boolean(q.table || q.figure || (!math && q.passage));
 
   const check = () => {
     if (checked || !response.trim()) return;
@@ -238,11 +243,17 @@ export function QuestionCard({
 
   const stimulus = (
     <div className="space-y-5">
-      {q.passage && (
-        <div className="text-base leading-[1.75]">
-          <RichText text={q.passage} math={math} />
-        </div>
-      )}
+      {q.passage &&
+        (math ? (
+          <div className="text-base leading-[1.75]">
+            <RichText text={q.passage} math />
+          </div>
+        ) : (
+          // R&W: select text to highlight / underline it, like Bluebook.
+          <Highlightable hkey={`${q.id}:passage`} className="text-base leading-[1.75]">
+            <RichText text={q.passage} math={false} />
+          </Highlightable>
+        ))}
       {q.table && <DataTable table={q.table} math={math} />}
       {q.figure && <Figure {...q.figure} />}
     </div>
@@ -253,10 +264,15 @@ export function QuestionCard({
 
   const answerArea = (
     <div className="space-y-5">
-      {math && (q.table || q.figure) && stimulus}
-      <div className="text-base leading-relaxed font-medium">
-        <RichText text={q.prompt} math={math} />
-      </div>
+      {math ? (
+        <div className="text-base leading-relaxed font-medium">
+          <RichText text={q.prompt} math />
+        </div>
+      ) : (
+        <Highlightable hkey={`${q.id}:prompt`} className="text-base leading-relaxed font-medium">
+          <RichText text={q.prompt} math={false} />
+        </Highlightable>
+      )}
 
       {q.type === "mcq" ? (
         <div className="space-y-2.5">
@@ -335,6 +351,7 @@ export function QuestionCard({
   const actions = (
     <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
       <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
+        {leftActions}
         <button type="button" onClick={onPrev} disabled={!onPrev} className={btnGhost} aria-label="Previous question">
           <Icon d={I.chevronL} className="h-4 w-4" />
           <span className="hidden sm:inline">Back</span>
@@ -376,7 +393,6 @@ export function QuestionCard({
   return (
     <div>
       <div className="rounded-2xl border border-line bg-surface p-4 sm:p-6 md:p-8">
-        {!math && q.passage && <div className="mb-6">{stimulus}</div>}
         {answerArea}
       </div>
       {actions}

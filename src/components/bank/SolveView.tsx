@@ -11,7 +11,8 @@ import { useFocusMode } from "@/lib/focus";
 import { SyncNudge } from "@/components/SyncNudge";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { ReportButton } from "./ReportButton";
-import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
+import { cachedQuestion, fetchQuestions, shuffle, skillName, type BankItem } from "./data";
+import { exitFullscreen, toggleFullscreen, useCanFullscreen, useIsFullscreen } from "@/lib/fullscreen";
 import { I, Icon } from "./icons";
 
 export interface Run {
@@ -265,6 +266,19 @@ export function SolveView({
 }) {
   useFocusMode();
   const [pos, setPos] = useState(run.start);
+  // Question order; "Shuffle" reorders the questions after the current one.
+  const [ids, setIds] = useState(run.ids);
+  const [shuffled, setShuffled] = useState(false);
+  const fullscreen = useIsFullscreen();
+  const canFullscreen = useCanFullscreen();
+  // Leave browser full screen when practice closes, but not when the next set replaces this one
+  // ("Retry mistakes"): by then the new set has marked the page as focus mode again.
+  useEffect(
+    () => () => {
+      setTimeout(() => !("focus" in document.documentElement.dataset) && exitFullscreen(), 0);
+    },
+    [],
+  );
   const [session, setSession] = useState<Record<string, Answer>>({});
   const [finished, setFinished] = useState(false);
   const [, setLoaded] = useState(0); // bump to re-render when questions arrive
@@ -282,8 +296,8 @@ export function SolveView({
   // Results from before this session, so "previously answered" doesn't change as you answer now.
   const [prior] = useState(() => new Map(results));
 
-  const total = run.ids.length;
-  const id = run.ids[pos];
+  const total = ids.length;
+  const id = ids[pos];
   const q = cachedQuestion(id);
   const meta = run.items.get(id);
   const answer = session[id];
@@ -296,14 +310,14 @@ export function SolveView({
   // Load the current question and prefetch the next few.
   useEffect(() => {
     let alive = true;
-    fetchQuestions(run.ids.slice(pos, pos + 5)).then(
+    fetchQuestions(ids.slice(pos, pos + 5)).then(
       () => alive && setLoaded((n) => n + 1),
       (e: Error) => alive && setError(e.message),
     );
     return () => {
       alive = false;
     };
-  }, [pos, run.ids, retry]);
+  }, [pos, ids, retry]);
 
   /** Adds the time on the current question (if still unanswered) and restarts the clock. */
   const flushTime = () => {
@@ -342,14 +356,22 @@ export function SolveView({
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  if (finished) return <Summary run={run} session={session} onReview={go} onRestart={onRestart} onExit={onExit} />;
+  if (finished) return <Summary run={{ ...run, ids }} session={session} onReview={go} onRestart={onRestart} onExit={onExit} />;
 
   const answeredCount = Object.keys(session).length;
   const correctCount = Object.values(session).filter((a) => a.correct).length;
   const marked = bookmarks.has(id);
   const was = prior.get(id);
   const secs = answer ? answer.secs : Math.floor(((spent[id] ?? 0) + Math.max(0, now - enteredAt)) / 1000);
-  const wide = meta?.section !== "math";
+  // Two columns (text / table / picture on the left) need the wide layout.
+  const wide = q ? Boolean(q.table || q.figure || (q.section !== "math" && q.passage)) : meta?.section !== "math";
+  const rest = ids.length - pos - 1;
+  const toggleShuffle = () => {
+    const done = new Set(ids.slice(0, pos + 1));
+    const left = run.ids.filter((x) => !done.has(x));
+    setIds([...ids.slice(0, pos + 1), ...(shuffled ? left : shuffle(left))]);
+    setShuffled((v) => !v);
+  };
   const showCalc = hasMath && calcOpen;
   const toggleCalc = () => {
     setCalcUsed(true);
@@ -359,7 +381,7 @@ export function SolveView({
   return (
     <section className={`mx-auto px-4 md:px-8 ${showCalc ? "max-w-[1600px]" : wide ? "max-w-7xl" : "max-w-4xl"}`}>
       {/* Toolbar */}
-      <div className="sticky top-14 z-20 -mx-4 border-b border-line bg-bg/90 px-4 pt-3 backdrop-blur md:-mx-8 md:px-8 lg:top-0 lg:pr-20">
+      <div className="sticky top-0 z-20 -mx-4 border-b border-line bg-bg/90 px-4 pt-3 backdrop-blur md:-mx-8 md:px-8">
         <div className="flex items-center justify-between gap-2 sm:gap-3">
           <div className="flex min-w-0 items-center gap-2">
             <button type="button" onClick={onExit} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
@@ -404,7 +426,19 @@ export function SolveView({
             >
               <Icon d={I.star} className="h-4.5 w-4.5" filled={marked} />
             </button>
-            <Navigator ids={run.ids} session={session} bookmarks={bookmarks} pos={pos} go={go} />
+            <Navigator ids={ids} session={session} bookmarks={bookmarks} pos={pos} go={go} />
+            {canFullscreen && (
+              <button
+                type="button"
+                onClick={toggleFullscreen}
+                aria-pressed={fullscreen}
+                aria-label={fullscreen ? "Exit full screen" : "Full screen"}
+                title={fullscreen ? "Exit full screen (Esc)" : "Full screen"}
+                className={`${iconBtn} hidden text-muted sm:grid`}
+              >
+                <Icon d={fullscreen ? I.shrink : I.expand} className="h-4 w-4" />
+              </button>
+            )}
             <button type="button" onClick={finish} className="ml-0.5 h-9 rounded-lg bg-ink px-3 text-sm font-semibold text-bg transition-opacity hover:opacity-85 sm:px-3.5">
               Finish
             </button>
@@ -415,7 +449,7 @@ export function SolveView({
         <div className="mt-3 pb-3">
           {total <= 60 ? (
             <div className="flex gap-1" aria-hidden="true">
-              {run.ids.map((x, i) => {
+              {ids.map((x, i) => {
                 const a = session[x];
                 return (
                   <button
@@ -508,6 +542,23 @@ export function SolveView({
                 nextLabel={pos + 1 < total ? "Next" : "See results"}
                 onNext={next}
                 onPrev={pos > 0 ? () => go(pos - 1) : undefined}
+                leftActions={
+                  total > 2 && (
+                    <button
+                      type="button"
+                      onClick={toggleShuffle}
+                      disabled={!shuffled && rest < 2}
+                      aria-pressed={shuffled}
+                      title={shuffled ? "Back to the original order" : "Shuffle the questions after this one"}
+                      className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-3 text-sm font-semibold transition-colors disabled:opacity-40 ${
+                        shuffled ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink"
+                      }`}
+                    >
+                      <Icon d={I.shuffle} className="h-4 w-4" />
+                      <span className="hidden sm:inline">{shuffled ? "Shuffled" : "Shuffle"}</span>
+                    </button>
+                  )
+                }
                 onAnswered={(ok, response) => {
                   const t = Date.now();
                   const s = Math.round(((spent[q.id] ?? 0) + (t - enteredAt)) / 1000);
@@ -519,6 +570,7 @@ export function SolveView({
           </div>
           <p className="mt-2 mb-6 hidden text-center text-xs text-muted md:block">
             <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
+            {meta?.section === "rw" && <> · select text to highlight</>}
           </p>
         </div>
       </CalculatorDock>

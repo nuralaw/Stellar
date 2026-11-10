@@ -154,3 +154,31 @@ textarea,
 [aria-disabled="true"] {
   cursor: not-allowed;
 }
+
+/* Reading & Writing highlights (components/bank/Highlighter.tsx, CSS Custom Highlight API). */
+::highlight(hl-yellow) {
+  background-color: rgb(253 224 71 / 0.6);
+}
+::highlight(hl-blue) {
+  background-color: rgb(125 211 252 / 0.55);
+}
+::highlight(hl-pink) {
+  background-color: rgb(249 168 212 / 0.6);
+}
+::highlight(hl-underline) {
+  text-decoration: underline 2px var(--primary);
+  text-underline-offset: 3px;
+}
+/* Dark theme: brighter marks with dark text so highlighted words stay readable. */
+:root[data-theme="dark"] ::highlight(hl-yellow) {
+  background-color: rgb(253 224 71 / 0.9);
+  color: #111;
+}
+:root[data-theme="dark"] ::highlight(hl-blue) {
+  background-color: rgb(125 211 252 / 0.9);
+  color: #111;
+}
+:root[data-theme="dark"] ::highlight(hl-pink) {
+  background-color: rgb(249 168 212 / 0.9);
+  color: #111;
+}
