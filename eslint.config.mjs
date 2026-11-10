@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Scratch files of question-bank solvers
+    "content/bank/.work/**",
   ]),
 ]);
 

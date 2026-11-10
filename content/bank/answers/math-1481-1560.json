@@ -1,0 +1,916 @@
+[
+  {
+    "id": "m-1481",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bar for activity 3 reaches a height between the 35 and 40 grid lines, just below 40, so 39 students chose it. 48 is the height of the bar for activity 5, not activity 3."
+  },
+  {
+    "id": "m-1482",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Ordered, the 7 percents are 19.5, 21.9, 25.9, 27.9, 30.1, 35.5, 36.4, so their median is the 4th value, 27.9%. The difference from the 50-state median is 27.9 - 26.95 = 0.95%. Choice D comes from using the mean or the range instead of the median."
+  },
+  {
+    "id": "m-1483",
+    "answer": [
+      "47.25",
+      "189/4"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "z is 55% less than 50, so z = 50(0.45) = 22.5. w is 110% greater than z, so w = 22.5(1 + 1.10) = 22.5(2.1) = 47.25. Don't multiply by 1.10 alone; 110% greater means 210% of z."
+  },
+  {
+    "id": "m-1484",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. Doubling the sample size makes the margin of error less than 2.13%. The other choices all describe a larger margin of error, which would happen with a smaller sample."
+  },
+  {
+    "id": "m-1485",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The August bar reaches 50 and the July bar reaches 40, so 50 - 40 = 10 more students were born in August. Choice B is just the August total, not the difference."
+  },
+  {
+    "id": "m-1486",
+    "answer": [
+      "450"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "If 432 is 96% of n, then 0.96n = 432, so n = 432/0.96 = 450. Check: 0.96(450) = 432."
+  },
+  {
+    "id": "m-1487",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find 55 on the horizontal axis (halfway between 50 and 60) and go up to the curve; it is a little above 200 feet, so 210 is the best estimate. Choices A and B are far too small, and 250 is reached closer to 60 mph."
+  },
+  {
+    "id": "m-1488",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points fall from left to right, so the slope is negative, and the trend starts near y = 10 when x = 0, so the y-intercept is about 10.1. That gives y = -1.9x + 10.1. Choice A has a negative y-intercept, which doesn't match the data near the y-axis."
+  },
+  {
+    "id": "m-1489",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With 33 fish, the median is the 17th weight in order. The 10 lightest fish are in tank A, so positions 11 through 21 are the tank B fish, which weigh from 5 to 13 ounces. So the median must be between 5 and 13, and only 8 works. 4.5 is a tank A weight and 13.5 and 15 are tank C weights."
+  },
+  {
+    "id": "m-1490",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "There are about 26(1,800) = 46,800 eighth graders in the state. If 34.6% have at least two siblings, then 100% - 34.6% = 65.4% have fewer than two, and 0.654(46,800) ≈ 30,607, about 30,600. Choice A estimates the students with at least two siblings instead."
+  },
+  {
+    "id": "m-1491",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes through about (0, 0) and (8, 14.5), so its slope is about 14.5/8 ≈ 1.8. A slope of 0.7 would rise much less steeply, and 2.6 would rise more steeply than the line shown."
+  },
+  {
+    "id": "m-1492",
+    "answer": [
+      "79"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let the 2014 count be N. Then the 2018 count is 1.27N, and N as a percent of 1.27N is (1/1.27)(100) ≈ 78.74%. So p ≈ 79. It is not 27 or 73; dividing by 1.27 is the key step."
+  },
+  {
+    "id": "m-1493",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bars show 4, 7, 1, 3, and 6 defective bulbs. Their sum is 21, so the mean is 21/5 = 4.2. The 500 bulbs per trial does not affect this calculation."
+  },
+  {
+    "id": "m-1494",
+    "answer": [
+      "161"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "40% greater than 115 is 115(1.40) = 161. Adding just 40 would give 155, which is not a 40% increase."
+  },
+  {
+    "id": "m-1495",
+    "answer": [
+      "52"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "p% of 25 is 13, so (p/100)(25) = 13, giving p = 1300/25 = 52. Check: 52% of 25 = 13."
+  },
+  {
+    "id": "m-1496",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A 20% reduction leaves 80% of the price: 0.80($50) = $40. The discount itself is $10, so the price is not $12, $30, or $36."
+  },
+  {
+    "id": "m-1497",
+    "answer": [
+      "35728"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply by 1,760 yards per mile: 20.3(1,760) = 35,728 yards per hour. Dividing by 1,760 would give a tiny number, which can't be right since yards are smaller than miles."
+  },
+  {
+    "id": "m-1498",
+    "answer": [
+      "1/5",
+      ".2",
+      "0.2"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The mean is the sum divided by 5, so for any list of 5 numbers the mean is 1/5 of the sum. Here the sum is 28 and the mean is 5.6, and 5.6/28 = 1/5."
+  },
+  {
+    "id": "m-1499",
+    "answer": [
+      "27"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "6% of 450 is 0.06(450) = 27 black tiles."
+  },
+  {
+    "id": "m-1500",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The increase is 3.49t - t = 2.49t, and 2.49t/t = 2.49 = 249%. Choice D, 349%, is August's hours as a percent of July's, not the percent increase."
+  },
+  {
+    "id": "m-1501",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line of best fit slopes downward, so locations at higher elevations tend to have lower temperatures. Choice C says the opposite direction for the same association, which would mean a positive relationship."
+  },
+  {
+    "id": "m-1502",
+    "answer": [
+      "75"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "10% of 750 is 0.10(750) = 75 cherry tomatoes."
+  },
+  {
+    "id": "m-1503",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Participants at least 10 years old are in the 10–19 and 20+ columns: 30 + 30 = 60 people. Of these, group A has 17 + 8 = 25. So the probability is 25/60 = 5/12. Choice A uses 25/90, which ignores the given condition."
+  },
+  {
+    "id": "m-1504",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each time x increases by 1, f(x) increases by exactly 1 (16, 17, 18, 19). A constant additive change means the function is linear, and since the values go up, it is increasing. An exponential function would change by a constant factor, not a constant amount."
+  },
+  {
+    "id": "m-1505",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the sample, 16/20 = 80% are enrolled in exactly three courses. Applying that to all employees gives 0.80(400) = 320. Choice D, 384, is 400 - 16, which doesn't use the sample proportion."
+  },
+  {
+    "id": "m-1506",
+    "answer": [
+      "4.06"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The retail price is 290% of $7.00: 2.9(7) = $20.30. 80% off leaves 20% of that: 0.20(20.30) = $4.06. Don't take 80% of the retail price; that is the discount amount, not the new price."
+  },
+  {
+    "id": "m-1507",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The column above 16 has 6 dots, so 6 sea stars had a diameter of 16 inches. Choice A confuses the diameter value with the count."
+  },
+  {
+    "id": "m-1508",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data rise from about 200 (thousand dollars) at x = 1 to about 300 at x = 2, so the slope is about 100 and the y-intercept about 100: y = 100x + 100. Choice D has no intercept, so it would predict only 100 at x = 1, far below the data."
+  },
+  {
+    "id": "m-1509",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "29 out of every 100 beads are defective, so the probability is 29/100. Choice B, 1/29, flips the idea, and 29/10 is greater than 1, which is impossible for a probability.",
+    "fix": {
+      "choices": {
+        "A": "1/2900"
+      }
+    }
+  },
+  {
+    "id": "m-1510",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "One square meter equals 3.28^2 ≈ 10.76 square feet, so 250 square feet per hour ≈ 250/10.76 ≈ 23.24 square meters per hour. Dividing by 60 minutes gives about 0.39 square meters per minute. Choice D stops at square meters per hour."
+  },
+  {
+    "id": "m-1511",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number of blue marbles is 0.35(60) = 21. Check: 21/60 = 0.35."
+  },
+  {
+    "id": "m-1512",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line goes from about (23, 10) down to about (35, 0), a slope of about -10/12. At x = 32, the predicted y is about 10 - 9(10/12) ≈ 2.5, closest to 2.4. The line at x = 32 is only a little above 2, so 1.5 and 3.3 are too far off."
+  },
+  {
+    "id": "m-1513",
+    "answer": [
+      "576"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "0.08% is 0.0008, so b = 0.1152/0.0008 = 144. Since b is 25% of c, c = 144/0.25 = 576. A common mistake is using 0.08 instead of 0.0008 for 0.08%."
+  },
+  {
+    "id": "m-1514",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide feet by 3 to get yards: (3/20)/3 = 1/20 yard per second. Choice B multiplies by 3 instead of dividing."
+  },
+  {
+    "id": "m-1515",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 12.5% increase means the February count is 1.125 times the January count, so January = 99/1.125 = 88. Choice B subtracts 12.5% of 99 from 99, which is not the same."
+  },
+  {
+    "id": "m-1516",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "4% of 350 is 0.04(350) = 14 balls."
+  },
+  {
+    "id": "m-1517",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "2 of the 7 houses are blue, so the probability is 2/7. Choice C, 5/7, is the probability of a house that is not blue."
+  },
+  {
+    "id": "m-1518",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The margin of error gives a plausible range of 0.49 - 0.04 = 0.45 to 0.49 + 0.04 = 0.53. Choice C is wrong because a sample estimate never pins down the exact population value."
+  },
+  {
+    "id": "m-1519",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the sample, 20/80 = 1/4 bought fruit, so the best estimate is (1/4)(1,500) = 375 customers. Choice B says this number is exact, but a random sample only gives an estimate."
+  },
+  {
+    "id": "m-1520",
+    "answer": [
+      "2.6"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Andrew's masses sum to 16.8, so his mean is 16.8/6 = 2.8 kg, and Maria's mean must be 2.9 kg, a total of 6(2.9) = 17.4. Her other five masses sum to 14.8, so x = 17.4 - 14.8 = 2.6.",
+    "fix": {
+      "table": {
+        "headers": [
+          "",
+          "Masses (kilograms)",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Andrew",
+            "2.4",
+            "2.5",
+            "3.6",
+            "3.1",
+            "2.5",
+            "2.7"
+          ],
+          [
+            "Maria",
+            "x",
+            "3.1",
+            "2.7",
+            "2.9",
+            "3.3",
+            "2.8"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "m-1521",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The margin of error of 3 gives a plausible interval of 37 - 3 = 34 to 37 + 3 = 40 for the population mean. Choices A and B claim a direction the data cannot support."
+  },
+  {
+    "id": "m-1522",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "10% of 370 is 0.10(370) = 37. Choice C is 370 minus 37, the amount left after a 10% decrease."
+  },
+  {
+    "id": "m-1523",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line crosses about (0, 2.45) and (10, 4.65), so its slope is about 2.2/10 = 0.22. The line rises, ruling out the negative choices, and 2.45 is roughly the y-intercept, not the slope."
+  },
+  {
+    "id": "m-1524",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Sorted, the temperatures are 80, 81, 81, 81, 82. The median is 81, the mode is 81, and the mean is 405/5 = 81. The range is 82 - 80 = 2, so the range is the one not equal to 81."
+  },
+  {
+    "id": "m-1525",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angel Cruz leads by 483 - 320 = 163 votes in the poll of 803. The election has 6,424/803 = 8 times as many voters, so the expected margin is 163(8) = 1,304 votes. Choice A is only the poll's margin."
+  },
+  {
+    "id": "m-1526",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The plausible range is $4.23 ± $0.08, or $4.15 to $4.31. Choice B describes values outside this range, which are the least plausible."
+  },
+  {
+    "id": "m-1527",
+    "answer": [
+      "6"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bar above data value 2 reaches a height of 6 on the frequency axis, so the frequency is 6."
+  },
+  {
+    "id": "m-1528",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 180 female penguins, and 1/3 of 180 is 60. The female counts are 59, 27, 54, and 40, so Chinstrap (59) is closest to 60. Choice C, Gentoo, has the largest total but only 54 females."
+  },
+  {
+    "id": "m-1529",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Foothill's numbers (70, 75, 76, 80, 87) have mean 388/5 = 77.6 and median 76. Valley's (44, 54, 65, 76, 82) have mean 321/5 = 64.2 and median 65. Foothill is greater for both, so I and II are true.",
+    "fix": {
+      "prompt": "Number of High School Students Who\nCompleted Summer Internships\nThe table above shows the number of students from two different high schools who completed summer internships in each of five years. No student attended both schools. Which of the following statements are true about the number of students who completed summer internships for the 5 years shown?\nI. The mean number from Foothill High School is greater than the mean number from Valley High School.\nII. The median number from Foothill High School is greater than the median number from Valley High School.",
+      "table": {
+        "headers": [
+          "High school",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "rows": [
+          [
+            "Foothill",
+            "87",
+            "80",
+            "75",
+            "76",
+            "70"
+          ],
+          [
+            "Valley",
+            "44",
+            "54",
+            "65",
+            "76",
+            "82"
+          ],
+          [
+            "Total",
+            "131",
+            "134",
+            "140",
+            "152",
+            "152"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "m-1530",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only -13 is negative, so 1 of the 3 numbers is negative and the probability is 1/3. Choice C counts the positive numbers instead."
+  },
+  {
+    "id": "m-1531",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "201% of x is 2.01x, so f(x) = 2.01x. This is a linear function with positive slope 2.01, so it is increasing linear. It is not exponential because x is not in an exponent."
+  },
+  {
+    "id": "m-1532",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "8 of the 20 buttons are white, so the probability is 8/20. Choice C is the probability of a brown button."
+  },
+  {
+    "id": "m-1533",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of t = 4u by 2: 2t = 8u. Choice B just replaces t with u, ignoring the factor of 4."
+  },
+  {
+    "id": "m-1534",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Account A earns 6% of $500 = $30 in the first year, and since its balance keeps growing, its yearly interest keeps growing. Account B always earns $25 per year. So A always earns more per year. B has more money invested, but that doesn't matter for the yearly earnings here."
+  },
+  {
+    "id": "m-1535",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use a weighted mean: (240(88) + 120(94))/360 = (21,120 + 11,280)/360 = 32,400/360 = 90 inches. Choice C, 91, is the simple average of 88 and 94, which ignores that there are twice as many Muskeget seals."
+  },
+  {
+    "id": "m-1536",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each year the value is multiplied by 0.80, so after 2 years it is 800(0.80)^2 = 800(0.64) = $512. Choice A subtracts 20% of $800 twice, which treats the loss as linear."
+  },
+  {
+    "id": "m-1537",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "20% of $25.00 is 0.20(25) = $5.00."
+  },
+  {
+    "id": "m-1538",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The increase is 90 - 9 = 81 coins, and 81/9 = 9 = 900%. Choice A, 10%, comes from 9/90, and the new amount being 10 times the old is a 900% increase, not 1,000%."
+  },
+  {
+    "id": "m-1539",
+    "answer": [
+      "1.8",
+      "1.80"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "80% less than $11.70 is 0.20(11.70) = $2.34. If the cost is c, then 1.30c = 2.34, so c = 2.34/1.30 = 1.80. Don't take 70% of the sale price; 30% greater means divide by 1.30."
+  },
+  {
+    "id": "m-1540",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each quart is 4 cups, so 83 quarts = 83(4) = 332 cups. Choice A divides by 4 instead of multiplying."
+  },
+  {
+    "id": "m-1541",
+    "answer": [
+      "3540"
+    ],
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the sample, 202 + 34 = 236 of 400 voters plan to vote for Candidate A. Scaling to the town: (236/400)(6,000) = 3,540."
+  },
+  {
+    "id": "m-1542",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "20% greater than 60 is 60(1.20) = 72. Choice A, 50, is the number that 60 is 20% greater than."
+  },
+  {
+    "id": "m-1543",
+    "answer": [
+      "240"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "80% of 300 is 0.80(300) = 240 seeds."
+  },
+  {
+    "id": "m-1544",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data fall from about 22°C at 15 meters to about 13°C at 70 meters, a slope of about (13 - 22)/(70 - 15) ≈ -0.16, closest to -0.17. A slope like -2.17 would drop over 100 degrees across the depths shown."
+  },
+  {
+    "id": "m-1545",
+    "answer": [
+      "13/50",
+      ".26",
+      "0.26"
+    ],
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 13 + 37 = 50 pens, and 13 are red, so the probability is 13/50 = 0.26. Using 13/37 compares red to blue instead of red to all pens."
+  },
+  {
+    "id": "m-1546",
+    "answer": [
+      "0.0014",
+      ".0014",
+      "7/5000"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "0.001% means 0.001/100 = 0.00001. So the maximum is 0.00001(140) = 0.0014 grams. Using 0.001 instead of 0.00001 gives 0.14, which is 100 times too large."
+  },
+  {
+    "id": "m-1547",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "9 of the 50 children chose vegetarian, so the probability is 9/50. Choice A uses 100 as the total instead of 50."
+  },
+  {
+    "id": "m-1548",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Human Resources has 4 + 2 = 6 people, and 2 of them have a master's degree, so the probability is 2/6 = 1/3. Choice A uses all 15 people as the denominator, ignoring the condition."
+  },
+  {
+    "id": "m-1549",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At x = 4,000 feet, the line of best fit is at about 35°F. 47 is roughly where the line meets the y-axis, at sea level."
+  },
+  {
+    "id": "m-1550",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data decrease from about 10 near x = 0 to about 1 or 2 near x = 9 or 10, so the slope is about -0.9 and the y-intercept about 9.4: y = 9.4 - 0.9x. Choice B has the intercept and slope swapped, which would be far too steep."
+  },
+  {
+    "id": "m-1551",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The fraction of items that are green, rectangular, and metal is 0.37(0.37)(0.42) ≈ 0.0575, or 5.75%. So the items that are not all three make up 100% - 5.75% = 94.25%. Choice D treats 1.16% as the excluded group, but 0.37(0.37)(0.42) is 5.75%, not 1.16%."
+  },
+  {
+    "id": "m-1552",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The trees were randomly selected from 17-year-old baobab trees in this habitat, so the results can be generalized to all 17-year-old baobab trees in this habitat. Choice C goes too far because the sample came only from this habitat, not all of South Africa."
+  },
+  {
+    "id": "m-1553",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The ratio of yellow to blue is 3:2, so yellow = 1.5 times blue. With 5 ounces of blue, she needs 1.5(5) = 7.5 ounces of yellow. Choice C would give only 4.5 ounces, based on the wrong batch."
+  },
+  {
+    "id": "m-1554",
+    "answer": [
+      "1"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Group A's 9 scores in order are 2, 3, 4, 4, 5, 6, 6, 6, 9, so its median (5th) is 5. Group B's 11 scores are 5, 5, 5, 5, 6, 6, 8, 8, 9, 10, 10, so its median (6th) is 6. The difference is 6 - 5 = 1.",
+    "fix": {
+      "table": {
+        "headers": [
+          "Score",
+          "Score Frequencies",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "Group A",
+            "Group B"
+          ],
+          [
+            "2",
+            "1",
+            "0"
+          ],
+          [
+            "3",
+            "1",
+            "0"
+          ],
+          [
+            "4",
+            "2",
+            "0"
+          ],
+          [
+            "5",
+            "1",
+            "4"
+          ],
+          [
+            "6",
+            "3",
+            "2"
+          ],
+          [
+            "7",
+            "0",
+            "0"
+          ],
+          [
+            "8",
+            "0",
+            "2"
+          ],
+          [
+            "9",
+            "1",
+            "1"
+          ],
+          [
+            "10",
+            "0",
+            "2"
+          ],
+          [
+            "Total",
+            "9",
+            "11"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "m-1555",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes through about (0, 14) and (13, 0), so its slope is about -14/13 ≈ -1.1. The line falls, so the positive choices are out, and -3.3 would be much steeper."
+  },
+  {
+    "id": "m-1556",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line goes from about (10, 18) to about (50, 75), a slope of about 57/40 ≈ 1.4 grams of fat per gram of protein, closest to 1.5. A slope of 2.0 or more would rise much faster than the line shown."
+  },
+  {
+    "id": "m-1557",
+    "answer": [
+      "567"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "a/b = 63/17, and 153 = 17(9), so a = 63(9) = 567. Check: 567/153 = 63/17."
+  },
+  {
+    "id": "m-1558",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The volume of the cube is 0.60^3 = 0.216 cubic meters. Mass = density times volume = 813(0.216) ≈ 175.6, about 176 kg. Choice B uses 0.60 instead of 0.60^3.",
+    "fix": {
+      "prompt": "The density of a certain solid substance is 813 kilograms per cubic meter. A sample of this substance is in the shape of a cube, where each edge has a length of 0.60 meters. To the nearest whole number, what is the mass, in kilograms, of this sample?"
+    }
+  },
+  {
+    "id": "m-1559",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With 7 values in order, the median is the 4th, so b = 29. The mean is 36, so the sum is 252: a + 26 + 29 + 29 + 31 + 47 + c = 252, giving a + c = 90. The range is c - a = 72. Adding the two equations gives 2c = 162, so c = 81."
+  },
+  {
+    "id": "m-1560",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line goes from about (0, 0.25) to (5, 2.45), so its slope is about 2.2/5 = 0.44. The line rises, ruling out negative slopes, and 2.27 is about its y-value at x = 5, not the slope."
+  }
+]

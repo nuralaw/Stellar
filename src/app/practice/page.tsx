@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Practice } from "@/components/practice/Practice";
-import { getCounts } from "@/lib/bank";
+import { QuestionBank } from "@/components/bank/QuestionBank";
 
 export const metadata: Metadata = {
-  title: "Practice",
-  description: "Free Digital SAT practice questions for Math and Reading & Writing, by topic and difficulty, with step-by-step explanations.",
+  title: "Question Bank",
+  description:
+    "Free Digital SAT question bank: Math and Reading & Writing questions sorted by topic, skill, and difficulty, with step-by-step explanations.",
 };
 
 export default function Page() {
-  const counts = getCounts();
   return (
-    <Suspense fallback={<div className="mx-auto max-w-3xl px-4 py-14 text-muted md:px-8">Loading practice…</div>}>
-      <Practice counts={counts} />
+    <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-10 text-muted md:px-8">Loading question bank…</div>}>
+      <QuestionBank />
     </Suspense>
   );
 }

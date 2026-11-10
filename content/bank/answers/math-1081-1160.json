@@ -1,0 +1,768 @@
+[
+  {
+    "id": "m-1081",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number of cups after d days is 4,500 - 70d. Setting 4,500 - 70d = 1,700 gives 70d = 2,800, so d = 40. Choice A (20) would only use 1,400 cups, leaving 3,100."
+  },
+  {
+    "id": "m-1082",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A line with slope m and y-intercept b is f(x) = mx + b. Here m = 3/4 and f(0) = 3 means b = 3, so f(x) = (3/4)x + 3. Choice A has the wrong sign on the intercept: it gives f(0) = -3."
+  },
+  {
+    "id": "m-1083",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 9x + 1 into the first equation: 8x + 9x + 1 = 5, so 17x = 4 and x = 4/17. Check: y = 36/17 + 17/17 = 53/17, and 32/17 + 53/17 = 85/17 = 5. Choice C comes from an arithmetic slip with the constant."
+  },
+  {
+    "id": "m-1084",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope is the change in total charge for each additional hour of work, which is the hourly rate. The onetime fee (choice B) is the y-intercept, where the graph starts at x = 0, not the slope."
+  },
+  {
+    "id": "m-1085",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 53% increase multiplies the advanced swimmers by 1.53, giving 1.53a, and a 44% increase gives 1.44b for intermediate swimmers. Their sum equals the 2010 total of 35 increased by 49%, which is 35(1.49). Choice D swaps the two growth factors."
+  },
+  {
+    "id": "m-1086",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the given equation as -6x + y = 18. A system has no solution when the lines are parallel but different: same x and y coefficients, different constant. -6x + y = 22 fits. Choice A is the same line, so it would give infinitely many solutions."
+  },
+  {
+    "id": "m-1087",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find x = 6 on the pressure axis and go up to the line; it meets the line at a temperature of 700 kelvins. Choice D (760) reads a value between grid lines that the graph doesn't show at x = 6."
+  },
+  {
+    "id": "m-1088",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let n be novels and m magazines: n + m = 11 and 4n + m = 20. Subtracting gives 3n = 9, so n = 3 (and m = 8; check 12 + 8 = 20). Choice D (5) would cost 5·4 + 6 = $26."
+  },
+  {
+    "id": "m-1089",
+    "answer": [
+      "5"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 6x from both sides to get k = 5. If k = 5 the equation is true for every x, so it has infinitely many solutions; any other k makes it false for every x (no solutions)."
+  },
+  {
+    "id": "m-1090",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each draw is worth 1 point, giving d points, and each win is worth 3 points, giving 3w points. The total is d + 3w = 41. Choice B attaches the 3 to draws instead of wins."
+  },
+  {
+    "id": "m-1091",
+    "answer": [
+      "189/5",
+      "37.8"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Then 0 = -(5y)/9 + 21, so (5y)/9 = 21 and y = 21·9/5 = 189/5, or 37.8."
+  },
+  {
+    "id": "m-1092",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = x - 5. Then u/7 = u/9; multiplying by 63 gives 9u = 7u, so 2u = 0 and u = 0. Since 0 lies between -3 and 3, the answer is B. Dividing a number by 7 and by 9 only gives the same result when the number is 0."
+  },
+  {
+    "id": "m-1093",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The flag starts at 110 in^2 and each of the x pieces adds 64 in^2, so y = 110 + 64x. Choice B swaps the starting area and the rate."
+  },
+  {
+    "id": "m-1094",
+    "answer": [
+      "1.5",
+      "3/2"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let x be the liters of 25% solution. Salt: 0.25x + 0.10(3) = 0.15(x + 3). So 0.25x + 0.3 = 0.15x + 0.45, giving 0.10x = 0.15 and x = 1.5 liters. Check: 0.375 + 0.3 = 0.675 = 0.15(4.5)."
+  },
+  {
+    "id": "m-1095",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is where the two lines cross. In the graph they intersect at (-4, -3). Choice A, (0, -7), is just the y-intercept of one line."
+  },
+  {
+    "id": "m-1096",
+    "answer": [
+      "7"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract the second equation from the first: (5x + 3y) - (x + 3y) = 38 - 10, so 4x = 28 and x = 7. Check: 3y = 10 - 7 = 3, y = 1, and 35 + 3 = 38."
+  },
+  {
+    "id": "m-1097",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "x stations use 6 teaspoons each (6x) and the other 5 - x stations use 4 each, 4(5 - x). Total: 6x + 20 - 4x = 2x + 20. Choice D forgets that the B stations decrease as x increases."
+  },
+  {
+    "id": "m-1098",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(-8) = -3(-8) + 60 = 24 + 60 = 84. Remember that multiplying two negatives gives a positive, so the 24 is added to 60, not subtracted."
+  },
+  {
+    "id": "m-1099",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "2x + y adds the two equal sides (x + x) and the third side y, which is the triangle's perimeter. So 37 is the sum of all three side lengths. It is not a difference of sides, so A and B fail."
+  },
+  {
+    "id": "m-1100",
+    "answer": [
+      "55/4",
+      "13.75"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: y = (27/4)x + 15/4 + 7x = (27/4 + 28/4)x + 15/4 = (55/4)x + 15/4. The slope is the coefficient of x, 55/4 = 13.75. Forgetting the 7x would give only 27/4."
+  },
+  {
+    "id": "m-1101",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Treat x - 5 as one quantity: 2(x - 5) + 3(x - 5) = 5(x - 5) = 10, so x - 5 = 2. Choice C (7) is the value of x itself, not x - 5."
+  },
+  {
+    "id": "m-1102",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "y increases by 8 for each 1 increase in x, so the slope is 8: y = 8x + b. Using (2, 18): 18 = 16 + b, so b = 2 and y = 8x + 2. Choice A mixes up the point's coordinates with the slope and intercept."
+  },
+  {
+    "id": "m-1103",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In (ℓ, w) = (8, 3), the length is 8 and the width is 3. Since 2(8) + 2(3) = 22 ≤ 27, the perimeter is less than or equal to 27. Choice A swaps length and width; choice D reverses the inequality."
+  },
+  {
+    "id": "m-1104",
+    "answer": [
+      "4"
+    ],
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total cost is 60h + 10 ≤ 280, so 60h ≤ 270 and h ≤ 4.5. Since only whole hours are allowed, the maximum is 4 hours (cost $250). Five hours would cost $310, which is too much."
+  },
+  {
+    "id": "m-1105",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Total = 20.00 + 0.70(38) = 20.00 + 26.60 = $46.60. The larger choices come from charging extra fees or miscomputing 0.70 times 38; the fixed fee is added only once."
+  },
+  {
+    "id": "m-1106",
+    "answer": [
+      "18/11",
+      "1.636",
+      "1.6363",
+      "1.6364"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Slope = (change in y)/(change in x) = (24 - 6)/(15 - 4) = 18/11. Putting the x-difference on top would give 11/18 instead."
+  },
+  {
+    "id": "m-1107",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor out (x + 5): (1/4 - 1/3)(x + 5) = -(1/12)(x + 5) = -7. So x + 5 = 84 and x = 79. Choice D (204) comes from mishandling the fractions; choice B makes x + 5 = 0, which gives 0, not -7."
+  },
+  {
+    "id": "m-1108",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two kinds of tickets add up to the 120 sold, so x + y = 120. The money collected is $90 per x ticket plus $250 per y ticket, so 90x + 250y = 27,600. Choice B wrongly multiplies the total revenue by 120."
+  },
+  {
+    "id": "m-1109",
+    "answer": [
+      "2"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "y = 2x + 3 has slope 2. Parallel lines have equal slopes, so line j also has slope 2. The 3 is the y-intercept, which doesn't affect the slope."
+  },
+  {
+    "id": "m-1110",
+    "answer": [
+      "515"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set 467.33 = 9(v - 273.15)/5 + 32. Subtract 32: 435.33 = 9(v - 273.15)/5. Multiply by 5/9: v - 273.15 = 241.85, so v = 515 kelvins."
+  },
+  {
+    "id": "m-1111",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where the line crosses the y-axis (x = 0). The graph crosses at y = 8, so the y-intercept is (0, 8). Choice B uses the reciprocal, and the line doesn't pass through the origin (choice C)."
+  },
+  {
+    "id": "m-1112",
+    "answer": [
+      "14"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute a = 9: 46 = 18 + 2b, so 2b = 28 and b = 14. Check: 2(9) + 2(14) = 46."
+  },
+  {
+    "id": "m-1113",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number of tickets gives f + r = 214, and the money gives $11 per full-price ticket plus $8.25 per reduced-price ticket: 11f + 8.25r = 2,145. Choice C attaches the prices to the wrong variables, and A and D swap the ticket count with the revenue."
+  },
+  {
+    "id": "m-1114",
+    "answer": [
+      "2"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(0) = b = 18. Then f(1) = m + 18 = 20, so m = 2. The slope is also the change in f from x = 0 to x = 1: 20 - 18 = 2."
+  },
+  {
+    "id": "m-1115",
+    "answer": [
+      "9"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In y = px + r, p is the slope and r is the y-intercept. The slope is given as 9, so p = 9 (and r = -5 from the point (0, -5))."
+  },
+  {
+    "id": "m-1116",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "t = 30 means 30 years after 1990, which is 2020, and P(30) = 550 is the predicted population. So the population is predicted to be 550 in 2020. Choice D forgets that t counts from 1990, not from 2000."
+  },
+  {
+    "id": "m-1117",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first 25 people cost 25·21 = $525, and the other n - 25 people cost $14 each: f(n) = 525 + 14(n - 25) = 14n - 350 + 525 = 14n + 175. Check n = 25: 350 + 175 = 525. Choice B charges $14 for all n people on top of $525."
+  },
+  {
+    "id": "m-1118",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "low",
+    "note": "Choices image shows only graphs A and B; C and D are missing.",
+    "explanation": "x + y = 53 has both intercepts at 53, and 11x + 18y = 730 has y-intercept 730/18 ≈ 40.6 and x-intercept 730/11 ≈ 66.4. Solving gives the intersection: 11x + 11y = 583, so 7y = 147, y = 21 and x = 32. Graph B shows two decreasing lines with exactly these intercepts crossing near (32, 21); graph A has an increasing line, which can't match x + y = 53."
+  },
+  {
+    "id": "m-1119",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The line passes through (0, 6) and (2, 0), so its equation is 3x + y = 6. Multiplying by 6 gives 18x + 6y = 36, which matches 18x + Ry = 36 with R = 6. Choice A would need a y-intercept of 36/18 = 2, and B and D give a positive slope when R is positive."
+  },
+  {
+    "id": "m-1120",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 275: 2p = 50, so p = 25. Check: 2(25) + 275 = 325. Choice D (300) is just 325 - 25, not a value of p."
+  },
+  {
+    "id": "m-1121",
+    "answer": [
+      "50"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 8: y = 5(8) + 10 = 40 + 10 = 50."
+  },
+  {
+    "id": "m-1122",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first day costs $52 and the remaining d - 1 days cost $26 each: C(d) = 52 + 26(d - 1) = 26d + 26. Check d = 1: 26 + 26 = 52. Choice B would charge $78 for one day."
+  },
+  {
+    "id": "m-1123",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Two nerite snails cost 2·6 = $12, leaving 52 - 12 = $40 for rabbit snails. At $8 each that is 40/8 = 5 rabbit snails."
+  },
+  {
+    "id": "m-1124",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dashed boundary line crosses the y-axis at 1 and falls 4 units for each unit to the right, so it is y = 1 - 4x. The shaded region lies above the line; for example, (2, 0) is shaded and 0 > 1 - 8 is true. The line is dashed, so the inequality is strict: y > 1 - 4x. Choice C uses slope +4, which would make the line rise."
+  },
+  {
+    "id": "m-1125",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line s is parallel to y = 18x + 2, so its slope is 18, and through (0, 0) it is y = 18x. At x = 4, d = 18(4) = 72. Choice D adds the 2, but line s has y-intercept 0, not 2."
+  },
+  {
+    "id": "m-1126",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "72x = 9(8x), so 72x = 9(6) = 54. (Or x = 6/8 = 3/4 and 72·3/4 = 54.)"
+  },
+  {
+    "id": "m-1127",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 6x + 16: -7x - (6x + 16) = 36, so -13x = 52 and x = -4. Then y = 6(-4) + 16 = -8. Check: -7(-4) - (-8) = 28 + 8 = 36."
+  },
+  {
+    "id": "m-1128",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "68 multiplies x, the hours spent consulting, so 68x is the money earned from consulting. That makes 68 the hourly rate for consulting. Choice C attaches it to drawing plans, which is the 85y term."
+  },
+  {
+    "id": "m-1129",
+    "answer": [
+      "18"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Replace 3y with 11 in the first equation: x + 11 = 29, so x = 18. There's no need to find y."
+  },
+  {
+    "id": "m-1130",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Points = (number of coins)(c) + (number of stars)(s). The first game gives 20c + 10s = 700 and the second gives 25c + 12s = 850. Choice A pairs the numbers of coins with s and stars with c."
+  },
+  {
+    "id": "m-1131",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Over 10 years the population changes by 846 - 862 = -16, so the rate is -1.6 people per year. Since t = 0 is the year 2000, P(t) = 862 - 1.6t. Choice B uses the total change instead of the per-year rate, and D treats t as the calendar year."
+  },
+  {
+    "id": "m-1132",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Slope = (320 - 220)/(10 - 8) = 50, so f(x) = 50x + b. Using 220 = 50(8) + b gives b = -180. Check: 50(10) - 180 = 320. Choice C simplifies to 40x, which gives 320 at x = 8, not 220."
+  },
+  {
+    "id": "m-1133",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 4 - 3x. Then 9u + 2 = 8u + 18, so u = 16. There's no need to solve for x. Choice B (-4) is the value of x, not of 4 - 3x."
+  },
+  {
+    "id": "m-1134",
+    "answer": [
+      "-32"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept occurs at x = 0: y = -6(0) - 32 = -32."
+  },
+  {
+    "id": "m-1135",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "15x = 3(5x) = 3(20) = 60. (Or x = 4 and 15·4 = 60.) Choice C adds 3 to 20 instead of multiplying by 3."
+  },
+  {
+    "id": "m-1136",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at (0, 3) and the x-axis at (1, 0), so its slope is (0 - 3)/(1 - 0) = -3. The equation is y = -3x + 3. Choice D uses -1/3, which would make the line much less steep."
+  },
+  {
+    "id": "m-1137",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 3: 2x = 4, then divide by 2: x = 2. Choice D (4) stops before dividing by 2."
+  },
+  {
+    "id": "m-1138",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(0) = 0 + b = b, and f(0) = 30, so b = 30. Choice A gets the sign wrong."
+  },
+  {
+    "id": "m-1139",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: 2y = -8x + 11, so y = -4x + 11/2 and line p has slope -4. A perpendicular line has the negative reciprocal slope, 1/4. Choice A is the slope of p itself, and B is only the reciprocal without the sign change."
+  },
+  {
+    "id": "m-1140",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The slanted line passes through (-4, 5) and (8, 2), so its slope is -3/12 = -1/4 and it is y = -(1/4)x + 4, or x + 4y = 16. The new line x + 4y = -16 has the same slope but a different intercept, so it is parallel to that line and never meets it. No point lies on all three lines, so there are zero solutions."
+  },
+  {
+    "id": "m-1141",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let p be pounds of potatoes, so celery is 2p pounds. Then 0.69p + 0.99(2p) = 5.34, so 2.67p = 5.34 and p = 2. Celery is 2(2) = 4 pounds. Choice A (2) is the potatoes, not the celery."
+  },
+  {
+    "id": "m-1142",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "g(8) = 10(8) + 8 = 80 + 8 = 88."
+  },
+  {
+    "id": "m-1143",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 40: 40 + 6 = 46. Choice A subtracts 6 instead of adding."
+  },
+  {
+    "id": "m-1144",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The candle has lost 17 - 6 = 11 ounces. Each ounce takes 4 hours, so it has burned 11·4 = 44 hours. Choice C (24) uses the 6 remaining ounces instead of the 11 lost."
+  },
+  {
+    "id": "m-1145",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second equation's x- and y-coefficients are 4 times the first's (8 = 4·2, 28 = 4·7). For infinitely many solutions the equations must be the same line, so a = 4·9 = 36. Any other value of a gives parallel lines and no solution."
+  },
+  {
+    "id": "m-1146",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A line with slope m through (0, b) is f(x) = mx + b. Here m = 1/4 and b = 5, so f(x) = (1/4)x + 5. Choice D has the wrong sign on the y-intercept."
+  },
+  {
+    "id": "m-1147",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The butterfly needs to reach 55.0°F, so the minimum increase is 55.0 - 51.3 = 3.7°F."
+  },
+  {
+    "id": "m-1148",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Slope = (52 - (-48))/(7 - (-18)) = 100/25 = 4. Using (7, 52): 52 = 28 + b, so b = 24 and y = 4x + 24 (check: 4(-18) + 24 = -48). At x = 1/7, a = 4/7 + 24 = 4/7 + 168/7 = 172/7. Choice C forgets to add the intercept."
+  },
+  {
+    "id": "m-1149",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total number of places is f + h, and \"at most 14\" means less than or equal to 14: f + h ≤ 14. Choice B means at least 14."
+  },
+  {
+    "id": "m-1150",
+    "answer": [
+      "4.51"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x is the number of smaller containers, and 4.51x is the money from selling them, so each smaller container costs $4.51. The 6.07 is the price of a larger container."
+  },
+  {
+    "id": "m-1151",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 10x = 110, x = 11. Then y = 6(11) - 63 = 66 - 63 = 3. Choice B (11) is the value of x, not y."
+  },
+  {
+    "id": "m-1152",
+    "answer": [
+      "50"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 7: f(7) = 7(7) + 1 = 49 + 1 = 50 people."
+  },
+  {
+    "id": "m-1153",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "low",
+    "note": "Choices are graphs; the source image is missing graph D, so the answer is found by elimination of A–C.",
+    "explanation": "y = 2x - 5 has slope 2 (rising) and crosses the y-axis at (0, -5). Graph A rises too slowly and crosses above the origin, graph B falls, and graph C has slope 2 but crosses at (0, 5) instead of (0, -5). The remaining choice, D, must be the line through (0, -5) rising 2 units for each unit right."
+  },
+  {
+    "id": "m-1154",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Test (2, -1): -1 ≤ 3(2) + 1 = 7 is true, and 2 - (-1) = 3 > 1 is true, so it satisfies both. Choice A fails the first inequality (-1 ≤ -5 is false), and B and C fail the second (x - y is negative)."
+  },
+  {
+    "id": "m-1155",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at 35 and the x-axis at 90. For 7x + 18y = 630: x = 0 gives y = 35, and y = 0 gives x = 90. Choice D swaps the intercepts (x = 35, y = 90), and A and C have positive slopes."
+  },
+  {
+    "id": "m-1156",
+    "answer": [
+      "20"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add the equations to cancel y: 0 = 15x - 10, so 15x = 10 and 30x = 2(10) = 20. Check: x = 2/3 gives y = 53/15 in both equations."
+  },
+  {
+    "id": "m-1157",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 30% estimate with a 3% margin of error suggests the true percent is likely between 27% and 33%. 35% is outside that range, so it is doubtful. Choice B is too strong: values outside the interval are unlikely, not impossible."
+  },
+  {
+    "id": "m-1158",
+    "answer": [
+      "2520"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 60 minutes in an hour, so 42 posters per minute × 60 minutes per hour = 2,520 posters per hour."
+  },
+  {
+    "id": "m-1159",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only one of the 14 equally likely faces shows a 2, so the probability is 1/14. Choice B confuses the number on the face with the number of favorable outcomes."
+  },
+  {
+    "id": "m-1160",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A random sample's percent estimates the whole club: 20% of 55 = 0.20·55 = 11 students. Choice B uses the percent itself as the count."
+  }
+]

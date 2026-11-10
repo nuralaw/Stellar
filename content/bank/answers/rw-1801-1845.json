@@ -1,0 +1,410 @@
+[
+  {
+    "id": "rw-1801",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence describes something that happened in the past, while Bass ran the paper from 1912 to 1951, so the past-tense verb \"became\" fits. \"Will become\" and \"is becoming\" put the event in the future or present, which clashes with the past timeframe. \"To become\" is not a finite verb, so the sentence would have no main verb."
+  },
+  {
+    "id": "rw-1802",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text before the blank is a complete sentence, and the text after it explains how cells with identical DNA develop different functions. A colon is the right way to introduce that explanation. A comma alone (B) would create a comma splice, and no punctuation (A) creates a run-on. \"And,\" (C) misplaces the comma and makes the sentence awkward and ungrammatical."
+  },
+  {
+    "id": "rw-1803",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The conference’s goals were threefold\" is a complete clause, and what follows is a list of the three goals. A colon correctly introduces that list. A period (B) or semicolon (D) would leave \"to ensure... to secure... and to advocate...\" as a fragment, and no punctuation (C) runs \"threefold\" straight into the list."
+  },
+  {
+    "id": "rw-1804",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"a country in Western Asia\" is extra information about Bahrain, and it already ends with a dash before \"is much longer.\" Extra information must open and close with the same punctuation, so a dash is needed after \"Bahrain.\" A comma (B) or colon (D) would mismatch the closing dash, and no punctuation (C) blurs the phrase into the name."
+  },
+  {
+    "id": "rw-1805",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"One species, the silverleaf sunflower,\" needs a main verb, and \"includes\" supplies a singular present-tense verb. \"Having included,\" \"including,\" and \"to include\" are not finite verbs, so each would leave the sentence without a main verb, making it a fragment."
+  },
+  {
+    "id": "rw-1806",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "What follows the blank, \"a finding that, if true, would overturn current theories...,\" is a noun phrase that renames the whole idea before it, not an independent clause. A comma correctly attaches this phrase to the sentence. A semicolon (A) or period (B) would require an independent clause after it, and no punctuation (C) jams the two parts together."
+  },
+  {
+    "id": "rw-1807",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"To join\" is an infinitive that explains Ochoa’s purpose for leaving her position: she left in order to join the astronaut program. The sentence already has a main verb, \"left,\" so \"joined,\" \"joins,\" or \"is joining\" would add a second main verb with no conjunction, making the sentence ungrammatical."
+  },
+  {
+    "id": "rw-1808",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"Scientists\" needs a main verb, and \"explain\" is a plural present-tense verb that agrees with it. \"Having explained,\" \"explaining,\" and \"to explain\" are not finite verbs, so they would leave the sentence as a fragment with no main verb."
+  },
+  {
+    "id": "rw-1809",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The verb phrase \"has been proudly embodied by Native Hawaiians\" should not be interrupted, since \"by\" leads directly into its object, \"Native Hawaiians.\" No punctuation is needed. A semicolon, colon, or comma (A, B, C) would wrongly separate the preposition \"by\" from its object.",
+    "fix": {
+      "passage": "According to the University of Hawaiʻi at Mānoa, aloha ʻāina is “a recognition, commitment, and practice sustaining the ea—or life breath” between the Hawaiian people and their natural environments. The concept has been proudly embodied ______ Native Hawaiians for generations, contributing to the lush flora and renowned beauty of the islands."
+    }
+  },
+  {
+    "id": "rw-1810",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"While many video game creators strive to make their graphics ever more lifelike\" is a dependent clause, so it is followed by a comma before the main clause \"others look to the past.\" Adding \"but\" (A, D) is wrong because \"while\" already links the two clauses, and using both makes the sentence ungrammatical. No punctuation (B) runs the clauses together."
+  },
+  {
+    "id": "rw-1811",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The introductory phrase \"Powered with energy collected by solar panels during the day\" describes the LEDs and needs a comma at its end to separate it from the main clause \"the blinking LEDs keep lions away.\" No commas are needed inside the phrase, since \"collected by solar panels during the day\" is essential information about the energy. Choices A and D add unnecessary commas, and B leaves out the needed comma."
+  },
+  {
+    "id": "rw-1812",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"These are some of the oldest pieces of pottery ever found\" is one continuous clause, and \"of pottery\" belongs right next to \"pieces.\" No punctuation should separate them. A colon, comma, or dash (A, B, D) would wrongly break up the noun phrase."
+  },
+  {
+    "id": "rw-1813",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence’s subject, \"the rate of speciation,\" needs a main verb, and \"will be\" provides one that fits a prediction made by a model. \"Being,\" \"to be,\" and \"to have been\" are not finite verbs, so they would leave the clause after \"predicts that\" without a main verb."
+  },
+  {
+    "id": "rw-1814",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"people in the Americas\" needs a main verb, and the phrase \"for thousands of years\" describes an action that has continued over time, so the present perfect \"have used\" fits. \"To use,\" \"having used,\" and \"using\" are not finite verbs and would leave the sentence as a fragment."
+  },
+  {
+    "id": "rw-1815",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In modern plays, actors typically won’t acknowledge the audience\" is a complete sentence, and \"To do so breaks the fourth wall...\" is another one, with \"To do so\" as its subject. A period correctly separates them. A comma (D) would create a comma splice, no punctuation (B) creates a run-on, and \"As to do so\" (A) is not grammatical."
+  },
+  {
+    "id": "rw-1816",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank joins two independent clauses: \"This idea is known as the service recovery paradox\" and \"research suggests that it has important implications...\" A comma plus the conjunction \"and\" correctly joins them. A comma alone (A) is a comma splice, no punctuation (B) is a run-on, and \"and,\" (D) puts the comma in the wrong place."
+  },
+  {
+    "id": "rw-1817",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists three people after a colon, and the items contain internal commas, so semicolons must separate the items, as already happens after \"1998.\" A semicolon is needed after \"Stanford\" to end the second item before \"and Morten Meldal.\" A comma (B) would blur the items together, and a colon (C) or no punctuation (A) is incorrect here."
+  },
+  {
+    "id": "rw-1818",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Planté invented the battery fifteen years before Faure redesigned it in 1881, so the invention happened before another past event. The past perfect \"had invented\" shows that earlier past action. \"Is inventing,\" \"will invent,\" and \"invents\" are present or future forms that clash with the historical timeline."
+  },
+  {
+    "id": "rw-1819",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Gangnam District in Seoul, South Korea\" identifies \"the place that inspired the song’s name,\" so it can be introduced with a dash at the end of the sentence. A semicolon (A) or period (B) would leave \"Gangnam District in Seoul, South Korea\" as a fragment, and no punctuation (C) would incorrectly run the name into \"the song’s name.\""
+  },
+  {
+    "id": "rw-1820",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence lists three responsibilities, and because the items contain internal commas, they must be separated with semicolons, as already happens before \"and appointing.\" A semicolon after \"items\" ends the first item and begins the second, \"managing the US Copyright Office.\" A comma (B) would confuse the list, no punctuation (A) runs the items together, and a period (D) would create a fragment."
+  },
+  {
+    "id": "rw-1821",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The saloon was created by William A.G. Brown, so the past participle \"Created\" correctly forms a modifier with \"by businessman William A.G. Brown\" describing the saloon. \"Creating\" would wrongly suggest the saloon did the creating, and \"Creates\" and \"Create\" are finite verbs that cannot start this introductory phrase."
+  },
+  {
+    "id": "rw-1822",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Positing that all life’s virtues derived from this absence\" is a participial phrase describing what Epicurus did, so it should be attached to the main clause with a comma; the comma goes inside the closing quotation mark. A colon (B) or semicolon (C) would require a complete clause after it, and a period (D) would leave the \"Positing\" phrase as a fragment."
+  },
+  {
+    "id": "rw-1823",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The verb in the blank belongs to the clause whose subject is \"many of whom,\" which refers to the plural \"biomedical scientists.\" The plural verb \"study\" agrees with it. The singular forms \"is studying,\" \"has studied,\" and \"studies\" wrongly agree with Elba Serrano, who is only part of the interrupting \"like...\" phrase."
+  },
+  {
+    "id": "rw-1824",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Their design prioritizing airflow, protection from insects, and hairstyle maintenance over comfort\" is an absolute phrase that adds detail to the main clause, so it needs the participle \"prioritizing.\" A finite verb such as \"had prioritized,\" \"was prioritizing,\" or \"prioritized\" would create a second independent clause joined only by a comma, which is a comma splice."
+  },
+  {
+    "id": "rw-1825",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"A construction system known as falsework\" is extra information about \"These temporary supports,\" and it opens with a comma, so it must close with a comma too before the verb \"were removed.\" A semicolon (A) or colon (D) would wrongly separate the subject from its verb, and no punctuation (B) leaves the interrupting phrase unclosed."
+  },
+  {
+    "id": "rw-1826",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence opens with a long introductory phrase, \"With a blend of traditional design elements... and modern ones, such as floor-to-ceiling windows,\" which needs a comma before the main clause \"transitional design splits the difference.\" A semicolon (A) or period (C) would leave the introductory phrase as a fragment, and a dash (B) is not the right mark to end an introductory phrase."
+  },
+  {
+    "id": "rw-1827",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank joins two independent clauses: \"The Alvarez theory... maintained that... caused many dinosaurs... to die out\" and \"it left unexplored the question...\". A comma plus \"but\" correctly joins them while showing contrast. \"But\" without a comma (A) is not standard for joining these long clauses, no punctuation (C) creates a run-on, and a comma alone (D) creates a comma splice."
+  },
+  {
+    "id": "rw-1828",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the verb is the plural \"the toxins,\" not \"the organism\" or \"predation,\" which appear in the clause in between. The plural verb \"increase\" agrees with \"toxins.\" \"Is increasing,\" \"increases,\" and \"has increased\" are singular forms that do not agree."
+  },
+  {
+    "id": "rw-1829",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The introductory phrase \"A pioneer in the field of taphonomy\" must be followed by the person it describes. Only B places \"Anna Behrensmeyer\" right after the phrase. The other choices make the phrase seem to describe \"fossils\" (A), \"it\" (C), or \"a 2005 analysis\" (D), creating dangling modifiers."
+  },
+  {
+    "id": "rw-1830",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject of the verb is the singular \"a cycle,\" not \"lunar phases,\" which is part of the prepositional phrase \"of lunar phases.\" The singular present-tense verb \"takes\" agrees with it and fits a general fact. \"Are taking,\" \"have taken,\" and \"take\" are plural forms."
+  },
+  {
+    "id": "rw-1831",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"He realized that he preferred the sound of a bent bell over that of a straight one\" is one continuous clause, and \"the sound\" is the direct object of \"preferred.\" No punctuation should separate a verb from its object. A semicolon, comma, or period (A, C, D) would wrongly break up the clause."
+  },
+  {
+    "id": "rw-1832",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"an abstract cubist painting,\" and the dashes set off an interrupting phrase (\"one of several works that received scorn from critics\"). The singular verb \"has entered\" agrees with \"painting.\" \"Have entered,\" \"were entering,\" and \"enter\" are plural forms that wrongly agree with \"works\" or \"critics.\""
+  },
+  {
+    "id": "rw-1833",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The event happened in 1613, and the next verb in the sentence, \"ignited,\" is in the past tense, so the simple past \"malfunctioned\" fits. \"Malfunctions,\" \"will malfunction,\" and \"has malfunctioned\" are present, future, or present perfect forms that do not match a completed historical event."
+  },
+  {
+    "id": "rw-1834",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"bestows,\" and its subject is \"Helical swimming.\" Everything in between, \"widely understood to confer stability and efficiency...,\" is an interrupting phrase describing the subject, so it is set off with punctuation starting with a comma after \"swimming.\" Choices A, B, and C add a verb (\"is\" or \"has been\"), which turns the interrupting phrase into a main clause and leaves \"bestows\" without a subject."
+  },
+  {
+    "id": "rw-1835",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The Balkan nation... does not have one president but three\" is a complete sentence. The next sentence begins with the introductory phrase \"Known as members of the office of the presidency\" and its main clause is \"these elected officials take turns...\" A period correctly separates the two sentences. Choices A, C, and D link everything with commas, creating a comma splice before \"these elected officials.\""
+  },
+  {
+    "id": "rw-1836",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The verb describes what the future air exchange systems would do, so the plain present \"produce\" fits and agrees with the plural \"systems.\" \"Produced\" and \"have produced\" refer to the past, which does not fit systems that do not yet exist, and \"are producing\" describes an ongoing present action."
+  },
+  {
+    "id": "rw-1837",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence saying researchers determined why the worms move the opposite way, and what follows explains that reason. A colon correctly introduces the explanation. A comma (B) creates a comma splice, \"while\" (C) creates a confusing, illogical sentence, and no punctuation (D) creates a run-on."
+  },
+  {
+    "id": "rw-1838",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to the Salt Lake Temple, a single structure, so the singular \"it\" is correct. \"They\" and \"both\" are plural and have no plural antecedent, and \"one\" is vague because it does not clearly point to the temple."
+  },
+  {
+    "id": "rw-1839",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"An apt assessment given that...\" is a noun phrase that comments on Waid’s observation, not an independent clause, so a comma should attach it to the sentence; the comma goes inside the closing quotation mark. A semicolon with \"and\" (A) or \"and\" (B) would wrongly treat the phrase as a new clause, and no punctuation (D) runs the quotation into the phrase."
+  },
+  {
+    "id": "rw-1840",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Lincoln’s actions took place in the 1860s, so the past-tense \"leveraged\" is correct. \"Has leveraged,\" \"is leveraging,\" and \"will leverage\" are present perfect, present, or future forms that do not fit a historical action that was completed long ago."
+  },
+  {
+    "id": "rw-1841",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence lists three products, each with a name and a year, and the last item shows the pattern: \"a Rosetta Stone language course in Chickasaw, in 2015.\" So the first item should be \"Chickasaw Basic, in 2009;\" and the second should begin \"an online television network, Chickasaw TV, in 2010;\". Only C uses a comma before \"in 2009,\" a semicolon to end the item, and a comma before \"Chickasaw TV.\" Choices A and B put the semicolon in the wrong place, and D uses only commas, which makes the list confusing."
+  },
+  {
+    "id": "rw-1842",
+    "answer": "A",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"The map,\" and the other verbs in the series, \"shows\" and \"includes,\" are singular present-tense verbs. \"Describes\" matches both the subject and the parallel series. \"Describe,\" \"have described,\" and \"are describing\" are plural forms."
+  },
+  {
+    "id": "rw-1843",
+    "answer": "C",
+    "domain": "conventions",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Hoping to help her students and their families outside the classroom\" is an introductory participial phrase describing Huerta, so it should be followed by a comma before the main clause \"Huerta left teaching...\" A period (A) or semicolon (B) would leave the phrase as a fragment, and no punctuation (D) runs it into the main clause."
+  },
+  {
+    "id": "rw-1844",
+    "answer": "B",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb, \"uses,\" so the blank needs the infinitive \"to study,\" which explains the purpose of using chemistry and fossil evidence. \"Has studied,\" \"studied,\" and \"studies\" would add a second main verb without a conjunction, which is ungrammatical."
+  },
+  {
+    "id": "rw-1845",
+    "answer": "D",
+    "domain": "conventions",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The natural beauty and traditions belong to two towns, Arteaga and Lagos de Moreno, so the plural possessive \"towns’\" is required, especially after \"these.\" \"Town’s\" is singular possessive, and \"town\" and \"towns\" are not possessive at all."
+  }
+]

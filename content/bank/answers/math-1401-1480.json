@@ -1,0 +1,785 @@
+[
+  {
+    "id": "m-1401",
+    "answer": [
+      "0.32",
+      ".32"
+    ],
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The cube's volume is 2.00^3 = 8 cubic centimeters. Density is mass divided by volume: 2.56/8 = 0.32 grams per cubic centimeter. Don't divide by the edge length 2 instead of the volume."
+  },
+  {
+    "id": "m-1402",
+    "answer": [
+      "285"
+    ],
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A slope of 57 means the line predicts about 57 more visitors for each 1°C increase in temperature. For a 5°C increase, that is 57 · 5 = 285 additional people. The slope already gives the change per degree, so you just multiply by 5."
+  },
+  {
+    "id": "m-1403",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both data sets have median 5, because the middle value(s) in each list are 5. The mean of A is 5, but the mean of B is (9 · 5 + 100)/10 = 14.5, pulled up by the outlier 100. So only the means differ; the median is resistant to the single extreme value."
+  },
+  {
+    "id": "m-1404",
+    "answer": [
+      "157.8"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because area involves two dimensions, square the conversion factor: 1 square nautical mile = 1.852^2 = 3.429904 square kilometers. Then k = 46.00 · 3.429904 ≈ 157.78, which rounds to 157.8. Multiplying by 1.852 only once (about 85.2) is the common mistake."
+  },
+  {
+    "id": "m-1405",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "One square foot is 12 · 12 = 144 square inches. So 3,168 square inches = 3,168/144 = 22 square feet. Dividing by 12 instead of 144 gives 264, which ignores that area has two dimensions."
+  },
+  {
+    "id": "m-1406",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points fall from about y = 6 near x = 0 down to about y = 1 near x = 5, so the line of best fit has a negative slope (about -1) and a y-intercept near 6. That matches y = -x + 6. Choice B has a negative y-intercept, and C and D have positive slopes."
+  },
+  {
+    "id": "m-1407",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the frequencies for the two responses: 29 people said \"never\" and 53 said \"almost never,\" so 29 + 53 = 82. Choice B is only the \"almost never\" count."
+  },
+  {
+    "id": "m-1408",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The increase is 79.86 - 75.74 = 4.12 dollars. As a percent of the original bill, 4.12/75.74 ≈ 0.0544, or about 5.4%. Dividing by the new bill (79.86) gives about 5.2%, which uses the wrong base."
+  },
+  {
+    "id": "m-1409",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Adding 56 to every value shifts the whole data set up by 56, so the median also increases by 56. The range is the maximum minus the minimum, and both of those increase by 56, so the range stays the same. Only the median is greater for data set B."
+  },
+  {
+    "id": "m-1410",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Reading the graph, the braking distance at 30 miles per hour is about 100 feet, and at 50 miles per hour it is about 225 feet. The difference is about 225 - 100 = 125 feet. Choice D (250) is roughly the total distance at 50 mph, not the difference."
+  },
+  {
+    "id": "m-1411",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The mean of X is (5 + 9 + 9 + 13)/4 = 36/4 = 9. The mean of Y is (36 + 27)/5 = 63/5 = 12.6. Adding 27, a value larger than X's mean, raises the mean, so X's mean is less than Y's."
+  },
+  {
+    "id": "m-1412",
+    "answer": [
+      "40"
+    ],
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find x = 4 on the horizontal axis and read the height of that point. It lines up with 40 on the vertical axis, so about 40 pounds of nectarines grew during the 4th season."
+  },
+  {
+    "id": "m-1413",
+    "answer": [
+      "6.21"
+    ],
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The cube's volume is 3.000^3 = 27 cubic centimeters. Mass equals density times volume: 0.230 · 27 = 6.21 grams. Using the edge length instead of the volume would give a much smaller, incorrect mass."
+  },
+  {
+    "id": "m-1414",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A relationship is linear when y changes by the same amount each time x increases by 1. In D, y goes 6, 12, 24, 48, doubling each step (differences 6, 12, 24), so it is not linear. Tables A, B, and C each change by a constant amount (3, 4, and 5)."
+  },
+  {
+    "id": "m-1415",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are n + 12 books in total, and n of them are nonfiction. So the probability of choosing a nonfiction book is n/(n + 12). Choice A divides by the number of fiction books instead of the total."
+  },
+  {
+    "id": "m-1416",
+    "answer": [
+      "40"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Read the bar for group 6: its top lines up exactly with 40 on the vertical axis. So group 6 collected 40 cans. As a check, all ten bars add up to 419."
+  },
+  {
+    "id": "m-1417",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In 5 days, 1,200 · 5 = 6,000 accounts are registered. As a fraction of 60,000, that is 6,000/60,000 = 1/10. Choice D (1/50) comes from comparing 1,200 to 60,000, which is just one day."
+  },
+  {
+    "id": "m-1418",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "50% of 840 is 0.5 · 840 = 420 seats. Choice B just repeats the percent rather than applying it to 840."
+  },
+  {
+    "id": "m-1419",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sample was chosen at random from piano students in a certain region who were in their second year with their conservatory. Results can be generalized only to the population that was sampled, which is exactly that group. Choices A and B are broader populations that were not sampled, and D is only part of the sample."
+  },
+  {
+    "id": "m-1420",
+    "answer": [
+      "14/3",
+      "4.666",
+      "4.667"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 3 teaspoons make 1 tablespoon, divide by 3: 14/3 ≈ 4.667 tablespoons. Multiplying by 3 (42) would convert the wrong way."
+  },
+  {
+    "id": "m-1421",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distance equals rate times time: 16 meters per second · 4 seconds = 64 meters. Choice B adds the numbers instead of multiplying."
+  },
+  {
+    "id": "m-1422",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bar for gift C reaches 18 on the vertical axis, so 18 volunteers chose gift C. As a check, 14 + 8 + 18 + 3 = 43, the total number of volunteers. Choice C (14) is the bar for gift A."
+  },
+  {
+    "id": "m-1423",
+    "answer": [
+      "10"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "20% of 50 dollars is 0.20 · 50 = 10 dollars. So Hanna's tip was $10."
+  },
+  {
+    "id": "m-1424",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes near (0, 1.4) and (7, 14.5). Its slope is about (14.5 - 1.4)/(7 - 0) ≈ 1.9, which is closest to 2. A slope of 1 would rise only 7 units across the graph, far less than the line actually rises."
+  },
+  {
+    "id": "m-1425",
+    "answer": [
+      "0"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For consecutive integers the values are evenly spaced and symmetric about the middle one, so the mean equals the median. For example, 1 through 9 has mean 5 and median 5. Therefore a = b and |a - b| = 0."
+  },
+  {
+    "id": "m-1426",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "10% of 760 is 0.10 · 760 = 76. So Isabel saved 76 potatoes to plant next year."
+  },
+  {
+    "id": "m-1427",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The highest point on the line graph is at 1994, where the estimate is about 160 chipmunks. Every other year is below 120, including 1999 (about 115)."
+  },
+  {
+    "id": "m-1428",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An 8-hour workday is 8 · 60 = 480 minutes. 15% of 480 is 0.15 · 480 = 72 minutes. Choice A (1.2) is 15% of 8, which is in hours, not minutes."
+  },
+  {
+    "id": "m-1429",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes near (0, 3.2) and (10, 9.2). Its slope is (9.2 - 3.2)/(10 - 0) = 6/10 = 0.6. Choices C and D are closer to the y-values of the points than to the slope."
+  },
+  {
+    "id": "m-1430",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph is a straight line, so f is linear. It rises from left to right (passing through the origin with a positive slope of about 1/2), so f is increasing linear."
+  },
+  {
+    "id": "m-1431",
+    "answer": [
+      "0.48",
+      ".48",
+      "12/25"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If a is 70% less than b, then a = 0.30b. If c is 60% greater than a, then c = 1.60a = 1.60 · 0.30b = 0.48b. So c is 0.48 times b. Simply combining the percents (-70% + 60%) to get 0.9 is a common mistake."
+  },
+  {
+    "id": "m-1432",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. Sample size does not push the estimated mean in a predictable direction, so C and D are not likely effects."
+  },
+  {
+    "id": "m-1433",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply by 6 feet per fathom: 39 · 6 = 234 feet. Dividing instead (about 7) converts the wrong way."
+  },
+  {
+    "id": "m-1434",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 3 gemstones of color Y out of 157 total, so the probability is 3/157. Choice D (154/157) is the probability of not choosing color Y."
+  },
+  {
+    "id": "m-1435",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The row for \"at least 40 years old\" has a total of 105 customers out of 135 overall. So the probability is 105/135. Choice C (100/135) is the total for 2 or more visits."
+  },
+  {
+    "id": "m-1436",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the five areas: 2.0 + 21 + 61 + 26 + 0.44 = 110.44. Divide by 5 to get about 22.09, which rounds to 22 square kilometers. Choice D is the sum, not the mean."
+  },
+  {
+    "id": "m-1437",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only viewers of that show who chose to answer took part, so the respondents are a self-selected group, not a random sample of the US population. Results from such a sample can't be generalized to everyone. The percentages not adding to 100% (some may be undecided) does not by itself make the poll invalid."
+  },
+  {
+    "id": "m-1438",
+    "answer": [
+      "34672"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply by 1,760 yards per mile: 19.700 · 1,760 = 34,672 yards per hour."
+  },
+  {
+    "id": "m-1439",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Presidents at least 50 years old: 13 + 11 + 7 + 3 = 34. Of those, the ones at least 60: 7 + 3 = 10. The fraction is 10/34. Choice A uses all 43 presidents as the denominator instead of only those at least 50.",
+    "fix": {
+      "prompt": "United States Presidents from 1789 to 2015\nAges | Number\n40–44 | 2\n45–49 | 7\n50–54 | 13\n55–59 | 11\n60–64 | 7\n65–69 | 3\nThe table above gives the number of United States presidents from 1789 to 2015 whose age at the time they first took office is within the interval listed. Of those presidents who were at least 50 years old when they first took office, what fraction were at least 60 years old?"
+    }
+  },
+  {
+    "id": "m-1440",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Object R's speed is 4x/y inches per second, so object S, twice as fast, has speed 8x/y. The time for S to go 24x inches is 24x/(8x/y) = 3y seconds. Choice D (6y) is the time object R would need.",
+    "fix": {
+      "prompt": "Objects R and S each travel at a constant speed. The speed of object R is half the speed of object S. Object R travels a distance of 4x inches in y seconds. Which expression represents the time, in seconds, it takes object S to travel a distance of 24x inches?"
+    }
+  },
+  {
+    "id": "m-1441",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "States with a sales tax: 39 + 6 = 45. Of those, 6 have no income tax. 6/45 ≈ 0.1333, or 13.3%. Choice B (12.0%) divides 6 by all 50 states instead of only the 45 with a sales tax."
+  },
+  {
+    "id": "m-1442",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each yard is 3 feet, so 64 yards per second = 64 · 3 = 192 feet per second. Choices A and B just subtract or add 3."
+  },
+  {
+    "id": "m-1443",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing x by 1,800% means adding 18x to x, so the result is x + 18x = 19x. Then 19x = 684 gives x = 36. Choice C (38) uses 18x = 684, forgetting the original amount."
+  },
+  {
+    "id": "m-1444",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tilly earns p dollars per w hours. Working 39w hours is 39 times as long, so she earns 39 times as much: 39p dollars. Choice B divides instead of multiplying."
+  },
+  {
+    "id": "m-1445",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The boards with widths between 18 and 48 cm are at x = 24, 24, 30, 36, 42 with prices 10, 15, 20, 30, 40. Their mean is 115/5 = 23 dollars. The boards wider than 48 cm have prices 45, 55, 70, 85, with mean 63.75, so A and B are false."
+  },
+  {
+    "id": "m-1446",
+    "answer": [
+      "7/10",
+      ".7",
+      "0.7"
+    ],
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Given the flower is a tulip, restrict to the 50 tulips. Of these, 35 are from site A, so the probability is 35/50 = 0.7. Dividing 35 by 66 (all site A flowers) answers a different question."
+  },
+  {
+    "id": "m-1447",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Land area is 92.1 - 11.3 = 80.8 square miles. Population density is 621,000/80.8 ≈ 7,686 people per square mile, closest to 7,690. Choice A (6,740) divides by the total area including water."
+  },
+  {
+    "id": "m-1448",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph shows 11 vervets and 5 mandrills. 11 - 5 = 6 more vervets. Choice A (11) is just the number of vervets."
+  },
+  {
+    "id": "m-1449",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only one of the three numbers, 26, is positive. So the probability of selecting a positive number is 1/3. Choice C (2/3) is the probability of selecting a negative number."
+  },
+  {
+    "id": "m-1450",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After 9k hours, d = 55 · 9k = 495k miles; after 3k hours, d = 55 · 3k = 165k miles. The ratio is 495k/165k = 3. Since distance is proportional to time and 9k is 3 times 3k, the distance is 3 times as far, regardless of k."
+  },
+  {
+    "id": "m-1451",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One furlong is 220 yards, and each yard is 3 feet, so 1 furlong = 220 · 3 = 660 feet. Then 354 furlongs = 354 · 660 = 233,640 feet. Stopping after converting to yards (354 · 220 = 77,880) forgets the last step."
+  },
+  {
+    "id": "m-1452",
+    "answer": [
+      "16606"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Force equals pressure times area: 19 pounds per square inch · 874 square inches = 16,606 pounds."
+  },
+  {
+    "id": "m-1453",
+    "answer": [
+      "41"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The total of the heights in A is 75 · 25 = 1,875 and in B is 50 · 65 = 3,250. The combined mean is (1,875 + 3,250)/125 = 5,125/125 = 41 meters. Averaging 25 and 65 to get 45 ignores that A has more objects."
+  },
+  {
+    "id": "m-1454",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Adding 10, which is smaller than every value in F, pulls the mean of G below the mean of F. It also shifts the middle of the list down, so the median of G is less than or equal to the median of F. So neither the mean nor the median of F must be less than that of G; if anything, F's are greater."
+  },
+  {
+    "id": "m-1455",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A margin of error of 1 gives a range of plausible values, 20.5 - 1 = 19.5 to 20.5 + 1 = 21.5, for the population mean. It doesn't guarantee the mean is in that range (B) or exactly 20.5 (D), and it says nothing about individual values (C)."
+  },
+  {
+    "id": "m-1456",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In a box plot, the median is the vertical line inside the box. Here that line is at 5. Choices A and D are the minimum and maximum."
+  },
+  {
+    "id": "m-1457",
+    "answer": [
+      "44"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The total of heights is 75 · 32 = 2,400 for A and 50 · 62 = 3,100 for B. The combined mean is (2,400 + 3,100)/125 = 5,500/125 = 44 meters. Simply averaging 32 and 62 gives 47, which ignores the different group sizes."
+  },
+  {
+    "id": "m-1458",
+    "answer": [
+      "4.05"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The consumer price is 270% of 5.00 dollars: 2.70 · 5.00 = 13.50 dollars. A discount of 70% off leaves 30% of that price: 0.30 · 13.50 = 4.05 dollars. Taking 70% of 13.50 (9.45) gives the discount amount, not the new price."
+  },
+  {
+    "id": "m-1459",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After removing 20%, 80% of the original remains: 0.8n = 360, so n = 450. The number removed is 450 - 360 = 90. Choice A (72) is 20% of 360, which uses the wrong base."
+  },
+  {
+    "id": "m-1460",
+    "answer": [
+      "9.87"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since b is 90% less than 47, b = 0.10 · 47 = 4.7. Since a is 110% greater than b, a = 2.10 · 4.7 = 9.87. Using 1.10 instead of 2.10 forgets that \"110% greater\" adds 110% to the original 100%."
+  },
+  {
+    "id": "m-1461",
+    "answer": [
+      "184"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set up p/100 · 375 = 690. Then p/100 = 690/375 = 1.84, so p = 184. The value is above 100 because group C is larger than group A."
+  },
+  {
+    "id": "m-1462",
+    "answer": [
+      "17"
+    ],
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "10% of 170 is 0.10 · 170 = 17. So 17 blocks are green."
+  },
+  {
+    "id": "m-1463",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Employee A had 16 one-star calls out of 145 calls. 16/145 ≈ 0.110, or about 11%. Choice D (32%) divides 16 by the 50 total one-star calls, which answers a different question."
+  },
+  {
+    "id": "m-1464",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Families at a playground are more likely to have children than households in general, so this is not a random sample of the community. The method is flawed and may give a biased estimate. A sample of 20 isn't necessarily too small (B); the main problem is how the families were chosen."
+  },
+  {
+    "id": "m-1465",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rooms with at least 18 seats make up 21% + 29% + 24% = 74% of the rooms. Of those, the rooms with more than 65 seats are 24%. The conditional probability is 0.24/0.74 ≈ 0.32. Choice A (0.24) ignores the given condition."
+  },
+  {
+    "id": "m-1466",
+    "answer": [
+      "14.1"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide by 1,760 yards per mile: 24,816/1,760 = 14.1 miles per hour."
+  },
+  {
+    "id": "m-1467",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The increase from 10 to 140 is 130. As a percent of the original 10, that is 130/10 = 13 = 1,300%. Choice A (1,400) says 140 is 1,400% of 10, which is not the same as 1,400% greater than 10."
+  },
+  {
+    "id": "m-1468",
+    "answer": [
+      "480"
+    ],
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "The line of best fit passes through about (25, 80) and rises about 57 people per degree. At 32°C, the prediction is about 80 + 7 · 57 ≈ 479, and on the graph the line crosses the 480 grid line right at x = 32. Rounded to the nearest 10, that is 480 people. Use the line, not a data point near 32°C."
+  },
+  {
+    "id": "m-1469",
+    "answer": [
+      "4176"
+    ],
+    "domain": "geometry-trig",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If the smaller square has side s, the larger has side 3s, so their areas are s^2 and 9s^2, for a total of 10s^2. Flux is proportional to area, so the larger square gets 9/10 of the total flux: (9/10) · 4,640 = 4,176 volt-meters. Using 3/4 instead of 9/10 forgets that area scales with the square of the side length."
+  },
+  {
+    "id": "m-1470",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data start at (0, 0) and rise about 0.6 for each increase of 1 in x (for example, near (5, 3.1)). So y = 0.606x fits. Choice A has a negative slope, and D has a slope of about 1, which rises too quickly."
+  },
+  {
+    "id": "m-1471",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data rise and then fall, so the model should be a downward-opening parabola, which needs a negative x^2 coefficient. The y-values at the start are around 760, so the y-intercept should be positive (+745.73), and the curve should initially increase, which requires a positive x coefficient. Only D has all three features; B has a negative y-intercept and would decrease from the start."
+  },
+  {
+    "id": "m-1472",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The rate is 88x/(5y) ounces per minute. In 9y minutes the hose puts in (88x/(5y)) · 9y = 792x/5 ounces. Choice B (440x/9) inverts the time ratio."
+  },
+  {
+    "id": "m-1473",
+    "answer": "A",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The points rise from about y = 4 at x = 1 to about y = 26 at x = 8, a slope of about 22/7 ≈ 3. A line with slope 3 and a small y-intercept fits, so y = 3x + 0.8 works. Choice B has slope 0.8, which would rise only about 6 units over that range, and C and D have negative slopes."
+  },
+  {
+    "id": "m-1474",
+    "answer": "D",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An increase of 29% means multiplying by 1.29: 113,000 · 1.29 = 145,770, which is closest to 145,800. Choice A adds only 2,900, which is not 29% of 113,000."
+  },
+  {
+    "id": "m-1475",
+    "answer": [
+      "30"
+    ],
+    "domain": "problem-solving",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bar for group 1 reaches 30 on the vertical axis, so group 1 collected 30 books. As a check, all ten bars sum to 414."
+  },
+  {
+    "id": "m-1476",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "15% of 78.20 is 0.15 · 78.20 = 11.73 dollars, which is closest to $12.00. A quick estimate: 10% is about 7.80 and 5% is about 3.90, for about 11.70."
+  },
+  {
+    "id": "m-1477",
+    "answer": [
+      "4"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Time equals distance divided by speed: 24/6 = 4 seconds."
+  },
+  {
+    "id": "m-1478",
+    "answer": "C",
+    "domain": "problem-solving",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From x = 2 to x = 3, the temperature rises from about 60°F to about 73°F, an increase of about 13°F. From x = 6 to x = 7 it rises only about 3°F, from x = 5 to x = 6 it falls, and from x = 1 to x = 2 it falls from about 69 to 60."
+  },
+  {
+    "id": "m-1479",
+    "answer": "B",
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each person needs at least 8 square feet, so the maximum number of people is 5,400/8 = 675. Choice D multiplies instead of dividing."
+  },
+  {
+    "id": "m-1480",
+    "answer": [
+      "66"
+    ],
+    "domain": "problem-solving",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply the price per pound by the number of pounds: 11.00 · 6 = 66 dollars."
+  }
+]

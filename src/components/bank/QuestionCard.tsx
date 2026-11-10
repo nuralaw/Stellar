@@ -253,7 +253,7 @@ export function QuestionCard({
       </div>
     );
   return (
-    <div className="max-w-3xl rounded-2xl border border-line bg-surface p-6">
+    <div className="rounded-2xl border border-line bg-surface p-6">
       {!math && q.passage && <div className="mb-5 text-[15px] leading-relaxed">{stimulus}</div>}
       {answerArea}
     </div>
