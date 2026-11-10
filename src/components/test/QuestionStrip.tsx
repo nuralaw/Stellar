@@ -16,8 +16,9 @@ const DIFF: Record<Difficulty, { label: string; dot: string; bar: string; chip: 
 };
 
 /**
- * The thin question switcher under a test / round toolbar. Hovering a segment turns it into a square-cornered block, tints it with the
- * question's difficulty and pops up a small card (number, difficulty, answered / marked); click to jump there.
+ * The thin question switcher under a test / round toolbar. Hovering a segment makes it flow down into a rounded
+ * square (as tall as it is wide), tinted with the question's difficulty, and pops up a small card (number,
+ * difficulty, answered / marked) below it; click to jump there.
  */
 export function QuestionStrip({ items, pos, onPick }: { items: StripItem[]; pos: number | null; onPick: (i: number) => void }) {
   const n = items.length;
@@ -35,16 +36,17 @@ export function QuestionStrip({ items, pos, onPick }: { items: StripItem[]; pos:
             tabIndex={-1}
             onClick={() => onPick(i)}
             aria-label={`Question ${i + 1}${d ? `, ${d.label}` : ""}${it.answered ? ", answered" : ""}${it.marked ? ", marked for review" : ""}`}
-            className="group relative flex h-5 flex-1 items-center"
+            className="group @container relative h-5 flex-1 hover:z-10"
           >
+            {/* Anchored at the top, so on hover it grows downward into a square (100cqw = the segment's width). */}
             <span
-              className={`block w-full rounded-[4px] transition-all duration-150 group-hover:h-3 group-hover:rounded-[2px] ${current ? "h-2 bg-primary" : it.answered ? "h-1 bg-primary/60" : "h-1 bg-line"} ${
-                d && !current ? d.bar : ""
-              }`}
+              className={`absolute inset-x-0 rounded-[4px] transition-[height,border-radius,background-color] duration-200 ease-out group-hover:h-[100cqw] group-hover:rounded-[7px] group-hover:shadow-md ${
+                current ? "top-1.5 h-2 bg-primary" : it.answered ? "top-2 h-1 bg-primary/60" : "top-2 h-1 bg-line"
+              } ${d && !current ? d.bar : ""}`}
             />
             {it.marked && <span className="absolute -top-0.5 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-accent" aria-hidden="true" />}
             <span
-              className={`pointer-events-none absolute top-full z-40 mt-1.5 flex origin-top scale-90 items-center gap-2 rounded-lg border border-line bg-surface px-2.5 py-1.5 text-xs whitespace-nowrap opacity-0 shadow-lg transition-[opacity,scale] duration-150 group-hover:scale-100 group-hover:opacity-100 ${align}`}
+              className={`pointer-events-none absolute top-[calc(100cqw+0.875rem)] z-40 flex origin-top scale-90 items-center gap-2 rounded-lg border border-line bg-surface px-2.5 py-1.5 text-xs whitespace-nowrap opacity-0 shadow-lg transition-[opacity,scale] duration-150 group-hover:scale-100 group-hover:opacity-100 ${align}`}
               aria-hidden="true"
             >
               <span className="font-semibold tabular-nums">Q{i + 1}</span>
