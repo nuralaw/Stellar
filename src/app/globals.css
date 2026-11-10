@@ -9,6 +9,9 @@
 @custom-variant sb-collapsed (&:where([data-sidebar="collapsed"] *));
 @custom-variant rail (&:where([data-sidebar="collapsed"] [data-rail], [data-sidebar="collapsed"] [data-rail] *));
 
+/* Focus mode: <html data-focus> while solving questions / taking a test or round (useFocusMode). Hides the footer. */
+@custom-variant focus-mode (&:where([data-focus] *));
+
 /*
   Palette: orange + gray, 60-30-10 rule
   60% — dominant neutrals: page background, cards        (bg, surface, surface-2, ink, muted, line)

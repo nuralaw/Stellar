@@ -1,12 +1,14 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
-import { useAttempts, useBookmarks } from "@/lib/store";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useAttempts, useBookmarks, useNow } from "@/lib/store";
+import { localDay } from "@/lib/stats";
+import { PAGE } from "@/lib/ui";
 import { SECTIONS } from "@/lib/taxonomy";
 import { ListView } from "./ListView";
 import { SolveView, type Run } from "./SolveView";
-import { filtersFromParams, filtersToQuery, lastResults, shuffle, skillName, useBankIndex, type BankItem, type Filters } from "./data";
+import { applyFilters, filtersFromParams, filtersToQuery, lastResults, shuffle, skillName, useBankIndex, type BankItem, type Filters } from "./data";
 
 export function QuestionBank() {
   const params = useSearchParams();
@@ -45,6 +47,27 @@ export function QuestionBank() {
     start({ ids: picked.map((x) => x.id), items: byId, title: `Practice set · ${describe(filters)}`, start: 0 });
   };
 
+  // ?practice=10 (e.g. Home's "Next up" link): start a set from the URL's filters right away, once.
+  const autoStarted = useRef(false);
+  useEffect(() => {
+    const size = Number(params.get("practice"));
+    if (autoStarted.current || !items || !size) return;
+    autoStarted.current = true;
+    window.history.replaceState(null, "", `/practice?${filtersToQuery(filters)}`);
+    let list = applyFilters(items, filters, { results, bookmarks });
+    // Nothing new left with these filters: fall back to the same topics, any status.
+    if (!list.length && filters.status !== "all") list = applyFilters(items, { ...filters, status: "all" }, { results, bookmarks });
+    if (list.length) practice(list, size);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [items]);
+
+  // Questions answered today (for the daily goal in the list header).
+  const now = useNow();
+  const today = useMemo(() => {
+    const k = localDay(now);
+    return now ? attempts.filter((a) => localDay(a.at) === k).length : 0;
+  }, [attempts, now]);
+
   if (error)
     return (
       <section className="mx-auto max-w-3xl px-4 py-16 text-center md:px-8">
@@ -57,7 +80,7 @@ export function QuestionBank() {
 
   if (!items)
     return (
-      <section className="mx-auto max-w-7xl px-4 pt-8 pb-12 md:px-8 md:pt-10" aria-label="Loading question bank">
+      <section className={PAGE} aria-label="Loading question bank">
         <div className="h-10 w-64 animate-pulse rounded-lg bg-surface-2" />
         <div className="mt-3 h-5 w-96 max-w-full animate-pulse rounded-lg bg-surface-2" />
         <div className="mt-10 h-8 w-80 max-w-full animate-pulse rounded-lg bg-surface-2" />
@@ -86,5 +109,5 @@ export function QuestionBank() {
       />
     );
 
-  return <ListView items={items} filters={filters} setFilters={setFilters} results={results} bookmarks={bookmarks} onOpen={open} onPractice={practice} />;
+  return <ListView items={items} filters={filters} setFilters={setFilters} results={results} bookmarks={bookmarks} today={today} onOpen={open} onPractice={practice} />;
 }

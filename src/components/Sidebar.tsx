@@ -67,14 +67,15 @@ function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
           {hydrated ? profile.avatar : <Icon d={ACCOUNT_NAV[0].icon} />}
         </span>
         <span className="min-w-0 rail:sr-only">
-          <span className="block truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest student"}</span>
-          <span className="block truncate text-xs text-side-muted">{named ? "View profile" : "Sign in to save progress"}</span>
+          <span className="block truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
+          <span className="block truncate text-xs text-side-muted">Saved on this device</span>
         </span>
       </Link>
+      {/* Quiet on purpose: the orange accent is for the page's main action. */}
       <Link
         href="/login"
         onClick={onNavigate}
-        className="mt-3 block rounded-lg bg-primary px-3 py-2 text-center text-sm font-semibold whitespace-nowrap text-primary-ink transition-colors hover:bg-primary-hover rail:hidden"
+        className="mt-3 block rounded-lg border border-side-line px-3 py-2 text-center text-sm font-semibold whitespace-nowrap text-side-ink transition-colors hover:bg-side-line rail:hidden"
       >
         Sign in
       </Link>

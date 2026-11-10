@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { QuestionBank } from "@/components/bank/QuestionBank";
+import { PAGE } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "Question Bank",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-10 text-muted md:px-8">Loading question bank…</div>}>
+    <Suspense fallback={<div className={`${PAGE} text-muted`}>Loading question bank…</div>}>
       <QuestionBank />
     </Suspense>
   );

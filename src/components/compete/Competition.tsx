@@ -5,6 +5,7 @@ import { I, Icon } from "@/components/bank/icons";
 import { MAX_BASE, POINTS, ROUNDS, ROUND_MIX, ROUND_SIZE, SPEED_BONUS, shiftWeek, weekLabel, type Board, type MyRound, type RoundId } from "@/lib/competition";
 import { getUserId, updateProfile, useHydrated, useProfile } from "@/lib/store";
 import { CompeteRound, RoundReview, fmtDuration, type RoundData } from "./CompeteRound";
+import { PAGE } from "@/lib/ui";
 
 interface Hub {
   week: string;
@@ -108,7 +109,7 @@ export function Competition() {
   const needsName = hydrated && !profile.name.trim();
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 md:px-8 md:py-12">
+    <div className={PAGE}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Weekly competition</h1>
@@ -198,7 +199,11 @@ export function Competition() {
                 </div>
               ) : (
                 <p className="mt-4 text-sm text-muted">
-                  {m?.status === "running" ? `Your timer is running — ${timeLeft((m.endsAt ?? 0) - (hub?.now ?? 0))} left.` : "One attempt this week. The timer starts when you press Start."}
+                  {m?.status === "running"
+                    ? `Your timer is running — ${timeLeft((m.endsAt ?? 0) - (hub?.now ?? 0))} left.`
+                    : hub && isCurrent
+                      ? `Closes in ${timeLeft(hub.endsAt - hub.now)}. Skip it and you're off this week's ${ROUNDS[r].name} board. One attempt; the timer starts when you press Start.`
+                      : "One attempt this week. The timer starts when you press Start."}
                 </p>
               )}
               <div className="mt-auto pt-5">
@@ -336,7 +341,12 @@ export function Competition() {
           </table>
         )}
       </div>
-      {b && b.total > 0 && <p className="mt-2 text-xs text-muted tabular-nums">{b.total} participant{b.total === 1 ? "" : "s"}</p>}
+      {b && b.total > 0 && (
+        <p className="mt-2 text-sm text-muted tabular-nums">
+          {b.total} participant{b.total === 1 ? "" : "s"}
+          {isCurrent && b.total < 5 && (b.me ? " · You're early — the board fills up as the week goes on." : " · The board fills up as the week goes on.")}
+        </p>
+      )}
     </div>
   );
 }

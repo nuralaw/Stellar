@@ -97,7 +97,7 @@ export function SectionCard({ s, stats }: { s: SectionId; stats: Stats }) {
           </div>
         ))}
       </div>
-      <div className="mt-1 flex justify-between text-[10px] text-muted">
+      <div className="mt-1 flex justify-between text-[11px] text-muted">
         <span>2 weeks ago</span>
         <span>today</span>
       </div>

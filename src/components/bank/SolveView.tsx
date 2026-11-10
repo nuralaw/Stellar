@@ -7,6 +7,8 @@ import { SECTIONS, getDomain } from "@/lib/taxonomy";
 import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { useFocusMode } from "@/lib/focus";
+import { SyncNudge } from "@/components/SyncNudge";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
 import { I, Icon } from "./icons";
@@ -191,6 +193,7 @@ function Summary({
             View progress
           </Link>
         </div>
+        <SyncNudge variant="inline" />
       </div>
 
       {/* Per-question review (big browse sets: only the questions you answered) */}
@@ -248,6 +251,7 @@ export function SolveView({
   onExit: () => void;
   onRestart: (ids: string[], title: string) => void;
 }) {
+  useFocusMode();
   const [pos, setPos] = useState(run.start);
   const [session, setSession] = useState<Record<string, Answer>>({});
   const [finished, setFinished] = useState(false);
@@ -434,12 +438,14 @@ export function SolveView({
           {meta && (
             <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
               <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold text-ink">{SECTIONS[meta.section].short}</span>
-              <span className="hidden rounded-md border border-line px-2 py-0.5 font-medium sm:inline">{SOURCES[meta.source].name}</span>
-              <span className="hidden sm:inline">{getDomain(meta.domain)?.name}</span>
-              <Icon d={I.chevronR} className="hidden h-3 w-3 sm:block" />
-              <span className="font-medium text-ink">{skillName(meta)}</span>
+              {/* Topic + difficulty only; domain, bank and origin live in the tooltip. */}
+              <span
+                className="text-sm font-medium text-ink"
+                title={[getDomain(meta.domain)?.name, SOURCES[meta.source].name, q?.origin, `#${meta.n}`].filter(Boolean).join(" · ")}
+              >
+                {skillName(meta)}
+              </span>
               <DifficultyBadge d={meta.difficulty as Difficulty} />
-              {q?.origin ? <span className="hidden sm:inline" title="Where this question comes from">{q.origin}</span> : <span className="font-mono">#{meta.n}</span>}
               {was !== undefined && !answer && (
                 <span className={`rounded-full px-2 py-0.5 font-medium ${was ? "bg-success-soft text-success" : "bg-danger-soft text-danger"}`}>
                   Previously {was ? "correct" : "incorrect"}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { useFocusMode } from "@/lib/focus";
 import { I, Icon } from "@/components/bank/icons";
 import { addAttempts, addTestResult, saveTestSession, useHydrated, useTestResults, useTestSession, type TestResult, type TestSession } from "@/lib/store";
 import { MODULE_INFO, testName, type ModuleId, type PracticeTest, type TestQuestion } from "@/lib/test-types";
@@ -191,6 +192,7 @@ function Intro({ test, other }: { test: PracticeTest; other: TestSession | null 
 /* ---------------- a module in progress ---------------- */
 
 function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; onFinish: (s: TestSession) => void }) {
+  useFocusMode();
   const moduleId = s.modules[s.module] as ModuleId;
   const info = MODULE_INFO[moduleId];
   const qs = useMemo(() => test.modules[moduleId] ?? [], [test, moduleId]);

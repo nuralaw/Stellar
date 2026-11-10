@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { useFocusMode } from "@/lib/focus";
 import { I, Icon } from "@/components/bank/icons";
 import { TestQuestionView } from "@/components/test/TestQuestionView";
 import { ROUNDS, ROUND_SIZE, type CompetitionQuestion, type ReviewItem, type RoundId } from "@/lib/competition";
@@ -74,6 +75,7 @@ async function post(path: string, body: unknown) {
 
 /** A round in progress: answer, autosave, submit. Calls onDone with the graded round. */
 export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData; userId: string; onDone: (d: RoundData) => void; onExit: () => void }) {
+  useFocusMode();
   const qs = data.questions;
   // Server clock offset so the timer matches the server's deadline.
   const [skew] = useState(() => data.now - Date.now());

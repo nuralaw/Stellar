@@ -111,7 +111,7 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
 
       <div className="mt-4 grid grid-cols-7 gap-1 sm:gap-1.5" role="grid" aria-label={`Study activity, ${fmtMonth(month)}`}>
         {WEEKDAYS.map((w) => (
-          <span key={w} className="pb-1 text-center text-[11px] font-medium text-muted" role="columnheader">
+          <span key={w} className="pb-1 text-center text-xs font-medium text-muted" role="columnheader">
             <span className="sm:hidden">{w[0]}</span>
             <span className="hidden sm:inline">{w}</span>
           </span>
@@ -138,7 +138,7 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
               title={label}
               style={{ background: fill(l) }}
               className={`relative flex aspect-square flex-col rounded-lg border p-1 text-left transition-shadow sm:aspect-auto sm:h-20 sm:p-2 ${
-                l < 0 ? (future ? "border-dashed border-line bg-transparent" : "border-line bg-surface-2/50") : "border-transparent"
+                l < 0 ? (future ? "border-transparent bg-transparent" : "border-transparent bg-surface-2/40") : "border-transparent"
               } ${isTest ? "ring-2 ring-accent ring-offset-1 ring-offset-surface" : iso === today ? "ring-2 ring-ink/70 ring-offset-1 ring-offset-surface" : ""} ${
                 selected === iso && !isTest && iso !== today ? "ring-2 ring-primary/50" : ""
               } hover:shadow-md`}
@@ -168,7 +168,7 @@ export function StudyCalendar({ days, now, testDate }: { days: Map<string, DaySt
       <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted">
         <span className="flex items-center gap-1.5">
           Fewer
-          <span className="h-3 w-3 rounded-sm border border-line bg-surface-2/50" />
+          <span className="h-3 w-3 rounded-sm bg-surface-2" />
           {LEVELS.map((_, i) => (
             <span key={i} className="h-3 w-3 rounded-sm" style={{ background: fill(i) }} />
           ))}

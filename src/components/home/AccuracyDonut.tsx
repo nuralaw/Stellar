@@ -14,8 +14,9 @@ export function AccuracyDonut({ correct, wrong }: { correct: number; wrong: numb
   const [hover, setHover] = useState<Key | null>(null);
   const total = correct + wrong;
   const parts: { key: Key; label: string; value: number; color: string; icon: string }[] = [
-    { key: "correct", label: "Correct", value: correct, color: "var(--chart-correct)", icon: "M5 12.5l4.5 4.5L19 7" },
-    { key: "wrong", label: "Incorrect", value: wrong, color: "var(--chart-wrong)", icon: "M7 7l10 10M17 7 7 17" },
+    // Accuracy is the story: correct in the accent, incorrect as a quiet neutral (labels + icons still tell them apart).
+    { key: "correct", label: "Correct", value: correct, color: "var(--primary)", icon: "M5 12.5l4.5 4.5L19 7" },
+    { key: "wrong", label: "Incorrect", value: wrong, color: "color-mix(in oklab, var(--muted) 55%, var(--surface))", icon: "M7 7l10 10M17 7 7 17" },
   ];
   const pct = (v: number) => (total ? Math.round((v / total) * 100) : 0);
   const both = correct > 0 && wrong > 0;

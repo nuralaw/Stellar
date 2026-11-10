@@ -10,6 +10,7 @@ import { DifficultyBadge } from "./QuestionCard";
 import { DIFF_STYLE, FilterPanel } from "./FilterPanel";
 import { SORTS, STATUSES, applyFilters, emptyFilters, skillName, sortItems, statusOf, type BankItem, type Filters, type Sort, type Status } from "./data";
 import { I, Icon } from "./icons";
+import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 
 const PAGE_SIZE = 20;
 const SET_SIZES = [10, 20, 50, 0] as const; // 0 = all
@@ -66,6 +67,7 @@ export function ListView({
   setFilters,
   results,
   bookmarks,
+  today,
   onOpen,
   onPractice,
 }: {
@@ -74,6 +76,8 @@ export function ListView({
   setFilters: (f: Filters) => void;
   results: Map<string, boolean>;
   bookmarks: Set<string>;
+  /** Questions answered today (all sections). */
+  today: number;
   onOpen: (list: BankItem[], index: number) => void;
   onPractice: (list: BankItem[], size: number) => void;
 }) {
@@ -194,7 +198,7 @@ export function ListView({
   }
 
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-8 pb-12 md:px-8 md:pt-10">
+    <section className={PAGE}>
       {/* Header */}
       <div className="lg:pr-14">
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Question Bank</h1>
@@ -216,7 +220,7 @@ export function ListView({
               }`}
             >
               <span className="flex items-center justify-between gap-3">
-                <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary text-primary-ink" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
+                <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary/15 text-primary" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
                   <Icon d={b.id === "cb" ? I.badge : I.layers} className="h-5 w-5" />
                 </span>
                 <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
@@ -226,19 +230,22 @@ export function ListView({
             </button>
           );
         })}
+        {/* Daily goal: a small, reachable finish line instead of "2 / 3,701". */}
         <div className="col-span-2 rounded-2xl border border-line bg-surface p-4 sm:p-5 lg:col-span-1">
           <div className="flex items-baseline justify-between gap-4">
-            <p className="text-xs font-semibold tracking-[0.08em] text-muted uppercase">{SECTIONS[filters.section].short} progress</p>
-            <p className="text-xs text-muted">{sec.done ? `${pct(sec.correct, sec.done)}% correct` : "Not started"}</p>
+            <p className="text-sm font-medium text-muted">Today&apos;s goal</p>
+            <p className="text-sm font-medium text-primary">{today >= DAILY_GOAL ? "Done 🎉" : `${DAILY_GOAL - today} to go`}</p>
           </div>
           <p className="mt-2 text-2xl font-bold tracking-tight tabular-nums">
-            {fmt(sec.done)}
-            <span className="text-base font-medium text-muted"> / {fmt(sec.total)} done</span>
+            {fmt(Math.min(today, 999))}
+            <span className="text-base font-medium text-muted"> / {DAILY_GOAL} questions</span>
           </p>
           <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-surface-2">
-            <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${Math.max(sec.done ? 1.5 : 0, pct(sec.done, sec.total))}%` }} />
+            <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${Math.min(100, pct(today, DAILY_GOAL))}%` }} />
           </div>
-          <p className="mt-2 text-xs text-muted">{filters.bank === "cb" ? "In the College Board bank" : "In the general bank"}</p>
+          <p className="mt-2 text-[13px] text-muted tabular-nums">
+            {SECTIONS[filters.section].short}: {fmt(sec.done)} done{sec.done ? ` · ${pct(sec.correct, sec.done)}% correct` : ""}
+          </p>
         </div>
       </div>
 
@@ -412,6 +419,7 @@ export function ListView({
               </p>
               <p className="mt-0.5 text-xs text-muted">
                 {doneHere ? `${fmt(doneHere)} attempted · ${fmt(filtered.length - doneHere)} new` : "None attempted yet"}
+                {setCount > 0 && <> · a set of {fmt(setCount)} takes about {fmt(estMinutes(setCount, filters.section))} min</>}
               </p>
             </div>
             <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto">

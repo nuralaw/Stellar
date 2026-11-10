@@ -5,9 +5,14 @@ import { useMemo, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { useHydrated, useTestResults, useTestSession } from "@/lib/store";
 import { MODULE_INFO, testName, type ModuleId, type TestIndexRow } from "@/lib/test-types";
+import { PAGE } from "@/lib/ui";
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 type Filter = "all" | "full" | "rw";
+
+const questionCount = (t: TestIndexRow) => Object.values(t.counts).reduce((a, b) => a + (b ?? 0), 0);
+const minutesOf = (t: TestIndexRow) => (Object.keys(t.counts) as ModuleId[]).reduce((a, m) => a + (MODULE_INFO[m]?.minutes ?? 0), 0);
+const fmtMinutes = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h${m % 60 ? ` ${m % 60} min` : ""}` : `${m} min`);
 
 const chip = (on: boolean) =>
   `rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${on ? "border-ink bg-ink text-bg" : "border-line bg-surface text-muted hover:text-ink"}`;
@@ -28,14 +33,50 @@ export function TestList({ tests }: { tests: TestIndexRow[] }) {
   const last = new Map<string, number>();
   if (hydrated) for (const r of results) if (r.testId) last.set(r.testId, r.total);
   const current = hydrated && session ? tests.find((t) => t.id === session.testId) : undefined;
+  // One clear next step instead of 71 equal cards: the newest full test you haven't taken.
+  const recommended = hydrated && !current ? tests.find((t) => t.sections.length === 2 && !last.has(t.id)) : undefined;
+  const full = tests.find((t) => t.sections.length === 2);
+  const rwOnly = tests.find((t) => t.sections.length === 1);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 md:px-8 md:py-12">
+    <div className={PAGE}>
       <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Practice tests</h1>
       <p className="mt-2 max-w-2xl text-muted">
         {tests.length} past Digital SAT papers from {years[years.length - 1]}–{years[0]}, module by module. Timed like the real test, with an estimated
         score and a question-by-question review.
       </p>
+      <p className="mt-2 text-sm text-muted tabular-nums">
+        {full && (
+          <>
+            Full test: {questionCount(full)} questions · {fmtMinutes(minutesOf(full))}
+          </>
+        )}
+        {rwOnly && (
+          <>
+            {" "}
+            · R&amp;W only: {questionCount(rwOnly)} questions · {fmtMinutes(minutesOf(rwOnly))}
+          </>
+        )}
+      </p>
+
+      {recommended && (
+        <Link
+          href={`/test/${recommended.id}`}
+          className="group mt-6 flex flex-wrap items-center gap-4 rounded-2xl border border-line bg-surface px-5 py-4 transition-colors hover:border-primary/50"
+        >
+          <span className="min-w-0 flex-1">
+            <span className="text-sm font-medium text-primary">Recommended next</span>
+            <span className="mt-0.5 block text-lg font-semibold">{testName(recommended)}</span>
+            <span className="text-sm text-muted">
+              The newest full test you haven&apos;t taken · {questionCount(recommended)} questions · {fmtMinutes(minutesOf(recommended))}
+            </span>
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors group-hover:bg-primary-hover">
+            <Icon d={I.play} className="h-4 w-4" filled />
+            Start test
+          </span>
+        </Link>
+      )}
 
       {current && session && (
         <Link
@@ -88,7 +129,6 @@ export function TestList({ tests }: { tests: TestIndexRow[] }) {
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {g.tests.map((t) => {
               const score = last.get(t.id);
-              const count = Object.values(t.counts).reduce((a, b) => a + (b ?? 0), 0);
               return (
                 <Link
                   key={t.id}
@@ -108,14 +148,18 @@ export function TestList({ tests }: { tests: TestIndexRow[] }) {
                       </span>
                     )}
                   </div>
-                  <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-                    <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold">{t.sections.length === 2 ? "R&W + Math" : "R&W only"}</span>
-                    <span className="text-muted tabular-nums">{count} questions</span>
-                    {!t.reviewed && <span className="text-muted">· explanations coming</span>}
-                  </div>
-                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    {score !== undefined ? "Retake or review" : "Start test"}
-                    <Icon d={I.chevronR} className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  {/* Only what differs between cards; the shared facts are in the header. */}
+                  {(t.sections.length === 1 || !t.reviewed) && (
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+                      {t.sections.length === 1 && <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold">R&amp;W only</span>}
+                      {!t.reviewed && <span className="text-muted">Explanations coming</span>}
+                    </div>
+                  )}
+                  <span className="mt-auto pt-4">
+                    <span className="inline-flex items-center gap-1 rounded-lg bg-surface-2 px-3 py-1.5 text-sm font-semibold transition-colors group-hover:bg-primary group-hover:text-primary-ink">
+                      {score !== undefined ? "Retake or review" : "Start test"}
+                      <Icon d={I.chevronR} className="h-4 w-4" />
+                    </span>
                   </span>
                 </Link>
               );
