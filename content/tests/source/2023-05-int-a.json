@@ -1,0 +1,1104 @@
+{
+ "id": "2023-05-int-a",
+ "title": "May 2023 INT A",
+ "year": 2023,
+ "month": 5,
+ "version": "INT",
+ "form": "A",
+ "sections": [
+  "rw"
+ ],
+ "answerSource": "key",
+ "pdf": "May 2023 INT A, Verbal only, with answers (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "The following text is from John Matheus's 1925 novel Fog . The story happens in a city where heavy fog has set in. The little conductor stood on tiptoe in an effort to keep one hand on the signal rope, craning his neck in a vain and dissatisfied endeavor to pierce the miasma of the fog. The motorman chafed in his box, thinking of the drudging lot of the laboring man. He registered discontent.",
+   "prompt": "As used in the text, what does the word \"registered\" most nearly mean?",
+   "choices": {
+    "A": "enrolled",
+    "B": "valued",
+    "C": "disregarded",
+    "D": "displayed"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "One way to _____ the importance of a scholar's research is to track how often other scholars refer to that research. For example, Federal Reserve Bank of Cleveland economist Loretta J. Mester, who studies central banking, is among the world's most frequently cited researchers in her field, indicating that her work has been quite significant.",
+   "prompt": "Which choice completes the text with the most logical and phrase word or phrase?",
+   "choices": {
+    "A": "diminish",
+    "B": "increase",
+    "C": "vary",
+    "D": "measure"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Although fewer companies trade their stocks on the Tehran Stock Exchange in Tehran, Iran, than on the stock exchanges in London, Mumbai, or Tokyo, the Tehran Stock Exchange has the advantage of focusing on local companies and thus reflecting economic circumstances that are _____ Iran. This sensitivity to unique, rapidly evolving local conditions benefits the companies and investors alike.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "irrelevant to",
+    "B": "prohibitive in",
+    "C": "distinctive to",
+    "D": "unchanging in"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Caracas, Venezuela, and of Fortaleza, Brazil, were surveyed about parks in their cities. Of the 1,043 respondents from Caracas, 44.7% indicated that they use the city's parks, and of the 938 respondents from Fortaleza, 35.7% indicated using city parks. It may be tempting to assume the difference is due to different levels of access to parks; however, given that the percentage of Caracas respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use.",
+   "prompt": "Which choice best describes the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It introduces a counterexample to the scenario described earlier in the text.",
+    "B": "It provides context to help understand the scope of the researchers' survey.",
+    "C": "It marks a shift from a discussion of the researchers’ conclusion to a discussion of their methods.",
+    "D": "It presents a potential explanation for the team's findings that the text goes on to refute."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is adapted from Anton Chekhov's 1899 play Uncle Vanya. Professor Serebrakoff retires and moves to his country estate, which Vanya manages with the help of Sonia, the professor's daughter from a previous marriage. Chekhov portrays the professor as being someone unable to adjust to living at the country estate, as is evident when _____",
+   "prompt": "Which quotation from Uncle Vanya most effectively illustrates the claim?",
+   "choices": {
+    "A": "Professor Serebrakoff says, \"I am a book-worm and a scholar, and am unfamiliar with practical affairs. I cannot, I find, dispense with the help of well-informed people.\"",
+    "B": "Professor Serebrakoff says to Helena, \"My darling, don't leave me alone with [Vanya]. He will begin lecture me.\"",
+    "C": "Professor Serebrakoff says to Helena, \"I am used to my library and the lecture hall and to the esteem and admiration of my colleagues. Now I suddenly find myself plunged into this wilderness (the cottage), condemned to see the same stupid people from morning till night and listen to their futile conversations.\"",
+    "D": "Vanya says to Professor Serebrakoff, \"You write on art without knowing anything about it. Those books of yours which I used to admire are not worth one copper kopeck. You are a hoax!\""
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is from Jerome K. Jerome's 1889 novel Three Men in a Boat. We are creatures of the sun, we men and women. We love light and life. That is why we crowd into the towns and cities, and the country grows more and more deserted every year. In the sunlight—in the daytime, when Nature is alive and busy all around us, we like the open hillsides and the deep woods well enough: but in the night, when our Mother Earth has gone to sleep, and left us waking, oh! the world seems so lonesome, and we get frightened, like children in a silent house. Then we sit and sob, and long for the gas-lit streets, and the sound of human voices, and the answering throb of human life.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To indicate that crowded areas can cause people to feel as though they are children again.",
+    "B": "To caution people not to be so quick to dismiss the natural beauty that can be found in rural areas.",
+    "C": "To address common traits that motivates many people to choose to live in urban environments.",
+    "D": "To illustrate the idea that most people tend to prefer hillsides in the country to certain aspects of towns and cities."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Falcons and horses can see in three dimensions (3D), which helps them perceive distance and depth. Octopuses and squid are thought to lack 3D vision. Many researchers once thought the same about cuttlefish, but Trevor Wardill and his team wanted to test whether this assumption was true. The team studied how cuttlefish wearing 3D glasses reacted to 3D images of shrimp (a favorite prey) projected on a tank wall. Cuttlefish changed their striking position to match the 3D images, suggesting that their vision is more like that of falcons and horses than that of octopuses or squid.",
+   "prompt": "Which choice best describes the main idea of the text?",
+   "choices": {
+    "A": "Cuttlefish eyes are much more complex than those of falcons or horses.",
+    "B": "Wardill's team designed 3D glasses for cuttlefish.",
+    "C": "Before completing their study, Wardill's team thought that cuttlefish have 3D vision, but horses may not.",
+    "D": "The finding of Wardill's team's study suggests like falcons and horses, cuttlefish may also have 3D vision."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "President Richard Nixon is most famous for his participation in the 1970s Watergate political scandal, a convoluted tale of criminality and eroded ethics involving a constellation of associates such as White House Counsel Chuck Colson and White House Counsel John Dean. But Nixon's legacy is complex: he has been praised for his role in creating the Environmental Protection Agency, and he once made an attempt at reforming United States health care policy that is arguably a precursor to the Affordable Care Act, which became law during the Barack Obama administration.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Chuck Colson and John Dean were significant figures in the presidency of Richard Nixon.",
+    "B": "Richard Nixon is commonly linked with an infamous historical event, but this overshadows some of his notable achievements.",
+    "C": "Some of Richard Nixon's policies influenced the policies of later presidential administrations.",
+    "D": "Richard Nixon's reputation is primarily due to the actions of his associates."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Cane is a 1923 novel by Jean Toomer. In one portion of the novel, Toomer uses figurative language to connect the narrator's urban environment of Washington, DC, and the rural South of the narrator's past, writing _____",
+   "prompt": "Which quotation from Cane most effectively illustrates the claim?",
+   "choices": {
+    "A": "“The [train] engines of this valley have a whistle, the echoes of which sound like iterated gasps and sobs. I always think of them as crude music.”",
+    "B": "“And when the wind is from the South, soil of my homeland falls like a fertile shower upon the lean streets of [Washington, DC].”",
+    "C": "“I sang, with a strange quiver in my voice, a promise-song.”",
+    "D": "“The young trees had not outgrown their boxes then. V Street [in Washington, DC] was lined with them.”"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Many believe that lullabies, characterized by their less steady beat, contain some acoustic features that are universally calming to infants. In a study, Constance M. Bainbridge and colleagues played both a lullaby sung in the Western Nahuatl language and a non-lullaby sung in the Serbian language to a group of infants. The researchers also measured the infants' heart rates, as a reduced heart rate is considered a measure of relaxation. They claim that the lullaby did indeed relax the infants.",
+   "prompt": "Which finding, if true, would most directly support Bainbridge and colleagues claim?",
+   "choices": {
+    "A": "The heart rates of infants in the study were more irregular during the lullabies than during non- lullabies.",
+    "B": "Parents of infants in the study chose the lullaby over the non-lullaby when asked which song they Infants' use to calm their child.",
+    "C": "Infants’ heart rates were substantially lower during the lullaby than during the non-lullaby.",
+    "D": "Both the song in Western Nahuatl and the song in Serbian were sung by a female singer."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Contributions of Three Key Industries to Oklahoma Economy in 2017\nIndustry Approximate contribution\nReal estate $ 18,314,700,000\nTribal economic activity $ 7,312,400,000\nAdministration/waste $ 5,830,600,000\nThe Cherokee Nation, the Seminole Nation, and the more than thirty other tribes in Oklahoma operate numerous businesses and collectively generate billions of dollars in revenue. In fact, when the tribes' economic activity is regarded as a single industry, its contribution to the Oklahoma economy in 2017 _____",
+   "prompt": "Which choice uses data from the table to most effectively complete the comparison?",
+   "choices": {
+    "A": "surpassed the contribution made by administration/waste but fell short of that made by real estate.",
+    "B": "exceeded the contribution made by both administration/waste and real estate.",
+    "C": "was greater than the contribution made by real estate but equal to that made by administration/waste.",
+    "D": "was lower than the contribution made by either administration/waste or real estate."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 13
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Water flowing around an obstruction creates vortices (patterns of swirls) of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing by Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao using models of three head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—showed that for large vortices, fish with intermediate heads would be better able than narrow-headed fish to distinguish between vortices and general turbulence in the water. A second research team has therefore hypothesized that in low- visibility conditions, intermediate-headed fish will be more likely than narrow-headed fish to detect obstructions that create large vortices.",
+   "prompt": "Which finding, if true, would most directly support the second research team's hypothesis?",
+   "choices": {
+    "A": "A study using obstructions that created large vortices in low-visibility conditions found that the narrow-headed lake sturgeon ( Acipenser fulvescens ) bumped into obstructions more often than the intermediate-headed dusky smooth-hound ( Mustelus canis ) did.",
+    "B": "A study using obstructions that created large vortices in low-visibility conditions found that the lake sturgeon (Acipenser fulvescens), which has a relatively narrow head, bumped into more than half of the obstructions.",
+    "C": "A study using obstructions that created large vortices in low-visibility conditions found that some specimens of the intermediate-headed dusky smooth-hound (Mustelus canis) bumped into the obstructions more often than other specimens of the same fish did.",
+    "D": "A study using obstructions that created large vortices in low-visibility conditions found that the intermediate-headed dusky smooth-hound (Mustelus canis) avoided more than half of the obstructions."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "In a college course on urban affairs, a student asserts that increased traffic congestion in the 1990s in the United States was present both in very large cities such as New York City, New York, and smaller areas such as Albuquerque, New Mexico, Jacksonville, Florida, and Boise, Idaho; though those smaller areas may have been less affected by traffic congestion than very large cities, this congestion also worsened in them over time.",
+   "prompt": "Which choice best describes data from the graph that support the student's claim?",
+   "choices": {
+    "A": "In at least one of the four urban areas shown, the amount of traffic delay was less than 20 hours per commuter per year at one point between 1990 and 2000.",
+    "B": "While the annual number of hours of traffic delay per commuter was always lower in the Boise, Idaho, area than in the New York City, New York, area for each year between 1990 and 2000, the amount of traffic delay rose in both areas during this period.",
+    "C": "Even though the amount of traffic delay per commuter per year was greater in the Albuquerque, New Mexico, area than in the New York City, New York, area throughout the period from 1990 to 2000, the amounts were nearly identical in 1996.",
+    "D": "In 1992, the amount of traffic delay in the New York City, New York, area was less than 30 hours per commuter per year."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 17,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2023-05-int-a/rw1-13-1.webp",
+     "w": 322,
+     "h": 319,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Ranking of Environmental and Sociocultural Benefits of Urban Agriculture (scale of 1 to 25; 1=highest) Social or ecological service Project leaders Stakeholders General public improvement of attitudes and outlooks 8 1 4 provision of food 4 15 8 provision of raw materials 22 25 15 improvement of physical health 5 4 7 enhancement of pollination 1 7 12 Esther Sanye-Mengual, Kathrin Specht, and their team surveyed three groups of people in Bologna, Italy —leaders of urban agriculture projects, stakeholders in urban agriculture (e. g., food researchers and urban farming associations), and the general public—to compare their views about the extent to which urban agriculture contributes to 25 social or ecological services that the team identified. The researchers used these ratings to rank the services for each group, with a conclusion that both stakeholders and general public regard the improvement of attitudes and outlooks as important benefit of urban agriculture.",
+   "prompt": "Which choice best describes data in the table that support the city planner's conclusion?",
+   "choices": {
+    "A": "The improvement of physical health was ranked lower for the general public than it was for project leaders.",
+    "B": "The provision of raw materials was ranked higher for the general public than was the improvement of attitudes and outlooks.",
+    "C": "The improvement of attitudes and outlooks was ranked higher for stakeholders than it was for the general public.",
+    "D": "The improvement of attitudes and outlooks was ranked higher for the general public than were the other four services."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 19
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Like many other fruit-eating birds on the Hawaiian island of Oahu, the red-whiskered bulbul helps forest plants spread by dropping seeds from the plants' fruits in different spots (a process called seed dispersal). Ecologists have found that fruit-eating birds disperse some seeds from native plants at risk of extinction in the wild, such as the lapalapa tree. However, the birds disperse a higher number of seeds from nightblooming jessamine shrubs and other non-native plants with large populations, likely because there are so many more of those plants for them to choose from. Therefore, it isn't surprising that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "On Oahu, the rate of population increase is higher for non-native plants than it is for vulnerable native forest plants, like lapalapa trees.",
+    "B": "Night-blooming jessamine shrubs and other non-native forest plants only recently began to outnumber native forest plants in the wild.",
+    "C": "On Oahu, native plants, such as the lapalapa tree, are already growing in most of the spots where red-whiskered bulbuls would be likely to drop plant seeds on Oahu.",
+    "D": "The lapalapa tree and the night-blooming jessamine shrub are the plant species most in danger of going extinct in the wild."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 21
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Cut, bent, and welded from discarded metal materials, the sculptures of London-based Nigerian artist Sokari Douglas Camp are meant to challenge viewers to consider their own relationships to material _____ her thought provoking works in the 1993 exhibition Steel Clothes and Ornamentation at the Redfern Gallery in London were no different.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "wastes;",
+    "B": "wastes and to",
+    "C": "wastes,",
+    "D": "wastes"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "A recipient of the Othmer Gold Medal and the Davy Medal from the Royal Society, _____ known as femtochemistry when he devised an optical spectroscopy technique that allowed researchers to study ultrafast chemical reactions occurring within molecules.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "the result of chemist Ahmed Zewail's expansion of the limits of measurability was the introduction of a new scientific discipline",
+    "B": "the introduction of a new scientific discipline by chemist Ahmed Zewail led to the expansion of the limits of measurability",
+    "C": "the limits of measurability were expanded by chemist Ahmed Zewail who introduced a new scientific discipline",
+    "D": "chemist Ahmed Zewail expanded the limits of measurability and introduced a new scientific discipline"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "The Amur River, which is 2,714 miles long, _____ into the Sea of Okhotsk.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "flow",
+    "B": "flows",
+    "C": "have flowed",
+    "D": "are flowing"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 24
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "What is the origin of the word “pessimism”? Interestingly, _____ It first appears in a letter by English author Samuel Taylor Coleridge.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "it was invented by an author.",
+    "B": "it was invented by an author?",
+    "C": "wasn't it invented by an author.",
+    "D": "was it invented by an author."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 25
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "After much debate, _____ finally made a decision: the judges for the 1974 Nobel Prize in Literature would award Eyvind Johnson of Sweden with that year's prize “for a narrative art, far-seeing in lands and ages, in the service of freedom.”",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "you",
+    "B": "it",
+    "C": "anyone",
+    "D": "they"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 26
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "Today, the Michelin Guide is widely known as the arbiter of fine dining, with its coveted 3-star rating being awarded to top restaurants like Xin Rong Ji in Beijing. However, few know the guide started as a marketing gimmick in 1900, when brothers Andre and Edouard Michelin sought to increase profits for their tire company by encouraging their customers to _____ their cars across France, visiting the guide’s recommended hotels and restaurants along the way.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "drive.",
+    "B": "drive",
+    "C": "drive:",
+    "D": "drive;"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 27
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Pinon Chapter is one of the 110 chapters of the Navajo Nation (Naabeeho Bincihdsdzo). The chapter, known as Be'ek'id Bas Ahoodzdni in the Navajo language (Dine Bizaad), was the subject of a profile _____ in the Navajo Times on December 12, 2013.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "appearing",
+    "B": "appears",
+    "C": "has appeared",
+    "D": "appeared"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 28
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Writer Silvia Moreno-Garcia’s love of short fiction began when she read a collection of Edgar Allan Poe stories as a child, and she later would become a prolific short story writer herself, publishing pieces like “In the Details” (2015) and “To See Pedro Infante” (2014). Yet she's best _____ especially since her 2020 novel Mexican Gothic reached the New York Times Best Sellers list—as a novelist.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "known",
+    "B": "known:",
+    "C": "known—",
+    "D": "known;"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 29
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "In 1931, scientists first isolated a sample of the steroid hormone androsterone, which they knew existed in animals—and, they assumed, only in animals. _____ researchers would find androsterone in Swiss cheese plants (Monstera deliciosa), but this discovery wouldn't come until decades later.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "For example,",
+    "B": "Eventually,",
+    "C": "In other words,",
+    "D": "Earlier,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 30
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "The first documented use of the English word “muzzle” is attributed to poet Geoffrey Chaucer's 1385 work The Knight's Tale. However, Chaucer didn't write in Modern English; _____ he wrote in what we now call Middle English, which was commonly used during the period.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "as a result,",
+    "B": "similarly,",
+    "C": "rather,",
+    "D": "finally,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 31
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nJean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings. His work Thin in the Old was completed in 1986 and sold at auction in 2020. Thin in the Old is composed of acrylic, oil, and paper collage on wood and measures 3,028 square inches in area. His work Victor was completed in 1987 and sold at auction in 2017. Victor is composed of acrylic, oil stick, and crayon on canvas and measures 9,432 square inches in area.",
+   "prompt": "Which choice most effectively uses information from the given sentences to emphasize how the two works are similar?",
+   "choices": {
+    "A": "Composed by artist Jean-Michel Basquiat in 1986 and 1987, respectively, both Thin in the Old and Victor use acrylic paint as a medium.",
+    "B": "Artist Jean-Michel Basquiat completed Thin in the Old in 1986, and Victor followed in 1987.",
+    "C": "Artist Jean-Michel Basquiat's work Thin in the Old is composed of acrylic, oil, and paper collage, while Victor is composed of acrylic, oil stick, and crayon.",
+    "D": "Between artist Jean-Michel Basquiat's works Victor and Thin in the Old, the former is the larger of the two."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 32
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals. Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them. Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them. The mineral talc has a Mohs scale number of 1. The mineral fluorite has a Mohs scale number of 4. The mineral topaz has a Mohs scale number of 8.",
+   "prompt": "The student wants to compare the hardness of talc and topaz. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Topaz can leave visible scratches on fluorite, which is why topaz has a higher number than fluorite on the Mohs scale of mineral hardness.",
+    "B": "The Mohs scale of mineral hardness can be used to order fluorite, talc, and topaz by their ability to scratch other minerals.",
+    "C": "A mineral with a Mohs number of 4, like fluorite, is harder than one with a Mohs number of 1, like talc.",
+    "D": "Topaz can leave visible scratches on talc, which means that topaz is harder than talc."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 33
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Sarah Marquis, who walked 16,000 kilometers across Asia, Siberia, and Australia, undoubtedly accomplished much, but to _____ a lasting historical legacy for oneself, almost nothing is more effective than being the first to do something. For example, people will always remember that Anesia Pinheiro Machado was the first female pilot in Brazil to carry passengers and the first to make stunt flights.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "recognize",
+    "B": "undermine",
+    "C": "constrain",
+    "D": "establish"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 35
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The swordfish can swim very fast—up to 97 kilometers per hour (km/hr)—but it is significantly slower than the frigate bird, which can fly at speeds up to 153 km/hr. The difference between these speeds is largely _____ of the fact that the features that make flight possible do less to limit top speeds than the features suitable for swimming through water.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "a consequence",
+    "B": "an explanation",
+    "C": "a repudiation",
+    "D": "an objective"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 36
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Whether the reign of a French monarch such as Louis VII or Henry V was historically consequential or relatively uneventful, its trajectory was shaped by questions of legitimacy and therefore cannot be understood without a corollary understanding of the characteristics without which the monarch would have been forced to _____ the throne.",
+   "prompt": "Which choice completes the text with the precise word or phrase?",
+   "choices": {
+    "A": "reciprocate",
+    "B": "annotate",
+    "C": "abandon",
+    "D": "equalize"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 37
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "The Caves of Gargas paintings—stencils of human hands found in what is now France and dating from around 27,000 years ago—are thought of as art today, but the question of whether the people of the time understood the paintings as something akin to art in modern sense or in some other way entirely is ______: we will never be able to answer it.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "irresolvable",
+    "B": "self-contradictory",
+    "C": "imperative",
+    "D": "unavoidable"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 38
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is adapted from William Wordsworth's 1798 poem \"Lines Written a Few Miles above Tintern Abbey.” Once again Do I behold these steep and lofty cliffs, Which on a wild secluded scene impress Thoughts of more deep seclusion; and connect The landscape with the quiet of the sky.",
+   "prompt": "As used in the text, what does the word \"deep\" most nearly mean?",
+   "choices": {
+    "A": "Tough",
+    "B": "Hideous",
+    "C": "Complicated",
+    "D": "Intense"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 39
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Though many _____ studies of the effect of altitude on blood chemistry focus on people who live above sea level, researchers Suleiman Al-Sweedan and Moath Alhaj recently chose the novel path of focusing on people who live below sea level, in locations such as the California towns of Salton City and Coachella.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "eccentric",
+    "B": "meager",
+    "C": "conventional",
+    "D": "random"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 40
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Text 1\nThe poet Audre Lorde once claimed that poetry is the most inexpensive of art forms to practice. While people who pursue other art forms—sculpture, architecture, long-form prose—require large blocks of uninterrupted time as well as money to complete their work, poets can write, as Lorde said, \"between shifts, in the hospital pantry, on the subway, and on scraps of surplus paper.\" So poets can make worthwhile art even if they must earn their living in another way.\nText 2\nAny assessment of the state of contemporary poetry must reckon with the professionalization of the field. While it is possible in theory for anyone to publish in Virginia Quarterly Review, Kenyon Review, or a similar major poetry outlet, many people who do so have professional training in poetry and extensive practice writing it, which requires time not often available to those who must also work full-time jobs. Thus, financial security indirectly affects which people become poets.",
+   "prompt": "Based on the texts, how would Lorde (Text 1) most likely respond to the argument presented in Text 2?",
+   "choices": {
+    "A": "By indicating that those poets who publish in major poetry journals are most likely to be able to earn a living by writing poetry.",
+    "B": "By pointing out that people can produce valuable poetry in other circumstances than those described by the author of Text 2.",
+    "C": "By suggesting that those artists who specialize in more financially rewarding artistic forms are unlikely to also be successful as poets.",
+    "D": "By asserting that people often work full-time jobs in order to afford the professional training described in Text 2."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 41
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "The Yellow Admiral, first published in 1996, is a novel in Patrick O'Brian's Aubrey/Maturin series, which includes twenty books plus an unfinished fragment of a twenty-first. Like the rest of the books in the series, The Yellow Admiral has a rather abrupt ending, but the following book, The Hundred Days, picks up neatly where The Yellow Admiral leaves off. Thus, the sudden ending is only an issue if one considers the books as independent texts—the Aubrey/Maturin series is best thought of as a single incredibly long work, similar to other multivolume stories, such as Marcel Proust's In Search of Lost Time.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Over time, the Aubrey/Maturin series has acquired the same eminence among critics as works like In Search of Lost Time that have similar structures.",
+    "B": "A certain understanding of the structures of the novels in the Aubrey/Maturin series is helpful if one wishes to appreciate the series.",
+    "C": "Many readers find the Aubrey/Maturin novels to be remarkably entertaining despite flaws in the novels' structures.",
+    "D": "The Yellow Admiral and The Hundred Days are two of the most complex of O'Brian's novels due in part to their unconventional structures."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 43
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "The following text is from Mary Shelley's 1818 novel Frankenstein. Victor Frankenstein, who narrates this portion of text, describes the state of scientific knowledge as he began his own study of the natural world. The untaught peasant beheld the elements around him and was acquainted with their practical uses. The most learned philosopher knew little more. He had partially unveiled the face of Nature, but her immortal lineaments were still a wonder and a mystery. He might dissect, anatomize, and give names; but, not to speak of a final cause, causes in their secondary and tertiary grades were utterly unknown to him. I had gazed upon the fortifications and impediments that seemed to keep human beings from entering the citadel of nature, and rashly and ignorantly I had repined.",
+   "prompt": "Which choice best describes the main idea of the text?",
+   "choices": {
+    "A": "Victor became disappointed in science when he realized that the practical knowledge laypeople have of nature is often deeper than the scientific understanding.",
+    "B": "Victor was impressed by the layperson's practical understanding of nature but thought science provided a clearer understanding.",
+    "C": "Victor was immediately impressed by the advantages of the scientific approach to understanding natural phenomena.",
+    "D": "Victor thinks that conventional scientific approaches to understanding natural phenomena will not yield the answers he seeks."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 44
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Minimum and Maximum Depths of Stony Coral Species in Caribbean and Indo-Pacific Waters Species Minimum depth (meters) Maximum depth (meters) Plerogyra discus 8 15 Acropora echinata 8 25 Psammocora albopicta 1 28 Agaricia undata 20 80 Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler, darker mesophotic zone (30 to 150 meters below the surface). However, it isn't clear that all such species will be able to tolerate mesophotic conditions. In 2018, Luiz Rocha and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "A) Agaricia undata, because its minimum depth of 20 meters is in the shallow zone.",
+    "B": "B) Plerogyra discus, because its maximum depth of 15 meters is furthest from the mesophotic zone.",
+    "C": "C) Acropora echinata, because its maximum depth of 25 meters is close to but doesn't reach the mesophotic zone.",
+    "D": "D) Psammocora albopicta, because its minimum depth of 1 meter is the shallowest of those listed."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 46
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "The Harlem Renaissance, which gave us great literary works like May Miller's play The Bog Guide and nonliterary works like James Van DerZee's photograph Couple, Harlem, is often said to have ended in the 1930s shortly after the Great Depression began. But some scholars argue that the Harlem Renaissance never really ended because it continues to shape culture in the United States today. These scholars therefore suggest that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "if a cultural movement has both literary and nonliterary innovations, then it is likely to be influential.",
+    "B": "if a cultural movement is very innovative, then it is unlikely to be able to sustain itself for long.",
+    "C": "if literary works of a cultural movement are influential, then it doesn't matter whether the unliterary works are.",
+    "D": "if the influence of a cultural movement continues, then in some sense the movement itself continues."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 48
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Architects looking for inspiration may examine photographs of iconic buildings such as the Forbidden City in Beijing. A two-dimensional photograph, however, cannot capture how a building interacts with its surroundings, whether by complementing, blending in with, or perhaps even clashing with sights and activities nearby. An image of the Forbidden City thus ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "serves to exaggerate the building's historical importance.",
+    "B": "fails to convey the full impact of the building's design and structure.",
+    "C": "misrepresents how the building is perceived by people who have never visited Beijing.",
+    "D": "conceals the subtle deterioration of the building's materials."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 49
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Some studies can be done well with relatively little money. For example, a marketing study simply trying to identify the average amount customers spend per transaction at an online retailer has a straightforward central question that doesn't require many years of data collection. But it is much more expensive to conduct a longitudinal study like the Household, Income and Labour Dynamics in Australia Survey (HILDA), which looks at data for 25,000 people in Australia to find trends in economic well-being that can take a long time to develop. This requires lots of funding because _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "marketing studies are not likely to require data from very many individuals.",
+    "B": "data from 25,000 people may not be enough to reveal significant trends in economic well- being.",
+    "C": "long-term trends in economic well-being are hard to find without collecting data over many years.",
+    "D": "long-term trends in marketing can be found without examining many years of data."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 50
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Some fuel additives contain cerium oxide nanoparticles (CeO2-NPs), which can leach into waterways and soils via wastewater. In a 2015 study, Mael Garaud and colleagues found that CeO2-NPs can accumulate in the bodies of zebra mussels (Dreissena polymorpha). While bioaccumulation of manufactured nanoparticles may be inherently worrisome, it has been hypothesized that CeO2-NP bioaccumulation in invertebrates like D. polymorpha could serve a valuable proxy role, obviating the need for manufacturers to conduct costly and intrusive sampling of vertebrate species such as rainbow trout (Oncorhynchus mykiss), commonly used in regulatory compliance testing for manipulative bioaccumulation, as environmental protection laws currently require.",
+   "prompt": "Which finding, if true, would most directly weaken the hypothesis presented in the text?",
+   "choices": {
+    "A": "When D. polymorpha and O. mykiss are exposed to similar levels of CeO2-NPs, concentrations of CeO2-NPs in animals of both species show little variation from individual to individual.",
+    "B": "The rate of CeO2-NPs uptake in D. polymorpha differs from the rate of CeO2-NPs uptake in O. mykiss in a way that is not yet well understood by researchers.",
+    "C": "D. polymorpha has been shown to accumulate several other types of manufactured nanoparticles in addition to CeO2-NPs, whereas O. mykiss has been shown to accumulate only CeO2-NPs.",
+    "D": "Compared with O. mykiss, D. polymorpha can accumulate detectable CeO2-NPs concentrations with significantly fewer negative effects."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 51
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Generally speaking, whether consumers give a good comment or a bad one is closely related to their expectations about the kind of service they will get. Some gas stations are located near schools while others are near restaurants. People who go to gas stations near schools usually get discounts for refueling their automobiles. However, such discounts are not provided at gas stations near restaurants. Recent studies show that the rate of good comments versus bad comments made to the gas stations near cafeteria is lower than the rate near schools, suggesting that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "The number of people going to gas stations at restaurants is greater than that of people going to gas stations near schools.",
+    "B": "People who go to gas stations at restaurants have higher expectations about the service because of higher price.",
+    "C": "People are more willing to give good comments to gas stations near schools.",
+    "D": "More gas stations should be established near schools."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 53
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Saeed M. Z. A. Tarabieh conducted a study of consumer attitudes toward Jordanian food and beverage companies and found that for consumers who value environmental conservation, their likelihood of purchasing a product decreased when their perception of the product's risk of causing environmental harm increased. Subsequently, other researchers conducted a study of various demographic groups in Turkey, investigating participants' intentions to purchase a new skincare product, and found that, on average, parents of small children had the lowest perception among all the demographic groups in the study of the environmental risks of the skin-care product. Assuming that the results of Tarabieh's study are broadly applicable, this finding suggests that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the new skin-care product is less appealing to parents of small children than other similar products on the market are.",
+    "B": "there is not a meaningful difference in the average likelihood of purchasing environmentally friendly products among the demographic groups included in the study.",
+    "C": "parents of small children likely prioritize other factors over a product's environmental sustainability when making purchasing decisions.",
+    "D": "parents of small children might be more likely than participants in the other demographic groups to purchase the skin-care product."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 55
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "During the American Civil War, Thomas Morris Chester braved the front lines as a war correspondent for the Philadelphia Press. Amplifying the voices and experiences of Black soldiers _____ of particular importance to Chester, who later became an activist and lawyer during the postwar Reconstruction period.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "were",
+    "B": "have been",
+    "C": "are",
+    "D": "was"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 56
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "The first multi-player computer video game, Steve Russell's Spacewar!, challenged games' abilities not only to maneuver their spaceships but also to decide how best to utilize their limited weaponry so that they could defeat other Spacewar!'s _____ development, playing a video game was a more solitary experience in which one game player tried to beat a single computer.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "players, before",
+    "B": "players and before",
+    "C": "players. Before",
+    "D": "players before"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 57
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "To most observers, it might seem like the net-casting spider's small web consists of the same silk spun by other arachnids that make larger, fixed _____ the net casting spider uses a unique, stretchy silk to construct a net between its front legs that has more elasticity, enabling the net to expand tremendously when the spider lunges to capture prey. Biologist Jessica Garb and her research team hypothesize that this superior stretchiness comes from proteins in its silk.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "webs, however,",
+    "B": "webs however",
+    "C": "webs, however;",
+    "D": "webs; however,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 58
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "Advancing a previous discovery by K. Barry Sharpless, chemist Carolyn Bertozzi—winner of the 2022 Nobel Prize in Chemistry alongside Sharpless and Morten Meldal—devised a method for the removal of toxic byproducts from click chemistry _____ healthy cells in humans for use in a variety of pharmaceutical treatments.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "to protect",
+    "B": "protected",
+    "C": "and protecting",
+    "D": "protecting"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 59
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "According to Maria Magdalena Llabre of the University of Miami, the reason that the rate of heart disease seems lower in US Hispanics than in their non-Hispanic white counterparts while similarly _____ is that the nature of the Spanish language better supports emotional expression, helping its speakers manage their stress responses.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "stressed",
+    "B": "stressed,",
+    "C": "stressed;",
+    "D": "stressed:"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 60
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "The modern board game backgammon has its roots in the earliest identifiable tables game from the Byzantine Empire, tabula. In both games, the rules are the same for hitting a blot (landing on an occupied point) and bearing off (removing checkers from the board); re-entering one of the checkers into the game also _____ the same rules in backgammon as in tabula.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "follows",
+    "B": "are following",
+    "C": "have followed",
+    "D": "follow"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 61
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "The moon Leda orbits Jupiter in the same direction that the planet rotates. _____ Leda's orbit is described as prograde. Ananke, another of Jupiter's moons, orbits in the opposite direction, so its orbit is described with the opposite term: retrograde.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In reality,",
+    "B": "Nevertheless,",
+    "C": "Hence,",
+    "D": "Next,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 62
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "As part of a study, participants were asked to list animals they thought of as “charismatic,” which was defined as “attractive, fascinating, or appealing.” Researchers compiled the responses into a single list and found that the cheetah and the blue whale both landed in the top twenty. _____ no animal outranked the tiger.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In other words,",
+    "B": "As a result,",
+    "C": "Still,",
+    "D": "For example,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 63
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "Shonte Tucker has worked at NASA's famed Jet Propulsion Laboratory (JPL), one of the world's leading facilities for robotic space exploration. _____ Tucker worked as a systems engineer on the JPL's Mars 2020 Perseverance rover team, which improved upon the 2011 Curiosity rover design by adding a coring drill to the robot that could collect rock samples for later analysis.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Conversely,",
+    "B": "Specifically,",
+    "C": "Finally,",
+    "D": "Nevertheless,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 64
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "Superconductors, materials that transmit electricity without any resistance to the flow of the electric current, only work at extremely low temperatures. In a 2023 article, _____ asserts that researchers have made progress toward developing superconductors that can function at room temperature and still carry up to five times as much electricity as current cables.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "physicist Mishkat Bhattacharya,",
+    "B": "physicist, Mishkat Bhattacharya",
+    "C": "physicist Mishkat Bhattacharya",
+    "D": "physicist, Mishkat Bhattacharya,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 65
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "Stephanie Jenouvrier of the Woods Hole Oceanographic Institution asserts that when climate change results in sea ice abatement, emperor penguin chicks encounter fewer solid surfaces for required respite when they are not swimming, which increases their chance of drowning and thus endangers this species. If elevated temperatures continue, _____ Jenouvrier conducted a study to find the answer.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "these penguins could become extinct.",
+    "B": "these penguins could become extinct?",
+    "C": "could these penguins become extinct.",
+    "D": "could these penguins become extinct?"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 66
+  }
+ ]
+}

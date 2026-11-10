@@ -1,0 +1,1935 @@
+{
+ "id": "2024-10-int-a",
+ "title": "Oct 2024 INT A",
+ "year": 2024,
+ "month": 10,
+ "version": "INT",
+ "form": "A",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "key",
+ "pdf": "Oct 2024 INT A, with answers (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "To assist with the development of new water-repellant materials for aviation and other applications, a team including both engineers and entomologists conducted a study of the water-repellant properties of cicada wings. The team explained that the _____ experts in these two disciplines resulted in a more comprehensive approach than independent efforts by experts in either discipline could have achieved.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "skepticism toward",
+    "B": "exaggeration of",
+    "C": "distrust among",
+    "D": "collaboration between"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The following text is adapted from John Matheus’s 1926 short story, \"Mr. Bradford Teaches Sunday School.\" Mr. Bradford is driving through the countryside in Florida. The moss in the towering water oaks had become enlivened with a verdant sheen of silver and hung like festoons of carnival or like funeral decorations for the mourning of the dead. The pine green was resplendent. The bald cypresses spread themselves along the watercourses while the willows wept as they always did. Mr. Bradford was conscious of this gorgeous display of nature.",
+   "prompt": "As used in the text, what does the word \"display\" most nearly mean?",
+   "choices": {
+    "A": "Reproduction",
+    "B": "Concealment",
+    "C": "Pretentiousness",
+    "D": "Exhibition"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Both sharks and crayfish can detect electrical fields around them, but the _____ of their sensitivities differs substantially. Whereas crayfish can detect fields emitted by household electronics, those are many times stronger than the fields created by water moving through Earth's magnetic field, which sharks are sensitive enough to detect.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "magnitude",
+    "B": "firmness",
+    "C": "gathering",
+    "D": "orientation"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "New and interesting research conducted by Suleiman A. Al-Sweedan and Moath Alhaj is inspired by their observation that though studies of the effect of high altitude on blood chemistry are ______, the effect on blood chemistry of living in locations below sea level, such as the California towns of Niland and Heber, has received comparatively little notice.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "abundant",
+    "B": "equivocal",
+    "C": "sporadic",
+    "D": "preliminary"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is adapted from Adib Khorram's 2018 novel Darius the Great Is Not Okay. The narrator, Darius, is a teenager visiting family in Iran. He and his friend Sohrab are at the entrance of the ruins of the ancient city of Persepolis. “The Gate of All Nations,” Sohrab said. He gestured to the lamassus [sculptures] and pillars surrounding us. “That's the name in English.” It wasn't much of a gate anymore, since anyone of any nation could have easily stepped around it instead of walking through. But it was still amazing. Behind the lamassu, more columns sprouted from the ground like ancient trees in a petrified forest, forty feet tall, spindly but still miraculously upright. Giant stone slabs formed the remains of what must once have been a breathtaking structure.",
+   "prompt": "Which choice best describes the function of the underlined portion of the text?",
+   "choices": {
+    "A": "It presents an image to illustrate what one part of the ruins looks like.",
+    "B": "It emphasizes that the narrator already knows a lot about the city.",
+    "C": "It suggests that the narrator had expected to visit a forest.",
+    "D": "It indicates the specific time in the past when the buildings became ruins."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Mexican architect Luis Barragan's prolific career, which spanned the 1920s to the 1980s, evolved through distinct phases. After traveling to the United States and Europe in the early 1930s and immersing himself in a broader architectural discourse, Barragan shifted his style to incorporate principles of modernism, as seen in the apartment building in Calles Lerma and Guadiana. The project's unadorned geometric forms, typical of the modernist aesthetic, contrasted with the historically inspired architecture seen in his earlier projects in Guadalajara, such as the Cristo House.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "It summarizes the career of a particular architect, states how a journey influenced that architect's career, and then emphasizes how influential that architect's career has been.",
+    "B": "It provides a general statement about the career of a particular architect, highlights a transition in that career, and then expounds on the ways that transition is evident in the architect's work.",
+    "C": "It explains the design aesthetic of a particular architect, acknowledges the sources of those design choices, and then contrasts that aesthetic with the designs of earlier architects.",
+    "D": "It presents a general claim about a particular architect's career, describes the early stages of the architect's career, and then explains a later shift in that career."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Can field mustard plants grow on Mars? Can pea plants? You might think the answer to these questions is obviously no, but researchers in the Netherlands recently showed that the seeds of many common plant species can germinate in soil designed to simulate Martian conditions, as long as water is supplied. In fact, some species actually did better in Martian soil than in Earth soil: 30 percent of field mustard seeds sprouted when planted in simulated Martian soil, compared with 4 percent that did when planted in soil from their home planet.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To answer long-standing questions about how Martian soil conditions can be simulated on Earth.",
+    "B": "To present a surprising finding about plants grown in soil intended to be similar to Martian soil.",
+    "C": "To discuss an unexpected result about the role of water in plants grown in simulated Martian soil.",
+    "D": "To explain an important study of differences in the composition of Martian soil and the composition of Earth soil."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "The following text is adapted from Jerome K. Jerome's 1889 novel Three Men in a Boat (To Say Nothing of the Dog). We [people] are creatures of the sun. We love light and life. That is why we crowd into the towns and cities, and the country grows more and more deserted every year. In the sunlight—in the daytime, when Nature is alive and busy all around us, we like the open hill—sides and the deep woods well enough: but in the night, when our Mother Earth has gone to sleep, and left us waking, oh! the world seems so lonesome, and we get frightened, like children in a silent house. Then we sit and sob, and long for the gas-lit streets, and the sound of human voices, and the answering throb of human life.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To address common traits that motivate many people to choose to live in urban environments",
+    "B": "To indicate that people sometimes experience feelings of isolation in crowded areas",
+    "C": "To illustrate the idea that most people tend to prefer hillsides in the country to certain aspects of towns and cities",
+    "D": "To caution people not to be so quick to dismiss the natural beauty that can be found in rural areas"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Conservationists worldwide are working to protect ecosystems from habitat destruction and biodiversity loss, and in many cases, initiatives that rely on natural features or processes can help address such challenges. In response to a rapidly dwindling population of blueback salmon, the Quinault Indian Nation (a tribe in Washington State) partnered with the conservation organization Wild Salmon Center to restore naturally occurring logjams in the Quinault River. The logjams create shady pools where the blueback salmon can rest and spawn, thus promoting blueback population recovery.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "A partnership between the Quinault Indian Nation and Wild Salmon Center shows the importance of collaborative approaches to preserving biodiversity.",
+    "B": "As indicated by a recent project, logjams help the blueback salmon thrive and reproduce.",
+    "C": "Scientists now realize that nature-based conservation methods offer better long-term solutions to environmental issues than methods that are not nature-based do.",
+    "D": "Nature-based approaches can be effective ways to achieve conservation goals."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Millions of Metric Tons of Copper Mined in 1995 and 2020\nCountry 1995 2020\nMexico 0.33 0.73\nUnited States 1.85 1.20\nPeru 0.38 2.15\nPoland 0.38 0.39\nWhile doing research for a paper about metal exports, a student finds information about copper mining in different countries in 1995 and 2020. The student notes that Peru produced 0.38 million metric tons of copper in 1995 and _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "1.20 million metric tons of copper in 2020.",
+    "B": "0.39 million metric tons of copper in 2020.",
+    "C": "2.15 million metric tons of copper in 2020.",
+    "D": "0.73 million metric tons of copper in 2020."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Puerto Rico is an island in the Caribbean Sea. Indigenous people there started raising guinea pigs about 1,700 years ago. Guinea pigs had originally been domesticated much earlier in both Colombia and Peru. So were guinea pigs brought to Puerto Rico from Colombia or from Peru? Ancient Caribbean trade routes connected Puerto Rico with Colombia but not with Peru. Therefore, guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs.",
+   "prompt": "Which finding, if true, would most directly weaken the underlined claim?",
+   "choices": {
+    "A": "Guinea pigs are common in ancient Puerto Rican art, especially in pottery.",
+    "B": "Ancient guinea pigs in Puerto Rico were genetically less similar to ancient guinea pigs in Colombia than to ancient guinea pigs in Peru.",
+    "C": "The guinea pig population of ancient Colombia was much larger than the guinea pig population of ancient Peru.",
+    "D": "Modern breeds of guinea pigs don't look like images of guinea pigs in ancient art from Puerto Rico, Colombia, and Peru."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 13
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Unlike modern giant pandas, which are exclusive to Asia, ancient panda species were dispersed across Europe and Asia. A debate in paleontological discourse focuses on whether ancient pandas first emerged in Asia before migrating to Europe, or vice versa. A pair of European panda teeth found in Bulgaria led researchers to conclude that they likely belonged to an undiscovered species of panda that the researchers dubbed Agriarctos nikglavi. The teeth are relatively recent among European panda fossils, some of which date back to more than 10 million years ago, implying that _____.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "pandas presumably originated in some part of Asia before migrating to Europe.",
+    "B": "the A. nikolovi teeth suggest a later origin for pandas in Europe than was previously believed.",
+    "C": "pandas likely originated in Europe since the new species was discovered in Bulgaria.",
+    "D": "the A. nikolovi teeth are unlikely to assist in the resolution of the debate surrounding the origins of pandas."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 14
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Almost all works of fiction contain references to the progression of time, including the time of day when events in a story take place. In a 2020 study, Allen Kim, Charuta Pethe, and Steven Skiena claim that an observable pattern in such references reflects a shift in human behavior prompted by the spread of electric lighting in the late nineteenth century. The researchers drew this conclusion from an analysis of more than 50,000 novels spanning many centuries and cultures, using software to recognize and tally both specific time references, that is, clock phrases, such as 7 a.m. or 2:30 p.m.—and implied ones, such as mentions of meals typically associated with a particular time of day.",
+   "prompt": "Which finding from the study, if true, would most directly support the researchers' conclusion?",
+   "choices": {
+    "A": "Novels published after the year 1800 include the clock phrase 10 a.m. less often than novels published before the year 1800 do.",
+    "B": "Among novels published in the nineteenth century, implied time references become steadily more common than clock phrases as publication dates approach 1900.",
+    "C": "The time references of noon (12 p.m.) and midnight (12 a.m.) are used with roughly the same frequency in the novels.",
+    "D": "Novels published after 1880 contain significantly more references to activities occurring after 10 p.m. than do novels from earlier periods."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "As exemplified by Temiar songs about landforms and landmarks and Lakota songs about gathering mouse beans, ecological information can be transmitted in Indigenous songs, and in some instances is maintained only in this way. Kwaxsistalla Wathl’thla, a song keeper for the Kwakwaka’wakw people in Canada, collaborated with ethnobiologist Dana Lepofsky et al., sharing songs referencing terraced intertidal clam gardens the people implemented in the past to foster healthy development of a dietary staple. Drawing on archaeological evidence as well, Lepofsky et al. determined that the prevalence of the practice described in the songs corresponded with growth in clam size and abundance despite increased harvesting pressure—a finding that demonstrates that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "representation of practical applications of ecological knowledge is the defining characteristic of the music of certain indigenous peoples.",
+    "B": "the Kwakwaka’wakw people likely would not have detailed their creation of clam gardens in songs if their efforts had not produced significantly larger clams.",
+    "C": "the clams harvested from intertidal terraces by Kwakwaka’wakw people in the past likely were a different species than the clams found in those areas today.",
+    "D": "effective methods for the cultivation of sources of sustenance are among the ecological knowledge preserved in Indigenous songs."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 16
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "A group of primate conservationists recently began a long-term study of the effects of different conservation strategies on the white-headed langur (Trachypithecus poliocephalus). The species population is currently estimated to be around 1,000. It is challenging to accurately count these primates, however, which makes it difficult to tell whether the population is increasing, decreasing, or staying stable. The study may thus _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "risk making inaccurate conclusions about the effectiveness of different conservation strategies.",
+    "B": "cause other conservationists to adopt a new methodology for counting populations.",
+    "C": "benefit from including species beyond the white-headed langur.",
+    "D": "fail to consider less-well-known conservation approaches for the white-headed langur."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 18
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Writing in hieroglyphs, ancient Egyptians recorded measurements using units such as the sa, a unit of _____ and the khar, a unit of volume. The sa, for instance, is written as a hieroglyph that looks like a duck or goose.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "area; the shesep; a unit of length;",
+    "B": "area the shesep, a unit of length",
+    "C": "area; the shesep, a unit of length;",
+    "D": "area, the shesep; a unit of length,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 19
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Included in Serial Intent, a 2017 group exhibition at the Akron Art Museum in Ohio, was the work of artist Lorna Simpson, who is best known for her multimedia artworks that _____ images of African American women with text fragments. Her work is credited with expanding the horizons of conceptual photographic art, and it challenges conventional notions of race, gender, history, and memory.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "juxtapose-",
+    "B": "juxtapose,",
+    "C": "juxtapose:",
+    "D": "juxtapose"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 20
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Contrasting a high saturation color palette against dark paper and stoneware, Atlanta-based artist Jiha Moon creates fused pieces, wherein Korean folk art, Western contemporary art, and global popular culture mix. New York's Derek Eller Gallery _____ her work in a solo exhibition that ran in early 2022.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "features",
+    "B": "has been featured",
+    "C": "featured",
+    "D": "will feature"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 21
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "While the greater adjutant can be found in places like the Inner Gulf of Thailand and the Chhep Wildlife Sanctuary in Cambodia, more than 80 percent of this endangered stork species is found in Assam, India. There, wildlife biologist Dr. Purnima Devi Barman is on the front lines of conservation efforts that— through community involvement and scientific _____ aim to bring adjutants back from near extinction.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "study,",
+    "B": "study—",
+    "C": "study:",
+    "D": "study"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "The human shoulder contains the infraspinatus, a skeletal muscle that is attached to the _____ this muscle plays a role in rotating the upper arm.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "scapula,",
+    "B": "scapula;",
+    "C": "scapula",
+    "D": "scapula that"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "The unconventional literary philosophy with which Fernando Pessoa approached his writing is manifested in the Portuguese poet's “heteronyms,” his term for the dozens of fictional personas in whose voices he authored many of his _____ among these personas was Ricardo Reis, author of classical odes in a Horatian style.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "works: and",
+    "B": "works;",
+    "C": "works and",
+    "D": "works,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 24
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "William Shakespeare likely arrived in London as early as 1585, at the age of 21, to pursue a career in the theater. Little is known of his early years there, but by 1593 he was becoming known for plays such as Richard III. _____ in 1599, he would delight audiences with Much Ado About Nothing, considered by some to be one of his greatest works.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In other words,",
+    "B": "Conversely,",
+    "C": "Thus,",
+    "D": "Later,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 25
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Soil polluted with cadmium (a heavy metal) is harmful to many plants and animals, but the plant species Elodea canadensis, or Canadian waterweed, not only thrives in such conditions but also helps remediate them. As a metal hyperaccumulator, Elodea canadensis absorbs a large amount of cadmium and stores it safely in its roots and shoots; _____ cadmium concentrations in the soil decrease.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "specifically,",
+    "B": "nevertheless,",
+    "C": "in addition,",
+    "D": "accordingly,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 26
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nA supercontinent is a single landmass made up of most or all of Earth's continents. Over time, continents merge together to form supercontinents, which then break apart. This process is believed to take hundreds of millions of years and is known as the supercontinent cycle. Ur and Columbia were supercontinents. Ur formed about 3.1 billion years ago. Columbia formed about 1.8 billion years ago.",
+   "prompt": "The student wants to specify when Ur formed. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Ur was a supercontinent, a single landmass made up of most or all of Earth’s continents.",
+    "B": "The supercontinent Ur formed about 3.1 billion years ago.",
+    "C": "Long ago, the Earth was home to supercontinents like Ur and Columbia.",
+    "D": "Over hundreds of millions of years, the supercontinent cycle results in supercontinents forming and breaking apart."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 27
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nIxmiquilpan is a municipality in the state of Hidalgo, Mexico.\nMunicipalities are governmental regions responsible for providing many public services to their residents. One service they provide is water treatment. Ixmiquilpan's population was 98,654 in 2020. Hidalgo is divided into 84 municipalities. The student wants to provide an example of a public service that Ixmiquilpan is responsible for.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Ixmiquilpan is one of 84 municipalities in Hidalgo providing public services to their communities.",
+    "B": "Ixmiquilpan—a governmental region in the state of Hidalgo, Mexico—provides public services to its residents.",
+    "C": "As a municipality, Ixmiquilpan is responsible for providing water treatment to its residents.",
+    "D": "In 2020, the municipality of Ixmiquilpan had a population of 98,654."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 28
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nOak Tree House is an Ancestral Puebloan dwelling site located in southwestern Colorado. It was built under a rock overhang and inhabited from approximately 1180—1210 CE. The overhanging rock ledges offered protection from heavy rain and snow. Yucca House is an Ancestral Puebloan dwelling site located in southwestern Colorado. It was built on relatively flat terrain and inhabited from approximately 1080—1275 CE. This level surface allowed for the construction of large terraced buildings.",
+   "prompt": "The student wants to explain an advantage of the Oak Tree House dwelling site. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The location of Oak Tree House, an Ancestral Puebloan dwelling site in southwestern Colorado, provided an advantage to its inhabitants.",
+    "B": "Located in southwestern Colorado, Oak Tree House is an Ancestral Puebloan dwelling site that was inhabited from approximately 1180—1210 CE.",
+    "C": "The relatively flat terrain on which Oak Tree House was built allowed for the construction of large terraced buildings.",
+    "D": "Since it was built under a rock overhang, Oak Tree House was naturally protected from heavy rain and snow."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 29
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nIn a 2010 study, researchers Katrin Heer, Larissa Albrecht, and Elisabeth K.V. Kalko wanted to explore the effects of ingestion by bats on the germination of Ficus obtusifolia seeds in Panama. The team of researchers tested 120 Ficus obtusifolia seeds that had been ingested by Jamaican fruit bats. Of these, 111 seeds (93%) germinated. As a control, K. Heer et al. tested 120 Ficus obtusifolia seeds that had not been ingested by Jamaican fruit bats. Of these, 116 seeds (97%) germinated.",
+   "prompt": "The student wants to describe the study's research methodology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "In the study, a lower percentage of Ficus obtusifolia seeds ingested by bats germinated than those that had not been ingested by bats.",
+    "B": "The team of researchers tested the germination of 120 Ficus obtusifolia seeds that had been ingested by Jamaican fruit bats and 120 Ficus obtusifolia seeds that had not been ingested.",
+    "C": "K. Heer et al. wanted to explore the effects of Jamaican fruit bats ingestion on Ficus obtusifolia seed germination.",
+    "D": "Research by K. Heer et al. revealed that 111 of 120 (that is, 93%) of the Ficus obtusifolia seeds that had been ingested by Jamaican fruit bats germinated."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 30
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Despite stated claims of global relevance, much major research on income inequality performed in the 2010s suffered from a myopic focus on a few countries in North America and Western Europe, partly due to limited data availability. Researchers would later _____ this shortcoming after gaining new access to administrative records located in nations in South America, such as Brazil, and Eastern Europe, such as Russia.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "validate",
+    "B": "presuppose",
+    "C": "categorize",
+    "D": "mitigate"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 33
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "One popular theory of the origin of the Moon, the \"big whack,\" posits that a protoplanet called Theia collided with Earth, flinging debris into orbit that eventually coalesced into the Moon. Until recently, Theia was _____, but researcher Qian Yuan and colleagues now claim to have identified pieces of the protoplanet in the lowermost section of Earth's mantle.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "desultory",
+    "B": "notional",
+    "C": "veritable",
+    "D": "spurious"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 34
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Political blogs with conspicuous ideological alignments became an integral component of US media in the early 2000s. While some commentators lauded this development, asserting that such blogs had a welcome transparency missing from traditional news, less _____ observers countered that such blogs tended to ideological extremes that exacerbated political polarization to problematic levels.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "recalcitrant",
+    "B": "earnest",
+    "C": "sanguine",
+    "D": "misanthropic"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 35
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. While horizontal gene transfer is common among prokaryotes-single- celled organisms, such as the bacteria Brevundimonas diminuta and Massilia timonae-it has rarely been observed among eukaryotes (multicellular organisms). However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It contrasts the frequency with which a biological phenomenon has been detected in two categories of organisms.",
+    "B": "It argues that two biological phenomena are more similar than they may initially appear to be.",
+    "C": "It explains why a common perception of a biological process is flawed.",
+    "D": "It indicates a distinction between the mechanics of two kinds of biological processes."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 36
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "During Rome's republican period, which ended in the first century BCE, libraries were predominantly owned by wealthy individuals who tightly controlled access to their book collections. The first public library became available in Rome in 28 BCE and was soon followed by one commissioned by Emperor Augustus. As modern scholar Fabio Fernandes notes, however, these two traditions aren't as distinct as they seem, as both the emperor and the private library owners viewed their libraries as extensions of their personal patronage, just on vastly differing scales.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To call into question the notion that private Roman libraries disappeared during the first century BCE",
+    "B": "To contend that early imperial leaders in Rome wielded too much influence over libraries",
+    "C": "To give a brief overview of public access to libraries throughout Rome's republican period",
+    "D": "To assert that private and early public libraries in ancient Rome had an essential similarity"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 37
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is from George Marion McClellan's 1895 poem Eternity. My spirit swoons, and all my senses cry For Ocean's breast and covering of the sky, Rock me to sleep, ye waves, and outward bound, Just let me drift far out from toil and care, Where lapping of the waves shall be the sound, Which mingled with the winds that gently bear Me on between a peaceful sea and sky, To make my soothing slumberous lullaby.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To the speaker's qualms about being transported by the ocean to a quiet destination",
+    "B": "To contrast the demands of the speaker's everyday life with the serenity of being rocked to sleep by the ocean",
+    "C": "To illustrate the increasing intensity of the speaker's desire to escape ongoing hardship by gliding on the ocean",
+    "D": "To convey the speaker's longing for the ocean to impart a sense of inner tranquility"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 38
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Text 1\nIn parts of New Zealand, the stoat is a major predator of the house mouse. Researcher G.L. Blackwell and colleagues found that when this predation pressure on house mice was temporarily reduced, their numbers significantly increased. This finding illustrates a foundational ecological principle: predators control prey population numbers.\nText 2\nWilliam D. Gulsby and colleagues found that excluding coyotes from a site in the state of Georgia where they typically prey on white-tailed deer had no significant effect on white-tailed deer abundance. Many other predation relief studies show an increase in prey abundance, but those studies often focus on small, rapidly reproducing prey, like birds, mice, and frogs, rather than large, slowly reproducing prey, like white-tailed deer, which could account for the difference between those results and Gulsby and colleagues' results.",
+   "prompt": "Based on the texts, the author of Text 2 would most likely agree with which statement about the “principle” mentioned in Text 1?",
+   "choices": {
+    "A": "It is plausible, but many of the studies that support it have methodological flaws.",
+    "B": "It has been challenged by some studies, but the findings of those studies have not been widely accepted.",
+    "C": "It may be true for some predators but only because those predators share certain physical characteristics.",
+    "D": "It has some evidential support, but it should not be regarded as universally applicable."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 39
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Many artists associated with hyperpop, a movement in electronic music that emerged in the 2010s, conform to the model perfected by the American duo 100 gecs: bold synthesizer arrangements, propulsive beats, and electronically manipulated vocals. Yet the movement is hardly uniform: Swedish recording artist Namasenda incorporates hip-hop rhythms into the hyperpop sound, for example. Such stylistic diversity is encouraged in part by the music-streaming app Spotify, whose curated playlist of hyperpop songs balances cohesion with variety.",
+   "prompt": "Which statement about Namasenda is best supported by the text?",
+   "choices": {
+    "A": "While some of her recordings conform to the model perfected by 100 gecs, others reject it outright.",
+    "B": "Her music diverges from the typical hyperpop sound but doesn't abandon it.",
+    "C": "She developed her unique sound without being influenced by other artists on Spotify's hyperpop playlist.",
+    "D": "Her inclusion on Spotify's hyperpop playlist inspired established artists to embrace stylistic experimentation."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 41
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Biologist Grace Herzel and colleagues conducted a study of how butterfly color and weather conditions relate to butterfly behavior, which wouldn't have been possible without data gathered by students and other amateur science enthusiasts in the community. Considering over three years' worth of data, the researchers found that white butterflies were observed on green flowers more often than any other butterflies were, and that butterflies were observed to feed more often on cloudy days than on other days.",
+   "prompt": "According to the text, which factors seemed to be linked to the behavior of butterflies in Grace Herzel and colleagues' study?",
+   "choices": {
+    "A": "Weather conditions but not butterfly color",
+    "B": "Butterfly color but not weather conditions",
+    "C": "Both butterfly color and weather conditions",
+    "D": "Neither butterfly color nor weather conditions"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 42
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Eighteenth-century economist Adam Smith is famed for his metaphor of the invisible hand, which he putatively used to illustrate a robust model of how individuals produce aggregate benefits by pursuing their own economic interests. Note “putatively”: as Gavin Kennedy has shown, Smith deploys this metaphor only once in his economic writings—to make a narrow point about the then-dominant economic theory of mercantilism and it was largely ignored until some twentieth-century economists eager to secure an intellectual pedigree for their views elevated it to a fully-fledged paradigm.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "The reputation of Smith’s metaphor of the invisible hand is not due to the importance of the metaphor in Smith’s work but rather to the promotion of the metaphor by some later economists for their own ends.",
+    "B": "Smith’s metaphor of the invisible hand has been interpreted as a model of how individuals acting in their own interest produce aggregate benefits, but it was intended as a subtle critique of the economic theory of mercantilism.",
+    "C": "Some twentieth-century economists gave Smith’s metaphor of the invisible hand a significance it does not have in Smith’s work, but it is nevertheless a useful model of how individuals produce aggregate benefits by pursuing their own economic interests.",
+    "D": "Although Smith is famed for his metaphor of the invisible hand, the metaphor was largely ignored until economists in the twentieth century came to realize that the metaphor was a robust model that anticipated their own views."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 43
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Memoirs of Elleanor Eldridge is an 1838 historical account by Elleanor Eldridge and Frances Harriet Whipple Green. In the book, the authors describe how restorative sleep can be for young people, writing, _____",
+   "prompt": "Which quotation from Memoirs of Elleanor Eldridge most effectively illustrates the claim?",
+   "choices": {
+    "A": "“Then let no one turn with too much [fussiness] from the simple story of the humble Elleanor, though it may contain few, or none, of the thrilling charms of poetry and passion.”",
+    "B": "“Home is home, to the lowly as well as the great; and no rank, or color, destroys its sacred character, its power over the mind, and the affections.”",
+    "C": "“Blessed are the slumbers of the innocent! They are kindlier than balm, and they refresh and gladden the spirit of childhood, like ministerings from a better world.”",
+    "D": "“And now, dear reader, a word with you. What is done cannot be undone. We cannot unravel this web of iniquity, and extract Justice from this mass of cruel wrongs.”"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 45
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Early Earth is thought to have been characterized by a stagnant lid tectonic regime, in which the upper lithosphere (the outer rocky layer) was essentially immobile and there was no interaction between the lithosphere and the underlying mantle. Researchers investigated the timing of the transition from a stagnant lid regime to a tectonic plate regime, in which the lithosphere is fractured into dynamic plates that in turn allow lithospheric and mantle material to mix. Examining chemical data from lithospheric and mantle-derived rocks ranging from 285 million to 3.8 billion years old, the researchers dated the transition to 3.2 billion years ago.",
+   "prompt": "Which finding, if true, would most directly support the researchers' conclusion?",
+   "choices": {
+    "A": "Mantle-derived rocks older than 3.2 billion years show significantly more compositional diversity than lithospheric rocks older than 3.2 billion years do.",
+    "B": "There is a positive correlation between the age of lithospheric rocks and their chemical similarity to mantle-derived rocks, and that correlation increases significantly in strength at around 3.2 billion years old.",
+    "C": "Mantle-derived rocks younger than 3.2 billion years contain some material that is not found in older mantle-derived rocks but is found in older and contemporaneous lithospheric rocks.",
+    "D": "Among rocks known to be older than 3.2 billion years, significantly more are mantle derived than lithospheric, but the opposite is true for the rocks younger than 3.2 billion years."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 46
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Neuroscientist Kiyohito Igaya and colleagues developed a computational model to predict how much a person will enjoy a particular work of art on a scale from 1 (not at all) to 4 (very much). They then recruited participants to use the same scale to rate several sets of paintings in various styles and calculated the correlation between the ratings predicted by the model and those reported by the participants. Assuming participant P6 gave equal ratings to the abstract and cubist paintings, the data in the graph indicate the model predicted that _____",
+   "prompt": "Which choice most effectively uses data from the graph to complete the example?",
+   "choices": {
+    "A": "P6 would derive more aesthetic pleasure from abstract paintings than from cubist paintings.",
+    "B": "P6’s rating for abstract and cubist paintings would equal one another.",
+    "C": "P6 would derive less aesthetic pleasure from abstract paintings than from cubist paintings.",
+    "D": "P6’s ratings for abstract and cubist paintings would differ from one another."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 48,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/rw2-13-1.webp",
+     "w": 788,
+     "h": 722,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Scholars are increasingly exploring the communication and preservation of ecological knowledge through Indigenous songs (e.g., Temiar songs about landforms and landmarks and those of the Tlingit people about wildlife encounters). In one study, ethnobiologist Dana Lepofsky et al. received insight from Kwaxistalla Wathl'thla, a song keeper for the Kwakwaka'wakw people in Canada, into songs referencing the people's use of terraced gardens in intertidal zones along the Pacific Northwest coast for the cultivation of clams for consumption. Archaeological evidence of significant increases in clam size and abundance in that area concurrent with the documented past implementation of the method described in the songs supports the conclusion that ____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "there is greater corroboration in the archaeological record of ecological practices described in Kwakwaka'wakw songs than of those described in Temiar and Tlingit songs.",
+    "B": "non-Indigenous people around the Pacific Northwest coast adopted the practice developed by the Kwakwaka'wakw people after observing its efficacy.",
+    "C": "although contemporary Kwakwaka'wakw people have a deep understanding of and appreciation for the fishing and farming practices used by their ancestors, they no longer implement those methods.",
+    "D": "the practice used by ancestors of modern Kwakwaka'wakw people not only effectively maintained a food source but also promoted its robustness."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 50
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "For its 1974 work Instant Mural, the Chicano art collective Asco taped members Patssi Valdez and Humberto Sandoval to an outdoor wall in East Los Angeles. The work is manifestly a commentary on constraint, but many critics focus on Valdez and the social constraints women faced at the time, which is understandable but leaves the presence of Valdez's male collaborator Sandoval unexplained. We should instead consider that in 1974, the art establishment's recognition of Chicano artists was (and had long been) restricted to sociohistorical muralists, leaving nonmuralist Chicano artists—like Asco's members—struggling to even exhibit their work; attending to this context opens an interpretation that accounts for all the evidence, allowing us to conclude that ____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "while Valdez's presence in Instant Mural represents the social constraints placed on women at the time, Sandoval's presence represents Chicano muralists' frustration at their lack of recognition by the art establishment.",
+    "B": "the main subject of Instant Mural is female Chicano artists experience of being doubly constrained by gender-role expectations and the marginalization of certain types of art.",
+    "C": "Instant Mural is best understood not as a critique of the social constraints placed on women but rather as a critique of sociohistorical muralists' depictions of Chicano culture.",
+    "D": "Instant Mural is a reflection on the constraining aesthetic expectations placed on Chicano artists in general rather than on the social constraints placed on women specifically."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 51
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Despite the fact that what is now known as the Carmichael number was first posited by Vaclav Simerka, the number is named after the twentieth-century American mathematician Robert Carmichael. One might assume cases like this, where a discovery or concept is not named after the first person who discovered it, to be _____ they are counted among a litany of examples of Stigler's law.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "rare on the contrary,",
+    "B": "rare, on the contrary;",
+    "C": "rare, on the contrary,",
+    "D": "rare; on the contrary,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 53
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Included in Reclamation! Pan-African Works from the Beth Rudin DeWoody Collection, a 2018 group exhibition at the Taubman Museum of Art in Roanoke, Virginia, was the work of artist Lorna Simpson, who is best known for her multimedia artworks that juxtapose images of African American women with text fragments. Her work challenges conventional notions of race, gender, history, and _____ she is credited with expanding the horizons of conceptual photographic art.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "memory,",
+    "B": "memory, and",
+    "C": "memory and",
+    "D": "memory"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 54
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Nadifa Mohamed is a novelist from Hargeisa, Somalia, who has earned international acclaim in recent years. Writers of other literary forms, such as poetry and drama, are less likely to be recognized beyond their nations’ borders, but many are still well _____ Koulsy Lamko, for example, is a celebrated playwright from Chad.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "known",
+    "B": "known:",
+    "C": "known and",
+    "D": "known,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 55
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "Recent analysis of 2010 BL4—an outer solar system object orbiting the Sun between Jupiter and Neptune—has determined its color to be gray, suggesting an icy composition. Such interpretations are ultimately _____ the object's gray coloration may be an incidental effect of radiation, solar wind, or collisions with other objects rather than evidence of its physical makeup.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "speculative, though",
+    "B": "speculative, though,",
+    "C": "speculative; though",
+    "D": "speculative, though;"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 56
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "In the list “Things That Arouse a Fond Memory of the Past” from Sei Shonagon's Pillow Book, the author delights in pressed silk, a moonlit night, and dried hollyhock. So shrewd an observer is Shonagon, a lady- in-waiting to Empress Teishi, that her book's musings on tenth-century Japanese courtly life _____ readers a thousand years later.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "has fascinated",
+    "B": "fascinates",
+    "C": "fascinate",
+    "D": "is fascinating"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 57
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "The present-day city of Yoshkar-Ola, Russia, was the capital of the Mari Autonomous Soviet Socialist Republic, one of many nominally autonomous established republics within the Soviet Union. Each of these republics _____ established along ethnolinguistic lines: most residents of the Mari Republic spoke Mari, for example.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "have been",
+    "B": "are",
+    "C": "were",
+    "D": "was"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 58
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "When, in 2017, Cambridge University students Lucy Moss and Toby Marlow decided they wanted to develop a musical together, one of their goals was for their female actor friends to have good parts to play. _____ they created the show Six, a retelling of the history of King Henry VIII's wives in which each of the six queens has a starring role.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In summary,",
+    "B": "In other words,",
+    "C": "For example,",
+    "D": "To that end,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 59
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "The prime meridian, the global indicator of zero degrees longitude established in 1884, was originally determined using astronomically derived coordinates. _____ as decades passed, new calculations would reveal increasingly precise coordinates, yet the prime meridian remained unchanged; it wasn't until the 1980s that, spurred by improved geodetic data, the prime meridian was officially moved— roughly one hundred meters east.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Granted,",
+    "B": "Again and again,",
+    "C": "Specifically,",
+    "D": "To that end,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 60
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nFrancis Halzen is a Belgian particle physicist.\nParticle physicists study subatomic particles.\nNeutrinos are some of the least understood subatomic particles.\nNeutrinos were first discovered in the mid-twentieth century.\nHalzen is known for his discovery of high-energy astrophysical neutrinos.",
+   "prompt": "The student wants to provide an example of a particle physicist whose research focuses on neutrinos. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The research done on high-energy astrophysical neutrinos exemplifies the work particle physicists do to advance our understanding of subatomic particles.",
+    "B": "By studying high-energy astrophysical neutrinos—to name just one example—particle physicists can learn more about neutrinos.",
+    "C": "Particle physicist Francis Halzen is known for his discovery of high-energy astrophysical neutrinos.",
+    "D": "Neutrinos are a type of subatomic particle that particle physicists are still trying to understand."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 61
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nUse the Future is a 1992 sculpture by Italian artist Maurizio Nannucci. It consists of a yellow neon sign that spells out the title phrase. Ginger is a 2023 sculpture by Japanese artist Rikako Kawauchi. It consists of a pink neon sign that forms an abstract squiggle shape. Neon signs became popular with advertisers in the 1920s and began to decline in popularity in the 1960s. Neon signs became popular with artists in the 1960s and continue to be popular today.",
+   "prompt": "The student wants to emphasize a difference between the two sculptures. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "While the sculptures share a common material, one spells out a phrase while the other is decidedly more abstract.",
+    "B": "Molded into an evocative phrase in Use the Future (1992), an abstract form in Ginger (2023), and an advertising tool in decades past, neon lighting has a number of different applications.",
+    "C": "Italian artist Maurizio Nannucci's and Japanese artist Rikako Kawauchi's sculptures have employed neon signs in different ways, demonstrating the versatility of the popular material.",
+    "D": "Nannucci's sculpture was made in 1992 and Kawauchi's in 2023, both well after the advertising heyday of neon signs had passed."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 62
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nStylistic analysis and biographical analysis are two approaches to art criticism. Stylistic analysis examines how an artwork's visual features contribute to its overall style. Such an analysis of Claude Monet's Water Lilies might consider how the painting's loose brushwork represents an impressionist style. Biographical analysis considers the personal experiences of the artist. Such an analysis of Claude Monet's Women in the Garden might consider how the painting's portrayal of a figure holding red and white roses alludes to Monet's romantic difficulties. The student wants to present biographical analysis to an audience unfamiliar with the concept.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "An approach to art criticism, biographical analysis considers the personal experiences of the artist.",
+    "B": "A stylistic analysis of Water Lilies might consider how the painting's loose brushwork represents an impressionist style.",
+    "C": "Stylistic analysis differs from biographical analysis in that stylistic analysis examines how an artwork's visual features contribute to its overall style.",
+    "D": "Women in the Garden's portrayal of a figure holding red and white roses alludes to Monet's romantic difficulties."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 64
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nA river's stream length is the length of a line that follows along the river path. A river's valley length is the length of a straight line drawn from the beginning of the river to the end. The river's curviness, or sinuosity, is the ratio of the river's stream length to its valley length. Low-sinuosity rivers have a stream length 1-1.5 times longer than their valley length, and high- sinuosity rivers have a stream length 1.5 or more times longer than their valley length. The Embarras River in Canada has high sinuosity. The Luni River in India has low sinuosity.",
+   "prompt": "The student wants to compare the curviness of the two rivers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The high-sinuosity Luni River in India is curvier than the low-sinuosity Embarras River in Canada.",
+    "B": "The Embarras River's ratio of stream length to valley length, also known as sinuosity, is greater than that of the Luni River.",
+    "C": "In both the Embarras and the Luni rivers, curviness is determined by comparing stream length to valley length.",
+    "D": "By comparing the stream lengths of the Embarras and Luni rivers to their valley lengths, one can calculate their curviness, or sinuosity."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 65
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "Live north of Center St. Live south of Center St. Total\nLess than 45 years old 15 15 30\nAt least 45 years old 20 85 105\nTotal 35 100 135\nThe table summarizes members of a local organization by age and whether they live north or south of Center St., If a member of the organization is selected at random, what is the probability that the selected member is at least 45 years old?",
+   "choices": {
+    "A": "13305",
+    "B": "13355",
+    "C": "113050",
+    "D": "113055"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "probability",
+   "page": 68
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "Which expression is equivalent to 4(x^2 + 6)?",
+   "choices": {
+    "A": "4x^2 + 24",
+    "B": "4x^2 + 10",
+    "C": "4x^2 + 6",
+    "D": "4x^2 − 2"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 69
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "For the linear function f, the graph of y = f(x) in the xy-plane has a slope of _4^1 and passes through the point (0,5), which equation defines f?",
+   "choices": {
+    "A": "f(x) =_4^1x + 5",
+    "B": "f(x) =_4^1x +_5^1",
+    "C": "f(x) =_4^1x −_4^5",
+    "D": "f(x) =_4^1x − 5"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 70
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "spr",
+   "prompt": "The function f is defined by f(x) = 5 + √x. What is the value of f(144)?",
+   "answer": "17",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 71
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "For the given equation, which table gives three values of x and their corresponding values of y? 7x − 4y = −84",
+   "choices": {
+    "A": "x 0 4 8 y 21 28 35",
+    "B": "x 0 4 8 y 35 28 21",
+    "C": "x 21 28 35 y 0 4 8",
+    "D": "x 21 28 35 y 8 4 0"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 72
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "spr",
+   "prompt": "A geologist estimates that the volume of a boulder is greater than 12.7 cubic feet but less than 15.7 cubic feet. The geologist also estimates that the boulder weighs 160 pounds per cubic foot of volume. Which inequality represents this situation, where x represents the estimated total weight, in pounds, of the boulder? A 160 − 15.7 < x < 160 − 12.7 B 160 + 12.7 < x < 160 + 15.7 C 160(12.7) < x < 160(15.7) D_1^1_5^6_.^0_7 < x <_1^1_2^6_.^0_7",
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 73
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "If 46 = 16 + 2(x − 8), what is the value of 2(x − 8)?",
+   "choices": {
+    "A": "16",
+    "B": "23",
+    "C": "30",
+    "D": "38"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 74
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "y = x^2 + 1.7\ny = 1.7 − x\nWhich graph represents the given system of equations?",
+   "choices": {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": ""
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 75,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m1-08-1.webp",
+     "w": 266,
+     "h": 248,
+     "y": 196
+    },
+    {
+     "src": "/tests/img/2024-10-int-a/m1-08-2.webp",
+     "w": 208,
+     "h": 243,
+     "y": 332
+    },
+    {
+     "src": "/tests/img/2024-10-int-a/m1-08-3.webp",
+     "w": 168,
+     "h": 197,
+     "y": 482
+    },
+    {
+     "src": "/tests/img/2024-10-int-a/m1-08-4.webp",
+     "w": 177,
+     "h": 285,
+     "y": 632
+    }
+   ]
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "In triangle ABC, the measure of angle A is 47^∘, the measure of angle B is 90^∘, and the measure of angle C is (^k_2)^∘. What is the value of k?",
+   "choices": {
+    "A": "43",
+    "B": "45",
+    "C": "86",
+    "D": "94"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 78
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "spr",
+   "prompt": "A clothing store buys shirts at a wholesale price of $5.00 each and resells them each at a retail price that is 270% of the wholesale price. At the end of the season, any remaining shirts are marked at a discounted price that is 70% off the retail price. What is the discounted price of each remaining shirt, in dollars?",
+   "answer": "81/20",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 79
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "Which of the following is closest to the slope of this line of best fit?",
+   "choices": {
+    "A": "−3.3",
+    "B": "−1.1",
+    "C": "1.1",
+    "D": "3.3"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "two-var-data",
+   "page": 80,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m1-11-1.webp",
+     "w": 264,
+     "h": 206,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "spr",
+   "prompt": "The expression 72y^5 − 48y^4 is equivalent to ry^4(12y − 8), where r is a constant. What is the value of r ?",
+   "answer": "6",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 81
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "The equation gives the estimated stock price y, in dollars, for a certain company x days after the company went public, where 0 ≤ x < 20. Which statement is the best interpretation of (x,y) = (1,58) in this context? y = 0.25x^2 − 6.5x + 64.25",
+   "choices": {
+    "A": "1 day after the company went public, the company's estimated stock price is $58.",
+    "B": "58 days after the company went public, the company's estimated stock price $1.",
+    "C": "The company's estimated stock price increased $58 every day after the company went public.",
+    "D": "The company's estimated stock price increased $1 every 58 days after the company went public."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 82
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "The total mass, in kilograms, of r identical objects is t. Which expression represents the total mass, in kilograms, of 146r of these objects?",
+   "choices": {
+    "A": "146 − t",
+    "B": "146 + t",
+    "C": "1t46",
+    "D": "146t"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 83
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "If ^4_x^2 = 7x, what is the value of 7x^2?",
+   "choices": {
+    "A": "6",
+    "B": "7",
+    "C": "42",
+    "D": "294"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 84
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "spr",
+   "prompt": "Line k is shown in the xy-plane. Line j (not shown) is perpendicular to line k. What is the slope of line j?",
+   "answer": "6/5",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 85,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m1-16-1.webp",
+     "w": 768,
+     "h": 583,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "spr",
+   "prompt": "The function f is defined by f(x) = −9x + 9. What is the y-coordinate of the y-intercept of the graph of y = f(x) in the xy-plane?",
+   "answer": "9",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 86
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "spr",
+   "prompt": "The equation h =^(9(v−2)_5^(73.15)) + 12 gives the corresponding temperature h, in degrees Fahrenheit, of any substance that has a temperature of v kelvins, where v > 0. If a substance has a temperature of 467.33 degrees Fahrenheit, what is the corresponding temperature, in kelvins, of this substance?",
+   "answer": "526.1",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 87
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "A circle in the xy-plane has its center at (16,17) and has a radius of 7k. Which equation represents this circle?",
+   "choices": {
+    "A": "(x − 16)^2 + (y − 17)^2 = 49k",
+    "B": "(x − 16)^2 + (y − 17)^2 = 49k^2",
+    "C": "(x − 16)^2 + (y − 17)^2 = 7k",
+    "D": "(x − 16)^2 + (y − 17)^2 = 7x^2"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 89
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "spr",
+   "prompt": "In the triangle shown, RS = 105. What is the value of sinR?",
+   "answer": "52/53",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 90,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m1-20-1.webp",
+     "w": 311,
+     "h": 200,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "Parallelogram ABCD is similar to parallelogram PQRS. The length of each side of parallelogram PQRS is 2 times the length of its corresponding side of parallelogram ABCD. The area of parallelogram ABCD is 5 square centimeters. What is the area, in square centimeters, of parallelogram PQRS?",
+   "choices": {
+    "A": "7",
+    "B": "10",
+    "C": "20",
+    "D": "25"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 91
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "The function r is defined by the given equation. The function s is defined by s(t) = r(t) + 1. Which expression represents the maximum value of s(t)? r(t) = 55t − 2t^2",
+   "choices": {
+    "A": "1 + (^5_2^5)^2",
+    "B": "1 + 2(^5_4^5)^2",
+    "C": "1 − 2(^5_4^5)^2",
+    "D": "1 − 2(^5_2^5)^2"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 92
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "As part of a science experiment on evaporation, Ella measured the height of water in a glass over a period of time. The function f(x) = 39 − 0.1x gives the estimated height in centimeters (cm), of the water in the glass x days after the start of the experiment. Which of the following is the best interpretation of 39 in this context?",
+   "choices": {
+    "A": "The estimated height, in cm, of the water at the start of the experiment",
+    "B": "The estimated height, in cm, of the water at the end of the experiment",
+    "C": "The estimated change in the height, in cm, of the water each day",
+    "D": "The estimated number of days for all the water to evaporate"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 94
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "Area (square feet) Water (gallons)\n2520 4536\n3780 6804\n5040 9072\nThe roofs on the buildings of a public garden are designed to allow water to drain into the garden. The table shows the relationship between the area x, in square feet, of a roof and the amount of water f(x), in gallons, drained from the roof into the garden over a certain period of time. Which equation could define f?",
+   "choices": {
+    "A": "f(x) = 0.6x",
+    "B": "f(x) = 1.8x",
+    "C": "f(x) = 2268.0x",
+    "D": "f(x) = 0.56x"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 95
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "In 2010, a skating team had a total of 35 skaters, each classified as either advanced or intermediate. From 2010 to 2020, the number of advanced skaters on the team increased by approximately 53%, and the number of intermediate skaters on the team increased by approximately 44%. The total number of skaters on the team increased by approximately 49%. Which equation best represents this situation, where a represents the number of advanced skaters on the team in 2010 and b represents the number of intermediate skaters on the team in 2010?",
+   "choices": {
+    "A": "1.53a + 1.49b = 35(1.44)",
+    "B": "1.49a + 0.53b = 35(1.44)",
+    "C": "1.53a + 1.44b = 35(1.49)",
+    "D": "1.44a + 1.53b = 35(1.49)"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 96
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "x\nb − 72 =\ny\nThe given equation relates the positive numbers b, x, and y. Which equation correctly expresses x in terms of b and y?",
+   "choices": {
+    "A": "x =^(b−)_y^(72)",
+    "B": "x = by − 72",
+    "C": "x =^(by−)_y^(72)",
+    "D": "x = by − 72y"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 97
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "One of the two equations in a system of linear equations is given. y =_7^2x + 3. The system has infinitely many solutions. If the second equation in the system is y = mx + b, where m and b are constants, what is the value of b?",
+   "choices": {
+    "A": "-3",
+    "B": "31",
+    "C": "−_3^1",
+    "D": "3"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 98
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "y = 6x + 16\n−7x − y = 36\nWhat is the solution (x,y) to the given system of equations?",
+   "choices": {
+    "A": "(−4,−8)",
+    "B": "(_1^2_3^0,^−_1^8_3^0)",
+    "C": "(4,40)",
+    "D": "(20,136)"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 99
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "The histograms summarize the distributions of scores for team A and team B. Which statement best compares the standard deviations of scores for these teams?",
+   "choices": {
+    "A": "The standard deviation of scores for team A is less than the standard deviation of scores for team B.",
+    "B": "The standard deviation of scores for team A is greater than the standard deviation of scores for team B.",
+    "C": "The standard deviation of scores for team A is equal to the standard deviation of scores for team B.",
+    "D": "There is not enough information to compare the standard deviations."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 100,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m2-07-1.webp",
+     "w": 240,
+     "h": 316,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "spr",
+   "prompt": "x^2 − 5x − 24 = 0\nWhat is the sum of the solutions to the given equation?",
+   "answer": "5",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 102
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "The graph of y = f(x) is shown, where f(x) = ab^x + c, and a, b, and c are constants. For how many values of x does f(x) = 0?",
+   "choices": {
+    "A": "Three",
+    "B": "Two",
+    "C": "One",
+    "D": "Zero"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 103,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-10-int-a/m2-09-1.webp",
+     "w": 358,
+     "h": 235,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "spr",
+   "prompt": "To study fluctuations in leaf water potential, samples of wood were taken from 22 trees and cut in the shape of a cube. The length of the edge of one of these cubes is 3.000 centimeters. This cube has a density of 0.250 grams per cubic centimeter. What is the mass of this cube, in grams?",
+   "answer": "27/4",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 105
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "spr",
+   "prompt": "Function f is a quadratic function where f(−20) = 0 and f(−4) = 0. The graph of y = f(x) in the xy- plane has a vertex at (r,−64). What is the value of r?",
+   "answer": "-12",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 106
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "The function f gives the product of a number, x, and a number that is 91 more than x. Which equation defines f?",
+   "choices": {
+    "A": "f(x) = x^2 + x + 91",
+    "B": "f(x) = x^2 + 91",
+    "C": "f(x) = x^2 + 91x",
+    "D": "f(x) = x^2 + 91x + 91"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 107
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "−2x^2 + 20x + c = 0\nIn the given equation, c is a constant. The equation has exactly one solution. What is the value of c?",
+   "choices": {
+    "A": "−68",
+    "B": "−50",
+    "C": "−32",
+    "D": "0"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 108
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "y = 2x^2 − 15x + 23\ny = x + a\nIn the given system of equations, a is a constant, The graphs of the equations in the given system intersect at exactly one point, (x,y), in the xy-plane. What is the value of x?",
+   "choices": {
+    "A": "−9",
+    "B": "−4",
+    "C": "4",
+    "D": "9"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 109
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "The positive number a is 2.352% of the sum of the positive numbers b and c, and b is 84% of c. What percent of b is a?",
+   "choices": {
+    "A": "5.152%",
+    "B": "2.436%",
+    "C": "51.52%",
+    "D": "24.36%"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 110
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "The functions f and g are defined by the given equations below, where x > 0. Which of the following equations displays, as a constant or coefficient, the minimum value of the function it defines, where x ≥ 0? I. f(x) = 18(1.4)^(x+5) II. g(x) = 18(1.16)(1.4)^(x+3)",
+   "choices": {
+    "A": "I only",
+    "B": "II only",
+    "C": "I and II",
+    "D": "Neither I nor II"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 111
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "spr",
+   "prompt": "In the given equation, s and r are constants, and s > 0. If the equation has infinitely many solutions, what is the value of s? 12x + 28 s − = r(x − 8) 4 13",
+   "answer": "403",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 112
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "The perimeter of an isosceles right triangle is 18 + 18√2 inches. What is the length, in inches, of the hypotenuse of this triangle?",
+   "choices": {
+    "A": "9",
+    "B": "9√2",
+    "C": "18",
+    "D": "18√2"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 113
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "spr",
+   "prompt": "A right triangular pyramid has exactly six edges. Each of these edges is 96 centimeters long. If the surface area of the pyramid is k√3 square centimeters, what is the value of k?",
+   "answer": "9216",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 114
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "The cost of renting a piece of construction equipment for up to 5 days is $270 for the first day and $135 for each additional day. Which of the following equations gives the cost y, in dollars, of renting the equipment for x days, where x is a positive integer and x ≤ 5?",
+   "choices": {
+    "A": "y = 135x + 135",
+    "B": "y = 270x − 135",
+    "C": "y = 270x + 135",
+    "D": "y = 135x + 170"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 115
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "A line intersects two parallel lines, forming four acute angles and four obtuse angles. The measure of one of these eight angles is (7x − 250)°. The sum of the measures of four of the eight angles is k°. Which of the following could NOT be equivalent to k, for all values of w?",
+   "choices": {
+    "A": "−14x + 1,540",
+    "B": "14x − 320",
+    "C": "−28x + 1,720",
+    "D": "360"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 116
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "7x + 4y = 3\n35x + 20y = 15\nFor each real number r, which of the following points lies on the graph of each equation in the xy- plane for the given system?",
+   "choices": {
+    "A": "(^r_5 + 3,−^r_5 + 15)",
+    "B": "(−^4_7^r +_7^3r)",
+    "C": "(r,^7_4^r +_4^3)",
+    "D": "(r,−^4_7^r +_7^3)"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 117
+  }
+ ]
+}

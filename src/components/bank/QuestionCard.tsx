@@ -24,7 +24,7 @@ export function DifficultyBadge({ d }: { d: Difficulty }) {
   );
 }
 
-function Figure({ src, caption, fullPage }: { src: string; caption?: string; fullPage?: boolean }) {
+export function Figure({ src, caption, fullPage }: { src: string; caption?: string; fullPage?: boolean }) {
   return (
     <figure className="space-y-2">
       {caption && <figcaption className="text-sm font-semibold">{caption}</figcaption>}
@@ -40,7 +40,7 @@ function Figure({ src, caption, fullPage }: { src: string; caption?: string; ful
   );
 }
 
-function DataTable({ table, math }: { table: NonNullable<Question["table"]>; math: boolean }) {
+export function DataTable({ table, math }: { table: NonNullable<Question["table"]>; math: boolean }) {
   return (
     <div className="overflow-x-auto rounded-xl border border-line">
       <table className="w-full border-collapse text-sm">
@@ -70,11 +70,12 @@ function DataTable({ table, math }: { table: NonNullable<Question["table"]>; mat
   );
 }
 
-type ChoiceState = "idle" | "selected" | "correct" | "wrong" | "dim";
+export type ChoiceState = "idle" | "selected" | "correct" | "wrong" | "dim";
 
-function ChoiceRow({
+export function ChoiceRow({
   letter,
   text,
+  image,
   state,
   math,
   struck,
@@ -83,6 +84,8 @@ function ChoiceRow({
 }: {
   letter: ChoiceLetter;
   text: string;
+  /** Picture choice (e.g. a graph), shown instead of text. */
+  image?: string;
   state: ChoiceState;
   math: boolean;
   struck: boolean;
@@ -117,7 +120,14 @@ function ChoiceRow({
           {state === "correct" ? <Icon d={I.check} className="h-4 w-4" strokeWidth={2.8} /> : state === "wrong" ? <Icon d={I.x} className="h-4 w-4" strokeWidth={2.8} /> : letter}
         </span>
         <span className={`min-w-0 flex-1 text-[15px] leading-relaxed ${struck && !locked ? "line-through decoration-2" : ""}`}>
-          {text ? <RichText text={text} math={math} /> : <span className="text-muted">Choice {letter} (see image above)</span>}
+          {image ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={image} alt={`Choice ${letter}`} loading="lazy" className="max-h-56 max-w-full rounded-lg bg-white p-1" />
+          ) : text ? (
+            <RichText text={text} math={math} />
+          ) : (
+            <span className="text-muted">Choice {letter} (see image above)</span>
+          )}
         </span>
       </button>
       {!locked && (

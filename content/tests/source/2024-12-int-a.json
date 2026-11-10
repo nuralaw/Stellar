@@ -1,0 +1,1947 @@
+{
+ "id": "2024-12-int-a",
+ "title": "Dec 2024 INT A",
+ "year": 2024,
+ "month": 12,
+ "version": "INT",
+ "form": "A",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "key",
+ "pdf": "Dec 2024 INT A, with answers (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "The American continents are home to a huge diversity of languages, from Mayo, found in places like Mexico in North America, to Koreguaje, found in places like Colombia in South America. Much like the continents themselves, the variety of native languages in the Americas is _____.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "immense",
+    "B": "unknown",
+    "C": "ordinary",
+    "D": "limited"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The minor planet 1095 Tulipa was named after the plant genus that includes tulips, but given the sheer number of minor planets that have been discovered (more than 500,000 so far), most are given only an identification number. Because any name given to a minor planet needs to be unique to that body, naming each would be _____.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "impractical",
+    "B": "presumptuous",
+    "C": "ambiguous",
+    "D": "customary"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Drivers who strongly believe that the toll they must pay to use the San Luis Pass-Vacek Toll Bridge, which spans the San Luis Pass in Texas, is currently too high are likely to be ____ arguments for increasing the toll. Advocates for a higher toll are likely to have more success if they instead direct their arguments toward a more persuadable segment of the population.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "cited in",
+    "B": "apprised of",
+    "C": "unsympathetic to",
+    "D": "placated by"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Though few critics consider Vasily Grossman's novel Stalingrad—which focuses on the experience of the Soviet Union in the early years of World War II—to be as well written as his later book Everything Flows, some compliment it despite the damage _____ Soviet censors: Gary Saul Morson in The New York Review of Books called the novel \"remarkably bold.\"",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "bestowed on",
+    "B": "wrought by",
+    "C": "allocated to",
+    "D": "concealed from"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Companies are providing consumers with more opportunities to purchase customized products than ever before. Whether buying customized sneakers, jewelry, or clothing, consumers can participate in the design of products to meet their specific needs and tastes. In turn, companies profit too: studies have shown that consumers are willing to pay more and wait longer for a customized product. Still, it can be difficult for companies to offer customization while keeping costs low, as the standard methods of mass production may not be able to accommodate making a unique product each time.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "It discusses several recent innovations in product manufacturing and then suggests some potential applications of those innovations.",
+    "B": "It describes a company’s recent success with new products and then explains multiple factors that may have contributed to that success.",
+    "C": "It presents two contrasting product-marketing techniques and then provides examples of one of those techniques.",
+    "D": "It introduces a trend in consumer products and then explains how the trend both benefits and poses a challenge to companies."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Karl Polanyi and other historians rarely discuss domestic capitalism in Africa before the period of European colonization, implicitly presenting capitalism as external to and imposed on Africa. Mariana Candido and other Africanist scholars have shown, however, that in parts of Africa, centrally administered industrial production, the legal treatment of land as private property, and other features of capitalism predated colonization. One reason for this discrepancy is that historians of capitalism tend to focus on longitudinal economic data drawn from archival records, which do not exist for much of precolonial Africa.",
+   "prompt": "Which choice best describes the main purpose of the text?",
+   "choices": {
+    "A": "To explain why historians of capitalism and Africanist scholars disagree about which activities are features of capitalism",
+    "B": "To present and account for a potentially misleading characteristic of the work of historians of capitalism",
+    "C": "To describe and evaluate a method used by Africanist scholars that distinguishes their work from that of historians of capitalism",
+    "D": "To summarize a debate between historians of capitalism and Africanist scholars about how to interpret longitudinal economic data from archival records"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "The following text is adapted from George Eliot's 1857 short story \"The Sad Fortunes of the Rev. Amos Barton.\" The Countess Czerlaski is a newcomer to the town of Milby. I am by no means sure that if the good people of Milby had known the truth about the Countess Czerlaski, they would not have been considerably disappointed to find that it was very far from being as bad as they imagined. Nice distinctions are troublesome. It is so much easier to make up your mind that your neighbour is good for nothing, than to enter into all the circumstances that would oblige you to modify that opinion.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To offer commentary on a human foible that may account for why the people of Milby view the Countess Czerlaski as they do",
+    "B": "To speculate on the circumstances under which the unfavorable opinion of the Countess Czerlaski that is held by the people of Milby could be improved",
+    "C": "To explain why the people of Milby are somewhat correct to reproach the Countess Czerlaski for her misdeeds",
+    "D": "To engage the reader's compassion for both the Countess Czerlaski and the people of Milby by detailing their different viewpoints"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "The following text is from Julia Alvarez's 2000 novel In the Name of Salomé. Salomé, a poet, is hosting guests in the front parlor of her family home, and Ramona is her sister. A salon is a social gathering for the exploration of intellectual ideas. It was evening when the two men got up to leave. Tía Ana had already come into the room several times to see if these guests had departed yet. The front parlor had always been her special province, as she used it for her little school. Now, every evening, it turned into Salomé's salon, as Ramona called it, and it was never in order for its transformation back to a classroom the following morning. ©2000 by Julia Alvarez",
+   "prompt": "Based on the text, what most likely motivates Tía Ana's behavior during Salomé's salon?",
+   "choices": {
+    "A": "She is frustrated because she needs assistance elsewhere in the house, but Salomé is unavailable while entertaining the guests.",
+    "B": "She is anxious for the gathering to disperse so that she can ready the space for her own needs.",
+    "C": "She is impatient to share her plans to start a new school with the guests and hopes they will support her.",
+    "D": "She finds the guests to be dull and is eager to find a way to leave the salon."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Companies involved in petroleum extraction include drilling equipment among their assets. But petroleum extraction is a very carbon-intensive industry, so as social attitudes increasingly favor using less carbon intensive sources of energy demand for petroleum falls and the drilling equipment will eventually, or even suddenly, become a liability as reduced petroleum prices make it more difficult to recover the expense of maintaining such equipment.",
+   "prompt": "What claim does the text make about the demand for petroleum?",
+   "choices": {
+    "A": "Companies involved in petroleum extraction are not affected by the demand for petroleum.",
+    "B": "The societal preference for low-carbon energy sources is a factor in the demand for petroleum.",
+    "C": "The demand for petroleum follows a predictable annual cycle.",
+    "D": "Companies involved in petroleum extraction can benefit from a decline in the demand for petroleum."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Why do flat-headed cats purr but jaguars roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats called the hyoid. Flat- headed cats, which are much smaller than jaguars, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, jaguars have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that flat-headed cats lack. These traits allow jaguars and most other species of big cats to produce powerful roars. The same traits may also prevent most big cats from purring.",
+   "prompt": "According to the text, which trait do researchers think may contribute to a flat-headed cat's ability to purr?",
+   "choices": {
+    "A": "The shape of the flat-headed cat's larynx",
+    "B": "The ligament attaching the hyoid bone to the flat-headed cat's skull",
+    "C": "The flat-headed cat's rigid hyoid bone",
+    "D": "The relative size of the flat-headed cat's body and throat"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Total Areas of Five Hawaiian Home Lands\nHome land Area (square miles)\nNanakuli 3.61\nKawaihae 15.99\nKamoku-Kapulena 7.47\nKahikinui 37.26\nWaimea 23.57\nHawaiian home lands are areas of public land in the state of Hawaii that have been reserved for use by the Kanaka Maoli, or the Native Hawaiian people. The largest of the home lands, Humuula-Upper Piihonua, covers nearly 100 square miles on the island of Hawai'i. Most of the home lands are much smaller. For example, the total area of Kamoku-Kapulena is 7.47 square miles, and the total area of Nanakuli is ______",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "37.26 square miles.",
+    "B": "3.61 square miles.",
+    "C": "23.57 square miles.",
+    "D": "15.99 square miles."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 13
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Highly Traveled Commercial Airline Routes in 2017-18\nDistance\n2018 2017 Domestic or\nLocation 1 Location 2 of route\npassengers passengers international\n(kilometers)\nHong Kong Manila 1,145 3,008,842 2,907,228 international\nJakarta Singapore 896 4,812,342 4,810,602 international\nMumbai Delhi 1,150 7,392,155 7,129,943 domestic\nMexico City Monterrey 729 3,474,971 3,202,091 domestic\nA study of commercial airline routes that carried the greatest number of passengers in 2017 and 2018 shows that, in general, domestic routes (routes within a single country) carried many more passengers than international routes. However, a few international routes were so popular that they carried more travelers than some of the most highly traveled domestic routes, as can be seen when comparing the _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "distance between Mexico City and Monterrey with the distance between Jakarta and Singapore.",
+    "B": "number of passengers who traveled between Mumbai and Delhi in 2017 with the number who traveled between Hong Kong and Manila during that same year.",
+    "C": "number of passengers who traveled between Jakarta and Singapore in 2017 with the number who traveled that same route in 2018.",
+    "D": "number of passengers who traveled between Jakarta and Singapore in 2018 with the number who traveled between Mexico City and Monterrey during that same year."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Water flowing around an obstruction creates vortices (swirls) that vary in size with the obstruction's size and position, and fish sense these vortices in order to navigate around the obstructions. Using models of three fish head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—Yuzo R. Yanagisuru, Otar AkanyetI, and James C. Liao showed that as vortex size increases, pressure fluctuations at the snout increase for narrow-headed and intermediate-headed fish but remain low for wide-headed fish. A second research team has therefore hypothesized that in low visibility, a fish will be more likely to avoid an obstruction when the associated pressure fluctuations at the fish's snout are greater.",
+   "prompt": "Which finding, if true, would most directly support the second research team's hypothesis?",
+   "choices": {
+    "A": "A study using obstructions that created large vortices in low-visibility conditions found that the devil catfish (Bagarius bagarius), which has a relatively wide head, bumped into more than half of the obstructions.",
+    "B": "A study using obstructions that created large vortices in low-visibility conditions found that the intermediate-headed dusky smooth-hound (Mustelus canis) bumped into the obstructions just as often as the wide-headed Synodontis macropunctata did.",
+    "C": "A study using obstructions that created large vortices in low-visibility conditions found that the wide-headed Synodontis macropunctata bumped into obstructions more often than the intermediate-headed dusky smooth-hound (Mustelus canis) did.",
+    "D": "A study using obstructions that created large vortices in low-visibility conditions found that some specimens of the intermediate-headed rainbow trout (Oncorhynchus mykiss) bumped into the obstructions more often than other specimens of the same fish did."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 17
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Population and Population Density of African Countries in 2015\nCountry Density (inhabitants/km2) Area (km2) Estimated population\nLesotho 70.3 30,355 2,135,000\nMali 14.2 1,240,000 17,600,000\nZambia 21.5 752,614 16,212,000\nBenin 96.6 112,620 10,880,000\nAs the second most populous continent in the world, Africa was home to an estimated 1.186 billion people in 2015. In a paper for a social studies class, a student nonetheless notes that countries with very large populations may be less densely populated than are countries with much smaller populations, as can be seen by comparing _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "Zambia, which has a low density, with Benin, which has a similar density despite both countries having different geographic sizes.",
+    "B": "the geographic size of Mali (1,240,000 square kilometers) with its relatively high population of 17,600,000 inhabitants.",
+    "C": "Mali, which has a high population of 17,600,000 inhabitants and a relatively low density of 14.2 inhabitants/square kilometer, with Lesotho, which has a much lower population and a higher density.",
+    "D": "the populations of both Lesotho and Benin in 2015 with their populations in 2010."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 19
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Humans have a very strong bias toward right handedness, with approximately 85-90% having right as their dominant hand. Among studies of nonhuman primates, James Welles's 1976 study of captive chimpanzees and catarrhine monkeys reported more right-handed individuals than left-handed ones, but William C. McGrew and colleagues' 1999 study of wild chimpanzees did not find a tendency toward right-handedness. It's important to note, however, that captive animals spend significantly more time with humans than wild animals do, and therefore _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the apparent difference between the two studies' results may be partly attributable to the 1976 study using a different standard to determine handedness than the 1999 study did.",
+    "B": "the right-handedness exhibited by the captive chimpanzees and catarrhine monkeys might be, in part, an effect of extended contact with humans.",
+    "C": "the number of individuals in the study of captive chimpanzees and catarrhine monkeys is likely too small to support the claim that the species tends toward right handedness.",
+    "D": "the number of individuals in the study of wild chimpanzees is probably too small to support the claim that no tendency toward right-handedness was found in that population."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 21
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Used in everything from food to cleaning products, emulsifiers are compounds that serve to stabilize an emulsion—a mixture of two or more liquids that otherwise would not easily blend together. The emulsifiers used by _____ like palmitic acid, allow these scientists to blend oil and water into homogeneous formulations such as lotions and perfumes.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "cosmetic chemists',",
+    "B": "cosmetic chemist's,",
+    "C": "cosmetic chemists,",
+    "D": "cosmetic's chemists,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Many mechanical calculators were powered by a notched cylinder mechanism called the Leibniz wheel. Leibniz wheel calculators were popular in the first half of the twentieth _____ these ingenious devices were eventually replaced by electronic calculators.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "century,",
+    "B": "century",
+    "C": "century, but",
+    "D": "century that"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Nigerian American artist Toyin Ojih Odutola uses black-ink pens to create highly detailed drawings of human figures. Her portrait of novelist Zadie _____ is displayed in the National Portrait Gallery in London.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Smith—",
+    "B": "Smith:",
+    "C": "Smith,",
+    "D": "Smith"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 24
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "Though he would go on to work with many respected musicians, including Paul Hanson on his album Frolic in the Land of Plenty, American _____ may be best known for his time with Sugar Hill Records, where he helped craft the sound of early hip hop music.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "drummer, Dennis Chambers",
+    "B": "drummer Dennis Chambers,",
+    "C": "drummer Dennis Chambers",
+    "D": "drummer, Dennis Chambers,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 25
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "Between June 22 and July 2 each year, particles shed by comet 7P/Pons-Winnecke enter Earth's atmosphere at a velocity of 18 kilometers per second. Relatively few of these particles are likely to reach Earth's _____ since the meteoroids' compression of the air surrounding them causes the vast majority to burn up in the mesosphere, producing the June Boötid meteor shower.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "surface, however;",
+    "B": "surface, however,",
+    "C": "surface; however,",
+    "D": "surface. However,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 26
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "While most animals prefer the safety of nighttime migration, many poisonous amphibians—a category that includes the red-bellied newt and the fire salamander—safely engage in migratory behavior during the day. _____ with the sun in the sky, the amphibians' striking color patterns deter visually oriented daytime predators by serving as a warning of toxicity.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "At that time,",
+    "B": "For example,",
+    "C": "In other words,",
+    "D": "However,"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 27
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Residents of Cairo, Egypt, rely on its rapid transit system, the Cairo Metro, for millions of trips each year. _____ city officials strive to maintain the system’s 71 stations to ensure each of these journeys is as smooth as possible.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "For this reason,",
+    "B": "However,",
+    "C": "For example,",
+    "D": "Alternatively,"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 28
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Box modeling, used by digital artists to develop 3D assets for video games, yields objects with precise mathematical proportions. Granted, as they are formed from perfect geometric shapes, such 3D elements lack organic realism; _____ post-modeling processes such as UV surface mapping are needed to achieve the level of verisimilitude gamers expect.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "consequently,",
+    "B": "similarly,",
+    "C": "in sum,",
+    "D": "however,"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 29
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nLighthouses send out crucial light signals to help ships and other watercraft navigate at night. Before automation, lighthouses were run by lighthouse keepers. Betsy Morrow Humphrey was the lighthouse keeper at Monhegan Island Light in Maine. She held this position from 1862 to 1880. Thelma Austin was the lighthouse keeper at Point Fermin Light in California. She held this position from 1925 to 1941.",
+   "prompt": "The student wants to emphasize a difference between the two lighthouse keepers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "As the lighthouse keeper at Point Fermin Light, Thelma Austin helped watercraft navigate at night.",
+    "B": "From 1862 to 1880, the nighttime waters of Maine were made more navigable thanks to Betsy Morrow Humphrey.",
+    "C": "Betsy Morrow Humphrey worked as a lighthouse keeper in an earlier century than did Thelma Austin.",
+    "D": "Betsy Morrow Humphrey and Thelma Austin both played crucial roles in ensuring safe navigation for watercraft in past centuries."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 30
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nIf a moon orbiting a planet comes close enough to that planet, tidal forces can cause the moon to break apart. In a 2022 study, researchers proposed that Saturn was once orbited by a large moon they named Chrysalis. Their simulations indicated that Chrysalis would likely have come very close to Saturn around 160 million years ago. At that distance, Chrysalis would have been broken apart by tidal forces. The researchers hypothesized that the resulting debris formed Saturn's rings.",
+   "prompt": "The student wants to recount the sequence of events proposed by the researchers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "According to researchers' simulations, debris from Saturn's rings would likely have caused Chrysalis—a large moon orbiting Saturn—to break apart around 160 million years ago.",
+    "B": "In a 2022 study, researchers proposed that Saturn was once orbited by a large moon that broke apart.",
+    "C": "Around 160 million years ago, a large moon (Chrysalis) may have come close enough to Saturn that tidal forces broke the moon apart; its debris then formed the planet's rings.",
+    "D": "If a moon orbiting a planet (like Saturn) comes close enough to that planet, tidal forces can cause the moon to break apart."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 31
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nBirds of Northern South America is an identification guidebook by ornithologists Robin Restall, Clemencia Rodner, and Miguel Lentino. It lists the thirty-five hummingbird species found in Suriname. The brown violetear is a large hummingbird found in Suriname. It is identifiable by its dark violet ear patches and its short, black, straight bill. The little hermit is a small hummingbird found in Suriname. It is identifiable by its white central tail feathers and its long, black, curved bill.",
+   "prompt": "Which choice most effectively uses information from the given sentences to emphasize a similarity between the two birds?",
+   "choices": {
+    "A": "While each exhibits unique traits of its own, the brown violetear and the little hermit both have black bills.",
+    "B": "The little hermit is a small hummingbird identifiable by its white central tail feathers and its long, black, curved bill.",
+    "C": "Though they share several traits in common, the brown violetear is larger than the little hermit.",
+    "D": "Birds of Northern South America is an expertly compiled guidebook by ornithologists Robin Restall, Clemencia Rodner, and Miguel Lentino."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 32
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nLittle is known about the life of Wong Fei-hung (1847-1925).\nHe was born near Foshan, China, and gained local recognition as a physician and Hung Ga (also known as Hung Gar) Kung Fu master. He achieved many incredible martial arts feats—some confirmed and some rumored. He has become an internationally known folk hero thanks to his depiction in over a hundred films, television shows, and other media. In the 1991 film Once Upon a Time in China, actor Jet Li portrays Wong Fei-hung using superhuman kung fu abilities to save his community.",
+   "prompt": "The student wants to emphasize the effect media had on building Wong Fei-hung's legacy. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Thanks to his depiction in over a hundred pieces of media, Wong Fei-hung was locally known as a successful physician and Hung Ga Kung Fu master.",
+    "B": "Wong Fei-hung's abilities as a kung fu master are depicted in many media, including the 1991 film Once Upon a Time in China.",
+    "C": "Various media have depicted Wong Fei-hung, the successful physician and kung fu master who became an internationally known folk hero.",
+    "D": "Though he was known locally during his lifetime, Wong Fei-hung's later depiction in television, film, and other media has turned him into an internationally known folk hero."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 33
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Possessing an outstanding collection of public art, Chicago has everything from monumental mosaics like Marc Chagall's Four Seasons at sites like Chase Tower to innovative street art like Kashink's mural Be The Change You Wish To See located on South Wabash Avenue. The _____ public art on display in the city can thus satisfy any art lover.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "breadth of",
+    "B": "controversy over",
+    "C": "confusion about",
+    "D": "apathy toward"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 36
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "In a 2018 article about films depicting the experiences of Black Americans, critics for the New York Times praise Madeline Anderson's 1970 film I Am Somebody as \"galvanizing\" and Carl Franklin's 1995 film Devil in a Blue Dress as \"picture perfect.\" Fans of the two films hope that such _____ will attract new audiences to these works.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "ambivalence",
+    "B": "acclaim",
+    "C": "foresight",
+    "D": "impartiality"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 37
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "The fossil remains of the individual known as Misliya-1, discovered in Israel in 2002, can help paleoanthropologists not only _____ steps in the evolution of hominids but also illuminate the Pleistocene epoch generally, revealing important details about the time in which Misliya-1 lived.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "exploit",
+    "B": "yield",
+    "C": "prioritize",
+    "D": "discern"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 38
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Throughout history, tall structures such as Gonbad-e Qabus in Iran or Hwangnyongsa in South Korea have posed a challenge to their architects, since these structures are more susceptible to physical forces than smaller structures. For example, the lower floors of a building must be able to support the enormous weight of the upper floors. To test a hypothesis that steel is more suitable than concrete for construction of a tall building's lower floors, researchers created a computer model of two buildings that were identical except that one had concrete lower floors while one had steel lower floors, and simulated the effects of the forces of wind and gravity on those structures over the course of a century.",
+   "prompt": "Which finding from the model tests, if true, would support the researchers' hypothesis?",
+   "choices": {
+    "A": "During the simulation, the structure with steel lower floors bent in high wind to a greater degree than did the structure with concrete lower floors.",
+    "B": "At the end of the simulation, the structure with concrete lower floors was several inches shorter than the structure with steel lower floors.",
+    "C": "During the simulation, when sudden forces caused vibrations in the structures, those vibrations took longer to disappear in the structure with steel lower floors than in the structure with concrete lower floors.",
+    "D": "At the end of the simulation, the structure with steel lower floors had slightly larger dimensions at its base than it did at the beginning of the simulation."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 39
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "HMS Surprise, first published in 1973, is a novel in Patrick O'Brian's Aubrey/Maturin series, which includes twenty completed books. Some critics have found fault with the abrupt endings of HMS Surprise and other books in the series, saying that they do not finish conclusively but arbitrarily stop. But other critics argue that the books should not be thought of as discrete texts with traditional beginnings and endings but as a single incredibly long work, similar to other multivolume stories, such as John Galsworthy's The Forsyte Saga.",
+   "prompt": "Which choice best describes the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It presents a reason most critics think the Aubrey/Maturin series should have the literary renown of similar works like The Forsyte Saga.",
+    "B": "It summarizes a positive assessment of a particular characteristic of the Aubrey/Maturin novels.",
+    "C": "It explains why many critics find the Aubrey/Maturin novels to be entertaining despite flaws in the novels' structures.",
+    "D": "It argues that the unusual structure that O'Brian uses for HMS Surprise makes it one of his most entertaining books."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 40
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. While horizontal gene transfer is common among prokaryotes—single- celled organisms, such as the bacteria Brevibacillus borstelensis and Lactococcus lactis—it has rarely been observed among eukaryotes (multicellular organisms). However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It indicates a distinction between the mechanics of two kinds of biological processes.",
+    "B": "It contrasts the frequency with which a biological phenomenon has been detected in two categories of organisms.",
+    "C": "It explains why a common perception of a biological process is flawed.",
+    "D": "It argues that two biological phenomena are more similar than they may initially appear to be."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 41
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Text 1\nIn separate studies, Stephen Meding and Robert J. Zasoski and Xinhua He and colleagues examined whether plants transfer nutrients to one another using a common mycorrhizal network (CMN)—a lattice of fungal strands in the soil. Meding and Zasoski excluded all pathways other than the CMN by using barriers to keep the plants' root systems separate while allowing mycorrhizal strands through— a crucial step He and colleagues' study did not take.\nText 2\nMeding and Zasoski took the necessary precaution of separating the plants' root systems (thereby excluding root-to-root transmission). However, any barrier used must allow the thread-like hyphae of a CMN to pass through, and this permeability would also allow liquids through. Thus, the researchers' experimental design cannot ensure that any nutrient transfer observed can be attributed to a CMN and not to some other pathway.",
+   "prompt": "Based on the texts, the author of Text 1 and the author of Text 2 would most likely agree with which statement?",
+   "choices": {
+    "A": "The barriers used in Meding and Zasoski's study effectively excluded root-to-root transmission of nutrients.",
+    "B": "A barrier that is impervious to both roots and fungal strands is necessary to evaluate nutrient transfer via a CMN.",
+    "C": "Excluding root-to-root transfer of nutrients between plants is sufficient to ensure that any observed nutrient transfer must involve a CMN.",
+    "D": "He and colleagues' study did not find convincing evidence of nutrient transfer between individual plants."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 42
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Optimal foraging theory (OFT) holds that animals' foraging behaviors reflect cost-benefit trade-offs that vary by species and with dynamic ecological circumstances. One such circumstance is lunar intensity, which Joel Brown and colleagues found to be negatively associated with foraging by Arizona pocket mice but Deborah J. Curtis and colleagues found to be positively associated with foraging by mongoose lemurs. This discrepancy is explicable in terms of OFT: the lemurs' greater reliance on vision means that higher lunar intensity benefits them more than it benefits the mice.",
+   "prompt": "Which choice best describes the finding made by Curtis and colleagues, as presented in the text?",
+   "choices": {
+    "A": "Increased lunar intensity is more beneficial for mongoose lemurs than it is for Arizona pocket mice.",
+    "B": "As lunar intensity increases, mongoose lemurs increase their foraging activity.",
+    "C": "During periods of high lunar intensity, mongoose lemurs increase their reliance on vision.",
+    "D": "As lunar intensity increases, Arizona pocket mice reduce their foraging activity."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 44
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Biologist Grace Herzel and colleagues conducted a study of how butterfly color and weather conditions relate to butterfly behavior, which wouldn't have been possible without data gathered by students and other amateur science enthusiasts in the community. Considering over three years' worth of data, the researchers found that white butterflies were observed on green flowers more often than any other butterflies were, and that butterflies were observed to feed more often on cloudy days than on other days.",
+   "prompt": "According to the text, which factors seemed to be linked to the behavior of butterflies in Grace Herzel and colleagues' study?",
+   "choices": {
+    "A": "Weather conditions but not butterfly color",
+    "B": "Butterfly color but not weather conditions",
+    "C": "Neither butterfly color nor weather conditions",
+    "D": "Both butterfly color and weather conditions"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 45
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "The bird species Myiobius barbatus (the bearded flycatcher) shares some territory in French Guiana with Thamnomanes caesius (the cinereous antshrike), which emits a loud alarm call when it detects predators. Biologist Ari Martinez and colleagues recorded T. caesius alarm calls and played them in the vicinity of wild M. barbatus. Finding that the birds often froze in place or scattered into vegetation upon hearing the calls, they concluded that M. barbatus associates T. caesius alarm calls with danger.",
+   "prompt": "Which finding, if true, would most directly support Martinez and colleagues' conclusion?",
+   "choices": {
+    "A": "Other bird species than M. barbatus also showed a tendency to freeze in place or scatter into vegetation when Martinez and colleagues played T. caesius alarm calls.",
+    "B": "Martinez and colleagues played alarm calls from different T. caesius individuals and observed no significant variation in the responses of M. barbatus.",
+    "C": "In some instances, M. barbatus froze in place or scattered into vegetation when Martinez and colleagues approached but before they began playing sounds.",
+    "D": "When Martinez and colleagues played control sounds of random noise in the vicinity of M. barbatus , the birds displayed no reaction."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 46
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Studies of Cougar Population Density\nStudy area Maximum density\nStudy authors Location Methods (square (cougars per 100\nkilometers) square kilometers)\nLindsey N. Rich Belize, Bolivia, regular camera\n4,329 6.50\net al. Argentina trapping\nclustered camera\nSean M. Murphy New Mexico\ntrapping, GPS 15,314 1.65\net al. (United States)\ntracking of collars\nP. Ian Ross and\nAlberta\nMartin G. radio-collar tracking 780 4.70\n(Canada)\nJalkotzy\nRichard A. Washington\nbiopsy darting 7,939 2.40\nBeausoleil et al. (United States)\nStudies of the population density of cougars (Puma concolor) have yielded a range of results, which may in part reflect differences in the effectiveness of the methods that researchers have used in their studies. If, for example, the use of clustered camera trapping and GPS tracking of collars tends to lead to underestimates of cougar population density, that may explain why the study by ________",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "P. Ian Ross and Martin G. Jalkotzy reported a maximum density of 4.70 individuals per 100 square kilometers, while the study by Richard Beausoleil et al., which used biopsy darting, reported a lower maximum density.",
+    "B": "Sean M. Murphy et al. reported a maximum density of only 1.65 individuals per 100 square kilometers, lower than that reported by several other studies.",
+    "C": "Richard A. Beausoleil et al. required a study area of 7,939 square kilometers, while the study by Sean M. Murphy et al. required a study area of 4,329 square kilometers.",
+    "D": "Lindsey N. Rich et al. reported a maximum density of 6.50 individuals per 100 square kilometers, higher than that reported by several other studies."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 47
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "The linguistic niche hypothesis (LNH) posits that the exotericity of languages (how prevalent non- native speakers are) and grammatical complexity are inversely related, which the LNH ascribes to attrition of complex grammatical rules as more non-native speakers adopt the language but fail to acquire those rules. Focusing on two characteristics that are positive indices of grammatical complexity, fusion (when new phonemes arise from the merger of previously distinct ones) and informativity (languages' capacity for meaningful variation), Olena Shcherbakova and colleagues conducted a quantitative analysis for more than 1,300 languages and claim the outcome is inconsistent with the LNH.",
+   "prompt": "Which finding, if true, would most directly support Shcherbakova and colleagues' claim?",
+   "choices": {
+    "A": "Shcherbakova and colleagues' analysis showed a slightly positive correlation between grammatical complexity and fusion.",
+    "B": "Shcherbakova and colleagues' analysis showed a slightly negative correlation between grammatical complexity and exotericity.",
+    "C": "Shcherbakova and colleagues' analysis showed a slightly positive correlation between fusion and exotericity and between informativity and exotericity.",
+    "D": "Shcherbakova and colleagues' analysis showed a slightly negative correlation between grammatical complexity and fusion and between grammatical complexity and informativity."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 49
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Neuroscientist Kiyohito Iigaya and colleagues developed a computational model to predict how much a person will enjoy a particular work of art on a scale from 1 (not at all) to 4 (very much). They then recruited participants to use the same scale to rate several sets of paintings in various styles and calculated the correlation between the ratings predicted by the model and those reported by the participants. Assuming participant P7 gave equal ratings to the impressionist and color-field paintings, the data in the graph suggest that the model predicted that _____",
+   "prompt": "Which choice most effectively uses data from the graph to complete the statement?",
+   "choices": {
+    "A": "P7’s ratings for impressionist and color-field paintings would differ from one another.",
+    "B": "P7 would derive more aesthetic pleasure from impressionist paintings than from color-field paintings.",
+    "C": "P7’s ratings for impressionist and color-field paintings would equal one another.",
+    "D": "P7 would derive less aesthetic pleasure from impressionist paintings than from color-field paintings."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 50,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/rw2-13-1.webp",
+     "w": 650,
+     "h": 624,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Arthurian legends (tales related to the character of King Arthur) derive from many often contradictory sources, such as Vita Sancti Cadoci, composed in the 11th century, and Culhwch and Olwen from the second half of the 12th century. Sir Thomas Malory's 15th-century text Le Morte d'Arthur was an attempt to compile these stories into a coherent narrative. Many of Malory's sources derive from Geoffrey of Monmouth's History of the Kings of Britain, written in the 1130s. While neither History nor any works that predate it mention Arthur's famous Round Table at which his knights assembled, Le Morte d'Arthur does, suggesting that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "Geoffrey of Monmouth's accounts of Arthurian legends in History are more similar overall in content to the accounts in Culhwch and Olwen than they are to the accounts in Le Morte d'Arthur.",
+    "B": "when a version of an Arthurian legend contradicted the version in History, Malory preferred to include Geoffrey of Monmouth's version in Le Morte d'Arthur.",
+    "C": "Le Morte d'Arthur is more historically accurate than History because Culhwch and Olwen had not been written when Geoffrey of Monmouth was writing his work.",
+    "D": "Malory encountered the Round Table in a source that Geoffrey of Monmouth was not familiar with when writing his History."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 52
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Prolonged exposure to anthropogenic noise (sounds from human sources like traffic or mining) can affect animals, as Graeme Shannon and colleagues found in a 2016 study of black-tailed prairie dogs. Researchers conducted a meta-analysis of studies of how such noise affects animals and found that, for every study, relevant traits or behaviors of the animals were observably different between the exposed group and the otherwise similar but unexposed group. Although, on average, studies of mammals showed larger differences than studies of amphibians did, for every class of animals examined, there were individual studies showing differences well above the average for mammals. Therefore, the results of the meta analysis suggest that ____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the differences that studies attribute to exposure to anthropogenic noise are likely to be more pronounced for amphibians than they are for mammals.",
+    "B": "some studies of amphibians found larger effects of exposure to anthropogenic noise than some studies of mammals did.",
+    "C": "the difference found in the study conducted by Graeme Shannon and colleagues was likely larger than the average difference for studies of black-tailed prairie dogs included in the meta- analysis.",
+    "D": "the studies in the meta-analysis that examined mammals were more likely than those that examined amphibians to specify whether the observed effects were detrimental."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 53
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "The term \"retroflex\" derives from Latin and means \"bent back,\" an apt descriptor for the branch of consonantsretroflex consonantspronounced with the tongue curling up and back in the mouth. In many languages, including English, these consonants are _____ in some dialects of Mandarin, however, four such consonants (\"ch,\" \"sh,\" \"zh,\" and \"r\") are relatively common.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "rare,",
+    "B": "rare",
+    "C": "rare;",
+    "D": "rare and"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 55
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Along with carbon dioxide concentration and temperature, light intensity affects the chemical reaction rate of _____ as light intensity increases, so does the rate at which the reactants (water and carbon dioxide) are converted into their products (glucose and oxygen).",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "photosynthesis",
+    "B": "photosynthesis:",
+    "C": "photosynthesis and",
+    "D": "photosynthesis,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 56
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "The fungus Tricholoma matsutake, commonly referred to as matsutake, is known to establish ectomycorrhizal bonds with certain pine tree species; in many cases, such symbiotic relationships, wherein fungal hyphae make contact with the pine's root system, _____ extensive networks, which can be used to transport nutrients between trees.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "forming",
+    "B": "to form",
+    "C": "having formed",
+    "D": "form"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 57
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "Though he would go on to work with many respected bands, including CAB on their album CAB 2, American _____ may be best known for his time with Sugar Hill Records, where he helped craft the sound of early hip-hop music.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "drummer, Dennis Chambers,",
+    "B": "drummer Dennis Chambers",
+    "C": "drummer, Dennis Chambers",
+    "D": "drummer Dennis Chambers,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 58
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "Gretchen Legler's short essay on \"sound,\" a word referring to a large inlet or channel of a sea or ocean, is included in the collection Home Ground: A Guide to the American Landscape. The book wasn't written solely by _____ other authors, such as Stephen Graham Jones and Barry Lopez, also contributed essays.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Legler, however,",
+    "B": "Legler; however,",
+    "C": "Legler. However,",
+    "D": "Legler, however;"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 59
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "The Organisation for Economic Co-operation and Development (OECD) tracks comparative price list data for its thirty eight member countries. According to this data, in July 2021, a \"basket\" of goods and services priced at 100 US dollars (USD) in the United States would have cost 66 USD in fellow OECD member _____",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "nation Latvia.",
+    "B": "nation: Latvia.",
+    "C": "nation, Latvia.",
+    "D": "nation—Latvia."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 60
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "In his painting At the Cycle Race Track, Jean Metzinger aims to depict a bike race in four-dimensional space. Of course, Metzinger's painting doesn't technically represent a fourth dimension; humans can only see in three dimensions. _____ by depicting the race through multiple, simultaneous perspectives, Metzinger offers a fascinating glimpse at what this other universe might look like.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "For example,",
+    "B": "In other words,",
+    "C": "Moreover,",
+    "D": "That said,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 61
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "In 2015, geologist Peter Rogerson recalculated the geographic center of Nebraska, which had previously been determined in 1920 by the US Geological Survey (USGS). The USGS, Rogerson contended, had omitted important considerations, not least the curvature of the earth. _____ the state's USGS- determined center—a point 10 miles northwest of the municipality of Broken Bow—was inaccurate.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Next,",
+    "B": "That being said,",
+    "C": "Hence,",
+    "D": "However,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 62
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "On August 5, 1938, aviator Douglas Corrigan received a ticker-tape parade in New York City in recognition of his transatlantic flight. Of the 206 ticker-tape parades held between 1886 and 2022, a number were for achievements in aviation. ______ Corrigan's parade was just one of 16 honoring pilots.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In addition,",
+    "B": "Therefore,",
+    "C": "Indeed,",
+    "D": "Nevertheless,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 63
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Bauhaus was an influential German art and design school founded in 1919 by Walter Gropius. Gropius was the school's director from 1919 to 1928. Hannes Meyer was its director from 1928 to 1930. Ludwig Mies van der Rohe was its director from 1930 to 1933. Josef Albers was a painter and educator who began attending the Bauhaus in 1920. Stella Steyn was a painter and illustrator who began attending the Bauhaus in 1931.",
+   "prompt": "The student wants to emphasize the order in which the two students attended the Bauhaus. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Founded in 1919, the Bauhaus was a German art and design school whose past students include Josef Albers and Stella Steyn.",
+    "B": "The Bauhaus was founded in 1919, and Stella Steyn began attending in 1931.",
+    "C": "Josef Albers and Stella Steyn were both Bauhaus students, but Albers, who began attending in 1920, preceded Steyn.",
+    "D": "Walter Gropius founded the Bauhaus in 1919 and acted as its director until 1928, at which point Hannes Meyer succeeded him in the role."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 64
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nGenerally, an object will heat up when twisted.\nThe twisting of an object is known as torsion.\nA 2019 study led by Zunfeng Liu and Ray Baughman tested the torsional heating of various fibers. When a 0.7-millimeter thick sample of single-ply nickel-titanium (NiTi) wire was twisted, its average surface temperature increased by 21.3°C. When a 2-millimeter-thick sample of ethylene propylene diene monomer (EPDM) rubber fiber was twisted, its average surface temperature increased by 12°C.",
+   "prompt": "The student wants to contrast the two samples. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "In 2019, researchers studied the effect of torsional heating on various fibers, including samples of EPDM rubber and single-ply NiTi wire.",
+    "B": "The EPDM rubber sample used in the 2019 study was thicker than the single ply NiTi wire sample.",
+    "C": "Twisting an object will generally cause its temperature to increase, a process known as torsional heating.",
+    "D": "When the fibers were twisted as part of the 2019 study, the surface temperature of both samples increased."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 65
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nElement abundance is a relative measure of the amount of a chemical element in a given environment. Abundance can be expressed as a mass fraction. A mass fraction is the ratio of the total mass of an element to the combined mass of all elements in a given environment. The mass fraction of magnesium (Mg) on Earth is 154,000 parts per million (ppm). The mass fraction of zinc (Zn) on Earth is 40 ppm. The student wants to specify the total mass of Earth's magnesium relative to that of all elements.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Magnesium's abundance on Earth is greater than zinc's, as reflected by magnesium's higher mass fraction.",
+    "B": "Magnesium's abundance can be expressed by a mass fraction, a measure of the element's mass relative to that of all elements on Earth.",
+    "C": "The mass fraction of magnesium on Earth is 154,000 ppm.",
+    "D": "Magnesium's mass relative to the combined mass of all elements on Earth is 40 ppm."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 66
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "The graph of a system of two linear equations is shown. The solution to the system is (x,y). What is the value of y?",
+   "choices": {
+    "A": "−5",
+    "B": "−4",
+    "C": "2",
+    "D": "3"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 68,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m1-01-1.webp",
+     "w": 352,
+     "h": 304,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = 15x + 10. What is the value of f(x) when x = 2?",
+   "choices": {
+    "A": "27",
+    "B": "30",
+    "C": "40",
+    "D": "50"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 69
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "In the xy-plane, the graph of y = f(x) is a line that passes through (0,21) and has a slope of 4. Which equation defines f?",
+   "choices": {
+    "A": "f(x) = 21x",
+    "B": "f(x) = 21x + 4",
+    "C": "f(x) = 4x",
+    "D": "f(x) = 4x + 21"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 70
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "x y\n0 22\n1 23\n2 24\nThe table shows three values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+   "choices": {
+    "A": "y = x + 22",
+    "B": "y = 24x",
+    "C": "y = 24x + 2",
+    "D": "y = 22x"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 71
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "One of the two equations in a system of linear equations is given. The system has infinitely many solutions. If the second equation in the system is y = mx + b, where m and b are constants, what is the value of b? 2 y = √x + 2 5",
+   "choices": {
+    "A": "−2",
+    "B": "21",
+    "C": "−_2^1",
+    "D": "2"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 72
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "An object was launched upward from a platform. The graph shown models the height above ground, y , in meters, of the object x seconds after it was launched. For which of the following intervals of time was the height of the object increasing for the entire interval?",
+   "choices": {
+    "A": "From x = 0 to x = 2",
+    "B": "From x = 0 to x = 4",
+    "C": "From x = 2 to x = 3",
+    "D": "From x = 3 to x = 4"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 73,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m1-06-1.webp",
+     "w": 580,
+     "h": 469,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "The relationship between the variables r and y is defined by an exponential equation. When x = 0, the value of y is 90, and for every increase in the value of x by 1, the corresponding value of y increases by 20% of its previous value. Which equation represents this relationship?",
+   "choices": {
+    "A": "y = 90(1.20)^x",
+    "B": "y = 90(1.02)^x",
+    "C": "y = 20(1.90)^x",
+    "D": "y = 20(1.09)^x"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 75
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "Task Time (minutes)\nA 8\nB 6\nC 14\nD 11\nE 11\nThe table shows the amount of time it took a participant in a study to complete each tasks. What was the mean time, in minutes, for this participant to complete a task?",
+   "choices": {
+    "A": "8",
+    "B": "10",
+    "C": "11",
+    "D": "12"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 76
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "The function h is defined by h(x) = 7∣x∣. What is the value of h(−2)?",
+   "choices": {
+    "A": "−14",
+    "B": "5",
+    "C": "9",
+    "D": "14"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 77
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "Which of the following is closest to the slope of the line of best fit shown?",
+   "choices": {
+    "A": "−11.19",
+    "B": "−0.84",
+    "C": "0.84",
+    "D": "11.19"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "two-var-data",
+   "page": 78,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m1-10-1.webp",
+     "w": 1149,
+     "h": 1055,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "In the figure, line q is parallel to line r, and both lines are intersected by line s. If y = 2x + 7, what is the value of x?",
+   "choices": {
+    "A": "35",
+    "B": "42",
+    "C": "48",
+    "D": "58"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 80,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m1-11-1.webp",
+     "w": 322,
+     "h": 263,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "spr",
+   "prompt": "Raheem bought 9 shirts that were each the same price. He used a coupon for $54 off the entire purchase. The cost for the entire purchase after using the coupon was $108. What was the original price, in dollars, for 1 shirt?",
+   "answer": "18",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 82
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "Line t in the xy-plane has a slope of −_3^1 and passes through the point (9,4). Which equation defines line t?",
+   "choices": {
+    "A": "y = 7x −_3^1",
+    "B": "y = 9x + 4",
+    "C": "y = −_3^x + 4",
+    "D": "y = −_3^x + 7"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 83
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "spr",
+   "prompt": "(x − 16)(x − 12)(x + 7)(x + 13) = 0 What is a positive solution to the given equation?",
+   "answer": "12",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 84
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "A right circular cone has a height of 13 centimeters (cm) and a base with a radius of 6 cm. What is the volume, in cm³, of this cone?",
+   "choices": {
+    "A": "26π",
+    "B": "78π",
+    "C": "156π",
+    "D": "468π"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 85
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "spr",
+   "prompt": "A linear model estimates the population of a city from 1995 to 2019. The model estimates the population was 55 thousand in 1995, 217 thousand in 2015, and x thousand in 2019. To the nearest whole number, what is the value of x?",
+   "answer": "249",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 86
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "The equation gives the estimated number of online newsletter subscribers at the end of every six- month period, x, starting from the end of January 1997, where 0 < x < 4. Which statement is the best interpretation of the y-intercept of the graph of this equation in the xy-plane? y = 500(2)^(2x)",
+   "choices": {
+    "A": "The estimated number of online newsletter subscribers at the end of the first six-month period was 500.",
+    "B": "The estimated number of online newsletter subscribers at the end of January 1997 was 500.",
+    "C": "The estimated number of online newsletter subscribers at the end of January 1998 was 1,000.",
+    "D": "The estimated number of online newsletter subscribers at the end of January 1997 was 1,000."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 87
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "spr",
+   "prompt": "x\n+ 5(y − 14) = 29\n7\nx\n− 5(y − 14) = 41\n3\nThe solution to the given system of equations is (x,y). What is the value of 10x?",
+   "answer": "1470",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 88
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "When several resistors are connected in series in a circuit, the total resistance of the circuit is the sum of the resistances of these resistors. A certain circuit consists of 8 resistors connected in series, where the resistance of each resistor is positive. This circuit has a total resistance of 130 ohms. The total resistance of 3 resistors in this circuit is 90 ohms. Which inequality best represents all possible values of the resistance c, in ohms, of one of the other 5 resistors in this circuit?",
+   "choices": {
+    "A": "0 < x < 8",
+    "B": "0 < x < 40",
+    "C": "40 < x < 90",
+    "D": "40 < x < 130"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 89
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "A family has money in an account for renting movies online. Each time the family rents a movie, the cost of the rental is withdrawn from the account, and each rental costs the same amount of money. The function f(m) = 21 − 3m gives the amount of money, in dollars, in the account after the family has rented m movies. Which of the following represents the amount of money, in dollars, withdrawn from the account each time the family rents a movie?",
+   "choices": {
+    "A": "3m",
+    "B": "3",
+    "C": "21",
+    "D": "21 − 3m"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 90
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "spr",
+   "prompt": "If 9 − 4(4 − 9x) = 2 − 5(4 − 9x), what is the value of 4 − 9x?",
+   "answer": "-7",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 91
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "spr",
+   "prompt": "On a plot of land, 52.0% of the square footage is farmland and the remaining square footage is pasture. There are buildings on exactly 21.5% of the square footage of the farmland, and there are buildings on exactly 14.0% of the square footage of the pasture. If there are buildings on exactly p% of the square footage of the plot of land, what is the value of p?",
+   "answer": "17.9",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 92
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "In the right triangle shown, what is the value of a?",
+   "choices": {
+    "A": "24",
+    "B": "66",
+    "C": "90",
+    "D": "56"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 94,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m2-01-1.webp",
+     "w": 261,
+     "h": 205,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "The graph of the polynomial function f in the xy-plane, where y = f(x), passes through the point (5,3). What is the value of f(5)?",
+   "choices": {
+    "A": "3",
+    "B": "5",
+    "C": "8",
+    "D": "15"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 95
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "spr",
+   "prompt": "A circle has a circumference of 42π centimeters. What is the diameter, in centimeters, of the circle?",
+   "answer": "42",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 96
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "For an object with a mass of 49 kilograms, the given equation relates the kinetic energy K in joules, of the object to the object's speed v, in meters per second, where K and v are positive. Which equation correctly expresses this object's speed, in meters per second, in terms of the object's kinetic energy, in joules? 2K 49 = v^2",
+   "choices": {
+    "A": "v =^2_4^K_9",
+    "B": "v =_2^4_K^9",
+    "C": "v =^4_2^9_K^v",
+    "D": "v =_4^2_9^K_v"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 97
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = 4x^2. What is the value of f(11)?",
+   "choices": {
+    "A": "44",
+    "B": "52",
+    "C": "88",
+    "D": "484"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 98
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "1_x\ng(x) = √(5)\n9\nIf the given function g is graphed in the xy-plane, where y = g(x), what is the y-intercept of the graph?",
+   "choices": {
+    "A": "(0,0)",
+    "B": "(0,_9^1)",
+    "C": "(0,_9^5)",
+    "D": "(0,5)"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 99
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "spr",
+   "prompt": "Hawks Stars Total\nSmall 6 9 15\nMedium 21 34 55\nLarge 15 25 40\nTotal 42 68 110\nA bin contains a mixture of T-shirts for two sports teams. The table shows the number of T-shirts in the bin, classified by size and sports team. One T-shirt from the bin will be selected at random. What is the probability of selecting a T-shirt that is medium, given that the T-shirt is a Hawks T-shirt? (Express your answer as a decimal or fraction, not as a percent.)",
+   "answer": "1/2",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "probability",
+   "page": 100
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "spr",
+   "prompt": "The population of a certain city doubled every 75 years from 1652 to 1952. The population of this city was 160,000 in 1952. What was the population of this city in 1652?",
+   "answer": "10000",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 101
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "In right triangle JKL, the tangent of ∠L is _4^3. What is the length of JK?",
+   "choices": {
+    "A": "1365",
+    "B": "145",
+    "C": "54",
+    "D": "72"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 102,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m2-09-1.webp",
+     "w": 313,
+     "h": 230,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "_2 25\nx − = 0\n81\nHow many distinct real solutions does the given equation have?",
+   "choices": {
+    "A": "Zero",
+    "B": "Exactly one",
+    "C": "Exactly two",
+    "D": "Infinitely many"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 103
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "In the given equation, a is a constant. The equation has infinitely many solutions. What are all possible values of a? a(7x − 14) + 5a = 7(ax − 2a) − 35",
+   "choices": {
+    "A": "0 only",
+    "B": "−7 only",
+    "C": "Any real number",
+    "D": "No real number"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 104
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "spr",
+   "prompt": "If x > 0 and x is 33% of y, which expression represents y in terms of x? A^1_3^0_3^0x B_3^1_3^0x C_3^1_3x D_1^6_0^7_0x",
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 105
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "^5 x^m\nIn the given expression, m is a constant and x > 1. The expression can be rewritten as ^7 x. What is the value of m?",
+   "choices": {
+    "A": "5/7",
+    "B": "0.714",
+    "C": "0.",
+    "D": "7143"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 106
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "A book-of-the-month club charges $13 for the first book purchased during the month and an additional $11 for each book after the first. Which equation describes this situation, where y is the total cost, in dollars, for books purchased during a month, x is the number of books purchased during the month, and x > 0?",
+   "choices": {
+    "A": "y = x + 13",
+    "B": "y = 11x + 13",
+    "C": "y = 11(x − 1) + 13",
+    "D": "y = (x − 1) + 13"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 107
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "z(w) = (0.829)^(2w)\nThe function z is defined by the equation shown. The value of z(w) decreases by p% for each increase by 1 in the value of w. Which of the following is closest to the value of p?",
+   "choices": {
+    "A": "0.171",
+    "B": "0.829",
+    "C": "17.1",
+    "D": "31.3"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 108
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "The graph of the linear function y = f(x) + 11 is shown. If c and d are positive constants, which equation could define f?",
+   "choices": {
+    "A": "f(x) = −d − cx",
+    "B": "f(x) = d + cx",
+    "C": "f(x) = d − cx",
+    "D": "f(x) = −d + cx"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 109,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m2-16-1.webp",
+     "w": 933,
+     "h": 799,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "21x^2 + (21s + r)x + rs = 0\nIn the given equation, r and s are positive constants. The product of the solutions to the given equation is krs, where k is a constant. What is the value of k?",
+   "choices": {
+    "A": "211",
+    "B": "0.047",
+    "C": "0.048",
+    "D": ".0476"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 111
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "The speeds of particles A, B, and C are a meters per second, b meters per second, and c meters per second, respectively. If the speed of particle A is 6,000% of the speed of particle C and the speed of particle C is 0.008% of the speed of particle B, which expression represents the value of a + b in terms of c?",
+   "choices": {
+    "A": "12,560c",
+    "B": "6,125c",
+    "C": "6,008c",
+    "D": "1,850c"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 112
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "−16(5x − 3)^2 + 4(5x − 2)^2\nThe given expression can be rewritten as _4^ax^2 +_4^bx +^c_4, where a,b, and c are constants. What is the value of a + b + c?",
+   "choices": {
+    "A": "-112",
+    "B": "-56",
+    "C": "-28",
+    "D": "-7"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 113
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "f(x) = 66b^x\nIn the given function, b is a positive constant. For every increase in the value of x by 1, the value of f(x) increases by c%, where 0 < c < 100. Which expression gives the value of c in terms of b?",
+   "choices": {
+    "A": "1 +_(10)^b_0",
+    "B": "b + 100",
+    "C": "100(b + 1)",
+    "D": "100(b − 1)"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 114
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "On average, a certain tree grows 87 centimeters every m months. At this rate, which expression represents the number of centimeters, on average, the tree grows every k years?",
+   "choices": {
+    "A": "249km",
+    "B": "249mk",
+    "C": "1,04k4m",
+    "D": "1,0m44k"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 115
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "spr",
+   "prompt": "In the figure shown, points A, B, C, and E lie on the circle, and AB < BC. Segment AC is perpendicular to segment BE at point D, and BD = 346. The diameter of the circle is 175. If ^C_(AD)^D = r , what is the value of r?",
+   "answer": "173/2",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 116,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-12-int-a/m2-22-1.webp",
+     "w": 237,
+     "h": 236,
+     "y": 115
+    }
+   ]
+  }
+ ]
+}

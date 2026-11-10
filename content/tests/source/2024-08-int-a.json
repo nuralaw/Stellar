@@ -1,0 +1,1923 @@
+{
+ "id": "2024-08-int-a",
+ "title": "Aug 2024 INT A",
+ "year": 2024,
+ "month": 8,
+ "version": "INT",
+ "form": "A",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "key",
+ "pdf": "Aug 2024 INT A, with answers (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Becoming a member of the organization Indigenous Photograph has helped Sara Aliaga Ticona (Aymara) to _____ her work with an audience beyond Bolivia, where she's from. The organization's database of members is used by photography editors and others in the media industry around the world.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "share",
+    "B": "split",
+    "C": "challenge",
+    "D": "examine"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "Since the Hubble Space Telescope was launched into space in 1990, astronauts have needed to complete regular missions to repair the telescope and keep it working smoothly. Researchers hope that robots will soon be able to make these repairs. Employing robots instead of humans to make repairs will be helpful, as _____ astronauts to maintain the telescope can be expensive.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "straightening",
+    "B": "relying on",
+    "C": "reducing",
+    "D": "forgetting about"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "In 1776, the United States sent Benjamin Franklin to France to try to win the country's support in the United States' fight for independence from Great Britain. Franklin was very popular in France. This _____ surely helped him to convince France to assist the United States.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "controversy",
+    "B": "sincerity",
+    "C": "esteem",
+    "D": "thoughtfulness"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "The creation of Lotte Reiniger's 1926 animated film The Adventures of Prince Achmed was _____ process. Over the course of three years, Reiniger and her collaborators painstakingly made more than 250,000 individual images of hand-cut paper silhouettes and repeatedly had to invent entirely new methods and tools to create the special effects Reiniger envisioned.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "a haphazard",
+    "B": "a contentious",
+    "C": "an ineffectual",
+    "D": "an arduous"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America. Yung Wing was the first American college graduate of Chinese heritage; Phoebe Brown was the first prominent female hymn writer in the United States. I look back upon my acquaintance with Mrs. Phoebe H. Brown with a mingled feeling of respect and admiration. She certainly was a remarkable New England woman—a woman of surpassing strength of moral and religious character. Those who have had the rare privilege of reading her stirring biography, will, I am sure, bear me out in this statement. She went through the crucible of unprecedented adversities and trials of life and came out one of the rare shining lights that beautify the New England sky.",
+   "prompt": "Which choice best describes the function of the reference to Brown's biography in the text as a whole?",
+   "choices": {
+    "A": "It emphasizes that Brown's life has been a popular subject for writers because it was so remarkable.",
+    "B": "It suggests that other people who are familiar with Brown's life would share the author's view of her.",
+    "C": "It explains why Brown was unique amongst her peers.",
+    "D": "It describes the nature of the relationship between Yung and Brown."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is from Mary Shelley's 1818 novel Frankenstein. Victor Frankenstein, who is narrating this portion of text, describes the state of scientific knowledge as he began his own study of the natural world. The untaught peasant beheld the elements around him and was acquainted with their practical uses. The most learned philosopher knew little more. He had partially unveiled the face of Nature, but her immortal lineaments were still a wonder and a mystery. He might dissect, anatomise, and give names, but, not to speak of a final cause, causes in their secondary and tertiary grades were utterly unknown to him. I had gazed upon the fortifications and impediments that seemed to keep human beings from entering the citadel of nature, and rashly and ignorantly I had repined.",
+   "prompt": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It explains what can be gained from a scientific approach to understanding natural phenomena.",
+    "B": "It describes an intensely debated scientific controversy that Victor dedicated his life to resolving.",
+    "C": "It undermines the idea that a practical approach to understanding natural phenomena is inferior to a scientific approach.",
+    "D": "It suggests that Victor did not discover what he wanted to know from the scientific research available to him."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "In the 1940s, Evelyn Cunningham worked for the Pittsburgh Courier, focusing on coverage of the early civil rights movement. Cunningham's accomplishment is just one example of the rich history of Black journalism in the United States. That history is preserved by the National Association of Black Journalists, which was founded in Washington, D.C. in 1975 to support Black media professionals and honor people like Cunningham.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "The National Association of Black Journalists was founded in Washington, DC, in the 1900s.",
+    "B": "Black journalists has an interesting history both inside and outside the United States.",
+    "C": "Cunningham's achievements are often overlooked in countries other than the United States.",
+    "D": "Black journalism in the United States has an important history that the National Association of Black Journalists helps to honor."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 10
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Why do ocelots purr but jaguars roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats called the hyoid. Ocelots, which are much smaller than jaguars, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, jaguars have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that ocelots lack. These traits allow jaguars and most other species of big cats to produce powerful roars. The same traits may also prevent most big cats from purring.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Both ocelots and jaguars have U-shaped hyoid bones, but ocelots hyoids are rigid whereas jaguars' hyoids are flexible.",
+    "B": "Researchers are uncertain why relatively small cats, such as ocelots, purr but relatively large cats, such as jaguars, roar.",
+    "C": "Jaguars and most other species of big cats can roar because they have flexible hyoid bones that are attached by stretchy ligaments to their skulls.",
+    "D": "Differences related to the hyoid bone in ocelots and jaguars may help explain why one species purrs and the other roars."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 11
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "\"Coyote\" is an example of a loanwordthat is, a word that originated in one language and was later adopted by another. The word came to English indirectly from coyote, the Spanish word for the wild canine species. Spanish had borrowed it from Nahuatl, an Indigenous language of Central Mexico, in which the word's original form is coyotl. \"Condor\" also has an Indigenous origin and entered English through Spanish, but in this case, the original source was Quechua, a language of South America, in which the word for the large vulture species is kuntur.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "The English words “coyote” and “condor” are both examples of loanwords from Indigenous languages.",
+    "B": "When borrowing from Indigenous languages, Spanish adopted roughly as many words from Nahuatl as from Quechua.",
+    "C": "Many Spanish words with Indigenous origins first passed through English before entering Spanish.",
+    "D": "When non-Indigenous languages borrowed from Indigenous languages, the words often underwent a significant change in meaning."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 12
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Many believe that lullabies, characterized by their slow tempos, contain some acoustic features that are universally calming to infants. In a study, Constance M. Bainbridge and colleagues played both a lullaby sung in the Luk Saami language and a non-lullaby sung in the Tundra Nenets language to a group of infants. The researchers also measured the infants’ heart rates, as a reduced heart rate is considered a measure of relaxation. They claim that the lullaby did indeed relax the infants.",
+   "prompt": "Which finding, if true, would most directly support Bainbridge and colleagues' claim?",
+   "choices": {
+    "A": "The heart rates of infants in the study were more irregular during the lullabies than during non- lullabies.",
+    "B": "Infants' heart rates were substantially lower during the lullaby than during the non-lullaby.",
+    "C": "Parents of infants in the study chose the lullaby over the non-lullaby when asked which song they would use to calm their child.",
+    "D": "Both the song in Luk Saami and the song in Tundra Nenets were sung by a female singer."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 13
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "A Pair of Silk Stockings is an 1897 short story by Kate Chopin. In the story, Mrs. Sommers is depicted as sometimes making decisions without conscious deliberation: ______",
+   "prompt": "Which quotation from A Pair of Silk Stockings most effectively illustrates the claim?",
+   "choices": {
+    "A": "\"She handed the girl a five-dollar bill and waited for her change and for her parcel. What a very small parcel it was!\"",
+    "B": "\"She had no time, no second of time to devote to the past. The needs of the present absorbed her every faculty.\"",
+    "C": "\"She was not thinking at all. She seemed for the time to be taking a rest from that laborious and fatiguing function and to have abandoned herself to some mechanical impulse that directed her actions and freed her of responsibility.\"",
+    "D": "\"Mrs. Sommers selected a black pair and looked at them very long and closely. She pretended to be examining their texture, which the clerk assured her was excellent.\""
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 14
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Psychologists Gregory Bryant, Dorsa Amir, and colleagues investigated cross-cultural perceptions of spontaneous (real) laughter and volitional (fake or forced) laughter. Study participants from 21 societies, including those in Austria and Turkey, listened to randomized recordings of 18 spontaneous laughs taken from natural conversations between pairs of women and 18 volitional laughs produced separately by 18 different women in response to an experimenter's instruction to laugh. Analysis of the participants' evaluations of the laughs prompted the team to conclude that the ability to distinguish between spontaneous and volitional laughter appears to be universal across cultures.",
+   "prompt": "Which quotation from a psychologist not involved in the team's study would most directly weaken the team's conclusion?",
+   "choices": {
+    "A": "“When an individual chooses to produce volitional laughter in a natural social context, the laughter often shares certain acoustic qualities, such as pitch and fluctuation of intensity, with spontaneous laughter.”",
+    "B": "“Although the team considered the average size of communities in each society in the study, that demographic factor was found to have no effect on listeners' identifications of laughter as spontaneous or volitional.”",
+    "C": "“Judgments of spontaneous laughter are often associated with acoustic features such as greater intensity variability and higher pitch.”",
+    "D": "“Recent studies in communications have shown that certain acoustic features of spontaneous laughter, such as pitch and intensity, are consistent both within and across societies.”"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 15
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "To understand the extent of deforestation in the Chorotega region of Costa Rica, Juan Pablo Arroyo- Mora and colleagues used historical aerial photography and remote sensing data to track changes in the forest cover area across different land use capability classes (categories that indicate possible uses of forest land). Due to the Chorotega region's climate, various types of forested areas were converted to cattle pasture as rising international meat prices drove a cattle ranching boom in the 1960s and 1970s. By the mid-1980s, however, increased public awareness and environmental reforms, along with a decline in meat prices, triggered a natural regrowth process, as evident by the _____",
+   "prompt": "Which choice most effectively uses data from the graph to complete the assertion?",
+   "choices": {
+    "A": "increase in the forest cover area for all classes from 1979 to 2000.",
+    "B": "similarity in forest cover area in Class I-IV and Class VII in 1986.",
+    "C": "difference between the forest cover area in Class I-IV and in Class VI in 2000.",
+    "D": "decrease in the forest cover area for all classes from 1960 to 1979."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 17,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-08-int-a/rw1-13-1.webp",
+     "w": 407,
+     "h": 613,
+     "y": 113
+    }
+   ]
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "There are over 150 species of the cactus genus Mammillaria throughout the Americas, but their survival can be threatened by high precipitation and dense vegetation that blocks sunlight. Researchers have located species from the genus in almost every state in Mexico, with several of them, like M. knippeliana, restricted to only one state. The fact that this genus has not been observed in eastern and western Coahuila has been attributed to a lack of appropriate habitat, but much of the landscape in this area is notoriously inaccessible, which suggests that _______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "M. knippeliana may have been overlooked in eastern and western Coahuila because of its similarity to another species.",
+    "B": "the current methods of collecting and tracking Mammillaria species throughout Mexico may cause an overestimation of the number of species in this genus.",
+    "C": "the perceived absence of Mammillaria in eastern and western Coahuila may be due to insufficient exploration of the region.",
+    "D": "the dense vegetation and high annual precipitation levels in eastern and western Coahuila impede the ability of Mammillaria species to survive."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 19
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "The 1958 poem \"The Ghost's Leavetaking\" by American author Sylvia Plath __ the first use of the word \"dreamscape.\"",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "having contained",
+    "B": "to contain",
+    "C": "containing",
+    "D": "contains"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 20
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Florence Esté and Lily Everett were among the 300 artists who exhibited at the 1913 Armory Show, a groundbreaking New York City art exhibition that introduced modernism to American audiences. Though shocking at the time, an abstract cubist painting exhibited by Marcel Duchamp—one of several works that received scorn from critics—________ the Western art canon more than a century later.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "were entering",
+    "B": "enter",
+    "C": "has entered",
+    "D": "have entered"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 21
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Increasing the heat on an uncovered boiling pot of water does not increase the temperature of the water. What increases is the rate at which the water turns to _____ a pressure cooker pot, though, an airtight seal traps the vapor in the pot, creating pressure that allows the temperature of the water to increase past its boiling point.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "vapor. With",
+    "B": "vapor and with",
+    "C": "vapor, with",
+    "D": "vapor with"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Each year, a Nobel Prize in Literature is given to an author who has, in the words of its founder Alfred Nobel, \"produced the most outstanding work in an idealistic _____ in 1912, for instance, judges recognized Gerhart Johann Robert Hauptmann \"[for] his fruitful, varied and outstanding production in the realm of dramatic art.”",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "direction\"",
+    "B": "direction\" and,",
+    "C": "direction\";",
+    "D": "direction,\""
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "With a blend of traditional design elements, such as arched Gothic ceilings, and modern ones, such as floor-to-ceiling _____ design splits the difference between old and new, a mixture that is increasingly seen in home interiors in the US.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "windows; transitional",
+    "B": "windows. Transitional",
+    "C": "windows—transitional",
+    "D": "windows, transitional"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 24
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "Paintings by the renowned twentieth-century US _____ were featured in Artist to Artist, an exhibition at the Smithsonian Art Museum that paired the works of artists whose career trajectories intersected in meaningful ways.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "artists Thomas Hart Benton, and Jackson Pollack,",
+    "B": "artists: Thomas Hart Benton and Jackson Pollack,",
+    "C": "artists Thomas Hart Benton and Jackson Pollack",
+    "D": "artists, Thomas Hart Benton and Jackson Pollack"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 25
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "In March 1862, John Ahoy joined the US Navy, where he went on to serve aboard the USS Pinola during the US Civil War. _____ he earned a place in US history as one of the war's few Chinese-born American soldiers.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In any case,",
+    "B": "Finally,",
+    "C": "For instance,",
+    "D": "In doing so,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 26
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "The London Array, an offshore wind farm located off the coast of England, produces about 630 megawatts (MW) of electricity per year. ________ England's Hornsea Project One offshore wind farm, which generates the most power of any single offshore farm, produces 1,218 MW of electricity.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "As a result,",
+    "B": "That is,",
+    "C": "By comparison,",
+    "D": "For instance,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 27
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "In 1974, Mexican chemist Mario Molina and US chemist F. Sherwood Rowland discovered that chemicals called CFCs were harmful to the ozone layer. Their research was extremely influential in the fight against CFCs. _____ it laid the foundation for a 1987 treaty that phased out the use of CFCs across the globe.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Specifically,",
+    "B": "Regardless,",
+    "C": "Earlier,",
+    "D": "However,"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 28
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Generally, sleek vehicles are more aerodynamic than bulkier ones. The streamlined nose of the Airbus A320 jet, ________, helps it glide through wind with relative ease, while a boxy pickup truck encounters more wind resistance, making it less aerodynamic.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "for example",
+    "B": "additionally",
+    "C": "meanwhile",
+    "D": "however"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 29
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nSpringtails are a group of noninsect hexapods (six-legged animals).\nResearchers Claudia Marcela Ospina-Sánchez, Felipe N. Soto-Adames, and Grizelle González conducted a study to determine how many springtail species are present in Puerto Rico. They found a total of 146 springtail species. They found 1 springtail species belonging to the genus Hemisotoma. They found 3 springtail species belonging to the genus Sphaeridia.",
+   "prompt": "Which choice most effectively uses information from the given sentences to present the study and its findings?",
+   "choices": {
+    "A": "In Puerto Rico, the genus Hemisotoma contains one springtail species, and the genus Sphaeridia.",
+    "B": "According to a study by researchers Claudia Marcela Ospina-Sánchez, Felipe N. Soto-Adames, and Grizelle González, there are 146 springtail species present in Puerto Rico, including one from the genus Hemisotoma and three from the genus Sphaeridia.",
+    "C": "Researchers Claudia Marcela Ospina-Sánchez, Felipe N. Soto-Adames,and Grizelle González studied springtails in Puerto Rico, and they wanted to know how many species there are in the genus Hemisotoma and the genus Sphaeridia.",
+    "D": "There are 146 species of springtail (noninsect hexapods) in Puerto Rico, but there are more species from the genus Sphaeridia than from the genus Hemisotoma."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 30
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nA merchant vessel is any ship hired to carry cargo or passengers. Common merchant vessels include bulk carriers, cruise liners, and oil tankers. A vessel's carrying capacity is also known as its deadweight tonnage (DWT). In 2021, there were a total of 1,236 merchant vessels registered in Greece. The combined DWT of these vessels was 64.9 million tons.",
+   "prompt": "The student wants to explain what a merchant vessel is and provide examples. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "There were a total of 1,236 ships hired to carry cargo or passengers registered in Greece in 2021.",
+    "B": "The carrying capacity of bulk carriers, cruise liners, and oil tankers is measured in deadweight tonnage.",
+    "C": "A merchant vessel is any ship hired to carry cargo or passengers like bulk carriers, cruise liners, and oil tankers.",
+    "D": "In total, Greece's 1,236 merchant vessels had a carrying capacity of 64.9 million tons in 2021."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 32
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nMusicians around the world have used protest songs to raise awareness about human rights violations. US folk singer Aunt Molly Jackson released the protest song Poor Miner27s Farewell in 1932. It exposed the unlivable wages and dangerous working conditions coal miners faced in Kentucky during the 1920s and 1930s. South African singer-songwriter Hugh Masekela released the protest song Bring Him Back Home in 1987. It called on the South African government to free Nelson Mandela, an anti-apartheid leader who'd been unjustly imprisoned. The student wants to contrast the song Poor Miner's Farewell with the song Bring Him Back Home.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "While both are protest songs, Poor Miner's Farewell is about coal miners in Kentucky, whereas Bring Him Back Home is about the anti-apartheid leader Nelson Mandela.",
+    "B": "Hugh Masekala's song Bring Him Back Home, released in 1987, called on the South African government to free Nelson Mandela.",
+    "C": "The songs Poor Miner's Farewell and Bring Him Back Home both raised awareness about human rights violations.",
+    "D": "Released in 1932 by Aunt Molly Jackson, the song Poor Miner's Farewell was a protest against the unlivable wages and dangerous working conditions faced by Kentucky coal miners."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 33
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "The fossil remains of the individual known as KNM-KP 271, discovered in Kenya in 1965, can help paleoanthropologists not only identify steps in the evolution of hominids but also _____ the Pliocene epoch generally, revealing important details about the time in which KNM-KP 271 lived.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "imitate",
+    "B": "design",
+    "C": "illuminate",
+    "D": "substitute"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 36
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "Before the Mariner 2 mission completed a successful flyby of Venus in 1962, astronomers' ideas about the planet were little more than _____. Venus's atmosphere is so thick that Earth-based observations had yielded very little information about the planet.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "summations",
+    "B": "conjectures",
+    "C": "exemplifications",
+    "D": "conclusions"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 37
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "The work of Tobias Gerstenberg et al. on tracking eye movements supports a theory that people engage in _____ thinking when making causal judgments: when subjects were asked to look at two colliding billiard balls and judge whether one caused or prevented the other’s movement through a gate, their eyes looked at where the target ball would have gone if the ball that altered its path did not exist.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "ambivalent",
+    "B": "counterfactual",
+    "C": "analogical",
+    "D": "associative"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 38
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "The following text is from Sarojini Naidu's 1896 poem “Alabaster.”\nLike this alabaster box whose art\nIs frail as a cassia-flower, is my heart,\nCarven with delicate dreams and wrought\nWith many a subtle and exquisite thought.",
+   "prompt": "Which choice best describes the function of the two underlined portions in the text as a whole?",
+   "choices": {
+    "A": "They describe the subjects, one physical and one abstract, of a comparison that extends throughout the text.",
+    "B": "They symbolize two attitudes, one logical and one emotional, that are contrasted throughout the text.",
+    "C": "They indicate potential reactions, one hoped for and one feared, to a decision the speaker considers throughout the text.",
+    "D": "They provide examples, one literal and one figurative, of a change that the speaker describes throughout the text."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 39
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Like all species of baleen whales, the humpback whale feeds on tiny creatures known as krill by filtering water through bristlelike keratin structures called baleen plates. In this way, baleen whales can eat up to 30 percent of their total mass per day. And while no one would call the humpback whale small— it can have a mass as high as 30,000 kg— it is one of the smaller baleen whales and is much smaller than the fin whale, which can weigh a whopping 80,000 kg and consume as much as 24,000 kg of krill per day.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "It draws a distinction between the sizes of the humpback whale and the fin whale and then presents a feature that they have in common.",
+    "B": "It details a relationship between humpback and fin whales and krill and then discusses an unexpected consequence of a change in baleen whale populations.",
+    "C": "It discusses a unique feature of the humpback whale and how the lack of that feature in the fin whale explains differences in the two species’ behavior.",
+    "D": "It describes a characteristic shared by all baleen whales and then illustrates a difference between the humpback whale and the fin whale that is relevant to that characteristic."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 40
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "In what is now Minnesota, the Shakopee Mdewakanton Sioux Community operates the Hocokata Ti, a cultural center. Relying on traditional knowledge to guide the design of exhibits, this institution presents Dakota history and culture to the tribe's citizens. The Comanche Nation, a tribe in Oklahoma, employs a similar strategy in its own cultural center. Both centers contrast with museums that aren't Indigenous- led; when displaying Indigenous artifacts, such museums tend to anticipate mainly non-Indigenous audiences and rely on Euro-centric strategies for designing exhibits.",
+   "prompt": "Which choice best describes the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It defines a term used earlier in the sentence.",
+    "B": "It addresses a potential criticism of a claim made earlier in the sentence.",
+    "C": "It elaborates on a claim made earlier in the sentence.",
+    "D": "It acknowledges an exception to the general principle proposed earlier in the sentence."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 41
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Text 1\nA conservation group representing 11 tribal nations in the Great Lakes region reported to various state and federal natural resources agencies operating in the region that the northern wild rice plant (manoomin in the Ojibwe language) will likely fare significantly worse than the American crow (aandeg in Ojibwe) due to rising temperatures over the next 50 years. This collaborative approach has helped build trust between government and tribal groups, which will likely improve the quality of any joint conservation projects.\nText 2\nState and federal natural resources agencies are increasingly incorporating traditional ecological knowledge from tribal groups in the agencies' plans to address threats to natural resources due to increasing temperatures. This approach has helped build positive relationships between tribal groups and these agencies and furthermore tends to lead to better conservation outcomes.",
+   "prompt": "Based on the texts, both authors would most likely agree with which statement?",
+   "choices": {
+    "A": "A collaborative approach to conservation is likely to help reduce the predicted temperature increases in the Great Lakes region.",
+    "B": "In the Great Lakes region, conservation efforts focused on the northern wild rice plant are likely to be more effective than those focused on the American crow.",
+    "C": "Natural resources conservation projects are likely to benefit from collaboration between tribal and government groups.",
+    "D": "In the Great Lakes region, it is more important to focus conservation efforts on the northern wild rice plant than it is on the American crow."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 42
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "The following text is adapted from Guy de Maupassant's 1884 short story “A Recollection,” from the collection Guy de Maupassant Short Stories (translated by Albert M.C. McMaster et al. in 1903). The narrator is taking a boat down the Seine river from Paris, France, to the surrounding countryside. I took up a position in the bows [front of the boat], standing up and looking at the quays, the trees, the houses and the bridges disappearing behind us. And suddenly I perceived the great viaduct of Point du Jour which blocked the river. It was the end of Paris, the beginning of the country, and behind the double row of arches the Seine, suddenly spreading out as though it had regained space and liberty, became all at once the peaceful river which flows through the plains, alongside the wooded hills, amid the meadows, along the edge of the forests.",
+   "prompt": "Based on the text, which choice best expresses the narrator's characterization of the Seine?",
+   "choices": {
+    "A": "As the journey progressed from Paris to the countryside, the waters of the Seine gradually cleared.",
+    "B": "The journey along the Seine is mostly peaceful, but the current intensifies briefly under the Point du Jour.",
+    "C": "The waters of the Seine are more confined and rough in Paris than they are in the countryside.",
+    "D": "The Seine's loveliness is surpassed only by that of Paris."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 44
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Water flowing around an obstruction creates vortices (patterns of swirls) of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing by Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao using models of three head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—showed that for large vortices, fish with intermediate heads would be better able than wide-headed fish to distinguish between vortices and general turbulence in the water. A second research team has therefore hypothesized that in low- visibility conditions, intermediate-headed fish will be more likely than wide-headed fish to detect obstructions that create large vortices.",
+   "prompt": "Which finding, if true, would most directly support the second research team's hypothesis?",
+   "choices": {
+    "A": "A study using obstructions that created large vortices in low-visibility conditions found that the Synodontis macropunctata, which has a relatively wide head, bumped into more than half of the obstructions.",
+    "B": "A study using obstructions that created large vortices in low-visibility conditions found that some specimens of the intermediate-headed dusky smooth-hound (Synodontis macropunctata) bumped into the obstructions more often than other specimens of the same fish did.",
+    "C": "A study using obstructions that created large vortices in low-visibility conditions found that the wide-headed Synodontis macropunctata bumped into obstructions more often than the intermediate-headed dusky smooth-hound (Synodontis macropunctata) did.",
+    "D": "A study using obstructions that created large vortices in low-visibility conditions found that the intermediate-headed dusky smooth-hound (Synodontis macropunctata) bumped into the obstructions just as often as the wide-headed Synodontis macropunctata did."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 45
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "The Reckoning and Resilience (2022) exhibition at Duke University's Nasher Museum of Art in Durham, North Carolina, is dedicated to the work of thirty North Carolina artists, including Lien Truong, Kennedi Carter, and Meg Stein. Although the Nasher Museum has focused exhibitions entirely on North Carolina artists before, as it did previously in the photography exhibition Across County Lines, the breadth of disciplines in Reckoning and Resilience sets it apart.",
+   "prompt": "Which finding, if true, would most directly support the underlined claim?",
+   "choices": {
+    "A": "Reckoning and Resilience and Across County Lines were curated to emphasize works that are not owned by the Nasher Museum.",
+    "B": "Truong is a painter, Carter is a photographer, and Stein is a sculptor.",
+    "C": "The Nasher Museum has a world-class collection of contemporary art that includes many paintings and sculptures from artists both inside and outside North Carolina.",
+    "D": "Carter is a North Carolina photographer, as were all of the artists featured in Across County Lines."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 47
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Rafael Núñez and colleagues studied how members of the Yupno, an Indigenous group in Papua New Guinea, conceptualize time. The researchers recorded Yupno speakers explaining certain temporal words and phrases, such as abjiuk sonda, a present-oriented expression that translates to “this week,” and coded each speaker's manual gestures. Previous research has found a tendency in many cultures to make temporal distinctions using spatial concepts and gestures, particularly along egocentric axes (i.e., relative to the orientation of the speaker): for instance, Spanish speakers often refer to the left/right axis to describe events in time. In an anthropology paper, a student claims that the tendency toward ego-based conceptualizations of time is universal.",
+   "prompt": "Which finding, if true, would most directly weaken the student's claim?",
+   "choices": {
+    "A": "A Yupno speaker points in opposite directions when indicating a past event versus a future event.",
+    "B": "Some Yupno grammatical structures used when talking about time are also used in Spanish.",
+    "C": "When Yupno speakers who are outdoors use gestures to refer to the future, they point uphill from their current location regardless of which way they are facing.",
+    "D": "Although Yupno speakers and Spanish speakers both use gestures to indicate orientation in time, Yupno speakers tend to use fewer gestures overall when speaking than Spanish speakers do."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 48
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Over 600 languages are spoken in New York City in addition to English—one can find Bambara spoken in the neighborhood of Kingsbridge, for example, or Ghale in Jackson Heights. English is the most common, with 65% of New Yorkers speaking it at home; Spanish is second, at 20%. A linguist hypothesizes that a Spanish dialect—a variation differing from the parent language in some of its vocabulary, pronunciation, and grammar—has developed in New York City, partly due to its linguistic interaction with English. Previous research shows that younger speakers of nonmajority languages are more likely to borrow words from the majority language of a region than are older speakers. If the linguist's hypothesis is correct, it is therefore likely to be the case that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the proportion of younger speakers who use a Spanish dialect specific to New York City is higher in neighborhoods where many languages are spoken than in neighborhoods where Spanish and English predominate.",
+    "B": "both the number of languages spoken in New York City and the number of dialects of each of those languages will increase over time.",
+    "C": "Spanish used by younger speakers in New York City tends to have more words borrowed from other nonmajority languages than borrowed from English.",
+    "D": "younger speakers of Spanish in New York City would be more likely to use a dialect specific to New York City than older speakers living in the same neighborhood would be."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 49
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Arthurian legends (tales related to the character of King Arthur) derive from many sources, such as Preiddeu Annwfn, composed around 900, and the Mabinogion from the 12th and 13th centuries. One of the most significant sources, Geoffrey of Monmouth’s History of the Kings of Britain, was written in Latin in the 1130s; some material from it was later adapted by the Norman poet Wace into the Roman de Brut in 1155. But while no source before 1155 includes references to the famous Round Table at which Arthur’s knights assembled, both the Roman de Brut and Sir Thomas Malory’s 15th-century compilation of Arthurian legends, Le Morte d’Arthur, do. It can therefore be inferred that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "Le Morte d'Arthur is more historically accurate than History, because the Mabinogion had not been written when Geoffrey of Monmouth was writing his work.",
+    "B": "Malory did not use Preiddeu Annwfn as a source for information he presented about the Round Table.",
+    "C": "Geoffrey of Monmouth was unaware of stories of the Round Table when composing his History, though historians know that works containing such stories were available to him.",
+    "D": "Geoffrey of Monmouth’s accounts of Arthurian legends in his History are more similar overall in content to the accounts in the Mabinogion than they are to the accounts in Roman de Brut."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 51
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "An analysis by Alain Elayi and colleagues of coins minted in Sidon in the fifth and fourth centuries BCE reveals a change in their composition over time: while a coin from circa 450 BCE contains about 98% silver and 1% copper, a coin from 367 BCE (the end of Ba’alsillem II’s reign) contains 74.2% silver and 24.7% copper, giving it a relatively yellowish appearance that traders would have noticed. Because coins with a silver content below 80% were widely considered unsuitable for trade, Elayi et al. speculate that a crisis in confidence in the currency occurred in Sidon around 367 BCE, which was likely relieved—despite Sidon’s persistent oppressive financial obligations—as a result of Ba’alsillem II’s successor Abd’astart I’s decision to _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "keep the amount of silver in Sidonian coins consistent with that in coins minted in 367 BCE but decrease their weight.",
+    "B": "proclaim that the percentage of silver in coins suitable for trade would be raised to a threshold higher than 80%.",
+    "C": "fund the mining of some copper deposits that were not available to Ba'alsillem II.",
+    "D": "begin minting heavier coins with a proportion of silver to copper similar to that in coins minted in 367 BCE."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 52
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Today, the Michelin Guide is widely known as the arbiter of fine dining, but when it was created in 1900, it was little more than a marketing gimmick; brothers Andre and Edouard Michelin sought to increase profits for their tire company by encouraging their customers to drive across France, visiting the guide’s recommended hotels and restaurants along the way. Nevertheless, the guide soon grew in scope and _____ its modest French eateries were replaced with some of the most esteemed restaurants from around the world, including La Yeon in Seoul and Sushi Shikon in Hong Kong.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "influence",
+    "B": "influence, and",
+    "C": "influence,",
+    "D": "influence and"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 53
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Interest in mechanotransduction, the mechanism by which cells sense and convert mechanical stimuli into biochemical signals, is expanding because of innovative work by biomedical scientists. Many of whom, like neuroscience and biophysics expert Elba Serrano, ______ this mechanism to better understand how the body's neurological and biomechanical systems interact.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "study",
+    "B": "has studied",
+    "C": "studies",
+    "D": "is studying"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 54
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "If you had turned on the radio in the winter of 1970, chances are you would have heard the hit _____ “Oh What a Day” by the Dells. The song spent ten straight weeks on the Billboard Hot 100 chart that year.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "song:",
+    "B": "song,",
+    "C": "song;",
+    "D": "song"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 55
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Integrating insights from economics and psychology, researchers in the field of behavioral economics explore a variety of topics. Lucia Macchia of the University of Oxford studies socioeconomic _____ other researchers investigate areas such as organizational behavior and personal finance.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "inequality, for instance;",
+    "B": "inequality; for instance,",
+    "C": "inequality, for instance,",
+    "D": "inequality for instance;"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 56
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "William Kittredge’s short essay on “krummholz,” a word referring to twisted and stunted trees growing near the tree line, is included in the collection Home Ground: A Guide to the American Landscape. The book wasn’t written solely by _____ other authors, such as Linda Hogan and Barry Lopez, also contributed essays.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Kittredge, however;",
+    "B": "Kittredge; however,",
+    "C": "Kittredge. However,",
+    "D": "Kittredge, however,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 57
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "Recent pollen analyses of the Aran Islands have led some researchers to propose that the now treeless islands were once wooded. This hypothesis _____ that certain trees, such as P. sylvestris, survived without interruption or human intervention throughout the Holocene cannot stand, researchers Michael O'Connell and Karen Molloy counter, unless other explanations can first be ruled out.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "suggests",
+    "B": "suggested",
+    "C": "suggesting",
+    "D": "has suggested"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 58
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "With his room-sized installation Unicorn/My Private Sky, Norwegian artist Borre Saethre succeeds in creating a whimsical yet perplexing experience. _____ when visitors set foot inside the fantastically blue room and encounter the life-sized stuffed unicorn preening at the far end of it, they are both dazzled and confused as if stepping into a strange and enchanting new world.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Second,",
+    "B": "Nevertheless,",
+    "C": "Indeed,",
+    "D": "Instead,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 59
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Mountain climbing routes that incorporate metal rungs and cables are known as via ferratas, from the Italian phrase for “iron path.” As climbing these routes has shifted from a mode of travel to a sporting activity, modern via ferratas are rarely designed to simply reach a summit. _____ new routes favor recreation over utility, aiming to provide a challenging climb or showcase dramatic scenery.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Nonetheless,",
+    "B": "On the other hand,",
+    "C": "Additionally,",
+    "D": "More often,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 60
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nDocumentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time. Reinflytting is a Norwegian slow TV program. The 9-day-long program documented a wild reindeer migration from their winter to summer pastures. It first aired in 2017. Slow TV has been called “the world’s most boring television.” American journalist Nathan Heller praises it, writing that “it affords a visceral kind of armchair tourism.”",
+   "prompt": "The student wants to use a quotation to refute the claim that slow TV programs are boring. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "While some have praised slow TV for affording “a visceral kind of armchair tourism,” others have called it “the world's most boring television.”",
+    "B": "Far from boring, slow TV programs can provide a “visceral kind of armchair tourism,” as Heller puts it, whereby viewers can watch reindeer migrations in real time.",
+    "C": "With broadcasts of ordinary events, like reindeer migrations, occurring in real time, slow TV just might be “the world's most boring television.”",
+    "D": "Reinflytting can afford a “visceral kind of armchair tourism,” as Heller puts it."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 61
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nChromosomes are cellular structures that contain genes. Genes carry critical instructions for determining an organism’s physical traits. Members of the same species typically have the same number of chromosomes. The fennec fox (Vulpes zerda) and the red fox (Vulpes vulpes) are species of foxes. The fennec fox has sixty-four chromosomes. The red fox has thirty-four chromosomes.",
+   "prompt": "The student wants to specify how many chromosomes the fennec fox has. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The fennec fox (Vulpes zerda) and the red fox (Vulpes vulpes) both have chromosomes, but the fennec fox has more than the red fox does.",
+    "B": "The fennec fox (Vulpes zerda) has sixty-four chromosomes.",
+    "C": "The fennec fox's chromosomes contain genes, which are critical to determining an organism's physical traits.",
+    "D": "The red fox, a species of fox, has thirty-four structures called chromosomes."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 62
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nAt London and New York Fashion Weeks, fashion designers debut new clothing collections. Color consultants create trend reports on the popular colors at a given Fashion Week. A report on 2018 New York Fashion Week noted the popularity of a delicate petal pink shade that was warm in tone and soft in intensity. A report on 2021 London Fashion Week noted the popularity of a stirring ocean blue shade that was cool in tone and bright in intensity.",
+   "prompt": "Which choice most effectively uses information from the given sentences to describe a color that was popular at 2021 London Fashion Week?",
+   "choices": {
+    "A": "Shades of delicate petal pink and stirring ocean blue have both been featured in Fashion Week reports prepared by color consultants.",
+    "B": "Each Fashion Week, color consultants compile reports on the colors that have been popular among designers.",
+    "C": "The shade favored by designers at 2021 London Fashion Week was a departure from the warm, soft shade of delicate petal pink that had proved popular at 2018 New York Fashion Week.",
+    "D": "At 2021 London Fashion Week, many designer collections featured a cool, bright shade of stirring ocean blue."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 63
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe fifth Solvay Conference on Physics was held in 1927.\nIt brought together twenty-nine of the era's preeminent scientists to discuss the emerging field of quantum theory. The conference famously featured a debate between physicists Albert Einstein and Niels Bohr. Bohr proposed that subatomic entities like electrons had only probable realities until they were observed. Einstein argued that subatomic entities like electrons had a reality independent of observation. Bohr’s position, later called the Copenhagen interpretation, remains the most widely accepted theory of quantum mechanics.",
+   "prompt": "The student wants to place Einstein's argument within its historical context. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "During the dawn of quantum theory, Einstein maintained the independent reality of some subatomic entities, although Bohr’s opposing interpretation would become the widely accepted view.",
+    "B": "The attendees of the 1927 Solvay Conference were among the preeminent scientists of their era, including Einstein, who opposed Bohr's proposal.",
+    "C": "In 1927, Einstein and Bohr engaged in a famous debate; Bohr's argument, later called, the Copenhagen interpretation, would remain popular decades after.",
+    "D": "At the 1927 Solvay Conference on Physics, Einstein disagreed with Bohr's argument that subatomic entities like electrons had a reality independent of observation."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 64
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals. Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them. Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them. The mineral calcite has a Mohs scale number of 3. The mineral apatite has a Mohs scale number of 5. The mineral topaz has a Mohs scale number of 8.",
+   "prompt": "The student wants to make a generalization about minerals. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Based on their Mohs scale numbers, topaz (8) is harder than apatite (5), and apatite is harder than calcite (3).",
+    "B": "Topaz can leave visible scratches on calcite, which is why topaz has a higher number than calcite on the Mohs scale of mineral hardness.",
+    "C": "Any mineral with a Mohs number of 8, like topaz, can scratch a mineral with a Mohs number of 5, like apatite.",
+    "D": "The Mohs scale can be used to order calcite, topaz, and apatite by their ability to scratch other minerals."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 66
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "The equation gives the speed s, in miles per hour, of a certain car t seconds after it began to accelerate. What is the speed, in miles per hour, of the car 5 seconds after it began to accelerate? s = 50 + 4t",
+   "choices": {
+    "A": "50",
+    "B": "54",
+    "C": "55",
+    "D": "70"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 69
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = x^2 + 15. What is the value of f(2)?",
+   "choices": {
+    "A": "2",
+    "B": "15",
+    "C": "17",
+    "D": "19"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 70
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "w + 34 = 40\nWhat is the solution to the given equation?",
+   "choices": {
+    "A": "2",
+    "B": "3",
+    "C": "12",
+    "D": "36"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 71
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "An aquarium uses small and large tanks to temporarily hold a total of 37 fish. Each small tank holds 1 fish, and each large tank holds 2 fish. Which equation represents this situation, where s is the number of small tanks and b is the number of large tanks the aquarium uses?",
+   "choices": {
+    "A": "s + 2b = 37",
+    "B": "s + b = 37",
+    "C": "2s + b = 37",
+    "D": "2s + 2b = 37"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 72
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "The growth of the number of bacteria in a certain population is modeled by a function that increases exponentially over time. Which of the following could describe how the number of bacteria in the population changes each hour?",
+   "choices": {
+    "A": "Each hour, the number of bacteria in the population is 1,600 greater than was the previous hour.",
+    "B": "Each hour, the number of bacteria in the population is 16% greater than it was the previous hour.",
+    "C": "Each hour, the number of bacteria in the population is 1,600 less than it was the previous hour.",
+    "D": "Each hour, the number of bacteria in the population is 16% less than it was the previous hour."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 73
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "To win a game show, a contestant needs to score at least 100 total points from two rounds. Correct responses in the first round are worth 2 points each, and correct responses in the second round are worth 5 points each. Which inequality models this situation, where f is the number of correct responses in the first round and s is the number of correct responses in the second round?",
+   "choices": {
+    "A": "f + s ≤ 100",
+    "B": "2f + 5s ≥ 100",
+    "C": "5f + s ≥ 100",
+    "D": "5f + 2s ≤ 100"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 74
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "spr",
+   "prompt": "W(x) = 2x + 60\nThe function W gives the total time, in minutes, it takes for a gardener to water x plants and mow the grass. According to the function, how many minutes does it take the gardener to mow the grass?",
+   "answer": "60",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 75
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "spr",
+   "prompt": "Triangles JKL and PQR are congruent, where J corresponds to P, and K corresponds to Q. The measure of angle J is 45^∘, the measure of angle K is 10^∘, and the measure of angle L is 125^∘. What is the measure, in degrees, of angle P? (Disregard the degree symbol when entering your answer.)",
+   "answer": "45",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 76
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "y = 5x + 10\ny = 5x − 2\nAt how many points do the graphs of the given equations intersect in the xy-plane?",
+   "choices": {
+    "A": "Zero",
+    "B": "Exactly one",
+    "C": "Exactly two",
+    "D": "Infinitely many"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 77
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "x y\n1 13\n2 21\n3 a\nThe table shows three values of a and their corresponding values of y for the equation y = 4(2)^x + 5. In the table, a is a constant. What is the value of a?",
+   "choices": {
+    "A": "69",
+    "B": "37",
+    "C": "32",
+    "D": "29"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 78
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "The number of bacteria in a liquid medium doubles every day. There are 72,000 bacteria in the liquid medium at the start of an observation. Which of the following represents the number of bacteria, y, in the liquid medium t days after the start of the observation?",
+   "choices": {
+    "A": "y =_2^1(72,000)^t",
+    "B": "y = 2(72,000)^t",
+    "C": "y = 72,000(_2^1)^t",
+    "D": "y = 72,000(2)^t"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 79
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "spr",
+   "prompt": "A rectangle has a width of n yards and a length of (n + 5) yards. If the rectangle has an area of 204 square yards, what is the value of n?",
+   "answer": "12",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 80
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "spr",
+   "prompt": "The function f is defined by\nf(x) = 9^(x8) + 11\nFor what value of x is f(x) equal to 38?",
+   "answer": "12",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 81
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "f(x) = x^2 − 42x + 80\nThe function f is defined by the given equation. Which of the following equivalent forms of the equation displays the zeros of the function as constants or coefficients?",
+   "choices": {
+    "A": "f(x) = x^2 − 5x − 37x + 80",
+    "B": "f(x) = (x − 2)(x − 40)",
+    "C": "f(x) = x(x − 42) + 80",
+    "D": "f(x) = (x − 21)^2 − 361"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 82
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "spr",
+   "prompt": "x g(x)\n1 46\n2 43\n3 40\n4 37\nFor the linear function g, the table shows four values of x and their corresponding values of g(x). The function can be written as g(x) = mx + b, where m and b are constants. What is the value of b?",
+   "answer": "49",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 83
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "x + 5y = 5\nx − 5y = 3\nThe solution to the given system of equations is (x,y). What is the value of x?",
+   "choices": {
+    "A": "0.8",
+    "B": "4",
+    "C": "5",
+    "D": "8"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 84
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "If cosA = 0.55, what is the value of sinC?",
+   "choices": {
+    "A": "0.12",
+    "B": "0.45",
+    "C": "0.55",
+    "D": "0.84"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 85,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-08-int-a/m1-17-1.webp",
+     "w": 334,
+     "h": 301,
+     "y": 113
+    }
+   ]
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "The table gives the distribution of flavor and type of topping for customer orders at an ice cream shop. Flavor of ice cream Type of topping Sprinkles No Sprinkles Chocolate 60 30 Vanilla 20 30 Twist 80 20 If a customer order is selected at random, what is the probability of selecting an order with sprinkles, given the flavor of ice cream is vanilla?",
+   "choices": {
+    "A": "0.08",
+    "B": "0.13",
+    "C": "0.25",
+    "D": "0.40"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "probability",
+   "page": 87
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "In the given equation, r is a positive integer. If the given equation has exactly one solution, what CANNOT be the value of r? x(r − 7) + 3 = 19x + 25",
+   "choices": {
+    "A": "3",
+    "B": "7",
+    "C": "22",
+    "D": "26"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 89
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "spr",
+   "prompt": "A real estate company offers a series of three webinars. 2,000 people attended the first webinar, 65% of the people who attended the first webinar attended the second webinar, and 44% of the people who attended both the first and second webinar attended the third webinar. Of those who attended the first but did not attend the second webinar, 31% attended the third webinar. How many people attended both the first and third webinars but did not attend the second webinar?",
+   "answer": "217",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 90
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "In the xy-plane, circle M is the graph of the equation (x + 6a)^2 + (y − 38a)^2 = 36a^2 where a is a positive constant. Circle V is obtained by shifting circle M 12a units to the right. Which equation represents circle V ?",
+   "choices": {
+    "A": "(x + 18a)^2 + (y − 38a)^2 = 36a^2",
+    "B": "(x + 6a)^2 + (y − 50a)^2 = 36a^2",
+    "C": "(x + 6a)^2 + (y − 26a)^2 = 36a^2",
+    "D": "(x − 6a)^2 + (y − 38a)^2 = 36a^2"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 91
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "The dot plot shows the distribution of capacity for a set of capacitors, set A, which a researcher used for a certain experiment. For another experiment, the researcher used a different set of capacitors, set B. Set B has the same number of capacitors as set A but the capacity of each capacitor of set B is 14 microfarads (μ F) greater than the capacity of each respective capacitor in set A. Which of the following is true about the capacities of the capacitors in set B?",
+   "choices": {
+    "A": "The mean capacity is 10μ F, and the range of capacities is 12μ F.",
+    "B": "The mean capacity is 10μ F, and the range of capacities is 26μ F.",
+    "C": "The mean capacity is 24μ F, and the range of capacities is 12μ F.",
+    "D": "The mean capacity is 24μ F, and the range of capacities is 26μ F."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 92,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-08-int-a/m1-22-1.webp",
+     "w": 217,
+     "h": 190,
+     "y": 113
+    }
+   ]
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "In the xy-plane, the graph of the equation y = 3^x is translated 6 units down. What is an equation of the resulting graph?",
+   "choices": {
+    "A": "y = −6(3)^x",
+    "B": "y = 3^((x+6))",
+    "C": "y = 3^x − 6",
+    "D": "y = 3^((x−6))"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 94
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "A line in the xy-plane passes through the points (0,2) and (1,−3). Which of the following is an equation of this line?",
+   "choices": {
+    "A": "y = 5x + 2",
+    "B": "y = −5x + 2",
+    "C": "y = x + 2",
+    "D": "y = −x + 2"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 95
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "If f(x) = x + 3 and g(x) = 3x, what is the value of 7f(4) − g(4)?",
+   "choices": {
+    "A": "−5",
+    "B": "19",
+    "C": "21",
+    "D": "37"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 96
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "spr",
+   "prompt": "If ^5_b^a = 3.5 and _b^a_n = 17.5, what is the value of ^1_n?",
+   "answer": "25",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 97
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "Which expression is equivalent to _1^6_8^v_v^(12)3, where v > 0?",
+   "choices": {
+    "A": "v3^4",
+    "B": "v3^9",
+    "C": "3v^4",
+    "D": "3v^9"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 98
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "Which expression is equivalent to (6t^4 − 6t^2 + 4t − 2) − (5t^4 − 3t^3 + 7t^2 − 2)?",
+   "choices": {
+    "A": "t^4 + 3t^3 − 13t^2 + 4t",
+    "B": "t^4 − 3t^2 + 3t",
+    "C": "t^4 − 3t^3 + 11t − 4",
+    "D": "t^4 + 3t^3 − 13t^2 + 4t − 4"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 99
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "x y\n-6 65\n-3 56\n3 38\n6 29\nThe table shows four values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+   "choices": {
+    "A": "9x + 3y = 141",
+    "B": "9x + 3y = 3",
+    "C": "3x + 9y = 141",
+    "D": "3x + 9y = 3"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 100
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "For the polynomial function f, a solution to the equation f(x) = 0 is x = 7, and one of the factors of f(x) is x + 5. Which of the following could be the graph of y = f(x) in the xy-plane?",
+   "choices": {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": ""
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 101,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-08-int-a/m2-08-1.webp",
+     "w": 325,
+     "h": 318,
+     "y": 162
+    },
+    {
+     "src": "/tests/img/2024-08-int-a/m2-08-2.webp",
+     "w": 360,
+     "h": 343,
+     "y": 295
+    },
+    {
+     "src": "/tests/img/2024-08-int-a/m2-08-3.webp",
+     "w": 367,
+     "h": 378,
+     "y": 441
+    },
+    {
+     "src": "/tests/img/2024-08-int-a/m2-08-4.webp",
+     "w": 371,
+     "h": 386,
+     "y": 587
+    }
+   ]
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "The three points shown define a circle. The circumference of this circle is kπ, where k is a constant. What is the value of k?",
+   "choices": {
+    "A": "3",
+    "B": "6",
+    "C": "9",
+    "D": "12"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 103,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2024-08-int-a/m2-09-1.webp",
+     "w": 460,
+     "h": 432,
+     "y": 113
+    }
+   ]
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "y = −2x − 10\ny = 2x + 16\nThe solution to the given system of equations is (x,y). What is the value of y?",
+   "choices": {
+    "A": "19",
+    "B": "6",
+    "C": "3",
+    "D": "−10"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 105
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "A scientist studying the life cycle of butterflies counted the number of butterflies in a certain habitat each day for 46 days. On June 15, there were 168 butterflies in the habitat. The percent increase in the number of butterflies in the habitat from May 1 to June 15 was 31.25%. How many butterflies were in the habitat on May 1?",
+   "choices": {
+    "A": "128",
+    "B": "116",
+    "C": "53",
+    "D": "5"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 106
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "spr",
+   "prompt": "If 5(4 − 5x) + 4(4 − 5x) + 9 = 8(4 − 5x) + 6, what is the value of 5x − 4?",
+   "answer": "3",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 107
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "A rectangle is inscribed in a circle such that the length of the diagonal of the rectangle is twice the length of its shortest side. The circumference of the circle is 114π units. What is the area, in square units, of the rectangle?",
+   "choices": {
+    "A": "57√2",
+    "B": "57√3",
+    "C": "3,249√2",
+    "D": "3,249√3"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 110
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "y < −5x − 19\ny > −3x − 12\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given system of inequalities?",
+   "choices": {
+    "A": "x y -5 6 -6 9 -8 -4",
+    "B": "x y -5 4 -6 10 -8 19",
+    "C": "x y -5 2 -6 9 -8 19",
+    "D": "x y -5 1 -6 16 -8 -4"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 111
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "x^2 − 6x + y^2 − 4y − 51 = 0\nIn the xy-plane, the graph of the given equation is a circle. If this circle is inscribed in a square, what is the perimeter of the square?",
+   "choices": {
+    "A": "16",
+    "B": "32",
+    "C": "64",
+    "D": "204"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 114
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "For groups of 5 or more people, a tour guide charges $9 for the first person in the group and $6 for each additional person. Which function g gives the total charge, in dollars, for a tour with a group of n people, where n ≥ 5?",
+   "choices": {
+    "A": "g(n) = 15n",
+    "B": "g(n) = 15n − 9",
+    "C": "g(n) = 6n + 3",
+    "D": "g(n) = 6n + 9"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 115
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "f(x) = k(1.83)^x The function f is defined by the given equation, where k is a constant. The value of f(x) increases by p% for every increase of x by 1. For which of the following functions, where k is a constant, does the value of g(x) increase by p% for every increase of x by _4^1?",
+   "choices": {
+    "A": "g(x) = k(1.83)4^1",
+    "B": "g(x) = k(1.83^x)^4",
+    "C": "g(x) = k(1.83)^(x+41)",
+    "D": "g(x) = k(1.83)^(x−)4^1"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 116
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "spr",
+   "prompt": "A line intersects two parallel lines, forming four acute angles and four obtuse angles. The measure of one of the acute angles is (9x − 490)^∘. The sum of the measures of one of the acute angles and three of the obtuse angles is (−18x + w)^∘. What is the value of w?",
+   "answer": "1520",
+   "answerConfidence": "from file",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 118
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "spr",
+   "prompt": "The exponential function f is defined by f(x) = ab^x, where a and b are positive constants. If f(n − 1) = f(n) +_1^8_0^2_0f(n − 1), where n is a constant, what is the value of b?",
+   "answer": "9/50",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 119
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "spr",
+   "prompt": "The area of a rectangular region is increasing at a rate of 180 square centimeters per hour. What is this rate, in square meters per minute? (1 meter = 100 centimeters)",
+   "answer": ".0003",
+   "answerConfidence": "from file",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 120
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "spr",
+   "prompt": "−x^2 + bx − 169 = 0\nIn the given equation, b is an integer. The equation has no real solutions. What is the least possible value of b?",
+   "answer": "-25",
+   "answerConfidence": "from file",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 121
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "1 1 1 1 1\n= + + +\nR p q s 13\nA parallel electric circuit contains four resistors with resistances of p ohms, q ohms, s ohms, and 13 ohms. The given equation relates the resistance R, in ohms, of the circuit, to the resistances of the four individual resistors it contains. Which equation correctly expresses R in terms of p, q, and s?",
+   "choices": {
+    "A": "R =_(p+)^1_q^3_+^p_s^(qs)_(+13)",
+    "B": "R =_(13qs+13)^1_p^3_s^p_+^q_1^s_(3pq+pqs)",
+    "C": "R =^(13qs+13)_1^p_3^s_p^+_q^1_s^(3pq+pqs)",
+    "D": "R = p + q + s + 13"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 123
+  }
+ ]
+}

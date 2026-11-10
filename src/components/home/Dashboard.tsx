@@ -9,7 +9,7 @@ import { AccuracyDonut } from "./AccuracyDonut";
 import { Countdown } from "./Countdown";
 import { ScoreChart } from "./ScoreChart";
 import { SatDatePicker } from "./SatDatePicker";
-import { updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
+import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
@@ -133,7 +133,7 @@ export function Dashboard() {
   const stats = computeStats(attempts, now);
   const hasGoal = profile.targetScore !== null || profile.testDate !== null;
   const tests = useTestResults();
-  const history = useMemo(() => [...tests].sort((a, b) => a.at - b.at), [tests]);
+  const history = useMemo(() => tests.filter(isFullTest).sort((a, b) => a.at - b.at), [tests]);
   const latest = history[history.length - 1];
   const change = history.length > 1 ? latest.total - history[0].total : null;
 

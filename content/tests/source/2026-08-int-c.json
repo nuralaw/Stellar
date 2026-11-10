@@ -1,0 +1,1923 @@
+{
+ "id": "2026-08-int-c",
+ "title": "Aug 2026 INT C",
+ "year": 2026,
+ "month": 8,
+ "version": "INT",
+ "form": "C",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "solved",
+ "pdf": "Aug 2026 INT C (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Long dismissed by earlier art historians as derivative copies of metropolitan styles, the stone sculptures crafted in provincial Roman Gaul are now understood to possess a ______ aesthetic, combining Mediterranean carving techniques with indigenous Celtic motifs to create a distinctly regional visual idiom.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "conventional",
+    "B": "singular",
+    "C": "fleeting",
+    "D": "redundant"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "Linguists studying the endangered Kusunda language of western Nepal noted that while its phonemic repertoire shares several phonetic features with surrounding Sino-Tibetan tongues, Kusunda’s core lexicon and grammatical structure are entirely ______: the language possesses no demonstrable genealogical relationship to any other known language family.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "isolated",
+    "B": "rudimentary",
+    "C": "contentious",
+    "D": "redundant"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Although laboratory assays demonstrated that the newly synthesized peptide compound could rapidly destroy bacterial cell membranes in vitro, clinical microbiologists cautioned that the molecule’s high cytotoxicity against mammalian kidney cells would likely ______ its therapeutic utility in human patients.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "preclude",
+    "B": "anticipate",
+    "C": "accentuate",
+    "D": "corroborate"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "A superficial survey of the architecture of the Mughal emperor Akbar’s palace complex at Fatehpur Sikri might suggest a haphazard assembly of disparate regional structures, but closer spatial analysis reveals a remarkably ______ layout, deliberately aligning sandstone pavilions along precise cardinal axes to signify royal authority and balance.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "rudimentary",
+    "B": "precarious",
+    "C": "coherent",
+    "D": "superfluous"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Historian Linda Gordon explains that early twentieth-century social reformer Florence Kelley did not merely critique unsafe industrial labor conditions in abstract terms; rather, Kelley compiled ______ statistical records detailing exact factory temperatures, injury rates, and working hours to force state legislators to enact binding safety regulations.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "speculative",
+    "B": "exhaustive",
+    "C": "partisan",
+    "D": "antiquated"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is adapted from George Eliot’s 1871–1872 novel Middlemarch. Dorothea Brooke is contemplating the scholarly ambitions of her husband, Edward Casaubon. Dorothea had believed that in marrying Mr. Casaubon she would be helping to construct a monumental edifice of knowledge that would illuminate ancient mythologies for all future ages. Yet day by day, as she sorted through piles of disconnected notes and half-filled notebooks in the dim library, the great work began to look less like an enduring monument than an impenetrable labyrinth leading nowhere. The massive synthesis remained unwritten, existing only in fragmentary outlines that seemed to multiply without advancing toward any definite conclusion.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It emphasizes Dorothea’s growing realization that Casaubon’s intellectual project lacks true cohesion and progress.",
+    "B": "It illustrates Dorothea’s frustration with her own inability to organize Casaubon’s research notes.",
+    "C": "It reveals that Casaubon has deliberately concealed the true progress of his manuscript from Dorothea.",
+    "D": "It introduces a contrast between Casaubon’s modest scholarly reputation and Dorothea’s grand ambitions for him."
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "The following text is adapted from Edith Wharton’s 1920 novel The Age of Innocence. Newland Archer reflects on the rigid social conventions governing elite New York society. In the subtle and elaborate hierarchy of old New York, an unalterable code regulated every gesture, from the precise date for exchanging summer calls to the exact shade of gloves permissible at an evening opera. It was a world where real feelings were never mentioned, and where the direct expression of an opinion was regarded as almost indecent. Newland Archer had been bred in this atmosphere of delicate evasions; he accepted its decrees unquestioningly, yet he occasionally felt a faint stir of restlessness, a sudden fleeting suspicion that this meticulous preservation of form was merely a collective conspiracy to avoid facing the reality of life.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "It details the specific social rules that Newland Archer attempted to reform within his social circle.",
+    "B": "It explores Newland Archer’s awareness of the tension between rigid social decorum and genuine emotional experience.",
+    "C": "It illustrates why Newland Archer decided to permanently withdraw from elite New York society.",
+    "D": "It contrasts Newland Archer’s open emotional demeanor with the guarded behavior of his peers."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "In an investigation of spatial cognition, neuroscientist Edvard Moser and colleagues examined how mammals maintain internal maps of physical environments. The team recorded the electrical activity of specialized neurons—known as grid cells—in the medial entorhinal cortex of rodents navigating open enclosures. The firing fields of individual grid cells formed remarkably regular, periodic triangular lattices spanning the entire available area, closely matching mathematical models of hexagonal close-packing. This spatial periodicity indicated to the researchers that the entorhinal cortex generates an intrinsic, metric coordinate system capable of computing distance and trajectory independently of external visual landmarks.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "To offer empirical data describing the geometric firing pattern that supports the researchers’ deduction about the brain’s spatial mapping mechanism",
+    "B": "To present a surprising inconsistency in the neural recordings that prompted Moser and his team to revise their experimental setup",
+    "C": "To outline an alternative mathematical hypothesis that contradicts the researchers’ view of entorhinal navigation",
+    "D": "To describe the specific laboratory environment constructed to test rodent navigational speed"
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Text 1\nUrban preservation policies should prioritize the strict material restoration of historic buildings to their original architectural state. Altering historic structures to accommodate modern commercial enterprises compromises their authentic character and severs the tangible link between a community and its architectural heritage. Municipalities must therefore enact protective covenants that prohibit substantial modifications to original interior floorplans, facade materials, and decorative detailing.\nText 2\nUrban theorist Jane Jacobs argued that cities need old buildings to cultivate vibrant, diverse economic activity, but preserving structures purely as frozen museum pieces is unsustainable. When historic buildings undergo adaptive reuse—repurposing industrial warehouses or nineteenth-century storefronts into housing, creative studios, or local businesses—they remain active contributors to neighborhood life while avoiding the high capital costs and carbon expenditure of new demolition and construction.",
+   "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the preservation approach advocated in Text 1?",
+   "choices": {
+    "A": "By agreeing that modifying original interior layouts always leads to severe economic decline in historic districts",
+    "B": "By suggesting that preserving original structures without permitting functional updates can prevent historic buildings from serving vital community and economic roles",
+    "C": "By demonstrating that historic buildings require identical structural maintenance regardless of whether they are preserved as museums or reused",
+    "D": "By contending that new construction projects generate lower carbon emissions than the structural retrofitting of existing buildings"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Sociologist Matthew Salganik and colleagues conducted an experimental study to examine how social influence affects cultural markets. The researchers created an artificial online music platform where over 14,000 participants could listen to, rate, and download 48 previously unknown songs. In the control condition, participants chose songs based solely on their own evaluations without seeing data on other users’ preferences. In the social influence conditions, participants could see real-time download counts reflecting the choices of earlier listeners. Salganik and his team observed that when download counts were visible, popular songs became dramatically more popular while unpopular songs languished, demonstrating that social influence amplifies inequality in market success and makes hit songs largely unpredictable based on intrinsic quality alone.",
+   "prompt": "Based on the text, what did Salganik and colleagues determine about cultural markets where consumers can observe other consumers’ choices?",
+   "choices": {
+    "A": "Consumer evaluations become more accurate indicators of a product’s objective artistic value.",
+    "B": "Market inequality decreases as obscure works receive greater collective visibility.",
+    "C": "Past consumer choices heavily bias subsequent consumer behavior, increasing the disparity between top-performing and low-performing items.",
+    "D": "Consumers actively seek out less popular products to establish distinctive personal tastes."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Leguminous plants establish symbiotic relationships with soil bacteria known as rhizobia, which convert atmospheric dinitrogen (N2) into biologically accessible ammonia. Because the enzymatic reduction of nitrogen requires high cellular energy investments in the form of adenosine triphosphate (ATP), soil phosphorus availability often limits this process. Plant ecologist Dr. Elena Vasquez measured nitrogen fixation rates in soybean plants cultivated under three distinct soil phosphorus concentrations: low (5 mg/kg), moderate (20 mg/kg), and high (50 mg/kg). Vasquez concluded that biological nitrogen fixation scales directly with increasing phosphorus availability.",
+   "prompt": "Which choice best describes data from the graph that support Dr. Vasquez’s conclusion?",
+   "choices": {
+    "A": "Soybean plants grown in moderate phosphorus soil exhibited nitrogen fixation rates approximately twice as high as those grown in high phosphorus soil.",
+    "B": "The nitrogen fixation rate increased from approximately 15 µmol N2/plant/h under low phosphorus conditions to over 60 µmol N2/plant/h under high phosphorus conditions.",
+    "C": "Plants grown in low phosphorus soil achieved higher nitrogen fixation rates than plants cultivated in moderate phosphorus soil.",
+    "D": "The nitrogen fixation rate remained essentially constant across all three tested phosphorus concentrations."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 13,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-c/rw1-11-1.webp",
+     "w": 958,
+     "h": 624,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Mean Annual Tree-Ring Width Anomalies for Siberian Larch Following Major Volcanic Eruptions Eruption Yr+1 Yr+2 Yr+3 Kuwae (1453) −0.42 −0.68 −0.25 Huaynaputina (1600) −0.81 −0.54 −0.18 Tambora (1815) −0.95 −0.72 −0.31 Krakatoa (1883) −0.36 −0.22 +0.04 Dendroclimatologists analyze radial tree-ring growth to reconstruct historical summer temperature fluctuations caused by volcanic aerosol emissions. Sulfate aerosols injected into the stratosphere reflect incoming solar radiation, cooling high-latitude landmasses and suppressing seasonal wood formation in subarctic trees. A team led by paleoclimatologist Dr. Marcus Thorne examined Siberian larch tree rings across four major volcanic events to determine how long post-eruption cooling persisted. The researchers observed that while the severity of growth reduction varied across events, ______",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "every recorded eruption resulted in positive tree-ring width anomalies by the second year following the eruption.",
+    "B": "the largest single-year growth suppression across all four events occurred in the third year following the 1815 Tambora eruption.",
+    "C": "growth suppression was sustained across all three post-eruption years for the Kuwae, Huaynaputina, and Tambora events, whereas ring widths after the Krakatoa eruption recovered to positive anomalies by Year +3.",
+    "D": "the Huaynaputina eruption caused greater ring width suppression in Year +2 than in Year +1."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 14
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "In 1926, young African American writers and artists, including Wallace Thurman, Zora Neale Hurston, and Langston Hughes, published the single issue of the avant-garde literary journal Fire!!. Literary historian Henry Louis Gates Jr. argues that the journal represented an intentional rebellion against the older generation of Harlem Renaissance leaders (such as W.E.B. Du Bois and Alain Locke), who advocated that Black art should primarily serve as respectable propaganda to demonstrate civic merit to white society.",
+   "prompt": "Which quotation from an essay by Wallace Thurman in Fire!! would most directly illustrate the literary historian’s argument?",
+   "choices": {
+    "A": "“We are interested in artistic self-expression for its own sake, utterly indifferent to whether our depictions of Black life appease the moral standards of white critics or the social respectability demanded by older Negro leaders.”",
+    "B": "“The primary purpose of our quarterly is to provide a comprehensive historical record of African American achievements in poetry and painting since the late nineteenth century.”",
+    "C": "“By presenting meticulously edited works of drama and verse, our publication hopes to gain widespread financial patronage from major philanthropic foundations.”",
+    "D": "“Our contributors share a profound reverence for the aesthetic principles and cultural institutions established by our distinguished elders over the decades.”"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "African elephants (Loxodonta africana) communicate using low-frequency acoustic vocalizations known as “rumbles,” which can propagate through savannah environments across several kilometers. Behavioral ecologist Karen McComb and colleagues recorded elephant rumbles and tested how listeners distinguish familiar herd members from unfamiliar conspecifics. While earlier models assumed that low-frequency fundamental tones below 20 Hz (infrasound) carry individual vocal signatures over maximum distances, McComb discovered that acoustic recognition of specific herd members degrades significantly at distances exceeding 1.5 kilometers, because higher-frequency vocal tract resonances (formants) around 115 Hz attenuate and become obscured by ambient environmental noise. McComb therefore concluded that ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "infrasonic frequencies below 20 Hz are solely responsible for coding the individual social identity of calling elephants.",
+    "B": "long-distance social recognition in elephants depends on specific acoustic formant frequencies whose effective transmission range is narrower than the overall audible range of elephant infrasound.",
+    "C": "ambient environmental noise enhances the propagation speed of low-frequency elephant contact rumbles across open savannah landscapes.",
+    "D": "female African elephants cannot differentiate between the vocal calls of family members and unfamiliar elephants at any distance."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 16
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Data from NASA’s Cassini spacecraft revealed that Saturn’s icy moon Enceladus expels active plumes of water vapor and ice grains through fractures in its south polar crust, fed by a subsurface liquid ocean. While previous flybys detected water, carbon dioxide, methane, and ammonia within the plumes, planetary scientists remained uncertain whether the ocean contained soluble phosphorus, a critical element required for DNA, RNA, and cellular ATP synthesis. In a 2023 study, geochemist Frank Postberg and colleagues analyzed high-resolution spectra of ice grains captured by Cassini’s Cosmic Dust Analyzer and identified abundant sodium phosphate salts. Because phosphorus concentrations in Enceladus’s ocean water were calculated to be at least 100 times higher than those in Earth’s oceans, the researchers suggest that ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the presence of phosphorus on Enceladus indicates that all life-detection criteria for its ocean have now been definitively satisfied.",
+    "B": "high concentrations of dissolved phosphorus in Enceladus’s ocean eliminate one of the major suspected geochemical constraints on the habitability of that environment.",
+    "C": "the ice grains detected in Enceladus’s plumes originated from surface impacts rather than hydrothermal interactions with the moon’s rocky core.",
+    "D": "Enceladus lacks the thermodynamic energy sources required to sustain biological chemical reactions."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 17
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "In 1811, twelve-year-old Mary Anning discovered the fossilized skull of an Ichthyosaurus along the cliffs of Lyme Regis in Dorset, England. Over the next three decades, she ______ numerous significant marine reptile specimens that transformed the emerging scientific field of paleontology, despite receiving little formal recognition from contemporary academic societies during her lifetime.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "will unearth",
+    "B": "unearthed",
+    "C": "is unearthing",
+    "D": "unearths"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 18
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Archaeological investigations of ancient Maya wetland agriculture in Belize have revealed extensive networks of modified drainage canals. These complex raised-field systems, constructed by excavating channels through flood-prone bajos to create elevated planting platforms, ______ substantial agricultural surplus during periods of severe population density.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "provided",
+    "B": "providing",
+    "C": "to provide",
+    "D": "having provided"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 19
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Employing high-precision laser altimetry to map the dense canopy of the Guatemalan jungle, ______ hundreds of previously unrecorded structures, including fortified hilltop defenses, interconnected causeways, and domestic residential terraces.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "the Pacunam LiDAR initiative revealed",
+    "B": "previously unrecorded structures were discovered by researchers with",
+    "C": "the discovery of fortifications was made by archaeologists in",
+    "D": "domestic terraces and causeways were documented through"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 20
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "When conducting remote sensing surveys of ancient architectural complexes, archaeological teams must evaluate spatial patterns in multispectral imagery before deciding which excavation trench ______",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "should they open?",
+    "B": "they should open.",
+    "C": "should they open,",
+    "D": "they should open?"
+   },
+   "answer": "B",
+   "answerConfidence": "medium",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 21
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "The 1913 Armory Show in New York City introduced American audiences to European modernism— including radical works by Marcel Duchamp, Henri Matisse, and Pablo ______ forever altering the trajectory of American twentieth-century art.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Picasso;",
+    "B": "Picasso—",
+    "C": "Picasso:",
+    "D": "Picasso,"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "In materials science, perovskite solar cells have gained considerable attention for their remarkable power-conversion ______ unlike traditional silicon photovoltaic panels that require high-temperature manufacturing, perovskite crystals can be processed from inexpensive chemical solutions at relatively low temperatures.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "efficiency",
+    "B": "efficiency,",
+    "C": "efficiency;",
+    "D": "efficiency, but"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Geothermal power plants utilize steam extracted from subterranean reservoirs to turn turbine generators and produce electricity. In Iceland, volcanic geology provides an exceptionally shallow geothermal resource, allowing geothermal energy to supply over 65% of the country’s primary energy needs. ______ in regions lacking active tectonic boundaries, drilling deep enough to access equivalent subterranean heat is often economically prohibitive.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In contrast,",
+    "B": "For instance,",
+    "C": "As a result,",
+    "D": "Furthermore,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 24
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Tardigrades are microscopic invertebrates celebrated for their ability to survive lethal extremes of temperature, radiation, and dehydration by entering a dormant state known as anhydrobiosis. In this desiccation-tolerant state, the animals suspend all metabolic processes and synthesize specialized disordered proteins to protect cellular membranes. When rehydrated, tardigrades ______ resume active cellular respiration and locomotion within several hours.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "therefore,",
+    "B": "nevertheless,",
+    "C": "indeed,",
+    "D": "conversely,"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 25
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Engineers often look to biological adaptations in the natural world to resolve complex aerodynamic challenges. ______ when Japanese rail designers redesigned the high-speed Shinkansen 500-Series train to eliminate loud atmospheric sonic booms when exiting tunnels, they modeled the locomotive’s elongated nose cone directly after the beak of the kingfisher.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Specifically,",
+    "B": "Rather,",
+    "C": "Meanwhile,",
+    "D": "In comparison,"
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 26
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nIn 1977, NASA launched the twin probes Voyager 1 and Voyager 2 to explore the outer solar system. Both spacecraft took advantage of a rare planetary alignment to conduct flybys of Jupiter and Saturn. Voyager 2 continued onward to complete the first flybys of Uranus (1986) and Neptune (1989). In 2012, Voyager 1 crossed the heliopause and entered interstellar space. In 2018, Voyager 2 also crossed into interstellar space. Both probes continue to transmit scientific telemetry back to Earth using the Deep Space Network.",
+   "prompt": "The student wants to provide a chronological overview of the Voyager mission’s primary exploration milestones. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Launched in 1977 to explore the outer planets, the Voyager probes completed flybys of Jupiter and Saturn before crossing the heliopause into interstellar space in 2012 and 2018.",
+    "B": "NASA took advantage of a rare planetary alignment in 1977 when launching the Voyager spacecraft to study Jupiter and Saturn.",
+    "C": "Although Voyager 2 made historic flybys of Uranus and Neptune in the 1980s, both probes now use the Deep Space Network to send data.",
+    "D": "Voyager 1 became the first human-made object to reach interstellar space when it crossed the heliopause in 2012."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 27
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nTraditional Japanese yamato-e painting emphasizes flat areas of opaque color, stylized landscape forms, and native Japanese subjects. The suibokuga painting tradition, introduced from China during the Muromachi period (1336–1573), focuses on monochromatic black sumi ink washes. Yamato-e frequently depicted scenes from classical court literature, such as The Tale of Genji. Suibokuga prioritized spontaneous brushwork, atmospheric mist, and Zen Buddhist spiritual themes. Artists of the Rinpa school later combined elements of both traditions.",
+   "prompt": "The student wants to emphasize a difference between the aesthetic characteristics of yamato-e and suibokuga. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "While yamato-e was developed in Japan to depict classical court literature, artists of the later Rinpa school synthesized multiple styles.",
+    "B": "Yamato-e is characterized by flat, opaque colors depicting native narrative subjects, whereas suibokuga relies on monochromatic black ink washes inspired by Zen philosophy.",
+    "C": "Both yamato-e and suibokuga are celebrated Japanese painting genres that flourished during historical imperial eras.",
+    "D": "Monochromatic black sumi ink is used in suibokuga, which was introduced to Japan during the Muromachi period between 1336 and 1573."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 28
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nPhysicist Lise Meitner was a key collaborator with chemist Otto Hahn in Berlin for over three decades. In 1938, forced to flee Nazi Germany due to her Jewish heritage, Meitner relocated to Stockholm, Sweden. In December 1938, Hahn observed unexpected barium when bombarding uranium with neutrons but could not explain the result. Working in Sweden with her nephew Otto Frisch, Meitner calculated the energy released and provided the first theoretical explanation for nuclear fission in 1939. In 1944, Otto Hahn was awarded the Nobel Prize in Chemistry for the discovery, while Meitner’s indispensable theoretical contribution was overlooked by the committee.",
+   "prompt": "The student wants to contextualize Lise Meitner’s theoretical breakthrough in nuclear fission. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Although Otto Hahn observed barium during neutron experiments in 1938, he won the 1944 Nobel Prize in Chemistry for the discovery of nuclear fission.",
+    "B": "After collaborating with Otto Hahn in Berlin for three decades, physicist Lise Meitner was forced to flee Germany for Sweden in 1938.",
+    "C": "While in exile in Sweden in 1939, Meitner provided the crucial theoretical explanation and energy calculations for the unexplained nuclear fission observations reported by Hahn.",
+    "D": "Lise Meitner and her nephew Otto Frisch conducted research in Stockholm, Sweden, after Meitner left Berlin in 1938."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 29
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "While the archival findings of historian Evelyn Vance were initially celebrated for their apparent thoroughness, subsequent historiographical analysis revealed that her evidentiary framework was entirely ______: Vance had selectively incorporated only those administrative correspondences that corroborated her thesis while systematically omitting dozens of contradictory municipal reports.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "tendentious",
+    "B": "pellucid",
+    "C": "inchoate",
+    "D": "ubiquitous"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 31
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The philosophical treatises of the fourth-century logician were long considered hopelessly ______, dense with self-referential neologisms and obscure dialectical detours that resisted standard methods of exegesis. Recent scholarship, however, has demonstrated that these stylistic eccentricities were deliberate mnemonic devices designed for initiated students.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "lucid",
+    "B": "inscrutable",
+    "C": "perfunctory",
+    "D": "ephemeral"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 32
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Biochemists developing synthetic enzymes must overcome the phenomenon of catalytic promiscuity; an artificial catalyst that binds indiscriminately to non-target substrates will inevitably ______ the precise molecular pathways necessary for metabolic equilibrium.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "vitiate",
+    "B": "forestall",
+    "C": "substantiate",
+    "D": "buttress"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 33
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "In her critical assessment of late-nineteenth-century realist fiction, scholar Mireille Haddon argues that authors of the period did not view photographic verisimilitude as an end in itself; rather, they regarded the exhaustive enumeration of domestic objects as a ______ tool intended to reveal the invisible socio-economic pressures governing everyday domestic life.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "superfluous",
+    "B": "hermetic",
+    "C": "heuristic",
+    "D": "dogmatic"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 34
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is adapted from Virginia Woolf’s 1927 novel To the Lighthouse. Lily Briscoe is attempting to capture a scene in a painting. She could see it all so clearly, so distinctly, when she was not hurried; the color was there, the balance was there, and the mass was right. Yet the moment she took her brush and approached the canvas, a terrible levelling force intervened, reducing the luminous clarity of the inner vision to an awkward and unresponsive array of pigment and line. Between the conceived perfection and the executed form lay an insurmountable chasm that left her standing baffled before her own easel, conscious of a profound discrepancy between imagination and achievement.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It dramatizes the sudden emergence of external interruptions that divert the painter’s attention.",
+    "B": "It illustrates the acute conflict the artist experiences when translating an idealized mental conception into a physical medium.",
+    "C": "It signifies Lily’s decision to abandon her modernist artistic style in favor of conventional realism.",
+    "D": "It underscores the critical opinions of onlookers who disparage the technical execution of Lily’s work."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 35
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is from Henry James’s 1902 novel The Wings of the Dove. Densher is observing Kate Croy in an aristocratic drawing room. She was magnificent, but she was formidable; she moved through the assemblage with an unswerving authority that seemed less acquired than inherited from some long lineage of political strategists. Densher felt, as he watched her effortless negotiation of social subtleties, that her brilliance was not a spontaneous effervescence of spirit, but the cold calculation of an intelligence that never for an instant relaxed its vigilance. She gave nothing away that was not intended as a purchase; her smiles were currency, and her silences were fortified positions.",
+   "prompt": "Based on the text, which choice best characterizes Densher’s perception of Kate Croy?",
+   "choices": {
+    "A": "He views her apparent social grace as an instinctive and guileless expression of natural charm.",
+    "B": "He regards her aristocratic demeanor as an insecure attempt to mask her unfamiliarity with high society.",
+    "C": "He perceives her polished social conduct as an instrumental, calculated strategy designed to achieve specific objectives.",
+    "D": "He believes her reserved demeanor isolates her from potential allies within their social circle."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 36
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "In evolutionary developmental biology, the concept of genetic assimilation describes a process by which an environmentally induced phenotype becomes fixed as an inherited trait through natural selection. Biologist Conrad Waddington demonstrated this mechanism by subjecting fruit fly embryos to heat shock, which caused them to develop crossveinless wings. By selectively breeding the individuals that exhibited this response over several generations, Waddington produced a line of flies that consistently developed crossveinless wings even in the complete absence of temperature stress. This empirical demonstration showed that phenotypic plasticity can precede and channel subsequent evolutionary changes in the genome.",
+   "prompt": "Which choice best states the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It details the specific experimental procedure and outcome that substantiated Waddington’s theoretical claim.",
+    "B": "It challenges earlier evolutionary models that attributed morphological changes entirely to environmental stressors.",
+    "C": "It illustrates why fruit flies are inadequate model organisms for studying genetic assimilation in vertebrate populations.",
+    "D": "It highlights an unforeseen experimental failure that forced Waddington to reconsider his hypothesis."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 37
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Text 1\nTraditional economic welfare models rely heavily on gross domestic product (GDP) per capita as a proxy for social progress. These metrics operate on the assumption that material abundance and utility maximization accurately reflect societal flourishing. By aggregating market transactions into a single monetary figure, policymakers can efficiently benchmark productivity gains and calibrate macroeconomic interventions across divergent national contexts.\nText 2\nEconomist Amartya Sen argues that evaluating human development purely through monetary income conflates the instruments of well-being with well-being itself. Under Sen’s “capabilities approach,” societal progress must be evaluated based on people’s substantive freedoms to achieve valuable functionings—such as literacy, physical health, and political participation. Two nations with identical GDP per capita may diverge drastically in their citizens’ actual capabilities if public health infrastructure and educational access are unequally distributed.",
+   "prompt": "Based on the texts, how would Amartya Sen (Text 2) most likely evaluate the core assumption of the traditional welfare models described in Text 1?",
+   "choices": {
+    "A": "By asserting that market transactions are too unstable to be accurately measured by national statistical agencies",
+    "B": "By arguing that aggregating financial wealth fails to account for whether individuals possess the actual substantive opportunities to lead fulfilling lives",
+    "C": "By contending that maximizing personal utility is impossible in economies with high inflation rates",
+    "D": "By suggesting that GDP per capita is useful only when applied to agrarian, pre-industrial societies"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 38
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Epigenetic mechanisms modulate gene expression without altering the underlying DNA nucleotide sequence. Among these, DNA methylation typically represses transcription by obstructing the binding of transcriptional machinery or recruiting chromatin-remodeling proteins. However, recent genomic mapping in mammalian neurons reveals that DNA methylation within gene bodies (intragenic regions), rather than at promoter regions, frequently correlates with elevated transcriptional activity. Neurogeneticist Dr. Aris Thorne notes that this intragenic methylation prevents aberrant transcription initiation from cryptic internal sites, thereby preserving the fidelity of full-length transcript synthesis during intensive neural signaling.",
+   "prompt": "Which choice best states the primary purpose of the text?",
+   "choices": {
+    "A": "To dispute the long-held scientific consensus that epigenetic modifications play any functional role in cellular differentiation",
+    "B": "To explain how intragenic DNA methylation serves an unexpectedly facilitative role in transcriptional fidelity within neurons",
+    "C": "To contrast the metabolic efficiency of neuronal transcription machinery with that of non- neuronal somatic cells",
+    "D": "To propose a new therapeutic intervention for genetic disorders caused by promoter region hypermethylation"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 39
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "In his Philosophical Investigations, Ludwig Wittgenstein introduced the “private language argument,” challenging the Cartesian assumption that language gains its meaning from internal, subjective mental sensations. Wittgenstein posited that for an individual to follow a rule regarding the naming of a private sensation, there must be a criterion for distinguishing between actually following the rule and merely believing one is following it. Because a solitary speaker isolated from a community of language users possesses no independent standard of correctness, the notion of a purely private language is inherently self-undermining; meaning is fundamentally grounded in communal customs and public social practice (“forms of life”).",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Language can communicate private subjective experiences only if an individual constructs a systematic internal dictionary.",
+    "B": "Linguistic meaning cannot exist in isolation because the validation of rule-following requires public, communal practices.",
+    "C": "Cartesian epistemology provides the most logically robust framework for explaining linguistic acquisition in early childhood.",
+    "D": "Mental sensations are too ephemeral and subjective to be categorized by conventional vocabulary."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 40
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "In Arctic ecosystems, microbial methanogenesis accelerates as permafrost thaws, releasing stored organic carbon into the atmosphere as methane (CH4). Biogeochemist Dr. Ksenia Romanova investigated the temperature sensitivity of methanogenic archaea by incubating two soil types— saturated thermokarst bog soil (representing degraded, collapsed permafrost) and intact upland mineral permafrost soil—across a thermal gradient ranging from 0°C to 20°C. Romanova hypothesized that anoxic thermokarst soils possess active microbial consortia capable of exhibiting substantially greater temperature-dependent methane flux than intact permafrost soils.",
+   "prompt": "Which choice best describes data from the graph that support Dr. Romanova’s hypothesis?",
+   "choices": {
+    "A": "Methane emissions in intact mineral permafrost soil remained below 20 mg CH4/m2/day across all temperatures, whereas emissions from thermokarst bog soil increased sharply to over 90 2 mg CH4/m /day at 20°C.",
+    "B": "Thermokarst bog soil produced lower methane flux than intact permafrost soil at temperatures below 10°C.",
+    "C": "Both soil types exhibited linear decreases in methane production as the incubation temperature approached 20°C.",
+    "D": "Intact mineral permafrost soil showed an increase in methane flux that exceeded the flux of thermokarst bog soil at 15°C."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 41,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-c/rw2-11-1.webp",
+     "w": 965,
+     "h": 653,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Change in Average Traffic Delay After End of Restriction (min/km)\nTime Period Previously Restricted Previously Unrestricted\n6:00–7:00 a.m. 0.00 0.03\n7:00–10:00 a.m. 0.98 0.13\n10:00 a.m.–4:30 p.m. 0.55 0.71\n4:30–7:00 p.m. 2.48 0.60\n7:00–8:00 p.m. 1.98 1.32\n8:00 p.m.–6:00 a.m. 0.05 0.16\nIn 2016, the city of Jakarta—one of the world’s largest metropolitan areas—revoked a rule that restricted the use of major roads in the city’s business district to only vehicles with three or more passengers during rush hours (7:00–10:00 a.m. and 4:30–7:00 p.m.). As researchers had expected, this move led to increased traffic delays during those times on the roads whose use had been limited, especially in the later rush hour period. Surprisingly, delays also worsened during other periods of time and on roads that hadn’t been subject to the rule; the data most clearly reflect this effect in the period of ______.",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "4:30–7:30 p.m. for previously restricted roads.",
+    "B": "10:00 a.m.–4:30 p.m. for previously unrestricted roads.",
+    "C": "7:00–10:00 a.m. for both types of roads.",
+    "D": "7:00–8:00 p.m. for both types of roads."
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 42
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "In her foundational 1892 treatise A Voice from the South, educator and theorist Anna Julia Cooper articulated a framework that modern scholars recognize as an early formulation of intersectionality. Cooper argued that Black women occupied a distinct structural position in American society that could not be adequately addressed by civil rights organizations focused exclusively on Black men or by suffrage movements led predominantly by white women.",
+   "prompt": "Which quotation from A Voice from the South most directly illustrates Cooper’s intersectional argument?",
+   "choices": {
+    "A": "“The colored woman of to-day occupies a unique position in this country… She is confronted by both a woman question and a race question, and is as yet an unacknowledged factor in both.”",
+    "B": "“True progress must be measured by the educational advancement and moral elevation of the humblest classes in our communities.”",
+    "C": "“No woman can truly understand the duties of higher citizenship without a thorough grounding in classical literature and philosophy.”",
+    "D": "“Our institutions of higher learning must open their doors freely to all who exhibit the intellectual capacity to master advanced scientific disciplines.”"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 43
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "When searching for atmospheric biosignatures on exoplanets, astrobiologists prioritize chemical disequilibria—the simultaneous presence of gases that would rapidly react and destroy each other unless continuously replenished by biological activity. For example, detecting methane (CH4) in an oxygen-rich (O2) atmosphere is considered strong evidence of life because photochemical reactions driven by stellar ultraviolet radiation break down methane into water and carbon dioxide within decades. However, planetary modeler Dr. Kevin Zahnle cautions that finding atmospheric methane alone, in the absence of abundant oxygen or ozone, cannot serve as a reliable biosignature because ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "abiotic processes, such as serpentinization and volcanic outgassing, can sustain high methane levels on lifeless rocky worlds.",
+    "B": "oxygen and methane cannot coexist in any planetary atmosphere regardless of biological activity.",
+    "C": "microbial methanogens on Earth do not release methane into the atmosphere in measurable quantities.",
+    "D": "ultraviolet radiation from stars accelerates biological photosynthesis while suppressing abiotic geologic emissions."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 44
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Phylogenomic analyses of the Asgard archaea—a group of uncultivated microbes discovered near deep- sea hydrothermal vents—have transformed evolutionary models of eukaryogenesis (the emergence of complex eukaryotic cells). Asgard genomes encode numerous “eukaryotic signature proteins” (ESPs) involved in membrane trafficking, ubiquitin-mediated protein degradation, and cytoskeletal dynamics, functions previously thought to be exclusive to eukaryotes. Evolutionary biologist Dr. Thijs Ettema argues that these genomic discoveries support the “two-domain” tree of life, in which eukaryotes did not branch off as an independent third lineage alongside Archaea and Bacteria, but rather ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "evolved from an ancient bacterium that lacked any cytoskeletal or membrane-trafficking proteins.",
+    "B": "originated directly from within the archaeal domain through an endosymbiotic merger between an Asgard-related archaeon and an alphaproteobacterium.",
+    "C": "represent the ancestral lineage from which all primitive archaeal and bacterial clades subsequently descended.",
+    "D": "developed their eukaryotic signature proteins through entirely abiotic geochemical reactions occurring in hydrothermal vents."
+   },
+   "answer": "B",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 45
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Economist George Akerlof demonstrated that in markets characterized by asymmetric information— where sellers know the true quality of a good but buyers cannot independently verify it prior to purchase —adverse selection can cause market unraveling. Because risk-averse buyers will only pay an average price reflecting expected market quality, owners of high-quality goods will refuse to sell at that discounted rate and will withdraw from the market. Consequently, the proportion of low-quality goods increases, driving buyer valuations down further. Akerlof concluded that without external signaling mechanisms, such as third-party certifications or binding warranties, ______",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "market equilibrium will naturally stabilize at a price that satisfies both buyers and sellers of premium goods.",
+    "B": "asymmetric information will exclusively harm sellers of low-quality products while benefiting premium retailers.",
+    "C": "the market may degrade until only substandard goods are traded, or collapse entirely despite mutual gains from trade.",
+    "D": "buyers will eventually obtain complete technical knowledge of all products through repeat purchases."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 46
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Neither the initial geochemical surveys conducted along the volcanic rift zone nor the subsequently compiled sediment core data ______ sufficient evidence to substantiate the hypothesis that hydrothermal vents operated continuously during the late Pleistocene epoch.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "provides",
+    "B": "have provided",
+    "C": "is providing",
+    "D": "has provided"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 47
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "By extracting and sequencing ancient environmental DNA preserved within Greenland’s Kap København Formation, ______ a detailed picture of biodiversity within a two-million-year-old subarctic ecosystem inhabited by mastodons, poplar trees, and Atlantic horseshoe crabs.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "a detailed reconstruction of biodiversity was achieved by paleogeneticist Eske Willerslev and his research team, revealing",
+    "B": "paleogeneticist Eske Willerslev and his research team reconstructed",
+    "C": "the discovery of two-million-year-old biodiversity was made possible when researchers reconstructed",
+    "D": "it was possible for paleogeneticist Eske Willerslev and his research team to reconstruct"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 48
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "Biochemist Jennifer Doudna, along with her French collaborator Emmanuelle ______ the CRISPR-Cas9 microbial adaptive immune system into a programmable genome-editing technology that revolutionized biomedical science.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Charpentier, adapted",
+    "B": "Charpentier adapted",
+    "C": "Charpentier; adapted",
+    "D": "Charpentier—adapted"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 49
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "In high-pressure physics, metallic hydrogen remains one of the most elusive condensed-matter phases ______ theorists predict that at pressures exceeding 400 gigapascals, molecular hydrogen will dissociate into a dense lattice of atomic nuclei exhibiting room-temperature superconductivity.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "sought, however,",
+    "B": "sought; however,",
+    "C": "sought:",
+    "D": "sought"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 50
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "The conservation task force prioritized restoring three highly degraded wetland habitats: the salt marshes of the lower estuary, which buffer inland communities against storm ______ the inland freshwater peat bogs, which sequester vast amounts of organic carbon; and the coastal mangrove swamps, which provide nursery grounds for marine fish.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "surges;",
+    "B": "surges,",
+    "C": "surges",
+    "D": "surges—"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 51
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "During the fourteenth century, the West African empire of Mali established itself as a global epicenter of commerce and Islamic scholarship under the reign of Mansa Musa. Through ______ strategic administration of trans-Saharan trade routes in gold and salt, the imperial capital at Niani achieved unprecedented wealth.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "it’s",
+    "B": "their",
+    "C": "its",
+    "D": "they’re"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 52
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Early neurobiologists theorized that the adult mammalian central nervous system was entirely post- mitotic and incapable of generating new functional neurons. ______ in the late 1990s, researchers utilizing bromodeoxyuridine (BrdU) pulse-chase labeling demonstrated active adult neurogenesis within the subgranular zone of the human dentate gyrus.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Consequently,",
+    "B": "However,",
+    "C": "Furthermore,",
+    "D": "In other words,"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 53
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Standard silicon solar cells are physically constrained by the Shockley-Queisser limit, which caps the maximum theoretical energy conversion efficiency of a single p-n junction at approximately 33%. ______ to bypass this thermodynamic constraint, photovoltaic engineers are fabricating tandem multi- junction cells that stack semiconductor layers with different bandgaps to absorb a broader spectrum of solar radiation.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Specifically,",
+    "B": "In contrast,",
+    "C": "Thus,",
+    "D": "Nonetheless,"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 54
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nDendrochronology uses the annual growth rings of long-lived trees to construct multi-millennial climate chronologies. Bristlecone pines (Pinus longaeva) in California’s White Mountains can live for over 4,800 years. Sub-fossilized bog oaks in Ireland and Germany provide overlapping tree-ring sequences spanning over 10,000 years. 14 Dendrochronological calibration revealed that raw radiocarbon ( C) dating systematically underestimated archaeological ages due to past fluctuations in atmospheric carbon-14 concentrations. Tree-ring calibration curves (such as IntCal20) are now indispensable for establishing accurate absolute dates in archaeology. The student wants to explain how dendrochronology improved the precision of radiocarbon dating.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "By providing continuous multi-millennial tree-ring sequences, dendrochronology enabled researchers to calibrate radiocarbon dates and correct for historical fluctuations in 14 atmospheric C levels.",
+    "B": "Bristlecone pines in California can live for over 4,800 years, making them among the oldest living individual organisms on Earth.",
+    "C": "Radiocarbon dating systematically underestimated the ages of ancient archaeological artifacts found in Ireland and Germany.",
+    "D": "Tree-ring sequences from bog oaks and bristlecone pines have allowed scientists to construct climate chronologies spanning over 10,000 years."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 55
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Antikythera mechanism is an ancient Greek hand-powered mechanical device discovered in a shipwreck in 1901. Constructed around the late 2nd or early 1st century BCE, it is widely regarded as the world’s oldest known analogue computer. It used a complex differential gear train comprising over thirty bronze gears to predict astronomical positions and eclipses. It tracked the Saros cycle (a 223-lunar-month eclipse prediction cycle) and the Metonic calendar cycle. It also included an indicator display showing the four-year cycle of the ancient Panhellenic athletic games (including the Olympic Games).",
+   "prompt": "The student wants to emphasize the astronomical predictive capabilities of the Antikythera mechanism. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Recovered from a shipwreck in 1901, the Antikythera mechanism was constructed around the late 2nd or early 1st century BCE.",
+    "B": "Using a complex system of over thirty bronze gears, the Antikythera mechanism could accurately predict celestial positions, eclipses, and lunar cycles.",
+    "C": "In addition to astronomical tracking, the mechanical device featured an indicator display for the four-year Panhellenic Olympic cycle.",
+    "D": "Regarded as the world’s oldest analogue computer, the ancient Greek device was fabricated with a differential gear train."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 56
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nPhysicist Chien-Shiung Wu designed the “Wu experiment” in 1956 to test the law of conservation of parity in subatomic physics. Parity conservation postulated that physical processes should behave identically to their mirror images (spatial inversion symmetry). Wu aligned the nuclear spins of cobalt-60 atoms at near-absolute zero temperatures using a strong magnetic field. She observed that beta particles were emitted preferentially in the direction opposite to the nuclear spin. This directional asymmetry proved that parity is violated in weak nuclear interactions, overturning a fundamental axiom of theoretical physics.",
+   "prompt": "The student wants to emphasize the scientific significance of Wu’s experimental result. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "By aligning cobalt-60 atoms at cryogenic temperatures in 1956, physicist Chien-Shiung Wu conducted an experimental test of weak nuclear interactions.",
+    "B": "Theoretical physicists long assumed that physical processes and their mirror images were symmetrical under the law of parity conservation.",
+    "C": "Wu’s discovery that beta decay exhibited directional asymmetry proved that parity conservation is violated in weak interactions, overturning a fundamental physical principle.",
+    "D": "In the 1956 Wu experiment, a magnetic field was utilized to orient the nuclear spins of cobalt- 60 atoms."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 57
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "Which expression is equivalent to 190x^2 + 60?",
+   "choices": {
+    "A": "6(10x^2 + 19)",
+    "B": "10(19x^2 + 6)",
+    "C": "19(10x^2 + 1)",
+    "D": "250(x^2 + 1)"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 59
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "Kaden owns a business that makes signs. The equation t = 12s + 13 gives the total time t, in minutes, it takes Kaden’s business to make s signs. How long, in minutes, does it take Kaden’s business to make 100 signs?",
+   "choices": {
+    "A": "1,200",
+    "B": "1,213",
+    "C": "1,312",
+    "D": "2,500"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 60
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "spr",
+   "prompt": "The price of an item increased by p% from $40 to $45. What is the value of p?",
+   "answer": "12.5",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 61
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "The measures of the interior angles of triangle ABC are 17^∘, 34^∘, and x^∘. What is the value of x?",
+   "choices": {
+    "A": "17",
+    "B": "51",
+    "C": "129",
+    "D": "180"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 62
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "A rectangle has a length of l centimeters (cm) and a width of w cm. The rectangle has a perimeter of 174 cm. Which equation gives the perimeter in terms of l and w?",
+   "choices": {
+    "A": "174 = 2l + 2w",
+    "B": "174 = 2l − 2w",
+    "C": "174 = l + w",
+    "D": "174 = l − w"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 63
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "f(x) = 90 + 80x\nFor a certain type of repair, the function f gives the total amount, in dollars, an electrician charges for materials and x hours worked. According to this function, how much does the electrician charge, in dollars, for each hour worked?",
+   "choices": {
+    "A": "10",
+    "B": "80",
+    "C": "90",
+    "D": "170"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 64
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "At what point (x,y) do the graphs of the equations y = 8 and y = 3x + 5 intersect in the xy-plane?",
+   "choices": {
+    "A": "(1,8)",
+    "B": "(8,8)",
+    "C": "(8,3)",
+    "D": "(8,5)"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 65
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "spr",
+   "prompt": "The function f is defined by f(x) = 3x^2 − 5x. What is the value of f(3)?",
+   "answer": "12",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 66
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "A scatterplot shows the relationship between two variables, x and y, with a line of best fit. The line of best fit passes through approximately (−10,13.9) and (0,4.2). Which of the following equations best represents this line of best fit?",
+   "choices": {
+    "A": "y = −x + 17.8",
+    "B": "y = x − 17.8",
+    "C": "y = −x + 4.2",
+    "D": "y = x − 4.2"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "two-var-data",
+   "page": 67
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "a\n= 67\nb + c\nThe given equation relates the positive numbers a, b, and c. Which equation correctly expresses a in terms of b and c?",
+   "choices": {
+    "A": "a =_b^6_+^7_c",
+    "B": "a = 67(b + c)",
+    "C": "a = 67 − (b + c)",
+    "D": "a = b + c"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 68
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "How many solutions does the equation 5(2x + 3) = 0 have?",
+   "choices": {
+    "A": "Exactly one",
+    "B": "Exactly two",
+    "C": "Infinitely many",
+    "D": "Zero"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 69
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "The measure of angle G is π/9 radians. If the measure of angle G is 2n degrees, where n is a constant, what is the value of n?",
+   "choices": {
+    "A": "2",
+    "B": "9",
+    "C": "10",
+    "D": "20"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 70
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "spr",
+   "prompt": "7(x − 8)^2 = 700\nWhat is the positive solution to the given equation?",
+   "answer": "18",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 71
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "spr",
+   "prompt": "The population of a certain city doubled every 75 years from 1664 to 1964. The population of this city was 240,000 in 1964. What was the population of this city in 1664?",
+   "answer": "15000",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 72
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "In the linear function f, f(0) = 2 and f(7) = 2. Which equation defines f?",
+   "choices": {
+    "A": "f(x) = 0",
+    "B": "f(x) = 7",
+    "C": "f(x) = 2",
+    "D": "f(x) = x + 2"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 73
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "spr",
+   "prompt": "The graph of the linear equation 6x + By = 30 is shown, where B is a constant. The line passes through (0,3) and (5,0). What is the value of B?",
+   "answer": "10",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 74,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-c/m1-16-1.webp",
+     "w": 487,
+     "h": 375,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "spr",
+   "prompt": "In triangle PQR shown, angle R is a right angle. The length of side PR is 26. The sine of angle Q is 1/2 . What is the length of line segment PQ?",
+   "answer": "52",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 75,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-c/m1-17-1.webp",
+     "w": 853,
+     "h": 292,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "A machine launches a baseball from ground level. The baseball reaches a maximum height of 134.56 meters above the ground at 2.9 seconds and hits the ground at 5.8 seconds. Which equation represents the height above ground h, in meters, of the baseball t seconds after it is launched?",
+   "choices": {
+    "A": "h = −t^2 + 5.8",
+    "B": "h = −t^2 + 134.56",
+    "C": "h = −16(t − 2.9)^2 − 5.8",
+    "D": "h = −16(t − 2.9)^2 + 134.56"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 76
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "A circle has center O, and points P and Q lie on the circle such that segment PQ is a diameter of the circle. The length of arc PQ is 62 centimeters. What is the circumference, in centimeters, of the circle?",
+   "choices": {
+    "A": "31",
+    "B": "62",
+    "C": "124",
+    "D": "360"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 77
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "0.0036 is 0.6% of a, and 84 is 350% of b, where a and b are positive numbers. What percentage of a is b?",
+   "choices": {
+    "A": "40%",
+    "B": "144%",
+    "C": "1,440%",
+    "D": "4,000%"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 78
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "y = 8(x − d)(x + d)(x + h)(x − d)\nIn the given equation, d and h are unique positive constants. When the equation is graphed in the xy- plane, how many distinct x-intercepts does the graph have?",
+   "choices": {
+    "A": "4",
+    "B": "3",
+    "C": "2",
+    "D": "1"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 79
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "Sphere A has a radius of 8k, and sphere B has a radius of 144k, where k is a positive constant. The volume of sphere B is how many times the volume of sphere A?",
+   "choices": {
+    "A": "18",
+    "B": "144",
+    "C": "324",
+    "D": "5,832"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 80
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "f(x) = −2(x − 4)^2 + 18\nThe function f is defined by the given equation. For what value of x does f(x) reach its maximum value?",
+   "choices": {
+    "A": "−4",
+    "B": "4",
+    "C": "14",
+    "D": "18"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 82
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "A circle in the xy-plane has its center at (−3,7) and a radius of 5. Which of the following is an equation of the circle?",
+   "choices": {
+    "A": "(x − 3)^2 + (y + 7)^2 = 25",
+    "B": "(x + 3)^2 + (y − 7)^2 = 25",
+    "C": "(x + 3)^2 + (y − 7)^2 = 5",
+    "D": "(x − 3)^2 + (y + 7)^2 = 5"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 83
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "h(t) = 450(1.035)^(2t)\nThe function h models the estimated population of a protected wildlife sanctuary t years after initial monitoring began. Which of the following expressions represents the estimated annual percent increase in the population?",
+   "choices": {
+    "A": "3.5%",
+    "B": "7.0%",
+    "C": "7.1225%",
+    "D": "12.25%"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 84
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "6x − 10y = c\n{\n3x − 5y = 14\nIn the given system of linear equations, c is a constant. If the system has no solution, which of the following could NOT be the value of c?",
+   "choices": {
+    "A": "−28",
+    "B": "0",
+    "C": "14",
+    "D": "28"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 85
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "x^2 − 49\ng(x) =\n2x^2 − 13x − 7\nFor what value of x is the rational function g undefined, but does NOT have a vertical asymptote (i.e., corresponds to a removable discontinuity)?",
+   "choices": {
+    "A": "−7",
+    "B": "21",
+    "C": "0",
+    "D": "7"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 86
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "In the figure shown, angle ACB is a right angle, and segment CD is perpendicular to segment AB. If the length of AD is 4 and the length of DB is 16, what is the length of segment AC?",
+   "choices": {
+    "A": "4√5",
+    "B": "8√5",
+    "C": "12",
+    "D": "20"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 87,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-c/m2-06-1.webp",
+     "w": 482,
+     "h": 230,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "2x^2 + 8x + k = 0\nIn the given equation, k is a constant. If the equation has no real solutions, which of the following inequalities must be true?",
+   "choices": {
+    "A": "k < 8",
+    "B": "k > 8",
+    "C": "k < 32",
+    "D": "k > 32"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 88
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "In a study of high-precision manufacturing, a sample of 1,200 microprocessors produced by Machine A had a mean lifespan of 18,400 hours with a standard deviation of 350 hours. A sample of 1,200 microprocessors produced by Machine B had a mean lifespan of 18,400 hours with a standard deviation of 720 hours. Which of the following statements must be true?",
+   "choices": {
+    "A": "Machine A produced more microprocessors that lasted longer than 19,500 hours than Machine",
+    "B": "did. B The median lifespan of microprocessors from Machine A is strictly greater than the median lifespan of microprocessors from Machine B.",
+    "C": "The lifespans of the microprocessors produced by Machine B showed greater variability around the mean than the lifespans of the microprocessors produced by Machine A.",
+    "D": "The total lifespan of all microprocessors tested from Machine B was greater than the total lifespan of all microprocessors tested from Machine A."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 89
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = (x − 3)(x + 5). The function g is defined by g(x) = f(x − 2) + 4. Which of the following equations is an equivalent form of g(x) that displays the minimum value of g as a constant or coefficient?",
+   "choices": {
+    "A": "g(x) = (x − 5)(x + 3) + 4",
+    "B": "g(x) = (x − 1)^2 − 12",
+    "C": "g(x) = (x + 1)^2 − 12",
+    "D": "g(x) = x^2 − 2x − 11"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 90
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "Two right circular cylinders, Cylinder P and Cylinder Q, are geometrically similar. The surface area of Cylinder Q is 4.41 times the surface area of Cylinder P. If the volume of Cylinder P is 150 cm^3 , what is the volume, in cubic centimeters, of Cylinder Q?",
+   "choices": {
+    "A": "315.0",
+    "B": "661.5",
+    "C": "1,389.15",
+    "D": "2,917.215"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 91
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "x^2 + y^2 − 12x + 16y + 64 = 0\nThe graph of the given equation in the xy-plane is a circle. What is the area of the circle, in square units?",
+   "choices": {
+    "A": "36π",
+    "B": "64π",
+    "C": "100π",
+    "D": "144π"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 92
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "In the xy-plane, an angle with measure θ radians is in standard position, where 0 ≤ θ ≤^π_2. If cos(^π_2 − θ) =_1^5_3, what is the value of tanθ?",
+   "choices": {
+    "A": "152",
+    "B": "1132",
+    "C": "152",
+    "D": "153"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 93
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "y = 3x^2 − 12x + 17\n{\ny = mx + 5\nIn the given system of equations, m is a constant. If the system has exactly one real solution, which of the following is a possible value of m?",
+   "choices": {
+    "A": "−24",
+    "B": "−12",
+    "C": "6",
+    "D": "12"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 94
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "A chemist prepares a buffer solution containing a weak acid and its conjugate base. The initial ratio of the concentration of conjugate base to acid is 3 : 5. The chemist adds a reagent that increases the conjugate base concentration by 40% and reduces the acid concentration by 25%. What is the new ratio of the concentration of conjugate base to acid?",
+   "choices": {
+    "A": "14 : 15",
+    "B": "28 : 25",
+    "C": "7 : 5",
+    "D": "21 : 20"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 95
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "f(x) = a(x − h)^3 + k\nIn the given function, a, h, and k are real constants such that a < 0, h > 0, and k < 0. Which of the following could be the graph of y = f(x) in the xy-plane?",
+   "choices": {
+    "A": "A cubic curve that passes from quadrant II through (h,k) in quadrant IV and decreases for all real values of x.",
+    "B": "A cubic curve that passes from quadrant III through (h,k) in quadrant I and increases for all real values of x.",
+    "C": "A parabola opening downward with its vertex at (h,k) in quadrant IV.",
+    "D": "A cubic curve that passes from quadrant II through (−h,k) in quadrant III and decreases for all real values of x."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 96
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "2x + 5 B\n= A +\nx − 3 x − 3\nThe given equation is true for all values of x = 3, where A and B are constants. What is the value of A + B?",
+   "choices": {
+    "A": "7",
+    "B": "11",
+    "C": "13",
+    "D": "17"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 97
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "A random sample of 850 registered voters in a metropolitan region were surveyed about a municipal public transit proposal. Based on the survey, 62% of the voters supported the proposal, with an associated margin of error of 3.3% at a 95% confidence level. Which of the following is the most appropriate conclusion from this result?",
+   "choices": {
+    "A": "Exactly 62% of all registered voters in the metropolitan region support the proposal.",
+    "B": "It is plausible that the proportion of all registered voters in the metropolitan region who support the proposal is between 58.7% and 65.3%.",
+    "C": "If another random sample of 850 voters were surveyed, exactly 62% of those surveyed would support the proposal.",
+    "D": "There is a 95% chance that any individual voter chosen at random supports the proposal."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "inference-sample",
+   "page": 98
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "In the polynomial p(x) = x^4 − 5x^3 + ax^2 + bx − 48, a and b are integer constants. If (x − 3) and (x + 2) are both factors of p(x), what is the remainder when p(x) is divided by (x + 1)?",
+   "choices": {
+    "A": "−52",
+    "B": "−36",
+    "C": "0",
+    "D": "36"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 99
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "A linear function L satisfies L(4) = 19 and L(−2) = −5. An exponential function E is defined by E(x) = 3 ⋅ 2^(cx), where c is a positive constant. If the graphs of y = L(x) and y = E(x) intersect at the point (2,k), what is the value of k?",
+   "choices": {
+    "A": "2",
+    "B": "6",
+    "C": "11",
+    "D": "12"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 100
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "spr",
+   "prompt": "4x^2 − 24x + 31 = 0\nOne solution to the given equation can be written in the form 3 +_2^d, where d is a positive integer. What is the value of d?",
+   "answer": "5",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 101
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "spr",
+   "prompt": "In right triangle RST, angle S is the right angle. Point M lies on segment RS such that TM bisects angle RTS. If the length of ST is 24 and the length of SM is 8, what is the length of hypotenuse RT?",
+   "answer": "30",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 102
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "spr",
+   "prompt": "y = x^2 − 6x + 13\n{\n2x + y = k\nIn the given system of equations, k is a constant. If the system has exactly one distinct real solution, what is the value of k?",
+   "answer": "9",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 103
+  }
+ ]
+}

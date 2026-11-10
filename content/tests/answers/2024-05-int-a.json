@@ -1,0 +1,1084 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Moss never tired of \"this specific view,\" meaning one particular view out of the windows: the Port of Oakland as the train rises. \"Particular\" fits that sense of a single, identified scene. \"Correct\" or \"energetic\" don't describe a view, and nothing suggests the view is imaginary.",
+    "fix": {
+      "passage": "The following text is from Mark Oshiro's 2018 novel Anger Is a Gift. In the novel, Moss and his friends are on a subway train in Northern California.\n\nLights from the outside world then filled the train car as it rose out of the ground and climbed the elevated track. As long as Moss had lived in West Oakland, he'd never tired of this specific view, so he pointed toward the windows. “Check it,” he said, and the Port of Oakland began to pass by them."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bridge is \"supported by massive sandstone pillars,\" so the pillars physically hold the bridge up. \"Defended\" and \"cherished\" bring in protection or emotion that pillars can't provide, and nothing indicates the bridge was improved.",
+    "fix": {
+      "passage": "The following text is adapted from John Matheus's 1925 short story \"Fog.\"\n\nThe fog extended its tentacles over city and river, gradually obliterating traces of familiar landscapes. At five-thirty the old Panhandle bridge, supported by massive sandstone pillars, stalwart, as when erected fifty years before to serve a generation now passed behind the portals of life, had become a spectral outline against the sky.",
+      "prompt": "As used in the text, what does the word \"supported\" most nearly mean?"
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Although\" signals a contrast: the government tried to do something to the novel, yet copies still circulated in secret. That fits an attempt to suppress, or stop the spread of, the book. \"Replicate\" or \"import\" would mean spreading it, which wouldn't contrast with secret circulation."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The colon explains the blank: knowledge spillovers drive clustering in some industries, but tube manufacturers cluster \"for different reasons.\" So the mix of factors differs from industry to industry, which is what \"heterogeneous\" (varied) means. \"Credible\" and \"decisive\" say nothing about variation, and \"imperative\" (urgent) doesn't fit."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speaker and her friend share a calm, wordless understanding, and she says the kestrel quiets its mating call \"to please the harmony of this sweet silence.\" The bird's behavior thus mirrors the peaceful silence the two travelers feel, showing nature in step with their experience. Nothing suggests the friend is hiding his feelings (A) or that nature holds unknowable secrets (B)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After praising Jones's talent, the underlined sentence says that by featuring Blackfeet main characters, the novel helped make a place for Indigenous people in horror. That points out why the novel's portrayal of Indigenous people matters. It doesn't predict what non-Indigenous authors will do (A) or dispute any claim about Jones's life (B).",
+    "fix": {
+      "passage": "The 2021 novel My Heart Is a Chainsaw confirmed that Stephen Graham Jones is one of the most talented writers of horror fiction today. <u>By featuring main characters who are Blackfeet, like Jones himself, the novel also helped to ensure that Indigenous people have a place within the horror genre.</u> But Jones is hardly the only Indigenous voice in horror: Lisa Fuller, a member of the Murri people of Australia, has also written in the genre. Her acclaimed 2019 young adult novel Ghost Bird is set in a Murri community in Queensland, Australia."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says horizontal gene transfer can raise antibiotic resistance, so understanding how to prevent it could help control dangerous pathogens. That is a practical payoff of studying the process. It doesn't compare the threat of two organisms (C) or review the history of research (B).",
+    "fix": {
+      "passage": "Horizontal gene transfer involves the exchange of genetic material between organisms not in a parent-offspring relationship. It is common among prokaryotes (single-celled organisms, such as the bacteria Enterococcus cecorum and Moraxella caviae). <u>The process can have the effect of increasing bacterial resistance to antibiotics; as such, an understanding of how to prevent horizontal gene transfer might result in the mitigation of dangerous pathogens (organisms that cause disease).</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes the 2013 study's conclusion and then focuses on its small sample size, which Clements and colleagues warn can lead to biased analysis and exaggerated effects. So the main topic is a possible weakness of that study. The text says nothing about the fish's evolution or a new cause of acidification, and the 2022 work is a review, not a new behavioral finding.",
+    "fix": {
+      "choices": {
+        "A": "A possible shortcoming of a study involving Pomacentrus amboinensis",
+        "B": "A discovery regarding the evolution of Pomacentrus amboinensis",
+        "C": "A change in fish behavior first reported in 2022",
+        "D": "A newly identified cause of ocean acidification"
+      }
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Wladyslaw I Herman is described as well documented, while Lestek's \"historical actuality is disputed\" because his record rests on oral tradition. So historians accept that Wladyslaw existed but disagree about Lestek. Choice A reverses this, and the text never says Wladyslaw's existence depends on oral stories (D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim links higher latitude to more ice days. Nackten (62.913°) is farther north than Lake Kegonsa (42.97°) and had more ice days in every winter shown (for example 177 vs. 94), which supports the claim. Choice A has the comparison backward, and B and C only describe one lake over time, which says nothing about latitude.",
+    "fix": {
+      "passage": "It is common for freshwater lakes near or above a latitude of 45° north of the equator, like Lake Stechlin in Germany, to accumulate surface ice in winter. The amount and duration of ice depends on many factors, including local weather conditions as well as the lake's depth, volume, and surface area, but a climate researcher claims that the higher a lake's latitude, the more days per winter it will typically have measurable amounts of surface ice.",
+      "table": {
+        "caption": "Days per Winter that Lakes Have Surface Ice",
+        "headers": [
+          "Lake",
+          "Latitude (degrees)",
+          "1980-81",
+          "1985-86",
+          "1990-91",
+          "1995-96",
+          "2000-01",
+          "2005-06"
+        ],
+        "rows": [
+          [
+            "Spirit Lake",
+            "43.46",
+            "102",
+            "135",
+            "121",
+            "134",
+            "147",
+            "126"
+          ],
+          [
+            "Lake Kegonsa",
+            "42.97",
+            "94",
+            "116",
+            "104",
+            "113",
+            "124",
+            "101"
+          ],
+          [
+            "Nackten",
+            "62.913",
+            "177",
+            "168",
+            "144",
+            "174",
+            "133",
+            "134"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last column gives tribal economic activity $143,510 per employee. That is less than transportation/warehousing ($234,720) but more than construction ($87,994) and administration/waste ($60,132). Choice B fails because $143,510 is far from $234,720, so the two aren't nearly equal.",
+    "fix": {
+      "passage": "The Cherokee Nation, the Quapaw Tribe, and the more than thirty other tribes in Oklahoma operate numerous businesses and generate billions of dollars in revenue. An economics student is researching the tribes' collective activity as a single industry. The student wants to compare the average amount that industry contributed per employee to Oklahoma's economy with the average amount contributed per employee by three other industries. Looking at the table, the student finds that tribal economic activity contributed over $141,000 per employee, on average, ranking it _____",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximately total contribution by industry",
+          "The number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Administration/waste",
+            "$5,830,600,000",
+            "95,964",
+            "$60,132"
+          ],
+          [
+            "Construction",
+            "$6,797,300,000",
+            "77,247",
+            "$87,994"
+          ],
+          [
+            "Transportation/warehousing",
+            "$12,414,600,000",
+            "52,891",
+            "$234,720"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$143,510"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Vanya's opinion of the professor has changed. In D, Vanya says he \"was proud of\" the professor and treated his words as inspired, but \"now\" sees he was \"basely deceived\": a clear before-and-after shift. Choices A and C show Vanya's resentment but not a change from an earlier, different view, and B is the professor speaking."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The hypothesis is that reflecting on lessons learned from mistakes leads to more humility. The graph shows the \"mistake with learning\" group scoring highest (about 3.1), above both the \"without learning\" group and the control group. Choice B is true but doesn't connect to the hypothesis, and C misreads the graph, since the control group scored above one experimental group."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Heartburn has real-life parallels but is \"largely pure invention.\" Readers who keep hunting for real-life matches would therefore claim links to Ephron's life that the facts don't support. Choice D is the opposite mistake: these readers overstate, not minimize, the real-world material."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"the country's name,\" which is singular, so it needs the singular verb \"is.\" \"Are,\" \"are being,\" and \"have been\" are all plural forms that don't agree with \"name.\""
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The verb \"allows\" takes the pattern \"allows someone to do something,\" so \"allows researchers to study\" is correct. \"Will study\" creates a second main verb with no connection, \"who study\" turns the phrase into a description of researchers, and \"studying\" doesn't fit after \"allows researchers.\""
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The natural beauty and traditions belong to both towns, Arteaga and Lagos de Moreno, so the plural possessive \"towns'\" is needed. \"Town's\" would refer to only one town, and \"towns\" without an apostrophe isn't possessive."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins a phrase set off by commas that describes the researchers, while the main verb of the sentence is \"aimed.\" The participle \"using\" correctly forms that descriptive phrase. \"Used\" or \"use\" would create a second main verb with nothing joining it to \"aimed.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence ends with \"lists,\" and the next part gives an example of one of those lists, which is an independent clause. A colon can introduce such an elaboration, so \"lists: in\" works. Choice D joins two independent clauses with only a comma (a comma splice), and B runs them together with no punctuation."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Acclaimed Cahuilla artist and 2007 Eiteljorg Fellowship recipient\" is a title placed directly before the name Gerald Clarke, so no punctuation should separate it from the name or split it internally. Adding a comma or a dash between the title and the name, or within the title, wrongly breaks up the subject."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes decades of debate with no well-supported theory; the next tells of strong evidence eventually being found. \"Finally\" marks this as the end of a long process. \"Therefore\" wrongly suggests the failed theories caused the discovery, and \"for example\" doesn't fit since the evidence isn't an instance of the debate."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Voters were impressed by the album, and as a result they gave it the Best Norteño Album award. \"Accordingly\" shows this cause-and-effect link. \"In contrast\" and \"nevertheless\" would wrongly suggest the award conflicts with their admiration."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text identifies a need to guarantee that regional cheese claims are true; the European Union then created DOP certification to meet that need. \"Therefore\" signals this result. \"Likewise\" implies a similar, separate point, and \"conversely\" implies opposition."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a difference between the two species, and B contrasts their chromosome counts directly: sixty-four for the fennec fox versus thirty-four for the red fox. Choices A and D mention only one species, and C stresses something the two foxes have in common.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Chromosomes are cellular structures that contain genes.\n• Genes carry critical instructions for determining an organism's physical traits.\n• The fennec fox and the red fox are both species of foxes.\n• As a species, the fennec fox has sixty-four chromosomes.\n• As a species, the red fox has thirty-four chromosomes."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to compare the causes in the two theories, and C gives both: branches brushing against each other (Jacobs) versus branches detecting shade (Ng). Choice A names Ng's theory but not Jacobs's cause, B gives no causes at all, and D describes only Jacobs's theory.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Crown shyness is a phenomenon in which the tops (crowns) of neighboring trees grow close together but don’t overlap.\n• To explain how this happens, Australian forester M.R. Jacobs proposes the mutual abrasion theory.\n• According to Jacobs's theory, when trees brush against one another, branches break off.\n• Malaysian scholar Francis S.P. Ng posits the mutual shade avoidance theory.\n• According to Ng's theory, when tree branches detect shade from nearby trees’ branches, they stop growing."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence should contrast the eggs directly. D gives both average lengths and says the Alcedo atthis eggs were longer. Choice C lists both lengths but doesn't point out the difference, and A and B leave out the measurements entirely.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In 2017, a research team led by Mary Caswell Stoddard determined the average lengths of eggs produced by various bird species.\n• Acrocephalus scirpaceus is a species of bird in the order Passeriformes.\n• Acrocephalus scirpaceus eggs had an average length of 1.80 cm.\n• Alcedo atthis is a species of bird in the order Coraciiformes.\n• Alcedo atthis eggs had an average length of 2.19 cm."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "C sets the two scientists side by side and uses \"however\" to contrast their work: algae in the Canary Islands versus the hills of Northeast Wales. Choices A and D emphasize what the two have in common, and B doesn't mention either scientist.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Understanding the history of science is critical for understanding how knowledge evolves.\n• Anna Vickers was a French algologist born in 1852.\n• She is known for her research on algae in the Canary Islands.\n• Margaret Crosfield was a British geologist born in 1859.\n• She is known for her research on the hills of Northeast Wales."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the app's main purpose was location sharing and image sharing was a \"secondary feature\" that later became the centerpiece. So image sharing was originally subordinate to (less important than) the main purpose. \"Intrinsic to\" would make it an essential part of that purpose, which conflicts with calling it secondary."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains that many companies \"could not operate\" if they had to find investors themselves, so the time and expense would be too great to bear. \"Prohibitive\" means so costly that it prevents action. \"Beneficial\" is the opposite of what the text describes, and \"misconstrued\" doesn't fit."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The dash explains that a coffee-shop painting of three women drinking coffee \"may not sound particularly ambitious,\" so a casual description makes the work seem modest. \"Unassuming\" means modest or not showy. \"Pretentious\" is the opposite, and \"shrewd\" and \"incongruous\" don't match the idea of seeming unambitious."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Robots are made humanlike so people find them easier to interact with, so features like walking on two legs help strengthen people's comfort. \"Buttress\" means to support or reinforce. \"Mitigate\" and \"repudiate\" would mean reducing or rejecting comfort, which contradicts the design goal stated in the first sentence."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens with researchers' general interest in how shipwrecks affect sea life, then describes Hamdan's study of wooden wrecks, and ends with a finding about peak microbial diversity about 125 meters away. Choice B wrongly adds a later reaction to the study, and C invents details about the wood used to build the Cygne."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Bartley claims that misfortune always lands on him, and the simile \"like a flock of crows on seed potatoes\" gives a vivid picture of trouble descending on him. It emphasizes his own claim rather than countering it (C). It's a figure of speech, not a scene he actually saw at the fair (D).",
+    "fix": {
+      "passage": "The following text is from Lady Gregory's 1904 play Spreading the News. Mrs. Tarpey, Bartley, and Mrs. Fallon have been buying and selling goods at the local fair.\n\nMRS. TARPEY: Good morrow, Bartley Fallon; good morrow, Mrs. Fallon. Well, Bartley, you'll find no cause for complaining to-day; they are all saying it was a good fair.\n\nBARTLEY: (Raising his voice.) It was not a good fair, Mrs. Tarpey. It was a scattered sort of a fair. If we didn't expect more, we got less. That's the way with me always; whatever I have to sell goes down and whatever I have to buy goes up. If there's ever any misfortune coming to this world, it's on myself it pitches, <u>like a flock of crows on seed potatoes</u>."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first defines community science (an approach to research), then lists its benefits such as helping conservation and gathering more data, and finally names Merrill's butterfly study as one that used it. Choice A fails because the text never presents the study's results, and B wrongly mentions public opinion."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says Zhang and colleagues did not separate root systems, so their study failed to exclude other pathways. Text 2 argues that even Fernandez's barriers couldn't rule out other pathways, so its author would certainly agree that Zhang's study, which had no barrier at all, didn't either. The authors would disagree on C, since Text 1 treats Fernandez's barriers as sufficient and Text 2 doesn't."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The map showed a field \"with no clear pattern or direction,\" while the researchers had expected the uniform fields seen in other galactic bones. So the surprise was that the field wasn't uniform. Choice B states the opposite, and the text says nothing about field strength (D) or earlier maps (A)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator says brighter colors and lighting might have \"marred\" the \"thorough clerical aspect\" of the rooms, and that the dark carpets and heavy curtains were chosen after \"ample consideration.\" So the heavy furnishings were deliberately chosen to keep the rooms suitably proper for a clergyman. Nothing shows the rooms were meant to feel comfortable (A), and \"costly\" alone doesn't make the narrator call them too extravagant (C).",
+    "fix": {
+      "passage": "The following text is from Anthony Trollope’s 1855 novel The Warden. The narrator is describing a rectory, the residence of a clergyperson.\n\nThere was an air of heaviness about the rooms which might have been avoided without any sacrifice of propriety; colours might have been better chosen and lights more perfectly diffused; but perhaps in doing so the thorough clerical aspect of the whole might have been somewhat marred; at any rate, it was not without ample consideration that those thick, dark, costly carpets were put down; those embossed, but sombre [wallpapers] hung up; those heavy curtains draped so as to half exclude the light of the sun."
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Hawthorne says most historical figures are \"mere names\" and compares what historians give us to a map: accurate and useful but \"cold and naked,\" without the life of a painting. The main idea is that history records facts about people rather than showing who they really were. Choice D just restates the comparison literally and misses the point about historical figures.",
+    "fix": {
+      "passage": "The following text is from Nathaniel Hawthorne's 1830 short story Sir William Phips.\n\nFew of the personages of past times (except such as have gained renown in fireside legends as well as in written history) are anything but mere names to their successors. They seldom stand up in our Imaginations like men. The knowledge, communicated by the historian and biographer, is analogous to that which we acquire of a country by the map—minute, perhaps, and accurate, and available for all necessary purposes, but cold and naked, and wholly destitute of the mimic charm produced by landscape painting."
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Turtle Mountain center uses a \"similar strategy\" to the Hoċokata Ti, which presents Dakota history to the tribe's own citizens, and both centers contrast with museums aimed mainly at non-Indigenous audiences. So its exhibits are most likely designed for an audience of tribal citizens. Choice A has no support, since the text contrasts these centers with Euro-centric approaches rather than blending the two."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis says smaller birds should be more sensitive to other species' alarm calls. M. collaris (about 10 g) reacting to T. caesius calls while the larger S. grossus (about 45 g) didn't fits that pattern exactly. Choice A shows the reverse (only larger birds reacting), and B shows M. collaris reacting to random noise too, so the reaction can't be tied to the alarm call."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The underlined claim is that Primeval and Other Times, like classic magical realism, places a realistic mode side by side with Polish folklore. D says exactly that: the novel's realistic plot is repeatedly interrupted by imagery and situations taken from Polish folklore. B mentions realistic and antirealistic modes, but it treats the folklore as a separate point (\"nevertheless\") rather than as what is set against the realism, and A never mentions realism at all.",
+    "fix": {
+      "passage": "Scholars cite Mr. President, the 1946 novel by Guatemalan author Miguel Ángel Asturias, as a foundational text of magical realism, the Latin American style of fiction in which antirealistic plot devices—often borrowed from the spiritual and narrative traditions of Indigenous and colonial societies in the Americas—are deployed in an otherwise realistic mode of representation typical of the modern novel. This style has exerted a decisive influence on authors around the world, including Olga Tokarczuk, <u>whose 1996 novel Primeval and Other Times resembles classic magical realist novels in its juxtaposition of literary realism with folklore namely, that of Poland.</u>"
+    },
+    "note": "Printed answer is B; D is the only quote that ties the realistic plot directly to Polish folklore (the claimed juxtaposition). Please double-check."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Swords first appeared in Britain sometime in the Middle Bronze Age (about the 14th to 10th centuries BCE). The Hollingbourne hoard dates from the 10th century BCE, within that period, but the Arreton Down hoard dates from the 17th century BCE, before swords existed. That explains why only Hollingbourne would show sword production. Choice B focuses on when the hoards were dug up, which has nothing to do with when swords were developed."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Mongolia-Cameroon comparison led people to suspect democracy weakens control over inflation. But Desai's study found that strong democracy combined with low inequality actually restrains inflation, so the two countries' rates shouldn't be read as proof of a built-in flaw in democracies. Choice C goes too far: the study doesn't separate the effect of inequality from that of political institutions."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The founding of ... the American GI Forum in 1948, for one\" completes the first sentence by giving one pivotal event. A period then correctly separates it from the next independent clause, which begins with \"The Mendez v. Westminster court decision.\" Choices C and D join the two independent clauses with only a comma, creating a comma splice."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Okinaka doesn't make such decisions single-handedly, however\" is a complete sentence, with \"however\" set off by a comma at the end. A period then correctly starts the next independent clause, \"All historical designations...\" Choice D is a comma splice, and B and C fail to separate the two clauses properly."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"For example\" belongs with the first clause, since the Italian festival is an example of reaching audiences abroad. A semicolon then separates that clause from the independent clause \"the exhibited photographs ... captivated audiences.\" Choice C attaches \"for example\" to the wrong clause, and B and D create a comma splice or a run-on."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"A finding that, if true, would overturn current theories\" is a noun phrase that renames the whole idea before it. A comma correctly attaches this phrase to the main clause. A period or semicolon (B, D) would leave the phrase standing alone as a fragment, and no punctuation (A) runs it into \"supposed.\""
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"He did not play drums on the label's classic song 'Rapper's Delight'\" is a complete sentence, so it ends with a period (placed inside the quotation marks). \"However,\" then starts the next sentence. Choices B and C put \"however\" with the wrong clause or create a comma splice, and D has no punctuation at all."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Neon was isolated the same year it was discovered, while erbium took 91 years. \"By contrast\" signals this difference. \"Similarly\" would wrongly suggest the two elements had the same experience, and \"thus\" implies a cause-and-effect link that isn't there."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the 1920 method seems crude; the next shows it was actually close to the 2015 result. \"That said\" introduces this qualification of the earlier point. \"As such\" would suggest the accurate result follows from the method seeming crude, and \"for example\" doesn't fit because the second sentence isn't an instance of the first."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says not all elements were isolated quickly; the next sentence says the process took years, which happened only in some cases. \"Sometimes\" correctly limits the claim to those cases, as the erbium example shows. \"However\" would set up a contrast with the sentence just before it, but the two sentences actually agree."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Chaucer helped pioneer English in literature; the second gives strong supporting evidence (over 2,000 first-documented words). \"Indeed\" reinforces and builds on the previous claim. \"However\" and \"that being said\" signal a contrast that isn't there, and \"besides\" adds an unrelated point."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to specify Oberon's role in That Uncertain Feeling, and C names it: Jill Baker, in 1941. Choice A mentions the film but not her role, while B and D don't address that film at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Merle Oberon (1911-1979) was an actress born in Mumbai (then known as Bombay), India.\n• She was of Indian, Maori, and Irish heritage.\n• She was the first Indian-born actress to be nominated for an Academy Award.\n• Early in her career, she played many nameless, uncredited roles, such as her role in Strange Evidence (1933).\n• Later, she played many named, credited roles, such as Jill Baker in That Uncertain Feeling (1941)."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to compare Kipen's theory with Sarris's. A explains that schreiber theory makes the screenwriter, not the director, the primary author, setting it against Sarris's dominant auteur theory. Choice B misstates both critics' views (shared authorship was Kael's idea), and C and D focus on Kael instead of Kipen.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Auteur theory is a view of filmmaking that positions the director as the primary author of a film.\n• This now dominant theory was coined by film critic Andrew Sarris.\n• In a 1963 rebuttal, film critic Pauline Kael argued that film authorship should be shared among screenwriters, directors, and others involved in the filmmaking process.\n• In a 2006 book, film critic David Kipen proposed “schreiber theory.”\n• Schreiber theory repositions the screenwriter as the primary author of a film."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "3"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add x to both sides: 13x + x = 42, so 14x = 42. Dividing by 14 gives x = 3. Check: 13(3) = 39 and 42 − 3 = 39."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every recorded height is at least the minimum, 42 feet, and at most the maximum, 57 feet, so 42 ≤ t ≤ 57. Choices A and B each describe only one extreme value and leave out all the heights in between, and C is impossible since no tree is taller than 57 feet."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "By the end of the 6th week Javier has made 6 deposits of $45, which is 6 × 45 = $270. Adding the starting $700 gives 700 + 270 = $970. Choice B adds only one deposit (700 + 45)."
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "27"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Substituting gives y = 0^2 + 27 = 27, so the intercept is (0, 27) and y = 27."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find x = 2 on the horizontal axis and go up to the curve; it reaches a height of about 4.3 on the y-axis. Since y is in thousands, that's about 4,300 people. Choice D (3,000) is the population at x = 0, and A (7,400) is about the value at x = 5."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 7: f(7) = 5(7) + b = 35 + b. Setting this equal to 35 gives b = 0. Any other choice would make f(7) larger than 35, e.g. b = 7 gives 42."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "h(−3) = 5|−3| = 5(3) = 15, because the absolute value of −3 is 3. Choice A, −15, forgets that absolute value makes the input positive.",
+    "fix": {
+      "prompt": "The function h is defined by h(x) = 5|x|. What is the value of h(−3)?"
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The data values are in the \"Value\" column: 13, 20, 27, and 34. The smallest of these is 13, so the minimum is 13. Choices A and B are frequencies (how often a value occurs), not data values.",
+    "fix": {
+      "prompt": "The table shows the frequency of values in a data set. What is the minimum value of the data set?",
+      "table": {
+        "headers": [
+          "Value",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "13",
+            "8"
+          ],
+          [
+            "20",
+            "1"
+          ],
+          [
+            "27",
+            "8"
+          ],
+          [
+            "34",
+            "6"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "3610"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the masses: 3910 + 3910 + 3130 + 3950 + 3150 = 18,050. Divide by the number of lemurs: 18,050/5 = 3,610 grams.",
+    "fix": {
+      "prompt": "The list gives the mass, in grams, of 5 ruffed lemurs.\n3910; 3910; 3130; 3950; 3150\nWhat is the mean mass, in grams, of these 5 ruffed lemurs?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: 5(x − 3) = (x − 3)^2. Moving everything to one side gives (x − 3)(x − 3 − 5) = 0, so x = 3 or x = 8. For x = 8, y = 5(8 − 3) = 25, giving (8, 25). Choice A has the wrong sign: (x − 3)^2 can never be negative, so y can't be −5."
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 46: y = 0.67(46) + 2.6 = 30.82 + 2.6 = 33.42, which is closest to 33. Choice B just repeats roughly the number of worker ants instead of using the equation."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Growing by 2.8% each year means multiplying by 1.028 every year, so the amount is 150(1.028)^t. Repeated multiplication by a factor greater than 1 is increasing exponential growth. A linear model would add the same dollar amount each year, but here the yearly increase gets larger as the balance grows."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "26"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: the x-terms cancel (9x − 9x = 0), leaving 5y − 3y = 19 + 7, so 2y = 26. There's no need to find x or y separately."
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line k has slope 6. A perpendicular line has the negative reciprocal slope, −1/6. Choice D is the slope of line k itself (a parallel line), and 1/9 in C is line k's y-intercept.",
+    "fix": {
+      "prompt": "Line k is defined by y = 6x + 1/9. Line j is perpendicular to line k in the xy-plane. What is the slope of line j?",
+      "choices": {
+        "B": "−1/6",
+        "C": "1/9"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "19"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The number 7 less than x is x − 7, so x(x − 7) = 228, or x^2 − 7x − 228 = 0. This factors as (x − 19)(x + 12) = 0, so x = 19 or x = −12. Since x is positive, x = 19."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "18"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let p be the price of one shirt. After the coupon, 9p − 54 = 108, so 9p = 162 and p = 18. Equivalently, the original total was 108 + 54 = $162, split over 9 shirts."
+  },
+  {
+    "key": "m1-17",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide by 7: |x − 7| = 6. Then x − 7 = 6 or x − 7 = −6, so x = 13 or x = 1. The sum is 13 + 1 = 14. Choice B (0) comes from adding 6 and −6 instead of the actual solutions.",
+    "fix": {
+      "prompt": "7|x − 7| = 42\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "158"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Points U, V, R lie on a line, so angle UVS = 180° − 34° = 146°. Since T is on segment US, triangle SUV has angles 23° at S and 146° at V, so angle U = 180° − 23° − 146° = 11°. Triangle RTU is isosceles with RT = TU, so angle R = angle U = 11°. Then x = 180° − 11° − 11° = 158°.",
+    "fix": {
+      "prompt": "In the figure, RT = TU, the measure of angle VST is 23°, and the measure of angle RVS is 34°. What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cube's volume is 82^3 = 551,368 cubic inches. The sphere's volume is (4/3)π(41)^3 = (4/3)π(68,921) ≈ 288,696 cubic inches. Subtracting gives 551,368 − 288,696 ≈ 262,672. Choice B is roughly the sphere's own volume, not the leftover space."
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At x = 0, a^0 = 1, so h(0) = 1 + b = 8 and b = 7. At x = 2, a^2 + 7 = 32, so a^2 = 25 and a = 5 (a is positive). Then ab = 5 · 7 = 35. Choice A (32) uses b = 8, forgetting that a^0 = 1 is added to b."
+  },
+  {
+    "key": "m1-21",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "f grows by a factor of 1.84 (that is, by p%) each time x increases by 1. For g to grow by that same factor when x increases by 4, its base must satisfy b^4 = 1.84, so b = 1.84^(1/4) and g(x) = k(1.84^(1/4))^x. Choices C and D just shift f sideways, so they still grow by p% for every increase of 1, and B is a constant that doesn't grow at all.",
+    "fix": {
+      "choices": {
+        "A": "g(x) = k(1.84^(1/4))^x",
+        "B": "g(x) = k(1.84)^4",
+        "C": "g(x) = k(1.84)^(x−4)",
+        "D": "g(x) = k(1.84)^(x+4)"
+      }
+    },
+    "note": "Choice A is printed as k(1.84^(1/4)) with the exponent x missing; restored as k(1.84^(1/4))^x."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "f(a) = sqrt(5a + 6) = −5a. A square root can't be negative, so −5a ≥ 0, which means a ≤ 0. Squaring gives 5a + 6 = 25a^2, or 25a^2 − 5a − 6 = 0, which factors as (5a − 3)(5a + 2) = 0, so a = 3/5 or a = −2/5. Only a = −2/5 satisfies a ≤ 0; the value 3/5 (choice A) is an extraneous solution created by squaring.",
+    "fix": {
+      "prompt": "f(x) = sqrt(5x + 6)\nThe function f is defined by the given equation. If f(a) = −5a, where a is a constant, what is the value of a?",
+      "choices": {
+        "A": "3/5",
+        "B": "2/5",
+        "C": "−2/5",
+        "D": "−3/5"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "4x is twice 2x, so multiply both sides of 2x = 10 by 2 to get 4x = 20. Choice B (10) is the value of 2x, not 4x."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at (0, 12), so the y-intercept is 12. It also passes through (10, 2), so the slope is (2 − 12)/(10 − 0) = −1, giving y = −x + 12. Choice D has slope −2, which would drop 2 units for every 1 unit to the right, too steep for this line."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At x = 0, h = 1.25, so the starting value is 1.25. From x = 0 to x = 2 the height is multiplied by 1.80/1.25 = 1.44, so the yearly factor is sqrt(1.44) = 1.20. Check: 1.25(1.20)^4 ≈ 2.59. Choice C keeps the right starting value but uses 0.20, which would make the heights shrink.",
+    "fix": {
+      "prompt": "The table shows the exponential relationship between the number of years, since Hana started training in pole vault, and the estimated height h(x), in meters, of her best pole vault for that year. Which of the following functions best represents this relationship, where x ≤ 4?",
+      "table": {
+        "headers": [
+          "x",
+          "h(x)"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.25"
+          ],
+          [
+            "2",
+            "1.80"
+          ],
+          [
+            "4",
+            "2.59"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An x-intercept (a, 0) means the graph has y = 0 when x = a, so f(a) = 0. Since (10, 0) is an x-intercept, f(10) = 0. Choices A and B confuse x-intercept values with the y-intercept f(0), which isn't given."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x^2 = 2601 means x = 51 or x = −51, since 51^2 = 2601. A positive number has two different square roots, so there are exactly two real solutions. Exactly one solution would happen only if the right side were 0."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x is the number of years after 1951, so P(5) is the model's population 5 years after 1951, in 1956. P(5) ≈ 563 therefore means the town had about 563 people in 1956. Choices A and C misread the input 5 as an amount of population change.",
+    "fix": {
+      "prompt": "The function P(x) = 533(1.011)^x models the population of a certain town each year from 1951 through 1966, where x is the number of years after 1951. Which of the following is the best interpretation of \"P(5) is approximately equal to 563\" in this context?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Given that the person is at least 18, only the last three groups count: 24% + 28% + 21% = 73%. Of those, 21% are over 65, so the probability is 0.21/0.73 ≈ 0.29. Choice A (0.21) ignores the condition and uses the whole city.",
+    "fix": {
+      "prompt": "The table shows the distribution of people in a certain city by age group. If a person in this city is selected at random, which of the following is closest to the probability of selecting a person who is greater than 65 years old, given that the person is at least 18 years old?",
+      "table": {
+        "headers": [
+          "Age group",
+          "Proportion"
+        ],
+        "rows": [
+          [
+            "Less than 18 years old",
+            "27%"
+          ],
+          [
+            "18–40 years old",
+            "24%"
+          ],
+          [
+            "41–65 years old",
+            "28%"
+          ],
+          [
+            "Greater than 65 years old",
+            "21%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The length is always 10/4 = 2.5 times the width. If the width grows by 7, the length must grow by 2.5 × 7 = 17.5 units to keep the ratio. Choice B, adding the same 7 units, would change the ratio."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "-384"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The x-term comes from the outer and inner products: 9x · 4 = 36x and −28 · 15x = −420x. Together, 36x − 420x = −384x, so b = −384."
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "When every length is multiplied by 6, area is multiplied by 6^2 = 36. So the area of EFGH is 96 × 36 = 3,456 square units. Choice C (576) multiplies the area by 6 only, as if area scaled like length."
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Data set B's first five values are A's first five values plus 1. If h = 28, B is exactly A shifted up by 1, so the two standard deviations are equal, not A greater. With h = 29 the largest value of B is even farther from the rest, so B's spread is larger than A's. With h = 23 the top value is pulled in toward the others, so B's spread is smaller (about 5.1 vs. 6.5). Only I works.",
+    "fix": {
+      "prompt": "Data set A: 8, 11, 12, 15, 21, 27\nData set B: 9, 12, 13, 16, 22, h\nData sets A and B each consist of 6 values as shown, where h is a constant. If the standard deviation of data set A is greater than the standard deviation of data set B, which of the following could be the value of h?\nI. 23\nII. 28\nIII. 29"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If the M-type stars each have mass m and the K-type stars each have mass k, the graph is mx + ky = 132,778. The line meets the x-axis at x = 160, meaning 160 M-type stars and no K-type stars make up the whole mass, so m = 132,778/160 ≈ 830, closest to 828. Choice B (973) comes from dividing by the y-intercept (about 136), which gives the mass of a K-type star instead."
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "-266"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Translating up 4 units adds 4 to every output, so g(x) = f(x) + 4. f(0) = (0 − 9)(0 − 6)(0 − 5) = (−9)(−6)(−5) = −270, so g(0) = −270 + 4 = −266."
+  },
+  {
+    "key": "m2-14",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In P_2 = 10d + 311, setting d = 0 gives P_2 = 311, so 311 is the pressure before any of the d additional meters are descended, the moment the diver begins the extra descent. The rate of increase per meter is the coefficient 10, not 311, which rules out B and C.",
+    "fix": {
+      "prompt": "At a depth of h meters below the surface, the estimated total pressure P, in kilopascals (kPa), a diver experienced is given by P_1 = 10h + 101, which is a combination of estimated water pressure and estimated atmospheric pressure. After maintaining a certain depth, the diver descended d additional meters. The estimated total pressure P_2, in kPa, the diver experienced after descending these d additional meters is given by P_2 = 10d + 311. Which of the following is the best interpretation of 311 in this context?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each diameter splits the circle into two halves of 84π/2 = 42π. Arcs BC and DA are opposite arcs between the same two diameters, so they're equal, and AB + BC = 42π. Since DA = BC = 2·AB, we get AB + 2·AB = 42π, so AB = 14π and BC = 28π. Choice B (14π) is arc AB, not BC."
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "242"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With the right angle at Y, YZ is the leg adjacent to angle Z and XY is the opposite leg, so XY = 22 tan 39°. The area is (1/2)(YZ)(XY) = (1/2)(22)(22 tan 39°) = 242 tan 39°, so k = 242.",
+    "fix": {
+      "prompt": "In triangle XYZ, angle Y is a right angle, the measure of angle Z is 39°, and the length of YZ is 22 units. If the area, in square units, of triangle XYZ can be represented by the expression k tan 39°, where k is a constant, what is the value of k?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angles R and S add to 90°, so they are complementary, and the cosine of an angle equals the sine of its complement. So cos(S) = sin(R) = 3sqrt(17)/13. Choice D is greater than 1, which is impossible for a cosine.",
+    "fix": {
+      "prompt": "In right triangle RST, the sum of the measures of angle R and angle S is 90 degrees. The value of sin(R) is 3sqrt(17)/13. What is the value of cos(S)?",
+      "choices": {
+        "A": "4sqrt(17)/51",
+        "B": "3sqrt(17)/13",
+        "C": "13sqrt(17)/51",
+        "D": "3sqrt(17)/4"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "31.8"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Muscle is 65.9% of the total, so the total is 133/0.659 ≈ 201.82 kg. The remaining 34.1% is about 201.82 × 0.341 ≈ 68.82 kg, and 46.2% of that is bone: 68.82 × 0.462 ≈ 31.8 kg. A common slip is taking 46.2% of the whole buffalo (about 93.2 kg) instead of 46.2% of what's left after the muscle."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If x + 2b is a factor, the expression equals 0 at x = −2b. For 3x^2 + kx + 18b this gives 12b^2 − 2kb + 18b = 0, so 12b = 2k − 18 and b = (k − 9)/6. Only k = 39 gives a positive integer: b = 30/6 = 5. Check: 3x^2 + 39x + 90 = 3(x + 10)(x + 3), which has the factor x + 10 = x + 2(5). The other choices give b = 0, 2.5, or 3.5."
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide the given equation by 31: x − n = y + n, so x − y = 2n. A system has no solution when the lines are parallel but different. Choice D, 3x − 3y = 3n, simplifies to x − y = n: same slope, different constant (n ≠ 2n since n > 0). Choice A simplifies to x − y = 2n, the same line, giving infinitely many solutions."
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first day costs 64n and each of the other x − 1 days costs 32n, so C(x) = 64n + 32n(x − 1) = 32nx + 32n. Choice B charges 64n on top of 32n for every day, so its cost for 1 day would be 96n instead of 64n."
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "We already know AB = DE and angle A = angle D. Statement II adds AC = DF, giving two sides and the included angle in each triangle, so the triangles are congruent by SAS. Statement III gives BC = EF, which is side-side-angle with the angle not between the sides, and that can fit two different triangles. Statement I only describes triangle ABC and says nothing about triangle DEF.",
+    "fix": {
+      "prompt": "In triangle ABC and triangle DEF, sides AB and DE each have a side length of 6 inches and angles A and D each have an angle measure of 40°. Which of the following additional pieces of information is(are) sufficient to prove whether triangle ABC is congruent to triangle DEF?\nI. The measures of angles B and C are equal.\nII. The lengths of sides AC and DF are equal.\nIII. The lengths of sides BC and EF are equal."
+    }
+  }
+]

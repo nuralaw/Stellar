@@ -148,3 +148,11 @@ export function domainsFor(section: SectionId): Domain[] {
 export function getDomain(id: string): Domain | undefined {
   return DOMAINS.find((d) => d.id === id);
 }
+
+export function getSkill(id: string): Skill | undefined {
+  for (const d of DOMAINS) {
+    const s = d.skills.find((x) => x.id === id);
+    if (s) return s;
+  }
+  return undefined;
+}

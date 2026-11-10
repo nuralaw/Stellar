@@ -1,0 +1,1112 @@
+{
+ "id": "2025-08-us-b",
+ "title": "Aug 2025 US B",
+ "year": 2025,
+ "month": 8,
+ "version": "US",
+ "form": "B",
+ "sections": [
+  "rw"
+ ],
+ "answerSource": "key",
+ "pdf": "Aug 2025 US B, Verbal only, with answers (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "The mihrab (or niche) is one of many features that are foundational to traditional mosque architecture and is therefore considered _____ aspect of mosque design. Even mosques that exhibit elements of multiple architectural styles, such as the KH Hasyim Asy'ari Grand Mosque, which incorporates elements from the Betawi and Indonesian Islamic styles, will also include several of these standard features.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "an imposing",
+    "B": "an embellished",
+    "C": "a quintessential",
+    "D": "an unprecedented"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The Apollo Moon landings (1969–1972) brought charged particle detectors and temperature probes to the Moon and produced large amounts of data, much of which was stored on technologies that are now obsolete. A data-transfer project is working to ______ these data so that the information is available to researcher Seiichi Nagihara, who is investigating temperature changes on the Moon.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "improve",
+    "B": "simplify",
+    "C": "amend",
+    "D": "salvage"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "New and interesting research conducted by Suleiman A. Al-Sweedan and Moath Alhaj is inspired by their observation that though studies of the effect of high altitude on blood chemistry are _____, the effect on blood chemistry of living in locations below sea level, such as the California towns of Brawley and Holtville, has received comparatively little notice.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "preliminary",
+    "B": "copious",
+    "C": "sporadic",
+    "D": "equivocal"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Fossil evidence indicates that the End-Triassic mass extinction—the relatively sudden die-off of about 80 percent of species (including many species of bivalves)—occurred approximately 201 million years ago. Researchers have identified the effects of a sudden release of carbon dioxide as a possible initial cause of this mass extinction. But mass extinctions, while abrupt in geological terms, unfold over thousands or millions of years: it’s likely that multiple factors drove extensive species loss.",
+   "prompt": "Which choice best states the function of the underlined portion (while abrupt in geological terms) in the text as a whole?",
+   "choices": {
+    "A": "It expands on the uncertainty mentioned earlier regarding the pace of extinction of species of bivalves relative to that of other species.",
+    "B": "It concedes that the pace of mass extinctions as described in the information that follows is perceived differently when considered from another point of view.",
+    "C": "It offers support for an earlier claim about the primary cause of a mass extinction that is then qualified by the information that follows.",
+    "D": "It emphasizes that a question about the beginning of a mass extinction raised by the researchers mentioned earlier is still unresolved."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Land art, or earth art, is characterized by its large scale and the fact that it’s often placed in remote or surprising locations. Land art is also notable for the wildly diverse ways in which it is created: Robert Smithson’s Spiral Jetty, for instance, was created by arranging rocks in a large spiral in Utah’s Great Salt Lake, whereas for Wheatfield—A Confrontation, Agnes Denes planted and harvested a field of wheat in Lower Manhattan in New York City.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "The text compares two works of art, then provides details about the lives of the artists who created them.",
+    "B": "The text conveys a definition of a kind of art, then addresses a well-established criticism of the art.",
+    "C": "The text outlines a common misconception about a kind of art, then offers an explanation for why that misconception persists.",
+    "D": "The text describes a particular genre of art, then cites examples illustrating an important characteristic of that genre."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Pollination syndromes are suites of floral traits that have independently evolved as a result of selection pressure exerted by pollinators; ornithophilous (bird-pollinated) flowers, for example, frequently exhibit red, orange, or yellow coloring. In a review of previous studies covering 417 plant species, Victor Rosas- Guerrero et al. concluded that the syndromes reliably predict angiosperms’ most effective pollinators. However, in a response paper, Jeff Ollerton et al. note that Rosas-Guerrero et al. may have inadvertently excluded studies published before the term “pollinator effectiveness” came into common use.",
+   "prompt": "What does the text most strongly suggest about the study conducted by Rosas-Guerrero et al.?",
+   "choices": {
+    "A": "The approach selected by the researchers enabled them to sort through and remove obviously incomplete or inconsistent data before conducting their analysis.",
+    "B": "Due to the difficulty of gathering representative research on angiosperms, the study may have included previous research with a focus too heterogeneous to be comparable.",
+    "C": "Because the study contained data on a limited number of plant species, its conclusion is accurate for those species but cannot be applied to species not in the study.",
+    "D": "A limitation in the methodology used by the researchers may entail that the study’s conclusion is not well supported."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Because they penetrate the visible surface of a painting, ultraviolet and other nonvisible spectra of light enable the detection of otherwise imperceptible features of the work. Beneath the surface of Claude Monet’s Wisteria (1917–20), art historians found that Monet had initially included water lilies but ultimately painted over them. Furthermore, nonvisible spectra can be used for chemical analysis to identify specific pigments and thus, in some cases, reveal forgeries: if, for example, titanium oxide— which wasn’t developed until the 20th century—is evident throughout the layers of a painting attributed to an 18th-century artist, that work can only be a forgery.",
+   "prompt": "What does the text most strongly suggest about how analyzing a painting with nonvisible light can inform a judgment about who that painting is attributed to?",
+   "choices": {
+    "A": "It can provide new information about the attributed artist’s practices.",
+    "B": "It can definitively undermine that attribution.",
+    "C": "It can confirm that attribution with a high degree of confidence.",
+    "D": "It can show how the work is similar to others attributed to the same artist."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "High-reward flowers that produce nectar with relatively high sugar concentrations are thought to be especially attractive to stripe-throated hermits and other hummingbird species. But when María A. Maglianesi and team monitored hummingbird visits to flowering plants, including Palicourea tomentosa, at Los Cusingos Bird Sanctuary and other sites in Costa Rica, they found that visit frequencies weren’t influenced by nectar traits. Rather, physical compatibility of flower corollas (collections of petals) and hummingbird bills more strongly predicted hummingbird-plant interaction patterns.",
+   "prompt": "Which statement about hummingbird preferences is most strongly supported by the text?",
+   "choices": {
+    "A": "Hummingbirds consistently prefer plant species whose flowers have physical traits that are compatible with their bills but offer relatively low nectar rewards.",
+    "B": "The floral traits that most strongly influence which plant species hummingbirds prefer may result in certain hummingbird species visiting flowers with relatively low nectar rewards over those with higher nectar rewards.",
+    "C": "Hummingbirds’ preferences are primarily driven by trait-matching between their bills and flower corollas, though nectar qualities are a secondary factor driving their preferences.",
+    "D": "Physical compatibility between flower corollas and hummingbird bills becomes an important factor that influences hummingbird preferences when hummingbirds are uncertain about which plants produce high-reward nectar."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "The following text is from Yung Wing’s 1909 memoir My Life in China and America. We landed in New York on the 12th of April, 1847, after a passage of ninety-eight days of unprecedented fair weather. The New York of 1847 was altogether a different city from the New York of 1909. It was a city of only 250,000 or 300,000 inhabitants; now it is a metropolis rivaling London in population, wealth and commerce. The whole of Manhattan Island is turned into a city of skyscrapers, churches and palatial residences.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Yung has experienced significant personal growth in the time since his arrival to New York City in 1847.",
+    "B": "New York City has become more developed and populated since Yung’s arrival in 1847.",
+    "C": "The journey to New York City was dull and isolating for Yung.",
+    "D": "New York City is more populated than London is."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Peter Pan is a 1911 novel by J.M. Barrie. In the fantasy novel, a dog named Nana is a nurse (nanny) for the children in the Darling family—Wendy, John, and Michael. The narrator describes Nana as planning for events like a human would: _____",
+   "prompt": "Which quotation from Peter Pan best illustrates the claim?",
+   "choices": {
+    "A": "“[Mrs. Darling] had found her two older children playing.”",
+    "B": "“Mrs. Darling loved to have everything just so, and Mr. Darling had a passion for being exactly like his neighbours.”",
+    "C": "“On John’s [soccer] days [Nana] never once forgot his sweater, and she usually carried an umbrella in her mouth in case of rain.”",
+    "D": "“Nana, who had been barking distressfully all the evening, was quiet now.”"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "The US Department of Agriculture’s Fruit and Tree Nuts Outlook is a document that covers a variety of subjects, from the causes of reductions in grapefruit supply to the number of avocados that are imported from abroad. A student studying agricultural economics is consulting a graph in the document that shows the prices for which several types of nuts have been sold by growers in the United States over four growing seasons from 2016 to 2020. The student wishes to determine in which season walnuts reached their lowest price. Consulting the graph, the student finds that this season was the _____",
+   "prompt": "Which choice most effectively uses data from the graph to complete the statement?",
+   "choices": {
+    "A": "2017/18 season.",
+    "B": "2018/19 season.",
+    "C": "2019/20 season.",
+    "D": "2016/17 season."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 13,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2025-08-us-b/rw1-11-1.webp",
+     "w": 450,
+     "h": 498,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Bird Species by Average Mass\nCommon name Average mass (kg) Capable of flight?\nDwarf cassowary 19.7 No\nSomali ostrich 90.0 No\nMute swan 11.9 Yes\nAndean condor 11.3 Yes\nMost bird species that are capable of flight weigh less than a kilogram (kg), which is not surprising considering the burden that extra body weight puts on a flying animal. But not all flying birds are so light, as we can see most clearly in the example of the _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "mute swan, which has an average mass of 11.9 kg.",
+    "B": "Andean condor, which has an average mass below 10 kg.",
+    "C": "Somali ostrich, which has a higher average mass than the dwarf cassowary.",
+    "D": "Somali ostrich, which has an average mass of 90.0 kg."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "The state of Washington has classified the American bullfrog as an invasive species that could harm some of the state’s native species. But researchers Alejandro Camacho and Jason McLachlan have pointed out that “invasive” and “native” are labels that describe temporary circumstances. Changes in Earth’s climate may force animals from their current ranges. Climate changes may also create good habitats in areas where a species couldn’t live previously. These observations suggest that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "Washington was previously home to some American bullfrogs but they were outcompeted by invading species.",
+    "B": "Washington may eventually need to reexamine its designation of the American bullfrog as invasive.",
+    "C": "it’s appropriate for Washington to designate certain species as invasive but the state should designate the American bullfrog as native.",
+    "D": "changes in Earth’s climate are likely to result in the American bullfrog establishing itself as a native species in locations other than Washington."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 17
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "The glossy ibis and the little blue heron are long-legged birds that live in wetlands, like the Everglades in Florida. Laura D'Acunto and colleagues wanted to know how these birds choose an area in which to live. They looked at features of the birds' habitats, such as the geographic location of the area and how deep the water is during breeding season. They found that although only glossy ibises prefer areas with deep water during breeding season, both glossy ibises and little blue herons prefer areas that have standing water for more than 60 days per year. The researchers therefore concluded that neither species is very drawn to areas where _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "there is relatively deep water during the breeding season.",
+    "B": "there are any features that attract the other species.",
+    "C": "species with breeding seasons longer than 60 days are likely to be present.",
+    "D": "there is standing water for far fewer than 60 days per year."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 18
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Topographical prominence is a measure of a mountain’s independence from other mountains. Having 9,721 feet of prominence, _____",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Pico do Ramelau, a peak located in Timor-Leste, is ranked by geographers as the world’s 98th most prominent mountain.",
+    "B": "the list of mountains geographers rank as the world’s most prominent includes Pico do Ramelau, a peak located in Timor-Leste, at number 98.",
+    "C": "geographers have ranked Pico do Ramelau, a peak in Timor-Leste, as the world’s 98th most prominent mountain.",
+    "D": "the ranking given by geographers to Pico do Ramelau, a peak located in Timor-Leste, is 98th most prominent mountain in the world."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 19
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "A significant work in the school of thought known as empiricism, John Locke’s “An Essay Concerning Human Understanding”—first published in _____ is essential reading for scholars of philosophy’s modern period, which spanned from the 1600s to around 1900.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "1689—",
+    "B": "1689,",
+    "C": "1689",
+    "D": "1689:"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 20
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Many ranching terms come from Spanish. For example, the word “lasso” (a rope) _____ from the Spanish word lazo, and “cinch” (a belt) derives from cincho. This is because the first Anglo, African, and Native American cattle ranchers in the southwestern US learned the trade from Spanish-speaking Mexican vaqueros, or cowboys.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "were deriving",
+    "B": "have derived",
+    "C": "derive",
+    "D": "derives"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 21
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "A preserved specimen of the marine protist G. conglobatus collected from the South Atlantic has been identified as the species lectotype, a term ______ that this specimen serves as the basis for all formal scientific descriptions of the species.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "is indicating",
+    "B": "has indicated",
+    "C": "indicated",
+    "D": "indicating"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 22
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "Debuting in 1982, San Francisco to Hawai’i Overnight! is just one of the ______ that have been curated by the staff of the San Francisco International Airport.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "hundreds of exhibit’s",
+    "B": "hundred’s of exhibits",
+    "C": "hundreds of exhibits",
+    "D": "hundreds of exhibits’"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "After touching down on Mars on May 25, 2008, the Phoenix lander spent 161 days exploring the geology of the red planet, including its many ______ To aid in communication, scientists gave informal names like Neverland and Dodo to some of the smaller yet notable rocks discovered.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "craters and rock's.",
+    "B": "craters and rocks.",
+    "C": "crater's and rocks.",
+    "D": "crater's and rock's."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 24
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "Leptoptilos dubius, also known as the greater _____ can be found in places like Hakaluki Haor in Bangladesh and Northern Santuk in Cambodia, but more than 80 percent of this endangered stork species is found in Assam, India. There, wildlife biologist Dr. Purnima Devi Barman is on the front lines of a conservation effort that aims to bring adjutants back from near extinction.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "adjutant;",
+    "B": "adjutant",
+    "C": "adjutant,",
+    "D": "adjutant—"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 25
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Around 6,000 years ago, humans in eastern Europe began the process of domesticating the wild horse (Equus ferus). _____ wild horses were domesticated through selective breeding to be used for transportation and for plowing fields, among other things. The present-day result of this millennia-long process is Equus caballus, a distinct species commonly known as the domestic horse.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "To further illustrate this timeline,",
+    "B": "Over the course of many generations,",
+    "C": "Similar to the process that began thousands of years ago,",
+    "D": "As a result of being domesticated,"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 26
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Broadcasting from the Leech Lake Band of Ojibwe’s lands in northern Minnesota, the Native-run radio station KOJB 90.1 FM does much to serve the local Ojibwe-speaking community. _____ it broadcasts local news and music as well as programming in the Ojibwe language.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Instead,",
+    "B": "Nevertheless,",
+    "C": "Specifically,",
+    "D": "As a result,"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 27
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Biologists have yet to agree on a single concept of what defines a species. Thus, numerous competing species concepts are used within the field, a dilemma known as the species problem. The cohesion species concept, described in 1985 by Templeton, defines species in accordance with phenotypic cohesion. The genetic species concept, _____ delineated by Baker and Bradley in 2006, organizes species according to genetic similarity.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "for instance,",
+    "B": "therefore,",
+    "C": "in fact,",
+    "D": "on the other hand,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 28
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "From mountains to monuments, deserts to rainforests, and isolated islands to teeming cities, the sites on UNESCO’s World Heritage List are chosen because they hold cultural or natural value that the organization wishes to preserve for future generations. _____ in 2010, UNESCO recognized the importance of Kiribati’s Phoenix Islands Protected Area, home to one of the world’s largest oceanic coral ecosystems, by adding it to the list as a natural heritage site.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "By contrast,",
+    "B": "Next,",
+    "C": "In other words,",
+    "D": "Accordingly,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 29
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "At the Museum of Natural History in Washington, DC, a single specimen of the planktonic marine organism B. pumilio is preserved as the reference organism for the species. This specimen is a holotype, meaning it was the basis of the first formal scientific description of B. pumilio. _____ the reference organism for the planktonic G. inflata, preserved at the Natural History Museum in London, is a neotype, meaning it acts as a reference organism but is not the exact specimen originally described.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "By contrast,",
+    "B": "Moreover,",
+    "C": "Admittedly,",
+    "D": "For instance,"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 30
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Endangered Species Act (ESA) was enacted in 1973 to recover species and prevent extinction. A species is listed under the ESA when it’s determined that the species needs protection and delisted when the population has recovered. Only 54 of the over 1,000 listed species have been delisted from the ESA, raising concerns about the effectiveness of the ESA. Erich Eberhard, David Wilcove, and Andrew Dobson conducted an analysis of population trends of species listed under the ESA. They found that most species had to wait multiple years before being listed and by then their populations were already so low that recovery was much more difficult.",
+   "prompt": "The student wants to make a generalization about the kind of study conducted by Eberhard, Wilcove, and Dobson. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Scientists have analyzed population trends to find out the impact of legal protections in the realm of conservation.",
+    "B": "Species listed under the ESA have low population levels when they are listed.",
+    "C": "Only 54 once-listed species have been delisted; many more species have not recovered and are still listed.",
+    "D": "Based on an analysis of population trends, Eberhard, Wilcove, and Dobson found that species listed under the ESA have very small populations when listed."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 31
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "The metal displayed in the structure of House in Kam iaraya by Kazuto Nishi Architects and the metal hardware in UE House by GENETO are representative aspects of a juxtaposition common in contemporary Japanese architecture: the _____ of sleek, contemporary elements and traditional organic materials in a single design is a trend with both aesthetic and highly practical purposes.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "designation",
+    "B": "analysis",
+    "C": "diffusion",
+    "D": "synthesis"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 34
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "Studying advertisements for defunct amusement parks, menus from nineteenth-century restaurants, and handbills promoting long-forgotten political candidates may seem like a frivolous pursuit, but ephemeral objects like these are useful as _____ cultural change, revealing shifts in norms, values, and concerns that traditional objects of historical inquiry may not.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "alternatives to",
+    "B": "conjectures about",
+    "C": "indices of",
+    "D": "pretexts for"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 35
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Because blue holes (such as the Lost Blue Hole in the Bahamas) and cenotes (such as Cenote Dos Ojos in Mexico) differ in their size, water composition, and type of location, they are not usually viewed as being _____, but both are water-filled sinkholes typically produced by the natural dissolution and collapse of rocks.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "distinct",
+    "B": "explicable",
+    "C": "analogous",
+    "D": "incongruous"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 36
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Disproportionate emphasis on instances of invention, such as the emergence of potter’s wheels circa 4500 BCE, contributes to a pro-innovation bias that ______ studies of the history of technology. More attention to technological discontinuance (e.g., the loss of various hunting and fishing implements in Tasmania over thousands of years) is thus a necessary corrective to the dominant view that innovations are steadily and inevitably adopted.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "supersedes",
+    "B": "pervades",
+    "C": "abridges",
+    "D": "foments"
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 37
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The Museum of Modern Art (MOMA) in New York City has an exhibition of video games that includes Vib- Ribbon from 1999, which museum visitors can play on site, and SimCity 2000 from 1994, which visitors can see only in a video presentation. MOMA claims the video presentations are only for games that would be impractical to display in a playable form, but video games are an inherently interactive medium, a feature that is grossly absent in a video-only presentation.",
+   "prompt": "Which choice best describes the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It provides MOMA’s rationale for a decision that the author critiques.",
+    "B": "It introduces a fact about video games that the author thinks MOMA did not appropriately consider when choosing which video games to exhibit.",
+    "C": "It details a criticism of MOMA that the author defends against in the remainder of the sentence.",
+    "D": "It presents a misconception about video games that the author believes is evident in MOMA’s choice about which video games to exhibit."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 38
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The Silence of Dean Maitland is one of twenty-five works from the nineteenth and early twentieth centuries reissued in 2020 in a project professing to give overdue credit to authors by replacing nonfemale pseudonyms with the authors’ given female names (crediting Mary Tuttiett rather than Maxwell Gray, in this case). Olivia Rutigliano and other scholars cite a lack of nuance and erasure of intention in the implication that pseudonymous identities were invariably necessary due to social roles, appropriately contending that what may have been a constraint for some was an elective exercise in self-fashioning for others.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "A literary project is briefly described, the stance taken by Rutigliano and others in response to that project is introduced, and then support for that stance is expressed.",
+    "B": "Details about a reissue of The Silence of Dean Maitland are given, a question about the authorship of that work is raised, and then the circumstances of the work’s original publication are considered.",
+    "C": "The Silence of Dean Maitland is cited as a prominent work from a literary movement, a study of the movement’s defining features is mentioned, and then one of the study’s insights is presented.",
+    "D": "An assertion about a literary project is reported, the team of scholars that advanced the assertion is identified, and then the reasoning behind the assertion is summarized."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 39
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Several sociologists have observed that the word “culture,” though commonly used in academic literature, is an ultimately hazy concept—for example, Victoria Bonnell and Lynn Hunt have noted that “many critics have pointed to the vagueness of the concept of culture.” Does the concept of culture encompass knowledge, or laws, or both these things and others? For casual usage, such haziness is permissible—we know culture when we see it—but for researchers, a standardization of the term is called for if sociology is to truly progress.",
+   "prompt": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+   "choices": {
+    "A": "It lists two essential components of what is referred to by Bonnell and Hunt as “culture.”",
+    "B": "It presents a point regarding the definition of “culture” on which nonspecialists and specialists tend to disagree.",
+    "C": "It describes the questions first raised by Bonnell and Hunt’s inquiry into the meaning of the word “culture.”",
+    "D": "It illustrates a difficulty associated with the meaning of “culture” that the author believes holds back an academic field."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 40
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Text 1\nThe land that became Grande Terre island split from remnants of the former supercontinent Gondwana approximately 80 million years ago, carrying Gondwanan biota with it, and experienced periodic submersion until 37 million years ago. Some researchers posit that the island’s current biota includes members of Gondwanan clades (i.e., clades predating the split) that persisted by seeking temporary refuge on nearby islands during submergence events.",
+   "prompt": "Text 2\nIn a recent study, Prashant Sharma and Gonzalo Giribet found that the crown age—the age of the most recent common ancestor of all species in the clade (i.e., the clade’s founder)—is 48.9 million years for Grande Terre’s clade of harvest spiders. Most of the island’s extant biota belong to clades with younger crown ages, however: Jérôme Murienne et al. found that the crown age of Grande Terre’s clade of cockroaches is 2.7 million years, for example. Taken together, Text 1 and Text 2 best support which statement about the clades of harvest spiders and cockroaches on Grande Terre?",
+   "choices": {
+    "A": "The clade of harvest spiders must have originated on Gondwana, but the clade of cockroaches may or may not have.",
+    "B": "Both the clade of harvest spiders and the clade of cockroaches originated elsewhere and colonized Grande Terre.",
+    "C": "Neither the clade of harvest spiders nor the clade of cockroaches originated on Gondwana.",
+    "D": "The clade of harvest spiders originated before Grande Terre split from Gondwana, whereas the clade of cockroaches originated after the split but before the periodic submergence events began."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 41
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Postcranial skeletal pneumaticity (PSP), a system of skeletal air sacs, occurred in three Cretaceous clades, including pterosaurs (e.g., Pteranodon); past studies have hypothesized that the trait was homologous (originating from a shared ancestor). With this in mind, Tito Aureliano et al. examined fossils of common ancestors of the clades using microtomography, finding openings in bones—a possible indicator of PSP—but of sizes inconsistent with PSP. The team reported other findings contradicting the homology hypothesis as well, concluding that PSP likely evolved independently in each clade.",
+   "prompt": "Which choice best states the main idea of the text?",
+   "choices": {
+    "A": "Aureliano et al. found openings in bones in fossils of common ancestors of pterosaurs and two other Cretaceous clades, but the team determined that the sizes of the openings were too varied to be indicative of PSP, thereby weakening the homology hypothesis.",
+    "B": "Although past studies by paleontologists concluded that PSP in pterosaurs and two other Cretaceous clades was likely attributable to a common ancestor, those paleontologists lacked access to technology that led Aureliano et al. to reach a different conclusion.",
+    "C": "Previous studies hypothesized that PSP originated in a shared ancestor of pterosaurs and two other clades, but the findings of Aureliano et al. suggest that PSP evolved independently in pterosaurs and was subsequently inherited by the other two clades.",
+    "D": "Aureliano et al. found that pterosaurs and two other Cretaceous clades with PSP likely lacked a common ancestor with the trait, leading the team to posit a different evolutionary origin for PSP than that posited in earlier studies."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 43
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "Political scientists have asserted that by providing succinct and clear information about candidates and issues, campaign advertisements should reduce the differences in political knowledge observed between groups of voters. Cognitive scientists have noted, however, that existing domain knowledge facilitates the acquisition of new information in that domain. Valentino et al. shed light on this issue by presenting control ads or ads for George W. Bush or Al Gore (candidates in the 2000 US presidential election) to participants with low or high existing political knowledge, then quizzing participants on their understanding of both candidates’ positions. Taken together, information in the text and graph best support which conclusion about the campaign ads used in the study by Valentino et al.?",
+   "choices": {
+    "A": "They appear to have benefited high-knowledge participants more than they benefited low- knowledge participants, which lends more support to the view advanced by political scientists than to the view advanced by cognitive scientists.",
+    "B": "They appear to have had an effect contrary to the effect that political scientists expect campaign ads to have, possibly due to the phenomenon that cognitive scientists have identified.",
+    "C": "They appear to have worsened the problem that political scientists claim that campaign ads should alleviate, possibly because the phenomenon identified by cognitive scientists appears not to have occurred.",
+    "D": "They appear to have had the result that political scientists predict that campaign ads will have, but only for high-knowledge participants, which is what cognitive scientists would expect."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 45,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2025-08-us-b/rw2-10-1.webp",
+     "w": 1033,
+     "h": 1293,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Diameter of outer coat fibers (in Diameter of inner coat fibers (in\nType of sheep\nmicrons) microns)\nSpanish\n19–24 17–21\nMerino\nNavajo-Churro 35 or higher 10–35\nMouflon 150 15\nDomestic sheep’s wild ancestor, the mouflon, has a coarse outer coat and an inner coat of wool fiber that is finer in diameter and therefore much softer. In some domestic breeds, such as the Spanish Merino, the outer fiber is only marginally coarser than the inner, and the wool is soft overall. Thus, Merino wool is ideal for delicate garments worn against the skin. Meanwhile, the Navajo-Churro has been selected to retain the marked distinction between outer and inner fiber that the Merino has lost. Being coarser than Merino wool overall, Navajo-Churro wool yields a more durable yarn, which Diné (Navajo) weavers use in their celebrated rugs. Yet a comparison of the fiber characteristics of all three sheep reveals that _____",
+   "prompt": "Which choice most effectively uses data from the table to complete the text?",
+   "choices": {
+    "A": "the Navajo-Churro more closely resembles its ancestor, the mouflon, in the uniform softness of its inner fiber, while the Merino more closely resembles the mouflon in the variable diameter of its outer fiber.",
+    "B": "domestication resulted in a counterintuitive increase in the inner fiber’s minimum diameter, making the inner fiber of the Merino and the Navajo-Churro less suitable for delicate garments than the mouflon’s inner fiber is.",
+    "C": "the domestication of the mouflon and the subsequent selection process that produced the Merino and the Navajo-Churro resulted in greater softness of outer and inner fiber alike.",
+    "D": "the selection process that enabled the Navajo-Churro to retain its somewhat coarse outer fiber also resulted in inner fiber that, at its softest, is softer than either the mouflon’s or the Merino’s inner fiber."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 47
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "“The Monster” is an 1898 story by Stephen Crane. In the story, the character of Jim, a young boy, is playing in his yard while his father mows the lawn; while playing, Jim accidentally damages a peony (a flower). Crane emphasizes Jim’s energy and his distracted absorption in his play by writing, _____",
+   "prompt": "Which quotation from “The Monster” most effectively illustrates the claim?",
+   "choices": {
+    "A": "“[Jim] went on to the lawn, very slowly, and kicking wretchedly at the turf. Presently his father came along with the whirring machine, while the sweet, new grass blades spun from the knives.”",
+    "B": "“Jim could do no reparation. He looked again towards his father.”",
+    "C": "“[W]hen [Jim] swung around the curve at the flower-bed, a wheel of his cart destroyed a peony.”",
+    "D": "“Little Jim was, for the time, engine Number 36, and he was making the run between Syracuse and Rochester. He was fourteen minutes behind time, and the throttle was wide open.”"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 49
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Radamés Cordero et al. have confirmed that twenty mushroom species (including Coprinellus micaceus and species from the genus Russula) maintain subambient temperatures in both their fruited bodies and their mycelium (the root-like hyphae from which the fruited bodies grow), though the benefits of this hypothermic behavior are unclear. Noting that relative coldness was more pronounced in fruiting than in nonfruiting sites of the mycelium—a difference that persisted even after fruited bodies were detached— the researchers speculate that thermoregulation in the mycelium may influence reproductive success.",
+   "prompt": "Which statement about the mycelium of the twenty mushroom species is best supported by the text?",
+   "choices": {
+    "A": "Variation in thermoregulation across the mycelium may occur independent of the presence or absence of fruited bodies.",
+    "B": "The correlation between higher mycelium temperature and greater fruit productivity indicates that successful reproduction may be dependent on thermoregulation in the mycelium.",
+    "C": "Temperatures in the fruiting areas of the mycelium are lower than in the nonfruiting areas due to differences in the depth and spread of the mycelium within soil or other organic matter.",
+    "D": "The mycelium generally maintains temperatures lower than those of the fruited bodies even when considering temperature variations between fruiting and nonfruiting sites."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 50
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "Belonging to neither the minimalist nor the abstract art movements but heavily influencing both, Constantin Brâncuși spent his sculpting career returning to the same few themes—a kiss, a sleeping head, and a bird in flight—each rendered in pristine, simple, almost abstract forms. Perhaps the most famous example is Bird in Space (1941), a tall, slender bronze sculpture that arcs upward in a manner suggestive of flight but that otherwise lacks any identifiable characteristics of a bird. Despite the seeming simplicity of his works, the exacting standards to which Brâncuși held his work meant that he produced relatively few pieces over his career. There is thus something of a disparity between _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the themes Brâncuși explored and the themes favored by artists he inspired.",
+    "B": "Brâncuși’s importance to the history of art and his total artistic output.",
+    "C": "the nature of much of Brâncuși’s work and the abstraction of Bird in Space.",
+    "D": "Brâncuși’s relatively limited productivity and the diversity of his sculptures."
+   },
+   "answer": "B",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 51
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Subsequent to simulating an attack to elicit defense responses in three caterpillar species, ecologists placed a treatment group of those individuals in an enclosure where they were exposed to slight, harmless ambient electric field shifts like those created by common predatory wasps in flight. When exposed to the treatment, cinnabar moth caterpillars and scarce vapouper moth caterpillars remained coiled in a defensive position for an average of 71 seconds and 87 seconds, respectively, whereas European peacock butterfly caterpillars continued to flail defensively for 20 seconds. Meanwhile, in a control group, all individuals (from all three species) resumed neutral behavior in less than one-tenth of a second after the simulated attack. These results suggest that _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "some species of caterpillars are able to detect potential threats via changes in ambient electric fields.",
+    "B": "in some caterpillar species, the type and duration of defensive responses to electric field shifts varies based on the size of the shifts.",
+    "C": "European peacock butterfly caterpillars are more sensitive to changes in ambient electric fields than are cinnabar moth caterpillars or scarce vapouper caterpillars.",
+    "D": "caterpillar species with the sensory acuity to detect small changes in ambient electric fields may also be able to cause shifts in those fields."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 52
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "In 2008, the US state of Hawaii enacted rate stability regulations (RSRs), constraining insurance companies’ latitude to raise premiums (the periodic fees policyholders pay to maintain insurance policies) after policies are in effect. RSRs are effective at protecting existing policyholders from price volatility, but Naoki Aizawa and Ami Ko note that since dynamic pricing of premiums is an important risk- mitigation tool for insurers, RSRs may lead some insurers to scale back or entirely cease selling new policies in the affected market, thereby reducing the competitive pressure that typically restrains premium prices for new policies. Thus, Hawaii’s RSRs may _____",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "benefit policyholders at the expense of nonpolicyholders seeking to acquire policies.",
+    "B": "reduce premium price volatility once policies are in effect but increase risks for policyholders.",
+    "C": "prevent large increases in premium prices for new policies despite leading to fewer insurers offering such policies in the affected market.",
+    "D": "be more advantageous for insurers than they are for either current or prospective policyholders."
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 53
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Occurring in the constellation Coma Berenices, 38 million light-years from Earth, SN 1940B was a _____ explosion of a massive star, which blasts large amounts of radiation, heavy elements, and debris into space—that was first detected by American astronomer Josef Johnson.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "supernova, the",
+    "B": "supernova. The",
+    "C": "supernova—the",
+    "D": "supernova: the"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 54
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Taking a deconstructionist approach to analyzing Ji-li Jiang’s novel Red Scarf Girl would lead a critic to focus on the linguistic structures inherent in the novel. On the other hand, a cultural studies analysis _____ on the intersection of literature and popular culture might yield a radically different interpretation of Jiang’s novel.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "would focus",
+    "B": "would be focusing",
+    "C": "focusing",
+    "D": "focuses"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 55
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "The vertical position of the Sun in the sky at a particular time of day varies throughout the year: due to Earth’s axial tilt, it appears higher in the summer and lower in the winter. Axial tilt is not the only factor that affects the Sun’s _____ as the eccentricity of Earth’s orbit causes its position to vary horizontally as well, resulting in a figure-eight shape called an analemma (if the Sun’s position is recorded at the same time of day throughout the year).",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "position, though,",
+    "B": "position; though,",
+    "C": "position, though",
+    "D": "position, though;"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 56
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "While the ancient Celts—Iron Age peoples who inhabited parts of western and central Europe—weren’t a single unified group, their art often featured common elements. These included intricate patterns of interlocking spiral lines, which often held symbolic _____ of birds, horses, and other animals; and inlaid enamel accents.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "significance. Depictions",
+    "B": "significance: depictions",
+    "C": "significance; depictions",
+    "D": "significance, depictions"
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 57
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "Scientists have long known that cyclones can contribute to the formation of polynyas, large patches of unfrozen water that sporadically form amid vast sheets of sea ice. A recent study found evidence that these polynyas may be _____ but also by vapor streams, which travel through the atmosphere from the tropics toward the North and South Poles.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "caused not only by cyclones—",
+    "B": "caused—not only by cyclones—",
+    "C": "caused, not only by cyclones,",
+    "D": "caused not only by cyclones"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 58
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Trade with neighboring civilizations contributed to the success of the Neo-Assyrian Empire, which reigned in Mesopotamia from around 911 BCE to 609 BCE. By supplying grain, textiles, and tin to societies that lacked these valuable _____ Neo-Assyrian Empire grew not only in wealth but also in power and influence.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "items. The",
+    "B": "items the",
+    "C": "items; the",
+    "D": "items, the"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 59
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Released in 1987, the Acorn ARM2 microchip contained a single CPU, or core, to execute commands. As processing speeds of single-core chips increased over time, so too did the heat the chips generated. _____ a “power wall” in which more heat was produced than could be efficiently dissipated led developers to invent the dual-core chip in the early 2000s.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Hitting",
+    "B": "When they hit",
+    "C": "They hit",
+    "D": "Upon hitting"
+   },
+   "answer": "A",
+   "answerConfidence": "from file",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 60
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "At the Marie Hitchcock Puppet Theater in San Diego, California, audiences sit down to enjoy a live puppet show. _____ they will experience puppetry in its highest form. The theater’s professional puppeteers are experts in any number of the dozens of puppetry styles, from bunraku puppetry to marionette puppetry.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "To that end,",
+    "B": "However,",
+    "C": "Conversely,",
+    "D": "There,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 61
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "Srivijaya, a Buddhist sea power based in Sumatra in Indonesia that reached the height of its influence around 800 CE, is classified as a thalassocracy. Thalassocracies are generally considered distinct from tellurocracies, or land-based powers. _____ the British Empire (1600s–1900s CE) notably extended its hegemony across both land and sea.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Underscoring this difference,",
+    "B": "Exemplifying this distinction,",
+    "C": "Supporting this claim,",
+    "D": "Blurring this line,"
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 62
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nVexillology is the study of flags.\nThe flags of many countries include symbols like animals, plants, or landforms. These symbols often represent an aspect of the region's history, culture, or landscape. The flag of El Salvador includes a palm branch. The flag of Zambia includes an eagle.",
+   "prompt": "Which choice most effectively uses information from the given sentences to emphasize a difference between the two flags?",
+   "choices": {
+    "A": "Vexillologists study flags, like those of El Salvador and Zambia.",
+    "B": "Many countries feature symbols on their flags, such as animals, plants, or landforms, and the study of these designs is known as vexillology.",
+    "C": "Countries like El Salvador and Zambia use symbols on their flags; examples include plants and animals.",
+    "D": "El Salvador includes a plant on its flag, whereas Zambia's flag includes an animal."
+   },
+   "answer": "D",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 63
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Leidenfrost effect occurs when liquid touches a solid surface significantly hotter than the liquid’s boiling point, forming a vapor layer that insulates the liquid before eventually collapsing. Scientists long hypothesized that the temperatures at which Leidenfrost vapor forms and collapses vary depending on molecular variations in surfaces and liquids. A 2023 study confirmed that the vapor’s formation temperature varies depending on molecular variations in surfaces and liquids. The study also found that the vapor’s collapse temperature was “nearly independent of material and fluid properties, contrary to previous theories.” The vapor’s collapse temperature remained consistent (around 140°C).",
+   "prompt": "The student wants to refute a scientific assumption about the Leidenfrost effect. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Contrary to the hypothesis that vapor layer formation temperature is dictated by molecular variation, a 2023 study confirmed that the temperature at which the vapor layer forms depends on the surface and liquid used.",
+    "B": "Though the vapor layer created by the Leidenfrost effect can be formed at a range of temperatures, the temperature at which the layer collapses varies depending on material and fluid properties.",
+    "C": "Countering previous hypotheses, a recent study found that Leidenfrost vapor’s collapse temperature does not vary depending on material and fluid properties.",
+    "D": "Scientists had hypothesized that the formation temperature of Leidenfrost vapor depends on variations in surfaces and liquids used, but a 2023 study confirmed that the collapse temperature remains consistent."
+   },
+   "answer": "C",
+   "answerConfidence": "from file",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 64
+  }
+ ]
+}

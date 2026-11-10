@@ -1,0 +1,1949 @@
+{
+ "id": "2026-08-int-a",
+ "title": "Aug 2026 INT A",
+ "year": 2026,
+ "month": 8,
+ "version": "INT",
+ "form": "A",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "solved",
+ "pdf": "Aug 2026 INT A (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Blue holes, such as the Great Blue Hole and Watling’s Blue Hole, are deep sinkholes that form underwater. Because the dark blue appearance of their waters means these pits can be easily ______ shallow areas around them, where the water looks light blue, many blue holes have been discovered by people doing recreational activities like boating.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "elevated from",
+    "B": "surpassed by",
+    "C": "differentiated from",
+    "D": "explored by"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "By eliminating middlemen, direct-to-consumer sales channels allow small farms to capture retail prices rather than accept lower wholesale rates. The pricing advantages that come with adopting this model, combined with the customer loyalty that comes from forging personal connections, can ______ the financial outlook for many small agricultural producers.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "interpret",
+    "B": "overshadow",
+    "C": "hasten",
+    "D": "transform"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Tabby Cat is an important work of Nihonga, or classical Japanese painting. Unlike Saeki Yūzō, who adopted traditional European methods such as painting with oil on canvas, Takeuchi Seihō ______ traditional Japanese approaches. For instance, Takeuchi produced Tabby Cat by applying color pigments to a silk surface.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "reprimanded",
+    "B": "adhered to",
+    "C": "awarded",
+    "D": "refrained from"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "The swordfish is an ectothermic (cold-blooded) fish, whereas the southern bluefin tuna is a regional endotherm; unlike that of ectotherms, its body temperature remains above the ambient water temperature. The basking shark had been classified as a full ectotherm, but researchers Haley R. Dolton et al. found that its body temperature remains 1.0 to 1.5°C above ambient, which is ______ that classification.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "indicative of",
+    "B": "incongruous with",
+    "C": "subordinate to",
+    "D": "opportune for"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "A variety of technologies make use of magnets incorporating rare earth elements, such as gadolinium. For technology manufacturers, dependence on rare earth elements is a significant ______. Such elements are extracted at large scale in only a small number of locations, making any supply chain requiring them highly fragile.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "discrepancy",
+    "B": "insolvency",
+    "C": "redundancy",
+    "D": "vulnerability"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The presumptive functionality of khipu, the semiotic system of knotted cords once used by Indigenous Andean peoples, to encode language (perhaps, like ancient Chinese script, in units of discrete words) now has an empirical basis: Manuel Medrano’s statistical data on Spanish translations of khipu content, as recited by Aymara-speaking scribes, ______ historical reports of khipu’s status as a linguistic record.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "supplement",
+    "B": "supersede",
+    "C": "replicate",
+    "D": "complicate"
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Human eyes contain cone cells that help process color and bright light. There are three types of cones: long, medium, and short. In a study, James Fong and his team used a laser technology to activate only the medium cones in participants’ eyes. When they did this, the participants saw a new blue-green color that the researchers then named olo.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "It discusses some characteristics of cones in human eyes and then discusses a study involving those cones.",
+    "B": "It explains what the color olo is and then explains how that color was discovered.",
+    "C": "It mentions three different colors and then mentions the wavelengths associated with those colors.",
+    "D": "It names different cells in human eyes and then states how they work with cells in a different part of the body."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "In The Jazz Continuum, LaTasha Barnes, Imani Arrington, and other dancers seamlessly interweave recent dance styles, including hip-hop and waacking, with elements of the Lindy Hop, a popular swing dance of the 1930s with roots in the Black American community of Harlem, New York. Inspired by Barnes’s curiosity about the similarities between the Lindy Hop and these seemingly unrelated dance styles, the show’s choreography makes visible how intertwined their histories actually are. The show is therefore a testament to the Lindy Hop’s enduring influence on American culture.",
+   "prompt": "Which choice best states the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It provides evidence for the text’s claim that the Lindy Hop has had a greater cultural impact than the other dances featured in The Jazz Continuum have had.",
+    "B": "It identifies the specific ways in which the Lindy Hop is similar to the contemporary dance styles discussed in the text.",
+    "C": "It addresses the reasons why the historical connections between the dance styles mentioned earlier in the text have been generally overlooked.",
+    "D": "It identifies the motivation for The Jazz Continuum’s choreographic approach that is described earlier in the text."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "In The Jazz Continuum, LaTasha Barnes, Tyedric Hill, and other dancers seamlessly interweave recent dance styles, including hip-hop and voguing, with elements of the Lindy Hop, a popular swing dance of the 1930s with roots in the Black American community of Harlem, New York. Inspired by Barnes’s curiosity about the similarities between the Lindy Hop and these seemingly unrelated dance styles, the show’s choreography makes visible how intertwined their histories actually are. The show is therefore a testament to the Lindy Hop’s enduring influence on American culture.",
+   "prompt": "Which choice best states the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It identifies the specific ways in which the Lindy Hop is similar to the contemporary dance styles discussed in the text.",
+    "B": "It identifies the motivation for The Jazz Continuum’s choreographic approach that is described earlier in the text.",
+    "C": "It provides evidence for the text’s claim that the Lindy Hop has had a greater cultural impact than the other dances featured in The Jazz Continuum have had.",
+    "D": "It addresses the reasons why the historical connections between the dance styles mentioned earlier in the text have been generally overlooked."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 11
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Some psychologists such as Julia Rohrer are conducting projects that are meant to foster intellectual humility (the ability to realize that one is wrong and to publicly admit it) among scientific researchers. This is important: the scientific process is ideally self-correcting as new research either confirms or contradicts prior findings, but that process is slowed when researchers are unwilling to acknowledge that disputed work of theirs might have flaws. If embraced by scientists, intellectual humility therefore has the potential to increase the efficiency of scientific research.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To describe the importance of intellectual humility to scientists",
+    "B": "To explain how a specific project fosters intellectual humility",
+    "C": "To cite specific examples of scientists who acknowledged flaws in their work",
+    "D": "To identify a particular mistake made by scientists in a research project"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 12
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Text 1\nFor decades, ornithologists assumed that if they saw a singing Cassin’s finch—a bird species found in temperate North America—they must be observing a male trying to attract a mate or claim territory. As Peter J.B. Slater and Nigel I. Mann have emphasized, however, a similar assumption can’t be made about birds in the tropics, where females sing as often as males do. Slater and Mann call for more research on this discrepancy between tropical and temperate female birdsong.\nText 2\nRecent evidence shows that a female Cassin’s finch is as capable of song as a male is. In fact, female birdsong is more common among temperate species than currently assumed, claim Evangeline Rose and colleagues. These female songbirds sing less frequently than males do, and in duller tones, making it “easy for researchers to miss the quiet and hidden females and focus on the loud and colorful males,” says Rose.",
+   "prompt": "Based on the texts, how would Rose and colleagues (Text 2) most likely respond to the assertion by Slater and Mann (Text 1) about the different prevalence of female birdsong in temperate and tropical areas?",
+   "choices": {
+    "A": "They would argue that the apparent difference in prevalence may partly reflect a difference in the ease with which female birdsong and male birdsong can be detected.",
+    "B": "They would concede that the geographic difference in prevalence is real but argue that the frequency with which male tropical birds sing has been overstated by previous researchers.",
+    "C": "They would raise the possibility that the difference in prevalence may be due to differences in the timing of the mating season among temperate and tropical bird species.",
+    "D": "They would caution that the seeming difference in prevalence may be an artifact of researchers’ tendency to study birdsong among temperate species more frequently than among tropical species."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 13
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Text 1\nIn parts of Finland, the least weasel is a major predator of the field vole. Researcher Tero Klemola and colleagues found that when this predation pressure on field voles was temporarily reduced, their numbers significantly increased. This finding illustrates a foundational ecological principle: predators control prey population numbers.\nText 2\nMichel Crête and Hélène Jolicoeur found that excluding wolves from a site in Quebec, Canada, where they typically prey on moose had no significant effect on moose abundance. Many other predation relief studies show an increase in prey abundance, but those studies often focus on small, rapidly reproducing prey, like birds, voles, and rabbits, rather than large, slowly reproducing prey, like moose, which could account for the difference between those results and Crête and Jolicoeur’s results.",
+   "prompt": "Based on the texts, the author of Text 2 would most likely agree with which statement about the “principle” mentioned in Text 1?",
+   "choices": {
+    "A": "It has been challenged by some studies, but the findings of those studies have not been widely accepted.",
+    "B": "It may be true for some predators but only because those predators share certain physical characteristics.",
+    "C": "It has some evidential support, but it should not be regarded as universally applicable.",
+    "D": "It is plausible, but many of the studies that support it have methodological flaws."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 14
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "While not everyone notices it, beneath the tree canopy of an ordinary city park lies an extraordinary web of life—fungi breaking down fallen leaves, native bees pollinating wildflowers, and moss growing in the crevices of an old log. To document this hidden biodiversity, everyday people have been participating in “BioBlitz” events, in which participants photograph, collect, and identify species using both field guides and mobile apps. These collective observations reveal which plant and animal species depend on one another for survival—ecological relationships that might otherwise remain unseen. In context, the text’s characterization of the biodiversity in city parks as “hidden” most clearly conveys which idea?",
+   "choices": {
+    "A": "There are many beautiful parks in cities, but they often remain unseen because of poor urban planning decisions.",
+    "B": "The environmental interactions in city parks are abundant but occur primarily during nighttime hours when human visitors are absent.",
+    "C": "The ecological relationships in city parks may not be readily apparent without systematic observation and documentation efforts.",
+    "D": "Some wildlife species that populate city parks have developed sophisticated camouflage techniques that minimize their visibility."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 15
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "New York-based artist Uman is no stranger to crossing borders: born in Somalia, she lived in Kenya and Denmark before moving to the United States. Her art, too, straddles multiple boundaries. Drawing on knowledge of everything from East African fabrics to Arabic calligraphy, Uman’s kaleidoscopic paintings often combine abstract shapes with anthropomorphic elements, like eyes, mouths, and gestures. Moreover, she seeks to cultivate a practice of “constant evolution” untethered from any prescriptive agenda, so that her art navigates a liminal space between tradition and autobiography, community and itinerancy, and activism and contemplation.",
+   "prompt": "Which statement about Uman’s art is most strongly supported by the text?",
+   "choices": {
+    "A": "Its rejection of established aesthetic criteria can be traced to Uman’s ambivalence toward cultural traditions.",
+    "B": "Its adherence to certain dichotomies sets it apart from the work of most abstract artists based in the United States.",
+    "C": "Its openness to experimentation is evident in its diverse influences and refusal to adhere to a single conceptual frame.",
+    "D": "Its spontaneity makes it challenging for critics to recognize the conventions of genre that Uman chooses to observe."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 16
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Corporate Tax Complexity Index for Four Countries, 2022\nCountry Tax Complexity Index\nIndia 0.42\nKenya 0.37\nSwitzerland 0.23\nUnited States 0.40\nEvery two years from 2016 to 2022, the research project Accounting for Transparency has conducted a worldwide survey of tax consultants and tax services firms in order to calculate the Tax Complexity Index, a measure of the complexity of a nation’s corporate income tax system. The index ranges from zero (minimally complex) to one (extremely complex). In the table, the country with the simplest corporate tax system in 2022 was ______.",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "Switzerland.",
+    "B": "India.",
+    "C": "the United States.",
+    "D": "Kenya."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 17
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "In 2005, Swedish researchers studying flawed choice recall devised an experiment in which participants were shown two photos of different faces and asked to select the one they found more attractive. The researchers appeared to give the participants the photo they had chosen, but in fact used sleight of hand to give them the photo of the person they had not chosen. Most participants accepted the swap and, when asked to explain their initial preference, gave justifications for having chosen the face in the photo they were given. Subsequent researchers have replicated this finding with other choices, including jam preferences.",
+   "prompt": "Based on the text, why was the sleight-of-hand step an important part of the experiment?",
+   "choices": {
+    "A": "It allowed the researchers to control for the possibility that some participants found the two faces roughly equally attractive.",
+    "B": "It helped the researchers test whether participants would embrace an outcome they thought was consistent with their intention even when it was truly contradictory.",
+    "C": "It enabled the researchers to determine whether the thought process involved in selecting which photo had the more attractive face was similar to the thought process involved in selecting a preferred jam.",
+    "D": "It allowed the researchers to measure the willingness of participants to change their positions when presented with persuasive counterarguments."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 18
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "Archaeological investigations of ancient Maya wetland agriculture in Belize have revealed extensive networks of ditches and drainage canals. These complex raised-field systems, constructed by excavating channels through flood-prone bogs to create elevated planting platforms, ______ substantial agricultural surplus during periods of severe population density.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "provided",
+    "B": "providing",
+    "C": "to provide",
+    "D": "having provided"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 19
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Employing high-precision laser altimetry to map the dense canopy of the Guatemalan jungle, ______ of previously unrecorded structures, including fortified hilltop defenses, interconnected causeways, and domestic residential terraces.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "the Petén LiDAR initiative revealed",
+    "B": "previously unrecorded structures were discovered by researchers with",
+    "C": "the discovery of fortifications was made by archaeologists in",
+    "D": "domestic terraces and causeways were documented through"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 20
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "When conducting remote sensing surveys of ancient architectural complexes, archaeological teams must evaluate spatial patterns in multi-spectral imagery before deciding which excavation trench ______",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "should they open?",
+    "B": "they should open.",
+    "C": "should they open.",
+    "D": "they should open?"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 21
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "The 1913 Armory Show in New York City introduced American audiences to European modernism— including radical works by Marcel Duchamp, Henri Matisse, and Pablo ______ forever altering the trajectory of American twentieth-century art.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Picasso;",
+    "B": "Picasso—",
+    "C": "Picasso:",
+    "D": "Picasso,"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 22
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "In materials science, perovskite solar cells have gained considerable attention for their remarkable power-conversion ______ unlike traditional silicon photovoltaic panels that require high-temperature manufacturing, perovskite crystallites can be processed from inexpensive chemical solutions at relatively low temperatures.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "efficiency",
+    "B": "efficiency.",
+    "C": "efficiency;",
+    "D": "efficiency, but"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 23
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Geothermal power plants utilize steam extracted from subterranean reservoirs to turn turbines and produce electricity. In Iceland, volcanic geology provides an exceptionally shallow geothermal resource, allowing geothermal energy to supply over 25% of the country’s primary energy needs. ______ in regions lacking active tectonic boundaries, drilling deep enough to access equivalent subterranean heat is often economically prohibitive.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "In contrast,",
+    "B": "For instance,",
+    "C": "As a result,",
+    "D": "Furthermore,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 24
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Tardigrades are microscopic invertebrates celebrated for their ability to survive lethal extremes of temperature, radiation, and dehydration by entering a dormant state known as anhydrobiosis. In this desiccation-tolerant state, the animals suspend all metabolic processes and synthesize specialized disordered proteins to protect cellular membranes. When rehydrated, ______ tardigrades resume active cellular respiration and locomotion within several hours.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "therefore,",
+    "B": "nevertheless,",
+    "C": "indeed,",
+    "D": "conversely,"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 25
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Every US state has an associated state soil, which is typically selected by a group of experts, then passed through the state legislature to receive its official designation. For example, South Dakota’s Houdek soil was formally designated in 1990, and Maine’s Chesuncook soil in 1999. ______ years pass between a soil’s selection and official designation, as the legislative process can be notoriously slow.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Indeed,",
+    "B": "Similarly,",
+    "C": "In many cases,",
+    "D": "Therefore,"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 26
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nSince 1931, the New York Times (NYT) Best Sellers list has been a measure of the most successful books in the US. Ta-Nehisi Coates and Alex Haley are Black authors who have reached the NYT Best Sellers list. Between the World and Me is a nonfiction book by Ta-Nehisi Coates. It reached the NYT Best Sellers list on August 2, 2015. Roots: The Saga of an American Family is a novel by Alex Haley. It reached the NYT Best Sellers list on August 17, 1976.",
+   "prompt": "Which choice most effectively uses information from the given sentences to emphasize the different years in which the books reached the NYT Best Sellers list?",
+   "choices": {
+    "A": "Between the World and Me and Roots: The Saga of an American Family are both books by Black authors that have reached the NYT Best Sellers list.",
+    "B": "Ta-Nehisi Coates and Alex Haley are both NYT best-selling authors.",
+    "C": "The novel Roots: The Saga of an American Family became an NYT best seller in 1976; Between the World and Me, a nonfiction book, joined this list as well, but in 2015.",
+    "D": "Ta-Nehisi Coates’s Between the World and Me and Alex Haley’s Roots: The Saga of an American Family are both NYT best sellers, but the former is a nonfiction book whereas the latter is a novel."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 27
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Shinkansen (bullet train) is a network of high-speed railways in Japan. 1960s: The trains’ high speeds created intense pressure waves that produced sonic booms when trains exited tunnels. 1980s: Engineer Eiji Nakatsu noted that the kingfisher bird could dive into water at high speeds while barely creating a splash. The kingfisher’s beak gradually widens from tip to head, allowing smooth transition between air and water. Nakatsu and other engineers redesigned the train nose based on the kingfisher’s beak structure to improve the transition between tunnel and open-air environments. The redesign reduced pressure buildup, eliminating sonic booms.",
+   "prompt": "The student wants to explain how the kingfisher’s beak was used to solve the bullet train’s sonic boom problem. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Nakatsu’s observation of kingfishers diving into water showed how the bird’s beak structure could help the train eliminate sonic booms.",
+    "B": "The shape of the kingfisher’s beak inspired engineers to reshape the train nose into one that gradually widens, allowing the train to move smoothly between air and water.",
+    "C": "By redesigning the train’s nose to imitate the kingfisher’s gradually widening beak shape, engineers improved the train’s transition between tunnels and open air, eliminating sonic booms.",
+    "D": "Nakatsu discovered that the kingfisher’s beak structure eliminated sonic booms, and the redesign improved the train’s transition between tunnel and open-air environments."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 28
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nLighthouses send out crucial light signals to help ships and other watercraft navigate at night. Before automation, lighthouses were run by lighthouse keepers. Esther O’Neill was the lighthouse keeper at Concord Point Light in Maryland, from 1863 to 1881. Fannie May Salter was the lighthouse keeper at Turkey Point Light in Maryland, from 1925 to 1947.",
+   "prompt": "The student wants to emphasize a difference between the two lighthouse keepers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "From 1863 to 1881, the nighttime waters of Maryland were made more navigable thanks to Esther O’Neill.",
+    "B": "As the lighthouse keeper at Turkey Point Light, Fannie May Salter helped watercraft navigate at night.",
+    "C": "Esther O’Neill worked as a lighthouse keeper in an earlier century than did Fannie May Salter.",
+    "D": "Esther O’Neill and Fannie May Salter both played crucial roles in ensuring safe navigation for watercraft in past centuries."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 29
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Software that automatically detects suspicious behavior on computer networks has become so sensitive that much of the activity it detects is ______, which means that rather than replacing human experts, such software has increased the need for cybersecurity specialists to interpret the flagged activity and determine whether it is a cause for concern.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "imperceptible",
+    "B": "invariable",
+    "C": "malicious",
+    "D": "ambiguous"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 31
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The longevity of heating and cooling systems depends significantly on technicians properly ______ refrigerant lines during installation. If non-condensable gases, moisture, and microscopic debris aren’t purged from the lines, vital components can be damaged during use, leading to total system failure.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "detangling",
+    "B": "evacuating",
+    "C": "designating",
+    "D": "bracing"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 32
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Although the cumulative weight of the goods in a cargo truck affects fuel efficiency, this effect—and the corresponding effect on the cost of a given trip to the trucking company—is relatively small. The large majority of a trip’s cost stems from the mere fact of the truck being on the road; accordingly, trucking firms are ______ to dispatch trucks that aren’t full.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "entitled",
+    "B": "prone",
+    "C": "loath",
+    "D": "admonished"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 33
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Though research indicating that plants may preferentially absorb nickel and other essential elements (i.e., those necessary for plant growth) from soil over nonessential ones seems to suggest that nickel- contaminated soil may be especially ______ to decontamination by plants, Stephan Pauleit and team found that plants tended to accumulate the nonessential element cadmium at higher rates than nickel; the presence of cadmium in such soils should thus be assessed before pursuing plant-based nickel decontamination.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "unresponsive",
+    "B": "detrimental",
+    "C": "pertinent",
+    "D": "amenable"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 34
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Though research indicating that plants may preferentially absorb nickel and other essential elements (i.e., those necessary for plant growth) from soil over nonessential ones seems to suggest that nickel- contaminated soil may be especially ______ to decontamination by plants, Swantje Duthweiler and team found that plants tended to accumulate the nonessential element cadmium at higher rates than nickel; the presence of cadmium in such soils should thus be assessed before pursuing plant-based nickel decontamination.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "amenable",
+    "B": "unresponsive",
+    "C": "pertinent",
+    "D": "detrimental"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 35
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "Microwave heating, a thermal technology used to preserve food on an industrial scale, is generally considered to be an improvement over more conventional thermal preservation methods. Scientists in Latin America have contributed to a better understanding of this technology, with researchers from Mexico demonstrating its effectiveness in preserving mamey sapote fruits. As research continues, scientists hope to make advancements in hybrid systems combining multiple food preservation technologies, which would be advantageous over using microwave heating alone, given that it often heats food unevenly.",
+   "prompt": "Which choice best describes the function of the underlined portion in the text as a whole?",
+   "choices": {
+    "A": "It suggests an advantage that microwave heating has over conventional thermal processing methods.",
+    "B": "It identifies a flaw of microwave heating technologies.",
+    "C": "It introduces microwave heating as a food processing technology.",
+    "D": "It explains why conventional thermal processing methods are popular in commercial applications."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 36
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Positive expressive writing is self-reflective writing aimed at exploring positive topics and feelings like joy. Techniques of positive expressive writing include one called “benefit finding,” which involves writing about positives that come from difficult experiences, and “satisfaction processes,” which involves writing in-depth about how certain experiences lead to feelings of fulfillment. In a large-scale analysis, Lauren Hoult and colleagues determined that while different techniques produce varying outcomes, they all tend to have a more consistent effect on well-being and positive outlook than on physical health and stress.",
+   "prompt": "Which choice best describes the overall structure of the text?",
+   "choices": {
+    "A": "It identifies several positive emotions and then asserts that positive expressive writing should be done daily to amplify those emotions.",
+    "B": "It gives an overview of positive expressive writing and then states a research finding about this type of writing.",
+    "C": "It introduces a study about positive expressive writing and then explains that the researchers are planning a follow-up study.",
+    "D": "It describes one popular technique of positive expressive writing and then names the techniques researchers have found to be most useful."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 37
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Text 1\nIt’s clear that worldwide cooperation is needed to tackle global issues such as climate change. However, it hasn’t been clear how to foster strong group cohesion to motivate prosocial behavior at a global level given that humans tend to align more locally, from family to nationality. Evidence now shows that being prompted to consider the shared biology of all humans can cause individuals to identify more strongly with humanity overall, suggesting that emphasis on the “global family tree” may promote collective action.\nText 2\nPerhaps counterintuitively, a focus on group distinctions can help ensure that responsibility for issues with global effects (e.g., natural resource depletion and climate change) is shared globally. For example, though young people don’t always view themselves as essential parties in such matters, reminders of their collective role as future inheritors of problems left unsolved can spark their engagement.",
+   "prompt": "Which choice best describes a notable difference in focus between Text 1 and Text 2?",
+   "choices": {
+    "A": "Both texts establish that people need to be made aware of the specific ways global issues are likely to affect them individually, but Text 1 focuses on the empathy those details inspire and Text 2 focuses on the obligation those details entail.",
+    "B": "Both texts suggest that embracing commonalities can be beneficial when it comes to urging people to collective action to address global issues, but Text 1 focuses on the broadest scope of connection and Text 2 focuses on connections more limited in scope.",
+    "C": "Both texts imply that global issues are equally relevant to all people living today, but Text 1 focuses on the idea that such issues will remain broadly relevant for the foreseeable future and Text 2 focuses on the idea that certain issues may soon become less relevant.",
+    "D": "Both texts indicate that global issues should be addressed with large-scale shared efforts, but Text 1 focuses on the idea that it may be most effective to link global and local coordination and Text 2 focuses on the idea that local efforts sometimes divert attention from broader coordination."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 38
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Biologist Grace Herzel and colleagues conducted a study of how butterfly color and weather conditions relate to butterfly behavior, which wouldn’t have been possible without data gathered by students and other amateur science enthusiasts in the community. Considering over three years’ worth of data, the researchers found that white butterflies were observed on green flowers more often than any other butterflies were, and that butterflies were observed to feed more often on cloudy days than on other days.",
+   "prompt": "According to the text, which factors seemed to be linked to the behavior of butterflies in Grace Herzel and colleagues’ study?",
+   "choices": {
+    "A": "Neither butterfly color nor weather conditions",
+    "B": "Both butterfly color and weather conditions",
+    "C": "Weather conditions but not butterfly color",
+    "D": "Butterfly color but not weather conditions"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 39
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Strontium Isotope Ratios for an Igneous Rock Sample\nMineral Zone 87Sr/86Sr Ratio\nCrystal core 0.71685\nCrystal rim 0.71548\nCrystal matrix 0.71416\nA student is studying igneous rock formations on Elba Island, Italy, and reviews published data on the ratio of strontium isotopes (87Sr/86Sr) in minerals from a specific rock sample. These isotope ratios provide information about the composition of the magma that formed the rock. Ratios below 0.710 suggest more material from the mantle in the magma, while ratios increasing above that number usually indicate greater proportions of material from the continental crust. The minerals in the rock sample record three growth stages: crystal core zones formed first, then rim zones, and finally the surrounding matrix. The student concludes that the rock sample ______.",
+   "prompt": "Based on the information given, which choice most effectively uses data from the table to complete the student’s conclusion?",
+   "choices": {
+    "A": "shows evidence of increasing continental crust material in later-forming minerals.",
+    "B": "does not show the expected 87Sr/86Sr ratios across the stages of mineral formation.",
+    "C": "contains 87Sr/86Sr ratios too similar to provide reliable information about magma sources.",
+    "D": "formed from magma with decreasing but persistent crustal influence."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 40
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Change in Average Traffic Delay After End of Restriction (min/km)\nTime Period Previously Restricted Previously Unrestricted\n6:00–7:00 a.m. 0.00 0.03\n7:00–10:00 a.m. 0.98 0.13\n10:00 a.m.–4:30 p.m. 0.55 0.71\n4:30–7:00 p.m. 2.48 0.60\n7:00–8:00 p.m. 1.98 1.32\n8:00 p.m.–6:00 a.m. 0.05 0.16\nIn 2016, the city of Jakarta—one of the world’s largest metropolitan areas—revoked a rule that restricted the use of major roads in the city’s business district to only vehicles with three or more passengers during rush hours (7:00–10:00 a.m. and 4:30–7:00 p.m.). As researchers had expected, this move led to increased traffic delays during those times on the roads whose use had been limited, especially in the later rush hour period. Surprisingly, delays also worsened during other periods of time and on roads that hadn’t been subject to the rule; the data most clearly reflect this effect in the period of ______.",
+   "prompt": "Which choice most effectively uses data from the table to complete the statement?",
+   "choices": {
+    "A": "4:30–7:30 p.m. for previously restricted roads.",
+    "B": "10:00 a.m.–4:30 p.m. for previously unrestricted roads.",
+    "C": "7:00–10:00 a.m. for both types of roads.",
+    "D": "7:00–8:00 p.m. for both types of roads."
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 41
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Australia’s modern population of dingoes, an ancient lineage of canids, comprises two genetically distinct groups that inhabit different sides of the country (west and east). Many have attributed this divergence to the nearly 3,500-mile-long “dingo fence,” a barrier installed to prevent access to livestock, that created a division of Australia into large southeast and northwest sections around 150 years ago. However, having analyzed DNA from ancient dingo specimens ranging from hundreds to thousands of years old, paleogeneticist Sally Wasef and colleagues reject that common explanation.",
+   "prompt": "Which finding, if true, would most directly explain why Wasef and colleagues reject the common explanation presented in the text?",
+   "choices": {
+    "A": "The continent-wide population structure of modern dingoes matches that of the dingoes that were present in Australia around 2,000 years ago.",
+    "B": "Ancient dingoes quickly dispersed throughout Australia after being introduced in two independent waves from distinct source populations at least 3,000 years ago.",
+    "C": "The two earliest known sets of skeletal dingo remains in Australia date to around 3,400 years ago at a site in the west and around 3,300 years ago at a site in the east.",
+    "D": "New Guinea singing dogs, a closely related species, began interbreeding with dingoes in southeast Australia 2,200–2,600 years ago and with dingoes in northwest Australia in the same period."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 42
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Silica cements associated with casts of soft-bodied marine organisms from the Ediacaran period (circa 538–635 million years ago) are plausibly attributable to one of two phenomena: rapid postmortem preservation of the organisms via precipitation of cements from silica-rich oceans or cement precipitation via high-pressure reactions long after the organisms were preserved by some other means. Recognizing that such reactions generally result in cements with germanium/silicon (Ge/Si) ratios lower than those of silica grains recovered from the same portion of sandstone, Lidya Tarhan et al. investigated silica cements and grains associated with Ediacaran soft-bodied casts at a site in South Australia.",
+   "prompt": "Based on the information in the text, Tarhan et al. could most reasonably draw which conclusion?",
+   "choices": {
+    "A": "The range of Ge/Si ratios is larger for the cements than for the grains, which suggests that the cements are likely the result of high-pressure reactions that occurred long after the organisms were preserved by some other means than precipitation from a silica-rich ocean.",
+    "B": "The distribution of Ge/Si ratios indicates that a portion of the cements could have precipitated via high-pressure reactions, which suggests that organisms at the site were less likely to have been preserved via rapid precipitation from a silica-rich ocean than Tarhan et al. hypothesized.",
+    "C": "The distribution of Ge/Si ratios of the cements and grains is largely inconsistent with the cements having precipitated via high-pressure reactions, which implicitly lends support to the idea that the organisms at the site were quickly preserved by cement precipitation from a silica-rich ocean.",
+    "D": "The total number of cement samples is much lower than the total number of grains precipitated via high-pressure reactions, which suggests that rapid precipitation from silica- rich oceans could account for the preservation of the site’s organisms."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 43
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "In 1967, archaeologist James Mellaart claimed that at its peak, Çatalhöyük—a 33-acre Neolithic village in present-day Turkey that dates from approximately 7100 to 5950 BCE—housed between 8,000 to 10,000 residents, an estimate based on the excavation of dense clusters of mud brick buildings that were thought to have been dwellings. Arguing that such estimates should be reevaluated, Ian Kuijt and Arkadiusz Marciniak (2024) cite radiocarbon data and ethnographic modeling that suggest the heterogeneity of building use in Çatalhöyük, with many individual buildings being inhabited for relatively brief periods—20 to 30 years or less—before being abandoned or repurposed for nonresidential functions (e.g., storage). Accordingly, these recent findings challenge the assumption that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the number of buildings at Çatalhöyük would have been sufficient to accommodate a population that expanded from 8,000 to 10,000 inhabitants by 5950 BCE.",
+    "B": "the use of mud bricks is a reliable indicator that a structure had been used either as a dwelling or for nonresidential purposes.",
+    "C": "the density of excavated buildings at Çatalhöyük can serve as a proxy for how many people inhabited the village at a given time.",
+    "D": "the buildings excavated at Çatalhöyük at the time of Mellaart’s research had served a residential purpose as early as 7100 BCE."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 44
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Chondrite meteorites recovered on Earth tend to show negligible concentrations of sodium-rich evaporites. Following collection in space and return to Earth in controlled nitrogen environments with extremely low (1%) humidity, material from the asteroid Bennu—which shares compositional features with a chondrite subclass—was found to have significant sodium evaporite concentrations. After five months in Earth air at 30%–40% humidity (lower-than-average humidity for most nondesert Earth locations), a small sample of Bennu material showed significant evaporite deterioration and new compound formation; after eight months in similar conditions, another sample experienced complete loss of sodium evaporites. Together, these observations suggest that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the nitrogen storage environment in which the Bennu material was transported may have facilitated the formation of sodium-rich evaporites that then deteriorated when exposed to atmospheric humidity typical of most nondesert locations on Earth.",
+    "B": "the sodium evaporite concentrations on Bennu may have once been similar to those on recovered chondrites, but exposure to Earth’s atmospheric humidity affected Bennu’s evaporites and led to new compound formation.",
+    "C": "sodium-rich evaporites are scarce on recovered chondrites in part due to the length of time those chondrites have been exposed to much lower humidity levels than those typically found on Earth.",
+    "D": "the discrepancy between sodium evaporite concentrations on recovered chondrites and those initially observed on the Bennu material may be attributable to the chondrites’ exposure to atmospheric humidity typical of many Earth environments."
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 45
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "The Lex Iulia sumptuaria of 18 BCE was one in a succession of ancient Roman sumptuary laws governing expenditures on luxury, primarily regulating large banquets and other lavish events. Such laws, enacted against a backdrop of anxiety about social dynamism, were intended to limit aspirational overreaching for status but were infrequently enforced. Moreover, enforcement was generally limited to fines, which, when levied against high-profile offenders, were widely announced. The affluent accepted fines as merely a tax on privilege, even as the amounts increased with frequent revisions to the laws. Historians have therefore argued that enforcing sumptuary laws only minimally may have been a way to avoid undermining the laws’ aims, given that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "less-affluent citizens were reluctant to risk incurring a fine and thus voluntarily complied with the laws even in the absence of regular enforcement.",
+    "B": "the few fines that were imposed under the laws were tolerable to wealthy offenders and thus did not help the laws serve their intended purpose.",
+    "C": "authorities focused enforcement on the wealthiest offenders, recognizing that pursuing offenders who were unable to pay the fines could weaken fines’ effectiveness as a deterrent.",
+    "D": "the public announcement of fines could signal offenders’ wealth and status, placing enforcement of the laws in conflict with their intent."
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 46
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "To experience both the multi-instrument groove of contemporary blues music and the stripped-down Delta blues of Andy Rodgers and other blues forebearers ______ the rich history of the genre.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "to realize",
+    "B": "are realizing",
+    "C": "is to realize",
+    "D": "realizing"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 47
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "In 1840, Rowland Hill’s penny postage system revolutionized mail in Britain, rendering obsolete previous systems in which senders paid variable rates based on distance traveled and recipients often refused delivery to avoid owing postage. Following ______ lead came similar systems implemented by reformers in other nations, such as Wilhelm Naeff in Switzerland and José Clemente Pereira in Brazil.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "they’re",
+    "B": "their",
+    "C": "its",
+    "D": "it’s"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 48
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "An accomplished birder might be able to spot thousands of different species over the course of a career, from Camaroptera brachyura to Buteo brachyurus, but no birder has ever achieved the ultimate ______ an in-person glimpse of all 10,000-plus species of birds.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "goal. Catching",
+    "B": "goal: catching",
+    "C": "goal; catching",
+    "D": "goal catching"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 49
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "The Huseby Klev archaeological site in Sweden was exceptionally well-preserved beneath a layer of clay, which sealed artifacts into what scientists describe as a natural geological time capsule. As a result, ______ and his colleagues were able to extract and analyze DNA from chewed tree resin dating back nearly 10,000 years.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "paleogeneticist Emrah Kurdök",
+    "B": "paleogeneticist, Emrah Kurdök",
+    "C": "paleogeneticist, Emrah Kurdök,",
+    "D": "paleogeneticist Emrah Kurdök,"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 50
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "When historian John Irwin founded the Museum of Appalachia in Clinton, Tennessee, in the 1960s, it consisted of just a single log structure. Today, it is a 65-acre living history museum featuring vast collections of folk art, including carvings, textiles, and ______ Arnwine Cabin, one of thirty-five historic log buildings on the property; and a re-created pioneer-era Appalachian farm.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "paintings;",
+    "B": "paintings",
+    "C": "paintings.",
+    "D": "paintings,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 51
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "Mary Elizabeth Banning was a self-taught mycologist, or fungi specialist, who researched mushrooms in the late 1800s. Banning documented her findings in The Fungi of Maryland, an unpublished manuscript consisting of 175 watercolor ______ a detailed portrait of a particular species, such as Polyporus beattei, a fungi species of the order Hymenomycetes presented on plate 118.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "plates, each was",
+    "B": "plates; each being",
+    "C": "plates, each",
+    "D": "plates; each"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 52
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "In biology there is no single agreed-upon concept of what defines a species; ______ numerous competing species concepts are used within the field, a dilemma known as the species problem. The genotypic cluster species concept, described in 1995 by Mallet, defines species in accordance with genetic similarity, while the general lineage species concept, delineated by Queiroz in 1998, organizes species according to evolutionary lineage.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "as a result,",
+    "B": "for instance,",
+    "C": "in addition,",
+    "D": "however,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 53
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "Massimo Coli and colleagues used ground-penetrating radar (GPR) to map moisture infiltration within the walls of Saint John Baptistery in Florence, Italy. The contrast between wet and dry materials produces vivid radar echoes that delineate leak pathways, yet the presence of water-saturated zones also hampers the efficacy of the technique. ______ even as GPR makes such areas conspicuous, water within masonry absorbs and scatters radar energy, often obscuring defects in layers beyond the saturated region.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Likewise,",
+    "B": "Nevertheless,",
+    "C": "Thus,",
+    "D": "Indeed,"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 54
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nSince 1931, the New York Times (NYT) Best Sellers list has been a measure of the most successful books in the US. Ta-Nehisi Coates and Tayari Jones are Black authors who have reached the NYT Best Sellers list. Between the World and Me is a nonfiction book by Ta-Nehisi Coates. It reached the NYT Best Sellers list on August 2, 2015. An American Marriage is a novel by Tayari Jones. It reached the NYT Best Sellers list on February 6, 2018.",
+   "prompt": "Which choice most effectively uses information from the given sentences to emphasize the different years in which the books reached the NYT Best Sellers list?",
+   "choices": {
+    "A": "Ta-Nehisi Coates and Tayari Jones are both NYT best-selling authors.",
+    "B": "Ta-Nehisi Coates’s Between the World and Me and Tayari Jones’s An American Marriage are both NYT best sellers, but the former is a nonfiction book, whereas the latter is a novel.",
+    "C": "The nonfiction book Between the World and Me became an NYT best seller in 2015; An American Marriage, a novel, joined this list as well, but in 2018.",
+    "D": "Between the World and Me and An American Marriage are both books by Black authors that have reached the NYT Best Sellers list."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 55
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Shinkansen (bullet train) is a network of high-speed railways in Japan. 1960s: The trains’ high speeds created intense pressure waves that produced sonic booms when trains exited tunnels. 1980s: Engineer Eiji Nakatsu noted that the kingfisher bird could dive into water at high speeds while barely creating a splash. The kingfisher’s beak gradually widens from tip to head, allowing smooth transition between air and water. Nakatsu and other engineers redesigned the train nose based on the kingfisher’s beak structure to improve the transition between tunnel and open-air environments. The redesign reduced pressure buildup, eliminating sonic booms.",
+   "prompt": "The student wants to explain how the kingfisher’s beak structure was used to solve the bullet train’s sonic boom problem. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Nakatsu discovered that the kingfisher’s beak structure eliminated sonic booms, and the redesign improved the train’s transition between tunnel and open-air environments.",
+    "B": "Nakatsu’s observation of kingfishers diving into water showed how the bird’s beak structure could help the train eliminate sonic booms.",
+    "C": "By redesigning the train’s nose to imitate the kingfisher’s gradually widening beak shape, engineers improved the train’s transition between tunnels and open air, eliminating sonic booms.",
+    "D": "The shape of the kingfisher’s beak inspired engineers to reshape the train nose into one that gradually widens, allowing the train to move smoothly between air and water."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 56
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nA copyright prevents a book’s contents from being reproduced (published) without permission from the copyright holder. When a book’s copyright expires, the book enters the public domain and can be legally reproduced by anyone. New Hampshire is a poetry collection by Robert Frost. It entered the public domain in 2019. Arrowsmith is a novel by Sinclair Lewis. It entered the public domain in 2021.",
+   "prompt": "The student wants to emphasize a similarity between Robert Frost and Sinclair Lewis. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Both New Hampshire and Arrowsmith are in the public domain; however, one is a poetry collection and the other a novel.",
+    "B": "The year was 2021, and the copyright to Sinclair Lewis’s Arrowsmith had finally expired.",
+    "C": "New Hampshire, a poetry collection by Robert Frost, entered the public domain in 2019, unlike Sinclair Lewis’s novel Arrowsmith.",
+    "D": "Robert Frost and Sinclair Lewis are two authors whose works recently entered the public domain."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 57
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "spr",
+   "prompt": "Sphere A and Sphere B are tangent to each other at point P. Segment MP is a diameter of Sphere A, segment NP is a diameter of Sphere B, and point P lies on line segment MN. The radius of Sphere A is 5 times the radius of Sphere B. If the volume of Sphere B is 288π cubic inches, what is the length of segment MN, in inches?",
+   "answer": "72",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 59
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "To cut a lawn, Antwan charges a fee of $10.00 for his equipment and $8.50 per hour spent cutting a lawn. Taylor charges a fee of $7.00 for his equipment and $9.50 per hour spent cutting a lawn. If x represents the number of hours spent cutting a lawn, what are the values of x for which Taylor’s total charge is greater than Antwan’s total charge?",
+   "choices": {
+    "A": "2 ≤ x ≤ 3",
+    "B": "3 ≤ x ≤ 4",
+    "C": "x < 2",
+    "D": "x > 3"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 60
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "The relationship between the variables x and y is defined by an exponential equation. When x = 0 the value of y is 30, and for every increase in the value of x by 1, the corresponding value of y increases by 70% of its previous value. Which equation represents this relationship?",
+   "choices": {
+    "A": "y = 30(1.70)^x",
+    "B": "y = 30(1.07)^x",
+    "C": "y = 70(1.30)^x",
+    "D": "y = 70(1.03)^x"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 61
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "In the figure shown, lines a, b, and c are parallel. If 201 < x + y + z < 212, which of the following could be true? I. w − y = 22 II. w − y = 32",
+   "choices": {
+    "A": "I only",
+    "B": "II only",
+    "C": "I and II",
+    "D": "Neither I nor II"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 62,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m1-04-1.webp",
+     "w": 408,
+     "h": 540,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "A circle has center O, and points P and Q lie on the circle such that segment PQ is a diameter of the circle. The length of arc PQ is 56 centimeters. What is the circumference, in centimeters, of the circle?",
+   "choices": {
+    "A": "42",
+    "B": "56",
+    "C": "112",
+    "D": "224"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 63
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "In 2004, Aster earned 11% more than in 2003, and in 2005 Aster earned 6% more than in 2004. If Aster earned y times as much in 2003 as in 2005, which of the following is closest to the value of y?",
+   "choices": {
+    "A": "0.5455",
+    "B": "0.6600",
+    "C": "0.8409",
+    "D": "1.1766"
+   },
+   "answer": "C",
+   "answerConfidence": "low",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 64
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "A community organization surveyed a random sample of residents to estimate the percentage of residents who visit their local library at least once per month. The organization estimates that 19% of residents visit the library at least once per month, with an associated margin of error of 3.7%. The organization repeated the survey with a random sample that was double the original sample size. Which of the following is true about the margin of error associated with the estimate from the larger sample?",
+   "choices": {
+    "A": "The margin of error is less than 3.7%.",
+    "B": "The margin of error is 7.4%.",
+    "C": "The margin of error is greater than 19%.",
+    "D": "The margin of error is 38%."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "inference-sample",
+   "page": 65
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "Two data sets of 23 integers each are summarized in the histograms shown. For each of the histograms, the first interval represents the frequency of integers greater than or equal to 10, but less than 20. The second interval represents the frequency of integers greater than or equal to 20, but less than 30, and so on. What is the smallest possible difference between the mean of data set A and the mean of data set B?",
+   "choices": {
+    "A": "0",
+    "B": "1",
+    "C": "10",
+    "D": "23"
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 66,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m1-08-1.webp",
+     "w": 546,
+     "h": 308,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "spr",
+   "prompt": "g(x) = (x + 14)(t − x)\nThe function g is defined by the given equation, where t is a constant. In the xy-plane, the graph of y = g(x) passes through the point (18,0). What is the value of g(0)?",
+   "answer": "252",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 67
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "spr",
+   "prompt": "In the ancient Roman measurement system, a leuga was a unit of length that was equal to 7,500 pedes. In this measurement system, how many pedes were equivalent to 4.2 leugas?",
+   "answer": "31500",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 68
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "35 − x\ny =\nax + b\nWhat is the x-intercept of the graph of the equation in the xy-plane, where a and b are positive constants?",
+   "choices": {
+    "A": "(35,0)",
+    "B": "(0,−35)",
+    "C": "(0,^3_b^5)",
+    "D": "(−_a^b,0)"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 69
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "spr",
+   "prompt": "A triathlon is a multisport race consisting of three different consecutive events. A triathlon participant plans to complete the cycling event with an average speed of 31,680 yards per hour. What is this average speed, in miles per hour? (1 mile = 1,760 yards)",
+   "answer": "18",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 70
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "spr",
+   "prompt": "The figure shown is a right rectangular pyramid, where l = 16 units, w = 8 units, and h = 18 units. What is the surface area, in square units, of the pyramid?",
+   "answer": "580.6",
+   "answerConfidence": "low",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 71,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m1-13-1.webp",
+     "w": 391,
+     "h": 342,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "f(x) = 18(2.80)^(x2)\nThe function f is defined by the given equation. The value of f(x) increases by p% for every increase of x by 4. For which of the following functions, where n is a positive constant, does the value of g(x) increase by p% for every increase of x by 1?",
+   "choices": {
+    "A": "g(x) = n(1.40)^x",
+    "B": "g(x) = n(2.80)^x",
+    "C": "g(x) = n(6.84)^x",
+    "D": "g(x) = n(7.84)^x"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 72
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "The scatterplot shows 9 data points and their line of best fit. For how many of the 9 data points is the actual y-value greater than the y-value predicted by the line of best fit?",
+   "choices": {
+    "A": "8",
+    "B": "7",
+    "C": "5",
+    "D": "2"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "two-var-data",
+   "page": 73,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m1-15-1.webp",
+     "w": 412,
+     "h": 382,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "In triangles RST and XY Z shown, XY is parallel to TS and tanR =_2^1_3^6_1^0. What is the value of sinX in triangle XY Z?",
+   "choices": {
+    "A": "319610",
+    "B": "218610",
+    "C": "228311",
+    "D": "126301"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 74,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m1-16-1.webp",
+     "w": 445,
+     "h": 474,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "f(x) = (x − 3)(x + 5)\nThe function f is defined by the given equation. The function g is defined by g(x) = f(x − 2) + 4. Which of the following equations is an equivalent form of g(x) that displays the minimum value of g as a constant or coefficient?",
+   "choices": {
+    "A": "g(x) = (x − 5)(x + 3) + 4",
+    "B": "g(x) = (x + 1)^2 − 12",
+    "C": "g(x) = (x − 1)^2 − 12",
+    "D": "g(x) = x^2 − 2x − 11"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 75
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "spr",
+   "prompt": "A researcher investigated two species of mites: a predator and its prey. At the start of a week, there was an equal number of the two species. At the end of the week, the number of prey had increased by 1,900% of the number of prey at the start of the week, and the number of predators had increased by 220% of the number of predators at the start of the week. The number of predators at the end of the week was p% less than the number of prey at the end of the week. What is the value of p?",
+   "answer": "84",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 76
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "Each 3.0-ounce serving of cheddar cheese and each 1.2-ounce serving of tuna provides about 1 microgram of vitamin B12. If a total of 3.5 micrograms of vitamin B12 are consumed from eating x ounces of cheese and y ounces of tuna, which equation best represents this situation?",
+   "choices": {
+    "A": "0.33x + 0.33y = 3.5",
+    "B": "3.0x + 1.2y = 3.5",
+    "C": "1.2x + 3.0y = 3.5",
+    "D": "0.33x + 0.83y = 3.5"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-two-var",
+   "page": 77
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "In triangle RST, RS = 504, ST = 128, and TR = 520. Triangle RST is similar to triangle UV W, where S corresponds to V and T corresponds to W. What is the value of tanW?",
+   "choices": {
+    "A": "6156",
+    "B": "6136",
+    "C": "6653",
+    "D": "1663"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 78
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "Which of the following data sets has the largest standard deviation, where p is a constant?",
+   "choices": {
+    "A": "p − 10, p − 5, p, p − 2, p + 2",
+    "B": "p − 5, p − 5, p, p, p − 2",
+    "C": "p − 2, p + 2, p, p, p − 5",
+    "D": "p, p, p, p, p"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 79
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "In the equation 7x(x + 11) = r, r is a positive integer. How many distinct real solutions does the equation have for x?",
+   "choices": {
+    "A": "Zero",
+    "B": "Exactly one",
+    "C": "Exactly two",
+    "D": "Infinitely many"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 80
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "prompt": "A rectangle is inscribed in a circle. If the length of the diagonal of the rectangle is 482√3, what is the radius of the circle?",
+   "choices": {
+    "A": "241√3",
+    "B": "482√3",
+    "C": "964√3",
+    "D": "241√6"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 82
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "What is the sum of the solutions to the equation x^2 − 90x − 18 = 0?",
+   "choices": {
+    "A": "−90",
+    "B": "−18",
+    "C": "18",
+    "D": "90"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 83
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "In the xy-plane, the function g(x) is defined as g(x) =^f_x^(_+^x_4^). If the y-intercept of the graph of y = g(x) is (0,54), what is the value of f(0)?",
+   "choices": {
+    "A": "13.5",
+    "B": "54",
+    "C": "216",
+    "D": "220"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 84
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "A square pyramid has a base side length of a = 4 units and a height of h = 6 units. What is the volume of the pyramid in cubic units?",
+   "choices": {
+    "A": "8",
+    "B": "16",
+    "C": "32",
+    "D": "48"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 85
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "The graph of a quadratic function y = f(x) opens upward with its vertex located below the line y = −9. Which of the following could be the number of real solutions to the equation f(x) = −9?",
+   "choices": {
+    "A": "Zero",
+    "B": "Exactly one",
+    "C": "Exactly two",
+    "D": "Infinitely many"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 86
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "If 7(x − 4)^2 = 700 and x > 0, what is the value of x?",
+   "choices": {
+    "A": "6",
+    "B": "10",
+    "C": "14",
+    "D": "104"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 87
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "Line j passes through the points (12,0) and (8,0) in the xy-plane. Line k is perpendicular to line j and passes through the origin (0,0). At what x-coordinate do line j and line k intersect?",
+   "choices": {
+    "A": "−12",
+    "B": "0",
+    "C": "8",
+    "D": "10"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 88
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "A quadratic function f(x) satisfies f(0) = 3 and f(8) = 3. Which of the following equations could define f(x)?",
+   "choices": {
+    "A": "f(x) = x(x − 8) + 3",
+    "B": "f(x) = x(x + 8) + 3",
+    "C": "f(x) = (x − 3)(x − 8)",
+    "D": "f(x) = 3x^2 − 8x"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 89
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "In triangle ABC, angle C is a right angle (∠C = 90^∘). Point E lies on side AC such that CE = 2 ⋅ AE, and point D lies on side AB such that segment ED is perpendicular to AC. If BC = 198, what is the length of segment ED?",
+   "choices": {
+    "A": "66",
+    "B": "99",
+    "C": "132",
+    "D": "396"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 90
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "x\nf(x) = 16 −\n27\nThe function f is defined by the given equation. What is the value of f(270)?",
+   "choices": {
+    "A": "−10",
+    "B": "6",
+    "C": "10",
+    "D": "26"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 91
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "y = 6\ny = −4x + 2\nA system of linear equations is given. What is the solution (x,y) to the system?",
+   "choices": {
+    "A": "(−1,6)",
+    "B": "(1,6)",
+    "C": "(6,−1)",
+    "D": "(6,22)"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 92
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "The total remaining distance, in miles, of a runner after t hours is modeled by the function g(t) = 22 − 4t. What is the best interpretation of the number 22 in this context?",
+   "choices": {
+    "A": "The speed of the runner in miles per hour",
+    "B": "The total time taken to finish the run",
+    "C": "The initial total distance, in miles, of the run",
+    "D": "The distance covered in the first hour"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 93
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "A quantity decreases by 20% every 5 seconds. If the initial value of the quantity is 340, which function f(x) represents the value of the quantity after x seconds?",
+   "choices": {
+    "A": "f(x) = 340(0.2)^(5x)",
+    "B": "f(x) = 340(0.8)^(5x)",
+    "C": "f(x) = 340(0.2)^x5",
+    "D": "f(x) = 340(0.8)^x5"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 94
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "A company’s annual revenue was x dollars in 2012. The revenue increased by 12% from 2012 to 2013, and increased by 4% from 2013 to 2014. If the revenue in 2014 was y times the revenue in 2012, which expression represents y?",
+   "choices": {
+    "A": "(1.12)(1.04)",
+    "B": "(1.12) + (1.04)",
+    "C": "11..1024",
+    "D": "(1.12)1(1.04)"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 95
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "The table shows values of x and y. Which type of function best models the relationship between x and y? x 1 2 3 4 y 4,000 2,400 1,440 864",
+   "choices": {
+    "A": "Linear",
+    "B": "Exponential decay",
+    "C": "Quadratic",
+    "D": "Absolute value"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 96
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "During a triathlon, an athlete swims at a rate of 31,152 inches per hour. Given that 1 yard = 36 inches, what is this speed in yards per hour?",
+   "choices": {
+    "A": "17.7",
+    "B": "865.33",
+    "C": "1,760",
+    "D": "8,653.33"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 97
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "prompt": "The scatterplot shows the relationship between two variables, x and y. A line of best fit is also shown. For x = 5, how much greater is the y-value predicted by the line of best fit than the actual y- value of the data point?",
+   "choices": {
+    "A": "1",
+    "B": "5",
+    "C": "6",
+    "D": "11"
+   },
+   "answer": "A",
+   "answerConfidence": "medium",
+   "domain": "problem-solving",
+   "skill": "two-var-data",
+   "page": 98,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-int-a/m2-17-1.webp",
+     "w": 355,
+     "h": 340,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "g(x) = − √x^2 + bx + c\nThe function g is defined by the given equation, where b and c are integers. In the xy-plane, the graph of y = g(x) passes through the points (2,0) and (0,− √298). If m is a value for which g(m) = 0, what is the greatest possible value of m?",
+   "choices": {
+    "A": "−150",
+    "B": "2",
+    "C": "149",
+    "D": "150"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 99
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "18p − 19p = 17\nWhat is the value of p that satisfies the equation?",
+   "choices": {
+    "A": "−17",
+    "B": "−_1^1_7",
+    "C": "17",
+    "D": "37"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-equations-one-var",
+   "page": 100
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "Points A and B lie on a circle centered at point C. If the length of line segment AC is 34 mm, what is the length of segment BC?",
+   "choices": {
+    "A": "17 mm",
+    "B": "34 mm",
+    "C": "68 mm",
+    "D": "115.6 mm"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 101
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "Which of the following expressions is equivalent to _x^4_(−5) −_((x−)^4_(5))2 for all x > 5?",
+   "choices": {
+    "A": "(x−05)^2",
+    "B": "(4xx−−52)42",
+    "C": "(4xx−−51)62",
+    "D": "x4−5"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 102
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "3x = 2 + 8y\n−3x = −5 + 8y\nConsider the system of linear equations above. What is the value of 6x?",
+   "choices": {
+    "A": "27",
+    "B": "7",
+    "C": "14",
+    "D": "21"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 103
+  }
+ ]
+}

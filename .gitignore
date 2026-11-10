@@ -44,3 +44,7 @@ next-env.d.ts
 # generated question bank (npm run bank:build)
 /content/bank/dist/
 /content/bank/.work/
+
+# generated practice tests (npm run tests:build) and review scratch
+/content/tests/dist/
+/content/tests/.work/

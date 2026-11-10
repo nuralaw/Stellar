@@ -1,0 +1,1911 @@
+{
+ "id": "2026-08-us-a",
+ "title": "Aug 2026 US A",
+ "year": 2026,
+ "month": 8,
+ "version": "US",
+ "form": "A",
+ "sections": [
+  "rw",
+  "math"
+ ],
+ "answerSource": "solved",
+ "pdf": "Aug 2026 US A (TalimSAT).pdf",
+ "questions": [
+  {
+   "key": "rw1-01",
+   "section": "rw",
+   "module": 1,
+   "n": 1,
+   "type": "mcq",
+   "passage": "For decades, automotive technicians focused almost exclusively on mechanical systems. However, the rapid adoption of electric vehicles has ______ this approach, as technicians must now master high- voltage safety protocols, battery management systems, and specialized diagnostic procedures that were entirely unnecessary in the era of internal combustion engines. The shift requires a complete rethinking of traditional training programs and certification standards across the industry.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "preceded",
+    "B": "standardized",
+    "C": "upended",
+    "D": "misrepresented"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 3
+  },
+  {
+   "key": "rw1-02",
+   "section": "rw",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "passage": "The plaice is an ectothermic (cold-blooded) fish, whereas the Pacific bluefin tuna is a regional endotherm; unlike that of ectotherms, its body temperature remains above the ambient water temperature. The basking shark had been classified as a full ectotherm, but researchers Haley R. Dolton et al. found that its body temperature remains 1.0 to 1.5°C above ambient, which is ______ that classification. This discovery has prompted a reevaluation of thermal strategies among large marine predators.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "opportune for",
+    "B": "subordinate to",
+    "C": "incongruous with",
+    "D": "indicative of"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 4
+  },
+  {
+   "key": "rw1-03",
+   "section": "rw",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "passage": "Hydrogen production via water electrolysis is an emerging industry whose water usage relative to that of other industrial sectors is negligible. The industry’s growth is thus unlikely to ______ water scarcity globally, but it could do so in South Korea: competition from other sectors for already scarce water resources in South Korea precludes its achievement of hydrogen self-sufficiency. Policymakers must therefore weigh regional water constraints carefully when planning large-scale facilities.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "assuage",
+    "B": "rescind",
+    "C": "extricate",
+    "D": "exacerbate"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 5
+  },
+  {
+   "key": "rw1-04",
+   "section": "rw",
+   "module": 1,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Despite the marked divergence of such ballads as “The House Carpenter” from their antecedents in Britain, the balladry of the Appalachian South long figured as a proxy for the music naturalized there in the colonial era. More recent scholarship offers a ______ directly acknowledging Appalachian innovations to British ballads as well as the influence of spirituals sung in Black churches in the South. This newer perspective has reshaped understanding of cultural exchange in the region.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "recapitulation",
+    "B": "corollary",
+    "C": "corrective",
+    "D": "hypothesis"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 6
+  },
+  {
+   "key": "rw1-05",
+   "section": "rw",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "passage": "Dragon against Tiger is an important work of Nihonga, or classical Japanese painting. Unlike Wada Eisaku, who adopted traditional European methods such as painting with oil on canvas, Hashimoto Gahō ______ traditional Japanese approaches. For instance, Hashimoto produced Dragon against Tiger by applying color pigments to a silk surface, thereby preserving techniques that had defined the genre for centuries.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "adhered to",
+    "B": "reprimanded",
+    "C": "awarded",
+    "D": "refrained from"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 7
+  },
+  {
+   "key": "rw1-06",
+   "section": "rw",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is adapted from Rupa Bajwa’s 2004 novel The Sari Shop. Ramchand works as an assistant in a shop in Amritsar, India. Even at ten in the morning, the bazaar was throbbing with activity. The halwai [baker] was already installed in front of the Mishthan Sweet Shop, pressing jalabi batter into squiggly shapes that floated and simmered in the oil in a big iron cauldron. All the shops had opened for the day and, Ramchand noted guiltily, all the shop assistants were already in place, trying to sell things with fixed, attentive smiles on their shiny, bathed faces.",
+   "prompt": "Based on the text, what can most reasonably be inferred about Ramchand?",
+   "choices": {
+    "A": "Ramchand is overwhelmed by a bazaar after seeing the chaos of other shop assistants selling goods.",
+    "B": "Ramchand is enthusiastic about being at work after seeing shop assistants who are excited about their jobs.",
+    "C": "Ramchand is remorseful about arriving to work later than other shop assistants he sees.",
+    "D": "Ramchand is fascinated by frying jalabi batter while wandering to work as a shop assistant."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 8
+  },
+  {
+   "key": "rw1-07",
+   "section": "rw",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Throughout history, tall structures such as Liaodi Pagoda in China or Norwich Cathedral in the United Kingdom have posed a challenge to their architects, since these structures are more susceptible to physical forces than smaller structures. For example, the lower floors of a building must be able to support the enormous weight of the upper floors. To test a hypothesis that steel is more suitable than concrete for construction of a tall building’s lower floors, researchers created a computer model of two buildings that were identical except that one had concrete lower floors while one had steel lower floors, and simulated the effects of the forces of wind and gravity on those structures over the course of a century.",
+   "prompt": "Which finding from the model tests, if true, would support the researchers’ hypothesis?",
+   "choices": {
+    "A": "At the end of the simulation, the structure with concrete lower floors was several inches shorter than the structure with steel lower floors.",
+    "B": "During the simulation, when sudden forces caused vibrations in the structures, those vibrations took longer to disappear in the structure with steel lower floors than in the structure with concrete lower floors.",
+    "C": "At the end of the simulation, the structure with steel lower floors had slightly larger dimensions at its base than it did at the beginning of the simulation.",
+    "D": "During the simulation, the structure with steel lower floors bent in high wind to a greater degree than did the structure with concrete lower floors."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 9
+  },
+  {
+   "key": "rw1-08",
+   "section": "rw",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Though previous studies, including work by Pratt et al. (2007), have documented that wood density correlates negatively with resistance to water stress in angiosperm taxa, Trueba et al. (2017) observed no such associations among New Caledonian woody angiosperms. Trueba et al. noted that while several earlier studies included a variety of habitats—wet forests, savannas, mountains—and thus comprised plants with a wide range of functional trait values, the New Caledonian investigation was restricted to rainforest taxa occupying climatically similar habitats, resulting in constrained ranges of such values.",
+   "prompt": "Which choice best states the main purpose of the text?",
+   "choices": {
+    "A": "To indicate that wood density and water-stress resistance correlations in angiosperms vary significantly depending on the geographic region and climate conditions studied",
+    "B": "To clarify why a geographically restricted study invalidated the finding that angiosperm species exhibit a trade-off between wood density and water-stress resistance",
+    "C": "To explain the apparent absence of a previously observed association between two functional traits in angiosperm species sampled from an ecologically homogeneous set of habitats",
+    "D": "To describe a study whose results demonstrate that a known relationship between two functional traits in angiosperms cannot be observed when sampling is restricted to homogeneous habitats"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "text-structure-purpose",
+   "page": 10
+  },
+  {
+   "key": "rw1-09",
+   "section": "rw",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "passage": "It is common for freshwater lakes near or above a latitude of 45° north of the equator, like Opeongo Lake in Canada, to accumulate surface ice in winter. A study from 1980 to 2006 showed that, in general, the number of days per winter that such lakes have measurable amounts of surface ice is declining. However, a researcher claimed that some lakes have instead seen an increase in the duration of ice, citing as an example ______.",
+   "prompt": "Which choice most effectively uses data from the graph to complete the researcher’s example?",
+   "choices": {
+    "A": "both Lake Mendota and Kalmarinjärvi, which had more days of ice in the winter of 2005–06 than they did in the winter of 1980–81.",
+    "B": "both Lake Baikal and Kalmarinjärvi, which had more than 95 days of ice in the winter of 2005– 06.",
+    "C": "both Lake Baikal and Kalmarinjärvi, which had fewer than 200 days of ice in the winter of 1980– 81.",
+    "D": "Lake Baikal, which had more days of ice in the winter of 2005–06 than it did in the winter of 1980–81."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 11,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/rw1-09-1.webp",
+     "w": 891,
+     "h": 963,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw1-10",
+   "section": "rw",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Research suggests that REM sleep in animals is homeostatically regulated: animals compensate for periods of REM sleep deprivation by increasing subsequent REM sleep. When on land, fur seals get enough REM sleep, but during the weeks they’re in the water, they get almost none. In a study of fur seals’ sleep habits, researchers recorded the REM sleep (as a percentage of baseline) of fur seals once they had returned to land. They concluded that REM sleep may not be homeostatically regulated in fur seals, citing as evidence the fact that the seals in the study ______.",
+   "prompt": "Which choice most effectively uses data from the graph to complete the text?",
+   "choices": {
+    "A": "didn’t show significantly less REM sleep during the second day after returning to land than they did during the first day.",
+    "B": "showed no significant differences from one another in baseline levels of REM sleep.",
+    "C": "didn’t consistently demonstrate a significant increase in REM sleep after their period of deprivation in the water.",
+    "D": "showed no significant difference between REM sleep after returning to land and REM sleep while in the water."
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 12,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/rw1-10-1.webp",
+     "w": 745,
+     "h": 901,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw1-11",
+   "section": "rw",
+   "module": 1,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Text 1\nIsaac Asimov, author of Nemesis and The Stars, Like Dust, is highly regarded despite his mediocre writing style. His prose is workmanlike; his characters are flat and discuss ideas rather than emotions. That this work is enjoyable despite this is a testament to his prodigious imagination—even if people read his books only for the ideas, they will have plenty to consider.\nText 2\nAsimov is critiqued for his style, but it is wrong to fault a writer for failing to do what he never intended to do. For example, although most of his novel Foundation consists of people discussing science and politics and we find out little about his characters’ lives, Asimov wanted to convey the vast sweep of human history over centuries, and one of his points is that at such a timescale, individuals don’t matter. Thus his lack of characterization is central to Asimov’s thematic aims.",
+   "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the evaluation of Asimov’s writing style in the underlined claim in Text 1?",
+   "choices": {
+    "A": "By arguing that Asimov’s writing style should be judged against the styles of historians rather than those of fiction writers",
+    "B": "By asserting that Asimov’s minimal characterization is likely a conscious choice that helps him convey an important idea",
+    "C": "By pointing out that the flatness of Asimov’s characters is a feature of Nemesis and The Stars, Like Dust but not of Foundation",
+    "D": "By agreeing that Asimov’s prose is flawed but disagreeing about the quality of his characters"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 13
+  },
+  {
+   "key": "rw1-12",
+   "section": "rw",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Positive expressive writing is a writing technique intended to create positive mindsets through a focus on exploring and expressing thoughts and emotions such as happiness. Lauren Hoult and colleagues systematically reviewed multiple studies about different styles of positive expressive writing that included methods known as gratitude letter, satisfaction processes, and best possible self. They concluded that gratitude letter and best possible self showed the most consistent benefits for increasing happiness and fostering a positive mindset.",
+   "prompt": "According to the text, which methods of positive expressive writing did Hoult and colleagues conclude were most consistently effective?",
+   "choices": {
+    "A": "Best possible self and fostering a positive mindset",
+    "B": "Gratitude letter and best possible self",
+    "C": "Best possible self and satisfaction processes",
+    "D": "Gratitude letter and satisfaction processes"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 14
+  },
+  {
+   "key": "rw1-13",
+   "section": "rw",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "passage": "O’Donoghue et al. (2021) analyzed temperature data of Jupiter’s upper atmosphere observed in 2016 and 2017. When superimposed on a map of Jupiter, time-lapse data representing several hours of observations from one day in 2016 and one day in 2017 indicate an overall temperature gradient from the poles to the equator, with highest temperatures occurring at the poles, which undergo auroral heating. But the 2017 data exhibit a large oval of unusually elevated temperature separated from the aurora at one pole by a band of cooler atmosphere. No other known heating mechanism on Jupiter could account for the formation of this anomalous structure, so one hypothesis considered was that it was ejected from the auroral region toward the equator.",
+   "prompt": "Which finding about Jupiter’s upper atmosphere, if true, would most strongly support the hypothesis as described in the text?",
+   "choices": {
+    "A": "Comparing the data observed in 2016 with those observed in 2017 suggests that the anomalous oval of elevated temperature began forming in 2016.",
+    "B": "The 2017 data viewed in time-lapse show greater disparities between polar and equatorial temperatures at the beginning of the observation period than at the end of the period observed.",
+    "C": "The 2017 data viewed in time-lapse appear to show the oval of elevated temperature drifting slightly away from the area of auroral heating over a period of several hours.",
+    "D": "According to the data, auroral temperatures in 2016 were higher than those in 2017, although in both years the highest observed temperatures were harbored in auroral zones."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 15
+  },
+  {
+   "key": "rw1-14",
+   "section": "rw",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "passage": "In 1967, archaeologist James Mellaart claimed that at its peak, Çatalhöyük—a 33-acre Neolithic village in present-day Turkey that dates from approximately 7100 to 5950 BCE—housed between 8,000 to 10,000 residents, an estimate based on the excavation of dense clusters of mud brick buildings that were thought to have been dwellings. Arguing that such estimates should be reevaluated, Ian Kuijt and Arkadiusz Marciniak (2024) cite radiocarbon data and ethnographic modeling that suggest the heterogeneity of building use in Çatalhöyük, with many individual buildings being inhabited for relatively brief periods—20 to 30 years or less—before being abandoned or repurposed for nonresidential functions (e.g., storage). Accordingly, these recent findings challenge the assumption that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the buildings excavated at Çatalhöyük at the time of Mellaart’s research had served a residential purpose as early as 7100 BCE.",
+    "B": "the use of mud bricks is a reliable indicator that a structure had been used either as a dwelling or for nonresidential purposes.",
+    "C": "the number of buildings at Çatalhöyük would have been sufficient to accommodate a population that expanded from 8,000 to 10,000 inhabitants by 5950 BCE.",
+    "D": "the density of excavated buildings at Çatalhöyük can serve as a proxy for how many people inhabited the village at a given time."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 16
+  },
+  {
+   "key": "rw1-15",
+   "section": "rw",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Hypothesizing that lullabies, characterized by their less steady beat, are universally calming to infants, Constance M. Bainbridge and colleagues played a lullaby sung in the Selk’nam language and a non- lullaby sung in the Chuukese language to a group of infants. The team found that the infants’ heart rates and pupil size both decreased more during the lullaby than during the non-lullaby. Since a decrease in heart rate is associated with relaxation, the team concluded that the lullaby relaxed the infants. However, noting that reduced heart rate can also be associated with increased attention, one critic argues that instead, the lullaby simply attracted the infants’ attention.",
+   "prompt": "Which finding, if true, would most directly weaken the critic’s claim?",
+   "choices": {
+    "A": "Parents of infants in the study preferred the Selk’nam lullaby over the Chuukese non-lullaby.",
+    "B": "Increased attention to a stimulus is usually accompanied by an increase in pupil size.",
+    "C": "Infants in the study had no familiarity with either the Selk’nam language or the melody of the Ona lullaby.",
+    "D": "More frequent blinking has also been found to be a reliable indication of attention."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 17
+  },
+  {
+   "key": "rw1-16",
+   "section": "rw",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "passage": "A recipient of the Nobel Prize in Chemistry and the Golden Plate Award of the American Academy of Achievement, ______ known as femtochemistry when he devised an optical spectroscopy technique that allowed researchers to study ultrafast chemical reactions occurring within molecules.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "chemist Ahmed Zewail expanded the limits of measurability and introduced a new scientific discipline",
+    "B": "the result of chemist Ahmed Zewail’s expansion of the limits of measurability was the introduction of a new scientific discipline",
+    "C": "the limits of measurability were expanded by chemist Ahmed Zewail who introduced a new scientific discipline",
+    "D": "the introduction of a new scientific discipline by chemist Ahmed Zewail led to the expansion of the limits of measurability"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 18
+  },
+  {
+   "key": "rw1-17",
+   "section": "rw",
+   "module": 1,
+   "n": 17,
+   "type": "mcq",
+   "passage": "To experience both the multi-instrument groove of contemporary blues music and the stripped-down Delta blues of Bukka White and other blues forebearers ______ the rich history of the genre.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "realizing",
+    "B": "to realize",
+    "C": "are realizing",
+    "D": "is to realize"
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 19
+  },
+  {
+   "key": "rw1-18",
+   "section": "rw",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "passage": "The Outdoor Girls book series was among the many children’s series that were published during the first half of the twentieth century. ______ the Outdoor Girls books were published from 1913 to 1933.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Finally,",
+    "B": "By contrast,",
+    "C": "Nevertheless,",
+    "D": "To be exact,"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 20
+  },
+  {
+   "key": "rw1-19",
+   "section": "rw",
+   "module": 1,
+   "n": 19,
+   "type": "mcq",
+   "passage": "In 1965, Morrie Turner’s comic strip Wee Pals became the first serial comic by a Black cartoonist to be syndicated, appearing in papers nationwide. ______ many other strips by Black cartoonists were syndicated, including Stephen Bentley’s Herb and Jamaal in 1989 and Keith Knight’s The Knight Life in 2008.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Later,",
+    "B": "That is,",
+    "C": "For example,",
+    "D": "Previously,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 21
+  },
+  {
+   "key": "rw1-20",
+   "section": "rw",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "passage": "In a 2005 study by Sandoval et al., the researchers’ aim was to analyze the diet composition of elk and mule deer in New Mexico. ______ they aimed to analyze the ratio of three different plant subtypes within these animals’ diet: graminoids, forbs, and browse.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Instead,",
+    "B": "All the same,",
+    "C": "Therefore,",
+    "D": "Specifically,"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 22
+  },
+  {
+   "key": "rw1-21",
+   "section": "rw",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "passage": "Between the thirteenth and fifteenth centuries, during the height of the Indian Ocean trade network, Ternate emerged as an important port city in the Moluccas. ______ Ternate’s strategic location facilitated the exchange of cloves and nutmeg between distant regions, contributing to a prosperous commercial ecosystem that connected ports from Africa to East Asia.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "However,",
+    "B": "Indeed,",
+    "C": "Likewise,",
+    "D": "As a result,"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 23
+  },
+  {
+   "key": "rw1-22",
+   "section": "rw",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "passage": "A team led by Portuguese researcher Isabel C.F.R. Ferreira found that many species of mushrooms contain chemicals called phenolic compounds, such as protocatechuic acid and biochanin. ______ Ferreira detected protocatechuic acid in Agaricus bisporus mushrooms and biochanin in Ganoderma lucidum mushrooms.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Nevertheless,",
+    "B": "However,",
+    "C": "For this reason,",
+    "D": "For example,"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 24
+  },
+  {
+   "key": "rw1-23",
+   "section": "rw",
+   "module": 1,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Researchers’ attempts to reintroduce the extinct toromiro tree to the Pacific island of Rapa Nui faced repeated failures despite the use of healthy seedlings and careful cultivation methods. ______ scientists later discovered that the island’s soil, altered over decades by erosion and the loss of native vegetation, lacked the specific mycorrhizal fungi the toromiro needs to absorb nutrients effectively.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Similarly,",
+    "B": "Eventually,",
+    "C": "In contrast,",
+    "D": "Regardless,"
+   },
+   "answer": "B",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 25
+  },
+  {
+   "key": "rw1-24",
+   "section": "rw",
+   "module": 1,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nMarie Tharp (1920–2006) was a geologist and cartographer.\nIn the 1950s, she mapped the ocean floor using sonar data collected by colleague Bruce Heezen. Her maps revealed the Mid-Atlantic Ridge, an underwater mountain range. This discovery provided key evidence supporting the then-controversial theory of continental drift. Tharp’s interpretation of the data was initially dismissed by many scientists, including Heezen.",
+   "prompt": "The student wants to emphasize the scientific significance of Tharp’s discovery. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Marie Tharp collaborated with Bruce Heezen, who initially dismissed her interpretation of the sonar data.",
+    "B": "Tharp’s mapping of the Mid-Atlantic Ridge provided crucial evidence supporting the then- controversial theory of continental drift.",
+    "C": "Tharp worked as a geologist and cartographer, mapping the ocean floor in the 1950s.",
+    "D": "Sonar data collected by Heezen allowed Tharp to produce detailed maps of the seafloor."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 26
+  },
+  {
+   "key": "rw1-25",
+   "section": "rw",
+   "module": 1,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Library of Alexandria was founded in Egypt around the 3rd century BCE. It was one of the largest libraries of the ancient world. Scholars there advanced fields such as geometry and astronomy. Eratosthenes, a librarian there, calculated Earth’s circumference with notable accuracy. The library’s exact cause of destruction remains debated among historians. The student wants to give a specific example of a scholarly achievement associated with the library.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "At the Library of Alexandria, the scholar Eratosthenes calculated the circumference of Earth with remarkable accuracy.",
+    "B": "The Library of Alexandria, founded in Egypt in the 3rd century BCE, was among the largest libraries of the ancient world.",
+    "C": "Historians continue to debate the exact cause of the Library of Alexandria’s destruction.",
+    "D": "The Library of Alexandria supported advances in fields such as geometry and astronomy."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 27
+  },
+  {
+   "key": "rw1-26",
+   "section": "rw",
+   "module": 1,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nOctopuses have three hearts and blue blood.\nTheir blood uses hemocyanin, a copper-based molecule, instead of iron-based hemoglobin. Hemocyanin is less efficient at transporting oxygen in warm water than hemoglobin. Octopuses are found in oceans worldwide, from tropical reefs to polar waters. Some octopus species can change both color and skin texture within seconds.",
+   "prompt": "The student wants to explain why the efficiency of octopus blood varies by environment. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Octopuses can change both their color and skin texture within seconds to blend into their environment.",
+    "B": "Octopuses are found across a wide range of ocean environments, from tropical reefs to polar waters.",
+    "C": "Octopus blood contains hemocyanin, a copper-based molecule, rather than iron-based hemoglobin.",
+    "D": "Because octopus blood relies on hemocyanin rather than hemoglobin, it transports oxygen less efficiently in warm water."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 28
+  },
+  {
+   "key": "rw1-27",
+   "section": "rw",
+   "module": 1,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Antikythera mechanism was recovered from a shipwreck near a Greek island in 1901. It is an ancient bronze device dating to around the 2nd century BCE. Analysis has shown it could predict astronomical positions and eclipses. Some researchers consider it an early mechanical analog computer. The mechanism contains over 30 interlocking bronze gears.",
+   "prompt": "The student wants to introduce the device and, in one sentence, convey why it is historically remarkable. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The Antikythera mechanism, recovered from a shipwreck in 1901, contains over 30 interlocking bronze gears.",
+    "B": "Researchers have found that the Antikythera mechanism could predict astronomical positions and eclipses.",
+    "C": "Dating to around the 2nd century BCE, the Antikythera mechanism is considered by some researchers to be an early mechanical analog computer.",
+    "D": "The Antikythera mechanism was recovered from a shipwreck near a Greek island in 1901."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 29
+  },
+  {
+   "key": "rw2-01",
+   "section": "rw",
+   "module": 2,
+   "n": 1,
+   "type": "mcq",
+   "passage": "Though research indicating that plants may preferentially absorb copper and other essential elements (those necessary for plant growth) from soil over nonessential ones seems to suggest that copper- contaminated soil may be especially ______ to decontamination by plants, Swantje Duthweiler and team found that plants tended to accumulate the nonessential element cadmium at higher rates than copper. The presence of cadmium in such soils should thus be assessed before pursuing plant-based copper decontamination. This finding complicates earlier assumptions about phytoremediation efficiency and highlights the need for site-specific soil testing.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "pertinent",
+    "B": "detrimental",
+    "C": "unresponsive",
+    "D": "amenable"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 31
+  },
+  {
+   "key": "rw2-02",
+   "section": "rw",
+   "module": 2,
+   "n": 2,
+   "type": "mcq",
+   "passage": "Any effort to raise the toll that drivers must pay to use the Ogdensburg-Prescott Bridge, which spans the Saint Lawrence River to connect New York State and Ontario, Canada, should explain why a higher toll is necessary. No amount of justification, however, is likely to persuade some drivers who believe the current toll is ______. These drivers view the existing fee as already excessive relative to the convenience the bridge provides, and further increases risk reducing overall traffic volume across the crossing.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "contentious",
+    "B": "equivocal",
+    "C": "exorbitant",
+    "D": "warranted"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 32
+  },
+  {
+   "key": "rw2-03",
+   "section": "rw",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "passage": "The presumptive functionality of khipu, the semiotic system of knotted cords once used by Indigenous Andean peoples, to encode language (perhaps, like Anatolian hieroglyphs, in units of discrete words) now has an empirical basis. Manuel Medrano’s statistical data on Spanish translations of khipu content, as recited by Aymara-speaking scribes, ______ historical reports of khipu’s status as a linguistic record. This new evidence strengthens the case that khipu functioned as more than a simple accounting device.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "supersede",
+    "B": "replicate",
+    "C": "supplement",
+    "D": "complicate"
+   },
+   "answer": "B",
+   "answerConfidence": "medium",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 33
+  },
+  {
+   "key": "rw2-04",
+   "section": "rw",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "passage": "Novel chemical elements, such as livermorium (Lv), are synthesized through reactions among existing chemical compounds. Guillermo Restrepo notes that while the orderly framework of the periodic table of the elements guides experimental chemists toward viable combinations of such compounds, unstructured exploration can be just as ______: valuable discoveries have been made by chance. Researchers therefore continue to balance systematic approaches with more open-ended experimentation.",
+   "prompt": "Which choice completes the text with the most logical and precise word or phrase?",
+   "choices": {
+    "A": "fruitful",
+    "B": "prescient",
+    "C": "accessible",
+    "D": "genuine"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 34
+  },
+  {
+   "key": "rw2-05",
+   "section": "rw",
+   "module": 2,
+   "n": 5,
+   "type": "mcq",
+   "passage": "The following text is from Charles Chesnutt’s 1905 novel The Colonel’s Dream. Mr. Morton and Mr. Hale work together. Mr. Morton, the senior partner, who sat opposite Hale, was an older man—a safe guess would have placed him somewhere in the debatable ground between forty and fifty; of a good height, as could be seen even from the seated figure, the upper part of which was held erect with the unconscious ease which one associates with military training.",
+   "prompt": "As used in the text, what does the word “good” most nearly mean?",
+   "choices": {
+    "A": "Considerable",
+    "B": "Well-behaved",
+    "C": "Reliable",
+    "D": "Talented"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "words-in-context",
+   "page": 35
+  },
+  {
+   "key": "rw2-06",
+   "section": "rw",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "passage": "The following text is from George Eliot’s 1860 novel The Mill on the Floss. The narrator is describing the fictional town of St. Ogg’s, located in a part of Great Britain that was occupied by Romans and subsequently by Vikings in the ancient past. It is one of those old, old towns which impress one as a continuation and outgrowth of nature, as much as the nests of the bower-birds or the winding galleries of the white ants; a town which carries the traces of its long growth and history like a millennial tree, and has sprung up and developed in the same spot between the river and the low hill from the time when the Roman legions turned their backs on it from the camp on the hillside, and the long-haired sea-kings came up the river and looked with fierce, eager eyes at the fatness of the land.",
+   "prompt": "Which choice best captures St. Ogg’s as it is presented by the narrator in the text?",
+   "choices": {
+    "A": "By virtue of its great age, St. Ogg’s has acquired the character of an organic entity rooted in its natural surroundings and marked by various external influences.",
+    "B": "In the course of its varied history, St. Ogg’s has undergone such extensive transformations that its current incarnation would scarcely be recognizable to its earliest settlers.",
+    "C": "Because of its strategic location and abundant resources, St. Ogg’s bears the marks of innumerable conflicts between groups who have vied for control over the town.",
+    "D": "As a result of its extreme antiquity, St. Ogg’s tends to strike observers as dilapidated and haphazardly constructed."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 36
+  },
+  {
+   "key": "rw2-07",
+   "section": "rw",
+   "module": 2,
+   "n": 7,
+   "type": "mcq",
+   "passage": "Text 1\nTo discern the ecological role that blackberry plants, or Rubus fruticosus L. aggregate, serve for species of foraging insects, many of which are in decline, Annabel Squire and team recorded about two thousand insect visits to R. fruticosus (between 11 a.m. and 4 p.m.) during the plant’s flowering period. They observed visits from a diverse range of species, including Chloromyia formosa and Apis mellifera.\nText 2\nResearchers’ focus on diurnal invertebrate pollinators has resulted in a decided lack of data on moth pollination, but using infrared detection equipment, Max Anderson et al. assessed how diurnal and nocturnal insects separately contribute to R. fruticosus pollination. They found that although 83% of all insect visits occurred during the day, pollen deposition rates were much higher during moths’ nocturnal foraging.",
+   "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the information about Squire and team’s study as presented in Text 1?",
+   "choices": {
+    "A": "By agreeing that the study’s findings are helpful with the caveat that the study should have included more species of plants besides R. fruticosus",
+    "B": "By claiming that the observations by Squire and team might not include an important category of interactions between invertebrate pollinators and R. fruticosus",
+    "C": "By suggesting that Squire and team’s conclusions were undermined by a failure to accurately distinguish diurnal pollinator visits from nocturnal pollinator visits in their data",
+    "D": "By criticizing the study for failing to account for the foraging behavior of vertebrate animals that pollinate R. fruticosus"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "craft-structure",
+   "skill": "cross-text-connections",
+   "page": 37
+  },
+  {
+   "key": "rw2-08",
+   "section": "rw",
+   "module": 2,
+   "n": 8,
+   "type": "mcq",
+   "passage": "Claudine at School is a 1900 novel by Colette, originally written in French. The narrator is a fifteen-year- old girl living in a small, rural town. She presents herself as having a strong emotional attachment to the surrounding forests.",
+   "prompt": "Which quotation from a translation of Claudine at School most effectively illustrates the claim?",
+   "choices": {
+    "A": "“No small creatures in those great woods; no tall grasses; but beaten earth, now dry, and sonorous, now soft on account of the springs. Rabbits with white scuts [tails] range through them and timid deer who run so fast that you can only guess their passage.”",
+    "B": "“Green meadows make rifts in [the woods] here and there, so do little patches of cultivation. But these do not amount to much, for the magnificent woods devour everything. As a result, this lovely region is atrociously poor and its few scattered farms provide just the requisite number of red roofs to set off the velvety green of the woods.”",
+    "C": "“And then there are my favourites, the great woods that are sixteen and twenty years old. It makes my heart bleed to see one of those cut down.”",
+    "D": "“My name is Claudine, I live in Montigny; I was born there in 1884; I shall probably not die there.”"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 38
+  },
+  {
+   "key": "rw2-09",
+   "section": "rw",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "passage": "Distance 2018 2017\nLocation 1 Location 2 Domestic/intl.\n(km) passengers passengers\nHong Kong Seoul-Incheon 2,080 3,081,942 3,198,132 international\nBeijing Shanghai-Hongqiao 1,081 6,518,997 6,833,684 domestic\nBangkok-\nHong Kong 1,694 3,490,988 3,438,628 international\nSuvarnabhumi\nMexico\nMonterrey 729 3,474,971 3,202,091 domestic\nCity\nA study of commercial airline routes that carried the greatest number of passengers in 2017 and 2018 shows that, in general, domestic routes (routes within a single country) carried many more passengers than international routes. However, a few international routes were so popular that they carried more passengers than some of the most highly traveled domestic routes, as can be seen when comparing the ______.",
+   "prompt": "Which choice most effectively uses data from the table to complete the example?",
+   "choices": {
+    "A": "distance between Mexico City and Monterrey with the distance between Hong Kong and Bangkok-Suvarnabhumi.",
+    "B": "number of passengers who traveled between Beijing and Shanghai-Hongqiao in 2017 with the number who traveled between Hong Kong and Seoul-Incheon during that same year.",
+    "C": "number of passengers who traveled between Hong Kong and Bangkok-Suvarnabhumi in 2018 with the number who traveled between Mexico City and Monterrey during that same year.",
+    "D": "number of passengers who traveled between Hong Kong and Bangkok-Suvarnabhumi in 2017 with the number who traveled that same route in 2018."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 39
+  },
+  {
+   "key": "rw2-10",
+   "section": "rw",
+   "module": 2,
+   "n": 10,
+   "type": "mcq",
+   "passage": "Silica cements associated with casts of soft-bodied marine organisms from the Ediacaran period (circa 538–635 million years ago) are plausibly attributable to one of two phenomena: rapid postmortem preservation of the organisms via precipitation of cements from silica-rich oceans or cement precipitation via high-pressure reactions long after the organisms were preserved by some other means. Recognizing that such reactions generally result in cements with germanium/silicon (Ge/Si) ratios lower than those of silica grains recovered from the same portion of sandstone, Lidya Tarhan et al. investigated silica cements and grains associated with Ediacaran soft-bodied casts at a site in South Australia.",
+   "prompt": "Based on the information in the text and the graph, Tarhan et al. could most reasonably draw which conclusion?",
+   "choices": {
+    "A": "The total number of cement samples is much lower than the total number of grains precipitated via high-pressure reactions, which suggests that rapid precipitation from silica- rich oceans could account for the preservation of the site’s organisms.",
+    "B": "The range of Ge/Si ratios is larger for the cements than for the grains, which suggests that the cements are likely the result of high-pressure reactions that occurred long after the organisms were preserved by some other means than precipitation from a silica-rich ocean.",
+    "C": "The distribution of Ge/Si ratios of the cements and grains is largely inconsistent with the cements having precipitated via high-pressure reactions, which implicitly lends support to the idea that the organisms at the site were quickly preserved by cement precipitation from a silica-rich ocean.",
+    "D": "The distribution of Ge/Si ratios indicates that a portion of the cements could have precipitated via high-pressure reactions, which suggests that organisms at the site were less likely to have been preserved via rapid precipitation from a silica-rich ocean than Tarhan et al. hypothesized."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-quantitative",
+   "page": 40,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/rw2-10-1.webp",
+     "w": 870,
+     "h": 758,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "rw2-11",
+   "section": "rw",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "passage": "Nucleobase Concentrations from Murchison Meteorite and Soil Samples in Parts per Billion Murchison meteorite sample Murchison meteorite sample Murchison soil Nucleobase 1 2 sample Isoguanine 0.5 0.04 not detected Purine 0.2 0.02 not detected Xanthine 39 3 1 Adenine 15 1 40 Hypoxanthine 24 1 2 Employing high-performance liquid chromatography—a process that uses pressurized water to separate material into its component molecules—astrochemist Yashiro Oba and colleagues analyzed two samples of the Murchison meteorite that landed in Australia as well as soil from the landing zone of the meteorite to determine the concentrations of various organic molecules. By comparing the relative concentrations of types of molecules known as nucleobases in the Murchison meteorite with those in the soil, the team concluded that there is evidence that the nucleobases in the Murchison meteorite formed in space and are not the result of contamination on Earth.",
+   "prompt": "Which choice best describes data from the table that support the team’s conclusion?",
+   "choices": {
+    "A": "Isoguanine and purine were detected in both meteorite samples but not in the soil sample.",
+    "B": "Adenine and xanthine were detected in both of the meteorite samples and in the soil sample.",
+    "C": "Hypoxanthine and purine were detected in both the Murchison meteorite sample 2 and in the soil sample.",
+    "D": "Isoguanine and hypoxanthine were detected in the Murchison meteorite sample 1 but not in sample 2."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 42
+  },
+  {
+   "key": "rw2-12",
+   "section": "rw",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "passage": "Companies involved in methane distribution include pipelines among their assets. But methane distribution is a very carbon-intensive industry, so as government agencies increase regulations on carbon emissions, demand for methane falls and the pipelines will eventually, or even suddenly, become liabilities as reduced methane prices make it more difficult to recover the expense of maintaining such equipment.",
+   "prompt": "What claim does the text make about the demand for methane?",
+   "choices": {
+    "A": "Companies involved in methane distribution can benefit from a decline in the demand for methane.",
+    "B": "The regulations on carbon emissions are factors in the demand for methane.",
+    "C": "The demand for methane follows a predictable annual cycle.",
+    "D": "Companies involved in methane distribution are not affected by the demand for methane."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "central-ideas",
+   "page": 43
+  },
+  {
+   "key": "rw2-13",
+   "section": "rw",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "passage": "Students in a biology class investigated why individual house mice (Mus musculus) can differ from one another in their responsiveness to potential rewards. The students compared wild-type mice and knockout mice, which are mice with specific genes deactivated, when mice of each type were presented with the same reward system for particular behaviors. Finding that knockout mice with the gene Cartpt deactivated tended to show less sensitivity to rewards than did wild-type mice, the students concluded that differences in reward responsiveness among house mice in nature are solely attributable to variations in the level of expression of Cartpt.",
+   "prompt": "Which finding, if true, would most directly weaken the students’ conclusion?",
+   "choices": {
+    "A": "The mice with Cartpt deactivated were identical to the wild-type mice except with regard to reward responsiveness.",
+    "B": "The level of expression of Cartpt does not appear to affect the functioning of any other genes in house mice.",
+    "C": "A sampling of house mice captured in natural settings shows that individual mice can differ from one another in the level of expression of Cartpt.",
+    "D": "Some wild-type mice were very similar to the knockout mice with regard to reward responsiveness but showed a wide variety of levels of expression of Cartpt."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "command-of-evidence-textual",
+   "page": 44
+  },
+  {
+   "key": "rw2-14",
+   "section": "rw",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "passage": "In cave systems in the Umm Er Radhuma Formation of modern Saudi Arabia, Monika Markowska and colleagues found that from 60,000 to 530,000 years ago, both calcite and gypsum minerals formed in speleothems; after this period, though, only gypsum deposits formed. The process of calcite formation requires sufficient vegetation and soil to produce carbonic acid that dissolves limestone, while gypsum deposits primarily form through evaporation processes and are typical in arid environments. Interestingly, there is some evidence of local groundwater reservoir increases after 60,000 years ago. The concurrent shift in speleothem mineral deposition, however, suggests that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "beginning 60,000 years ago, local precipitation fell to levels too low to maintain the vegetation necessary for gypsum formation.",
+    "B": "higher water levels in groundwater reservoirs were not due to increased local precipitation.",
+    "C": "declining local aridity after 60,000 years ago facilitated the shift in groundwater reservoir levels.",
+    "D": "changes in the mineral composition of groundwater reservoirs were independent of local precipitation patterns."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 45
+  },
+  {
+   "key": "rw2-15",
+   "section": "rw",
+   "module": 2,
+   "n": 15,
+   "type": "mcq",
+   "passage": "Chondrite meteorites recovered on Earth tend to show negligible concentrations of sodium-rich evaporites. Following collection in space and return to Earth in controlled nitrogen environments with extremely low (1%) humidity, material from the asteroid Bennu—which shares compositional features with a chondrite subclass—was found to have significant sodium evaporite concentrations. After five months in Earth air at 30%–40% humidity, a small sample of Bennu material showed significant evaporite deterioration and new compound formation; after eight months in similar conditions, another sample experienced complete loss of sodium evaporites. Together, these observations suggest that ______.",
+   "prompt": "Which choice most logically completes the text?",
+   "choices": {
+    "A": "the nitrogen storage environment in which the Bennu material was transported may have facilitated the formation of sodium-rich evaporites that then deteriorated when exposed to atmospheric humidity typical of most nondesert locations on Earth.",
+    "B": "the sodium evaporite concentrations in recovered chondrites may have once been similar to those in the Bennu material, but exposure to Earth’s atmospheric humidity affected the meteorites before they could be analyzed.",
+    "C": "chondrite meteorites recovered on Earth likely never contained sodium-rich evaporites, unlike material from the asteroid Bennu.",
+    "D": "the low humidity of the nitrogen storage environment was insufficient to preserve the sodium evaporite concentrations found in the Bennu material."
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "information-ideas",
+   "skill": "inferences",
+   "page": 46
+  },
+  {
+   "key": "rw2-16",
+   "section": "rw",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "passage": "Georgia resident Jefferson F. Long, sworn in as a member of the US House of Representatives in 1871, was one of the nearly two thousand African ______ during the decade following the Civil War.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "Americans who won election’s",
+    "B": "Americans who won elections",
+    "C": "Americans’ who won elections’",
+    "D": "American’s who won elections"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 47
+  },
+  {
+   "key": "rw2-17",
+   "section": "rw",
+   "module": 2,
+   "n": 17,
+   "type": "mcq",
+   "passage": "When historian John Irwin founded the Museum of Appalachia in Clinton, Tennessee, in the 1960s, it consisted of just a single log structure. Today, it is a 65-acre living history museum featuring vast collections of folk art, including carvings, textiles, and ______ Arnwine Cabin, one of thirty-five historic log buildings on the property; and a re-created pioneer-era Appalachian farm.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "paintings,",
+    "B": "paintings.",
+    "C": "paintings;",
+    "D": "paintings"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 48
+  },
+  {
+   "key": "rw2-18",
+   "section": "rw",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "passage": "Topographical prominence is a measure of a mountain’s independence from other mountains. Having 13,199 feet of prominence, ______.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "geographers have ranked Mount Rainier, a peak in the United States, as the world’s 21st most prominent mountain.",
+    "B": "the list of mountains geographers rank as the world’s most prominent includes Mount Rainier, a peak located in the United States, at number 21.",
+    "C": "Mount Rainier, a peak located in the United States, is ranked by geographers as the world’s 21st most prominent mountain.",
+    "D": "the ranking given by geographers to Mount Rainier, a peak located in the United States, is 21st most prominent mountain in the world."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 49
+  },
+  {
+   "key": "rw2-19",
+   "section": "rw",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "passage": "While improvising, a guitarist may add expression without causing dissonance by swapping the vi chord for its opposite, the bIII chord. This concept of harmonic opposites originated in the music theory text A Theory of Harmony (1985) by Ernst Levy. British musician Jacob Collier ______ Levy’s concept and, in a 2017 YouTube interview that went viral among music theory enthusiasts, gave it the name “negative harmony.”",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "would popularize",
+    "B": "has popularized",
+    "C": "had popularized",
+    "D": "popularized"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "conventions",
+   "skill": "form-structure-sense",
+   "page": 50
+  },
+  {
+   "key": "rw2-20",
+   "section": "rw",
+   "module": 2,
+   "n": 20,
+   "type": "mcq",
+   "passage": "The Huseby Klev archaeological site in Sweden was exceptionally well-preserved beneath a layer of clay, which sealed artifacts into what scientists describe as a natural geological time capsule. As a result, ______ and his colleagues were able to extract and analyze DNA from chewed tree resin dating back nearly 10,000 years.",
+   "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+   "choices": {
+    "A": "paleogeneticist, Emrah Kırdök,",
+    "B": "paleogeneticist, Emrah Kırdök",
+    "C": "paleogeneticist Emrah Kırdök,",
+    "D": "paleogeneticist Emrah Kırdök"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "conventions",
+   "skill": "boundaries",
+   "page": 51
+  },
+  {
+   "key": "rw2-21",
+   "section": "rw",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "passage": "In a 2001 study by Delgiudice et al., the researchers’ aim was to analyze the diet composition of elk in Wyoming. ______ they aimed to analyze the ratio of three different plant subtypes within these animals’ diet: graminoids, forbs, and browse.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "Specifically,",
+    "B": "All the same,",
+    "C": "Therefore,",
+    "D": "Instead,"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 52
+  },
+  {
+   "key": "rw2-22",
+   "section": "rw",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "passage": "A team of ornithologists documented patterns of conspecific brood parasitism among wood ducks (Aix sponsa) in California. The researchers observed several female wood ducks visiting dozens of nesting sites and laying eggs to be incubated by other nesting A. sponsa. Subject 7F64B, ______ visited a select few nesting sites before laying and incubating her eggs herself.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "for example,",
+    "B": "in particular,",
+    "C": "similarly,",
+    "D": "alternatively,"
+   },
+   "answer": "D",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 53
+  },
+  {
+   "key": "rw2-23",
+   "section": "rw",
+   "module": 2,
+   "n": 23,
+   "type": "mcq",
+   "passage": "Contemplating the beauty of a natural landscape, the serene speaker of William Wordsworth’s poem “Lines Composed a Few Miles above Tintern Abbey” (1798) seems wholly insulated from society. As scholars have argued, however, Wordsworth’s retreat to nature was an aesthetic response to—and implicit critique of—England’s rapid industrialization and urbanization at that time. ______ despite its idyllic quality, the poem bears the imprint of the dramatic changes affecting English life.",
+   "prompt": "Which choice completes the text with the most logical transition?",
+   "choices": {
+    "A": "For example,",
+    "B": "As such,",
+    "C": "Nevertheless,",
+    "D": "Moreover,"
+   },
+   "answer": "B",
+   "answerConfidence": "medium",
+   "domain": "expression-ideas",
+   "skill": "transitions",
+   "page": 54
+  },
+  {
+   "key": "rw2-24",
+   "section": "rw",
+   "module": 2,
+   "n": 24,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Voynich manuscript is an illustrated codex housed at Yale University. It is written in an unknown script that has never been deciphered. Radiocarbon dating places its parchment in the early 15th century. The manuscript contains illustrations of plants, astronomical diagrams, and human figures. Numerous scholars and codebreakers, including WWII cryptographers, have attempted to decode it.",
+   "prompt": "The student wants to emphasize how enduring the manuscript’s mystery has been. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The Voynich manuscript is an illustrated codex currently housed at Yale University.",
+    "B": "Radiocarbon dating has placed the manuscript’s parchment in the early 15th century.",
+    "C": "The manuscript includes illustrations of plants, astronomical diagrams, and human figures.",
+    "D": "Despite attempts by numerous scholars and codebreakers, including WWII cryptographers, the Voynich manuscript’s unknown script has never been deciphered."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 55
+  },
+  {
+   "key": "rw2-25",
+   "section": "rw",
+   "module": 2,
+   "n": 25,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Great Barrier Reef stretches over 2,300 kilometers off Australia’s coast. It is composed of nearly 3,000 individual reef systems. The reef supports thousands of marine species, including six species of sea turtles. Rising ocean temperatures have caused repeated coral bleaching events since the 1990s. The reef is visible from space.",
+   "prompt": "The student wants to convey the reef’s enormous scale using specific figures. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "The Great Barrier Reef, composed of nearly 3,000 individual reef systems, stretches over 2,300 kilometers off Australia’s coast.",
+    "B": "The Great Barrier Reef supports thousands of marine species, including six species of sea turtles.",
+    "C": "Rising ocean temperatures have caused repeated coral bleaching events on the Great Barrier Reef since the 1990s.",
+    "D": "The Great Barrier Reef is large enough to be visible from space."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 56
+  },
+  {
+   "key": "rw2-26",
+   "section": "rw",
+   "module": 2,
+   "n": 26,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nThe Rosetta Stone was discovered in 1799 by French soldiers in Egypt.\nIt contains the same decree written in three scripts: hieroglyphic, Demotic, and ancient Greek. Because scholars could already read ancient Greek, the stone allowed hieroglyphs to finally be deciphered. Jean-François Champollion completed the decipherment in 1822. The stone is now displayed in the British Museum. The student wants to explain why the stone’s trilingual inscription was crucial to decipherment.",
+   "prompt": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Because the Rosetta Stone’s decree was written in three scripts, including ancient Greek, which scholars could already read, it allowed hieroglyphs to finally be deciphered.",
+    "B": "The Rosetta Stone was discovered in 1799 by French soldiers in Egypt.",
+    "C": "Jean-François Champollion completed the decipherment of Egyptian hieroglyphs in 1822.",
+    "D": "The Rosetta Stone is currently displayed in the British Museum."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 57
+  },
+  {
+   "key": "rw2-27",
+   "section": "rw",
+   "module": 2,
+   "n": 27,
+   "type": "mcq",
+   "passage": "While researching a topic, a student has taken the following notes:\nTardigrades, also called water bears, are microscopic animals less than 1 millimeter long. They can survive extreme conditions, including the vacuum of space. Tardigrades enter a state called cryptobiosis, drastically slowing their metabolism. In this state, they can survive without water for decades. Tardigrades have been found in environments ranging from deep oceans to mountain glaciers.",
+   "prompt": "The student wants to highlight the specific mechanism that allows tardigrades to endure long periods without water. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+   "choices": {
+    "A": "Tardigrades are microscopic animals, less than 1 millimeter in length, found in environments ranging from oceans to glaciers.",
+    "B": "Tardigrades, also known as water bears, can survive extreme conditions, including the vacuum of space.",
+    "C": "Tardigrades have been documented in habitats ranging from deep oceans to mountain glaciers.",
+    "D": "By entering a state called cryptobiosis, which drastically slows their metabolism, tardigrades can survive without water for decades."
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "expression-ideas",
+   "skill": "rhetorical-synthesis",
+   "page": 58
+  },
+  {
+   "key": "m1-01",
+   "section": "math",
+   "module": 1,
+   "n": 1,
+   "type": "spr",
+   "prompt": "A triathlon is a multisport race consisting of three different consecutive events. A triathlon participant plans to complete the cycling event with an average speed of 24,288 yards per hour. What is this average speed, in miles per hour? (1 mile = 1,760 yards)",
+   "answer": "13.8",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 60
+  },
+  {
+   "key": "m1-02",
+   "section": "math",
+   "module": 1,
+   "n": 2,
+   "type": "mcq",
+   "prompt": "Kaden owns a business that makes signs. The equation t = 12s + 13 gives the total time t, in minutes, it takes Kaden’s business to make s signs. How long, in minutes, does it take Kaden’s business to make 100 signs?",
+   "choices": {
+    "A": "1,200",
+    "B": "1,213",
+    "C": "1,312",
+    "D": "2,500"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 61
+  },
+  {
+   "key": "m1-03",
+   "section": "math",
+   "module": 1,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "An arborist measured and recorded the heights of red maple trees in a certain area. Of the red maple tree heights recorded in this area, the minimum was 48 feet and the maximum was 56 feet. Which inequality is true for all possible values of t, where t represents the recorded height, in feet, of a red maple tree in this area?",
+   "choices": {
+    "A": "t ≤ 48",
+    "B": "t ≥ 56",
+    "C": "t ≥ 104",
+    "D": "48 ≤ t ≤ 56"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 62
+  },
+  {
+   "key": "m1-04",
+   "section": "math",
+   "module": 1,
+   "n": 4,
+   "type": "spr",
+   "prompt": "The function f is defined by f(x) = 6(x − 2)(x^2 − k), where k is a constant. In the xy-plane, the graph of y = f(x) passes through the point (−80,0). What is the value of f(0)?",
+   "answer": "76800",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 63
+  },
+  {
+   "key": "m1-05",
+   "section": "math",
+   "module": 1,
+   "n": 5,
+   "type": "mcq",
+   "prompt": "For angle A, the value of tan(A) =_3^3. Which of the following could be the measure of angle A, in radians? I. ^(25)_6^π II. ^(53)_6^π III. ^(77)_6^π",
+   "choices": {
+    "A": "I only",
+    "B": "I and II only",
+    "C": "I and III only",
+    "D": "I, II and III"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 64
+  },
+  {
+   "key": "m1-06",
+   "section": "math",
+   "module": 1,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "The maximum temperature on April 1, in degrees Fahrenheit (^∘ F), was recorded each year at a certain weather station for 11 years. The histogram summarizes the recorded data set. The temperature of 77.9^∘F is removed from this data set to create a new data set of 10 temperatures. Which of the following statements must be true? I. The mean of the new data set is less than the mean of the original data set. II. The median of the new data set is less than the median of the original data set. III. The standard deviation of the new data set is less than the standard deviation of the original data set.",
+   "choices": {
+    "A": "I and II only",
+    "B": "II and III only",
+    "C": "I and III only",
+    "D": "I only"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "problem-solving",
+   "skill": "one-var-data",
+   "page": 65,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/m1-06-1.webp",
+     "w": 960,
+     "h": 585,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-07",
+   "section": "math",
+   "module": 1,
+   "n": 7,
+   "type": "mcq",
+   "prompt": "The function P(x) = 685(1.128)1^x4 models the number of gray seal pups each year from 1767 through 1997 on Sable Island, Nova Scotia, where x is the number of years after 1767. Which of the following is the best interpretation of “P(5 ⋅ 14) is approximately equal to 1,251” in this context?",
+   "choices": {
+    "A": "The number of gray seal pups is estimated to be 1,251 greater in 1837 than in 1767.",
+    "B": "The number of gray seal pups is estimated to be 70 times greater in 1837 than in 1767.",
+    "C": "The number of gray seal pups is estimated to be approximately 1,251 at the end of five 14-year periods after 1767.",
+    "D": "The number of gray seal pups is estimated to increase by approximately 1,251 every five 14- year periods between 1767 and 1997."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 66
+  },
+  {
+   "key": "m1-08",
+   "section": "math",
+   "module": 1,
+   "n": 8,
+   "type": "mcq",
+   "prompt": "Before liftoff, one of a space shuttle’s solid rocket boosters contained 478,000 kilograms (kg) of propellant. Exactly 17 seconds after liftoff, 392,949 kg of this propellant remained. On average, approximately how much propellant, in kg, did this solid rocket booster burn each second after liftoff?",
+   "choices": {
+    "A": "51,232",
+    "B": "5,003",
+    "C": "23,115",
+    "D": "85,051"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 67
+  },
+  {
+   "key": "m1-09",
+   "section": "math",
+   "module": 1,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "In triangle ABC and triangle XY Z, the measures of angles A and X are each 20 degrees, and the lengths of AB and XY are each 16 centimeters. Which of the following additional pieces of information is (are) sufficient to prove that triangle ABC is congruent to triangle XY Z? I. The measures of angles C and Z are each 25^∘. II. ^A_(AC)^B =^X_X^Y_Z",
+   "choices": {
+    "A": "I is sufficient, and II is sufficient.",
+    "B": "II is sufficient, but I is not.",
+    "C": "Neither I nor II is sufficient.",
+    "D": "I is sufficient, but II is not."
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "lines-angles-triangles",
+   "page": 68
+  },
+  {
+   "key": "m1-10",
+   "section": "math",
+   "module": 1,
+   "n": 10,
+   "type": "mcq",
+   "prompt": "A sphere is inscribed in a right circular cylinder, as shown. The sphere touches the center of each base of the cylinder. The sphere and the cylinder have the same radius, r, where r is 37 centimeters. What is the surface area, in square centimeters, of the cylinder?",
+   "choices": {
+    "A": "5,476π",
+    "B": "8,214π",
+    "C": "16,428π",
+    "D": "101,306π"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 69,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/m1-10-1.webp",
+     "w": 630,
+     "h": 720,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m1-11",
+   "section": "math",
+   "module": 1,
+   "n": 11,
+   "type": "spr",
+   "prompt": "Compound A is 0.9% potassium chloride. Compound B is 0.025% potassium chloride. Compounds A and B are mixed together to form a new compound that weighs 140 grams and contains 0.28 grams of potassium chloride. What is the mass of potassium chloride in compound B, in grams?",
+   "answer": "0.028",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 70
+  },
+  {
+   "key": "m1-12",
+   "section": "math",
+   "module": 1,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "The length of a rectangle is 45 inches and the width is x inches. The perimeter is at most 150 inches. Which inequality represents this situation?",
+   "choices": {
+    "A": "2x + 45 ≤ 150",
+    "B": "2x + 45 ≥ 150",
+    "C": "2x + 90 ≤ 150",
+    "D": "2x + 90 ≥ 150"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-inequalities",
+   "page": 71
+  },
+  {
+   "key": "m1-13",
+   "section": "math",
+   "module": 1,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "A sample consisted of 750 people selected at random from all adult residents in a certain city. Based on the sample, the estimated percentage of all adult residents who think taxes are too high was 62%, with an associated margin of error of 3.47%. Which of the following best describes the range of plausible values for the percentage of all adult residents in the city who think taxes are too high?",
+   "choices": {
+    "A": "Any value greater than 65.47%",
+    "B": "Any value greater than 58.53% and less than 65.47%",
+    "C": "Any value less than 58.53% or greater than 65.47%",
+    "D": "Any value less than 58.53%"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "inference-sample",
+   "page": 72
+  },
+  {
+   "key": "m1-14",
+   "section": "math",
+   "module": 1,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "11j + 9k = m\nThe given equation relates the numbers j, k, and m. Which equation correctly expresses k in terms of j and m?",
+   "choices": {
+    "A": "k =^1_m − 11j",
+    "B": "k =^(m−)_9^(11j)",
+    "C": "k = 9m − 11j",
+    "D": "k =^(11j)_9^(−m)"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 73
+  },
+  {
+   "key": "m1-15",
+   "section": "math",
+   "module": 1,
+   "n": 15,
+   "type": "mcq",
+   "prompt": "The equation 4x + 2y = 6 is part of a system of two linear equations. If the system has at least one solution, which of the following could be the other equation? I. 6x + 3y = 9 II. 6x − 3y = 9",
+   "choices": {
+    "A": "I only",
+    "B": "II only",
+    "C": "Both I and II",
+    "D": "Neither I nor II"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "systems-linear",
+   "page": 74
+  },
+  {
+   "key": "m1-16",
+   "section": "math",
+   "module": 1,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "At a depth of h meters below the surface, the estimated total pressure P1, in kPa, a diver experiences is given by P_1 = 9.8h + 100. After maintaining a certain depth, the diver descends d additional meters. The estimated total pressure P2, in kPa, after descending is given by P2 = 9.8d + 300. Which of the following best interprets 300 in this context?",
+   "choices": {
+    "A": "The estimated total pressure at depth d meters.",
+    "B": "The estimated increase in pressure per 1-meter depth increase.",
+    "C": "The estimated total pressure when beginning the additional descent.",
+    "D": "The estimated increase in pressure for descending d meters."
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 75
+  },
+  {
+   "key": "m1-17",
+   "section": "math",
+   "module": 1,
+   "n": 17,
+   "type": "spr",
+   "prompt": "Angle R is a right angle. The length of side PR is 26. In triangle PQR, the sine of angle Q is _2^1. What is the length of line segment PQ?",
+   "answer": "52",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 76
+  },
+  {
+   "key": "m1-18",
+   "section": "math",
+   "module": 1,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "In the xy-plane, a parabola has vertex (−6,−15) and no x-intercepts. If the equation of the parabola is written in the form y = ax^2 + bx + c, which of the following could be the value of a + b + c?",
+   "choices": {
+    "A": "−24",
+    "B": "−15",
+    "C": "−8",
+    "D": "−3"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 77
+  },
+  {
+   "key": "m1-19",
+   "section": "math",
+   "module": 1,
+   "n": 19,
+   "type": "spr",
+   "prompt": "A circle in the xy-plane has the equation (x + 4)^2 + (y − 7)^2 = 32. Line k is tangent to the circle at (0,3). The equation for line k is represented by the linear function k(x). For what value of x does k(x) = 10?",
+   "answer": "7",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 78
+  },
+  {
+   "key": "m1-20",
+   "section": "math",
+   "module": 1,
+   "n": 20,
+   "type": "mcq",
+   "prompt": "x y\n−34 t\n−17 t + 23\n0 t + 46\nFor a linear relationship between x and y, the table gives three values of x and their corresponding values of y, where t is a constant. Which equation represents this relationship?",
+   "choices": {
+    "A": "y = −2x + t + 23",
+    "B": "y = 2x + t + 23",
+    "C": "y = −_1^2_7^3x + t + 46",
+    "D": "y =_1^2_7^3x + t + 46"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 79
+  },
+  {
+   "key": "m1-21",
+   "section": "math",
+   "module": 1,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = ax^2 + bx + c, where a, b, and c are constants. The graph of y = f(x) in the xy-plane passes through the points (11,0) and (−2,0). If a is an integer greater than 1, which of the following could be the value of a + b?",
+   "choices": {
+    "A": "10",
+    "B": "9",
+    "C": "−8",
+    "D": "−16"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 80
+  },
+  {
+   "key": "m1-22",
+   "section": "math",
+   "module": 1,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "The functions f and g are defined by the given equations, where x ≥ 0. Which of the following equations displays, as a constant or coefficient, the minimum value of the function it defines, where x ≥ 0? I. f(x) = 15(0.85)^x + 20 II. g(x) = 10(1.02)^x",
+   "choices": {
+    "A": "I only",
+    "B": "II only",
+    "C": "I and II",
+    "D": "Neither I nor II"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 81
+  },
+  {
+   "key": "m2-01",
+   "section": "math",
+   "module": 2,
+   "n": 1,
+   "type": "spr",
+   "prompt": "2\n(3x + 7)(x + √3k + 5)(x − √3k + 5) = 0\n3\nIn the given equation, k is a positive constant. The product of the solutions to the equation is 35. What is the value of k?",
+   "answer": "40/3",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 83
+  },
+  {
+   "key": "m2-02",
+   "section": "math",
+   "module": 2,
+   "n": 2,
+   "type": "spr",
+   "prompt": "The exponential function h is defined by h(x) = a(b)^x, where a and b are positive constants. If h(k) = p and h(k + 2) = 0.36p, what is the value of b?",
+   "answer": "0.6",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 84
+  },
+  {
+   "key": "m2-03",
+   "section": "math",
+   "module": 2,
+   "n": 3,
+   "type": "mcq",
+   "prompt": "The function f is defined by f(x) = 2^x. The function g is an increasing linear function. In the xy- plane, the graphs of y = f(x) and y = g(x) intersect at two points (a,j) and (b,k), where j < k. When g(x) > f(x), which of the following must be true?",
+   "choices": {
+    "A": "x > a",
+    "B": "x < b",
+    "C": "x < a or x > b",
+    "D": "a < x < b"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 85
+  },
+  {
+   "key": "m2-04",
+   "section": "math",
+   "module": 2,
+   "n": 4,
+   "type": "mcq",
+   "prompt": "In the xy-plane, circle P is defined by the equation (x + 10k)^2 + (y + 20k)^2 = 64k^2, where k is a positive constant. Circle Q is obtained by shifting circle P down 8k units and right 5k units. Which equation represents circle Q?",
+   "choices": {
+    "A": "(x + 15k)^2 + (y + 12k)^2 = 64k^2",
+    "B": "(x + 5k)^2 + (y + 28k)^2 = 64k^2",
+    "C": "(x + 15k)^2 + (y + 28k)^2 = 64k^2",
+    "D": "(x + 5k)^2 + (y + 12k)^2 = 64k^2"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 86
+  },
+  {
+   "key": "m2-05",
+   "section": "math",
+   "module": 2,
+   "n": 5,
+   "type": "spr",
+   "prompt": "The speed of object X is 520% greater than the speed of object Y, and the speed of object X is 0.75% of the speed of object Z. If the speed of object Z is q% of the speed of object Y, what is the value of q?",
+   "answer": "2480/3",
+   "answerConfidence": "medium",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 87
+  },
+  {
+   "key": "m2-06",
+   "section": "math",
+   "module": 2,
+   "n": 6,
+   "type": "mcq",
+   "prompt": "A music teacher charges each student $120 for the first month and $80 for each additional month. Which function represents the total revenue R(m), in dollars, for m months and s students, where m and s are positive integers?",
+   "choices": {
+    "A": "R(m) = 80ms + 40",
+    "B": "R(m) = 80ms + 120",
+    "C": "R(m) = 80ms + 40s",
+    "D": "R(m) = 80ms + 120s"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "algebra",
+   "skill": "linear-functions",
+   "page": 88
+  },
+  {
+   "key": "m2-07",
+   "section": "math",
+   "module": 2,
+   "n": 7,
+   "type": "spr",
+   "prompt": "A rectangular poster is divided into 864 square regions of equal area k, in square units. The length of the poster is 6 times the width of the poster. If the width of the poster is x√k units, what is the value of x?",
+   "answer": "12",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 89
+  },
+  {
+   "key": "m2-08",
+   "section": "math",
+   "module": 2,
+   "n": 8,
+   "type": "spr",
+   "prompt": "The function g is defined by g(x) = k∣x − 5∣^2 − 23∣x − 5∣ + m, where k and m are constants and k > m > 23. If g(105) = a and g(−95) = b, what is the value of 5(−105)^(a−b) + 95(5)^(b−a)?",
+   "answer": "100",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 90
+  },
+  {
+   "key": "m2-09",
+   "section": "math",
+   "module": 2,
+   "n": 9,
+   "type": "mcq",
+   "prompt": "For the function f, for every increase of 2 in the value of x, the value of f(x) increases by a factor of c, where c is a constant. Which of the following forms of function f displays the value of c as the base or coefficient?",
+   "choices": {
+    "A": "f(x) = 40(3)^(4x)",
+    "B": "f(x) = 40(27)^x",
+    "C": "f(x) = 40(81)^x2",
+    "D": "f(x) = 40(729)^x3"
+   },
+   "answer": "C",
+   "answerConfidence": "medium",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 91
+  },
+  {
+   "key": "m2-10",
+   "section": "math",
+   "module": 2,
+   "n": 10,
+   "type": "spr",
+   "prompt": "A gardener is purchasing mulch for a new garden. The garden is in the shape of a rectangular prism with dimensions of 36 feet by 108 feet by 1.5 feet. If the mulch costs $72 per cubic yard, how much does the gardener need to spend, in dollars? (1 yard = 3 feet)",
+   "answer": "15552",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "ratios-rates",
+   "page": 92
+  },
+  {
+   "key": "m2-11",
+   "section": "math",
+   "module": 2,
+   "n": 11,
+   "type": "mcq",
+   "prompt": "For two acute angles X and Y , the measure of angle Y is 47^∘ and ^s_c^i_o^n_(sY)^X = 1. What is the measure, in degrees, of angle X?",
+   "choices": {
+    "A": "92",
+    "B": "47",
+    "C": "45",
+    "D": "43"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 93
+  },
+  {
+   "key": "m2-12",
+   "section": "math",
+   "module": 2,
+   "n": 12,
+   "type": "mcq",
+   "prompt": "What is an x-intercept of the graph of y = x^2 − 25 in the xy-plane?",
+   "choices": {
+    "A": "(−25,0)",
+    "B": "(−10,0)",
+    "C": "(−5,0)",
+    "D": "(−1,0)"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 94
+  },
+  {
+   "key": "m2-13",
+   "section": "math",
+   "module": 2,
+   "n": 13,
+   "type": "mcq",
+   "prompt": "y = 13x + 2\ny = 13x^2 + 2\nWhich ordered pair (x,y) is a solution to the given system of equations?",
+   "choices": {
+    "A": "(0,0)",
+    "B": "(0,2)",
+    "C": "(4,54)",
+    "D": "(4,106)"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 95
+  },
+  {
+   "key": "m2-14",
+   "section": "math",
+   "module": 2,
+   "n": 14,
+   "type": "mcq",
+   "prompt": "When the quadratic function f is graphed in the xy-plane, where y = f(x), its vertex is (−2,8). One of the x-intercepts of this graph is (_5^3,0). What is the other x-intercept of the graph?",
+   "choices": {
+    "A": "(−_5^4,0)",
+    "B": "(^1_5^3,0)",
+    "C": "(^1_5^6,0)",
+    "D": "(−^2_5^3,0)"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 96
+  },
+  {
+   "key": "m2-15",
+   "section": "math",
+   "module": 2,
+   "n": 15,
+   "type": "spr",
+   "prompt": "Sphere A and sphere B have a point of tangency at point P, segment MP is a diameter of sphere A, segment NP is a diameter of sphere B, and point P lies on segment MN. The radius of sphere A is 5 times the radius of sphere B, and the volume of sphere B is 288π cubic inches. What is the length, in inches, of segment MN?",
+   "answer": "72",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "area-volume",
+   "page": 97
+  },
+  {
+   "key": "m2-16",
+   "section": "math",
+   "module": 2,
+   "n": 16,
+   "type": "mcq",
+   "prompt": "y = 2x + 15\ny = 4(x + 3)^2 + c\nThe system above has no solution. If c is an integer, what is the minimum value of c?",
+   "choices": {
+    "A": "10",
+    "B": "9",
+    "C": "11",
+    "D": "8"
+   },
+   "answer": "A",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-equations",
+   "page": 98
+  },
+  {
+   "key": "m2-17",
+   "section": "math",
+   "module": 2,
+   "n": 17,
+   "type": "spr",
+   "prompt": "Note: Figure not drawn to scale.\nThe circle shown above is inscribed inside the square ABCD. Segment BD is the diagonal of the square, and its length is √162 cm. What is the diameter of the circle, in cm?",
+   "answer": "9",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "right-triangles-trig",
+   "page": 99,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/m2-17-1.webp",
+     "w": 640,
+     "h": 592,
+     "y": 115
+    }
+   ]
+  },
+  {
+   "key": "m2-18",
+   "section": "math",
+   "module": 2,
+   "n": 18,
+   "type": "mcq",
+   "prompt": "Which of the following has x + 2b as a factor, where b is a positive integer?",
+   "choices": {
+    "A": "3x^2 + 7x + 14b",
+    "B": "3x^2 + 28x + 14b",
+    "C": "3x^2 + 42x + 14b",
+    "D": "3x^2 + 49x + 14b"
+   },
+   "answer": "D",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "equivalent-expressions",
+   "page": 100
+  },
+  {
+   "key": "m2-19",
+   "section": "math",
+   "module": 2,
+   "n": 19,
+   "type": "mcq",
+   "prompt": "(x − 3)^2 + (y − 9)^2 = 625\nIn the xy-plane, the graph of the given equation is a circle. Which of the following points lies on this circle? I. (10,−15) II. (3 − √300,9 + 5√3) III. (7 + √3,33)",
+   "choices": {
+    "A": "I and II only",
+    "B": "I only",
+    "C": "II only",
+    "D": "I, II and III"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "geometry-trig",
+   "skill": "circles",
+   "page": 101
+  },
+  {
+   "key": "m2-20",
+   "section": "math",
+   "module": 2,
+   "n": 20,
+   "type": "spr",
+   "prompt": "An equation of the graph shown is y = −_4^1(x − p)^2 + 4, where p is an integer constant. What is the value of p?",
+   "answer": "8",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 102,
+   "hasFigure": true,
+   "images": [
+    {
+     "src": "/tests/img/2026-08-us-a/m2-20-1.webp",
+     "w": 730,
+     "h": 513,
+     "y": 147
+    }
+   ]
+  },
+  {
+   "key": "m2-21",
+   "section": "math",
+   "module": 2,
+   "n": 21,
+   "type": "mcq",
+   "prompt": "In 2005, Aster earned 12% more than in 2004, and in 2006 Aster earned 6% more than in 2005. If Aster earned y times as much in 2004 as in 2006, which of the following is closest to the value of y?",
+   "choices": {
+    "A": "0.5000",
+    "B": "0.7200",
+    "C": "0.8423",
+    "D": "1.1872"
+   },
+   "answer": "C",
+   "answerConfidence": "high",
+   "domain": "problem-solving",
+   "skill": "percentages",
+   "page": 103
+  },
+  {
+   "key": "m2-22",
+   "section": "math",
+   "module": 2,
+   "n": 22,
+   "type": "mcq",
+   "prompt": "A model initially estimates that there are 24,000 bacteria on a petri dish. 14 days later, the model estimates that there are 96,000 bacteria on the petri dish. Assuming exponential growth, the formula B = a(2)^(xd) gives the estimated number of bacteria on a petri dish, where a and x are constants and B is the number of bacteria on the petri dish d days after the initial measurement. What is the value of x?",
+   "choices": {
+    "A": "114",
+    "B": "71",
+    "C": "7",
+    "D": "14"
+   },
+   "answer": "B",
+   "answerConfidence": "high",
+   "domain": "advanced-math",
+   "skill": "nonlinear-functions",
+   "page": 104
+  }
+ ]
+}

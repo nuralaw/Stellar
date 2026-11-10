@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { ComingSoon } from "@/components/ComingSoon";
+import { TestList } from "@/components/test/TestList";
+import { getTestIndex } from "@/lib/tests";
 
-export const metadata: Metadata = { title: "Practice Test" };
+export const metadata: Metadata = {
+  title: "Practice Tests",
+  description: "Timed Digital SAT practice tests from past papers, with an estimated 400–1600 score and a review of every question.",
+};
 
 export default function Page() {
-  return (
-    <ComingSoon
-      title="Full-length practice test"
-      body="A timed, adaptive test in the Digital SAT format with an estimated 400–1600 score."
-    />
-  );
+  return <TestList tests={getTestIndex()} />;
 }

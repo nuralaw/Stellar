@@ -38,12 +38,35 @@ export interface TestResult {
   total: number;
   rw: number;
   math: number;
+  /** Which past paper (content/tests); absent on results from before tests existed. */
+  testId?: string;
+  title?: string;
+  /** "full" = both sections (counts toward the score trend); "rw"/"math" = one section only (total = that section). */
+  kind?: "full" | "rw" | "math";
+  /** Student's response per question key ("rw1-01" → "B"), for reviewing the test later. */
+  responses?: Record<string, string>;
+  /** Correct answers per section. */
+  raw?: { rw?: number; math?: number };
+}
+
+/** A practice test in progress (one at a time), so a reload doesn't lose it. */
+export interface TestSession {
+  testId: string;
+  /** Module order, e.g. ["rw1", "rw2", "math1", "math2"]. */
+  modules: string[];
+  /** Index into modules. */
+  module: number;
+  /** Unix ms when the current module's time runs out (null while on a break / not started). */
+  endsAt: number | null;
+  responses: Record<string, string>;
+  marked: string[];
+  startedAt: number;
 }
 
 export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null, testTimeZone: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
-const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks", tests: "stellar:tests" } as const;
+const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks", tests: "stellar:tests", session: "stellar:test-session" } as const;
 const NO_BOOKMARKS: string[] = [];
 const NO_TESTS: TestResult[] = [];
 
@@ -107,6 +130,10 @@ export function addAttempt(a: Attempt) {
   write(KEYS.attempts, [...getAttempts(), a]);
 }
 
+export function addAttempts(list: Attempt[]) {
+  if (list.length) write(KEYS.attempts, [...getAttempts(), ...list]);
+}
+
 export function useAttempts(): Attempt[] {
   return useSyncExternalStore(subscribe, getAttempts, () => NO_ATTEMPTS);
 }
@@ -136,6 +163,29 @@ export function addTestResult(r: TestResult) {
 
 export function useTestResults(): TestResult[] {
   return useSyncExternalStore(subscribe, getTestResults, () => NO_TESTS);
+}
+
+/** Full tests only (both sections): the ones with a 400–1600 total for the score trend. */
+export function isFullTest(r: TestResult) {
+  return !r.kind || r.kind === "full";
+}
+
+export function getTestSession(): TestSession | null {
+  return read<TestSession | null>(KEYS.session, (raw) => JSON.parse(raw), null);
+}
+
+export function saveTestSession(s: TestSession | null) {
+  if (s) write(KEYS.session, s);
+  else {
+    try {
+      localStorage.removeItem(KEYS.session);
+    } catch {}
+    listeners.forEach((l) => l());
+  }
+}
+
+export function useTestSession(): TestSession | null {
+  return useSyncExternalStore(subscribe, getTestSession, () => null);
 }
 
 // ---- clock ----
@@ -184,6 +234,7 @@ export function resetAllData() {
     localStorage.removeItem(KEYS.attempts);
     localStorage.removeItem(KEYS.bookmarks);
     localStorage.removeItem(KEYS.tests);
+    localStorage.removeItem(KEYS.session);
   } catch {}
   listeners.forEach((l) => l());
 }
