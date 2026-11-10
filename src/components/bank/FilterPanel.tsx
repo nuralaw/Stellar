@@ -1,36 +1,72 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { SECTIONS, domainsFor, type SectionId } from "@/lib/taxonomy";
+import { useEffect, useRef, useState } from "react";
+import { domainsFor } from "@/lib/taxonomy";
 import type { Difficulty } from "@/lib/types";
 import { DIFFS, STATUSES, type BankItem, type Filters, type Status } from "./data";
+import { I, Icon } from "./icons";
 
-const DIFF_DOT: Record<Difficulty, string> = { easy: "bg-success", medium: "bg-accent", hard: "bg-danger" };
+export const DIFF_STYLE: Record<Difficulty, { dot: string; text: string; on: string }> = {
+  easy: { dot: "bg-success", text: "text-success", on: "border-success bg-success-soft text-success" },
+  medium: { dot: "bg-accent", text: "text-accent", on: "border-accent bg-accent-soft text-accent" },
+  hard: { dot: "bg-danger", text: "text-danger", on: "border-danger bg-danger-soft text-danger" },
+};
 
-function countBy<K extends string>(items: BankItem[], key: (it: BankItem) => K): Record<string, number> {
+const STATUS_DOT: Record<Status, string> = {
+  all: "bg-muted",
+  new: "border-2 border-muted bg-transparent",
+  incorrect: "bg-danger",
+  correct: "bg-success",
+  bookmarked: "bg-accent",
+};
+
+function countBy(items: BankItem[], key: (it: BankItem) => string): Record<string, number> {
   const out: Record<string, number> = {};
   for (const it of items) out[key(it)] = (out[key(it)] ?? 0) + 1;
   return out;
 }
 
-/** Checkbox that supports the "indeterminate" (some children selected) state. */
+/** Checkbox with an "indeterminate" (some children selected) state, styled to match the palette. */
 function Check({ checked, indeterminate, onChange, label }: { checked: boolean; indeterminate?: boolean; onChange: () => void; label: string }) {
   const ref = useRef<HTMLInputElement>(null);
   useEffect(() => {
     if (ref.current) ref.current.indeterminate = Boolean(indeterminate);
   }, [indeterminate]);
-  return <input ref={ref} type="checkbox" checked={checked} onChange={onChange} aria-label={label} className="h-4 w-4 shrink-0 accent-[var(--primary)]" />;
+  return (
+    <span className="relative grid h-4.5 w-4.5 shrink-0 place-items-center">
+      <input
+        ref={ref}
+        type="checkbox"
+        checked={checked}
+        onChange={onChange}
+        aria-label={label}
+        className="peer h-4.5 w-4.5 cursor-pointer appearance-none rounded-[5px] border-[1.5px] border-line bg-surface transition-colors checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:outline-none"
+      />
+      <svg viewBox="0 0 24 24" className="pointer-events-none absolute hidden h-3.5 w-3.5 text-primary-ink peer-checked:block" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d={I.check} />
+      </svg>
+      <span className="pointer-events-none absolute hidden h-[2.5px] w-2 rounded-full bg-primary-ink peer-indeterminate:block" aria-hidden="true" />
+    </span>
+  );
 }
 
 function Group({ title, children, action }: { title: string; children: React.ReactNode; action?: React.ReactNode }) {
   return (
-    <div className="border-t border-line py-4 first:border-t-0 first:pt-0">
-      <div className="mb-2.5 flex items-center justify-between">
-        <h3 className="text-xs font-semibold tracking-wider text-muted uppercase">{title}</h3>
+    <div className="border-t border-line px-5 py-4">
+      <div className="mb-3 flex h-5 items-center justify-between">
+        <h3 className="text-[11px] font-semibold tracking-[0.08em] text-muted uppercase">{title}</h3>
         {action}
       </div>
       {children}
     </div>
+  );
+}
+
+function MiniBar({ value }: { value: number }) {
+  return (
+    <span className="block h-1 w-full overflow-hidden rounded-full bg-surface-2" aria-hidden="true">
+      <span className="block h-full rounded-full bg-primary/70" style={{ width: `${Math.min(100, value * 100)}%` }} />
+    </span>
   );
 }
 
@@ -40,7 +76,8 @@ export function FilterPanel({
   forSkills,
   forDiffs,
   statusCounts,
-  sectionTotals,
+  doneBySkill,
+  totalBySkill,
 }: {
   filters: Filters;
   setFilters: (f: Filters) => void;
@@ -50,14 +87,26 @@ export function FilterPanel({
   forDiffs: BankItem[];
   /** Count per status, with every other filter applied. */
   statusCounts: Record<Status, number>;
-  sectionTotals: Record<SectionId, number>;
+  /** Attempted questions per skill (ignores filters) — drives the progress bars. */
+  doneBySkill: Record<string, number>;
+  totalBySkill: Record<string, number>;
 }) {
   const skillCounts = countBy(forSkills, (it) => it.skill);
   const diffCounts = countBy(forDiffs, (it) => it.difficulty);
   const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
+  const domains = domainsFor(filters.section);
 
-  const toggleSkill = (id: string) =>
-    set({ skills: filters.skills.includes(id) ? filters.skills.filter((s) => s !== id) : [...filters.skills, id] });
+  // Domains with a selected skill start open; the rest are collapsed to keep the panel short.
+  const [open, setOpen] = useState<Set<string>>(() => new Set(domains.filter((d) => d.skills.some((s) => filters.skills.includes(s.id))).map((d) => d.id)));
+  const toggleOpen = (id: string) =>
+    setOpen((o) => {
+      const n = new Set(o);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+
+  const toggleSkill = (id: string) => set({ skills: filters.skills.includes(id) ? filters.skills.filter((s) => s !== id) : [...filters.skills, id] });
   const toggleDomain = (skillIds: string[]) => {
     const allOn = skillIds.every((s) => filters.skills.includes(s));
     set({ skills: allOn ? filters.skills.filter((s) => !skillIds.includes(s)) : [...new Set([...filters.skills, ...skillIds])] });
@@ -65,85 +114,79 @@ export function FilterPanel({
   const toggleDiff = (d: Difficulty) =>
     set({ difficulties: filters.difficulties.includes(d) ? filters.difficulties.filter((x) => x !== d) : [...filters.difficulties, d] });
 
-  const statusCount = (s: Status) => statusCounts[s];
-
-  const activeCount = filters.skills.length + filters.difficulties.length + (filters.status !== "all" ? 1 : 0) + (filters.search.trim() ? 1 : 0);
-
   return (
-    <div className="space-y-0">
-      {/* Section */}
-      <div className="mb-4 grid grid-cols-2 gap-1 rounded-xl bg-surface-2 p-1" role="tablist" aria-label="Section">
-        {(["rw", "math"] as SectionId[]).map((s) => (
-          <button
-            key={s}
-            type="button"
-            role="tab"
-            aria-selected={filters.section === s}
-            onClick={() => setFilters({ section: s, skills: [], difficulties: filters.difficulties, status: filters.status, search: "" })}
-            className={`rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${filters.section === s ? "bg-surface text-ink shadow-sm" : "text-muted hover:text-ink"}`}
-          >
-            {SECTIONS[s].short}
-            <span className="ml-1.5 text-xs font-medium text-muted tabular-nums">{sectionTotals[s].toLocaleString("en-US")}</span>
-          </button>
-        ))}
-      </div>
-
-      {/* Search */}
-      <div className="mb-4">
-        <label htmlFor="bank-search" className="sr-only">
-          Search questions
-        </label>
-        <input
-          id="bank-search"
-          type="search"
-          value={filters.search}
-          onChange={(e) => set({ search: e.target.value })}
-          placeholder="Search text or question #"
-          className="w-full rounded-xl border border-line bg-surface px-3.5 py-2 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-        />
-      </div>
-
+    <div>
       <Group
         title="Topics"
         action={
           filters.skills.length > 0 && (
-            <button type="button" onClick={() => set({ skills: [] })} className="text-xs font-medium text-primary hover:underline">
+            <button type="button" onClick={() => set({ skills: [] })} className="text-xs font-semibold text-primary hover:underline">
               Clear
             </button>
           )
         }
       >
-        <ul className="space-y-3">
-          {domainsFor(filters.section).map((d) => {
+        <ul className="-mx-2 space-y-0.5">
+          {domains.map((d) => {
             const ids = d.skills.map((s) => s.id);
             const on = ids.filter((s) => filters.skills.includes(s)).length;
-            const total = ids.reduce((n, s) => n + (skillCounts[s] ?? 0), 0);
+            const count = ids.reduce((n, s) => n + (skillCounts[s] ?? 0), 0);
+            const done = ids.reduce((n, s) => n + (doneBySkill[s] ?? 0), 0);
+            const total = ids.reduce((n, s) => n + (totalBySkill[s] ?? 0), 0);
+            const isOpen = open.has(d.id);
             return (
-              <li key={d.id}>
-                <label className="flex cursor-pointer items-center gap-2.5 text-sm font-semibold">
-                  <Check checked={on === ids.length} indeterminate={on > 0 && on < ids.length} onChange={() => toggleDomain(ids)} label={d.name} />
-                  <span className="flex-1">{d.name}</span>
-                  <span className="text-xs font-medium text-muted tabular-nums">{total}</span>
-                </label>
-                <ul className="mt-1.5 space-y-1 border-l border-line pl-3.5 ml-2">
-                  {d.skills.map((s) => (
-                    <li key={s.id}>
-                      <label className="flex cursor-pointer items-center gap-2.5 rounded-md py-0.5 text-sm text-muted hover:text-ink">
-                        <Check checked={filters.skills.includes(s.id)} onChange={() => toggleSkill(s.id)} label={s.name} />
-                        <span className="flex-1">{s.name}</span>
-                        <span className="text-xs tabular-nums">{skillCounts[s.id] ?? 0}</span>
-                      </label>
-                    </li>
-                  ))}
-                </ul>
+              <li key={d.id} className={`rounded-xl transition-colors ${isOpen ? "bg-surface-2/50" : ""}`}>
+                <div className="flex items-center gap-2.5 rounded-xl px-2 py-2 hover:bg-surface-2/70">
+                  <Check checked={on === ids.length} indeterminate={on > 0 && on < ids.length} onChange={() => toggleDomain(ids)} label={`All of ${d.name}`} />
+                  <button type="button" onClick={() => toggleOpen(d.id)} aria-expanded={isOpen} className="flex min-w-0 flex-1 items-center gap-2 text-left">
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-sm leading-snug font-semibold">{d.name}</span>
+                      {done > 0 && (
+                        <span className="mt-1.5 flex items-center gap-2">
+                          <MiniBar value={done / total} />
+                          <span className="shrink-0 text-[10px] text-muted tabular-nums">
+                            {done}/{total}
+                          </span>
+                        </span>
+                      )}
+                    </span>
+                    <span className="text-xs text-muted tabular-nums">{count}</span>
+                    <Icon d={I.chevronD} className={`h-4 w-4 shrink-0 text-muted transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                  </button>
+                </div>
+                {isOpen && (
+                  <ul className="pb-2">
+                    {d.skills.map((s) => {
+                      const sel = filters.skills.includes(s.id);
+                      return (
+                        <li key={s.id}>
+                          <label className={`flex cursor-pointer items-center gap-2.5 rounded-lg py-1.5 pr-8 pl-6 text-sm transition-colors hover:bg-surface-2 ${sel ? "text-ink" : "text-muted hover:text-ink"}`}>
+                            <Check checked={sel} onChange={() => toggleSkill(s.id)} label={s.name} />
+                            <span className={`flex-1 leading-snug ${sel ? "font-medium" : ""}`}>{s.name}</span>
+                            <span className="text-xs tabular-nums">{skillCounts[s.id] ?? 0}</span>
+                          </label>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
             );
           })}
         </ul>
       </Group>
 
-      <Group title="Difficulty">
-        <div className="flex flex-wrap gap-2">
+      <Group
+        title="Difficulty"
+        action={
+          filters.difficulties.length > 0 && (
+            <button type="button" onClick={() => set({ difficulties: [] })} className="text-xs font-semibold text-primary hover:underline">
+              Clear
+            </button>
+          )
+        }
+      >
+        <div className="grid grid-cols-3 gap-1.5">
           {DIFFS.map((d) => {
             const on = filters.difficulties.includes(d);
             return (
@@ -152,13 +195,15 @@ export function FilterPanel({
                 type="button"
                 aria-pressed={on}
                 onClick={() => toggleDiff(d)}
-                className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm font-medium capitalize transition-colors ${
-                  on ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface text-muted hover:text-ink"
+                className={`flex flex-col items-center gap-0.5 rounded-xl border px-2 py-2 text-sm font-semibold capitalize transition-colors ${
+                  on ? DIFF_STYLE[d].on : "border-line bg-surface text-muted hover:border-muted hover:text-ink"
                 }`}
               >
-                <span className={`h-2 w-2 rounded-full ${DIFF_DOT[d]}`} aria-hidden="true" />
-                {d}
-                <span className="text-xs tabular-nums opacity-70">{diffCounts[d] ?? 0}</span>
+                <span className="flex items-center gap-1.5">
+                  <span className={`h-1.5 w-1.5 rounded-full ${DIFF_STYLE[d].dot}`} aria-hidden="true" />
+                  {d}
+                </span>
+                <span className="text-[11px] font-medium tabular-nums opacity-75">{diffCounts[d] ?? 0}</span>
               </button>
             );
           })}
@@ -166,32 +211,28 @@ export function FilterPanel({
       </Group>
 
       <Group title="Status">
-        <div className="space-y-1">
-          {STATUSES.map((s) => (
-            <label key={s.id} className="flex cursor-pointer items-center gap-2.5 rounded-md py-0.5 text-sm text-muted hover:text-ink">
-              <input
-                type="radio"
-                name="status"
-                checked={filters.status === s.id}
-                onChange={() => set({ status: s.id })}
-                className="h-4 w-4 accent-[var(--primary)]"
-              />
-              <span className={`flex-1 ${filters.status === s.id ? "font-medium text-ink" : ""}`}>{s.label}</span>
-              <span className="text-xs tabular-nums">{statusCount(s.id)}</span>
-            </label>
-          ))}
+        <div className="-mx-2 space-y-0.5" role="radiogroup" aria-label="Status">
+          {STATUSES.map((s) => {
+            const on = filters.status === s.id;
+            return (
+              <button
+                key={s.id}
+                type="button"
+                role="radio"
+                aria-checked={on}
+                onClick={() => set({ status: s.id })}
+                className={`flex w-full items-center gap-2.5 rounded-lg px-2 py-1.5 text-left text-sm transition-colors ${
+                  on ? "bg-primary-soft font-semibold text-primary" : "text-muted hover:bg-surface-2 hover:text-ink"
+                }`}
+              >
+                <span className={`h-2 w-2 shrink-0 rounded-full ${STATUS_DOT[s.id]}`} aria-hidden="true" />
+                <span className="flex-1">{s.label}</span>
+                <span className="text-xs tabular-nums">{statusCounts[s.id].toLocaleString("en-US")}</span>
+              </button>
+            );
+          })}
         </div>
       </Group>
-
-      {activeCount > 0 && (
-        <button
-          type="button"
-          onClick={() => setFilters({ section: filters.section, skills: [], difficulties: [], status: "all", search: "" })}
-          className="mt-2 w-full rounded-xl border border-line px-3 py-2 text-sm font-semibold text-muted transition-colors hover:bg-surface-2 hover:text-ink"
-        >
-          Reset filters ({activeCount})
-        </button>
-      )}
     </div>
   );
 }

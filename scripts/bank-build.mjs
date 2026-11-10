@@ -140,12 +140,15 @@ for (const [id, raw] of source) {
 }
 
 // Compact index for the question-bank list: [id, domain, skill, difficulty (e|m|h), preview].
-const preview = (q) =>
-  (q.section === "rw" ? q.passage || q.prompt : q.prompt)
-    .replace(/<\/?u>/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 140);
+const PREVIEW_LEN = 170;
+const preview = (q) => {
+  const text = (q.section === "rw" ? q.passage || q.prompt : q.prompt).replace(/<\/?u>/g, "").replace(/\s+/g, " ").trim();
+  if (text.length <= PREVIEW_LEN) return text;
+  // Cut at a word boundary so previews don't end mid-word.
+  const cut = text.slice(0, PREVIEW_LEN + 1);
+  const head = cut.slice(0, Math.max(cut.lastIndexOf(" "), PREVIEW_LEN * 0.6));
+  return `${head.replace(/[\s,;:.\-–—(]+$/, "")}…`;
+};
 const index = out.map((q) => [q.id, q.domain, q.skill, q.difficulty[0], preview(q)]);
 
 fs.mkdirSync(path.join(BANK, "dist"), { recursive: true });

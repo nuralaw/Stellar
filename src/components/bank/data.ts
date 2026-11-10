@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DOMAINS, type SectionId } from "@/lib/taxonomy";
+import { DOMAINS, getDomain, type SectionId } from "@/lib/taxonomy";
 import type { Attempt } from "@/lib/store";
 import type { BankIndexRow, Difficulty, Question } from "@/lib/types";
 
@@ -26,6 +26,17 @@ export const STATUSES: { id: Status; label: string }[] = [
 ];
 export const DIFFS: Difficulty[] = ["easy", "medium", "hard"];
 
+export type Sort = "number" | "easy-first" | "hard-first";
+export const SORTS: { id: Sort; label: string }[] = [
+  { id: "number", label: "Question #" },
+  { id: "easy-first", label: "Easiest first" },
+  { id: "hard-first", label: "Hardest first" },
+];
+
+export function skillName(it: { domain: string; skill: string }) {
+  return getDomain(it.domain)?.skills.find((s) => s.id === it.skill)?.name ?? it.skill;
+}
+
 export interface Filters {
   section: SectionId;
   /** Selected skill ids; empty = all skills in the section. */
@@ -34,6 +45,11 @@ export interface Filters {
   difficulties: Difficulty[];
   status: Status;
   search: string;
+  sort: Sort;
+}
+
+export function emptyFilters(section: SectionId): Filters {
+  return { section, skills: [], difficulties: [], status: "all", search: "", sort: "number" };
 }
 
 const DIFF_CODE = { e: "easy", m: "medium", h: "hard" } as const;
@@ -146,6 +162,14 @@ export function applyFilters(items: BankItem[], f: Filters, ctx: FilterContext, 
   );
 }
 
+const DIFF_RANK: Record<Difficulty, number> = { easy: 0, medium: 1, hard: 2 };
+
+export function sortItems(items: BankItem[], sort: Sort): BankItem[] {
+  if (sort === "number") return items;
+  const dir = sort === "easy-first" ? 1 : -1;
+  return [...items].sort((a, b) => dir * (DIFF_RANK[a.difficulty] - DIFF_RANK[b.difficulty]) || a.n - b.n);
+}
+
 // ---------- URL <-> filters ----------
 
 export function filtersFromParams(p: URLSearchParams): Filters {
@@ -163,6 +187,7 @@ export function filtersFromParams(p: URLSearchParams): Filters {
     difficulties,
     status: st && STATUSES.some((s) => s.id === st) ? st : "all",
     search: p.get("q") ?? "",
+    sort: SORTS.some((s) => s.id === p.get("sort")) ? (p.get("sort") as Sort) : "number",
   };
 }
 
@@ -172,6 +197,7 @@ export function filtersToQuery(f: Filters): string {
   if (f.difficulties.length) p.set("diff", f.difficulties.join(","));
   if (f.status !== "all") p.set("status", f.status);
   if (f.search.trim()) p.set("q", f.search.trim());
+  if (f.sort !== "number") p.set("sort", f.sort);
   return p.toString();
 }
 
