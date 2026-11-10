@@ -7,9 +7,9 @@ Start: 2026-11-10 · Target launch: 2026-11-29
 
 ## Week 1 — Foundation & question bank
 - [x] **Day 1** — Scaffold, design tokens (light/dark), site layout, landing page, SAT taxonomy + question data model, logo, orange/gray palette (60-30-10), collapsible sidebar, theme switch
-- [ ] **Day 2** — Home tab (`/`) personal dashboard: target score, test date + countdown, stats overview (saved in browser until Supabase on Day 5)
-- [ ] **Day 2** — Student profile page (`/profile`): name/avatar; sidebar profile card
-- [ ] **Day 2** — Practice mode UI: pick section/domain/difficulty, answer, instant feedback, explanations; KaTeX math rendering
+- [x] **Day 2** — Home tab (`/`) personal dashboard: target score, test date + countdown, stats overview (saved in browser until Supabase on Day 5)
+- [x] **Day 2** — Student profile page (`/profile`): name/avatar; sidebar profile card
+- [x] **Day 2** — Practice mode UI: pick section/domain/difficulty, answer, instant feedback, explanations; KaTeX math rendering; 18 seed questions + `npm run check:content`
 - [ ] **Day 3** — Math content batch #1 (Algebra, Advanced Math)
 - [ ] **Day 4** — R&W content batch #1 (all 4 domains)
 - [ ] **Day 5** — Supabase: project, auth (email magic link + Google), `profiles` table, sign-in UI  ← *needs Supabase keys*

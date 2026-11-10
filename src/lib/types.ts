@@ -14,6 +14,8 @@ interface QuestionBase {
   passage?: string;
   /** Second passage for Cross-Text Connections. */
   passage2?: string;
+  /** Optional data table (Command of Evidence: Quantitative, data questions). Cells support math. */
+  table?: { caption?: string; headers: string[]; rows: string[][] };
   prompt: string;
   /** Step-by-step explanation shown after answering. */
   explanation: string;

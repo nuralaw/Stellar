@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import { SiteFooter } from "@/components/SiteFooter";
+import "katex/dist/katex.min.css";
 import "./globals.css";
 
 const geistSans = Geist({

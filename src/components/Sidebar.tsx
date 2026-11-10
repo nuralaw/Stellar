@@ -7,6 +7,7 @@ import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { ACCOUNT_NAV, MAIN_NAV, isActive, type NavItem } from "@/lib/nav";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
+import { useHydrated, useProfile } from "@/lib/store";
 
 function toggleCollapsed() {
   const el = document.documentElement;
@@ -56,15 +57,18 @@ function NavGroup({ title, items, pathname, onNavigate }: { title: string; items
 }
 
 function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
+  const hydrated = useHydrated();
+  const profile = useProfile();
+  const named = hydrated && profile.name;
   return (
     <div className="rounded-xl border border-side-line bg-side-2 p-3 rail:border-0 rail:bg-transparent rail:p-0">
       <Link href="/profile" onClick={onNavigate} title="Profile" className="flex items-center gap-3 rounded-lg rail:justify-center">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-accent">
-          <Icon d={ACCOUNT_NAV[0].icon} />
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-xl text-accent">
+          {hydrated ? profile.avatar : <Icon d={ACCOUNT_NAV[0].icon} />}
         </span>
         <span className="min-w-0 rail:sr-only">
-          <span className="block truncate text-sm font-semibold text-side-ink">Guest student</span>
-          <span className="block truncate text-xs text-side-muted">Sign in to save progress</span>
+          <span className="block truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest student"}</span>
+          <span className="block truncate text-xs text-side-muted">{named ? "View profile" : "Sign in to save progress"}</span>
         </span>
       </Link>
       <Link

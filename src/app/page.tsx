@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Dashboard } from "@/components/home/Dashboard";
 import { domainsFor, SECTIONS, type SectionId } from "@/lib/taxonomy";
 
 const FEATURES = [
@@ -22,8 +23,8 @@ const FEATURES = [
   },
   {
     title: "Progress tracking",
-    body: "Sign in to save your work and see accuracy by skill, so you know exactly what to study next.",
-    href: "/login",
+    body: "Your Home dashboard shows accuracy by topic, your study streak, and a countdown to test day — so you know what to study next.",
+    href: "/practice",
     icon: "M4 20V10m6 10V4m6 16v-7m4 7H2",
   },
 ];
@@ -39,49 +40,6 @@ function Icon({ d }: { d: string }) {
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d={d} />
     </svg>
-  );
-}
-
-function SampleQuestion() {
-  const choices = [
-    { l: "A", t: "10" },
-    { l: "B", t: "26", correct: true },
-    { l: "C", t: "30" },
-    { l: "D", t: "34" },
-  ];
-  return (
-    <div className="rounded-2xl border border-line bg-surface p-6 shadow-[0_20px_60px_-30px_rgb(0_0_0/0.35)]">
-      <div className="mb-4 flex items-center justify-between text-xs font-medium text-muted">
-        <span>Math · Algebra</span>
-        <span className="rounded-full bg-accent-soft px-2 py-0.5 text-ink">Easy</span>
-      </div>
-      <p className="mb-5 text-[15px] leading-relaxed">
-        If <span className="font-serif italic">3x</span> + 7 = 22, what is the value of{" "}
-        <span className="font-serif italic">6x</span> − 4?
-      </p>
-      <ul className="space-y-2">
-        {choices.map((c) => (
-          <li
-            key={c.l}
-            className={`flex items-center gap-3 rounded-xl border px-4 py-2.5 text-sm ${
-              c.correct ? "border-success bg-success-soft" : "border-line"
-            }`}
-          >
-            <span
-              className={`grid h-6 w-6 place-items-center rounded-full border text-xs font-semibold ${
-                c.correct ? "border-success bg-success text-surface" : "border-line text-muted"
-              }`}
-            >
-              {c.l}
-            </span>
-            {c.t}
-          </li>
-        ))}
-      </ul>
-      <p className="mt-4 border-t border-line pt-4 text-sm text-muted">
-        <span className="font-semibold text-success">Correct.</span> 3x = 15, so x = 5 and 6x − 4 = 30 − 4 = 26.
-      </p>
-    </div>
   );
 }
 
@@ -113,37 +71,7 @@ function SectionBreakdown({ id }: { id: SectionId }) {
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-16 pb-20 md:px-8 xl:grid-cols-[1.1fr_1fr] md:pt-20">
-        <div>
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            100% free · Digital SAT format
-          </p>
-          <h1 className="text-4xl leading-[1.08] font-bold tracking-tight text-balance md:text-5xl 2xl:text-6xl">
-            Your free path to a higher SAT score.
-          </h1>
-          <p className="mt-5 max-w-xl text-lg text-pretty text-muted">
-            Practice with original questions, take full-length adaptive tests, and learn every skill the Digital SAT
-            measures — no paywalls.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/practice"
-              className="rounded-xl bg-primary px-5 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover"
-            >
-              Start practicing
-            </Link>
-            <Link
-              href="/test"
-              className="rounded-xl border border-line bg-surface px-5 py-3 font-semibold transition-colors hover:bg-surface-2"
-            >
-              Take a practice test
-            </Link>
-          </div>
-        </div>
-        <SampleQuestion />
-      </section>
+      <Dashboard />
 
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 md:px-8 py-16">
