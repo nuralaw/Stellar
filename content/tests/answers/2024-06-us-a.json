@@ -1,0 +1,1157 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Once a battery that can't be replaced dies, the device no longer works, so it becomes useless and gets thrown away. That fits the cause-and-effect in the sentence. \"Valuable\" and \"attractive\" contradict the idea that the devices are discarded, and \"familiar\" has nothing to do with a dead battery."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says the writers \"have drawn on these stories\" to create their work, so modern Hawaiian literature has derived from the traditional stories. \"Supplanted\" is the tempting trap, but it means replaced, which is the opposite of drawing on them. \"Brooded on\" and \"anticipated\" don't describe using stories as a source."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A \"safe guess\" would have placed Mr. French's age between forty and fifty, so \"placed\" means judged or estimated his age. Nobody is physically arranging anything, so \"arranged\" doesn't fit, and \"contracted\" and \"adapted\" have no connection to guessing someone's age.",
+    "fix": {
+      "passage": "The following text is from Charles Chesnutt's 1905 novel The Colonel's Dream. Mr. French and Mr. Kirby work together.\n\nMr. French, the senior partner, who sat opposite Kirby, was an older man—a safe guess would have placed him somewhere in the debatable ground between forty and fifty: of a good height, as could be seen even from the seated figure, the upper part of which was held erect with the unconscious ease which one associates with military training."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Knowing that the exchange provides regulatory oversight would ease investors' worries, freeing them to focus on finding good opportunities, so \"assuage\" (calm or lessen) fits. \"Amplify\" does the opposite, since increased worry wouldn't let them focus elsewhere. \"Designate\" and \"convey\" don't describe reducing a worry."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined finding is that the air around the mushrooms got cooler, and the next sentence says those reductions inspired an air-cooling device. So the finding is central to the practical application described at the end. Choice B is tempting, but the underlined part is about the surrounding air, not about proving the mushrooms themselves stay hypothermic.",
+    "fix": {
+      "passage": "Shedding light on the thermal biology of fungi, research by Radamés Cordero et al. indicates that certain mushrooms (including Marasmius capillaris and species from the genus Russula) can achieve a hypothermic state through evaporative cooling. Effects of this thermoregulation were not limited to the fungi's fruiting bodies and root-like hyphae: <u>temperature reductions were observed in the air immediately surrounding the mushrooms.</u> Though slight, the reductions inspired an air-cooling device; using approximately 400 grams of mushrooms, the team's prototype lowered the air temperature in a controlled environment by 10°C in forty minutes."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text corrects the idea that only primates use tools and then gives examples from elephants and woodpecker finches, so its purpose is to show that many kinds of animals use tools. It never connects tool use to intelligence (A, C), and it doesn't compare humans with finches (B)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first describes the Museo de Las Americas (founded 1991) and then turns to the Latino Cultural Center, introduced as a more recently founded institution. Nothing mentions expansion plans (A), a trend that one institution rejects (B), or an argument about influence on society (C)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrases compare each speaker to someone hacking with a badly balanced axe whose strokes go wrong, a metaphor for trying and failing to express ideas about art clearly. That stresses how hard they struggle to articulate their thoughts. Choice C reads the metaphor literally, and A fails because no single artwork is being interpreted.",
+    "fix": {
+      "passage": "The following text is from Virginia Woolf’s 1919 novel Night and Day. The text describes a gathering of young artists and intellectuals.\n\nOne person after another rose, and, as with <u>an ill-balanced axe, attempted to hew out</u> his conception of art a little more clearly, and sat down with the feeling that, for some reason which he could not grasp, his <u>strokes had gone awry</u>. As they sat down they turned almost invariably to the person sitting next them, and rectified and continued what they had just said in public."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Pimentel's study used a small sample, and Clark and colleagues warn that small samples can lead to biased analysis and exaggerated effects. So the study's conclusion that acidification strongly affects the fish may overstate the effect. Choice D goes too far: the text raises a caution but never says other studies invalidated the result.",
+    "fix": {
+      "passage": "In 2016 Marta S. Pimentel and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Sparus aurata, a species of fish. However, Pimentel and colleagues’ study relied on a mean sample size of only 12 fish. In a 2022 review of various scientists’ conclusions about the impacts of ocean acidification on fish behavior, Timothy D. Clark and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. Such analysis, in turn, can contribute to reports of exaggerated effects.",
+      "prompt": "What does the text most directly suggest about Pimentel and colleagues’ conclusion?"
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Historians of capitalism rely on archival economic data, which doesn't exist for much of precolonial Africa, yet the Africanist scholars still found evidence of capitalism there. So the Africanists must be using other kinds of evidence. Choice B is tempting, but it assumes they work with archival records, which the text says largely don't exist for that period."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The only negative effect value in the table is -0.3238, and its neighboring species is leafy spurge. Elands sourfig and creeping thistle have positive values, and wild radish is a target species, not a neighboring species.",
+    "fix": {
+      "passage": "Researchers Carolina Laura Morales and Anna Traveset gathered data about flowering plants growing alongside each other in various locations. In each case, the researchers identified one plant as a \"target species\" and a nearby plant as a \"neighboring species.\" The researchers then calculated a positive or negative value to show how the neighboring species affected pollinator visits to the target species. One example of a neighboring species with a negative effect value is the _____",
+      "table": {
+        "caption": "Effect of Neighboring Species on Pollinator Visits to Target Species",
+        "headers": [
+          "Neighboring species",
+          "Target species",
+          "Effect value"
+        ],
+        "rows": [
+          [
+            "creeping thistle",
+            "wild radish",
+            "0.2523"
+          ],
+          [
+            "Elands sourfig",
+            "Montpellier cistus",
+            "0.3580"
+          ],
+          [
+            "leafy spurge",
+            "Lewis flax",
+            "-0.3238"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the El Castillo row, the age is 1,100 to 1,400 years and the height is 40 meters. The other heights belong to different pyramids: 49 m is Userkaf, 17 m is the Mask Temple, and 67 m is Djedefre.",
+    "fix": {
+      "passage": "A student is writing an essay about four pyramids for a history class and wants to note how long ago each pyramid was built and how tall each pyramid is. Consulting the table, the student finds that El Castillo was built 1,100 to 1,400 years ago and is _____.",
+      "table": {
+        "caption": "Pyramids in Egypt and the Americas",
+        "headers": [
+          "Pyramid",
+          "Country",
+          "Height (meters)",
+          "Age (years before present)"
+        ],
+        "rows": [
+          [
+            "The Pyramid of Userkaf",
+            "Egypt",
+            "49",
+            "4,400 to 4,500"
+          ],
+          [
+            "The Mask Temple",
+            "Belize",
+            "17",
+            "1,100 to 2,300"
+          ],
+          [
+            "El Castillo",
+            "Belize",
+            "40",
+            "1,100 to 1,400"
+          ],
+          [
+            "The Pyramid of Djedefre",
+            "Egypt",
+            "67",
+            "4,500 to 4,600"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the professor can't adjust to country life. In D he contrasts his familiar library and lecture hall with the \"wilderness\" of the estate, where he must hear \"futile conversations\" all day, which shows exactly that. Choice C mentions his lack of practical skills but says nothing about the estate itself, and A is Vanya's opinion of the professor's career.",
+    "fix": {
+      "prompt": "Which quotation from a translation of Uncle Vanya most effectively illustrates the claim?",
+      "choices": {
+        "A": "Vanya says to himself, “I was proud of [Professor Serebrakoff] and of his learning; I received all his words and writings as inspired and now? Now he has retired, and what is the total of his life? A blank!”"
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers point out that a changing climate can push species out of their ranges and create new suitable habitat, which challenges labels like \"invasive.\" That implies such labels depend on current conditions that may change. Choice D picks out the lorikeet as a special exception, which the text never does, and A and B make claims about the bird's history and future that aren't supported."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Musicians and nonmusicians hear equally well, yet musicians needed louder volumes to reach the most pleasurable level. Combined with the idea that training changes the brain, this suggests musicians' brains respond less pleasurably at volumes that already satisfy nonmusicians. Choice D is ruled out because the groups had comparable hearing, and C ignores that the difference found was specifically about volume."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A painting by 19th-century artist Katsushika Hokusai\" must describe whatever comes right after the comma. Only D puts the painting, The Great Wave off Kanagawa, there. In A and C the phrase would describe \"meaning\" or \"allegory,\" and in B it would describe the painting's meaning rather than the painting."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers back to one poem, Raghuvamśa, and shows possession of its narrative, so the singular possessive \"its\" is correct. \"It's\" means \"it is,\" and \"their\" and \"they're\" are plural."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The part after the blank names and describes the \"important new initiative,\" so a colon correctly introduces that explanation. A semicolon or period (C, D) would leave \"the Timeline...\" as a fragment with no main verb, and no punctuation (A) runs the noun phrases together."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank is joined by \"and\" to \"crafting short, compressed lines,\" so it must match that form: Brooks's penchant for crafting lines and incorporating rhythms. The other forms (\"incorporated,\" \"to incorporate,\" \"incorporate\") break the parallel structure after \"penchant for.\""
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"collision,\" so it needs the singular verb \"produces\"; the plural \"meteoroids and atmospheric gases\" sits inside a prepositional phrase and doesn't control the verb. The simple present also fits a yearly, repeated event. Choices B, C, and D are all plural."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text admits the NASA test succeeded, then says this doesn't guarantee the same effect on Yuliya and other primary objects. \"Granted\" signals conceding a point before adding a limit. \"Accordingly,\" \"Likewise,\" and \"Moreover\" all suggest continuation or agreement, not a qualification."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence praises the jumpsuit's detailed design, and the second points to one specific example of that detail, the blue rhinestones. \"In particular\" introduces a specific case of a general claim. \"Next\" and \"Soon\" imply time order, and \"Nevertheless\" signals a contrast that isn't there."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the number of merchant ships, and only D states that there were 392 of them in 2021. Choices A and B give the combined carrying capacity instead, and C just defines a term.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A merchant ship is any ship hired to carry cargo or passengers.\n• A ship's carrying capacity is also known as its deadweight tonnage (DWT).\n• In 2021, there were a total of 392 merchant ships registered in Saudi Arabia.\n• The combined DWT of these ships was 13.7 million tons."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence must contrast the two kinds of days. B does this with \"whereas\": quintidi honored animals and decadi honored agricultural tools. Choices A and D describe only one kind of day, and C mentions both without showing how they differ.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The French Republican calendar was used in France from 1793 to 1805.\n• Each calendar week had ten days, two of which were called quintidi and decadi.\n• Each quintidi was given a unique name in honor of an animal.\n• Each decadi was given a unique name in honor of an agricultural tool.\n• Bélier, a quintidi in the month of Thermidor, was named after the ram.\n• Crible, a decadi in the month of Nivôse, was named after the sieve."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A explains the law (orbits are elliptical, and it applies to moons as well as planets) and gives a specific example, Umbriel's elliptical orbit of Uranus. Choice B explains the law but its \"example\" is a vague generalization, not a specific case. D focuses on orbital time, which doesn't illustrate the law, and C gives no example.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kepler's first law of planetary motion states that the orbit of a planet around the Sun is an ellipse.\n• The law also states that, in an elliptical orbit, the object being orbited is one of the ellipse's foci.\n• Kepler's laws of planetary motion also apply to natural satellites (e.g. moons).\n• Umbriel is a moon of Uranus that orbits the planet in 4.14 Earth days on average.\n• Umbriel's orbit is elliptical.",
+      "prompt": "The student wants to provide an explanation and example of Kepler's first law of planetary motion. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The student needs both a definition and an example. A defines a Lazarus species as a living species once thought extinct and names the black-footed ferret as one. Choice D gives the example but never explains the term, while B and C each do only part of the job.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The black-footed ferret is a mammal species.\n• Up until 1981, it was believed to be extinct.\n• That year, a live black-footed ferret was identified in the wild in the United States.\n• The black-footed ferret is considered a Lazarus species.\n• \"Lazarus species\" is a term for living species of organisms that were once believed to be extinct."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An example of the blending should show the specific Western and Native elements in one piece. D does this: Pan Indian Rhythms uses a classical form and includes Ute notched sticks, a traditional Native instrument. Choices A, B, and C only say in general terms that Ballard blended traditions without showing how.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• He is one of the first composers to synthesize Western classical music with elements from various Native musical traditions.\n• Ballard's Pan Indian Rhythms (1970) for percussion is written in a classical form.\n• It incorporates Ute notched sticks, a traditional Native instrument."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tracking pedestrians only shows sidewalks people actually use, so sidewalks with few pedestrians get left out, \"resulting in incomplete maps.\" \"Neglects\" (fails to account for) fits that gap. \"Detects\" says the opposite, and \"oversees\" and \"approves\" don't describe missing something."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example says scholars may \"overlook nuances\" in Channing's work by focusing on how it fits a movement, so grouping authors leads scholars to discount, or disregard, subtleties. \"Scrutinize\" and \"magnify\" mean paying more attention, the opposite of overlooking, and \"denounce\" implies open criticism that the text never mentions."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the colon, new buyers who hadn't wanted the figures before rushed into the market, so rising prices created, or engendered, demand. That is the \"counterintuitive\" part, since higher prices usually lower demand. \"Exploiting,\" \"appraising,\" and \"monetizing\" don't mean bringing demand into existence."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first notes that scientists have been \"perplexed\" by the ammonite's huge size since 1895, then describes how Ifrim, Gale, and colleagues studied fossils and proposed an explanation. That is a mystery followed by an attempt to solve it. Choice A fails because no earlier assumption is overturned, and D fails because the species was discovered long ago, not recently."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The energy ladder model says income mainly drives fuel choice, and the text calls that model reductive. The underlined phrase admits income did matter (\"of course constrained fuel choice\") before stressing that other circumstances also shaped decisions. So it acknowledges a factor whose importance the text thinks the model overstates. Choice B is wrong because the text never says the model lacks any empirical support.",
+    "fix": {
+      "passage": "In Egypt, use of solid fuel (e.g., coal, wood) as a share of total household fuel use fell by more than 90 percent between 2000 and 2015; such shifts are typically explained by appeal to the energy ladder, a model holding that fuel choice is mediated mainly by household income (specifically, high-technology fuels displace solid fuels as incomes rise). Alemu Mekonnen and Gunnar Köhlin's study of fuel use in Ethiopia shows how reductive this model is, however: <u>although income of course constrained fuel choice</u>, several circumstances, including the local availability of different fuel sources, influenced decisions."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 argues that Asimov's thin characterization was deliberate and \"central to his thematic aims,\" since individuals don't matter on the scale of centuries. So its author would say the flat characters shouldn't automatically be counted as a weakness. Choice A misreads Text 2, which uses Foundation as an example of the same flatness, not an exception.",
+    "fix": {
+      "passage": "Text 1\nIsaac Asimov, author of Robots and Empire and I, Robot, is highly regarded despite his mediocre writing style. His prose is workmanlike; <u>his characters are flat</u> and discuss ideas rather than emotions. That his work is enjoyable despite this is a testament to his prodigious imagination—even if people read his books only for the ideas, they will have plenty to consider.\n\nText 2\nAsimov is critiqued for his style, but it is wrong to fault a writer for failing to do what he never intended to do. For example, although most of his novel Foundation consists of people discussing science and politics and we find out little about his characters' lives, Asimov wanted to convey the vast sweep of human history over centuries, and one of his points is that at such a timescale, individuals don't matter. Thus his lack of characterization is central to his thematic aims."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text frames activity in moonlight as a balance of benefits (foraging success) against costs (being seen by predators). Pocket mice avoid bright nights because the costs outweigh the benefits, while night monkeys, which forage by sight, gain more from the light, so their balance of reward and risk favors activity. Choices A and B invent claims about predator risk that the text never makes, and D reverses the effect of light on visual foraging."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To challenge the arc-melting idea, the data need an arc-melted HEA with low toughness: HEA 18 was arc melted but has the lowest value, 2.10. For an alternative explanation, the share of cobalt, chromium, and nickel tracks toughness: 100% in HEA 15 (265.20), 60% in HEA 5 (217.00), about 32% in HEA 1 (50.90), and almost none in HEAs 25 and 18. Choice C supports the arc-melting idea instead, and D wrongly calls HEA 5's 217.00 low.",
+    "fix": {
+      "passage": "High-entropy alloys (HEAs) have been observed to vary considerably in their resistance to crack propagation, a quality denoted as fracture toughness. It has been proposed that high levels of fracture toughness in HEAs are due to the use of arc melting during processing, <u>but data on HEAs compiled by engineer Xuesong Fan challenge that proposal and raise the possibility of an alternative explanation.</u>",
+      "table": {
+        "caption": "Composition, Processing History, and Fracture Toughness of Five HEAs (composition values may not add up to 100 due to rounding)",
+        "headers": [
+          "HEA identification number",
+          "Composition (%)",
+          "Processing history",
+          "Fracture toughness (megapascals times the square root of crack length)"
+        ],
+        "rows": [
+          [
+            "1",
+            "aluminum (10.53), boron (5.26), cobalt (10.53), chromium (10.53), copper (10.53), iron (10.53), molybdenum (10.53), nickel (10.53), silicon (10.53), titanium (10.53)",
+            "laser solidification",
+            "50.90"
+          ],
+          [
+            "5",
+            "cobalt (20), chromium (20), iron (20), manganese (20), nickel (20)",
+            "arc melting, cold forging, cross rolling, and annealing",
+            "217.00"
+          ],
+          [
+            "15",
+            "cobalt (33.33), chromium (33.33), nickel (33.33)",
+            "arc melting, homogenization, cold forging, cross rolling, and annealing",
+            "265.20"
+          ],
+          [
+            "18",
+            "molybdenum (25), niobium (25), tantalum (25), tungsten (25)",
+            "arc melting and homogenization",
+            "2.10"
+          ],
+          [
+            "25",
+            "aluminum (1.07), carbon (46.78), cobalt (1.07), chromium (1.07), copper (1.07), iron (1.07), nickel (1.07), tungsten (46.78)",
+            "spark plasma sintering",
+            "10.41"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion links anatomy to telling speech apart from nonspeech, so the evidence must compare real language with the scrambled recording across dogs with different head shapes. B does this: longer-headed dogs showed a bigger difference between speech and the scrambled sound. Choice C compares two languages, which is about telling languages apart, not speech from nonspeech, and A and D don't make a matched comparison between head types."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Self-dealing accounts for only about 10% of the forms but about 40% of the penalties, while undistributed income accounts for about 87% of the forms but only about 55% of the penalties. So each self-dealing filer paid far more on average. Choice D fails because the undistributed-income group paid about 55% of penalties, which is still a majority, and C fails because self-dealing plus taxable expenditures is under 50%.",
+    "fix": {
+      "passage": "While US public charities, like Kaiser Foundation Hospitals, must file Form 990 yearly with the IRS, private foundations, such as the David and Lucile Packard Foundation, must file a different form, 990-PF. In addition, foundations that engage in certain prohibited activities must also file Form 4720 and pay penalty taxes on the money involved. Prohibited activities for private foundations include \"self-dealing\" (conducting activities that benefit foundation insiders), making taxable expenditures such as outlays for lobbying, and failing to cross a required threshold in making charitable distributions from income.",
+      "prompt": "The data in the graph best support which conclusion about organizations that filed Form 4720 in 2003?"
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim is that Tokarczuk's novel combines literary realism with Polish folklore, as magical realist novels do. A describes a realistic plot repeatedly interrupted by Polish folkloric imagery, which is exactly that juxtaposition. Choice B focuses on Latin American influence rather than the realism-folklore mix, and D presents the folklore as separate from the novel's realistic mode.",
+    "fix": {
+      "passage": "Scholars cite Mr. President, the 1946 novel by Guatemalan author Miguel Angel Asturias, as a foundational text of magical realism, the Latin American style of fiction in which antirealistic plot devices—often borrowed from the folkloric traditions of Indigenous and colonial societies in the Americas—are deployed in an otherwise realistic mode of representation typical of the modern novel. This style has exerted a decisive influence on authors around the world, including Olga Tokarczuk, <u>whose 1996 novel Primeval and Other Times resembles classic magical realist novels in its juxtaposition of literary realism with folklore namely, that of Poland.</u>"
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Storage containers use the 300 series, a type of austenitic steel, and austenitic steel has a face-centered cubic structure that ferritic steel lacks. Induction cookers use ferritic steel, so only the container steel has that structure. Choice D is backward: austenitic steel gets its structure from added nickel, so it would have more nickel, not less.",
+    "fix": {
+      "passage": "All stainless steel contains varying amounts of iron, carbon, and corrosion-inhibiting chromium. However, ferritic stainless steel, often used for induction cookers, contains a higher percentage of chromium (at least 10.5%) than does austenitic stainless steel and a higher concentration of iron, which is responsible for its magnetic properties. Unlike ferritic stainless steel, austenitic stainless steel has a face-centered cubic crystalline structure resulting from the addition of nickel to the alloy. Austenitic stainless steel has two subtypes: the 300 series, often used for storage containers, and the 200 series, which has less nickel and more manganese than the 300 series and is used for indoor architecture. Thus, stainless steel used to manufacture storage containers will have ____"
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Three-host parasites, which need at least two vulnerable vertebrate hosts, declined as the sea warmed, while two-host parasites, which need only one vertebrate, stayed stable. That suggests warming-driven changes in vertebrate hosts hurt some parasite populations, but the hosts that two-host parasites depend on weren't changed in a way that affected them. Choice D reverses the relationship: more vertebrate hosts went with more sensitivity, not less."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"the International Criminal Police Organization\" is an interruption that begins with a dash, so it must end with a matching dash before the sentence continues. A comma, a colon, or no punctuation would leave the opening dash unpaired."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"average processing power\"; \"of microchips\" and the dashed phrase don't change that. A singular subject needs the singular verb \"has improved,\" and the present perfect matches \"Since then.\" Choices B, C, and D are plural verbs that wrongly agree with \"microchips\" or \"cores.\""
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The introductory phrase \"A theoretical relationship between tax rates and revenues\" describes the Laffer curve, so \"the curve\" must come right after the comma. In A and B the phrase would wrongly describe Arthur Laffer, and in D it would describe a napkin."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In 2018 ... exhibited her work for audiences across the world\" is a complete sentence, and \"Utilizing ... aesthetic, her photos captivated viewers\" is another, so they must be separated with a period. A comma or \"and\" would create a run-on and attach the \"utilizing\" phrase to the wrong clause."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both sides of the blank are independent clauses, so a semicolon correctly joins them. A colon (B) could join clauses, but the second clause already ends with a colon before \"a community,\" and a sentence shouldn't have two colons. A comma (D) or no punctuation (A) creates a run-on."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" belongs with \"This is a hypothetical designation,\" which contrasts with the previous sentence's claim that Proto-Indo-European is the ancestor of these languages. The following clause explains why it's hypothetical, so a semicolon separates the two clauses after \"however.\" Choices B and C attach \"however\" to the explanation, but that clause supports rather than contrasts with \"hypothetical.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence mentions the 1934 World Cup in Italy, and the next one describes the tournament at that time, so \"Then\" (meaning back in 1934) fits. \"As a result\" implies cause and effect, \"Similarly\" implies a likeness, and \"On the other hand\" signals a contrast between options."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Writing a poem about a sculpture is exactly what places Falconer in the tradition of ekphrasis, poetry that engages with visual art. \"In doing so\" links the action to that result. \"In addition\" would treat it as a separate point, and \"That said\" and \"Conversely\" signal contrast."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says not all ancient eclipses have been forgotten, and the next gives one that scholars still discuss. \"For example\" introduces that specific case. \"In summary\" would wrap up rather than illustrate, and \"Regardless\" and \"Next\" don't fit."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity, and A states what Sue and Thomas share: both belong to the genus Tyrannosaurus. Choice B points out a difference in where they're housed, and C and D describe only one specimen.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Sue is the nickname of a dinosaur fossil specimen housed at the Field Museum of Natural History.\n• The Field Museum of Natural History is located in Chicago, Illinois.\n• Sue is a member of the genus Tyrannosaurus.\n• Thomas is the nickname of a dinosaur fossil specimen housed at the Natural History Museum of Los Angeles County.\n• The Natural History Museum of Los Angeles County is located in Los Angeles, California.\n• Thomas is a member of the genus Tyrannosaurus."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only B gives the release date, 2005, which is what the student wants to show. The other choices give the designer or the source of the game's stories but say nothing about when it came out.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Author H. P. Lovecraft wrote a number of horror stories.\n• Designer Richard Launius created a board game based on these stories.\n• The game is called Arkham Horror.\n• It was released in 2005."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization should sum up what the studies have in common without tying it to one study. A does this: studies have found plant litter can reduce seedling emergence. Choice B reports only one study, C names both studies but never says what had the negative effect, and D only says the topic has been studied.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2010 study, Clark and Tilman found that the presence of plant litter had a negative effect on seedling emergence.\n• The study was conducted in a grassland setting in the United States.\n• In a 2002 study, Stammel et al. found that the presence of plant litter had a negative effect on seedling emergence.\n• The study was conducted in a grassland setting in Germany.\n• Seedling emergence is when a seedling sprouts above ground and begins photosynthesis."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The scope of Basquiat's work means how much he produced, and A says Untitled (Pollo Frito) is just one of more than two thousand drawings and paintings. Choices C and D focus on the sale price of one painting, and B mentions the total but turns to materials in an illogical contrast.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Jean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings.\n• Most of his works were completed in New York City in the 1980s.\n• His work Untitled (Pollo Frito) was completed in 1982.\n• The work is composed of acrylic, oil, and enamel on canvas and measures 60 inches by 120.5 inches.\n• Untitled (Pollo Frito) was purchased by a private collection for $25.7 million in a 2018 auction."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "About 400 US trails are rails-with-trails, compared with more than 2,000 rail trails, so B correctly generalizes that rails-with-trails are less common than another kind of railway trail. Choice C is a single example rather than a generalization, and A and D aren't specifically about rails-with-trails.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Zim Smith Mid-County Trail is located in New York.\n• It is one of more than 2,000 disused railroad corridors in the US that have been converted into public trails since the 1960s.\n• Such trails are known as rail trails.\n• The Union Pacific Railroad Trail in Nevada is parallel to an active railway, the Union Pacific Railroad.\n• It is one of approximately 400 trails in the US that share a right-of-way with an active rail line.\n• Such trails are known as rails-with-trails."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 6xy to each term: 6xy · 2x^2 = 12x^3y and 6xy · 5y = 30xy^2, so the product is 12x^3y + 30xy^2. Choice C forgets to add the exponents when multiplying, and A adds the coefficients instead of multiplying them."
+  },
+  {
+    "key": "m1-02",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every term has a factor of x^4, so factor it out: 7x^6 − 2x^5 + 9x^4 = x^4(7x^2 − 2x + 9). Check by distributing back. Choice C wrongly pulls 9 out of every term, which would give 63x^6 instead of 7x^6."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The height y is 61, so y = 61, and the length x is 3 times the height, so x = 3y. Choice B reverses the relationship (it says the height is 3 times the length), and A and C assign 61 to the length.",
+    "fix": {
+      "choices": {
+        "A": "y = 3x\nx = 61",
+        "B": "y = 3x\ny = 61",
+        "C": "x = 3y\nx = 61",
+        "D": "x = 3y\ny = 61"
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A line has the form f(x) = mx + b. The slope gives m = 51, and passing through (0, 0) means the y-intercept is b = 0, so f(x) = 51x. The other choices have slopes 34, 17, and 1."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute 18: g(18) = (5/9)(18) − 7/9 = 10 − 7/9 = 90/9 − 7/9 = 83/9. Choice D, 97/9, comes from adding 7/9 instead of subtracting it.",
+    "fix": {
+      "prompt": "The function g is defined by g(x) = (5/9)x − 7/9. What is the value of g(18)?",
+      "choices": {
+        "A": "38/9",
+        "B": "58/9",
+        "C": "83/9",
+        "D": "97/9"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "67"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 2^2 + 2 + 61 = 4 + 2 + 61 = 67."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x) = 5x + 7, the 7 is the value of f when x = 0, which is when the height was first measured. So the tree was estimated to be 7 feet tall at the first measurement. Choice C confuses the constant with the slope: the height grows by 5 feet each year, not 7.",
+    "fix": {
+      "prompt": "The function f gives the estimated height, in feet, of a poplar tree x years after its height was first measured. Which statement is the best interpretation of 7 in this context?\nf(x) = 5x + 7"
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "7"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line is y = 5x − 35. At the x-intercept y = 0, so 0 = 5x − 35, which gives 5x = 35 and x = 7."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "9"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since k > −6, the factor k + 6 is not zero and cancels: 27(k + 6)/(3(k + 6)) = 27/3 = 9. So c = 9.",
+    "fix": {
+      "prompt": "27(k + 6)/(3(k + 6))\nThe given expression is equivalent to c, where c is a constant and k > −6. What is the value of c?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In similar triangles, corresponding sides have the same ratio as the perimeters. The perimeter ratio is 150/50 = 3, so XY = 3 · 6 = 18. Choice B assumes the sides are equal, which would only be true if the perimeters matched.",
+    "fix": {
+      "prompt": "The table gives the perimeters of similar triangles TUV and XYZ, where TU corresponds to XY. The length of TU is 6.\nWhat is the length of XY?",
+      "table": {
+        "headers": [
+          "Triangle",
+          "Perimeter"
+        ],
+        "rows": [
+          [
+            "Triangle TUV",
+            "50"
+          ],
+          [
+            "Triangle XYZ",
+            "150"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Treat 7 − 8x as a single quantity t: 9t + 2 = 8t + 17. Subtract 8t and 2 from both sides to get t = 15. There's no need to solve for x. Choice A comes from a sign error."
+  },
+  {
+    "key": "m1-12",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute y = x + 33 into the second equation: (x + 33)^2 = x + 33. A number equals its own square only if it is 0 or 1, so x + 33 = 0 or x + 33 = 1, giving x = −33 or x = −32. Only −32 is among the choices; 33 would make x + 33 = 66, which isn't 0 or 1.",
+    "fix": {
+      "prompt": "x + 33 = y\n(x + 33)^2 = y\nA solution to the given system of equations is (x, y). What is a possible value of x?"
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The form (x − h)^2 + (y − k)^2 = r^2 has center (h, k) and radius r. Here h = 14, the second coordinate is k, and r^2 = 36, so r = 6. Choice D forgets to take the square root of 36, and B and C swap the coordinates."
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation is in vertex form y = a(x − h)^2 + k, so the vertex is (6.8, 740). Because a = −16 is negative, the vertex is a maximum: the firework reaches 740 feet at 6.8 seconds. Choice A mistakes the coefficient −16 for a time."
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(x) = 0 wherever the graph meets the x-axis. The graph crosses the axis at x = −3 and touches it at x = 1 (where it turns back down), so there are two distinct x-values. Choice C assumes a cubic always has three zeros, but here one zero is a repeated (touching) root."
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle M has center (3, 6) and radius sqrt(4) = 2. Circle p has the same center and radius 4, so its equation is (x − 3)^2 + (y − 6)^2 = 4^2 = 16. Choice A doubles r^2 instead of the radius, and C and D wrongly change the center."
+  },
+  {
+    "key": "m1-17",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at B, so AC = 14 is the hypotenuse, and AB is the side opposite the 58° angle at C. Since sin 58° = AB/14, AB = 14 sin 58°. Choice C gives BC, the side adjacent to the 58° angle.",
+    "fix": {
+      "choices": {
+        "A": "14 sin 58°",
+        "B": "14/(sin 58°)",
+        "C": "14 cos 58°",
+        "D": "14/(cos 58°)"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "26"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Write x(x − 15) = 286, so x^2 − 15x − 286 = 0. This factors as (x − 26)(x + 11) = 0, giving x = 26 or x = −11. Since x is positive, x = 26 (check: 26 · 11 = 286)."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "65"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since AC = CD, triangle ACD is isosceles, so its base angles are equal: (180 − 108)/2 = 36°, making angle D = 36°. Points D, C, B are on one line, so triangle DBE has angles 36° at D and 29° at B, leaving 180 − 36 − 29 = 115° at E. The angle x is supplementary to that angle along line DA, so x = 180 − 115 = 65."
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "24"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "2,800% of c means a = 28c. Since c = 0.25b, b = 4c. Then a − b = 28c − 4c = 24c, so w = 24."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "1/2",
+      ".5",
+      "0.5"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line j has slope −4/5. Line k, 24x + ry = 15, has slope −24/r, and parallel lines have equal slopes, so −24/r = −4/5 and r = 30. Then (0, b) on line k gives 30b = 15, so b = 1/2."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the dot plot, set A has 7, 6, 4, 6, and 7 values at 2, 5, 8, 11, and 14, so its mean is (14 + 30 + 32 + 66 + 98)/30 = 240/30 = 8 and its range is 14 − 2 = 12. Adding 17 to every value raises the mean to 25 but leaves the range at 12. Choice D wrongly adds 17 to the range too.",
+    "fix": {
+      "choices": {
+        "A": "The mean capacity is 8 μF, and the range of capacities is 12 μF.",
+        "B": "The mean capacity is 8 μF, and the range of capacities is 29 μF.",
+        "C": "The mean capacity is 25 μF, and the range of capacities is 12 μF.",
+        "D": "The mean capacity is 25 μF, and the range of capacities is 29 μF."
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Two-fifths of the stock is (2/5)(700) = 280 flowers. From the graph, orchids (100) plus lilies (180) make exactly 280. Tulip and lily give 190 + 180 = 370, which is far too many.",
+    "fix": {
+      "prompt": "The bar graph shows the distribution of flower type for the 700 flowers that a florist has in stock. For which two types of flowers is the total number of flowers of the two types exactly 2/5 of the florist's stock?"
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "Subtracting 11 from every y-value shifts the whole data set, and its line of best fit, down 11 units, so the new y-intercept is the old one minus 11. The line for data set A crosses the y-axis at about 50, so the new intercept is about 39, and the closest choice is 42.75. Choice A adds 11 instead of subtracting it.",
+    "note": "Graph as drawn has y-intercept ≈ 50 (→ ≈ 39 after shift), not 53.75; C is still the closest choice."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand the left side: 8x + 44 − 4x + 10 = 4x + 54. Then 4x + 54 = 13x − 9 gives 63 = 9x, so x = 7 and 12x = 84. Choice B is the value of x, not 12x.",
+    "fix": {
+      "choices": {
+        "A": "7/12"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Density is mass divided by volume: 308/28 = 11 grams per cubic centimeter. Choices B and C come from subtracting or adding the numbers, and D from multiplying them."
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: −7y > 21 − 3x, so y < (3/7)x − 3. When x < 0, the right side is less than −3, so y would have to be below −3; no point with y > 0 can work. The other regions all contain solutions, such as (−1, −5), (14, 1), and (8, 0)."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph of y = f(x) + 8 passes through (0, −1) and (−1, 4), so it has slope −5 and equation y = −5x − 1. Then f(x) = (−5x − 1) − 8 = −5x − 9. Choice C uses the graph's slope but adds 8 instead of subtracting it."
+  },
+  {
+    "key": "m2-07",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since GH = LM = 34, the equation GH/GF = LM/LK becomes 34/GF = 34/LK, so GF = LK. Now each triangle has two equal sides (GH = LM and GF = LK) with the equal 30° angle between them, so the triangles are congruent by SAS. No more information is needed; choice A wouldn't even help, since KM doesn't correspond to FG.",
+    "fix": {
+      "prompt": "In triangle FGH and triangle KLM, the measures of angles G and L are each 30°. The lengths of GH and LM are each 34 centimeters, and GH/GF = LM/LK. Which additional piece of information would be necessary to prove that triangle FGH is congruent to triangle KLM?",
+      "choices": {
+        "B": "The measures of angles H and M are each 60°",
+        "C": "The measures of angles F and K are each 90°"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute y = 3x + 9 into 3y = 8x − 6: 9x + 27 = 8x − 6, so x = −33. Then y = 3(−33) + 9 = −90, and x − y = −33 − (−90) = 57. Choice A adds the values instead of subtracting (−33 + (−90) = −123).",
+    "fix": {
+      "prompt": "y = 3x + 9\n3y = 8x − 6\nThe solution to the given system of equations is (x, y). What is the value of x − y?"
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "3"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(6) = 9 · f(4) means c^6 = 9c^4. Divide both sides by c^4 to get c^2 = 9, and since c > 1, c = 3."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Sine is opposite over hypotenuse. The side opposite the angle x° is the bottom leg, 63, and the hypotenuse is 73, so sin x° = 63/73. Choice B, 10/73, uses the difference of the sides rather than a side length.",
+    "fix": {
+      "prompt": "In the right triangle shown, what is the value of sin x°?",
+      "choices": {
+        "A": "1/73",
+        "B": "10/73",
+        "C": "63/73",
+        "D": "136/73"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "11"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract the first equation from the second: 2x − (−x) = 47 − (−337), so 3x = 384 and x = 128. Plug x = 128 and y = 19 into the first equation: −128 − 19w = −337, so 19w = 209 and w = 11.",
+    "fix": {
+      "prompt": "−x − wy = −337\n2x − wy = 47\nIn the given system of equations, w is a constant. In the xy-plane, the graphs of these equations intersect at the point (q, 19), where q is a constant. What is the value of w?"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": [
+      "7/10",
+      ".7",
+      "0.7"
+    ],
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Given that the tree is a red maple, only the 50 red maples count. Of those, 35 are from site A, so the probability is 35/50 = 7/10. Using 66 or 101 as the denominator is the common mistake.",
+    "fix": {
+      "prompt": "The table shows the distribution of two types of trees at two different sites. If a tree represented in the table is selected at random, what is the probability of selecting a tree from site A, given that the tree is a red maple? (Express your answer as a decimal or fraction, not as a percent.)",
+      "table": {
+        "headers": [
+          "",
+          "Site A",
+          "Site B",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Red maple",
+            "35",
+            "15",
+            "50"
+          ],
+          [
+            "Chestnut oak",
+            "31",
+            "20",
+            "51"
+          ],
+          [
+            "Total",
+            "66",
+            "35",
+            "101"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "361"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The beaker was placed on the table at t = 0. Since (2.72)^0 = 1, g(0) = 295 + (361 − 295) · 1 = 361 kelvins. The 295 is the temperature the liquid approaches over time, not its starting temperature."
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In f(x) = 144.5(1.7)^(x − 1), plugging in x = 1 makes the exponent 0, so f(1) = 144.5 and k appears as the coefficient. Check: 85(1.7)^1 = 144.5, so it matches choice B's function. Choice B shows f(0) = 85 as its coefficient, not f(1).",
+    "fix": {
+      "prompt": "For the exponential function f, the value of f(1) is k, where k is a constant. Which of the following equivalent forms of the function f shows the value of k as the coefficient or the base?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since a > 6, the base a/6 is greater than 1, so 9(a/6)^(x + c) is always positive and increases from near 0 to infinity. Subtracting b > 0 shifts the graph down, so y goes from just above −b (negative) up to infinity, always increasing. An always-increasing curve that goes from negative to positive crosses the x-axis exactly once.",
+    "fix": {
+      "prompt": "y = 9(a/6)^(x + c) − b\nHow many times does the graph of the given equation in the xy-plane cross the x-axis, where a, b, and c are positive constants such that a > 6 and b > c?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The x-intercepts −6, 7, 0, and 4 mean x + 6, x − 7, x, and x − 4 are all factors of f(x). So x(x − 7) = x^2 − 7x must be a factor. Choice A factors as (x − 6)(x + 4), which would need zeros at 6 and −4, which aren't given.",
+    "fix": {
+      "prompt": "For a polynomial function f, the graph of f in the xy-plane contains the points (−6, 0), (7, 0), (0, 0), and (4, 0). Which of the following must be a factor of f(x)?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "-2392"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The radius is PO = 52, so the semicircle's area is (1/2)π(52^2) = 1352π. The diameter NP is 104, and P is the midpoint of NQ, so NQ = 208; with NS = 18, the rectangle's area is 208 · 18 = 3744. The total area is 1352π + 3744, so a − b = 1352 − 3744 = −2392."
+  },
+  {
+    "key": "m2-18",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Multiply both sides by 20xyz to clear the fractions: 4z + 20x^2y^2z^2 = 5x. Then y^2 = (5x − 4z)/(20x^2z^2), and since y is positive, y = sqrt((5x − 4z)/(20x^2z^2)). Choice A is y^2, not y.",
+    "fix": {
+      "prompt": "1/(5xy) + xyz = 1/(4yz)\nIn the given equation, x, y, and z are positive numbers. Which expression is equivalent to y?",
+      "choices": {
+        "A": "(5x − 4z)/(20x^2z^2)",
+        "B": "sqrt((5x − 4z)/(20x^2z^2))",
+        "C": "1/(4xz^2 − 5x^2z)",
+        "D": "sqrt(1/(4xz^2 − 5x^2z))"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "|x − 5| = k/2 has two solutions when k/2 > 0, none when k/2 < 0, and exactly one (x = 5) when k/2 = 0. So k/2 must be 0. Choice D gives two solutions, x = 0 and x = 10.",
+    "fix": {
+      "prompt": "The equation 2|x − 5| = k, where k is a constant, has exactly one solution. Which of the following could be the value of k/2?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 676% increase adds 6.76k to the original k, so the new mass is k + 6.76k = 7.76k. Choice B is only the amount of the increase, not the total mass."
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since g(x) = f(x)/(x + 3), f(x) = g(x)(x + 3). That gives f(−21) = 2(−18) = −36, f(−9) = 0, and f(15) = 4(18) = 72. The slope is (72 − 0)/(15 − (−9)) = 3, so f(x) = 3(x + 9) = 3x + 27, and the y-intercept is (0, 27). Choice A uses the x-intercept −9 by mistake.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of g(x), where g(x) = f(x)/(x + 3) and f is a linear function. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "-21",
+            "2"
+          ],
+          [
+            "-9",
+            "0"
+          ],
+          [
+            "15",
+            "4"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first 25 people cost 25 · 28 = 700 dollars, and the other n − 25 people cost 17 each. So f(n) = 700 + 17(n − 25) = 17n − 425 + 700 = 17n + 275. Choice C forgets that the first 25 people are already counted in 17n."
+  }
+]

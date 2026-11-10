@@ -1,0 +1,1122 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Keawe was chosen for her lifetime contributions to the arts, so the fellowship exists to honor, or publicly recognize, exceptional artists. \"Overshadow\" and \"distract\" are negative and clash with an award, and \"begin\" makes no sense with artists as its object."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Two broods on different cycles emerged at the same time in the same region, so the event was a convergence, a coming together. \"Succession\" implies one after another, the opposite of coinciding, and \"division\" and \"expiration\" don't describe two events meeting."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence says Miyazaki presents fantastical elements \"with little backstory or explanation,\" so he tends to withhold, or hold back, details about them. \"Celebrate\" and \"invent\" suggest he supplies more detail, which contradicts the text, and \"combine\" doesn't fit."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A title like \"City of Gastronomy\" signals or indicates that the city has a vibrant food culture, so \"denotes\" fits. A title can't \"discover\" anything, and \"renounces\" and \"complains\" are negative and illogical for an honor."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After describing the historical-DNA method, the underlined phrase steps back to evaluate it, saying the study took advantage of a vast, underused source of insight into the past. That is commentary on why the approach matters. It doesn't list specific applications (A), describe findings about pathogens (B), or explain why the method is rarely used (D).",
+    "fix": {
+      "passage": "Beth Shapiro and other researchers studying the history of organisms have long utilized ancient DNA—DNA recovered from ancient organic material that has been preserved under natural conditions. However, Michael G. Campana and colleagues' 2017 study of the evolutionary origins of a fungal pathogen affecting bats instead relied on historical DNA—genomic data incidentally preserved in specimens that are housed in natural history collections—<u>thus capitalizing on the research potential offered by a vast but hitherto relatively underutilized source of insight into the biological past.</u>"
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence compares dream eye movements to the way awake, sighted people track real objects, and that similarity is what leads the team to conclude dream objects are more than pure imagination. So it presents a comparable situation that supports the conclusion. It doesn't undermine a hypothesis (D) or describe a practical application (A).",
+    "fix": {
+      "passage": "Curious about how people visually perceive objects in their dreams, Stephen LaBerge and team recruited lucid dreamers—people aware that they're dreaming as it's happening—for a research study. These participants were reliably able to signal when they had entered a dream state; the team then observed participants' eye movements as they slept. <u>The smoothness with which participants' eyes tracked objects in their dreams closely matched how sighted people who are awake visually track objects around them</u>, suggesting to the team that the brain perceives dream objects as the product of something other than pure imagination."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says Capital and Ideology is less rigorously structured than the earlier book, and Text 2 says it has different aims and should be judged next to a digressive work like Burton's, so both agree its structure differs from Piketty's earlier work. Only Text 1 thinks the earlier book is superior (C), and only Text 2 would defend the digressions (B)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence states directly that Bellie researches gravitational waves. Music is how he shares that research, not its subject, and space travel and ocean currents are never mentioned."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The author says mass extinctions unfold over thousands or millions of years and that multiple factors likely drove the species loss, which matches A. The text gives the 75 percent figure without questioning it (B) and never says the event is hard to detect or recently discovered (C, D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Yung contrasts the New York of 1847, a city of about 300,000 people, with the New York of 1909, a metropolis full of skyscrapers rivaling London, so the main idea is how much more developed and populated the city has become. He compares New York to London as a rival, not as more modern (B), and he calls the voyage unusually fair, not dull (C).",
+    "fix": {
+      "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America.\n\nWe landed in New York on the 12th of April, 1847, after a passage of ninety-eight days of unprecedented fair weather. The New York of 1847 was altogether a different city from the New York of 1909. It was a city of only 250,000 or 300,000 inhabitants; now it is a metropolis rivaling London in population, wealth and commerce. The whole of Manhattan island is turned into a city of skyscrapers, churches and palatial residences."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says willingness to walk depends on things like paved sidewalks and crosswalks; if those have increased a lot in ten years, residents today would likely walk farther than the old survey shows, supporting the researcher's claim. Rainy-day ridership (B), cyclists (C), and current riders' satisfaction (D) don't show that the neighborhood's walking attitudes have changed."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that all people feel emotionally attached to where they live, and A says home holds power over \"the mind, and the affections\" for the lowly as well as the great, regardless of rank or color. The other quotations are about curiosity, fame, and children's sleep, not attachment to home."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student predicts that birds heavier than 150 grams don't use deceptive defenses, so a bird over 150 grams that does use broken-wing display weakens it: the blue-winged teal, at 398 grams, is in the table of birds that perform the display. Choice C describes birds under 150 grams, which fits the prediction, and A contradicts the table's title.",
+    "fix": {
+      "passage": "One antipredator defense that the masked lapwing uses to protect its nest and young chicks is called \"broken-wing display\"; this form of deceptive defense involves an adult bird pretending to be injured and unable to fly in order to distract an approaching predator. Broken-wing display has been documented in 285 bird species from 13 different avian orders. A student predicts that bird species with mean body masses greater than 150 grams do not use deceptive defenses because larger birds tend to be more effective than smaller birds at using aggressive defenses to protect nests from predators, making deceptive defenses unnecessary.",
+      "table": {
+        "caption": "Mean Body Mass of Birds Known to Perform Broken-Wing Display",
+        "headers": [
+          "Bird",
+          "Mean body mass (grams)"
+        ],
+        "rows": [
+          [
+            "ruddy turnstone",
+            "137"
+          ],
+          [
+            "swamp palm bulbul",
+            "61"
+          ],
+          [
+            "blue-winged teal",
+            "398"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Musicians tended to listen at higher volumes than nonmusicians, so if both had the same favorite song and the musician played it at 85.5 dB, the nonmusician likely played it more quietly, below 85.5 dB. Choice C reverses that relationship, and A and B go beyond what the findings say about other songs or genres."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The meta-analysis says at least 176 individuals are needed to trust a finding of population-level handedness, and the 1993 study used only 2, so its claim falls far short of that threshold. The text says nothing about differing standards (B), the chimpanzee study's size (C), or how common right-handedness is among gorillas (D)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers back to \"dark fiction,\" a singular thing, so \"it uses\" is correct. \"They\" is plural, and \"one\" and \"we\" refer to people rather than to the fiction being discussed."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"Frederick Hill\" needs a main verb, and the phrase between the commas is just a description, so the finite verb \"began\" completes the sentence. \"To begin,\" \"beginning,\" and \"having begun\" are not finite verbs and would leave the sentence without one."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"Marcel Duchamp's abstract cubist aesthetic,\" a singular noun, so \"it\" is correct. \"These\" and \"they\" are plural, and \"we\" doesn't refer to anything in the sentence."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Coaches,\" which is plural (the IWBF is only in the modifying phrase), so the plural verb \"use\" is needed. \"Is using,\" \"has used,\" and \"uses\" are singular forms."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"New types of polymers have been engineered to repair themselves\" is a complete sentence, and \"aided by embedded microcapsules, such materials begin to self-heal\" is another, so a period is needed between them. A and D join the two independent clauses with only a comma, and B's dashes also leave them improperly joined."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Having proportionally large populations,\" which acts as a single idea and takes a singular verb, so \"is\" is correct. The plural noun \"populations\" inside the phrase tempts you toward \"are,\" \"were,\" or \"have been,\" but it isn't the subject."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Demonstration sports were meant to showcase sports linked to the host country, and the Austrian sport was shown in Austria and the French sport in France, so it was fitting. \"Nevertheless\" and \"by contrast\" signal a contrast that isn't there, and \"additionally\" just adds a fact rather than showing how well the choice suited each host."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rehren agrees with Hodgkinson, \"concurring\" that glass was more common than once thought, so \"Likewise\" correctly signals a similar view. \"Nonetheless\" signals a contrast, and \"As such\" and \"Consequently\" wrongly suggest Rehren's view was caused by Hodgkinson's find."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to specify the bird's average weight, and only D gives it: 19 grams. The other choices describe where the finch lives or the islands' bird diversity, which doesn't mention weight.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The large tree finch is a species of bird.\n• It has an average weight of 19 grams.\n• It can be found on the Galápagos Island of Santa Fe.\n• The Galápagos Islands are a group of islands that have many different species of birds."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only D names the willow oak's native ecoregion, the Southeastern US. A talks about deciduous trees in general, and B and C give the scientific name and tree type without the region.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The willow oak is a species of deciduous tree.\n• Its scientific name is Quercus phellos.\n• It is native to the Southeastern ecoregion of the US."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To explain how Schubart describes C minor, the sentence needs his actual description, \"longing,\" which only C includes. B says he describes the mood but never says what it is, and A and D don't mention Schubart's description.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In music theory, the term \"key\" refers to the set of musical notes that forms the foundation of a piece of music.\n• In Ideas Toward an Aesthetic of Music (1806), German poet and composer Christian Schubart describes the mood of various musical keys.\n• He describes the key of C minor as expressing \"longing.\"\n• \"Don't Speak\" (1996) by No Doubt is a song written in C minor.",
+      "choices": {
+        "C": "In Ideas Toward an Aesthetic of Music, Schubart describes the mood of C minor as expressing \"longing.\""
+      }
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "D makes the claim (many kumiko patterns are inspired by nature) and supports it with an example (the seigaiha pattern resembles ocean waves). B mentions nature but focuses on construction without an example, C ignores inspiration entirely, and A wrongly says the pattern is inspired by wooden strips.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kumiko is a Japanese woodworking technique in which thin strips of wood are interlaced to create latticed panels that incorporate intricate patterns.\n• These wooden strips are fit together without the use of nails or other fasteners.\n• Many of the geometric patterns used in kumiko designs are inspired by elements from nature.\n• The overlapping hexagons of the kikko pattern resemble a tortoise's shell.\n• The curved fan shapes of the seigaiha pattern resemble ocean waves."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The result was \"a hybrid dance form,\" so the Chichimeca Jonaz traditions must have intermingled with, or blended with, those of other tribes. \"Corresponded to\" means matched rather than mixed, and \"deferred to\" and \"advocated for\" don't describe traditions combining."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The temptation is to treat meteorites' properties as stand-ins for Mars's interior, since their isotopes resemble Mars's atmosphere, so \"proxies for\" fits. Udry cautions that such substitution isn't enough. \"Catalysts of,\" \"contrivances of,\" and \"deterrents to\" don't express one thing standing in for another."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The evidence is that recent oil shocks barely affected India's GDP, so the link between oil shocks and the economy has abated, or weakened. \"Oscillated\" means swung back and forth, \"reverted\" implies a return to an earlier state, and \"acquiesced\" means gave in, none of which match a steady decline."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first describes the Federalist Papers (who wrote them, where and why they were published) and then explains that the authorship of most essays is certain but a few are disputed. That matches B. It doesn't summarize the essays' argument (A), and publication history (D) is only one part of the description."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined part reports MOMA's reason for showing some games only as videos, and the rest of the sentence (\"but video games are an inherently interactive medium\") challenges that reasoning. So it gives MOMA's rationale for a decision the author criticizes. It isn't a criticism of MOMA (A), and the fact about interactivity comes after the underlined part (C).",
+    "fix": {
+      "passage": "The Museum of Modern Art (MOMA) in New York City has an exhibition of video games that includes Yars' Revenge from 1982, which museum visitors can play onsite, and SimCity 2000 from 1994, which visitors can see only in a video presentation. <u>MOMA claims the video presentations are only for games that would be impractical to display in a playable form,</u> but video games are an inherently interactive medium, a feature that is grossly absent in a video-only presentation."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The friend says his soul is calm because of \"the lack of anvil and strife,\" so anvil (hard labor) and strife (conflict) name what is missing from his present peaceful state, a sharp contrast to his tranquility. The phrase refers to human toil, not nature (A), and the friend is glad to be without it, so it can't be something he values (D).",
+    "fix": {
+      "passage": "The following text is from Anne Spencer's 1922 poem \"Translation.\"\n\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken,\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack of <u>anvil and strife</u>.\n\"The wooing kestrel,\" I said, \"mutes his mating-note\nTo please the harmony of this sweet silence.\""
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Arnold contrasts the idea that everyone should simply do as he likes with culture's aim of drawing people toward \"what is indeed beautiful, graceful, and becoming\" and getting them to like it, which means building a shared standard of taste. He doesn't predict disagreement (A) or argue that the English are unfairly criticized (B), and science is never mentioned (C).",
+    "fix": {
+      "passage": "The following text is adapted from Matthew Arnold's 1869 nonfiction book Culture and Anarchy.\n\nThe Times [a British newspaper], replying to some foreign strictures on the dress, looks, and behaviour of the English abroad, urges that the English ideal is that everyone should be free to do and to look just as he likes. But culture indefatigably tries, not to make what each raw person may like, the rule by which he fashions himself; but to draw ever nearer to a sense of what is indeed beautiful, graceful, and becoming, and to get the raw person to like that."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example is about helicopter surveying overestimating density, so it should point to the helicopter study (Choate et al.) reporting an unusually high density: 10.24 cougars per 100 square kilometers, the highest in the table. C and D discuss studies that used other methods, and A compares study areas, not densities.",
+    "fix": {
+      "passage": "Studies of the population density of cougars (Puma concolor) have yielded a range of results, which may in part reflect differences in the effectiveness of the methods that researchers have used in their studies. If, for example, the use of helicopter surveying tends to lead to overestimates of cougar population density, that may explain why the study by _____",
+      "table": {
+        "caption": "Studies of Cougar Population Density",
+        "headers": [
+          "Study authors",
+          "Location",
+          "Methods",
+          "Study area (square kilometers)",
+          "Maximum density (cougars per 100 square kilometers)"
+        ],
+        "rows": [
+          [
+            "Randy D. Johnson",
+            "North Dakota (United States)",
+            "radio-collar tracking",
+            "6,467",
+            "2.78"
+          ],
+          [
+            "Gregory A. Davidson et al.",
+            "Oregon (United States)",
+            "scat-detecting dogs",
+            "1,225",
+            "5.50"
+          ],
+          [
+            "Juan I. Zanón-Martinez et al.",
+            "Argentina",
+            "regular camera trapping",
+            "1,179",
+            "4.90"
+          ],
+          [
+            "David M. Choate et al.",
+            "Utah (United States)",
+            "helicopter surveying",
+            "1,300",
+            "10.24"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text describes the novel as autofiction: a protagonist modeled on the author and a frank, nearly confessional first-person voice. A gives both, since the protagonist's family is virtually identical to Vuong's and the narration is surprisingly frank. D undercuts the usual naming pattern, and B and C focus on form and imagery that the description doesn't mention."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says that when tariffs are removed, places with expensive domestic production see that production suppressed. Production is projected to fall in India and Russia but rise in Argentina and the US, which suggests production is relatively cheap in the latter two. B is about prices, not production, C is false (prices rise in Argentina and the US), and D compares total output, which the table doesn't give.",
+    "fix": {
+      "passage": "A tariff is a tax on imported goods intended to protect domestic producers of similar goods from international competition. Eliminating tariffs can lead to an influx of cheaper imported goods, lowering prices; in a place where domestic production is relatively expensive, this influx can suppress domestic production, as the country's consumers favor more cheaply produced imported goods over domestically produced ones. A student consults a table showing projected changes in production and average market prices of agricultural commodities in four countries in a tariff-elimination scenario. Based on the data, the student claims that compared with India and Russia, agricultural production in Argentina and the United States is likely relatively inexpensive.",
+      "table": {
+        "caption": "Projected Percent Change in Agricultural Production and Market Price under Tariff-Elimination Scenario",
+        "headers": [
+          "Country",
+          "Percent change in total production",
+          "Percent change in market prices"
+        ],
+        "rows": [
+          [
+            "Argentina",
+            "+0.90",
+            "+1.02"
+          ],
+          [
+            "India",
+            "−1.34",
+            "−1.98"
+          ],
+          [
+            "Russia",
+            "−3.48",
+            "−0.99"
+          ],
+          [
+            "United States",
+            "+1.76",
+            "+0.44"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most HEAs and MEAs get less tough as temperature drops, so data showing the opposite would support Liu et al.: for both alloys, both kinds of toughness are higher at 20 kelvins than at 293 kelvins, as D states. A compares the two alloys at one temperature, and B and C describe other features of the graph without showing that toughness rises as temperature falls, which is what sets these alloys apart.",
+    "fix": {
+      "passage": "High entropy alloys (HEAs) typically combine five or more elements in roughly equal proportions, and medium entropy alloys (MEAs) typically combine three or four elements in similar proportions. HEAs and MEAs are known for withstanding cracking at extremely low (cryogenic) temperatures relatively well, though their fracture toughness generally falls as temperature does. Dong Liu et al. investigated the fracture toughness (both the initiation and propagation toughness) of the HEA CrMnFeCoNi and its MEA derivative CrCoNi and concluded that the alloys' toughness performance differs from that of most HEAs and MEAs."
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that sophists have an exaggerated sense of their own wisdom, and in C the sophist Socrates calls his own teachings \"clever\" dogma about \"abstruse matters\" and expects the student to grasp them instantly. D shows Socrates insulting a student, which is about the student's stupidity, and A and B are Strepsiades' remarks rather than a sophist displaying self-importance."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If GPS gives much higher distances than RTD, then a population measured by GPS would show a smaller distance had RTD been used instead. The caribou were tracked by GPS at 3,807 km, so with RTD the figure would likely be less than 3,807 km. A suggests a minimum rather than a decrease, and C reverses the claim for the kob.",
+    "fix": {
+      "passage": "Some studies of migrating animals measure how far the animals travel in a year by fitting individuals with GPS tracking collars. Other studies track annual round-trip distance (RTD), which is equal to double the distance separating the two habitats a population migrates between each year. A researcher argues that since GPS records all of an animal's movements, using the GPS method to track a population would result in significantly higher recorded travel distances than using the RTD method would. For example, it's very likely that the distance reported for the",
+      "table": {
+        "caption": "Reported Annual Travel Distances in Four Studies of Migrating Animal Populations",
+        "headers": [
+          "Species",
+          "Continent",
+          "Distance (km)",
+          "Measurement method"
+        ],
+        "rows": [
+          [
+            "Mule deer",
+            "North America",
+            "772",
+            "RTD"
+          ],
+          [
+            "Caribou",
+            "North America",
+            "3,807",
+            "GPS"
+          ],
+          [
+            "Gray wolf",
+            "North America",
+            "2,155",
+            "GPS"
+          ],
+          [
+            "White-eared kob",
+            "Africa",
+            "400",
+            "RTD"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Scholder's generation painted in the style of Abstract Expressionism rather than in traditional Indigenous modes, so nothing in the style itself marks the work as Indigenous; calling it Indigenous art depends on knowing who the artist is. The text makes no judgment about aesthetic merit (A) and doesn't say Abstract Expressionist motifs had Indigenous origins (B)."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Clothing lice could only arise and survive if many people wore clothing regularly, and Toups et al. date them to about 170 Ka, while clothing was only essential outside Africa by 70 Ka and was thermally unnecessary in Africa. So many humans regularly wore clothing long before living in places cold enough to require it. B contradicts the 170 Ka date, and A and D aren't supported."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Some biologists believe can be used to explain...\" can't stand alone, since it's missing a subject for \"can be used,\" so it must be a restrictive relative clause attached to \"formation\" with \"that\" and no comma. A and B create a fragment after the period or semicolon, and D wrongly puts a comma before a restrictive \"that\" clause."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second sentence is one independent clause (\"Lai and Muñoz recognize the need for direct observation\") followed by the participial phrase \"recommending...\"; \"however\" is just an interrupter in the middle of it, so it's set off with commas. B and C would leave \"however, recommending...\" as a fragment, and D's semicolon also cuts off a phrase that isn't an independent clause."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The interruption describing postmodern dance opens with a dash after \"dance,\" so it must close with a matching dash after the parenthetical \"(such as ... gravity)\" before the sentence resumes with \"to video.\" A comma, semicolon, or no punctuation would leave the dash-set aside unclosed."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"The reliability,\" which is singular (\"of the dates...\" and the \"which\" clause just describe it), so the main verb must be singular: \"depends.\" \"Depend\" is plural, and \"depending\" and \"having depended\" aren't finite verbs, which would leave the sentence without one."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the clause \"whose work _____ the richness of Betham's poems... encourages a broader rethinking,\" the verb is \"encourages,\" so the blank must be a modifier of \"work\": \"highlighting.\" Any finite verb (A, B, D) would give the clause two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Respectively\" belongs with the list of awards, so it's set off with a comma after \"awards,\" and then a semicolon is needed because \"the achievement is known as 'winning the EGOT'\" is a separate independent clause. A joins two independent clauses with only a comma, B misplaces \"respectively\" into the second clause, and C's dash doesn't pair with the earlier one properly."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first clause rejects one explanation (time didn't stand still), and the second clause gives the correct one (erosion removed the material), so \"rather\" signals that replacement. \"However\" would imply a contrast with the rejection itself, and \"moreover\" and \"for instance\" don't fit an alternative explanation."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The popular story is that dust bowl migrants went to faraway California, but the study found that migrants more often merely relocated within the region, so \"more often\" fits the comparison. \"Nevertheless\" and \"additionally\" don't express this contrast in frequency, and \"for this reason\" wrongly signals cause and effect."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A states that each day was named to honor an aspect of rural life and gives an example (a day named for the goose), which emphasizes the rural theme. B describes the calendar's structure, and C and D say the days had unique names without connecting them to rural life.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The French Republican calendar was used in France from 1793 to 1805.\n• Each month was divided into three weeks of ten days each, followed by five supplemental days.\n• Each day was named after a plant, animal, agricultural tool, or mineral as a way of honoring an aspect of rural life.\n• Brumaire is the second month in the calendar.\n• The fifth day of Brumaire is named Oie, which means \"goose.\""
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Methods are what the researchers did: they tagged 138 female wood ducks with radio frequency ID trackers and recorded how many nest boxes each visited, which is exactly D. A and C focus on results (younger ducks visited more boxes; 13.0% visited 10 or more), and B describes a method that isn't in the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2020 study, researchers in California investigated how many potential nesting sites female wood ducks visited during the nesting season.\n• The researchers placed nest boxes throughout the survey area and tagged 138 female wood ducks with radio frequency ID trackers.\n• These trackers recorded how many nest boxes each duck visited.\n• 67 ducks (48.5%) visited only one nest box.\n• 18 ducks (13.0%) visited 10 or more nest boxes.\n• Younger ducks were more likely to visit multiple nest boxes."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A contrasts the two traditions on the same feature: Majorcan charts were richly illustrated, Venetian ones were sparse. B says they differed without saying how, C contrasts illustration with geography (a mismatched comparison), and D reverses which tradition was richly illustrated.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Haym ibn Risch was a fourteenth-century Majorcan cartographer of portolan charts.\n• Francesco Pizigano was a fourteenth-century Venetian cartographer of portolan charts.\n• Portolan charts were early nautical charts that mapped the waterways of the Mediterranean and Black Seas.\n• Portolan charts in the Venetian tradition tended to be sparse in illustrations.\n• Those in the Majorcan tradition tended to be richly illustrated.\n• In Majorcan charts, the Atlas Mountains are depicted as a palm tree, and Bohemia is depicted as a horseshoe."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Champ and Freeman say barter requires that your trading partner both have what you want and want what you have, and that this makes barter inefficient; A paraphrases this as the \"precise alignment of desires\" barter requires. B paraphrases a different quotation (about becoming monetary economies), and C and D just restate the definition of barter rather than the reason it is inefficient.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Squirrel pelts were used as commodity money in medieval Russia.\n• In a commodity money economy, specific goods act as a common unit of monetary exchange that can be used to buy and sell other goods.\n• In a barter economy, goods are traded directly between parties without the use of money.\n• Economists Bruce Champ and Scott Freeman: bartering requires that \"the person with whom you wish to trade must not only have what you want but also want what you have.\"\n• \"The inefficiency is apparent; a great deal of time is spent merely finding someone with whom to trade.\"\n• Champ and Freeman: when \"individuals might come to accept one particular good in exchange for others even if they do not wish to consume that good...barter economies essentially become monetary economies.\""
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The diagonal splits the rectangle into right triangles, so 4^2 + s^2 = (sqrt(65))^2, which gives 16 + s^2 = 65, s^2 = 49, and s = 7. The perimeter is 2(4 + 7) = 22. Choice A (11) is only half the perimeter, the sum of two sides."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "h(−6) = 7|−6| = 7(6) = 42. The absolute value makes the input positive, so the result can't be −42.",
+    "fix": {
+      "prompt": "The function h is defined by h(x) = 7|x|. What is the value of h(−6)?"
+    }
+  },
+  {
+    "key": "m1-03",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "(cx)/(4y) can be written as (c/4)·(x/y). Since x/y = 52, this is (c/4)(52) = 52, so c/4 = 1 and c = 4. Choice C (52) comes from confusing c with the value of the ratio.",
+    "fix": {
+      "prompt": "If x/y = 52 and (cx)/(4y) = 52, what is the value of c?"
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Treat 8 − 4x as a single unknown u: 5u + 2 = 4u + 18. Subtracting 4u and 2 from both sides gives u = 16. Solving for x first (x = −2) and stopping there leads to the trap answer −2."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "1/4",
+      ".25",
+      "0.25"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set g(a) = 29: 16a + 25 = 29, so 16a = 4 and a = 4/16 = 1/4."
+  },
+  {
+    "key": "m1-06",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "a = 2.4b and a = 0.7c, so 0.7c = 2.4b and c = (2.4/0.7)b ≈ 3.43b. That means c is about 343% of b. Choice A (168) comes from multiplying 2.4 by 0.7 instead of dividing."
+  },
+  {
+    "key": "m1-07",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Here y = 18 snow queen stems, so x + 18 = 48 and x = 30 marble queen stems. Choice C repeats the given y-value, and A is the total."
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 7 + x = 5, x = −2. Then −14 − 2x = −14 − 2(−2) = −14 + 4 = −10. A faster route: −14 − 2x = −2(7 + x) = −2(5) = −10."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "k(2) = 2^3 + 20 = 8 + 20 = 28. Choice B (26) comes from computing 2·3 instead of 2^3."
+  },
+  {
+    "key": "m1-10",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first three terms form a perfect square: x^4 + 14ax^2 + 49a^2 = (x^2 + 7a)^2. So the expression is (x^2 + 7a)^2 − 8^2, a difference of squares, which factors as (x^2 + 7a − 8)(x^2 + 7a + 8). Only x^2 + 7a + 8 appears among the choices; B has the wrong sign on 7a."
+  },
+  {
+    "key": "m1-11",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "g(x + 1) − g(x) = 2 means the slope is 2, so g(x) = 2x + b. Using g(9) = 11: 18 + b = 11, so b = −7 and g(x) = 2x − 7. Choice C has the right slope but doesn't give g(9) = 11."
+  },
+  {
+    "key": "m1-12",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The outer radius is 60/2 = 30 in, and the inner radius is 30 − 5/8 = 29.375 in. The wall volume is π(132)(30^2 − 29.375^2) = π(132)(37.109...) ≈ 15,389 cubic inches. The much smaller choices leave out part of the calculation, such as the full circumference or the height.",
+    "fix": {
+      "prompt": "In the figure, a hollow steel pipe is in the shape of a right circular cylinder. The steel pipe has an outside diameter of 60 inches, a wall thickness of 5/8 inches, and a height of 132 inches. Which of the following is closest to the volume, in cubic inches, of the wall of this steel pipe?"
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "h(−4) = 7|−4| = 7(4) = 28. Absolute value turns −4 into 4, so the answer is positive, not −28.",
+    "fix": {
+      "prompt": "The function h is defined by h(x) = 7|x|. What is the value of h(−4)?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since DE ∥ AC, triangle DBE is similar to triangle ABC. BD = AD makes D the midpoint of AB, so BD/BA = 1/2, and therefore BE/BC = 1/2 too. So BC = 2(9) = 18. Choice B doubles AC instead, but AC corresponds to DE, not BE."
+  },
+  {
+    "key": "m1-15",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let u = 8 − 2x: 5u + 3 = 4u + 15, so u = 12. Solving for x first gives x = −2, which is the trap choice B, but the question asks for 8 − 2x."
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "a = 2.7b and a = 0.8c, so c = (2.7/0.8)b = 3.375b. Thus c is 337.5% of b, which is closest to 338. Choice B (216) comes from multiplying 2.7 by 0.8 instead of dividing."
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "With y = 13 snow queen stems, x + 13 = 53, so x = 40 marble queen stems. Choice D repeats y, and A is the total."
+  },
+  {
+    "key": "m1-18",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Notice that −21 − 3x = −3(7 + x) = −3(5) = −15. Or solve: x = −2, then −21 − 3(−2) = −21 + 6 = −15."
+  },
+  {
+    "key": "m1-19",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "k(2) = 2^3 + 50 = 8 + 50 = 58. Choice C (56) comes from computing 2·3 instead of 2^3."
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product equals 0 when one of its factors is 0, so x = 0, x = 1, or x = −7. Only 0 is among the choices. Choices A and D have the signs reversed: x − 1 = 0 gives 1, not −1, and x + 7 = 0 gives −7, not 7."
+  },
+  {
+    "key": "m1-21",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line runs from about (0, 82) to (10, 97). Points above the line have actual y-values greater than predicted; the points near x = 4, 6 (upper one), 7 (upper one), 9, and 10 (upper one) lie above it, which is 5 points. The other 4 points lie below the line."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "(sin X)/(cos Y) = 1 means sin X = cos Y = cos 24°. Since the sine of an angle equals the cosine of its complement, sin X = sin(90° − 24°) = sin 66°, so X = 66°. Choice A assumes X = Y, but sin 24° ≠ cos 24°.",
+    "fix": {
+      "prompt": "For two acute angles X and Y, the measure of angle Y is 24° and (sin X)/(cos Y) = 1. What is the measure, in degrees, of angle X?"
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only like terms combine: 9yz^3 + 3yz^3 = 12yz^3, and 6yz has a different power of z, so it stays separate: 12yz^3 + 6yz. Choice B wrongly adds the exponents when combining terms."
+  },
+  {
+    "key": "m2-02",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x), x is years since the investment and f(x) is the CD's value in dollars, so f(2) ≈ 9,474.08 means the value after 2 years was about $9,474.08. Choice D treats 9,474.08 as the amount of growth rather than the total value."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes through (−5, −1) and (2, 4), so its slope is (4 − (−1))/(2 − (−5)) = 5/7. In Ax − By = C form the slope is A/B, and 35x − 49y = −126 has slope 35/49 = 5/7; checking (2, 4): 70 − 196 = −126. Choice A has slope 49/35 = 7/5, the reciprocal."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Adding the equations eliminates y: 0 = 13x − 6, so 13x = 6. Then 39x = 3(13x) = 18. Choice C (6) is 13x, not 39x."
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dashed boundary line crosses the y-axis at 3 and rises 4 units per unit right (for example, through (2, 11)), so it is y = 4x + 3. The shaded side is above/left of the line, and the dashed line means strict inequality, giving y > 4x + 3. Choice C shades the wrong side."
+  },
+  {
+    "key": "m2-06",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The radius squared is the squared distance from (−5, 2) to (−9, 5): (−4)^2 + 3^2 = 25. With center (−5, 2), the equation is (x + 5)^2 + (y − 2)^2 = 25. Choice B uses 5 (the radius) instead of r^2, and A and C have the center's signs flipped."
+  },
+  {
+    "key": "m2-07",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Test each point in y < −3x + 18. For (−3, 0): −3(−3) + 18 = 27, and 0 < 27 is true. For (0, 19): 19 < 18 is false; for (−1, 22): 22 < 21 is false; for (7, −1): −1 < −3 is false."
+  },
+  {
+    "key": "m2-08",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand: 18x + 90 = 2x + 2c + 16x = 18x + 2c. For infinitely many solutions both sides must be identical, so 2c = 90 and c = 45. Choice A (90) forgets to divide by 2."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "196"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The point (6, 0) is on the graph, so 0 = 36(6)^2 − 6b − 120 = 1,296 − 6b − 120, which gives 6b = 1,176 and b = 196. Checking x = −5/9: 36(25/81) + 196(5/9) − 120 = 100/9 + 980/9 − 120 = 0.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y. There is a quadratic relationship between x and y. An equation that represents this relationship can be written as y = 36x^2 − bx − 120, where b is a constant. What is the value of b?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−5/9",
+            "0"
+          ],
+          [
+            "0",
+            "−120"
+          ],
+          [
+            "6",
+            "0"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Hannah saves h/5 and Wyatt saves 2w/7, so h/5 + 2w/7 = 3,270. Multiplying every term by 35 clears the fractions: 7h + 10w = 114,450. Choice C swaps the coefficients.",
+    "fix": {
+      "prompt": "Hannah and Wyatt are saving money to purchase a car. Hannah saves 1/5 of her salary each month, and Wyatt saves 2/7 of his salary each month. Together, they save a total of $3,270 from their monthly salaries each month. If h and w represent Hannah's and Wyatt's monthly salaries, in dollars, respectively, which equation shows the relationship between h and w?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Move everything to one side: (x − a)(x − 24) − (x − a) = 0, so (x − a)(x − 24 − 1) = (x − a)(x − 25) = 0. The solutions are x = a and x = 25. Dividing both sides by x − a too early gives only x = 25 and loses x = a, while 24 is a trap (x = 24 makes the right side 0 but the left side 24 − a ≠ 0).",
+    "fix": {
+      "prompt": "x − a = (x − a)(x − 24)\nWhich of the following are solutions to the given equation, where a is a constant and a > 25?\nI. a\nII. 24\nIII. 25"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Squaring both sides of sqrt(x − 1) = 2 gives x − 1 = 4. Choice A (2) is the square root itself, and D doubles instead of squaring.",
+    "fix": {
+      "prompt": "If sqrt(x − 1) = 2, what is the value of (x − 1)?"
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The outer rectangle is (21 + 2x) by (11 + 2x), so the path area is (21 + 2x)(11 + 2x) − 21·11 = 4x^2 + 64x = 144. Dividing by 4: x^2 + 16x − 36 = 0, which factors as (x + 18)(x − 2) = 0, so x = 2 (width can't be negative). Choice C (18) comes from the sign error in the factor."
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In data set A (21 values) the median is the 11th value; the counts 1, 3, 4 cover values 0–2 (8 values), and the 3s fill positions 9–13, so the median is 3. In data set B (20 values) the median is the average of the 10th and 11th values, both 3, so it is also 3. Removing an extreme value changes the mean a lot but barely moves the median.",
+    "fix": {
+      "prompt": "At a nature preserve, a wildlife biologist counted bald eagles from an observation deck at the same time each day for 21 days. The table summarizes the resulting data set, data set A.\nThe data value 19 was recorded in error and is removed from data set A to create data set B, which consists of the remaining 20 data values. Which statement best compares the median of data set A and the median of data set B?",
+      "table": {
+        "headers": [
+          "Number of bald eagles",
+          "Number of days"
+        ],
+        "rows": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "2",
+            "4"
+          ],
+          [
+            "3",
+            "5"
+          ],
+          [
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "3"
+          ],
+          [
+            "19",
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Painting the walls twice covers 2w square feet, and each gallon covers 70 square feet, so P = 2w/70 = w/35. Choice A covers only one coat, and B and C multiply by the coverage rate instead of dividing.",
+    "fix": {
+      "choices": {
+        "A": "P = w/70",
+        "D": "P = w/35"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The y-intercept is f(0) = 4^(−5) = 1/1,024. Rewrite f(x) = 4^(−5x − 5) = 4^(−5)·4^(−5x) = (1/1,024)(1/4)^(5x), which shows 1/1,024 as the coefficient. The other forms are equivalent but don't display 1/1,024 as a base or coefficient (D shows 1,024, the reciprocal).",
+    "fix": {
+      "prompt": "f(x) = 4^(−5(x + 1))\nWhich of the following equivalent forms of the given function f displays, as the base or the coefficient, the y-coordinate of the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "f(x) = (1/1,024)(1/4)^(5x)",
+        "B": "f(x) = (1/4)^(5x + 5)",
+        "C": "f(x) = 4^(−5x − 5)",
+        "D": "f(x) = 1,024^(−x − 1)"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "1/8",
+      ".125",
+      "0.125"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write the roots as exponents: sqrt(117n) = (117n)^(1/2) and (sqrt(117n))^2 = (117n)^1. Multiplying gives (117n)^(1/2 + 1) = (117n)^(3/2). Setting 12x = 3/2 gives x = 3/24 = 1/8.",
+    "fix": {
+      "prompt": "sqrt(117n)·(sqrt(117n))^2\nFor what value of x is the given expression equivalent to (117n)^(12x), where n > 1?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "1680"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For A, π(7^2)h = 392π gives h = 8. The volume ratio is 10,584π/392π = 27, so the scale factor is cbrt(27) = 3 and B has r = 21, h = 24. Then k = 2(7^2) + 2(7)(8) = 98 + 112 = 210 and n = 2(21^2) + 2(21)(24) = 882 + 1,008 = 1,890, so n − k = 1,680. (Equivalently, surface area scales by 3^2 = 9, so n = 9k.)",
+    "fix": {
+      "prompt": "The table shows the volume of two similar solids, right circular cylinder A and right circular cylinder B. The radius of right circular cylinder A is 7 units. The surface area of right circular cylinder A is kπ square units, and the surface area of right circular cylinder B is nπ square units, where k and n are constants. What is the value of n − k? (The surface area of a right circular cylinder with radius r and height h is 2πr^2 + 2πrh.)",
+      "table": {
+        "headers": [
+          "",
+          "Volume (cubic units)"
+        ],
+        "rows": [
+          [
+            "Right circular cylinder A",
+            "392π"
+          ],
+          [
+            "Right circular cylinder B",
+            "10,584π"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The outer radius is 30 in and the inner radius is 30 − 5/8 = 29.375 in. The wall volume is π(144)(30^2 − 29.375^2) = π(144)(37.109...) ≈ 16,788 cubic inches. The much smaller choices come from leaving out a factor such as the circumference or the height.",
+    "fix": {
+      "prompt": "In the figure, a hollow steel pipe is in the shape of a right circular cylinder. The steel pipe has an outside diameter of 60 inches, a wall thickness of 5/8 inches, and a height of 144 inches. Which of the following is closest to the volume, in cubic inches, of the wall of this steel pipe?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let u = 5 − 2x: 8u + 3 = 7u + 18, so u = 15. Solving for x (x = −5) and stopping there leads to trap choice B."
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To convert degrees to radians, multiply by π/180: 45 · π/180 = π/4. Choice A (π/2) is 90°, and C (π/8) is 22.5°.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "The measure of angle Z is 45°. What is the measure, in radians, of angle Z?",
+      "choices": {
+        "A": "(1/2)π",
+        "B": "(3/4)π",
+        "C": "(1/8)π",
+        "D": "(1/4)π"
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "15435"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Breaking strength is proportional to x^2, and doubling the circumference from 1.75 to 3.50 multiplies x^2 by 4. So the new strength is 4(3,858.75) = 15,435 pounds. (Solving directly: a = 3,858.75/(900·1.75^2) = 1.4, and 900(1.4)(3.5)^2 = 15,435.)"
+  }
+]

@@ -1,0 +1,1050 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Romantic paintings are contrasted with realism, which showed ordinary people accurately; the romantic style instead played up its subjects' beauty or heroism while hiding flaws, so \"exaggerate\" fits. \"Mock\" and \"undermine\" would mean the paintings belittled their subjects, the opposite of glorifying them. \"Correct\" doesn't describe enlarging beauty or heroism."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text contrasts the past, when few minor planets were known, with now, when naming each one is \"nearly impossible.\" The blank needs the opposite idea: naming was once doable, or \"feasible.\" \"Insurmountable\" says the same thing as \"nearly impossible\" and destroys the contrast; \"substantial\" and \"ambiguous\" don't set up that contrast either."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example describes firms that \"locate near one another\" and benefit from sharing information, so agglomeration economies arise when firms concentrate, or cluster, in one region. \"Dissipate\" means to spread out or disappear, the opposite. \"Recur\" and \"terminate\" have nothing to do with firms gathering in one place."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After independence, authors helped shape a distinctly Mexican literary tradition, so literature was a way the nation realized, or brought into being, its autonomous identity. The nation wasn't trying to overcome, decry (criticize) or evade its own identity, so those choices contradict the positive role literature played."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says the crater's shape and appearance didn't suggest an impact, which rules out the obvious alternative explanation (a meteor strike). That supports the team's ice-volcano hypothesis. The sentence reports an observation, not a research method (A), the probe's importance (C) or a misconception the team held (D).",
+    "fix": {
+      "passage": "Researchers examining data from the New Horizons space probe, which passed Pluto in 2015, were puzzled by a 27-mile-long crater on Pluto's icy surface. Although Pluto is mostly covered in frozen methane and nitrogen, the surface near the crater seemed to show the presence of water ice and ammonia—both of which are associated with eruptions from ice volcanoes. <u>Additionally, the shape and appearance of the crater did not suggest that it was formed by impact.</u> Based on this evidence, scientist Dale Cruikshank and his team hypothesized that the crater was likely once a massive ice volcano."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Text 1 says many of today's artists are making albums \"much longer\" than older ones, and Text 2 says many new albums are \"longer and have more songs.\" Both authors agree new albums are longer. Neither text discusses artwork, sales or volume."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Bellamy was long credited as the author, but a newspaper article from before August 1892 describes students reciting the same pledge, so it's now unclear who first wrote it. The text says nothing about later changes to the pledge, students' favorite parts or the newspaper's name."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text is about Wardill's experiment: cuttlefish wearing 3D glasses adjusted their strikes to match 3D images, which suggests they have 3D vision like sheep and macaques. Choice C is only a detail of the method, and the text never compares eye complexity (A) or questions whether macaques see in 3D (B)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Towers enjoys a \"hidden but still conscious glory\": he sits silently at his club, thinking of how the politicians are in his power and how his pen could strike them down. So he privately enjoys his power to influence opinion through the newspaper. The text doesn't say he gets much praise (A), aims to please provincial readers (C) or thinks readers care more about him than about politicians (D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim has two parts: Winnemucca speaks directly to the reader, and she explains a custom. Choice B does both: \"my dear reader\" addresses the reader, and it explains why her people call all good people father or mother. Choice C addresses readers but explains no custom, and choices A and D don't address the reader."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the Himalayan balsam row shows an effect value of 0.7905 (its target species was marsh woundwort). −0.3238 belongs to leafy spurge and 0.4729 to Canadian wood betony, and −3.2570 isn't in the table.",
+    "fix": {
+      "passage": "Researchers Carolina Laura Morales and Anna Traveset gathered data about flowering plants growing alongside each other in various locations. In each case, the researchers identified one plant as a \"target species\" and a nearby plant as a \"neighboring species.\" The researchers then calculated a value to show how the neighboring species affected pollinator visits to the target species. The table shows that the Himalayan balsam had an effect value of _____",
+      "table": {
+        "caption": "Effect of Neighboring Species on Pollinator Visits to Target Species",
+        "headers": [
+          "Neighboring species",
+          "Target species",
+          "Effect value"
+        ],
+        "rows": [
+          [
+            "leafy spurge",
+            "Lewis flax",
+            "-0.3238"
+          ],
+          [
+            "Himalayan balsam",
+            "marsh woundwort",
+            "0.7905"
+          ],
+          [
+            "Canadian wood betony",
+            "mayapple",
+            "0.4729"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tribal economic activity contributed about $7.3 billion. That is more than accommodation/food services ($5.2 billion) but less than both health care ($13.7 billion) and retail ($10.7 billion). Choice A wrongly places it above retail, and C and D overstate it compared with health care and retail.",
+    "fix": {
+      "passage": "The nearly forty tribes located in Oklahoma, including the Chickasaw Nation and the Seminole Nation, operate numerous businesses and generate billions of dollars in revenue. A student in an economics class is researching the tribes' collective activity as a single industry. The student wants to compare that industry's contribution to Oklahoma's overall economy in 2017 with the contributions made by three other industries in the state. Looking at the table, the student finds that tribal economic activity totaled over 7.3 billion USD, ranking it above ______.",
+      "table": {
+        "headers": [
+          "Industry",
+          "Approximate total contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Accommodation/food services",
+            "$5,242,100,000",
+            "150,373",
+            "$34,861"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ],
+          [
+            "Health care",
+            "$13,727,300,000",
+            "193,514",
+            "$70,937"
+          ],
+          [
+            "Retail",
+            "$10,738,800,000",
+            "179,208",
+            "$59,924"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The alkaline method, which strips off the epicuticular wax, recovered far more particles (53.8%) than water rinsing (7.6%). If most earlier studies used methods that left the wax alone, they would have missed many particles stuck in it, so they likely underestimated how much plastic canopies capture. Choice C would suggest earlier studies found more, not less, and B and D don't connect earlier methods to underestimation."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The study found that the more pleasant users expect the premium version to be, the more they intend to buy it. So companies might gain subscribers by shaping how pleasant people perceive the premium version to be. The study didn't compare loyalty to specific services (B), it found the statement a useful measure (not C), and it never claimed hedonic motivation was the only factor (D)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The date \"August 15, 2013\" places the action in the past, and the next sentence says the article was \"later included\" in a book, so the past tense \"published\" is needed. The future \"will publish\" and the present forms \"publishes\" and \"is publishing\" don't fit a completed past event."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "medium",
+    "explanation": "\"Ratified in 1804\" is an extra phrase describing \"The 12th amendment,\" and it opens with a comma, so it must close with a matching comma before the verb \"separated.\" A dash (B) can't pair with an opening comma, and a semicolon (C) or colon (D) can't come between a subject and its verb.",
+    "fix": {
+      "choices": {
+        "A": "1804,"
+      }
+    },
+    "note": "PDF prints choice A as '1804' (no comma) and marks it correct; the sentence needs a closing comma after the date, so A was changed to '1804,'. Check."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Artists\" is a plain plural (no possession), and \"160 years ago\" is just a time phrase, so neither word takes an apostrophe. Choices A, B and C each add an apostrophe that signals possession where nothing is owned."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Essayist\" is a title placed right before the name, so no comma separates \"essayist\" and \"Carolyn Servid.\" The following phrase \"author of Of Landscape and Longing\" is extra description of Servid, so a comma goes after her name. Choices B and D wrongly put a comma between the title and the name, and A runs the name into the description."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A groundbreaking visual artist of her day\" must be followed immediately by the person it describes, Hilma af Klint. Choice B does that with no interrupting punctuation and ends with a comma before \"including,\" which describes her contemporaries. Choice C puts \"well before...\" right after the modifier, and D makes the modifier describe \"the explorations,\" both dangling; A splits the sentence awkwardly with extra commas."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The modeling belongs to more than one astronomer, so the plural possessive \"astronomers'\" is needed, and the trajectory belongs to one object, so \"object's\" is needed. Choice B makes it a single astronomer, and A and D leave \"astronomers\" without the possessive."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Scholars...needn't despair, though\" is a complete sentence, and \"they can still procure a copy...\" is another, so a semicolon after \"though\" correctly joins them. Choices A and B create comma splices, and D's dash would leave \"though\" attached to the second clause in a way that doesn't make sense."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because the roots made parts of Tikal physically inaccessible, LiDAR was the only way to reveal some features. The second sentence is a result of the first, so \"Hence\" fits. \"Similarly\" signals a parallel idea and \"Specifically\" signals a detail, neither of which matches cause and effect."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence defines post-consumer waste (waste after it reaches the consumer), and the next defines pre-consumer waste (waste before it reaches the consumer). The two are opposites, so \"By contrast\" fits. The second sentence isn't an example of, a detail of or a result of the first."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Below the Kármán line, aircraft stay aloft using lift; above it, they sustain flight by their velocity rather than by lift. \"Instead\" signals this replacement of one way of flying with another. \"For instance\" would introduce an example, and \"Regardless\" and \"Granted\" signal concession, which doesn't fit."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to state the founding year, and only choice C gives it: the Schomburg Center was founded in 1925. The other choices state the center's namesake, its type or its location, none of which mention a year.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Schomburg Center for Research in Black Culture is a research library in New York City.\n• It was named for Arturo Alfonso Schomburg.\n• It was founded in 1925."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A comparison needs both foods: choice B says both brussels sprouts and apples contain vitamin C but brussels sprouts contain more (80 mg vs 6 mg per 100 g). Choices A and D mention only brussels sprouts, and C compares their food categories, not vitamin C content.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Brussels sprouts are vegetables that contain ascorbic acid, an essential nutrient for humans.\n• Apples are fruits that contain ascorbic acid.\n• There is 80 milligrams (mg) of ascorbic acid in every 100 grams (g) of brussels sprouts.\n• There is 6 mg of ascorbic acid in every 100 g of apple.\n• Humans cannot make ascorbic acid in their bodies, so they must get it from foods, including fruits and vegetables.\n• Ascorbic acid is also known as vitamin C."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice A states what the two films have in common: both include Merle Oberon. Choices B and C emphasize differences between the films (early vs. late career, uncredited vs. credited role), and D mentions only The Three Passions.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Merle Oberon (1911–1979) was an actress born in Mumbai (then known as Bombay), India.\n• She was of Indian, Maori, and Irish heritage.\n• She was the first Indian-born actress to be nominated for an Academy Award.\n• Early in her career, she played many nameless, uncredited roles, such as her role in The Three Passions (1928).\n• Later, she played many named, credited roles, such as Empress Josephine in Désirée (1954)."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tides shift sediments and reshape the deltaic lobes, so they affect, or influence, the delta's shape and size. \"Protected\" suggests the tides keep the delta from changing, which contradicts the reshaping. \"Surpassed\" makes no sense, and \"enhanced\" implies improvement, which the text doesn't claim."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence describes the long Hawaiian literary tradition, from traditional Kanaka Maoli stories to David Malo, that came before Kanae. So her work is \"preceded\" by a rich history. \"Supplanted\" (replaced) and \"overlooked\" (ignored) don't fit a heritage described as vibrant, and history doesn't \"summarize\" her work."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says the beads appear in great numbers (\"a plethora\") at many sites across western North Africa, and the researchers explain this widespread presence. \"Ubiquity\" means being found everywhere, which fits. \"Heterogeneity\" means variety, but the beads are all made from the same shell; \"fecundity\" (fertility) and \"expediency\" (convenience) don't describe artifacts."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined portion says the study tapped the research potential of a large but underused source, historical DNA in museum collections. That is a comment on why the team's approach matters. It doesn't list specific applications (A), report findings about plant DNA (C) or explain why the method is rarely used (D).",
+    "fix": {
+      "passage": "Svante Pääbo and other researchers studying the history of organisms have long utilized ancient DNA—DNA recovered from ancient organic material that has been preserved under natural conditions. However, Reyjane P. Oliveira and colleagues' 2017 study of the evolutionary trajectory of the Malagasy grass genus Chasechloa instead relied on historical DNA—genomic data incidentally preserved in specimens that are housed in natural history collections—<u>thus capitalizing on the research potential offered by a vast but hitherto relatively underutilized source of insight into the biological past.</u>"
+    }
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"This relative scarcity\" points back to the previous sentence: plant-based artifacts are rarely studied because they decay. That difficulty is what made the well-preserved finds exciting. The phrase doesn't describe a failed goal (A), an uncertain discovery (B) or a distinction between artifact types (C).",
+    "fix": {
+      "passage": "Established knowledge of prehistoric societies primarily stems from analysis of durable historical artifacts, including stone tools, but Mercedes Murillo-Barroso and team have contributed new insights with a unique analysis of plant-based items. Plant-based artifacts, including straw baskets, are seldom studied due to their perishable nature. <u>This relative scarcity</u> made it all the more exciting when the team examined remains of well-preserved organic artifacts discovered in a cave in Spain and determined that they dated even further back than previously thought."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Parisi's essays focus on the false starts and mistakes of real research, and Kean values exactly that, arguing that scientists too often leave out this \"human stuff.\" So the text shows both men think the messy, error-filled side of research is part of how science really works. Neither objects to research methods (A), and the text says nothing about Parisi's narrative style (C) or modesty (D)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the underlined portion Camillo says he might ease the king's sorrows, then adds \"or I o'erween [presume] to think so,\" admitting that this benefit may be only his own assumption. So it conveys his recognition that the comfort he might offer is speculative. It doesn't make concern for the king his primary motive (A), since he names his longing for home first, and it isn't about justifying himself to Polixenes (B) or comforting Polixenes (C).",
+    "fix": {
+      "passage": "The following text is from William Shakespeare's circa 1611 play The Winter's Tale. Camillo has been away from his home in Sicily and serves in the court of Polixenes, the king of Bohemia. He has asked Polixenes for permission to return to Sicily.\n\nPOLIXENES: I pray thee, good Camillo, be no more importunate. 'Tis a sickness denying thee anything, a death to grant this.\nCAMILLO: It is fifteen years since I saw my country. Though I have for the most part been aired abroad, I desire to lay my bones there. Besides, the penitent king, my master, hath sent for me, <u>to whose feeling sorrows I might be some allay—or I o'erween [presume] to think so</u>—which is another spur to my departure."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The artist proudly thinks \"surely this shall last\" and \"Fixed in immortal marble is my fame,\" meaning he expected the statue to endure and keep his name alive. The poem never says he expected praise for details (A), repairs (B) or comparison with other statues of Venus (D).",
+    "fix": {
+      "passage": "The following text is from Narciso Tondreau's 1898 poem \"Yesterday and To-Day\" (translated by Agnes Blake Poor in 1918). The poem is about an old statue of the Greek goddess Venus, which now lies on the ground in a state of disrepair.\n\nHow long ago, by summer breezes fanned,\nHere stood the newborn Venus, fresh and fair;\nAll palpitating from the master's hand,\nThe last touch of his chisel lingering there.\n\"And surely this shall last!\" he proudly thought;\n\"Fixed in immortal marble is my fame!\"\nJust here, where human hand has surely wrought,\nSome crumbling letters may have spelled his name."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To target stakeholders, the planner should stress what stakeholders value most. In the Stakeholders column, pollination is ranked 7, a higher rank (smaller number) than the other four services (11, 15, 21 and 22). Choice C compares the public with stakeholders, which doesn't show what stakeholders value most, and D is false since carbon sequestration is ranked 22.",
+    "fix": {
+      "passage": "Esther Sanyé-Mengual, Kathrin Specht, and their team surveyed three groups of people in Bologna, Italy—leaders of urban agriculture projects, stakeholders in urban agriculture (e.g., food researchers and urban farming associations), and the general public—to compare their views about the extent to which urban agriculture contributes to 25 social or ecological services that the team identified. The researchers used these ratings to rank the services for each group, with a ranking of 1 indicating that a group perceives that urban agriculture benefits that service the most. Using only the rankings shown in the table, a city planner in Bologna who is promoting a new urban agriculture project concludes that advertisements aimed at stakeholders should emphasize the project's benefit to the enhancement of pollination.",
+      "table": {
+        "caption": "Ranking of Environmental and Sociocultural benefits of Urban Agriculture (scale 1 to 25; 1 = highest)",
+        "headers": [
+          "Social or ecological service",
+          "Project leaders",
+          "Stakeholders",
+          "General public"
+        ],
+        "rows": [
+          [
+            "provision of medicinal plants",
+            "22",
+            "21",
+            "5"
+          ],
+          [
+            "enhancement of pollination",
+            "1",
+            "7",
+            "12"
+          ],
+          [
+            "enhancement of carbon sequestration",
+            "17",
+            "22",
+            "21"
+          ],
+          [
+            "preservation of cultural knowledge and heritage",
+            "8",
+            "15",
+            "13"
+          ],
+          [
+            "prevention of soil erosion",
+            "13",
+            "11",
+            "23"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The consensus says the small-size gene variant arose only in the last 20,000 years through breeding. If the size-related IGF1 mutation already existed in 53,000-year-old Siberian wolves, which are dog ancestors, it predates breeding and the consensus is wrong. Choice A mentions the IGF1 gene itself, not the size-related mutation, and D would actually support the consensus."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second team claimed Kozak and Keoleian's study gave more specific data. The detail rating measures how detailed the reported data are, so if that study had a lower detail rating than Oguchi's, the claim is undercut. Traceability (B) measures how clearly procedures are described, not data specificity, and C and D would support the conclusion."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Net CO₂ rises when respiration (CO₂ output) outpaces plant growth (CO₂ uptake). If snow cover insulates the soil so microbes keep respiring while plants aren't growing, then earlier snow means more CO₂ released without matching uptake. Choice B says early snow lowers respiration, which would reduce CO₂, and A and C don't link earlier snow to a net increase."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Flushing in Queens is dominated by Mandarin, a north Chinese language, while Manhattan's Chinatown is dominated by Cantonese and Fuzhounese, south Chinese languages. So immigrants from north China likely settle in Queens and those from south China in Manhattan. The text gives no information about when people immigrated (A), total speaker counts (C) or moving between boroughs (D)."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text warns that the \"autobiographical\" label can hurt how the book is perceived because creativity and imagination are highly valued. Readers who think Mitchell only fictionalized real events would credit him with less imagination and so judge the novel less praiseworthy. The text says nothing about critics' debates (B), identifying other characters (C) or Mitchell's own claims (D)."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence that announces \"three primary periods,\" and what follows is the list of them, so a colon is correct. A period (A) or semicolon (B) needs a full independent clause after it, but the list is not a clause. A comma (D) doesn't properly introduce the list."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Little Marie\" is the title that identifies which song, so it is essential information and takes no punctuation between \"the hit song\" and the title. A comma (B), colon (C) or semicolon (D) would wrongly separate the noun from the name that identifies it."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"allocation\" (not \"prefix\" or \"calls\"), so it needs a singular verb, and the event happened in the past, after 1991: \"was.\" \"Are,\" \"have been\" and \"were\" are plural forms."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence lists three factors after \"namely,\" and the items contain internal commas, so they are separated with semicolons, as shown by the semicolon before \"and atmospheric fluctuations.\" A semicolon is therefore needed after \"meteoroids\" to end the first item. A dash (A) or comma (B) breaks the pattern, and a period (D) creates a fragment."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the blank is the plural noun \"ruminations,\" so the plural verb \"influence\" is needed. \"Influences,\" \"is influencing\" and \"has influenced\" are singular forms that wrongly agree with \"life\" or \"work.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Slovak photographer\" is a title placed right before the name, so no comma goes between \"photographer\" and \"Mária Švarbová.\" A comma is then needed after her name to set off the nonessential clause \"who aptly describes her photos....\" Choice B omits that comma, and C and D wrongly separate the title from the name."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb (\"slept\"), so the part after the comma must be a modifying phrase, not a second clause. \"Their design prioritizing airflow...\" is an absolute phrase that works. \"Was prioritizing,\" \"had prioritized\" and \"prioritized\" would create a second independent clause joined only by a comma (a comma splice)."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence states a general finding (random results cluster around an average), and the coin example shows it in action: 1,000 flips almost always give between 450 and 550 heads. \"For instance\" introduces an example. \"However\" signals contrast, and \"In addition\" and \"In comparison\" don't introduce an illustration."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Topographic maps show landforms above sea level, while bathymetric maps show those below the sea, so the two are contrasted: \"by contrast.\" Bathymetric maps aren't an example of topographic maps (C), and \"afterward\" and \"in conclusion\" don't fit."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says edge modeling is a process used in developing game visuals; the second explains exactly what that process involves (piecing shapes together to make 3D objects). \"Specifically\" introduces this more precise detail. The second sentence isn't an additional point (A), a result (C) or a comparison (D)."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Indonesia's urbanization rose between 2015 and 2020, and over the same period the rate across Southeast Asia rose too. \"Concurrently\" signals that the two happened at the same time. \"For example\" would need the second sentence to illustrate the first, and \"In other words\" would need it to restate the same fact, but it describes a broader region."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The notes say 87% of languages are SVO or SOV, and in both orders the subject comes first. So it is a valid generalization that most languages put the subject before the verb and object. Choices A, B and C describe what typologists do or define word order, without generalizing about how languages use it.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Linguistic typologists classify and compare languages according to their structural features.\n• One such structure is word order, or the way subjects (S), verbs (V), and objects (O) are typically arranged in a sentence.\n• English employs an SVO word order (e.g., Cows eat grass).\n• Bengali employs an SOV word order (e.g., Cows grass eat).\n• Filipino employs a VSO word order (e.g., Eat cows grass).\n• 87% of the world's languages are classified as either SVO or SOV.",
+      "prompt": "The student wants to make a generalization about how word order is employed across languages. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Choice B names a similarity, that CTAB 2X and Pplant were both judged less effective than Pbact, and explains why it matters (insufficient yield or purity). Choice A states a similarity without its significance, C wrongly says CTAB 2X and Pbact were equal in purity (2.2 vs 1.6), and D contradicts the notes by calling Pbact's yield insufficient.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Producing the nutrient-rich cyanobacterium L. maxima at industrial scale requires high-quality samples of L. maxima DNA.\n• Yirlis Yadeth Pineda-Rodriguez and a team of researchers at the University of Córdoba, Colombia, evaluated the quantity and purity of L. maxima DNA extracted using three different DNA extraction kits.\n• CTAB 2X (kit 1) had a DNA yield of 2,134 nanograms per microliter (ng/μL) and a purity ratio of 2.2.\n• Pbact (kit 2) had a DNA yield of 157 ng/μL and a purity ratio of 1.6.\n• Pplant (kit 3) had a DNA yield of 12.5 ng/μL and a purity ratio of 1.5.\n• According to the researchers, Pbact was the most effective because it was the only one with both a sufficiently high yield and a purity rate close to the ideal of 1.8."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The car travels 1,950 miles on 39 gallons, so convert the distance: 1,950 × 1.6 = 3,120 kilometers. Choice A (312) is off by a factor of 10, and C (31,200) comes from multiplying by 16 instead of 1.6."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = −3: h(−3) = 4(−3) − 9 = −12 − 9 = −21. Choice A (21) has the right size but loses the negative sign from 4(−3)."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 10x = 110, x = 11. Then y = 8(11) − 86 = 88 − 86 = 2. Choice B (11) is the value of x, not y."
+  },
+  {
+    "key": "m1-04",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each term has a factor of x^3, so factor it out: 7x^5 − 6x^4 + 9x^3 = x^3(7x^2 − 6x + 9). Expanding confirms it. Choice A drops the 9x^3 term, and C wrongly pulls out 9 from every term."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set y = 0 in the second equation: 0 = 8(x^2 − 36), so x^2 = 36 and x = 6 or x = −6. So (6, 0) is a solution. Choices A and B have y ≠ 0, and (36, 0) gives 8(36^2 − 36) ≠ 0."
+  },
+  {
+    "key": "m1-06",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "One sundae costs 64.60/19 = 3.40 dollars, and each cone costs 1.40 dollars. So x cones and y sundaes cost 1.40x + 3.40y = 85.60. Choice A uses the cost of 19 sundaes as the price of one, and C swaps the two prices."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "1/10",
+      ".1",
+      "0.1"
+    ],
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 5 blank tiles out of 50, so the probability is 5/50 = 1/10, or 0.1. A common mistake is using 5/45, which compares blanks to lettered tiles instead of to all tiles."
+  },
+  {
+    "key": "m1-08",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add to 180°, so ∠E + ∠F = 180° − 114° = 66°. Since ∠F must be positive, ∠E must be less than 66°, and only 65 works. 67, 90 and 115 are all too large."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The dashed boundary line crosses the y-axis at 7 and rises 3 for every 1 to the right, so it is y = 3x + 7. The shading is above the line, and a dashed line means the line itself isn't included, so the inequality is y > 3x + 7. Choice C shades the wrong side, and B and D use the wrong y-intercept."
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine the like terms 20x^2 and 5x^2 to get 25x^2; the constant 3 stays. So the expression equals 25x^2 + 3. Choice A wrongly adds the exponents, and C and D combine the constant 3 with the x^2 terms."
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An exponential balance has the form A(t) = (initial balance)(growth factor)^t, so the coefficient must be 35,600. The balance grows, so the factor must be greater than 1: 35,600(1.09)^15 ≈ 129,672, which matches. Choice B's factor 0.09 would shrink the balance, and C and D use the wrong starting amount."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: y = 14^0 = 1, so the point is (0, 1). Choice B confuses the base 14 with the value at x = 0, and A adds 1 to the base."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "-8"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 7 and f(7) = 6: 6 = 2(7) + b, so 6 = 14 + b and b = −8. A common error is getting 8 by subtracting in the wrong order."
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"120% greater than g\" means f = g(1 + 1.20) = 2.2g. \"90% less than f\" means h = f(1 − 0.90) = 0.1f. So h = 0.1(2.2g) = 0.22g. Choice A uses f = 1.2g (120% of g) instead of 120% greater.",
+    "fix": {
+      "choices": {
+        "C": "1.08"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Team A's scores are all bunched between 25 and 40, close to the center, while team B's scores are piled up at the extremes (15–25 and 40–50) with almost none in the middle. Data spread far from the mean have a larger standard deviation, so team A's is smaller."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "28"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In (x − h)^2 + (y − k)^2 = r^2, the right side is the radius squared. Circle A has r^2 = 7, and translating it right changes the center to (91, 5) but not the radius. So a = 7 and 4a = 28."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "8/5",
+      "1.6"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0 the height is b, so b = 40.96 and h(t) = −16t^2 + 40.96. The object hits the ground when h(t) = 0: 16t^2 = 40.96, t^2 = 2.56, so t = 1.6 seconds (time can't be negative)."
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Between x = 2 and x = 4 the graph is flat at 2 cm, so the total didn't change and no rain fell: the rate was 0 cm per hour. Choice A confuses the total (2 cm) with the rate, and the steepest part of the graph is from x = 0 to x = 2, not from 4 to 10 (B)."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "51"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Call the integers n, n + 1 and n + 2. Then n + (n + 1) − (n + 2) = 48, so n − 1 = 48 and n = 49. The greatest integer is n + 2 = 51. Answering 49 gives the smallest integer instead."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "Increasing both length and width by 20% multiplies each by 1.2, so the area is multiplied by 1.2 × 1.2 = 1.44. The new area is 2,300 × 1.44 = 3,312 square inches. Increasing the area itself by only 20% would give 2,760, which is the most common mistake.",
+    "fix": {
+      "choices": {
+        "A": "2,320",
+        "B": "2,340",
+        "C": "2,760"
+      }
+    },
+    "note": "Choices A–C are truncated in the PDF ('2,32', '2,34', '2,76'); restored as 2,320 / 2,340 / 2,760 — check. Answer D (3,312) is certain."
+  },
+  {
+    "key": "m1-21",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Take square roots: x − 42 = 1 or x − 42 = −1, so x = 43 or x = 41. Their sum is 41 + 43 = 84. Choice B (43) is just one solution, and A (42) is the center value, not the sum.",
+    "fix": {
+      "prompt": "(x − 42)^2 = 1\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expand the left side: 5kx − 5n = −(65/14)x − 85/18. A linear equation has no solution when the x-coefficients match but the constants don't. So 5k = −65/14, giving k = −13/14; with n > 1, −5n can't equal −85/18, so there is indeed no solution. Choice B (−0.128) is not equal to −13/14 ≈ −0.929.",
+    "fix": {
+      "prompt": "5(kx − n) = −(65/14)x − 85/18\nIn the given equation, k and n are constants and n > 1. The equation has no solution. What is the value of k?",
+      "choices": {
+        "A": "−13/14",
+        "D": "0.52"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 9 + x = 6, x = −3. Then −18 − 2x = −18 − 2(−3) = −18 + 6 = −12. Choice C (6) is just the value of 9 + x, and D (24) comes from mixing up the signs."
+  },
+  {
+    "key": "m2-02",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angle x° (above line l, right of the transversal) and the 111° angle (below line m, left of the transversal) are alternate exterior angles. Because l is parallel to m, alternate exterior angles are equal, so x = 111. Choice B (69) is the supplement of 111, which would be the answer only for an angle on the same side of the line."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line passes through (0, −5) and (7, −8), so the y-intercept is −5 and the slope is (−8 − (−5))/(7 − 0) = −3/7. So f(x) = −(3/7)x − 5. Choices A and B have positive slopes, but the line falls from left to right, and D flips rise and run.",
+    "fix": {
+      "choices": {
+        "A": "f(x) = (3/7)x − 5",
+        "B": "f(x) = (7/3)x − 5",
+        "C": "f(x) = −(3/7)x − 5",
+        "D": "f(x) = −(7/3)x − 5"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line goes from about 64°C at x = 0 to about 106°C at x = 100, a slope of about 42/100 ≈ 2/5, so A, B and C are true (at x = 95 the temperature is about 104°C). At x = 98 the graph is about 105°C, not between 80°C and 90°C, so D is the statement that is NOT true.",
+    "fix": {
+      "choices": {
+        "A": "For each increase of x by 1, f(x) increases by approximately 2/5.",
+        "B": "A DNA molecule with a GC content of 0% has an estimated melting temperature between 60°C and 65°C.",
+        "C": "A DNA molecule with a GC content of 95% has an estimated melting temperature between 100°C and 105°C.",
+        "D": "A DNA molecule with a GC content of 98% has an estimated melting temperature between 80°C and 90°C."
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rewrite line s as y = 7x − 16, so its slope is 7. Parallel lines have equal slopes, so line t also has slope 7. Choice A (−16) is the y-intercept, and B (−7) would come from a sign error."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 39: y = 0.67(39) + 2.6 = 26.13 + 2.6 = 28.73, which is closest to 29. Choice B (42) adds 39 and 2.6 without multiplying by 0.67.",
+    "fix": {
+      "prompt": "Scientists collected fallen acorns that each housed a colony of the ant species P. ohioensis and analyzed each colony’s structure. For any of these colonies, if the colony has x worker ants, the equation y = 0.67x + 2.6, where 20 ≤ x ≤ 110, gives the predicted number of larvae, y, in the colony. If one of these colonies has 39 worker ants, which of the following is closest to the predicted number of larvae in the colony?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For x = 4, 6 and 9, 5x − 4 equals 16, 26 and 41, and each y must be strictly greater. Table C has y = 21, 31 and 46, all greater, so every pair works. Table B gives exactly 16, 26 and 41, which are equal, not greater; tables A and D each have a y-value that is too small (11 < 16 in A, 21 < 26 in D).",
+    "fix": {
+      "prompt": "y > 5x − 4\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given inequality?",
+      "choices": {
+        "A": "x = 4, y = 11; x = 6, y = 21; x = 9, y = 36",
+        "B": "x = 4, y = 16; x = 6, y = 26; x = 9, y = 41",
+        "C": "x = 4, y = 21; x = 6, y = 31; x = 9, y = 46",
+        "D": "x = 4, y = 21; x = 6, y = 21; x = 9, y = 41"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by N: P/N = 34 − C. Then add C and subtract P/N: C = 34 − P/N. Choice B has the wrong sign on P/N, and C divides by C instead of N.",
+    "fix": {
+      "prompt": "P = N(34 − C)\nThe given equation relates the variables P, N, and C. Which expression represents the value of C for distinct positive values of P and N?",
+      "choices": {
+        "A": "C + P/N",
+        "B": "34 + P/N",
+        "C": "34 − P/C",
+        "D": "34 − P/N"
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For a quadratic x^2 + bx + c = 0, the sum of the solutions is −b. Here b = −15, so the sum is 15. Choice B (12) is the product of the solutions, not the sum."
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "527.7",
+      "527.6"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The base is 18 × 9 = 162. For the two triangles on the 18-unit sides, the slant height is sqrt(12^2 + 4.5^2) = sqrt(164.25) ≈ 12.82, so each has area (1/2)(18)(12.82) ≈ 115.34. For the two triangles on the 9-unit sides, the slant height is sqrt(12^2 + 9^2) = 15, so each has area (1/2)(9)(15) = 67.5. Total: 162 + 2(115.34) + 2(67.5) ≈ 527.7. A common mistake is using the height 12 instead of the slant heights for the triangular faces."
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The function is in vertex form a(x − h)^2 + k with vertex (6, 4). Since a = 1/7 is positive, the parabola opens up, so the vertex is the minimum: the car's lowest height was 4 inches (at 6 seconds). Choice B confuses the time 6 with the height, and the starting height is f(0) = 36/7 + 4 ≈ 9.1 inches, so C and D are wrong.",
+    "fix": {
+      "prompt": "The function f(x) = (1/7)(x − 6)^2 + 4 gives a toy car's height above the ground f(x), in inches, x seconds after it started moving on an elevated track, where 0 ≤ x ≤ 10. Which of the following is the best interpretation of the vertex of the graph of y = f(x) in the xy-plane?"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at R, so QS is the hypotenuse, and side RS = 47 is opposite angle Q. Then sin Q = 47/QS, so QS = 47/sin Q. Choice C uses cosine, which would pair angle Q with its adjacent side QR, and A and B give a value shorter than the hypotenuse.",
+    "fix": {
+      "choices": {
+        "A": "47 cos Q",
+        "B": "47 sin Q",
+        "C": "47/(cos Q)",
+        "D": "47/(sin Q)"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "14500"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Graduate students G = 0.45U, so 6,435 = 0.45U and U = 14,300 undergraduates. Undergraduates are 7,150% of postdocs, so U = 71.5P and P = 14,300/71.5 = 200. The sum is 14,300 + 200 = 14,500. A common slip is using 7.15 instead of 71.5 for 7,150%."
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "13"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite the first equation as 16x − 26y = 8 and the second as 8x − ty = −1/5. No solution means the lines are parallel but different: the coefficients must be proportional. Since 16 = 2 · 8, we need −26 = 2(−t), so t = 13. The constants 8 and 2(−1/5) differ, so the lines don't coincide.",
+    "fix": {
+      "prompt": "16x − 20y = 6y + 8\nty = 8x + 1/5\nIn the given system of equations, t is a constant. If the system has no solution, what is the value of t?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "g(x) = f(x + 3) = 7(4)^(x + 3) = 7(4^3)(4)^x = 7(64)(4)^x = 448(4)^x. Choice A multiplies by 3 instead of 4^3, and C wrongly changes the base to 12.",
+    "fix": {
+      "prompt": "f(x) = 7(4)^x\nThe function f is defined by the given equation. If g(x) = f(x + 3), which of the following equations defines the function g?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One square centimeter is 10 mm × 10 mm = 100 square millimeters. So 0.812 grams per square centimeter is 0.812/100 = 0.00812 grams per square millimeter. Choice C (0.0812) divides by only 10, forgetting that the unit is squared."
+  },
+  {
+    "key": "m2-17",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor out p^17: 49p^19 − 121p^17 = p^17(49p^2 − 121). Then 49p^2 − 121 is a difference of squares: (7p − 11)(7p + 11). So 7p + 11 is a factor. Choice B is a sum of squares, which doesn't appear in the factorization, and C reverses the coefficients."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "31/5",
+      "6.2"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The solutions are x = −9/5 (from 5x + 9 = 0) and x = ±sqrt(5k + 9). Their product is (−9/5)(sqrt(5k + 9))(−sqrt(5k + 9)) = (9/5)(5k + 9). Set it equal to 72: 5k + 9 = 40, so k = 31/5 = 6.2. The leading 5/9 is a nonzero constant and doesn't create a solution.",
+    "fix": {
+      "prompt": "(5/9)(5x + 9)(x + sqrt(5k + 9))(x − sqrt(5k + 9)) = 0\nIn the given equation, k is a positive constant. The product of the solutions to the equation is 72. What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "B",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The width is w = 56t ÷ (14/3) = 12t. Surface area = 2(lw + lh + wh) = 2(56t + (14/3)(3) + (12t)(3)) = 2(56t + 14 + 36t) = 2(92t + 14) = 184t + 28. Choice A doubles only the base and misses the side faces' t-terms.",
+    "fix": {
+      "prompt": "A right rectangular prism has a base area of 56t square centimeters (cm^2). The length of the base of the rectangular prism is 14/3 cm, and the height of the rectangular prism is 3 cm. Which expression represents the surface area, in cm^2, of the right rectangular prism?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "5/3",
+      "1.666",
+      "1.667"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "On the unit circle, cos p is found from the x-coordinate of B: cos p = 5/sqrt(34). Angle AOB is a positive angle less than π, so sin p = |−3/sqrt(34)| = 3/sqrt(34) (B is below the x-axis, but the angle measure between the rays is still positive). Then cos p / sin p = (5/sqrt(34))/(3/sqrt(34)) = 5/3. Using the y-coordinate's sign directly would give −5/3, but an angle's measure between two rays is never negative.",
+    "fix": {
+      "prompt": "In the xy-plane, a unit circle with center at the origin O contains point A with coordinates (1, 0) and point B with coordinates (5/sqrt(34), −3/sqrt(34)). If the measure of angle AOB is p radians, what is the value of (cos p)/(sin p)?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "167"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "From (0, −sqrt(334)): −sqrt(c) = −sqrt(334), so c = 334. From (2, 0): 4 + 2b + 334 = 0, so b = −169. Then h(m) = 0 means m^2 − 169m + 334 = 0, which factors as (m − 2)(m − 167) = 0. The greatest value is m = 167.",
+    "fix": {
+      "prompt": "The function h is defined by h(x) = −sqrt(x^2 + bx + c), where b and c are constants. In the xy-plane, the graph of y = h(x) contains the points (2, 0) and (0, −sqrt(334)). If h(m) = 0, what is the greatest possible value of m?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let r be the hourly fee after the first two hours: f(x) = 160 + r(x − 2). Using f(6) = 360: 160 + 4r = 360, so r = 50. Then f(x) = 160 + 50(x − 2) = 50x + 60. Choice B adds 160 without subtracting the two hours already covered, giving f(6) = 460."
+  }
+]

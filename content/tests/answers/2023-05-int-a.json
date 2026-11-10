@@ -1,0 +1,585 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The motorman is described as chafing and brooding over the hard life of workers, so \"registered discontent\" means he showed or expressed that unhappiness. \"Displayed\" captures this outward showing of a feeling. \"Enrolled\" is the sense of signing up for something, which doesn't apply to an emotion."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Counting how often other scholars cite a piece of research is a way to gauge or assess its importance, and the Mester example shows citations \"indicating\" significance. So \"measure\" fits. Tracking citations doesn't make research more or less important, which rules out \"increase\" and \"diminish.\"",
+    "fix": {
+      "prompt": "Which choice completes the text with the most logical and precise word or phrase?"
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the exchange focuses on local companies and is sensitive to \"unique, rapidly evolving local conditions,\" so it reflects circumstances that are particular to Iran. \"Distinctive to\" matches that idea of uniqueness. \"Unchanging in\" contradicts \"rapidly evolving,\" and \"irrelevant to\" contradicts the exchange's local focus."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion offers a tempting explanation for why Caracas residents used parks more: differences in access. The text then says \"however\" and shows Caracas residents actually lived farther from parks, so proximity can't explain the gap. The portion is therefore a possible explanation that the text rejects, not a counterexample or a description of the survey's scope.",
+    "fix": {
+      "passage": "In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Caracas, Venezuela, and of Fortaleza, Brazil, were surveyed about parks in their cities. Of the 1,043 respondents from Caracas, 44.7% indicated that they use the city's parks, and of the 938 respondents from Fortaleza, 35.7% indicated using city parks. <u>It may be tempting to assume the difference is due to different levels of access to parks</u>; however, given that the percentage of Caracas respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the professor can't adjust to life at the estate. In choice C he contrasts his old life of libraries, lectures and admiring colleagues with being \"plunged into this wilderness,\" stuck with \"stupid people\" and \"futile conversations,\" which directly shows his failure to adapt. Choice A shows he lacks practical skills, but not that he is unhappy with country life itself."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator explains that people are \"creatures of the sun\" who love light and life, and that this is \"why we crowd into the towns and cities.\" The rest describes how lonely the countryside feels at night, making people long for gas-lit streets and human voices. So the text explains shared traits that draw people to urban living. Choice D reverses the point, since the text says people prefer the city at night."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text sets up the question of whether cuttlefish, like octopuses and squid, lack 3D vision, then describes an experiment in which cuttlefish adjusted their strikes to 3D images. The conclusion is that cuttlefish vision is more like that of falcons and horses, so they may see in 3D. Choice B is only a detail of the method, not the main idea."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first notes that Nixon is \"most famous\" for the Watergate scandal, then says \"But Nixon's legacy is complex\" and lists praised accomplishments like the EPA and an early health care reform effort. The main idea is that his scandal overshadows real achievements. Choice C mentions only one supporting detail, and the text never says his reputation comes mainly from his associates."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim requires figurative language that links urban Washington, DC, with the rural South. Choice B imagines soil from the narrator's southern homeland falling \"like a fertile shower\" on DC's streets, a simile that ties the two places together. Choice D mentions only V Street in DC, and choice A describes train whistles without connecting the two settings."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says a reduced heart rate is considered a sign of relaxation. If infants' heart rates were substantially lower during the lullaby than during the non-lullaby, that would directly show the lullaby relaxed them. Choice A describes irregular heart rates, which says nothing about lower ones, and choice B reports parents' preferences rather than the infants' responses.",
+    "fix": {
+      "choices": {
+        "A": "The heart rates of infants in the study were more irregular during the lullabies than during non-lullabies.",
+        "B": "Parents of infants in the study chose the lullaby over the non-lullaby when asked which song they would use to calm their child."
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tribal economic activity contributed about $7.31 billion, which is more than administration/waste (about $5.83 billion) but less than real estate (about $18.31 billion). So it surpassed one and fell short of the other. Choice B is wrong because real estate's contribution is more than twice as large.",
+    "fix": {
+      "passage": "The Cherokee Nation, the Seminole Nation, and the more than thirty other tribes in Oklahoma operate numerous businesses and collectively generate billions of dollars in revenue. In fact, when the tribes' economic activity is regarded as a single industry, its contribution to the Oklahoma economy in 2017 _____",
+      "table": {
+        "caption": "Contributions of Three Key Industries to Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate contribution"
+        ],
+        "rows": [
+          [
+            "Real estate",
+            "$18,314,700,000"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000"
+          ],
+          [
+            "Administration/waste",
+            "$5,830,600,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis compares two groups: in low visibility, intermediate-headed fish should detect large-vortex obstructions better than narrow-headed fish. Choice A provides exactly that comparison, since the narrow-headed sturgeon bumped into obstructions more often than the intermediate-headed smooth-hound. Choices B and D each describe only one type of fish, so they can't show which does better, and choice C compares individuals of the same species.",
+    "fix": {
+      "passage": "Water flowing around an obstruction creates vortices (patterns of swirls) of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing by Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao using models of three head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—showed that for large vortices, fish with intermediate heads would be better able than narrow-headed fish to distinguish between vortices and general turbulence in the water. A second research team has therefore hypothesized that in low-visibility conditions, intermediate-headed fish will be more likely than narrow-headed fish to detect obstructions that create large vortices.",
+      "choices": {
+        "A": "A study using obstructions that created large vortices in low-visibility conditions found that the narrow-headed lake sturgeon (Acipenser fulvescens) bumped into obstructions more often than the intermediate-headed dusky smooth-hound (Mustelus canis) did."
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student claims congestion grew in both a very large city and smaller areas, even though the smaller areas had less delay. The graph shows Boise's delay always below New York's, yet both lines rise from 1990 to 2000, matching both parts of the claim. Choice C misreads the graph, since Albuquerque's delay was always well below New York's, and choices A and D give single data points that say nothing about change over time."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "In the table, a lower number means a higher rank. For the general public, improvement of attitudes and outlooks is ranked 4, ahead of food (8), physical health (7), pollination (12) and raw materials (15), so the public values it above the other listed services; stakeholders also rank it 1. Choice C only compares the two groups and doesn't show the public considers it important, and choice B is false because raw materials (15) ranks below attitudes (4).",
+    "fix": {
+      "passage": "Esther Sanye-Mengual, Kathrin Specht, and their team surveyed three groups of people in Bologna, Italy—leaders of urban agriculture projects, stakeholders in urban agriculture (e.g., food researchers and urban farming associations), and the general public—to compare their views about the extent to which urban agriculture contributes to 25 social or ecological services that the team identified. The researchers used these ratings to rank the services for each group, with a conclusion that both stakeholders and general public regard the improvement of attitudes and outlooks as important benefit of urban agriculture.",
+      "prompt": "Which choice best describes data in the table that support the researchers' conclusion?",
+      "table": {
+        "caption": "Ranking of Environmental and Sociocultural Benefits of Urban Agriculture (scale of 1 to 25; 1 = highest)",
+        "headers": [
+          "Social or ecological service",
+          "Project leaders",
+          "Stakeholders",
+          "General public"
+        ],
+        "rows": [
+          [
+            "improvement of attitudes and outlooks",
+            "8",
+            "1",
+            "4"
+          ],
+          [
+            "provision of food",
+            "4",
+            "15",
+            "8"
+          ],
+          [
+            "provision of raw materials",
+            "22",
+            "25",
+            "15"
+          ],
+          [
+            "improvement of physical health",
+            "5",
+            "4",
+            "7"
+          ],
+          [
+            "enhancement of pollination",
+            "1",
+            "7",
+            "12"
+          ]
+        ]
+      }
+    },
+    "note": "Printed prompt says \"the city planner's conclusion\" but the passage gives the researchers' conclusion; prompt changed to match."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Birds spread more seeds from non-native plants, which are far more numerous, than from at-risk native plants like the lapalapa. Since seed dispersal helps plants spread, it follows that non-native plants would be increasing their populations faster than the vulnerable natives. Choice B adds a timeline the text never mentions, and choice D wrongly lumps the abundant jessamine in with endangered species."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The sculptures ... are meant to challenge viewers to consider their own relationships to material wastes\" and \"her thought provoking works ... were no different\" are both independent clauses. A semicolon is the correct way to join them without a conjunction. A comma alone (C) creates a comma splice, and no punctuation (D) creates a run-on."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A recipient of the Othmer Gold Medal and the Davy Medal\" describes a person, so the subject right after the comma must be that person: chemist Ahmed Zewail. Choice D puts Zewail first and also places \"a new scientific discipline\" right before \"known as femtochemistry.\" Choices A, B and C make \"the result,\" \"the introduction\" or \"the limits\" the medal recipient, creating dangling modifiers."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"The Amur River\"; the clause \"which is 2,714 miles long\" between commas doesn't change that. A singular subject needs the singular verb \"flows.\" \"Flow,\" \"have flowed\" and \"are flowing\" are all plural forms."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence answers the question just asked, so it is a statement and needs normal statement word order with a period: \"it was invented by an author.\" Choice B wrongly ends a statement with a question mark, and choices C and D use question word order while ending in a period."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"the judges for the 1974 Nobel Prize in Literature,\" a plural group named after the colon, so the plural pronoun \"they\" is needed. \"It\" is singular, and \"you\" and \"anyone\" don't refer to any specific group in the text."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"To drive their cars across France\" is one continuous phrase: \"their cars\" is the object of the verb \"drive,\" so no punctuation may separate them. A period, colon or semicolon (A, C, D) would cut the verb off from its object and leave fragments."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb (\"was\"), so the blank must start a modifier describing \"a profile.\" The participle \"appearing\" does this: a profile appearing in the Navajo Times. \"Appears,\" \"has appeared\" and \"appeared\" are finite verbs that would need a relative pronoun like \"that\" to fit."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"especially since her 2020 novel Mexican Gothic reached the New York Times Best Sellers list\" is an interruption, and it already ends with a dash before \"as a novelist.\" A matching dash is needed to open it. A colon, semicolon or no punctuation would leave the interruption unbalanced."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says scientists assumed androsterone existed only in animals and that the discovery in plants \"wouldn't come until decades later.\" \"Eventually\" signals that this finding came after a long time. \"Earlier\" contradicts the timeline, and \"For example\" and \"In other words\" don't fit since the plant discovery isn't an example or restatement of the 1931 assumption."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first clause says what Chaucer didn't write in (Modern English), and the second gives the correct alternative (Middle English). \"Rather\" introduces a correction like this. \"As a result\" wrongly suggests cause and effect, and \"similarly\" suggests a likeness that isn't there."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize a similarity. According to the notes, both works include acrylic among their materials, and choice A highlights exactly that shared medium. Choice C lists the different materials, which stresses contrast, and choice D points out a size difference.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Jean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings.\n• His work Thin in the Old was completed in 1986 and sold at auction in 2020.\n• Thin in the Old is composed of acrylic, oil, and paper collage on wood and measures 3,028 square inches in area.\n• His work Victor was completed in 1987 and sold at auction in 2017.\n• Victor is composed of acrylic, oil stick, and crayon on canvas and measures 9,432 square inches in area."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to compare talc and topaz specifically. Choice D does this using the notes: harder minerals can scratch softer ones, so topaz (8) can scratch talc (1) and is the harder of the two. Choices A and C compare fluorite with another mineral, and choice B never states which mineral is harder.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral talc has a Mohs scale number of 1.\n• The mineral fluorite has a Mohs scale number of 4.\n• The mineral topaz has a Mohs scale number of 8."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says that being first is one of the most effective ways to create a lasting legacy, giving Machado's firsts as an example. \"Establish\" means to create or set up, which fits building a legacy. \"Undermine\" and \"constrain\" would weaken or limit a legacy, and \"recognize\" means to acknowledge something that already exists."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speed gap between the frigate bird and the swordfish results from the fact that flight features limit top speed less than swimming features do. Something that results from a fact is \"a consequence\" of it. \"An explanation\" reverses the relationship, since the fact explains the difference, not the other way around."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says a reign was shaped by questions of legitimacy, so the characteristics in question are the ones a monarch needed to keep power. Without them, a monarch would have been forced to give up the throne, so \"abandon\" fits. \"Reciprocate,\" \"annotate\" and \"equalize\" don't describe anything one can be forced to do to a throne.",
+    "fix": {
+      "prompt": "Which choice completes the text with the most logical and precise word or phrase?"
+    }
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains the blank after the colon: \"we will never be able to answer it.\" A question that can never be answered is \"irresolvable.\" \"Self-contradictory\" would mean the question contradicts itself, which the text doesn't suggest, and \"imperative\" and \"unavoidable\" don't match the idea of having no answer."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cliffs on a wild, secluded scene give the speaker thoughts of \"more deep seclusion,\" meaning an even stronger, more profound sense of being alone. \"Intense\" captures this greater degree. \"Complicated\" suggests intricacy, and \"tough\" and \"hideous\" bring in difficulty or ugliness that the peaceful scene doesn't support.",
+    "fix": {
+      "passage": "The following text is adapted from William Wordsworth's 1798 poem \"Lines Written a Few Miles above Tintern Abbey.\"\nOnce again\nDo I behold these steep and lofty cliffs,\nWhich on a wild secluded scene impress\nThoughts of more <u>deep</u> seclusion; and connect\nThe landscape with the quiet of the sky."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Most studies focus on people living above sea level, while these researchers took a \"novel path\" by studying people below sea level. The contrast with \"novel\" calls for a word meaning standard or typical, so \"conventional\" fits. Nothing in the text suggests the usual studies are \"eccentric,\" \"meager\" or \"random.\""
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 argues that becoming a poet requires time for training and practice, so financial security shapes who becomes a poet. Lorde holds that poetry can be written \"between shifts,\" on the subway or on scraps of paper, so poets can make worthwhile art while earning a living another way. She would therefore point out that valuable poetry can be produced outside the circumstances Text 2 describes. Choice D wrongly assumes Lorde cares about professional training."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text admits The Yellow Admiral ends abruptly but argues that this is only a problem if each book is treated as a standalone, since the series works like one very long story. The main idea is that understanding the series' structure helps a reader appreciate it. Choices A and C make claims about critics and readers that the text never mentions."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Victor says even the most learned philosopher knew little more than a peasant: scientists could dissect and name things, but deeper causes were \"utterly unknown,\" and he \"repined\" (complained) at the barriers keeping people from nature's secrets. This shows he believes the established methods of science won't give him the answers he wants. Choice B is wrong because he doesn't say science gives a clearer understanding; he says it gives barely more."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The mesophotic zone starts at 30 meters. Plerogyra discus is never found deeper than 15 meters, the shallowest maximum depth in the table and the farthest from 30 meters, so it seems least able to move fully into that zone. Agaricia undata already reaches 80 meters, well inside the mesophotic zone, so choice A is the opposite of what the data suggest.",
+    "fix": {
+      "passage": "Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler, darker mesophotic zone (30 to 150 meters below the surface). However, it isn't clear that all such species will be able to tolerate mesophotic conditions. In 2018, Luiz Rocha and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is _____",
+      "choices": {
+        "A": "Agaricia undata, because its minimum depth of 20 meters is in the shallow zone.",
+        "B": "Plerogyra discus, because its maximum depth of 15 meters is furthest from the mesophotic zone.",
+        "C": "Acropora echinata, because its maximum depth of 25 meters is close to but doesn't reach the mesophotic zone.",
+        "D": "Psammocora albopicta, because its minimum depth of 1 meter is the shallowest of those listed."
+      },
+      "table": {
+        "caption": "Minimum and Maximum Depths of Stony Coral Species in Caribbean and Indo-Pacific Waters",
+        "headers": [
+          "Species",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Plerogyra discus",
+            "8",
+            "15"
+          ],
+          [
+            "Acropora echinata",
+            "8",
+            "25"
+          ],
+          [
+            "Psammocora albopicta",
+            "1",
+            "28"
+          ],
+          [
+            "Agaricia undata",
+            "20",
+            "80"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The scholars argue the Harlem Renaissance \"never really ended\" because it still shapes US culture. Their reasoning assumes that a movement whose influence lives on is, in a sense, still going. Choice D states this general principle. Choice A focuses on mixing literary and nonliterary work, which isn't the basis of their argument."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says a two-dimensional photo can't show how a building interacts with its surroundings. So a photo of the Forbidden City fails to capture the building's full impact. Choices A, C and D bring in exaggeration, misperception and decay, none of which the text discusses."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "HILDA looks for trends in economic well-being \"that can take a long time to develop,\" so it must collect data over many years, which is costly. Choice C explains the high cost this way. Choice B questions whether 25,000 people is enough, which doesn't explain the expense, and choices A and D are about marketing studies rather than HILDA.",
+    "fix": {
+      "choices": {
+        "B": "data from 25,000 people may not be enough to reveal significant trends in economic well-being."
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis is that CeO2-NP levels in zebra mussels could stand in for testing rainbow trout. A proxy only works if it reliably reflects what happens in the trout. If the two species absorb CeO2-NPs at different rates in a way researchers don't understand, mussel data can't be used to predict trout levels, weakening the hypothesis. Choice A suggests consistent results, which if anything supports using mussels."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says comments depend on customers' expectations, and only stations near schools offer discounts. If stations near restaurants get a lower share of good comments, the logical explanation is that their customers, paying full price, expect more and are more easily disappointed. Choice C just restates the finding instead of drawing a conclusion, and choice D is a recommendation the text doesn't support.",
+    "fix": {
+      "passage": "Generally speaking, whether consumers give a good comment or a bad one is closely related to their expectations about the kind of service they will get. Some gas stations are located near schools while others are near restaurants. People who go to gas stations near schools usually get discounts for refueling their automobiles. However, such discounts are not provided at gas stations near restaurants. Recent studies show that the rate of good comments versus bad comments made to the gas stations near restaurants is lower than the rate near schools, suggesting that _____"
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Tarabieh found that people are less likely to buy a product when they see it as more environmentally risky. Parents of small children saw the skin-care product as the least risky of any group, so applying that finding, they would be the most likely to buy it. Choice A reverses this, and choice C isn't supported, since the text says nothing about what these parents prioritize."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Amplifying the voices and experiences of Black soldiers,\" which is a single action, so it takes a singular verb. The surrounding text is in the past tense, so \"was\" is correct. \"Were,\" \"have been\" and \"are\" are plural and agree with \"soldiers,\" which is only part of a prepositional phrase."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Spacewar! ... challenged gamers ... so that they could defeat other players\" is a complete sentence, and \"Before Spacewar!'s development, playing a video game was a more solitary experience\" is another. A period correctly separates them. A comma (A) creates a comma splice, and \"and\" or no punctuation (B, D) wrongly attaches the \"before\" phrase to the first sentence.",
+    "fix": {
+      "passage": "The first multi-player computer video game, Steve Russell's Spacewar!, challenged gamers' abilities not only to maneuver their spaceships but also to decide how best to utilize their limited weaponry so that they could defeat other _____ Spacewar!'s development, playing a video game was a more solitary experience in which one game player tried to beat a single computer."
+    },
+    "note": "PDF places the blank after \"Spacewar!'s\" and prints \"games' abilities\"; passage fixed so the choices fit."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"To most observers, ... the net-casting spider's small web consists of the same silk spun by other arachnids that make larger, fixed webs\" is a complete clause, and \"however\" begins a new contrasting clause. A semicolon before \"however\" and a comma after it correctly join the two. Choice A puts commas on both sides of \"however,\" creating a comma splice."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The blank begins a phrase explaining the purpose of Bertozzi's method: she devised it to protect healthy cells. The infinitive \"to protect\" expresses purpose. \"Protected\" and \"protecting\" would wrongly modify \"click chemistry,\" and \"and protecting\" doesn't connect to any verb in the sentence."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The long subject \"the reason that the rate of heart disease seems lower ... while similarly stressed\" must connect directly to its verb \"is,\" with no punctuation between them. Choice A leaves the phrase unpunctuated. A comma, semicolon or colon (B, C, D) would separate the subject from its verb."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular gerund \"re-entering,\" not the plural \"checkers\" or \"rules,\" so the verb must be singular. The text describes the rules in the simple present (\"the rules are the same\"), so \"follows\" fits. \"Follow,\" \"are following\" and \"have followed\" are all plural."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because Leda orbits in the same direction Jupiter rotates, its orbit is called prograde. The second sentence is a conclusion drawn from the first, so \"Hence\" fits. \"Nevertheless\" signals contrast, and \"In reality\" suggests correcting a mistaken idea."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cheetah and blue whale both ranked in the top twenty, but the next sentence points out that the tiger ranked above every animal. \"Still\" introduces this contrast: despite the cheetah's and whale's high ranking, the tiger was number one. \"As a result\" and \"For example\" wrongly suggest a cause or an example."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says generally that Tucker worked at JPL, and the second gives the specific job and team she was on. \"Specifically\" introduces this more detailed information. \"Conversely\" and \"Nevertheless\" signal contrast, which isn't present."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Physicist\" is a title placed directly before the name, so no commas are used: \"physicist Mishkat Bhattacharya asserts.\" Choices A and D also put a comma between the subject and the verb \"asserts,\" and choice B wrongly separates the title from the name."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text sets up a question Jenouvrier studied (\"to find the answer\"), so the sentence must be a direct question with question word order and a question mark: \"could these penguins become extinct?\" Choice B uses statement order with a question mark, and choice C uses question order with a period."
+  }
+]

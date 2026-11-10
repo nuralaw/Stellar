@@ -1,0 +1,1173 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The batteries are built into the devices and can't be removed, so the devices contain them. \"Prepare,\" \"imagine,\" and \"discover\" describe things people do, not something a device does with a battery sealed inside it."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the hominins chipped the rocks intentionally to make them as round as possible, so their effort was deliberate, which is why it suggests planning and cognitive sophistication. \"Comparable\" needs something to compare to, and \"concerning\" and \"sympathetic\" don't describe an intentional effort."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Lady Britomart wants Stephen to take on the burden of the family affairs, so \"assume the responsibility\" means to undertake or take on that duty. \"Presuppose\" and \"infer\" are other meanings of \"assume\" (to take something for granted), which don't fit a duty someone accepts.",
+    "fix": {
+      "passage": "The following text is adapted from George Bernard Shaw's 1905 play Major Barbara.\nLADY BRITOMART: You must learn to face life seriously, Stephen. I really cannot bear the whole burden of our family affairs any longer. You must advise me: you must assume the responsibility.\nSTEPHEN: I!\nLADY BRITOMART: Yes, you, of course. You were 24 last June."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator opens with a general observation (every crew member thinks he alone does all the work) and then backs it up with the specific examples of Harris and George. Choice A is tempting, but the narrator presents the situation as typical (\"I have always noticed\"), not startling."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The whole text reports a new discovery: 62 more moons were found, giving Saturn over 100 and putting it ahead of Jupiter. The telescope and Jupiter are mentioned only as details, so B and C describe minor points rather than the purpose."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The narrator first notes that Amos Barton is lucky not to have overheard what his neighbors said about him, then broadens to a general point: none of us would be happier if we could compare our self-image with how others see us. Choice D is tempting, but the narrator never says the neighbors' opinion is justified; the comparison to plants is about human conceit in general."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence describes Byrne's study, which used historical DNA, and the second explains why that approach is underused: the DNA is often degraded and hard to work with. Choice B fails because the text says the problem is not easily fixed rather than explaining how to overcome it."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 says studies of entrepreneurial training have methodological shortcomings, like Hansemark's sample of only 19 students, which makes it hard to tell whether the training had any effect. So its author would say we can't really know what results the programs produce. Choices A and C claim the programs produce negative or no results, which Text 2 never shows.",
+    "fix": {
+      "passage": "Text 1\nYale University and the investment bank JPMorgan Chase are two of the many institutions offering training programs in entrepreneurship. <u>But what results do such programs produce?</u> In a study of college students in Sweden, researcher Ove Hansemark addressed this question and found that participants showed strong belief in their entrepreneurial capabilities after receiving entrepreneurial training.\n\nText 2\nWhile studies of entrepreneurial training typically report positive results, a close look at these studies reveals widespread methodological shortcomings. For instance, a 1998 study by Ove Hansemark found benefits of entrepreneurial education for Swedish college students, but the study used a very small sample of only 19 students, making it difficult to say whether the training actually had an effect.",
+      "prompt": "Based on the texts, how would the author of Text 2 most likely answer the underlined question in Text 1?"
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Jones's novel features Blackfeet characters \"like Jones himself\" and that Métis author Dimaline \"has also written in the genre,\" so both are Indigenous horror writers. Choices A and B fail because Dimaline is Métis and her novel is set in a Métis community, not a Blackfeet one."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After traveling to the US and Europe, Barragán began using functionalist and modernist principles, a clear change from the historically inspired style of his early work. That is a shift in aesthetic tied to his time abroad. Choice C reverses the order: his early work was historically inspired, and modernism came later."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The lowest average power generation in the table is 3,999 MWh/yr, at the White River plant, which is in Wisconsin. Michigan's Superior Falls plant (10,693 MWh/yr) is the next lowest but still higher.",
+    "fix": {
+      "passage": "In 2021, Rocío Uría-Martínez, Megan M. Johnson, and Rui Shan published a report on hydroelectric power plants operating in the US as recently as 2019, and data from their report are shown in the table. Of the plants in the table, the plant with the lowest average power generated per year in 2019 was located in the state of _____",
+      "table": {
+        "headers": [
+          "Plant",
+          "State",
+          "Mode",
+          "Generators in plant",
+          "Average power generation (MWh/yr)",
+          "Water source"
+        ],
+        "rows": [
+          [
+            "J. Woodruff",
+            "Florida",
+            "peaking",
+            "3",
+            "193,864",
+            "Lake Seminole Reservoir"
+          ],
+          [
+            "Superior Falls",
+            "Michigan",
+            "run-of-river",
+            "2",
+            "10,693",
+            "Montreal River"
+          ],
+          [
+            "Norway",
+            "Indiana",
+            "run-of-river",
+            "4",
+            "19,751",
+            "Tippecanoe River"
+          ],
+          [
+            "White River",
+            "Wisconsin",
+            "run-of-river",
+            "2",
+            "3,999",
+            "White River"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined claim is that the excitement from an announcement fades quickly, so timing matters. If products announced long before release generate little excitement, that shows the boost wears off over time. Choices B and D are about who buys or what information is given, not about the effect fading.",
+    "fix": {
+      "passage": "When a company has a new product, it has to decide when to tell people about it. Companies usually announce a new product before it is released and available for purchase. Those announcements can increase consumer excitement, which can mean that more people will buy the product. But <u>the effect fades quickly, so companies need to be careful in timing the announcement and the release of a new product.</u>"
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis predicts that immature females pay more attention to permanent residents than males do. The two females (individuals 6 and 1, at 0.67 and 0.59) both had higher proportions than the two males (individuals 13 and 15, at 0.15 and 0.00). Choice B just gives the range without comparing the sexes, and D is about total peering events, not who was watched.",
+    "fix": {
+      "passage": "One way that young orangutans acquire foraging skills is through a behavior scientists call peering—closely watching older orangutans as they engage in an activity that the young have not yet mastered. Since female orangutans typically remain in the same area from youth through adulthood and males do not, Beatrice Ehmann and her colleagues hypothesized that it is more advantageous for immature females than males to devote attention to orangutans who are permanent residents of the immature individual's home region, and this should be reflected in sex-specific differences in peering behavior.",
+      "table": {
+        "headers": [
+          "Individual",
+          "Site",
+          "Sex",
+          "Total number of peering events observed",
+          "Proportion of peering events directed at permanent residents of immature orangutan's home region"
+        ],
+        "rows": [
+          [
+            "1",
+            "Suaq",
+            "female",
+            "17",
+            "0.59"
+          ],
+          [
+            "13",
+            "Tuanan",
+            "male",
+            "27",
+            "0.15"
+          ],
+          [
+            "15",
+            "Tuanan",
+            "male",
+            "15",
+            "0.00"
+          ],
+          [
+            "6",
+            "Tuanan",
+            "female",
+            "6",
+            "0.67"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The historian's claim is that carpa theater's audience-mediated slapstick shaped El Teatro's early shows. Choice D mentions both exaggerated physical humor (slapstick) and audience reactions that shaped the performance (audience mediation). Choices B and C mention humor and satire but nothing about physical comedy or audience participation."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claims were \"self-interested,\" meaning they benefited the climbers themselves. If edelweiss grew only in dangerous places, then climbers who reached them would look brave and strong. Choice B would benefit flower enthusiasts or tourism, not the climbers' own image."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Purkinje effect still describes the eye's tendency today, so the simple present \"is\" fits a general, ongoing fact. \"Will have been\" and \"was\" put the description in the future or the past, which makes no sense for a scientific term still in use."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The nonessential clause \"which are skeletal muscles\" must sit right after the noun it describes, \"the fibularis longus and the brachialis,\" and be set off by commas; then the verbs \"are\" and \"help\" follow. In the other choices, \"which\" ends up next to \"shape\" or \"help,\" so it seems to describe the wrong thing."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"It was April of 1885 when Vincent van Gogh completed Study of Two Peasants\" is a complete sentence, so it needs a period. The next sentence's subject, \"The drawing,\" is followed by the appositive \"one of dozens to be featured...\" and the verb \"is.\" Choice A creates a run-on, and C and D break the subject \"the drawing\" off from its verb \"is.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"That Palma Rodriguez uses in his art\" is an essential clause identifying which materials, so no commas should separate it from \"materials\" or from the verb \"highlight.\" Adding a comma between the subject and the verb, as in C, is an error."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Exemplars of Stigler's law abound\" is a complete clause, so a colon can introduce the examples that follow. A comma after \"in mathematics\" then sets the field apart from its example, matching \"in astronomy, the Cassegrain reflector.\" Choice B attaches \"in mathematics\" to the main clause, which breaks the parallel list of fields and examples, and choice A joins two independent clauses with only a comma."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists steps in order: \"First,\" then the magma heating the water, then \"Finally.\" \"Next\" correctly marks the middle step. \"First of all\" would repeat the first step, and the others don't show sequence."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Sierra Leone's urbanization rose between 2015 and 2020, and over the same five-year period urbanization rose across West Africa. \"Concurrently\" means at the same time, which fits. \"For example\" fails because the regional trend is not an example of Sierra Leone's."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to contrast how the rock at the two parks formed. Choice B explains that Acadia's rock cooled deep within Earth's crust while Crater Lake's cooled after exiting the crust, using \"whereas\" to make the contrast. Choice A names only one park, and C and D don't say how either park's rock formed.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Igneous rock is one of the three main types of rock.\n• It is formed when molten rock, known as magma or lava, cools.\n• Intrusive igneous rock forms when molten rock cools deep within Earth's crust.\n• Extrusive igneous rock forms when molten rock exits Earth's crust and cools on the surface.\n• Acadia National Park in Maine contains examples of intrusive igneous rock.\n• Crater Lake National Park in Oregon contains examples of extrusive igneous rock."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Choice A gives the number of haiku in each poem (fifteen versus seven) and uses \"whereas\" to contrast them. The other choices talk about the book, the poems' subjects, or the publisher's description, not the number of haiku.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Morning Haiku (2010) is a book of poetry by African American poet Sonia Sanchez.\n• Each poem in the book is a sequence of haiku.\n• According to the book's publisher, Penguin Random House, the book \"celebrates the gifts of life and mourns the deaths of revered African American figures.\"\n• The poem \"15 haiku (for Toni Morrison)\" is written as a sequence of fifteen haiku.\n• The poem \"7 haiku (for Ray Brown)\" is written as a sequence of seven haiku."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only choice A mentions both soundscapes, the crickets on the Yodo River and the water at Nachi Falls, and says both are on the list. Choices B and D each mention only one of them, and C mentions neither.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Japanese Ministry of the Environment made a list of 100 soundscapes of Japan.\n• Each soundscape on the list was selected for its cultural significance to Japan.\n• The sound of crickets on the banks of the Yodo River is on the list.\n• The sound of water flowing over Nachi Falls is on the list."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A new audience needs to know what the work is: choice D gives the artist, the year, and that it is a wooden installation filling an entire gallery room. Choice A only names the work as an example, and B and C spend most of their words on the Vietnam Veterans Memorial instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Maya Lin is an American artist known for her memorials and works of installation art.\n• She completed the Vietnam Veterans Memorial in 1982.\n• It is a memorial sculpture consisting of two 246-foot granite walls, and it is designed to commemorate veterans of the Vietnam War.\n• She completed Untitled (Topographic Landscape) in 1997.\n• It is an installation composed of wood that fills an entire gallery room."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cummings and Knapp's contribution was confirming that their ancestors carried youlk across the region, which supported Lullfitz's hypothesis that humans spread the plant. Choice D states exactly that. Choices A and C say they helped without saying how, and B wrongly credits them with confirming the DNA results.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Australian ecologist Alison Lullfitz studied the distribution of Platysace deflexa (youlk), a small shrub with edible tubers.\n• Lullfitz found that youlk plants gathered at sites across southwest Australia had very similar DNA despite differences in soil conditions.\n• Lullfitz hypothesized that humans had transported the plant throughout the region.\n• Lullfitz consulted Shandell Cummings and Lynette Knapp, members of the area's Noongar Aboriginal group.\n• Cummings and Knapp confirmed that their ancestors carried youlk when traveling across the region."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Guraieb's pieces allow as many interpretations as there are listeners, so the music can have myriad (countless) meanings. \"Superficial\" and \"deficient\" are negative and don't explain why so many interpretations are valid, and \"untenable\" would mean the meanings can't be defended."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The flower beds made the plot of land look like a real garden at first sight, so they supported, or substantiated, the illusion that it was a garden. \"Promised\" and \"designated\" don't describe evidence backing up an impression."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The new measurement differs significantly from what the standard model predicts, so if confirmed it would weaken, or undermine, the theory. \"Satisfy\" and \"simplify\" suggest agreement or help, the opposite of what a conflicting result does, and \"overtake\" doesn't fit a measurement and a theory."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The best discussions keep a rigid distinction between actor and character, so they take care never to conflate (merge or confuse) the two. \"Overshadow\" and \"lambaste\" don't express the idea of blurring a distinction, and \"epitomize\" means to be a perfect example of something."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The social scientists say the public's understanding of history is central to understanding politics and that an electorate needs it, so history is too critical (important) to leave to historians. \"Complex\" would actually argue for leaving it to experts, and \"accessible\" and \"respectable\" don't explain why the public must be involved."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first gives the Muscogee words hatki and hathaki, then names and explains the phenomenon they show (reduplication), and ends by noting there are many examples of it in Muscogee. Choice B fails because the text never mentions any scholarly controversy."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined sentence describes how Prudhomme's team had studied convergent evolution through a shared genetic mechanism. The text then notes a gap in understanding that motivated Green and Extavour's later study, so the sentence gives an example of earlier research. Choice A fails because Prudhomme's team is never discussed again.",
+    "fix": {
+      "passage": "<u>Benjamin Prudhomme and colleagues have explored how convergent evolution—a phenomenon that occurs when the same trait evolves independently in two reproductively separate lineages—can result from a genetic mechanism shared by both lineages.</u> Meanwhile, Cynthia C. Steiner and colleagues have investigated how convergence occurs through different genetic mechanisms. However, the relative prevalence of convergence through shared and different genetic processes is still poorly understood. This motivated biologists Delbert A. Green II and Cassandra G. Extavour to evaluate both types of convergence in a single study for their 2012 paper."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Regional endotherms have more than 30% compact myocardial tissue, and basking sharks have 47%, which the text says undermines their classification as full ectotherms. So that percentage alone is enough to call the old category into question. Choices B and C invent comparisons with the salmon shark and bluefin tuna, whose exact percentages aren't given."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text raises a question (if lying is sometimes allowed, what grounds opposition to it?) and presents Pallikkathayil's answer: a duty to respect others' agency, which requires truthfulness except when lying prevents a greater harm. Choice A contradicts the argument, since it allows exceptions, so the duty is not inviolable.",
+    "fix": {
+      "choices": {
+        "C": "One potential means of grounding opposition to lying is Pallikkathayil's argument that we have an obligation to respect other people's agency that entails a commitment to truthfulness except in certain circumstances."
+      }
+    },
+    "note": "Choice C is printed as \"means of ing opposition\"; restored the missing word as \"grounding\" from the passage."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Narrower heads have the greatest pressure difference, and so the most information, closer to the snout. If the most sensitive sensors sit where the information is greatest, the narrow-headed longnose gar should have its most sensitive sensors closer to the snout than the wide-headed devil catfish, which is what choice A says. Choice D reverses this, and B and C don't show sensitivity matching where the information is."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists ways growth wasn't uniform, so the blank needs another irregularity. Geothermal stayed at 2,131 and wind stayed at 154.3 from 2019 to 2020, so both neither increased nor decreased. Choices B and D are true but don't show non-uniform growth, and C describes an increase, not an irregularity.",
+    "fix": {
+      "passage": "Indonesia is trying to increase its electricity capacity (the maximum amount of electricity that can be generated) for renewable energy in order to reduce dependence on fossil fuels, which can be costly financially and environmentally. From 2017 to 2020, Indonesia's use of four renewable technologies has trended upward, but not uniformly: the electricity capacity of solar power fell from 97.4 megawatts in 2017 to 65.5 megawatts in 2018, and the electricity capacity of _____",
+      "table": {
+        "caption": "Electricity Capacity Trends (in megawatts) for Four Renewable Technologies in Indonesia (2017-2020)",
+        "headers": [
+          "Energy",
+          "2017",
+          "2018",
+          "2019",
+          "2020"
+        ],
+        "rows": [
+          [
+            "Geothermal",
+            "1,808",
+            "1,948",
+            "2,131",
+            "2,131"
+          ],
+          [
+            "Renewable hydropower",
+            "5,703",
+            "5,773",
+            "5,976",
+            "6,141"
+          ],
+          [
+            "Solar",
+            "97.4",
+            "65.5",
+            "155",
+            "185.3"
+          ],
+          [
+            "Wind",
+            "1.5",
+            "143.5",
+            "154.3",
+            "154.3"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the other experiments, spacing products far apart (a low product-to-space ratio) made them seem more valuable. If an inexpensive store moderates (weakens) this effect, the spacing should matter a lot at Tiffany & Co. but only a little at Forever 21, which is choice C. Choice A has spacing working in the wrong direction, and B and D don't show a weaker spacing effect at the cheaper store."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Aristophanes mocks sophists' practices as foolish. In choice D, Socrates studies astronomy while hanging in a basket and gives a pompous reason about \"suspending the intellect,\" which makes the sophist look ridiculous. The other quotations are ordinary lines that don't make sophists' practices or views look silly."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ironworking at Oboui and Gbatoro may date to 2300–1900 BCE, about the same time as the proposed Anatolian origin (2200–2000 BCE) and well before Carthage. That suggests iron production may have developed independently in Central Africa at roughly the same time. Choice B still assumes the technology came from Anatolia, which the early dates call into question."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The supplements seemed to have no effect, but they were rare, inconsistent, and poorly recorded, so the data can't show what properly given supplements would do. Therefore researchers can't rule out that supplements could help the chimpanzees in autumn. Choice C wrongly questions the measured vitamin D levels, which the text gives no reason to doubt."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Established in 1936 by... Richard Wright\" must modify the word right after the comma, and only the South Side Writers Group was established by Wright. In B, C, and D the phrase would describe writers or Chicago, a dangling modifier."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The former establishing... and the latter legally affirming...\" is an absolute phrase (it has no main verb), so it attaches to the sentence with a comma. Choice D makes it a separate sentence without a verb, A leaves out needed punctuation, and B's \"as\" makes the phrase ungrammatical."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"consist,\" so the blank must be a modifier: \"classified as dactyls\" describes the trisyllabic words. Choices A, B, and C add a second main verb, leaving \"consist\" with no proper place in the sentence."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" contrasts this sentence with the previous one (Scheme is called compiled, but compiling isn't exclusive to certain languages), so it belongs with the first clause and is followed by a semicolon before the independent clause \"any language can incorporate this tool.\" Choice A puts \"however\" with the last clause, creating a false contrast, since that clause supports the point rather than opposing it."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both pieces are examples of Esmail using Indian elements, so \"for instance\" goes with the first example, and \"while\" joins the TaReKiTa example as a dependent clause in the same sentence. Choice A creates a comma splice, and B attaches \"for instance\" only to the second example, leaving the first unmarked."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"collection,\" not the plural paintings named in the \"which\" clause, so the verb must be singular: \"remains.\" Choices A, B, and D are plural forms."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the steps of the process with \"First\" and \"Next,\" and slipping the paper in and out to transfer the design is the last step, so \"Finally\" fits. \"Therefore\" would wrongly say this step is a result of the one before."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Whitney's goal was to help avant-garde artists gain exposure, and offering to donate more than 500 works to a museum was a way to pursue that goal. \"To this end\" marks an action taken for a stated purpose. \"In contrast\" fails because the offer supports her role as a champion rather than contrasting with it."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second sentence applies the principle from the first: because intrusions are younger than the rocks they cut, geologists can date the intrusion between the two rock layers. \"Accordingly\" signals this logical consequence. \"Moreover\" would add an unrelated point, and \"To this end\" suggests a goal, not an application."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice A gives the sequence: Commerce Department, then the CAA in 1938, then the FAA in 1958. Choice B gets the order and the agent wrong, C names the entities without giving the order, and D mentions only the FAA.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• 1926: The US Congress gave the US Commerce Department authority to regulate safety standards in the fledgling commercial airline industry.\n• 1938: Congress transferred this authority to a new independent government agency called the Civil Aeronautics Authority (CAA).\n• 1958: Congress transferred authority from the CAA to the newly established Federal Aviation Administration (FAA).\n• The FAA's first administrator, Elwood R. Quesada, updated safety standards and technologies for the era of commercial jets.\n• The FAA remains the regulatory authority for airline safety."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The three studies found positive, neutral, and negative effects, so the accurate generalization is that bat ingestion can have varying effects on germination. Choices C and D claim one consistent effect, which the notes contradict, and B reverses cause and effect.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• R. Oleksy, L. Giuggioli, and T.J. McKetterick published a study in 2017. In it, the researchers found that ingestion by bats had a positive effect on the germination of Ficus grevei plant seeds.\n• Jorge E. Lopez and C. Vaughan published a study in 2004. In it, the researchers found that ingestion by bats had a neutral effect on the germination of Senna fruticosa plant seeds.\n• J.M. Palmeirim, D.L. Gorchov, and S. Stoleson published a study in 1989. In it, the researchers found that ingestion by bats had a negative effect on the germination of Piper friedrichsthali plant seeds."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain what plosive phonemes are in general, and choice D gives the definition: sounds in which air flow is at first fully blocked. Choices A and B describe one plosive phoneme, /p/, rather than explaining the category, and C defines fricatives instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Linguists use phonemes to represent the smallest possible units of sound within a word.\n• In English, the phoneme /p/ has labial articulation, which means it is produced using one or both lips, such as in the word \"pan.\"\n• The phoneme /z/ has alveolar articulation, which means it is produced by placing the tongue against or near the roof of the mouth, such as in the word \"zoo.\"\n• /p/ is plosive, a term used for sounds in which air flow is at first fully blocked.\n• /z/ is fricative, a term used for sounds in which air flow is partially blocked."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "152"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because r and s are parallel, the 152° angle at line r and the x° angle at line s are corresponding angles: both sit above their parallel line on the same side of the transversal n. Corresponding angles are equal, so x = 152. Don't subtract from 180; that would give a supplementary angle, not the matching one."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The graph of f(x) = 3^x curves upward, so a line that crosses it at two points lies above the curve only between those points. Since j < k and g is increasing, the intersections occur at x = a and x = b with a < b, so g(x) > f(x) exactly when a < x < b. Choices A, B, and C compare x with the y-values j and k or describe the region outside the intersections, where the exponential is on top."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Notice that 24x = 6(4x). Since 4x = 7, 24x = 6 · 7 = 42. Solving first also works: x = 7/4, and 24 · 7/4 = 42."
+  },
+  {
+    "key": "m1-04",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 6: 6(x^2 + 5) = 6x^2 + 30. Then combine like terms: x^3 + 8x^2 + 6x^2 − 7x + 30 = x^3 + 14x^2 − 7x + 30. Choice B forgets to add the 6x^2 term."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "27"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 2^3 + 19 = 8 + 19 = 27."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "448"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set x/2 = 224 and multiply both sides by 2 to get x = 448.",
+    "fix": {
+      "prompt": "The function g is defined by g(x) = x/2. For what value of x does g(x) = 224?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The points fall from left to right, so the slope must be negative, which rules out A and C. A line through the data starts near y = 8 or 9 at x = 0 and drops a little less than 1 unit per step, matching y = 8.5 − 0.8x. Choice B has intercept 0.8 and slope −8.5, which would drop far too steeply and start far too low."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "15"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Substituting gives y = 0^2 + 15 = 15, so the y-intercept is (0, 15)."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Solve for y: −3y = −4x − 24, so y = (4/3)x + 8. Then x = 0 gives y = 8, x = 3 gives y = 12, and x = 6 gives y = 16, which matches choice A. Choice B lists the same y-values in reverse order, which would need a negative slope.",
+    "fix": {
+      "prompt": "4x − 3y = −24\nFor the given equation, which table gives three values of x and their corresponding values of y?",
+      "choices": {
+        "A": "x: 0, 3, 6; y: 8, 12, 16",
+        "B": "x: 0, 3, 6; y: 16, 12, 8",
+        "C": "x: 8, 12, 16; y: 0, 3, 6",
+        "D": "x: 8, 12, 16; y: 6, 3, 0"
+      }
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "28"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total volume is water plus isopropanol: w + 10 = 38. Subtracting 10 from both sides gives w = 28 mL."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: −(1/8)x = (1/10)x. Then (1/10 + 1/8)x = 0, so x = 0. Both lines pass through the origin and have different slopes, so they meet only at (0, 0).",
+    "fix": {
+      "prompt": "y = −(1/8)x\ny = (1/10)x\nThe solution to the given system of equations is (x, y). What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each month the total is 5% greater than the month before, so it is multiplied by 1 + 0.05 = 1.05. Starting from 800, after m months c = 800(1.05)^m. Choice A uses 0.05, which would shrink the number to 5% of itself each month."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "580"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The population doubles when the factor 2^(t/580) equals 2, that is, when t/580 = 1. So t = 580 minutes. The initial amount 60,000 doesn't affect the doubling time.",
+    "fix": {
+      "prompt": "The function f(t) = 60,000(2)^(t/580) gives the number of bacteria in a population t minutes after an initial observation. How much time, in minutes, does it take for the number of bacteria in the population to double?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "293% of x means f(x) = 2.93x, which is a linear function (a constant rate of change) with a positive slope. So it is increasing linear. Choice C is tempting because of the percent, but the percent is applied to x once, not repeatedly, so there is no exponential growth.",
+    "fix": {
+      "prompt": "For x > 0, the function f is defined as follows:\nf(x) equals 293% of x\nWhich of the following could describe this function?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has infinitely many solutions only when both equations describe the same line. So the second equation must have the same slope as y = (3/8)x + 2, which is 3/8. Choice A, −8/3, is the slope of a perpendicular line.",
+    "fix": {
+      "prompt": "y = (3/8)x + 2\nOne of two equations in a system of linear equations is given. The system has infinitely many solutions. What is the slope of the graph of the second equation?",
+      "choices": {
+        "A": "−8/3",
+        "B": "−3/8",
+        "C": "3/8",
+        "D": "8/3"
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide every term by 4: x^2 − 8x − 10 = 0. Adding 10 to both sides gives x^2 − 8x = 10. There's no need to solve for x itself."
+  },
+  {
+    "key": "m1-17",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since (−3, 0) is on the graph, f(−3) = 0. The factors (x − 5) and (x − 9) aren't zero at x = −3, so x + k = 0 there, giving k = 3. Then f(0) = (0 − 5)(0 − 9)(0 + 3) = 135. Choice B, −3, is just the x-value of the given point, not f(0)."
+  },
+  {
+    "key": "m1-18",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line k passes through (0, 4) and (3, 0), so its slope is −4/3. A perpendicular line has slope 3/4. Using the point (−20, −23): −23 = (3/4)(−20) + b = −15 + b, so b = −8, giving y = (3/4)x − 8. Choice B uses the right slope but makes an error in the intercept.",
+    "fix": {
+      "choices": {
+        "A": "y = (3/4)x − 8",
+        "B": "y = (3/4)x − 38",
+        "C": "y = (4/3)x − 8",
+        "D": "y = (4/3)x − 38"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angles A and B are acute, so the right angle is at C, and AC and BC are the legs. From angle B, the opposite leg is AC and the adjacent leg is BC, so tan B = AC/BC = 1/9. Then BC = 9 · 29.5 = 265.5. Choice D, 3.3, comes from flipping the ratio (29.5/9).",
+    "fix": {
+      "prompt": "In right triangle ABC, angles A and B are acute, side AC has a length of 29.5, and tan B = 1/9. What is the length of side BC, rounded to the nearest tenth?"
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing both the length and the width by 20% multiplies each by 1.2, so the area is multiplied by 1.2 · 1.2 = 1.44. The new area is 3200 · 1.44 = 4608 square inches. Choice C, 3840, only accounts for one dimension growing by 20%."
+  },
+  {
+    "key": "m1-21",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The square (x − 4)^2 can never be negative, and its smallest value, 0, happens at x = 4. So the minimum of f is 0 + 6 = 6. Choice B, 4, is the x-value of the vertex, not the minimum value."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "H is on the unit circle with x = −1, so (−1)^2 + y^2 = 1 gives y = 0 and H = (−1, 0). F and H are opposite ends of a diameter, so angle FGH is π radians or any angle coterminal with it: π + 2πk, an odd multiple of π. Among the choices, only 35π is an odd multiple of π; 34π is an even multiple (coterminal with 0), and 37π/2 and 39π/2 point straight up or down.",
+    "fix": {
+      "choices": {
+        "A": "37π/2",
+        "B": "39π/2",
+        "C": "34π",
+        "D": "35π"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A decreasing exponential function falls quickly at first and then levels off toward the x-axis without reaching it, which is the curve in choice A. Choice B is a straight line (linear), and C and D rise, so they are increasing.",
+    "figure": 0,
+    "choiceImages": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: y = 6(0)^2 + 4(0) + 3 = 3. So the y-intercept is (0, 3). Choice C uses the leading coefficient instead of the constant term."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Write x(x − 7) = 18, so x^2 − 7x − 18 = 0, which factors as (x − 9)(x + 2) = 0. The positive solution is x = 9. Check: 9 · 2 = 18."
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The radius is half the diameter, so r = 3. The volume is V = πr^2h = π(9)(21) = 189π cubic inches. Choice D, 756π, comes from using the diameter 6 as the radius."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An exterior angle of a triangle equals the sum of the two remote interior angles, so ∠PRS = ∠PQR + ∠QPR. Then 166° = 132° + ∠QPR, so ∠QPR = 34°. Choice A, 14°, is ∠PRQ (180° − 166°), not the angle asked for.",
+    "fix": {
+      "prompt": "In triangle PQR, side QR is extended to point S. The measure of ∠PQR is 132°, and the measure of ∠PRS is 166°. What is the measure of ∠QPR?",
+      "choices": {
+        "A": "14°",
+        "B": "24°",
+        "C": "34°",
+        "D": "48°"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is f(0) = 54, the wax remaining after making 0 candles, so Eli started with about 54 ounces. The −9 is the slope: about 9 ounces used per candle, which is what choice A describes, not the y-intercept."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line crosses the x-axis at (80, 0) and the y-axis at (0, 45). Check choice B: 9(80) + 16(0) = 720 and 9(0) + 16(45) = 720, so both intercepts fit. Choice D would give intercepts at x = 45 and y = 80, which swaps them."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply both sides of ak = (b/12)(8 + m) by 12/b to get 12ak/b = 8 + m. Subtracting 8 gives m = 12ak/b − 8. Choice A multiplies the 8 by 12/b as well, which isn't equivalent.",
+    "fix": {
+      "prompt": "ak = (b/12)(8 + m)\nThe given equation relates the positive variables a, b, k, and m. Which equation correctly expresses m in terms of a, b, and k?",
+      "choices": {
+        "A": "m = 12(ak − 8)/b",
+        "B": "m = ak − 8 − b/12",
+        "C": "m = ak − 8b/12",
+        "D": "m = 12ak/b − 8"
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Write 10,000 as 10^4, so 10^(4x − 2) = 10^4 and 4x − 2 = 4. Then 4x = 6 and x = 3/2. Choice A, 5/4, comes from setting 4x − 2 = 3.",
+    "fix": {
+      "choices": {
+        "A": "5/4",
+        "B": "3/2",
+        "C": "3",
+        "D": "4"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the second equation as (2/t)(x/y) = 18. Since x/y = 3, this gives (2/t)(3) = 18, so 6/t = 18 and t = 1/3. Choice D, 3, comes from multiplying instead of dividing.",
+    "fix": {
+      "prompt": "If x/y = 3 and 2x/(ty) = 18, what is the value of t?",
+      "choices": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "3/2",
+        "D": "3"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "38"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The parts add to 53, so x + y = 53, and x = 2y + 8. Substituting: 2y + 8 + y = 53, so 3y = 45 and y = 15. Then x = 2(15) + 8 = 38."
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In choice B both sides have −13x, so adding 13x to both sides leaves −1/9 = 1/9, which is never true, so there is no solution. Choice A is an identity (infinitely many solutions), and C and D have different x-coefficients, so each has exactly one solution.",
+    "fix": {
+      "choices": {
+        "A": "−13x − 1/9 = −13x − 1/9",
+        "B": "−13x − 1/9 = −13x + 1/9",
+        "C": "−13x − 1/9 = 13x − 1/9",
+        "D": "−13x − 1/9 = 13x + 1/9"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "F is linear with slope 9/5, so each increase of 1 kelvin raises the Fahrenheit temperature by 9/5 = 1.8 degrees. An increase of 13.30 kelvins gives 1.8 · 13.30 = 23.94 degrees. The constants −273.15 and 32 don't affect a change in temperature; choice B adds the 32 in by mistake.",
+    "fix": {
+      "prompt": "F(x) = (9/5)(x − 273.15) + 32\nThe function F gives the temperature, in degrees Fahrenheit, that corresponds to a temperature of x kelvins. If a temperature increased by 13.30 kelvins, by how much did the temperature increase, in degrees Fahrenheit?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "105"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sum of all boiling points is 175 · 167 = 29,225, and the semivolatile compounds add up to 50 · 322 = 16,100. The volatile compounds therefore total 29,225 − 16,100 = 13,125, and their mean is 13,125/125 = 105 degrees Celsius."
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing x by 6 adds 6/3 = 2 to the exponent, so f(x) is multiplied by 1.20^2 = 1.44. That is a 44% increase, so p = 44. Choice A, 20, is the increase for every 3, not every 6.",
+    "fix": {
+      "prompt": "f(x) = 26(1.20)^(x/3)\nFor the given function f, the value of f(x) increases by p% for every increase of x by 6. What is the value of p?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For x > 2 hours, the carpenter charges 228 for the first 2 hours plus 95 for each of the x − 2 extra hours: y = 228 + 95(x − 2) = 95x + 38. Choice A charges 95 for all x hours on top of the 228, double-counting the first 2 hours."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "10"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The parabola y = x^2 + 8x + a opens upward with its vertex at x = −4, where y = 16 − 32 + a = a − 16. There are no solutions when the whole parabola stays above the line y = −6.5, so a − 16 > −6.5 and a > 9.5. The least positive integer that works is 10."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "4/225",
+      ".0177",
+      ".0178"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Rewrite the radicals as exponents: root[5](272n) = (272n)^(1/5) and (root[6](272n))^2 = (272n)^(2/6) = (272n)^(1/3). Multiplying adds the exponents: 1/5 + 1/3 = 8/15. Setting 30x = 8/15 gives x = 8/450 = 4/225.",
+    "note": "PDF prints the answer as 2/113, but its own explanation (and our solution) gives 4/225 ≈ 0.01778; 2/113 ≈ 0.01770 looks like a typo.",
+    "fix": {
+      "prompt": "root[5](272n) · (root[6](272n))^2\nFor what value of x is the given expression equivalent to (272n)^(30x), where n > 1?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Being at least 10 years old means the 10–19 and 20+ columns, which have 35 + 35 = 70 participants. Of those, group A has 17 + 8 = 25. The probability is 25/70 = 5/14. Choice C, 17/35, uses only the 10–19 column.",
+    "fix": {
+      "prompt": "One of these participants will be selected at random. What is the probability of selecting a participant from group A, given that the participant is at least 10 years of age?",
+      "table": {
+        "headers": [
+          "",
+          "0–9 years",
+          "10–19 years",
+          "20+ years",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Group A",
+            "10",
+            "17",
+            "8",
+            "35"
+          ],
+          [
+            "Group B",
+            "4",
+            "7",
+            "24",
+            "35"
+          ],
+          [
+            "Group C",
+            "21",
+            "11",
+            "3",
+            "35"
+          ],
+          [
+            "Total",
+            "35",
+            "35",
+            "35",
+            "105"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "5/21",
+        "B": "5/14",
+        "C": "17/35",
+        "D": "5/7"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since g(x) = f(x)/(x + 4), we have f(x) = g(x)(x + 4). This gives f(−24) = 3(−20) = −60, f(−9) = 0(−5) = 0, and f(16) = 5(20) = 100. The slope of f is (100 − 0)/(16 − (−9)) = 4, and 0 = 4(−9) + b gives b = 36, so the y-intercept is (0, 36). Choice D comes from reading the x-intercept, −9, as the y-intercept.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of g(x), where g(x) = f(x)/(x + 4) and f is a linear function. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "−24",
+            "3"
+          ],
+          [
+            "−9",
+            "0"
+          ],
+          [
+            "16",
+            "5"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "600"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "From the first fact, A = 4.38B, and from the second, A = 0.00073C. So C = 4.38B/0.00073 = 6000B, meaning C is 600,000% of B. Then p = 600,000 and p/1000 = 600.",
+    "fix": {
+      "prompt": "The mass of object A is 438% of the mass of object B, and the mass of object A is 0.073% of the mass of object C. If the mass of object C is p% of the mass of object B, what is the value of p/1000?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "-18"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Multiply both sides by 72cx (x ≠ 0, c ≠ 0): 72 = cx^2 + 72x, so cx^2 + 72x − 72 = 0. For exactly one solution the discriminant must be 0: 72^2 − 4(c)(−72) = 0, so 72 + 4c = 0 and c = −18. Check: −18x^2 + 72x − 72 = 0 becomes (x − 2)^2 = 0, so x = 2, which is allowed.",
+    "fix": {
+      "prompt": "1/(cx) = x/72 + 1/c\nIn the given equation, c is a constant. If the equation has exactly one solution, what is the value of c?"
+    }
+  }
+]

@@ -1,0 +1,1186 @@
+[
+ {
+  "key": "rw1-01",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The colon introduces evidence that scholars link modern Hawaiian writers to traditional Kanaka Maoli stories, which shows themes carrying over across time. \"Continuity\" names that unbroken connection. \"Innovation\" points the opposite way, toward newness, and \"subtlety\" or \"sophistication\" say nothing about links between old and new works."
+ },
+ {
+  "key": "rw1-02",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The speaker goes deep into the wood, pulled there by its \"silent call,\" so \"drawn\" means attracted or lured. \"Enticed\" matches that sense. \"Depicted\" is the meaning of drawn as in a picture, which makes no sense for a person answering a call.",
+  "fix": {
+   "passage": "The following text is from Georgia Douglas Johnson’s 1918 poem “Peace.”\nI rest me deep within the wood,\n<u>Drawn</u> by its silent call,\nFar from the throbbing crowd of men,\nOn nature’s breast I fall."
+  }
+ },
+ {
+  "key": "rw1-03",
+  "answer": "B",
+  "skill": "words-in-context",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The sun has already set, yet it is still \"manifest\" in the fiery streaks shooting up the sky, meaning it can still be seen through them. \"Perceptible\" (able to be noticed) fits. \"Dwindling\" describes the fading light but not what \"manifest\" means, and \"situated\" or \"realized\" do not fit the idea of something being visible.",
+  "fix": {
+   "passage": "The following text is from a 1955 translation of Samuel Beckett’s 1951 novel Molloy (translated by the author and Patrick Bowles). In the text, Molloy has arrived at the town ramparts, an elevated walkway atop the city walls.\nAnd having cleared the ramparts I had to confess the sky was clearing, prior to its winding in the other shroud, night. Yes, the great cloud was ravelling, discovering here and there a pale and dying sky, and the sun, already down, was manifest in the livid tongues of fire darting towards the zenith, falling and darting again, ever more pale and languid, and doomed no sooner lit to be extinguished."
+  }
+ },
+ {
+  "key": "rw1-04",
+  "answer": "A",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text says discoverers may name their minor planets but \"are not required to do so,\" and the choice is entirely theirs. Something allowed but optional is \"permissible.\" \"Mandatory\" contradicts \"not required,\" and \"infeasible\" would mean naming is not possible at all."
+ },
+ {
+  "key": "rw1-05",
+  "answer": "D",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The underlined sentence is what the lady's disdainful gaze seems to say: she calls everyone else \"upstarts and provincials\" and boasts about arriving last. It shows her scorn for the rest of the audience. Choice A reverses the idea, since she brags about coming late, not early.",
+  "fix": {
+   "passage": "The following text is from José Rizal's 1891 novel The Reign of Greed (translated by Charles Derbyshire in 1912).\nA lady accompanied by her husband entered at that moment and took her place in one of the two vacant boxes. She had the air of a queen and gazed disdainfully at the whole house, as if to say, <u>“I’ve come later than all of you, you crowd of upstarts and provincials, I’ve come later than you!”</u> There are persons who go to the theater like the contestants in a mule-race: the last one in, wins, and we know very sensible men who would ascend the scaffold rather than enter a theater before the first act."
+  }
+ },
+ {
+  "key": "rw1-06",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The underlined sentence admits that Master and Commander ends abruptly but notes that the next book continues right where it stops. That detail sets up the claim that the sudden ending is only a problem if the books are read separately, so the abrupt ending need not be seen as a flaw. The text never ranks reader enjoyment (A) or argues about critical renown (B).",
+  "fix": {
+   "passage": "Master and Commander, first published in 1969, is a novel in Patrick O’Brian’s Aubrey/Maturin series, which includes twenty books plus an unfinished fragment of a twenty-first. <u>Like the rest of the books in the series, Master and Commander has a rather abrupt ending, but the following book, Post Captain, picks up neatly where Master and Commander leaves off.</u> Thus, the sudden ending is only an issue if one considers the books as independent texts—the Aubrey/Maturin series is best thought of as a single incredibly long work, similar to other multivolume stories, such as John Galsworthy’s The Forsyte Saga."
+  }
+ },
+ {
+  "key": "rw1-07",
+  "answer": "A",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The text describes a career that moved from Mediterranean-style projects to modernist ones, and the underlined portion says travel abroad \"sparked\" that change. It gives a fact from Barragán's life that explains the transition. It does not support a claim about Mediterranean design (C) or discuss how contemporaries viewed his work (D).",
+  "fix": {
+   "passage": "Mexican architect Luis Barragán’s prolific career, which spanned the 1920s to the 1980s, evolved through distinct phases. As epitomized by the Aguilar House in Guadalajara, many of Barragán’s first projects integrated traditional Mexican building techniques into Mediterranean designs. <u>Extensive travels abroad later sparked an engagement with modernist and functionalist aesthetics</u>—styles whose emphasis on utility and whose repudiation of traditional architecture’s more ornamental elements are readily apparent in Barragán’s house in Calle Guadiana."
+  }
+ },
+ {
+  "key": "rw1-08",
+  "answer": "C",
+  "skill": "central-ideas",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text says Villasana celebrates famous figures like Frida Kahlo and also ordinary people, and that both approaches show people's power and interconnectedness. Choice C captures both parts. Choice A invents a career shift and a change of medium, since she works with yarn on photographs, not paint."
+ },
+ {
+  "key": "rw1-09",
+  "answer": "D",
+  "skill": "central-ideas",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The text asks why one cat purrs and the other roars, then explains that differences in the hyoid bone and its attachment may be responsible. Choice D states that main point. Choices A and B are true details from the text but each covers only part of the explanation, and C wrongly says researchers have no idea."
+ },
+ {
+  "key": "rw1-10",
+  "answer": "A",
+  "skill": "central-ideas",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The text reports a finding (advergames may not help players remember brands) and then says Lang's limited capacity model explains it: players spend their mental resources on the game itself. Choice A states this finding-plus-explanation structure. Choice D reverses the relationship, presenting van Berlo et al. as confirming a conclusion Lang reached about games."
+ },
+ {
+  "key": "rw1-11",
+  "answer": "B",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In the table, the MSX row (made by ASCII Corp.) shows about 4,000,000 units sold worldwide. The other numbers belong to different systems: 18,450,000 is the Atari 2600, 1,600,000 is the Amiga and 2,650,000 is the TurboGrafx-16.",
+  "fix": {
+   "passage": "A student is writing a research paper on the global rise of the home video game industry during the 1970s and 1980s. The student wants to know the approximate number of units sold worldwide of the MSX, manufactured by ASCII Corp. The student finds that the number sold was approximately _____.",
+   "table": {
+    "caption": "Home Video Game Systems of the 1970s and 1980s",
+    "headers": [
+     "System",
+     "Manufacturer",
+     "System type",
+     "Approximate number of units sold worldwide"
+    ],
+    "rows": [
+     [
+      "Amiga",
+      "Commodore",
+      "computer",
+      "1,600,000"
+     ],
+     [
+      "MSX",
+      "ASCII Corp.",
+      "computer",
+      "4,000,000"
+     ],
+     [
+      "TurboGrafx-16",
+      "NEC",
+      "console",
+      "2,650,000"
+     ],
+     [
+      "Atari 2600",
+      "Atari",
+      "console",
+      "18,450,000"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw1-12",
+  "answer": "B",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"Even though\" calls for a fact that runs against the global increase. The United States mined 1.85 million metric tons in 1995 but only 1.20 in 2020, a decrease. Choice C is true but fits the increase rather than contrasting with it, and A and D are false according to the table.",
+  "fix": {
+   "passage": "A student is researching copper mining. The student learns that the total amount of copper mined worldwide increased from 10.00 million metric tons in 1995 to 20.60 million metric tons in 2020. Considering a table with information about four countries, the student notes that the global increase in mined copper occurred even though _____",
+   "table": {
+    "caption": "Millions of Metric Tons of Copper Mined in 1995 and 2020",
+    "headers": [
+     "Country",
+     "1995",
+     "2020"
+    ],
+    "rows": [
+     [
+      "Kazakhstan",
+      "0.26",
+      "0.55"
+     ],
+     [
+      "Indonesia",
+      "0.44",
+      "0.51"
+     ],
+     [
+      "United States",
+      "1.85",
+      "1.20"
+     ],
+     [
+      "Chile",
+      "2.49",
+      "5.73"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw1-13",
+  "answer": "B",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The claim is that Newland comes late because he enjoys anticipation. Choice B says that thinking about a pleasure to come often satisfies him more than the pleasure itself, which explains delaying his arrival. Choice C mentions that he arrived late but gives no reason tied to anticipation."
+ },
+ {
+  "key": "rw1-14",
+  "answer": "A",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The hypothesis is that hardened shoreline hurts waterbirds more than developed land. In A, the site with more development but less hardening (Back River) scored higher than the site with less development but more hardening (Margothy), so hardening looks worse, which supports the claim. Choice B shows the reverse, and in D both factors are high at one site, so their effects can't be separated."
+ },
+ {
+  "key": "rw1-15",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Cooking utensils use ferritic steel, which has more iron, and iron gives the magnetic properties. Mining and chemical equipment uses 300-series austenitic steel, which has less iron, so utensils should be more magnetic. Choice C is wrong because the face-centered cubic structure belongs to austenitic steel, not the ferritic steel used for utensils.",
+  "fix": {
+   "passage": "All stainless steel contains varying amounts of iron, carbon, and corrosion-inhibiting chromium. However, ferritic stainless steel, often used for cooking utensils, contains a higher percentage of chromium (at least 10.5%) than does austenitic stainless steel and a higher concentration of iron, which is responsible for its magnetic properties. Unlike ferritic stainless steel, austenitic stainless steel has a face-centered cubic crystalline structure resulting from the addition of nickel to the alloy. Austenitic stainless steel has two subtypes: the 200 series, often used for washing machines, and the 300 series, which has more nickel than the 200 series and is often used for mining and chemical equipment or compensators. Thus, stainless steel used to manufacture _____"
+  }
+ },
+ {
+  "key": "rw1-16",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "\"A lawyer and cycling advocate\" is extra information describing Hernandez-Lopez, so it needs a comma on both sides. Only B sets it off with a pair of commas. A and C are missing the first comma, and D is missing the comma before the verb \"has identified.\""
+ },
+ {
+  "key": "rw1-17",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first part is a complete sentence ending at \"geoglyphs,\" and \"An enormous geoglyph ... overlooks Bear River High\" is a second complete sentence, so a period between them works. \"That have their own hillside geoglyphs\" is essential to identify the schools, so it takes no comma. Choice D joins two independent clauses with only a comma, a comma splice."
+ },
+ {
+  "key": "rw1-18",
+  "answer": "A",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"The observatory sites ... number nearly five dozen\" is a complete sentence, and \"Located across the globe, the radars track ...\" is another, so a period separates them correctly. B and C attach the second sentence with just a comma, creating a comma splice, and D runs the two sentences together."
+ },
+ {
+  "key": "rw1-19",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The subject is \"Analyst,\" a single word; the material between the commas (\"like other dactyls ...\") is an interrupting phrase and doesn't change it. A singular subject needs the singular present verb \"couples.\" \"Couple,\" \"are coupled\" and \"have coupled\" are all plural forms."
+ },
+ {
+  "key": "rw1-20",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "This is a list of three painters, and each item already contains commas, so the items must be separated with semicolons. A semicolon goes after \"Venetian School\" to end the first item, and a comma follows \"Adriaen Brouwer\" before his description, matching the pattern used for Jose Guerrero. A uses commas between items, and C puts the semicolon in the middle of the second item."
+ },
+ {
+  "key": "rw1-21",
+  "answer": "D",
+  "skill": "form-structure-sense",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The main verb of the sentence is \"bestows,\" so \"Helical swimming\" is the subject and \"widely understood to confer ... ciliates\" is a descriptive phrase inserted between subject and verb. Choice D adds the comma that opens this phrase. Choices A and C insert a second verb (\"is,\" \"has been\") that leaves \"bestows\" with no subject, and B puts a comma between the subject and the verb \"is.\""
+ },
+ {
+  "key": "rw1-22",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Wee Pals was syndicated first, in 1965, and the next sentence lists strips syndicated in 1994 and 1996, after it. \"Later\" shows that time order. \"Previously\" reverses the order, and \"For example\" doesn't fit because the later strips are not examples of the first one."
+ },
+ {
+  "key": "rw1-23",
+  "answer": "B",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Betelgeuse grew 40% brighter, and as a result its brightness ranking climbed from 10th to 7th. \"In turn\" signals that one change led to the next. \"Specifically\" and \"for example\" would present the ranking as a detail of the brightening, and \"in sum\" would introduce a summary."
+ },
+ {
+  "key": "rw1-24",
+  "answer": "C",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The first sentence states a general rule (sleek vehicles are more aerodynamic), and the F-4 jet versus the boxy semitruck illustrates it. \"For example\" introduces that illustration. \"However\" would signal a contradiction, and nothing contradicts the rule."
+ },
+ {
+  "key": "rw1-25",
+  "answer": "D",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is an advantage of Oak Tree House, and the notes say its rock overhang protected it from heavy rain and snow. Choice D states that specific benefit. Choice A mentions an advantage without naming it, and C describes Yucca House's flat terrain, not Oak Tree House.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Oak Tree House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built under a rock overhang and inhabited from approximately 1180—1210 CE.\n• The overhanging rock ledges offered protection from heavy rain and snow.\n• Yucca House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built on relatively flat terrain and inhabited from approximately 1080—1275 CE.\n• This level surface allowed for the construction of large terraced buildings."
+  }
+ },
+ {
+  "key": "rw1-26",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A similarity between the two artworks is that both won a Carnegie Prize gold medal, which is what A says. Choice D points out a difference (painting versus sculpture), B mentions only one artwork, and C talks about the museum rather than the artworks.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The Carnegie Prize is an international art competition administered by the Carnegie Museum of Art in Pittsburgh, Pennsylvania.\n• Painter John Lavery of Ireland won a Carnegie Prize gold medal in 1896.\n• Lavery's winning artwork was a painting entitled Lady in Brown.\n• Sculptor Alexander Calder of the US won a Carnegie Prize gold medal in 1958.\n• Calder's winning artwork was a sculpture entitled Mobile: Pittsburgh."
+  }
+ },
+ {
+  "key": "rw1-27",
+  "answer": "D",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The role of refrigerants is to absorb heat and release cold air, and D says freezers use refrigerants like fluoromethane to do exactly that. Choice B gives the chemical makeup of one refrigerant rather than its role, and A leaves refrigerants out entirely.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Freezers and other cooling technologies use chemical compounds called refrigerants to absorb heat and release cold air.\n• When a refrigerant absorbs heat, it undergoes vaporization, changing from a liquid to a gas.\n• When it cools, it undergoes condensation, changing from a gas to a liquid.\n• The refrigerant fluoromethane is a hydrofluorocarbon (HFC).\n• HFCs are composed of the elements hydrogen, fluorine, and carbon."
+  }
+ },
+ {
+  "key": "rw2-01",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "\"Despite\" sets up a contrast with the fact that she could speak with authority about Michele Wood's books. The contrast works if she was unsure of her expertise in children's literature overall, so \"hesitancy about\" fits. \"Insight into\" or \"affinity for\" would agree with her confidence rather than contrast with it."
+ },
+ {
+  "key": "rw2-02",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The sentence grants that the reasons for calling Unamuno a typical Generation of '98 writer \"may seem\" a certain way, then says \"but\" the label risks missing subtleties. The concession only works if the reasons seem very strong, so \"irrefutable\" fits. \"Incongruous\" would already be a criticism, leaving nothing for \"but\" to contrast with."
+ },
+ {
+  "key": "rw2-03",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The uncle says the hardest \"part\" of telling a story is finding the beginning, so \"part\" means one component or step of the process. \"Element\" matches. \"Zone\" suggests a physical area, and \"melody\" confuses the musician detail with the meaning of the word.",
+  "fix": {
+   "passage": "The following text is from Jacqueline Woodson’s 2018 novel Harbor Me.\nMy uncle is a musician and a storyteller. He says the hardest part of telling a story is finding the beginning."
+  }
+ },
+ {
+  "key": "rw2-04",
+  "answer": "B",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The colon gives evidence that tourists can \"easily recognize\" Spanish-mission style in a building far from Fremont, so the influence is clearly felt across the state. \"Palpable\" means easily noticed. \"Understated\" contradicts \"easily recognize,\" and nothing in the text is \"disputed.\""
+ },
+ {
+  "key": "rw2-05",
+  "answer": "B",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The previous sentence says small samples can lead to biased analysis, and the underlined sentence adds that such analysis can produce exaggerated effects. It extends the possible consequences of Faleiro's small sample. It supports Clements's caution rather than countering it (D), and it doesn't describe a shift in understanding (A).",
+  "fix": {
+   "passage": "In 2015 Filipa Faleiro and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Hippocampus guttulatus, a species of fish. However, Faleiro and colleagues’ study relied on a mean sample size of only 6 fish. In a 2022 review of various scientists’ conclusions about the impacts of ocean acidification on fish behavior, Jeff C. Clements and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. <u>Such analysis, in turn, can contribute to reports of exaggerated effects.</u>"
+  }
+ },
+ {
+  "key": "rw2-06",
+  "answer": "A",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Comparing Caravan to a culprit giving himself up, saying he always feels uneasy, and saying he seems to expect a rebuke all show a nervous dread each morning, though the text never gives a reason for it. Choice A fits. D is tempting, but the feeling is a daily habit over thirty years, not worry about one new failure.",
+  "note": "Prompt says three underlined portions; the rendered page shows only \"like a culprit\" and \"expecting a rebuke\" underlined. Check whether \"always feeling uneasy\" should also be underlined.",
+  "fix": {
+   "passage": "The following text is from a 1911 translation of Guy de Maupassant's 1881 short story “A Family Affair.” The narrator is describing Monsieur Alfred Caravan, a bureaucrat in the French government.\nFor the last thirty years he had invariably gone the same way to his office every morning, and had met the same men going to business at the same time, and nearly on the same spot. Every morning, after buying his penny paper at the corner of the Faubourg Saint Honore, he bought two rolls, and then went to his office, <u>like a culprit</u> who is giving himself up to justice, and got to his desk as quickly as possible, always feeling uneasy, as though he were <u>expecting a rebuke</u> for some neglect of duty of which he might have been guilty.",
+   "prompt": "Taken together, the three underlined portions most clearly serve which function in the text as a whole?"
+  }
+ },
+ {
+  "key": "rw2-07",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The text introduces the silversword alliance, notes its wide range of forms, and explains that one ancestral tarweed diversified as it adapted to different Hawaiian habitats. Choice C describes this purpose. A and B wrongly claim that all plants on the islands belong to the alliance, and D focuses on one species' habitat, which the text never describes."
+ },
+ {
+  "key": "rw2-08",
+  "answer": "B",
+  "skill": "cross-text-connections",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Text 1's problem is that countries define urban settlements differently, which makes comparisons hard. Text 2 describes a new \"degree of urbanization\" measure with global criteria, which addresses that problem, so its author would say a solution exists. Text 2 adds no new difficulties (D) and doesn't call for more investigation (C).",
+  "fix": {
+   "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the problem presented in Text 1?"
+  }
+ },
+ {
+  "key": "rw2-09",
+  "answer": "A",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Drelichman and Voth's distinctive contribution is reconstructing the earliest fiscal records, which show Philip's defaults came from short-term liquidity crises, not long-term unsustainable debt. So their new evidence rules out one cause and confirms another, as A says. Choice B reverses cause and effect, and nothing says they corrected Hoffman and Norberg (C) or tested their hypothesis (D)."
+ },
+ {
+  "key": "rw2-10",
+  "answer": "C",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The second team claims the sounds are mainly for communicating with other caterpillars of the same species. If the sound-making caterpillars usually live alone and made the sounds while tested alone, there was no one of their species to communicate with, which undercuts the claim. Choice A shows the sounds respond to attacks but doesn't rule out also signaling to other caterpillars, and B is about species that didn't make sounds when attacked.",
+  "fix": {
+   "passage": "Veronica L. Bura, Akito Y. Kawahara, and Jayne E. Yack investigated the evolution and function of sound production in silk moth and hawk moth caterpillars. They found that during harmless simulated attacks on caterpillars, 33% of the tested species produced sound, which ranged from clicks in Antheraea pernyi to whistles in Phyllosphingia dissimilis. A second research team has claimed that caterpillars use these sounds primarily to communicate with other members of their species."
+  }
+ },
+ {
+  "key": "rw2-11",
+  "answer": "A",
+  "skill": "central-ideas",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The question is whether perceived similarity between categories predicts buying a brand extension. The team already has the change in purchase probability for each pair, so it needs a measure of perceived similarity between the two categories in each pair and then a check of how the two relate, which is design A. Choice C rates a product against its own category instead of comparing the two categories, and B and D measure brand recognition, which is not the question.",
+  "fix": {
+   "passage": "Google's introduction of the Chrome web browser in 2008 is a quintessential instance of brand extension—the company leveraged its brand recognition as an internet search provider to enter a product category where it had not previously competed. An outstanding question is whether perceived category similarity predicts consumers’ likelihood of purchasing brand extensions. To answer this question, Alicia Grasby et al. identified 30 extended-brand pairs (e.g., the same brand of shoes and gloves) in 52 weeks of purchases by approximately 60,000 households and, for each pair, calculated the change in probability of a brand in one category being purchased if the same brand was purchased in the other category."
+  }
+ },
+ {
+  "key": "rw2-12",
+  "answer": "A",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "P6's correlations between predicted and reported ratings were about 0.43 for abstract paintings and about 0.27 for cubist ones. If P6's own ratings were equal for both styles but the model's agreement with them differed, then the model's predictions for the two styles must have differed. Choices B and D claim a specific direction of difference that the graph doesn't give, and C contradicts the unequal correlations."
+ },
+ {
+  "key": "rw2-13",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The researchers warn against generalizing because every respondent came from Serbia, a country with a developing economy. The logical next step is testing people from countries with different levels of economic development, as A says. Choice B states a conclusion the study has no data for, and D is about sample size within Serbia, which isn't the concern raised.",
+  "fix": {
+   "passage": "To understand consumer loyalty to specific online retailers, Marina Žižakov and colleagues conducted a survey using 58 statements as proxy indicators of customer experience with receiving online purchases. The statements were categorized by topic—e.g., statement 13, “I am eagerly awaiting the delivery of the ordered items,” was categorized as joyful anticipation—and respondents, all of whom were from Serbia (which is characterized as having a developing economy), rated the importance of each statement to their experience. Researchers found that participants placed low importance on package aesthetics and high importance on speedy delivery and package tracking, but the researchers cautioned against applying the findings to customers generally, suggesting that _____"
+  }
+ },
+ {
+  "key": "rw2-14",
+  "answer": "D",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Ingestion-based transmission shields three-host CLPs from outside conditions, so you might expect them to do better than directly transmitted parasites as the sea warms. Yet CLPs declined while directly transmitted parasites stayed stable, so whatever protection their strategy gave was outweighed by other temperature effects, such as harm to their many hosts. Choice B contradicts the result, and C contradicts the text's description of which parasites are shielded."
+ },
+ {
+  "key": "rw2-15",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Every class of animals, amphibians included, had some studies with differences well above the average for mammals. Since an average means some mammal studies were at or below it, some amphibian studies must have shown larger effects than some mammal studies. Choice C contradicts the statement that mammal studies showed larger differences on average."
+ },
+ {
+  "key": "rw2-16",
+  "answer": "B",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The merchants \"exported ... and imported\": the blank is the second verb in a pair joined by \"and,\" so it must match the past-tense \"exported.\" \"To import,\" \"importing\" and \"having imported\" break the parallel structure and leave the clause without a proper second verb."
+ },
+ {
+  "key": "rw2-17",
+  "answer": "D",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The pronoun refers to the Eiteljorg Museum, a singular thing, and shows possession, so \"its\" is correct. \"It's\" means \"it is,\" \"their\" is plural, and \"his\" would wrongly refer to Rivet, who doesn't own the museum's collection."
+ },
+ {
+  "key": "rw2-18",
+  "answer": "C",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "After \"160 million light-years from Earth\" the sentence names what the phenomenon was: \"the explosion of a massive star.\" A colon correctly introduces this explanation, and the phrase after it is not a full sentence. A and D need a complete sentence after the period or semicolon, and B creates a comma splice.",
+  "fix": {
+   "passage": "On March 6, 2002, Canadian astronomers detected a striking and unusual phenomenon occurring in the constellation Lepus, 160 million light-years from ______ explosion of a massive star, also known as a supernova, an extremely bright yet transient event that typically results from the collapse of a star's core."
+  }
+ },
+ {
+  "key": "rw2-19",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "\"However\" interrupts a single sentence (\"Relatively few ... are likely to reach Earth's surface ... since ...\"), so it is set off by commas on both sides. With A or D, the part after the semicolon would be just a \"since\" clause, a fragment, and C makes the \"since\" clause a fragment too."
+ },
+ {
+  "key": "rw2-20",
+  "answer": "C",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"Thymol and methane\" identifies which gaseous compounds are meant, so it is essential and takes no commas. The subject \"The gaseous compounds thymol and methane\" then goes straight to the verb \"have,\" with no comma between them. A and B treat the names as extra information, and D puts a comma between subject and verb."
+ },
+ {
+  "key": "rw2-21",
+  "answer": "C",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"The pedagogy ... is rooted in several central tenets\" is a complete sentence. The next part, \"Developed by Japanese violinist Shinichi Suzuki, ... the method emphasizes ...,\" is another complete sentence, so a period goes between them. A and B run the sentences together or create a comma splice, and D leaves \"that\" without a verb of its own."
+ },
+ {
+  "key": "rw2-22",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text says the two women were honored \"for different reasons\": Kuh as an art historian, Bryson as a painter. \"By contrast\" signals this difference. \"As a result\" implies Kuh's award caused Bryson's, and \"for instance\" or \"in other words\" signal an example or restatement."
+ },
+ {
+  "key": "rw2-23",
+  "answer": "B",
+  "skill": "transitions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The part after the blank restates the dashed phrase in plainer terms: a faster rate of \"cognate replacement\" means a faster rate at which a word is replaced by a noncognate form. \"That is\" signals this kind of clarification. \"For example\" would need a specific instance, and \"in addition\" or \"likewise\" would add a new, separate point."
+ },
+ {
+  "key": "rw2-24",
+  "answer": "B",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first sentence states a pattern: internationally popular demonstration sports went on, while regional ones appeared just once. The handball-versus-kaatsen example matches that pattern, so \"Accordingly\" (in keeping with this) fits. \"However\" and \"Granted\" would signal a contrast or concession, but the example agrees with the claim."
+ },
+ {
+  "key": "rw2-25",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "To show a difference, the sentence must contrast how the two pieces work: Live On, Heart of My Nation uses a Choctaw hymn, while Cacéga Ayuwipi uses a Haida gourd rattle. Choice A does this. Choices B, C and D describe what the pieces or Ballard have in common, or speak generally, without contrasting the two pieces.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• His compositions synthesize Western classical music with elements of various Native musical traditions.\n• Ballard's classical piece Live On, Heart of My Nation features a Choctaw hymn.\n• Ballard's classical piece Cacéga Ayuwipi incorporates a Haida gourd rattle, a traditional Native instrument."
+  }
+ },
+ {
+  "key": "rw2-26",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A definition should state what a high-sinuosity river is, and the notes say it has many meanders, which are U-shaped curves. Choice A combines those facts. B describes how meanders behave without the key idea of \"many,\" C describes how meanders form, and D is about one particular river.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• A U-shaped curve in a river channel is called a meander.\n• A meander forms when water erodes sediment from one side of the riverbank and redeposits that sediment on the opposite side.\n• Meanders will gradually change shape and migrate downstream over time.\n• A river with high sinuosity has many meanders, and a river with low sinuosity has few.\n• The Willapa River in the United States has high sinuosity."
+  }
+ },
+ {
+  "key": "rw2-27",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The notes give Oberon's orbit as 13.46 days and Miranda's as 1.41 days, so Miranda goes around Uranus many times faster, a direct contrast. Choice C is tempting but invents a difference in shape: the notes say moons' orbits are elliptical, not that Miranda's is circular. B and D describe what the moons share.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Uranus has twenty-seven moons, including Oberon and Miranda.\n• Oberon completes an orbit of Uranus in 13.46 Earth days on average.\n• Miranda completes an orbit of Uranus in 1.41 Earth days on average.\n• German mathematician and astronomer Johannes Kepler (1571-1630) described the orbits of planets as elliptical in shape rather than circular.\n• Kepler published three laws of planetary motion to describe the orbits of planets around the Sun.\n• Kepler's laws also apply to the elliptical orbits of natural satellites (e.g., moons)."
+  }
+ },
+ {
+  "key": "m1-01",
+  "answer": "C",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each time x goes up by 1, f(x) is multiplied by 69: 1/69 → 1 → 69 → 4,761. A constant multiplier greater than 1 means increasing exponential growth. A linear function would add the same amount each step, but the jumps here keep growing.",
+  "fix": {
+   "prompt": "The table shows selected values from the function f.\nWhich of the following is the best description of function f?",
+   "table": {
+    "headers": [
+     "x",
+     "f(x)"
+    ],
+    "rows": [
+     [
+      "−1",
+      "1/69"
+     ],
+     [
+      "0",
+      "1"
+     ],
+     [
+      "1",
+      "69"
+     ],
+     [
+      "2",
+      "4,761"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-02",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = −6: f(−6) = −3(−6) + 40 = 18 + 40 = 58. Choice C (34) comes from treating −3(−6) as −6 instead of +18."
+ },
+ {
+  "key": "m1-03",
+  "answer": [
+   "40"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "(40)(40) = 40^2 = 1,600, so x^2 = 1,600 and x = ±40. The positive solution is 40. Don't stop at 1,600; that is x^2, not x."
+ },
+ {
+  "key": "m1-04",
+  "answer": "C",
+  "skill": "one-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each data set has 11 values in order, so the median is the 6th value. In data set A the 6th value is 8, and in data set B the 6th value is also 8. The medians are equal, even though the data sets are spread differently."
+ },
+ {
+  "key": "m1-05",
+  "answer": [
+   "35"
+  ],
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = 2: f(2) = 2^3 + 27 = 8 + 27 = 35. A common slip is computing 2 · 3 = 6 instead of 2^3 = 8, which gives 33."
+ },
+ {
+  "key": "m1-06",
+  "answer": "B",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Moving a graph down 8 units subtracts 8 from every y-value, so y = 9^x becomes y = 9^x − 8. Choice A moves it up instead, and changing the exponent as in C or D shifts the graph left or right, not down.",
+  "fix": {
+   "choices": {
+    "C": "y = 9^(x + 8)",
+    "D": "y = 9^(x − 8)"
+   }
+  }
+ },
+ {
+  "key": "m1-07",
+  "answer": [
+   "8"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Set the two expressions for y equal: (x + 2)^2 = 4x + 12. Expanding gives x^2 + 4x + 4 = 4x + 12, and the 4x terms cancel, leaving x^2 = 8. You don't need x itself, since the question asks for x^2."
+ },
+ {
+  "key": "m1-08",
+  "answer": "C",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In f(x), the input x is minutes after the dive and the output is depth in meters below sea level. So f(2) = 190 means that 2 minutes after diving, the seal is about 190 meters below sea level. Choice A swaps the input and output, and nothing about f(2) says 190 is the maximum depth (B)."
+ },
+ {
+  "key": "m1-09",
+  "answer": "A",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each long-sleeved shirt raised $14, and 14 is multiplied by y, so 14y is the money from long-sleeved shirts and y is the number of long-sleeved shirts sold. Choice B describes x, the variable paired with 13. The prices are the numbers 13 and 14, not the variables."
+ },
+ {
+  "key": "m1-10",
+  "answer": "B",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The amount of salt is the same before and after mixing: 2% of x is 0.02x, 5% of y is 0.05y, and the mixture is 3% of x + y liters, or 0.03(x + y). So 0.02x + 0.05y = 0.03(x + y). Choices C and D convert the percents incorrectly (2% is 0.02, not 0.2), and A uses 3 instead of 0.03 on the right side."
+ },
+ {
+  "key": "m1-11",
+  "answer": [
+   "28"
+  ],
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Sine is opposite over hypotenuse. The angle x° is at the bottom right, so the side opposite it is the vertical leg of length 28, and the hypotenuse is c. Then sin x° = 28/c, so k = 28. Using 35 would give the cosine instead.",
+  "fix": {
+   "prompt": "In the right triangle shown, c is a constant. The value of sin x° = k/c, where k is a constant. What is the value of k?"
+  }
+ },
+ {
+  "key": "m1-12",
+  "answer": [
+   "6"
+  ],
+  "skill": "one-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Find data value 2 on the horizontal axis and read the height of its bar: it reaches 6, so the value 2 appears 6 times. Be careful not to read the bar for data value 3 (height 2) or 1 (height 4)."
+ },
+ {
+  "key": "m1-13",
+  "answer": "D",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "For similar triangles, the ratio of perimeters equals the ratio of corresponding sides. The perimeter ratio is 352/44 = 8, so XY = 8 · 16 = 128. Choice A divides instead of multiplying (16/8 = 2).",
+  "fix": {
+   "prompt": "The table gives the perimeters of similar triangles TUV and XYZ, where TU corresponds to XY. The length of TU is 16.\nWhat is the length of XY?",
+   "table": {
+    "headers": [
+     "",
+     "Perimeter"
+    ],
+    "rows": [
+     [
+      "Triangle TUV",
+      "44"
+     ],
+     [
+      "Triangle XYZ",
+      "352"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-14",
+  "answer": [
+   "13"
+  ],
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A circle in the form (x − h)^2 + (y − k)^2 = r^2 has radius r. Here r^2 = 169, so r = sqrt(169) = 13. The answer is not 169, which is the radius squared."
+ },
+ {
+  "key": "m1-15",
+  "answer": "D",
+  "skill": "systems-linear",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The pieces add to 96, so x + y = 96, and x = 4y + 6. Substituting gives 4y + 6 + y = 96, so 5y = 90 and y = 18. Then x = 4(18) + 6 = 78. Be careful not to stop at 18, which is y."
+ },
+ {
+  "key": "m1-16",
+  "answer": "B",
+  "skill": "area-volume",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Let the height be h, so the base is h + 12. The area is (1/2)h(h + 12) = 270, so h^2 + 12h − 540 = 0, which factors as (h + 30)(h − 18) = 0. Since a height is positive, h = 18 (and the base is 30). Choice C, 30, is the base, not the height."
+ },
+ {
+  "key": "m1-17",
+  "answer": "A",
+  "skill": "linear-equations-one-var",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first 40 hours earn 40 · 30 = $1,200, so the employee still needs $1,610 − $1,200 = $410 at $45 per hour. Since 410/45 ≈ 9.1, 9 extra hours ($405) is not enough and 10 extra hours are needed, for 40 + 10 = 50 hours. Choices C and D give only the overtime hours, and 49 hours falls $5 short."
+ },
+ {
+  "key": "m1-18",
+  "answer": "A",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "A solution to the system is a point where the line and the parabola cross. The horizontal line meets the parabola at x = 4 and x = 6, which are symmetric about the vertex at x = 5. Of the choices only 4 is one of those x-values; at x = 5 the parabola is above the line, and 8 is where the parabola crosses the x-axis."
+ },
+ {
+  "key": "m1-19",
+  "answer": "A",
+  "skill": "linear-equations-one-var",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Distribute: 17x − 272 = −16x − 272. Adding 16x and 272 to both sides gives 33x = 0, so x = 0. Because the x-coefficients (17 and −16) are different, there is exactly one solution; zero or infinitely many solutions happen only when the x-terms cancel out."
+ },
+ {
+  "key": "m1-20",
+  "answer": [
+   "263"
+  ],
+  "skill": "systems-linear",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Eliminate y: multiply the first equation by 2 and the second by 3 to get 44x − 42y = 86 and 15x + 42y = 177. Adding gives 59x = 263, so x = 263/59. Since x = p/59, p = 263.",
+  "fix": {
+   "prompt": "22x − 21y = 43\n5x + 14y = 59\nThe solution to the given system of equations is (x, y) = (p/59, w/826), where p and w are integers. What is the value of p?"
+  }
+ },
+ {
+  "key": "m1-21",
+  "answer": [
+   "65/2",
+   "32.5"
+  ],
+  "skill": "linear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The slope is (−171/10 − (−183/10))/(4 − 2) = (12/10)/2 = 3/5. Starting from (2, −183/10), y must rise 183/10 to reach 0, which takes (183/10)/(3/5) = 61/2 units of x. So the x-intercept is at x = 2 + 61/2 = 65/2. Check with x = 7: −183/10 + (3/5)(5) = −153/10, which matches the table.",
+  "fix": {
+   "prompt": "The table shows three values of x and their corresponding values of y. There is a linear relationship between x and y. What is the x-coordinate of the x-intercept of the graph that represents this linear relationship in the xy-plane?",
+   "table": {
+    "headers": [
+     "x",
+     "y"
+    ],
+    "rows": [
+     [
+      "2",
+      "−183/10"
+     ],
+     [
+      "4",
+      "−171/10"
+     ],
+     [
+      "7",
+      "−153/10"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-22",
+  "answer": "D",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Because LM is parallel to PQ and the angles at R are vertical angles, triangle LMR is similar to triangle QPR, with L matching Q and M matching P. So LR/QR = MR/PR, giving 10/QR = 9/19 and QR = 190/9. Then LQ = LR + RQ = 10 + 190/9 = 280/9. Choice B is only RQ, not the whole segment.",
+  "fix": {
+   "choices": {
+    "A": "280/19",
+    "B": "190/9",
+    "C": "271/9",
+    "D": "280/9"
+   }
+  }
+ },
+ {
+  "key": "m2-01",
+  "answer": "C",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "There's no need to solve for x: subtract 6 from both sides to get 2(x − 3) = 44 − 6 = 38. Choice B (22) is the value of x, not of 2(x − 3)."
+ },
+ {
+  "key": "m2-02",
+  "answer": "D",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "(x^2 + 11)^2 = x^4 + 22x^2 + 121, and (x − 8)(x + 8) = x^2 − 64. Adding gives x^4 + 23x^2 + 57. Choice B leaves out the second product, and C gets the constant wrong (121 − 64 = 57, not −53)."
+ },
+ {
+  "key": "m2-03",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A point (x, y) on the graph of y = f(x) means f(x) = y. Since the graph passes through (9, 7), f(9) = 7. Choice B (9) is the input, not the output."
+ },
+ {
+  "key": "m2-04",
+  "answer": "C",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where x = 0: y = 12(5)^(0 + 2) = 12 · 25 = 300, so the point is (0, 300). Choice A ignores the +2 in the exponent, and B uses 12 · 5 · 2 instead of 12 · 5^2."
+ },
+ {
+  "key": "m2-05",
+  "answer": "D",
+  "skill": "linear-inequalities",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Compute 5x − 6 for each x: 9 when x = 3, 19 when x = 5, and 34 when x = 8. Each y must be strictly greater than these. In D, 10 > 9, 20 > 19 and 35 > 34, so every pair works. B fails because its y-values equal 5x − 6 (9 is not greater than 9), and A and C each have a y-value that is too small.",
+  "fix": {
+   "prompt": "y > 5x − 6\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given inequality?",
+   "choices": {
+    "A": "x = 3, y = 3; x = 5, y = 13; x = 8, y = 28",
+    "B": "x = 3, y = 9; x = 5, y = 19; x = 8, y = 34",
+    "C": "x = 3, y = 10; x = 5, y = 18; x = 8, y = 33",
+    "D": "x = 3, y = 10; x = 5, y = 20; x = 8, y = 35"
+   }
+  }
+ },
+ {
+  "key": "m2-06",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The slope is (161 − 99)/(5 − 3) = 31, so p = 31c + b. Using (3, 99): 99 = 93 + b, so b = 6 and p = 31c + 6. Rearranging gives 31c − p = −6. Choice B has the sign of the constant wrong, and C and D switch the roles of c and p.",
+  "fix": {
+   "prompt": "The table shows the linear relationship between the number of cars, c, on a commuter train and the maximum number of passengers and crew, p, that the train can carry. Which equation represents the linear relationship between c and p?",
+   "table": {
+    "headers": [
+     "Number of cars",
+     "Maximum number of passengers and crew"
+    ],
+    "rows": [
+     [
+      "3",
+      "99"
+     ],
+     [
+      "5",
+      "161"
+     ],
+     [
+      "10",
+      "316"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m2-07",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "h(10) = 2(9 · 10 − 10) = 2(90 − 10) = 2 · 80 = 160. Choice C (90) stops after computing 9 · 10, and forgetting the factor of 2 would give 80."
+ },
+ {
+  "key": "m2-08",
+  "answer": [
+   "-1/3",
+   "-.3333",
+   "-0.333"
+  ],
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The point (a, 0) is the x-intercept, so set y = 0: 0 = x + 1/3, giving x = −1/3. So a = −1/3. Don't confuse it with b, the y-intercept, which is 1/3.",
+  "fix": {
+   "prompt": "Line p in the xy-plane is defined by y = x + 1/3 and passes through the points (a, 0) and (0, b), where a and b are constants. What is the value of a?"
+  }
+ },
+ {
+  "key": "m2-09",
+  "answer": "C",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Complete the square: add 1 to both sides to get x^2 + 2x + 1 = 73, so (x + 1)^2 = 73. Then x + 1 = ±sqrt(73) and x = −1 ± sqrt(73), so −1 + sqrt(73) is a solution. Choice A gets the sign of 1 wrong, and D forgets to add 1 to the right side.",
+  "fix": {
+   "choices": {
+    "A": "1 + sqrt(73)",
+    "B": "1 + sqrt(71)",
+    "C": "−1 + sqrt(73)",
+    "D": "−1 + sqrt(71)"
+   }
+  }
+ },
+ {
+  "key": "m2-10",
+  "answer": "C",
+  "skill": "one-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Every value in data set Y is exactly 11 less than the matching value in data set X. Subtracting the same number from every value shifts the data but doesn't change how spread out it is, so the standard deviations are equal. Smaller numbers in Y don't mean a smaller spread.",
+  "fix": {
+   "prompt": "The values in data sets X and Y are shown in the table.\nThe standard deviation of data set X is q, and the standard deviation of data set Y is s. Which of the following statements about the standard deviation of the data sets is true?",
+   "table": {
+    "headers": [
+     "Data set X",
+     "13",
+     "13",
+     "14",
+     "14",
+     "15",
+     "16",
+     "16",
+     "17",
+     "17"
+    ],
+    "rows": [
+     [
+      "Data set Y",
+      "2",
+      "2",
+      "3",
+      "3",
+      "4",
+      "5",
+      "5",
+      "6",
+      "6"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m2-11",
+  "answer": "D",
+  "skill": "ratios-rates",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Write the ratios as fractions: 5/x = y/8. Cross-multiplying gives xy = 40, so x = 40/y. Choice C is the reciprocal, and A and B come from setting up the proportion in the wrong order.",
+  "fix": {
+   "choices": {
+    "A": "x = 5y/8",
+    "B": "x = 8y/5",
+    "C": "x = y/40",
+    "D": "x = 40/y"
+   }
+  }
+ },
+ {
+  "key": "m2-12",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Losing 20% every 5 seconds means keeping 80%, so the factor is 0.80. After x seconds, x/5 five-second intervals have passed, so f(x) = 490(0.80)^(x/5). Choices C and D use 0.20, the part lost rather than kept, and an exponent of 5x would apply the decrease far too often.",
+  "fix": {
+   "prompt": "For an online trivia game, 490 points are awarded for a correct answer if a question is answered in less than 5 seconds from the time the question is asked. Each 5 seconds after the question is asked, the number of points awarded for a correct answer decreases by 20% of the number of points awarded for a correct answer in the previous 5 seconds. Which function gives the number of points awarded for a correct answer x seconds from the time the question is asked, where x is a multiple of 5?",
+   "choices": {
+    "A": "f(x) = 490(0.80)^(x/5)",
+    "B": "f(x) = 490(0.80)^(5x)",
+    "C": "f(x) = 490(0.20)^(x/5)",
+    "D": "f(x) = 490(0.20)^(5x)"
+   }
+  },
+  "note": "Printed prompt says \"a seconds\"; changed to \"x seconds\" to match the function variable."
+ },
+ {
+  "key": "m2-13",
+  "answer": "D",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The machine makes 4n nine-inch parts, n eight-inch parts and 15 three-inch parts, and the number of parts totals 100: 4n + n + 15 = 100, or 5n + 15 = 100. Choice A multiplies by the lengths, which would total inches, not the number of parts."
+ },
+ {
+  "key": "m2-14",
+  "answer": "D",
+  "skill": "circles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "A tangent line is perpendicular to the radius at the point of tangency, so the radius from (3, 7) to (a, −4) has slope −4/5. That gives (−4 − 7)/(a − 3) = −4/5, so 4(a − 3) = 55, a − 3 = 55/4 and a = 67/4. Using the tangent's slope 5/4 for the radius instead gives a wrong value such as −29/5.",
+  "fix": {
+   "prompt": "A circle in the xy-plane has its center at (3, 7). Line t is tangent to this circle at the point (a, −4), where a is a constant. The slope of line t is 5/4. What is the value of a?",
+   "choices": {
+    "A": "−43/4",
+    "B": "−29/5",
+    "C": "59/5",
+    "D": "67/4"
+   }
+  }
+ },
+ {
+  "key": "m2-15",
+  "answer": "B",
+  "skill": "right-triangles-trig",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The segment runs from (−5, 3) to (4, 9), so its length is sqrt(9^2 + 6^2) = sqrt(117) = 3sqrt(13). In a right triangle the two legs are the base and height, so (1/2)(3sqrt(13))(other leg) = 48sqrt(13). Solving gives other leg = 96sqrt(13)/(3sqrt(13)) = 32. Choice A forgets the factor of 1/2, and C is the length of the given leg.",
+  "fix": {
+   "choices": {
+    "C": "3sqrt(13)",
+    "D": "32sqrt(13)/5"
+   }
+  }
+ },
+ {
+  "key": "m2-16",
+  "answer": "B",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Angle A lies between sides AB and AC, and angle D lies between DE and DF. If AC = DF, the triangles have two sides and the included angle equal, so they are congruent by SAS. Choice A gives side-side-angle, which doesn't guarantee congruence, and C compares two angles in the same triangle."
+ },
+ {
+  "key": "m2-17",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The graphed line y = f(x) − 19 slopes downward, so f also has a negative slope, written −c with c > 0. Its y-intercept is about −8, so f(0) = −8 + 19 = 11, which is positive and can be written as d. That makes f(x) = d − cx. B and C have positive slopes, and D would give f a negative y-intercept."
+ },
+ {
+  "key": "m2-18",
+  "answer": [
+   "64/67",
+   ".9552",
+   "0.9552"
+  ],
+  "skill": "probability",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"Not a motor neuron\" limits us to sensory neurons and interneurons: 23 + 44 = 67 neurons. Of these, the ones with a diameter of 30 micrometers or less number 13 + 7 + 10 + 34 = 64. So the probability is 64/67. Don't divide by all 100 neurons.",
+  "fix": {
+   "prompt": "For 100 neurons, the table summarizes the distribution of classification and cell body diameter.\nOne of these neurons will be selected at random. What is the probability of selecting a neuron with a cell body diameter that is less than or equal to 30 micrometers, given that it is not classified as a motor neuron? (Express your answer as a decimal or fraction, not as a percent.)",
+   "table": {
+    "headers": [
+     "Classification",
+     "Less than 20",
+     "20 to 30",
+     "Greater than 30"
+    ],
+    "rows": [
+     [
+      "Sensory neuron",
+      "13",
+      "7",
+      "3"
+     ],
+     [
+      "Motor neuron",
+      "0",
+      "15",
+      "18"
+     ],
+     [
+      "Interneuron",
+      "10",
+      "34",
+      "0"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m2-19",
+  "answer": [
+   "127"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "A square root is never negative, so 32 − x ≥ 0. Squaring gives k − x = (32 − x)^2, or x^2 − 63x + (1,024 − k) = 0. The smallest k with a real solution makes this a double root: 63^2 − 4(1,024 − k) = 0, so 4k = 4,096 − 3,969 = 127, and the root x = 31.5 satisfies x ≤ 32. Any smaller k gives no real solution, so the minimum value of 4k is 127.",
+  "fix": {
+   "prompt": "sqrt(k − x) = 32 − x\nIn the given equation, k is a constant. The equation has exactly one real solution. What is the minimum possible value of 4k?"
+  }
+ },
+ {
+  "key": "m2-20",
+  "answer": "D",
+  "skill": "equivalent-expressions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "If x + 2b is a factor, then x = −2b makes the expression 0. For 3x^2 + cx + 14b this gives 12b^2 − 2bc + 14b = 2b(6b − c + 7) = 0, so c = 6b + 7. Only c = 25 gives a positive integer b (b = 3), and indeed 3x^2 + 25x + 42 = (x + 6)(3x + 7). For the other choices b would be 0, 1.5 or 11/6."
+ },
+ {
+  "key": "m2-21",
+  "answer": [
+   "49"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Rewrite as kx^2 − 40x + 8 = 0. Two distinct real solutions require a positive discriminant: (−40)^2 − 4(k)(8) = 1,600 − 32k > 0, so k < 50. The greatest integer below 50 is 49. k = 50 makes the discriminant 0, which gives only one solution.",
+  "fix": {
+   "prompt": "x(kx − 40) = −8\nIn the given equation, k is an integer constant. If the equation has two distinct real solutions, what is the greatest possible value of k?"
+  }
+ },
+ {
+  "key": "m2-22",
+  "answer": [
+   "650"
+  ],
+  "skill": "percentages",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Write A = 4.16B and A = 0.00064C. Then 0.00064C = 4.16B, so C = (4.16/0.00064)B = 6,500B. That means C is 650,000% of B, so p = 650,000 and p/1,000 = 650. A common slip is using 6,500, the multiplier, as p without converting it to a percent.",
+  "fix": {
+   "prompt": "The mass of object A is 416% of the mass of object B, and the mass of object A is 0.064% of the mass of object C. If the mass of object C is p% of the mass of object B, what is the value of p/1,000?"
+  }
+ }
+]

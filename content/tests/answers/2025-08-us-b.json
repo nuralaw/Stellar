@@ -1,0 +1,539 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the mihrab is one of the features that are foundational to mosque design, and even mixed-style mosques include such standard features. Something basic and typical of a category is \"quintessential.\" \"Imposing\" and \"embellished\" describe appearance, and \"unprecedented\" contradicts the idea of a standard feature."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The data are stored on obsolete technology, and the project's goal is to make the information available to a researcher, so the project is rescuing the data before they are lost: it is working to \"salvage\" them. \"Improve\" or \"amend\" would mean changing the data themselves, which isn't the point of a transfer project."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence sets up a contrast with \"though\": below-sea-level effects have received comparatively little notice, so studies of high altitude must be plentiful. \"Copious\" means abundant, which supplies that contrast. \"Preliminary\" or \"sporadic\" would suggest there are few studies, which removes the contrast."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined clause admits that, on a geological time scale, mass extinctions are abrupt, while the rest of the sentence says they actually unfold over thousands or millions of years. So it concedes that the pace looks different from another point of view. Choice C fails because the clause doesn't support a claim about the cause of the extinction; it only qualifies the word \"abrupt.\"",
+    "fix": {
+      "passage": "Fossil evidence indicates that the End-Triassic mass extinction—the relatively sudden die-off of about 80 percent of species (including many species of bivalves)—occurred approximately 201 million years ago. Researchers have identified the effects of a sudden release of carbon dioxide as a possible initial cause of this mass extinction. But mass extinctions, <u>while abrupt in geological terms,</u> unfold over thousands or millions of years: it’s likely that multiple factors drove extensive species loss."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence defines land art by its scale and locations, and the second names another key trait (the diverse ways it is made) and illustrates it with Spiral Jetty and Wheatfield—A Confrontation. That matches a description of a genre followed by examples of a characteristic. The text gives no artist biographies (A) and raises no criticism or misconception (B, C)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Ollerton et al. point out that Rosas-Guerrero et al. may have left out studies published before the term \"pollinator effectiveness\" became common. That is a possible flaw in how the studies were gathered, which could mean the conclusion isn't well supported. Choice C is tempting, but the text never says the problem is the number of species studied.",
+    "fix": {
+      "passage": "Pollination syndromes are suites of floral traits that have independently evolved as a result of selection pressure exerted by pollinators; ornithophilous (bird-pollinated) flowers, for example, frequently exhibit red, orange, or yellow coloring. In a review of previous studies covering 417 plant species, Victor Rosas-Guerrero et al. concluded that the syndromes reliably predict angiosperms’ most effective pollinators. However, in a response paper, Jeff Ollerton et al. note that Rosas-Guerrero et al. may have inadvertently excluded studies published before the term “pollinator effectiveness” came into common use."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says that if a pigment that didn't exist until the 20th century shows up throughout a painting attributed to an 18th-century artist, the work \"can only be a forgery.\" So nonvisible light analysis can definitively undermine an attribution. Choice C goes the other way: the text shows how analysis can disprove an attribution, not confirm one.",
+    "fix": {
+      "passage": "Because they penetrate the visible surface of a painting, ultraviolet and other nonvisible spectra of light enable the detection of otherwise imperceptible features of the work. Beneath the surface of Claude Monet’s Wisteria (1917–20), art historians found that Monet had initially included water lilies but ultimately painted over them. Furthermore, nonvisible spectra can be used for chemical analysis to identify specific pigments and thus, in some cases, reveal forgeries: if, for example, titanium oxide—which wasn’t developed until the 20th century—is evident throughout the layers of a painting attributed to an 18th-century artist, that work can only be a forgery."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers found that visit frequency didn't depend on nectar traits but on how well a bird's bill fit a flower's corolla. That means a hummingbird could favor a well-fitting flower even if it offers less nectar than a poorly fitting one, as B says. Choice A overstates this with \"consistently prefer\" low-reward flowers, and C contradicts the finding that nectar traits had no influence."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Yung contrasts the New York of 1847, a city of 250,000–300,000 people, with the New York of 1909, a metropolis rivaling London and covered with skyscrapers. The main idea is how much the city has grown and developed. Choice D misreads \"rivaling London\" as \"more populated than London.\"",
+    "fix": {
+      "passage": "The following text is from Yung Wing’s 1909 memoir My Life in China and America.\n\nWe landed in New York on the 12th of April, 1847, after a passage of ninety-eight days of unprecedented fair weather. The New York of 1847 was altogether a different city from the New York of 1909. It was a city of only 250,000 or 300,000 inhabitants; now it is a metropolis rivaling London in population, wealth and commerce. The whole of Manhattan Island is turned into a city of skyscrapers, churches and palatial residences."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Nana plans ahead like a human. Remembering John's sweater on soccer days and carrying an umbrella \"in case of rain\" shows her preparing for future events. Choice D describes Nana's behavior but shows no planning, and A and B are about the Darlings, not Nana."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the graph, the walnut bar is lowest in 2018/19, at about $0.70 per pound, below its height in every other season. Choice D (2016/17) is the closest, at roughly $0.95, but it is still higher than 2018/19."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example needs a bird that can fly yet weighs far more than a kilogram. The mute swan can fly and averages 11.9 kg, so it fits. The Andean condor also flies, but B misstates its mass (11.3 kg, not below 10 kg), and the ostrich in C and D can't fly.",
+    "fix": {
+      "passage": "Most bird species that are capable of flight weigh less than a kilogram (kg), which is not surprising considering the burden that extra body weight puts on a flying animal. But not all flying birds are so light, as we can see most clearly in the example of the _____",
+      "table": {
+        "caption": "Bird Species by Average Mass",
+        "headers": [
+          "Common name",
+          "Average mass (kg)",
+          "Capable of flight?"
+        ],
+        "rows": [
+          [
+            "Dwarf cassowary",
+            "19.7",
+            "No"
+          ],
+          [
+            "Somali ostrich",
+            "90.0",
+            "No"
+          ],
+          [
+            "Mute swan",
+            "11.9",
+            "Yes"
+          ],
+          [
+            "Andean condor",
+            "11.3",
+            "Yes"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Camacho and McLachlan argue that \"invasive\" and \"native\" are temporary labels because climate change can shift where species can live. Applied to Washington, that means the state's label for the bullfrog might eventually have to be reconsidered. Choice C goes too far by saying the bullfrog should be called native now, and D makes an unsupported prediction about other places."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Only ibises prefer deep water, so a conclusion about both species must come from the trait they share: a preference for standing water more than 60 days a year. It follows that neither species is drawn to areas with standing water for far fewer than 60 days. Choice A fails because ibises actually do prefer deep water."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Having 9,721 feet of prominence\" must modify the noun right after the comma, and only a mountain can have prominence. Choice A puts Pico do Ramelau right after the phrase. The other choices make the list, the geographers, or the ranking the thing with 9,721 feet of prominence."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"first published in 1689\" is an interruption that opens with a dash after the essay's title, so it must close with a matching dash. A comma or colon can't close a dash-opened interruption, and no punctuation (C) runs the date straight into \"is.\""
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular word \"lasso,\" so the verb must be singular, and the parallel clause uses the present tense \"derives.\" \"Derives\" matches both. \"Were deriving,\" \"have derived,\" and \"derive\" are all plural forms."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb (\"has been identified\"), so the blank must start a modifier describing \"a term.\" The participle \"indicating\" does this: a term indicating that the specimen serves as the basis. The finite verbs in A, B, and C would create a second main verb with no conjunction."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Hundreds\" and \"exhibits\" are simple plurals that don't own anything, so neither needs an apostrophe. Choices A, B, and D each add an apostrophe that wrongly signals possession."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The craters and rocks don't possess anything here; they are just plural nouns, so no apostrophes are needed. The period also correctly ends the sentence before \"To aid in communication.\" Every other choice uses at least one possessive apostrophe."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Also known as the greater adjutant\" is a nonessential phrase that begins with a comma after \"dubius,\" so it must end with a matching comma before the verb \"can be found.\" A semicolon or dash would mismatch the opening comma, and no punctuation leaves the phrase unclosed."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says domestication began 6,000 years ago, and the last calls it a \"millennia-long process,\" so the middle sentence describes what happened gradually over time. \"Over the course of many generations\" fits that. Choice D is circular: horses weren't domesticated as a result of being domesticated."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says the station serves the local community, and the next lists exactly how it does so: local news, music, and Ojibwe-language programs. \"Specifically\" introduces those details. \"As a result\" fails because the programming is the way the station serves people, not a consequence of it."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says there are many competing species concepts, describes the cohesion concept, and then presents the genetic concept, which defines species differently. \"On the other hand\" marks this contrasting alternative. \"For instance\" would wrongly make the genetic concept an example of the cohesion concept."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says sites are chosen because they have cultural or natural value worth preserving; the next shows UNESCO adding the Phoenix Islands because of its important coral ecosystem. That addition follows the stated rule, so \"Accordingly\" fits. \"In other words\" would need a restatement, but the second sentence gives a specific case instead."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The B. pumilio specimen is a holotype (the original described specimen), while the G. inflata specimen is a neotype (a reference that is not the original). \"By contrast\" signals this difference. \"Moreover\" and \"For instance\" would treat the second example as an addition or illustration instead of a contrast."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization about the kind of study should describe the study type broadly rather than report its specific findings. Choice A does this: scientists have analyzed population trends to judge how legal protections affect conservation. Choice D is accurate but names the specific researchers and result, so it isn't a generalization.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Endangered Species Act (ESA) was enacted in 1973 to recover species and prevent extinction.\n• A species is listed under the ESA when it’s determined that the species needs protection and delisted when the population has recovered.\n• Only 54 of the over 1,000 listed species have been delisted from the ESA, raising concerns about the effectiveness of the ESA.\n• Erich Eberhard, David Wilcove, and Andrew Dobson conducted an analysis of population trends of species listed under the ESA.\n• They found that most species had to wait multiple years before being listed and by then their populations were already so low that recovery was much more difficult."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes combining sleek, contemporary elements with traditional organic materials \"in a single design,\" so the blank names the act of joining them into one whole: \"synthesis.\" \"Diffusion\" means spreading out, the opposite of bringing elements together, and \"analysis\" means breaking something down."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ephemeral objects reveal \"shifts in norms, values, and concerns,\" so they work as indicators that measure cultural change: \"indices of\" cultural change. \"Alternatives to\" makes no sense, since the objects aren't a replacement for change, and \"conjectures about\" would make objects into guesses."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence contrasts how blue holes and cenotes are usually seen (as different, because of size, water, and location) with the fact that both are water-filled sinkholes formed the same way. So they aren't usually viewed as \"analogous,\" or comparable. \"Distinct\" reverses the logic: their differences are exactly why people do see them as distinct."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says overemphasis on inventions creates a pro-innovation bias and calls for a \"necessary corrective to the dominant view,\" so the bias is widespread throughout the field: it \"pervades\" studies of technology history. \"Foments\" means stirs up or provokes, which doesn't fit a bias affecting studies, and \"supersedes\" means replaces."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined clause reports MOMA's reason for showing some games only as videos: they would be impractical to display in playable form. The author then objects with \"but,\" arguing that interactivity is essential to games and missing from a video. So the clause gives a rationale the author critiques. Choice B describes the author's own point after \"but,\" not the underlined part.",
+    "fix": {
+      "passage": "The Museum of Modern Art (MOMA) in New York City has an exhibition of video games that includes Vib-Ribbon from 1999, which museum visitors can play on site, and SimCity 2000 from 1994, which visitors can see only in a video presentation. <u>MOMA claims the video presentations are only for games that would be impractical to display in a playable form</u>, but video games are an inherently interactive medium, a feature that is grossly absent in a video-only presentation."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence describes the 2020 reissue project, the second reports Rutigliano and other scholars' objection to its implication, and the word \"appropriately\" shows the author agreeing with their reasoning. That matches A. Choice D fails because the scholars criticize the project; they didn't create it or make its assertion."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined question shows how unclear \"culture\" is, since no one can say whether it includes knowledge, laws, or more. The author then argues that researchers need a standard definition for sociology to progress, so the question illustrates a problem holding the field back. Choice A fails because the sentence only asks about these components; it doesn't claim they are essential.",
+    "fix": {
+      "passage": "Several sociologists have observed that the word “culture,” though commonly used in academic literature, is an ultimately hazy concept—for example, Victoria Bonnell and Lynn Hunt have noted that “many critics have pointed to the vagueness of the concept of culture.” <u>Does the concept of culture encompass knowledge, or laws, or both these things and others?</u> For casual usage, such haziness is permissible—we know culture when we see it—but for researchers, a standardization of the term is called for if sociology is to truly progress."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Text 1 says the island was periodically submerged until 37 million years ago, so a lineage that already existed before then must have survived those submergences, which is how Gondwanan clades are said to have persisted. The harvest spider clade's founder dates to 48.9 million years ago, so it fits that Gondwanan-origin pattern; the cockroach clade's crown age of 2.7 million years is too recent to tell where its lineage came from. Choice D gets the cockroach timing wrong, since 2.7 million years ago is long after the submergences ended.",
+    "fix": {
+      "passage": "Text 1\nThe land that became Grande Terre island split from remnants of the former supercontinent Gondwana approximately 80 million years ago, carrying Gondwanan biota with it, and experienced periodic submersion until 37 million years ago. Some researchers posit that the island’s current biota includes members of Gondwanan clades (i.e., clades predating the split) that persisted by seeking temporary refuge on nearby islands during submergence events.\n\nText 2\nIn a recent study, Prashant Sharma and Gonzalo Giribet found that the crown age—the age of the most recent common ancestor of all species in the clade (i.e., the clade’s founder)—is 48.9 million years for Grande Terre’s clade of harvest spiders. Most of the island’s extant biota belong to clades with younger crown ages, however: Jérôme Murienne et al. found that the crown age of Grande Terre’s clade of cockroaches is 2.7 million years, for example.",
+      "prompt": "Taken together, Text 1 and Text 2 best support which statement about the clades of harvest spiders and cockroaches on Grande Terre?"
+    },
+    "note": "Official answer A; reasoning relies on spider crown age predating the end of submergence (37 Mya), though 48.9 Mya is after the 80 Mya split — A is clearly best by elimination."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Earlier studies thought PSP came from a shared ancestor, but Aureliano et al. found that the common ancestors' bone openings didn't match PSP and concluded the trait evolved independently in each clade. Choice D sums this up. Choice A gets a detail wrong (the openings were the wrong size, not \"too varied\"), and C contradicts the finding of independent evolution in each clade."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Political scientists expect ads to shrink knowledge gaps, but in the graph the gap between high- and low-knowledge participants is about 8 points in the control conditions and about 24 points after the ads, because only high-knowledge participants improved. The ads widened the gap, which fits the cognitive scientists' point that existing knowledge helps people learn new information. Choice C is wrong because that phenomenon did occur, and A wrongly says the result supports the political scientists.",
+    "fix": {
+      "passage": "Political scientists have asserted that by providing succinct and clear information about candidates and issues, campaign advertisements should reduce the differences in political knowledge observed between groups of voters. Cognitive scientists have noted, however, that existing domain knowledge facilitates the acquisition of new information in that domain. Valentino et al. shed light on this issue by presenting control ads or ads for George W. Bush or Al Gore (candidates in the 2000 US presidential election) to participants with low or high existing political knowledge, then quizzing participants on their understanding of both candidates’ positions.",
+      "prompt": "Taken together, information in the text and graph best support which conclusion about the campaign ads used in the study by Valentino et al.?",
+      "choices": {
+        "A": "They appear to have benefited high-knowledge participants more than they benefited low-knowledge participants, which lends more support to the view advanced by political scientists than to the view advanced by cognitive scientists."
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Navajo-Churro's inner fiber ranges from 10 to 35 microns, so at its finest (10 microns) it is thinner, and therefore softer, than the mouflon's 15-micron and the Merino's 17–21-micron inner fiber. That surprising fact completes the \"Yet\" sentence. Choice B is wrong because the Navajo-Churro's minimum inner diameter (10) is smaller than the mouflon's, not larger.",
+    "fix": {
+      "passage": "Domestic sheep’s wild ancestor, the mouflon, has a coarse outer coat and an inner coat of wool fiber that is finer in diameter and therefore much softer. In some domestic breeds, such as the Spanish Merino, the outer fiber is only marginally coarser than the inner, and the wool is soft overall. Thus, Merino wool is ideal for delicate garments worn against the skin. Meanwhile, the Navajo-Churro has been selected to retain the marked distinction between outer and inner fiber that the Merino has lost. Being coarser than Merino wool overall, Navajo-Churro wool yields a more durable yarn, which Diné (Navajo) weavers use in their celebrated rugs. Yet a comparison of the fiber characteristics of all three sheep reveals that _____",
+      "table": {
+        "headers": [
+          "Type of sheep",
+          "Diameter of outer coat fibers (in microns)",
+          "Diameter of inner coat fibers (in microns)"
+        ],
+        "rows": [
+          [
+            "Spanish Merino",
+            "19–24",
+            "17–21"
+          ],
+          [
+            "Navajo-Churro",
+            "35 or higher",
+            "10–35"
+          ],
+          [
+            "Mouflon",
+            "150",
+            "15"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quotation in D shows Jim imagining he is a train engine \"fourteen minutes behind time\" with \"the throttle wide open,\" which captures both his energy and how lost he is in his game. Choice C describes the moment he damages the peony but doesn't show his imaginative absorption, and A shows him moving \"very slowly\" and wretchedly, the opposite of energetic."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says fruiting sites of the mycelium stayed colder than nonfruiting sites even after the fruited bodies were removed. So the temperature differences across the mycelium don't depend on whether fruited bodies are present, as A says. Choice B reverses the finding (fruiting sites were colder, not warmer), and C and D add claims the text never makes.",
+    "fix": {
+      "passage": "Radamés Cordero et al. have confirmed that twenty mushroom species (including Coprinellus micaceus and species from the genus Russula) maintain subambient temperatures in both their fruited bodies and their mycelium (the root-like hyphae from which the fruited bodies grow), though the benefits of this hypothermic behavior are unclear. Noting that relative coldness was more pronounced in fruiting than in nonfruiting sites of the mycelium—a difference that persisted even after fruited bodies were detached—the researchers speculate that thermoregulation in the mycelium may influence reproductive success."
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Brâncuși heavily influenced two major art movements, yet his exacting standards meant he made relatively few works. The disparity is between his large importance in art history and his small output. Choice D fails because the text stresses that he kept returning to the same few themes, so his work wasn't especially diverse."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Caterpillars exposed to harmless electric field shifts like those of flying wasps kept up defensive behavior for 20–87 seconds, while control caterpillars relaxed almost instantly. This suggests the caterpillars sensed the field changes as a possible threat. Choice B fails because the study didn't vary the size of the shifts, and C misreads the shorter peacock response as greater sensitivity."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "RSRs protect existing policyholders from price swings, but they may push insurers to stop selling new policies, reducing competition and letting prices for new policies rise. So people who already have policies benefit while people trying to buy policies may pay more. Choice C contradicts the text, which suggests new-policy prices are less restrained, not protected.",
+    "fix": {
+      "passage": "In 2008, the US state of Hawaii enacted rate stability regulations (RSRs), constraining insurance companies’ latitude to raise premiums (the periodic fees policyholders pay to maintain insurance policies) after policies are in effect. RSRs are effective at protecting existing policyholders from price volatility, but Naoki Aizawa and Ami Ko note that since dynamic pricing of premiums is an important risk-mitigation tool for insurers, RSRs may lead some insurers to scale back or entirely cease selling new policies in the affected market, thereby reducing the competitive pressure that typically restrains premium prices for new policies. Thus, Hawaii’s RSRs may _____"
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"the explosion of a massive star ... into space\" is an interruption that closes with a dash before \"that was first detected,\" so it must open with a matching dash. A comma, period, or colon can't pair with the closing dash, and a period would also break the sentence apart."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"might yield,\" so the blank must begin a modifier for \"a cultural studies analysis\" rather than add another verb. \"Focusing on the intersection of literature and popular culture\" does that. Choices A, B, and D are finite verbs that would leave \"might yield\" without a proper subject structure."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Though\" here is a conjunctive adverb meaning \"however,\" inserted into the clause \"Axial tilt is not the only factor that affects the Sun's position,\" so it is set off with commas on both sides. The \"as\" clause that follows is subordinate and can attach to the sentence after a comma. Choice B puts a semicolon before a word that belongs to the first clause, and C omits the comma after the interrupter."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence lists three elements of Celtic art, and the first item already contains commas, so the items are separated with semicolons (the second semicolon already appears before \"and inlaid enamel accents\"). A semicolon after \"significance\" keeps the list consistent. A period or colon would break up the list, and a comma would blur where items begin and end."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Not only ... but also\" is a paired construction that shouldn't be split by punctuation: \"caused not only by cyclones but also by vapor streams.\" Each other choice puts a dash or comma inside the pair, interrupting it unnecessarily."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"By supplying grain, textiles, and tin to societies that lacked these valuable items\" is an introductory phrase, so a comma separates it from the main clause \"the Neo-Assyrian Empire grew.\" A period or semicolon would leave the phrase as a fragment, and no punctuation runs it into the main clause."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"led,\" so the blank must start the subject: \"Hitting a 'power wall' ... led developers to invent the dual-core chip.\" The gerund phrase works as a noun subject. \"When they hit\" and \"Upon hitting\" make the opening a modifier and leave \"led\" with no subject, and \"They hit\" creates two main verbs."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence tells what audiences experience at the theater named in the first, so \"There\" (at that theater) links them. \"However\" and \"Conversely\" signal a contrast that doesn't exist, and \"To that end\" wrongly suggests sitting down is a goal the puppetry serves."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says sea powers and land powers are generally seen as distinct, then gives the British Empire, which dominated both land and sea. That example makes the distinction less clear, so \"Blurring this line\" fits. \"Exemplifying this distinction\" would require an example that fits only one category."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence must contrast the two flags directly. Choice D does this with \"whereas\": El Salvador's flag has a plant (a palm branch), while Zambia's has an animal (an eagle). Choice C mentions both flags but treats them as similar, and A and B don't compare them at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Vexillology is the study of flags.\n• The flags of many countries include symbols like animals, plants, or landforms.\n• These symbols often represent an aspect of the region's history, culture, or landscape.\n• The flag of El Salvador includes a palm branch.\n• The flag of Zambia includes an eagle."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The assumption to refute is that the collapse temperature varies with the surface and liquid. Choice C states that a recent study found the collapse temperature doesn't vary with those properties, directly countering the earlier hypothesis. Choice A describes a finding that confirmed, not refuted, the hypothesis, and D pairs a hypothesis about formation with a finding about collapse, so nothing is refuted.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Leidenfrost effect occurs when liquid touches a solid surface significantly hotter than the liquid’s boiling point, forming a vapor layer that insulates the liquid before eventually collapsing.\n• Scientists long hypothesized that the temperatures at which Leidenfrost vapor forms and collapses vary depending on molecular variations in surfaces and liquids.\n• A 2023 study confirmed that the vapor’s formation temperature varies depending on molecular variations in surfaces and liquids.\n• The study also found that the vapor’s collapse temperature was “nearly independent of material and fluid properties, contrary to previous theories.”\n• The vapor’s collapse temperature remained consistent (around 140°C)."
+    }
+  }
+]

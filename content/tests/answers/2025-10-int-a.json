@@ -1,0 +1,1144 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two broods, on different cycles, emerged at the same time and place, so the event is a coming together, or a convergence. A \"division\" means the opposite, and \"succession\" would mean one brood followed the other rather than appearing together."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A fellowship given to exceptional artists for their lifetime contributions is meant to recognize them, so \"honor\" fits. \"Overshadow\" and \"distract\" are negative and make no sense for an award, and \"begin\" doesn't describe what you do to an artist."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence says Miyazaki presents fantasy elements \"with little backstory or explanation,\" so he holds back details, or withholds them. \"Invent\" and \"celebrate\" suggest he adds or highlights details, which contradicts the text."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Of a good height\" describes Mr. French's body, and the text notes his height was visible even while he sat, so \"good\" means considerable or fairly large. \"Reliable,\" \"courteous,\" and \"capable\" describe character or skill, not a physical measurement.",
+    "fix": {
+      "passage": "The following text is from Charles Chesnutt’s 1905 novel The Colonel’s Dream.\n\nMr. French, the senior partner, who sat opposite Kirby, was an older man—a safe guess would have placed him somewhere in the debatable ground between forty and fifty; of a good height, as could be seen even from the seated figure, the upper part of which was held erect with the unconscious ease which one associates with military training."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The title signals, or indicates, that Portoviejo has a food culture worth celebrating, so \"denotes\" fits. A title can't \"discover\" or \"complain,\" and \"renounces\" (gives up) is the opposite of what an honor does."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined portion evaluates the researchers' choice of historical DNA, saying it takes advantage of a large but underused source of insight into the past. That is commentary on why their approach matters. It names no specific applications (A) and gives no reason the method is rarely used (B), and it is about the method, not their findings (C).",
+    "fix": {
+      "passage": "Svante Pääbo and other researchers studying the history of organisms have long utilized ancient DNA—DNA recovered from ancient organic material that has been preserved under natural conditions. However, J. Mason Heberling and David J. Burke’s 2019 study of the evolutionary trajectory of arbuscular mycorrhizal fungi instead relied on historical DNA—genomic data incidentally preserved in specimens that are housed in natural history collections—<u>thus capitalizing on the research potential offered by a vast but hitherto relatively underutilized source of insight into the biological past.</u>"
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion compares dreamers' smooth eye tracking to how awake, sighted people track real objects, and that similarity is what leads the team to conclude dream objects aren't pure imagination. So it supplies a comparable situation that supports the conclusion. It supports rather than undermines the team's ideas (B), and nothing suggests a change in the study's focus (C).",
+    "fix": {
+      "passage": "Curious about how people visually perceive objects in their dreams, Stephen LaBerge and team recruited lucid dreamers—people aware that they’re dreaming as it’s happening—for a research study. These participants were reliably able to signal when they had entered a dream state; the team then observed participants’ eye movements as they slept. <u>The smoothness with which participants’ eyes tracked objects in their dreams closely matched how sighted people who are awake visually track objects around them</u>, suggesting to the team that the brain perceives dream objects as the product of something other than pure imagination."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Yung contrasts the New York of 1847, a city of about 300,000, with the New York of 1909, a metropolis of skyscrapers rivaling London. The main idea is that the city has grown in population and development. He doesn't discuss his own growth (A), and he says the voyage had fair weather, not that it was tiring (B).",
+    "fix": {
+      "passage": "The following text is from Yung Wing’s 1909 memoir My Life in China and America.\n\nWe landed in New York on the 12th of April, 1847, after a passage of ninety-eight days of unprecedented fair weather. The New York of 1847 was altogether a different city from the New York of 1909. It was a city of only 250,000 or 300,000 inhabitants; now it is a metropolis rivaling London in population, wealth and commerce. The whole of Manhattan Island is turned into a city of skyscrapers, churches and palatial residences."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The author says mass extinctions unfold over thousands or millions of years and that multiple factors likely drove the species loss, which matches C. The text gives an 80 percent figure without suggesting it is an underestimate (A), and it says nothing about detection in the fossil record (B).",
+    "fix": {
+      "passage": "The End-Triassic mass extinction happened approximately 201 million years ago, when about 80 percent of species (including many species of bivalves) died off. Researchers have proposed the effects of a sudden release of carbon dioxide as one mechanism that may have brought on this mass extinction. But mass extinctions, while abrupt in geological terms, unfold over thousands or millions of years: it’s likely that multiple factors drove widespread species loss.",
+      "choices": {
+        "B": "It is hard to detect in Earth’s fossil or geological records."
+      }
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence states directly that Bellie researches gravitational waves. He makes music about them, but music history (B) is not what he researches, and space travel (C) is never mentioned."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says Capital and Ideology is less rigorously structured than Piketty's earlier book, and Text 2 says it has different aims and should be judged differently from his previous work. Both agree the book is structured differently from his earlier work. Text 2 would reject B and only Text 1 would reject C, while D misreads Text 2's comparison to Vollmann as a claim of influence."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that all people feel attached to where they live. Choice C says home holds power over the mind and affections for the lowly as well as the great, whatever their rank or color, which is exactly that idea. The other quotations are about curiosity, fame, and sleep, not attachment to home."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student predicts that birds heavier than 150 grams don't use deceptive defenses. The pied-billed grebe weighs 409 grams on average yet performs broken-wing display, a deceptive defense, which directly contradicts the prediction. Choice A is about birds under 150 grams, so it doesn't test the prediction, and D compares two birds that are both under 150 grams.",
+    "fix": {
+      "passage": "One antipredator defense that the grey-headed lapwing uses to protect its nest and young chicks is called “broken-wing display”; this form of deceptive defense involves an adult bird pretending to be injured and unable to fly in order to distract an approaching predator. Broken-wing display has been documented in 285 bird species from 13 different avian orders. A student predicts that bird species with mean body masses greater than 150 grams do not use deceptive defenses because larger birds tend to be more effective than smaller birds at using aggressive defenses to protect nests from predators, making deceptive defenses unnecessary.",
+      "table": {
+        "headers": [
+          "Bird",
+          "Mean body mass (grams)"
+        ],
+        "rows": [
+          [
+            "pied-billed grebe",
+            "409"
+          ],
+          [
+            "common ringed plover",
+            "60"
+          ],
+          [
+            "common snipe",
+            "126"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The meta-analysis says at least 176 individuals are needed to trust a handedness finding, and the 1992 study had only 27. So its claim deserves skepticism because the sample is far below that threshold. Choice B concerns the other study, which doesn't affect the 1992 claim, and A and D introduce ideas the text never mentions."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The study found musicians tend to listen at higher volumes than nonmusicians. If both love the same song and the musician plays it at 84.8 dB, the nonmusician would likely play it more quietly, below 84.8 dB. Choice A reverses the finding, and B and D make claims about other music that the text doesn't support."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers back to \"dark fiction,\" a singular noun, so \"it uses\" is correct. \"They\" is plural, and \"we\" or \"one\" would refer to people rather than to dark fiction."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"Caesar Antoine\" needs a main verb, and everything between the commas is a description of him. \"Began\" supplies that finite verb. \"Having begun,\" \"to begin,\" and \"beginning\" are not finite verbs, so they would leave the sentence incomplete."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"Duchamp's abstract cubist aesthetic,\" a singular noun, so \"it\" is correct. \"They\" and \"these\" are plural, and \"we\" doesn't refer to anything in the sentence."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Coaches,\" a plural noun (\"in the IWBF\" is just a modifier), so the verb must be plural: \"use.\" \"Has used,\" \"uses,\" and \"is using\" are all singular forms that would agree with \"IWBF\" instead of the real subject."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"New types of polymers have been engineered to repair themselves\" is a complete sentence, and \"upon fracture... such materials begin to self-heal\" is another, so a period is needed between them. Choices C and D join two independent clauses with only a comma, a comma splice, and A's dashes leave the two clauses fused."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says demonstration sports were chosen to showcase the host country, and sumō was shown in Japan while pärkspel was shown in Sweden. That match is appropriate, so \"Fittingly\" works. \"Nevertheless\" and \"By contrast\" signal a contradiction, and \"Additionally\" just adds a new point rather than linking the example to the purpose."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says many mushrooms contain phenolic compounds like protocatechuic acid and biochanin, and the second names specific mushrooms where those compounds were found. That is an illustration of the claim, so \"For example\" fits. The second sentence is not a contrast (A, B) or a result (C)."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Hodgkinson believes glass was not reserved for royalty, and Rehren agrees, saying glass was not a royal commodity. Since Rehren makes a similar point, \"Likewise\" fits. \"Nonetheless\" signals contrast, and \"Consequently\" and \"As such\" wrongly suggest Rehren's view was caused by Hodgkinson's finding, when it is based on his own research."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the bird's average weight, and only D states it: 23 grams. Choices A, B, and C talk about where the bird lives or about the Galápagos Islands, without mentioning weight.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The wedge-rumped storm petrel is a species of bird.\n• It has an average weight of 23 grams.\n• It can be found on the Galápagos Island of Marchena.\n• The Galápagos Islands are a group of islands that have many different species of birds."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name the ecoregion the willow oak is native to, and A states it: the Southeastern ecoregion of the US. Choices B and C give its type and scientific name, and D is about deciduous trees in general.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The willow oak is a species of deciduous tree.\n• Its scientific name is Quercus phellos.\n• It is native to the Southeastern ecoregion of the US."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To explain how Charpentier describes G major, the sentence should give his actual description, and B does: \"serious and magnificent.\" Choice C says he describes the key's mood but leaves out what he says, and D shifts to the song \"Hero.\"",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In music theory, the term “key” refers to the set of musical notes that forms the foundation of a piece of music.\n• In Règles de Composition (1682), French composer Marc-Antoine Charpentier describes the mood of various musical keys.\n• He describes the key of G major as “serious and magnificent.”\n• “Hero” (2001) by Enrique Iglesias is a song written in G major."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to make a claim about where kumiko patterns get their inspiration and support it. Choice A claims many patterns are inspired by nature and backs it up with the seigaiha pattern resembling ocean waves. Choice B never mentions inspiration, C wrongly says the kikko pattern is inspired by wooden strips, and D contradicts the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kumiko is a Japanese woodworking technique in which thin strips of wood are interlaced to create latticed panels that incorporate intricate patterns.\n• These wooden strips fit together without the use of nails or other fasteners.\n• Many of the geometric patterns used in kumiko designs are inspired by elements from nature.\n• The overlapping hexagons of the kikko pattern resemble a tortoise’s shell.\n• The curved fan shapes of the seigaiha pattern resemble ocean waves."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because of how the games handle this information, advocates want to increase players' knowledge of data collection, so the games must be unclear about it. \"Opaque\" means not transparent, which fits. \"Outspoken\" means the opposite, and \"abrasive\" (harsh) and \"ambivalent\" (undecided) don't describe a lack of clarity."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cordero's hiking observation that mushrooms looked colder than their surroundings raised questions, which led to the study. A study that grew out of an earlier observation was \"prompted by\" it. \"Excluded by\" and \"released in\" make no sense here, and \"acknowledged in\" misses the cause-and-effect relationship."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Gibbon worries that describing his book's success will reveal how proud he is, so \"betraying\" means exposing or revealing his vanity. \"Exploiting\" and \"forsaking\" don't fit, and \"distorting\" suggests misrepresenting the vanity rather than letting it show.",
+    "fix": {
+      "passage": "The following text is from Edward Gibbon’s 1796 Memoirs of My Life and Writings. Gibbon reflects on publishing a volume of his series The History of the Decline and Fall of the Roman Empire.\n\nI am at a loss how to describe the success of the work, without betraying the vanity of the writer. The first impression was exhausted in a few days; a second and third edition were scarcely adequate to the demand."
+    }
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The dash explains the blank: the features come from performers' impromptu deviations from the score. \"Extemporaneous\" means improvised or done without preparation, which matches. \"Meticulous\" (very careful) is close to the opposite, and \"inevitable\" and \"inconspicuous\" don't capture the idea of improvisation."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text uses Yellow Day as a typical example of Highwaymen paintings and then presents historians' view that these paintings helped shape the lasting image of Florida as lush and tropical. That matches D. Choice A focuses on one painting's influence, but the text credits the group's paintings as a whole, and B and C describe content the text doesn't include."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence names two buildings as examples of a trend of pairing sleek metal with traditional materials like cypress, and the second explains the ideas behind it: postwar emphasis on technology and a desire to preserve traditional approaches. That is examples followed by underlying principles. The text doesn't detail past uses of the materials (A) or rank one approach above the other (D).",
+    "fix": {
+      "passage": "The metal featured in both the structure of the Shimogamo Machiya Villa by Takuma Ohira and the hardware in the One-Room Residence of 5 Layers by Matsuyama Architect and Associates is representative of a trend in contemporary Japanese interior design to juxtapose sleek, modern accents with traditional organic materials such as cypress. The prominent feature of metal stems from the post–World War II emphasis on technological progress, while more traditional natural materials help preserve longstanding architectural and aesthetic approaches."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rose and colleagues say female birdsong in temperate species is more common than assumed but is quieter and less frequent, so researchers easily miss it. They would therefore argue that the apparent temperate-tropical difference may partly come from how hard temperate female song is to detect. Text 2 says nothing about mating seasons (A), male tropical birds (B), or environmental change (D)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tribal economic activity totaled about $7.3 billion, which is more than construction ($6.8 billion) but less than wholesale trade ($10.7 billion) and transportation/warehousing ($12.4 billion). Choice B wrongly ranks it above wholesale trade, and A calls amounts that differ by billions \"nearly equal.\"",
+    "fix": {
+      "passage": "The nearly forty tribes located in Oklahoma, including the Cherokee Nation and the Seminole Nation, operate numerous businesses and generate billions of dollars in revenue. A student in an economics class is researching the tribes’ collective activity as a single industry. The student wants to compare that industry’s contribution to Oklahoma’s overall economy in 2017 with the contributions made by three other industries in the state. Looking at the table, the student finds that tribal economic activity totaled over $7.3 billion, ranking it above ______.",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate total contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Wholesale trade",
+            "$10,723,400,000",
+            "58,346",
+            "$183,790"
+          ],
+          [
+            "Construction",
+            "$6,797,300,000",
+            "77,247",
+            "$87,994"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ],
+          [
+            "Transportation/warehousing",
+            "$12,414,600,000",
+            "52,891",
+            "$234,722"
+          ]
+        ]
+      }
+    },
+    "note": "Per-employee column printed truncated ($183,79 etc.); filled in by dividing total by employees."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Dark irises blend with the pupil and make it look larger, and the dark-iris dogs (images 6 and 3) were rated friendlier (4.03, 3.88) than the light-iris dogs (2.67, 2.11) and were generally more wanted as pets. That mirrors how people respond positively to large pupils in humans. Choices B and D reverse the table's pattern, and C talks about actual pupil size, which the table doesn't measure.",
+    "fix": {
+      "passage": "Studies have found that when looking at other people’s eyes, humans tend to perceive dilated pupils positively and constricted pupils negatively. Noting that a dark iris—the colored portion surrounding the pupil—is hard to distinguish from the black of the pupil (and thereby affects the pupil’s apparent size) and that many domestic dogs have dark irises, Akitsugu Konno et al. showed close-up images of dogs’ faces to human participants and asked them to rate the dogs’ traits and their own attitudes toward the dogs. Their findings suggest that ____.",
+      "table": {
+        "headers": [
+          "Image ID number",
+          "Irises",
+          "Not friendly (0)–Friendly (5)",
+          "Immature (0)–Mature (5)",
+          "Would not keep (0)–Would keep (3)",
+          "Would not interact with (0)–Would interact with (3)"
+        ],
+        "rows": [
+          [
+            "24",
+            "light",
+            "2.67",
+            "4.03",
+            "1.4",
+            "1.7"
+          ],
+          [
+            "14",
+            "light",
+            "2.11",
+            "3.27",
+            "1.55",
+            "1.85"
+          ],
+          [
+            "6",
+            "dark",
+            "4.03",
+            "2.95",
+            "1.85",
+            "1.65"
+          ],
+          [
+            "3",
+            "dark",
+            "3.88",
+            "2.51",
+            "2.35",
+            "2.65"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To support both competition and an advantage for birds, the finding must show the species interfere with each other and that birds win. Wasps nested much more in boxes that excluded birds, and when the two shared a box, wasps usually left while birds stayed, which shows both. Choice A suggests wasps got there first, not that birds won, and D says the species barely overlap, which undercuts competition."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The partition hypothesis says Eospermatopteris lived in deltaic forests and Archaeopteris lived in a separate, arid floodplain biome. Finding both plants together in an arid floodplain forest would break that separation. Choice C fits the hypothesis, since Eospermatopteris belongs in a deltaic forest, and A describes a change after the Devonian period."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Specificity of data corresponds to the detail rating, which measures how detailed the reported data are. If Feehan and Kandlikar's study had a lower detail rating than Oguchi's, that would directly contradict the conclusion that it was more specific. Choice B concerns traceability, which measures procedure descriptions, not data detail, and A and C would support the conclusion."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Economists blamed the lack of a general description on differences between countries, but Oladosu's team found that estimates vary more than fivefold even for one country in one time frame. Since the country is held constant, the variation must come from how the studies were done, so methodological differences may explain the problem. Choice A points back to country differences, which the finding undercuts, and D goes further than the evidence by addressing controls rather than the source of the variation."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tarabien found that people are less likely to buy a product when they see it as more environmentally risky. College students saw the furniture as the least risky of all the groups, so they would likely be more willing to buy it. Choice A reverses this, and C and D make claims the studies don't address."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Owning music means paying per song, so variety costs more, while streaming charges a flat fee, so exploring more music costs nothing extra. That implies streaming listeners would likely listen to a wider variety of music. The other choices are about gifts, older music, and publisher revenue, none of which follows from the reasoning about cost and variety."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The clause's subject is \"difficulty,\" a singular noun (\"in procuring supplies\" and the phrase between commas are modifiers), so it needs a singular finite verb: \"is largely occurring.\" \"Occur\" and \"have occurred\" are plural, and \"occurring\" alone isn't a finite verb."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"To collect such data... does raise a serious ethical concern\" is a complete sentence, and what follows explains that concern, so a colon fits after \"concern.\" \"Though\" then begins the explanation: though terms of service allow analysis, users aren't told. Choices A, C, and D attach \"though\" to the first clause, which leaves the second part as a fragment or a comma splice."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"MindMaze's technology,\" which is singular; the phrase \"alongside other such neuromodulation technologies\" is set off by commas and doesn't make the subject plural. So the singular verb \"is paving\" is needed. \"Are paving\" and \"have paved\" are plural, and \"paving\" alone isn't a finite verb."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"bestows,\" and \"widely understood to confer stability... ciliates\" is a descriptive phrase about helical swimming. That phrase must be set off by a comma after \"swimming,\" matching the dash that closes it. Adding \"is\" or \"has been\" would give the subject a second main verb with no conjunction."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"the magazine Belgravia.\" What follows is a new sentence: a long introductory modifier (\"Published from 1866 to 1899 and distributed throughout...\") and then the main clause \"this magazine helped make Braddon's serialized novels globally available.\" Choices A and B attach the modifier to the first sentence and leave \"this magazine helped...\" spliced on with only a comma, and a semicolon (C) is confusing here because the list of cities already uses semicolons."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Page's patent (April 10, 1906) came about six weeks before the Wrights' (May 22, 1906), so \"roughly six weeks earlier\" belongs with the patent date, added after a dash, and the sentence then ends. \"Page's only model had been destroyed...\" starts a new sentence. Choice B is punctuated correctly but attaches \"six weeks earlier\" to the model's destruction, which happened in 1904, about two years earlier; C and D run two sentences together.",
+    "note": "Key says B. B is grammatical but says the model was destroyed six weeks before April 1906, contradicting the 1904 World's Fair date; A (patent six weeks before the Wrights' May 22, 1906 patent) is the only accurate option."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes a process in order: citizens vote for parties, and afterward seats are awarded in proportion to the votes. \"Then\" signals that next step. \"Conversely\" and \"However\" suggest a contrast, and \"In other words\" would mean the second sentence restates the first."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sculpture is exposed to harsh weather, yet it stays in good condition, so the second sentence qualifies what you'd expect from the first. \"That said\" introduces that contrast. \"As a result\" wrongly suggests the weather caused its good condition, and \"In addition\" just adds a point."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says a writer \"may\" struggle after a strong debut, and the second describes a case where the opposite happens. \"Sometimes\" signals that this exception occurs in some cases. \"For example\" and \"Specifically\" would treat Tommy Orange as an instance of struggling, which he is not, and \"Accordingly\" implies a result."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the graphics are built from perfect geometric shapes, they display unnaturally precise angles and curves, so the second sentence describes a consequence. \"As such\" signals that. \"However\" suggests a contrast, \"In addition\" adds a separate point, and \"In conclusion\" doesn't fit a sentence that elaborates on the previous one."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the locations, the sentence needs both specimens and where each is housed, and A gives both: Raymond in Tokyo and Dio in Ontario, joined by \"while.\" Choice B compares what they have in common, and D mentions only Dio's location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Raymond is the nickname of a Triceratops fossil specimen housed at the National Museum of Nature and Science.\n• The National Museum of Nature and Science is located in Tokyo, Japan.\n• Raymond lived in the Late Cretaceous period.\n• Dio is the nickname of a Triceratops fossil specimen housed at the Royal Ontario Museum.\n• The Royal Ontario Museum is located in Ontario, Canada.\n• Dio lived in the Late Cretaceous period."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "According to the notes, synthetic languages have extensive case systems where nouns change form depending on their function. Choice C says Manchu has exactly that kind of case system, which explains why it is synthetic. Choice D describes analytic languages instead, and A and B don't mention cases at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Manchu is a synthetic language in the Tungusic language family.\n• In synthetic languages, nouns can take several different forms (or cases) depending on their function within a sentence.\n• Combining the suffix -de with the Manchu noun boo (house) forms the locative-case noun boode (in the house).\n• Synthetic languages have extensive case systems.\n• In analytic languages, cases are not typically used to indicate noun function.\n• Noun function is instead indicated through word order and auxiliary words (such as prepositions and adjectives)."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = −5: h(−5) = 8|−5| = 8 · 5 = 40. The absolute value makes the input positive before multiplying, so −40 (choice A) comes from forgetting the absolute value bars."
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area = length × width, so the shorter side is 60/15 = 4 inches. Choice B (15) is the longer side itself, and 30 or 45 would be longer than 15, which can't be the shortest side."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "29"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find the row for an air temperature of 38°F and read the column for a wind speed of 15 mph: the wind chill is 29°F. The value 23°F in the same row is for 45 mph, so it doesn't apply.",
+    "fix": {
+      "prompt": "For certain air temperatures, the table gives wind chill temperatures for two different wind speeds.\nAccording to the table, what is the wind chill temperature, in degrees Fahrenheit (°F), when the air temperature is 38°F and the wind speed is 15 miles per hour (mph)? (Disregard the degree symbol when entering your answer.)",
+      "table": {
+        "headers": [
+          "Air temperature",
+          "Wind chill temperature at wind speed 15 mph",
+          "Wind chill temperature at wind speed 45 mph"
+        ],
+        "rows": [
+          [
+            "30°F",
+            "19°F",
+            "12°F"
+          ],
+          [
+            "34°F",
+            "24°F",
+            "18°F"
+          ],
+          [
+            "38°F",
+            "29°F",
+            "23°F"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "174"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each week Charles saves (2/5)(145) = 58 dollars. Over 3 weeks he saves 3 · 58 = 174 dollars.",
+    "fix": {
+      "prompt": "Charles saves 2/5 of the $145 he earns each week from his summer job. If Charles continues to save at this rate, how much money, in dollars, will Charles save in 3 weeks?"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 10 igneous rocks out of 80 rocks total, so the probability is 10/80. The other choices divide by the wrong total, such as the number of non-igneous rocks (70) or the count of another category.",
+    "fix": {
+      "prompt": "Each rock in a collection of 80 rocks was classified as either igneous, metamorphic, or sedimentary, as shown in the frequency table.\nIf one of these rocks is selected at random, what is the probability of selecting a rock that is igneous?",
+      "choices": {
+        "A": "10/80",
+        "B": "10/70",
+        "C": "10/36",
+        "D": "10/34"
+      },
+      "table": {
+        "headers": [
+          "Classification",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "igneous",
+            "10"
+          ],
+          [
+            "metamorphic",
+            "36"
+          ],
+          [
+            "sedimentary",
+            "34"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of j/7 = k + 15m by 7 to get j = 7(k + 15m). The 7 must multiply the whole right side, so B and D, which multiply only one term by 7, are wrong.",
+    "fix": {
+      "prompt": "j/7 = k + 15m\nThe given equation relates the distinct positive numbers j, k, and m. Which equation correctly expresses j in terms of k and m?",
+      "choices": {
+        "A": "j = k + 15m/7"
+      }
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is the point where the two lines cross. The horizontal line is y = 4, and the slanted line reaches y = 4 at x = 3, so the solution is (3, 4). The other choices lie on y = 4 but not on the slanted line."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "202"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the profit equal to 800: 5x − 210 = 800. Add 210 to get 5x = 1010, then divide by 5 to get x = 202 stickers."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the second equation as (c/4)(x/y) = 76. Since x/y = 76, this becomes (c/4)(76) = 76, so c/4 = 1 and c = 4. Choice C (76) comes from mixing up c with the value of x/y.",
+    "fix": {
+      "prompt": "If x/y = 76 and cx/(4y) = 76, what is the value of c?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Similar figures have equal corresponding angles; only the side lengths are scaled. Angle J corresponds to angle C, so it also measures 42°. Choice D (126°) wrongly multiplies the angle by the scale factor 3."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide each time by its distance: 8/0.32 = 25, 12/0.48 = 25, and 19/0.76 = 25. The ratio is constant, so t = 25d. Choice C reverses the relationship, giving d in terms of t.",
+    "fix": {
+      "prompt": "The table gives the average time t, in minutes, it takes Adriana to travel a certain distance d, in miles. Which equation could represent this linear relationship?",
+      "choices": {
+        "A": "t = (1/4)d",
+        "C": "t = (1/25)d"
+      },
+      "table": {
+        "headers": [
+          "Distance (miles)",
+          "Average time (minutes)"
+        ],
+        "rows": [
+          [
+            "0.32",
+            "8"
+          ],
+          [
+            "0.48",
+            "12"
+          ],
+          [
+            "0.76",
+            "19"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "tan L = opposite/adjacent = JK/LK = 3/4, so the sides are in a 3-4-5 ratio with the hypotenuse JL = 35. The scale factor is 35/5 = 7, so JK = 3 · 7 = 21. Choice D (28) is LK, the side adjacent to angle L.",
+    "fix": {
+      "prompt": "In right triangle JKL, the tangent of ∠L is 3/4. What is the length of JK?"
+    },
+    "note": "Choices A and B print as \"1635\" and \"415\" in the PDF too (likely lost radicals/fractions); left as is."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: f(x) = x^2 − 12x + 36 − 36 + 12 = (x − 6)^2 − 24. Since (x − 6)^2 is never negative, the smallest value is −24, reached at x = 6. Choice D (12) is just the y-intercept.",
+    "fix": {
+      "prompt": "f(x) = x^2 − 12x + 12\nWhat is the minimum value of the given function?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "g(x + 1) − g(x) = 2 means g increases by 2 each time x increases by 1, so the slope is 2 and g(x) = 2x + b. Using g(9) = 11 gives 18 + b = 11, so b = −7 and g(x) = 2x − 7. Choice C has the right slope but gives g(9) = 0."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "507"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope is r = (−156 − 78)/(9 − (−9)) = −234/18 = −13. Then f(9) = −13(9) + s = −156 gives s = −39. So rs = (−13)(−39) = 507.",
+    "fix": {
+      "prompt": "For the linear function f, the table shows three values of x and their corresponding values of f(x). Function f is defined by f(x) = rx + s, where r and s are constants. What is the value of rs?",
+      "table": {
+        "headers": [
+          "x",
+          "f(x)"
+        ],
+        "rows": [
+          [
+            "−9",
+            "78"
+          ],
+          [
+            "9",
+            "−156"
+          ],
+          [
+            "27",
+            "−390"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "type": "mcq",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand to get x^2 + 11x − 15 = 0. The quadratic formula gives x = (−11 ± sqrt(11^2 − 4(1)(−15)))/2 = (−11 ± sqrt(121 + 60))/2 = (−11 ± sqrt(181))/2. Choice C subtracts 60 instead of adding it, and A and B drop the negative sign on b.",
+    "fix": {
+      "prompt": "x(x + 11) − 15 = 0\nWhat are the solutions to the given equation?",
+      "choices": {
+        "A": "x = (11 ± sqrt(61))/2",
+        "B": "x = (11 ± sqrt(181))/2",
+        "C": "x = (−11 ± sqrt(61))/2",
+        "D": "x = (−11 ± sqrt(181))/2"
+      }
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "1"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide by 2: |4x − 2| = 5/2. So 4x − 2 = 5/2, giving x = 9/8, or 4x − 2 = −5/2, giving x = −1/8. The sum is 9/8 − 1/8 = 1.",
+    "fix": {
+      "prompt": "2|4x − 2| = 5\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Write a = 2.2b and a = 0.7c. Then c = a/0.7 = 2.2b/0.7 ≈ 3.14b, so c is about 314% of b. Choice A (154) comes from multiplying 2.2 by 0.7 instead of dividing."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"128% greater\" means each 6-hour period multiplies the mass by 1 + 1.28 = 2.28, so A = A_0(2.28)^(x/6). After 18 hours there are 3 periods, so A_0(2.28)^3 = 629.60, giving A_0 = 629.60/11.852 ≈ 53.12. Choices A and D use 1.28, which would mean only a 28% increase."
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the right sides equal: 7x + 3 = 7x^2 + 3, so 7x^2 − 7x = 0 and 7x(x − 1) = 0, giving x = 0 or x = 1. When x = 0, y = 3, so (0, 3) is a solution. Choice C works in the first equation but not the second (7 · 36 + 3 = 255).",
+    "fix": {
+      "prompt": "y = 7x + 3\ny = 7x^2 + 3\nWhich ordered pair (x, y) is a solution to the given system of equations?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An x-intercept has y = 0, so x^2 − 169 = 0 and x^2 = 169, giving x = 13 or x = −13. So (13, 0) is an x-intercept. Choice D uses 169 without taking the square root."
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "20"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For a pyramid, V = (1/3)(base area)(height), so 125 = (1/3)s^2(15) = 5s^2. Then s^2 = 25 and s = 5 inches. The square base has perimeter 4 · 5 = 20 inches."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since f(0) = 0, the line passes through the origin, so f(x) = mx. Then f(40) = 40m = 8 gives m = 8/40 = 1/5, so f(x) = x/5. Choice A gives f(40) = 5, and C and D don't give f(0) = 0.",
+    "fix": {
+      "choices": {
+        "A": "f(x) = x/8",
+        "B": "f(x) = x/5"
+      }
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": [
+      "1458"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From g(3) = 18 · a^3 = 486, we get a^3 = 27, so a = 3. Then g(4) = 18 · 3^4 = 18 · 81 = 1,458. Equivalently, g(4) = g(3) · a = 486 · 3."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because n is parallel to s, the angle marked y equals the angle next to x along line t at line n, so x and y are supplementary: x + y = 180. Then (6z − 87) + (3z + 51) = 180, so 9z − 36 = 180 and z = 24. Choice C (46) comes from wrongly setting x equal to y."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With y = 38, the first inequality (38 > 15) is true, and the second becomes 3x + 38 < 19, so 3x < −19 and x < −19/3 ≈ −6.33. Only −7 is less than −6.33. Choice C (−3) gives 3(−3) + 38 = 29, which is not less than 19.",
+    "fix": {
+      "prompt": "y > 15\n3x + y < 19\nThe point (x, 38) is a solution to the given system of inequalities in the xy-plane. Which of the following could be the value of x?"
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The input x = 5 means 5 years after the end of 1953, which is the end of 1958, and the output f(5) is the account's value in dollars. So the account is worth about $263 at the end of 1958. Choices A and C misread 5 as an amount instead of a number of years."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expanding, (5x + 10)(2x + 1) = 10x^2 + 25x + 10. Subtracting (2x − 18) means subtracting 2x and adding 18: 10x^2 + 23x + 28, which is expression I. Expression II subtracts 18 instead of adding it, so it simplifies to 10x^2 + 23x − 8 and is not equivalent.",
+    "fix": {
+      "prompt": "(5x + 10)(2x + 1) − (2x − 18)\nFor all values of x, the given expression is equivalent to which of the following?\nI. 10x^2 + 23x + 28\nII. 10x^2 + 25x + 10 − 2x − 18"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For x = 2, 4, and 6, the value 4x + 15 is 23, 31, and 39, and each y must be less than those. Table A has y = 22, 29, and 35, which all work. Table B fails because 23 is not less than 23, C fails at x = 2 (24 > 23), and D fails at x = 4 (32 > 31).",
+    "fix": {
+      "choices": {
+        "A": "x: 2, 4, 6; y: 22, 29, 35",
+        "B": "x: 2, 4, 6; y: 23, 31, 39",
+        "C": "x: 2, 4, 6; y: 24, 33, 42",
+        "D": "x: 2, 4, 6; y: 20, 32, 38"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set −(1/4)(x − 9) + 4 = 2a. Subtract 4 to get −(1/4)(x − 9) = 2a − 4, then multiply by −4: x − 9 = −8a + 16, so x = −8a + 25. Choice B comes from subtracting 9 instead of adding it at the last step.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = −(1/4)(x − 9) + 4. For what value of x does f(x) = 2a, where a is a constant?",
+      "choices": {
+        "C": "−a/2 + 25/4",
+        "D": "−a/2 + 7/4"
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Square both sides of sqrt(x − 5) = 8 to get x − 5 = 64. The question asks for x − 5, not x, so the answer is 64. Choice A (8) is the square root itself, and 69 would be the value of x.",
+    "fix": {
+      "prompt": "If sqrt(x − 5) = 8, what is the value of x − 5?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let A = 8x and B = 6y. Adding the equations 2A + 7B = 21 and −2A + 7B = 21 gives 14B = 42, so B = 3. Subtracting them gives 4A = 0, so A = 0. Then 8x + 6y = A + B = 3.",
+    "fix": {
+      "prompt": "2(8x) + 7(6y) = 21\n−2(8x) + 7(6y) = 21\nThe solution to the given system of equations is (x, y). What is the value of 8x + 6y?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expanding gives (3x^9 + q)(rx^9 + 2) = 3rx^18 + (6 + qr)x^9 + 2q. Matching coefficients, 3r = 57 so r = 19, and 2q = 34 so q = 17. Then b = 6 + qr = 6 + 17 · 19 = 329. Choice D (114) uses only 6r and forgets the qr term.",
+    "fix": {
+      "prompt": "57x^18 + bx^9 + 34\nThe given expression, where b is a constant, is equivalent to (3x^9 + q)(rx^9 + 2), where q and r are constants. What is the value of b?"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Every game in the histogram scored at least 30 points, so adding a 17-point game must pull the mean down, and II is true. The new median is the 26th of 51 values, which is the original 25th value; the original median is the average of the 25th and 26th values, which both fall in the 50–60 bar and could be equal. So the median might stay the same, and I doesn't have to be true.",
+    "fix": {
+      "prompt": "The histogram summarizes the distribution of an original data set that represents the number of points per game a basketball team has scored in the last 50 games played. If the team scores 17 points in the next game and this game is added to the original data set to create a new data set of 51 values, which of the following must be true?\nI. The median number of points per game for the new data set is less than the median number of points per game for the original data set.\nII. The mean number of points per game for the new data set is less than the mean number of points per game for the original data set."
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With zeros −2, −7, and 3 and leading coefficient 1, g(x) = (x + 2)(x + 7)(x − 3). The x^2 coefficient is the sum 2 + 7 − 3 = 6, so a = 6. Choice B (−6) comes from adding the zeros themselves instead of their opposites, and −42 and 42 relate to the constant term."
+  },
+  {
+    "key": "m2-14",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "When x increases by 4, the exponent x/2 increases by 2, so f is multiplied by 2.10^2 = 4.41. That is the same p% increase, so g must be multiplied by 4.41 each time x increases by 1: g(x) = n(4.41)^x. Choice B multiplies by 2.10 per unit, which matches f's growth over 2 units, not 4.",
+    "fix": {
+      "prompt": "f(x) = 18(2.10)^(x/2)\nThe function f is defined by the given equation. The value of f(x) increases by p% for every increase of x by 4. For which of the following functions, where n is a positive constant, does the value of g(x) increase by p% for every increase of x by 1?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cheese gives 1 microgram per 3.0 ounces, or 1/3.0 ≈ 0.33 microgram per ounce, and tuna gives 1/1.2 ≈ 0.83 microgram per ounce. So x ounces of cheese and y ounces of tuna give 0.33x + 0.83y = 3.1. Choice A swaps the two rates, and B uses ounces per serving instead of micrograms per ounce."
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "-4"
+    ],
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The circle is (x + 4)^2 + (y − 4)^2 = 36. Expanding gives x^2 + 8x + 16 + y^2 − 8y + 16 = 36, so x^2 + y^2 + 8x − 8y − 4 = 0. The constant term is c = 16 + 16 − 36 = −4."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "2100"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For similar solids, areas scale by k^2 and volumes by k^3. The area ratio is 1,550/62 = 25, so k = 5 and the volume ratio is 5^3 = 125. The volume of Y is 16.8 · 125 = 2,100 cm^3.",
+    "fix": {
+      "prompt": "The right rectangular prism X is similar to the right rectangular prism Y. The surface area of right rectangular prism X is 62 square centimeters (cm^2), and the surface area of right rectangular prism Y is 1,550 cm^2. The volume of the right rectangular prism X is 16.8 cubic centimeters (cm^3). What is the volume, in cm^3, of the right rectangular prism Y?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "75"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Start with N of each species. Increasing by 2100% gives N + 21N = 22N prey, and increasing by 450% gives N + 4.5N = 5.5N predators. Since 5.5N/22N = 0.25, the predators are 25% of the prey, which is 75% less, so p = 75."
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One square meter is 3.28^2 ≈ 10.76 square feet, so 220 square feet is about 220/10.76 ≈ 20.45 square meters. Dividing by 60 minutes gives about 0.34 square meters per minute. Choice D (20.45) is the rate per hour, and B comes from dividing by 3.28 only once."
+  },
+  {
+    "key": "m2-20",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the graph, line k passes through (0, −1) and (3, 1), so its slope is 2/3. A perpendicular line has slope −3/2. Using (2, 7): 7 = −(3/2)(2) + b, so b = 10 and y = −(3/2)x + 10. Choice A has the right slope but doesn't pass through (2, 7)."
+  },
+  {
+    "key": "m2-21",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A point's actual y-value is greater than the predicted value when the point lies above the line of best fit. Counting from the graph, 5 of the 9 points are above the line (near x = 4, two near x = 6, one near x = 8.5, and one at x = 10), and the other 4 are below it."
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 8 − 3x. The equation becomes 9u + 2 = 8u + 19, so u = 17. The question asks for 8 − 3x, which is u, so the answer is 17; solving all the way for x (x = −3) gives choice B, which is the wrong quantity."
+  }
+]

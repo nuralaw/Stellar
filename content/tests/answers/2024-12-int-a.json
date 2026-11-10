@@ -1,0 +1,1235 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text stresses a \"huge diversity\" of languages and compares it to the size of the continents, so the variety is enormous, or \"immense.\" \"Limited\" and \"ordinary\" contradict the idea of huge diversity, and nothing suggests the languages are \"unknown.\""
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "With more than 500,000 minor planets and every name needing to be unique, giving each one a name would be unworkable, which is what \"impractical\" means. \"Customary\" says the opposite of the point being made, and \"presumptuous\" and \"ambiguous\" don't fit a problem of sheer numbers."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Drivers who already think the toll is too high would not favor arguments to raise it, so they are \"unsympathetic to\" those arguments. That is also why the text advises advocates to target a more persuadable group. \"Placated by\" means calmed or satisfied, the opposite of their likely reaction."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The novel suffered \"damage\" caused by Soviet censors, and \"wrought by\" means brought about or caused by. \"Bestowed on\" and \"allocated to\" would mean the damage was given to the censors, and \"concealed from\" makes no sense since the censors themselves did the cutting."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first introduces a trend (more customized products for consumers), then explains a benefit to companies (customers pay more and wait longer) and finally a challenge (customization is hard to do cheaply with mass production). Choice B is tempting, but the text discusses companies in general, not one company's success."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text points out that historians of capitalism rarely discuss precolonial African capitalism, which misleadingly implies capitalism was imposed on Africa, and then explains why: they rely on archival economic data that doesn't exist for that region. Choice A is wrong because the groups don't disagree about which activities count as capitalism; the issue is what data the historians use."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The narrator observes that people find it easier to decide a neighbor is worthless than to weigh details that would change that opinion. That general human weakness explains why the townspeople think so badly of the Countess. Choice C is wrong because the narrator hints the truth is \"far from being as bad\" as people imagine, not that she deserves blame.",
+    "fix": {
+      "passage": "The following text is adapted from George Eliot's 1857 short story \"The Sad Fortunes of the Rev. Amos Barton.\" The Countess Czerlaski is a newcomer to the town of Milby.\n\nI am by no means sure that if the good people of Milby had known the truth about the Countess Czerlaski, they would not have been considerably disappointed to find that it was very far from being as bad as they imagined. Nice distinctions are troublesome. It is so much easier to make up your mind that your neighbour is good for nothing, than to enter into all the circumstances that would oblige you to modify that opinion."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tía Ana uses the front parlor as her schoolroom, and each evening the salon leaves it out of order for the next morning. Her repeated checks on whether the guests have left show she wants them gone so she can prepare the room for her class. Choice C is wrong because her school already exists and she isn't trying to talk to the guests.",
+    "fix": {
+      "passage": "The following text is from Julia Alvarez's 2000 novel In the Name of Salomé. Salomé, a poet, is hosting guests in the front parlor of her family home, and Ramona is her sister. A salon is a social gathering for the exploration of intellectual ideas.\n\nIt was evening when the two men got up to leave. Tía Ana had already come into the room several times to see if these guests had departed yet. The front parlor had always been her special province, as she used it for her little school. Now, every evening, it turned into Salomé's salon, as Ramona called it, and it was never in order for its transformation back to a classroom the following morning. ©2000 by Julia Alvarez"
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says that as social attitudes favor less carbon-intensive energy, demand for petroleum falls, so society's preference for low-carbon energy is a factor in that demand. Choice D reverses the text, which says falling demand turns drilling equipment into a liability for these companies."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "According to the text, the flat-headed cat's rigid hyoid rumbles when its larynx vibrates, producing a purr. Choice B describes a ligament that flat-headed cats actually lack (it belongs to jaguars), and choice A mentions the larynx's shape, which the text never discusses.",
+    "fix": {
+      "passage": "Why do flat-headed cats purr but jaguars roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats called the hyoid. Flat-headed cats, which are much smaller than jaguars, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, jaguars have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that flat-headed cats lack. These traits allow jaguars and most other species of big cats to produce powerful roars. The same traits may also prevent most big cats from purring."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example needs Nanakuli's area, and the table lists Nanakuli at 3.61 square miles, which also fits the claim that most home lands are much smaller than the largest one. The other choices are the areas of other home lands (Kahikinui, Waimea and Kawaihae).",
+    "fix": {
+      "passage": "Hawaiian home lands are areas of public land in the state of Hawaii that have been reserved for use by the Kanaka Maoli, or the Native Hawaiian people. The largest of the home lands, Humuula-Upper Piihonua, covers nearly 100 square miles on the island of Hawai'i. Most of the home lands are much smaller. For example, the total area of Kamoku-Kapulena is 7.47 square miles, and the total area of Nanakuli is ______",
+      "table": {
+        "caption": "Total Areas of Five Hawaiian Home Lands",
+        "headers": [
+          "Home land",
+          "Area (square miles)"
+        ],
+        "rows": [
+          [
+            "Nanakuli",
+            "3.61"
+          ],
+          [
+            "Kawaihae",
+            "15.99"
+          ],
+          [
+            "Kamoku-Kapulena",
+            "7.47"
+          ],
+          [
+            "Kahikinui",
+            "37.26"
+          ],
+          [
+            "Waimea",
+            "23.57"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that an international route carried more passengers than a highly traveled domestic route. In 2018 the international Jakarta–Singapore route carried 4,812,342 passengers, more than the 3,474,971 on the domestic Mexico City–Monterrey route. Choice B compares in the wrong direction (the domestic route is larger), and A and C don't compare an international route with a domestic one by passengers.",
+    "fix": {
+      "passage": "A study of commercial airline routes that carried the greatest number of passengers in 2017 and 2018 shows that, in general, domestic routes (routes within a single country) carried many more passengers than international routes. However, a few international routes were so popular that they carried more travelers than some of the most highly traveled domestic routes, as can be seen when comparing the _____",
+      "table": {
+        "caption": "Highly Traveled Commercial Airline Routes in 2017-18",
+        "headers": [
+          "Location 1",
+          "Location 2",
+          "Distance of route (kilometers)",
+          "2018 passengers",
+          "2017 passengers",
+          "Domestic or international"
+        ],
+        "rows": [
+          [
+            "Hong Kong",
+            "Manila",
+            "1,145",
+            "3,008,842",
+            "2,907,228",
+            "international"
+          ],
+          [
+            "Jakarta",
+            "Singapore",
+            "896",
+            "4,812,342",
+            "4,810,602",
+            "international"
+          ],
+          [
+            "Mumbai",
+            "Delhi",
+            "1,150",
+            "7,392,155",
+            "7,129,943",
+            "domestic"
+          ],
+          [
+            "Mexico City",
+            "Monterrey",
+            "729",
+            "3,474,971",
+            "3,202,091",
+            "domestic"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With large vortices, intermediate-headed fish feel strong pressure changes at the snout while wide-headed fish feel little. If the hypothesis is right, the intermediate-headed fish should avoid obstacles better, so a wide-headed fish bumping into obstacles more often than an intermediate-headed one supports it. Choice B would undercut the hypothesis, and A and D don't compare head shapes."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student claims a country with a very large population can be less densely populated than one with a much smaller population. Mali has 17,600,000 people and a density of only 14.2, while Lesotho has about 2,135,000 people and a density of 70.3, which illustrates exactly that. Choice A compares densities without contrasting population sizes, and D cites data that isn't in the table.",
+    "fix": {
+      "passage": "As the second most populous continent in the world, Africa was home to an estimated 1.186 billion people in 2015. In a paper for a social studies class, a student nonetheless notes that countries with very large populations may be less densely populated than are countries with much smaller populations, as can be seen by comparing _____",
+      "table": {
+        "caption": "Population and Population Density of African Countries in 2015",
+        "headers": [
+          "Country",
+          "Density (inhabitants/km^2)",
+          "Area (km^2)",
+          "Estimated population"
+        ],
+        "rows": [
+          [
+            "Lesotho",
+            "70.3",
+            "30,355",
+            "2,135,000"
+          ],
+          [
+            "Mali",
+            "14.2",
+            "1,240,000",
+            "17,600,000"
+          ],
+          [
+            "Zambia",
+            "21.5",
+            "752,614",
+            "16,212,000"
+          ],
+          [
+            "Benin",
+            "96.6",
+            "112,620",
+            "10,880,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The captive animals showed right-handedness while wild chimpanzees did not, and the text notes that captive animals spend much more time with mostly right-handed humans. The logical conclusion is that the captive animals' right-handedness may partly come from that contact. Choices A, C and D bring in standards and sample sizes that the text never mentions."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The emulsifiers are used by cosmetic chemists (a plain plural, no possession needed), and the comma pairs with the one after \"palmitic acid\" to set off the example \"like palmitic acid.\" Choices A, B and D add apostrophes, but nothing belongs to the chemists or to \"cosmetic\" here."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both parts of the sentence are independent clauses, so they need a comma plus a coordinating conjunction; \"but\" also fits the contrast between being popular and later being replaced. A comma alone (A) creates a comma splice, no punctuation (B) creates a run-on, and \"that\" (D) makes the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"Her portrait of novelist Zadie Smith\" leads directly into the verb \"is displayed,\" and no punctuation should separate a subject from its verb. A dash, colon or comma would all break that connection."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Drummer Dennis Chambers\" is a title-plus-name phrase where the name is essential, so no commas go around it, and it is the subject of \"may be,\" so no comma comes after it either. The introductory \"Though...\" clause is already closed by the comma after Plenty. The other choices insert commas that split the noun phrase or separate the subject from its verb."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" is an interrupting word inside one clause, so it is set off by commas on both sides, and the \"since\" clause that follows is dependent, so no semicolon or period is needed. Choices C and D treat the \"since\" clause as if it could stand alone as a sentence, and A puts a semicolon before a dependent clause."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence describes what happens during daytime migration, when the sun is in the sky, so \"At that time\" correctly points back to \"during the day.\" \"For example\" is wrong because the sentence explains why daytime travel is safe rather than giving an instance, and \"However\" suggests a contrast that isn't there."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because residents rely on the Metro for millions of trips, officials work to keep its stations in good shape, which is a cause and its result, so \"For this reason\" fits. \"However\" would signal a contrast, and \"For example\" would introduce an instance of the first sentence's idea."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since box-modeled objects lack organic realism, extra processes like UV surface mapping are needed to make them look realistic, so the second clause is a result of the first and \"consequently\" fits. \"However\" would signal a contrast, and \"similarly\" a comparison, neither of which matches."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Humphrey worked from 1862 to 1880 (the 1800s) and Austin from 1925 to 1941 (the 1900s), so C highlights a real difference between them. Choice D stresses what they have in common, and A and B each mention only one keeper.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Lighthouses send out crucial light signals to help ships and other watercraft navigate at night.\n• Before automation, lighthouses were run by lighthouse keepers.\n• Betsy Morrow Humphrey was the lighthouse keeper at Monhegan Island Light in Maine.\n• She held this position from 1862 to 1880.\n• Thelma Austin was the lighthouse keeper at Point Fermin Light in California.\n• She held this position from 1925 to 1941."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice C lays out the researchers' proposed events in order: Chrysalis came close to Saturn about 160 million years ago, tidal forces broke it apart, and the debris formed the rings. Choice A reverses cause and effect, B leaves out the rings and the timing, and D gives only a general rule.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• If a moon orbiting a planet comes close enough to that planet, tidal forces can cause the moon to break apart.\n• In a 2022 study, researchers proposed that Saturn was once orbited by a large moon they named Chrysalis.\n• Their simulations indicated that Chrysalis would likely have come very close to Saturn around 160 million years ago.\n• At that distance, Chrysalis would have been broken apart by tidal forces.\n• The researchers hypothesized that the resulting debris formed Saturn's rings."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show a similarity, the sentence must name both birds and something they share, and A notes that both have black bills. Choice C emphasizes a difference in size, B describes only the little hermit, and D is about the guidebook.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Birds of Northern South America is an identification guidebook by ornithologists Robin Restall, Clemencia Rodner, and Miguel Lentino.\n• It lists the thirty-five hummingbird species found in Suriname.\n• The brown violetear is a large hummingbird found in Suriname.\n• It is identifiable by its dark violet ear patches and its short, black, straight bill.\n• The little hermit is a small hummingbird found in Suriname.\n• It is identifiable by its white central tail feathers and its long, black, curved bill."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice D shows the effect of media: Wong Fei-hung was known only locally while alive, but films, television and other media later made him an internationally known folk hero. Choice A gets the cause wrong (his local fame came from his work, not media), and B and C mention media without showing how it built his legacy.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Little is known about the life of Wong Fei-hung (1847-1925).\n• He was born near Foshan, China, and gained local recognition as a physician and Hung Ga (also known as Hung Gar) Kung Fu master.\n• He achieved many incredible martial arts feats—some confirmed and some rumored.\n• He has become an internationally known folk hero thanks to his depiction in over a hundred films, television shows, and other media.\n• In the 1991 film Once Upon a Time in China, actor Jet Li portrays Wong Fei-hung using superhuman kung fu abilities to save his community."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes art ranging from huge mosaics to street murals, a wide range that can satisfy any art lover, so \"breadth of\" (wide range) fits. Nothing suggests \"controversy,\" \"confusion\" or \"apathy,\" none of which would explain why the art satisfies everyone."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Critics called the films \"galvanizing\" and \"picture perfect,\" which is strong praise, or \"acclaim.\" Fans hope that praise will draw new viewers. \"Ambivalence\" means mixed feelings and \"impartiality\" means neutrality, both of which contradict the enthusiastic quotes."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The fossils help scientists \"discern,\" or detect and make out, steps in hominid evolution, which matches the parallel idea of illuminating the epoch. \"Exploit\" and \"prioritize\" don't describe gaining knowledge, and \"yield\" means to produce or give up, which doesn't fit scientists studying evolution."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The lower floors have to bear the weight of the floors above, so a building whose concrete lower floors compressed until it was several inches shorter shows concrete handled the load worse than steel. That supports the claim that steel is more suitable. Choices A and C describe steel performing worse, and D says the steel base deformed."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence gives other critics' favorable view of the series' endings: the books should be read as one long, continuous work, like other multivolume stories. That is a positive assessment of a particular trait of the novels. Choice A overstates it (\"most critics,\" literary renown), and C and D bring in entertainment, which the sentence never discusses.",
+    "fix": {
+      "passage": "HMS Surprise, first published in 1973, is a novel in Patrick O'Brian's Aubrey/Maturin series, which includes twenty completed books. Some critics have found fault with the abrupt endings of HMS Surprise and other books in the series, saying that they do not finish conclusively but arbitrarily stop. <u>But other critics argue that the books should not be thought of as discrete texts with traditional beginnings and endings but as a single incredibly long work, similar to other multivolume stories, such as John Galsworthy's The Forsyte Saga.</u>"
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says horizontal gene transfer is common in prokaryotes but has rarely been seen in eukaryotes, which contrasts how often one phenomenon has been detected in two groups. Choice A is wrong because the sentence is about frequency, not how the processes work, and C describes the role of the next sentence, not the underlined one.",
+    "fix": {
+      "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. <u>While horizontal gene transfer is common among prokaryotes—single-celled organisms, such as the bacteria Brevibacillus borstelensis and Lactococcus lactis—it has rarely been observed among eukaryotes (multicellular organisms).</u> However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says Meding and Zasoski's barriers kept the root systems separate, and Text 2 agrees they took the \"necessary precaution\" of excluding root-to-root transmission; Text 2 only objects that liquids could still pass through. So both accept that the barriers excluded root-to-root transfer. Choice C is something Text 2 explicitly rejects.",
+    "fix": {
+      "passage": "Text 1\nIn separate studies, Stephen Meding and Robert J. Zasoski and Xinhua He and colleagues examined whether plants transfer nutrients to one another using a common mycorrhizal network (CMN)—a lattice of fungal strands in the soil. Meding and Zasoski excluded all pathways other than the CMN by using barriers to keep the plants' root systems separate while allowing mycorrhizal strands through—a crucial step He and colleagues' study did not take.\nText 2\nMeding and Zasoski took the necessary precaution of separating the plants' root systems (thereby excluding root-to-root transmission). However, any barrier used must allow the thread-like hyphae of a CMN to pass through, and this permeability would also allow liquids through. Thus, the researchers' experimental design cannot ensure that any nutrient transfer observed can be attributed to a CMN and not to some other pathway."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Curtis and colleagues found lunar intensity to be positively associated with mongoose lemur foraging, meaning the lemurs forage more as moonlight increases. Choice A is the text's explanation of the discrepancy, not Curtis's finding, and D is the finding by Brown's team about mice."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers found that white butterflies were seen on green flowers more often than others (a link to color) and that butterflies fed more on cloudy days (a link to weather). So both factors were linked to behavior. Choices A and B each leave out one of these two findings."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If the birds froze or scattered for any loud sound, the result wouldn't show they link T. caesius calls with danger. Showing that random control noise produced no reaction rules that out and supports the conclusion. Choice C actually weakens it by showing the birds reacted even without the calls."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Murphy and colleagues are the only team that used clustered camera trapping and GPS collar tracking, and the table shows they reported the lowest maximum density, 1.65 cougars per 100 square kilometers. An underestimating method would explain that low figure. Choice D is about a team that used regular camera trapping, and C misstates Murphy's study area (15,314, not 4,329).",
+    "fix": {
+      "passage": "Studies of the population density of cougars (Puma concolor) have yielded a range of results, which may in part reflect differences in the effectiveness of the methods that researchers have used in their studies. If, for example, the use of clustered camera trapping and GPS tracking of collars tends to lead to underestimates of cougar population density, that may explain why the study by ________",
+      "table": {
+        "caption": "Studies of Cougar Population Density",
+        "headers": [
+          "Study authors",
+          "Location",
+          "Methods",
+          "Study area (square kilometers)",
+          "Maximum density (cougars per 100 square kilometers)"
+        ],
+        "rows": [
+          [
+            "Lindsey N. Rich et al.",
+            "Belize, Bolivia, Argentina",
+            "regular camera trapping",
+            "4,329",
+            "6.50"
+          ],
+          [
+            "Sean M. Murphy et al.",
+            "New Mexico (United States)",
+            "clustered camera trapping, GPS tracking of collars",
+            "15,314",
+            "1.65"
+          ],
+          [
+            "P. Ian Ross and Martin G. Jalkotzy",
+            "Alberta (Canada)",
+            "radio-collar tracking",
+            "780",
+            "4.70"
+          ],
+          [
+            "Richard A. Beausoleil et al.",
+            "Washington (United States)",
+            "biopsy darting",
+            "7,939",
+            "2.40"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The LNH predicts that more exoteric languages are less grammatically complex. Fusion and informativity are positive signs of complexity, so finding that both rise with exotericity contradicts the LNH and supports Shcherbakova's claim. Choice B (complexity falls as exotericity rises) is exactly what the LNH predicts, so it would support the hypothesis instead.",
+    "fix": {
+      "passage": "The linguistic niche hypothesis (LNH) posits that the exotericity of languages (how prevalent non-native speakers are) and grammatical complexity are inversely related, which the LNH ascribes to attrition of complex grammatical rules as more non-native speakers adopt the language but fail to acquire those rules. Focusing on two characteristics that are positive indices of grammatical complexity, fusion (when new phonemes arise from the merger of previously distinct ones) and informativity (languages' capacity for meaningful variation), Olena Shcherbakova and colleagues conducted a quantitative analysis for more than 1,300 languages and claim the outcome is inconsistent with the LNH."
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For P7, the graph shows different correlations for the two styles: about 0.29 for impressionist paintings and about 0.26 for color-field paintings. If P7 actually gave the two styles equal ratings, the model's predictions must not have been equal too, or they would have matched P7 equally well in both styles. So the model predicted different ratings for the two styles. Choices B and D claim a direction of preference the graph can't show, and C contradicts the unequal correlations."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Neither History nor any earlier work mentions the Round Table, yet Malory's later book does, so Malory must have drawn on some source that Geoffrey of Monmouth didn't know about when he wrote History. Choice B contradicts the text, since Malory included something absent from History, and C makes a claim about historical accuracy the text never supports."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Mammal studies showed larger differences on average, but every class of animals, amphibians included, had some studies with differences well above the mammal average. So some amphibian studies must have found larger effects than some mammal studies did. Choice A contradicts the averages, and C and D draw on details the text doesn't provide.",
+    "fix": {
+      "choices": {
+        "C": "the difference found in the study conducted by Graeme Shannon and colleagues was likely larger than the average difference for studies of black-tailed prairie dogs included in the meta-analysis."
+      }
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In many languages... these consonants are rare\" and \"in some dialects of Mandarin, however, four such consonants... are relatively common\" are both independent clauses, so a semicolon is needed between them. A comma (A) makes a comma splice, no punctuation (B) makes a run-on, and \"and\" (D) clashes with the contrast word \"however.\"",
+    "fix": {
+      "passage": "The term \"retroflex\" derives from Latin and means \"bent back,\" an apt descriptor for the branch of consonants—retroflex consonants—pronounced with the tongue curling up and back in the mouth. In many languages, including English, these consonants are _____ in some dialects of Mandarin, however, four such consonants (\"ch,\" \"sh,\" \"zh,\" and \"r\") are relatively common."
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first clause is complete, and the second clause explains how light intensity affects the reaction rate, so a colon correctly introduces that explanation. Choices A and D join two independent clauses with nothing or only a comma, and C (\"and\") produces an awkward run-on."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject \"such symbiotic relationships\" needs a main verb, and the plural, present-tense \"form\" agrees with it. \"Forming,\" \"to form\" and \"having formed\" are not finite verbs, so they would leave the clause without one."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Drummer Dennis Chambers\" is a title directly followed by an essential name, so no commas surround the name, and the phrase is the subject of \"may be,\" so no comma follows it. Choices A, C and D insert commas that either split the noun phrase or separate the subject from its verb."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" belongs with the first clause: the book wasn't written by Legler alone, \"however,\" and the next clause gives the evidence. The semicolon then separates the two independent clauses. In B and C, \"however\" starts the second clause, which wrongly suggests that other authors contributing contrasts with the first statement, and A creates a comma splice."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Fellow OECD member nation Latvia\" works like a title before a name, so no punctuation goes between \"nation\" and \"Latvia.\" Choices B, C and D would treat Latvia as a separate explanation or appositive, which breaks up this single noun phrase."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence admits a limitation (the painting can't truly show a fourth dimension), and the next sentence offers a positive point despite that limitation, so \"That said\" fits. \"In other words\" would restate the limitation, and \"For example\" would give an instance of it."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rogerson argued the USGS ignored key factors such as the earth's curvature, so it follows that the USGS center was inaccurate. \"Hence\" signals that conclusion. \"However\" and \"That being said\" would suggest a contrast with the previous sentence, which isn't there.",
+    "fix": {
+      "passage": "In 2015, geologist Peter Rogerson recalculated the geographic center of Nebraska, which had previously been determined in 1920 by the US Geological Survey (USGS). The USGS, Rogerson contended, had omitted important considerations, not least the curvature of the earth. _____ the state's USGS-determined center—a point 10 miles northwest of the municipality of Broken Bow—was inaccurate."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says a number of parades were for achievements in aviation, and the next sentence gives a specific figure that backs this up (16 parades honored pilots). \"Indeed\" reinforces the point. \"Therefore\" would treat the number as a conclusion, and \"Nevertheless\" signals a contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the order in which the two students attended, and C gives both start years and states that Albers (1920) came before Steyn (1931). Choice A names both students without any order, B mentions only Steyn, and D is about the school's directors.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Bauhaus was an influential German art and design school founded in 1919 by Walter Gropius.\n• Gropius was the school's director from 1919 to 1928.\n• Hannes Meyer was its director from 1928 to 1930.\n• Ludwig Mies van der Rohe was its director from 1930 to 1933.\n• Josef Albers was a painter and educator who began attending the Bauhaus in 1920.\n• Stella Steyn was a painter and illustrator who began attending the Bauhaus in 1931."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the samples, the sentence must state a difference, and B notes that the EPDM rubber sample (2 mm) was thicker than the NiTi wire (0.7 mm). Choice D stresses a similarity, and A and C describe the study or torsional heating without contrasting the two samples.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Generally, an object will heat up when twisted.\n• The twisting of an object is known as torsion.\n• A 2019 study led by Zunfeng Liu and Ray Baughman tested the torsional heating of various fibers.\n• When a 0.7-millimeter thick sample of single-ply nickel-titanium (NiTi) wire was twisted, its average surface temperature increased by 21.3°C.\n• When a 2-millimeter-thick sample of ethylene propylene diene monomer (EPDM) rubber fiber was twisted, its average surface temperature increased by 12°C."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The mass fraction compares an element's total mass with the combined mass of all elements, so stating magnesium's mass fraction, 154,000 ppm, gives exactly what the student wants. Choice D uses zinc's 40 ppm by mistake, A only compares magnesium with zinc, and B defines the term without giving a value.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Element abundance is a relative measure of the amount of a chemical element in a given environment.\n• Abundance can be expressed as a mass fraction.\n• A mass fraction is the ratio of the total mass of an element to the combined mass of all elements in a given environment.\n• The mass fraction of magnesium (Mg) on Earth is 154,000 parts per million (ppm).\n• The mass fraction of zinc (Zn) on Earth is 40 ppm.",
+      "prompt": "The student wants to specify the total mass of Earth's magnesium relative to that of all elements. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is the point where the two lines cross. On the graph the lines meet at (−4, 2), so y = 2. Choice B (−4) is the x-coordinate of the intersection, not the y-coordinate."
+  },
+  {
+    "key": "m1-02",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 15(2) + 10 = 30 + 10 = 40. Choice B (30) forgets to add the 10."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A line through (0, 21) has y-intercept 21, and its slope is 4, so in the form f(x) = mx + b it is f(x) = 4x + 21. Choice C has the right slope but leaves out the intercept, and A and B use 21 as the slope."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each time x goes up by 1, y goes up by 1, so the slope is 1, and when x = 0, y = 22, so the y-intercept is 22. That gives y = x + 22. Choice D (y = 22x) would give y = 0 at x = 0, not 22.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "0",
+            "22"
+          ],
+          [
+            "1",
+            "23"
+          ],
+          [
+            "2",
+            "24"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has infinitely many solutions only when both equations describe the same line. So y = mx + b must be y = (2/5)x + 2, which means m = 2/5 and b = 2. Any other value of b would give a different, parallel line with no solutions.",
+    "fix": {
+      "prompt": "One of the two equations in a system of linear equations is given. The system has infinitely many solutions. If the second equation in the system is y = mx + b, where m and b are constants, what is the value of b?\ny = (2/5)x + 2",
+      "choices": {
+        "A": "−2",
+        "B": "1/2",
+        "C": "−1/2",
+        "D": "2"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph rises from x = 0 to its peak at x = 2 and falls after that, reaching the ground at x = 4. So the height increases over the whole interval only from x = 0 to x = 2. Choice B includes the falling part from 2 to 4, and C and D lie entirely on the falling part."
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An exponential model is y = (starting value)(growth factor)^x. The starting value is 90, and growing by 20% each step means multiplying by 1 + 0.20 = 1.20, so y = 90(1.20)^x. Choice B uses 1.02, which is only 2% growth.",
+    "fix": {
+      "prompt": "The relationship between the variables x and y is defined by an exponential equation. When x = 0, the value of y is 90, and for every increase in the value of x by 1, the corresponding value of y increases by 20% of its previous value. Which equation represents this relationship?"
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The mean is the total divided by the number of tasks: (8 + 6 + 14 + 11 + 11)/5 = 50/5 = 10 minutes. Choice C (11) is the median and the mode, not the mean.",
+    "fix": {
+      "prompt": "The table shows the amount of time it took a participant in a study to complete each tasks. What was the mean time, in minutes, for this participant to complete a task?",
+      "table": {
+        "headers": [
+          "Task",
+          "Time (minutes)"
+        ],
+        "rows": [
+          [
+            "A",
+            "8"
+          ],
+          [
+            "B",
+            "6"
+          ],
+          [
+            "C",
+            "14"
+          ],
+          [
+            "D",
+            "11"
+          ],
+          [
+            "E",
+            "11"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "h(−2) = 7|−2| = 7(2) = 14, because the absolute value of −2 is 2. Choice A (−14) ignores the absolute value bars.",
+    "fix": {
+      "prompt": "The function h is defined by h(x) = 7|x|. What is the value of h(−2)?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line falls from about y = 11.2 at x = 0 to about y = 4.4 at x = 8, so the slope is about (4.4 − 11.2)/8 = −6.8/8 ≈ −0.85, closest to −0.84. Choice C has the wrong sign since the line goes down, and A and D are far too steep."
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 77° angle sits above line q on the right side of s, while y° sits above line r on the left side of s. Since q and r are parallel, y° matches the angle next to 77° on line q, so y = 180 − 77 = 103. Then 2x + 7 = 103 gives 2x = 96 and x = 48. Choice A (35) comes from wrongly setting y = 77."
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "18"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let p be the price of one shirt. The total before the coupon was 9p, so 9p − 54 = 108. Then 9p = 162 and p = 18 dollars."
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Point-slope form gives y − 4 = −(1/3)(x − 9), so y = −x/3 + 3 + 4 = −x/3 + 7. Choice C has the right slope, but its line passes through (9, 1), not (9, 4).",
+    "fix": {
+      "prompt": "Line t in the xy-plane has a slope of −1/3 and passes through the point (9, 4). Which equation defines line t?",
+      "choices": {
+        "A": "y = 7x − 1/3",
+        "B": "y = 9x + 4",
+        "C": "y = −x/3 + 4",
+        "D": "y = −x/3 + 7"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "12",
+      "16"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product equals 0 when one of its factors equals 0, so the solutions are x = 16, 12, −7 and −13. The positive solutions are 12 and 16, and either one is correct.",
+    "fix": {
+      "prompt": "(x − 16)(x − 12)(x + 7)(x + 13) = 0\nWhat is a positive solution to the given equation?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The volume of a cone is V = (1/3)πr^2·h = (1/3)π(6^2)(13) = (1/3)(36)(13)π = 156π. Choice D (468π) leaves out the 1/3 and uses the formula for a cylinder instead."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "249"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 1995 to 2015 (20 years) the population grows by 217 − 55 = 162 thousand, so the rate is 162/20 = 8.1 thousand per year. From 2015 to 2019 is 4 more years: 217 + 4(8.1) = 217 + 32.4 = 249.4, which rounds to 249."
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The y-intercept is the value when x = 0: y = 500(2)^0 = 500. Since x counts six-month periods starting from the end of January 1997, x = 0 is the end of January 1997. Choice A refers to x = 1, where y = 500(2)^2 = 2,000.",
+    "fix": {
+      "prompt": "y = 500(2)^(2x)\nThe equation gives the estimated number of online newsletter subscribers at the end of every six-month period, x, starting from the end of January 1997, where 0 < x < 4. Which statement is the best interpretation of the y-intercept of the graph of this equation in the xy-plane?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "1470"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Adding the equations cancels the 5(y − 14) terms: x/7 + x/3 = 29 + 41 = 70. With a common denominator, (3x + 7x)/21 = 70, so 10x/21 = 70 and 10x = 1,470.",
+    "fix": {
+      "prompt": "x/7 + 5(y − 14) = 29\nx/3 − 5(y − 14) = 41\nThe solution to the given system of equations is (x, y). What is the value of 10x?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The other 5 resistors total 130 − 90 = 40 ohms. Every resistance is positive, so any one of them must be more than 0 and less than 40 (it can't be 40, since the other four would then total 0). Choices C and D allow values over 40, which is impossible."
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(m) = 21 − 3m, the balance drops by 3 for each movie rented, so each rental withdraws 3 dollars. Choice C (21) is the starting balance, and D is the balance after m rentals."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "-7"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let t = 4 − 9x. The equation becomes 9 − 4t = 2 − 5t. Adding 5t to both sides gives 9 + t = 2, so t = −7, which means 4 − 9x = −7."
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "17.9"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Think of the plot as 100 units: 52 units of farmland and 48 units of pasture. Buildings cover 0.215(52) = 11.18 units of the farmland and 0.14(48) = 6.72 units of the pasture, for 11.18 + 6.72 = 17.9 units in total. So p = 17.9."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add to 180°, and one angle is the right angle (90°). So a = 180 − 90 − 24 = 66. Choice D (56) comes from a subtraction mistake."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point (a, b) on the graph of y = f(x) means f(a) = b. Since (5, 3) is on the graph, f(5) = 3. Choice B confuses the input 5 with the output."
+  },
+  {
+    "key": "m2-03",
+    "answer": [
+      "42"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circumference equals π times the diameter, so πd = 42π and d = 42 centimeters."
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Start from 49 = 2K/v^2. Multiply by v^2 to get 49v^2 = 2K, then divide by 49: v^2 = 2K/49. Since v is positive, v = sqrt(2K/49). Choice B flips the fraction, and C and D still have v on the right side.",
+    "fix": {
+      "prompt": "For an object with a mass of 49 kilograms, the given equation relates the kinetic energy K, in joules, of the object to the object's speed v, in meters per second, where K and v are positive. Which equation correctly expresses this object's speed, in meters per second, in terms of the object's kinetic energy, in joules?\n49 = 2K/v^2",
+      "choices": {
+        "A": "v = sqrt(2K/49)",
+        "B": "v = sqrt(49/(2K))",
+        "C": "v = 49v/(2K)",
+        "D": "v = 2K/(49v)"
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(11) = 4(11)^2 = 4(121) = 484. Choice A (44) multiplies 4 by 11 without squaring first."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: g(0) = (1/9)(5)^0 = (1/9)(1) = 1/9, so the point is (0, 1/9). Choice C treats 5^0 as 5, and D ignores the coefficient 1/9.",
+    "fix": {
+      "prompt": "g(x) = (1/9)(5)^x\nIf the given function g is graphed in the xy-plane, where y = g(x), what is the y-intercept of the graph?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(0, 1/9)",
+        "C": "(0, 5/9)",
+        "D": "(0, 5)"
+      }
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": [
+      "1/2",
+      ".5"
+    ],
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Given that it is a Hawks T-shirt\" limits us to the 42 Hawks shirts. Of those, 21 are medium, so the probability is 21/42 = 1/2.",
+    "fix": {
+      "prompt": "A bin contains a mixture of T-shirts for two sports teams. The table shows the number of T-shirts in the bin, classified by size and sports team. One T-shirt from the bin will be selected at random. What is the probability of selecting a T-shirt that is medium, given that the T-shirt is a Hawks T-shirt? (Express your answer as a decimal or fraction, not as a percent.)",
+      "table": {
+        "headers": [
+          "",
+          "Hawks",
+          "Stars",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Small",
+            "6",
+            "9",
+            "15"
+          ],
+          [
+            "Medium",
+            "21",
+            "34",
+            "55"
+          ],
+          [
+            "Large",
+            "15",
+            "25",
+            "40"
+          ],
+          [
+            "Total",
+            "42",
+            "68",
+            "110"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": [
+      "10000"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 1652 to 1952 is 300 years, which is 300/75 = 4 doubling periods. So the 1952 population is the 1652 population times 2^4 = 16. The 1652 population was 160,000/16 = 10,000."
+  },
+  {
+    "key": "m2-09",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With the right angle at K, tan L = JK/LK = 3/4, so the sides are in a 3 : 4 : 5 ratio with the hypotenuse JL = 90. Then 5 parts = 90, so one part is 18 and JK = 3(18) = 54. Choice D (72) is the length of LK, the side adjacent to L.",
+    "fix": {
+      "prompt": "In right triangle JKL, the tangent of ∠L is 3/4. What is the length of JK?",
+      "choices": {
+        "A": "35/16",
+        "B": "15/4",
+        "C": "54",
+        "D": "72"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rewrite as x^2 = 25/81. A positive number has two square roots, so x = 5/9 or x = −5/9, which gives exactly two distinct real solutions. Choice B forgets the negative root.",
+    "fix": {
+      "prompt": "x^2 − 25/81 = 0\nHow many distinct real solutions does the given equation have?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Simplify both sides. The left side is 7ax − 14a + 5a = 7ax − 9a, and the right side is 7ax − 14a − 35. The x-terms already match, so the equation is true for every x only when −9a = −14a − 35, which gives 5a = −35 and a = −7. If a = 0, the equation becomes 0 = −35, which has no solutions.",
+    "fix": {
+      "prompt": "In the given equation, a is a constant. The equation has infinitely many solutions. What are all possible values of a?\na(7x − 14) + 5a = 7(ax − 2a) − 35"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"x is 33% of y\" means x = (33/100)y. Solving for y gives y = (100/33)x. Choice C would mean x is 33 times y, and D confuses 33% with 67%.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "If x > 0 and x is 33% of y, which expression represents y in terms of x?",
+      "choices": {
+        "A": "(100/33)x",
+        "B": "(10/33)x",
+        "C": "(1/33)x",
+        "D": "(67/100)x"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "5/7",
+      ".7142",
+      ".7143",
+      "0.714"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Write both radicals as powers: root[5](x^m) = x^(m/5) and root[7](x) = x^(1/7). For these to be equal for x > 1, the exponents must match, so m/5 = 1/7 and m = 5/7.",
+    "type": "spr",
+    "fix": {
+      "prompt": "root[5](x^m)\nIn the given expression, m is a constant and x > 1. The expression can be rewritten as root[7](x). What is the value of m?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first book costs $13 and each of the other x − 1 books costs $11, so y = 11(x − 1) + 13. Choice B charges $11 for every book on top of the $13, which overcharges for the first book."
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "When w increases by 1, the exponent 2w increases by 2, so z is multiplied by (0.829)^2 ≈ 0.687. Keeping about 68.7% of the value means a decrease of about 100 − 68.7 = 31.3%. Choice C (17.1) assumes the factor is 0.829 per unit of w and ignores the 2 in the exponent.",
+    "fix": {
+      "prompt": "z(w) = (0.829)^(2w)\nThe function z is defined by the equation shown. The value of z(w) decreases by p% for each increase by 1 in the value of w. Which of the following is closest to the value of p?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The graph of y = f(x) + 11 slopes downward and crosses the y-axis at about 1, so f(x) has a negative slope and a y-intercept of about 1 − 11 = −10. With c and d positive, f(x) = −d − cx has a negative slope (−c) and a negative intercept (−d). Choice C has a negative slope but a positive intercept."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "1/21",
+      ".0476",
+      "0.047",
+      "0.048"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the product of the solutions is c/a. Here the constant term is rs and the leading coefficient is 21, so the product is rs/21 = (1/21)rs. That means k = 1/21. You can also check this by factoring: (21x + r)(x + s) = 0 gives x = −r/21 and x = −s, and their product is rs/21.",
+    "type": "spr",
+    "fix": {
+      "prompt": "21x^2 + (21s + r)x + rs = 0\nIn the given equation, r and s are positive constants. The product of the solutions to the given equation is krs, where k is a constant. What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "6,000% of c is 60c, so a = 60c. Since c is 0.008% of b, c = 0.00008b, so b = c/0.00008 = 12,500c. Then a + b = 60c + 12,500c = 12,560c. Choice C comes from misreading the percents as 6,000c + 8c."
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expand: −16(25x^2 − 30x + 9) = −400x^2 + 480x − 144 and 4(25x^2 − 20x + 4) = 100x^2 − 80x + 16. Adding them gives −300x^2 + 400x − 128. Matching this with (a/4)x^2 + (b/4)x + c/4 gives a = −1200, b = 1600 and c = −512, so a + b + c = −112. Choice C (−28) is the sum of the coefficients before multiplying by 4.",
+    "fix": {
+      "prompt": "−16(5x − 3)^2 + 4(5x − 2)^2\nThe given expression can be rewritten as (a/4)x^2 + (b/4)x + c/4, where a, b, and c are constants. What is the value of a + b + c?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each time x increases by 1, f(x) is multiplied by b. Multiplying by b is the same as increasing by (b − 1) × 100 percent, so c = 100(b − 1). Choice C would be correct only if the growth factor were b + 1.",
+    "fix": {
+      "prompt": "f(x) = 66b^x\nIn the given function, b is a positive constant. For every increase in the value of x by 1, the value of f(x) increases by c%, where 0 < c < 100. Which expression gives the value of c in terms of b?",
+      "choices": {
+        "A": "1 + b/100",
+        "B": "b + 100",
+        "C": "100(b + 1)",
+        "D": "100(b − 1)"
+      }
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The tree grows 87/m centimeters per month, and k years is 12k months. So the growth is (87/m)(12k) = 1,044k/m centimeters. Choice C flips k and m, which would mean faster growth over a longer period gives less growth.",
+    "fix": {
+      "choices": {
+        "A": "29m/(4k)",
+        "B": "29k/(4m)",
+        "C": "1,044m/k",
+        "D": "1,044k/m"
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "173/2",
+      "86.5"
+    ],
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Angle ABC is inscribed and (as marked) a right angle, so AC is a diameter: AD + DC = 175. In a right triangle, the altitude to the hypotenuse satisfies BD^2 = AD·DC, so AD·DC = 346. AD and DC are the roots of t^2 − 175t + 346 = 0, which are t = (175 ± 171)/2, giving 2 and 173. Since AB < BC, AD is the shorter piece, so AD = 2, CD = 173 and r = 173/2.",
+    "fix": {
+      "prompt": "In the figure shown, points A, B, C, and E lie on the circle, and AB < BC. Segment AC is perpendicular to segment BE at point D, and BD = sqrt(346). The diameter of the circle is 175. If CD/AD = r, what is the value of r?"
+    }
+  }
+]

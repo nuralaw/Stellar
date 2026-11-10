@@ -1,0 +1,1172 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The study found that mentioning CSR improves a bank's image, so scores with CSR mentioned should be higher than scores without it; \"exceed\" means to be greater than. \"Replace\" and \"identify\" don't describe a comparison of scores, and \"disturb\" makes no sense with numbers."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Before the new analysis, researchers only had two competing theories and lacked firm details, so the field was based on guesswork, which is what \"speculative\" means. \"Authoritative\" is the opposite of what the text implies, and \"esoteric\" (obscure) doesn't contrast with \"firm details\" the way the sentence requires."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The breezes \"meet and conflict\" as if each were trying to win control of the air, so \"mastery\" here means domination. \"Skillfulness\" and \"familiarity\" are other meanings of mastery, but they don't fit a struggle between two winds."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence says science fiction stories have \"spurred many actual innovations,\" so fiction has acted as a catalyst of, or trigger for, real technology. A \"sponsor\" provides money, which the stories didn't do, and \"diversion from\" and \"constraint to\" suggest the opposite effect."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"However\" signals that some drivers will resist any justification for a higher toll; that makes sense if they already think the current toll is exorbitant, or too high. \"Warranted\" would mean they think the toll is fair, which wouldn't explain their resistance."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says the six-point scale is based on how much supporting evidence exists for each species' bioluminescence, and the examples that follow show scores assigned by type of evidence. So it explains the basis for the scoring. It doesn't explain how the system came from the binary one (B) or argue that a new system was needed (C).",
+    "fix": {
+      "passage": "Moving beyond a simple “present or absent” designation, researchers created a new classification system that allows for a nuanced understanding of bioluminescence in marine organisms that was unavailable under binary classification systems. <u>The new six-point scale considers varying levels of supporting evidence used to identify bioluminescent species.</u> For example, the firefly squid scores 1 because of inconsistent reports, the emperor squid scores 4 because of its anatomical similarity to known luminous relatives, and the shaggy anglerfish scores 6 because of substantiated direct observations."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion says key features of pneumatic diverticula don't fossilize, and the sentence continues with \"so\" paleontologists also study living birds. It therefore gives the reason for using an approach in addition to fossil analysis. Nothing says scientists doubted the bird studies (A) or misidentified anything (C).",
+    "fix": {
+      "passage": "Postcranial skeletal pneumaticity (PSP) refers to the presence of extensions of an animal’s lungs and air sacs inside its bones. These extensions are known as pneumatic diverticula. <u>Vascularity and other identifying characteristics of pneumatic diverticula tend not to fossilize</u>, so paleontologists have relied on studies of living bird species to document these qualities, augmenting their findings from fossil analysis to glean additional insights into the respiratory systems of extinct genera such as Tyrannosaurus, Euhelopus, and other Cretaceous theropods and sauropods that may have also exhibited PSP."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined portion says that conserving glass eels would in turn help other species that eat them, so the payoff of solving the spawning mystery reaches beyond the eels. It doesn't rank scientists' concerns (A) or describe the eels' role in the Sargasso Sea ecosystem (C).",
+    "fix": {
+      "passage": "Adult glass eels can be found off the coast of Maine, but the eels begin their lives in the Sargasso Sea, a biodiverse area in the North Atlantic Ocean where they are born and later return to breed. Though biologists believe they have identified the general area in the Sargasso Sea that is crucial to the endangered eels’ survival, little is yet known about how the animals spawn there. Scientists believe that solving the mystery will lead to better conservation of glass eels and their habitat, <u>helping in turn to sustain several other species that rely on them as a food source</u>."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines literary critics in parentheses as \"people whose job it is to evaluate books.\" A publisher, bookseller, or author is never described as professionally evaluating books."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the Mexico row under 1995 shows 0.33 million metric tons. The other values belong to other countries in 1995: 0.38 is Peru, 1.85 is the United States, and 0.44 is Indonesia.",
+    "fix": {
+      "passage": "While doing research for a paper about metal exports, a student finds a table indicating how much copper was mined in each of four countries in 1995 and 2020. The student notes that in 1995, Mexico mined _____",
+      "table": {
+        "caption": "Millions of Metric Tons of Copper Mined in 1995 and 2020",
+        "headers": [
+          "Country",
+          "1995",
+          "2020"
+        ],
+        "rows": [
+          [
+            "Indonesia",
+            "0.44",
+            "0.51"
+          ],
+          [
+            "Mexico",
+            "0.33",
+            "0.73"
+          ],
+          [
+            "Peru",
+            "0.38",
+            "2.15"
+          ],
+          [
+            "United States",
+            "1.85",
+            "1.20"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that life on the island stops while Peter is gone and restarts as he returns. Choice D says that, sensing Peter was on his way back, Neverland \"woke into life\" again, which matches exactly. The other quotations describe the trip or Peter's location but say nothing about the island waking up."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Camilla's perception of her surroundings changes. In C, nature is the same as on every other evening, yet she now senses \"a new strangeness\" in everything around her, which shows a change in how she perceives the place. The other quotations show her emotions or actions, not a new view of her surroundings."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researcher claims that languages farther from humanity's African origin keep fewer sounds. If languages from Europe and Western Asia, which are farther from Africa, had more sounds than African languages, that would contradict the claim. Choice C fits the claim (farther Central America has fewer sounds), so it supports rather than weakens it."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For a shared favorite recording, musicians' preferred volume tended to be higher than nonmusicians'. So if the musician's best volume is 82.2 decibels, the nonmusician would probably prefer a lower volume and find 82.2 decibels less enjoyable. The other choices compare different recordings, which the finding doesn't address."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both noise conditions changed the narwhals' diving about equally, even though one added sonic pulses. That would make sense if ship noise was already so loud that adding pulses barely changed what the narwhals heard. Choice A contradicts the finding of negligible differences, and C conflicts with the large drop in deep dives under both conditions."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text has two complete sentences: \"Many works ... are lost\" and \"his Elements ... is an extant work.\" A period followed by \"Conversely,\" separates them correctly. A comma alone (B) creates a comma splice, and \"and\" without a comma or with \"conversely\" left unpunctuated (A, D) is not acceptable."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"The researchers\" needs a main verb, and \"recommended\" supplies one in the past tense, matching \"cataloged.\" The other choices (\"recommending,\" \"to recommend,\" \"having recommended\") are not main verbs, so the sentence would be incomplete."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The leaves ... feature a complex network of radiating veins that provide structural support\" is a complete sentence, and so is \"Decreasing in thickness ..., these veins allow....\" A period correctly separates them. With a comma (C, D) or no punctuation (B), the two independent clauses would be run together."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb, \"was thereby empowered,\" so the blank must start a subject with a modifier: \"Pennsylvania, having officially become a US state ..., was....\" The other choices add a second main verb, which leaves \"was thereby empowered\" without a proper subject."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"contributions,\" so it needs the plural verb \"have been revisited.\" \"Has been\" agrees with the nearer singular nouns by mistake, and \"revisited\" or \"having been revisited\" would not give the right passive meaning or a finite verb."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says resins play several important roles; the next sentence names one of them (sealing wounds). \"For example\" introduces this illustration. \"However\" and \"Regardless\" signal contrast, and \"Next\" implies a sequence of steps."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text sets up \"On one hand\" with an effect that strengthens storms (more precipitation), then presents an opposing effect that weakens them. \"On the other hand\" completes that contrast. \"In other words\" would wrongly suggest the two effects are the same."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The adornments made the outfits heavy, but the fabric was light and flexible, which is a contrast. \"On the other hand\" signals it. \"That is\" and \"For instance\" would treat the light fabric as a restatement or example of the heavy adornments."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first clause says the researchers did not study all ungulates; the second says what they did instead, focusing only on pronghorns and wild horses. \"However\" marks this contrast between what they didn't do and what they did. \"For instance\" and \"in other words\" don't fit a negative statement followed by a positive one."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Curiosity rover couldn't preserve samples, and as a result the team designing Perseverance tried to add a mechanism that could. \"Hence\" shows this cause and effect. \"Similarly\" and \"Specifically\" don't express that the second event was a response to the first."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Finding glaciers at least 60 million years old leads to the conclusion that Antarctica had glaciers before its ice sheet formed 34 million years ago. \"Thus\" introduces that logical conclusion. \"By contrast,\" \"Even so,\" and \"Nevertheless\" all signal a contradiction that isn't there."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to stress Edison's reliance on Hammer. Choice D connects Edison's limited schooling to his dependence on specialized employees and names Hammer as one of them. A and B only describe Hammer, and C adds an unsupported claim about other employees' careers.",
+    "fix": {
+      "passage": "• Thomas Edison is regarded as one of the most important inventors in US history.\n• Having received little formal schooling, Edison relied on specialist employees at his various laboratories and offices to complete the technical work for many of his inventions.\n• William Joseph Hammer was a laboratory assistant who worked at the Menlo Park laboratory.\n• He is best known for curating the most comprehensive collection of historic light bulbs anywhere in the world.\n• William Symes Andrews was an electrical engineer who worked at the Edison Electric Light Company.\n• He is best known for establishing more than thirty power plants across New York and Pennsylvania."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The novels were published anonymously and readers had to guess who wrote them, so the approach was secret, or clandestine. \"Inexplicable\" (impossible to explain) and \"preliminary\" (early) don't describe hidden authorship, and \"unequivocal\" means clear, the opposite."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The game was an underground protest against an authoritarian regime, and the sentence contrasts its original distribution with being \"readily available\" now. So it was first spread secretly, or surreptitiously. \"Disingenuously\" means insincerely, which doesn't fit, and \"succinctly\" and \"dispassionately\" are unrelated to secrecy."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Fragmentation causes changes to local ecological processes, and the text goes on to discuss how big those changes' impact will be. \"Engenders\" means produces or brings about. \"Attenuates\" (weakens) and \"preempts\" (prevents) would contradict the idea that changes happen."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most patents are not truly novel, so counting all patents gives a false picture of how much innovation is happening; \"belies\" means to misrepresent or give a false impression of. \"Thwarts\" (blocks) and \"maligns\" (speaks badly of) don't describe a misleading count, and \"portends\" means predicts."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence begins \"despite his popular reputation\" and notes García Márquez wrote strictly realist works. That corrects the impression, created by the earlier mention of him as a key magical realist, that all his works were magical realism. It compares nothing with Castillo's novel (A) and makes no judgment of quality (D).",
+    "fix": {
+      "passage": "Magical realism, a style that weaves fantasy into realistic narratives, coalesced in Latin America in the 1960s. It is associated with Gabriel García Márquez, whose One Hundred Years of Solitude is a key text. The style was embraced by Mexican American writers, such as Ana Castillo, whose So Far from God draws on Mexican folktales as a source of fantasy. Yet The Mixquiahuala Letters, also by Castillo, features no fantastical plot events. <u>And despite his popular reputation, García Márquez himself wrote several works of strict realism, including Chronicle of a Death Foretold.</u>"
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 cites earlier research, done outside boreal regions, showing that warmer summers help invasive species more than native ones. Text 2 finds that in Alaska neither the native nor the invasive plant changed its growth in warmer years. This suggests the earlier finding may not apply everywhere, so it questions its generalizability rather than its validity in the original settings (C)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says advances have \"greatly boosted\" the apps' usefulness for simple tasks, but richer communication depends on nuances the apps miss. So they have improved a lot but still fall short for complex interactions. D overstates the problem by saying they are inadequate for most practical purposes."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Under optimal foraging theory, behavior reflects costs versus benefits. Since bushbabies forage more when the moon is brighter, any costs of bright moonlight must be outweighed by the benefits they get from seeing better. A doesn't follow, because the bushbabies' greater visual benefit could still produce an association even with the same costs.",
+    "fix": {
+      "passage": "Optimal foraging theory (OFT) holds that animals' foraging behaviors reflect cost-benefit trade-offs that vary by species and with dynamic ecological circumstances. One such circumstance is lunar intensity, which Mary V. Price and colleagues found to be negatively associated with foraging by white-throated woodrats but Simon Kenneth Bearder and colleagues found to be positively associated with foraging by Mohol bushbabies. This discrepancy is explicable in terms of OFT: the bushbabies' greater reliance on vision means that higher lunar intensity benefits them more than it benefits the woodrats.",
+      "prompt": "Information in the text best supports which statement about Mohol bushbabies?"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Farmers without inorganic additives can't use NPK fertilizer, so the options are biochar, compost, or both. Biochar and compost together gave the largest weight (979.3 g), length (6.76 cm), and diameter (13.68 cm) of those options. Biochar and NPK fertilizer did best overall but uses the inorganic fertilizer.",
+    "fix": {
+      "passage": "Working in Ghana, Emmanuel Hanyabui and colleagues compared the impact on pineapple growth of different combinations of soil additives, including NPK fertilizer (an inorganic fertilizer containing nitrogen, phosphorus, and potassium), organic compost, and biochar (a carbon-rich material produced from organic waste matter). Based on data in the table, pineapple farmers with no access to inorganic soil additives would likely increase the weight and size of their fruits by the greatest amount by using _____",
+      "table": {
+        "caption": "Effect of Various Soil Treatments on Mean Pineapple Fruit Weight and Size",
+        "headers": [
+          "Soil treatment",
+          "Weight (grams)",
+          "Length (centimeters)",
+          "Diameter (centimeters)"
+        ],
+        "rows": [
+          [
+            "Control",
+            "825.9",
+            "6.14",
+            "13.63"
+          ],
+          [
+            "Biochar",
+            "915.7",
+            "6.56",
+            "13.63"
+          ],
+          [
+            "Compost",
+            "864.8",
+            "6.15",
+            "13.22"
+          ],
+          [
+            "Biochar and compost",
+            "979.3",
+            "6.76",
+            "13.68"
+          ],
+          [
+            "Biochar and NPK fertilizer",
+            "1032.1",
+            "6.78",
+            "13.96"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Among resolution makers, ages 50–64 have 58% for personal relationships versus 53% for ages 30–49, and 56% for finances versus 63%. That matches B exactly. D is wrong because ages 18–29 (79%) are slightly below ages 30–49 (80%) for health and exercise, and C can't be judged since the table only covers people who make resolutions.",
+    "fix": {
+      "passage": "A Pew Research Center survey conducted in January 2024 found that three out of ten US adults make at least one New Year’s resolution (a promise for the year ahead), while half of those who make a resolution make more than one. The survey asked participants what kinds of resolutions they made and separated them into several categories. The table presents percentages of people who make particular kinds of New Year’s resolutions among those who choose to make them, indexed by age bracket.",
+      "table": {
+        "caption": "Percentages of New Year’s Resolution Makers Who Make Certain Kinds of Resolutions",
+        "headers": [
+          "Type of resolution",
+          "Age 18–29",
+          "Age 30–49",
+          "Age 50–64",
+          "Age 65+"
+        ],
+        "rows": [
+          [
+            "Health and exercise",
+            "79",
+            "80",
+            "79",
+            "76"
+          ],
+          [
+            "Finances",
+            "68",
+            "63",
+            "56",
+            "47"
+          ],
+          [
+            "Personal relationships",
+            "63",
+            "53",
+            "58",
+            "52"
+          ],
+          [
+            "Hobbies",
+            "65",
+            "53",
+            "51",
+            "45"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim is that Beloved resembles magical realism by combining literary realism with Black American cultural traditions. D says the novel largely follows realistic conventions but also draws on Black American traditions that go beyond realism, which is that same combination. A and B wrongly say Beloved borrows from Latin American magical realism itself, which the claim doesn't say.",
+    "fix": {
+      "passage": "Scholars cite One Hundred Years of Solitude, the 1967 novel by Colombian author Gabriel García Márquez, as a foundational text of magical realism, the Latin American style of fiction in which antirealistic plot devices—often borrowed from the spiritual and narrative traditions of Indigenous and colonial societies in the Americas—are deployed in an otherwise realistic mode of representation typical of the modern novel. This style has exerted a decisive influence on authors in the United States, including Toni Morrison, <u>whose 1987 novel Beloved resembles classic magical realist novels in its juxtaposition of literary realism with long-established cultural traditions—namely, those of the Black American community.</u>"
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "All ecotypes grew equally well in every water sample, so they don't seem adapted to their own water. The researchers didn't reproduce local light or temperature, so if the ecotypes are locally adapted, it must be to conditions like those rather than the water. B goes too far, because the experiment couldn't rule out adaptations to the untested conditions."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Males prefer green-feathered females as mates, so blue plumage doesn't help females attract mates. But males are less aggressive toward blue females when competing for resources, which suggests blue plumage persists for another reason, such as avoiding aggression. The text gives no basis for predicting future percentages (A) or for claims about juveniles (D)."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Manatí is well known for its history as a cultural center in the early 20th century\" and \"this distinction has earned it ... nickname\" are both independent clauses, so a semicolon joins them correctly. A comma alone (C) makes a comma splice, and no punctuation (B) or \"and\" without a comma (A) creates a run-on."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The properties belong to many nanoparticles, so the plural possessive \"nanoparticles’\" is needed, while \"properties\" is a plain plural with no apostrophe. B makes nanoparticle singular, A adds an unneeded apostrophe to properties, and C omits the possessive."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The words after the blank are a list of the innovations Marshall made (wheels, a cover, amplification). A colon after the complete clause \"made several innovations to the steel drum\" correctly introduces that list. A semicolon (D) would require an independent clause after it, and a comma or nothing doesn't properly set up the list."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The names hexafluorobenzene and benzene identify which liquid compounds are meant, so they are essential and take no commas. The subject \"The liquid compounds hexafluorobenzene ... and benzene\" then goes straight to the verb \"have.\" Any comma after \"compounds\" or before \"have\" wrongly separates the subject from its verb."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"rejects,\" with the subject \"Popper’s theory.\" The blank must start a modifier describing the theory: \"theory dictating that scientific hypotheses must be refutable.\" Any finite verb (\"dictates,\" \"dictated,\" \"was dictating\") would give the subject two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"helped sow,\" so the blank must complete the subject and begin a modifier: \"This cadre of renowned authors, asserting that ..., helped sow.\" The comma before \"asserting\" pairs with the comma after the quotation. Choices A and B add a second main verb, and C puts a comma between the subject and its verb."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After describing early discoveries and the 2003 discovery of Helike, the text gives the current total of moons found. \"To date\" signals \"up to now.\" \"For example\" and \"In other words\" don't fit, since eighty moons is neither an example nor a restatement of Helike's discovery."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The system classifies instruments by how they make sound, and the hardingfele makes sound mainly through vibrating strings, so it follows that it is a chordophone. \"Thus\" introduces this conclusion. \"Similarly\" and \"Furthermore\" don't express a logical result."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The actors' responses were suppressed during performances but normal in nonacting contexts, which is a contrast. \"Conversely\" signals it. \"Likewise\" implies similarity, and \"thus\" implies the normal responses were caused by the suppressed ones."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To explain the challenge to a new audience, the sentence must say what a 50 Completer does: reach the highest points in all fifty states. B states that rule and gives two summits as examples. A mentions only two peaks, and C and D focus on In Suk Han rather than explaining the challenge.",
+    "fix": {
+      "passage": "• The Highpointers Club is a hiking club.\n• One of the main goals among club members is to reach the highest points in all fifty US states.\n• Those who achieve this are called 50 Completers.\n• In Suk Han became a 50 Completer on November 15, 2013.\n• The highest point in West Virginia is Spruce Knob, at 4,863 ft.\n• The highest point in Colorado is Mount Elbert, at 14,440 ft."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Introducing Marie Hall means saying who she was; B states she was a British violinist who owned a Stradivarius. C only repeats that the violin is named for her without explaining who she was, and A and D are about Stradivari, not Hall.",
+    "fix": {
+      "passage": "• Antonio Stradivari (1644–1737) was an Italian instrument maker.\n• He made about 1,000 violins in his lifetime.\n• Musicians prize his Stradivarius violins for their famed sound quality.\n• The Marie Hall Stradivarius is named for former owner Marie Hall, a British violinist."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Supporting Browner's claim requires both the claim and evidence for it. B states the claim and then points to Washington Festival Suite, which uses a Pueblo log drum, a traditional Native instrument. A and D repeat the claim without evidence, and C is about the Pulitzer nomination.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• Ballard's composition Desert Trilogy was nominated for the Pulitzer Prize in music in 1971.\n• His composition Washington Festival Suite incorporates a Pueblo log drum, a traditional Native instrument.\n• Ethnomusicologist Tara Browner claims that Ballard's compositions rely on elements originating within Native musical traditions."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The research methods are what the team did: collected rock samples from two seafloor ridges and analyzed their age and oxidation levels. B describes exactly that. C and D describe the study's goals, and A focuses on Archean temperatures rather than the procedure.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Suzanne K. Birner led a study analyzing rocks on the seafloor to better understand the history of Earth's mantle.\n• Rock samples were collected from two seafloor ridges.\n• The researchers determined the samples’ period of formation (the Archean eon) and oxidation level (extremely low).\n• High temperatures in the Archean likely caused the rocks’ low oxidation.\n• Birner’s team suggests the oxidation of Earth’s mantle has remained stable over time, contrary to previous theories.\n• The findings help explain the unique conditions that allowed life to develop on Earth."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "B places the declaration within Valle's change of views: he long opposed independence, changed his mind after the 1820 revolt, and then wrote the 1821 declaration. A gives the wrong cause (the 1814 repeal), and C and D leave out either his change of beliefs or the declaration itself.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Leaders of the Province of Guatemala proclaimed independence for Central America from the Spanish Empire on September 15, 1821.\n• The accompanying Declaration of Independence was written by Honduran scholar and politician José Cecilio del Valle.\n• The 1812 Spanish Constitution had provided some degree of independence for Central America, but it was repealed by the Spanish king in 1814.\n• Valle, a loyal advisor to the Spanish Empire’s administrators in Central America, had long opposed independence.\n• He changed his mind after Colonel Rafael del Riego’s 1820 revolt, which demanded the return of rights lost in 1814."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Notice that 90x + 40 = 10(9x + 4). Since 9x + 4 = 67, the expression equals 10 · 67 = 670. Choice A, 7, is the value of x, not of the expression."
+  },
+  {
+    "key": "m1-02",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angle x° and the 72° angle are on opposite sides of the intersection of lines t and p, so they are vertical angles and are equal. So x = 72. Choice D, 252, comes from wrongly adding 180 instead of using the vertical-angle relationship."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "4500"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each meter is 10 decimeters, so 450 meters = 450 × 10 = 4,500 decimeters. Dividing by 10 instead would give 45, which goes the wrong way since decimeters are smaller units."
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "15"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute the width y = 14: 58 = 2x + 2(14) = 2x + 28. Then 2x = 30, so x = 15 feet."
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The starting value is 40, and increasing by 50% each step multiplies y by 1 + 0.50 = 1.50. So y = 40(1.50)^x. Choice B uses 1.05, which would be only a 5% increase."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "1/72",
+      ".0138",
+      ".0139",
+      "0.0139"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 9: f(9) = 1/(8 · 9) = 1/72. As a decimal, 1/72 ≈ 0.0139.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 1/(8x). What is the value of f(x) when x = 9?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: f(0) = 3(0) − 1/4 = −1/4. So the point is (0, −1/4). Choice C uses the slope 3 instead of the constant term.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 3x − 1/4. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "(0, −1/4)"
+      }
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "14"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second equation gives 6y = 14. Substitute that into the first: x + 14 = 28, so x = 14. There's no need to find y itself."
+  },
+  {
+    "key": "m1-09",
+    "answer": "B",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Square X has area 9^2 = 81 square centimeters. Adding rectangle Y's area gives 81 + 32 = 113. Choice D, 81, is only the square's area."
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bear must lose 293 − 230 = 63 pounds. At 0.9 pounds per day, that takes 63/0.9 = 70 days. Choice B, 63, is the number of pounds lost, not the number of days."
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = 0 where the graph touches or crosses the x-axis. The graph crosses it at x = −4, x = 0, and x = 2, so there are three such values. The turning points don't lie on the x-axis, so they add no extra zeros."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add 4c to both sides: b^2 = 7d + 4c. Taking the square root of both sides gives b = ± sqrt(7d + 4c). Choices A and B forget that b is squared, and D has the wrong sign on 4c.",
+    "note": "The condition is printed as d > (4/7)c; it is probably meant to be d > −(4/7)c so that 7d + 4c > 0. The answer is C either way.",
+    "fix": {
+      "prompt": "b^2 − 4c = 7d\nThe given equation relates the real numbers b, c, and d, where d > (4/7)c. Which equation correctly expresses b in terms of c and d?",
+      "choices": {
+        "A": "b = (7d + 4c)/2",
+        "B": "b = (7d − 4c)/2",
+        "C": "b = ± sqrt(7d + 4c)",
+        "D": "b = ± sqrt(7d − 4c)"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 81/16 to both sides: x^2 = 81/16. Then x = 9/4 or x = −9/4, which gives two distinct real solutions. Choosing \"exactly one\" forgets the negative root.",
+    "fix": {
+      "prompt": "x^2 − 81/16 = 0\nHow many distinct real solutions does the given equation have?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Dilating by a scale factor of 6 multiplies every side length by 6. So A′B′ = 6 · 18 = 108. Choice A, 3, divides by 6 instead.",
+    "fix": {
+      "prompt": "Triangles ABC and A′B′C′ are shown. Triangle ABC is dilated by a scale factor of 6 to form triangle A′B′C′. If the length of AB is 18, what is the length of A′B′?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "19"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation is in the form (x − h)^2 + (y − k)^2 = r^2, so r^2 = 361. The radius is sqrt(361) = 19. Don't use 361 itself, which is the radius squared."
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If x < 0 and y > 0, then 5x is negative and −7y is negative, so 5x − 7y < 0, which can never be greater than 35. Every other region contains solutions: for example, (8, 0) on the x-axis, (20, 1) in the first quadrant, and (−1, −10) in the third quadrant."
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At least 18 years old covers 21% + 29% + 24% = 74% of the city. Of those, 24% are over 65, so the conditional probability is 24/74 ≈ 0.32. Choice A, 0.24, ignores the condition and uses the whole population.",
+    "fix": {
+      "prompt": "The table shows the distribution of people in a certain city by age group.\nIf a person in this city is selected at random, which of the following is closest to the probability of selecting a person who is greater than 65 years old, given that the person is at least 18 years old?",
+      "table": {
+        "headers": [
+          "Age group",
+          "Proportion"
+        ],
+        "rows": [
+          [
+            "Less than 18 years old",
+            "26%"
+          ],
+          [
+            "18-40 years old",
+            "21%"
+          ],
+          [
+            "41-65 years old",
+            "29%"
+          ],
+          [
+            "Greater than 65 years old",
+            "24%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: (1/9)y = −(1/2)x + 54, so y = −(9/2)x + 486, and line h has slope −9/2. A perpendicular line has the negative reciprocal slope, 2/9. Choice A is the slope of h itself.",
+    "fix": {
+      "prompt": "Line h is defined by (1/2)x + (1/9)y − 54 = 0. Line j is perpendicular to line h in the xy-plane. What is the slope of line j?",
+      "choices": {
+        "A": "−9/2",
+        "B": "−2/9",
+        "C": "9/2",
+        "D": "2/9"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With 7 values in order, the median is the 4th value, so b = 29. The mean is 36, so the sum is 7 · 36 = 252, and a + 26 + 29 + 29 + 31 + 47 + c = 252 gives a + c = 90. The range gives c − a = 72, so adding the equations gives 2c = 162 and c = 81."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at R, so QS is the hypotenuse and side RS = 37 is opposite angle Q. Then sin Q = 37/QS, so QS = 37/sin Q. Choice C would be correct only if 37 were the side adjacent to Q.",
+    "fix": {
+      "choices": {
+        "A": "37 cos Q",
+        "B": "37 sin Q",
+        "C": "37/cos Q",
+        "D": "37/sin Q"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set y = 0: 9(a/7)^(x − c) = b, so (a/7)^(x − c) = b/9. Since a > 7, the base a/7 is greater than 1, so the exponential is increasing and takes each positive value exactly once. Because b/9 > 0, there is exactly one solution, so the graph crosses the x-axis once.",
+    "fix": {
+      "prompt": "y = 9(a/7)^(x − c) − b\nHow many times does the graph of the given equation in the xy-plane cross the x-axis, where a, b, and c are positive constants such that a > 7 and b > c?"
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since 1 mile = 1,760 yards, 1 square mile = 1,760^2 = 3,097,600 square yards. So 4.29 square miles = 4.29 × 3,097,600 = 13,288,704 square yards. Multiplying by 1,760 only once would give about 7,550, choice B."
+  },
+  {
+    "key": "m2-01",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After running x more miles, Zuri's total is 4 + x, and \"at least 16\" means ≥ 16. So 4 + x ≥ 16. Choice B uses ≤, which would mean at most 16 miles."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angle w (at line r) and angle y (at line s) are in the same relative position where line k crosses each line, so they are corresponding angles. If y = 147 = w, the corresponding angles are equal, which proves r ∥ s. The other choices give relationships that would hold no matter how r and s are tilted, so they don't prove anything."
+  },
+  {
+    "key": "m2-03",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 10 to 15 tickets the total rises by $7.50, so each ticket costs 7.50/5 = 1.5 = 3/2 dollars. Then 44 = (3/2)(10) + b gives b = 29, so y = (3/2)x + 29. Check: (3/2)(25) + 29 = 66.50.",
+    "fix": {
+      "choices": {
+        "A": "y = (3/2)x + 29",
+        "B": "y = (3/2)x − 56",
+        "C": "y = (2/3)x + 112/3",
+        "D": "y = (2/3)x + 58/3"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line of best fit passes through about (0, 0) and (500, 300), so its slope is 300/500 = 0.6. That means about 60 more seeds germinate for every 100 more seeds planted. The graph has nothing to do with days, so A and B are wrong."
+  },
+  {
+    "key": "m2-05",
+    "answer": [
+      "-2"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Solve for y: y = −2x + 11. The coefficient of x is the slope, so the slope is −2."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(x) · g(x) = (2x + 3)(7x − 2) = 14x^2 − 4x + 21x − 6 = 14x^2 + 17x − 6. Subtracting h(x): 14x^2 + 17x − 6 − (5x − 6) = 14x^2 + 12x. So b = 12; forgetting to subtract h(x) gives 17."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set (a − 11)/5 = −18. Multiply by 5: a − 11 = −90, so a = −79. Choice A comes from subtracting 11 instead of adding it.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = (x − 11)/5, and f(a) = −18, where a is a constant. What is the value of a?",
+      "choices": {
+        "A": "−101",
+        "B": "−79",
+        "C": "−79/5",
+        "D": "−7/5"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the table, y increases by 6 each time x increases by 1, and y = −10 at x = 0, so line j is y = 6x − 10. Setting 6x − 10 = 4x gives x = 5, and y = 4(5) = 20. Only (5, 20) lies on both lines.",
+    "fix": {
+      "prompt": "The table shows values of x and their corresponding values of y for three points on line j in the xy-plane.\nLine k also lies in the xy-plane and is defined by the equation y = 4x. At what point (x, y) do lines j and k intersect?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "0",
+            "−10"
+          ],
+          [
+            "1",
+            "−4"
+          ],
+          [
+            "2",
+            "2"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "11/10",
+      "1.1"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0 the height is b, so b = 19.36. The object hits the ground when −16t^2 + 19.36 = 0, so t^2 = 19.36/16 = 1.21 and t = 1.1 seconds (time can't be negative).",
+    "fix": {
+      "prompt": "h(t) = −16t^2 + b\nThe function h estimates an object's height, in feet, above the ground t seconds after the object is dropped, where b is a constant. The function estimates that the object is 19.36 feet above the ground when it is dropped at t = 0. How many seconds after being dropped does the function estimate the object will hit the ground?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An absolute value is never negative, so |4x − 3| can never equal −9. The equation has no solutions. Solving 4x − 3 = ±9 without checking would wrongly suggest two solutions.",
+    "fix": {
+      "prompt": "|4x − 3| = −9\nHow many solutions does the given equation have?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At (0, 10): a^0 + b = 1 + b = 10, so b = 9. At (2, 13): a^2 + 9 = 13, so a^2 = 4 and a = 2 (a is positive). Then ab = 2 · 9 = 18. Forgetting that a^0 = 1 and using b = 10 leads to wrong values."
+  },
+  {
+    "key": "m2-12",
+    "answer": [
+      "16"
+    ],
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 45° arc is 45/360 = 1/8 of the circle, so the full circumference is 8 · 4π = 32π. Since circumference = 2πr, r = 32π/(2π) = 16."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each time n increases by 1, the value is multiplied by 0.19, which means it keeps 19% and loses 1 − 0.19 = 0.81, or 81%. So p = 81. Choice A, 19, is the percent that remains, not the percent decrease."
+  },
+  {
+    "key": "m2-14",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A quadratic has exactly one real solution when its discriminant is 0: (sqrt(k − 3))^2 − 4(1)(42) = 0. Since (sqrt(k − 3))^2 = k − 3, this gives k − 3 = 168, so k = 171. Choice B, 168, forgets to add the 3.",
+    "fix": {
+      "prompt": "x^2 + (sqrt(k − 3))x + 42 = 0\nIn the given equation, k is a constant. The equation has exactly one real solution. What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "At x = −5 the circle gives 25 + y^2 = 36, so y^2 = 11, and since y < 0, y = −sqrt(11). Substituting into the line: −sqrt(11) = m(−5) − b/4, so b/4 = −5m + sqrt(11) and b = −20m + 4sqrt(11). Choice D has the opposite sign, which would come from using y = +sqrt(11).",
+    "type": "mcq",
+    "fix": {
+      "prompt": "x^2 + y^2 = 36\ny = mx − b/4\nIn the given system of equations, m and b are negative constants. In the xy-plane, the graphs of the equations in the given system intersect at the point (−5, y), where y < 0. Which expression represents the value of b?",
+      "choices": {
+        "A": "(5m)/4 + sqrt(11)/4",
+        "B": "(5m)/4 − sqrt(11)/4",
+        "C": "−20m + 4sqrt(11)",
+        "D": "20m − 4sqrt(11)"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let x be the grams of 0.3% solution, so 80 − x grams are 0.15% solution. The salt equation is 0.003x + 0.0015(80 − x) = 0.21, which gives 0.0015x + 0.12 = 0.21, so x = 60. Choice B, 20, is the amount of the 0.15% solution."
+  },
+  {
+    "key": "m2-17",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Data set A in order is 0, 0, 3, 3, 4, 4, 5, 5, 6, 7, 13; with 11 values the median is the 6th, which is 4. After removing 13, the 10 values have median (4 + 4)/2 = 4. The medians are equal; removing the outlier changes the mean, not the median here.",
+    "fix": {
+      "prompt": "For data set A, the table summarizes the distribution of the number of pieces of mail received by a business each day during a period of 11 days.\nThe data value 13 is removed from data set A to create data set B, which consists of the remaining 10 data values. Which statement best compares the median of data set A and the median of data set B?",
+      "table": {
+        "headers": [
+          "Pieces of mail",
+          "Days"
+        ],
+        "rows": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "3",
+            "2"
+          ],
+          [
+            "4",
+            "2"
+          ],
+          [
+            "5",
+            "2"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ],
+          [
+            "13",
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The total resistance is x·a + y·b, and the equation can be written x · (1/5) + y · (1/9) = 47/45. So a = 1/5 and b = 1/9, and the difference is 1/5 − 1/9 = 9/45 − 5/45 = 4/45. Choice B, 4, is only the numerator of that difference.",
+    "fix": {
+      "prompt": "x/5 + y/9 = 47/45\nAn engineer connects resistors in series, where the resistors in the series have a total resistance of 47/45 ohms. In this series, there are x resistors of type A, which each have a resistance of a ohms, and y resistors of type B, which each have a resistance of b ohms. The given equation represents this situation. According to this equation, what is the positive difference between the value of a and the value of b?",
+      "choices": {
+        "A": "47",
+        "B": "4",
+        "C": "47/15",
+        "D": "4/45"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "36"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite as 9x^2 − nx + 8 = 0. Exactly one solution means the discriminant is 0: n^2 − 4(9)(8) = 0, so n^2 = 288. Then n^2/8 = 288/8 = 36.",
+    "fix": {
+      "prompt": "9x^2 + 8 = nx\nIn the given equation, n is a constant. The equation has exactly one solution. What is the value of n^2/8?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The area ratio is 2,520/630 = 4. For similar figures, areas scale by the square of the length scale factor, so lengths scale by sqrt(4) = 2. The perimeter is a length, so n = 2 · 210 = 420. Choice C, 840, multiplies by 4 as if perimeter scaled like area.",
+    "fix": {
+      "prompt": "The table gives the areas and perimeters of two similar rectangles, where n is a constant.\nWhat is the value of n?",
+      "table": {
+        "caption": "Rectangles A and B",
+        "headers": [
+          "Rectangle",
+          "Area (square inches)",
+          "Perimeter (inches)"
+        ],
+        "rows": [
+          [
+            "A",
+            "630",
+            "210"
+          ],
+          [
+            "B",
+            "2,520",
+            "n"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "60000"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write A = 4.44B and A = 0.00740C. Then 0.00740C = 4.44B, so C = 4.44B/0.00740 = 600B. C is 600 times B, which is 60,000% of B, so p = 60000."
+  },
+  {
+    "key": "m2-22",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Factor out (x − 3): (x − 3)[y^2 − 25(x − 3)^2]. The bracket is a difference of squares: (y − 5(x − 3))(y + 5(x − 3)) = (y − 5x + 15)(y + 5x − 15). So y + 5x − 15 is a factor. Choice C looks similar but doesn't match either factor."
+  }
+]

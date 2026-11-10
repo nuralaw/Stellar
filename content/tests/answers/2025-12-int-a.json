@@ -1,0 +1,1094 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tom looks over the fence and takes in its full size (thirty yards long, nine feet high) before feeling gloomy, so \"surveyed\" means examined. He doesn't change, arrange or promise anything about the fence, so \"transformed,\" \"organized\" and \"guaranteed\" don't fit."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Shakespeare's influence is \"clear\" in literature and \"similarly\" something in other media, so the blank must mean about the same as clear: \"apparent.\" \"Subtle\" says the opposite, and \"unusual\" or \"excessive\" don't match the idea of being easy to see."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Apollo data are stored on obsolete technology, and the project wants to make them available again, so it is working to rescue, or salvage, the data. \"Improve,\" \"amend\" and \"simplify\" suggest changing the data, but the problem is only that they are hard to access."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The husband's name \"breathes bravery and life and courage to the tribe,\" meaning it gives or passes those qualities on to the people. That is what \"imparts\" means. \"Absorbs\" is the reverse direction, and \"rejects\" and \"acquiesces\" make no sense with the praise in the poem."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the colon, the text says making the panels takes more than the ability to draw: it requires knowledge of techniques and materials learned from experienced artisans. So the needed skills go beyond, or transcend, natural talent. \"Replicates\" and \"characterizes\" suggest the skills are the same as talent, and \"restrains\" adds an idea the text never mentions."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence describes the two kinds of teams that were compared, humans only versus humans with robots, which is a key part of how the experiment was set up. The results come in the last sentence (A), and the research question is stated in the second sentence (B).",
+    "fix": {
+      "passage": "In factories, humans and robots often work together. A research team ran an experiment to find out how working with robots affects relationships between human coworkers. The experiment included teams working together to make electric motor parts. <u>One type of team included only humans and the other type included both humans and robots.</u> Participants were paid for their work and were asked about their willingness to share their earnings with their human teammates. Participants from teams with robots were more likely to share with each other than participants from teams with only humans were."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says that since 1967 NEC's workshops and performances have given Black playwrights a forum, which stresses the company's lasting importance. The circumstances of NEC's founding (D) are in the earlier sentences about Ward and Hooks, and the sentence isn't about the influence of the play Eden (A).",
+    "fix": {
+      "passage": "Steve Carter’s award–winning play Eden was produced in 1976 by the groundbreaking Negro Ensemble Company (NEC). NEC cofounder Douglas Turner Ward, who worked as an actor, director, and playwright, had met actor and producer Robert Hooks while they were performing in a 1960 touring production of Lorraine Hansberry’s play A Raisin in the Sun. Together, they envisioned a theater company that would nurture and showcase the work of Black theater professionals. <u>Since NEC’s founding in 1967, its workshops and performances have given Black playwrights, including Carter, a forum for their compelling stories.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first presents the surprising, disputed detection of phosphine on Venus, then describes Bains et al.'s modeling of non-biological ways the gas could form, and ends by saying that if the gas is real, current ideas about Venus's chemistry are incomplete. That matches D. C is tempting, but the text never describes a consensus view of the gas or calls for future observations."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Stern and Gerya argue that Earth's shift to plate tectonics sped up the rise of complex life and that tectonics could narrow the search beyond the usual atmosphere-and-habitable-zone criteria. So they would expect complex life to be more likely on such planets when they also have plate tectonics. C goes too far by ranking tectonics above orbit and atmosphere, and the text says nothing about the timing in B or D."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes two Indigenous-led cultural centers that rely on traditional knowledge and serve tribal citizens, then says both contrast with non-Indigenous museums that use Euro-centric strategies for mainly non-Indigenous audiences. B captures that contrast. A turns the description into a recommendation, and C invents a claim about the range of subjects."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Kansas seems less appealing than Oz. In A a character calls Oz a \"beautiful country\" and Kansas a \"dry, gray place,\" which directly compares the two. B, C and D mention Kansas or Oz but never show Kansas as worse."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Portugal's drop of 536 hours is smaller than France's 679 but larger than Argentina's 342 and Israel's 45, which is exactly what D says. A is wrong because France's percent decrease (31%) is bigger than Portugal's (22%), and C wrongly says Portugal's decline was less than Israel's.",
+    "fix": {
+      "passage": "A student in an economics course is examining the decline since 1950 in average hours worked per person per year in various nations due to both increased productivity and the adoption of policies that limit working hours. The student researches how the decline in Portugal compares to that in other countries.",
+      "table": {
+        "caption": "Average Hours Worked per Person per Year in 1950 and 2017 (calculations may be inexact due to rounding)",
+        "headers": [
+          "Country",
+          "1950",
+          "2017",
+          "Change in hours",
+          "Percent change in hours"
+        ],
+        "rows": [
+          [
+            "Argentina",
+            "2,034",
+            "1,692",
+            "−342",
+            "−17%"
+          ],
+          [
+            "Portugal",
+            "2,399",
+            "1,863",
+            "−536",
+            "−22%"
+          ],
+          [
+            "Israel",
+            "1,966",
+            "1,921",
+            "−45",
+            "−2%"
+          ],
+          [
+            "France",
+            "2,193",
+            "1,514",
+            "−679",
+            "−31%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the Dixie Pike has a deep connection to a faraway place. B says the road \"has grown from a goat path in Africa,\" linking it to a distant continent. A mentions a faraway place (Washington, DC) but not the Dixie Pike, and D names the Pike without any distant connection."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers say designers often put looks ahead of historical accuracy. In C the designer drops historically typical extra fabric because it made the costumes \"unappealingly bulky\" — an aesthetic reason. A and D also depart from accuracy, but for practical reasons (costume changes, overheating), not for looks."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The fox lived at the site at the same time as the people, may have been buried by them, and ate plants like the humans did, unlike wild foxes. Together this suggests it lived closely with people, perhaps as a companion animal. D contradicts the text's point that the fox's diet differed from that of wild animals, and A and B aren't supported by the evidence about the fox."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence has the subject \"Elizabeth Cady Stanton and Susan B. Anthony\" but no main verb, so the blank needs a finite verb: \"campaigned.\" \"Having campaigned,\" \"campaigning\" and \"to campaign\" are not finite verbs and would leave the sentence a fragment."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"What her favorite book was\" is an indirect question inside a statement, so it uses statement word order and ends with a period. B and C wrongly use a question mark, and B and D also use question word order (\"was her favorite book\"), which only belongs in a direct question."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Showcasing the stylistic diversity...\" is a participial phrase that describes the result of the collaboration, so a comma joins it to the main clause. A creates a comma splice with \"it showcased,\" and B and D put a period before a piece that can't stand alone, making fragments."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"For example, a pianist could replace ... while improvising\" is a complete sentence, and \"Which chord is a given chord's opposite can be determined...\" is a second complete sentence whose subject is the noun clause \"which chord is a given chord's opposite.\" A period must separate them. A and D run the two sentences together, and B's \"and\" makes the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"utilized,\" so the blank must not add another verb. \"Mendieta, hoping to access ... force,\" sets off a descriptive phrase between commas, and the closing comma after \"force\" matches the comma in D. A, B and C each add a second main verb (\"was hoping,\" \"hoped,\" \"had hoped\"), which clashes with \"utilized.\""
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tendürek is a shield volcano with a low profile, while Opala is a different type, a caldera. The sentence sets up a contrast between two kinds of volcanoes, so \"in contrast\" fits. \"In fact\" would suggest Opala supports the previous point, and \"in conclusion\" doesn't fit a new example."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence says 62 percent of Belgium's exports were manufactured goods, and this sentence names the top items among them (vaccines, medicines and cars). \"Within this category\" correctly signals that these are examples inside manufactured goods. \"Despite this majority\" wrongly suggests a contrast."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says chimpanzee gesture exchanges happen at a pace similar to human conversation, and the next sentence gives the precise numbers (about 120 versus 200 milliseconds). \"Specifically\" introduces those details. \"By contrast\" and \"nevertheless\" signal a contradiction that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize a difference between the two organisms, the sentence must compare them; D says Artemia franciscana are crustaceans whereas Nodularia are bacteria. B states a similarity (both live in the southern portion), and A and C don't compare the two organisms.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Great Salt Lake in Utah is one of the world’s saltiest bodies of water.\n• The northern portion of the lake has a higher concentration of salt than the southern portion.\n• Crustaceans called Artemia franciscana live in the southern portion.\n• Bacteria called Nodularia live in the southern portion."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity is something both astronauts share, and C says each performed multiple spacewalks (9 and 3). A points out a difference, B only defines EVAs, and D wrongly treats spacewalks and EVAs as different things.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Extravehicular activities (EVAs) are activities performed outside a spacecraft by astronauts in outer space.\n• EVAs are also known as spacewalks.\n• Richard Mastracchio is a former US astronaut who has performed 9 spacewalks.\n• The total time of Mastracchio’s spacewalks was 53 hours and 4 minutes.\n• Garrett Reisman is a former US astronaut who has performed 3 spacewalks.\n• The total time of Reisman’s spacewalks was 21 hours and 21 minutes.",
+      "prompt": "The student wants to emphasize a similarity between the astronauts Mastracchio and Reisman. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the Fish & Wildlife Service's role in protecting the clapper rail's habitat, and A says the agency does this by limiting human activities in the refuge. B mentions the limits but not who sets them or why, and C and D don't mention the agency at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Tijuana Slough National Wildlife Refuge (NWR) is a protected natural area in California.\n• It encompasses 1,023 acres.\n• The Tijuana Slough NWR was established to safeguard the habitat of the light-footed clapper rail, an endangered species.\n• The Tijuana Slough NWR is managed by the US Fish & Wildlife Service.\n• The US Fish & Wildlife Service limits human activities in the area."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To identify a language written in cuneiform, the sentence must name it: D says Sumerian was written using the cuneiform script. B refers only to \"a language\" without naming it, and A and C don't name any language.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The cuneiform script is the earliest known set of symbols used for writing.\n• Sumerian was one of the first languages to be written using the cuneiform script.\n• Sumerian was a language in ancient Mesopotamia (present-day Iraq).\n• Clay tablets with Sumerian writing have been found there.\n• Some of these tablets are almost 5,000 years old."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers explain the longer flowering period by pointing to its causes: fewer available pollinators and the better chance of pollination that staying open gives. Saying the extended period could be \"attributed to\" these factors expresses that cause-and-effect link. \"Analogous to\" only means similar, and \"magnified by\" or \"converted by\" don't describe an explanation."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The signpost points travelers toward the village, but people never \"accepted\" that direction because they never came there, so \"accepted\" means followed. \"Approved\" and \"authorized\" suggest giving permission, and \"shifted\" makes no sense for a direction people ignore."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Preserved specimens show only brief moments of a plant's development, so studies of live plants would fill in what is missing. Adding live-plant studies to complete the herbarium research is \"complementing\" it. \"Foregrounding\" means putting it first, and \"categorizing\" and \"anticipating\" don't describe combining two kinds of study."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Although\" sets up a contrast: the painting is unusual in its plain background, but it \"nonetheless\" shows many of Vermeer's signature traits. \"Evinces\" means clearly shows. \"Repudiates\" and \"eschews\" mean rejects or avoids, the opposite of what the contrast requires, and \"predates\" is about time, not traits."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says horizontal gene transfer is common among prokaryotes but has rarely been observed among eukaryotes, comparing how often it has been detected in two groups of organisms. D is tempting, but the sentence is about frequency, not about how the processes work, and the claim that this view may be wrong (C) comes only in the next sentence.",
+    "fix": {
+      "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. <u>While horizontal gene transfer is common among prokaryotes—single-celled organisms, such as the bacteria Brevundimonas diminuta and Massilia timonae—it has rarely been observed among eukaryotes (multicellular organisms).</u> However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined phrase states the assumptions behind Restrepo's result: a conservative estimate of viable compounds and a doubled pace of discovery. These are the \"hypothetical conditions\" that limit the claim that all compounds could be documented by 2050. A is wrong because the phrase assumes a future rate instead of comparing past and present rates, and nothing in the text blames human inefficiency (B).",
+    "fix": {
+      "passage": "The synthesis of novel superheavy elements, such as moscovium (Mc), has led theorists to consider the feasibility of synthesizing all possible chemical compounds. In 2022, Guillermo Restrepo calculated the historical rates at which newly discovered compounds have entered the scientific literature, expanding the “chemical space.” <u>Using a conservative estimate of the number of viable compounds and assuming a doubling of the historical pace of discovery,</u> Restrepo found that under these hypothetical conditions, all potential compounds could be synthesized and documented by 2050."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence tells how Yung, as a schoolboy, wrote about an imaginary trip to New York and later really went there. The next sentence names the general idea this shows: imagination sometimes foreshadows reality. So the sentence is an example of that phenomenon. It says nothing about why he became interested in writing (A) or about confusing fantasy and reality (B).",
+    "fix": {
+      "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America. Yung Wing was the first person from China to graduate from a US university.\n\n<u>Little did I realize when in 1845 I wrote, while in the Morrison School, a composition on \"An Imaginary Voyage to New York and up the Hudson,\" that I was to see New York in reality.</u> This incident leads me to the reflection that sometimes our imagination foreshadows what lies uppermost in our minds and brings possibilities within the sphere of realities."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says both prints show plain manufactured objects (a metal fragment, a corroded staple) in a minimalist way and \"push traditional boundaries for figurative art.\" So both what is shown and how it is shown set the prints apart from conventional art. The text gives no goal about disrupting exhibitions (A), compares no printing methods (C), and calls the interest new rather than borrowed from an earlier movement (D)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The fruiting areas of the mycelium stayed colder than the nonfruiting areas even after the fruited bodies were removed. That means the temperature difference across the mycelium doesn't depend on whether fruited bodies are attached, which is C. The text never compares mycelium and fruited-body temperatures (A), reports no link between warmer mycelium and productivity (B), and gives no cause involving soil depth (D)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ptacek et al. found that gas permeability is tied to curing quality and that high permeability goes with more deterioration over time, so it is a useful sign of durability. Since current assessments look almost only at compressive strength, the findings suggest adding gas permeability testing. A goes too far by saying it is more reliable than strength testing, and B reverses the relationship between permeability and damage.",
+    "fix": {
+      "passage": "Quality assessments of concrete typically focus almost exclusively on compressive strength as a measure of durability, overlooking other potentially relevant factors. Lisa Ptacek et al. therefore investigated the potential of gas permeability (vulnerability to incursion by gases), which is caused in part by excessive porosity, as a durability indicator. Their measurements and observations revealed that quality of conditions during the concrete curing phase negatively correlates with gas permeability and that high gas permeability values are associated with increased deterioration as concrete surfaces age.",
+      "prompt": "Information in the text best supports which statement about Ptacek et al.'s findings?"
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must be a bird that can fly yet weighs far more than a kilogram. The trumpeter swan flies and averages 12.7 kg, the heaviest flier in the table, so it shows this \"most clearly.\" The ostrich (A, C) can't fly, and D misstates the great bustard's mass, which is 10.6 kg.",
+    "fix": {
+      "passage": "Most bird species that are capable of flight weigh less than a kilogram (kg), which is not surprising considering the burden that extra body weight puts on a flying animal. But not all flying birds are so light, as we can see most clearly in the example of the ______",
+      "table": {
+        "caption": "Bird Species by Average Mass",
+        "headers": [
+          "Common name",
+          "Average mass (kg)",
+          "Capable of flight?"
+        ],
+        "rows": [
+          [
+            "Great bustard",
+            "10.6",
+            "Yes"
+          ],
+          [
+            "Trumpeter swan",
+            "12.7",
+            "Yes"
+          ],
+          [
+            "Emperor penguin",
+            "31.5",
+            "No"
+          ],
+          [
+            "Common ostrich",
+            "104.0",
+            "No"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "RSRs protect people who already hold policies from price swings, but they may push insurers to sell fewer new policies, weakening competition that keeps new-policy prices down. So current policyholders gain while people trying to buy policies may pay more. C contradicts the text's point that less competition can raise new-policy prices, and D wrongly says existing policyholders face more risk."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Núñez and colleagues claim that thinking of time along a straight line is not universal. If Yupno future-oriented gestures don't point opposite to past-oriented ones, the Yupno aren't placing past and future on one linear axis, which supports the claim. A, B and D don't address whether the gestures follow a linear axis."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers compare results from the wild with results from the lab. Wild data on sloth sleep would only matter if there were lab data on the same behavior to compare it with, so they would be irrelevant if that behavior hadn't been studied in the lab. A would actually make the data relevant, since it gives a lab result to compare, and B and D are about sparrows, not sloth sleep."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"was\" (\"was a pivotal figure\"), so the blank should begin a descriptive phrase, not add another verb. \"Chen, known for ... compositions,\" sets that phrase off with commas. A and C add the verb \"was known\" (A also wrongly puts a comma between subject and verb), and D adds \"is known.\""
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Juan Felipe Herrera\" identifies the writer, and \"whose early career...\" adds extra information about him, so a comma belongs before \"whose\": \"writer Juan Felipe Herrera, whose....\" No comma is used between \"writer\" and the name because the name is essential. B and C break the sentence with a period, and D leaves out the needed comma.",
+    "fix": {
+      "passage": "\"Streetwide and bitter as hope / strewn between El Salvador and San Francisco.\" These lines are from a poem by Chicano _____ whose early career as a campesino informs the dialogue on Mexican American politics and identity that unfolds in his work."
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The subject \"paintings\" already has its verb later in the sentence: \"attracted legions of new fans.\" So the blank should close the parenthesis and start a descriptive phrase, \"long celebrated by admirers...,\" set off by commas. B, C and D add a second verb (\"were,\" \"have been,\" \"had been\") that clashes with \"attracted.\""
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "\"Among the small magazines ... was Blast\" is a complete sentence. What follows, \"Edited by Wyndham Lewis and featuring ... , this magazine publicized...,\" is a second complete sentence that begins with a modifier describing \"this magazine.\" A period separates them. A and C run the sentences together, and D's semicolon can't be used because the second part already contains semicolons separating list items, which makes the sentence confusing."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"interplay,\" so the verb must be singular: \"evokes.\" The plural nouns \"vadi and samvadi\" and \"sequences\" are inside prepositional phrases and don't control the verb. \"Evoke\" and \"have evoked\" are plural, and \"evoking\" is not a finite verb."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The verb's subject is \"each\" (\"each of which\"), which is singular, so it takes the singular verb \"offers.\" \"Are offering\" and \"offer\" are plural, agreeing with \"manuscripts\" by mistake, and \"offering\" can't serve as the clause's main verb."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second clause explains what \"regional authenticity\" means: the cheeses are made with local ingredients and traditional regional methods. \"That is\" introduces a restatement or clarification. \"Rather\" and \"still\" signal a contrast, and \"then\" signals a sequence, neither of which fits."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because Valetudo orbits in the same direction Jupiter rotates, its orbit is called prograde; the second sentence is a conclusion drawn from the first. \"Hence\" signals that result. \"Nevertheless\" signals a contrast, and \"next\" signals a sequence."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since Italian was the default language for opera scores for centuries, singers today naturally meet many Italian terms when reading old scores. The second sentence is a consequence of the first, so \"thus\" fits. \"However\" signals a contrast, and \"lastly\" suggests the end of a list."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says sea powers and land powers are usually seen as separate, then notes that the British Empire controlled both land and sea. That example breaks down the distinction, so \"blurring this line\" fits. A, B and C all claim the example supports the distinction, which is the opposite of what it shows."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The models predict that individuals in the coolest areas will benefit from warming, but the study found that warmer temperatures reduced piñon growth in all areas. That is a contrast with the models, so \"though\" fits. \"Therefore\" and \"for example\" wrongly suggest the study follows from or illustrates the models."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subject matter is what the prints depict, and C contrasts Tana's political scene with Burroughs's tranquil everyday scene. B contrasts dates, and A and D are about technique; both prints are actually linocuts, so those choices also misstate the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Birthday Party is a 1957 black-and-white linocut print by Black American artist Margaret Burroughs.\n• It depicts a tranquil, everyday scene (a group of children celebrating).\n• Amanzi Amthatha (“The cold water takes him”) is a 2001 black-and-white linocut print by South African artist Nomathemba Tana.\n• It features a scene with an explicitly political point of view (a Xhosa warrior fighting British colonial rule).\n• Relief printing is a technique in which an image is carved onto a printing block, covered in ink or paint, and stamped"
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name a particle physicist whose research involves neutrinos. C names Atsuto Suzuki, calls him a particle physicist, and gives his discovery of geoantineutrinos. A, B and D talk about neutrinos or particle physicists in general without naming anyone.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Atsuto Suzuki is a Japanese particle physicist.\n• Particle physicists study subatomic particles.\n• Neutrinos are some of the least understood subatomic particles.\n• Neutrinos were first discovered in the mid-twentieth century.\n• Suzuki is known for his discovery of geoantineutrinos."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "44"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 10: f(10) = 5(10) − 6 = 50 − 6 = 44."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every recorded wind speed was at least the lowest value, 5 mph, and at most the highest value, 14 mph, so 5 ≤ w ≤ 14. A and C each describe only one bound and would include speeds that were never recorded, and B uses 9, the difference between the extremes."
+  },
+  {
+    "key": "m1-03",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: 4p − 5p = −p, so −p = 14 and p = −14. Choice D forgets the negative sign, and B and C come from dividing instead of solving.",
+    "fix": {
+      "choices": {
+        "B": "−1/14",
+        "C": "1/14"
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "6"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The 21 equal sides together measure 131 − 5 = 126 inches. Each one is 126/21 = 6 inches."
+  },
+  {
+    "key": "m1-05",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In 13,000 = 2,600 + 260t, the term 260t grows by 260 for each monthly payment t, so 260 is the dollar amount of each monthly payment. The down payment is the constant 2,600 (A), and 13,000 is the total price (C)."
+  },
+  {
+    "key": "m1-06",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There is no need to solve for x: since 3 − 2x = 42, (1/6)(3 − 2x) = 42/6 = 7. Choice D multiplies 42 by 6 instead of dividing.",
+    "fix": {
+      "prompt": "If 3 − 2x = 42, what is the value of (1/6)(3 − 2x)?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set up 72/m = 4/24. Since 4/24 = 1/6, 72/m = 1/6, so m = 72 × 6 = 432. Choice A (3) comes from flipping the ratio."
+  },
+  {
+    "key": "m1-08",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product is zero when a factor is zero: z + 4 = 0 gives z = −4, and z − 6 = 0 gives z = 6. Choice C flips both signs, a common error."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "6"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both equations have the same left side, 7x − 8y, so their right sides are equal: x^2 = 36. Then x = 6 or x = −6, and since x is positive, x = 6."
+  },
+  {
+    "key": "m1-10",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope is (39 − 48)/(−3 − (−6)) = −9/3 = −3. Using (3, 21): 21 = −3(3) + b, so b = 30 and y = −3x + 30, or 3x + y = 30. Multiplying by 3 gives 9x + 3y = 90. B has the right left side but the wrong constant, and C and D have the coefficients swapped.",
+    "fix": {
+      "prompt": "The table shows four values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−6",
+            "48"
+          ],
+          [
+            "−3",
+            "39"
+          ],
+          [
+            "3",
+            "21"
+          ],
+          [
+            "6",
+            "12"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Standard deviation measures spread, and Group B's (19.1 cm) is larger than Group A's (12.5 cm), so Group B's heights were more spread out. Equal means and sample sizes don't make the data sets identical (A), and the table says nothing about the tallest person or the medians (B, D).",
+    "fix": {
+      "prompt": "The results of two independent surveys are shown in the table below.\nWhich statement is true based on the table?",
+      "table": {
+        "caption": "Men's Height",
+        "headers": [
+          "Group",
+          "Sample size",
+          "Mean (centimeters)",
+          "Standard deviation (centimeters)"
+        ],
+        "rows": [
+          [
+            "A",
+            "2,500",
+            "186",
+            "12.5"
+          ],
+          [
+            "B",
+            "2,500",
+            "186",
+            "19.1"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "455"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Second webinar: 56% of 3,125 = 0.56 × 3,125 = 1,750 people. Third webinar: 26% of those 1,750 = 0.26 × 1,750 = 455 people attended all three."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The data point at x = 1 has y = 12. The line of best fit passes through about (0, 12.2) and (2, 10), so at x = 1 it predicts about 11. The difference is about 12 − 11 = 1. Choice D gives the y-value of the point itself, not the difference."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "97"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The three lines form a triangle. At the top vertex, the triangle's angle is 180° − 106° = 74°, and the angle at the right vertex is 23°, so the bottom-left angle is 180° − 74° − 23° = 83°. The angle marked x° sits next to that 83° angle along line r, so x = 180 − 83 = 97."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "6075"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: 15x(x^2 + 9) = 15x^3 + 135x. So a = 15, b = 3 and c = 135, and abc = 15 × 3 × 135 = 6,075."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "5"
+    ],
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle R's center is (−8, −19). Shifting right 3 units moves the center to (−5, −19), so circle S is (x + 5)^2 + (y + 19)^2 = 100. Matching (x + h)^2 gives h = 5. A common error is writing −8 + 3 inside the parentheses as x + 11."
+  },
+  {
+    "key": "m1-17",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An increase of 70% multiplies the views by 1 + 0.70 = 1.70, and it happens once every 2 days, so after x days there are x/2 increases: f(x) = 237(1.70)^(x/2). C applies the increase every day, and A and B use 0.70, which would mean the views shrink."
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since P, Q and R match W, X and Y, the fourth vertex S matches Z. Similar figures have equal corresponding angles, so ∠Z = ∠S = 135°. The side lengths 45 and 9 only give the scale factor (5), which doesn't change angles.",
+    "fix": {
+      "prompt": "Quadrilaterals PQRS and WXYZ are similar, where P, Q, and R correspond to W, X, and Y, respectively. The measure of ∠S is 135°, PS = 45, and WZ = 9. What is the measure of ∠Z?",
+      "choices": {
+        "A": "5°",
+        "B": "27°",
+        "C": "45°",
+        "D": "135°"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: f(x) = 4(x^2 + 4x) + 22 = 4(x + 2)^2 − 16 + 22 = 4(x + 2)^2 + 6, so the minimum of f is 6. Adding 9 shifts the graph up 9, so the minimum of h is 6 + 9 = 15. Choice C (7) adds 1 instead of 9."
+  },
+  {
+    "key": "m1-20",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add the equations: 14(5x) = 189 − 819 = −630, so 5x = −45. Subtract them: 18(8y) = 189 + 819 = 1,008, so 8y = 56. Then 5x + 8y = −45 + 56 = 11. Choice D is just the value of 8y.",
+    "fix": {
+      "prompt": "7(5x) + 9(8y) = 189\n7(5x) − 9(8y) = −819\nThe solution to the given system of equations is (x, y). What is the value of 5x + 8y?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By the remainder theorem, the remainder when f(x) is divided by x − 8 equals f(8), so f(8) = 9 and the graph passes through (8, 9). Choice B uses x = −8, a sign mix-up, and A and C swap the coordinates."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For infinitely many solutions, both sides must be the same expression. The left side is −11x + (−29 + m)/2 and the right side is kx + 5k, so k = −11 and (−29 + m)/2 = 5(−11) = −55. Then −29 + m = −110, so m = −81.",
+    "fix": {
+      "prompt": "(−22x − 29 + m)/2 = k(x + 5)\nIn the given equation, k and m are constants. The equation has infinitely many solutions. What is the value of m?"
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": [
+      "78"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A triangle's angles add up to 180°, so ∠J = 180 − 51 − 51 = 78 degrees.",
+    "fix": {
+      "prompt": "In triangle JKL, the measures of ∠K and ∠L are each 51°. What is the measure of ∠J, in degrees? (Disregard the degree symbol when entering your answer.)"
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 3: y = 7(2)^3 + 8 = 7(8) + 8 = 64, so a = 64. Choice C (56) forgets to add 8.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y for the equation y = 7(2)^x + 8. In the table, a is a constant. What is the value of a?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "1",
+            "22"
+          ],
+          [
+            "2",
+            "36"
+          ],
+          [
+            "3",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-03",
+    "answer": [
+      "6"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "65/12 ≈ 5.42, so 5 packages (60 buns) are not enough. You must round up to 6 packages, which gives 72 buns."
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The side (lateral) area is circumference × height = (36)(360). From 2πr = 360, the radius is r = 180/π, and the two circular bases have total area 2πr^2 = 2π(180/π)^2. Adding them gives choice A. B counts only one base, and D leaves out the bases entirely.",
+    "fix": {
+      "choices": {
+        "A": "(36)(360) + 2π(180/π)^2",
+        "B": "(36)(360) + π(180/π)^2",
+        "C": "π(180/π)^2(36)",
+        "D": "(36)(360)"
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. Sample size doesn't push the estimated average itself up or down in a predictable direction, so C and D are wrong."
+  },
+  {
+    "key": "m2-06",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: the x-terms cancel, giving 5y + 3y = 260 + 260, so 8y = 520. Choice C is only one equation's right side.",
+    "fix": {
+      "prompt": "2x + 5y = 260\n−2x + 3y = 260\nThe solution to the given system of equations is (x, y). What is the value of 8y?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 11 to both sides: 9x/2 = 45/2. Multiply both sides by 2: 9x = 45. Choice A (5) is the value of x, not 9x.",
+    "fix": {
+      "prompt": "If 9x/2 − 11 = 45/2 − 11, what is the value of 9x?"
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": [
+      "35/12",
+      "2.916",
+      "2.917"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply 4x + y = 8 by 7 and add it to 8x − 7y = 5: 36x = 61, so x = 61/36. Then y = 8 − 4(61/36) = 8 − 61/9 = 11/9 = 44/36. So x + y = 105/36 = 35/12.",
+    "fix": {
+      "prompt": "8x − 7y = 5\n4x + y = 8\nThe solution to the given system of equations is (x, y). What is the value of x + y?"
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In H = 2.419L + 22.83, 2.419 is the slope: the change in estimated height H for each 1-inch increase in femur length L. B reverses the variables, and D describes the whole expression 2.419L + 22.83, not the coefficient.",
+    "fix": {
+      "prompt": "H = 2.419L + 22.83\nA group of biology students conducted an experiment to study the relationship between a person's femur length and the person's height. The given equation describes the relationship between the length L, in inches, of a student's femur and the student's estimated height H, in inches, for the students in the group. Which of the following is the best interpretation of 2.419 in this context?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "175"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand: 0.10x + 0.20y = 0.17x + 0.17y, so 0.03y = 0.07x and y = (7/3)x. With x = 75, y = (7/3)(75) = 175 gallons."
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "552"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "0.09% = 0.0009, so 0.0009b = 0.1242 and b = 138. Since b is 25% of c, 0.25c = 138, so c = 138 × 4 = 552."
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite −3x + y = 20 as y = 3x + 20, which has slope 3. A perpendicular line has slope −1/3, and through the origin it is y = −(1/3)x. At x = 18, t = −6. Choice A uses slope −3, and C forgets the negative sign."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In D, multiplying the first equation by −2 gives 6x − 18y = −4, while the second says 6x − 18y = 4. The same left side can't equal two different numbers, so the lines are parallel and there is no solution. A and C are the same line written two ways (infinitely many solutions), and B's lines have different slopes, so they meet once.",
+    "fix": {
+      "choices": {
+        "A": "−3x + 9y = −2\n3x − 9y = 2",
+        "B": "3x − 9y = 2\n4x + 10y = 3",
+        "C": "3x − 9y = 2\n−9x + 27y = −6",
+        "D": "−3x + 9y = 2\n6x − 18y = 4"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The exponent 2x goes up by 1 every half year, so the balance is multiplied by 1.003 every 6 months, a 0.3% increase over each 6-month interval. A and B describe a fixed dollar increase, which is linear growth, and D gets the time period wrong."
+  },
+  {
+    "key": "m2-15",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Factor by grouping: 2x^2 + 18rx + 5x + 45r = 2x(x + 9r) + 5(x + 9r) = (2x + 5)(x + 9r). So both x + 9r and 2x + 5 are factors. You can check II directly: at x = −5/2, 2(25/4) − (5/2)(18r + 5) + 45r = 12.5 − 45r − 12.5 + 45r = 0.",
+    "note": "PDF says A (I only); but 2x^2 + (18r + 5)x + 45r = (2x + 5)(x + 9r) exactly, so II is also a factor and the answer is C.",
+    "fix": {
+      "prompt": "Which of the following is a factor of the expression 2x^2 + (18r + 5)x + 45r, where r is a nonzero constant?\nI. x + 9r\nII. 2x + 5"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide by 5: |x − 8| = k/5. An absolute value equation |x − 8| = c has two solutions when c > 0, none when c < 0, and exactly one (x = 8) when c = 0. So k/5 must be 0. Choice D (8) would give two solutions, x = 0 and x = 16.",
+    "fix": {
+      "prompt": "The equation 5|x − 8| = k, where k is a constant, has exactly one solution. Which of the following could be the value of k/5?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract 2 and divide by 8: |7 − x| = 10. So 7 − x = 10 or 7 − x = −10, giving x = −3 or x = 17. Their sum is −3 + 17 = 14. Choice C is only one of the solutions.",
+    "fix": {
+      "prompt": "Given the equation 8|7 − x| + 2 = 82, what is the sum of the solutions?",
+      "choices": {
+        "C": "−3",
+        "D": "−14"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "341"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The seal is at the surface at t = 0 and t = 16, so g(t) = kt(16 − t), with the vertex at t = 8. Then g(8) = 64k = 396.8, so k = 6.2. At t = 11, g(11) = 6.2(11)(5) = 341 meters."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Triangle WVZ has a right angle at V and shares angle Z with triangle XYZ. In triangle WVZ, the side opposite angle Z is WV = 668 and the adjacent side is ZV = 501, so tan Z = 668/501 = 4/3. Choice B (3/4) is the reciprocal, from mixing up opposite and adjacent.",
+    "fix": {
+      "prompt": "In triangle XYZ, the measure of angle X is 90°. Point W lies on segment XZ, and segment WV is perpendicular to segment YZ at point V. The length of segment WV is 668, and the length of segment ZV is 501. What is the value of tan Z?",
+      "choices": {
+        "A": "3/5",
+        "B": "3/4",
+        "C": "4/5",
+        "D": "4/3"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let each chemical start with mass m. An increase of 2,600% makes A equal to m + 26m = 27m, and an increase of 380% makes B equal to m + 3.8m = 4.8m. So A is 27/4.8 = 5.625 ≈ 5.63 times B. Choice C (6.84) wrongly uses 26/3.8, leaving out the original amounts."
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "10"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite as r^2 − (q + 8)r + 87 = 0. No real solutions means the discriminant is negative: (q + 8)^2 − 4(87) < 0, so (q + 8)^2 < 348. Since 18^2 = 324 < 348 but 19^2 = 361 > 348, the largest integer q + 8 is 18, so q = 10."
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If each leg is s, the hypotenuse is s·sqrt(2), so the perimeter is s(2 + sqrt(2)). Since 34 + 34sqrt(2) = 34(1 + sqrt(2)) and 2 + sqrt(2) = sqrt(2)(sqrt(2) + 1), s = 34/sqrt(2) = 17sqrt(2). Choice A (17) would give a perimeter of only 34 + 17sqrt(2).",
+    "fix": {
+      "prompt": "An isosceles right triangle has a perimeter of 34 + 34sqrt(2) inches. What is the length, in inches, of one leg of this triangle?",
+      "choices": {
+        "B": "17sqrt(2)",
+        "D": "34sqrt(2)"
+      }
+    }
+  }
+]

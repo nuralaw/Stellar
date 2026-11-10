@@ -1,0 +1,1092 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fellowship recognizes artists for their lifetime contributions, so it was created to honor, or publicly celebrate, them. \"Overshadow\" and \"distract\" are negative, and \"begin\" makes no sense with artists as its object."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon explains that the program identified sidewalks more accurately and even told cobblestone from brick, so its performance was better than, or superior to, the road-map method. \"Similar\" contradicts the clear improvement, and \"supportive\" and \"changed\" don't express a comparison of quality."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Of a good height\" describes Mr. French's body, and the text adds that his height was obvious even while he was seated, so \"good\" means considerable or fairly large. \"Well-behaved,\" \"capable,\" and \"reliable\" describe character or ability, which don't fit a physical measurement.",
+    "fix": {
+      "passage": "The following text is from Charles Chesnutt's 1905 novel The Colonel's Dream. Mr. French and Mr. Kirby work together.\n\nMr. French, the senior partner, who sat opposite Kirby, was an older man—a safe guess would have placed him somewhere in the debatable ground between forty and fifty; of a good height, as could be seen even from the seated figure, the upper part of which was held erect with the unconscious ease which one associates with military training."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text contrasts prizes given to a single person with success that comes through collaboration, so recognition isn't limited to solitary (working alone) individuals. \"Coordinated\" would actually describe collaborators, the opposite of the intended contrast, and \"considerate\" and \"coincidental\" are unrelated."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data had been locked on outdated technology, and the transfer project makes them usable again for studying lunar geology, so it is renewing their usefulness. \"Persisting\" can't take an object this way, \"exceeding\" implies going beyond the data's usefulness, and \"installing\" doesn't fit."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Drivers who can't be persuaded by any justification for a higher toll must already think the current toll is too high, or exorbitant. \"Warranted\" means justified, the opposite of their view, and \"equivocal\" (ambiguous) and \"contentious\" don't explain why they would resist an increase."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 agrees the city hoped for more food tourism but argues that marketing is needed to benefit fully, since many visitors may not know about the honor. So its author would accept that Belo Horizonte gained something but say tourism could grow further with better promotion, as in B. Choice D goes beyond Text 2, which focuses specifically on tourism.",
+    "fix": {
+      "passage": "Text 1\nIn 2019 Belo Horizonte, Brazil, was named a City of Gastronomy by UNESCO in recognition of the city's unique food culture. The honor is well known among residents of the city as well as tourists who visit. <u>It's obvious that the selection of Belo Horizonte by UNESCO has brought awareness to local recipes, cooking practices, and chefs and has provided a boost to the city's tourism industry.</u>\n\nText 2\nMany people in Belo Horizonte's restaurant industry hoped that food tourism would increase after the city was chosen as a City of Gastronomy in 2019. However, as researcher Erang Park and colleagues argue, cities must still create effective marketing strategies to benefit fully from being named a City of Gastronomy. Without an intentional effort to promote the city's food scene, many current and potential visitors to Belo Horizonte may not even be aware that it's home to uniquely delicious food."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last sentence says there are many examples of this type of reduplication in Hoocąk, which matches C. The text never compares Hoocąk to other languages (A, B) or says that many reduplicated words mean \"yellow\" (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "All the essays were published in New York newspapers in 1787-88, so both essays share that time frame. Choice A fails because No. 6 was surely written by Hamilton, and nothing says either essay was co-written (C) or which newspaper printed it (D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 1995 to 2007 the Czech Republic line falls from about 230,000 to about 130,000 employees, while the Austria line stays flat near 20,000. Choice C ignores the Czech decline, D reverses it, and the graph gives no information about what share of all Austrian workers are in these sectors (A)."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is about different types of volcanoes, and the table lists four different types: shield (Wolf), compound (Imbabura), caldera (Chacana), and stratovolcano (Tungurahua). Choice C is true but about eruption years, not types, and B and D misreport the table.",
+    "fix": {
+      "passage": "A student is researching volcanoes in Ecuador. The student claims that Ecuador is home to several different types of volcanoes.",
+      "table": {
+        "caption": "Volcanoes in Ecuador",
+        "headers": [
+          "Name of volcano",
+          "Year of last eruption",
+          "Volcano type"
+        ],
+        "rows": [
+          [
+            "Wolf",
+            "2022 CE",
+            "shield"
+          ],
+          [
+            "Imbabura",
+            "5550 BCE",
+            "compound"
+          ],
+          [
+            "Chacana",
+            "1773 CE",
+            "caldera"
+          ],
+          [
+            "Tungurahua",
+            "2016 CE",
+            "stratovolcano"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that everyone has an emotional attachment to where they live, and D says home is home to the lowly and the great alike, with power over the mind and affections regardless of rank or color. The other quotations are about the book's purpose, recommendations, or sleep, not attachment to home."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Oil enters the food by filling the voids left when water evaporates. A section that loses less moisture leaves fewer voids, so less oil can get in and it ends up with a lower fat content. Choices A and C aren't supported, since the text doesn't link moisture loss to crust thickness or to how fast permeability is lost."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Aphid colonies need stable surfaces like woody plants to thrive, so in grassland they are likely small and produce little honeydew. When that happens, ants prey on aphids, so where ants are abundant aphids should be scarce, a negative correlation in both habitats. Choice D fails because both sites were grassland, which explains a shared pattern, not a difference between them."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Puerto Rico's museums\" is the subject of the verb \"showcase,\" and nothing should separate a subject from its verb. A colon, comma, or dash would wrongly split them."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to two paintings, Creek Council Tree and Cimarron Iron Bridge, so it must be plural: \"they were.\" \"This\" and \"it\" are singular, and \"some\" would suggest only part of the pair was shown."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The three films form a list, so the items must be separated by commas: \"Zoot Suit (1981), El Norte (1983), and Stand and Deliver (1988).\" Choices A and B leave out a needed comma, and the dashes in C wrongly set El Norte apart as an interruption.",
+    "fix": {
+      "passage": "In the 1980s, Latino filmmakers Luis Valdez, Gregory Nava, and Ramón Menéndez helped expand on-screen representation of Latino Americans with the films Zoot Suit _____ and Stand and Deliver (1988), respectively."
+    }
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"award for a person of letters\" should stay together, and the colon then introduces the name of that award, \"the Nobel Prize in Literature.\" A semicolon (A, B) must join two independent clauses, and the colon in C splits the phrase \"award for a person of letters.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Unlike most paintings in the florilegium\" must modify another painting, so the subject right after the comma has to be \"Chiliza's vignette.\" The other choices compare the paintings with Chiliza himself, with \"the contextualization,\" or with \"a plant's ecosystem,\" creating illogical comparisons."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Chemistry professor\" is a title placed before the name, so no comma goes between it and \"Yugang Sun,\" and no comma separates the subject \"Yugang Sun\" from \"and his colleagues.\" Each other choice inserts a comma that breaks up the subject."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Having 11,486 feet of prominence\" describes the mountain, so the subject right after the comma must be Mount Hayes. The other choices make the geographers, the list, or the ranking the thing that has 11,486 feet of prominence, which is a dangling modifier."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The historians argue that the so-called Baroque style was really just an extension of the Renaissance, so \"in reality\" fits: it contrasts the label with what the style actually was. \"Similarly\" and \"first of all\" don't fit a single corrective claim, and \"nevertheless\" signals a contrast with the historians' own point."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence describes something Massey did before his 1990 appointment, his earlier role as the first president of the National Society of Black Physicists, so \"Previously\" fits. \"For example\" fails because that role isn't an example of his NSF appointment, and \"Thus\" and \"In conclusion\" signal a result or a summary."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To explain how soap removes a contaminant, C walks through the process: soap molecules form a micelle around the dirt and then encase it in water, lifting it off the surface. Choice B only defines micelles, and D explains how soap is made, not how it cleans.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Soap forms as the result of a chemical reaction between fats and either sodium or potassium hydroxide.\n• One end of a soap molecule is hydrophobic (water repelling), and one end is hydrophilic (water attracting).\n• The hydrophobic ends of soap molecules adhere to hydrophobic surface contaminants, such as dirt and oils.\n• The soap molecules form circular structures (micelles) around contaminants.\n• The hydrophilic ends of the molecules encase the micelles in water, lifting the micelles and contaminants off surfaces."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The difference in the notes is umami intensity: moderate for sea palm and high for bull kelp. Choice D states that bull kelp's umami was the more intense of the two. Choices A and B state what the seaweeds have in common, and C compares them with other foods.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The human tongue contains taste receptors for a rich, savory flavor called umami.\n• Umami is triggered by the compounds in a variety of foods, including tuna and blue cheese.\n• Participants in a study tasted a sample of sea palm, a type of brown seaweed.\n• They rated its umami intensity as moderate.\n• The participants tasted a sample of bull kelp, another type of brown seaweed.\n• They rated its umami intensity as high."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization describes the archive as a whole, and C does this by noting that its artifacts span different periods (the mug is from 1915, not the 1800s). Choices A, B, and D each give a detail about a single item rather than a statement about the archive.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hina Hanta is an online archive curated by the Choctaw Nation of Oklahoma.\n• It features images of cultural artifacts relevant to the history of the Choctaw people.\n• It features clothing, including a shawl (anchi in Choctaw) made from cloth.\n• The shawl was made in 1881.\n• Hina Hanta features household items, including a mug (isht ishko) made from clay.\n• The mug was made in 1915."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name the pendulum's parts, and C names them: a cable, a weighted ball at its end, and the fixed point it hangs from. Choice A mentions only the cable, while B and D describe what the pendulum does rather than what it is made of.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Polytechnic in Gdansk, Poland, is home to a Foucault pendulum.\n• The pendulum consists of a weighted ball that swings at the end of a roughly 26-meter-long cable.\n• Like all Foucault pendulums, it dangles from a fixed point that ensures the swing path of the pendulum doesn’t change.\n• To an observer, the swing path of a Foucault pendulum appears to change over time because Earth rotates beneath it.\n• Foucault pendulums are used as a simple way to provide evidence of Earth’s rotation."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The air-sac structures don't fossilize, so researchers can't see PSP directly; they must infer, or deduce, it from clues such as large holes in bones. \"Preserve\" and \"acquire\" don't make sense for reasoning from evidence, and \"isolate\" suggests physically separating something that isn't actually there."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Desai's research shows that strong democratic institutions usually hold inflation down, so Belgium's higher inflation is an exception to the pattern, or anomalous. \"Inexplicable\" goes too far, since the text doesn't say the result can't be explained, and \"unfounded\" and \"facetious\" describe claims or tone, not data."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Robots are made humanlike so people find them easier to interact with, so features like walking on two legs help to lessen, or ameliorate, the effect of a robot's unnatural features. \"Augment\" would mean increasing that unsettling effect, the opposite of the goal, and \"coalesce\" and \"substantiate\" don't fit."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Demosthenes repeatedly described free speech as the foundation of democracy, so he was a supporter, or proponent, of parrhesia. \"Steward\" implies managing it and \"harbinger\" implies announcing its arrival, and nothing suggests he was learning it as an apprentice."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes McLendon's painting as typical of the Highwaymen and then reports historians' view that the group's paintings helped shape a lasting image of Florida's landscape as \"classically Floridian.\" That is D. Choice B is too narrow, since the influence is credited to the Highwaymen's work in general, not to one painting."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Just before the underlined portion, the text calls the mushroom \"very selective,\" and the underlined portion explains what that means: it grows only on the stumps and roots of a few tree species. Choice A fails because the text says scientists aren't sure why the fungus is distributed this way; the underlined part doesn't explain it.",
+    "fix": {
+      "passage": "Chorioactis geaster, a species of mushroom that makes a distinctive hissing sound when it releases its spores, is an elusive fungus that has been observed only in Texas and Oklahoma in the US and in the Miyazaki and Nara Prefectures in Japan. Scientists aren't entirely sure why C. geaster is distributed in this way (genetic analysis reveals that the US and Japanese strains diverged 19 million years ago), but the mushroom appears to be very selective: <u>it is typically found on the decaying stumps and roots of only a few tree species that are abundant in these areas.</u>"
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text introduces the energy ladder, the common explanation that income drives fuel choice, and then uses the Ethiopian study to show the model is reductive because several factors matter. That is challenging a common explanation. Choice C is close but says the model is about fuel prices, and Egypt is only an example, not half of a comparison (A)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Lady Howard urges Villars not to \"start\" at the proposal and argues that Evelina should see something of the world, since young people kept too rigidly apart from it form unrealistic ideas. This implies she thinks he is overprotective and that Evelina would benefit from more experiences. She says nothing about other young people specifically (A), distrust of the Mirvans (B), or Villars's own worldview (D).",
+    "fix": {
+      "passage": "The following text is adapted from Fanny Burney’s 1778 novel Evelina. The text is an excerpt from a letter by Lady Howard to Evelina's guardian, Reverend Villars, in which Lady Howard discusses an upcoming trip to London planned by her daughter Mrs. Mirvan's family.\n\nIt is very earnestly [the Mirvans'] wish to enlarge and enliven their party by the addition of your amiable ward, who would share, equally with her own daughter, the care and attention of Mrs. Mirvan. Do not start at this proposal; it is time that [Evelina] should see something of the world. When young people are too rigidly sequestered from it, their lively and romantic imaginations paint it to them as a paradise of which they have been beguiled; but when they are shown it properly, and in due time, they see it such as it really is, equally shared by pain and pleasure, hope and disappointment."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Walsh found that social features made users think about how their listening looks to others and change their behavior because of it. In B, the user picks songs that followers might like instead of what they actually prefer, which is exactly that. Choice D mentions the social side but shows no change in how the user manages their listening."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that some modern irrigation methods have roots older than 1890. Choice A says the Hohokam system of the 7th century CE used design principles engineers still use today, linking a modern method to a much older origin. Choice D describes a method developed in the late 20th century, after Searsville Lake."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says each planet's rotational period equals its orbital period, and the table gives TRAPPIST-1e an orbital period of 6.1 days, so its rotational period is also 6.1 days. Choice A mistakes the planet's radius (0.92) for a rotational period, and B and D describe other planets.",
+    "fix": {
+      "passage": "TRAPPIST-1 is a planetary system with a central red dwarf star and several Earth-sized exoplanets. Each planet in this system is so close in orbit to the star that the gravitational forces acting between the planet and the star cause the planet's rotational period around its axis and orbital period around the star to be equal. For example, the orbital period of TRAPPIST-1e is _____",
+      "table": {
+        "headers": [
+          "Planet",
+          "Orbital period (days)",
+          "Planet radius (Earth radii)"
+        ],
+        "rows": [
+          [
+            "Earth",
+            "365.26",
+            "1"
+          ],
+          [
+            "TRAPPIST-1b",
+            "1.51",
+            "1.09"
+          ],
+          [
+            "TRAPPIST-1d",
+            "4.05",
+            "0.77"
+          ],
+          [
+            "TRAPPIST-1e",
+            "6.1",
+            "0.92"
+          ],
+          [
+            "TRAPPIST-1f",
+            "9.21",
+            "1.04"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show a sophist with an exaggerated sense of his own wisdom, the quotation should have a sophist praising his own intellect. In D, Socrates calls his own teachings \"clever\" dogmas about \"abstruse matters.\" Choice A shows Socrates being impatient, not boastful, and B and C are spoken by Strepsiades, not by a sophist about himself."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must show that a mountain's elevation and prominence can differ a lot. Nanda Devi rises 7,816 meters above sea level but only 3,139 meters above its surroundings, which shows exactly that gap. Choices B and C compare prominence across different mountains, and A mentions only elevation.",
+    "fix": {
+      "passage": "Mountain summits are often described in terms of their elevation, or height above sea level. But a summit's elevation may not be as good an indication of how high the mountain appears to observers as is the summit's prominence, or its height above its surroundings, and these values can differ significantly. For example, the Indian mountain of _____",
+      "table": {
+        "headers": [
+          "Summit",
+          "Elevation (meters)",
+          "Mountain range",
+          "Prominence (meters)"
+        ],
+        "rows": [
+          [
+            "Rimo I",
+            "7,385",
+            "Rimo Karakoram",
+            "1,438"
+          ],
+          [
+            "Nanda Devi",
+            "7,816",
+            "Himalayas",
+            "3,139"
+          ],
+          [
+            "Panchchuli II",
+            "6,904",
+            "Garhwal Himalaya",
+            "1,614"
+          ],
+          [
+            "Saser Kangri I / K22",
+            "7,672",
+            "Saser Karakoram",
+            "2,304"
+          ],
+          [
+            "Langpo",
+            "6,965",
+            "Sikkim Himalaya",
+            "560"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If the service is about the same everywhere, the difference in reviews must come from the users. Stations near rental companies charge full price and get more negative reviews, while discounted or free stations get fewer, so people who get a discount likely expect less and complain less. Choice C fails because the text gives proportions of negative reviews, not visit counts."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Artists like Dick West painted in the Abstract Expressionist style rather than drawing on Indigenous visual traditions, so nothing in the style itself marks their paintings as Indigenous. Calling such a painting Indigenous art therefore depends on knowing who the artist is. Choice D adds a contrast with aesthetic merit that the text never discusses."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A representative handedness study needs at least 176 individuals, but each study had only 8. So neither study is reliable enough to support a meaningful comparison of handedness. Choices A and D wrongly treat Lockard's tiny sample as reliable, and B claims a specific error the text doesn't support.",
+    "fix": {
+      "passage": "Whereas Joan Lockard's 1984 study of captive gorillas reported more right-handedness than left-handedness, Jane Goodall's 1963 study of wild chimpanzees did not. According to a meta-analysis of studies of nonhuman primates, captive populations are more likely to be described as right-handed than wild populations are. Statistical analysis indicates a handedness study would need a minimum of 176 individuals to show a representative result; however, the study by Lockard included a total population of 8, and the study by Goodall included a total population of 8. This suggests that _____"
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"assuming solar panel installers' cooperation\" is an interruption that opens with a dash after \"that,\" so it must close with a matching dash. A comma or colon can't close a dash-opened interruption, and no punctuation at all runs the phrase into the clause \"this practice has the potential.\""
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part, \"The author-as-juggler performs a routine,\" is a complete sentence, and what follows is a list explaining that routine. A colon introduces such an explanation. A semicolon or period would need an independent clause after it, and a comma would create an unclear run-on structure."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Having proportionally large populations,\" which is singular even though it contains a plural noun. A singular subject takes the singular verb \"is.\" The other choices are plural verbs that agree with \"populations\" by mistake."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Since 1989, ... Native artists\" and \"in 2013, it awarded Buffalohead ...\" are both independent clauses, so a semicolon correctly joins them. A comma alone (B) creates a comma splice, \"thus\" is not a conjunction (A), and \"and\" without a comma makes a run-on (C)."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"adapted,\" so the blank needs a modifier: \"scientists searching for evidence of self-awareness in snakes\" describes which scientists. A finite verb like \"searched\" or \"were searching\" would give the subject two main verbs with no conjunction.",
+    "fix": {
+      "passage": "If an animal can recognize itself in a reflective surface (\"the mirror test\"), it is considered to have self-awareness. In a recent study, scientists _____ for evidence of self-awareness in snakes, species that rely primarily on olfactory rather than visual processing, adapted the test to foreground smell, modifying the scent trails of North American eastern garter snakes and African ball pythons."
+    }
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb, \"analyzed,\" so the blank must begin a modifier: \"a team of researchers hoping to find connections ... analyzed geotagged posts.\" Any finite verb (\"were hoping,\" \"was hoping,\" \"hoped\") would give the subject two verbs with no conjunction."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most of the observed females laid eggs at dozens of sites for others to incubate, but 7F64B visited only a few sites and incubated her own eggs, a different strategy. \"Alternatively\" signals that alternative behavior. \"For example\" and \"in particular\" would treat her as a case of the main pattern, and \"similarly\" signals likeness."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the length of the piece, and only A gives it: the performance will last 639 years. Choices B, C, and D say where the piece is played or who composed it but never how long it lasts.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• \"Organ²/ASLSP (As Slow as Possible)\" is a musical piece by avant-garde composer John Cage.\n• A specially designed automated organ in St. Burchardi Church in Halberstadt, Germany, began playing the piece in 2001.\n• It is scheduled to stop playing the piece in 2640.\n• The performance will last 639 years.\n• It will be the longest continuous musical performance in history.",
+      "choices": {
+        "A": "Lasting 639 years, John Cage's musical piece will be the longest continuous musical performance in history.",
+        "B": "\"Organ²/ASLSP (As Slow as Possible)\" is a musical piece currently being played in St. Burchardi Church in Halberstadt, Germany.",
+        "D": "John Cage is the composer of the musical piece \"Organ²/ASLSP (As Slow as Possible)\"."
+      }
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To compare sizes, B gives both areas, 1,360 mi² and 63 mi², and states which range is larger. Choice C says only that sky islands vary in size without comparing these two, and A and D describe sky islands in general.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Peloncillo-Pan Duro Mountains are located in northwestern Mexico.\n• They cover an area of 1,360 square miles (mi²).\n• The Sierrita Mountains are located in the southwestern United States.\n• They cover an area of 63 mi².\n• These mountain ranges are two of the dozens of \"sky islands\" in the southwestern US and northwestern Mexico.\n• A sky island is an isolated mountain range whose environment differs drastically from that of the surrounding lowlands."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice C follows the notes accurately: UV light images are projected into a resin pool to cure the object layer by layer, and then the finished object is baked in an oven. Choice A wrongly says the object passes through the dead zone, and B says curing is completed in the dead zone, when it is actually completed in the oven.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Digital Light synthesis (DLS) is a form of additive manufacturing that utilizes light to rapidly cure liquid resin into high-quality, 3D objects.\n• Step 1: Ultraviolet (UV) light images are projected up into a pool of liquid resin, where the object's first layer takes shape.\n• Step 2: The partially cured resin object is raised, creating a thin space (a \"dead zone\") beneath it for oxygen and liquid resin to flow through.\n• Step 3: The UV light passes through the dead zone—maintaining the flow of resin—and partially cures additional layers of the object.\n• Step 4: When the resin object is complete, it is baked in an oven to complete the curing."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "A narrative opening sets a scene at the start of a story, and B does this by placing Martin in his Patriots uniform for his first game, the beginning of his career. Choice D focuses on one athlete but sums up the end of his career instead of starting a story, and A and C compare the two players.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Curtis Martin and Jim Brown had historic careers as running backs in the National Football League (NFL).\n• The running back position entails running, or rushing, down the field with the football to gain yards for the team.\n• Curtis Martin gained a total of 14,101 rushing yards in his career.\n• He played for the New England Patriots and the New York Jets.\n• Jim Brown gained a total of 12,312 rushing yards in his career.\n• He played for the Cleveland Browns."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add up to 180°, so angle C = 180° − 34° − 90° = 56°. Choice A just repeats angle A, and 90 would make the triangle have two right angles."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 3xy to each term: 3xy · 2x^2 = 6x^3y and 3xy · 7y = 21xy^2, giving 6x^3y + 21xy^2. Choice C drops a factor of x from the first term and a factor of y from the second."
+  },
+  {
+    "key": "m1-03",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every term of 30x^2 + 6x + 6 is divisible by 6, so factoring it out gives 6(5x^2 + x + 1). Expanding B gives 30x^2 + 30x with no constant, and expanding A gives a cubic, so neither matches."
+  },
+  {
+    "key": "m1-04",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The maximum is 92 trees per acre, so on 2 acres it is 92 × 2 = 184 trees. Choice C adds 2 instead of multiplying, and A corresponds to 3 acres."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "9"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After m months the total charge is 34 + 16m. Setting 34 + 16m = 178 gives 16m = 144, so m = 9 months. Forgetting to subtract the one-time fee first would give 178/16 ≈ 11.1, which isn't a whole number of months."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 8: f(8) = 7(8) + b = 56 + b. Since f(8) = 56, 56 + b = 56, so b = 0. Choosing 7 or 8 confuses b with the slope or the input value."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(t) = 14t + 9, the constant 9 is the value of f when t = 0, which is the moment Shruti bought the plant. So the plant was about 9 inches long when purchased. The growth per month is the slope, 14 inches, not 9 (B)."
+  },
+  {
+    "key": "m1-08",
+    "answer": "D",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The probability of room C is 1 − 0.48 − 0.24 = 0.28, so the number of visitors in room C is 0.28 × 375 = 105. Choice C (90) is the number in room B (0.24 × 375), not room C."
+  },
+  {
+    "key": "m1-09",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Factor: x^2 − 28x = x(x − 28) = 0, so x = 0 or x = 28. Only 28 appears among the choices. Checking 14 gives 196 − 392 = −196, not 0.",
+    "fix": {
+      "choices": {
+        "D": "sqrt(28)"
+      }
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "28"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The volume of a pyramid is V = (1/3)Bh, so 196 = (1/3)B(12) = 4B and the base area is B = 49. The base is a square, so each side is sqrt(49) = 7 inches, and the perimeter is 4 × 7 = 28 inches. Forgetting the 1/3 would give a base area of about 16.3, which isn't a perfect square."
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A 1% increase each year means the value is multiplied by 1 + 0.01 = 1.01 every year, so after t years V(t) = 240(1.01)^t. Choice D uses 1.1, which is a 10% increase, and A and B grow linearly instead of exponentially.",
+    "fix": {
+      "choices": {
+        "A": "V(t) = 240(1.01t)",
+        "B": "V(t) = 240(1.1t)",
+        "C": "V(t) = 240(1.01)^t",
+        "D": "V(t) = 240(1.1)^t"
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(3) = 3 + 3 = 6 and g(3) = 3(3) = 9. Then 6f(3) − g(3) = 6(6) − 9 = 36 − 9 = 27. Choice A comes from 6 − 9, forgetting to multiply f(3) by 6."
+  },
+  {
+    "key": "m1-13",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A system has infinitely many solutions when one equation is a multiple of the other. Multiplying 3x + 9y = 10 by 2 gives 6x + 18y = 20, which matches the second equation when r = 6. Choice B (3) would make the lines parallel with different intercepts, giving no solution."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "672"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Going from $9 to $12 is a $3 increase, so the club sells 8 × 3 = 24 fewer bags: 80 − 24 = 56 bags. The revenue is 12 × 56 = $672. A common slip is multiplying 12 by 80, ignoring the drop in sales."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "22"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: (3x + 6y) + (−3x − 4y) = 17 + 5, so the x terms cancel and 2y = 22. There's no need to find x or y separately; y = 11 would be the answer if the question asked for y.",
+    "fix": {
+      "prompt": "3x + 6y = 17\n−3x − 4y = 5\nThe solution to the given system of equations is (x, y). What is the value of 2y?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "-563/6300",
+      "-.0893",
+      "-.0894"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Distribute: 0.7w − 0.57 = 7w − 0.007. Subtract 0.7w and add 0.007 to both sides: −0.563 = 6.3w, so w = −0.563/6.3 = −563/6300 ≈ −0.0894. Be careful to distribute the 7 to the 0.001 (giving 0.007), not just to w."
+  },
+  {
+    "key": "m1-17",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A quadratic has exactly one real solution when its discriminant b^2 − 4ac is 0. For x^2 − 16x + 64 = 0, (−16)^2 − 4(1)(64) = 256 − 256 = 0; it factors as (x − 8)^2 = 0. Choice C has discriminant 256 − 224 = 32 > 0, giving two solutions, A has two solutions (±4), and B has none."
+  },
+  {
+    "key": "m1-18",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph rises in a straight line to 60 miles in the first hour (driving away at constant speed), stays flat at 60 miles from hour 1 to hour 5 (at the location for 4 hours), and then falls in a straight line back to 0 by hour 6 (driving home at constant speed). Choice A says she kept driving away, but the distance decreases at the end, and straight segments mean constant, not changing, speeds."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "24"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply each mass by its frequency and add: 10(12) + 20(6) + 30(8) + 40(9) = 120 + 120 + 240 + 360 = 840 grams. Dividing by the 35 objects gives a mean of 840/35 = 24 grams. Averaging just the four masses (10, 20, 30, 40) would wrongly give 25.",
+    "fix": {
+      "prompt": "The frequency table summarizes the mass, in grams, of 35 objects. What is the mean mass, in grams, of these objects?",
+      "table": {
+        "headers": [
+          "Mass (grams)",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "10",
+            "12"
+          ],
+          [
+            "20",
+            "6"
+          ],
+          [
+            "30",
+            "8"
+          ],
+          [
+            "40",
+            "9"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept occurs at x = 0: y = −(4)^0 − 39 = −1 − 39 = −40, so it is (0, −40). Choice C forgets that 4^0 = 1, not 0, and D adds the 1 instead of subtracting it."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "742.5",
+      "1485/2"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing each dimension by 50% multiplies both length and width by 1.5, so the area is multiplied by 1.5 × 1.5 = 2.25. The copy's area is 2.25 × 330 = 742.5 square inches. Multiplying the area by 1.5 only (495) forgets that both dimensions grow."
+  },
+  {
+    "key": "m1-22",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The radius is the distance from the center (28, 5) to a point on the circle, such as (0, 26): r = sqrt((28 − 0)^2 + (5 − 26)^2) = sqrt(784 + 441) = sqrt(1225) = 35. Choice C (21) is only the vertical distance and ignores the horizontal distance of 28."
+  },
+  {
+    "key": "m2-01",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 300: f(300) = 24(300) + 1,000 = 7,200 + 1,000 = 8,200 dollars. Choice A subtracts the 1,000 instead of adding it."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 54° angle at line k and angle w at line j are in the same position (above the line, right of l), so they are corresponding angles. If w = 54, the corresponding angles are equal, which proves j ∥ k. Angles y and z are at line k and are always 54° and 126°, so they prove nothing; x = 126 would actually make the lines not parallel, since x is vertical to w."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Move the x terms together: (5 − r)x = 4. If r = 5, the left side is 0 for every x, giving 0 = 4, which is never true, so the equation has no solution. Any other value of r gives exactly one solution, x = 4/(5 − r).",
+    "fix": {
+      "prompt": "In the given equation, r is a constant. The equation has no solution. What is the value of r?\n5x + 3 = rx + 7"
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Treat 2x + 9 as a single quantity u: 5u = 3u + 74, so 2u = 74 and u = 37. Choice A (74) is the value of 2u, not u, and solving for x first (x = 14) gives choice D by mistake."
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "350% as a decimal is 3.5, so 3.5n = 35 and n = 35/3.5 = 10. Choice B comes from multiplying 35 by 3.5 × 10 instead of dividing."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope is (23 − 17)/(6 − 4) = 6/2 = 3. Using (4, 17): 17 = 3(4) + b, so b = 5 and h(x) = 3x + 5. Check: h(6) = 18 + 5 = 23. Choices C and D just plug the table values into the equation form without computing a slope.",
+    "fix": {
+      "prompt": "The table shows two values of x and their corresponding values of h(x) for the linear function h. Which equation defines h?",
+      "table": {
+        "headers": [
+          "x",
+          "h(x)"
+        ],
+        "rows": [
+          [
+            "4",
+            "17"
+          ],
+          [
+            "6",
+            "23"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "h(x) = (1/3)x − 5/3"
+      }
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At an intersection the y-values are equal: x^2 + 17x + 4 = x + 4. Subtracting x + 4 gives x^2 + 16x = 0, so x(x + 16) = 0 and x = 0 or x = −16. Only −16 is a choice; −15 or 15 come from mishandling the x term."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two parts add to 108, so x + y = 108, and x = 4y + 8. Substituting gives 4y + 8 + y = 108, so 5y = 100, y = 20, and x = 4(20) + 8 = 88. Be careful to answer for x: y = 20 is the shorter piece."
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"No more than 244 total\" means h + w ≤ 244, and \"hydrangeas at most three times winter hazels\" means h ≤ 3w. Choices C and D flip the total inequality, and B puts the 3 on the wrong variable.",
+    "fix": {
+      "choices": {
+        "A": "h + w ≤ 244\nh ≤ 3w",
+        "B": "h + w ≤ 244\n3h ≤ w",
+        "C": "h + w ≥ 244\nh ≤ 3w",
+        "D": "h + w ≥ 244\n3h ≤ w"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Test (14, 0): 0 ≤ 14 + 3 is true and 0 ≥ −3(14) − 7 = −49 is true, so it satisfies both inequalities. Point (0, −14) fails the second (−14 ≥ −7 is false), (0, 14) fails the first (14 ≤ 3 is false), and (−14, 0) fails the first (0 ≤ −11 is false)."
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the quadratic formula with a = 3, b = −5, c = −5: x = (5 ± sqrt(25 + 60))/6 = (5 ± sqrt(85))/6. The greater solution uses the plus sign: 5/6 + sqrt(85)/6. Choices C and D divide by 3 instead of 2a = 6.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "3x^2 − 5x − 5 = 0\nWhat is the greatest solution to the given equation?",
+      "choices": {
+        "A": "5/6 − sqrt(85)/6",
+        "B": "5/6 + sqrt(85)/6",
+        "C": "5/3 − sqrt(85)/3",
+        "D": "5/3 + sqrt(85)/3"
+      }
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": [
+      "0.059",
+      ".059"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "f(1992) − f(1991) = a(1992^2 − 1991^2) + b(1992 − 1991) = −0.00384(3983) + 15.236, because 1992^2 − 1991^2 = (1992 + 1991)(1) = 3983. That is −15.29472 + 15.236 = −0.05872, so the positive difference is about 0.059 million square kilometers. Plugging each year in separately also works but invites rounding errors with such large numbers.",
+    "fix": {
+      "prompt": "f(x) = −0.0038400x^2 + 15.236x − 15,103\nThe model shown gives the predicted average Arctic sea ice area f(x), in millions of square kilometers, for September of each year x, where x represents a year and 1979 ≤ x ≤ 2012. Based on the model, what is the positive difference, in millions of square kilometers, between the predicted average Arctic sea ice area for September of the year 1991 and the predicted average Arctic sea ice area for September of the year 1992? (Round your answer to the nearest thousandth.)"
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is at x = 0: y = (8/13)^(0 + 1) = 8/13, so it is (0, 8/13). Choices B and C take only the denominator or numerator, and A isn't on the y-axis at all.",
+    "fix": {
+      "prompt": "What is the y-intercept of the graph of y = (8/13)^(x + 1) in the xy-plane?",
+      "choices": {
+        "D": "(0, 8/13)"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Completing the square: x^2 − 4x − 320 = (x − 2)^2 − 4 − 320 = (x − 2)^2 + (−324). Since (x − 2)^2 ≥ 0, the minimum value is −324, which appears as a constant in B. Choice D shows the zeros (−16 and 20), and C shows −320, which is f(0), not the minimum.",
+    "fix": {
+      "prompt": "The function f is defined by the given equation. Which of the following equivalent forms of the equation displays the minimum value of the function as a constant or coefficient?\nf(x) = x^2 − 4x − 320"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": [
+      "11"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line s is 2y = −6x, or y = −3x, so its slope is −3 and a perpendicular line has slope 1/3. Line t through (7, 0) and (k, 4/3) has slope (4/3 − 0)/(k − 7) = 1/3, so k − 7 = 4 and k = 11. Using slope 3 instead of 1/3 (forgetting the negative reciprocal) gives a wrong k.",
+    "fix": {
+      "prompt": "Line s in the xy-plane is defined by 6x + 2y = 0. Line t is perpendicular to line s and passes through the points (7, 0) and (k, 4/3). What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With zeros −2, −7, and 6, g(x) = (x + 2)(x + 7)(x − 6). The x^2 coefficient is the negative of the sum of the zeros: a = −(−2 − 7 + 6) = −(−3) = 3. Choice B forgets the sign change, and −84 is the constant term c, not a."
+  },
+  {
+    "key": "m2-17",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how far values typically are from the mean. Group A's histogram has its tallest bars at the extremes (0–1 and 4–5 grams), far from its mean of 2.1, while group B's values cluster in the tall middle bar near its mean of 11.1. So group A's weights are more spread out relative to the mean, and its standard deviation is greater. The difference in means doesn't affect spread, so A is a trap."
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For x > 3 hours, the charge is $216 for the first 3 hours plus $60 for each of the x − 3 extra hours: y = 216 + 60(x − 3) = 60x + 36. Choice A charges $60 for all x hours on top of the $216, double-counting the first 3 hours."
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide every term by 46: 1/p = 1/q − 1/r − 1/s, so 1/q = 1/p + 1/r + 1/s = (rs + ps + pr)/(prs). Taking reciprocals gives q = prs/(pr + ps + rs). Choice C adds the variables instead of their reciprocals, and B keeps factors of 46 that cancel.",
+    "fix": {
+      "prompt": "The given equation relates the positive variables p, q, r, and s. Which of the following is equivalent to q?\n46/p = 46/q − 46/r − 46/s",
+      "choices": {
+        "A": "prs/(pr + ps + rs)",
+        "B": "prs/(46p + 46r + 46s)",
+        "C": "p + r + s",
+        "D": "46(p + r + s)"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "40/9",
+      "4.444"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Angle BAC is a right angle and AD is perpendicular to BC, so triangles ABD and CAD are similar and angle CAD equals angle ABD: z = w. Since cos w° = 9/41, the sides are in the ratio 9 : 40 : 41 (because 41^2 − 9^2 = 1600 = 40^2), so tan z° = tan w° = 40/9. The length AD = 178 isn't needed.",
+    "fix": {
+      "prompt": "In the figure, AD and BC intersect at point D. The measure of ∠ABD is w°, the measure of ∠CAD is z°, and AD = 178. If cos w° = 9/41, what is the value of tan z°?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The base area is 70,560 − 38,160 = 32,400, so each base side is sqrt(32,400) = 180. Each of the 4 triangular faces has area (1/2)(180)(l), so 4 · 90l = 38,160 and the slant height is l = 106. The height, half the base side (90), and slant height form a right triangle: h^2 = 106^2 − 90^2 = 3,136, so h = 56. Choice C (106) is the slant height, not the height."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "-24"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Multiply both sides by 96cx: 96 = cx^2 + 96x, so cx^2 + 96x − 96 = 0. Exactly one solution requires the discriminant to be 0: 96^2 − 4(c)(−96) = 0, so 96 + 4c = 0 and c = −24. The single solution is then x = 2, which is allowed since x ≠ 0.",
+    "fix": {
+      "prompt": "In the given equation, c is a constant. If the equation has exactly one solution, what is the value of c?\n1/(cx) = x/96 + 1/c"
+    }
+  }
+]

@@ -1,0 +1,623 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Alexander was \"very busy\" and was at work almost all the time, avoiding the clubs and dining alone, so \"constantly\" means without stopping, or nonstop. \"Quickly\" describes speed, not how often he worked, and nothing in the text suggests he worked fearfully.",
+    "fix": {
+      "passage": "The following text is adapted from Willa Cather's 1912 novel Alexander's Bridge.\n\nFor the next few days Alexander was very busy. He took a desk in the office of a [Scottish] engineering firm on Henrietta Street, and was at work almost constantly. He avoided the clubs and usually dined alone at his hotel."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence offers the alternative: if the peccary died out before humans could affect its habitat, something else caused it. So dating is being used to check whether the extinction happened at the same time as humans arrived, which is what \"coincided with\" means. \"Clashed with\" and \"developed into\" don't describe a timing relationship between two events.",
+    "fix": {
+      "passage": "Radiocarbon dating can help scientists determine whether the extinction of the long-nosed peccary around 9000 BCE _____ the arrival of humans in the same region of the Americas. If instead the long-nosed peccary died out before humans could have altered its habitat, that suggests that its extinction was the result of some other factor, such as climate change."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Unpredictable shifts in cloud cover and haze make solar collection go up and down, and stored energy smooths out those ups and downs. \"Fluctuations in\" names exactly that kind of variation. \"Developments of\" or \"incentives for\" solar collection are not problems that a reserve of stored energy would need to soften."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains the blank: historians had \"so much admiration\" for the revolutionaries that they weren't objective. \"Reverence\" means deep, almost worshipful respect, which matches that excessive admiration. \"Candor\" (honesty) and \"prudence\" (caution) would point toward objectivity, the opposite of what the text describes."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The poem moves through one picture of the marsh after another: wild rice, a lizard, a wild goose, cranes, twilight, sedges and creeping vapours. Together these images build a portrait of the marshland at nightfall. Choice A fails because plants and animals are mixed together rather than listed animals first, and no person (C) or human emotion (D) is ever discussed.",
+    "fix": {
+      "passage": "The following text is adapted from the 1895 poem “Marshlands” by Emily Pauline Johnson, a Kanienkahagen (Mohawk) writer also known as Tekahionwake.\n\nAmong the wild rice in the still lagoon,\nIn monotone the lizard shrills his tune.\nThe wild goose, homing, seeks a sheltering,\nWhere rushes grow, and oozing lichens cling.\nLate cranes with heavy wing, and lazy flight,\nSail up the silence with the nearing night.\nAnd like a spirit, swathed in some soft veil.\nSteals twilight and its shadows o'er the swale.\nHushed lie the sedges, and the vapours creep,\nThick, grey and humid, while the marshes sleep."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first recalls Nixon's role in the Watergate scandal, then says \"But Nixon's legacy is complex\" and lists positive contributions such as creating the EPA. Weighing both his failings and his achievements is an assessment of his significance. Choice D ignores the scandal entirely, and the text never claims his reputation has improved over time (B)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains what ohmic heating is (passing electric current through food to heat it from within) and says it is considered an improvement because it generates heat inside the food instead of transferring it from the surface. That is an introduction plus one advantage. No flaws are mentioned (A), and the text doesn't survey research around the world (C)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The speaker and her friend share a calm, unspoken understanding, and the kestrel \"mutes his mating-note\" to suit \"the harmony of this sweet silence.\" The bird quiets itself just as the friends stay quiet, so nature is shown matching their experience. Choice B is tempting, but the text says \"each knew all the other said,\" so the friend isn't hiding anything.",
+    "fix": {
+      "passage": "The following text is adapted from Anne Spencer's 1922 poem \"Translation.\"\n\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken.\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack of anvil and strife.\n\"The wooing kestrel,\" I said, \"mutes his mating-note\nTo please the harmony of this sweet silence.\""
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parlor is Tia Ana's space for \"her little school,\" and after each salon it is \"never in order\" for the next morning's class. Her repeated checks on whether the guests have left show she wants them gone so she can get the room ready for teaching. Nothing suggests she is part of the salon (A) or opening a new school (B).",
+    "fix": {
+      "passage": "The following text is adapted from Julia Alvarez's 2000 novel In the Name of Salomé. Salomé, a poet, is hosting guests in the front parlor of her family home, and Ramona is her sister. A salon is a social gathering for the exploration of intellectual ideas.\n\nIt was evening when the two men got up to leave. Tia Ana had already come into the room several times to see if these guests had departed yet. The front parlor had always been her special province, as she used it for her little school. Now, every evening, it turned into Salomé's salon, as Ramona called it, and it was never in order for its transformation back to a classroom the following morning."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Villasana honors both cultural icons like Muhammad Ali and ordinary people like a woman making tortillas, and she sees both as showing \"the power and interconnectedness of all people.\" Choice B captures both kinds of subjects and that shared theme of strength and connection. Choice A invents a career change, and the text never compares how scholars treat her works (D)."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The student wants to report the area of Nambé Pueblo, and the table lists Nambe Pueblo at 32.4 square miles. The other values belong to different nations: 47.3 is San Ildefonso, 77.1 is Santa Clara, and 595.7 is Acoma.",
+    "fix": {
+      "passage": "There are nineteen Pueblo tribal nations in New Mexico. A student in a geography class is a citizen of Santo Domingo Pueblo in the north-central part of the state. The student wants to compare the total area covered by Santo Domingo Pueblo with the total areas of various other Pueblo nations in the state. Looking at the table, the student finds that the total area of Santo Domingo Pueblo is 106.3 square miles, while the total area of Nambé Pueblo is ______",
+      "table": {
+        "caption": "Total Areas of Five Pueblo Nations in New Mexico",
+        "headers": [
+          "Tribal nation",
+          "Area (square miles)"
+        ],
+        "rows": [
+          [
+            "Santo Domingo Pueblo",
+            "106.3"
+          ],
+          [
+            "Pueblo de San Ildefonso",
+            "47.3"
+          ],
+          [
+            "Nambe Pueblo",
+            "32.4"
+          ],
+          [
+            "Santa Clara Pueblo",
+            "77.1"
+          ],
+          [
+            "Pueblo of Acoma",
+            "595.7"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that some lakes had fewer days of ice in the mid-2000s than in the early 1980s. Lake Kallavesi dropped from about 175 days in 1980-81 to about 145 in 2005-06, a clear decline. Choice A describes Spirit Lake gaining ice, which contradicts the claim, and D says no lake declined."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that an Oscar nomination can boost overall earnings even after a modest opening weekend. La Cage aux Folles (nominated) opened with only $18,709, far less than Padmaavat's $4,493,384 (not nominated), yet earned more in total ($20,424,259 vs. $11,846,060). Choice A actually works against the claim, since the non-nominated film earned more overall.",
+    "fix": {
+      "passage": "Many films in a language other than English grow to be financially successful over the course of their time in movie theaters in the United States, but some become immediate successes in their opening weekends. A journalist claims that a film's reception can greatly influence its long-term success. Indications that the film is of high quality, such as an Oscar nomination, can dramatically boost public interest in the film and thus its overall earnings, even with a relatively modest opening weekend performance.",
+      "table": {
+        "caption": "Highest-Grossing Films in a Language Other than English at US Box Office",
+        "headers": [
+          "Title",
+          "Lifetime gross earnings",
+          "Opening weekend box office gross earnings",
+          "US release date",
+          "Director",
+          "Oscar Nominated?"
+        ],
+        "rows": [
+          [
+            "Cinema Paradiso",
+            "$11,990,401",
+            "$16,552",
+            "February 2, 1990",
+            "Giuseppe Tornatore",
+            "Yes"
+          ],
+          [
+            "La Cage aux Folles",
+            "$20,424,259",
+            "$18,709",
+            "March 30, 1979",
+            "Edouard Molinaro",
+            "Yes"
+          ],
+          [
+            "Instructions Not Included",
+            "$44,467,206",
+            "$7,846,426",
+            "August 30, 2013",
+            "Eugenio Derbez",
+            "No"
+          ],
+          [
+            "Padmaavat",
+            "$11,846,060",
+            "$4,493,384",
+            "January 25, 2018",
+            "Sanjay Leela Bhansali",
+            "No"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The students claim that the opposition comes from fear that more cars would erase the street's distinctive character. Choice C calls Cuba Street \"one of the most unusual streets\" and worries it will become \"just like any other street,\" which is exactly that concern. Choice B is about businesses losing foot traffic, and D is about noise and pollution, not the street's character."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Roman de Brut (1155) mentions the Round Table, but nothing written before 1155 does, so the Round Table appears to originate with Wace's work. Any later legend that includes it therefore probably descends, directly or indirectly, from the Roman de Brut. Choice B contradicts the text, since no earlier works with Round Table stories existed for Geoffrey to use."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence lists three places: libraries, train stations, and public squares. Items in a series are separated by commas, so \"libraries, train\" is correct. A colon or dash would wrongly set the rest of the list apart as an explanation, and no punctuation (B) runs the items together."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"With the breakout success of her 2020 novel Mexican Gothic\" is a phrase inserted into the main clause \"she's become ... best known as a novelist.\" It opens with a comma after \"become,\" so it must close with a matching comma. A dash or semicolon can't pair with the opening comma, and leaving out punctuation (C) fails to close the interruption."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both parts of the sentence are independent clauses: \"the 2021 exhibition ... set out to provide ... the 1950s\" and \"its efforts were largely successful.\" Joining two independent clauses needs a comma plus a coordinating conjunction, so \"1950s, and\" works. A comma alone (C) creates a comma splice, and no punctuation (A) creates a run-on."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"many works,\" which is plural; the phrase between the dashes is an interruption and doesn't change the subject. A plural subject takes \"were,\" and \"at the time\" calls for past tense. \"Was\" and \"is\" are singular, and \"has been\" is both singular and the wrong tense."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Uprising\" is the specific title that identifies which painting, so it is essential and shouldn't be set off from \"painting\" by a comma. After the title, a comma is needed before the nonrestrictive clause \"which was created in 1910.\" Choice C wrongly separates the title, and D breaks the sentence into fragments."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence narrates past events (\"Years later\") and is paired with \"would become known\" later in the sentence. \"Would be honored\" expresses a future-in-the-past action that matches that construction. \"Is honored\" and \"will be honored\" are present and future, and \"had been honored\" would place the award before the 1987 research."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says humans inherit physical traits from their parents, and the second says the same is true of dogs. That is a parallel between two cases, so \"Similarly\" fits. \"As a result\" fails because dogs inheriting traits isn't caused by humans doing so, and \"In other words\" would require a restatement."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Le Guin wrote both science fiction and fantasy, so it makes sense that fans of both genres read her. The second sentence is a logical consequence of the first, which \"Accordingly\" signals. \"Nevertheless\" would wrongly suggest the readership is surprising given her range of work."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity between kale and carrots, and the notes say both contain ascorbic acid, which is also called vitamin C. Choice C states that shared feature directly. Choice A mentions only carrots, and B mentions only kale.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kale is a vegetable that contains ascorbic acid, an essential nutrient for humans.\n• There is 120 milligrams (mg) of ascorbic acid in every 100 grams (g) of kale.\n• Carrots are vegetables that contain ascorbic acid.\n• There is 6 mg of ascorbic acid in every 100 g of carrot.\n• Humans cannot make ascorbic acid in their bodies, so they must get it from foods, including fruits and vegetables.\n• Ascorbic acid is also known as vitamin C."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain why brine pools are toxic, and the notes give the reason: their water is three to eight times saltier than the surrounding ocean. Choice A states the toxicity and links it to that cause with \"because.\" Choices B and C mention the toxicity but give no reason for it.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In 2022, University of Miami researchers discovered brine pools in the Gulf of Aqaba.\n• A brine pool is an underwater lake that sits on the ocean floor.\n• The water in brine pools is three to eight times saltier than the surrounding ocean.\n• The extreme saltiness of this water makes it toxic to most sea life.\n• Some forms of bacteria are able to survive in brine pools."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say where Discoglossus nigriventer was identified, and only choice B includes the location, Israel. Choice D is about the right species but gives the year instead of the place, and A is about a different species.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Discoglossus nigriventer is an amphibian species.\n• It was believed to be extinct until a living specimen was identified in Israel in 2011.\n• Dysphania pusilla is a plant species.\n• It was believed to be extinct until a living specimen was identified in New Zealand in 2015.\n• They are considered Lazarus species.\n• \"Lazarus species\" is a term for living species of organisms that were once believed to be extinct."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Morris studied insects and Snethlage studied birds, so both devoted their careers to studying living organisms, and choice B frames this with \"Like,\" emphasizing the similarity. Choices A and D highlight differences (birth years and research subjects), and C talks about scientific fields in general rather than the two women.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Entomology is primarily the study of insects.\n• Margaretta Morris was an American entomologist born in 1797.\n• She is known for her research on wheat flies and cicadas.\n• Ornithology is primarily the study of birds.\n• Emilie Snethlage was a German-Brazilian ornithologist born in 1868.\n• She is known for her research on Brazilian birds.",
+      "choices": {
+        "A": "The entomologist Margaretta Morris was born in 1797, but ornithologist Emilie Snethlage was born later, in 1868.",
+        "B": "Like entomologist Margaretta Morris, ornithologist Emilie Snethlage dedicated her scientific career to the study of living organisms.",
+        "C": "Entomology and ornithology are just two examples of the myriad fields in which scientists can specialize.",
+        "D": "Margaretta Morris conducted research on wheat flies and cicadas; Emilie Snethlage, by contrast, is known for her research on Brazilian birds."
+      }
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the book's reception \"has been very good\" and that it won an award, so reviewers must have praised it. \"Applauded\" means praised. \"Blamed,\" \"misunderstood,\" and \"overlooked\" all describe a poor or nonexistent reception."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The presentation was meant to help attendees understand successful authors' techniques so they could \"use that understanding\" in their own work. \"Insight into\" means understanding of, which fits. \"Obliviousness about\" and \"hesitancy about\" are the opposite of what a helpful presentation would aim for."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence says the people \"may have\" seen the engravings as art but possibly did not, and \"we simply cannot say for certain.\" So how they understood the engravings is unknown. \"Uncontroversial\" and \"unsurprising\" imply we already have a settled answer, which contradicts the text."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Counting how often other scholars cite a researcher is a way to measure, or judge, how important that research is; the Goldin example uses citations to conclude her work is significant. \"Assess\" means to evaluate. Tracking citations doesn't \"influence\" or \"undermine\" a study's importance; it only gauges it."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion follows \"This approach has some limits\" and spells one out: the Places API data mostly cover customer-facing places. That identifies a specific flaw in the data set. Choice B is tempting because the sentence ends by praising the data, but the underlined part itself is the limitation, and the model was already introduced earlier (C).",
+    "fix": {
+      "passage": "Researchers César A. Hidalgo, Elisa Castañer, and Andres Sevtsuk created a computer model to predict the mix of businesses and places of interest found in a given neighborhood. The team used data from the Google Places API service to help identify electronics stores, bakeries, and other businesses and map their locations. This approach has some limits—<u>data from Places API tend to be restricted to places that are customer facing</u>—but the data set nonetheless provides an extremely reliable source to study colocation patterns of neighborhood amenities."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 concludes that Luttrell's reputation is \"questionable at best\" because of his raid on the priory. Text 2 argues the conflict grew out of a property dispute and that he was taking what \"he thought he had a right\" to, so its author would say his behavior must be judged with that belief in mind. Choice A is tempting, but Text 2 never weighs the Psalter's cultural value against his actions.",
+    "fix": {
+      "passage": "Text 1\nSir Geoffrey Luttrell funded the creation of the Luttrell Psalter, notable for its portrayal of life on a 14th-century English estate. Not all of Luttrell's actions were admirable, however. Most infamously, he participated in what was essentially a private war against Sempringham Priory, a monastery near his manor, even making off with 500 pounds' worth of monastery property during a raid. <u>So Luttrell's reputation should be regarded as questionable at best.</u>\n\nText 2\nSome historians claim that Luttrell's poor treatment of his neighbors is as crucial to his biography as his funding of the Luttrell Psalter. But his conflict with Sempringham Priory must be seen as an indirect result of a property dispute involving land on which his manor sat: he was taking property to which he thought he had a right."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The narrator says most historical figures are \"mere names\" that don't \"stand up in our imaginations like men,\" and compares historians' knowledge to a map: accurate but \"cold and naked,\" lacking the charm of a landscape painting. The point is that history records facts about people but not a living sense of who they were. Choice D takes the map-and-painting comparison literally instead of seeing it as a metaphor for historical writing.",
+    "fix": {
+      "passage": "The following text is from Nathaniel Hawthorne's 1830 short story “Sir William Phips.”\n\nFew of the personages of past times (except such as have gained renown in fireside legends as well as in written history) are anything but mere names to their successors. They seldom stand up in our imaginations like men. The knowledge, communicated by the historian and biographer, is analogous to that which we acquire of a country by the map—minute, perhaps, and accurate, and available for all necessary purposes, but cold and naked, and wholly destitute of the mimic charm produced by landscape painting."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says rusty-spotted cats \"have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr.\" So the rigid hyoid is the trait linked to purring. The stretchy ligament (A) is something lions have and rusty-spotted cats lack, and the larynx's shape (D) is never discussed.",
+    "fix": {
+      "passage": "Why do rusty-spotted cats purr but lions roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats called the hyoid. Rusty-spotted cats, which are much smaller than lions, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, lions have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that rusty-spotted cats lack. These traits allow lions and most other species of big cats to produce powerful roars. The same traits may also prevent most big cats from purring."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "When defending their city, residents \"always pointed to the Turkins as the most accomplished and most enlightened family of all.\" Being singled out above every other family gives the Turkins a special standing in S. Nothing says they are newcomers (A) or that they dislike the city (D); the newcomers are the ones who complain.",
+    "fix": {
+      "passage": "The following text is from Anton Chekhov's 1898 short story “Ionitch” (translated by Marian Fell in 1915). The text is set in a Russian city referred to as the city of S.\n\nIf newcomers to the little provincial city of S. complained that life there was monotonous and dull, its inhabitants would answer that, on the contrary, S. was a very amusing place, indeed, that it had a library and a club, that balls were given there, and finally, that very pleasant families lived there with whom one might become acquainted. And they always pointed to the Turkins as the most accomplished and most enlightened family of all."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the 1993 column, Brownies have 1,225 (thousand) members, more than Ambassadors (826), Daisies (191), or Cadettes (168). So Brownies were the largest category that year. Ambassadors are the second largest, which makes A the most tempting wrong choice.",
+    "fix": {
+      "passage": "The Girl Scouts of America is a youth organization that had just over 1 million members in 2021. A student is writing an essay on the history of the organization and wishes to determine which of four categories of Girl Scouts had the most members in 1993. (Girl Scout categories correspond roughly with ages.) According to the table, the category with the most members in 1993 was the _____",
+      "table": {
+        "caption": "Members of the Girl Scouts of America, by Age Category, 1992–1995 (in thousands)",
+        "headers": [
+          "Category",
+          "1992",
+          "1993",
+          "1994",
+          "1995"
+        ],
+        "rows": [
+          [
+            "Brownies (6-8 years)",
+            "1,319",
+            "1,225",
+            "1,181",
+            "1,142"
+          ],
+          [
+            "Ambassadors (older than 17)",
+            "863",
+            "826",
+            "802",
+            "784"
+          ],
+          [
+            "Daisies (5-6 years)",
+            "207",
+            "191",
+            "190",
+            "195"
+          ],
+          [
+            "Cadettes (11-14 years)",
+            "188",
+            "168",
+            "174",
+            "172"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first two lines describe a raging tempest and a ship driven toward shore \"outside,\" while the last two describe Puerto Cabello's \"warm and land-locked waters\" moving gently as a canoe glides over them. The poem sets the calm local waters against the stormy sea elsewhere. Choice B fails because the storm is happening elsewhere, not heading for Puerto Cabello.",
+    "fix": {
+      "passage": "The following text is adapted from D.A. Lozano’s 1844 poem “A Remembrance of Puerto Cabello— The Mangle” (translated by Agnes Blake Poor in 1918). The poem is a dedication to Puerto Cabello, a town on the northern coast of Venezuela.\n\nAnd while outside the tempest is raving o’er the ocean,\nAnd the ship is madly driving on some lone and desert shore;\nThy warm and land-locked waters swell with an easy motion,\nAnd gently glides the light pirogue [canoe] at dipping of the oar."
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The team claims the size-affecting mutation existed long before humans began breeding dogs within the last 12,000 years. Finding the mutation in a dog ancestor from 53,000 years ago would show it predates breeding, directly supporting that claim. Choices B and C compare sizes but say nothing about when the mutation arose."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Wood rots quickly in air and water unless sediment shields it from oxygen. Since much of the ship's wooden hull survived, it was most likely covered by protective sediment. The other choices don't follow from the information about how wood is preserved."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "HILDA looks for trends in economic well-being that \"can take a long time to develop,\" unlike the fitness study that doesn't need many years of data. So it is expensive because spotting those trends requires collecting data over many years. Choice B is about fitness studies and doesn't explain HILDA's costs.",
+    "fix": {
+      "choices": {
+        "D": "data from 25,000 people may not be enough to reveal significant trends in economic well-being."
+      }
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The meta-analysis found observable differences in every study, across species, whether the effects helped or harmed the exposed animals. So noise likely affects both mammals and birds noticeably, but the effects may differ in kind (helpful for one, harmful for another). Choice B contradicts the finding that every study showed a difference, and A and D compare effect sizes or reporting habits the text never discusses."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Since 1945\" describes an action that began in the past and continues to now, which calls for the present perfect \"has collected.\" \"Collects\" and \"is collecting\" don't connect the action to its starting point, and \"will collect\" is future tense."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Appear on US currency\" is one continuous phrase: the preposition \"on\" must lead straight into its object. Any punctuation between \"on\" and \"US currency\" would separate a preposition from its object, so no punctuation is correct."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers back to two cities, Nakuru and Ibarra, so a plural determiner is needed, and \"these cities\" fits. \"That\" and \"this\" are singular, and \"each\" would require the singular \"city sits.\""
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence needs a main verb for the subject \"this phrase.\" \"Translates\" is a finite verb that agrees with the singular subject. \"To translate,\" \"translating,\" and \"having translated\" are not finite verbs, so they would leave the sentence without a main verb."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Back in the 1860s\" sets the sentence in the past, and \"nearly 30% of the city's population\" is treated as a singular amount, so \"was\" is correct. \"Is,\" \"is being,\" and \"will be\" are in the wrong tense."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Though it was designated as mission STS-96\" is a dependent clause, so it should be joined to the main clause \"the mission was actually the ninety-fourth flight...\" with a comma. A period (B) leaves the dependent clause as a fragment, and \"and\" (A) can't join a dependent clause to a main clause."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence gives a striking detail that backs up and intensifies \"extremely heavy\": each statue weighs over 5 tons. \"In fact\" introduces that kind of emphatic support. \"Instead\" would signal a contrast, and \"Earlier\" a time shift, neither of which fits."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text walks up the pyramid level by level: producers, herbivores, then omnivores and carnivores. The blank introduces the last, highest level, so \"Finally\" fits the sequence. \"For example\" would require an illustration of the previous point rather than the next step."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Smith has worked at JPL, and the second gives a detailed account of her particular role on the Perseverance team. \"Specifically\" introduces that more precise detail. \"Finally\" would suggest the last item in a series, and \"Conversely\" and \"Nevertheless\" signal a contrast that isn't there."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An audience unfamiliar with Catlett first needs to know who she is, and choice D identifies her as a celebrated African American artist and says what her work explores. The other choices describe individual sculptures without ever introducing Catlett herself.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Elizabeth Catlett (1915–2012) was a celebrated African American artist.\n• She is best known for creating sculptures and prints that explore the Black experience.\n• Political Prisoner is a 1971 cedar sculpture by Catlett.\n• Singing Head is a 1980 marble sculpture by Catlett.",
+      "prompt": "The student wants to introduce Elizabeth Catlett to an audience unfamiliar with the artist. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say whose point of view the novel uses, and choice A states that Kaikeyi retells The Ramayana from the character Kaikeyi's point of view. Choice B misapplies \"point of view\" to the original poem, and C and D don't mention the novel's perspective at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Ramayana is a Sanskrit epic poem from ancient India.\n• In The Ramayana, the character Kaikeyi is often portrayed as a villain.\n• Kaikeyi is a 2022 novel by Vaishnavi Patel.\n• The novel is a retelling of the epic poem from Kaikeyi's point of view.\n• It often portrays Kaikeyi as heroic."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence must show how the two pieces vary: choice C contrasts Live On, Heart of My Nation (a Choctaw hymn) with Fantasy Aborigine No.3 (a Tewa seashell rattle). Choice B describes what both pieces have in common, and D mentions \"different approaches\" without saying which piece uses which.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• His compositions synthesize Western classical music with elements of various Native musical traditions.\n• Ballard's classical piece Live On, Heart of My Nation features a Choctaw hymn.\n• Ballard's classical piece Fantasy Aborigine No.3 incorporates a Tewa seashell rattle, a traditional Native instrument."
+    }
+  }
+]

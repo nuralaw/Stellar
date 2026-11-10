@@ -1,0 +1,1049 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The organization's member database is used by editors around the world, so membership helps Aliaga Ticona \"share\" her work with people outside Bolivia. \"Split,\" \"challenge,\" and \"examine\" don't describe getting her photographs in front of a wider audience."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The point is that sending astronauts is costly, so robots would help; \"relying on\" astronauts to maintain the telescope is what's expensive. \"Reducing\" or \"forgetting about\" astronauts would save money rather than cost it, and \"straightening\" makes no sense here."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"This ___\" refers back to Franklin being very popular in France, and \"esteem\" means high regard or admiration. \"Controversy\" contradicts his popularity, while \"sincerity\" and \"thoughtfulness\" describe Franklin's character, not how the French felt about him."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Three years of painstaking work, 250,000 hand-cut images, and inventing new tools all describe a difficult, laborious process, which is what \"arduous\" means. \"Haphazard\" contradicts \"painstakingly,\" and nothing suggests the process was \"contentious\" (full of conflict) or \"ineffectual\" (it produced the film)."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Yung says that anyone who has read Brown's biography \"will... bear me out,\" meaning those readers would agree with his admiring view of her. The text never says many writers have written about her (A), and the reference doesn't explain how she differed from her peers (C) or describe her relationship with Yung (D).",
+    "fix": {
+      "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America. Yung Wing was the first American college graduate of Chinese heritage; Phoebe Brown was the first prominent female hymn writer in the United States.\n\nI look back upon my acquaintance with Mrs. Phoebe H. Brown with a mingled feeling of respect and admiration. She certainly was a remarkable New England woman—a woman of surpassing strength of moral and religious character. Those who have had the rare privilege of reading her stirring biography, will, I am sure, bear me out in this statement. She went through the crucible of unprecedented adversities and trials of life and came out one of the rare shining lights that beautify the New England sky."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says the philosopher could dissect and name things, but deeper causes \"were utterly unknown to him,\" and Victor then says he \"repined\" (complained) at these barriers. So the sentence shows that the science available to Victor couldn't answer what he wanted to know. It points out limits of science rather than its gains (A), and there's no specific debated controversy (B).",
+    "fix": {
+      "passage": "The following text is from Mary Shelley's 1818 novel Frankenstein. Victor Frankenstein, who is narrating this portion of text, describes the state of scientific knowledge as he began his own study of the natural world.\n\nThe untaught peasant beheld the elements around him and was acquainted with their practical uses. The most learned philosopher knew little more. He had partially unveiled the face of Nature, but her immortal lineaments were still a wonder and a mystery. <u>He might dissect, anatomise, and give names, but, not to speak of a final cause, causes in their secondary and tertiary grades were utterly unknown to him</u>. I had gazed upon the fortifications and impediments that seemed to keep human beings from entering the citadel of nature, and rashly and ignorantly I had repined."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text uses Cunningham as one example of the rich history of Black journalism in the US and then says the National Association of Black Journalists preserves and honors that history. Choice A gets the founding date wrong (1975), and the text says nothing about other countries (B, C)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens by asking why ocelots purr but jaguars roar and then explains that differences in the hyoid bone (rigid vs. flexible, with a stretchy ligament) may account for it. Choices A and C each give only a detail of that explanation, and B wrongly says researchers have no idea why."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines a loanword and then traces \"coyote\" (from Nahuatl) and \"condor\" (from Quechua) into English through Spanish, so both are loanwords with Indigenous origins. The text never compares how many words Spanish took from each language (B), reverses the direction of borrowing in C, and doesn't discuss changes in meaning (D).",
+    "fix": {
+      "passage": "\"Coyote\" is an example of a loanword—that is, a word that originated in one language and was later adopted by another. The word came to English indirectly from coyote, the Spanish word for the wild canine species. Spanish had borrowed it from Nahuatl, an Indigenous language of Central Mexico, in which the word's original form is coyotl. \"Condor\" also has an Indigenous origin and entered English through Spanish, but in this case, the original source was Quechua, a language of South America, in which the word for the large vulture species is kuntur."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers treat a lower heart rate as a sign of relaxation, so infants' heart rates being substantially lower during the lullaby than the non-lullaby directly supports the claim that the lullaby relaxed them. Irregular heart rates (A) aren't the stated measure, and parents' preferences (C) or the singer's gender (D) say nothing about the infants' response.",
+    "fix": {
+      "choices": {
+        "A": "The heart rates of infants in the study were more irregular during the lullabies than during non-lullabies."
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Mrs. Sommers sometimes acts without conscious deliberation, and C says she \"was not thinking at all\" and was following \"some mechanical impulse that directed her actions.\" The other quotations describe her actions or her focus on the present but not acting without thinking; in D she is in fact pretending and looking closely."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The study's volitional laughs were produced on an experimenter's instruction, while the spontaneous ones came from natural conversation. If volitional laughter in natural social settings sounds much like spontaneous laughter, then listeners may only have succeeded because the fake laughs were unusually artificial, so the conclusion that people everywhere can tell the two apart is weakened. Choices C and D describe features that help people tell the laughs apart, which supports rather than weakens the conclusion, and B rules out a confounding factor."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The assertion is about a natural regrowth process starting in the mid-1980s, so the evidence should show forest area rising after the low point. On the graph, all three classes reach their lows in 1979 or 1986 and are much higher by 2000, so forest cover increased for every class from 1979 to 2000. Choice D describes the earlier loss of forest, not regrowth, and B and C compare classes at a single year, which shows no change.",
+    "fix": {
+      "passage": "To understand the extent of deforestation in the Chorotega region of Costa Rica, Juan Pablo Arroyo-Mora and colleagues used historical aerial photography and remote sensing data to track changes in the forest cover area across different land use capability classes (categories that indicate possible uses of forest land). Due to the Chorotega region's climate, various types of forested areas were converted to cattle pasture as rising international meat prices drove a cattle ranching boom in the 1960s and 1970s. By the mid-1980s, however, increased public awareness and environmental reforms, along with a decline in meat prices, triggered a natural regrowth process, as evident by the _____"
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The absence of Mammillaria in eastern and western Coahuila has been blamed on poor habitat, but the text adds that much of the area is \"notoriously inaccessible.\" That suggests researchers may simply not have explored there enough to find the cacti. Nothing links M. knippeliana to look-alike species (A), and D just restates the habitat explanation that the \"but\" is questioning."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence's subject is the poem, and it needs a main verb; \"contains\" is a finite present-tense verb that completes the sentence. \"Having contained,\" \"to contain,\" and \"containing\" are not main verbs, so they leave the sentence without a predicate."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"an abstract cubist painting\"; the phrase between the dashes doesn't change that. A singular subject needs the singular verb \"has entered.\" \"Were entering,\" \"enter,\" and \"have entered\" are all plural forms that would match \"works\" or \"critics\" instead."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"What increases is the rate at which the water turns to vapor\" is a complete sentence, and \"With a pressure cooker pot... an airtight seal traps the vapor...\" is another. A period correctly separates them. Choices B and D run the two sentences together, and C creates a comma splice."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quotation ends a complete independent clause, and \"in 1912, for instance, judges recognized...\" is another independent clause, so a semicolon is needed after the closing quotation mark. Choices A and D join two independent clauses with nothing or only a comma, and B's \"and,\" leaves the second clause awkwardly punctuated."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence begins with a long introductory phrase (\"With a blend of... floor-to-ceiling windows\") followed by the main clause \"transitional design splits the difference.\" A comma is the standard way to separate an introductory phrase from the main clause. A semicolon or period (A, B) would leave the phrase as a fragment, and a dash isn't used to set off a single introductory phrase."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Thomas Hart Benton and Jackson Pollack\" is a restrictive appositive identifying which US artists are meant, so no punctuation should separate it from \"artists\" or from the verb \"were featured.\" Choice A wrongly puts a comma between the two names and the verb, B uses a colon after a noun inside the subject, and D leaves an unpaired comma before the names."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Serving aboard the USS Pinola during the war is how Ahoy earned his place in history, so \"In doing so\" correctly links the action to its result. \"For instance\" would introduce an example, \"Finally\" a last step in a sequence, and \"In any case\" would dismiss the previous point."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives the London Array's output (630 MW) and then Hornsea Project One's much larger output (1,218 MW), so the second sentence sets up a comparison; \"By comparison\" fits. \"As a result\" implies cause and effect, \"For instance\" an example, and \"That is\" a restatement, none of which matches."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says the research was very influential in the fight against CFCs, and the next sentence gives a specific case of that influence: it laid the foundation for the 1987 treaty. \"Specifically\" introduces this more precise detail. \"However\" and \"Regardless\" signal contrast, and \"Earlier\" is wrong in time order since the treaty came after the research."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general claim (sleek vehicles are more aerodynamic), and the A320's streamlined nose is an example of it, so \"for example\" fits. \"However\" signals a contradiction, \"additionally\" adds a separate point, and \"meanwhile\" suggests something happening at the same time."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to present the study and its findings, and B names the researchers and reports all the findings: 146 species, including one from Hemisotoma and three from Sphaeridia. Choice A doesn't mention the study and is incomplete, C describes the study's purpose but no findings, and D gives findings without identifying the study.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Springtails are a group of noninsect hexapods (six-legged animals).\n• Researchers Claudia Marcela Ospina-Sánchez, Felipe N. Soto-Adames, and Grizelle González conducted a study to determine how many springtail species are present in Puerto Rico.\n• They found a total of 146 springtail species.\n• They found 1 springtail species belonging to the genus Hemisotoma.\n• They found 3 springtail species belonging to the genus Sphaeridia."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain what a merchant vessel is and give examples, and C does both: a ship hired to carry cargo or passengers, such as bulk carriers, cruise liners, and oil tankers. Choices A and D give Greek statistics instead, and B is about measuring carrying capacity rather than defining the term.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A merchant vessel is any ship hired to carry cargo or passengers.\n• Common merchant vessels include bulk carriers, cruise liners, and oil tankers.\n• A vessel's carrying capacity is also known as its deadweight tonnage (DWT).\n• In 2021, there were a total of 1,236 merchant vessels registered in Greece.\n• The combined DWT of these vessels was 64.9 million tons."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the songs, the sentence must say how they differ, and A uses \"whereas\" to set Poor Miner's Farewell (about Kentucky coal miners) against Bring Him Back Home (about Nelson Mandela). Choice C stresses what the songs share, and B and D each describe only one song.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Musicians around the world have used protest songs to raise awareness about human rights violations.\n• US folk singer Aunt Molly Jackson released the protest song Poor Miner's Farewell in 1932.\n• It exposed the unlivable wages and dangerous working conditions coal miners faced in Kentucky during the 1920s and 1930s.\n• South African singer-songwriter Hugh Masekela released the protest song Bring Him Back Home in 1987.\n• It called on the South African government to free Nelson Mandela, an anti-apartheid leader who'd been unjustly imprisoned.",
+      "prompt": "The student wants to contrast the song Poor Miner's Farewell with the song Bring Him Back Home. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fossils reveal \"important details\" about the time when KNM-KP 271 lived, so they help scientists \"illuminate,\" or shed light on, the Pliocene epoch. Fossils can't \"imitate,\" \"design,\" or \"substitute\" a geological time period."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Earth-based observations had given very little information about Venus, so astronomers' ideas were mostly guesses, which is what \"conjectures\" means. \"Conclusions\" implies solid evidence they didn't have, and \"summations\" and \"exemplifications\" don't fit ideas formed without data."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Subjects looked at where the target ball \"would have gone if\" the other ball hadn't existed, which is thinking about what would happen under conditions contrary to fact; that is \"counterfactual\" thinking. \"Analogical\" (by comparison) and \"associative\" (linking ideas) don't describe imagining an alternative outcome, and \"ambivalent\" means having mixed feelings."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Like this alabaster box... is my heart\" is a simile comparing a physical object (the box) with something abstract (the speaker's heart), and the rest of the lines keep describing both as delicately carved. So the underlined portions are the two subjects of an extended comparison. Nothing is contrasted (B), no decision is weighed (C), and no change is described (D).",
+    "fix": {
+      "passage": "The following text is from Sarojini Naidu's 1896 poem “Alabaster.”\n\nLike <u>this alabaster box</u> whose art\nIs frail as a cassia-flower, is <u>my heart,</u>\nCarven with delicate dreams and wrought\nWith many a subtle and exquisite thought."
+    }
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first explains that all baleen whales feed by filtering krill through baleen plates and can eat up to 30 percent of their mass daily, then contrasts the humpback's size with the much larger fin whale, including how much krill the fin whale eats. That is a shared characteristic followed by a related difference. Choice A reverses the order, and nothing in the text discusses a change in whale populations (B) or a feature unique to humpbacks (C)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part of the sentence claims the Indigenous-led centers contrast with museums that aren't Indigenous-led, and the underlined part explains how: those museums tend to target non-Indigenous audiences and use Euro-centric exhibit design. It adds detail to the earlier claim rather than defining a term (A), answering a criticism (B), or noting an exception (D).",
+    "fix": {
+      "passage": "In what is now Minnesota, the Shakopee Mdewakanton Sioux Community operates the Hocokata Ti, a cultural center. Relying on traditional knowledge to guide the design of exhibits, this institution presents Dakota history and culture to the tribe's citizens. The Comanche Nation, a tribe in Oklahoma, employs a similar strategy in its own cultural center. Both centers contrast with museums that aren't Indigenous-led; <u>when displaying Indigenous artifacts, such museums tend to anticipate mainly non-Indigenous audiences and rely on Euro-centric strategies for designing exhibits.</u>"
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says the collaborative approach between tribal and government groups will likely improve joint conservation projects, and Text 2 says incorporating tribal knowledge tends to lead to better conservation outcomes. Both therefore agree that collaboration benefits conservation. Neither text claims collaboration will reduce temperatures (A), and only Text 1 mentions wild rice and crows, without ranking their importance (B, D).",
+    "fix": {
+      "passage": "Text 1\nA conservation group representing 11 tribal nations in the Great Lakes region reported to various state and federal natural resources agencies operating in the region that the northern wild rice plant (manoomin in the Ojibwe language) will likely fare significantly worse than the American crow (aandeg in Ojibwe) due to rising temperatures over the next 50 years. This collaborative approach has helped build trust between government and tribal groups, which will likely improve the quality of any joint conservation projects.\n\nText 2\nState and federal natural resources agencies are increasingly incorporating traditional ecological knowledge from tribal groups in the agencies' plans to address threats to natural resources due to increasing temperatures. This approach has helped build positive relationships between tribal groups and these agencies and furthermore tends to lead to better conservation outcomes."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator says that past the viaduct, at the end of Paris, the Seine spreads out \"as though it had regained space and liberty\" and becomes \"the peaceful river.\" That implies it was confined and less calm in the city. The text doesn't mention the water clearing (A) or a stronger current under the viaduct (B), and it never ranks the river's beauty against Paris (D).",
+    "fix": {
+      "passage": "The following text is adapted from Guy de Maupassant's 1884 short story “A Recollection,” from the collection Guy de Maupassant Short Stories (translated by Albert M.C. McMaster et al. in 1903). The narrator is taking a boat down the Seine river from Paris, France, to the surrounding countryside.\n\nI took up a position in the bows [front of the boat], standing up and looking at the quays, the trees, the houses and the bridges disappearing behind us. And suddenly I perceived the great viaduct of Point du Jour which blocked the river. It was the end of Paris, the beginning of the country, and behind the double row of arches the Seine, suddenly spreading out as though it had regained space and liberty, became all at once the peaceful river which flows through the plains, alongside the wooded hills, amid the meadows, along the edge of the forests."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis is that, in low visibility, intermediate-headed fish detect obstructions with large vortices better than wide-headed fish. If the wide-headed fish bumped into such obstructions more often than the intermediate-headed fish, that directly supports it. Choice D shows no difference, A looks at only one fish, and B compares individuals of the same species.",
+    "fix": {
+      "passage": "Water flowing around an obstruction creates vortices (patterns of swirls) of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing by Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao using models of three head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—showed that for large vortices, fish with intermediate heads would be better able than wide-headed fish to distinguish between vortices and general turbulence in the water. A second research team has therefore hypothesized that in low-visibility conditions, intermediate-headed fish will be more likely than wide-headed fish to detect obstructions that create large vortices."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined claim is that the exhibition's breadth of disciplines sets it apart from earlier all-North Carolina shows such as a photography exhibition. Showing that three of its artists are a painter, a photographer, and a sculptor demonstrates that variety of disciplines. Ownership of works (A) and the museum's general collection (C) are irrelevant, and D shows only that Carter is a photographer.",
+    "fix": {
+      "passage": "The Reckoning and Resilience (2022) exhibition at Duke University's Nasher Museum of Art in Durham, North Carolina, is dedicated to the work of thirty North Carolina artists, including Lien Truong, Kennedi Carter, and Meg Stein. <u>Although the Nasher Museum has focused exhibitions entirely on North Carolina artists before, as it did previously in the photography exhibition Across County Lines, the breadth of disciplines in Reckoning and Resilience sets it apart.</u>"
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The student claims that people everywhere think of time relative to their own body's orientation. If Yupno speakers point uphill for the future no matter which way they're facing, they're using a fixed feature of the landscape, not an ego-based axis, which weakens the claim that the tendency is universal. Choice A is consistent with ego-based gestures, and B and D don't address how time is oriented."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The linguist thinks the New York Spanish dialect developed partly through interaction with English, and younger speakers of nonmajority languages borrow more from the majority language than older speakers do. So if the hypothesis is right, younger Spanish speakers should be more likely to use the New York dialect than older speakers in the same area. Choice C contradicts the role of English, and A and B bring in factors the text doesn't connect to the dialect."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "No source written before 1155 mentions the Round Table, and Preiddeu Annwfn dates from around 900, so it can't have been where Malory got his Round Table material. Choice C claims knowledge about what Geoffrey had access to that the text doesn't give, and A and D make comparisons of accuracy or content that the text never supports."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Confidence collapsed because the coins fell below 80 percent silver, and Sidon still had heavy financial obligations, so adding more silver was hard. Keeping the same amount of silver per coin while making the coin lighter means less copper, which raises the silver percentage back up. Choice D keeps the same low proportion, so it wouldn't help, and B just raises the standard without changing the coins."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The guide soon grew in scope and influence\" and \"its modest French eateries were replaced...\" are both independent clauses. Joining them requires a comma plus the conjunction \"and.\" Choice C is a comma splice, D omits the needed comma, and A runs the clauses together."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the verb is \"many\" (of the biomedical scientists), which is plural; the phrase \"like... Elba Serrano\" is just an example set off by commas. A plural subject takes the plural verb \"study.\" Choices B, C, and D are singular forms that wrongly agree with \"Elba Serrano.\""
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Oh What a Day\" is a restrictive appositive that identifies which hit song is meant, so no punctuation should separate it from \"song.\" A colon, comma, or semicolon would wrongly break up the noun phrase."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"For instance\" belongs with the first clause, because Macchia's work on inequality is an example of the topics behavioral economists explore. It is set off with a comma, and a semicolon then separates that independent clause from \"other researchers investigate...\" Choice B attaches \"for instance\" to the wrong clause, and C and D don't properly separate the two independent clauses."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The book wasn't written solely by Kittredge\" is an independent clause, and \"however, other authors... also contributed essays\" is another; \"however\" begins the second clause. A semicolon before \"however\" and a comma after it is correct. Choice C would need a comma after \"However\" to set it off, and A and D put \"however\" with the wrong clause or create a comma splice."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main clause is \"This hypothesis... cannot stand,\" so the blank must begin a modifier describing the hypothesis, not a second main verb. \"Suggesting that certain trees... survived\" does that. \"Suggests,\" \"suggested,\" and \"has suggested\" would create a second verb for \"hypothesis\" and make the sentence ungrammatical."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the installation creates a whimsical yet perplexing experience, and the second confirms and intensifies that with a vivid description of visitors being both dazzled and confused. \"Indeed\" signals that kind of reinforcement. \"Nevertheless\" and \"Instead\" signal contrast, and \"Second\" suggests a list that isn't there."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says modern via ferratas are rarely designed just to reach a summit, and the next says what they usually do instead: favor recreation over utility. \"More often\" introduces the common case. \"Nonetheless\" and \"On the other hand\" signal contrast, and \"Additionally\" adds an unrelated point."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To refute the claim that slow TV is boring, the sentence should use a quotation that argues against it, and B opens with \"Far from boring\" and cites Heller's praise of its \"visceral kind of armchair tourism.\" Choice A presents both sides without refuting either, C agrees that it is boring, and D quotes Heller but never addresses the boring claim.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Documentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time.\n• Reinflytting is a Norwegian slow TV program.\n• The 9-day-long program documented a wild reindeer migration from their winter to summer pastures.\n• It first aired in 2017.\n• Slow TV has been called “the world’s most boring television.”\n• American journalist Nathan Heller praises it, writing that “it affords a visceral kind of armchair tourism.”"
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to specify how many chromosomes the fennec fox has, and B gives the exact number: sixty-four. Choice A only says it has more than the red fox, C talks about genes in general, and D is about the red fox.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Chromosomes are cellular structures that contain genes.\n• Genes carry critical instructions for determining an organism’s physical traits.\n• Members of the same species typically have the same number of chromosomes.\n• The fennec fox (Vulpes zerda) and the red fox (Vulpes vulpes) are species of foxes.\n• The fennec fox has sixty-four chromosomes.\n• The red fox has thirty-four chromosomes."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to describe a color popular at 2021 London Fashion Week, and D does so: a cool, bright stirring ocean blue. Choice C mentions that event but describes the pink shade instead of the blue one, and A and B don't describe the London color at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• At London and New York Fashion Weeks, fashion designers debut new clothing collections.\n• Color consultants create trend reports on the popular colors at a given Fashion Week.\n• A report on 2018 New York Fashion Week noted the popularity of a delicate petal pink shade that was warm in tone and soft in intensity.\n• A report on 2021 London Fashion Week noted the popularity of a stirring ocean blue shade that was cool in tone and bright in intensity."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Placing Einstein's argument in historical context means tying it to its time and to what came after. A sets it \"during the dawn of quantum theory\" and notes that Bohr's opposing view became the widely accepted one. Choice D misstates Bohr's position (it was Einstein who argued for a reality independent of observation), and B and C don't present Einstein's argument itself.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The fifth Solvay Conference on Physics was held in 1927.\n• It brought together twenty-nine of the era's preeminent scientists to discuss the emerging field of quantum theory.\n• The conference famously featured a debate between physicists Albert Einstein and Niels Bohr.\n• Bohr proposed that subatomic entities like electrons had only probable realities until they were observed.\n• Einstein argued that subatomic entities like electrons had a reality independent of observation.\n• Bohr’s position, later called the Copenhagen interpretation, remains the most widely accepted theory of quantum mechanics."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization applies to a whole group, and C states a rule for any mineral with a Mohs number of 8 versus any with a number of 5, using topaz and apatite as examples. Choices A, B, and D make statements only about the three specific minerals in the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral calcite has a Mohs scale number of 3.\n• The mineral apatite has a Mohs scale number of 5.\n• The mineral topaz has a Mohs scale number of 8."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute t = 5 into s = 50 + 4t: s = 50 + 4(5) = 50 + 20 = 70 miles per hour. Choice A (50) is the speed at t = 0, before any acceleration.",
+    "fix": {
+      "prompt": "s = 50 + 4t\nThe equation gives the speed s, in miles per hour, of a certain car t seconds after it began to accelerate. What is the speed, in miles per hour, of the car 5 seconds after it began to accelerate?"
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 2^2 + 15 = 4 + 15 = 19. Choice C (17) comes from computing 2 + 15 instead of squaring the 2."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 34 from both sides: sqrt(w) = 6. Square both sides: w = 36. Choice A (2) forgets to square, and C (12) doubles 6 instead of squaring it.",
+    "fix": {
+      "prompt": "sqrt(w) + 34 = 40\nWhat is the solution to the given equation?"
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The s small tanks hold 1 fish each (s fish) and the b large tanks hold 2 fish each (2b fish), so s + 2b = 37. Choice C swaps the capacities, and B counts tanks rather than fish."
+  },
+  {
+    "key": "m1-05",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Exponential growth means the quantity is multiplied by the same factor each period; growing 16% each hour means multiplying by 1.16 every hour. Adding a fixed 1,600 each hour (A) is linear growth, and C and D describe decreases."
+  },
+  {
+    "key": "m1-06",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "First-round answers give 2f points and second-round answers give 5s points, so the total is 2f + 5s. \"At least 100\" means ≥ 100, giving 2f + 5s ≥ 100. Choice C swaps the point values, and A and D use the wrong direction."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "60"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The term 2x depends on the number of plants, so it is the watering time (2 minutes per plant). The constant 60 doesn't change with x, so it is the fixed time for mowing the grass: 60 minutes."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "45"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In congruent triangles, corresponding angles are equal. Since J corresponds to P, angle P = angle J = 45°. Choosing 10 or 125 would match P with K or L, which are not its corresponding angles."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both lines have slope 5 but different y-intercepts (10 and −2), so they are distinct parallel lines and never meet. Infinitely many intersections (D) would require the same slope and the same intercept."
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 3 into y = 4(2)^x + 5: y = 4(8) + 5 = 32 + 5 = 37. Choice C (32) forgets to add 5, and A (69) uses 2^4 instead of 2^3.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y for the equation y = 4(2)^x + 5. In the table, a is a constant. What is the value of a?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "1",
+            "13"
+          ],
+          [
+            "2",
+            "21"
+          ],
+          [
+            "3",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The starting amount is 72,000 and it doubles each day, so the growth factor is 2: y = 72,000(2)^t. Choice C uses 1/2, which would halve the count each day, and A and B wrongly put 72,000 in the base.",
+    "fix": {
+      "choices": {
+        "A": "y = (1/2)(72,000)^t",
+        "C": "y = 72,000(1/2)^t"
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "12"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area = n(n + 5) = 204, so n^2 + 5n − 204 = 0. This factors as (n + 17)(n − 12) = 0, so n = 12 or n = −17. A width can't be negative, so n = 12."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "12"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set 9^(x/8) + 11 = 38, so 9^(x/8) = 27. Write both as powers of 3: 3^(2x/8) = 3^3, so x/4 = 3 and x = 12.",
+    "fix": {
+      "prompt": "The function f is defined by\nf(x) = 9^(x/8) + 11\nFor what value of x is f(x) equal to 38?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Two numbers that multiply to 80 and add to −42 are −2 and −40, so f(x) = (x − 2)(x − 40), and the zeros x = 2 and x = 40 appear as constants in the factors. Choice D shows the vertex (21, −361), not the zeros, and A and C don't reveal the zeros at all."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "49"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each time x goes up by 1, g(x) goes down by 3, so m = −3. Using (1, 46): 46 = −3(1) + b, so b = 49. You can also step back from x = 1 to x = 0 by adding 3: 46 + 3 = 49.",
+    "fix": {
+      "prompt": "For the linear function g, the table shows four values of x and their corresponding values of g(x). The function can be written as g(x) = mx + b, where m and b are constants. What is the value of b?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "1",
+            "46"
+          ],
+          [
+            "2",
+            "43"
+          ],
+          [
+            "3",
+            "40"
+          ],
+          [
+            "4",
+            "37"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the equations to eliminate y: (x + 5y) + (x − 5y) = 5 + 3, so 2x = 8 and x = 4. Choice D (8) forgets to divide by 2."
+  },
+  {
+    "key": "m1-17",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Triangle ACE has a right angle at E, so angles A and C are complementary. For complementary angles, cos A = sin C, so sin C = 0.55. Choice B (0.45) wrongly subtracts from 1, and D (0.84) would be sin A."
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only vanilla orders count: 20 with sprinkles and 30 without, for 50 total. The probability is 20/50 = 0.40. Choice B (0.13) divides 20 by all 240 orders, ignoring the \"given vanilla\" condition.",
+    "fix": {
+      "prompt": "The table gives the distribution of flavor and type of topping for customer orders at an ice cream shop.\nIf a customer order is selected at random, what is the probability of selecting an order with sprinkles, given the flavor of ice cream is vanilla?",
+      "table": {
+        "headers": [
+          "Flavor of ice cream",
+          "Sprinkles",
+          "No sprinkles"
+        ],
+        "rows": [
+          [
+            "Chocolate",
+            "60",
+            "30"
+          ],
+          [
+            "Vanilla",
+            "20",
+            "30"
+          ],
+          [
+            "Twist",
+            "80",
+            "20"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Move the x-terms to one side: x(r − 7) − 19x = 25 − 3, so x(r − 26) = 22. If r = 26, this becomes 0 = 22, which has no solution. Any other value of r gives a nonzero coefficient and exactly one solution, so r cannot be 26.",
+    "fix": {
+      "prompt": "x(r − 7) + 3 = 19x + 25\nIn the given equation, r is a positive integer. If the given equation has exactly one solution, what CANNOT be the value of r?"
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "217"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "People who attended the first but not the second webinar: 2,000 × (1 − 0.65) = 700. Of these, 31% attended the third: 0.31 × 700 = 217. The 44% figure applies only to people who attended both of the first two webinars, so it isn't needed here."
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle M has center (−6a, 38a) and radius 6a. Shifting 12a units right adds 12a to the x-coordinate: (6a, 38a). The equation is (x − 6a)^2 + (y − 38a)^2 = 36a^2. Choice A shifts left instead, and B and C shift vertically."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dot plot is symmetric about 10 (5, 6, 3, 6, 5 dots at 4, 7, 10, 13, 16), so set A's mean is 10 μF, and its range is 16 − 4 = 12 μF. Adding 14 to every value raises the mean to 24 μF but leaves the range at 12 μF. Choice D wrongly adds 14 to the range as well."
+  },
+  {
+    "key": "m2-01",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Shifting a graph down 6 units subtracts 6 from the output: y = 3^x − 6. Choices B and D change the exponent, which shifts the graph left or right, and A multiplies instead of shifting.",
+    "fix": {
+      "choices": {
+        "B": "y = 3^(x + 6)",
+        "D": "y = 3^(x − 6)"
+      }
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Slope = (−3 − 2)/(1 − 0) = −5, and the point (0, 2) gives a y-intercept of 2, so y = −5x + 2. Choice A has the sign of the slope wrong."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(4) = 4 + 3 = 7 and g(4) = 3(4) = 12. Then 7f(4) − g(4) = 7(7) − 12 = 49 − 12 = 37."
+  },
+  {
+    "key": "m2-04",
+    "answer": [
+      "25"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 5a/b = 3.5, a/b = 0.7. Since a/(bn) = (a/b)(1/n), we get 0.7 · (1/n) = 17.5, so 1/n = 17.5/0.7 = 25.",
+    "fix": {
+      "prompt": "If 5a/b = 3.5 and a/(bn) = 17.5, what is the value of 1/n?"
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide the coefficients and subtract the exponents: (6v^12)/(18v^3) = (6/18)v^(12 − 3) = (1/3)v^9 = v^9/3. Choice D multiplies by 3 instead of dividing, and A and C divide the exponents instead of subtracting.",
+    "fix": {
+      "prompt": "Which expression is equivalent to (6v^12)/(18v^3), where v > 0?",
+      "choices": {
+        "A": "v^4/3",
+        "B": "v^9/3",
+        "C": "3v^4",
+        "D": "3v^9"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the minus sign: 6t^4 − 6t^2 + 4t − 2 − 5t^4 + 3t^3 − 7t^2 + 2. Combine like terms: t^4 + 3t^3 − 13t^2 + 4t, and the constants −2 + 2 cancel. Choice D forgets to change the sign of the second −2."
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From (−6, 65) to (−3, 56), y drops 9 while x rises 3, so the slope is −3, and y = −3x + b gives 65 = 18 + b, so b = 47. Then y = −3x + 47, or 3x + y = 47; multiplying by 3 gives 9x + 3y = 141. Check (6, 29): 54 + 87 = 141.",
+    "fix": {
+      "prompt": "The table shows four values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−6",
+            "65"
+          ],
+          [
+            "−3",
+            "56"
+          ],
+          [
+            "3",
+            "38"
+          ],
+          [
+            "6",
+            "29"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "A solution of x = 7 means the graph crosses the x-axis at x = 7, and a factor of x + 5 means another x-intercept at x = −5. Only graph A has x-intercepts at both −5 and 7 (plus one at 1). Graph B crosses at −7 and 5, the trap of reversing the signs, and graphs C and D have no x-intercept at −5.",
+    "figure": 0,
+    "choiceImages": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4
+    },
+    "note": "PDF says B; B's graph crosses the x-axis at −7, −1 and 5, so it has neither x = 7 nor x = −5 as zeros. Graph A crosses at −5, 1 and 7."
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The points are (9, 7), (12, 10), and (12, 4). The last two are symmetric about y = 7, so the center is (h, 7); equal distances give (h − 9)^2 = (12 − h)^2 + 9, so 6h = 72 and h = 12. The center is (12, 7), the radius is 3, and the circumference is 2π(3) = 6π, so k = 6. Choice A (3) is the radius."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the expressions equal: −2x − 10 = 2x + 16, so −4x = 26 and x = −13/2. Then y = 2(−13/2) + 16 = −13 + 16 = 3."
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 31.25% increase means the June 15 count is 1.3125 times the May 1 count: 1.3125x = 168, so x = 168/1.3125 = 128. Choice B (116) subtracts 31.25% of 168 from 168 instead of undoing the increase."
+  },
+  {
+    "key": "m2-12",
+    "answer": [
+      "3"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 4 − 5x. The equation becomes 5u + 4u + 9 = 8u + 6, so u = −3. Since 5x − 4 = −(4 − 5x) = −u, the value is 3."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The rectangle's diagonal is a diameter of the circle, so the diameter is 114 and the shortest side is 114/2 = 57. The other side is sqrt(114^2 − 57^2) = 57sqrt(3). The area is 57 · 57sqrt(3) = 3,249sqrt(3). Choice B (57sqrt(3)) is just the longer side."
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For each x, y must be less than −5x − 19 and greater than −3x − 12. At x = −5: 3 < y < 6; at x = −6: 6 < y < 11; at x = −8: 12 < y < 21. Table B's values 4, 10, and 19 all fit. Table A fails at x = −5 (6 is not less than 6), C fails at x = −5 (2 is not greater than 3), and D fails at x = −5 as well.",
+    "fix": {
+      "choices": {
+        "A": "x = −5, y = 6; x = −6, y = 9; x = −8, y = −4",
+        "B": "x = −5, y = 4; x = −6, y = 10; x = −8, y = 19",
+        "C": "x = −5, y = 2; x = −6, y = 9; x = −8, y = 19",
+        "D": "x = −5, y = 1; x = −6, y = 16; x = −8, y = −4"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x − 3)^2 + (y − 2)^2 = 51 + 9 + 4 = 64, so the radius is 8. A circle inscribed in a square has a diameter equal to the square's side, 16, so the perimeter is 4 × 16 = 64. Choice A (16) is the side length, not the perimeter."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first person costs $9 and each of the other n − 1 people costs $6: g(n) = 9 + 6(n − 1) = 6n + 3. Choice D charges $6 for all n people plus an extra $9."
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Increasing x by 1 multiplies f by 1.83, which is the p% increase. For g to grow by the same factor when x increases by only 1/4, the exponent must be 4x: g(x) = k(1.83)^(4x) = k(1.83^x)^4. Then g(x + 1/4) = k(1.83)^(4x + 1) = 1.83 · g(x). Choices C and D only shift the graph, so their growth per unit of x is the same as f's.",
+    "fix": {
+      "prompt": "f(x) = k(1.83)^x\nThe function f is defined by the given equation, where k is a constant. The value of f(x) increases by p% for every increase of x by 1. For which of the following functions, where k is a constant, does the value of g(x) increase by p% for every increase of x by 1/4?",
+      "choices": {
+        "A": "g(x) = k(1.83)^(1/4)",
+        "B": "g(x) = k(1.83^x)^4",
+        "C": "g(x) = k(1.83)^(x + 1/4)",
+        "D": "g(x) = k(1.83)^(x − 1/4)"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "1520"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "All acute angles are equal, and each obtuse angle is supplementary to them: 180 − (9x − 490). One acute plus three obtuse angles = (9x − 490) + 3[180 − (9x − 490)] = 540 − 2(9x − 490) = 540 − 18x + 980 = −18x + 1520. So w = 1520."
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "9/50",
+      ".18",
+      "0.18"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Subtract (82/100)f(n − 1) from both sides: f(n) = (18/100)f(n − 1). For f(x) = ab^x, each step of 1 in x multiplies by b, so f(n) = b · f(n − 1). Therefore b = 18/100 = 9/50.",
+    "fix": {
+      "prompt": "The exponential function f is defined by f(x) = ab^x, where a and b are positive constants. If f(n − 1) = f(n) + (82/100)f(n − 1), where n is a constant, what is the value of b?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      ".0003",
+      "3/10000"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "One square meter is 100 × 100 = 10,000 square centimeters, so 180 cm^2 per hour is 180/10,000 = 0.018 m^2 per hour. Divide by 60 minutes: 0.018/60 = 0.0003 m^2 per minute. A common mistake is dividing by 100 instead of 10,000 for square units."
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "-25"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Multiply by −1: x^2 − bx + 169 = 0. No real solutions means the discriminant is negative: b^2 − 4(169) < 0, so b^2 < 676 and −26 < b < 26. The least integer value is b = −25 (b = −26 gives a discriminant of 0, which means one real solution)."
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Combine the right side over the common denominator 13pqs: 1/R = (13qs + 13ps + 13pq + pqs)/(13pqs). Taking reciprocals gives R = 13pqs/(13qs + 13ps + 13pq + pqs). Choice C forgets to flip the fraction, and A and D add the resistances, which is the rule for series circuits, not parallel ones.",
+    "fix": {
+      "prompt": "1/R = 1/p + 1/q + 1/s + 1/13\nA parallel electric circuit contains four resistors with resistances of p ohms, q ohms, s ohms, and 13 ohms. The given equation relates the resistance R, in ohms, of the circuit, to the resistances of the four individual resistors it contains. Which equation correctly expresses R in terms of p, q, and s?",
+      "choices": {
+        "A": "R = 13pqs/(p + q + s + 13)",
+        "B": "R = 13pqs/(13qs + 13ps + 13pq + pqs)",
+        "C": "R = (13qs + 13ps + 13pq + pqs)/(13pqs)"
+      }
+    }
+  }
+]

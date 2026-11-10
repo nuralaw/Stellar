@@ -1,0 +1,1174 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text contrasts how the job \"appears\" with the \"considerable complexity\" hidden behind \"apparent simplicity,\" so the blank must mean simple: \"straightforward.\" \"Hazardous\" is tempting, but the contrast is about simple versus complex, not safe versus dangerous. \"Complimentary\" and \"infrequent\" have nothing to do with simplicity."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Agee has seen \"nothing but woods\" for a long time, with only occasional farms in between, so \"infrequent\" tells us the farms are few and far apart. Choice A reads the word as being about time between farm foundings, but the passage is about what he sees along the road. Nothing suggests the farms look neglected (B) or that Agee is frustrated (D).",
+    "fix": {
+      "passage": "The following text is adapted from the 1941 nonfiction book Let Us Now Praise Famous Men, with text by James Agee and photographs by Walker Evans. Agee recounts driving a car through an area of rural Alabama that he is unfamiliar with.\n\nOn which road the woods might give way to any extension of farm country there was no deducing: for we were somewhere toward the middle of one of the wider gaps on the road map, and had seen nothing but woods, and <u>infrequent</u> woods farms, for a good while now."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence says no newer tool has matched the pipe wrench's simplicity, durability, and adjustability, so plumbers still can't do without it: it is \"indispensable to\" them. \"Dependent on\" reverses the relationship, making the wrench rely on plumbers. Nothing in the text suggests the tool is excessive or controversial."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence describes how active and quiet regions behave differently (\"whereas\"), so the astronomers found a \"disparity,\" or difference, between them. \"Interaction\" is tempting, but the text never says the two regions affect each other. A \"trade-off\" or an \"analogy\" (similarity) doesn't fit a description of contrasting behavior."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first defines constellations as star groupings that form shapes, then gives Orion and Ursa Major as examples of how such groups got their names. It never discusses instruments (A), star life cycles (B), or distances from Earth (D)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains where the moon jar came from, how it is shaped and glazed, and how modern artists still make versions of it, which is an overview of one kind of traditional pottery. Choice C is tempting because Raina Lee is mentioned, but she appears only as a single example. The text covers one type of vessel, not all Korean pottery (B), and it never discusses a philosophy behind it (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Surface says that laughing at a cruel joke makes you a partner in the cruelty. That backs up Maria, who says wit loses her respect when it comes with malice, and it undercuts Sneerwell, who wants to excuse Sir Benjamin because he is a wit. Choice D is tempting, but the line judges people who enjoy his jokes rather than explaining why Sir Benjamin behaves as he does.",
+    "fix": {
+      "passage": "The following text is from Richard B. Sheridan’s 1777 satirical play The School for Scandal. Maria, Lady Sneerwell, and Joseph Surface are discussing their mutual acquaintance Sir Benjamin Backbite.\n\nMARIA: [Sir Benjamin] has done nothing—but his conversation is a perpetual libel on all his acquaintance.\nSURFACE: Aye and the worst of it is there is no advantage in not knowing him, for he’ll abuse a stranger just as soon as his best friend—and [his uncle] is as bad.\nSNEERWELL: Nay but we should make allowance. Sir Benjamin is a wit and a poet.\nMARIA: For my part—I own madam—wit loses its respect with me, when I see it in the company with malice. What do you think, Mr. Surface?\nSURFACE: <u>Certainly, madam, to smile at the jest which plants a thorn on another’s breast is to become a principal in the mischief.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines division of labor, gives a pencil-factory example, and explains that specialized workers save time and boost production, so its topic is how division of labor increases efficiency. The pencil factory is only an illustration, so choices about pencils or erasers (B, D) are too narrow, and the text never discusses training new workers (A)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text contrasts hummingbird-pollinated plants, which attract pollinators with bright flowers, with hammer orchids, which trick wasps by imitating them. Choice C is true but leaves out the contrast that frames the whole text. The text doesn't say deception is used by many plants (A) or that the orchids' strategy is \"much better\" (B)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The wood that had been \"so dreadful\" now looks changed: its holes and pitfalls are vanishing under a \"gleaming carpet\" of snow, so it no longer seems threatening to the Mole. Nothing suggests he is sad the adventure is over (A), embarrassed (B), or that he prefers warm weather (D).",
+    "fix": {
+      "passage": "The following text is adapted from Kenneth Grahame’s 1908 novel The Wind in the Willows. The Mole has been found by a friend after getting lost in the woods. It is beginning to snow.\n\nThe Mole saw the wood that had been so dreadful to him in quite a changed aspect. Holes, hollows, pools, pitfalls, and other menaces to the wayfarer were vanishing fast, and a gleaming carpet was springing up everywhere, that looked too delicate to be trodden upon by rough feet."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show the speaker encouraging readers to persevere, the quotation should urge them to keep going despite difficulty, and \"gird up your courage, and say ‘I am strong,’ / And keep going\" does exactly that. Choice A, from the same poem, only describes the hardship without the encouragement. B is about how to behave toward others, and C admits neglecting work."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that a country with a large population can be less densely populated than one with a small population. Mali has 17,600,000 people but only 14.2 inhabitants/km², while Comoros has just 788,000 people yet 363.1 inhabitants/km², which is exactly that contrast. Choice A needs 2010 data the table doesn't have, and D looks at only one country.",
+    "fix": {
+      "passage": "As the second-most populous continent in the world, Africa was home to an estimated 1.186 billion people in 2015. In a paper for a social studies class, a student nonetheless notes that countries with very large populations may be less densely populated than are countries with much smaller populations, as can be seen by comparing ______",
+      "table": {
+        "caption": "Population and Population Density of African Countries in 2015",
+        "headers": [
+          "Country",
+          "Density (inhabitants/km²)",
+          "Area (km²)",
+          "Estimated population"
+        ],
+        "rows": [
+          [
+            "Equatorial Guinea",
+            "30.1",
+            "28,051",
+            "845,000"
+          ],
+          [
+            "Comoros",
+            "363.1",
+            "2,170",
+            "788,000"
+          ],
+          [
+            "Mali",
+            "14.2",
+            "1,240,000",
+            "17,600,000"
+          ],
+          [
+            "Burkina Faso",
+            "66.0",
+            "274,200",
+            "18,106,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If the end mark after Riddle 68 is a scribal error, then Riddle 68 isn't really a separate riddle but part of Riddle 69. Choice C supports this: Riddle 68 shares Riddle 69's imagery and sound patterns and can't be solved unless the two are read together. Choices A and B point out features both riddles lack, which says little about whether they form one text, and D only suggests a shared source, not a single riddle."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The model was tested with data from only one day in one state, so the results may not hold for other days or places, which is why they are limited. Choice C contradicts the text, which says small clouds hurt forecast accuracy, and D contradicts the claim that standard models can't represent these clouds. A compares mergers and splits, which the text never ranks."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The musicians had much more noise exposure but \"clinically comparable hearing\" to nonmusicians, so their preference for louder volumes can't be explained by hearing damage. Choice A is tempting, but the text never tests musical expertise as a cause. D contradicts the finding of comparable hearing, and B makes a claim about nonfavorite recordings that the text doesn't support."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The toy was introduced in 1909, and the next sentence uses the past tense (\"wrote\"), so the verb must be past tense: \"faced.\" The present tense (\"faces,\" \"is facing\") and the future tense (\"will face\") don't fit an event from 1909."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The residents belong to one country, Bhutan, so the singular possessive \"country’s\" is needed, and \"residents\" is a plain plural that owns nothing, so it takes no apostrophe. Choices A and C wrongly make \"country\" plural, and D wrongly adds a possessive apostrophe to \"resident’s.\""
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete clause that announces something, and the book title then names it, so a colon is right. A semicolon (D) must join two independent clauses, but \"Umberto Eco’s Umberto Eco on Literature\" isn't one. Choice A creates a fragment, and C creates a comma splice."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "This is a list of people, and each item already contains a comma (\"Titon, a professor…\"), so the items must be separated by semicolons. The description \"a professor at Drexel University\" is an appositive and needs a comma before it, which D supplies. A leaves out that comma, and B and C use commas between list items, which makes the list confusing."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"recreation\"; the list between the dashes is extra information and doesn't change the subject. The text describes the medieval past, so the singular past-tense \"was\" fits. \"Were\" is tempting because of the plural nouns in the dashes, \"are\" is the wrong tense, and \"being\" leaves the sentence without a main verb."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "The previous sentence names the location of the sculpture, a birdwatching pavilion in Taiwan, and the next sentence describes how the work looks at that spot, so \"There\" connects them. \"For instance\" is tempting, but the sculpture was already introduced as the example, and the sentence itself ends by calling it \"an example.\" Nothing contrasts (\"However\") or comes after in time (\"Later\").",
+    "note": "Source answer was A (For instance); the sentence already ends by calling the work an example, so the locational There, fits better. Worth a human look."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes the lizard early in the morning, and the second describes what it does as the day warms up, so \"Later\" shows the time order. \"Previously\" reverses the order, and \"First\" would mark the opening step, not a later one."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Becoming one of the first Native park rangers is another accomplishment added to founding the first all-Native Boy Scout troop, so \"In addition\" fits. \"Earlier\" is wrong because 1932 comes after 1916, and nothing contrasts with the previous sentence (\"Nevertheless\")."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Avocado leaves get smaller under drought, while sugarcane leaves get slightly longer, which is an opposite response, so \"by contrast\" fits. \"Moreover\" and \"for instance\" would treat sugarcane as more of the same, which it isn't."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To stress how much bigger the Sun is, the sentence should compare the two directly, and B gives the Sun's huge diameter and says it is over 100 times bigger than Earth. Choice A compares the real Earth with the model Earth, and C and D describe only the model trail."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must say something true of both plants, and D states that both cause harm and are therefore considered invasive. Choice A mixes up the facts about the two plants, and B and C each describe only one plant."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a specific example of a type of urban natural area, and C names ruderal areas and explains what they are. Choices A and D only define urban natural areas in general, and B gives a benefit without naming any example."
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Farmers must consider many factors carefully and make \"precise, minute adjustments,\" so their management must be \"meticulous,\" meaning extremely careful and exact. \"Resolute\" (determined) is tempting, but the text stresses precision, not determination. \"Perfunctory\" (careless) is the opposite, and \"serendipitous\" means happening by lucky chance."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The studies used different methods and measured different health effects, and these differences kept the researchers from reaching one conclusion, so \"discrepancies\" fits. \"Vulnerabilities\" (weaknesses) is close, but the text is about the studies being inconsistent with one another, not weak. \"Compensations\" and \"endorsements\" make no sense here."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The examples show microhistory changing with place (Italy, Iceland) and time (labor history in the 1980s, the recent \"global turn\"), so the questions depend on the historian's surroundings: they are \"contingent on the practitioner’s milieu.\" Nothing suggests the questions are peripheral, controversial, or a sign of the historian's ingenuity."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Animals drop seeds at varying distances, after varying times, and along unpredictable paths, so the trees end up spread unevenly, in a patchy, \"discontinuous\" way. \"Symmetrical\" suggests the opposite, an orderly pattern. \"Anachronistic\" (out of its time) and \"iterative\" (repeating) don't describe how species are distributed."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion gives Newcomb's view that film-studies tools didn't fit television, and the next sentence says that \"recognition of the limitations\" led researchers to new approaches. So it introduces an expert opinion that explains why the methods changed. B overstates it: the text never calls Newcomb's observations the main cause of the field's creation. Nothing mentions scholars being reluctant (A).",
+    "fix": {
+      "passage": "Early television analysis in the 1970s and 1980s was shaped by film studies, <u>though media scholar Horace Newcomb notes that tools borrowed from that field often proved inadequate when applied to TV’s distinct characteristics</u>. A recognition of the limitations led researchers to approaches that accounted for a domestic viewing context, embedded advertisements, and serialized narratives, and to a shift in audience research toward ethnographic methods that emphasized viewer engagement. By the 1990s, television studies had emerged as a widely recognized academic field, with scholars founding dedicated journals."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined idea, that the camera is a character, is the film's central conceit, and the next sentence describes Vertov's choices that follow from it, such as repeatedly showing the operator setting up the camera. B is tempting, but the text doesn't debate whether the idea is rightly credited to Vertov. The text doesn't evaluate the film's success (C) or say a metaphor inspired its structure (D).",
+    "fix": {
+      "passage": "Dziga Vertov’s Man with a Movie Camera (1929) not only exhibits striking visual effects like multiple exposure, but it also has as a central idea that <u>the camera itself is a character in the film</u>. The camera’s presence is continually accentuated by showing the operator position it, for example, placing it atop a steel structure, where he then adjusts the camera to capture a view of traffic passing underneath, to which the film cuts immediately after."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rose and colleagues argue that temperate females do sing, but more quietly and less often, so researchers easily miss them. They would therefore say the apparent temperate-tropical difference may partly come from how hard female song is to detect. They say nothing about male tropical birds (A), how often each region is studied (C), or mating seasons (D)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Salman-Engin's team showed that brief interactions with strangers improve mood, and they note that research usually focuses on ongoing relationships. The model in Text 2 includes only ties within a person's social network, so strangers are left out entirely, which they would see as missing a category of connection that can boost well-being. C is tempting, but Text 1 is about strangers versus known people, not about how long relationships last.",
+    "note": "Source answer was C; A is right because the model omits strangers entirely, the category Text 1 shows has benefits."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "White butterflies showed up on green flowers more than other butterflies did, linking color to behavior, and butterflies fed more on cloudy days, linking weather to behavior. Since both factors were linked, D is correct, and choices that leave out either one are wrong."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The hypothesis is that emojis' usual negative effect is smaller when the emoji replaces the word than when it is simply added. The graph shows the substitute condition (about 4.1) rated higher than the supplement condition (about 3.6), so replacing the word hurt openness less than adding the emoji. Choice A is tempting, but it ignores the supplement condition, which is the comparison the hypothesis is about. C shows only that emojis have a negative effect in general, and B is irrelevant.",
+    "note": "Source answer was A; D directly compares the two emoji uses, which is what the hypothesis predicts."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The table lists only projects that used modular construction, so there is nothing to compare them with. Without data on other construction methods, the conclusion that modular construction is more efficient can't be supported. A says the conclusion isn't supported, but for the wrong reason: variation among modular projects says nothing about other methods. C claims a comparison the table can't provide.",
+    "fix": {
+      "passage": "The rapid completion of the Specialty Granules Field Office, a modular structure (a structure built in pieces elsewhere and assembled on site) located in the United States, led an employee at another company to collect data on other facilities built using modular construction methods. The employee concluded that modular construction is more efficient than other construction methods.",
+      "table": {
+        "caption": "Number of Days to Construct Modular Retail Facilities",
+        "headers": [
+          "Retail facilities",
+          "Construction company",
+          "Days to complete construction",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Constitutional Hill Coffee Shop",
+            "Modular Site Solutions",
+            "23",
+            "Johannesburg, South Africa"
+          ],
+          [
+            "Harrison Street Oasis",
+            "UrbanBloc",
+            "106",
+            "California, USA"
+          ],
+          [
+            "Sundance Ridge Sales Center",
+            "WillScot",
+            "136",
+            "Kansas, USA"
+          ],
+          [
+            "St. Regis Residences–Rye",
+            "Cassone Leasing",
+            "443",
+            "New York, USA"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says that in most countries, green hydrogen would need a larger share of on-site (direct-use) electricity in 2050 than in 2020. In the table, that share rises for Indonesia (51 to 63), South Africa (9 to 30), and Taiwan (1 to 17), but stays at 79 for the Netherlands, so the Netherlands is the exception. D is tempting because Indonesia's electricity per capita stays at 0.1, but its share of direct-use capacity still rises, so it follows the trend.",
+    "fix": {
+      "passage": "Estimated electricity for green hydrogen production data are rounded to the first decimal place.\n\nIn 2020, most hydrogen was produced through steam methane reforming, which emits carbon gases. Using electricity from renewable sources to produce green hydrogen sourced from water would enable countries to reduce industrial carbon emissions, but doing so depends on countries’ capacity for direct-use electricity (electricity produced and used at the same facility). Researchers estimated the amount of electricity needed in 2020 if green hydrogen had been adopted and the amount needed to meet projected green hydrogen demand in 2050. Comparison between these estimates and estimates of capacity suggests that in most countries, projected green hydrogen production would require a larger share of electricity produced on-site. One exception is ______",
+      "table": {
+        "headers": [
+          "Country",
+          "Estimated electricity for green hydrogen production (kilowatts per capita), 2020",
+          "Percentage of direct-use electricity capacity, 2020",
+          "Estimated electricity for green hydrogen production (kilowatts per capita), 2050",
+          "Percentage of direct-use electricity capacity, 2050"
+        ],
+        "rows": [
+          [
+            "Indonesia",
+            "0.1",
+            "51",
+            "0.1",
+            "63"
+          ],
+          [
+            "Netherlands",
+            "0.6",
+            "79",
+            "0.8",
+            "79"
+          ],
+          [
+            "South Africa",
+            "0.0",
+            "9",
+            "0.3",
+            "30"
+          ],
+          [
+            "Taiwan",
+            "0.0",
+            "1",
+            "0.5",
+            "17"
+          ]
+        ]
+      }
+    },
+    "note": "Source answer was D; the share of direct-use capacity rises for Indonesia (51→63) and stays the same only for the Netherlands (79→79)."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A shorter cell lifetime means cells must be replaced more often. If buying new materials costs more than recycling old ones, each extra replacement widens the cost gap, so the LCOE difference grows, as B explains. A explains why costs rise for both types of plants, not why the gap between them grows. C contradicts the text, which says new and recycled cells perform nearly the same.",
+    "fix": {
+      "passage": "Having demonstrated that the power conversion efficiency of new perovskite photovoltaic cells is nearly indistinguishable from that of cells recycled multiple times, Xun Xiao and colleagues evaluated the levelized cost of electricity (LCOE)—a measure of cost per produced electricity unit that incorporates materials acquisition costs as well as operating costs—for power plants utilizing each type of cell. With a modeled 15-year cell lifetime, the LCOE of plants using new cells was 4.99 cents per kilowatt hour, whereas that of plants using cells recycled three times was 4.05 cents per kilowatt hour. <u>Moreover, the LCOE differential grew from 18.8% to 31.3% when the modeled cell lifetime was reduced by two-thirds.</u>"
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Local temperature didn't affect murmuration size, but predators were linked to larger and longer murmurations, so the evidence favors the \"safer together\" explanation over \"warmer together.\" B contradicts the finding that temperature didn't matter. C and D make comparisons (falcons versus other predators, starlings versus other birds) that the study didn't test."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "There is good evidence that grassland animals moved between Africa and Eurasia during the gap, and the Arabian Peninsula was the only route they could have used. So these animals must have lived on the Peninsula during that time, and the lack of fossils is more likely due to poor preservation or too little searching. D is tempting, but the text says there is \"considerable evidence\" of exchange during this period, not an absence of it. C claims a specific cause that the text doesn't establish, and B contradicts the idea that the Peninsula was the only viable route.",
+    "note": "Source answer was D; D's premise contradicts the text's 'considerable evidence of concurrent faunal exchange'. A best follows from the Peninsula being the only route."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After \"with,\" the sentence needs a noun followed by a participle (\"with executives … being given decision-making power\"), not a full verb. Choices A and D are finite verbs, which can't follow \"with\" this way, and \"been given\" (B) isn't a complete verb form without a helping verb."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Mounted on a telescope in Arizona\" must describe the noun that comes right after the comma, and only the instrument is mounted on a telescope. D puts \"this remarkable instrument\" right after the phrase. The other choices make the phrase describe \"the distribution of matter,\" \"researchers,\" or \"5,000 galaxies,\" which is a dangling modifier."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both parts are complete sentences, and the second gives an example of the first, so a colon can join them. A comma alone (B) creates a comma splice, no punctuation (C) creates a run-on, and \"and\" without a comma (A) joins the clauses incorrectly."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence, and the second explains how the frogfish \"walks,\" so a colon correctly joins them. A comma alone (A) makes a comma splice, and the other choices fuse two independent clauses without proper punctuation."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Inside the clause \"whose work … encourages a broader rethinking,\" the verb is already \"encourages,\" so the blank must start a modifying phrase: \"work highlighting the richness … and importance.\" Using a finite verb such as \"highlights,\" \"has highlighted,\" or \"is highlighting\" would give \"work\" two main verbs with no conjunction joining them."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"each,\" which is singular; \"of the instrumental samples\" and the phrase between the dashes don't change that. So the singular present-tense \"becomes\" is right. \"Become\" and \"have become\" are plural, and \"becoming\" leaves the sentence without a main verb."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence names the place where the sculpture is displayed, an outdoor park, and the next says it endures weather in that place, so \"There\" connects them. \"However\" and \"Nevertheless\" signal a contrast that isn't present, and \"In addition\" doesn't fit because the weather point follows from the outdoor setting."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers wanted to test whether the wear patterns matched baking, and baking doughs in replica trays was how they did it, so \"To that end\" (for that purpose) fits. \"In other words\" would restate the goal instead of describing the method, and nothing contrasts (\"Nevertheless\")."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Adlam suggests that retrocausality, which itself seems to conflict with classical ideas, could explain entanglement without violating classical physics. Using one apparent contradiction to resolve another is surprising, so \"Paradoxically\" fits. \"By extension\" and \"Predictably\" suggest her idea follows naturally from the previous sentence, which it doesn't."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence explains what the \"time-pressure effect\" actually was, namely birds rushed their molt and grew shorter feathers, so \"That is\" introduces a clarification. \"In addition\" would present a new finding, but this is the same finding in detail. \"Therefore\" wrongly treats it as a result of the first sentence."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence shows two schools from the same period disagreeing deeply, and the second states the broader point this confirms: the period is defined by varied discussion rather than agreement. \"Indeed\" reinforces this. \"For example\" is wrong because the second sentence is the general claim, not an example, and \"However\" signals a contrast that isn't present."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student needs to cite a historian on why Digby wrote the manual, and C quotes Valosik saying Digby hoped to revive swimming and make it an artful science. A attributes Valosik's words to Digby himself. B and D misstate her claim: the stunts were Digby's own, and he wrote to revive swimming, not to explain why it died out."
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 102 members who are at least 45 years old out of 135 members in total, so the probability is 102/135. Choice A uses the 33 members younger than 45 instead.",
+    "fix": {
+      "prompt": "The table summarizes members of a local organization by age and whether they live north or south of Center St. If a member of the organization is selected at random, what is the probability that the selected member is at least 45 years old?",
+      "table": {
+        "headers": [
+          "",
+          "Live north of Center St.",
+          "Live south of Center St.",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Less than 45 years old",
+            "21",
+            "12",
+            "33"
+          ],
+          [
+            "At least 45 years old",
+            "14",
+            "88",
+            "102"
+          ],
+          [
+            "Total",
+            "35",
+            "100",
+            "135"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "33/135",
+        "B": "35/135",
+        "C": "100/135",
+        "D": "102/135"
+      }
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add up to 180°, so angle Z = 180° − 55° − 81° = 44°. Choice C, 136°, is the sum of the two given angles, not the third angle.",
+    "fix": {
+      "prompt": "In triangle XYZ, the measure of angle X is 55° and the measure of angle Y is 81°. What is the measure of angle Z?",
+      "choices": {
+        "A": "26°",
+        "B": "44°",
+        "C": "136°",
+        "D": "226°"
+      }
+    }
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "21"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total volume is the water plus the isopropanol, so w + 10 = 31. Subtracting 10 gives w = 21 mL."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total number of animals is c + d, and \"at most 31\" means the total can be 31 or less, so c + d ≤ 31. Choice B reverses the inequality, and C and D subtract the animals instead of adding them."
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Parallel lines have the same slope. Line c, y = 2x + 9, has slope 2, so line d also has slope 2. Choice C, 9, is the y-intercept, not the slope."
+  },
+  {
+    "key": "m1-06",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 9 to both sides of 5x − 9 = 6 to get 5x = 15. Then 5x + 9 = 15 + 9 = 24. Choice A comes from solving for x = 3 and then mixing up the signs."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "130"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The ratio 4 to 20 means square B's side is 20/4 = 5 times square A's side. So square B's side is 5 × 26 = 130 inches."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In p(x), x is the number of days and p(x) is the number of sheets left. So p(3) = 110 means that 3 days after loading, 110 blank sheets remained. Choice A swaps the two numbers, and D treats 110 as the number of sheets used instead of the number left."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "43/3",
+      "14.33"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 12 inches = 1 foot, divide by 12: 172.0/12 = 43/3 ≈ 14.33 feet per second."
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points rise from left to right, so the slope is positive, which rules out A and B. Points such as (2, 2.7), (7, 7.6), and (12, 12.4) lie close to y = x. With y = 2x, x = 12 would give y = 24, far above the data."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To convert degrees to radians, multiply by π/180: 240 × π/180 = 4π/3. Choice A, 2π/3, is 120°, half the given angle.",
+    "fix": {
+      "prompt": "The measure of angle Z is 240°. What is the measure, in radians, of angle Z?",
+      "choices": {
+        "A": "2π/3",
+        "B": "4π/3",
+        "C": "8π/3",
+        "D": "4π"
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In similar triangles, corresponding angles are equal, so angle J has the same measure as angle F. Equal angles have equal sines, so sin(J) = sin(F) = 144/145. Choice A, 17/145, would be cos(F), which isn't what is asked.",
+    "fix": {
+      "prompt": "Triangle FGH is similar to triangle JKL, where angle F corresponds to angle J and angles G and K are right angles. If sin(F) = 144/145, what is the value of sin(J)?",
+      "choices": {
+        "A": "17/145",
+        "B": "144/145",
+        "C": "145/144",
+        "D": "145/17"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation factors as (x − 3)(x − 4) = 0, so x = 3 or x = 4, which gives exactly two distinct real solutions. You can also check the discriminant: (−7)^2 − 4(1)(12) = 1, which is positive."
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the point (60, 4.58), x = 60 is the average speed in km/h and y = C(x) = 4.58 is the fuel cost in dollars to drive 100 km. So driving 100 km at 60 km/h costs about $4.58. Choice C swaps the roles of the two coordinates, and A and B describe a rate per hour, which the function doesn't give."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "5.5",
+      "1.5",
+      "11/2",
+      "3/2"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cross-multiply: −x − 1.25 = (x − 7)(x − 1) = x^2 − 8x + 7. Moving everything to one side gives x^2 − 7x + 8.25 = 0, so x = (7 ± sqrt(49 − 33))/2 = (7 ± 4)/2. The solutions are x = 5.5 and x = 1.5; neither makes a denominator zero, so either one is correct.",
+    "fix": {
+      "prompt": "1/(x − 1) = (x − 7)/(−x − 1.25)\nWhat is one of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The diagonal and two sides form a right triangle, so the other side is sqrt(34 − 5^2) = sqrt(9) = 3. The perimeter is 2(5 + 3) = 16. Choice D, 8, is only the sum of the two sides."
+  },
+  {
+    "key": "m1-17",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the points (−5, n + 64) and (0, n): slope = (n − (n + 64))/(0 − (−5)) = −64/5. The n cancels, so the slope is a number. Choice B flips the fraction.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y, where n is a constant, for the linear relationship between x and y. What is the slope of the line that represents this relationship in the xy-plane?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−10",
+            "n + 128"
+          ],
+          [
+            "−5",
+            "n + 64"
+          ],
+          [
+            "0",
+            "n"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "−64/5",
+        "B": "−5/64",
+        "C": "(n + 64)/(−5)",
+        "D": "(2n − 64)/5"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The total distance is c + h = 510 miles. Gallons used equal miles divided by miles per gallon, so city driving used c/29 gallons and highway driving used h/35 gallons, and c/29 + h/35 = 17. Choice D multiplies miles by miles per gallon, which doesn't give gallons.",
+    "fix": {
+      "choices": {
+        "A": "c + h = 17\nc/29 + h/35 = 510",
+        "B": "c + h = 17\n29c + 35h = 510",
+        "C": "c + h = 510\nc/29 + h/35 = 17",
+        "D": "c + h = 510\n29c + 35h = 17"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing x by 1 multiplies g(x) by b, so g(c + 1) = b·m. Being 82% more than m means g(c + 1) = 1.82m, so b = 1.82. Choice B, 0.82, is only the increase, not the growth factor."
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "27",
+      "28",
+      "29"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The parabola opens up and has zeros at a and b, so it is negative only between them. Since f(14) < 0 but f(11) > 0 and f(17) > 0, one zero is between 11 and 14 and the other is between 14 and 17. As integers, one is 12 or 13 and the other is 15 or 16, so a + b can be 27, 28, or 29."
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The machine makes 5n two-inch parts, n seven-inch parts, and 4 eleven-inch parts, so the total count is 5n + n + 4 = 6n + 4 = 100. Choice A multiplies each count by its length, which gives total inches, not the number of parts. C forgets the n seven-inch parts."
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "62951"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Among the bees other than the queen, 100% − 85% = 15% are drones. So 0.15N = 11,109, which gives N = 74,060 non-queen bees. The number of workers is 0.85 × 74,060 = 62,951."
+  },
+  {
+    "key": "m2-01",
+    "answer": [
+      "10"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 4 and y = c: (4 − 2)^2 + (c − 10)^2 = 4, so 4 + (c − 10)^2 = 4. Then (c − 10)^2 = 0, which gives c = 10. The point (4, 10) is exactly 2 units to the right of the center (2, 10), which matches the radius of 2."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of v = −w/(119x) by 119x to get 119vx = −w. Then multiply by −1: w = −119vx. Choices B and C divide when they should multiply.",
+    "fix": {
+      "prompt": "v = −w/(119x)\nThe given equation relates the distinct numbers v, w, and x. Which equation correctly expresses w in terms of v and x?",
+      "choices": {
+        "B": "w = −119v/x",
+        "C": "w = −x/(119v)"
+      }
+    }
+  },
+  {
+    "key": "m2-03",
+    "answer": [
+      "48"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute the 3: 3x + b − 48 = 3x. For the equation to be true for every x, the constant terms must match, so b − 48 = 0 and b = 48.",
+    "fix": {
+      "prompt": "3(x + b/3 − 16) = 3x\nIn the given equation, b is a constant. The equation has infinitely many solutions. What is the value of b?"
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph crosses the x-axis at x = −1 and x = 4, so f(x) = (x + 1)(x − 4) = x^2 − 3x − 4. This also matches the y-intercept of −4. Choice B, x^2 + 3x − 4 = (x + 4)(x − 1), has zeros at −4 and 1 instead."
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "y decreases by 7/2 for each increase of 1 in x, so the slope is −7/2 and y = −(7/2)x + b. Plug in (−2, 5): 5 = 7 + b, so b = −2, giving y = −(7/2)x − 2. Choice B gets the sign of the intercept wrong.",
+    "fix": {
+      "prompt": "In the relationship between x and y, each increase of 1 in the value of x decreases the value of y by 7/2. When x = −2, y = 5. Which equation represents this relationship?",
+      "choices": {
+        "A": "y = −(7/2)x − 2",
+        "B": "y = −(7/2)x + 2",
+        "C": "y = (7/2)x − 2",
+        "D": "y = (7/2)x + 2"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(a) = (a − 3) + 2 = a − 1, so a − 1 = 7 and a = 8. Then a + 3 = 11. Choice A, 5, is what you get by subtracting 3 from 8 instead of adding."
+  },
+  {
+    "key": "m2-07",
+    "answer": [
+      "170"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide to simplify: 0.6r − 0.8s = −108 and 0.8r + 0.6s = 106. Multiply the first by 0.6 and the second by 0.8, then add: 0.36r + 0.64r = −64.8 + 84.8, so r = 20. Then 12 − 0.8s = −108 gives s = 150, so r + s = 170."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "(1/8)^x is always positive and can get as close to 0 as you like, so (1/8)^x + 7 is always greater than 7, and f(x) = 9((1/8)^x + 7) is always greater than 63. Since f(x) gets arbitrarily close to 63, the greatest possible k is 63. Choice B forgets to multiply by 9.",
+    "fix": {
+      "prompt": "f(x) = 9((1/8)^x + 7)\nThe function f is defined by the given equation. For all values of x, the value of f(x) is greater than k, where k is a constant. What is the greatest possible value of k?"
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line meets the x-axis at (20, 0), meaning the company can buy 20 boxes of cups and no mugs for $880. So one box of cups costs 880/20 = $44. Choice D, 88, is the price per box of mugs (880/10)."
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both left sides equal c, so 12x + 11y = 11x − 12y, which gives x = −23y, or y = −x/23. With x = 10, y = −10/23, and c = 120 − 110/23 is positive, so (10, −10/23) works. Choices B and C have a positive y with a positive x, which breaks y = −x/23, and in A, (c, 0) would require 12c = c, which is impossible for positive c.",
+    "fix": {
+      "prompt": "12x + 11y = c\n11x − 12y = c\nIn the given system of equations, c is a positive constant. Which of the following could be the point where the graphs of the equations in this system intersect in the xy-plane?",
+      "choices": {
+        "B": "(c, c/23)",
+        "D": "(10, −10/23)"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A solution needs 2x + k < y < 9 − x, which is possible only when 2x + k < 9 − x. That gives 3x < 9 − k, so x < (9 − k)/3. For any such x, some y fits between the two lines. Choice C reverses the inequality.",
+    "fix": {
+      "prompt": "y > 2x + k\ny < 9 − x\nIn the given system of inequalities, k is a positive constant. Which of the following represents the x-coordinates of all the points (x, y) that satisfy this system in the xy-plane?",
+      "choices": {
+        "A": "x > k/9",
+        "B": "x < k/9",
+        "C": "x > (9 − k)/3",
+        "D": "x < (9 − k)/3"
+      }
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each sweater costs 44(1 − n/100) − 3 = 41 − 0.44n dollars, so the total is n(41 − 0.44n) = 834. Testing the choices, n = 30 gives 30(41 − 13.2) = 30(27.8) = 834. For example, n = 20 gives 20(32.2) = 644, which is too small."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An increase of 160% means multiplying by 1 + 1.60 = 2.60. This happens once every 24 days, so the exponent is x/24: y = 8(2.60)^(x/24). Choice C uses 1.60, which would be a 60% increase, and A and B make the growth happen 24 times a day.",
+    "fix": {
+      "choices": {
+        "A": "y = 8(1.60)^(24x)",
+        "B": "y = 8(2.60)^(24x)",
+        "C": "y = 8(1.60)^(x/24)",
+        "D": "y = 8(2.60)^(x/24)"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because LM ∥ PQ, triangles LMR and QPR are similar (alternate interior angles and vertical angles at R), with L↔Q and M↔P. So MR/PR = LR/QR, or 9/13 = 10/QR, which gives QR = 130/9. Then LQ = LR + RQ = 10 + 130/9 = 220/9. Choice A is only the length of RQ.",
+    "fix": {
+      "choices": {
+        "A": "130/9",
+        "B": "220/13",
+        "C": "211/9",
+        "D": "220/9"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Data set A is modeled by about y = 5(2.03)^x: it starts near 5 at x = 0 and roughly doubles each step. Multiplying every y-value by 30 multiplies the starting value by 30 and keeps the growth factor, giving about y = 151(2.03)^x. Choices C and D add 30 instead of multiplying, which shifts the graph up rather than scaling it."
+  },
+  {
+    "key": "m2-16",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Data set A has 41 values, so its median is the 21st value. The running totals are 1, 8, 16, 25, …, so the 17th through 25th values are all 3, and the median is 3. Data set B has 40 values, so its median is the average of the 20th and 21st values, which are both 3. The medians are equal; removing the outlier changes the mean, not the median here.",
+    "fix": {
+      "prompt": "The data value 16 was recorded in error and is removed from data set A to create data set B, which consists of the remaining 40 data values. Which statement best compares the median of data set A and the median of data set B?",
+      "table": {
+        "caption": "Data set A",
+        "headers": [
+          "Value",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "7"
+          ],
+          [
+            "2",
+            "8"
+          ],
+          [
+            "3",
+            "9"
+          ],
+          [
+            "4",
+            "8"
+          ],
+          [
+            "5",
+            "7"
+          ],
+          [
+            "16",
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the product of the solutions is c/a. Here that is ab/51, so kab = ab/51 and k = 1/51. You can also factor: (51x + a)(x + b) = 0 gives roots −a/51 and −b, whose product is ab/51. Choice A inverts the fraction.",
+    "fix": {
+      "choices": {
+        "C": "1/3",
+        "D": "1/51"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "17"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The base area is 16, so each base side is 4. The four triangular faces have total area 8sqrt(293), so 4 · (1/2)(4)(l) = 8l = 8sqrt(293), and the slant height is l = sqrt(293). The height, half the base side (2), and the slant height form a right triangle: h^2 = 293 − 2^2 = 289, so h = 17.",
+    "fix": {
+      "prompt": "A right square pyramid has a surface area of 16 + 8sqrt(293) square inches, which includes a base area of 16 square inches. What is the height, in inches, of this pyramid?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "60000"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "From the given facts, A = 4.92B and A = 0.0082C. So C = A/0.0082 = 4.92B/0.0082 = 600B. A mass that is 600 times B's mass is 60,000% of it, so p = 60000."
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If x + 2b is a factor of 3x^2 + px + 18b, the other factor must be 3x + 9 (so that 2b · 9 = 18b). Then (x + 2b)(3x + 9) = 3x^2 + (9 + 6b)x + 18b, so p = 9 + 6b. Only p = 51 gives a positive integer, b = 7; 9 gives b = 0, and 30 and 42 give non-integers."
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "XW is the altitude to the hypotenuse, so angle WXY equals angle Z (both are 90° minus angle Y). In right triangle XWY, tan(angle WXY) = WY/WX = 588/441 = 4/3, so tan Z = 4/3. Choice B, 3/4, is tan Y, the other acute angle.",
+    "fix": {
+      "prompt": "In triangle XYZ, the measure of angle X is 90°. Point W lies on segment YZ, and segment WX is perpendicular to segment YZ. The length of segment WY is 588, and the length of segment WX is 441. What is the value of tan Z?",
+      "choices": {
+        "A": "3/5",
+        "B": "3/4",
+        "C": "4/5",
+        "D": "4/3"
+      }
+    },
+    "note": "Source answer was B (3/4); that is tan Y. tan Z = WY/WX = 588/441 = 4/3."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "36"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In vertex form, y = −a(x − 1)^2 + 19 = −ax^2 + 2ax + (19 − a). So b = 2a and c = 19 − a. Since c must be a positive integer, a can be at most 18, and the greatest b is 2(18) = 36."
+  }
+]

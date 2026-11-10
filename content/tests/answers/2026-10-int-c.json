@@ -1,0 +1,1112 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon explains the process: a technician tests parts one by one until the faulty one is identified. That means singling out, or isolating, the source of the problem. \"Adapting\" or \"incorporating\" a malfunction's source makes no sense, and \"fabricating\" would mean inventing it.",
+    "fix": {
+      "passage": "______ the source of a malfunction in a complex electrical system can be a painstaking, time-consuming process: a repair technician may need to test each individual component one by one until the specific part causing the problematic behavior is identified."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text goes on to describe organisms that adjust their internal electrolyte concentrations in response to outside changes, which is what it means to regulate internal salt levels. \"Tolerate\" is tempting, but the example is about actively controlling salt, not just enduring it; \"counteract\" and \"elude\" don't fit an object like \"internal salt levels.\""
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most studies focus on people living above sea level, but these researchers \"instead\" studied people living below sea level. Taking a new, unusual direction is an innovative path. \"Predictable\" and \"timeworn\" suggest the opposite, and nothing in the text suggests the choice was \"idealistic.\""
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"While once\" sets up a contrast with the claim that basic training \"cannot provide enough protection\" today. So the training used to be adequate, or sufficient. \"Superficial\" doesn't create a contrast, and \"uncommon\" and \"affordable\" have nothing to do with how much protection the training gave."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The semicolon is followed by an explanation: the design rejected ornate decoration in favor of clean lines and simplicity. A plain, unadorned style is austere. \"Ostentatious\" means showy, the opposite, while \"capricious\" (unpredictable) and \"convoluted\" (overly complicated) don't match \"simplicity.\""
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The passage focuses on the man's body and behavior as he nears the meeting: he breathes hard though he hasn't been galloping, rides slower and slower, sweats, and looks at the cabin as if approaching an unexploded shell. All of these details show his nervousness. The howitzer image is a comparison describing his expression, not a real earlier experience, so B is wrong.",
+    "fix": {
+      "passage": "The following text is adapted from the 1940 novel The Hamlet by William Faulkner. In Mississippi, a man is riding a horse toward the residence of someone he intends to meet with about a business matter.\n\nHe was breathing hard but not because he had been galloping. On the contrary, since he had approached near enough to his destination to believe he could have seen smoke if there had been smoke, he had ridden slower and slower. Nevertheless he now sat the horse before the gap in the fence, breathing hard enough through his nose and even sweating a little, looking at the sagging broken-backed cabin set in its inevitable treeless and grassless plot and weathered to the color of an old bee-hive, with that expression of tense and rapid speculation of a man approaching a dud howitzer [artillery] shell."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text names several forestry careers (arborists, researchers, ecologists) and stresses that each combines science with practical work. That matches D. The text never discusses technological advances (A) or job security (C), and it doesn't analyze specific environmental challenges in detail (B)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence praises wetlands for filtering pollutants as well as treatment plants. The underlined sentence begins with \"However\" and explains that overloading wetlands with industrial runoff can weaken that filtering, so it limits the earlier praise. It doesn't describe a measurement method, criticize treatment plants, or refute a hypothesis.",
+    "fix": {
+      "passage": "Ecologist Dr. Elena Vance observed that urban wetlands filter pollutants at rates comparable to modern treatment facilities. <u>However, Vance cautions that overloading these fragile ecosystems with industrial runoff can degrade microbial communities, ultimately compromising their filtration efficiency.</u> Without strict municipal regulations on chemical discharge, the natural buffering capacity of such wetlands could permanently diminish."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states directly that olo \"can only be seen by activating the medium cones,\" and the team did this with a laser that stimulated just those cells. The other choices involve the long or short cones, which the text says are not what produces olo."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the graph, Ethiopia has 5 volcanoes active since 1960 while Tanzania has only 1, so Ethiopia has more. Ethiopia has 10 volcanoes active since 1800 versus Tanzania's 3, so A and B are wrong, and D reverses the 1960 comparison."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "The underlined claim is that cyberpunk is largely about style (aesthetic) rather than ideas. A critic saying that cyberpunk's defining feature is a fondness for 1980s pop-culture objects like mirrored sunglasses directly supports that, since it defines the genre by look and style. Choice C criticizes Shurin's definition as too broad, but it says nothing about cyberpunk being aesthetic, and B actually stresses ideas and themes.",
+    "fix": {
+      "passage": "Editor Jared Shurin’s enormous 2023 anthology The Big Book of Cyberpunk comprises 108 stories. Shurin’s volume is chronologically expansive, featuring such stories as James Tiptree Jr.’s “The Girl Who Was Plugged In” (1973) and Erica Satifka’s “Act of Providence” (2021). In his introduction, Shurin defines cyberpunk as a subgenre of speculative fiction concerning “the influence of technology on the scale, the pace, or the pattern of human affairs”; however, some critics assert that <u>cyberpunk is a literary movement that is in large part aesthetic rather than idea driven.</u>",
+      "choices": {
+        "A": "“Not all the stories anthologized in The Big Book of Cyberpunk were first published as stand-alone short stories in magazines or journals: for example, qntm’s 2021 story ‘Lena’ was originally self-published on the author’s site qntm.org.”"
+      }
+    },
+    "note": "Solver answer was C; C criticizes the breadth of Shurin's definition but doesn't support the 'aesthetic rather than idea driven' claim. D does."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The business sector's share fell from 66.0% to 65.4%, but its number of employees rose from about 220,700 to 232,300. So the sector grew; its share dipped only because the public sector grew faster. B is wrong because leisure and hospitality's percentage fell (55.3% to 54.2%), and D is wrong because business-sector employment went up, not down.",
+    "fix": {
+      "passage": "Tribal nations employ a large percentage of their populations in tribally owned businesses as well as in government and public administration. This is especially true in Oklahoma and other states with robust tribal economies and large Native populations. Between end-of-year 2017 and end-of-year 2023, the percentage of tribal employees working in the public sector increased, from 34.0% to 34.6%, while the percentage working in the business sector declined from 66.0% to 65.4%.",
+      "table": {
+        "caption": "Employment in Tribal Economies in December 2017 and December 2023 by Sector",
+        "headers": [
+          "Economic sector",
+          "Approximate total number of employees, 2017",
+          "Percentage of workforce, 2017",
+          "Approximate total number of employees, 2023",
+          "Percentage of workforce, 2023"
+        ],
+        "rows": [
+          [
+            "Business sector (all tribal businesses)",
+            "220,700",
+            "66.0%",
+            "232,300",
+            "65.4%"
+          ],
+          [
+            "Leisure and hospitality businesses",
+            "185,100",
+            "55.3%",
+            "192,300",
+            "54.2%"
+          ],
+          [
+            "Education and healthcare businesses",
+            "19,100",
+            "5.7%",
+            "21,600",
+            "6.1%"
+          ],
+          [
+            "Other businesses",
+            "16,500",
+            "5.0%",
+            "18,400",
+            "5.1%"
+          ],
+          [
+            "Public sector (tribal government and public administration)",
+            "113,800",
+            "34.0%",
+            "122,700",
+            "34.6%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Failing to meet the minimum charitable distribution requirement corresponds to the \"undistributed income\" bars. In 2003 that group paid about 80% of the total penalty, but in 2005 only about 55%, so the 2003 share was larger. B fails because the self-dealing share dropped from 2003 to 2004 before rising, and A and D can't be supported: the graph shows percentages of the total, not average penalties, and has no data on Form 990 filers."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the plan depends on Neoptolemus not having been among those who abandoned Philoctetes. In C, Odysseus explains why Neoptolemus can approach Philoctetes safely when he himself cannot: Neoptolemus did not sail \"with the foremost band.\" The other quotations are about deceit, scouting, or staying hidden, not about Neoptolemus's absence from the earlier abandonment."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text stresses that much of the novel is \"pure invention.\" Readers who focus only on links to Céline's real life would therefore overlook how much he made up, which means missing his creativity. C is the reverse of the problem described, and the text never discusses earlier writers (B) or readership (D)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Consumer expectations keep rising, and even a promising solution like self-service lockers creates new problems. It follows that companies will need to keep trying new approaches to keep up. D goes too far by predicting that locker innovation will stall, and C contradicts the text's point that companies are actively looking for advances."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"That many travelers recommend\" is a restrictive clause identifying which kind of city Nicosia is, so it takes \"that\" with no comma. D wrongly puts a comma before \"that,\" A uses a nonrestrictive \"which\" clause that doesn't fit \"one European city,\" and B (\"in which\") creates an ungrammatical clause."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first part of the sentence, \"As nanotechnology evolves,\" is in the present tense and describes an ongoing process, so the result should be in the future: medical technology \"will likely continue\" to evolve. The past perfect and conditional forms in A, B, and C don't match the present-tense context."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"adding a stiffened leather sole and hardened toe box\" is an interruption that opens with a dash after \"made,\" so it must close with a matching dash. Then the main verb \"began\" follows. A comma, a colon, or no punctuation would not properly close the dash-set phrase."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text after the blank is a list explaining what \"threefold\" means, so a colon is right: \"threefold: to provide..., to reflect..., and to develop....\" A and C would leave the list as a fragment standing on its own, and D runs the list into the main clause without any punctuation."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Extensive radiocarbon dating... confirmed... the Peruvian site's age\" is a complete sentence, and the next part explains what that age was, which is a good job for a colon. A creates a comma splice between two independent clauses, and C and D join them without proper punctuation."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"applications\" (\"Commercial applications of this new synthetic dye technology\"), so the verb must be plural: \"were.\" The interrupting phrase about mauve doesn't change the subject. \"Was,\" \"is,\" and \"has been\" are singular and agree with \"technology\" or \"mauve\" by mistake."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes a sequence of steps (\"First,\" then cooling, then droplets, then \"Finally\"). The droplet stage comes between the cooling and the final step, so \"Next\" fits. \"Lastly\" can't be used before \"Finally,\" and \"Similarly\" and \"Instead\" don't show a sequence."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence says the fungi \"serve as a defense mechanism,\" and this sentence explains exactly how: by fighting diseases and boosting the tree's immune system. A more detailed explanation is introduced by \"Specifically.\" \"Nevertheless\" signals contrast and \"In conclusion\" signals a summary, neither of which fits."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence gives the long-held hypothesis of a steppe origin; the second presents new evidence for a different origin. That contrast calls for \"However.\" \"Consequently\" would wrongly suggest the new evidence resulted from the old hypothesis.",
+    "fix": {
+      "passage": "For decades, historical linguists hypothesized that Proto-Indo-European originated in the Pontic-Caspian steppe roughly 6,000 years ago. ______, recent ancient genomic analyses combined with phylogenetic linguistic modeling have provided compelling evidence supporting an earlier agricultural origin south of the Caucasus."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To introduce pistol shrimp to readers who don't know them, the sentence should name the animal and say what's notable about it. B identifies pistol shrimp as small marine creatures and explains their claw produces stunning shock waves. A never names pistol shrimp, C assumes the reader already knows them, and D misstates the facts.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Pistol shrimp are small marine crustaceans that hunt using a specialized oversized claw.\n• When the claw snaps shut rapidly, it pushes water through a narrow groove at extreme speeds.\n• This high-speed water jet creates a bubble that pops forcefully near the shrimp’s prey.\n• The popping bubble generates shock waves powerful enough to stun small fish.",
+      "prompt": "The student wants to introduce pistol shrimp to an audience unfamiliar with these crustaceans. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is an example of a sculpture, and the notes say Standing Mother and Child is a 1980 sculpture by Catlett. B gives that work. A names a print, not a sculpture, and C and D give general facts about Catlett without a specific sculpture.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Elizabeth Catlett (1915–2012) was a celebrated African American artist.\n• She is best known for creating sculptures and prints that explore the Black experience.\n• Standing Mother and Child is a 1980 sculpture by Catlett.\n• New Generation is a 1992 print by Catlett."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Farmers must consider each factor both on its own and in terms of how the factors \"affect each other.\" That mutual influence is an interplay. \"Neglect,\" \"misinterpretation,\" and \"resolution\" don't describe factors interacting with one another."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The centers move goods from warehouses directly onto trucks so that trucks fill in minutes; the goal is to move as much material through the facility as quickly as possible. That rate is called throughput. Nothing in the text is about staffing, overhead costs, or liability."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence calls these things \"quantifiable inputs,\" such as demand patterns and capacity constraints. Measurable inputs that shape a result are parameters. \"Predictions\" and \"optimizations\" are outputs rather than inputs, and \"anomalies\" are unusual events, which doesn't fit the examples."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Phoenix example shows a character destroying a planet to illustrate \"the corrupting influence of power,\" which makes the portrayal a warning. Warnings are admonitions. \"Venerations\" (honors) and \"exonerations\" (clearing of blame) are the opposite, and \"obfuscations\" means confusing things, which doesn't fit."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence describes what happens: expelled material arcs back to the Sun's surface. The rest of the text explains why: the gas, though fast, isn't fast enough to escape the Sun's gravity and magnetic field. D is tempting, but the later sentences explain the cause of the arc, not consequences that follow from it.",
+    "fix": {
+      "passage": "Research on minor solar eruptions in magnetically quiet regions revealed an interesting pattern. <u>Material expelled during these events follows a narrow arc trajectory back to the Sun’s surface.</u> High-resolution images show these eruptions produce thin streams of hot gas moving at speeds between 55 and 200 kilometers per second. Although these are impressive speeds, they are not sufficient to overcome the confining forces of the Sun’s gravity and magnetic field, so the material is pulled back down."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first defines blue holes as underwater sinkholes and describes their dark blue look, then mentions how they typically form, and finally gives facts about the deepest one, Taam Ja'. That is D. The text doesn't compare the formation of two specific holes (A, B), and it doesn't focus on one hole's formation (C)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In Text 1, \"tropic palms\" are listed as exotic sights that could never move the narrator as much as the familiar home scene, so they evoke beauty but aren't part of her identity. In Text 2, the author feels his own consciousness flowing through the plants, including \"the rustling palm leaves,\" showing close identification. A gets Text 1 backwards: the palms there are what home is contrasted with.",
+    "fix": {
+      "prompt": "Which choice best describes a notable difference in how the references to palm trees function in Text 1 and Text 2?"
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Frederick argues that clues inside the riddles (words like \"here\" and \"now,\" the refrain asking for an answer, speakers acting as their solutions) point to an interactive, live performance, even though people today mostly read them as written texts. B captures both parts. A overstates the claim with \"mainly performed at large public gatherings,\" and D invents newly found historical documents."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Mexican s is pronounced with more tongue tension than the Castilian s, and Hidalgo argues it came from Nahuatl, replacing the Castilian sound. For that to work, the Nahuatl s must also have had more tension than the Castilian s. C reverses the direction of influence, and A and B make claims the text doesn't support.",
+    "fix": {
+      "passage": "In the Mexican dialect of Spanish, the consonant s is pronounced with greater tension in the tongue than it is in Castilian, the dominant dialect in Spain, resulting in a sharper sound. Margarita Hidalgo, a linguist at San Diego State University, argues that Mexican Spanish acquired this pronunciation from Nahuatl, the language of the Nahua people in Mexico: as the Spanish colonizers of Mexico incorporated Nahuatl words into their speech, and as more and more Nahuas spoke Spanish as a second language, the Nahuatl pronunciation of the s consonant replaced the Castilian pronunciation.",
+      "prompt": "Information in the text best supports which statement about the consonant s?"
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Don and his coauthor concluded that cover crops meaningfully increase soil carbon storage. If fields with cover crops for several years have much higher SOC stocks than fields without them, that directly supports the conclusion. A compares teff alone vs. in mixes, B describes reduced performance, and C is about variability rather than amount, so none of these supports the claim as well."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says comprehension draws on extra brain areas depending on what is being described: motor areas for physical actions, emotional areas for emotional accounts. So which combination of regions is used depends on the full context of the speech. B and C make specific claims the text doesn't support, and D adds that the combination may be \"impossible to determine,\" which the text never suggests."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Molecular analysis doesn't depend on spotting subtle physical differences, while Discantenna metallica was identified by morphology alone, which does. So DNA analysis should be better at telling apart species that look very similar but are actually different. B is wrong because the text says DNA analysis avoids physiological detail rather than providing more of it, and C mixes up which species was identified by which method."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Text 1 describes the older idea that sauropods held their necks upright like giraffes. Text 2's simulations suggest sauropod vertebrae couldn't support a sustained vertical posture, and Kent argues they swept their necks horizontally. So the author of Text 2 would dispute the vertical-neck claim. The other choices aren't mentioned in Text 2."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In temperate forests, rarer species are more clustered with their own kind (the strongly negative correlation), so they face more competition from conspecifics and lose the rare-species advantage. Niche distinction would reduce the risk if those rare species can live on resources other species don't use much. C says exactly this. B contradicts the text by claiming temperate rare species benefit from RSA more than tropical ones."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Despite its apparent pessimism\" must be followed by the thing that seems pessimistic: the premortem activity. Only B makes \"this activity\" the subject right after the modifier. A, C, and D put the subject as \"effective uncovering,\" \"potential problems,\" or \"teams,\" creating a dangling modifier."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"achievements\" (not \"Bannister\" or \"barrier\"), so the verb must be plural. The colon then explains his later medical career, so past tense fits: \"weren't confined.\" \"Isn't,\" \"hasn't been,\" and \"wasn't\" are all singular.",
+    "fix": {
+      "passage": "The trailblazing achievements of Roger Bannister, the English track star famous for breaking the four-minute-mile barrier at Oxford’s Iffley Road Track in 1954, ______ confined to the realm of athletics: Bannister also became a pioneering neurologist in the field of autonomic disorders—conditions affecting involuntary nervous system responses—and established the field’s first specialized scientific journal."
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists three skills, and later items are separated by a semicolon (\"...such as vertical loops; and even walking...\"). Because one item contains internal commas, all items must be separated by semicolons, so a semicolon goes after \"target.\" A comma (D) would be inconsistent, and a period (C) would leave a fragment."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"analyzed\" (\"archaeologists... analyzed several sites\"). The blank begins a modifying phrase describing the archaeologists, so it needs the participle \"seeking.\" A finite verb like \"sought,\" \"had sought,\" or \"were seeking\" would give the sentence two main verbs with no conjunction.",
+    "fix": {
+      "passage": "During a recent investigation, archaeologists ______ an explanation for the consistent and seemingly deliberate placement of petroglyphs (rock carvings) near water analyzed several sites on Caribbean islands. They discovered that many of the pools near petroglyphs had consistent water levels year-round, creating perfect reflecting surfaces for the carved symbols on the rocks."
+    }
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the song title, the sentence adds a phrase renaming the technique: \"a technique that... creates an intensified 'bluesy' effect.\" A dash sets off this addition, and the comma after \"that\" pairs with the comma after \"framework\" to enclose the interrupting \"by inserting...\" phrase. A and B leave that phrase with only a closing comma, and C's semicolon would need an independent clause after it."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "\"By promoting systematic crop rotation...\" tells how Carver revolutionized farming, so it is essential to the main clause and needs no punctuation before it. A comma (A), semicolon (C), or colon (D) would wrongly separate the verb phrase from the phrase explaining how the action happened.",
+    "note": "Solver answer was A; the comma before the essential 'by' phrase is unnecessary, so B is the standard choice."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The first sentence ends after the parenthesis: \"SN 2016aps was a supernova (the explosion of a massive star).\" The next sentence opens with the modifier \"Occurring in the constellation Draco, 3.6 billion light-years from Earth,\" which describes \"the transient yet powerful blast.\" With a comma (D) or no break (B, C), two independent clauses would be joined only by commas, creating a comma splice.",
+    "note": "Solver answer was D; D produces a comma splice before 'the transient yet powerful blast propelled'."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "India has more English speakers than almost any country, yet only about 10% of Indians speak English. B explains the apparent contradiction: the large number comes from India's huge population, not from English being widespread. A and C introduce ideas not connected to the 10% statistic, and D's \"Accordingly\" wrongly treats the 90% figure as a result of the preceding sentence."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first clause says the researchers did not study all North American ungulates; the second says they focused only on elk in Wyoming. Moving from what they didn't do to what they did is a contrast, so \"however\" fits. \"For instance\" and \"in other words\" don't fit a contrast, and \"regardless\" makes no sense here."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The system classifies instruments by how they make sound, and the saraswati veena makes sound through vibrating strings. It follows that the system classifies it as a chordophone. \"Thus\" signals that conclusion; \"Furthermore\" and \"Similarly\" just add information, and \"Instead\" signals a contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Scholars see the serial version as less authoritative, but the next point (readers first experienced the novel in serial form and reacted emotionally) shows it still has value. B uses \"Still\" to concede the first point while noting the serial version matters for historical context. C just repeats the first sentence, and D introduces a claim about Eliot's intentions that the quotation doesn't support."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To explain the 50 Completers challenge, the sentence must say what it requires: reaching the highest point in every US state. B states that requirement and gives two example peaks. A and C describe In Suk Han's achievement rather than explaining the challenge, and D makes it sound as if only two peaks are required.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Highpointers Club is a hiking club.\n• One of the main goals among club members is to reach the highest points in all fifty US states.\n• Those who achieve this are called 50 Completers.\n• In Suk Han became a 50 Completer on November 15, 2013.\n• The highest point in Wisconsin is Timms Hill, at 1,951 ft.\n• The highest point in Wyoming is Gannett Peak, at 13,809 ft."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to show why ERW is a superior way to capture CO2, which calls for a comparison with other methods. B points out that ERW removes CO2 while being low-cost and low-tech, unlike expensive, energy-intensive alternatives. A and D describe side benefits to soil or economies rather than ERW's advantage as a carbon-capture method, and C misstates the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Enhanced rock weathering (ERW) is a method of spreading crushed basalt on farmland to capture carbon dioxide (CO2) and improve soil health.\n• ERW increases crop yields and removes harmful CO2 from the air.\n• ERW offers a low-cost, low-tech alternative to expensive, energy-intensive carbon capture methods.\n• The CO2 captured by ERW becomes stable bicarbonate in soil water, which eventually streams into the ocean to remain safely stored for hundreds of years.\n• ERW can improve rural economies by reducing farmers’ need for fertilizers and increasing their earnings from carbon credits."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 6: h(6) = 100(6) − 50 = 600 − 50 = 550. Choice D comes from adding 50 instead of subtracting it."
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is the point where x, the number of months since purchase, is 0. The graph crosses the y-axis at about 275, so the bike was worth about $275 when it was bought. At 24 months the value is only about $65, so B is wrong."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "110"
+    ],
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "55% of 200 is 0.55 × 200 = 110, so 110 attempts were successful."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms have a common factor of 29: 29x^2 + 29 = 29(x^2) + 29(1) = 29(x^2 + 1). Expanding B gives 29x^2 + 841, and expanding D gives 29x^2 + 1, so neither matches.",
+    "fix": {
+      "choices": {
+        "D": "29(x^2 + 1/29)"
+      }
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides of 2(x − 3) = (2)(90) by 2 to get x − 3 = 90. Choice D is x − 3 multiplied by 2, and 93 would be the value of x itself."
+  },
+  {
+    "key": "m1-06",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Time in minutes = 32,400 / 180 = 180 minutes. Since 1 hour = 60 minutes, 180 / 60 = 3.0 hours."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "4.57"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In 4.57x + 6.08y = 902.07, x is the number of smaller bottles, so 4.57x is the money from smaller bottles. Each smaller bottle therefore costs $4.57. The 6.08 is the price of a larger bottle."
+  },
+  {
+    "key": "m1-08",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In similar triangles, ratios of corresponding sides are equal: AB/BC = XY/YZ. So 180/900 = XY/80, which gives XY = 80 × (1/5) = 16. Choice A comes from setting up the ratio upside down.",
+    "fix": {
+      "prompt": "Triangle ABC is similar to triangle XYZ, where A, B, and C correspond to X, Y, and Z, respectively. In triangle ABC, the length of AB is 180 and the length of BC is 900. In triangle XYZ, the length of YZ is 80. What is the length of XY?"
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "|x| − 43 = 0 means |x| = 43, so x = 43 or x = −43. Only −43 appears among the choices. The fractions ±1/43 have absolute value 1/43, not 43.",
+    "fix": {
+      "prompt": "|x| − 43 = 0\nWhich value is a solution to the given equation?",
+      "choices": {
+        "A": "1/43",
+        "C": "−1/43"
+      }
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope is (−5 − (−8))/(1 − 0) = 3/1 = 3, and the point (0, −8) gives a y-intercept of −8. So line k is y = 3x − 8. Choice A uses 1/3, the reciprocal of the slope.",
+    "fix": {
+      "choices": {
+        "A": "y = (1/3)x − 8",
+        "B": "y = −x + 1/3"
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points rise from about 3 at x = 1 to about 22 at x = 10, so the slope is positive and about (22 − 3)/9 ≈ 2.1, and the line would hit the y-axis near 0. y = 0.2 + 2.25x matches this. C has a slope of only 0.2, which is far too flat, and B and D have negative slopes."
+  },
+  {
+    "key": "m1-12",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An x-intercept has y = 0, which happens when the numerator is 0: 21 − x = 0, so x = 21. The denominator a(21) + b is positive because a and b are positive, so the point (21, 0) is on the graph. B and C have x = 0, so they are y-intercept-type points, and D is where the denominator is zero (the function is undefined there).",
+    "fix": {
+      "prompt": "What is the x-intercept of the graph of y = (21 − x)/(ax + b) in the xy-plane, where a and b are positive constants?",
+      "choices": {
+        "A": "(21, 0)",
+        "B": "(0, −21)",
+        "C": "(0, 21/b)",
+        "D": "(−b/a, 0)"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In one day the glacier moves 17 to 24 cm, so in 2 days it moves 2 times that: (17)(2) ≤ x ≤ (24)(2), or 34 ≤ x ≤ 48. Choice C gives the range for just one day."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "34500"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each leuga is 7,500 pedes, so 4.6 leugas = 4.6 × 7,500 = 34,500 pedes."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "11"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Area = n(n + 7) = 198, so n^2 + 7n − 198 = 0. This factors as (n + 18)(n − 11) = 0, giving n = 11 or n = −18. A width can't be negative, so n = 11 (check: 11 × 18 = 198)."
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Start with 55 = 2K/v^2. Multiply by v^2: 55v^2 = 2K, so v^2 = 2K/55. Since v is positive, v = sqrt(2K/55). Choice C flips the fraction inside the root.",
+    "fix": {
+      "prompt": "55 = 2K/v^2\nFor an object with a mass of 55 kilograms, the given equation relates the kinetic energy K, in joules, of the object to the object’s speed v, in meters per second, where K and v are positive. Which equation correctly expresses this object’s speed, in meters per second, in terms of the object’s kinetic energy, in joules?",
+      "choices": {
+        "A": "v = 2K/55^2",
+        "B": "v = 55^2/(2K)",
+        "C": "v = sqrt(55/(2K))",
+        "D": "v = sqrt(2K/55)"
+      }
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite 44j/(22xk) as (44/22)(1/x)(j/k) = (2/x)(j/k). Since j/k = 83, this is (2/x)(83) = 83, so 2/x = 1 and x = 2.",
+    "fix": {
+      "prompt": "If j/k = 83 and 44j/(22xk) = 83, what is the value of x?",
+      "choices": {
+        "A": "22/83",
+        "B": "1/2"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Growth of 22% per year means each year's production is 100% + 22% = 1.22 times the previous year's. Starting at 7,138, the model is C(n) = 7,138(1.22)^n. Choice A would mean production shrinks to 22% of its value each year."
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The triangle has angles of 45°, 45°, and 90°, so it is an isosceles right triangle with hypotenuse x = 19 and legs 19/sqrt(2). sin A = opposite/hypotenuse = (19/sqrt(2))/19 = 1/sqrt(2). The value of x doesn't matter, since sin 45° is always 1/sqrt(2).",
+    "fix": {
+      "choices": {
+        "A": "1/sqrt(3)",
+        "B": "1/sqrt(2)",
+        "C": "1",
+        "D": "sqrt(2)"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "11"
+    ],
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Volume = (base area)(height), so the base area is 1,815/15 = 121. The base is a square, so each edge is sqrt(121) = 11."
+  },
+  {
+    "key": "m1-21",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let u = x − 1. Then y = u and y = 19u^2 − 20, so u = 19u^2 − 20, or 19u^2 − u − 20 = 0. This factors as (19u − 20)(u + 1) = 0, so u = 20/19 or u = −1. Only −1 is a choice; B has the wrong sign.",
+    "fix": {
+      "choices": {
+        "B": "−20/19",
+        "D": "−1/19"
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "1"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite the first equation as 18x − 2y = 9, so y = 9x − 9/2. Rewrite the second as y = (9/t)x + 1/(5t). A system with no solution has parallel lines: equal slopes and different intercepts. So 9/t = 9 gives t = 1, and then the intercepts are −9/2 and 1/5, which are different, so t = 1.",
+    "fix": {
+      "prompt": "18x + 6y = 8y + 9\nty = 1/5 + 9x\nIn the given system of equations, t is a constant. If the system has no solution, what is the value of t?"
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the figure, x° is the obtuse angle where t crosses ℓ and y° is the acute angle where t crosses k. Since ℓ and k are parallel, these angles are supplementary: x + y = 180. If x > 137, then y = 180 − x < 180 − 137 = 43. C and D are false because x + y is exactly 180."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation (x − h)^2 + (y − k)^2 = r^2 has r^2 = 49, so the radius is sqrt(49) = 7. Choice D is r^2, not r, and B is the diameter."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each water amount divided by its area gives the same ratio: 4,320/2,400 = 1.8, 6,480/3,600 = 1.8, and 8,640/4,800 = 1.8. So f(x) = 1.8x. Choice A uses the reciprocal (2,400/4,320 ≈ 0.56).",
+    "fix": {
+      "prompt": "The roofs on the buildings of a public garden are designed to allow water to drain into the garden. The table shows the relationship between the area x, in square feet, of a roof and the amount of water f(x), in gallons, drained from the roof into the garden over a certain period of time. Which equation could define f?",
+      "table": {
+        "headers": [
+          "Area (square feet)",
+          "Water (gallons)"
+        ],
+        "rows": [
+          [
+            "2,400",
+            "4,320"
+          ],
+          [
+            "3,600",
+            "6,480"
+          ],
+          [
+            "4,800",
+            "8,640"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": [
+      "15"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand the right side: a(x + 29) = ax + 29a. For infinitely many solutions, both sides must be identical: ax = 15x and 29a = 435. Both give a = 15."
+  },
+  {
+    "key": "m2-05",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: y = (26/3)x + 11/3 + 9x. Combine the x-terms: 26/3 + 27/3 = 53/3. So the slope is 53/3. Choice A forgets to add the 9x term.",
+    "fix": {
+      "prompt": "What is the slope of the graph of y = (1/3)(26x + 11) + 9x in the xy-plane?",
+      "choices": {
+        "A": "26/3",
+        "B": "53/3"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first hour costs $116 and each of the remaining x − 1 hours costs $70, plus z for parts: y = 116 + 70(x − 1) + z = 70x + 46 + z. Choice C charges $116 for every hour, and A leaves out the extra $46 for the first hour."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since f(25) = f(27) = −4, the function is −4 at both 25 and 27, so f(x) = k(x − 25)(x − 27) − 4. Using f(29) = 4: k(4)(2) − 4 = 4, so k = 1. That gives B; checking A at x = 25 gives 2, not −4.",
+    "fix": {
+      "prompt": "For the quadratic function f, the table shows three values of x and their corresponding values of f(x). Which equation defines f?",
+      "table": {
+        "headers": [
+          "x",
+          "25",
+          "27",
+          "29"
+        ],
+        "rows": [
+          [
+            "f(x)",
+            "−4",
+            "−4",
+            "4"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": [
+      "-1"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "h(−4) = |−4 − 8| − |6 − (−4)| + a = |−12| − |10| + a = 12 − 10 + a = 2 + a. Setting 2 + a = 1 gives a = −1."
+  },
+  {
+    "key": "m2-09",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: (1/2)y = −(1/3)x + 30, so y = −(2/3)x + 60, and line h has slope −2/3. A perpendicular line has the negative reciprocal slope: 3/2. Choice A is the slope of h itself.",
+    "fix": {
+      "prompt": "Line h is defined by (1/3)x + (1/2)y − 30 = 0. Line j is perpendicular to line h in the xy-plane. What is the slope of line j?",
+      "choices": {
+        "A": "−2/3",
+        "B": "−3/2",
+        "C": "2/3",
+        "D": "3/2"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In P(t) = 250(1.08)^t, the base 1.08 = 1 + 0.08, so the population is multiplied by 1.08 each hour, an increase of 8%. Choice D confuses the growth factor with the percent increase."
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "362"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The beaker was placed on the table at t = 0. Then (2.72)^0 = 1, so g(0) = 296 + (362 − 296)(1) = 296 + 66 = 362 kelvins."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The equations are 6x + 72y = 534 and 6x − 72y = −618. Adding gives 12x = −84, so x = −7; subtracting gives 144y = 1,152, so y = 8. Then 2x + 9y = −14 + 72 = 58."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = −2(x − 3)^2 + 8 is in vertex form with vertex (3, 8). Because −2 is negative, the parabola opens downward, so the maximum value is the y-coordinate of the vertex, 8. Choice B is the x-value where the maximum occurs."
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The original median of 50 values is the average of the 25th and 26th values; the cumulative counts are 10, 15, 19, 31, so both are 75. With 51 coins the median is the 26th value, still 75. Adding 130, which is far above the original mean (at most 90), raises the mean. So the mean increases while the median stays the same.",
+    "fix": {
+      "prompt": "The frequency table summarizes the age, in years, of each of the 50 coins in Vivek’s original collection.\nVivek will add a 130-year-old coin to his original collection, creating a new collection of 51 coins. Which statement correctly compares the mean ages and median ages of Vivek’s original and new collections?",
+      "table": {
+        "headers": [
+          "Age (years)",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "60",
+            "10"
+          ],
+          [
+            "65",
+            "5"
+          ],
+          [
+            "70",
+            "4"
+          ],
+          [
+            "75",
+            "12"
+          ],
+          [
+            "80",
+            "4"
+          ],
+          [
+            "85",
+            "5"
+          ],
+          [
+            "90",
+            "10"
+          ],
+          [
+            "Total",
+            "50"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "At x = −7: (−7)^2 + y^2 = 64, so y^2 = 15 and, since y < 0, y = −sqrt(15). The point lies on the line, so −sqrt(15) = m(−7) + b/2. Then b/2 = 7m − sqrt(15), so b = 14m − 2sqrt(15). Choice B has the signs flipped, and C forgets to multiply by 2.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "x^2 + y^2 = 64\ny = mx + b/2\nIn the given system of equations, m and b are negative constants. In the xy-plane, the graphs of the equations in the given system intersect at the point (−7, y), where y < 0. Which expression represents the value of b?",
+      "choices": {
+        "A": "14m − 2sqrt(15)",
+        "B": "−14m + 2sqrt(15)",
+        "C": "7m/2 − sqrt(15)/2",
+        "D": "−7m/2 + sqrt(15)/2"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the right triangle, r + s = 90, so s = 90 − r. Then 3r > 19(90 − r) gives 22r > 1,710, so r > 77.7. Since sin s° = cos r°, choice C equals (sin r°)/(cos r°) = tan r°, which is greater than tan 77.7° ≈ 4.6. Choices A and B are each less than 1, and D equals (sin r°)/(sin r°) = 1 because cos s° = sin r°.",
+    "fix": {
+      "prompt": "In the figure, 3r > 19s. Which of the following values must be the greatest?",
+      "choices": {
+        "A": "sin r°",
+        "B": "cos r°",
+        "C": "(sin r°)/(sin s°)",
+        "D": "(sin r°)/(cos s°)"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From x − y = 2, x = y + 2. Substitute: 2(y + 2) + 3y = 19, so 5y = 15 and y = 3. Then x = 5, and x + y = 8.",
+    "fix": {
+      "prompt": "Consider the system of equations below:\n2x + 3y = 19\nx − y = 2\nWhat is the value of x + y?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "cos A = adjacent/hypotenuse = 5/13, so take the adjacent side 5 and hypotenuse 13. The opposite side is sqrt(13^2 − 5^2) = sqrt(144) = 12. So tan A = opposite/adjacent = 12/5. Choice B is tan of the other acute angle.",
+    "fix": {
+      "prompt": "In right triangle △ABC, angle C measures 90°. If cos(A) = 5/13, what is the value of tan(A)?",
+      "choices": {
+        "A": "12/5",
+        "B": "5/12",
+        "C": "12/13",
+        "D": "13/5"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expand: −14(9x^2 − 24x + 16) + 6(9x^2 − 12x + 4) = −126x^2 + 336x − 224 + 54x^2 − 72x + 24 = −72x^2 + 264x − 200. Matching (a/4)x^2 + (b/4)x + c/4 gives a = −288, b = 1,056, c = −800. So a + b + c = −32. A quick shortcut: a + b + c = 4(−72 + 264 − 200) = 4(−8) = −32; choice C (−8) forgets to multiply by 4.",
+    "fix": {
+      "prompt": "The expression\n−14(3x − 4)^2 + 6(3x − 2)^2\nis rewritten as\n(a/4)x^2 + (b/4)x + c/4,\nwhere a, b, and c are constants. What is the value of a + b + c?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "672"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The ratio of surface areas is 832/52 = 16, which is the square of the scale factor, so the scale factor is 4. Volumes scale by the cube: 4^3 = 64. The volume of Y is 10.5 × 64 = 672 cm^3.",
+    "fix": {
+      "prompt": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 52 square centimeters (cm^2), and the surface area of right rectangular prism Y is 832 cm^2. The volume of right rectangular prism X is 10.5 cubic centimeters (cm^3). What is the volume, in cm^3, of right rectangular prism Y?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "17"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Move everything to one side and factor out (w + 5): (w + 5)(18(w − a) − 6) = 0. So w = −5 or 18w = 18a + 6, which gives w = a + 1/3. The sum of the solutions is −5 + a + 1/3 = 37/3, so a = 37/3 + 5 − 1/3 = 12 + 5 = 17.",
+    "fix": {
+      "prompt": "18(w − a)(w + 5) = 6(w + 5)\nIn the given equation, a is a constant. The sum of the solutions to the equation is 37/3. What is the value of a?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "h(0) = a(39)(r)(s) = 39ars, so p = 39ars. Since a is only known to be positive, a could be less than, equal to, or greater than 1, so p could be less than, equal to, or greater than 39rs. There isn't enough information to compare them."
+  }
+]

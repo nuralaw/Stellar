@@ -1,0 +1,1184 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The program identified sidewalks \"in the vast majority of cases,\" and the next sentence calls this an \"already-strong performance,\" so it did so dependably, or \"reliably.\" \"Rarely\" and \"clumsily\" contradict the strong performance, and nothing in the text is about speed (\"slowly\")."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Sediments carried by the river pile up where it meets the sea and eventually form new land, so they \"accumulate.\" Sediments that \"dissolve\" would not build land, and \"accelerate\" and \"thrive\" don't describe how sediment builds up."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The linguist assumes \"own\" is common, and the corpus shows it is the eighth most used adjective, so the data confirm, or \"validate,\" the assumption. \"Refute\" is the opposite, since the data agree with the assumption. \"Transpose\" and \"entail\" don't describe testing a hypothesis with data."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts the past with today: naming each minor planet has become \"nearly impossible\" now that there are so many, so back when few were known the task was doable, or \"feasible.\" \"Insurmountable\" would mean it was impossible then too, which removes the contrast. \"Ambiguous\" and \"substantial\" don't set up the contrast with \"nearly impossible.\""
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text shows Max's eagerness to see La Reina: he has begged Papa for as long as he can remember, imagines being a hero for crossing the gates, and hopes this summer will finally be the time. Choice A is wrong because nothing suggests Max wants to avoid growing up; mentioning that he is almost twelve only shows why he thinks he is old enough now.",
+    "fix": {
+      "passage": "The following text is adapted from Pam Muñoz Ryan's 2020 novel Mañanaland. In the village where Max lives, there is an old fortress called La Reina. Children in the village say that the fortress is haunted.\n\nFor as long as he could remember, Max had begged Papa [his father] to take him to see La Reina and the ruins up close. He'd be a hero among his friends if he was the first boy to cross the haunted gates! Just because Papa didn't believe in ghosts didn't mean they weren't there. Maybe this summer Papa would finally take him. He was almost twelve."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined sentence raises a possible interpretation (that Hair's fast-painting technique explains the ethereal look of the Highwaymen's work) and then rejects it as \"tempting but inaccurate,\" because not every member used Hair's methods. That is considering and rebutting an interpretation. Choice C is tempting because Newton is contrasted with Hair, but the contrast is about methods leading to the same effects, not about central versus peripheral artists' aesthetics.",
+    "fix": {
+      "passage": "Driven to sell as many paintings as possible, Alfred Hair, an influential figure among the landscape artists known as the Florida Highwaymen, pioneered \"fast painting,\" a technique (which in part involved slashing in elements with a palette knife) that many Highwaymen, including James Gibson, adopted. <u>To conclude that this approach accounts for the ethereal actualities now synonymous with the Highwaymen aesthetic is tempting but inaccurate, as Hair’s methods weren't universally practiced by his affiliates:</u> Harold Newton, for example, painted with greater deliberateness but achieved the same effects."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first explains a trait of all baleen whales (filter-feeding on krill and eating up to 30 percent of body mass a day), then contrasts the humpback's size with the much larger fin whale, including how much krill the fin whale eats. That difference relates to the feeding trait described first. Choice A reverses the order, since the shared feature comes first, not after the size contrast."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bogotá respondents used parks far more (71.9% vs. 35.7%), yet fewer of them lived within a 10-minute walk of a park. So closeness to parks can't explain the gap; something else must cause it. The text never questions the survey's accuracy (D) or mentions what researchers expected (C).",
+    "fix": {
+      "passage": "In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Bogotá, Colombia, and Fortaleza, Brazil, were surveyed about parks in their cities. Of the 1,121 respondents from Bogotá, 71.9% indicated that they use the city's parks, and of the 938 respondents from Fortaleza, 35.7% indicated using city parks. Given that the percentage of Bogotá respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says that after traveling to the US and Europe, Barragán began using functionalist and modernist principles, and it contrasts a later, unadorned building with an early, historically inspired one. So his style shifted because of his time abroad. Choice D reverses the order: modernism came later, not first, and the Harper de Garibi House was historically inspired, which also rules out A."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Hawthorne compares historians' knowledge to a map: accurate and useful but \"cold and naked\" and lacking the charm of a landscape painting. He adds that these flaws could be fixed only by methods that strict biographers aren't allowed to use. So historians' commitment to accuracy makes their work less engaging. Choice A goes too far, since the text is about the limits of historical writing, not about fiction writers' skills, and C takes the map metaphor literally.",
+    "fix": {
+      "passage": "The following text is adapted from Nathaniel Hawthorne's 1830 short story \"Sir William Phips.\"\n\nThe knowledge, communicated by the historian and biographer, is analogous to that which we acquire of a country by the map—minute, perhaps, and accurate, and available for all necessary purposes, but cold and naked, and wholly destitute of the mimic charm produced by landscape painting. These defects are partly remediable, and even without an absolute violation of literal truth, although by methods rightfully interdicted to professors of biographical exactness."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The garden had adults, hatchlings, and eggs but no juveniles, and it is used only for reproduction. That suggests the octopuses leave once they grow past the hatchling stage. The text says nothing about feeding (B), egg size compared with other sites (C), or population stability (A).",
+    "fix": {
+      "choices": {
+        "A": "The M. robustus population at the Octopus Garden remains stable despite variations in water temperature.",
+        "B": "The Octopus Garden provides an ideal feeding ground for M. robustus hatchlings.",
+        "C": "M. robustus nests in the Octopus Garden contain on average fewer but larger eggs than nests at similar ocean depths.",
+        "D": "M. robustus leave the Octopus Garden upon reaching an intermediary stage of development."
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find the row for petri dish 6 and read across to the venom column: 153 CFUs. The value 289 in that row is for the saline-treated chamber, and the other choices don't appear in the table.",
+    "fix": {
+      "passage": "Scientists recently tested whether scorpion venom reduces the growth of bacteria. The scientists put bacteria in petri dishes with two chambers. They treated the bacteria in one chamber with a saline solution, which does not affect the bacteria. They treated bacteria in the other chamber with scorpion venom. After 14 hours, they counted how many colony-forming units (CFUs) of bacteria were in each chamber.",
+      "table": {
+        "caption": "Number of CFUs of Bacteria after Treatment",
+        "headers": [
+          "Petri dish number",
+          "CFUs after treatment with saline",
+          "CFUs after treatment with venom"
+        ],
+        "rows": [
+          [
+            "4",
+            "159",
+            "143"
+          ],
+          [
+            "6",
+            "289",
+            "153"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The largest average power generation in the table is 198,220 MWh/yr, for Hiwassee Dam, whose water source is the Hiwassee River. The Sawmill plant on the Androscoggin River has the most generators (4), but it generates only 14,126 MWh/yr.",
+    "fix": {
+      "passage": "In 2021, Rocio Ura-Martinez, Megan M. Johnson, and Rul Shan published a report on hydroelectric power plants operating on bodies of water in the US as recently as 2019, and data from their report are shown in the table. Of the plants in the table, the plant with the highest average power generated per year in 2019 was located on the ______",
+      "table": {
+        "caption": "US Hydroelectric Power Plants, 2019",
+        "headers": [
+          "Plant",
+          "State",
+          "Mode",
+          "Generators in plant",
+          "Average power generation (MWh/yr)",
+          "Water source"
+        ],
+        "rows": [
+          [
+            "Spearfish",
+            "South Dakota",
+            "run-of-river",
+            "2",
+            "2,204",
+            "Spearfish Creek"
+          ],
+          [
+            "Sawmill",
+            "New Hampshire",
+            "run-of-river",
+            "4",
+            "14,126",
+            "Androscoggin River"
+          ],
+          [
+            "Hiwassee Dam",
+            "North Carolina",
+            "peaking",
+            "2",
+            "198,220",
+            "Hiwassee River"
+          ],
+          [
+            "Superior Falls",
+            "Michigan",
+            "run-of-river",
+            "2",
+            "10,693",
+            "Montreal River"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that new, beneficial opportunities have opened up for women. In B, trade, science, craft, and art \"have opened their doors to the call of woman,\" and she grows greater as a result. Choice A mentions woman wanting \"worlds to conquer\" but doesn't say any opportunities became available, and D is not about women at all."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tablet suggests Merneith was in charge of the treasury and other central offices, so whether or not she was pharaoh, she likely had an important role in the government. Nothing in the text is about when she lived (A), inventing writing (B), or travel (D)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states a general fact that is always true (an atom's number of protons), so the simple present \"has\" is needed, matching \"indicates\" in the first sentence. \"Had\" and \"has had\" place the fact in the past, and \"is having\" suggests a temporary action.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"a strong and flexible material\" is an interruption that begins with a dash after \"willow,\" so it must end with a matching dash before the sentence continues with \"to craft baskets.\" A comma or semicolon can't close a dash-opened interruption, and a period would cut off \"to craft baskets\" as a fragment.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"books\" (plural), not \"Zachary Taylor,\" so the verb must be plural: \"are.\" \"Was,\" \"has been,\" and \"is\" are singular and also don't match the present-tense \"is well regarded\" later in the sentence.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the main clause, a comma introduces the descriptive phrase \"the former establishing … and the latter legally affirming …,\" which explains the two events. A period (B) would leave that phrase as a fragment, since it has no main verb, and with no punctuation (C) it runs on. \"As the former establishing\" (A) needs a full verb to work as a clause.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A government body officially known as the Althing\" must describe the word right after the comma. Only A puts \"Iceland's parliament\" there. The other choices put \"the world's oldest parliaments,\" \"930 CE,\" or \"the first meeting\" next to the phrase, which illogically calls a date or a meeting a government body.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"consist,\" so the blank must start a modifier for \"Disyllabic words,\" not add a second main verb. \"Classified as trochees\" works as that modifier (words that are classified as trochees). The other choices are full verbs, which would leave the sentence with two main verbs and no conjunction.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the plant absorbs and stores cadmium, the concentration in the soil goes down, so the second statement is a result of the first. \"In turn\" signals that consequence. \"Nevertheless\" implies a contrast, and \"specifically\" would introduce a detail rather than a result."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Stamping notes with hard-to-copy sage-leaf prints is another anti-counterfeiting step, added to the threads and Muscovite, so \"Moreover\" fits. \"For example\" and \"Specifically\" would wrongly present it as an example or detail of the threads, and \"That said\" signals a contrast."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the refuge's size, and only A gives it: 61 acres. The other choices describe its management, location, or the Hawaiian stilt but never say how large the refuge is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Pearl Harbor National Wildlife Refuge (NWR) is a protected natural area in Hawaii.\n• It encompasses 61 acres.\n• It was established to safeguard the habitat of the Hawaiian stilt, an endangered species.\n• The Pearl Harbor NWR is managed by the US Fish & Wildlife Service.\n• The US Fish & Wildlife Service limits human activities in the area."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize order, the sentence must place the supercontinents in time relative to each other. B says Euramerica formed long after Vaalbara, which matches 300 million versus 3.6 billion years ago. The other choices describe supercontinents in general or mention only one of them, so they don't give an order.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A super continent is a single landmass made up of most or all of Earth's continents.\n• Over time, continents merge together to form super continents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Vaalbara was a supercontinent that formed about 3.6 billion years ago.\n• Euramerica was a supercontinent that formed about 300 million years ago."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes show the seaweeds differ in umami intensity: konbu is moderate and arame is high. C states that difference (the latter, arame, is more intense). Choice A stresses what they have in common, and B and D don't compare them at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The human tongue contains taste receptors for a rich, savory flavor called umami.\n• Umami is triggered by the compounds in a variety of foods, including tuna and garlic.\n• Participants in a study tasted a sample of North Pacific konbu, a type of brown seaweed.\n• They rated its umami intensity as moderate.\n• The participants tasted a sample of arame, another type of brown seaweed.\n• They rated its umami intensity as high."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize when Pearl won, and B puts the year first: \"It was in 2011 that…\" The other choices leave out the year entirely, focusing on the award's purpose or what Pearl developed.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The A.M. Turing Award is a prestigious award given by the Association for Computing Machinery (ACM).\n• The ACM gives the award for \"major contributions of lasting importance to computing.\"\n• Judea Pearl won the award in 2011 for developing a calculus for probabilistic reasoning."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Experts recommend complicated passwords, but \"nonetheless\" signals that what people actually do is different: the widely used approach favors convenience, as the third most common password shows. So the blank describes the most common, or \"popular,\" approach. \"Complex\" and \"creative\" contradict the easy-to-remember example."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "These forms are contrasted with traditional forms that stay recognizable; they mix fiction and essay, and Carson's book straddles prose and poetry. So they are shapeless or hard to classify: \"amorphous.\" \"Customary\" is the opposite, and \"neutral\" and \"dispersed\" don't describe forms that blur categories."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Frequent citations by other scholars show that her peers value her work, so the citation record emphasizes, or \"underscores,\" the research's usefulness. \"Belies\" means to contradict, the opposite of what the dash's explanation says, and \"overshadows\" and \"forestalls\" don't fit."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tourists \"can easily recognize\" the Spanish influence in buildings across the state, so the influence is clearly noticeable, or \"palpable.\" \"Understated\" is the opposite, and nothing suggests the influence is \"disputed.\" \"Corroborated\" (confirmed by evidence) doesn't match the idea of being easy to see."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports the Times's view that the English ideal is for everyone to do and look however they like. The next sentence begins with \"But\" and says culture works against letting each raw person's taste be the rule, so Arnold disagrees with that view. Choice B is tempting because foreign criticism is mentioned, but the sentence doesn't call those critiques unfair; it reports the newspaper's reply.",
+    "fix": {
+      "passage": "The following text is adapted from Matthew Arnold's 1869 nonfiction book Culture and Anarchy.\n\n<u>The Times [a British newspaper], replying to some foreign strictures on the dress, looks, and behavior of the English abroad, urges that the English ideal is that everyone should be free to do and to look just as he likes.</u> But culture indefatigably tries, not to make what each raw person may like the rule by which he fashions himself; but to draw ever nearer to a sense of what is indeed beautiful, graceful, and becoming, and to get the raw person to like that."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says scholars overemphasize fragmented narratives and neglect coherent ones, and Text 2 says the focus on fragmentation versus coherence has blocked study of other shared stylistic elements. Both think the current focus gives a needlessly narrow picture of modernist fiction and must change. Choice D fails because Text 2 wants to explore other aspects of style, not move beyond style."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student claims Aristotle says even minor infractions must not be ignored. In B, Aristotle warns that transgression \"creeps in unperceived\" and ruins the state, like small expenses slowly draining a fortune, which shows small violations add up to great harm. The other choices are about oligarchs' relations with classes, fear of enemies, and corruption, not about strict obedience to law.",
+    "fix": {
+      "choices": {
+        "D": "\"When Aristotle writes on the necessity of avoiding corruption in government, he proposes that 'every state should be so administered and so regulated by law that its magistrates cannot possibly make money.' In particular, he thinks oligarchies are particularly susceptible to corruption through bribery.\""
+      }
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Smaller wings mean smaller bodies and lower reproductive fitness, so the claim needs a cooler month with smaller wings than a warmer month. September (high 80°F) is cooler than July (high 87°F), and the average female wing size was smaller in September (2.27 mm) than in July (2.31 mm). Choice A misreads the table: 2.31 mm is the female July value; males averaged 2.02 mm. Choice B compares sexes, not months.",
+    "fix": {
+      "passage": "Drosophila (fruit flies) have generation times of 10-12 days, so seasonal changes in food availability and other environmental conditions can drive seasonal fluctuations in chromosome rearrangements in species such as D. robusta and D. mediopunctata. Drosophila body size (for which wing centroid size serves as a proxy measure) correlates with reproductive fitness. Banu Sebnem Onder and Cansu Fidan Aksoy measured the wing sizes of members of a D. melanogaster population in Yesilóz, Turkey, that were collected monthly between May and October over three years. Their research suggests that Drosophila collected in relatively cooler months should tend to have lower reproductive fitness, as is illustrated by the finding that _____",
+      "table": {
+        "caption": "Monthly Temperatures and Wing Centroid Sizes of Fruit Fly Specimens",
+        "headers": [
+          "Month",
+          "Average high (°F)",
+          "Average low (°F)",
+          "Average male wing centroid size (mm)",
+          "Average female wing centroid size (mm)"
+        ],
+        "rows": [
+          [
+            "September",
+            "80",
+            "54",
+            "1.98",
+            "2.27"
+          ],
+          [
+            "October",
+            "67",
+            "44",
+            "1.98",
+            "2.29"
+          ],
+          [
+            "May",
+            "73",
+            "50",
+            "1.98",
+            "2.27"
+          ],
+          [
+            "July",
+            "87",
+            "62",
+            "2.02",
+            "2.31"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The student concludes that IGF-1 gene variations \"must account for\" size differences among breeds. If the IGF-1 gene is only one of several genes that affect dog size, other genes could explain the variance, which weakens that conclusion. Choice C supports the student, and D, showing that breeds carry different variants, fits the idea that the variants matter."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that more language exposure may improve a dog's ability to tell a familiar language from an unfamiliar one. Older dogs have heard their familiar language longer, so if the brain-activity difference between familiar and unfamiliar languages is greatest in older dogs, that supports the conclusion. Choice D compares the familiar language to scrambled sounds, which tests recognizing speech, not telling two languages apart."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Henry found that investment rose significantly in the three years after liberalization, while Levine and Zervos found no lasting increase. Both are true if there is a short-term boost that later fades. Choice B contradicts Henry's finding of gains within three years, and nothing in the text describes economists' expectations (C)."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most of the sediment is fine-grained mudstone, which settles slowly in still water, so a lake likely existed for a long time; cracks from episodic drying show the lake sometimes dried out; and the intervals of coarse sandstone, laid down by flowing water, point to periods with streams. Choice C says the lake never dried, which the cracks contradict, and B gives the lake only a brief life, which doesn't fit the mostly-mudstone record.",
+    "fix": {
+      "passage": "Data collected by the Mars rover Curiosity at the Gale Crater's Murray Formation are suggestive of hydrological deposition of sediment in the distant past. To characterize the nature of the depositional environment, Frances Rivera-Hernández et al. analyzed the grain size of Murray Formation sediment, finding that although there are intervals of coarse grains, most of the sediment consists of fine grains that show signs of cracking due to episodic desiccation. Rivera-Hernández et al. concluded that the coarse grains are sandstone, which tends to be deposited by flowing water, whereas the fine grains are mudstone, which is slowly deposited by settling out of suspension in low-flow water, leading the researchers to posit that _____",
+      "choices": {
+        "C": "a stream-fed lake was present at the Murray formation for an extended period, and although the streams experienced occasional drying, the lake did not."
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The borrowed words entered Mayan languages while the Olmecs dominated the region, and all of them come from the Zoque branch. That only makes sense if a distinct Zoque branch already existed then, meaning the family had already split into Mixe and Zoque branches. Choice A is unsupported, and C and D go beyond the text, which says nothing about Olmec words entering other Mixe-Zoquean languages and calls Mayan languages unrelated to that family."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quotation ends after \"direction,\" so a closing quotation mark is needed, and what follows (\"in 2011, for instance, judges recognized…\") is a complete independent clause. A semicolon after the closing quotation mark correctly joins the two clauses. C runs them together, D creates a comma splice and leaves the quotation open, and B's \"and,\" placement is awkward and needs a comma before \"and.\"",
+    "fix": {
+      "passage": "Each year, the Nobel Prize in Literature is given to an author who has, in the words of its founder Alfred Nobel, \"produced the most outstanding work in an idealistic _____ in 2011, for instance, judges recognized Tomas Tranströmer \"[for], through his condensed, translucent images, [giving] us fresh access to reality.\"",
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"Grigori Perelman\" (singular); the phrase \"sometimes in conjunction with … Hamilton and … Yau\" set off by commas doesn't make the subject plural. So the verb must be singular: \"is.\" \"Are,\" \"are being,\" and \"have been\" are plural forms that agree with the nearby names instead."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"Objects\" (plural); the long phrase about 49036 Pelion is just an example set off by commas. A plural subject needs the plural verb \"exhibit.\" \"Is exhibiting,\" \"exhibits,\" and \"has exhibited\" are all singular, matching Pelion instead of the subject.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Having proportionally large populations,\" which names one activity and is therefore singular, so it needs \"is.\" The plural noun \"populations\" inside the phrase tempts you toward \"are\" or \"have been,\" but it isn't the subject.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"For instance\" belongs with the first clause, since Ritchie's team using sweep nets is an example of the several methods. It is set off by a comma, and a semicolon then separates the two independent clauses. In A, \"for instance\" attaches to Boyer's team instead, C is a comma splice, and B has no punctuation at all between the clauses.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A colon after \"shade\" introduces the explanation of how the sand differs, and \"though most sand gets its shade from …\" is a dependent clause that leads into the main clause \"deposits … lend the sand … a red tint.\" In B, a comma would attach that \"though\" clause to the previous sentence, leaving \"deposits … lend\" joined by just a comma (a comma splice). D's \"Most sand gets its shade…, deposits…\" is also a comma splice.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb, \"analyzed\" (researchers … analyzed geotagged posts). The blank starts a modifier describing the researchers, so it needs the participle \"looking.\" \"Had looked,\" \"were looking,\" and \"looked\" would add a second main verb with no conjunction.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence confirms the first: Duchamp meant the work to challenge ideas about art, and it \"did just that.\" \"Indeed\" signals that kind of confirmation. \"Instead\" implies a contrast, and \"In addition\" and \"Similarly\" treat the sentence as a new or parallel point rather than a confirmation.",
+    "fix": {
+      "choices": {
+        "C": "Instead,"
+      }
+    }
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show how hard quartz is relative to other minerals, D places it between the other two: quartz (7) can scratch apatite (5) but not diamond (10). Choices A and B focus on diamond, and C doesn't say where quartz falls.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral apatite has a Mohs scale number of 5.\n• The mineral quartz has a Mohs scale number of 7.\n• The mineral diamond has a Mohs scale number of 10."
+    }
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the theory was an obvious next step given the ideas around at the time, it follows that two scientists arriving at it independently may not be a coincidence. \"Then\" (in the sense of \"therefore\") signals that conclusion. \"However\" wrongly signals a contrast, and \"for example\" would present the sentence as an illustration rather than a conclusion."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity is something the two books share, and B says both recently entered the public domain. Choices A and D stress differences (the year, novel versus novella), and C mentions only Billy Budd, Sailor.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A copyright prevents a book's contents from being reproduced (published) without permission from the copyright holder.\n• When a book's copyright expires, the book enters the public domain and can be legally reproduced by anyone.\n• Cane is a novel by Jean Toomer.\n• It entered the public domain in 2019.\n• Billy Budd, Sailor is a novella by Herman Melville.\n• It entered the public domain in 2020.",
+      "prompt": "The student wants to emphasize a similarity between Cane and Billy Budd, Sailor. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subject matter means what the prints show. D contrasts Méndez's explicitly political scene with Muafangejo's tranquil, everyday one. Choices A and B are about technique (and wrongly treat linocut and relief print as different, when a linocut is a relief print), and C is about dates.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Love Is Approaching is a 1974 black-and-white linocut print by Namibian artist John Muafangejo.\n• It depicts a tranquil, everyday scene (two seated figures reaching for each other).\n• La Protesta (\"The Protest\") is a 1937 black-and-white linocut print by Mexican artist Leopoldo Méndez.\n• It features a scene with an explicitly political point of view (a laborer raising his fist in protest).\n• Relief printing is a technique in which an image is carved onto a printing block, covered in ink or paint, and stamped onto paper.\n• Lino cutting is a type of relief printing that uses linoleum tile as the printing block."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization is a broad statement about circumnavigations as a group. D says most include stops on land but some are nonstop, which covers circumnavigations in general. Choices A and C are about two specific sailors, and B is only a definition.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A sailing trip that goes in a complete circle around the world is called a circumnavigation.\n• Most circumnavigations include stops on land.\n• Clarisse Cremer is a French sailor.\n• Cremer sailed the boat Banque Populaire X on a nonstop, 87-day circumnavigation.\n• Asia Pajkowska is a Polish sailor.\n• Pajkowska sailed the boat FanFan on a nonstop, 216-day circumnavigation."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To refute the claim that the Storting favors small urban districts, A explains that the formula gives more weight to land than to residents, so it overrepresents less populated rural districts, the opposite of favoring urban ones. Choice B agrees with the claim, and C contradicts the notes by saying more populated districts are overrepresented.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Malapportionment is the over- or under-representation (relative to population size) of electoral districts in a governing body.\n• It is a common feature of representative governments.\n• There are 169 seats in Norway’s supreme legislature (the Storting).\n• Seats are distributed by a formula that awards 1 point per resident and 1.8 points per unit of land.\n• Less populated rural districts with large tracts of land receive a disproportionate number of seats compared to smaller but more populated urban districts."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(0) is the y-value where the graph crosses the y-axis (x = 0). The marked point on the y-axis is at y = −6, so f(0) = −6. The other choices are y-values the curve passes through at other x-values, not at x = 0."
+  },
+  {
+    "key": "m1-02",
+    "answer": [
+      "61"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Angles r° and s° are on opposite sides of the intersection point, so they are vertical angles, and vertical angles are equal. So s = r = 61. Don't subtract from 180; that would give an adjacent angle, not the opposite one."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute 7 for x: f(7) = 5(7)^2 = 5(49) = 245. Choice A, 35, comes from computing 5 · 7 and forgetting to square, and C, 70, comes from 10 · 7."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In t(x) = −3x + 74, the coefficient of x is the rate of change: each additional hour (x increases by 1) changes the temperature by −3 degrees. So the temperature drops 3 °F per hour. At 6 p.m. (x = 0) the temperature is 74, not −3 or 5."
+  },
+  {
+    "key": "m1-05",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 6x to both terms: 6x · x + 6x · 3 = 6x^2 + 18x. Choice A multiplies only the first term by 6x and leaves the 3 unchanged."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Shifting a graph up 9 units adds 9 to every output: g(x) = f(x) + 9 = 3x^5 + 9. Choice B would shift it down 9 units, and D (multiplying by 9) stretches the graph instead of shifting it."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A linear function can be written f(x) = mx + b, where m is the slope and b = f(0). Here m = 69 and b = 3, so f(x) = 69x + 3. Choice C has the right slope but gives f(0) = 0."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "5% of w means 0.05w = 741.41, so w = 741.41/0.05 = 741.41 × 20 = 14,828.2. Choice B comes from multiplying by 5 instead of dividing by 0.05."
+  },
+  {
+    "key": "m1-09",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parabola opens upward with its vertex at the origin, so its coefficient is positive, and the line rises through the origin, so its slope is positive. Both graphs pass through (4, 7): (7/16)(4)^2 = 7 and (7/4)(4) = 7. Only D has both coefficients positive; the negative versions would open downward or slope down.",
+    "fix": {
+      "choices": {
+        "A": "y = −(7/16)x^2\ny = −(7/4)x",
+        "B": "y = −(7/16)x^2\ny = (7/4)x",
+        "C": "y = (7/16)x^2\ny = −(7/4)x",
+        "D": "y = (7/16)x^2\ny = (7/4)x"
+      }
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "80"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The term 4x depends on how many plants are watered, so it is the watering time (4 minutes per plant). The constant 80 doesn't change with x, so it is the time for the one fixed task, mowing the grass: 80 minutes."
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: (x + y) + (x − y) = 19 + 9, so 2x = 28 and x = 14. Then y = 5, and the check 14 − 5 = 9 works. Choices A and D are just constants copied from the equations, not solutions."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x − 8)^2 − 64 + (y − 5)^2 − 25 − 55 = 0, so (x − 8)^2 + (y − 5)^2 = 144 and the radius is 12. A circle inscribed in a square touches all four sides, so the side equals the diameter, 24, and the perimeter is 4 × 24 = 96. Choice B uses the radius as the side length."
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Treat 3x + 6 as one quantity u: 5u = 3u + 78, so 2u = 78 and u = 39. There's no need to solve for x. Choice A, 78, forgets to divide by 2, and D, 11, is the value of x, not of 3x + 6."
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(4) = 4 + 5 = 9 and g(4) = 5 · 4 = 20. Then 7f(4) − g(4) = 63 − 20 = 43. Choice A, −11, comes from forgetting the 7 (9 − 20)."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "15"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set C(t) = 247: 240(53/52)^(t−15) + 7 = 247, so 240(53/52)^(t−15) = 240 and (53/52)^(t−15) = 1. A positive base other than 1 equals 1 only when its exponent is 0, so t − 15 = 0 and t = 15.",
+    "fix": {
+      "prompt": "C(t) = 240(53/52)^(t−15) + 7\nThe function C gives the estimated number of cephalopods, a class of marine animal, in a certain area, where t is the number of months since a study began. How many months after the study began was the number of cephalopods in the area estimated to be 247?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "1/17",
+      ".0588",
+      "0.0588"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 3 feet = 1 yard, divide the number of feet by 3: (3/17) ÷ 3 = (3/17)(1/3) = 1/17 yard per second. Multiplying by 3 instead would give 9/17, which is larger, but yards are bigger units, so the number must get smaller.",
+    "fix": {
+      "prompt": "An object moves at a speed of 3/17 feet per second. What is this speed in yards per second? (3 feet = 1 yard)"
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "37"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each time x increases by 1, g(x) decreases by 3, so m = −3. Using (1, 34): 34 = −3(1) + b, so b = 37. You can also step back from x = 1 to x = 0, adding 3 to get g(0) = 37.",
+    "fix": {
+      "prompt": "For the linear function g, the table shows four values of x and their corresponding values of g(x). The function can be written as g(x) = mx + b, where m and b are constants. What is the value of b?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "1",
+            "34"
+          ],
+          [
+            "2",
+            "31"
+          ],
+          [
+            "3",
+            "28"
+          ],
+          [
+            "4",
+            "25"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Increasing by 2.4% each year means each year's value is 100% + 2.4% = 102.4% of the previous one, so the growth factor is 1.024 and f(x) = 174,000(1.024)^x. Choice D uses 1.24, which is a 24% increase, and A and B would make the value shrink."
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Sine repeats every 2π, and 18π = 9 · 2π, so sin(18π) = sin(0) = 0. In general, sin(nπ) = 0 for any integer n, because those angles land on the x-axis of the unit circle. Choice D, 1, is the sine of π/2 plus multiples of 2π, not of 18π.",
+    "fix": {
+      "prompt": "What is the value of sin(18π)?",
+      "choices": {
+        "B": "1/2",
+        "C": "sqrt(2)/2"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at R, so QS is the hypotenuse, and the side RS = 17 is opposite angle Q. By definition, sin Q = opposite/hypotenuse = 17/QS, so QS = 17/sin Q. Choice C would be right if 17 were the side adjacent to Q, but QR is the adjacent side.",
+    "fix": {
+      "prompt": "In triangle QRS shown, QR < RS. Which expression represents the length of QS?",
+      "choices": {
+        "C": "17/cos Q",
+        "D": "17/sin Q"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has no solution when the lines are parallel and distinct, so the other line has the same slope as the given one. Solve for y: (3r/7)y = (1/9)x − 34, so y = (7/(27r))x − 238/(3r). The slope is (1/9) ÷ (3r/7) = 7/(27r). Choice B has the wrong sign, and A is its reciprocal.",
+    "fix": {
+      "prompt": "(1/9)x − (3r/7)y = 34\nOne of the equations in a system of two linear equations is given, where r is a nonzero constant. The system has no solution. If the other equation in the system is graphed in the xy-plane, what is the slope of the graph?",
+      "choices": {
+        "A": "−27r/7",
+        "B": "−27/(7r)",
+        "C": "7r/27",
+        "D": "7/(27r)"
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Count the parts: there are 4n eight-inch parts, n nine-inch parts, and 30 three-inch parts. The total is 4n + n + 30 = 100, or 5n + 30 = 100. Choice A multiplies by the lengths in inches, which would total inches, not parts, and C leaves out the n nine-inch parts."
+  },
+  {
+    "key": "m2-01",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The boundary is a solid horizontal line at y = 29, and the shading covers everything on and above it, so the solutions are all points with y ≥ 29. Choice C would shade below the line, and choices A and B have vertical boundaries (x = 29)."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute d = 38: 3.5c + 7(38) = 266, so 3.5c + 266 = 266 and 3.5c = 0. So c = 0 cats. Choice B, 7, is the coefficient of d, not a solution."
+  },
+  {
+    "key": "m2-03",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Plug each x into y = 3^(x−1) − 6. For x = 0: 3^(−1) − 6 = 1/3 − 6 = −17/3. For x = 1: 3^0 − 6 = −5. For x = 2: 3^1 − 6 = −3. These match table A. Choice D has the right sizes but positive signs, which would come from computing 6 − 3^(x−1).",
+    "fix": {
+      "prompt": "y = 3^(x−1) − 6\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given equation?",
+      "choices": {
+        "A": "x: 0, 1, 2; y: −17/3, −5, −3",
+        "B": "x: 0, 1, 2; y: 9, 15, 33",
+        "C": "x: 0, 1, 2; y: −3, 3, 21",
+        "D": "x: 0, 1, 2; y: 17/3, 5, 3"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A margin of error gives a range on both sides of the estimate: 66% − 2.91% = 63.09% and 66% + 2.91% = 68.91%. So plausible values are between 63.09% and 68.91%. Choices B and D keep only one end of the range, and C describes values outside it."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At 35 miles per gallon, driving d miles uses d/35 gallons. Starting with 10 gallons, the gas left is f(d) = 10 − d/35. Choice A reverses the subtraction (it starts at −10), and D treats each mile as using a whole gallon.",
+    "fix": {
+      "choices": {
+        "A": "f(d) = d/35 − 10",
+        "C": "f(d) = 10 − d/35"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": [
+      "3"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set f(x) = 150: 50x = 150, so x = 150/50 = 3."
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at (0, 2). Substituting x = 0 and y = 2 into 10x + By = 50 gives 2B = 50, so B = 25. The x-intercept (5, 0) also checks: 10(5) = 50. Choice C, 2, is the y-intercept itself, not B."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The points fall from about 80–90 at x = 0–1 to 0 at x = 8, so y drops about 10 for each 1 increase in x: slope ≈ −10, which rules out B and C. The data average about y = 49 at x = 4; y = 90 − 10x gives 50 there, while y = 80 − 10x gives only 40, which is too low. So y = 90 − 10x fits best."
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the quadratic formula with a = 4, b = 5, c = −5: the discriminant is 25 − 4(4)(−5) = 105, so x = (−5 ± sqrt(105))/8 = −5/8 ± sqrt(105)/8. The greater solution uses the plus sign. Choices C and D divide by 4 instead of 2a = 8.",
+    "fix": {
+      "choices": {
+        "A": "−5/8 − sqrt(105)/8",
+        "B": "−5/8 + sqrt(105)/8",
+        "C": "−5/4 − sqrt(105)/4",
+        "D": "−5/4 + sqrt(105)/4"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Test (7, 0): 0 ≤ 7 + 15 = 22 is true, and 0 ≥ −4(7) − 15 = −43 is true, so it satisfies both. (−7, 0) fails the second inequality (0 ≥ 13 is false), (0, 16) fails the first (16 ≤ 15), and (0, −16) fails the second (−16 ≥ −15)."
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With 31 values, the median is the 16th value in order. The running totals are 1, 5, 10, 16, …, so the 16th value is the last one in the 25 to 34 interval. Since temperatures are whole numbers, the median could be any integer from 25 to 34, such as 25.",
+    "fix": {
+      "prompt": "A researcher created a data set by recording the daily low temperature, to the nearest integer, for each of the 31 days in December 2022 in a town in Illinois. The frequency table summarizes this data set.\nBased on the frequency table, what could be the median of the recorded daily low temperatures, in degrees Fahrenheit?",
+      "table": {
+        "headers": [
+          "Daily low temperature (degrees Fahrenheit)",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "-5 to 4",
+            "1"
+          ],
+          [
+            "5 to 14",
+            "4"
+          ],
+          [
+            "15 to 24",
+            "5"
+          ],
+          [
+            "25 to 34",
+            "6"
+          ],
+          [
+            "35 to 44",
+            "10"
+          ],
+          [
+            "45 to 54",
+            "4"
+          ],
+          [
+            "55 to 64",
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The height of an equilateral triangle splits it into two 30-60-90 triangles, so the height is (sqrt(3)/2)s. Set (sqrt(3)/2)s = 47sqrt(3): s/2 = 47, so s = 94. Choice D, 47, is only half a side, and C repeats the height.",
+    "fix": {
+      "prompt": "An equilateral triangle has a height of 47sqrt(3) units. What is the length, in units, of one side of this triangle?",
+      "choices": {
+        "A": "94sqrt(3)",
+        "C": "47sqrt(3)"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "11"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line s: 2y = −8x, so y = −4x and its slope is −4. A perpendicular line has slope 1/4. Using (6, 0) and (k, 5/4): (5/4)/(k − 6) = 1/4, so k − 6 = 5 and k = 11.",
+    "fix": {
+      "prompt": "Line s in the xy-plane is defined by 8x + 2y = 0. Line t is perpendicular to line s and passes through the points (6, 0) and (k, 5/4). What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Simplify: root[8](y^8) = y, so the expression is x^(17/3)y^(5/3)/(5x^2y) = x^(11/3)y^(2/3)/5 = cbrt(x^11 y^2)/5, which is II. For I, cbrt(x^14 y^5)/(5xy) = x^(14/3)y^(5/3)/(5xy) = x^(11/3)y^(2/3)/5 as well, so both are equivalent. The trap is forgetting that dividing by x and y means subtracting 1 (that is, 3/3) from the fractional exponents.",
+    "note": "Page prints I as (x^14y^5)/(5xy) with no cube root, which would NOT be equivalent; the printed key is C (I and II), so the cube root in I was evidently lost. Fixed I as cbrt(x^14 y^5)/(5xy) to match key C.",
+    "fix": {
+      "prompt": "cbrt(x^17 y^5)/(5x^2 · root[8](y^8))\nFor all positive values of x and y, the given expression is equivalent to which of the following?\nI. cbrt(x^14 y^5)/(5xy)\nII. cbrt(x^11 y^2)/5"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The exponent 3x means the factor 1.005 is applied 3 times per year, or once every 4 months. Multiplying by 1.005 increases the balance by 0.5% of its value at the start of each 4-month period. Choices A and C describe a fixed dollar increase (linear growth), and D gets the interval wrong: the 0.5% growth happens every 4 months, not every 3 years."
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "1.152"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Convert first: 48 cm = 0.48 m, so each square face has area 0.48^2 = 0.2304 m^2. A box without a lid has 5 faces, so the exterior surface area is 5 × 0.2304 = 1.152 square meters. Using 6 faces or forgetting to convert (11,520 cm^2) are the common mistakes."
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A side 90% longer is 1.9 times as long, so the same actual distance is spread over 1.9 times as many inches. Each inch on the larger map therefore represents 13/1.9 ≈ 6.84 miles. Choice C, 24.70, multiplies 13 by 1.9 instead of dividing."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "27/4",
+      "6.75"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The solutions are x = −9/4 (from 4x + 9 = 0) and x = ±sqrt(4k + 9). Their product is (−9/4) · (sqrt(4k + 9)) · (−sqrt(4k + 9)) = (9/4)(4k + 9). Set (9/4)(4k + 9) = 81: 4k + 9 = 36, so 4k = 27 and k = 27/4. The constant 4/9 in front doesn't affect the solutions.",
+    "fix": {
+      "prompt": "(4/9)(4x + 9)(x + sqrt(4k + 9))(x − sqrt(4k + 9)) = 0\nIn the given equation, k is a positive constant. The product of the solutions to the equation is 81. What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 10 to both terms: 10 · x + 10 · 3 = 10x + 30. Choice A multiplies only x by 10, and B adds 10 and 3 instead of multiplying."
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since AB = AC, the base angles are equal: angle B = angle C. With angle BED = angle CFD too, triangles BED and CFD are similar (AA), so BE/CF = BD/CD. BD is 4/7 of BC, so CD is 3/7 of BC and BD/CD = 4/3. Then 8/CF = 4/3, so CF = 6. Choice B, 14, comes from using BD/BC = 4/7 instead of BD/CD.",
+    "fix": {
+      "prompt": "In isosceles triangle ABC, sides AB and AC are congruent. Point D divides side BC such that the length of BD is 4/7 of the length of BC. Point E lies on side AB and point F lies on side AC such that when segments DE and DF are drawn, angle BED is congruent to angle CFD. If the length of BE is 8, what is the length of CF?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "One square meter is 3.28^2 ≈ 10.758 square feet, so 270 ft^2 per hour is 270/10.758 ≈ 25.10 m^2 per hour. Dividing by 60 minutes gives about 0.42 m^2 per minute. Choice D stops at the hourly rate, and B divides by 3.28 only once."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "195"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expand and rearrange: kx^2 − 112x + 16 = 0. Two distinct real solutions require a positive discriminant: (−112)^2 − 4(k)(16) > 0, so 12,544 − 64k > 0 and k < 196. The greatest integer less than 196 is 195. Choosing 196 makes the discriminant 0, which gives only one solution."
+  }
+]

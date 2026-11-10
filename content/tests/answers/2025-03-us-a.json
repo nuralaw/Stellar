@@ -1,0 +1,534 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator drops the keys on a bowl as he walks in, so \"place\" simply means to set or \"put\" them there. \"Remove\" is the opposite of what he does, and \"rank\" (to put in order of importance) and \"unfold\" make no sense with keys and a bowl.",
+    "fix": {
+      "passage": "The following text is from Lilliam Rivera's 2020 novel Never Look Back. The text describes the narrator arriving at his father's apartment.\n\n\"Pops, I'm here!\" I drop my bag and set my guitar case against a wall. I place my keys on the bowl right next to the ceramic elephant Pops got me on one of his trips to Santo Domingo when I was a little kid. ©2020 by Lilliam Rivera"
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Counting how often other scholars cite a piece of research is a way to gauge, or \"measure,\" how important it is; the Mester example shows citation counts indicating significance. Tracking citations does not \"diminish\" or \"increase\" a study's importance, and \"vary\" doesn't fit the idea of assessing it."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The entries were fictitious hoaxes created as jokes, so when they were finally recognized for what they were, they were seen as \"pranks.\" \"Revelations\" and \"analyses\" describe serious content, and \"enhancements\" would mean the fake entries improved the encyclopedia."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Wang argues that polling is still useful for guiding campaign strategy, so failed predictions shouldn't make campaigns ignore or \"neglect\" polling. \"Supplement\" and \"enact\" don't express giving something up, and \"distort\" doesn't fit with \"entirely\" or with Wang's defense of polling."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "As the years went on, the drawbacks of being descended from a famous poet became very noticeable to Katharine, which is what \"evident\" means; the next sentence goes on to describe those obvious drawbacks. \"Expected\" contradicts the idea that her feelings changed over time, and \"particular\" and \"involved\" don't describe something becoming clear.",
+    "fix": {
+      "passage": "The following text is adapted from Virginia Woolf's 1919 novel Night and Day. Katharine is the granddaughter of a celebrated poet.\n\n[Katharine's] descent from [a celebrated poet] was no surprise to her, but matter for satisfaction, until, as the years wore on, certain drawbacks made themselves very manifest. Perhaps it is a little depressing to inherit not lands but an example of intellectual virtue, perhaps the conclusiveness of a great ancestor is a little discouraging to those who run the risk of comparison with him."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text opens with a question (\"What is a city?\") and then explains that the answer differs because countries use different population cutoffs and even other factors. It never counts how many cities a country has (A), compares two specific places (C), or makes a recommendation (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Adam offers to let his great-uncle stay on the ship and says he will go wherever Richard wants, and this \"affectionate willingness\" wins the old man's heart so they become like old friends. The text is about how Adam's flexibility strengthens their bond. It never says Richard was wary at first (B), and the night on the ship is a detail, not the focus (D)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first reports what the researchers found (ants treat infected wounds, cutting mortality by 90%) and then says the discovery might help in developing new human antibiotics, a direction for future work. It doesn't present a problem with the ants plus a solution (A), speculate about evolution (C), or describe the research methods (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Similar tools could come from imitation or trade, but genetic affinity among the populations points to another explanation: the people themselves mixed, bringing their tool-making traditions with them. So the finding raises the possibility that shared designs resulted from population blending. The text says nothing about how often groups imitated each other (A), other cultural differences (B), or the timing of arrivals (D).",
+    "fix": {
+      "passage": "Archaeologists have observed similarities in the tools, such as bidirectional blades, uncovered at the Neolithic-period Mesopotamian settlement of Cayönü Tepesi and those uncovered at roughly contemporaneous settlements elsewhere in Southwest Asia, including those in the South Levant, Central Anatolia, and Central Zagros. Although similarities in tools could be attributed to imitative behavior or trade, Nefize Ezgi Altınışık et al. found evidence of genetic affinity among the populations of Cayönü Tepesi, Central Anatolia, the South Levant, and—to a lesser extent—Central Zagros.",
+      "prompt": "Information in the text best supports which statement about the finding made by Altınışık et al.?"
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Schmidt never says he disapproves of the wife's opinion, but he winces, sighs dramatically, and leaves with an obviously invented excuse. His actions show his feelings without his stating them. Nothing suggests this behavior happens only with these companions (A), that he is usually organized (C), or that there was an earlier argument about a painting (D).",
+    "fix": {
+      "passage": "The following text is from Mark Haber’s 2022 novel Saint Sebastian’s Abyss. The narrator and Schmidt are both art critics.\n\nWhen my first wife admitted to Schmidt over dinner that she didn’t find art, painting in particular, especially compelling, Schmidt winced, set down his fork, and sighed dramatically; he then excused himself, explaining an appointment he’d forgotten about had suddenly and inexplicably been remembered, while making it abundantly clear there was no appointment at all. ©2022 by Mark Haber"
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim compares viewing time in a museum with viewing time online. Choice A gives exactly that comparison for the same painting: about three minutes in person versus one minute online. The other choices are about which works are online, where visitors come from, or which museums own Kahlo works, none of which concerns time spent viewing.",
+    "fix": {
+      "passage": "Dos Mujeres (Salvadora y Herminia) is a painting by Frida Kahlo, dated 1928. It's part of the full collection of the Museum of Fine Arts, Boston, in Boston, Massachusetts. A digital image of it can also be found in an online collection. In a paper, a student claims that <u>people usually spend more time viewing a work of art in a museum than they do online.</u>"
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hares forage less under bright moonlight while the lemurs forage more, and the text explains this with OFT: vision-reliant lemurs gain more from the light than hares do. So OFT can explain why different species respond differently to the same circumstance. It doesn't say some species ignore trade-offs (A); variation by species supports OFT rather than weakening it (B), and nothing favors benefits over costs (D).",
+    "fix": {
+      "passage": "Optimal foraging theory (OFT) holds that animals’ foraging behaviors reflect cost-benefit trade-offs that vary by species and with dynamic ecological circumstances. One such circumstance is lunar intensity, which Paul C. Griffiths and colleagues found to be negatively associated with foraging by snowshoe hares but Ian C. Colquhoun found to be positively associated with foraging by black lemurs. This discrepancy is explicable in terms of OFT: the lemurs’ greater reliance on vision means that higher lunar intensity benefits them more than it benefits the hares.",
+      "prompt": "Information in the text best supports which statement about OFT?"
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quotation in A first describes people who \"tread down the poor and lowly\" (mistreating the less privileged) and then says \"the mills of God's justice\" will grind out their fate, which is divine judgment. B asks readers to remember suffering close to home, but it mentions no punishment. C praises unity, and D is a prayer for the nation."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To weaken the claim, we need a country whose growth rate was lower after joining an FTA. Morocco's growth was about 20% before MAFTA but only about 5% after, so it fits. Costa Rica (about 10% to 13.5%) and Jordan (about −5% to 36%) both rose after joining, which supports the claim, and A only says growth rates varied after joining."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim says that as the movement spread beyond Chile, it took in a wider range of musical traditions. Songs showing the influence of corrido, a Mexican genre, illustrate a non-Chilean tradition being added. D's quena is also used in Chile, so it doesn't show expansion beyond Chilean traditions. A and C talk about political themes and where artists came from, not musical traditions.",
+    "fix": {
+      "passage": "Born in Chile in 1917, artist and ethnomusicologist Violeta Parra was a pioneer in the nueva canción chilena (Chilean New Song) movement that emerged in the late 1950s and then spread throughout Latin America, Portugal, and Spain as nueva canción. Parra traveled all over Chile compiling extensive records of authentic folk music as well as recipes, proverbs, and other facets of cultural history. These records formed the foundation for the early movement's revival of traditional Chilean folk forms in new songs that represented modern realities of the working class and strongly advocated for social change. <u>As the movement spread beyond Chile, the breadth of musical traditions incorporated into its foundation also expanded.</u>"
+    }
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Grigori Perelman.\" The phrase \"sometimes in conjunction with ... Yau\" is set off by commas and doesn't make the subject plural, so the verb must be the singular \"is.\" \"Have been,\" \"are,\" and \"are being\" are plural verbs that wrongly agree with the nearby nouns in the interrupting phrase."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"That often incorporate words or phrases...\" is a restrictive clause describing which scribbles are meant, so it should follow \"scribbles\" with no punctuation. A semicolon or period (A, B) would leave \"that often incorporate...\" as a fragment, and a colon (D) can't come before a clause that has no subject of its own."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Kizomba ... has become an international phenomenon\" is a complete sentence, and \"In 2022, the Indian dance duo ... defeated performers\" is another one, so they need to be separated with a period. A comma (C) creates a comma splice, no punctuation (D) is a run-on, and \"and\" with no comma (A) joins them awkwardly while making \"in 2022\" seem to belong to the first clause."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the main clause is \"researchers\" (plural); the phrase \"like Aliya Bhatia ... Technology\" is just an example. A plural subject needs the plural verb \"fear.\" \"Fears,\" \"has feared,\" and \"is fearful\" are all singular forms that wrongly match \"Bhatia\" or \"Technology.\""
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Olympia Brown of Connecticut\" is the subject and \"played\" is its verb, and no punctuation should come between a subject and its verb. A period, semicolon, or colon (A, C, D) would split the sentence and leave a fragment."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence says the sand is a different shade, and the colon introduces the explanation: \"though most sand gets its shade from ... quartz and feldspar, deposits of iron oxide ... lend the sand ... a colorful red tint.\" Here \"though\" begins a dependent clause attached to the main clause that follows. A and B create comma splices, and D separates \"though\" from the clause it belongs with, leaving the next sentence ungrammatical."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says rings outside the Roche limit should clump into a satellite, yet Morgado's team found a ring far outside Quaoar's limit that has stayed intact. That result goes against the expectation, so the contrasting \"though\" fits. \"Likewise\" and \"for example\" would wrongly present the finding as agreeing with the rule, and \"fittingly\" means it is what you'd expect."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general claim that many mushrooms contain phenolic compounds such as protocatechuic acid and biochanin. The next sentence names specific mushrooms where each compound was found, so it gives examples. \"However\" and \"Nevertheless\" signal contrast, and \"For this reason\" signals a cause-and-effect link that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization makes a claim about the archive as a whole. Since the archive includes one item from 1891 and another from 2016, it is true that not all of its artifacts are from the 1800s. Choices A, B, and C each state one fact about a single item, so none of them generalizes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hina Hanta is an online archive curated by the Choctaw Nation of Oklahoma.\n• It features images of cultural artifacts relevant to the history of the Choctaw people.\n• It features household items, including a cup (isht ishko in Choctaw) made from clay.\n• The cup was made in 1891.\n• Hina Hanta features sports apparel, including a stickball collar (innuchi) made from horsehair.\n• The stickball collar was made in 2016."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say Clermontia kakeana is a native species and Ardisia elliptica is a non-native one, and D contrasts the two plants on exactly that point. A points out something they share (both were found in bird samples), B describes the study, and C mentions only one plant.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Most of the plant and bird species in Oahu, Hawaii, are non-native.\n• In a 2019 study, researchers wanted to know what role non-native birds play in dispersing plant seeds in Oahu.\n• Researchers catalogued plant seeds found in fecal samples from non-native birds.\n• Clermontia kakeana, a flowering shrub, was one of fifteen native species catalogued.\n• Ardisia elliptica, a tree, was one of twenty-nine non-native species catalogued.\n• Researchers concluded that non-native birds play a vital role in dispersing the seeds of native and non-native plants."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal calls for a specific particle physicist who studies neutrinos. C names Gianpaolo Bellini, calls him a particle physicist, and states his research on solar and geoneutrinos. A, B, and D talk about neutrinos or particle physicists in general and never name anyone.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Gianpaolo Bellini is an Italian particle physicist.\n• Particle physicists study subatomic particles.\n• Neutrinos are some of the least understood subatomic particles.\n• Neutrinos were first discovered in the mid-twentieth century.\n• Bellini is known for his research on solar and geoneutrinos."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A specific example has to name the actual elements that are irrationally juxtaposed, and A does: a young couple, a boat made of leaves, and a vast celestial space in Vagabonds. D names the work but doesn't say what is juxtaposed, C gives a general definition, and B misquotes Posada.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Felipe Posada (pseudonym The Invisible Realm) is a New York City-based artist who specializes in the form of art known as surrealist collage.\n• Manifestation of the unconscious mind is a central aspect of surrealist collage.\n• Irrational juxtaposition of disparate elements is a central aspect of surrealist collage.\n• Posada's Vagabonds irrationally juxtaposes images of a young couple, a boat made of leaves, and a vast celestial space.\n• Posada: \"My art is a journey through the invisible realm a space where intuition, memories, visions, and dreams are free to take visual form.\"",
+      "prompt": "The student wants to provide a specific example of irrational juxtaposition in surrealist collage. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The corpus data show \"know\" is the eighth most common verb, which backs up the linguist's assumption that it appears often. To \"substantiate\" means to support with evidence. \"Refute\" is the opposite, and \"entail\" (to involve) and \"transpose\" (to swap) don't fit."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ederle and Rutkiewicz will always have their place in history because no one can ever replace them as the first to achieve these feats. \"Supplant\" means to take the place of. \"Stipulate\" (to specify), \"induce\" (to bring about), and \"engender\" (to give rise to) don't express replacing someone."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The probability of getting a swap line was much higher in countries open to foreign capital (0.20) than in restrictive ones (0.03), so policy environments seem to have been relevant to, or \"material to,\" the decisions. \"Decoupled from\" says the opposite. \"Predicated on\" overstates the link by implying decisions were based entirely on policy, and \"mediated by\" implies policies acted as a go-between in making the decisions."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text starts by noting researchers' broad interest in how shipwrecks affect sea life, then describes Moseley's study of two wooden wrecks, and ends with one finding: microbial diversity peaked about 125 meters away. It says nothing about the study's scholarly reception or a team's reaction (A), the Darlington's history (B), or how a ship was built (C)."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence recounts a specific event: as a boy he wrote about an imaginary trip to New York and later really went there. The next sentence treats this as an example of a general phenomenon, imagination foreshadowing reality. Yung isn't confusing fantasy and reality (A), publishing is never mentioned (B), and the focus is not a sense of adventure (D).",
+    "fix": {
+      "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America. Yung Wing was the first person from China to graduate from a US university.\n\n<u>Little did I realize when in 1845 I wrote, while in the Morrison school, a composition on \"An Imaginary Voyage to New York and up the Hudson,\" that I was to see New York in reality.</u> This incident leads me to the reflection that sometimes our imagination foreshadows what lies uppermost in our minds and brings possibilities within the sphere of realities."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence describes the shared compositions and subjects that make Highwaymen paintings recognizable. The second claims there was \"room for individuation\" and illustrates it with Al Black, whose works stand out for their bleakness and minimalism. The text never calls the works derivative (B), explains how the group formed (C), or gives historical causes of the shared style (D)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 says King's Cross is the gateway to the countryside, which stands for tradition, authentic connection, and \"the infinite,\" as opposed to materialistic London. Text 1 says the station suggests \"infinity\" and an adventure whose rewards wouldn't be measured in ordinary prosperity. So the author of Text 2 would see King's Cross as promising the non-material riches of rural life. B reverses this, treating King's Cross as a symbol of materialism invading the countryside.",
+    "fix": {
+      "passage": "Text 1 is adapted from E.M. Forster’s 1910 novel Howards End. Text 2 discusses Howards End. King’s Cross and St. Pancras are adjacent railway terminals in London from which trains travel to the countryside.\n\nText 1\nTo Margaret the station of King’s Cross had always suggested infinity. Its very situation—withdrawn a little behind the facile splendours of St. Pancras—implied a comment on the materialism of life. Those two great arches, colourless, indifferent, shouldering between them an unlovely clock, were fit portals for some eternal adventure, whose issue might be prosperous, but would certainly not be in the ordinary language of prosperity.\n\nText 2\nThe interplay between opposing ideological positions in Howards End is broadly articulated in the novel’s organization of geographic space. On the one hand, the modern metropolis of London represents capitalism’s emphasis on pragmatism and the accumulation of material wealth; on the other, the English countryside, accessible via King’s Cross, fosters an idealism that values tradition, authentic personal connection, and the aesthetic—what the novel calls \"the infinite.\""
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The whole text is about how Crowley's work has been received: he isn't as commercially famous, but influential readers like Hollander and Bloom have championed him, and Bloom reread one novel many times and praised Crowley highly. Hollander is mentioned only as a fan, not compared with Crowley (A). Bloom's claim of universal relevance is quoted, but the text never explains which features make the work relevant (B) or why sales are low (C)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A full move into the mesophotic zone (30 to 150 meters) would suit a coral already living at or near those depths. Acropora anthocercis is never found deeper than 10 meters, the shallowest maximum in the table and the farthest from 30 meters, so it seems least suited. Agaricia grahamae already reaches 115 meters, and minimum depths (A, D) don't show how deep a coral can go.",
+    "fix": {
+      "passage": "Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler darker mesophotic zone (30 to 150 meters below the surface). However it isn't clear that such species will be able to tolerate mesophotic conditions. In 2018, Hudson Pinheiro and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is _____",
+      "table": {
+        "headers": [
+          "Species",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Agaricia grahamae",
+            "20",
+            "115"
+          ],
+          [
+            "Acropora striata",
+            "10",
+            "25"
+          ],
+          [
+            "Danafungia scruposa",
+            "1",
+            "27"
+          ],
+          [
+            "Acropora anthocercis",
+            "5",
+            "10"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that thinking about time along a linear axis is not universal. If Yupno future gestures don't point the opposite way from past gestures, the Yupno aren't placing past and future at two ends of a line, which supports the claim. A doesn't rule out a line, C links Yupno to Hebrew grammar instead of showing a difference, and D is only about where gestures happen."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To show the spoiler effect varied, pick two stories with very different gaps between bars. For \"Owl Creek Bridge\" the spoiled and unspoiled ratings are nearly equal (about 4.9 vs. 5.1), while for \"A Chess Problem\" the gap is about a full point (about 6.1 vs. 7.2). The pairs in B, C, and D have gaps of similar size (about 0.7 to 0.9), so they don't show much variation."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text claims that a steady energy supply is an \"absolute prerequisite\" for powering wireless communication devices piezoelectrically. If an intermittent or unpredictable supply undermines those devices, that shows steadiness really is necessary. B says non-CFRP harvesters are enough, which cuts against the text's point, and C and D are about the CFRP electrode rather than steady energy."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Much of what ecologists know about wild-bee decline comes from bumblebees, but Ghisbain notes that bumblebees are unusual: they are social and dietary generalists, traits linked to resilience. So other wild bees may react to threats differently, and researchers should be careful when generalizing from bumblebees. A predicts future population trends the text doesn't address, B goes too far by ruling out even similar bees, and C compares two threats that aren't contrasted."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text names the bottleneck: electrons must pass through a series of inefficient redox reactions to reach the electrode. Adding highly conductive silver more than doubled the power density, so the logical hypothesis is that the silver lets electrons skip those reactions and travel straight to the electrode. The conductivity clue has nothing to do with bacterial metabolism (A) or biofilm density (B), and nothing says silver catalyzes redox reactions (D).",
+    "fix": {
+      "passage": "Microbial fuel cells (MFCs) capitalize on the ability of some species of bacteria to metabolize metal, liberating electrons. The bacteria form a dense biofilm on the surface of an electron-collecting anode, but moving the electrons from the bacterial cytoplasm to an external electrode requires that the electrons pass through a series of inefficient oxidation-reduction (redox) reactions. Accordingly, MFC power output rarely exceeds a density of 0.30 milliwatts per square centimeter (mW/cm^2). In an experiment, researchers added silver nanoparticles to carbon paper covering the anode in an MFC. The resulting power density was 0.66 mW/cm^2. Since metals such as silver exhibit high electrical conductivity, the researchers hypothesized that _____"
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The methane mole fraction affects precipitation and humidity, and Titan's real values vary in ways the sparse data can't pin down. Because the model's developers simply set one uniform value for the lowest atmosphere, the model's precipitation and humidity should sometimes disagree with reality. Nothing indicates the true value is higher (B), C wrongly says the model currently uses a range, and D blames variation inside the model, which used a single fixed value."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence needs a main verb for the plural subject \"emulsifiers,\" and \"are employed\" supplies one in the passive voice (emulsifiers are used to blend oil and water). \"Employed\" alone would mean emulsifiers do the employing, which is illogical, and \"that they employ\" and \"being employed\" are not main verbs, so the sentence would be a fragment."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the second clause, the subject \"its theoretical linguistic properties\" needs a main verb, and the plural present-tense \"reflect\" provides it. \"Having reflected,\" \"reflecting,\" and \"that reflect\" are not finite verbs, so with any of them the clause would have no main verb."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The methodology belongs to \"the technique,\" a singular noun, so the singular possessive \"its\" is correct. \"It's\" means \"it is,\" \"they're\" means \"they are,\" and \"their\" is plural, so it doesn't match \"technique.\""
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Author Jeffrey Auerbach disputes ... economic might\" is a complete sentence, and \"citing previously unpublished records ..., Auerbach makes the compelling argument ...\" is another, so a semicolon correctly separates them. A comma alone (B) makes a comma splice, and \"and\" or \"by\" (A, C) would make \"citing ...\" seem to belong to the first clause, which leaves \"Auerbach makes\" stranded without proper joining.",
+    "fix": {
+      "passage": "Author Jeffrey Auerbach disputes claims that London's Great Exhibition of 1851 was a show of Victorian-era England's economic _____ citing previously unpublished records of the exhibition's planning commission, Auerbach makes the compelling argument that the event was foremost an attempt to boost a stagnating economy, not celebrate its supremacy."
+    }
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence is complete after \"behavior,\" and a colon properly introduces the explanation of the difference. That explanation is one sentence: \"while the object P/2019 LD2 (Atlas) is considered an active centaur ..., 121725 Aphidas ... is considered dormant.\" A and C put \"The\" or \"the\" right before \"object P/2019 LD2,\" which leaves that clause unconnected to the one about Aphidas, creating a comma splice. B ties the explanation to the first sentence with only commas, which creates a run-on."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase is \"connections between [the physical location in which a social media post was created] and [the post's content],\" so no comma belongs before \"and\" in this \"between X and Y\" pair. The whole subject (\"researchers studying connections between ...\") also must not be separated from its verb \"analyzed\" by a comma. A, C, and D each add at least one of these unneeded commas."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says kyudo was not a medal sport, and the next tells what it was instead: a demonstration sport. \"Rather\" introduces a correction or alternative. \"Thus\" implies a result, \"Additionally\" adds a similar point, and \"For example\" gives an instance, so none of them fits."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Historians have figured out who wrote many pseudonymous essays, such as those by \"Publius,\" but names like \"Democritus\" and \"Obadiah Spriggins\" are still a mystery. That is a contrast, so \"though\" fits. \"Likewise\" and \"for example\" would wrongly suggest these pen names have also been identified, and \"indeed\" would just reinforce the previous point.",
+    "fix": {
+      "passage": "As can be seen in the case of \"Publius\"—a pseudonym adopted by a trio of writers that included Alexander Hamilton—historians have deduced the likely authorship of many pseudonymous political essays published in the years following the American Revolutionary War; pen names such as \"Democritus\" and \"Obadiah Spriggins,\" _____ remain as elusive as they once were to eighteenth-century audiences."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "B points out what the two programs have in common: both are slow TV documentaries that show ordinary events in real time. A and C contrast the programs' subjects and running times, and D discusses only one program, so none of them emphasizes a similarity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Documentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time.\n• Flámsbana: Minutt for Minutt (running time: 1 hour) is a Norwegian slow TV program that aired in 2010.\n• It documented a train ride from Myrdal station down to Flám.\n• Hihna 247 (running time: 12 hours) is a Finnish slow TV program that aired in 2017.\n• It documented a supermarket checkout aisle of the Prisma Kaari grocery store."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Methodology means how the study was carried out. C explains the design: the researchers tested 125 seeds that bats had eaten and 125 that they hadn't, which serves as a control. A states the study's goal, while B and D report results.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2004 study, researchers Jorge E. López and C. Vaughan wanted to explore the effects of ingestion by bats on the germination of Piper sancti-felicis seeds in Costa Rica.\n• The team of researchers tested 125 Piper sancti-felicis seeds that had been ingested by chestnut short-tailed bats.\n• Of these, 82 seeds (66%) germinated.\n• As a control, J.E. López and C. Vaughan tested 125 Piper sancti-felicis seeds that had not been ingested by chestnut short-tailed bats.\n• Of these, 88 seeds (70%) germinated."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A compares the two hypotheses directly. Fodor counts only some systems (low-level ones) as modular, while MMH counts all of them, so Fodor's view is less expansive. B only describes Carruthers's idea, C gets the difference wrong (both treat low-level systems as modular), and D wrongly says Carruthers rejected the idea of innate modules.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Modularity of mind is the notion that the mind is at least partly composed of innate neural structures (modules) that perform fast, necessary tasks.\n• 1983: cognitive scientist Jerry A. Fodor hypothesized that low-level cognitive systems (e.g., perception, language) are modular.\n• In Fodorian modularity, high-level systems (e.g., reasoning) are not modular.\n• 2003: cognitive scientist Peter Carruthers proposed the massive modularity hypothesis (MMH).\n• MMH expands modularity to include all cognitive systems."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C follows the steps in the notes: UV light images are projected into a pool of liquid resin, the object is cured layer by layer, and the finished object is baked in an oven. A says the object itself passes through the dead zone, B says curing is completed in the dead zone (it's completed in the oven), and D says the UV light solidifies, which garbles the process.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Digital Light Synthesis (DLS) is a form of additive manufacturing that utilizes light to rapidly cure liquid resin into high-quality, 3D objects.\n• Step 1: Ultraviolet (UV) light images are projected up into a pool of liquid resin, where the object's first layer takes shape.\n• Step 2: The partially cured resin object is raised, leaving a thin space (a \"dead zone\") beneath it for oxygen and liquid resin to flow through.\n• Step 3: The UV light passes through the dead zone—maintaining the flow of resin—and partially cures additional layers of the object.\n• Step 4: When the resin object is complete, it is baked in an oven to complete the curing.",
+      "choices": {
+        "A": "DLS cures 3D objects by passing through a \"dead zone,\" adding layers to the object, then curing the object in an oven.",
+        "B": "In DLS, UV light is projected into layers of liquid resin until the resin solidifies and passes through a \"dead zone,\" wherein the curing is completed.",
+        "D": "DLS is a form of additive manufacturing that creates a \"dead zone\" in which UV light solidifies layer by layer before being baked in an oven, creating a high-quality, 3D object."
+      }
+    }
+  }
+]

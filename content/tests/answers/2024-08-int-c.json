@@ -1,0 +1,566 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the book was received very well and even won an award, so the blank needs a positive action by reviewers, booksellers, and librarians. \"Recommended\" fits that praise. \"Attacked,\" \"overlooked,\" and \"misunderstood\" are all negative and contradict the book's good reception."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Seacole says nature seemed to throw every obstacle that could be imagined in travelers' way, so \"conceivable\" means \"possible.\" \"Visible\" is tempting because obstacles can be seen, but the point is how many kinds of obstacles could exist, not whether they could be seen.",
+    "fix": {
+      "passage": "The following text is adapted from Mary Seacole's 1857 autobiography Wonderful Adventures of Mrs. Seacole in Many Lands.\n\nThat journey across the Isthmus [of Panama], insignificant in distance as it was, was by no means an easy one. It seemed as if nature had determined to throw every <u>conceivable</u> obstacle in the way of those who should seek to join the two great oceans of the world."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The forests slow the rough currents and create \"calmer waters\" where animals can shelter, so the environment is peaceful, or \"tranquil.\" \"Dangerous\" is the opposite of what the text describes, and \"surprising\" and \"imaginative\" have nothing to do with calm water."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bursts from neutron-star mergers usually last under 2 seconds, yet this one lasted 200 seconds, so it was unusual, \"an oddity.\" \"An incident\" is too neutral to capture how unexpected the length was, and \"a coincidence\" or \"a reprieve\" don't make sense for a burst's duration."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first states the worry that pteropod shells will dissolve as oceans acidify, then reports Peck's findings that the periostracum protects the shell and that pteropods can even repair damage. Together these findings suggest the worry may be overstated. Choice D is tempting, but the study is about how the periostracum protects the shell, not about calcium carbonate protecting the periostracum."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text argues that copying one walkable feature of San Francisco may not make people walk more elsewhere, because walking decisions depend on many interacting conditions that researchers don't fully understand. So its purpose is to discuss how hard it is to find a reliable way to boost walking in a given city. Choice D fails because the text doesn't say how decision-making can be improved; it says our understanding of it is limited."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers concluded that the default \"no cutlery\" setting and other small app changes could cut plastic waste by up to 3.26 million metric tons a year, which is what D says. The text never predicts rising plastic waste (A), says such apps are becoming more popular (B), or links customers' understanding of apps to their choices (C)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Prospero tells Miranda that if she remembers anything from before she came to the island, she may also remember how she came there. In other words, her memory of the women who tended her suggests she might recall her arrival too. Choice A fails because Prospero confirms the memory is real (\"Thou hadst, and more\"), not a daydream.",
+    "fix": {
+      "passage": "The following text is from William Shakespeare's play The Tempest, first performed in 1611. Miranda has lived on an island with her father, Prospero, since she was three years old. Prospero has stated that Miranda likely does not remember anything other than her life on the island.\n\nMIRANDA: 'Tis far off, And rather like a dream than an assurance That my remembrance warrants. Had I not Four or five women once that tended me?\n\nPROSPERO: Thou hadst, and more, Miranda. But how is it That this lives in thy mind? What seest thou else In the dark backward and abysm of time? If thou remember'st ought ere thou camest here, How thou camest here thou mayst."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The statement asks for the average contribution per employee in wholesale trade. In the table's last column, the wholesale trade row shows $183,790. Choice A is the figure for tribal economic activity, and B and D come from the \"number of people employed\" column, not the per-employee contribution.",
+    "fix": {
+      "passage": "The Chickasaw Nation and the nearly forty other tribes in Oklahoma operate numerous businesses and collectively generate billions of dollars in revenue. Mining, including oil and natural gas production, is a key industry in the state as well. While researching other key industries in Oklahoma for an economics class, a student finds that the average amount contributed to the state's economy in 2017 by each individual employed in wholesale trade was _____.",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate total contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ],
+          [
+            "Finance/insurance",
+            "$7,281,900,000",
+            "56,163",
+            "$129,657"
+          ],
+          [
+            "Wholesale trade",
+            "$10,723,400,000",
+            "58,346",
+            "$183,790"
+          ],
+          [
+            "Administration/waste",
+            "$5,830,600,000",
+            "96,964",
+            "$60,132"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The smallest maximum depth in the table is 5 meters, for Acropora bushyensis, an Indo-Pacific species. Since 5 meters is less than 30 meters below the surface, it is in the shallow zone. Choice B is tempting because Mussa angulosa (Caribbean) also has a small maximum depth, but its 30 meters is larger than 5.",
+    "fix": {
+      "passage": "A marine biologist is researching four stony coral species in Caribbean and Indo-Pacific waters, focusing on sightings of these species in the shallow zone (less than 30 meters below the surface) and the mesophotic zone (30 to 150 meters below the surface). Consulting the table, she notes that the smallest maximum depth is located in _____.",
+      "table": {
+        "caption": "Minimum and Maximum Depths of Stony Coral Species in Caribbean and Indo-Pacific Waters",
+        "headers": [
+          "Species",
+          "Location",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Agaricia grahamae",
+            "Caribbean",
+            "20",
+            "115"
+          ],
+          [
+            "Acropora bushyensis",
+            "Indo-Pacific",
+            "0",
+            "5"
+          ],
+          [
+            "Mussa angulosa",
+            "Caribbean",
+            "5",
+            "30"
+          ],
+          [
+            "Indophyllia macassarensis",
+            "Indo-Pacific",
+            "20",
+            "25"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim has two parts: smaller areas had less congestion than very large cities, and congestion still worsened in them. The graph shows Albany-Schenectady-Troy's delay was below Philadelphia's every year, yet both bars rise from 1990 to 2000, so D supports both parts. Choice A misreads the graph (Albany was never greater than Philadelphia), and B and C give single facts that don't show a trend."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The shielding kept out all insects, so the drop in cucumber production can't be blamed on honeybees alone. If other pollinators such as squash bees were blocked too, part of the loss could be due to them, which supports the researchers' claim. Choice B is about Chinese cabbage, not the cucumber experiment."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Glossy ibises prefer deep water during breeding season, but small dark herons don't. So raising water depth should draw ibises more than herons. The other choices bring in birds that don't live in wetlands, lifespan, or reduced appeal, none of which the findings address."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The model's predictions for large-mammal populations are too high when it is applied to large forests. Beaverhead-Deerlodge is a large forest, so the model would likely overestimate its large-mammal populations. Choice A describes the flaw that applies to small forests, not large ones."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Lawmakers\" is a plain plural subject (the people who did the designating), so it needs no apostrophe. The fossil belongs to the state, so the possessive \"state's\" is required. The other choices either put an apostrophe on \"lawmakers\" or leave \"states\" without the possessive apostrophe."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both \"works\" and \"writers\" are simple plurals here; nothing belongs to them, so neither takes an apostrophe. The choices with \"work's\" or \"writer's\" wrongly turn plural nouns into possessives."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Called the chromophore\" is one tight phrase: the verb \"is called\" is directly followed by the name. Any punctuation between \"called\" and \"the chromophore\" would split the verb from its complement, so no punctuation is correct."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The phrase \"cores now number in the dozens, hundreds, or even thousands\" is an interruption that opens with a dash, so it must close with a matching dash. The sentence then continues \"so drastically ... that the once-revolutionary dual-core technology ... can be found,\" which needs \"that\" right after the closing dash. Choice C breaks the \"so ... that\" structure with a period, and D mixes a dash with a comma."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete clause, and what follows is a list of the two Black Americans it mentions. A colon correctly introduces such a list after an independent clause. A semicolon (C) needs an independent clause on both sides, and a period (A) would leave the names as a fragment."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers back to \"a given industry,\" which is singular, so \"it\" and the singular verb \"consists\" fit. \"They\" and \"these\" are plural, and \"this\" is vague about what it refers to."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says the sculpture is on the wall of a university building; the next sentence describes how it looks against that wall. \"There\" points back to that location, making the link clear. \"For instance\" is tempting, but the sentence isn't an example of the previous one, and \"However\" signals a contrast that doesn't exist."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists three steps marked \"First\" and \"Third,\" so the missing step must be marked \"Second.\" The other transitions break the numbered sequence."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to introduce Fessenden and say what he is known for. Choice B identifies him (a communications specialist who worked for Edison) and states his fame for pioneering radio technology. Choice A introduces him but leaves out what he is known for, and C and D focus on Edison or Sprague.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Thomas Edison is regarded as one of the most important inventors in US history.\n• Having received little formal schooling, Edison relied on specialist employees at his various laboratories and offices to complete the technical work for many of his inventions.\n• Reginald Fessenden was an electronic communications specialist who worked at the Edison Machine Works manufacturing company.\n• He is best known for pioneering radio technology that led to the first transmission of speech by radio.\n• Frank J. Sprague was a naval officer who worked at the Menlo Park laboratory.\n• He is best known for being the father of electric traction."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize Atitalaquia's size, the sentence should give its area, roughly 63 km², which only D does. Choice B mentions that Hidalgo has 84 municipalities, but that says nothing about how big Atitalaquia is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Atitalaquia is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is street lighting.\n• Atitalaquia covers an area of roughly 63 km².\n• Hidalgo is divided into 84 municipalities."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only choice A actually quotes Boym's words from chapter 17, and it correctly places them in her discussion of skeptics' views. Choice D refers to chapter 17's topic but includes no quotation, and B and C don't involve chapter 17 at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Future of Nostalgia is a scholarly book by literary theorist Svetlana Boym.\n• The book provides a multifaceted exploration of the concept of nostalgia.\n• Chapter 9 describes nostalgia in the city of St. Petersburg in Russia.\n• Chapter 17 discusses various skeptics' takes on the concept of nostalgia.\n• In chapter 17, Boym writes, \"The poethics of nostalgia combines estrangement and human solidarity, affect and reflection.\""
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Choice C points out something the two works share: both use acrylic paint. Choices B and D highlight differences (size and materials), and A just gives the two completion dates without drawing any similarity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Jean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings.\n• His work Untitled (Two Heads on Gold) was completed in 1982 and sold at auction in 2003.\n• Untitled (Two Heads on Gold) is composed of acrylic and oil stick on canvas and measures 10,000 square inches in area.\n• His work Jazz was completed in 1986 and sold at auction in 2020.\n• Jazz is composed of acrylic, oil, graphite, crayon, and paper collage on wood and measures 1,807 square inches in area."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Choice A names two specific words for the same sound (snoring) and contrasts them by noting they are written and pronounced very differently. Choice C names both words but only states what they share, and B is a general statement with no specific words.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Onomatopoeias are words that imitate the sounds they represent.\n• Words that represent the same sound are often written and pronounced very differently from language to language.\n• This variation is due in part to differences in how the languages are structured.\n• \"Korrrr\" is a Batak onomatopoeia that represents the sound of snoring.\n• \"Hu lu\" is a Mandarin Chinese onomatopoeia that represents the sound of snoring."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The speaker is back at a familiar place and is looking at the cliffs again, so \"behold\" means to see or \"regard\" them. \"Possess\" is tempting if you think of \"hold,\" but the speaker is observing the cliffs, not owning them.",
+    "fix": {
+      "passage": "The following text is adapted from William Wordsworth's 1798 poem Lines Written a Few Miles above Tintern Abbey.\n\nOnce again\nDo I <u>behold</u> these steep and lofty cliffs,\nWhich on a wild secluded scene impress\nThoughts of more deep seclusion; and connect\nThe landscape with the quiet of the sky."
+    }
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence explains that the sloth's disappearance likely affected other species in its food web, so its decline had effects, or \"consequences for,\" the ecosystem. \"Sources in\" and \"precedents in\" point to causes or earlier events, which the text doesn't discuss."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The blank describes standard, established forms like the short story, which are contrasted with rarer, unclassifiable \"intergeneric\" forms. \"Orthodox\" means conventional or traditional, which fits. \"Intermediate\" is tempting, but forms that fall between categories are exactly the intergeneric ones, not the familiar ones."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Although\" sets up a contrast with recent analyses that have \"sharpened our picture\" of hominid life. So our knowledge used to be unclear, or \"nebulous.\" \"Concrete\" means the opposite, and \"intricate\" suggests detailed knowledge, which wouldn't need sharpening."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first gives the common view of Nixon as famous for the Watergate scandal, then says his legacy is \"complex\" and lists achievements in tribal sovereignty and health care. That shows the common view is too simple. Choice D is tempting, but the text presents no evidence against Nixon's role in Watergate."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text introduces a survey study of park use in Panama City and Caracas, gives the results, and then considers whether better access to nonpark amenities explains Panama City's higher park use, rejecting that idea. Choice D fails because both cities are part of one study, not two studies corroborating each other."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator first makes a general claim: on a boat, each crew member thinks he is doing all the work. He then supports it with the specific views of Harris and George on this trip. Choice A fails because the narrator says he has \"always noticed\" this, so it isn't unexpected.",
+    "fix": {
+      "passage": "The following text is from Jerome K. Jerome's 1889 novel Three Men in a Boat (To Say Nothing of the Dog). The narrator and two friends are taking a boat down the River Thames in England.\n\nIn a boat, I have always noticed that it is the fixed idea of each member of the crew that he is doing everything. Harris's notion was, that it was he alone who had been working, and that both George and I had been imposing upon him. George, on the other hand, ridiculed the idea of Harris's having done anything more than eat and sleep, and had a cast-iron opinion that it was he—George himself—who had done all the labour worth speaking of."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Lorde argues poets can write between shifts, so earning a living another way doesn't stop them. Text 2 says serious poetry takes time that people with full-time jobs often lack, so financial security shapes who becomes a poet. They would disagree on whether a full-time job is a major obstacle to poetry. Choice A is something both would likely agree on, since neither denies that other arts need time and money.",
+    "fix": {
+      "passage": "Text 1\nThe poet Audre Lorde once claimed that poetry is the most inexpensive of art forms to practice. While people who pursue other art forms—painting, architecture, theater—require large blocks of uninterrupted time as well as money to complete their work, poets can write, as Lorde said, \"between shifts, in the hospital pantry, on the subway, and on scraps of surplus paper.\" So poets can practice their art even if they must earn their living in another way.\n\nText 2\nAny assessment of the state of contemporary poetry must reckon with the professionalization of the field. While it is possible in theory for anyone to publish in Virginia Quarterly Review, Kenyon Review, or a similar major poetry outlet, many people who do so have professional training in poetry and extensive practice writing it, which requires time not often available to those who must also work full-time jobs. Thus, financial security indirectly affects which people become poets."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Emerson says scholars stand for the \"spiritual interest of the world\" and that it would be a calamity for them to neglect that role in a country as focused on material interest as America. So the main idea is that in a materialistic country, some people must keep ideas alive. Choice B fails because Emerson doesn't say scholars are materialistic; he warns about what happens if they neglect their post.",
+    "fix": {
+      "passage": "The following text is from Ralph Waldo Emerson's 1841 essay The Method of Nature.\n\nThe scholars are the priests of that thought which establishes the foundations of the earth. No matter what is their special work or profession, they stand for the spiritual interest of the world, and it is a common calamity if they neglect their post in a country where the material interest is so predominant as it is in America."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text praises The Fifty-Year Mission as a comprehensive, \"unique and valuable resource\" but says it lacks a unifying authorial point of view. Choice D captures both the praise and the limitation. Choice B is tempting, but the flaw named is the missing point of view, not missing information about key events."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With large vortices, intermediate-headed fish feel strong pressure at the snout while wide-headed fish feel little, so the hypothesis predicts intermediate-headed fish should avoid obstacles better. If the intermediate-headed dusky smooth-hound bumped into obstacles just as often as the wide-headed fish, that prediction fails. Choice C actually supports the hypothesis, since the low-pressure wide-headed fish did worse.",
+    "fix": {
+      "passage": "Water flowing around an obstruction creates vortices (swirls) that vary in size with the obstruction's size and position, and fish sense these vortices in order to navigate around the obstructions. Using models of three fish-head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao showed that as vortex size increases, pressure fluctuations at the snout increase for narrow-headed and intermediate-headed fish but remain low for wide-headed fish. A second research team has therefore hypothesized that in low visibility, a fish will be more likely to avoid an obstruction when the associated pressure fluctuations at the fish's snout are greater."
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After A. sicearae infection, type A flies (DptA silenced, DptB working) stay near 90% survival, while type B and AB flies (DptB silenced) fall to about 0%. So DptB, not DptA, protects against this bacterium, and since P. rettgeri resistance depends on DptA instead, DptB may have evolved as a specific defense against A. sicearae. Choice A reverses the roles, and D fails because flies with only DptB survive just as well.",
+    "fix": {
+      "passage": "In a study of the evolution of DptA and DptB—Diptericin genes encoding antimicrobial peptides that combat pathogens and foster beneficial microbes in fruit flies (Drosophila)—researchers assessed Drosophila melanogaster resistance to pathogenic infections by Providencia rettgeri and Acetobacter sicearae, bacteria common in the flies' environments. Subjects included flies identified by mutations silencing DptA, DptB, or both DptA and DptB (termed types A, B, and AB, respectively). In conjunction with the observation that resistance to P. rettgeri correlates with DptA activity but is not significantly affected by DptB activity, data in the graph of survival rates post-A. sicearae infection suggest that _____"
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Older dogs have had more exposure to language. If the gap between their brain responses to the familiar and unfamiliar language is greatest in older dogs, then more exposure goes with better distinguishing familiar from unfamiliar languages. Choice A shows dogs can tell the languages apart but no link to amount of exposure, and D compares speech to scrambled noise rather than two languages.",
+    "fix": {
+      "passage": "Neurobiologists Laura Cuaya, Raúl Hernández-Pérez, and colleagues investigated the language detection abilities of eighteen dogs raised in similar settings. The researchers monitored the brain activity of Barney (a golden retriever), Mini (a mixed breed), and other dogs while the animals listened to three recordings: one of The Little Prince being read in Spanish, the second in Hungarian, and a third made up of short, randomly selected fragments of the first two, scrambled so that they didn't resemble human speech. Each dog was familiar with either Spanish or Hungarian, but not both. The team concluded that the amount of previous language exposure a dog has received may influence its ability to distinguish familiar languages from unfamiliar ones."
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The research says red can make people respond with caution and hesitation, and Manchester United wears mainly red at home. If that applies to sports, the red uniforms may have made opponents hesitant and hurt their play. Choice C fails because red is linked to seeing the wearer, not the opponents, as dominant."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because white-throated sparrows' hormone levels depend strongly on their surroundings, it makes sense that captive and wild sparrows would show different hormone levels, as D states. Choice B says the opposite, and A is about degus rather than sparrows."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Vitamin D levels keep rising with UVB and don't level off even at the highest local UVB, which means the chimpanzees never reach their maximum production. So they are making less vitamin D than they could with more UVB. Choice D contradicts this, since extra vitamin D would likely help animals that are not getting enough.",
+    "fix": {
+      "passage": "Exclusively inhabiting tropical countries such as Liberia, wild chimpanzees lack adaptations to seasonal variations in ultraviolet B (UVB) irradiance from sunlight; since UVB exposure enables vertebrates to synthesize vitamin D, this raises questions about how chimpanzees in mid-latitude zoos are affected by the lower and more variable UVB irradiance in those locations. In a study of zoo chimpanzees in Norway and other mid-latitude countries, Sophie Moittié and colleagues found not only that chimpanzees' vitamin D levels correlate with UVB irradiance but also that vitamin D levels show no evidence of plateauing as UVB irradiance reaches its highest local levels, suggesting that _____."
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first clause says divergent strategies emerged, and the clause after the blank explains what those strategies were. A colon correctly joins an independent clause to one that explains it. A comma alone (C) would create a comma splice, and no punctuation (B) or \"and\" (A) runs the clauses together incorrectly."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Novelist\" is a title placed directly before the name, so \"novelist Stephen Graham Jones\" works as one unit with no commas. Also, the phrase \"to craft the entry\" belongs to the verb, so no comma should separate it from the name."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"accomplishments,\" which is plural, so the verb must be plural: \"attest.\" The phrase \"of Goldin, winner of the 2023 Nobel Prize...\" sits between subject and verb and can make the singular forms (\"attests,\" \"has attested,\" \"is attesting\") seem right."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the comma, \"its vehicles highly prized by collectors...\" is an absolute phrase that adds detail to the main clause, so it needs a participle, not a full verb. Choices B, C, and D add a finite verb, which would create a second independent clause joined only by a comma (a comma splice)."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Finland\" identifies which fellow OECD member nation is meant, so it is essential information and takes no punctuation: \"fellow OECD member nation Finland.\" Choices A, B, and C set Finland off as if it were extra information, which isn't right in this construction."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"had ... been essentially gathering dust,\" so \"much admired during his lifetime ... and in the decades that followed\" must be a nonessential phrase set off by commas. A comma after \"works\" opens it, matching the comma after \"followed.\" Choices B, C, and D add another verb (\"were,\" \"had been\"), giving the subject two main verbs."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the change was driven by demand for \"certain grains\"; the next sentence names those grains, maize and wheat. \"In particular\" signals that move from general to specific. \"By comparison\" and \"alternatively\" suggest contrasts the text doesn't make."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence says not every element was isolated soon after discovery; for those elements, the isolation process frequently took a few years, as the molybdenum example shows. \"Often\" correctly describes how commonly this delay happened. \"Even so\" signals a contrast, and \"similarly\" would wrongly compare these elements to quickly isolated ones like phosphorus."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "The previous sentence explains that the Roman numerals show the order in which moons were named, not their distance from Jupiter. The final sentence draws a conclusion from that: so it's wrong to assume Eirene is the 57th moon from the planet. \"Then\" (meaning \"therefore\") signals this conclusion. \"However\" would signal a contrast, but the last sentence follows from, rather than contradicts, the one before it.",
+    "note": "PDF says C (however); the last sentence is a conclusion drawn from the previous sentence, so 'then' (D) is the logical transition."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the publication year, and only D states that The Canon of Medicine was published in 1025 CE. The other choices describe the book or its author but never give a date.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Ibn Sina was a Persian philosopher and physician.\n• His book The Canon of Medicine recorded the most advanced medical knowledge of his time.\n• It was published in the year 1025 CE.\n• It was used as a medical textbook in Middle Eastern and European universities for centuries."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An overview of the program should describe the refuges as a whole, and A does this: more than 500 refuges protecting endangered species from coast to coast. Choices B, C, and D focus on one or two specific refuges, which are details rather than an overview.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• There are more than 500 National Wildlife Refuges (NWRs) across the United States.\n• The Crocodile Lake NWR is a 6,686-acre area in Florida, on the Atlantic coast.\n• It was established to protect the endangered American crocodile.\n• The Nestucca Bay NWR is a 457-acre area in Oregon, on the Pacific coast.\n• It was established to protect the endangered Aleutian Canada goose.",
+      "choices": {
+        "A": "The US's more than 500 NWRs protect endangered species from coast to coast.",
+        "D": "One of more than 500 NWRs in the US, the Crocodile Lake NWR encompasses 6,686 acres in Florida."
+      }
+    }
+  }
+]

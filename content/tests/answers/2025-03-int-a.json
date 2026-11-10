@@ -1,0 +1,1173 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon explains the blank: Lecuona worked in many different areas, from orchestral pieces and operas to film scores, so his body of work is \"varied.\" Nothing in the text says his music is out of date or forgotten, so \"outdated\" and \"forgotten\" don't fit."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The delta is described as \"constantly evolving,\" with channels and land that keep changing size and shape, so \"dynamic\" (always changing) fits. \"Immutable\" means unchanging, the exact opposite, and \"sustainable\" and \"unrivaled\" aren't supported by the description."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "She was supposed to memorize the piece, but instead she played a few bars and then looked ahead at the music to see what notes came next. \"Cheating\" means breaking that expectation about how she should practice and learn the piece. Nothing suggests she gained an edge over other contestants (B) or deceived a teacher (C).",
+    "fix": {
+      "passage": "The following text is from Amy Tan's 1989 novel The Joy Luck Club. The narrator describes practicing the piano when she was a child.\n\nFor the talent show, I was to play a piece called \"Pleading Child\" from Schumann's Scenes from Childhood. It was a simple, moody piece that sounded more difficult than it was. I was supposed to memorize the whole thing, playing the repeat parts twice to make the piece sound longer. But I dawdled over it, playing a few bars and then cheating, looking up to see what notes followed. I never really listened to what I was playing. I daydreamed about being somewhere else, about being someone else.\n\n©1989 by Amy Tan"
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Adam offers to let his great-uncle stay on board and says he'll be ready to go anywhere at any time; this \"affectionate willingness\" wins the old man's heart and they become almost like old friends. So the text shows how Adam's flexibility and consideration strengthen their bond. Only Richard is invited to stay the night (B), and nothing shows Richard was wary of Adam at first (D).",
+    "fix": {
+      "passage": "The following text is from Bram Stoker's 1911 novel The Lair of the White Worm. Adam is meeting his great-uncle Richard at a port.\n\nThe meeting so auspiciously begun proceeded well. Adam, seeing that the old man was interested in the novelty of the ship, suggested that he should stay the night on board, and that he would himself be ready to start at any hour and go anywhere that the other suggested. This affectionate willingness to fall in with his own plans quite won the old man's heart. He warmly accepted the invitation, and at once they became not only on terms of affectionate relationship, but almost like old friends."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Earlier the text says horizontal gene transfer \"has rarely been observed\" in eukaryotes; the underlined sentence, starting with \"However,\" reports new studies suggesting it is more common than thought. That signals the usual belief may be wrong. The distinction between horizontal and vertical transfer (B) was made in the first sentence, not the underlined one.",
+    "fix": {
+      "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. While horizontal gene transfer is common among prokaryotes—single-celled organisms such as the bacteria Carnobacterium viridans and Moraxella caviae—it has rarely been observed among eukaryotes (typically multicellular organisms). <u>However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought</u>."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most of the text explains why Harold Bloom praises Little, Big: it blends Schiller's naive and sentimental modes, showing a work can be both. So the purpose is to give a reason a critic admires a novel. Choice D gets it backwards: the text says the novel shows a work does not have to fall into just one category."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator says she was never \"so aware of entering a new stage\" as when she stepped into the empty apartment, with a complicated past behind her and an open space ahead. The main idea is that she sees this moment as a turning point. She actually says she often wasn't ready for life's twists, so B is wrong, and no business is mentioned (A).",
+    "fix": {
+      "passage": "The following text is from a translation of Maria Dueñas's 2009 novel The Time in Between. The narrator has just rented an apartment and is entering it for the first time.\n\nOver the years there have been many times when my destiny has delivered me unexpected moments, unforeseen twists and turns that I've had to handle on the fly as they appeared. Occasionally I was ready for them; very often I wasn't. Never, however, was I so aware of entering a new stage as I was that afternoon in October when I finally dared to cross the threshold and my steps sounded hollowly in the unfurnished apartment. Behind me was a complicated past, and in front of me, like an omen, I could see a space opening out, a great empty space that time would take care of filling up.\n\n©2009 by Maria Dueñas. ©2011 Translation by Haniel Haha."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Martian sand and dust clog filters and jam moving parts, and simulants help scientists \"evaluate how well their devices will handle the surface.\" So simulants let them test equipment against conditions it will face on Mars. The text never says simulants are used to compare Mars with Earth (B) or to test terrain on Earth (C)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the house became faded over time. Choice C says the house was once painted, but sun and rain wore the paint away until it was \"dull and gray.\" Choice D also mentions gray, but it describes the prairie, not the house."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The student needs a country with a large population but low density compared with a country with a small population but high density. Angola has 25,022,000 people and a density of 20.1, while São Tomé and Príncipe has only 190,000 people but a density of 189.8. Choice C compares densities, not populations, and the table has no 2010 data (D).",
+    "fix": {
+      "passage": "As the second-most populous continent in the world, Africa was home to an estimated 1.186 billion people in 2015. In a paper for a social studies class, a student nonetheless notes that countries with very large populations may be less densely populated than are countries with much smaller populations, as can be seen by comparing _____",
+      "table": {
+        "headers": [
+          "Country",
+          "Density (inhabitants/km²)",
+          "Area (km²)",
+          "Estimated population"
+        ],
+        "rows": [
+          [
+            "São Tomé and Príncipe",
+            "189.8",
+            "1,001",
+            "190,000"
+          ],
+          [
+            "Ethiopia",
+            "88.2",
+            "1,127,127",
+            "99,391,000"
+          ],
+          [
+            "Mauritania",
+            "3.9",
+            "1,030,700",
+            "4,068,000"
+          ],
+          [
+            "Angola",
+            "20.1",
+            "1,246,700",
+            "25,022,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To weaken the claim, we need a country whose growth rate was lower after joining an FTA. Nicaragua's bar is about 23% before and about 17% after CAFTA-DR, so its growth slowed. Choices C and D describe countries whose growth rose after joining, which supports the claim instead."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says a planet without an atmosphere can get so hot that magma oceans form, and the table's temperatures come from a model that assumes no atmosphere. So if HD 80653 b had an atmosphere, its surface would be cooler than the modeled 2,300 kelvins. Nothing supports exactly 1,400 kelvins (B), and an atmosphere wouldn't change the planet's mass (A, C).",
+    "fix": {
+      "passage": "If a planet orbits in close proximity to a star and lacks an atmosphere, the planet can become so hot that magma oceans form on its surface. For three planets that could plausibly harbor magma oceans, the table shows mass, density (expressed as the ratio of the material's volume at its current density to its maximum possible density, with higher numbers indicating lower densities), and surface temperature according to a model that assumes the absence of atmosphere.",
+      "table": {
+        "caption": "Three Candidate Lava Worlds, by Modeled Mass, Density, and Surface Temperature",
+        "headers": [
+          "Planet",
+          "Mass (Earth masses)",
+          "Density ratio",
+          "Temperature (kelvins)"
+        ],
+        "rows": [
+          [
+            "HD 80653 b",
+            "5.6",
+            "7.4",
+            "2,300"
+          ],
+          [
+            "Kepler-10 b",
+            "3.6",
+            "6.0",
+            "2,130"
+          ],
+          [
+            "K2-265 b",
+            "0.8",
+            "7.1",
+            "1,400"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion has two parts: exercise training worked better, but this took time to show. At 12 weeks the losses were close (268 vs. 282), but by 12 months EET fell to 171 while EHP rose to 436. Choice A is wrong because EET's loss dropped a lot, not \"barely,\" and C is wrong because the gap grew rather than shrank.",
+    "fix": {
+      "passage": "Michelle Pereira et al. hypothesized that introducing health improvements into workplaces would increase productivity by reducing absenteeism (sick employees not working) and presenteeism (sick workers working less productively due to illness). Pereira's team enrolled groups of Australian workers in two programs; one that gave employees exercise training (EET) and one that enrolled employees in health promotion seminars (EHP). They then calculated the productivity loss of those groups at 12 weeks and 12 months after the programs began (based on the 28 days preceding each point). They concluded that exercise training was more effective at restraining productivity loss than health promotion seminars were, though this result took time to become apparent.",
+      "table": {
+        "caption": "Average Monetized Productivity Loss at Two Points After Programs Began, in Australian Dollars",
+        "headers": [
+          "Type of training",
+          "12 weeks",
+          "12 months"
+        ],
+        "rows": [
+          [
+            "EET",
+            "268",
+            "171"
+          ],
+          [
+            "EHP",
+            "282",
+            "436"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined claim is that sannin zukai puppeteers can no longer make the work a full-time career. If today's remaining sannin zukai troupes are mostly amateurs with other jobs as their main income, that directly backs this up. Choice B would weaken the claim by suggesting costs came down, and A and C are about kuruma ningyo, not about careers.",
+    "fix": {
+      "passage": "Ningyo joruri is a form of theater that was popular in eighteenth-century Japan and that unites puppetry with playing of the shamisen, a stringed musical instrument. The popularity of ningyo joruri was due to a puppetry method called sannin zukai, in which three puppeteers operated a single puppet that was large, detailed, and capable of extensive movement and nuanced emotional expression. <u>Over the ensuing centuries, audience interest in ningyo joruri began to decline and sannin zukai became prohibitively expensive to mount, so that sannin zukai puppeteers could no longer make the profession a full-time career.</u> Eventually, ningyo joruri productions resorted to cheaper forms of puppetry, such as kuruma ningyo, which involves only one puppeteer."
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers back to two cities, Pontianak and Manta, and modifies the plural noun \"cities,\" so the plural \"these\" is needed. \"This\" and \"that\" are singular, and \"each\" would need the singular \"city\" and \"sits.\""
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The drawing was made \"nearly 150 years ago,\" a finished action in the past, so the simple past \"completed\" is correct. \"Is completing\" and \"will complete\" put the action in the present or future, and \"has been completing\" suggests it is still going on."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Currently\" tells us the sentence describes the present, and the singular subject \"range\" takes the present-tense verb \"includes.\" The other choices (\"had included,\" \"will have included,\" \"included\") put the action in the past or future."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence ending in \"several ways,\" and what follows is a list of those ways (\"by exchanging..., by linking..., and by maintaining...\"). A colon correctly introduces such an explanation or list. A period or semicolon (A, C) would leave the \"by...\" phrases as a fragment, and D puts the colon in the wrong place."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"British artist\" is a title-like description directly before the name Chris Killip, and it is needed to identify him, so no punctuation goes between them. A comma, dash or semicolon would wrongly split \"artist\" from the name it describes."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb, \"shows,\" for the subject \"macroanalysis.\" So the blank must start a modifying phrase describing the macroanalysis: \"examining nearly 1,000 book titles.\" A finite verb like \"examines\" or \"examined\" would give the subject two main verbs with nothing joining them."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence stresses how simple the method was (a cardboard cutout and string), and the next says it nonetheless gave a close result. \"Still\" signals this contrast with what you'd expect. \"Similarly\" and \"In other words\" wrongly suggest agreement or restatement."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Theory says a ring outside the Roche limit should clump into a moon, but Morgado's team found a ring well outside Quaoar's limit that stayed intact. This contrasts with the expectation, so \"though\" fits. \"For example\" and \"likewise\" would wrongly present the finding as supporting the rule."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says these amphibians migrate during the day; the next explains what happens then, with the sun in the sky, when their bright colors warn predators. \"At that time\" points back to the daytime. \"However\" signals a contrast that isn't there, and the second sentence isn't an example (D)."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to stress where the two rivers are, and B names both locations, Africa and Asia, and contrasts them with \"whereas.\" The other choices give length or rank and mention only one river.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Niger River is the third longest river in Africa.\n• It ranks No. 14 among the longest rivers in the world.\n• It is 4,200 kilometers long.\n• The Indus River is the ninth longest river in Asia.\n• It ranks No. 19 among the longest rivers in the world.\n• It is 3,610 kilometers long."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain what national union federations are for. The notes say the MTUC, a national union federation, helps improve conditions for workers, and C turns that into the general purpose. Choices A and B only classify the MTUC, and D describes regional federations instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mauritius Trade Union Congress (MTUC) is a national union federation for the African nation of Mauritius.\n• It helps improve conditions for workers in that nation.\n• ITUC-Africa is a regional union federation that represents national union federations across Africa.\n• It represents the MTUC."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize size, the sentence must give Tepeapulco's area, and D does: roughly 243 km². Choice C mentions the number of municipalities in Hidalgo, which says nothing about how big Tepeapulco is, and A and B are about public services.",
+    "fix": {
+      "passage": "• Tepeapulco is a municipality in the state of Hidalgo, Mexico.\n• Municipalities provide many public services (e.g., water treatment). Tepeapulco covers an area of roughly 243 km².\n• Hidalgo is divided into 84 municipalities."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say Pipterus albidus is native and Psidium cattleianum is non-native, and B states exactly that difference. Choice D is about what the two plants have in common (both were found in bird samples), and C describes the study, not the plants.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Most plant and bird species in Oahu, Hawaii, are non-native.\n• A 2019 study examined non-native birds’ role in seed dispersal.\n• Researchers catalogued seeds found in fecal samples from non-native birds.\n• Pipterus albidus is a native species catalogued.\n• Psidium cattleianum is a non-native species catalogued.\n• Researchers concluded non-native birds disperse seeds of both native and non-native plants."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text contrasts how Unamuno's work is seen today (\"not... especially controversial\") with how it may have struck readers of his own time. The blank needs the opposite of uncontroversial, so \"provocative\" fits. \"Irrefutable\" and \"irrelevant\" don't set up that contrast."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Volunteers share digitized magazine excerpts with the project, and those excerpts help identify the first uses of terms. Something given to a shared project is a \"contribution.\" The excerpts aren't arguments (\"justifications\") or agreements reached by bargaining (\"negotiations\")."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The shortcoming was a narrow focus on a few Western countries, caused partly by limited data. Once researchers got records from countries like India and Hungary, they could reduce that problem, so \"mitigate\" (lessen) fits. \"Validate\" would mean confirming the shortcoming was right, which makes no sense here."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The odds of getting a swap line were 0.20 in countries open to foreign capital but only 0.03 in restrictive ones, so policy environments mattered to the decisions: they were \"material to\" them. \"Decoupled from\" says the opposite. \"Predicated on\" overstates it, since the data show a strong link, not that decisions were based entirely on policy."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens with researchers' broad interest in how shipwrecks affect sea life, then describes Mugge's study placing wood samples near two wrecks, and ends with a finding about peak microbial diversity around 125 meters. That matches A. The Lartington is only mentioned in passing, so B and C misdescribe the text, and no reaction to the study is described (D)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Arnold sets up the Times's view that everyone should do as he likes, then says culture instead works to bring people closer to what is truly beautiful and to make them like it. The point of the text is this claim about what culture does. The English are only the starting example, so D misses the main purpose, and nothing is said about opinions changing over time (C).",
+    "fix": {
+      "passage": "The following text is adapted from Matthew Arnold's 1869 nonfiction book Culture and Anarchy.\n\nThe Times [a British newspaper], replying to some foreign strictures on the dress, looks, and behaviour of the English abroad, urges that the English idea is that every one should be free to do and to look just as he likes. But culture indefatigably tries, not to make what each raw person may like, the rule by which he fashions himself; but to draw ever nearer to a sense of what is indeed beautiful, graceful, and becoming, and to get the raw person to like that."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Madhusudhan et al. placed K2-18 b at the inner edge of a habitable zone starting around 1 AU. Tsai et al. argue that hydrogen-rich atmospheres let in light that heats the surface and evaporates water, pushing the inner edge out to 3.85 AU, so K2-18 b would be too close and too hot to keep liquid water. Choice A reverses this: the problem is being too close, not too far."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Barragán's later houses have \"unadorned geometric forms\" that contrast with earlier Guadalajara projects like the Calle Liceo house, which show traditional Mediterranean and Mexican styles. So that house reflects a style of ornament and shape he later moved away from. Choice B describes his later work after the 1930s travels, not this earlier house.",
+    "fix": {
+      "passage": "Mexican architect Luis Barragán's work, which spanned the 1920s to the 1980s, evolved through distinct phases. After traveling to the United States and Europe in the early 1930s and immersing himself in a broader architectural discourse, Barragán began incorporating principles derived from functionalism and modernism in his work, as seen in the houses in Avenida Parque Mexico, whose unadorned geometric forms contrast with his earlier projects in Guadalajara, such as the house in Calle Liceo, which evince the aesthetics of traditional Mediterranean and Mexican styles.",
+      "prompt": "Information in the text best supports which statement about the design of the house in Calle Liceo?"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The mesophotic zone starts at 30 meters, so the coral least suited to moving there is the one whose deepest range is farthest above 30 meters. Astreopora expansa reaches only 15 meters, the shallowest maximum in the table. Scolymia lacera (B) already goes down to 80 meters, and D misreads Heliofungia's 3 meters, which is its minimum depth.",
+    "fix": {
+      "passage": "Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler, darker mesophotic zone (30 to 150 meters below the surface). However, it isn't clear that such species will be able to tolerate mesophotic conditions. In 2018, Luiz Rocha and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is _____",
+      "table": {
+        "caption": "Minimum and Maximum Depths of Stony Coral Species in Caribbean and Indo-Pacific Waters",
+        "headers": [
+          "Species",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Acropora echinata",
+            "8",
+            "25"
+          ],
+          [
+            "Astreopora expansa",
+            "5",
+            "15"
+          ],
+          [
+            "Heliofungia fralinae",
+            "3",
+            "27"
+          ],
+          [
+            "Scolymia lacera",
+            "10",
+            "80"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The finding is that bulkheads hurt waterbird community integrity more than riprap does. Choice C compares a bulkhead-heavy site (Old Road) with a riprap-heavy site (Miles) and shows lower scores at the bulkhead site, which illustrates this directly. Choice D lumps bulkheads and riprap together, so it can't show which one matters more."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that steady energy loads are an \"absolute prerequisite\" for powering wireless devices this way. If an intermittent or unpredictable supply makes those devices work poorly, that shows why steadiness is required. Choice A is about non-CFRP harvesters and doesn't address steadiness, and B just says the CFRP harvester is sufficient without showing why steady power is needed."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The student wants the most striking difference in units sold. Game & Watch sold about 18,600,000 units and ColecoVision only about 2,000,000, the largest gap in the table, and both numbers are correct. Choices B and D give numbers that don't match the table, and C's gap (4 million vs. 3 million) is small.",
+    "fix": {
+      "passage": "A student is writing a research paper on the global rise of the home video game industry during the 1970s and 1980s. The student is surprised by differences in the number of units sold by some systems compared to those sold by others. Most remarkably, the _____",
+      "table": {
+        "headers": [
+          "System",
+          "Manufacturer",
+          "System type",
+          "Approximate number of units sold worldwide"
+        ],
+        "rows": [
+          [
+            "ColecoVision",
+            "Coleco",
+            "console",
+            "2,000,000"
+          ],
+          [
+            "Intellivision",
+            "Mattel",
+            "console",
+            "3,000,000"
+          ],
+          [
+            "MSX",
+            "ASCII Corp.",
+            "computer",
+            "4,000,000"
+          ],
+          [
+            "Game & Watch",
+            "Nintendo",
+            "handheld",
+            "18,600,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text lists several obstacles in last-mile delivery (time pressure, inefficient routes) and says new fixes like robots have had limited success because they bring new problems. The logical result is that companies probably won't overcome these obstacles soon. Choice A claims robots can meet expectations now, but the text says they are slow and of limited success."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The bottleneck is the chain of inefficient redox reactions that electrons must pass through. Adding highly conductive silver more than doubled the power density, so the likely hypothesis is that silver lets electrons skip those reactions and go straight to the electrode. Choice A credits the bacteria's metabolism, which has nothing to do with the silver's conductivity.",
+    "fix": {
+      "passage": "Microbial fuel cells (MFCs) capitalize on the ability of some species of bacteria to metabolize metal, liberating electrons. The bacteria form a biofilm on the surface of an electron-collecting anode, but moving the electrons from the bacterial cytoplasm to an external electrode requires that the electrons pass through a series of inefficient oxidation-reduction (redox) reactions. Accordingly, MFC power output rarely exceeds a density of 0.30 milliwatts per square centimeter (mW/cm^2). In an experiment, researchers added silver nanoparticles to carbon paper covering the anode in an MFC. The resulting power density was 0.66 mW/cm^2. Since metals such as silver exhibit high electrical conductivity, the researchers hypothesized that _____"
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Guédron's team found no carbon–mercury link in wastewater-affected waters, which led some to think the link exists only in undisturbed waters. But Tjerngren's team found the link in waters disturbed by urban development, so human disturbance doesn't always erase it. That means wastewater's effect can't be taken as typical of all disturbances. Nothing in the text compares methods (B) or how many water bodies are affected (C).",
+    "fix": {
+      "passage": "Many studies have found a positive association between levels of dissolved organic carbon and mercury in bodies of fresh water undisturbed by human activity. But Stéphane Guédron, Delphine Tisserand, and colleagues did not find this correlation in an examination of freshwater bodies impacted by wastewater, leading some scientists to hypothesize that the association could be particular to undisturbed waters. However, Ida Tjerngren and colleagues carried out a study on freshwater bodies disturbed by urban development that showed similar results to the studies on undisturbed waters, suggesting that _____"
+    },
+    "note": "Source text reads 'distributed by human activity' and 'ditributed by urban development'; fixed to 'undisturbed'/'disturbed' as the logic requires."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Real data on Titan's methane mole fraction are too sparse to pin down, so the model's developers simply assumed one uniform value at the lowest level. Because precipitation and humidity depend on that fraction, the model's simulations will sometimes differ from what actually happens on Titan. Choice A claims the real value is higher, which the text gives no basis for."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"That often incorporate words or phrases...\" is a restrictive clause describing the scribbles, so no punctuation should separate it from \"scribbles.\" A semicolon or period (A, D) would leave \"that often incorporate...\" as a fragment, and a colon (C) can't introduce a clause like this."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Proto-Atlantic-Congo language,\" so it takes the singular verb \"is.\" The comma after the verb opens the interrupting phrase \"like all protolanguages,\" which closes before \"hypothetical.\" \"Were\" and \"are\" are plural, and \"have been\" is plural too."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Revealing how...\" is a participial phrase that adds information about the main clause, so it should be set off with a comma. A period or semicolon (A, B) would make \"revealing how...\" a fragment, and no punctuation (D) runs the phrase into \"century.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first clause is complete and ends with \"striking differences in behavior\"; what follows explains those differences, so a colon fits. After the colon, \"while the object 39P/Oterma is... active..., 83982 Crantor... is considered dormant\" is a complete sentence. Without \"while\" (B, D), the two clauses about Oterma and Crantor are joined only by a comma, a comma splice; C attaches the \"while\" clause to the first sentence and leaves the Crantor clause spliced on with a comma."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"offers,\" with the subject \"Such a compensatory measure.\" The blank must begin a phrase describing the measure: \"counteracting the organelle's decline.\" A finite verb like \"counteracts\" or \"counteracted\" would give the subject two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the blank is the plural \"musings\" (not \"book\" or \"life\"), so it needs the plural verb \"fascinate.\" \"Has fascinated,\" \"is fascinating\" and \"fascinates\" are all singular."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence gives steps in order: \"first consider\" one painting, then compare it with a second. \"Next\" continues that sequence. \"Instead\" and \"still\" signal contrast, and \"therefore\" signals a result, which don't fit a list of steps."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bryan opposed the Constitution and its powerful central government, and his essays attacked the federalists who supported it. The essays are just what you'd expect from someone with his views, so \"fittingly\" works. \"Nevertheless\" signals a contradiction, and \"in other words\" would mean the essays restate the first clause, which they add to instead."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization should say something about the archive as a whole. Since it holds a stamp from the 1800s and a stickball collar from 2016, it is fair to conclude that not all of its artifacts are from the 1800s. Choices A, B and D each state a single detail about one item.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hina Hanta is an online archive curated by the Choctaw Nation of Oklahoma.\n• It features images of cultural artifacts related to the history of the Choctaw people.\n• It features household items, including a stamp (isht inchurwa in Choctaw) made from rubber.\n• The stamp was made in the 1800s.\n• Hina Hanta features sports apparel, including a stickball collar (innuchi) made from horsehair.\n• The stickball collar was made in 2016."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Fodor saw only low-level systems like perception and language as modular, while Carruthers's MMH makes all cognitive systems modular. Choice C states this contrast in scope. Choice A only reports what Carruthers proposed without contrasting it, and B is wrong because both thinkers accept innate modules.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Modularity of mind is the notion that the mind is at least partly composed of innate neural structures (modules) that perform fast, necessary tasks.\n• 1983: cognitive scientist Jerry A. Fodor hypothesized that low-level cognitive systems (e.g., perception, language) are modular.\n• In Fodorian modularity, high-level systems (e.g., reasoning) are not modular.\n• 2003: cognitive scientist Peter Carruthers proposed the massive modularity hypothesis (MMH).\n• MMH expands modularity to include all cognitive systems."
+    },
+    "note": "Choice D is the placeholder 'irrelevant' in the original paper as well; a real distractor is missing."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to describe how DLS cures objects, and C follows the notes: UV light images are projected into a resin pool, curing the object layer by layer, and then it is baked in an oven. Choice A wrongly says the object passes through the dead zone, and B says curing is completed in the dead zone, when the notes say the oven finishes it.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Digital Light Synthesis (DLS) is a form of additive manufacturing that uses light to rapidly cure liquid resin into high-quality, 3D objects.\n• Step 1: Ultraviolet (UV) light images are projected up into a pool of liquid resin, where the object’s first layer takes shape.\n• Step 2: The partially cured resin object is raised, creating a thin space (a “dead zone”) beneath it for oxygen and liquid resin to flow through.\n• Step 3: UV light passes through the dead zone—maintaining resin flow—and partially cures additional layers of the object.\n• Step 4: When the resin object is complete, it is baked in an oven to finish curing.",
+      "choices": {
+        "A": "DLS cures 3D objects by passing through a \"dead zone,\" adding layers to the object, then curing the object in an oven.",
+        "B": "In DLS, UV light is projected into layers of liquid resin until the resin solidifies and passes through a \"dead zone,\" wherein the curing is completed."
+      }
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find x = 50 on the horizontal axis and go up to the line: it crosses at y = 175. The line starts at (0, 100) and rises 75 for every 50 rings, which confirms 100 + 75 = 175. Choice A (100) is the cost at 0 rings."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 9 to both terms: 9(x^2 + 6) = 9x^2 + 9 · 6 = 9x^2 + 54. Choice B forgets to multiply the 6 by 9."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is the point where its two lines cross, so we need the graph whose lines intersect at (5, 5). Only the lines in D meet there. In A they cross near (3, 3), in B on the x-axis near (5, 0), and the lines in C are parallel, so they never meet.",
+    "figure": 0,
+    "choiceImages": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "21"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 7x from both sides: 21 = k. If k = 21, both sides are identical, so every x works and there are infinitely many solutions. Any other k would give a false statement and no solutions.",
+    "fix": {
+      "prompt": "7x + 21 = 7x + k\nIn the given equation, k is a constant. The equation has infinitely many solutions. What is the value of k?"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: f(0) = 2(0) − 1/4 = −1/4, so the point is (0, −1/4). Choice C (0, 2) uses the slope instead of the constant term.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 2x − 1/4. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "(0, −1/4)",
+        "B": "(0, −2)",
+        "C": "(0, 2)",
+        "D": "(0, 4)"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "3710"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the masses: 3,810 + 3,810 + 3,530 + 3,850 + 3,550 = 18,550. Divide by 5 to get the mean: 18,550/5 = 3,710 grams.",
+    "fix": {
+      "prompt": "The list gives the mass, in grams, of 5 ruffed lemurs.\n3,810; 3,810; 3,530; 3,850; 3,550\nWhat is the mean mass, in grams, of these 5 ruffed lemurs?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Percent increase = (new − old)/old = (80 − 16)/16 = 64/16 = 4, which is 400%. Choice B (64%) uses the dollar increase as if it were a percent, and C (80%) confuses the new price with the percent."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In similar triangles CAE and CBD, the vertices match in order, so angle CAE corresponds to angle CBD. Corresponding angles of similar triangles are equal, so angle CAE = 59°. The fact that AE = 2 · (BD) only tells us the scale factor; it doesn't change the angles."
+  },
+  {
+    "key": "m1-09",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total number of signatures is the 30 from Monday plus the s from Tuesday, and it must be at least 190: s + 30 ≥ 190. Choice A uses ≤, which would mean \"at most 190,\" and C and D subtract the Monday signatures instead of adding them."
+  },
+  {
+    "key": "m1-10",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms share a factor of 7x^2: 7x^6 − 14x^2 = 7x^2(x^4) − 7x^2(2) = 7x^2(x^4 − 2). Choice A, when expanded, gives 7x^6 − 28x^5 + 28x^4, which has extra terms."
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point (a, b) on the graph of y = f(x) means f(a) = b. Since the graph passes through (5, 7), f(5) = 7. Choice B (5) is the x-coordinate, not the function value."
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "3/8",
+      ".375"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Move everything to one side: 8x^2 + 13x − 6 = 0. This factors as (8x − 3)(x + 2) = 0, so x = 3/8 or x = −2. The positive solution is 3/8 (or 0.375)."
+  },
+  {
+    "key": "m1-13",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each year the balance is multiplied by 1.027 (2.7% more than the year before), so the amount is 110(1.027)^t. Growing by the same percent each period is exponential, and since 1.027 > 1, it is increasing. A linear model (D) would add the same dollar amount each year."
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since angles R and S add to 90°, they are complementary, and the sine of an angle equals the cosine of its complement. So cos(S) = sin(R) = 2sqrt(10)/7. Choices C and D are greater than 1, which is impossible for the cosine of an acute angle.",
+    "fix": {
+      "prompt": "In right triangle RST, the sum of the measures of angle R and angle S is 90 degrees. The value of sin(R) is 2sqrt(10)/7. What is the value of cos(S)?",
+      "choices": {
+        "A": "3sqrt(10)/20",
+        "B": "2sqrt(10)/7",
+        "C": "7sqrt(10)/20",
+        "D": "2sqrt(10)/3"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line t has slope −1/2. A perpendicular line has the negative reciprocal slope: −1/(−1/2) = 2. Choice C (1/2) flips the fraction but forgets to change the sign, and A (14) is line t's y-intercept.",
+    "fix": {
+      "prompt": "Line t is defined by y = −(1/2)x + 14. Line s is perpendicular to line t in the xy-plane. What is the slope of line s?",
+      "choices": {
+        "A": "14",
+        "B": "2",
+        "C": "1/2",
+        "D": "1/14"
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Plug in the x-values: f(−4) = 8(2)^(−1) = 4, f(0) = 8(2)^0 = 8, f(4) = 8(2)^1 = 16, f(8) = 8(2)^2 = 32. That matches B. Choice D (4, 8, 12, 24) looks close but its values don't double every 4 units of x, so it is not this exponential function.",
+    "fix": {
+      "prompt": "f(x) = 8(2)^(x/4)\nWhich table gives four values of x and their corresponding values of f(x) for the given exponential function?",
+      "choices": {
+        "A": "x: −4, 0, 4, 8; f(x): 4, 0, 10, 40",
+        "B": "x: −4, 0, 4, 8; f(x): 4, 8, 16, 32",
+        "C": "x: −4, 0, 4, 8; f(x): −4, 8, 18, 36",
+        "D": "x: −4, 0, 4, 8; f(x): 4, 8, 12, 24"
+      }
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "3π/4 radians is 135°, which is in the second quadrant, where cosine is negative. Its reference angle is 45°, and cos(45°) = sqrt(2)/2, so cos(3π/4) = −sqrt(2)/2. Choice C has the right size but the wrong sign.",
+    "fix": {
+      "prompt": "The measure of angle C is 3π/4 radians. What is the value of cos(C)?",
+      "choices": {
+        "A": "−sqrt(2)/2",
+        "B": "−1/2",
+        "C": "sqrt(2)/2",
+        "D": "sqrt(3)/2"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "340"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the first equation as 6x + 7y = 2,170 and multiply by 4: 24x + 28y = 8,680. Add this to 24x − 28y = 1,400 to get 48x = 10,080, so x = 210. Then 7y = −6(210) + 2,170 = 910, so y = 130, and x + y = 340."
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Losing 23% means 77% remains, so the base is 0.77. The decrease happens once every 11.69 minutes, so after t minutes there have been t/11.69 periods: M = 100(0.77)^(t/11.69). Choices C and D use 0.23, the part lost rather than the part left, and B's exponent t + 11.69 doesn't count periods.",
+    "fix": {
+      "choices": {
+        "A": "M = 100(0.77)^(t/11.69)",
+        "B": "M = 100(0.77)^(t + 11.69)",
+        "C": "M = 100(0.23)^(t/11.69)",
+        "D": "M = 100(0.23)^(t + 11.69)"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract 2: −4|5x + 4| = −16, so |5x + 4| = 4. Then 5x + 4 = 4 gives x = 0, and 5x + 4 = −4 gives x = −8/5. Choice A forgets the negative case.",
+    "fix": {
+      "prompt": "−4|5x + 4| + 2 = −14\nWhat are all solutions to the given equation?",
+      "choices": {
+        "A": "0",
+        "B": "0 and −1/5",
+        "C": "0 and −8/5",
+        "D": "There is no solution."
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "74088"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "AB goes from the apex to the edge of the base, so it is the slant height: radius, height and AB form a right triangle. r^2 = 84^2 − 42^2 = 7,056 − 1,764 = 5,292. The volume is (1/3)πr^2h = (1/3)π(5,292)(42) = 74,088π, so k = 74,088."
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "188.6",
+      "188.5"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Volume uses cubic units, so convert with the cube of the length factor: 1 cubic yard = 0.914^3 ≈ 0.76355 cubic meters. Then 247 × 0.914^3 ≈ 188.597, about 188.6 cubic meters. Using 0.914 without cubing it (about 225.8) is the common mistake.",
+    "note": "Printed answer 943/5 (= 188.6) is a rounded value; exact is 188.597..., so 188.5 and 188.6 are both listed as accepted grid entries."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: 3x + 13 = 3x^2 + 13, so 3x^2 − 3x = 0 and 3x(x − 1) = 0, giving x = 0 or x = 1. At x = 0, y = 13, so (0, 13) is a solution. Choice A fails because y must be 13 when x = 0, and (26, 91) only satisfies the linear equation."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The calf starts at 226 pounds and adds 3 pounds each day, so after x days its weight is y = 226 + 3x. Choice B subtracts the daily gain, and C swaps the starting weight and the rate."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In 0.6t + 7 = 11, 7 is the starting length and t is the number of months, so 0.6t is the growth over t months. That makes 0.6 the number of inches the hair grows each month. Choice A flips this: the time to grow 1 inch would be 1/0.6 months."
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The area of a rectangle is length times width. In y = (31w)(w), w is the width, so the other factor, 31w, is the length (31 times the width), in feet. The area is y itself (B), and the width is w (D)."
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each term has a factor of 11x: 11x^10 = 11x · x^9, 11x^9 = 11x · x^8, and 77x = 11x · 7. So the expression equals 11x(x^9 − x^8 + 7). Choice C forgets to reduce the exponents after factoring out x, so it expands to 11x^11 − 11x^10 + 77x^2.",
+    "fix": {
+      "prompt": "Which of the following expressions is equivalent to 11x^10 − 11x^9 + 77x?",
+      "choices": {
+        "A": "x(10x^10 − 10x^9 + 76x)",
+        "B": "x(11x^10 − 11x^9 + 77)",
+        "C": "11x(x^10 − x^9 + 7x)",
+        "D": "11x(x^9 − x^8 + 7)"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "293% of x is 2.93x, so f(x) = 2.93x. This is a line through the origin with positive slope 2.93, so it is increasing linear. It is not exponential (C) because x is multiplied by a constant, not used as an exponent.",
+    "fix": {
+      "prompt": "For x > 0, the function f is defined as follows:\nf(x) equals 293% of x\nWhich of the following could describe this function?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The probabilities for the three rooms add to 1, so the chance of room C is 1 − 0.72 − 0.24 = 0.04. That means 0.04 × 225 = 9 visitors are in room C. Choice A (4) mistakes the probability 0.04 for the number of visitors."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "First g(−10) = |12(−10) − 7| = |−127| = 127. Then f(−10) = 5(127) − 3 = 635 − 3 = 632. Choice B stops at g(−10), and A comes from dropping the absolute value.",
+    "fix": {
+      "prompt": "f(x) = 5(g(x)) − 3\ng(x) = |12x − 7|\nThe functions f and g are defined by the given equations. What is the value of f(−10)?"
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since A and B are acute, the right angle is at C. For angle B, the opposite side is AC and the adjacent side is BC, so tan B = AC/BC = 1/3. Then BC = 3 × 28.2 = 84.6. Choice C (9.4) divides by 3 instead, which treats AC as the adjacent side.",
+    "fix": {
+      "prompt": "In right triangle ABC, angles A and B are acute, side AC has a length of 28.2, and tan B = 1/3. What is the length of side BC rounded to the nearest tenth?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "-12"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 3 − 7x. The equation becomes 16 − 5u = 4 − 6u. Adding 6u to both sides gives 16 + u = 4, so u = −12. There's no need to solve for x."
+  },
+  {
+    "key": "m2-11",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use p to find c: the slope between (c, −5) and (3, 23) is 7, so 28/(3 − c) = 7 and c = −1. Then t passes through (−1, −6) and (4, 34), so its slope is (34 − (−6))/(4 − (−1)) = 40/5 = 8. Choice C (7) is the slope of p, not t."
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write everything in terms of c: b = 0.89c, so b + c = 1.89c and a = 21.36 × 1.89c = 40.3704c. Then a/b = 40.3704c/(0.89c) = 45.36, which is 4,536%. Choice B (2,400%) comes from dividing 2,136% by 89% and ignoring c.",
+    "fix": {
+      "prompt": "The positive number a is 2,136% of the sum of the positive numbers b and c, and b is 89% of c. What percent of b is a?",
+      "choices": {
+        "A": "4,536%",
+        "B": "2,400%"
+      }
+    },
+    "note": "Source/PDF choices A and B are garbled ('4,54%', '2,40%'); restored as 4,536% (the computed answer) and 2,400% (2,136/0.89). C and D kept as printed."
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "13.86"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "F is linear with slope 9/5, so every 1-kelvin increase raises the temperature by 9/5 = 1.8 degrees Fahrenheit. An increase of 7.70 kelvins gives 1.8 × 7.70 = 13.86 degrees Fahrenheit. The constants −273.15 and +32 shift the value but don't affect the change.",
+    "fix": {
+      "prompt": "F(x) = (9/5)(x − 273.15) + 32\nThe function F gives the temperature, in degrees Fahrenheit, that corresponds to a temperature of x kelvins. If a temperature increased by 7.70 kelvins, by how much did the temperature increase, in degrees Fahrenheit?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use vertex form: f(x) = a(x − 1)^2 + 4. The point (2, 27) gives a + 4 = 27, so a = 23 (and (−1, 96) checks: 23 · 4 + 4 = 96). Then f(−2) = 23 · 9 + 4 = 211 and f(0) = 23 + 4 = 27, so f(−2) − f(0) = 184. Choice D is f(−2) alone."
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The slope from (−s, 23) to (s, 13) is (13 − 23)/(2s) = −5/s. Using (s, 13): 13 = (−5/s)(s) + b, so b = 18 and y = (−5/s)x + 18. Multiply by s: sy = −5x + 18s, or 5x + sy = 18s. Choice C forgets to multiply the 18 by s.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y, where s is a constant. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−2s",
+            "28"
+          ],
+          [
+            "−s",
+            "23"
+          ],
+          [
+            "s",
+            "13"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The third side must be less than the sum of the other two, so x < 7 + 10 = 17, and greater than their difference, since x + 7 > 10 means x > 3. Together, 3 < x < 17. Choice A misses the lower limit; a side of length 1, for example, couldn't close the triangle."
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph of y = f(x) + 4 crosses the y-axis at 8, so f(0) = 8 − 4 = 4. Every choice has the form f(x) = −6^x + C, and f(0) = −1 + C, so C = 5. The graph also levels off near y = 9 on the left, which matches C + 4 = 9. Choice D (C = 9) describes the graph shown, not f itself."
+  },
+  {
+    "key": "m2-18",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because LM is parallel to PQ, triangles LMR and QPR are similar (alternate interior angles and vertical angles at R). Their scale factor is RP/RM = 14/8 = 7/4, and areas scale by the square: 36 × (7/4)^2 = 36 × 49/16 = 441/4. Choice C (63) uses the scale factor without squaring it.",
+    "fix": {
+      "choices": {
+        "A": "576/49",
+        "B": "144/7",
+        "C": "63",
+        "D": "441/4"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "4"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set g(x) = 12: 3x = 12, so x = 4."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "1512"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For similar solids, surface areas scale by k^2 and volumes by k^3. Here 1,475/59 = 25 = k^2, so k = 5 and the volumes differ by a factor of 5^3 = 125. Prism X's volume is 1,500/125 = 12, so the sum is 12 + 1,500 = 1,512 cm^3.",
+    "fix": {
+      "prompt": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 59 square centimeters (cm^2), and the surface area of right rectangular prism Y is 1,475 cm^2. The volume of right rectangular prism Y is 1,500 cm^3. What is the sum of the volumes, in cm^3, of right rectangular prism X and right rectangular prism Y?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "750"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide f(5) by f(3): b^(5/n)/b^(3/n) = b^(2/n) = 150/6 = 25, so b^(1/n) = 5. That means each increase of 1 in x multiplies f by 5, so f(6) = 5 · f(5) = 5 · 150 = 750.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = ab^(x/n), where a, b, and n are constants, and b and n are integers. If f(3) = 6 and f(5) = 150, what is the value of f(6)?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "1/12",
+      ".0833",
+      "0.0833"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the sum of the solutions is −b/a. Here that is (12a + 2b)/24 = 2(6a + b)/24 = (6a + b)/12. Matching this with k(6a + b) gives k = 1/12."
+  }
+]

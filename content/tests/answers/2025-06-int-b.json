@@ -1,0 +1,1010 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "medium",
+    "explanation": "The narrator says his sisters spent the day playing dolls and giggling, and that he did not \"concern himself with\" those things, meaning he paid no attention to them and had no interest in them. \"Take any interest in\" captures that indifference. \"Feel any anger toward\" is tempting but adds an emotion the text never mentions; he is simply uninvolved, not upset.",
+    "fix": {
+      "passage": "The following text is from Rudolfo Anaya's 1972 novel Bless Me, Ultima. The young narrator is eating breakfast with his two sisters in their home in rural New Mexico.\n\nI sat across the table from Deborah and Teresa and ate my atole and the hot tortilla with butter. I said very little. I usually spoke very little to my two sisters. They were older than I and they were very close. They usually spent the entire day in the attic, playing dolls and giggling. I did not <u>concern myself with</u> those things."
+    },
+    "note": "PDF marks B (Feel any anger toward), but nothing in the text suggests anger; 'concern myself with' = take an interest in, so C."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The organization wants the sites preserved, so the blank must name the kind of harm that comes from neglect: being \"left to deteriorate,\" or gradually decline in condition. \"Regenerate\" and \"diversify\" describe positive changes, which would not be something preservation tries to prevent, and \"provoke\" makes no sense for a forest left alone."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The drawbacks of being descended from a famous poet became more noticeable \"as the years wore on,\" so \"manifest\" means clearly visible or evident. The next sentence even spells out what those now-obvious drawbacks are. \"Possible\" is wrong because the drawbacks actually appeared, not just might have.",
+    "fix": {
+      "passage": "The following text is adapted from Virginia Woolf's 1919 novel Night and Day. Katharine is the granddaughter of a celebrated poet.\n\n[Katharine's] descent from [a celebrated poet] was no surprise to her, but matter for satisfaction, until, as the years wore on, certain drawbacks made themselves very <u>manifest</u>. Perhaps it is a little depressing to inherit not lands but an example of intellectual virtue; perhaps the conclusiveness of a great ancestor is a little discouraging to those who run the risk of comparison with him."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains the cause of the numbering trend: with over 500,000 known bodies, unique names are nearly impossible to find. A trend that can be \"attributed to\" something is one that is caused by it. \"Referred to\" and \"alluded to\" mean mentioned, not caused by, and \"entrusted to\" means handed over for safekeeping."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The earlier sentences set up a problem: travel to and from Yellowstone produces most of the harmful emissions. The underlined sentence then offers a way to reduce them, encouraging people to visit parks closer to home, which is a course of action addressing that problem. It does not say policymakers have worked on this for a long time (B), and the text never raises a question (D).",
+    "fix": {
+      "passage": "Many visitors to Yellowstone National Park need airlines, car rentals, hotels, and restaurants during their visits. These services generate carbon emissions. Emily Wilkins and Jordan Smith found that most of the environmentally harmful emissions come from travel services to and from the park. <u>Wilkins and Smith found that policymakers could help reduce these emissions by encouraging people to visit state or national parks closer to their homes to cut down on their travel.</u>"
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first names Harold Bloom as one of Crowley's champions; the underlined portion then tells us what Bloom specifically praises in Little, Big, its skillful blend of the naive and sentimental modes. That is a reason a critic appreciates a book. The distinction between the two modes is explained after the dash, not in the underlined part, so B describes the wrong portion.",
+    "fix": {
+      "passage": "Though John Crowley, author of Flint and Mirror, is perhaps not as well known as the most commercially successful American writers of the past fifty years, his work has had several influential champions, including the poet James Merrill and the literary critic Harold Bloom. In his afterword to Crowley's book Little, Big, <u>Bloom praises how the novel adroitly blends what playwright Friedrich Schiller termed the naive and sentimental modes</u>—while Schiller thought works could be classified as either naive (seeking to describe reality) or sentimental (seeking to develop ideas), Little, Big fuses both modes of writing."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The narrator lists ways the rectory could look better (lighter rooms, better colors and lighting), then the underlined clause begins \"but perhaps,\" suggesting that such changes might have spoiled the room's thoroughly clerical look. That offers a possible reason for the furnishing choices he has just criticized. It does not say grand furnishings are inappropriate (B); in fact, it notes the rooms are not grand at all.",
+    "fix": {
+      "passage": "The following text is adapted from Anthony Trollope's 1855 novel The Warden. The narrator is describing a rectory, the residence of a clergyperson.\n\nLet us observe the well-furnished breakfast-parlour at Plumstead Episcopi, and the comfortable air of all the belongings of the rectory. Comfortable they certainly were, but neither gorgeous nor even grand; indeed, considering the money that had been spent there, the eye and taste might have been better served; there was an air of heaviness about the rooms which might have been avoided without any sacrifice of propriety; colours might have been better chosen and lights more perfectly diffused; <u>but perhaps in doing so the thorough clerical aspect of the whole might have been somewhat marred.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 concludes that Ollantay was probably created in the late 1700s, while Text 2 argues it is an Inca work from the 1500s that was only written down later. Their core disagreement is therefore when the play originated. Neither text mentions a Spanish writer being inspired (A) or the play's popularity over time (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Herodotus describes 3,000 decorated chambers, a dozen courts with white pillars and winding passages, calling the complex \"an unending marvel,\" which is an account of its magnificence. The text says nothing about how long construction took (B) or how he arranged his visit (D), and the prosperity came before the building, not because of it (C)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text introduces silverswords as illustrating adaptive radiation and then explains how they all descended from one tarweed ancestor and diversified to fit different habitats. So the main idea is that silverswords are good examples of adaptive radiation in Hawaii. Choice A contradicts the text, which says each species is physically distinct, and C overgeneralizes from silverswords to most Hawaiian plants."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence needs the area of the White Mountain Apache Tribe in Arizona, and the table lists that tribe's area as 2,631 square miles. The other values belong to different tribal nations: 7,648 is the Chickasaw Nation, 4,419 is the Cheyenne River Sioux Tribe, and 3,606 is the Crow Tribe.",
+    "fix": {
+      "passage": "A citizen of the Leech Lake Band of Ojibwe is a student in a geography class. The student wants to compare the total area covered by her tribal nation in Minnesota with the total areas covered by certain tribal nations in other states. Looking at the table, she finds that the area of the Leech Lake Band of Ojibwe is 1,311 square miles, while the area of the White Mountain Apache Tribe in Arizona is _____",
+      "table": {
+        "headers": [
+          "Tribal nation",
+          "Location",
+          "Area (square miles)"
+        ],
+        "rows": [
+          [
+            "White Mountain Apache Tribe",
+            "Arizona",
+            "2,631"
+          ],
+          [
+            "Crow Tribe",
+            "Montana",
+            "3,606"
+          ],
+          [
+            "Leech Lake Band of Ojibwe",
+            "Minnesota",
+            "1,311"
+          ],
+          [
+            "Chickasaw Nation",
+            "Oklahoma",
+            "7,648"
+          ],
+          [
+            "Cheyenne River Sioux Tribe",
+            "South Dakota",
+            "4,419"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The experts claim high-speed rail is more cost-effective than highways. Choice A says that, for the traffic it can handle, expanding highways costs more than expanding high-speed rail, which is exactly a cost-effectiveness advantage for rail. Choices B and C describe extra costs of rail, which would weaken the claim, and D is about preferences, not cost."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts 1980, when no country had more than 2 women on its high courts, with a later increase. The graph shows Peru, the Philippines and Mexico each at 3 in 2010, so all three rose above 2, which completes the example. Choice D is accurate but covers only Mexico, and B describes ups and downs between years rather than showing countries ending above 2 women in 2010."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Deep Impact was carefully planned and succeeded, while CONTOUR also seemed well planned but failed after communications were lost. Comparing them shows that good planning by itself cannot guarantee a probe will complete its mission. The text gives no evidence about the number of tasks (A, B) or about whether a different target would have helped (C)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The plastic sheets work as well as resin at stabilizing the hair (so the cross-sectional shape is preserved) while allowing nearly instant embedding instead of resin's long curing time. That means the preparation before sectioning becomes faster without hurting the hair's shape. Choice C is wrong because the plastic itself is still a stabilizing agent, and nothing suggests the plastic improves the shape or the chance of perpendicular cuts (A, D)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence is a statement, not a question, so it must end with a period, and the normal word order is \"what has earned him his enduring fame.\" Choices A and B wrongly end with question marks, and C scrambles the order so that the fame is doing the earning."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The people who adapted their whistling are the residents (plural, no apostrophe) who belong to the island (singular possessive, island's). So \"island's residents\" is correct. The other choices put the apostrophe on the wrong word or make the island plural, though La Gomera is one island."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to what Crosby assembles by hand: her \"massive collage-based paintings,\" a plural noun. A plural pronoun, \"them,\" is needed. \"It\" and \"that\" are singular, and \"her\" would refer to a person."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"First assigned to Britain in the 1960s Red Book\" describes the prefix, so the prefix must be the subject that comes right after the comma. Only D begins with \"the prefix.\" The other choices start with \"international direct dialing,\" \"not until the 1970s,\" or \"only switchboard operators,\" creating a dangling modifier."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Barrada's pieces,\" which is plural; the long phrase set off by commas just describes them. A plural present-tense verb, \"explore,\" agrees with that subject. \"Explores\" and \"has explored\" are singular, and \"exploring\" is not a complete verb, leaving the sentence without a main verb."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says many mushroom species contain phenolic compounds such as cinnamic acid and catechin; the next sentence names specific mushrooms in which those compounds were found. That is an illustration, so \"For example\" fits. \"However\" and \"Nevertheless\" signal contrast, which isn't present."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rasheed wanted to show the value of revision, and as a result she openly annotated her book to show where her ideas changed. The second sentence is a consequence of the first, so \"Thus\" is logical. \"Nevertheless\" and \"Instead\" wrongly suggest a contrast with her goal."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says none of the second-generation children inherits the trait; the next says the grandchildren could still inherit it. This is a surprising contrast with the previous point, so \"Nonetheless\" fits. \"Specifically\" and \"In addition\" would treat the second sentence as an elaboration or an extra point rather than a contrast."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence says the World Cup used to be much smaller and more geographically limited, and the next sentence gives the 1934 event with only 16 teams as a concrete case. \"For example\" introduces that illustration. \"Though\" would signal a contrast, and \"moreover\" would add a new point rather than an instance."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To explain what Psydrax odorata is, the student should describe the plant itself, and B identifies it as a flowering shrub native to Oahu. The other choices mention the plant only in connection with the study or bird feces (A, D) or talk about a different, non-native species (C).",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Most of the plant and bird species in Oahu, Hawaii, are non-native.\n• In a 2019 study, researchers wanted to know what role non-native birds play in dispersing plant seeds in Oahu.\n• Researchers catalogued plant seeds found in fecal samples from non-native birds.\n• Psydrax odorata, a flowering shrub, was one of fifteen native species catalogued.\n• Hedychium gardnerianum, an herbaceous vine, was one of twenty-nine non-native species catalogued.\n• Researchers concluded that non-native birds play a vital role in dispersing the seeds of native and non-native plants."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to provide a quotation from chapter 5, and only B actually quotes Boym's sentence about the Nostalgija Snack Bar, while also giving the context of the chapter's discussion. A, C and D summarize ideas from the book but contain no quotation.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Future of Nostalgia is a scholarly book by literary theorist Svetlana Boym.\n• The book provides a multifaceted exploration of the concept of nostalgia.\n• Chapter 4 defines a form of nostalgia interested in re-creating the past.\n• Chapter 5 explores the Soviet-style restaurant the Nostalgija Snack Bar in Ljubljana.\n• In chapter 5, Boym writes, \"[The Nostalgija Snack Bar] is a new kind space that plays with the past and the present.\""
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Lowell's contributions were starting the search for Planet X in 1905 and leaving money that upgraded the observatory where it was found; D states both. Choice A mentions that he was honored but does not say what he did, B credits Tombaugh and the telescope, and C is false because Tombaugh, not Lowell, made the 1930 photographs.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• 1905: US astronomer Percival Lowell begins searching beyond Neptune for a mysterious planet he calls \"Planet X.\"\n• 1916: Lowell dies but leaves money to upgrade his observatory.\n• 1929: A new telescope is built at the observatory.\n• February 1930: Observatory assistant Clyde Tombaugh records the first photographic evidence of Planet X.\n• March 1930: Astronomers rename Planet X, calling it Pluto to honor Lowell (the first two letters are Lowell's initials, PL)."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Scholars thought silk first spread beyond China in the second century CE, but new evidence shows the Indus Civilization used silk at least 1,000 years earlier. Evidence that shows an older view is wrong has \"contradicted\" it. \"Investigated\" and \"anticipated\" do not express that the view was proven wrong, and \"misinterpreted\" doesn't fit what evidence does to a view."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The paradox is that water is essential to life's reactions, yet in early Earth's water-covered world it likely got in the way of forming proteins and other biomolecules. \"Hampered\" (hindered) creates that contrast. \"Reflected\" or \"imitated\" don't make sense with forming molecules, and \"exploited\" would suggest water helped, removing the paradox."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The team explained the temperature difference by pointing to its cause: water evaporating from the mushrooms and cooling them. To \"attribute\" a difference to something is to say it was caused by that thing. \"Conceded,\" \"prescribed\" and \"amended\" don't mean assigning a cause."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The research claimed something that it turned out to lack: it focused narrowly on a few countries in North America and Western Europe. The opposite of that narrow focus is completeness, so the research claimed \"exhaustiveness.\" \"Novelty\" (newness) and \"pervasiveness\" (being widespread) are not contradicted by a limited geographic focus, and \"immutability\" means unchangeableness."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence tells of a specific incident: Yung wrote about an imaginary trip to New York as a schoolboy and later actually saw the city. The next sentence draws a general reflection from it, that imagination can foreshadow reality, so the incident exemplifies a phenomenon. It isn't about becoming a writer (A) or confusing fantasy with reality (B).",
+    "fix": {
+      "passage": "The following text is from Yung Wing's 1909 memoir My Life in China and America. Yung Wing was the first person from China to graduate from a US university.\n\n<u>Little did I realize when in 1845 I wrote, while in the Morrison School, a composition on \"An Imaginary Voyage to New York and up the Hudson,\" that I was to see New York in reality.</u> This incident leads me to the reflection that sometimes our imagination foreshadows what lies uppermost in our minds and brings possibilities within the sphere of realities."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator first states a general observation: on a boat, each crew member believes he is doing everything. The underlined sentence then shows Harris believing that he alone has been working, a specific instance of that pattern. Harris isn't reacting to the narrator's idea (A), and nothing suggests he is confused (D) or focused on helping (C).",
+    "fix": {
+      "passage": "The following text is from Jerome K. Jerome's 1889 novel Three Men in a Boat (To Say Nothing of the Dog). The narrator and two friends are taking a boat down the River Thames in England.\n\nIn a boat, I have always noticed that it is the fixed idea of each member of the crew that he is doing everything. <u>Harris's notion was, that it was he alone who had been working, and that both George and I had been imposing upon him.</u> George, on the other hand, ridiculed the idea of Harris's having done anything more than eat and sleep, and had a cast-iron opinion that it was he—George himself— who had done all the labour worth speaking of."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined portion raises a tempting interpretation (that fast painting explains the ethereal look of Highwaymen paintings) and then rejects it as inaccurate because not all the artists used Hair's methods. That is considering and rebutting an interpretation of a technique's effect. There is no long-standing disagreement among the artists (A), and Buckner is not described as peripheral (C).",
+    "fix": {
+      "passage": "Driven to sell as many paintings as possible, Alfred Hair, an influential figure among the landscape artists known as the Florida Highwaymen, pioneered \"fast painting,\" a technique (which in part involved swift applications of paint) that many Highwaymen, including Livingston Roberts, adopted. <u>To conclude that this approach accounts for the ethereal qualities now synonymous with the Highwaymen aesthetic is tempting but inaccurate, as Hair's methods weren't universally practiced by his affiliates:</u> George Buckner, for example, painted with greater deliberateness but achieved the same effects."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Breaking normally caps the height of traveling waves, but McAllister et al. found that spike waves, formed where opposing traveling waves meet, can exceed that cap. So when traveling waves intersect in certain ways, the resulting wave can be taller than traveling-wave properties would predict. Choice B is wrong because spike waves exceed the limit due to factors other than steepness, and D wrongly applies jet stability and cavity shape to traveling waves."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Wright found lunar intensity to be positively associated with foraging by three-striped night monkeys, so as moonlight increases, the monkeys forage more. Choice B describes Brown's finding about the mice, and D is the text's OFT explanation of the discrepancy, not Wright's finding."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Deeper water is colder and leaves more oxygen-18 in a septum, so the colder sample (M23, 14.0°C) should contain more oxygen-18 than the warmer one (F02, 20.8°C). If F02 actually had more oxygen-18, it would have formed deeper and colder than M23, contradicting the conclusion. Choice C is what the conclusion predicts, and A and D are consistent with it."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The text argues that Stevens's preserved sandpaintings were not a betrayal of ikaah's ephemeral, dynamic nature, because Stevens actively conveyed those very qualities. Choice D shifts attention from the static object to Stevens's temporary, performative act of giving, and shows the gifts embodying a living hybrid of tradition and new chemistry, i.e., a dynamic practice. Choice B agrees with the object-focused objection the text rejects, and C explains the tension by appeal to US art culture rather than to qualities of ikaah.",
+    "note": "A is also fairly strong (sandpaintings as reminders of public, process-focused creations); kept PDF answer D."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If contrasting stripes deter spiders, attacks should go mostly to solid-color termites no matter what the spider looked at first. The table shows solid-cape attacks of 86% (60 + 26), 100% (14 + 86) and 75% (25 + 50) for the three groups, so most attacks hit solid capes in every case. Choice D is true but covers only one group, and B is false for the striped group, where only 25% attacked striped termites.",
+    "fix": {
+      "passage": "Some animals evade predation with the help of contrasting markings that signal toxicity. Lisa Taylor and team studied how jumping spiders behave toward termites (their regular prey) to which solid black, solid white, or black-and-white striped (i.e., contrasting) capes were affixed. Each spider was placed in a clear container in the center of a circular dish in which six termites, two with each of the three cape types, could be seen. Noting which termites the spiders first looked at and which termites they ultimately targeted, the researchers concluded that contrasting markings were a deterrent.",
+      "table": {
+        "headers": [
+          "type the spiders looked at first",
+          "spider attacks on termites with solid black capes",
+          "spider attacks on termites with solid white capes",
+          "attacks on termites with black-and-white striped capes"
+        ],
+        "rows": [
+          [
+            "solid black cape",
+            "60%",
+            "26%",
+            "13%"
+          ],
+          [
+            "solid white cape",
+            "14%",
+            "86%",
+            "0%"
+          ],
+          [
+            "black-and-white striped cape",
+            "25%",
+            "50%",
+            "25%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that organizing time along a linear axis is not universal. If Yupno future-oriented gestures don't point opposite to past-oriented ones, Yupno speakers aren't placing past and future at two ends of a straight line, which supports the claim. Using the left hand (A) or gesturing indoors (C) says nothing about linear axes, and sharing structures with English (B) would point toward similarity."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Venusian whistler waves look like lightning-generated waves, but the missions saw few other signs of lightning. So other scientists would suggest that something besides lightning, some feature of Venus that Earth lacks, produces whistler waves there. B goes too far by denying they are whistler waves despite their matching signatures, and C doesn't follow because there's little evidence of Venusian lightning at all."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since there is broad agreement that youth underrepresentation is not unfair in principle, Bidadanure argues for quotas on instrumental grounds, meaning for the good outcomes they produce. Choice C fits: underrepresentation may be fair in principle but leads to worse results for young people. Choices B and D claim it is inherently unfair, which is the opposite of the instrumental argument the text describes."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both parts of the sentence are independent clauses: the first lists works that won the award, and the second says which categories they won in. A semicolon correctly joins two independent clauses. A comma alone (A) creates a comma splice, and \"and\" without a comma (C) or no punctuation (D) runs them together."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The list of example countries is an interruption that opens with a dash after \"NATO,\" so it must close with a matching dash after \"2004.\" Semicolons are already used inside the list to separate the items, so a semicolon or a comma here would not end the interruption properly."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening modifier \"Multidisciplinary at its core\" must describe whatever comes right after the comma. It is the body of work, not the artist or the art forms, that is multidisciplinary at its core, so D is correct. A puts the artist after the comma (\"its\" also wouldn't fit a person), and B and C put the art forms there."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"presence\"; \"of many fossilized microbacteria\" and the \"which\" clause just describe it. A singular verb, \"reinforces,\" is needed. The other choices are plural verbs that wrongly agree with \"microbacteria.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"each one,\" which is singular, even though it's followed by \"of the thousands of faux Chinese characters\" and a long description between dashes. So it needs the singular verb \"holds.\" The present tense also matches \"present\" in the next sentence, which rules out \"were holding.\""
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Rostock\" is a restrictive appositive that identifies which member city is meant, so no commas should separate it from \"Hanseatic League member city,\" and no comma should come between the subject and the verb \"was.\" Choices A and B place a comma between subject and verb, and C sets off the name as if it were extra information."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Dowsett wanted to coordinate suffragists' efforts, and in 1912 she founded an association to do just that. Founding the group was a step toward her goal, so \"To that end\" fits. \"Conversely\" and \"Alternatively\" suggest contrast or an option, and \"In other words\" would mean the second sentence restates the first."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because Barad's theory rejects the subject-object divide that has shaped scientific thinking for centuries, it follows that the theory represents a major shift in understanding reality. \"As such\" signals this consequence. \"For example\" would make the second sentence an illustration, and \"By contrast\" and \"That said\" introduce contrasts that aren't there."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first clause says jets reaching the ionosphere (80 km and up) are outliers; the next clause supports and emphasizes that point by noting most jets reach only 20 to 50 km. \"Indeed\" introduces reinforcing evidence. \"Consequently\" wrongly treats the typical heights as a result, and \"nevertheless\" signals contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To compare the two descriptions of C minor, the sentence must give both: Schubart calls it \"longing,\" while Charpentier calls it \"obscure and sad,\" exactly as in B. A mentions that both described keys but not what they said, and C and D don't include Charpentier's view at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In music theory, the term \"key\" refers to the set of musical notes that forms the foundation of a piece of music.\n• In Ideas Toward an Aesthetic of Music (1806), German poet and composer Christian Schubart describes the moods of various musical keys.\n• He describes the key of C minor as expressing \"longing.\"\n• In Règles de Composition (1682), French composer Marc-Antoine Charpentier undertakes the same task.\n• He describes the key of C minor as \"obscure and sad.\"\n• \"Don't Speak\" by No Doubt (1996) is a song written in C minor."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to stress how long swimming has been a Paralympic event, and C states that swimming has been included since 1960. A and D give the years of Hess's own career, not the history of the event, and B doesn't mention swimming or any date.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Paralympic Games are a series of international sporting events involving athletes with an impairment.\n• A gold medal indicates that an athlete finished in first place.\n• Swimming has been an event at the Paralympics since 1960.\n• Béatrice Hess competed as a Paralympic swimmer from 1984 to 2004.\n• She won twenty-five medals.\n• Of these medals, twenty were gold."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization should sum up the study's overall finding. The average park benefit across all 25 cities was 0.10, which is positive, while individual cities like San Francisco and Washington differed, so B's \"varies from city to city, but positive overall\" fits. A and D just describe the method, and C is wrong because Washington's benefit was still above 0, which means positive.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A 2022 study analyzed geotagged social media posts to assess the effect of parks on happiness in 25 US cities.\n• The happiness benefit of a city's parks was the numeric difference between the calculated happiness scores of posts made in parks and posts made elsewhere.\n• A benefit above 0 indicates a positive effect.\n• The park happiness benefit in San Francisco, California, was greater than 0.10.\n• The park happiness benefit in Washington, DC, was greater than 0 but less than 0.10.\n• The average happiness benefit of parks across all cities was 0.10."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "164"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line n crosses the parallel lines r and s. The 164° angle (above r, left of n) and the angle x° (above s, left of n) are in matching positions, so they are corresponding angles and are equal. So x = 164. Don't subtract from 180; that would give the supplementary angle, not the corresponding one."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The speed varied between 175 and 195 miles per hour, so it was at least 175 and at most 195: 175 ≤ s ≤ 195. Choices B and C give only one bound each, and A uses the difference 20, which is not a speed."
+  },
+  {
+    "key": "m1-03",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Notice that 20x = 4 · 5x. Since 5x = 9, 20x = 4 · 9 = 36. Solving x = 9/5 first and multiplying by 20 gives the same 36."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 5: 5(x^2 + 8) = 5x^2 + 40. Then combine like terms: x^3 + (9x^2 + 5x^2) − 8x + 40 = x^3 + 14x^2 − 8x + 40. Choice C forgets to add the original 9x^2 and keeps only 5x^2."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "17"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 2^3 + 9 = 8 + 9 = 17. A common slip is computing 2 · 3 = 6 instead of 2^3 = 8."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "1240"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set g(x) = x/2 equal to 620: x/2 = 620. Multiply both sides by 2 to get x = 1,240. Dividing by 2 instead (310) is the usual mistake.",
+    "fix": {
+      "prompt": "The function g is defined by g(x) = x/2. For what value of x does g(x) = 620?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points fall from about y = 10 at x = 0 to about y = 1 or 2 at x = 9 or 10, so the model needs a positive y-intercept near 9 and a negative slope of about −0.8. Only y = 8.7 − 0.8x has both. Choice C has the right intercept but a positive slope, and B's slope of −8.7 is far too steep."
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Solve for y: −2y = −18 − 3x, so y = (3/2)x + 9. Then x = 0 gives y = 9, x = 2 gives y = 12, and x = 4 gives y = 15, matching table A. Table B lists the y-values in reverse order, so (0, 15) fails: 3(0) − 2(15) = −30, not −18.",
+    "fix": {
+      "prompt": "3x − 2y = −18\nFor the given equation, which table gives three values of x and their corresponding values of y?",
+      "choices": {
+        "A": "x: 0, 2, 4 | y: 9, 12, 15",
+        "B": "x: 0, 2, 4 | y: 15, 12, 9",
+        "C": "x: 9, 12, 15 | y: 0, 2, 4",
+        "D": "x: 9, 12, 15 | y: 4, 2, 0"
+      }
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "31"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The mixture's volume is the water plus the isopropanol: w + 10 = 41. Subtract 10 to get w = 31 mL. Adding the volumes (51) would be the wrong operation."
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "2.24",
+      "56/25"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The retail price is 280% of 4.00 dollars: 2.8 × 4 = 11.20 dollars. Taking 80% off leaves 20% of that price: 0.2 × 11.20 = 2.24 dollars. A common mistake is to multiply by 0.8, which gives the discount amount (8.96 dollars) instead of the new price."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both equations give y, so set them equal: −(1/4)x = (1/6)x. Moving terms gives −(5/12)x = 0, so x = 0 (and y = 0). Any other x gives one positive and one negative y-value, so the lines meet only at the origin.",
+    "fix": {
+      "prompt": "y = −(1/4)x\ny = (1/6)x\nThe solution to the given system of equations is (x, y). What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: PC = 18N − NC. Move the C-terms to one side: PC + NC = 18N, so C(P + N) = 18N. Divide by P + N to get C = 18N/(N + P). Choices A and B still contain C, so they don't express C in terms of P and N.",
+    "fix": {
+      "prompt": "PC = N(18 − C)\nThe given equation relates the variables P, N, and C. Which expression represents the value of C for distinct positive values of P and N?",
+      "choices": {
+        "A": "C(N + P)/N",
+        "B": "PC/(18 − C)",
+        "C": "18N/(N + P)",
+        "D": "18N/(P + 1)"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each month the total is 4% greater than the month before, so it is multiplied by 1 + 0.04 = 1.04 each month. Starting from 200, after m months c = 200(1.04)^m. Choice A multiplies by 0.04, which would shrink the total, and C's factor 1.4 is a 40% increase."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "300"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The population doubles when the factor 2^(t/300) goes from 1 to 2, which happens when the exponent t/300 increases by 1. That takes t = 300 minutes. The 8,000 is just the starting population and doesn't affect the doubling time.",
+    "fix": {
+      "prompt": "The function f(t) = 8,000(2)^(t/300) gives the number of bacteria in a population t minutes after an initial observation. How much time, in minutes, does it take for the number of bacteria in the population to double?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has infinitely many solutions only when both equations describe the same line. So the second equation must have the same slope as y = (2/9)x + 8, which is 2/9. A slope of −9/2 would make the lines perpendicular, giving exactly one solution.",
+    "fix": {
+      "prompt": "One of two equations in a system of linear equations is given. The system has infinitely many solutions. What is the slope of the graph of the second equation?\ny = (2/9)x + 8",
+      "choices": {
+        "A": "−9/2",
+        "B": "−2/9",
+        "C": "2/9",
+        "D": "9/2"
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide the whole equation by 3: x^2 − 2x − 10 = 0. Then add 10 to both sides: x^2 − 2x = 10. There's no need to solve for x itself."
+  },
+  {
+    "key": "m1-17",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since the graph passes through (−2, 0), f(−2) = 0. The factors (−2 − 4) and (−2 − 11) are not zero, so (−2 + k) = 0 and k = 2. Then f(0) = (0 − 4)(0 − 11)(0 + 2) = (−4)(−11)(2) = 88. Using k = −2 by mistake gives (−4)(−11)(−2) = −88, which isn't a choice but shows the sign trap."
+  },
+  {
+    "key": "m1-18",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line k passes through (0, 3) and (4, 0), so its slope is (0 − 3)/(4 − 0) = −3/4. A perpendicular line has slope 4/3. Through (−15, −28): y + 28 = (4/3)(x + 15), so y = (4/3)x + 20 − 28 = (4/3)x − 8. Choice B has the right slope but the wrong intercept.",
+    "fix": {
+      "choices": {
+        "A": "y = (4/3)x − 8",
+        "B": "y = (4/3)x − 48",
+        "C": "y = (3/4)x − 8",
+        "D": "y = (3/4)x − 48"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since angles A and B are acute, the right angle is at C, so AC is the leg opposite B and BC is the leg adjacent to B. Then tan B = AC/BC = 1/7, so BC = 7 · 23.2 = 162.4. Dividing 23.2 by 7 (about 3.3) mixes up opposite and adjacent.",
+    "fix": {
+      "prompt": "In right triangle ABC, angles A and B are acute, side AC has a length of 23.2, and tan B = 1/7. What is the length of side BC, rounded to the nearest tenth?"
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing both length and width by 40% multiplies each by 1.4, so the area is multiplied by 1.4 × 1.4 = 1.96. The new area is 1.96 × 3,500 = 6,860 square inches. Choice B (4,900) multiplies the area by 1.4 only once, as if just one side grew.",
+    "fix": {
+      "choices": {
+        "A": "6,860",
+        "B": "4,900",
+        "C": "3,580",
+        "D": "3,540"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The function is in vertex form, and (x − 1)^2 is never negative, so its smallest value is 0 at x = 1. The minimum of f is then 0 + 7 = 7. Choice A (1) is the x-coordinate of the vertex, not the minimum value."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A point on the unit circle satisfies x^2 + y^2 = 1, so (−1)^2 + y^2 = 1 gives y = 0 and H = (−1, 0). F = (1, 0) and H = (−1, 0) are opposite ends of a diameter, so angle FGH is π radians, or π plus any whole number of full turns (2π): π, 3π, 5π, ... 11π = π + 5(2π) works. 10π is a whole number of turns (ending back at F), and 13π/2 and 15π/2 end on the y-axis.",
+    "fix": {
+      "choices": {
+        "A": "13π/2",
+        "B": "15π/2",
+        "C": "10π",
+        "D": "11π"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Average acceleration is the change in speed divided by the time: 45 ÷ 6 = 7.5 meters per second squared. Choice A divides the wrong way (6 ÷ 45), and C and D subtract or add the numbers instead of dividing."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both equations equal y, so (x + 26)^2 = x + 26. Let t = x + 26: t^2 = t, so t(t − 1) = 0 and t = 0 or t = 1. That gives x = −26 or x = −25, and only −25 is a choice. Choosing 0 or 1 confuses the values of t with the values of x."
+  },
+  {
+    "key": "m2-03",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distance = speed × time, so Lao walks 2w miles and runs 6r miles. Together they total 10 miles: 2w + 6r = 10. Choice B divides by the speeds, which would give hours per mile, not miles, and C and D use the wrong total.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "Lao walks at a speed of 2 miles per hour and runs at a speed of 6 miles per hour. He walks for w hours and runs for r hours for a combined total of 10 miles. Which equation represents this situation?",
+      "choices": {
+        "A": "2w + 6r = 10",
+        "B": "(1/2)w + (1/6)r = 10",
+        "C": "2w + 6r = 80",
+        "D": "(1/2)w + (1/6)r = 80"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 12 is f(0), the distance from the station when x = 0, which is the moment the train crosses the city border. So the train had already traveled about 12 kilometers between the station and the border. The 50 is the speed (km per hour), so B and D confuse the constant with the slope, and C puts the 12 km after the border instead of before it."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Treat (x + 7) as one quantity: (1/3 − 1/2)(x + 7) = −8, so −(1/6)(x + 7) = −8. Multiply by −6: x + 7 = 48, so x = 41. Check: 48/3 − 48/2 = 16 − 24 = −8.",
+    "fix": {
+      "prompt": "(1/3)(x + 7) − (1/2)(x + 7) = −8\nWhat value of x is the solution to the given equation?"
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": [
+      "54"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The x-intercept is where g(x) = 0: (4/9)x − 24 = 0, so (4/9)x = 24. Multiply by 9/4: x = 24 · 9/4 = 54. The −24 is the y-intercept, not the x-intercept.",
+    "fix": {
+      "prompt": "The function g is defined by g(x) = (4/9)x − 24. What is the x-coordinate of the x-intercept of the graph of y = g(x) in the xy-plane?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the point (49, 0), x = 49 is Player 1's points and y = 0 is Player 2's points. So when Player 1 answers all 49 questions correctly and earns 49 points, Player 2 earns 0. Choice C swaps the roles of x and y."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Group in pairs: 3x^2 − 5x + 6x − 10 = x(3x − 5) + 2(3x − 5) = (3x − 5)(x + 2). So 3x − 5 is a factor. Checking A: x = 2 gives 12 − 10 + 12 − 10 = 4, not 0, so x − 2 is not a factor."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "5/4",
+      "1.25"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the graph, the momentum is 3 newton-seconds at x = 2 and 8 newton-seconds at x = 6. The average rate of change is (8 − 3)/(6 − 2) = 5/4 = 1.25 newton-seconds per second. Use the endpoint values only, not the slope of just one segment."
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The square of any real number is 0 or positive, so (x + 64)^2 can never equal −100. The equation therefore has zero real solutions. Choice B would be right for (x + 64)^2 = 100."
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "|x − 8| = 11 means x − 8 = 11 or x − 8 = −11, so x = 19 or x = −3. Their sum is 19 + (−3) = 16. Choice C is only one of the solutions.",
+    "fix": {
+      "prompt": "|x − 8| = 11\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error is expected to shrink. Doubling the sample from 159 to 318 does not push the estimate itself up or down in any predictable direction, so C and D are not supported."
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "76.2°F is the largest value (the only one in the 75–80 bin), so removing it lowers the mean: statement I must be true. With 11 values the original median is the 6th value, which lies in the 50–55 bin; with 10 values the new median is the average of the 5th and 6th, both also in the 50–55 bin. Those two values could be equal to the old median, so the median need not decrease, and II is not certain.",
+    "fix": {
+      "prompt": "The maximum temperature on April 1, in degrees Fahrenheit (°F), was recorded each year at a certain weather station for 11 years. The histogram summarizes the recorded data set. The temperature of 76.2°F is removed from this data set to create a new data set of 10 temperatures. Which of the following statements must be true?\nI. The mean of the new data set is less than the mean of the original data set.\nII. The median of the new data set is less than the median of the original data set."
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "31"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the first fact, 0.44h = 0.62j, so h = (0.62/0.44)j. Since j = 0.22k, h = (0.62 · 0.22/0.44)k = 0.62 · 0.5k = 0.31k. So h is 31% of k."
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line hits the x-axis at (90, 0) and the y-axis at (0, 50). Check B: 10(90) = 900 and 18(50) = 900, so both intercepts satisfy 10x + 18y = 900. Choice D swaps the coefficients, giving intercepts at x = 50 and y = 90, and A and C have positive slopes while the graph falls."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since k = f(1), look for a form where plugging in x = 1 makes the exponent 0. In C, f(1) = 50.4(1.2)^0 = 50.4, so the coefficient 50.4 is k. All four forms are equivalent (for example 42 · 1.2 = 50.4), but in B the coefficient 42 is f(0), not f(1)."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "31"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Angle PRS is an exterior angle at R, so it equals the two remote interior angles: x + y = (4x + 9) + (5x + 4), which gives y = 8x + 13. The angles of the triangle add to 180: 9x + 5y + 17 = 180, so 9x + 5(8x + 13) = 163, 49x = 98, and x = 2. Then y = 29 and x + y = 31.",
+    "fix": {
+      "prompt": "In triangle PQR, the measure of angle P is (4x + 9)°, the measure of angle Q is (5x + 4)°, and the measure of angle R is (5y + 4)°. If side QR is extended through point R to point S, and the measure of angle PRS is (x + y)°, what is the value of x + y?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The third side must be less than the sum of the other two: x < 5 + 9 = 14. It must also be greater than their difference, since 5 + x > 9 means x > 4. Together, 4 < x < 14. Choice A forgets the lower bound."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The base area is πr^2 = 3,136π, so r = 56. The volume is (1/3)(base area)(h): 34,496π = (1/3)(3,136π)h, so h = 3 · 34,496/3,136 = 33. The slant height is sqrt(56^2 + 33^2) = sqrt(4,225) = 65. Choice B (33) is the vertical height and C (56) is the radius."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "144"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The vertex is (5, 400), so h(t) = a(t − 5)^2 + 400. The launch height is 0, so h(0) = 25a + 400 = 0 and a = −16. Then h(9) = −16(4)^2 + 400 = −256 + 400 = 144 feet. By symmetry, this equals the height at t = 1."
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first day costs 56 dollars and each of the other d − 1 days costs 28 dollars: C(d) = 56 + 28(d − 1) = 28d + 28. Check: d = 1 gives 56 and d = 2 gives 84. Choice B charges 56 plus 28 for every day, giving 84 for just one day."
+  },
+  {
+    "key": "m2-22",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The zeros 8 and −5 mean f(x) = a(x − 8)(x + 5) = ax^2 − 3ax − 40a, so b = −3a and a + b = −2a. With a an integer greater than 1, a + b is −4, −6, −8, ... and only −4 (a = 2) is listed. Choice C (−2) would need a = 1, which isn't allowed."
+  }
+]

@@ -1,0 +1,516 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains that symmetry, asymmetry, and radial balance each change how viewers perceive a photo, so what a photo conveys depends on its balance. \"Contingent on\" means \"dependent on,\" which fits exactly. \"Inhibited by\" wrongly suggests balance blocks meaning, and \"reserved for\" and \"obligated to\" make no sense with a photograph's message."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The gas clouds \"cannot be touched,\" but Imara builds 3D-printed models people can handle, so the clouds need not stay completely untouchable. \"Intangible\" means unable to be touched, matching that contrast. \"Explicable\" and \"repeatable\" have nothing to do with touch, and \"regrettable\" adds an emotion the text never mentions."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Knowing the exchange provides regulatory oversight lets investors stop worrying about bureaucratic details and focus on opportunities, so it eases their worries. \"Assuage\" means to calm or lessen. \"Amplify\" says the opposite, and \"designate\" and \"convey\" don't describe reducing a worry."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says scholars \"may inadvertently overlook nuances\" when they focus only on how an author fits a movement. To \"discount\" subtleties means to disregard them, which matches overlooking. \"Magnify\" and \"scrutinize\" say the opposite, and \"denounce\" implies openly criticizing, not ignoring."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined words are what the lady seems to say as she looks \"disdainfully\" at the audience, calling them \"upstarts and provincials.\" That insult shows her contempt for the other theatergoers. Choice D gets the idea backward: the passage says the last one in wins, so the urgency is about arriving late, not first.",
+    "fix": {
+      "passage": "The following text is from José Rizal's 1891 novel The Reign of Greed (translated by Charles Derbyshire in 1912).\n\nA lady accompanied by her husband entered at that moment and took her place in one of the two vacant boxes. She had the air of a queen and gazed disdainfully at the whole house, as if to say, \"<u>I've come later than all of you, you crowd of upstarts and provincials, I've come later than you!</u>\" There are persons who go to the theater like the contestants in a mule-race: the last one in, wins, and we know very sensible men who would ascend the scaffold rather than enter a theater before the first act."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every detail shows Louis's determination: he keeps the petition with him at all times, spots anyone who hasn't signed, and gets signatures everywhere and in every situation. The text's purpose is to portray his strong commitment. Choice B is tempting, but the text focuses on Louis's persistence, not on how eager the members are to sign.",
+    "fix": {
+      "passage": "The following text is adapted from Louise Erdrich's 2020 novel The Night Watchman. Louis Pipestone is collecting signatures for a petition from fellow members of the Turtle Mountain Band of Chippewa on the tribe's reservation in North Dakota.\n\nLouis Pipestone tended the petition like a garden. He kept it with him at all times. In town, his eyes sharpened when he noticed a tribal member who hadn't yet signed. Wherever they were—at the gas pump, mercantile [general store], at Henry's [Café], on the road, or outside the clinic and hospital—Louis cornered them. If they were waiting for a baby to be born, he'd have them sign. If they were laughing, if they were arguing, if they were taking a child home from school, they signed."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"No surer road\" means there was no more reliable way for a young provincial playwright to get a play produced than going to Don Jerónimo. The phrase stresses how important his support was for inexperienced authors. Choice B fails because the phrase is about his usefulness to playwrights, not his opinion of the plays of the time.",
+    "fix": {
+      "passage": "The following text is from Armando Palacio Valdés's short story “The Love of Clotilde,” originally published in Spanish in 1884. In the story, Don Jerónimo is a financial supporter of artists in the theater.\n\nAny youth from the provinces who arrived in Madrid with a drama in his pocket could take <u>no surer road</u> to seeing it produced than that which led to the home of Don Jerónimo. One and all, he received them with open arms, the good and the bad alike. There is no denying that, since he was rather brusque in his ways, he never spared the young authors who asked his advice and read him their productions, but criticized vigorously, even to the verge of insult."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After noting that \"y'all\" has spread across the US, the text asks \"What explains its rise in popularity?\" and answers that it expresses plurality more precisely than \"you.\" So the text is answering why the pronoun has become more widely used. It never counts other plural forms, dates the first use, or discusses countries outside the US."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says a trademark can be canceled when its meaning is no longer specific to the owner's products and gives \"cellophane\" as an example of a term that became generic. That implies \"cellophane\" was once a trademark for one company's specific product. Nothing suggests it is currently debated or that it was never meant to be a trademark."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that putting a work online increases how many people experience it. If more people view The Card Game online each year than visit the museum in person, the online image clearly reaches extra people. The other choices concern the museum's reputation or critics' praise, which say nothing about the size of a work's audience.",
+    "fix": {
+      "passage": "The SCAD Museum of Art in Savannah, Georgia, has around 4,500 works of art. Digital images of hundreds of those works have been put online through the museum's website and the Google Arts & Culture project. One of the images is of The Card Game, a painting by Jacob Lawrence. In a paper, a student claims that <u>putting a work from the museum online increases the number of people who experience that work.</u>"
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the row with sticky catchfly as the neighboring species and common cow-wheat as the target species lists Sweden as the location. Spain and the United States belong to the other two pairs, and Japan doesn't appear in the table at all.",
+    "fix": {
+      "passage": "In a study of interactions between plants, researchers Carolina Laura Morales and Anna Traveset gathered data about flowering plants growing alongside each other in various locations. In each case, the researchers identified one plant as a “target species” and a nearby plant as a “neighboring species.” An example of a neighboring species is the sticky catchfly, which grows alongside the common cow-wheat in _____",
+      "table": {
+        "caption": "Neighboring Species and Target Species in Various Locations",
+        "headers": [
+          "Neighboring species",
+          "Target species",
+          "Location"
+        ],
+        "rows": [
+          [
+            "sticky catchfly",
+            "common cow-wheat",
+            "Sweden"
+          ],
+          [
+            "Bermuda buttercup",
+            "white rocket",
+            "Spain"
+          ],
+          [
+            "Virginia spring beauty",
+            "star chickweed",
+            "United States"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researcher needs a lake whose ice duration decreased from the early 1980s to the mid-2000s. Oulujärvi dropped from about 195 days in 1980-81 to about 155 days in 2005-06, which is a clear decline. Lake Neusiedl increased, so choice C contradicts the claim, and choices A and D compare amounts in a single winter rather than showing a change over time.",
+    "fix": {
+      "choices": {
+        "B": "Oulujärvi, which had fewer days of ice in the winter of 2005-06 than it did in the winter of 1980-81.",
+        "D": "both Lake Neusiedl and Oulujärvi, which had more than 100 days of ice in the winter of 2005-06."
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If the sounds are aimed at predators, they should be tied to the attacks themselves. Choice A shows exactly that: no species made sounds before the simulated attacks, and nearly all stopped within seconds afterward. Choices B and D only describe how varied the sounds were, and C says only some sounds could even be heard by predatory birds, which weakens the claim."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Immigrants from Mandarin-speaking north China live mostly in Flushing, while those from Cantonese- and Fuzhounese-speaking south China live mostly in Chinatown. So the language split in New York mirrors where the immigrants came from in China. Choice D compares total numbers of speakers, which doesn't explain why each neighborhood has a different main language."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Van Gogh made the drawing \"nearly 150 years ago,\" a finished action in the past, so the simple past \"completed\" is correct. \"Is completing\" and \"will complete\" place the action in the present or future, and \"has been completing\" suggests it is still ongoing."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"through community involvement and scientific study\" is an interruption that begins with a dash after \"that,\" so it must close with a matching dash. A comma, colon, or no punctuation would leave the dash pair unbalanced and blur where the interruption ends before \"aim to bring.\"",
+    "fix": {
+      "passage": "While the greater adjutant can be found in places like the Chao Phraya River in Thailand and the Teknaf Game Reserve in Bangladesh, more than 80 percent of this endangered stork species is found in Assam, India. There, wildlife biologist Dr. Purnima Devi Barman is on the front lines of conservation efforts that—through community involvement and scientific _____ aim to bring adjutants back from near extinction."
+    }
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text tells a past story and then looks ahead from that past point (\"years later\"), so it needs the past-future \"would be honored,\" which also matches \"would become\" later in the sentence. \"Is honored\" and \"will be honored\" are in the wrong time frame, and \"had been honored\" would put the award before the 1987 research."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The verb is parallel with \"are woven\": the baskets typically \"are woven\" from sumac and \"feature\" bold colors. Both describe general, ongoing qualities, so the present tense \"feature\" fits. The past forms \"featured\" and \"had featured\" break the parallel present tense, and \"were featuring\" is both past and oddly progressive."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"an artificial intelligence\"; the long phrase between commas (\"redistributing them through ... generators\") is just description. A singular subject needs the singular verb \"powers.\" The plural options \"are powering,\" \"power,\" and \"have been powering\" would agree with the nearby plural nouns by mistake."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Lawyer and cycling advocate\" is a title placed right before the name, so no commas separate it from \"Ernesto Hernandez-Lopez,\" and no comma goes between the subject and its verb \"has identified.\" Choices with a comma after the name would split the subject from its verb, and a comma after \"advocate\" wrongly treats the name as an extra, nonessential element."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The Kyzylkum Desert ... is a semiarid desert, for example\" is a complete sentence, and \"With a total area of about 300,000 km^2, it is also one of the largest deserts\" is another. A period correctly separates them. Choices A and B leave the clauses run together, and C creates a comma splice between two independent clauses.",
+    "fix": {
+      "passage": "Within Earth's biomes, there are four main types of desert: arid, semiarid, coastal, and cold. The Kyzylkum Desert in central Asia is a semiarid desert, for ______ a total area of about 300,000 km^2, it is also one of the largest deserts of any type."
+    }
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence before says Chaucer didn't write in Modern English; the next part tells what he wrote in instead, Middle English. \"Instead\" introduces that replacement. \"For this reason\" implies cause, and \"furthermore\" and \"likewise\" imply adding a similar point, not a substitute."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives a second example of an African American history course, this time at a different school, Virginia Tech. \"Elsewhere\" signals the shift to another location. \"In other words\" would restate the previous example, and \"thus\" wrongly suggests a cause-and-effect link."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because the audio gets more distorted as carbon levels rise, listeners can hear those changes; the second clause is a result of the first. \"Thus\" signals that result. \"For instance\" would introduce an example, and \"by comparison\" and \"furthermore\" don't express consequence."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A finding is the result of the study, and the result is that 65.3% of participants picked the unaltered Bic logo. Only choice A reports that result. The others just describe the logo, the altered versions, or what participants were asked to do.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• In a 2021 study, researchers showed participants an unaltered image of a popular character or logo alongside two slightly altered versions.\n• The Bic logo contains a cartoon man holding a pen.\n• In the first alteration, the man was holding a pencil.\n• In the second alteration, the man was holding nothing.\n• Participants were asked to identify the correct version.\n• 65.3% of participants selected the unaltered image."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To compare all three minerals, the sentence must rank diamond, quartz, and fluorite. Choice A uses all three Mohs numbers to show diamond (10) > quartz (7) > fluorite (4). Choice B leaves out fluorite, and C and D don't give a full comparison.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral fluorite has a Mohs scale number of 4.\n• The mineral quartz has a Mohs scale number of 7.\n• The mineral diamond has a Mohs scale number of 10."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mark Wood's role was as a touring electric violinist, and choice D states that directly along with his years with TSO. Choice B mentions his instrument but shifts the emphasis onto the dates, while A and C focus on TSO's musicians in general.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Trans-Siberian Orchestra (TSO) is a band from the United States that was created in 1996.\n• The band's sound combines the genres of hard rock and classical music, with an epic assembly of nearly fifty musicians that includes over a dozen singers.\n• Musicians are regularly invited to perform with TSO on tour.\n• Electric violinist Mark Wood toured with TSO from 1999 to 2008.\n• Guitarist Bill Hudson toured with TSO in 2015."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The contrast with \"may reduce expenses\" shows that for people far from ports, high transport costs could cancel out the savings from cheaper imports. \"Nullify\" means to cancel out. \"Underestimate\" and \"misconstrue\" describe mistakes in judgment that costs can't make, and \"denigrate\" means to belittle."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The artworks are now inaccessible because they need software that is no longer in use, such as Adobe Flash, which was discontinued. \"Defunct\" means no longer existing or functioning. \"Ubiquitous\" (everywhere) contradicts the point, and \"arcane\" or \"extraneous\" wouldn't explain why the works can't be viewed."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If working adults must support their parents longer, they have less money to save and invest, so their wealth creation is held back. \"Stymie\" means to hinder or block. \"Compound\" would mean increasing it, and \"disparage\" (criticize) and \"outstrip\" (exceed) don't fit how a policy affects wealth."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rising prices drew in new buyers who hadn't wanted vintage games before, which is counterintuitive because higher prices usually reduce demand. So rising prices created new demand; \"engendering\" means bringing about. \"Monetizing,\" \"appraising,\" and \"exploiting\" don't describe causing demand to appear."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first reports Green and Jutfelt's conclusion that acidification strongly affects the fish's behavior, then notes the small sample size and Clements's warning that small samples can produce biased, exaggerated results. That is a result followed by a concern about it. There's no solution offered (B) and no comparison of two similar studies (C)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence claims the predictive model \"is sure to be invaluable\" for planning a city's mix of amenities, which stresses how useful the model could be. Choice C is tempting, but the sentence praises the model's usefulness, not how accurately the algorithm finds boundaries. It also doesn't describe trends in Boston or a difficulty.",
+    "fix": {
+      "passage": "Researchers César A. Hidalgo, Elisa Castañer, and Andres Sevtsuk created a computer model to predict the mix of hotels, supermarkets, and other businesses found in a given neighborhood. How we define a neighborhood and its boundaries is subjective, so the team used a clustering algorithm to locate dense groupings of amenities that represent human-identified neighborhoods like Boston’s Harvard Square. <u>The predictive model, which incorporates this algorithm, is sure to be invaluable in determining the optimal mix of a city’s amenities.</u>"
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text summarizes earlier work on convergent evolution through shared and different genetic mechanisms, notes what remains poorly understood, and then explains that this gap motivated Green and Extavour's study. So it places their study in the context of their field. The text never criticizes the earlier work or evaluates Green and Extavour's conclusions."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says scholarship overstates fragmented narratives and neglects linear ones, and Text 2 says the focus on fragmentation versus coherence has hidden other shared stylistic features. Both believe current scholarship captures only part of the period's style. Choice D fails because Text 2 wants more attention to other stylistic elements, not to aspects beyond style."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Enke et al. argue that values are a luxury good: the higher one's income, the more freedom one has to vote based on one's values. So a higher income enables people to weigh certain considerations, such as moral views, when voting. Choice A goes too far by saying values become more likely to conflict with material interests, which the text never claims."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Joanna admires ambition and nothing else. Choice C says she was very interested in people with a \"purpose\" in life and \"otherwise not at all,\" which shows ambition is the only quality she cares about. Choices A and D describe Joanna's own traits, not what she admires in others."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A significant change means Hepworth's work after Pierced Form differs from her work before it. Choice A says her earlier sculptures belong to a style she never returned to, marking Pierced Form as a turning point. Choice D only praises the sculpture as her best, which doesn't show a change in her development."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For fruit flies to stand in for frogs in testing, they should absorb Ag-NPs at rates similar to the frogs. Choice C gives exactly that. Choice A is about tolerating the particles, not accumulating them, and B shows fly measurements are less consistent, which would weaken them as a proxy."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that younger dogs are worse at telling a familiar language from an unfamiliar one. Choice B shows that the difference in brain activity between the two languages shrank as the dogs got younger, which means younger dogs differentiated less. Choice A says all ages differentiated, and C is about overall activity rather than the difference between languages."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Scientists believe early-universe conditions were bad for forming quasars, yet about 200 quasars formed then anyway. That mismatch suggests something in the current understanding of quasar formation or the early universe is missing. Nothing in the text tells us when 3C 273 formed, how massive it is, or how bright early quasars are."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Sharma and Dayal found that consumers who see a product as more environmentally effective are more likely to buy it. College students rated the furniture higher on environmental effectiveness than any other group, so they may be more likely to buy it. Choices A and C contradict that link, and B ignores the difference the ratings show.",
+    "fix": {
+      "passage": "In a 2017 study, Nitika Sharma and Rekha Dayal found that for consumers who value environmental conservation, their likelihood of purchasing a product increased when their perception of the product's effectiveness at addressing an environmental issue increased—in other words, the more environmentally friendly a product is perceived to be by a consumer, the more likely that consumer is to buy it. Subsequently, another research team conducted a study of various demographic groups in South Korea, investigating participants' intention to purchase a new piece of furniture, and found that, on average, college students gave the piece of furniture a higher environmental effectiveness rating than any other demographic group did. Assuming that the results of Sharma and Dayal's study are broadly applicable, this finding suggests that ______"
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis says ultrasound defense evolved because it is cheaper than making noxious chemicals, so moths would use one instead of the other. But several genera that disrupt echolocation are also unpalatable, meaning they have both defenses. That suggests the low-cost explanation doesn't account for every case of the trait. Choice A overgeneralizes from \"several\" genera to all of them."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The words after the blank, Timeline of African American Music, name the \"important new initiative,\" and a colon is used to introduce such an explanation. A semicolon or period would require a complete sentence after it, but \"the Timeline ... between them\" is only a noun phrase. With no punctuation, the sentence would run together."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Linguist\" is a title placed right before the name Marian Klamer, so no punctuation goes between them, and no comma goes after the name before \"of Leiden University.\" Adding commas would wrongly treat the name as nonessential, and a colon cannot follow the preposition \"to.\""
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"the Hanseatic League, a loose confederation ...\" names the \"powerful mercantile alliance\" from the main clause, and a colon properly introduces it. A period or semicolon would leave a fragment, since the second part has no main verb, and no punctuation would run the two together."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the verb is the singular \"collection\"; the words \"of artworks by Indigenous peoples ... and other artists\" only describe it. A singular subject needs the singular verb \"ranks.\" \"Are ranked,\" \"rank,\" and \"have been ranked\" are plural and agree with the nearby plural nouns by mistake."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The names Ginger and Shaka are essential because they identify which lions are meant, so they are not set off by commas. No comma should separate the subject from its verb \"prowled\" either. The other options add commas that either mark the names as extra information or break the subject from the verb."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"honors,\" so the blank must start a modifier rather than add another main verb. \"Udé, having referred to Nollywood ... as ...,\" sets off a participial phrase between commas, leaving \"Udé ... honors\" as the core sentence. \"Udé has\" would create two main verbs without a conjunction, and \"Udé, has\" puts a comma between the subject and its verb.",
+    "fix": {
+      "passage": "Star actress Kiki Omeili, who has appeared in 47 Nollywood films, is one of numerous luminaries to be pictured in Nigerian portraitist Iké Udé’s exhibition Nollywood Portraits. _____ referred to Nollywood—Nigeria’s $3 billion film industry—as “Africa’s vivid mirror par excellence,” honors its legacy with his vivid classical portraits of Omeili and her peers."
+    }
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text contrasts an old 1998 Swedish wind farm making about 0.6 MW per turbine with a 2021 English farm making about 10 MW per turbine. \"In contrast\" signals that difference. \"For this reason\" implies cause, and \"granted\" and \"eventually\" don't signal a comparison between two examples."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say where Tristan Otto is, and choice B gives its location: on display at the Natural History Museum in Berlin, Germany. Choice C mentions the museum and Berlin but doesn't name Tristan Otto, and A and D give its genus and time period instead of its location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Tristan Otto is the nickname of a dinosaur fossil specimen from the Late Cretaceous period.\n• The Late Cretaceous period ended more than 65 million years ago.\n• Tristan Otto is a member of the genus Tyrannosaurus.\n• Tristan Otto is on display at the Natural History Museum.\n• The Natural History Museum is in Berlin, Germany."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The characteristics of the test site are that it was a mesic grassland in the United States with a subtropic climate and year-round rain, and choice B gives exactly these details. The other choices describe the study's result, its authors and date, or what was measured, not the site itself.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• In a 2003 study, Wilsey and Polley tested the effect of plant litter on seedling emergence in a grassland setting.\n• Plant litter includes dead leaves and other plant material.\n• The test site was a mesic grassland in the United States.\n• It was in a subtropic climate with year-round rain.\n• The researchers found that in these environmental conditions the presence of plant litter had a neutral effect on seedling emergence."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A narrative about someone's life naturally starts at the beginning, with where and when the person was born. Choice A does this by placing Merle Oberon in Mumbai in 1911. The other choices jump to her films and career, which belong later in her story.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Merle Oberon (1911–1979) was an actress born in Mumbai (then known as Bombay), India.\n• She was of Indian, Maori, and Irish heritage.\n• She was the first Indian-born actress to be nominated for an Academy Award.\n• Early in her career, she played many nameless, uncredited roles, such as her role in The Three Passions (1928).\n• Later, she played many named, credited roles, such as Serena Moore in Interval (1973)."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To connect Browner's quotation to a specific composition, the sentence must link the quote to a named work. Choice A pairs her observation that Ballard's music relies on Indigenous instruments with the fact that Cacéga Ayuwípí uses a Navajo water drum. Choices B and C discuss his music in general, and D names the work but leaves out the quotation's content.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• He sought to synthesize Western classical music with elements of various Native musical traditions.\n• Ballard's composition Cacéga Ayuwípí incorporates a Navajo (Diné) water drum, a traditional Native instrument.\n• Ethnomusicologist Tara Browner writes that Ballard's classical music “relies on Indigenous instruments, rhythms, forms,...and other musical elements.”"
+    }
+  }
+]

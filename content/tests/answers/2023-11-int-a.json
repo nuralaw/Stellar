@@ -1,0 +1,575 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence explains the problem: new batteries can't be put in once the old ones die, so the gadgets get thrown away. That means the batteries can't easily be \"replaced.\" \"Prevented\" or \"invented\" don't describe anything a user does with a dead battery, and \"rated\" has nothing to do with swapping batteries."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Garza draws from memories of her childhood and details of her surroundings, so her work grows out of direct experience. Being \"inspired by\" her experience captures that. \"Uncertain about\" and \"unbothered by\" contradict the idea that she actively uses her experience, and \"complimented by\" doesn't make sense here."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because summer squash looks so little like any wild plant, scientists needed genetic research to establish for certain that the Johnny gourd is its ancestor. \"Confirm\" means to show something is true, which fits. Researchers don't \"acquire,\" \"develop,\" or \"attract\" an ancestor; those words don't describe proving a relationship."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Theaters prefer keeping audiences happy over taking risks, and the word \"while\" contrasts their eagerness to stage a classic with their attitude toward an unknown playwright. So they would be reluctant, or \"hesitant,\" to stage the risky work. \"Determined\" and \"fortunate\" point the wrong way, and \"surprised\" doesn't express an attitude toward taking a risk."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first describes how natural and relaxed Argerich seems, then turns with \"however\" to explain that this ease comes from tremendous preparation. The whole passage builds toward that cause-and-effect point, which is what choice B states. Choice D is tempting because the text does describe how she approaches music, but that detail supports the main point about why her playing looks effortless rather than being the purpose itself.",
+    "fix": {
+      "choices": {
+        "A": "To provide details about how Argerich identifies which pieces of music she will perform."
+      }
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase \"known collectively as the silversword alliance\" tells us what the whole family of plants is called, and the rest of the text keeps using that name. So it supplies a name for a group of related species. It doesn't list any species (A), and it names the whole group rather than giving a common name for Dubautia waialealae alone (B).",
+    "fix": {
+      "passage": "Dubautia waialealae is a species in a family of plants <u>known collectively as the silversword alliance</u>, all of which grow only on the Hawaiian Islands. Members of this alliance exhibit an extraordinary range of phenotypes, with some species maturing into vines and others into shrubs and trees. All species in the alliance descended from a single ancestral tarweed plant that arrived on the islands around 5 million years ago. The tarweed’s descendants diversified into distinct species as they adapted to live in the wide variety of habitats found on the Hawaiian Islands."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator says people are \"creatures of the sun\" who love light and life, and that this is why they crowd into towns; at night the quiet country frightens them and they long for streets and human voices. The passage is explaining what in human nature draws people to cities. Choice A is tempting, but the loneliness described happens in the empty countryside at night, not in crowded areas.",
+    "fix": {
+      "passage": "The following text is adapted from Jerome K. Jerome’s 1889 novel Three Men in a Boat (To Say Nothing of the Dog).\n\nWe [people] are creatures of the sun. We love light and life. That is why we crowd into the towns and cities, and the country grows more and more deserted every year. In the sunlight—in the daytime, when Nature is alive and busy all around us, we like the open hill-sides and the deep woods well enough: but in the night, when our Mother Earth has gone to sleep, and left us waking, oh! the world seems so lonesome, and we get frightened, like children in a silent house. Then we sit and sob, and long for the gas-lit streets, and the sound of human voices, and the answering throb of human life."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says the northern pike will fare much worse under warming and will need conservation efforts, while the deer likely won't. Text 2 says agencies can't address every threat and must focus on the species most in need. Together, both would support prioritizing the pike over the deer. Choice D fails because Text 1 suggests the deer doesn't need conservation efforts, and neither text discusses stopping warming (A) or combining agency and tribal knowledge (C).",
+    "fix": {
+      "passage": "Text 1\nAccording to a study by a conservation group representing 11 tribal nations in the Great Lakes region, the northern pike (ginoozhe in the Ojibwe language) will have significantly worse outcomes over the next 50 years if temperatures increase as much as some models suggest. By contrast, the white-tailed deer (Waawaashkeshi in Ojibwe) should be able to withstand the highest predicted warming without much harm and so likely won’t require the conservation efforts that the northern pike will.\n\nText 2\nUS government agencies involved in conservation are unfortunately not able to address every possible threat to natural resources. They must use the best information available to decide which species are most threatened and therefore most in need of conservation efforts.",
+      "choices": {
+        "D": "State, federal, and tribal groups involved in natural-resource management in the Great Lakes region should immediately begin conservation programs for both the northern pike and white-tailed deer."
+      }
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last sentence says some historians suggest that Maya mathematicians inherited the zero symbol from the Olmec civilization. Choice A restates exactly that. The other choices bring in ideas the text never mentions, such as how the Maya viewed historians or whether they kept their achievements secret.",
+    "fix": {
+      "passage": "The ancient writing system used in the Maya kingdoms of southern Mexico and Central America had a symbol for the number zero. The earliest known example of the symbol dates to more than 2,000 years ago. At that time, almost none of the writing systems elsewhere in the world possessed a zero symbol. And the use of zero in Mexico and Central America may be even more ancient. Some historians suggest that Maya mathematicians inherited it from the Olmec civilization, which flourished in the region 2,400–3,600 years ago."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The energy ladder explains fuel choice mainly by one thing, household income. Heltberg found that fuel use in Guatemala was flexible and shaped by several factors, such as local fuel prices, so the model oversimplifies. Choice A goes too far by claiming households ignore income entirely, and choice C invents a contrast with Costa Rica that the study didn't make."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the banker is very upset. Choice D shows him lying in bed unable to sleep for hours because of his \"tears and emotion,\" which clearly shows distress. The other quotations show him acting cautiously, listening in a quiet house, or even being \"delighted,\" which is the opposite of upset."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The mesophotic zone starts at 30 meters. Porites nodifera is never found deeper than 15 meters, the farthest of any species from that zone, so it seems least able to move there completely. Choice A is tempting, but Acropora striata reaches 25 meters, much closer to 30 than Porites nodifera does, and Agaricia grahamae already lives down to 115 meters.",
+    "fix": {
+      "passage": "Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler, darker mesophotic zone (30 to 150 meters below the surface). However, it isn’t clear that all such species will be able to tolerate mesophotic conditions. In 2018, Luiz Rocha and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is _____",
+      "table": {
+        "caption": "Minimum and Maximum Depths of Stony Coral Species in Caribbean and Indo-Pacific Waters",
+        "headers": [
+          "Species",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Acropora striata",
+            "10",
+            "25"
+          ],
+          [
+            "Porites nodifera",
+            "5",
+            "15"
+          ],
+          [
+            "Pocillopora meandrina",
+            "1",
+            "27"
+          ],
+          [
+            "Agaricia grahamae",
+            "20",
+            "115"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis predicts that, with large vortices and low visibility, intermediate-headed fish will detect obstructions better than narrow-headed fish. If the narrow-headed lookdown bumps into obstructions more often than the intermediate-headed Lobocheilos, that is exactly the predicted difference. Choice A shows no difference, which would weaken the hypothesis, and choices B and D look at only one head shape, so they can't compare the two.",
+    "fix": {
+      "passage": "Water flowing around an obstruction creates vortices (patterns of swirls) of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing by Yuzo R. Yanagisuru, Otar Akanyeti, and James C. Liao using models of three head shapes—narrow (low ratio of width to length), intermediate, and wide (high ratio of width to length)—showed that for large vortices, fish with intermediate heads would be better able than narrow-headed fish to distinguish between vortices and general turbulence in the water. A second research team has therefore hypothesized that in low-visibility conditions, intermediate-headed fish will be more likely than narrow-headed fish to detect obstructions that create large vortices."
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second student claims that smaller areas were affected and that congestion also worsened over time. In the graph, the bars for New York City, Allentown-Bethlehem, and Beaumont are all taller in 2000 than in 1990, so delay grew in every area, large and small. Choice C gets the graph wrong (New York's bars are always the tallest), and choices B and D describe single low values that don't show any worsening.",
+    "fix": {
+      "passage": "In a college course on urban affairs, a student asserts that traffic congestion in the United States increased between 1990 and 2000 mostly in and around very large cities such as New York City, New York. A second student claims that not only were smaller areas such as Allentown-Bethlehem, Pennsylvania, and Beaumont, Texas, affected by traffic congestion but in very large cities such as New York City, New York, this congestion also worsened over time."
+    },
+    "note": "Passage printed 'The student claims' for the second student; changed to 'A second student claims' to match the question."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The study found that the more users see a premium service as beneficial, the more they intend to pay for it. It follows that companies could gain subscribers by shaping how beneficial potential users think the premium version is. Choice A overreaches, since the study never ruled out other factors, and choice C contradicts the way the researchers used that statement to measure performance expectancy."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank finishes a statement about what the team investigated, so it is an indirect (embedded) question. Embedded questions use statement word order (\"their use could be\") and end with a period, not a question mark. Choices A and D flip the order like a direct question, and choice C wrongly ends a statement with a question mark."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"The chapter,\" which is singular; the clause \"whose boundaries encompass 83,400 acres\" just describes it. A singular subject takes the singular verb \"is.\" The plural noun \"boundaries\" is the trap that makes \"are,\" \"have been,\" or \"were\" look right."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"through community involvement and scientific study\" is an interruption that opens with a dash after \"that,\" so it must close with a matching dash. \"Study—\" completes the pair and lets the sentence continue with \"aim to bring adjutants back.\" A comma, colon, or no punctuation would leave the opening dash unmatched."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"National Heritage Areas,\" which is plural; the phrase \"like the Arabia Mountain National Heritage Area in Georgia\" is just an example. A plural subject needs the plural verb \"are.\" The singular choices (\"has been,\" \"was,\" \"is\") are tempting only because the nearest noun, \"Area,\" is singular."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"In part due to its sheer size\" is extra information set off by a comma after \"dislodge.\" What follows (\"it's as heavy as two thousand blue whales\") is a complete sentence that explains that size, so a colon correctly links the two clauses. Choices C and D create comma splices or run-ons, and choice A runs the size phrase straight into \"dislodge\" while still splicing two sentences with a comma."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives one reason Hilo soil is a fitting state soil (it's abundant), and the next sentence gives another reason (it matters to Hawaii's agriculture). \"Additionally\" signals that a second, similar point is being added. \"Alternatively\" and \"By contrast\" suggest a different or opposing idea, and \"At that time\" signals a time sequence."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize Ammal's achievement, the sentence should credit her by name with what she did and the successful result. Choice A says that by crossbreeding the species she succeeded in creating hybrids suited to India's climate. Choice D describes the crossbreeding but never names Ammal or the success, and choices B and C focus on the institute's goals instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In the 1930s, the Imperial Sugar Cane Institute in India sought to limit the country’s dependence on imported sugarcane.\n• The institute enlisted botanist Janaki Ammal to breed a local variety of sugarcane.\n• She crossbred the imported sugarcane species Saccharum officinarum with grasses native to India.\n• She succeeded in creating sugarcane hybrids well suited to India’s climate."
+    }
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize the sculpture's size, so the sentence should name Cycle and give its dimensions. Choice B says it stretches roughly 62 feet wide and 56 feet tall. The other choices mention Serra's large sculptures in general or the material, but none gives the actual size of this sculpture.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Richard Serra is an American artist.\n• He is known for his large metal sculptures.\n• His sculpture Cycle is roughly 62 feet wide and 56 feet tall.\n• It is made from weathering steel."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must be something the two specimens share. Both Jane and Fafnir lived in the Late Cretaceous period, and choice A says exactly that with the word \"Both.\" Choice B points out a difference (their locations), and choices C and D don't compare the two specimens at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Dinosaur fossil specimens can be found at science museums all over the world.\n• A dinosaur fossil specimen nicknamed Jane is housed at the Burpee Museum of Natural History in Rockford, Illinois.\n• Jane, a Tyrannosaurus, lived in the Late Cretaceous period.\n• A dinosaur fossil specimen nicknamed Fafnir is housed at the Science Museum of Minnesota in Saint Paul, Minnesota.\n• Fafnir, a Triceratops, lived in the Late Cretaceous period."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say chapter 1 outlines the origins and use of the term nostalgia, and choice A states this and names chapter 1. Choice B quotes chapter 17, not chapter 1. Choice C mentions the chapter 1 content but shifts focus to chapter 17, and choice D describes the whole book rather than chapter 1.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Future of Nostalgia is a scholarly book by literary theorist Svetlana Boym.\n• The book explores the concept of nostalgia from various angles.\n• Chapter 1 outlines the origins and use of the term nostalgia.\n• Chapter 17 discusses various skeptics’ takes on the concept of nostalgia.\n• In chapter 17, Boym writes, “The poetics of nostalgia combines estrangement and human solidarity, affect and reflection.”",
+      "prompt": "The student wants to explain what Svetlana Boym writes about in chapter 1. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To give an example of a poem from Morning Haiku, the sentence must name a poem and connect it to that book. Choice A says \"5 love haiku\" is included in Morning Haiku and describes its form. Choice D describes the poem but never names it or links it to the book, and choices B and C talk about Sanchez's reasons or the book's themes instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The poem “5 love haiku” is by African American writer Sonia Sanchez.\n• It was published in her 2010 poetry book entitled Morning Haiku.\n• The poem is written as a sequence of five haiku.\n• According to the book’s publisher, Penguin Random House (PRH), the book “celebrates the gifts of life and mourns the deaths of revered African American figures.”\n• According to Sanchez, she chose to write in the form of haiku because it helps “maintain memory and dignity.”"
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Comparing sinuosity means saying which river is curvier. Fort Nelson is high sinuosity, so its stream-to-valley ratio is above 1.5:1, while Wadi Al-Hamd's is at or below that, and choice C states this comparison. Choice A compares locations, not sinuosity, and choices B and D only explain how sinuosity is measured without saying how the two rivers differ.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A river’s stream length is the length of a line that follows along the river path.\n• A river’s valley length is the length of a straight line drawn from the beginning of the river to the end.\n• The river’s curviness, or sinuosity, is the ratio of the river’s stream length to its valley length.\n• This ratio is less than or equal to 1.5:1 in low-sinuosity rivers and greater than 1.5:1 in high-sinuosity rivers.\n• The Fort Nelson River in Canada has high sinuosity.\n• The Wadi Al-Hamd River in Saudi Arabia has low sinuosity."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text explains that excavation can take weeks or months of hard, physically tiring work. That describes a \"difficult\" process. \"Rapid\" contradicts the long time it takes, and nothing in the text is about cost (\"cheap\") or how often it happens (\"common\")."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Pops says you can \"tell a man's worth\" by how many books he owns, meaning you can figure out or evaluate a person's value. \"Judge\" captures that sense of assessing. \"Teach,\" \"urge,\" and \"adore\" are other meanings or associations of words about speaking, but they don't fit assessing someone's worth.",
+    "fix": {
+      "passage": "The following text is from Lilliam Rivera’s 2020 novel Never Look Back. The text describes the narrator looking around his father’s apartment.\n\nPops’s pride and joy is his wall of towering bookshelves. He once said you can tell a man’s worth by the number of books he owns. I guess this means Pops is overflowing with riches because ever since I can remember I was never without a book within reach."
+    }
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains the requirement: no two minor planets may share a name. So a name must belong to that body alone, or be \"exclusive to\" it. \"Evocative of\" and \"typical for\" don't express uniqueness, and \"superseded by\" (replaced by) makes no sense here."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The example shows what corpora measure: how often a word like \"world\" is used, proving it is the eighth most common noun. So the blank must mean widespread or frequent, which is \"pervasive.\" \"Credible,\" \"assertive,\" and \"profound\" describe a word's truth, tone, or depth, not how commonly it appears."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator says there's a chance she'll make the team, then explains why: although she's small, she's quick, wiry, and tough and can dodge under taller players to grab the ball. Choice D captures that purpose. The text doesn't explain how players are chosen (C), compare sports (A), or give general rules for playing (B).",
+    "fix": {
+      "passage": "The following text is adapted from Jean Webster’s 1912 novel Daddy-Long-Legs. The narrator is a young college student writing letters detailing her weekly experiences.\n\n[The college is] organizing the Freshman basket-ball team and there’s just a chance that I shall make it. I’m little of course, but terribly quick and wiry and tough. While the others are hopping about in the air, I can dodge under their feet and grab the ball."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence gives the bone its name, the hyoid, and the rest of the passage uses that term to explain how the rigid or flexible hyoid leads to purring or roaring. So it introduces a term used later. Choice D is tempting, but the location (in the throat) was given in the sentence before; the underlined sentence only names the bone.",
+    "fix": {
+      "passage": "Why do jungle cats purr but leopards roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats. <u>This bone is called the hyoid.</u> Jungle cats, which are much smaller than leopards, have a rigid hyoid that rumbles when the cat’s larynx vibrates, resulting in a purr. By contrast, leopards have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that jungle cats lack. These traits allow leopards and most other species of big cats to roar. The same traits may also prevent most big cats from purring."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says people long thought tool use was unique to primates, then gives octopuses and parrots as examples of other animals using tools. The main idea is that primates aren't the only tool users. Choice A wrongly compares octopuses' skill to primates', and choice B is too broad, since the text discusses only one myth."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Hooks and Ward met while performing in a 1960 touring production of A Raisin in the Sun, so both were actors in that production. The Great Macdaddy came later, in 1974, after they had already founded NEC, so choices A and B are wrong, and the text never says they met at an NEC workshop."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 1910 to 1925 the number of cars produced rose from 123,990 to 3,185,881, while the number of companies fell from 320 to 80. Choice A describes both trends correctly. The other choices say one or both numbers stayed the same or moved in the wrong direction.",
+    "fix": {
+      "passage": "A student is using the table as part of a social studies class presentation on the US auto industry in the early twentieth century. The student notes that, according to the table, from 1910 to 1925 _____",
+      "table": {
+        "caption": "Annual Car Production in the United States, 1910-1925",
+        "headers": [
+          "Year",
+          "Number of cars produced",
+          "Number of companies producing cars"
+        ],
+        "rows": [
+          [
+            "1910",
+            "123,990",
+            "320"
+          ],
+          [
+            "1915",
+            "548,139",
+            "224"
+          ],
+          [
+            "1920",
+            "1,651,625",
+            "197"
+          ],
+          [
+            "1925",
+            "3,185,881",
+            "80"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim compares viewing time in a museum with viewing time online. Choice A gives exactly that comparison: about three minutes at the museum versus one minute online for The Card Game. The other choices are about how many works are online, where visitors come from, or which museums own Lawrence's art, none of which involves viewing time.",
+    "fix": {
+      "passage": "The Card Game is a painting by Jacob Lawrence, dated 1953. It’s part of the full collection of the SCAD Museum of Art in Savannah, Georgia. A digital image of it can also be found in an online collection. In a paper, a student claims that <u>people usually spend more time viewing a work of art in a museum than they do online.</u>"
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The report proposed many more measures for birds than for arthropods, yet conservationists thought all wildlife would be protected. That only makes sense if the bird measures also help arthropods, which is choice A. Choice D would give conservationists a reason to worry, and choices B and C don't explain why fewer arthropod-specific measures would still be enough."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Dreadnought and the Caledonia both had three decks, but only the Caledonia was first-rate. So having three decks did not guarantee a first-rate ranking, which is choice A. Choice B is contradicted by the Dreadnought, which had 98 cannons but wasn't first-rate, and choice C fails because the 850-875 crew size was for first-rate ships."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Desai's study found that strong democracy combined with low inequality holds inflation down. Austria has exactly that combination yet had higher inflation than Cameroon in 2017, so something other than its political structure must have pushed its inflation up. Choice D repeats the critique the study argues against, and choice B is wrong because the study's logic predicts Austria's low inequality would lower its inflation, not raise it."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the three researchers and the verb is \"compiled,\" and \"climate data\" is its direct object. No punctuation belongs between a verb and its object. A comma, semicolon, or colon after \"compiled\" would wrongly cut the verb off from what it acts on.",
+    "fix": {
+      "passage": "On February 1, 2018, Florida-based researchers Martha A. Scholl, Maoya Bassiouni, and Angel J. Torres-Sánchez _____ climate data from several sites in Puerto Rico’s Luquillo Mountains. At 8:30 a.m., the air temperature was 16°C at site CC1, the site with the highest elevation, and it had shifted to 16.8°C by 11:00 p.m."
+    },
+    "note": "Source passage had 'compiled' printed both in the blank and after it; removed the duplicate."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"The average summer temperature is just 66.7 degrees\" is one simple clause: subject, verb, and complement. Nothing should separate the verb \"is\" from the rest. A semicolon, colon, or comma would interrupt the sentence where no break belongs."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank is an answer to the question just asked, so it should be a statement in normal word order ending with a period: \"it was invented by an author.\" Choice A puts a question mark on a statement, and choices C and D use question word order, which doesn't fit an answer."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence \"A decade later, Land _____ his technology\" needs a main verb, and the events are in the past. \"Used\" is a past-tense verb that completes the sentence. \"To have used,\" \"to use,\" and \"using\" aren't main verbs, so they would leave the sentence incomplete."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"The strings inside the instrument are plucked\" has the subject \"strings\" and the verb \"are plucked,\" with \"inside the instrument\" describing the strings. Nothing should come between the subject phrase and its verb. A colon, dash, or period after \"instrument\" would split the subject from its verb.",
+    "fix": {
+      "passage": "A harpsichord may look just like a piano, but the difference between the two instruments is easy to hear. When a harpsichord’s keys are pressed, the strings inside the _____ are plucked not struck."
+    }
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The writer is asking a direct question (\"What are atmospheric rivers, and how...\"), so the second part also needs question word order and a question mark: \"do they affect our weather?\" Choice A has question order but ends with a period, and choices B and D use statement order, which doesn't match a direct question."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The impact of Simpson's work is threefold\" is a complete sentence, and what follows lists the three parts of that impact. A colon introduces a list or explanation after a complete clause. A semicolon (A) must join two complete clauses, but \"expanding...\" isn't one, and choices B and C either run the ideas together or create a fragment."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence says the statues are extremely heavy, and the next one backs that up with a striking detail: each weighs more than 5 tons. \"In fact\" introduces information that reinforces and intensifies a claim. \"Instead\" signals a replacement, \"Earlier\" a time shift, and \"In any case\" a dismissal, none of which fits."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text moves from Gomez's 2014 storytelling win to something he did in 2017. \"Later\" shows that time order. \"For example\" and \"In other words\" would mean the 2017 show illustrates or restates the win, and \"Instead\" suggests he did this in place of something else."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The sentence before the blank says Montaigne always questions his own perspective, so a transition that concedes that point and adds a contrasting idea fits best. \"Still\" means \"even so\" and sets up a contrast with that self-questioning. \"Conversely\" signals a full reversal, \"Nowadays\" a jump to the present, and \"Fittingly\" agreement rather than contrast.",
+    "note": "The sentence that follows the blank is missing in the source and on the printed page, so the question can't be fully checked; answer D is as printed."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says it was rare for railroad supporters to be secretive; the next sentence describes what was more common, being vocal like LeMoyne. \"More often\" presents that typical case in contrast to the rare one. \"For example\" would need an example of the rare secretive behavior, and \"Granted\" or \"Fittingly\" don't express this contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize when Mexía collected both samples, so the sentence needs both dates. Choice D gives May 1930 for Achyrocline vauthieriana and February 1927 for Vernonia liatroides. Choice B gives only one date, choice C gives locations instead of dates, and choice A mentions neither sample.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ynés Mexía was a Mexican American botanist.\n• Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.\n• She collected a sample of Achyrocline vauthieriana in Minas Gerais, Brazil, on May 3, 1930.\n• She collected a sample of Vernonia liatroides in Jalisco, Mexico, on February 14, 1927.\n• These specimens are members of the Asteraceae family.\n• They can now be viewed online at the C.V. Starr Virtual Herbarium."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize Sirius A's mass, the sentence should state it and show what it means. Choice D gives 2.063 solar masses and points out that this makes Sirius A more massive than the Sun. The other choices never mention Sirius A at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In astronomy, the mass of stars can be described in units called solar masses.\n• One solar mass is roughly equal to the mass of the Sun.\n• The mass of the star Proxima Centauri is 0.122 solar masses.\n• The mass of the star Sirius A is 2.063 solar masses."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must be something both programs share. Choice D says both are documentary programs in the slow TV genre that show ordinary events in real time. Choices B and C point out differences (subject and running time), and choice A describes only one program.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Documentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time.\n• All Aboard! The Sleigh Ride (running time: 2 hours) is a British slow TV program that aired in 2015.\n• It documented a sleigh ride along an arctic postal route.\n• Monsen: Minutt for Minutt (running time: 5 hours) is a Norwegian slow TV program that aired in 2020.\n• It documented a hike from Stigstuv to Rauhelleren in Norway."
+    }
+  }
+]

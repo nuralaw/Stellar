@@ -1,0 +1,574 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Truly shines\" means Pheus really shines when performing, and the next sentence backs this up by saying he becomes a more heightened version of himself in front of an audience. \"Really\" fits that emphasis. \"Obediently\" and \"impolitely\" describe behavior, not degree, and \"scarcely\" would say the opposite.",
+    "fix": {
+      "passage": "The following text is from Lilliam Rivera’s 2020 novel Never Look Back. The text describes the narrator’s friend Pheus, a young musician, after finishing a performance during a church service.\n\nPheus pulls a handkerchief from his back pocket and wipes his forehead. I mime a quiet clap for him. He does a slight bow and flashes his dimples. This is where Pheus truly shines. When Pheus is in front of an audience, it’s as if he becomes another person, a more heightened version of himself."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon introduces evidence that the team has found over one hundred satellites, while many astronomers find only one or two, so their discoveries have been \"plentiful.\" \"Random\" and \"likely\" don't describe a large number, and \"inferior\" contradicts the praise implied by the comparison."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The ablution area is described as one of the features almost always included in mosques, a standard feature, so it is a \"hallmark\" (a typical, identifying characteristic) of mosque architecture. \"Duplicate\" and \"rejection\" make no sense here, and \"motivation\" suggests a reason for building mosques rather than a characteristic feature."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ecologists have reservations about the usefulness of the traditional descriptions, which makes sense only if real observations don't match those descriptions, so there are \"discrepancies between\" them. \"Affinities between\" (similarities) would support the descriptions instead of casting doubt on them, and \"proclamations of\" or \"recurrences of\" don't express a mismatch between two things."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence defines vertical gene transfer (parent to offspring) and sets it against horizontal gene transfer (between unrelated organisms), explaining one process by contrasting it with a related one. It proposes no future research (A), stresses differences rather than hidden similarities (C), and the flawed perception (D) is raised only later in the text.",
+    "fix": {
+      "passage": "<u>Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship.</u> While horizontal gene transfer is common among prokaryotes—single-celled organisms, such as the bacteria Brevundimonas diminuta and Lactobacillus curvatus—it has rarely been observed among eukaryotes (multicellular organisms). However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A fall 1838 entry ties the struggle for survival to an inference from Malthus, an economist, and a notebook begun in October 1838 mentions \"the grand crush of population,\" so by or before October 1838 Darwin was applying an economic idea to biology. Choice D overstates things: Malthus wrote about human population and food, not natural selection \"in the same terms.\" Nothing supports entries from 1858 (A) or Malthus basing his ideas on animal behavior (B)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first introduces a survey study of park use in Bogotá and Fortaleza and its results, then considers one possible explanation for the difference (better access to nonpark amenities in Bogotá) and rejects it because Bogotá respondents actually reported less access. There aren't two separate studies (A), the finding isn't blamed on the survey method (C), and no planning question is answered (D)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Most of Erdrich's writing portrays everyday life in Ojibwe communities, but The Crown of Columbus is set largely on a Caribbean island, so it isn't set in a rural Ojibwe community. The text says nothing about a movie adaptation, the amount of dialogue, or the characters' backgrounds."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Ramchand notes \"guiltily\" that all the other shop assistants are already in place, which shows he feels bad about arriving later than they did. The jalebi frying is just part of the scene, not something he's mesmerized by (B), and the other assistants seem orderly, not chaotic (C), with nothing showing they or he are happy (D).",
+    "fix": {
+      "passage": "The following text is adapted from Rupa Bajwa’s 2004 novel The Sari Shop. Ramchand works as an assistant in a shop in Amritsar, India.\n\nEven at ten in the morning, the bazaar was throbbing with activity. The halwai [baker] was already installed in front of the Mishthaan Sweet Shop, pressing jalebi batter into squiggly shapes that floated and simmered in the oil in a big iron cauldron. All the shops had opened for the day and, Ramchand noted guiltily, all the shop assistants were already in place, trying to sell things with fixed, attentive smiles on their shiny, bathed faces."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show that 36 wasn't the lowest count, the choice must give a count below 36, and the table lists only 9 spotted frillgobies at station 3. Choices A and D give accurate counts that are higher than 36, and B misreads the table: station 3 had 136 blackspot sergeants, not 9.",
+    "fix": {
+      "passage": "Lin-Tai Ho and colleagues tracked fish populations in three tide pool-monitoring stations in Taiwan from 1999 to 2018. Although a total of only 36 cheekscaled frillgobies were observed at station 3, that was not the lowest count at any station: _____",
+      "table": {
+        "caption": "Cumulative Counts of Fish in Three Taiwanese Tide Pools, 1999–2018",
+        "headers": [
+          "Species",
+          "Station 1",
+          "Station 2",
+          "Station 3"
+        ],
+        "rows": [
+          [
+            "spotted frillgoby",
+            "40",
+            "42",
+            "9"
+          ],
+          [
+            "blackspot sergeant",
+            "338",
+            "261",
+            "136"
+          ],
+          [
+            "cheekscaled frillgoby",
+            "38",
+            "45",
+            "36"
+          ],
+          [
+            "triplefin blenny",
+            "149",
+            "65",
+            "78"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion is that telling real from fake laughter is universal across cultures, and B shows participants did better than chance and that the two kinds of laughs were recognized at similar rates across all 21 societies. Choice D covers only Austria and Samoa, too few to show universality. Choice A suggests the ability depends on a society's economic conditions, which works against universality, and C is about the laughs themselves, not listeners' judgments."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With large vortices, narrow-headed fish feel strong pressure fluctuations at the snout while wide-headed fish feel little, so the hypothesis predicts wide-headed fish will hit obstructions more. Choice C says the wide-headed devil catfish bumped into obstructions more often than the narrow-headed needlefish, which matches. Choice B (equal rates) would undercut the hypothesis, and A and D look at only one species, so they make no comparison."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion is that some species manage oxygen storage and diffusion with almost no help from Mb, so the evidence needs a healthy species with nearly no Mb. P. buchholzi averaged just 0.02, with white heart tissue. Choice B is accurate about variation, but low variation doesn't show low Mb levels, and A and D describe patterns among the species that don't bear on the conclusion.",
+    "fix": {
+      "passage": "Myoglobin (Mb) is a protein that primarily aids in oxygen storage and diffusion across the mitochondrial membrane in cardiac muscle cells; these are necessary functions in aerobic organisms, including teleost fish. Carrying out these functions typically requires Mb to be expressed at high levels, evidenced by red heart tissue. The table shows the average Mb levels and their standard deviations (indicating how dispersed the Mb levels of individual fish are in relation to the average) of three teleost fish species, as calculated by Daniel J. Macqueen et al. Based on the data, the researchers concluded that for some teleost species, oxygen storage and diffusion may occur with negligible assistance from Mb.",
+      "table": {
+        "caption": "Myoglobin (Mb) Levels in the Cardiac Tissue of Three Teleost Species",
+        "headers": [
+          "Species",
+          "Heart tissue color",
+          "Average Mb level",
+          "Standard deviation of Mb level",
+          "Number of healthy fish observed"
+        ],
+        "rows": [
+          [
+            "Anguilla anguilla",
+            "red",
+            "33.30",
+            "11.39",
+            "3"
+          ],
+          [
+            "Bunocephalus coracoideus",
+            "red",
+            "18.02",
+            "0.59",
+            "3"
+          ],
+          [
+            "Pantodon buchholzi",
+            "white",
+            "0.02",
+            "0.01",
+            "4"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The meta-analysis says at least 176 individuals are needed before population-level handedness can be trusted, and the 1991 study used only 14, so its claim deserves skepticism. Choice A claims to know how common right-handedness really is in chimpanzees, which the text doesn't establish. Choices B and C bring in the gorilla study's methods and sample size, which don't explain why the chimpanzee claim is weak.",
+    "fix": {
+      "passage": "Right-handedness is overwhelmingly prevalent in humans. Among studies of laterality in nonhuman primates, Dulce D. Shafer’s 1988 study of captive gorillas reported no tendency toward right-handedness, while S.G. Lutz-Maki and P.F. MacNeilage’s 1991 study of captive chimpanzees did. However, the latter study included only 14 individuals, and a meta-analysis of primate-laterality studies demonstrated that a minimum sample size of 176 individuals is required to be confident that a finding of population-level handedness is not mere statistical noise. The claim of right-handedness in the 1991 study should therefore be treated skeptically given that _____",
+      "choices": {
+        "D": "the sample size on which the claim is based is far below the threshold identified in the meta-analysis."
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence describes a completed past event (\"When we arrived\"), and the next sentence continues in the past (\"Later that day, our hosts remarked\"), so the simple past \"noticed\" is needed. The present (A), present progressive (B) and future (C) tenses clash with that past-time frame."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank holds the first two items of a three-item list (two readings plus \"16°C at 5:00 p.m.\"), so a comma must follow each item: \"15.4°C at 1:00 a.m., 18.6°C at 11:30 a.m., and 16°C…\" Choices A and B run the first two items together with no separating comma, and C puts commas inside each item, splitting a temperature from its time."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"To this day\" signals the present, and the plural subject \"emulsifiers\" needs a plural verb, so \"are used\" is correct. \"Were\" and \"were being\" put the use in the past, and \"would have been\" describes a hypothetical, which clashes with \"to this day.\""
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"writers\" (the phrase \"including Diallo\" doesn't change that), so the verb must be plural: \"have begun,\" which also fits \"In recent years.\" Choices A, B and D are singular verbs that would agree only with \"Diallo\" or \"Guinea.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The list names three deserts, each followed by a comma-set rank phrase, so semicolons must separate the items: \"the Syrian Desert, ranked ninth in size; the Kyzylkum Desert, ranked sixteenth; and the Chalbi Desert….\" Choice A swaps the comma and semicolon, C has no punctuation between items, and D wrongly separates the Kyzylkum Desert from its own rank with a semicolon."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the relative clause \"tales of whose exploits … _____ myths,\" the subject \"tales\" needs a finite verb, so \"eventually became\" is correct. The participles \"having eventually become\" and \"eventually becoming\" and the infinitive \"to eventually become\" can't serve as the clause's main verb, leaving it incomplete."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence is set in 1929, and the second says the discovery in corn came \"decades later,\" so \"Eventually\" correctly marks a later point in time. \"Earlier\" reverses the timeline, and \"In other words\" and \"For example\" wrongly treat the plant discovery as a restatement or an instance of the 1929 assumption."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Cunningham's approach was radical, then adds a second point, that he applied it with great skill, which explains why his pieces were seen as groundbreaking artworks and not just experiments; \"Moreover\" adds that point. Choices B and C give facts (his dancing, his company) that don't lead to the \"resulting in\" clause, and D's \"In contrast\" sets up an opposition that isn't there."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Demonstration sports were meant to showcase sports tied to the host country, so it makes sense that the Dutch sport korfball appeared in Amsterdam and Japanese kyūdō in Tokyo; \"Fittingly\" expresses that appropriateness. \"By contrast\" and \"Nevertheless\" wrongly signal a conflict, and \"Additionally\" just adds a point without capturing the match between sport and host."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show a difference, the sentence has to contrast the two musicians, and B does: Quiñones played guitar, whereas Catchings played cello. Choice A states a similarity, C mentions only Quiñones, and D talks about the albums, not the musicians.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• India Arie is an African American singer and songwriter.\n• The media outlet NPR has described her music as having an “acoustic guitar-driven groove and lyrics celebrating self-confidence.”\n• Her acclaimed albums feature many talented musicians.\n• Ricky Quiñones played guitar on her second studio album, Voyage to India (2002).\n• John Catchings played cello on her first studio album, Acoustic Soul (2001)."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity needs both isthmuses, and C says both connect two larger pieces of land across water. Choice A only defines an isthmus, while B and D each mention just one of the two.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• An isthmus is a strip of land that connects two larger pieces of land across an expanse of water.\n• It is also known as a land bridge.\n• The Isthmus of Suez is located in North Africa.\n• It connects the Mediterranean Sea to the Red Sea.\n• The Auckland Isthmus is located in New Zealand.\n• It connects the North Island to Auckland.",
+      "prompt": "The student wants to emphasize a similarity between the Isthmus of Suez and the Auckland Isthmus. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give an example, and C names a specific position, third position, as an example from Cecchetti method ballet. Choices A, B and D make general statements about positions and never name a particular one.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Body positions are an important part of dance.\n• In Cecchetti method ballet, there is a position called third position.\n• It is one of several positions for the dancer’s arms."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only D states how strong ma-konbu's umami is: study participants rated its umami intensity as high. Choice A defines umami without mentioning ma-konbu, B gives only where samples were collected, and C lists ma-konbu among umami foods without saying anything about intensity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Receptors in the human tongue can detect sweetness, saltiness, sourness, bitterness, and umami.\n• Umami is a rich, savory flavor.\n• Umami is triggered by the compounds in a variety of foods, including ham and mushrooms.\n• Participants in a research study tasted samples of ma-konbu (a type of brown seaweed) collected from Hokkaido, Japan.\n• On average, they rated its umami intensity as high."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The book was one of the presenter's childhood favorites and inspired her career, so she credits her inspiration to \"an affinity for\" (a natural liking for) Southerland's work. \"Ambivalence\" (mixed feelings) and \"complacency\" don't fit a favorite book that inspired her, and \"a stipulation about\" (a condition) makes no sense here."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Visitors who have seen the museum's collection can add to that experience by finding art on Chicago's streets, so they \"supplement\" it. \"Mitigate\" means to lessen something bad, \"provoke\" means to stir up, and \"satisfy\" would mean fulfilling the experience rather than adding to it with more art outside."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence restates the idea: once wearing clothing became \"a widespread, familiar practice,\" it could take on social meaning, so clothing became \"ubiquitous\" (found everywhere). \"Divisive,\" \"provisional\" (temporary) and \"feasible\" (possible) don't match \"widespread, familiar.\""
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Wong explains that while she seems to be doing \"nothing,\" ideas, phrases and connections are taking shape, so daydreaming is actually part of how she writes. There's no self-deception (A), she isn't deliberately collecting sources (C), and she presents the time as productive, not as just soothing (D).",
+    "fix": {
+      "passage": "The following text is from Alice Wong’s 2022 memoir Year of the Tiger: An Activist’s Life. Wong has just described her tendency to procrastinate when she has a writing deadline.\n\nIn the middle of these distractions, a vibe will emerge, a point I want to make, a phrase, a hook, a title for a story, an image. A connection or epiphany can happen while watching or reading something brilliant. By doing “nothing” and daydreaming, I am actually composing, even if words don’t immediately materialize."
+    }
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first presents some researchers' idea that Grande Terre's species belong to lineages older than the island's split about 80 million years ago, then, with \"however,\" reports that Grammitis ferns there have a crown age of only 8.5 million years, a result that conflicts with that idea. The study doesn't explain the researchers' reasons (A), there's no sign they changed their view (B), and the text never explains the discrepancy (C)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The friend says his soul is calm because of \"the lack of anvil and strife,\" so the phrase stands for the hard work and conflict that are absent from his peaceful present. It doesn't show he values work and engagement (A), and it's about the friend's tranquility, not the pair's unspoken connection (B) or a clash between nature and their relationship (C).",
+    "fix": {
+      "passage": "The following text is from Anne Spencer’s 1922 poem “Translation.”\n\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken,\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack of <u>anvil and strife</u>.\n“The wooing kestrel,” I said, “mutes his mating-note\nTo please the harmony of this sweet silence.”"
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the colon, the underlined phrase names the kind of social interaction, contact with same-species outsiders, that the rest of the text argues is important for the evolution of sophisticated cognition. It isn't an example of the later \"nuanced analysis\" (A), it applies to all species from solitary to social, not a subset (C), and it isn't a technical definition (D).",
+    "fix": {
+      "passage": "The scenario of a dwarf mongoose engaging in territorial conflict with an outgroup dwarf mongoose illustrates a major dimension of social life across animal species, from the solitary to those with complex sociality: <u>intraspecific contact with perceived outsiders</u>. Though one prominent hypothesis posits that sophisticated cognitive adaptations are primarily driven by the demands of various behaviors within established social groups (e.g., cooperative response to predation), interactions with same-species outsiders arguably contribute comparably by favoring nuanced analysis (e.g., evaluation of relative physical status)."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Odom and colleagues blame the \"male trait\" view on bias from studying birds mostly near northern temperate universities, where female song is less common, so they'd say Text 1's view was shaped by where researchers chose to work. Choice D sounds close, but their point is about location, not a preference for studying males, and neither text discusses the purposes of male song (A, B)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the sonnet seems rigid, yet it covers very different poems, and Phillips argues its well-known rules actually invite experimentation, so the form encourages surprising variety. The text doesn't call most modern sonnets conventional (A), talk about the sonnet's popularity (C), or describe a period with no innovation (D)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Zucman finds that investors in Japan rarely use tax havens while many tax-haven users live in Saudi Arabia, and Singapore is given as a tax haven, so Japanese investors are less likely to keep wealth there. Choice D reverses the comparison with Greece, A misreads Robeyns, who disapproves of legal tax avoidance, and C brings in risk and returns, which the text never mentions."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Honeybees, with a maximum charge of about 150 pC, carry enough charge for electrostatic pollen transfer, and Anna's hummingbirds reach about 800 pC, far more, so they should be able to do it too. Choice D is wrong because houseflies (about 80 pC) have a smaller charge than honeybees, C conflicts with the bees' result, and nothing suggests houseflies would show an \"opposite tendency\" (A)."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Wade argues the pieces came from a minstrel performing near Heege's home, and references assuming listeners know small local villages like Brackonwet point to a live, local audience. Choice B weakens the argument by showing simple rhyming also appears in texts that weren't performed, and C and D don't connect the pieces to a local performer."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After free streaming was limited, users visited both licensed music sellers and download sites less, so cutting back their streaming also reduced their interest in owning music. Choice C may sound reasonable, but the study measured visits to music sellers, not upgrades to the paid service, and A and D make claims about user numbers and physical copies that the findings don't address."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Vitamin D levels seemed unaffected by supplements, but because supplementation was rare, inconsistent and poorly tracked, the researchers warn against concluding that supplements are useless for offsetting winter drops. Choice B is a point the researchers would make themselves, not something they caution against, and A and D are reasonable conclusions from the study, not ones the data shortcomings call into question.",
+    "fix": {
+      "choices": {
+        "C": "providing zoo chimpanzees in Italy and other mid-latitude countries with supplemental vitamin D has no promise as a strategy for offsetting winter reductions in their vitamin D levels.",
+        "D": "winter reductions in UVB irradiance in Italy and other mid-latitude countries can contribute to variations in zoo chimpanzees’ vitamin D levels."
+      }
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers expected medieval hierarchies to break the modern density-size pattern, but the pattern held in all 173 settlements, which suggests the basic social and economic interactions behind urban growth were similar then and now. Choice C says the opposite, A assumes institutions limited density growth even though the expected relationship held, and D's claim about different social groups goes beyond the findings.",
+    "fix": {
+      "passage": "In an analysis of medieval urbanization in Pisa, Greifswald, and other European settlements, researchers drew on modern urban scaling theory, which posits that population density in core urban areas increases as a city grows larger. Hypothesizing that this typical relationship would have differed in medieval settlements because of the constraining influence of strong hierarchical social structures (which are much less pronounced in modern cities) on social networking and economic integration—drivers of urban agglomeration—the team created a model that accounted for the presence of restrictive institutions. They found that the typically expected density-size relationship held for each of the 173 medieval settlements whose growth they analyzed, suggesting that _____"
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Quindoxin\" is a restrictive appositive: it identifies which gaseous compound is meant, so no commas are used, and no comma can separate the subject from the verb \"has.\" Choices A and C put a comma between the subject and \"has,\" and D sets off the name with an unpaired comma."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Currency\" is the object of \"eschew,\" and \"in favor of a direct trade system that requires…\" is part of the same clause, so no punctuation belongs here. The commas in A and D and the dash in B needlessly break the phrase, and D's second comma also separates \"system\" from its essential \"that\" clause."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Distinguishing … commodities,\" which takes a singular verb, so \"was\" is correct. \"Were\" agrees with the nearby plural nouns rather than the real subject, and \"having been\" and \"being\" aren't finite verbs, so they'd leave the sentence without a main verb.",
+    "fix": {
+      "passage": "In economics, soybeans are considered a commodity because they are essentially interchangeable, “essentially” being a word that admits a degree of latitude. In 2021, researchers J. Shorish, M. Stephenson, and M. Zargham devised a mathematical model of fungibility (interchangeability) that would account for such variation. Distinguishing “exactly the same” and “nearly the same” commodities—whether crops, lumber, or precious metals—_____ among their primary aims."
+    }
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the clause \"whose work _____ … encourages a broader rethinking,\" the main verb is already \"encourages,\" so the blank needs a participle that modifies \"work\": \"work highlighting the richness … encourages….\" Choices A, C and D are finite verbs that would give the clause two main verbs with nothing joining them."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the comma, \"the nanoparticles typically ranging from…\" is an absolute phrase that adds detail about the main clause, so it needs the participle \"ranging.\" A finite verb like \"range,\" \"can range\" or \"will range\" would make it a second independent clause joined by just a comma, a comma splice."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Fostering generations of well-known Black artists is the reason the center has a reputation as a hub of Black art, so \"accordingly\" (as a result) is right. \"On the other hand\" and \"nevertheless\" wrongly signal a contrast, and \"periodically\" refers to how often something happens, not to a cause and effect.",
+    "fix": {
+      "passage": "Since 1941, the South Side Community Art Center in Chicago, Illinois, has cultivated a multigenerational community of Black creatives—from writer Gwendolyn Brooks, to musician Nat King Cole, to visual artists like Allen Stringfellow and Frank Hayden; _____ it has garnered a reputation as a hub of Black art and culture in Chicago."
+    },
+    "note": "Printed passage has a comma before the blank (\"Frank Hayden, _____ it has\"), which would create a comma splice with any choice; changed to a semicolon. Check."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since Italian was the standard language of opera scores for centuries, it follows that singers today meet many Italian terms in older scores, and \"Thus\" signals that result. \"However\" and \"Granted\" signal contrast or concession, and \"Lastly\" marks the final item in a list."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Being exposed to rain, snow and heat would normally damage a sculpture, yet it stays in good condition, so a concession like \"That said\" is needed. \"As a result\" wrongly makes the weather the cause of its good condition, \"In addition\" misses the contrast, and \"On the contrary\" would deny the first sentence, which is still true.",
+    "fix": {
+      "passage": "At Storm King Art Center, an outdoor sculpture park in New York, Herbert Ferber’s Konkapot II is exposed to rain, snow, heat, and humidity. _____ it remains in good condition due to its material: Ferber’s sculpture is made of corrosion-resistant steel."
+    },
+    "note": "Printed passage has a semicolon after \"New York\"; changed to a comma since the semicolon is ungrammatical and not what the question tests."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cuba still clearly shows its Spanish legacy, while Sardinia's tie is so weak that Spanish is rarely spoken, so the text needs a contrast: \"On the other hand.\" \"Sometimes\" misses that contrast with Cuba, \"At the same time\" suggests two things are true together, and \"In addition\" treats Sardinia as one more example like Cuba."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say a meander forms when water erodes sediment from one bank and redeposits it on the other, and A states that cause directly. Choice B is about what causes high sinuosity, and C and D describe the Willapa River's meanders without saying how meanders form.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• A U-shaped curve in a river channel is called a meander.\n• A meander forms when water erodes sediment from one side of the riverbank and redeposits that sediment on the opposite side.\n• Meanders will gradually change shape and migrate downstream over time.\n• A river with high sinuosity has many meanders, and a river with low sinuosity has few.\n• The Willapa River in the United States has high sinuosity."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A detailed overview of the structures should cover the setting, materials and layout, and C does all three: built in a cliff alcove, multistory adobe and stone buildings, kivas surrounded by cube-shaped rooms. Choice A mentions only the kivas, B is about who lived there and when, and D gives only the materials.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Modern Pueblo tribal nations were preceded by the Ancestral Puebloan civilization, which occupied parts of the southwestern US until approximately 1600 CE.\n• Keet Seel in northeastern Arizona is a former Ancestral Puebloan settlement inhabited from approximately 1250–1300 CE.\n• It was constructed in a natural cliff alcove and had multistory adobe and stone buildings.\n• These buildings had cube-shaped, contiguous rooms that surrounded kivas.\n• Kivas are round rooms typically used for ceremonial purposes and as gathering spaces."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization applies to a whole category, and B covers \"any mineral\" with a Mohs number of 7 scratching any mineral with a 5, using quartz and apatite as examples. Choices A and C compare only specific minerals, and D is a statement about the scale's use for three named minerals, not a general claim about minerals.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral calcite has a Mohs scale number of 3.\n• The mineral apatite has a Mohs scale number of 5.\n• The mineral quartz has a Mohs scale number of 7."
+    }
+  }
+]

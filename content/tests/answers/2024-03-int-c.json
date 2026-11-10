@@ -1,0 +1,610 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator explains that his sisters spent their days playing dolls and giggling, and then says he did not \"concern himself with\" those things. In other words, he paid no attention to or had no interest in their games. Nothing suggests he made, bought, or was angry about the dolls, so \"take any interest in\" fits best.",
+    "fix": {
+      "passage": "The following text is from Rudolfo Anaya's 1972 novel Bless Me, Ultima. The young narrator is eating breakfast with his two sisters in their home in rural New Mexico.\n\nI sat across the table from Deborah and Teresa and ate my atole and the hot tortilla with butter. I said very little. I usually spoke very little to my two sisters. They were older than I and they were very close. They usually spent the entire day in the attic, playing dolls and giggling. I did not <u>concern myself with</u> those things."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says forest researchers \"regularly dispute one another's classifications,\" so there is little agreement among scientists about what counts as mature or old growth. \"Consensus\" means general agreement, which matches. \"Deliberation\" (careful discussion) is tempting, but the problem described is disagreement, not a lack of discussion."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The finding suggests lobbying barely changes whether a policy is enacted, which would make lobbying look useless. But the text then points out that lobbying shapes which proposals get considered at all, so it is not as \"ineffectual\" (ineffective) as it seems. \"Counterproductive\" would mean lobbying works against its own goals, which the finding never suggests."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example after the dash credits \"a well-executed marketing campaign\" with helping The Gift sell well, so the blank must name something like promotion. \"Publicity\" means public attention created by promotion. Originality, complexity, and practicality describe the book itself, not its marketing.",
+    "fix": {
+      "passage": "Though it does not guarantee a book's commercial success, _____ can play a big role in that success—a well-executed marketing campaign helped to make Danielle Steel's novel The Gift the fourth-best-selling novel of 1994."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon introduces a definition of the missing word: the source \"has no direct bearing on whether the claim is true.\" Something with no bearing on a question is \"irrelevant\" to it. \"Indisputable\" means unquestionable, which is the opposite of the text's point that the source shouldn't matter."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says people usually picture winged dinosaurs, like Microraptor, when they think of feathered dinosaurs. The underlined sentence, starting with \"However,\" adds that many wingless dinosaurs had feathers too, so winged ones weren't the only feathered dinosaurs. Choice B is tempting, but the example (Ornithomimus) comes in the next sentence, not the underlined one.",
+    "fix": {
+      "passage": "When people think of dinosaurs with feathers, they typically think of winged dinosaurs, such as the four-winged Microraptor. <u>However, many dinosaurs that didn't have wings also had feathers on their bodies.</u> For instance, research indicates that the wingless, speedy Ornithomimus likely had feathers."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Right before the underlined portion, the narrator says that at night in bed she \"set challenges\" for herself, followed by a colon. The underlined sentences (finding the store using only backyards, imagining a route to a friend's house) are examples of those nighttime challenges. They are imagined exercises, not real directions to a store (C), and they say nothing about her mother (D).",
+    "fix": {
+      "passage": "The following text is from Annie Dillard's 1987 autobiographical novel An American Childhood. The narrator is a young girl living in Pittsburgh.\n\nI walked. My mother had given me the freedom of the streets as soon as I could say our telephone number. I walked and memorized the neighborhood. I made a mental map and located myself upon it. At night in bed I rehearsed the small world's scheme and set challenges: <u>Find the store using backyards only. Imagine a route from the school to my friend's house.</u>\n\n©1987 by Annie Dillard"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Edwards's play is mentioned only as a starting point; most of the text explains how Ward and Hooks met and founded the NEC and how the company has given Black playwrights a forum since 1967. So the main purpose is to discuss the NEC's origin and importance. Choice B focuses on Edwards's play, which is just one example of the NEC's work."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says conventional methods move heat from the surface of a food to its interior, while infrared heating generates heat inside the food, \"thus reducing industrial cooking times.\" That implies conventional methods take longer to cook food. The text never compares energy use (D), so that choice goes beyond what is stated."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both examples show an Indigenous word reaching English by way of Spanish: \"cocoa\" from Nahuatl and \"iguana\" from Taino. So Spanish acted as a channel through which Indigenous languages influenced English. The text never says Spanish gave words back to Indigenous languages (C) or compares the numbers of borrowed words (B, D)."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The table lists the Colville Tribes in Washington with an area of 2,185 square miles, which is exactly what the sentence needs. The other values belong to other nations: 707 is the Northern Cheyenne Tribe, 6,963 is the Cherokee Nation, and 1,583 is the Mandan, Hidatsa, and Arikara Nation.",
+    "fix": {
+      "passage": "In terms of total area, the Navajo Nation is the largest tribal nation in the United States. It covers 24,425 square miles in Arizona, Colorado, and New Mexico. Most tribal nations in the US are much smaller. For example, the total area of the Muscogee Nation in Oklahoma is 4,867 square miles. And in Washington, the total area of the Colville Tribes is _______",
+      "table": {
+        "caption": "Total Areas of Five Tribal Nations around the United States",
+        "headers": [
+          "Tribal Nation",
+          "Location",
+          "Area (square miles)"
+        ],
+        "rows": [
+          [
+            "Cherokee Nation",
+            "Oklahoma",
+            "6,963"
+          ],
+          [
+            "Northern Cheyenne Tribe",
+            "Montana",
+            "707"
+          ],
+          [
+            "Mandan, Hidatsa, and Arikara Nation",
+            "North Dakota",
+            "1,583"
+          ],
+          [
+            "Colville Tribes",
+            "Washington",
+            "2,185"
+          ],
+          [
+            "Muscogee Nation",
+            "Oklahoma",
+            "4,867"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The country that mined 0.55 million metric tons in 2020 is Kazakhstan, and its 1995 value in the same row is 0.26 million metric tons. Choice B (0.59) is Canada's 2020 value, and 0.38 doesn't appear in the table at all.",
+    "fix": {
+      "passage": "While doing research for a paper about copper mining, a student finds a table with information about four different countries. The student notes that the country that mined 0.55 million metric tons of copper in 2020 had mined ______",
+      "table": {
+        "caption": "Millions of Metric Tons of Copper Mined in 1995 and 2020",
+        "headers": [
+          "Country",
+          "1995",
+          "2020"
+        ],
+        "rows": [
+          [
+            "Poland",
+            "0.83",
+            "0.39"
+          ],
+          [
+            "Kazakhstan",
+            "0.26",
+            "0.55"
+          ],
+          [
+            "Chile",
+            "2.49",
+            "5.73"
+          ],
+          [
+            "Canada",
+            "0.73",
+            "0.59"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that putting on certain clothes changes how Mrs. Sommers sees herself. Choice D says her stockings, boots, and gloves gave her \"a feeling of assurance, a sense of belonging,\" which is exactly a shift in her sense of self caused by clothing. Choice B shows her looking at her boots but says nothing about how she feels about herself."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Argentina's percent change was −17%, a smaller decrease than Ireland's (−28%) and the United Kingdom's (−24%) but a larger one than Mexico's (−7%). That is what D states. Choice A is wrong because Argentina's drop of 342 hours was smaller than Ireland's and the UK's, and B is wrong because hours fell in Argentina rather than rose.",
+    "fix": {
+      "passage": "A student in an economics course is examining the decline since 1950 in average hours worked per person per year in various nations due to both increased productivity and the adoption of policies that limit working hours. The first task in this investigation is to determine how the decline in Argentina compares to that in other countries. The student finds that ____",
+      "table": {
+        "caption": "Average Hours Worked per Person per Year in 1950 and 2017 (calculations may be inexact due to rounding)",
+        "headers": [
+          "Country",
+          "1950",
+          "2017",
+          "Change in hours",
+          "Percent Change in hours"
+        ],
+        "rows": [
+          [
+            "Argentina",
+            "2,034",
+            "1,692",
+            "-342",
+            "-17%"
+          ],
+          [
+            "Ireland",
+            "2,419",
+            "1,746",
+            "-674",
+            "-28%"
+          ],
+          [
+            "Mexico",
+            "2,432",
+            "2,255",
+            "-177",
+            "-7%"
+          ],
+          [
+            "United Kingdom",
+            "2,184",
+            "1,670",
+            "-514",
+            "-24%"
+          ]
+        ]
+      },
+      "choices": {
+        "B": "while the number of hours worked rose in Argentina between 1950 and 2017, it declined in Ireland, the United Kingdom, and Mexico."
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The ecosystem-based view stresses the interactions among climate, terrain, and the many species in an area. If that view is right, a single-species approach would miss how other species in Guerrero affect M. guerreronis, which is what D says. Choice C is tempting, but a single-species approach focuses on M. guerreronis itself rather than shifting attention away from it."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"New York City's Museum of Modern Art (MoMA)\" needs a main verb to complete the clause that begins with \"that,\" and \"houses\" is a present-tense verb that agrees with the singular subject. \"To have housed,\" \"housing,\" and \"to house\" are not finite verbs, so they would leave the clause without a main verb."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Catching an in-person glimpse of all 10,000-plus species\" explains what the \"ultimate goal\" is, and a colon is used after a complete clause to introduce such an explanation. A semicolon (D) or a period (B) would need a full independent clause afterward, but the \"catching\" phrase is not one. With no punctuation (A), the sentence runs the goal and its explanation together."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Today ... Kyoto\" and \"when brothers ... created the guide in 1900, it was little more than a marketing gimmick\" are two independent clauses, and \"however\" shows the contrast between them. They must be separated by a semicolon placed before \"however,\" with a comma after it. Choices B, C, and D join the two clauses with only a comma or nothing, which creates a comma splice or a run-on."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"geological features\"; \"For the Imperial fault ... the US Geological Survey compiles such data\" is a new independent clause. A period correctly separates the two sentences. Choices A, B, and D would join two independent clauses without proper punctuation, creating a run-on, a comma splice, or a confusing sentence."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text is told in the past (\"In 1987 ... devised\"), and \"Years later\" points to a time after 1987 but still in the past. \"Would be honored\" expresses a future-in-the-past event and matches the parallel \"would become known\" later in the sentence. \"Had been honored\" would place the award before 1987, and \"is\" or \"will be\" don't fit a past narrative."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first part is a complete clause ending in \"benefits and obligations,\" and what follows explains those benefits and obligations, so a colon fits. After the colon, \"while the organization's many members ... are all bound to defend Canada\" is a dependent clause that correctly leads into \"the reverse is also true.\" Choices B and D would break off \"the organization's many members ... are all bound to defend Canada, the reverse is also true,\" which is a comma splice."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first part describes the moon Elara; the next sentence moves to a different moon, Pasiphae, with the opposite kind of orbit. \"Elsewhere\" signals a shift to another location in the Jupiter system. Pasiphae isn't an example or a restatement of Elara's prograde orbit, so A, B, and C don't fit."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show how understanding has changed, the sentence needs both the earlier explanation and the newer one. B gives the 2017 grass-fire conclusion and then the newer comet-explosion explanation. Choices A and C each mention only one of the two explanations, so they can't show any change over time.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Scientists have long sought to determine the origin of glass in Chile's Atacama Desert.\n• A 2017 study concluded that ancient grass fires had melted the area's sandy soil into glass.\n• In 2021, a different study revealed that the mineral signatures of glass samples were consistent with the mineral signatures of comet samples collected by NASA.\n• That study concluded that the glass had formed as a result of a cometary explosion close to the desert's surface.",
+      "prompt": "The student wants to describe how scientific understanding about the glass's origin has evolved. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    },
+    "note": "Choice D is printed as \"There is no right option\" (not a real SAT choice); kept as printed."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A sets the two works side by side and uses \"by contrast\" to highlight their different materials: aluminum tubing versus soil. Choice B lists both works without contrasting them, and C and D don't mention Seven Earth Mountain at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Maya Lin is a US artist known for her memorials and large-scale installation artworks.\n• She became famous in 1982 when she completed the Vietnam Veterans Memorial, which consists of two 246-foot granite walls.\n• She completed Water Line in 2006.\n• It is an installation composed of aluminum tubing that fills an entire gallery room.\n• She completed Seven Earth Mountain in 2015.\n• It is an installation composed of soil that fills an entire gallery room."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "B explains the term directly: a sky island is an isolated mountain range whose environment differs sharply from the surrounding lowlands, with the Peloncillo-Pan Duro Mountains as an example. Choice A gives the same details but only describes one mountain range without saying what a sky island is. Choices C and D never define the term.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Peloncillo-Pan Duro Mountains are a mountain range located in northwestern Mexico.\n• The range is one of the dozens of “sky islands” in the southwestern US and northwestern Mexico.\n• A sky island is an isolated mountain range whose environment differs drastically from that of the surrounding lowlands.\n• The US Forest Service (USFS) said, “The mountains are islands surrounded by deserts that are seas.”\n• The USFS said, “Each Sky Island is a unique ecosystem.”"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A states Dias's total and then stresses that twenty-five of his medals were gold, putting the gold-medal count front and center. Choice D gives his total medals but leaves out the gold count, and B and C don't give his gold-medal number at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Paralympic Games are a series of international sporting events involving athletes with an impairment.\n• A gold medal indicates that an athlete finished in first place.\n• Rolf Heinzmann competed as a Paralympic alpine skier from 1980 to 2002.\n• He won fourteen medals, twelve of which were gold.\n• Daniel Dias competed as a Paralympic swimmer from 2008 to 2020.\n• He won thirty-eight medals, twenty-five of which were gold."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A generalization makes a broad statement based on specific cases. Since participants found umami flavor in both macrokelp and ma-konbu, D's statement that some types of brown seaweed trigger umami follows from the notes. Choices A and B simply restate the specific facts, and C says \"various seaweeds\" without drawing any conclusion.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The human tongue contains taste receptors for a rich, savory flavor called umami.\n• Umami is triggered by the compounds in a variety of foods, including pork and tomato paste.\n• Participants in a study tasted a sample of macrokelp, a type of brown seaweed.\n• They rated its umami intensity as moderate.\n• The participants tasted a sample of ma-konbu, another type of brown seaweed.\n• They rated its umami intensity as high."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Similarly\" tells us Niquay did something like Tagaq, who \"incorporated\" throat singing into electronic music. So Niquay mixed powwow music with folk-rock, and \"blended\" means combined. \"Compared\" doesn't fit because making an album that mixes styles isn't the same as comparing them.",
+    "fix": {
+      "passage": "A number of recording artists combine Indigenous music with other musical styles. Inuit singer-songwriter Tanya Tagaq masterfully incorporated Inuit throat singing into electronic music on her album Tongues. Similarly, Atikamekw singer-songwriter Laura Niquay ______ powwow music with folk-rock on her album Waska Matisiwin."
+    }
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence sets up a contrast with \"or, conversely,\" so the blank must be the opposite of \"historically significant.\" \"Inconsequential\" means unimportant, which is that opposite. \"Momentous\" means very important, so it would repeat \"significant\" rather than contrast with it."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because much of the evidence of Hatshepsut's reign was destroyed, historians lack the information needed for a full account. \"Exhaustive\" means complete and thorough, so we're unlikely to ever have one. Missing evidence would make a superficial or questionable account more likely, not less, so A and C don't fit."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says people claim the frieze is emotionally powerful despite its age, but the author argues it is powerful because of its age, since the shared humanity across generations \"gives the ... frieze such resonance.\" So the blank must mean emotionally moving, which is \"affecting.\" \"Pristine\" and \"meticulous\" describe condition or craftsmanship, not emotional impact."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Before the colon, the sentence claims that our understanding of why people decide to walk is \"insufficiently robust.\" The underlined portion explains why: studies each focus on a single factor, while real decisions depend on many conditions at once. That elaborates on the claim. It mentions different emphases but doesn't describe an actual disagreement among scholars (A) or summarize study findings (B).",
+    "fix": {
+      "passage": "Edinburgh has high pedestrian traffic, but simply replicating a feature of Edinburgh associated with walkability—e.g., its high number of pedestrian amenities—may be insufficient to induce increased walking in other cities. As urbanist Mariela Alfonzo argues, our understanding of individuals' decision-making about whether to walk is insufficiently robust: <u>some studies emphasize the role of local norms, others the role of sidewalk width, and so on, but walking decisions are made in contexts in which multiple conditions and needs inform individuals' choices.</u>"
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 focuses on the contrast between experimental form (Hughes) and conventional form (Cullen). Text 2 argues that focusing on \"experimental versus conventional poetic forms\" has kept scholars from studying other stylistic similarities among poems. So the author of Text 2 would see Text 1's emphasis as blocking a fuller view of the poetry's style. Choice B is tempting, but Text 2 doesn't say distant reading proved Text 1's view wrong, only that the focus is too narrow.",
+    "fix": {
+      "passage": "Text 1\nScholarship today overrepresents formal experimentation, such as Langston Hughes's use of improvisatory, jazz-inflected rhythms, well beyond the degree to which it actually influenced US poetry during the modernist period (roughly 1900-1945). Meanwhile, the work of Countee Cullen, who relied on conventional poetic forms associated with previous literary periods, attracts woefully little attention from scholars of modernism.\n\nText 2\nDistant reading, or computer-assisted quantitative analysis of massive collections of digitized texts, can reveal stylistic elements that have heretofore escaped notice, despite being shared by numerous texts from the modernist period. For too long, scholars have focused on experimental versus conventional poetic forms, inhibiting inquiry into other points of stylistic correspondence among poems that would enrich our understanding of the modernist canon."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Davis's work was especially labor intensive because she had to transcribe the lyrics herself by listening again and again to unclear recordings. If good transcriptions of the improvised lyrics had already existed, she wouldn't have needed to do this, so few, if any, reliable transcriptions likely existed. The text says nothing about the number of recordings (B), musical innovation (C), or popularity (D)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The student claims everyone thinks of time relative to their own body (ego-based). If Yupno speakers always point downhill for the past no matter which way they face, they are using the landscape, not their own body, as the reference. That counterexample weakens the claim of universality. Choice C (pointing opposite ways for past and future) is consistent with an ego-based system, so it doesn't weaken the claim."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is about large changes within one species over time. The graph shows the Indo-Pacific sergeant rising from about 2 individuals in January to about 28 in October, a huge within-species range. Choice C is accurate but gives only a single peak value, not a variation, and D compares two different species. Choice A misreads the graph: the rockskipper was lowest, not highest, in January and April."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that anatomy (such as head shape) affects a dog's ability to tell speech from nonspeech. If shorter-headed dogs showed less difference in brain activity between real speech and the scrambled recording, they were worse at distinguishing speech from nonspeech, which supports the conclusion. Choices A and C are about telling one language from another, not speech from nonspeech."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers concluded that landscape variation affects net CO_2 in ways coarse models miss. If the 10 km^2 grid and the 1 km^2 grid gave different respiration rates for the same months, then resolution changes the results, meaning finer detail captures something coarser grids lose. Choice D actually weakens the conclusion, since the two grids reported identical net CO_2.",
+    "fix": {
+      "passage": "Periods of subfreezing temperatures in Alaska have been growing shorter, potentially enabling increased carbon dioxide (CO_2) absorption through greater productivity of goosefoot (Chenopodium album) plants and other vegetation, but also potentially enabling increased CO_2 output through greater heterotrophic respiration (CO_2 generated by the activity of soil microorganisms). Hydrologist Yonghong Yi and her colleagues modeled seasonal changes in net CO_2 in Alaska in a landscape grid of 1 square kilometer (km^2) cells and again in a grid of 10 km^2 cells, which are finer resolutions than most models of net CO_2 have achieved. The researchers concluded that variations in the landscape affect net CO_2 in ways that most models are too coarse to capture.",
+      "choices": {
+        "A": "Higher average heterotrophic respiration rates were found for summer months than for winter months when modeled using either a grid of 1 km^2 cells or a grid of 10 km^2 cells.",
+        "B": "No correlations between seasonal variations in average heterotrophic respiration and CO_2 absorption by C. album and other plant species were found when modeled using either a grid of 1 km^2 cells or a grid of 10 km^2 cells.",
+        "C": "Lower average heterotrophic respiration rates were found for autumn months when modeled using a grid of 10 km^2 cells than when modeled using a grid of 1 km^2 cells.",
+        "D": "When seasonal fluxes in average CO_2 absorption and heterotrophic respiration were modeled using a grid of 1 km^2 cells, much more data were generated than when seasonal fluxes were modeled using a grid of 10 km^2 cells, though the two models reported identical net CO_2."
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim says Toomer uses figurative language to link Washington, DC, with the rural South. In C, wind from the South carries \"soil of my homeland\" that falls \"like a fertile shower\" on DC's streets, a figurative image joining the two places. Choice A uses figurative language but doesn't mention the South, and B mentions only Washington."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The songs describe building terraced clam gardens, and the records show clams grew larger and more productive as these gardens spread, even while harvesting increased. That suggests the method described in the songs kept clams a sustainable food source. The text gives no information about modern practices (A), where the method came from (B), or relying on other foods (D)."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Tarabieh found that when people see a product as riskier to the environment, they are less likely to buy it. College students saw the skin-care product as the most environmentally risky, so if that pattern applies broadly, they would be less likely than other groups to buy it. Choice A goes too far, since nothing suggests students value other factors more."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Earlier models relied on \"extreme and implausible\" conditions to explain early quasars. If quasars could form simply from rare gas convergences, models no longer need those implausible assumptions, so they could be built on more believable ones. Choice B contradicts the text, which says these quasars did exist."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"the Mari Republic,\" which is singular, so the singular possessive \"its\" is needed. \"It's\" means \"it is,\" and \"their\" and \"they're\" are plural (and \"they're\" isn't possessive)."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Enacted in 2010 and _____ three of these features\" describes Kyrgyzstan's constitution, so the blank needs a participle to pair with \"enacted\" in the same modifying phrase. \"Containing\" does this. \"Contained\" could look like a past participle, but \"enacted ... and contained three features\" would mean the features were contained by someone, and \"contains\" or \"had contained\" are main verbs that don't belong in this phrase."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The Limon technique ... weight and weightlessness\" is a complete sentence, and \"dancers may explore ... the top of a jump\" is another one. A semicolon correctly joins two independent clauses. A comma (C) creates a comma splice, and no punctuation (D) creates a run-on; \"which\" (B) wrongly makes the second clause sound like it describes weightlessness."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"They are hardly pristine, though\" is one complete clause, with \"though\" meaning \"however\" at the end. A semicolon is then needed before the next independent clause, \"many chondrites experience aqueous alteration.\" Choice A puts the semicolon before \"though,\" which would wrongly make \"though many chondrites...\" a dependent clause with no main clause. Choices C and D join two independent clauses with only a comma or nothing."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after the parenthetical \"(the explosion of a massive star).\" Then a new sentence begins with the modifier \"Occurring in the constellation Coma Berenices ...,\" which describes \"the transient yet powerful blast.\" Choices C and D keep it as one sentence, which leaves two main clauses joined by only a comma, and A's \"and occurring\" creates a structure that doesn't connect logically."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first clause says plants don't benefit equally from mycorrhizae, and everything after it lists examples that explain that statement. A colon introduces such an explanation; the semicolons that follow then separate the items of the list. A semicolon (A) would clash with the semicolons already separating the list items, and a comma (C) or nothing (B) creates a comma splice or run-on."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes a partial eclipse in 1902, where the Moon blocks only part of the Sun. The next describes a total eclipse in 1921, where the Moon blocks all of it. \"On the other hand\" signals this contrast. \"Simultaneously\" fails because the two eclipses happened in different years."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says some elements were isolated quickly but not all. The next sentence describes what happened in those other cases: the process took years. \"Sometimes\" fits because it applies only to some elements, like helium. \"However\" would repeat a contrast already made with \"but this wasn't the case.\""
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first says the poem explores love and cultural identity, and then adds a second thing it does: reflecting on how poetry relates to other art forms. \"What's more\" signals an additional point. It isn't an example (C) or a restatement (D) of the first point, and it doesn't contrast with it (A)."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A gives both the year (2019) and the place (Havana, Cuba) of the debut, which is exactly what the goal asks for. Choice C includes the year but not the location, and B and D don't give either the date or the place.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Grimanesa Amoros is a Peruvian American artist.\n• She is well known for her large-scale LED light sculptures.\n• Mariposa Dorada debuted in 2019 at the Sarra Building in Havana, Cuba.\n• It is made of entangled red and white LED tubes.\n• It occupies 19,250 cubic feet of space.",
+      "choices": {
+        "C": "Grimanesa Amoros is a Peruvian American artist who often works with LED light in her large-scale sculptures, such as Mariposa Dorada (2019)."
+      }
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say that in both Bangkok and Chiang Mai, thousands gather for the city's largest water fight. C states that shared practice directly. Choice B focuses on the difference in locations, and D stresses that the celebrations aren't the same.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Thailand's annual Songkran Water Festival is held each April.\n• It marks Songkran, the traditional Thai New Year.\n• People splash and spray each other for fun at the festival's community-wide water fights.\n• In Bangkok, thousands gather along Silom Road for the city's largest water fight.\n• In Chiang Mai, thousands gather at a historical monument called the Tha Phae Gate for the city's largest water fight."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the test site's climate, and C states it: a subtropic climate with winter rain. Choice A only mentions \"a given climate\" without describing it, and B and D give the location or the findings but not the climate.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2001 study, Boeken and Orenstein tested the effect of plant litter on seedling emergence in a grassland setting.\n• Plant litter includes dead leaves and other plant material.\n• The test site was a dry grassland in Israel.\n• It was in a subtropic climate with winter rain.\n• The researchers found that in these environmental conditions the presence of plant litter had a positive effect on seedling emergence."
+    }
+  }
+]

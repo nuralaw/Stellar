@@ -1,0 +1,607 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A mosque big enough to hold about 17,000 people at once is huge and impressive, which is exactly what \"imposing\" means. \"Intricate\" would describe fine, complex detail, but the text stresses size, not detail. \"Idealized\" and \"illusory\" suggest the mosque isn't real or is imagined, which doesn't fit a real building."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says the shared humanity across many centuries gives the paintings \"such resonance,\" so they are emotionally moving because of their age. \"Affecting\" means emotionally moving, which matches. \"Pristine\" (perfectly preserved) and \"meticulous\" (carefully detailed) describe the paintings' condition or technique, not their emotional effect."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Humanlike features are added so people feel comfortable around the robots, so the features help to produce, or \"engender,\" feelings of comfort. \"Constrict\" and \"repudiate\" would mean limiting or rejecting comfort, the opposite of the designers' goal. \"Counterbalance\" implies offsetting comfort, which also doesn't fit."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example is about how often the word \"first\" appears (its \"incidence\"), and a corpus can show it is the third most common adjective. So the hypotheses concern how widespread, or \"pervasive,\" a word is. \"Credible\" and \"profound\" describe a word's believability or depth, not how frequently it is used."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Sheikh Zayed Mosque \"combines elements\" from three styles, so mosques produce a blend, or \"fusion,\" of influences. \"Critique\" and \"dismissal\" suggest rejecting the styles, and \"simplification\" contradicts the idea of combining several of them."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The leaf and its reflection blend so perfectly that even the sharpest eyesight can't make out the border line between them. Here \"define\" means to perceive or \"detect\" a boundary. \"Explain\" and \"state\" are about putting something into words, but the poem is about seeing, not speaking.",
+    "fix": {
+      "passage": "The following text is from E. Pauline Johnson's 2002 poem “Shadow Lake.”\n\nThe little fern-leaf, bending\nUpon the brink, its green reflection greets\nAnd kisses soft the shadow that it meets\nWith touch so fine,\nThe border line\nThe keenest vision can't <u>define</u>;\nSo perfect is the blending."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports The Times's view that the English ideal is for everyone to do and look however they like. The next sentence starts with \"But\" and says culture tries instead to move people toward what is truly beautiful and becoming, so the author is rejecting that view. Choice C is tempting, but the sentence isn't evidence for the author's claim; it is the position the author argues against.",
+    "fix": {
+      "passage": "The following text is adapted from Matthew Arnold's 1869 nonfiction book Culture and Anarchy.\n\n<u>The Times [a British newspaper], replying to some foreign strictures on the dress, looks, and behavior of the English abroad, urges that the English ideal is that everyone should be free to do and to look just as he likes.</u> But culture indefatigably tries, not to make what each raw person may like the rule by which he fashions himself; but to draw ever nearer to a sense of what is indeed beautiful, graceful, and becoming, and to get the raw person to like that.",
+      "choices": {
+        "C": "It details an example that supports the author's primary claim."
+      }
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "An inverse relationship means birds with a wider field of vision should be less sensitive to alarm calls. P. saturatus forages in open areas (wide view) and M. barbatus in dense vegetation (narrow view), so the hypothesis predicts P. saturatus ignores the alarm call while M. barbatus reacts, which is what D describes. Choice A shows neither species reacting, so it can't show a difference linked to field of vision."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must show a country whose number decreased or stayed the same from 2009 to 2013. The graph shows the Dominican Republic dropping from 5 to 4 and Finland staying at 7, so D gives two valid examples. Choices A and B mention Slovenia, which rose from 4 to 5, so it is not an example of a decrease or no change."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The \"opposite effect\" means a crop that yielded more without tilling. Min Huang and colleagues found rice yielded 2,534 kg/ha with tilling but 5,226 kg/ha without, a big advantage for no tilling. Choices B and D describe crops (soybeans, winter wheat) that did better with tilling, which is the same effect, not the opposite.",
+    "fix": {
+      "passage": "Danijel Jug and colleagues found that tilling—the practice of turning soil with hoes, plows, or other machines before planting crops—was associated with an increased yield of winter wheat. But some studies of other crops have found the opposite effect, for example _____.",
+      "table": {
+        "caption": "Studies of the Effects of Tilling vs. No Tilling on Crop Yields",
+        "headers": [
+          "Authors",
+          "Crop",
+          "Crop yield with tilling (kilograms per hectare)",
+          "Crop yield with no tilling (kilograms per hectare)"
+        ],
+        "rows": [
+          [
+            "Bharat Sharma Acharya and colleagues",
+            "soybeans",
+            "3,062",
+            "2,670"
+          ],
+          [
+            "Adrian Gracia-Romero and colleagues",
+            "maize",
+            "2,420",
+            "2,990"
+          ],
+          [
+            "Danijel Jug and colleagues",
+            "winter wheat",
+            "4,860",
+            "3,910"
+          ],
+          [
+            "Min Huang and colleagues",
+            "rice",
+            "2,534",
+            "5,226"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If the UN counted only people inside city limits, its estimate should be close to the city-proper figure. For Bogota, the UN estimate (10,574,000) is far above the city-proper population (7,963,000), suggesting the UN included people beyond the city limits. Choice C compares two cities' city-proper figures, which says nothing about what the UN counted.",
+    "fix": {
+      "passage": "Population figures for a city can vary significantly depending on what areas are included in the count. Often, governments will report a value for the city proper (including only residents within the city limits) and another for the larger metropolitan area (including residents from nearby places beyond the city limits). Citing the data in the table, a journalist claims the population estimates from the United Nations (UN) most likely included people outside the cities proper.",
+      "table": {
+        "caption": "Population and Area Data for Four Cities in 2018",
+        "headers": [
+          "City",
+          "Country",
+          "UN estimate",
+          "Reported city proper",
+          "Reported metropolitan",
+          "Metropolitan area (square kilometers)"
+        ],
+        "rows": [
+          [
+            "Bangkok",
+            "Thailand",
+            "10,156,000",
+            "5,782,000",
+            "16,255,990",
+            "7,762"
+          ],
+          [
+            "Toronto",
+            "Canada",
+            "6,082,000",
+            "2,731,571",
+            "5,928,040",
+            "5,906"
+          ],
+          [
+            "Houston",
+            "United States",
+            "6,115,000",
+            "2,325,502",
+            "6,997,384",
+            "21,395"
+          ],
+          [
+            "Bogota",
+            "Colombia",
+            "10,574,000",
+            "7,963,000",
+            "12,545,272",
+            "5,934"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "SAGE needs heavy funding because it tracks long-term trends over many years and intervals. A study that only finds the average age of first-time parents in one city is a one-time snapshot, so it doesn't need that long, costly data collection. Choice B mentions participant numbers, but the text ties the funding need to tracking trends over time, not to sample size."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Calling the novel autobiographical may make readers think Brontë just retold real events. In a field that prizes creativity and invention, that suggests the novel is less imaginative than it really is. The other choices raise issues the text never mentions, such as identifying other characters or what Brontë claimed."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Earlier research found that species with narrow ranges are more genetically uniform than species with wide ranges. If M. klissingiana spreads beyond Tamaulipas, its range widens, so its genetic homogeneity should decrease. Choices A, C, and D shift to other species, while the simulation was about M. klissingiana itself."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Annales Cambriae was written around 970, and no source before 1155 mentions the Round Table. So Malory could not have gotten his Round Table material from the Annales Cambriae. Choice C claims historians know Geoffrey had access to Round Table stories, but the text says no such stories existed before 1155."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"Maya Angelou,\" a singular noun; the phrase \"along with others such as...\" is set off by commas and doesn't make the subject plural. So the singular verb \"is\" is needed. \"Are,\" \"were,\" and \"have been\" are plural forms that wrongly agree with \"others.\""
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Two independent clauses (\"the guide soon grew in scope and influence\" and \"its modest French eateries were replaced...\") must be joined properly, and a comma plus \"and\" does that. Choice B creates a comma splice, and A and D run the clauses together without the needed comma."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Mexican Gothic is the specific title that identifies which novel is meant, so it is essential information and takes no punctuation between \"novel\" and the title. A comma, colon, or parenthesis would wrongly separate the noun from the title that defines it."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"For example\" belongs with the first clause: the Great Salt Desert is an example of an arid desert. A comma sets off \"for example,\" and a semicolon then separates the two independent clauses. Choice C attaches \"for example\" to the second clause, but the desert's size isn't an example of anything mentioned before; B and D create comma splices."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"However\" belongs with the first clause (Okinaka doesn't decide alone, however), and the second clause is a separate independent clause. A period after \"however\" correctly ends the first sentence. Choice A is a comma splice, and B and C run the clauses together."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The words after the blank name the two people the sentence just mentioned, so a colon is the right way to introduce that list. A period or semicolon would leave the names as a fragment, and no punctuation runs the list into \"Congress\" confusingly."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Chile\" is the specific name that tells which member nation is meant, so it is essential and takes no punctuation before it. A comma, colon, or dash would wrongly separate \"nation\" from the name that identifies it."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The final sentence restates and reinforces the previous one: Montaigne challenges his own ideas no matter the topic. \"Indeed\" signals that kind of emphasis or confirmation. \"For example\" fails because the sentence is a restatement, not a specific example, and \"However\" signals a contrast that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence supports the claim that Chaucer pioneered literary Middle English by giving strong evidence: the first recorded uses of over 2,000 words. \"Indeed\" introduces that reinforcement. \"However\" and \"That being said\" signal a contrast, and \"Besides\" adds an unrelated point."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence mentions replicas of the Eiffel Tower, and the second adds another category of tribute, towers that aren't exact copies but honor its design. \"Moreover\" signals this additional, related point. \"On the contrary\" and \"Consequently\" signal contrast and cause, which don't fit."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence gives a production figure for the place named in the first sentence, India. \"There\" refers back to India and links the statistic to that location. \"Hence\" implies cause and effect, and \"Specifically\" would need the second sentence to narrow down a general claim, which it doesn't."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A narrative about someone's life naturally starts at the beginning, with where and when the person was born. Choice A gives her birthplace and birth year in that way. Choices B and C summarize later career facts, which don't begin a life story.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Merle Oberon (1911–1979) was an actress born in Mumbai (then known as Bombay), India.\n• She was of Indian, Maori, and Irish heritage.\n• She was the first Indian-born actress to be nominated for an Academy Award.\n• Early in her career, she played many nameless, uncredited roles, such as her role in Aren’t We All? (1932).\n• Later, she played many named, credited roles, such as Sue Mayberry in Affectionately Yours (1941)."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence talks about parents making a \"prediction\" about their baby's future, so the blank must mean to expect or foresee. \"Anticipate\" means exactly that. \"Disagree\" and \"ignore\" don't describe making a prediction, and \"require\" would mean demanding that the baby become an astronaut."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Rat follows the sound to find his way through the dark to the beech tree, so he is directing his own movement by it. \"Steering\" captures that sense. \"Instructing\" means teaching someone else, and \"withdrawing\" means moving away, which is the opposite of what he does.",
+    "fix": {
+      "passage": "The following text is from Kenneth Grahame's 1908 novel The Wind in the Willows. The Rat is looking for the Mole, his friend, in the woods.\n\n[The Rat] had patiently hunted through the wood for an hour or more, when at last to his joy he heard a little answering cry. <u>Guiding</u> himself by the sound, he made his way through the gathering darkness to the foot of an old beech tree."
+    }
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Nobel Prize honors work of great benefit, and Synge won it for inventing partition chromatography, so his work moved chemistry forward. \"Advancement in\" fits that. \"Controversy in\" suggests dispute, and \"dependence on\" or \"exposure to\" don't describe a contribution worthy of a prize."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says most factors behind the extinctions can be tied directly to the presence of humans, so humans' arrival caused the drop in biodiversity. \"Triggered\" means caused or set off. \"Followed\" only gives an order in time without the cause, and \"counteracted\" means the opposite."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts comfort with unease: humanlike features are comforting, but a robot that is too humanlike makes people feel more unsettled than comforted. \"Soothed\" is the opposite of \"unsettled\" and completes that contrast. \"Revolted\" is close in meaning to \"unsettled,\" so it gives no contrast, and \"indifferent\" and \"vindicated\" don't fit the comfort idea."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined lines contrast the sleeping fields with the speaker's heart, which \"alone wakes.\" This shows the speaker as the only one awake, experiencing the evening by himself. Choice D is tempting because of the words about sleeping and waking, but the lines never give a reason the speaker woke up.",
+    "fix": {
+      "passage": "The following text is Rainer Maria Rilke's 1897 poem Evening (translated by Jessie Lamont in 1918).\n\n<u>The bleak fields are asleep,</u>\n<u>My heart alone wakes;</u>\nThe evening in the harbour\nDown his red sails takes.\n\nNight, guardian of dreams,\nNow wanders through the land;\nThe moon, a lily white,\nBlossoms within her hand."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text corrects a common belief: not only winged dinosaurs had feathers, since wingless ones like Yutyrannus did too. Its purpose is to discuss which kinds of dinosaurs had feathers. It never compares dinosaur and bird feathers, discusses extinction, or claims only one species had feathers.",
+    "fix": {
+      "passage": "When people think of dinosaurs with feathers, they typically think of winged dinosaurs, such as the bat-like Ambopteryx. However, many dinosaurs that didn't have wings also had feathers on their bodies. For instance, research indicates that the wingless, large Yutyrannus likely had feathers."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 claims the UNESCO title has obviously boosted tourism. Text 2 argues that the title alone isn't enough and that cities must market their food scene on purpose to benefit. So the author of Text 2 would say the city should still make deliberate efforts to attract visitors. Choice C mentions other benefits, which Text 2 never discusses.",
+    "fix": {
+      "passage": "Text 1\nIn 2017 Buenaventura, Colombia, was named a City of Gastronomy by UNESCO in recognition of the city's unique food culture. The honor is well known among residents of the city as well as tourists who visit. <u>It's obvious that the selection of Buenaventura by UNESCO has brought awareness to local recipes, cooking practices, and chefs and has provided a boost to the city's tourism industry.</u>\n\nText 2\nMany people in Buenaventura's restaurant industry hoped that food tourism would increase after the city was chosen as City of Gastronomy in 2017. However, as researcher Erang Park and colleagues argue, cities must still create effective marketing strategies to benefit fully from being named a City of Gastronomy. Without an intentional effort to promote the city's food scene, many current and potential visitors to Buenaventura may not even be aware that it's home to uniquely delicious food."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Panama City respondents used parks more, even though fewer of them lived within a 10-minute walk of one. Since closeness to parks points the wrong way, something other than proximity must explain the difference. The text never mentions the researchers' expectations, survey errors, or older sources.",
+    "fix": {
+      "passage": "In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Panama City, Panama, and Fortaleza, Brazil, were surveyed about parks in their cities. Of the 318 respondents from Panama City, 53.5% indicated that they use the city's parks, and of 938 respondents from Fortaleza, 35.7% indicated using city parks. Given that the percentage of Panama City respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Defoe contrasts a sermon, which lasts only as long as listeners remember it, with a printed book, which stays in people's hands and carries its contents for ages after the author is gone. The main idea is that printed words last longer than spoken ones. Choice A reverses this, and C focuses on authors being forgotten, which is only a detail.",
+    "fix": {
+      "passage": "The following text is adapted from Daniel Defoe's 1704 nonfiction book The Storm.\n\nThe sermon is a sound of words spoken to the ear, and prepared only for present meditation and extends no farther than the strength of memory can convey it; a book printed is a record, remaining in every man's possession, always ready to renew its acquaintance with his memory, and always ready to be produced as an authority or voucher to any reports he makes out of it, and conveys its contents for ages to come, to the eternity of mortal time, when the author is forgotten in his grave."
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each book ends abruptly but the next one picks up right where it left off, so the author concludes the series is best seen as one very long work. Choice C states that main idea. Choice A brings in critical reputation and fairness, and B calls two books the most complex, neither of which the text claims.",
+    "fix": {
+      "choices": {
+        "D": "Many readers find the Aubrey/Maturin novels to be remarkably entertaining despite flaws in the novels' structures."
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The table lists the Tikal Temple IV's age as 1,300 years before the present, so it was built about 1,300 years ago. The other choices give the ages of La Danta (A), the Pyramid of Khafre (C), and the Pyramid of Amenemhet I (D).",
+    "fix": {
+      "passage": "One student is writing an essay about four pyramids for a history class and wants to indicate how long ago each pyramid was built. Consulting the table, the student finds that the Tikal Temple IV was built _____",
+      "table": {
+        "caption": "Pyramids in Egypt and the Americas",
+        "headers": [
+          "Pyramid",
+          "Country",
+          "Height (meters)",
+          "Age (years before present)"
+        ],
+        "rows": [
+          [
+            "The Pyramid of Khafre",
+            "Egypt",
+            "143.5",
+            "4,500 to 4,600"
+          ],
+          [
+            "La Danta",
+            "Guatemala",
+            "72",
+            "1,900 to 2,300"
+          ],
+          [
+            "The Tikal Temple IV",
+            "Guatemala",
+            "70",
+            "1,300"
+          ],
+          [
+            "The Pyramid of Amenemhet I",
+            "Egypt",
+            "55",
+            "3,800 to 4,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim has two parts: Winnemucca speaks directly to the reader, and she does it to establish her authority. Choice A addresses \"my dear reader\" and insists she has lived long enough to know what she's talking about. Choices C and D also address readers but don't assert her credibility, and B doesn't address the reader at all."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Juchipila looks striking to the soldiers as they see it from far away. Choice C describes the town \"in the distance,\" white and shining in sunlight below a lofty mountain. Choice B describes entering the town, not seeing it from afar, and A and D describe the landscape rather than the town."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The critic says the lullaby just grabbed the infants' attention, and the text notes that pupils get larger when something captures attention. If the infants' pupils were smaller during lullabies, the lullabies weren't drawing more attention, which undercuts the critic. Choice A is weaker: equal blinking for both songs doesn't show that the lullaby held less attention, and the text sets up pupil size as the key measure of attention."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Dreadnought and the Royal George both had three decks, yet only the Royal George was rated first-rate. So having three decks did not guarantee a first-rate ranking. Choice B is contradicted by the Dreadnought, which had 98 cannons but wasn't first-rate, and A gives it a first-rate crew size it can't be assumed to have.",
+    "fix": {
+      "passage": "In the early 19th century, ships in the British Royal Navy were ranked based on military strength. The system considered the number of a ship's cannons and decks. “First rate” was the highest ranking, and “sixth-rate” was the lowest ranking, followed by unranked ships. This ranking determined the size of a ship's crew: first-rate ships had between 850 and 875 crewmen, while lower-ranked ships had fewer. Two of the ships in the British Royal Navy from this period were the Dreadnought (98 cannons and three decks) and the Royal George (120 cannons and three decks). Of these two, only the Royal George was ranked a first-rate ship. It can therefore be concluded that _____"
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Sulfoxaflor\" is the specific name identifying which insecticide was used, so it is essential and takes no commas around it. The phrase \"the common insecticide sulfoxaflor\" then flows straight into \"to a sucralose solution.\" Adding commas would wrongly treat the name as extra information or split the verb from its object."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Initially overlooked as insignificant research\" must describe the subject that comes right after it. The thing overlooked as research was Milstein's study, so \"Milstein's 1975 study of monoclonal antibodies\" must be the subject. Choices A, B, and D place Milstein or the antibodies next to the phrase, creating a dangling modifier."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Two independent clauses are joined here, and a comma plus the conjunction \"but\" connects them correctly. Choice B is a comma splice, D omits the needed comma before \"but,\" and A adds an unnecessary comma after \"but.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to Böll and Cela together, a plural antecedent, and shows possession of their contributions. \"Their\" is the plural possessive. \"Its\" is singular, and \"it's\" and \"they're\" are contractions (\"it is,\" \"they are\"), not possessives."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The verb in the relative clause refers to \"Newark Liberty International Airport,\" a singular noun, and the airport is still located there now. So the singular present-tense \"is\" is correct. \"Are,\" \"were,\" and \"have been\" are plural forms that don't agree with \"airport.\""
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence needs a main verb for the subject \"Mount Leuser\"; the opening phrase \"Rising 11,371 feet...\" is only a modifier. \"Is ranked\" provides a complete verb. \"To rank,\" \"ranking,\" and \"having ranked\" are not finite verbs, so they leave the sentence a fragment."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins a phrase that describes Pascal, set off by commas, and Pascal is a language that is used by others. The past participle \"used\" (meaning \"which is used\") gives that passive sense. \"Using\" would mean Pascal itself is doing the using, and \"to use\" and \"the use\" don't form a correct modifier."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Fans,\" a plural noun, so the verb must be plural. \"Recognize\" is the plural present-tense form. \"Recognizes,\" \"has recognized,\" and \"is recognizing\" are all singular forms."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say how much vitamin C blackberries contain, which requires a quantity. Choice B gives the amount: 21 mg in every 100 g. Choices C and D say blackberries contain vitamin C but never give an amount, and A doesn't mention blackberries at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Blackberries are fruits that contain ascorbic acid, an essential nutrient for humans.\n• Every 100 grams (g) of blackberries contains 21 milligrams (mg) of ascorbic acid.\n• Many animals can make ascorbic acid in their bodies, but humans cannot.\n• Humans must get ascorbic acid from foods, including fruits and vegetables.\n• Ascorbic acid is also known as Vitamin C.",
+      "prompt": "The student wants to specify how much vitamin C is in blackberries. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An audience that already knows the MBC project doesn't need its purpose explained again; it just needs Walker introduced. Choice C places Walker among the project's figures and sets up a focus on him. Choice D re-explains the project's mission, which this audience already knows, and A shifts attention to other composers.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Music by Black Composers (MBC) project aims to inspire aspiring music students by archiving and sharing information about the music of Black classical composers.\n• George Theophilus Walker is a Black classical music composer included in MBC's Historic Composers Directory.\n• He was born in 1922 and died in 2018."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize how long the partnership has lasted, the sentence should say when it began and that it continues. Choice B says the two cities have been partners \"since 1989,\" which stresses duration. Choice C mentions 1989 but focuses on where Larreynaga is, and A refers to the general history since World War II.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Sister cities are pairs of cities that form social or legal partnerships to promote each other's cultures.\n• Previously known as “town twinning,” the concept of sister cities evolved in Europe after World War II as a way to repair bonds between cities.\n• Many cities in New York State maintain such partnerships with cities around the world.\n• Rhinebeck, New York, and Larreynaga, Nicaragua, became sister cities in 1989.",
+      "prompt": "The student wants to emphasize the duration of Rhinebeck and Larreynaga's sister city relationship. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  }
+]

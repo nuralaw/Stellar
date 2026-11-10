@@ -1,0 +1,978 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says these murals help communities by enhancing public spaces and addressing local issues, which are positive contributions, so the art initiatives \"enrich\" their communities. \"Avoid,\" \"predict,\" and \"deny\" don't describe benefiting a community in multiple ways."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The dark blue water contrasts with the light blue of the nearby shallows, so the holes are easy to tell apart, or be \"differentiated from,\" those areas. That contrast is why boaters spot them. \"Explored by\" doesn't fit, since the shallow areas don't explore anything, and \"surpassed by\" and \"elevated from\" make no sense here."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because outside conditions can change the temperature in the cargo area, drivers need equipment that monitors and adjusts the refrigeration. The conditions therefore make that equipment necessary, or \"necessitate\" its use. \"Obviating\" means the opposite (making it unnecessary), and \"extolling\" (praising) and \"rescinding\" (canceling) don't fit."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Higher prices plus loyal customers would greatly improve, or \"transform,\" the financial outlook for small farms. \"Overshadow\" and \"interpret\" don't describe this positive effect, and \"hasten\" (speed up) doesn't make sense with \"financial outlook.\""
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the automobile's influence \"extended far beyond\" how people traveled and lists effects on communities, city layouts, and personal freedom, so its purpose is to discuss the car's widespread impact. Changes to city roads are only one detail, so B is too narrow, and the text never mentions negative effects (C) or how early cars worked (D)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first describes the Museo de Las Americas (founded 1991) and then turns to a \"more recently founded\" institution, the National Museum of Puerto Rican Arts and Culture. That matches B. The text says nothing about expansion plans (A), doesn't argue for any influence on society (C), and no institution rejects a trend (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence before the underlined one says a small sample size can lead to biased analysis, and the underlined sentence adds that such analysis can produce reports of exaggerated effects. So it explains a further possible consequence of Pimentel's small sample. It doesn't counter Clark's objection (D); it extends it. It also doesn't stress how large the reported effect was (C).",
+    "fix": {
+      "passage": "In 2016 Marta S. Pimentel and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Sparus aurata, a species of fish. However, Pimentel and colleagues’ study relied on a mean sample size of only 12 fish. In a 2022 review of various scientists’ conclusions about the impacts of ocean acidification on fish behavior, Timothy D. Clark and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. <u>Such analysis, in turn, can contribute to reports of exaggerated effects.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last sentence says the database helps researchers and \"informs city planning and conservation efforts.\" Nothing in the text mentions tourists, extinction, or ranking green spaces by popularity."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data set is made of 7,200 simulated instances, and it \"systematically varies\" demand patterns, capacity use, and cost balances, so it was built to cover a range of hypothetical situations for training the model. It isn't mainly real data (A). Nothing says it weights common scenarios (B) or focuses mainly on unusual ones (C)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the speaker wants to make art with universal appeal across generations. Choice B says she wants to make \"songs for the people, / Songs for the old and young,\" which covers both all people and all ages. Choice A says the world needs music but doesn't mention appealing to different generations."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To weaken the claim that joining an FTA raises export growth, you need a country whose growth rate dropped after joining. Morocco's rate fell from 19.6% before MAFTA to 4.9% after. Choices A and D describe increases, which support the claim, and B doesn't compare before and after."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Newland comes late because he enjoys anticipating a pleasure. Choice A says thinking about a coming pleasure often satisfied him more than the pleasure itself, which explains the delay. Choice B says he arrived late but gives no reason related to anticipation."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student claims Jansson accepted her unexpected role as a children's author. Even though she was a very private person, she personally answered thousands of fan letters about the Moomins, which shows that commitment. Choice A, quitting the comic strip, points the other way, and D only says she did other work too.",
+    "fix": {
+      "passage": "The writer and illustrator of Moominsummer Madness (1970) and many other Moomin stories for children didn’t initially set out to be known as a children’s author. While Tove Jansson accomplished a great deal as a painter and cartoonist, she became widely popular as the creator of the Moomin characters she is still best remembered for today—Moomintroll, Gaffsie, and other eccentric figures. A student who is researching children’s literature asserts that <u>even though this outcome wasn’t what Jansson had intended, she committed to the role she found herself in.</u>"
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers predicted that the moderately complex \"Kashmir\" would get higher groove ratings than the low-complexity \"Smells Like Teen Spirit.\" \"Contrary to the hypothesis\" means the opposite happened, so the ratings for \"Kashmir\" were lower than those for the Nirvana song. The other choices bring in fans or songs without syncopation, which the hypothesis didn't address."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The model's predictions for large-mammal populations are too high when it's used on large forests. Beaverhead-Deerlodge is a large forest, so the model would likely overestimate its large-mammal populations. Choice C mixes this up with the problem for small forests, which applies to small mammals."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After \"with,\" the phrase needs a noun followed by an -ing form: \"with Hirao rhythmically shaping trees to music.\" This phrase describes how the performance unfolds. Finite verbs like \"shapes\" or \"shaped\" can't follow \"with Hirao\" in this structure, and \"shape\" doesn't work either.",
+    "note": "Source answer was D; D (\"shapes\") is ungrammatical after \"with Hirao\"; the with + noun + -ing construction requires \"shaping\"."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Here the words are just plurals (more than one street and more than one neighborhood), with no ownership shown, so neither word needs an apostrophe: \"streets and neighborhoods.\" The other choices add possessive apostrophes where nothing is owned."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "This is a list of units, each followed by a description set off with a comma. Because the items already contain commas, semicolons must separate them: \"the khar, a unit of volume; the shesep, a unit of length; and the sa.\" Choice C puts a semicolon between \"the shesep\" and its own description, which wrongly breaks up one item."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"because of its availability and recently discovered amino compounds\" interrupts the clause \"that ... offered an economical alternative.\" It opens with a comma after \"that,\" so it must close with a matching comma. A dash or semicolon can't pair with the opening comma, and leaving out punctuation leaves the phrase unclosed."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each language in the list carries its own comma-set description (\"developed by...\"), so semicolons must separate the items. The last item's description also needs commas on both sides: \"COBOL, developed by Grace Hopper in 1959; Harbour, developed by Antonio Linares in 1999; and Clojure, developed by Rich Hickey in 2007, are.\" Choice D uses a comma instead of a semicolon before \"and Clojure,\" which mixes the separators."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence should end after \"Ulysses.\" The next sentence then begins with a participial phrase (\"Stamping ... and creating ...\") that describes its subject, \"she.\" Choices C and D leave two independent clauses (\"Tessler extracted...\" and \"she forged...\") joined by only a comma, which is a comma splice. Choice A turns \"That capped empty wine bottles...\" into a fragment.",
+    "note": "Source answer was D; D creates a comma splice (\"...corks that capped... postcards..., she forged...\"). Only B makes two complete sentences."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes events in time order: first citizens vote, then the winners take office. \"Afterward\" shows that sequence. Nothing is being contrasted or used as an example, so \"However,\" \"Instead,\" and \"For example\" don't fit."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cooler air sinks while the warm air rises, and together these make the circular current. \"As this occurs\" shows the two things happen at the same time. The sentence isn't a summary, an alternative, or an example."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After praising the plant's ability to absorb chromium, the text adds a limitation: its roots may not reach deep enough. \"That said\" brings in this qualification, and the claim that it may not remove all the pollutant matches the detail that follows. Choices B and C keep praising the plant and don't lead into the limitation."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Young people got a new chance to vote because the voting age was lowered, so this is cause and effect. \"Consequently\" signals that relationship. \"By contrast\" and \"Nevertheless\" signal opposition, and \"Similarly\" signals a comparison."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first says the scene seems like something only imagined, then says such fights actually happened often. \"In reality\" sets up this contrast between how things appear and what was true. \"In other words\" would wrongly suggest a restatement."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A finding is a result of the study. Only D gives one: when asked to pick the correct Pikachu, 26.8% chose the unaltered image. The other choices describe the setup or the images and give no result.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2021 study, researchers showed participants an unaltered image of a popular character or logo alongside two slightly altered versions.\n• Pikachu is a creature with markings at the base of its tail.\n• In the first alteration, the creature had markings at the tip of its tail.\n• In the second alteration, the creature’s tail had no markings.\n• Participants were asked to identify the correct version.\n• 26.8% of participants selected the unaltered image."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers added live microbes to sterilized soil, so they filled the pots with organisms, or \"populated\" them. \"Sanitized\" is the opposite of adding microbes, and \"estimated\" and \"precluded\" don't describe adding something to soil."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The wiring was changed many times by different people with little care for organization, so it would be extremely complicated and hard to follow. \"Byzantine\" means exactly that. \"Rudimentary\" (basic) and \"monotonous\" suggest simplicity, and \"fraudulent\" is unsupported."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The staff consulted many sources to make the displays accurate, which shows the research was careful and thorough. \"Rigor\" means that kind of thoroughness. \"Shallowness\" is the opposite, and \"novelty\" and \"obscurity\" aren't supported by the detail about checking sources."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "It is puzzling why people would settle resource-poor islands that could only be reached by dangerous voyages. So their motives seem mysterious, or \"enigmatic,\" to us today. \"Pragmatic\" (practical) contradicts the point, and nothing suggests the motives were \"ambivalent\" or \"impulsive.\""
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mrs. Hilbery talks sadly about how the great days of the nineteenth century have passed, so \"lament\" means to regret or mourn. She isn't predicting (\"expect\"), rejecting (\"repudiate\"), or listing (\"enumerate\") those days."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains Beal's 1879 seed-burial experiment and says researchers still dig up bottles, most recently in 2021. That makes it an ongoing experiment. There is only one experiment, so A is wrong, and the text doesn't focus on preservation problems (B) or getting rid of plants (D)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both texts describe needlework that began as practical mending (sashiko strengthens fabric; kantha joins layers and covers holes) but is also valued for its beauty, as with striking motifs and designer garments. So both suggest the look of these techniques reflects their practical roots and goes beyond them. Choice D fits only Text 1, which emphasizes patterns. Neither text evaluates a trend in new clothing (C)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the eyed needle let artisans make smaller holes and \"thus finer seams.\" So clothing made earlier with awls, as at Mladeč, likely had coarser seams than clothing made with needles, as at Ust-Kova. Choice D reverses this. The needle also sped up the work, which rules out B."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "One theory says limits on officeholders' enrichment cause growth, and the other says growth causes such bureaucracies. Ang says both wrongly assume one-way causation, since neither factor is independent of the other. So she would say these initiatives can't be explained simply as a cause or simply as a result of growth. Choice A repeats modernization theory's one-way view."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In all three trials, hornworms ate a smaller share of emitting leaves than of nonemitting leaves (for example, about 1.5% vs. 4.6% in Trial 1), but they still ate some emitting leaves. So the compound reduces consumption without fully preventing it. The graph doesn't show how many individual hornworms were deterred (A) or whether the compound is toxic (D).",
+    "fix": {
+      "passage": "Some plants’ leaves emit a chemical compound (2-methyl-1,3-butadiene) that is thought to be a defense against insects. Researchers modified leaves of the same plant species so that some emitted the compound and others didn’t, then placed hornworms—leaf-eating insects—between leaves of both types and allowed the hornworms to feed for 90 minutes.",
+      "prompt": "Taken together, the text and graph best support which conclusion about 2-methyl-1,3-butadiene?"
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Studies show that people's willingness to walk to transit depends on factors like well-enforced low speed limits. If enforcement in the neighborhood has greatly increased since the survey ten years ago, residents' willingness to walk has likely changed, so the old survey would be outdated. Choice B is about weather in general, not a change over the ten years."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Wing size stands in for body size, which is linked to reproductive fitness, so cooler months should show smaller wings. May (high 73°F, low 50°F) is cooler than July (87°F, 62°F), and the average female wing size was smaller in May (2.27 mm) than in July (2.31 mm). Choice A misreads the table (June's male average is 2.01 mm, not 2.31 mm), and D mentions only temperature, not wing size.",
+    "fix": {
+      "passage": "Drosophila (fruit flies) have generation times of 10-12 days, so seasonal changes in humidity and other environmental conditions can drive seasonal fluctuations in chromosome rearrangements in species such as D. robusta and D. subobscura. Drosophila body size (for which wing centroid size serves as a proxy measure) correlates with reproductive fitness. Banu Şebnem Önder and Cansu Fidan Aksoy measured the wing sizes of members of a D. melanogaster population in Yeşilöz, Turkey, that were collected monthly between May and October over three years. Their research suggests that Drosophila collected in relatively cooler months should tend to have lower reproductive fitness, as is illustrated by the finding that ______",
+      "table": {
+        "caption": "Monthly Temperatures and Wing Centroid Sizes of Fruit Fly Specimens",
+        "headers": [
+          "Month",
+          "Average high (°F)",
+          "Average low (°F)",
+          "Average male wing centroid size (mm)",
+          "Average female wing centroid size (mm)"
+        ],
+        "rows": [
+          [
+            "June",
+            "80",
+            "56",
+            "2.01",
+            "2.31"
+          ],
+          [
+            "October",
+            "67",
+            "44",
+            "1.98",
+            "2.29"
+          ],
+          [
+            "July",
+            "87",
+            "62",
+            "2.02",
+            "2.31"
+          ],
+          [
+            "May",
+            "73",
+            "50",
+            "1.98",
+            "2.27"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Demand-response systems try to change when people use electricity by offering lower off-peak prices. That only makes sense if consumers can choose when they use power, so electricity use must be shaped partly by their discretion. The text doesn't suggest DRS guarantees enough supply (B) or leads other nations to adopt renewables (D)."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both Y. evonymella and A. caja are noxious, and their ranges overlap. Their warning sounds are nearly identical, so the logical conclusion is mutual protective mimicry between two chemically defended species. Choice B describes harmless species copying harmful ones, but Y. evonymella is itself noxious. Choices C and D generalize beyond the single species studied."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The consumer-revolution argument depends on probate inventories showing goods spreading across many social groups. Clark found that over time, fewer people had inventories and those who did were increasingly wealthy. The apparent spread may therefore partly reflect a richer sample, so earlier conclusions may have overstated the broader demographic shift. Choice C is tempting, but Clark says the records, not the population, became more weighted toward the wealthy.",
+    "note": "Source answer was C; C claims the wealthy share of the population grew, but Clark's point is that the probate documentation became skewed toward affluent people. B matches that sampling-bias point."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Revolutionizing the field of economic research\" describes the 2003 publication and finishes the first sentence. \"Before its release\" begins a new independent clause, so a period is needed after \"research.\" Choices A and D link two independent clauses with only a comma or nothing, and B leaves a fragment."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Containing almost 30,000 entries\" must describe the subject that comes right after the comma, and that must be the dictionary. Only D starts with \"the dictionary.\" The other choices make the phrase seem to describe future lexicographers, the dictionary's preservation, or knowledge."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The facsimile ... system ... coupled ... formatting and handwriting\" is a complete sentence, and \"in legal transactions, for example, signed documents could now be transmitted\" is another. A semicolon correctly joins two independent clauses. A comma would create a comma splice, and no punctuation would create a run-on."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The Sahara Desert ... is an arid desert, for example\" is a complete sentence, and \"With a total area of about 9,200,000 km², it is also one of the largest deserts\" is another. A period must separate them. Choice D joins the two independent clauses with only commas (a comma splice), and B and C are also run-ons.",
+    "note": "Source answer was D; D creates a comma splice (\"...arid desert, for example, with ..., it is also...\"). A is the only option that separates the two independent clauses."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb (\"has revealed\"). After the comma, \"the DNA analysis indicating consumption...\" is an absolute phrase that adds detail. A finite verb like \"indicates,\" \"can indicate,\" or \"will indicate\" would create a second independent clause joined by only a comma (a comma splice)."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main clause \"The process ... depends on specialized geological conditions\" is complete. The rest, \"the gems typically forming as hydrothermal fluids interact...,\" is an absolute phrase, which needs the -ing form. Finite verbs such as \"form\" or \"will form\" would create a comma splice."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first describes a holotype, the original specimen, and then a neotype, a replacement reference that is not the original. \"By contrast\" signals this difference. \"Moreover\" and \"For instance\" would treat the second specimen as more of the same kind."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second clause explains what \"tetrachromatic vision\" means: birds have a fourth type of cone cell. \"That is\" introduces this clarification. It isn't an example of something else, and it isn't a contrast, since the contrast with humans was already made with \"Whereas.\""
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because these 3D elements lack organic realism, extra processes are needed to make them look lifelike. That is a cause and its result, so \"consequently\" fits. \"However\" is tempting after \"Granted,\" but the sentence draws a result from the limitation; it doesn't contradict it."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show a similarity, the sentence must say what the two films share. D says both include Merle Oberon. Choices A and C contrast the films (uncredited vs. credited role, early vs. later career), and B mentions only one film.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Merle Oberon (1911-1979) was an actress born in Mumbai (then known as Bombay), India.\n• She was of Indian, Maori, and Irish heritage.\n• She was the first Indian-born actress to be nominated for an Academy Award.\n• Early in her career, she played many nameless, uncredited roles, such as her role in Alf’s Button (1930).\n• Later, she played many named, credited roles, such as Empress Josephine in Désirée (1954)."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To tell the theories apart, the sentence must say how they differ in answering the truth-maker objection. A does this: Lucretianism uses past-tensed properties, while ersatz presentism uses an abstract time outside time. B wrongly says Bourne accepted past-tensed properties, C wrongly says one theory thinks nothing makes past truths true, and D wrongly says Bourne rejected presentism.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Philosophers espousing presentism (the view that only present things exist) must contend with the truth-maker objection (TO).\n• TO: If past things don’t exist, what makes true statements about the past (e.g., “dinosaurs existed”) true? 1996: Presentist philosopher John Bigelow proposed “Lucretianism.”\n• Lucretianism posits that the statement is made true by the world’s acceptance of the past-tensed property of “having contained dinosaurs.”\n• 2006: Presentist philosopher Craig Bourne proposed “ersatz presentism.” Ersatz presentism posits that the statement is made true by an abstract (“ersatz”) time that exists outside temporal time and represents how things were in the past."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The study's superimposition analysis found LNF figures on top of Gwion art (anthropomorphic, 12,000–14,000 years ago) and underneath Wanjina art (human ancestor figures, up to 5,000 years ago). D uses this evidence to place LNF between two human-figure styles that are millennia apart. Choice A gets the order wrong, since LNF comes after Gwion, and C contradicts the notes, which describe LNF as simpler than IIAP art.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Prehistoric rock art in the Kimberley region of Australia consists of several distinct styles across various time periods.\n• Irregular Infill Animal Period (IIAP) rock art from 13,000 to 17,000 years ago consists of naturalistic animal figures showing detailed features and a variety of poses.\n• Gwion rock art from 12,000 to 14,000 years ago features elaborately ornamented anthropomorphic figures.\n• Wanjina rock art from up to 5,000 years ago features human ancestor figures along with animal motifs.\n• A 2025 study of Kimberley rock art by Ana Paula Motta et al. identified 98 figures depicting outlines of animal forms with simple anatomical details and posed predominantly in profile.\n• The study’s superimposition analysis showed that these Linear Naturalistic Figures (LNF) consistently appear on top of Gwion and underneath Wanjina figures."
+    },
+    "note": "B (\"categorical departure from the previous period\") is a plausible distractor; D chosen because it is directly grounded in the study's superimposition finding."
+  },
+  {
+    "key": "m1-01",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The area of a rectangle is length × width: 52 × 37 = 1,924 square centimeters. Choice D (178) is the perimeter, 2(52 + 37), not the area."
+  },
+  {
+    "key": "m1-02",
+    "answer": [
+      "556"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 80: f(80) = 7(80) − 4 = 560 − 4 = 556."
+  },
+  {
+    "key": "m1-03",
+    "answer": "C",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Exactly 1 of the 18 equally likely faces shows a 5, so the probability is 1/18. Choice D (17/18) is the probability of not rolling a 5.",
+    "fix": {
+      "choices": {
+        "A": "13/18",
+        "B": "5/18",
+        "C": "1/18",
+        "D": "17/18"
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 15x = 3(5x), multiply both sides of 5x = 8 by 3 to get 15x = 24. Choice B (8/3) comes from dividing by 3 instead of multiplying, and 120 comes from multiplying 8 by 15.",
+    "fix": {
+      "choices": {
+        "B": "8/3"
+      }
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Being 125% greater than g means f = g + 1.25g = 2.25g. Being 40% less than f means h = 0.60f = 0.60(2.25g) = 1.35g, so h is 1.35 times g. Choice B (1.85) comes from subtracting 0.40 from 2.25 instead of multiplying by 0.60."
+  },
+  {
+    "key": "m1-06",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x) = mx + b, the slope is the coefficient of x. Here f(x) = −(5/12)x + 9, so the slope is −5/12. Choice A (−9) is built from the constant term, which gives the y-intercept, not the slope.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = −(5/12)x + 9. What is the slope of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "C": "1/12",
+        "D": "−5/12"
+      }
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line k has slope −3. A perpendicular line's slope is the negative reciprocal: −1/(−3) = 1/3. Choice B (−1/3) is only the reciprocal and keeps the wrong sign.",
+    "fix": {
+      "choices": {
+        "B": "−1/3",
+        "D": "1/3"
+      }
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept occurs at x = 0: y = 156(24)^0 = 156(1) = 156. Choice B (3,744) is the value at x = 1."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "12"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To keep j : k = 9 : 5, both quantities must be scaled by the same factor. Since j is multiplied by 12, k must also be multiplied by 12: (12j)/(12k) = j/k = 9/5."
+  },
+  {
+    "key": "m1-10",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In similar triangles CAE and CBD, corresponding angles are equal, and angle CAE corresponds to angle CBD. So angle CAE = 47°. The ratio AE = 19(BD) affects side lengths, not angles, which is why 19° and 893° are traps.",
+    "fix": {
+      "prompt": "In the figure shown, triangle CAE is similar to triangle CBD. The measure of angle CBD is 47°, and AE = 19(BD). What is the measure of angle CAE?",
+      "choices": {
+        "A": "47°",
+        "B": "893°",
+        "C": "66°",
+        "D": "19°"
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": [
+      "49"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand: (4x + 3)(x + 6) = 4x^2 + 24x + 3x + 18 = 4x^2 + 27x + 18. So a + b + c = 4 + 27 + 18 = 49. (Shortcut: a + b + c is the value at x = 1, which is 7 · 7 = 49.)"
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "63"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To convert radians to degrees, multiply by 180/π: (7π/20)(180/π) = 7 · 9 = 63 degrees.",
+    "fix": {
+      "prompt": "An angle has a measure of 7π/20 radians. What is the measure of the angle in degrees?"
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Group G in order is 9, 15, 17, 17, 22, so its median is the middle value, 17. Group H has 4 values, 15, 17, 17, 22, so its median is the average of the two middle values: (17 + 17)/2 = 17. The medians are equal. Group G's low value of 9 lowers its mean, not its median.",
+    "note": "Source answer was C; both medians are 17, so D (equal) is correct."
+  },
+  {
+    "key": "m1-14",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Square both sides of sqrt(26) = sqrt(1/x) to get 26 = 1/x, so x = 1/26. Choice D (1/676) comes from squaring 26 again by mistake.",
+    "fix": {
+      "prompt": "sqrt(26) = sqrt(1/x)\nWhat is the solution to the given equation?",
+      "choices": {
+        "A": "1/26",
+        "D": "1/676"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In s(t), the input t is in years and the output is grams. The input 4 · 31 = 124 years is four 31-year periods, and the output is 20 grams, so after four half-life periods about 20 grams remain (check: 320(0.5)^4 = 20). Choice D misreads the input as 4 years.",
+    "fix": {
+      "prompt": "For a certain isotope, at the end of every 31-year period, the mass of a sample of the isotope has decayed to half its mass at the beginning of the 31-year period.\n\nThe function s(t) = 320(0.5)^(t/31) gives the approximate mass of this isotope, in grams, that remains t years after a 320-gram sample starts to decay. Which statement is the best interpretation of s(4 · 31) = 20 in this context?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point (a, b) on the graph of y = f(x) means f(a) = b. Since the graph passes through (9, 6), f(9) = 6."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "13"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Write x(x + 6) = 247, so x^2 + 6x − 247 = 0. This factors as (x + 19)(x − 13) = 0, giving x = 13 or x = −19. Since x is positive, x = 13."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "280"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Object B has mass 1.35k, so the difference is 1.35k − k = 0.35k. Setting 0.35k = 98 gives k = 98/0.35 = 280."
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope is (3 − 19)/(7 − 3) = −16/4 = −4. Using f(3) = 19: 19 = −4(3) + b, so b = 31 and f(x) = −4x + 31. Choice D has the right slope but the wrong intercept (f(3) would be 23).",
+    "fix": {
+      "choices": {
+        "A": "f(x) = (1/4)x − 2",
+        "C": "f(x) = −(1/4)x + 20"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angle R is the right angle, so QS is the hypotenuse, and RS = 24 is the side opposite angle Q. Then sin Q = 24/QS, so QS = 24/sin Q. Choice C would be correct only if 24 were the side adjacent to Q.",
+    "fix": {
+      "choices": {
+        "A": "24 cos Q",
+        "B": "24/(sin Q)",
+        "C": "24/(cos Q)",
+        "D": "24 sin Q"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first hour costs $140, and each hour after that costs $72. There are x − 1 additional hours, so their cost is 72(x − 1), and then gas w is added: y = 140 + 72(x − 1) + w. Choice B charges $72 for all x hours on top of the $140, which double-counts the first hour."
+  },
+  {
+    "key": "m1-22",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The y-intercept (0, 10) means the worker can assemble 10 large shelves and no small shelves in 840 minutes. So each large shelf takes 840/10 = 84 minutes. (Similarly, each small shelf takes 840/14 = 60 minutes, which is choice D.)"
+  },
+  {
+    "key": "m2-01",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The left side 6S + 9L is the total number of people seated, and S is the number of small tables. So 6 must be the number of people per small table. Choice D mixes up the tables; 9 is the number of people per large table."
+  },
+  {
+    "key": "m2-02",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line falls from about (0, 12.6) to about (9, 0), so its slope is about (0 − 12.6)/(9 − 0) ≈ −1.4. The line goes down, which rules out the positive choices, and −4.2 is far too steep."
+  },
+  {
+    "key": "m2-03",
+    "answer": [
+      "45"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand: 6t − 21 + t = 24 + 5t, so 7t − 21 = 24 + 5t. Subtract 5t and add 21 to get 2t = 45. The question asks for 2t, so there's no need to solve for t."
+  },
+  {
+    "key": "m2-04",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "First, j(7) = (8(7) + 4)/(5p) = 60/(5p) = 12/p. Then k(7) = j(7) · p/(7 + 2) = (12/p)(p)/9 = 12/9 = 4/3. The p cancels, so the result doesn't depend on p.",
+    "fix": {
+      "prompt": "The function j is defined by j(x) = (8x + 4)/(5p), and the function k is defined by k(x) = (j(x) · p)/(x + 2), where p is a positive constant. What is the value of k(7)?",
+      "choices": {
+        "A": "28/5",
+        "B": "4/3",
+        "C": "20/3",
+        "D": "8/5"
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": [
+      "54"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply the first equation by 3: 6x + 21y = 15. Subtracting this from 6x − 3y = 39 gives −24y = 24, so y = −1. Then 2x − 7 = 5 gives x = 6. So 8x − 6y = 48 + 6 = 54."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point (x, y) on the graph means x days have passed and the remaining mass is y grams. So (2, 541.70) means the estimated mass is 541.70 grams after 2 days. Choice C swaps the roles of x and y, and B and D treat 541.70 as an amount lost instead of an amount remaining."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since x^2 ≥ 0, 5x^2 can never be negative. If p is negative, the equation has no real solution. Of the choices, only −75 is negative; for 60, 35, and 10 the equation has two real solutions."
+  },
+  {
+    "key": "m2-08",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first equation simplifies to y = −x^2, and the second gives y = 14x + 49. Setting them equal: −x^2 = 14x + 49, so x^2 + 14x + 49 = 0, which is (x + 7)^2 = 0. Therefore x = −7."
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The other 5 resistors have a total resistance of 104 − 69 = 35 ohms. Each resistance is positive, so any single one of them must be greater than 0 and less than 35 (the other four take up the rest). Choice C (0 < x < 7) gives only the average, 35/5 = 7, not the full range."
+  },
+  {
+    "key": "m2-10",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "G is linear in x with slope 7/4, so each 1-kelvin increase raises G by 7/4 degrees. An increase of 16.80 kelvins raises G by (7/4)(16.80) = 29.40 degrees. Choices C and D wrongly bring in the constants 250 and 28, which don't affect the change.",
+    "fix": {
+      "prompt": "G(x) = (7/4)(x − 250) + 28\nThe function G gives the temperature, in degrees on a laboratory scale G, that corresponds to a temperature of x kelvins. If a temperature increased by 16.80 kelvins, by how much did the temperature increase, in degrees G?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A system has no solution when the lines are parallel and not the same line. Multiplying −5x + 7y = 3 by −2 gives 10x − 14y = −6, which has the same left side as 10x − 14y = 8 but a different constant, so the lines are parallel. In B and D, one equation is a multiple of the other, so they are the same line (infinitely many solutions). C has different slopes, so it has exactly one solution."
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The x-intercept has y = 0, so px = 3 and x = 3/p. The intercept is (3/p, 0). Choice C comes from mixing up the coefficients.",
+    "fix": {
+      "choices": {
+        "A": "(p, 0)",
+        "B": "(3/p, 0)",
+        "C": "(p/18, 0)",
+        "D": "(1/18, 0)"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle A has center (−4, 11) and radius 19. Shifting 6 right and 4 down moves the center to (−4 + 6, 11 − 4) = (2, 7), and the radius stays the same. So circle B is (x − 2)^2 + (y − 7)^2 = 361. Choice D moves the center up instead of down."
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "36"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The volume of a pyramid is V = (1/3)Bh, so 324 = (1/3)B(12) = 4B and B = 81. The square base has side sqrt(81) = 9, so its perimeter is 4 · 9 = 36 inches."
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Collect the t terms: 8xt − 22yt = −5xy, so t(8x − 22y) = −5xy. Divide to get t = −5xy/(8x − 22y) = 5xy/(22y − 8x). Choice C has the right numerator, but its denominator has the wrong sign.",
+    "fix": {
+      "choices": {
+        "A": "t = xy/(4(y − x))",
+        "B": "t = 1/4",
+        "C": "t = 5xy/(8x − 22y)",
+        "D": "t = 5xy/(22y − 8x)"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite f(x) = (1.06)^3 · (1.06)^(−5x) = (1.06)^3 · ((1.06)^(−5))^x. Since (1.06)^5 ≈ 1.338, (1.06)^(−5) ≈ 0.747. Setting 1 − p/100 ≈ 0.747 gives p ≈ 25.3, so p is closest to 25. Choice B (52) doesn't match this calculation.",
+    "fix": {
+      "prompt": "f(x) = (1.06)^(3 − 5x)\nThe function f is defined by the given equation. The equation can be rewritten as f(x) = a(1 − p/100)^x, where a and p are constants. Which of the following is closest to the value of p?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiplying by 3 for each increase of 1 in x is exponential growth with base 3, and the starting value f(0) = 7 is the coefficient. So f(x) = 7(3)^x. Choice D adds 3 each step (linear growth) instead of multiplying, and C swaps the base and the starting value."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "123"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since PQ = QR, the angles opposite those sides are equal: angle R = angle P = (4x + 17)°. The angles sum to 180°: 2(4x + 17) + (5x + 16) = 180, so 13x + 50 = 180 and x = 10. That makes angle R = 57°. Angle QRS forms a straight line with angle QRP, so y = 180 − 57 = 123.",
+    "fix": {
+      "prompt": "In triangle PQR, the measure of angle P is (4x + 17)°, the measure of angle Q is (5x + 16)°, PQ = 6, and QR = 6.\n\nSide PR is extended through point R to point S. The measure of angle QRS is y°. What is the value of y?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Each base is 10 cm by 10 cm, so the bases cancel in the difference, and each pyramid's lateral area is 4 · (1/2)(10)(ℓ) = 20ℓ, where ℓ is the slant height. The slant heights are sqrt(15^2 + 5^2) = sqrt(250) ≈ 15.81 and sqrt(30^2 + 5^2) = sqrt(925) ≈ 30.41. The difference is 20(30.41 − 15.81) ≈ 292 cm². Using the heights instead of slant heights gives 20(15) = 300, which is not a choice."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "442"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since a < 0, |14a| = −14a and |5a| = −5a. So f(14a) = (−14a)/a − 12 = −14 − 12 = −26, and f(5a) = (−5a)/a − 12 = −17. The product is (−26)(−17) = 442.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = |x|/a − 12, where a < 0. What is the product of f(14a) and f(5a)?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The increase from 18 to 234 is 216, and 216/18 = 12, so 234 is 1,200% greater than 18. Choice B (1,300) is the percent that 234 is of 18 (234 = 13 × 18), not the percent increase."
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Factor out (x − 4): y^2(x − 4) − 49(x − 4)^3 = (x − 4)[y^2 − 49(x − 4)^2]. The bracket is a difference of squares: (y − 7(x − 4))(y + 7(x − 4)) = (y − 7x + 28)(y + 7x − 28). So y + 7x − 28 is a factor. Choice A fails because y is not a factor of the second term."
+  }
+]

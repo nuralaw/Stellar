@@ -1,0 +1,507 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The word \"despite\" sets up a contrast: whatever she felt about her general expertise, she still found she could speak with authority about Haskins's work. Feeling unsure, or \"hesitancy about,\" her expertise is exactly what that contrast needs. \"Insight into\" or \"affinity for\" would be positive, so there would be nothing for \"despite\" to work against."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The colon explains that the handcrafted elements exemplify the artistry Morris valued, so his rejection of industrial methods is visibly shown, or \"manifest in,\" those editions. \"Complicated by\" would mean the handmade features worked against his stance, but the text says they illustrate it. \"Insensible to\" and \"scrutinized by\" don't describe how a viewpoint appears in an object.",
+    "fix": {
+      "passage": "In 1891, design artist William Morris cofounded the Kelmscott Press, which printed editions of books using preindustrial methods. Historians argue that Morris's repudiation of industrialization is _____ the Kelmscott editions' use of handmade materials and intricate ornamentation reminiscent of medieval manuscripts: these meticulously handcrafted elements exemplify the artistry involved."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text warns against treating one example (Manchester textiles) as representative of industrial clustering in general. Drawing general conclusions from a single case is \"extrapolating from\" it. \"Scrutinizing\" the example is something researchers should do, not something to caution against, and \"corroborating\" means confirming, which doesn't fit."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The examples show artists blending Indigenous music (throat singing, powwow vocals) with electronic music, so they refuse to keep the styles separate: they \"reject\" the distinctions. \"Observe\" would mean they respect the separation, the opposite of what the examples show. \"Replace\" and \"disguise\" don't fit what combining styles does to a distinction."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first reports a finding (moonlight inhibits pocket mice) and explains it with costs and benefits, then says most nocturnal mammals respond the same way, and finally gives an exception (night monkeys) along with its own explanation (visual foraging). Choice A is tempting, but the exception doesn't cast doubt on the explanation; it actually fits the same reward-versus-risk logic."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says that \"simply by selecting\" Mérida, UNESCO boosted awareness and tourism, so the benefits came automatically. Text 2 argues that cities must still create effective marketing strategies to benefit fully. Choice C is wrong because Text 2 doesn't doubt there was a benefit; it credits the benefit to deliberate promotion."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Baleen whales eat up to 30 percent of their mass per day, and the blue whale (150,000 kg) is far larger than the pygmy right whale (at most 3,500 kg). The blue whale can eat 45,000 kg of krill per day, which is more than the pygmy right whale's entire mass, so the blue whale can eat more krill per day. Choice B is wrong because 45,000 kg is far beyond what a 3,500 kg whale could eat."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The last sentence says the constant voice modification invites listeners to reflect on how much digital technology shapes human experience today. That is a comment on present-day social conditions. Choice A goes too far: the text never calls technology's influence negative, only something worth reflecting on."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the Tikal Temple IV row shows a height of 70 meters, so the sentence should end with \"70 meters tall.\" The value 72 meters belongs to La Danta in the row above, which is the easiest number to pick by mistake.",
+    "fix": {
+      "passage": "A student is writing an essay about four pyramids for a history class and wants to note how long ago each pyramid was built and how tall each pyramid is. Consulting the table, the student finds that the Tikal Temple IV was built 1,300 years ago and is _____",
+      "table": {
+        "caption": "Pyramids in Egypt and the Americas",
+        "headers": ["Pyramid", "Country", "Height (meters)", "Age (years before present)"],
+        "rows": [
+          ["The Pyramid of Khafre", "Egypt", "143.5", "4,500 to 4,600"],
+          ["La Danta", "Guatemala", "72", "1,900 to 2,300"],
+          ["The Tikal Temple IV", "Guatemala", "70", "1,300"],
+          ["The Pyramid of Amenemhet I", "Egypt", "55", "3,800 to 4,000"]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Look at the last column: tribal economic activity contributes $141,510 per employee. That is less than transportation/warehousing ($234,720) but more than manufacturing ($130,403) and health care ($70,937). Choice C fails because $141,510 is nowhere near $234,720.",
+    "note": "Transportation contribution printed as $712,414,600,000; corrected to $12,414,600,000 (= 52,891 × $234,720). Doesn't affect the answer.",
+    "fix": {
+      "passage": "The Osage Nation, the Quapaw Tribe, and the more than thirty other tribes in Oklahoma operate numerous businesses and generate billions of dollars in revenue. An economics student is researching the tribes' collective activity as a single industry. The student wants to compare the average amount that industry contributed per employee to Oklahoma's economy with the average amount contributed per employee by three other industries. Looking at the table, the student finds the tribal economic activity contributed over $141,000 per employee, on average, ranking it _____",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": ["Industry", "Approximate local contribution by industry", "Number of people employed by industry", "Average contribution per employee by industry"],
+        "rows": [
+          ["Manufacturing", "$16,707,500,000", "128,122", "$130,403"],
+          ["Health care", "$13,727,300,000", "193,514", "$70,937"],
+          ["Transportation/warehousing", "$12,414,600,000", "52,891", "$234,720"],
+          ["Tribal economic activity", "$7,312,400,000", "51,674", "$141,510"]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that people don't universally picture time along an imagined straight axis. If Yupno speakers point to the future in front of them when facing uphill but behind them when facing downhill, their sense of time follows the real landscape, not a fixed body-centered line. Choice C describes which hand is used, which says nothing about how time is laid out in space."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Several studies outside North America (like the Finnish one) found the same positive association, and few matched the Brazilian result. So the link is not limited to North America: carbon and mercury levels typically rise and fall together in fresh water. Choice C states the opposite, the hypothesis this evidence undermines.",
+    "fix": {
+      "passage": "Many studies have found a positive association between levels of dissolved organic carbon and mercury in bodies of fresh water in North America. But Enelton Fagnani, José Roberto Guimarães, and Pedro Sérgio Fadini did not find this correlation in a study conducted in Brazil, leading some scientists to hypothesize that the association is particular to North America. However, several other studies conducted outside North America, such as one by Heidi Pyhtilä and colleagues in Finland, showed similar results to the North American studies, while few have produced results similar to those of Fagnani, Guimarães, and Fadini's study, suggesting that _____",
+      "choices": {
+        "B": "there were circumstances unique to Pyhtilä and colleagues' study that impeded accurate measurements of mercury levels."
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Under the Aztec view, an action is judged by how well it fits the person's social role and serves the community, so its morality depends on social context. The Aztecs would therefore reject the idea that actions can be judged by standards independent of a person's circumstances. Choice C goes beyond the text, which never says the Aztecs saw some behaviors as good in all contexts."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Linguist\" is a title placed directly before the name, so no punctuation belongs between \"linguist\" and \"Diane Massam,\" and none goes after the name before \"of the University of Toronto.\" Choice B wrongly treats the name as extra information set off by commas, and it also splits \"Diane Massam\" from \"of the University of Toronto.\""
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"the writer Maya Angelou,\" which is singular. The phrase \"along with others such as Lorenzo Thomas and Gwendolyn Brooks\" is set off by commas and doesn't make the subject plural, so the verb is \"is.\" \"Are\" is the trap for anyone who counts the extra names as part of the subject."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Which sites to add next\" is the direct object of \"select,\" and a verb is never separated from its object by punctuation. A comma, colon, or semicolon would all wrongly cut the verb off from what is being selected."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"units of measurement.\" The next sentence starts with the modifier \"Used to record length and volume, respectively,\" which describes the main subject \"the sheep and heqat.\" Choice C joins two independent clauses with only a comma, creating a comma splice, and choices A and D run the two sentences together."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" belongs to the first clause: the designation is hypothetical, in contrast to Proto-Cariban being \"said to be\" the ancestor. A semicolon then separates the two independent clauses. Choice A attaches \"however\" to the second clause, which isn't a contrast with the first, and choice D joins two independent clauses with just commas, creating a comma splice."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"the toxins,\" which is plural, and the passage is in the simple present, so the verb is \"increase.\" \"Increases\" is tempting because \"organism\" and \"itself\" sit right before the blank, but those are inside the clause that describes the toxins.",
+    "fix": {
+      "passage": "A species of Bryopsis algae produces toxins to avoid being eaten by predators. However, in some cases, the toxins the organism uses to protect itself from predation actually _____ its attractiveness to predators. The Hawaiian sea slug, for example, not only tolerates Bryopsis toxins but actually uses them for protection in the same way the algae does."
+    }
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "\"However\" contrasts this sentence with the one before it: Chambers is best known as Sugar Hill's house drummer, but he didn't play on its classic song. So \"however\" ends the first clause, and a semicolon separates it from the next independent clause, which explains why. Choice D makes \"However\" contrast not playing on the song with joining the label afterward, but the second fact explains the first, so it isn't a contrast.",
+    "note": "PDF says D; D puts the contrast word in front of a clause that explains rather than contrasts, so C is the logical choice."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says quick isolation wasn't the case for all elements, so the next sentence describes what happened in some cases: \"Sometimes,\" the process took years. \"However\" is tempting, but the contrast was already made with \"but\" in the previous sentence, and this sentence just describes those exceptions."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence says natural selection was an obvious next step given the ideas of the time. The second draws a conclusion from that: it may not be a coincidence that two scientists reached it independently. \"Then\" signals that conclusion. \"However\" would wrongly signal a contrast."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives two different ways to choose a band name: something completely original, or a name taken from a favorite band's song. \"Alternatively\" introduces the second option. \"For instance\" fails because naming a band after an existing song is not an example of an original name."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize the farm's nameplate capacity, the sentence must give that capacity: 351 megawatts. Only choice A states the number. Choice D defines nameplate capacity but never says what Hallett's is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A wind farm uses turbines to convert wind into electrical power.\n• A wind farm’s maximum electrical output is called its nameplate capacity.\n• Hallett Wind Farm is located in Hallett, Australia.\n• Its nameplate capacity is 351 megawatts."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both sculptures show two African American figures in a pose that symbolizes mutual support, and choice B states exactly that shared feature. Choice D contrasts the figures' features, which is a difference, not a similarity, and choice A mentions only one sculpture.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Elizabeth Catlett’s sculpture Recognition (1970) shows two African American figures with rounded, indistinct features.\n• The figures reach out to each other in a pose that symbolizes a close, supportive relationship.\n• Her sculpture Students Aspire (1978) shows two African American figures with sharply defined features.\n• The figures hold an equal sign above their heads with one hand and embrace each other with the other hand.\n• This pose symbolizes their support for each other in the pursuit of equality."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a specific example of a service, and the notes name one: water treatment. Choice A says Tlahuiltepa, as a municipality, provides water treatment. Choice D says it provides \"public services\" but never names one, so it gives no example.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Tlahuiltepa is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is water treatment.\n• Tlahuiltepa's population was 9,086 in 2020.\n• Hidalgo is divided into 84 municipalities.",
+      "prompt": "The student wants to provide an example of a public service that Tlahuiltepa is responsible for. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Harder minerals can scratch softer ones, so saying orthoclase scratches talc and is therefore harder directly compares the two minerals the student cares about. Choice D compares calcite and talc instead, and choice C compares orthoclase with calcite.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral talc has a Mohs scale number of 1.\n• The mineral calcite has a Mohs scale number of 3.\n• The mineral orthoclase has a Mohs scale number of 6."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mrs. Wilkins stays where she is and extends her arm to the bowl to take an orange, so \"reaching across to\" means \"stretching toward.\" \"Arriving at\" would mean she moved to the bowl, but the text says she stayed in place."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence says ecosystems cross the border, which makes international cooperation \"essential.\" So managing the environment there \"requires\" coordination. \"Advises\" doesn't work, because managing environmental matters is not something that can give advice."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Human-like features are meant to make robots \"comforting,\" but a robot that looks too human can make people feel more unsettled than comforted, that is, \"soothed.\" \"Revolted\" is close in meaning to unsettled, so the contrast in \"more unsettled than ___\" would make no sense."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The entries were hoaxes about a fictitious town and a made-up legislator, so they were eventually recognized as \"fabrications\" and deleted. \"Revelations\" suggests surprising truths, which is the opposite of fake entries."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A few ratings can mislead, but more than 8,000 are enough to trust the average, so the number is \"adequate.\" \"Excessive\" would mean too many, which the text doesn't suggest. \"Insufficient\" contradicts the confidence the sentence expresses."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes the 2012 study's conclusion, then points out its small sample of about 14 fish and cites a review warning that small samples can lead to biased analysis and exaggerated effects. The purpose is to raise a concern about that study's findings. Choice A fails because the text isn't about what causes ocean acidification.",
+    "fix": {
+      "passage": "In 2012 Göran E. Nilsson and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Amphiprion percula, a species of fish. However, Nilsson and colleagues' study relied on a mean sample size of only about 14 fish. In a 2022 review of various scientists' conclusions about the impacts of ocean acidification on fish behavior, Josefin Sundin and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. Such analysis, in turn, can contribute to reports of exaggerated effects."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Text 1 ends by calling the millennial whoop more irritating than enjoyable. Text 2 admits it was overused but says it could be fun or even moving, which is a more positive view. Choice C is wrong because neither text discusses a recording technique or its advantages."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Ambopteryx is given as an example of a winged dinosaur with feathers, and Yutyrannus as a wingless dinosaur that likely had feathers, so they share feathers. Choice B is wrong because Ambopteryx had wings.",
+    "fix": {
+      "passage": "When people think of dinosaurs with feathers, they typically think of winged dinosaurs, such as the bat-like Ambopteryx. However, many dinosaurs that didn't have wings also had feathers on their bodies. For instance, research indicates that the wingless, large Yutyrannus likely had feathers."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Moody worked as an NSA cryptanalyst, and Lysyanskaya works in and teaches digital cryptography, so both have contributed to cryptology. Choice B mixes up the \"history of US cryptology\" with working as historians, which neither woman is said to do."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the problem is \"too much contradictory evidence,\" not too little. So there is evidence supporting Hamilton and evidence supporting Madison as the author. Choice C contradicts this by blaming lost evidence."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Cunningham is one example of the rich history of Black journalism in the US, and the National Association of Black Journalists preserves that history and honors people like her. Choice C captures both parts. Choice B is only a detail, and it also gets the date wrong."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If carbon dioxide helped midges find frogs, the trap with calls plus carbon dioxide should catch more midges. Finding more midges in the calls-only trap shows the carbon dioxide added nothing. Choices A, B, and D all suggest carbon dioxide attracted midges, which would weaken the conclusion."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show a significant change in her development, the quotation should set The Horse Fair apart from her earlier work. Choice A says her earlier paintings belong to a style she never returned to after it. Choice B praises the painting as her best, but being her best is not the same as marking a change."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The impact theory needs a crater that dates to the start of the Younger Dryas. Because the team can't yet date the crater, it can't be linked to the cooling period. Choice D is wrong because the problem is the crater's unknown age, not the period's dates."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Small white herons prefer deep water during breeding season, but white ibises don't. So making the water deeper is more likely to attract herons than ibises. Choice A wrongly says deeper water would make the area less appealing to herons, which contradicts their preference."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"The Kolyma River\" is singular, and the sentence states a general fact, so the singular present-tense verb \"flows\" is correct. \"Are flowing,\" \"flow,\" and \"have flowed\" are all plural forms."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb, \"can sign up,\" so the blank needs a phrase showing purpose: \"to learn\" the technique. \"Learn,\" \"learned,\" and \"are learning\" would put a second main verb in the clause with no connecting word."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to a single event, Lê Lương Minh's appointment, so it must be singular: \"making this the first time.\" \"These\" and \"those\" are plural and don't match one event."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"At Edwards Air Force Base\" is a prepositional phrase, and a preposition must not be separated from its object. A dash, comma, or colon after \"at\" would break up the phrase."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The event happened on a specific past date (November 5, 2003), and the main clause uses \"became,\" so the verb must be the simple past \"began.\" \"Has begun\" can't be used with a specific past date."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The chapter is described in the future (\"we will focus\"), and \"next\" shows the turn to Baldwin and Troupe comes later, so the simple future \"will turn\" fits. \"Will have turned\" means an action finished before some later point, and no such point is given."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "She wanted to avoid harsh synthetic dyes, and because of that goal she started using natural dyes. \"With this in mind\" signals an action taken because of the goal just stated. \"Nevertheless\" signals a contrast, but the second sentence follows from the first."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says the architects drew on nature in general, and the second narrows it down to plant- and animal-inspired flourishes like the stone turtles. \"In particular\" signals that move to a more specific point. \"On the contrary\" wrongly suggests a contradiction."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "One Le Guin novel is science fiction, and the other is fantasy, so the second sentence contrasts with the first. \"On the other hand\" signals that contrast. \"For example\" fails because a fantasy novel is not an example of science fiction."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the two numbers, the sentence needs both: about 1,200 falls and over 60,000 finds. Choice D gives both and links them with \"while.\" Choice C gives only the number of falls, so there is nothing to contrast with.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Meteorites found on Earth are divided into two categories.\n• A meteorite that was observed falling to Earth before being recovered is known as a meteorite fall.\n• All other meteorites found on Earth are known as meteorite finds.\n• There have been about 1,200 recorded meteorite falls.\n• There have been over 60,000 recorded meteorite finds.",
+      "prompt": "The student wants to contrast the number of meteorite falls with the number of meteorite finds. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence should compare the two species directly. Choice A contrasts over 15,000 chromosomes with 64. Choice C states something both species share, which is a similarity, and choices B and D each describe only one species.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Chromosomes are cellular structures that contain genes.\n• Genes carry critical instructions for determining an organism’s physical traits.\n• Members of the same species typically have the same number of chromosomes.\n• As a species, the fennec fox (Vulpes zerda) has sixty-four chromosomes.\n• As a species, the Sterkiella histriomuscorum, a simple, single-celled protozoan, has over 15,000 chromosomes.",
+      "prompt": "The student wants to emphasize a difference between Vulpes zerda and Sterkiella histriomuscorum. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "choices": {
+        "A": "Sterkiella histriomuscorum has over 15,000 chromosomes, which is far more than the sixty-four chromosome Vulpes zerda has."
+      }
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to make a claim and also support it. Choice A claims the Clovis likely weren't the first people in North America and backs this up with the evidence from more than a dozen pre-Clovis sites. Choice B makes the same claim but gives no supporting evidence.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Clovis First hypothesis proposes that ancient humans known as Clovis were the first to populate North America.\n• The Clovis arrived around 13,000 years ago.\n• Stone tools found at the False Cougar Cave site in Montana date to approximately 17,500 years ago.\n• These items support the idea that humans were present in North America before the Clovis population arrived.\n• More than a dozen North American sites containing pre-Clovis items have been identified."
+    }
+  }
+]

@@ -1,0 +1,1055 @@
+[
+ {
+  "key": "rw1-01",
+  "answer": "A",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Genetic research is a way of uncovering facts, and the sentence says it showed what maize's ancestor was, so the research \"revealed\" teosinte as the ancestor. \"Expanded\" and \"encouraged\" don't describe discovering something, and \"petitioned\" (formally asked) makes no sense for research."
+ },
+ {
+  "key": "rw1-02",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The next sentence lists three different viewpoints: the mother's, the father's and the daughter's. These are separate, clearly different perspectives, so \"distinct\" fits. Nothing suggests the perspectives are \"unknown\" or \"unintended,\" and \"required\" adds an idea the text never mentions."
+ },
+ {
+  "key": "rw1-03",
+  "answer": "B",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The word \"but\" sets up a contrast with sculptures that idealize people, so the blank needs the opposite of idealizing. Showing people in \"unflattering\" ways is exactly that contrast. \"Implausible\" and \"imprecise\" are about accuracy, not about making people look better or worse."
+ },
+ {
+  "key": "rw1-04",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The underlined phrase compares the mantises' color filters to the familiar 3D glasses people wore at movies. This comparison helps readers picture how the experiment worked. It doesn't describe a problem the researchers faced (B), and it isn't saying the researchers' tool was used earlier at movies (D); it's just an analogy.",
+  "fix": {
+   "passage": "Barn owls and horses see in three dimensions (3D) by combining two images in their brains, one from each eye. This produces a sense of depth, helping the animals judge how close or far away an object is. Researchers have investigated 3D vision in praying mantises as well. In one study, Vivek Nityananda and his team fitted mantises' faces with two different color filters, one covering each eye, <u>much like the filters in 3D glasses once worn at movies</u>. By observing the mantises' reaction to projected images, the team confirmed that mantises do indeed have 3D vision, but it's unlike that of other animals."
+  }
+ },
+ {
+  "key": "rw1-05",
+  "answer": "B",
+  "skill": "text-structure-purpose",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text first states the study's conclusion (thinking about values first leads to more polite discussion), then describes the two groups and the finding that led to that conclusion. That matches B. The text never criticizes the design (A), mentions surprise (C) or describes a widely held belief (D)."
+ },
+ {
+  "key": "rw1-06",
+  "answer": "A",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The narrator first makes a general observation: on a boat, every crew member thinks he is doing all the work. The underlined sentence shows Harris thinking exactly that, so it is a specific example of the general trend (and George's view is another). Harris isn't surprised (B) or trying to clear anything up (C); he simply believes he did everything.",
+  "fix": {
+   "passage": "The following text is from Jerome K. Jerome’s 1889 novel Three Men in a Boat (To Say Nothing of the Dog). The narrator and two friends are taking a boat down the River Thames in England.\n\nIn a boat, I have always noticed that it is the fixed idea of each member of the crew that he is doing everything. <u>Harris’s notion was, that it was he alone who had been working, and that both George and I had been imposing upon him.</u> George, on the other hand, ridiculed the idea of Harris’s having done anything more than eat and sleep, and had a cast-iron opinion that it was he—George himself— who had done all the labour worth speaking of."
+  }
+ },
+ {
+  "key": "rw1-07",
+  "answer": "B",
+  "skill": "central-ideas",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text says that after his play was hissed, \"he ceased to write plays and assumed instead the nobler rôle of patron.\" So becoming a patron came along with stopping writing plays. The text never mentions him moving away from Madrid, a short story or a journalism job.",
+  "fix": {
+   "passage": "The following text is adapted from Armando Palacio Valdés’s short story The Love of Clotilde, originally published in Spanish in 1884.\n\nIt was said that in [Don Jerónimo’s] youth he once wrote a play which won him nothing but hisses and free entry for life behind the scenes of the theaters. Whether resigned or not to the verdict of the public, he ceased to write plays and assumed instead the nobler rôle of patron to unrecognized authors and artists and to ruined managers. Any youth from the provinces who arrived in Madrid with a drama in his pocket could take no surer road to seeing it produced than that which led to the home of Don Jerónimo. One and all, he received them with open arms, the good and the bad alike."
+  }
+ },
+ {
+  "key": "rw1-08",
+  "answer": "C",
+  "skill": "central-ideas",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Baleen whales eat up to 30% of their mass per day, and the bowhead can eat 19,800 kg of krill per day while the sei whale weighs at most 25,000 kg (so it eats at most about 7,500 kg). The much larger bowhead therefore can eat more krill per day than the sei. Choice B is wrong because 19,800 kg is a figure for the bowhead only."
+ },
+ {
+  "key": "rw1-09",
+  "answer": "D",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The text claims natural regrowth began in the mid-1980s, so the evidence should show forest area going up afterward. In the graph, all three classes have more forest in 2000 than in 1979 (e.g., Class I-IV goes from about 340 to about 1,000 square km). Choice B describes the loss from 1960 to 1979, the deforestation itself, not regrowth."
+ },
+ {
+  "key": "rw1-10",
+  "answer": "B",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The tallest bar in the graph is recycling process 2 for Type B batteries, which reaches about 76%. So the highest recovery was closest to 75%. 45% isn't near any bar's top, and 20% and 10% are below even the lowest bar (about 30%)."
+ },
+ {
+  "key": "rw1-11",
+  "answer": "C",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "An example of a species being entirely absent needs a count of zero. The three-lined rainbowfish line sits at 0 in January, April and July 2001. The barred flagtail was present in every month shown (about 14 in January and 16 in October), and the combtooth blenny peaked at over 60 in January."
+ },
+ {
+  "key": "rw1-12",
+  "answer": "A",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The claim is that Newland thinks his intellect is better than other society men's. Choice A says he felt \"distinctly the superior\" of them because he had read more, thought more and seen more of the world. Choice D mentions the men's inferiority, but says he goes along with their views, and B and C don't compare intellects at all."
+ },
+ {
+  "key": "rw1-13",
+  "answer": "A",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The student claims congestion was worse in big cities but also grew in smaller areas. Choice A compares Miami (always higher) with Boise and notes delay rose in both from 1990 to 2000, which supports both parts of the claim. Choice C is false, since Miami's delay was higher than Allentown-Bethlehem's, and B and D give single data points that don't show any trend."
+ },
+ {
+  "key": "rw1-14",
+  "answer": "D",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The text says the doctors' expert status wasn't ignored but was outweighed by the \"experiential relevance\" of the messengers. Former volunteers had gone through the trials the participants were considering, and doctors had not, so that shared experience mattered more to participants than credentials, as D states. Choice C says participants were skeptical of the doctors' credentials, which contradicts the idea that the status wasn't ignored."
+ },
+ {
+  "key": "rw1-15",
+  "answer": "D",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The pronoun refers back to \"the substance,\" the chicken fat, which is singular, so \"it\" is correct. \"Those\" and \"they\" are plural, and \"that\" would need a noun after it to be clear here."
+ },
+ {
+  "key": "rw1-16",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "After an adjective like \"likely,\" English uses the infinitive: \"more likely to eat.\" The finite verbs \"ate\" and \"will be eating\" and the participle \"eaten\" can't follow \"more likely\" in this structure."
+ },
+ {
+  "key": "rw1-17",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "This is a list of deserts whose items already contain commas (\"the Syrian Desert, ranked ninth in size\"), so the items must be separated by semicolons. Choice B puts a semicolon after each complete item and a comma inside each one between the desert and its rank. Choice C wrongly puts a semicolon between \"the Kyzylkum Desert\" and its own rank."
+ },
+ {
+  "key": "rw1-18",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The blank needs a subject and a verb: \"it is 112th in a global ranking,\" which contracts to \"it's.\" The subject is the singular constitution, so \"they're\" is wrong, and \"its\" and \"their\" are possessives with no verb."
+ },
+ {
+  "key": "rw1-19",
+  "answer": "A",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"The sand at Balos Beach in Greece is a more unusual shade, though\" is a complete sentence, and \"deposits of crushed coral... lend the sand a unique pink hue\" is another. A semicolon after \"though\" correctly joins them, with \"though\" attached to the first clause. Choice D attaches \"though\" to the second clause, which turns it into a fragment-like dependent clause after the semicolon."
+ },
+ {
+  "key": "rw1-20",
+  "answer": "D",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The quotation ends a complete sentence, and \"in 2004, for instance, judges recognized...\" begins another independent clause. A semicolon after the closing quotation mark correctly joins the two. Choice A creates a run-on, C creates a comma splice, and B's \"and,\" puts the comma in the wrong place."
+ },
+ {
+  "key": "rw1-21",
+  "answer": "D",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"It began to dim over the next few weeks, however\" is a complete clause with \"however\" as an interrupting word, so a comma comes before it and a semicolon after it to start the next independent clause. Choices A and B attach \"however\" to the second clause, which wrongly suggests the short life of supernovas contrasts with the dimming."
+ },
+ {
+  "key": "rw1-22",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text moves through time: arrival in 1585, plays known by 1591, and then King John in 1596. \"Later\" signals this next step in the timeline. Nothing is being restated (A), contrasted (B) or concluded as a result (C)."
+ },
+ {
+  "key": "rw1-23",
+  "answer": "C",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is to give an example of a fossil's nickname, so the sentence must name a specific nickname. Choice C gives \"Wyrex\" and says which specimen it belongs to. Choices A and B only say that nicknames exist, and D describes a specimen without its nickname.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Dinosaur fossil specimens can be found at science museums all over the world.\n• Many dinosaur fossil specimens are given nicknames.\n• The Houston Museum of Natural Science in Houston, Texas, houses a dinosaur fossil specimen nicknamed Wyrex.\n• Wyrex lived in the Late Cretaceous period, which ended more than 65 million years ago.\n• It is a member of the genus Tyrannosaurus."
+  }
+ },
+ {
+  "key": "rw1-24",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is to show how Wilkerson documents the Great Migration. Choice B says she does it by narrating the journeys of individuals such as Ida Mae Gladney and Robert Pershing Foster. Choice A is about the prizes, and D is about Denver, so neither explains her method.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Historian Isabel Wilkerson’s book The Warmth of Other Suns is about the Great Migration.\n• The Great Migration was a period in twentieth-century US history when over six million African Americans moved from the rural South to cities such as Denver, Colorado.\n• To document this period, Wilkerson narrates the personal journeys of Ida Mae Gladney and Robert Pershing Foster, among others.\n• The book won the Mark Lynton History Prize in 2011.\n• It also won the Heartland Prize in 2011."
+  }
+ },
+ {
+  "key": "rw1-25",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To emphasize a difference, the sentence must contrast the two seaweeds. Choice B says arame's umami is more intense than winged kelp's (high vs. moderate). Choices A and C point out what they have in common, and D compares seaweed to ham and mushrooms.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The human tongue contains taste receptors for a rich, savory flavor called umami.\n• Umami is triggered by the compounds in a variety of foods, including ham and mushrooms.\n• Participants in a study tasted a sample of winged kelp, a type of brown seaweed.\n• They rated its umami intensity as moderate.\n• The participants tasted a sample of arame, another type of brown seaweed.\n• They rated its umami intensity as high."
+  }
+ },
+ {
+  "key": "rw1-26",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is to emphasize when Minsky won the award, and choice B focuses on the year: \"It was in 1969.\" Choice A explains why he won, C describes the award, and D gives no date at all.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The A.M.\n• Turing Award is a prestigious award given by the Association for Computing Machinery (ACM).\n• The ACM gives the award for “major contributions of lasting importance to computing.”\n• Marvin Minsky won the award in 1969 for playing a central role in developing the field of artificial intelligence."
+  }
+ },
+ {
+  "key": "rw1-27",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is the location of the figures in A Promise, and choice A says the two men are on the left side of the canvas. Choice B is about the painting's size, C about its mood, and D about the colors of the water.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Calida Garcia Rawles is an African American painter.\n• She is known for her large-scale, hyperrealistic paintings depicting African American figures in water.\n• The painting Little Swimmer (48 × 60 in) depicts a young girl with her arms at her sides swimming at the top of the canvas.\n• A Promise (48 × 72 in) depicts two men in white shirts floating on the left side of the canvas.\n• She paints the water with vivid blue colors, including light blue and cobalt.\n• The mood in the paintings is tranquil.",
+   "choices": {
+    "A": "In Rawles’s painting A Promise, two men are depicted on the left side of the canvas."
+   }
+  }
+ },
+ {
+  "key": "rw2-01",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The second half says it was no surprise the book won a major award, so readers must have liked it. \"Enjoyed and praised\" fits that positive reaction. \"Rejected\" and \"ignored\" are negative, and readers didn't \"create\" the book."
+ },
+ {
+  "key": "rw2-02",
+  "answer": "B",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "After the colon, the text explains that wave power \"varies in unpredictable ways.\" That means it isn't steady or \"consistent.\" Wave power varying has nothing to do with being \"accidental,\" \"confident\" or \"expensive.\""
+ },
+ {
+  "key": "rw2-03",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Gogol has to \"tip his head back\" to see a kite that's very high in the sky, so he tilts or leans his head backward. \"Lean\" matches this physical motion. \"Pay\" and \"instruct\" are other meanings of \"tip\" (a gratuity or a hint) that don't fit a head movement.",
+  "fix": {
+   "passage": "The following text is from Jhumpa Lahiri’s 2003 novel The Namesake. Gogol, a child, is at a beach in Massachusetts with his father.\n\nHe watches his father raise a kite within minutes into the wind, so high that Gogol must tip his head back in order to see, a rippling speck against the sky. The wind whips around their ears, turning their faces cold."
+  }
+ },
+ {
+  "key": "rw2-04",
+  "answer": "B",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Radar and sonar are described as too costly, and the Wi-Fi changes give users a \"cheap way\" to do the same thing. So the alternative is comparatively \"inexpensive.\" \"Unmistakable,\" \"infrequent\" and \"impractical\" don't connect to the cost contrast the text sets up."
+ },
+ {
+  "key": "rw2-05",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The dashes explain the blank: the music can be \"explained in as many ways as there are people to listen to them.\" Different explanations of a piece are \"interpretations.\" \"Performances\" are renditions of the music, and \"revisions\" and \"influences\" are about how the music was written, not how listeners understand it."
+ },
+ {
+  "key": "rw2-06",
+  "answer": "A",
+  "skill": "text-structure-purpose",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text opens with a question, \"Were penguins always flightless?\" The underlined sentence answers it: no, penguins could once fly but lost that ability. It doesn't say the question is unresearched (C), contradict the next sentence (B) or define a term (D).",
+  "fix": {
+   "passage": "Were penguins always flightless? <u>Theresa Cole and her team argue that penguins could fly at some point, but that they lost that ability more than 60 million years ago as they adapted to marine life.</u> After examining various penguin fossils and genetic information, the researchers concluded that over time penguins developed underwater vision, blood oxygenation, and bone density better suited for swimming than flying. Thus, environmental conditions might have driven penguins to change from flyers to swimmers."
+  }
+ },
+ {
+  "key": "rw2-07",
+  "answer": "D",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The poem stresses that the speaker and her friend share an understanding without words: \"Our deeper content was never spoken, / But each knew all the other said.\" Even the bird quiets its song to match \"this sweet silence.\" The poem doesn't list sights (A), show any repulsion (B) or discuss literary translations (C), despite its title.",
+  "fix": {
+   "passage": "The following text is from Anne Spencer’s 1922 poem “Translation.”\n\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken,\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack of anvil and strife.\n“The wooing kestrel,” I said, “mutes his mating-note\nTo please the harmony of this sweet silence.”"
+  }
+ },
+ {
+  "key": "rw2-08",
+  "answer": "B",
+  "skill": "cross-text-connections",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Text 1 explains why the Norse left Greenland with falling temperatures, and Text 2 argues drought forced them out instead. Both are about the Norse abandoning their Greenland settlement. Only Text 2 discusses drought (C), and the Little Ice Age is mentioned only in Text 1, not its causes (D).",
+  "fix": {
+   "passage": "Text 1\nFrom about 985 CE to the early 1400s, when they mysteriously abandoned the region, Norse settlers occupied part of Greenland. Many researchers cite increasingly lower temperatures to explain why the Norse fled. The researchers reason that the Norse settlers arrived in the region while the climate was warm and were able to remain there until temperatures declined during the Little Ice Age, which occurred between the 14th and 19th centuries.\n\nText 2\nWilliam Daniels, Boyang Zhao, and colleagues analyzed sediment samples from a lake in Greenland close to the Norse settlement. This allowed them to reconstruct the area’s climate history. The researchers found no evidence of substantial temperature changes during the settlement period. They argue that instead the region experienced a persistent drought, which played a more important role in forcing the Norse out of the area than did increasingly lower temperatures.",
+   "prompt": "Both texts discuss research on which topic?"
+  }
+ },
+ {
+  "key": "rw2-09",
+  "answer": "D",
+  "skill": "central-ideas",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Historians see pachuca style \"as a form of rebellion against the era's rigid social expectations\" and as showing \"a desire for self-expression and freedom.\" Choice D restates both ideas. The text never compares it to other trends (A), links it to supporting the war effort (B) or mentions its influence today (C)."
+ },
+ {
+  "key": "rw2-10",
+  "answer": "A",
+  "skill": "central-ideas",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text names two benefits of community science: it builds youth confidence in science and it greatly increases the amount of data collected. Choice A includes both. Choices B and D each deny one of these benefits, and C invents a surprise the text never mentions."
+ },
+ {
+  "key": "rw2-11",
+  "answer": "B",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The hazelnut bars (black) are tallest in the 2016/17 season, at about $1.35 per pound. In the other seasons hazelnuts sold for about $1.15 or less. Choice A's 2017/18 season is when walnuts, not hazelnuts, peaked."
+ },
+ {
+  "key": "rw2-12",
+  "answer": "D",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The student claims some modern irrigation methods have roots much older than the 1900 reservoir. Choice D describes a 7th-century Hohokam irrigation system whose design principles are still used by engineers today, which is exactly that kind of old lineage. Choice C describes sprinklers developed in the late 20th century, after the reservoir."
+ },
+ {
+  "key": "rw2-13",
+  "answer": "A",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The researchers' goal is recruiting suitable participants in rural areas, so snowball sampling is superior if it brings in more people with the desired characteristics than purposive sampling. Choice A shows exactly that comparison. Choice B compares snowball sampling to random contact rather than to purposive sampling, and C and D don't show snowball sampling recruits better."
+ },
+ {
+  "key": "rw2-14",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The text warns that calling the novel autobiographical may make readers think Céline \"merely fictionalized true events.\" In a field that values inventiveness, that suggests the book is less imaginative than it really is. Choice C judges Céline's claims, which the text never discusses, and B is about identifying characters' real counterparts, not about creativity."
+ },
+ {
+  "key": "rw2-15",
+  "answer": "B",
+  "skill": "inferences",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Melanosomes are shaped differently depending on the colors they make, so by examining the melanosomes' shapes in the fossil feather, scientists could figure out the bird's colors. This answers the opening question about learning an extinct animal's color. Choice D can't work, since the method depends on having melanosomes to examine."
+ },
+ {
+  "key": "rw2-16",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Biophilic design uses \"organic or biomorphic forms,\" meaning shapes found in living things. Curves fit because they resemble the arcs and contours of plants and animals. Choice D says the opposite, separating nature from architecture, and B and C have nothing to do with imitating nature."
+ },
+ {
+  "key": "rw2-17",
+  "answer": "A",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The clause \"yet the building itself _____ us the most\" needs a main verb, and the sentence is in the past tense (\"We came\"). \"Impressed\" supplies a past-tense verb. \"Impressing,\" \"having impressed\" and \"to impress\" aren't finite verbs, so the clause would have no main verb."
+ },
+ {
+  "key": "rw2-18",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The subject must refer to Keith David, a single person mentioned in the previous sentences, so \"he gets\" is correct. \"Those,\" \"both\" and \"they all\" are plural and have no clear plural antecedent."
+ },
+ {
+  "key": "rw2-19",
+  "answer": "D",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The blank modifies the plural noun \"nurses\" and points back to the thousands of Civil War nurses just mentioned. \"These\" is the plural demonstrative that fits. \"One,\" \"that\" and \"this\" are singular and don't agree with \"nurses.\""
+ },
+ {
+  "key": "rw2-20",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The definition \"(a roundup\" opened with a parenthesis, so it must be closed with a matching parenthesis, just like \"(a wild horse)\" earlier. A comma, semicolon or dash can't close a parenthesis."
+ },
+ {
+  "key": "rw2-21",
+  "answer": "B",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "\"Exemplars of Stigler's law abound\" is a complete clause, and the examples that follow explain it, so a colon fits. The list items then follow the pattern \"in [field], [example]\" separated by semicolons, which requires the comma after \"philosophy.\" Choice D puts the colon after \"philosophy,\" breaking that parallel pattern with \"in mathematics, Euler's formula.\""
+ },
+ {
+  "key": "rw2-22",
+  "answer": "A",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Taylor wanted stations like KBFT to thrive, and as a result she founded Native Public Media to support them. \"Hence\" shows this cause-and-effect link. There is no contrast (B), correction (C) or restatement (D)."
+ },
+ {
+  "key": "rw2-23",
+  "answer": "B",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text describes a need: consumers wanted proof that regional cheeses were genuine. The EU's DOP label met that need, so \"for this reason\" correctly shows cause and effect. \"Nevertheless\" and \"By contrast\" wrongly suggest the label went against the need."
+ },
+ {
+  "key": "rw2-24",
+  "answer": "C",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text contrasts distances: the JWST is almost a million miles away, while the Hubble is only about 340 miles above Earth. \"In comparison\" introduces this contrast. \"Moreover\" and \"Next\" would add another point in the same direction, and \"As a result\" implies one fact caused the other."
+ },
+ {
+  "key": "rw2-25",
+  "answer": "D",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A similarity must apply to both rivers. Both are ranked among the longest rivers in the world (No. 23 and No. 129), and choice D says exactly that. Choices A, B and C each describe only one river.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The Yukon River is in North America.\n• It ranks No. 23 among the longest rivers in the world.\n• It is 3,185 kilometers long.\n• The Rhine River is in Europe.\n• It ranks No. 129 among the longest rivers in the world.\n• It is 1,233 kilometers long."
+  }
+ },
+ {
+  "key": "rw2-26",
+  "answer": "D",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To emphasize a difference, the sentence must contrast the sculptures. Choice D contrasts De Haan's phrase-spelling sculpture with Kawauchi's abstract squiggle. Choices A, B and C all point out what the sculptures or artists have in common.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Don’t Cry Over Spilt Milk is a 2021 sculpture by British artist Eve De Haan.\n• It is crafted from blue neon lighting that spells out the title phrase (“don’t cry over spilt milk”).\n• Ginger is a 2023 sculpture by Japanese artist Rikako Kawauchi.\n• It is crafted from pink neon lighting that forms an abstract squiggle shape."
+  }
+ },
+ {
+  "key": "rw2-27",
+  "answer": "C",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is how long Narita competed, so the sentence needs her years of competition. Choice C gives 1996 to 2004. Choice A is about her medals, B is about swimming as a Paralympic event, and D gives only her debut year, not the length of her career.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The Paralympic Games are a series of international sporting events involving athletes with an impairment.\n• A gold medal indicates that an athlete finished in first place.\n• Frank Höfle competed as a Paralympic cross-country skier from 1988 to 2006.\n• He won seventeen medals, ten of which were gold.\n• Mayumi Narita competed as a Paralympic swimmer from 1996 to 2004.\n• She won twenty medals, fifteen of which were gold."
+  }
+ },
+ {
+  "key": "m1-01",
+  "answer": [
+   "22"
+  ],
+  "skill": "two-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Find the row for an air temperature of 38°F and read across to the column for a 60 mph wind. That cell shows 22°F. The 28°F in the same row is the wind chill at 20 mph, not 60 mph.",
+  "fix": {
+   "prompt": "For certain air temperatures, the table gives wind chill temperatures for two different wind speeds.\n\nAccording to the table, what is the wind chill temperature, in degrees Fahrenheit (°F), when the air temperature is 38°F and the wind speed is 60 miles per hour (mph)? (Disregard the degree symbol when entering your answer.)",
+   "table": {
+    "headers": [
+     "Air temperature",
+     "Wind chill temperature at wind speed 20 mph",
+     "Wind chill temperature at wind speed 60 mph"
+    ],
+    "rows": [
+     [
+      "34°F",
+      "23°F",
+      "16°F"
+     ],
+     [
+      "36°F",
+      "25°F",
+      "19°F"
+     ],
+     [
+      "38°F",
+      "28°F",
+      "22°F"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-02",
+  "answer": "A",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To isolate m, divide both sides of 4m = 3(n + p) by 4, giving m = 3(n + p)/4. Choice B forgets to divide by 4, and choice C subtracts 4 instead of dividing, which is not a valid way to undo multiplication.",
+  "fix": {
+   "choices": {
+    "A": "m = 3(n + p)/4"
+   }
+  }
+ },
+ {
+  "key": "m1-03",
+  "answer": "C",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Line u, y = 2x + 10, has slope 2. A perpendicular line has the negative reciprocal slope, so line w has slope −1/2. Choices like −1/10 or −1/12 come from using the intercept 10 or other numbers instead of the slope.",
+  "fix": {
+   "choices": {
+    "A": "−1/12",
+    "B": "−1/8",
+    "C": "−1/2",
+    "D": "−1/10"
+   }
+  }
+ },
+ {
+  "key": "m1-04",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A line with slope 1/3 has the form f(x) = (1/3)x + b. Since it passes through (0, 2), the y-intercept is b = 2, so f(x) = (1/3)x + 2. Choice D has the right slope but would pass through (0, −2).",
+  "fix": {
+   "prompt": "For the linear function f, the graph of y = f(x) in the xy-plane has a slope of 1/3 and passes through the point (0, 2). Which equation defines f?",
+   "choices": {
+    "A": "f(x) = (1/3)x + 2",
+    "B": "f(x) = (1/3)x + 1/2",
+    "C": "f(x) = (1/3)x − 2/3",
+    "D": "f(x) = (1/3)x − 2"
+   }
+  }
+ },
+ {
+  "key": "m1-05",
+  "answer": [
+   "136"
+  ],
+  "skill": "ratios-rates",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "At 60.0 miles per hour for 2 hours, Bill drives 60 × 2 = 120 miles. Adding the first 16.0 miles gives a total of 16 + 120 = 136 miles. Forgetting the initial 16 miles would give 120."
+ },
+ {
+  "key": "m1-06",
+  "answer": "C",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Distribute: 3x + 10 = 14 + 8x. Subtract 8x and 10 from both sides: −5x = 4. Multiply both sides by −1 to get 5x = −4. Choice D has the sign wrong, which happens if you forget to flip the signs when moving terms."
+ },
+ {
+  "key": "m1-07",
+  "answer": [
+   "112"
+  ],
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The angles of a triangle add up to 180°. So ∠J = 180 − 34 − 34 = 112 degrees."
+ },
+ {
+  "key": "m1-08",
+  "answer": "A",
+  "skill": "systems-linear",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "From x + 4 = 8, x = 4. Then y = (x + 4)^2 = 8^2 = 64, so the solution is (4, 64). Choice D uses y = x + 4 = 8 and forgets to square it."
+ },
+ {
+  "key": "m1-09",
+  "answer": "A",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Distance equals speed times time. Walking at 2 mph for w hours covers 2w miles, and running at 7 mph for r hours covers 7r miles, so 2w + 7r = 13. Choices B and C divide by the speeds instead of multiplying, and 117 isn't the total distance.",
+  "type": "mcq",
+  "fix": {
+   "prompt": "Nicole walks at a speed of 2 miles per hour and runs at a speed of 7 miles per hour. She walks for w hours and runs for r hours for a combined total of 13 miles. Which equation represents this situation?",
+   "choices": {
+    "A": "2w + 7r = 13",
+    "B": "(1/2)w + (1/7)r = 13",
+    "C": "(1/2)w + (1/7)r = 117",
+    "D": "2w + 7r = 117"
+   }
+  }
+ },
+ {
+  "key": "m1-10",
+  "answer": "B",
+  "skill": "percentages",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "z = 1.12 × 100 = 112, which is 12 more than 100. As a percent of 100, that's 12/100 = 12%. Choice A (11.2) comes from misplacing the decimal, and 120 would mean z = 220."
+ },
+ {
+  "key": "m1-11",
+  "answer": "D",
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Circle K has area π(2)^2 = 4π mm^2. Adding circle L's area gives 4π + 121π = 125π mm^2. Choice A (13π) adds the radii 2 and 11 instead of the areas."
+ },
+ {
+  "key": "m1-12",
+  "answer": [
+   "14"
+  ],
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "From 3x + 4 = 10, 3x = 6. Then 9x = 3(3x) = 18, so 9x − 4 = 18 − 4 = 14. You can also solve x = 2 and substitute: 9(2) − 4 = 14."
+ },
+ {
+  "key": "m1-13",
+  "answer": "C",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "By the Pythagorean theorem, the other leg is sqrt(196.8^2 − 43.2^2). Using a difference of squares: (196.8 − 43.2)(196.8 + 43.2) = 153.6 × 240 = 36,864, and sqrt(36,864) = 192. Choice D (201.5) is longer than the hypotenuse, which is impossible for a leg."
+ },
+ {
+  "key": "m1-14",
+  "answer": [
+   "3"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Subtract 13: 2x^2 − 6x − 8 = 0, then divide by 2: x^2 − 3x − 4 = 0. This factors as (x − 4)(x + 1) = 0, so x = 4 or x = −1, and the sum is 3. (Shortcut: the sum of the roots of x^2 − 3x − 4 = 0 is −(−3)/1 = 3.)"
+ },
+ {
+  "key": "m1-15",
+  "answer": "D",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The parabola y = −3(x − 23)^2 + 20 opens downward with vertex (23, 20), so its largest y-value is 20. The horizontal line y = 23 lies entirely above it, so they never meet. Algebraically, 23 = −3(x − 23)^2 + 20 gives (x − 23)^2 = −1, which has no real solutions."
+ },
+ {
+  "key": "m1-16",
+  "answer": "B",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The y-intercept is where x = 0: y = 400(3)^0 = 400. Since x counts six-month periods starting from the end of January 1997, x = 0 means the end of January 1997. Choice A describes x = 1, and 1,200 would be the value at x = 1/2, not at the start.",
+  "fix": {
+   "prompt": "y = 400(3)^(2x)\nThe equation gives the estimated number of online newsletter subscribers at the end of every six-month period, x, starting from the end of January 1997, where 0 ≤ x ≤ 4. Which statement is the best interpretation of the y-intercept of the graph of this equation in the xy-plane?"
+  }
+ },
+ {
+  "key": "m1-17",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is f(0) = (−2)(3)^0 + 21 = −2 + 21 = 19, so the point is (0, 19). Choice C forgets that 3^0 = 1, not 0, and choice B ignores the + 21."
+ },
+ {
+  "key": "m1-18",
+  "answer": [
+   "8/5",
+   "1.6"
+  ],
+  "skill": "systems-linear",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Multiply the first equation by 2: 10x + 28y = 64. Subtract the second equation: 21y = 42, so y = 2. Then 5x + 28 = 32 gives x = 4/5. So xy = (4/5)(2) = 8/5."
+ },
+ {
+  "key": "m1-19",
+  "answer": "B",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "At t = 0, P = C = 12,000. After 5 hours the count doubles: 24,000 = 12,000(2)^(5r), so 2 = 2^(5r) and 5r = 1. Therefore r = 1/5. Choice C (5) is the doubling time itself, not r.",
+  "fix": {
+   "choices": {
+    "A": "1/12,000",
+    "B": "1/5"
+   }
+  }
+ },
+ {
+  "key": "m1-20",
+  "answer": "B",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Increasing by a factor of 3 for each 1-unit increase in x means exponential growth with base 3, and the starting value (x = 0) is 200. So y = 200(3)^x. Choice A, y = 200x^3, is a cubic, not exponential, and choice D starts at 3 instead of 200."
+ },
+ {
+  "key": "m1-21",
+  "answer": "C",
+  "skill": "linear-inequalities",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The dashed boundary crosses the y-axis at −5 and rises steeply, passing through about (1, 10), so its slope is 15/1 = 15 and the line is y = 15x − 5. The shading is above/left of the line; testing (−6, 0) gives 0 > 15(−6) − 5 = −95, which is true, so the inequality is y > 15x − 5. Choice D has the right line but the wrong side."
+ },
+ {
+  "key": "m1-22",
+  "answer": [
+   "13/9",
+   "1.444",
+   "1.4444"
+  ],
+  "skill": "linear-equations-one-var",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Divide into cases. If 6x − 1 ≥ 0: 2(6x − 1) = 6x + 9 gives 12x − 2 = 6x + 9, so x = 11/6. If 6x − 1 < 0: −2(6x − 1) = 6x + 9 gives −12x + 2 = 6x + 9, so x = −7/18. Both check out, and the sum is 33/18 − 7/18 = 26/18 = 13/9.",
+  "fix": {
+   "prompt": "2|6x − 1| = 6x + 9\nWhat is the sum of the solutions to the given equation?"
+  }
+ },
+ {
+  "key": "m2-01",
+  "answer": "C",
+  "skill": "percentages",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "50% means one half, so 50% of 520 is 520/2 = 260. Choice D (52) is 10% of 520, and 780 is 150% of 520."
+ },
+ {
+  "key": "m2-02",
+  "answer": [
+   "6"
+  ],
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Divide the total cost by the price per pound: 18/3 = 6 pounds."
+ },
+ {
+  "key": "m2-03",
+  "answer": "C",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Subtract 40 from both sides of 12x + 40 = 160 to get 12x = 120, which has the same solution (x = 10). Choice A subtracts 120 instead of 40, and choice D just drops the 40.",
+  "fix": {
+   "prompt": "12x + 40 = 160\nWhich equation has the same solution as the given equation?"
+  }
+ },
+ {
+  "key": "m2-04",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The y-intercept is where the graph crosses the y-axis (x = 0). The line crosses the y-axis at y = −7, so the y-intercept is (0, −7). Choice C (0, −5) misreads the grid by one line."
+ },
+ {
+  "key": "m2-05",
+  "answer": "A",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Since R + S = 90°, angles R and S are complementary, and the cosine of an angle equals the sine of its complement. So cos(S) = sin(R) = sqrt(11)/6. Choice C equals sqrt(11) ≈ 3.3, which is greater than 1 and can't be a cosine.",
+  "fix": {
+   "prompt": "In right triangle RST, the sum of the measures of angle R and angle S is 90 degrees. The value of sin(R) is sqrt(11)/6. What is the value of cos(S)?",
+   "choices": {
+    "A": "sqrt(11)/6",
+    "B": "sqrt(11)/5",
+    "C": "11/sqrt(11)",
+    "D": "sqrt(11)/11"
+   }
+  }
+ },
+ {
+  "key": "m2-06",
+  "answer": "B",
+  "skill": "one-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Employees with 16 or more complete years are in the \"16 to 18\" row (10 employees) and the \"19 to 21\" row (3 employees). That's 10 + 3 = 13. Choice A forgets the 19-to-21 group.",
+  "fix": {
+   "prompt": "The table shown summarizes the distribution of 64 employees based on the number of complete years they have worked at a certain company.\n\nHow many of the 64 employees have worked at the company for 16 or more complete years?",
+   "table": {
+    "headers": [
+     "Number of complete years at the company",
+     "Number of employees"
+    ],
+    "rows": [
+     [
+      "0 to 3",
+      "8"
+     ],
+     [
+      "4 to 6",
+      "17"
+     ],
+     [
+      "7 to 9",
+      "14"
+     ],
+     [
+      "10 to 12",
+      "7"
+     ],
+     [
+      "13 to 15",
+      "5"
+     ],
+     [
+      "16 to 18",
+      "10"
+     ],
+     [
+      "19 to 21",
+      "3"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m2-07",
+  "answer": "B",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "f(5) is the y-value of the graph when x = 5. The parabola's lowest point is at (5, 3), so f(5) = 3. Choice C (5) is the x-coordinate, not the function's value."
+ },
+ {
+  "key": "m2-08",
+  "answer": "D",
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Both 24 and 30 are divisible by 6, so 24x + 30 = 6(4x) + 6(5) = 6(4x + 5). Expanding the other choices gives different expressions, e.g., 6(18x + 24) = 108x + 144."
+ },
+ {
+  "key": "m2-09",
+  "answer": "D",
+  "skill": "probability",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The \"At least 45 years old\" row has a total of 107 members, out of 135 members overall. So the probability is 107/135. Choice A (28/135) is the probability of being younger than 45.",
+  "fix": {
+   "prompt": "The table summarizes members of a local organization by age and whether they live north or south of Center St. If a member of the organization is selected at random, what is the probability that the selected member is at least 45 years old?",
+   "table": {
+    "headers": [
+     "",
+     "Live north of Center St.",
+     "Live south of Center St.",
+     "Total"
+    ],
+    "rows": [
+     [
+      "Less than 45 years old",
+      "13",
+      "15",
+      "28"
+     ],
+     [
+      "At least 45 years old",
+      "22",
+      "85",
+      "107"
+     ],
+     [
+      "Total",
+      "35",
+      "100",
+      "135"
+     ]
+    ]
+   },
+   "choices": {
+    "A": "28/135",
+    "B": "35/135",
+    "C": "100/135",
+    "D": "107/135"
+   }
+  }
+ },
+ {
+  "key": "m2-10",
+  "answer": [
+   "7"
+  ],
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Substitute x = 6: g(6) = (6(6) − 1)/5 = (36 − 1)/5 = 35/5 = 7.",
+  "fix": {
+   "prompt": "The function g is defined by g(x) = (6x − 1)/5. What is the value of g(6)?"
+  }
+ },
+ {
+  "key": "m2-11",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Plug each x into y = 50x + 3: x = 0 gives 3, x = 2 gives 103, and x = 4 gives 203. Only table A matches. Table C subtracts 3 instead of adding it (97, 197), and tables B and D start at 50 instead of 3.",
+  "fix": {
+   "choices": {
+    "A": "x: 0, 2, 4; y: 3, 103, 203",
+    "B": "x: 0, 2, 4; y: 50, 53, 56",
+    "C": "x: 0, 2, 4; y: 3, 97, 197",
+    "D": "x: 0, 2, 4; y: 50, 100, 200"
+   }
+  }
+ },
+ {
+  "key": "m2-12",
+  "answer": "C",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The two congruent sides together are 2 × 22 = 44 feet. The third side is the rest of the perimeter: 78 − 44 = 34 feet. Choice A assumes all three sides are 22, which would give a perimeter of only 66."
+ },
+ {
+  "key": "m2-13",
+  "answer": "A",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Force is the product of mass and acceleration, so F = 41 × a = 41a. Choices B, C and D add or subtract the mass and acceleration instead of multiplying them."
+ },
+ {
+  "key": "m2-14",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In f(t) = 28,000(2)^t, setting t = 0 gives f(0) = 28,000, so 28,000 is the number of bacteria at the initial measurement. One hour later there would be 56,000, not 28,000, so choice C is wrong; the doubling every hour comes from the base 2.",
+  "fix": {
+   "choices": {
+    "C": "The number of bacteria in the population 1 hour after the initial measurement",
+    "D": "The number of times the number of bacteria in the population doubles in 1 hour"
+   }
+  }
+ },
+ {
+  "key": "m2-15",
+  "answer": [
+   "13",
+   "14",
+   "15"
+  ],
+  "skill": "linear-inequalities",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "After n days the calf weighs 5,800 + 250n pounds. So 8,800 < 5,800 + 250n < 9,800, which gives 3,000 < 250n < 4,000, or 12 < n < 16. The integer values 13, 14 and 15 all work."
+ },
+ {
+  "key": "m2-16",
+  "answer": "A",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Because lines l and k are parallel, the angle x at line l equals the angle at line k on the same side of t, and that angle together with y forms a straight line. So x + y = 180 and y = 180 − x. If x > 165, then y < 180 − 165 = 15. Choices C and D are false because x + y is exactly 180."
+ },
+ {
+  "key": "m2-17",
+  "answer": [
+   "7"
+  ],
+  "skill": "equivalent-expressions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Combine like terms: 7x^4 + 10x^4 − 10x^4 = (7 + 10 − 10)x^4 = 7x^4. So b = 7."
+ },
+ {
+  "key": "m2-18",
+  "answer": "D",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Doubling every day means multiplying by 2 for each day, starting from 72,000. So y = 72,000(2)^t. Choice C uses a base of 1/2, which models halving, and choices A and B raise 72,000 to the power t instead of 2.",
+  "fix": {
+   "choices": {
+    "A": "y = (1/2)(72,000)^t",
+    "C": "y = 72,000(1/2)^t"
+   }
+  }
+ },
+ {
+  "key": "m2-19",
+  "answer": "B",
+  "skill": "systems-linear",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The two lines have different slopes (1 and 5), so they are not parallel and cross at exactly one point. Solving x + 15 = 5x gives x = 15/4, the single intersection. Two distinct lines can never meet at exactly 2 or 5 points."
+ },
+ {
+  "key": "m2-20",
+  "answer": [
+   "5"
+  ],
+  "skill": "circles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "In the form (x − h)^2 + (y − k)^2 = b, the center is (h, k). The center is (5, 1), so h = 5 (and b = 7^2 = 49)."
+ },
+ {
+  "key": "m2-21",
+  "answer": "C",
+  "skill": "right-triangles-trig",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "For angle X, the opposite side is YZ = 222 and the adjacent side is XZ = 296. So tan X = 222/296 = 3/4 (dividing both by 74). Choice A (4/3) is the reciprocal, which is tan Y.",
+  "fix": {
+   "prompt": "What is the value of tan X in the triangle shown?",
+   "choices": {
+    "A": "4/3",
+    "B": "4/5",
+    "C": "3/4",
+    "D": "3/5"
+   }
+  }
+ },
+ {
+  "key": "m2-22",
+  "answer": "A",
+  "skill": "area-volume",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "When side lengths are multiplied by 88, area is multiplied by 88^2. So k = 88^2 = 7,744. Choice C (88) uses the side-length ratio, which only works for lengths, not areas."
+ }
+]

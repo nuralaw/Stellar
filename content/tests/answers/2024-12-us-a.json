@@ -1,0 +1,1110 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fellowship honors exceptional artists, so Black was chosen for what she gave to the arts over her life: her \"contributions to\" them. \"Doubts about,\" \"imitations of,\" and \"misunderstandings of\" the arts would never be reasons to honor someone."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Mole is \"eagerly\" hurrying home to the things he knows and likes, so he is looking forward to the moment he arrives. \"Getting ahead of\" is a tempting literal reading of \"anticipate,\" but he isn't trying to beat the moment; he is excited about it.",
+    "fix": {
+      "passage": "The following text is from Kenneth Grahame's 1908 novel The Wind in the Willows. The Mole is returning home after a visit to Mr Badger's house.\n\nAs he hurried along, eagerly anticipating the moment when he would be at home again among the things he knew and liked, the Mole saw clearly that he was an animal of tilled field and hedge-row, linked to the ploughed furrow, the frequented pasture, the lane of evening lingerings, the cultivated garden-plot."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains the blank: the delta is \"constantly evolving,\" with channels and land that keep changing size and shape. \"Mutable\" means changeable, which fits exactly. \"Homogeneous\" (uniform) and \"secluded\" (isolated) don't describe constant change, and nothing is said about whether it is \"habitable.\""
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The blank describes who caused the damage to the novel: Soviet censors. \"Wrought by\" means \"caused by,\" so \"the damage wrought by Soviet censors\" is the logical phrase. \"Bestowed on\" and \"allocated to\" would make the censors receive the damage, and \"concealed from\" makes no sense with damage."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined first sentence explains what a \"microgenre\" is, and the rest of the text then describes hyperpop as a microgenre. So it defines a term the discussion relies on. It doesn't present an exception or an objection, and it says nothing about the audience.",
+    "fix": {
+      "passage": "<u>A microgenre is a specialized genre consisting of a comparatively small number of stylistically similar artists.</u> The microgenre of electronic music known as hyperpop emerged in the 2010s, with American singer Dorian Electra as an early exponent. Their combination of lush synthesizer arrangements and propulsive beats with vocals electronically shifted in pitch below their natural range exemplifies the hyperpop sound. More recently, Japanese-British recording artist Rina Sawayama has contributed to the microgenre by incorporating pop melodies into hyperpop songs."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The phrase \"much like the filters in 3D glasses once worn at movies\" compares the mantis filters to something familiar so readers can picture how the experiment worked. Choice D is tempting because it mentions an earlier use of filters, but the point of the phrase is the comparison, not the history of the tool.",
+    "fix": {
+      "passage": "Cuttlefish and toads see in three dimensions (3D) by combining two images in their brains, one from each eye. This produces a sense of depth, helping the animals judge how close or far away an object is. Researchers have investigated 3D vision in praying mantises as well. In one study, Vivek Nityananda and his team fitted mantises' faces with two different color filters, one covering each eye, <u>much like the filters in 3D glasses once worn at movies</u>. By observing the mantises' reaction to projected images, the team confirmed that mantises do indeed have 3D vision, but it's unlike that of other animals."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 says the stick insect clade, at 41.1 million years, is among the oldest on Grande Terre and that nearly all living species belong to much younger clades. The split from Gondwana was 80 million years ago, so almost no current clades are old enough to include Gondwanan species. Choice B misreads 41.1 million years as a limit on the Gondwanan clades rather than on today's clades."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says the wild rice faces much worse outcomes while the deer can withstand warming and won't need as much conservation. Text 2 says agencies must focus on the species most in need. Together, both authors would support focusing more on the wild rice than on the deer. Choice A fails because Text 1 says the deer likely won't need conservation efforts."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parlor is Tia Ana's space for her little school, and after the salon it is never in order for the next morning's class. Her repeated checks on whether the guests have left show she wants them gone so she can get the room ready. Nothing suggests she finds them dull (A) or wants to tell them about a new school (B).",
+    "fix": {
+      "passage": "The following text is from Julia Alvarez's 2000 novel In the Name of Salomé. Salomé, a poet, is hosting guests in the front parlor of her family home, and Ramona is her sister. A salon is a social gathering for the exploration of intellectual ideas.\n\nIt was evening when the two men got up to leave. Tia Ana had already come into the room several times to see if these guests had departed yet. The front parlor had always been her special province, as she used it for her little school. Now, every evening, it turned into Salomé's salon, as Ramona called it, and it was never in order for its transformation back to a classroom the following morning.\n\n©2000 by Julia Alvarez"
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example is about clustered camera trapping and GPS collar tracking leading to underestimates, and the table shows only Murphy et al. used those methods. Their maximum density, 1.65 cougars per 100 square kilometers, is the lowest in the table, which fits an underestimate. Choice D describes a high density from a study that used regular camera trapping, so it doesn't fit the example.",
+    "fix": {
+      "passage": "Studies of the population density of cougars (Puma concolor) have yielded a range of results, which may in part reflect differences in the effectiveness of the methods that researchers have used in their studies. If, for example, the use of clustered camera trapping and GPS tracking of collars tends to lead to underestimates of cougar population density, that may explain why the study by _____",
+      "table": {
+        "caption": "Studies of Cougar Population Density",
+        "headers": [
+          "Study authors",
+          "Location",
+          "Methods",
+          "Study area (square kilometers)",
+          "Maximum density (cougars per 100 square kilometers)"
+        ],
+        "rows": [
+          [
+            "Lindsey N. Rich et al.",
+            "Belize, Bolivia, Argentina",
+            "regular camera trapping",
+            "4,329",
+            "6.50"
+          ],
+          [
+            "Sean M. Murphy et al.",
+            "New Mexico (United States)",
+            "clustered camera trapping, GPS tracking of collars",
+            "15,314",
+            "1.65"
+          ],
+          [
+            "P. Ian Ross and Martin G. Jalkotzy",
+            "Alberta (Canada)",
+            "radio-collar tracking",
+            "780",
+            "4.70"
+          ],
+          [
+            "Richard A. Beausoleil et al.",
+            "Washington (United States)",
+            "biopsy darting",
+            "7,939",
+            "2.40"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A negative effect value means a harmful effect, and the only negative values belong to leafy spurge (−0.8428) and prickly pear (−0.4703). The Canadian wood betony and sticky catchfly both have positive values, so any choice that includes them is wrong.",
+    "fix": {
+      "passage": "Researchers Carolina Laura Morales and Anna Traveset gathered data about flowering plants growing alongside each other in various locations. In each case, the researchers identified one plant as a \"target species\" and a nearby plant as a \"neighboring species.\" The researchers then calculated a value to show how the neighboring species affected pollinator visits to the target species. A negative effect value indicates that the neighboring species had a harmful effect on the target species. Based on the table, two neighboring species that had a harmful effect on target species are the _____",
+      "table": {
+        "caption": "Effect of Neighboring Species on Pollinator Visits to Target Species",
+        "headers": [
+          "Neighboring species",
+          "Target species",
+          "Effect value"
+        ],
+        "rows": [
+          [
+            "sticky catchfly",
+            "common cow-wheat",
+            "0.2379"
+          ],
+          [
+            "leafy spurge",
+            "purple locoweed",
+            "-0.8428"
+          ],
+          [
+            "prickly pear",
+            "sea heath",
+            "-0.4703"
+          ],
+          [
+            "Canadian wood betony",
+            "mayapple",
+            "0.4729"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show the play was a temporary escape, the quotation must show the experience ending and her returning to reality. \"The play was over... It was like a dream ended\" captures exactly that: a dreamlike break that stops. The other quotations describe finding a seat, entering the theater, or a restaurant, none of which shows a temporary escape."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The critic says the lullaby grabbed the infants' attention rather than relaxing them. If pupil size usually increases when something captures attention, then the infants' shrinking pupils point away from attention and toward relaxation, weakening the critic. Choice C adds another sign of attention but says nothing about what the infants actually did."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To show fracture toughness doesn't rise with cobalt proportion, find two alloys with the same cobalt but very different toughness. HEA 7 and HEA 95 are both 20% cobalt, yet their toughness values are 219.00 and 4.45. Choice B is true (33.33% vs. 20%) but HEA 15 is also tougher, which supports the proposal instead of refuting it.",
+    "fix": {
+      "passage": "High-entropy alloys (HEAs) have been observed to have greater fracture toughness—greater resistance to crack propagation—than conventional alloys. It has been proposed that fracture toughness increases with the proportion of an HEA consisting of cobalt, but data on HEAs compiled by engineer Xuesong Fan show that this is not the case; for example, _____",
+      "table": {
+        "caption": "Composition and Fracture Toughness of Five HEAs (composition values may not add up to 100 due to rounding)",
+        "headers": [
+          "HEA identification number",
+          "Composition (%)",
+          "Fracture toughness (megapascals times the square root of crack length)"
+        ],
+        "rows": [
+          [
+            "15",
+            "chromium (33.33), cobalt (33.33), nickel (33.33)",
+            "265.20"
+          ],
+          [
+            "7",
+            "chromium (20), iron (20), manganese (20), nickel (20), cobalt (20)",
+            "219.00"
+          ],
+          [
+            "25",
+            "aluminum (1.07), carbon (.67), chromium (1.07), cobalt (1.07), copper (1.07), iron (1.07), nickel (1.07), tungsten (46.78)",
+            "10.41"
+          ],
+          [
+            "95",
+            "aluminum (20), cobalt (20), copper (20), nickel (20), zinc (20)",
+            "4.45"
+          ],
+          [
+            "51",
+            "molybdenum (25), niobium (25), tantalum (25), tungsten (25)",
+            "3.30"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Native plants like the olona depend on birds to spread their seeds, the native fruit-eating birds are extinct, and the introduced birds are now spreading seeds. So the introduced birds may be necessary for these plants' survival. Choice A compares them with native birds, which the text gives no numbers for."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence announces \"three types of muscle tissue\" and then lists them, so a colon is right before the list: \"tissue: smooth, cardiac, and skeletal.\" A period (D) leaves a fragment, and A and C don't correctly introduce the list."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Americans\" is a plain plural (no possession), and \"elections\" is the plural object of \"won,\" so neither needs an apostrophe. Every other choice adds an apostrophe that wrongly signals possession."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both \"In many languages, including English, these consonants are rare\" and \"in some dialects of Mandarin, however, four such consonants... are relatively common\" are independent clauses. A semicolon joins them correctly; \"however\" is just an interrupter in the second clause. A comma alone (A) or nothing (B) creates a run-on."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The list items contain their own commas (\"Java, developed by James Gosling in 1995\"), so the items must be separated by semicolons: \"COBOL, developed... in 1959; Java, developed... in 1995; and Clojure, developed...\" The comma after \"Clojure\" pairs with the one opening its description. Choice C uses a comma before \"and Clojure,\" mixing the separators."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank needs a subject and verb referring to the plural \"thirty-eight languages\": \"because they are descendants.\" \"They're\" is the contraction of \"they are.\" \"Their\" and \"its\" are possessives with no verb, and \"it's\" is singular."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Chaucer pioneered literary English, and the next sentence strengthens that claim with a striking detail: his manuscripts contain the first uses of over 2,000 English words. \"In fact\" introduces that kind of emphatic support. \"However\" and \"On the contrary\" wrongly signal a contrast."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because the 900 is so rare that each success is historic, fans revere the skaters who landed it. The second sentence is a result of the first, so \"For this reason\" fits. \"Regardless\" would suggest the fans' admiration has nothing to do with the trick's rarity."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the two ravens are hard to tell apart, and the next sentence confirms and emphasizes that point: they can look virtually identical. \"Indeed\" signals that reinforcement. \"Thus\" would make the similarity a result of the difficulty, which reverses the logic."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is an example of a Catlett sculpture, and A names Mahalia and identifies it as a sculpture. Choice C names Paulina, which is a print, and B and D give no specific work.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Elizabeth Catlett (1915–2012) was a celebrated African American artist.\n• She is best known for creating sculptures and prints that explore the Black experience.\n• Mahalia is a 2002 sculpture by Catlett.\n• Paulina is a 2009 print by Catlett."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The similarity is that both women were lighthouse keepers during the same period (1894/1895 to 1919), which C states. Choice D stresses a difference (different lighthouses), and A and B don't mention both women.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Lighthouses send out crucial light signals to help ships and other watercraft navigate at night.\n• Before automation, lighthouses were run by lighthouse keepers.\n• Kate Walker was the lighthouse keeper at Robbins Reef Light in New York.\n• She held this position from 1894 to 1919.\n• Georgiana C. Brumfield was the lighthouse keeper at Turkey Point Light in Maryland.\n• She held this position from 1895 to 1919."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the length of the pendulum's cable, and only D gives it: roughly 14 meters. Choice B mentions the cable but not its length, and A and C explain how the pendulum shows Earth's rotation.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The University of Oslo in Oslo, Norway, is home to a Foucault pendulum.\n• The pendulum consists of a weighted ball that swings at the end of a roughly 14-meter-long cable.\n• Like all Foucault pendulums, it dangles from a fixed point that ensures the swing path of the pendulum doesn't change.\n• To an observer, the swing path of a Foucault pendulum appears to change over time because Earth rotates beneath it.\n• Foucault pendulums are used as a simple way to provide evidence of Earth's rotation."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is Mauritania's global rank, and A states that it has the thirty-fourth-largest under-fifteen population in the world. Choices C and D are about Africa as a whole, and B makes a claim about causes that the notes don't support.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Mauritania is a country in North Africa.\n• A high percentage of Mauritania's population (39.9 percent) is under fifteen years old.\n• It has the thirty-fourth-largest under-fifteen population in the world.\n• Roughly 40 percent of Africa's population is under fifteen years old—the highest of any continent.\n• According to the United Nations (UN), Africa's \"high number of young people is an opportunity for the continent's growth—but only if these new generations are fully empowered to realise their best potential.\""
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Watson accomplished much, but being first is what secures a lasting place in memory, and little can beat it. \"Prevail over\" means to win out over, so \"little can prevail over being the first\" fits, as the Jeanne Bare example shows. \"Overreach,\" \"fluctuate with,\" and \"constrain within\" don't express one thing outranking another."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The novel is told from three separate viewpoints: the mother's, the father's, and the daughter's. \"Distinct\" means clearly different from one another, which matches. Nothing suggests the perspectives are \"unknown,\" \"unintended,\" or \"required.\""
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains the effect: new buyers who hadn't wanted cards flooded the market. Rising prices therefore drew out, or elicited, new demand. \"Satisfying\" demand would mean meeting existing demand, and \"capitalizing\" and \"exploiting\" describe taking advantage of something, not creating it."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dash says other economists clearly find Hall's work valuable, so the frequent citations emphasize, or underscore, its usefulness. \"Belies\" means contradicts, the opposite of the intended meaning. \"Forestalls\" (prevents) and \"overshadows\" (makes less important) don't fit either."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined clause reports that the air around the mushrooms got cooler, and the next sentence says these slight reductions \"inspired an air-cooling device.\" So the finding is the basis for the practical application the text goes on to describe. Choice B fails because cooling of the surrounding air is not evidence about the mushrooms' own hypothermic state.",
+    "fix": {
+      "passage": "Shedding light on the thermal biology of fungi, research by Radamés Cordero et al. indicates that certain mushrooms (including Bolets separans and species from the genus Thelephora) can achieve a hypothermic state through evaporative cooling. Effects of this thermoregulation were not limited to the fungi's fruiting bodies and root-like hyphae: <u>temperature reductions were observed in the air immediately surrounding the mushrooms</u>. Though slight, the reductions inspired an air-cooling device; using approximately 400 grams of mushrooms, the team's prototype lowered the air temperature in a controlled environment by 10°C in forty minutes."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Grenada's drop in solid-fuel use is presented as the kind of shift that is \"often explained\" by the energy ladder. The text then uses the Kenya study to show the energy ladder is reductive, meaning it explains such shifts too simply. So Grenada illustrates a phenomenon commonly but inadequately explained by that model. Choice A is tempting, but the text doesn't say the change itself is a poor test of the model."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Quito residents used parks more (82.9% vs. 72.7%) even though fewer of them lived within a 10-minute walk of a park. The text concludes that proximity alone can't explain the difference, so something else must cause it. The text never mentions the researchers' expectations (A) or errors in the survey (B)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion is that the birds react specifically to the alarm calls as a sign of danger. If random noise played the same way produced no reaction, the freezing and scattering can't be explained by just any sound, which supports the conclusion. Choice A weakens it by showing the birds sometimes reacted before any sound was played."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The research question is whether perceived category similarity predicts purchases of brand extensions, and the team has already calculated the purchase-probability change for each pair. What's missing is a measure of perceived similarity between the two categories in each pair, which A adds and then correlates with the probability changes. Choice D measures similarity within one category instead of between the paired categories, and B and C focus on brand recognition."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The graph shows the correlation between the model's predictions and P4's ratings was different for abstract paintings (about 0.25) and cubist paintings (about 0.36). If P4 rated both styles equally but the model's predictions matched those ratings to different degrees, the model's predictions for the two styles must have differed. Choice D would make the two correlations match, and B and C claim a direction the graph can't show."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most studies, including several outside North America, found a positive association between dissolved organic carbon and mercury, and few matched the Finnish result. That suggests the association is general: the two levels typically rise and fall together. Choice A states the opposite, since studies outside North America also found the link."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Being shielded from the environment during transmission should help CLPs in warmer water, yet CLP abundance still fell while directly transmitted parasites stayed stable. So whatever advantage their transmission strategy gave was not enough to overcome other negative effects of warming. Choice C claims more hosts means more protection, which is the opposite of what the data showed."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For every class of animals, including birds, some studies showed differences well above the average for mammals. Since that average is higher than many mammal studies' results, some bird studies must have found larger effects than some mammal studies. Choice B overgeneralizes, because on average mammal studies showed larger differences than bird studies."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers to the singular \"The Aeneid\" and must show possession of \"narrative,\" so \"its\" is correct. \"It's\" means \"it is,\" and \"their\" and \"they're\" are plural."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The sand... is a more unusual shade, though\" is a complete clause with \"though\" (meaning \"however\") at its end, and \"deposits of crushed coral... lend the sand a unique pink hue\" is another complete clause. A semicolon after \"though\" separates them correctly. Choice D puts the semicolon before \"though,\" which wrongly attaches it to the second clause."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence promises \"three signature elements\" and then lists them, so a colon is needed before the list. A period (A) or semicolon (D) would leave the list as a fragment, and a comma (C) can't introduce it."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the blank is the plural \"behavioral economists,\" not \"Gino,\" which sits inside the \"such as\" phrase. A plural subject needs the plural verb \"contend.\" \"Contends,\" \"is contending,\" and \"has contended\" are all singular."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Wildlife biologist\" is a title that restricts and comes directly before the name \"Dr. Purnima Devi Barman,\" so no punctuation belongs between them. The commas in C and D would wrongly separate the subject from its title, and a colon (B) can't go there."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "This list of years is already separated by semicolons because each item contains commas (\"1916, when...\"). The final item must follow the same pattern: \"released; and 1943, when...\" A comma (D) or nothing (B) breaks the list's consistent punctuation."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"lost works,\" with \"like Euripides's play...\" as a descriptive phrase in between. A plural subject needs a plural verb, so \"have become\" is correct. \"Becomes,\" \"has become,\" and \"is becoming\" agree with the singular play instead."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence gives an explanation: the barnacles drift passively with water currents. The team then found they moved against the current, which is evidence of their own locomotion and so undermines that explanation. \"Confirming this hypothesis\" and \"Drawing a similar conclusion\" say the opposite."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The JWST is almost one million miles from Earth, while Hubble is only about 340 miles above Earth's surface. These distances are being contrasted, so \"By contrast\" fits. \"Similarly\" would suggest the telescopes are alike, and \"Therefore\" implies a cause that doesn't exist."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Photogrammetry and polygonal modeling only need to handle thousands of shapes, and because of that they are cheaper than methods that handle millions. \"As such\" introduces this consequence. \"For example\" and \"Specifically\" would introduce an illustration or detail rather than a result."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence explains what \"annular\" means: the Moon didn't fully cover the Sun and left a ring. \"That is\" introduces a clarification or restatement. \"For example\" would introduce an instance, not a definition, and \"Nonetheless\" signals a contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the refuge's size, and only B gives its area: 3,592 acres. The other choices describe its wildlife or who manages it, but never how big it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Coachella Valley National Wildlife Refuge (NWR) is a protected natural area in California.\n• It encompasses 3,592 acres.\n• It was established to safeguard the habitat of the Coachella Valley fringe-toed lizard, an endangered species.\n• The Coachella Valley NWR is managed by the US Fish & Wildlife Service.\n• The US Fish & Wildlife Service limits human activities in the area."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say Antelope House was built under a rock overhang that protected it from heavy rain and snow, and D states that advantage. Choice A describes an advantage, but the flat terrain and terraced buildings belong to Mud Springs Pueblo. Choice C mentions an advantage without saying what it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Antelope House is an Ancestral Puebloan dwelling site located in northeastern Arizona.\n• It was built under a rock overhang and inhabited from approximately 1050–1270 CE.\n• The overhanging rock ledges offered protection from heavy rain and snow.\n• Mud Springs Pueblo is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built on relatively flat terrain and inhabited from approximately 1200–1250 CE.\n• This level surface allowed for the construction of large terraced buildings."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal needs both an explanation of Kepler's first law (orbits are ellipses) and an example. Choice D gives Europa's elliptical orbit as the example and explains that the law describes elliptical orbits and also applies to moons. Choice B uses Europa's orbit time, which has nothing to do with the orbit's shape, and C gives no specific example.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kepler's first law of planetary motion states that the orbit of a planet around the Sun is an ellipse.\n• The law also states that, in an elliptical orbit, the object being orbited is one of the ellipse's foci.\n• Kepler's laws of planetary motion also apply to natural satellites (e.g., moons).\n• Europa is a moon of Jupiter that orbits the planet in 3.55 Earth days on average.\n• Europa's orbit is elliptical.",
+      "prompt": "The student wants to provide an explanation and example of Kepler's first law of planetary motion. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "60% of 800 is 0.60 × 800 = 480 feet. Choice D subtracts 60 from 800 instead of taking 60 percent of it."
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 13 to both terms: 13 · x^2 − 13 · 7 = 13x^2 − 91. Choice C forgets to multiply the −7 by 13."
+  },
+  {
+    "key": "m1-03",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sum is 1 + 4 + 7 + 10 + 33 = 55, and there are 5 values, so the mean is 55/5 = 11. Choice A, 7, is the median, not the mean."
+  },
+  {
+    "key": "m1-04",
+    "answer": "C",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Probability = favorable outcomes / total outcomes = 53/59, since 53 of the 59 participants averaged more than 120 minutes. Choice D flips the fraction, which would give a probability greater than 1.",
+    "fix": {
+      "choices": {
+        "A": "53/100",
+        "B": "59/100",
+        "C": "53/59",
+        "D": "59/53"
+      }
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "14"
+    ],
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find the row for an air temperature of 26°F and read across to the column for a 15 mph wind speed: the wind chill is 14°F. The 7°F in the same row is for a 45 mph wind.",
+    "fix": {
+      "prompt": "For certain air temperatures, the table gives wind chill temperatures for two different wind speeds.\nAccording to the table, what is the wind chill temperature, in degrees Fahrenheit (°F), when the air temperature is 26°F and the wind speed is 15 miles per hour (mph)? (Disregard the degree symbol when entering your answer)",
+      "table": {
+        "headers": [
+          "Air temperature",
+          "Wind chill temperature at wind speed 15 mph",
+          "Wind chill temperature at wind speed 45 mph"
+        ],
+        "rows": [
+          [
+            "26°F",
+            "14°F",
+            "7°F"
+          ],
+          [
+            "30°F",
+            "19°F",
+            "12°F"
+          ],
+          [
+            "34°F",
+            "24°F",
+            "18°F"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Selling n books at $12 each earns 12n dollars, and \"at least $1,320\" means ≥, so 12n ≥ 1,320. Choice C uses ≤, which would mean earning at most $1,320, and A and B add 12 instead of multiplying."
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute d = 12: 2.5c + 5(12) = 60, so 2.5c + 60 = 60 and 2.5c = 0. That means c = 0 cats. The 12 dogs already use up the whole capacity of 60."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The left side −(3x − 7)^2 is never positive; its largest value is 0. So the equation has no real solution only when p + 17 > 0, which means p > −17. The least integer greater than −17 is −16. Choice B, p = −17, makes the right side 0, which is reached at x = 7/3, so it does have a solution."
+  },
+  {
+    "key": "m1-09",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A dilation enlarges side lengths but keeps every angle the same. Angle A, which is 60°, corresponds to angle X, so angle X is also 60°. The scale factor 5 and d = 19 only affect side lengths."
+  },
+  {
+    "key": "m1-10",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: y = 16^(0 + 3) = 16^3 = 4,096. So the point is (0, 4,096). Choice C would be right only if the exponent were 1 at x = 0, and D confuses the exponent 3 with the y-value.",
+    "fix": {
+      "choices": {
+        "A": "(0, 4,096)",
+        "B": "(0, 0)",
+        "C": "(0, 16)",
+        "D": "(0, 3)"
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area = (1/2)(base)(height), so 220 = (1/2)(10)(h) = 5h. Dividing gives h = 220/5 = 44 cm. Choice B, 22, forgets the 1/2 in the formula."
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Angle x is at the top vertex, so the side opposite it is the bottom leg (40) and the adjacent leg is the vertical side (39). tan x° = opposite/adjacent = 40/39, so c = 40. Choice C swaps the legs, which would give tan x° = 1.",
+    "fix": {
+      "prompt": "In the right triangle shown, the value of tan x° is c/39. What is the value of c?"
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An x-intercept is a point where y = f(x) = 0. Since (−5, 0) is on the graph, f(−5) = 0. Choice D mixes up the two intercepts by pairing −5 with 6."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "10",
+      "16"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product equals 0 when one of its factors equals 0, so the solutions are x = 16, 10, −7, and −17. The positive solutions are 10 and 16, and either one is correct. The values −7 and −17 come from the factors (x + 7) and (x + 17) and are negative.",
+    "fix": {
+      "prompt": "(x − 16)(x − 10)(x + 7)(x + 17) = 0\nWhat is a positive solution to the given equation?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "-17"
+    ],
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The standard form is (x + 4)^2 + (y − 4)^2 = 49. Expanding gives x^2 + 8x + 16 + y^2 − 8y + 16 = 49, so x^2 + y^2 + 8x − 8y − 17 = 0. The constant is c = 16 + 16 − 49 = −17. Watch out for using 7 instead of 7^2 = 49."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "2"
+    ],
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "Substitute the point (12, c) into the circle's equation: (12 − 6)^2 + (c − 2)^2 = 36, so 36 + (c − 2)^2 = 36. That gives (c − 2)^2 = 0 and c = 2. The point is exactly one radius (6 units) to the right of the center (6, 2), so it must have the same y-coordinate as the center.",
+    "fix": {
+      "prompt": "(x − 6)^2 + (y − 2)^2 = 36\nThe graph of the given equation in the xy-plane is a circle. If the point (12, c) lies on this circle, what is the value of c?"
+    },
+    "note": "Question text is missing from the PDF page (only the answer and explanation are printed); prompt reconstructed from the printed explanation. Please verify wording."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "6/5",
+      "1.2"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = x − 4. The equation becomes 6u = u + 6, so 5u = 6 and u = 6/5. Since u is x − 4, the answer is 6/5 (or 1.2) with no need to find x itself, which would be 26/5.",
+    "fix": {
+      "prompt": "6(x − 4) = (x − 4) + 6\nIf x is the solution to the given equation, what is the value of x − 4?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract the second equation from the first: (5/4 − 3/4)x = 17 − 15, so (1/2)x = 2 and x = 4. Then 3 + 2y = 15 gives y = 6. So (11/4)x + 6y = (11/4)(4) + 6(6) = 11 + 36 = 47. Choices A and B are just the values of x and y.",
+    "fix": {
+      "prompt": "(5/4)x + 2y = 17\n(3/4)x + 2y = 15\nThe solution to the given system of equations is (x, y). What is the value of (11/4)x + 6y?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "h(3) = 14(2)^(−3) + 7 = 14(1/8) + 7 = 7/4 + 28/4 = 35/4. A negative exponent makes a reciprocal, not a negative number, so the negative choices C and D are impossible.",
+    "fix": {
+      "choices": {
+        "A": "42/4",
+        "B": "35/4"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "28/3",
+      "9.333"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope through (1, 8) and (7, 0) is (0 − 8)/(7 − 1) = −8/6 = −4/3. Moving from x = 1 back to x = 0 changes y by (−4/3)(−1) = 4/3, so b = 8 + 4/3 = 28/3. Make sure the sign of the slope is right; using +4/3 would give 20/3."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "-6"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "As x increases by 2, y increases by 12, so the slope is 6 and the y-intercept is 31: y = 6x + 31. Rewritten as 6x − y = −31, we get A = 6 and B = −1, so A/B = −6. In general A/B is the negative of the slope, so answering 6 is the common mistake.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y. The linear relationship between x and y can be represented by an equation written in the form Ax + By = C, where A, B, and C are constants. What is the value of A/B?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "-2",
+            "19"
+          ],
+          [
+            "0",
+            "31"
+          ],
+          [
+            "2",
+            "43"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second equation is 3 times the first, so both describe the same line, 5x + 8y = 9. Solving for y gives y = −(5/8)x + 9/8, so for x = r the point (r, −(5r/8) + 9/8) is on the line for every r. Choice B swaps the coordinates, and checking it gives 5x + 8y = (39r + 45)/8, which isn't always 9.",
+    "fix": {
+      "prompt": "5x + 8y = 9\n15x + 24y = 27\nFor each real number r, which of the following points lies on the graph of each equation in the xy-plane for the given system?",
+      "choices": {
+        "A": "(r, −(5r)/8 + 9/8)",
+        "B": "(−(5r)/8 + 9/8, r)",
+        "C": "(−(5r)/8 + 9, (5r)/8 + 27)",
+        "D": "(r/3 + 9, −r/3 + 27)"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set −18 − 9x = −216. Adding 18 to both sides gives −9x = −198, so x = 22. Choice A has the wrong sign: x = −26 gives g(−26) = −18 + 234 = 216, not −216."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 1660 to 1760 is 100 years, which is 100/25 = 4 doubling periods. So the population grew by a factor of 2^4 = 16, and the 1660 population was 208,000/16 = 13,000. Choice C undoes only one doubling."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(11) = 300, the input 11 is the depth x in millimeters and the output 300 is the intensity in photons. So a beam 11 mm below the surface has a predicted intensity of 300 photons. Choice B describes the surface (x = 0), where the intensity is actually 600.",
+    "fix": {
+      "prompt": "The function f(x) = 600(0.5)^(x/11) gives the predicted intensity of a beam f(x), in number of photons in the beam, x millimeters below the surface of a certain material. What is the best interpretation of f(11) = 300?"
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since h(0) = 0, the line passes through the origin, so h(x) = mx. The slope is (5 − 0)/(11 − 0) = 5/11, giving h(x) = (5/11)x. Choice C flips the slope, and B and D add an intercept that would make h(0) nonzero.",
+    "fix": {
+      "choices": {
+        "A": "h(x) = (5/11)x",
+        "B": "h(x) = (5/11)x + 5",
+        "C": "h(x) = (11/5)x",
+        "D": "h(x) = (11/5)x + 11"
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Fencing along every edge of a rectangle is its perimeter: 2 lengths plus 2 widths, or 2x + 2y. Setting that equal to 44 gives 2x + 2y = 44. Choice D, xy, is the area, not the perimeter."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 7x to both sides: 14x − 19 = 19, so 14x = 38 and x = 19/7. The x-terms don't cancel, so there is exactly one solution. Zero or infinitely many solutions happen only when the x-terms cancel out."
+  },
+  {
+    "key": "m2-07",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "y = 54 already satisfies y > 17. The second inequality becomes 4x + 54 < 21, so 4x < −33 and x < −8.25. Only −9 is less than −8.25; choice C, −5, gives 4(−5) + 54 = 34, which is not less than 21."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope is (670 − 190)/(10 − 4) = 480/6 = 80. Using (4, 190): 190 = 80(4) + b, so b = 190 − 320 = −130, and f(x) = 80x − 130. Choice C simplifies to 70x, which gives f(4) = 280, not 190."
+  },
+  {
+    "key": "m2-09",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide −2x^2 + 2x − 2 = 0 by −2 to get x^2 − x + 1 = 0. The discriminant is (−1)^2 − 4(1)(1) = −3, which is negative, so there are no real solutions. The other equations all have real solutions, for example x = 0 in A and C, and x = ±1 in B."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The circumference is 2πr = 6π, so r = 3. The volume is πr^2h = π(3^2)(19) = 171π. Choice B uses 2πr · h, which is the side area, not the volume."
+  },
+  {
+    "key": "m2-11",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out the values are from the mean. All four sets center on 8, but in D two-thirds of the values are exactly 8 and the rest are only 1 away, with no 6s or 10s. Choice C is also clustered at 8 but still has some 6s and 10s, so it is more spread out, and B (evenly spread) is the most spread of all.",
+    "fix": {
+      "choices": {
+        "A": "Number of eggs: 6, 7, 8, 9, 10; Frequency: 5, 6, 4, 8, 7",
+        "B": "Number of eggs: 6, 7, 8, 9, 10; Frequency: 6, 6, 6, 6, 6",
+        "C": "Number of eggs: 6, 7, 8, 9, 10; Frequency: 2, 7, 12, 7, 2",
+        "D": "Number of eggs: 6, 7, 8, 9, 10; Frequency: 0, 5, 20, 5, 0"
+      }
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": [
+      "380"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Adult tickets brought in 220 × $10 = $2,200, so child tickets brought in $4,100 − $2,200 = $1,900. At $5 each, that is 1,900/5 = 380 child tickets. Dividing the full $4,100 by 5 would ignore the adult tickets."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the first equation, y = x + 32. Substitute into the second: x + 32 = x^2 − 30x, so x^2 − 31x − 32 = 0, which factors as (x − 32)(x + 1) = 0. So x = 32 or x = −1, giving y = 64 or y = 31; only 64 is a choice. Choice A comes from wrongly using x = 0."
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "72/5",
+      "14.4"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Simplify: c(r) = (2/5)(2πr) = (4/5)πr, a linear function with rate of change (4/5)π cm per cm of radius. An increase of 18 cm in the radius increases c by 18 · (4/5)π = (72/5)π, so k = 72/5 = 14.4. Using only 2/5 instead of (2/5)(2) = 4/5 would give 36/5.",
+    "fix": {
+      "prompt": "c(r) = (2/5)(2πr)\nThe function c gives the partial length, in centimeters (cm), of the circumference of a circle with a radius that measures r cm. According to the function, for each increase of 18 cm in the length of the radius, this partial length of the circumference increases by kπ cm. What is the value of k?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "When x increases by 6, the exponent x/3 increases by 6/3 = 2, so f(x) is multiplied by 1.40^2 = 1.96. Multiplying by 1.96 is a 96% increase, so p = 96. Choice C doubles 40% instead of squaring the growth factor, and A is the increase for x going up by only 3.",
+    "fix": {
+      "prompt": "For the given function f, the value of f(x) increases by p% for every increase of x by 6. What is the value of p?\nf(x) = 25(1.40)^(x/3)"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "55"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "k(53p) = sqrt(53p + 110) = p. Squaring gives 53p + 110 = p^2, so p^2 − 53p − 110 = 0, which factors as (p − 55)(p + 2) = 0. A square root can't be negative, so p = −2 is extraneous and p = 55.",
+    "fix": {
+      "prompt": "The function k is defined by k(s) = sqrt(s + 110). If k(53p) = p, where p is a constant, what is the value of p?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "9"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let u = 11x, so 121x^2 = u^2 and the equation becomes u^2 + 10u − 56 = 0, which factors as (u + 14)(u − 4) = 0. Then 11x + 5 = u + 5 is either −9 or 9. Since 11x + 5 > 0, the answer is 9."
+  },
+  {
+    "key": "m2-18",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A 158% increase means multiplying by 1 + 1.58 = 2.58 every 5 weeks, so M = M_0(2.58)^(t/5). At t = 15 there have been 3 periods: 627.7 = M_0(2.58)^3, so M_0 = 627.7/17.17 ≈ 36.55. Choices A and C use 1.58, which would be only a 58% increase, and B has the exponent upside down.",
+    "fix": {
+      "choices": {
+        "A": "M = 538.92(1.58)^(5/t)",
+        "B": "M = 457.66(2.58)^(5/t)",
+        "C": "M = 159.14(1.58)^(t/5)",
+        "D": "M = 36.55(2.58)^(t/5)"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Turn each change into a multiplier: a 178% increase is × 2.78 and a 21% decrease is × 0.79. Overall, 2.78 × 0.79 = 2.1962, which is a net increase of 119.62%. Choice C just subtracts 178 − 21 = 157, which ignores that the 21% is taken from the larger value."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "7/16",
+      ".4375",
+      "0.4375"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Write the roots as powers: n^(5/4) = k^(2/3). Raise both sides to the 3/2 power to get k = n^((5/4)(3/2)) = n^(15/8). Setting 2a + 1 = 15/8 gives 2a = 7/8, so a = 7/16.",
+    "fix": {
+      "prompt": "If n and k are numbers greater than 1 and root[4](n^5) is equivalent to cbrt(k^2), for what value of a is n^(2a + 1) equal to k?"
+    },
+    "note": "PDF prints root[4](5/n) and cbrt(2/k), which makes k not a power of n and has no valid answer; corrected to root[4](n^5) and cbrt(k^2), which gives the printed answer 7/16. Please verify."
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "28/17",
+      "1.647"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "AC = 28 is the hypotenuse, so AB = 28 − 11 = 17. Triangle BDC is similar to triangle ABC (both have a right angle and share angle C), so BC/BD = AC/AB = 28/17. You never need BC itself, which is sqrt(28^2 − 17^2) = sqrt(495).",
+    "fix": {
+      "prompt": "For triangle ABC, the length of AB is 11 less than the length of AC. Point D (not shown) lies on AC such that BD (not shown) is perpendicular to AC. What is the value of BC/BD?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One square meter is 3.28^2 ≈ 10.76 square feet, so 280 square feet per hour is 280/10.76 ≈ 26.03 square meters per hour. Dividing by 60 minutes gives about 0.43 square meters per minute. Choice D forgets to convert hours to minutes, and B divides by 3.28 only once even though square units need 3.28^2."
+  }
+]

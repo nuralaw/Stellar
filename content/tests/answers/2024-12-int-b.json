@@ -1,0 +1,1101 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Noguchi's father is scanning the crowd at the station, trying to pick out his son among other people, so \"find\" means \"locate.\" The next sentence confirms this: the father could not recognize him. \"Reveal\" doesn't fit, because the father is searching for Noguchi, not exposing him."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The evidence (praise from many reviewers and a literary award) describes how the book was received, so \"reception of\" is the precise phrase. \"Inspiration for\" would refer to what led Kashyap to write the book, which the text never discusses."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text argues that the public's understanding of history is central to understanding politics and that an electorate needs it to function, so history is too important, or \"critical,\" to leave only to historians. \"Complex\" is tempting, but complexity would be a reason to leave history to experts, the opposite of the text's point."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speaker says there is no better example of the form than Pinkney's work, meaning no one has ever surpassed or outshone it, which is what \"eclipsed\" means. \"Cited\" doesn't match the claim about quality, and \"augmented\" (added to) doesn't express being better than."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Realism emphasized accurate portrayals of ordinary people, while the romantic style \"instead\" flattered subjects with staged settings and flawless skin, so realism turned away from, or \"rejected,\" romantic conventions. \"Imitated\" and \"extended\" contradict the contrast signaled by \"instead.\""
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase follows the statement that advertisers hesitated and explains what made that hesitation especially strong: TV set production had stalled during the war, so audiences were uncertain. That is a specific reason for advertisers' reluctance. Choice A describes the next sentence about NBC, not the underlined phrase.",
+    "fix": {
+      "passage": "In the early days of television in the 1940s, many people thought that US television programs would rely on the financial support of ad agencies and commercial sponsors, much like radio did. But advertisers hesitated to jump into a new space, <u>particularly at a time when the manufacturing of new television sets was stalled due to the US's involvement in World War II</u>. Broadcasters, like the National Broadcasting Company (NBC), needed to persuade advertisers to support their programming despite not knowing whether there would be a robust television audience to begin with."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must show that a summit's elevation and prominence can differ a lot. Saser Kangri III has the highest elevation in the table (7,495 m) but a prominence of only 850 m, a big gap. Choice B only compares the prominences of two mountains and says nothing about how elevation and prominence differ for one summit.",
+    "fix": {
+      "passage": "Mountain summits are often described in terms of their elevation, or height above sea level. But a summit's elevation may not be as good an indication of how high the mountain appears to observers as is the summit's prominence, or its height above its surroundings, and these values can differ significantly. For example, the Indian mountain of _____",
+      "table": {
+        "caption": "Highest Major Summits in India",
+        "headers": [
+          "Summit",
+          "Elevation (meters)",
+          "Mountain range",
+          "Prominence (meters)"
+        ],
+        "rows": [
+          [
+            "Kangto",
+            "7,060",
+            "Assam Himalaya",
+            "2,195"
+          ],
+          [
+            "Saser Kangri III",
+            "7,495",
+            "Saser Karakoram",
+            "850"
+          ],
+          [
+            "Langpo",
+            "6,965",
+            "Sikkim Himalaya",
+            "560"
+          ],
+          [
+            "Sri Kailash",
+            "6,932",
+            "Garhwal Himalaya",
+            "1,092"
+          ],
+          [
+            "Mount Lakshmī",
+            "6,983",
+            "Rimo Karakoram",
+            "800"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The phrase \"known collectively as the silversword alliance\" gives the name for the whole family of related plants, a name the rest of the text then uses. It doesn't name Dubautia raillardioides alone (D), and it doesn't list any species (A).",
+    "fix": {
+      "passage": "Dubautia raillardioides is a species in a family of plants <u>known collectively as the silversword alliance</u>, all of which grow only on the Hawaiian Islands. Members of this alliance exhibit an extraordinary range of phenotypes, with some species maturing into vines and others into shrubs and trees. All species in the alliance descended from a single ancestral tarweed plant that arrived on the islands around 5 million years ago. The tarweed's descendants diversified into distinct species as they adapted to live in the wide variety of habitats found on the Hawaiian Islands."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Villasana celebrates both cultural icons like Frida Kahlo and ordinary people, and that she sees both approaches as showing people's power and interconnectedness. Choice A captures both halves. Choice B invents a career timeline the text never gives."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives two benefits of community science: it shows the public what a scientist's daily life is like, and it greatly increases the data researchers can collect. Choice B combines both. Choices C and D each deny one of those benefits, and A narrows the focus to one study and adds a \"surprise\" the text never mentions."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the \"Direction of movement\" column, both Glory and Boss are listed as moving away from the sound, so they behaved similarly. Choices A and D wrongly say Boss moved toward the sound, and B wrongly says Glory did.",
+    "fix": {
+      "passage": "Biologists Christina Zdenek, Damian Candusso, and their team exposed various snakes to airborne sound and recorded whether they moved toward or away from the sound. The table shows the results for three of the snakes observed in the study. Based on the table, a student concludes that Glory and Boss behaved similarly in the sound trials.",
+      "table": {
+        "caption": "Names and Movements of Snakes during Trials",
+        "headers": [
+          "Name of snake",
+          "Species name",
+          "Common name",
+          "Direction of movement"
+        ],
+        "rows": [
+          [
+            "Glory",
+            "Acanthophis antarcticus",
+            "common death adder",
+            "away from sound"
+          ],
+          [
+            "Bitey Boy",
+            "Aspidites ramsayi",
+            "woma python",
+            "toward sound"
+          ],
+          [
+            "Boss",
+            "Oxyuranus scutellatus",
+            "coastal taipan",
+            "away from sound"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The worry was that virtual tours would make in-person visits seem unnecessary. If many in-person visitors say the virtual tours actually convinced them to come, the tours encouraged visits rather than replacing them, which supports the administrators. Choice D doesn't help, because visitors who never saw the tours can't show what effect the tours have."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the play mocks sophists for teaching dishonest speech. In choice C, a student of a sophist says he hopes to become \"a fabricator of falsehoods\" and \"an impostor,\" directly linking sophist lessons to lying. Choice B mentions despising laws, but not speaking dishonestly."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Green found the storytelling very confusing in 2016 but enthusiastically praised it in the 2019 Broadway version, so in his view the show improved a lot between the two productions. Choices B and D reverse that comparison."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Oil fills the voids left when water evaporates from the food, so fat content rises as moisture is lost. It follows that the less moisture a food loses, the fewer voids there are for oil, and the smaller the increase in fat. The text gives no information about frying temperature or crispiness (B, D)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Food writer J. Kenji López-Alt\" (the \"who\" clause is just extra information), so the verb must be singular: \"explains.\" \"Explain,\" \"have explained,\" and \"are explaining\" are all plural forms."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb (\"was\"), so the blank needs a modifier for \"a profile.\" The participle \"appearing\" works: \"a profile appearing in the Navajo Times.\" Finite verbs like \"appeared\" or \"appears\" would create a second main verb with no conjunction or relative pronoun."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"With the short documentary ... North American cinema\" is a complete sentence, and \"Her film ... is about the art of ... Rick Bartow\" is another, so a period is needed between them. A comma alone (A) creates a comma splice, and C and D join the sentences incorrectly."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Working with equipment ...\" must describe whoever comes right after the comma. Nanoengineers are the ones working with the equipment, so the subject must be \"nanoengineers,\" as in A. In B, the subject is the nanoparticles (\"nanoengineers'\" is only possessive), and C and D also begin with the nanoparticles, creating dangling modifiers."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In this case, Henry Cavendish\" is an interruption between \"a natural philosopher\" and \"who was not the first...,\" so it needs matching punctuation on both sides: two dashes. A and B open the interruption with a colon or a dash but close it with a comma, which mixes punctuation, and C has nothing before the interruption.",
+    "fix": {
+      "choices": {
+        "A": "natural philosopher: in this case, Henry Cavendish,",
+        "B": "natural philosopher—in this case, Henry Cavendish,",
+        "C": "natural philosopher in this case, Henry Cavendish,",
+        "D": "natural philosopher—in this case, Henry Cavendish—"
+      }
+    }
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Jetties can sometimes have the opposite effect, though\" is a complete sentence, and \"obstructing the natural flow of sand ... can lead to increased erosion\" is another, so a semicolon is needed after \"though.\" Choice D puts the semicolon before \"though,\" which wrongly attaches \"though\" to the second clause, and A and C create a comma splice or run-on."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Poet\" is a title directly before the name, so no comma separates them (\"the poet Emily Hiestand\"). \"Author of The Very Rich Hours\" is extra information about Hiestand, so a comma must come after her name. A and B wrongly put a comma between \"poet\" and the name, and C leaves out the comma before the appositive."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text names a first job of guard cells (regulating carbon dioxide intake) and then a second job (regulating water loss), so \"Additionally\" fits. \"Instead\" would wrongly suggest the second job replaces the first."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since Roman numerals show naming order rather than distance from Jupiter, it follows that one shouldn't assume Elara is seventh in proximity. \"Then\" signals this logical consequence. \"However\" would signal a contrast, but the last sentence agrees with the one before it."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say both Stan and Horridus lived in the Late Cretaceous period, and choice A states this shared trait with \"Both.\" Choice B contrasts their locations, and D describes only Stan."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Choice B points out what the two sculptures share: both are LED light sculptures by Grimanesa Amoros. Choices A and C focus on differences in size and materials, and D mentions only Uros House."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An overview of the findings should cover the main result: syllable rates varied across the languages, but the information rate was about the same for all 17. Choice A summarizes both. Choice B describes the method rather than the results, and C wrongly claims Spanish had a lower information rate, which the notes don't support."
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence says the causes of a past extinction may apply to endangered species today, so lessons from earlier declines are \"relevant\" to making policy now. \"Debatable\" and \"idiosyncratic\" would undercut the idea that these lessons are useful."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Ectotherms' body temperatures match the surrounding water, but the basking shark stays 1.0 to 1.5°C warmer than its surroundings. That finding conflicts with calling it a full ectotherm, so it is \"incongruous with\" (inconsistent with) that classification. \"Indicative of\" says the opposite, that the finding supports the classification."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rising prices drew in new buyers who hadn't wanted the cards before, so the price rise brought out, or \"elicited,\" demand. That is counterintuitive because higher prices usually reduce demand. \"Satisfying\" demand would mean meeting it, not creating it."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens with a general claim (Barragán's career evolved through distinct phases), then describes his early approach of blending Mexican techniques with Mediterranean designs, and then describes a later turn toward modernism and functionalism. Choice B is wrong because the text stresses change, not commitment to a single model."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined statement notes that elephants and caribou keep fixed ranges, which is why researchers guessed mammoths might have done the same. The tusk analysis later shows one mammoth's range expanded and then contracted, so that guess was not supported. Choice D is wrong because the text never offers a hypothesis about where the fixed-range trait came from.",
+    "fix": {
+      "passage": "<u>Individual elephants and Arctic herbivores such as caribou tend to have fixed geographic ranges throughout their lifetimes</u>, which had prompted some researchers to speculate that the Arctic woolly mammoth, an extinct elephantid, might have exhibited similar behavior. Mammoth tusks grew in sequential layers, incorporating ingested minerals and organics, and so each ivory stratum reflects the ratio of strontium isotopes (87Sr/86Sr) in the local environment; thus, the sequence of strata shows where the animal roamed during life. Recent analysis of the strontium ratios in the strata of one Arctic woolly mammoth tusk in relation to the geographic distribution of strontium ratios in the environment shows the animal's range began to expand as it reached sexual maturity, only to contract again in its final 1.5 years."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both authors say Impressionists chose painted frames on purpose. Text 1 says it was to set themselves apart from convention, and Text 2 says it was to harmonize with the painting's colors. They disagree about why but agree the choice was deliberate. Choice C reverses Text 2's point: the frame was chosen to suit the painting, not the other way around."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The narrator says the story is told for its own sake, because it is very much worth telling, while Hans Castorp himself is \"perfectly ordinary.\" The narrator also adds that \"in Hans Castorp's favor\" it is his story and not every story happens to everybody, suggesting some of the story's worth reflects on him. Choice B claims the story's age shows its importance, a link the text never makes.",
+    "fix": {
+      "passage": "The following text is from Thomas Mann's 1924 novel The Magic Mountain, translated by John E. Woods in 1995.\n\nThe story of Hans Castorp that we intend to tell here—not for his sake (for the reader will come to know him as a perfectly ordinary, if engaging young man), but for the sake of the story itself, which seems to us to be very much worth telling (although in Hans Castorp's favor it should be noted that it is his story, and that not every story happens to everybody)—is a story that took place long ago, and is, so to speak, covered with the patina of history and must necessarily be told with verbs whose tense is that of the deepest past."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Wing size stands in for body size, which correlates with life span, so the claim needs flies from a warmer month to have larger wings. July is the warmest month in the table (average high 87°F), and the average male wing size was larger in July (2.02 mm) than in cooler May (1.98 mm). Choice B compares sexes, not months, and D misreads the table: 2.02 mm is the male value for July.",
+    "fix": {
+      "passage": "Drosophila (fruit flies) have generation times of 10-12 days, so seasonal changes in rainfall and other environmental conditions can drive seasonal fluctuations in chromosome rearrangements in species such as D. persimilis and D. mediopunctata. Drosophila body size (for which wing centroid size serves as a proxy measure) correlates with life span. Banu Şebnem Onder and Cansu Fidan Aksoy measured the wing sizes of members of a D. melanogaster population in Yesilöz, Turkey, that were collected monthly between May and October over three years. Their research suggests that Drosophila collected in relatively warmer months should tend to have a longer life span, as is illustrated by the finding that _____",
+      "table": {
+        "caption": "Monthly Temperatures and Wing Centroid Sizes of Fruit Fly Specimens",
+        "headers": [
+          "Month",
+          "Average high (°F)",
+          "Average low (°F)",
+          "Average male wing centroid size (mm)",
+          "Average female wing centroid size (mm)"
+        ],
+        "rows": [
+          [
+            "May",
+            "73",
+            "50",
+            "1.98",
+            "2.27"
+          ],
+          [
+            "July",
+            "87",
+            "62",
+            "2.02",
+            "2.31"
+          ],
+          [
+            "September",
+            "80",
+            "54",
+            "1.98",
+            "2.27"
+          ],
+          [
+            "October",
+            "67",
+            "44",
+            "1.98",
+            "2.29"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Stamens are attracted when a pollinator's charge is above a threshold, and queen honeybees (about 240 pC) exceed it. Red mason bees have an even higher maximum charge (about 780 pC), so they must exceed the threshold too and can also attract the stamens. Choice A is wrong because paper wasps have a much lower charge than honeybees, not a higher one."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Net CO2 rises when less CO2 is absorbed or more is released. If early snow melt both limits plant growth (less absorption) and raises heterotrophic respiration (more output), net CO2 must go up. Choice A would lower net CO2, and B and D have effects that point in opposite directions, so their overall result is unclear."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Studies show that sidewalks and crosswalks affect how far people will walk to transit. If the neighborhood has gained many sidewalks and crosswalks since the ten-year-old survey, residents' willingness to walk has probably changed, so the survey is likely outdated. Choice B is about weather in general and doesn't show anything changed over the decade."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For C. teleta to stand in for salmon in testing, its Ag-NP buildup must reflect what happens in salmon. If both species accumulate similar amounts (adjusted for body size) when exposed to similar levels, the worms are a good proxy. Choice D only says detection is easier in worms, not that their results match salmon."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Creep is deformation under persistent stress, and a lower minimum creep rate means the material deforms more slowly. So composites made with the nitrogen-treated fiber should hold up under stress longer than those made with the polymer-derived fibers. Choice A overstates the result: all the fibers creep, and the treated one is only relatively better, so saying it alone \"can substantially inhibit creep\" goes beyond the finding."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Being transmitted inside a host should shield CLPs from the environment, yet three-host CLPs still declined as the water warmed while directly transmitted parasites stayed stable. So whatever protection their strategy gave was not enough to outweigh other harmful effects of warming. Choice A contradicts the finding, since the parasite with more hosts fared worse.",
+    "fix": {
+      "passage": "Chelsea Wood et al. tracked temperature driven changes in the abundance of Gonocerca sp. (a complex life cycle parasite, or CLP, that requires three host species throughout its life cycle), Gyrodactylus sp. (a directly transmitted parasite, which requires only one host species), and 83 other parasite taxa found on eight fish species. CLPs are transmitted when an infected host is ingested by an individual of another species, typically shielding CLPs from the external environment, whereas directly transmitted parasites are exposed to external conditions during transmission. However, Wood et al. found that three-host CLP abundance decreased as sea temperatures rose, whereas directly transmitted parasite abundance was largely stable, suggesting that _____"
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The model overpredicts small-mammal populations in small forests, and Tuskegee is a small forest, so the model would likely overestimate its small-mammal populations. Choice A applies the large-forest problem (large mammals), which doesn't fit this forest."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"The hypothesized protolanguage from which all Kartvelian languages have descended\" must be followed by the thing it describes, Proto-Kartvelian. Choice B puts \"Proto-Kartvelian\" right after the comma. A and D start with properties or experts, and C starts with the language's descendants' properties, so each creates a dangling modifier."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Propylene and propane\" identifies which gaseous compounds are meant, so it is essential and takes no commas. The subject also must not be separated from its verb \"have,\" so no punctuation goes after \"propane.\" Choice A sets the names off as if they were extra information, D adds an unmatched comma, and C ends the sentence before its verb."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"No copies of which ___\" is a relative clause, so it needs a finite verb: \"no copies of which survive.\" The comma after it closes the interruption before the main verb \"is.\" \"Having survived,\" \"to survive,\" and \"surviving\" aren't finite verbs and leave the clause incomplete."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The Australian Desert ... is an arid desert\" and \"with a total area of about 2,700,000 km^2, it is one of the largest deserts\" are both independent clauses. Joining them needs a comma plus a coordinating conjunction, \", and.\" A comma alone (A) is a comma splice, and C and D leave a comma splice later in the sentence.",
+    "fix": {
+      "passage": "Within Earth's biomes, there are four main types of desert: arid, semiarid, coastal, and cold. The Australian Desert in Australasia is an arid _____ with a total area of about 2,700,000 km^2, it is one of the largest deserts of any type."
+    }
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The sand at Talofofo Beach in Guam is an exception\" is a complete sentence, and what follows explains why. A colon correctly introduces that explanation: \"exception: though most sand gets its shade from ..., deposits of crushed olivine ... lend ... a green tint.\" In A and C, a comma joins two independent clauses (a comma splice), and D breaks off \"though\" in a way that makes no sense."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"analyzed\" (\"a team of researchers ... analyzed geotagged social media posts\"). The blank must start a modifier describing the team, so the participle \"hoping\" is needed. Any finite verb (\"hoped,\" \"was hoping,\" \"were hoping\") would leave two main verbs with nothing joining them."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The last sentence restates the 32-minute change in concrete numbers: from 11 hours, 55 minutes down to 11 hours, 23 minutes. \"That is\" signals this kind of clarifying restatement. \"For example\" is tempting, but the sentence explains the same fact rather than giving a new example of it."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem suggests that poetry and painting flow together, yet it also brings out tensions between them, two ideas that are both true but pull in different directions. \"At the same time\" fits this. \"Therefore\" would wrongly make the tensions a result of the fluid interplay."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A definition should say what georeferencing is, and choice B does: it's assigning geographic coordinates to an image so mapping software can place it in its real-world location. The other choices mention the term or one project that used it but never explain what it means."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity between the two authors, and choice D says that works by both recently entered the public domain. Choice A frames a difference (\"unlike\"), B stresses a difference in form, and C mentions only Melville."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For a new audience, the description should name the work and its creator and say what it is like. Choice A gives the artist, the year, the material (recycled silver), and its scale (it fills an entire gallery wall). The other choices give little detail or shift the focus to the Women's Table."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes state the study's primary aim: to determine the benefits of UNAs in European cities. Choice C states exactly that. Choice B mentions an \"objective\" without saying what it is, and A and D give other details."
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Angles w and z sit opposite each other where the two lines cross, so they are vertical angles and are equal. So z = w = 128. Choice B (52) is the supplement, 180 − 128, which would be an angle next to w, not across from it."
+  },
+  {
+    "key": "m1-02",
+    "type": "mcq",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Her total savings will be the $180 she already has plus the additional x dollars, or 180 + x. \"At least $240\" means this total must be greater than or equal to 240: 180 + x ≥ 240. Choice B multiplies instead of adding.",
+    "fix": {
+      "prompt": "Sabrina has a goal to save at least $240. Sabrina has already saved $180. If x represents the additional amount of money, in dollars, Sabrina needs to save to meet her goal, which inequality represents this situation?",
+      "choices": {
+        "A": "x/180 ≥ 240",
+        "B": "180x ≥ 240",
+        "C": "180 + x ≥ 240",
+        "D": "180 − x ≥ 240"
+      }
+    }
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "18"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. f(0) = 12(0) + 18 = 18, so the graph crosses the y-axis at (0, 18), and the y-coordinate is 18."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distance = rate × time = 16 meters per second × 4 seconds = 64 meters. Choice B (20) comes from adding 16 + 4 instead of multiplying."
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line of best fit starts at the origin and rises from left to right, so its slope is positive and its y-intercept is 0. It passes through about (5, 5.5), giving a slope of about 5.5/5 = 1.1, so y = 1.1x. Choice B has a negative slope, and C and D are horizontal lines."
+  },
+  {
+    "key": "m1-06",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 0: d(0) = 200 − 6^0. Any nonzero number to the power 0 is 1, so d(0) = 200 − 1 = 199. Choice D comes from treating 6^0 as 0."
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An exponential model has the form y = a(1 + r)^x, where a is the starting value and r is the growth rate. The starting value is 90 and the growth is 20% = 0.20, so y = 90(1.20)^x. Choice B uses 1.02, which is only 2% growth.",
+    "fix": {
+      "prompt": "The relationship between the variables x and y is defined by an exponential equation. When x = 0, the value of y is 90, and for every increase in the value of x by 1, the corresponding value of y increases by 20% of its previous value. Which equation represents this relationship?"
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Parallel lines have the same slope, so line j also has slope 7. Since it passes through (0, 3), its y-intercept is 3, giving y = 7x + 3. Choice C uses slope −7, which gives a line that isn't parallel."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "8"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply the first equation by 7: 7x + 28y = 287. Subtract the second equation: (7x + 28y) − (7x − 20y) = 287 − (−97), so 48y = 384 and y = 8. Check: x = 41 − 32 = 9, and 7(9) − 20(8) = 63 − 160 = −97."
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "28"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x) = ax, the graph is a line through the origin with slope a. The slope is 28, so a = 28."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The end of November 2011 corresponds to x = 0, so read the graph's y-value where x = 0. The curve starts at y = 8 there. Choice D (12) is the curve's highest value, reached around x = 4."
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "16"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Range = maximum − minimum. The largest group has 20 lemurs and the smallest has 4, so the range is 20 − 4 = 16.",
+    "fix": {
+      "prompt": "The list gives the number of individuals in each of 6 groups of ring-tailed lemurs.\n17, 4, 20, 17, 18, 6\nWhat is the range of the numbers of individuals for the 6 groups of ring-tailed lemurs?"
+    }
+  },
+  {
+    "key": "m1-13",
+    "type": "mcq",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In d = 15t, the distance grows by 15 inches for every 1 second, so the rate of change is the coefficient of t: 15 inches per second. Choice A, 15t, is the distance after t seconds, not the rate.",
+    "fix": {
+      "prompt": "d = 15t\nThe given equation relates the distance d, in inches, of an object from its starting position to the time t, in seconds, since the object started moving. What is the rate of change of the object's distance from its starting position over time?",
+      "choices": {
+        "A": "15t inches per second",
+        "B": "15 inches per second",
+        "C": "1/15 inches per second",
+        "D": "1/(15t) inches per second"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "21/2",
+      "10.5"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: y = (1/2)(15x) + (1/2)(12) + 3x = 7.5x + 6 + 3x = 10.5x + 6. The slope is the coefficient of x, so it is 10.5, or 21/2.",
+    "fix": {
+      "prompt": "What is the slope of the graph of y = (1/2)(15x + 12) + 3x in the xy-plane?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "5"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the row where f(x) = 0: a fraction is 0 only when its numerator is 0, so k(−9) + 45 = 0, which gives k = 5. Check another row: f(33) = (5 · 33 + 45)/(33 + 2) = 210/35 = 6, which matches the table.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of f(x), where f(x) = (kx + 45)/(x + 2) and k is a constant. What is the value of k?",
+      "table": {
+        "headers": [
+          "x",
+          "f(x)"
+        ],
+        "rows": [
+          [
+            "−37",
+            "4"
+          ],
+          [
+            "−9",
+            "0"
+          ],
+          [
+            "33",
+            "6"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(a) = (a + 11)/3 = 16. Multiply both sides by 3: a + 11 = 48, so a = 37. Choice D (59) comes from computing 16 · 3 + 11 instead of subtracting 11.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = (x + 11)/3, and f(a) = 16, where a is a constant. What is the value of a?"
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "10% of 330 is 0.10 × 330 = 33, so she saved 33 bean pods."
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use V = (4/3)πr^3 with r = 8/3. First, (8/3)^3 = 512/27, so V = (4/3)(512/27)π = 2,048π/81. Choice B (32π/9) comes from squaring the radius instead of cubing it.",
+    "fix": {
+      "prompt": "A sphere has a radius of 8/3 feet. What is the volume, in cubic feet, of the sphere?",
+      "choices": {
+        "A": "3π/8",
+        "B": "32π/9",
+        "C": "17π/3",
+        "D": "2,048π/81"
+      }
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Profit = sales revenue − fixed costs, and in 11,000 = 2.00x − 6,500 the profit is 11,000 and the fixed costs are 6,500. So 2.00x is the sales revenue from selling x staplers at $2.00 each. Choice B describes 2.00 alone (revenue per stapler), not 2.00x."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply both sides by 27: x − 16 = 3(x − 16), so 0 = 2(x − 16) and x = 16. (Two fractions with the same numerator but different denominators can be equal only when that numerator is 0.) Then x + 16 = 32. Choice C (16) is the value of x, not x + 16.",
+    "fix": {
+      "prompt": "If (x − 16)/27 = (x − 16)/9, what is the value of x + 16?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line h passes through (−5, 0) and (0, −8), so its slope is −8/5 and its equation is y = −(8/5)x − 8, or 8x + 5y = −40. Multiply by 8 to match the 40y: 64x + 40y = −320. A system with no solution has parallel, distinct lines, so s = 64 and t can be anything except −320. If t = −320, the two equations describe the same line and have infinitely many solutions."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Isolate the absolute value: 8|7 − x| = 80, so |7 − x| = 10. Then 7 − x = 10 gives x = −3, and 7 − x = −10 gives x = 17. The sum of the solutions is −3 + 17 = 14. Choice B (−3) is only one of the solutions.",
+    "fix": {
+      "prompt": "8|7 − x| + 1 = 81\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "200% means 2 times as many, so Levi has 2 × 460 = 920 stamps. Choice D (1,380) adds 200% on top of Marissa's amount, which would be 300% of it."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A solution to the system is a point where the line and the parabola intersect. The graphs cross at (−1, 5). (0, 0) lies only on the parabola, (0, 9) lies only on the line, and (−2.4, 0) is near the line's x-intercept, which is not on the parabola."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 3 feet = 1 yard, divide the number of feet by 3: (3/50) ÷ 3 = 3/150 = 1/50 yard per second. Choice C (9/50) comes from multiplying by 3 instead of dividing.",
+    "fix": {
+      "prompt": "An object moves at a speed of 3/50 feet per second. What is this speed, in yards per second? (3 feet = 1 yard)",
+      "choices": {
+        "A": "50",
+        "B": "6",
+        "C": "9/50",
+        "D": "1/50"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms share the factor 2t^2: 158t^3 = 2t^2 · 79t and 24t^2u = 2t^2 · 12u. So the expression equals 2t^2(79t − 12u). Choice A would expand to 158t^4, and D puts a u on the first term as well."
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle K's area is π(2)^2 = 4π mm^2. Adding circle L's area gives 4π + 144π = 148π mm^2. Choice B (28π) comes from adding circumferences or radii instead of areas.",
+    "fix": {
+      "prompt": "Circle K has a radius of 2 millimeters (mm). Circle L has an area of 144π mm^2. What is the total area, in mm^2, of circles K and L?"
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply the 2 into the first factor: 2(x − 3/2) = 2x − 3. Then (2x − 3)(x + 14) = 2x^2 + 28x − 3x − 42 = 2x^2 + 25x − 42. Choice A forgets to multiply the x^2 term by 2.",
+    "fix": {
+      "prompt": "Which expression is equivalent to 2(x − 3/2)(x + 14)?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept occurs at x = 0: f(0) = (−7)(4)^0 + 31 = −7 + 31 = 24, so it is (0, 24). Choice C (0, 31) ignores the exponential term, which equals −7 at x = 0, not 0."
+  },
+  {
+    "key": "m2-08",
+    "answer": "B",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angles R and S are complementary, and the cosine of an angle equals the sine of its complement. So cos(S) = sin(R) = 2sqrt(10)/7. You don't need to find any side lengths.",
+    "fix": {
+      "prompt": "In right triangle RST, the sum of the measures of angle R and angle S is 90 degrees. The value of sin(R) is 2sqrt(10)/7. What is the value of cos(S)?",
+      "choices": {
+        "A": "3sqrt(10)/20",
+        "B": "2sqrt(10)/7",
+        "C": "7sqrt(10)/20",
+        "D": "2sqrt(10)/3"
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second inequality gives y > 70. Combined with the first, 70 < y < 42 − 7x, which requires 42 − 7x > 70. Then −7x > 28, and dividing by −7 flips the sign: x < −4. Choice C forgets to flip the inequality.",
+    "fix": {
+      "prompt": "y < 42 − 7x\ny/7 > 10\nWhich inequality represents the x values for all solutions (x, y) that satisfy the given system of inequalities in the xy-plane?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle A has radius sqrt(9) = 3, so circle B has radius 6. Keeping the same center (2, 3), its equation is (x − 2)^2 + (y − 3)^2 = 6^2 = 36. Choice A (18) doubles r^2 instead of doubling r."
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "9600"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angles PQT and RQS are vertical angles, so they are congruent, and ∠PTQ ≅ ∠RSQ is given. So triangle PTQ is similar to triangle RSQ, with PT matching RS and TQ matching SQ. The scale factor is TQ/SQ = 8,400/1,400 = 6, so x = PT = 6 × 1,600 = 9,600 feet."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Distribute: PC = 44N − NC. Move the C terms to one side: PC + NC = 44N, so C(P + N) = 44N and C = 44N/(N + P). Choice A still has C on the right side, so it doesn't actually solve for C.",
+    "fix": {
+      "choices": {
+        "A": "C(N + P)/N",
+        "B": "PC/(44 − C)",
+        "C": "44N/(N + P)",
+        "D": "44N/(P + 1)"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use XY as the base, which is 24. The height from Z to XY is the leg opposite the 52° angle in the small right triangle with hypotenuse XZ, so it is 17 sin 52°. Area = (1/2)(24)(17 sin 52°) = 204 sin 52°. Choice A (204) treats the height as 17, but XZ is slanted, not perpendicular to XY.",
+    "fix": {
+      "prompt": "In the figure shown, the measure of angle X is 52°. The length of XY is 24 units and the length of XZ is 17 units. What is the area, in square units, of triangle XYZ?",
+      "choices": {
+        "C": "204 sin 52°",
+        "D": "408 sin 52°"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The faucet adds 0.03 mL every 3 seconds, which is 0.03/3 = 0.01 mL per second. Starting from 24 mL, the volume after t seconds is v = 0.01t + 24. Choice B treats 0.03 mL as the amount added each second."
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When margins of error are calculated the same way, a larger random sample gives a smaller margin of error. The first sample's margin (1 minute) is smaller than the second's (2.2 minutes), so the first sample most likely had more ovens. The sample means (C and D) don't determine the size of the margin of error.",
+    "fix": {
+      "choices": {
+        "C": "The first sample took more time on average to preheat to 325°F than the second sample.",
+        "D": "The first sample took less time on average to preheat to 325°F than the second sample."
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "5/9",
+      ".5555",
+      ".5556",
+      "0.555",
+      "0.556"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A linear equation has no solution when the x-terms on both sides have equal coefficients but the constants differ. Set −(3/19)r = −5/57, so r = (5/57)(19/3) = 95/171 = 5/9. (The constants s/8 and 10 must also be unequal, which is possible for the right value of s.)",
+    "fix": {
+      "prompt": "−(3/19)rx + s/8 = 10 − (5/57)x\nIn the given equation, r and s are constants. The equation has no solution. What is the value of r?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expand and divide by −8: −8x^2 − 72x = 40 becomes x^2 + 9x + 5 = 0. The quadratic formula gives x = (−9 ± sqrt(81 − 20))/2 = (−9 ± sqrt(61))/2. Matching (−s + sqrt(t))/2 gives s = 9 and t = 61, so s/t = 9/61. Choice A (9/101) comes from adding 20 instead of subtracting it under the root.",
+    "fix": {
+      "prompt": "−8x(x + 9) = 40\nOne solution to the given equation can be written as x = (−s + sqrt(t))/2, where s and t are positive integers. What is the value of s/t?",
+      "choices": {
+        "A": "9/101",
+        "B": "9/76",
+        "C": "9/61",
+        "D": "18/61"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "120 seconds is 2 minutes, so compare N(m + 2) to N(m): the ratio is Q^((m+2)/4) ÷ Q^(m/4) = Q^(2/4) = Q^(1/2). A growth factor of Q^(1/2) means an increase of (Q^(1/2) − 1) × 100 percent, so p = 100(Q^(1/2) − 1). Choices B and D use 30, from treating 120 seconds as m = 120.",
+    "fix": {
+      "prompt": "The equation N(m) = 65(Q)^(m/4) gives the predicted population N(m), in thousands, of a certain bacteria colony m minutes after the initial measurement, where Q is a constant greater than 1. The predicted population increases by p% every 120 seconds. What is the value of p in terms of Q?",
+      "choices": {
+        "A": "100(Q^(3/2) + 1)",
+        "B": "100(Q^30 + 1)",
+        "C": "100(Q^(1/2) − 1)",
+        "D": "100(Q^30 − 1)"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "1456"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The vertex is (10, 1600), so h(t) = a(t − 10)^2 + 1600. Launch height 0 means h(0) = 100a + 1600 = 0, so a = −16. Then h(7) = −16(7 − 10)^2 + 1600 = −144 + 1600 = 1,456 feet."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "372"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "p depends on x only through (x + 5)^2. At x = −10, (x + 5)^2 = 25, just like at x = 0, so p(−10) = p(0) = 342. At x = −4, (x + 5)^2 = 1, just like at x = −6, so p(−4) = p(−6) = 30. So p(−10) + p(−4) = 342 + 30 = 372, and you never need a, b, or c.",
+    "fix": {
+      "prompt": "The function p is defined by p(x) = a((x + 5)^2 − b)((x + 5)^2 − c), where a, b, and c are constants. In the xy-plane, the graph of y = p(x) passes through the points (−6, 30) and (0, 342). What is the value of p(−10) + p(−4)?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide the given equation by 13: x − n = y + n, so x − y = 2n, or 2x − 2y = 4n. For no solution, the second line must be parallel (same x and y coefficients) with a different constant. 2x − 2y = 2n works because 2n ≠ 4n when n > 0. Choice A is the same line, which gives infinitely many solutions."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "-35/4",
+      "-8.75"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Move everything to one side and factor out (x − k): (x − k)[(x − k) − (k − 4a)] = 0. The solutions are x = k and x = 2k − 4a, and they are different because k > 4a. Their sum is 3k − 4a = 3k + 35, so −4a = 35 and a = −35/4."
+  }
+]

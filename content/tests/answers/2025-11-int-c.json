@@ -1,0 +1,1061 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dash explains the blank as \"variations in size, shape, and material,\" which means the particles differ from one another—they show inconsistencies. That variety, together with high concentrations, is what makes classification hard. \"Incompatibilities\" wrongly suggests the particles conflict or cannot exist together, which the text never says."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Researchers had \"long debated\" the silver's origins, and the new study finally provides \"firm details.\" So before the study, the field was based on guesswork—it was speculative. \"Authoritative\" is the opposite of what the contrast requires, and \"esoteric\" (obscure) doesn't connect to the lack of firm evidence."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The breezes \"meet and conflict,\" each one striving to control the air, so \"mastery\" means domination or control. \"Skillfulness\" is another meaning of mastery, but breezes are competing for control here, not showing skill."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The two methods do different jobs that fit together: seismic data narrows down the area, and orbital images then pinpoint the crater. Tools that complete each other are complementary. \"Redundant\" and \"interchangeable\" would mean they do the same job, which contradicts the description."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text notes that little is known about juvenile sea turtles in their oceanic stage and then describes a study that tracked juveniles and what it found. Its purpose is therefore to summarize research on this understudied stage. Choice B focuses only on the final detail about two turtles, which is too narrow."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Saying the film reflects Holiday's life only \"by courtesy\" means it does so in name only, not truly. That phrase captures the gap Baldwin saw between real experience and how the film portrayed it, which the text then links to a broader trend in US cinema. Nothing in the text suggests Baldwin later reconsidered (A) or preferred older films (D).",
+    "fix": {
+      "passage": "In a section of a 1976 essay discussing cinema of the United States, James Baldwin observed that Lady Sings the Blues (1972), a biographical film about jazz singer Billie Holiday, can be said to reflect Holiday’s life and the experiences of Black Americans only <u>“by courtesy.”</u> According to Baldwin, the failure of this film to authentically represent its subject matter is indicative of a larger trend in films of the era: rather than leveraging the medium’s potential to confront difficult truths, filmmakers and studios often resorted to platitudes about contemporary US society."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines literary critics in parentheses as \"people whose job it is to evaluate books.\" So someone who professionally evaluates books is a literary critic. An author writes books rather than evaluating them."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states directly that the Hispanic Society of America \"has more than 18,000 objects in its museum collection.\" Choice B is wrong because the society was founded in 1904; the post-2000 date refers to other institutions."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Defoe says a historian should name the source when a story comes with sufficient authority and should say so when it does not. In other words, historians must make clear how trustworthy each source is. Choice B is too strict: Defoe allows weakly supported stories as long as the historian flags them."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Camilla's perception of her surroundings changes. In choice B, nature is exactly as it always was, \"evening upon evening,\" yet Camilla now senses \"a new strangeness, a vast desolation in everything about her\"—a clear shift in how she sees the same place. The other quotations show her emotions or actions but not a changed view of her surroundings."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that membership peaked in one age range and then dropped among older girls. Every year there were far more Brownies (ages 6–8) than Seniors (ages 14–17), which fits a peak among younger members followed by a decline among older ones. Choice B only shows Brownies shrinking over time, which says nothing about how older age groups compare.",
+    "fix": {
+      "passage": "The Girl Scouts of America is an organization famous for its annual sales of several varieties of cookies, including S'Mores. A student is writing an essay on the history of the organization. The student claims that from 1992 to 1995 the organization's popularity regularly peaked among participants in a certain age range before declining among older participants as Girl Scout activities began to compete with other interests.",
+      "table": {
+        "caption": "Members of the Girl Scouts of America, by Age Category, 1992–1995 (in thousands)",
+        "headers": [
+          "Category",
+          "1992",
+          "1993",
+          "1994",
+          "1995"
+        ],
+        "rows": [
+          [
+            "Ambassadors (older than 17)",
+            "863",
+            "826",
+            "802",
+            "784"
+          ],
+          [
+            "Seniors (14–17 years)",
+            "50",
+            "43",
+            "45",
+            "52"
+          ],
+          [
+            "Daisies (5–6 years)",
+            "207",
+            "191",
+            "190",
+            "195"
+          ],
+          [
+            "Brownies (6–8 years)",
+            "1,319",
+            "1,225",
+            "1,181",
+            "1,142"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researcher's model predicts that languages farther from humanity's African origin keep fewer sounds. If languages in Europe and Western Asia—farther from Africa—actually have more sounds than African languages, that directly contradicts the prediction. Choice A supports the claim, since the more distant region has fewer sounds."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For a shared favorite recording, musicians preferred a higher volume than nonmusicians. So if the musician's ideal level is 84.8 decibels, the nonmusician's ideal level should be lower, meaning the nonmusician would enjoy the song less at 84.8 decibels than at a quieter volume. The study says nothing about comparing different recordings at the same volume, so B and C go beyond the text."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Adding sonic pulses to ship sounds made almost no difference in the narwhals' diving. That makes sense if ship sounds already dominate the noise level, so the extra pulses barely change what the narwhals hear. Choice B contradicts the text, since both noise conditions significantly reduced deep dives."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence needs a main verb for the singular subject \"the atomic structure,\" and \"determines\" supplies it. \"To determine,\" \"determining,\" and \"having determined\" are not finite verbs, so they leave the sentence without a main verb."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to Puerto Rico (\"the territory\"), a singular noun, and shows possession, so \"its\" is correct—matching \"its coffee\" later in the sentence. \"It's\" means \"it is,\" and \"their\" is plural."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Dr. Rubén G. Mendoza\" is the subject and \"studies\" is its verb, so no punctuation should separate them. A comma, semicolon, or colon between a subject and its verb is an error."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"On January 11, 1996, ... commencing Mission STS-72\" is a complete sentence, and \"Lasting eight days and twenty-two hours, the mission ended ...\" is another. A period correctly separates them. Choices B and C join the two independent clauses with only a comma or nothing (a comma splice or run-on), and D creates a comma splice."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Growing ... provide structural support\" is a complete sentence, and \"Decreasing in thickness ..., these veins allow ...\" is another. A period is needed between them. Choices A and B run two independent clauses together, and D still leaves the second main clause attached with only a comma."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Recordings of electrical activity in the brain\" must be followed by the thing it describes: electrograms. Choice A places \"electrograms\" right after the comma and gives a clear main clause (\"electrograms show that ... players have increased activity\"). The other choices put responses or players next to the phrase, which makes no sense."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The names hexafluorobenzene and undecane identify which compounds are meant, so they are essential and take no commas. They also form the subject of \"have,\" and no comma should come between a subject and its verb. Choices with a comma after \"compounds\" or after the closing parenthesis break this rule."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Kepler-1552b is too far away to use, so humanity must focus on planets in our own solar system in place of that one. \"Instead\" signals this substitution. \"For example\" and \"Likewise\" don't fit because the second sentence offers an alternative, not an example or a similar idea."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By analyzing the palettes of 50 painters, Loske reveals clues about their techniques; the second sentence describes the result of that same activity. \"In doing so\" links the analysis to what it uncovers. \"However\" wrongly signals a contrast."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Glaciers at least 60 million years old lead logically to the conclusion that Antarctica had glaciers before its ice sheet formed 34 million years ago. \"Thus\" marks this cause-and-effect conclusion. \"Even so\" and \"Nevertheless\" signal a contrast that isn't there."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Actors' self-awareness responses were suppressed during performances but normal outside of acting. These two situations are opposites, so \"conversely\" is the right transition. \"Likewise\" would wrongly suggest the responses were the same."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To compare how long the two keepers served, the sentence must give both lengths of service. Choice D states Salter's twenty-two years and Lewis's fifty-four years and shows Lewis served longer. Choice C gives only Salter's length of service, so no comparison is possible.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Lighthouses send out crucial light signals to help ships and other watercraft navigate at night.\n• Before automation, lighthouses were run by lighthouse keepers.\n• Fannie May Salter was the lighthouse keeper at Turkey Point Light in Maryland.\n• She held this position for twenty-two years (1925–1947).\n• Ida Lewis was the lighthouse keeper at Lime Rock Light in Rhode Island.\n• She held this position for fifty-four years (1857–1911)."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the isthmus's location, and choice D says it is in the Mediterranean Sea and connects the Siteia municipality to the rest of Crete. The other choices define an isthmus or name the Isthmus of Ierapetra without saying where it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• An isthmus is a strip of land that connects two larger pieces of land across an expanse of water.\n• It is also known as a land bridge.\n• The Isthmus of Ierapetra connects the Siteia municipality to the rest of the island of Crete.\n• The Isthmus of Ierapetra is located in the Mediterranean Sea."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Waves damage the lighthouse, the structure gets reinforced or redesigned, and the new design in turn changes wave patterns. Each side affects the other, which is an interplay. \"Tension\" suggests only conflict and misses the two-way, back-and-forth influence the colon describes."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Daumier's painting \"instead\" focuses on ordinary travelers, so he avoided the grand mythological subjects of establishment painters. \"Eschewing\" means deliberately avoiding. \"Caricaturing\" or \"appraising\" would mean he engaged with those subjects, which contradicts \"instead.\""
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The game was an anonymous underground protest against an authoritarian government, so it must have been passed around secretly. \"Surreptitiously\" means secretly, and it contrasts with the game now being \"readily available online.\" \"Disingenuously\" means insincerely, which doesn't fit."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Fragmentation causes changes to local ecological processes, and the text goes on to discuss the impact of those changes. \"Engenders\" means produces or brings about. \"Attenuates\" (weakens) and \"preempts\" (prevents) would mean the changes don't happen, contradicting the rest of the sentence."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first presents the widely held belief that protected areas hinder economic development, then explains why the belief persists (assessments miss tourism's indirect effects), and finally describes Bhamar et al.'s findings that tourism around the Mamanuca Islands boosts other sectors. That matches B. The text cites only one study and never says PAs typically hurt economies, so A and D misdescribe it."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined part points out that standard dyeing would undercut the pellicle's ecological benefits. This concern is what led Walker's team to engineer the bacteria to color the pellicle from the inside—a different coloring approach. Choice A describes the following sentence (the researchers' solution), not the underlined portion itself.",
+    "fix": {
+      "passage": "Typically, synthetic leather is petroleum based, but materials scientists searching for an ecologically sustainable alternative have used various bacteria that secrete linear chains of glucose, forming a dense mesh of cellulose called a pellicle, which is leatherlike except in color. The standard process for dyeing leather generates substantial wastewater and other undesirable byproducts, so <u>adopting such a regimen would run counter to the ecological promise of the pellicle approach</u>. To address this, Kenneth T. Walker and colleagues worked to modify Komagataeibacter rhaeticus bacteria to produce a pellicle with embedded pigmentation cells, thereby allowing the pellicle to \"dye\" itself from the inside."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 cites research from non-boreal ecosystems showing that warmer summers help invasive species more than native ones. Text 2 finds that in Alaska, neither the native nor the invasive plant grew differently in hotter years, suggesting the earlier finding may not apply to boreal settings. Choice D goes too far: Text 2 doesn't say the earlier findings were wrong where they were made."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Under optimal foraging theory, animals forage more when benefits outweigh costs. Since the monkeys forage more under brighter moonlight, whatever costs brightness brings them must be outweighed by its benefits. Choice C isn't supported: the text never says the badgers' costs alone would cancel out the monkeys' benefits.",
+    "fix": {
+      "passage": "Optimal foraging theory (OFT) holds that animals’ foraging behaviors reflect cost-benefit trade-offs that vary by species and with dynamic ecological circumstances. One such circumstance is lunar intensity, which W.J. Cresswell and Stephen Harris found to be negatively associated with foraging by European badgers but Eduardo Fernández-Duque and colleagues found to be positively associated with foraging by Azara’s night monkeys. This discrepancy is explicable in terms of OFT: the monkeys’ greater reliance on vision means that higher lunar intensity benefits them more than it benefits the badgers.",
+      "prompt": "Information in the text best supports which statement about Azara’s night monkeys?",
+      "choices": {
+        "A": "If the monkeys’ foraging behavior under increased lunar intensity actually reflects a cost-benefit trade-off, their behavior should be more similar to that of European badgers than it is."
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To argue that ads for project leaders should stress pollination, you need evidence that project leaders value pollination most. Project leaders ranked pollination 1, higher than every other service shown (5, 8, 13, 17). Choice B only compares project leaders with stakeholders, which doesn't show pollination is project leaders' top concern.",
+    "fix": {
+      "passage": "Esther Sanyé-Mengual, Kathrin Specht, and their team surveyed three groups of people in Bologna, Italy—leaders of urban agriculture projects, stakeholders in urban agriculture (e.g., food researchers and urban farming associations), and the general public—to compare their views about the extent to which urban agriculture contributes to 25 social or ecological services that the team identified. The researchers used these ratings to rank the services for each group, with a ranking of 1 indicating that a group perceives that urban agriculture benefits that service the most. Using only the rankings shown in the table, a city planner in Bologna who is promoting a new urban agriculture project concludes that advertisements aimed at project leaders should emphasize the project's benefit to the enhancement of pollination.",
+      "table": {
+        "caption": "Ranking of Environmental and Sociocultural Benefits of Urban Agriculture (scale of 1 to 25; 1 = highest)",
+        "headers": [
+          "Social or ecological service",
+          "Project leaders",
+          "Stakeholders",
+          "General public"
+        ],
+        "rows": [
+          [
+            "improvement of social cohesion",
+            "17",
+            "10",
+            "9"
+          ],
+          [
+            "prevention of soil erosion",
+            "13",
+            "11",
+            "23"
+          ],
+          [
+            "conservation of genetic variability",
+            "5",
+            "18",
+            "16"
+          ],
+          [
+            "improvement of urban aesthetics and art inspiration",
+            "8",
+            "4",
+            "6"
+          ],
+          [
+            "enhancement of pollination",
+            "1",
+            "7",
+            "12"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Among resolution makers aged 50–64, 58% make relationship resolutions versus 53% for ages 30–49, and 56% make finance resolutions versus 63%. That matches D exactly. Choice C is wrong because the 18–29 group (79%) is actually slightly lower than the 30–49 group (80%) for health and exercise.",
+    "fix": {
+      "passage": "A Pew Research Center survey conducted in January 2024 found that three out of ten US adults make at least one New Year’s resolution (a promise for the year ahead), while half of those who make a resolution make more than one. The survey asked participants what kinds of resolutions they made and separated them into several categories. The table presents percentages of people who make particular kinds of New Year’s resolutions among those who choose to make them, indexed by age bracket.",
+      "table": {
+        "caption": "Percentages of New Year’s Resolution Makers Who Make Certain Kinds of Resolutions",
+        "headers": [
+          "Type of resolution",
+          "Age 18-29",
+          "Age 30-49",
+          "Age 50-64",
+          "Age 65+"
+        ],
+        "rows": [
+          [
+            "Health and exercise",
+            "79",
+            "80",
+            "79",
+            "76"
+          ],
+          [
+            "Finances",
+            "68",
+            "63",
+            "56",
+            "47"
+          ],
+          [
+            "Personal relationships",
+            "63",
+            "53",
+            "58",
+            "52"
+          ],
+          [
+            "Hobbies",
+            "65",
+            "53",
+            "51",
+            "45"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In D, Richard says he has not yet shaken off the \"regal thoughts\" of a ruler and has \"hardly yet\" learned to flatter and \"bend my knee\"—he isn't ready to act like a subject. That directly shows his reluctance to submit to Henry. Choice C stresses his grief, not his unwillingness to be subservient."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim says The Grass Dancer, like classic magical realism, combines literary realism with Dakota cultural traditions. Choice B says the novel mostly follows realistic conventions while also drawing on Dakota traditions that go beyond realism, which is exactly that combination. Choice A wrongly says Dakota traditions are prominent in Latin American magical realism.",
+    "fix": {
+      "passage": "Scholars cite Men of Maize, the 1949 novel by Guatemalan author Miguel Ángel Asturias, as a foundational text of magical realism, the Latin American style of fiction in which antirealistic plot devices—often borrowed from the spiritual and narrative traditions of Indigenous and colonial societies in the Americas—are deployed in an otherwise realistic mode of representation typical of the modern novel. This style has exerted a decisive influence on authors in the United States, including Susan Power, <u>whose 1994 novel The Grass Dancer resembles classic magical realist novels in its juxtaposition of literary realism with long-established cultural traditions—namely, those of the Dakota people of the northern plains</u>."
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text explains that competition favors intelligence and larger brains, and that brains lagged behind bodies only while competition was low. Once populations grew and competition intensified, conditions would favor bigger brains relative to body size again. Choice D reverses this, since large bodies were favored in the low-competition period."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The songs described clam gardens, and the evidence shows this practice really did increase clam size and abundance. So the songs preserved knowledge of an effective way to cultivate a food source, which supports the opening idea that songs carry ecological information. Choice B claims something about motives that the finding can't show."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Latvia’s 4,917-word constitution\"; the long phrase about Chile's constitution is just an interruption. A singular subject needs the singular verb \"ranks.\" The other choices are plural verbs that wrongly agree with \"words\" or Chile's constitution."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"now known as the Maunder Minimum\" is set off by an opening dash after \"1715,\" so it must close with a matching dash. Choice A provides it. Using a comma or colon instead would mix punctuation marks around the same interrupting phrase."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"This conceptualization ... did not originate with Collier, though\" is a complete clause, and \"though\" belongs with it, meaning \"however.\" A semicolon then separates it from the next independent clause beginning \"in 1985.\" Choice D attaches \"though\" to the wrong clause, and A and C create comma splices."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"rejects\" (\"Popper's theory ... rejects the confirmationist position\"). The blank begins a modifier describing the theory—\"dictating that scientific hypotheses must be refutable\"—so it needs the -ing form. Choices A, B, and D add a second main verb, which breaks the sentence."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The main verb for \"This cadre\" is \"helped sow.\" The words between them must be a modifier, so \"asserting that ... property\" works, set off by a comma before it and the comma after the quotation. Choices A, C, and D add a second main verb, leaving \"helped\" with no grammatical role."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second clause explains what \"regional authenticity\" means: being made with local ingredients and regional methods. \"That is\" introduces such a restatement. \"Still\" and \"rather\" would signal a contrast or correction."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tangle of incompatible track gauges is the reason historians call it the \"mixed gauge muddle.\" \"Hence\" shows this result. \"For example\" doesn't fit, because the last sentence is a consequence, not an example."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Cartographers start at the river system's lowest point, while hydrologists start at the top. These are opposite approaches, so \"By contrast\" fits. \"In a similar way\" would wrongly suggest the two groups do the same thing."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because Precisionists sought machine-like perfection and geometric shapes, it follows that their works often show skyscrapers, bridges, and factories. \"Accordingly\" marks this logical result. \"However\" and \"That said\" signal a contrast that isn't there."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says not all volcanoes are the same, describes Ischia as a complex volcano, and then gives Mount Vsevidof as a different type, a stratovolcano. \"In contrast\" marks the difference. \"In fact\" would suggest the second example reinforces the first."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A historical overview of the expedition should cover what happened from 1914 to 1916. Choice C traces the departure, the loss of the ship in 1915, and the 1916 rescue. Choice A focuses on later works about the expedition, and B wrongly says the expedition rescued another ship's crew.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• 1914: British explorer Ernest Shackleton and a small crew embarked on an expedition to Antarctica.\n• 1915: Shackleton’s ship Endurance became stuck in ice before eventually breaking apart and sinking.\n• 1916: After more harrowing sea-ice adventures, the entire crew was rescued.\n• 1959: Historian Alfred Lansing wrote a book called Endurance: Shackleton’s Incredible Voyage.\n• 2001: Filmmaker George Butler released a documentary called The Endurance: Shackleton’s Legendary Antarctic Expedition.\n• 2022: The wreckage of Endurance was discovered at the bottom of Antarctica’s Weddell Sea."
+    },
+    "note": "Removed the duplicated 1959 note (printed twice in the original)."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To support Browner's claim, the sentence must give evidence that Ballard used Native musical elements. Choice D states the claim and backs it up with Cacéga Ayuwípí's use of Hopi notched sticks, a traditional Native instrument. Choices B and C repeat the claim but offer only a Pulitzer nomination or a title as support.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• Ballard’s composition Desert Trilogy was nominated for the Pulitzer Prize in music in 1971.\n• His composition Cacéga Ayuwípí incorporates Hopi notched sticks, a traditional Native instrument.\n• Ethnomusicologist Tara Browner claims that Ballard’s compositions rely on elements originating within Native musical traditions."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Choice D makes a claim about Thailand (the predicted shift to large farms may not hold there) and supports it with Promkhambut et al.'s finding that rice farms stayed small while modernizing. Choice A makes a similar claim but gives no evidence. Choice C is about Asia generally, not Thailand.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The farm-size transition hypothesis predicts that economic pressures associated with modernization result in smaller farms amalgamating into larger-scale commercial farms.\n• Masters et al. (2013): The average farm size in Asia “already has or will soon begin to rise.”\n• Promkhambut et al. (2023) argue that small rice farms in Thailand have adopted modern farming methods without a significant scaling-up of farm size.\n• Promkhambut et al.: “The persistence of [small] rice farms [in Thailand] does not represent a ‘failure’ to modernize...or a ‘truncated’ transition—it is a <u>response</u> to modernization.”"
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "12"
+    ],
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total cost for n attendees is 35 + 15.25n, which must be at most 225. So 15.25n ≤ 190, giving n ≤ 12.46... Since attendees must be a whole number, the greatest possible number is 12 (13 attendees would cost 233.25 dollars)."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: g(2) = 4(2) + 2 = 8 + 2 = 10. Choice B (2) is just the constant term, not the function's value."
+  },
+  {
+    "key": "m1-03",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms share the factor 7x: 42x^3 = 7x · 6x^2 and 7x = 7x · 1. So 42x^3 + 7x = 7x(6x^2 + 1). Expanding choice A gives 42x + 49x^2, which doesn't match."
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "134"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A width-to-length ratio of 1 to 2 means the length is twice the width. So the length is 2 × 67 = 134 centimeters."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The points rise steadily from about 2.3 at 1 thousand square feet to about 12 at 6 thousand square feet, so a line of best fit has a slope of about 1.8 and passes near 7.5 at x = 4. The stores near 3 thousand square feet are around 4–7 and those near 5 thousand are around 8–10, so 7.5 fits the trend. 5.4 is too low and 10.2 is too high for x = 4."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "2600"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The initial measurement happens at x = 0. Then y = 2,600(a)^0 = 2,600 · 1 = 2,600 bacteria, because any positive number to the power 0 equals 1."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 6x − 8 = 4, add 8 to get 6x = 12. Then 6x + 8 = 12 + 8 = 20. Choice B (2) is the value of x, not of 6x + 8."
+  },
+  {
+    "key": "m1-08",
+    "answer": "B",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "120% greater than g means f = g + 1.2g = 2.2g. 90% less than f means h = f − 0.9f = 0.1f. So h = 0.1(2.2g) = 0.22g. Choice A comes from using 1.2g instead of 2.2g for f."
+  },
+  {
+    "key": "m1-09",
+    "answer": "B",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fraction of the farm with rice is 71/1,000 = 0.071. Multiply by 100 to get 7.1%. Choice A forgets to multiply by 100."
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "32"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "sin D = b/c means side b is opposite angle D and c is the hypotenuse, so D is the bottom-left angle (opposite b). The angles in a triangle add to 180°, so D = 180 − 90 − 58 = 32 degrees.",
+    "fix": {
+      "prompt": "In the right triangle shown, a, b, and c are positive constants. For an acute angle D, sin D = b/c. What is the measure of angle D, in degrees?"
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since ℓ and k are parallel, the angle above ℓ to the left of t equals y (corresponding angles), and it forms a straight line with x. So x + y = 180, which means y = 180 − x. If x > 134, then y < 180 − 134 = 46. Choices C and D are wrong because x + y is exactly 180."
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "With slope 1/8, the line is y = x/8 + b. Plug in (32, −7): −7 = 32/8 + b = 4 + b, so b = −11. The equation is y = x/8 − 11. Choice C has the right slope but uses −7 as the y-intercept, even though −7 is the y-value at x = 32, not at x = 0.",
+    "fix": {
+      "prompt": "Line t in the xy-plane has a slope of 1/8 and passes through the point (32, −7). Which equation defines line t?",
+      "choices": {
+        "A": "y = −11x + 1/8",
+        "B": "y = x/8 − 11",
+        "C": "y = x/8 − 7",
+        "D": "y = 32x − 7"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line starts at (0, 50) and reaches about (10, 210), so the slope is (210 − 50)/10 = 16 dollars per game. The slope is the cost of each additional game, so each game costs $16. The y-intercept, $50, is the cost of the system itself (choice D), not the slope."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "19"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the form (x − h)^2 + (y − k)^2 = r^2, the right side is r^2. So r^2 = 361 and r = sqrt(361) = 19. Don't confuse 361 with the radius itself."
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the second equation, y = 4x. Substitute: x^2 + (4x)^2 = 17x^2 = 1,088, so x^2 = 64 and x = ±8. Since x < 0, x = −8 and y = 4(−8) = −32. Choice C (−8) is the value of x, not y."
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since x^2 ≥ 0, the expression x^2 + 47 is smallest when x = 0, where it equals 47. So the minimum of f is 10(47) = 470. Choice B divides by 10 instead of multiplying."
+  },
+  {
+    "key": "m1-17",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply j(x) by p: j(x) · p = (10x + 5)/(3p) · p = (10x + 5)/3, so the p cancels. Then k(x) = (10x + 5)/(3(x + 1)). At x = 9: k(9) = 95/(3 · 10) = 95/30 = 19/6.",
+    "fix": {
+      "prompt": "The function j is defined by j(x) = (10x + 5)/(3p), and the function k is defined by k(x) = (j(x) · p)/(x + 1), where p is a positive constant. What is the value of k(9)?",
+      "choices": {
+        "A": "19/6",
+        "B": "10/3",
+        "C": "95/13",
+        "D": "85/3"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the inequality as y < (7/6)x − 7. When x < 0, the right side is less than −7, so y must be negative. That means no point with x < 0 and y > 0 can be a solution. Every other choice contains solutions: (10, 0) on the x-axis, (10, 1) with x, y > 0, and (−1, −10) with x, y < 0 all satisfy 7x − 6y > 42."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiplying the first equation by 6 gives 18x + 12y = 60, which is exactly the second equation. The two equations describe the same line, so the system has infinitely many solutions."
+  },
+  {
+    "key": "m1-20",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply both sides by 8: |4x − 48| + 4 = 48, so |4x − 48| = 44. Then 4x − 48 = 44 gives x = 23, and 4x − 48 = −44 gives x = 1. The sum of the solutions is 23 + 1 = 24. Choices A and B are each only one of the solutions.",
+    "fix": {
+      "prompt": "(|4x − 48| + 4)/8 = 6\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After 2 weeks the colony has 1,600 + 2(110) = 1,820 bees. After week w (w > 2) it has 1,820 + 165(w − 2) = 1,490 + 165w bees. The number still needed is 2,975 − (1,490 + 165w) = 1,485 − 165w. Choice D ignores the starting population and the first two weeks."
+  },
+  {
+    "key": "m1-22",
+    "answer": [
+      "0"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A square equals a only once if a = 0: then 2x − 64 = 0 gives the single solution x = 32. If a > 0 there are two solutions (2x − 64 = ±sqrt(a)), and if a < 0 there are none. So a = 0."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute w = 10: d = 20(10) + 100 = 200 + 100 = 300 dollars."
+  },
+  {
+    "key": "m2-02",
+    "answer": [
+      "13"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second equation says 2y = 15, so substitute 15 for 2y in the first: x + 15 = 28. Therefore x = 13. There's no need to find y itself."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 5c from both sides: b^2 = 6d − 5c. Take the square root of both sides, remembering both signs: b = ± sqrt(6d − 5c). The condition d > (5/6)c just guarantees that 6d − 5c is positive. Choice D has the wrong sign inside the root.",
+    "fix": {
+      "prompt": "b^2 + 5c = 6d\nThe given equation relates the real numbers b, c, and d, where d > (5/6)c. Which equation correctly expresses b in terms of c and d?",
+      "choices": {
+        "A": "b = (6d − 5c)/2",
+        "B": "b = (6d + 5c)/2",
+        "C": "b = ± sqrt(6d − 5c)",
+        "D": "b = ± sqrt(6d + 5c)"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The base AC is 10 cm and the area of a triangle is (1/2) · base · height. So 210 = (1/2)(10)h = 5h, which gives h = 42 cm. Choice B forgets the 1/2, and D doubles instead."
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept occurs at x = 0. g(0) = 2(0 − 15) = −30, so y = g(0) − 5 = −30 − 5 = −35. Choice B is the y-intercept of g itself, before subtracting 5."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "People at least 18 years old make up 24% + 22% + 26% = 72% of the city. Of those, 26% are older than 65, so the probability is 26/72 ≈ 0.36. Choice A (0.26) ignores the condition that the person is at least 18.",
+    "fix": {
+      "prompt": "The table shows the distribution of people in a certain city by age group.\nIf a person in this city is selected at random, which of the following is closest to the probability of selecting a person who is greater than 65 years old, given that the person is at least 18 years old?",
+      "table": {
+        "headers": [
+          "Age group",
+          "Proportion"
+        ],
+        "rows": [
+          [
+            "Less than 18 years old",
+            "28%"
+          ],
+          [
+            "18-40 years old",
+            "24%"
+          ],
+          [
+            "41-65 years old",
+            "22%"
+          ],
+          [
+            "Greater than 65 years old",
+            "26%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": [
+      "6/5",
+      "1.2"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0 the height is b, so b = 23.04. The object hits the ground when h(t) = 0: −16t^2 + 23.04 = 0, so t^2 = 1.44 and t = 1.2 seconds (the negative root makes no sense for time). So the answer is 1.2, or 6/5."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The diagonal splits the rectangle into right triangles, so 9^2 + w^2 = (sqrt(106))^2 = 106. Then w^2 = 25 and w = 5. The perimeter is 2(9 + 5) = 28. Choice D (14) is only half the perimeter."
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle A has center (7, p) and circle B has center (−7, p), with the same radius sqrt(21). Changing the sign of the x-coordinate while keeping y the same is a reflection across the y-axis. A translation 14 units to the right (choice D) would move the center to (21, p)."
+  },
+  {
+    "key": "m2-10",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand: 9a − ax = 36 − 4x, so (4 − a)x = 36 − 9a. There is exactly one solution whenever 4 − a ≠ 0. If a = 4, both sides become 0 and the equation is true for every x (infinitely many solutions), so a cannot be 4."
+  },
+  {
+    "key": "m2-11",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With 7 values in order, the median is the 4th value, so b = 29. The sum is 7 × 36 = 252, so a + 26 + 29 + 29 + 33 + 49 + c = 252, which gives a + c = 86. The range gives c − a = 72. Adding the equations: 2c = 158, so c = 79."
+  },
+  {
+    "key": "m2-12",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set y = 0: 3(a/6)^(x + c) = b, so (a/6)^(x + c) = b/3. Since a > 6, the base a/6 is greater than 1, so (a/6)^(x + c) is always increasing and takes every positive value exactly once. Because b/3 is positive, there is exactly one solution, so the graph crosses the x-axis once.",
+    "fix": {
+      "prompt": "How many times does the graph of the given equation in the xy-plane cross the x-axis, where a, b, and c are positive constants such that a > 6 and b > c?\ny = 3(a/6)^(x + c) − b"
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "4"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope a equals the change in g divided by the change in x between the two points: a = (5 − (−7))/(1 − (−2)) = 12/3 = 4."
+  },
+  {
+    "key": "m2-14",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "By the quadratic formula, x = (8 ± sqrt(64 + 168))/4 = (8 ± sqrt(232))/4. Since sqrt(232) = 2·sqrt(58), x = 2 ± (1/2)sqrt(58). So h = 2 and k = 58, and h + k = 60.",
+    "fix": {
+      "prompt": "2x^2 − 8x − 21 = 0\nOne solution to the given equation can be written as x = h − (1/2)sqrt(k), where h and k are integer constants. What is the value of h + k?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": [
+      "3"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide both sides by 9: (x − 3) · s(x) = x^4 − 81. Since x^4 − 81 = (x − 3)(x^3 + 3x^2 + 9x + 27), s(x) = x^3 + 3x^2 + 9x + 27. Matching with x^3 + nx^2 + 3nx + 27 gives n = 3 (and 3n = 9 checks)."
+  },
+  {
+    "key": "m2-16",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Increasing by 140% of the previous amount means multiplying by 1 + 1.40 = 2.40 each half hour. In t hours there are 2t half-hour periods, so V = 85(2.40)^(2t). Choice B uses 1.40, which would mean the count only becomes 140% of itself (a 40% increase).",
+    "fix": {
+      "choices": {
+        "A": "V = 85(1.40)^(t/30)",
+        "B": "V = 85(1.40)^(2t)",
+        "C": "V = 85(2.40)^(t/30)",
+        "D": "V = 85(2.40)^(2t)"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "v(0) = c/((5)(−19)) = −c/95 = 66/95, so c = −66. Since v(11) = 0, 121 + 11b − 66 = 0, so b = −5. The numerator is x^2 − 5x − 66 = (x − 11)(x + 6), so the zeros are 11 and −6; neither makes the denominator 0. So q could be −6. Choice B (−5) makes the denominator zero, so v(−5) is undefined.",
+    "fix": {
+      "prompt": "The function v is defined by the equation v(x) = (x^2 + bx + c)/((x + 5)(x − 19)), where b and c are constants. In the xy-plane, the graph of y = v(x) passes through the points (0, 66/95) and (11, 0). If v(q) = 0, which of the following could be the value of q?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "48"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line s is y = x/4 − 6, so its slope is 1/4 and a perpendicular line has slope −4. The slope through (k, 0) and (60, −k) is −k/(60 − k). Setting −k/(60 − k) = −4 gives k = 240 − 4k, so 5k = 240 and k = 48."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The total resistance is ax + by, and the given equation is (1/7)x + (1/5)y = 41/35. So a = 1/7 and b = 1/5, and the positive difference is 1/5 − 1/7 = 7/35 − 5/35 = 2/35. Choice C is the total resistance, not the difference.",
+    "fix": {
+      "prompt": "An engineer connects resistors in series, where the resistors in the series have a total resistance of 41/35 ohms. In this series, there are x resistors of type A, which each have a resistance of a ohms, and y resistors of type B, which each have a resistance of b ohms. The given equation represents this situation. According to this equation, what is the positive difference between the value of a and the value of b?\nx/7 + y/5 = 41/35",
+      "choices": {
+        "C": "41/35",
+        "D": "2/35"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For I, (0.63)^(−bx) = (1/0.63)^(bx) with b > 1, so it grows as x increases; its smallest value is at x = 0, where f(0) = a. So the coefficient a is the minimum. For II, g also grows, but its minimum is g(0) = a(1.37)^2 + b, which doesn't appear as a constant or coefficient. So only I works.",
+    "fix": {
+      "prompt": "The functions f and g are defined by the given equations, where x ≥ 0, a and b are integer constants, a < b, and a > 1. If y = f(x) and y = g(x) are graphed in the xy-plane, which of the following equations displays, as a constant or coefficient, the minimum value of the function it defines, where x ≥ 0?\nI. f(x) = a(0.63)^(−bx)\nII. g(x) = a(1.37)^(x+2) + b"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The angles sum to 180°, so x + y = 149. In choice D, 31 − 3x − 3y = 31 − 3(x + y) = 31 − 447 = −416 no matter what x and y are, so it adds no new information. Each other expression weights x and y differently, giving a second independent equation that determines both values.",
+    "fix": {
+      "prompt": "In triangle XYZ, the measure of angle X is x°, the measure of angle Y is y°, and the measure of angle Z is 31°. If x > y > 31, which of the following additional pieces of information is NOT sufficient to determine the values of x and y?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If Chloe earned E in 2012, she earned 1.11E in 2013 and 1.06(1.11E) = 1.1766E in 2014. The 2012 amount is y times the 2014 amount, so y = E/(1.1766E) = 1/1.1766 ≈ 0.8499. Choice D is the 2014-to-2012 ratio, the reciprocal of what's asked."
+  }
+]

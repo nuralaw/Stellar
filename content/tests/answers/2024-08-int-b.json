@@ -1,0 +1,1067 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the book's reception has been very good and it won an award, so reviewers, booksellers, and librarians must have praised it. \"Recommended\" fits that positive picture. \"Attacked,\" \"overlooked,\" and \"misunderstood\" all suggest a poor reception, which contradicts the first sentence."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Seacole says nature seemed to throw every obstacle it could imagine in travelers' way, so \"conceivable\" means \"possible\" (any obstacle one could think of). \"Visible\" might seem tempting because obstacles can be seen, but the word is about the range of obstacles, not whether they can be seen.",
+    "fix": {
+      "passage": "The following text is adapted from Mary Seacole's 1857 autobiography Wonderful Adventures of Mrs. Seacole in Many Lands.\n\nThat journey across the Isthmus [of Panama], insignificant in distance as it was, was by no means an easy one. It seemed as if nature had determined to throw every conceivable obstacle in the way of those who should seek to join the two great oceans of the world."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The kelp slows rough currents, producing \"calmer waters\" where animals can shelter, so the environment is \"tranquil\" (peaceful). \"Dangerous\" is the opposite of what the text describes, and \"surprising\" and \"imaginative\" have nothing to do with calm water."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bursts from neutron star mergers usually last under 2 seconds, but this one lasted 200 seconds, so it was unusual for its type: an \"oddity.\" \"An incident\" is too neutral to capture how unexpected it was, and \"a coincidence\" or \"a reprieve\" don't describe something that breaks a pattern."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first states a worry (pteropod shells should dissolve as oceans acidify), then reports findings that the periostracum blocks dissolution and that pteropods can even repair damage. Together these suggest the worry may be overstated. Choice C reverses the relationship: the study is about the periostracum protecting the shell, not calcium carbonate protecting the periostracum."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text argues that copying one walkable feature of Tokyo may not increase walking elsewhere, because decisions to walk depend on many interacting conditions that researchers don't fully understand. Its purpose is to show why finding a dependable way to boost walking is hard. Choice A is tempting because density is mentioned, but the text says density alone may be insufficient rather than describing its effect."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem opens with a simile: \"Like this alabaster box ... is my heart.\" The underlined words name the two things being compared, a physical object (the box) and an abstract inner self (the heart), and the comparison continues as the heart is \"carven\" and \"wrought\" like the box. Nothing shows a change (D) or a contrast between attitudes (B).",
+    "fix": {
+      "passage": "The following text is from Sarojini Naidu's 1896 poem \"Alabaster.\"\n\nLike this <u>alabaster</u> box whose art\nIs frail as a cassia-flower, is <u>my heart</u>,\nCarven with delicate dreams and wrought\nWith many a subtle and exquisite thought."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 says there is no contemporary evidence that the first audience panicked, yet the story survives because people strongly believe film was transformative. So Text 2's author would see Text 1's account as driven by a sense of film's significance rather than by facts. Choice A misreads the \"sophisticated\" after as historians looking down on today's audiences, and D wrongly says the myth reflects early audiences' real alarm.",
+    "fix": {
+      "passage": "Text 1\nWhen the 50-second-long film Arrival of the Train—which depicts what its title says, a train pulling into a station—was first shown publicly in 1896, spectators, naïve to the new medium of film and seeing a train appearing to come directly at them, leaped from their seats and fled the room. This moment marks a major cultural shift: a new way of representing and seeing the world had arrived with that train, and nothing would ever be the same.\n\nText 2\nThe fact that there is no contemporary evidence that the first audience of Arrival of the Train was alarmed has not stopped the story from becoming canonical, even among film historians. But that phenomenon itself is highly revealing. Our belief that the coming of film was transformative is so strong that we invented and keep retelling a founding myth that divides cultural history into a (naïve) \"before\" and (sophisticated) \"after.\""
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Prospero is surprised Miranda remembers the women who tended her, then tells her that if she remembers anything from before she came to the island, she may also remember how she got there. So her recall of one earlier experience suggests she can recall her arrival too. Choice B is tempting because Miranda calls the memory dreamlike, but Prospero doesn't say her doubts are making her reluctant; he encourages her to keep remembering.",
+    "fix": {
+      "passage": "The following text is from William Shakespeare's play The Tempest, first performed in 1611. Miranda has lived on an island with her father, Prospero, since she was three years old. Prospero has stated that Miranda likely does not remember anything other than her life on the island.\n\nMIRANDA: 'Tis far off,\nAnd rather like a dream than an assurance\nThat my remembrance warrants. Had I not\nFour or five women once that tended me?\n\nPROSPERO: Thou hadst, and more, Miranda. But how is it\nThat this lives in thy mind? What seest thou else\nIn the dark backward and abysm of time?\nIf thou remember'st aught ere thou camest here,\nHow thou camest here thou mayst."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The statement asks for the average contribution per employee in wholesale trade, which is in the last column of the wholesale trade row: $183,790. Choice A is the per-employee figure for tribal economic activity, and C and D are numbers of employees, not dollar contributions.",
+    "fix": {
+      "passage": "The Muscogee Nation and the nearly forty other tribes in Oklahoma operate numerous businesses and collectively generate billions of dollars in revenue. Mining, including oil and natural gas production, is a key industry in the state as well. While researching other key industries in Oklahoma for an economics class, a student finds that the average amount contributed to the state's economy in 2017 by each individual employed in wholesale trade was _____.",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate total contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Accommodation/food services",
+            "$5,242,100,000",
+            "150,373",
+            "$34,861"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ],
+          [
+            "Construction",
+            "$6,797,300,000",
+            "77,247",
+            "$87,994"
+          ],
+          [
+            "Wholesale trade",
+            "$10,723,400,000",
+            "58,346",
+            "$183,790"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim has two parts: the speaker states an intention to make art, and that art should appeal across generations. \"Let me make the songs for the people, / Songs for the old and young\" does both. Choice A explains why the world needs music but doesn't express the speaker's own intention or mention different generations."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim says smaller areas had less congestion than very large cities but that congestion still worsened in them. The graph shows Albany-Schenectady-Troy always below New York City, yet both bars rise from 1990 to 2000, which matches both parts. Choice D gets the comparison backward, and A and B each give one data point without showing a trend."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers say the first phase couldn't show how much of the yield loss was caused specifically by excluding honeybees. If other pollinators such as squash bees visit cucumbers and the shields blocked them too, the loss can't be credited to honeybees alone, which supports the claim. Choice A is about onions, not the cucumber experiment."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the soldiers show a renewed sense of agency and authority as they start a new stage. In C they throw out their chests and gallop \"as if ... they laid claims of possession to the earth,\" which shows confidence and power. Choice B describes the long journey and scenery but says nothing about the men's sense of authority."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Lawmakers\" is a plural subject that owns nothing, so it takes no apostrophe. \"State's\" needs an apostrophe because the official fossil belongs to the state. Choices A and D drop the possessive on \"state's,\" and C and D wrongly make \"lawmakers\" possessive."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both nouns are simple plurals: several \"works\" by several \"writers.\" Neither one owns anything in the sentence, so neither needs an apostrophe. The other choices add apostrophes that wrongly turn plurals into possessives."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Is called the chromophore\" is one verb phrase with its complement, so no punctuation belongs between \"called\" and \"the chromophore.\" A semicolon or period would cut the sentence before its complement, leaving a fragment, and a dash would interrupt it for no reason."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The dash after \"drastically\" opens an interruption (\"cores now number in the dozens, hundreds, or even thousands\"), so a second dash is needed to close it before the sentence continues with \"that the once-revolutionary dual-core technology ... can be found.\" The \"so ... that\" structure must stay in one sentence, so D's period is wrong. A comma (A) doesn't match the opening dash, and B puts the dash after \"that\" instead of before it.",
+    "fix": {
+      "choices": {
+        "A": "thousands, that",
+        "B": "thousands that—",
+        "C": "thousands—that",
+        "D": "thousands. That"
+      }
+    }
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence before the blank is complete, and what follows is a list naming the \"two other Black Americans,\" so a colon correctly introduces it. A period or semicolon would leave the names as a fragment, and D runs the list on with no punctuation (and wrongly lowercases \"Congress\")."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers back to \"a given industry,\" which is singular, so it should be \"it\" with the singular verb \"consists.\" \"They\" and \"these\" are plural, and \"this\" is unclear because it has no noun to point to."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence names a location, the wall of a university building, and the next sentence describes how the sculpture looks at that spot. \"There\" refers back to that location. \"For instance\" is tempting, but the sentence continues describing the same sculpture rather than introducing a new example, and \"However\" signals a contrast that doesn't exist."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists three steps marked \"First\" and \"Third,\" so the middle step needs \"Second.\" \"Therefore\" would make the hypothesis a consequence of the research instead of the next step in the sequence."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence describes what a viewer might assume (a real hole full of sculptures), and the second says the depth is only an illusion. \"On the contrary\" sets the reality against the false impression. \"As a result\" wrongly makes the illusion a consequence of the viewer's assumption."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize Atitalaquia's size, the sentence should give its area, and D states that it covers roughly 63 km^2. Choice B mentions that Hidalgo has 84 municipalities, which says nothing about how large Atitalaquia is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Atitalaquia is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is street lighting.\n• Atitalaquia covers an area of roughly 63 km^2.\n• Hidalgo is divided into 84 municipalities.",
+      "choices": {
+        "D": "The municipality of Atitalaquia in Hidalgo, Mexico, covers an area of roughly 63 km^2."
+      }
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only A actually provides the quotation from chapter 17, and it places it in that chapter's discussion of skeptics. Choices B, C, and D summarize the book or its chapters but never quote it.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Future of Nostalgia is a scholarly book by literary theorist Svetlana Boym.\n• The book provides a multifaceted exploration of the concept of nostalgia.\n• Chapter 9 describes nostalgia in the city of St. Petersburg in Russia.\n• Chapter 17 discusses various skeptics' takes on the concept of nostalgia.\n• In chapter 17, Boym writes, “The poethics of nostalgia combines estrangement and human solidarity, affect and reflection.\""
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A points out something the two works share: both use acrylic as a medium. Choice C contrasts their materials, and D says one is larger, so both stress differences. B just lists completion dates without highlighting a similarity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Jean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings.\n• His work Untitled (Prophet I) was completed in 1982 and sold at auction in 2011.\n• Untitled (Prophet I) is composed of acrylic, oil stick, and paper collage on canvas and measures 5,655 square inches in area.\n• His work Catharsis was completed in 1983 and sold at auction in 2008.\n• Catharsis is composed of acrylic and oil stick on canvas and measures 6,750 square inches in area."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "B names both words, notes they represent the same sound, and contrasts them by saying they are written and pronounced very differently. Choice A names both words but only states what they have in common, and C makes a general point without the two examples.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Onomatopoeias are words that imitate the sounds they represent.\n• Words that represent the same sound are often written and pronounced very differently from language to language.\n• This variation is due in part to differences in how the languages are structured.\n• “Khrok fi\" is a Thai onomatopoeia that represents the sound of snoring.\n• “Bhnosh\" is a Bengali onomatopoeia that represents the sound of snoring."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Devices with dead batteries that get thrown away become trash that can harm the environment, so \"harmful waste\" is the logical phrase. \"Advice,\" \"rewards,\" and \"positions\" don't describe discarded devices."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fresh snow forms a gleaming carpet that looks too delicate to be stepped on by rough feet, meaning it looks easily damaged, or \"fragile.\" \"Generous\" and \"accurate\" don't describe a surface, and \"empty\" ignores the idea that it could be spoiled.",
+    "fix": {
+      "passage": "The following text is adapted from Kenneth Grahame's 1908 novel The Wind in the Willows. The Mole has been found by a friend after getting lost in the woods. It is beginning to snow.\n\nThe Mole saw the wood that had been so dreadful to him in quite a changed aspect. Holes, hollows, pools, pitfalls, and other menaces to the wayfarer were vanishing fast, and a gleaming carpet was springing up everywhere, that looked too delicate to be trodden upon by rough feet."
+    }
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The women's places in history are secure no matter what happens later, so nobody can weaken their standing as the first to achieve these feats: \"undermine.\" \"Promote\" and \"extend\" would describe improving their standing, which doesn't fit \"no matter what others may do.\""
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example says critics praised the films as \"galvanizing\" and \"exuberant,\" so the films are now viewed positively, or \"favorably.\" \"Skeptically\" and \"neutrally\" contradict that praise."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence says only \"material objects,\" such as fossil remains, can test ideas about the Pliocene, so paleontologists must rely on \"physical\" evidence. \"Inconclusive\" contradicts the idea that the evidence can show whether an idea is defensible.",
+    "fix": {
+      "passage": "To evaluate their ideas about environmental conditions in the Pliocene epoch, paleontologists must turn to _____ evidence. Only material objects—such as the fossil remains of the individual known as AL 200-1, discovered in Ethiopia in 1975—can show whether a particular idea about the Pliocene is defensible."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined clause, \"who worked as an actor, director, and playwright,\" simply tells us more about Douglas Turner Ward, the NEC cofounder. It doesn't show why NEC matters (A) or compare Ward with anyone else (B).",
+    "fix": {
+      "passage": "Joseph A. Walker's award-winning play The River Niger was produced in 1972 by the groundbreaking Negro Ensemble Company (NEC). NEC cofounder Douglas Turner Ward, <u>who worked as an actor, director, and playwright</u>, had met actor and producer Robert Hooks while they were performing in a 1960 touring production of Lorraine Hansberry's play A Raisin in the Sun. Together, they envisioned a theater company that would nurture and showcase the work of Black theater professionals. Since NEC's founding in 1967, its workshops and performances have given Black playwrights, including Walker, a forum for their compelling stories."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Gerbils and many other nocturnal mammals become less active in bright moonlight, but bushbabies show \"the opposite pattern.\" Their heavy reliance on sight for foraging explains why: bright moonlight helps them find food enough to outweigh the risk. Choice C is wrong because this behavior fits the benefits-and-costs explanation rather than contradicting it, and A adds an idea about speed that the text never mentions."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 argues that a writer shouldn't be faulted for not doing what he never intended, and that Asimov's thin characterization is central to his theme that individuals don't matter on a historical timescale. So Text 2's author would say the flat characters aren't necessarily a flaw. Choice B is wrong because Text 2 agrees that Foundation also tells us little about its characters.",
+    "fix": {
+      "passage": "Text 1\nIsaac Asimov, author of The Caves of Steel and The Stars, Like Dust, is highly regarded despite his mediocre writing style. His prose is workmanlike; <u>his characters are flat</u> and discuss ideas rather than emotions. That his work is enjoyable despite this is a testament to his prodigious imagination—even if people read his books only for the ideas, they will have plenty to consider.\n\nText 2\nAsimov is critiqued for his style, but it is wrong to fault a writer for failing to do what he never intended to do. For example, although most of his novel Foundation consists of people discussing science and politics and we find out little about his characters' lives, Asimov wanted to convey the vast sweep of human history over centuries, and one of his points is that at such a timescale, individuals don't matter. Thus his lack of characterization is central to his thematic aims."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says people long thought only primates used tools, then gives sea otters and woodpecker finches as examples that \"busted the myth.\" So the main idea is that animals other than primates use tools. Choice B is too narrow (finches are also discussed) and wrongly compares otters' skill with primates'."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table's row for Zelda II: The Adventure of Link, the release year column shows 1987. The other years belong to Frogger (1982), Excitebike (1984), and The Last Ninja 2 (1988).",
+    "fix": {
+      "passage": "A student is writing a paper on the global rise of the home video game industry during the 1980s. The student wants to know the release year of the video game Zelda II: The Adventure of Link, developed by Nintendo EAD. The student finds that this game was released in _____",
+      "table": {
+        "caption": "Home Video Games and Computer Games of the 1980s",
+        "headers": [
+          "Title",
+          "Approximate number of units sold worldwide",
+          "Release year",
+          "Genre",
+          "Developer"
+        ],
+        "rows": [
+          [
+            "Excitebike",
+            "4,160,000",
+            "1984",
+            "racing",
+            "Nintendo R&D1"
+          ],
+          [
+            "The Last Ninja 2",
+            "5,500,000",
+            "1988",
+            "action-adventure",
+            "System 3"
+          ],
+          [
+            "Zelda II: The Adventure of Link",
+            "4,380,000",
+            "1987",
+            "action-adventure",
+            "Nintendo EAD"
+          ],
+          [
+            "Frogger",
+            "4,100,000",
+            "1982",
+            "action",
+            "Konami"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The final episode is where a serial's story is resolved. If more people watched episode 12 than any earlier episode, audiences were most drawn to the closure, which supports the claim. Choice C reflects modern critics, not audiences of the time, and A is about cost rather than audience preference."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator says the sailor \"haunted my dreams\" and appeared to him in a thousand forms with \"diabolical expressions\" on stormy nights, which clearly shows fear. The other quotations describe the sailor's arrival, habits, and clothing without revealing how the narrator felt about him."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The students claim cataract differences in natural mice are caused solely by differences in Aasdh expression. If some wild-type mice had cataract rates like the knockout mice despite widely varying Aasdh levels, cataract frequency can't depend only on Aasdh, which weakens the claim. Choice C shows Aasdh expression varies in nature, which fits the conclusion rather than weakening it."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text notes that many narwhals don't have a tusk. Laidre's point is that if the tusk were vital for sensing dangerous freezing water, you would expect most narwhals to have one, so more narwhals would have a tusk. The other choices don't connect to the fact that many narwhals lack tusks."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In China, Mandarin dominates the north while Cantonese and Fuzhounese are common in the south, and in New York northern immigrants settle in Queens while southern immigrants settle in Manhattan. So a link between languages and regions in the home country reappears in the new one. Choice C talks about changes in vocabulary and pronunciation, which the text never discusses.",
+    "fix": {
+      "passage": "Over 600 languages are spoken in New York City in addition to English—one can find Bartangi spoken in the neighborhood of Yorkville, or Ghale in Jackson Heights. Most speakers of Chinese languages reside in the neighborhood of Flushing (part of New York City's borough of Queens) and in Chinatown, in the borough of Manhattan. New immigrants from north China, where Mandarin is the primary first language, tend to settle in Queens, while new immigrants from south China, where many people speak Cantonese or Fuzhounese as a first language, tend to settle in Manhattan. It can therefore be inferred that _____"
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If readers think Fitzgerald merely fictionalized real events, then in a field that prizes inventiveness they may give him less credit for creativity, so the novel seems less of an imaginative achievement than it is. Choice B is wrong because the text never says Fitzgerald claimed the novel was based on real events; the label comes from others."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Two independent clauses (\"Behind the Hedge is less well known than his paintings\" and \"it is still considered ... an important work\") are joined, so they need a comma plus a coordinating conjunction: \", but.\" A comma alone (B) is a comma splice, and C and D leave out the needed comma."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun \"which\" refers to the singular \"Kansas City International Airport,\" and the airport's location is a present fact, so the singular present verb \"is\" is correct. \"Are,\" \"were,\" and \"have been\" are plural forms that don't agree with the singular subject."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"This is why many ranching terms come from Spanish\" is a complete statement, and \"The English word 'lasso' ... comes from cincho\" is another complete sentence, so a period correctly separates them. Choice C runs the sentences together, B opens a parenthesis that is never closed, and D wrongly turns a statement into a question."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank refers back to the many even-toed ungulates, so it needs a plural noun phrase, \"these animals,\" as the object of \"prevent.\" It isn't possessive, since nothing follows that the animals own. \"The animal\" and \"this animal's\" are singular, and \"these animals'\" adds a possessive apostrophe that doesn't belong."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Food writer J. Kenji López-Alt\"; the clause \"who explores the science behind cooking\" just describes him. A singular subject needs the singular verb \"explains.\" \"Are explaining,\" \"explain,\" and \"have explained\" are all plural forms.",
+    "fix": {
+      "passage": "Water boils at around 212°F at sea level, but in Questa, New Mexico (elevation: 7,461 feet above sea level), it boils at around 198°F. Food writer J. Kenji López-Alt, who explores the science behind cooking, _____ that lower boiling points at higher elevations \"can wreak all sorts of havoc on recipes.\""
+    }
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general statement (some inherited traits can change), and the second gives a specific case (eye color changing with age). \"For example\" introduces that illustration. \"Conversely\" would signal a contrast, but the second sentence supports the first."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives one reason Honeoye is a fitting state soil (it's abundant) and then another (it's important to New York agriculture). \"Moreover\" adds a further supporting point. \"Alternatively\" and \"Conversely\" signal a different option or contrast, and \"At that time\" makes no sense with no time mentioned."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the geyser's cycle seems hostile to life, and the second says it is actually like a cradle for biodiversity. \"Still\" signals this contrast: despite appearances, life thrives there. \"Thus\" and \"In other words\" wrongly treat the second sentence as following from or restating the first."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "D stresses size by calling Newporte \"a massive crater\" and giving its 3.2 km diameter. Choice C includes the measurement but puts the focus on researchers investigating the crater's formation, so size is only a passing detail. A and B give no size at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Impact craters occur when a large object collides with Earth at high speeds.\n• Examples of such objects include comets and meteorites.\n• Newporte is an impact crater in the United States.\n• Researchers have determined that it was formed less than 500 million years ago.\n• The crater has a diameter of approximately 3.2 km."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say where the story is set, and A states that it takes place in Harlem. The other choices give the author, the publication, or the point of view, none of which tells where the story takes place.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• \"Raymond's Run\" is a short story.\n• It was written by African American author Toni Cade Bambara.\n• It was first published in her book Gorilla, My Love in 1972.\n• It is told from a first person perspective.\n• It takes place in Harlem."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only D gives the green iguana's average length, 4.8 feet. The other choices mention its diet or where it lives, which don't address length.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The green iguana is a species of reptile.\n• It can be found in Central America and Brazil.\n• The green iguana primarily eats leaves and fruit.\n• It has an average length of 4.8 feet."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In slope-intercept form y = mx + b, the slope is m = 2, and the point (0, 12) is the y-intercept, so b = 12. That gives y = 2x + 12. Choice C has the right slope but a y-intercept of −12, and A and B swap the slope and intercept."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles x° and 142° sit next to each other on line q where line t crosses it, so together they form a straight angle. Angles on a straight line add to 180°, so x + 142 = 180 (and x = 38). Choice C, 142, is just the given angle, not the sum."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "38"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Substituting gives y = 0^2 + 38 = 38, so the y-intercept is (0, 38)."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The figure starts at 36 cm^2 and loses 4 cm^2 each time a small square is cut out, so after x cuts the area is 36 − 4x. The other choices make the area grow as more squares are removed, which can't be right."
+  },
+  {
+    "key": "m1-05",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The boundary is the horizontal line y = 33, and the shading covers everything above it (including the line), so the solutions satisfy y ≥ 33. Choices A and B use x, which would give a vertical boundary line, and C would shade below the line."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtracting 5x from both sides leaves 3 = 7, which is never true. So no value of x works and the equation has zero solutions. Infinitely many solutions (D) would require the constants to match as well."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "21"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 0: h(0) = 0 + b = b. Since h(0) = 21, b = 21."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "112"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 2x − 148 = 76. Adding 148 gives 2x = 224, and dividing by 2 gives x = 112. A common slip is to plug 76 in for x, which answers a different question."
+  },
+  {
+    "key": "m1-09",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sample was chosen at random from all high school students in the district, so the results can be generalized to that whole group. They can't be extended to the whole state (D), because students outside the district had no chance of being selected."
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At the start of the experiment x = 0, so y = 390 − 142(0) = 390. That means 390 is the rover's distance, in meters, from its target at the start. The 142 is the speed in meters per hour (B), not the 390."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point (a, b) on the graph of y = f(x) means f(a) = b. Since (8, 9) is on the graph, f(8) = 9. Choice A mixes up the input with the output."
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The margin of error gives a range of plausible values around the estimate: 8.5% − 2.73% = 5.77% and 8.5% + 2.73% = 11.23%. So it is plausible that between 5.77% and 11.23% of the items are defective. Choice C states the estimate as an exact fact, which a sample can't guarantee."
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph crosses the y-axis at (0, 2). Substituting into 4x + By = 12 gives 4(0) + B(2) = 12, so B = 6. Check with the x-intercept (3, 0): 4(3) = 12. Choice B, 2, is the y-intercept rather than B.",
+    "fix": {
+      "choices": {
+        "A": "2/3"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A system has infinitely many solutions when one equation is a multiple of the other. Multiplying x + 2y = 12 by 4 gives 4x + 8y = 48, exactly the second equation in C, so both are the same line. In the other choices the equations aren't multiples, so the lines cross at just one point.",
+    "fix": {
+      "choices": {
+        "A": "4x + 2y = 12\n4x + 8y = 48",
+        "B": "x + 2y = 12\nx + 8y = 48",
+        "C": "x + 2y = 12\n4x + 8y = 48",
+        "D": "4x + 2y = 12\nx + 8y = 48"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the first equation, x^2 + y = 0, so y = −x^2. Substituting into the second gives 8x + 16 + x^2 = 0, or x^2 + 8x + 16 = 0, which factors as (x + 4)^2 = 0. So x = −4. Choice A, −16, is the value of y, not x."
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Since π^2 − x^2 = (π − x)(π + x), rewrite the second fraction with that denominator: 20π/(x + π) = 20π(π − x)/(π^2 − x^2). Subtracting gives (20π^2 − 20π^2 + 20πx)/(π^2 − x^2) = 20πx/(π^2 − x^2). Choice C comes from subtracting the numerators without first rewriting over the common denominator.",
+    "fix": {
+      "prompt": "Which expression is equivalent to 20π^2/(π^2 − x^2) − 20π/(x + π), where x > π?",
+      "choices": {
+        "A": "20π/(π − x)",
+        "B": "20πx/(π^2 − x^2)",
+        "C": "(20π^2 − 20π)/(π^2 − x^2)",
+        "D": "(20π − 20)/((π − x^2)(x + 1))"
+      }
+    },
+    "note": "PDF prints the first numerator as 20πx^2, but then no choice is equivalent (checked numerically at x = 4). With 20π^2 (the likely original) the keyed answer B is exactly right, so the prompt was fixed to 20π^2."
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In vertex form y = a(x − h)^2 + k, the vertex is (h, k) = (9.1, 10,700). Because a = −4.9 is negative, the parabola opens down, so the vertex is a maximum: the plane reached about 10,700 meters 9.1 seconds into the maneuver. Choice A mistakes the coefficient 4.9 for the time."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "78/79",
+      ".9873",
+      "0.987"
+    ],
+    "type": "spr",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at S, so RT = 79 is the hypotenuse. By the Pythagorean theorem, TS = sqrt(79^2 − 157) = sqrt(6241 − 157) = sqrt(6084) = 78. The side opposite angle R is TS, so sin R = 78/79 ≈ 0.987.",
+    "fix": {
+      "prompt": "In the triangle shown, RS = sqrt(157). What is the value of sin R?"
+    },
+    "note": "Source lists choices, but they are just forms of one grid-in answer (78/79, 0.987, ...), so it is a student-produced response."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Cylinder volume is πr^2h, so multiplying the radius by a and the height by b multiplies the volume by a^2·b. For C, 8^2 · 9 = 64 · 9 = 576. Choice A gives 9^2 · 8 = 648, and D forgets that the radius factor is squared (64 · 9 = 576 only if the radius isn't squared)."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Circle P has center (3, −7) and radius sqrt(25) = 5. Moving 1 right and 2 down gives Q's center (4, −9), and doubling the diameter doubles the radius to 10, so r^2 = 100. That gives (x − 4)^2 + (y + 9)^2 = 100. Choice B uses 50 by doubling r^2 instead of r."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "2775"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Add the two equations: the 8(y + 3) terms cancel, leaving 2(x − 2) = 123 + 432 = 555. So x − 2 = 277.5, and 10(x − 2) = 2775. Treating x − 2 as a single unknown avoids solving for x and y separately."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The tree grows 51/m centimeters per month, and k years is 12k months. Multiplying gives (51/m)(12k) = 612k/m centimeters. Choice C has m and k swapped, which would mean the tree grows more when it takes longer to grow 51 cm.",
+    "fix": {
+      "choices": {
+        "A": "17m/(4k)",
+        "B": "17k/(4m)",
+        "C": "612m/k",
+        "D": "612k/m"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at (0, −1) and passes through (8, −6). The slope is (−6 − (−1))/(8 − 0) = −5/8, so f(x) = −(5/8)x − 1. The line falls from left to right, so A and B (positive slopes) are out, and D's slope of −8/5 would be far too steep.",
+    "fix": {
+      "choices": {
+        "A": "f(x) = (5/8)x − 1",
+        "B": "f(x) = (8/5)x − 1",
+        "C": "f(x) = −(5/8)x − 1",
+        "D": "f(x) = −(8/5)x − 1"
+      }
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 8: x + 3 = 64/8 = 8. There's no need to solve for x; choice A, 5, is the value of x, not x + 3."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A square root is the same as the 1/2 power, so sqrt(x^153) = (x^153)^(1/2) = x^(153/2). Choice A flips the fraction in the exponent, and D squares instead of taking the root.",
+    "fix": {
+      "prompt": "Which expression is equivalent to sqrt(x^153), where x > 0?",
+      "choices": {
+        "A": "x^(2/153)",
+        "B": "x^(153/2)",
+        "C": "x^151",
+        "D": "x^306"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = 0 where the graph touches the x-axis. The graph stays below the x-axis until it rises and crosses it once, a little before x = 10, so there is exactly one such value. The flat part near y = −4 never reaches the axis."
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Exponential growth has the form y = (initial amount)(growth factor)^t. Starting at 44,000 and doubling each hour gives y = 44,000(2)^t. Choice C would halve the count each hour, and B raises 44,000 to the power t instead of the factor 2.",
+    "fix": {
+      "choices": {
+        "A": "y = (1/2)(44,000)^t",
+        "C": "y = 44,000(1/2)^t"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the minus sign: 6t^4 − 3t^2 + 3t − 6 − 2t^4 + 4t^3 − 6t^2 + 6. Combining like terms gives 4t^4 + 4t^3 − 9t^2 + 3t, since −6 + 6 = 0. Choice A comes from forgetting to change the sign of the second −6."
+  },
+  {
+    "key": "m2-07",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply both sides of b − 22 = x/y by y: x = y(b − 22) = by − 22y. Choice B forgets to multiply the 22 by y, and D divides by y instead of multiplying.",
+    "fix": {
+      "prompt": "b − 22 = x/y\nThe given equation relates the positive numbers b, x, and y. Which equation correctly expresses x in terms of b and y?",
+      "choices": {
+        "A": "x = (by − 22)/y",
+        "D": "x = (b − 22)/y"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Chihiro's set adds a plant of 11.7 kg, which is heavier than every plant in Ari's set (the heaviest is 6.2 kg). Adding a value above the current mean always raises the mean, so Ari's mean must be less. The median might stay the same, so C doesn't have to be true, and adding the extreme value makes Chihiro's range larger, not smaller (B)."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "249"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The model rises 217 − 59 = 158 thousand over 20 years, or 158/20 = 7.9 thousand per year. From 2015 to 2019 is 4 years, so x = 217 + 4(7.9) = 248.6, which rounds to 249."
+  },
+  {
+    "key": "m2-10",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In similar triangles, corresponding angles are equal, so angle D = angle A = 26°, and statement I is true. Corresponding sides are proportional but not necessarily equal; DE equals AB only if the scale factor is 1, so statement II need not be true.",
+    "fix": {
+      "prompt": "Triangles ABC and DEF are similar, where A corresponds to D, and B corresponds to E. The measure of angle A is 26°, and AB = 4. Which of the following statements must be true?\nI. The measure of angle D is 26°\nII. DE = 4"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "91/20",
+      "4.55"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The retail price is 260% of $7.00: 2.6 × 7 = $18.20. Taking 75% off leaves 25% of that: 0.25 × 18.20 = $4.55. A common mistake is to find 75% of the retail price ($13.65) instead of what remains after the discount."
+  },
+  {
+    "key": "m2-12",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since the exponent is x/12, every 12 months (one year) the value is multiplied by 0.28. Keeping 28% of the value means it loses 100% − 28% = 72% each year, so p = 72. Choice C, 28, is the percent that remains, not the percent lost.",
+    "fix": {
+      "prompt": "f(x) = 7,020(0.28)^(x/12)\nThe function f gives the value, in dollars, of a certain piece of equipment after x months of use. If the value of the equipment decreases each year by p% of its value the preceding year, what is the value of p?"
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "208"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite as x^2 + 5x − 47 = 0 and use the quadratic formula: x = (−5 ± sqrt(25 + 188))/2 = (−5 ± sqrt(213))/2. Matching the form (m ± sqrt(q))/2 gives m = −5 and q = 213, so m + q = 208.",
+    "fix": {
+      "prompt": "x^2 + 5x = 47\nThe solutions to the given equation are (m + sqrt(q))/2 and (m − sqrt(q))/2, where m and q are integers. What is the value of m + q?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A quadratic has exactly one real solution when its discriminant is 0: 49^2 − 4(7)c = 0. That gives 2401 = 28c, so c = 2401/28 = 343/4. With c = 0 (A), the equation 7x^2 + 49x = 0 has two solutions, x = 0 and x = −7.",
+    "fix": {
+      "choices": {
+        "B": "7/2",
+        "D": "343/4"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parabola opens upward, so its minimum is at the vertex, x = −b/(2a) = −20/4 = −5. Then p(−5) = 2(25) − 100 + 15 = −35. Choice C, −5, is the x-coordinate of the vertex, not the minimum value.",
+    "fix": {
+      "prompt": "p(x) = 2x^2 + 20x + 15\nWhat is the minimum value of the given function?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second equation is 6 times the first, so both describe the same line, 5x + 7y = 8. Setting x = r gives 7y = 8 − 5r, so y = −5r/7 + 8/7, and the point (r, −5r/7 + 8/7) is on both graphs for every r. Choice B swaps the coordinates, which doesn't satisfy the equation in general.",
+    "fix": {
+      "choices": {
+        "A": "(r, −5r/7 + 8/7)",
+        "B": "(−5r/7 + 8/7, r)",
+        "C": "(−5r/7 + 8, 5r/7 + 48)",
+        "D": "(r/6 + 8, −r/6 + 48)"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "4.418",
+      "2209/500"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The box is a cube without a lid, so its outside has 5 square faces, each 94^2 = 8,836 cm^2. The total is 5 × 8,836 = 44,180 cm^2. Since 1 m^2 = 100 × 100 = 10,000 cm^2, the area is 44,180/10,000 = 4.418 m^2. Dividing by only 100 is the usual mistake."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "1.485"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use the cofunction identities cos(90 − a)° = sin a° and sin(90 − b)° = cos b°. With y = 0 the expression becomes 2 sin a° cos b° + sin a° cos b° = 3 sin a° cos b°. Substituting gives 3(0.50)(0.99) = 1.485.",
+    "fix": {
+      "prompt": "2cos(90 − a)° · cos b° + sin(a + y)° · sin(90 − b)°\nIn the given expression, a and b are constants such that sin a° = 0.50, cos b° = 0.99, and 0 < b < 90. What is the value of the given expression when y = 0?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The line for set P rises about 0.8 over 30 units of x, a slope near 0.027, which matches 35/1,301 ≈ 0.027 (1/131 ≈ 0.008 is too small). Shifting every x right by 540 keeps the slope but lowers the y-intercept by 540 × 35/1,301 ≈ 14.5. P's line has a y-intercept near 11.5 (about 14.2 at x = 100 minus 100 × 0.027), so Q's is about 11.5 − 14.5 = −3. Choice D raises the intercept, which would shift the line left instead of right.",
+    "fix": {
+      "choices": {
+        "A": "y = −3 + (35/1,301)x",
+        "B": "y = 9 + (1/131)x",
+        "C": "y = 18 + (1/131)x",
+        "D": "y = 26 + (35/1,301)x"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "227"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let t = 57 − x, which must be ≥ 0. Squaring gives k − x = t^2, and since x = 57 − t this becomes t^2 − t + (57 − k) = 0, with discriminant 1 − 4(57 − k) = 4k − 227. If 4k − 227 = 0 there is a single root t = 1/2 ≥ 0, so exactly one solution; if 4k is below 227 there are none, and just above 227 both roots are nonnegative, giving two solutions. So the minimum value of 4k is 227.",
+    "fix": {
+      "prompt": "sqrt(k − x) = 57 − x\nIn the given equation, k is a constant. The equation has exactly one real solution. What is the minimum possible value of 4k?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "g(x) = 6(0.75)^x decays as x grows, so for x ≥ 0 its maximum is at x = 0: g(0) = 6, which appears as the coefficient. f(x) = 16(1.25)^x + 43 grows without bound, so it has no maximum at all. Only equation II displays its maximum.",
+    "fix": {
+      "prompt": "The functions f and g are defined by the given equations, where x ≥ 0. Which of the following equations displays, as a constant or coefficient, the maximum value of the function it defines, where x ≥ 0?\nI. f(x) = 16(1.25)^x + 43\nII. g(x) = 6(0.75)^x"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Convert meters to miles by dividing by 1,609, and convert per second squared to per minute squared by multiplying by 60^2 = 3,600. So 12.1 × 3,600/1,609 = 43,560/1,609 ≈ 27.1 miles per minute squared. Choice A comes from multiplying by only 60 instead of 60^2 (12.1 × 60/1,609 ≈ 0.45).",
+    "fix": {
+      "prompt": "An object's speed is increasing at a rate of 12.1 meters per second squared. What is this rate, in miles per minute squared, rounded to the nearest tenth? (Use 1 mile = 1,609 meters.)"
+    }
+  }
+]

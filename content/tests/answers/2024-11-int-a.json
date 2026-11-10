@@ -1,0 +1,1064 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text calls the program's results an \"already-strong performance\" and says it found sidewalks in \"the vast majority of cases,\" so it identified them reliably, or dependably. \"Clumsily,\" \"rarely\" and \"slowly\" all suggest weak performance, which contradicts that description."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Sediments carried by the river pile up where it meets the gulf and \"eventually\" form new land, so they accumulate. They can't \"dissolve\" and still build land, and \"accelerate\" or \"thrive\" don't describe material settling in one place."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The romantic paintings are contrasted with realism's accurate portrayals and are said to hide all imperfection, so they overstated, or exaggerated, their subjects' beauty or heroism. \"Correct\" doesn't fit what a painter does to beauty, and \"undermine\" or \"mock\" would mean the paintings treated their subjects negatively, the opposite of romanticizing them."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence explains that the pika's disappearance \"likely affected several other species,\" which describes effects, or consequences, for the ecosystem. \"Sources in\" and \"precedents in\" point to causes or earlier examples, and \"similarities to\" makes no sense for an extinction."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every detail is about Max's longing to see La Reina: he has begged his father for as long as he can remember, imagines being a hero, and hopes this summer will finally be the time. Nothing shows his father's pride, a dislike of summer, or a wish not to grow up, so A is the only purpose the text supports.",
+    "fix": {
+      "passage": "The following text is adapted from Pam Muñoz Ryan's 2020 novel Mañanaland. In the village where Max lives, there is an old fortress called La Reina. Children in the village say that the fortress is haunted.\n\nFor as long as he could remember, Max had begged Papa [his father] to take him to see La Reina and the ruins up close. He'd be a hero among his friends if he was the first boy to cross the haunted gates! Just because Papa didn't believe in ghosts didn't mean they weren't there. Maybe this summer Papa would finally take him. He was almost twelve.\n\n©2020 by Pam Muñoz Ryan"
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined sentence raises a tempting interpretation (that fast painting explains the Highwaymen's ethereal look) and then rejects it as inaccurate, pointing out that Hair's method wasn't used by everyone. That is considering and rebutting an interpretation. Choice A is tempting because the sentence does push back on an idea, but there's no long-standing disagreement among the artists.",
+    "fix": {
+      "passage": "Driven to sell as many paintings as possible, Alfred Hair, an influential figure among the landscape artists known as the Florida Highwaymen, pioneered \"fast painting,\" a technique (which in part involved swift applications of paint) that many Highwaymen, including Isaac Knight, adopted. <u>To conclude that this approach accounts for the ethereal qualities now synonymous with the Highwaymen aesthetic is tempting but inaccurate, as Hair's methods weren't universally practiced by his affiliates</u>: Roy McLendon, for example, painted with greater deliberateness but achieved the same effects."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Defoe contrasts a sermon, which is spoken once and lasts only as long as listeners remember it, with a printed book, which stays in people's hands and lasts for ages. So the text describes how two kinds of communication differ. Choice C is tempting, but the text compares how long each form lasts, not how often each is used."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last sentence states directly that Gloria Richardson was \"the leader of what became known as the Cambridge movement.\" The text never mentions a business, environmental protests, or a school, so the other choices have no support.",
+    "fix": {
+      "passage": "In the 1960s, Gloria Richardson led a movement to promote racial equality. Her involvement in this effort was inspired by her daughter, Donna Richardson. In 1961, Donna joined protests organized by the Student Nonviolent Coordinating Committee in Cambridge, Maryland. Following her daughter, Gloria joined these protests too. Gloria soon became the co-chair of the Cambridge Nonviolent Action Committee. She was also the leader of what became known as the Cambridge movement."
+    },
+    "note": "Printed text reads \"became the Gloria of the Cambridge Nonviolent Action Committee\" (garbled); changed to \"co-chair\" (her actual role). Answer unaffected."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says that after traveling abroad and joining an international discussion of architecture, Barragan began using functionalist and modernist ideas, shown by the contrast between the plain El Arenal church and his earlier, historically inspired houses. That is a shift in style shaped by his time abroad. Choice C reverses the order: modernism came later, not first."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first explains that the Kaua'i 'amakihi is highly specialized for its Hawaiian habitat, then says this specialization makes it especially vulnerable to environmental changes. Choice C captures both halves. Choice B leaves out the vulnerability, which is the point the \"However\" sentence emphasizes."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers compare a female sample with a male sample and use oxygen-18 levels to judge depth. That only works if sex doesn't change how oxygen-18 is taken up or deposited, which is exactly what A states. Choice B would undermine the conclusion, since a sex-based difference could explain the gap instead of depth."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Toomer describes the Dixie Pike as deeply connected to a faraway place, and C says the road \"has grown from a goat path in Africa.\" Choice A also mentions a distant place (Washington, DC), but it describes soil from the South, not the Dixie Pike itself."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that sophists teach persuasion without caring about what is morally good. In D, Strepsiades wants his son to learn the \"worse\" argument that maintains \"what is unjust\" and wins anyway, which fits perfectly. The other quotations are about astronomy or simply about wanting to learn, with no moral indifference."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Nunez's team claims that mapping time onto a fixed front/back axis is not universal. If Yupno speakers gesture forward for the future when facing uphill but backward when facing downhill, their time gestures follow the terrain rather than their own front/back body axis. Choices A and C describe hand use and frequency, which say nothing about the axis."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Research shows red is linked with dominance and can make people cautious and hesitant, and Sheffield United, which wears red, did well at home. If that research applies to sports, opponents at Sheffield's stadium may have been influenced by the red uniforms. Choice D goes too far by claiming opponents were aware of the effect; the research describes reactions people may not notice."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The critic's least favorite film is described as it stood \"before\" a past event (watching The Maltese Falcon), so the past perfect \"had been\" is needed for the earlier past. \"Has been\" and \"is\" place it in the present, and \"was being\" wrongly suggests an ongoing action."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"a durable and flexible material\" is an interruption that opens with a dash after \"black ash,\" so it must close with a matching dash before the sentence continues with \"to craft baskets.\" A colon, semicolon or period would wrongly split the main clause."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The phrase \"the first woman to serve in that role in the state's history\" ends with a dash before \"took office,\" so it must begin with a dash too. A comma would mismatch the closing dash, and leaving out punctuation would run the name into the description."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the main clause, \"the former establishing ... and the latter legally affirming ...\" is an absolute phrase that adds detail, and it is joined with a comma. A period (D) would leave \"The former establishing...\" as a fragment with no main verb, and \"as the\" makes the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A government body officially known as the Althing\" must describe the noun right after the comma, and only D puts \"Iceland's parliament\" there. The other choices make the phrase seem to describe a year, the world's parliaments, or a meeting, which is a dangling modifier."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"consist,\" so the blank needs a modifier: \"classified as dactyls\" describes the trisyllabic words. Adding another finite verb such as \"are classified\" or \"can be classified\" gives the sentence two main verbs with no conjunction.",
+    "fix": {
+      "passage": "Trisyllabic words _____ as dactyls in English metrical verse, such as \"devious\" and \"particle,\" consist of one stressed syllable followed by two unstressed syllables."
+    }
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The plant absorbs and stores manganese, and as a result the manganese levels in the soil go down. \"In turn\" signals that consequence. \"Nevertheless\" implies a contrast, and \"specifically\" would introduce a detail of the previous idea rather than its result."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text lists anti-counterfeiting steps; stamping the notes with sage-leaf prints is one more step added to the threads and muscovite, so \"Moreover\" fits. \"For example\" and \"Specifically\" are tempting, but the sage leaves aren't an example of the paper features already mentioned; they're an additional measure."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the refuge's size, and only A gives its area of 184 acres. The other choices mention who manages it or which turtle lives there but never say how big it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Massasoit National Wildlife Refuge (NWR) is a protected natural area in Massachusetts.\n• It encompasses 184 acres.\n• It was established to safeguard the habitat of the Plymouth red-bellied turtle, an endangered species.\n• The Massasoit NWR is managed by the US Fish & Wildlife Service.\n• The US Fish & Wildlife Service limits human activities in the area."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say the rock overhang protected Oak Tree House from heavy rain and snow, and D states that advantage directly. Choice C names an advantage, but the flat terrain and terraced buildings belong to Yucca House.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Oak Tree House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built under a rock overhang and inhabited from approximately 1180–1210 CE.\n• The overhanging rock ledges offered protection from heavy rain and snow.\n• Yucca House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built on relatively flat terrain and inhabited from approximately 1080–1275 CE.\n• This level surface allowed for the construction of large terraced buildings.",
+      "choices": {
+        "B": "Located in southwestern Colorado, Oak Tree House is an Ancestral Puebloan dwelling site that was inhabited from approximately 1180–1210 CE."
+      }
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The difference in the notes is umami intensity: moderate for sugar kelp and high for ma-konbu. Choice C states that ma-konbu's umami is more intense. Choices A and D only state what the two seaweeds have in common.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The human tongue contains taste receptors for a rich, savory flavor called umami.\n• Umami is triggered by the compounds in a variety of foods, including tuna and soy sauce.\n• Participants in a study tasted a sample of sugar kelp, a type of brown seaweed.\n• They rated its umami intensity as moderate.\n• The participants tasted a sample of ma-konbu, another type of brown seaweed.\n• They rated its umami intensity as high."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is when Goldwasser won, and B puts the year, 2012, at the front of the sentence. Choice A emphasizes why she won, and C and D leave out the year entirely.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The A.M. Turing Award is a prestigious award given by the Association for Computing Machinery (ACM).\n• The ACM gives the award for “major contributions of lasting importance to computing.”\n• Shafi Goldwasser won the award in 2012 for transformative work that laid the foundations for digital cryptography."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conference was narrowly about children's literature, and the word \"despite\" sets up a contrast with the fact that she could still speak authoritatively. So she must have felt unsure, or hesitant, about her expertise on that topic. \"Insight into\" and \"affinity for\" are positive, so they wouldn't contrast with her speaking confidently."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The blank describes forms that, unlike recognizable traditional forms, mix elements and \"straddle the line\" between prose and poetry, so they lack a clear shape: they are amorphous. \"Customary\" is the opposite of unconventional, and \"dispersed\" means scattered, which isn't about lacking a defined form."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The uncle means that finding the beginning is the hardest piece, or element, of the process of telling a story. \"Zone\" is a physical area, \"blob\" a shapeless lump, and \"melody\" a musical tune, even though the uncle is a musician.",
+    "fix": {
+      "passage": "The following text is from Jacqueline Woodson’s 2018 novel Harbor Me.\n\nMy uncle is a musician and a storyteller. He says the hardest <u>part</u> of telling a story is finding the beginning.\n\n©2018 by Jacqueline Woodson"
+    }
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Visitors to Union Station \"can easily recognize\" the Spanish mission style, so the influence is clearly noticeable, or palpable, throughout the state. \"Understated\" means the opposite, and nothing in the text suggests the influence is disputed or that anyone needed to corroborate it."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports The Times's view that the English ideal is for everyone to dress and act as they like. The next sentence begins with \"But\" and argues that culture instead pushes people toward what is truly beautiful, so the author disagrees with that view. Choice D fails because the sentence is the opposing opinion, not evidence for the author's claim.",
+    "fix": {
+      "passage": "The following text is adapted from Matthew Arnold's 1869 nonfiction book Culture and Anarchy.\n\n<u>The Times, a British newspaper, replying to some foreign strictures on the dress, looks, and behaviour of the English abroad, urges that the English ideal is that every one should be free to do and to look just as he likes.</u> But culture indefatigably tries, not to make what each raw person may like the rule by which he fashions himself; but to draw ever nearer to a sense of what is indeed beautiful, graceful, and becoming, and to get the raw person to like that."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says O'odham farmers plant elderberries so the bushes shade chia flowers from heat and light, and Text 2 says the farmers plant chia in the shade of sun-hardy elderberry bushes for protection from sun and heat. Both authors would agree with A. Choice D reverses the facts: it is the chia flowers that grow best in shade."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says scholarship overemphasizes fragmented narratives and neglects linear works, and Text 2 says the focus on fragmentation versus coherence has blocked other useful lines of inquiry. Both think current scholarship gives a narrower picture of modernist fiction than it should unless its focus changes. Choice A fails because Text 2 wants more attention to style, not less."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Body size (wing centroid size) tracks life span, so the claim needs a cooler month with smaller wings. May (average high 73°F) was cooler than June (80°F), and the female wing size was smaller in May (2.27 mm) than in June (2.31 mm). Choice C mentions only temperatures, and D misreads the July male value, which is 2.02 mm, not 2.31 mm.",
+    "fix": {
+      "passage": "Drosophila (fruit flies) have generation times of 10-12 days, so seasonal changes in humidity and other environmental conditions can drive seasonal fluctuations in chromosome rearrangements in species such as D. persimilis and D. mediopunctata. Drosophila body size (for which wing centroid size serves as a proxy measure) correlates with life span. Banu Sebnem Önder and Cansu Fidan Aksoy measured the wing sizes of members of a D. melanogaster population in Yesiloz, Turkey, that were collected monthly between May and October over three years. Their research suggests that Drosophila collected in relatively cooler months should tend to have a shorter life span, as is illustrated by the finding that _____",
+      "table": {
+        "caption": "Monthly Temperatures and Wing Centroid Sizes of Fruit Fly Specimens",
+        "headers": [
+          "Month",
+          "Average high (°F)",
+          "Average low (°F)",
+          "Average male wing centroid size (mm)",
+          "Average female wing centroid size (mm)"
+        ],
+        "rows": [
+          [
+            "October",
+            "67",
+            "44",
+            "1.98",
+            "2.29"
+          ],
+          [
+            "July",
+            "87",
+            "62",
+            "2.02",
+            "2.31"
+          ],
+          [
+            "June",
+            "80",
+            "56",
+            "2.01",
+            "2.31"
+          ],
+          [
+            "May",
+            "73",
+            "50",
+            "1.98",
+            "2.27"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Harbor Number 1 marks a significant change in Martin's development. Choice C says her earlier paintings belong to a style she never returned to after this work, which shows a turning point. Choice D praises the painting as her best but says nothing about a change."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that more language exposure (which older dogs have had) helps dogs tell a familiar language from an unfamiliar one. Choice D shows that the brain-activity difference between the familiar and unfamiliar languages was largest in older dogs. Choice A compares the familiar language with scrambled noise, not with another language, so it doesn't test distinguishing languages."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researcher needs a lake whose ice duration increased. In the graph, Lake Baikal rose from about 95 days in 1980-81 to about 108 days in 2005-06. Choice D fails because Oulujärvi actually dropped from about 190 to about 155 days."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most studies, both in North America and elsewhere (such as Sweden), found the positive association, and few matched the Brazilian result. That suggests the association is the general rule: dissolved organic carbon and mercury usually rise and fall together in fresh water. Choice A is the hypothesis this evidence argues against."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Henry found investment rose significantly in the three years after liberalization, while Levine and Zervos found no enduring increase. Together, these suggest an early boost that doesn't last. Choice C contradicts Henry's finding that the increase came within the first three years."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most of the sediment is mudstone, which settles slowly in low-flow water, pointing to a long-lasting lake; its desiccation cracks show the lake sometimes dried out; and the intervals of sandstone, laid down by flowing water, show that streams were sometimes present. Choice A combines all three. Choice B wrongly says the lake never dried, despite the cracks in the fine grains."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Mayan languages borrowed words while the Olmecs dominated the region, and all of those words come from the Zoque branch only. That pattern makes sense only if Zoque was already a separate branch from Mixe at that time, so the family had already split. Choice A is unsupported; nothing says Mixe languages replaced Zoque ones."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Each year... direction\" and \"in 1909, for instance, judges recognized...\" are both independent clauses, so they need a semicolon (placed after the closing quotation mark). A comma alone creates a comma splice, and no punctuation creates a run-on."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Mathematician Grigori Perelman\"; the phrase \"sometimes in conjunction with...\" set off by commas doesn't make it plural. So the verb must be the singular \"is.\" The other choices are plural verbs."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"units of measurement,\" and a new sentence begins with the participial phrase \"Used to record length and volume, respectively,\" which describes the djeser and heqat. Joining them with a comma or \"and\" would create a run-on or make the phrase seem to modify the wrong part of the sentence."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"A team led by... collected arthropods with sweep nets, for instance\" is a complete clause, and \"for instance\" belongs to it because Hartley's team is an example of the several methods. A semicolon then separates it from the next independent clause about La Pierre's team. Choice B attaches \"for instance\" to the second clause, which makes less sense, and C and D create run-ons or comma splices."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"The sand at Vermelha Beach in Brazil is a strikingly different shade\" is a complete sentence, and what follows explains it, so a colon fits. Inside the explanation, \"though most sand gets its shade...\" is a dependent clause attached to the main clause about iron oxide. Choice A would join an independent clause and the long explanation with only a comma, creating a comma splice."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"analyzed,\" so the blank must start a modifier describing the researchers: \"researchers looking for a relationship ... analyzed ... posts.\" Any finite verb (\"looked,\" \"were looking,\" \"had looked\") would give the sentence two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says Duchamp intended Fountain to challenge ideas about art, and the second confirms that it \"did just that.\" \"Indeed\" signals that kind of confirmation and emphasis. \"Instead\" signals contrast, and \"Similarly\" and \"in addition\" would introduce a new, separate point.",
+    "fix": {
+      "passage": "Marcel Duchamp intended his 1917 so-called ready-made sculpture Fountain to challenge then-prevailing conceptions about the nature of art. _____ Duchamp's Fountain did just that, raising the question of whether displaying any object in an art gallery could be said to transform the object—even, as Duchamp's sculpture was, a urinal—into a legitimate work of art."
+    }
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show fluorite's hardness compared with other minerals, B places it between them: it can scratch talc (1) but not quartz (7). Choices A and C compare quartz and talc and don't place fluorite on the scale at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral talc has a Mohs scale number of 1.\n• The mineral fluorite has a Mohs scale number of 4.\n• The mineral quartz has a Mohs scale number of 7."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The shared trait in the notes is that both books recently entered the public domain, and B states this for both. Choices A and C emphasize differences (the year and the genre), and D mentions only one book.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A copyright prevents a book's contents from being reproduced (published) without permission from the copyright holder.\n• When a book's copyright expires, the book enters the public domain and can be legally reproduced by anyone.\n• The Prophet is a collection of prose poems by Kahlil Gibran.\n• It entered the public domain in 2019.\n• The Professor's House is a novel by Willa Cather.\n• It entered the public domain in 2021."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subject matter means what the prints show: Tana's shows an explicitly political scene, while Andrews's shows a tranquil everyday scene, and B sets those side by side. Choices A and D contrast technique, and C contrasts dates.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hyde Park is a 1931 color linocut print by Canadian artist Sybil Andrews.\n• It depicts a tranquil, everyday scene (a spring day in a city park).\n• Amanzi Amthatha (\"The cold water takes him\") is a 2001 black-and-white linocut print by South African artist Nomathemba Tana.\n• It features a scene with an explicitly political point of view (a Xhosa warrior fighting British colonial rule).\n• Relief printing is a technique in which an image is carved onto a printing block, covered in ink or paint, and stamped onto paper.\n• Linocutting is a type of relief printing that uses linoleum tile as the printing block."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization is a statement about circumnavigations in general, and C says most include land stops but some (like Liardet's and Pajkowska's) are nonstop. Choices A and B describe the two specific sailors, and D only gives a definition.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A sailing trip that goes in a complete circle around the world is called a circumnavigation.\n• Most circumnavigations include stops on land.\n• Anne Liardet is a French sailor.\n• Liardet sailed the boat Roxy on a nonstop, 119-day circumnavigation.\n• Asia Pajkowska is a Polish sailor.\n• Pajkowska sailed the boat FanFan on a nonstop, 216-day circumnavigation."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To refute the idea that the Storting favors small urban districts, A explains that the formula awards more points per unit of land than per resident, so it overrepresents less populated rural districts. Choice D starts with a refutation but then says more populated districts are overrepresented, which contradicts the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Malapportionment is the over- or underrepresentation (relative to population size) of electoral districts in a governing body.\n• It is a common feature of representative governments.\n• There are 169 seats in Norway's supreme legislature (the Storting).\n• Seats are distributed by a formula that awards 1 point per resident and 1.8 points per unit of land.\n• Less populated rural districts with large tracts of land receive a disproportionate number of seats compared to smaller but more populated urban districts."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(0) is the y-value where the graph crosses the y-axis (x = 0). The marked point on the y-axis is at y = −6, so f(0) = −6. Choice D confuses x = 0 with the output being 0."
+  },
+  {
+    "key": "m1-02",
+    "answer": [
+      "61"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When two lines intersect, the angles opposite each other (vertical angles) are equal. Angles r and s sit on opposite sides of the intersection point, so s = r = 61. Don't add them to 180; that rule is for angles next to each other on a line."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute 7 for x: f(7) = 5(7)^2 = 5(49) = 245. Choice C (70) comes from doubling 5·7 instead of squaring 7 first, and A (35) skips the square entirely."
+  },
+  {
+    "key": "m1-04",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations so the y-terms cancel: (x + 5y) + (x − 5y) = 5 + 7, so 2x = 12 and x = 6. Choice D (12) is the value of 2x, not x."
+  },
+  {
+    "key": "m1-05",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 6x to both terms: 6x·x + 6x·3 = 6x^2 + 18x. Choice A forgets to multiply the 3 by 6x."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Shifting a graph up 9 units adds 9 to every output, so g(x) = f(x) + 9 = 3x^5 + 9. Choice B shifts the graph down, and C and D change the shape of the graph instead of moving it."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A linear function can be written f(x) = mx + b, where m is the slope and b = f(0). Here m = 69 and b = 3, so f(x) = 69x + 3. Choice C has the right slope but passes through (0, 0) instead of (0, 3)."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Write 5% as 0.05: 0.05w = 741.41, so w = 741.41/0.05 = 741.41 × 20 = 14,828.2. Choice A adds 5% to 741.41, and B divides by 0.2 instead of 0.05."
+  },
+  {
+    "key": "m1-09",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both graphs pass through (0, 0) and (4, 7). The parabola opens upward, so its coefficient is positive: 7 = a(4)^2 gives a = 7/16. The line rises with slope 7/4. So the system is y = (7/16)x^2 and y = (7/4)x. Choices A–C use a negative sign, which would make the parabola open downward or the line fall.",
+    "fix": {
+      "prompt": "The graph of a system of a linear and a quadratic equation is shown. What system is represented by the graph?",
+      "choices": {
+        "A": "y = −(7/16)x^2\ny = −(7/4)x",
+        "B": "y = −(7/16)x^2\ny = (7/4)x",
+        "C": "y = (7/16)x^2\ny = −(7/4)x",
+        "D": "y = (7/16)x^2\ny = (7/4)x"
+      }
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "80"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The term 4x depends on the number of plants watered (4 minutes per plant), while 80 is the part of the total time that doesn't depend on x. That fixed part is the time to mow the grass: 80 minutes.",
+    "fix": {
+      "prompt": "The function W gives the total time, in minutes, it takes for a gardener to water x plants and mow the grass. According to the function, how many minutes does it take the gardener to mow the grass?\nW(x) = 4x + 80"
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the equations: (x + y) + (x − y) = 19 + 9, so 2x = 28 and x = 14. Then y = 5, and the check 14 − 5 = 9 works. Choice B (10) is not a solution of either step."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x^2 − 16x + 64) + (y^2 − 10y + 25) = 55 + 64 + 25, so (x − 8)^2 + (y − 5)^2 = 144 and the radius is 12. A circle inscribed in a square touches all four sides, so the side of the square equals the diameter, 24. The perimeter is 4 × 24 = 96. Choice A (24) is just one side."
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Treat 3x + 6 as a single quantity, u: 5u = 3u + 78, so 2u = 78 and u = 39. Choice A forgets to divide by 2, and D (11) is the value of x, not 3x + 6."
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(4) = 4 + 5 = 9 and g(4) = 5(4) = 20. Then 7f(4) − g(4) = 7(9) − 20 = 63 − 20 = 43."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "15"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set C(t) = 247: 240(53/52)^(t − 15) + 7 = 247, so 240(53/52)^(t − 15) = 240 and (53/52)^(t − 15) = 1. A positive base other than 1 equals 1 only when the exponent is 0, so t − 15 = 0 and t = 15.",
+    "fix": {
+      "prompt": "The function C gives the estimated number of cephalopods, a class of marine animal, in a certain area, where t is the number of months since a study began. How many months after the study began was the number of cephalopods in the area estimated to be 247? The function is given by:\nC(t) = 240(53/52)^(t − 15) + 7"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "1/17",
+      ".0588",
+      ".0589",
+      "0.058",
+      "0.059"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 3 feet in a yard, so divide the speed by 3: (3/17)/3 = 3/51 = 1/17 yard per second. As a decimal, 1/17 ≈ 0.0588. A common mistake is multiplying by 3, which gives 9/17 instead.",
+    "type": "spr",
+    "fix": {
+      "prompt": "An object moves at a speed of 3/17 feet per second. What is this speed in yards per second? (3 feet = 1 yard)"
+    },
+    "note": "Printed as MCQ (A 1/17, B 0.058, C 0.059, D 0.0588, key C) — these 'choices' are really the accepted grid-in forms of 1/17 (A is exact, so C can't be the only right one). Changed to SPR with answer 1/17."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "37"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each time x goes up by 1, g(x) goes down by 3, so m = −3. Using (1, 34): 34 = −3(1) + b, so b = 37. You can also step back from x = 1 to x = 0 by adding 3: g(0) = 34 + 3 = 37.",
+    "fix": {
+      "prompt": "For the linear function g, the table shows four values of x and their corresponding values of g(x). The function can be written as g(x) = xm + b, where m and b are constants. What is the value of b?",
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "1",
+            "34"
+          ],
+          [
+            "2",
+            "31"
+          ],
+          [
+            "3",
+            "28"
+          ],
+          [
+            "4",
+            "25"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Increasing by 2.4% each year means multiplying by 1 + 0.024 = 1.024 every year, so after x years the value is 174,000(1.024)^x. Choice A multiplies by 0.024, which would shrink the value, and D uses 24% instead of 2.4%.",
+    "fix": {
+      "prompt": "The current value of a house is $174,000, and this value increases by 2.4% each year from the value of the previous year. Which function f gives the value, in dollars, of the house x years from now?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "18π is a whole number of half-turns (in fact 9 full turns of 2π), so the angle ends on the positive x-axis, where the sine (the y-coordinate on the unit circle) is 0. So sin(18π) = sin(0) = 0. Choice D (1) would be the cosine, not the sine.",
+    "fix": {
+      "prompt": "What is the value of sin(18π)?",
+      "choices": {
+        "B": "1/2",
+        "C": "sqrt(2)/2"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at R, so QS is the hypotenuse, and the side SR = 17 is opposite angle Q. Then sin Q = 17/QS, which gives QS = 17/sin Q. Choice C would be correct only if 17 were the side next to angle Q.",
+    "fix": {
+      "choices": {
+        "A": "17cos Q",
+        "B": "17sin Q",
+        "C": "17/cos Q",
+        "D": "17/sin Q"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has no solution when the lines are parallel, so the other line has the same slope as the given one. Solve for y: (3r/7)y = (1/9)x − 34, so y = (7/(27r))x − 238/(3r). The slope is (1/9)/(3r/7) = 7/(27r). Choice B flips the fraction.",
+    "fix": {
+      "prompt": "(1/9)x − (3r/7)y = 34\nOne of the equations in a system of two linear equations is given, where r is a nonzero constant. The system has no solution. If the other equation in the system is graphed in the xy-plane, what is the slope of the graph?",
+      "choices": {
+        "A": "−27r/7",
+        "B": "27/(7r)",
+        "C": "7r/27",
+        "D": "7/(27r)"
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "There are n 9-inch parts, 4n 8-inch parts and 30 3-inch parts, and the question counts parts, not inches. So n + 4n + 30 = 100, which is 5n + 30 = 100. Choice A multiplies by the lengths, which would give total inches, not the number of parts."
+  },
+  {
+    "key": "m2-01",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A base-to-height ratio of 1 to 8 means the height is 8 times the base: 8 × 104 = 832 centimeters. Choice A (13) divides by 8 instead, which would make the height smaller than the base."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "medium",
+    "explanation": "As printed, q(x) = 15(3x) = 45x. Then q(−1) = −45, q(0) = 0 and q(1) = 45, which matches table A. Choice D (5, 15, 45) is what you'd get for the exponential function 15(3)^x, not for 15 times 3x.",
+    "fix": {
+      "prompt": "Which table gives three values of x and their corresponding values of q(x) for function q?\nq(x) = 15(3x)",
+      "choices": {
+        "A": "x: −1, 0, 1; q(x): −45, 0, 45",
+        "B": "x: −1, 0, 1; q(x): 1/5, 3, 45",
+        "C": "x: −1, 0, 1; q(x): 1/5, 15, 45",
+        "D": "x: −1, 0, 1; q(x): 5, 15, 45"
+      }
+    },
+    "note": "Printed function is q(x) = 15(3x) with key A. The distractors (1/5, 5, 15, 45) suggest the original may have been q(x) = 15(3)^x, which would make D correct. Check against the official paper."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A tall species must have heights greater than 100 centimeters. Only 107 < h < 160 keeps every possible height above 100. Choice C goes up to 100 but never above it, so those flowers aren't tall."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The slope is (590 − 170)/(10 − 4) = 420/6 = 70. Using (4, 170): 170 = 70(4) + b, so b = −110 and f(x) = 70x − 110. Check: 70(10) − 110 = 590. Choice C simplifies to 60x, which gives 240 for 4 items."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Growing by the same percentage (0.69%) of the previous year's value means multiplying by 1.0069 each year, which is exponential growth, and since the value goes up, it is increasing. Linear growth would add the same dollar amount each year, not the same percentage."
+  },
+  {
+    "key": "m2-06",
+    "answer": [
+      "-8/3",
+      "-2.666",
+      "-2.667"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The point (a, 0) is where the line crosses the x-axis, so set y = 0: 0 = a + 8/3, which gives a = −8/3. Don't confuse it with b, the y-intercept, which is +8/3.",
+    "fix": {
+      "prompt": "Line p in the xy-plane is defined by y = x + 8/3 and passes through the points (a, 0) and (0, b), where a and b are constants. What is the value of a?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": [
+      "10"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since x^2 − 25 = (x − 5)(x + 5), multiply both sides by it: 25x = x(x + 5) + 20(x − 5) = x^2 + 25x − 100. Subtracting 25x gives x^2 = 100, so x = 10 or x = −10. Neither makes a denominator zero, and the positive solution is 10.",
+    "fix": {
+      "prompt": "25x/(x^2 − 25) = x/(x − 5) + 20/(x + 5)\nWhat is the positive solution to the given equation?"
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Left side: 7x + 84 + 5x = 12x + 84. Right side: 12x + 84. Both sides are identical, so every value of x works and there are infinitely many solutions. Zero solutions would need the same x-coefficient but different constants."
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. There's no reason to expect the estimate itself to move up or down in a particular direction, which rules out C and D."
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "9"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: f(0) = −9(0) + 9 = 9. So the y-coordinate of the y-intercept is 9."
+  },
+  {
+    "key": "m2-11",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Adding 68, which is larger than every original weight, must raise the mean. The median is different: the original 14 values have their 7th and 8th values in the 15–20 bin, and the new median is the old 8th value. If the 7th and 8th values happen to be equal, the median doesn't change, so it doesn't have to be greater.",
+    "fix": {
+      "prompt": "The histogram summarizes a data set of the weights, in pounds, of 14 salmon. If an additional weight of 68 pounds is added to the original data set to create a new data set of 15 weights of salmon, which of the following measures must be greater for the new data set than for the original data set?\nI. The median\nII. The mean"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes through (−12, 44) and (0, −16), so its slope is (−16 − 44)/(0 − (−12)) = −60/12 = −5, and y = −5x − 16. For y = 14: 14 = −5a − 16 gives a = −6. For x = 2: b = −10 − 16 = −26. So a + b = −32.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y, where a and b are constants. There is a linear relationship between x and y. In the xy-plane, the y-intercept of the line representing this relationship is (0, −16). What is the value of a + b?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−12",
+            "44"
+          ],
+          [
+            "a",
+            "14"
+          ],
+          [
+            "2",
+            "b"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract 37 from both sides: (x + k)^2 = 0. A square is 0 only when the quantity inside is 0, so x = −k is the only solution. Choice C would be right if the square equaled a positive number."
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With R = 18: CV^2/P = sqrt(18P). Multiply by P: CV^2 = sqrt(18) · P^(3/2). Square both sides: C^2V^4 = 18P^3, so P^3 = C^2V^4/18 and P = cbrt(C^2V^4/18). Choice A still has P on the right side, so it doesn't solve for P.",
+    "fix": {
+      "prompt": "For a certain circuit, its power P, in watts; current C, in amperes; voltage V, in volts; and resistance R, in ohms, are related as CV^2/P = sqrt(PR), where P, C, V, and R are positive. When R = 18, which equation correctly expresses P in terms of C and V?",
+      "choices": {
+        "A": "P = CV^2/sqrt(18P)",
+        "B": "P = CV^2/sqrt(18)",
+        "C": "P = cbrt(C^2V^4/18)",
+        "D": "P = cbrt(18/(C^2V^4))"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Check each point against y < −5x − 21 (the upper bound): x = −8 needs y < 19, x = −9 needs y < 24, and x = −11 needs y < 34. Table D (18, 22, 32) fits all three, and those y-values are also far above 32x − 8 (−264, −296, −360). Tables B and C fail because y = 19 is not less than 19, and A fails because 35 is not less than 24.",
+    "fix": {
+      "prompt": "y < −5x − 21\ny > 32x − 8\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given system of inequalities?",
+      "choices": {
+        "A": "x: −8, −9, −11; y: 14, 35, −3",
+        "B": "x: −8, −9, −11; y: 19, 22, −3",
+        "C": "x: −8, −9, −11; y: 19, 24, 34",
+        "D": "x: −8, −9, −11; y: 18, 22, 32"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The square's side is s = 228/sqrt(2), so s^2 = 228^2/2 = 25,992. The inscribed circle's radius is half the side, so r^2 = s^2/4 = 6,498 and the area is 6,498π. Choice C uses the square's area, and D uses the diagonal as the diameter."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "4983/5000",
+      ".9966",
+      "0.9966"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Decreasing x by 0.34% leaves 100% − 0.34% = 99.66% of it, so the result is 0.9966x and k = 0.9966. A common mistake is subtracting 0.34 instead of 0.0034, which gives 0.66.",
+    "note": "Printed key shows 293/294 (≈ 0.996599), but the explanation on the same page gives 0.9966; the exact value is 0.9966 = 4983/5000."
+  },
+  {
+    "key": "m2-18",
+    "answer": [
+      "85/87",
+      ".977",
+      "0.977",
+      ".9770"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The interior angles of an 87-sided polygon add to (87 − 2) · 180 = 85 · 180 degrees. Each of the 87 equal angles is 85 · 180/87, so 180p = 180 · 85/87 and p = 85/87 ≈ 0.977.",
+    "type": "spr",
+    "fix": {
+      "prompt": "A polygon has exactly 87 sides. If the measure of each of the 87 interior angles of this polygon is (180p)°, what is the value of p?"
+    },
+    "note": "Printed as MCQ (A 85/87, B 0.977, C ',,', D 9770, key B) — the 'choices' are really the accepted grid-in forms of 85/87, so changed to SPR with answer 85/87."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Doubling every hour means multiplying the starting amount by 2 for each hour: y = 66,000(2)^t. Choice C halves the amount each hour, and A and B wrongly raise 66,000 to the power t.",
+    "fix": {
+      "choices": {
+        "A": "y = (1/2)(66,000)^t",
+        "C": "y = 66,000(1/2)^t"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "f(14)/f(10) = (20.44)^(14/4)/(20.44)^(10/4) = (20.44)^1 = 20.44, so the 14th term is 20.44 times the 10th. That is an increase of 20.44 − 1 = 19.44 times the original, or 1,944%. Choice D (2,044) gives the new term as a percent of the old one, not the percent increase.",
+    "fix": {
+      "prompt": "The function f(n) = 7(20.44)^(n/4) gives each term of a sequence as a function of the term's position, n, in the sequence, where n is a whole number. The value of the term in position 14 is p% more than the value of the term in position 10. What is the value of p?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The base area is 28,160 − 16,060 = 12,100, so each base side is 110. Each lateral triangle has area 16,060/4 = 4,015 = (1/2)(110)(ℓ), so the slant height is ℓ = 73. The height, half the base side (55) and the slant height form a right triangle: h^2 = 73^2 − 55^2 = 2,304, so h = 48. Choice C (73) is the slant height, not the height."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "17/2",
+      "8.5"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Expanding (3x^2 + a)(2x^2 + b) gives 6x^4 + (3b + 2a)x^2 + ab, so ab = 7 and 3b + 2a = 17. For positive integers, a = 7, b = 1 works (3 + 14 = 17). For the other pair, d = 7/c, so 21/c + 2c = 17, or 2c^2 − 17c + 21 = 0, giving c = 7 or c = 3/2; the noninteger is c = 3/2. So a + c = 7 + 3/2 = 17/2."
+  }
+]

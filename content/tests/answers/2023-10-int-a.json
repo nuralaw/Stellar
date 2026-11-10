@@ -1,0 +1,652 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Mole is compared to someone woken from a dream all at once, without warning, who then struggles to recall it. \"Suddenly\" describes that quick, unexpected waking, so \"abruptly\" fits. Nothing suggests the waking happens over and over (B) or by choice (C).",
+    "fix": {
+      "passage": "The following text is adapted from Kenneth Grahame’s 1908 novel The Wind in the Willows. The Mole is dazed after briefly meeting a stranger while traveling with a friend.\n\n[The] Mole stood still a moment, held in thought. As one wakened <u>suddenly</u> from a beautiful dream, who struggles to recall it, and can re-capture nothing but a dim sense of the beauty of it, the beauty! Till that, too, fades away in its turn."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The dash explains the goal: to see whether differences in age and sex go with \"considerable variations\" in venom potency. A \"substantial\" effect matches \"considerable.\" \"Imperceptible\" is the opposite, and \"acceptable\" or \"disconcerting\" add judgments the text never makes."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Chicago offers a wide range of art, from sculptures to murals, that can fully satisfy what art lovers like. \"Satiate\" means to satisfy completely, so it fits \"the tastes of art lovers.\" \"Venerate\" means to honor, which art does not do to tastes, and \"supplant\" (replace) and \"mitigate\" (lessen) make no sense here.",
+    "fix": {
+      "passage": "From sculptures like Miro's Chicago by Joan Miro, found at Brunswick Plaza, to street art like Justus Roe's mural South Shore on South Exchange Avenue, Chicago offers an array of works to _____ the tastes of art lovers."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Intergeneric forms mix elements of different genres, and Tate's pieces \"straddle the line between prose and poetry.\" Such work can't be neatly placed in one category, so it is \"unclassifiable.\" \"Orthodox\" (conventional) is the opposite of what's described, and nothing suggests the forms are \"recurrent.\""
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Nobel honors those who brought \"the greatest benefit to mankind,\" and Synge won it for inventing partition chromatography. That work moved chemistry forward, so it was a significant \"advancement in\" the field. \"Controversy in\" clashes with the idea of benefit, and \"exposure to\" or \"dependence on\" don't describe an invention that earned a prize."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Darius starts by saying he \"felt like a tourist,\" but after Babou fusses over him, looks at him hopefully, and says he's glad Darius is there, Darius decides \"Maybe I wasn't such a tourist.\" The passage shows Babou changing how Darius sees himself. Choice A fails because nothing says Darius was eagerly awaiting the celebration.",
+    "fix": {
+      "passage": "The following text is adapted from Adib Khorram’s 2018 novel Darius the Great Is Not Okay. Darius, a teenager from the United States, is visiting his grandparents, Babou and Mamou, in Iran. They are preparing for a holiday celebration.\n\nI felt like a tourist. But Babou fussed with my cap a little more, even though Mamou had already gotten it settled. He looked me in the eye from time to time, like he was looking for something, and thought maybe—just maybe—I had it in me after all. Babou hummed to himself as he smoothed out my shoulder seams and rested his hands on them. “I am glad you are here to see this, Darioush-jan.” Maybe I wasn’t such a tourist.\n\n©2018 by Adib Khorram"
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bartley claims that any misfortune in the world always lands on him, and the underlined simile \"like a flock of crows on seed potatoes\" gives a vivid picture of trouble swooping down on him. It reinforces his complaint rather than doubting it (C). It is a figure of speech, not something he actually saw at the fair (B).",
+    "fix": {
+      "passage": "The following text is from Lady Gregory's 1904 play Spreading the News. Mrs. Tarpey, Bartley, and Mrs. Fallon have been buying and selling goods at the local fair.\n\nMRS. TARPEY: Good morrow, Bartley Fallon; good morrow, Mrs. Fallon. Well, Bartley, you'll find no cause for complaining to-day; they are all saying it was a good fair.\n\nBARTLEY: (Raising his voice.) It was not a good fair, Mrs. Tarpey. It was a scattered sort of a fair. If we didn't expect more, we got less. That's the way with me always; whatever I have to sell goes down and whatever I have to buy goes up. If there's ever any misfortune coming to this world, it's on myself it pitches, <u>like a flock of crows on seed potatoes.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After praising Jones's talent, the underlined sentence says that featuring Blackfeet main characters helped make a place for Indigenous people in horror. That explains why the novella's portrayal of Indigenous people matters. It makes no prediction about non-Indigenous authors (D) and doesn't address whether the book draws on Jones's life (A).",
+    "fix": {
+      "passage": "The 2017 novella Mapping the Interior confirmed that Stephen Graham Jones is one of the most talented writers of horror fiction today. <u>By featuring main characters who are Blackfeet, like Jones himself, the novella also helped to ensure that Indigenous people have a place within the horror genre.</u> But Jones is hardly the only Indigenous voice in horror: Metis author Cherie Dimaline has also written in the genre. Her acclaimed 2019 novel Empire of Wild is set in a Metis community in southern Canada.",
+      "choices": {
+        "A": "It challenges the widely held view that Stephen Graham Jones based Mapping the Interior on events in his own life.",
+        "B": "It asks why so many readers who don't enjoy the horror genre have purchased Mapping the Interior.",
+        "C": "It highlights the significance of the portrayal of Indigenous people in Mapping the Interior.",
+        "D": "It predicts that non-Indigenous authors will include more Indigenous characters in their work."
+      }
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Robert is described with balanced strengths (daring but not rash, firm but not harsh) and he quickly earns the respect of his officers and the love of his comrades. Together these show he is well suited to army life. Choice A fails because the respect comes from his conduct, not from any effort to get attention.",
+    "fix": {
+      "passage": "The following text is from Frances E. W. Harper's 1892 novel Iola Leroy. The text describes Robert Johnson, who has recently joined the US Army.\n\nHe was daring, without being rash; prompt, but not thoughtless; firm, without being harsh. Kind and devoted to the company he drilled, he soon won the respect of his superior officers and the love of his comrades."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says defining a neighborhood \"is subjective,\" \"so\" the team used a clustering algorithm to find dense groups of amenities that match real neighborhoods. The algorithm gave them an objective way to draw neighborhood boundaries. Choice D describes the purpose of the overall predictive model, not the reason for the clustering step."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the Pyramid of Djoser (Egypt, 4,600 to 4,700 years old) has a height of 60 meters. The other heights belong to other pyramids: 47 m is the Pyramid of Sahure, 33 m is the Great Pyramid in Mexico, and 40 m is El Castillo.",
+    "fix": {
+      "passage": "A student is writing an essay about four pyramids for a history class and wants to note how long ago each pyramid was built and how tall each pyramid is. Consulting the table, the student finds that the Pyramid of Djoser was built 4,600 to 4,700 years ago and is _____",
+      "table": {
+        "caption": "Pyramids in Egypt and the Americas",
+        "headers": [
+          "Pyramid",
+          "Country",
+          "Height (meters)",
+          "Age (years before present)"
+        ],
+        "rows": [
+          [
+            "The Great Pyramid",
+            "Mexico",
+            "33",
+            "2,050 to 2,400"
+          ],
+          [
+            "The Pyramid of Djoser",
+            "Egypt",
+            "60",
+            "4,600 to 4,700"
+          ],
+          [
+            "The Pyramid of Sahure",
+            "Egypt",
+            "47",
+            "4,400 to 4,500"
+          ],
+          [
+            "El Castillo",
+            "Belize",
+            "40",
+            "1,100 to 1,400"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show the painting marks a significant change, the quotation should show John's work was different before and after it. C says her earlier paintings belong to a style she \"never returned\" to after Mère Poussepin, which marks it as a turning point. Choice B praises the painting as her best but says nothing about change."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Wing size stands in for body size, which goes with life span, so the claim needs a larger wing size in a warmer month. July (high 87°F) had an average male wing size of 2.02 mm, larger than October's 1.98 mm (high 67°F). Choice A compares males and females, not warm and cool months, and C misreads July's female value, which is 2.31 mm.",
+    "fix": {
+      "passage": "Drosophila (fruit flies) have generation times of 10-12 days, so seasonal changes in humidity and other environmental conditions can drive seasonal fluctuations in chromosome rearrangements in species such as D. persimilis and D. subobscura. Drosophila body size (for which wing centroid size serves as a proxy measure) correlates with life span. Banu Sebnem Önder and Cansu Fidan Aksoy measured the wing sizes of members of a D. melanogaster population in Yeşilöz, Turkey, that were collected monthly between May and October over three years. Their research suggests that Drosophila collected in relatively warmer months should tend to have a longer life span, as is illustrated by the finding that _____",
+      "table": {
+        "caption": "Monthly Temperatures and Wing Centroid Sizes of Fruit Fly Specimens",
+        "headers": [
+          "Month",
+          "Average high (°F)",
+          "Average low (°F)",
+          "Average male wing centroid size (mm)",
+          "Average female wing centroid size (mm)"
+        ],
+        "rows": [
+          [
+            "October",
+            "67",
+            "44",
+            "1.98",
+            "2.29"
+          ],
+          [
+            "May",
+            "73",
+            "50",
+            "1.98",
+            "2.27"
+          ],
+          [
+            "July",
+            "87",
+            "62",
+            "2.02",
+            "2.31"
+          ],
+          [
+            "September",
+            "80",
+            "54",
+            "1.98",
+            "2.27"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Mandarin, the language of north China, dominates in Flushing, while Cantonese and Fuzhounese, from south China, dominate in Chinatown. The logical inference is that immigrants from the north tend to settle in Flushing and those from the south in Chinatown. The text gives no numbers comparing speakers (D) and says nothing about people moving between boroughs (B)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Swords first appeared in Britain in the Middle Bronze Age (about the 14th to 10th centuries BCE). The Llanarmon-yn-Iâl hoard is from the 16th century BCE, before swords existed, while the Horsehope Craig hoard is from the 7th century BCE, after. So only the later hoard could show sword production. Choice A wrongly says both hoards had such evidence, and the dates of discovery in B are irrelevant."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Home to roughly 710,000 people\" must describe the subject that comes right after the comma. Only the city of Riga can be home to people, so A places it correctly. C and D make a percentage the thing that is \"home to\" people, a dangling modifier, and B lacks a proper subject-verb structure."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins a phrase set off by commas that describes the researchers, while the main verb of the clause is \"aimed.\" The participle \"using\" correctly forms that descriptive phrase. \"Used\" or \"use\" would act as a second main verb with no conjunction, and \"to use\" suggests purpose, which doesn't fit between commas here."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both sides of the blank are independent clauses: the first ends with \"the 1950s,\" and the second is \"its efforts were largely successful\" (with \"given...photos\" as an introductory phrase). Two independent clauses can be joined with a comma plus \"and.\" A comma alone (C) is a comma splice, and B and D run the clauses together incorrectly."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Doleschallia bisaltide\" is the essential name that identifies which species is meant, so no punctuation should separate \"species\" from it. A comma, semicolon, or colon would wrongly break up the noun phrase \"the species Doleschallia bisaltide.\""
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Sei Shōnagon composed many lists\" is a complete sentence, and so is the rest (\"In 'Things That Have Lost Their Power,' ... she bemoans...\"). Ending the first sentence with a period and starting the second with \"In\" separates them correctly. A semicolon (A) or colon (D) would leave the second part without the preposition it needs, and B runs everything into one confusing sentence.",
+    "fix": {
+      "passage": "Sei Shōnagon composed many _____ “Things That Have Lost Their Power,\" which appears in her tenth-century account of Japanese courtly life, Pillow Book, she bemoans boats run aground, toppled trees, and defeated wrestlers."
+    }
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"the artworks,\" which is plural, so the plural \"they\" is needed. \"It,\" \"this,\" and \"that\" are singular and don't agree with the plural noun."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence states what \"one might assume\": that the offshore farm makes the same energy as similar land farms. The next sentence shows that assumption is wrong, since the offshore turbines produce more. \"Actually\" signals that kind of correction. \"Therefore\" would treat the second sentence as following from the first, which it doesn't."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes viewers of an annular eclipse in 1926, and the second describes a different kind of eclipse (partial) seen in 1927. \"On the other hand\" introduces that contrasting case. \"Simultaneously\" is wrong because the events were over a year apart, and \"As a result\" implies a cause that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because Italian was the default language of opera scores for centuries, singers today run into many Italian terms in older scores. The second sentence is a result of the first, so \"Consequently\" fits. \"However\" would signal a contrast, but the two ideas agree."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must involve both films. D names both The Dungeon and The Fighting Ranger and points out what they share: each would be a valuable historical document, and each is lost. Choice A mentions both films but highlights their different directors, and C mentions only one film.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Silent films can be valuable historical documents of their time.\n• Ninety percent of silent films made before 1930 are now lost.\n• A film is considered lost when no remaining copies are known to exist.\n• Director Oscar Micheaux's 1922 silent film The Dungeon is lost.\n• Director Jay Marchant's 1925 silent film The Fighting Ranger is lost.\n• Archives such as the Pacific Film Archive in Berkeley, California, help preserve some of the remaining films from the 1920s."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The relationship is that ITUC-Africa represents the BFTU, and B states exactly that: the BFTU is one of the national federations ITUC-Africa represents. Choices A and D each describe only one organization, and C describes what national federations do without linking the two.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Botswana Federation of Trade Unions (BFTU) is a national union federation for the African nation of Botswana.\n• It helps improve conditions for workers in that nation.\n• ITUC-Africa is a regional union federation that represents national union federations across Africa.\n• It represents the BFTU."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the two refuges, the sentence must name both and show a difference. A uses \"While\" to set Virginia and the Atlantic coast against California and the Pacific coast. Choice C mentions both refuges but stresses what they have in common, and B and D don't compare the two.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The United States has designated more than 500 areas National Wildlife Refuges (NWRs).\n• Some NWRs were established specifically to protect endangered species.\n• The James River NWR is a 4,147-acre area in Virginia, on the Atlantic coast.\n• It was established to protect the endangered bald eagle.\n• The Hopper Mountain NWR is a 2,471-acre area in California, on the Pacific coast.\n• It was established to protect the endangered California condor."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence calls these portraits \"characteristic works\" and \"esteemed,\" so Edwards is known for painting notable people. Having a \"reputation for\" something means being known for it. \"Complaint about\" and \"question about\" don't fit the praise, and nothing suggests the portraits are a \"requirement.\""
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The book \"has earned a lot of praise,\" and \"In fact\" introduces stronger support for that: it got an award. A book \"received\" an award. \"Blamed,\" \"guessed,\" and \"forgot\" make no sense with an award."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The data were \"mostly inaccessible\" until the project, which then let Weber use them. So the project made the data \"available,\" the opposite of inaccessible. \"Complicated\" or \"predictable\" don't explain why she could suddenly use the information."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Counting how often other scholars cite a researcher's work is a way to judge how important it is, as the Malmendier example shows. To \"assess\" means to evaluate or measure, which fits. Tracking citations doesn't \"influence\" or \"undermine\" a study's importance; it only measures it."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first defines horizontal gene transfer and notes where it is common, then says it can increase antibiotic resistance, so understanding how to prevent it could help fight pathogens. That is a description of a process followed by a reason studying it matters. Choice B fails because the text is about a process, not one threatening organism, and A fails because no research history is given.",
+    "fix": {
+      "passage": "Horizontal gene transfer involves the exchange of genetic material between organisms not in a parent-offspring relationship. It is common among prokaryotes (single-celled organisms, such as the bacteria Carnobacterium viridans and Lactococcus lactis). The process can have the effect of increasing bacterial resistance to antibiotics; as such, an understanding of how to prevent horizontal gene transfer might result in the mitigation of dangerous pathogens (organisms that cause disease)."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 claims the City of Gastronomy honor is well known to both residents and tourists. Text 2 warns that without deliberate marketing, many current and potential visitors may not even know about Bergamo's food scene, so it would doubt that the honor is widely known beyond the city. Choice C fails because Text 2 is concerned with tourism, not other benefits.",
+    "fix": {
+      "passage": "Text 1\nIn 2019 Bergamo, Italy, was named a City of Gastronomy by UNESCO in recognition of the city’s unique food culture. <u>The honor is well known among both residents of the city and tourists who visit.</u> It’s obvious that the selection of Bergamo by UNESCO has brought awareness to local recipes, cooking practices, and chefs and has provided a boost to the city’s tourism industry.\n\nText 2\nMany residents of Bergamo hoped that food tourism would increase after the city was chosen as a City of Gastronomy in 2019. However, as researcher Eerang Park and colleagues argue, cities must still create effective marketing strategies to benefit fully from being named a City of Gastronomy. Without an intentional effort to promote the city’s food scene, many current and potential visitors to Bergamo may not even be aware that it’s home to uniquely delicious food.",
+      "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?"
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Davis and Evans \"omitted parts, such as the aria 'I Got Plenty of Nuthin','\" from their adaptation of Gershwin's opera. So the aria is in the original but not in their version. Choice B confuses it with the \"brief gestures\" they made toward other Gershwin melodies."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Defoe contrasts a sermon, which lasts only as long as memory holds it, with a printed book, which stays in people's hands and carries its contents \"for ages to come.\" The main idea is that printed words last longer than spoken ones. Choice D picks up the phrase about the author being forgotten, but that is a detail, not the point.",
+    "fix": {
+      "passage": "The following text is adapted from Daniel Defoe's 1704 nonfiction book The Storm.\n\nThe sermon is a sound of words spoken to the ear, and prepared only for present meditation, and extends no farther than the strength of memory can convey it; a book printed is a record, remaining in every man's possession, always ready to renew its acquaintance with his memory, and always ready to be produced as an authority or voucher to any reports he makes out of it, and conveys its contents for ages to come, to the eternity of mortal time, when the author is forgotten in his grave."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The lowest weight in the table is 200 pounds, for bear 122, which is a male that is 3 years old. Choice A (the 13-year-old female) is the second lightest at 375 pounds, and the others weigh 400 and 800 pounds.",
+    "fix": {
+      "passage": "Scientists collected information about brown bears in Katmai National Park in Alaska. This information included each bear's sex, age, and approximate weight. The bear with the lowest approximate weight shown in the table was a _____",
+      "table": {
+        "caption": "Brown Bears in Katmai National Park, Alaska",
+        "headers": [
+          "Bear identification number",
+          "Sex",
+          "Age (years)",
+          "Approximate weight (pounds)"
+        ],
+        "rows": [
+          [
+            "106",
+            "female",
+            "6",
+            "400"
+          ],
+          [
+            "119",
+            "male",
+            "10",
+            "800"
+          ],
+          [
+            "183",
+            "female",
+            "13",
+            "375"
+          ],
+          [
+            "122",
+            "male",
+            "3",
+            "200"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the streaky rockskipper row, the Station 3 column shows 610, far more than at the other stations. Choice C (125) is the count at Station 1, A (90) is the Cocos frillgoby at Station 3, and D (249) is the barred flagtail at Station 1.",
+    "fix": {
+      "passage": "Lin-Tai Ho and colleagues tracked fish populations in three tide pool–monitoring stations in Taiwan from 1999 to 2018. The streaky rockskipper was especially common at station 3: there, the researchers counted _____",
+      "table": {
+        "caption": "Cumulative Counts of Fish in Three Taiwanese Tide Pools, 1999-2018",
+        "headers": [
+          "Species",
+          "Station 1",
+          "Station 2",
+          "Station 3"
+        ],
+        "rows": [
+          [
+            "barred flagtail",
+            "249",
+            "64",
+            "16"
+          ],
+          [
+            "streaky rockskipper",
+            "125",
+            "139",
+            "610"
+          ],
+          [
+            "blackspotted rockskipper",
+            "83",
+            "74",
+            "31"
+          ],
+          [
+            "Cocos frillgoby",
+            "50",
+            "64",
+            "90"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim needs figurative language that links Washington, DC, to the rural South. In A, soil from the narrator's southern homeland \"falls like a fertile shower\" on DC's streets, a simile that ties both places together. Choice C is figurative but describes only DC, and B is a literal description."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that irrigation is humanity's main use of water. B says about 70% of the world's water withdrawals go to irrigation, which shows it is the largest use. The other choices discuss the history or methods of irrigation and say nothing about how much water it uses compared with other uses."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis predicts that languages farther from Africa, reached by more rounds of splitting, keep fewer sounds. B fits: Eastern Europe is closer to Africa than East Asia is, and its languages have more sounds. Choice C reverses this pattern, and A shows the more distant region with more sounds, which would weaken the hypothesis."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Mosquitoes become resistant to repellents, and EBF works by activating just Or31, a receptor found in every disease-carrying mosquito species. So the logical next step is to look for other molecules like EBF that target Or31. Choice D goes the other way, focusing on activating many receptors rather than the one key receptor."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says volunteering helps society as a whole, yet only 6% of young people see it as a way to fix society's problems. That suggests volunteering may be more useful than many young people realize. Choice C goes too far by claiming it helps society more than it helps individuals, which the text never says."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence is a statement explaining why David is celebrated, not a question, so it needs normal statement word order (\"he has become\") and a period. A and B use question word order, and C puts a question mark on a statement."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Ann Greely,\" one person, and the action took place in the late 1800s. The singular past-tense verb \"was\" agrees with her. \"Were,\" \"are,\" and \"have been\" are plural forms, and \"are\" is also the wrong tense."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"The city,\" which is singular (\"in Ecuador\" is just a describing phrase), and the fact is still true, so the singular present \"is\" is correct. \"Are,\" \"are being,\" and \"have been\" are plural."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The phrase \"from 18.4°C at 11:00 a.m. to 16.2°C at 7:00 p.m.\" is one continuous unit, so no punctuation belongs inside it. Choices A, B, and D insert a comma or colon after \"from\" or after \"at,\" splitting a preposition from its object.",
+    "fix": {
+      "passage": "On February 1, 2018, Florida-based researchers Martha A. Scholl, Maoya Bassiouni, and Angel J. Torres-Sánchez compiled climate data from several sites in Puerto Rico's Luquillo Mountains. At CC1, the site with the highest elevation, the air temperature fluctuated slightly throughout the day, _____ 11:00 a.m. to 16.2°C at 7:00 p.m."
+    }
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins a phrase describing the chemical reactions, and the main verb of the sentence is \"had to devise.\" The participle \"occurring\" correctly forms a modifier: reactions occurring within molecules. \"Occur\" and \"will occur\" would need a subject and conjunction, and \"occurred\" wrongly suggests past reactions he measured before inventing the technique."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Which is about 0.38 miles long\" is extra information about the Harbor Park bicycle path, so it must be set off by a pair of commas before the verb \"have become\" continues the sentence. D does this. A opens with a comma but never closes it, and B and C use only one comma or none at the start."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the dyeing steps in order: first soak, next simmer, and then remove the cloth. \"Finally\" marks that last step. \"However\" and \"Actually\" signal contrast, and \"Therefore\" signals a conclusion, none of which fit a step in a sequence."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Chaucer pioneered English as a literary language. The next sentence adds strong evidence for that: he documented over 2,000 English words for the first time and was called \"the first finder of our fair language.\" \"In fact\" introduces that supporting emphasis. \"However\" and \"On the contrary\" wrongly signal a contrast."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain why musicians prize these violins, and the notes give the reason: their famed sound quality. B states that directly. The other choices give facts about naming, Stradivari's lifespan, or one owner, none of which explains why the violins are valued.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Antonio Stradivari (1644–1737) made about 1,000 violins in his lifetime.\n• Musicians prize his Stradivarius violins for their famed sound quality.\n• Many of the 500 or so that exist today are named for a previous owner.\n• The Leonora Jackson Stradivarius is named for Leonora Jackson, an American violinist."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To specify Bellini's role, the sentence should connect him to neutrinos and say what he did. A says his research on solar and geoneutrinos has advanced understanding of neutrinos. Choice D mentions Bellini but not neutrinos, and B and C don't mention him at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Gianpaolo Bellini is an Italian particle physicist.\n• Particle physicists study subatomic particles.\n• Neutrinos are some of the least understood subatomic particles.\n• Neutrinos were first discovered in the mid-twentieth century.\n• Bellini is known for his research on solar and geoneutrinos."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must involve both artifacts. B names the spoon and the purse and says they are both featured in the archive and relevant to Choctaw history. Choices C and D focus on a difference in dates, and A mentions only the spoon.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hina Hanta is an online archive curated by the Choctaw Nation of Oklahoma.\n• It features images of cultural artifacts relevant to the history of the Choctaw people.\n• It features a spoon (ivpish ishtimpa in Choctaw) made of buffalo horn.\n• The spoon was made in 1800.\n• Hina Hanta features a purse (shukcha in Choctaw) made of beaded leather.\n• The purse was made in 1949."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The question asks for the general role of color consultants, and D explains it: at each Fashion Week they compile reports on the shades that are popular with designers. Choices A and B give single examples of reports without explaining the role, and C doesn't mention consultants at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• At London and New York Fashion Weeks, fashion designers debut new clothing collections.\n• Color consultants create trend reports on the popular colors at a given Fashion Week.\n• A report on 2018 London Fashion Week noted the popularity of an imaginative purple shade that was cool in tone and bright in intensity.\n• A report on 2019 New York Fashion Week noted the popularity of a deep red shade that was warm in tone and rich in intensity."
+    }
+  }
+]

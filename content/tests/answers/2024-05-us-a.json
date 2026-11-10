@@ -1,0 +1,1058 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Gogol \"leaves his signature in fat brush strokes below paintings,\" so he is putting his name onto the paper with a brush, which means he writes it. \"Switches,\" \"allows,\" and \"promotes\" don't describe producing a signature, and \"allows\" mistakes the active act of signing for permission.",
+    "fix": {
+      "passage": "The following text is adapted from Jhumpa Lahiri’s 2003 novel The Namesake. Gogol is an elementary school student in Massachusetts.\n\nIn art class, his favorite hour of the week, he carves his name with paper clips into the bottoms of clay cups and bowls. He pastes uncooked pasta to cardboard, and leaves his signature in fat brush strokes below paintings."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The program was trained to identify sidewalks, and the sentence adds that it could even tell concrete from cobblestone, so it accurately found, or detected, the sidewalks. \"Mistook\" contradicts \"accurately,\" and a program doesn't \"approve\" or \"neglect\" sidewalks it is mapping."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The bridge rests on \"massive sandstone pillars,\" which physically hold it up. \"Nurtured\" and \"endorsed\" suggest care or approval that stone pillars can't give, and nothing in the text says the pillars improved the bridge.",
+    "fix": {
+      "passage": "The following text is adapted from John Matheus’s 1925 short story “Fog.”\n\nThe fog extended its tentacles over city and river, gradually obliterating traces of familiar landscapes. At five-thirty the old Panhandle bridge, supported by massive sandstone pillars, stalwart, as when erected fifty years before to serve a generation now passed behind the portals of life, had become a spectral outline against the sky."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence calls this writing a \"flood,\" so writers contributed to a large outpouring of poetry, fiction, and essays. \"Overturning\" and \"censure\" suggest rejection or criticism, and \"protection\" doesn't match the idea of a huge amount of new writing."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first gives one achievement, Carter's 1867 children's stories in The Elevator, and calls it an example of Black journalism's rich history. It then describes the National Association of Black Journalists, which preserves that history. There is no theory (A), recruiting plan (C), or comparison of two careers (D)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines community science (an approach to research), lists its benefits (helping conservation, building youth confidence, more data), and ends with Merrill's butterfly study that used it. Choice B fails because the text doesn't argue the approach is new or report public opinion, and D fails because the study's results are never given."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text defines convergent evolution, describes Chan's and Zwaan's research on two ways it can happen, and then mentions Green and Extavour's study that looked at both. Choice C reverses the order and invents a critique, and B is wrong because no assumption is called unfounded."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Teresa wakes up startled by a news report and then remembers how slowly and almost willingly she drifted to sleep the night before. So the text is about her waking and how she fell asleep. It never says she watches the news only before bed (B), and the clouds aren't something she is enjoying (C).",
+    "fix": {
+      "passage": "The following text is from John Manuel Arias’s 2023 novel Where There Was Fire. Teresa lives in Barrio Ávila, a neighborhood in a Costa Rican city.\n\nObservant clouds gathered over Barrio Ávila. Teresa sat up in her bed, startled by a flashing news report on television. She wasn’t sure when she’d fallen asleep. Four in the morning, maybe. On most nights, sleep came quickly to her. Violently. But last night, Teresa felt as if she had waded into it slowly, almost willingly. As one does when playful moonlight splashes in the receding tide and invites you to join it."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says that as renewable energy becomes more economically competitive, demand for petroleum falls, so competition from renewables affects petroleum demand. Choice D is the opposite of the text, which says falling demand turns the companies' inventory into a liability."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Miguel had heard the Ureña girls were smart daughters of a famous poet, and he was \"hoping not only to meet us but to make the acquaintance of the poet himself.\" That matches wanting to be introduced to both the sisters and their father. Choice B describes the narrator, not Miguel, and nothing says he wants to recite poems or find a mentor.",
+    "fix": {
+      "passage": "The following text is from Julia Alvarez’s 2000 novel In the Name of Salomé. The narrator and her sister, daughters of a famous poet, are being tutored by Alejandro Román.\n\nOur tutor, Alejandro Román, brought his younger brother, Miguel, to class one day. By now I was eighteen and had learned everything Alejandro had to teach me, so I was glad for a new face. Miguel was an aspiring poet, and he had heard from his brother that the Ureña girls were none other than the daughters of Nicolás Ureña, and they were smart as clockwork. Miguel was hoping not only to meet us but to make the acquaintance of the poet himself at Mamá’s house."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The butterflies' maximum charge (about 300 pC) is high enough for electrostatic pollen transfer, and Anna's hummingbirds reach about 800 pC, even higher. So hummingbirds should be able to do it too. Choice D is wrong because common wasps reach only about 50 pC, less than the butterflies, and the graph says nothing about a 200 pC minimum (B)."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Valerio's team concluded snowball sampling may be better at recruiting people with the characteristics a study needs. Finding that it produced significantly more participants with those characteristics than purposive sampling would directly back that up. Choice D compares snowball sampling to random contact, not to purposive sampling, and A would actually weaken the conclusion."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For failing to meet the charitable distribution (undistributed income) requirement, the share of the total penalty was about 80% in 2003 but only about 55% in 2005, so D matches the graph. Choice C fails because self-dealing went from about 10% to about 5% before jumping to about 40%, which isn't a steady increase. The graph shows percentages of the total, not average penalties (B), and has no Form 990 data (A)."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text points out that captive animals spend much more time with humans, and humans are strongly right-handed. That suggests the right-handedness in the captive chimpanzees and squirrel monkeys may partly come from contact with humans. Sample sizes (A, D) and measurement standards (B) are never discussed."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Economists expected liberalization to make it easier for companies to raise money, and Henry found significant increases in investment after liberalization. So the evidence matched the standard view. Nothing in the text mentions negative effects (B), and the increases came within the three years, not after them (C)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence's subject is Interpol, and it has no main verb yet, so it needs a finite verb: \"oversees.\" \"To oversee,\" \"overseeing,\" and \"having overseen\" are not finite verbs and would leave the sentence incomplete."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The particles belong to the Andromedid stream, a singular noun, so the singular possessive \"its\" is needed. \"Their\" is plural and doesn't match \"the Andromedid stream,\" while \"it's\" and \"they're\" are contractions meaning \"it is\" and \"they are.\""
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"a fragrant and flexible material\" interrupts the sentence after an opening dash, so it must be closed with a matching dash before the sentence continues with \"to craft baskets.\" A semicolon, colon, or period would cut off \"to craft baskets,\" which isn't an independent clause."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase about Pascal being created by Wirth for teaching is closed with a dash after \"skills,\" so it must also open with a dash. Choices B and D start with a comma, which can't pair with the closing dash, and C has no punctuation at all."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"US biologist\" is a title right before the name \"Brad Gemmell,\" so no comma separates them, and no comma should split the subject \"Brad Gemmell and colleagues\" from the verb \"found.\" Each other choice puts in at least one of these unneeded commas."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Brown eyes for one sibling and green eyes for the other is a contrast, so \"by contrast\" fits. \"For example\" would present the second sibling as another case of the same thing, which isn't the relationship here."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Lowering the voting age from 21 to 18 caused many young people to gain a new chance to vote, so a cause-and-effect transition like \"consequently\" fits. \"Nevertheless\" and \"by contrast\" signal contrast, and \"similarly\" signals a parallel point."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence explains, as something to be expected, why the 1920 calculation was less accurate: it used only cardboard and string. \"Of course\" introduces that obvious explanation. \"Likewise\" signals similarity, \"to that end\" signals purpose, and \"ultimately\" signals a final result."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say that both soundscapes are on the list, and C names the cicadas at Yama-dera and the birds at Higashiyama together as being on it. Choice B mentions only one soundscape, D only the other, and A mentions neither.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Japanese Ministry of the Environment made a list of 100 soundscapes of Japan.\n• Each soundscape on the list was selected for its cultural significance to Japan.\n• The sound of cicadas at the Yama-dera temple is on the list.\n• The sound of birds at the Higashiyama Botanical Garden is on the list."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Comparing lengths requires both numbers, and D states 109 miles versus 19.7 miles and says one is much longer. Choice B is false, since the trails are far from identical in length, and A and C don't give both lengths.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Many disused railroad corridors in the US have been converted into public trails since the 1960s.\n• Such trails are known as rail trails.\n• The George S. Mickelson Trail is a rail trail located in South Dakota.\n• It is 109 miles long and is made of crushed stone.\n• The Cannon Valley Trail is a rail trail located in Minnesota.\n• It is 19.7 miles long and is made of asphalt."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize Malta's ships' tonnage, and A gives their average DWT of 54,000 tons and shows it is far above the global average. Choices C and D are about Taiwan, and B gives ship counts, not tonnage.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A ship’s carrying capacity is also known as its deadweight tonnage (DWT).\n• In 2021, a total of 2,137 merchant ships were registered in Malta.\n• The average DWT of these ships was 54,000 tons per ship.\n• In 2021, a total of 429 merchant ships were registered in Taiwan.\n• The average DWT of these ships was 17,000 tons per ship.\n• The average DWT among all merchant ships globally was 21,389 tons per ship."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "D gives an actual nickname, Spike, and says which fossil specimen it belongs to. Choices B and C mention that specimens get nicknames but never give one, and A describes the specimen without its nickname.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Dinosaur fossil specimens can be found at science museums all over the world.\n• Many dinosaur fossil specimens are given nicknames.\n• The New Mexico Museum of Natural History in Albuquerque, New Mexico, houses a dinosaur fossil specimen nicknamed Spike.\n• Spike lived in the Late Cretaceous period, which ended more than 65 million years ago.\n• It is a member of the genus Pentaceratops."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Excavating takes weeks or months of \"hard, physically tiring work,\" so the process is difficult. \"Rapid\" contradicts the long time it takes, and nothing about the work suggests it is cheap or common."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Esteban \"walked straight to his seat without looking at the rest of us,\" so he went directly there without stopping. \"Truthfully\" is a different sense of \"straight,\" and \"delightedly\" clashes with how sad and heavy he seems.",
+    "fix": {
+      "passage": "The following text is from Jacqueline Woodson's 2018 novel Harbor Me. In the novel, the narrator and Esteban are classmates.\n\nAn hour after class started on that Friday, Esteban came in, his head down, his hair slicked wet against his forehead, his Yankees cap dripping with rain. He walked straight to his seat without looking at the rest of us. I watched him sink into his seat so sadly and heavily, it felt like the whole room shivered."
+    }
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator drops his bag, sets down his guitar, and places his keys on the bowl, so \"place\" means put. \"Rank\" is a different meaning of \"place,\" and he isn't removing or unlocking anything.",
+    "fix": {
+      "passage": "The following text is from Lilliam Rivera’s 2020 novel Never Look Back. The text describes the narrator arriving at his father’s apartment.\n\n“Pops, I’m here!” I drop my bag and set my guitar case against a wall. I place my keys on the bowl right next to the ceramic elephant Pops got me on one of his trips to Santo Domingo when I was a little kid."
+    }
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The examples show artists combining Choctaw hymns with folk-pop and powwow melodies with rock, so they fuse Indigenous music with other styles. \"Analyze\" and \"exaggerate\" don't describe blending genres, and \"acquire\" misses the idea of mixing."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports what Martín-Seijo's team found when they studied the plant-based artifacts: many were older than expected. That is an outcome of their study. The sentence doesn't count flint tools (A), discuss linen improving (B), or mention a city (D).",
+    "fix": {
+      "passage": "Historical artifacts made from plant-based materials, such as linen fabrics, can tell us a lot about life and culture in prehistoric societies. But archaeologists don’t find these kinds of plant-based items frequently because they are more likely to fall apart over time than are durable artifacts, like flint tools. <u>When María Martín-Seijo and team studied a unique collection of old plant-based artifacts from a cave in Spain, they were surprised to find that many of the items were even older than previously thought.</u>"
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says that by featuring Blackfeet main characters, the novel helped secure a place for Indigenous people in horror, which explains why its portrayal of Indigenous people matters. It doesn't ask a question (B), predict what other authors will do (C), or dispute anything about Jones's life (D).",
+    "fix": {
+      "passage": "The 2021 novel My Heart Is a Chainsaw confirmed that Stephen Graham Jones is one of the most talented writers of horror fiction today. <u>By featuring main characters who are Blackfeet, like Jones himself, the novel also helped to ensure that Indigenous people have a place within the horror genre.</u> But Jones is hardly the only Indigenous voice in horror: Métis author Cherie Dimaline has also written in the genre. Her acclaimed 2019 novel Empire of Wild is set in a Métis community in southern Canada.",
+      "choices": {
+        "B": "It asks why so many readers who don't enjoy the horror genre have purchased My Heart Is a Chainsaw."
+      }
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 argues that publishing poets usually have training and practice that require time people with full-time jobs lack. Lorde says poets can write \"between shifts\" and on the subway, so she would answer that people can build poetry experience while working full time. Choice D treats jobs as a way to pay for training, which Lorde never discusses.",
+    "fix": {
+      "passage": "Text 1\nThe poet Audre Lorde once claimed that poetry is the most inexpensive of art forms to practice. While people who pursue other art forms—sculpture, film, long-form prose—require large blocks of uninterrupted time as well as money to complete their work, poets can write, as Lorde said, “between shifts, in the hospital pantry, on the subway, and on scraps of surplus paper.” So poets can practice their art even if they must earn their living in another way.\n\nText 2\nAny assessment of the state of contemporary poetry must reckon with the professionalization of the field. While it is possible in theory for anyone to publish in AGNI, Ploughshares, or a similar major poetry outlet, many people who do so have professional training in poetry and extensive practice writing it, which requires time not often available to those who must also work full-time jobs. Thus, financial security indirectly affects which people become poets."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states that the Museo de Las Americas \"has more than 4,800 objects in its collection.\" It was founded in 1991, not after 2000 (B), it is in Denver (D), and nothing compares its number of visitors (A)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains that horizontal gene transfer can increase antibiotic resistance, so understanding how to prevent it might help reduce dangerous pathogens. That means studying it could have useful applications. Nothing says a common belief is wrong (A), that new research contradicts old findings (B), or that it is more common than thought (D).",
+    "fix": {
+      "passage": "Horizontal gene transfer involves the exchange of genetic material between organisms not in a parent-offspring relationship. It is common among prokaryotes (single-celled organisms such as the bacteria Brevibacillus borstelensis and Hafnia alvei). The process can have the effect of increasing bacterial resistance to antibiotics; as such, an understanding of how to prevent horizontal gene transfer might result in the mitigation of dangerous pathogens (organisms that cause disease)."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim has two parts: Lady Caroline feels bitter, and she hides it. D shows both: a \"deep cynicism\" and disillusionment inside, while her \"gracious and charming outside\" stays the same. Choice C shows irritation that is hidden, but not deep bitterness, and B shows annoyance without any sign she conceals it."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The table lists Cuicocha as a caldera and Cayambe as a compound volcano, two different types, so C gives a correct example. A, B, and D each mislabel at least one volcano: Sumaco is a stratovolcano, Cuicocha is a caldera, and Santiago is a shield volcano.",
+    "fix": {
+      "passage": "A student who is researching volcanoes in Ecuador notes that the country is home to different types of volcanoes. For example, _____",
+      "table": {
+        "caption": "Volcanoes in Ecuador",
+        "headers": [
+          "Name of volcano",
+          "Year of last eruption",
+          "Volcano type"
+        ],
+        "rows": [
+          [
+            "Cayambe",
+            "1786 CE",
+            "compound"
+          ],
+          [
+            "Cuicocha",
+            "650 CE",
+            "caldera"
+          ],
+          [
+            "Sumaco",
+            "2016 CE",
+            "stratovolcano"
+          ],
+          [
+            "Santiago",
+            "1906 CE",
+            "shield"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that late onset of freezing helps invasive species more than natives. If both species kept producing leaves later in years with late freezing, but the invasive L. densiflorum gained much more extra time than the native O. secunda, the invasive benefits more. Choice A shows the invasive losing time, and D shows no effect at all."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To weaken the claim that similarity drives cross-category purchasing, show another factor that could explain the pattern. If similar pairs faced few competing brands while dissimilar pairs faced many, the higher cross-buying could come from limited competition rather than similarity. Choice B restates the pattern, which supports the student, and A doesn't explain why buyers would choose the same brand twice."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For a shared favorite recording, musicians tend to prefer a higher volume than nonmusicians. So if the musician's best volume is 84.8 decibels, the nonmusician's best volume should be lower, meaning they would enjoy the song more at a lower volume than at 84.8. The study compares volumes for the same recording, so it says nothing about preferring other recordings (A, C) or about all recordings (B)."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Washing machines use the 200 series, which is austenitic, while cooking utensils use ferritic steel, and ferritic steel has a higher percentage of chromium than austenitic steel does. So the washing-machine steel has less chromium. Choice A is wrong because the face-centered cubic structure belongs to austenitic steel, not the ferritic steel in utensils."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"The word 'pessimism'\" needs a main verb, and the past tense \"appeared\" fits a 1794 event. The other choices are not finite verbs, so they would leave the sentence without a main verb."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Two independent clauses are being joined: \"Metamorphoses ... dates back to the 1st century\" and \"the poem's heroic narrative still captivates modern readers.\" A comma plus the conjunction \"yet\" correctly joins them. A and D leave out the comma before \"yet\" or misplace it, and C is a comma splice."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Antonello ... sixteenth century\" and \"this group is referred to as the Venetian School\" are both independent clauses, so they need a period between them, and \"fittingly\" belongs to the second sentence. Choices A and C join two sentences with only a comma, and B attaches \"fittingly\" to the wrong sentence."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The definition \"a belt\" is set off like \"(a rope)\" earlier in the sentence, which opened with a parenthesis, so it must be closed with a matching parenthesis. A semicolon, dash, or comma can't close an open parenthesis."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The relative clause \"whose body of work ...\" needs its own finite verb, and \"is\" provides it: \"whose body of work is interdisciplinary.\" \"Having been,\" \"to be,\" and \"being\" aren't finite verbs, so the clause would be incomplete."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"What her favorite book was\" is an indirect question inside a statement, so it uses statement word order (subject before verb) and ends with a period. Choices C and D wrongly end a statement with a question mark, and A uses question word order with an exclamation point."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because modern planes have sleeker, more streamlined bodies, they are more aerodynamic, so the sentence is a result of the previous one. \"As a result\" fits. \"On the contrary\" and \"regardless\" signal contrast or disregard, which don't match."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since Kapteyn b is too far away to use soon, humanity must focus on planets in our own solar system in its place. \"Instead\" shows that substitution. \"For example\" and \"likewise\" don't fit because the last sentence is neither an example nor a similar point."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence gives the exact detail of the tribute: they named themselves after a song by the band Japan. \"Specifically\" introduces that more precise information. \"Instead\" and \"regardless\" wrongly suggest a contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says comics by other Black cartoonists followed Turner's, and Craft and Gary are examples of such cartoonists. \"For instance\" introduces examples. \"Previously\" is wrong because their comics came after 1965, and \"however\" signals a contrast that isn't there."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say a meander forms when water erodes sediment from one side of the riverbank and redeposits it on the other, and A states exactly that cause. Choice B describes the effect of many meanders (high sinuosity), and C and D describe a specific river instead of the cause.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A U-shaped curve in a river channel is called a meander.\n• A meander forms when water erodes sediment from one side of the riverbank and redeposits that sediment on the opposite side.\n• Meanders will gradually change shape and migrate downstream over time.\n• A river with high sinuosity has many meanders, and a river with low sinuosity has few.\n• The South Esk River in the United Kingdom has high sinuosity."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is location, and B says the Isthmus of Panama is in Central America, linking North and South America. Choices C and D define an isthmus in general, and A gives an example without saying where it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• An isthmus is a strip of land that connects two larger pieces of land across an expanse of water.\n• It is also known as a land bridge.\n• The Isthmus of Panama connects North America to South America.\n• The Isthmus of Panama is located in Central America."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The \"At least 45 years old\" row has a total of 114 members, and the organization has 135 members in all. So the probability is 114/135. Choice A uses the under-45 total (21), and B and C use the north and south column totals instead of the age row.",
+    "fix": {
+      "prompt": "The table summarizes members of a local organization by age and whether they live north or south of Center St. If a member of the organization is selected at random, what is the probability that the selected member is at least 45 years old?",
+      "table": {
+        "headers": [
+          "",
+          "Live north of Center St.",
+          "Live south of Center St.",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Less than 45 years old",
+            "10",
+            "11",
+            "21"
+          ],
+          [
+            "At least 45 years old",
+            "25",
+            "89",
+            "114"
+          ],
+          [
+            "Total",
+            "35",
+            "100",
+            "135"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "21/135",
+        "B": "35/135",
+        "C": "100/135",
+        "D": "114/135"
+      }
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"At least twice y\" means x ≥ 2y. With y = 51, x ≥ 2(51) = 102. Choices A and B add or subtract 2 instead of multiplying by 2."
+  },
+  {
+    "key": "m1-03",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To get m alone, divide both sides of 11m = 6(n + p) by 11: m = 6(n + p)/11. Choice C subtracts 11 instead of dividing, which isn't the inverse of multiplying by 11.",
+    "fix": {
+      "choices": {
+        "A": "m = 6(n + p)/11"
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add to 180°, and one angle is the right angle (90°). So a = 180 − 90 − 25 = 65. Choice A just repeats the given angle, and D is 90 + 25, which would make the angle sum too large."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 18 to both sides: 3x = 6, so x = 2. Then x − 6 = 2 − 6 = −4. Choice D is the value of x with the wrong sign, not x − 6."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "7"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Raise both sides to the 2n power: x^(2n) = 2x^n + 35. Let u = x^n, so u^2 − 2u − 35 = 0, which factors as (u − 7)(u + 5) = 0. An even root can't be negative, so x ≥ 0 and x^n ≥ 0, which rules out u = −5. So x^n = 7.",
+    "fix": {
+      "prompt": "If x = root[2n](2x^n + 35), where n is a positive integer constant, what is the value of x^n?"
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Sine is opposite over hypotenuse. The side opposite angle y is 5, and the hypotenuse (across from the right angle) is 26, so sin y° = 5/26. Choices C and D are greater than 1, which is impossible for a sine.",
+    "fix": {
+      "prompt": "In the triangle shown, what is the value of sin y°?",
+      "choices": {
+        "A": "5/26",
+        "B": "21/26",
+        "C": "26/21",
+        "D": "26/5"
+      }
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "10"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The initial deposit is the balance at x = 0 months, which is the y-intercept of the line. The graph crosses the y-axis at 10, so the initial deposit is $10. The value 40 is the balance after 10 months, not at the start."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "35"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two equal parts together are 117 − 47 = 70 cm. Each is 70/2 = 35 cm."
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Dividing the first equation by 2 gives x + y = 30. The second equation says x + y = 4x, so 4x = 30. There's no need to find x and y separately."
+  },
+  {
+    "key": "m1-11",
+    "answer": [
+      "2",
+      "7",
+      "9"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph crosses the x-axis where f(x) = 0, which happens when one of the factors is 0: x − 2 = 0, x − 7 = 0, or x − 9 = 0. So the x-intercepts are at x = 2, 7, and 9, and any one of them is correct."
+  },
+  {
+    "key": "m1-12",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 41: y = 0.67(41) + 2.6 = 27.47 + 2.6 = 30.07, which is closest to 30. Choice B comes from adding 41 + 2.6 and skipping the 0.67."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: x^2 + 16x + 8 = x + 8. Subtracting x + 8 gives x^2 + 15x = 0, so x(x + 15) = 0 and x = 0 or x = −15. Only −15 is a choice."
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A circle with center (−5, 1) has the form (x + 5)^2 + (y − 1)^2 = r^2. The radius squared is the squared distance to (−9, 4): (−9 + 5)^2 + (4 − 1)^2 = 16 + 9 = 25. Choices A and C flip the signs of the center, and B uses the radius 5 instead of r^2 = 25."
+  },
+  {
+    "key": "m1-15",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the point (1, 500), x = 1 means one six-month period after January 1995, and y = 500 is the number of subscribers. So at the end of the first six-month period there were about 500 subscribers. Choice C describes x = 0, and B wrongly treats 500 as a constant increase, but the curve isn't a straight line."
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Convert meters to feet: 1,650 × 3.28 = 5,412 feet per hour per second. An hour has 3,600 seconds, so divide: 5,412/3,600 ≈ 1.50 feet per second per second. Choice D forgets the hour-to-second conversion, which shrinks the number."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "1323"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The base edge is (7/3)(9) = 21 cm, so the base area is 21^2 = 441 cm^2. The volume of a pyramid is (1/3)(base area)(height) = (1/3)(441)(9) = 1,323 cm^3. Forgetting the 1/3 would give 3,969, which is the volume of a prism.",
+    "fix": {
+      "prompt": "The right square pyramid shown has a height of 9 centimeters (cm). The length, in cm, of one edge of the pyramid's base is 7/3 times the height of the pyramid. What is the volume, in cm^3, of the pyramid?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "-20"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From (−16, 0) to the y-intercept at x = 0, x increases by 16. With slope −5/4, y changes by (−5/4)(16) = −20. Starting from y = 0, the y-intercept is (0, −20).",
+    "fix": {
+      "prompt": "In the xy-plane, line p has a slope of −5/4 and an x-intercept of (−16, 0). What is the y-coordinate of the y-intercept of line p?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Increasing by 13% of the previous year's amount each year means multiplying by 1.13 every year. A constant growth factor greater than 1 is increasing exponential growth. A linear function would add the same amount each year, not the same percent."
+  },
+  {
+    "key": "m1-20",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In vertex form f(t) = a(t − h)^2 + k, the maximum at t = 1.3 with height 27.04 gives h = 1.3 and k = 27.04. A maximum means the parabola opens down, so a is negative: f(t) = −16(t − 1.3)^2 + 27.04. Check: f(0) = −16(1.69) + 27.04 = 0, so it starts at ground level. Choice C has (t + 1.3), which puts the vertex at t = −1.3."
+  },
+  {
+    "key": "m1-21",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Dividing the given equation by 3 gives x − 8y = 4. A system has no solution when the lines are parallel but different. Choice A times 2 is x − 8y = 0: same coefficients, different constant, so the lines are parallel and never meet. Choices B and C are the same line as the given one (infinitely many solutions), and D has a different slope (one solution).",
+    "type": "mcq",
+    "fix": {
+      "prompt": "3x − 24y = 12\nOne of the two equations in a system of linear equations is given. The system has no solution. Which equation could be the second equation in this system?",
+      "choices": {
+        "A": "(1/2)x − 4y = 0",
+        "B": "x − 8y = 4",
+        "C": "(1/2)x − 4y = 2",
+        "D": "x − 6y = 0"
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since x is in years, 2x counts six-month periods, so the balance is multiplied by 1.005 every 6 months. Multiplying by 1.005 means adding 0.5% of the balance at the start of that period. Choices A and B treat the growth as a fixed $5, and D uses the wrong period length.",
+    "fix": {
+      "prompt": "The given function f models the balance of a bank account, in dollars, x years after it is opened. Which statement is the best interpretation of (1.005)^(2x)?\nf(x) = 7,000(1.005)^(2x)"
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find 38 in the Frequency column; it sits next to the data value 20. So 20 appears 38 times in the data set. Choosing a different value comes from reading the wrong row.",
+    "fix": {
+      "prompt": "The table shows the frequency of each data value in a data set.\nWhich data value has a frequency of 38 in this data set?",
+      "table": {
+        "headers": [
+          "Data value",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "10",
+            "8"
+          ],
+          [
+            "20",
+            "38"
+          ],
+          [
+            "30",
+            "15"
+          ],
+          [
+            "40",
+            "11"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Go to 40 on the weight axis and look straight up: the point there is at 5 on the offspring axis. So the 40-pound beaver had 5 offspring. The point at 6 is for a heavier beaver, around 48 pounds."
+  },
+  {
+    "key": "m2-03",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 55 from both sides: 10p = 320. Divide by 10: p = 32. Choice C is 375 − 55 − 10, which mixes up the steps."
+  },
+  {
+    "key": "m2-04",
+    "answer": [
+      "4"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Total cost = price per pound × pounds, so 3p = 12. Dividing by 3 gives p = 4 pounds."
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 3: f(3) = 100(3) + 8 = 300 + 8 = 308. Choice C forgets to add the 8, and A adds 3 instead of multiplying."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tomatoes cost $1.30 for each of p pounds, which is 1.30p, and the pasta adds $2. The total is $7.20, so 1.30p + 2 = 7.20. Choice B subtracts the pasta's cost instead of adding it, and C and D switch the two prices.",
+    "fix": {
+      "prompt": "Antonia purchased a box of pasta and some tomatoes at the grocery store. Antonia paid $2 for the box of pasta and $1.30 per pound for the tomatoes. If Antonia paid a total of $7.20 for the box of pasta and the tomatoes, which of the following equations can be used to find p, the number of pounds of tomatoes Antonia purchased? (Assume there is no sales tax.)"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": [
+      "68"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Angles r and s are on opposite sides of the point where the two lines cross, so they are vertical angles. Vertical angles are equal, so s = r = 68. Subtracting from 180 (giving 112) would be the answer for angles next to each other, not across from each other."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms have the same variables, ab, so combine the coefficients: 12ab − 6ab = (12 − 6)ab = 6ab. Choice B drops the variables, and A divides 12 by 6 instead of subtracting."
+  },
+  {
+    "key": "m2-09",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 37 from both sides: sqrt(w) = 10. Square both sides: w = 100. Choice C doubles 10 instead of squaring it.",
+    "fix": {
+      "prompt": "What is the solution to the given equation?\nsqrt(w) + 37 = 47"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The slope using the first and last rows is ((27 − 11/27) − (27 + 11/27))/(11 − (−11)) = (−22/27)/22 = −1/27. The point (−1, 27 + 1/27) gives y = 27 − x/27, so the y-intercept is 27. Setting y = 0 gives x/27 = 27, so x = 729 and the x-intercept is (729, 0). Choice B uses the y-intercept value as if it were the x-intercept.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of y. There is a linear relationship between x and y. In the xy-plane, what is the x-intercept of the graph that represents this relationship?",
+      "table": {
+        "headers": [
+          "x",
+          "y"
+        ],
+        "rows": [
+          [
+            "−11",
+            "27 + 11/27"
+          ],
+          [
+            "−1",
+            "27 + 1/27"
+          ],
+          [
+            "11",
+            "27 − 11/27"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "(−1/729, 0)",
+        "B": "(27, 0)",
+        "C": "(−27, 0)",
+        "D": "(729, 0)"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "59"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Then y = 8(0)^2 + 59 = 59."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every term has a factor of x, so factor it out: 17x^3 + 2x^2 + 7x = x(17x^2 + 2x + 7). Multiplying back out confirms it. Choice B would give powers that are too high, and A and D don't multiply back to the original expression."
+  },
+  {
+    "key": "m2-13",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Moving a graph down 8 units subtracts 8 from the whole output: y = 9^x − 8. Choice A moves it up, and C and D change the input, which shifts the graph left or right instead."
+  },
+  {
+    "key": "m2-14",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: f(0) = 3(0) − 1/4 = −1/4, so it is (0, −1/4). Choice C uses the slope 3 instead of the constant term.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 3x − 1/4. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "(0, −1/4)"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": [
+      "9/2",
+      "4.5"
+    ],
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Slope = (change in y)/(change in x) = (12 − 3)/(7 − 5) = 9/2. Flipping the fraction to 2/9 is the common mistake."
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "7"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set the two expressions for y equal: 3x = x^2 − 28, so x^2 − 3x − 28 = 0. This factors as (x − 7)(x + 4) = 0, giving x = 7 or x = −4. Since x > 0, x = 7."
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide the equation by 4: x^2 + 2x − 15 = 0, which factors as (x + 5)(x − 3) = 0. The solutions are −5 and 3, and their product is −15. Choice A uses −60 without dividing by the leading coefficient 4."
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "y goes up 9 for each 1 increase in x, so the slope is 9: y = 9x + b. Using x = 2, y = 23: 23 = 18 + b, so b = 5 and y = 9x + 5. Choice A uses the point's coordinates as the slope and intercept."
+  },
+  {
+    "key": "m2-19",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A draw is worth 1 point, so d draws give d points; a win is worth 3, so w wins give 3w points. The total is d + 3w = 21. Choice C gives the 3 points to draws instead of wins.",
+    "type": "mcq",
+    "fix": {
+      "prompt": "In a soccer league, each team earns 1 point for each game the team plays that ends in a draw and 3 points for each game the team wins. A certain team in this league has earned 21 points. Which equation represents this situation, where d represents the number of games this team has played that ended in a draw and w represents the number of games this team has won?",
+      "choices": {
+        "A": "d/3 + w = 21",
+        "B": "d + w/3 = 21",
+        "C": "3d + w = 21",
+        "D": "d + 3w = 21"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "56% of 100 kWh is 0.56 × 100 = 56 kWh remaining. Choice B is the amount used during the trip (100 − 56 = 44), not what's left."
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at C, so AB = 40 is the hypotenuse. The side opposite angle B is AC = 24, so sin B = 24/40 = 3/5. Choice C, 32/40 = 4/5, is cos B (or sin A), and D is greater than 1.",
+    "fix": {
+      "prompt": "Triangle ABC is shown. What is the value of sin B?",
+      "choices": {
+        "A": "3/5",
+        "B": "3/4",
+        "C": "4/5",
+        "D": "4/3"
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 64/25 to both sides: x^2 = 64/25. A positive number has two square roots, so x = 8/5 or x = −8/5. That gives exactly two distinct real solutions.",
+    "fix": {
+      "prompt": "x^2 − 64/25 = 0\nHow many distinct real solutions does the given equation have?"
+    }
+  }
+]

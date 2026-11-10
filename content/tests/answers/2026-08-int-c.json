@@ -1,0 +1,983 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sculptures combine Mediterranean techniques with Celtic motifs to create a \"distinctly regional\" style, so their aesthetic is unique, or singular. \"Conventional\" is tempting but means ordinary and standard, which contradicts the idea that the work is distinctive rather than derivative. \"Fleeting\" and \"redundant\" don't describe a lasting, original style."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon explains the blank: Kusunda has no demonstrable relationship to any other language family. A language like that is isolated. \"Rudimentary\" (basic, undeveloped) and \"contentious\" (disputed) don't match the claim of having no relatives."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The peptide kills bacteria, but its high toxicity to human kidney cells would likely rule out its use as a medicine, so \"preclude\" (prevent, make impossible) fits. \"Anticipate\" and \"corroborate\" don't express this negative effect, and \"accentuate\" would wrongly mean the toxicity highlights its usefulness."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts a first impression of a \"haphazard assembly\" with what closer analysis shows: pavilions deliberately aligned on precise axes. The opposite of haphazard is an orderly, unified, or coherent layout. \"Rudimentary\" and \"precarious\" don't contrast with haphazard, and \"superfluous\" means unnecessary."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Kelley's records detailed exact temperatures, injury rates, and working hours, which shows they were thorough and complete: exhaustive. \"Speculative\" contradicts the precise data, and nothing in the text suggests the records were biased (\"partisan\") or outdated (\"antiquated\")."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence shows Dorothea gradually (\"day by day\") seeing Casaubon's great work as a \"labyrinth leading nowhere\" instead of a monument, which stresses that the project lacks cohesion and progress. B is tempting because she sorts the notes, but the problem is the work itself, not her inability to organize. Nothing suggests deliberate concealment (C) or a contrast in reputation (D).",
+    "fix": {
+      "passage": "The following text is adapted from George Eliot’s 1871–1872 novel Middlemarch. Dorothea Brooke is contemplating the scholarly ambitions of her husband, Edward Casaubon.\n\nDorothea had believed that in marrying Mr. Casaubon she would be helping to construct a monumental edifice of knowledge that would illuminate ancient mythologies for all future ages. <u>Yet day by day, as she sorted through piles of disconnected notes and half-filled notebooks in the dim library, the great work began to look less like an enduring monument than an impenetrable labyrinth leading nowhere.</u> The massive synthesis remained unwritten, existing only in fragmentary outlines that seemed to multiply without advancing toward any definite conclusion."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes a society that suppresses real feelings through strict rules, then shows Archer accepting those rules while sensing they may be a way \"to avoid facing the reality of life.\" Its purpose is to explore his awareness of the tension between decorum and genuine experience. He doesn't try to reform the rules (A), leave society (C), or behave more openly than his peers (D).",
+    "fix": {
+      "passage": "The following text is adapted from Edith Wharton’s 1920 novel The Age of Innocence. Newland Archer reflects on the rigid social conventions governing elite New York society.\n\nIn the subtle and elaborate hierarchy of old New York, an unalterable code regulated every gesture, from the precise date for exchanging summer calls to the exact shade of gloves permissible at an evening opera. It was a world where real feelings were never mentioned, and where the direct expression of an opinion was regarded as almost indecent. Newland Archer had been bred in this atmosphere of delicate evasions; he accepted its decrees unquestioningly, yet he occasionally felt a faint stir of restlessness, a sudden fleeting suspicion that this meticulous preservation of form was merely a collective conspiracy to avoid facing the reality of life."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports what the researchers actually observed: grid-cell firing fields formed regular triangular lattices. The next sentence says this periodicity led them to conclude the brain builds an internal coordinate system, so the observation is the evidence for that conclusion. The finding isn't presented as an inconsistency (B), an opposing hypothesis (C), or a description of the lab setup (D).",
+    "fix": {
+      "passage": "In an investigation of spatial cognition, neuroscientist Edvard Moser and colleagues examined how mammals maintain internal maps of physical environments. The team recorded the electrical activity of specialized neurons—known as grid cells—in the medial entorhinal cortex of rodents navigating open enclosures. <u>The firing fields of individual grid cells formed remarkably regular, periodic triangular lattices spanning the entire available area, closely matching mathematical models of hexagonal close-packing.</u> This spatial periodicity indicated to the researchers that the entorhinal cortex generates an intrinsic, metric coordinate system capable of computing distance and trajectory independently of external visual landmarks."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 says keeping old buildings as \"frozen museum pieces\" is unsustainable and that adaptive reuse keeps them active in neighborhood life. Text 1's ban on substantial modifications would block that reuse, so Text 2's author would argue it keeps buildings from serving community and economic roles. Text 2 never claims modification causes decline (A) or that new construction is greener (D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "When download counts were visible, popular songs became much more popular and unpopular ones fell further behind. This means earlier listeners' choices strongly shaped later choices and widened the gap between hits and flops. B says the opposite about inequality, and A contradicts the finding that success became less tied to quality."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Vasquez claims nitrogen fixation rises as phosphorus increases. The graph shows about 15 µmol N2/plant/h at low phosphorus, about 42 at moderate, and about 65 at high, so B accurately describes this rising pattern. A and C reverse the order of the bars, and D ignores the clear increase."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers wanted to know how long post-eruption cooling lasted. The table shows negative anomalies in all three years after Kuwae, Huaynaputina, and Tambora, but Krakatoa reaches +0.04 by Year +3, exactly as C states. A is false (Year +2 values are all negative), B is false (Tambora's largest drop is in Year +1), and D is false (−0.54 is less severe than −0.81).",
+    "fix": {
+      "passage": "Dendroclimatologists analyze radial tree-ring growth to reconstruct historical summer temperature fluctuations caused by volcanic aerosol emissions. Sulfate aerosols injected into the stratosphere reflect incoming solar radiation, cooling high-latitude landmasses and suppressing seasonal wood formation in subarctic trees. A team led by paleoclimatologist Dr. Marcus Thorne examined Siberian larch tree rings across four major volcanic events to determine how long post-eruption cooling persisted. The researchers observed that while the severity of growth reduction varied across events, ______",
+      "table": {
+        "caption": "Mean Annual Tree-Ring Width Anomalies for Siberian Larch Following Major Volcanic Eruptions",
+        "headers": [
+          "Eruption",
+          "Yr+1",
+          "Yr+2",
+          "Yr+3"
+        ],
+        "rows": [
+          [
+            "Kuwae (1453)",
+            "−0.42",
+            "−0.68",
+            "−0.25"
+          ],
+          [
+            "Huaynaputina (1600)",
+            "−0.81",
+            "−0.54",
+            "−0.18"
+          ],
+          [
+            "Tambora (1815)",
+            "−0.95",
+            "−0.72",
+            "−0.31"
+          ],
+          [
+            "Krakatoa (1883)",
+            "−0.36",
+            "−0.22",
+            "+0.04"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Gates argues that Fire!! rebelled against older leaders who wanted Black art to be respectable propaganda for white audiences. Quotation A rejects exactly that, valuing self-expression \"for its own sake\" regardless of white critics or the respectability older leaders demanded. D expresses reverence for the elders, the opposite of rebellion, and B and C say nothing about the conflict."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "McComb found that recognizing individual elephants fails beyond about 1.5 km because the higher-frequency formants carrying identity fade, even though infrasound travels farther. So recognition depends on formants whose useful range is shorter than the range at which rumbles can be heard. A contradicts this by crediting infrasound alone, and D overstates the finding by saying recognition fails at any distance."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Scientists were unsure whether Enceladus's ocean had phosphorus, an element life needs; finding it at high concentrations removes that doubt. That means one suspected limit on habitability is no longer a problem. A goes too far by saying all life-detection criteria are met, and C and D aren't supported by anything in the text."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The events happened in the past (\"In 1811\" and \"over the next three decades\"), so the simple past \"unearthed\" is needed. The future \"will unearth\" and the present-tense forms \"is unearthing\" and \"unearths\" don't fit a completed historical period."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"These complex raised-field systems\" needs a main verb, and the phrase between the commas only describes it. \"Provided\" supplies that verb and completes the sentence. \"Providing,\" \"to provide,\" and \"having provided\" are not main verbs, so they leave the sentence a fragment."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Employing high-precision laser altimetry...\" must modify whoever did the employing, so the subject right after the comma must be the one using the altimetry. Only A places that doer, the Pacunam LiDAR initiative, there. In B, C, and D the phrase would wrongly describe structures, a discovery, or terraces as using lasers."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence ends with an indirect question (\"before deciding which excavation trench they should open\"), which keeps statement word order and ends with a period. A and C use question word order (\"should they open\"), and D wrongly ends a statement with a question mark."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The list of artists begins after a dash (\"modernism— including...\"), so the interrupting element must be closed with a matching dash. A semicolon, colon, or comma would not pair with the opening dash."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both parts of the sentence are independent clauses: \"perovskite solar cells have gained...\" and \"unlike traditional silicon panels..., perovskite crystals can be processed....\" A semicolon correctly joins them. No punctuation (A) or a comma alone (B) creates a run-on, and \"but\" (D) signals a contrast that isn't there, since the second clause adds another advantage."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence says Iceland's shallow geothermal resource makes this energy easy to use; the next says that in regions without active tectonic boundaries, reaching that heat is too expensive. This is a contrast, so \"In contrast\" fits. \"For instance\" and \"Furthermore\" signal an example or addition, and \"As a result\" wrongly suggests Iceland's geology causes the high costs elsewhere."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "The previous sentence explains that dormant tardigrades make special proteins to protect their cell membranes; because their cells stay protected, they can resume respiration and movement once rehydrated. This cause-and-effect link calls for \"therefore.\" \"Nevertheless\" and \"conversely\" signal a contrast that isn't there.",
+    "note": "Ambiguous transition: C (\"indeed\") is also arguable as emphasis; chose the causal link from the protective proteins. Source (model-solved) had C."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general claim that engineers borrow from nature; the second gives a specific case, the Shinkansen nose modeled on a kingfisher's beak. \"Specifically\" introduces this detailed example. \"Rather\" and \"In comparison\" signal contrast, and \"Meanwhile\" signals something happening at the same time."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A chronological overview needs several milestones in time order: A moves from the 1977 launch to the Jupiter and Saturn flybys to the 2012 and 2018 crossings into interstellar space. B and D give only one event each, and C mentions the flybys and current data transmission without a clear time sequence.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In 1977, NASA launched the twin probes Voyager 1 and Voyager 2 to explore the outer solar system.\n• Both spacecraft took advantage of a rare planetary alignment to conduct flybys of Jupiter and Saturn.\n• Voyager 2 continued onward to complete the first flybys of Uranus (1986) and Neptune (1989).\n• In 2012, Voyager 1 crossed the heliopause and entered interstellar space.\n• In 2018, Voyager 2 also crossed into interstellar space.\n• Both probes continue to transmit scientific telemetry back to Earth using the Deep Space Network."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "B directly contrasts the two styles with \"whereas\": yamato-e uses flat, opaque color and native subjects, while suibokuga uses monochrome ink washes linked to Zen themes. A and D describe only one style or a later school, and C points out a similarity rather than a difference.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Traditional Japanese yamato-e painting emphasizes flat areas of opaque color, stylized landscape forms, and native Japanese subjects.\n• The suibokuga painting tradition, introduced from China during the Muromachi period (1336–1573), focuses on monochromatic black sumi ink washes.\n• Yamato-e frequently depicted scenes from classical court literature, such as The Tale of Genji.\n• Suibokuga prioritized spontaneous brushwork, atmospheric mist, and Zen Buddhist spiritual themes.\n• Artists of the Rinpa school later combined elements of both traditions."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To contextualize Meitner's breakthrough, the sentence should place her explanation in its circumstances. C does this, noting that she was in exile in Sweden and was explaining Hahn's unexplained observations. A focuses on Hahn's Nobel Prize, and B and D give background without mentioning the breakthrough itself.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Physicist Lise Meitner was a key collaborator with chemist Otto Hahn in Berlin for over three decades.\n• In 1938, forced to flee Nazi Germany due to her Jewish heritage, Meitner relocated to Stockholm, Sweden.\n• In December 1938, Hahn observed unexpected barium when bombarding uranium with neutrons but could not explain the result.\n• Working in Sweden with her nephew Otto Frisch, Meitner calculated the energy released and provided the first theoretical explanation for nuclear fission in 1939.\n• In 1944, Otto Hahn was awarded the Nobel Prize in Chemistry for the discovery, while Meitner’s indispensable theoretical contribution was overlooked by the committee."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Vance kept only evidence supporting her thesis and left out contradicting reports, so her framework was slanted to favor one view: tendentious. \"Pellucid\" means clear and \"inchoate\" means undeveloped, neither of which describes biased selection. \"Ubiquitous\" means everywhere."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The treatises were \"dense with self-referential neologisms and obscure dialectical detours\" that resisted interpretation, so they were seen as impossible to understand: inscrutable. \"Lucid\" (clear) is the opposite. \"Perfunctory\" (done carelessly) and \"ephemeral\" (short-lived) don't match the description."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A catalyst that binds to the wrong substrates would interfere with and spoil the precise pathways the cell needs, which is what \"vitiate\" (impair, corrupt) means. \"Forestall\" means to prevent something before it happens, which doesn't fit pathways that already exist. \"Substantiate\" and \"buttress\" mean support, the opposite of the intended meaning."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The authors used long lists of objects as a tool for revealing hidden social and economic pressures, a tool for discovery and understanding. That is what \"heuristic\" means. \"Superfluous\" means unnecessary, \"hermetic\" means sealed off or obscure, and \"dogmatic\" means rigidly opinionated."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence shows Lily's clear inner vision collapsing into \"an awkward and unresponsive array of pigment and line\" the moment she starts painting. It captures the struggle of turning an ideal mental image into a physical painting. The \"levelling force\" is not an outside interruption (A), and nothing mentions abandoning her style (C) or onlookers' criticism (D).",
+    "fix": {
+      "passage": "The following text is adapted from Virginia Woolf’s 1927 novel To the Lighthouse. Lily Briscoe is attempting to capture a scene in a painting.\n\nShe could see it all so clearly, so distinctly, when she was not hurried; the color was there, the balance was there, and the mass was right. <u>Yet the moment she took her brush and approached the canvas, a terrible levelling force intervened, reducing the luminous clarity of the inner vision to an awkward and unresponsive array of pigment and line.</u> Between the conceived perfection and the executed form lay an insurmountable chasm that left her standing baffled before her own easel, conscious of a profound discrepancy between imagination and achievement."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Densher sees Kate's brilliance as \"cold calculation,\" says she gives nothing away \"that was not intended as a purchase,\" and calls her smiles \"currency.\" He views her social grace as a deliberate strategy to get what she wants. A is the opposite (\"guileless\"), and nothing suggests insecurity (B) or isolation (D).",
+    "fix": {
+      "passage": "The following text is from Henry James’s 1902 novel The Wings of the Dove. Densher is observing Kate Croy in an aristocratic drawing room.\n\nShe was magnificent, but she was formidable; she moved through the assemblage with an unswerving authority that seemed less acquired than inherited from some long lineage of political strategists. Densher felt, as he watched her effortless negotiation of social subtleties, that her brilliance was not a spontaneous effervescence of spirit, but the cold calculation of an intelligence that never for an instant relaxed its vigilance. She gave nothing away that was not intended as a purchase; her smiles were currency, and her silences were fortified positions."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence describes Waddington's procedure (selective breeding over generations) and its result (flies with crossveinless wings even without heat). The next sentence calls this an \"empirical demonstration\" of genetic assimilation, so the sentence supplies the experimental support. It isn't a challenge to earlier models (B), a criticism of fruit flies (C), or a failure (D).",
+    "fix": {
+      "passage": "In evolutionary developmental biology, the concept of genetic assimilation describes a process by which an environmentally induced phenotype becomes fixed as an inherited trait through natural selection. Biologist Conrad Waddington demonstrated this mechanism by subjecting fruit fly embryos to heat shock, which caused them to develop crossveinless wings. <u>By selectively breeding the individuals that exhibited this response over several generations, Waddington produced a line of flies that consistently developed crossveinless wings even in the complete absence of temperature stress.</u> This empirical demonstration showed that phenotypic plasticity can precede and channel subsequent evolutionary changes in the genome."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 assumes that material abundance measured by GDP reflects how well a society is doing. Sen argues that income is only a means to well-being and that what matters is people's real freedoms, such as health and education. So he would say aggregate wealth ignores whether people actually have those opportunities. Sen's argument isn't about measurement instability (A), inflation (C), or agrarian societies (D)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first gives the usual view that DNA methylation represses transcription, then explains that in neurons, methylation inside gene bodies is linked to higher activity and protects accurate transcription. Its purpose is to explain this unexpected helpful role. It doesn't deny that epigenetics matters (A), compare neurons with other cells (C), or propose a therapy (D)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Wittgenstein argues that following a rule requires a standard of correctness, and a solitary speaker has none, so meaning must come from shared public practice. B states this main idea. A describes the private language the argument rejects, and C reverses the text's challenge to the Cartesian view."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Romanova predicted that thermokarst soil would show much greater temperature-driven methane flux than intact permafrost. The graph shows intact soil staying below 20 mg CH4/m^2/day at all temperatures while thermokarst soil climbs to over 90 at 20°C, which supports the hypothesis. B and D are false (thermokarst is never lower), and C is wrong because both lines rise.",
+    "fix": {
+      "choices": {
+        "A": "Methane emissions in intact mineral permafrost soil remained below 20 mg CH4/m^2/day across all temperatures, whereas emissions from thermokarst bog soil increased sharply to over 90 mg CH4/m^2/day at 20°C."
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The surprising effect is that delays worsened outside rush hours and on roads that were never restricted. From 7:00 to 8:00 p.m., which is outside both rush periods, delays rose sharply on both road types (1.98 and 1.32 min/km), the clearest evidence of this effect. B shows an increase on unrestricted roads too, but a smaller one (0.71); A and C cover rush-hour periods, which researchers expected to worsen.",
+    "fix": {
+      "passage": "In 2016, the city of Jakarta—one of the world’s largest metropolitan areas—revoked a rule that restricted the use of major roads in the city’s business district to only vehicles with three or more passengers during rush hours (7:00–10:00 a.m. and 4:30–7:00 p.m.). As researchers had expected, this move led to increased traffic delays during those times on the roads whose use had been limited, especially in the later rush hour period. Surprisingly, delays also worsened during other periods of time and on roads that hadn’t been subject to the rule; the data most clearly reflect this effect in the period of ______.",
+      "table": {
+        "caption": "Change in Average Traffic Delay After End of Restriction (min/km)",
+        "headers": [
+          "Time Period",
+          "Previously Restricted",
+          "Previously Unrestricted"
+        ],
+        "rows": [
+          [
+            "6:00–7:00 a.m.",
+            "0.00",
+            "0.03"
+          ],
+          [
+            "7:00–10:00 a.m.",
+            "0.98",
+            "0.13"
+          ],
+          [
+            "10:00 a.m.–4:30 p.m.",
+            "0.55",
+            "0.71"
+          ],
+          [
+            "4:30–7:00 p.m.",
+            "2.48",
+            "0.60"
+          ],
+          [
+            "7:00–8:00 p.m.",
+            "1.98",
+            "1.32"
+          ],
+          [
+            "8:00 p.m.–6:00 a.m.",
+            "0.05",
+            "0.16"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Cooper's argument is that Black women hold a distinct position that neither race-focused nor women-focused movements fully address. Quotation A says the colored woman faces \"both a woman question and a race question\" and is unacknowledged in both, which illustrates this directly. B, C, and D discuss education or progress in general and don't mention the overlap of race and gender."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Zahnle warns that methane alone is not a reliable sign of life, which only makes sense if something other than life can produce it. A gives such non-biological sources (serpentinization and volcanic outgassing). B contradicts the text, which treats methane plus oxygen as possible evidence of life, and C and D aren't supported."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The \"two-domain\" view says eukaryotes did not form a separate third branch; instead they came from within the Archaea. Asgard archaea carry eukaryote-like proteins, supporting the idea that eukaryotes arose from an Asgard-related archaeon merging with a bacterium. C reverses the ancestry, and A and D conflict with the text's focus on archaeal proteins."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes a downward spiral: high-quality sellers leave, average quality falls, buyers pay less, and more good sellers leave. Without signals such as warranties, this can continue until only poor-quality goods remain or the market collapses. A describes a stability the text says won't occur, and B wrongly says only low-quality sellers are harmed."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With \"neither...nor,\" the verb agrees with the nearer subject, \"the subsequently compiled sediment core data.\" \"Data\" is plural, so the plural \"have provided\" is correct. \"Provides,\" \"is providing,\" and \"has provided\" are all singular."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"By extracting and sequencing ancient environmental DNA...\" must be followed by the people who did the extracting. B names them, \"Eske Willerslev and his research team,\" and gives a clear verb, \"reconstructed.\" A and C make a reconstruction or a discovery the doer, and D uses the vague \"it,\" which can't extract DNA."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"along with her French collaborator Emmanuelle Charpentier\" interrupts between the subject \"Jennifer Doudna\" and the verb \"adapted.\" It opens with a comma, so it must close with a comma. A semicolon or dash wouldn't match the opening comma, and no punctuation leaves the phrase unclosed."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Metallic hydrogen remains one of the most elusive condensed-matter phases sought\" and \"theorists predict that...\" are both independent clauses. A semicolon before \"however,\" correctly joins them. Using only commas (A) or no punctuation (D) creates a run-on. A colon (C) is less fitting because the second clause doesn't explain why the phase is elusive."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "This list follows a colon and its items contain internal commas (\"the salt marshes..., which buffer...\"), so semicolons separate the items, as after \"carbon;\" later. A semicolon is needed after \"surges\" to keep the pattern. A comma or dash would make the item boundaries confusing, and no punctuation runs two items together."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers back to the singular \"empire of Mali\" and shows possession (the empire's administration), so the singular possessive \"its\" is correct. \"It’s\" means \"it is,\" \"their\" is plural, and \"they’re\" means \"they are.\""
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Early scientists believed adult brains couldn't make new neurons, but later research showed adult neurogenesis does occur. The second sentence contradicts the first, so \"However\" fits. \"Consequently\" signals a result, \"Furthermore\" an addition, and \"In other words\" a restatement."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence describes a limit on single-junction silicon cells, and the second explains what engineers do because of that limit: build multi-junction cells to get around it. \"Thus\" shows this cause-and-effect relationship. \"Specifically\" signals an elaboration, while \"In contrast\" and \"Nonetheless\" signal contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to explain how dendrochronology made radiocarbon dating more precise. A explains the mechanism: long tree-ring sequences let researchers calibrate radiocarbon dates and correct for past changes in atmospheric 14C. C states the problem without the solution, and B and D describe tree ages or climate records rather than dating precision.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Dendrochronology uses the annual growth rings of long-lived trees to construct multi-millennial climate chronologies.\n• Bristlecone pines (Pinus longaeva) in California’s White Mountains can live for over 4,800 years.\n• Sub-fossilized bog oaks in Ireland and Germany provide overlapping tree-ring sequences spanning over 10,000 years.\n• Dendrochronological calibration revealed that raw radiocarbon (14C) dating systematically underestimated archaeological ages due to past fluctuations in atmospheric carbon-14 concentrations.\n• Tree-ring calibration curves (such as IntCal20) are now indispensable for establishing accurate absolute dates in archaeology.",
+      "prompt": "The student wants to explain how dendrochronology improved the precision of radiocarbon dating. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "choices": {
+        "A": "By providing continuous multi-millennial tree-ring sequences, dendrochronology enabled researchers to calibrate radiocarbon dates and correct for historical fluctuations in atmospheric 14C levels."
+      }
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to stress what the mechanism could predict in the sky. B explains that its gear system predicted celestial positions, eclipses, and lunar cycles. A and D cover its discovery, date, or construction, and C emphasizes the athletic-games display instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Antikythera mechanism is an ancient Greek hand-powered mechanical device discovered in a shipwreck in 1901.\n• Constructed around the late 2nd or early 1st century BCE, it is widely regarded as the world’s oldest known analogue computer.\n• It used a complex differential gear train comprising over thirty bronze gears to predict astronomical positions and eclipses.\n• It tracked the Saros cycle (a 223-lunar-month eclipse prediction cycle) and the Metonic calendar cycle.\n• It also included an indicator display showing the four-year cycle of the ancient Panhellenic athletic games (including the Olympic Games)."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To emphasize significance, the sentence should state what the result proved and why it mattered. C says the asymmetry showed parity is violated in weak interactions, overturning a fundamental principle. A and D describe only the experimental setup, and B gives the earlier assumption without Wu's result.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Physicist Chien-Shiung Wu designed the “Wu experiment” in 1956 to test the law of conservation of parity in subatomic physics.\n• Parity conservation postulated that physical processes should behave identically to their mirror images (spatial inversion symmetry).\n• Wu aligned the nuclear spins of cobalt-60 atoms at near-absolute zero temperatures using a strong magnetic field.\n• She observed that beta particles were emitted preferentially in the direction opposite to the nuclear spin.\n• This directional asymmetry proved that parity is violated in weak nuclear interactions, overturning a fundamental axiom of theoretical physics."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both terms share a factor of 10: 190x^2 = 10 · 19x^2 and 60 = 10 · 6, so 190x^2 + 60 = 10(19x^2 + 6). Checking A: 6(10x^2 + 19) = 60x^2 + 114, which doesn't match."
+  },
+  {
+    "key": "m1-02",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute s = 100 into t = 12s + 13: t = 12(100) + 13 = 1,200 + 13 = 1,213 minutes. Choice A forgets the fixed 13 minutes."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "12.5",
+      "25/2"
+    ],
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The increase is 45 − 40 = 5 dollars. As a percent of the original price, 5/40 = 0.125 = 12.5%, so p = 12.5. Be careful not to divide by the new price: 5/45 would give about 11.1."
+  },
+  {
+    "key": "m1-04",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The interior angles of a triangle add to 180°, so x = 180 − 17 − 34 = 129. Choice B (51) is just 17 + 34, the sum of the other two angles.",
+    "fix": {
+      "prompt": "The measures of the interior angles of triangle ABC are 17°, 34°, and x°. What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A rectangle has two lengths and two widths, so its perimeter is l + l + w + w = 2l + 2w. Setting this equal to 174 gives 174 = 2l + 2w. Choice C counts each side only once."
+  },
+  {
+    "key": "m1-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x) = 90 + 80x, the charge goes up by 80 dollars for each additional hour x, so the hourly charge is $80. The 90 is a fixed amount (materials) that doesn't depend on hours."
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At the intersection both equations hold, so substitute y = 8 into y = 3x + 5: 8 = 3x + 5, so 3x = 3 and x = 1. The point is (1, 8)."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "12"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 3: f(3) = 3(3)^2 − 5(3) = 3(9) − 15 = 27 − 15 = 12. Remember to square 3 before multiplying by 3."
+  },
+  {
+    "key": "m1-09",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line passes through (0, 4.2), so its y-intercept is 4.2. Its slope is (4.2 − 13.9)/(0 − (−10)) = −9.7/10 ≈ −1. So the line is about y = −x + 4.2. Choice A has the right slope but the wrong intercept."
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of a/(b + c) = 67 by (b + c) to undo the division: a = 67(b + c). Choice A divides 67 by (b + c) instead of multiplying.",
+    "fix": {
+      "prompt": "a/(b + c) = 67\nThe given equation relates the positive numbers a, b, and c. Which equation correctly expresses a in terms of b and c?",
+      "choices": {
+        "A": "a = 67/(b + c)"
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 5: 2x + 3 = 0, so x = −3/2. A linear equation with a nonzero x-coefficient has exactly one solution."
+  },
+  {
+    "key": "m1-12",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Convert radians to degrees by multiplying by 180/π: (π/9)(180/π) = 20°. So 2n = 20 and n = 10. Choice D (20) is the angle's degree measure, not n."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "18"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 7: (x − 8)^2 = 100. Then x − 8 = 10 or x − 8 = −10, so x = 18 or x = −2. The positive solution is 18."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "15000"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 1664 to 1964 is 300 years, which is 300/75 = 4 doubling periods. So the 1964 population is 2^4 = 16 times the 1664 population, and 240,000/16 = 15,000."
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since f(0) = 2 and f(7) = 2, the slope is (2 − 2)/(7 − 0) = 0, so f is the constant function f(x) = 2. Choice D gives f(7) = 9, not 2."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "10"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The point (0, 3) is on the line, so substitute x = 0 and y = 3 into 6x + By = 30: 0 + 3B = 30, so B = 10. Check with (5, 0): 6(5) + 0 = 30."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "52"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sine of angle Q is the opposite side over the hypotenuse. Side PR is opposite Q and PQ is the hypotenuse (opposite the right angle R), so 26/PQ = 1/2 and PQ = 52.",
+    "fix": {
+      "prompt": "In triangle PQR shown, angle R is a right angle. The length of side PR is 26. The sine of angle Q is 1/2. What is the length of line segment PQ?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The maximum height 134.56 at t = 2.9 is the vertex, so the equation has the form h = a(t − 2.9)^2 + 134.56 with a < 0. Choice D uses a = −16; check that it hits the ground at t = 5.8: −16(2.9)^2 + 134.56 = −16(8.41) + 134.56 = 0. Choice C has the wrong vertex height."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because PQ is a diameter, arc PQ is a semicircle, half the circle. So the circumference is 2 × 62 = 124 cm. Choice B mistakes the half-circle arc for the whole circle."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From 0.0036 = 0.006a, a = 0.6. From 84 = 3.5b, b = 24. Then b/a = 24/0.6 = 40, and 40 times a number is 4,000% of it. Choice A forgets to convert 40 to a percent."
+  },
+  {
+    "key": "m1-21",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The x-intercepts come from the factors: x = d, x = −d, x = −h, and x = d again. Since the factor (x − d) appears twice, x = d counts only once, and because d and h are different positive numbers the values d, −d, and −h are all different. That gives 3 distinct x-intercepts. Choice A counts the repeated root twice."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The ratio of the radii is 144k/8k = 18. Volume depends on the cube of the radius, so sphere B's volume is 18^3 = 5,832 times sphere A's. Choice A uses the ratio of radii without cubing, and C squares it instead."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In vertex form f(x) = −2(x − 4)^2 + 18, the vertex is (4, 18), and since −2 < 0 the parabola opens down, so the maximum occurs at x = 4. Choice D (18) is the maximum value, not the x-value where it happens."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A circle with center (h, k) and radius r is (x − h)^2 + (y − k)^2 = r^2. With center (−3, 7) and r = 5: (x + 3)^2 + (y − 7)^2 = 25. Choice C forgets to square the radius, and A flips the signs of the center."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite h(t) = 450(1.035)^(2t) as 450((1.035)^2)^t = 450(1.071225)^t. Each year the population is multiplied by 1.071225, which is an increase of 7.1225%. Choice A is the growth per half-year, and B wrongly doubles 3.5%."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiplying the second equation by 2 gives 6x − 10y = 28, which has the same left side as the first equation. If c = 28 the equations are identical (infinitely many solutions); for any other c the lines are parallel with no solution. So c could NOT be 28.",
+    "fix": {
+      "prompt": "6x − 10y = c\n3x − 5y = 14\nIn the given system of linear equations, c is a constant. If the system has no solution, which of the following could NOT be the value of c?"
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Factor: x^2 − 49 = (x − 7)(x + 7) and 2x^2 − 13x − 7 = (2x + 1)(x − 7). The common factor (x − 7) cancels, so x = 7 makes g undefined but is a hole, not an asymptote. The other zero of the denominator, x = −1/2, still gives a vertical asymptote.",
+    "fix": {
+      "prompt": "g(x) = (x^2 − 49)/(2x^2 − 13x − 7)\nFor what value of x is the rational function g undefined, but does NOT have a vertical asymptote (i.e., corresponds to a removable discontinuity)?",
+      "choices": {
+        "B": "1/2"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Triangles ACD and ABC are similar (they share angle A and each has a right angle), so AD/AC = AC/AB, which gives AC^2 = AD · AB. With AB = 4 + 16 = 20, AC^2 = 4 · 20 = 80 and AC = sqrt(80) = 4sqrt(5). Choice B, 8sqrt(5), is the length of BC."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A quadratic has no real solutions when its discriminant is negative: 8^2 − 4(2)(k) < 0, so 64 − 8k < 0 and k > 8. Choice D comes from forgetting the factor 2 on x^2."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out data are around the mean. Machine B's standard deviation (720 hours) is larger than Machine A's (350 hours), so B's lifespans vary more. The means and sample sizes are equal, so the totals are equal (D is false), and the summary statistics don't tell us the medians or exact counts above 19,500 hours (A and B).",
+    "fix": {
+      "choices": {
+        "A": "Machine A produced more microprocessors that lasted longer than 19,500 hours than Machine B did.",
+        "B": "The median lifespan of microprocessors from Machine A is strictly greater than the median lifespan of microprocessors from Machine B."
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "g(x) = f(x − 2) + 4 = (x − 5)(x + 3) + 4 = x^2 − 2x − 15 + 4 = x^2 − 2x − 11. Completing the square: x^2 − 2x + 1 − 12 = (x − 1)^2 − 12, which shows the minimum value −12. A and D are equivalent but don't display the minimum, and C has the wrong vertex."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For similar solids, the area ratio is the square of the length ratio, so the length ratio is sqrt(4.41) = 2.1. The volume ratio is 2.1^3 = 9.261, so Cylinder Q's volume is 150 × 9.261 = 1,389.15 cm^3. Choice B multiplies by 4.41 (the area ratio) instead.",
+    "fix": {
+      "prompt": "Two right circular cylinders, Cylinder P and Cylinder Q, are geometrically similar. The surface area of Cylinder Q is 4.41 times the surface area of Cylinder P. If the volume of Cylinder P is 150 cm^3, what is the volume, in cubic centimeters, of Cylinder Q?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x^2 − 12x + 36) + (y^2 + 16y + 64) = −64 + 36 + 64, so (x − 6)^2 + (y + 8)^2 = 36. The radius squared is 36, so the area is πr^2 = 36π. Choice C comes from forgetting to move the constant 64 to the other side."
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since cos(π/2 − θ) = sin θ, we have sin θ = 5/13. In a right triangle with opposite side 5 and hypotenuse 13, the adjacent side is sqrt(169 − 25) = 12. With θ in the first quadrant, tan θ = 5/12. Choice C (12/5) inverts the ratio.",
+    "fix": {
+      "prompt": "In the xy-plane, an angle with measure θ radians is in standard position, where 0 ≤ θ ≤ π/2. If cos(π/2 − θ) = 5/13, what is the value of tan θ?",
+      "choices": {
+        "A": "5/12",
+        "B": "12/13",
+        "C": "12/5",
+        "D": "13/5"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set the expressions equal: 3x^2 − 12x + 17 = mx + 5, so 3x^2 − (12 + m)x + 12 = 0. Exactly one solution means the discriminant is 0: (12 + m)^2 − 4(3)(12) = 0, so (12 + m)^2 = 144 and 12 + m = ±12. Thus m = 0 or m = −24, and only −24 is a choice.",
+    "fix": {
+      "prompt": "y = 3x^2 − 12x + 17\ny = mx + 5\nIn the given system of equations, m is a constant. If the system has exactly one real solution, which of the following is a possible value of m?"
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Take the base as 3 units and the acid as 5 units. After the change the base is 3 × 1.40 = 4.2 and the acid is 5 × 0.75 = 3.75. The new ratio is 4.2 : 3.75 = 420 : 375 = 28 : 25. Choice C (7 : 5) applies the 40% increase but ignores the drop in acid."
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since a < 0, the cubic is decreasing everywhere, going from the upper left (quadrant II) down to the lower right. The point (h, k) has h > 0 and k < 0, so it lies in quadrant IV. B describes an increasing cubic (a > 0), C is not a cubic, and D uses the wrong center point."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the numerator: 2x + 5 = 2(x − 3) + 11, so (2x + 5)/(x − 3) = 2 + 11/(x − 3). Thus A = 2 and B = 11, and A + B = 13. Choice B (11) is only the value of B.",
+    "fix": {
+      "prompt": "(2x + 5)/(x − 3) = A + B/(x − 3)\nThe given equation is true for all values of x ≠ 3, where A and B are constants. What is the value of A + B?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "inference-sample",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A margin of error gives a range of plausible values for the whole population: 62% ± 3.3%, or 58.7% to 65.3%. A and C claim an exact value, which a sample can't guarantee. D misreads the confidence level as a probability about one voter."
+  },
+  {
+    "key": "m2-18",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since 3 and −2 are zeros: p(3) = 81 − 135 + 9a + 3b − 48 = 0 gives 3a + b = 34, and p(−2) = 16 + 40 + 4a − 2b − 48 = 0 gives 2a − b = −4. Adding gives 5a = 30, so a = 6 and b = 16. By the remainder theorem, the remainder is p(−1) = 1 + 5 + 6 − 16 − 48 = −52."
+  },
+  {
+    "key": "m2-19",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope of L is (19 − (−5))/(4 − (−2)) = 24/6 = 4, so L(x) = 4x + 3 (check: L(4) = 19). The intersection is on the graph of L, so k = L(2) = 4(2) + 3 = 11. The exponential function is not needed to find k."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "5"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use the quadratic formula: x = (24 ± sqrt(576 − 496))/8 = (24 ± sqrt(80))/8 = 3 ± sqrt(80)/8. Since sqrt(80) = 4sqrt(5), sqrt(80)/8 = sqrt(5)/2, so one solution is 3 + sqrt(5)/2 and d = 5.",
+    "fix": {
+      "prompt": "4x^2 − 24x + 31 = 0\nOne solution to the given equation can be written in the form 3 + sqrt(d)/2, where d is a positive integer. What is the value of d?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "30"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let angle RTS = 2α. In right triangle TSM, tan α = SM/ST = 8/24 = 1/3. Then tan(2α) = 2(1/3)/(1 − 1/9) = 3/4, so RS = ST · tan(2α) = 24 · 3/4 = 18. By the Pythagorean theorem, RT = sqrt(24^2 + 18^2) = sqrt(900) = 30."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "9"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Substitute y = k − 2x into the first equation: k − 2x = x^2 − 6x + 13, so x^2 − 4x + (13 − k) = 0. One solution means the discriminant is 0: 16 − 4(13 − k) = 0, so 13 − k = 4 and k = 9.",
+    "fix": {
+      "prompt": "y = x^2 − 6x + 13\n2x + y = k\nIn the given system of equations, k is a constant. If the system has exactly one distinct real solution, what is the value of k?"
+    }
+  }
+]

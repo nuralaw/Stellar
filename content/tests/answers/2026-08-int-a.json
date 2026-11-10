@@ -1,0 +1,1031 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The holes are dark blue while the shallow water around them is light blue, so the color contrast lets people easily tell the holes apart from their surroundings: they are \"differentiated from\" those areas. That is why boaters spot them. Nothing suggests the holes are raised above (\"elevated from\") or outdone by (\"surpassed by\") the shallow areas."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Higher retail prices plus loyal customers would greatly improve, or \"transform,\" a small farm's financial outlook. \"Overshadow\" would mean the advantages hide or hurt the outlook, which is the opposite of the text's positive point, and \"interpret\" and \"hasten\" don't make sense with \"financial outlook.\""
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Takeuchi is contrasted with Saeki, who used European methods, and the example shows Takeuchi using pigments on silk, a traditional Japanese approach. So Takeuchi \"adhered to\" (stuck with) Japanese methods. \"Refrained from\" would say the opposite of the example."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A full ectotherm's body is at the water temperature, but the basking shark's body stays 1.0 to 1.5°C warmer than the water. That finding conflicts with, or is \"incongruous with,\" the shark's classification as a full ectotherm. \"Indicative of\" would wrongly mean the data support that label."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence explains that these elements come from only a few places, which makes supply chains \"highly fragile.\" Relying on them is therefore a weakness, or \"vulnerability,\" for manufacturers. \"Insolvency\" means being unable to pay debts, which the text never mentions."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says the idea that khipu encoded language \"now has an empirical basis,\" meaning Medrano's statistical data add hard evidence on top of the older historical reports. The data \"supplement\" those reports. They don't replace (\"supersede\") or cast doubt on (\"complicate\") them, since both point the same way, and the data don't repeat (\"replicate\") the reports either."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first describes cone cells and their three types, then describes Fong's study that activated only the medium cones and produced the color olo. B reverses the focus: olo is only mentioned at the end, as the study's result. The text doesn't list wavelengths (C) or other body parts (D)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase tells what inspired the show's choreography, which interweaves the Lindy Hop with newer styles: Barnes's curiosity about their similarities. So it gives the motivation for the choreographic approach described in the first sentence. It doesn't list specific similarities (B) or compare the cultural impact of the dances (A).",
+    "fix": {
+      "passage": "In The Jazz Continuum, LaTasha Barnes, Imani Arrington, and other dancers seamlessly interweave recent dance styles, including hip-hop and waacking, with elements of the Lindy Hop, a popular swing dance of the 1930s with roots in the Black American community of Harlem, New York. <u>Inspired by Barnes’s curiosity about the similarities between the Lindy Hop and these seemingly unrelated dance styles</u>, the show’s choreography makes visible how intertwined their histories actually are. The show is therefore a testament to the Lindy Hop’s enduring influence on American culture."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase explains why the show blends the Lindy Hop with hip-hop and voguing: Barnes was curious about how similar these styles are. That is the motivation for the choreographic approach described earlier. It names no specific similarities (A) and makes no claim that the Lindy Hop was more influential than the other dances (C).",
+    "fix": {
+      "passage": "In The Jazz Continuum, LaTasha Barnes, Tyedric Hill, and other dancers seamlessly interweave recent dance styles, including hip-hop and voguing, with elements of the Lindy Hop, a popular swing dance of the 1930s with roots in the Black American community of Harlem, New York. <u>Inspired by Barnes’s curiosity about the similarities between the Lindy Hop and these seemingly unrelated dance styles</u>, the show’s choreography makes visible how intertwined their histories actually are. The show is therefore a testament to the Lindy Hop’s enduring influence on American culture."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines intellectual humility, says \"This is important,\" explains how its absence slows self-correction in science, and concludes it could make research more efficient. Its purpose is to show why intellectual humility matters to scientists. It doesn't describe how a particular project works (B) or name scientists who admitted mistakes (C)."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rose says temperate female birds sing more often than people assume, but they sing less often and more quietly than males, so researchers easily miss them. She would therefore say the apparent temperate-tropical difference may partly come from how hard female song is to detect. She says nothing about male tropical birds (B), mating seasons (C), or which regions get studied more (D)."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 accepts that many predator-removal studies show prey increasing, which supports the principle, but notes that removing wolves didn't change moose numbers and that large, slowly reproducing prey may behave differently. So the author would say the principle has support but doesn't apply everywhere. Text 2 doesn't criticize the studies' methods (D) or tie the principle to predators' physical traits (B)."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says not everyone notices this web of life and that BioBlitz observations reveal relationships \"that might otherwise remain unseen.\" So \"hidden\" means the relationships aren't obvious without careful observation and documentation. Nothing mentions urban planning (A), nighttime activity (B), or camouflage (D).",
+    "fix": {
+      "passage": "While not everyone notices it, beneath the tree canopy of an ordinary city park lies an extraordinary web of life—fungi breaking down fallen leaves, native bees pollinating wildflowers, and moss growing in the crevices of an old log. To document this hidden biodiversity, everyday people have been participating in “BioBlitz” events, in which participants photograph, collect, and identify species using both field guides and mobile apps. These collective observations reveal which plant and animal species depend on one another for survival—ecological relationships that might otherwise remain unseen.",
+      "prompt": "In context, the text’s characterization of the biodiversity in city parks as “hidden” most clearly conveys which idea?"
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Uman draws on many sources, from East African fabrics to Arabic calligraphy, and aims for \"constant evolution\" free of any prescriptive agenda, moving between tradition and autobiography. That supports the idea that her art is open to experimentation and doesn't stick to one conceptual frame. The text never says she rejects or feels ambivalent about tradition (A) or compares her to other US abstract artists (B)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Lower index values mean simpler tax systems, since the scale runs from zero (minimally complex) to one (extremely complex). Switzerland has the lowest value in the table, 0.23, so it had the simplest system. India, at 0.42, had the most complex one.",
+    "fix": {
+      "passage": "Every two years from 2016 to 2022, the research project Accounting for Transparency has conducted a worldwide survey of tax consultants and tax services firms in order to calculate the Tax Complexity Index, a measure of the complexity of a nation’s corporate income tax system. The index ranges from zero (minimally complex) to one (extremely complex). In the table, the country with the simplest corporate tax system in 2022 was ______.",
+      "table": {
+        "caption": "Corporate Tax Complexity Index for Four Countries, 2022",
+        "headers": [
+          "Country",
+          "Tax Complexity Index"
+        ],
+        "rows": [
+          [
+            "India",
+            "0.42"
+          ],
+          [
+            "Kenya",
+            "0.37"
+          ],
+          [
+            "Switzerland",
+            "0.23"
+          ],
+          [
+            "United States",
+            "0.40"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By secretly swapping the photos, the researchers handed participants the face they had actually rejected while letting them believe it was their own choice. That tested whether people would accept and even justify an outcome that contradicted what they really chose. No arguments were presented to participants (D), and the step had nothing to do with faces being equally attractive (A)."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject \"These complex raised-field systems\" needs a main verb, and the long modifier set off by commas doesn't supply one. \"Provided\" is a finite past-tense verb, completing the sentence. \"Providing,\" \"to provide,\" and \"having provided\" are not finite verbs, so they leave the sentence without a main verb."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Employing high-precision laser altimetry\" must be followed by whoever did the employing. The Petén LiDAR initiative used the technology, so A places the right subject right after the comma. B, C, and D put structures, a discovery, or terraces there, which can't employ altimetry, creating dangling modifiers."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence is a statement that contains an indirect question (\"which excavation trench they should open\"), so it uses statement word order (subject \"they\" before \"should\") and ends with a period. A and C invert the word order as in a direct question, and D wrongly ends a statement with a question mark."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The list of artists is set off by a dash that opens before \"including,\" so a second dash must close it after \"Picasso.\" Then the sentence continues with \"forever altering....\" Mixing a dash with a comma, semicolon, or colon to close the same interruption is incorrect."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both parts are independent clauses: \"perovskite solar cells have gained considerable attention...\" and \"perovskite crystallites can be processed....\" A semicolon correctly joins them. No punctuation (A) creates a run-on, a period (B) leaves the next sentence starting with a lowercase \"unlike,\" and \"but\" (D) wrongly signals a contrast."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Iceland's shallow geothermal heat makes geothermal energy cheap and important there, while in places without active tectonic boundaries, reaching that heat is too expensive. These are opposite situations, so \"In contrast\" fits. \"For instance\" and \"Furthermore\" would treat the second situation as an example of or addition to the first."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "While dormant, tardigrades shut down their metabolism and make proteins that protect their cell membranes. Because their cells were protected, they can resume respiration and movement within hours of rehydration, so the last sentence is a result of the one before it and \"therefore\" fits. \"Indeed\" would introduce a stronger restatement of the previous point, but resuming activity is a consequence of the protection, not a restatement of it.",
+    "note": "Source solver chose C (indeed); A (therefore) reads as cause→result (protected membranes → quick recovery). Worth a human look."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The last sentence says years often pass between selection and designation because legislation is slow, which is true for some soils but not necessarily all. \"In many cases\" correctly limits the claim. \"Therefore\" would wrongly suggest the delay follows from the examples of Houdek and Chesuncook soils."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize the different years. C gives both years, 1976 for Roots and 2015 for Between the World and Me, and stresses the gap with \"but in 2015.\" A and B mention no years, and D contrasts the books' genres instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Since 1931, the New York Times (NYT) Best Sellers list has been a measure of the most successful books in the US.\n• Ta-Nehisi Coates and Alex Haley are Black authors who have reached the NYT Best Sellers list.\n• Between the World and Me is a nonfiction book by Ta-Nehisi Coates. It reached the NYT Best Sellers list on August 2, 2015.\n• Roots: The Saga of an American Family is a novel by Alex Haley. It reached the NYT Best Sellers list on August 17, 1976."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C explains the whole solution: engineers copied the beak's gradually widening shape for the train's nose, which smoothed the move from tunnels to open air and eliminated sonic booms. B wrongly says the train moves between air and water. D wrongly claims the beak itself eliminated sonic booms, and A never describes the beak's shape or the redesign.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Shinkansen (bullet train) is a network of high-speed railways in Japan.\n• 1960s: The trains’ high speeds created intense pressure waves that produced sonic booms when trains exited tunnels.\n• 1980s: Engineer Eiji Nakatsu noted that the kingfisher bird could dive into water at high speeds while barely creating a splash.\n• The kingfisher’s beak gradually widens from tip to head, allowing smooth transition between air and water.\n• Nakatsu and other engineers redesigned the train nose based on the kingfisher’s beak structure to improve the transition between tunnel and open-air environments.\n• The redesign reduced pressure buildup, eliminating sonic booms."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "O'Neill served from 1863 to 1881 (the 1800s), and Salter served from 1925 to 1947 (the 1900s), so C highlights a real difference: the century in which each worked. A and B mention only one keeper, and D stresses a similarity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Lighthouses send out crucial light signals to help ships and other watercraft navigate at night.\n• Before automation, lighthouses were run by lighthouse keepers.\n• Esther O’Neill was the lighthouse keeper at Concord Point Light in Maryland, from 1863 to 1881.\n• Fannie May Salter was the lighthouse keeper at Turkey Point Light in Maryland, from 1925 to 1947."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the software is so sensitive, much of what it flags is unclear: it might or might not be a real threat, so specialists must decide \"whether it is a cause for concern.\" That makes the activity \"ambiguous.\" If it were clearly \"malicious,\" no human judgment would be needed, and \"imperceptible\" contradicts the fact that the software detects it."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence says gases, moisture, and debris must be \"purged from the lines,\" which means the technicians must empty, or \"evacuate,\" the refrigerant lines. \"Detangling\" and \"bracing\" deal with the lines' physical position, not with clearing out their contents, and \"designating\" makes no sense here."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most of a trip's cost comes just from the truck being on the road, not from the weight of its load, so sending out a half-empty truck costs nearly as much as a full one. Companies are therefore reluctant, or \"loath,\" to dispatch trucks that aren't full. \"Prone\" would mean they tend to do it, the opposite of the logic."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If plants prefer to absorb essential elements like nickel, it would seem that plants could easily clean nickel out of soil, so the soil seems especially open, or \"amenable,\" to plant-based decontamination. The word \"Though\" then sets up Pauleit's contrasting finding about cadmium. \"Unresponsive\" reverses the expected idea, and \"detrimental\" and \"pertinent\" don't fit \"to decontamination.\""
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The earlier research suggests plants take up nickel preferentially, which would make nickel-contaminated soil easy to treat with plants, that is, \"amenable\" to plant decontamination. Duthweiler's cadmium finding is the contrasting result introduced by \"Though.\" \"Unresponsive\" says the opposite of what the earlier research suggests."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase explains why hybrid systems would be better than microwave heating alone: microwaves often heat food unevenly. That is a weakness of microwave heating. It is not an advantage over conventional methods (A), and the technology was already introduced in the first sentence (C).",
+    "fix": {
+      "passage": "Microwave heating, a thermal technology used to preserve food on an industrial scale, is generally considered to be an improvement over more conventional thermal preservation methods. Scientists in Latin America have contributed to a better understanding of this technology, with researchers from Mexico demonstrating its effectiveness in preserving mamey sapote fruits. As research continues, scientists hope to make advancements in hybrid systems combining multiple food preservation technologies, which would be advantageous over using microwave heating alone, <u>given that it often heats food unevenly</u>."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text defines positive expressive writing and describes two of its techniques, then reports Hoult and colleagues' finding that the techniques affect well-being more consistently than physical health. That is an overview followed by a research finding. No daily-writing recommendation (A), follow-up study (C), or ranking of most useful techniques (D) appears."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Both texts say a sense of shared identity can motivate collective action on global problems. Text 1 stresses the broadest possible connection, the shared biology of all humanity, while Text 2 uses a narrower group identity, such as young people's shared role as future inheritors. Neither text says people must learn how issues affect them individually (A) or that some issues will become less relevant (C)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers found that white butterflies were seen on green flowers more than other butterflies, which links color to behavior. They also found more feeding on cloudy days, which links weather to behavior. So both factors were linked."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "All three ratios are above 0.710, which indicates continental crust material in every stage. The ratio falls from 0.71685 (core, formed first) to 0.71548 (rim) to 0.71416 (matrix, formed last), so the crustal influence decreased over time but never disappeared. A gets the trend backward.",
+    "fix": {
+      "passage": "A student is studying igneous rock formations on Elba Island, Italy, and reviews published data on the ratio of strontium isotopes (⁸⁷Sr/⁸⁶Sr) in minerals from a specific rock sample. These isotope ratios provide information about the composition of the magma that formed the rock. Ratios below 0.710 suggest more material from the mantle in the magma, while ratios increasing above that number usually indicate greater proportions of material from the continental crust. The minerals in the rock sample record three growth stages: crystal core zones formed first, then rim zones, and finally the surrounding matrix. The student concludes that the rock sample ______.",
+      "table": {
+        "caption": "Strontium Isotope Ratios for an Igneous Rock Sample",
+        "headers": [
+          "Mineral Zone",
+          "⁸⁷Sr/⁸⁶Sr Ratio"
+        ],
+        "rows": [
+          [
+            "Crystal core",
+            "0.71685"
+          ],
+          [
+            "Crystal rim",
+            "0.71548"
+          ],
+          [
+            "Crystal matrix",
+            "0.71416"
+          ]
+        ]
+      },
+      "choices": {
+        "B": "does not show the expected ⁸⁷Sr/⁸⁶Sr ratios across the stages of mineral formation.",
+        "C": "contains ⁸⁷Sr/⁸⁶Sr ratios too similar to provide reliable information about magma sources."
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The surprising effect is that delays rose outside the rush hours and on roads that were never restricted. The 7:00–8:00 p.m. period is not a rush hour, yet delays rose sharply there on both previously restricted roads (1.98) and previously unrestricted roads (1.32), the clearest example. B (0.71) shows a smaller rise, and A describes rush hour on restricted roads, which was the expected effect.",
+    "fix": {
+      "passage": "In 2016, the city of Jakarta—one of the world’s largest metropolitan areas—revoked a rule that restricted the use of major roads in the city’s business district to only vehicles with three or more passengers during rush hours (7:00–10:00 a.m. and 4:30–7:00 p.m.). As researchers had expected, this move led to increased traffic delays during those times on the roads whose use had been limited, especially in the later rush hour period. Surprisingly, delays also worsened during other periods of time and on roads that hadn’t been subject to the rule; the data most clearly reflect this effect in the period of ______.",
+      "table": {
+        "caption": "Change in Average Traffic Delay After End of Restriction (min/km)",
+        "headers": [
+          "Time Period",
+          "Previously Restricted",
+          "Previously Unrestricted"
+        ],
+        "rows": [
+          [
+            "6:00–7:00 a.m.",
+            "0.00",
+            "0.03"
+          ],
+          [
+            "7:00–10:00 a.m.",
+            "0.98",
+            "0.13"
+          ],
+          [
+            "10:00 a.m.–4:30 p.m.",
+            "0.55",
+            "0.71"
+          ],
+          [
+            "4:30–7:00 p.m.",
+            "2.48",
+            "0.60"
+          ],
+          [
+            "7:00–8:00 p.m.",
+            "1.98",
+            "1.32"
+          ],
+          [
+            "8:00 p.m.–6:00 a.m.",
+            "0.05",
+            "0.16"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The fence was built only about 150 years ago. If the west-east genetic split already existed in dingoes about 2,000 years ago, the fence can't have caused it, which is why Wasef's team rejects that explanation. B and C describe how dingoes arrived and spread but don't show the modern split existed before the fence, and D describes interbreeding happening equally on both sides."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "High-pressure reactions usually produce cements with lower Ge/Si ratios than the nearby grains. If the cements' ratios don't show that pattern, the cements probably didn't form by those late reactions, which leaves the other explanation: rapid preservation by silica precipitating from silica-rich oceans. A and B point toward the high-pressure explanation, and D compares sample counts, which says nothing about how the cements formed.",
+    "note": "figure missing: the original likely had a Ge/Si graph; answer chosen from the text logic and the known study result"
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Mellaart's 8,000–10,000 estimate came from the dense clusters of buildings, assumed to be homes. Kuijt and Marciniak show that many buildings were lived in only briefly and later used for storage, so not all buildings were homes at the same time. That undercuts using building density as a stand-in for population at a given moment. The findings say nothing about mud bricks marking a building's use (B)."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Bennu material kept in a very dry environment had plenty of sodium evaporites, but samples exposed to ordinary Earth air lost them within months. Meteorites that fall to Earth are exposed to that humid air, which could explain why they show almost no evaporites. A and B misread the evidence: the evaporites were present before any Earth exposure, and humidity destroyed them rather than creating them. C reverses the humidity comparison."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The laws aimed to stop people from showing off status, but fines on high-profile offenders were publicly announced, and the rich treated them as a \"tax on privilege.\" A public fine could thus advertise that someone was wealthy enough to break the law, which works against the laws' goal, so enforcing them only lightly avoided that effect. B is tempting, but it explains why fines were ineffective, not why limiting enforcement would protect the laws' aims."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the long infinitive phrase \"To experience both...forebearers,\" which acts as a single, singular subject. It needs a singular main verb, so \"is to realize\" completes the sentence (to experience X is to realize Y). \"Are realizing\" is plural, and \"to realize\" and \"realizing\" are not main verbs."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers to Rowland Hill's penny postage system, a singular thing, whose lead other nations followed. The singular possessive \"its\" is correct. \"It's\" means \"it is,\" \"they're\" means \"they are,\" and \"their\" is plural with no plural noun to refer to."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The words after the blank explain what \"the ultimate goal\" is, so a colon fits: it introduces the explanation after a complete clause. A period or semicolon would leave \"Catching an in-person glimpse...\" as a fragment, and no punctuation runs the explanation into the clause."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Paleogeneticist\" is a title placed right before the name, so no comma separates them, and the compound subject \"paleogeneticist Emrah Kurdök and his colleagues\" needs no comma before its verb \"were able.\" B and C wrongly separate the title from the name, and D puts a stray comma between the two parts of the subject.",
+    "note": "Source solver chose D; D inserts a comma inside the compound subject (\"Kurdök, and his colleagues were\"), so A is correct."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists three big items: vast collections of folk art, Arnwine Cabin, and a re-created farm. Because the first and second items contain internal commas, the items must be separated by semicolons, matching the semicolon already before \"and a re-created.\" A comma after \"paintings\" would blur Arnwine Cabin into the list of folk art."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Each a detailed portrait of a particular species\" is a phrase with no verb that describes the plates, so a comma correctly attaches it to the main clause. A creates a comma splice because \"each was a detailed portrait\" is a full clause. B and D put a semicolon before a phrase that can't stand on its own as a clause."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because there is no single agreed-upon definition of a species, many competing definitions are used. The second clause is a consequence of the first, so \"as a result\" fits. \"However\" signals a contrast that isn't there, and \"for instance\" would wrongly treat the second clause as an example."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says saturated zones hamper GPR, and the next sentence explains how: water absorbs and scatters radar energy, hiding defects behind the wet areas. \"Indeed\" introduces this elaboration and reinforcement. \"Nevertheless\" signals a contrast, and \"Likewise\" signals a separate similar point, neither of which fits."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize different years, the sentence must give both years and stress the contrast. C states that Between the World and Me became a best seller in 2015 and An American Marriage \"but in 2018.\" A and D give no years, and B contrasts genres instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Since 1931, the New York Times (NYT) Best Sellers list has been a measure of the most successful books in the US.\n• Ta-Nehisi Coates and Tayari Jones are Black authors who have reached the NYT Best Sellers list.\n• Between the World and Me is a nonfiction book by Ta-Nehisi Coates. It reached the NYT Best Sellers list on August 2, 2015.\n• An American Marriage is a novel by Tayari Jones. It reached the NYT Best Sellers list on February 6, 2018."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C connects every step: engineers copied the beak's gradually widening shape for the train's nose, improving the move between tunnels and open air and eliminating sonic booms. D wrongly says the train moves between air and water, and A wrongly says the beak itself eliminated sonic booms. B doesn't describe the beak's shape or what the engineers changed.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Shinkansen (bullet train) is a network of high-speed railways in Japan.\n• 1960s: The trains’ high speeds created intense pressure waves that produced sonic booms when trains exited tunnels.\n• 1980s: Engineer Eiji Nakatsu noted that the kingfisher bird could dive into water at high speeds while barely creating a splash.\n• The kingfisher’s beak gradually widens from tip to head, allowing smooth transition between air and water.\n• Nakatsu and other engineers redesigned the train nose based on the kingfisher’s beak structure to improve the transition between tunnel and open-air environments.\n• The redesign reduced pressure buildup, eliminating sonic booms."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity between the two authors. D states that both had works enter the public domain recently. A and C focus on differences (genre, year), and B mentions only Sinclair Lewis.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A copyright prevents a book’s contents from being reproduced (published) without permission from the copyright holder.\n• When a book’s copyright expires, the book enters the public domain and can be legally reproduced by anyone.\n• New Hampshire is a poetry collection by Robert Frost. It entered the public domain in 2019.\n• Arrowsmith is a novel by Sinclair Lewis. It entered the public domain in 2021."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "72"
+    ],
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For Sphere B, (4/3)πr^3 = 288π, so r^3 = 216 and r = 6 inches. Sphere A's radius is 5 · 6 = 30 inches. Since P lies on MN, segment MN is the diameter of A plus the diameter of B: 60 + 12 = 72 inches."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Taylor charges 7 + 9.5x and Antwan charges 10 + 8.5x. Taylor's charge is greater when 7 + 9.5x > 10 + 8.5x, which simplifies to x > 3. The ranges in A and B include x = 3, where the two charges are equal ($35.50 each)."
+  },
+  {
+    "key": "m1-03",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The starting value (when x = 0) is 30, and a 70% increase per step means multiplying by 1 + 0.70 = 1.70 each time. So y = 30(1.70)^x. Choice B uses 1.07, which would be only a 7% increase."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because b ∥ c, angles z and y are same-side interior angles along the segment joining b and c, so z + y = 180. Because a ∥ c, angle w equals the alternate interior angle at c formed by the other segment, which is x + y, so w − y = x. Then x + y + z = x + 180, and 201 < x + 180 < 212 gives 21 < x < 32. So w − y = 22 is possible, but w − y = 32 is not, because the inequality is strict.",
+    "note": "Source solver chose C (I and II); with the strict inequality x < 32, w − y = x can't equal 32.",
+    "fix": {
+      "prompt": "In the figure shown, lines a, b, and c are parallel. If 201 < x + y + z < 212, which of the following could be true?\nI. w − y = 22\nII. w − y = 32"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since PQ is a diameter, arc PQ is a semicircle, which is half the circumference. The full circumference is 2 · 56 = 112 centimeters. Choice B, 56, is just the semicircle."
+  },
+  {
+    "key": "m1-06",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "If Aster earned E in 2003, then 2004 earnings were 1.11E and 2005 earnings were 1.06(1.11E) = 1.1766E. So E = y · 1.1766E, which gives y = 1/1.1766 ≈ 0.85. Of the choices, 0.8409 is closest. Choice D, 1.1766, is the reciprocal: it compares 2005 to 2003.",
+    "note": "Exact value is 1/1.1766 ≈ 0.8499; the printed choice C reads 0.8409, which is still clearly the closest."
+  },
+  {
+    "key": "m1-07",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. Doubling the sample size therefore gives a margin of error below 3.7%. Choice B wrongly assumes the margin doubles along with the sample."
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both histograms have the same frequencies in every interval (3, 4, 7, and 9 values). A histogram shows only intervals, not exact values, so the two data sets could contain exactly the same integers. In that case their means are equal, and the smallest possible difference is 0."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "252"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since g(18) = 0, (18 + 14)(t − 18) = 0, so t = 18. Then g(x) = (x + 14)(18 − x), and g(0) = 14 · 18 = 252."
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "31500"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each leuga is 7,500 pedes, so 4.2 leugas is 4.2 × 7,500 = 31,500 pedes."
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An x-intercept has y = 0, which happens when the numerator is 0: 35 − x = 0, so x = 35. Since a and b are positive, the denominator at x = 35 is 35a + b ≠ 0, so the intercept is (35, 0). Choices B and C have x = 0, so they are y-intercept-style points, and x = −b/a in D makes the denominator 0.",
+    "fix": {
+      "prompt": "y = (35 − x)/(ax + b)\nWhat is the x-intercept of the graph of the equation in the xy-plane, where a and b are positive constants?",
+      "choices": {
+        "C": "(0, 35/b)",
+        "D": "(−b/a, 0)"
+      }
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "18"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide by the number of yards in a mile: 31,680 ÷ 1,760 = 18. The cyclist's average speed is 18 miles per hour."
+  },
+  {
+    "key": "m1-13",
+    "answer": [
+      "580.6"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The base area is 16 · 8 = 128. The two faces on the 16-unit edges have slant height sqrt(18^2 + 4^2) = sqrt(340), so together they add 2 · (1/2) · 16 · sqrt(340) ≈ 295.02. The two faces on the 8-unit edges have slant height sqrt(18^2 + 8^2) = sqrt(388), so together they add 2 · (1/2) · 8 · sqrt(388) ≈ 157.58. The total surface area is about 128 + 295.02 + 157.58 ≈ 580.6 square units.",
+    "note": "Exact value 128 + 32sqrt(85) + 16sqrt(97) ≈ 580.60; a non-integer grid-in is unusual, so check the intended rounding."
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In f(x) = 18(2.80)^(x/2), increasing x by 4 adds 2 to the exponent, so f is multiplied by 2.80^2 = 7.84. For g to grow by the same percent when x increases by 1, it must be multiplied by 7.84 each step, so g(x) = n(7.84)^x. Choice B, 2.80, is the growth factor for an increase of 2 in x, not 4.",
+    "note": "Source solver chose B; f grows by 2.80^2 = 7.84 per increase of 4 in x, so D is correct.",
+    "fix": {
+      "prompt": "f(x) = 18(2.80)^(x/2)\nThe function f is defined by the given equation. The value of f(x) increases by p% for every increase of x by 4. For which of the following functions, where n is a positive constant, does the value of g(x) increase by p% for every increase of x by 1?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A point's actual y-value is greater than the predicted value when the point lies above the line of best fit. The points near x ≈ 3.6, 5.9, 6.5, 8.4, and 9.7 are above the line, and the other 4 are below it. That makes 5 points."
+  },
+  {
+    "key": "m1-16",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In right triangle RST, tan R = TS/RT = 160/231, so the hypotenuse is RS = sqrt(160^2 + 231^2) = sqrt(78,961) = 281. Since XY ∥ TS and X lies on RS, angle X corresponds to angle S. So sin X = sin S = RT/RS = 231/281. Choice B, 160/281, is sin R.",
+    "fix": {
+      "prompt": "In triangles RST and XYZ shown, XY is parallel to TS and tan R = 160/231. What is the value of sin X in triangle XYZ?",
+      "choices": {
+        "A": "160/391",
+        "B": "160/281",
+        "C": "231/281",
+        "D": "231/160"
+      }
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "g(x) = f(x − 2) + 4 = (x − 5)(x + 3) + 4 = x^2 − 2x − 15 + 4 = x^2 − 2x − 11. Completing the square gives (x − 1)^2 − 12, which shows the minimum value −12 as a constant. Choices A and D are equivalent forms but don't show the minimum, and B has the wrong vertex."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "84"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let each species start with N mites. A 1,900% increase makes the prey 20N, and a 220% increase makes the predators 3.2N. Since 3.2N/20N = 0.16, the predators are 16% of the prey, which is 84% less, so p = 84."
+  },
+  {
+    "key": "m1-19",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cheese gives 1 microgram per 3.0 ounces, or about 1/3 ≈ 0.33 microgram per ounce. Tuna gives 1 microgram per 1.2 ounces, or about 1/1.2 ≈ 0.83 microgram per ounce. So 0.33x + 0.83y = 3.5. Choice B uses the serving sizes as if they were micrograms per ounce."
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since 504^2 + 128^2 = 270,400 = 520^2, triangle RST has a right angle at S. Angle W corresponds to angle T, so tan W = tan T = opposite/adjacent = RS/ST = 504/128 = 63/16. Choice B, 16/63, is the reciprocal (tan R).",
+    "fix": {
+      "choices": {
+        "A": "16/65",
+        "B": "16/63",
+        "C": "63/65",
+        "D": "63/16"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out the values are. Set A runs from p − 10 to p + 2, a range of 12, with values far from the center. B and C have ranges of only 5 and 7, and D has no spread at all."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the equation as 7x^2 + 77x − r = 0. Its discriminant is 77^2 − 4(7)(−r) = 5,929 + 28r, which is positive because r > 0. A positive discriminant means exactly two distinct real solutions."
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When a rectangle is inscribed in a circle, its diagonal is a diameter of the circle, because the rectangle's right angles are inscribed angles that cut off semicircles. The diameter is 482sqrt(3), so the radius is half of that: 241sqrt(3). Choice B is the diameter, not the radius."
+  },
+  {
+    "key": "m2-02",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the sum of the solutions is −b/a. Here a = 1 and b = −90, so the sum is −(−90)/1 = 90. Choice B, −18, is the product of the solutions (c/a), not the sum."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The y-intercept is g(0) = f(0)/(0 + 4) = f(0)/4. Since g(0) = 54, f(0) = 4 · 54 = 216. Choice A comes from dividing by 4 instead of multiplying.",
+    "fix": {
+      "prompt": "In the xy-plane, the function g(x) is defined as g(x) = f(x)/(x + 4). If the y-intercept of the graph of y = g(x) is (0, 54), what is the value of f(0)?"
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The volume of a pyramid is (1/3) × base area × height. The base area is 4^2 = 16, so V = (1/3)(16)(6) = 32 cubic units. Choice B forgets the height, and D, 48, is 16 × 6 / 2 instead of / 3."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parabola opens upward and its lowest point (the vertex) is below the horizontal line y = −9. The graph goes up forever on both sides of the vertex, so it crosses y = −9 once on the left and once on the right. That gives exactly two solutions to f(x) = −9."
+  },
+  {
+    "key": "m2-06",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 7: (x − 4)^2 = 100, so x − 4 = 10 or x − 4 = −10. That gives x = 14 or x = −6, and since x > 0, x = 14. Choice B, 10, forgets to add 4."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both given points have y = 0, so line j is the x-axis. A line perpendicular to the x-axis is vertical, and the one through the origin is the y-axis, x = 0. The x-axis and y-axis meet at the origin, so the x-coordinate is 0."
+  },
+  {
+    "key": "m2-08",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Check both conditions: for f(x) = x(x − 8) + 3, f(0) = 0 + 3 = 3 and f(8) = 8 · 0 + 3 = 3, so A works. In B, f(8) = 8 · 16 + 3 = 131; in C, f(0) = 24; and in D, f(0) = 0."
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "ED and BC are both perpendicular to AC, so ED ∥ BC and triangle AED is similar to triangle ACB. Since CE = 2 · AE, AE is 1/3 of AC. So ED = (1/3)(BC) = 198/3 = 66. Choice C, 132, uses CE's share (2/3) instead of AE's.",
+    "fix": {
+      "prompt": "In triangle ABC, angle C is a right angle (∠C = 90°). Point E lies on side AC such that CE = 2 · AE, and point D lies on side AB such that segment ED is perpendicular to AC. If BC = 198, what is the length of segment ED?"
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 270: f(270) = 16 − 270/27 = 16 − 10 = 6. Choice D, 26, comes from adding 10 instead of subtracting it.",
+    "fix": {
+      "prompt": "f(x) = 16 − x/27\nThe function f is defined by the given equation. What is the value of f(270)?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 6 into the second equation: 6 = −4x + 2, so −4x = 4 and x = −1. The solution is (−1, 6). Choice C swaps the x- and y-values."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At t = 0, g(0) = 22, so 22 is the remaining distance at the start, the total length of the run in miles. The 4 is the runner's speed in miles per hour (A), and it is also the distance covered each hour (D)."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 20% decrease means multiplying by 0.8 each time, and that happens once every 5 seconds. After x seconds, there have been x/5 such periods, so f(x) = 340(0.8)^(x/5). Choices A and C use 0.2, which would be an 80% decrease, and B applies the decrease 5 times per second.",
+    "fix": {
+      "choices": {
+        "A": "f(x) = 340(0.2)^(5x)",
+        "B": "f(x) = 340(0.8)^(5x)",
+        "C": "f(x) = 340(0.2)^(x/5)",
+        "D": "f(x) = 340(0.8)^(x/5)"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A 12% increase multiplies the revenue by 1.12, and a 4% increase then multiplies it by 1.04. So the 2014 revenue is x(1.12)(1.04), and y = (1.12)(1.04). Percent increases in a row multiply; they don't add (B).",
+    "fix": {
+      "choices": {
+        "C": "1.04/1.12",
+        "D": "1/((1.12)(1.04))"
+      }
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each y-value is 0.6 times the one before it: 4,000 × 0.6 = 2,400, 2,400 × 0.6 = 1,440, and 1,440 × 0.6 = 864. A constant multiplier less than 1 means exponential decay. The differences (−1,600, −960, −576) are not constant, so the relationship is not linear.",
+    "fix": {
+      "prompt": "The table shows values of x and y. Which type of function best models the relationship between x and y?",
+      "table": {
+        "headers": [
+          "x",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "rows": [
+          [
+            "y",
+            "4,000",
+            "2,400",
+            "1,440",
+            "864"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "B",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 1 yard = 36 inches, divide by 36: 31,152 ÷ 36 ≈ 865.33 yards per hour. Choice D is 10 times too large."
+  },
+  {
+    "key": "m2-17",
+    "answer": "A",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each grid square is 1 unit. At x = 5, the data point is at y = 5, while the line of best fit passes through about y = 6. So the predicted value is greater than the actual value by 6 − 5 = 1."
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "From (0, −sqrt(298)), −sqrt(c) = −sqrt(298), so c = 298. From (2, 0), 4 + 2b + 298 = 0, so b = −151. Then g(m) = 0 means m^2 − 151m + 298 = 0, which factors as (m − 2)(m − 149) = 0. The greatest value is m = 149.",
+    "fix": {
+      "prompt": "g(x) = −sqrt(x^2 + bx + c)\nThe function g is defined by the given equation, where b and c are integers. In the xy-plane, the graph of y = g(x) passes through the points (2, 0) and (0, −sqrt(298)). If m is a value for which g(m) = 0, what is the greatest possible value of m?"
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: 18p − 19p = −p, so −p = 17 and p = −17. Choice C forgets the negative sign.",
+    "fix": {
+      "choices": {
+        "B": "−1/17"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "AC and BC both go from the center C to a point on the circle, so both are radii. All radii of a circle are equal, so BC = 34 mm. Choice C, 68 mm, would be the diameter."
+  },
+  {
+    "key": "m2-21",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use the common denominator (x − 5)^2: 4/(x − 5) = 4(x − 5)/(x − 5)^2. Then 4(x − 5)/(x − 5)^2 − 4/(x − 5)^2 = (4x − 20 − 4)/(x − 5)^2 = (4x − 24)/(x − 5)^2. Choice C comes from adding 4 instead of subtracting it.",
+    "fix": {
+      "prompt": "Which of the following expressions is equivalent to 4/(x − 5) − 4/(x − 5)^2 for all x > 5?",
+      "choices": {
+        "A": "0/(x − 5)^2",
+        "B": "(4x − 24)/(x − 5)^2",
+        "C": "(4x − 16)/(x − 5)^2",
+        "D": "4/(x − 5)"
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Subtract the second equation from the first: 3x − (−3x) = (2 + 8y) − (−5 + 8y). The y-terms cancel, leaving 6x = 7. Choice A, 7/2, is the value of 3x, not 6x.",
+    "fix": {
+      "choices": {
+        "A": "7/2"
+      }
+    }
+  }
+]

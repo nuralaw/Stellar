@@ -1,0 +1,559 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The cats are hard to study because they live in remote, out-of-the-way places, so their habitats must be far away from large human populations. \"Distant from\" says exactly that. \"Full of\" and \"drawn to\" say the opposite, and \"responsible for\" makes no sense for a habitat."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The new evidence shows the dry climate arrived well before the extinctions, which undercuts the old explanation, so scientists must change it. \"Revise\" means to change or rework an idea. \"Interpret\" and \"introduce\" don't show that the hypothesis is being corrected, and \"recollect\" means to remember."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tom stands before the fence and takes in its size (thirty yards long, nine feet high), which is what makes him gloomy. So \"surveyed\" means he looked it over. He isn't intrigued or full of questions, and he certainly isn't giving orders to the fence."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the microchip radically altered the industry and let it use mass production for the first time, so the word must mean changed completely. \"Transformed\" fits. \"Obstructed\" and \"overwhelmed\" are negative, and \"bypassed\" means went around, none of which matches a radical positive change."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example is about how often \"day\" is used, so the blank must describe how widespread a word is. \"Pervasive\" means spread throughout, which matches frequency of use. \"Credible,\" \"assertive,\" and \"profound\" describe a word's believability, tone, or depth, not how common it is."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence gives the bone a name, \"the hyoid,\" and the rest of the text uses that name to contrast the ocelot's rigid hyoid with the jaguar's flexible one. So it introduces a term for the discussion that follows. It doesn't locate the bone (the throat was already mentioned), and it says nothing about the hypothesis being unique.",
+    "fix": {
+      "passage": "Why do ocelots purr but jaguars roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats. <u>This bone is called the hyoid.</u> Ocelots, which are much smaller than jaguars, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, jaguars have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that ocelots lack. These traits allow jaguars and most other species of big cats to roar. The same traits may also prevent most big cats from purring."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains what made Carson's album new: it was the first peer-reviewed rap album, reviewed by both scholars and rappers, and it blended a mixtape with scholarly essays, helping redefine scholarship. That is an explanation of why the album is innovative. The text doesn't walk through every step of peer review or weigh the public impact of articles versus albums."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Jack jokes that if the rain didn't fall on Bartley, Bartley would wear a leaky pail as a hat just to have something to complain about. That means Jack thinks Bartley will find a reason to complain no matter what. Jack isn't saying Bartley is wrong about the weather (C); he's commenting on Bartley's gloomy attitude."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text defines horizontal gene transfer and then points out that understanding how to prevent it could help control dangerous pathogens. That makes the main idea that studying it may lead to useful applications. Nothing in the text mentions a mistaken perception, new research overturning old findings, or the process being more common than thought."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that hoards are still being found in the 2000s, so the example needs a discovery after 2000. The table shows the Carrick-on-Suir Hoard was found in 2013. Choice C is true but doesn't show any find in the 2000s, and D is false because those two hoards were found in 1945 and 1896.",
+    "fix": {
+      "passage": "For centuries, people in Ireland and Northern Ireland have been finding deposits of valuable objects, called hoards, that earlier people buried. These discoveries have persisted into the 2000s; for example, _____",
+      "table": {
+        "caption": "Examples of Hoards found in Ireland and Northern Ireland",
+        "headers": [
+          "Hoard name",
+          "Date of contents",
+          "Year of discovery",
+          "Description"
+        ],
+        "rows": [
+          [
+            "Carrick-on-Suir Hoard",
+            "17th century CE",
+            "2013",
+            "gold coins"
+          ],
+          [
+            "Coggabeg Hoard",
+            "24th–19th century BCE",
+            "1945",
+            "gold pieces"
+          ],
+          [
+            "Broighter Hoard",
+            "1st century BCE",
+            "1896",
+            "gold pieces"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that May is puzzled by Newland's lack of enthusiasm for Newport. Choice C says May \"could not understand\" his \"obscure reluctance\" to spend the summer there, which shows both her confusion and his reluctance. Choices B and D describe Newland's feelings about May or about adventure, not May's puzzlement."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With a 160 mm aperture she can see any star whose minimum aperture is 160 mm or less. Sk-69° 249 A (60), VFTS 482 (102), and R136a4 (152) qualify, but HSH95-46 needs 203 mm, so she can see most but not all of them. Choices B and D use mass and distance, which don't decide visibility here, and A only addresses a 60 mm telescope.",
+    "fix": {
+      "passage": "A telescope allows us to see very faint objects mostly due to the large size of the opening that light passes through, known as the aperture. Like the pupil in the human eye, the larger the diameter of a telescope's aperture, the fainter the objects we can detect with it. An amateur astronomer claims that she likely could see most, but not all, of the stars in the table while using a telescope with a 160-millimeter (mm) aperture.",
+      "table": {
+        "caption": "Characteristics of Several Large Stars",
+        "headers": [
+          "Name of star",
+          "Mass (solar masses)",
+          "Distance (light-years)",
+          "Minimum aperture to detect from Earth (millimeters)"
+        ],
+        "rows": [
+          [
+            "Sk-69° 249 A",
+            "119",
+            "160,000",
+            "60"
+          ],
+          [
+            "VFTS 482",
+            "145",
+            "164,000",
+            "102"
+          ],
+          [
+            "HSH95-46",
+            "160",
+            "163,000",
+            "203"
+          ],
+          [
+            "R136a4",
+            "167",
+            "157,000",
+            "152"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts 1980, when no country had more than 2 women on its high courts, with a later time that shows the upward trend. In 2010 all three countries had 3, which completes that contrast for every country in the graph. Choice B is true (Peru rose from 0 to 3), but comparing the sizes of the increases doesn't show that the countries now have more than 2, and D covers only Mexico."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Great blue herons prefer deep water in breeding season, but small dark herons don't. So raising water depth should draw great blue herons more than small dark herons, meaning it is less likely to attract small dark herons than great blue herons. The study said nothing about lifespan or birds that don't live in wetlands, and D ignores the difference between the two species."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular noun \"sculpture,\" so the verb must be singular: \"stands.\" The other choices (\"were standing,\" \"have been standing,\" \"are standing\") all use plural forms that don't agree with \"sculpture.\""
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Roughly 2,330,000 km²\" describes the Arabian Desert, and the whole phrase \"the roughly 2,330,000 km² Arabian Desert\" is the subject of \"is classified.\" No punctuation should separate a modifier from its noun or the subject from its verb. The commas in A, B, and C break up that single noun phrase."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"even-toed ungulates\"; the goat is only an example set off by commas. A plural subject takes the plural verb \"belong.\" \"Belongs\" and \"has belonged\" are singular, and \"is belonging\" is both singular and awkward."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"The impact of Simpson's work is threefold\" is a complete sentence, and what follows lists the three impacts. A colon is the right mark to introduce that explanation. A semicolon (A) needs a full clause after it, a period (C) leaves a fragment, and no punctuation (B) runs the ideas together."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the clause describing the resource is \"traces,\" so the blank must be a modifier set off by commas, not a second main verb. \"Integrating text and music clips\" works as that participial phrase. \"Integrates,\" \"is integrating,\" and \"has integrated\" would give the clause two main verbs with no conjunction."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Two independent clauses are joined here: \"the guide soon grew in scope and influence\" and \"its modest French eateries were replaced....\" Joining them needs a comma plus a coordinating conjunction: \"influence, and.\" A comma alone (A) is a comma splice, and \"and\" without a comma (B) or nothing at all (D) creates a run-on."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"German biologist\" is a title placed directly before the name, so no comma goes between them: \"German biologist Gertrud Morlock.\" The subject \"German biologist Gertrud Morlock and colleagues\" also shouldn't be separated from its verb \"found\" by a comma. The other choices add unnecessary commas."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first reason Houston Black suits Texas is that it is abundant; the next sentence gives a second reason, its role in agriculture. \"Additionally\" adds a further point. \"By contrast\" and \"Alternatively\" signal opposition or a choice, and \"At that time\" points to a time that isn't mentioned."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general claim that sleek vehicles are more aerodynamic, and the T-45 jet's streamlined nose is a specific case of it. \"For instance\" introduces that example. \"However\" signals contrast, which doesn't fit since the jet supports the claim."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because winning requires only a plurality, not a majority, it follows that a candidate can win with less than 50% of the vote. \"Accordingly\" signals that consequence. \"However\" would wrongly suggest a contrast, and \"Moreover\" or \"Similarly\" would add a parallel point instead of a result."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name a vegetable that contains vitamin C, and C says vitamin C is found in asparagus. The other choices never name a specific vegetable: A and D speak only of food in general, and B is about animals making the nutrient."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the shawl's Choctaw name, and only A says the shawl is called an \"anchi.\" Choices B and D translate the archive's name instead, and C mentions the shawl without its Choctaw name."
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize the different years, the sentence must state both years and contrast them. Choice D gives 1993 for Secrets of a Sparrow and 2017 for The Crossover, with \"but\" stressing the gap. Choice C draws a contrast too, but it is about the books' genres, not their years."
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says excavation takes weeks or months of hard, physically tiring work, so the process must be difficult. \"Rapid\" contradicts the long time it takes, and \"cheap\" or \"common\" have nothing to do with the effort described."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence calls these portraits \"characteristic works\" and \"esteemed,\" which shows Edwards is known for painting notable figures. \"Reputation for\" captures that. A \"complaint\" or \"question\" doesn't match the praise, and \"requirement for\" makes no sense here."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example credits a marketing campaign with the novel's success, so the blank must refer to promoting a book. \"Publicity\" means public attention gained through promotion. Originality, complexity, and practicality are qualities of the book itself, not of marketing."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says African languages contributed to the Puerto Rican dialect, so certain vowel sounds must come from Yoruba pronunciation. \"Traced to\" means their origin can be followed back to that source. \"Announced,\" \"offered,\" and \"surrendered\" don't describe where a sound comes from."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The entries were hoaxes that were \"fictitious,\" and they were deleted once people saw what they were. So they were recognized as \"fabrications,\" meaning made-up things. \"Revelations\" and \"enhancements\" sound positive, and \"analyses\" doesn't describe invented articles."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first says animals besides humans use tools, and the underlined sentence gives the octopus's use of seashells as a case of that. So it provides an example of tool use by a nonhuman animal. It says nothing about how often octopuses use tools compared with others, or about octopuses being smarter than birds.",
+    "fix": {
+      "passage": "Humans aren't the only ones who use tools. Other animals also find tools helpful. <u>Octopuses use two halves of a seashell to provide protection or a place to hide.</u> And despite sometimes being thought of as simple, many birds make clever use of tools as well. Striated herons have been observed using breadcrumbs and other lures to attract fish to the water's surface, making it easier for the herons to catch them."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence presents Nixon mainly through Watergate. The underlined sentence begins \"But Nixon's legacy is complex\" and lists positive achievements (China, health care reform), showing that seeing him only through the scandal is too simple. It doesn't compare two figures (Obama is mentioned only to date a law), and it doesn't explain why historians ignore his work.",
+    "fix": {
+      "passage": "President Richard Nixon is most famous for his participation in the 1970s Watergate political scandal, a convoluted tale of criminality and eroded ethics involving a constellation of associates such as Attorney General Richard Kleindienst and Republican Party official Robert Mardian. <u>But Nixon's legacy is complex: he has been praised for his role in opening relations between the United States and China, and he once made an attempt at reforming United States health care policy that is arguably a precursor to the Affordable Care Act, which became law during the Barack Obama administration.</u>"
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 says better genre classification could benefit users, but Text 1 questions whether sorting music by genre is even useful, since genres are ambiguous and simplistic. So the Text 1 author would likely reply that genre may not be the most helpful way to think about music. Choice A wrongly makes that author optimistic about genre classification."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every sentence is about the Norwegian runestone: its discovery, its age, and what it may teach researchers. So the main topic is the runestone found in Norway. Carbon dating and Zilmer are mentioned only as details about the stone, and battles are never discussed."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Members aged 14 to 17 are the Seniors, and the table shows 52 thousand Seniors in 1995. Choice C (45) is the 1994 figure for Seniors, and B (727) is the number of Juniors in 1995.",
+    "fix": {
+      "passage": "The Girl Scouts of America is a youth organization that had just over 1 million members in 2021. A student is writing an essay on the history of the organization and wishes to determine the number of members from 14 to 17 years old who were in the Girl Scouts in 1995. According to the table, the number (in thousands) is _____",
+      "table": {
+        "caption": "Members of the Girls Scouts of America, by Age Category, 1992-1995 (in thousands)",
+        "headers": [
+          "Category",
+          "1992",
+          "1993",
+          "1994",
+          "1995"
+        ],
+        "rows": [
+          [
+            "Juniors (8–11 years)",
+            "870",
+            "791",
+            "756",
+            "727"
+          ],
+          [
+            "Ambassadors (older than 17)",
+            "863",
+            "826",
+            "802",
+            "784"
+          ],
+          [
+            "Cadettes (11–14 years)",
+            "188",
+            "168",
+            "174",
+            "172"
+          ],
+          [
+            "Seniors (14–17 years)",
+            "50",
+            "43",
+            "45",
+            "52"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Winnemucca builds suspense through her physical reaction. Choice A describes her heart jumping and beating so loudly she fears it will be heard as an unknown horse approaches, which is both physical and suspenseful. The other quotations describe celebrations or family news with no physical reaction or tension."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The student needs evidence of mixed feelings that could block adoption. Choice A shows consumers think cultured meat would help the environment yet few are willing to eat it, which is exactly a mixed reaction that would slow its spread. Choice C gives only a positive claim from advocates, and B and D aren't about attitudes toward cultured meat at all.",
+    "fix": {
+      "passage": "A student is writing an essay on the subject of cultured meat, which is grown in a laboratory and is intended to help reduce the number of livestock harvested for food. The student wishes to make the case that people have mixed feelings about cultured meat that may be a barrier to its worldwide adoption."
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "MacLean's study found that breeds with similar behavior, especially chasing, tend to be genetically similar. So if French bulldogs and bullmastiffs chase in similar ways, the likely explanation is a shared genetic factor. Nothing in the text compares how much these breeds chase relative to other breeds or predicts how their genes will change."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since the 1960s, metal detectors, radar, and aerial surveys have let people find hoards before digging. Earlier searchers had none of these tools, so older hoards were more likely found by chance, for example when someone happened to dig one up. The text gives no reason to think older finds contained more gold or rarer items."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers say \"invasive\" and \"native\" describe temporary situations, because climate change can push species out of ranges or make new areas livable. Applied to Wisconsin, the beetle's invasive label may fit today but might not later if conditions change. Choice C ignores the role of climate, and A and B make claims the text never supports."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Economists expected liberalization to make it easier for companies to raise money, and Henry found that companies in those countries did get big increases in investment. So the evidence matched the standard view. Choice B wrongly suggests the economists were mistaken, and C contradicts the finding that investment rose within the three years after liberalization."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb, \"spent,\" and the pattern \"spent [time] ___ing\" calls for an -ing form: \"spent over fourteen years collecting data.\" \"Is collecting,\" \"were collecting,\" and \"collected\" would each add a second main verb that the sentence can't hold."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence needs a main verb for the subject \"She,\" describing a habitual action in the present like \"creates\" in the previous sentence. \"Weaves\" is the correct present-tense singular form. \"Weaving,\" \"to weave,\" and \"to be weaving\" can't serve as a main verb."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "This is a statement, not a question, so it ends with a period, and inside a statement the normal word order is subject then verb: \"where sound is made.\" Choices A and D use question word order, and B and D wrongly end with a question mark."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Travelers flew out of major urban airports with increasing frequency\" is a complete sentence, and the Dulles statistic is a new sentence that gives an example. So a period goes after \"frequency,\" and \"For example,\" begins the next sentence. In B and C, \"for example\" is wrongly attached to the first sentence, and A creates a comma splice."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The definition \"the cellular organs that generate energy from light\" is an interruption that ends with a dash. A matching dash must open it, so \"chloroplasts—\" is needed. Pairing a comma with the closing dash (A) or using a semicolon (D) is incorrect, and leaving no mark (C) doesn't set off the definition."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "She wanted to avoid harsh synthetic dyes, so she tried natural dyes; the second sentence follows from that goal. \"With this in mind\" shows the action is based on the stated aim. \"Nevertheless\" would signal contrast, and \"To sum up\" would introduce a summary."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence introduces the general idea of energy moving across trophic levels, and the second sentence walks through a specific case: plants, then deer, then coyotes. \"For example\" introduces that illustration. Nothing is being contrasted, so \"By contrast\" and \"However\" don't fit."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because residents take millions of trips on the metro, officials work to keep the stations running smoothly. That is a response to the first fact, so \"Accordingly\" fits. \"For example\" would require the second sentence to illustrate the first, and \"However\" signals a contrast that isn't there."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say both organisms live in the southern portion of the lake, and A states that shared trait with \"both.\" Choices B and D each mention only one organism, and C is about the lake rather than any similarity."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Introducing the movement to a new audience calls for saying what it is and what it stands for. Choice A names it, gives its founding date, and summarizes its goals of healthy food, sustainable production, and fair treatment of workers. Choice D refers to \"the movement\" without naming it, B is too narrow, and C gives only dates."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The poem's format is a sequence of seven haiku, which is exactly what D says. Choice A explains why Sanchez chose the form without saying what it is, B describes the book's subject, and C makes a claim about all the poems in the book that the notes don't support."
+  }
+]

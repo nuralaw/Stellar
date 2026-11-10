@@ -1,0 +1,974 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Frye says that even in lyrics and essays the writer acts as a fictional hero, and if this fictional element vanished the writing would become plain direct address. So \"projection\" means the way the writer puts forward or presents a fictional version of himself. \"Estimation\" and \"Prediction\" (A, D) are other meanings of projection that have nothing to do with how a writer appears in a text.",
+    "fix": {
+      "passage": "The following text is from Northrop Frye’s 1957 book Anatomy of Criticism.\n\nEven in lyrics and essays the writer is to some extent a fictional hero with a fictional audience, for if the element of fictional projection disappeared completely, the writing would become direct address, or straight discursive writing, and cease to be literature."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Closing registers creates pressure imbalances that restrict airflow and make motors work harder, which means the system runs less well. \"Reduce the efficiency of\" captures that. \"Expense of\" (C) doesn't fit, because making motors work harder would raise costs, not reduce them."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "People with no musical training could still follow a complex beat, which suggests the ability comes naturally to them rather than through lessons. \"Instinctive for\" expresses that inborn quality. \"Unique to\" (B) is wrong because the text describes something most people share, and \"imposed on\" (C) suggests outside force.",
+    "note": "Source answer was B (unique to); the text stresses an ability shared by untrained people, so instinctive for (A) fits."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says recipients are \"pleased\" by these gestures, and their pleasure grows with their surprise. So the missing word must mean pleasure or satisfaction: \"gratification.\" \"Consternation\" (B) means dismay and \"incredulity\" (A) means disbelief, which contradict the recipients being pleased."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The passage describes the weather in Eagle County that June: the steady breeze, the clouds at noon, and the bright light before sunset. Its purpose is to portray the setting. No person is described, so C is out, and the mild, beautiful weather is the opposite of a problem or conflict (A, D).",
+    "fix": {
+      "passage": "The following text is from Edith Wharton’s 1917 novel Summer. Eagle County is located in a region where summer weather can be quite cool.\n\nThere had never been such a June in Eagle County. Usually it was a month of moods, with abrupt alternations of belated frost and mid-summer heat; this year, day followed day in a sequence of temperate beauty. Every morning a breeze blew steadily from the hills. Toward noon it built up great canopies of white cloud that threw a cool shadow over fields and woods; then before sunset the clouds dissolved again, and the western light rained its unobstructed brightness on the valley."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text names the remake's strong opening weekend, then says one reason was the marketing team's online strategy and gives details and results of that campaign. So it explains why the advertising succeeded. It never compares countries' theaters (A), criticizes costs (B), or praises actors (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 claims the honor is well known among residents and tourists. Text 2 argues that without deliberate marketing, many current and potential visitors may not even know Burgos is home to special food. So Text 2's author would say many visitors may be unaware of the designation. Choice B agrees with Text 1 instead of responding to the claim about awareness.",
+    "fix": {
+      "passage": "Text 1\nIn 2015 Burgos, Spain, was named a City of Gastronomy by UNESCO in recognition of the city’s unique food culture. <u>The honor is well known among both residents of the city and tourists who visit.</u> It’s obvious that the selection of Burgos by UNESCO has brought awareness to local recipes, cooking practices, and chefs and has provided a boost to the city’s tourism industry.\nText 2\nMany people in Burgos’s restaurant industry hoped that food tourism would increase after the city was chosen as a City of Gastronomy in 2015. However, as researcher Eerang Park and colleagues argue, cities must still create effective marketing strategies to benefit fully from being named a City of Gastronomy. Without an intentional effort to promote the city’s food scene, many current and potential visitors to Burgos may not even be aware that it’s home to uniquely delicious food.",
+      "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text presents a disagreement: Monson and others say prose poems shouldn't exceed a page, others favor longer works, and anthologies reflect this divide. The main idea is that the right length for prose poems is still debated. Choice A only notes that lengths vary and misses the debate, and B invents criticism of Capildeo's poem."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Fl has acted like a noble gas in one experiment and a volatile metal in another, and with gold it is more reactive than radon but less reactive than mercury. So its properties don't fit neatly into existing categories. Choice D contradicts the text, which never says Fl doesn't react with metals or gases, and C blames other heavy elements without support."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Hawthorne compares historians' knowledge to a map: accurate and useful but \"cold and naked,\" lacking the charm of a painting. These flaws could be fixed, but only by methods forbidden to writers bound by strict accuracy. So historians' commitment to truth makes their work less engaging. Choice B goes too far; the text never says fiction writers have skills historians lack, only that historians are not allowed certain methods.",
+    "fix": {
+      "passage": "The following text is from Nathaniel Hawthorne’s 1830 short story “Sir William Phips.”\n\nThe knowledge, communicated by the historian and biographer, is analogous to that which we acquire of a country by the map, — minute, perhaps, and accurate, and available for all necessary purposes, but cold and naked, and wholly destitute of the mimic charm produced by landscape painting. These defects are partly remediable, and even without an absolute violation of literal truth, although by methods rightfully interdicted to professors of biographical exactness."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Flatland is a world of two-dimensional figures confined to a flat plane. Choice B describes shapes moving freely on a sheet of paper \"without the power of rising above or sinking below it,\" which shows exactly that. The other quotations are about laws, side lengths, and social rules, not the flat nature of the world."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined claim is that the Carolina dog, like the Inuit dog, descends from dogs that came from Asia. The Inuit dog's evidence was a genetic marker found in East Asian dogs but not European ones, so finding such a marker in the Carolina dog would directly support the claim. Choice C points away from Asia, and D links the genes to recently imported dogs, not ancient ones.",
+    "fix": {
+      "passage": "Predating the European colonization of Canada, the Hare dog vanished due to interbreeding with dogs brought from Europe. In contrast, the Inuit dog persists as a distinct breed, and DNA testing confirms its descent from precolonial North American dogs. It also has genetic markers found in the dogs of East Asia but absent in those of Europe. That finding supports the theory that the precolonial breeds developed by Indigenous peoples descend from dogs that migrated from Asia in the last ice age. <u>The Carolina dog, a yellow-coated breed native to rural pockets of the Southeastern United States, likely has such an origin too.</u>"
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If the range of light M cones respond to is completely covered by the ranges of L and S cones, then any light that activates M cones also activates L or S cones. That makes it hard to study M cones on their own under natural conditions. Choice D says the opposite, and A contradicts the overlap the text describes."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The calpine moths are not noxious, yet their ultrasonic pulses sound like those of the noxious dalcerid moths that bats learn to avoid. So the harmless calpine moths likely gain protection by imitating a well-defended species. Choice B is wrong because it says both species are unpalatable, but the calpine moths do not produce noxious compounds."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Insect feeding makes plants close their stomata, which lowers photosynthesis. Plants that emitted the deterrent compound lost less photosynthesis, and since that was their only difference, the compound most likely let them keep their stomata more open. Choice B invents a more efficient way of fixing carbon, while the text links the drop specifically to stomata closing."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"the perception,\" which is singular, so the verb must be singular: \"is.\" The plural \"are\" (A) only seems to fit because of the nearby plural \"examples,\" and \"being\" (B) can't serve as the main verb of the sentence."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Regions with large human populations\" is the subject and \"were unlikely\" is its verb, so no punctuation should split them. Adding a comma (C) separates subject from verb, and \"which\" (A, D) creates a clause that leaves the sentence without a proper main verb."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Dating back thousands of years and originally part of the Silk Road\" must describe the noun that comes right after the comma. Only the Trans Bhutan Trail fits that description, and C places it right after the comma. A, B, and D make the phrase describe \"the 1950s,\" \"making,\" or \"modern highways.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"this one-ton machine,\" which is singular, and the story is told in the past tense, so \"was\" is correct. The long phrase between dashes is just extra detail, and the plural \"engineers\" and \"players\" inside it don't change the subject. \"Were\" and \"are\" are plural, and \"being\" isn't a main verb."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pronoun refers back to \"the rational narratives,\" which is plural, so the plural possessive \"their\" is needed. \"Its\" (B) is singular, and \"it's\" and \"they're\" (C, D) are contractions meaning \"it is\" and \"they are,\" not possessives."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence describes the footprints on the bridge, and the next tells what happened at that same spot: organized fights took place there. \"Here\" points back to the bridge as the location. \"Meanwhile\" (A) signals events happening at the same time elsewhere, and \"For this reason\" (B) wrongly makes the footprints the cause of the fights."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text gives one wind farm's output (588 MW) and then another's (1,218 MW), so the second sentence sets up a comparison. \"By comparison\" fits. \"For instance\" (B) would make Hornsea an example of the Beatrice, and \"As a result\" (C) suggests a cause-and-effect link that doesn't exist."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the text mentions artists' self-portraits in the collection, the colon introduces the fact that most portraits show subjects different from the artists. That makes self-portraits unusual exceptions, which D says. B claims the museum favors self-portraits, which the second half of the sentence contradicts."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is protection, and the notes say some fireflies' lights help warn off predators. Choice D states that directly. Choice B is about attracting mates, and A and C use information that isn't in the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Fireflies produce flashing lights.\n• These lights help them attract mates.\n• These lights help some fireflies warn off predators."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both foods have pH values below 7 (3.5 and 6.4), and the notes say such substances are acidic, so both are acidic. Choice B gives the wrong pH for spinach, and D mentions only sauerkraut, so it doesn't show what the two share.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Sauerkraut has a pH value of approximately 3.5.\n• Spinach has a pH value of approximately 6.4.\n• Substances with pH values below 7 are acidic."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when the butterflies are most active, and the notes say \"during the day.\" Choice A states this. B is about diet, D is about color, and C uses information not in the notes.",
+    "fix": {
+      "passage": "A student has taken these notes:\n• Blue copper butterflies are light blue with a brown border.\n• They are most active during the day.\n• They eat nectar from flowers."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Making and applying the medium are Steps 2 and 3: mix wax, resin, and pigment, then spread it in layers with heat so each layer softens and fuses. Choice B covers both steps accurately. Choice D wrongly calls the wood surface the encaustic medium, and A and C mix in the carving step or describe it incorrectly.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ezshwan Winding is a Hungarian American artist who specializes in encaustic painting, which follows a multistep process.\n• Step 1: select and prepare the painting surface (often wood).\n• Step 2: mix melted wax and resin together and add pigment for color to create the encaustic medium.\n• Step 3: spread the medium on the surface in layers, applying heat to allow each layer to soften and fuse with the previous layers.\n• Step 4: use various tools to carve patterns into the painting."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A statue of a powerful, assertive female athlete goes against the idea that women in these societies played only passive roles, so the image \"challenges\" that idea. \"Reveals\" (A) would mean the statue shows the idea to be true, which is the opposite of what the text implies."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The colon explains that many pieces were built around ordinary actions like sitting, so the group gave everyday movements a central place. \"Foregrounded\" means emphasized or put at the front. \"Repudiated\" (C) means rejected, which describes how they treated formal techniques, not everyday movements."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Microhistories focus on single individuals to show human-level experience, which implies that broad quantitative methods tend to wipe out or hide individual detail. \"Efface\" means to erase or make indistinct. \"Accentuate\" (D) means to highlight, the opposite, and \"misconstrue\" (B) means misinterpret, which is not the problem described."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example says 2018 critics praised the films as \"essential\" and \"a vital artifact,\" which shows they are now viewed positively. \"Favorably\" fits. \"Skeptically\" (A) and \"neutrally\" (C) don't match such strong praise."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text explains that GPP is usually tracked with flux towers, which aren't evenly spread around the world, and then introduces satellite-measured SIF as a remote alternative that correlates well with tower data. So it discusses an indirect remote method that may make up for a limitation of the standard method. Choice C overstates things; the text mentions uneven distribution, not systematic errors in the tower data."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portions describe older formations (transparent calcite, regular rainfall) and younger ones (opaque, interrupted growth, intermittent water). Together they show a long-term shift away from stable high humidity toward drier, more variable conditions. Choice B gets the direction wrong, since the change suggests more variation, not less, and A ignores the change over time.",
+    "fix": {
+      "passage": "A trend away from stable, relatively high humidity in the Middle East over the past 8 million years can be inferred from the composition of cave formations dating to different periods. Cave formations from about 7 million years ago mainly consist of <u>transparent columnar calcite</u>, indicative of an underground water system regularly replenished by rainfall. Cave formations younger than approximately 1 million years, however, mainly consist of <u>branching, opaque (and sometimes colorful) material, often with more frequent growth interruptions</u>, indicating an intermittent water supply."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined part notes that some earlier studies linked petal length to nectar volume, a possible cue for hummingbirds. Then Maglianesi's team found no such link, so the earlier result wasn't repeated in their study. Choice C is wrong because the earlier studies aren't described as contradictory, and the new study wasn't set up to settle a conflict.",
+    "fix": {
+      "passage": "Visiting flowers that produce high volumes of nectar allows hummingbirds, including crowned woodnymphs, to maximize their foraging efficiency. But nectar can’t be seen from outside the flower, and while <u>some studies have suggested that petal length may indicate nectar volume</u>, Maria A. Maglianesi and team found no such association among hummingbird-visited plants at Rio Magnolia Nature Lodge and other sites in Costa Rica. The researchers hypothesize that by driving hummingbirds to visit more plants in search of high-reward flowers, plants’ lack of reliable signaling may increase chances of pollination."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Hervey picks ornithology because there was something \"dignified and withal scientific\" about a science that calls the sparrow Passer domesticus, so the scientific names attract him. His success identifying birds (A) comes after he has already chosen the field, and his ambition to be a great scientist (D) doesn't explain why he chose birds.",
+    "fix": {
+      "passage": "The following text is adapted from Richard Connell’s 1923 short story “The Man Who Could Imitate a Bee.” An ornithologist is a scientist who studies birds.\n\nAt twelve [years old Hervey Deyo] had resolved to be a scientist and furthermore a great scientist. He determined to pursue the career of ornithologist; there was something so dignified and withal scientific about a science that called the sparrow Passer domesticus and the robin Erithacus rubecula. He made rapid progress. On his thirteenth birthday he took a bird walk at dawn and was able to record in his note- book the scientific names of forty-nine birds, including the ruby-and-topaz humming-bird (Chrysolampis mosquitus) which is rare around Boston."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show the intermittent (webcam-triggered) repeller works better than the continuous one, you must compare those two areas. The graph shows about 6% damage with the webcam repeller and about 7% with the continuous one, which is what B says. Choice A only compares against the control, C misreads the webcam value (it is about 6%, not 7%), and D is false."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that bonobos combine calls so that the order or combination carries meaning. In A, a whistle alone is used to organize groups, but a peep followed by a whistle shows up in tense social situations, so the combination means something different. Choices B and D describe single calls, and C is about what bonobos don't do."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If audiences preferred resolution, the final episode, where the story ends, should draw the most interest. A record audience for episode 12 supports that. Production cost (A) and modern critics' opinions (C) say nothing about what audiences of the time preferred."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the graph's penalty bars, self-dealing accounts for about 41% and taxable expenditures for only a tiny share, while undistributed income accounts for about 57%. So the first two groups together paid a smaller share of total penalties. Choice B is backwards, since self-dealing filed only about 9% of forms yet paid about 41% of penalties, so its average penalty was higher. The graph covers only 2005 (D) and doesn't include Form 990 filers (A)."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The table shows fungal growth was highest at 100% RH for 24 hours/day (1.9641) and lowest at 85% RH for 18 hours/day (0.6663). The text says increases in fungal growth came mainly from A. hongkongensis, so the 85% sample should hold a smaller share of that fungus than the 100%/24-hour sample. Choices A and D can't be judged because the table gives no bacterial growth data.",
+    "fix": {
+      "table": {
+        "caption": "Fungal Growth Rates on Three ISS Dust Samples, by Relative Humidity and Exposure Duration",
+        "headers": [
+          "RH level",
+          "Duration (hours/day)",
+          "Fungal growth rate (generations/day)"
+        ],
+        "rows": [
+          [
+            "85%",
+            "18",
+            "0.6663"
+          ],
+          [
+            "100%",
+            "12",
+            "0.9499"
+          ],
+          [
+            "100%",
+            "24",
+            "1.9641"
+          ]
+        ]
+      },
+      "passage": "Just like household dust on Earth, dust on the International Space Station (ISS) harbors hundreds of common microorganisms—Aspergillus hongkongensis and other fungi, along with bacteria, such as Staphylococcus pettenkoferi. According to experiments conducted using samples of ISS dust of initially similar compositions, changes in both relative humidity (RH) and duration of humidity exposure elicited changes in growth for both fungal and bacterial species. However, when overall fungal growth increased, it was mainly due to an increase in growth of A. hongkongensis, whereas bacterial growth was widely distributed across species in the samples.",
+      "prompt": "Taken together, information in the text and table best support which statement about the ISS dust samples following the conclusion of the experiment?"
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The assertion is that adopting agriculture drove the Bantu expansion, which began 4,000–5,000 years ago. If the earliest clear evidence of plant cultivation in the Bantu homeland dates only to about 2,200 years ago, farming came long after the expansion started and couldn't have driven it. Choice A actually links Bantu speakers to farming, and B and C don't settle the timing."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The worry is that a drop in gold artifacts could just reflect gaps in the archaeological record. If the dataset includes many more sites from after 1500 BCE than before, the later period is well represented, yet gold still drops sharply, so the decline is unlikely to be a sampling gap. Choice A compares the Caucasus with other regions, which doesn't address the change over time."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"the widespread use of this locally produced material,\" and the sentence needs a main verb for it: \"led.\" The clause between the commas is just extra description. \"Leading,\" \"having led,\" and \"which led\" (A, C, D) aren't main verbs, so they would leave the sentence incomplete."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Fluid impedes sound considerably more than air does\" is a complete sentence, so a period comes after \"does.\" In the next sentence, \"the process by which ... inner ear\" renames \"impedance matching\" and is set off by commas, with \"recruits\" as the verb. Choice D adds \"is,\" which leaves \"recruits\" without a subject, and A opens a dash that is never closed."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In 2022, 66 percent of Serbia's exports ... were manufactured goods\" is a complete sentence. A new sentence then starts with the noun clause \"That Serbia relies on manufactured goods for the majority of its exports,\" which is the subject of \"places.\" Without the period (B, C, D), the two clauses run together and the sentence makes no grammatical sense."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"poets.\" The phrase \"Challenging the exclusivity of the traditional Romantic canon\" begins a new sentence and describes Cecilia Pietropoli and the other critics. With a comma or dash (A, B) or no punctuation (D), two complete sentences would run together, which is a comma splice or run-on.",
+    "note": "Source answer was A; A creates a comma splice joining two independent clauses, so C is correct."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Because of its malleability\" is extra information placed between \"that\" and \"could,\" and it already starts with a comma after \"that.\" It needs a matching comma to close it, so the answer is \"malleability, could.\" Choices B, C, and D either leave out the closing comma or switch to a dash, which doesn't match the opening comma."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Chesnutt and Dunbar each wrote a separate novel, so each name needs its own possessive: \"Chesnutt's and Dunbar's novels.\" \"Chesnutt and Dunbar's\" (C) would mean the two men wrote the novels together, and A and B use plural forms that don't make sense."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes a limitation: researchers can't measure the shrimp's tiny, fast movements. The second describes how they worked around it with simulations. \"In light of this limitation\" links the two. B, C, and D refer to a flawed hypothesis, a misconception, or a mistake, none of which the text mentions."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence after the blank gives bowling data: more bowlers overall but far fewer in leagues, an example of declining group participation that matches the book's title, Bowling Alone. C introduces that example. B and A suggest criticism of the argument, but the data actually support Putnam."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence praises Varichon's vivid prose, and the second adds another strength of the book: its many high-quality images. \"Additionally\" signals that added point. \"Specifically\" (A) would mean the images are an example of the prose, and \"Consequently\" (D) implies a cause-and-effect link that isn't there."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say how participants did on the Target logo set. Choice D gives exactly that: 63.6% chose the correct version and 36.4% chose an altered one. B focuses on comparing with the Monopoly Man, and A and C describe the study without giving any results.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2021 study, researchers showed participants sets of images.\n• Each set contained an unaltered image of a different character or logo alongside two slightly altered versions.\n• Participants were asked to identify the correct version in each set.\n• In the set containing the Monopoly Man, 26.5% of participants selected the correct version, and 73.5% selected an altered version.\n• In the set containing the Target logo, 63.6% of participants selected the correct version, and 36.4% selected an altered version."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to contrast how shear (shaking) affects the two fluids: ketchup becomes thinner and oobleck becomes thicker, which is what C says. Choice A misdefines non-Newtonian, which means viscosity changes under shear, not that it decreases. B and D focus on resting viscosity rather than the effect of shear.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The typical resting viscosity of oobleck (cornstarch mixed with water) is 5-100 centipoise (cP).\n• Oobleck increases in viscosity (becomes thicker) when shaken.\n• The typical resting viscosity of ketchup is 50,000-70,000 (cP).\n• Ketchup decreases in viscosity (becomes thinner) when shaken.\n• A fluid is Newtonian if its viscosity remains stable under shear (mechanical force such as being shaken or stirred).\n• A fluid is non-Newtonian if its viscosity changes under shear."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Barilla prints pasta, which is food, while Kasko prints silicone molds, which are not food. C states this difference clearly. D is inaccurate because Kasko prints molds, not cakes, and A says the uses differ without saying how.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Fused deposition modeling (FDM) is one type of 3D printing technology\n• FDM is also called material extrusion\n• FDM printers eject a modeling medium through a heated nozzle to build an object layer by layer\n• Italian company Barilla uses FDM printers that extrude layers of semolina and water dough to create unique shapes of pasta.\n• Ukrainian entrepreneur Dinara Kasko uses an FDM printer that extrudes layers of silicone to create uniquely shaped molds for baking cakes."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute t = 4: s = 20 + 2(4) = 20 + 8 = 28 miles per hour. Choice A (20) is the speed at t = 0, before the car accelerates."
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "20% of 310 is 0.20 × 310 = 62 blue marbles. Choice B (124) is 40% of 310, double the correct amount.",
+    "note": "Source answer was B (124); 20% of 310 = 62, so A."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "57"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Then y = 2(0)^2 + 57 = 57."
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "24"
+    ],
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "FG is a diameter and H is the center, so FH is a radius, half the diameter. FH = 48/2 = 24 centimeters."
+  },
+  {
+    "key": "m1-05",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Selling n books at $16 each earns 16n dollars, and \"at least $1,760\" means 16n ≥ 1,760. Choice C uses ≤, which would describe earning at most $1,760, and A and B add 16 instead of multiplying."
+  },
+  {
+    "key": "m1-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For f(x) = mx + b, the slope is the coefficient of x. Here f(x) = (7/9)x + 28/9, so the slope is 7/9. Choice C (28/9) is the y-intercept, not the slope.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = (7/9)x + 28/9. What is the slope of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "1/4",
+        "B": "7/9",
+        "C": "28/9",
+        "D": "4"
+      }
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "423"
+    ],
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The length is 5(9) + 2 = 47 centimeters. The area is length × width = 47 × 9 = 423 square centimeters."
+  },
+  {
+    "key": "m1-08",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rewrite line s as y = 4x − 13, so its slope is 4. Parallel lines have equal slopes, so line t also has slope 4. Choice D (13) mixes up the constant term with the slope."
+  },
+  {
+    "key": "m1-09",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Let b = bowls and v = vases: b + v = 13 and 4b + 2v = 30. Doubling the first equation gives 2b + 2v = 26; subtracting from the second gives 2b = 4, so b = 2 and v = 11. Check: 4(2) + 2(11) = 30. Choice A (2) is the number of bowls.",
+    "note": "Source answer was B (5); solving b + v = 13, 4b + 2v = 30 gives v = 11, so D."
+  },
+  {
+    "key": "m1-10",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The dashed line crosses the y-axis at 10 and passes through (−4, 2), so its slope is (10 − 2)/(0 − (−4)) = 2 and its equation is y = 2x + 10. The shaded region is above the line and the line is dashed, so the inequality is y > 2x + 10. Choice C would shade below the line."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since AB = BC, the base angles are equal: angle BAC = angle BCA = (180° − 36°)/2 = 72°. AD bisects angle BAC, so angle BAD = 36° = angle ABD, which makes triangle ABD isosceles with AD = BD. In triangle ADC, angle ADC = 180° − 36° − 72° = 72° = angle ACD, so AD = AC. Therefore AD = BD = AC.",
+    "fix": {
+      "prompt": "For isosceles triangle ABC, AB = BC = 55, the measure of angle ABC is 36°, point D lies on BC, and ∠BAC is bisected by AD. Which of the following statements must be true?"
+    }
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A margin of error of 7% around an estimate of 35% gives a plausible range from 35 − 7 = 28% to 35 + 7 = 42%. The other choices use the estimate or the margin of error as an endpoint incorrectly."
+  },
+  {
+    "key": "m1-13",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: 7x^4 + x^4 = 8x^4 and x^2 + 11x^2 = 12x^2, giving 8x^4 + 12x^2. Adding terms never changes the exponents, so choices like 8x^8 + 12x^4 (A) are wrong."
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "136"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At line s, the angle above s and to the left of t forms a straight line with the 44° angle, so it measures 180 − 44 = 136°. Because r is parallel to s, the angle x° at line r is in the corresponding position, so x = 136."
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(18) = 0 means that after a = 18 days, 0 free books remain to be given away. So it takes 18 days to give away all the books. Choice A misreads 18 as a number of books, while it is actually a number of days."
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "3/4",
+      ".75",
+      "0.75"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the graph, the momentum is 2 at x = 2 and 5 at x = 6. The average rate of change is (5 − 2)/(6 − 2) = 3/4 newton-second per second."
+  },
+  {
+    "key": "m1-17",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide by 4: |x − 4| = 5. So x − 4 = 5 or x − 4 = −5, giving x = 9 or x = −1. Their sum is 9 + (−1) = 8.",
+    "fix": {
+      "prompt": "4|x − 4| = 20\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the sum of the solutions is −b/a. Here that is −(−12)/1 = 12. The discriminant 144 − 32 = 112 is positive, so there really are two real solutions."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "-216"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 1 − x, so the equation is u/4 − 57 = 7u/9. Multiply by 36: 9u − 2,052 = 28u, so −19u = 2,052 and u = −108. Since 2 − 2x = 2(1 − x) = 2u, the value is 2(−108) = −216.",
+    "fix": {
+      "prompt": "If (1 − x)/4 − 57 = 7(1 − x)/9, what is the value of 2 − 2x?"
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In right triangle RST, tan R = TS/RT = 168/425, so take TS = 168 and RT = 425; then RS = sqrt(168^2 + 425^2) = sqrt(208,849) = 457. Because XY is parallel to TS, angle X in triangle XYZ equals angle S. So sin X = sin S = RT/RS = 425/457. Choice B (168/457) is sin R instead.",
+    "fix": {
+      "prompt": "In triangles RST and XYZ shown, XY is parallel to TS and tan R = 168/425. What is the value of sin X in triangle XYZ?",
+      "choices": {
+        "A": "168/593",
+        "B": "168/457",
+        "C": "425/457",
+        "D": "425/168"
+      }
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The function must give f(1.4) = 0.71. In A, f(1.4) = 0.71(0.79)^0 = 0.71, as required. In B, f(1.4) = 0.71(0.79)^1 ≈ 0.56, and in C and D, plugging in 1.4 doesn't give 0.71 either.",
+    "fix": {
+      "choices": {
+        "B": "f(w) = 0.71(0.79)^(w/1.4)"
+      }
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second equation gives y = −3. Substituting: 4x^2 − 24x + 38 = −3, so 4x^2 − 24x + 41 = 0. The discriminant is (−24)^2 − 4(4)(41) = 576 − 656 = −80 < 0, so there are no real solutions. Equivalently, the parabola's lowest point is y = 2, which is above y = −3."
+  },
+  {
+    "key": "m2-01",
+    "answer": [
+      "14"
+    ],
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The legs of the right triangle are 7 cm and 4 cm. Area = (1/2)(7)(4) = 14 cm^2."
+  },
+  {
+    "key": "m2-02",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "If n · (−7/19) = 1, then n is the reciprocal of −7/19, which is −19/7. Check: (−19/7)(−7/19) = 1. Choice A (19/7) has the wrong sign and gives a product of −1.",
+    "fix": {
+      "prompt": "The product of a number and −7/19 is 1. What is the number?",
+      "choices": {
+        "A": "19/7",
+        "B": "7/19",
+        "C": "−7/19",
+        "D": "−19/7"
+      }
+    }
+  },
+  {
+    "key": "m2-03",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x = 5 means 5 years after 1959, which is 1964, and P(5) is the estimated population then. So the population is about 583 in 1964. Choice D wrongly treats 583 as a change every 5 years, when it is the total population."
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The center is the midpoint of the diameter: ((8 + 8)/2, (−9 + (−19))/2) = (8, −14). The diameter is 19 − 9 = 10, so the radius is 5 and r^2 = 25. The equation is (x − 8)^2 + (y + 14)^2 = 25. Choice D sets the equation equal to the radius, 5, instead of r^2 = 25."
+  },
+  {
+    "key": "m2-05",
+    "answer": [
+      "7"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: (6 − 3y) + (8 + 3y) = 2x, so 14 = 2x and x = 7. (Then y = −1/3.)"
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solutions are the points where the horizontal line meets the parabola. On the graph they occur at about x = 9 and x = 11, so 9 is a possible value. Choice C (10) is the x-coordinate of the vertex, which lies above the line."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor: (14p − 2)x = 42. A linear equation has no solution when the x-coefficient is 0 but the constant is not, so 14p − 2 = 0 and p = 1/7. Then the equation becomes 0 = 42, which is never true.",
+    "fix": {
+      "choices": {
+        "B": "1/7",
+        "C": "3/2"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Replace z with z − 4: f(z − 4) = 7(z − 4) = 7z − 28. Choice B forgets to multiply the 4 by 7."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "-5"
+    ],
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add 16: ax ≤ 30. For the solution to be x ≥ −6, the inequality sign must flip, so a is negative and x ≥ 30/a. Setting 30/a = −6 gives a = −5, the only value that works, so it is also the greatest."
+  },
+  {
+    "key": "m2-10",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both left sides equal c, so 50x + 49y = 49x − 50y, which gives x = −99y. The point (10, −10/99) satisfies this, and then c = 50(10) + 49(−10/99) ≈ 495.05 > 0, as required. (10, 990) doesn't satisfy x = −99y, and (c, 0) or (c, c/99) don't either for a positive c.",
+    "fix": {
+      "choices": {
+        "A": "(10, −10/99)",
+        "C": "(c, c/99)"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The zeros are x = 3/2 and x = −7/2, so the vertex is at their midpoint, x = −1. The minimum value is f(−1) = (2(−1) − 3)(2(−1) + 7) = (−5)(5) = −25. Choice D (−1) is the x-coordinate of the vertex, not the minimum value.",
+    "fix": {
+      "choices": {
+        "C": "−7/2"
+      }
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "By the triangle inequality, FG must be greater than 10 − 8 = 2 and less than 10 + 8 = 18. So FG can't equal 2; a side of 2 would make the triangle collapse flat. The values 16, 9, and 3 all lie strictly between 2 and 18."
+  },
+  {
+    "key": "m2-13",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for 1/R_1: 1/R_1 = 1/31 − 1/R_2 = (R_2 − 31)/(31R_2). Take the reciprocal: R_1 = 31R_2/(R_2 − 31). Choice C has the wrong sign in the denominator; it comes from adding the fractions instead of subtracting.",
+    "fix": {
+      "prompt": "1/31 = 1/R_1 + 1/R_2\nThe given equation relates the resistances, R_1 and R_2, in ohms, of two resistors arranged in parallel in a circuit with a total resistance of 31 ohms, where R_1 and R_2 are positive. Which equation correctly expresses R_1 in terms of R_2?",
+      "choices": {
+        "A": "R_1 = 31 + R_2",
+        "B": "R_1 = 31 − R_2",
+        "C": "R_1 = 31R_2/(R_2 + 31)",
+        "D": "R_1 = 31R_2/(R_2 − 31)"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line crosses the x-axis at (4, 0) and the y-axis at (0, −2). Plugging in: 4a = 28 gives a = 7 > 0, and −2b = 28 gives b = −14 < 0. So a > 0 and b < 0."
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At the y-intercept x = 0, so y = (3/11)^(0 + 1) = 3/11. The y-intercept is (0, 3/11). Choice B treats the base as if it were 11.",
+    "fix": {
+      "prompt": "What is the y-intercept of the graph of y = (3/11)^(x+1) in the xy-plane?",
+      "choices": {
+        "D": "(0, 3/11)"
+      }
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": [
+      "27"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "No real solution means the discriminant is negative: b^2 − 4(−7)(−28) < 0, so b^2 < 784 and b < 28. The largest positive integer that works is 27."
+  },
+  {
+    "key": "m2-17",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With vertex (1, 7), f(x) = a(x − 1)^2 + 7. Using (2, 50): a + 7 = 50, so a = 43, and (−1, 179) checks: 43(4) + 7 = 179. Then f(−2) = 43(9) + 7 = 394 and f(0) = 43 + 7 = 50, so f(−2) − f(0) = 344. Choice D (394) is just f(−2)."
+  },
+  {
+    "key": "m2-18",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cheese gives 1 microgram per 3.0 ounces, or 1/3 ≈ 0.33 microgram per ounce. Tuna gives 1 microgram per 1.2 ounces, or about 0.83 microgram per ounce. So the total is 0.33x + 0.83y = 3.9. Choice A swaps the two rates, and C uses ounces per microgram instead of micrograms per ounce."
+  },
+  {
+    "key": "m2-19",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor: 6,480x^4 − 1,280 = 80(81x^4 − 16) = 80(9x^2 + 4)(9x^2 − 4) = 80(9x^2 + 4)(3x − 2)(3x + 2). So 80, 9x^2 + 4, and 3x + 2 are all factors, but 3x^2 − 2 is not."
+  },
+  {
+    "key": "m2-20",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out the data are from the mean. In D, 40 of the 50 nests have exactly 12 eggs and the other 10 have 11 or 13, so the data are tightly clustered around 12. Choices A and B spread the nests evenly over 10 to 14, and C still has many values away from 12.",
+    "fix": {
+      "choices": {
+        "A": "Number of eggs (frequency): 10 (11), 11 (10), 12 (8), 13 (10), 14 (11)",
+        "B": "Number of eggs (frequency): 10 (10), 11 (10), 12 (10), 13 (10), 14 (10)",
+        "C": "Number of eggs (frequency): 10 (2), 11 (11), 12 (24), 13 (11), 14 (2)",
+        "D": "Number of eggs (frequency): 10 (0), 11 (5), 12 (40), 13 (5), 14 (0)"
+      }
+    },
+    "note": "Choices are frequency tables in the original; written as text."
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One square meter is 3.28^2 ≈ 10.758 square feet, so 70 ft^2/hour = 70/10.758 ≈ 6.507 m^2/hour. Divide by 60 for minutes: 6.507/60 ≈ 0.11 m^2/minute. Choice D (6.51) is the rate per hour, not per minute.",
+    "fix": {
+      "prompt": "The area of a rectangular region is increasing at a rate of 70 square feet per hour. Which of the following is closest to this rate in <u>square meters per minute</u>? (Use 1 meter = 3.28 feet.)"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "64"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Start with N of each. An increase of 1400% gives N + 14N = 15N prey, and an increase of 440% gives N + 4.4N = 5.4N predators. The predators are less than the prey by (15N − 5.4N)/(15N) = 9.6/15 = 0.64, or 64%."
+  }
+]

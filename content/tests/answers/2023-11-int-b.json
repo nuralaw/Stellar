@@ -1,0 +1,509 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The contrast word \"Unlike\" sets Takeuchi against Asai Chū, who adopted European methods, so Takeuchi must have taken up traditional Japanese approaches. The example of painting with pigments on silk confirms this, and \"embraced\" means adopted willingly. \"Distrusted\" and \"overlooked\" say the opposite of what the example shows."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Genetic research identified teosinte grass as maize's ancestor, which was previously unknown because maize looks like no wild plant. \"Revealed\" captures this act of showing something hidden. \"Expanded\" and \"encouraged\" don't describe identifying an ancestor."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Trofimov says he has \"undergone a great deal\" and then lists hardships: hunger, illness and being tossed everywhere by fate. These are things he has lived through, so \"undergone\" means experienced. \"Uncovered\" would mean discovering something, which doesn't fit enduring hardship.",
+    "fix": {
+      "passage": "The following text is adapted from Anton Chekhov’s 1904 play The Cherry Orchard (translated by Julius West in 1916).\n\nTROFIMOV: Believe me, Anya, believe me! I’m not thirty yet, I’m young, I’m young, I’m still a student, but I have <u>undergone</u> a great deal! I’m as hungry as the winter, I’m ill. I’m shaken—and where haven’t I been—fate has tossed me everywhere!"
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank refers to an idea that a corpus analysis can then \"support\" as a \"hypothesis,\" so it must be an untested belief. A \"supposition\" is exactly that: something assumed to be true without proof yet. A \"recognition\" implies the fact is already known, and a \"scheme\" is a plan, not a claim to test."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text explains a long-held hypothesis about Clovis-point hunting, describes an anthropologist's spear-throwing experiment, and reports that its results suggest the hypothesis is likely wrong. That matches describing an experiment that casts doubt on an established idea. Choice A is tempting, but the text doesn't present an ongoing debate between researchers or argue for the findings' significance."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first describes the Poeh Cultural Center and then the Tohono O’odham center, both run by tribes, and finishes by contrasting them with museums that aren't Indigenous-led. That is two tribal centers followed by a comparison with non-Indigenous institutions. Choice C is wrong because the text never mentions a specific set of artifacts shown by both kinds of museums."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2's author criticizes studies of entrepreneurial training for lacking control groups and pretraining baselines. Without those, a study can't tell whether participants would have shown a high likelihood of starting businesses even without the training. So this author would want to know whether Menzies and Paradi ruled out that objection. Choice C is wrong because a smaller sample would not explain away a positive finding in that way.",
+    "fix": {
+      "prompt": "Based on the texts, the author of Text 2 would most likely want to know if Menzies and Paradi took steps to preclude which potential objection to the finding described in Text 1?"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both examples show a word starting in an Indigenous language (Nahuatl or Quechua), passing into Spanish, and then reaching English. So Spanish acted as the channel through which Indigenous languages influenced English. Choice A is wrong because the text never says Spanish gave words back to Indigenous languages."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The author calls the energy ladder model \"reductive\" but also says income \"of course constrained fuel choice,\" while other factors like cooking equipment also mattered. So income explains part, but not all, of households' fuel choices. Choice D goes too far because the author clearly accepts that income has some influence."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is about a strong emotional attachment to the forests. In choice C the narrator calls the woods her \"favorites\" and says it makes her \"heart bleed\" to see one cut down, which shows deep feeling. Choices B and D describe the woods but don't express any personal emotion toward them.",
+    "fix": {
+      "passage": "Claudine at School is a 1900 novel by Colette, originally written in French. The narrator is a fifteen-year-old girl living in a small, rural town. She presents herself as having a strong emotional attachment to the surrounding forests: _____",
+      "choices": {
+        "A": "“If I had a Mamma, I know very well that she would not have let me stay [in Montigny] twenty-four hours. But Papa—he doesn’t notice anything and doesn’t bother about me.”"
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined lines show the birds' chirping slipping naturally from the leafy canopy, a picture of quiet harmony in nature. This mirrors the friends' silent but comfortable connection, since they exchange a glance and find conversation unnecessary. Choice B is wrong because nothing in the poem suggests melancholy; the mood is calm and peaceful.",
+    "fix": {
+      "passage": "Morning in the Woods is a poem by Ashton Barrera written in 1976.\n\nMy friend and I, together in the woods,\nNo words uttered.\nSilence was the dome of woven leaves, <u>From which slipped several chirpings</u>\n<u>Of chickadee.</u>\nA glance exchanged,\nConversation seemed dispensable.\nAmidst the tranquil milieu of the little woods,\nMy friend and I communed in wordlessness.\nA tapestry of woven foliage enveloped us,\nYielding only sporadic glimpses of avian melodies\nChorused by the petite chickadee.\nA fleeting exchange of glances\nRendered our discourse seemingly superfluous."
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first two lines list impressions others may have (\"Let them think I love them... Let them think I care\"). The last two lines explain why those impressions don't matter: she is \"self-complete as a flower or a stone.\" Choice C is wrong because the speaker never recounts specific scenarios showing her independence.",
+    "fix": {
+      "passage": "The following text is from Sara Teasdale's 1922 poem \"Two Songs for Solitude.\"\n\nLet them think I love them more than I do,\nLet them think I care, though I go alone,\nIf it lifts their pride, what is it to me\nWho am self-complete as a flower or a stone?"
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that the Yupno use an egocentric (body-based left/right) frame for time. In choice C, the direction they point for the future depends on the hill, not on their body: they point backward or forward depending on which way they face the hilltop. That shows a landscape-based frame, directly undermining the claim. Choices A, B and D still describe body-based left/right gestures, which fit an egocentric frame."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers claim caterpillar sounds are aimed mainly at predators. If predators such as chickens and yellow warblers stop attacking when they hear the sounds, the sounds clearly affect predators, supporting the claim. Choice D only shows the sounds are species-specific, which would fit communication within a species better than a predator defense."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Upland South dialects share Scottish dialects' strong \"r\" sound, and the region was settled mainly by people of Scottish descent. The logical conclusion is that the Upland South inherited this feature from Scottish dialects. Choice C reverses the direction of influence, which the settlement history doesn't support."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both \"hands\" and \"antennas\" are simple plurals that don't own anything, so neither needs an apostrophe. The comma after \"antennas\" correctly ends the introductory \"When...\" clause before the main clause. The other choices add possessive apostrophes where no possession exists."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"South Korea\" is a restrictive appositive: it identifies which of the many fellow OECD member nations is meant, so no punctuation should separate it from \"nation.\" A comma, colon or dash would treat the name as extra information, even though the sentence needs it to say which nation is meant."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins a modifier describing \"a profile,\" since the sentence already has its main verb (\"was\"). The participle \"appearing\" correctly creates the phrase \"a profile appearing in the Navajo Times.\" Finite verbs like \"appeared\" or \"appears\" would create a second main verb with no conjunction."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Juab High School and Park City High School are two of several Utah schools that have their own hillside geoglyphs\" is a complete sentence, and \"An enormous geoglyph... overlooks Juab High\" is another. A period correctly separates them, and \"that have\" needs no comma because the clause identifies which schools. Choice A joins two independent clauses with only a comma, creating a comma splice."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Deposits... lend the sand... an unusual black tint that dazzles visitors\" is a complete sentence. \"When they take a bit of sand home, though, it disturbs...\" begins a new one, so a period is needed. Choices A and B wrongly attach the \"when\" clause to the first sentence, leaving \"it disturbs\" without a proper connection."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"A ray diagram reveals how this works\" is a complete sentence. The next sentence starts with the dependent clause \"Because the hole's small size restricts light to a single ray,\" followed by the main clause \"all light... can only arrive at a single destination.\" Choice A would run the two together, and choices C and D add \"it's\" to a sentence that already has a main clause."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the machine's steps in order: first it scraped the ice, then sprayed water, and \"lastly\" smoothed the surface. \"Next\" fits the middle step of this sequence. \"For example\" and \"Similarly\" don't signal a step in a process."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the two types, the sentence needs the specific difference: in first-class levers the fulcrum is between the effort and the load, while in second-class levers the load is between the effort and the fulcrum. Choice D states both and links them with \"but.\" Choice B hints at a difference without saying what it is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A lever is a simple machine consisting of a rigid beam and a fulcrum.\n• The fulcrum is the point about which the beam pivots.\n• The input force (effort) is the force applied to the lever.\n• The output force (load) is the force that the lever exerts on another object.\n• In first-class levers, the fulcrum is located between the effort and the load.\n• In second-class levers, the load is located between the effort and the fulcrum."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes show the two sculptures differ in their material: Through is forged steel, while TTI London is weathering steel. Choice C states that difference directly. Choice D highlights a similarity, and choices A and B mention only one sculpture.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Richard Serra is an American artist.\n• He is known for his large metal sculptures.\n• His large sculpture Through is made of forged steel.\n• His large sculpture TTI London is made of weathering steel."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The key difference in the notes is material: Above and Below uses aluminum tubing, while Silver Upper White River uses recycled silver. Choice B states both and uses \"by contrast\" to emphasize the difference. Choice C mentions only one of the two works.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Maya Lin is an American artist known for her memorials and large-scale installation artworks.\n• She became famous in 1982 when she completed the Vietnam Veterans Memorial, which consists of two 246-foot granite walls.\n• She completed Above and Below in 2007.\n• It is an installation composed of aluminum tubing that fills an entire gallery ceiling.\n• She completed Silver Upper White River in 2015.\n• It is an installation composed of recycled silver that fills an entire gallery wall."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when Ur formed, and the notes give the date: about 3.1 billion years ago. Choice B states it directly. Choice A only says \"long ago,\" which doesn't specify the time.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A supercontinent is a single landmass made up of most or all of Earth’s continents.\n• Over time, continents merge together to form supercontinents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Ur and Gondwana were supercontinents.\n• Ur formed about 3.1 billion years ago.\n• Gondwana formed about 510 million years ago."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only choice D mentions where the house is, Mexico City, Mexico, and it puts the focus on the location by telling readers they would need to travel there. Choices B and C describe the house's features, and choice A is a fragment about the architect.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Casa Luis Barragán (1948) is a residential home designed by Mexican architect Luis Barragán.\n• It is located in Mexico City, Mexico.\n• It features colorful concrete walls and a famous cantilevered staircase.\n• It is considered an impressive example of minimalist architecture."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The realist style aimed for accuracy, while Gleyre's romantic style \"instead\" idealized subjects with staged settings and flawless skin. Since the two approaches are opposites, the realist style largely rejected romantic conventions. \"Imitated\" and \"epitomized\" would mean the realist style copied or represented those conventions, which contradicts the contrast."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence contrasts high-altitude studies with below-sea-level effects that have received \"comparatively little notice.\" So studies of high altitude must be plentiful, which is what \"copious\" means. \"Preliminary\" and \"sporadic\" would suggest these studies are also limited, which removes the contrast."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The \"but\" signals that the author thinks post-Revolution works get too much weight compared with nineteenth-century writers like Delgado. So these works make up a disproportionately large, or \"outsized,\" share of the canon. \"Overlooked\" contradicts the idea that they dominate the canon."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speaker says there is \"no better example of the form\" than Walter's book, meaning no one has surpassed it. \"Eclipsed\" means outshone or surpassed. \"Cited\" and \"augmented\" don't express the idea of doing better than Walter."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Davis contrasts recognizable traditional forms with forms that mix elements of fables and realist narratives and straddle the line between prose and poetry. Such forms lack a clear, fixed shape, which is what \"amorphous\" means. \"Customary\" is the opposite, since these forms are unconventional."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first describes researchers' long use of ancient DNA, then Dussex's use of historical DNA from museum specimens. It ends by stressing the \"research potential\" of this underused source. That's two approaches followed by emphasis on how promising one is. Choice D overstates it: the text never claims historical DNA is superior to ancient DNA."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens with the 1976 production of Carter's play Eden by the NEC and then spends the rest describing the NEC: how its founders met, their vision, and its support for Black playwrights. Choice D is wrong because only Eden is discussed as an NEC production; A Raisin in the Sun is mentioned only as where the founders met."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1's author resists calling The Known World historical fiction because the book is richer than a mere re-creation of the past. Text 2's author argues that historical fiction can explore profound themes and complex characters. So Text 2's author would say that objecting to the label misunderstands what the genre can be. Choice C doesn't fit because Text 2 defends the genre rather than conceding its weaknesses."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The critics point out that, although the trees were grown for the project, it's too early to tell whether they can thrive in that unusual setting. So it is unclear whether the building can support its planned plant life. Choice B is wrong because the text never says the plant life turned out less varied than planned."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes the team testing torches, animal-fat lamps and fireplaces in a cave, finding that each likely had a specific purpose, such as torches being better for walking. Choice D sums this up. Choice B is wrong because the study compared usefulness, not how often each light source was used."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Compare each row: global improvement 5.0 vs. 3.9, symptom severity reduction 92.00 vs. 46.00, and quality of life improvement 11.4 vs. 5.4. The placebo-aware group's rating is higher in all three, and higher ratings mean greater well-being. Choice B is wrong because none of the measures is lower for that group.",
+    "fix": {
+      "passage": "To test whether a medication is effective, scientists compare outcomes for patients taking it and patients taking a placebo (a medically inactive substance). Patients normally aren’t told they’re receiving a placebo, but a research team conducted a study to see if there might be a medical benefit to telling them. The team used various measures to evaluate participants, with higher ratings indicating greater well-being in each measure. Compared to the mean ratings after 21 days for participants in the control group, the mean ratings for participants who were aware of taking a placebo _____",
+      "table": {
+        "headers": [
+          "Measure",
+          "Mean rating for participants aware of taking a placebo",
+          "Mean rating for participants in the control group"
+        ],
+        "rows": [
+          [
+            "Global improvement",
+            "5.0",
+            "3.9"
+          ],
+          [
+            "Symptom severity reduction",
+            "92.00",
+            "46.00"
+          ],
+          [
+            "Quality of life improvement",
+            "11.4",
+            "5.4"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Jack jokes that if the rain didn't come, Bartley would wear a leaky pail as a hat so that he'd still have \"some cause of complaining.\" That shows Jack thinks Bartley will find something to complain about no matter what. Choice C is wrong because Jack isn't disputing the weather forecast; he's mocking Bartley's gloomy attitude.",
+    "fix": {
+      "passage": "The following text is adapted from Lady Gregory’s 1904 play Spreading the News. Jack Smith and Bartley Fallon have encountered each other at the local fair.\n\nJACK: It isn't to the fair I came myself, but up to the Five Acre Meadow I'm going, where I have a contract for the hay. We’ll get a share of it into tramps [drying stacks] to-day.\n\nBARTLEY: You will not get it into tramps to-day. The rain will be down on it by evening, and on myself too. It's seldom I ever started on a journey but the rain would come down on me before I'd find any place of shelter.\n\nJACK: If it didn't itself, Bartley, it is my belief you would carry a leaky pail on your head in place of a hat, that way you'd not be without some cause of complaining."
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Grasby et al. concluded that complementary extended brands seem to do better on average, but possibly only because of an outlier in the complementary data. Tortilla chips and salsa are the complementary example, so if the advantage disappears when they are removed, that pair was the outlier driving the result. Choice B removes the milk products, which are substitutable, so it doesn't point to an outlier in the complementary data."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Desai et al. found that democratic strength actually restrains inflation when considered alongside inequality. So the Norway–Cameroon comparison, which seemed to show democracies handling inflation poorly, shouldn't be read as proof of a built-in weakness in democratic institutions. Choice A goes beyond the findings by claiming inequality, not institutions, caused Norway's higher rate."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Arthropod studies showed larger differences than bird studies on average, but every class, including birds, had individual studies with differences well above the arthropod average. Those bird studies must have found larger effects than at least some arthropod studies. Choice B contradicts the averages, which favored arthropods."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Her work challenges conventional notions of race, gender, history, and memory\" is a complete clause, and \"she is credited with...\" is another. Joining two independent clauses needs a comma plus a conjunction, so \"memory, and\" is correct. Choice A leaves out the comma, and choice D creates a comma splice."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first independent clause ends with \"more prevalent among constitutions,\" so a semicolon goes there. \"Enacted in 1997\" then describes Poland's constitution and is followed by a comma before the main clause \"Poland's constitution contains three such features.\" Choices A and B attach \"enacted in 1997\" to the wrong sentence."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"For example, all (or almost all) light passes through painite, which is classified as transparent\" is a complete sentence. \"Allowing only some light to pass through\" begins the next sentence as a modifier of trona. A period is needed between them; choice C would make \"allowing\" wrongly describe painite and create a run-on."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"US economist Arthur Laffer\" works like a title before a name, and the name is essential to identify which economist is meant, so no punctuation goes between \"economist\" and \"Arthur Laffer.\" Adding a comma, colon or dash would wrongly separate the descriptive title from the name."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"or superDARN, as space physicists like Nozomu Nishitani call it\" is an interruption that closes with a dash after \"call it.\" Paired interrupting punctuation must match, so the opening mark must also be a dash. A comma or colon would not match the closing dash."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main clause is \"Richard Serra... assembles large-scale steel plates,\" and the comma after \"environment\" closes an interrupting phrase. Opening that phrase with \"Serra, intending\" creates a properly set-off participial modifier. Choices A and D would give the sentence two main verbs, and choice B puts a comma between the subject and its verb."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the two volcanoes look similar from afar, and the next says volcanologists can tell they are different types. That's a contrast, so \"though\" fits. \"Therefore\" wrongly suggests the difference follows from their similar appearance."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Determining the \"ratio\" of plant subtypes in the diet is the same thing as determining their relative quantities. The second sentence restates the first in simpler words, so \"That is\" is the right transition. \"In addition\" and \"Next\" would wrongly treat it as a separate step."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say many Stradivarius violins are named for a previous owner and that the Jules Falk is named for violinist Jules Falk. Choice D explains the name by stating that it comes from its former owner. Choice A gives a fact about Falk but never connects it to the violin's name.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Antonio Stradivari (1644-1737) made about 1,000 violins in his lifetime.\n• Musicians prize his Stradivarius violins for their famed sound quality.\n• Many of the 500 or so that exist today are named for a previous owner.\n• The Jules Falk Stradivarius is named for Jules Falk, an American violinist."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is when and where Argentum debuted, which the notes give as 2018 in New York City. Choice C states both. Choice A focuses on the sculpture's size and materials, and choice D gives a year but no place.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Grimanesa Amoros is a Peruvian American artist.\n• She is well known for her large-scale LED light sculptures.\n• Argentum debuted in 2018 at the Bronx Museum of the Arts in New York City, New York.\n• It is made of iridescent multicolored LED domes.\n• It occupies 253 cubic feet of space."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The question asks where the figures are placed in Lost in the Shuffle, and choice C says the two young men appear in the bottom left and upper right corners. Choice A compares sizes and choice B describes the water colors, neither of which gives the figures' location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Calida Garcia Rawles is an African American painter.\n• She is known for her large-scale, hyperrealistic paintings depicting African American figures in water.\n• The painting Lightness of Being I (24×30 in) depicts a young man with his arms outstretched floating on the right side of the canvas.\n• Lost in the Shuffle (36×24 in) depicts two young men with their arms outstretched floating in the bottom left and upper right corners of the canvas.\n• She paints the water with vivid blue colors, including sky blue and indigo.\n• The mood in the paintings is calm."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize when both samples were collected, the sentence needs both dates. Choice D gives June 1930 for Trixis antimenorrhoea and May 1929 for Stephanomeria thurberi. Choice C gives only one date, and choice B gives places instead of times.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ynés Mexía was a Mexican American botanist.\n• Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.\n• She collected a sample of Trixis antimenorrhoea in Minas Gerais, Brazil, on June 26, 1930.\n• She collected a sample of Stephanomeria thurberi in Chihuahua, Mexico, on May 27, 1929.\n• These specimens are members of the Asteraceae family.\n• They can now be viewed online at the C.V. Starr Virtual Herbarium."
+    }
+  }
+]

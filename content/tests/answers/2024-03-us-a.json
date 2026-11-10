@@ -1,0 +1,566 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fellowship is given to artists for their \"lifetime contributions to the arts,\" so it was created to recognize them, which is what \"honor\" means. \"Begin\" doesn't make sense with artists as the object, and \"overshadow\" and \"distract\" are negative actions that clash with an award."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sail and the sailor are both waiting for the west wind to come, so the sail isn't moving or being used. \"Idle\" therefore means inactive. Nothing suggests the sail lacks support (B), and \"ridiculous\" and \"untrustworthy\" are judgments the lines never make.",
+    "fix": {
+      "passage": "The following text is adapted from the 1895 poem \"The Song My Paddle Sings\" by Emily Pauline Johnson (Tekahionwake).\n\nWest wind blow from your prairie nest,\nBlow from the mountains, blow from the west.\nThe sail is <u>idle</u>, the sailor too;\nO! wind of the west, we wait for you"
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence sets up a contrast with \"but\": Faggio's work shows that certain factors affect some industry groupings more than others. So the assumption being challenged must be that the reasons for clustering are the same everywhere, or \"consistent\" across sectors. \"Variable\" says the opposite of the assumption, and \"combined\" and \"artificial\" don't set up that contrast."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The corpus data show that \"great\" is the sixth most common adjective, which backs up the linguist's assumption that the word appears often. To back up a claim with evidence is to \"substantiate\" it. \"Refute\" is the opposite, since the data agree with the assumption, and \"entail\" and \"transpose\" don't describe testing a claim."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence beginning with \"However\" points out that the study relied on an average of only 7 fish, and the rest of the text explains why such a small sample can lead to biased, exaggerated results. So it criticizes the study's results. The study's conclusion (D) is given in the sentence before it, and no traits of the fish or study locations are mentioned (A, B).",
+    "fix": {
+      "passage": "In 2014 Leon Green and Fredrik Jutfelt published a study concluding that ocean acidification has a strong effect on the behavior of Scyliorhinus canicula, a species of fish. <u>However, Green and Jutfelt's study relied on a mean sample size of only 7 fish.</u> In a 2022 review of various scientists’ conclusions about the impacts of ocean acidification on fish behavior, Jeff C. Clements and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. Such analysis, in turn, can contribute to reports of exaggerated effects."
+    },
+    "note": "PDF underlines the first two sentences, but the prompt asks about one sentence; underlined only the \"However\" sentence (the one the answer describes)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined words state what a reader would probably expect (that plants obviously can't grow on Mars), and the text then says researchers showed the opposite. Setting up that expectation makes the findings stand out as surprising. It doesn't contrast the two species (A) or raise an objection to the study's method (D).",
+    "fix": {
+      "passage": "Can red fescue plants grow on Mars? Can pea plants? <u>You might think the answer to these questions is obviously no</u>, but researchers in Europe recently showed that many common plant species can thrive in soil designed to simulate Martian conditions, as long as water is supplied. In fact, some species actually did better in Martian soil than in Earth soil: 91 percent of red fescue plants grown in simulated Martian soil were alive after 50 days, compared with 86 percent that were when planted in soil from their home planet."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Camila knows \"from her teaching\" that tiny penciled suggestions are not a good sign and that pencil is used \"to soften the indignity of the corrections.\" So she recognizes his method as a gentle way of pointing out flaws. She doesn't take his \"Fine line\" notes as real praise (A), and the text never says she disagrees with his changes (D).",
+    "fix": {
+      "passage": "The following text is adapted from Julia Alvarez's 2000 novel In the Name of Salomé. Camila is the daughter of a famous poet, Salomé, and also writes her own poetry. Max is her brother.\n\nShe (Camila) has already sent them (her poems) to Max, who has written back saying that they are \"fabulous.\" He wants to publish them in the Dominican papers with the headline, SALOMÉ LIVES AGAIN, but she has begged him not to, for she is not very sure of them. She has also sent a handful to an old family friend, the poet Juan Ramón Jiménez, and he has been more circumspect, \"Fine line,\" he has written here and there, but the pages are riddled with tiny, penciled suggestions. She knows from her teaching that this is not a good sign, the use of pencil intended to soften the indignity of the corrections."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Towers enjoys a \"hidden but still conscious glory\": he sits silently at his club, thinking how the politicians are \"in his power\" and how his pen could bring down the loudest of them. That is private pleasure in his power to shape public opinion. The text never compares readers' interest in him with their interest in politicians (A), and he doesn't seek the praise of far-off readers (C).",
+    "fix": {
+      "passage": "The following text is adapted from Anthony Trollope's 1855 novel The Warden. Tom Towers is a writer for the newspaper The Jupiter.\n\nIt is true that in far-off provinces men did not talk daily of Tom Towers, but they read The Jupiter, and acknowledged that without The Jupiter life was not worth having. This kind of hidden but still conscious glory suited the nature of the man. He loved to sit silent in a corner of his club and listen to the loud chattering of politicians, and to think how they all were in his power; how he could smite the loudest of them, were it worth his while to raise his pen for such a purpose."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank asks how many people speak Hopi, and the table lists Hopi (Southwest) with 6,080 speakers, which fits \"numbers in the thousands\" and is fewer than Cherokee. 11,470 is the Cherokee figure, and 1,950 and 1,240 belong to Mohawk and Tlingit.",
+    "fix": {
+      "passage": "The Cherokee language of the Southeast is one of the most widely spoken Native languages in what is now the continental United States, with approximately 11,470 speakers, according to a 2015 report by the US Census Bureau. Though spoken by fewer people than Cherokee, the Hopi language of the Southwest nonetheless has a population of speakers that numbers in the thousands. The Census Bureau report indicates that in the US, Hopi is spoken by approximately _____",
+      "table": {
+        "caption": "Approximate Number of Speakers of Four Native Languages",
+        "headers": [
+          "Language",
+          "Region",
+          "Number of speakers"
+        ],
+        "rows": [
+          [
+            "Tlingit",
+            "Alaska Panhandle",
+            "1,240"
+          ],
+          [
+            "Hopi",
+            "Southwest",
+            "6,080"
+          ],
+          [
+            "Mohawk",
+            "Northeast",
+            "1,950"
+          ],
+          [
+            "Cherokee",
+            "Southeast",
+            "11,470"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The mesophotic zone starts at 30 meters, so a species that never lives deeper than 10 meters is the furthest from being able to move fully into it. Acropora anthocercis has a maximum depth of only 10 meters, the shallowest maximum in the table. Agaricia fragilis (A) already reaches 102 meters, so it is the best suited, and a shallow minimum depth (B) says nothing about how deep a species can go.",
+    "fix": {
+      "passage": "Some scientists have suggested that as ocean temperatures rise, many fish and corals found in the shallow zone (less than 30 meters below the surface) could take refuge in the cooler, darker mesophotic zone (30 to 150 meters below the surface). However, it isn't clear that all such species will be able to tolerate mesophotic conditions. In 2018, Luiz Rocha and colleagues studied stony corals in the two zones in Caribbean and Indo-Pacific waters. Based on the depths at which those corals are now found, the species that seems least suited to a full migration to the mesophotic zone is ______",
+      "table": {
+        "caption": "Minimum and Maximum Depth of Stony Coral Species in Caribbean and Indo-Pacific Waters",
+        "headers": [
+          "Species",
+          "Minimum depth (meters)",
+          "Maximum depth (meters)"
+        ],
+        "rows": [
+          [
+            "Cycloseris tenuis",
+            "1",
+            "27"
+          ],
+          [
+            "Acropora caroliniana",
+            "10",
+            "25"
+          ],
+          [
+            "Acropora anthocercis",
+            "5",
+            "10"
+          ],
+          [
+            "Agaricia fragilis",
+            "10",
+            "102"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Queen honeybees (about 230 pC) exceed the threshold for attracting the stamens. Red mason bees reach about 750 pC, even higher, so they must exceed the threshold too and should also attract the stamens. Choice A wrongly says paper wasps have a greater charge than queen honeybees (they're near 30 pC), and D can't be concluded because the threshold could be anywhere below about 230 pC."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Reckoning and Resilience stands out for the breadth of disciplines it includes. Showing that its artists work in three different media (painting, photography, textiles) directly supports that. Choice A describes Across County Lines, not the variety in the new show, and B is about the museum's general collection."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers warn against applying the results to customers generally, and the text stresses that all respondents came from Serbia, a developing economy. The logical follow-up is that people from countries at other levels of development should be studied before generalizing. Choices A and D make the very generalizations the researchers cautioned against, and C questions Serbian results, which wasn't the concern."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Laidre's reasoning is that a trait serving a vital purpose, like detecting dangerous freezing water, would be found in most of the animals. Since many narwhals have no tusk, she argues it's unlikely to be that important; if it were, more narwhals would have one. The other choices (shyness, other animals' tusks, new habitats) don't connect to her objection."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Which features a large collection of contemporary art\" is a nonrestrictive clause describing the museum, so it's set off with a comma. A period (C) or semicolon (B) would leave \"which features...\" as a fragment, and \"and which\" (A) needs an earlier \"which\" clause to join to."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Ratified in 1804\" is a short descriptive phrase inside the sentence, and \"separated the elections\" is the main verb for \"The 12th amendment,\" so no colon, semicolon, or dash should come between the year and the verb. Each of those marks would cut the subject off from its verb.",
+    "fix": {
+      "passage": "According to the original text of the US Constitution, written in 1787, the presidential candidate receiving the second most Electoral College votes becomes vice president. The 12th amendment, ratified in _____ separated the elections for the two offices."
+    },
+    "note": "Passage opens the phrase with a comma after \"amendment\" but no choice closes it; B is still the only acceptable option."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes a current situation (\"you won't see Interpol agents\"), so the verb should be present tense: only Algerian authorities \"are\" permitted to make arrests. \"Were,\" \"were being,\" and \"had been\" put the rule in the past, which clashes with the present-tense context."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"award for a person of letters\" belongs together, and a colon after it correctly introduces the name of the award, \"the Nobel Prize in Literature.\" A semicolon (A, D) must join two independent clauses, and \"the Nobel Prize in Literature\" isn't one. Choice B breaks up \"award for a person of letters\" with the colon."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both sides of the blank are independent clauses: \"the sculptures... are meant to challenge viewers...\" and \"her thought provoking works... were no different.\" A semicolon correctly joins them. A comma alone (C) creates a comma splice, no punctuation (D) is a run-on, and \"and to\" (B) makes the second part ungrammatical."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists three economists, and each name is followed by a description containing commas, so the items must be separated with semicolons. A semicolon goes after \"Kyoto University\" to end the first item, and a comma after \"George Akerlof\" introduces his description, matching \"Iris Bohnet, a professor...\" Choice D wrongly puts a semicolon between a name and its own description, and A mixes commas into a semicolon list."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has its main verb (\"is dependent\"), so the blank begins a phrase describing the Laffer curve: \"famously sketched on a napkin...\" acts like an adjective. Adding \"was,\" \"were,\" or \"had been\" would create a second main verb with no subject, making the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The word \"underground\" suggests LeMoyne kept his views secret, but the next sentence says they were well known, which is the opposite of that assumption. \"On the contrary\" signals exactly that reversal. \"For example\" and \"Additionally\" treat the sentence as support, and \"As a result\" wrongly suggests cause and effect.",
+    "fix": {
+      "choices": {
+        "D": "On the contrary,"
+      }
+    }
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Gamma Velorum is bright despite being very far away, which is impressive. For Alkaid, the text concedes a less impressive point: its brightness is probably due largely to its being relatively close. \"Granted\" introduces that kind of admission. \"Indeed\" and \"Similarly\" would wrongly treat Alkaid as matching Gamma Velorum, and \"As a result\" implies a cause that the previous sentence doesn't give."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The words after the blank define the technical term \"cognate replacement\": the rate at which a word is replaced over time by a noncognate form. \"That is\" introduces a restatement or definition. \"For example\" would need a specific instance, and \"likewise\" and \"in addition\" add a new, separate idea."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to emphasize calcite's number, and A opens with \"Calcite has a Mohs scale number of 3\" and explains what that means compared with talc and orthoclase. Choice B doesn't mention calcite, and C focuses on orthoclase rather than calcite's number.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral talc has a Mohs scale number of 1.\n• The mineral calcite has a Mohs scale number of 3.\n• The mineral orthoclase has a Mohs scale number of 6."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity has to apply to both refuges, and D states that each was established to protect endangered species. Choice C points out a difference in size, and A and B mention only one of the two refuges.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The United States has designated more than 500 areas National Wildlife Refuges (NWRs).\n• Some NWRs were established specifically to protect endangered species.\n• The Bear Valley NWR is a 4,200-acre area in Oregon.\n• It was established to protect the endangered bald eagle.\n• The Moapa Valley NWR is a 32-acre area in Nevada.\n• It was established to protect the endangered Moapa dace."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To specify Johnson's contribution, the sentence must say what he did: D states that he played bass on Acoustic Soul. Choice B only says the album \"features\" him without naming his role, and A and C don't mention Johnson at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• India Arie is an African American singer and songwriter.\n• The media outlet BBC Music has described her music as a \"blend of hip hop, soul and folk [that is] as subtle as it [is] inspired.\"\n• Her first studio album, Acoustic Soul, was released in 2001.\n• It features the song \"Back to the Middle.\"\n• Avery Johnson played bass on the album."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The fossils help scientists recognize or make out steps in hominid evolution, which is what \"discern\" means. \"Yield\" (produce) doesn't fit scientists as the subject, and \"exploit\" and \"prioritize\" don't describe learning about evolution from evidence."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Daumier's realism emphasizes accurate portrayals of ordinary people, while Delaroche's romantic style \"instead\" flattered subjects with staged settings and flawless skin. Since the two styles are opposed, realism largely \"rejected\" romantic conventions. \"Epitomized,\" \"imitated,\" and \"extended\" all suggest agreement with those conventions."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The word \"but\" sets up a contrast: the reasons for linking Larsen to the Harlem Renaissance may seem beyond question, yet the link risks ignoring subtleties in her style. \"Irrefutable\" captures that seemingly undeniable quality. \"Incongruous\" and \"provocative\" would mean the reasons already seem odd or controversial, which removes the contrast, and \"pretentious\" doesn't fit reasons."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text argues that historical knowledge is central to how citizens understand politics, so it can't be left only to specialists. In other words, history is not unnecessary, which is the meaning of \"superfluous.\" \"Unattainable\" and \"commonplace\" don't support the conclusion that everyone needs it, and \"equitable\" (fair) doesn't fit."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text first identifies a problem with historians of capitalism (they ignore pre-colonial African capitalism, implying it was imposed from outside), then explains why: they rely on archival data that don't exist for much of pre-colonial Africa. That is presenting and accounting for a misleading feature of their work. The text doesn't describe a debate about interpreting data (A) or evaluate the Africanists' method (B)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined line describes a simple natural event, wind shaking the seed pods, and the speaker then compares her own scattered, feverish thoughts to the seeds. So the observation is expanded into a picture of inner turmoil. The wind isn't shown as consistent (B), and the speaker doesn't blame the wind for her feelings (C).",
+    "fix": {
+      "passage": "The following text is adapted from H.D.'s 1916 poem \"Mid Day.\" In the poem, the speaker is on a path in an outdoor setting.\n\n<u>A slight wind shakes the seed pods ...</u>\nmy thoughts are spent\nas the black seeds.\nMy thoughts tear me.\nI dread their fever.\nI am scattered in its whirl.\nI am scattered like\nthe hot shriveled seeds."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes the energy ladder, the usual explanation that household income drives fuel choice, and then presents a Kenyan study showing that model to be \"reductive\" because many factors matter. Its purpose is to challenge that explanation. The model is about fuel choices, not fuel prices (B), and Thailand is only an example, not half of a comparison (D)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says scholarship overemphasizes fragmented narratives and neglects coherent works like The Forsyte Saga; Text 2 says the focus on fragmentation versus coherence blocks inquiry into other stylistic features. Both believe the field's current focus gives a narrower picture of modernist fiction than it should. Choice A fails because Text 2 wants more attention to style, not less.",
+    "fix": {
+      "passage": "Text 1\nScholarship today over-represents experimentally fragmented narrative structures, such as that of Dorothy Richardson's Pointed Roofs, beyond the degree to which they actually influenced fiction in Britain and Ireland during the modernist period (roughly 1900–1945). Meanwhile, John Galsworthy's The Forsyte Saga, whose coherent, linear narrative structure recalls the fiction of previous centuries, attracts woefully little attention from scholars of modernism.\n\nText 2\nDistant reading, or computer-assisted quantitative analysis of massive collections of digitized texts, can reveal stylistic elements that have heretofore escaped notice, despite being shared by numerous texts from the modernist period. For too long, scholars have focused on narrative fragmentation versus coherence, inhibiting inquiry into other points of stylistic correspondence among works that would enrich our understanding of the modernist canon."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "All of the Federalist essays were published in New York newspapers in 1787–88, so both essays appeared sometime in 1787 or 1788. Choice A fails because No. 12 was \"surely penned by Hamilton,\" so only No. 62's author is uncertain. The text says publication was spread across several papers, so we can't tell that both appeared in the Independent Journal (C)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis is an inverse relationship: smaller birds should be more likely to associate with other species. The larger C. undatus (58 g) always appearing alone or with its own species while the smaller R. melanurus (9 g) often joins multispecies flocks fits that pattern. Choice C shows the reverse, and D is about predation risk, not the link between size and flocking."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis is that Ag-NP levels in woodlice could stand in for levels in vertebrates like the frog X. laevis. If woodlouse concentrations don't predict frog concentrations under the same exposure, the woodlice can't serve as a proxy. Choice B would actually make woodlice more attractive as test animals, and A is about other nanoparticles, not whether woodlice predict frog levels of Ag-NPs.",
+    "fix": {
+      "choices": {
+        "A": "P. pruinosus has been shown to accumulate several other types of manufactured nanoparticles in addition to Ag-NPs, whereas X. laevis has been shown to accumulate only Ag-NPs.",
+        "D": "When P. pruinosus and X. laevis are exposed to similar levels of Ag-NPs, both species do not show substantial variation from individual to individual."
+      }
+    },
+    "note": "Choice D is garbled in the original too; restored the likely missing words \"Ag-NPs,\"."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that earlier snow cover, before the soil surface freezes, raises net CO2. If snow insulates the soil so microbes keep respiring (releasing CO2) while plants aren't growing to absorb CO2, output rises with no matching uptake, so net CO2 increases. Choice B says early snow lowers respiration, which would reduce CO2 output and work against the conclusion."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conventional view is that valence (how pleasant a smell seems) depends on culture, but people from ten very different places ranked the odors similarly. That suggests the standard view of culture's role may be wrong. Choice C misstates the conventional belief, and the text gives no evidence about pleasant versus unpleasant odors (B)."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Researchers thought defensive ultrasound was limited to tiger moths, hawkmoths, and one geometer species, but 52 genera, including several geometer genera, produced it. So the defense is likely more widespread than researchers knew. Choice B overreaches, since moths that don't click might have other anti-bat defenses, and nothing in the study addresses other strategies (A) or other uses of the clicks (C).",
+    "fix": {
+      "choices": {
+        "C": "some genera of large-bodied moths may use ultrasonic signaling for purposes other than avoiding capture by predators such as Allen's big-eared bat.",
+        "D": "anti-bat ultrasound production may be a more prevalent defense strategy among large-bodied moths than previously known to researchers."
+      }
+    }
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Kestrels' surroundings strongly affect their hormone levels, so it makes sense that lab (captive) and wild kestrels would differ. D describes such a difference, with higher winter luteinizing hormone in captive birds. Choice A says the opposite, B is about variation between individuals rather than between settings, and C is about chickadees, not kestrels.",
+    "fix": {
+      "passage": "Biologists Rebecca M. Calisi-Rodriguez and George E. Bentey examined research on kestrels and black-capped chickadees, both of which have been studied in the laboratory as well as in the wild, to see how studies’ settings might have affected their results. Lab studies are useful because they make it easy to control important variables, but kestrels’ surroundings can significantly affect their hormone levels. Therefore, it’s not altogether surprising that when Calisi-Rodriguez and Bentey examined studies of kestrels, they found that _____"
+    }
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Hydnum albidum\" is the name that identifies which fungus is meant, so it's essential (restrictive) and takes no punctuation before it. The phrase \"commonly referred to as white hedgehog\" is already set off by its own commas. A period (A) or colon (C) would break the subject apart, and a comma (D) would wrongly treat the name as extra information."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"However\" belongs to the first clause, so it's set off with commas: \"Relatively few... are likely to reach Earth's surface, however, since...\" The \"since\" clause is dependent, so it can't stand after a period or semicolon on its own. Choices A, C, and D each leave \"since the meteoroids'...\" as a fragment."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both sides of the blank are independent clauses (\"the Eiteljorg Museum has celebrated...\" and \"in 2015, it awarded Wilson...\"), so a semicolon joins them correctly. A comma alone (C) is a comma splice, and \"thus\" with a comma (D) is still a splice and adds a cause-and-effect link that doesn't fit."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"This designation is hypothetical\" is a complete sentence, and \"However, Proto-Nilo-Saharan is only postulated...\" starts a new one, so a period after \"hypothetical\" with \"However,\" opening the next sentence works. Choice A creates a comma splice, and B and D attach \"however\" in ways that don't properly separate the two independent clauses."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The parenthetical list of the three time periods should sit right after \"spaces,\" with nothing extra, so that \"that, through a patient...\" still refers to the spaces. Choice B puts only one item in parentheses, C adds a period that ends the sentence too early, and D runs the list into \"spaces\" without any punctuation to set it off."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"collection\"; the paintings named inside the \"which\" clause aren't the subject. A singular subject needs a singular verb, \"remains.\" \"Remain,\" \"have remained,\" and \"have been remaining\" are plural and don't agree."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence makes a general claim (sleek vehicles are more aerodynamic than bulky ones), and the Airbus jet and the semi-truck illustrate it. \"For example\" introduces that illustration. \"However\" signals a contradiction and \"meanwhile\" a separate event, neither of which fits."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the plant absorbs a lot of chromium and stores it in its roots and shoots, chromium levels in the soil go down. That's a result, so \"accordingly\" (meaning \"as a consequence\") fits. \"Nevertheless\" signals a contrast, and \"specifically\" and \"in addition\" don't express cause and effect."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem shows the smooth interplay of poetry and painting, yet it also highlights tensions between them. \"At the same time\" introduces a second point that holds alongside a contrasting first one. \"Therefore\" implies the tensions result from the interplay, and \"In other words\" and \"Specifically\" would wrongly present the tensions as a restatement or detail."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to list activities, and C names all three: biking, in-line skating, and cross-country skiing. The other choices describe the trail's location or origin without listing any activities.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Heritage Trail is located in New York.\n• It was created from a former railroad corridor.\n• Visitors can use the trail for a variety of recreational activities.\n• These include biking, in-line skating, and cross-country skiing."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize the year, the sentence should state it, and D gives 1925 directly. Choices B and C mention the medal or painting but leave out the year, and A doesn't mention Le Sidaner at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Carnegie Prize is an international art competition.\n• It is administered by the Carnegie Museum of Art in Pittsburgh, Pennsylvania.\n• One Carnegie Prize gold medal winner is Henri Le Sidaner of Mauritius.\n• Le Sidaner's painting Window on the Bay of Villefranche was honored in 1925.",
+      "prompt": "The student wants to emphasize the year in which Le Sidaner won a Carnegie Prize gold medal. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Muskwa has high sinuosity and the Cheyyar has low sinuosity, so the Muskwa's ratio of stream length to valley length is greater, which makes it curvier. A states that comparison. Choice D reverses which river is curvier, and B and C explain how curviness is measured without comparing the rivers.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A river's stream length is the length of a line that follows along the river path.\n• A river's valley length is the length of a straight line drawn from the beginning of the river to the end.\n• The river's curviness, or sinuosity, is the ratio of the river's stream length to its valley length.\n• Low-sinuosity rivers have a stream length 1–1.5 times longer than their valley length, and high-sinuosity rivers have a stream length 1.5 or more times longer than their valley length.\n• The Muskwa River in Canada has high sinuosity.\n• The Cheyyar River in India has low sinuosity."
+    }
+  }
+]

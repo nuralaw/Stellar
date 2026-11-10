@@ -1,0 +1,1248 @@
+[
+ {
+  "key": "rw1-01",
+  "answer": "A",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The blank describes features that \"almost all mosques include,\" like the mihrab, so they are nearly universal. The word \"But\" then contrasts these shared features with the many different styles mosques can have. \"Elaborate,\" \"illusory,\" and \"idealized\" don't connect to the idea of something nearly every mosque has."
+ },
+ {
+  "key": "rw1-02",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Because most sculptures were moved from their original sites, \"precise dating\" is impossible, so the dates archaeologists give can only be approximate. \"Uncontroversial\" goes the wrong way, since imprecise dates invite debate, and \"irrelevant\" or \"applicable\" don't follow from the lack of precision."
+ },
+ {
+  "key": "rw1-03",
+  "answer": "A",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The traditional descriptions and the actual observed trait combinations have made ecologists doubt those descriptions, which only makes sense if the two don't match. \"Discrepancies between\" captures that mismatch. \"Affinities between\" means similarities, which would support the descriptions rather than raise reservations about them."
+ },
+ {
+  "key": "rw1-04",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The sentence before claims the forests \"changed the land significantly,\" and the underlined sentence begins \"For example\" and lists two such changes: less soil erosion and new animal habitats. So it illustrates how the forests changed conditions on land. It says nothing about older forests (A), competing views (B), or how fast the forests spread (D).",
+  "fix": {
+   "passage": "Scientists discovered a 390-million-year-old fossilized forest of Calamophyton trees in modern-day England. The scientists believe the emergence of these Calamophyton forests changed the land significantly. <u>For example, the tree roots would have greatly reduced soil erosion, and the accumulated twigs the trees shed likely created new habitats for animal life.</u>"
+  }
+ },
+ {
+  "key": "rw1-05",
+  "answer": "A",
+  "skill": "text-structure-purpose",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The narrator says she and Dot had \"a mental connection\" and that she understood things \"her mother could not accept,\" noting that Celestine \"never saw\" Dot's impatience with babyhood. The whole passage sets up her belief that she reads Dot better than Celestine does. Nothing predicts Dot's future personality (B), describes ways to amuse Dot (C), or compares the women's looks (D).",
+  "fix": {
+   "passage": "The following text is from Louise Erdrich’s 1986 novel The Beet Queen. The narrator discusses her relationship with her young niece, Dot. Celestine, the narrator’s sister-in-law, is Dot’s mother.\n\nDot and I had a mental connection, I was sure of it. I understood things about the baby that her mother could not accept. For instance, she was never meant to be a baby. Dot was as impatient with babyhood as I. She tried at once to grow out of it. Celestine never saw that, because she, and only she, took pleasure in Dot’s helpless softness. Only Celestine was saddened by her daughter’s fierce progress. Day by day, Dot grew stronger. In her shopping-cart stroller she exercised to exhaustion, bouncing for hours to develop her leg muscles."
+  }
+ },
+ {
+  "key": "rw1-06",
+  "answer": "B",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The text opens with Adelaide as one city that has hardened its shoreline, then explains how Prosser's team surveyed bird communities with an index, and ends with what they concluded. That is example, study method, finding. Choice A is tempting, but the text never states a hypothesis, and choice D's \"significance of the findings\" is never discussed."
+ },
+ {
+  "key": "rw1-07",
+  "answer": "B",
+  "skill": "central-ideas",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The text uses Dorothy Blum's pioneering work and Maureen Baginski's current career to show that women have made important contributions to cryptology. Choice A only restates the definition of cryptology, and nothing suggests the two women worked together (C) or makes a claim about schools (D)."
+ },
+ {
+  "key": "rw1-08",
+  "answer": "C",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Non-tool users rely on \"abundant, energy-poor\" prey like snails, while tool users get high-quality, energy-rich mussels and clams. If each snail gives less energy, the non-tool users must eat more prey to meet the same energy needs. Choice A contradicts the text, which says tool users avoid tooth damage, and nothing supports B's claim about better health."
+ },
+ {
+  "key": "rw1-09",
+  "answer": "B",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The underlined claim says the school increased the number of young Hawaiian speakers. Choice B gives a before-and-after comparison: fewer than fifty children spoke Hawaiian at the founding, and now over 2,000 students do. The other choices give population figures or language facts that say nothing about the school's effect on young speakers.",
+  "fix": {
+   "passage": "Over the course of the 1900s, more and more Native Hawaiians spoke English instead of the Hawaiian language. To preserve their language, Native Hawaiian teachers founded the ʻAha Pūnana Leo preschool in 1984. They spoke Hawaiian while teaching, and their Native Hawaiian students were soon able to understand and speak it themselves. The school was a huge success. Eventually it opened locations around Hawaiʻi and started teaching Hawaiian to elementary and high school students too. <u>Thanks to ʻAha Pūnana Leo, the number of young people who speak the language has increased.</u>",
+   "choices": {
+    "A": "Besides Native Hawaiians, tens of thousands of people from other Pacific Islander communities live in Hawaiʻi today, including over 37,000 Samoans.",
+    "B": "Fewer than fifty children could speak Hawaiian when ʻAha Pūnana Leo was founded, but now more than 2,000 students at ʻAha Pūnana Leo speak it.",
+    "C": "Hawaiian is very similar to other languages that are spoken on the Polynesian Islands of the Pacific Ocean, including Tahitian, Samoan, and Māori.",
+    "D": "Roughly 680,000 Native Hawaiian people lived in the United States in 2020, and a little less than half of them lived in Hawaiʻi."
+   }
+  }
+ },
+ {
+  "key": "rw1-10",
+  "answer": "C",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To show 31 wasn't the lowest count, you need a count below 31. The table shows only 16 barred flagtails at station 3, which is lower. Choice A uses 16 but puts it in the wrong row and column (station 1 had 125 streaky rockskippers), and B and D cite numbers larger than 31.",
+  "fix": {
+   "passage": "Lin-Tai Ho and colleagues tracked fish populations in three tide pool–monitoring stations in Taiwan from 1999 to 2018. Although a total of only 31 blackspotted rockskippers were observed at station 3, that was not the lowest count at any station: _____",
+   "table": {
+    "caption": "Cumulative Counts of Fish in Three Taiwanese Tide Pools, 1999–2018",
+    "headers": [
+     "Species",
+     "Station 1",
+     "Station 2",
+     "Station 3"
+    ],
+    "rows": [
+     [
+      "barred flagtail",
+      "249",
+      "64",
+      "16"
+     ],
+     [
+      "streaky rockskipper",
+      "125",
+      "139",
+      "610"
+     ],
+     [
+      "blackspotted rockskipper",
+      "83",
+      "74",
+      "31"
+     ],
+     [
+      "Cocos frillgoby",
+      "50",
+      "64",
+      "90"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw1-11",
+  "answer": "D",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The conclusion is that Austria had more damaging fungus species than either other country. The Fungi column shows Austria 51, Belgium 13, and Bulgaria 14, so D states exactly that comparison. Choice C misreads the Trees column (9 and 4) as fungus counts, and B compares fungi to insects.",
+  "fix": {
+   "passage": "Elisabeth Pötzelsberger and colleagues gathered data on 23 non-native tree species grown in Europe. They analyzed reports from Austria, Bulgaria, and Belgium about the number of these species grown in those countries as well as the numbers of insect and fungus species that damage those trees. The researchers concluded that Austria had a greater number of damaging fungus species than either of the other countries did.",
+   "table": {
+    "caption": "Numbers of the 23 Non-native Tree Species Reported and the Insect and Fungus Threats to Them",
+    "headers": [
+     "Country",
+     "Trees",
+     "Fungi",
+     "Insects"
+    ],
+    "rows": [
+     [
+      "Austria",
+      "13",
+      "51",
+      "50"
+     ],
+     [
+      "Belgium",
+      "4",
+      "13",
+      "11"
+     ],
+     [
+      "Bulgaria",
+      "9",
+      "14",
+      "16"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw1-12",
+  "answer": "D",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The claim is about the Kansas house being remote and solitary. Choice D says Dorothy could see \"nothing but the great gray prairie\" and that not a tree or house broke the flat land, which shows the house is isolated. Choice C is set in Kansas but only says who she lived with, and A and B take place in Oz."
+ },
+ {
+  "key": "rw1-13",
+  "answer": "D",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Decarcinization is described as a possible \"dead-end,\" but frog crabs are a living decarcinized group suited to life in sediment that has lasted since the Early Cretaceous. That shows a non-crablike form can persist when conditions favor it, so a crab body isn't always best. Choice A overreaches by questioning the benefits of carcinization in general, and B contradicts the point that frog crabs have thrived."
+ },
+ {
+  "key": "rw1-14",
+  "answer": "B",
+  "skill": "inferences",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The study compares conservation strategies, but the population is hard to count, so researchers can't reliably tell whether numbers are rising or falling. That means any conclusion about which strategy works could be wrong. Nothing suggests the study will create a new counting method (A) or needs other species (C)."
+ },
+ {
+  "key": "rw1-15",
+  "answer": "D",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The sentence starts with the introductory phrase \"In addition to having hard hooves that can dig into nearly any groove or crack,\" which needs a comma before the main clause \"mountain goats have slender bodies.\" Choice A adds a stray \"or\" that has nothing to join, and B and C leave out the needed comma."
+ },
+ {
+  "key": "rw1-16",
+  "answer": "B",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The subject is the plural \"languages,\" so the verb must be the plural \"are.\" The phrase \"like Scheme, used in software development\" sits between subject and verb and can make the singular \"is\" look right. The passage is in present tense, so \"was not\" and \"has not been\" don't fit."
+ },
+ {
+  "key": "rw1-17",
+  "answer": "B",
+  "skill": "form-structure-sense",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The shores belong to the North Sea, a singular noun, so the singular possessive \"its\" is correct. \"It’s\" means \"it is,\" \"their\" is plural, and \"they’re\" means \"they are.\""
+ },
+ {
+  "key": "rw1-18",
+  "answer": "A",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"Fictional yet realistic\" is a modifier that must be followed directly by the thing that is fictional yet realistic: the personas. Only A puts \"these personas\" right after the comma. The other choices make the modifier describe \"specific details,\" \"UX designers,\" or \"actual users,\" which is a dangling modifier."
+ },
+ {
+  "key": "rw1-19",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The pronoun refers to \"the wobble,\" a singular noun, so \"it\" is correct. The nearby plurals \"redshifts and blueshifts\" make \"them\" or \"these\" tempting, but they are inside the dashes as a side note; what was attributed to the planet's gravity was the wobble."
+ },
+ {
+  "key": "rw1-20",
+  "answer": "A",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Before the blank is a complete thought ending with \"it was not universally embraced,\" and after it comes a full clause explaining why. A colon correctly introduces that explanation. A comma (C) or nothing (B) would create a comma splice or run-on, and \"and\" (D) wrongly joins the clause starting with \"whereas.\""
+ },
+ {
+  "key": "rw1-21",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Johnson served in the cavalry during the Civil War, and by doing that he became one of the war's few Chinese-born soldiers. \"In doing so\" shows that the second fact results from the first. \"For instance\" and \"usually\" don't fit, since nothing is an example or a habit here."
+ },
+ {
+  "key": "rw1-22",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first sentence says biographers of pre-1800s subjects often lack written sources, but Chernow had a huge 26-volume collection of Hamilton's papers, which is the opposite situation. \"On the other end of the spectrum\" signals that contrast. \"To take one well-known example\" is tempting, but Chernow is a counterexample, not an example of the challenge."
+ },
+ {
+  "key": "rw1-23",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is a difference between the two musicians. Choice B contrasts them directly: Insel played viola and Quiñones played guitar. Choice A only talks about Insel and album dates, and D stresses what they have in common.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• India Arie is an African American singer and songwriter.\n• The media outlet BBC Music has described her music as a “blend of hip hop, soul and folk [that is] as subtle as it [is] inspired.”\n• Her acclaimed albums feature many talented musicians.\n• Judeth Insel played viola on her first studio album, Acoustic Soul (2001).\n• Ricky Quiñones played guitar on her second studio album, Voyage to India (2002)."
+  }
+ },
+ {
+  "key": "rw1-24",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To show order, the sentence must say which supercontinent came first. Vaalbara formed about 3.6 billion years ago and Euramerica about 300 million years ago, so B's \"Euramerica formed long after Vaalbara\" does that. Choices A, C, and D define supercontinents or mention only one of them.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• A supercontinent is a single landmass made up of most or all of Earth’s continents.\n• Over time, continents merge together to form supercontinents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Vaalbara was a supercontinent that formed about 3.6 billion years ago.\n• Euramerica was a supercontinent that formed about 300 million years ago."
+  }
+ },
+ {
+  "key": "rw1-25",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Choice A contrasts the two works directly: Uros Island has smooth LED domes, while Golden Connection has tangled LED tubes. Choices B and D present the works as similar, and C mentions only Uros Island.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Grimanesa Amoros is a Peruvian American artist well known for her LED light sculptures.\n• Uros Island (2011) is from her Uros series of works.\n• It is made of smooth multicolored LED domes.\n• Golden Connection (2013) is from her Huanchaco series of works.\n• It is made of entangled blue and white LED tubes."
+  }
+ },
+ {
+  "key": "rw1-26",
+  "answer": "A",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Choice A contrasts the two refrigerants by type and makeup: dichloromethane is an HCC of hydrogen, chlorine, and carbon, while tetradecafluorohexane is a PFC of fluorine and carbon. Choices B and C emphasize what the compounds share, and D describes only one of them.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Refrigerants are chemical compounds used in cooling technologies, such as air conditioners.\n• Air conditioners can use refrigerants to absorb heat and release cold air.\n• The refrigerant dichloromethane is a hydrochlorocarbon (HCC).\n• HCCs are composed of the elements hydrogen, chlorine, and carbon.\n• The refrigerant tetradecafluorohexane is a perfluorocarbon (PFC).\n• PFCs are composed of fluorine and carbon."
+  }
+ },
+ {
+  "key": "rw1-27",
+  "answer": "C",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The goal is to say whom the award is named for, and C states that it is named for British mathematician Alan Turing. Choices A and D are about a winner, and B gives the reason the award is given.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The A.M. Turing Award is a prestigious award given by the Association for Computing Machinery (ACM).\n• The ACM gives the award for “major contributions of lasting importance to computing.”\n• It is named after groundbreaking British mathematician Alan Turing.\n• Raj Reddy won the award in 1994 for pioneering the development of large-scale artificial intelligence systems."
+  }
+ },
+ {
+  "key": "rw2-01",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Ephemeral objects are useful as evidence because they can show, or give proof of, shifts in norms and values. \"Attest to\" means to serve as evidence of. \"Compensate for\" is tempting but means making up for a loss, and \"dissociate from\" and \"collude with\" make no sense for objects that reveal change."
+ },
+ {
+  "key": "rw2-02",
+  "answer": "C",
+  "skill": "words-in-context",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The people citing advantages like less waste and faster returns are supporters of modular construction, which is what \"proponents\" means. \"Components\" are parts of a building, and \"safeguards\" and \"epitomes\" are things, not people who could cite benefits."
+ },
+ {
+  "key": "rw2-03",
+  "answer": "A",
+  "skill": "words-in-context",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The colon explains the blank: over a long study, many participants \"will withdraw or fall out of contact.\" That gradual loss of participants is called attrition. \"Replicability\" is a real research concern, but it is about repeating a study, not losing people during one."
+ },
+ {
+  "key": "rw2-04",
+  "answer": "D",
+  "skill": "words-in-context",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The ethicists' argument assumes that real character would make behavior completely consistent, so any contrary act disproves it. Kamtekar points out that ordinary people expect a helpful person to be helpful often, not always, so the contrast is with \"unfailingly.\" \"Sporadically\" is the opposite of what's needed, since \"frequently\" is already more than sporadic."
+ },
+ {
+  "key": "rw2-05",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first two sentences describe the exhibition: thirty North Carolina artists from many disciplines. The last sentence explains it was atypical for the Nasher Museum because it used many borrowed works instead of its own collection. Choice A is tempting, but the text never analyzes why that difference matters."
+ },
+ {
+  "key": "rw2-06",
+  "answer": "C",
+  "skill": "text-structure-purpose",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The underlined part tells what most manuscripts of the time contained, works by celebrated authors and readings favored by elites. That sets up the contrast with the HM's focus on popular and practical material, showing the HM is unusual for its time. The text doesn't call the FA a poor comparison (A) or claim such collections were everywhere (B).",
+  "fix": {
+   "passage": "The Heege Manuscript (HM) is a collection of booklets of once-unbound paper sheets on which Richard Heege copied various texts at his fifteenth-century home between Derbyshire and Nottinghamshire in England. <u>Most other contemporaneous personal manuscripts like the Findern Anthology (FA) consist primarily of pieces by celebrated medieval authors like Hoccleve and other readings favored by elites</u>, whereas the HM has a distinctive emphasis on the popular, including entertainments like crude comedies, and the practical, with advice about manners."
+  }
+ },
+ {
+  "key": "rw2-07",
+  "answer": "D",
+  "skill": "cross-text-connections",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "In Text 1 the moon, which \"seemed so far away,\" turns out to be like a child's balloon tangled in a ship's mast, so it seems very close. In Text 2 the speaker asks if the moon can hear \"up so high\" and whether it will \"come down soon,\" stressing its distance. Choice A fails because Text 2's moon isn't trapped, and nothing in Text 2 suggests serious study (C).",
+  "fix": {
+   "passage": "Text 1 is T.L. Hulme’s 1912 poem “Above the Dock.” Text 2 is from Amy Lowell’s 1912 poem “The Crescent Moon.”\n\nText 1\nAbove the quiet dock in mid night,\nTangled in the tall mast’s corded height,\nHangs the moon. What seemed so far away\nIs but a child’s balloon, forgotten after play.\n\nText 2\nSlipping softly through the sky\nLittle horned, happy moon,\nCan you hear me up so high?\nWill you come down soon?",
+   "prompt": "Which choice best describes a notable difference in how the speaker of Text 1 and the speaker of Text 2 portray the moon?"
+  }
+ },
+ {
+  "key": "rw2-08",
+  "answer": "B",
+  "skill": "central-ideas",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The text says the researchers' \"unique contribution\" was reconstructing the earliest surviving annual fiscal records of any state, which let them show Philip's defaults came from short-term cash shortages. That is a new body of evidence advancing the field. Choice D wrongly says they built on Hoffman and Norberg, who are only mentioned as related work, and C invents a cause about ruling two regions."
+ },
+ {
+  "key": "rw2-09",
+  "answer": "D",
+  "skill": "central-ideas",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Richard says he does the wrong himself but blames others, that he cast Clarence \"in darkness\" yet weeps about it to gullible nobles, and tells them the queen and her allies turned the king against Clarence. So he fakes grief and blames the queen while actually causing the trouble. Choice B is tempting, but Richard never says his grief made them believe him, and A wrongly makes Derby, Hastings, and Buckingham the queen's allies.",
+  "fix": {
+   "passage": "The following text is adapted from William Shakespeare’s 1597 play The Tragedy of King Richard III. Richard is reflecting on the recent arrest of his brother, the Duke of Clarence, on suspicion of treason against King Edward IV. Derby, Hastings, Buckingham, Rivers, Dorset, and Grey are also members of the English nobility.\n\nRICHARD: I do the wrong, and first begin to brawl.\nThe secret mischiefs that I set [flowing]\nI lay unto the grievous charge of others.\nClarence, whom I indeed have cast in darkness,\nI do beweep to many simple [gullible people],\nNamely, to Derby, Hastings, Buckingham;\nAnd tell them ’tis the Queen and her allies\nThat stir the King against the Duke my brother.\nNow they believe it, and withal whet me\nTo be revenged on Rivers, Dorset, Grey."
+  }
+ },
+ {
+  "key": "rw2-10",
+  "answer": "D",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The most remarkable difference in the table is between the top seller, Game & Watch at about 18,600,000 units, and the lowest, ColecoVision at about 2,000,000. Choice D states both numbers correctly. Choice A is accurate but describes a small gap, and B and C attach numbers to the wrong systems.",
+  "fix": {
+   "passage": "A student is writing a research paper on the global rise of the home video game industry during the 1970s and 1980s. The student is surprised by differences in the number of units sold by some systems compared to those sold by others. Most remarkably, the _____",
+   "table": {
+    "caption": "Home Video Game Systems of the 1970s and 1980s",
+    "headers": [
+     "System",
+     "Manufacturer",
+     "System type",
+     "Approximate number of units sold worldwide"
+    ],
+    "rows": [
+     [
+      "ColecoVision",
+      "Coleco",
+      "console",
+      "2,000,000"
+     ],
+     [
+      "Intellivision",
+      "Mattel",
+      "console",
+      "3,000,000"
+     ],
+     [
+      "MSX",
+      "ASCII Corp.",
+      "computer",
+      "4,000,000"
+     ],
+     [
+      "Game & Watch",
+      "Nintendo",
+      "handheld",
+      "18,600,000"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw2-11",
+  "answer": "C",
+  "skill": "command-of-evidence-textual",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Schober thinks the watercourts were meant to foster conch, a sea snail. If the watercourts had dimensions that suit fish but not the shallow, seagrass-rich conditions sea snails need, they couldn't have been designed to raise conch. Choice D is tempting, but conch shells not being the majority of the remains doesn't show watercourts weren't used for conch."
+ },
+ {
+  "key": "rw2-12",
+  "answer": "D",
+  "skill": "command-of-evidence-quantitative",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The hypothesis says plants adjust their sex allocation to improve mating success. By day 20 the share of male flowers fell to 0.13, a strong female bias, yet male reproductive success stayed at 0.29 throughout, so the shift brought no gain. Choice B mentions the steady success rate but ties it to total flower numbers, not sex allocation, which is what the hypothesis is about.",
+  "fix": {
+   "passage": "The mating environment hypothesis predicts that populations of flowering plants compensate for reduced mating opportunities due to dichogamy (a plant’s expression of male and female functions at separate times to prevent self-pollination) by adjusting the bias of floral sex allocation during the flowering period, increasing the probability of successful cross-plant pollination. Researchers tested the hypothesis by examining a population of broadleaf arrowhead, a plant for which bloom onset generally takes longer for male flowers than for female flowers, during the flowering season. They concluded that the mating environment hypothesis is not well supported by their observational data.",
+   "table": {
+    "caption": "Observed Traits in a Population of Broadleaf Arrowhead, by Flowering Date",
+    "headers": [
+     "Trait",
+     "Day 5",
+     "Day 10",
+     "Day 15",
+     "Day 20"
+    ],
+    "rows": [
+     [
+      "Total number of open male and female flowers per growth unit",
+      "25",
+      "65",
+      "110",
+      "45"
+     ],
+     [
+      "Estimated reproductive success rate of male flowers",
+      "0.29",
+      "0.29",
+      "0.29",
+      "0.29"
+     ],
+     [
+      "Proportion of male flowers",
+      "0.45",
+      "0.50",
+      "0.48",
+      "0.13"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "rw2-13",
+  "answer": "D",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Nguyen thinks Tavinor and Gaut miss a central part of gaming: absorption in gameplay itself, apart from the story. Since they classify games under fiction and cinema, they fold games into other media that ignore this key source of player enjoyment. Choice B is tempting, but the text doesn't say Nguyen finds the frameworks useful for anything."
+ },
+ {
+  "key": "rw2-14",
+  "answer": "A",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Besterman and Pace measured MPB through chlorophyll, but MPB in low light may make extra chlorophyll. So under macroalgae, chlorophyll could stay high even if MPB biomass dropped, making chlorophyll an unreliable stand-in. Choice B contradicts this reasoning, since the low-light response is exactly what could explain the different results."
+ },
+ {
+  "key": "rw2-15",
+  "answer": "B",
+  "skill": "inferences",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The team asked whether culture, personal taste, or anatomy shapes odor preferences, and found that people across very different cultures rated odors about the same. That result undermines the idea that culture strongly affects whether an odor seems pleasant. Choice D restates the finding instead of the idea it undermines."
+ },
+ {
+  "key": "rw2-16",
+  "answer": "C",
+  "skill": "inferences",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Guédron's wastewater study found no link, which led some to think the link exists only in undisturbed water. But Tjerngren's urban-disturbed waters did show the link, so what happens with wastewater can't be generalized to all human disturbance. Nothing in the text supports the specific claims in A, B, or D about levels, methods, or how common each disturbance is."
+ },
+ {
+  "key": "rw2-17",
+  "answer": "A",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "\"By being passed down through private libraries\" explains how the manuscripts survived, so it attaches to the verb with no punctuation. A semicolon or period (B, C) would leave a fragment, and the comma after \"by\" (D) splits the preposition from its object."
+ },
+ {
+  "key": "rw2-18",
+  "answer": "C",
+  "skill": "boundaries",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The example \"such as 'karst,' which refers to limestone terrain riddled with caves or sinkholes\" is an interruption that already ends with a dash before \"illustrate.\" Its opening must match, so a dash goes after \"Landscape.\" A comma or colon (A, B) doesn't pair with the closing dash, and no punctuation (D) leaves the interruption unmarked."
+ },
+ {
+  "key": "rw2-19",
+  "answer": "D",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The subject \"The resulting course\" has two verbs: it \"was 2,500 miles long and ... modeled a vision.\" The phrase \"crossing seven separate borders of neighboring countries\" interrupts, so it is set off by a comma after \"and\" and the comma after \"countries.\" Choice C is tempting, but \"crossed\" would leave \"modeled\" hanging after a comma with no connector."
+ },
+ {
+  "key": "rw2-20",
+  "answer": "C",
+  "skill": "form-structure-sense",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The subject \"Such meticulous documentation of mundane information\" already has its main verb, \"became Kawara’s life’s work.\" So the blank must start a modifier set off by commas, \", generating artworks that ... according to the New York Times,\" which C does. Choices A, B, and D add a second main verb, leaving \"became\" with no grammatical place."
+ },
+ {
+  "key": "rw2-21",
+  "answer": "D",
+  "skill": "boundaries",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "\"A decision that ... amplified the agency\" is a noun phrase renaming Anderson's choice of narrator, so it attaches to the main clause with a comma. The comma after \"that\" pairs with the comma after \"their own\" to set off the \"by allowing\" phrase. A period or semicolon (B, C) would leave \"a decision that ...\" as a fragment, and A is missing the comma after \"protest\"."
+ },
+ {
+  "key": "rw2-22",
+  "answer": "A",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "By publishing under the shared name Michael Field, Bradley and Cooper could express their joint creative vision. \"In this way\" shows that the result came from the method just described. \"For instance\" would wrongly treat the second sentence as an example, and \"On the other hand\" signals a contrast that isn't there."
+ },
+ {
+  "key": "rw2-23",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The first sentence states the general aim, analyzing cattle diet, and the second narrows it to the ratio of three plant types. \"Specifically\" introduces that more precise detail. \"Instead\" wrongly suggests the aim changed, and \"Therefore\" implies a cause-and-effect link that isn't present."
+ },
+ {
+  "key": "rw2-24",
+  "answer": "D",
+  "skill": "transitions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The first sentence claims the pen name did far more than hide Adams's identity, and the next sentence confirms and expands on that claim by calling it a complex rhetorical strategy. \"Indeed\" signals that kind of reinforcement. \"However\" and \"Conversely\" signal a contrast, and \"In addition\" suggests a new, separate point."
+ },
+ {
+  "key": "rw2-25",
+  "answer": "D",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "To refute the claim that apricots are the better source, the sentence must compare both foods. Choice D does: kale has 120 mg of vitamin C per 100 g, while apricots have only 10 mg. Choice A gives only kale's amount, and B and C say both contain vitamin C without comparing them.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• Kale is a vegetable that contains ascorbic acid, an essential nutrient for humans.\n• Apricots are fruits that contain ascorbic acid.\n• There is 120 milligrams (mg) of ascorbic acid per every 100 grams (g) of kale.\n• There is 10 mg of ascorbic acid per every 100 g of apricot.\n• Humans cannot make ascorbic acid in their bodies, so they must get it from foods, including fruits and vegetables.\n• Ascorbic acid is also known as vitamin C."
+  }
+ },
+ {
+  "key": "rw2-26",
+  "answer": "B",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "An example means naming a specific SNOTEL site, and B names the one at Bear Trap Meadow. The other choices describe SNOTEL sites in general, who maintains them, or what their data are used for, without giving any particular site.",
+  "fix": {
+   "passage": "• Snow hydrologist Julie Koeberle helps maintain automated snow measurement stations.\n• They are called SNOTEL sites.\n• There are around 90 stations throughout Wyoming.\n• One is at Bear Trap Meadow.\n• The data collected can help researchers make downstream water supply predictions."
+  }
+ },
+ {
+  "key": "rw2-27",
+  "answer": "C",
+  "skill": "rhetorical-synthesis",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The goal is to explain why nautical miles are used at sea. Choice C gives the reason: they match the latitude coordinates on nautical charts, which account for Earth's curvature, so distances are quick to calculate. Choice B explains why charts are useful but never mentions nautical miles, and D gets the facts backward about latitude and longitude.",
+  "fix": {
+   "passage": "While researching a topic, a student has taken the following notes:\n• The nautical mile (6,076 feet) is the measure of distance used in seafaring navigation.\n• A nautical mile directly correlates to one minute (1/60th of a degree) of latitude.\n• The curvature of Earth affects the accurate measurement of long distances when using flat maps.\n• Measuring distances with latitude and longitude coordinates takes into account Earth’s curvature.\n• Mariners use nautical charts marked with latitude and longitude to quickly calculate distances and positions."
+  }
+ },
+ {
+  "key": "m1-01",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each time x goes up by 1, g(x) drops by 3, so m = −3. Then g(1) = −3(1) + b = 24 gives b = 27, which is also the value you'd get by stepping back from x = 1 to x = 0. Choice C, 24, is g(1), not g(0).",
+  "fix": {
+   "prompt": "For the linear function g, the table shows four values of x and their corresponding values of g(x). The function can be written as g(x) = mx + b, where m and b are constants. What is the value of b?",
+   "table": {
+    "headers": [
+     "x",
+     "g(x)"
+    ],
+    "rows": [
+     [
+      "1",
+      "24"
+     ],
+     [
+      "2",
+      "21"
+     ],
+     [
+      "3",
+      "18"
+     ],
+     [
+      "4",
+      "15"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-02",
+  "answer": "C",
+  "skill": "area-volume",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A triangle's area is (1/2)(base)(height). In h(x) = (1/2)(x)(87), the base is x, so the remaining factor, 87, is the height. Choice D, 178, doubles the wrong number, and 89/2 or 1/89 don't appear in the formula at all.",
+  "fix": {
+   "prompt": "h(x) = (1/2)(x)(87)\nThe given function h represents the area, in square inches, of a triangle with a base of x inches and a fixed height. What is the height, in inches, of the triangle?",
+   "choices": {
+    "A": "1/89",
+    "B": "89/2",
+    "C": "87",
+    "D": "178"
+   }
+  }
+ },
+ {
+  "key": "m1-03",
+  "answer": "B",
+  "skill": "linear-inequalities",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Correct answers are worth 3 points in round 1 and 9 points in round 2, so the total score is 3f + 9s. \"At least 70\" means the total is greater than or equal to 70: 3f + 9s ≥ 70. Choice D swaps the point values and uses the wrong inequality direction."
+ },
+ {
+  "key": "m1-04",
+  "answer": "B",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "An isosceles triangle has at least two equal sides. Since AB = 48, knowing BC = 48 gives two equal sides immediately. AC = 24 doesn't match any other side, one angle of 70° isn't enough without another angle, and every triangle's angles sum to 180°."
+ },
+ {
+  "key": "m1-05",
+  "answer": "D",
+  "skill": "nonlinear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "f(14) = 8(3)^(−14/7) = 8(3)^(−2) = 8 · (1/9) = 8/9. A negative exponent makes a reciprocal, not a negative number, so −72 and −48 are traps from treating the exponent as a multiplier.",
+  "fix": {
+   "prompt": "The function f is defined by f(x) = 8(3)^(−x/7). What is the value of f(14)?",
+   "choices": {
+    "A": "−72",
+    "B": "−48",
+    "C": "1/576",
+    "D": "8/9"
+   }
+  }
+ },
+ {
+  "key": "m1-06",
+  "answer": "B",
+  "skill": "linear-equations-two-var",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "A 59% increase multiplies the advanced skaters by 1.59, giving 1.59a, and a 48% increase gives 1.48b for intermediate skaters. Their sum must equal the 2020 total, which is 51 increased by 53%: 51(1.53). Choice A attaches the percents to the wrong groups."
+ },
+ {
+  "key": "m1-07",
+  "answer": "A",
+  "skill": "inference-sample",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A margin of error gives a range around the estimate: 84% − 3.94% = 80.06% and 84% + 3.94% = 87.94%. Plausible values lie between these bounds. Choices B and D keep only one bound, and C describes values outside the interval."
+ },
+ {
+  "key": "m1-08",
+  "answer": "A",
+  "skill": "systems-linear",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Let b be bowls and v be vases: b + v = 10 and 4b + 2v = 36. Substituting b = 10 − v gives 40 − 4v + 2v = 36, so v = 2. Choice D, 8, is the number of bowls."
+ },
+ {
+  "key": "m1-09",
+  "answer": "D",
+  "skill": "equivalent-expressions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Group the terms: x^3 + x^2y + xy^8 + y^9 = x^2(x + y) + y^8(x + y) = (x + y)(x^2 + y^8). So x^2 + y^8 is a factor. Choice A just keeps the first and last terms, which doesn't factor the expression.",
+  "fix": {
+   "choices": {
+    "A": "x^3 + y^9",
+    "B": "x^3 + y^8",
+    "C": "x^2 + y^9",
+    "D": "x^2 + y^8"
+   }
+  }
+ },
+ {
+  "key": "m1-10",
+  "answer": "B",
+  "skill": "right-triangles-trig",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Angle T is 3(4π/11) radians. To convert to degrees, multiply by 180/π: 3 · (4π/11) · (180/π) = (4/11)(180)(3). Choice D forgets to cancel π, and A and C use 90 instead of 180.",
+  "type": "mcq",
+  "fix": {
+   "prompt": "The measure of angle S is 4π/11 radians. The measure of angle T is 3 times the measure of angle S. Which expression represents the measure, in degrees, of angle T?",
+   "choices": {
+    "A": "(4/11)(90)(3)",
+    "B": "(4/11)(180)(3)",
+    "C": "(4/(11π))(90)(3)",
+    "D": "(4π/11)(180)(3)"
+   }
+  }
+ },
+ {
+  "key": "m1-11",
+  "answer": [
+   "80"
+  ],
+  "skill": "percentages",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "From j = 0.60k and 0.15h = 0.20j, we get h = (0.20/0.15)j = (4/3)(0.60k) = 0.80k. So h is 80% of k. A quick check: if k = 100, then j = 60, 0.15h = 12, and h = 80."
+ },
+ {
+  "key": "m1-12",
+  "answer": "D",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "From the first equation, y = x + 47. Substitute: x + 47 = x^2 − 45x, so x^2 − 46x − 47 = 0, which factors as (x − 47)(x + 1) = 0. Then x = 47 gives y = 94 (and x = −1 gives y = 46). Choice A, 47, is an x-value, not a y-value.",
+  "fix": {
+   "prompt": "y − x = 47\ny = x^2 − 45x\nThe graphs of the equations in the given system intersect at the point (x, y) in the xy-plane. What is a possible value of y?"
+  }
+ },
+ {
+  "key": "m1-13",
+  "answer": "C",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Distance and time are proportional at a constant rate. Traveling 12 times as far (12x instead of x) takes 12 times as long, so the time is 12y seconds. Choice B divides instead of multiplying, which would be the time for x/12 inches.",
+  "fix": {
+   "choices": {
+    "A": "12/y",
+    "B": "y/12"
+   }
+  }
+ },
+ {
+  "key": "m1-14",
+  "answer": "C",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Increasing by 150% means the new amount is 100% + 150% = 250% of the old, a factor of 2.50. It happens once every 2 hours, so after t hours there are t/2 growth periods: P(t) = 7,000(2.50)^(t/2). Choice A uses 1.50, which is only a 50% increase.",
+  "fix": {
+   "choices": {
+    "A": "P(t) = 7,000(1.50)^(t/2)",
+    "B": "P(t) = 7,000(1.50)^(2t)",
+    "C": "P(t) = 7,000(2.50)^(t/2)",
+    "D": "P(t) = 7,000(2.50)^(2t)"
+   }
+  }
+ },
+ {
+  "key": "m1-15",
+  "answer": "B",
+  "skill": "linear-equations-two-var",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The point (r, 0) is on the line, so substitute x = r and y = 0: kr + 7(0) = 16, so kr = 16 and k = 16/r. Choice A uses the y-intercept, but at (0, t) the kx term vanishes, so that point only tells you t = 16/7.",
+  "fix": {
+   "choices": {
+    "A": "16/t",
+    "B": "16/r",
+    "C": "7/t",
+    "D": "7/r"
+   }
+  }
+ },
+ {
+  "key": "m1-16",
+  "answer": [
+   "-7"
+  ],
+  "skill": "linear-equations-one-var",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Collect x terms: nx + 3x = 4n − 3t, so (n + 3)x = 4n − 3t. No solution means the x coefficient is 0 but the right side isn't: n = −3 and −12 − 3t ≠ 0, so t ≠ −4. Then n + t = −3 + t can be anything except −3 + (−4) = −7."
+ },
+ {
+  "key": "m1-17",
+  "answer": "D",
+  "skill": "two-var-data",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "All choices share the slope 2.02, so compare the d-intercepts. The best-fit line crosses t = 0 at about d = 400, and only 406.8 is close. The other intercepts (−48.1, 148.1, 371.8) would put the line far below the data at t = 0."
+ },
+ {
+  "key": "m1-18",
+  "answer": [
+   "320"
+  ],
+  "skill": "area-volume",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "The volume ratio is 864π/32π = 27, so the scale factor for lengths is cbrt(27) = 3. For cylinder A, 32π = π(2^2)h gives h = 8, so k = 2(2^2) + 2(2)(8) = 40. Surface areas scale by 3^2 = 9, so n = 360 and n − k = 320.",
+  "fix": {
+   "prompt": "The table shows the volume of two similar solids, right circular cylinder A and right circular cylinder B. The radius of right circular cylinder A is 2 units. The surface area of right circular cylinder A is kπ square units, and the surface area of right circular cylinder B is nπ square units, where k and n are constants. What is the value of n − k? (The surface area of a right circular cylinder with radius r and height h is 2πr^2 + 2πrh.)",
+   "table": {
+    "headers": [
+     "Right circular cylinder",
+     "Volume (in cubic units)"
+    ],
+    "rows": [
+     [
+      "Right circular cylinder A",
+      "32π"
+     ],
+     [
+      "Right circular cylinder B",
+      "864π"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-19",
+  "answer": [
+   "1456"
+  ],
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The vertex is (10, 1600), so h(t) = a(t − 10)^2 + 1600. Using h(0) = 0: 100a + 1600 = 0, so a = −16. Then h(13) = −16(3)^2 + 1600 = −144 + 1600 = 1456."
+ },
+ {
+  "key": "m1-20",
+  "answer": [
+   "-717"
+  ],
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Subtract 6 to get f: f(16) = −13, f(19) = 5, f(22) = −13. Equal values at 16 and 22 put the vertex at x = 19, so f(x) = a(x − 19)^2 + 5, and −13 = 9a + 5 gives a = −2. The y-intercept is f(0) = −2(361) + 5 = −717; forgetting to subtract 6 would give −711.",
+  "fix": {
+   "prompt": "The table shows three values of x and their corresponding values of y, where y = f(x) + 6 and f is a quadratic function. What is the y-coordinate of the y-intercept of the graph of y = f(x) in the xy-plane?",
+   "table": {
+    "headers": [
+     "x",
+     "y"
+    ],
+    "rows": [
+     [
+      "16",
+      "−7"
+     ],
+     [
+      "19",
+      "11"
+     ],
+     [
+      "22",
+      "−7"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m1-21",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The account starts at 900 USD and gains 55 USD at the end of each of 6 weeks: 900 + 6(55) = 900 + 330 = 1,230. Choice B, 955, counts only one deposit.",
+  "fix": {
+   "choices": {
+    "D": "1,230"
+   }
+  },
+  "note": "Choice D is printed truncated as \"1,23\" on the page; restored to 1,230."
+ },
+ {
+  "key": "m1-22",
+  "answer": "C",
+  "skill": "lines-angles-triangles",
+  "difficulty": "medium",
+  "confidence": "medium",
+  "explanation": "The 51° angle is acute, above the top line and to the right of the transversal. The y° angle sits below the bottom line on the right side of the transversal, which is the obtuse angle, so y = 180 − 51 = 129. Then 2x + 7 = 129 gives x = 61. Choice A, 22, assumes y = 51, which would be the acute angle on the other side.",
+  "note": "Key says A (x = 22, i.e. y = 51). In the figure the y° arc is below the lower parallel line, between the rightward ray and the down-left part of the transversal — the obtuse angle, supplementary to 51° — so y = 129 and x = 61 (choice C). Check the figure."
+ },
+ {
+  "key": "m2-01",
+  "answer": "A",
+  "skill": "lines-angles-triangles",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Lines r and s are parallel, and x° and 21° are in the same position at each intersection (above the line, right of the transversal). Corresponding angles are equal, so x = 21. Choices C and D come from wrongly using complementary or supplementary relationships.",
+  "fix": {
+   "prompt": "Note: Figure not drawn to scale.\nIn the figure, line r is parallel to line s. What is the value of x?"
+  }
+ },
+ {
+  "key": "m2-02",
+  "answer": "A",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Set the expressions equal: (x − 6)(x + 5) = 11x − 66, so x^2 − x − 30 = 11x − 66 and x^2 − 12x + 36 = 0. That's (x − 6)^2 = 0, so x = 6 and y = 11(6) − 66 = 0. Choice B keeps x = 6 but takes y from the factor (x + 5) incorrectly."
+ },
+ {
+  "key": "m2-03",
+  "answer": "B",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Each extra liter of water comes with 31 more grams of salt, and 217 = 31 · 7, so x = 31y. Solving for y gives y = (1/31)x. Choice C, y = 31x, reverses the variables.",
+  "fix": {
+   "prompt": "There is a linear relationship between the amount of salt x, in grams, and the amount of water y, in liters, in a certain body of seawater. The table shows this relationship for three samples of this seawater.\nWhich equation represents this relationship?",
+   "table": {
+    "headers": [
+     "Amount of salt (grams)",
+     "Amount of water (liters)"
+    ],
+    "rows": [
+     [
+      "217",
+      "7"
+     ],
+     [
+      "248",
+      "8"
+     ],
+     [
+      "279",
+      "9"
+     ]
+    ]
+   },
+   "choices": {
+    "A": "y = (1/62)x",
+    "B": "y = (1/31)x"
+   }
+  }
+ },
+ {
+  "key": "m2-04",
+  "answer": [
+   "48"
+  ],
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "m(6) = 3(6) + 6 = 24 and p(6) = 6 − 6 = 0. So 2m(6) − p(6) = 2(24) − 0 = 48."
+ },
+ {
+  "key": "m2-05",
+  "answer": [
+   "91035"
+  ],
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Find a first: 9,528.75 = 900a(2.75)^2 = 6,806.25a, so a = 1.4. Then y = 900(1.4)(8.50)^2 = 1,260 · 72.25 = 91,035 pounds. Equivalently, multiply 9,528.75 by (8.50/2.75)^2.",
+  "fix": {
+   "prompt": "For a certain type of rope, the equation y = 900ax^2, where a is a constant, gives the estimated breaking strength y, in pounds, of a rope with a circumference of x inches. Based on this equation, if a rope of this type has a circumference of 2.75 inches, it has an estimated breaking strength of 9,528.75 pounds. What is the estimated breaking strength, in pounds, of a rope of this type that has a circumference of 8.50 inches?"
+  }
+ },
+ {
+  "key": "m2-06",
+  "answer": "D",
+  "skill": "linear-equations-two-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Kai used 4 yards per costume, so 4x is the fabric used and y is the fabric bought. The equation y − 4x = 5 says the amount bought minus the amount used is 5, so he bought 5 more yards than he used. Choice B would only be true if he made no costumes."
+ },
+ {
+  "key": "m2-07",
+  "answer": "C",
+  "skill": "linear-equations-one-var",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Since (k, 2k) is on the graph, f(k) = 2k: 7k − 165 = 2k. Then 5k = 165 and k = 33. Choice D, 165, skips dividing by 5."
+ },
+ {
+  "key": "m2-08",
+  "answer": "B",
+  "skill": "nonlinear-equations",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Subtract 31 from both sides: (x + k)^2 = 0. A square is 0 only when its base is 0, so x = −k is the only solution. Choice C is tempting because the equation is quadratic, but the repeated root counts as one distinct solution."
+ },
+ {
+  "key": "m2-09",
+  "answer": [
+   "736"
+  ],
+  "skill": "lines-angles-triangles",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "KL = LM and KN = MN make KLMN a kite, so diagonal LN is the perpendicular bisector of KM, with GK = GM = 1. In right triangle KGL, GL = sqrt(3^2 − 1^2) = sqrt(8); in right triangle KGN, GN = sqrt(27^2 − 1^2) = sqrt(728). So LN = sqrt(8) + sqrt(728), and p + w = 8 + 728 = 736.",
+  "fix": {
+   "prompt": "In quadrilateral KLMN shown, KL = 3, LM = 3, KN = 27, and MN = 27. Diagonals KM and LN (not shown) intersect at point G (not shown), where GK = 1 and GM = 1. If the length of diagonal LN is sqrt(p) + sqrt(w), where p and w are integers, what is the value of p + w?"
+  }
+ },
+ {
+  "key": "m2-10",
+  "answer": "B",
+  "skill": "inference-sample",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "When margins of error are calculated the same way, a larger sample gives a smaller margin. Group 3 has the smallest margin, 8%, so it had the largest sample. Group 4's 15% margin points to the smallest sample.",
+  "fix": {
+   "prompt": "Four different research groups each surveyed a random sample of students from a certain high school to estimate the percentage of students at the school who speak a second language. The table shows the resulting estimates and their associated margins of error.\nAssuming the margins of error were calculated in the same way, which group had the largest sample size?",
+   "table": {
+    "headers": [
+     "Group",
+     "Percentage of students who speak a second language",
+     "Margin of error"
+    ],
+    "rows": [
+     [
+      "1",
+      "41%",
+      "13%"
+     ],
+     [
+      "2",
+      "45%",
+      "11%"
+     ],
+     [
+      "3",
+      "45%",
+      "8%"
+     ],
+     [
+      "4",
+      "47%",
+      "15%"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "m2-11",
+  "answer": "A",
+  "skill": "linear-equations-one-var",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Expand and collect x terms: cx − 6c = −7x − 7k, so (c + 7)x = 6c − 7k. There's exactly one solution only when the x coefficient isn't zero, so c ≠ −7. The values in B, C, and D don't force the coefficient to be zero.",
+  "fix": {
+   "prompt": "c(x − 6) = −7(x + k)\nIn the given equation, c and k are constants. The equation has exactly one solution. Which of the following statements must be true?",
+   "choices": {
+    "B": "The value of c cannot be −7/6.",
+    "C": "The value of k cannot be 6/7."
+   }
+  }
+ },
+ {
+  "key": "m2-12",
+  "answer": [
+   "0.63",
+   ".63"
+  ],
+  "skill": "ratios-rates",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Average rate of change is change in speed over change in time. First 8 seconds: (11.0 − 0)/8.00 = 1.375 m/s per second. From 8 to 14 seconds: (23.0 − 11.0)/6.0 = 2 m/s per second. The difference is 2 − 1.375 = 0.625, which rounds to 0.63."
+ },
+ {
+  "key": "m2-13",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Let t = a^c. The points give t − b = 4 and a^(2c) − b = t^2 − b = 114. Subtracting, t^2 − t = 110, so (t − 11)(t + 10) = 0, and since a^c > 0, t = 11. Then b = 11 − 4 = 7. Choice C, 110, is t^2 − t, not b.",
+  "fix": {
+   "prompt": "The function f is defined by f(x) = a^x − b, where a and b are constants. In the xy-plane, the graph of y = f(x) passes through the points (c, 4) and (2c, 114), where c is a constant. Which of the following could be the value of b?"
+  }
+ },
+ {
+  "key": "m2-14",
+  "answer": "C",
+  "skill": "nonlinear-functions",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Complete the square: f(x) = 4(x^2 + 14x) + 197 = 4(x + 7)^2 − 196 + 197 = 4(x + 7)^2 + 1, so f's minimum is 1. g(x) = f(x + 6) just shifts the graph left 6 units, which doesn't change the minimum value. Choice A, −13, is the x-coordinate where g reaches its minimum.",
+  "fix": {
+   "prompt": "f(x) = 4x^2 + 56x + 197\nThe function g is defined by g(x) = f(x + 6). What is the minimum value of g(x)?"
+  }
+ },
+ {
+  "key": "m2-15",
+  "answer": "A",
+  "skill": "circles",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "The radius to the tangent point has slope (−8 − (−7))/(−7 − (−4)) = (−1)/(−3) = 1/3. A tangent line is perpendicular to that radius, so its slope is the negative reciprocal, −3. Choice C is the radius's slope, not the tangent's.",
+  "fix": {
+   "choices": {
+    "B": "−1/3",
+    "C": "1/3"
+   }
+  }
+ },
+ {
+  "key": "m2-16",
+  "answer": [
+   "-37/4",
+   "-9.25"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Move everything to one side and factor out (x − k): (x − k)[(x − k) − (k − 4a)] = 0. The solutions are x = k and x = 2k − 4a, which add to 3k − 4a. Setting 3k − 4a = 3k + 37 gives a = −37/4. Dividing both sides by (x − k) at the start would lose the solution x = k."
+ },
+ {
+  "key": "m2-17",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "The account starts at 900 dollars and gains 45 dollars at the end of each of 4 weeks: 900 + 4(45) = 900 + 180 = 1,080. Choice B, 945, includes only one deposit.",
+  "fix": {
+   "choices": {
+    "D": "1,080"
+   }
+  },
+  "note": "Choice D is printed truncated as \"1,08\" on the page; restored to 1,080."
+ },
+ {
+  "key": "m2-18",
+  "answer": "A",
+  "skill": "nonlinear-functions",
+  "difficulty": "hard",
+  "confidence": "high",
+  "explanation": "Let t = a^c. The points give t − b = 5 and t^2 − b = 137. Subtracting, t^2 − t = 132, so (t − 12)(t + 11) = 0 and t = 12 because a^c is positive. Then b = 12 − 5 = 7. Choice C, 132, is t^2 − t, not b.",
+  "fix": {
+   "prompt": "The function f is defined by f(x) = a^x − b, where a and b are constants. In the xy-plane, the graph of y = f(x) passes through the points (c, 5) and (2c, 137), where c is a constant. Which of the following could be the value of b?"
+  }
+ },
+ {
+  "key": "m2-19",
+  "answer": "D",
+  "skill": "percentages",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "A 438% increase adds 4.38k to the original k, so the new mass is k + 4.38k = 5.38k. Choice C, 4.38k, is only the amount of the increase, not the final mass."
+ },
+ {
+  "key": "m2-20",
+  "answer": "D",
+  "skill": "linear-functions",
+  "difficulty": "easy",
+  "confidence": "high",
+  "explanation": "Start with 900 dollars and add 55 dollars at the end of each of 4 weeks: 900 + 4(55) = 900 + 220 = 1,120. Choice B, 955, counts only the first deposit.",
+  "fix": {
+   "choices": {
+    "D": "1,120"
+   }
+  },
+  "note": "Choice D is printed truncated as \"1,12\" on the page; restored to 1,120."
+ },
+ {
+  "key": "m2-21",
+  "answer": "C",
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "Set the expressions equal: (x − 8)(x + 4) = 12x − 96, so x^2 − 4x − 32 = 12x − 96 and x^2 − 16x + 64 = 0. That's (x − 8)^2 = 0, so x = 8 and y = 12(8) − 96 = 0. Choice D keeps x = 8 but has the wrong y-value.",
+  "fix": {
+   "prompt": "y = (x − 8)(x + 4)\ny = 12x − 96\nWhich ordered pair (x, y) is the solution to the given system of equations?"
+  }
+ },
+ {
+  "key": "m2-22",
+  "answer": [
+   "-13"
+  ],
+  "skill": "nonlinear-equations",
+  "difficulty": "medium",
+  "confidence": "high",
+  "explanation": "No real solutions means the discriminant is negative: b^2 − 4(−1)(−49) = b^2 − 196 < 0. So b^2 < 196, which means −14 < b < 14. The least integer in that range is −13; −14 would make the discriminant 0 and give one solution.",
+  "fix": {
+   "prompt": "−x^2 + bx − 49 = 0\nIn the given equation, b is an integer. The equation has no real solutions. What is the least possible value of b?"
+  }
+ }
+]

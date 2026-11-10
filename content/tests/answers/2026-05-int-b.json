@@ -1,0 +1,1000 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Frye says that if the fictional element disappeared, writing would become \"direct address.\" So \"projection\" here means putting forward or presenting a fictional self and audience, which is \"presentation.\" \"Prediction\" and \"estimation\" use the forecasting sense of projection, which doesn't fit a discussion of how a writer appears in a work."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The foreperson converts symbols that outsiders can't understand into instructions anyone can follow, which is exactly what translation is: changing something from one \"language\" into another. \"Verification\" would mean checking accuracy, and \"documentation\" would mean recording information, but the text describes conversion, not checking or recording."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The statue shows a woman in an assertive stance as a powerful athlete, which goes against the idea that women had only passive roles. An image that contradicts an idea \"challenges\" it. \"Reveals\" would mean the statue shows that women were passive, which is the opposite of what the evidence suggests."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "People with no musical training could still recognize harmony and follow a complex beat, which suggests the ability comes naturally rather than from training. \"Instinctive for\" captures this inborn quality. \"Unique to\" fails because the text stresses that most people, not a special group, share the ability."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence claims that Brown blends research, activism, and many media, and the last sentence calls Strike Gulf an example of her multidisciplinary approach. The underlined list of core samples, well data, archives, and video gives the concrete details that back up both claims. Nothing in the text says this project departs from her usual approach, so A is wrong.",
+    "fix": {
+      "passage": "Imani Jacqueline Brown is an artist who blends scientific research, political activism, and various media in her work. In her exhibition Strike Gulf, she interrogated the impact of the oil and gas industry on southern Louisiana (where she grew up), <u>incorporating core samples from deep seabeds off the Louisiana coast, oil well data, archival information about oil boycotts, and video she took in New Orleans.</u> Strike Gulf thus stands as an example of Brown’s multidisciplinary approach and use of diverse sources."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes the unusual June weather in Eagle County: steady breezes, clouds that build at noon and dissolve before sunset, and bright evening light. Its focus is on the place and its conditions, so its purpose is to portray a setting. No person is introduced and no difficulty or conflict is presented, which rules out the other choices."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "King Henry admits his temper has been \"too cold and temperate,\" which let the noblemen \"tread upon\" his patience and cost him their respect. He then vows to \"be myself, / Mighty and to be fear'd,\" showing he will act on his truer, more forceful nature. A is wrong because he plans to abandon his calm manner, not keep it."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In every year shown, the imported bar (about 10,000, 13,000, and 15,500 tons) is far taller than the locally grown or exported bars. That supports the idea that the tea Azerbaijanis drink is mostly imported. B fails because in 2012 exports (about 1,800 tons) were well below local production (about 8,000 tons), and C fails because only a small share of local tea was exported."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The experts think people's willingness to walk may have changed in ten years, and the text notes that willingness depends on how safe the streets feel. If speed-limit enforcement in the neighborhood has risen sharply, the streets likely feel safer now, so the old survey may no longer reflect how far people would walk. The other choices (cyclists, satisfaction with stops, rainy days) don't connect to a change in walking willingness since the survey."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis is that earthworm Ag-NP levels could stand in for (serve as a proxy for) levels in mice. A proxy only works if the two measures move together, so finding no reliable correlation between them would undercut the hypothesis. Choice A actually supports it, since a fixed ratio would let researchers predict mouse levels from earthworm levels."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Flatland is a world of two-dimensional figures confined to a plane. Choice C compares the country to a sheet of paper on which shapes move \"on or in the surface\" but can't rise above or sink below it, which illustrates exactly that. The other quotations describe laws, social rules, or side lengths but say nothing about the world being flat."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Transplanting coral is hard to do at scale because each piece must be grown and moved by hand. The new coating is simple to apply and made from cheap, abundant materials, so it should be usable over much larger areas. B contradicts the text's point that the components are inexpensive."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Methanogens live in oxygen-poor environments, and the text says their domain may have appeared about 3.5 billion years ago. If oxygen stayed very low until roughly 2.4 billion years ago, early Earth would have been the kind of environment they thrive in. Choice A would actually be a disadvantage, since methanogens use hydrogen."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Insect feeding lowers photosynthesis by closing the stomata that let carbon dioxide in. Plants that emitted the deterring compound lost less photosynthesis, and since they differed in no other way, the likely reason is that their stomata stayed open more. D contradicts the statement that the plants showed no other differences."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Regions with large human populations\" is the subject and \"were unlikely\" is its verb, so nothing should separate them. Adding a comma (C) or a \"which\" clause (A, D) would break the subject from its verb or leave the sentence without a main verb."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"does.\" The new sentence's subject, \"Impedance matching,\" is followed by a nonessential phrase that renames it (\"the process by which…\"), which must be set off with commas; the closing comma comes before \"recruits.\" D adds \"is,\" which leaves \"recruits\" without a subject, and C joins two sentences with only a comma."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"The widespread use,\" and the sentence still needs a main verb. \"Led\" is a finite past-tense verb that completes the sentence. \"Having led,\" \"leading,\" and \"which led\" would all leave the sentence without a main verb."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In an interview for the book Latina Authors and Their Muses\" is an introductory phrase, so a comma should follow it before the main clause \"the fantasy author Dora Machado revealed….\" A period (B) or semicolon (C) would leave the introductory phrase as a fragment, and \"and\" (A) has nothing to join it to."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The event happened at a specific past time, \"In January 2021,\" so the simple past \"concluded\" is correct. Present forms (A, C) and the present perfect (D) don't fit an action finished at a specific point in the past."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"this one-ton machine\"; the long phrase between the dashes is just extra description. A singular past-tense verb is needed, so \"was\" is correct. \"Were\" and \"are\" are plural, and \"being\" can't serve as the main verb."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At first visitors scoffed at the paintings, but they were soon praised as the start of an artistic revolution. \"Despite their initial dismissive reception\" captures this contrast between early rejection and later praise. D wrongly suggests the recognition was a reaction to the rejection."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the stages of a bullfrog's growth in order (first, next, then), and the shrinking tail is the last step before adulthood. \"Finally\" marks this last stage. \"First of all\" would wrongly signal the start of the sequence."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence describes unusual past pets like silkworms, while the blank leads into the fact that recent pets have been cats or dogs. \"That said, recent US presidents have stuck to more conventional choices\" sets up this contrast. The other choices change the topic to pet ownership in general or to Adams's legacy instead of leading into the cats-and-dogs point."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence explains why daytime migration is safe for these amphibians: during the day, with the sun up, their bright colors warn predators that see well. \"At that time\" refers back to the daytime just mentioned. It's not a contrast (B), a restatement (C), or an example (D)."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence says spectators had less than two minutes to watch totality, so the blank should note that the event was short. \"The phenomenon was brief, though\" leads into that detail. A suggests they saw more, and D's claim about how common eclipses are doesn't connect to the following sentence."
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when the butterflies are most active, and D states they are most active during the day. The other choices describe their color, diet, or category, which don't address when they are active.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Dotted blue butterflies are light blue with black spots.\n• They are most active during the day.\n• They eat nectar from flowers."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both juices have pH values below 7, so both are acidic; A states this shared trait. B mentions only cranberry juice, and C gives the wrong pH for grapefruit juice.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Cranberry juice has a pH value of approximately 3.4.\n• Grapefruit juice has a pH value of approximately 4.0.\n• Substances with pH values below 7 are acidic."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Levenson recasts the conflict as \"a contest of novelties\" rather than dynamism versus stagnation, so he must argue that middle-class culture was itself changing. \"Evolving\" expresses that. \"Entrenched\" would mean fixed and resistant to change, which is the usual view he is arguing against."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most uranium studies looked at oceans, so there was little known about uranium in lakes. Zhao et al. aimed to fill that gap, a relative \"dearth\" (scarcity) of knowledge. \"Aggregation\" means a collection, the opposite of what the text describes, and \"obsolescence\" would mean the knowledge was outdated, not lacking."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "At Tyson, rarity strongly predicts clumping, but \"but\" signals that Mo Singto is different: there, aggregation and abundance are nearly unrelated. \"Independent\" means not affected by each other. This fits the explanation that animals spread rare species' seeds widely, so rarity no longer leads to clumping."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The large study found that zygomorphic flowers really are visited by fewer kinds of pollinators, which backs up earlier informal observations. \"Substantiating\" means supporting with evidence. \"Supplanting\" would mean replacing the observations, but the findings agree with them."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says developments at earlier Mirador sites were a precondition for the sophistication of later cities like Palenque. So Palenque gained from those achievements, making it a \"beneficiary.\" \"Archetype\" would make Palenque the original model, reversing the order of influence."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text notes that consumers view exact prices positively, asks why such prices are still rare, and then gives a reason (cognitive friction). Its purpose is to explain that puzzle. B is wrong because the burden described falls on consumers, not merchants, and D describes only a supporting detail."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined portion mentions earlier studies suggesting that petal length signals nectar volume, a link that could guide hummingbirds' choices. Maglianesi's team then found no such link, so those earlier findings weren't replicated. A is wrong because the underlined claim isn't discussed later as a hypothesis lacking support, and C invents an explanation about study sites.",
+    "fix": {
+      "passage": "Visiting flowers that produce high volumes of nectar allows hummingbirds, including scaly-breasted hummingbirds, to maximize their foraging efficiency. But nectar can’t be seen from outside the flower, and while <u>some studies have suggested that petal length may indicate nectar volume</u>, María A. Maglianesi and team found no such association among hummingbird-visited plants at Los Cusingos Bird Sanctuary and other sites in Costa Rica. The researchers hypothesize that by driving hummingbirds to visit more plants in search of high reward flowers, plants’ lack of reliable signaling may increase chances of pollination."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first underlined portion describes older formations that point to a steady, rain-fed water supply, and the second describes younger ones that point to an intermittent supply. Together they support the opening claim of a long-term shift away from stable, high humidity. B reverses the trend (variation increased), and D claims rainfall increased, which the text doesn't support.",
+    "fix": {
+      "passage": "A trend away from stable, relatively high humidity in the Middle East over the past 8 million years can be inferred from the composition of cave formations dating to different periods. Cave formations from about 7 million years ago mainly consist of <u>transparent columnar calcite</u>, indicative of an underground water system regularly replenished by rainfall. Cave formations younger than approximately 1 million years, however, mainly consist of <u>branching, opaque (and sometimes colorful) material, often with more frequent growth interruptions</u>, indicating an intermittent water supply."
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Fl has acted like a noble gas in one experiment and a volatile metal in another, and it turned out to be more reactive than radon but less reactive than mercury. The main idea is that Fl doesn't fit neatly into existing categories. D contradicts the text, which compares Fl's reactivity with mercury and radon rather than saying it doesn't react."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Marshall saw the law as a way to start change, and Brown v. Board overturned \"separate but equal\" and \"revolutionized\" how courts viewed civil rights. That shows courts could be used to bring about major social change. A goes too far by calling legal action the \"most efficient\" way, and D describes the older tradition Marshall broke from."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researcher needs a lake whose ice duration went up. Lake Baikal rose from about 98 days in 1980–81 to about 110 days in 2005–06, so it fits. C fails because Kalmarinjärvi dropped from about 200 to about 150 days, and A and B describe a single winter, which can't show an increase."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must show an international route carrying more passengers than a busy domestic one. In 2018, Kuala Lumpur–Singapore (international) carried 4,490,463 passengers, more than Mexico City–Guadalajara (domestic) with 3,170,177. A compares one route with itself, C compares distances, and D shows a domestic route beating an international one.",
+    "fix": {
+      "passage": "A study of commercial airline routes that carried the greatest number of passengers in 2017 and 2018 shows that, in general, domestic routes (routes within a single country) carried many more passengers than international routes. However, a few international routes were so popular that they carried more travelers than some of the most highly traveled domestic routes, as can be seen when comparing the ______",
+      "table": {
+        "caption": "Highly Traveled Commercial Airline Routes in 2017–2018",
+        "headers": [
+          "location 1",
+          "location 2",
+          "distance of route (kilometers)",
+          "2018 passengers",
+          "2017 passengers",
+          "Domestic or international"
+        ],
+        "rows": [
+          [
+            "Mexico City",
+            "Guadalajara",
+            "466",
+            "3,170,177",
+            "2,996,806",
+            "domestic"
+          ],
+          [
+            "Hong Kong",
+            "Seoul-Incheon",
+            "2,080",
+            "3,081,942",
+            "3,198,132",
+            "international"
+          ],
+          [
+            "Kuala Lumpur",
+            "Singapore",
+            "296",
+            "4,490,463",
+            "4,108,824",
+            "international"
+          ],
+          [
+            "Hanoi",
+            "Ho Chi Minh City",
+            "1,171",
+            "6,867,114",
+            "6,769,823",
+            "domestic"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Schoonmaker's goal was to center scenes on the actors' performances. A viewer who was watching Faith so closely that they never noticed the changing sundae shows the performance held attention despite the error. D shows the opposite: the viewer noticed the error and found it distracting."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that bonobos combine calls in specific orders and that the order adds meaning. If a single whistle organizes groups but a peep followed by a whistle occurs in tense social situations, then combining the calls changes their meaning. D shows the opposite (the combination means the same as the single calls), and A involves only one call."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The genus's absence from eastern and western Coahuila has been blamed on poor habitat, but the text adds that much of the area is hard to reach. That suggests researchers may simply not have searched the region thoroughly. D just repeats the habitat explanation that the \"but\" clause calls into question."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Transplanting coral pieces works but is hard to scale, while the new coating is easy to apply, cheap, and lasts over six months without upkeep. So it should be usable much more widely than the Los Corchos method. D isn't supported, since the text gives no reason to expect a closer signal match in natural conditions."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"Such innovations,\" so the plural verb \"continue\" is needed. \"Continues\" and \"has continued\" are singular, and \"to continue\" can't serve as the main verb."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Because of its malleability\" is an interrupting phrase that opens with a comma after \"that,\" so it must close with a matching comma before \"could.\" B and C use a dash to close a phrase opened by a comma, and A leaves the phrase unclosed."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the gerund phrase \"Having proportionally large populations,\" which counts as singular even though it contains the plural \"populations.\" The singular present-tense \"is\" fits a general statement about capitals. \"Are,\" \"were,\" and \"have been\" are plural."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Each,\" which is singular; \"of these scripts\" and the \"which\" clause are just modifiers. So the singular verb \"deploys\" is correct, while \"deploy\" and \"are deploying\" are plural and \"deploying\" isn't a complete verb."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends with \"manufactured goods.\" The next sentence's subject is the noun clause \"That Bermuda relies on manufactured goods…,\" and its verb is \"places.\" Without the period (A–C), \"that\" would wrongly attach the clause to \"goods,\" leaving \"places\" with no clear subject."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence after the colon says most NPG portraits show people other than the painters, so self-portraits like Strachey's are unusual in the collection. \"Of course, such portraits are anomalies\" introduces that point. C claims a bias toward self-portraits, which the following clause contradicts."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Simpson uses a fixed population cutoff, while Theys proposes letting countries define their own status instead of using quantitative standards. Her approach pushes back against his method, so \"Countering this method of categorization\" fits. D says the opposite, and C invents a dispute about Suriname's data."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence after the colon describes owners investing heavily in decoration and seeing their trucks as art. \"Indeed, owners prize their vehicles as canvases for creative expression\" reinforces the idea that the decorations reflect drivers' values and humor. C wrongly makes the motive financial."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Humans gained nothing from teamwork, but the ants solved the puzzle precisely by working together. \"Conversely\" signals this contrast. \"Likewise\" and \"Additionally\" would suggest the ants behaved like the humans."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to stress where the two newspapers were similar. D points out that both were based in cities in the same state, New York City and Syracuse. A wrongly places the Syracuse Gazette in New York City in 1960–61, and C focuses on dates rather than location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Throughout the nineteenth and twentieth centuries, populations of Black Americans increased in many cities throughout the state of New York.\n• During this time, many Black newspapers were founded.\n• The newspapers were largely by and for the Black communities in which they were based.\n• The New York Citizen-Call ran from 1960 to 1961 in New York City, New York.\n• The Syracuse Gazette ran from 1976 to 1980 in Syracuse, New York."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Introducing Mexía to a new audience calls for saying who she was and what she is known for. B identifies her as a botanist and gives her major achievement, collecting over 150,000 samples across the Americas. A and C focus on specific specimens, and D adds a claim about her work being ignored that isn't in the notes.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ynés Mexía was a Mexican American botanist.\n• Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.\n• She collected a sample of Porophyllum ruderale in Minas Gerais, Brazil, in 1930.\n• She collected a sample of Brickellia diffusa in Jalisco, Mexico, in 1926.\n• Porophyllum ruderale and Brickellia diffusa are part of the Asteraceae family.\n• These specimens can now be viewed online at the C.V. Starr Virtual Herbarium."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "4"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 7 into the second equation: 7 + 3y = 19. Then 3y = 12, so y = 4."
+  },
+  {
+    "key": "m1-02",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Plug in x = 100: f(100) = 4(100) + 900 = 400 + 900 = 1,300. Choice B (400) is only the cost that depends on the units and leaves out the fixed 900."
+  },
+  {
+    "key": "m1-03",
+    "answer": [
+      "114"
+    ],
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "20% of 570 is 0.20 × 570 = 114, so 114 buttons are red."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations: (−9x + y) + (9x + y) = 40, so 2y = 40 and y = 20. Substituting gives 9x + 20 = 20, so x = 0, and the lines meet at (0, 20)."
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The area of a square is side^2, so 47^2 = 2,209 square inches. Choice B (188) is the perimeter, 4 × 47."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The count starts at 600 and is multiplied by 0.5 (halved) every 13 millimeters. After x millimeters there have been x/13 halvings, so I = 600(0.5)^(x/13). Choice B would halve the count every single millimeter.",
+    "fix": {
+      "choices": {
+        "A": "I = 600(0.5)^(x/13)",
+        "B": "I = 600(0.5)^x",
+        "C": "I = 600(2)^(x/13)",
+        "D": "I = 600(13)^(x/2)"
+      }
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A linear function in the form f(x) = mx + b has slope m. Here f(x) = (6/7)x + 18/7, so the slope is 6/7. Choice C (18/7) is the y-intercept, not the slope.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = (6/7)x + 18/7. What is the slope of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "1/3",
+        "B": "6/7",
+        "C": "18/7",
+        "D": "3"
+      }
+    }
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "1/4",
+      ".25"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 16x + 25 = 29. Subtract 25 to get 16x = 4, so x = 4/16 = 1/4, or 0.25."
+  },
+  {
+    "key": "m1-09",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line of best fit goes from about (0, 0) to about (500, 350), so its slope is about 350/500 = 0.7 germinated seeds per seed planted. That means about 70 more seeds germinate for every 100 more seeds planted. Choices A and B talk about days, but x is the number of seeds planted, not time."
+  },
+  {
+    "key": "m1-10",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: 7x^4 + x^4 = 8x^4 and x^2 + 3x^2 = 4x^2, giving 8x^4 + 4x^2. Adding terms never changes the exponents, so choices with x^8 are wrong."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number 9 more than x is x + 9, so x(x + 9) = 52, or x^2 + 9x − 52 = 0. This factors as (x + 13)(x − 4) = 0, and since x is positive, x = 4. Check: 4 × 13 = 52."
+  },
+  {
+    "key": "m1-12",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by y: (x + 12)/y = z + 6. Then subtract 6: z = (x + 12)/y − 6. Choice C adds 6 instead of subtracting it.",
+    "fix": {
+      "choices": {
+        "A": "z = (x + 6)/y",
+        "B": "z = x/y + 6",
+        "C": "z = (x + 12)/y + 6",
+        "D": "z = (x + 12)/y − 6"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: g(0) = (1/7)(3)^0 = (1/7)(1) = 1/7. So the y-intercept is (0, 1/7). Choice C forgets that 3^0 = 1, not 3.",
+    "fix": {
+      "prompt": "g(x) = (1/7)(3)^x\nIf the given function g is graphed in the xy-plane, where y = g(x), what is the y-intercept of the graph?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(0, 1/7)",
+        "C": "(0, 3/7)",
+        "D": "(0, 3)"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide by 4: |x − 4| = 6. So x − 4 = 6 or x − 4 = −6, giving x = 10 or x = −2. The sum of the solutions is 10 + (−2) = 8.",
+    "fix": {
+      "prompt": "4|x − 4| = 24\nWhat is the sum of the solutions to the given equation?"
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle M has center (2, 6) and radius sqrt(9) = 3. Circle P keeps the center and has radius 6, so r^2 = 36: (x − 2)^2 + (y − 6)^2 = 36. Choice A doubles r^2 instead of r."
+  },
+  {
+    "key": "m1-16",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 3x + 5y is the total 34 cups, each term is cups of sauce: each large jar holds 5 cups and there are y large jars. So 5y is the total number of cups in the large jars. Choice A describes y alone, not 5y."
+  },
+  {
+    "key": "m1-17",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "First j(9) = (16·9 + 8)/(5p) = 152/(5p). Then k(9) = j(9)·p/(9 + 1) = (152/(5p))·p/10 = 152/50 = 76/25. The p cancels, so its value doesn't matter.",
+    "fix": {
+      "prompt": "The function j is defined by j(x) = (16x + 8)/(5p), and the function k is defined by k(x) = (j(x)·p)/(x + 1), where p is a positive constant. What is the value of k(9)?",
+      "choices": {
+        "A": "142/5",
+        "B": "152/15",
+        "C": "16/5",
+        "D": "76/25"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "3/4",
+      ".75"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line j has slope −4/5. Line k, 16x + ry = 15, has slope −16/r, and parallel lines have equal slopes, so −16/r = −4/5 and r = 20. At (0, b): 16(0) + 20b = 15, so b = 15/20 = 3/4."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In right triangle RST, tan R = TS/RT = 120/209, so take TS = 120 and RT = 209; then RS = sqrt(120^2 + 209^2) = sqrt(58,081) = 241. Because XY is parallel to TS, angle X equals angle S (corresponding angles along line RS). So sin X = sin S = RT/RS = 209/241. Choice B (120/241) is sin R instead.",
+    "fix": {
+      "prompt": "Note: Figure not drawn to scale.\nIn triangles RST and XYZ shown, XY is parallel to TS and tan R = 120/209. What is the value of sin X in triangle XYZ?",
+      "choices": {
+        "A": "120/329",
+        "B": "120/241",
+        "C": "209/241",
+        "D": "209/120"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "18/17",
+      "1.058",
+      "1.059"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let t = x/5. The equation becomes t + 18 = 18t, so 18 = 17t and t = 18/17. You don't need to solve for x; the question asks for x/5 itself.",
+    "fix": {
+      "prompt": "If x/5 + 18 = 18(x/5), what is the value of x/5?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand: (x^2 − 7)(x^2 − 4) = x^4 − 4x^2 − 7x^2 + 28 = x^4 − 11x^2 + 28. So b = −11. Choice C (−3) comes from subtracting 4 from 7 instead of adding the two terms."
+  },
+  {
+    "key": "m1-22",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "BC corresponds to YZ, and each side of ABC is n times its partner, so BC = 71n. Similar triangles have equal corresponding angles, so angle Z = angle C = 58°, which rules out A and B. C divides by n instead of multiplying.",
+    "fix": {
+      "choices": {
+        "A": "The measure of angle Z is 58/n degrees.",
+        "B": "The measure of angle Z is 58n degrees.",
+        "C": "BC = 71/n",
+        "D": "BC = 71n"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": [
+      "14"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product is zero when one factor is zero: x + 4 = 0 gives x = −4, and x − 14 = 0 gives x = 14. The positive solution is 14."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the point (x, y), x is the molecular weight and y is the boiling point. So (155.21, 196.74) means an alkane with molecular weight 155.21 g/mol has an estimated boiling point of 196.74 °C. A swaps the two values, and the graph keeps rising, so the point is neither a minimum nor a maximum."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Use point-slope form: y − (−9) = (1/8)(x − 40), so y + 9 = x/8 − 5 and y = x/8 − 14. Check: 40/8 − 14 = −9. Choice C uses −9 as the y-intercept, but −9 is the y-value at x = 40, not at x = 0.",
+    "fix": {
+      "prompt": "Line t in the xy-plane has a slope of 1/8 and passes through the point (40, −9). Which equation defines line t?",
+      "choices": {
+        "A": "y = −14x + 1/8",
+        "B": "y = x/8 − 14",
+        "C": "y = x/8 − 9",
+        "D": "y = 40x − 9"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": [
+      "594",
+      "792",
+      "1188"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Matching angles make the triangles similar, so QRS is ABC scaled by some factor k. The perimeter of ABC is 44 + 66 + 88 = 198. RS = 264 could match any side: 264/88 = 3, 264/66 = 4, or 264/44 = 6, giving perimeters 594, 792, or 1,188. Any one of these is correct."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From g(a) = 18: 2a + 8 = 18, so a = 5. From g(4) = b: b = 2(4) + 8 = 16. So a + b = 5 + 16 = 21."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Volume = base area × height, so the base area is 324/9 = 36. The base is a square, so each edge is sqrt(36) = 6. Choice D (36) is the base area, not the edge."
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Combine terms: (15p − 3)x = 60. This has no solution only when the coefficient of x is 0 (then 0 = 60 is false), so 15p − 3 = 0 and p = 1/5. Any other p would give exactly one solution.",
+    "fix": {
+      "choices": {
+        "A": "0",
+        "B": "1/5",
+        "C": "4/3",
+        "D": "4"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": [
+      "-6"
+    ],
+    "skill": "linear-inequalities",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Add 12: ax ≤ 48. The answer x ≥ −8 has the inequality sign flipped, so a must be negative, giving x ≥ 48/a. Setting 48/a = −8 gives a = −6, the only value that works (so it is also the greatest)."
+  },
+  {
+    "key": "m2-09",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set the equations equal: 4x^2 + 47 = px + 43, so 4x^2 − px + 4 = 0. Exactly one intersection means the discriminant is 0: p^2 − 4(4)(4) = 0, so p = 8 (p is positive). Then 4x^2 − 8x + 4 = 4(x − 1)^2 = 0, so x = 1."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For each x, y must be greater than −4x − 11 and less than −6x − 18. At x = −5: 9 < y < 12; at x = −6: 13 < y < 18; at x = −8: 21 < y < 30. Table C (10, 17, 28) fits all three, while D fails because y = 12 is not less than 12.",
+    "fix": {
+      "choices": {
+        "A": "x: −5, −6, −8; y: 7, 23, −6",
+        "B": "x: −5, −6, −8; y: 8, 16, 28",
+        "C": "x: −5, −6, −8; y: 10, 17, 28",
+        "D": "x: −5, −6, −8; y: 12, 16, −6"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each time n goes up by 1, f is multiplied by 0.26, so f(n) is 26% of f(n − 1). That is 100% − 26% = 74% less, so p = 74. Choice D (26) gives what remains, not the decrease."
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A larger random sample gives a more precise estimate, so the margin of error gets smaller. Doubling the sample size means the new margin of error is less than 3.7%. Choice B wrongly assumes a bigger sample doubles the margin of error."
+  },
+  {
+    "key": "m2-13",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line passes through (0, −3) and (4, 0), so its equation is x/4 − y/3 = 1. Multiplying by 48 gives 12x − 16y = 48, so a = 12 > 0 and b = −16 < 0. You can also check signs: the x-intercept 48/a = 4 is positive, so a > 0, and the y-intercept 48/b = −3 is negative, so b < 0."
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "23"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "No real solution means the discriminant is negative: b^2 − 4(−3)(−48) < 0, so b^2 − 576 < 0 and b^2 < 576. That means b < 24, so the largest positive integer is 23. b = 24 would give a discriminant of 0 and one real solution."
+  },
+  {
+    "key": "m2-15",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cheese gives 1 microgram per 3.0 ounces, or 1/3.0 ≈ 0.33 microgram per ounce, and tuna gives 1/1.2 ≈ 0.83 microgram per ounce. So x ounces of cheese and y ounces of tuna give 0.33x + 0.83y = 1.8. Choice A multiplies by the serving sizes instead of dividing, and C swaps the rates."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The denominator factors as 2x^2 − 11x + 15 = (x − 3)(2x − 5). Combining the right side gives (p(2x − 5) − (x − 3))/((x − 3)(2x − 5)), whose numerator is (2p − 1)x − 5p + 3. Matching constant terms: −5p + 3 = −42, so p = 9 (and then k = 2(9) − 1 = 17). Choice D (17) is the value of k, not p.",
+    "fix": {
+      "prompt": "The expression (kx − 42)/(2x^2 − 11x + 15) is equivalent to p/(x − 3) − 1/(2x − 5), where k and p are constants. What is the value of p?",
+      "choices": {
+        "A": "−41",
+        "B": "39/5",
+        "C": "9",
+        "D": "17"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out data are from the mean. In D, 30 of the 40 nests have exactly 9 eggs and the rest are only one egg away, so the data are the most tightly clustered. A and B spread the counts evenly or toward the ends, which gives larger standard deviations.",
+    "fix": {
+      "choices": {
+        "A": "Number of eggs 7, 8, 9, 10, 11 with frequencies 9, 8, 6, 8, 9",
+        "B": "Number of eggs 7, 8, 9, 10, 11 with frequencies 8, 8, 8, 8, 8",
+        "C": "Number of eggs 7, 8, 9, 10, 11 with frequencies 2, 9, 18, 9, 2",
+        "D": "Number of eggs 7, 8, 9, 10, 11 with frequencies 0, 5, 30, 5, 0"
+      }
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Left side: sqrt((4y)^3) = (4y)^(3/2) = 4^(3/2)·y^(3/2) = 8y^(3/2). Right side: 8(root[9](y))^k = 8y^(k/9). Setting the exponents equal, k/9 = 3/2, so k = 27/2.",
+    "fix": {
+      "prompt": "sqrt((4y)^3) = 8(root[9](y))^k\nIn the given equation, y > 0, and k is a constant. What is the value of k?",
+      "choices": {
+        "A": "2",
+        "B": "9/2",
+        "C": "27/2",
+        "D": "27"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "One square meter is 3.28^2 ≈ 10.76 square feet, so 140 square feet ≈ 140/10.76 ≈ 13.01 square meters. That is per hour, so divide by 60: 13.01/60 ≈ 0.22 square meters per minute. Choice D forgets to convert hours to minutes, and B divides by 3.28 only once."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "78"
+    ],
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let each species start at n. The prey grew by 2400%, so it ends at n + 24n = 25n; the predators grew by 450%, so they end at n + 4.5n = 5.5n. The predators are (25n − 5.5n)/25n = 19.5/25 = 0.78, or 78%, less than the prey. So p = 78."
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "9"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor: 7x^2 − 55x − 72 = (7x + 8)(x − 9). The solutions are x = −8/7 and x = 9, so the positive solution is 9. Check: 7(81) − 55(9) − 72 = 567 − 495 − 72 = 0."
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With vertex (1, 9), f(x) = a(x − 1)^2 + 9. Using (2, 37): a + 9 = 37, so a = 28 (and f(−1) = 4(28) + 9 = 121 checks). Then f(−2) = 28(9) + 9 = 261 and f(0) = 28 + 9 = 37, so f(−2) − f(0) = 224. Choice D (261) is just f(−2)."
+  }
+]

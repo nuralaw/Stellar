@@ -1,0 +1,1096 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "As a plane takes off, it \"gathers speed,\" meaning it steadily picks up more and more speed, so \"gain\" fits. \"Force\" might seem related to engines pushing the plane, but the word describes speed increasing, not something being pushed."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The next sentence describes reviewers praising the book and the book winning an award, which is how people reacted to it. So the \"response to\" the book was very positive. \"Inspiration for\" would be about what led to the book, which the text never discusses."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the colon, the text explains what led to the study: Cordero noticed in thermal images that wild mushrooms looked colder than their surroundings, which raised questions. The study was therefore \"prompted by\" that observation. \"Acknowledged in\" would only mean the study mentioned the observation, missing the cause-and-effect link."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Pale hearts were once linked to icefishes' polar habitats, but tropical species turn out to have pale hearts too. That suggests myoglobin deficiency may occur regardless of habitat, which is what \"irrespective of\" means. \"Mediated by\" and \"predictive of\" would keep the tie to habitat that the tropical finding calls into question."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence points out a specific feature of Allan's study: its small average sample of about 18 fish. The following sentences then explain why such a small sample is a problem, since it can lead to biased analysis and exaggerated effects. D is wrong because the study's conclusion appears in the first sentence, not the underlined one.",
+    "fix": {
+      "passage": "In 2013 Bridie J. M. Allan and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Pomacentrus amboinensis, a species of fish. <u>However, Allan and colleagues' study relied on a mean sample size of only about 18 fish.</u> In a 2022 review of various scientists' conclusions about the impacts of ocean acidification on fish behavior, Josefin Sundin and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. Such analysis, in turn, can contribute to reports of exaggerated effects."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined portion first grants that Shurin's broad range of stories \"may make it seem more comprehensive,\" a reasonable impression. Then, with \"but,\" it argues that Mirrorshades's carefully considered focus makes it the more authoritative anthology. So it presents a sensible view and disputes it for a stated reason. A is wrong because Leiber and Satifka are only examples of the book's range, not argued to be essential figures.",
+    "fix": {
+      "passage": "Editor Jared Shurin's 2023 anthology The Big Book of Cyberpunk contains 108 stories, an enormous number when compared to the 1986 cyberpunk anthology Mirrorshades, which has only twelve. Encompassing both early (e.g., Fritz Leiber's 1950 story \"Coming Attraction\") and more recent (e.g., Erica Satifka's 2021 story \"Act of Providence\") contributions, <u>the broad chronological scope of Shurin's volume may make it seem more comprehensive than Mirrorshades, but Mirrorshades's focus is more carefully considered, rendering it the more authoritative anthology of this science fiction subgenre.</u>"
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase, set off by dashes, defines convergent evolution: the same trait evolving independently in two separate lineages. The rest of the text is about how convergence happens and how Green and Extavour studied it, so the definition sets up the central topic. It names no studies (B) and describes a natural phenomenon, not a research method (C).",
+    "fix": {
+      "passage": "Wenheng Zhang and colleagues have explored how convergent evolution—<u>a phenomenon that occurs when the same trait evolves independently in two reproductively separate lineages</u>—can result from a genetic mechanism shared by both lineages. Meanwhile, Patricia J. Wittkopp and colleagues have investigated how convergence occurs through different genetic mechanisms, but the relative prevalence of convergence through shared and different genetic processes is still poorly understood. This motivated biologists Delbert A. Green II and Cassandra G. Extavour to evaluate both types of convergence in a single study for their 2012 paper."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 reports that bison and elk dung samples had similar levels of beta-sitosterol and stigmastanol. Text 2 says fecal-steroid profiles alone cannot tell bison samples from elk samples, which also means their profiles are alike. Only A is backed by both texts. D may look appealing, but Text 1 says nothing about which animals were more common in the area."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last sentence says the pine and oak pieces placed about 125 meters from the shipwrecks had the most microbe species. The values 0 and 200 meters are only the ends of the range where pieces were placed, not where the most species were found."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The final sentence states that the National Association of Black Journalists was founded in Washington, DC, in 1975. None of the other cities is mentioned in the text."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Whales cycle iron in the ocean, and that iron supports phytoplankton, which in turn feed krill. If whale populations fell, less iron would be cycled, so phytoplankton populations likely declined too, which explains why krill declined. C is tempting, but the text never discusses how much iron is in the krill themselves."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Switzerland's hours fell by 22%, which is less than Germany's 44% drop but more than Brazil's 16% and Japan's 14%. That is exactly what A says. B is wrong because Germany's decline of 1,074 hours is larger than Switzerland's 450, and D reverses the comparisons.",
+    "fix": {
+      "passage": "Calculations may be inexact due to rounding.\n\nA student in an economics course is examining the decline since 1950 in average hours worked per person per year in various nations due to both increased productivity and the adoption of policies that limit working hours. The first task in this investigation is to determine how the decline in Switzerland compares to that in other countries. The student finds that _____",
+      "table": {
+        "caption": "Average Hours Worked per Person per Year in 1950 and 2017",
+        "headers": [
+          "Country",
+          "1950",
+          "2017",
+          "Change in hours",
+          "Percent change in hours"
+        ],
+        "rows": [
+          [
+            "Brazil",
+            "2,042",
+            "1,709",
+            "-333",
+            "-16%"
+          ],
+          [
+            "Japan",
+            "2,030",
+            "1,738",
+            "-292",
+            "-14%"
+          ],
+          [
+            "Switzerland",
+            "2,040",
+            "1,590",
+            "-450",
+            "-22%"
+          ],
+          [
+            "Germany",
+            "2,427",
+            "1,354",
+            "-1,074",
+            "-44%"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Newland judges his intellect as better than that of the other men at the opera. B says he felt \"distinctly the superior\" of them and had probably read and thought more than any of them, which is a direct intellectual comparison. D mentions the men's inferiority but focuses on how he goes along with their moral views.",
+    "fix": {
+      "passage": "The Age of Innocence is a 1920 novel by Edith Wharton set in New York City in the 1870s. In the novel, Newland Archer attends an opera. Newland compares his intellect favorably to that of other men of New York City society who are in the audience."
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The clause \"that few authors would turn down\" describes the award, so it must attach directly to \"award\" with no punctuation. The colon that already follows \"down\" then names the award. Adding a colon, comma, or semicolon after \"award\" would wrongly cut the noun off from the clause that defines it."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The student assumes that because the egg-stage temperatures match (20–22°C), the eggs are laid at the same depth in both places. If water near New Caledonia is colder at any given depth than water near Fiji, then 20–22°C water would be found at a shallower depth there, so the eggs would be laid at different depths. A actually supports the hypothesis, since it has Fijian nautilids laying eggs at the New Caledonian depth."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An ecosystem-based approach looks at how climate, terrain, and many species interact and aims to help all species in an area. So it could produce strategies that are not aimed only at M. guerreronis but still help it. A is wrong because the text never suggests that reducing competing species is a goal or result of this approach."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"construction,\" which is singular, so it needs the singular verb \"becomes.\" The present tense also matches \"are likely to notice\" in the first sentence. \"Have become,\" \"are becoming,\" and \"become\" are all plural forms."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The phrase after \"with\" (\"with the even older Vercelli map ... being another one\") is a modifier, not a separate clause, so it needs the nonfinite form \"being.\" The finite verbs \"was,\" \"is,\" and \"has been\" would make the phrase after \"with\" ungrammatical."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence is complete at \"belonged to,\" and the species name explains which species that was. A colon is used to introduce such an explanation. A semicolon needs a full independent clause after it, and no punctuation would run the name into the verb."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence is complete at \"in the United States.\" The next sentence starts with the modifier \"Led by the researcher Laura A. Burkle,\" which describes \"the study.\" Using a comma or nothing would join two independent clauses incorrectly, creating a comma splice or run-on."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The 2022 World Cup had 32 teams from six continents, while the 1954 tournament had only 16 teams. That is a contrast between the two events, so \"In contrast\" fits. \"For instance\" would wrongly make the 1954 event an example of the 2022 one."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says many scholars see the co-op model as sustainable while also admitting its challenges, which is a balanced view. The rest of the sentence describes people at both extremes who ignore one side, so \"That said, some experts overlook such nuance\" sets it up correctly. D is wrong because the scholars described are not skeptical of co-ops."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says most Olympics included demonstration sports, and the second gives a specific case: glíma at the 1912 Games. That is an example, so \"For example\" fits. \"On the other hand\" would wrongly signal a contrast."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Cuba still shows the Spanish Empire's legacy in its language, but the Netherlands, which left the empire much earlier, rarely uses Spanish. That is the opposite situation, so \"The reverse is true of the Netherlands\" fits. B wrongly calls it another example of the same pattern, and A refers to \"this contrast\" even though no contrast has been stated yet."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the year Catlett made Sister, and only D gives it: 1973. A gives her birth year, and B and C describe her work in general without any date for the sculpture.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Elizabeth Catlett (1915-2012) was a celebrated African American artist.\n• She is best known for creating sculptures and prints that explore the Black experience.\n• Catlett's sculpture Sister is made of bronze.\n• She created this sculpture in 1973."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize how long the spacewalk lasted, the sentence should give the duration, and B starts with \"Lasting 7 hours and 55 minutes\" and adds that it was one of the longest ever. A and C never give the length. D wrongly uses the dates of the whole Expedition 14 mission as if they were the dates of the spacewalk.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• NASA mission Expedition 14 took place from September 18, 2006, to April 21, 2007.\n• Astronauts Michael López-Alegria and Sunita Williams were crew members of Expedition 14.\n• January 31, 2007: López-Alegria and Williams performed an extravehicular activity (EVA) to replace instruments on the Hubble Space Telescope.\n• An EVA (also known as a spacewalk) is an activity done by astronauts outside the spacecraft.\n• The duration of their EVA was 7 hours and 55 minutes.\n• Theirs is counted among the longest completed spacewalks to date."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the locations, a sentence needs both specimens and where each is housed. A gives Cheryll's museum in Florida and Dio's museum in Canada, joined by \"while.\" C mentions only Dio, and D compares their time period instead of location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Cheryll is the nickname of a Triceratops fossil specimen housed at the Palm Beach Museum of Natural History.\n• The Palm Beach Museum of Natural History is located in Wellington, Florida.\n• Cheryll lived in the Late Cretaceous period.\n• Dio is the nickname of a Triceratops fossil specimen housed at the Royal Ontario Museum.\n• The Royal Ontario Museum is located in Ontario, Canada.\n• Dio lived in the Late Cretaceous period."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the exchange's focus on local businesses supports their success, so it helps them \"thrive,\" or do well. \"Ebb\" means to decline and \"overspend\" is a bad outcome, both the opposite of the success the text describes."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Andrew decided not to leave with his brothers because he did not want to follow their ways, meaning he did not want to copy the path they chose. \"Imitate\" captures that. \"Justify\" doesn't fit, since the issue is doing what they did, not defending it."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Because meteorite isotopes resemble those in Mars's atmosphere, it is tempting to use meteorites as stand-ins for Mars's interior, which is what \"proxies for\" means. The warning that Mars's geology can't be determined from meteorites alone confirms this sense of substitution. \"Catalysts of\" would wrongly suggest the meteorites cause the interior's properties."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers wanted to know whether soil microbes affect flavor chemistry. They found glucosinolates varied with growing conditions, but \"although\" signals that the variation could not be traced back to, or \"attributed to,\" microbes specifically. \"Excluded from\" makes no sense with the study's question.",
+    "fix": {
+      "choices": {
+        "A": "forestalled by"
+      }
+    }
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The whole text describes the Walt Whitman House: its history, its role as a museum, and its exhibits of Whitman's furnishings. So its purpose is to describe a museum about Whitman's life and works. It doesn't explain why readers like his poetry (B) or compare the house with other museums (D)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the underlined portion, Ulfheim calls it an honour to address \"no less a person than the great Sculptor Rubek,\" which stresses how distinguished Rubek is. A describes Rubek's later line about meeting years ago, not the underlined words, and nothing suggests other sculptors are more famous (D).",
+    "fix": {
+      "passage": "The following text is adapted from Henrik Ibsen's 1899 play When We Dead Awaken (translated by William Archer in 1907). Ulfheim is introducing himself to Professor Rubek, a sculptor.\n\nULFHEIM: I believe <u>I have the honour of addressing no less a person than the great Sculptor Rubek.</u>\n\nPROFESSOR RUBEK: (Nods.) I remember meeting you once or twice—the autumn when I was last at home.\n\nULFHEIM: That's many years ago, now. And then you weren't so illustrious as I hear you've since become."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says Kolvereid and Moen \"convincingly demonstrated\" that training led to strong entrepreneurial intentions. Text 2 says the study collected data only after training, so it is unclear the training caused anything. They disagree about whether the study shows the results came from the training. C is wrong because both authors agree on what the study reported."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Zhao et al. found no significant variation in U-238 concentration or the activity ratio across depths and locations within each lake. So in those lakes, a sample from one spot represents the whole lake, and researchers can rely on localized sampling. B is wrong because the finding was about uniformity within each lake, not consistency from one lake to another.",
+    "fix": {
+      "passage": "Scientists study the abundance and the activity ratios (AR)—the relative radioactive decay rates of two isotopes—of uranium (U) isotopes in bodies of water to track sediment transport and deposition and to monitor groundwater quality. However, isotope abundance and AR are not always uniform across a single body of water, which may affect the reliability of results if sampling is not sufficiently representative. Chen Zhao et al. analyzed concentrations of the isotope U-238 and the U-234/U-238 AR at multiple depths and locations in two lakes in China, finding no significant variation in values within the same lake.",
+      "prompt": "Information in the text best supports which statement about Zhao et al.'s findings?"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text explains that countries define urban settlements differently, using different population cutoffs or other factors, and concludes that this makes comparing urbanization across countries difficult. That is A. B wrongly claims researchers use a single 10,000-person standard, which the text never says."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The youngest bear is the one with the smallest age in the table. Bear 122 is 3 years old, younger than bears 117 (6), 157 (7), and 123 (11). Choosing by weight or ID number instead of age leads to the wrong bears.",
+    "fix": {
+      "passage": "Scientists collected information about brown bears in Katmai National Park in Alaska. This information included each bear's sex, age, and approximate weight. Among the bears whose information is shown in the table, the youngest one was the bear with identification number _____",
+      "table": {
+        "caption": "Brown Bears in Katmai National Park, Alaska",
+        "headers": [
+          "Bear identification number",
+          "Sex",
+          "Age (years)",
+          "Approximate weight (pounds)"
+        ],
+        "rows": [
+          [
+            "122",
+            "male",
+            "3",
+            "200"
+          ],
+          [
+            "117",
+            "female",
+            "6",
+            "325"
+          ],
+          [
+            "157",
+            "male",
+            "7",
+            "450"
+          ],
+          [
+            "123",
+            "female",
+            "11",
+            "350"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The change in the text is allowing foreign investors to buy shares, and the table lists the year each country first did this. India's row shows 1986. None of the other years appears in the table.",
+    "fix": {
+      "passage": "In the 1980s and 1990s, many countries began allowing foreign investors to purchase shares of companies based in those countries.",
+      "table": {
+        "caption": "Year That Foreign Investors Were First Allowed to Purchase Shares",
+        "headers": [
+          "Country",
+          "Year"
+        ],
+        "rows": [
+          [
+            "India",
+            "1986"
+          ],
+          [
+            "Morocco",
+            "1988"
+          ],
+          [
+            "Indonesia",
+            "1989"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The team concluded that people everywhere can tell spontaneous laughter from volitional laughter. If spontaneous laughter has a recognizably higher pitch no matter which society it comes from, there is a universal cue listeners could use, which supports the conclusion. D points to variation across societies, which would weaken rather than strengthen the idea of a universal ability."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion is that heat sensors in the antennae let the centipedes detect light. If covering the antennae with reflective material, which keeps them from heating up, made the centipedes stay in the light longer, that shows the antennae's heating is what triggers escape. A weakens the claim by showing other body parts heat up too, and B suggests temperature isn't the key signal."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens by noting that introduced species are often harmful, then shows that non-native waxbills spread the seeds of endangered native plants. That means these birds provide a benefit instead of harming the ecosystem. B and C claim the birds also did damage, but the text gives no evidence of harm by these birds."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Kwakwaka'wakw songs accurately preserved practical knowledge about clam gardens, which records confirmed boosted clam size and productivity. The text also says many Indigenous songs hold ecological knowledge, so researchers should consider that other songs may hold useful information too. A contradicts the finding, which links the benefits to the people's gardens."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"The smoke point of corn oil is around 450 degrees\" is one simple clause, and no punctuation should separate the verb \"is\" from what follows it. A dash, semicolon, or comma would break the sentence in the middle."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers to the word \"rodeo,\" a thing, so the pronoun must be \"It.\" \"Someone,\" \"She,\" and \"He\" refer to people."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a complete main clause (\"the Pyramid of Userkaf is one of the oldest known structures\"). After the comma, \"providing researchers a glimpse\" adds a modifying phrase. \"Provides\" would create a second main verb without a conjunction, and \"to provide\" wrongly implies the pyramid exists for that purpose."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the clause \"students of traditional methods often only _____ such songs,\" the subject \"students\" needs a main verb, and \"begin learning\" provides one. \"Beginning to learn,\" \"having begun to learn,\" and \"to begin learning\" are not complete verbs, so the clause would have no verb."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to Marché Monge, a single market, so the singular \"it\" is correct. \"Those\" and \"these\" are plural, and \"one\" doesn't clearly refer back to the market."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"its similarity,\" which is singular, and the text describes how the system generally works in the present tense (\"are made,\" \"are applied\"). So \"is evaluated\" is correct. \"Are\" and \"have been\" are plural, and \"was\" is in the wrong tense."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes a process step by step: \"First\" they hung the cutout, and next they adjusted the suspension point. \"Then\" marks the next step. \"First of all\" would repeat the opening step, and \"Instead\" wrongly suggests the first step was abandoned."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Mornington line used broad tracks, while the Rockhampton line used narrow tracks, so the sentences contrast two gauges. \"By contrast\" fits. \"Similarly\" wrongly suggests the lines used the same kind of track."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize how many SNOTEL sites Wyoming has, the sentence needs the number, and A gives \"around 90.\" B and D focus on the single Cottonwood Creek site, and C says what the sites do without any number.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Snow hydrologist Zoe Wellschlager helps maintain automated snow measurement stations throughout the western United States.\n• They are called SNOTEL sites.\n• There are around 90 sites throughout Wyoming.\n• There is one at Cottonwood Creek."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the wind farm's location, and only C states it: Hornsdale, Australia. A gives its capacity, while B and D explain general facts about wind power without mentioning where Hornsdale Wind Farm is.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Wind is a renewable energy source.\n• A wind farm uses turbines to convert wind into electrical power.\n• A wind farm's maximum electrical output is called its nameplate capacity.\n• Hornsdale Wind Farm is located in Hornsdale, Australia.\n• Its nameplate capacity is 316 megawatts."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The goal is to compare the disadvantages of both systems. The flash steam system at Wayang Windu is limited by needing reservoirs above 180°C, and the binary cycle system at Raft River costs more to maintain; C names both. A mentions only Raft River's cost, B mentions only Wayang Windu's temperature limit, and D states temperature facts without framing either as a drawback of both.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Wayang Windu geothermal power plant in Indonesia uses a flash steam system to generate electricity.\n• Flash steam technology requires geothermal reservoir temperatures above 180°C.\n• The use of flash steam systems worldwide is limited because many geothermal reservoirs aren't hot enough.\n• The Raft River geothermal power plant in Idaho uses a binary cycle system.\n• Binary cycle technology can generate energy from lower-temperature (less than 180°C) geothermal reservoirs.\n• Binary cycle systems involve higher maintenance costs than flash steam systems."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both works are on public display, one in a London park and the other on a Bratislava street, so A states a real similarity. B points out a difference, C wrongly credits Kapoor and Balmond with both works, and D describes only Čumil.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• ArcelorMittal Orbit is an artwork by Sir Anish Kapoor and Cecil Balmond.\n• It is a 375-foot steel tower with a spiraling staircase and working slide.\n• It is on display in a public park in London, England.\n• Čumil the Sewer Worker is a work of art by Viktor Hulík.\n• It is a bronze sculpture of a man emerging from under a manhole cover.\n• It is on display on a public street in Bratislava, Slovakia."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": [
+      "2.4",
+      "4.8"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Use vertex form: h(t) = a(t − 3.6)^2 + 207.36. Since h(0) = 0, a(12.96) = −207.36, so a = −16. Setting h(t) = 184.32 gives −16(t − 3.6)^2 = −23.04, so (t − 3.6)^2 = 1.44 and t − 3.6 = ±1.2. So x = 2.4 or x = 4.8; either value is correct."
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 10: h(10) = 5(9·10 − 10) = 5(90 − 10) = 5(80) = 400. Choice D, 90, comes from stopping at 9·10 without subtracting 10 or multiplying by 5."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The total number of animals is c + d, and \"at most 43\" means less than or equal to 43, so c + d ≤ 43. C uses ≥, which would mean at least 43, and A and B subtract instead of adding."
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "17"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An equation has infinitely many solutions when both sides are identical. The x-terms already match (9x on each side), so the constants must match too: k = 17."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "6"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0. Then y = 6(1.85)^0 = 6·1 = 6, because any nonzero number to the 0 power is 1."
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line passes through (−6, −8), (0, −7), and (6, −6). From (0, −7) to (6, −6), y rises 1 while x increases 6, so the slope is 1/6. −7 (choice B) is the y-intercept, not the slope, and the line rises left to right, so the slope is positive, not −1/6.",
+    "fix": {
+      "choices": {
+        "A": "1/6",
+        "C": "−1/6"
+      }
+    }
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "31152"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply by the conversion factor: 17.700 miles per hour × 1,760 yards per mile = 31,152 yards per hour. Dividing by 1,760 instead would give a number far too small."
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "Since the triangles are similar with A matching D, sin D = sin A. If tan A = 612/35, the legs are 612 (opposite) and 35 (adjacent), and the hypotenuse is sqrt(612^2 + 35^2) = sqrt(375,769) = 613. So sin A = opposite/hypotenuse = 612/613. Choice B, 35/613, is the cosine instead.",
+    "fix": {
+      "prompt": "Triangle ABC is similar to triangle DEF, where angle A corresponds to angle D and angle C corresponds to angle F. Angles C and F are right angles. If tan A = 612/35, what is the value of sin D?",
+      "choices": {
+        "A": "612/613",
+        "B": "35/613",
+        "C": "613/612",
+        "D": "613/35"
+      }
+    },
+    "note": "Source prints tan A = 612/613, which matches no choice; the 35-612-613 triple and the choices show it should be 612/35. Prompt corrected; answer A as printed."
+  },
+  {
+    "key": "m1-09",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In A(b), the input b is the base length and the output is the area. So A(18) = 2,268 means a base of 18 cm gives an area of 2,268 cm^2. B treats 2,268 as the height, but the height would be 14 × 18 = 252 cm."
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A product equals 0 only when a factor equals 0, so v − 9 = 0, v − 2 = 0, or v + 7 = 0, giving v = 9, 2, or −7. Of the choices, only 9 works. The −4 is just a constant factor and never makes the product 0, and −2 and 7 have the wrong signs."
+  },
+  {
+    "key": "m1-11",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle K's area is π(8)^2 = 64π mm^2, and circle L's area is given as 144π mm^2. The total is 64π + 144π = 208π. Choice C, 80π, wrongly treats circle K's area as 16π instead of 64π."
+  },
+  {
+    "key": "m1-12",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quadratic formula is x = (−b ± sqrt(b^2 − 4ac))/(2a). Here a = 1, b = 49, c = 1, so one solution is (−49 + sqrt((49)^2 − 4(1)(1)))/(2(1)). The other choices mix up the coefficients, for example using a = 49 or b = 1.",
+    "fix": {
+      "choices": {
+        "A": "(−49 + sqrt((49)^2 − 4(1)(1)))/(2(1))",
+        "B": "(−49 + sqrt((49)^2 − 4(49)(49)))/(2(49))",
+        "C": "(−1 + sqrt((1)^2 − 4(1)(49)))/(2(1))",
+        "D": "(−1 + sqrt((1)^2 − 4(49)(1)))/(2(49))"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The count starts at 800 and is cut in half (multiplied by 0.5) for every 7 mm. After x mm there have been x/7 halvings, so I = 800(0.5)^(x/7). Choice B, 800(0.5)^x, would halve the count every 1 mm instead.",
+    "fix": {
+      "choices": {
+        "A": "I = 800(7)^(x/2)",
+        "B": "I = 800(0.5)^x",
+        "C": "I = 800(2)^(x/7)",
+        "D": "I = 800(0.5)^(x/7)"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Check both points. For 5x + 3y = 15: (3, 0) gives 15 and (0, 5) gives 15, so both points work. Choice C, 3x + 5y = 15, swaps the coefficients: (3, 0) gives 9, not 15."
+  },
+  {
+    "key": "m1-15",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add to 180°. With angle B = 90° and angle A = 56°, angle C = 180° − 90° − 56° = 34°. Choice A, 124°, comes from 180° − 56° without subtracting the right angle.",
+    "fix": {
+      "prompt": "In right triangle ABC shown, what is the measure of ∠C?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "25"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the first equation, x = −3 − 4y. Substituting into 4x − y = 22 gives −12 − 16y − y = 22, so −17y = 34 and y = −2. Then x = −3 + 8 = 5, and 3x − 5y = 15 + 10 = 25."
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A circle with center (−4, 1) has equation (x + 4)^2 + (y − 1)^2 = r^2. Using the point (−8, 4): r^2 = (−4)^2 + 3^2 = 25. Choices A and C have the wrong signs, which would put the center at (4, −1), and D uses r instead of r^2."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "121"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the figure, a and b are same-side interior angles along t between the parallel lines, so a + b = 180. Then (4k + 57) + (k/4 + 55) = 180, so 17k/4 = 68 and k = 16, which makes a = 121 and b = 59. Angle c is vertical to the angle at line s that corresponds to a, so c = 121.",
+    "fix": {
+      "prompt": "In the figure, lines r and s are parallel and line t intersects both lines. If a = 4k + 57 and b = k/4 + 55, what is the value of c?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiplying the first equation by 3 gives 1.5x + 3.6y = 27, which is exactly the second equation. Both equations describe the same line, so every point on it is a solution: infinitely many."
+  },
+  {
+    "key": "m1-20",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The overall mean is the total height divided by the total number of penguins: (380·87 + 190·93)/570 = (33,060 + 17,670)/570 = 50,730/570 = 89. Choice C, 90, just averages 87 and 93 and ignores that there are twice as many Kerguelen penguins."
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The data flatten out near y ≈ 18–20 on the left and rise faster and faster on the right, which fits an exponential model plus a constant. With y = 6(1.55)^x + 18, the y-intercept is 24 and the graph levels off at 18, matching the scatterplot. Choice A levels off at 0, and C has a y-intercept of 29, which is too high."
+  },
+  {
+    "key": "m1-22",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Move the s-terms to one side: 18qrt = 2qrs − 10rst = s(2qr − 10rt). So s = 18qrt/(2qr − 10rt). Dividing the top and bottom by 2r gives s = 9qt/(q − 5t). Choice A has the wrong sign, and D's numerator is too small.",
+    "fix": {
+      "choices": {
+        "A": "(−9qt)/(q − 5t)",
+        "B": "9qt/(q − 5t)",
+        "C": "18qrt",
+        "D": "2qt/(q − 5t)"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The inequality y > −36 includes every point above the horizontal line y = −36. The line is dashed because −36 itself is not included. Graph B shades above a dashed horizontal line at −36. D shades below it, and A and C use slanted lines.",
+    "figure": 0,
+    "choiceImages": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The masses add up: 25 + 35 + x = 125, so 60 + x = 125 and x = 65. Choice D, 10, doesn't make the total 125 (it would be 70)."
+  },
+  {
+    "key": "m2-03",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is where the graphs intersect. The line and the curve cross at the marked point (5, 4). (6, 0) is only where the line meets the x-axis, and the other points are not on both graphs."
+  },
+  {
+    "key": "m2-04",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Carmen needs 100 signatures total and has 51, so she needs at least 100 − 51 = 49 more. 41 would give only 92, which is not enough."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "50% means half, so the students occupied 0.5 × 340 = 170 seats. Choice A, 290, comes from subtracting 50 from 340 instead of taking 50 percent."
+  },
+  {
+    "key": "m2-06",
+    "answer": [
+      "5"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where the graph crosses the y-axis (x = 0). The graph shows a point at (0, 5), so y = 5."
+  },
+  {
+    "key": "m2-07",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "You don't need c: since 5c = 15, 5c − 8 = 15 − 8 = 7. Choice A, 3, is the value of c, not of 5c − 8."
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The ratio k : p is 7 : 6, so k = (7/6)p. When p = 336, k = (7/6)(336) = 7 × 56 = 392. Choice A, 288, uses (6/7)(336) and reverses the ratio."
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Species Y has 3 of the 185 animals, so the probability of picking one is 3/185. 70/185 and 112/185 are the probabilities for species Z and X.",
+    "fix": {
+      "prompt": "Each of 185 animals can be classified as one of three species, as shown in the frequency table.\nIf one of the animals is selected at random, what is the probability of selecting an animal of species Y?",
+      "table": {
+        "headers": [
+          "Classification",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "species X",
+            "112"
+          ],
+          [
+            "species Y",
+            "3"
+          ],
+          [
+            "species Z",
+            "70"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "70/185",
+        "B": "3/185",
+        "C": "182/185",
+        "D": "112/185"
+      }
+    }
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "18"
+    ],
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find the row for an air temperature of 29°F and read the column for a 15 mph wind speed: 18°F. The 24°F value in that row is for a 5 mph wind.",
+    "fix": {
+      "prompt": "For certain air temperatures, the table gives wind chill temperatures for two different wind speeds.\nAccording to the table, what is the wind chill temperature, in degrees Fahrenheit (°F), when the air temperature is 29°F and the wind speed is 15 miles per hour (mph)? (Disregard the degree symbol when entering your answer.)",
+      "table": {
+        "headers": [
+          "Air temperature",
+          "Wind chill temperature at wind speed 5 mph",
+          "Wind chill temperature at wind speed 15 mph"
+        ],
+        "rows": [
+          [
+            "27°F",
+            "21°F",
+            "15°F"
+          ],
+          [
+            "29°F",
+            "24°F",
+            "18°F"
+          ],
+          [
+            "31°F",
+            "26°F",
+            "20°F"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "76"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A right triangle has a 90° angle, so the two acute angles add to 90°. The other acute angle is 90 − 14 = 76 degrees.",
+    "fix": {
+      "prompt": "In a right triangle, the measure of one of the acute angles is 14°. What is the measure of the other acute angle, in degrees? (Disregard the degree symbol when entering your answer.)"
+    }
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each coefficient (3, 57, and 15) is divisible by 3, so 3x^2 + 57x + 15 = 3(x^2 + 19x + 5), and 3 is a factor. 3x^2 and 5x are not factors because the constant term 15 has no x."
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Population = density × area. The city has 1,035x people and the suburb has 535y people, so 1,035x + 535y = 13,165. D wrongly sets the total equal to the sum of the densities, 1,570."
+  },
+  {
+    "key": "m2-14",
+    "answer": "A",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Area of a triangle = (1/2) × base × height = (1/2)(48)(96) = 2,304 square centimeters. Choice C, 4,608, forgets the 1/2."
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 3: f(3) = −40(3) + 340 = −120 + 340 = 220 feet. Choice D, 460, adds 120 instead of subtracting it."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add 20a to both sides: 25a = 4b^2/a. Multiply by a: 25a^2 = 4b^2, so a^2 = 4b^2/25. Since a and b are positive, a = 2b/5. Choice B, 4b^2/25, is a^2, not a.",
+    "fix": {
+      "prompt": "5a = 4b^2/a − 20a\nThe given equation relates the positive variables a and b. Which equation correctly expresses a in terms of b?",
+      "choices": {
+        "A": "a = 4b/25",
+        "B": "a = 4b^2/25",
+        "C": "a = 2b/5",
+        "D": "a = 2b^2/5"
+      }
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "405"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each week Charles saves (3/5)(225) = 135 dollars. Over 3 weeks he saves 3 × 135 = 405 dollars. Stopping after one week would give only 135.",
+    "fix": {
+      "prompt": "Charles saves 3/5 of the $225 he earns each week from his summer job. If Charles continues to save at this rate, how much money, in dollars, will Charles save in 3 weeks?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 1: f(1) = 2(1)^3 + (1/3)(1)^2 − 1 = 2 + 1/3 − 1 = 4/3. Choice B, 2, comes from forgetting the 1/3 term.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 2x^3 + (1/3)x^2 − x. What is the value of f(1)?",
+      "choices": {
+        "A": "4/3",
+        "C": "10/3"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "B",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Slope = (change in y)/(change in x) = (14 − 0)/(13 − 0) = 14/13. Choice C, 13/14, flips the fraction by putting the change in x on top.",
+    "fix": {
+      "choices": {
+        "B": "14/13",
+        "C": "13/14"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand: f(x) = (2x − 5)^2 = 4x^2 − 20x + 25 and g(x) = 2(2x + 7) = 4x + 14. Adding gives 4x^2 − 16x + 39. Choice A, with + 11, comes from subtracting 14 instead of adding it."
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "-3"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 15: x^2 = 9, so x = 3 or x = −3. The negative solution is −3."
+  },
+  {
+    "key": "m2-22",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The graph passes through (0, 13), so when x = 0, y = f(0) = 13. You can also check: f(0) = a(4)^0 = a, so a = 13. Choice A, 4, is the base of the exponential, not the y-intercept."
+  }
+]

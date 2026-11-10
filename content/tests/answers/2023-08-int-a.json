@@ -1,0 +1,626 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tom \"surveyed\" the fence and then felt gloomy at its size, so he simply looked it over from end to end. \"Looked at\" fits that meaning. He isn't questioning or organizing the fence, and his melancholy rules out being captivated by it.",
+    "fix": {
+      "passage": "The following text is from Mark Twain’s 1876 novel The Adventures of Tom Sawyer. Tom, a child, has been told by his aunt to paint their house’s fence.\n\nTom appeared on the sidewalk with a bucket of whitewash and a long-handled brush. He surveyed the fence, and all gladness left him and a deep melancholy settled down upon his spirit. Thirty yards of board fence nine feet high."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Most studies focused on people living above sea level, but these researchers \"instead\" studied people living below sea level. Taking a new, less-traveled route is \"innovative.\" \"Predictable\" and \"timeworn\" say the opposite, and nothing suggests the work is unrealistically \"idealistic.\""
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The romantic paintings showed beauty or heroism \"while hiding all imperfection,\" so they played up their subjects' good qualities. \"Accentuate\" means to emphasize. \"Obscure\" would mean hiding the beauty, the opposite of the point, and \"rectify\" or \"counteract\" don't fit something being shown off."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Although\" sets up a contrast with recent analyses that have \"sharpened our picture,\" so our knowledge must once have been fuzzy or unclear. \"Nebulous\" means vague. \"Concrete\" is the opposite, and \"intricate\" (detailed) doesn't contrast with a sharpened picture."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first describes two tribe-run cultural centers (Hibulb and Citizen Potawatomi) and then contrasts them with museums that aren't Indigenous-led. That matches A. The text never discusses one specific set of artifacts (B), an older vs. newer strategy (C), or visitor reactions (D)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says copying a walkable feature may not be enough to increase walking elsewhere, because walking decisions depend on many interacting factors that we don't fully understand. So its purpose is to show how hard it is to find a dependable way to boost walking in a city. It doesn't explain how to improve decision-making (C) or compare pedestrian counts between cities (B)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Right after defining reduplication, the underlined sentence points to the exact repeated element (\"ye\") in the words given earlier. That makes the general definition concrete with an example. The translations were already given before it (B), and it describes no exceptions (C) or frequency (D).",
+    "fix": {
+      "passage": "In Hoocak, an Indigenous language from the Mid-Atlantic region of what is now the United States, okayeke means “bad,” whereas ati okayeye’tesel means “bad houses.” This phenomenon, in which an element of a root word is repeated, sometimes with modification, within another word that is related to the root word, is called reduplication. <u>In this case, the element “ye” in okayeke gets repeated in ati okayeye’tesel.</u> There are many examples of this type of reduplication in Hoocak."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the Places API data mostly include customer-facing places, so other kinds of amenities may be left out. A model built on that data could miss some of a neighborhood's amenities. Nothing in the text says the data are outdated (A) or that neighborhood boundaries are misidentified (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states that Hooks and Ward met while performing in a 1960 touring production of A Raisin in the Sun, so both were actors in it. The Great MacDaddy and NEC's workshops came later and have nothing to do with how they met."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim has two parts: helping people in faraway places while ignoring problems at home. D's speaker says that when you plead for exiles \"from far-distant shores,\" remember lives being wasted \"around your own doors.\" Choice A praises the native land, and B is about justice for the poor, with no foreign-vs.-local contrast."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tribal economic activity contributed $141,510 per employee. That is less than wholesale trade ($183,790) but more than professional services ($110,157) and administration/waste ($60,132). Choice D fails because $141,510 is not nearly equal to $183,790.",
+    "fix": {
+      "passage": "The Cherokee Nation, the Seminole Nation, and the more than thirty other tribes in Oklahoma operate numerous businesses and generate billions of dollars in revenue. An economics student is researching the tribes’ collective activity as a single industry. The student wants to compare the average amount contributed per employee to Oklahoma’s economy with the average amount contributed per employee by three other industries. Looking at the table, the student finds that tribal economic activity contributed over $141,000 per employee, on average, ranking it _____",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate total contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Professional services",
+            "$7,694,000,000",
+            "59,846",
+            "$110,157"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ],
+          [
+            "Administration/waste",
+            "$5,830,600,000",
+            "96,964",
+            "$60,132"
+          ],
+          [
+            "Wholesale trade",
+            "$10,723,400,000",
+            "58,346",
+            "$183,790"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says forests began to regrow by the mid-1980s. On the graph, all three classes rise from 1979 to 2000 (for example, Class I-IV climbs from about 315 to about 975 square kilometers), which shows that regrowth. Choice C describes the earlier deforestation, not the regrowth, and A and D compare classes at a single point in time."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the sounds are aimed mainly at predators. If predators like chickens and yellow warblers actually stop attacking when caterpillars make sounds, the sounds clearly work on predators. Choices A and D only describe which sounds were made, and C says whistles weren't detectable by birds, which would partly undercut the claim."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because gold was much rarer than bronze, you'd expect that not every hoard had gold in it, and the Parc-y-Meirch hoard, mentioned earlier, is an example. Choice B might be true but isn't supported by the text, and C and D don't follow from gold's rarity at all."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Climate change can push species into new ranges and create new habitats, which \"challenge\" the native vs. invasive labels. So states like North Dakota may need to rethink those labels. Choice A singles out the spiny water flea without support, and D brings in coordination between states, which the text never mentions."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"Food writer J. Kenji López-Alt,\" so the verb must be singular: \"explains.\" The clause \"who explores the science behind cooking\" is just extra information between the subject and verb. \"Explain,\" \"have explained,\" and \"are explaining\" are all plural forms."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The \"that\" clause needs a main verb for its subject, MoMA. \"Houses\" is a finite, present-tense verb that fits a current fact. \"Housing,\" \"to house,\" and \"to have housed\" are not finite verbs, so they would leave the clause incomplete."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to Duchamp's \"aesthetic,\" a singular noun, so \"it\" is correct. \"They\" and \"these\" are plural, and \"we\" doesn't refer to anything in the sentence."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence describes the temperature in a series: it \"is\" 62.6 in June, \"rises\" in July, and \"dips\" in August. All three verbs should be simple present to stay parallel. \"Rose\" and \"has risen\" switch tense, and \"rising\" isn't a finite verb."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The part before the blank is a complete sentence, and what follows names the two Black Americans it mentions. A colon is the right way to introduce that list. A period or semicolon would leave the names as a fragment, and no punctuation runs the list on."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence before says Chaucer didn't write in Modern English; the next one tells what he wrote in instead (Middle English). \"Rather\" introduces a correction like that. \"Similarly\" and \"as a result\" don't fit the logic, and \"finally\" suggests a sequence."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Montaigne questions his own views throughout his essays, and his motto was \"What do I know?\" The motto matches that habit, so \"Fittingly\" is right. \"Conversely\" and \"Still\" would signal a contrast, and \"Nowadays\" adds a time shift that makes no sense."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says it was rare for railroad supporters to keep their views secret, so usually they were open about them. \"More often\" introduces what was more common. \"For example\" fails because vocal abolitionists aren't an example of secrecy, and \"Granted\" signals a concession."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To stress similarity, the sentence should say what the two ranges have in common: both are sky inlands, isolated ranges whose environments differ from what surrounds them. B is the only choice that presents the two ranges as the same kind of range. C and D point out differences (area and country), and A doesn't name either range.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Archipelago-Madrean Mountains are located in northwestern Mexico.\n• They cover an area of 1,038 square miles (mi^2).\n• The Big Hatchet Mountains are located in the southwestern United States.\n• They cover an area of 65 mi^2.\n• These mountain ranges are two of the dozens of “sky inlands” in the southwestern US and northwestern Mexico.\n• A sky inland is an isolated mountain range whose environment differs dramatically from that of the surrounding lowlands.",
+      "choices": {
+        "B": "The Archipelago-Madrean Mountains and the Big Hatchet mountains are both inland mountain ranges whose surroundings are different from those of the surrounding mountains.",
+        "C": "The Archipelago-Madrean Mountains cover an area of 1,038 mi^2, while the Big Hatchet Mountains cover an area of 65 mi^2."
+      }
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give a quotation from chapter 17. C quotes Boym's sentence and ties it to chapter 17's topic, skeptics' views of nostalgia. A and D describe chapter content without quoting anything, and B only summarizes the book.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Future of Nostalgia is a scholarly book by literary theorist Svetlana Boym.\n• The book provides a multifaced exploration of the concept of nostalgia.\n• Chapter 14 discusses themes of nostalgia in Joseph Brodsky’s writing.\n• Chapter 17 discusses various skeptics’ takes on the concept of nostalgia.\n• In chapter 17, Boym writes, \"The poethics of nostalgia combines estrangement and human solidarity, affect and reflection.\""
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only B gives the cup's Choctaw name, isht ishko. A and C mention the cup without naming it in Choctaw, and D translates the archive's name instead.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Hina Hanta is an online archive curated by the Choctaw Nation of Oklahoma.\n• Hina Hanta means “bright path” in Choctaw.\n• It features images of cultural artifacts relevant to the history of the Choctaw people.\n• It includes a cup (isht ishko in Choctaw) made from clay.\n• It includes a stickball collar (innuchi) made from horsehair."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show how long the escudo was used, the sentence needs both its start and end dates, and C gives both: 1914 to 1980. B gives only the start year, and A and D focus on the replacement or on the metical.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A currency is a money system.\n• Sometimes, countries adopt a new currency to replace an older one.\n• Mozambique adopted the escudo as its official currency in 1914.\n• The metical replaced the escudo in 1980.\n• The metical remains Mozambique’s official currency."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The \"display\" is the scene of moss, pines, cypresses, and willows described just before, which the text calls \"gorgeous.\" So it means a striking sight, a \"spectacle.\" Nature isn't copying anything (B), showing off falsely (C), or hiding something (D).",
+    "fix": {
+      "passage": "The following text is adapted from John Matheus’s 1926 short story Mr. Bradford Teaches Sunday School. Mr. Bradford is driving through the countryside in Florida.\n\nThe moss in the towering water oaks had become enlivened with a verdant sheen of silver and hung like festoons of carnival or like funeral decorations for the mourning of the dead. The pine green was resplendent. The bald cypresses spread themselves along the water courses while the willows wept as they always did. Mr. Bradford was conscious for this gorgeous display of nature."
+    }
+  },
+  {
+    "key": "rw2-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The Van Burens will \"always be remembered\" for being first, and \"but\" sets Mocsary up as the contrast: her place in history is less secure. \"Uncertain\" captures that. \"Enduring\" and \"conspicuous\" would put her on the same footing as the Van Burens, the opposite of the contrast."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The examples show artists blending Indigenous music with electronic music and rock, so they refuse to keep the styles separate. \"Reject\" distinctions fits. \"Observe\" distinctions would mean respecting the separation, and \"disguise\" or \"replace\" don't describe mixing styles."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example asks how often a word like \"world\" is used, and a corpus proves it's the eighth most common noun. So the blank is about how widespread a word is: \"pervasive.\" \"Credible,\" \"assertive,\" and \"profound\" describe meaning or tone, not how frequently a word appears."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conjecture \"eventually yielded\" to two mathematicians' combined efforts, so it must once have seemed impossible to overcome. \"Insuperable\" means exactly that. \"Ineluctable\" means unavoidable and \"irreproachable\" means beyond criticism, neither of which fits a problem that was hard to solve."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence says Villasana also honors ordinary people and names one: a young girl sitting on a sidewalk. Its job is to give an example of an everyday person she portrayed. It contrasts with famous figures rather than showing a preference for them (A), and it says nothing about collaboration (C).",
+    "fix": {
+      "passage": "Mexican textile artist Victoria Villasana weaves stories of triumph, using her unique method of applying colorful yarn to photographs of people. In some works, Villasana focuses on celebrating cultural icons who are people of color, as she does in her depiction of activist Ryu Gwansun. <u>However, in other works, Villasana honors ordinary people, as she does in her captivating portrayal of a young girl sitting on a sidewalk.</u> Villasana sees both of these approaches as ways of depicting the power and interconnectedness of all people."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Odom and colleagues say the \"male trait\" view came from bias: most research took place in the temperate north, where female song is less common. So they'd say Text 1's view was shaped by where researchers chose to study. Choice A mentions bias, but the bias they describe is about location, not a preference for studying male birds."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The northern right whale is much bigger than the sei whale and can eat as much as 24,000 kg of krill a day, while the sei whale's whole mass is at most 25,000 kg (and it eats up to 30 percent of its mass). So the right whale can eat more krill per day. B gives the sei whale an impossible amount, and C and D aren't supported."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Earlier studies looked at either shared genetic mechanisms (Zhang) or different ones (Moczek), but Green and Extavour evaluated both types in one study. So their study covers convergence more completely. Nothing says they used the other teams' data (B), and Zhang's team didn't compare both types (D)."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The example must show a peaking plant producing more power than run-of-river plants. J. Woodruff, the peaking plant, averages 193,864 MWh/yr, more than any run-of-river plant (the highest is Norway at 19,751). Choice B is about generators, not power, and D gets the comparison backward.",
+    "fix": {
+      "passage": "A run-of-river hydroelectric power plant, as the name suggests, uses the natural flow of a water source to generate electricity but is unable to start or stop that flow through its generators. In contrast, a peaking hydroelectric power plant (used when demand for electricity peaks) controls the flow of water through its generators: starting flow when demand is high enough, stopping it when demand is too low, and otherwise regulating it to keep pace with changing electricity needs. Although peaking plants do not typically operate continuously as run-of-river plants do, peaking plants can generate more megawatt hours of power per year (MWh/yr) than some run-of-river plants. For example, the",
+      "table": {
+        "caption": "US Hydroelectric Power Plants, 2019",
+        "headers": [
+          "Plant",
+          "State",
+          "Mode",
+          "Generators in plant",
+          "Average power generation (MWh/yr)",
+          "Water source"
+        ],
+        "rows": [
+          [
+            "J. Woodruff",
+            "Florida",
+            "Peaking",
+            "3",
+            "193,864",
+            "Lake Seminole Reservoir"
+          ],
+          [
+            "Superior Falls",
+            "Michigan",
+            "Run-of-river",
+            "2",
+            "10,693",
+            "Montreal River"
+          ],
+          [
+            "Norway",
+            "Indiana",
+            "Run-of-river",
+            "4",
+            "19,751",
+            "Tippecanoe River"
+          ],
+          [
+            "White River",
+            "Wisconsin",
+            "Run-of-river",
+            "2",
+            "3,999",
+            "White River"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "average power generated annually by the J. Woodruff plant is higher than that generated by any of the run-of-river plants in the table.",
+        "B": "J. Woodruff plant, which is a peaking plant, has more generators than any of the other plant in the table.",
+        "C": "average power generated annually by the Norway plant is higher than that generated by the Superior Falls plant.",
+        "D": "run-of-river plant with the highest average annual power generation in the table generated more electricity than the peaking plant with the highest annual power generation in the table."
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that some lakes at these latitudes had shorter ice seasons from the early 1980s to the mid-2000s. Kalmarinjarvi had 198 ice days in 1980-81 but only 152 in 2005-06, a decline. Choice D describes an increase for Lake Neusiedl, and B and C compare lakes by latitude instead of tracking change over time.",
+    "fix": {
+      "passage": "It is common for freshwater lakes near or above a latitude of 45º north of the equator, like Lake Mjosa in Norway, to accumulate surface ice in winter. The amount and duration of ice depends on many factors, including local weather conditions as well as the lake’s depth, volume, and surface area, but a climate researcher claims that some lakes in these latitudes have seen a decline in the duration of ice between the early 1980s and the mid-2000s.",
+      "table": {
+        "caption": "Lake Ice Data",
+        "headers": [
+          "Lake",
+          "Latitude (degrees)",
+          "1980-81",
+          "1985-86",
+          "1990-91",
+          "1995-96",
+          "2000-01",
+          "2005-06"
+        ],
+        "rows": [
+          [
+            "Kalmarinjarvi",
+            "62.79",
+            "198",
+            "172",
+            "175",
+            "184",
+            "131",
+            "152"
+          ],
+          [
+            "Lake Neusiedl",
+            "47.82",
+            "77",
+            "86",
+            "87",
+            "128",
+            "50",
+            "104"
+          ],
+          [
+            "Mirror Lake",
+            "43.94",
+            "122",
+            "129",
+            "125",
+            "136",
+            "141",
+            "119"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The hypothesis is that snails could stand in for frogs when testing nanoparticle buildup. If the snails absorb CuO-NPs at a different rate than the frogs, in ways no one understands, snail results can't reliably predict frog results, so the proxy idea is weakened. Choice A suggests consistent results, which doesn't hurt the hypothesis, and D is about health effects, not whether the measurements match."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The traceability rating measures how clearly a study described its procedures, which is what \"methodology was better explained\" means. If Stobbe's study had lower traceability than Streicher-Porte's, the conclusion would be contradicted. Choice C is about category consistency, which isn't about explaining methods, and B would support the conclusion."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Malory's work mentions the Round Table, but neither Geoffrey's History nor anything earlier does. So Malory must have gotten it from some source that Geoffrey didn't know when he wrote. Choice C draws a conclusion about accuracy that the text doesn't support, and D isn't connected to the Round Table at all."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Levine and Zervos found no lasting increase in investment, while Henry found a big increase in the three years right after liberalization. Both are true if investment rises for a short time and then fades. Choice B misreads the three-year window as a delay, and A and C aren't supported by either study."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Each year ... idealistic direction\" and \"in 1952 ... judges recognized ...\" are both independent clauses, so they need a semicolon between them; the closing quotation mark comes first because the quote ends there. A comma alone (C) or nothing (B) makes a run-on, and A's \"and,\" is punctuated wrongly."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Lawyer and cycling advocate\" is a title that comes directly before the name, so no commas go around \"Ernesto Hernandez-Lopez.\" There should also be no comma between the subject and the verb \"has identified.\" A adds a comma between subject and verb, and B and D wrongly separate the title from the name."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"_____ roughly one million people\" describes Yerevan, set off by commas before \"home to...,\" so it needs a modifier, not a main verb. \"Containing\" works as a participle. \"Contains,\" \"contained,\" and \"has contained\" would create a verb that doesn't fit the sentence's structure."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence about a challenge, and \"finding that elusive thread...\" explains what the challenge was. A colon properly introduces that explanation. A period or semicolon would leave the \"finding\" phrase as a fragment, and A puts the colon in the wrong place."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"In 2020 ... Japan, respectively\" is a complete sentence, and \"utilizing vivid pastel colors ... Svarbová's photographs evoke...\" is another. A semicolon joins them, and \"respectively\" belongs to the first clause. A and D create a run-on, and C cuts \"respectively\" off from the clause it belongs to."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"He did not play drums on the label's classic song 'Rapper's Delight,' however\" is one complete sentence and \"he joined the label after the song's release\" is another, so a semicolon goes after \"however.\" A joins two sentences with only a comma, and D has no punctuation. C would make \"However\" start the second sentence, which wrongly turns the reason into a contrast."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The volcanoes look similar from afar, but volcanologists can tell they formed differently. \"Though\" signals that contrast. \"Therefore\" and \"in addition\" signal cause and addition, and the volcanologists aren't an example of anything."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The JWST is built for infrared light, so when light from a galaxy is infrared, the JWST can, as a result, produce sharper images than Hubble. \"Consequently\" signals that cause and effect. \"Admittedly\" signals a concession, and \"in addition\" just adds a point."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say many Stradivarius violins are named for a previous owner and that this one is named for Jules Falk. D combines those facts to explain the name. A tells who Falk was but not the naming, and B and C don't mention the name's origin.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Antonio Stradivari (1644-1737) made about 1,000 violins in his lifetime.\n• Musicians prize his Stradivarius violins for their famed sound quality.\n• Many of the 500 or so that exist today are named for a previous owner.\n• The Jules Falk Stradivarius is named for Jules Falk, an American violinist.",
+      "choices": {
+        "A": "Jules Falk was an American violinist.",
+        "B": "Of the 1,000 or so violins Antonio Stradivari made, only about 500 exist today.",
+        "C": "Designed by Antonio Stradivari. Stradivarius violins like the Jules Falk are renowned for their quality.",
+        "D": "The Jules Falk Stradivarius is named after its former owner, Jules Falk."
+      }
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "C states both when (2018) and where (New York City) Argentum debuted. A focuses on the sculpture's look and size, B speaks only in general, and D gives the year but not the place.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Grimanesa Amoros is a Peruvian American artist.\n• She is well known for her large-scale LED light sculptures.\n• Argentum debuted in 2018 at the Bronx Museum of the Arts in New York City, New York.\n• It is made of iridescent multicolored LED domes.\n• It occupies 253 cubic feet of space.",
+      "choices": {
+        "A": "As is common of Grimanesa Amoros’s sculptures, the iridescent multicolored LED domes of Argentum cut and imposing 253 cubic foot figure when the piece debuted.",
+        "B": "Artist Grimanesa Amoros often works with light in her sculptures, which tend to be large in scale.",
+        "C": "In 2018, Grimanesa Amoros debuted Argentum in New York City, New York.",
+        "D": "Grimanesa Amoros is a Peruvian American artist who often works with LED light in her large scale sculptures, such as Argentum [2018]."
+      }
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is where the figures are in Lost in the Shuffle, and C gives their positions: the bottom left and upper right corners. A compares sizes, B describes the water colors, and D talks about mood.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Calida Garcia Rawles is an African American painter.\n• She is known for her large scale, hyperrealistic paintings depicting African American figures in water.\n• The painting Lightness of Being (24*30in) depicts a young man with his arms outstretched floating on the right side of the canvas.\n• Lost in the Shuffle (36*24in) depicts two young men with their arms outstretched floating in the bottom left and upper right corners of the canvas.\n• She paints the water with vivid blue colors, including sky blue and indigo.\n• The mood in the painting is calm."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show when both samples were collected, the sentence needs both dates, and D gives June 1930 and May 1929. C gives only one date, B gives places instead of times, and A gives neither.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ynés Mexía was a Mexican American botanist.\n• Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.\n• She collected a sample of Trixis antimenorrhoea in Minas Gerais, Brazil, on June 26, 1930.\n• She collected a sample of Stephanomeria thurberi in Chihuahua, Mexico, on May 27, 1929.\n• These specimens are members of the Asteraceae family.\n• They can now be viewed online at the C. V. Starr Virtual Herbarium."
+    }
+  }
+]

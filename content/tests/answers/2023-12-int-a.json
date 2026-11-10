@@ -1,0 +1,601 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fellowship honors exceptional artists, and Burns received it \"because of his lifetime contributions to the arts,\" so he was selected for it: \"chosen.\" \"Ineligible\" contradicts the fact that he received the award, and nothing in the text suggests he was confused or reluctant."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Alexander \"was very busy,\" took a desk in an office, and avoided social clubs, so being at work \"almost constantly\" means working nearly all the time without a break: \"nonstop.\" \"Quickly\" is about speed, not how much of the time he worked, and \"cautiously\" and \"enough\" don't fit the picture of a man buried in work.",
+    "fix": {
+      "passage": "The following text is adapted from Willa Cather's 1912 novel Alexander's Bridge.\n\nFor the next few days Alexander was very busy. He took a desk in the office of a [Scottish] engineering firm on Henrietta Street, and was at work almost <u>constantly</u>. He avoided the clubs and usually dined alone at his hotel."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The dash gives the example: a \"well-executed marketing campaign\" helped The Gift sell well. A marketing campaign is a form of publicity, so publicity is what can play a big role in success. Originality, complexity, and practicality are qualities of the book itself, not of the marketing.",
+    "fix": {
+      "passage": "Though it does not guarantee a book’s commercial success, _____ can play a big role in that success—a well-executed marketing campaign helped to make Danielle Steel’s novel The Gift the fourth-best-selling novel of 1994."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Whereas\" sets up a contrast with \"intensified\": people are decisive when information flow is intensified but slow when it is the opposite, \"reduced.\" \"Evaluated,\" \"determined,\" and \"acquired\" are not opposites of intensified, so they don't complete the contrast."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence says the Mexica could \"precisely identify\" the dates of solstices, so they tracked time with great precision, or \"exactitude.\" \"Resilience\" means toughness and \"precariousness\" means instability; neither matches the emphasis on precision."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The whole text is about the Old Manse: it was Emerson's home, it is now a museum about him, and its curators organize outdoor activities for visitors. That is a description of a museum focused on Emerson. It doesn't summarize his life (A) or explain why readers like his work (B), and no other museums are mentioned (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Before the underlined sentence, the text sets up the question and describes the experiment with 3D glasses. The underlined sentence then reports what the cuttlefish did and what that suggests, which is the study's result. It doesn't propose future research (B), and the reason cuttlefish were thought to lack 3D vision is never explained (D).",
+    "fix": {
+      "passage": "Horses and toads can see in three dimensions (3D), which helps them perceive distance and depth. Octopuses and squid are thought to lack 3D vision. Many researchers once thought the same about cuttlefish, but Trevor Wardill and his team wanted to test whether this assumption was true. The team studied how cuttlefish wearing 3D glasses reacted to 3D images of shrimp (a favorite prey) projected on a tank wall. <u>Cuttlefish changed their striking position to match the 3D images, suggesting that their vision is more like that of horses and toads than that of octopuses or squid.</u>"
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Population density and physical fitness are what \"some studies emphasize,\" but the text then says walking decisions involve \"multiple conditions and needs,\" so these factors are only a few among many. The text never says people rarely consider them (B) or that they have been overemphasized (C), and it doesn't limit them to Boston (D).",
+    "fix": {
+      "passage": "Boston has high pedestrian traffic, but simply replicating a feature of Boston associated with walkability—e.g., its high number of intersections—may be insufficient to induce increased walking in other cities. As urbanist Mariela Alfonzo argues, our understanding of individuals’ decision-making about whether to walk is insufficiently robust: some studies emphasize the role of population density, others the role of individual physical fitness, and so on, but walking decisions are made in complex contexts in which multiple conditions and needs inform individuals’ choices.",
+      "choices": {
+        "C": "They identify factors that Alfonzo argues have been overemphasized in studies of decision-making about walking but that the text asserts are relevant to most people’s walking decisions."
+      }
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem compares a book and a page of poetry to a ship and swift horses that carry us to faraway \"Lands,\" and it adds that even \"the poorest\" can make this trip without paying a toll. So literature transports people in imagination no matter how much money they have. The poem never compares reading with actual travel (D), and it doesn't talk about different cultures (A).",
+    "fix": {
+      "passage": "The following text is adapted from Emily Dickinson’s circa 1873 poem “There is no Frigate like a Book.” A frigate is a light, fast ship; coursers are swift horses.\n\nThere is no Frigate like a Book\nTo take us Lands away\nNor any Coursers like a Page\nOf prancing Poetry—\nThis Traverse may the poorest take\nWithout oppress of Toll—\nHow frugal is the Chariot\nThat bears the Human soul."
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes Little Badger mixing Apache stories with fantasy and horror, then says she is \"not the only\" one and gives Nathan Adler as another example. So the main point is that recent Indigenous writers are blending traditional stories with popular genres. Book sales (A) and non-Indigenous authors (C, D) are never discussed.",
+    "fix": {
+      "choices": {
+        "C": "The success of Darcie Little Badger has influenced non-Indigenous authors who write in popular literary genres.",
+        "D": "Non-Indigenous authors should consider the expectations of Indigenous readers."
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the professor can't adjust to life at the country estate. In C he contrasts his familiar life (his library, lectures, admiring colleagues) with being \"plunged into this wilderness\" with \"stupid people,\" which shows he can't adapt. B shows he is impractical but says nothing about the estate, and A and D are about his relationship with Vanya.",
+    "fix": {
+      "choices": {
+        "A": "Vanya says to Professor Serebrakoff, “We used to think of you as almost superhuman, but now the scales have fallen from my eyes and I see you as you are!”",
+        "B": "Professor Serebrakoff says, “I am a book worm and a scholar, and am unfamiliar with practical affairs. I cannot, I find, dispense with the help of well-informed people.”",
+        "C": "Professor Serebrakoff says to Helena, “I am used to my library and the lecture hall and to the esteem and admiration of my colleagues. Now I suddenly find myself plunged into this wilderness [the estate], condemned to see the same stupid people from morning till night and listen to their futile conversations.”",
+        "D": "Professor Serebrakoff says to Helena and Sonia, “No, no, no! Don’t leave me alone with [Vanya]! Oh, don’t! He will begin to lecture me.”"
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student claims the escaped fish could cause negative long-term ecological effects. D describes exactly such a harm: interbreeding could spread fluorescence to wild fish and make them easier prey. B only says the impact hasn't been studied enough, C is about where the fish are found, and A gives sex ratios that don't show any harm."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tribal economic activity contributed about $7.31 billion, which is more than arts/entertainment/recreation ($1.30 billion) but less than professional services ($7.69 billion). D states both parts correctly. B is tempting because tribal activity is close to professional services, but it is still slightly lower.",
+    "fix": {
+      "passage": "The Cherokee Nation, the Quapaw Tribe, and the more than thirty other tribes in Oklahoma operate numerous businesses and collectively generate billions of dollars in revenue. In fact, when the tribes’ activity is regarded as a single industry, its contribution to the Oklahoma economy in 2017 _____",
+      "table": {
+        "caption": "Contributions of Three Key Industries to Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate contribution"
+        ],
+        "rows": [
+          [
+            "Professional services",
+            "$7,694,000,000"
+          ],
+          [
+            "Arts/entertainment/recreation",
+            "$1,296,300,000"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The hypothesis predicts that immature males pay more attention to immigrants than immature females do. In the table, both females (individuals 6 and 1: 0.33 and 0.41) have lower proportions than both males (individuals 15 and 16: 1.00 and 0.84), which is what C says. A compares males with males and females with females, so it shows no sex difference, and B and D don't compare the sexes at all.",
+    "fix": {
+      "passage": "One way that young orangutans acquire foraging skills is through a behavior scientists call peering—closely watching older orangutans as they engage in an activity that the young have not yet mastered. Since male orangutans typically leave the area of their birth upon maturity and females do not, Beatrice Ehmann and her colleagues hypothesized that it is more advantageous for immature males than females to devote attention to orangutans who are immigrants to the home region of the immature individual, and this should be reflected in sex-specific differences in peering behavior.",
+      "table": {
+        "caption": "Peering at Adult Orangutans by Immature Orangutans",
+        "headers": [
+          "Individual",
+          "Site",
+          "Sex",
+          "Total number of peering events observed",
+          "Proportion of peering events directed at immigrants to immature individual’s home region"
+        ],
+        "rows": [
+          [
+            "16",
+            "Suaq",
+            "male",
+            "80",
+            "0.84"
+          ],
+          [
+            "6",
+            "Tuanan",
+            "female",
+            "6",
+            "0.33"
+          ],
+          [
+            "15",
+            "Tuanan",
+            "male",
+            "15",
+            "1.00"
+          ],
+          [
+            "1",
+            "Suaq",
+            "female",
+            "17",
+            "0.41"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Economists expected liberalization to make it easier for companies to raise money, and Henry found that investment rose significantly after liberalization. The evidence therefore matched the standard expert view. A misreads the timing (the increase happened within the three years), B suggests negative effects that the text never mentions, and C compares individual countries, which the averaged data can't support."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The verb's subject is \"a writing technique,\" which is singular, and the sentence describes what the technique generally does, so the singular present-tense \"creates\" is needed. \"Create,\" \"are creating,\" and \"have created\" are all plural forms."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After \"more likely,\" English uses an infinitive: \"more likely to eat.\" The other forms (\"ate,\" \"still be eating,\" \"eaten\") can't follow \"likely\" directly and leave the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes a general, ongoing situation in the present tense (\"have a clear difference,\" \"require\"), so the present-tense \"struggle\" keeps the tenses consistent. The past forms \"struggled,\" \"were struggling,\" and \"had struggled\" would wrongly place a timeless fact in the past."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Painter\" is a title-like description directly before the name, so no commas separate \"painter\" from \"Gani Odutokun\" (the name is essential here), and no punctuation should come between the subject and its verb \"was.\" A and D add unnecessary commas, and B puts a period in the middle of the sentence."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"She was not alone in her efforts, however\" is a complete sentence, and \"Fernando Orejuela ... contributed to the project\" is another, so a semicolon is needed after \"however\" to join them. \"However\" belongs with the first clause, since it contrasts with the previous sentence. B and D create run-ons, and C puts \"however\" in the wrong clause."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The two clauses present contrasting findings side by side: negative adjectives change fastest, while negative nouns change slowest. \"Meanwhile\" introduces a contrasting fact considered at the same time. \"Similarly\" would wrongly suggest the same pattern, \"hence\" implies cause and effect, and \"subsequently\" implies a time sequence.",
+    "fix": {
+      "passage": "In a 2022 analysis, researchers applied a statistical model to a set of words to infer the rate of cognate replacement—the rate at which a word will be replaced over time with a noncognate form—in Indo-European languages. The researchers found that negative adjectives like grim evolve most rapidly; _____ negative nouns evolve most slowly."
+    }
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says Latimer improved Edison's light bulb, and the next one gives the exact improvement: cardboard around the carbon filament. \"Specifically\" introduces that precise detail. \"However\" and \"regardless\" signal contrast, and \"soon\" suggests a later event rather than an explanation of the same one."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Najas marina thrives in nickel-polluted soil, and the second adds a further point: it also absorbs nickel and cleans the soil. \"What's more\" adds a new, related fact. \"Consequently\" would mean that thriving causes absorption, and \"by contrast\" and \"nevertheless\" signal opposition that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize the sculpture's size, the sentence should give its dimensions; D says Rotate stretches roughly 6 feet wide and 12 feet tall. A and C call Serra's sculptures \"large\" in general without describing this sculpture, and B mentions only the material.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Richard Serra is an American artist.\n• He is known for his large metal sculptures.\n• His sculpture Rotate is roughly 6 feet wide and 12 feet tall.\n• It is made from weathering steel.",
+      "choices": {
+        "D": "Rotate, a large metal sculpture by artist Richard Serra, stretches roughly 6 feet wide and 12 feet tall."
+      }
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A difference between the two approaches needs both of them in one sentence. D contrasts Rai's natural, plant-based substance with the hazardous chemicals manufacturers have traditionally used. A points out something the two dyes share, B mentions only Rai's method, and C mentions only the traditional method.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Traditionally, manufacturers have dyed denim jeans blue by dipping them in a solution containing indigo powder.\n• Indigo doesn’t dissolve in just water, so manufacturers must mix hazardous chemicals with water to dissolve the powder.\n• Textile researcher Smriti Rai discovered a process for dyeing blue jeans without chemicals.\n• Rai added indigo powder to a hydrogel containing nanocellulose and produced a dye that could be spread directly onto the denim.\n• Nanocellulose is a natural, plant-based substance that separates the molecules of indigo powder.",
+      "prompt": "The student wants to emphasize a difference between the two approaches to dyeing blue jeans. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity must be something both wave types share. A says both P waves and S waves travel beneath Earth's surface and make the ground move. B and D stress differences between the waves, and C describes only P waves.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Earthquakes start at a point called a “focus” and spread out from there as seismic waves.\n• The two types of seismic waves that travel beneath Earth’s surface are primary waves (P waves) and secondary waves (S waves).\n• P waves travel more quickly beneath Earth’s surface than do S waves.\n• P waves compress and expand the ground, causing it to move backward and forward.\n• S waves cause the ground to move from side to side."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To say how long the Gambian pound was used, you need both its start year and its end year. A gives both: it was the official currency from 1965 to 1971. B gives only the start year, C gives only the year it was replaced, and D gives no dates at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A currency is a money system.\n• Sometimes, countries adopt a new currency to replace an older one.\n• The Gambia adopted the Gambian pound as its official currency in 1965.\n• The dalasi replaced the Gambian pound in 1971.\n• The dalasi remains the Gambia’s official currency."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text lists traits both groups have (spines, pointed snouts, small size) and says they developed them independently, so hedgehog tenrecs share \"similarities with\" true hedgehogs. \"Examples of\" and \"indications of\" don't express a comparison between two groups, and \"concerns about\" makes no sense with physical traits."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Bird-Walton's place in memory is compared with that of a famous \"first,\" whose deed will \"always be remembered.\" The contrast implies Bird-Walton's place is less secure, or \"uncertain.\" \"Enduring\" and \"conspicuous\" say the opposite, and \"deserving\" doesn't fit the comparison about how well someone is remembered."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Robots are made humanlike so people find them easier to interact with, and \"to that end\" features like walking on two legs strengthen people's comfort; \"buttress\" means to support or reinforce. \"Mitigate\" (lessen) is the main trap because it means the opposite, and \"constrict\" and \"repudiate\" would also weaken comfort."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence contrasts what scholarship has undermined with what is \"indisputable\": Ibn Rushd's works were mostly available far from the center of Islamic thought, which might suggest other philosophers ignored them. So the undermined claim is that his works were unimportant to his peers, \"inconsequential to\" them. \"Imitated by\" would mean influence, which wouldn't create the needed contrast, and \"controversial among\" and \"antagonistic toward\" have no support in the text."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first defines community science, then lists its benefits (public awareness, learning for youth, more data), and finally mentions the butterfly study that used it. That is exactly B. The text doesn't give the study's results (A), suggest future projects (C), or discuss public opinion (D)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says Wahbi's team did not use barriers, the \"crucial step\" for excluding other pathways, so their study didn't isolate the CMN. Text 2 argues that even Xiao's barriers can't rule out other pathways, so a study without barriers certainly couldn't. Both authors would answer B with \"no.\" They would disagree about A, since Text 1 thinks Xiao's barriers worked and Text 2 does not.",
+    "fix": {
+      "passage": "Text 1\nIn separate studies, Yanbo Xiao and colleagues and Sana Wahbi and colleagues examined whether plants transfer nutrients to one another using a common mycorrhizal network (CMN)—a lattice of fungal strands in the soil. Xiao and colleagues excluded all pathways other than the CMN by using barriers to keep the plants’ root systems separate while allowing mycorrhizal strands through—a crucial step Wahbi and colleagues’ study did not take.\n\nText 2\nXiao and colleagues took the necessary precaution of separating the plants’ root systems (thereby excluding root-to-root transmission). However, any barrier used must allow the threadlike hyphae of a CMN to pass through, and this permeability would also allow liquids through. Thus, the researchers’ experimental design cannot ensure that any nutrient transfer observed can be attributed to a CMN and not to some other pathway.",
+      "choices": {
+        "A": "Are the barriers used in Xiao and colleagues’ study sufficient to ensure that nutrient transfer could only occur via a CMN?",
+        "B": "Did Wahbi and colleagues’ study effectively exclude any nutrient pathway other than a CMN?"
+      }
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text names one limit: Places API data mostly include customer-facing places. A model built on that data could miss amenities that don't serve customers, so its conclusions might not reflect everything in a neighborhood. Nothing in the text concerns neighborhood boundaries (B), other fields (C), or outdated data (D).",
+    "fix": {
+      "passage": "Researchers Cesar A. Hidalgo, Elisa Castaner, and Andres Sevtsuk created a computer model to predict the mix of businesses and places of interest found in a given neighborhood. The team used data from the Google Places API service to help identify movie theaters, gyms, and other businesses and map their locations. This approach has some limits—data from Places API tend to be restricted to places that are customer facing—but the data set nonetheless provides an extremely reliable source to study colocation patterns of neighborhood amenities."
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The author says vocal manipulation is not \"an arbitrary stylistic choice\" but a \"commentary on how digital technology mediates human experience.\" Calling it a purely aesthetic feature with little social meaning directly contradicts that view. B restates the author's view, and A and D go beyond the text but don't clash with it as directly as C."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Brown's team found that bright moonlight reduces the mice's activity, and the explanation is costs versus benefits: the extra foraging success doesn't make up for the greater risk of being seen by owls and hawks. C states both parts. A reverses the finding, B adds a comparison with night monkeys that the text never makes, and D is about the monkeys, not Brown's finding.",
+    "fix": {
+      "choices": {
+        "C": "Arizona pocket mice reduce their activity during periods of high lunar intensity because predators can more easily spot the mice in brighter conditions and such conditions do not benefit the mice enough to offset that risk.",
+        "D": "During periods of high lunar intensity, three-striped night monkeys show a different behavioral response than Arizona pocket mice and many other nocturnal mammals do because the risks to three-striped night monkeys under such conditions are greater."
+      }
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mixed feelings means both positive and negative reactions. In C the narrator is \"quite fond of the big room\" but calls the wallpaper \"horrid,\" which shows both at once. A and D are only negative, and B only describes how the paper looks in moonlight."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that animals escaping predators don't always run at full speed. In the graph, the escaping bars below 90% add up to 2 + 1 + 2 + 3 = 8 species, so multiple species escape at less than 90% of maximal speed. C is true but supports the opposite idea, and D is about pursuing prey rather than escaping.",
+    "fix": {
+      "prompt": "Which choice most effectively uses data from the graph to complete the text?"
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Small white herons prefer extensive canopy cover, but glossy ibises don't. So adding tree canopy would draw herons but do little for ibises, which means such strategies are less likely to attract ibises than herons. B and D bring in lifespans and non-wetland birds, which the study never looked at."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Kestrels' surroundings strongly affect their hormone levels, so lab and wild kestrels should show different levels; D gives such a difference (higher androgen levels in wild males). B says the opposite, C is about variation within each group rather than between settings, and A is about canaries, not kestrels.",
+    "fix": {
+      "choices": {
+        "D": "levels of androgen hormones during breeding season are higher in wild males than they are in captive males."
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"Woven from recycled yarn and hand tufted...\" describes the tapestries, so the tapestries must be the subject right after the comma. A puts \"the topological tapestries\" there. B and D make the artist the subject, which would mean she was woven from yarn, and C leaves a fragment."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Novelist\" is a title-like description right before the name, so no commas are needed around \"Stephen Graham Jones,\" and no comma belongs before \"to craft,\" which completes the sentence. B and D add unnecessary commas, and C breaks the sentence with a period."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence ends with the photographer's name, \"Karimeh Abbud,\" and a new sentence begins with the phrase \"Titled 'Three Women,'\" which describes \"Abbud's image.\" Only D separates the two independent clauses correctly. A, B, and C run both sentences together, leaving the second clause attached to the first without a proper boundary.",
+    "fix": {
+      "prompt": "Which choice completes the text so that it conforms to the conventions of Standard English?"
+    }
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"frameworks\" (plural); \"a person has internalized\" and the parenthetical list are only modifiers. A plural subject needs the plural verb \"underlie.\" \"Underlies,\" \"is underlying,\" and \"has been underlying\" are all singular, matching \"person\" by mistake."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"For example\" goes with the first clause: her work being shown in Switzerland is an example of reaching audiences abroad. The two independent clauses are then joined with a semicolon. B is a comma splice, C attaches \"for example\" to the wrong sentence, and D uses a colon and a period incorrectly."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Compiled\" is the verb and \"climate data\" is its direct object, so no punctuation should separate them. A comma, colon, or period would cut the verb off from its object."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Containing macronutrients like nitrogen, phosphorus, and potassium\" specifies which fertilizers were studied, so it is an essential modifier and attaches directly with no comma. A leaves \"Containing macronutrients...\" as a sentence fragment. B and D use commas that wrongly treat the phrase as extra information about all agricultural fertilizers.",
+    "fix": {
+      "passage": "In 2013, a study led by the researcher Laura A. Burkle investigated the relationship between grassland arthropod populations and agricultural _____ macronutrients like nitrogen, phosphorus, and potassium. These fertilizers boost the productivity of crops, potentially offering more nutrients for arthropods."
+    },
+    "note": "Source and page both read 'Containing fertilizers boost...' in the second sentence (likely a copy error); replaced with 'These fertilizers boost...'. Answer unaffected."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence says the DC-10 is far more aerodynamic, and the next one gives a precise fact supporting that: its lift-to-drag ratio is more than twice the Wright Flyer's. \"Specifically\" introduces this detail. \"However\" and \"nevertheless\" signal contrast, and \"in conclusion\" doesn't fit a supporting detail.",
+    "fix": {
+      "passage": "The world’s first airplane, the 1903 Wright Flyer, was not very aerodynamic, as evidenced by its low lift-to-drag ratio of just 8.3:1. The Douglas DC-10 jet, like most modern aircraft, is far more aerodynamic. _____ its lift-to-drag ratio is more than twice that of the Wright Flyer."
+    }
+  },
+  {
+    "key": "rw2-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says Modernista architects championed nature, then admits that Casa Amatller's archways and tilework obviously couldn't grow in a forest, then says \"Still\" there are natural influences. \"Of course\" introduces this obvious concession before the point is restated. \"Thus,\" \"Similarly,\" and \"Furthermore\" would present the admission as a result or an extra example instead of a concession.",
+    "fix": {
+      "choices": {
+        "C": "Similarly,",
+        "D": "Furthermore,"
+      }
+    }
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Engineers warned against using multiple track widths, but officials failed to agree on one width anyway. \"Nevertheless\" shows that the outcome went against the warning. \"For this reason\" would wrongly make the warning the cause of the disagreement, and \"similarly\" and \"in other words\" don't express the contrast."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because seats go to whoever gets the most votes rather than a majority, it follows that a candidate can win with less than 50% when several strong candidates split the vote. \"Accordingly\" signals this consequence. \"However\" signals a contrast, and \"moreover\" and \"similarly\" just add a point rather than draw a conclusion."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is when she collected both samples, so the sentence needs both dates. B gives February 1930 for Erigeron maximus and November 1926 for Brickellia diffusa. A gives locations instead of dates, C dates only one sample, and D is about where the samples can be viewed.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ynés Mexía was a Mexican American botanist.\n• Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.\n• She collected a sample of Erigeron maximus in Minas Gerais, Brazil, on February 1, 1930.\n• She collected a sample of Brickellia diffusa in Jalisco, Mexico, on November 23, 1926.\n• These specimens are members of the Asteraceae family.\n• They can now be viewed online at the C.V. Starr Virtual Herbarium."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "D directly states the 2020 population: 46,065. B gives the 2010 figure instead, C mentions 2020 but focuses on the number of municipalities, and A gives no population at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Acaxochitlán is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is water treatment.\n• Acaxochitlán’s population was 46,065 in 2020.\n• Its population was 40,583 in 2010.\n• Hidalgo is divided into 84 municipalities."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C makes a general statement (some countries' flags include plant symbols) and then supports it with a specific example (Grenada's nutmeg). A is only about one country, so it isn't a generalization, and B and D generalize about vexillology rather than about the symbols on flags.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Vexillology is the study of flags.\n• The flags of many countries include symbols like animals, plants, or landforms.\n• These symbols often represent an aspect of the region’s history, culture, or landscape.\n• The flag of Grenada includes a clove of nutmeg.\n• The flag of Andorra includes a cow."
+    }
+  }
+]

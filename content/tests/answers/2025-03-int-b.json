@@ -1,0 +1,959 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researcher is still using Apollo data decades later, so the missions keep contributing to science: their value is \"ongoing.\" \"Original\" and \"controversial\" aren't supported by anything in the text, and \"displaced\" makes no sense for continued use."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The colon introduces the explanation: Lecuona showed a diverse range of talents, from orchestral pieces and operas to film scores. That describes a \"varied\" body of work. Nothing in the text suggests the work is outdated, forgotten, or lonely."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Agglomeration means firms cluster together, and the text later says companies \"cluster\" in an area. To \"amass in\" an area means to gather there in large numbers, which fits. \"Concur with\" (agree with) and \"intercede in\" (intervene) don't describe firms gathering in a place."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Elaborate sets didn't become common until the 1600s, so in the distant past audiences were used to bare stages; simple stages were \"expected by\" them. The contrast is with modern audiences, who can be surprised by such stages. Nothing supports \"disliked by\" or \"confusing to.\""
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text opens with a problem (weeds) and proposes a surprising fix (eat them), then backs it up with examples of edible weeds. That is suggesting an unexpected solution to a problem. The comment about flavor (C) supports the suggestion rather than being the main purpose."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first describes the realistic, serious Native fiction of the 1960s-70s (Silko and peers), then says younger Native writers now use genres like horror, with Adler as an example. That is earlier fiction followed by how recent fiction differs. Nothing is criticized (B), compared to non-Native fiction (C), or limited to one author's career (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence reports what Allan's 2013 study concluded: acidification strongly affects the fish's behavior. The criticism (A) comes afterward, when Clark's team questions the small sample size. The sentence names the species but lists no traits and gives no location.",
+    "fix": {
+      "passage": "<u>In 2013 Bridie J.M. Allan and colleagues published a study concluding that ocean acidification has a strong effect on the behavior of Pomacentrus amboinensis, a species of fish</u>. However, Allan and colleagues' study relied on a mean sample size of only about 18 fish. In a 2022 review of various scientists' conclusions about the impacts of ocean acidification on fish behavior, Timothy D. Clark and colleagues caution that relying on such a relatively small sample size can increase the potential for biased analysis. Such analysis, in turn, can contribute to reports of exaggerated effects."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states directly that scientists used Voyager 1 to discover Adrastea in 1979. The year 1610 is when Galileo discovered Io, a different moon."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The statement is about Chile, so the 2020 value must come from Chile's row: 5.73 million metric tons. The other choices are 2020 values for Kazakhstan (0.55), the United States (1.20), and Indonesia (0.51).",
+    "fix": {
+      "passage": "While doing research for a paper about metal exports, a student finds information about copper mining in different countries in 1995 and 2020. The student notes that Chile produced 2.49 million metric tons of copper in 1995 and _____",
+      "table": {
+        "caption": "Millions of Metric Tons of Copper Mined in 1995 and 2020",
+        "headers": [
+          "Country",
+          "1995",
+          "2020"
+        ],
+        "rows": [
+          [
+            "Indonesia",
+            "0.44",
+            "0.51"
+          ],
+          [
+            "United States",
+            "1.85",
+            "1.20"
+          ],
+          [
+            "Kazakhstan",
+            "0.26",
+            "0.55"
+          ],
+          [
+            "Chile",
+            "2.49",
+            "5.73"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Bianchini's planetary calculations contain the earliest decimal point. A dot in Bianchini's 1404 table used where the value isn't a whole number is direct evidence of a decimal point in his work, long before 1593. Choice A undercuts the claim by showing dots often just separated numbers, and B is about Clavius, not Bianchini.",
+    "fix": {
+      "passage": "For years, Christopher Clavius's 1593 work Astrolabium had the earliest known evidence of a decimal point, which was in a sine table's interpolation column. However, math historian Glen Van Brummelen posited that Venetian merchant Giovanni Bianchini, who worked as an astrological consultant, used the mathematical symbol approximately 150 years before Clavius did. Van Brummelen asserts that in his role as a consultant, <u>Bianchini used trigonometry to calculate the coordinates of the planets, and his calculations contain the earliest example of the decimal point.</u>"
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Adlhart claims the sponge would be hard to mass-produce. If starch and gelatin, the sponge's main ingredients, are in high demand elsewhere and hard to get in large amounts, producing huge numbers of sponges would be difficult. Choice B (easy to ship) is about distribution, not production, and would if anything make the sponge seem more practical."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show that the spoiler effect varied, pick two stories with very different gaps. For \"Owl Creek Bridge\" the spoiled and unspoiled ratings are almost equal (about 5.1 vs. 4.9), while for \"A Chess Problem\" the gap is over one point (about 7.2 vs. 6.1). In the other pairs, such as \"Blitzed\" and \"Plumbing,\" both stories show similar gaps, so they don't illustrate variation."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The key observation is that captive primates show more right-handedness than wild ones. Captive animals spend much more time around humans, who are overwhelmingly right-handed, so it is reasonable that this exposure may push them toward right-handed behavior. Choices A, B, and D raise issues (sample size, different criteria) that the text never mentions and that don't explain the captive-versus-wild pattern."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both species prefer areas with standing water for more than 60 days a year, so neither species is attracted to areas where standing water lasts far fewer than 60 days. Choice D fails because small white herons do prefer deep water during breeding season."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A Moment in the Sun fits about 625,000 words into 1,100 pages (about 570 words per page), while 1Q84 fits about 407,000 words into 1,157 pages (about 350 per page). So A Moment in the Sun has more words per page. The text gives no information about paper thickness, translation effects, or reading time."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank begins an introductory modifier describing the painting: \"Completed in 1557, her painting can now be found...\" The past participle \"Completed\" correctly forms that phrase. \"Was completed\" would create a second main clause with no conjunction, and \"Will complete\" and \"Completes\" don't form a modifier and have the wrong tense."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The clause after the semicolon needs a main verb for its subject \"this function\": \"this function... stems from the biocompatible properties.\" \"Stems\" is a singular present-tense verb that agrees with \"function.\" \"Stemming,\" \"having stemmed,\" and \"to stem\" are not finite verbs, so they would leave the clause incomplete."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Including languages the Madurese and Bikol\" works like \"including the languages Madurese and Bikol\": the names identify which languages, so no punctuation should separate \"languages\" from them. A dash, colon, or comma would wrongly break up this essential phrase inside the dash-enclosed interruption."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"This has not always been the case, though\" is a complete sentence, and \"throughout geologic history, Earth's magnetic poles have swapped places...\" is another. A semicolon after \"though\" correctly separates them, with \"though\" attached to the first clause. Choice A attaches \"though\" to the second clause, which doesn't make sense, and B and D leave a comma splice or run-on."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Two independent clauses describe two examples from Stentzel's prints: sweatpants become a camel, and pliers handles become flip-flop thongs. A semicolon correctly joins two related independent clauses. A comma alone creates a comma splice, and a dash or colon would wrongly suggest that the second example explains the first."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence concedes that Palau Mornau's features couldn't exactly go in a forest. The next sentence says nature's influence is visible anyway, so a contrasting transition meaning \"even so\" is needed: \"Still.\" \"Furthermore\" and \"Similarly\" signal agreement or addition, and \"In other words\" signals a restatement."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text compares voting ages in two places: 18 in Panama and only 16 in the Isle of Man. \"By comparison\" introduces the contrasting case. \"For example\" would wrongly treat the Isle of Man as an example of Panama's rule."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence before describes a sleek, aerodynamic jet; this sentence describes a boxy semitruck that is less aerodynamic. That is a contrast, so \"On the other hand\" fits. \"As a result\" wrongly suggests the truck's resistance is caused by the jet's design."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence gives the exact ranks (third vs. fifteenth) that back up the general statement that elephants ranked higher than crocodiles. \"Specifically\" introduces those precise details. \"Therefore\" would treat the ranks as a consequence rather than a more detailed version of the same fact."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To refute the claim that slow TV is boring, the sentence should use Heller's positive quotation against that claim, which C does (\"Far from boring...\"). Choice B presents both sides without refuting either, D actually supports the \"boring\" claim, and A applies the quote to one program without addressing the claim at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Documentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time.\n• MORA: Zeichner is a German slow TV program.\n• The 45-minute-long program documented an artist making a pencil drawing during a train journey.\n• It first aired in 2016.\n• Slow TV has been called \"the world's most boring television.\"\n• American journalist Nathan Heller praises it, writing that \"it affords a visceral kind of armchair tourism.\""
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both refuges were established to protect an endangered species (the American crocodile and the Hawaiian stilt), and A states that shared purpose for both by name. Choice C highlights a difference in size, and B and D mention only one of the two refuges.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The United States has designated more than 500 areas National Wildlife Refuges (NWRs).\n• Some NWRs were established specifically to protect endangered species.\n• The Crocodile Lake NWR is a 6,686-acre area in Florida.\n• It was established to protect the endangered American crocodile.\n• The Pearl Harbor NWR is a 61-acre area in Hawaii.\n• It was established to protect the endangered Hawaiian stilt."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A specific example names the actual elements that are juxtaposed: a well-dressed man, a clouded mountain range, and a doorway to the stars in Synchronicity. Choices C and D mention Synchronicity but never say what is juxtaposed, so they stay general. Choice B uses Posada's quote, which is about his art in general.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Felipe Posada (pseudonym The Invisible Realm) is a New York City-based artist who specializes in the form of art known as surrealist collage.\n• Manifestation of the unconscious mind is a central aspect of surrealist collage.\n• Irrational juxtaposition of disparate elements is a central aspect of surrealist collage.\n• Posada's Synchronicity irrationally juxtaposes images of a well-dressed man, a clouded mountain range, and a doorway to the stars.\n• Posada's quote: \"My art is a journey through the invisible realm—a space where intuition, memories, visions, and dreams are free to take visual form.\"",
+      "prompt": "The student wants to provide a specific example of irrational juxtaposition in surrealist collage. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When the work is attributed to two or three people, the prize is shared among them, meaning it is given \"jointly.\" \"Retroactively\" (for past events after the fact), \"ceremoniously,\" and \"reluctantly\" don't describe a shared award."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Schwartz argued the Mona Lisa resembles Leonardo's self-portrait, and the digital analysis then supported that resemblance: she \"corroborated\" it. \"Amalgamated\" and \"consolidated\" mean combined, which would describe merging the faces rather than confirming their similarity, and \"promulgated\" means publicly announced, which isn't what an analysis does."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says composers' influences are broad, and Lecuona is an example whose music shows both European classical elements and Cuban influences. To \"exhibit\" elements means to display them. \"Defy\" and \"neglect\" contradict the idea of influence, and \"foretell\" doesn't fit."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Whistler's eye is contrasted with his contemporaries' sentimental approach and linked to Walker Evans's seemingly objective photographs. So his eye was \"dispassionate\": detached and unemotional. \"Nostalgic\" would be sentimental, the opposite of the contrast, and \"tranquil\" and \"peculiar\" don't connect to objectivity."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text introduces a team's model of neighborhood businesses, then explains one methodological detail (a clustering algorithm to define neighborhoods), and ends by suggesting the model's use in planning a city's amenities. Choice A wrongly says the algorithm predicts business success and mentions other fields, and the text never discusses urban development trends (C)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence gives the high opinion the laity and the clergy have of Mr. Ely. The second describes his habits (never arguing, never revealing his own views, never being laughed at), which explain how he keeps that reputation. The text doesn't say his regard has fallen (C) or compare Milby's opinion with London's (A).",
+    "fix": {
+      "passage": "The following text is adapted from George Eliot's 1857 short story \"The Sad Fortunes of the Rev. Amos Barton.\" Mr. Ely is a clergyman in the town of Milby.\n\nBy the laity of Milby and its neighbourhood [Mr. Ely] was regarded as a man of quite remarkable powers and learning, who must make a considerable sensation in London pulpits and drawing-rooms on his occasional visit to the metropolis; and by his brother clergy he was regarded as a discreet and agreeable fellow. Mr. Ely never got into a warm discussion: he suggested what might be thought, but rarely said what he thought himself; he never let either men or women see that he was laughing at them, and he never gave any one an opportunity of laughing at him."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 says the countryside, reached through King's Cross, stands for idealism, authentic connection, and \"the infinite,\" in contrast with London's materialism. In Text 1, King's Cross suggests infinity to Margaret and seems a portal to an adventure not measured in ordinary prosperity. So Text 2's author would see the station as promising the intangible richness of the countryside. Choice A reverses this by tying the station to materialism invading the country."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text describes critics warning that writing in Gikuyu would limit Ngugi's audience, then says he went on to write dozens of acclaimed works translated into over thirty languages. So the doubts didn't stop his success. Choice A misstates which works were in Gikuyu (his first four novels were in English), and C wrongly calls Gikuyu widely understood."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Day's features look made for a bust or stamp and his forehead seems full of brains, so he looks distinguished. But the narrator jokes that it would be \"impertinent\" to ask what he has actually achieved, and that his memoirs barely address it. So it's unclear whether he earned that distinction. The text never says his deeds were dishonorable (C) or secret in fact (D).",
+    "fix": {
+      "passage": "The following text is from Mick Herron's 2023 novel The Secret Hours. The narrator is describing members of a government committee.\n\nFinally, and adding much-needed gravitas, was Sir Winston Day, whose features seemed moulded to adorn a bust, or possibly a stamp, and whose forehead was so evidently bulging with grey matter that it would have been impertinent to inquire too closely into the actual achievements his half-century of public service had produced. His recently published memoirs partly cast light on this enigma, but given that such details were not provided until after the thirty-page mark, they might as well have remained state secrets."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Much of what we know about wild-bee decline comes from bumblebees, yet Ghisbain points out that bumblebees have two uncommon traits (sociality and generalist diets) that make them more resilient. Since most wild bees lack those traits, they may respond differently, so researchers should be cautious when generalizing from bumblebees. Choice B goes too far by saying bumblebees can't inform conclusions even about bees with similar traits."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The claim is that the show amplified a perspective not usually given a formal platform. In C, a guard says their personal interpretation, built from hours of watching the work, had only been shared in informal chats before and now appears as an official statement. Choice B is about overlooked artworks, not the guards' perspective, and D emphasizes help from professional curators.",
+    "fix": {
+      "passage": "For its 2022 exhibition Guarding the Art, the Baltimore Museum of Art cast the security personnel typically responsible for safeguarding the institution's collections as the curators, <u>whose individual selections from the museum's holdings culminated in a show amplifying a distinct perspective not typically given a formal platform.</u>"
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The student's claim is about responding to an expected widespread change in public behavior. C describes one: a growing population eating more meat, which will raise demand, and cultured meat could help meet that demand. Choices A and B aren't about cultured meat or behavior change, and D is about environmental benefits, not a coming change in behavior."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined claim says that as the movement spread beyond Chile, it took in a wider range of musical traditions. Songs influenced by the Mexican corrido show a tradition from outside Chile entering the movement. Choice C's quena is already used in Chile, and D describes geographic spread without new musical traditions.",
+    "fix": {
+      "passage": "Born in Chile in 1917, artist and ethnomusicologist Violeta Parra was a pioneer in the nueva canción chilena (Chilean New Song) movement that emerged in the late 1950s and then spread throughout Latin America, Portugal, and Spain as nueva canción. Parra traveled all over Chile compiling extensive records of authentic folk music as well as recipes, proverbs, and other facets of cultural history. These records formed the foundation for the early movement's revival of traditional Chilean folk forms in new songs that represented modern realities of the working class and strongly advocated for social change. <u>As the movement spread beyond Chile, the breadth of musical traditions incorporated into its foundation also expanded.</u>"
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The old rule excluded only actions that had no significant effect \"individually or cumulatively\"; the new one drops \"cumulatively.\" So an action that is minor alone but significant combined with others could now get a quick review with no public comment, which explains environmentalists' worry. Choice B is wrong because more exclusions would mean fewer full reviews, not slower ones, and C reverses which rule allowed what."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The bottleneck is the inefficient series of redox reactions, and adding highly conductive silver more than doubled the power output. The logical hypothesis is that silver lets electrons skip those reactions and travel directly to the electrode. Choice A credits the bacteria's metabolism, but the text links silver's effect to its conductivity, not to biology."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Her work challenges conventional notions...\" and \"she is credited with expanding...\" are two independent clauses. They need a comma plus a coordinating conjunction: \"race, gender, history, and memory, and she is credited...\" Choice A creates a comma splice, while B and C run the clauses together."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"James Melton and Tom Ginsburg\" is an essential identifier of \"researchers\" (it tells which researchers), so no comma goes between them. But the whole phrase \"according to legal researchers James Melton and Tom Ginsburg\" interrupts the main clause and opened with a comma after \"constitution,\" so it must close with a comma before \"contains.\""
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second part of the sentence explains the \"striking differences,\" so a colon is the right introducer. After it, \"while the object 60558 Echeclus is considered an active centaur..., 2014 YX49... is considered dormant\" is a complete contrast sentence. Choices A and D would leave \"60558 Echeclus is considered...\" followed by a comma and another main clause, a comma splice."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"A Tear\" is the title that identifies which hit song, so it is essential and takes no punctuation: \"the hit song 'A Tear' by Gene McDaniels.\" A colon, semicolon, or comma would wrongly separate the noun from the title that defines it."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The long subject is a noun clause beginning \"That the repeated thermonuclear outbursts... have occurred at intervals as short as eight years,\" and it still needs a main verb. A noun clause is treated as singular, so \"is due\" is correct. \"Due,\" \"being due,\" and \"having been due\" are not finite verbs, so the sentence would be incomplete."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence's main verb is \"shows,\" whose subject is \"Aslanian's macroanalysis.\" The blank must start a modifier describing that analysis: \"macroanalysis examining nearly 1,000 book titles.\" Any finite verb (\"examines,\" \"examined,\" \"had examined\") would give the subject two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "NASA crashed a probe into Dimorphos, and as a result its orbital period changed. \"Consequently\" signals that cause-effect link. \"In addition\" would treat the change as a separate fact, and \"Specifically\" would treat it as a detail of the crash itself."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says what metals do not do (share and exchange electrons); the next gives what they do instead (are held together by free-moving electrons). \"Rather\" introduces a correction or alternative after a negative statement. \"For example\" and \"Likewise\" don't fit a contrast with a denied idea."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Hayden's poem is an example of a poem about a painting, and Ali's poem also takes a painting as its subject. \"Likewise\" signals that similarity. \"Conversely\" and \"nevertheless\" signal contrast, and \"hence\" signals a consequence."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The previous sentence says Fluc can produce light and can also act as an ACS enzyme. The next sentence restates this in plainer terms: Fluc is a two-function enzyme whose presence indicates the insect can glow. \"That is\" introduces such a clarifying restatement. \"Moreover\" would imply new information, and \"Nevertheless\" a contrast."
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An audience unfamiliar with cultural analysis needs a definition, and A states what it is (an approach to art criticism) and what it examines. Choice C describes one painting without naming the concept, and B and D focus on emphasis analysis."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The similarity in the notes is that both fibers heated up when twisted, which B states directly and attributes to the 2019 study. Choice C stresses a difference (NiTi heated more), A never says what happened to the fibers and wrongly mentions two research teams, and D doesn't mention either fiber.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Generally, an object will heat up when twisted.\n• The twisting of an object is known as torsion.\n• A 2019 study led by Zunfeng Liu and Ray Baughman tested the torsional heating of various fibers.\n• When a sample of styrene ethylene butylene styrene (SEBS) rubber fiber was twisted, its average surface temperature increased by 3.5°C.\n• When a sample of single-ply nickel-titanium (NiTi) wire was twisted, its average surface temperature increased by 21.3°C.",
+      "prompt": "The student wants to emphasize a similarity between SEBS rubber and single-ply NiTi wire fibers. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute t = 4: s = 40 + 2(4) = 40 + 8 = 48 miles per hour. Choice A (40) is the speed at t = 0, before any acceleration."
+  },
+  {
+    "key": "m1-02",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The triangle has a right angle, legs 8 and b, and hypotenuse 20 (the side opposite the right angle). By the Pythagorean theorem, 8^2 + b^2 = 20^2. Choice D subtracts instead of adding the squares of the legs."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The last bar (200 to 250 feet) has a frequency of 5, so at least one length is between 200 and 250, and the maximum must be in that interval. Of the choices, only 219 is. The values 69, 119, and 169 fall in lower bars, so a larger value would still exist."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 8(2x + 2) = 80. Divide by 8: 2x + 2 = 10, so 2x = 8 and x = 4. Choice C (10) is the value of 2x + 2, not x."
+  },
+  {
+    "key": "m1-05",
+    "answer": [
+      "16"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set the equations equal: x^2 + 8x + a = −0.5, or x^2 + 8x + (a + 0.5) = 0. No real solutions means the discriminant is negative: 8^2 − 4(a + 0.5) < 0, so 64 < 4a + 2 and a > 15.5. The least integer greater than 15.5 is 16."
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "33"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two equal parts together are 113 − 47 = 66 cm long. Each one is 66/2 = 33 cm."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "percentages",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Percent increase = (new − original)/original = (80 − 16)/16 = 64/16 = 4, which is 400%. Choice C (80%) wrongly compares 64 to 80, and B just uses the dollar increase of 64 as a percent."
+  },
+  {
+    "key": "m1-08",
+    "answer": "D",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The line falls from left to right, so its slope is negative, which rules out A and C. It drops about 1 unit for each unit to the right (for example, from about (−14, 16) to about (−4, 6)), so the slope is about −1. Extending it to x = 0 gives a y-intercept a little above 2, so y = −x + 2.3 fits; B's intercept of 16.3 is far too high."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "8"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "All three terms have x^6, so combine the coefficients: 7 + 9 − 8 = 8. The expression equals 8x^6, so b = 8."
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set the right sides equal: 5x + 8 = 6x − 2, so x = 10. Then y = 5(10) + 8 = 58, giving (10, 58). Choice D swaps the coordinates.",
+    "fix": {
+      "prompt": "At what point (x, y) do the graphs of the equations y = 5x + 8 and y = 6x − 2 intersect in the xy-plane?"
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The length is 72 times the width w, so the length is 72w feet. The area is length times width, (72w)(w), which matches the given function. Choice D is w itself, and B is the whole product y."
+  },
+  {
+    "key": "m1-12",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = 29 is a constant function: every input gives an output of 29. Only table B has f(x) = 29 for x = 0, 1, and 2. Table C doubles the output at x = 2, which a constant function never does.",
+    "fix": {
+      "prompt": "f(x) = 29\nFor the given linear function f, which table gives three values of x and their corresponding values of f(x)?",
+      "choices": {
+        "A": "x: 0, 1, 2; f(x): 0, 0, 0",
+        "B": "x: 0, 1, 2; f(x): 29, 29, 29",
+        "C": "x: 0, 1, 2; f(x): 29, 29, 58",
+        "D": "x: 0, 1, 2; f(x): 29, 0, −29"
+      }
+    }
+  },
+  {
+    "key": "m1-13",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Angles w and y sit in the same position where line k crosses r and s (both above k, on the right of each line), so they are corresponding angles. If y = 160 = w, the corresponding angles are equal, which proves r ∥ s. Choice A (x = 20) and D (y + z = 180) are always true because those angles form straight lines, so they prove nothing."
+  },
+  {
+    "key": "m1-14",
+    "answer": "C",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x − 2)^2 − 4 + (y − 4)^2 − 16 − 80 = 0, so (x − 2)^2 + (y − 4)^2 = 100 and r = 10. An inscribed circle touches all four sides, so the square's side equals the diameter, 20. The perimeter is 4(20) = 80. Choice B uses the radius as the side length."
+  },
+  {
+    "key": "m1-15",
+    "answer": [
+      "184"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Second webinar: 0.46 × 1,250 = 575 people. Third webinar (from those 575): 0.32 × 575 = 184 people attended all three."
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Evaluate f(x) = 24(2)^(x/6): f(−6) = 24(2)^(−1) = 12, f(0) = 24(1) = 24, f(6) = 24(2) = 48, f(12) = 24(4) = 96. Only table B matches. Table A wrongly gives f(0) = 0, but any number to the 0 power is 1.",
+    "fix": {
+      "prompt": "f(x) = 24(2)^(x/6)\nWhich table gives four values of x and their corresponding values of f(x) for the given exponential function?",
+      "choices": {
+        "A": "x: −6, 0, 6, 12; f(x): 12, 0, 48, 96",
+        "B": "x: −6, 0, 6, 12; f(x): 12, 24, 48, 96",
+        "C": "x: −6, 0, 6, 12; f(x): −12, 24, 48, 96",
+        "D": "x: −6, 0, 6, 12; f(x): 12, 24, 48, 72"
+      }
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A circle with center (h, k) and radius r has equation (x − h)^2 + (y − k)^2 = r^2. Here r = 6k, so r^2 = (6k)^2 = 36k^2. Choice A squares only the 6, not the k."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "6.75",
+      "27/4"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cube's volume is 3.000^3 = 27 cubic centimeters. Mass = density × volume = 0.250 × 27 = 6.75 grams. The number of trees (22) is extra information."
+  },
+  {
+    "key": "m1-19",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To convert radians to degrees, multiply by 180°/π. So −(5/12)π radians is −(5/12)π · (180°/π) degrees (which equals −75°). Choice B multiplies by π/180°, which converts degrees to radians, and A drops the π from the radian measure.",
+    "fix": {
+      "prompt": "The difference between the measure of angle A and the measure of angle B is −(5/12)π radians. Which expression shows the difference between the measure of angle A and the measure of angle B, in degrees?",
+      "choices": {
+        "A": "−(5/12) · (180°/π)",
+        "B": "−(5/12)π · (π/180°)",
+        "C": "−(5/12)π · (180°/π)",
+        "D": "−(5/12)π · (360°/π)"
+      }
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For ax^2 + bx + c = 0, the sum of the solutions is −b/a. Here that is −(−84)/1 = 84. Choice C (14) comes from using the constant term, which relates to the product of the solutions, not the sum."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "4096"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "AB runs from the apex to the edge of the base, so it is the slant height. The height, radius, and slant height form a right triangle: r^2 = 32^2 − 16^2 = 1,024 − 256 = 768. The volume is (1/3)πr^2h = (1/3)π(768)(16) = 4,096π, so k = 4,096."
+  },
+  {
+    "key": "m1-22",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line k has slope m, so line l, perpendicular to it, has slope −1/m. Starting from (2, 8) and moving 1 unit right to x = 3, y changes by −1/m, giving (3, 8 − 1/m). Choice D uses line k's slope, and B uses the reciprocal without the negative sign.",
+    "fix": {
+      "choices": {
+        "A": "(3, 8 − 1/m)",
+        "B": "(3, 8 + 1/m)",
+        "C": "(3, 8 − m)",
+        "D": "(3, 8 + m)"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "On this graph, x is the time in seconds and y is the height in meters. So the point (1.0, 3.9) means that 1.0 second after launch, the ball is 3.9 meters above the ground. Choice B swaps the two values, and the launch height is the y-intercept (about 3), not this point."
+  },
+  {
+    "key": "m2-02",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The term 16h is the money earned at the regular job, and h is the number of hours there. So 16 is the dollars earned per hour at the regular job. The second job's hourly pay is 13 (choice B)."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every list has mean 47, so the smallest standard deviation belongs to the list whose values are closest to 47. In D (46, 47, 47, 47, 48), three values equal the mean and the other two are only 1 away. The other lists all include values 2 or 3 away from 47."
+  },
+  {
+    "key": "m2-04",
+    "answer": "B",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Similar triangles have equal corresponding angles. Angle CAE corresponds to angle CBD (both are at the vertex opposite side CE or CD, next to the right angle), so angle CAE = 56°. The fact that AE = 24(BD) gives the scale factor for side lengths, but scaling doesn't change angle measures."
+  },
+  {
+    "key": "m2-05",
+    "answer": "B",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The probability of room C is 1 − 0.64 − 0.32 = 0.04. So the number of visitors in room C is 0.04 × 375 = 15. Choice D (120) is the number in room B."
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add the two equations: the x/4 terms cancel, giving y + y = 6 + 20, so 2y = 26. Choice C (14) comes from subtracting the equations instead of adding.",
+    "fix": {
+      "prompt": "y = x/4 + 6\ny = −x/4 + 20\nThe solution to the given system of equations is (x, y). What is the value of 2y?"
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The question asks for the total fat eaten over the 5 days, which is given directly: 22.0 pounds. So y = 22. Choice C, 22/5, is the average amount per day, not the total.",
+    "fix": {
+      "choices": {
+        "C": "y = 22/5"
+      }
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 22% decrease leaves 100% − 22% = 78% of the mass, so the growth factor is 0.78. The decrease happens once every 11.11 minutes, so after t minutes the number of decreases is t/11.11: M = 100(0.78)^(t/11.11). Choices A and B use 0.22, the amount lost, and A and C add 11.11 to t instead of dividing.",
+    "fix": {
+      "choices": {
+        "A": "M = 100(0.22)^(t + 11.11)",
+        "B": "M = 100(0.22)^(t/11.11)",
+        "C": "M = 100(0.78)^(t + 11.11)",
+        "D": "M = 100(0.78)^(t/11.11)"
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Parallel lines have equal slopes, so line j has slope 8. Since it passes through (0, 15), its y-intercept is 15: y = 8x + 15. Choice D has the right intercept but slope −8, so it isn't parallel to line k."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write p(x) = 8x + b. From p(5) = 42: 40 + b = 42, so b = 2. Then p(c) = 8c + 2 = −6 gives c = −1. So t(−1) = −7 and t(6) = 5(−1) = −5, and the slope of t is (−5 − (−7))/(6 − (−1)) = 2/7. Choice B (2) is just the rise without dividing by the run of 7.",
+    "fix": {
+      "choices": {
+        "C": "2/7"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "3"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let u = 4 − 5x. The equation becomes 2u + 7u + 9 = 8u + 6, so 9u + 9 = 8u + 6 and u = −3. Then 5x − 4 = −(4 − 5x) = −u = 3."
+  },
+  {
+    "key": "m2-12",
+    "answer": "D",
+    "skill": "linear-inequalities",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The boundary line passes through the marked point (−4, −10), so −4r − 10t = −44, or 2r + 5t = 22. Test each choice for r + t together with this equation: r + t = 5 gives t = 4 and r = 1, so the boundary is x + 4y = −44 with slope −1/4. The other choices give lines with positive slope (for example, r + t = −4 gives r = −14, t = 10, slope 7/5), but the boundary shown slopes downward, so r + t = 5.",
+    "note": "Figure looks redrawn: its line goes through (−10, −7), (−4, −10), (0, −12), i.e. x + 2y = −24, which can't match −44 with any listed choice. D is the only choice consistent with the marked point (−4, −10) and a negative slope. Prompt calls a shaded region the solutions of an equation; the original was probably an inequality."
+  },
+  {
+    "key": "m2-13",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Solve sqrt(3a + 8) = −9a. A square root is never negative, so −9a ≥ 0 and a ≤ 0. Squaring gives 3a + 8 = 81a^2, or 81a^2 − 3a − 8 = 0, whose solutions are a = 1/3 and a = −8/27. Only −8/27 is not positive; check: sqrt(64/9) = 8/3 = −9(−8/27). Choice A is the extraneous solution created by squaring.",
+    "fix": {
+      "prompt": "f(x) = sqrt(3x + 8)\nThe function f is defined by the given equation. If f(a) = −9a, where a is a constant, what is the value of a?",
+      "choices": {
+        "A": "1/3",
+        "B": "8/27",
+        "C": "−8/27",
+        "D": "−1/3"
+      }
+    }
+  },
+  {
+    "key": "m2-14",
+    "answer": [
+      "59/70",
+      ".8428",
+      ".8429",
+      "0.843"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Write both sides as powers of p. The left side is root[7](p^4) = p^(4/7). The right side is t^(5/6) = (p^(2n − 1))^(5/6) = p^(5(2n − 1)/6). Set the exponents equal: 4/7 = 5(2n − 1)/6, so 2n − 1 = 24/35, 2n = 59/35, and n = 59/70.",
+    "fix": {
+      "prompt": "root[7](p^4) = t^(5/6)\nIn the given equation, p > 1 and t > 1. If t = p^(2n − 1), where n is a constant, what is the value of n?"
+    }
+  },
+  {
+    "key": "m2-15",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "With vertex (1, 6), f(x) = a(x − 1)^2 + 6. Using (2, 40): a + 6 = 40, so a = 34 (and (−1, 142) checks: 34(4) + 6 = 142). Then f(−2) = 34(9) + 6 = 312 and f(0) = 34 + 6 = 40, so f(−2) − f(0) = 272. Choice D is f(−2) alone."
+  },
+  {
+    "key": "m2-16",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 15 to both terms: 15(x + 10) = 15x + 15(10) = 15x + 150. Choice A multiplies only the x by 15."
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The graph of y = f(x) + 2 has a y-intercept of 4 and levels off near y = 5 on the left, which matches y = −5^x + 5 (at x = 0, −1 + 5 = 4). Since f(x) + 2 = −5^x + 5, we get f(x) = −5^x + 3. Choice D is the equation of the graph itself, not of f."
+  },
+  {
+    "key": "m2-18",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A side 70% shorter is 30% of the original: 0.30 × 45 = 13.5 inches. The same 45 × 13 = 585 miles now fits in 13.5 inches, so 1 inch represents 585/13.5 ≈ 43.33 miles. Choice A (3.90) multiplies 13 by 0.30, but a smaller map must cover more miles per inch, not fewer."
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "87"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set each factor to 0: x = 0 (from 7x^2), x = 13/4, and x = u/4. Their sum is 0 + 13/4 + u/4 = (13 + u)/4 = 25, so 13 + u = 100 and u = 87. The zero solution adds nothing to the sum even though it is repeated."
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "1512"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For similar solids, the ratio of surface areas is the square of the scale factor: 1,475/59 = 25, so Y is 5 times as large as X in each dimension. Volumes scale by 5^3 = 125, so the volume of X is 1,500/125 = 12. The sum is 1,500 + 12 = 1,512.",
+    "fix": {
+      "prompt": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 59 cm^2, and the surface area of right rectangular prism Y is 1,475 cm^2. The volume of right rectangular prism Y is 1,500 cm^3. What is the sum of the volumes, in cm^3, of right rectangular prism X and right rectangular prism Y?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "1458"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide f(5) by f(2): (ab^(5/n))/(ab^(2/n)) = b^(3/n) = 162/6 = 27, so b^(1/n) = 3. Going from x = 5 to x = 7 multiplies the value by b^(2/n) = 3^2 = 9. So f(7) = 162 × 9 = 1,458.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = ab^(x/n), where a, b, and n are constants, and b and n are integers. If f(2) = 6 and f(5) = 162, what is the value of f(7)?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "1/12",
+      ".0833",
+      "0.083"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For Ax^2 + Bx + C = 0, the sum of the solutions is −B/A. Here that is (12a + 2b)/24. Factor out 2: 2(6a + b)/24 = (6a + b)/12, so k = 1/12."
+  }
+]

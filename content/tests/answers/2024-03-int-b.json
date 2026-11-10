@@ -1,0 +1,620 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The photograph sits on the window ledge and \"featured\" a portrait of Rosita, meaning the portrait is what the photo shows. \"Displayed\" captures that sense of presenting something to view. A photograph can't ignore, approve, or question anything, so the other choices don't fit.",
+    "fix": {
+      "passage": "The following text is from Darcie Little Badger’s 2021 novel A Snake Falls to Earth. Nina is looking at old family photographs.\n\nNina couldn’t stop looking at the sepia-toned photograph in an oak frame. Propped on the window ledge, it <u>featured</u> a portrait of Great-Great-Grandmother Rosita as a young woman."
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tom looks over the fence and immediately loses his gladness when he sees how big it is: thirty yards long and nine feet high. So \"surveyed\" means he examined or looked it over. He hasn't touched the fence yet, so he hasn't adjusted or organized it, and his gloomy mood rules out complimenting it.",
+    "fix": {
+      "passage": "The following text is from Mark Twain's 1876 novel The Adventures of Tom Sawyer: Tom, a child, has been told by his aunt to paint their house's fence.\n\nTom appeared on the sidewalk with a bucket of whitewash and a long-handled brush. He <u>surveyed</u> the fence, and all gladness left him and a deep melancholy settled down upon his spirit. Thirty yards of board fence nine feet high."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The \"but\" sets up a contrast with the claim that politicians make: most journalists actually try to be neutral, even if some let their views creep in. So politicians must be claiming journalists are not neutral, which is what \"biased\" means. \"Misinformed\" or \"irrelevant\" don't contrast with being neutral."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example after the colon shows two factors affecting each other: coastline geography shapes where sediment is deposited, and that deposition in turn reshapes the coastline. Factors that depend on one another are \"interdependent.\" \"Comprehensive\" might sound scientific, but nothing in the example is about covering everything; the point is the two-way influence."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The narrator describes watching people on stair machines through the gym window and says \"there ain't nothing funnier than that,\" even naming it \"The about to Pass Out Show.\" So the text describes something the narrator finds funny. The \"movie\" is only a joking comparison, not a film seen in a theater (A), and nothing is said about starting school or overcoming a problem.",
+    "fix": {
+      "passage": "The following text is adapted from Jason Reynolds’s 2016 novel Ghost. The narrator, who is in middle school, is at a bus stop.\n\nJust go there [to the bus stop] to look at the people working out. See, the gym across the street has this big window—like the whole wall is a window—and they have those machines that make you feel like you walking up steps and so everybody just be facing the bus stop, looking all crazy like they’re about to pass out. And trust me, there ain’t nothing funnier than that. So I check that out for a little while like it’s some kind of movie: The about to Pass Out Show, starring stair-stepper person one through ten."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined sentence says the association was founded in 1975 \"to support Black media professionals and honor people like Barnett,\" which states why it was created. It doesn't mention any challenges (A), name members (B), or list what the group has achieved (C).",
+    "fix": {
+      "passage": "In 1889, Ferdinand L. Barnett founded Omaha, Nebraska's first Black newspaper, The Progress. Barnett's accomplishment is just one example of the rich history of Black journalism in the United States. <u>That history is preserved by the National Association of Black Journalists, which was founded in Washington, DC, in 1975 to support Black media professionals and honor people like Barnett.</u>"
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first explains how cats and toads see in 3D by combining images from both eyes, then describes Nityananda's study showing mantises also have 3D vision. That matches B. The text doesn't contrast cats with toads (A), and the study shows mantis 3D vision is different, not that it confirms or challenges what was said about cats and toads (C, D)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says \"cocoa\" came from the Nahuatl word cacahuatl, while \"alpaca\" came from the Quechua word allpaqa. That is the difference stated in B. Both words entered English through Spanish, and the text says nothing about when they arrived, changes in meaning, or mistaken beliefs."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers concluded the 41 settlements were linked to Izapa because they are the same age and built the same way, with a pyramid to the north and plaza to the south. So their conclusion rests partly on similar construction, as A says. B reverses the relationship, and C and D add claims (about earlier research or the importance of ceremonies) that the text never makes."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If big opening weekends predicted Oscar nominations, the film with the higher opening should be the one nominated. The Girl Who Played with Fire opened with $904,998 and was not nominated, while Crouching Tiger, Hidden Dragon opened with only $663,205 and was nominated, which contradicts the claim. B and C compare lifetime earnings, not opening weekends, and D is about directors.",
+    "fix": {
+      "passage": "Many films in a language other than English grow to be financially successful over the course of their time in movie theaters in the United States, but some become immediate successes in their opening weekends. Such success is driven by many factors like advertising, genre popularity, and the fame of the actors and directors. A student claims that opening weekend earnings can reliably predict whether a film will be nominated for an Oscar: films that draw large audiences at the beginning of their release are the most likely contenders to earn these coveted award nominations.",
+      "table": {
+        "caption": "Highest-Grossing Films in a language other than English at US Box Office",
+        "headers": [
+          "Title",
+          "Lifetime gross earnings",
+          "Opening weekend box office gross earnings",
+          "US release date",
+          "Director",
+          "Oscar nominated?"
+        ],
+        "rows": [
+          [
+            "Crouching Tiger, Hidden Dragon",
+            "$128,078,872",
+            "$663,205",
+            "December 8, 2000",
+            "Ang Lee",
+            "Yes"
+          ],
+          [
+            "Eat Drink Man Woman",
+            "$7,294,403",
+            "$155,512",
+            "August 3, 1994",
+            "Ang Lee",
+            "Yes"
+          ],
+          [
+            "Iron Monkey",
+            "$14,694,090",
+            "$6,014,653",
+            "October 12, 2001",
+            "Yuen Woo-ping",
+            "No"
+          ],
+          [
+            "The Girl Who Played with Fire",
+            "$7,638,241",
+            "$904,998",
+            "July 9, 2010",
+            "Daniel Alfredson",
+            "No"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The conclusion is that only one country has more damaging insect species than fungus species. Bulgaria has 16 insect species versus 14 fungus species, while Great Britain (120 vs. 290) and Belgium (11 vs. 13) both have more fungi, so C describes exactly that. A gets Bulgaria's numbers backward, and B and D don't compare insects with fungi within each country.",
+    "fix": {
+      "passage": "Elisabeth Pötzelsberger and colleagues gathered data on 23 non-native tree species grown in Europe. They analyzed reports from Great Britain, Bulgaria, and Belgium about the number of these species grown in those countries as well as the numbers of insect and fungus species that damage those trees. The researchers concluded that in only one of these countries are there more insect species than fungus species that pose risks to these trees.",
+      "table": {
+        "caption": "Numbers of the 23 Non-native Tree Species Reported and the Insect and Fungus Threats to Them",
+        "headers": [
+          "Country",
+          "Trees",
+          "Fungi",
+          "Insects"
+        ],
+        "rows": [
+          [
+            "Belgium",
+            "4",
+            "13",
+            "11"
+          ],
+          [
+            "Great Britain",
+            "18",
+            "290",
+            "120"
+          ],
+          [
+            "Bulgaria",
+            "9",
+            "14",
+            "16"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says forests began to regrow after the mid-1980s. The graph shows all three classes rising from their lows around 1979 to much higher values in 2000 (for example, Class I-IV climbs from about 350 to about 1,050). A describes the earlier loss, not regrowth, and B and C compare classes at a single moment rather than showing change over time.",
+    "fix": {
+      "choices": {
+        "B": "difference between the forest cover area in Class I-IV and in Class VIII in 2000."
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Gayah claims that banning left turns would reduce overall travel times even if routes get slightly longer. If delivery drivers can reach more addresses each day after left turns were eliminated, their trips must be taking less time, which supports the claim. C is about left-turn signals, not eliminating left turns, and D shows longer travel times, which would weaken the claim."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researcher says some lakes have seen ice last longer, against the general decline. Lake Baikal had 96 days of ice in 1980-81 and 109 in 2005-06, an increase. C shows Kitusjärvi decreasing, which fits the general trend instead, and B and D compare latitudes, which has nothing to do with change over time.",
+    "fix": {
+      "passage": "It is common for freshwater lakes near or above a latitude of 45° north of the equator, like Lake Stechlin in Germany, to accumulate surface ice in winter. A study from 1980 to 2006 showed that, in general, the number of days per winter that such lakes have measurable amounts of surface ice is declining. However, a researcher claimed that some lakes have instead seen an increase in the duration of ice.",
+      "table": {
+        "headers": [
+          "Lake",
+          "Latitude",
+          "1980-81",
+          "1985-86",
+          "1990-91",
+          "1995-96",
+          "2000-01",
+          "2005-06"
+        ],
+        "rows": [
+          [
+            "Kitusjärvi",
+            "62.283",
+            "170",
+            "176",
+            "169",
+            "188",
+            "127",
+            "149"
+          ],
+          [
+            "Mirror Lake",
+            "43.94",
+            "122",
+            "129",
+            "125",
+            "136",
+            "141",
+            "119"
+          ],
+          [
+            "Lake Baikal",
+            "51.85",
+            "96",
+            "118",
+            "92",
+            "103",
+            "127",
+            "109"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Climate change can push species out of their old ranges and make new areas livable, so a species called \"invasive\" today might simply be moving into newly suitable habitat. That suggests states like Colorado may need to rethink how they label species. The text gives no history of rusty crayfish in Colorado (A) and doesn't recommend more cooperation against invasive species (C)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes a general, ongoing fact in the present tense: the languages \"have\" a clear difference and \"require\" technical knowledge. The plural subject \"laypeople\" therefore needs the present tense \"struggle.\" The past forms \"struggled,\" \"had struggled,\" and \"were struggling\" break that present-tense timeline."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The opening phrase \"A recipient of the Nobel Prize...\" describes a person, so the noun right after the comma must be that person: chemist Ahmed Zewail. Only B starts with Zewail. A, C, and D begin with \"the limits,\" \"the introduction,\" and \"the result,\" which would wrongly say those things received the Nobel Prize.",
+    "fix": {
+      "choices": {
+        "A": "the limits of measurability were expanded by chemist Ahmed Zewail, who introduced a new scientific discipline"
+      }
+    }
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The list \"including Rasta, Pretty Boy, and Makhulu\" is an interruption that ends with a dash before \"thrived.\" An interruption must open and close with the same punctuation, so a dash is needed after \"coalition.\" A comma or semicolon wouldn't match the closing dash, and no punctuation would leave the dash unpaired."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence describes what the area is now: a region long known for its natural, cultural, and historical features. The present tense \"is\" fits that ongoing fact. \"Had been\" and \"was\" would suggest it no longer is that region, and \"will have been\" points to the future."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"Several advantages\" (the dashes just list them), and the sentence needs a main verb before the semicolon. \"Have positioned\" is a plural verb that completes the clause. \"Having positioned,\" \"by positioning,\" and \"positioning\" aren't main verbs, so they would leave the sentence without one."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second part, \"while Jesus Rivera is listed first, Maryam... also made important contributions,\" explains the claim about multiple researchers, and a colon can introduce such an explanation; \"while\" makes the first clause dependent so no comma splice results. A and C leave \"Jesus Rivera is listed first, Maryam... made\" as two independent clauses joined only by a comma. B attaches \"while...\" to the first sentence and then still splices on \"Maryam... made\" with a comma."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says the station serves its community \"in several ways,\" and the next sentence lists specific ways: news, music, and Umatilla-language programs. \"For instance\" introduces those examples. Nothing is a result, a final outcome, or a contrast."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name the institution where Bucky is housed, and D says it is the Children's Museum of Indianapolis. C names only the city, not the institution, while A and B describe the fossil's genus and age.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Bucky is the nickname of a dinosaur fossil specimen from the Late Cretaceous period.\n• The Late Cretaceous period ended more than 65 million years ago.\n• Bucky is a member of the genus Tyrannosaurus.\n• Bucky is housed at the Children's Museum of Indianapolis.\n• The Children's Museum of Indianapolis is in Indianapolis, Indiana."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To correct the idea that Pangaea came first, the sentence should show Kenorland is older. B gives both dates, 2.6 billion versus 300 million years ago, and says Kenorland formed long before. C says they formed at different times but not which came first, and A and D don't address timing at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A supercontinent is a single landmass made up of most or all of Earth's continents.\n• Over time, continents merge together to form supercontinents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Kenorland and Pangaea were supercontinents.\n• Kenorland formed about 2.6 billion years ago.\n• Pangaea formed about 300 million years ago."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Carrying capacity is the same as deadweight tonnage, and the notes give the combined DWT as 9.6 million tons. C states that total for Belgium's ships in 2021. A and D give only the number of ships, and B just defines the term.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A merchant ship is any ship hired to carry cargo or passengers.\n• A ship's carrying capacity is also known as its deadweight tonnage (DWT).\n• In 2021, there were a total of 201 merchant ships registered in Belgium.\n• The combined DWT of these ships was 9.6 million tons.",
+      "prompt": "The student wants to identify the combined carrying capacity of Belgium's merchant ships in 2021. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the two refuges, the sentence must point out a difference between them. C uses \"while\" to set Mason Neck (Virginia, Atlantic coast) against Coachella Valley (California, Pacific coast). D states a similarity, and A and B mention only one refuge.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The United States has designated more than 500 areas National Wildlife Refuges (NWRs).\n• Some NWRs were established specifically to protect endangered species.\n• The Mason Neck NWR is a 2,276-acre area in Virginia, on the Atlantic coast.\n• It was established to protect the endangered bald eagle.\n• The Coachella Valley NWR is a 3,592-acre area in California, on the Pacific coast.\n• It was established to protect the endangered Coachella Valley fringe-toed lizard."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to explain why the day is called Trefle. C gives the reason: each day honors an aspect of rural life, so this day is named after a plant, the clover. A and D only state that the day was named Trefle without saying why, and B doesn't mention Trefle at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The French Republican calendar was developed during the French Revolution.\n• It had twelve months divided into three weeks of ten days each, followed by five supplemental days.\n• Each day was named after a plant, animal, agricultural tool, or mineral as a way of honoring an aspect of rural life.\n• Prairial is the ninth month of the French Republican calendar.\n• The third day of Prairial is named Trefle, which means “clover.”"
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Although\" signals a contrast: the films' reputation with critics is \"now more secure,\" so at first they must have faced some criticism. \"Detractors\" are people who criticize something. Precursors, collaborators, and imitators wouldn't make the films' standing less secure."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank describes views that contrast with \"nuanced\" ones and willingness to compromise, and the text calls them \"unyielding rhetoric.\" \"Dogmatic\" means rigidly insisting one's views are right. \"Vacillating\" means wavering, the opposite of unyielding, and \"banal\" or \"disingenuous\" don't match the idea of refusing to bend."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The examples show artists blending Inuit throat singing with electronic music and Indigenous rhythms with R&B. Mixing styles like this rejects the idea that Indigenous music must be kept separate from other styles. \"Observe\" would mean they respect the boundaries, which is the opposite of what the examples show."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says listeners who overlook Joplin's less famous works \"will miss the full range\" of his creativity and ends by saying those works \"deserve as much fame\" as his hits. That is an argument for paying more attention to them. The text doesn't compare ragtime with opera in general (B) or discuss other composers (C)."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text identifies a feature of the Aubrey/Maturin books, their abrupt endings, then gives two views: some critics see it as a flaw, while others say the series should be read as one long work. That matches C. The text doesn't claim the books are entertaining despite flaws (A) or argue that the series deserves Proust's level of fame (D)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 calls Asimov's style mediocre and his characters flat. Text 2 says it's unfair to fault him for that because his weak characterization serves his point that individuals don't matter over centuries of history. So Text 2's author would answer that the flat characters are a deliberate choice that conveys an important idea. Text 2 never compares him to historians (B) or praises his characters (C).",
+    "fix": {
+      "passage": "Text 1\n<u>Isaac Asimov, author of The Naked Sun and The Stars, Like Dust, is highly regarded despite his mediocre writing style. His prose is workmanlike; his characters are flat and discuss ideas rather than emotions.</u> That his work is enjoyable despite this is a testament to his prodigious imagination—even if people read his books only for the ideas, they will have plenty to consider.\n\nText 2\nAsimov is critiqued for his style, but it is wrong to fault a writer for failing to do what he never intended to do. For example, although most of his novel Foundation consists of people discussing science and politics and we find out little about his characters' lives, Asimov wanted to convey the vast sweep of human history over centuries, and one of his points is that at such a timescale, individuals don't matter. Thus his lack of characterization is central to Asimov's thematic aims."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says hDNA \"offers unique benefits,\" such as revealing where organisms originated. A benefit that is unique is one other genomic data can't provide, which is what D says. The text says hDNA is often degraded but never compares it to other DNA of the same age (A), and it blames underuse on degradation, not controversy (B).",
+    "fix": {
+      "passage": "Shanlin Liu and colleagues relied on historical DNA (hDNA)—genomic data incidentally preserved in specimens housed in natural history collections—to investigate the evolutionary history of the rhinoceros family (Rhinocerotidae). Although this approach offers unique benefits, such as the ability to ascertain the biogeographical origins of organisms, it remains a relatively underutilized resource because hDNA is often to some extent degraded, a situation not easily remediable under current methodological paradigms and with extant DNA extraction and analysis technologies.",
+      "prompt": "Information in the text best supports which statement about hDNA?"
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Chan's team studied convergence through a shared genetic mechanism, and Steiner's team studied it through different mechanisms. Green and Extavour evaluated both types in a single study, so their work is more comprehensive. B is wrong because Chan's team looked at only one type, and the text never says the 2012 study reused the earlier data (D) or that shared mechanisms were assumed to be required (A)."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers compared a female sample with a male sample and read the oxygen-18 levels as signs of depth. That only works if sex doesn't affect how oxygen is taken up and stored in the septa; otherwise the difference could come from sex rather than depth. D rules that out. B would undermine the conclusion by offering sex as an alternative explanation."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Traceability is the rating for how clearly a study describes its procedures, so the claim that Kozak and Keoleian's methodology was \"better explained\" depends on their having a higher traceability rating. If their traceability rating were lower than Chancerel and Rotter's, the conclusion would be undercut. B concerns consistency, which measures category alignment, not how well methods are explained, and C would support the conclusion.",
+    "fix": {
+      "choices": {
+        "A": "The study by Chancerel and Rotter had a medium consistency rating and a medium traceability rating."
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Toomer uses figurative language to link Washington, DC, with the rural South. In C, soil from the narrator's southern homeland \"falls like a fertile shower\" on the streets of Washington, joining the two places in one image. A and D mention only Washington, and B describes a valley's train whistles without connecting them to the city."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Net CO2 rises when less carbon is absorbed or more is released. In D, early snow melt reduces soil moisture, slowing plant growth (less CO2 taken in), and raises heterotrophic respiration (more CO2 released), so both effects push net CO2 up. B would increase absorption with no extra release, lowering net CO2, and A suppresses respiration, so its effect is unclear at best."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The example must show a large change within one species over time. The Indo-Pacific sergeant line goes from about 2 fish in January 2001 to about 28 in October 2001, a big within-species swing. D compares two different species, and A gets the rockskipper's pattern wrong: it was lowest in January and April, not highest."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says SAGE needs extensive funding because it samples people over many years, while a study that doesn't need causal answers can skip longitudinal methods. A non-longitudinal sociology study would therefore likely cost much less than SAGE. A compares SAGE to longitudinal sociology studies, which the text doesn't discuss, and D overgeneralizes to all sociology."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says almost all scholars with expertise in textual issues worked with Gabler, so they wouldn't review the edition. The reviewers would then be people who lacked that expertise and couldn't spot the edition's editorial problems, which makes mostly positive reviews unsurprising. A and C predict negative reviews, which doesn't fit the idea that experts were unavailable, and D's reasoning about publication locations has nothing to do with the text's point."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Its geographical position in the center of the island\" explains what the area is well known for, so a colon after the complete clause \"what the area is well known for\" introduces it correctly. C splits \"known for\" with the colon, D uses a semicolon before something that isn't an independent clause, and A runs the words together without any break."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"President Mikhail Gorbachev's reforms,\" and the phrase between the commas is an interruption. The sentence still needs a main verb, and \"contributed\" provides it. \"Contributing,\" \"having contributed,\" and \"which contributed\" can't serve as main verbs, so they would leave the sentence incomplete."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"For example, all... light passes through krotite, which is classified as transparent\" is a complete sentence, and \"Allowing only some light to pass through, beryl is instead classified as translucent\" is another. A period between them is correct. B, C, and D would attach the \"allowing\" phrase to krotite, wrongly saying krotite lets only some light through."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"is\" (\"La Pittura... is a highly regarded example\"), so the words between the commas must be a modifier, not a second verb. \"Functioning\" creates the descriptive phrase \"symbolically functioning to portray the power of female artists.\" The other choices are finite verbs that would give the sentence two main verbs with no conjunction."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The part after the blank is a complete clause that explains how cells with the same DNA develop different functions. A colon correctly introduces that explanation. A comma alone (A) creates a comma splice, no punctuation (B) creates a run-on, and \"and,\" (C) doesn't correctly join the clauses."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"That the geographic center... was conceded by all involved\" and \"establishing its precise coordinates proved more divisive\" are both independent clauses. A semicolon correctly joins two related independent clauses. A comma alone (D) is a comma splice, no punctuation (A) is a run-on, and a colon (B) wrongly suggests the second clause explains the first rather than contrasting with it."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first describes a head found at La Venta, then mentions another head found at a different site, San Lorenzo. \"Elsewhere\" signals the change of location. The second discovery isn't caused by the first (A), doesn't give more detail about Monument 3 (B), and isn't an example of it (C)."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says urbanization rose throughout Southeast Asia, and the next sentence gives region-wide numbers proving it (47.2% to 50%). \"Indeed\" introduces a statement that confirms and strengthens what came before. \"Nevertheless\" and \"In reality\" would signal a contrast, and \"Later\" is wrong because both refer to 2015-2020."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Nazareth believed Elvis's music is best understood as an anthology, and he named his course \"Elvis as Anthology\" and focused it on Elvis's influences. Naming the course that way was a way of acting on his belief, so \"To that end\" fits. \"In sum\" and \"That is\" would mean the second sentence restates the first, which it doesn't."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say a book enters the public domain when its copyright expires. D uses that rule to explain why Billy Budd, Sailor became public domain: its copyright expired in 2020. A and C describe what was true before or after it entered the public domain but not why it did, and B gives no reason at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A copyright prevents a book's contents from being reproduced (published) without permission from the copyright holder.\n• When a book's copyright expires, the book enters the public domain.\n• Public domain books can be legally reproduced by anyone.\n• Billy Budd, Sailor is a novella by Herman Melville.\n• It was published in 1924 and entered the public domain on January 1, 2020 (ninety-six years later)."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a specific example of a service municipalities provide, and C names one: water treatment. D says municipalities provide \"many public services\" without naming any, and A and B give population and count facts that aren't services.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Xochicoatlán is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is water treatment.\n• Xochicoatlán's population was 7,015 in 2020.\n• Hidalgo is divided into 84 municipalities."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to compare fluorite and corundum, and A does that: corundum can scratch fluorite, so corundum is harder. B compares quartz with fluorite, C compares corundum with quartz, and D just says the scale can order the minerals without actually comparing the two.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral fluorite has a Mohs scale number of 4.\n• The mineral quartz has a Mohs scale number of 7.\n• The mineral corundum has a Mohs scale number of 9."
+    }
+  }
+]

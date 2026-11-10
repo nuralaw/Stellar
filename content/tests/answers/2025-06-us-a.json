@@ -1,0 +1,1029 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Gogol carves his name into clay and leaves his signature below paintings, so in both cases he is putting a mark of his name on his artwork. \"Marks\" fits both verbs. \"Passes,\" \"turns\" and \"follows\" don't describe making a signature on something."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says elements of the mission style have been reproduced throughout the state, and Santa Clara University is given as an example, so its design copies, or imitates, that style. \"Renovate\" means to repair, and \"neglect\" and \"reject\" contradict the idea that the style was reproduced."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Weeds spread quickly and become hard to remove, so stopping, or halting, their spread is difficult. \"Retrieving\" and \"saving\" don't make sense with the spread of weeds, and \"pretending\" is unrelated to controlling plants."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The minaret is one of the features almost always included in mosques, so it is a typical, identifying feature, a hallmark, of mosque architecture. \"Duplicate\" might be tempting because the feature repeats across mosques, but the minaret isn't a copy of the architecture; \"rejection\" and \"motivation\" don't fit at all."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase comes right after \"convergent evolution\" and explains what that term means. The rest of the text is about how convergence happens, so the phrase defines a phenomenon central to what follows. It names no studies (A), the author never says the concept was unclear (C), and it is a definition, not a research method (D).",
+    "fix": {
+      "passage": "Benjamin Prud'homme and colleagues have explored how convergent evolution—<u>a phenomenon that occurs when the same trait evolves independently in two reproductively separate lineages</u>—can result from a genetic mechanism shared by both lineages. Meanwhile, Patricia J. Wittkopp and colleagues have investigated how convergence occurs through different genetic mechanisms, but the relative prevalence of convergence through shared and different genetic processes is still poorly understood. This motivated biologists Delbert A. Green II and Cassandra G. Extavour to evaluate both types of convergence in a single study for their 2012 paper."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text opens with two Ojibwe words (wăsa and wa-wăsa), then names the general phenomenon they show (reduplication), and ends by saying there are many such examples in Ojibwe. That matches C. The text doesn't compare Ojibwe with other languages (A), discuss translation (B) or mention any scholarly controversy (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 presents only one explanation for Nadir, an asteroid impact, and lists evidence for it. Text 2 considers two other possible causes, carbonate dissolution and salt withdrawal, and weighs whether each could explain the crater. D is tempting, but Text 2 actually argues against the alternatives, not against the impact explanation."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says Miguel was hoping \"not only to meet us but to make the acquaintance of the poet himself,\" so he came to meet both the sisters and their father. It is the narrator, not Miguel, who has learned everything from Alejandro (A), and nothing says Miguel wants a mentor (B) or feedback on his poems (C)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Knight imitated Hair's fast-painting technique, which helps explain the impressionistic qualities now seen as typical of the Highwaymen's shared style. Reagan, by contrast, painted with more attention to detail and did not fully embrace that approach, so Knight's works likely look more typical of the group than Reagan's. The text doesn't judge any painter's work as inferior (C) or more interesting (D), and it gives no basis for B."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The author says many factors influence whether people walk and that no single factor fully explains a city's pedestrian habits. So Vancouver's many pedestrian amenities are best seen as one factor among several. The text never ranks the factors (C), reverses cause and effect (B) or says amenities reduce walking elsewhere (A)."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim compares damaging fungus species across all three countries, so the support must show Great Britain's fungus number (290) is higher than both Switzerland's (43) and Hungary's (18). Only C does that. B compares fungi with insects, A is only about Hungary, and D misreads the tree column (11 and 1) as fungus species.",
+    "fix": {
+      "passage": "Elisabeth Potzelsberger and colleagues gathered data on 23 non-native tree species grown in Europe. They analyzed reports from Great Britain, Switzerland, and Hungary about the number of these species grown in those countries as well as the numbers of insect and fungus species that damage those trees. The researchers concluded that Great Britain had a greater number of damaging fungus species than either of the other countries did.",
+      "table": {
+        "headers": [
+          "Country",
+          "Trees",
+          "Fungi",
+          "Insects"
+        ],
+        "rows": [
+          [
+            "Great Britain",
+            "18",
+            "290",
+            "120"
+          ],
+          [
+            "Hungary",
+            "1",
+            "18",
+            "13"
+          ],
+          [
+            "Switzerland",
+            "11",
+            "43",
+            "78"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the speaker criticizes people who help those in faraway lands while ignoring problems at home. Choice B does this: those who plead for exiles \"from far-distant shores\" should remember that lives are being wasted \"around your own doors.\" A is about God's justice, C is a patriotic blessing, and D is about writing songs for the people."
+  },
+  {
+    "key": "rw1-13",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The Amur grape is the dark gray bar: it reaches about 150 for opposite-side pairs and about 60 for same-side pairs. B gives the frost grape's values (about 110 and 45), and C and D use the riverbank grape's 650 or wrongly claim zero same-side pairs."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion is that a later onset of freezing helps invasive plants more than natives. If both plants keep making leaves later in such years but the invasive knotgrass extends its season much more than the native mooseberry, the invasive gains the bigger advantage, as A says. C shows the opposite, B shows no effect at all, and D adds a confounding factor (early spring) that weakens the link."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "People recruited through their own social networks stayed in the study at much higher rates than people recruited by strangers. A logical explanation is that being asked by someone you know creates a sense of obligation to keep participating. The study did not compare network sizes (B) or rural and nonrural participants (C), and D doesn't explain the retention result."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Currently\" and the present-tense \"can view\" show the painting is on display now, so the present tense \"hangs\" is needed. \"Hung\" and \"was hanging\" place the action in the past, and \"will have hung\" points to the future."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"The extensor digitorum brevis\" needs a main verb, and the clause \"which is attached to the calcaneus\" is only a description. \"Bears\" is a finite singular verb that completes the sentence. \"Bearing,\" \"to bear\" and \"having borne\" are not main verbs, so they leave a fragment."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject \"Oscar James Dunn\" is followed by a long descriptive phrase set off by commas, and the sentence still needs a main verb. The past-tense \"began\" fits, since the event happened in 1868. \"To begin,\" \"having begun\" and \"beginning\" can't act as the main verb."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"With over three millennia of climate data in its tree rings\" is an introductory phrase, not a complete sentence, so it ends with a comma before the main clause \"a single tree like this... can tell the history of the world.\" A period or semicolon (A, B) would leave the phrase as a fragment, and \"and\" (C) wrongly joins a phrase to a clause."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence that mentions \"two other Black Americans,\" and the names that follow identify them, so a colon is right. A semicolon or period (B, C) would leave the list of names as a fragment, and no punctuation (D) runs the names straight into \"Congress\" as if they were part of it."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the pseudonym did more than hide Thomson's identity, and the next sentence confirms and expands that point by explaining the rhetorical strategy. \"Indeed\" signals this kind of reinforcement. \"Conversely\" and \"However\" signal contrast, and \"In addition\" suggests a separate new point rather than an elaboration."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Dillard struggles with nature's contradictions throughout the book, and the second sentence gives where that struggle ends up: she sees beauty and harshness as linked. \"Ultimately\" signals this final conclusion. \"Hence\" implies a direct logical consequence, \"To that end\" implies a purpose, and \"Moreover\" just adds a point."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity, and the notes say both birds are found on the Galápagos Island of Floreana, which is exactly what C states. A contrasts their weights, while B and D each mention only one of the birds.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Galápagos penguin is a species of bird that can be found on the Galápagos Island of Floreana.\n• It has an average weight of 2.5 kilograms.\n• The grey warbler finch is a species of bird that can be found on the Galápagos Island of Floreana.\n• It has an average weight of 9 grams."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize orthoclase's Mohs number, the sentence should state it and explain what it means. B gives the number 6 and places orthoclase between fluorite (4) and corundum (9). A and D focus on corundum, and C doesn't give any number.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Mohs scale of mineral hardness is a ten-point scale that orders minerals by hardness based on their ability to scratch other minerals.\n• Minerals with larger numbers are harder than minerals with smaller numbers and can leave visible scratches on them.\n• Minerals with smaller numbers are softer than minerals with larger numbers and cannot leave visible scratches on them.\n• The mineral fluorite has a Mohs scale number of 4.\n• The mineral orthoclase has a Mohs scale number of 6.\n• The mineral corundum has a Mohs scale number of 9."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to name the story, and only B gives its title, \"John Redding Goes to Sea.\" The other choices give the year, the magazine or the fact that it was a short story, but never the title.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Zora Neale Hurston was an acclaimed writer.\n• Her first published work of fiction was a short story.\n• It was called \"John Redding Goes to Sea.\"\n• It first appeared in Stylus in 1921."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes say both first position and demi-seconde position are positions for the dancer's arms, and A states that shared feature. B wrongly places both in Royal Academy of Dance ballet, C stresses a difference, and D mentions only one position.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Body positions are a fundamental aspect of dance.\n• In Vaganova method ballet, there is a position for the dancer's arms called first position.\n• In the position, both arms are rounded to roughly align the fingers with the navel.\n• In Royal Academy of Dance ballet, there is a position for the dancer's arms called demi-seconde position.\n• In this position, both arms are out to the sides but angled downward."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "B links Steele's sculpture to the history of neon in art by placing her among the artists who have made neon popular since the 1960s. A focuses on how neon is made, C on neon in general without the sculpture, and D wrongly says neon's artistic popularity has declined, when the notes say it is still popular.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Save Me is a 2018 sculpture by American artist Olivia Steele.\n• It is a pink neon sign that spells out the title phrase.\n• Neon signs became popular with advertisers in the 1920s and began to decline in popularity in the 1960s.\n• Neon signs became popular with artists in the 1960s and continue to be popular today.\n• Writer Sarah Archer says, \"[Neon signs] must be made by hand because there's no cost-effective way to mass produce them.\""
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text argues that being first is what really earns a lasting place in memory, so little can win out over, or prevail over, being first. The Wanderwell example supports this. \"Overreach by,\" \"fluctuate with\" and \"constrain within\" don't express one thing beating another in importance."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The research had a shortcoming, a narrow focus on a few regions, and new data from Africa and Eastern Europe let researchers improve, or ameliorate, it. \"Rationalize\" would mean excusing the flaw, \"sanction\" would mean approving it, and \"postulate\" means to assume something, none of which fits fixing a problem."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After the colon, the text says new buyers flooded the market because of rising prices, so the price increase brought out, or elicited, new demand. That is counterintuitive because higher prices usually lower demand. \"Satisfying\" demand would mean meeting it, and \"capitalizing\" and \"exploiting\" don't describe creating demand."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The frequent citations show that other economists find McGrattan's work valuable, so they emphasize, or underscore, its usefulness. \"Belies\" means to contradict, which is the opposite, and \"forestalls\" and \"overshadows\" don't fit the idea of providing evidence for something."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined finding, that the air around the mushrooms got cooler, is exactly what inspired the team's air-cooling device described next. So it sets up the practical application. It is about the surrounding air, not evidence that the fungi themselves are hypothermic (B), and it came from the study rather than motivating it (D) or being explained by a later experiment (C).",
+    "fix": {
+      "passage": "Shedding light on the thermal biology of fungi, research by Radamés Cordero et al. indicates that certain mushrooms (including Coprinellus micaceus and species from the genus Cantharellus) can achieve a hypothermic state through evaporative cooling. Effects of this thermoregulation were not limited to the fungi's fruiting bodies and root-like hyphae: <u>temperature reductions were observed in the air immediately surrounding the mushrooms</u>. Though slight, the reductions inspired an air-cooling device; using approximately 400 grams of mushrooms, the team's prototype lowered the air temperature in a controlled environment by 10 °C in forty minutes."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The drop in solid-fuel use in Algeria is a shift that is often explained by the energy ladder, and the text then uses the Ghana study to show that this model is too simple. So the Algeria information illustrates a phenomenon that the energy ladder commonly but inadequately explains. The text doesn't call such changes poorly suited for testing the model (A), offer two equally good explanations (B), or link Algeria's trend to a cause in Ghana (C)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "La Paz respondents used parks much more often even though fewer of them lived within a 10-minute walk of a park, so the text concludes that proximity alone can't explain the difference. That means something other than proximity is responsible. The text says nothing about expectations (A), older sources (B) or survey errors (C)."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If the birds didn't react to random noise, then their freezing and scattering came from the alarm calls specifically, not from any sound at all. That directly supports the idea that they link these calls with danger. D suggests the birds were reacting to the researchers instead, B is about other species, and C doesn't rule out a general reaction to noise."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The research question asks whether perceived category similarity predicts buying brand extensions. To answer it, the team needs consumers' ratings of how similar the two product categories in each pair are, then a check of whether those ratings line up with the purchase-probability changes already calculated, as in A. B rates products within one category instead of across the pair's two categories, and C and D measure brand recognition, which isn't the variable in question."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "low",
+    "explanation": "In the graph, P3's correlations are positive for both abstract (about 0.16) and cubist (about 0.31) paintings, so the model's predictions move in the same direction as P3's actual ratings. Under the stated assumption that P3 rated the two styles equally, the intended conclusion is that the model also predicted equal ratings for the two styles. A and C claim a preference the assumption rules out, and D contradicts the equal ratings.",
+    "note": "Flawed item: a correlation doesn't show the level of predicted ratings, so no choice strictly follows from the graph. Kept the printed answer B; a human may want to review or drop this question."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The \"wonder stories\" genre was Mooney's own invention, based on geographic detail, and the Cherokee are not known to have divided their stories into genres before his work. So there is no reason to think the elders saw geographic detail as making those stories a different kind of story. The text doesn't discuss stories the elders didn't share (A), whether the details were accurate (B) or Long's role in the classifications (C)."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Most studies, including ones outside North America like Luo's in China, found that dissolved organic carbon and mercury rise together, and few matched the Finnish result. That suggests the positive association is the usual pattern in fresh water, not a North American quirk. This contradicts B, and the text gives no support for A or D."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Three-host CLPs are usually shielded from the outside environment during transmission, which should have helped them in warming seas, yet their numbers fell while directly transmitted parasites held steady. So whatever protection their strategy gave was outweighed by other harmful effects of warming. A contradicts the results, and C and D aren't supported by anything in the text."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For every class of animals, including birds, some studies found differences well above the fish average. Any bird study above the fish average must exceed at least some individual fish studies, so some bird studies found larger effects than some fish studies did. B contradicts the averages, and the text gives no basis for A or C."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers to the narrative belonging to the poem, a singular noun, so the singular possessive \"its\" is needed. \"It's\" means \"it is,\" \"they're\" means \"they are,\" and \"their\" is plural, which doesn't match one poem."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Here \"though\" begins a dependent clause (\"though deposits... lend the sand a unique pink hue\") attached to the main clause, so a comma before it and no punctuation after it is correct. A colon or semicolon (B, D) would cut the dependent clause off as a fragment, and a comma after \"though\" (C) wrongly treats it as an interrupting word."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first part is a complete sentence ending in \"three signature elements of Gwendolyn Brooks's poetic style,\" and the three elements are then listed, so a colon introduces them. A period or semicolon (A, D) would leave the list as a fragment, and a comma (B) can't introduce a list whose items are separated by semicolons."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"behavioral economists,\" not \"Gee,\" who appears only in the phrase \"such as Gee.\" A plural subject needs the plural verb \"contend.\" The other choices are all singular verb forms."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Wildlife biologist\" is a title that comes right before the name, and the name is essential to identify the person, so no punctuation separates them. Commas (A, B) would wrongly treat the name as extra information, and a colon (C) can't come between the subject and the verb \"is.\""
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the plural \"lost works,\" with \"like Lucan's poem\" and the dash phrase as interruptions, so the plural verb \"have become\" is needed. \"Is becoming,\" \"has become\" and \"becomes\" all agree with a singular subject, which would wrongly match \"poem.\""
+  },
+  {
+    "key": "rw2-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The main verb of the sentence is \"ensured,\" so the blank must start a phrase that describes the lens. \"Focusing\" does this: a lens focusing the laser on the crystal. \"Focuses\" and \"focus\" would add a second main verb, and \"focused\" would mean the lens itself had been focused."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The JWST sits almost a million miles from Earth, while the Hubble is only about 340 miles up, so the two sentences contrast. \"By contrast\" signals this. \"Similarly\" signals likeness, \"Therefore\" signals a result, and \"Secondly\" signals a list."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because contour and box modeling handle only thousands of shapes, they are cheaper to run than methods that handle millions. \"As such\" signals this consequence. \"For example\" and \"Specifically\" introduce illustrations or details, and \"Instead\" signals a replacement."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The last sentence explains what \"annular\" means: the Moon didn't fully cover the Sun and left a ring of fire. \"That is\" introduces such a clarification. \"For example\" would introduce an instance, \"Meanwhile\" a simultaneous event, and \"Nonetheless\" a contrast."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the refuge's size, and only D gives it: 90 acres. A, B and C describe who manages the refuge, where it is and what lives there, but never its size.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• The Pilot Knob National Wildlife Refuge (NWR) is a protected natural area in Missouri.\n• It encompasses 90 acres.\n• It was established to safeguard the habitat of the Indiana bat, an endangered species.\n• The Pilot Knob NWR is managed by the US Fish & Wildlife Service.\n• The US Fish & Wildlife Service limits human activities in the area."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "medium",
+    "explanation": "A narrative about one athlete should start with a moment in that person's story, and B does this by describing Martin's first game for the Patriots as the start of his career. A and C mention both athletes, and D jumps to the end of Martin's career, summarizing it rather than beginning a story.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• Curtis Martin and Jim Brown had historic careers as running backs in the National Football League (NFL).\n• The running back position entails running, or rushing, down the field with the football to gain yards for the team.\n• Curtis Martin gained a total of 14,101 rushing yards in his career.\n• He played for the New England Patriots and the New York Jets.\n• Jim Brown gained a total of 12,312 rushing yards in his career.\n• He played for the Cleveland Browns."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Platanares plant uses a binary cycle system, and Fazal says such systems return all fluid to the injection well and have \"the least environmental impact,\" so C explains an advantage with his quotation. A applies a quotation about geothermal power versus solar and wind to binary systems, B gives the wrong reason for low emissions, and D describes the system without naming an advantage.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n\n• According to researcher Muhammad Rayyan Fazal, \"geothermal electric energy...[is] capable of producing more energy per megawatt per year as compared to similar capacity solar and wind power systems.\"\n• Geothermal power plants typically employ dry steam systems, flash steam systems, or binary cycle systems to produce electricity from high-temperature geothermal fluid.\n• The Platanares geothermal power plant in Honduras uses a binary cycle system.\n• Fazal says that binary cycle systems \"pump 100% geothermal fluid back to the injection well, hence offering the least environmental impact with little or no emissions.\""
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute 6xy to each term: 6xy · 2x^2 = 12x^3y and 6xy · 5y = 30xy^2. So the product is 12x^3y + 30xy^2. Choice C multiplies the coefficients but drops an x from the first term and a y from the second.",
+    "fix": {
+      "prompt": "Which expression is equivalent to 6xy(2x^2 + 5y)?"
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every term has at least x^4, so factor it out: 7x^6 − 2x^5 + 9x^4 = x^4(7x^2 − 2x + 9). Multiplying back confirms it. Choice A drops the 9x^4 term, and C would give 63x^6 instead of 7x^6."
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The height y is 61, so y = 61. The length x is 3 times the height, so x = 3y. Choice B reverses the relationship (it says the height is 3 times the length)."
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A line through (0, 0) has y-intercept 0, so f(x) = mx. With slope −54, f(x) = −54x. The other choices have the wrong slope."
+  },
+  {
+    "key": "m1-05",
+    "answer": "C",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 18: g(18) = (5/9)(18) − 7/9 = 10 − 7/9. Writing 10 as 90/9 gives 90/9 − 7/9 = 83/9. Choice D, 97/9, comes from adding 7/9 instead of subtracting.",
+    "fix": {
+      "prompt": "The function g is defined by g(x) = (5/9)x − 7/9. What is the value of g(18)?",
+      "choices": {
+        "A": "38/9",
+        "B": "52/9",
+        "C": "83/9",
+        "D": "97/9"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": [
+      "67"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 2^2 + 2 + 61 = 4 + 2 + 61 = 67."
+  },
+  {
+    "key": "m1-07",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When x = 0 (the moment the height was first measured), f(0) = 5(0) + 7 = 7. So 7 is the estimated height, in feet, at the first measurement. The yearly increase is the slope, 5, not 7, so C is wrong."
+  },
+  {
+    "key": "m1-08",
+    "answer": [
+      "7"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "With slope 5 and y-intercept −35, the line is y = 5x − 35. At the x-intercept y = 0, so 5x − 35 = 0 and x = 7.",
+    "fix": {
+      "prompt": "In the xy-plane, line k has a slope of 5 and a y-intercept of (0, −35). What is the x-coordinate of the x-intercept of line k?"
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "9"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since k > −6, k + 6 is not zero, so it cancels from the top and bottom: 27(k + 6)/(3(k + 6)) = 27/3 = 9. So c = 9.",
+    "fix": {
+      "prompt": "27(k + 6)/(3(k + 6))\nThe given expression is equivalent to c, where c is a constant and k > −6. What is the value of c?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For similar triangles, the ratio of perimeters equals the ratio of corresponding sides. XYZ's perimeter is 150/50 = 3 times TUV's, so XY = 3 · 6 = 18. Choice D, 56, adds the difference in perimeters instead of scaling.",
+    "fix": {
+      "prompt": "The table gives the perimeters of similar triangles TUV and XYZ, where TU corresponds to XY. The length of TU is 6.\nWhat is the length of XY?",
+      "table": {
+        "headers": [
+          "Triangle",
+          "Perimeter"
+        ],
+        "rows": [
+          [
+            "TUV",
+            "50"
+          ],
+          [
+            "XYZ",
+            "150"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m1-11",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let t = 7 − 8x. Then 9t + 2 = 8t + 17, so t = 17 − 2 = 15. There's no need to solve for x, since the question asks for 7 − 8x itself."
+  },
+  {
+    "key": "m1-12",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both equations equal y, so (x + 33)^2 = x + 33. Let t = x + 33: t^2 = t gives t = 0 or t = 1, so x = −33 or x = −32. Only −32 is a choice. Choice D, 33, comes from a sign slip."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In (x − h)^2 + (y − k)^2 = r^2, the center is (h, k) and the radius is r. Here the center is (14, k) and r^2 = 36, so r = 6. Choice D mistakes r^2 = 36 for the radius."
+  },
+  {
+    "key": "m1-14",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The equation is in vertex form y = a(x − h)^2 + k with vertex (6.8, 740), and a = −16 is negative, so the vertex is a maximum. That means the firework reaches its highest point, about 740 feet, 6.8 seconds after launch. The −16 is not a time, so A is wrong."
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(x) = 0 where the graph meets the x-axis. The graph crosses the axis near x = −3 and just touches it at x = 1 (a turning point on the axis), so there are two distinct zeros. Choice C is tempting because a cubic can have three zeros, but the touching point counts only once as a distinct value."
+  },
+  {
+    "key": "m1-16",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle M has center (3, 6) and radius sqrt(4) = 2. Circle P keeps the center and has radius 4, so its equation is (x − 3)^2 + (y − 6)^2 = 4^2 = 16. Choice A doubles r^2 instead of r, and C and D wrongly move the center.",
+    "fix": {
+      "prompt": "In the xy-plane, circle M is the graph of the equation\n(x − 3)^2 + (y − 6)^2 = 4\nCircle P has the same center as circle M but has a radius that is twice the radius of circle M. Which equation represents circle P?"
+    }
+  },
+  {
+    "key": "m1-17",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The right angle is at B, so AC = 14 is the hypotenuse, and AB is the side opposite the 58° angle at C. Since sin(angle) = opposite/hypotenuse, AB = 14 sin 58°. Choice C, 14 cos 58°, would give BC, the side adjacent to angle C.",
+    "fix": {
+      "choices": {
+        "A": "14 sin 58°",
+        "B": "14/(sin 58°)",
+        "C": "14 cos 58°",
+        "D": "14/(cos 58°)"
+      }
+    }
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "26"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The equation is x(x − 15) = 286, so x^2 − 15x − 286 = 0. This factors as (x − 26)(x + 11) = 0, giving x = 26 or x = −11. Since x is positive, x = 26."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "65"
+    ],
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Triangle ACD is isosceles with AC = CD and vertex angle 108°, so each base angle is (180 − 108)/2 = 36°; in particular angle D = 36°. D, C and B lie on one line, so in triangle DBE the angles are 36° at D and 29° at B, making angle DEB = 180 − 36 − 29 = 115°. The angle x is supplementary to it: x = 180 − 115 = 65.",
+    "fix": {
+      "prompt": "In the figure, AC = CD. The measure of angle EBC is 29°, and the measure of angle ACD is 108°. What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "24"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "2,800% of c means a = 28c. Since c = 0.25b, b = 4c. Then a − b = 28c − 4c = 24c, so w = 24."
+  },
+  {
+    "key": "m1-21",
+    "answer": [
+      "1/2",
+      ".5",
+      "0.5"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line j has slope −4/5. Line k, 24x + ry = 15, has slope −24/r, and parallel lines have equal slopes, so 24/r = 4/5 and r = 30. At x = 0, 30y = 15, so y = 1/2, which means b = 1/2."
+  },
+  {
+    "key": "m1-22",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the dot plot, set A has 7, 6, 4, 6 and 7 capacitors at 2, 5, 8, 11 and 14 µF, so its mean is 240/30 = 8 µF and its range is 14 − 2 = 12 µF. Adding 17 µF to every value raises the mean to 25 µF but leaves the range at 12 µF. Choices B and D wrongly add 17 to the range too.",
+    "fix": {
+      "choices": {
+        "A": "The mean capacity is 8 μF, and the range of capacities is 12 μF."
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "2/5 of 700 flowers is 280. From the graph there are 100 orchids and 180 lilies, and 100 + 180 = 280. Orchid and sunflower (100 + 170 = 270) is close but not exact, and daisy and orchid give only 160.",
+    "fix": {
+      "prompt": "The bar graph shows the distribution of flower type for the 700 flowers that a florist has in stock. For which two types of flowers is the total number of flowers of the two types exactly 2/5 of the florist's stock?"
+    }
+  },
+  {
+    "key": "m2-02",
+    "answer": "C",
+    "skill": "two-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Extending the line of best fit back to x = 0, it meets the y-axis at about 53.75 (it falls roughly 0.86 per unit of x from about (9, 46.7)). Subtracting 11 from every y-value shifts the whole line down 11, so the new y-intercept is about 53.75 − 11 = 42.75. Choice B is the original intercept, before the shift."
+  },
+  {
+    "key": "m2-03",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand the left side: 8x + 44 − 4x + 10 = 4x + 54. Then 4x + 54 = −9 + 13x gives 63 = 9x, so x = 7 and 12x = 84. Choice B is x itself, not 12x.",
+    "fix": {
+      "choices": {
+        "A": "7/12"
+      }
+    }
+  },
+  {
+    "key": "m2-04",
+    "answer": "A",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Density is mass divided by volume: 308/28 = 11 grams per cubic centimeter. Choice D multiplies instead of dividing, and B and C subtract or add the numbers."
+  },
+  {
+    "key": "m2-05",
+    "answer": "A",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If x < 0 and y > 0, then 3x is negative and −7y is negative, so 3x − 7y is negative and can never be greater than 21. The other regions do contain solutions: for example (−7, −10) gives 49 > 21, (11, −1) gives 40 > 21, and the x-axis point (8, 0) gives 24 > 21."
+  },
+  {
+    "key": "m2-06",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line crosses the y-axis at (0, −1), so the y-intercept is −1. It also passes through (−1, 4), so the slope is (4 − (−1))/(−1 − 0) = −5. That gives f(x) = −5x − 1. Choice C has the right slope but the wrong intercept."
+  },
+  {
+    "key": "m2-07",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since GH = LM = 34 and GH/GF = LM/LK, it follows that GF = LK. Then two sides and the included angle (GH, GF and the 30° angle G) match LM, LK and angle L, so the triangles are congruent by SAS. No more information is needed, so the other choices add facts that are unnecessary.",
+    "fix": {
+      "prompt": "In triangle FGH and triangle KLM, the measures of angles G and L are each 30°. The lengths of GH and LM are each 34 centimeters, and GH/GF = LM/LK. Which additional piece of information would be necessary to prove that triangle FGH is congruent to triangle KLM?"
+    }
+  },
+  {
+    "key": "m2-08",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute y = 3x + 9 into 3y = 8x − 6: 9x + 27 = 8x − 6, so x = −33. Then y = 3(−33) + 9 = −90, and x − y = −33 − (−90) = 57. Choice A comes from adding instead of subtracting y."
+  },
+  {
+    "key": "m2-09",
+    "answer": [
+      "3"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(6) = 9 · f(4) means c^6 = 9c^4. Dividing by c^4 gives c^2 = 9, and since c > 1, c = 3."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The hypotenuse is 73, and the side opposite the angle x° is the bottom leg, 63. Since sine is opposite over hypotenuse, sin x° = 63/73. Choice D adds the two given sides on top, which isn't a trig ratio (it's even greater than 1).",
+    "fix": {
+      "choices": {
+        "A": "1/73",
+        "B": "10/73",
+        "C": "63/73",
+        "D": "136/73"
+      }
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "11"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Substitute y = 19: −x − 19w = −337 and 2x − 19w = 47. Multiply the first by 2 and add it to the second: −57w = −627, so w = 11. Checking: x = 337 − 209 = 128, and 2(128) − 209 = 47."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Given the tree is a red maple, only the 50 red maples count, and 35 of them are at site A, so the probability is 35/50 = 0.7. Choice A, 0.3, is the probability the red maple is from site B.",
+    "fix": {
+      "prompt": "The table shows the distribution of two types of trees at two different sites. If a tree represented in the table is selected at random, what is the probability of selecting a tree from site A, given that the tree is a red maple? (Express your answer as a decimal or fraction, not as a percent.)",
+      "choices": {
+        "B": "130/10",
+        "C": "35/50"
+      },
+      "table": {
+        "headers": [
+          "",
+          "Site A",
+          "Site B",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Red maple",
+            "35",
+            "15",
+            "50"
+          ],
+          [
+            "Chestnut oak",
+            "31",
+            "20",
+            "51"
+          ],
+          [
+            "Total",
+            "66",
+            "35",
+            "101"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": [
+      "361"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The beaker was placed on the table at t = 0. Then (2.72)^0 = 1, so g(0) = 295 + (361 − 295)(1) = 361 kelvins. 295 is the temperature the liquid approaches over time, not the starting temperature."
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "All four forms describe the same function, and f(1) = 85(1.7) = 144.5, so k = 144.5. Choice C, f(x) = 144.5(1.7)^(x − 1), shows 144.5 as its coefficient because the exponent is 0 when x = 1. Choice B's coefficient 85 is f(0), not f(1)."
+  },
+  {
+    "key": "m2-15",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since a > 6, the base a/6 is greater than 1, so 9(a/6)^(x + c) is always increasing and takes every positive value. Subtracting b > 0 shifts it down, so y increases from values near −b up without bound and crosses y = 0 exactly once. It can't cross twice because the function never turns around.",
+    "fix": {
+      "prompt": "y = 9(a/6)^(x + c) − b\nHow many times does the graph of the given equation in the xy-plane cross the x-axis, where a, b, and c are positive constants such that a > 6 and b > c?"
+    }
+  },
+  {
+    "key": "m2-16",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each x-intercept r means (x − r) is a factor, so x, x − 7, x + 6 and x − 4 are all factors. Their product x(x − 7) = x^2 − 7x must be a factor. Choice A factors as (x − 6)(x + 4), which uses the wrong signs for −6 and 4."
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "-1534"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "P is the midpoint of NQ and PQ = 52, so NQ = 104 and NP = 52, making the semicircle's radius 26. Semicircle area = (1/2)π(26^2) = 338π, and the rectangle NQRS has area 104 · 18 = 1,872. The total area is 338π + 1,872, so a − b = 338 − 1,872 = −1,534."
+  },
+  {
+    "key": "m2-18",
+    "answer": "B",
+    "skill": "equivalent-expressions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Multiply every term by 20xyz: 4z + 20x^2y^2z^2 = 5x. So y^2 = (5x − 4z)/(20x^2z^2), and since y is positive, y = sqrt((5x − 4z)/(20x^2z^2)). Choice A is y^2, not y.",
+    "fix": {
+      "prompt": "1/(5xy) + xyz = 1/(4yz)\nIn the given equation, x, y, and z are positive numbers. Which expression is equivalent to y?",
+      "choices": {
+        "A": "(5x − 4z)/(20x^2z^2)",
+        "B": "sqrt((5x − 4z)/(20x^2z^2))",
+        "C": "1/(4xz^2 − 5x^2 − z)",
+        "D": "sqrt(1/(4xz^2 − 5x^2 − z))"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Divide by 2: |x − 5| = k/2. An absolute value equal to a positive number has two solutions, equal to a negative number has none, and equal to 0 has exactly one (x = 5). So k/2 must be 0. Choice B fails because k/2 = 5 gives two solutions (0 and 10) and −5 gives none.",
+    "fix": {
+      "prompt": "The equation 2|x − 5| = k, where k is a constant, has exactly one solution. Which of the following could be the value of k/2?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 676% increase adds 6.76k to the original mass k, so the new mass is k + 6.76k = 7.76k. Choice B gives only the amount of the increase, not the total mass."
+  },
+  {
+    "key": "m2-21",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Since f(x) = g(x) · (x + 3), the table gives f(−9) = 0 · (−6) = 0 and f(15) = 4 · 18 = 72. The slope is 72/24 = 3, so f(x) = 3(x + 9) = 3x + 27, with y-intercept (0, 27). Check: f(−21) = −36 and −36/(−18) = 2, which matches. Choice A uses the x-intercept −9 instead.",
+    "fix": {
+      "prompt": "The table shows three values of x and their corresponding values of g(x), where g(x) = f(x)/(x + 3) and f is a linear function. What is the y-intercept of the graph of y = f(x) in the xy-plane?",
+      "choices": {
+        "A": "(0, −9)",
+        "B": "(0, 3)",
+        "C": "(0, 9)",
+        "D": "(0, 27)"
+      },
+      "table": {
+        "headers": [
+          "x",
+          "g(x)"
+        ],
+        "rows": [
+          [
+            "−21",
+            "2"
+          ],
+          [
+            "−9",
+            "0"
+          ],
+          [
+            "15",
+            "4"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first 25 people cost 25 · 28 = 700 dollars, and the other n − 25 people cost 17 each. So f(n) = 700 + 17(n − 25) = 17n + 275. Choice C adds 700 but also charges 17 for the first 25 people, counting them twice.",
+    "fix": {
+      "prompt": "For groups of 25 or more people, a museum charges 28 USD per person for the first 25 people and 17 USD for each additional person. Which function f gives the total charge, in dollars, for a tour group with n people, where n ≥ 25?"
+    }
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The sentence contrasts Hashimoto with Wada, who adopted European methods, so Hashimoto must have taken up traditional Japanese approaches. The example of painting pigments on silk confirms he used those methods, so \"embraced\" fits. \"Overlooked\" and \"distrusted\" say the opposite of what the example shows."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Squash doesn't look like any wild plant, so its ancestor wasn't obvious; genetic research had to uncover it. \"Revealed\" captures that research showed the johnny gourd to be the ancestor. Research can't \"petition\" or \"encourage\" an ancestor, and \"expanded\" makes no sense here."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Trofimov says that although he is young, he has gone through a lot: hunger, illness, being tossed everywhere by fate. To have \"undergone a great deal\" means to have experienced a great deal. \"Uncovered\" and \"conveyed\" don't describe living through hardships, and \"ignored\" contradicts them.",
+    "fix": {
+      "passage": "The following text is adapted from Anton Chekhov's 1904 play The Cherry Orchard (translated by Julius West in 1916).\n\nTROFIMOV: Believe me, Anya, believe me! I'm not thirty yet, I'm young, I'm still a student, but I have <u>undergone</u> a great deal! I'm as hungry as the winter, I'm ill, I'm shaken... and where haven't I been—fate has tossed me everywhere!"
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The blank refers to the idea that \"own\" is common, which the text then calls a \"hypothesis\" that a corpus can support. A supposition is an assumption that still needs testing, so it matches. \"Recognition\" would imply the fact is already known, and a \"synopsis\" is a summary, not a guess to be tested."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text starts with a long-held hypothesis (humans with Clovis points wiped out mammoths), describes a spear-throwing experiment, and ends with a conclusion that weakens that hypothesis. That is an experiment whose results cast doubt on an established idea. There is only one hypothesis, not two competing ones (C), and the method's pros and cons are never weighed (B)."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first presents the Hibulb Cultural Center and then the Turtle Mountain Band's center, both tribally run, and finally contrasts them with museums that aren't Indigenous-led. Choice C describes exactly that order. The text never discusses one specific set of artifacts (A), audience reactions (B), or an older versus newer strategy (D)."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 2 criticizes training studies for lacking control groups and pretraining baselines. Without those, you can't tell whether participants would have performed well anyway, without any training. So the Text 2 author would want to know whether Chrisman's team ruled out the objection in C. Sample size is also mentioned, but B gets the logic backward: a smaller sample wouldn't predict lower job performance.",
+    "fix": {
+      "passage": "Text 1\nThe University of Wisconsin and the online class provider Coursera are two of the many institutions offering training programs in entrepreneurship. But what results do such programs produce? In a study of aspiring entrepreneurs in the United States, researcher James Chrisman and colleagues addressed this question and reported that participants who received entrepreneurial training showed high performance at their jobs.\n\nText 2\nWhile studies of entrepreneurial training typically report positive results, a close look reveals widespread methodological shortcomings that could explain those findings. These studies are plagued by insufficient sample sizes, a lack of control groups, and failures to establish pretraining baselines for the measured attributes of participants."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both examples, \"cocoa\" from Nahuatl and \"puma\" from Quechua, reached English by passing through Spanish. So the author shows Spanish acting as a go-between that carried Indigenous words into English. The text never compares amounts of borrowing (B, C) and never says Spanish gave words back to Indigenous languages (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The author calls the energy ladder model \"reductive\" because, in Zimbabwe, income did constrain fuel choice but other factors, like how hard fuel was to get, also mattered. So income explains part, but not all, of fuel choice. B goes too far by saying income has no effect, which the text directly contradicts (\"income of course constrained fuel choice\")."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Defoe says a sermon lasts only as long as listeners can remember it, while a printed book is a lasting record that can be consulted \"for ages to come.\" The main idea is that printed words endure longer than spoken ones. B reverses this, and D picks up a passing detail about the author being forgotten rather than the central contrast.",
+    "fix": {
+      "passage": "The following text is adapted from Daniel Defoe's 1704 nonfiction book The Storm.\n\nThe sermon is a sound of words spoken to the ear, and prepared only for present meditation, and extends no farther than the strength of memory can convey it; a book printed is a record; remaining in every man's possession, always ready to renew its acquaintance with his memory, and always ready to be produced as an authority or voucher to any reports he makes out of it, and conveys its contents for ages to come, to the eternity of mortal time, when the author is forgotten in his grave."
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that medicine and health submissions peaked in 2019. On the graph, that line reaches its highest point, about 285, in 2019, which is exactly what D states. The other choices are about different topics (A, C) or compare two topics in one year (B), so they say nothing about medicine and health across years.",
+    "fix": {
+      "passage": "A student is researching the trends in the topics submitted to a national science fair for high school students. The graph shows the number of submissions by topic that were made each year. Based on the data in the graph, the student claims that <u>there were more medicine and health research topics submitted in 2019 than in any other year.</u>"
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show an emotional attachment to the forests, the quotation needs strong feeling about them. In B, the narrator calls the great woods her \"favourites\" and says it makes her \"heart bleed\" to see one cut down. C describes the woods admiringly but impersonally, and A is about her parents, not the forests.",
+    "fix": {
+      "passage": "Claudine at School is a 1900 novel by Colette, originally written in French. The narrator is a fifteen-year-old girl living in a small, rural town. She presents herself as having a strong emotional attachment to the surrounding forests:",
+      "choices": {
+        "A": "“If I had a Mamma, I know very well that she would not have let me stay [in Montigny] twenty-four hours But Papa-he doesn't notice anything and doesn't bother about me.”"
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says forests began to regrow after the mid-1980s, after the ranching boom of the 1960s and 1970s. On the graph, every class has its low point around 1979–1986 and then rises sharply by 2000, so the increase in forest cover for all classes from 1979 to 2000 shows that regrowth. C is true but shows the earlier deforestation, not regrowth, and A and D compare classes in a single year.",
+    "fix": {
+      "choices": {
+        "C": "Decrease in the forest cover area for all classes from 1960 to 1979."
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that the caterpillars' sounds are aimed mainly at predators. If predators like chickens and yellow warblers actually stop attacking when they hear the sounds, the sounds clearly work on predators. A and C only describe which sounds species make, and D suggests whistles are not heard by birds, which weakens the claim for those sounds."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Scottish dialects and Upland South dialects share the same strong \"r,\" and the Upland South was settled largely by people of Scottish descent. The logical conclusion is that the Upland South dialects inherited this feature from Scottish ones. C reverses the direction of influence, and D contradicts the fact that the Upland South still uses the strong \"r.\""
+  },
+  {
+    "key": "rw1-16",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Hands\" and \"antennas\" are simple plurals that don't own anything, so neither needs an apostrophe. The comma correctly ends the introductory \"When...\" clause before the main clause. The other choices wrongly add possessive apostrophes."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence already has a main verb (\"was\"), so the blank must start a phrase describing the profile. \"Appearing in the Navajo Times\" works as that modifier, like \"a profile that appeared.\" A, C, and D are finite verbs that would leave the sentence ungrammatical."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"That have their own hillside geoglyphs\" is an essential clause identifying which schools, so no comma goes before \"that.\" The rest (\"An enormous geoglyph... overlooks San Juan High\") is a separate complete sentence, so a period is needed. C joins two independent clauses with only a comma, and B and D wrongly put a comma before \"that.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Deposits... lend the sand... an unusual orange tint that dazzles visitors\" is a complete sentence, and \"When they take a bit of sand home, though, it disturbs...\" is another. A period correctly separates them. A creates a comma splice, while B and C run the two sentences together."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"A ray diagram reveals how this works\" is a complete sentence. The next sentence starts with a dependent clause, \"Because the hole's small size restricts light to a single ray,\" followed by its main clause, \"all light... can only arrive at a single destination.\" A, C, and D attach the \"because\" clause to the first sentence, leaving \"all light...\" with no proper connection."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Through community involvement and scientific study\" is a phrase inserted between the subject \"that\" and its verb \"aim.\" It opens with a comma after \"efforts that,\" so it must close with a matching comma. A colon or dash would not match the opening comma."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the machine's steps in order: \"first\" it scraped, then it sprayed water, and \"lastly\" it smoothed the ice. \"Next\" marks the middle step. The other transitions signal an example, a similarity, or a contrast, none of which fits a sequence."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To contrast the two lever types, the sentence must say how each is arranged: in first-class levers the fulcrum is between effort and load, while in second-class levers the load is between effort and fulcrum. D says exactly that. B is too vague to show the difference, and C points out a similarity.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A lever is a simple machine consisting of a rigid beam and a fulcrum.\n• The fulcrum is the point about which the beam pivots.\n• The input force (effort) is the force applied to the lever.\n• The output force (load) is the force that the lever exerts on another object.\n• In first-class levers, the fulcrum is located between the effort and the load.\n• In second-class levers, the load is located between the effort and the fulcrum."
+    }
+  },
+  {
+    "key": "rw1-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The notes show that the two sculptures are made of different steels: weathering steel versus hot-rolled steel. D highlights that difference directly. A stresses what the works have in common, and B and C mention only one sculpture each.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Richard Serra is an American artist.\n• He is known for his large metal sculptures.\n• His large sculpture Open Ended is made of weathering steel.\n• His large sculpture Strike: To Roberta and Rudy is made of hot-rolled steel.",
+      "choices": {
+        "A": "Open Ended and Strike: To Roberta and Rudy are both large metal sculptures by artist Richard Serra.",
+        "B": "Strike: To Roberta and Rudy is one of artist Richard Serra's large metal sculptures.",
+        "C": "Artist Richard Serra is the creator of the weathering steel sculpture Open Ended.",
+        "D": "Open Ended is made from a different kind of steel than Strike: To Roberta and Rudy."
+      }
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both installations fill a whole gallery room, but one is made of aluminum tubing and the other of soil. C sets these materials against each other with \"by contrast.\" A and B don't mention Seven Earth Mountain at all, and D just lists both works together.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Maya Lin is an American artist known for her memorials and large-scale installation artworks.\n• She became famous in 1982 when she completed the Vietnam Veterans Memorial, which consists of two 246-foot granite walls.\n• She completed Water Line in 2006.\n• It is an installation composed of aluminum tubing that fills an entire gallery room.\n• She completed Seven Earth Mountain in 2015.\n• It is an installation composed of soil that fills an entire gallery room."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when Euramerica formed, and A gives the date: about 300 million years ago. B describes the supercontinent cycle in general, C defines a supercontinent, and D only says \"long ago,\" so none of them gives the specific time.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A supercontinent is a single landmass made up of most or all of Earth's continents.\n• Over time, continents merge together to form supercontinents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Euramerica and Kenorland were supercontinents.\n• Euramerica formed about 300 million years ago.\n• Kenorland formed about 2.6 billion years ago."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A makes the place the point of the sentence: to see the school, you have to travel to Deer Isle, Maine. C mentions Deer Isle too, but only in passing; its focus is on who the architect was. B and D are about the buildings' style and design and don't mention the location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Haystack Mountain School of Crafts (1961) is a building complex designed by American architect Edward Larrabee Barnes.\n• It is located in Deer Isle, Maine.\n• It features a cluster of cedar-shingled buildings.\n• It is considered an impressive example of critical regionalist architecture."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Or, conversely\" sets the blank against \"historically significant,\" so it needs the opposite meaning. \"Inconsequential\" means unimportant, which fits. \"Momentous\" means the same as significant, and \"benevolent\" and \"genuine\" aren't opposites of it."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the colon, the text says buyers who never wanted old action figures rushed into the market, so rising prices created new demand. \"Engendering\" means producing or giving rise to, which fits. That's \"counterintuitive\" because higher prices usually reduce demand. \"Monetizing\" and \"exploiting\" don't describe creating demand."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says ephemeral objects are \"markers of cultural change,\" so they can record or show shifts in norms and values that traditional sources miss. \"Register\" means to record or reveal, so it fits. \"Vindicate\" (justify), \"preclude\" (prevent), and \"induce\" (cause) give the objects a role the text doesn't describe."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence says the conjecture \"eventually yielded\" to Agol's proof, even though it seemed a certain way to many mathematicians. The contrast makes sense only if it had seemed impossible to solve. \"Insuperable\" means impossible to overcome. \"Ineluctable\" (unavoidable) and \"unequivocal\" (clear) don't set up a contrast with being proved."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text opens by asking why rusty-spotted cats purr but jaguars roar, then offers the hyoid bone and its ligament as a possible explanation. That is a question followed by a possible answer. The explanation is supported, not weakened (B), and habitats are never discussed (A).",
+    "fix": {
+      "passage": "Why do rusty-spotted cats purr but jaguars roar? Researchers hypothesize that this difference between the two feline species may be partly due to a U-shaped bone in their throats called the hyoid. Rusty-spotted cats, which are much smaller than jaguars, have a rigid hyoid that rumbles when the cat's larynx vibrates, resulting in a purr. By contrast, jaguars have a somewhat flexible hyoid, and the bone is attached to the skull with a stretchy ligament that rusty-spotted cats lack. These traits allow jaguars and most other species of big cats to produce powerful roars. The same traits may also prevent most big cats from purring."
+    }
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text gives two reasons scholars care about juvenilia: works by famous authors reveal their artistic development, and works by lesser-known young writers like Ashford help explain literary history. So it presents reasons scholars value juvenilia. It never ranks Ashford above Dickens (D) or discusses publishing difficulties (A)."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Nutrient cycling sped up in the warmer cores. That speedup could have come from a change in which microorganisms were present, or from the same microorganisms being more active. Because the community composition stayed the same, the researchers could rule out the first explanation and credit temperature-driven activity. A is wrong because the speedup itself was measured directly, not shown by the composition finding."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says hDNA \"offers unique benefits,\" such as access to genomic data from populations that no longer exist. Data from extinct populations can't come from living samples, so hDNA can provide insights other genomic data can't. D overreaches: the text says hDNA is often degraded but never compares it with other DNA of the same age.",
+    "fix": {
+      "passage": "Michael G. Campana and colleagues relied on historical DNA (hDNA)—genomic data incidentally preserved in specimens housed in natural history collections—to investigate the evolutionary origins of a fungal pathogen affecting bats. Although this approach offers unique benefits, such as access to genomic data from extirpated populations, it remains a relatively underutilized resource because hDNA is often to some extent degraded, a situation not easily remediable under current methodological paradigms and with extant DNA extraction and analysis technologies.",
+      "prompt": "Information in the text best supports which statement about hDNA?"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that The Horse Fair marks a significant change in Bonheur's development. A says her paintings before it belong to an earlier style she never returned to, so the painting is a clear dividing line. B praises the painting as her best work, but being the best example is not the same as marking a change."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The conclusion links dogs' anatomy to their ability to tell speech from nonspeech. In A, head shape (an anatomical feature) is tied to how differently dogs' brains respond to real speech versus the scrambled, non-speech recording. B is about telling one language from another, not speech from nonspeech, and C and D don't compare dogs with different anatomy on the same contrast."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Ambivalence means having both negative and positive feelings. D has both: reading poetry \"with a perfect contempt for it\" (displeasure), yet finding \"a place for the genuine\" in it (merit). B and C only criticize bad poetry, and A doesn't express displeasure with poetry at all."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The quotation must use figurative language to link Washington, DC, with the rural South. In D, soil from the South falls \"like a fertile shower\" on DC's streets, a simile that connects the two places. A uses figurative language about train whistles but stays in one setting, and C mentions DC only literally."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The conclusion has two parts: irrigation will increase, but by how much depends on the current (baseline) precipitation pattern. B shows both: a small irrigation increase where precipitation is already somewhat concentrated, but much bigger increases (9.0% and 7.9%) where it is evenly distributed. A and C mix in aquifer data, and D wrongly says irrigation declines and misreads the numbers.",
+    "fix": {
+      "passage": "Some climate models for the western United States predict that while total annual precipitation may remain unchanged from the present level, precipitation will become concentrated into fewer but more intense rain and snow events. University of Texas climate scientist Geeta Persad and her colleagues simulated how the amount of water entering aquifers and the amount being used for irrigation purposes would change if this were to occur. Persad and her colleagues concluded that concentration of precipitation into fewer events would result in a higher number of dry days, triggering more irrigation, but that this change in irrigation output is highly sensitive to the baseline concentration of precipitation that currently exists in an area.",
+      "table": {
+        "caption": "Simulated Change in Annual Aquifer Input and Irrigation Output if Precipitation Concentration Increases as Climate Models Predict",
+        "headers": [
+          "Baseline concentration of annual precipitation",
+          "% change in water entering aquifers",
+          "% change in surface water used for irrigation",
+          "% change in groundwater used for irrigation"
+        ],
+        "rows": [
+          [
+            "Precipitation is currently somewhat concentrated",
+            "4.9",
+            "0.4",
+            "0.9"
+          ],
+          [
+            "Precipitation is currently evenly distributed",
+            "11.0",
+            "9.0",
+            "7.9"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "First-rate ships had 850 to 875 crewmen, and lower-ranked ships had fewer. The Boyne had three decks but was not first-rate, so its crew must have been under 850. That means at least one three-deck ship had a crew of fewer than 850. D is contradicted by the Boyne itself, which had 98 cannons but a crew below 850."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Jaiswal and Kant's small study found no effect, and people questioned whether it represented consumers broadly. When Zhuang's team pooled 54 studies, they found a clear positive effect, which suggests the doubts about the earlier conclusion were justified. A draws a lesson from one study with 202 people, which the combined analysis doesn't support."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both parts (\"the Longyearbyen observatory site monitors... the northern hemisphere\" and \"in Australia, another observatory site... monitors the sky of the southern hemisphere\") are complete sentences. A semicolon properly joins two closely related independent clauses. A comma alone (C) is a comma splice, and no punctuation (B) is a run-on."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"French portrait artist\" is a title placed directly before the name \"Marie-Denise Villers,\" so no punctuation goes between them. It works like \"painter Frida Kahlo.\" Adding a comma, colon, or dash wrongly separates the title from the name it describes."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The title \"Gun with Hand #1\" is essential: it identifies which painting hangs there, so no comma goes between \"painting\" and the title. A comma is needed after the title, though, to set off the nonessential clause \"which was created in 1964...\" B and D wrongly set off the title with a comma, and A leaves out the comma before \"which.\""
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is the singular \"analysis\"; \"de jure judicial independence and its growth over decades\" is just part of a phrase that describes it. A singular subject needs a singular verb, so \"identifies\" is correct. A, C, and D are plural forms that wrongly agree with the nearby nouns."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Confers both benefits and obligations\" is a complete clause, and what follows explains it, so a colon fits. After the colon, \"while the organization's many members... are all bound to defend Spain\" is a dependent clause attached to the main clause \"the reverse is also true.\" A and B leave \"the organization's members... are bound..., the reverse is also true\" as a comma splice, and C joins the parts with only a comma."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"...dependent on the country's position on the Laffer curve\" is a complete sentence, and so is \"a theoretical relationship between tax rates and revenues, the curve was famously sketched...\" A semicolon correctly joins two independent clauses. D creates a comma splice, and C turns the sentence into a garbled clause with two subjects."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At lower elevations the snowpack peaked in early March, while at higher elevations it peaked in mid-March. These are contrasting results, so \"on the other hand\" fits. \"In other words\" and \"in summary\" would restate, and \"for instance\" would introduce an example."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence before the blank says the differences between the two editions are extreme. The sentence after it goes further, saying some critics treat them as different novels altogether. \"In fact\" introduces a stronger point that backs up the first. \"By contrast\" and \"nevertheless\" signal a contrast that isn't there."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "NASA showed that hitting a secondary object like a moonlet changes its orbit. Scientists have yet to show the same works on primary objects. That is a limit on the success, so the contrasting \"though\" fits. \"Likewise\" and \"moreover\" would add a similar point, and \"for example\" would introduce an example."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a specific example of a slow TV program, and B names one, Nordlandsbanen: Minutt for Minutt, with details showing why it fits the genre. A, C, and D describe the genre or Wheatley's view of it without naming any particular program.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Documentary TV programs in the slow TV genre consist of uninterrupted broadcasts of ordinary events in real time.\n• Nordlandsbanen: Minutt for Minutt is a Norwegian slow TV program.\n• The 10-hour-long program documented a train ride from Trondheim to Bodo.\n• It first aired in 2012.\n• In her book Spectacular Television: Exploring Televisual Pleasure, British film scholar Helen Wheatley writes that slow TV “offers unspectacular' spectacle.”"
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize where the figures are in Lost in the Shuffle, the sentence must state their position. B says the two young men appear in the bottom left and upper right corners of the canvas. A is about mood, C is about size, and D is about color, so none addresses location.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Calida Garcia Rawles is an African American painter.\n• She is known for her large-scale, hyperrealistic paintings depicting African American figures in water.\n• The painting Lightness of Being (24 x 30 in) depicts a young man with his arms outstretched floating on the right side of the canvas.\n• Lost in the Shuffle (36 x 24 in) depicts two young men with their arms outstretched floating in the bottom left and upper right corners of the canvas.\n• She paints the water with vivid blue colors, including periwinkle and cobalt.\n• The mood in the paintings is placid."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The \"scope\" of Basquiat's work means how much he produced. A presents Mater as just one of more than two thousand drawings and paintings, which shows how big his body of work was. B mentions the number but shifts its focus to Mater's materials, and C and D are about the auction sale.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Jean-Michel Basquiat was an American artist who produced more than two thousand drawings and paintings.\n• Most of his works were completed in New York City in the 1980s.\n• His work Mater was completed in 1982.\n• The work is composed of acrylic and oil stick on canvas and measures 72 inches by 84 inches.\n• Mater was purchased by a private collection for $5.8 million in a 2009 auction."
+    }
+  }
+]

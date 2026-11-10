@@ -1,0 +1,1054 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If plants prefer to absorb essential elements like zinc, you would expect zinc-contaminated soil to be easy to clean up with plants, that is, \"amenable\" (open or responsive) to it. The word \"Though\" then sets up the surprise that plants actually took up more cadmium. \"Unresponsive\" (C) says the opposite of what the research seemed to suggest, and \"detrimental\" (B) doesn't fit soil being cleaned."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A full ectotherm's body stays at the water temperature, but the basking shark's body stays 1.0 to 1.5°C warmer. That finding doesn't fit the old classification, so it is \"incongruous with\" it. \"Indicative of\" (B) would mean the finding supports the full-ectotherm label, which is the opposite."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers double-checked a data point to make sure \"the exception\" was accurate, so the point must have been unusual, or \"anomalous.\" \"Tentative\" (B) and \"preliminary\" (D) describe something early or uncertain, not something that breaks the pattern the text calls an exception."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fake entries were hoaxes made as jokes by mischievous users, so once discovered they were recognized as \"pranks.\" \"Revelations\" (A) and \"enhancements\" (C) would describe real or useful content, not fictitious jokes."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Experts are needed to decide whether flagged activity is a real cause for concern, which means the activity is unclear, or \"ambiguous.\" If it were clearly \"malicious\" (C), no interpretation would be needed, and \"imperceptible\" (B) activity couldn't be detected at all."
+  },
+  {
+    "key": "rw1-06",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Hawthorne compares history to a map: accurate and useful but \"cold and naked,\" lacking the charm of a painting. He adds that these defects can be partly fixed, but only by methods that strict biographers aren't allowed to use. So faithfulness to facts makes history less engaging than it could be. The map/painting comparison is only an analogy, so B misses the real point.",
+    "fix": {
+      "passage": "The following text is from Nathaniel Hawthorne’s 1830 short story “Sir William Phips.”\n\nThe knowledge, communicated by the historian and biographer, is analogous to that which we acquire of a country by the map,—minute, perhaps, and accurate, and available for all necessary purposes, but cold and naked, and wholly destitute of the mimic charm produced by landscape painting. These defects are partly remediable, and even without an absolute violation of literal truth, although by methods rightfully interdicted to professors of biographical exactness."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined phrase says the choreography was inspired by Barnes's curiosity about how the Lindy Hop resembles the newer styles, so it explains why the show interweaves those dances, which the first sentence described. It doesn't say why the connections were overlooked (A) or list the actual similarities (D).",
+    "fix": {
+      "passage": "In The Jazz Continuum, LaTasha Barnes, Ray F. Davis, and other dancers seamlessly interweave recent dance styles, including hip-hop and waacking, with elements of the Lindy Hop, a popular swing dance of the 1930s with roots in the Black American community of Harlem, New York. <u>Inspired by Barnes’s curiosity about the similarities between the Lindy Hop and these seemingly unrelated dance styles,</u> the show’s choreography makes visible how intertwined their histories actually are. The show is therefore a testament to the Lindy Hop’s enduring influence on American culture."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Visits depended on how well a flower's corolla fit the bird's bill, not on nectar. So a well-fitting flower with little nectar could be visited more than a poorly fitting flower with lots of nectar, which is what B says with \"may.\" C is too strong (\"consistently\" low-reward), and D contradicts the finding that nectar traits had no influence."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "B",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By secretly handing participants the face they had rejected, the researchers could see whether people would accept and even defend a result that actually went against their real choice. Most did. Nothing in the setup involved arguments to persuade them (C), and the jam studies came later from other researchers (D)."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Toomer links the Dixie Pike to a faraway place. Saying the road \"has grown from a goat path in Africa\" ties it directly to distant Africa. A talks about soil reaching Washington, DC, but doesn't mention the Dixie Pike, and C only mentions a train crossing the road near Fern's home."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 1 says stressing the shared biology of all humans (the widest possible group) can motivate collective action. Text 2 says reminding a smaller group, young people, of their shared role as future inheritors can spark engagement. Both use shared ties, but at different scopes. Neither text discusses linking local and global coordination (B) or issues becoming less relevant (D)."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Corn silage has the highest gross margin (456 euros per goat), so the table suggests it is the most profitable. If its feeding cost swings with volatile soybean prices, its 2018 cost (and so its margin) may not hold, which should make the farmer hesitant. A and D give drawbacks of grazing, the system the table already shows as less profitable, and B is a point in favor of corn silage.",
+    "fix": {
+      "passage": "Gross margin refers to the profit after subtracting certain costs (e.g., feeding cost) from total revenue, which may include more than milk revenue.\n\nWhile Spain, India, and France are established leaders in the global goat dairy industry, countries like Italy and Brazil have smaller but growing goat dairy sectors. Seeking the feeding system that will give her the greatest profit, a Northern Italian farmer consults research published in 2018 by the Institut de l’Élevage (French Livestock Institute) comparing the economic indicators of different feeding systems on French goat farms.",
+      "table": {
+        "caption": "Economic Indicators of Goat Farms in France by Feeding System in 2018",
+        "headers": [
+          "Feeding system",
+          "Amount of milk per goat per year (kg)",
+          "Milk revenue (€ per goat per year)",
+          "Feeding cost (€ per goat per year)",
+          "Gross margin (€ per goat per year)"
+        ],
+        "rows": [
+          [
+            "Grazing",
+            "705",
+            "480.8",
+            "152.9",
+            "364"
+          ],
+          [
+            "Fresh forage",
+            "860",
+            "617.5",
+            "248.5",
+            "364"
+          ],
+          [
+            "Corn silage",
+            "931",
+            "653.6",
+            "220.6",
+            "456"
+          ],
+          [
+            "Alfalfa hay",
+            "925",
+            "649.4",
+            "245.1",
+            "423"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Williams celebrates the revolution as France rising in majesty while oppression flees, like light breaking through darkness. Wollstonecraft shares that hopeful view: reason has shown her face and despotism can't darken it again, even using the same light/dark imagery. Burke (D) mourns what was lost, and West (B) warns against the arrogance of reason, so both disagree with Williams."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "B",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Much of the novel is pure invention, so readers who look only for links to Smith's real life would miss how much she made up, that is, her creativity. D says the reverse: these readers overstate, not deny, the real-world material. The text says nothing about how widely the book is read (A) or about earlier writers (C)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Abeyta uses a European style to pass on Indigenous traditions; Gibson, \"on the other hand,\" rejects the European mode and builds his work from motifs of Indigenous art like beadwork. So he also carries Indigenous culture forward, but through an Indigenous form of abstraction. C goes too far, since the text praises Abeyta's figurative work for portraying Indigenous traditions."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The words after the blank explain what \"the ultimate goal\" is, and a colon is used to introduce such an explanation after a complete clause. A semicolon (A) needs a full clause on both sides, but \"catching an in-person glimpse...\" isn't one. C leaves \"Catching an in-person glimpse...\" as a fragment."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Propylene and thymol\" tells which compounds are meant, so it is essential information and takes no commas. A puts a comma between the subject and the verb \"have,\" and B and D set off the names as if they were extra information (D also separates the subject from its verb)."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence ends after \"(EgSC),\" and the second sentence starts with \"With RSC classification, for instance, a population of apes...\" The other choices attach \"with RSC classification\" to the first sentence, which makes \"For instance, a population... might be classified\" in C and D begin awkwardly or leaves B as a run-on joined only by commas."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"For instance\" belongs with the rosemary example, so it is set off by commas after \"consumption,\" and \"while\" links the rosemary clause to the contrasting lentil clause. B turns \"while in the lentil plant, drought triggers...\" into a fragment. C and D attach \"for instance\" to the lentil clause, and D also creates a comma splice."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank refers to the penny postage system, a singular thing, and shows possession (its lead). So the singular possessive \"its\" is correct. \"It's\" (C) means \"it is,\" and \"their\" (B) is plural."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The blank is joined by \"and\" to \"advocating against British rule,\" so it must match that -ing form: \"advocating... and popularizing.\" The other choices are main verbs that don't fit the parallel phrase describing what the newspaper did."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says meteorologists use various specialized tools, and the next sentence names two of them, barometers and anemometers. That is giving examples, so \"For instance\" fits. Nothing is a result (D) or a step in a sequence (C)."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The second sentence walks through specific levels (plants, mosquito larvae, small birds) to illustrate how energy moves across trophic levels. That's an example of the general idea, so \"For example\" fits. There is no contrast, so B and C don't work."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a similarity between kale and broccoli, and B states one directly: both contain vitamin C. C and D each mention only one of the vegetables, and A doesn't name either.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Kale is a vegetable that contains ascorbic acid, an essential nutrient for humans.\n• There is 120 milligrams (mg) of ascorbic acid in every 100 grams (g) of kale.\n• Broccoli is a vegetable that contains ascorbic acid.\n• There is 90 mg of ascorbic acid in every 100 g of broccoli.\n• Humans cannot make ascorbic acid in their bodies, so they must get it from foods, including fruits and vegetables.\n• Ascorbic acid is also known as vitamin C."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mabrity served 1832–1862 (the 1800s) and Salter served 1925–1947 (the 1900s), and B contrasts them by century. D states a similarity, and A and C describe only one keeper each.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Lighthouses send out crucial light signals to help ships and other watercraft navigate at night.\n• Before automation, lighthouses were run by lighthouse keepers.\n• Barbara Mabrity was the lighthouse keeper at Key West Light in Florida.\n• She held this position from 1832 to 1862.\n• Fannie May Salter was the lighthouse keeper at Turkey Point Light in Maryland.\n• She held this position from 1925 to 1947."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A gives the reason for each road: natural features for the Illinois River Road and cultural features for the Country Music Highway. C explains only one road, B wrongly gives the Country Music Highway natural features, and D doesn't say why either road was chosen.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Roads designated as National Scenic Byways (NSBs) must have noteworthy features in one of six categories.\n• These features can be significant for their scenic, natural, historic, cultural, recreational, or archaeological appeal.\n• The Country Music Highway in Kentucky was selected to be an NSB because of the cultural features along its route.\n• It provides access to theaters, music festivals, and museums.\n• The Illinois River Road in Illinois was selected because of the natural features along its route.\n• It provides access to river bluffs, wetlands, and prairies."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The similarity is that both sets of items predate the Clovis arrival about 13,000 years ago, and C says exactly that. A emphasizes a difference in age, B just lists the two finds side by side, and D doesn't mention the items at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Clovis First hypothesis proposes that ancient humans known as Clovis were the first to populate North America.\n• The Clovis arrived around 13,000 years ago.\n• Stone tools found at the Saltville site in Virginia date to approximately 16,000 years ago.\n• Butchered mammoth bones found at the Shaffert site in Nebraska date to approximately 22,000 years ago.\n• These items support the idea that humans were present in North America before the Clovis population arrived."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says the paintings are meaningful because of the shared humanity with artists from so long ago, so their age is what makes them emotionally powerful, or \"moving.\" \"Simple\" (B) and \"neglected\" (A) say nothing about the emotional effect the text describes."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The next sentence explains that gases, moisture and debris must be purged (removed) from the lines, so technicians must be \"evacuating\" them, that is, emptying them out. \"Bracing\" (A) means supporting and \"detangling\" (D) means straightening, neither of which removes anything."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence says combining the two approaches \"may seem unlikely, but\" they share the same guiding idea. Bringing two seemingly different things into agreement is \"reconciling.\" \"Contrasting\" (C) doesn't fit, because the point is what they have in common, and \"supplanting\" (D) means replacing one with the other."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A full ectotherm's body stays at water temperature, but the basking shark's stays 1.0 to 1.5°C warmer, so the finding conflicts with, or is \"incongruous with,\" that classification. \"Indicative of\" (D) would mean the finding supports calling the shark a full ectotherm, which is backward.",
+    "note": "Source answer D was wrong (same item as rw1-02 with reordered choices); correct is A."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Silueta series is part of the land art movement, whose artists usually install pieces outdoors in surprising locations. So it is reasonable to infer that the work's location may be considered surprising. Nothing in the text discusses commercial success (A), changes in popularity (B), or when in her career she made it (D)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text first explains what positive expressive writing is and describes two of its techniques, then reports what Hoult and colleagues found: the techniques affect well-being more consistently than physical health. That's an overview followed by a finding. No follow-up study (A) or daily writing recommendation (D) is mentioned."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Visits were predicted by how well a flower's corolla fit a bird's bill, not by nectar. So a good fit could lead a hummingbird to choose a low-nectar flower over a high-nectar one, as C says with \"may.\" A is too strong (\"consistently\"), and B contradicts the finding that nectar traits had no influence on visits."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim is that 1776 saw several significant works of political thought besides the Declaration. Gibbon's history, published starting in 1776, offered new theories of empire collapse that proved politically influential, so it is another such work. B is also from 1776, but it is a theory of communication, not political thought, and A and C aren't about published works.",
+    "fix": {
+      "passage": "Narratives of American revolutionary history often imply that the US Declaration of Independence (published in 1776) was a document that specifically resulted from the presumably exceptional nature of the soon-to-be United States—in this interpretation, the Declaration is a singular instrument born from a response to injustice that was intended to announce the birth of a new kind of nation and win foreign allies to that nation’s cause. But this interpretation neglects to place the Declaration in the larger context of eighteenth-century Western political philosophy—<u>the Declaration was only one of several significant works published during 1776, a remarkable year for political thought.</u>"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Central Valley dust has a lower ⁸⁷Sr/⁸⁶Sr ratio than Asian dust, so more Central Valley dust means a lower ratio. A steady ratio at the low San Joaquin site (unchanged contribution) and falling ratios at Providence and Soaproot (growing contribution) match the conclusion exactly. A describes the reverse, and C compares levels instead of changes over time.",
+    "fix": {
+      "passage": "Asia’s Gobi Desert and California’s Central Valley are the main sources of dust in western North America’s Sierra Nevada mountains. To investigate their relative contributions, Sarah Aciego et al. recorded the isotopic signatures of dust collected at a low elevation site (the San Joaquin Experimental Range) and two higher elevation sites (Providence and Soaproot) in the Sierra Nevada, as well as the isotopic signatures of Gobi and Central Valley dust. Aciego et al. concluded that while the contribution of Central Valley dust, which has a lower ratio of strontium-87 to strontium-86 (⁸⁷Sr/⁸⁶Sr) than Asian dust does, remained mostly unchanged at the lowest elevation site for the duration of the study, the contribution of Central Valley dust increased at higher elevations."
+    }
+  },
+  {
+    "key": "rw2-10",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Lower P50 means more resistance to embolisms. P50 drops from −2.1 to −4.05 as elevation and rainforest occupancy generally drop, ending with Zygogynum (57 m, 24%). But Hedycarya has a low P50 (−3.19) while sitting high (956 m, 86%), breaking the trend, so the support is only moderate. B reverses the direction of the relationship.",
+    "fix": {
+      "passage": "P50—the pressure in the xylem (water-conducting tissue) at which a plant loses 50% of its hydraulic conductivity due to embolisms (air bubbles in the water flow)—is a key index of xylem embolism resistance and, by extension, tolerance of water stress; lower P50 values indicate lower vulnerability to xylem embolisms. Studies have found that variation in this functional trait corresponds with the distribution of plant species along moisture and elevation gradients. A student hypothesizes that this pattern would persist in woody species in New Caledonia, which is home to moist tropical rainforests, dry forests, and a range of elevations. To test the hypothesis, the student analyzes P50 values as well as mean elevation and rainforest occupancy rates for New Caledonian woody species.",
+      "table": {
+        "caption": "P50 Value, Mean Elevation, and Rainforest Occupancy for Five New Caledonian Woody Species",
+        "headers": [
+          "Species",
+          "P50 (megapascal)",
+          "Mean elevation (m)",
+          "Rainforest occupancy (%)"
+        ],
+        "rows": [
+          [
+            "Paracryphia alticola",
+            "−2.1",
+            "1,011",
+            "91"
+          ],
+          [
+            "Ascarina rubricaulis",
+            "−2.28",
+            "825",
+            "86"
+          ],
+          [
+            "Amborella trichopoda",
+            "−2.77",
+            "756",
+            "82"
+          ],
+          [
+            "Hedycarya parvifolia",
+            "−3.19",
+            "956",
+            "86"
+          ],
+          [
+            "Zygogynum crassifolium",
+            "−4.05",
+            "57",
+            "24"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-11",
+    "answer": "A",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The two species that perform the display (warbler and dove) have short incubations (13 and 15 days) and several broods per year (3 and 7), while the two that don't have long incubations and only 1 brood. But each group includes a 1-parent and a 2-parent species, so incubation duty shows no link. D gets the direction backward, and B fails because the 2-parent displayer (the dove) has the shorter incubation.",
+    "fix": {
+      "passage": "In an extensive review of existing literature, Léna de Framond and team cataloged the prevalence of broken-wing display—a defensive behavior observed in Charadrius semipalmatus (semipalmated plover) and many other species—throughout the Aves class. Documentation of the display in 285 species across 52 families suggests the behavior likely evolved independently multiple times, prompting the team to consider ecological and life-history characteristics with hypothesized associations to the behavior’s emergence, including traits related to reproductive investment and future reproduction potential. Based on their review of those traits, the team concluded that ______.",
+      "table": {
+        "caption": "Defensive Behavior and Reproductive Traits of Select Bird Species",
+        "headers": [
+          "Scientific name",
+          "Common name",
+          "Performs broken-wing display?",
+          "Length of incubation (days)",
+          "Incubation duty",
+          "Maximum number of broods per year"
+        ],
+        "rows": [
+          [
+            "Setophaga caerulescens",
+            "black-throated blue warbler",
+            "Yes",
+            "13",
+            "1 parent",
+            "3"
+          ],
+          [
+            "Spatula cyanoptera",
+            "cinnamon teal",
+            "No",
+            "25",
+            "1 parent",
+            "1"
+          ],
+          [
+            "Haematopus ostralegus",
+            "Eurasian oystercatcher",
+            "No",
+            "28",
+            "2 parents",
+            "1"
+          ],
+          [
+            "Zenaida macroura",
+            "mourning dove",
+            "Yes",
+            "15",
+            "2 parents",
+            "7"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Slater and Mann say tropical females sing as often as males, unlike temperate ones. Rose's team argues temperate females do sing, just less often and more quietly, so researchers miss them. They would say the apparent difference may partly come from how hard female song is to detect. Nothing in Text 2 concerns male tropical birds (A) or mating seasons (D)."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The researchers expected metal content to track rhizosphere pH, but many studies didn't say whether their soil data came from the rhizosphere. That only matters if rhizosphere soil differs from other soil, and C says roots can significantly change the pH of the soil around them. B would undercut the hypothesis itself rather than explain the reporting problem."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Humans are strongly right-handed, and captive primates, which live around humans, show much more right-handedness than wild ones. That raises the possibility that contact with humans pushes captive apes toward right-handed behavior. The text gives no information about sample sizes (B, D) or the criteria each study used (C)."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Abeyta uses a European style to pass on tribal traditions; White Hawk, \"on the other hand,\" builds compositions from motifs of her own tribe's beadwork and arts. So she too carries tribal culture forward, but through a tribally specific form of abstraction. C overreaches, since the text praises Abeyta's figurative work for doing the same job."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Americans\" is a plain plural (many people), and \"elections\" is also a plain plural, so neither needs an apostrophe. A, B and C wrongly add possessive apostrophes to words that don't own anything."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"I Need Love\" identifies which hit song is meant, so it is essential and takes no punctuation between \"song\" and the title. A comma (B), colon (C) or semicolon (D) would wrongly separate the noun from the title that defines it."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"On the other hand\" interrupts the sentence \"Tales in English... often begin with 'once upon a time,'\" so it's set off by a pair of commas, and the second comma already follows \"hand.\" A colon (A) or dash (D) wouldn't match that closing comma, and a period (C) leaves \"Tales in English.\" as a fragment."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence ends at \"modest.\" The next one opens with \"Compared to peer nation South Korea, a country that imports...,\" which modifies the subject, Saudi Arabia. A creates a comma splice, and C cuts \"compared to peer nation South Korea\" off from the sentence it belongs to."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"However\" belongs to the first sentence (the change was more than aesthetic, despite seeming simple), and \"Her redesigned footwear enabled...\" is a new complete sentence, so a period is needed. B is a comma splice, C is a run-on, and D makes \"however and her\" ungrammatical."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The previous sentence says water-saturated zones hamper GPR, and this sentence explains exactly how: water absorbs and scatters radar energy. A sentence that confirms and expands on the previous point takes \"Indeed.\" \"Nevertheless\" (D) would signal a contrast that isn't there."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text has explained the process and given examples; the new sentence adds that often years pass between selection and designation. \"In many cases\" correctly limits the claim to a common but not universal situation. \"Therefore\" (D) fails because the delay doesn't follow from the examples, and \"Similarly\" (B) isn't comparing anything."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence elaborates on the previous point that water-saturated zones hamper GPR, explaining that water absorbs and scatters radar energy. \"Indeed\" introduces this reinforcement. \"Nevertheless\" (A) would wrongly signal a contrast, and \"Thus\" (D) a conclusion."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "D gives a detail about each piece (a Zuni melody, a Pueblo log drum) and then states what they share: both blend Western classical music with Native traditions. B only lists the two pieces with \"while,\" which suggests contrast, and A and C mention only one piece.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Louis Ballard was a classical composer and citizen of the Quapaw Tribe.\n• His compositions synthesize Western classical music with elements of various Native musical traditions.\n• Ballard’s classical piece The Gods Will Hear features a traditional Zuni melody.\n• Ballard’s classical piece Incident at Wounded Knee incorporates a Pueblo log drum, a traditional Native instrument."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A names both years (1992 and 2017) and uses \"but\" to stress that they differ. B contrasts the type of book, not the year, and C and D give no years at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Since 1931, the New York Times (NYT) Best Sellers list has been a measure of the most successful books in the US.\n• Kwame Alexander and Toni Morrison are Black authors who have reached the NYT Best Sellers list.\n• The Crossover is a children’s book by Kwame Alexander.\n• It reached the NYT Best Sellers list on August 27, 2017.\n• Jazz is a novel by Toni Morrison.\n• It reached the NYT Best Sellers list on May 3, 1992."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C explains the whole chain: the nose was redesigned to copy the beak's gradually widening shape, which smoothed the move from tunnel to open air and eliminated sonic booms. B wrongly says the train moves between air and water, A doesn't explain how, and D wrongly says the beak itself eliminated sonic booms.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• The Shinkansen, commonly known as the bullet train, is a network of high-speed railways in Japan.\n• 1960s: The trains’ high speeds created intense pressure waves that produced sonic booms when the trains exited tunnels.\n• 1980s: Engineer Eiji Nakatsu noted that the kingfisher bird could dive into water at high speeds while barely creating a splash.\n• The kingfisher’s beak gradually widens from tip to head, allowing the bird to transition smoothly between air and water.\n• Nakatsu and the other engineers redesigned the train nose based on the kingfisher’s beak structure to improve the train’s transition between tunnel and open-air environments.\n• The redesign reduced pressure buildup, eliminating sonic booms."
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Placing the reorganization in historical context means linking it to larger events of its time, and C ties it to the post-1945 movement to challenge colonial systems in Africa. D only links it to faculty opinion at one university, and A and B misstate the notes (the British model and Shinnie favored a narrow linguistic and cultural focus).",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• 1950s: The Institute of African Studies (IAS) is proposed and initially formed at the University College of the Gold Coast (now the University of Ghana).\n• Some faculty, including Peter Shinnie and his committee, support a linguistic and cultural focus for the IAS.\n• This approach to African Studies is aligned with the British colonial academic models that were imposed prior to Ghana’s independence in 1957.\n• Other faculty resist this narrow scope, calling instead for an interdisciplinary approach that includes African history, economics, and politics.\n• Early 1960s: Ghana’s president Kwame Nkrumah reorganizes the IAS under an interdisciplinary, African-centered vision.\n• Nkrumah’s reforms are part of a broader post-1945 movement to challenge colonial systems in Africa."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The interior angles of a triangle add to 180°, so x = 180 − 41 − 82 = 57. Choice B, 123, is the sum of the two given angles, not the missing one.",
+    "fix": {
+      "prompt": "The measures of the interior angles of triangle ABC are 41°, 82°, and x°. What is the value of x?"
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "With I, you know two angles of each triangle (A and C; E and F), so you know all three angles of both. You can then check whether the angles match up so that the equal sides AB and DE sit between corresponding angles, which settles congruence by ASA/AAS. With II, triangle DEF gives sides DE and DF with angle E, which is not between them (SSA), so DEF isn't pinned down and congruence can't be decided.",
+    "fix": {
+      "prompt": "For triangles ABC and DEF, AB = DE. The measures of angles A and E are 30° and 50°, respectively. Which of the following information is enough to determine whether triangles ABC and DEF are congruent?\nI. The measures of angles C and F\nII. The lengths of AC and DF"
+    }
+  },
+  {
+    "key": "m1-03",
+    "answer": "D",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Circle A has center (9, p) and circle B has center (−9, p), with the same radius sqrt(24). Only the sign of the x-coordinate changed, which is a reflection across the y-axis. A translation 18 units to the right (A) would move the center to (27, p).",
+    "fix": {
+      "choices": {
+        "A": "Circle B is the translation of circle A 18 units to the right.",
+        "C": "Circle B is the translation of circle A 18 units up."
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": "A",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The left side is −10x + (m − 37)/2 and the right side is kx + 6k. Infinitely many solutions means both sides are identical, so k = −10 and (m − 37)/2 = 6(−10) = −60. Then m − 37 = −120, so m = −83.",
+    "fix": {
+      "prompt": "(−20x − 37 + m)/2 = k(x + 6)\nIn the given equation, k and m are constants. The equation has infinitely many solutions. What is the value of m?"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "D",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line k passes through (0, 3) and (4, 0), so its slope is −3/4, and a perpendicular line has slope 4/3. Using (−15, −29): −29 = (4/3)(−15) + b = −20 + b, so b = −9 and y = (4/3)x − 9. Choices A and B use the reciprocal slope without changing the sign.",
+    "fix": {
+      "choices": {
+        "A": "y = (3/4)x − 49",
+        "B": "y = (3/4)x − 9",
+        "C": "y = (4/3)x − 49",
+        "D": "y = (4/3)x − 9"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x), x is the number of years after purchase and f(x) is the predicted value in dollars. So f(6) ≈ 95 means 6 years after James bought the card, its predicted value is about $95. Choice D confuses the value with the total increase."
+  },
+  {
+    "key": "m1-07",
+    "answer": [
+      "154"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At 70.0 miles per hour for 2 hours, Bill drives 70 × 2 = 140 miles. Adding the first 14.0 miles gives 14 + 140 = 154 miles in total."
+  },
+  {
+    "key": "m1-08",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiplying the first equation by 3 gives 9x + 15y = 24, which is exactly the second equation. The two equations describe the same line, so the system has infinitely many solutions."
+  },
+  {
+    "key": "m1-09",
+    "answer": [
+      "13"
+    ],
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute y = 17: −p − 17w = −357 and 2p − 17w = 51. Subtracting the first from the second gives 3p = 408, so p = 136. Then −136 − 17w = −357, so 17w = 221 and w = 13."
+  },
+  {
+    "key": "m1-10",
+    "answer": "D",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "From the second equation, y = 4x. Substituting: x^2 + 16x^2 = 153, so 17x^2 = 153 and x^2 = 9. Since x < 0, x = −3 and y = 4(−3) = −12. Choice B is the x-value, not y."
+  },
+  {
+    "key": "m1-11",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Square X has area 8^2 = 64 square centimeters. Adding the rectangle's 28 square centimeters gives 64 + 28 = 92. Choice A is only the square's area."
+  },
+  {
+    "key": "m1-12",
+    "answer": "D",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor as a quadratic in x^2: 6x^4 + 29x^2 + 28 = (2x^2 + 7)(3x^2 + 4), since 2·4 + 7·3 = 29. For the factor 3x^2 + 4, ab = 3·4 = 12 (the other factor gives 14, which isn't a choice)."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Setting x = 0 in 4x + 5y = 18 gives y = 18/5, the original y-intercept. Shifting up 9 units adds 9 = 45/5, so the new y-intercept is (0, 63/5). Choice C is the intercept before the shift.",
+    "fix": {
+      "choices": {
+        "A": "(0, 63/5)",
+        "B": "(0, 27)",
+        "C": "(0, 18/5)",
+        "D": "(0, 41/5)"
+      }
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": [
+      "8"
+    ],
+    "skill": "one-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Heights from 51 up to 55 inches are covered by the first two bars, 51–53 and 53–55. Those bars have heights 3 and 5, so 3 + 5 = 8 people."
+  },
+  {
+    "key": "m1-15",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line of best fit goes from about (0, 7.9) to (10, 2.6), so its slope is about (2.6 − 7.9)/10 ≈ −0.53. The line falls, so the slope is negative, ruling out C and D, and −1.84 (A) would be far too steep."
+  },
+  {
+    "key": "m1-16",
+    "answer": "D",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "After the first two weeks the colony has 1,900 + 2(90) = 2,080 bees, and then it grows by 135 per week, so at week w the population is 2,080 + 135(w − 2) = 1,810 + 135w. The number still needed is 3,025 − (1,810 + 135w) = 1,215 − 135w. Choice B ignores the starting population."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "0.65",
+      ".65",
+      "13/20"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "At t = 0, h(0) = b = 6.76. The object hits the ground when h(t) = 0: 16t^2 = 6.76, so t^2 = 0.4225 and t = 0.65 seconds (the negative root doesn't make sense for time)."
+  },
+  {
+    "key": "m1-18",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(x)·g(x) = (2x + 5)(5x − 4) = 10x^2 − 8x + 25x − 20 = 10x^2 + 17x − 20. Subtracting h(x) = 2x + 3 gives 10x^2 + 15x − 23, so b = 15. Choice D adds h(x) instead of subtracting it."
+  },
+  {
+    "key": "m1-19",
+    "answer": [
+      "405"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Since the graph passes through (22, 20): (22 + 18)(t − 22) = 20, so 40(t − 22) = 20 and t = 22.5. Then g(0) = (0 + 18)(22.5 − 0) = 18 × 22.5 = 405."
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "15"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 12 into 54 = 2x + 2y: 54 = 2x + 24, so 2x = 30 and x = 15 feet."
+  },
+  {
+    "key": "m1-21",
+    "answer": "D",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "sin(X)/cos(Y) = 1 means sin(X) = cos(Y) = cos(28°). For acute angles, sin(X) = cos(Y) exactly when X + Y = 90°, so X = 90 − 28 = 62°. Choice A, 28°, would give sin(28°)/cos(28°) = tan(28°), which is not 1.",
+    "fix": {
+      "prompt": "For two acute angles X and Y, the measure of angle Y is 28° and sin(X)/cos(Y) = 1. What is the measure, in degrees, of angle X?"
+    }
+  },
+  {
+    "key": "m1-22",
+    "answer": "B",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A margin of error of 7% around the 51% estimate gives plausible values from 51 − 7 = 44% to 51 + 7 = 58%. Choice C uses only the upper half of that interval, and A and D state exact or extreme values the survey can't support."
+  },
+  {
+    "key": "m2-01",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f is in vertex form a(x − h)^2 + k with a = −2 < 0, so the parabola opens down and its maximum is at the vertex (4, 18). The maximum happens at x = 4. Choice D, 18, is the maximum value, not the x-value."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A circle with center (h, k) and radius r is (x − h)^2 + (y − k)^2 = r^2. With center (−3, 7) and r = 5, this is (x + 3)^2 + (y − 7)^2 = 25. Choice C forgets to square the radius, and A and D flip the signs of the center."
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite h(t) = 450(1.035)^(2t) = 450((1.035)^2)^t = 450(1.071225)^t. Each year the population is multiplied by 1.071225, an increase of 7.1225%. Choice B just doubles 3.5%, which ignores compounding."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Doubling the first equation gives 6x − 10y = 28, so the second line has the same slope. If c = 28 the lines are identical (infinitely many solutions); any other c gives parallel lines with no solution. So c could NOT be 28."
+  },
+  {
+    "key": "m2-05",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Factor: g(x) = ((x − 7)(x + 7))/((2x + 1)(x − 7)). g is undefined at x = 7 and x = −1/2. The factor (x − 7) cancels, so x = 7 is a hole (removable discontinuity), while x = −1/2 stays a vertical asymptote (choice A).",
+    "fix": {
+      "prompt": "g(x) = (x^2 − 49)/(2x^2 − 13x − 7)\nFor what value of x is the rational function g undefined, but does NOT have a vertical asymptote (i.e., corresponds to a removable discontinuity)?",
+      "choices": {
+        "A": "−1/2"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The altitude CD splits right triangle ABC into similar triangles, so AC/AB = AD/AC, giving AC^2 = AD · AB = 4 · (4 + 16) = 80. Then AC = sqrt(80) = 4sqrt(5). Choice B, 8, is the altitude CD (sqrt(4 · 16)), not AC.",
+    "fix": {
+      "choices": {
+        "A": "4sqrt(5)",
+        "C": "8sqrt(5)"
+      }
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "No real solutions means the discriminant is negative: 8^2 − 4(2)(k) < 0, so 64 − 8k < 0 and k > 8. Choice A has the inequality backward, and D comes from dropping the factor 4 in 4ac."
+  },
+  {
+    "key": "m2-08",
+    "answer": "C",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Standard deviation measures how spread out the data are around the mean. Machine B's standard deviation (720 hours) is larger than Machine A's (350 hours), so B's lifespans vary more around the mean. The means are equal, so the totals are equal (D is false), and the standard deviations alone can't tell us about medians (B) or counts above 19,500 hours (A).",
+    "fix": {
+      "choices": {
+        "A": "Machine A produced more microprocessors that lasted longer than 19,500 hours than Machine B did.",
+        "B": "The median lifespan of microprocessors from Machine A is strictly greater than the median lifespan of microprocessors from Machine B."
+      }
+    }
+  },
+  {
+    "key": "m2-09",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "g(x) = f(x − 2) + 4 = (x − 5)(x + 3) + 4 = x^2 − 2x − 15 + 4 = x^2 − 2x − 11. Completing the square: x^2 − 2x + 1 − 12 = (x − 1)^2 − 12, which shows the minimum value −12. Choices A and D are equivalent but don't show the minimum, and C has the wrong vertex."
+  },
+  {
+    "key": "m2-10",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "For similar solids, the surface area ratio is the square of the length ratio, so the length ratio is sqrt(4.41) = 2.1. The volume ratio is 2.1^3 = 9.261, so Q's volume is 150 × 9.261 = 1,389.15 cubic centimeters. Choice B multiplies by 4.41 instead of 9.261.",
+    "fix": {
+      "prompt": "Two right circular cylinders, Cylinder P and Cylinder Q, are geometrically similar. The surface area of Cylinder Q is 4.41 times the surface area of Cylinder P. If the volume of Cylinder P is 150 cm^3, what is the volume, in cubic centimeters, of Cylinder Q?"
+    }
+  },
+  {
+    "key": "m2-11",
+    "answer": "A",
+    "skill": "circles",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Complete the square: (x^2 − 12x + 36) + (y^2 + 16y + 64) = −64 + 36 + 64, so (x − 6)^2 + (y + 8)^2 = 36. The radius is 6, so the area is π(6)^2 = 36π. Choice C comes from forgetting to move the constant 64 to the other side."
+  },
+  {
+    "key": "m2-12",
+    "answer": "A",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "cos(π/2 − θ) = sin(θ), so sin(θ) = 5/13. In the first quadrant, cos(θ) = sqrt(1 − 25/169) = 12/13. Then tan(θ) = sin(θ)/cos(θ) = (5/13)/(12/13) = 5/12. Choice C is the reciprocal, cot(θ).",
+    "fix": {
+      "prompt": "In the xy-plane, an angle with measure θ radians is in standard position, where 0 ≤ θ ≤ π/2. If cos(π/2 − θ) = 5/13, what is the value of tan θ?",
+      "choices": {
+        "A": "5/12",
+        "B": "12/13",
+        "C": "12/5",
+        "D": "13/5"
+      }
+    }
+  },
+  {
+    "key": "m2-13",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set the equations equal: 3x^2 − 12x + 17 = mx + 5, so 3x^2 − (12 + m)x + 12 = 0. Exactly one solution means the discriminant is 0: (12 + m)^2 − 4(3)(12) = 0, so (12 + m)^2 = 144 and 12 + m = ±12. That gives m = 0 or m = −24, and only −24 is a choice."
+  },
+  {
+    "key": "m2-14",
+    "answer": "B",
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use base 3 and acid 5. After the changes, base = 3 × 1.40 = 4.2 and acid = 5 × 0.75 = 3.75. The ratio 4.2 : 3.75 = 420 : 375 = 28 : 25. Choice C uses only the base's change."
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f is the cubic y = x^3 stretched by a and shifted so its center is (h, k). Since a < 0, the graph decreases for all x, going from upper left (quadrant II) to lower right. With h > 0 and k < 0, the point (h, k) is in quadrant IV. B increases (that needs a > 0), C is not a cubic, and D uses the wrong point (−h, k)."
+  },
+  {
+    "key": "m2-16",
+    "answer": "C",
+    "skill": "equivalent-expressions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Rewrite the numerator: 2x + 5 = 2(x − 3) + 11, so (2x + 5)/(x − 3) = 2 + 11/(x − 3). That means A = 2 and B = 11, so A + B = 13. Choice B is just B.",
+    "fix": {
+      "prompt": "(2x + 5)/(x − 3) = A + B/(x − 3)\nThe given equation is true for all values of x ≠ 3, where A and B are constants. What is the value of A + B?"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": "B",
+    "skill": "inference-sample",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A margin of error of 3.3% around 62% gives plausible values from 62 − 3.3 = 58.7% to 62 + 3.3 = 65.3% for the whole population. The sample can't show an exact population value (A), and the 95% is the confidence level, not a share of voters (C) or a probability for one person (D)."
+  },
+  {
+    "key": "m2-18",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "p(3) = 0 gives 81 − 135 + 9a + 3b − 48 = 0, so 3a + b = 34. p(−2) = 0 gives 16 + 40 + 4a − 2b − 48 = 0, so 2a − b = −4. Adding: 5a = 30, a = 6, b = 16. The remainder on dividing by (x + 1) is p(−1) = 1 + 5 + 6 − 16 − 48 = −52."
+  },
+  {
+    "key": "m2-19",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "L has slope (34 − 19)/(−2 − 4) = −2.5, so L(2) = 19 + (−2.5)(2 − 4) = 24, and k = 24. Then E(2) = 3 · 2^(2c) = 24, so 2^(2c) = 8 = 2^3 and 2c = 3. So c = 3/2. Choice D would give E(2) = 3 · 2^4 = 48, not 24.",
+    "fix": {
+      "choices": {
+        "A": "1/2",
+        "C": "3/2"
+      }
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": [
+      "5"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By the quadratic formula, x = (24 ± sqrt(576 − 4·4·31))/8 = (24 ± sqrt(80))/8. Since sqrt(80) = 4sqrt(5), x = 3 ± (4sqrt(5))/8 = 3 ± sqrt(5)/2. So d = 5.",
+    "fix": {
+      "prompt": "4x^2 − 24x + 31 = 0\nOne solution to the given equation can be written in the form 3 + sqrt(d)/2, where d is a positive integer. What is the value of d?"
+    }
+  },
+  {
+    "key": "m2-21",
+    "answer": [
+      "40"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "By the angle bisector theorem, RM/SM = RT/ST, so RM/12 = RT/24 and RT = 2·RM. Let RM = m; then RS = 12 + m and the Pythagorean theorem gives (2m)^2 = (12 + m)^2 + 24^2, which simplifies to 3m^2 − 24m − 720 = 0, or m^2 − 8m − 240 = 0. So m = 20 and RT = 2(20) = 40 (check: RS = 32, and 32^2 + 24^2 = 40^2)."
+  },
+  {
+    "key": "m2-22",
+    "answer": [
+      "9"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Substitute y = k − 2x into the first equation: k − 2x = x^2 − 6x + 13, so x^2 − 4x + (13 − k) = 0. Exactly one solution means the discriminant is 0: 16 − 4(13 − k) = 0, so 13 − k = 4 and k = 9."
+  }
+]

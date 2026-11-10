@@ -1,0 +1,1081 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The team included both engineers and entomologists, and the result was an approach more comprehensive than either group could reach alone. That describes the two groups working together, so \"collaboration between\" fits. Skepticism or distrust would not produce a better combined approach, and nothing suggests anyone exaggerated the experts."
+  },
+  {
+    "key": "rw1-02",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Mr. Bradford is noticing the moss, pines, cypresses and willows, a \"gorgeous display of nature\" laid out before him. Here \"display\" means a show or exhibition of something for viewing. \"Concealment\" is the opposite, and \"pretentiousness\" wrongly suggests nature is showing off in a false way.",
+    "fix": {
+      "passage": "The following text is adapted from John Matheus’s 1926 short story, \"Mr. Bradford Teaches Sunday School.\" Mr. Bradford is driving through the countryside in Florida.\n\nThe moss in the towering water oaks had become enlivened with a verdant sheen of silver and hung like festoons of carnival or like funeral decorations for the mourning of the dead. The pine green was resplendent. The bald cypresses spread themselves along the watercourses while the willows wept as they always did. Mr. Bradford was conscious of this gorgeous display of nature."
+    }
+  },
+  {
+    "key": "rw1-03",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence explains that sharks detect much weaker fields than crayfish do, so their sensitivities differ in size or degree. \"Magnitude\" names that difference in amount. \"Orientation\" (direction) and \"firmness\" don't describe how strong a sensitivity is."
+  },
+  {
+    "key": "rw1-04",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence contrasts high-altitude studies with the below-sea-level question, which \"has received comparatively little notice.\" For that contrast to work, studies of high altitude must be plentiful, so \"abundant\" fits. \"Sporadic\" and \"preliminary\" would suggest those studies are also scarce or limited, which removes the contrast."
+  },
+  {
+    "key": "rw1-05",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The underlined phrase compares the tall columns to ancient trees in a petrified forest, giving the reader a picture of what that part of the ruins looks like. It is descriptive imagery. It says nothing about the narrator expecting a real forest (C) or about when the buildings fell into ruin (D).",
+    "fix": {
+      "passage": "The following text is adapted from Adib Khorram's 2018 novel Darius the Great Is Not Okay. The narrator, Darius, is a teenager visiting family in Iran. He and his friend Sohrab are at the entrance of the ruins of the ancient city of Persepolis.\n\n“The Gate of All Nations,” Sohrab said. He gestured to the lamassus [sculptures] and pillars surrounding us. “That's the name in English.” It wasn't much of a gate anymore, since anyone of any nation could have easily stepped around it instead of walking through. But it was still amazing.\n\nBehind the lamassu, more columns <u>sprouted from the ground like ancient trees in a petrified forest</u>, forty feet tall, spindly but still miraculously upright. Giant stone slabs formed the remains of what must once have been a breathtaking structure."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text opens with a general statement (Barragan's career moved through distinct phases), then highlights one transition (his shift to modernism after traveling), and finally shows how that shift appears in his work (the plain geometric apartment building versus his earlier historically inspired houses). Choice D is tempting, but the text doesn't describe the early stages first; it centers on the shift and its evidence."
+  },
+  {
+    "key": "rw1-07",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text sets up an expectation that plants can't grow on Mars, then reports that many seeds germinated in simulated Martian soil, and some did even better than in Earth soil. Its purpose is to present this surprising finding. Water is mentioned only as a condition (C), and the study isn't about comparing soil compositions (D)."
+  },
+  {
+    "key": "rw1-08",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The narrator says people are \"creatures of the sun\" who love light and life, and that is why they crowd into towns; at night they long for gas-lit streets and human voices. The passage explains traits that draw people to cities. Choice C reverses this: the hillsides are pleasant only by day, while the city is what people long for.",
+    "fix": {
+      "passage": "The following text is adapted from Jerome K. Jerome's 1889 novel Three Men in a Boat (To Say Nothing of the Dog).\n\nWe [people] are creatures of the sun. We love light and life. That is why we crowd into the towns and cities, and the country grows more and more deserted every year. In the sunlight—in the daytime, when Nature is alive and busy all around us, we like the open hill—sides and the deep woods well enough: but in the night, when our Mother Earth has gone to sleep, and left us waking, oh! the world seems so lonesome, and we get frightened, like children in a silent house. Then we sit and sob, and long for the gas-lit streets, and the sound of human voices, and the answering throb of human life."
+    }
+  },
+  {
+    "key": "rw1-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence states the general claim that initiatives relying on natural features can help with conservation, and the logjam project is an example of that. So the main idea is that nature-based approaches can work. Choice B only restates the example, and A focuses on partnership, which is not the point being illustrated."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The statement is about Peru, so read across the Peru row: 0.38 in 1995 and 2.15 in 2020. The other values belong to other countries in 2020: 1.20 is the United States, 0.39 is Poland and 0.73 is Mexico.",
+    "fix": {
+      "passage": "While doing research for a paper about metal exports, a student finds information about copper mining in different countries in 1995 and 2020. The student notes that Peru produced 0.38 million metric tons of copper in 1995 and _____",
+      "table": {
+        "caption": "Millions of Metric Tons of Copper Mined in 1995 and 2020",
+        "headers": [
+          "Country",
+          "1995",
+          "2020"
+        ],
+        "rows": [
+          [
+            "Mexico",
+            "0.33",
+            "0.73"
+          ],
+          [
+            "United States",
+            "1.85",
+            "1.20"
+          ],
+          [
+            "Peru",
+            "0.38",
+            "2.15"
+          ],
+          [
+            "Poland",
+            "0.38",
+            "0.39"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-11",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Puerto Rican guinea pigs descended from Colombian ones. If they were genetically closer to Peruvian guinea pigs than to Colombian ones, that points to a Peruvian origin and undercuts the claim. A larger Colombian population (C) would, if anything, support the claim, and art (A, D) says nothing about ancestry.",
+    "fix": {
+      "passage": "Puerto Rico is an island in the Caribbean Sea. Indigenous people there started raising guinea pigs about 1,700 years ago. Guinea pigs had originally been domesticated much earlier in both Colombia and Peru. So were guinea pigs brought to Puerto Rico from Colombia or from Peru? Ancient Caribbean trade routes connected Puerto Rico with Colombia but not with Peru. <u>Therefore, guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs.</u>"
+    }
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The debate is about where pandas first appeared, which depends on the oldest fossils. The Bulgarian teeth are relatively recent compared with European fossils over 10 million years old, so they reveal little about origins and probably won't settle the debate. Choice B is tempting, but a young fossil can't push back or delay an origin date when much older European fossils already exist.",
+    "fix": {
+      "passage": "Unlike modern giant pandas, which are exclusive to Asia, ancient panda species were dispersed across Europe and Asia. A debate in paleontological discourse focuses on whether ancient pandas first emerged in Asia before migrating to Europe, or vice versa. A pair of European panda teeth found in Bulgaria led researchers to conclude that they likely belonged to an undiscovered species of panda that the researchers dubbed Agriarctos nikolovi. The teeth are relatively recent among European panda fossils, some of which date back to more than 10 million years ago, implying that _____."
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers link a pattern in time references to the spread of electric lighting in the late 1800s. Lighting would let people stay active later, so a jump in references to activities after 10 p.m. in novels published after 1880 supports that link. Choice B is about how time is mentioned, not about when activities happen, so it doesn't connect to electric light."
+  },
+  {
+    "key": "rw1-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The songs described clam gardens, and the evidence showed that where this practice was common, clams grew larger and more abundant even with heavier harvesting. That shows the songs preserve an effective method for cultivating food. Choice B guesses at why the people made the songs, and A overstates the finding as the \"defining characteristic\" of all such music."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The study measures how conservation strategies affect the langur, but counting the population accurately is hard, so researchers can't easily tell whether numbers are rising or falling. That means the study might draw wrong conclusions about which strategies work. Nothing in the text points to a new counting method (B) or to adding other species (C)."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence lists three items that each contain an internal comma (\"the sa, a unit of area\"; \"the shesep, a unit of length\"; \"the khar, a unit of volume\"), so semicolons must separate the items and commas set off each description. C does exactly that. A puts a semicolon between \"the shesep\" and its own description, splitting the item in half."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Juxtapose\" is a verb whose object is \"images of African American women,\" and no punctuation should come between a verb and its object. A dash, comma or colon (A, B, C) would interrupt the clause for no reason."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The exhibition \"ran in early 2022,\" a finished event in the past, so the simple past \"featured\" is needed. \"Features\" and \"will feature\" are the wrong time, and \"has been featured\" is passive, which doesn't work with the gallery as the subject doing the featuring."
+  },
+  {
+    "key": "rw1-19",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The phrase \"through community involvement and scientific study\" is an interruption that opens with a dash after \"that,\" so it must close with a matching dash. A comma or colon (A, C) can't close a dash-opened interruption, and no punctuation (D) leaves it unclosed.",
+    "fix": {
+      "passage": "While the greater adjutant can be found in places like the Inner Gulf of Thailand and the Chhep Wildlife Sanctuary in Cambodia, more than 80 percent of this endangered stork species is found in Assam, India. There, wildlife biologist Dr. Purnima Devi Barman is on the front lines of conservation efforts that—through community involvement and scientific _____ aim to bring adjutants back from near extinction."
+    }
+  },
+  {
+    "key": "rw1-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"The human shoulder contains ... attached to the scapula\" and \"this muscle plays a role in rotating the upper arm\" are both independent clauses, and a semicolon correctly joins them. A comma alone (A) creates a comma splice, and no punctuation (C) makes a run-on; \"that\" (D) creates an ungrammatical sentence."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Among these personas was Ricardo Reis...\" is a complete sentence with inverted order, and so is the part before the blank. A semicolon properly joins two independent clauses. A comma (D) makes a comma splice, and \"works and\" (C) leaves the clauses fused without punctuation."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text moves in time order: Shakespeare arrived around 1585, was known by 1593, and in 1599 wrote Much Ado About Nothing. \"Later\" signals that time sequence. \"Conversely\" implies a contrast and \"thus\" a cause, neither of which fits."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Because the plant absorbs and stores large amounts of cadmium, the cadmium in the soil goes down as a result. \"Accordingly\" signals that consequence. \"Nevertheless\" would suggest a contrast, and \"in addition\" treats the result as just another separate fact."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when Ur formed, and B gives the time: about 3.1 billion years ago. Choices A and C mention Ur but give no date, and D describes the supercontinent cycle in general.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A supercontinent is a single landmass made up of most or all of Earth's continents.\n• Over time, continents merge together to form supercontinents, which then break apart.\n• This process is believed to take hundreds of millions of years and is known as the supercontinent cycle.\n• Ur and Columbia were supercontinents.\n• Ur formed about 3.1 billion years ago.\n• Columbia formed about 1.8 billion years ago."
+    }
+  },
+  {
+    "key": "rw1-25",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is a specific example of a service Ixmiquilpan provides, and C names one: water treatment. Choices A and B only say it provides public services in general, and D gives its population, which isn't a service.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Ixmiquilpan is a municipality in the state of Hidalgo, Mexico.\n• Municipalities are governmental regions responsible for providing many public services to their residents.\n• One service they provide is water treatment.\n• Ixmiquilpan's population was 98,654 in 2020.\n• Hidalgo is divided into 84 municipalities.",
+      "prompt": "The student wants to provide an example of a public service that Ixmiquilpan is responsible for. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "D",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "D states a specific advantage: being under a rock overhang protected Oak Tree House from heavy rain and snow. Choice A says there was an advantage but never names it, and C describes Yucca House's flat terrain, not Oak Tree House.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Oak Tree House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built under a rock overhang and inhabited from approximately 1180–1210 CE.\n• The overhanging rock ledges offered protection from heavy rain and snow.\n• Yucca House is an Ancestral Puebloan dwelling site located in southwestern Colorado.\n• It was built on relatively flat terrain and inhabited from approximately 1080–1275 CE.\n• This level surface allowed for the construction of large terraced buildings."
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A methodology is how the study was done, and B describes it: testing 120 seeds that bats had eaten and 120 that they hadn't, as a comparison. Choices A and D report results, and C states the study's goal rather than its method.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2010 study, researchers Katrin Heer, Larissa Albrecht, and Elisabeth K.V. Kalko wanted to explore the effects of ingestion by bats on the germination of Ficus obtusifolia seeds in Panama.\n• The team of researchers tested 120 Ficus obtusifolia seeds that had been ingested by Jamaican fruit bats.\n• Of these, 111 seeds (93%) germinated.\n• As a control, K. Heer et al. tested 120 Ficus obtusifolia seeds that had not been ingested by Jamaican fruit bats.\n• Of these, 116 seeds (97%) germinated."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The earlier research had a shortcoming: it focused narrowly on a few regions because of limited data. Once researchers gained access to records from Brazil, Russia and elsewhere, they could lessen that problem, so \"mitigate\" fits. \"Validate\" would mean confirming the shortcoming was right, which makes no sense here."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Until recently\" contrasts with researchers now claiming to have found actual pieces of Theia, so before that Theia existed only as an idea. \"Notional\" means theoretical or hypothetical. \"Veritable\" (genuine) is the opposite, and \"spurious\" (false) goes too far, since the theory was never shown to be wrong."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Some commentators praised the blogs, while other observers warned that they pushed people toward extremes and worsened polarization. Those critics were less optimistic, and \"sanguine\" means optimistic. \"Recalcitrant\" (stubborn) and \"misanthropic\" (people-hating) don't describe the contrast with the hopeful commentators."
+  },
+  {
+    "key": "rw2-04",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The underlined sentence says horizontal gene transfer is common in prokaryotes but rarely observed in eukaryotes, contrasting how often it has been detected in two groups of organisms. Choice D is tempting, but the sentence compares frequency, not how the processes work, and it doesn't claim any perception is flawed (C).",
+    "fix": {
+      "passage": "Vertical gene transfer involves the transmission of genetic material from a parent to offspring; horizontal gene transfer, on the other hand, involves the exchange of genetic material between organisms not in a parent-offspring relationship. <u>While horizontal gene transfer is common among prokaryotes—single-celled organisms, such as the bacteria Brevundimonas diminuta and Massilia timonae—it has rarely been observed among eukaryotes (multicellular organisms).</u> However, new studies suggest that horizontal gene transfer is more common in eukaryotes than originally thought."
+    }
+  },
+  {
+    "key": "rw2-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After describing private libraries and the first public ones, the text turns with \"however\" to Fernandes's point that both kinds were seen as extensions of their owners' personal patronage. The purpose is to show that the two traditions shared an essential similarity. The text doesn't say private libraries disappeared (A) or criticize the emperor's influence (B)."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speaker asks the waves to rock him to sleep and let him drift away from \"toil and care\" toward a \"soothing slumberous lullaby.\" The poem expresses his longing for the ocean to give him peace. Choice B is tempting, but everyday demands appear only briefly; the poem doesn't develop a contrast, and it shows no growing intensity (C) or doubts (A).",
+    "fix": {
+      "passage": "The following text is from George Marion McClellan's 1895 poem Eternity.\n\nMy spirit swoons, and all my senses cry\nFor Ocean's breast and covering of the sky,\nRock me to sleep, ye waves, and outward bound,\nJust let me drift far out from toil and care,\nWhere lapping of the waves shall be the sound,\nWhich mingled with the winds that gently bear\nMe on between a peaceful sea and sky,\nTo make my soothing slumberous lullaby."
+    }
+  },
+  {
+    "key": "rw2-07",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Text 2 grants that many predation-relief studies show prey increasing, but notes they mostly involve small, fast-breeding prey, while the deer study found no effect. So the author would say the principle has support but doesn't apply to every case. Choice A is wrong because Text 2 never calls those studies flawed, only limited in the kinds of prey they examined."
+  },
+  {
+    "key": "rw2-08",
+    "answer": "B",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Namasenda is the example showing that hyperpop \"is hardly uniform\": she adds hip-hop rhythms \"into the hyperpop sound.\" So she departs from the typical style while still working within it. Choice A claims some of her recordings reject the model outright, which the text never says."
+  },
+  {
+    "key": "rw2-09",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The study found that white butterflies were seen on green flowers more than others (a link to color) and that butterflies fed more on cloudy days (a link to weather). So both factors were linked to behavior. Choices A and B each ignore one of the two findings."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text says Smith used the invisible-hand metaphor only once, for a narrow point, and it was ignored until twentieth-century economists inflated it to support their own views. So its fame comes from later promotion, not from its role in Smith's work. Choice D wrongly says later economists \"realized\" it was a robust model, and B invents a \"subtle critique\" the text doesn't mention."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is about how restorative sleep is for the young. C calls the slumbers of the innocent \"kindlier than balm\" and says they \"refresh and gladden the spirit of childhood,\" which matches exactly. The other quotations are about the story itself, home, or injustice, not sleep."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "C",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "In the plate regime, lithospheric and mantle material mix. If mantle-derived rocks younger than 3.2 billion years contain material found in lithospheric rocks but absent from older mantle rocks, mixing began around 3.2 billion years ago, as the researchers concluded. Choice B says older rocks are more similar to mantle rocks, which would suggest more mixing in the past, the opposite of the conclusion."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "D",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "The model's predictions correlated with P6's actual ratings at about 0.43 for abstract paintings but only about 0.27 for cubist paintings. If P6's reported ratings were the same for both styles and the model had predicted the same ratings for both, the two correlations would be equal. Because they differ, the model's predicted ratings for the two styles must have differed. Choice B ignores this gap, and the graph shows agreement, not which style P6 would enjoy more (A, C).",
+    "note": "PDF says B. With equal reported ratings, equal predicted ratings would give equal correlations, but the graph shows 0.43 vs 0.27, so D (predictions differ) is the only choice the data support. The item looks altered from the original; worth a human look."
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Clams grew larger and more abundant at the same time the clam-garden practice was in use. That supports the idea that the practice not only kept the food source going but also made it stronger. Choice A compares corroboration for different peoples' songs, which the text never measures, and B and C introduce claims with no support."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The author argues that focusing only on women's social constraints leaves Sandoval's presence unexplained, and points to the art world's narrow recognition of Chicano artists. An interpretation covering both performers is that the work is about the constraints placed on Chicano artists in general. Choice A splits the meaning between the two performers and wrongly ties Sandoval to muralists, the very group that was recognized."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"One might assume cases like this ... to be rare\" and \"on the contrary, they are counted among a litany of examples\" are independent clauses; the semicolon separates them and \"on the contrary\" begins the second, followed by a comma. Choice B attaches \"on the contrary\" to the first clause, which reverses the logic, and A creates a run-on."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Two independent clauses (\"Her work challenges...\" and \"she is credited...\") are joined, so a comma plus the conjunction \"and\" is needed. A comma alone (A) is a comma splice, and C and D run the clauses together without proper punctuation."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second part, \"Koulsy Lamko, for example, is a celebrated playwright from Chad,\" is an independent clause that illustrates the first, so a colon works. No punctuation (A) or a comma (D) fuses two independent clauses, and \"known and\" (C) needs a comma before the conjunction and still blurs the example."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "D",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Though\" here is an adverb meaning \"however\" that belongs to the first clause: \"Such interpretations are ultimately speculative, though.\" A semicolon must then separate it from the next independent clause. Choice C treats \"though\" as a conjunction starting the second clause, which doesn't fit after a semicolon, and A creates an incomplete \"though\" clause that runs on."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject of the verb is \"musings,\" which is plural, so the plural \"fascinate\" is needed. \"Life\" and \"book's\" are not the subject; choices A, B and D are all singular verbs.",
+    "fix": {
+      "passage": "In the list “Things That Arouse a Fond Memory of the Past” from Sei Shonagon's Pillow Book, the author delights in pressed silk, a moonlit night, and dried hollyhock. So shrewd an observer is Shonagon, a lady-in-waiting to Empress Teishi, that her book's musings on tenth-century Japanese courtly life _____ readers a thousand years later."
+    }
+  },
+  {
+    "key": "rw2-21",
+    "answer": "D",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The subject is \"each,\" which is singular, and the text describes the Soviet past, so the singular past \"was\" is correct. \"Were\" and \"have been\" are plural forms that agree with \"republics,\" which is inside a prepositional phrase, and \"are\" is also present tense."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The writers wanted good roles for their female friends, and they created a show where each of six queens has a starring role in order to reach that goal. \"To that end\" signals an action taken to achieve a stated aim. \"For example\" and \"In other words\" don't fit, since the show isn't an example or a restatement of the goal."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence describes something that happened repeatedly over decades: new calculations kept giving more precise coordinates while the meridian stayed put. \"Again and again\" captures that repetition. \"Specifically\" would introduce detail about the original method, and \"To that end\" implies a purpose that isn't there.",
+    "fix": {
+      "passage": "The prime meridian, the global indicator of zero degrees longitude established in 1884, was originally determined using astronomically derived coordinates. _____ as decades passed, new calculations would reveal increasingly precise coordinates, yet the prime meridian remained unchanged; it wasn't until the 1980s that, spurred by improved geodetic data, the prime meridian was officially moved—roughly one hundred meters east."
+    }
+  },
+  {
+    "key": "rw2-24",
+    "answer": "C",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give an example of a particle physicist who works on neutrinos, and C names one: Francis Halzen, known for discovering high-energy astrophysical neutrinos. Choices A, B and D talk about neutrino research in general without naming any physicist.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Francis Halzen is a Belgian particle physicist.\n• Particle physicists study subatomic particles.\n• Neutrinos are some of the least understood subatomic particles.\n• Neutrinos were first discovered in the mid-twentieth century.\n• Halzen is known for his discovery of high-energy astrophysical neutrinos."
+    }
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To emphasize a difference, the sentence should contrast the works, and A does: one spells out a phrase, the other is an abstract shape. Choice C says they used neon differently but doesn't say how, and D points out something the two sculptures have in common.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Use the Future is a 1992 sculpture by Italian artist Maurizio Nannucci.\n• It consists of a yellow neon sign that spells out the title phrase.\n• Ginger is a 2023 sculpture by Japanese artist Rikako Kawauchi.\n• It consists of a pink neon sign that forms an abstract squiggle shape.\n• Neon signs became popular with advertisers in the 1920s and began to decline in popularity in the 1960s.\n• Neon signs became popular with artists in the 1960s and continue to be popular today."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "An audience unfamiliar with biographical analysis needs it introduced and defined, and A does both: it is an approach to art criticism that considers the artist's personal experiences. Choice D gives an example of biographical analysis without explaining what the concept is, and B and C focus on stylistic analysis.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Stylistic analysis and biographical analysis are two approaches to art criticism.\n• Stylistic analysis examines how an artwork's visual features contribute to its overall style.\n• Such an analysis of Claude Monet's Water Lilies might consider how the painting's loose brushwork represents an impressionist style.\n• Biographical analysis considers the personal experiences of the artist.\n• Such an analysis of Claude Monet's Women in the Garden might consider how the painting's portrayal of a figure holding red and white roses alludes to Monet's romantic difficulties.",
+      "prompt": "The student wants to present biographical analysis to an audience unfamiliar with the concept. Which choice most effectively uses relevant information from the notes to accomplish this goal?"
+    }
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "B compares the two rivers directly: the Embarras River's sinuosity (stream length to valley length) is greater than the Luni River's, matching the notes that the Embarras is high-sinuosity and the Luni low. Choice A swaps the two rivers' labels, and C and D explain how curviness is measured without comparing them.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• A river's stream length is the length of a line that follows along the river path.\n• A river's valley length is the length of a straight line drawn from the beginning of the river to the end.\n• The river's curviness, or sinuosity, is the ratio of the river's stream length to its valley length.\n• Low-sinuosity rivers have a stream length 1–1.5 times longer than their valley length, and high-sinuosity rivers have a stream length 1.5 or more times longer than their valley length.\n• The Embarras River in Canada has high sinuosity.\n• The Luni River in India has low sinuosity."
+    }
+  },
+  {
+    "key": "m1-01",
+    "answer": "D",
+    "skill": "probability",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The \"At least 45 years old\" row has a total of 105 members, and the whole organization has 135 members. So the probability is 105/135. Choice A uses the 30 members who are less than 45, and B and C use the north and south column totals.",
+    "fix": {
+      "prompt": "The table summarizes members of a local organization by age and whether they live north or south of Center St. If a member of the organization is selected at random, what is the probability that the selected member is at least 45 years old?",
+      "table": {
+        "headers": [
+          "",
+          "Live north of Center St.",
+          "Live south of Center St.",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Less than 45 years old",
+            "15",
+            "15",
+            "30"
+          ],
+          [
+            "At least 45 years old",
+            "20",
+            "85",
+            "105"
+          ],
+          [
+            "Total",
+            "35",
+            "100",
+            "135"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "30/135",
+        "B": "35/135",
+        "C": "100/135",
+        "D": "105/135"
+      }
+    }
+  },
+  {
+    "key": "m1-02",
+    "answer": "A",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Distribute the 4 to both terms: 4(x^2 + 6) = 4x^2 + 4(6) = 4x^2 + 24. Choice C forgets to multiply the 6 by 4, and B adds 4 instead of multiplying."
+  },
+  {
+    "key": "m1-03",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In slope-intercept form f(x) = mx + b, the slope is m = 1/4, and passing through (0, 5) means the y-intercept is b = 5. So f(x) = (1/4)x + 5. Choice D has the right slope but a y-intercept of −5, so it passes through (0, −5) instead.",
+    "fix": {
+      "prompt": "For the linear function f, the graph of y = f(x) in the xy-plane has a slope of 1/4 and passes through the point (0, 5). Which equation defines f?",
+      "choices": {
+        "A": "f(x) = (1/4)x + 5",
+        "B": "f(x) = (1/4)x + 1/5",
+        "C": "f(x) = (1/4)x − 5/4",
+        "D": "f(x) = (1/4)x − 5"
+      }
+    }
+  },
+  {
+    "key": "m1-04",
+    "answer": [
+      "17"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 144: f(144) = 5 + sqrt(144) = 5 + 12 = 17.",
+    "fix": {
+      "prompt": "The function f is defined by f(x) = 5 + sqrt(x). What is the value of f(144)?"
+    }
+  },
+  {
+    "key": "m1-05",
+    "answer": "A",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Solve for y: −4y = −84 − 7x, so y = (7x + 84)/4. Then x = 0 gives y = 21, x = 4 gives y = 28, and x = 8 gives y = 35, which is table A. Choice B lists the same y-values in reverse order, so x = 0 would give y = 35, which doesn't satisfy 7(0) − 4(35) = −84.",
+    "fix": {
+      "prompt": "7x − 4y = −84\nFor the given equation, which table gives three values of x and their corresponding values of y?",
+      "choices": {
+        "A": "x: 0, 4, 8; y: 21, 28, 35",
+        "B": "x: 0, 4, 8; y: 35, 28, 21",
+        "C": "x: 21, 28, 35; y: 0, 4, 8",
+        "D": "x: 21, 28, 35; y: 8, 4, 0"
+      }
+    }
+  },
+  {
+    "key": "m1-06",
+    "answer": "C",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Total weight equals 160 pounds per cubic foot times the volume. Since the volume is between 12.7 and 15.7 cubic feet, multiply each bound by 160: 160(12.7) < x < 160(15.7). Choices A, B and D subtract, add or divide instead of multiplying, which doesn't turn volume into weight.",
+    "fix": {
+      "prompt": "A geologist estimates that the volume of a boulder is greater than 12.7 cubic feet but less than 15.7 cubic feet. The geologist also estimates that the boulder weighs 160 pounds per cubic foot of volume. Which inequality represents this situation, where x represents the estimated total weight, in pounds, of the boulder?",
+      "choices": {
+        "A": "160 − 15.7 < x < 160 − 12.7",
+        "B": "160 + 12.7 < x < 160 + 15.7",
+        "C": "160(12.7) < x < 160(15.7)",
+        "D": "160/15.7 < x < 160/12.7"
+      }
+    },
+    "type": "mcq"
+  },
+  {
+    "key": "m1-07",
+    "answer": "C",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "No need to solve for x: subtract 16 from both sides of 46 = 16 + 2(x − 8) to get 2(x − 8) = 30. Choice B, 23, is the value of x itself (x − 8 = 15), not of 2(x − 8)."
+  },
+  {
+    "key": "m1-08",
+    "answer": "A",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "y = x^2 + 1.7 is a parabola opening upward with vertex (0, 1.7), and y = 1.7 − x is a line with slope −1 and y-intercept 1.7. Graph A shows exactly this: both graphs pass through (0, 1.7), and the line falls to the right. The other graphs have a line with positive slope or a parabola whose vertex isn't at (0, 1.7).",
+    "figure": 0,
+    "choiceImages": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4
+    }
+  },
+  {
+    "key": "m1-09",
+    "answer": "C",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The angles of a triangle add to 180°, so 47 + 90 + k/2 = 180, which gives k/2 = 43 and k = 86. Choice A, 43, is the measure of angle C, not k.",
+    "fix": {
+      "prompt": "In triangle ABC, the measure of angle A is 47°, the measure of angle B is 90°, and the measure of angle C is (k/2)°. What is the value of k?"
+    }
+  },
+  {
+    "key": "m1-10",
+    "answer": [
+      "4.05",
+      "81/20"
+    ],
+    "skill": "percentages",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The retail price is 270% of $5.00: 2.70 × 5.00 = $13.50. Taking 70% off leaves 30% of the retail price: 0.30 × 13.50 = $4.05. A common slip is to compute 70% of 13.50 ($9.45), which is the discount, not the new price."
+  },
+  {
+    "key": "m1-11",
+    "answer": "B",
+    "skill": "two-var-data",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The line passes through about (1, 12) and (13, 0), so its slope is (0 − 12)/(13 − 1) = −12/12 = −1, closest to −1.1. The line falls from left to right, so the positive choices C and D are out, and −3.3 is far too steep."
+  },
+  {
+    "key": "m1-12",
+    "answer": [
+      "6"
+    ],
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand the right side: ry^4(12y − 8) = 12ry^5 − 8ry^4. Matching with 72y^5 − 48y^4 gives 12r = 72 and 8r = 48, so r = 6 either way."
+  },
+  {
+    "key": "m1-13",
+    "answer": "A",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In (x, y), x is the number of days after the company went public and y is the estimated stock price. So (1, 58) means 1 day after going public, the estimated price is $58; check: 0.25(1) − 6.5(1) + 64.25 = 58. Choice B swaps the roles of x and y, and C and D describe rates, which a single point can't give.",
+    "fix": {
+      "prompt": "y = 0.25x^2 − 6.5x + 64.25\nThe equation gives the estimated stock price y, in dollars, for a certain company x days after the company went public, where 0 ≤ x < 20. Which statement is the best interpretation of (x, y) = (1, 58) in this context?"
+    }
+  },
+  {
+    "key": "m1-14",
+    "answer": "D",
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Each object has mass t/r kilograms, so 146r objects have mass 146r · (t/r) = 146t. Equivalently, 146 times as many objects means 146 times the mass. Choice C divides by 146 instead of multiplying.",
+    "fix": {
+      "choices": {
+        "C": "t/146"
+      }
+    }
+  },
+  {
+    "key": "m1-15",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of 42/x = 7x by x to get 42 = 7x^2. So 7x^2 = 42 directly. Choice A, 6, is the value of x^2, not 7x^2.",
+    "fix": {
+      "prompt": "If 42/x = 7x, what is the value of 7x^2?"
+    }
+  },
+  {
+    "key": "m1-16",
+    "answer": [
+      "6/5",
+      "1.2"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line k passes through (−6, 0) and (0, −5), so its slope is (−5 − 0)/(0 − (−6)) = −5/6. A perpendicular line has the negative reciprocal slope, so line j has slope 6/5. Answering −5/6 would give the slope of line k itself."
+  },
+  {
+    "key": "m1-17",
+    "answer": [
+      "9"
+    ],
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where x = 0: f(0) = −9(0) + 9 = 9. In y = mx + b form, the constant term b = 9 is the y-coordinate of the y-intercept."
+  },
+  {
+    "key": "m1-18",
+    "answer": [
+      "526.1",
+      "4735/9"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set h = 467.33: 9(v − 273.15)/5 + 12 = 467.33. Subtract 12 to get 9(v − 273.15)/5 = 455.33, multiply by 5/9 to get v − 273.15 ≈ 252.96, and add 273.15 to get v ≈ 526.11, entered as 526.1. Remember to undo the +12 first, before the fraction.",
+    "fix": {
+      "prompt": "The equation h = 9(v − 273.15)/5 + 12 gives the corresponding temperature h, in degrees Fahrenheit, of any substance that has a temperature of v kelvins, where v > 0. If a substance has a temperature of 467.33 degrees Fahrenheit, what is the corresponding temperature, in kelvins, of this substance?"
+    }
+  },
+  {
+    "key": "m1-19",
+    "answer": "B",
+    "skill": "circles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A circle with center (h, k) and radius r has equation (x − h)^2 + (y − k)^2 = r^2. Here r = 7k, so r^2 = (7k)^2 = 49k^2. Choice A squares only the 7, and C forgets to square the radius at all."
+  },
+  {
+    "key": "m1-20",
+    "answer": [
+      "52/53",
+      ".9811",
+      "0.981"
+    ],
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The right angle is at S, so RT = 53 is the hypotenuse. By the Pythagorean theorem, TS^2 = 53^2 − (sqrt(105))^2 = 2809 − 105 = 2704, so TS = 52. The side opposite angle R is TS, so sin R = 52/53. Using RS as the opposite side would give cos R instead.",
+    "fix": {
+      "prompt": "In the triangle shown, RS = sqrt(105). What is the value of sin R?"
+    }
+  },
+  {
+    "key": "m1-21",
+    "answer": "C",
+    "skill": "area-volume",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "When every side length is multiplied by 2, the area is multiplied by 2^2 = 4. So the area of PQRS is 4 × 5 = 20 square centimeters. Choice B multiplies the area by 2, which only applies to lengths."
+  },
+  {
+    "key": "m1-22",
+    "answer": "B",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "s(t) = −2t^2 + 55t + 1 opens downward, so its maximum is at the vertex t = −55/(2(−2)) = 55/4. Then r(55/4) = 55(55/4) − 2(55/4)^2 = 4(55/4)^2 − 2(55/4)^2 = 2(55/4)^2, so the maximum of s is 1 + 2(55/4)^2. Choice A, 1 + (55/2)^2 = 1 + 4(55/4)^2, is twice the correct r-value.",
+    "fix": {
+      "prompt": "r(t) = 55t − 2t^2\nThe function r is defined by the given equation. The function s is defined by s(t) = r(t) + 1. Which expression represents the maximum value of s(t)?",
+      "choices": {
+        "A": "1 + (55/2)^2",
+        "B": "1 + 2(55/4)^2",
+        "C": "1 − 2(55/4)^2",
+        "D": "1 − 2(55/2)^2"
+      }
+    }
+  },
+  {
+    "key": "m2-01",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At the start of the experiment x = 0, and f(0) = 39 − 0.1(0) = 39. So 39 is the estimated height of the water, in cm, at the start. The −0.1 is the change in height each day (C), not the 39."
+  },
+  {
+    "key": "m2-02",
+    "answer": "B",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide water by area for any row: 4536/2520 = 1.8, and the other rows give the same ratio (6804/3780 = 1.8, 9072/5040 = 1.8). So f(x) = 1.8x. Choice D, 0.56x, is the reciprocal of 1.8 and would give far too little water.",
+    "fix": {
+      "prompt": "The roofs on the buildings of a public garden are designed to allow water to drain into the garden. The table shows the relationship between the area x, in square feet, of a roof and the amount of water f(x), in gallons, drained from the roof into the garden over a certain period of time. Which equation could define f?",
+      "table": {
+        "headers": [
+          "Area (square feet)",
+          "Water (gallons)"
+        ],
+        "rows": [
+          [
+            "2520",
+            "4536"
+          ],
+          [
+            "3780",
+            "6804"
+          ],
+          [
+            "5040",
+            "9072"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "m2-03",
+    "answer": "C",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A 53% increase multiplies the advanced skaters by 1.53, and a 44% increase multiplies the intermediate skaters by 1.44, so 2020's total is 1.53a + 1.44b. The total also grew 49% from 35, so it equals 35(1.49). Choice D attaches each growth rate to the wrong group."
+  },
+  {
+    "key": "m2-04",
+    "answer": "D",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Multiply both sides of b − 72 = x/y by y: x = y(b − 72) = by − 72y. Choice B forgets to multiply the 72 by y.",
+    "fix": {
+      "prompt": "b − 72 = x/y\nThe given equation relates the positive numbers b, x, and y. Which equation correctly expresses x in terms of b and y?",
+      "choices": {
+        "A": "x = (b − 72)/y",
+        "C": "x = (by − 72)/y"
+      }
+    }
+  },
+  {
+    "key": "m2-05",
+    "answer": "D",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A system of two linear equations has infinitely many solutions only when both equations describe the same line. So y = mx + b must have the same slope (m = 2/7) and the same y-intercept as y = (2/7)x + 3, giving b = 3. Choice A, −3, would give a parallel line with no solutions.",
+    "fix": {
+      "prompt": "One of the two equations in a system of linear equations is given.\ny = (2/7)x + 3\nThe system has infinitely many solutions. If the second equation in the system is y = mx + b, where m and b are constants, what is the value of b?",
+      "choices": {
+        "A": "−3",
+        "B": "1/3",
+        "C": "−1/3"
+      }
+    }
+  },
+  {
+    "key": "m2-06",
+    "answer": "A",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 6x + 16 into the second equation: −7x − (6x + 16) = 36, so −13x = 52 and x = −4. Then y = 6(−4) + 16 = −8. Choice C, (4, 40), satisfies the first equation but gives −28 − 40 = −68, not 36, in the second.",
+    "fix": {
+      "choices": {
+        "B": "(20/13, −80/13)"
+      }
+    }
+  },
+  {
+    "key": "m2-07",
+    "answer": "A",
+    "skill": "one-var-data",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Team A's scores are bunched in the middle (25 to 40), while team B's scores pile up at both ends (15–25 and 40–50) with few in the middle. Values farther from the mean mean a larger standard deviation, so team A's is smaller. The histograms give enough information to compare spread, so D is wrong."
+  },
+  {
+    "key": "m2-08",
+    "answer": [
+      "5"
+    ],
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Factor: x^2 − 5x − 24 = (x − 8)(x + 3) = 0, so x = 8 or x = −3, and the sum is 8 + (−3) = 5. You can also use the sum of roots −b/a = −(−5)/1 = 5."
+  },
+  {
+    "key": "m2-09",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(x) = 0 where the graph meets the x-axis. The graph levels off near y = −7 on the left and drops steeply to the right, staying below the x-axis everywhere, so it never crosses y = 0. Zero values of x work."
+  },
+  {
+    "key": "m2-10",
+    "answer": [
+      "6.75",
+      "27/4"
+    ],
+    "skill": "ratios-rates",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The cube's volume is 3^3 = 27 cubic centimeters. Mass equals density times volume: 0.250 × 27 = 6.75 grams. A common slip is to use the edge length 3 instead of the volume, which gives 0.75."
+  },
+  {
+    "key": "m2-11",
+    "answer": [
+      "-12"
+    ],
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A parabola is symmetric about the vertical line through its vertex, which is halfway between the two x-intercepts. So r = (−20 + (−4))/2 = −12. The y-coordinate −64 isn't needed to find r."
+  },
+  {
+    "key": "m2-12",
+    "answer": "C",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number 91 more than x is x + 91, so the product is x(x + 91) = x^2 + 91x. Choice B adds 91 instead of multiplying it by x."
+  },
+  {
+    "key": "m2-13",
+    "answer": "B",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A quadratic has exactly one solution when its discriminant is 0: 20^2 − 4(−2)(c) = 400 + 8c = 0, so c = −50. Check: −2x^2 + 20x − 50 = −2(x − 5)^2, which has the single solution x = 5."
+  },
+  {
+    "key": "m2-14",
+    "answer": "C",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Set the equations equal: 2x^2 − 15x + 23 = x + a, so 2x^2 − 16x + (23 − a) = 0. One intersection means this quadratic has a double root, located at x = −(−16)/(2 · 2) = 4. (The discriminant 256 − 8(23 − a) = 0 also gives a = −9, but only x is asked.) Choice B has the wrong sign."
+  },
+  {
+    "key": "m2-15",
+    "answer": "A",
+    "skill": "percentages",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Let c = 100, so b = 84 and b + c = 184. Then a = 0.02352 × 184 = 4.32768, and a/b = 4.32768/84 = 0.05152, so a is 5.152% of b. Choice C misplaces the decimal when converting 0.05152 to a percent."
+  },
+  {
+    "key": "m2-16",
+    "answer": "D",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Both functions have base 1.4 > 1, so they increase and reach their minimum at x = 0. That minimum is f(0) = 18(1.4)^5 and g(0) = 18(1.16)(1.4)^3, and neither of these numbers appears as a constant or coefficient in its equation (18 and 18(1.16) are the values at x = −5 and x = −3). So neither equation displays its minimum.",
+    "fix": {
+      "prompt": "The functions f and g are defined by the given equations, where x > 0. Which of the following equations displays, as a constant or coefficient, the minimum value of the function it defines, where x ≥ 0?\nI. f(x) = 18(1.4)^(x+5)\nII. g(x) = 18(1.16)(1.4)^(x+3)"
+    }
+  },
+  {
+    "key": "m2-17",
+    "answer": [
+      "403"
+    ],
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Simplify the left side: (12x + 28)/4 = 3x + 7, so the equation is 3x + 7 − s/13 = rx − 8r. Infinitely many solutions means both sides are identical, so r = 3 and 7 − s/13 = −8(3) = −24. Then s/13 = 31 and s = 403.",
+    "fix": {
+      "prompt": "(12x + 28)/4 − s/13 = r(x − 8)\nIn the given equation, s and r are constants, and s > 0. If the equation has infinitely many solutions, what is the value of s?"
+    }
+  },
+  {
+    "key": "m2-18",
+    "answer": "C",
+    "skill": "right-triangles-trig",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If each leg is s, the hypotenuse is s·sqrt(2), and the perimeter is 2s + s·sqrt(2). Factor: s(2 + sqrt(2)) = s·sqrt(2)(sqrt(2) + 1), and 18 + 18sqrt(2) = 18(1 + sqrt(2)), so s·sqrt(2) = 18, which is exactly the hypotenuse. Choice B, 9sqrt(2), is the length of each leg.",
+    "fix": {
+      "prompt": "The perimeter of an isosceles right triangle is 18 + 18sqrt(2) inches. What is the length, in inches, of the hypotenuse of this triangle?",
+      "choices": {
+        "B": "9sqrt(2)",
+        "D": "18sqrt(2)"
+      }
+    }
+  },
+  {
+    "key": "m2-19",
+    "answer": [
+      "9216"
+    ],
+    "skill": "area-volume",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "A triangular pyramid with all six edges equal has four faces that are equilateral triangles with side 96. Each face has area (sqrt(3)/4)(96)^2, so the total is 4 · (sqrt(3)/4)(96)^2 = 96^2 · sqrt(3) = 9216sqrt(3). So k = 9216.",
+    "fix": {
+      "prompt": "A right triangular pyramid has exactly six edges. Each of these edges is 96 centimeters long. If the surface area of the pyramid is k·sqrt(3) square centimeters, what is the value of k?"
+    }
+  },
+  {
+    "key": "m2-20",
+    "answer": "A",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first day costs $270 and each of the other x − 1 days costs $135, so y = 270 + 135(x − 1) = 135x + 135. Check x = 1: 135 + 135 = 270. Choice B gives only $135 for one day."
+  },
+  {
+    "key": "m2-21",
+    "answer": "A",
+    "skill": "lines-angles-triangles",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Every angle is either a = 7x − 250 or its supplement 430 − 7x. Adding four of them gives 28x − 1000, 14x − 320 (B), 360 (D), 1040 − 14x, or 1720 − 28x (C), depending on how many of each are chosen. −14x + 1,540 is not on this list, so it can't equal k.",
+    "fix": {
+      "prompt": "A line intersects two parallel lines, forming four acute angles and four obtuse angles. The measure of one of these eight angles is (7x − 250)°. The sum of the measures of four of the eight angles is k°. Which of the following could NOT be equivalent to k, for all values of x?"
+    }
+  },
+  {
+    "key": "m2-22",
+    "answer": "B",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second equation is 5 times the first, so both describe the same line, 7x + 4y = 3. Setting y = r gives 7x = 3 − 4r, so x = −4r/7 + 3/7 and the point is (−4r/7 + 3/7, r). Choice D swaps which expression goes with x; with x = r the correct y would be −7r/4 + 3/4, not −4r/7 + 3/7.",
+    "fix": {
+      "choices": {
+        "A": "(r/5 + 3, −r/5 + 15)",
+        "B": "(−4r/7 + 3/7, r)",
+        "C": "(r, 7r/4 + 3/4)",
+        "D": "(r, −4r/7 + 3/7)"
+      }
+    },
+    "note": "Choice B is printed as \"(−4r/7 + 3/7r)\" with the comma lost; reconstructed as (−4r/7 + 3/7, r), the only reading that fits the line."
+  }
+]

@@ -1,0 +1,608 @@
+[
+  {
+    "key": "rw1-01",
+    "answer": "A",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fellowship honors artists for something they have done, and Williams was chosen because he \"contributed so much to the arts.\" \"Achievements\" names those accomplishments. \"Suspicious\" is an adjective and doesn't fit the noun slot, and nobody is honored for \"assumptions\" or \"predictions.\"",
+    "fix": {
+      "prompt": "Which choice completes the text with the most logical and precise word or phrase?"
+    }
+  },
+  {
+    "key": "rw1-02",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Genetic research is a way of finding things out, so it \"revealed\" (made known) that teosinte grass is maize's ancestor. Research can't \"petition\" or \"encourage\" an ancestor, and \"expanded\" doesn't make sense with identifying where a plant came from."
+  },
+  {
+    "key": "rw1-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The speakers stand up and try to explain their idea of art \"a little more clearly,\" and the axe image compares this to carving a clear shape out of wood. So \"hew out\" means to define or state precisely. \"Visualize\" is tempting, but they are expressing their ideas out loud, not just picturing them privately.",
+    "fix": {
+      "passage": "The following text is adapted from Virginia Woolf’s 1919 novel Night and Day. The text describes a gathering of aspiring young artists and intellectuals.\n\nOne person after another rose, and, as with an ill-balanced axe, attempted to <u>hew out</u> his conception of art a little more clearly, and sat down with the feeling that, for some reason which he could not grasp, his strokes had gone awry. As they sat down they turned almost invariably to the person sitting next them, and rectified and continued what they had just said in public."
+    }
+  },
+  {
+    "key": "rw1-04",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text shows Francie's plan to read every book in the library, one a day in alphabetical order, without skipping dull ones and pushing on even when some were \"hard going.\" That portrays her determination to reach her goal. Choice A fails because the text stresses that some topics were hard to get through, not that she enjoyed one unusual topic.",
+    "fix": {
+      "passage": "The following text is adapted from Betty Smith's 1943 novel A Tree Grows in Brooklyn. Francie, a young girl, visits the library often.\n\nFrancie thought that all the books in the world were in that library and she had a plan about reading all the books in the world. She was reading a book a day in alphabetical order and not skipping the dry ones. She remembered that the first author had been Abbott. She had been reading a book a day for a long time now and she was still in the B’s. Already she had read about bees and buffalos, Bermuda vacations and Byzantine architecture. For all her enthusiasm, she had to admit that some of the B’s had been hard going. But Francie was a reader."
+    }
+  },
+  {
+    "key": "rw1-05",
+    "answer": "D",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Half-asleep in the SUV, Darius hears Farsi from the front seat, and it reminds him of his mother chanting Farsi poems to him at bedtime when he was little. The text links this present moment to a childhood memory. Rumi and Hafez are mentioned only in passing (A), and the mother recites poems rather than writing them (C).",
+    "fix": {
+      "passage": "The following text is adapted from Adib Khorram’s 2018 novel Darius the Great Is Not Okay. Darius, a teenager from the United States, is visiting his grandparents, Mamou and Babou, and other family members in Iran.\n\nI was too tired to fall all the way asleep, and even though Mamou was soft and warm, leaning up against her wasn’t a terribly comfortable position to sleep in. So I dozed and floated on the clouds of Farsi that blew my way from the front seat of Dayi [Uncle] Jamsheed’s SUV. It reminded me of when I was little, and Mom chanted to me in Farsi every night before bedtime. It’s hard to describe Farsi chanting: the way Mom drew her voice out like the notes of a cello as she recited poems by Rumi or Hafez. I didn’t know what they meant, but that didn’t matter. It was quiet and soothing."
+    }
+  },
+  {
+    "key": "rw1-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The previous sentence names the Old Manse as the house where Hawthorne lived and wrote. The underlined sentence tells what the building is used for now: a museum about Hawthorne. It doesn't recount the house's history (D) or summarize Hawthorne's career (A).",
+    "fix": {
+      "passage": "The Old Manse in Concord, Massachusetts, is the house where Nathaniel Hawthorne lived briefly and wrote his short story called Mosses from an Old Manse. <u>Now the house is a museum dedicated to Hawthorne's life and writings.</u> Visitors travel to this museum to feel more connected to an author they admire. To encourage that sense of connection, the museum's curators recommend nearby hiking trails and organize outdoor activities. Such activities help visitors appreciate the natural scenery that inspired Hawthorne."
+    }
+  },
+  {
+    "key": "rw1-07",
+    "answer": "A",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says Johnson's style went through \"an abrupt transformation,\" and the underlined sentence explains what that change was: he moved from expressionist landscapes to bold portraits of Black Americans. It adds detail to the earlier statement rather than questioning it (D). It doesn't discuss his travels as evidence of influences (B).",
+    "fix": {
+      "passage": "On painter William H. Johnson’s return to the United States in 1938 after a decade in Europe, his style underwent an abrupt transformation. <u>Turning away from landscapes painted in an expressionist style—a style that often involves using fluid distorted shapes and thick textured brushstrokes to express the artist’s subjective experience of reality—Johnson began painting portraits of Black Americans in a bold new way.</u> Evocative of African sculpture and American and Scandinavian folk art, these portraits feature flat, deliberately oversimplified figures in a vibrant but limited color palette."
+    }
+  },
+  {
+    "key": "rw1-08",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Quito respondents used parks more (82.9% vs. 71.9%) even though fewer of them lived within a 10-minute walk of a park. So the text concludes that being close to a park \"alone can't explain\" the difference; something else must be involved. Nothing in the text mentions the researchers' expectations (A) or doubts about the survey's accuracy (D)."
+  },
+  {
+    "key": "rw1-09",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The researchers say that moving items makes shoppers walk through more of the store, see more products, and buy things they hadn't planned on. In A, the shopper searched for misplaced cleaning supplies, spotted a notebook along the way, and bought it unplanned. Choice B involves moved items but no extra purchase, and C describes an obvious cue (a coupon), not a layout change."
+  },
+  {
+    "key": "rw1-10",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Tribal economic activity contributed $141,510 per employee. That is more than manufacturing ($130,403) and health care ($70,937) but less than transportation/warehousing ($234,720). Choice C fails because $141,510 is nowhere near $234,720, so the two aren't nearly equal.",
+    "fix": {
+      "passage": "The Osage Nation, the Quapaw Tribe, and the more than thirty other tribes in Oklahoma operate numerous businesses and generate billions of dollars in revenue. An economics student is researching the tribes' collective activity as a single industry. The student wants to compare the average amount that industry contributed per employee to Oklahoma's economy with the average amount contributed per employee by three other industries. Looking at the table, the student finds the tribal economic activity contributed over $141,000 per employee, on average, ranking it _____",
+      "table": {
+        "caption": "Impact of Four Key Industries on Oklahoma Economy in 2017",
+        "headers": [
+          "Industry",
+          "Approximate local contribution by industry",
+          "Number of people employed by industry",
+          "Average contribution per employee by industry"
+        ],
+        "rows": [
+          [
+            "Manufacturing",
+            "$16,707,500,000",
+            "128,122",
+            "$130,403"
+          ],
+          [
+            "Health care",
+            "$13,727,300,000",
+            "193,514",
+            "$70,937"
+          ],
+          [
+            "Transportation/warehousing",
+            "$12,414,600,000",
+            "52,891",
+            "$234,720"
+          ],
+          [
+            "Tribal economic activity",
+            "$7,312,400,000",
+            "51,674",
+            "$141,510"
+          ]
+        ]
+      }
+    },
+    "note": "Table printed $712,414,600,000 for transportation/warehousing; corrected to $12,414,600,000 (matches 52,891 × $234,720). Doesn't affect the answer."
+  },
+  {
+    "key": "rw1-11",
+    "answer": "A",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Mrs. Sommers is absorbed in deciding how to spend the money. A says the question \"occupied her greatly\" and that she was \"absorbed in speculation and calculation\" for days, which shows exactly that. Choice D describes how having the money made her feel important, not her decision about spending it."
+  },
+  {
+    "key": "rw1-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If neither bacterium played a big role in the rise of multicellularity, the strongest support would be that neither one caused S. rosetta to form colonies. That is D. Choices A, B, and C each show at least one bacterium triggering colony formation, which would suggest that bacterium could matter.",
+    "fix": {
+      "passage": "Biologist Rosanna Alegado believes that we might learn how multicellular organisms developed from single-celled ones if we understand why the single-celled organism Salpingoeca rosetta, the oldest living relative of animals, sometimes forms colonies of cells. Alegado and colleagues reviewed data from many studies about how S. rosetta responds when exposed to another type of single-celled organism, bacteria, including Edward G. Ruby's work with Vibrio fischeri bacteria and Ana M. Cerdeño-Tárraga's work with Bacteroides fragilis bacteria. Alegado and colleagues concluded that neither V. fischeri nor B. fragilis are likely to have played a significant role in the development of multicellular organisms."
+    }
+  },
+  {
+    "key": "rw1-13",
+    "answer": "C",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that some lakes had shorter ice seasons between the early 1980s and the mid-2000s. Kitusjärvi had 170 ice days in 1980-81 but only 149 in 2005-06, a decline. Choice B shows the opposite trend (Lake Baikal went from 96 to 119), and A and D compare latitudes, which isn't about change over time.",
+    "fix": {
+      "passage": "It is common for freshwater lakes near or above a latitude of 45° north of the equator, like Lake Mjøsa in Norway, to accumulate surface ice in winter. The amount and duration of ice depends on many factors, including local weather conditions as well as the lake's depth, volume, and surface area, but a climate researcher claims that some lakes in these latitudes have seen a decline in the duration of ice between the early 1980s and the mid-2000s.",
+      "table": {
+        "caption": "Days per Winter That Lakes Have Surface Ice",
+        "headers": [
+          "Lake",
+          "Latitude (degrees)",
+          "1980-81",
+          "1985-86",
+          "1990-91",
+          "1995-96",
+          "2000-01",
+          "2005-06"
+        ],
+        "rows": [
+          [
+            "Lake Baikal",
+            "51.85",
+            "96",
+            "118",
+            "92",
+            "103",
+            "127",
+            "119"
+          ],
+          [
+            "Lake Monona",
+            "43.05",
+            "86",
+            "113",
+            "88",
+            "107",
+            "108",
+            "94"
+          ],
+          [
+            "Kitusjärvi",
+            "62.283",
+            "170",
+            "176",
+            "169",
+            "188",
+            "127",
+            "149"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw1-14",
+    "answer": "C",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says a flat photo can't show how a building interacts with its surroundings. So a picture of Angkor Wat misses part of the building's full effect, which is C. Nothing in the text is about decay of materials (B) or exaggerating historical importance (D)."
+  },
+  {
+    "key": "rw1-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The BHS needs heavy funding because it tracks people over long timescales and at repeated intervals. A study that only finds an average age at one point doesn't need that ongoing data collection, since it isn't looking for trends over time. Choice C focuses on participant numbers, but the text ties funding needs to the long timescale, not to the size of the sample."
+  },
+  {
+    "key": "rw1-16",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The subject is \"Anthropologist Livia Barbosa,\" one person, so the verb must be singular: \"studies.\" The phrase \"of the Universidade Federal Fluminense in Brazil\" between them doesn't change the subject. \"Study,\" \"are studying,\" and \"have studied\" are all plural forms."
+  },
+  {
+    "key": "rw1-17",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Mexican Gothic\" is the title of the novel, and it is essential to identify which novel is meant, so no punctuation goes between \"novel\" and the title. A colon or comma would wrongly break up \"her novel Mexican Gothic,\" and an opening parenthesis has no closing match."
+  },
+  {
+    "key": "rw1-18",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Dendrochronologist\" is a title placed right before the name Valerie Trouet, so no punctuation should separate them. A comma, dash, or colon would cut the title off from the name it describes, just as you wouldn't write \"claims scientist, Valerie Trouet.\""
+  },
+  {
+    "key": "rw1-19",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"A fictionalized account of the lives of the Mirabal sisters\" is an appositive that begins with a comma after \"Butterflies,\" so it must close with a comma too, before the verb \"can serve.\" Choice D leaves the appositive unclosed, and adding \"and\" (A, B) makes it seem the subject continues."
+  },
+  {
+    "key": "rw1-20",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "\"Though\" here is an interrupting word meaning \"however,\" so it is set off with commas, and \"considering the breadth...\" is a phrase that completes the same sentence. Choice B makes \"Considering the breadth of the poet's influences...\" a fragment with no main verb. Choices C and D use a semicolon before a phrase that can't stand alone as a sentence."
+  },
+  {
+    "key": "rw1-21",
+    "answer": "A",
+    "skill": "boundaries",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "\"Okinaka doesn't make such decisions single-handedly, however\" is a complete sentence, and \"All historical designations must be approved...\" is another. A period between them is correct. Choice C joins two sentences with only a comma (a comma splice), and B has no punctuation at all."
+  },
+  {
+    "key": "rw1-22",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lists the steps of a dig in order: making a grid, then digging and recording artifacts. Removing and analyzing the artifacts in a lab is the last step, so \"Finally\" fits. \"Earlier\" reverses the order, and \"For instance\" would wrongly present this step as an example."
+  },
+  {
+    "key": "rw1-23",
+    "answer": "D",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence says scientists need precise, unchanging standards. The SI was developed to meet that need, so \"For this reason\" shows cause and effect. \"In contrast\" and \"Regardless\" signal an opposition that isn't there."
+  },
+  {
+    "key": "rw1-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Water lettuce absorbs nickel and stores it in its own tissues; as a result, nickel levels in the soil drop. \"In turn\" signals this consequence. \"Nevertheless\" implies a contrast, and \"specifically\" would need the second part to restate the first in more detail."
+  },
+  {
+    "key": "rw1-25",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say when al-Biruni published his theory, and A gives the date (1037 CE) along with what the theory was. Choices B, C, and D don't mention the publication date at all.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Iranian scholar Abu Rayhan al-Biruni studied Earth's physical features.\n• He theorized that a large landmass existed west of Europe and east of Asia.\n• Al-Biruni published his landmass theory in 1037 CE."
+    }
+  },
+  {
+    "key": "rw1-26",
+    "answer": "A",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To show a difference, the sentence has to compare both birds. A states that the long-billed starthroat is larger than the ruby-topaz hummingbird. Choices B and D each describe only one bird, and C points out something the two have in common.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Birds of Northern South America is an identification guidebook by ornithologists Robin Restall, Clemencia Rodner, and Miguel Lentino.\n• It lists the thirty-five hummingbird species found in Suriname.\n• The long-billed starthroat is a large hummingbird found in Suriname.\n• It is identifiable by its turquoise crown and its very long, black, straight bill.\n• The ruby-topaz hummingbird is a small hummingbird found in Suriname.\n• It is identifiable by its crimson crown and its short, black, curved bill.",
+      "choices": {
+        "A": "Though they share several traits in common, the long-billed starthroat is larger than the ruby-topaz hummingbird."
+      }
+    }
+  },
+  {
+    "key": "rw1-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To explain how the pendulum provides evidence, the sentence must give the mechanism: the pendulum's real path doesn't change, yet it appears to change because Earth turns beneath it. B states both parts. Choices A and C just say it provides evidence without explaining how, and D never mentions the apparent change an observer sees.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• Czech Technical University in Prague, the Czech Republic, is home to a Foucault pendulum.\n• The pendulum consists of a weighted ball that swings at the end of a roughly 21-meter-long cable.\n• Like all Foucault pendulums, it dangles from a fixed point that ensures the swing path of the pendulum doesn't change.\n• To an observer, the swing path of a Foucault pendulum appears to change over time because Earth rotates beneath it.\n• Foucault pendulums are used as a simple way to provide evidence of Earth's rotation."
+    }
+  },
+  {
+    "key": "rw2-01",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The nose is \"delicate\" and sticks out, \"making it especially easy to break,\" so it is the most fragile part. Being \"recognizable\" or \"sophisticated\" wouldn't explain why so many noses are missing."
+  },
+  {
+    "key": "rw2-02",
+    "answer": "C",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Readers \"enjoyed\" the book, and it went on to earn a Newbery Honor, so they also \"praised\" it. \"Rejected\" and \"ignored\" contradict enjoying it, and readers didn't \"create\" a book written by Engle."
+  },
+  {
+    "key": "rw2-03",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The fish swims \"cautiously, as if testing the water after a long sleep,\" meaning it is carefully trying out the water to see how it feels. \"Approving\" suggests a judgment, not a cautious check, and nothing suggests the fish is attacking or wearing out the water.",
+    "fix": {
+      "passage": "The following text is adapted from Rudolfo Anaya's 1972 novel Bless Me, Ultima. The young narrator and his friend Cico are staring into the water of a stream in rural New Mexico.\n\nThe golden fish swam by gracefully, cautiously, as if <u>testing</u> the water after a long sleep in his subterranean waters. His powerful tail moved in slow strokes as he slid though the water towards us."
+    }
+  },
+  {
+    "key": "rw2-04",
+    "answer": "D",
+    "skill": "words-in-context",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text argues that being the first to do something is the surest way to be remembered, as Jean Batten's example shows. So little can \"prevail over\" (beat) being first. The other phrases don't express the idea that being first outranks other accomplishments like North's."
+  },
+  {
+    "key": "rw2-05",
+    "answer": "B",
+    "skill": "words-in-context",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Over 8,000 ratings is a large sample, enough to trust the average, so the number is \"adequate.\" \"Insufficient\" says the opposite, and \"excessive\" suggests too many, which wouldn't make the rating more reliable. \"Accurate\" describes correctness, not whether a number is large enough."
+  },
+  {
+    "key": "rw2-06",
+    "answer": "B",
+    "skill": "text-structure-purpose",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most nocturnal mammals, like kangaroo rats, cut back activity in bright moonlight because the predator risk outweighs the benefit. White-footed mice don't, and their heavy use of grass cover is given as the reason: it changes the reward-and-risk balance. Choice D is wrong because their behavior is actually explained by benefits and costs, not inconsistent with them."
+  },
+  {
+    "key": "rw2-07",
+    "answer": "C",
+    "skill": "text-structure-purpose",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bartley claims that misfortune always lands on him, and the simile \"like a flock of crows on seed potatoes\" gives a vivid picture of trouble swooping down on him. It's figurative language, not something he saw at the fair (A), and it supports his claim rather than questioning it (B).",
+    "fix": {
+      "passage": "The following text is from Lady Gregory’s 1904 play Spreading the News. Mrs. Tarpey, Bartley, and Mrs. Fallon have been buying and selling goods at the local fair.\n\nMRS. TARPEY: Good-morrow, Bartley Fallon; good-morrow, Mrs. Fallon. Well, Bartley, you’ll find no cause for complaining to-day; they are all saying it was a good fair.\n\nBARTLEY (raising his voice): It was not a good fair, Mrs. Tarpey. It was a scattered sort of a fair. If we didn’t expect more, we got less. That’s the way with me always: whatever I have to sell goes down and whatever I have to buy goes up. If there’s ever any misfortune coming to this world, it’s on myself it pitches, <u>like a flock of crows on seed potatoes.</u>"
+    }
+  },
+  {
+    "key": "rw2-08",
+    "answer": "D",
+    "skill": "cross-text-connections",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Text 1 says The Nutcracker should no longer be produced because it's stuck in the past. Text 2 agrees the show is outdated but argues it should be kept and can be updated creatively, as Debbie Allen did. So the author would suggest revised versions rather than dropping the show. Choice A is wrong because Text 2 agrees the show is dated and praises an updated version.",
+    "fix": {
+      "passage": "Text 1\nIn 1954 George Balanchine choreographed a production of The Nutcracker, a ballet by Pyotr Ilyich Tchaikovsky. It has since become a tradition for hundreds of dance companies in North America to stage The Nutcracker each year. <u>But the show is stuck in the past, with an old-fashioned story and references, so it should no longer be produced</u>. Ballet needs to create new traditions if it wants to stay relevant to contemporary audiences.\n\nText 2\nThe Nutcracker is outdated, but it should be kept because it's a holiday favorite and provides substantial income for some dance companies. Although it can be behind the times, there are creative ways to update the show. For example, Debbie Allen successfully modernized the story. Her show Hot Chocolate Nutcracker combines ballet, tap, hip-hop, and other styles, and it has been gaining in popularity since it opened in 2009.",
+      "prompt": "Based on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?"
+    }
+  },
+  {
+    "key": "rw2-09",
+    "answer": "D",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both studies discussed, Dixson's and Clark's review, are about how ocean acidification affects fish behavior. The text's point about sample size is a criticism of that research, not a different topic. Overfishing, fishing technology, and predators' feeding are never discussed."
+  },
+  {
+    "key": "rw2-10",
+    "answer": "A",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes Grace Murray Hopper's early contributions to cryptology and how she helped open the field to later women like Maureen Baginski. The topic is women in cryptology. Hopper's education (C) and Baginski's goals (D) aren't discussed."
+  },
+  {
+    "key": "rw2-11",
+    "answer": "C",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text uses Cunningham as one example of the rich history of Black journalism in the US and then says the National Association of Black Journalists preserves and honors that history. That's C. Choice B is only a detail (and the founding year, 1975, isn't the main point), while A and D bring in other countries the text never mentions."
+  },
+  {
+    "key": "rw2-12",
+    "answer": "D",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Winnemucca addresses the reader directly to establish her authority. D does both: \"My dear reader\" speaks to the reader, and \"I know what I am talking about\" asserts her credibility based on her experience. Choices A and C also address the reader, but they don't make a case for her authority."
+  },
+  {
+    "key": "rw2-13",
+    "answer": "B",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The concern is that the longer a species has been extinct, the less likely its habitat still exists. In the table, the saber-toothed cat has been extinct the longest, 11,000 years. Choice C is false: the mammoth died out 6,400 years ago, after the saber-toothed cat, not before it.",
+    "fix": {
+      "passage": "The passage of time is among the many obstacles faced by scientists who are pursuing de-extinction efforts—that is, efforts to use breeding or a mixture of cloning and genetic engineering to bring back extinct species. Specifically, researchers are concerned that the longer a species has been extinct, the less likely it is that a suitable habitat still exists for that species. Among candidate species for de-extinction, this problem would be especially concerning for the _____",
+      "table": {
+        "caption": "Partial List of Candidate Species for De-extinction",
+        "headers": [
+          "Common name",
+          "Scientific name",
+          "Became extinct"
+        ],
+        "rows": [
+          [
+            "Huia",
+            "Heteralocha acutirostris",
+            "1907"
+          ],
+          [
+            "Caribbean monk seal",
+            "Monachus tropicalis",
+            "1952"
+          ],
+          [
+            "Passenger pigeon",
+            "Ectopistes migratorius",
+            "1914"
+          ],
+          [
+            "Saber-toothed cat",
+            "Smilodon",
+            "11,000 years before present"
+          ],
+          [
+            "Woolly mammoth",
+            "Mammuthus primigenius",
+            "6,400 years before present"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "key": "rw2-14",
+    "answer": "D",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "MacLean's study found that breeds with similar behavior, especially trainability, tend to be genetically similar. So if French bulldogs and bullmastiffs show similar trainability, that similarity may come from shared genetics. Choice A is tempting, but similar trainability doesn't mean either breed is more trainable than most others."
+  },
+  {
+    "key": "rw2-15",
+    "answer": "A",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The study found that plots with limited logging may be healthier than plots that weren't logged at all. That suggests logging can help keep forests healthy, as long as it's limited. Choice D says the opposite of the finding, and nothing compares other strategies (B)."
+  },
+  {
+    "key": "rw2-16",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Which\" refers to Chicago Midway International Airport, a single airport, so the verb must be singular: \"which is located.\" \"Are,\" \"were,\" and \"have been\" are plural forms that don't agree with a singular noun."
+  },
+  {
+    "key": "rw2-17",
+    "answer": "C",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Her innovative poems popularized the use of Jamaican Creole\" is one clause: the verb \"popularized\" takes the object \"the use of...\" directly. No punctuation should separate a verb from its object, so a colon, comma, or semicolon is wrong."
+  },
+  {
+    "key": "rw2-18",
+    "answer": "A",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The pronoun refers to \"the eating utensils\" (table forks), which is plural, and the items are called \"luxury items,\" also plural. So the plural \"them\" is needed. \"This,\" \"that,\" and \"it\" are singular."
+  },
+  {
+    "key": "rw2-19",
+    "answer": "C",
+    "skill": "form-structure-sense",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence needs plain plural nouns: New Mexico joined the list of US states and territories that have been led by a woman. Nothing is owned here, so no apostrophes are needed. Choices A, B, and D wrongly use possessive forms."
+  },
+  {
+    "key": "rw2-20",
+    "answer": "B",
+    "skill": "boundaries",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"Sessions may include repetitive improvisation exercises\" is a verb followed directly by its object, so no punctuation goes between \"include\" and \"repetitive.\" A colon, semicolon, or comma would wrongly split the verb from its object."
+  },
+  {
+    "key": "rw2-21",
+    "answer": "B",
+    "skill": "form-structure-sense",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes what happens \"each night\" in the present tense (\"is bathed,\" \"is\"), so the simple present \"illuminates\" fits a repeated, ongoing action. \"Illuminated\" is past tense, \"will be illuminating\" is future, and \"would illuminate\" is conditional."
+  },
+  {
+    "key": "rw2-22",
+    "answer": "C",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Taylor wanted stations like KABU to thrive, and so she founded Native Public Media to support them. \"Therefore\" shows that the second action is a result of the first. \"Regardless\" and \"Besides\" don't show cause and effect, and \"In other words\" would wrongly signal a restatement."
+  },
+  {
+    "key": "rw2-23",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Greenidge-Sabral wanted to avoid harsh synthetic dyes, and experimenting with natural dyes was how she pursued that goal. \"To that end\" links an action to the purpose just stated. \"On the other hand\" signals a contrast that isn't there."
+  },
+  {
+    "key": "rw2-24",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The cheetah and blue whale ranked in the top twenty, which is impressive, but the next sentence says the tiger beat every animal. \"Still\" sets up this contrast: as popular as those animals were, the tiger was even more so. \"For example\" and \"As a result\" don't fit, since the tiger's ranking isn't an example or result of the others'."
+  },
+  {
+    "key": "rw2-25",
+    "answer": "A",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The second sentence says the Comac jet is far more aerodynamic than the Wright Flyer; the third backs that up with a striking fact, a lift-to-drag ratio more than twice as high. \"In fact\" introduces information that strengthens the previous point. \"However\" and \"Nevertheless\" signal a contrast, which doesn't fit.",
+    "fix": {
+      "passage": "The world's first airplane, the 1903 Wright Flyer, was not very aerodynamic, as evidenced by its low lift-to-drag ratio of just 8.3:1. The Comac ARJ21 Xiangfeng jet, like most modern aircraft, is far more aerodynamic. _____ its lift-to-drag ratio is more than twice that of the Wright Flyer."
+    }
+  },
+  {
+    "key": "rw2-26",
+    "answer": "B",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text gives examples of African American history courses at different schools: Walker at the University of Texas, then Clark-Lewis at Howard University. \"Elsewhere\" signals moving to another location with a similar course. \"In particular\" and \"In other words\" would wrongly present the Howard example as narrowing or restating the Texas one."
+  },
+  {
+    "key": "rw2-27",
+    "answer": "B",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The audience already knows what seedling emergence is, so the sentence should state the finding without defining the term. B gives the setting and the result: plant litter had a negative effect on seedling emergence. Choice C defines the term unnecessarily, and D gives only the publication year, not the findings.",
+    "fix": {
+      "passage": "While researching a topic, a student has taken the following notes:\n• In a 2001 study, Wilby and Brown tested the effect of plant litter on seedling emergence in a grassland setting.\n• The test site was a flooded grassland in a temperate midlatitude climate in the United Kingdom.\n• The researchers found that in those environmental conditions the presence of plant litters had a negative effect on seedling emergence.\n• Seedling emergence is when a seedling sprouts above ground and begins photosynthesis."
+    }
+  }
+]
