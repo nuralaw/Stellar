@@ -20,6 +20,38 @@ export function Avatar({ value, className = "h-10 w-10 text-xl", alt = "" }: { v
 
 const SIZE = 256;
 
+/** Draws an image (URL) into a size×size square, center-cropped, and returns it as WebP/JPEG data. */
+async function squareImage(src: string, size: number, quality: number): Promise<string> {
+  const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+    const i = new Image();
+    i.onload = () => resolve(i);
+    i.onerror = () => reject(new Error("Couldn't open that image. Try a JPG or PNG."));
+    i.src = src;
+  });
+  const side = Math.min(img.naturalWidth, img.naturalHeight);
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = size;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("Your browser can't process images.");
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(img, (img.naturalWidth - side) / 2, (img.naturalHeight - side) / 2, side, side, 0, 0, size, size);
+  const webp = canvas.toDataURL("image/webp", quality);
+  return webp.startsWith("data:image/webp") ? webp : canvas.toDataURL("image/jpeg", quality);
+}
+
+/**
+ * The avatar as other students see it (leaderboards): emoji as is, a photo shrunk to a 64×64 thumbnail
+ * (a few KB) so boards with many photos stay light.
+ */
+export async function publicAvatar(avatar: string): Promise<string> {
+  if (!isPhotoAvatar(avatar)) return avatar;
+  try {
+    return await squareImage(avatar, 64, 0.8);
+  } catch {
+    return "🙂";
+  }
+}
+
 /**
  * Turns an image file into a small square avatar (center crop, 256×256) as a data URL, so it fits in this
  * browser's storage. Rejects files that aren't images or are too big to read comfortably.
@@ -29,21 +61,7 @@ export async function fileToAvatar(file: File): Promise<string> {
   if (file.size > 15 * 1024 * 1024) throw new Error("That image is over 15 MB. Pick a smaller one.");
   const url = URL.createObjectURL(file);
   try {
-    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
-      const i = new Image();
-      i.onload = () => resolve(i);
-      i.onerror = () => reject(new Error("Couldn't open that image. Try a JPG or PNG."));
-      i.src = url;
-    });
-    const side = Math.min(img.naturalWidth, img.naturalHeight);
-    const canvas = document.createElement("canvas");
-    canvas.width = canvas.height = SIZE;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) throw new Error("Your browser can't process images.");
-    ctx.imageSmoothingQuality = "high";
-    ctx.drawImage(img, (img.naturalWidth - side) / 2, (img.naturalHeight - side) / 2, side, side, 0, 0, SIZE, SIZE);
-    const webp = canvas.toDataURL("image/webp", 0.85);
-    return webp.startsWith("data:image/webp") ? webp : canvas.toDataURL("image/jpeg", 0.85);
+    return await squareImage(url, SIZE, 0.85);
   } finally {
     URL.revokeObjectURL(url);
   }

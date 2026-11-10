@@ -36,6 +36,13 @@ export function checkName(name: unknown): string {
   if (!n) throw new BadRequest("Pick a name for the leaderboard");
   return n;
 }
+/** Leaderboard avatar: a short emoji, or a small raster image as a data: URL (no SVG, ≤ 16 KB). */
+export function checkAvatar(a: unknown): string {
+  if (typeof a !== "string") return "";
+  if (/^data:image\/(webp|jpeg|png);base64,[A-Za-z0-9+/]+=*$/.test(a)) return a.length <= 16_000 ? a : "";
+  return a.startsWith("data:") ? "" : a.slice(0, 8);
+}
+
 export function checkResponses(r: unknown, ids: string[]): Record<string, string> {
   const out: Record<string, string> = {};
   if (!r || typeof r !== "object") return out;
@@ -152,6 +159,20 @@ async function finish(e: Entry, responses: Record<string, string>, now: number):
 
 function resultOf(e: Entry) {
   return { score: e.score!, base: e.base!, bonus: e.bonus!, correct: e.correct!, seconds: e.seconds!, ...(e.annulled ? { annulled: true } : {}) };
+}
+
+/** New name / avatar from Profile: updates the caller's entries this week, so the boards show the latest. */
+export async function updatePlayer(userId: string, name: string, avatar: string, now: number) {
+  const week = weekId(now);
+  let updated = 0;
+  for (const round of ["rw", "math"] as RoundId[]) {
+    const e = await store.get(week, round, userId);
+    if (e && (e.name !== name || e.avatar !== avatar)) {
+      await store.update(week, round, userId, { name, avatar });
+      updated++;
+    }
+  }
+  return { updated };
 }
 
 /* ---------------- leaderboards ---------------- */

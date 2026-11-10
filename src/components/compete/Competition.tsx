@@ -7,7 +7,7 @@ import { getUserId, updateProfile, useHydrated, useProfile } from "@/lib/store";
 import { CompeteRound, RoundReview, WARN_ICON, fmtDuration, type RoundData } from "./CompeteRound";
 import { exitFullscreen, requestFullscreenNow, useCanFullscreen } from "@/lib/fullscreen";
 import { PAGE } from "@/lib/ui";
-import { isPhotoAvatar } from "@/components/Avatar";
+import { Avatar, publicAvatar } from "@/components/Avatar";
 
 interface Hub {
   week: string;
@@ -143,7 +143,7 @@ export function Competition() {
       const res = await fetch("/api/competition/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ round: r, userId, name: profile.name, avatar: isPhotoAvatar(profile.avatar) ? "🙂" : profile.avatar }),
+        body: JSON.stringify({ round: r, userId, name: profile.name, avatar: await publicAvatar(profile.avatar) }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);
@@ -167,6 +167,26 @@ export function Competition() {
     setGate(null);
     await open(r);
   };
+
+  // Played this week and changed name / photo since? Push it to the boards (once per change).
+  const played = hub?.week === hub?.current && hub?.mine.some((m) => m.status !== "none");
+  useEffect(() => {
+    if (!played || !userId || !profile.name.trim()) return;
+    let alive = true;
+    publicAvatar(profile.avatar).then((avatar) =>
+      fetch("/api/competition/profile", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, name: profile.name, avatar }),
+      })
+        .then((r) => r.json())
+        .then((r) => alive && r.updated > 0 && fetchHub(userId, week).then((h) => alive && setHub(h)))
+        .catch(() => {}),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [played, userId, profile.name, profile.avatar, week]);
 
   const back = () => {
     setRound(null);
@@ -387,7 +407,7 @@ export function Competition() {
                   <td className="px-4 py-3 font-semibold tabular-nums sm:px-5">{r.rank <= 3 ? <span aria-label={`Rank ${r.rank}`}>{MEDAL[r.rank - 1]}</span> : r.rank}</td>
                   <td className="px-2 py-3">
                     <span className="flex min-w-0 items-center gap-2">
-                      <span className="text-lg leading-none">{r.avatar}</span>
+                      <Avatar value={r.avatar} className="h-7 w-7 text-base" />
                       <span className="truncate font-medium">{r.name}</span>
                       {r.me && <span className="shrink-0 rounded bg-primary px-1.5 py-0.5 text-[10px] font-bold text-primary-ink uppercase">You</span>}
                       {board === "overall" && r.rounds < 2 && <span className="hidden shrink-0 text-xs text-muted sm:inline">1 round</span>}
@@ -405,7 +425,7 @@ export function Competition() {
                   <td className="px-4 py-3 font-semibold tabular-nums sm:px-5">{b.me.rank}</td>
                   <td className="px-2 py-3">
                     <span className="flex items-center gap-2">
-                      <span className="text-lg leading-none">{b.me.avatar}</span>
+                      <Avatar value={b.me.avatar} className="h-7 w-7 text-base" />
                       <span className="truncate font-medium">{b.me.name}</span>
                       <span className="rounded bg-primary px-1.5 py-0.5 text-[10px] font-bold text-primary-ink uppercase">You</span>
                     </span>
