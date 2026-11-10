@@ -266,9 +266,8 @@ export function SolveView({
 }) {
   useFocusMode();
   const [pos, setPos] = useState(run.start);
-  // Question order; "Shuffle" reorders the questions after the current one.
+  // Question order; "Shuffle" mixes up the current and upcoming questions.
   const [ids, setIds] = useState(run.ids);
-  const [shuffled, setShuffled] = useState(false);
   const fullscreen = useIsFullscreen();
   const canFullscreen = useCanFullscreen();
   // Leave browser full screen when practice closes, but not when the next set replaces this one
@@ -365,12 +364,16 @@ export function SolveView({
   const secs = answer ? answer.secs : Math.floor(((spent[id] ?? 0) + Math.max(0, now - enteredAt)) / 1000);
   // Two columns (text / table / picture on the left) need the wide layout.
   const wide = q ? Boolean(q.table || q.figure || (q.section !== "math" && q.passage)) : meta?.section !== "math";
-  const rest = ids.length - pos - 1;
-  const toggleShuffle = () => {
-    const done = new Set(ids.slice(0, pos + 1));
-    const left = run.ids.filter((x) => !done.has(x));
-    setIds([...ids.slice(0, pos + 1), ...(shuffled ? left : shuffle(left))]);
-    setShuffled((v) => !v);
+  const rest = ids.length - pos; // current + upcoming
+  /** Every press: new random order for this question and the ones after it, so a different question shows now. */
+  const reshuffle = () => {
+    if (rest < 2) return;
+    flushTime();
+    let next = shuffle(ids.slice(pos));
+    while (next[0] === id) next = shuffle(next);
+    setIds([...ids.slice(0, pos), ...next]);
+    setError(null);
+    window.scrollTo({ top: 0 });
   };
   const showCalc = hasMath && calcOpen;
   const toggleCalc = () => {
@@ -546,16 +549,13 @@ export function SolveView({
                   total > 2 && (
                     <button
                       type="button"
-                      onClick={toggleShuffle}
-                      disabled={!shuffled && rest < 2}
-                      aria-pressed={shuffled}
-                      title={shuffled ? "Back to the original order" : "Shuffle the questions after this one"}
-                      className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-3 text-sm font-semibold transition-colors disabled:opacity-40 ${
-                        shuffled ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink"
-                      }`}
+                      onClick={reshuffle}
+                      disabled={rest < 2}
+                      title="Shuffle the questions (this one and the ones after it)"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line px-3.5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 active:scale-95 disabled:opacity-40"
                     >
                       <Icon d={I.shuffle} className="h-4 w-4" />
-                      <span className="hidden sm:inline">{shuffled ? "Shuffled" : "Shuffle"}</span>
+                      <span className="hidden sm:inline">Shuffle</span>
                     </button>
                   )
                 }
