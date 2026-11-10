@@ -13,7 +13,8 @@ import { I, Icon } from "./icons";
 import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 
 const PAGE_SIZE = 20;
-const SET_SIZES = [10, 20, 50, 0] as const; // 0 = all
+/** Questions in a "Practice" set. */
+const SET_SIZE = 10;
 
 function fmt(n: number) {
   return n.toLocaleString("en-US");
@@ -109,7 +110,6 @@ export function ListView({
 }) {
   const [page, setPage] = useState(0);
   const [sheet, setSheet] = useState(false);
-  const [setSize, setSetSize] = useState<number>(10);
   const searchRef = useRef<HTMLInputElement>(null);
   const listTop = useRef<HTMLDivElement>(null);
   const ctx = { results, bookmarks };
@@ -200,7 +200,7 @@ export function ListView({
 
   const pct = (a: number, b: number) => (b ? Math.round((a / b) * 100) : 0);
   const doneHere = filtered.filter((it) => results.has(it.id)).length;
-  const setCount = setSize ? Math.min(setSize, filtered.length) : filtered.length;
+  const setCount = Math.min(SET_SIZE, filtered.length);
 
   // Chips for every active filter.
   const chips: { key: string; label: string; node: React.ReactNode; remove: () => void }[] = [];
@@ -468,36 +468,15 @@ export function ListView({
               {setCount > 0 && <> · a set of {fmt(setCount)} takes about {fmt(estMinutes(setCount, filters.section))} min</>}
             </p>
           </div>
-          <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto">
-            <div className="flex flex-1 rounded-xl bg-surface-2 p-1 sm:flex-none" role="radiogroup" aria-label="Practice set size">
-              {SET_SIZES.map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  role="radio"
-                  aria-checked={setSize === n}
-                  onClick={() => setSetSize(n)}
-                  className={`flex-1 rounded-lg px-3 py-1.5 text-sm font-semibold tabular-nums transition-colors sm:flex-none ${
-                    setSize === n ? "bg-surface text-ink shadow-sm" : "text-muted hover:text-ink"
-                  }`}
-                >
-                  {n || "All"}
-                </button>
-              ))}
-            </div>
-            <button
-              type="button"
-              onClick={() => onPractice(filtered, setSize)}
-              disabled={!filtered.length}
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none"
-            >
-              <Icon d={I.play} className="h-4 w-4" filled />
-              <span>
-                Practice {setCount ? fmt(setCount) : ""}
-                <span className="hidden sm:inline"> random</span>
-              </span>
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => onPractice(filtered, SET_SIZE)}
+            disabled={!filtered.length}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-2.5 text-sm font-semibold whitespace-nowrap text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+          >
+            <Icon d={I.play} className="h-4 w-4" filled />
+            Practice
+          </button>
         </div>
 
         {/* List */}
