@@ -3,10 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import { loadDesmos, type DesmosCalculator } from "@/lib/desmos";
 
-const isDark = () => document.documentElement.dataset.theme === "dark";
-
 /**
  * Desmos graphing calculator (the one built into the real Digital SAT).
+ * Always white (like the real test), whatever the site theme.
  * Keep it mounted while hidden so expressions survive between questions; pass `visible` so it can resize when shown.
  */
 export function Calculator({ visible }: { visible: boolean }) {
@@ -29,7 +28,7 @@ export function Calculator({ visible }: { visible: boolean }) {
           expressionsTopbar: true,
           border: false,
           autosize: true,
-          invertedColors: isDark(),
+          invertedColors: false,
         });
       },
       (e: Error) => alive && setError(e.message),
@@ -40,13 +39,6 @@ export function Calculator({ visible }: { visible: boolean }) {
       calc.current = null;
     };
   }, [attempt]);
-
-  // Follow the site theme.
-  useEffect(() => {
-    const obs = new MutationObserver(() => calc.current?.updateSettings({ invertedColors: isDark() }));
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
-    return () => obs.disconnect();
-  }, []);
 
   // A hidden container has no size; re-measure when it becomes visible.
   useEffect(() => {
@@ -76,8 +68,8 @@ export function Calculator({ visible }: { visible: boolean }) {
     );
 
   return (
-    <div className="relative h-full w-full" data-calculator>
-      <p className="absolute inset-0 grid place-content-center text-sm text-muted">Loading calculator…</p>
+    <div className="relative h-full w-full bg-white" data-calculator>
+      <p className="absolute inset-0 grid place-content-center text-sm text-neutral-500">Loading calculator…</p>
       <div ref={host} className="relative h-full w-full" />
     </div>
   );
