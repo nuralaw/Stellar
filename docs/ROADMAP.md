@@ -23,7 +23,7 @@ Days 1–4 done in one session: site shell, design, Home dashboard, profile, ful
 - [ ] Home dashboard reads from the account when signed in (browser storage stays as the guest fallback)
 
 **Polish:**
-- [x] Re-check difficulty labels: `bank:build` now ranks each skill by solver label + difficulty signals and splits it into thirds (was Algebra 422 easy / 37 hard)
+- [ ] Re-check difficulty labels (currently skewed to Easy, e.g. Algebra 422 easy / 37 hard) — auto-split into thirds was tried and reverted (user kept the solver labels)
 - [x] Mobile pass on the Question Bank: sort + difficulty on phones, filter sheet locks the page, navigator no longer off-screen, toolbar fits with the calculator, calculator sheet keeps "Check answer" visible
 - [x] Home "By topic": skill chips with accuracy, each opens that skill in the Question Bank
 
