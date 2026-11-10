@@ -31,7 +31,8 @@ export interface Attempt {
 export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
-const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts" } as const;
+const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks" } as const;
+const NO_BOOKMARKS: string[] = [];
 
 // ---- low-level read/write with a parse cache (useSyncExternalStore needs stable snapshots) ----
 const cache = new Map<string, { raw: string | null; value: unknown }>();
@@ -97,6 +98,20 @@ export function useAttempts(): Attempt[] {
   return useSyncExternalStore(subscribe, getAttempts, () => NO_ATTEMPTS);
 }
 
+// ---- bookmarks (question ids) ----
+export function getBookmarks(): string[] {
+  return read(KEYS.bookmarks, (raw) => (Array.isArray(JSON.parse(raw)) ? JSON.parse(raw) : NO_BOOKMARKS), NO_BOOKMARKS);
+}
+
+export function toggleBookmark(id: string) {
+  const list = getBookmarks();
+  write(KEYS.bookmarks, list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
+}
+
+export function useBookmarks(): string[] {
+  return useSyncExternalStore(subscribe, getBookmarks, () => NO_BOOKMARKS);
+}
+
 // ---- clock ----
 // Current time as an external store: 0 on the server, refreshed every minute in the browser.
 let clockNow = 0;
@@ -141,6 +156,7 @@ export function resetAllData() {
   try {
     localStorage.removeItem(KEYS.profile);
     localStorage.removeItem(KEYS.attempts);
+    localStorage.removeItem(KEYS.bookmarks);
   } catch {}
   listeners.forEach((l) => l());
 }

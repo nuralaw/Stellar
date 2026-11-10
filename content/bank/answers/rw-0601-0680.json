@@ -1,0 +1,735 @@
+[
+  {
+    "id": "rw-0601",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal is to show how the salt makes storage possible, so the sentence needs the link between the salt's state and energy storage. C explains that when the salt solidifies, energy stops flowing and is stored. A describes the salt but never mentions storage, and B explains how stored energy is used, not how it gets stored."
+  },
+  {
+    "id": "rw-0602",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text sets up two different genres with two different approaches: heartfelt language about nature in poetry versus humor and satire about politics in journalism. 'By contrast' signals that difference. 'Similarly' would wrongly suggest the two approaches are alike."
+  },
+  {
+    "id": "rw-0603",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A contrast needs to show how the two songs differ. B notes they are both protest songs but then contrasts their subjects: Kentucky coal miners versus Nelson Mandela. A stresses a similarity, while C and D each describe only one song.",
+    "fix": {
+      "choices": {
+        "B": "While both are protest songs, “Poor Miner’s Farewell” is about coal miners in Kentucky, whereas “Bring Him Back Home” is about the anti-apartheid leader Nelson Mandela."
+      }
+    }
+  },
+  {
+    "id": "rw-0604",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say who the 2015 study suggests first populated the Azores. D names the study and says the first people may have been Vikings from Scandinavia. B only says the Portuguese may not have been first without naming anyone, and C describes the mouse evidence rather than the conclusion."
+  },
+  {
+    "id": "rw-0605",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Geoscientists long thought Mauna Loa was the largest shield volcano, but the 2020 study found Pūhāhonu is much larger. That new finding contradicts the old belief, so 'However' fits. 'Moreover' and 'Secondly' would treat the study as adding support rather than challenging the earlier view."
+  },
+  {
+    "id": "rw-0606",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first sentence says the shell looks external, like armor. Because of that appearance, people often wrongly assume it's an exoskeleton, so the second sentence is a consequence of the first, and 'Hence' fits. 'However' and 'That being said' would set up a contrast, but the mistaken assumption follows from the shell's appearance rather than going against it."
+  },
+  {
+    "id": "rw-0607",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem inspired a generation of East African writers, so it makes sense that poets who adopted its style are named after its author, the 'Okot School.' 'Fittingly' signals that this naming is appropriate given what came before. 'Nevertheless' and 'Instead' wrongly suggest a contrast."
+  },
+  {
+    "id": "rw-0608",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Placing Einstein's argument in historical context means stating his position and situating it in time and in the larger debate. A does this: during the dawn of quantum theory, Einstein argued for the independent reality of subatomic entities, though Bohr's view would win out. B gets the positions backward (that was Einstein's view, not Bohr's), and C and D never actually state Einstein's argument."
+  },
+  {
+    "id": "rw-0609",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because recipients often couldn't or wouldn't pay promptly, collecting the fee was slow and unpaid mail piled up. The second sentence is a result of the first, so 'Consequently' fits. 'For example' doesn't work, because the piles of mail are an effect of the problem, not an instance of it."
+  },
+  {
+    "id": "rw-0610",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Houser's distinctive style is his use of abstract, modernist forms to depict Native American figures, which is exactly what B says. A mentions that the style is distinctive but never describes it. C and D mention the style without saying what it is."
+  },
+  {
+    "id": "rw-0611",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Visitors assume the fee is per vehicle, but in reality it is per person. 'Actually' signals a correction of a mistaken belief. 'Consequently' and 'Moreover' don't fit, because the last sentence contradicts the assumption rather than following from it or adding to it."
+  },
+  {
+    "id": "rw-0612",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because Arabic-speaking states ruled the region for centuries, Arabic words entered Spanish. That is a cause-and-effect relationship, so 'Consequently' fits. 'For example' fails because Arabic words in Spanish aren't an example of the region being ruled by Muslim states; they're a result of it."
+  },
+  {
+    "id": "rw-0613",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "C correctly describes the curing process: UV light images are projected into liquid resin to cure the object layer by layer, and then the object is baked to finish curing. A and D garble the process (the UV light doesn't solidify, and curing isn't completed in the dead zone). B wrongly says the object passes through the dead zone."
+  },
+  {
+    "id": "rw-0614",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The contrast must be about production methods. C contrasts teams of artisans making ukiyo-e prints with individual artists handling every step of sōsaku-hanga. B contrasts time periods, not methods, and A contrasts artistic priorities."
+  },
+  {
+    "id": "rw-0615",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The first sentence gives a general rule: potters choose clay based on look and use. The next sentence about earthenware's rustic look and lower durability illustrates that rule, so 'For example' fits. 'In conclusion' and 'In other words' don't fit, since the sentence gives a specific case rather than summarizing or restating."
+  },
+  {
+    "id": "rw-0616",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Flying buttresses removed the need for thick, short walls, so cathedrals could be built with thinner, taller walls. That is a result, so 'As a result' fits. 'Nevertheless' would wrongly signal a contrast."
+  },
+  {
+    "id": "rw-0617",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim that 'Phoenicia' may have meant 'land of purple' strengthens and goes beyond the point that the Phoenicians were famous for purple dye. 'In fact' signals this kind of emphasis. 'On the contrary' and 'Regardless' wrongly suggest opposition."
+  },
+  {
+    "id": "rw-0618",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Smothering the flame during reduction firing causes the vessel to turn shiny and black. The last sentence states an effect, so 'As a result' fits. 'For example' fails because the black hue is an outcome of the technique, not an example of it."
+  },
+  {
+    "id": "rw-0619",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text moves from the 1920s and the decades of study since then to the present day, when drones help archaeologists. 'Currently' marks that shift in time. 'However' and 'Still' would wrongly set up a contrast with the ongoing research."
+  },
+  {
+    "id": "rw-0620",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "An achiral molecule produces an identical molecule when flipped, while a chiral molecule produces an inverted one. The sentences describe opposite outcomes, so 'by contrast' fits. 'Similarly' would wrongly suggest the two behave alike."
+  },
+  {
+    "id": "rw-0621",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Plot was known as the first person to discover dinosaur remains, but the 1990 find suggests Khoesan and Basotho peoples may have found a dinosaur fossil centuries earlier. B makes that link to Plot's reputation directly. A is inaccurate (Plot's reputation was about dinosaur remains in general, not M. carinatus), C never mentions Plot, and D overstates the evidence by saying it disproved his claims."
+  },
+  {
+    "id": "rw-0622",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Uniqueness means being the only one. D states that Taylor was the only Black woman to publish a Civil War memoir. The other choices describe her life or the book's availability without showing anything unique about it."
+  },
+  {
+    "id": "rw-0623",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text first admits that the painting can't truly show a fourth dimension, then says it still offers a glimpse of what that dimension might look like. 'That said' introduces a qualification after a concession. 'Moreover' and 'In other words' miss the shift from limitation to achievement."
+  },
+  {
+    "id": "rw-0624",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says not all conifers are evergreen, and larches, which lose their needles every fall, are a specific case of this. 'For instance' introduces that example. 'Nevertheless' would wrongly suggest larches go against the claim just made."
+  },
+  {
+    "id": "rw-0625",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A similarity has to apply to both glaciers and icebergs. B says both melt during the year and contribute to rising sea levels. C highlights a difference, and A and D each focus on only one of the two."
+  },
+  {
+    "id": "rw-0626",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Explaining how the library preserved knowledge requires its methods: it collected writings from different countries, translated them into Arabic, and made paper copies to study and share. D includes these steps. A and C say knowledge was gathered or preserved without explaining how, and B mentions translators without the purpose or process."
+  },
+  {
+    "id": "rw-0627",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization with support needs a broad claim plus a reason. D claims honeybees are more likely to thrive in cities and supports it with the varied urban diet that strengthens their immune systems. B gives only statistics without a generalization, and A is about vegetation rather than bees."
+  },
+  {
+    "id": "rw-0628",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both stories feature couples dealing with their relationships, so the second story is a parallel case. 'Likewise' signals that similarity. 'For example' fails because 'A Temporary Matter' isn't an example of 'This Blessed House'; it is a second example of the collection's focus."
+  },
+  {
+    "id": "rw-0629",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because the spatulae bond temporarily with whatever they touch, spiders can cling to almost any surface. That is an effect, so 'As a result' fits. 'However' would wrongly signal a contrast."
+  },
+  {
+    "id": "rw-0630",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The study's results are what it found: macaques called and gestured more often at humans holding food than at empty-handed ones. A states this. B and C describe the study's background and aim, and D describes the study design, not its results."
+  },
+  {
+    "id": "rw-0631",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Collecting photographs and artifacts is another thing Naff did on top of conducting interviews. 'In addition' signals that added point. 'In other words' would wrongly suggest the artifacts restate the interviews."
+  },
+  {
+    "id": "rw-0632",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to give the number of wolves, and only D states that Yellowstone has roughly 100 gray wolves. A and B mention 1995, the year they were reintroduced, and C defines carrying capacity without any number."
+  },
+  {
+    "id": "rw-0633",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes tropical forests as humid with close trees, then savannas as drier with trees farther apart. 'In comparison' sets up that contrast between the two habitats. 'For instance' fails, because savannas are not an example of tropical forests."
+  },
+  {
+    "id": "rw-0634",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization about the materials should describe them broadly. C does this: most materials are traditional, though some modern ones are used. A focuses on one specific material, and B and D don't discuss replica materials at all."
+  },
+  {
+    "id": "rw-0635",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Activists in Los Angeles sold suffrage tea just as the party in San Francisco did, so the two sentences describe parallel efforts. 'Similarly' fits. 'For example' would treat the Los Angeles case as an example of the San Francisco one."
+  },
+  {
+    "id": "rw-0636",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only C states the year Yosemite Falls was completed: 1930. The other choices describe Obata or his technique without giving the year."
+  },
+  {
+    "id": "rw-0637",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After noting that words didn't always change much, the text says that in some cases words kept much of their original sound. 'Sometimes' fits, matching 'wasn't always the case.' 'However' would wrongly signal a contrast with a sentence that the new sentence actually supports.",
+    "fix": {
+      "passage": "As the Proto-Indo-European language split into different languages, many words evolved to sound very different than they had in their proto-language—but this wasn’t always the case. ______ words retained much of their original sound. The word “father,” for instance, sounds similar in Italian (padre), Latin (pater), and Sanskrit (pitar), three Proto-Indo-European descendants."
+    }
+  },
+  {
+    "id": "rw-0638",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is to say where the fossil was found, and A states it was found in western India's Thar Desert. B and D describe the fossil's age, and C is about Bajpai."
+  },
+  {
+    "id": "rw-0639",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The researchers' theory about the dish's name follows logically from their experience that it tasted mild and felt calming. 'Therefore' signals that conclusion. 'Nevertheless' wrongly implies the theory goes against the tasting results."
+  },
+  {
+    "id": "rw-0640",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Presenting the study and its conclusion means including both what was studied and what it suggested. B mentions the 2013 analysis of bone fragments and the conclusion that the cats may have been domesticated 5,300 years ago. A, C, and D describe the study without stating its conclusion."
+  },
+  {
+    "id": "rw-0641",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Naming the radiation spike a 'Miyake event' after Miyake, who discovered it, is appropriate. 'Fittingly' captures that sense of suitability. 'However' and 'In other words' don't fit, since the naming neither contrasts with nor restates the discovery."
+  },
+  {
+    "id": "rw-0642",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text lays out Konkoly's procedure in order: first she taught the eye movements, then she attached electrodes. 'Next' signals that sequence. 'For instance' and 'Specifically' wrongly treat the second step as an example or detail of the first."
+  },
+  {
+    "id": "rw-0643",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A states the setting of My Ántonia directly: Nebraska. D says some of her novels are set in Nebraska but doesn't identify My Ántonia as one of them, and B and C don't mention setting."
+  },
+  {
+    "id": "rw-0644",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Thoroughness is shown by how much Tarbell did: she interviewed executives, workers, and officials and also examined thousands of pages of internal documents. A includes both. C mentions only interviews, and B and D don't describe the investigation's scope."
+  },
+  {
+    "id": "rw-0645",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Nazareth named his course 'Elvis as Anthology' to put his belief about Elvis's music into practice. 'To that end' shows the course was a step toward that goal. 'In sum' fails because the course name doesn't summarize the earlier sentence."
+  },
+  {
+    "id": "rw-0646",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A historical overview should trace the debate over time. A says scholars were divided between the two theories until Ibn al-Haytham's eleventh-century experiments largely settled it. B misstates that all three men held both views, and C and D cover only parts of the history."
+  },
+  {
+    "id": "rw-0647",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "medium",
+    "explanation": "Shaula is bright despite being very far away. Alkaid's brightness, by comparison, is likely due largely to its being much closer. 'Granted' concedes that Alkaid's ranking is less impressive because of its proximity. 'As a result' fails because Alkaid's closeness is not a result of the facts about its ranking, and 'Similarly' is wrong since Alkaid's situation is the opposite of Shaula's."
+  },
+  {
+    "id": "rw-0648",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The reason the Compact was created was to establish a common government, which C states. A and B quote the colonists' stated wish to plant a colony but don't give the purpose of the Compact itself, and D lists signatories."
+  },
+  {
+    "id": "rw-0649",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text contrasts post-consumer waste (a discarded magazine) with pre-consumer waste (printing scraps). 'By contrast' signals that difference. 'For example' fails because the scraps aren't an example of post-consumer waste."
+  },
+  {
+    "id": "rw-0650",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After decades of theories with weak support, scientists eventually found strong evidence. 'Finally' marks the end of that long search. 'Therefore' wrongly suggests the failure of earlier theories caused the discovery."
+  },
+  {
+    "id": "rw-0651",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem explores temporality and identity, and it also reflects on poetry's relationship to other art forms. 'What's more' adds this further point. 'In other words' fails because the new point is a different theme, not a restatement."
+  },
+  {
+    "id": "rw-0652",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because voters were impressed by the album, they gave it the award. 'Accordingly' signals that the award followed from their impression. 'Nevertheless' and 'In contrast' wrongly suggest opposition."
+  },
+  {
+    "id": "rw-0653",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "To emphasize order, the sentence should show which exhibition came first. A says Wije'wi (2017) was followed a year later by Ketu'elmita'jik. D gives only one year and doesn't show the sequence, and B and C don't emphasize order."
+  },
+  {
+    "id": "rw-0654",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A comparison of causes needs both theories' explanations. A says Jacobs blames branches brushing against one another, while Ng says branches stop growing when they detect shade. B and C name the theories without explaining the causes, and D covers only Jacobs."
+  },
+  {
+    "id": "rw-0655",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "For an audience that doesn't know Hopkins, the sentence should identify who she is and why she matters. B calls her an African American writer known for genre-defining stories and cites her first African American mystery novel. A, C, and D focus on the novel without introducing Hopkins herself."
+  },
+  {
+    "id": "rw-0656",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since Chaudhuri studies sedimentary rocks and such a scientist is called a sedimentologist, D correctly identifies her as a sedimentologist. The other choices don't mention Chaudhuri."
+  },
+  {
+    "id": "rw-0657",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes steps in order: 'First' the turtle digs, then she lays eggs, and 'Finally' she covers the nest. 'Next' fits the middle step. 'For example' and 'Similarly' don't express sequence."
+  },
+  {
+    "id": "rw-0658",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "D explains that Fulton, Missouri, is named after Robert Fulton and identifies him. A only says the city shares a name with a New York street, which doesn't explain where the name came from."
+  },
+  {
+    "id": "rw-0659",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show how understanding evolved, the sentence should present the earlier explanation and the newer one. D gives the 2017 grass-fire conclusion and then the newer cometary-explosion explanation. B notes the studies differed without saying how, and A and C give only one side."
+  },
+  {
+    "id": "rw-0660",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "By practicing these art-based techniques, students develop better observational skills. 'In doing so' links the skills to the activity just described. 'For example' fails because better observation is a result of the techniques, not an example of them."
+  },
+  {
+    "id": "rw-0661",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Emphasizing thickness requires the measurement, and only A gives it: about 0.28 trillionths of a millimeter. The other choices say lead-208 has a neutron skin without saying how thick it is."
+  },
+  {
+    "id": "rw-0662",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says de Larios's art mixes cultural influences, and the next sentence names those influences: Mexican and Japanese traditions. 'Specifically' introduces that more precise detail. 'In addition' fails because the sentence clarifies the earlier claim rather than adding a new one."
+  },
+  {
+    "id": "rw-0663",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Only B gives the fanner basket's Choctaw name, ufko tapushik. C and D give the meaning of the archive's name, and A mentions the basket without its Choctaw name."
+  },
+  {
+    "id": "rw-0664",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The first sentence credits the play with coining 'robot'; the next says it also contributed to a long literary tradition. 'Beyond the simple coining of a term' signals moving past that first contribution to another one. C contradicts the 'indelible mark,' and D wrongly sets up a contrast, since the new sentence adds to the play's influence."
+  },
+  {
+    "id": "rw-0665",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Introducing the scientist and her field requires naming her and describing what she studies. B identifies Gaynus as a marine biologist who studies coral reefs and explains why reefs matter. C and A leave her out, and D mentions her without saying she's a scientist or what she does."
+  },
+  {
+    "id": "rw-0666",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Modern via ferratas are rarely built simply to reach a summit; instead, more often they aim to provide a challenging climb or great scenery. 'More often' sets up what typically happens in place of the old purpose. 'Nonetheless' and 'On the other hand' wrongly suggest the second sentence opposes the first."
+  },
+  {
+    "id": "rw-0667",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "After saying Modernista architects championed nature, the writer concedes the obvious point that a staircase and tilework couldn't actually grow in a forest. 'Of course' introduces that concession, which is then followed by 'Still.' 'Furthermore' and 'Thus' don't fit a sentence that admits a limitation."
+  },
+  {
+    "id": "rw-0668",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The viewer's mind may first wander to faraway planets, but in the end the title brings them back to Earth. 'Ultimately' captures that final turn. 'Consequently' fails because the title isn't caused by the viewer imagining planets."
+  },
+  {
+    "id": "rw-0669",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The question is why the pools are toxic, and B gives the reason: the water is three to eight times saltier than the surrounding ocean. A, C, and D mention toxicity or describe the pools without explaining the cause."
+  },
+  {
+    "id": "rw-0670",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The goal is the order in which the two keepers began their careers. Younghans started in 1867 and McNeil in 1904, so C correctly says McNeil began years after Younghans. D compares when their careers ended, not began, and A is inaccurate."
+  },
+  {
+    "id": "rw-0671",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The study's aim was to explore the relationship between processing natural sounds and processing music, which D states. B reverses the conclusion and presents it as an aim, and C gives a finding instead of the aim.",
+    "fix": {
+      "choices": {
+        "B": "By training an artificial deep neural network, the researchers aimed to establish that the brain’s ability to process natural sounds arises as a by-product of processing music."
+      }
+    }
+  },
+  {
+    "id": "rw-0672",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Because Alaska's population is smaller than the average district size, it has only one district. That is a result, so 'As a result' fits. 'Instead' and 'For instance' don't express cause and effect."
+  },
+  {
+    "id": "rw-0673",
+    "answer": "A",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The goal needs both an explanation and an example. A explains that Sonic Meditations is a series of sound-based meditations made of instructions, then gives Meditation XVIII as an example. B only explains, C only gives an example, and D compares two meditations."
+  },
+  {
+    "id": "rw-0674",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A generalization about the kind of study should describe it broadly, not report its specific result. D says researchers have used statistical methods to address questions of musical authorship. A, B, and C are all about the specific 'In My Life' finding."
+  },
+  {
+    "id": "rw-0675",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The specific historical context is the Emancipation Proclamation, which the sculpture commemorates. C states this and notes the proclamation came four years before the sculpture. B mentions the inscription without explaining its historical source, and A and D omit the historical event."
+  },
+  {
+    "id": "rw-0676",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "A similarity among critics requires at least two critics saying something alike. C shows both O and The Economist praising Treuer's storytelling. D emphasizes a difference, and A and B cite at most one critic."
+  },
+  {
+    "id": "rw-0677",
+    "answer": "B",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Eiffel suggested a thick arm straight above the head, but Bartholdi did the opposite: he slimmed the arm and tilted it. 'Instead' signals that he chose an alternative. 'Thus' wrongly suggests he was following Eiffel's advice."
+  },
+  {
+    "id": "rw-0678",
+    "answer": "D",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Like his father, who sprayed graffiti on unconventional concrete, David has chosen an unusual canvas: ice floes. 'Likewise' signals that parallel. 'However' wrongly suggests a contrast between the two artists."
+  },
+  {
+    "id": "rw-0679",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Microcrystalline crystals are like cryptocrystalline ones in being invisible to the naked eye, but unlike them, they can usually be seen under a microscope. 'That said' introduces this qualifying difference. 'Similarly' and 'thus' miss the contrast."
+  },
+  {
+    "id": "rw-0680",
+    "answer": "C",
+    "domain": "expression-ideas",
+    "skill": "rhetorical-synthesis",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The difference is in how the two animals use mimicry: crab spiders use it to ambush prey, while katydids use it to hide from predators. C states this. A swaps what each animal mimics, and B and D don't mention any difference."
+  }
+]

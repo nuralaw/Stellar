@@ -41,9 +41,12 @@ export interface SPRQuestion extends QuestionBase {
 
 export type Question = MCQuestion | SPRQuestion;
 
-/** Per section → domain → difficulty counts of live questions (content/bank/dist/counts.json). */
+/** Row of content/bank/dist/index.json: [id, domain, skill, difficulty initial, text preview]. */
+export type BankIndexRow = [id: string, domain: string, skill: string, difficulty: "e" | "m" | "h", preview: string];
+
+/** Live question counts: section → domain → skill → difficulty (content/bank/dist/counts.json). */
 export interface BankCounts {
   total: number;
-  rw: Record<string, Record<Difficulty, number>>;
-  math: Record<string, Record<Difficulty, number>>;
+  rw: Record<string, Record<string, Record<Difficulty, number>>>;
+  math: Record<string, Record<string, Record<Difficulty, number>>>;
 }

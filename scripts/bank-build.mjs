@@ -1,5 +1,5 @@
 // Merges content/bank/source/*.json with content/bank/answers/*.json, validates everything,
-// and writes content/bank/dist/questions.json (answered questions only) + counts.json.
+// and writes content/bank/dist/questions.json (answered questions only), index.json (list view) + counts.json.
 //
 //   npm run bank:build                      build + validate everything
 //   npm run bank:check -- <answers.json>    validate a single answers file (no output written)
@@ -132,14 +132,25 @@ for (const [id, raw] of source) {
   }
   // Only public fields go to the site (confidence / reviewer notes stay in the answers files).
   out.push({ ...q, answer: a.answer, explanation: a.explanation, domain: a.domain, skill: a.skill, difficulty: a.difficulty });
-  const sec = counts[q.section];
-  sec[a.domain] ??= { easy: 0, medium: 0, hard: 0 };
-  sec[a.domain][a.difficulty]++;
+  // counts[section][domain][skill][difficulty]
+  const dom = (counts[q.section][a.domain] ??= {});
+  const sk = (dom[a.skill] ??= { easy: 0, medium: 0, hard: 0 });
+  sk[a.difficulty]++;
   counts.total++;
 }
 
+// Compact index for the question-bank list: [id, domain, skill, difficulty (e|m|h), preview].
+const preview = (q) =>
+  (q.section === "rw" ? q.passage || q.prompt : q.prompt)
+    .replace(/<\/?u>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 140);
+const index = out.map((q) => [q.id, q.domain, q.skill, q.difficulty[0], preview(q)]);
+
 fs.mkdirSync(path.join(BANK, "dist"), { recursive: true });
 fs.writeFileSync(path.join(BANK, "dist", "questions.json"), JSON.stringify(out));
+fs.writeFileSync(path.join(BANK, "dist", "index.json"), JSON.stringify(index));
 fs.writeFileSync(path.join(BANK, "dist", "counts.json"), JSON.stringify(counts, null, 1) + "\n");
 console.log(
   `Bank: ${out.length} live questions (of ${source.size} imported; ${answers.size} answered, ${lowConfidence} low-confidence held back)`,

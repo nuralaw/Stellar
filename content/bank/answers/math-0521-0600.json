@@ -1,0 +1,793 @@
+[
+  {
+    "id": "m-0521",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite (1.84)^(x/4) as ((1.84)^(1/4))^x. Since (1.84)^(1/4) ≈ 1.1647, the equation is about f(x) = (1.1647)^x = (1 + 16.47/100)^x, so p ≈ 16. Choosing 21 (dividing 84 by 4) is tempting, but percent growth does not split evenly across the exponent."
+  },
+  {
+    "id": "m-0522",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The square (x - 2)^2 is never negative, and it equals 0 when x = 2. So the smallest value of f(x) is 0 - 4 = -4. Choice B confuses the minimum value with something else; the vertex of the parabola is (2, -4)."
+  },
+  {
+    "id": "m-0523",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Increasing by 3% each year means multiplying by 1 + 0.03 = 1.03 every year, starting from 2,000. So p(x) = 2,000(1.03)^x. Choice D, with 0.97, would describe a 3% decrease each year."
+  },
+  {
+    "id": "m-0524",
+    "answer": [
+      "-3"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 38 to get x^2 = 9, so x = 3 or x = -3. The negative solution is -3."
+  },
+  {
+    "id": "m-0525",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Set ax^2 - c = a + c, which gives ax^2 = a + 2c, so x^2 = (a + 2c)/a. Since a and c are positive, the right side is positive, so there are two values of x (one positive, one negative). The graphs intersect twice."
+  },
+  {
+    "id": "m-0526",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "p(c) = (0 + 160)/(2c) = 80/c, and this equals 10, so c = 8. Then p(12) = ((12 - 8)^2 + 160)/16 = (16 + 160)/16 = 176/16 = 11."
+  },
+  {
+    "id": "m-0527",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In x = 8a(b + 9), a is multiplied by 8(b + 9). Divide both sides by 8(b + 9) to get a = x/(8(b + 9)). Choice A subtracts (b + 9) instead of dividing by it."
+  },
+  {
+    "id": "m-0528",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract t from both sides: 2r - t = 9s. Then divide by 9: s = (2r - t)/9. Choice A forgets to divide t by 9 as well."
+  },
+  {
+    "id": "m-0529",
+    "answer": [
+      "117"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Square both sides: x + 4 = 121, so x = 117. Check: sqrt(117 + 4) = sqrt(121) = 11."
+  },
+  {
+    "id": "m-0530",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The absolute value equation means -5x + 13 = 73 or -5x + 13 = -73. The first gives x = -12 and the second gives x = 86/5. Their sum is -60/5 + 86/5 = 26/5. Choice B is only one of the solutions."
+  },
+  {
+    "id": "m-0531",
+    "answer": [
+      "25"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "g(x) = 0 when x = 0, x = 2, or x = -6. So 7 - w must equal 0, 2, or -6, giving w = 7, 5, or 13. The sum is 7 + 5 + 13 = 25."
+  },
+  {
+    "id": "m-0532",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The parabola r(t) = -2t^2 + 63t has its vertex at t = -63/(2·(-2)) = 63/4. Then r(63/4) = 63(63/4) - 2(63/4)^2 = 4(63/4)^2 - 2(63/4)^2 = 2(63/4)^2. Adding 1 gives the maximum of s: 1 + 2(63/4)^2. Choice A uses t = 63/2, which is where r equals 0, not the vertex."
+  },
+  {
+    "id": "m-0533",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 20: (20 + 0.25·20)(50 - 20) = (20 + 5)(30) = 25·30 = 750. Be sure to include the 0.25x term; without it you would get 20·30 = 600."
+  },
+  {
+    "id": "m-0534",
+    "answer": "B",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Find two numbers that multiply to -40 and add to 3: they are 8 and -5. So x^2 + 3x - 40 = (x - 5)(x + 8). Choice C gives a middle term of -3x instead of +3x."
+  },
+  {
+    "id": "m-0535",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Exponential growth has the form p(t) = (initial amount)(growth factor)^t. The initial amount is 24, and a 16.2% yearly increase gives a growth factor of 1.162. So p(t) = 24(1.162)^t. Choice A swaps the roles of the initial value and the growth factor."
+  },
+  {
+    "id": "m-0536",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: r^3 + (5r^2 + r^2) + 8r + (7 + 12) = r^3 + 6r^2 + 8r + 19. Only like terms (same power of r) can be combined, so you cannot add exponents as choice A does."
+  },
+  {
+    "id": "m-0537",
+    "answer": "A",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "When t = 0 (the day the business opened), C(0) = 6(1.5)^0 = 6. So 6 is the estimated number of clients when the business opened. The growth each week is described by the factor 1.5, not by 6."
+  },
+  {
+    "id": "m-0538",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "equivalent-expressions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both 12 and 27 are divisible by 3, so 12x + 27 = 3(4x) + 3(9) = 3(4x + 9). Expanding any other choice does not give 12x + 27; for example, 3(9x + 24) = 27x + 72."
+  },
+  {
+    "id": "m-0539",
+    "answer": "D",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The length is x and it is 7 more than the width, so the width is x - 7. Volume = length · width · height = x(x - 7)(9) = 9x(x - 7). Choice C uses x + 7 for the width, which would make the width longer than the length."
+  },
+  {
+    "id": "m-0540",
+    "answer": [
+      "-10"
+    ],
+    "domain": "advanced-math",
+    "skill": "nonlinear-equations",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "From the first equation, y = -x^2. Substitute into the second: 20x + 100 + x^2 = 0, so x^2 + 20x + 100 = 0, which is (x + 10)^2 = 0. Therefore x = -10."
+  },
+  {
+    "id": "m-0541",
+    "answer": [
+      "403"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Simplify the left side: (12x + 28)/4 - s/13 = 3x + 7 - s/13. The right side is rx - 8r. For infinitely many solutions both sides must be identical, so r = 3 and 7 - s/13 = -8(3) = -24. Then s/13 = 31, so s = 403."
+  },
+  {
+    "id": "m-0542",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Both lines pass through (8, 0). One line also passes through (-2, 4), so its slope is -4/10 and its equation is 4x + 10y = 32 (check: 4(8) + 0 = 32 and 4(-2) + 10(4) = 32). The other passes through (-2, 8), so its slope is -8/10 and its equation is 8x + 10y = 64, or -8x - 10y = -64. Choice C has the wrong signs, giving lines with positive slopes.",
+    "fix": {
+      "choices": {
+        "A": "8x + 4y = 32\n-10x - 4y = -64",
+        "B": "8x - 4y = 32\n-10x + 4y = -64",
+        "C": "4x - 10y = 32\n-8x + 10y = -64",
+        "D": "4x + 10y = 32\n-8x - 10y = -64"
+      }
+    }
+  },
+  {
+    "id": "m-0543",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 2: f(2) = 25(2) + 30 = 50 + 30 = 80. Choice A forgets to add the 30."
+  },
+  {
+    "id": "m-0544",
+    "answer": [
+      "3/17",
+      ".1764",
+      ".1765",
+      "0.176"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Line k has slope -17/3. A perpendicular line has the negative reciprocal slope, so the slope of line j is 3/17."
+  },
+  {
+    "id": "m-0545",
+    "answer": [
+      "3"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Add the two equations: 8(7y) = 24, so 7y = 3. Subtract the second from the first: 4(8x) = 0, so 8x = 0. Therefore 8x + 7y = 0 + 3 = 3."
+  },
+  {
+    "id": "m-0546",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To fit the most 120-pound packages, carry exactly the minimum of 10 packages. If y of them weigh 120 pounds, the weight is 100(10 - y) + 120y = 1,000 + 20y, which must be at most 1,100. So 20y ≤ 100 and y ≤ 5. Choice D fails: 6 heavy packages plus 4 light ones weigh 1,120 pounds."
+  },
+  {
+    "id": "m-0547",
+    "answer": [
+      "17"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 2x + 3 = 9, 2x = 6 and x = 3. Then 6x - 1 = 18 - 1 = 17. (Alternatively, multiply the equation by 3 to get 6x + 9 = 27, so 6x = 18.)"
+  },
+  {
+    "id": "m-0548",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 8x = 72 and divide by 8: x = 9. Choice C subtracts 8 instead of dividing."
+  },
+  {
+    "id": "m-0549",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(7) = 4(7) + b = 28 + b. Since f(7) = 28, b = 0."
+  },
+  {
+    "id": "m-0550",
+    "answer": [
+      "33"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The slope is (-15 - 13)/((k + 7) - k) = -28/7 = -4. Going from x = k to x = k - 5 is a change of -5 in x, so y changes by (-4)(-5) = 20. So b = 13 + 20 = 33."
+  },
+  {
+    "id": "m-0551",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "After 4 weeks, Gabriella has deposited 4 · 35 = 140 dollars. Added to the starting 600 dollars, the account has 740 dollars. Choice B counts only one deposit."
+  },
+  {
+    "id": "m-0552",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Dividing the given equation by 3 gives x = 12y - 15. A system with no solution needs a parallel line: same x-to-y relationship but a different constant. Choice B, (1/3)x = 4y, is x = 12y, which is parallel and different. Choice C is the same line (infinitely many solutions), and choice A has a different slope (one solution)."
+  },
+  {
+    "id": "m-0553",
+    "answer": [
+      "1.5",
+      "3/2"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add the two equations to eliminate x: 4y = 6, so y = 1.5. Check: x = y + 3.5 = 5, and 5 + 3(1.5) = 9.5."
+  },
+  {
+    "id": "m-0554",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From the first equation, (1/2)y = 4. Substitute this into the second: x - 4 = 2, so x = 6. Choice C is the value of (1/2)y, not x."
+  },
+  {
+    "id": "m-0555",
+    "answer": [
+      "30"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract the first equation from the second: (x + y + y) - (x + y) = 155 - 125, so y = 30."
+  },
+  {
+    "id": "m-0556",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Line h passes through (-6, 0) and (0, -9), so its equation is 3x + 2y = -18. Multiplying by 24 gives 72x + 48y = -432. For no solution, line k must be parallel but not the same line, so s = 72 and t cannot be -432. Any other value of t, like -9, 72, or 288, works."
+  },
+  {
+    "id": "m-0557",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "25 calories per pound for x pounds is 25x, and then 11 extra calories are added, so c = 25x + 11. Choice C swaps the rate and the fixed amount."
+  },
+  {
+    "id": "m-0558",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 400: f(400) = 36(400) + 1,000 = 14,400 + 1,000 = 15,400 dollars. Be sure to multiply the 36 months by 400 before adding the 1,000."
+  },
+  {
+    "id": "m-0559",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The boundary is the solid horizontal line y = 36, and the shading is above it. So the region is all points with y ≥ 36. Choices A and B describe vertical boundaries (x-values), and choice C would shade below the line."
+  },
+  {
+    "id": "m-0560",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute (0, -3): a(0) + k(-3) = 6, so -3k = 6 and k = -2. (Using (-2, -6) then gives -2a + 12 = 6, so a = 3, which is consistent.)"
+  },
+  {
+    "id": "m-0561",
+    "answer": [
+      "1/4",
+      ".25"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: 3y = -12x + 5, so y = -4x + 5/3 and line ℓ has slope -4. A perpendicular line has the negative reciprocal slope, which is 1/4."
+  },
+  {
+    "id": "m-0562",
+    "answer": [
+      "6"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rearrange the first equation: 3y - (1/4)x = 2/3, so x = 12y - 8/3. Rearrange the second: (1/2)x = py + 3, so x = 2py + 6. No solution means the lines are parallel and distinct: the y-coefficients match (2p = 12) while the constants differ (-8/3 ≠ 6). So p = 6."
+  },
+  {
+    "id": "m-0563",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 3 hours after the first two cost 400 - 220 = 180 dollars, so the hourly fee is 60 dollars. The cost is f(x) = 220 + 60(x - 2) = 60x + 100. Check: f(5) = 300 + 100 = 400. Choice B adds 220 without accounting for the first 2 hours already being included."
+  },
+  {
+    "id": "m-0564",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In 5 hours the auger removed 24,000 - 19,350 = 4,650 bushels, which is 930 bushels per hour. To get down to 12,840 bushels, it must remove 24,000 - 12,840 = 11,160 bushels, which takes 11,160/930 = 12 hours. Choice B gives only the additional 7 hours after the first 5."
+  },
+  {
+    "id": "m-0565",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The y-intercept is h(0) = 28, so b = 28. The x-intercept solves 4x + 28 = 0, so a = -7. Then a + b = -7 + 28 = 21. Choice D uses a = 7 instead of -7."
+  },
+  {
+    "id": "m-0566",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Factor the left side: 4x - 28 = 4(x - 7). So 4(x - 7) = -24, and x - 7 = -6. (Equivalently, x = 1, and 1 - 7 = -6.)"
+  },
+  {
+    "id": "m-0567",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The slope of line h is (160 - 130)/(23 - 18) = 6, and 130 = 6(18) + 22, so line h is y = 6x + 22. Shifting down 5 gives line k: y = 6x + 17. Setting y = 0 gives x = -17/6. Choice C (-11/3) is the x-intercept of line h itself."
+  },
+  {
+    "id": "m-0568",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Demand drops 5,000 units as the price rises 20 dollars, so it drops 250 units per dollar. From $60 down to $55 is 5 dollars, so demand rises by 5(250) = 1,250: 15,000 + 1,250 = 16,250 units."
+  },
+  {
+    "id": "m-0569",
+    "answer": [
+      "65/4",
+      "16.25"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The slope is (45 - (-45))/(6 - (-12)) = 90/18 = 5. Using (6, 45): 45 = 5(6) + b, so b = 15 and y = 5x + 15. At x = 1/4, a = 5/4 + 15 = 16.25."
+  },
+  {
+    "id": "m-0570",
+    "answer": [
+      "5"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In 10x + 15y = 85, each on-site course (x) contributes 10 hours and each online course (y) contributes 15 hours. So each online course takes 15 - 10 = 5 more hours."
+  },
+  {
+    "id": "m-0571",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Hiro's 4 shirts and 2 pairs of pants cost 4x + 2y = 86, and Sofia's 3 shirts and 5 pairs of pants cost 3x + 5y = 166. Choice B mixes up which numbers belong to which person."
+  },
+  {
+    "id": "m-0572",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 300: d = 16 - 300/30 = 16 - 10 = 6 gallons. The truck uses 1 gallon every 30 miles, so 300 miles uses 10 gallons."
+  },
+  {
+    "id": "m-0573",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Substitute x = 4 into the second equation: 24 + 2by = 56, so by = 16. Then the first equation becomes 4a + 16 = 72, so 4a = 56 and a = 14. Choice C confuses a with the coefficient 6 from the second equation."
+  },
+  {
+    "id": "m-0574",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The dashed boundary is y = -4 and the shading is above it, so the solutions are y > -4. With r = -15, -15y < 60 becomes y > -4 after dividing by -15 (which flips the inequality). Choice C, r = -4, would give y > -15, and r = 15 would give y < 4."
+  },
+  {
+    "id": "m-0575",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The term 5.48x is the money from x smaller containers, so each smaller container costs 5.48 dollars. Choice D, 5.48x, is the total from all smaller containers, not the price of one."
+  },
+  {
+    "id": "m-0576",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides of 7(2x - 3) = 63 by 7 to get 2x - 3 = 9. Both equations have the solution x = 6. Choice B subtracts 7 instead of dividing."
+  },
+  {
+    "id": "m-0577",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Line k has slope 3, so a perpendicular line has slope equal to the negative reciprocal, -1/3. The other choices bring in the y-intercept 15, which does not affect the slope."
+  },
+  {
+    "id": "m-0578",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For (8, 2), x = 8 is greater than 0 and y = 2 is greater than 0, so the point satisfies x > 0 and y > 0. Each other choice requires at least one coordinate to be negative.",
+    "fix": {
+      "choices": {
+        "A": "x > 0\ny > 0",
+        "B": "x > 0\ny < 0",
+        "C": "x < 0\ny > 0",
+        "D": "x < 0\ny < 0"
+      }
+    }
+  },
+  {
+    "id": "m-0579",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "From 5x = 15, x = 3. Then -4(3) + y = -2, so y = 10. So x + y = 13. Watch the signs: -12 + y = -2 gives y = 10, not 14."
+  },
+  {
+    "id": "m-0580",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The first day costs 270 dollars and each of the other x - 1 days costs 135 dollars, so y = 270 + 135(x - 1) = 135x + 135. Check: 1 day gives 270. Choice C charges 270 plus 135 for every day, including the first."
+  },
+  {
+    "id": "m-0581",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 180 from both sides: 5p = 70. Divide by 5: p = 14. Check: 5(14) + 180 = 250."
+  },
+  {
+    "id": "m-0582",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The model is (mass of M star)x + (mass of K star)y = 127,882. The x-intercept is where y = 0 (only M-type stars), and the graph crosses the x-axis at about 158. So each M-type star has mass about 127,882/158 ≈ 809, closest to 811. Choice B, 938, comes from the y-intercept (about 136), which gives the mass of each K-type star."
+  },
+  {
+    "id": "m-0583",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The height starts at 15 feet and increases by 8 feet every second, so after s seconds h = 15 + 8s, or h = 8s + 15. Choice D swaps the starting height and the rate."
+  },
+  {
+    "id": "m-0584",
+    "answer": [
+      "2.6",
+      "13/5"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Four times the body weight is 4(0.5) = 2, and adding 0.6 gives 2.6 millimeters."
+  },
+  {
+    "id": "m-0585",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution of a system is the point where the lines cross. The horizontal line y = 3 and the slanted line meet at (2, 3). Choice A, (0, 3), is on the horizontal line but not on the slanted line."
+  },
+  {
+    "id": "m-0586",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Add 8 to both sides of 3x - 8 = 7 to get 3x = 15. Then 3x + 8 = 15 + 8 = 23. Choice B is the value of x, not 3x + 8."
+  },
+  {
+    "id": "m-0587",
+    "answer": [
+      "43/5",
+      "8.6"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Divide both sides by 10: x = 86/10 = 8.6."
+  },
+  {
+    "id": "m-0588",
+    "answer": [
+      "1/2",
+      ".5"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: 4y = -8x + 6, so y = -2x + 3/2 and line p has slope -2. A perpendicular line has the negative reciprocal slope, 1/2."
+  },
+  {
+    "id": "m-0589",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Factor the left side: 3x - 27 = 3(x - 9). So 3(x - 9) = 24 and x - 9 = 8. (Solving fully gives x = 17, and 17 - 9 = 8.) Choice C is just the right side of the equation."
+  },
+  {
+    "id": "m-0590",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Solve for y: 2y = -18x + 9, so y = -9x + 9/2 and line p has slope -9. The perpendicular slope is the negative reciprocal, 1/9. Choice A is the slope of line p itself."
+  },
+  {
+    "id": "m-0591",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The x-coordinate is the length and the y-coordinate is the width, so (8, 10) means a length of 8 m and a width of 10 m. Check: 2(8) + 2(10) = 36. Choice B swaps length and width."
+  },
+  {
+    "id": "m-0592",
+    "answer": [
+      "69"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(20) = (7/10)(20) + 55 = 14 + 55 = 69."
+  },
+  {
+    "id": "m-0593",
+    "answer": [
+      "130"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine like terms: 8x - 7x = x, so x + 130 = 260 and x = 130."
+  },
+  {
+    "id": "m-0594",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Taking the bus takes w minutes of waiting plus 5 minutes of riding, or w + 5 minutes. Walking is faster when the bus total is more than 20 minutes: w + 5 > 20. Choice C describes when the bus is faster."
+  },
+  {
+    "id": "m-0595",
+    "answer": "C",
+    "domain": "advanced-math",
+    "skill": "nonlinear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 5: f(5) = (2(5) - 1)/3 = 9/3 = 3. Choice D forgets to divide by 3."
+  },
+  {
+    "id": "m-0596",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite both in slope-intercept form. The first: y = (4/5)x + 4 + 6 = (4/5)x + 10. The second: y = (4/5)x + 8 + v. Infinitely many solutions means the lines are identical, so 8 + v = 10 and v = 2. Choice A would make the lines parallel but different."
+  },
+  {
+    "id": "m-0597",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each time x increases by 17, y increases by 23, so the slope is 23/17. When x = 0, y = t + 46, which is the y-intercept. So y = (23/17)x + t + 46. Choice C has the wrong sign on the slope."
+  },
+  {
+    "id": "m-0598",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 7 from both sides: w = 357 - 7 = 350. Choice C adds 7 instead of subtracting it."
+  },
+  {
+    "id": "m-0599",
+    "answer": [
+      "67"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "f(5) = 4(5) + k(5 - 1) = 20 + 4k = 32, so k = 3. Then f(10) = 4(10) + 3(10 - 1) = 40 + 27 = 67."
+  },
+  {
+    "id": "m-0600",
+    "answer": [
+      "2/7",
+      ".2857",
+      "0.286"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Infinitely many solutions means the second equation is a multiple of the first, so the x- and y-coefficients are in the same ratio: g/k = (2/5)/(7/5) = 2/7. (The constant 5/2 just sets the multiplier and does not change this ratio.)"
+  }
+]

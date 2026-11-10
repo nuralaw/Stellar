@@ -1,0 +1,764 @@
+[
+  {
+    "id": "rw-0441",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Bergner's team claims the push comes from hydrogen trapped in water ice escaping as gas. D gives both pieces that idea needs: radiation in interstellar space can create pockets of hydrogen in water ice, and the object warmed enough in our solar system to release that gas. B is the opposite, since it says the trajectory does not fit hydrogen from water ice. A only criticizes other outgassing models without supporting this one."
+  },
+  {
+    "id": "rw-0442",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sentence should contrast a curtailment (turning off lights, 19.6%) with a much less popular efficiency. The table shows 3.6% chose efficient light bulbs, an efficiency, so D completes the example accurately. A and B swap the numbers: efficient cars got 2.8% and changing the thermostat got 6.3%, and the thermostat is a curtailment anyway. C is a curtailment, so it doesn't illustrate the contrast."
+  },
+  {
+    "id": "rw-0443",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The sandal was kept from degrading by the surrounding ice (cold temperatures) and was revealed when a warm summer melted that ice. So temperature played a role in both preserving and uncovering it, as A says. D is tempting, but the text says the ice preserved the sandal, not that it would decay while still in the ice."
+  },
+  {
+    "id": "rw-0444",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Actors of the silent era usually exaggerated their movements and expressions, while Guy-Blaché told her actors to behave naturally. Her films' acting style therefore stood out as unusual for the period, as C says. A and B have no support in the text, and D makes a comparison to modern acting the text never makes."
+  },
+  {
+    "id": "rw-0445",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text opens by saying volunteering helps society as a whole, yet only 6% of young people saw it as a way to fix problems in society. That means many young people underestimate its benefits, so volunteering may be more helpful than they think, as B says. C is tempting, but the text never says volunteering helps society more than it helps individuals."
+  },
+  {
+    "id": "rw-0446",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "MFS's ratio of 0.709000 matches an age of 5.86 Ma in the table, and PFBV's 0.709028 falls between 5.40 and 4.75 Ma. Both ages lie inside Hh4 (6 to 4.75 Ma), confirming the mammal-fossil dating, and PFBV's age is younger, so it was deposited more recently. That is D. A gets the direction wrong (MFS, not PFBV, is closer to the Hh3-Hh4 boundary), and C wrongly says the sites are the same age.",
+    "fix": {
+      "passage": "The late Hemphillian (Hh) North American Land Mammal Age includes the subdivisions Hh3, 6.8 million years ago (Ma) to 6 Ma, and Hh4, 6 Ma to 4.75 Ma. While mammalian fossils have indicated that Florida’s Montbrook Fossil Site (MFS) and Palmetto Fauna of the Bone Valley Region (PFBV) date to Hh4, a more precise determination of the sites’ ages has proved challenging. Stephanie R. Killingsworth et al. compared average ratios of strontium-87 to strontium-86 (87Sr/86Sr) in fossil shark teeth from MFS and PFBV—0.709000 and 0.709028, respectively—to 87Sr/86Sr ratios in the global strontium seawater curve, a record that shows how 87Sr/86Sr ratios in seawater correspond to numerical ages and that is used to date fossils and, by extension, fossil sites. The researchers concluded that ______",
+      "choices": {
+        "A": "mammalian fossil evidence offers less dating precision than do 87Sr/86Sr ratios in fossil shark teeth and that PFBV likely was deposited closer to the Hh3-Hh4 boundary than was MFS.",
+        "B": "the average 87Sr/86Sr ratios in the fossil shark teeth from MFS and PFBV only partially support the site age estimates previously established through mammalian fossil evidence.",
+        "C": "the average 87Sr/86Sr ratios in the fossil shark teeth from MFS and PFBV resolve previous uncertainty about the sites’ relative ages by indicating that both sites were deposited contemporaneously during the late Hh.",
+        "D": "the average 87Sr/86Sr ratios in the fossil shark teeth from MFS and PFBV corroborate that both MFS and PFBV fall within Hh4 but suggest that PFBV was likely deposited more recently than MFS."
+      },
+      "table": {
+        "caption": "Global Strontium Seawater Curve",
+        "headers": [
+          "87Sr/86Sr",
+          "Age (Ma)"
+        ],
+        "rows": [
+          [
+            "0.708980",
+            "6.20"
+          ],
+          [
+            "0.709000",
+            "5.86"
+          ],
+          [
+            "0.709020",
+            "5.40"
+          ],
+          [
+            "0.709040",
+            "4.75"
+          ],
+          [
+            "0.709060",
+            "3.00"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "rw-0447",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The student claims Aristotle wants near-total obedience to law, with even small infractions taken seriously. A quotes Aristotle saying transgression 'creeps in unperceived' and ruins the state, comparing it to small expenses that slowly drain a fortune, which is exactly the warning about minor violations. B is about corruption and money, and C and D discuss other ways constitutions survive, not strict obedience to law."
+  },
+  {
+    "id": "rw-0448",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In marsh interiors, crab burrowing helps pannes drain so plants return, but at marsh edges the same burrowing speeds erosion and marsh loss. So the effect depends on where the crabs are, which is what B says. A and D shift the focus to panne size, which the text never connects to whether burrowing helps or harms."
+  },
+  {
+    "id": "rw-0449",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The table shows 88% of residents in the South West area favor more bike paths, the highest of any area, so A completes the sentence. The other areas are much lower: South Central 33%, North Central 26%, and North East only 12%."
+  },
+  {
+    "id": "rw-0450",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "To show nitrogen can 'more than offset' moderate climate change, growth with nitrogen under moderate change (about 0.185 cm/yr) must beat growth without nitrogen under the current climate (about 0.16). The second half, that this is not true for extreme change, is shown by the current no-nitrogen growth beating growth with nitrogen under extreme change (about 0.06). D states both. C is true of the graph but never compares anything to current-climate growth, so it can't show nitrogen more than offsetting climate change."
+  },
+  {
+    "id": "rw-0451",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says the bark has a unique structure, with a network of tubes, that lets latex flow out easily, which makes it helpful for making rubber. That is B. The text says nothing about rubber quality (A), climates (C), or how many trees produce latex (D)."
+  },
+  {
+    "id": "rw-0452",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If plants were randomly distributed, only about 15% would grow in patches of vegetation. The table shows 52% to 60% of juveniles of every species grew in patches, far more than expected, which suggests growing near other plants gives young plants an advantage. That is D. C is false, since both species had 59.1%, well above 15%, and A and B don't compare the data to the random expectation."
+  },
+  {
+    "id": "rw-0453",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Even though the internet seemed likely to replace zines, there are still enough of them to support yearly festivals. That suggests zines remain a meaningful form of expression, as B says. A is about posting online, which the text treats as the thing zines survived, and D contradicts the point that zines often challenge mainstream culture."
+  },
+  {
+    "id": "rw-0454",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Lady Howard asks Villars not to be startled by the proposal and says it is time Evelina saw something of the world, warning that young people kept too sheltered imagine it falsely. This suggests she thinks Villars has been overprotective and that Evelina would gain from more experiences, as D says. B is tempting, but the idealized picture comes from the young person's own imagination, not from Villars's views."
+  },
+  {
+    "id": "rw-0455",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Grimes's goal was to honor earlier Black poets, and despite the method's difficulty, reviewers called the book a beautiful and powerful tribute to those poets. That reaction suggests she used the golden shovel method successfully to reach her goal, as B says. A contradicts the praise, and C and D aren't supported by the text."
+  },
+  {
+    "id": "rw-0456",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Ecologists assumed domed nests would let species have larger geographic ranges than open-nest builders. If open-nest species actually had larger ranges, that assumption would be directly challenged, so D is correct. A, B, and C concern extinction, body size, and nest materials, none of which is about range size."
+  },
+  {
+    "id": "rw-0457",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If the thick disk formed in two separate phases, it should contain groups of stars formed at noticeably different times. An age gap of about 2 billion years between certain thick-disk stars fits that idea, so B supports the claim. D suggests uniformity rather than two phases, and A and C are about other galaxies and the thin disk."
+  },
+  {
+    "id": "rw-0458",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The ash deposits fit a massive eruption, but erosion and resurfacing may have changed the surface since then. So what we see in Arabia Terra today may not accurately show what volcanic activity happened in the past, as A says. D goes too far: the text raises uncertainty, not proof that the craters weren't volcanic."
+  },
+  {
+    "id": "rw-0459",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The study found that smart home users with high expectations who were disappointed often used mental strategies that reversed that disappointment. So the main idea is that such users can end up satisfied even after negative disconfirmation, as C says. A contradicts the finding, and D claims little is known about these mechanisms, while the study actually identified them."
+  },
+  {
+    "id": "rw-0460",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Irrigation worked so well that the Sumerians often harvested more crops than they needed in a season. The logical result is that they could store the extra crops for later, as D says. B doesn't follow, since the text says they solved the drying problem with river water, not shade."
+  },
+  {
+    "id": "rw-0461",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Several businesses claim to have created the first red velvet cake, and no evidence favors any one claim. The logical conclusion is that we can't currently say who baked it first, as B says. C and D go further than the evidence allows, since the text says only that the claims can't be ranked, not that they are all false or that one is likely."
+  },
+  {
+    "id": "rw-0462",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The historian claims El Teatro's early style drew on carpa theater's audience-mediated slapstick. A describes exaggerated physical humor whose performances were shaped by audience cheers and boos that encouraged improvisation, matching both the slapstick and the audience-driven parts. D mentions comedy and minimal props but says nothing about physical humor or audience influence."
+  },
+  {
+    "id": "rw-0463",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Most of the collection's content predates Spain's invasion, yet some poems clearly refer to Spanish beliefs and customs. The best explanation is that material was added after the invasion, as A says. D calls the references a coincidence, which clashes with the text calling them 'inarguable,' and C has no support."
+  },
+  {
+    "id": "rw-0464",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The students concluded that the garden built connections between volunteers and neighbors who weren't volunteering. In B, volunteers seek advice from expert gardeners in the neighborhood, who are eager to help and learn about the project, showing exactly that kind of relationship. A, C, and D describe gardening challenges or personal feelings, not connections with non-volunteers."
+  },
+  {
+    "id": "rw-0465",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Only the paper exposed to E. coli O157:H7 turned purple, meaning the aptamers bound to their target, while papers exposed to other strains and species stayed pink, meaning no false positives. That shows the test worked with high specificity in a real food, pear juice, as D says. C is wrong because the aptamers did not bind to other strains."
+  },
+  {
+    "id": "rw-0466",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "If fungi tolerate environmental pressures better than prokaryotes do, environmental selection should shape fungal communities less. The graph shows variable selection contributed about 38% for fungi versus about 58% for prokaryotes, as C states. A is true of the graph but compares two processes within fungi, which doesn't connect to the fungi-versus-prokaryotes tolerance hypothesis."
+  },
+  {
+    "id": "rw-0467",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show people overlook removing things, compare subtractive suggestions with additive ones. The graph shows fewer than 100 (about 70) subtractive suggestions versus more than 550 (about 580) additive ones, as C says. D misreads the graph, since about 175 is the neither category, and A and B don't compare additive with subtractive."
+  },
+  {
+    "id": "rw-0468",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Laidre doubts that the tusk helps narwhals detect dangerous freezing water. Her reasoning ties to the earlier point that many narwhals don't have a tusk: if it were that important for survival, more narwhals would likely have one, as C says. The other choices don't connect to the fact that many narwhals lack tusks."
+  },
+  {
+    "id": "rw-0469",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The concern is greatest for the species that has been extinct longest. According to the table, the saber-toothed cat went extinct 11,000 years ago, longer ago than any other listed species, so B fits. C misreads the table: the woolly mammoth went extinct about 6,400 years ago, after the saber-toothed cat, not before it."
+  },
+  {
+    "id": "rw-0470",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Whitten called each slab painting 'one gesture,' a departure from the many gestures in his 1960s work, and historians say he was 'removing gesture.' Either way, both views agree his 1960s work has far more gestures than his 1970s work, as B says. C goes too far, since changing his method doesn't mean he lost interest in gesture, and A and D aren't supported."
+  },
+  {
+    "id": "rw-0471",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The country that mined 0.55 million metric tons in 2020 is Kazakhstan, and the table shows it mined 0.26 million metric tons in 1995. That is C. A uses Canada's 2020 figure, and B and D are Indonesia's and Chile's 1995 figures."
+  },
+  {
+    "id": "rw-0472",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The concern was that virtual tours would make people skip visiting in person. If many visitors said the virtual tours actually convinced them to plan a visit, that shows the concern was unjustified, so A supports the claim. B suggests visitors hadn't seen the tours at all, so it tells us nothing about the tours' effect, and D is about what visitors do after a visit."
+  },
+  {
+    "id": "rw-0473",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Upland South dialects emphasize 'r' in the same positions as Scottish dialects, and the region was settled largely by people of Scottish descent. The logical conclusion is that the Upland South dialects got this feature from Scottish dialects, as A says. C reverses the direction of influence, and D contradicts the shared emphasis."
+  },
+  {
+    "id": "rw-0474",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is about guilds relative to population, which the 'inhabitants per guild' column measures. Rouen had one guild for every 661 inhabitants, while Paris had one for every 4,511, a huge difference, so C fits. A is wrong because Lyon (143,000) had far more inhabitants than Bordeaux (80,000), and D describes only one city, so it shows no comparison."
+  },
+  {
+    "id": "rw-0475",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that languages spoken at very different speeds can convey the same amount of information per second. Vietnamese (5.3 syllables per second) is much slower than Spanish (7.7), yet both convey about 42 bits per second, as B says. A and C describe speed and information rising together, which doesn't support the claim, and D shows similar speeds with different information rates."
+  },
+  {
+    "id": "rw-0476",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The study, spanning fifty-three countries, found similar links between personality traits and preferences for Western music everywhere. That suggests that across cultures, people with similar personalities tend to like similar kinds of Western music, as A says. B is tempting, but the study looked only at Western genres, so it can't support predictions about non-Western music."
+  },
+  {
+    "id": "rw-0477",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the speaker feels protected by the mountain. In C the speaker says the mountain felt like a wall that sheltered him from the wind, which directly expresses protection. The other quotations describe the landscape or the speaker's movements without any sense of being protected."
+  },
+  {
+    "id": "rw-0478",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The table lists Nambé Pueblo's total area as 32.4 square miles, so C completes the comparison. The other numbers belong to other nations: 47.3 is San Ildefonso, 77.1 is Santa Clara, and 595.7 is Acoma."
+  },
+  {
+    "id": "rw-0479",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The novel's rhythm and lyricism are said to be untranslatable into words, but the critic says Cranko's ballet captures exactly those qualities of rhythm, cadence, and symmetry. So a loose adaptation in a different medium may preserve the essential elements better than a literal written translation, as A says. D contradicts the critic's praise, and B and C make claims the text doesn't support."
+  },
+  {
+    "id": "rw-0480",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tallest bar in the graph is recycling process 2 on Type B batteries, which recovered about 75% of the lithium. So the highest percentage is closest to 75%, choice A. The other bars are about 30%, 35%, and 55%, and none of the choices besides 75% matches the maximum."
+  },
+  {
+    "id": "rw-0481",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "To show the BBC inspired US public broadcasting, the evidence must link the two. D says the BBC aimed to support democracy through an informed public and that US legislators believed high-quality programming could do the same for the United States, showing they followed the BBC's model. A is only about the BBC, B stresses differences, and C is only about US politicians."
+  },
+  {
+    "id": "rw-0482",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The only thing that differed between the groups was how detailed the first ad was, and that changed how they rated the store in the second ad. So reactions to an ad can depend on the amount of detail in previous ads, as C says. The study didn't vary viewing time, audience size, or time of day."
+  },
+  {
+    "id": "rw-0483",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Bigger rotors generate more energy, so the claim needs rotor sizes to grow over time. In 2011 about 78% of new turbines had diameters under 100 meters, while in 2021 about 66% were 115-130 meters and about 23% were over 130 meters, so most were at least 115 meters, as B says. A is wrong because only about 23% exceeded 130 meters in 2021, and D is wrong because that share was 0% until around 2018."
+  },
+  {
+    "id": "rw-0484",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says Thornton alone held Buck and the rest of mankind was as nothing; Buck is cold to strangers and only tolerates Thornton's partners because of their link to Thornton. So the main idea is that Buck values Thornton above everyone else, as D says. B overstates, since Buck tolerates others rather than avoiding all people, and A compares to a past the text doesn't describe."
+  },
+  {
+    "id": "rw-0485",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text states directly that Gloria Richardson was the leader of what became known as the Cambridge movement, so A is correct. The text never mentions a high school, environmental protests, or a business."
+  },
+  {
+    "id": "rw-0486",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text explains that hagfish slime threads are strong and elastic and that researchers are trying to recreate them as an eco-friendly alternative to petroleum-based fabric fibers. So the main idea is that the threads could help create a new kind of fabric, as A says. B gets it backward, since the goal is to replace petroleum-based fibers, and C is only a supporting detail."
+  },
+  {
+    "id": "rw-0487",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Attaching glass beads lets the light focus on the beads instead of the particles, so researchers can move the particles without exposing them directly to the beam's heat. That is B. D is tempting, but the text doesn't say heat moves from the particles into the beads; the point is that the particles avoid being heated in the first place."
+  },
+  {
+    "id": "rw-0488",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Wace is credited with introducing the Round Table in 1155, which means it didn't appear in Arthurian stories before then. Vita Sancti Cadoci was composed in the 11th century, so the legends it drew on would not have included the Round Table, as D says. B contradicts the idea that Wace introduced it, and A and C make comparisons the text doesn't support."
+  },
+  {
+    "id": "rw-0489",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Dramaturges help writers refine story and character, and many choreographers also care about storytelling, with some seeing dance as narrative through movement. It is therefore unsurprising that such choreographers often bring in dramaturges to help refine those narrative elements, as B says. A stays within theater and doesn't connect to the choreography point."
+  },
+  {
+    "id": "rw-0490",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The underlined claim says Medellín's style is so individual that it resists being viewed through cultural identity. D argues that the work relies mainly on a staple of Maya sculpture and therefore invites being classified as Indigenous art, which directly contradicts that claim. A notes a Maya influence but stops short of saying the work should be classified by cultural identity."
+  },
+  {
+    "id": "rw-0491",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text says artificial leaves aren't yet commercially viable as a large-scale energy source and describes scientists working on storage, distribution, cost, and efficiency to change that. So the main idea is that more research and development is needed before the devices can be widely used, as A says. B contradicts the text, which says they aren't yet in large-scale commercial use, and C makes an efficiency comparison the text never makes."
+  },
+  {
+    "id": "rw-0492",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The text calls Vibration Cooking Smart-Grosvenor's most influential project, describes it as unusual for its time, and says it shaped how people write about food today. That makes A, an unconventional book that is an important contribution to food writing, the main idea. C contradicts the text, which says the book has long been admired, and B is only a minor detail."
+  },
+  {
+    "id": "rw-0493",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text builds toward Reichert's team's finding that reef-building corals may store up to 20 million kilograms of microplastics a year from ocean water. That is D. C only restates the background definition, and A shifts the focus to how corals build reefs."
+  },
+  {
+    "id": "rw-0494",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that medicine and health submissions peaked in 2019. D says the highest number of those submissions, about 285, came in 2019, which directly supports the claim, and the graph confirms it. B is false, since physics and space science had only about 100 submissions in 2019, and A and C are about other topics."
+  },
+  {
+    "id": "rw-0495",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Scholars took the cupid as a sign the figure is Venus, but Brain notes cupids may also have been linked with fishing in general. So a cupid next to a woman fishing doesn't prove she is Venus, as A says. C goes too far, since the cupid doesn't rule Venus out, and D repeats the reasoning Brain is questioning."
+  },
+  {
+    "id": "rw-0496",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both teachers gave out the same number of rewards, but most children judged the teacher who counted out loud to be fairer. So the main idea is that how rewards are handed out can affect whether children see the situation as fair, as D says. B is about teaching math, which the experiment didn't test, and A and C aren't supported."
+  },
+  {
+    "id": "rw-0497",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that the young woman is unimpressed with the house. In A her first feeling is disappointment, and she sees little beauty in the house's square lines, which shows exactly that. The other quotations simply describe the house or her actions without showing her opinion."
+  },
+  {
+    "id": "rw-0498",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Voting required paying at least 300 francs in direct taxes, and the real estate tax, paid by relatively few people, was the main way people qualified. That suggests those who could vote most likely owned a lot of French real estate, as A says. D is tempting, but foreign investments being lightly taxed doesn't mean their owners couldn't also own real estate and qualify."
+  },
+  {
+    "id": "rw-0499",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The text claims that seeing Stevens's preserved sandpaintings as mere static objects is too object-focused, because he worked to convey the temporary, dynamic nature of ikaah. C says the paintings are best seen as reminders of their public creation, during which Stevens performed rituals and had viewers follow the shifting sand, showing he conveyed that process. A sides with the view the text rejects, and D focuses on gift-giving and chemistry rather than on ikaah's ephemeral practice."
+  },
+  {
+    "id": "rw-0500",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that olms leave their caves and come to the surface to find food. If earthworms from surface soil make up a major part of their diet, olms must be getting food at the surface, so C supports the claim. The other findings, about breeding, cave systems, and brains, say nothing about olms visiting the surface."
+  },
+  {
+    "id": "rw-0501",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The Lord Chancellor marvels at the crowd's 'unanimity,' but the narrator says some people were shouting 'Bread!' and others 'Taxes!' and no one seemed to know what they wanted. So he calls the crowd united when it obviously isn't, as D says. A is wrong because he never claims to know what the crowd wants; he asks what it all means.",
+    "fix": {
+      "passage": "The following text is adapted from Lewis Carroll’s 1889 satirical novel Sylvie and Bruno. A crowd has gathered outside a room belonging to the Warden, an official who reports to the Lord Chancellor.\n\nOne man, who was more excited than the rest, flung his hat high into the air, and shouted (as well as I could make out) “Who roar for the Sub-Warden?” Everybody roared, but whether it was for the Sub-Warden, or not, did not clearly appear: some were shouting “Bread!” and some “Taxes!”, but no one seemed to know what it was they really wanted.\n\nAll this I saw from the open window of the Warden’s breakfast-saloon, looking across the shoulder of the Lord Chancellor. “What can it all mean?” he kept repeating to himself. “I never heard such shouting before—and at this time of the morning, too! And with such unanimity!”",
+      "prompt": "Based on the text, how does the Lord Chancellor respond to the crowd?"
+    }
+  },
+  {
+    "id": "rw-0502",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Some students found the novel old-fashioned, but the professor noted its modern-sounding language and its focus on issues that still matter. That suggests the novel is more relevant to today's readers than it might first seem, as B says. D picks up on the letter order detail, but the professor's point is about relevance, not reading order."
+  },
+  {
+    "id": "rw-0503",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The sentence needs an example of corn spreading without its vocabulary. The table shows that the corn words in Cherokee and the Muskogean languages have no proposed Totozoquean origin, even though those tribes grew corn, so A completes the point. B is about linguistic diversity, and C and D discuss changes in words that the table doesn't show and that don't illustrate crops separating from vocabulary."
+  },
+  {
+    "id": "rw-0504",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text describes the detailed notes Alspaugh kept with her fabric samples and says historians see the scrapbook as a record of both her life and fifty years of nineteenth-century textiles and dressmaking. That is D. A claims she inspired others, which the text never says, and C is only background."
+  },
+  {
+    "id": "rw-0505",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Green found the storytelling very confusing in 2016 but enthusiastically praised it in the 2019 Broadway version. That suggests he thinks the musical improved greatly between the two productions, as D says. A and C reverse his view."
+  },
+  {
+    "id": "rw-0506",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "'Necessary but not sufficient' means reductions in total outlays happen only with a divided Congress, but a divided Congress doesn't guarantee them. The table fits D: every undivided period saw total outlays rise, and every divided period except 1975–1976 (+2.7) saw them fall. B is false because the 1975–1976 divided Congress had an increase in total outlays, and A and C focus on defense or nondefense outlays instead of total outlays."
+  },
+  {
+    "id": "rw-0507",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text says scientists expected marsquakes to come from all over the planet, so they were surprised that the data showed every marsquake started from the same location. That is D. The text doesn't mention rising temperatures, types of seismic waves, or a shortage of data."
+  },
+  {
+    "id": "rw-0508",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The text explains that researchers have learned about the nervous systems of ancient arthropods from fossil traces, giving the Mollisonia symmetrica study as an example. So the main idea is that fossils can help us understand ancient arthropod nervous systems, as B says. A and C misuse the examples of brine shrimp and hawk moths, and D overstates the hope mentioned at the end."
+  },
+  {
+    "id": "rw-0509",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The claim is that Hedda, unable to control her own future, wants to shape someone else's. In B she says she wants, for once, the power to mould a human destiny, which directly shows that desire. A expresses her lack of options for herself, and C is about power over one person but phrased as a complaint, not a wish to shape their fate."
+  },
+  {
+    "id": "rw-0510",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the table, the row for mongooses and the column for threatened mammals meet at 0.75, so C is correct. 0.61 is cats on mammals, 0.52 is cats on reptiles, and 0.35 doesn't appear in the table."
+  },
+  {
+    "id": "rw-0511",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The archaeologist reads the unevenly spaced parallel notches as a counting record. If Neanderthal decorative art elsewhere in the same region mainly features unevenly spaced parallel lines, the notches could just as easily be decoration, which weakens the counting claim. That is D. A and C would, if anything, make a counting interpretation easier to accept, and B is about a different artifact."
+  },
+  {
+    "id": "rw-0512",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Holme kept reading, glanced impatiently at the postman, and is said to regard any interruption of his Gibbon reading as an insult. So he most likely felt annoyed at being interrupted, as D says. Nothing suggests he was expecting the letter or knew who sent it, which rules out A and B."
+  },
+  {
+    "id": "rw-0513",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The assertion has two parts: every region reported effects on provisioning services, and provisioning services are the majority overall. B covers both: no region's provisioning percentage is below 33% (so every region has some), and provisioning makes up 75% overall. C supports only the first part, and D only gives the range across regions without the overall majority."
+  },
+  {
+    "id": "rw-0514",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the first explanation, soil bacteria splash up onto the leaves; in the second, wind carries bacteria to both the leaves and the soil. Either way, the same bacteria end up in leaves and roots because they come from a shared source, as B says. C only fits the wind explanation, and A and D aren't discussed in the text."
+  },
+  {
+    "id": "rw-0515",
+    "answer": "D",
+    "domain": "information-ideas",
+    "skill": "inferences",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In China, Mandarin is mainly spoken in the north and Cantonese and Fuzhounese in the south, and in New York, northern immigrants settle in Queens while southern immigrants settle in Manhattan. So the language-region pattern from the original country is reproduced in the new city, as D says. The text says nothing about language change, vocabulary differences, or country size."
+  },
+  {
+    "id": "rw-0516",
+    "answer": "B",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The claim is that Du Bois felt an intuitive, sometimes unexpected sense of recognition on hearing Black folk songs. In B he says the songs were unknown to him yet he knew them at once as 'of me and of mine,' which captures both the unexpectedness and the recognition. A, C, and D praise or describe the music but don't express his personal sense of recognition."
+  },
+  {
+    "id": "rw-0517",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In the column for clamshells collected from the beach, the largest number is 99, found at 3–4 meters below the surface. That is C. The other depths had far fewer beach-collected tools: 18 at 5–6 meters, 2 at 4–5 meters, and 1 at 6–7 meters."
+  },
+  {
+    "id": "rw-0518",
+    "answer": "A",
+    "domain": "information-ideas",
+    "skill": "central-ideas",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The poem describes a calm evening port, with stilled wind, furled sails, and slumbrous waters, and then says that only at such times has the speaker thought how sweet a quiet old age might be after a windy youth. So the peaceful scene leads the speaker to value the calm of old age, as A says. D invents a contrast with the port's daytime activity, which the poem never describes."
+  },
+  {
+    "id": "rw-0519",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-quantitative",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Type A flies (DptA silenced, DptB working) mostly survived A. sicerae infection, while type B and type AB flies (DptB silenced) nearly all died. So DptB is what protects against A. sicerae, while P. rettgeri resistance depends on DptA, suggesting DptB may have evolved as a specific defense against A. sicerae, as C says. A is wrong because flies with working DptA but no DptB died, and D is wrong because type A flies survived without DptA."
+  },
+  {
+    "id": "rw-0520",
+    "answer": "C",
+    "domain": "information-ideas",
+    "skill": "command-of-evidence-textual",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The astronomers claim planets contain the same materials as their host star in equal or smaller amounts. If some rocky planets have considerably more iron than their host star, that directly contradicts the 'equal or smaller' part, so C weakens the claim. B is about two stars, not stars and planets, and D concerns measurement methods for other kinds of planets."
+  }
+]

@@ -1,0 +1,763 @@
+[
+  {
+    "id": "m-0601",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Test each pair in 2x - y > 883. In table D: 2(442) - 0 = 884, 2(441) - (-2) = 884, and 2(440) - (-4) = 884, and all are greater than 883. Tables A and B fail at x = 440, y = 0 (2(440) - 0 = 880), and table C fails at x = 440, y = -2 (880 + 2 = 882)."
+  },
+  {
+    "id": "m-0602",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In d = 16t, d goes up by 16 inches every time t goes up by 1 second, so 16 is the rate in inches per second. Choice A treats 16 as a total distance, but the total distance depends on t."
+  },
+  {
+    "id": "m-0603",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "The second equation is just the first multiplied by 4, so both equations have the same graph and any point on 7x + 6y = 5 works. For choice D, x = -(6r)/7 + 5/7, so 7x = -6r + 5, and with y = r we get 7x + 6y = -6r + 5 + 6r = 5. Choice A fails: with x = r, y would have to be (5 - 7r)/6, not -(6r)/7 + 5/7."
+  },
+  {
+    "id": "m-0604",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Combine the constants: p + 11 = 10, so p = 10 - 11 = -1. Check: (-1 + 3) + 8 = 2 + 8 = 10. Choice B comes from adding instead of subtracting."
+  },
+  {
+    "id": "m-0605",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(x) = 39 is a constant function, so f(x) is 39 for every x. Only table B shows f(x) = 39 for x = 0, 1 and 2. Table C shows f(x) = 39x, which is a different function."
+  },
+  {
+    "id": "m-0606",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 4n 10-inch pans, n 9-inch pans and 10 7-inch pans, so 4n + n + 10 = 100, which simplifies to 5n + 10 = 100. Choice A multiplies by the pan sizes, but the question counts pans, not inches. Choice C leaves out the n 9-inch pans."
+  },
+  {
+    "id": "m-0607",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The mixture is only vitamin D and calcium, so the calcium has mass 150 - 50 = 100 grams. Choice A adds the masses instead of subtracting."
+  },
+  {
+    "id": "m-0608",
+    "answer": [
+      "9"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 6x = 54 and divide both sides by 6 to get x = 9. Check: g(9) = 6(9) = 54."
+  },
+  {
+    "id": "m-0609",
+    "answer": [
+      "40"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Subtract 5 from both sides: 4x = 160. Divide by 4: x = 40. Check: 4(40) + 5 = 165."
+  },
+  {
+    "id": "m-0610",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The x-intercept is where the line crosses the x-axis (y = 0). The graph crosses the x-axis at x = -12, so the x-intercept is (-12, 0). Choice D has the wrong sign, and (0, 0) is the origin, which the line does not pass through."
+  },
+  {
+    "id": "m-0611",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "f(12) = 0 means that after x = 12 hours, 0 free muffins remain. So it takes 12 hours to give away all the muffins (108 - 9(12) = 0). Choice A misreads 12 as a number of muffins, but 12 is the input, which is hours."
+  },
+  {
+    "id": "m-0612",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let a be adults and c be children: a + c = 21 and 80a + 60c = 1,440. Substituting a = 21 - c gives 1,680 - 80c + 60c = 1,440, so 20c = 240 and c = 12. Check: 9 adults and 12 children give 720 + 720 = 1,440 dollars. Choice B, 9, is the number of adults."
+  },
+  {
+    "id": "m-0613",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Parallel lines have equal slopes. Line k has slope 17/7, so line j also has slope 17/7. Choice A is the reciprocal, and 4 is the y-intercept of line k, not its slope."
+  },
+  {
+    "id": "m-0614",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Multiply the second equation by 2: -12x + 14y = -36. The first equation says -12x + 14y = 36. The same expression can't equal both 36 and -36, so the lines are parallel and the system has zero solutions. Choice C would need the constants to match too."
+  },
+  {
+    "id": "m-0615",
+    "answer": [
+      "87"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let s be the September sales. August had 3s + 15, so s + 3s + 15 = 363, which gives 4s = 348 and s = 87. Check: August had 3(87) + 15 = 276, and 276 + 87 = 363."
+  },
+  {
+    "id": "m-0616",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is 3 because the line passes through (0, 3). The slope is (31 - 3)/(7 - 0) = 28/7 = 4, so f(x) = 4x + 3. Check: f(7) = 28 + 3 = 31. Choice D uses the x-value 7 as the slope."
+  },
+  {
+    "id": "m-0617",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 28 into the first equation: 28 = 12x - 20, so 12x = 48 and x = 4. The solution is (4, 28). Choice C swaps the order of x and y."
+  },
+  {
+    "id": "m-0618",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is where the line crosses the y-axis. From the graph, the line crosses the y-axis at y = 2, so the y-intercept is (0, 2). Choice A, (-5, 0), is the x-intercept."
+  },
+  {
+    "id": "m-0619",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "\"84 less than x\" means x - 84, so y = x - 84. Choice A would make y 84 more than x."
+  },
+  {
+    "id": "m-0620",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 10: f(10) = 4(10) - 3 = 40 - 3 = 37. Choice C forgets to subtract 3, and choice D adds 3 instead."
+  },
+  {
+    "id": "m-0621",
+    "answer": [
+      "30"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 4: f(4) = 7(4) + 2 = 28 + 2 = 30."
+  },
+  {
+    "id": "m-0622",
+    "answer": [
+      "210"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Substitute x = 90: 0.10(90) + 0.20y = 0.17(90 + y), so 9 + 0.20y = 15.3 + 0.17y. Then 0.03y = 6.3, so y = 210 gallons. Check: 9 + 42 = 51 and 0.17(300) = 51."
+  },
+  {
+    "id": "m-0623",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The stickers cost 62.00 - 19.50 = 42.50 dollars together, so each one costs 42.50/10 = 4.25 dollars. Choice C divides the whole total by 10 without removing the cost of the pass."
+  },
+  {
+    "id": "m-0624",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The payment starts at the retail price, 690 dollars, and goes down by 150 dollars for each year t, so p = 690 - 150t. Choice A swaps the two numbers, which would give a negative payment."
+  },
+  {
+    "id": "m-0625",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Distribute and collect the x-terms: rx - 9x - 19x = 27 - 4, so (r - 28)x = 23. If r = 28, this becomes 0 = 23, which has no solution, so r cannot be 28. Any other r gives exactly one solution, x = 23/(r - 28). Choice B is tempting because of the 9, but r = 9 still gives one solution."
+  },
+  {
+    "id": "m-0626",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The lines have different slopes (1 and 8), so they are not parallel and cross at exactly one point. Setting x + 20 = 8x gives x = 20/7, the single intersection. Zero points would need equal slopes with different intercepts."
+  },
+  {
+    "id": "m-0627",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Every recorded rate was at least the minimum, 0.6, and at most the maximum, 1.8, so 0.6 ≤ s ≤ 1.8. Choice B only includes the maximum and greater values, which were never recorded."
+  },
+  {
+    "id": "m-0628",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The speed was between 150 and 170 miles per hour, so 150 ≤ s ≤ 170. Choice C allows speeds below 150, and choice A uses the difference of the two speeds."
+  },
+  {
+    "id": "m-0629",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The p monthly payments cost 16p dollars, and the down payment adds 37 dollars, so 16p + 37 = 165. Choice A subtracts the down payment instead of adding it, and choices B and D swap the 16 and 37."
+  },
+  {
+    "id": "m-0630",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 3x into 2x + y = 12: 2x + 3x = 12, so 5x = 12. You don't even need to find x. Choice B is a value you might get by mixing up x and y."
+  },
+  {
+    "id": "m-0631",
+    "answer": [
+      "13"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 6: 8x + 11(6) = 170, so 8x = 170 - 66 = 104 and x = 13. Check: 8(13) + 66 = 170.",
+    "fix": {
+      "prompt": "8x + 11y = 170\nThe equation gives the possible combinations of the number of 2009 premium grade Log Cabin Pennies, x, and the number of 1996 select grade Lincoln Pennies, y, in a collection that is worth a total of $170. If there are 6 1996 select grade Lincoln Pennies in the collection, how many 2009 premium grade Log Cabin Pennies are in the collection?"
+    }
+  },
+  {
+    "id": "m-0632",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "30% of x is 0.3x red beads and 70% of y is 0.7y red beads. \"At least 400\" means the total is greater than or equal to 400: 0.3x + 0.7y ≥ 400. Choice D uses 30 and 70 instead of the decimals 0.3 and 0.7."
+  },
+  {
+    "id": "m-0633",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "For y = x + 4: x = 0 gives 4, x = 1 gives 5, and x = 2 gives 6, which is table A. Table B has y going down as x goes up, so it can't match a line with slope 1."
+  },
+  {
+    "id": "m-0634",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "At the start of the project x = 0, so f(0) = 33 - 0.18(0) = 33. So 33 is the estimated height at the start. Choice C describes -0.18, the daily change."
+  },
+  {
+    "id": "m-0635",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Containers cost 1.87c dollars and tape costs 2.40t dollars, and the total can't be more than 15 dollars: 1.87c + 2.40t ≤ 15. Choice C swaps the prices, and choices B and D have the inequality going the wrong way."
+  },
+  {
+    "id": "m-0636",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Strawberries cost 1.90p dollars and the cereal costs 2 dollars, so 1.90p + 2 = 9.60. Choice C swaps the prices of the cereal and the strawberries."
+  },
+  {
+    "id": "m-0637",
+    "answer": [
+      ".25",
+      "0.25",
+      "1/4"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "In the equation, 24.5 is the cost of one cubic yard of topsoil and 24.75 is the cost of one ton of crushed stone. The difference is 24.75 - 24.5 = 0.25 dollars."
+  },
+  {
+    "id": "m-0638",
+    "answer": [
+      "-28"
+    ],
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Rewrite both equations in standard form. The first becomes 48x - 112y = 24, or 6x - 14y = 3. The second becomes 12x + ry = 1/8. For no solution the lines must be parallel: the x-coefficient doubled (6 to 12), so the y-coefficient must too, giving r = 2(-14) = -28. Then the second line is 6x - 14y = 1/16, which is different from 6x - 14y = 3, so there is no solution."
+  },
+  {
+    "id": "m-0639",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The low-salt mixture adds 0.02x kg of salt and the high-salt mixture adds 0.96y kg. The final 24 kg is 4% salt, which is 0.04(24) kg. So 0.02x + 0.96y = (0.04)(24). Choice D sets the salt equal to the total mass of the mixture, and choice A swaps the percents."
+  },
+  {
+    "id": "m-0640",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The cost is the 25-dollar fee plus 10 dollars per hour, or 25 + 10t, and it can be at most 75: 25 + 10t ≤ 75. Choice B swaps the fee and the hourly rate, and choice A leaves out the fee."
+  },
+  {
+    "id": "m-0641",
+    "answer": [
+      "241"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In f(x) = a + bx, a is the value when x = 0, which is the weight at birth. So a = 241 (and b = 3 is the daily gain)."
+  },
+  {
+    "id": "m-0642",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute a = 3: 3(3) + 4b = 25, so 4b = 16 and b = 4. Check: 9 + 16 = 25. Choice A is the number of small boxes, not large ones."
+  },
+  {
+    "id": "m-0643",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "A parallel line has the same slope, 7. Passing through (0, 5) means the y-intercept is 5, so y = 7x + 5. Choice C has the right slope but goes through the origin."
+  },
+  {
+    "id": "m-0644",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let t be the 2-person tents and f the 4-person tents: t + f = 60 and 2t + 4f = 202. Substituting f = 60 - t gives 2t + 240 - 4t = 202, so 2t = 38 and t = 19. Check: 19 tents hold 38 people and 41 tents hold 164 people, which is 202 in total."
+  },
+  {
+    "id": "m-0645",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Profit equals revenue minus fixed costs, and 4,500 is subtracted, so 4,500 is the fixed cost and 2.00x is the revenue. The revenue from selling x dispensers is 2.00x, so A is correct. Choice B describes 2.00, the revenue per dispenser, not 2.00x."
+  },
+  {
+    "id": "m-0646",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The number of tickets gives s + p = 250. The money gives 5 dollars per standard ticket and 12 dollars per premium ticket, so 5s + 12p = 2,300. Choice B swaps the prices, and choices C and D swap the counts and the dollar amounts."
+  },
+  {
+    "id": "m-0647",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "hard",
+    "confidence": "high",
+    "explanation": "Divide the given equation by 38: x - n = y + n, so x - y = 2n. A second equation with no common solution must have the same left side, x - y, but a different constant. Choice D divided by 4 gives x - y = n, and since n is positive, n ≠ 2n. Choice A gives x - y = 2n, the same line, which would have infinitely many solutions."
+  },
+  {
+    "id": "m-0648",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The most spaces fit when each is as narrow as possible: 135/7.5 = 18. The fewest fit when each is as wide as possible: 135/9 = 15. So 15 ≤ n ≤ 18. Choice B gives the range of widths, not the number of spaces."
+  },
+  {
+    "id": "m-0649",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Let b be the cost of a loaf and e the cost of a dozen eggs: b + 2e = 12.45 and 4b + e = 19.42. From the first, b = 12.45 - 2e; substituting gives 49.80 - 8e + e = 19.42, so 7e = 30.38 and e = 4.34. Check: b = 3.77, and 4(3.77) + 4.34 = 19.42. Choice A, 3.77, is the price of the bread."
+  },
+  {
+    "id": "m-0650",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x + y adds the minutes spent running and the minutes spent biking, so 75 is the total minutes spent on both each day. Choices A and B describe x and y alone."
+  },
+  {
+    "id": "m-0651",
+    "answer": [
+      "21"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Both sides have 3x, so the equation has infinitely many solutions only if the constants also match: 21 = k. If k were any other number, the equation would reduce to a false statement and have no solution."
+  },
+  {
+    "id": "m-0652",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "g(-1) = -11 + 4 = -7, g(0) = 4, and g(1) = 11 + 4 = 15, which is table C. Table A gets g(1) right but has the wrong values at x = -1 and x = 0."
+  },
+  {
+    "id": "m-0653",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Expand: 6x - 18 - 11 = 4x - 12 + 6, so 6x - 29 = 4x - 6. Then 2x = 23 and x = 23/2. The question asks for x - 3 = 23/2 - 6/2 = 17/2. Choice A is the value of x itself."
+  },
+  {
+    "id": "m-0654",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute y = 4 into x = y + 6: x = 4 + 6 = 10. Choice C is the value of y."
+  },
+  {
+    "id": "m-0655",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "There are 5n 9-inch screws, n 7-inch screws and 22 4-inch screws, so 5n + n + 22 = 100, which simplifies to 6n + 22 = 100. Choice A multiplies by the screw lengths, but the total is a count of screws. Choice C leaves out the 7-inch screws."
+  },
+  {
+    "id": "m-0656",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "systems-linear",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The solution to the system is the point where the two lines cross. On the graph they cross at (3, 4). The other points lie on only one line or on neither."
+  },
+  {
+    "id": "m-0657",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Each mile uses 1/25 gallon, which costs 4/25 dollars. Driving m fewer miles saves (4/25)m dollars, and Alan wants to save 5 dollars: (4/25)m = 5. Choice B uses miles per dollar (25/4) instead of dollars per mile."
+  },
+  {
+    "id": "m-0658",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The 5 is the number of hectares in the industrial park, so 5x is the number of trees there. That makes x the average number of trees per hectare in the industrial park. Choice C describes 5x, not x."
+  },
+  {
+    "id": "m-0659",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The boundary line passes through (0, -4) and (1, 0), so it is y = 4x - 4, and the region to the right of it (below the line) is shaded: y ≤ 4x - 4. For (6, -2): -2 ≤ 24 - 4 = 20, true. For (1, 4): 4 ≤ 0 is false, and the other two points are on the unshaded left side."
+  },
+  {
+    "id": "m-0660",
+    "answer": [
+      "49"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute b = 71: 7g + 7(71) = 840, so 7g = 840 - 497 = 343 and g = 49. A shortcut is to divide by 7 first: g + b = 120, so g = 120 - 71 = 49."
+  },
+  {
+    "id": "m-0661",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 0: g(0) = -0 + 8 = 8. Choice A comes from mistakenly taking the opposite of the constant."
+  },
+  {
+    "id": "m-0662",
+    "answer": [
+      "46"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The water and acid volumes add up to 56 mL, so the water is 56 - 10 = 46 mL."
+  },
+  {
+    "id": "m-0663",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Test (0, -1): -1 ≤ 0 and -1 ≤ -0 = 0, both true. For (1, 0), y ≤ -x gives 0 ≤ -1, which is false; for (-1, 0), y ≤ x gives 0 ≤ -1, false; and (0, 1) fails both."
+  },
+  {
+    "id": "m-0664",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "Use point-slope form: y - 10 = (-1/3)(x - 9), so y = -x/3 + 3 + 10 = -x/3 + 13. Check: at x = 9, y = -3 + 13 = 10. Choice C uses the y-coordinate 10 as the y-intercept, but the point is not on the y-axis."
+  },
+  {
+    "id": "m-0665",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The tree starts at 6 feet and after n years is 2n + 6 feet tall, so the height increases by 2 feet each year. That makes 2 the average number of feet the tree grew per year. Choice C would be 2 + 6 = 8 feet, not 2."
+  },
+  {
+    "id": "m-0666",
+    "answer": [
+      "2"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Expand the right side: a(x + 8) = ax + 8a. For infinitely many solutions both sides must be identical, so a = 2 (which also makes 8a = 16). Check: 2(x + 8) = 2x + 16."
+  },
+  {
+    "id": "m-0667",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The y-intercept is 9 because the line passes through (0, 9). The slope is (17 - 9)/(1 - 0) = 8, so y = 8x + 9. Choice A uses the reciprocal of the slope."
+  },
+  {
+    "id": "m-0668",
+    "answer": [
+      "1/5",
+      ".2",
+      "0.2"
+    ],
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "If x/8 = 5, then 8/x is its reciprocal, 1/5. Or solve directly: x = 40, and 8/40 = 1/5 = 0.2."
+  },
+  {
+    "id": "m-0669",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Large boxes take 10 minutes each (10x minutes) and small boxes take 5 minutes each (5y minutes), for 700 minutes total: 10x + 5y = 700. Choice A gives the times to the wrong box sizes."
+  },
+  {
+    "id": "m-0670",
+    "answer": [
+      "35"
+    ],
+    "domain": "geometry-trig",
+    "skill": "lines-angles-triangles",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "The two congruent sides total 2(24) = 48 inches, so the third side is 83 - 48 = 35 inches."
+  },
+  {
+    "id": "m-0671",
+    "answer": "C",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "2(5x) means 2 times 5x, so divide both sides by 2: 5x = 3. You don't need to find x. Choices A and B don't follow from the equation, and 3/5 would be the value of x itself."
+  },
+  {
+    "id": "m-0672",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Since 3x = 30, 3x - 12 = 30 - 12 = 18. Choice D adds 12 instead of subtracting it."
+  },
+  {
+    "id": "m-0673",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-one-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "If b = 2, the equation becomes 0·x = 8, or 0 = 8, which is never true, so there is no solution. For any other b you can divide by b - 2 and get exactly one solution, x = 8/(b - 2)."
+  },
+  {
+    "id": "m-0674",
+    "answer": "D",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "In y = mx + b, m is the slope and b is the y-intercept. Slope 4 and passing through (0, 6) give y = 4x + 6. Choice B swaps the slope and the intercept."
+  },
+  {
+    "id": "m-0675",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "x is the number of triangles and y is the number of rectangles, so (24, 73) means 24 triangles and 73 rectangles. Check: 3(24) + 4(73) = 72 + 292 = 364 straws. Choice C swaps the two shapes."
+  },
+  {
+    "id": "m-0676",
+    "answer": "A",
+    "domain": "algebra",
+    "skill": "linear-equations-two-var",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The original y-intercept is found with x = 0: 33y = 297, so y = 9. Shifting the graph down 5 units lowers every point by 5, so the new y-intercept is (0, 9 - 5) = (0, 4). Choice C shifts up instead of down."
+  },
+  {
+    "id": "m-0677",
+    "answer": [
+      "2"
+    ],
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Set 4x = 8 and divide by 4: x = 2. Check: f(2) = 4(2) = 8."
+  },
+  {
+    "id": "m-0678",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Rhett drove 35r miles and Jessica drove 40j miles, and their total was under 220 miles: 35r + 40j < 220. Choice D gives the speeds to the wrong drivers, and choice A says the total was over 220."
+  },
+  {
+    "id": "m-0679",
+    "answer": [
+      "28"
+    ],
+    "domain": "algebra",
+    "skill": "linear-inequalities",
+    "difficulty": "medium",
+    "confidence": "high",
+    "explanation": "The pass is cheapest compared to the most expensive tickets, 3.50 dollars each. We need 3.50n > 95, so n > 27.14..., and the smallest whole number is 28. Check: 27 trips cost at most 94.50 dollars, which is less than 95, while 28 trips at 3.50 cost 98 dollars."
+  },
+  {
+    "id": "m-0680",
+    "answer": "B",
+    "domain": "algebra",
+    "skill": "linear-functions",
+    "difficulty": "easy",
+    "confidence": "high",
+    "explanation": "Substitute x = 30: y = 0.1(30) = 3 pieces. Choice D is the number of minutes, not pieces."
+  }
+]
