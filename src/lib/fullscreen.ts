@@ -2,9 +2,8 @@
 
 import { useSyncExternalStore } from "react";
 
-// Browser full screen for practice (like the real test app). requestFullscreen only works inside a click /
-// key handler, so call enterFullscreen() from the handler that opens the practice set. Errors (iOS Safari,
-// iframes, no gesture) are ignored: the page still fills the window without the browser's own chrome hidden.
+// Optional browser full screen for practice: the toggle in the solve toolbar. requestFullscreen only works inside a
+// click / key handler. Errors (iOS Safari, iframes, no gesture) are ignored.
 
 export function enterFullscreen() {
   try {

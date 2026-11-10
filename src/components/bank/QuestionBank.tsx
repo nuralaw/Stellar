@@ -5,7 +5,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useAttempts, useBookmarks, useNow } from "@/lib/store";
 import { localDay } from "@/lib/stats";
 import { PAGE } from "@/lib/ui";
-import { enterFullscreen } from "@/lib/fullscreen";
 import { SECTIONS } from "@/lib/taxonomy";
 import { ListView } from "./ListView";
 import { SolveView, type Run } from "./SolveView";
@@ -39,7 +38,6 @@ export function QuestionBank() {
   };
 
   const start = (r: Run) => {
-    enterFullscreen(); // works when called from the click that opened the set
     setRun(r);
     window.scrollTo({ top: 0 });
   };
