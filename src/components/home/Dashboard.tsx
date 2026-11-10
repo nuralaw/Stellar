@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { computeStats, type Tally } from "@/lib/stats";
+import { computeStats } from "@/lib/stats";
+import { SectionCard, TopicBreakdown } from "./Breakdown";
+import { StudyCalendar } from "./StudyCalendar";
 import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
 import { AccuracyDonut } from "./AccuracyDonut";
@@ -10,7 +12,7 @@ import { Countdown } from "./Countdown";
 import { ScoreChart } from "./ScoreChart";
 import { SatDatePicker } from "./SatDatePicker";
 import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
-import { SECTIONS, type SectionId } from "@/lib/taxonomy";
+import type { SectionId } from "@/lib/taxonomy";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
 
@@ -27,14 +29,6 @@ function Skeleton({ className = "" }: { className?: string }) {
   return <div className={`animate-pulse rounded-lg bg-surface-2 ${className}`} />;
 }
 
-function Bar({ value }: { value: number | null }) {
-  return (
-    <div className="h-2 overflow-hidden rounded-full bg-surface-2">
-      <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${value ?? 0}%` }} />
-    </div>
-  );
-}
-
 function EmptyChart({ text, href = "/practice", link = "Start practicing" }: { text: string; href?: string; link?: string }) {
   return (
     <div className="grid h-44 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
@@ -44,10 +38,6 @@ function EmptyChart({ text, href = "/practice", link = "Start practicing" }: { t
       </Link>
     </div>
   );
-}
-
-function pct(t: Tally) {
-  return t.accuracy === null ? "—" : `${t.accuracy}%`;
 }
 
 // ---------- goals editor ----------
@@ -290,96 +280,30 @@ export function Dashboard() {
         </Card>
       </div>
 
-      {/* Stats overview */}
-      <div className="mt-6 grid gap-4 lg:grid-cols-[1fr_1.4fr]">
-        <Card>
-          <h2 className="font-semibold">By section</h2>
-          <ul className="mt-5 space-y-5">
-            {(["rw", "math"] as SectionId[]).map((s) => {
-              const t = stats.bySection[s];
-              return (
-                <li key={s}>
-                  <div className="flex items-baseline justify-between gap-3 text-sm">
-                    <span className="font-medium">{SECTIONS[s].name}</span>
-                    <span className="text-muted tabular-nums">
-                      {hydrated ? `${pct(t)} · ${t.answered} answered` : "—"}
-                    </span>
-                  </div>
-                  <div className="mt-2">
-                    <Bar value={hydrated ? t.accuracy : null} />
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-          {hydrated && stats.weakest && (
-            <div className="mt-6 rounded-xl bg-accent-soft p-4 text-sm">
-              <p className="font-semibold">Focus next: {stats.weakest.domain.name}</p>
-              <p className="mt-1 text-muted">Your lowest accuracy so far ({stats.weakest.accuracy}%).</p>
-              <Link
-                href={`/practice?section=${stats.weakest.domain.section}&domain=${stats.weakest.domain.id}`}
-                className="mt-2 inline-block font-semibold text-primary hover:underline"
-              >
-                Practice this topic →
-              </Link>
-            </div>
-          )}
-          {hydrated && stats.overall.answered === 0 && (
-            <p className="mt-6 text-sm text-muted">
-              Answer a few questions in{" "}
-              <Link href="/practice" className="font-medium text-primary hover:underline">
-                Practice
-              </Link>{" "}
-              to see your stats here.
-            </p>
-          )}
-        </Card>
-
-        <Card>
-          <h2 className="font-semibold">By topic</h2>
-          <ul className="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-            {stats.byDomain.map((d) => (
-              <li key={d.domain.id}>
-                <div className="flex items-baseline justify-between gap-3 text-sm">
-                  <Link
-                    href={`/practice?section=${d.domain.section}&domain=${d.domain.id}`}
-                    className="truncate font-medium hover:text-primary"
-                    title={`Practice ${d.domain.name}`}
-                  >
-                    {d.domain.name}
-                  </Link>
-                  <span className="shrink-0 text-muted tabular-nums">{hydrated ? pct(d) : "—"}</span>
-                </div>
-                <p className="mt-0.5 text-xs text-muted">
-                  {SECTIONS[d.domain.section].short}
-                  {hydrated && d.answered > 0 ? ` · ${d.answered} answered` : ""}
-                </p>
-                <div className="mt-2">
-                  <Bar value={hydrated ? d.accuracy : null} />
-                </div>
-                <ul className="mt-3 flex flex-wrap gap-1.5" aria-label={`${d.domain.name} skills`}>
-                  {d.skills.map((s) => (
-                    <li key={s.skill.id}>
-                      <Link
-                        href={`/practice?section=${d.domain.section}&skills=${s.skill.id}`}
-                        title={`Practice ${s.skill.name}`}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-xs text-muted transition-colors hover:border-primary/50 hover:text-ink"
-                      >
-                        {s.skill.name}
-                        {hydrated && s.accuracy !== null && (
-                          <span className={`font-semibold tabular-nums ${s.accuracy >= 70 ? "text-success" : s.accuracy >= 40 ? "text-accent" : "text-danger"}`}>
-                            {s.accuracy}%
-                          </span>
-                        )}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </Card>
+      {/* Study calendar */}
+      <div className="mt-6 rounded-2xl border border-line bg-surface p-5">
+        <div className="mb-4">
+          <h2 className="font-semibold">Study calendar</h2>
+          <p className="mt-0.5 text-xs text-muted">Questions you answered each day, with official SAT dates and your test day</p>
+        </div>
+        {hydrated ? <StudyCalendar days={stats.days} now={now} testDate={profile.testDate} /> : <Skeleton className="h-96 rounded-xl" />}
       </div>
+
+      {/* By section */}
+      <h2 className="mt-8 font-semibold">By section</h2>
+      <div className="mt-3 grid gap-4 md:grid-cols-2">
+        {hydrated ? (
+          (["rw", "math"] as SectionId[]).map((s) => <SectionCard key={s} s={s} stats={stats} />)
+        ) : (
+          <>
+            <Skeleton className="h-96 rounded-2xl" />
+            <Skeleton className="h-96 rounded-2xl" />
+          </>
+        )}
+      </div>
+
+      {/* By topic */}
+      <div className="mt-6">{hydrated ? <TopicBreakdown stats={stats} /> : <Skeleton className="h-[40rem] rounded-2xl" />}</div>
 
       <p className="mt-4 text-xs text-muted">Progress is saved in this browser. Sign-in to sync across devices is coming soon.</p>
     </section>
