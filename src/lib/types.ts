@@ -1,4 +1,5 @@
 import type { SectionId } from "./taxonomy";
+import type { SourceId } from "./sources";
 
 export type Difficulty = "easy" | "medium" | "hard";
 export type ChoiceLetter = "A" | "B" | "C" | "D";
@@ -11,6 +12,8 @@ interface QuestionBase {
   /** "rw-0001" / "m-0001". Never change once published (progress is stored by id). */
   id: string;
   section: SectionId;
+  /** Who wrote it (see lib/sources.ts). */
+  source: SourceId;
   domain: string;
   skill: string;
   difficulty: Difficulty;
@@ -41,8 +44,8 @@ export interface SPRQuestion extends QuestionBase {
 
 export type Question = MCQuestion | SPRQuestion;
 
-/** Row of content/bank/dist/index.json: [id, domain, skill, difficulty initial, text preview]. */
-export type BankIndexRow = [id: string, domain: string, skill: string, difficulty: "e" | "m" | "h", preview: string];
+/** Row of content/bank/dist/index.json: [id, domain, skill, difficulty initial, text preview, source]. */
+export type BankIndexRow = [id: string, domain: string, skill: string, difficulty: "e" | "m" | "h", preview: string, source: SourceId];
 
 /** Live question counts: section → domain → skill → difficulty (content/bank/dist/counts.json). */
 export interface BankCounts {

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain, type SectionId } from "@/lib/taxonomy";
+import { BANKS, SOURCES, inBank, type BankId } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
 import { RichText } from "@/components/RichText";
 import { DifficultyBadge } from "./QuestionCard";
@@ -93,13 +94,19 @@ export function ListView({
   }, [items, filters, results, bookmarks]);
   /* eslint-enable react-hooks/exhaustive-deps */
 
-  // Per-section progress (ignores filters).
+  const bankItems = useMemo(() => items.filter((it) => inBank(filters.bank, it.source)), [items, filters.bank]);
+  const bankTotals = useMemo(
+    () => Object.fromEntries(BANKS.map((b) => [b.id, items.filter((it) => inBank(b.id, it.source)).length])) as Record<BankId, number>,
+    [items],
+  );
+
+  // Per-section progress in the current bank (ignores other filters).
   const progress = useMemo(() => {
     const out = {} as Record<SectionId, { total: number; done: number; correct: number }>;
     const doneBySkill: Record<string, number> = {};
     const totalBySkill: Record<string, number> = {};
     for (const s of ["rw", "math"] as SectionId[]) out[s] = { total: 0, done: 0, correct: 0 };
-    for (const it of items) {
+    for (const it of bankItems) {
       const p = out[it.section];
       p.total++;
       totalBySkill[it.skill] = (totalBySkill[it.skill] ?? 0) + 1;
@@ -111,7 +118,7 @@ export function ListView({
       }
     }
     return { bySection: out, doneBySkill, totalBySkill };
-  }, [items, results]);
+  }, [bankItems, results]);
   const sec = progress.bySection[filters.section];
 
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
@@ -130,7 +137,7 @@ export function ListView({
   };
 
   const activeCount = filters.skills.length + filters.difficulties.length + (filters.status !== "all" ? 1 : 0) + (filters.search.trim() ? 1 : 0);
-  const resetAll = () => update({ ...emptyFilters(filters.section), sort: filters.sort });
+  const resetAll = () => update({ ...emptyFilters(filters.bank, filters.section), sort: filters.sort });
 
   // "/" focuses search; Esc closes the mobile filter sheet.
   useEffect(() => {
@@ -178,25 +185,49 @@ export function ListView({
   return (
     <section className="mx-auto max-w-7xl px-4 pt-8 pb-12 md:px-8 md:pt-10">
       {/* Header */}
-      <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-5 lg:pr-14">
-        <div className="max-w-xl">
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Question Bank</h1>
-          <p className="mt-2 text-muted">
-            {fmt(items.length)} real-format Digital SAT questions with explanations. Pick a topic, open any question, or start a quick practice set.
-          </p>
-        </div>
-        <div className="w-full rounded-2xl border border-line bg-surface px-5 py-4 sm:w-auto sm:min-w-72">
-          <div className="flex items-baseline justify-between gap-6">
+      <div className="lg:pr-14">
+        <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Question Bank</h1>
+        <p className="mt-2 text-muted">Choose a bank, filter by topic and difficulty, then open any question or start a practice set.</p>
+      </div>
+
+      {/* Bank switcher + progress */}
+      <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-[1fr_1fr_minmax(17rem,0.85fr)]">
+        {BANKS.map((b) => {
+          const on = filters.bank === b.id;
+          return (
+            <button
+              key={b.id}
+              type="button"
+              aria-pressed={on}
+              onClick={() => update({ ...emptyFilters(b.id, filters.section), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
+              className={`group relative flex flex-col items-stretch justify-start rounded-2xl border p-4 text-left transition-colors sm:p-5 ${
+                on ? "border-primary bg-primary-soft/50 ring-1 ring-primary" : "border-line bg-surface hover:border-muted"
+              }`}
+            >
+              <span className="flex items-center justify-between gap-3">
+                <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary text-primary-ink" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
+                  <Icon d={b.id === "cb" ? I.badge : I.layers} className="h-5 w-5" />
+                </span>
+                <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
+              </span>
+              <span className="mt-3 block leading-snug font-semibold">{b.name}</span>
+              <span className="mt-0.5 hidden text-xs leading-relaxed text-muted sm:block">{b.description}</span>
+            </button>
+          );
+        })}
+        <div className="col-span-2 rounded-2xl border border-line bg-surface p-4 sm:p-5 lg:col-span-1">
+          <div className="flex items-baseline justify-between gap-4">
             <p className="text-xs font-semibold tracking-[0.08em] text-muted uppercase">{SECTIONS[filters.section].short} progress</p>
             <p className="text-xs text-muted">{sec.done ? `${pct(sec.correct, sec.done)}% correct` : "Not started"}</p>
           </div>
-          <p className="mt-1.5 text-2xl font-bold tracking-tight tabular-nums">
+          <p className="mt-2 text-2xl font-bold tracking-tight tabular-nums">
             {fmt(sec.done)}
             <span className="text-base font-medium text-muted"> / {fmt(sec.total)} done</span>
           </p>
-          <div className="mt-2.5 h-1.5 overflow-hidden rounded-full bg-surface-2">
+          <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-surface-2">
             <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${Math.max(sec.done ? 1.5 : 0, pct(sec.done, sec.total))}%` }} />
           </div>
+          <p className="mt-2 text-xs text-muted">{filters.bank === "cb" ? "In the College Board bank" : "Across all questions"}</p>
         </div>
       </div>
 
@@ -210,7 +241,7 @@ export function ListView({
               type="button"
               role="tab"
               aria-selected={on}
-              onClick={() => update({ ...emptyFilters(s), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
+              onClick={() => update({ ...emptyFilters(filters.bank, s), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
               className={`relative -mb-px flex items-center gap-2 border-b-2 pb-3 text-[15px] font-semibold transition-colors ${
                 on ? "border-primary text-ink" : "border-transparent text-muted hover:text-ink"
               }`}
@@ -377,8 +408,10 @@ export function ListView({
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none"
               >
                 <Icon d={I.play} className="h-4 w-4" filled />
-                Practice {setCount ? fmt(setCount) : ""}
-                <span className="hidden sm:inline">random</span>
+                <span>
+                  Practice {setCount ? fmt(setCount) : ""}
+                  <span className="hidden sm:inline"> random</span>
+                </span>
               </button>
             </div>
           </div>
@@ -412,6 +445,12 @@ export function ListView({
                           |
                         </span>
                         <span className="font-medium">{skillName(it)}</span>
+                        {filters.bank === "all" && it.source === "cb" && (
+                          <span className="inline-flex items-center gap-1 text-muted" title={`Source: ${SOURCES[it.source].name}`}>
+                            <Icon d={I.badge} className="h-3.5 w-3.5" />
+                            CB
+                          </span>
+                        )}
                       </span>
                       <span className={`mt-1 line-clamp-2 text-[15px] leading-relaxed ${r !== undefined ? "text-ink/75" : ""}`}>
                         {it.preview ? (

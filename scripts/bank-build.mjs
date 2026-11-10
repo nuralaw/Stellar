@@ -131,7 +131,8 @@ for (const [id, raw] of source) {
     continue;
   }
   // Only public fields go to the site (confidence / reviewer notes stay in the answers files).
-  out.push({ ...q, answer: a.answer, explanation: a.explanation, domain: a.domain, skill: a.skill, difficulty: a.difficulty });
+  // source: who wrote the question ("cb" = College Board). The xlsx import is all College Board.
+  out.push({ ...q, source: q.source ?? "cb", answer: a.answer, explanation: a.explanation, domain: a.domain, skill: a.skill, difficulty: a.difficulty });
   // counts[section][domain][skill][difficulty]
   const dom = (counts[q.section][a.domain] ??= {});
   const sk = (dom[a.skill] ??= { easy: 0, medium: 0, hard: 0 });
@@ -139,7 +140,7 @@ for (const [id, raw] of source) {
   counts.total++;
 }
 
-// Compact index for the question-bank list: [id, domain, skill, difficulty (e|m|h), preview].
+// Compact index for the question-bank list: [id, domain, skill, difficulty (e|m|h), preview, source].
 const PREVIEW_LEN = 170;
 const preview = (q) => {
   const text = (q.section === "rw" ? q.passage || q.prompt : q.prompt).replace(/<\/?u>/g, "").replace(/\s+/g, " ").trim();
@@ -149,7 +150,7 @@ const preview = (q) => {
   const head = cut.slice(0, Math.max(cut.lastIndexOf(" "), PREVIEW_LEN * 0.6));
   return `${head.replace(/[\s,;:.\-–—(]+$/, "")}…`;
 };
-const index = out.map((q) => [q.id, q.domain, q.skill, q.difficulty[0], preview(q)]);
+const index = out.map((q) => [q.id, q.domain, q.skill, q.difficulty[0], preview(q), q.source]);
 
 fs.mkdirSync(path.join(BANK, "dist"), { recursive: true });
 fs.writeFileSync(path.join(BANK, "dist", "questions.json"), JSON.stringify(out));

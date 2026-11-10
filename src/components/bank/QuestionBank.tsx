@@ -27,11 +27,12 @@ export function QuestionBank() {
   const byId = useMemo(() => new Map((items ?? []).map((it) => [it.id, it])), [items]);
 
   const describe = (f: Filters) => {
+    const prefix = f.bank === "cb" ? "College Board · " : "";
     if (f.skills.length === 1) {
       const it = items?.find((x) => x.skill === f.skills[0]);
-      if (it) return skillName(it);
+      if (it) return prefix + skillName(it);
     }
-    return SECTIONS[f.section].name;
+    return prefix + SECTIONS[f.section].name;
   };
 
   const start = (r: Run) => {

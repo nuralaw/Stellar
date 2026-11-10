@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { DOMAINS, getDomain, type SectionId } from "@/lib/taxonomy";
 import type { Attempt } from "@/lib/store";
+import { BANKS, inBank, type BankId, type SourceId } from "@/lib/sources";
 import type { BankIndexRow, Difficulty, Question } from "@/lib/types";
 
 export interface BankItem {
@@ -10,6 +11,7 @@ export interface BankItem {
   /** Number shown to students, e.g. 41 for "m-0041". */
   n: number;
   section: SectionId;
+  source: SourceId;
   domain: string;
   skill: string;
   difficulty: Difficulty;
@@ -38,6 +40,7 @@ export function skillName(it: { domain: string; skill: string }) {
 }
 
 export interface Filters {
+  bank: BankId;
   section: SectionId;
   /** Selected skill ids; empty = all skills in the section. */
   skills: string[];
@@ -48,8 +51,8 @@ export interface Filters {
   sort: Sort;
 }
 
-export function emptyFilters(section: SectionId): Filters {
-  return { section, skills: [], difficulties: [], status: "all", search: "", sort: "number" };
+export function emptyFilters(bank: BankId, section: SectionId): Filters {
+  return { bank, section, skills: [], difficulties: [], status: "all", search: "", sort: "number" };
 }
 
 const DIFF_CODE = { e: "easy", m: "medium", h: "hard" } as const;
@@ -65,10 +68,11 @@ function loadIndex(): Promise<BankItem[]> {
     })
     .then((rows) =>
       rows.map(
-        ([id, domain, skill, d, preview]): BankItem => ({
+        ([id, domain, skill, d, preview, source]): BankItem => ({
           id,
           n: Number(id.split("-")[1]),
           section: id.startsWith("rw-") ? "rw" : "math",
+          source: source ?? "cb",
           domain,
           skill,
           difficulty: DIFF_CODE[d],
@@ -155,6 +159,7 @@ export function applyFilters(items: BankItem[], f: Filters, ctx: FilterContext, 
   return items.filter(
     (it) =>
       it.section === f.section &&
+      inBank(f.bank, it.source) &&
       (skip === "skills" || !f.skills.length || f.skills.includes(it.skill)) &&
       (skip === "difficulties" || !f.difficulties.length || f.difficulties.includes(it.difficulty)) &&
       (skip === "status" || statusOf(it.id, ctx.results, ctx.bookmarks, f.status)) &&
@@ -181,7 +186,9 @@ export function filtersFromParams(p: URLSearchParams): Filters {
   if (!skills.length && dom) skills = p.get("skill") && dom.skills.some((s) => s.id === p.get("skill")) ? [p.get("skill")!] : dom.skills.map((s) => s.id);
   const difficulties = (p.get("diff") ?? p.get("difficulty") ?? "").split(",").filter((d): d is Difficulty => (DIFFS as string[]).includes(d));
   const st = p.get("status") as Status | null;
+  const bank = BANKS.find((b) => b.id === p.get("bank"))?.id ?? "all";
   return {
+    bank,
     section,
     skills,
     difficulties,
@@ -193,6 +200,7 @@ export function filtersFromParams(p: URLSearchParams): Filters {
 
 export function filtersToQuery(f: Filters): string {
   const p = new URLSearchParams({ section: f.section });
+  if (f.bank !== "all") p.set("bank", f.bank);
   if (f.skills.length) p.set("skills", f.skills.join(","));
   if (f.difficulties.length) p.set("diff", f.difficulties.join(","));
   if (f.status !== "all") p.set("status", f.status);

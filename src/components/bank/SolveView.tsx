@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { addAttempt, toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain } from "@/lib/taxonomy";
+import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { cachedQuestion, fetchQuestions, skillName, type BankItem } from "./data";
@@ -405,6 +406,7 @@ export function SolveView({
       {meta && (
         <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
           <span className="rounded-md bg-surface-2 px-2 py-0.5 font-semibold text-ink">{SECTIONS[meta.section].short}</span>
+          <span className="rounded-md border border-line px-2 py-0.5 font-medium">{SOURCES[meta.source].name}</span>
           <span>{getDomain(meta.domain)?.name}</span>
           <Icon d={I.chevronR} className="h-3 w-3" />
           <span className="font-medium text-ink">{skillName(meta)}</span>
