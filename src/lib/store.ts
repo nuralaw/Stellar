@@ -30,11 +30,22 @@ export interface Attempt {
   at: number;
 }
 
+/** A finished practice (mock) test. Scores: sections 200–800, total 400–1600. */
+export interface TestResult {
+  id: string;
+  /** Unix ms when the test was finished. */
+  at: number;
+  total: number;
+  rw: number;
+  math: number;
+}
+
 export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null, testTimeZone: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
-const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks" } as const;
+const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks", tests: "stellar:tests" } as const;
 const NO_BOOKMARKS: string[] = [];
+const NO_TESTS: TestResult[] = [];
 
 // ---- low-level read/write with a parse cache (useSyncExternalStore needs stable snapshots) ----
 const cache = new Map<string, { raw: string | null; value: unknown }>();
@@ -114,6 +125,19 @@ export function useBookmarks(): string[] {
   return useSyncExternalStore(subscribe, getBookmarks, () => NO_BOOKMARKS);
 }
 
+// ---- practice test results (written by the practice test when it lands) ----
+export function getTestResults(): TestResult[] {
+  return read(KEYS.tests, (raw) => (Array.isArray(JSON.parse(raw)) ? JSON.parse(raw) : NO_TESTS), NO_TESTS);
+}
+
+export function addTestResult(r: TestResult) {
+  write(KEYS.tests, [...getTestResults(), r]);
+}
+
+export function useTestResults(): TestResult[] {
+  return useSyncExternalStore(subscribe, getTestResults, () => NO_TESTS);
+}
+
 // ---- clock ----
 // Current time as an external store: 0 on the server, refreshed every minute in the browser.
 let clockNow = 0;
@@ -159,6 +183,7 @@ export function resetAllData() {
     localStorage.removeItem(KEYS.profile);
     localStorage.removeItem(KEYS.attempts);
     localStorage.removeItem(KEYS.bookmarks);
+    localStorage.removeItem(KEYS.tests);
   } catch {}
   listeners.forEach((l) => l());
 }

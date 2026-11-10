@@ -121,3 +121,33 @@ body {
   animation: none;
   mix-blend-mode: normal;
 }
+
+/* Custom cursor: orange-gradient arrow, and a hand on anything clickable (public/cursors).
+   Unlayered on purpose so it beats Tailwind's cursor-* utilities and preflight. */
+html {
+  cursor: url("/cursors/arrow.svg") 4 3, auto;
+}
+a[href],
+button:not(:disabled),
+summary,
+label[for],
+select:not(:disabled),
+[role="button"],
+[role="tab"],
+[role="radio"],
+[role="checkbox"],
+input[type="checkbox"]:not(:disabled),
+input[type="radio"]:not(:disabled),
+input[type="range"],
+.cursor-pointer {
+  cursor: url("/cursors/pointer.svg") 13 3, pointer;
+}
+input:not([type="checkbox"], [type="radio"], [type="range"], [type="button"], [type="submit"]),
+textarea,
+[contenteditable="true"] {
+  cursor: text;
+}
+:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}

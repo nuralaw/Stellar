@@ -1,17 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { ScorePoint } from "@/lib/score";
+import type { TestResult } from "@/lib/store";
 
 const H = 240;
 const M = { top: 16, right: 84, bottom: 28, left: 44 };
 
-const dayMs = (iso: string) => {
-  const [y, m, d] = iso.split("-").map(Number);
-  return Date.UTC(y, m - 1, d);
-};
-const fmtDay = (iso: string, long = false) =>
-  new Date(dayMs(iso)).toLocaleDateString("en-US", { timeZone: "UTC", month: "short", day: "numeric", ...(long ? { weekday: "short" } : {}) });
+const fmtDay = (at: number, long = false) => new Date(at).toLocaleDateString("en-US", { month: "short", day: "numeric", ...(long ? { weekday: "short" } : {}) });
 
 function useWidth<T extends HTMLElement>() {
   const ref = useRef<T>(null);
@@ -26,8 +21,8 @@ function useWidth<T extends HTMLElement>() {
   return [ref, w] as const;
 }
 
-/** Estimated total score per study day: one series (line + area), target as a reference line, crosshair tooltip. */
-export function ScoreChart({ points, target }: { points: ScorePoint[]; target: number | null }) {
+/** Total score of each practice test: one series (line + area), target as a reference line, crosshair tooltip. */
+export function ScoreChart({ points, target }: { points: TestResult[]; target: number | null }) {
   const [ref, width] = useWidth<HTMLDivElement>();
   const [active, setActive] = useState<number | null>(null);
 
@@ -44,13 +39,13 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
 
   const iw = Math.max(0, width - M.left - M.right);
   const ih = H - M.top - M.bottom;
-  const t0 = dayMs(points[0].day);
-  const t1 = dayMs(points[points.length - 1].day);
-  const x = (iso: string) => M.left + (t1 === t0 ? iw / 2 : ((dayMs(iso) - t0) / (t1 - t0)) * iw);
+  // Tests are separate events: space them evenly, in order.
+  const order = new Map(points.map((p, i) => [p.at, i]));
+  const x = (at: number) => M.left + (points.length === 1 ? iw / 2 : ((order.get(at) ?? 0) / (points.length - 1)) * iw);
   const y = (v: number) => M.top + ((hi - v) / (hi - lo)) * ih;
 
-  const line = points.map((p, i) => `${i ? "L" : "M"}${x(p.day).toFixed(1)},${y(p.total).toFixed(1)}`).join("");
-  const area = points.length > 1 ? `${line}L${x(points[points.length - 1].day).toFixed(1)},${M.top + ih}L${x(points[0].day).toFixed(1)},${M.top + ih}Z` : "";
+  const line = points.map((p, i) => `${i ? "L" : "M"}${x(p.at).toFixed(1)},${y(p.total).toFixed(1)}`).join("");
+  const area = points.length > 1 ? `${line}L${x(points[points.length - 1].at).toFixed(1)},${M.top + ih}L${x(points[0].at).toFixed(1)},${M.top + ih}Z` : "";
   const last = points[points.length - 1];
 
   // Up to 5 date labels, evenly picked from the study days.
@@ -62,7 +57,7 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
     const px = clientX - rect.left;
     let best = 0;
     points.forEach((p, i) => {
-      if (Math.abs(x(p.day) - px) < Math.abs(x(points[best].day) - px)) best = i;
+      if (Math.abs(x(p.at) - px) < Math.abs(x(points[best].at) - px)) best = i;
     });
     return best;
   };
@@ -74,7 +69,7 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
           width={width}
           height={H}
           role="img"
-          aria-label={`Estimated score over ${points.length} study ${points.length === 1 ? "day" : "days"}, latest ${last.total}`}
+          aria-label={`Score over ${points.length} practice ${points.length === 1 ? "test" : "tests"}, latest ${last.total}`}
           tabIndex={0}
           className="block touch-pan-y outline-none focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-primary/40"
           onPointerMove={(e) => setActive(nearest(e.clientX, e.currentTarget.getBoundingClientRect()))}
@@ -96,8 +91,8 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
           ))}
           {/* x axis labels */}
           {xLabels.map((i) => (
-            <text key={i} x={x(points[i].day)} y={H - 8} textAnchor={points.length === 1 ? "middle" : i === 0 ? "start" : i === points.length - 1 ? "end" : "middle"} className="fill-muted text-[11px]">
-              {fmtDay(points[i].day)}
+            <text key={i} x={x(points[i].at)} y={H - 8} textAnchor={points.length === 1 ? "middle" : i === 0 ? "start" : i === points.length - 1 ? "end" : "middle"} className="fill-muted text-[11px]">
+              {fmtDay(points[i].at)}
             </text>
           ))}
 
@@ -116,10 +111,10 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
           {points.length > 1 && <path d={line} fill="none" stroke="var(--primary)" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />}
 
           {/* crosshair */}
-          {active !== null && <line x1={x(a.day)} x2={x(a.day)} y1={M.top} y2={M.top + ih} stroke="var(--muted)" strokeWidth={1} opacity={0.6} />}
+          {active !== null && <line x1={x(a.at)} x2={x(a.at)} y1={M.top} y2={M.top + ih} stroke="var(--muted)" strokeWidth={1} opacity={0.6} />}
 
           {/* end / active dot with a surface ring */}
-          <circle cx={x(a.day)} cy={y(a.total)} r={5} fill="var(--primary)" stroke="var(--surface)" strokeWidth={2} />
+          <circle cx={x(a.at)} cy={y(a.total)} r={5} fill="var(--primary)" stroke="var(--surface)" strokeWidth={2} />
 
           {/* end label (latest value) */}
           {(!target || Math.abs(y(target) - y(last.total)) > 14) && (
@@ -134,10 +129,10 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
       {active !== null && width > 0 && (
         <div
           className="pointer-events-none absolute top-2 z-10 w-44 rounded-xl border border-line bg-surface px-3 py-2 text-xs shadow-lg"
-          style={{ left: Math.min(Math.max(0, x(a.day) - 88), width - 176) }}
+          style={{ left: Math.min(Math.max(0, x(a.at) - 88), width - 176) }}
         >
           <p className="text-lg leading-tight font-bold tabular-nums">{a.total}</p>
-          <p className="text-muted">{fmtDay(a.day, true)} · estimated</p>
+          <p className="text-muted">Practice test #{shown + 1} · {fmtDay(a.at, true)}</p>
           <div className="mt-1.5 space-y-0.5 border-t border-line pt-1.5 tabular-nums">
             <p className="flex justify-between">
               <span className="text-muted">Reading and Writing</span> {a.rw}
@@ -145,33 +140,30 @@ export function ScoreChart({ points, target }: { points: ScorePoint[]; target: n
             <p className="flex justify-between">
               <span className="text-muted">Math</span> {a.math}
             </p>
-            <p className="flex justify-between">
-              <span className="text-muted">Answered that day</span> {a.answered}
-            </p>
           </div>
         </div>
       )}
 
       {/* table view for screen readers */}
       <table className="sr-only">
-        <caption>Estimated score by study day</caption>
+        <caption>Practice test scores</caption>
         <thead>
           <tr>
-            <th>Day</th>
+            <th>Test</th>
+            <th>Date</th>
             <th>Total</th>
             <th>Reading and Writing</th>
             <th>Math</th>
-            <th>Answered</th>
           </tr>
         </thead>
         <tbody>
-          {points.map((p) => (
-            <tr key={p.day}>
-              <td>{fmtDay(p.day, true)}</td>
+          {points.map((p, i) => (
+            <tr key={p.id}>
+              <td>#{i + 1}</td>
+              <td>{fmtDay(p.at, true)}</td>
               <td>{p.total}</td>
               <td>{p.rw}</td>
               <td>{p.math}</td>
-              <td>{p.answered}</td>
             </tr>
           ))}
         </tbody>

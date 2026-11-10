@@ -5,12 +5,11 @@ import { useMemo, useState } from "react";
 import { computeStats, type Tally } from "@/lib/stats";
 import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
-import { scoreHistory } from "@/lib/score";
 import { AccuracyDonut } from "./AccuracyDonut";
 import { Countdown } from "./Countdown";
 import { ScoreChart } from "./ScoreChart";
 import { SatDatePicker } from "./SatDatePicker";
-import { updateProfile, useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
+import { updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
@@ -36,12 +35,12 @@ function Bar({ value }: { value: number | null }) {
   );
 }
 
-function EmptyChart({ text }: { text: string }) {
+function EmptyChart({ text, href = "/practice", link = "Start practicing" }: { text: string; href?: string; link?: string }) {
   return (
     <div className="grid h-44 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
       <p className="text-sm text-muted">{text}</p>
-      <Link href="/practice" className="mt-2 text-sm font-semibold text-primary hover:underline">
-        Start practicing →
+      <Link href={href} className="mt-2 text-sm font-semibold text-primary hover:underline">
+        {link} →
       </Link>
     </div>
   );
@@ -133,7 +132,8 @@ export function Dashboard() {
   const now = useNow(); // 0 during server prerender
   const stats = computeStats(attempts, now);
   const hasGoal = profile.targetScore !== null || profile.testDate !== null;
-  const history = useMemo(() => scoreHistory(attempts), [attempts]);
+  const tests = useTestResults();
+  const history = useMemo(() => [...tests].sort((a, b) => a.at - b.at), [tests]);
   const latest = history[history.length - 1];
   const change = history.length > 1 ? latest.total - history[0].total : null;
 
@@ -179,20 +179,22 @@ export function Dashboard() {
       {/* Headline numbers */}
       <div className="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
         <Card>
-          <p className="text-sm font-medium text-muted">Estimated score</p>
+          <p className="text-sm font-medium text-muted">Latest test score</p>
           {!hydrated ? (
             <Skeleton className="mt-3 h-10 w-24" />
           ) : latest ? (
             <>
               <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{latest.total}</p>
               <p className="mt-1 text-xs text-muted">
-                {change === null || change === 0 ? "from your practice" : `${change > 0 ? "+" : "−"}${Math.abs(change)} since your first day`}
+                {change === null || change === 0 ? `practice test #${history.length}` : `${change > 0 ? "+" : "−"}${Math.abs(change)} since your first test`}
               </p>
             </>
           ) : (
             <>
               <p className="mt-2 text-4xl font-bold tracking-tight text-muted">—</p>
-              <p className="mt-1 text-xs text-muted">answer a few questions</p>
+              <Link href="/test" className="mt-1 block text-xs font-medium text-primary hover:underline">
+                take a practice test →
+              </Link>
             </>
           )}
         </Card>
@@ -261,15 +263,15 @@ export function Dashboard() {
       {/* Charts */}
       <div className="mt-6 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
         <Card>
-          <h2 className="font-semibold">Estimated score</h2>
-          <p className="mt-0.5 text-xs text-muted">By study day, from your answers; harder questions count more. The practice test will give a real score.</p>
+          <h2 className="font-semibold">Score trend</h2>
+          <p className="mt-0.5 text-xs text-muted">Your total score on each practice test (400–1600)</p>
           <div className="mt-4">
             {!hydrated ? (
               <Skeleton className="h-60 rounded-xl" />
             ) : history.length ? (
               <ScoreChart points={history} target={profile.targetScore} />
             ) : (
-              <EmptyChart text="Your score trend appears after your first answers." />
+              <EmptyChart text="Your score trend appears after your first practice test." href="/test" link="Take a practice test" />
             )}
           </div>
         </Card>
