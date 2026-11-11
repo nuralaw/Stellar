@@ -18,7 +18,7 @@ function matchParen(s: string, open: number) {
   return -1;
 }
 
-function formatMath(s: string): ReactNode[] {
+export function formatMath(s: string): ReactNode[] {
   const out: ReactNode[] = [];
   let buf = "";
   let key = 0;
