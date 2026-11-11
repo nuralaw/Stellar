@@ -4,56 +4,65 @@ skill: nonlinear-equations
 domain: advanced-math
 section: math
 summary: Solve quadratic, radical, rational and absolute value equations, count solutions with the discriminant, and find where a line meets a parabola.
-minutes: 13
+minutes: 15
 ---
+
+> **Key idea:** Move everything to one side (= 0) before you read a, b and c, use the discriminant b² − 4ac to count solutions or find k, and check every answer in the original equation after squaring or clearing a fraction.
 
 ## What this question looks like
 
-These questions give you an equation that is *not* a straight line (something with x², a square root, x in a denominator, or absolute value bars) and ask you to solve it. Some give a *system*, meaning two equations that must both be true at once, where at least one is curved. You'll usually spot one of these:
+You get an equation that isn't a straight line (with x², a square root, x in a denominator, or an absolute value) and must solve it. Some questions give a **system**: two equations that must both be true at once, with at least one of them curved.
 
-- A quadratic set equal to something: `3x² − 7x − 6 = 0` or `(x − 4)² = 25`. "What is a solution?" or "What is the positive solution?"
-- "How many real solutions does the equation have?" Or the harder version: "For what value of k does the equation have **exactly one** real solution?" (or **no** real solutions).
-- A square root or a fraction with x on the bottom: `√(x + 3) = x − 3` or `5/(x − 1) = …`. The question often hides a fake answer that doesn't actually work.
-- Absolute value: `|2x − 1| = 9`.
-- A system like `y = x² − 4x + 1` and `y = 2x − 8`. "If (a, b) is a solution, what is a + b?" or "How many solutions does the system have?"
-- A graph of a line and a parabola, asking for an intersection point.
+Common versions:
 
-Easy versions just want you to solve. Hard versions (often in the second module) hide an unknown constant such as k, c or p and ask what it must be for a certain number of solutions. That's where most points are won or lost.
+- A quadratic set equal to something, like `3x² − 7x − 6 = 0` or `(x − 4)² = 25`: "What is the positive solution?"
+- "How many real solutions does the equation have?"
+- "For what value of k does the equation have exactly one real solution?" (or no real solutions)
+- A square root or x in a denominator, like `√(x + 3) = x − 3` or `5/(x − 1) = …`, often with a fake answer among the choices
+- An absolute value equation, like `abs(2x − 1) = 9`
+- A system like `y = x² − 4x + 1` and `y = 2x − 8`: "If (a, b) is a solution, what is a + b?" or "How many solutions?"
+- A graph of a line and a parabola, asking for a crossing point
+
+Easy versions just want a solution. Hard versions (often in the second module) hide a constant such as k, c or p and ask what it must be for a certain number of solutions. That's where most points are won or lost.
 
 ## The method
 
-1. **Read what's being asked.** One solution? All of them? Their sum? How many there are? The value of k? Underline the target. Many wrong answers are correct numbers for the wrong question.
-2. **Pick a tool.** If it looks quick, do algebra. If it's messy, or there are answer choices to compare, graph it in Desmos (see the Desmos section). Strong scorers do both: one to solve, one to check.
-3. **For a system, turn two equations into one.** Solve one equation for y (or use the one already written as `y = …`), then substitute it into the other. Now you have one equation in x.
-4. **Get everything on one side, = 0.** Expand, collect like terms, and write it as `ax² + bx + c = 0`. Only now are a, b and c reliable.
-5. **Solve or count.** To *solve*, factor, take square roots, complete the square, or use the quadratic formula. To *count* solutions or find k, skip solving and use the discriminant, `b² − 4ac`. To find a *sum* or *product* of solutions, use −b/a or c/a.
-6. **Check for fake (extraneous) answers.** If you squared both sides, or multiplied by something with x in it, plug each answer into the *original* equation. Throw out any that fail.
-7. **Finish the job.** For a system, find y by plugging x into the simpler equation (usually the line). Then answer the exact question you underlined in step 1.
+1. **Pin down the target.** One solution, all of them, their sum, how many, or the value of k? Many wrong answers are right numbers for the wrong question.
+2. **Pick a tool.** Use algebra if it looks quick and Desmos if it's messy or you need to compare choices. Strong scorers solve with one and check with the other.
+3. **For a system, make one equation.** Solve one equation for y (or use the one already written as `y = …`) and substitute it into the other.
+4. **Set it equal to 0.** Expand, collect like terms, and write `ax² + bx + c = 0`. Only now are a, b and c reliable.
+5. **Solve or count.** To solve, factor, take square roots, complete the square, or use the quadratic formula. To count solutions or find k, skip solving and use the discriminant.
+6. **Check for fake answers.** If you squared both sides or multiplied by something with x in it, plug each answer into the original equation. Throw out any that fail.
+7. **Finish the job.** For a system, find y from the simpler equation (usually the line). Then answer exactly what step 1 asked.
 
 ## Rules and formulas you need
 
-**Four ways to solve a quadratic**
+### Four ways to solve a quadratic
 
 | Method | Use it when | Quick example |
 |---|---|---|
-| Factoring | Small whole numbers that multiply and add nicely | `x² − x − 12 = 0` → `(x − 4)(x + 3) = 0` → x = 4 or x = −3 |
-| Square roots | No plain x term, or already in `(x − h)² = k` form | `(x − 2)² = 9` → x − 2 = ±3 → x = 5 or x = −1 |
+| Factoring | Small numbers that multiply and add nicely | `x² − x − 12 = 0` → `(x − 4)(x + 3) = 0` → x = 4 or x = −3 |
+| Square roots | No plain x term, or already `(x − h)² = k` | `(x − 2)² = 9` → x − 2 = ±3 → x = 5 or x = −1 |
 | Completing the square | a = 1 and b is even | `x² + 6x = 4` → add 9 to both sides → `(x + 3)² = 13` → x = −3 ± √13 |
 | Quadratic formula | Anything, especially when choices contain √ | `x = (−b ± √(b² − 4ac)) / (2a)` |
 
-**The zero product rule:** if A × B = 0, then A = 0 or B = 0. It only works when one side is **zero**. `(x − 1)(x + 2) = 4` does *not* mean x − 1 = 4.
+The **zero product rule** says that if A × B = 0, then A = 0 or B = 0. It only works when one side is zero: `(x − 1)(x + 2) = 4` does *not* mean x − 1 = 4.
 
-**The discriminant counts real solutions.** The discriminant is the part under the square root in the quadratic formula: `b² − 4ac`.
+### The discriminant counts real solutions
+
+The **discriminant** is `b² − 4ac`, the part under the square root in the quadratic formula.
 
 | Discriminant | Real solutions | What the graph does |
 |---|---|---|
-| Positive (> 0) | 2 | Parabola crosses the x-axis twice |
-| Zero (= 0) | Exactly 1 (a "double root") | Parabola just touches the x-axis at its vertex |
-| Negative (< 0) | 0 | Parabola never reaches the x-axis |
+| Positive (> 0) | 2 | Crosses the x-axis twice |
+| Zero (= 0) | Exactly 1 (a "double root") | Touches the x-axis at its vertex |
+| Negative (< 0) | 0 | Never reaches the x-axis |
 
-For a line and a parabola, substitute first, then use the same table: 2 means the line cuts through the parabola, 1 means the line just touches it (it's *tangent*), and 0 means they miss each other.
+For a line and a parabola, substitute first, then use the same table. Two means the line cuts through the parabola, 1 means it just touches it (it's *tangent*), and 0 means they miss each other.
 
-**Sum and product of the solutions** of `ax² + bx + c = 0`:
+### Sum and product of the solutions
+
+For `ax² + bx + c = 0`, you can get these without solving:
 
 | You want | Formula | Example: `2x² − 10x + 3 = 0` |
 |---|---|---|
@@ -62,21 +71,23 @@ For a line and a parabola, substitute first, then use the same table: 2 means th
 
 Watch the sign: the sum has a minus sign, the product doesn't.
 
-**Equations that can create fake solutions**
+### Equations that can create fake solutions
+
+A fake (or **extraneous**) solution comes out of the algebra but fails the original equation.
 
 | Type | How to solve | What to check |
 |---|---|---|
-| Radical, like `√(x + 1) = x − 5` | Get the root alone on one side, then square both sides | Plug back in. A square root can never equal a negative number. |
-| Rational (x in a denominator) | Write down which x-values make a denominator 0. Multiply every term by the common denominator. | Reject any answer that makes a denominator 0 |
-| Absolute value | Get the absolute value alone. Split into two cases: inside = +right side, and inside = −right side. | Plug both back in. If the right side would be negative, that case fails. |
+| Radical, like `√(x + 1) = x − 5` | Get the root alone, then square both sides | Plug back in. A square root is never negative. |
+| Rational (x in a denominator) | Note which x-values make a denominator 0, then multiply every term by the common denominator | Reject any answer that makes a denominator 0 |
+| Absolute value | Get the absolute value alone, then split: inside = +right side, or inside = −right side | Plug both back in. If the right side comes out negative, that case fails. |
 
-**Other facts to know cold**
+### Other facts to know cold
 
-- `x² = 25` has **two** solutions: 5 and −5. The ± is not optional.
+- `x² = 25` has two solutions, 5 and −5. The ± is not optional.
 - `√25 = 5` only. The square root symbol means the positive root.
-- `|stuff| = −3` has **no** solution. Absolute value is never negative.
-- Never divide both sides by x. In `x² = 7x`, dividing loses x = 0. Instead, move everything to one side: x² − 7x = 0, so x(x − 7) = 0, which gives x = 0 or x = 7.
-- If both sides simplify to the exact same expression (like `2(x² + 1) = 2x² + 2`), every x works: **infinitely many** solutions. If they simplify to something false (like 3 = 5), there are **no** solutions.
+- An absolute value is never negative, so `abs(x + 2) = −3` has no solution.
+- If both sides simplify to the same expression, like `2(x² + 1) = 2x² + 2`, every x works: infinitely many solutions.
+- If both sides simplify to something false, like 3 = 5, there are no solutions.
 
 ## Worked examples
 
@@ -190,59 +201,40 @@ Why the others are wrong: (C) skipped the check. (B) kept the fake answer and th
 
 ## Traps to avoid
 
-- **Keeping a fake root.** After squaring or clearing denominators, the SAT almost always offers the fake answer as a choice, often as "both" in multiple choice. Always plug back into the *original* equation.
+- **Keeping a fake root.** After squaring or clearing denominators, the fake answer is almost always a choice, often as "both." Plug back into the original equation.
 - **Reading a, b, c too early.** In `x² + 3x = 2x + 6`, b is not 3. Get everything on one side first: x² + x − 6 = 0, so b = 1.
-- **Sign mistakes in −4ac.** If c is negative, −4ac becomes positive. In `x² + 2x − 8`, the discriminant is 4 + 32 = 36, not 4 − 32.
-- **Forgetting to square the whole b.** If b = 2√5, then b² = 4 × 5 = 20, not 2 × 5. Hard questions love radicals and fractions as coefficients.
+- **Sign mistakes in −4ac.** If c is negative, −4ac is positive. For `x² + 2x − 8`, the discriminant is 4 + 32 = 36, not 4 − 32.
+- **Not squaring all of b.** If b = 2√5, then b² = 4 × 5 = 20, not 2 × 5. Hard questions love radicals and fractions as coefficients.
 - **Dropping the ±.** `(x + 1)² = 16` gives x = 3 *and* x = −5.
-- **Dividing by x.** You lose the solution x = 0.
-- **Answering the wrong thing.** The question asks for k, but you report x. It asks for a + b, but you give a. It asks for the positive solution, but you pick the negative one.
+- **Dividing both sides by x.** In `x² = 7x`, that loses x = 0. Instead write x² − 7x = 0, so x(x − 7) = 0, and x = 0 or x = 7.
+- **Answering the wrong thing.** They ask for k and you report x. They ask for a + b and you give a. They ask for the positive solution and you pick the negative one.
 - **Ignoring a condition on k.** If k² = 36 and the question says k > 0, the answer is 6, not −6.
 - **Pairing x and y from different solutions.** In a system, each x has its own y. Find each pair separately.
-- **Trusting a Desmos slider for an exact answer.** A slider gets you close (say, 2.48). Confirm the exact value with the discriminant, or test the answer choices.
-- **The absolute value case that "works" algebraically.** In `|x − 3| = 2x`, the case x − 3 = −2x gives x = 1, and it checks: |−2| = 2. But the other case, x − 3 = 2x, gives x = −3, and |−6| = 6 ≠ −6. Always check both cases.
+- **Trusting a Desmos slider for an exact answer.** A slider gets you close (say, 2.48). Confirm the exact value with the discriminant, or test the choices.
+- **Checking only one absolute value case.** In `abs(x − 3) = 2x`, the case x − 3 = −2x gives x = 1, which works (the absolute value of −2 is 2). The case x − 3 = 2x gives x = −3, which fails: the left side is 6, the right side is −6.
 
 ## Desmos shortcut
 
-The built-in Desmos calculator is allowed on every math question, and this skill is where it pays off most.
+Desmos is allowed on every Math question, and this skill is where it pays off most.
 
-- **Solve any one-variable equation by typing it in.** Enter `x^2-6x+5=0` and Desmos draws vertical lines at each solution. Click where they cross the x-axis to read the values. This works for radicals, absolute values and fractions too. Type `abs(2x-5)=x+1` for absolute value and `sqrt(x+7)+5=x` for a root.
-- **Fake roots disappear on their own.** If you graph the *original* equation, Desmos only shows the real solutions. For Example 3, graph `y=sqrt(x+7)+5` and `y=x`. They meet only at (9, 9), so x = 2 never shows up. This is the fastest way to catch extraneous answers.
-- **Systems: enter both equations and click the gray dots.** For Example 1, type `y=x^2-5x+2` and `y=x-3`. Clicking the intersection dots shows (1, −2) and (5, 2).
-- **"How many solutions?" Count the crossings.** Graph `y = (your quadratic)` and count where it meets the x-axis, or count the intersection dots in a system. Zoom out once to make sure nothing is off-screen.
-- **Unknown constant? Use a slider.** Type `y=-5x+k` alongside the parabola, and Desmos offers to "add slider" for k. Drag it until the line just touches the parabola. That's the tangent value. Then confirm it exactly, or plug each answer choice in as k and see which one gives exactly one touching point.
-- **Let Desmos solve the discriminant for you.** Write the discriminant with x standing in for the unknown, like `64-8(7-x)=0`. The vertical line lands at x = −1, which is k.
-- **Match decimals to radical choices.** If Desmos gives 0.382 and the choices look like `(3 − √5)/2`, type each choice into Desmos and compare the decimals.
-- **Typing tips.** Type `1/(x-2)`, not `1/x-2`, because parentheses matter. Use `sqrt(` for roots and `abs(` for absolute value. Check that the typed equation looks like the one on screen before you trust the graph.
+- **Type the equation itself.** Enter `x^2-6x+5=0` and Desmos draws a vertical line at each solution. Click where the lines meet the x-axis to read the values.
+- **It works for every type.** Use `sqrt(x+7)+5=x` for a root, `abs(2x-5)=x+1` for absolute value, and parentheses around any denominator.
+- **Fake roots never appear.** Desmos graphs the original equation, so it only shows real solutions. For Example 3, `y=sqrt(x+7)+5` and `y=x` meet only at (9, 9), so x = 2 never shows up.
+- **Systems: click the gray dots.** For Example 1, type `y=x^2-5x+2` and `y=x-3`. The crossing dots show (1, −2) and (5, 2).
+- **"How many solutions?" Count crossings.** Count where `y = (your quadratic)` meets the x-axis, or count a system's crossing dots. Zoom out once so nothing hides off-screen.
+- **Unknown constant? Use a slider.** Type `y=-5x+k` with the parabola and add the slider for k. Drag until the line just touches the parabola, then confirm exactly or try each choice as k.
+- **Solve the discriminant equation in Desmos.** Write it with x standing in for k, like `64-8(7-x)=0`. The vertical line lands at x = −1, so k = −1.
+- **Match decimals to radical choices.** If Desmos gives 0.382 and the choices look like `(3 − √5)/2`, type each choice and compare decimals.
+- **Type carefully.** Write `1/(x-2)`, not `1/x-2`. Use `sqrt(` for roots and `abs(` for absolute value. Check that the typed equation matches the one on screen.
 
-> **Tip:** Do the algebra when it's a two-line factor job. Reach for Desmos when the numbers are ugly, when a constant is unknown, or whenever you squared something and need to check for fake roots.
+> **Tip:** Do the algebra when it's a two-line factor job. Reach for Desmos when the numbers are ugly, a constant is unknown, or you squared something and need to check for fake roots.
 
 ## Quick checklist
 
-- Did I underline what's being asked (x, k, a sum, how many)?
+- Did I note what's being asked (x, k, a sum, how many)?
 - Is everything on one side, = 0, before reading a, b, c?
 - For "how many" or "what k," did I use `b² − 4ac` instead of solving?
 - Did I keep the ± when taking a square root?
 - If I squared or cleared a denominator, did I check every answer in the original equation?
 - For a system, did I find the matching y for each x?
 - Did a quick Desmos graph agree with my answer?
-
-## Sources
-
-- [College Board: Advanced Math on the Digital SAT](https://satsuite.collegeboard.org/digital/whats-on-the-test/math/types/advanced)
-- [Test Ninjas: SAT Nonlinear Equations (framework skill description and question types)](https://test-ninjas.com/sat-nonlinear-equations)
-- [Open Exam Prep: Systems of Linear and Nonlinear Equations](https://open-exam-prep.com/study-guides/sat-math/advanced-math-quadratics/nonlinear-systems)
-- [Open Exam Prep: Radical Equations and Extraneous Solutions](https://open-exam-prep.com/study-guides/sat-math/advanced-math-quadratics/radical-equations-extraneous)
-- [Open Exam Prep: Mastering the Built-In Desmos Calculator](https://open-exam-prep.com/study-guides/sat-math/introduction/desmos-calculator-mastery)
-- [Albert.io: Solving Nonlinear Systems of Equations for the SAT](https://www.albert.io/blog/mastering-systems-of-linear-and-nonlinear-equations-solve-nonlinear-system-of-equations-for-the-sat/)
-- [Albert.io: Digital SAT Math quadratics and the discriminant](https://www.albert.io/blog/?p=117721)
-- [The Test Advantage: The Discriminant Trick for Hard Module 2 Quadratics](https://thetestadvantage.com/blog/dsat-discriminant-trick-solve-hard-module-2-quadratics-sept-2025)
-- [The Test Advantage: Sum of Solutions on Desmos](https://thetestadvantage.com/blog/sat-sum-of-solutions-on-desmos-may-2026-10-second-method)
-- [1600.io: Using Regression to Find Both Solutions to a Quadratic](https://1600.io/courses/1698988/lectures/47466973)
-- [r/Sat: Official Desmos Thread](https://www.reddit.com/r/Sat/comments/1c8at7a/official_desmos_thread/)
-- [YouTube: The Only SAT Math Desmos Guide You'll Ever Need](https://www.youtube.com/watch?v=-pGNBb8M3LQ)
-- [PrepScholar: How (and When) to Complete the Square](https://blog.prepscholar.com/completing-the-square-formula)
-- [ProfCurious: Radical, Rational and Absolute Value Equations](https://www.profcurious.com/ap_digital-sat/resources/study-notes/3-9-radical-rational-and-absolute-value-equations)
-- [JustLockedIn: Nonlinear Equations and Systems question patterns](https://justlockedin-main.pages.dev/patterns/math/advanced-math/non-linear-equations-in-one-variable-and-system-of-equations-in-two-variables/)
-- [Axiom Academy: Discriminant and Number of Solutions](https://theaxiomacademy.org/learn/sat-style-discriminant-number-solutions)
-- [Schoolhouse.world: Hardest SAT Math Questions](https://schoolhouse.world/blog/hardest-sat-math-questions)

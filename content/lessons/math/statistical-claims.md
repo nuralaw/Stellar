@@ -3,13 +3,15 @@ title: Evaluating Statistical Claims
 skill: statistical-claims
 domain: problem-solving
 section: math
-summary: Read how a study was done and decide whether it can show cause and effect, and which group its results can be applied to.
-minutes: 9
+summary: Read how a study was done and decide whether it can show cause and effect, and which group its results apply to.
+minutes: 10
 ---
+
+> **Key idea:** Random sampling decides *who* the results apply to. Random assignment decides *whether* you can say "causes."
 
 ## What this question looks like
 
-These are reading questions in a math costume. A paragraph describes a study: who was in it, how they were picked, and what was compared. Then you choose the **most appropriate conclusion**, or the population the results apply to.
+These are reading questions in a math costume. A paragraph describes a study: who was in it, how they were picked, and what was compared. Then you choose the most appropriate conclusion, or the population the results apply to.
 
 Typical stems:
 
@@ -17,46 +19,49 @@ Typical stems:
 - "Based on the design of the study, to which population can the results be generalized?"
 - "Which of the following best explains why the results cannot be applied to all…?"
 
-The right choice says **no more than the study design allows**. Two yes/no questions decide that.
+The right choice says no more than the study design allows, and two yes/no questions decide that.
 
 ## The method
 
-1. **Was there random sampling?** Were the people (or items) chosen at random from a larger group? Look for "selected at random from…" or "a random sample of…". If yes, write down **which group** they were chosen from. That group is the population.
-2. **Was there random assignment?** Did the researchers use chance (like a coin flip or a random number) to put participants into treatment groups? If the participants chose their own group, or researchers only observed what people already do, the answer is no.
-3. **Use the table below** to see what can be concluded.
-4. **Check each choice against both parts:** Does it claim cause, and is that allowed? Does it apply to a group, and is that the right group?
-5. Pick the most careful choice that still says something true.
+Answer two yes/no questions about the design, then match the choices to what it allows.
 
-> **Key idea:** Random **sampling** decides **who** the results apply to. Random **assignment** decides **whether** you can say "causes".
+1. **Was there random sampling?** Look for "selected at random from…" or "a random sample of…". If yes, write down which group they were chosen from: that group is the population.
+2. **Was there random assignment?** Did the researchers use chance (a coin flip, a random number) to put participants into treatment groups? If people chose their own group, or researchers only watched what people already do, the answer is no.
+3. **Look up the result** in the table under Rules and formulas.
+4. **Check each choice on both parts.** Does it claim cause, and is that allowed? Does it name a group, and is it the right group?
+5. **Pick the most careful choice** that still says something true.
 
 ## Rules and formulas you need
 
-| | Random assignment: YES (experiment) | Random assignment: NO (observational study) |
+One table tells you what any study can conclude.
+
+| | Randomly assigned | Not randomly assigned |
 |---|---|---|
-| **Random sampling: YES** | Cause and effect, and it applies to the whole population sampled | Association only, but it applies to the whole population sampled |
-| **Random sampling: NO** | Cause and effect, but only for the participants (people like them) | Association only, and only for the participants |
+| **Randomly sampled** | Cause and effect, for the whole population | Association only, for the whole population |
+| **Not randomly sampled** | Cause and effect, only for people like the participants | Association only, only for people like the participants |
 
-Words to know:
+"Randomly assigned" means the study is an experiment; "not randomly assigned" means it's observational.
 
-- **Experiment**: the researchers *give* a treatment (a drug, a study app, a fertilizer) to some subjects and not others.
-- **Observational study**: the researchers only *watch or ask*. People are already in their groups by their own choice (coffee drinkers vs. non-coffee drinkers).
+### Words to know
+
+- **Experiment:** the researchers *give* a treatment (a drug, a study app, a fertilizer) to some subjects and not others.
+- **Observational study:** the researchers only *watch or ask*. People are already in their groups by their own choice (coffee drinkers vs. non-coffee drinkers).
 - **Association** (or correlation, relationship): two things tend to happen together. That's all.
-- **Causation**: one thing actually makes the other happen.
-- **Confounding variable**: a hidden third factor that could explain the link. People who exercise might also eat better. That's why observational studies can't prove cause.
-- **Population**: the group the random sample came from. Not bigger, not different.
+- **Causation:** one thing actually makes the other happen.
+- **Confounding variable:** a hidden third factor that could explain the link. People who exercise might also eat better, which is why observational studies can't prove cause.
+- **Population:** the group the random sample came from. Not bigger, not different.
 
-Why random assignment allows "cause": when chance decides who gets the treatment, the groups end up similar in everything else (age, habits, motivation). So if the results differ, the treatment is the best explanation.
+### Why randomness matters
 
-Why random sampling allows "generalize": when everyone in a group had a fair chance to be picked, the sample tends to look like the group.
+- **Random assignment allows "cause."** When chance decides who gets the treatment, the groups end up similar in everything else (age, habits, motivation). So if results differ, the treatment is the best explanation.
+- **Random sampling allows "generalize."** When everyone in a group had a fair chance to be picked, the sample tends to look like the group.
 
-Common sampling problems that block generalizing:
+### Sampling problems that block generalizing
 
-- **Volunteers or self-selection**: people chose to answer (online polls, call-in surveys). They often feel strongly.
-- **Convenience samples**: whoever was easy to reach (people at one gym, one class, one store).
-- **Wrong frame**: sampling one school, city or age group and then talking about everyone.
-- **Low response**: many people chosen never answered, and those who did may be different.
-
-> **Trap:** A large sample does not fix any of these. 10,000 volunteers are still volunteers.
+- **Volunteers or self-selection:** people chose to answer (online polls, call-in surveys), and they often feel strongly.
+- **Convenience samples:** whoever was easy to reach (people at one gym, one class, one store).
+- **Wrong frame:** sampling one school, city or age group and then talking about everyone.
+- **Low response:** many people chosen never answered, and those who did may be different.
 
 ## Worked examples
 
@@ -124,34 +129,24 @@ A music website posted a poll asking visitors whether they think streaming servi
 
 This is a **self-selected** (volunteer) sample from one website. People who visit a music site and bother to answer may care more about artists' pay than typical listeners do. That's a bias problem, not a size problem.
 
-Why the others are wrong: (A) blames size, but 5,000 is plenty; the issue is *how* people got into the sample. (C) random assignment is needed for cause-and-effect claims, not for estimating an opinion. (D) a lopsided result is not a problem by itself. A fair random sample could give 78% too; what makes this one untrustworthy is how people got into it.
+Why the others are wrong: (A) blames size, but 5,000 is plenty; the issue is *how* people got into the sample. (C) random assignment is needed for cause-and-effect claims, not for estimating an opinion. (D) a lopsided result is not a problem by itself; a fair random sample could give 78% too.
 
 **Answer:** (B)
 
 ## Traps to avoid
 
-- **"Causes" with no random assignment.** If people picked their own group (diet, sport, screen time), the answer can say "associated with", never "causes" or "leads to".
+- **"Causes" with no random assignment.** If people picked their own group (diet, sport, screen time), the answer can say "associated with," never "causes" or "leads to."
 - **Rejecting cause just because of volunteers.** Random assignment alone is enough for cause and effect *within* the study group. Volunteers only limit who it applies to.
 - **Stretching the population.** Results apply to the group the random sample was drawn from. One school, one city or one age group means just that.
 - **Shrinking the population.** With random sampling, you *can* go beyond the people actually surveyed, to the group they came from.
-- **"Every" or "all individuals".** Studies describe averages and tendencies. Choices claiming the result holds for each person are wrong.
-- **Trusting a big sample.** Size never fixes self-selection or a convenience sample.
+- **"Every" or "all individuals."** Studies describe averages and tendencies. Choices claiming the result holds for each person are wrong.
+- **Trusting a big sample.** Size never fixes self-selection or a convenience sample: 10,000 volunteers are still volunteers.
 
 ## Quick checklist
 
 - Random sampling? From which exact group?
-- Random assignment by the researchers? Or did people choose?
-- Cause allowed only with random assignment.
-- Generalizing allowed only to the group that was randomly sampled.
-- Cross out "every", "all", "proves" and any group that wasn't sampled.
+- Random assignment by the researchers, or did people choose?
+- Cause is allowed only with random assignment.
+- Generalizing is allowed only to the group that was randomly sampled.
+- Cross out "every," "all," "proves" and any group that wasn't sampled.
 - Pick the choice that claims exactly what the design supports.
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite (skill descriptions, Appendix B)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [Test Ninjas: SAT Evaluating Statistical Claims](https://www.test-ninjas.com/sat-evaluating-statistical-claims)
-- [Open Exam Prep: Study Design and Margin of Error](https://open-exam-prep.com/study-guides/sat-math/problem-solving-data-analysis/study-design-margin-error)
-- [Duke University: Observational Studies and Experiments (scope of inference)](https://people.duke.edu/~hammill/phs701/ims-01-data/ims-01-lesson-02)
-- [Varsity Tutors: SAT Inferences and Claims from Statistics](https://www.varsitytutors.com/practice/subjects/sat/lessons/inferences-and-claims-from-statistics)
-- [Achievable: SAT Problem-Solving and Data, Inferences](https://app.achievable.me/study/sat/learn/problem-solving-and-data-methods-inferences)
-- [Albert.io: Digital SAT Math, Inference and Sampling](https://www.albert.io/blog/?p=117755)

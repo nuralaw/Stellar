@@ -37,7 +37,6 @@ minutes: 8
 ## Traps to avoid
 ## Desmos shortcut          (math only, when Desmos genuinely helps; omit otherwise)
 ## Quick checklist
-## Sources
 ```
 
 - **What this question looks like** — how to recognize it in a few seconds (typical question stems, what's on screen).
@@ -48,7 +47,6 @@ minutes: 8
   **Solution** walking through the method, ending with `**Answer:** (B)`.
 - **Traps to avoid** — the wrong-answer patterns test makers use, each as a bullet with why it's wrong.
 - **Quick checklist** — 4–7 short bullets to run through before answering.
-- **Sources** — bullet list of `[Title](https://url)` links to the best resources consulted (videos, guides, threads).
 
 ## Markdown subset the site renders
 
@@ -58,8 +56,29 @@ minutes: 8
 - callouts as blockquotes that start with a bold label: `> **Tip:** …`, `> **Trap:** …`, `> **Key idea:** …`
 - No HTML, no images, no LaTeX. Write math in plain Unicode: x², x³, √x, ≤, ≥, ≠, π, θ, −, ×, ÷, ½, fractions as `a/b`, and use `code` for longer expressions, e.g. `y = 2x² − 3x + 1`.
 
+## Style: how a lesson should read (UI/UX rules)
+
+The lesson page is the product. A student skims first, then reads. Write for that.
+
+- **Lead with the payoff.** Right after the frontmatter, before the first `##`, put one callout:
+  `> **Key idea:** <the single most useful sentence of the lesson>`.
+- **Short blocks.** Paragraphs ≤ 3 sentences (~60 words). Sequences and lists of things → bullets or a numbered list.
+  One idea per bullet, ≤ ~25 words.
+- **Scannable.** Each `##` section opens with its point in the first sentence. Use `###` sub-headings when a section
+  covers several sub-types. Same section names and order in every lesson (see above).
+- **Bold sparingly.** Only key terms and the words a student must notice, at most about one per paragraph.
+  Never bold whole sentences. Italic only for words-as-words (*their*, *however*).
+- **Callouts are rare.** At most 4 per lesson, labels only `Key idea`, `Tip`, `Trap`, `Remember`. One paragraph each.
+- **Tables fit a phone.** At most 4 columns, short cells (a few words). Long explanations go below the table.
+- **No repetition.** Say each fact once, in the section where it belongs. Traps live in **Traps to avoid**,
+  not repeated in the method. Cut filler ("It's important to note that…", "Basically…") and hedging.
+- **Plain words.** Explain a term the first time it appears. Prefer "pick", "check", "cross out" over jargon.
+- **Honest numbers.** `minutes` = words ÷ 150, rounded. `summary` ≤ 160 characters, one sentence, no fluff.
+- **Nothing that breaks rendering.** No line may start with `|` unless it's a table row (write absolute value as
+  `abs(2x − 1)` in code or "the absolute value of 2x − 1"). No nested lists.
+
 ## Rules for authors
 
 - Plain, friendly language a 16-year-old understands on first read. Short sentences. Explain every term the first time.
-- Everything is written in our own words. Never copy text, explanations or questions from any source; never reproduce official College Board questions. Sources are for research and are credited in **Sources**.
+- Everything is written in our own words. Never copy text, explanations or questions from any source; never reproduce official College Board questions. No "Sources" section: research stays behind the scenes.
 - Check every worked example twice: the correct answer must be right and each wrong choice must be wrong for a reason you can state.

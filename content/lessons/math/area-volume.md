@@ -3,73 +3,85 @@ title: Area and Volume
 skill: area-volume
 domain: geometry-trig
 section: math
-summary: Pick the right formula fast, work forward or backward through it, and know exactly how area and volume change when a shape is scaled.
-minutes: 9
+summary: Pick the right area or volume formula, solve it forward or backward, and know how area and volume change when a shape is scaled.
+minutes: 10
 ---
+
+> **Key idea:** Name the shape, write its formula, then plug in. When every length is multiplied by k, area is multiplied by k² and volume by k³.
 
 ## What this question looks like
 
-These questions ask you to measure a shape: the area or perimeter of a flat figure, or the volume or surface area of a solid. You'll usually see one of four setups:
+These questions ask you to measure a shape: the area or perimeter of a flat figure, or the volume or surface area of a solid. Most come in one of four setups:
 
 - **Plug in:** "A cone has radius 4 and height 9. What is its volume?" Pick the formula and calculate.
 - **Work backward:** you're given the area or volume and asked for a missing length, like a radius, height or side.
-- **Composite shapes:** a rectangle with a semicircle on one end, a box with a hole drilled through it, a cylinder topped by a half-sphere. You split the shape into simple pieces.
-- **Scaling:** "Every edge of the cube is tripled" or "the radius increases by 20%." You're asked how the area or volume changes, often without any actual lengths.
+- **Composite shapes:** a rectangle with a semicircle on one end, a box with a hole drilled through it, a cylinder topped by a half-sphere.
+- **Scaling:** "Every edge of the cube is tripled" or "the radius increases by 20%." You find how the area or volume changes, often with no actual lengths.
 
-Real-world wording is common: tanks, pools, gardens, boxes, cans. Under the story, it's always one of the four setups above.
+Real-world stories about tanks, pools, gardens, boxes and cans are common. Under the story, it's always one of these four setups.
 
 ## The method
 
-1. **Name the shape and the quantity.** Write it down: "cylinder, volume" or "rectangle + semicircle, perimeter." Many wrong answers come from finding area when the question asked for perimeter.
-2. **Write the formula before plugging in.** Open the reference sheet if you need it (the icon is at the top of the screen in both Math modules).
-3. **Check radius vs. diameter.** If you're given a diameter, halve it before you touch any formula.
-4. **Substitute, then solve.** For backward problems, plug the numbers in first and then isolate the unknown. Keep π as a letter if the answer choices use it, and it will often cancel.
-5. **For composite shapes, add the pieces or subtract the cutouts.** Do one piece at a time and write each result down.
-6. **For scaling, find the length factor k first.** Then area changes by k² and volume by k³. You don't need the actual dimensions.
-7. **Reread the question.** Did it ask for the diameter, the total, the area of only the shaded part? Answer that exact thing.
+1. **Name the shape and the quantity.** Write it down: "cylinder, volume" or "rectangle + semicircle, perimeter."
+2. **Write the formula before plugging in.** Open the reference sheet if you need it (the formula icon at the top of the screen in both Math modules).
+3. **Use the radius.** If you're given a diameter, halve it before it goes into any formula.
+4. **Substitute, then solve.** For backward problems, plug in first, then isolate the unknown. Keep π as a letter if the choices use it, since it often cancels.
+5. **Composite shape?** Add the pieces or subtract the cutouts, one piece at a time. Write each result down.
+6. **Scaling?** Find the length factor k first. Area changes by k² and volume by k³, so you don't need the actual dimensions.
+7. **Reread the last line.** Diameter or radius? The total, or only the shaded part? Answer that exact thing.
 
-> **Tip:** The built-in Desmos calculator is great for the arithmetic. Type the whole expression, like `(1/3)π(4)²(9)`, in one go instead of doing it in pieces, so you make fewer slips.
+> **Tip:** Let the built-in Desmos calculator do the arithmetic. Type the whole expression at once, like `(1/3)π(4)^2(9)`, instead of in pieces, so you make fewer slips.
 
 ## Rules and formulas you need
 
-The reference sheet gives you the basic formulas, but not all of them. Know which ones are missing so you don't waste time looking.
+The reference sheet gives the basic formulas, but not all of them. Know which ones are missing so you don't waste time looking.
 
-| Shape | Formula | On the reference sheet? |
+### Formulas
+
+| Shape | Formula | On reference sheet? |
 |---|---|---|
-| Circle | area = πr², circumference = 2πr | Yes |
-| Rectangle | area = ℓw | Yes |
-| Triangle | area = ½bh (h is perpendicular to b) | Yes |
-| Rectangular box | volume = ℓwh | Yes |
-| Cylinder | volume = πr²h | Yes |
-| Sphere | volume = (4/3)πr³ | Yes |
-| Cone | volume = (1/3)πr²h | Yes |
-| Rectangular pyramid | volume = (1/3)ℓwh | Yes |
-| Any polygon | perimeter = add up all the sides | No |
-| Square / cube | area = s², volume = s³ | No |
-| Parallelogram | area = bh | No |
-| Trapezoid | area = ½(b₁ + b₂)h | No |
-| Rhombus or square from diagonals | area = (d₁ × d₂)/2 | No |
-| Any prism or cylinder | volume = (area of base) × height | No |
+| Circle | area πr², circumference 2πr | Yes |
+| Rectangle | area ℓw | Yes |
+| Triangle | area ½bh | Yes |
+| Rectangular box | volume ℓwh | Yes |
+| Cylinder | volume πr²h | Yes |
+| Sphere | volume (4/3)πr³ | Yes |
+| Cone | volume (1/3)πr²h | Yes |
+| Rectangular pyramid | volume (1/3)ℓwh | Yes |
+| Any polygon | perimeter = sum of sides | No |
+| Square / cube | area s², volume s³ | No |
+| Parallelogram | area bh | No |
+| Trapezoid | area ½(b₁ + b₂)h | No |
+| Rhombus or square | area (d₁ × d₂)/2 | No |
+| Any prism or cylinder | volume = base area × h | No |
 | Box surface area | `2(ℓw + ℓh + wh)` | No |
 | Cube surface area | 6s² | No |
-| Cylinder surface area | `2πr² + 2πrh` (two circles plus the wrapped side) | No |
-| Sphere surface area | 4πr² (usually given in the question when needed) | No |
+| Cylinder surface area | `2πr² + 2πrh` | No |
+| Sphere surface area | 4πr² | No |
 
-**Surface area** just means the total area of every outside face. If you forget a formula, list the faces and add their areas. Watch for an "open box" (no lid), which has one fewer face.
+A few notes on the table:
 
-**Scaling rules.** If every length of a shape is multiplied by k, the new shape is *similar* to the old one (same shape, different size):
+- In a triangle or parallelogram, the height h is measured perpendicular to the base b.
+- In the rhombus formula, d₁ and d₂ are the two diagonals.
+- A cylinder's surface is two circles (2πr²) plus the side, which unrolls into a rectangle (2πrh).
+- The sphere's surface area formula is usually given in the question when you need it.
 
-| Quantity | Multiplied by | Example with k = 3 |
+**Surface area** is the total area of every outside face. If you forget a formula, list the faces and add their areas. An "open box" (no lid) has one fewer face.
+
+### Scaling
+
+If every length of a shape is multiplied by k, the new shape is **similar** to the old one: same shape, different size.
+
+| Quantity | Multiplied by | When k = 3 |
 |---|---|---|
-| Any length (side, radius, perimeter, height) | k | 3 times as long |
-| Any area (including surface area) | k² | 9 times as much |
-| Volume | k³ | 27 times as much |
+| Length (side, radius, perimeter) | k | 3 times |
+| Area (including surface area) | k² | 9 times |
+| Volume | k³ | 27 times |
 
-Going backward: if the areas are in a ratio of 25 to 1, the lengths are in a ratio of √25 = 5 to 1, so the volumes are in a ratio of 5³ = 125 to 1.
+- **Going backward:** areas in a ratio of 25 to 1 mean lengths in a ratio of √25 = 5 to 1, so volumes are in a ratio of 5³ = 125 to 1.
+- **Percent changes:** "each length increases by 20%" means k = 1.2. Area is multiplied by 1.2² = 1.44 (44% more) and volume by 1.2³ = 1.728.
 
-Percent changes work the same way. "Each length increases by 20%" means k = 1.2, so the area is multiplied by 1.2² = 1.44 (44% more) and the volume by 1.2³ = 1.728.
-
-> **Key idea:** If only ONE dimension changes, use only that change. Doubling a cylinder's height doubles its volume. Doubling its radius multiplies the volume by 4, because r is squared in πr²h. Tripling the radius and halving the height gives 9 × ½ = 4.5 times the volume.
+> **Remember:** If only one dimension changes, apply only that change. Doubling a cylinder's height doubles its volume, but doubling its radius multiplies the volume by 4, because r is squared in πr²h. Tripling the radius and halving the height gives 9 × ½ = 4.5 times the volume.
 
 ## Worked examples
 
@@ -146,13 +158,13 @@ Check: a cone 12 cm tall with radius 3 has volume (1/3)π(9)(12) = 36π. It matc
 
 ## Traps to avoid
 
-- **Diameter for radius.** Plugging in the diameter makes an area 4 times too big and a sphere's volume 8 times too big. Halve the diameter first.
-- **Answering the radius when they asked for the diameter** (or the reverse). Circle the word the question ends with.
-- **Forgetting the 1/3** in cones and pyramids. A cone holds exactly one-third of the cylinder with the same base and height.
-- **Using k instead of k² or k³.** Doubling every edge of a cube does not double its volume; it multiplies it by 8.
-- **Cubing or squaring the wrong ratio.** If you're given an area ratio, take its square root to get k before you cube.
-- **Counting a shared edge in a perimeter.** Sides where two pieces touch are inside the shape, not on its boundary.
-- **Mixing units.** Convert before you square or cube. 1 foot = 12 inches, but 1 square foot = 144 square inches and 1 cubic foot = 1,728 cubic inches.
+- **Diameter for radius.** Plugging in the diameter makes a circle's area 4 times too big and a sphere's volume 8 times too big.
+- **Giving the radius when they asked for the diameter** (or the reverse). Circle the word the question ends with.
+- **Forgetting the 1/3** in cones and pyramids. A cone holds exactly one-third of a cylinder with the same base and height.
+- **Using k instead of k² or k³.** Doubling every edge of a cube multiplies its volume by 8, not 2.
+- **Cubing or squaring the wrong ratio.** Given an area ratio, take its square root to get k before you cube.
+- **Counting a shared edge in a perimeter.** Where two pieces touch, the edge is inside the shape, not on its boundary.
+- **Mixing units.** Convert before you square or cube: 1 foot = 12 inches, but 1 square foot = 144 square inches and 1 cubic foot = 1,728 cubic inches.
 - **Area vs. perimeter, volume vs. surface area.** The choices usually include the "other" quantity, so reread the last line.
 
 ## Quick checklist
@@ -160,20 +172,6 @@ Check: a cone 12 cm tall with radius 3 has volume (1/3)π(9)(12) = 36π. It matc
 - Did I name the shape and the exact quantity asked for?
 - Am I using the radius, not the diameter?
 - Did I include the 1/3 for a cone or pyramid?
-- For scaling: did I find the length factor k first, then use k² for area and k³ for volume?
-- For a composite shape: did I add the pieces, subtract the cutouts, and skip shared edges?
+- Scaling: did I find k first, then use k² for area and k³ for volume?
+- Composite shape: did I add the pieces, subtract the cutouts, and skip shared edges?
 - Are my units consistent, and does my answer match the form of the choices (with π or as a decimal)?
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite (skill descriptions and reference sheet)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [College Board: Geometry and Trigonometry on the SAT](https://satsuite.collegeboard.org/sat/whats-on-the-test/math/types/geometry-trigonometry)
-- [Magoosh: SAT Math Formula Sheet, Provided vs. Memorize](https://magoosh.com/sat/sat-math-formula-sheet/)
-- [PrepScholar: The Critical SAT Math Formulas You Must Know](https://blog.prepscholar.com/critical-sat-math-formulas-you-must-know)
-- [Test Ninjas: Mastering Area and Volume Problems on the SAT](https://test-ninjas.com/sat-area-and-volume)
-- [Just Locked In: Area and Volume, Inverse Calculation](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/area-and-volume/inverse-calculation.html)
-- [Just Locked In: Area and Volume, Scaling and Proportionality](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/area-and-volume/scaling-proportionality.html)
-- [The Test Advantage: SAT Geometry Questions](https://thetestadvantage.com/blog/sat-geometry-questions)
-- [UWorld: What Geometry Is on the SAT?](https://collegeprep.uworld.com/blog/what-geometry-do-i-need-to-know-for-the-sat/)
-- [PrepMaven: SAT Geometry Guide](https://prepmaven.com/blog/test-prep/sat-geometry/)
-- [Target Test Prep: SAT Geometry Topics, Formulas and Study Tips](https://sat.blog.targettestprep.com/sat-geometry/)

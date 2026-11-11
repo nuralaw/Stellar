@@ -3,29 +3,31 @@ title: Desmos on the Digital SAT
 skill: desmos
 domain: strategy
 section: strategy
-summary: Know when the built-in Desmos calculator beats algebra, and type exactly the right thing to solve equations, systems, constants, tables and statistics in seconds.
-minutes: 14
+summary: Know when the built-in Desmos calculator beats algebra, and exactly what to type for equations, systems, constants, tables and statistics.
+minutes: 18
 ---
+
+> **Key idea:** Open Desmos when a graph can do the hard work (curves, systems, unknown constants, tables, lists of data) and skip it when the algebra takes a step or two.
 
 ## When to reach for Desmos
 
 Bluebook has a Desmos graphing calculator built in, and you can open it (calculator icon, top of the screen) on all 44 Math questions. There's also a scientific mode, but graphing mode does almost everything you need.
 
-Desmos is fast on some jobs and slow on others. Strong scorers don't open it on every question. They spot the types where a graph does the hard work and skip it when algebra is quicker.
+Strong scorers don't open it on every question. They spot the types where a graph does the work and skip it when algebra is quicker.
 
-**Reach for Desmos when you see:**
+### Reach for it when you see
 
-- An equation that's messy to solve by hand: square roots, x², x³, absolute value, x in a fraction. Graph it instead of solving it.
-- A **system** of two equations (two lines, or a line and a parabola). The answer is where the graphs cross.
-- "How many solutions…?" Count the crossings.
-- The vertex, maximum, minimum, x-intercepts or y-intercept of a function.
-- An unknown constant like k, c or a: "For what value of k does the system have no solution?" Use a slider.
-- "Which expression is equivalent to…?" Graph them and see which one sits exactly on top.
-- A table of x and y values and "which equation fits?" Use a regression.
-- A list of numbers and a question about mean, median or range.
-- A shaded inequality question: "Which point is a solution to the system?"
+- A messy equation: square roots, x², x³, absolute value, x in a fraction
+- A **system** of two equations: the answer is where the graphs cross
+- "How many solutions…?": count the crossings
+- The vertex, maximum, minimum or intercepts of a function
+- An unknown constant like k, c or a ("For what value of k…?"): use a slider
+- "Which expression is equivalent to…?": see which graph sits exactly on top
+- A table of x and y values and "which equation fits?": use regression
+- A list of numbers and a question about mean, median or range
+- A system of inequalities: "Which point is a solution?"
 
-**Skip Desmos when:**
+### Skip it when
 
 - The algebra is one or two steps, like `3x + 5 = 20`. You'll be done before you finish typing.
 - It's a word problem about percents, ratios or units. The hard part is the setup, and Desmos can't read English.
@@ -33,114 +35,139 @@ Desmos is fast on some jobs and slow on others. Strong scorers don't open it on 
 - It's a geometry question built around a figure. A reference-sheet formula is usually faster.
 - You've spent 30 seconds zooming and clicking with no luck. Switch to algebra.
 
-Rule of thumb: if you can solve it by hand in about 20 seconds, do that. You get about 95 seconds per question (22 questions in 35 minutes), so spend Desmos time where it pays.
+> **Tip:** If you can solve it by hand in about 20 seconds, do that. You get about 95 seconds per question (22 questions in 35 minutes), so spend Desmos time where it pays.
 
-## The method
+## The routine
 
-Use this routine on every Desmos question:
+Run these steps every time you open Desmos.
 
-1. **Decide what you're looking for before you type.** An intersection? An x-intercept? A slider value? A number from a regression? Say it to yourself in a word or two.
-2. **Rename the variable to x.** Desmos graphs x and y. If the question uses t, p or n, type x instead. Any other letter makes Desmos offer a slider instead of a graph.
-3. **Type the expression carefully.** Watch exponents and fractions (more on this below), and use parentheses generously.
+1. **Decide what you're looking for before you type.** An intersection, an x-intercept, a slider value, a regression number?
+2. **Rename the variable to x.** Desmos graphs in x and y, so type x even when the question uses t, p or n.
+3. **Type carefully.** Use parentheses generously and watch exponents and fractions (see Traps to avoid).
 4. **Zoom out if nothing shows up.** Many "no solution" mistakes are really "the crossing was off the screen" mistakes.
-5. **Click the gray points.** Desmos marks intercepts, intersections, maximums and minimums with gray dots. Click a dot to see its exact coordinates.
+5. **Click the gray points.** Desmos marks intercepts, crossings, maximums and minimums with gray dots. Click one to see its coordinates.
 6. **Answer the question that was asked.** If the crossing is at (3, 5) but the question wants x + y, the answer is 8, not 3.
-7. **Match the answer format.** Desmos gives decimals. If the choices have fractions or square roots, type each choice into Desmos to see its decimal, then match.
+7. **Match the answer format.** Desmos gives decimals. If the choices have fractions or square roots, type each choice to see its decimal, then match.
+
+## The core moves
 
 ### Graph both sides of an equation
 
-To solve any equation in one variable, put the left side on one line and the right side on another:
+To solve an equation in one variable, put each side on its own line:
 
 - Line 1: `y = 2sqrt(x+3)`
 - Line 2: `y = x - 1`
 
-The x-value of each intersection is a solution, and you can see at a glance how many there are. Graphs that never meet mean no real solution; graphs lying exactly on top of each other mean infinitely many. (Typing the equation as written, like `x^2 + 2x = 15`, also works: Desmos draws vertical lines at the solutions, here x = −5 and x = 3.)
+The x-value of each crossing is a solution, so you can also count solutions at a glance. Graphs that never meet mean no real solution; graphs lying exactly on top of each other mean infinitely many.
+
+You can also type the equation as written, like `x^2 + 2x = 15`. Desmos draws vertical lines at the solutions, here x = −5 and x = 3.
 
 ### Systems
 
-Type each equation on its own line, exactly as given. You don't need to solve for y first: `3x + 2y = 12` works fine. Click the crossing point. For "how many solutions," just count the crossings. Two parallel lines means no solution. One line drawn on top of the other means infinitely many.
+Type each equation on its own line, exactly as given. You don't need to solve for y first: `3x + 2y = 12` works fine.
+
+Click the crossing point, or count crossings for "how many solutions." Two parallel lines mean no solution; one line drawn on top of the other means infinitely many.
 
 ### Sliders for unknown constants
 
-Type the equation with the constant in it, for example `y = x^2 - 6x + c`. Desmos offers an "add slider" button for c. Click it, then drag the slider and watch the graph change. Stop when the graph does what the question says (touches the x-axis once, becomes parallel to the other line, and so on).
+Type the equation with the constant in it, like `y = x^2 - 6x + c`, and click the "add slider" button for c. Drag the slider until the graph does what the question says, such as touching the x-axis once or running parallel to another line.
 
-A few slider tips:
-
-- The default range is −10 to 10. Click the numbers at the ends of the slider to change them.
-- Dragging gets you *close*. Then type the exact value you suspect (like `c = 9`) into the slider box to confirm.
+- The default range is −10 to 10. Click the numbers at the ends of the slider to change it.
+- Dragging only gets you *close*. Type the exact value you suspect (like `c = 9`) into the slider box to confirm.
 - Parallel lines are hard to judge by eye. Use the slider to find the neighborhood, then check slopes by hand.
-
-### Pick numbers for questions full of letters
-
-Desmos can't do symbolic algebra. But on a "which expression is equivalent, in terms of a and b" question, you can set `a = 2` and `b = 3`, then see which answer choice gives the same number as the original.
 
 ### Equivalent expressions
 
 Graph the original on line 1 and an answer choice on line 2. If the second graph lands *exactly* on top of the first, they're equivalent. Click the colored circle next to a line to hide or show it, which makes overlaps easy to spot.
 
+### Pick numbers for questions full of letters
+
+Desmos can't do symbolic algebra. On a "which expression is equivalent, in terms of a and b" question, set `a = 2` and `b = 3`, then see which choice gives the same number as the original.
+
 ### Tables and regression
 
-When a question gives you a table of values, type `table` (or use the + button and choose table). The columns are named x₁ and y₁. Enter the data, then on a new line type a model with a tilde (~) instead of an equals sign. The tilde tells Desmos "find the numbers that make this fit the data best."
+**Regression** finds the equation that best fits a set of points. Use it when a question gives you a table of values.
+
+1. Type `table` (or use the + button and choose table). The columns are named x₁ and y₁.
+2. Enter the data.
+3. On a new line, type a model with a tilde (~) instead of an equals sign. The tilde tells Desmos "find the numbers that make this fit the data best."
+
+The three models you'll need:
 
 - Line: `y_1 ~ mx_1 + b`
 - Quadratic: `y_1 ~ ax_1^2 + bx_1 + c`
 - Exponential: `y_1 ~ ab^(x_1)`
 
-Desmos shows the values of m and b (or a, b, c) under the regression. You can then use those letters in other lines, for example `f(x) = ab^x` and then `f(4)`. If the points fit perfectly, you get the exact equation. If they don't (a scatterplot), you get the line or curve of best fit.
+Desmos shows the fitted values of m and b (or a, b, c) under the regression line. You can reuse those letters, for example `f(x) = ab^x` and then `f(4)`.
+
+If the points fit perfectly, you get the exact equation. If they don't (a scatterplot), you get the line or curve of best fit.
 
 ### Statistics
 
-Put numbers in square brackets to make a list, then use a function:
+Put numbers in square brackets to make a list, then wrap it in a function: `mean([4,7,7,10,12])` gives the average. The cheat sheet below lists the other functions; `median` doesn't need the data sorted first.
 
-- `mean([4,7,7,10,12])` gives the mean (average).
-- `median([4,7,7,10,12])` gives the median (middle value). No need to sort first.
-- `total([4,7,7,10,12])` gives the sum.
-- `max(...)` and `min(...)` give the biggest and smallest; range is `max(L) - min(L)`.
-- `stdev(...)` gives the standard deviation (how spread out the data is).
+You can name a list, `L = [4,7,7,10,12]`, and then write `mean(L)`. `stdev(L)` measures spread (the standard deviation), and `max(L) - min(L)` gives the range.
 
-You can name a list with `L = [4,7,7,10,12]` and then write `mean(L)`. For a frequency table (values with counts), make two lists, `v = [1,2,3,4]` for the values and `c = [5,8,4,3]` for the counts, and the mean is `total(v*c)/total(c)`. Desmos multiplies the lists item by item.
+For a frequency table (values with counts), make two lists: `v = [1,2,3,4]` for the values and `c = [5,8,4,3]` for the counts. The mean is `total(v*c)/total(c)`, because Desmos multiplies lists item by item.
 
 ### Restricted domains and inequalities
 
-To graph only part of a function, add a condition in curly braces: `y = x^2 - 4x {0 <= x <= 5}`. This helps with "maximum value on the interval…" questions, because the highest point of the restricted graph might be an endpoint, not the vertex.
+To graph only part of a function, add a condition in curly braces: `y = x^2 - 4x {0 <= x <= 5}`. This helps on "maximum value on the interval" questions, because the highest point of the piece might be an endpoint, not the vertex.
 
-For inequalities, type them directly: `y > 2x - 1` and `y <= -x + 5`. The solution to the system is where the shadings overlap. To test a choice, type the point, like `(1, 3)`, and see if it lands in the double-shaded area. A dashed boundary (`<` or `>`) is not included; a solid one (`<=` or `>=`) is.
+Type inequalities directly, like `y > 2x - 1` and `y <= -x + 5`. The solutions to the system are where the shadings overlap. To test a choice, type the point, like `(1, 3)`, and see whether it lands in the double-shaded area.
+
+A dashed boundary (`<` or `>`) is not included; a solid one (`<=` or `>=`) is.
 
 ### Degrees and radians
 
-Desmos graphing mode starts in **radians**. Most SAT trig uses degrees, so `sin(30)` will give the wrong answer (about −0.99 instead of 0.5) until you switch. Click the wrench (graph settings) and choose Degrees, or check it before any trig question.
+Desmos graphing mode starts in **radians**, but most SAT trig uses degrees. Until you switch, `sin(30)` gives about −0.99 instead of 0.5. Click the wrench (graph settings) and choose Degrees before any trig question.
 
-## Rules and formulas you need
+## Cheat sheet: type exactly this
 
-**The cheat sheet: type exactly this**
+### Equations and systems
 
 | Goal | What to type | What to look at |
 |---|---|---|
-| Solve an equation | `y = left side` and `y = right side` on two lines | x-values of the intersections |
-| Count solutions | Same two lines (or one function and `y = 0`) | How many crossings |
-| Solve a system | Each equation on its own line, any form | Coordinates of the intersection |
-| Find x-intercepts (zeros) | `y = x^2 - 5x + 6` | Gray dots on the x-axis |
-| Find the vertex, max or min | `y = -2x^2 + 8x + 1` | Gray dot at the turning point |
-| Evaluate a function | `f(x) = 3x^2 - 2` then `f(4)` | The number shown on the right of line 2 |
-| Solve f(x) = value | `f(x) = ...` then `y = 7` | x-value of the intersection |
-| Find a constant | `y = x^2 + kx + 9`, add slider k | Slider value when the graph matches |
-| Check equivalence | Original on line 1, a choice on line 2 | Whether the graphs overlap exactly |
-| Linear regression | table, then `y_1 ~ mx_1 + b` | Values of m and b |
-| Quadratic regression | table, then `y_1 ~ ax_1^2 + bx_1 + c` | Values of a, b, c |
-| Exponential regression | table, then `y_1 ~ ab^(x_1)` | a = starting value, b = growth factor |
-| Mean or median | `mean([3,8,8,11])`, `median([3,8,8,11])` | The number on the right |
-| Sum of a list | `total([3,8,8,11])` | The number on the right |
-| Spread | `stdev(L)` or `max(L) - min(L)` | Compare the numbers |
+| Solve an equation | `y = left side` and `y = right side` | x-values of the crossings |
+| Count solutions | The same two lines (or one function and `y = 0`) | How many crossings |
+| Solve a system | Each equation on its own line | The crossing point |
+| Find a constant | `y = x^2 + kx + 9`, add slider k | Slider value when it fits |
+| Check equivalence | Original on line 1, a choice on line 2 | Exact overlap |
+| System of inequalities | `y > 2x - 1` and `y <= -x + 5` | Region with both shadings |
+| Test a point | `(2, 4)` | Inside the overlap? |
+
+### Functions
+
+| Goal | What to type | What to look at |
+|---|---|---|
+| Zeros (x-intercepts) | `y = x^2 - 5x + 6` | Gray dots on the x-axis |
+| Vertex, max or min | `y = -2x^2 + 8x + 1` | Gray dot at the turning point |
+| Evaluate a function | `f(x) = 3x^2 - 2`, then `f(4)` | Number at the right of line 2 |
+| Solve f(x) = a value | `f(x) = ...`, then `y = 7` | x-value of the crossing |
 | Restrict the domain | `y = x^2 {-1 <= x <= 3}` | Highest or lowest point of the piece |
-| System of inequalities | `y > 2x - 1` and `y <= -x + 5` | The region with both shadings |
-| Test a point | `(2, 4)` | Is it inside the overlap? |
-| Absolute value, roots, π | `abs(x - 3)`, `sqrt(x)`, `cbrt(x)`, `pi` | Graph or evaluate |
+
+### Data
+
+| Goal | What to type | What to look at |
+|---|---|---|
+| Linear regression | `table`, then `y_1 ~ mx_1 + b` | m and b |
+| Quadratic regression | `table`, then `y_1 ~ ax_1^2 + bx_1 + c` | a, b and c |
+| Exponential regression | `table`, then `y_1 ~ ab^(x_1)` | a = start, b = growth factor |
+| Mean or median | `mean([3,8,8,11])`, `median([3,8,8,11])` | Number at the right |
+| Sum of a list | `total([3,8,8,11])` | Number at the right |
+| Spread | `stdev(L)` or `max(L) - min(L)` | Compare the numbers |
+
+### Other handy functions
+
+| Goal | What to type | What to look at |
+|---|---|---|
+| Absolute value, roots, π | `abs(x - 3)`, `sqrt(x)`, `cbrt(x)`, `pi` | Graph or value |
 | Distance between points | `distance((1,2),(4,6))` | The number (here 5) |
 | Midpoint | `midpoint((1,2),(5,8))` | The point (here (3, 5)) |
 | Remainder | `mod(47, 6)` | The number (here 5) |
 | Combinations | `nCr(8,3)` | The number (here 56) |
 
-**Keys to know**
+### Keys to know
 
 | Symbol | How to type it |
 |---|---|
@@ -148,7 +175,7 @@ Desmos graphing mode starts in **radians**. Most SAT trig uses degrees, so `sin(
 | Subscript, like x₁ | `x_1` (underscore) |
 | Tilde for regression | `~` (Shift + the key left of 1) |
 | ≤ and ≥ | `<=` and `>=` |
-| Fraction | `/` (press the right arrow to leave the bottom) |
+| Fraction | `/`, then the right arrow to leave the bottom |
 
 ## Worked examples
 
@@ -272,7 +299,7 @@ Change t to x and type:
 
 If you don't see the top of the curve, zoom out. Click the gray dot at the peak: it shows (2, 21.6). The x-value, 2, is the *time* of the peak. The y-value, 21.6, is the *height*, which is what the question asks for.
 
-Choice (A) is the time, not the height (and also the starting height). (D) comes from forgetting that −4.9 × 2² is negative.
+Choice (A) is the time, not the height (and also the starting height). (B) is just a coefficient from the equation. (D) comes from leaving out the −4.9t² term: 19.6 × 2 + 2 = 41.2.
 
 **Answer:** (C)
 
@@ -297,16 +324,14 @@ By hand: x² − 9 = (x − 3)(x + 3), so the fraction becomes x − 3. Then x �
 
 ## Traps to avoid
 
-- **Typing a letter other than x.** If you type `y = -4.9t^2 + 19.6t + 2`, Desmos makes t a slider instead of graphing a curve. Rename the variable to x first.
-- **Fractions that swallow the rest of the line.** After you type `/`, everything goes into the bottom until you press the right arrow. `1/2x` becomes 1 over 2x, not half of x. Look at what Desmos shows before you trust it.
-- **Exponents that swallow the rest of the line.** Same problem with `^`. Press the right arrow after the exponent, and use parentheses: `2^(x+1)`.
+- **Typing a letter other than x.** In `y = -4.9t^2 + 19.6t + 2`, Desmos makes t a slider instead of graphing a curve.
+- **Fractions that swallow the rest of the line.** After `/`, everything goes into the bottom until you press the right arrow. `1/2x` becomes 1 over 2x, not half of x.
+- **Exponents that do the same.** After `^`, press the right arrow to come back down, and use parentheses: `2^(x+1)`.
 - **Using = instead of ~ for regression.** With `=`, Desmos doesn't fit anything. Regression needs the tilde, and the table names need subscripts: `y_1` and `x_1`, not y and x.
 - **Commas inside big numbers.** Type `1350`, not `1,350`. Desmos reads a comma as a separator between numbers.
-- **Letters used twice.** If an old line already defines a, b or k, a new regression or slider with the same letter causes a conflict. Delete old lines, or use different letters.
-- **Radians by accident.** Desmos graphing starts in radians. For degree questions, switch in the wrench menu first.
-- **Answering the wrong thing.** Desmos gives you a point; the question might want only x, only y, their sum, or how many points there are.
+- **Letters used twice.** If an old line already defines a, b or k, a new regression or slider with the same letter causes a conflict. Delete old lines or use different letters.
 - **Trusting a rounded decimal.** Point labels are rounded. If the answer is a fraction, or a grid-in needs more precision, type the exact expression or test each choice.
-- **Judging "parallel" or "touching" by eye.** Lines that look parallel might cross far away, and a parabola that looks like it touches the axis might miss by a hair. Type the exact slider value, and back it up with slopes or the discriminant.
+- **Judging "parallel" or "touching" by eye.** Lines that look parallel might cross far away, and a parabola might miss the axis by a hair. Type the exact slider value, and back it up with slopes or the discriminant.
 - **Fitting too few points.** A quadratic has three unknowns, so its regression needs at least three points. With only two, use another clue in the question, like the vertex.
 
 ## Quick checklist
@@ -317,26 +342,3 @@ By hand: x² − 9 = (x − 3)(x + 3), so the fraction becomes x − 3. Then x �
 - Did I zoom out and click the right gray point?
 - For trig: is Desmos in degrees?
 - Did I answer the exact question (x, y, sum, count) and match the answer format?
-
-## Sources
-
-- [SAT Suite Calculator Policy (College Board)](https://satsuite.collegeboard.org/in-school-assessments/calculator-policy)
-- [Desmos Cheat Sheet for the Digital SAT (Acely)](https://acely.com/sat/desmos-cheat-sheet)
-- [Desmos SAT Calculator: What It Does, What It Can't Do (LearnQ)](https://blogs.learnq.ai/?p=4053)
-- [A Step-by-Step Guide to the Desmos SAT Calculator (Say Hello College)](https://sayhellocollege.com/blog/guide-to-using-the-desmos-sat-calculator/)
-- [Desmos on the Digital SAT (PrepMaven)](https://prepmaven.com/blog/test-prep/desmos-on-the-digital-sat/)
-- [SAT Regression with Desmos: Data Tables to Equations (The Test Advantage)](https://thetestadvantage.com/blog/sat-regression-with-desmos-may-2026-data-tables-to-equations)
-- [Desmos Scientific Calculator for the SAT: When to Switch (The Test Advantage)](https://thetestadvantage.com/blog/desmos-may-2026-scientific-calculator-for-sat-when-to-switch)
-- [The only SAT Math Desmos Guide you'll ever need (YouTube)](https://www.youtube.com/watch?v=jCT0jTVzKy0)
-- [A Beginner's Guide to Desmos on the SAT Math (YouTube)](https://www.youtube.com/watch?v=-pGNBb8M3LQ)
-- [Official Desmos Thread (r/Sat)](https://www.reddit.com/r/Sat/comments/1c8at7a/official_desmos_thread/)
-- [What are people doing to learn Desmos? (r/Sat)](https://www.reddit.com/r/Sat/comments/1jwhsot/what_are_people_doing_to_learn_desmos/)
-- [Desmos Help Center: Regressions](https://help.desmos.com/hc/en-us/articles/4406972958733)
-- [Desmos Help Center: Statistics](https://help.desmos.com/hc/en-us/articles/4405633253389)
-- [SAT Desmos Practice (Larry Learns)](https://www.larrylearns.com/blog/sat-desmos-practice)
-- [How to Use the Desmos Calculator on the Digital SAT (Vibrant Publishers)](https://www.vibrantpublishers.com/blogs/blogs-on-act-sat/how-to-use-the-desmos-calculator-on-the-digital-sat)
-- [How to Use the Desmos SAT Calculator (Achievable)](https://www.achievable.me/exams/sat/resources/how-to-use-the-desmos-sat-calculator/)
-- [Practicing Digitally Using the Built-In Calculator (UWorld)](https://collegeprep.uworld.com/?p=24110)
-- [Cracking the Digital SAT: Bluebook Tips and Tools (Applerouth)](https://applerouth.com/blog/cracking-the-digital-sat-bluebook-tips-tools-and-strategies-for-success)
-- [How to Use Desmos on the SAT (Epic Exam Prep)](https://epicexamprep.com/?p=34213)
-- [SAT Calculator Strategy: When and How (Axiom Academy)](https://theaxiomacademy.org/learn/sat-calculator-strategy-when-how)

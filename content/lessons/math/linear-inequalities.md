@@ -3,51 +3,58 @@ title: Linear Inequalities
 skill: linear-inequalities
 domain: algebra
 section: math
-summary: Solve linear inequalities without sign mistakes, turn real-life limits into inequalities, and quickly check which points fit a graph or a system.
-minutes: 10
+summary: Solve linear inequalities without sign mistakes, turn real-life limits into inequalities, and check which points fit a graph or system.
+minutes: 12
 ---
+
+> **Key idea:** Solve an inequality just like an equation, but flip the sign every time you multiply or divide both sides by a negative number. No other step flips it.
 
 ## What this question looks like
 
-An inequality uses <, >, ≤ or ≥ in place of an equals sign. Its answer is usually a whole range of numbers, not just one. On the Digital SAT, inequality questions come in a few familiar forms:
+An inequality uses <, >, ≤ or ≥ instead of an equals sign, so its answer is usually a whole range of numbers. On the Digital SAT it comes in a few familiar forms:
 
-- **Solve it.** One variable, like `7 − 3(x + 2) ≥ 2x − 9`. The choices look like "x ≤ 2" or "x ≥ 2," so the direction of the sign is the whole question.
-- **Word problem with a limit.** A budget, a weight limit, a minimum score. You'll see phrases like "at most," "no more than," "at least" or "a minimum of." Sometimes you write the inequality. Sometimes you find the greatest or least whole number that works.
-- **Write the system.** Two limits at once (for example, a money limit and a minimum number of items). You choose the pair of inequalities that models the story.
-- **Which point works?** You're given two-variable inequalities, or a graph with a shaded region, and asked which point (x, y) is a solution.
-- **Read the region.** A graph with a dashed or solid line and shading. Which inequality matches it, or what's the greatest possible value of y?
+- **Solve it.** One variable, like `7 − 3(x + 2) ≥ 2x − 9`. Choices look like "x ≤ 2" or "x ≥ 2," so the sign's direction is the whole question.
+- **Word problem with a limit.** A budget, a weight limit or a minimum score, with phrases like "at most" or "at least." You write the inequality or find the greatest or least whole number that works.
+- **Write the system.** Two limits at once, like a money limit and a minimum number of items. You pick the pair of inequalities that models the story.
+- **Which point works?** Two-variable inequalities, or a graph with a shaded region. You pick the point (x, y) that's a solution.
+- **Read the region.** A graph with a dashed or solid line and shading. Which inequality matches it, or what's the greatest possible y?
 
 ## The method
 
-**For a one-variable inequality:**
+Pick the routine that matches the question type.
 
-1. Solve it exactly like an equation: clear fractions, distribute, collect x on one side, divide.
-2. **Every time** you multiply or divide both sides by a negative number, flip the sign right then, on that step.
-3. If your answer ends up backwards, like 4 > x, read it right to left: x < 4.
-4. Test one easy number from your answer in the *original* inequality. If it doesn't work, you made a sign error.
+### One variable
 
-**For a word problem:**
+1. Solve it like an equation: clear fractions, distribute, collect x on one side, divide.
+2. Flip the sign on the exact step where you multiply or divide by a negative.
+3. If the answer ends up backwards, like 4 > x, read it right to left: x < 4.
+4. Test one easy number from your answer in the *original* inequality. If it fails, you made a sign error.
+
+### Word problem
 
 1. Name the variable, with units ("w = number of worksheets").
-2. Build the expression the same way you would for an equation: flat amount plus rate × variable.
-3. Pick the symbol from the wording (use the table below).
-4. Solve, then apply common sense: if the variable counts whole things, round in the direction that still meets the limit.
+2. Build the expression as you would for an equation: flat amount plus rate × variable.
+3. Pick the symbol from the wording (see the table below).
+4. Solve. If the variable counts whole things, round in the direction that still meets the limit.
 
-**For "which point satisfies the system":**
+### Which point satisfies the system
 
-1. Plug each answer choice into **every** inequality. A point must make all of them true.
+1. Plug each choice into **every** inequality. A point must make all of them true.
 2. As soon as a choice fails one inequality, cross it out and move on.
-3. Watch the boundaries: on a strict inequality (< or >), a point that makes both sides *equal* fails.
 
-**For a graph:** Rewrite as `y < mx + b` or `y > mx + b`. y > means **above** the line, y < means **below**. Dashed line: < or >. Solid line: ≤ or ≥.
+### Graphs
+
+Rewrite the inequality as `y < mx + b` or `y > mx + b`. Then y > means shading **above** the line and y < means below. A dashed line means < or >; a solid line means ≤ or ≥.
 
 ## Rules and formulas you need
 
-**Moves that keep the sign:** adding or subtracting anything (even a negative number), and multiplying or dividing by a positive number.
+The sign stays the same for most moves. Know exactly which ones change it.
 
-**Moves that flip the sign:** multiplying or dividing by a negative number, and swapping the two sides (5 < x means the same as x > 5).
+- **Keeps the sign:** adding or subtracting anything (even a negative), and multiplying or dividing by a positive.
+- **Flips the sign:** multiplying or dividing by a negative.
+- **Swapping the two sides** turns the symbol around with them: 5 < x means the same as x > 5.
 
-> **Key idea:** The only step that flips the sign is multiplying or dividing by a negative. Subtracting 3x, or distributing a negative sign, does *not* flip it.
+### Words to symbols
 
 | Words in the problem | Symbol |
 |---|---|
@@ -58,18 +65,21 @@ An inequality uses <, >, ≤ or ≥ in place of an equals sign. Its answer is us
 
 > **Trap:** "5 less than x" is the expression x − 5, not an inequality. "5 is less than x" is the inequality 5 < x.
 
-| Situation (whole-number answers) | How to round |
-|---|---|
-| "At most" limit (budget, capacity), e.g. h ≤ 6.2 | Round **down**: 6 |
-| "At least" goal (score, money raised), e.g. w ≥ 8.4 | Round **up**: 9 |
+### Rounding whole-number answers
 
-More facts:
+| Limit type | Example | Round |
+|---|---|---|
+| "At most" (budget, capacity) | h ≤ 6.2 | Down to 6 |
+| "At least" (score, money raised) | w ≥ 8.4 | Up to 9 |
 
-- **Compound inequality** like `−3 < 2x + 1 ≤ 9`: do every step to all three parts. Subtract 1 to get −4 < 2x ≤ 8, then divide by 2 to get −2 < x ≤ 4. If you divide by a negative, flip **both** signs.
-- **Number lines:** an open circle means the endpoint is not included (< or >). A closed dot means it is included (≤ or ≥).
-- **Test point for shading:** plug in (0, 0) if the line doesn't pass through it. If (0, 0) makes the inequality true, shade the side that contains the origin.
-- **Systems:** the solution is the region where all the shadings overlap. Every point in that overlap works, and no point outside it does.
-- If the x-terms cancel, read what's left. A true statement (like 3 > 1) means every number works. A false one means no number works.
+### More facts
+
+- **Compound inequality** like `−3 < 2x + 1 ≤ 9`: do every step to all three parts. Subtract 1 to get −4 < 2x ≤ 8, then divide by 2 to get −2 < x ≤ 4.
+- In a compound inequality, dividing by a negative flips **both** signs.
+- **Number lines:** an open circle means the endpoint is not included (< or >). A closed dot means it is (≤ or ≥).
+- **Test point for shading:** if the line doesn't pass through (0, 0), plug it in. If it makes the inequality true, shade the side with the origin.
+- **Systems:** the solution is the region where all the shadings overlap. Every point there works, and no point outside it does.
+- **If the x-terms cancel,** read what's left. A true statement (like 3 > 1) means every number works; a false one means none does.
 
 ## Worked examples
 
@@ -163,55 +173,43 @@ Notice that (B) passes only the second inequality and (D) only the first. Those 
 
 ## Traps to avoid
 
-- **Forgetting the flip** after dividing by a negative. This is the most common inequality mistake. The trap choice is the same number with the sign facing the other way.
-- **Flipping when you shouldn't.** Subtracting a negative or moving terms across doesn't flip the sign. Only multiplying or dividing by a negative does.
-- **Rounding the wrong way.** With a budget ("at most"), round down. With a goal ("at least"), round up. Plugging your whole number back in settles it.
-- **Checking only one inequality.** In a system, a point has to satisfy all of them. Wrong choices are often built to pass just one.
-- **Points on the boundary.** For < or >, a point that lands exactly on the line is *not* a solution. For ≤ or ≥, it is.
-- **Shading from the wrong form.** "y >" means above only once y is alone on the left. In `−2y > x + 4`, dividing by −2 flips the sign, so the region is actually *below* the line. Test (0, 0) when in doubt.
-- **Swapping rates and items.** In a two-variable word problem, make sure each rate is multiplied by the variable it belongs to.
+- **Forgetting the flip** after dividing by a negative. It's the most common inequality mistake, and the trap choice is the same number with the sign facing the other way.
+- **Flipping when you shouldn't.** Subtracting a negative, distributing a negative or moving terms across doesn't flip the sign.
+- **Rounding the wrong way.** A budget ("at most") rounds down; a goal ("at least") rounds up. Plugging your whole number back in settles it.
+- **Checking only one inequality.** In a system, a point must satisfy all of them. Wrong choices are often built to pass just one.
+- **Points on the boundary.** For < or >, a point exactly on the line is *not* a solution. For ≤ or ≥, it is.
+- **Shading from the wrong form.** "y >" means above only once y is alone. In `−2y > x + 4`, dividing by −2 flips the sign, so the region is *below* the line.
+- **Swapping rates and items.** In a two-variable word problem, multiply each rate by the variable it belongs to.
 
 ## Desmos shortcut
 
-Desmos is very strong on the "which point" and "read the region" questions. For a short one-variable inequality, solving by hand is usually just as fast, but Desmos is a good check.
+Desmos is strongest on "which point" and "read the region" questions. For a short one-variable inequality, solving by hand is about as fast, but Desmos makes a good check.
 
-**One variable.** Type it exactly as written, for example `7-3(x+2)>=2x-9`. Typing `>=` gives ≥ and `<=` gives ≤. Desmos shades a vertical band. The edge of the band is the boundary value (here x = 2), and the shaded side shows the direction. A solid edge means the endpoint is included, and a dashed edge means it isn't.
+### One variable
 
-**Systems of inequalities.**
+- Type it exactly as written, for example `7-3(x+2)>=2x-9`. Typing `>=` gives ≥ and `<=` gives ≤.
+- Desmos shades a vertical band. Its edge is the boundary value (here x = 2), and the shaded side shows the direction.
+- A solid edge means the endpoint is included; a dashed edge means it isn't.
+
+### Systems of inequalities
 
 - Type each inequality on its own line: `y>2x-3` and `x+2y<=8`. You don't need to solve for y first.
 - The solution is the area where the two colors overlap.
-- Cleaner view: type a single line, `y>2x-3{x+2y<=8}`, with the second inequality inside curly braces as a restriction. Desmos then shades *only* the overlap.
+- Cleaner view: type `y>2x-3{x+2y<=8}`, with the second inequality in curly braces as a restriction. Desmos then shades *only* the overlap.
 - Add each answer choice as a point on its own line, like `(1,3)`. The correct choice sits inside the overlap.
+- If a point lands right on a boundary, check whether that line is dashed or solid, or plug the point in by hand.
 
-**Points on the line.** If a point lands right on a boundary, check whether that line is dashed or solid, or plug the point in by hand.
+### Greatest or least value in a region
 
-**Greatest or least value in a region.** Graph the system, then click the corner where the boundary lines cross. Desmos shows its coordinates. That corner is usually where the greatest or least y-value happens.
+Graph the system, then click the corner where the boundary lines cross to see its coordinates. That corner is usually where the greatest or least y-value happens.
 
-**What Desmos can't do for you:** it won't translate a word problem, and it won't round to whole numbers. You still have to write the inequality and decide whether to round up or down.
+> **Remember:** Desmos won't translate a word problem or round to whole numbers. You still write the inequality and decide whether to round up or down.
 
 ## Quick checklist
 
-- Did I multiply or divide by a negative? If yes, did I flip the sign on that step?
+- Did I multiply or divide by a negative? If so, did I flip the sign on that step?
 - Does an easy test number from my answer work in the original inequality?
 - Did I translate each phrase correctly (at least ≥, at most ≤, more than >, fewer than <)?
 - For whole-number answers, did I round in the direction that still meets the limit?
 - For a system, did my point pass *every* inequality, including any boundary?
 - For a graph, is the line dashed or solid, and is the shaded side correct?
-
-## Sources
-
-- [College Board: SAT Math, Algebra question types](https://satsuite.collegeboard.org/sat/whats-on-the-test/math/types/algebra)
-- [College Board: SAT content domains](https://satsuite.collegeboard.org/higher-ed-professionals/sat-validity/content-domains)
-- [Test Ninjas: Linear Inequalities in One or Two Variables](https://www.test-ninjas.com/sat-linear-inequalities-in-one-or-two-variables)
-- [JustLockedIn: Linear Inequalities question patterns](https://justlockedin-main.pages.dev/patterns/math/algebra/linear-inequalities/)
-- [Albert: Systems of Linear Inequalities for SAT Math](https://www.albert.io/blog/systems-of-linear-inequalities-master-to-interpret-for-sat-math/)
-- [Albert: Create and Solve Linear Inequalities for SAT Math](https://www.albert.io/blog/create-solve-linear-inequalities-a-guide-for-sat-math-success/)
-- [Target Test Prep: SAT Inequalities](https://sat.blog.targettestprep.com/sat-inequalities/)
-- [Varsity Tutors: SAT Linear Inequalities](https://www.varsitytutors.com/practice/subjects/sat/lessons/linear-inequalities)
-- [Axiom Academy: SAT Linear Inequalities and Systems](https://theaxiomacademy.org/learn/sat-linear-inequalities-systems)
-- [The Test Advantage: SAT Inequalities with Desmos](https://thetestadvantage.com/blog/sat-inequalities-with-desmos-may-2026-graph-and-skip-the-algebra)
-- [Acely: Desmos Cheat Sheet for the SAT](https://acely.com/sat-prep/desmos-cheat-sheet)
-- [Say Hello College: Step-by-Step Guide to the Desmos SAT Calculator](https://sayhellocollege.com/blog/guide-to-using-the-desmos-sat-calculator/)
-- [r/Sat: Official Desmos Thread](https://www.reddit.com/r/Sat/comments/1c8at7a/official_desmos_thread/)
-- [YouTube: The Only SAT Math Desmos Guide You'll Ever Need](https://www.youtube.com/watch?v=-pGNBb8M3LQ)

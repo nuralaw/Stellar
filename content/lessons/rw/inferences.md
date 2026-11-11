@@ -3,54 +3,54 @@ title: Inferences
 skill: inferences
 domain: information-ideas
 section: rw
-summary: Finish a short argument with the conclusion its facts actually support, taking one careful step past the text and no further.
+summary: Finish a short argument with the conclusion its facts actually support, one careful step past the text and no further.
 minutes: 10
 ---
 
+> **Key idea:** An inference is one small step beyond the text. It doesn't just repeat what's there, and it doesn't leap somewhere new.
+
 ## What this question looks like
 
-The passage is a short chain of reasoning, often about a science study, a history puzzle or an economics finding, and it **stops at a blank**. The last words are usually a lead-in such as "This suggests that ______", "Therefore, ______" or "…because ______".
+The passage is a short chain of reasoning that **stops at a blank**, and you supply the missing conclusion. Topics are often a science study, a history puzzle or an economics finding.
 
-The question is almost always worded the same way:
+The last words before the blank are a lead-in such as "This suggests that ______", "Therefore, ______" or "…because ______". The question almost always reads:
 
 - "Which choice most logically completes the text?"
 
-Your job is to supply the conclusion. The College Board describes these passages as arguments cut off just before the conclusion: everything you need is there except the final step.
-
-> **Key idea:** An inference is one small step beyond what the text says. It's not a restatement of what's already there, and it's not a big leap into new territory.
-
-These are often some of the hardest questions in a Reading and Writing module. That's normal. A steady method beats gut feeling here.
+The College Board describes these passages as arguments cut off just before the end: everything you need is there except the final step. They're often among the hardest questions in a module, so a steady method beats gut feeling.
 
 ## The method
 
-1. **Read the words right before the blank first.** "Suggests that," "because," "however," "unless"? They tell you what kind of thing goes in the blank: a conclusion, a reason, a contrast or a condition.
-2. **Read the whole passage and list the facts.** In your head, number them: fact 1, fact 2, the twist. Ignore background that doesn't connect.
-3. **Find the gap.** Ask: "Given these facts, what's the obvious next sentence the author is building toward?" Look hard at the last fact before the blank. It's usually the key piece.
-4. **Predict in a few words before you read the choices.** Example: "so light isn't what controls it." A rough prediction is fine.
-5. **Match, then test.** Find the choice that means your prediction. Read it into the blank and check that the whole passage now makes sense from start to finish.
-6. **Check the strength.** The answer should be exactly as strong as the evidence: no "always," "proves" or "all" unless the passage earns it.
+Work out the missing step yourself, then find the choice that says it.
 
-> **Tip:** If you're stuck after about a minute and a half, choose your best guess, mark the question for review and move on. Come back with fresh eyes at the end of the module.
+1. **Read the words right before the blank first.** "Suggests that", "because", "however", "unless" tell you what goes in the blank: a conclusion, a reason, a contrast or a condition.
+2. **Read the whole passage and list the facts.** Fact 1, fact 2, the twist. Skip background that doesn't connect.
+3. **Find the gap.** Ask: "Given these facts, what's the next sentence the author is building toward?" The last fact before the blank is usually the key piece.
+4. **Predict in a few words** before reading the choices, e.g. "so light isn't what controls it." Rough is fine.
+5. **Match, then test.** Find the choice that means your prediction. Read it into the blank and check that the whole passage makes sense.
+6. **Check the strength.** The answer should be exactly as strong as the evidence.
+
+> **Tip:** Stuck after about a minute and a half? Pick your best guess, mark the question for review and move on. Come back with fresh eyes at the end of the module.
 
 ## Rules and formulas you need
 
-The same few patterns of reasoning show up again and again. Learn to spot them:
+The same few patterns of reasoning show up again and again.
 
-| Pattern | What the passage does | What the blank usually says |
+| Pattern | The passage… | The blank says… |
 |---|---|---|
-| Hypothesis test | "Scientists thought X causes Y. They tested it and Y didn't happen as expected." | X probably isn't the (only) cause. |
-| Surprising result | A finding that clashes with what people expected, then a clue | An explanation that makes the clash disappear. |
-| Ruling things out | "It wasn't A. It wasn't B either." | So it was probably C. |
-| Cause and effect chain | A leads to B, and B leads to C | So A affects C. |
-| Limits of a study | A study only looked at one group or one setting | The result may not apply beyond that group. |
-| Comparison | One thing is ranked against others | The fact the ranking implies, and nothing more. |
+| Hypothesis test | Tests "X causes Y"; Y doesn't follow | X probably isn't the (only) cause |
+| Surprising result | Gives a clash, then a clue | What resolves the clash |
+| Ruling out | "Not A. Not B either." | So probably C |
+| Cause chain | A leads to B, B leads to C | So A affects C |
+| Study limits | Studies one group or setting | It may not apply beyond it |
+| Comparison | Ranks one thing against others | What the ranking implies, no more |
 
-**Rules to know cold:**
+### Rules to know cold
 
-- **Use only the passage**, plus the kind of general knowledge any high school student has. If a choice needs a fact the passage never gave you, it's wrong.
-- **The answer must add something.** A choice that just repeats a fact from the passage doesn't complete the argument.
-- **Match the strength.** If the evidence is one experiment, the right answer says "may," "likely" or "at least partly." But don't reject a strong answer automatically. If the facts truly force the conclusion, the strong answer can be right.
-- **Stay in scope.** If the passage is about one species, one town or one time period, the answer should be too.
+- **Use only the passage**, plus general knowledge any high schooler has. A choice that needs a fact the passage never gave you is wrong.
+- **The answer must add something.** A choice that repeats a fact from the passage doesn't complete the argument.
+- **Match the strength.** One experiment earns "may", "likely" or "at least partly". But if the facts truly force a conclusion, a strong answer can be right.
+- **Stay in scope.** If the passage is about one species, town or time period, the answer should be too.
 - **Pick the best choice, not just a possible one.** Several choices might *possibly* be true. Only one *follows* from the facts.
 
 ## Worked examples
@@ -117,37 +117,22 @@ Lead-in: "since," so we need a *reason*, and specifically a reason the survey mi
 
 ## Traps to avoid
 
-- **Too new:** The choice brings in a cause, a group or a fact the passage never mentioned. Even if it's true in real life, it isn't supported here.
-- **Too strong:** "Always," "proves," "all," "only," "must." These words need very strong evidence. One study rarely gets you there.
-- **Too broad:** The choice takes a result about one species, one city or one decade and applies it to everything.
-- **Reversed:** The choice flips cause and effect, gets the timeline backward or swaps who did what. Re-check the order of events.
-- **Restatement:** The choice repeats a fact that's already in the passage. True, but it doesn't finish the argument.
-- **Ignoring the twist:** The choice fits the first half of the passage but ignores the "however" or the clue at the end, which is usually the most important part.
-- **Plausible but unproven:** It *could* be true, but the facts don't push you toward it. The right answer is one you can defend by pointing at the passage.
-- **Changing your answer for a fancy one:** Hard questions often have one choice with impressive vocabulary. Judge choices by logic, not by how smart they sound.
+Wrong choices usually go too far, go the wrong way, or go nowhere:
+
+- **Too new:** brings in a cause, group or fact the passage never mentioned. Even if it's true in real life, it isn't supported here.
+- **Too strong:** "always", "proves", "all", "only", "must" need very strong evidence. One study rarely gets you there.
+- **Too broad:** takes a result about one species, city or decade and applies it to everything.
+- **Reversed:** flips cause and effect, gets the timeline backward or swaps who did what. Re-check the order of events.
+- **Restatement:** repeats a fact already in the passage. True, but it doesn't finish the argument.
+- **Ignoring the twist:** fits the first half but ignores the "however" or the final clue, usually the most important part.
+- **Plausible but unproven:** it *could* be true, but the facts don't push you toward it. You should be able to defend the right answer by pointing at the passage.
+- **The fancy answer:** hard questions often have one choice with impressive vocabulary. Judge by logic, not by how smart it sounds.
 
 ## Quick checklist
 
-- What do the words right before the blank ask for: a conclusion, a reason or a contrast?
-- Did I list the facts and notice the twist or the last clue?
+- What do the words before the blank ask for: a conclusion, a reason or a contrast?
+- Did I list the facts and notice the twist or last clue?
 - Did I predict before reading the choices?
 - Does my choice add the missing step instead of repeating a fact?
 - Is it as strong as the evidence, no stronger, and in the same scope?
-- Does the whole passage make sense when I read my choice into the blank?
-
-## Sources
-
-- [Assessment Framework for the Digital SAT Suite (College Board)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [What's on the SAT: Reading and Writing (College Board)](https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing)
-- [Inference Questions on SAT Reading: 6 Strategies (PrepScholar)](https://blog.prepscholar.com/inference-questions-on-sat-reading-6-strategies)
-- [Inferences on the SAT (Prep Maven)](https://prepmaven.com/blog/test-prep/inferences-on-the-sat/)
-- [Mastering Inferences Questions on the Digital SAT (Test Ninjas)](https://test-ninjas.com/sat-inferences)
-- [Inferences lesson (Varsity Tutors)](https://www.varsitytutors.com/practice/subjects/sat-reading-and-writing/lessons/inferences)
-- [Information and Ideas: Inferences (Achievable)](https://app.achievable.me/study/sat/learn/information-ideas-inferences)
-- [Inference and Logical Completion (Open Exam Prep)](https://open-exam-prep.com/study-guides/sat/reading-and-writing-information-and-ideas/inference-and-logical-completion)
-- [How to Solve Digital SAT Logical Conclusions (The Test Advantage)](https://thetestadvantage.com/blog/how-to-solve-digital-sat-logical-conclusions-test-7-guide)
-- [Master Digital SAT Inference Questions (EdisonOS)](https://edisonos.com/blog/sat-inferences-questions)
-- [Inference and Main Idea Strategies for the Digital SAT (SATSphere)](https://www.satsphere.com/blog/digital-sat-reading-inference-and-main-idea-strategies)
-- [Inference Questions Got You Stumped? (Bryan McCorkle)](https://bryan-mccorkle.squarespace.com/sat-act-prep-blog/inference-questions-got-you-stumped-heres-the-best-way-to-handle-them)
-- [Mastering SAT Inference Questions (Walker Prep)](https://walkerprep.substack.com/p/mastering-sat-inference-questions)
-- [Solving Every New SAT Reading Question, by a 1600 Scorer (YouTube)](https://www.youtube.com/watch?v=0SdSkmzmW1M)
+- Does the whole passage make sense with my choice in the blank?

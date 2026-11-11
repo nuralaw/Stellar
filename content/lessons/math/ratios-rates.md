@@ -3,75 +3,90 @@ title: Ratios, Rates, Proportions, and Units
 skill: ratios-rates
 domain: problem-solving
 section: math
-summary: Set up any ratio, rate, scale, density, or unit-conversion question so the units do the work and the answer comes out right the first time.
+summary: Set up ratio, rate, scale, density and unit-conversion questions so the units cancel and the answer comes out right the first time.
 minutes: 10
 ---
 
+> **Key idea:** Most mistakes here are setup mistakes, not arithmetic. Write every number with its unit, arrange things so the units cancel, and the calculator does the rest.
+
 ## What this question looks like
 
-These are almost always short word problems about real things: recipes, maps, speeds, prices, paint, water flow, or the mass of an object. You can spot them by the words on screen:
+These are short word problems about real things: recipes, maps, speeds, prices, paint, water flow or mass. You can spot them by the words on screen:
 
 - **Ratio words:** "the ratio of A to B is 3 : 5", "for every 4 … there are 7 …"
-- **Rate words:** "per", "each", "at this rate", "at the same rate", "miles per hour", "dollars per pound"
-- **Proportion words:** "is directly proportional to", "varies directly with", "scale", "1 inch represents 20 miles"
-- **Unit words:** two different units in the same question (meters and kilometers, minutes and hours), often with a conversion like "1 yard = 3 feet" given right in the question
+- **Rate words:** "per", "each", "at this rate", "miles per hour", "dollars per pound"
+- **Proportion words:** "directly proportional to", "varies directly with", "scale", "1 inch represents 20 miles"
+- **Unit words:** two units in one question (meters and kilometers, minutes and hours), often with a conversion like "1 yard = 3 feet" given
 - **Density words:** "grams per cubic centimeter", "people per square mile"
 
-Some are multiple choice, some ask you to type a number (student-produced response). Easy ones take one step. Hard ones chain two or three steps, or hide a squared or cubed unit.
+Some are multiple choice; others ask you to type a number. Easy ones take one step. Hard ones chain two or three steps or hide a squared or cubed unit.
 
 ## The method
 
-1. **Name what you want, with its unit.** Write it down: "cost in dollars" or "speed in km per hour". This tells you where to stop.
-2. **Write every number with its unit attached.** `15 m/s`, not just `15`. Units are your safety net.
-3. **Pick the tool that fits:**
-   - a ratio with a total → the *multiplier* method (call the parts 3x and 5x)
-   - "at this rate" or "proportional" → a proportion, or find the unit rate first
-   - different units → a conversion chain where units cancel
-   - density or "per area" → `density = amount ÷ size`
-4. **Set it up so the same thing is in the same place.** In a proportion, if apples are on top on the left, apples are on top on the right.
-5. **Cancel units before you multiply.** If the leftover unit isn't the one you named in step 1, your setup is wrong. Fix it before you calculate.
-6. **Check size and direction.** Converting to a smaller unit (km → m) should give a bigger number. Ask: "Does this answer make sense?"
+Follow the same six steps every time, and put your effort into steps 1–5.
 
-> **Key idea:** Most mistakes on these questions are setup mistakes, not arithmetic mistakes. Spend your time on steps 1–5. The calculator can do the rest.
+1. **Name what you want, with its unit.** Write "cost in dollars" or "speed in km per hour". This tells you where to stop.
+2. **Attach a unit to every number.** Write `15 m/s`, not just `15`. Units are your safety net.
+3. **Pick the tool that fits** (see the table below).
+4. **Put the same thing in the same place.** In a proportion, if apples are on top on the left, apples go on top on the right.
+5. **Cancel units before you multiply.** If the leftover unit isn't the one from step 1, fix the setup before you calculate.
+6. **Check size and direction.** Converting to a smaller unit (km → m) should give a bigger number. Ask: "Does this make sense?"
+
+| If you see… | Use… |
+|---|---|
+| A ratio and a total | The multiplier: parts 3x and 5x |
+| "At this rate" or "proportional" | A proportion, or the unit rate |
+| Different units | A conversion chain |
+| Density or "per area" | `density = amount ÷ size` |
 
 ## Rules and formulas you need
 
-**Ratios**
+These are the facts to know cold, grouped by type.
+
+### Ratios
 
 | Fact | Example |
 |---|---|
-| A ratio a : b can be written as a/b or "a to b" | 3 : 5 = 3/5 |
-| Multiply or divide *both* parts by the same number to get an equal ratio | 3 : 5 = 6 : 10 = 30 : 50 |
-| Part-to-part is not part-to-whole | boys : girls = 3 : 5, so boys are 3/8 of the class, not 3/5 |
-| With a total, use the multiplier: parts are ax and bx, total is (a + b)x | 3x + 5x = 8x |
-| The real total must be a multiple of (a + b) | with 3 : 5, a class of 30 is impossible; 32 works |
+| a : b can be written a/b or "a to b" | 3 : 5 = 3/5 |
+| Multiply or divide *both* parts by the same number | 3 : 5 = 6 : 10 = 30 : 50 |
+| Part-to-part is not part-to-whole | boys : girls = 3 : 5 → boys are 3/8 |
+| With a total, parts are ax and bx | 3x + 5x = 8x |
+| The real total is a multiple of a + b | with 3 : 5, 32 works, 30 doesn't |
 
-**Proportions and rates**
+### Proportions and rates
+
+A **unit rate** is the amount for *one* unit, like $6 for 4 pounds = $1.50 per pound.
 
 | Fact | Example |
 |---|---|
-| A proportion says two ratios are equal; solve by cross-multiplying | `x/12 = 5/4` gives `4x = 60`, so x = 15 |
-| A unit rate is the amount for *one* unit | $6 for 4 pounds = $1.50 per pound |
-| Directly proportional means `y = kx`; k is the unit rate, and y/x stays the same | the graph is a straight line through (0, 0) |
-| Inversely proportional means `y = k/x`; x × y stays the same | 4 workers × 6 hours = 24 worker-hours = 3 workers × 8 hours |
-| `distance = rate × time` | 50 mph for 3 hours = 150 miles |
-| `density = mass ÷ volume` (or amount ÷ area) | 40 g in 8 cm³ = 5 g/cm³ |
+| Proportion: cross-multiply | `x/12 = 5/4` → `4x = 60` → x = 15 |
+| Direct: `y = kx`, y/x stays the same | line through (0, 0) |
+| Inverse: `y = k/x`, x × y stays the same | 4 workers × 6 h = 3 × 8 h |
+| `distance = rate × time` | 50 mph for 3 h = 150 mi |
+| `density = mass ÷ volume` | 40 g in 8 cm³ = 5 g/cm³ |
 
-**Unit conversion**
+In a direct proportion, k is the unit rate. Density can also be amount ÷ area, like people per square mile.
 
-- A conversion factor is a fraction that equals 1, like `(3 ft)/(1 yd)` or `(1 yd)/(3 ft)`. Multiplying by it changes the units but not the amount.
-- Put the unit you want to get rid of on the *opposite* level (top vs. bottom) so it cancels.
+### Unit conversion
+
+- A **conversion factor** is a fraction equal to 1, like `(3 ft)/(1 yd)`. It changes the units, not the amount.
+- Put the unit you want to remove on the *opposite* level (top vs. bottom) so it cancels.
 - For a rate like m/s, convert the top unit and the bottom unit separately.
-- **Squared and cubed units:** use the factor twice for area and three times for volume.
+- For area, use the factor twice. For volume, use it three times.
 
 | Length | Area | Volume |
 |---|---|---|
 | 1 yd = 3 ft | 1 yd² = 9 ft² | 1 yd³ = 27 ft³ |
 | 1 m = 100 cm | 1 m² = 10,000 cm² | 1 m³ = 1,000,000 cm³ |
 
-**Scale:** if a model's lengths are k times the real lengths, its areas are k² times and its volumes are k³ times the real ones.
+**Scale:** if a model's lengths are k times the real ones, its areas are k² times and its volumes k³ times.
 
-Facts worth knowing cold (the test usually gives the less common ones): 60 seconds = 1 minute, 60 minutes = 1 hour, 12 inches = 1 foot, 3 feet = 1 yard, 5,280 feet = 1 mile, 1,000 meters = 1 kilometer, 100 centimeters = 1 meter, 1,000 grams = 1 kilogram, 1 cm³ = 1 milliliter.
+Know these by heart (the test usually gives the rarer ones):
+
+- 60 seconds = 1 minute; 60 minutes = 1 hour
+- 12 inches = 1 foot; 3 feet = 1 yard; 5,280 feet = 1 mile
+- 100 centimeters = 1 meter; 1,000 meters = 1 kilometer
+- 1,000 grams = 1 kilogram; 1 cm³ = 1 milliliter
 
 ## Worked examples
 
@@ -166,46 +181,33 @@ A common slip is using 5 cm as if it were the volume: 112.5 ÷ 5 = 22.5 would gi
 
 ## Traps to avoid
 
-- **Part-to-part vs. part-to-whole.** "3 : 5 boys to girls" does not mean boys are 3/5 of the class. Add the parts: boys are 3/8.
-- **Flipping one side of a proportion.** If you write `apples/oranges` on the left and `oranges/apples` on the right, the answer will be wrong but will often appear as a choice.
-- **Converting only half a rate.** Changing m/s to km/h needs *two* conversions. Doing only one gives a choice that looks reasonable.
+Each of these gives a wrong answer that is usually sitting among the choices.
+
+- **Part-to-part vs. part-to-whole.** Boys to girls 3 : 5 does not make boys 3/5 of the class. Add the parts: boys are 3/8.
+- **Flipping one side of a proportion.** `apples/oranges` on the left with `oranges/apples` on the right gives a wrong answer that often appears as a choice.
+- **Converting only half a rate.** m/s to km/h needs *two* conversions. Doing one gives a choice that looks reasonable.
 - **Using 60 when you need 3,600.** Seconds to hours is 60 × 60.
-- **Forgetting to square or cube.** 1 yd² is 9 ft², not 3. 1 m³ is 1,000,000 cm³, not 100. Safest fix: convert lengths before computing area or volume.
-- **Stopping one step early.** The question asks for the difference, the cost, or the mass, but the choices also include the in-between numbers you found on the way.
-- **Answering in the wrong unit.** Reread the question's unit (hours or minutes? grams or kilograms?) before you click.
-- **Assuming a ratio gives the exact counts.** A 2 : 3 ratio could be 2 and 3, or 20 and 30. You need a total or one real count to find the actual numbers.
+- **Forgetting to square or cube.** 1 yd² is 9 ft², not 3. 1 m³ is 1,000,000 cm³, not 100. Convert lengths before finding area or volume.
+- **Stopping one step early.** The question wants the difference, cost or mass, but the in-between numbers are choices too.
+- **Answering in the wrong unit.** Reread the unit asked for (hours or minutes? grams or kilograms?) before you click.
+- **Treating a ratio as exact counts.** 2 : 3 could be 2 and 3, or 20 and 30. You need a total or one real count.
 
 ## Desmos shortcut
 
-Desmos does not set up the problem for you, but it is great once the setup is right:
+Desmos won't set up the problem, but it's great once the setup is right.
 
-- Type a whole conversion chain as one line, like `15*3600/1000`, so you never round in the middle.
-- Type a proportion straight in as an equation, like `7/4=x/24`. Desmos shows the solution (x = 42) as a vertical line you can click.
-- For "which point is proportional" questions, graph `y=kx` after finding k and see which given point lands on the line.
+- Type a whole conversion chain on one line, like `15*3600/1000`, so you never round in the middle.
+- Type a proportion as an equation, like `7/4=x/24`. Desmos shows the solution (x = 42) as a vertical line you can click.
+- For "which point is proportional" questions, find k, graph `y=kx`, and see which given point lands on the line.
 
-> **Tip:** On easy one-step questions, mental math is faster. Use Desmos for long chains and messy decimals.
+> **Tip:** On easy one-step questions, mental math is faster. Save Desmos for long chains and messy decimals.
 
 ## Quick checklist
 
 - Did I write the unit I want before starting?
 - Is every number carrying its unit?
-- Is the same quantity in the same position on both sides of my proportion?
-- Did every unwanted unit cancel, including the ones on the bottom of a rate?
+- Is the same quantity in the same spot on both sides of my proportion?
+- Did every unwanted unit cancel, including those on the bottom of a rate?
 - For area or volume, did I square or cube the conversion?
-- Did I answer the exact thing asked (difference, total, cost) in the exact unit asked?
+- Did I answer the exact thing asked, in the exact unit asked?
 - Does the size of the answer make sense?
-
-## Sources
-
-- [College Board: Digital SAT Math, Problem-Solving and Data Analysis](https://satsuite.collegeboard.org/digital/whats-on-the-test/math/types/problem-solving)
-- [College Board SAT Suite Question Bank](https://satsuitequestionbank.collegeboard.org/)
-- [Khan Academy: Official Digital SAT Math practice](https://www.khanacademy.org/test-prep/v2-sat-math)
-- [PrepScholar: Complete Guide to Fractions and Ratios on SAT Math](https://blog.prepscholar.com/complete-guide-to-fractions-and-ratios-sat-math)
-- [Target Test Prep: Ratio and Proportion Questions on the SAT](https://sat.blog.targettestprep.com/ratio-and-proportion/)
-- [Test Ninjas: Mastering Ratios, Rates, and Proportions on the SAT](https://test-ninjas.com/sat-ratio-rates-proportions)
-- [Varsity Tutors: SAT Math Rates lesson](https://www.varsitytutors.com/practice/subjects/sat-math/lessons/rates)
-- [Open Exam Prep: Ratios, Proportions and Units](https://open-exam-prep.com/study-guides/sat-math/problem-solving-data-analysis/ratios-proportions-units)
-- [The Axiom Academy: SAT Unit Conversion and Dimensional Analysis](https://theaxiomacademy.org/learn/sat-unit-conversion-dimensional-analysis)
-- [Just Locked In: Unit Conversion pattern](https://justlockedin-main.pages.dev/patterns/math/problem-solving-and-data-analysis/ratios-rates-proportional-relationships-and-units/unit-conversion.html)
-- [The Test Advantage: How Percentages and Ratios Are Tested on the Digital SAT](https://thetestadvantage.com/blog/how-are-percentages-and-ratios-tested-on-the-digital-sat)
-- [Brilliant: SAT Ratios, Proportions, and Percents](https://brilliant.org/wiki/sat-ratios-proportions-percents/)

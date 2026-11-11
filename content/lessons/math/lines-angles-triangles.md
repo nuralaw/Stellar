@@ -3,26 +3,28 @@ title: Lines, Angles, and Triangles
 skill: lines-angles-triangles
 domain: geometry-trig
 section: math
-summary: Name the angle or triangle relationship in a figure, turn it into one equation, and solve for missing angles and side lengths.
-minutes: 10
+summary: Spot the angle or triangle rule in a figure, turn it into one equation, and solve for missing angles and side lengths.
+minutes: 12
 ---
+
+> **Key idea:** Before you calculate, say the relationship in words (these angles are equal, these add to 180°, these triangles are similar). Then turn it into one equation.
 
 ## What this question looks like
 
-You'll usually see a figure with lines, angles and triangles, and a question like "What is the value of x?" or "What is the length of BC?" Common setups:
+You'll see a figure with lines, angles and triangles, and a question like "What is the value of x?" or "What is the length of BC?" Common setups:
 
-- **Two parallel lines cut by a third line** (called a *transversal*), with one or two angles labeled, often with expressions like (3x + 10)°.
-- **A triangle with a missing angle**, sometimes isosceles (two equal sides, shown by tick marks or stated in the text) or with one side extended past a corner.
+- **Two parallel lines cut by a third line,** called a *transversal*. One or two angles are labeled, often with expressions like (3x + 10)°.
+- **A triangle with a missing angle.** It may be isosceles (two equal sides, shown by tick marks or stated in the text) or have one side extended past a corner.
 - **Similar triangles:** a small triangle tucked inside a big one, two triangles meeting at a point like a bowtie, or a word problem about shadows or ramps.
-- **"Which of the following is sufficient to prove…"**: you pick the one extra fact that makes two triangles congruent or similar.
+- **"Which of the following is sufficient to prove…":** you pick the one extra fact that makes two triangles congruent or similar.
 - **Side-length limits:** "Two sides of a triangle are 7 and 12. Which could be the third side?"
 
-Figures on the Digital SAT are drawn to scale unless a note says otherwise, so a quick look can rule out silly answers. Still, prove your answer from the given facts, never by eyeballing.
+Figures are drawn to scale unless a note says otherwise, so a quick look can rule out silly answers. Still, prove your answer from the given facts, never by eyeballing.
 
 ## The method
 
-1. **Mark up the figure.** Sketch the figure on scratch paper and write every given value on it. Note which lines are stated (or marked) as parallel and which sides are equal.
-2. **Name the relationship before you calculate.** Say it in words: "these two angles are a straight line, so they add to 180°" or "DE is parallel to BC, so the triangles are similar."
+1. **Mark up the figure.** Sketch it on scratch paper and write every given value on it. Note which lines are stated (or marked) as parallel and which sides are equal.
+2. **Name the relationship before you calculate.** For example: "these two angles make a straight line, so they add to 180°" or "DE is parallel to BC, so the triangles are similar."
 3. **Write one equation** from that relationship, either "equal" or "adds to 180°."
 4. **Solve, then fill in more angles.** Each angle you find can unlock the next one. Work toward the angle you need.
 5. **For similar triangles, match corners first.** Line up equal angles, then write a ratio with the small triangle on top on both sides: `small/big = small/big`.
@@ -30,33 +32,50 @@ Figures on the Digital SAT are drawn to scale unless a note says otherwise, so a
 
 ## Rules and formulas you need
 
-Only one of these, the 180° triangle sum, is on the reference sheet. Learn the rest by heart.
+Only one fact here, the 180° triangle sum, is on the reference sheet. Learn the rest by heart.
 
-| Angle fact | Rule |
+### Angle facts
+
+| Angles | Rule |
 |---|---|
-| Vertical angles (opposite each other where two lines cross) | equal |
-| Angles forming a straight line | add to 180° |
-| Angles all the way around a point | add to 360° |
-| Complementary angles | add to 90° |
-| Parallel lines: corresponding, alternate interior, alternate exterior angles | equal |
-| Parallel lines: same-side interior angles (between the lines, same side of the transversal) | add to 180° |
+| Vertical angles | equal |
+| On a straight line | add to 180° |
+| All the way around a point | add to 360° |
+| Complementary | add to 90° |
+| Corresponding (parallel lines) | equal |
+| Alternate interior or exterior (parallel lines) | equal |
+| Same-side interior (parallel lines) | add to 180° |
 
-> **Key idea:** When a transversal crosses two parallel lines, it makes only two angle sizes: a "small" one and a "big" one (unless the transversal is perpendicular, when all eight are 90°). Every small angle equals every other small angle, and small + big = 180°. This only works when the lines are given as parallel.
+What the names mean:
 
-| Triangle fact | Rule |
+- **Vertical angles** sit opposite each other where two lines cross.
+- Corresponding angles are in the same position at each crossing, like both top-right.
+- Alternate angles are on opposite sides of the transversal: *interior* means between the parallel lines, *exterior* means outside them.
+- Same-side interior angles are between the parallel lines, on the same side of the transversal.
+
+> **Remember:** A transversal across two parallel lines makes only two angle sizes, a "small" one and a "big" one (all eight are 90° if it's perpendicular). Every small angle equals every other small angle, and small + big = 180°. This works only when the lines are given as parallel.
+
+### Triangle facts
+
+| Fact | Rule |
 |---|---|
 | Angle sum | the three angles add to 180° |
-| Exterior angle (made by extending one side) | equals the sum of the two far-away interior angles |
-| Isosceles | the two equal sides sit opposite the two equal angles (and the reverse) |
+| Exterior angle | equals the two far interior angles added |
+| Isosceles | equal sides face equal angles |
 | Equilateral | all sides equal, every angle 60° |
-| Biggest side | is always opposite the biggest angle |
-| Triangle inequality | each side is shorter than the other two added together |
-| Third side range | if two sides are a and b with a > b, then `a − b < third side < a + b` |
-| Polygon angle sum | an n-sided polygon's angles add to (n − 2) × 180° |
+| Longest side | faces the biggest angle |
+| Third side | between a − b and a + b |
+| Polygon angle sum | (n − 2) × 180° for n sides |
+
+- An **exterior angle** is made by extending one side past a corner.
+- In an isosceles triangle, the two equal sides sit opposite the two equal angles, and the reverse is true too.
+- The **triangle inequality** says each side is shorter than the other two added together. So if two sides are a and b with a > b, then `a − b < third side < a + b`.
+
+### Similar and congruent triangles
 
 **Similar triangles** have the same shape: equal angles, and every side multiplied by the same scale factor k. Their areas differ by k². Two triangles are similar if any of these is true:
 
-- **AA:** two pairs of angles are equal. This is by far the most common one. A shared angle, vertical angles, or a parallel line usually hands you the second pair.
+- **AA:** two pairs of angles are equal. This is by far the most common. A shared angle, vertical angles, or a parallel line usually hands you the second pair.
 - **SAS similarity:** two pairs of sides have the same ratio, and the angles between them are equal.
 - **SSS similarity:** all three pairs of sides have the same ratio.
 
@@ -66,8 +85,8 @@ Only one of these, the 180° triangle sum, is on the reference sheet. Learn the 
 
 The two classic similar-triangle pictures:
 
-- **Triangle inside a triangle:** a segment DE drawn across triangle ABC, parallel to side BC, cuts off a small triangle ADE at the top. It's similar to ABC, and they share angle A.
-- **Bowtie:** two segments cross at a point, and the segments joining their ends on each side are parallel. The two triangles have equal vertical angles at the crossing point and equal alternate interior angles.
+- **Triangle inside a triangle:** segment DE crosses triangle ABC parallel to side BC, cutting off a small triangle ADE at the top. It's similar to ABC, and they share angle A.
+- **Bowtie:** two segments cross at a point, and the segments joining their ends on each side are parallel. The two triangles have equal vertical angles at the crossing and equal alternate interior angles.
 
 ## Worked examples
 
@@ -152,12 +171,12 @@ The greatest whole number less than 19 is 18. Perimeter = 7 + 12 + 18 = 37.
 
 ## Traps to avoid
 
-- **Same-side interior angles set equal.** They add to 180°. If your two angles look different in size, they can't be equal.
-- **Using parallel-line rules on lines that aren't parallel.** Lines that merely look parallel don't count. The problem must say so or mark them with matching arrows.
+- **Setting same-side interior angles equal.** They add to 180°. If the two angles look different in size, they can't be equal.
+- **Using parallel-line rules on lines that aren't parallel.** Looking parallel doesn't count. The problem must say so or mark the lines with matching arrows.
 - **Reporting x when they asked for the angle** (or the reverse). The choices often include both.
 - **Using part of a side in a similarity ratio.** In a triangle inside a triangle, the big triangle's side is the *whole* side, so add the pieces first.
-- **Matching the wrong sides.** Match sides by the equal angles across from them, or by the letter order in the similarity statement, never by where they sit on the page.
-- **Mixing up the base angles and the top angle of an isosceles triangle.** The equal angles are across from the equal sides.
+- **Matching the wrong sides.** Match sides by the equal angles across from them, or by the letter order, never by where they sit on the page.
+- **Mixing up an isosceles triangle's base angles and top angle.** The equal angles are across from the equal sides.
 - **Thinking AAA proves congruence.** Equal angles mean same shape, not same size.
 - **Allowing "equal to" in the triangle inequality.** With sides 7 and 12, a third side of 5 or 19 is impossible. The inequality is strict.
 - **Scaling angles.** A scale factor stretches sides, but angles never change.
@@ -167,22 +186,6 @@ The greatest whole number less than 19 is 18. Perimeter = 7 + 12 + 18 = 37.
 - Did I mark every given angle, equal side, and parallel line on my sketch?
 - Did I name the relationship (equal, adds to 180°, similar, isosceles) before writing an equation?
 - Are the lines actually given as parallel?
-- For similar triangles: did I match corners, use whole sides, and keep small-over-big on both sides?
+- Similar triangles: did I match corners, use whole sides, and keep small-over-big on both sides?
 - Did I plug x back in if the question wants an angle?
-- Does my answer make sense: angles add to 180°, the biggest side is across from the biggest angle?
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite (Geometry and Trigonometry testing points)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [College Board: Geometry and Trigonometry on the SAT](https://satsuite.collegeboard.org/sat/whats-on-the-test/math/types/geometry-trigonometry)
-- [Just Locked In: Angle and Line Relationships](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/lines-angles-and-triangles/angle-and-line-relationships.html)
-- [Just Locked In: Similar and Congruent Triangle Analysis](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/lines-angles-and-triangles/similar-and-congruent-triangle-analysis.html)
-- [Just Locked In: Triangle Properties Application](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/lines-angles-and-triangles/triangle-properties-application.html)
-- [Just Locked In: Conceptual Geometric Reasoning](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/lines-angles-and-triangles/conceptual-geometric-reasoning.html)
-- [Test Ninjas: Mastering Lines, Angles, and Triangles Questions on the SAT](https://test-ninjas.com/sat-lines-angles-triangles)
-- [Target Test Prep: Similar Triangles on the SAT](https://sat.blog.targettestprep.com/sat-similar-triangles/)
-- [SAT Sphere: Geometry on the Digital SAT, Similarity, Circles and Coordinates](https://www.satsphere.com/blog/geometry-on-the-digital-sat-similarity-circles-and-coordinates)
-- [Varsity Tutors: SAT Lines, Angles, and Triangles](https://www.varsitytutors.com/practice/subjects/sat/lessons/lines-angles-and-triangles)
-- [The Axiom Academy: SAT Lines, Angles, and Triangles](https://theaxiomacademy.org/learn/sat-lines-angles-triangles)
-- [PrepMaven: SAT Geometry Guide](https://prepmaven.com/blog/test-prep/sat-geometry/)
-- [Galvanize Test Prep: SAT Geometry Questions on Lines, Triangles and Circles](https://galvanizetestprep.com/blogs/sat-geometry-questions-lines-triangles-circles-guide/)
+- Does my answer make sense: angles add to 180°, and the biggest side faces the biggest angle?

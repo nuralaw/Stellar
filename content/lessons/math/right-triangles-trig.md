@@ -3,49 +3,64 @@ title: Right Triangles and Trigonometry
 skill: right-triangles-trig
 domain: geometry-trig
 section: math
-summary: Find any missing side or trig ratio in a right triangle fast, using the Pythagorean theorem, special triangles, SOH-CAH-TOA and the sin–cos swap rule.
+summary: Find any missing side or trig ratio in a right triangle using the Pythagorean theorem, special triangles, SOH-CAH-TOA and the sin–cos rule.
 minutes: 10
 ---
+
+> **Key idea:** Label the sides from the angle the question asks about, then use SOH-CAH-TOA. In a right triangle, the sine of one acute angle is the cosine of the other.
 
 ## What this question looks like
 
 These questions almost always have a right triangle in them, either drawn or described in words ("triangle ABC has a right angle at C"). Typical stems:
 
 - "What is the value of sin A?" or "What is tan R?" when some side lengths are given.
-- "In right triangle PQR, cos P = 5/13. What is sin R?" (one ratio given, another one asked).
-- "sin(3x + 4)° = cos(5x − 10)°. What is x?" (two angle expressions, one sine and one cosine).
+- "In right triangle PQR, cos P = 5/13. What is sin R?" (one ratio given, another asked).
+- "sin(3x + 4)° = cos(5x − 10)°. What is x?" (a sine and a cosine set equal).
 - A triangle with a 30°, 45° or 60° angle and one side given, asking for another side, a perimeter or an area.
-- Two similar right triangles, where a ratio from one triangle is used in the other.
-- Occasionally a conversion between degrees and radians.
+- Two similar right triangles, where a ratio from one is used in the other.
+- Now and then, a conversion between degrees and radians.
 
-Expect about 2–4 of these per test. Most are medium difficulty, and the hard ones are usually just two easy steps chained together.
+Expect about 2–4 of these per test. Most are medium difficulty, and the hard ones are usually two easy steps chained together.
 
 ## The method
 
 1. **Sketch and label.** If no figure is given, draw one. Mark the right angle and every side or angle you know.
-2. **Pick your reference angle.** Circle the angle the question asks about. Label the three sides *from that angle*: the **hypotenuse** (across from the right angle, always the longest), the **opposite** leg (across from your angle) and the **adjacent** leg (touching your angle, not the hypotenuse).
+2. **Pick your reference angle.** Circle the angle the question asks about, and label the three sides from that angle (see below).
 3. **Fill in missing sides.** Use a Pythagorean triple you recognize, a special triangle, or `a² + b² = c²`.
-4. **Choose the tool.** Ratio asked? Use SOH-CAH-TOA. One sine and one cosine set equal? Use the 90° rule. A 30°, 45° or 60° angle? Use the special-triangle ratios.
-5. **Answer the exact question.** Check: did they ask for a side, a ratio, a perimeter, or an area? Is the answer for angle A or angle B?
+4. **Choose the tool.** A ratio asked? Use SOH-CAH-TOA. A sine and a cosine set equal? Use the 90° rule. A 30°, 45° or 60° angle? Use the special-triangle ratios.
+5. **Answer the exact question.** A side, a ratio, a perimeter or an area? For angle A or angle B?
 
-> **Key idea:** A trig ratio depends only on the angle, not on how big the triangle is. If you know tan P = 7/24, you may simply *pretend* the legs are 7 and 24. Any real triangle with that angle is just a scaled copy.
+The three sides, named from your reference angle:
+
+- **Hypotenuse:** across from the right angle. It's always the longest side.
+- **Opposite:** the leg across from your angle.
+- **Adjacent:** the leg touching your angle (the one that isn't the hypotenuse).
+
+> **Remember:** A trig ratio depends only on the angle, not on the triangle's size. If tan P = 7/24, you can simply *pretend* the legs are 7 and 24. Any real triangle with that angle is just a scaled copy.
 
 ## Rules and formulas you need
 
-The Digital SAT reference sheet (the formula button in the test app) gives you the Pythagorean theorem, both special right triangles, and the facts that a circle has 360° or 2π radians and a triangle's angles add to 180°. It does **not** give SOH-CAH-TOA, the 90° rule, or degree–radian conversion. Learn those cold.
+The reference sheet (the formula button in the test app) gives the Pythagorean theorem, both special right triangles, and the facts that a circle has 360° or 2π radians and a triangle's angles add to 180°. Everything marked "No" below you must know cold.
 
-| Fact | What it says | On the sheet? |
+| Fact | Formula | On reference sheet? |
 |---|---|---|
-| Pythagorean theorem | `a² + b² = c²`, c = hypotenuse | Yes |
-| 45-45-90 triangle | sides x : x : x√2 | Yes |
-| 30-60-90 triangle | sides x : x√3 : 2x (x is across from 30°) | Yes |
-| SOH | sin θ = opposite / hypotenuse | No |
-| CAH | cos θ = adjacent / hypotenuse | No |
-| TOA | tan θ = opposite / adjacent | No |
-| 90° rule | sin x° = cos(90 − x)°, so if sin A = cos B (both acute), then A + B = 90 | No |
-| Radians | 180° = π radians; degrees × π/180 = radians | Half (360° = 2π is) |
+| Pythagorean theorem | `a² + b² = c²` | Yes |
+| 45-45-90 triangle | x : x : x√2 | Yes |
+| 30-60-90 triangle | x : x√3 : 2x | Yes |
+| SOH | sin θ = opposite/hypotenuse | No |
+| CAH | cos θ = adjacent/hypotenuse | No |
+| TOA | tan θ = opposite/adjacent | No |
+| 90° rule | sin x° = cos(90 − x)° | No |
+| Radians | 180° = π radians | Partly (360° = 2π is) |
 
-**Pythagorean triples** to spot instantly (and any multiple of them, like 6-8-10 or 15-20-25):
+- In the Pythagorean theorem, c is the hypotenuse.
+- In a 30-60-90 triangle, the shortest side x is across from 30°, the x√3 side is across from 60°, and the hypotenuse is exactly double the shortest side.
+- **90° rule:** if sin A = cos B and both angles are acute, then A + B = 90.
+- To convert, multiply degrees by π/180 to get radians.
+
+### Pythagorean triples
+
+Spot these instantly, along with any multiple of them:
 
 | Triple | Common multiples |
 |---|---|
@@ -54,7 +69,9 @@ The Digital SAT reference sheet (the formula button in the test app) gives you t
 | 8, 15, 17 | 16-30-34 |
 | 7, 24, 25 | 14-48-50 |
 
-**Special angle values** (these come straight from the special triangles):
+### Special angle values
+
+These come straight from the special triangles:
 
 | Angle | sin | cos | tan |
 |---|---|---|---|
@@ -62,12 +79,11 @@ The Digital SAT reference sheet (the formula button in the test app) gives you t
 | 45° (π/4) | √2/2 | √2/2 | 1 |
 | 60° (π/3) | √3/2 | 1/2 | √3 |
 
-Two more useful facts:
+### The two acute angles
 
-- In a right triangle, the two acute angles add to 90°. The leg opposite one acute angle is adjacent to the other. So sin A = cos B and tan A = 1 / tan B.
-- In a 30-60-90 triangle, the shortest side sits across from 30°, the √3 side across from 60°, and the hypotenuse is exactly double the shortest side.
+In a right triangle, the two acute angles add to 90°. The leg opposite one of them is adjacent to the other, so sin A = cos B and tan A = 1/tan B.
 
-> **Tip:** Similar triangles have the same angles, so they have the same trig ratios. Questions that give you a scale factor, area or perimeter for the second triangle are often handing you information you don't need.
+> **Tip:** Similar triangles have the same angles, so they have the same trig ratios. If a question gives you a scale factor, area or perimeter for the second triangle, that's often information you don't need.
 
 ## Worked examples
 
@@ -151,20 +167,20 @@ Double check in DEF: the scale is 13/39 = 1/3, so DF = 12 and EF = 5, and tan E 
 
 ## Traps to avoid
 
-- **Labeling from the wrong angle.** "Opposite" and "adjacent" change when you change angles. Relabel every time the question switches from A to B.
-- **sin A = sin B.** For the two acute angles, the true link is sin A = cos B. Equal sines only happen when the angles are equal.
+- **Labeling from the wrong angle.** "Opposite" and "adjacent" change when the angle changes. Relabel every time the question switches from A to B.
+- **Writing sin A = sin B.** For the two acute angles, the true link is sin A = cos B. Sines are equal only when the angles are equal.
 - **Setting the angles equal in a sin = cos equation.** The angles must *add* to 90, not match.
-- **Putting √3 on the wrong side.** In a 30-60-90 triangle, √3 goes across from 60°, and the side across from 30° is the shortest one.
-- **Using the hypotenuse in tangent.** Tangent uses two legs. Only sine and cosine use the hypotenuse.
-- **Answering the side when they want the ratio** (or the other way around). Reread the last line.
-- **Calculator in the wrong mode.** sin(30) in degrees is 0.5. In radians it's about −0.99. The calculator gives no warning.
-- **Forgetting to take the square root.** `a² + b² = c²` gives c², so finish with √.
+- **Putting √3 on the wrong side.** In a 30-60-90 triangle, √3 goes across from 60°, and the side across from 30° is the shortest.
+- **Using the hypotenuse in tangent.** Tangent uses the two legs. Only sine and cosine use the hypotenuse.
+- **Giving the side when they want the ratio** (or the reverse). Reread the last line.
+- **Calculator in the wrong mode.** sin(30) is 0.5 in degrees but about −0.99 in radians, and the calculator gives no warning.
+- **Forgetting the square root.** `a² + b² = c²` gives c², so finish with √.
 
 ## Desmos shortcut
 
-- **Check the angle mode first.** Click the wrench (settings) and choose Degrees or Radians to match the question. A ° symbol means degrees. π or the word "radians" means radians. Quick test: type `sin(30)`. If you see 0.5, you're in degrees.
+- **Check the angle mode first.** Click the wrench (settings) and pick Degrees or Radians to match the question. A ° symbol means degrees; π or the word "radians" means radians. Quick test: type `sin(30)`. If you see 0.5, you're in degrees.
 - **Let Desmos do the square roots.** Type `sqrt(39^2 - 36^2)` instead of doing the arithmetic by hand.
-- **Graph a sin = cos equation.** In degree mode, type `y = sin(4x + 6)` and `y = cos(2x + 24)`, then click where they cross. There are many crossings, so pick the one where both angles are between 0° and 90°. Solving with the 90° rule by hand is usually faster, so use this only as a check.
+- **Graph a sin = cos equation.** In degree mode, type `y = sin(4x + 6)` and `y = cos(2x + 24)`, then click where they cross. There are many crossings, so pick the one where both angles are between 0° and 90°. The 90° rule by hand is usually faster, so use this as a check.
 - **Don't over-use it.** For most right-triangle questions, a quick sketch and SOH-CAH-TOA beat the calculator.
 
 ## Quick checklist
@@ -172,19 +188,6 @@ Double check in DEF: the scale is 13/39 = 1/3, so DF = 12 and EF = 5, and tan E 
 - Did I draw the triangle and mark the right angle?
 - Did I label opposite and adjacent from the angle the question asks about?
 - Can I see a triple (3-4-5, 5-12-13, 8-15-17, 7-24-25) or a special triangle?
-- sin = cos with two angles? Do they add to 90?
-- Is Desmos in the right mode (degrees vs radians)?
+- A sine equal to a cosine? Do the two angles add to 90?
+- Is Desmos in the right mode (degrees or radians)?
 - Did I answer the exact thing asked (side, ratio, perimeter, area)?
-
-## Sources
-
-- [College Board: Geometry and Trigonometry on the SAT](https://satsuite.collegeboard.org/sat/whats-on-the-test/math/types/geometry-trigonometry)
-- [Magoosh: SAT Math Formula Sheet, Provided vs. Memorize](https://magoosh.com/sat/sat-math-formula-sheet/)
-- [PrepScholar: SAT Trigonometry Guide](https://blog.prepscholar.com/sat-trigonometry)
-- [PrepScholar: Critical SAT Math Formulas](https://blog.prepscholar.com/critical-sat-math-formulas-you-must-know)
-- [Test Ninjas: SAT Trigonometry Question Types](https://test-ninjas.com/sat-trigonometry)
-- [The Test Advantage: SAT Trig Ratios with Desmos](https://thetestadvantage.com/blog/sat-trig-ratios-with-desmos-may-2026-sin-cos-tan-step-by-step)
-- [Open Exam Prep: Trigonometry and Radian Measure](https://open-exam-prep.com/study-guides/sat-math/geometry-trigonometry/trigonometry-radian-measure)
-- [JustLockedIn: Right Triangles and Trigonometry Patterns](https://justlockedin-main.pages.dev/patterns/math/geometry-and-trigonometry/right-triangles-and-trigonometry/)
-- [Acely: Desmos Cheat Sheet for the SAT](https://acely.com/sat-prep/desmos-cheat-sheet)
-- [SAT Sphere: Geometry and Trig Tips](https://www.satsphere.com/resource/article/sat-geometry-trig-tips)

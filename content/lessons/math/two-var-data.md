@@ -3,13 +3,15 @@ title: Two-Variable Data and Scatterplots
 skill: two-var-data
 domain: problem-solving
 section: math
-summary: Read scatterplots and models, interpret slope and intercept in context, make predictions, and tell linear growth from exponential growth.
-minutes: 10
+summary: Read scatterplots and best-fit models, explain slope and intercept in context, make predictions, and tell linear growth from exponential growth.
+minutes: 12
 ---
+
+> **Key idea:** A model describes the trend, not each data point. Predictions come from the line or equation, and good interpretations say "predicted," "estimated" or "on average."
 
 ## What this question looks like
 
-A **scatterplot** shows pairs of data, like hours studied (x) and test score (y), as dots on a graph. A **line of best fit** (or curve of best fit) is the line that follows the overall trend of the dots. It's a *model*: it gives a **predicted** y for each x, which usually isn't exactly the real value.
+You get a scatterplot, a table or a model and answer one question about the trend. A **scatterplot** shows pairs of data as dots, like hours studied (x) and test score (y). The line or curve of best fit follows the overall trend: it's a model that gives a *predicted* y for each x, which usually isn't the real value.
 
 Typical stems:
 
@@ -23,55 +25,66 @@ Often the graph does most of the work, and the math is one substitution.
 
 ## The method
 
-1. **Read the axes first.** What does x measure, what does y measure, and what are the units? Check how much one gridline is worth. It's often 2, 5 or 10, not 1.
-2. **Read the trend.** Up to the right = positive slope. Down to the right = negative slope. Bending curve = probably exponential or quadratic, not linear.
-3. **Use the model, not the dots.** Predictions come from the line or the equation. A single dot is an *actual* value.
-4. **To predict:** plug x into the equation (or go up from x to the line, then across to the y-axis).
-5. **To interpret a number:** decide if it's the slope (change in y for each 1-unit increase in x) or the intercept (predicted y when x = 0). Then translate it into the story's words, using "predicted" or "estimated."
-6. **To pick an equation:** eliminate by sign of the slope, then by the y-intercept, then by steepness. Use Desmos if two choices are still close.
+Read the graph first, then let the model do the work.
+
+1. **Read the axes.** Note what x and y measure, their units, and what one gridline is worth. It's often 2, 5 or 10, not 1.
+2. **Read the trend.** Up to the right means a positive slope, down to the right a negative one. A bending curve means exponential or quadratic, not linear.
+3. **Use the model, not the dots.** Predictions come from the line or equation. A single dot is an *actual* value.
+4. **To predict,** plug x into the equation, or go up from x to the line and across to the y-axis.
+5. **To interpret a number,** decide whether it's the slope or the intercept. Then say it in the story's words, using "predicted" or "estimated."
+6. **To pick an equation,** eliminate by the sign of the slope, then the y-intercept, then the steepness. Use Desmos if two choices are still close.
 
 ## Rules and formulas you need
 
-**Linear model `y = mx + b`:**
+Know what each part of a model means in the story, and how to tell linear from exponential.
+
+### Linear models: `y = mx + b`
 
 | Part | Meaning in context |
 |---|---|
-| slope m | the *predicted* change in y for each increase of 1 in x |
-| intercept b | the *predicted* y when x = 0 (only meaningful if x = 0 makes sense in the story) |
+| slope m | *predicted* change in y for each +1 in x |
+| intercept b | *predicted* y when x = 0 |
 
-Slope from two points on the line: `m = (y₂ − y₁)/(x₂ − x₁)`. Pick points where the line crosses gridlines cleanly, not data dots.
+- The slope is a rate ("per year," "per hour"). The intercept is the starting value.
+- Slope from two points on the line: `m = (y₂ − y₁)/(x₂ − x₁)`. Pick points where the line crosses gridlines cleanly, not data dots.
 
-**Residual** = actual value − predicted value.
+### Residuals
 
-- Dot **above** the line → positive residual → the model *underestimated*.
-- Dot **below** the line → negative residual → the model *overestimated*.
-- Dot on the line → residual 0.
+A **residual** is actual value − predicted value.
 
-**Exponential model `y = a·bˣ`:**
+- Dot above the line: positive residual, so the model *underestimated*.
+- Dot below the line: negative residual, so the model *overestimated*.
+- Dot on the line: residual 0.
+
+### Exponential models: `y = a·bˣ`
 
 | Part | Meaning in context |
 |---|---|
-| a | the starting value (y when x = 0) |
-| b greater than 1 | growth: increases by (b − 1) × 100% each step. b = 1.2 means +20% per step |
-| b between 0 and 1 | decay: decreases by (1 − b) × 100% each step. b = 0.85 means −15% per step |
+| a | starting value (y when x = 0) |
+| b greater than 1 | growth of (b − 1) × 100% per step |
+| b between 0 and 1 | decay of (1 − b) × 100% per step |
 
-**Linear vs. exponential, the one rule to remember:**
+For example, b = 1.2 means +20% per step, and b = 0.85 means −15% per step.
+
+### Linear or exponential?
+
+Linear adds the same **amount** each step; exponential multiplies by the same factor each step.
 
 | If y changes by… | the model is… |
 |---|---|
-| the same **amount** each step (add 30, add 30, add 30) | linear |
-| the same **percent / factor** each step (×1.5, ×1.5, ×1.5) | exponential |
+| same amount (+30, +30, +30) | linear |
+| same percent or factor (×1.5, ×1.5) | exponential |
 
-On a scatterplot, a linear trend looks like a straight band of dots. An exponential trend curves: it starts flat and gets steeper (growth) or starts steep and flattens out toward zero (decay). A U or upside-down U shape is quadratic. In the long run, an increasing exponential always overtakes an increasing linear model, even if it starts below it.
+- On a scatterplot, a straight band of dots is linear.
+- A curve that gets steeper (growth) or flattens out toward zero (decay) is exponential.
+- A U or upside-down U shape is quadratic.
+- In the long run, a growing exponential always overtakes a growing linear model, even if it starts below it.
 
-**Association words:**
+### Describing the trend
 
-- **Positive association:** y tends to go up as x goes up. **Negative:** y tends to go down.
-- **Strong:** dots hug the line. **Weak:** dots are loosely scattered. A trend can be negative *and* strong.
-
-**Predictions inside vs. outside the data:** a prediction for an x inside the range of the data is more trustworthy than one far outside it. The trend might not continue.
-
-> **Key idea:** A model describes the trend, not each individual. Good interpretations say "predicted," "estimated" or "on average." Choices saying a value changes "exactly" or "for every single item" are usually wrong.
+- **Positive association:** y tends to go up as x goes up. Negative: y tends to go down.
+- Strong: dots hug the line. Weak: dots are loosely scattered.
+- A trend can be negative *and* strong.
 
 ## Worked examples
 
@@ -119,7 +132,7 @@ Predicted score at x = 6: 4.5(6) + 54 = 27 + 54 = 81. Actual score from the tabl
 
 **Answer:** (B)
 
-> **Tip:** If you ran your own regression in Desmos here, you'd get about `y = 4.47x + 54.37`, which is close but not the same. When the question *gives* you the line of best fit, always use the given equation.
+> **Tip:** If you ran your own regression in Desmos here, you'd get about `y = 4.46x + 54.37`, which is close but not the same. When the question *gives* you the line of best fit, always use the given equation.
 
 ### Example 3: Linear or exponential?
 
@@ -173,33 +186,34 @@ Which equation best models the data?
 ## Traps to avoid
 
 - **Reading a dot instead of the line.** "Predicted" means use the line or equation. "Actual" or "observed" means use the dot.
-- **Backwards residuals.** Residual = actual − predicted. A dot above the line has a positive residual.
-- **Mixing up slope and intercept.** The number multiplied by x is a rate ("per year," "per hour"). The constant is the starting or x = 0 value.
+- **Backwards residuals.** Residual = actual − predicted, so a dot above the line has a positive residual.
+- **Mixing up slope and intercept.** The number multiplied by x is a rate. The constant is the x = 0 value.
 - **Dropping the sign.** A negative slope means "decreases by," not "increases by."
-- **Overconfident wording.** Models predict; they don't guarantee. Avoid choices with "exactly," "every," or "always" about individuals.
+- **Overconfident wording.** Models predict; they don't guarantee. Choices saying "exactly," "every" or "always" about individuals are usually wrong.
 - **Misreading the scale.** If each gridline is 5 units, a line that rises 2 boxes rose 10, not 2.
 - **Rate vs. factor in exponentials.** 20% growth means multiply by 1.2, not 0.2. 15% decay means multiply by 0.85, not 0.15.
-- **Trusting predictions far outside the data.** An intercept at x = 0 can be meaningless if the data starts at x = 20.
+- **Trusting predictions far outside the data.** The trend might not continue there. An intercept at x = 0 can be meaningless if the data starts at x = 20.
 
 ## Desmos shortcut
 
-Desmos finds the best-fit equation for you, the most reliable method when answer choices are close.
+Desmos can find the best-fit equation for you, the safest method when answer choices are close. But if the question already gives you the line of best fit, use that one: your own regression is for *choosing* a model, not replacing one you were handed.
 
 1. Click **+** and choose **table**. Type the x-values in the x₁ column and the y-values in the y₁ column.
-2. On a new line, type a regression using `~` (the tilde) instead of `=`. Desmos turns `x1` into x₁ automatically.
-   - Linear: `y1 ~ mx1 + b`
-   - Exponential: `y1 ~ ab^x1`
-   - Quadratic: `y1 ~ ax1^2 + bx1 + c`
-3. Desmos shows the values of m and b (or a and b) and an r² value. The closer r² is to 1, the better the fit. Use r² to compare a linear fit with an exponential fit: the larger r² wins.
-4. Once Desmos has found m and b, you can use them like numbers. For a prediction at x = 12, type `12m + b`.
+2. On a new line, type a regression with `~` (the tilde) instead of `=`, using one of the forms below. Desmos turns `x1` into x₁ automatically.
+3. Read off m and b (or a and b) and r². The closer r² is to 1, the better the fit, so when comparing a linear and an exponential fit, the larger r² wins.
+4. Use the values Desmos found like numbers. For a prediction at x = 12, type `12m + b`.
 
-Other quick Desmos moves:
+Regressions to type:
 
-- **Test answer choices.** Graph each choice's equation on top of the table's points. The right one runs through the middle of the dots with some above and some below.
+- Linear: `y1 ~ mx1 + b`
+- Exponential: `y1 ~ ab^x1`
+- Quadratic: `y1 ~ ax1^2 + bx1 + c`
+
+Other quick moves:
+
+- **Test answer choices.** Graph each choice over the table's points. The right one runs through the middle of the dots, with some above and some below.
 - **Residuals.** Type the given model, like `f(x) = 4.5x + 54`, then `85 − f(6)` gives the residual in one line.
-- **Use x₁ and y₁ in regressions, not plain x and y.** `y ~ mx + b` won't fit the table.
-
-> **Trap:** If the question gives you the line of best fit, use it. Your own regression is for when you have to *choose* a model, not for replacing one the question already handed you.
+- **Use x₁ and y₁, not plain x and y.** `y ~ mx + b` won't fit the table.
 
 ## Quick checklist
 
@@ -209,14 +223,3 @@ Other quick Desmos moves:
 - For a residual, did I compute actual − predicted?
 - For interpretation, did I match the number to slope (rate) or intercept (start) and keep its sign?
 - For exponentials, is b the growth factor (1 + rate) and a the value at x = 0?
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite (skill descriptions and sample question)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [Test Ninjas: Two-Variable Data and Scatterplots on the SAT](https://test-ninjas.com/sat-two-variable-data-scatterplots)
-- [Albert.io: Scatter Plot Study Guide for the Digital SAT](https://www.albert.io/blog/scatter-plot-a-study-guide-for-mastering-scatterplots-and-models/)
-- [Open Exam Prep: Scatterplots and Line of Best Fit](https://open-exam-prep.com/study-guides/sat-math/problem-solving-data-analysis/scatterplots-line-best-fit)
-- [JustLockedIn: Estimation and Prediction from Scatterplots](https://justlockedin-main.pages.dev/patterns/math/problem-solving-and-data-analysis/two-variable-data:-models-and-scatterplots/estimation-and-prediction.html)
-- [Desmos workshop deck for the SAT: regressions with ~](https://s3.us-east-2.amazonaws.com/hpt-crm-public/workshops/web/decks/12-desmos-2/index.html)
-- [r/Sat: Official Desmos Thread](https://www.reddit.com/r/Sat/comments/1c8at7a/official_desmos_thread/)
-- [MathChops: A Five-Minute DSAT Desmos Intro](https://mathchops.substack.com/p/a-five-minute-dsat-desmos-intro)

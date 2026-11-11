@@ -4,7 +4,8 @@ import { formatMath } from "@/components/RichText";
 // Renders the small Markdown subset used by lessons (content/lessons/README.md):
 // ## / ### headings, paragraphs, - bullets, 1. numbered lists, tables, > **Label:** callouts,
 // **bold**, *italic*, `code`, [links](https://…), math notation in text (x^2, 2^(x+1), x_1, sqrt(x)).
-// In worked examples, everything from a "**Solution.**" paragraph to the next heading sits behind "Show solution".
+// In worked examples, everything from a "**Solution.**" paragraph through the "**Answer:**" line sits behind
+// "Show solution".
 
 export function slugify(s: string) {
   return s
@@ -160,8 +161,13 @@ export function Markdown({ source }: { source: string }) {
       items.push(blocks[i]);
       continue;
     }
+    // The hidden part ends with the "**Answer:** …" paragraph (or at the next heading if there's none).
     const group: Block[] = [];
-    while (i < blocks.length && blocks[i].t !== "h2" && blocks[i].t !== "h3") group.push(blocks[i++]);
+    while (i < blocks.length && blocks[i].t !== "h2" && blocks[i].t !== "h3") {
+      const b = blocks[i++];
+      group.push(b);
+      if (b.t === "p" && /^\*\*Answer:?\*\*/.test(b.text)) break;
+    }
     i--;
     items.push({ t: "solution", blocks: group });
   }

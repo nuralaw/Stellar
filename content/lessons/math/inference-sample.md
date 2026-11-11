@@ -4,59 +4,67 @@ skill: inference-sample
 domain: problem-solving
 section: math
 summary: Use a random sample to estimate a whole population, read a margin of error as a range of believable values, and know what a bigger sample changes.
-minutes: 9
+minutes: 10
 ---
-
-## What this question looks like
-
-A short paragraph describes a **survey or study of a sample**: a smaller group picked from a bigger one. Then you're asked one of these:
-
-- "Based on the sample, which is the best estimate of the number of [people/items] in the whole [town/school/factory] that…?"
-- "The estimate has an associated **margin of error** of 3%. Which of the following is the most appropriate conclusion?"
-- "Which of the following values is plausible for…?" or "…is NOT plausible?"
-- "Which change would most likely **decrease the margin of error**?"
-
-The calculations are small. Most points are lost by reading the conclusion choices too quickly.
-
-Words to know:
-
-- **Population**: the whole group you care about (all 48,000 households in a city).
-- **Sample**: the smaller group that was actually measured (400 of those households).
-- **Random sample**: everyone in the population had a fair chance to be picked. Only a random sample lets you make estimates about the population.
-- **Sample statistic**: a number from the sample, like a sample mean (average) or sample proportion (fraction).
-- **Margin of error**: how far the true population value could plausibly be from the sample's number, just from the luck of which people got picked.
-
-## The method
-
-**For "best estimate" questions:**
-
-1. Find the sample proportion: part / sample size.
-2. Multiply it by the **population** size, not the sample size.
-3. Check that the result is sensible (smaller than the population, roughly the right share).
-
-**For margin-of-error questions:**
-
-1. Build the interval: (estimate − margin) to (estimate + margin). Write both numbers down before reading the choices.
-2. Note what the interval is about: a **population mean** or **population proportion**, for the population that was sampled. Not individuals, and not some other group.
-3. Pick the choice that says the true value is **plausibly / likely** inside that interval. Cross out choices that say "exactly", "all", "every" or "definitely".
-4. For a claim like "a majority" or "more than 40%", check the **whole interval**. The claim is supported only if every value in the interval agrees with it.
 
 > **Key idea:** A margin of error turns one number into a range of believable values for the population. It describes the group's average or share, never every single member.
 
+## What this question looks like
+
+A short paragraph describes a survey or study of a **sample**, a smaller group picked from a bigger one. Then you're asked one of these:
+
+- "Based on the sample, which is the best estimate of the number of [people/items] in the whole [town/school/factory] that…?"
+- "The estimate has an associated margin of error of 3%. Which of the following is the most appropriate conclusion?"
+- "Which of the following values is plausible for…?" or "…is NOT plausible?"
+- "Which change would most likely decrease the margin of error?"
+
+The calculations are small. Most points are lost by reading the conclusion choices too quickly.
+
+### Words to know
+
+- **Population:** the whole group you care about (all 48,000 households in a city).
+- **Sample:** the smaller group that was actually measured (400 of those households).
+- **Random sample:** everyone in the population had a fair chance to be picked. Only a random sample lets you make estimates about the population.
+- **Sample statistic:** a number from the sample, like a sample mean (average) or sample proportion (fraction).
+- **Margin of error:** how far the true population value could plausibly be from the sample's number, just from the luck of who got picked.
+
+## The method
+
+There are two kinds of question: scaling up to a best estimate, and reading a margin of error.
+
+### For "best estimate" questions
+
+1. Find the sample proportion: part / sample size.
+2. Multiply it by the **population** size, not the sample size.
+3. Check that the result is sensible: smaller than the population and roughly the right share.
+
+### For margin-of-error questions
+
+1. Build the interval: (estimate − margin) to (estimate + margin). Write both ends down before reading the choices.
+2. Note what the interval is about: the population mean or proportion, for the population that was sampled.
+3. Pick the choice that says the true value is *plausibly* or *likely* inside that interval.
+4. For a claim like "a majority" or "more than 40%", check the whole interval. The claim holds only if every value in the interval agrees with it.
+
 ## Rules and formulas you need
 
-| Fact | What it means for you |
+You need three calculations and a few facts about what changes the margin.
+
+### Estimates and intervals
+
+| Fact | Example |
 |---|---|
 | Estimate = sample proportion × population size | 34% of the sample → about 34% of the population |
-| Interval = estimate ± margin of error | 52% ± 3% → from 49% to 55% |
-| Margin of error = half the width of the interval | Interval 0.31 to 0.39 → margin 0.04, estimate 0.35 (the midpoint) |
-| Larger sample → smaller margin of error | Bigger random samples give more precise estimates |
-| Smaller margin of error = narrower interval = more precise | A smaller margin is better, not worse |
-| Higher confidence level → larger margin of error | Being more sure costs you a wider range |
-| Results extend only to the population that was sampled | A random sample of one school says nothing sure about other schools |
-| Margin of error does not fix bias | A huge but non-random sample is still unreliable |
+| Interval = estimate ± margin | 52% ± 3% → 49% to 55% |
+| Margin = half the interval's width | 0.31 to 0.39 → margin 0.04, estimate 0.35 (the midpoint) |
 
-Good to know: the margin of error shrinks with the **square root** of the sample size. To cut it roughly in half, you need about **4 times** as many people, not 2 times. The SAT mostly just tests the direction (bigger sample, smaller margin), so you will not need a margin-of-error formula.
+### What changes the margin of error
+
+- A larger random sample gives a smaller margin of error.
+- A smaller margin means a narrower interval, so a more precise estimate. Smaller is better.
+- A higher confidence level gives a larger margin. Being more sure costs you a wider range.
+- The margin shrinks with the **square root** of the sample size: to cut it roughly in half, you need about 4 times as many people, not 2 times.
+
+The SAT mostly tests the direction (bigger sample, smaller margin), so you won't need a margin-of-error formula.
 
 ## Worked examples
 
@@ -130,13 +138,13 @@ Why the others are wrong: (A) has the rule backward. (B) ignores sample size, wh
 
 ## Traps to avoid
 
-- **Scaling with the wrong number.** Multiply the sample proportion by the population size. Using the sample size, or dividing the wrong way, gives a choice that is waiting for you.
-- **Mean vs. individuals.** An interval for the mean says nothing about every member. "All", "every" or "each" in a choice is almost always wrong.
-- **"Exactly" answers.** A sample never pins the population value down exactly. Look for "plausible", "likely" or "approximately".
+- **Scaling with the wrong number.** Multiply the sample proportion by the population size. Using the sample size, or dividing the wrong way, gives a choice that's waiting for you.
+- **Mean vs. individuals.** An interval for the mean says nothing about each member. "All," "every" or "each" in a choice is almost always wrong.
+- **"Exactly" answers.** A sample never pins the population value down exactly. Look for "plausible," "likely" or "approximately."
 - **Claiming a direction the interval doesn't support.** If the interval crosses the line (like 50%), neither side is proven.
-- **Generalizing to an unsampled group.** A sample from one club, school or city only speaks for that club, school or city.
-- **Thinking a bigger margin is better.** Bigger margin means less precise.
-- **Thinking a big sample fixes a bad sample.** A large online poll of volunteers can still be biased. Random selection matters more than size.
+- **Generalizing to an unsampled group.** A sample from one club, school or city speaks only for that club, school or city.
+- **Thinking a bigger margin is better.** A bigger margin means a less precise estimate.
+- **Thinking a big sample fixes a bad sample.** The margin of error doesn't cover bias. A huge online poll of volunteers can still be biased; random selection matters more than size.
 - **Mixing up width and margin.** The full width of the interval is twice the margin of error.
 - **Comparing overlapping intervals.** If two groups' intervals overlap, you can't confidently say one group's true value is higher.
 
@@ -147,14 +155,4 @@ Why the others are wrong: (A) has the rule backward. (B) ignores sample size, wh
 - For margins: write both ends of the interval before reading the choices.
 - Is the interval about a mean or proportion, not individuals?
 - Does the claim hold for the whole interval?
-- Cross out "exactly", "all", "every" and any group that wasn't sampled.
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite (skill descriptions, Appendix B)](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [Test Ninjas: SAT Data Inference and Margin of Error](https://www.test-ninjas.com/sat-data-inference-margin-of-error)
-- [Varsity Tutors: SAT Inferences and Claims from Statistics](https://www.varsitytutors.com/practice/subjects/sat/lessons/inferences-and-claims-from-statistics)
-- [Albert.io: Digital SAT Math, Inference from Sample Statistics and Margin of Error](https://www.albert.io/blog/?p=117755)
-- [Achievable: SAT Problem-Solving and Data, Inferences](https://app.achievable.me/study/sat/learn/problem-solving-and-data-methods-inferences)
-- [TestPrepKart: SAT Margin of Error Practice Questions](https://testprepkart.com/sat/blog/sat-margin-of-error-practice-questions)
-- [Open Exam Prep: Study Design and Margin of Error](https://open-exam-prep.com/study-guides/sat-math/problem-solving-data-analysis/study-design-margin-error)
+- Cross out "exactly," "all," "every" and any group that wasn't sampled.

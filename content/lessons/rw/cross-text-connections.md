@@ -3,58 +3,67 @@ title: Cross-Text Connections
 skill: cross-text-connections
 domain: craft-structure
 section: rw
-summary: Read two short texts on the same topic, pin down each author's claim, and predict exactly how one author would answer the other.
-minutes: 10
+summary: Read two short texts on one topic, pin down each author's claim, and predict how one author would answer the other.
+minutes: 11
 ---
+
+> **Key idea:** An author can only "answer" with what's in their own text. Apply that author's ideas to the other text's claim, never your own opinion or outside facts.
 
 ## What this question looks like
 
-This is the only Reading and Writing question with **two texts**, labeled **Text 1** and **Text 2**. They're short (about 50–90 words each) and cover the same topic, often a scientist's idea and then another researcher's finding about it. You'll usually see about one per module. The stems look like this:
+This is the only Reading and Writing question with **two texts**, labeled Text 1 and Text 2. Both are short (about 50–90 words) and cover the same topic, often a scientist's idea and then another researcher's finding about it. Expect about one per module.
+
+The stems look like this:
 
 - "Based on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?"
 - "Based on the texts, how would [researcher from Text 1] most likely respond to the findings in Text 2?"
 - "Based on the texts, both authors would most likely agree with which statement?"
 
-So there are really two jobs: **respond** questions (one side reacts to the other) and **agree** questions (find shared ground).
+That gives two kinds of question:
 
-> **Key idea:** The responding author can only "answer" with what's in their own text. Your job is to apply that author's ideas to the other text's claim. Don't use your own opinion or outside facts.
+- **Respond:** one author reacts to the other's claim or finding.
+- **Agree:** you find the idea both authors share.
 
 ## The method
 
-1. **Read the question first.** Figure out three things: Is it *respond* or *agree*? **Who** is responding? Responding to **what**: the whole text, one underlined claim, or one finding?
-2. **Read Text 1 and sum up its claim** in a few words, like "trout are small because of genes." If something is underlined, that's the claim that matters.
-3. **Read Text 2 and sum up its claim** the same way. Note its attitude toward the Text 1 idea, even if Text 2 never mentions Text 1 directly. New evidence that points elsewhere still counts as a response.
-4. **Name the relationship** (see the table below): disagree, qualify ("yes, but…"), offer another explanation, or support and extend.
-5. **Predict the answer** in one sentence: "Author 2 would say ___, because ___." For agree questions, predict the broadest idea that both texts actually support.
-6. **Check every choice against both texts.** Throw out choices that are true of only one text, that swap the authors, that go too far, or that bring in something neither text says.
+Use the same six steps on every cross-text question.
 
-> **Tip:** The key lines are often the **last sentence of Text 1** (where its claim lands) and the **first sentence or two of Text 2** (where the response starts). Read both texts fully, then reread those lines when you predict.
+1. **Read the question first.** Is it respond or agree? Who is responding, and to what: the whole text, an underlined claim, or one finding?
+2. **Sum up Text 1's claim** in a few words, like "trout are small because of genes." If something is underlined, that's the claim that matters.
+3. **Sum up Text 2's claim** the same way, and note its attitude toward Text 1's idea. Text 2 may never mention Text 1; new evidence that points elsewhere still counts as a response.
+4. **Name the relationship** using the table below: disagree, another explanation, qualify, complicate, or support.
+5. **Predict the answer** in one sentence: "Author 2 would say ___, because ___." For agree questions, predict the broadest idea both texts back.
+6. **Check every choice against both texts.** Cross out any choice that fails either one (the usual ways are listed in Traps to avoid).
+
+> **Tip:** The key lines are usually the last sentence of Text 1, where its claim lands, and the first sentence or two of Text 2, where the response starts. Read both texts fully, then reread those lines before you predict.
 
 ## Rules and formulas you need
 
-### The relationships you'll see
+Almost every pair of texts fits one of five relationships, and each has a typical right-answer wording.
 
-| Relationship | What the second view does | How the right answer often sounds |
+### The five relationships
+
+| Relationship | What the response does | Right answer often says |
 |---|---|---|
-| Disagree | says the first claim is wrong | "would argue that the claim is mistaken because…" |
-| Alternative explanation | accepts the facts but gives a different cause | "would suggest that the pattern is better explained by…" |
-| Qualify ("yes, but") | accepts part of the claim and adds a limit or condition | "would agree in part but note that it holds only when…" |
-| Complicate | adds evidence that makes the claim less certain | "would caution that the claim may be premature" |
-| Support / extend | agrees and adds new evidence or a further step | "would welcome the finding as evidence for…" |
+| Disagree | calls the claim wrong | "the claim is mistaken" |
+| Another explanation | same facts, different cause | "better explained by…" |
+| Qualify ("yes, but") | accepts part, adds a limit | "holds only when…" |
+| Complicate | adds evidence that raises doubt | "may be premature" |
+| Support / extend | agrees and adds evidence | "evidence for…" |
 
-**Qualify** is the one students miss most. When Text 2 partly agrees, any choice that says "completely wrong" or "fully correct" is wrong.
+**Qualify** is the one students miss most. When an author partly agrees, any choice that says "completely wrong" or "fully correct" is out.
 
 ### Agree questions: find the shared floor
 
-For "both authors would agree," ignore what they argue *about* and look for what they both take for granted. The right answer is usually modest and general, like "the problem is real" or "context matters." Every word of it must be backed by **both** texts.
+Ignore what the authors argue *about* and look for what they both take for granted. The right answer is usually modest and general, like "the problem is real" or "context matters." Every word of it must be backed by both texts.
 
 ### The question can point either way
 
-Sometimes the stem flips direction and asks how the Text 1 researcher would respond to Text 2. The method is the same. Just make sure you're speaking for the right author, and pay attention to which name is in the stem.
+Some stems flip direction and ask how the Text 1 author would respond to Text 2. The method is the same; just check which name is in the stem and speak for that author.
 
-### Respect each author's strength
+### Match each author's caution
 
-Authors on the SAT usually make careful claims: "mainly," "may," "in most cases." A correct answer keeps that level of caution. Words like *always*, *never*, *only*, *entirely* and *no effect* are warning signs unless an author really said that.
+SAT authors usually make careful claims with words like *mainly*, *may* or *in most cases*. A correct answer keeps that same level of caution.
 
 ## Worked examples
 
@@ -144,37 +153,21 @@ They disagree on **style**: modern (Moss) vs. imitation (Ibe). Look underneath t
 
 ## Traps to avoid
 
-- **One-text answer.** The choice accurately describes one text but gets the other wrong or ignores it. Every part has to fit both.
-- **Swapped authors.** The choice gives Text 1's idea to Text 2, or flips a finding (as in Example 1, choice A). Keep each claim labeled with its author.
-- **All-or-nothing.** The choice says "completely rejects" or "fully accepts" when the real response is "yes, but."
-- **Too extreme.** *Always*, *never*, *only*, *no effect*, *any species*. These go beyond what careful authors say.
-- **Outside information.** The choice brings in a fact, cause or group that neither text mentions, even if it sounds reasonable.
-- **Same topic ≠ same view.** Two texts about the same subject can still disagree. And a contrast word in Text 2 doesn't automatically mean it rejects Text 1; it may just add a limit.
-- **True but off-target.** The choice says something both texts support, but it doesn't answer the specific claim the stem points to.
+Most wrong choices fail one of these checks.
 
-> **Trap:** Don't answer with what *you* think about phones, trout or architecture. The question is what the named author would say, using only their text.
+- **One-text answer.** It describes one text well but gets the other wrong or ignores it. Every part must fit both.
+- **Swapped authors.** It gives Text 1's idea to Text 2, or flips a finding (Example 1, choice A). Keep each claim tied to its author.
+- **All-or-nothing.** It says "completely rejects" or "fully accepts" when the real response is "yes, but."
+- **Too extreme.** *Always*, *never*, *only*, *no effect*, *any species* go beyond what careful authors say, unless an author really said it.
+- **Outside information or your own opinion.** It brings in a fact, cause or group neither text mentions, or what *you* think about the topic. Sounding reasonable isn't enough.
+- **Same topic doesn't mean same view.** Two texts on one subject can still disagree. And a contrast word in Text 2 doesn't always mean it rejects Text 1; it may just add a limit.
+- **True but off-target.** Both texts support it, but it doesn't answer the specific claim the stem points to.
 
 ## Quick checklist
 
 - Respond or agree? Who's responding, and to which exact claim?
 - Did I sum up each text's claim in a few words?
-- Did I name the relationship: disagree, another explanation, qualify, or support?
+- Did I name the relationship?
 - Did I predict the response before reading the choices?
-- Does every part of my answer fit **both** texts, with the authors in the right places?
+- Does every part of my answer fit both texts, with the authors in the right places?
 - Is my answer as cautious as the authors are?
-
-## Sources
-
-- [College Board – Student Question Bank: Reading and Writing](https://satsuite.collegeboard.org/practice/student-question-bank/reading-writing)
-- [PrepMaven – SAT Cross-Text Connections Strategy](https://prepmaven.com/blog/test-prep/sat-cross-text-connections-strategy/)
-- [Test Ninjas – Mastering Cross-Text Connections Questions](https://test-ninjas.com/sat-cross-text-connections)
-- [Albert – Digital SAT Reading and Writing: Cross-Text Connections](https://www.albert.io/blog/?p=117777)
-- [Open Exam Prep – Cross-Text Connections Study Guide](https://open-exam-prep.com/study-guides/sat/reading-and-writing-craft-and-structure/cross-text-connections)
-- [NUM8ERS – SAT Reading and Writing: Cross-Text Connections](https://num8ers.com/cross-text-connections/)
-- [Achievable – Craft and Structure: Cross-Text Connections](https://app.achievable.me/study/sat/learn/craft-structure-cross-text-connections)
-- [Manhattan Review – SAT Craft and Structure](https://www.manhattanreview.com/sat-craft-structure/)
-- [Larry Learns – Craft and Structure on the SAT](https://www.larrylearns.com/blog/craft-and-structure-sat)
-- [Acely – SAT Reading and Writing Guide](https://acely.com/sat-prep/sat-reading-and-writing-guide)
-- [Walker Prep – The Day I Realized SAT Reading Is…](https://walkerprep.substack.com/p/the-day-i-realized-sat-reading-is)
-- [52 SAT Reading and Writing Tips to Break 1500, from a 1590 scorer (video summary)](https://youtubesummary.com/summary/FS_nvzsoIyE)
-- [Ary Morrison – Stop Reading the Whole Passage on SAT Reading (video summary)](https://youtubesummary.com/summary/YiJgduV0cjM)

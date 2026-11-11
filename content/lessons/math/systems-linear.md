@@ -3,65 +3,72 @@ title: Systems of Linear Equations
 skill: systems-linear
 domain: algebra
 section: math
-summary: Solve any system of two linear equations quickly, find combinations like x + y without solving, and spot no-solution and infinite-solution systems in seconds.
+summary: Solve two-equation systems fast, get combos like x + y without solving, and spot no-solution and infinite-solution systems in seconds.
 minutes: 11
 ---
 
+> **Key idea:** Read what's asked before you solve. Combos like x + y often fall out by adding or subtracting the equations, and "how many solutions" only needs a coefficient check.
+
 ## What this question looks like
 
-A *system* is two equations that must both be true at the same time. On the Digital SAT you'll usually see two lines stacked on top of each other, like `3x + 2y = 12` and `x − y = 1`, and one of these questions:
+These questions give you two linear equations that must both be true at once, called a **system**. You'll usually see them stacked, like `3x + 2y = 12` and `x − y = 1`, with one of these stems:
 
 - "What is the solution (x, y) to the system?" or "What is the value of y?"
-- "What is the value of x + y?" (or 2x − y, or some other mix of x and y)
+- "What is the value of x + y?" (or 2x − y, or another mix)
 - "How many solutions does the system have?" (exactly one, none, or infinitely many)
-- "In the system, k is a constant. If the system has no solution, what is the value of k?"
-- A word problem with two unknowns: tickets and prices, coins, two phone plans, mixtures. You build the two equations yourself.
+- "k is a constant. If the system has no solution, what is the value of k?"
+- A word problem with two unknowns (tickets, coins, phone plans, mixtures) where you build both equations.
 
-The *solution* of a system is the point where the two lines cross. Every method below is a way of finding that point, or of showing there isn't one.
+The solution of a system is the point where the two lines cross. Every method below finds that point or shows there isn't one.
 
 ## The method
 
-1. **Read the last line first.** Find out exactly what is asked: x, y, x + y, a constant, or the number of solutions. This decides your method.
-2. **Line the equations up.** Move things so both look like `ax + by = c`: x-terms over x-terms, y-terms over y-terms, numbers on the right. Clear fractions or decimals by multiplying the whole equation if they bother you.
-3. **Pick the fastest tool.**
-   - One variable already alone (`y = 4x − 3`) → **substitution**: put that expression in place of y in the other equation.
-   - Coefficients that match, are opposites, or match after one multiplication → **elimination**: add or subtract the equations so one variable disappears.
-   - Ugly decimals, or you just want certainty → **Desmos**: graph both, click the crossing point.
-   - Question about *how many* solutions or an unknown constant → **compare coefficients** (see the rules below). Don't solve at all.
-4. **For combinations, try adding or subtracting the equations as they are** before solving. Very often x + y falls out in one step.
-5. **Answer the question that was asked.** If you found x but they want y, or a count but they want money, take the last step.
-6. **Check in both original equations** (or glance at the Desmos graph). It takes ten seconds and catches sign errors.
+Follow these steps on every system; step 3 picks the tool.
 
-> **Key idea:** Elimination works because if two equations are true, their sum and difference are true too. When you scale an equation, multiply *every* term, including the number on the right.
+1. **Read the last line first.** Is it asking for x, y, x + y, a constant, or the number of solutions?
+2. **Line the equations up** as `ax + by = c`: x under x, y under y, numbers on the right. Multiply through to clear fractions or decimals if they bother you.
+3. **Pick the fastest tool** from the list below.
+4. **For a combination, add or subtract the equations as they are** before solving. Often x + y appears in one step.
+5. **Answer what was asked.** If you found x but they want y, take the last step.
+6. **Check in both original equations,** or glance at the Desmos graph. It takes ten seconds.
+
+How to pick the tool:
+
+- **Substitution** when one variable is already alone (`y = 4x − 3`): put that expression in place of y in the other equation.
+- **Elimination** when coefficients match, are opposites, or match after one multiplication: add or subtract so one variable disappears. It works because the sum or difference of two true equations is also true.
+- **Desmos** for ugly decimals, or when you want certainty: graph both and click the crossing.
+- **Compare coefficients** for "how many solutions" or an unknown constant. Don't solve at all (see the rules below).
 
 ## Rules and formulas you need
 
-Write both equations as `a₁x + b₁y = c₁` and `a₂x + b₂y = c₂`. Then ask one question: **is the left side of one equation just a multiple of the left side of the other?**
+Write both equations as `a₁x + b₁y = c₁` and `a₂x + b₂y = c₂`. Then ask: is the left side of one just a multiple of the other's left side?
 
-| What you see | Slopes and intercepts | Graph | Number of solutions |
+| What you see | Ratios | Graph | Solutions |
 |---|---|---|---|
-| Left sides are NOT multiples (a₁/a₂ ≠ b₁/b₂) | different slopes | lines cross once | exactly one |
-| Left sides are multiples, right sides are not (a₁/a₂ = b₁/b₂ ≠ c₁/c₂) | same slope, different y-intercept | parallel lines | none |
-| Whole equation is a multiple (a₁/a₂ = b₁/b₂ = c₁/c₂) | same slope, same y-intercept | the same line twice | infinitely many |
+| Left sides not multiples | a₁/a₂ ≠ b₁/b₂ | cross once | one |
+| Left sides multiples, right sides not | a₁/a₂ = b₁/b₂ ≠ c₁/c₂ | parallel | none |
+| Whole equation a multiple | a₁/a₂ = b₁/b₂ = c₁/c₂ | same line | infinitely many |
 
-Examples of each:
+Parallel lines have the same slope but different y-intercepts. The same line has the same slope and the same y-intercept.
 
-- `2x + 3y = 7` and `x − y = 1` → 2/1 ≠ 3/(−1), so **one solution**.
-- `2x + 3y = 7` and `4x + 6y = 9` → the left side doubled, but 7 doubled is 14, not 9, so **no solution**.
-- `2x + 3y = 7` and `4x + 6y = 14` → everything doubled, so **infinitely many solutions**.
+### One example of each
 
-What elimination tells you:
+- `2x + 3y = 7` and `x − y = 1`: 2/1 ≠ 3/(−1), so one solution.
+- `2x + 3y = 7` and `4x + 6y = 9`: the left side doubled, but 7 doubled is 14, not 9, so no solution.
+- `2x + 3y = 7` and `4x + 6y = 14`: everything doubled, so infinitely many solutions.
+
+### What elimination leaves you with
 
 | You end up with | Meaning |
 |---|---|
-| a real value, like x = 3 | one solution |
+| a value, like x = 3 | one solution |
 | a false statement, like 0 = 5 | no solution |
-| a true statement, like 0 = 0 | infinitely many solutions |
+| a true statement, like 0 = 0 | infinitely many |
 
-More facts to know cold:
+### Facts to know cold
 
-- Two different lines can never meet at exactly two points. "Exactly two solutions" is always wrong for a linear system.
-- In slope-intercept form `y = mx + b`, the slope is m. From `ax + by = c`, the slope is `−a/b`.
+- Two different lines can never meet at exactly two points.
+- The slope of `y = mx + b` is m. The slope of `ax + by = c` is −a/b.
 - Whether there's exactly one solution depends only on the x and y coefficients, never on the numbers on the right.
 
 ## Worked examples
@@ -170,60 +177,36 @@ Why the others are wrong: (B) is the number of *small* candles. (C) is 650 ÷ 10
 
 ## Traps to avoid
 
-- **Answering for the wrong thing.** You solve for x, but the question asks for y, x + y, or the price instead of the count. The test puts your half-finished number in the choices.
-- **Scaling only part of an equation.** When you multiply to line up coefficients, the number on the right side gets multiplied too. Forgetting it is the most common elimination error.
-- **Sign mistakes when subtracting.** Subtracting −4y is adding 4y. Write the subtraction out in parentheses if you're unsure.
-- **Mixing up "no solution" and "infinitely many."** Equal slopes alone don't decide it. You must also compare the constants.
-- **Dropping a negative in a ratio.** −2 and +2 are different multipliers. A lost sign can flip parallel lines into crossing lines.
-- **Comparing coefficients before lining the equations up.** If one equation is `y = 3x + 2` and the other is `6x − 2y = −4`, rewrite the first as `3x − y = −2` first. Now you can see the second is double the first, so there are infinitely many solutions.
-- **Backwards translations in word problems.** "There are 3 times as many apples as oranges" means A = 3R, not R = 3A. Test it with small numbers: 3 oranges should give 9 apples.
-- **Picking "exactly two solutions."** Two lines can't do that. It's always a trap choice.
+Each of these mistakes has a matching wrong choice waiting for you.
+
+- **Answering for the wrong thing.** You found x, but they asked for y, x + y, or a price instead of a count. Your half-finished number is in the choices.
+- **Scaling only part of an equation.** When you multiply to line up coefficients, multiply the right side too. This is the most common elimination error.
+- **Sign slips when subtracting.** Subtracting −4y means adding 4y. Write the subtraction in parentheses if unsure.
+- **Mixing up "no solution" and "infinitely many".** Equal slopes alone don't decide it; compare the constants too.
+- **Dropping a negative in a ratio.** −2 and 2 are different multipliers. A lost sign turns parallel lines into crossing ones.
+- **Comparing before lining up.** For `y = 3x + 2` and `6x − 2y = −4`, first rewrite as `3x − y = −2`. Now the second is clearly double the first: infinitely many solutions.
+- **Backwards word translations.** "3 times as many apples as oranges" is A = 3R, not R = 3A. Test it: 3 oranges should give 9 apples.
+- **Picking "exactly two solutions".** Two lines can't do that, so it's always a trap choice.
 
 ## Desmos shortcut
 
-Desmos is allowed on every Digital SAT math question, and for systems it is a real weapon.
+Desmos is allowed on every Digital SAT math question, and it solves most systems in seconds.
 
-**Finding the solution.** Type each equation on its own line, exactly as given. You don't need to solve for y first. Click the point where the lines cross and Desmos shows its coordinates. Then do the last step the question asks for (x + y, 2x − y, and so on) with those numbers.
+- **Find the solution.** Type each equation on its own line, exactly as given. Click the crossing point to see its coordinates, then do the last step the question asks for.
+- **Decimals.** By hand, `0.4x + 1.5y = 7` and `2.6x − 0.9y = 2.9` are slow. In Desmos you click the crossing, read (2.5, 4), and get x + y = 6.5.
+- **Other letters.** Desmos only graphs x and y, so retype a system in a and b (or p and q) using x and y.
+- **How many solutions?** One crossing: one solution. Parallel lines: none. Only one line visible: infinitely many (hide one equation with its color circle to see the other is still there).
+- **Unknown constant.** Type `kx + 15y = 2` and add the slider for k. Exact values are hard to drag to, so work out k with the multiplier rule, then type `k = −10` in the slider box to confirm the lines are parallel.
 
-Try it with `0.4x + 1.5y = 7` and `2.6x − 0.9y = 2.9`. Doing this by hand is slow and full of decimals. In Desmos you click the crossing and read (2.5, 4), so x + y = 6.5.
+> **Tip:** For constant questions, do the algebra first and use Desmos second. The ratio check is faster; Desmos catches sign errors.
 
-**Variables not called x and y?** If the system uses a and b, or p and q, retype it with x and y. Desmos only graphs x and y.
-
-**How many solutions?** Graph both lines and look:
-
-- they cross once → one solution
-- they never meet (parallel) → no solution
-- you only see one line, because the second sits exactly on top of the first → infinitely many (hide one equation with its color circle to confirm the other is still there)
-
-**Unknown constant (sliders).** Type `kx + 15y = 2` and Desmos offers to add a slider for k. Drag it and watch the second line turn. When the lines go parallel, the crossing point disappears. Dragging is a good check, but exact values are hard to land on. A better move is to work out k with the multiplier rule (it takes 20 seconds), then type `k = −10` into the slider box to confirm the lines are parallel.
-
-> **Tip:** For constant questions, algebra first and Desmos second. The ratio check is faster, but Desmos is great for catching a sign error.
-
-> **Trap:** Desmos rounds. If a crossing shows as (1.333, 2.667), the exact values are probably 4/3 and 8/3. In a student-produced response, type the fraction or enough decimal places (1.333) to fill the answer box.
+> **Trap:** Desmos rounds. A crossing at (1.333, 2.667) is probably exactly 4/3 and 8/3. In a student-produced response, type the fraction or enough decimal places (1.333) to fill the box.
 
 ## Quick checklist
 
-- Did I read exactly what the question asks for: x, y, a combination, a constant, or a count?
-- Are both equations lined up as `ax + by = c` before I compare anything?
-- For x + y type questions, did I try simply adding or subtracting the equations first?
+- What exactly is asked: x, y, a combination, a constant, or a count?
+- Are both equations lined up as `ax + by = c`?
+- For x + y questions, did I try adding or subtracting the equations first?
 - When I scaled an equation, did I multiply every term, including the constant?
-- For no-solution or infinitely-many questions, did I check both the coefficients AND the constants?
-- Did I plug my answer back into both equations, or confirm it on the Desmos graph?
-
-## Sources
-
-- [r/Sat: Official Desmos Thread](https://www.reddit.com/r/Sat/comments/1c8at7a/official_desmos_thread/)
-- [The only SAT Math DESMOS Guide you'll ever need (YouTube)](https://www.youtube.com/watch?v=-pGNBb8M3LQ)
-- [Acely: Linear systems with no solutions using a slider](https://acely.com/desmos-guide-library/linear-systems-of-equations-no-solutions-w-slider-spr)
-- [PrepScholar: Systems of Equations in SAT Math](https://blog.prepscholar.com/systems-of-equations-sat-math-algebra-prep-and-practice)
-- [Test Ninjas: SAT Systems of Linear Equations](https://www.test-ninjas.com/sat-systems-of-linear-equations)
-- [Open Exam Prep: Special solutions and constants](https://open-exam-prep.com/study-guides/sat-math/algebra-systems/systems-special-solutions-constants)
-- [JustLockedIn: Number of solutions patterns](https://justlockedin-main.pages.dev/patterns/math/algebra/systems-of-linear-equations-in-two-variables/number-of-solutions.html)
-- [JustLockedIn: Structured systems (asking for combinations)](https://justlockedin-main.pages.dev/patterns/math/algebra/systems-of-linear-equations-in-two-variables/structured-systems.html)
-- [JustLockedIn: Systems word problems](https://justlockedin-main.pages.dev/patterns/math/algebra/systems-of-linear-equations-in-two-variables/word-problems.html)
-- [Varsity Tutors: SAT Math systems of equations lesson](https://www.varsitytutors.com/practice/subjects/sat-math/lessons/systems-of-equations)
-- [The Test Advantage: SAT system of equations solutions explained](https://thetestadvantage.com/blog/sat-system-of-equations-solution-explained)
-- [Albert.io: System of linear equations SAT study guide](https://www.albert.io/blog/system-of-linear-equations-made-simple-a-sat-math-study-guide/)
-- [Axiom Academy: SAT systems of linear equations](https://theaxiomacademy.org/learn/sat-systems-of-linear-equations)
-- [Quiz-Tree: Systems of 2 linear equations in 2 variables](https://www.quiz-tree.com/sat-algebra/topic/systems-of-2-linear-equations-in-2-variables)
-- [College Board: What's on the SAT Math section](https://satsuite.collegeboard.org/sat/whats-on-the-test/math)
+- For no-solution or infinitely-many questions, did I check the coefficients AND the constants?
+- Did I check my answer in both equations, or on the Desmos graph?

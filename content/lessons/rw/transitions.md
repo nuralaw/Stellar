@@ -3,70 +3,78 @@ title: Transitions
 skill: transitions
 domain: expression-ideas
 section: rw
-summary: Pick the right transition every time by naming how two ideas connect before you look at the choices.
-minutes: 10
+summary: Pick the right transition every time by naming how the two ideas connect before you look at the choices.
+minutes: 11
 ---
+
+> **Key idea:** Decide how the two ideas connect (same direction, opposite direction, or result) before you look at the choices, then pick the word that does that job.
 
 ## What this question looks like
 
-You'll see a short text (usually 2–5 sentences) with one blank, often at the start of the last sentence, and this exact question:
+You'll see a short text (usually 2–5 sentences) with one blank, often at the start of the last sentence, and always this question:
 
 **"Which choice completes the text with the most logical transition?"**
 
-All four choices are real linking words or phrases, like *However*, *Therefore* or *For example*, and they usually all have the same punctuation after them. So this isn't a grammar question. It's a **logic** question: which word correctly shows how the ideas connect? These questions appear near the end of each Reading and Writing module.
+All four choices are real linking words or phrases, like *However*, *Therefore* or *For example*, usually with the same punctuation. So it's a **logic** question, not a grammar one: which word shows how the ideas connect? These questions appear near the end of each Reading and Writing module.
 
-> **Key idea:** A transition is a road sign. It tells the reader whether the next idea goes the same way, turns around, or follows as a result. Your job is to work out the road first, then pick the sign.
+Think of a transition as a road sign. It tells the reader whether the next idea goes the same way, turns around, or follows as a result.
 
 ## The method
 
-1. **Cover the choices.** If you look at them first, every one will "sound fine," and that's how you get tricked.
-2. **Read the whole text.** It's short. The blank sometimes connects to an idea two sentences back, not just the sentence right before it.
-3. **Sum up the two ideas in a few words each.** Idea before the blank: "people thought X." Idea after the blank: "study found not-X."
-4. **Name the relationship.** A quick test: which simple word would you use to join the two ideas? *and* (addition), *but* (contrast), *so* (result), *for example* (example), *then* (sequence).
-5. **Predict a word, then eliminate.** Cross out every choice from the wrong family. Usually only one survives.
-6. **Read it back.** Put your answer in the blank and read the full sentence. It should make the logic clearer, not stranger.
+Work out the logic first, then pick the word.
 
-When the relationship is hard to name, go through these questions in order and stop at the first "yes":
+1. **Cover the choices.** If you look first, every one will "sound fine," and that's how you get tricked.
+2. **Read the whole text.** It's short, and the blank sometimes connects to an idea two sentences back.
+3. **Sum up the two ideas** in a few words each. Before the blank: "people thought X." After: "study found not-X."
+4. **Name the relationship.** Ask which simple word would join the two ideas: *and* (addition), *but* (contrast), *so* (result), *for example* (example), or *then* (sequence).
+5. **Predict a word, then eliminate.** Cross out every choice from the wrong family. Usually only one survives.
+6. **Read it back.** Put your answer in the blank and read the full sentence. The logic should get clearer, not stranger.
+
+### If the relationship is hard to name
+
+Ask these questions in order and stop at the first "yes":
 
 1. Does the second idea **go against** the first, or against what you'd expect? → contrast or concession
 2. Does it **happen because of** the first? → cause–effect
-3. Is it **one case of**, **the exact detail of**, or **a restatement of** the first? → example, specification, clarification
-4. Does it come **before, after, or at the same time**? → sequence
-5. Does it **push the same idea further** or show the **same thing in a different subject**? → emphasis or similarity
+3. Is it one case of, the exact detail of, or a restatement of the first? → example, specification, clarification
+4. Does it come before, after, or at the same time? → sequence
+5. Does it push the same idea further, or show the same thing in a different subject? → emphasis or similarity
 6. Nothing else fits? → plain addition
 
-> **Tip:** Plain addition (*Moreover*, *Additionally*) fits loosely almost anywhere, so it's the test makers' favorite decoy. Rule out the sharper relationships first.
+> **Tip:** Plain addition (*Moreover*, *Additionally*) fits loosely almost anywhere, which makes it the test makers' favorite decoy. Rule out the sharper relationships first.
 
 ## Rules and formulas you need
 
 Learn transitions by **job**, not as one long list.
 
-| Relationship | Use it when the next idea… | Common words |
+| Job | Use it when the next idea… | Common words |
 |---|---|---|
 | Contrast | goes the opposite way | however, by contrast, on the other hand, conversely, yet |
-| Replacement | is what happens *in place of* the first idea | instead, rather |
-| Concession | is still true *despite* the first idea | nevertheless, nonetheless, even so, still, regardless, that said |
-| Admitting a point | grants something before the writer's main point | admittedly, granted, of course |
-| Continuation / addition | adds another point in the same direction | moreover, furthermore, in addition, additionally, also, besides |
-| Similarity | shows the same thing happening somewhere else | similarly, likewise, in the same way |
-| Cause–effect | is a result of the first idea | therefore, thus, as a result, consequently, hence, accordingly |
+| Replacement | happens *in place of* the first | instead, rather |
+| Concession | is true *despite* the first | nevertheless, nonetheless, even so, still, regardless, that said |
+| Admitting a point | grants something before the main point | admittedly, granted, of course |
+| Addition | adds a point in the same direction | moreover, furthermore, in addition, additionally, also, besides |
+| Similarity | shows the same thing elsewhere | similarly, likewise, in the same way |
+| Cause–effect | is a result of the first | therefore, thus, as a result, consequently, hence, accordingly |
 | Example | is one case of the general idea | for example, for instance |
 | Specification | names the exact detail meant | specifically, in particular, namely |
 | Clarification | says the same thing in other words | in other words, that is |
-| Sequence / time | comes next, earlier, or at the same time | then, next, later, subsequently, previously, meanwhile, finally |
-| Emphasis | makes the first idea stronger or goes further | in fact, indeed |
+| Sequence / time | comes next, earlier or at the same time | then, next, later, subsequently, previously, meanwhile, finally |
+| Emphasis | makes the first idea stronger | in fact, indeed |
 | Conclusion | sums up | in conclusion, in sum, ultimately, overall |
 
-Look-alike pairs that harder questions test:
+### Look-alike pairs
 
-- **However vs. instead.** *However* just turns the direction. *Instead* means "in place of that": the first sentence must mention something that didn't happen or was rejected.
-- **However vs. nevertheless.** *Nevertheless* means "this is still true even though the first thing is true."
-- **For example vs. specifically.** *For example* gives one case out of several. *Specifically* narrows down to the exact thing.
-- **In fact vs. in other words.** *In fact* adds a stronger claim. *In other words* repeats the same claim in different words.
-- **Moreover vs. similarly.** *Moreover* adds another point about the same subject. *Similarly* compares a different subject that behaves the same way.
-- **Meanwhile.** It means "at the same time" or "elsewhere," not "but."
+Harder questions test words that seem close but do different jobs.
 
-> **Tip:** If two choices would do exactly the same job (say, *Therefore* and *Thus*), they can't both be correct, so the answer is probably neither. Use this to double-check, not as your main method.
+- *However* vs. *instead*: *However* just turns the direction. *Instead* means "in place of that," so the first sentence must mention something that didn't happen or was rejected.
+- *However* vs. *nevertheless*: *Nevertheless* means "this is still true even though the first thing is true."
+- *For example* vs. *specifically*: *For example* gives one case out of several. *Specifically* narrows down to the exact thing.
+- *In fact* vs. *in other words*: *In fact* adds a stronger claim. *In other words* repeats the same claim in new words.
+- *Moreover* vs. *similarly*: *Moreover* adds another point about the same subject. *Similarly* shows a different subject behaving the same way.
+- *Meanwhile*: it means "at the same time" or "elsewhere," not a plain "but."
+
+> **Tip:** If two choices do exactly the same job (say, *Therefore* and *Thus*), they can't both be right, so the answer is probably neither. Use this as a double-check, not your main method.
 
 ## Worked examples
 
@@ -160,14 +168,16 @@ Idea 1: the council picked *one* option. Idea 2: here is exactly which one. That
 
 ## Traps to avoid
 
-- **"It sounds smooth."** Every choice is a real transition, so all of them sound fine at first. Choose by logic, never by rhythm or how fancy the word is.
-- **The Moreover default.** Addition words fit loosely almost everywhere. They're right only when the second idea simply adds another point in the same direction.
-- **The inside-the-sentence trap.** A "because" or "but" *inside* the blank's sentence can pull you toward the wrong family. The transition links this sentence to the previous one (Example 3).
-- **Reversing cause and effect.** *Therefore* needs sentence 2 to be the *result* of sentence 1. If sentence 2 is actually the *reason* for sentence 1, *Therefore* is backwards.
-- **Contrast with an expectation.** Sometimes the first sentence sets up what you'd expect, and the second overturns it. That's still contrast, even if neither sentence contains a "negative" word.
-- **Example vs. result.** *For example* and *As a result* are both common decoys for each other. Ask: is sentence 2 *one case of* sentence 1, or something that *happened because of* it?
-- **Reading only the nearest sentence.** In longer texts, the blank may connect to the main claim, two sentences back.
-- **Instead without a replacement.** *Instead* only works if something was expected, planned or rejected and a different thing happened.
+Every choice is a real transition, so wrong answers win by sounding right. Watch for these.
+
+- **"It sounds smooth."** All four sound fine at first. Choose by logic, never by rhythm or how fancy the word is.
+- **The Moreover default.** Addition words are right only when the second idea simply adds another point in the same direction.
+- **The inside-the-sentence trap.** A "because" or "but" *inside* the blank's sentence can pull you to the wrong family. The transition links this sentence to the one before (Example 3).
+- **Reversed cause and effect.** *Therefore* needs sentence 2 to be the *result* of sentence 1. If sentence 2 is the *reason*, *Therefore* is backwards.
+- **Contrast with an expectation.** When sentence 1 sets up what you'd expect and sentence 2 overturns it, that's still contrast, even with no "negative" words.
+- **Example vs. result.** *For example* and *As a result* are common decoys for each other. Ask: is sentence 2 *one case of* sentence 1, or something that *happened because of* it?
+- **Reading only the nearest sentence.** In longer texts, the blank may connect to the main claim two sentences back.
+- **Instead without a replacement.** *Instead* works only if something was expected, planned or rejected and a different thing happened.
 
 ## Quick checklist
 
@@ -177,18 +187,3 @@ Idea 1: the council picked *one* option. Idea 2: here is exactly which one. That
 - Did I check contrast, cause and example before settling on plain addition?
 - Did I cross out every choice from the wrong family?
 - Does my answer still make sense when I read the full sentence back?
-
-## Sources
-
-- [Mastering Transitions Questions on the Digital SAT (Test Ninjas)](https://www.test-ninjas.com/sat-transitions)
-- [Digital SAT Reading and Writing: Transitions (Test Innovators)](https://testinnovators.com/blog/digital-sat-reading-writing-transitions/)
-- [Transition Questions on SAT Reading and Writing (PrepScholar)](https://blog.prepscholar.com/transition-questions-on-sat-writing)
-- [SAT Transition Questions: Words and Phrases (UWorld)](https://collegeprep.uworld.com/blog/sat-transition-questions-words-and-phrases/)
-- [How to Choose the Right Transition Every Time (UWorld)](https://collegeprep.uworld.com/blog/transition-questions-on-sat-writing/)
-- [Expression of Ideas: Transitions (Achievable)](https://app.achievable.me/study/sat/learn/expression-ideas-transition)
-- [Transitions study guide (Open Exam Prep)](https://open-exam-prep.com/study-guides/sat-reading-writing/expression-of-ideas/transitions)
-- [SAT Transitions (APGuru)](https://www.apguru.com/blog/sat-transitions)
-- [Transition Strategies for the Digital SAT (Legacy Online School)](https://legacyonlineschool.com/blog/transition-strategies-for-the-digital-sat-reading-and-writing-sections.html)
-- [Expression of Ideas on the SAT (IvyStrides)](https://www.ivystrides.com/blog/expression-of-ideas-sat/)
-- [SAT Expression of Ideas (Manhattan Review)](https://www.manhattanreview.com/sat-expressions-of-ideas/)
-- [What's on the SAT: Reading and Writing (College Board)](https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing)

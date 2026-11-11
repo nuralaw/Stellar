@@ -3,115 +3,123 @@ title: Boundaries
 skill: boundaries
 domain: conventions
 section: rw
-summary: Pick the right punctuation (or none at all) at any blank by checking whether each side is a complete sentence and what job the mark has to do.
-minutes: 13
+summary: Pick the right punctuation, or none at all, by checking whether each side of the blank is a complete sentence.
+minutes: 16
 ---
+
+> **Key idea:** Punctuation follows structure, not sound: cover each side of the blank, ask "Could this stand alone as a sentence?", and let the answer decide the mark.
 
 ## What this question looks like
 
-You get a short text, usually one or two sentences, with a blank in it. The question is always the same: *Which choice completes the text so that it conforms to the conventions of Standard English?*
+A Boundaries question gives you a short text with a blank, and the four choices usually differ only in punctuation. The question always reads: *Which choice completes the text so that it conforms to the conventions of Standard English?*
 
-The four choices usually have the **same words** and change only the **punctuation** next to them, like this:
+A typical set of choices:
 
 - (A) `ocean,`
 - (B) `ocean;`
 - (C) `ocean:`
 - (D) `ocean`
 
-Sometimes the choices also move a transition word like *however* or *therefore* around, or add a small word like *and* or *which*. There is no "NO CHANGE" option. "No punctuation at all" is a real choice, and it's right more often than students expect.
+Three more things to know about the choices:
 
-Boundaries is one of the two skills in Standard English Conventions, which makes up about 26% of the Reading and Writing section (11–15 questions). These are some of the fastest points on the test. Once the rules are automatic, most of these questions take 30–45 seconds.
+- Some choices also move a transition like *however* or *therefore*, or add a small word like *and* or *which*.
+- There is no "NO CHANGE" option.
+- "No punctuation at all" is a real choice, and it's right more often than students expect.
 
-> **Key idea:** Boundaries questions test sentence structure, not sound. Never pick a comma because "you'd pause there." Pick it because a rule calls for it.
+Boundaries is one of the two skills in **Standard English Conventions**, which is about 26% of the Reading and Writing section (11–15 questions per test). Once the rules are automatic, most of these take 30–45 seconds.
 
 ## The method
 
-First, four words you'll use all the time:
+The method is one test, done on both sides of the blank: could these words stand alone as a sentence? You need four terms to run it.
+
+### Four words you'll use
 
 - A **clause** is a group of words with a subject (who or what) and a real verb (what the subject does or is).
-- An **independent clause** is a clause that could stand alone as a full sentence: *The bridge collapsed.*
-- A **dependent clause** has a subject and a verb but can't stand alone, because it starts with a "hook" word like *because, although, when, while, if, since, unless, after, whereas, which, who* or *that*: *because the bridge collapsed.*
+- An **independent clause** can stand alone as a full sentence: *The bridge collapsed.*
+- A **dependent clause** has a subject and verb but can't stand alone, because it starts with a hook word like *because, although, when, while, if, since, unless, after, whereas, which, who* or *that*: *because the bridge collapsed.*
 - A **phrase** has no subject-verb pair at all: *after the storm*, *a famous engineer*, *hoping for rain*.
 
-Watch out: *-ing* words and *to + verb* (*showing*, *to show*) don't count as real verbs on their own. "Scientists showing that ice melts" is not a sentence.
+*-ing* words and *to* + verb (*showing*, *to show*) don't count as real verbs on their own. "Scientists showing that ice melts" is not a sentence.
 
-Now the routine. Run it on every Boundaries question:
+### The routine
 
-1. **Glance at the choices first.** If only the punctuation changes, it's a Boundaries question. Note which marks are on offer.
-2. **Find the break.** Read the whole text and see exactly where the blank sits.
-3. **Test the left side.** Cover everything after the blank. Could the words before it stand alone as a full sentence?
-4. **Test the right side.** Cover everything before the blank. Could the words after it stand alone as a full sentence?
-5. **Match your answer to the rules below.** Two full sentences need a strong join. A full sentence plus a non-sentence needs a comma, a colon, a dash or nothing. It never takes a semicolon or a period.
-6. **Check for pairs.** If the blank is the end of an extra, removable chunk, look back for the mark that opened it and close it with the **same** mark.
-7. **Check for bonds.** If the blank falls between a subject and its verb, a verb and its object, or a title and a name, the answer is almost always no punctuation.
-8. **Eliminate twins.** If two choices do the exact same job (for example, a period and a semicolon with nothing else different), neither one can be the only right answer, so cross out both.
+1. **Glance at the choices.** If only the punctuation changes, it's Boundaries. Note which marks are on offer.
+2. **Find the break.** Read the whole text so you know exactly where the blank sits.
+3. **Test the left side.** Cover everything after the blank. Could the words before it stand alone as a sentence?
+4. **Test the right side.** Cover everything before the blank. Could the words after it stand alone?
+5. **Match the rules below.** Two full sentences need a strong join. A sentence plus a non-sentence takes a comma, colon, dash or nothing, never a semicolon or period.
+6. **Check for pairs.** If the blank ends an extra, removable chunk, look back for the mark that opened it and close with the same mark.
+7. **Check for bonds.** Between a subject and its verb, a verb and its object, or a title and a name, the answer is almost always no punctuation.
+8. **Cross out twins.** If two choices do the same job (say, a period and a semicolon with nothing else different), neither can be the only right answer.
 
 ## Rules and formulas you need
 
 ### Joining two complete sentences
 
-This is the most tested rule in the whole skill. Learn this table cold.
+This is the most tested rule in the skill, so learn this table cold. **FANBOYS** are the seven joining words *for, and, nor, but, or, yet, so*.
 
 | Join | OK? | Example |
 |---|---|---|
 | Period | Yes | The lake froze. Kids skated on it. |
 | Semicolon | Yes | The lake froze; kids skated on it. |
-| Comma + FANBOYS word (for, and, nor, but, or, yet, so) | Yes | The lake froze, so kids skated on it. |
-| Colon | Yes, if the second part explains the first | The lake was safe: the ice was a foot thick. |
+| Comma + FANBOYS | Yes | The lake froze, so kids skated on it. |
+| Colon | Yes, if part 2 explains part 1 | The lake was safe: the ice was a foot thick. |
 | Single dash | Yes, same job as a colon | The lake was safe—the ice was a foot thick. |
-| Comma alone | No, that's a **comma splice** | The lake froze, kids skated on it. |
-| Nothing | No, that's a **run-on** | The lake froze kids skated on it. |
-| Comma + however (or therefore, etc.) | No, still a comma splice | The lake froze, however, nobody skated. |
-| Semicolon + FANBOYS word | No, that's two joins where one is enough | The lake froze; and kids skated on it. |
-| FANBOYS word with no comma | No, the comma goes before the word | The lake froze and kids skated on it. |
+| Comma alone | No: comma splice | The lake froze, kids skated on it. |
+| Nothing | No: run-on | The lake froze kids skated on it. |
+| Comma + *however* | No: still a comma splice | The lake froze, however, nobody skated. |
+| Semicolon + FANBOYS | No: two joins, one is enough | The lake froze; and kids skated on it. |
+| FANBOYS, no comma | No: comma goes before it | The lake froze and kids skated on it. |
 
-> **Tip:** Treat the semicolon as a period in disguise. Swap it for a period in your head. If both halves still work as sentences, the semicolon is fine. If either half falls apart, the semicolon is wrong.
+A comma splice is two full sentences held together by only a comma. A run-on has nothing joining them at all.
 
-### Joining a complete sentence to something that is NOT a sentence
+> **Tip:** Treat the semicolon as a period in disguise. Swap in a period in your head: if both halves still work as sentences, the semicolon is fine; if either half falls apart, it's wrong.
 
-| Situation | Use | Never use |
-|---|---|---|
-| Dependent clause or phrase comes first | A comma after it: *When the ice melted, the kids went home.* | Semicolon, period |
-| Complete sentence first, then *because*, *that*, *if* or *when*... | Usually nothing: *The kids went home because the ice melted.* | Semicolon, period |
-| Complete sentence first, then a list, example or explanation | A colon or a dash: *They packed three things: skates, gloves, and cocoa.* | Semicolon |
-| Complete sentence first, then an extra description | A comma or a dash: *They packed cocoa, a family tradition.* | Semicolon, period |
+### Joining a sentence to a non-sentence
 
-A period in front of a non-sentence creates a **fragment**: a piece of a sentence pretending to be a whole one. Starting with a capital letter doesn't make something a sentence.
+When one side isn't a complete sentence, a semicolon or period is never right. Use this instead:
+
+- **Dependent clause or phrase first:** a comma after it. *When the ice melted, the kids went home.*
+- **Sentence first, then *because*, *that*, *if* or *when*:** usually nothing. *The kids went home because the ice melted.*
+- **Sentence first, then a list, example or explanation:** a colon or a dash. *They packed three things: skates, gloves, and cocoa.*
+- **Sentence first, then an extra description:** a comma or a dash. *They packed cocoa, a family tradition.*
+
+A period in front of a non-sentence creates a **fragment**: a piece of a sentence pretending to be a whole one.
 
 ### Semicolons have only two jobs
 
 1. Joining two complete sentences.
-2. Separating items in a list when the items already contain commas: *The tour visited Lima, Peru; Quito, Ecuador; and Bogotá, Colombia.*
+2. Separating list items that already contain commas: *The tour visited Lima, Peru; Quito, Ecuador; and Bogotá, Colombia.*
 
 ### Colons and single dashes
 
-- The part **before** the mark must be a complete sentence. The part after it can be anything: a list, a phrase, a single word or a full sentence.
-- Never put a colon right after *such as*, *including*, *like*, *is*, *are* or any other lead-in that leaves the sentence unfinished. "The kit includes: a map" is wrong.
+- The part before the mark must be a complete sentence.
+- The part after can be anything: a list, a phrase, a single word or a full sentence.
 - A colon promises "here's what I mean." Use it when the second part explains, lists or names what the first part set up.
 
-### Transition words (however, therefore, moreover, for example, as a result, in fact, nevertheless, thus)
+### Transition words
 
-These words are **not** joining words. They can't glue two sentences together the way *and* or *but* can.
+Words like *however, therefore, moreover, for example, as a result, in fact, nevertheless* and *thus* are not joining words. They can't glue two sentences together the way *and* or *but* can.
 
-- Between two complete sentences: a semicolon or period before the word and a comma after it. *The plan was cheap; however, it was slow.*
-- Inside one sentence, as an interruption: a comma on both sides. *The second trial, however, failed.*
-- To decide where the semicolon goes, find the exact spot where the first complete idea ends. The transition word goes with the idea it introduces.
+- **Between two sentences:** a semicolon or period before the word, a comma after. *The plan was cheap; however, it was slow.*
+- **Inside one sentence, as an interruption:** a comma on both sides. *The second trial, however, failed.*
+- **Placing the semicolon:** find the exact spot where the first complete idea ends. The transition goes with the idea it introduces.
 
 > **Tip:** Not sure if a word is a FANBOYS word or a transition? Try moving it. Transitions can move around (*it was, however, slow*). FANBOYS words can't.
 
-### Extra information (nonessential elements)
+### Extra information
 
-Some words add detail but aren't needed for the sentence to work. To check, use the **lift-out test**: remove the chunk. If the sentence is still complete and still means the same basic thing, the chunk is extra.
+Some words add detail the sentence doesn't need. To check, use the **lift-out test**: remove the chunk, and if the sentence is still complete and means the same basic thing, the chunk is extra.
 
-- Set off extra information with a **matched pair**: two commas, two dashes or two parentheses. Never mix them (a dash to open and a comma to close is wrong).
-- If the extra chunk comes at the end of the sentence, you only need one comma or dash before it. The period closes it.
-- **Essential** information gets **no** punctuation. That includes a name right after a title or description (*the poet Maya Angelou*), most *that* clauses, and any detail that tells you *which one*.
+- Set extra information off with a matched pair: two commas, two dashes or two parentheses. Never mix them.
+- If the extra chunk ends the sentence, one comma or dash before it is enough. The period closes it.
+- Essential information gets no punctuation: a name right after a title (*the poet Maya Angelou*), most *that* clauses, and any detail that tells you *which one*.
 
 ### Where punctuation never goes
 
 - Between a subject and its verb, even when the subject is long
 - Between a verb and its object
-- Between a preposition (*of, in, by, with*...) and its object
+- Between a preposition (*of, in, by, with*…) and its object
 - Right after *such as* or *including* (a comma can go before *such as*, never after it)
 - After a FANBOYS word that joins two sentences ("but, it rained" is wrong)
 - Between a title or description and the name it identifies
@@ -215,43 +223,21 @@ Check for bonds. "The Scottish scientist" is a description, and "Alexander Flemi
 
 ## Traps to avoid
 
-- **The pause trap.** Wrong answers are built to sound natural read aloud. A comma that "feels right" often splits a long subject from its verb. Check the structure, not your ear.
-- **The disguised comma splice.** When both clauses are long, it's easy to miss that a lone comma is holding two full sentences together. Always test both sides.
-- **However with commas only.** "The plan was cheap, however, it was slow" is still a comma splice. Transition words can't join sentences.
-- **A semicolon in front of a non-sentence.** If the right side starts with *which*, *such as*, *because*, an *-ing* word or a plain noun phrase, a semicolon is wrong.
-- **A colon after an unfinished lead-in.** "The recipe calls for: flour and eggs" is wrong because "The recipe calls for" isn't a complete sentence.
-- **Half pairs and mixed pairs.** An extra chunk opened with a dash must close with a dash, and one opened with a comma must close with a comma. Always look back to see what opened it.
-- **Twins.** If a period choice and a semicolon choice are otherwise identical, they do the same job, so neither can be the only right answer. Look for the choice that's different.
-- **Fear of "no punctuation."** Students assume something must go in the blank. When the blank sits inside a bond (subject + verb, verb + object, title + name, *such as* + example), nothing is correct.
-- **Fragments that look like sentences.** A period and a capital letter don't make a sentence. "Hoping to find water. The explorers..." starts with a fragment.
+- **The pause trap.** Wrong answers are built to sound natural read aloud. A comma that "feels right" often splits a long subject from its verb.
+- **The disguised comma splice.** When both clauses are long, it's easy to miss that a lone comma is holding two full sentences together.
+- ***However* with commas only.** "The plan was cheap, however, it was slow" sounds smooth but is still a comma splice.
+- **A semicolon before a non-sentence.** If the right side starts with *which*, *such as*, *because*, an *-ing* word or a plain noun phrase, a semicolon is wrong.
+- **A colon after an unfinished lead-in.** "The recipe calls for: flour and eggs" is wrong, because "The recipe calls for" isn't a complete sentence. The same goes for *such as*, *including*, *is* and *are*.
+- **Half pairs and mixed pairs.** A chunk opened with a dash must close with a dash. Always look back to see what opened it.
+- **Fear of "no punctuation."** Students assume something must go in the blank. Inside a bond (subject + verb, verb + object, title + name, *such as* + example), nothing is correct.
+- **Fragments that look like sentences.** A period and a capital letter don't make a sentence. "Hoping to find water. The explorers…" starts with a fragment.
 
 ## Quick checklist
 
 - Did I cover each side of the blank and ask, "Is this a complete sentence?"
-- Two full sentences: am I using a period, a semicolon, comma + FANBOYS, a colon or a dash?
-- Is there an opening comma or dash earlier that my choice needs to match?
-- Is the blank inside a bond (subject–verb, verb–object, title–name)? Then no punctuation.
+- Two full sentences: am I using a period, semicolon, comma + FANBOYS, colon or dash?
+- Is there an earlier comma or dash my choice needs to match?
+- Is the blank inside a bond? Then no punctuation.
 - If I picked a colon, is the part before it a complete sentence?
-- Is a transition word like *however* set off correctly and attached to the right clause?
-- Did I cross out any twins that do the same job?
-
-## Sources
-
-- [College Board: Assessment Framework for the Digital SAT Suite](https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf)
-- [College Board: Reading and Writing alignment (PSAT 10, PSAT/NMSQT, SAT)](https://satsuite.collegeboard.org/k12-educators/about/alignment/writing-language/psat-10-psat-nmsqt-sat)
-- [Test Ninjas: Mastering Boundaries Questions on the Digital SAT](https://test-ninjas.com/sat-boundaries)
-- [PrepScholar: SAT Punctuation Rules](https://blog.prepscholar.com/sat-punctuation)
-- [PrepScholar: The Complete Guide to Digital SAT Grammar Rules](https://blog.prepscholar.com/the-complete-guide-to-sat-grammar-rules)
-- [Just Locked In: Connecting Independent Clauses](https://justlockedin-main.pages.dev/patterns/erw/standard-english-conventions/boundaries/connecting-independent-clauses.html)
-- [Just Locked In: Supplementary Information](https://justlockedin-main.pages.dev/patterns/erw/standard-english-conventions/boundaries/supplementary-information.html)
-- [Just Locked In: No Punctuation Necessary](https://justlockedin-main.pages.dev/patterns/erw/standard-english-conventions/boundaries/no-punctuation-necessary.html)
-- [All of SAT Grammar in 37 Minutes (video transcript)](https://sozai.app/transcript/sat-grammar-complete-37-minutes/)
-- [Vibrant Publishers: The 7 Essential Punctuation Rules for Digital SAT Questions](https://www.vibrantpublishers.com/blogs/blogs-on-act-sat/7-essential-punctuation-rules-for-digital-sat-questions)
-- [Larry Learns: Digital SAT Grammar Rules Complete Guide](https://www.larrylearns.com/blog/digital-sat-grammar-rules-complete-guide)
-- [UWorld: SAT Punctuation Rules for Commas, Colons, Dashes and Apostrophes](https://collegeprep.uworld.com/blog/sat-punctuation-tips-commas-colons-dashes)
-- [Num8ers: SAT Grammar, Boundaries and Punctuation](https://num8ers.com/boundaries-punctuation/)
-- [Open Exam Prep: Boundaries, What Counts as a Complete Sentence](https://open-exam-prep.com/study-guides/sat-reading-writing/standard-english-conventions-boundaries/boundaries-complete-sentences)
-- [Test Innovators: A Guide to Digital SAT Grammar and Punctuation](https://testinnovators.com/?p=10678)
-- [Albert: SAT Punctuation Rules Review](https://www.albert.io/blog/sat-punctuation-rules-sat-reading-and-writing-review)
-- [CollegeVine: Commonly Missed SAT Grammar Rules](https://blog.collegevine.com/commonly-missed-sat-grammar-rules)
-- [Magoosh: SAT Grammar, Semicolons](https://magoosh.com/sat/sat-grammar-semicolons/)
+- Is *however* (or another transition) set off correctly and attached to the right clause?
+- Did I cross out any twins?

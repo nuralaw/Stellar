@@ -3,13 +3,15 @@ title: Percentages
 skill: percentages
 domain: problem-solving
 section: math
-summary: Solve any percent question (percent of, percent change, stacked changes, and finding the original) with one reliable tool, the multiplier.
-minutes: 10
+summary: Solve any percent question (percent of, percent change, stacked changes, finding the original) with one reliable tool: the multiplier.
+minutes: 9
 ---
+
+> **Key idea:** A multiplier is the share of the original you end up with. 25% off means you keep 75%, so multiply by 0.75. Then every percent problem is just multiplying or dividing.
 
 ## What this question looks like
 
-Percent questions are usually short word problems about prices, discounts, tax, populations, test scores, or survey results. Sometimes the data sits in a table. Watch for:
+Percent questions are short word problems about prices, discounts, tax, populations, scores or surveys, sometimes with the data in a table. Watch for:
 
 - "What is 35% of …?" or "… is what percent of …?"
 - "increased by", "decreased by", "discount", "markup", "sales tax", "tip"
@@ -18,53 +20,52 @@ Percent questions are usually short word problems about prices, discounts, tax, 
 - Two changes in a row: "rose 10%, then fell 5%"
 - Letters instead of numbers: "x is 30% more than y"
 
-Easy versions take one step. Harder versions chain two or three changes, use variables, or ask for the original value. The math never gets fancy; the difficulty comes from the number of steps and picking the right base.
+Easy versions take one step. Harder ones chain changes, use variables or ask for the original value. The math stays simple; the challenge is the number of steps and picking the right base.
 
 ## The method
 
-1. **Find the base (the 100%).** Ask: "percent *of what*?" The base is the number after "of" or "than", or the starting value in a change problem.
-2. **Turn every percent into a multiplier.**
-   - "p% of" → multiply by p/100 (35% of → × 0.35)
-   - increase by p% → multiply by (1 + p/100) (up 8% → × 1.08)
-   - decrease by p% → multiply by (1 − p/100) (down 8% → × 0.92)
-3. **Chain the multipliers in order.** Each new change acts on the result of the last one.
-4. **Going forward? Multiply. Going backward to the original? Divide** by the multiplier.
-5. **For percent change, use the starting value on the bottom:** `(new − old) ÷ old`.
-6. **Answer in the form asked.** A percent like 25, a decimal like 0.25, a dollar amount, or "what percent of" (like 108%) vs. "percent change" (like 8%).
+Turn every percent into a multiplier, then multiply or divide.
 
-> **Key idea:** A multiplier tells you what fraction of the original you *end up with*. 25% off means you keep 75%, so multiply by 0.75. Once you think this way, every percent problem becomes multiplication or division.
+1. **Find the base (the 100%).** Ask "percent *of what*?" It's the number after "of" or "than", or the starting value in a change.
+2. **Turn each percent into a multiplier.** 35% of → × 0.35; up 8% → × 1.08; down 8% → × 0.92.
+3. **Chain the multipliers in order.** Each change acts on the result of the one before.
+4. **Going forward? Multiply.** Going back to the original? Divide by the multiplier.
+5. **For percent change, put the starting value on the bottom:** `(new − old) ÷ old`.
+6. **Answer in the form asked:** 25 or 0.25, dollars, "percent of" (108%) or "percent change" (8%).
 
 ## Rules and formulas you need
 
+Every common percent situation fits one line of this table.
+
 | Situation | What to do | Example |
 |---|---|---|
-| p% of N | `(p/100) × N` | 35% of 80 = 0.35 × 80 = 28 |
-| A is what percent of B? | `(A ÷ B) × 100` | 18 of 24 = 0.75 → 75% |
-| Increase by p% | `× (1 + p/100)` | 50 up 12% = 50 × 1.12 = 56 |
-| Decrease by p% | `× (1 − p/100)` | 50 down 12% = 50 × 0.88 = 44 |
-| Percent change | `(new − old) ÷ old × 100` | 40 → 50 is 10/40 = +25% |
-| Find the original | `final ÷ multiplier` | 56 after +12% → 56 ÷ 1.12 = 50 |
-| Two changes in a row | multiply the multipliers | +10% then −20% → 1.1 × 0.8 = 0.88, a 12% drop |
-| Percent of a percent | multiply the decimals | 40% of 30% of 200 = 0.4 × 0.3 × 200 = 24 |
+| p% of N | `(p/100) × N` | 35% of 80 = 28 |
+| A is what % of B? | `(A ÷ B) × 100` | 18 of 24 → 75% |
+| Increase by p% | `× (1 + p/100)` | 50 up 12% = 56 |
+| Decrease by p% | `× (1 − p/100)` | 50 down 12% = 44 |
+| Percent change | `(new − old) ÷ old × 100` | 40 → 50 is +25% |
+| Find the original | `final ÷ multiplier` | 56 ÷ 1.12 = 50 |
+| Two changes in a row | multiply the multipliers | 1.1 × 0.8 = 0.88 (−12%) |
+| Percent of a percent | multiply the decimals | 0.4 × 0.3 × 200 = 24 |
 | Same change n times | `× (multiplier)ⁿ` | +5% for 3 years → × 1.05³ |
 
-**Reading a multiplier back as a percent:**
+### Reading a multiplier as a percent
 
-| Multiplier | Means |
-|---|---|
-| 1.08 | 108% of the original, an 8% increase |
-| 0.92 | 92% of the original, an 8% decrease |
-| 1.5 | 150% of the original, a 50% increase |
-| 2.5 | 250% of the original, a 150% increase |
+| Multiplier | Share of original | Change |
+|---|---|---|
+| 1.08 | 108% | 8% increase |
+| 0.92 | 92% | 8% decrease |
+| 1.5 | 150% | 50% increase |
+| 2.5 | 250% | 150% increase |
 
-**Useful facts:**
+### Useful facts
 
-- Up p% and then down p% always ends *below* where you started: 1.2 × 0.8 = 0.96.
-- To undo an increase, you need a *smaller* percent decrease: undoing +25% takes −20% (1.25 × 0.8 = 1).
-- **Percentage points vs. percent:** a rate going from 20% to 25% rose 5 *percentage points*, but that is a 25% *increase* (5 ÷ 20).
-- "x is p% of y" and "y is what percent of x" have different answers. If x is 20% of y, then y is 500% of x.
-- Tax and tip are usually applied to the price *after* any discount.
-- Benchmarks for quick mental math: 10% → move the decimal one place left; 1% → two places; 5% is half of 10%; 25% = 1/4; 12.5% = 1/8.
+- Up p% then down p% always ends *below* the start: 1.2 × 0.8 = 0.96.
+- Undoing an increase takes a *smaller* percent decrease: +25% is undone by −20% (1.25 × 0.8 = 1).
+- **Percentage points** are a plain difference of two percents: 20% → 25% is up 5 points, which is a 25% increase (5 ÷ 20).
+- "x is p% of y" and "y is what percent of x" have different answers. If x is 20% of y, y is 500% of x.
+- Tax and tip usually apply to the price *after* any discount.
+- Quick mental math: 10% → move the decimal one place left; 1% → two places; 5% is half of 10%; 25% = 1/4; 12.5% = 1/8.
 
 ## Worked examples
 
@@ -157,25 +158,27 @@ Why the others are wrong: (A) ignores the second relationship. (C) adds the perc
 
 ## Traps to avoid
 
-- **Dividing by the wrong number in percent change.** Always divide by the *starting* value (or the value after "than"). Dividing by the new value gives a nearby wrong answer that is almost always one of the choices.
-- **Adding stacked percents.** +20% then −10% is not +10%. Multiply: 1.2 × 0.9 = 1.08. Two 20% discounts are a 36% total discount (0.8 × 0.8 = 0.64), not 40%.
-- **"Undoing" with the same percent.** A price that was raised 20% does not go back to the original with a 20% cut. Divide by 1.2 instead.
+Each trap below produces a wrong answer that is usually one of the choices.
+
+- **Wrong base in percent change.** Divide by the *starting* value (or the value after "than"), never the new value.
+- **Adding stacked percents.** +20% then −10% is not +10%: 1.2 × 0.9 = 1.08. Two 20% discounts are 36% off (0.8 × 0.8 = 0.64), not 40%.
+- **Undoing with the same percent.** A price raised 20% doesn't return to the original after a 20% cut. Divide by 1.2 instead.
 - **Adding the percent back to find the original.** If $68 is the price after 15% off, the original is 68 ÷ 0.85, not 68 + 15% of 68.
 - **Keeping the wrong share.** A 30% discount leaves 70%. Multiply by 0.7, not 0.3.
 - **Mixing up "150% of" and "a 150% increase".** 150% of x is 1.5x. A 150% increase gives 2.5x.
-- **Percentage points vs. percent.** Going from 40% to 50% is 10 percentage points, but a 25% increase.
-- **Wrong form of the answer.** If the question asks for p in "p%", type 25, not 0.25. Don't type the % or $ sign in a student-produced response. Don't round until the very end.
-- **Wrong row or total in a table.** For "what percent of the renters", divide by the number of renters, not by everyone surveyed.
+- **Percentage points vs. percent.** 40% to 50% is up 10 percentage points, but that's a 25% increase, not 10%.
+- **Wrong form of the answer.** For p in "p%", type 25, not 0.25. Never type % or $ in a typed answer, and round only at the end.
+- **Wrong row or total in a table.** For "what percent of the renters", divide by the number of renters, not everyone surveyed.
 
 ## Desmos shortcut
 
-Desmos is genuinely handy for percent problems with several steps:
+Desmos is handy for percent problems with several steps.
 
-- **Find an original value without rearranging:** type the story as an equation, like `x*0.8*1.08=864`. Desmos shows the answer (x = 1000) as a vertical line you can click.
-- **Check a combined change:** type `1.3*0.8` and read 1.04, which means a 4% increase overall.
-- **Messy percent change:** type `(56.64-48)/48` and get 0.18, which is an 18% increase. No early rounding.
+- **Find an original without rearranging:** type the story as an equation, like `x*0.8*1.08=864`. Desmos shows the answer (x = 1000) as a vertical line you can click.
+- **Check a combined change:** type `1.3*0.8` and read 1.04, a 4% increase overall.
+- **Messy percent change:** type `(56.64-48)/48` and get 0.18, an 18% increase, with no early rounding.
 
-> **Tip:** For clean numbers (10%, 25%, 50%), mental math is faster than Desmos. Save Desmos for chains and ugly decimals.
+> **Tip:** For clean numbers (10%, 25%, 50%), mental math beats Desmos. Save Desmos for chains and ugly decimals.
 
 ## Quick checklist
 
@@ -184,19 +187,4 @@ Desmos is genuinely handy for percent problems with several steps:
 - Did I multiply stacked changes instead of adding them?
 - Am I going forward (multiply) or back to the original (divide)?
 - For percent change, is the starting value on the bottom?
-- Is the answer in the asked form: percent of, percent change, or a dollar amount?
-
-## Sources
-
-- [College Board: Digital SAT Math, Problem-Solving and Data Analysis](https://satsuite.collegeboard.org/digital/whats-on-the-test/math/types/problem-solving)
-- [College Board SAT Suite Question Bank](https://satsuitequestionbank.collegeboard.org/)
-- [Khan Academy: Official Digital SAT Math practice](https://www.khanacademy.org/test-prep/v2-sat-math)
-- [SATSphere: Percent Change, Markups, and Discounts on the Digital SAT](https://www.satsphere.com/blog/percent-change-markups-and-discounts-digital-sat)
-- [IvyStrides: SAT Percent Problems](https://www.ivystrides.com/blog/sat-percent-problems/)
-- [Target Test Prep: SAT Percent Problems](https://sat.blog.targettestprep.com/sat-percent-problems/)
-- [Test Ninjas: Mastering Percentage Questions on the SAT](https://www.test-ninjas.com/sat-percentage)
-- [Open Exam Prep: Percentages and Percent Change](https://open-exam-prep.com/study-guides/sat-math/problem-solving-data-analysis/percentages-percent-change)
-- [The Test Advantage: How Percentages and Ratios Are Tested on the Digital SAT](https://thetestadvantage.com/blog/how-are-percentages-and-ratios-tested-on-the-digital-sat)
-- [Just Locked In: Percentages question patterns](https://justlockedin-main.pages.dev/patterns/math/problem-solving-and-data-analysis/percentages/)
-- [Brilliant: SAT Ratios, Proportions, and Percents](https://brilliant.org/wiki/sat-ratios-proportions-percents/)
-- [UWorld: How to Get 800 on SAT Math](https://collegeprep.uworld.com/blog/4-study-tips-to-get-an-800-on-the-sat-math/)
+- Is the answer in the asked form: percent of, percent change or dollars?

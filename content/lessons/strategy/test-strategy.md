@@ -3,159 +3,161 @@ title: How the Digital SAT Works and How to Pace It
 skill: test-strategy
 domain: strategy
 section: strategy
-summary: Know exactly how the Digital SAT is built and scored, follow a minute-by-minute pacing plan for every module, use the Bluebook tools well, and study in a way that actually raises your score.
-minutes: 13
+summary: Learn how the Digital SAT is built and scored, how to pace every module, how to use Bluebook's tools, and how to study so your score rises.
+minutes: 17
 ---
+
+> **Key idea:** Module 1 of each section decides how high your score can go, so work it carefully, never leave a blank, and when stuck, guess, flag and move on.
 
 ## How the test is built
 
-The Digital SAT has **two sections**, and each section is split into **two modules**. A module is a separately timed block of questions. You take the whole thing on a laptop or tablet in College Board's **Bluebook** app.
+The Digital SAT has two sections, each split into two **modules**: separately timed blocks of questions. You take it on a laptop or tablet in College Board's **Bluebook** app, always in this order:
 
-The order is always the same:
-
-1. Reading and Writing, Module 1 (27 questions, 32 minutes)
-2. Reading and Writing, Module 2 (27 questions, 32 minutes)
-3. A 10-minute break
-4. Math, Module 1 (22 questions, 35 minutes)
-5. Math, Module 2 (22 questions, 35 minutes)
-
-That's 98 questions in 2 hours 14 minutes of testing time, plus the break.
+| Part | Questions | Minutes |
+|---|---|---|
+| Reading and Writing, Module 1 | 27 | 32 |
+| Reading and Writing, Module 2 | 27 | 32 |
+| Break | — | 10 |
+| Math, Module 1 | 22 | 35 |
+| Math, Module 2 | 22 | 35 |
+| Total | 98 | 134 + break |
 
 Two rules shape everything else:
 
-- **Each module has its own clock.** Time you don't use in one module does not carry over to the next. When the clock hits zero, Bluebook moves you on automatically.
-- **Once you leave a module, it's locked.** You can jump around freely *inside* a module, but you can never go back to an earlier one.
+- **Each module has its own clock.** Unused time doesn't carry over. When the clock hits zero, Bluebook moves you on automatically.
+- **A finished module is locked.** You can jump around freely inside a module, but you can never go back to an earlier one.
+
+### Question formats
+
+- **Reading and Writing:** every question is multiple choice with four choices and one short passage.
+- **Math:** about 75% multiple choice and 25% **student-produced response** (SPR), where you type your own answer. A calculator is allowed on every question.
 
 ### Why Module 1 matters so much
 
-The test is **multistage adaptive**. That means it adapts once per section, not after every question. Module 1 of each section is a broad mix of easy, medium and hard questions, and everyone gets the same kind of mix. Based on how you do on it, Bluebook gives you one of two versions of Module 2:
+The test is **multistage adaptive**: it adapts once per section, not after every question. Module 1 is a broad mix of easy, medium and hard questions, the same kind of mix for everyone. Based on how you do, Bluebook gives you one of two versions of Module 2:
 
-- a **harder** Module 2, if Module 1 went well
-- an **easier** Module 2, if it didn't
+- a harder Module 2, if Module 1 went well
+- an easier Module 2, if it didn't
 
-Both versions still contain a mix of difficulties, but the harder one has many more tough questions. Here's the key point: **only the harder Module 2 can take you to the top scores.** Prep companies that study this estimate that a student routed to the easier Module 2 tops out somewhere around the low 600s for that section, even with a perfect Module 2. College Board doesn't publish the exact cutoffs, so treat those numbers as rough.
+Both versions mix difficulties, but only the harder one can take you to the top scores. Prep companies estimate that a student routed to the easier Module 2 tops out around the low 600s for that section, even with a perfect Module 2. College Board doesn't publish the cutoffs, so treat that number as rough.
 
-What this means for you: **Module 1 is not a warm-up.** Careless mistakes there cost you twice, once for the question itself and once by possibly locking you out of the higher ceiling. Work Module 1 carefully and use your review time to catch slips.
+So **Module 1 is not a warm-up.** A careless mistake there costs you twice: once for the question, and once by possibly locking you out of the higher ceiling.
 
 ### Unscored questions
 
-Each module includes **2 pretest questions** that don't count. College Board is just testing them for future exams. So a Reading and Writing module has 25 scored questions plus 2 pretest, and a Math module has 20 scored plus 2 pretest. You can't tell which ones are pretest, so treat every question as real.
+Each section includes 4 **pretest** questions that don't count; College Board is trying them out for future tests. That leaves 50 scored questions in Reading and Writing and 40 in Math. You can't tell which ones are pretest, so treat every question as real.
 
-### Scoring basics
+## How scoring works
 
-- Your total score is **400–1600**: Reading and Writing is 200–800 and Math is 200–800.
-- There is **no penalty for wrong answers**. A blank and a wrong answer are worth the same: zero. So never leave anything blank.
-- Scores use a method called **Item Response Theory**. In plain words, your score depends on *which* questions you got right (their difficulty and other features), not just how many. Two students with the same number correct can get slightly different scores.
-- You won't be told which Module 2 you got. If Module 2 feels noticeably harder than Module 1, that's usually a good sign, not a bad one.
+Your total score is 400–1600: Reading and Writing is 200–800 and Math is 200–800.
 
-## The method (your pacing plan)
+- **No penalty for wrong answers.** A blank and a wrong answer are both worth zero, so a guess can only help.
+- **Which questions you get right matters.** Scores use **Item Response Theory**: your score depends on *which* questions you got right (their difficulty and other features), not just how many. Two students with the same number correct can get slightly different scores.
+- **You won't be told which Module 2 you got.**
 
-The average budget is about **71 seconds per question** in Reading and Writing (32 minutes ÷ 27) and about **95 seconds per question** in Math (35 minutes ÷ 22). But questions are not equal, so a smart plan spends time unevenly.
+## Pacing plan
 
-### How questions are ordered
+The average budget is about 71 seconds per question in Reading and Writing (32 minutes ÷ 27) and about 95 seconds in Math (35 minutes ÷ 22). Questions aren't equal, though, so a smart plan spends time unevenly.
 
-**Reading and Writing** questions come in a fixed order of question types. Every module starts with Craft and Structure (Words in Context, Text Structure and Purpose, Cross-Text Connections), then Information and Ideas (Central Ideas, Command of Evidence with text or graphs, Inferences), then Standard English Conventions (grammar and punctuation), and finally Expression of Ideas (Transitions, Rhetorical Synthesis). Within each group of similar questions, they go from easiest to hardest. The grammar block is ordered easiest to hardest as a whole, whatever rule it tests.
+### Reading and Writing: 32 minutes, 27 questions
 
-This matters for pacing. The first half of the module (reading-heavy) is slower. The second half (grammar, transitions and notes questions) is usually much faster. Don't panic if you're a little "behind" at the halfway point.
+Reading and Writing questions come in a fixed order of question types, so the slow ones come first:
 
-**Math** questions are mixed topics, arranged **from easiest to hardest across the whole module**. The last few questions are the hardest, so you want to arrive there with extra time in the bank.
+- **Craft and Structure:** Words in Context, Text Structure and Purpose, Cross-Text Connections
+- **Information and Ideas:** Central Ideas, Command of Evidence (text or graphs), Inferences
+- **Standard English Conventions:** grammar and punctuation
+- **Expression of Ideas:** Transitions, Rhetorical Synthesis (notes questions)
 
-### Reading and Writing plan (32 minutes, 27 questions)
+Within each group of similar questions, they go from easiest to hardest. The grammar block is ordered easiest to hardest as a whole, whatever rule it tests. Your checkpoints:
 
-1. **Questions 1–7 (vocabulary and structure):** about 75 seconds each. Aim to finish Q7 with about **23 minutes left**.
-2. **Questions 8–14 (main idea, evidence, graphs, inferences):** these are the slowest, about 85 seconds each. Aim to finish Q14 with about **13 minutes left**.
-3. **Questions 15–27 (grammar, transitions, notes):** about 40–50 seconds each. Grammar questions often take 30 seconds once you know the rules. Aim to finish Q27 with **2–3 minutes left**.
-4. **Final 2–3 minutes:** go to the question menu, return to flagged questions, and make sure nothing is blank.
+1. **Q1–7 (vocabulary and structure):** about 75 seconds each. Finish Q7 with about 23 minutes left.
+2. **Q8–14 (main idea, evidence, graphs, inferences):** the slowest, about 85 seconds each. Finish Q14 with about 13 minutes left.
+3. **Q15–27 (grammar, transitions, notes):** about 40–50 seconds each; grammar often takes 30 seconds once you know the rules. Finish with 2–3 minutes left.
+4. **Final 2–3 minutes:** open the question menu, return to flagged questions, and make sure nothing is blank.
 
-### Math plan (35 minutes, 22 questions)
+Because the second half is so much faster, don't panic if you're a little "behind" at the halfway point.
 
-1. **Questions 1–8 (the easier ones):** about 60 seconds each. Aim to finish Q8 with about **27 minutes left**.
-2. **Questions 9–16 (medium):** about 90 seconds each. Aim to finish Q16 with about **15 minutes left**.
-3. **Questions 17–22 (the hardest):** about 2 minutes each. Aim to finish with **about 3 minutes left**.
-4. **Final minutes:** revisit flagged questions, double-check any typed-in answers, and fill every blank.
+### Math: 35 minutes, 22 questions
 
-The early questions are easier, but don't rush them. An easy question gets you exactly as many points as a hard one, and a careless slip on Q3 in Module 1 hurts more than missing Q22.
+Math mixes topics and runs from easiest to hardest across the whole module. The last few questions are the hardest, so you want to reach them with time in the bank.
 
-### The skip-and-come-back rule
+1. **Q1–8 (easier):** about 60 seconds each. Finish Q8 with about 27 minutes left.
+2. **Q9–16 (medium):** about 90 seconds each. Finish Q16 with about 15 minutes left.
+3. **Q17–22 (hardest):** about 2 minutes each. Finish with about 3 minutes left.
+4. **Final minutes:** revisit flagged questions, double-check typed-in answers, and fill every blank.
 
-The single most common pacing mistake is fighting one question for three minutes. Use this routine instead:
+### When you're stuck: skip and come back
 
-1. If you've worked on a question for about **45–60 seconds and have no clear path**, stop.
-2. Eliminate any choices you can, **pick your best guess right now**, and click **Mark for Review**.
-3. Move on. Come back in your final minutes if there's time.
+When a question stalls, cut your losses with this routine:
 
-Always enter a guess *before* you flag. If time runs out, a guessed answer has a chance of being right. A blank never does.
+1. If you've worked for about 45–60 seconds with no clear path, stop.
+2. Eliminate what you can, **enter your best guess now**, and click Mark for Review.
+3. Move on, and come back in your final minutes if there's time.
 
-### Guessing strategy
+Always guess before you flag. If time runs out, a guessed answer might be right; a blank never is.
 
-- **Eliminate first.** Cutting four choices down to two doubles your odds, from 25% to 50%.
-- **Never leave a blank.** There's no penalty.
-- **If the clock is about to run out on several untouched questions,** pick one letter (say, B) and fill it in for all of them. That's faster than thinking about each one. With four choices per question, a consistent letter will usually pick up about one point in every four.
-- **For a math typed-in answer you can't solve,** enter a reasonable estimate rather than leaving it empty.
+### Guessing
 
-## Rules and facts you need
+- **Eliminate first.** Cutting four choices to two doubles your odds, from 25% to 50%.
+- **Never leave a blank.** There's no penalty, so a blank is a wasted chance.
+- **Out of time on several questions?** Pick one letter (say, B) and fill it in for all of them. It's faster than thinking, and you'll still expect about one right in every four.
+- **Can't solve a typed-in math answer?** Enter a reasonable estimate rather than leaving it empty.
 
-### The test at a glance
+## Bluebook tools
 
-| Section | Module | Questions | Minutes | Avg. time per question |
-|---|---|---|---|---|
-| Reading and Writing | Module 1 | 27 (25 scored + 2 pretest) | 32 | about 71 seconds |
-| Reading and Writing | Module 2 | 27 (25 scored + 2 pretest) | 32 | about 71 seconds |
-| Break | | | 10 | |
-| Math | Module 1 | 22 (20 scored + 2 pretest) | 35 | about 95 seconds |
-| Math | Module 2 | 22 (20 scored + 2 pretest) | 35 | about 95 seconds |
-| Total | 4 modules | 98 | 134 + break | |
+Practice with every tool before test day so none of them slows you down.
 
-Reading and Writing questions are all multiple choice with four choices and one short passage each. In Math, about 75% of questions are multiple choice and about 25% are **student-produced response** (SPR), where you type your own answer. A calculator is allowed on every Math question.
+- **Timer:** counts down the module's time. You can hide it, but it reappears with a warning at 5 minutes left. Glance at it every 5 questions, not every question.
+- **Mark for Review:** flags a question. Flagged questions show up in the question menu.
+- **Question menu:** the button at the bottom showing the question number. It shows which questions are answered, blank or flagged, and lets you jump to any of them.
+- **Option eliminator:** crosses out answer choices, so you don't keep rereading wrong ones.
+- **Highlights and Notes:** mark text or add a short note. Most useful in Reading and Writing, for a passage's main claim or a key contrast word.
+- **Reference sheet:** common math formulas (area, volume, triangles, circles) on every math question. Still learn them, because looking them up costs time.
+- **Calculator (Desmos):** a built-in graphing calculator you can drag around the screen. Great for graphing, finding intersections and checking answers. You may also bring an approved handheld calculator.
 
-### Bluebook tools
+## Typing in math answers
 
-| Tool | What it does | How to use it well |
-|---|---|---|
-| Timer | Counts down the time left in the module | You can hide it, but it reappears with a warning when 5 minutes are left. Glance at it every 5 questions, not every question. |
-| Mark for Review | Puts a flag on a question | Guess first, then flag. Flagged questions show up in the question menu. |
-| Question menu | The button at the bottom that shows the question number | Shows which questions are answered, blank or flagged. Lets you jump to any question in the module. |
-| Option eliminator | Crosses out answer choices | Turn it on once and leave it on. Crossing out wrong choices keeps you from re-reading them. |
-| Highlights and Notes | Highlight text or add a short note | Most useful in Reading and Writing, for marking a passage's main claim or a key contrast word. |
-| Reference sheet | Common math formulas (area, volume, triangles, circles) | Available on every math question. Still learn the formulas, because looking them up costs time. |
-| Calculator (Desmos) | Built-in graphing calculator, which you can drag around the screen | Great for graphing equations, finding intersections and checking answers. Practice with it before test day. You may also bring an approved handheld calculator. |
-
-### Typing in math answers (SPR rules)
-
-These come from the official directions shown in Bluebook:
+Student-produced responses follow strict entry rules from the official Bluebook directions:
 
 | Rule | Example |
 |---|---|
-| Positive answers: up to **5 characters** | `3.5` or `7/2` |
-| Negative answers: up to **6 characters**, including the minus sign | `-1/3` |
-| If a fraction doesn't fit, type the decimal instead | a long fraction becomes its decimal |
-| If a decimal doesn't fit, cut it off or round it at the fourth digit | 2/3 can be `.6666`, `.6667`, `0.666` or `0.667` |
-| A too-short decimal is marked wrong | for 2/3, `0.66`, `.66`, `0.67` and `.67` all get no credit |
-| Mixed numbers must become an improper fraction or a decimal | 3½ is `7/2` or `3.5`. Typing `3 1/2` gets no credit, and `31/2` means thirty-one halves |
+| Positive answers: up to 5 characters | `3.5` or `7/2` |
+| Negative answers: up to 6, counting the minus sign | `-1/3` |
+| Fraction doesn't fit? Type the decimal | a long fraction becomes its decimal |
+| Decimal doesn't fit? Cut it off or round at the 4th digit | 2/3 can be `.6666`, `.6667`, `0.666` or `0.667` |
+| A too-short decimal is marked wrong | for 2/3, `0.66`, `.66`, `0.67`, `.67` get no credit |
+| Mixed numbers become an improper fraction or decimal | 3½ is `7/2` or `3.5` |
 | No symbols like %, $ or commas | for "12.5%", type `12.5` |
-| If more than one answer works, enter just one | any one correct value earns the point |
+| More than one answer works? Enter just one | any one correct value earns the point |
+
+Typing `3 1/2` gets no credit, and `31/2` means thirty-one halves.
 
 > **Tip:** When you type an answer, Bluebook shows a preview of how it reads your entry. Check the preview, especially for fractions and negatives.
 
-### Test-day basics
+## Test day
 
-- **A few days before (1–5 days):** open Bluebook on the device you'll test on, sign in, and complete **exam setup**. This creates your admission ticket. Print it if you can.
-- **What to bring:** your fully charged device with Bluebook set up, your admission ticket, an acceptable **physical** photo ID (not on your phone), pencils or pens for scratch work, your College Board username and password, and an approved calculator if you want one.
+Most test-day trouble comes from skipped setup, so do these in order:
+
+- **1–5 days before:** open Bluebook on the device you'll test on, sign in, and complete **exam setup**. This creates your admission ticket. Print it if you can.
+- **What to bring:** your charged device with Bluebook set up, your admission ticket, an acceptable physical photo ID (not on your phone), pencils or pens, your College Board username and password, and an approved calculator if you want one.
 - **Nice to have:** a charger or portable battery, a watch with no alarm, and a drink and snack for the break.
-- **Timing at a weekend test center:** doors usually open at 7:45 a.m. and close at 8:00 a.m., unless your ticket says otherwise. If you're late, you can't get in. Testing usually starts around 8:15–8:30 and standard time finishes around 10:45–11:00.
-- **Scratch paper** is handed out by the staff and collected at the end.
-- **Phones and smart devices** are collected or stored away from your desk, including during the break. A phone that buzzes or gets used can get you dismissed and your scores canceled.
-- **The break** is 10 minutes between Reading and Writing and Math. Eat, drink water, stand up. If you take an extra unscheduled break, the clock keeps running.
+- **Arrival:** at a weekend test center, doors usually open at 7:45 a.m. and close at 8:00 a.m., unless your ticket says otherwise. If you're late, you can't get in.
+- **Timing:** testing usually starts around 8:15–8:30, and standard time finishes around 10:45–11:00.
+- **Scratch paper:** staff hand it out and collect it at the end.
+- **Phones and smart devices:** collected or stored away from your desk, even during the break. A phone that buzzes or gets used can get you dismissed and your scores canceled.
+- **The break:** 10 minutes between Reading and Writing and Math. Eat, drink water, stand up. If you take an extra unscheduled break, the clock keeps running.
 
-School-day SATs and testing abroad can have different details, so check your admission ticket and the College Board site for your exact rules.
+School-day SATs and testing abroad can differ, so check your admission ticket and the College Board site for your exact rules.
 
-### A smart study plan
+## A smart study plan
 
-1. **Take a full Bluebook practice test first.** It's the closest thing to the real exam, adaptive and timed. Your score report in My Practice shows every question, your answer and the explanation.
-2. **Keep an error log.** For every missed question (and every lucky guess), write down the test, module, question type, and *why* you missed it: didn't know the content, careless slip, ran out of time, or fell for a trap answer.
+Scores rise from fixing mistakes, so build your prep around review:
+
+1. **Take a full Bluebook practice test first.** It's adaptive and timed, the closest thing to the real exam. Your score report in My Practice shows every question, your answer and the explanation.
+2. **Keep an error log.** For every miss (and every lucky guess), note the test, module, question type, and *why*: didn't know it, careless slip, ran out of time, or fell for a trap.
 3. **Re-solve misses from scratch** before reading the explanation. Reading an explanation feels like learning, but solving it yourself is what sticks.
-4. **Drill your weak skills** with the official **Student Question Bank**, which lets you filter by section, domain, skill and difficulty. Try to save the full Bluebook tests for timed practice so you don't see their questions early.
-5. **Re-test every couple of weeks,** not every day. Give your drilling time to work. Many top scorers say they spent as long reviewing a practice test as taking it.
+4. **Drill weak skills** with the official **Student Question Bank**, which filters by section, domain, skill and difficulty. Save the full Bluebook tests for timed practice so you don't see their questions early.
+5. **Re-test every couple of weeks,** not every day. Many top scorers spend as long reviewing a practice test as taking it.
 6. **In the final week,** stop learning brand-new material. Review your error log, do a couple of timed modules, and sleep well.
 
 ## Worked examples
@@ -194,45 +196,18 @@ On two student-produced response questions, you work out the answers **23/9** an
 
 ## Traps to avoid
 
-- **Treating Module 1 as a warm-up.** Careless errors there can send you to the easier Module 2 and lower your maximum score. Read carefully and check your work.
-- **Panicking when Module 2 feels hard.** A hard Module 2 usually means you did well on Module 1. Keep your normal pace and don't try to guess your score mid-test.
-- **Fighting one question for minutes.** Every question is worth the same. Guess, flag and move on after about a minute with no progress.
-- **Flagging without guessing.** If time runs out, a flagged blank is a zero. Always enter an answer before you flag.
-- **Leaving anything blank.** There's no wrong-answer penalty, so a blank is just a wasted chance.
-- **Typing decimals that are too short.** For SPR, `0.67` for 2/3 gets no credit. Use the fraction or all the allowed characters.
-- **Typing mixed numbers or symbols.** `3 1/2`, `50%` and `$12` are all wrong formats. Use `7/2`, `50` and `12`.
+- **Fighting one question for minutes.** It's the most common pacing mistake. Every question is worth the same, so after about a minute with no progress, guess, flag and go.
+- **Rushing the easy early questions.** An easy question is worth as much as a hard one, and a careless slip on Q3 in Module 1 hurts more than missing Q22.
+- **Panicking when Module 2 feels hard.** A noticeably harder Module 2 usually means Module 1 went well. Keep your normal pace and don't try to guess your score mid-test.
 - **Meeting Bluebook for the first time on test day.** Practice with the tools, especially Desmos and the eliminator, before the real test.
-- **Taking practice test after practice test without reviewing.** Scores go up from fixing mistakes, not from piling up tests.
+- **Taking test after test without reviewing.** Scores go up from fixing mistakes, not from piling up practice tests.
 
 ## Quick checklist
 
-- Exam setup done in Bluebook, admission ticket printed, device charged, physical photo ID packed.
+- Exam setup done, admission ticket printed, device charged, physical photo ID packed.
 - Module 1 of each section gets your most careful work.
 - Reading and Writing: finish Q14 with about 13 minutes left, then speed up on grammar.
 - Math: finish Q8 with about 27 minutes left and Q16 with about 15 minutes left.
 - Stuck for about a minute? Guess, flag, move on.
 - Last minute of every module: no blanks, anywhere.
-- SPR: no mixed numbers, no symbols, and decimals filled out to the full 5 (or 6 with a minus) characters.
-
-## Sources
-
-- [College Board: Digital SAT structure](https://satsuite.collegeboard.org/sat/whats-on-the-test/structure)
-- [College Board: How SAT scores are calculated](https://satsuite.collegeboard.org/sat/scores/understanding-scores/how-scores-are-calculated)
-- [College Board: Digital SAT Suite Specifications Overview (PDF)](https://satsuite.collegeboard.org/media/pdf/digital-sat-test-spec-overview.pdf)
-- [College Board: SAT Bluebook test directions, including SPR entry rules (PDF)](https://satsuite.collegeboard.org/media/pdf/english-sat-test-directions-bb.pdf)
-- [College Board: Reading and Writing section overview](https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing)
-- [Bluebook: Testing tools](https://bluebook.collegeboard.org/students/tools)
-- [College Board: Practice in Bluebook](https://satsuite.collegeboard.org/practice/bluebook)
-- [College Board: Student Question Bank](https://satsuite.collegeboard.org/practice/student-question-bank)
-- [College Board: Build your study plan](https://satsuite.collegeboard.org/practice/build-your-study-plan)
-- [College Board: What to bring on test day](https://satsuite.collegeboard.org/sat/what-to-bring-do/what-to-bring)
-- [College Board: What to expect on test day](https://satsuite.collegeboard.org/sat/what-to-bring-do/what-to-expect)
-- [Applerouth: The complete guide to the digital adaptive SAT](https://www.applerouth.com/blog/the-complete-guide-to-the-digital-adaptive-sat)
-- [Applerouth: Bluebook tips, tools and strategies](https://applerouth.com/blog/cracking-the-digital-sat-bluebook-tips-tools-and-strategies-for-success)
-- [Compass Education Group: The new digital SAT](https://www.compassprep.com/digital-sat/)
-- [Tutela Prep: What Module 2 difficulty tells you about your score](https://www.tutelaprep.com/blog/adaptive-testing-on-digital-sat-what-module-2-difficulty-tells-you-about-your-score/)
-- [Edison OS: Digital SAT pacing, section by section](https://www.edisonos.com/digital-sat/pacing-the-sat)
-- [YouTube: Last minute tips for the SAT from a perfect scorer](https://www.youtube.com/watch?v=m3PvNYRGVJk)
-- [Ivy Strides: How to review your SAT practice test mistakes](https://www.ivystrides.com/blog/how-to-review-your-sat-practice-test-mistakes/)
-- [Larry Learns: SAT study plan and pacing guide](https://www.larrylearns.com/blog/sat-maxxing)
-- [r/Sat community: study plans and test-day reports](https://www.reddit.com/r/Sat/)
+- SPR: no mixed numbers, no symbols, and decimals filled out to 5 characters (6 with a minus).

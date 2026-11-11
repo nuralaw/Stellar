@@ -3,53 +3,56 @@ title: Rhetorical Synthesis
 skill: rhetorical-synthesis
 domain: expression-ideas
 section: rw
-summary: Answer "student's notes" questions in under a minute by matching the choice to the goal instead of the notes.
-minutes: 9
+summary: Answer "student's notes" questions in under a minute by matching each choice to the goal, not to the notes.
+minutes: 11
 ---
+
+> **Key idea:** All four choices are usually true to the notes, so accuracy won't decide it. Pick the one sentence that does exactly the job the goal asks for.
 
 ## What this question looks like
 
-You'll know this one right away. The left side of the screen starts with **"While researching a topic, a student has taken the following notes:"** and then shows 4–6 bullet points of facts. The right side says:
+You'll recognize this one at once. The left side starts with "While researching a topic, a student has taken the following notes:" and lists 4–6 bullet points of facts. The right side states a goal and asks:
 
 **"The student wants to [goal]. Which choice most effectively uses relevant information from the notes to accomplish this goal?"**
 
-Each answer choice is one sentence built from the notes. These questions sit near the end of each Reading and Writing module, along with Transitions, and they are some of the fastest points on the test once you know the trick.
-
-> **Key idea:** The notes are just raw material. The goal is the instruction. Almost every time, all four choices are true to the notes. Only one of them does the job the goal asks for.
+Each choice is one sentence built from the notes. These questions sit near the end of each Reading and Writing module, along with Transitions, and they're some of the fastest points on the test.
 
 ## The method
 
-1. **Skip the notes. Read the goal first.** It's the sentence that starts "The student wants to…". Most students lose time by reading every bullet carefully. Don't.
-2. **Find the verb and the target.** Underline in your head what the sentence must *do* (emphasize, contrast, introduce, explain, give an example…) and *what it must do it to* (which person, study, place or feature).
-3. **Picture the right answer.** Say it in a few words: "both animals + the thing they share," or "who she is + what she made." Now you know what the correct choice has to contain.
-4. **Check each choice against the goal, not the notes.** Ask: "Does this sentence do the job, all of it?" Cross out any choice that does a different job, does only half the job, or talks about the wrong thing.
-5. **Use the notes only as a tie-breaker.** If two choices survive, glance at the notes to see which one is accurate and complete. Usually you won't need to.
+Read the goal, not the notes, and let it decide.
 
-> **Tip:** With practice, this takes 30–45 seconds. The time you save here is time you can spend on harder reading questions.
+1. **Read the goal first.** It's the sentence that starts "The student wants to…". Skip the bullets for now; reading them closely is where most students lose time.
+2. **Find the job and the target.** What must the sentence *do* (emphasize, contrast, introduce, explain, give an example)? And to *what* (which person, study, place or feature)?
+3. **Picture the right answer** in a few words, like "both animals + what they share" or "who she is + what she made."
+4. **Check each choice against the goal.** Ask: "Does this sentence do the whole job?" Cross out any choice that does a different job, only half the job, or talks about the wrong thing.
+5. **Use the notes only as a tie-breaker.** If two choices survive, glance at the notes to see which is accurate and complete. Usually you won't need to.
+
+> **Tip:** With practice, this takes 30–45 seconds. Bank that time for the harder reading questions.
 
 ## Rules and formulas you need
 
-The goal verb tells you what the correct sentence must contain. Learn these patterns:
+The goal's verb tells you what the right sentence must contain.
 
-| The goal says… | The right answer must have… | Signal words to look for |
+| The goal says… | The answer must have… | Signal words |
 |---|---|---|
-| emphasize a **similarity** | both things + what they share | both, like, also, similarly |
-| emphasize a **difference** / contrast | both things + how they differ | while, whereas, unlike, but, however |
-| **introduce** X to an audience **unfamiliar** with it | who or what X is (a short label like "South African architect") + basic info | a name with a description |
-| present X to an audience **already familiar** with it | the new detail; no basic background needed | — |
-| present a **study's findings** / conclusion | what the researchers found | found, showed, concluded |
-| describe a study's **method** / aim | how it was done, or what it set out to learn | used, measured, aimed to |
-| **explain why** / cause and effect | the cause and the result, linked | because, so, as a result |
-| give an **example** / illustrate | one specific case | for example, such as |
-| make **and support** a generalization | a broad claim + specific evidence | — |
-| **emphasize** a feature (size, age, cost…) | that feature front and center | — |
-| **specify** / indicate a detail (date, place, amount) | that exact fact | — |
+| emphasize a similarity | both things + what they share | both, like, also, similarly |
+| emphasize a difference or contrast | both things + how they differ | while, whereas, unlike, but |
+| introduce X to an **unfamiliar** audience | who or what X is + basic info | a name with a label |
+| present X to a familiar audience | the new detail, no background | — |
+| present a study's findings | what the researchers found | found, showed, concluded |
+| describe a study's method or aim | how it was done or what it sought | used, measured, aimed to |
+| explain why (cause and effect) | the cause and result, linked | because, so, as a result |
+| give an example | one specific case | for example, such as |
+| make and support a generalization | broad claim + specific evidence | — |
+| emphasize a feature (size, age, cost…) | that feature up front | — |
+| specify a detail (date, place, amount) | that exact fact | — |
 
-Three more rules that hold almost every time:
+A "label" is a short description next to a name, like "South African architect Lindiwe Mokoena."
 
-- **Every part of the goal counts.** If the goal has two parts ("introduce the author *and* her novel"), the answer must do both. Half-done is wrong.
-- **More notes is not better.** The right answer uses the notes the goal needs and leaves out the rest. A long sentence stuffed with facts often goes off-goal.
-- **Being true is not enough.** Since all four choices usually match the notes, "Is this accurate?" won't help you choose. "Does this do the job?" will.
+Two more rules hold almost every time:
+
+- **Every part of the goal counts.** If the goal has two parts ("introduce the author *and* her novel"), the answer must do both.
+- **Use only the notes the goal needs.** The right answer leaves the other notes out, so a longer sentence isn't a better one.
 
 ## Worked examples
 
@@ -145,13 +148,15 @@ Goal first: an **advantage** (a difference) that favors **pumped hydro**. The an
 
 ## Traps to avoid
 
-- **True but off-goal.** The choice matches the notes perfectly but does a different job, like describing a difference when the goal wants a similarity. This is the most common wrong answer, because it looks "correct."
-- **Half the goal.** The goal has two parts and the choice does only one, or it should cover two things and mentions only one of them.
-- **Right topic, wrong direction.** The choice compares the right two things but makes the opposite point (Example 3, choice A).
-- **The kitchen-sink sentence.** A long choice that crams in many notes. Extra facts don't earn points; if they pull the sentence away from the goal, the choice is wrong.
+Wrong choices are usually accurate. They fail the goal in one of these ways.
+
+- **True but off-goal.** It matches the notes perfectly but does a different job, like showing a difference when the goal wants a similarity. This is the most common wrong answer because it looks correct.
+- **Half the goal.** The goal has two parts, or names two things, and the choice covers only one.
+- **Right topic, wrong direction.** It compares the right two things but makes the opposite point (Example 3, choice A).
+- **The kitchen-sink sentence.** A long choice that crams in many notes. Extra facts earn nothing, and they often pull the sentence off the goal.
 - **Assuming the reader knows.** For "unfamiliar audience" goals, a choice that drops a name with no explanation fails, even if it's accurate.
-- **Wrong subject.** The choice discusses something related but not the exact person, study or feature named in the goal.
-- **Extra or exaggerated claims.** Rarely, a choice adds something the notes don't say, or uses words like "always," "only" or "proves" when the notes are more careful. If you see that, cross it out.
+- **Wrong subject.** It's about something related, not the exact person, study or feature the goal names.
+- **Extra or exaggerated claims.** Rarely, a choice adds something the notes don't say, or uses "always," "only" or "proves" when the notes are more careful. Cross it out.
 
 ## Quick checklist
 
@@ -160,18 +165,4 @@ Goal first: an **advantage** (a difference) that favors **pumped hydro**. The an
 - Does my choice do *every* part of the goal?
 - Is it about the exact thing the goal names?
 - For similarity or difference goals: are both things in the sentence, with the right signal word?
-- For audience goals: does it explain enough (or skip what the reader already knows)?
-
-## Sources
-
-- [SAT Rhetorical Synthesis Strategy (PrepMaven)](https://prepmaven.com/blog/test-prep/sat-rhetorical-synthesis-strategy/)
-- [Mastering Rhetorical Synthesis Questions on the Digital SAT (Test Ninjas)](https://www.test-ninjas.com/sat-rhetorical-synthesis)
-- [Rhetorical Synthesis: Goal Verbs and Note Selection (Open Exam Prep)](https://open-exam-prep.com/study-guides/sat-reading-writing/expression-of-ideas/rhetorical-synthesis)
-- [Expression of Ideas on the SAT (IvyStrides)](https://www.ivystrides.com/blog/expression-of-ideas-sat/)
-- [SAT Reading and Writing: Rhetorical Synthesis (NUM8ERS)](https://num8ers.com/rhetorical-synthesis/)
-- [Rhetorical Synthesis Practice Questions guide (EdisonOS)](https://edisonos.com/blog/rhetorical-synthesis-practice-questions)
-- [Synthesizing Notes lesson (Varsity Tutors)](https://www.varsitytutors.com/practice/subjects/sat/lessons/synthesizing-notes)
-- [Expression of Ideas: Rhetorical Synthesis (Achievable)](https://app.achievable.me/study/sat/learn/expression-ideas-rhetorical-synthesis)
-- [Rhetorical Synthesis Practice (Dolphin)](https://dolphin.study/sat/reading-writing/rhetorical-synthesis-practice/)
-- [SAT Expression of Ideas (Manhattan Review)](https://www.manhattanreview.com/sat-expressions-of-ideas/)
-- [What's on the SAT: Reading and Writing (College Board)](https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing)
+- For audience goals: does it explain enough, or skip what the reader already knows?
