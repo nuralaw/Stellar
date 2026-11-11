@@ -155,7 +155,7 @@ Each of these wrong answers shows up in the choices on purpose.
 
 - **Slope read straight from standard form.** In `5x + 2y = 11` the slope is −5/2, not 5. The x-coefficient is the slope only when y is alone.
 - **Sign lost while solving for y.** Dividing by a negative y-coefficient flips the sign of every term.
-- **Half of the perpendicular rule.** You must flip AND change the sign. Choices that do only one step are always offered.
+- **Half of the perpendicular rule.** You must flip AND change the sign. Choices that do only one step are usually offered.
 - **Parallel and perpendicular mixed up.** Re-read the word before you pick; the other slope is usually a choice.
 - **Calling the same line "parallel".** Same slope and same intercept is one line, not two parallel lines.
 - **Point-slope sign flip.** `y + 2 = 3(x − 5)` passes through (5, −2), not (−5, 2).

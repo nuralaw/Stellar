@@ -86,7 +86,7 @@ Based on the texts, how would Okoye most likely respond to Reyes's explanation?
 
 **Solution**
 
-Text 1 says small because of **genes**. Text 2 says small because of **food**: the same fish grow big when moved, and outside fish shrink when moved in. Relationship: alternative explanation. Prediction: "Okoye would say it's the lake, not the bloodline."
+Text 1 says small because of **genes**. Text 2 says small because of **food**: the same fish grow big when moved, and outside fish shrink when moved in. Relationship: another explanation. Prediction: "Okoye would say it's the lake, not the bloodline."
 
 - (A) gets his result backward. The trout moved *out* grew to normal size.
 - (B) matches the prediction and keeps his word *mainly*.

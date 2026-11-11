@@ -17,7 +17,7 @@ The last words before the blank are a lead-in such as "This suggests that ______
 
 - "Which choice most logically completes the text?"
 
-The College Board describes these passages as arguments cut off just before the end: everything you need is there except the final step. They're often among the hardest questions in a module, so a steady method beats gut feeling.
+Think of the passage as an argument cut off just before the end: everything you need is there except the final step. These can be some of the trickier questions in a module, so a steady method beats gut feeling.
 
 ## The method
 
@@ -102,7 +102,7 @@ To find out whether its new protected bike lanes make cyclists feel safer, the c
 - (A) riders who still feel unsafe might avoid the new lanes and so were less likely to take the survey.
 - (B) protected bike lanes have reduced accidents in many other cities.
 - (C) 15% of the riders surveyed said they did not feel safer.
-- (D) most of the city's cyclists prefer riding on streets without bike lanes.
+- (D) most of the city's cyclists ride for exercise rather than to get to work.
 
 **Solution**
 
@@ -111,7 +111,7 @@ Lead-in: "since," so we need a *reason*, and specifically a reason the survey mi
 - (A) explains exactly why the sample leans positive. Note the careful wording: "might."
 - (B) is about other cities and would support the lanes, not raise a concern. Off topic.
 - (C) just repeats the survey result (100% − 85% = 15%). It doesn't explain why the survey might not represent all cyclists. Restatement.
-- (D) is a strong claim with no evidence anywhere in the passage. Too new and too strong.
+- (D) brings in a fact the passage never gives, and even if true, it says nothing about who took the survey or how safe riders feel. Too new.
 
 **Answer:** (A)
 

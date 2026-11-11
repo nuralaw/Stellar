@@ -47,7 +47,7 @@ Five formulas cover almost every SAT probability question.
 | Basic | P(A) = ways A happens / all outcomes | "from all" |
 | Conditional | P(A given B) = number in both / number in B | "given that", "of those", "among" |
 | Not | P(not A) = 1 − P(A) | "not", "does not" |
-| Or | P(A) + P(B) − P(A and B) | "or", "either" |
+| Or | P(A or B) = P(A) + P(B) − P(A and B) | "or", "either" |
 | And (table) | A-and-B cell / grand total | "and", "both" |
 
 ### Facts to know cold

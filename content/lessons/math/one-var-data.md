@@ -212,8 +212,8 @@ Desmos has built-in functions for lists, so type the data once and ask for any m
 
 - Put the values in one list and the counts in another, in the same order: `V = [0, 1, 2, 3, 4]` and `F = [4, 8, 5, 4, 3]`.
 - Mean: `total(V*F)/total(F)`. Desmos multiplies the lists pair by pair; for Example 1 this gives 1.75.
-- Median: `median(repeat(V, F))` expands the table into all 24 values first, giving 1.5 for Example 1.
-- If your Desmos doesn't recognize `repeat`, count positions by hand as in Example 1.
+- Median: try `median(repeat(V, F))`, which should expand the table into all 24 values first. If it gives 1.5 for Example 1, it works.
+- If Desmos doesn't recognize `repeat` or gives a different number, count positions by hand as in Example 1.
 
 ### Standard deviation
 

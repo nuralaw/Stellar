@@ -4,7 +4,7 @@ skill: rhetorical-synthesis
 domain: expression-ideas
 section: rw
 summary: Answer "student's notes" questions in under a minute by matching each choice to the goal, not to the notes.
-minutes: 11
+minutes: 10
 ---
 
 > **Key idea:** All four choices are usually true to the notes, so accuracy won't decide it. Pick the one sentence that does exactly the job the goal asks for.
@@ -112,8 +112,6 @@ Goal first: **introduce two things** (Mokoena *and* the library) to readers who 
 - (B) says "Mokoena's library" as if we already know her. A reader new to the topic still doesn't know who she is or which library this is.
 - (C) gives her full name, a label ("South African architect"), and explains what the Thaba Library is and where. Both parts are introduced.
 - (D) explains the building material, not the person or the library.
-
-> **Tip:** For "unfamiliar audience" goals, look for a full name with a short description right next to it. That's how writers introduce someone new.
 
 **Answer:** (C)
 

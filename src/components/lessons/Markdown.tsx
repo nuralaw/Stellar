@@ -131,7 +131,8 @@ export function parseBlocks(md: string): Block[] {
     const buf: string[] = [t];
     i++;
     while (i < lines.length && lines[i].trim() && !/^(#{2,3}\s|>|[-*]\s|\d+[.)]\s|\||```)/.test(lines[i].trim())) buf.push(lines[i++].trim());
-    out.push({ t: "p", text: buf.join(" ") });
+    // A single newline inside a paragraph is kept (e.g. the two equations of a system, one per line).
+    out.push({ t: "p", text: buf.join("\n") });
   }
   return out;
 }
@@ -215,7 +216,12 @@ function renderBlocks({ blocks }: { blocks: Block[] }) {
           case "p":
             return (
               <p key={i} className="my-4">
-                {inline(b.text)}
+                {b.text.split("\n").map((line, j) => (
+                  <Fragment key={j}>
+                    {j > 0 && <br />}
+                    {inline(line)}
+                  </Fragment>
+                ))}
               </p>
             );
           case "ul":

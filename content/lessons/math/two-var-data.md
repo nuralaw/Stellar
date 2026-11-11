@@ -200,7 +200,7 @@ Desmos can find the best-fit equation for you, the safest method when answer cho
 
 1. Click **+** and choose **table**. Type the x-values in the x₁ column and the y-values in the y₁ column.
 2. On a new line, type a regression with `~` (the tilde) instead of `=`, using one of the forms below. Desmos turns `x1` into x₁ automatically.
-3. Read off m and b (or a and b) and r². The closer r² is to 1, the better the fit, so when comparing a linear and an exponential fit, the larger r² wins.
+3. Read off m and b (or a and b) and r² (shown as R² for curved models). The closer it is to 1, the better the fit, so when comparing a linear and an exponential fit, the larger r² wins.
 4. Use the values Desmos found like numbers. For a prediction at x = 12, type `12m + b`.
 
 Regressions to type:
@@ -212,7 +212,7 @@ Regressions to type:
 Other quick moves:
 
 - **Test answer choices.** Graph each choice over the table's points. The right one runs through the middle of the dots, with some above and some below.
-- **Residuals.** Type the given model, like `f(x) = 4.5x + 54`, then `85 − f(6)` gives the residual in one line.
+- **Residuals.** Type the given model, like `f(x) = 4.5x + 54`, then `85 - f(6)` gives the residual in one line.
 - **Use x₁ and y₁, not plain x and y.** `y ~ mx + b` won't fit the table.
 
 ## Quick checklist

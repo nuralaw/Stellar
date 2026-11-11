@@ -162,7 +162,7 @@ Which point (x, y) is a solution to the system of inequalities above?
 
 Test every choice in both inequalities. Drop it the moment it fails one.
 
-- (A) First inequality: is −3 > 2(0) − 3 = −3? No. −3 equals −3, and the sign is strict. The point lies on the dashed line, so it fails.
+- (A) First inequality: is −3 > 2(0) − 3 = −3? No. −3 equals −3, and the sign is strict. The point lies on the boundary line, which isn't included for >, so it fails.
 - (B) First inequality: is 2 > 2(4) − 3 = 5? No. It fails.
 - (C) First inequality: is 3 > 2(1) − 3 = −1? Yes. Second inequality: is 1 + 2(3) = 7 ≤ 8? Yes. It passes both.
 - (D) First inequality: is 6 > −7? Yes. Second inequality: is −2 + 12 = 10 ≤ 8? No. It fails.

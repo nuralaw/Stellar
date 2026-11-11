@@ -178,7 +178,7 @@ Desmos is best for checking your work and for messy numbers. For simple equation
 ### Solve by typing the equation
 
 - Type the whole equation on one line, for example `5(x-3)-2x=4x-22`.
-- Desmos draws a vertical line. Click or hover on it to read its x-value (here x = 7).
+- Desmos draws a vertical line at the solution (here x = 7). Read its x-value off the grid; if clicking the line shows no label, graph each side instead (below).
 - If the variable isn't x (say t), retype it with x. Otherwise Desmos offers to make t a slider.
 - No line showing? Zoom out. The answer might be off-screen.
 

@@ -24,7 +24,7 @@ The calculations are small. Most points are lost by reading the conclusion choic
 
 - **Population:** the whole group you care about (all 48,000 households in a city).
 - **Sample:** the smaller group that was actually measured (400 of those households).
-- **Random sample:** everyone in the population had a fair chance to be picked. Only a random sample lets you make estimates about the population.
+- **Random sample:** everyone in the population had a fair chance to be picked. Only a random sample lets you make reliable estimates about the population.
 - **Sample statistic:** a number from the sample, like a sample mean (average) or sample proportion (fraction).
 - **Margin of error:** how far the true population value could plausibly be from the sample's number, just from the luck of who got picked.
 

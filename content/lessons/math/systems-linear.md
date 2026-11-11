@@ -1,5 +1,5 @@
 ---
-title: Systems of Linear Equations
+title: Systems of Two Linear Equations
 skill: systems-linear
 domain: algebra
 section: math

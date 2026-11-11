@@ -25,7 +25,7 @@ Typical sets of choices:
 - a noun with and without an apostrophe: *scientists / scientist's / scientists'*
 - the same idea in four different word orders
 
-These questions belong to **Standard English Conventions**, about a quarter of the Reading and Writing section. Only about six rules show up, and they repeat constantly.
+These questions belong to **Standard English Conventions**, about a quarter of the Reading and Writing section. Only about seven rules show up, and they repeat constantly.
 
 ## The method
 
@@ -89,7 +89,7 @@ Match the timeline the passage has already set. Look for time clues first; if th
 | Clue | Tense | Example |
 |---|---|---|
 | *in 1850, last year, ago* | Simple past | She **discovered** the fossil in 2004. |
-| *since, for the past decade, so far, recently* | Present perfect (*has/have* + participle) | Prices **have risen** since 2020. |
+| *since, for the past decade, so far* | Present perfect (*has/have* + participle) | Prices **have risen** since 2020. |
 | One past action before another | Past perfect (*had* + participle) | By the time help arrived, the fire **had spread**. |
 | A general fact, or what a book or study says | Simple present | The novel **follows** two sisters. |
 

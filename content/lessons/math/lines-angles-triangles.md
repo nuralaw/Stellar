@@ -73,7 +73,7 @@ What the names mean:
 
 ### Similar and congruent triangles
 
-**Similar triangles** have the same shape: equal angles, and every side multiplied by the same scale factor k. Their areas differ by k². Two triangles are similar if any of these is true:
+**Similar triangles** have the same shape: equal angles, and every side multiplied by the same scale factor k. Their areas differ by a factor of k². Two triangles are similar if any of these is true:
 
 - **AA:** two pairs of angles are equal. This is by far the most common. A shared angle, vertical angles, or a parallel line usually hands you the second pair.
 - **SAS similarity:** two pairs of sides have the same ratio, and the angles between them are equal.

@@ -181,7 +181,7 @@ Test each point in `x² + (y − 4)²` and compare with 25:
 Desmos is excellent for circle equations because it graphs them exactly as written, with no rearranging.
 
 - **Find the center and radius by looking.** Type the equation as given, like `x^2 + y^2 + 10x - 4y + 4 = 0`, then zoom in and read the center and edges off the grid.
-- **Use the gray points.** Clicking the curve often shows gray points, such as the circle's top and bottom. Their midpoint is the center, and half the distance between them is the radius.
+- **Use the gray points, if you get them.** If clicking the curve shows gray points at the circle's top and bottom (or left and right), their midpoint is the center and half the distance between them is the radius. If no points appear, read the center and edges off the grid instead.
 - **Test answer choices directly.** Graph each choice, like `(x+5)^2 + (y-2)^2 = 25`. The correct one lands exactly on top of the original circle.
 - **Inside or outside.** Change the = to < and Desmos shades the inside: `x^2 + y^2 - 8y < 9`. Then type each point, like `(-3, 1)`, and see which one sits in the shaded region. A point on the dashed edge is *on* the circle, not inside.
 - **Check a tangent line.** Graph the line with the circle. A tangent touches at exactly one point and doesn't cross into the circle.

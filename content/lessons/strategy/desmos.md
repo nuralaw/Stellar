@@ -11,7 +11,7 @@ minutes: 18
 
 ## When to reach for Desmos
 
-Bluebook has a Desmos graphing calculator built in, and you can open it (calculator icon, top of the screen) on all 44 Math questions. There's also a scientific mode, but graphing mode does almost everything you need.
+Bluebook has a Desmos graphing calculator built in, and you can open it (calculator icon, top of the screen) on all 44 Math questions. If you also see a scientific mode, stay in graphing mode: it does everything in this lesson.
 
 Strong scorers don't open it on every question. They spot the types where a graph does the work and skip it when algebra is quicker.
 
@@ -98,7 +98,7 @@ The three models you'll need:
 - Quadratic: `y_1 ~ ax_1^2 + bx_1 + c`
 - Exponential: `y_1 ~ ab^(x_1)`
 
-Desmos shows the fitted values of m and b (or a, b, c) under the regression line. You can reuse those letters, for example `f(x) = ab^x` and then `f(4)`.
+Desmos shows the fitted values of m and b (or a, b, c) just below the line where you typed the model. You can reuse those letters, for example `f(x) = ab^x` and then `f(4)`.
 
 If the points fit perfectly, you get the exact equation. If they don't (a scatterplot), you get the line or curve of best fit.
 
@@ -106,7 +106,7 @@ If the points fit perfectly, you get the exact equation. If they don't (a scatte
 
 Put numbers in square brackets to make a list, then wrap it in a function: `mean([4,7,7,10,12])` gives the average. The cheat sheet below lists the other functions; `median` doesn't need the data sorted first.
 
-You can name a list, `L = [4,7,7,10,12]`, and then write `mean(L)`. `stdev(L)` measures spread (the standard deviation), and `max(L) - min(L)` gives the range.
+You can name a list, `L = [4,7,7,10,12]`, and then write `mean(L)`. `stdev(L)` measures spread (the sample standard deviation; `stdevp(L)` is the population version), and `max(L) - min(L)` gives the range.
 
 For a frequency table (values with counts), make two lists: `v = [1,2,3,4]` for the values and `c = [5,8,4,3]` for the counts. The mean is `total(v*c)/total(c)`, because Desmos multiplies lists item by item.
 
@@ -120,7 +120,7 @@ A dashed boundary (`<` or `>`) is not included; a solid one (`<=` or `>=`) is.
 
 ### Degrees and radians
 
-Desmos graphing mode starts in **radians**, but most SAT trig uses degrees. Until you switch, `sin(30)` gives about −0.99 instead of 0.5. Click the wrench (graph settings) and choose Degrees before any trig question.
+Most SAT trig uses degrees, but Desmos may be set to **radians**. If it is, `sin(30)` gives about −0.99 instead of 0.5. Before any trig question, click the wrench (graph settings) and make sure Degrees is chosen.
 
 ## Cheat sheet: type exactly this
 

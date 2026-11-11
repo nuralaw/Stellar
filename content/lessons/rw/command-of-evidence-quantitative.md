@@ -11,7 +11,7 @@ minutes: 11
 
 ## What this question looks like
 
-You get a short passage plus a **table, bar graph or line graph**, the only three graphic types in Reading and Writing. The passage usually ends with a claim or with a sentence that has a blank.
+You get a short passage plus a graphic, usually a **table, bar graph or line graph**. The passage usually ends with a claim or with a sentence that has a blank.
 
 Typical question stems:
 
@@ -19,7 +19,7 @@ Typical question stems:
 - "Which choice most effectively uses data from the graph to *support* the researchers' hypothesis?"
 - "Which choice best describes data from the table that *weaken* the student's conclusion?"
 
-It looks like math, but it's a reading question. You never need more than a comparison or a quick subtraction; what's tested is whether you pick the data that fits the *exact* claim.
+It looks like math, but it's a reading question. You rarely need more than a comparison or a quick subtraction; what's tested is whether you pick the data that fits the *exact* claim.
 
 ## The method
 
@@ -31,8 +31,6 @@ Read the claim before the graphic, so you know which numbers matter.
 4. **Do a logic pass.** Without the graphic, cross out choices that couldn't do the job *even if their numbers were right*. This often removes one or two fast.
 5. **Read the graphic's edges, then only what you need.** Check the title, headers or axis labels, units and legend. Then find just the rows, bars or years your test needs.
 6. **Verify the remaining choices.** Check group, year, unit and direction. Pick the one that is both accurate and on target.
-
-> **Tip:** Some teachers say to scan the graphic first, but claim first is faster: without a target, every number looks important. Just check the graphic's labels before trusting any choice.
 
 ## Rules and formulas you need
 
@@ -166,7 +164,7 @@ Claim: bike lanes → *caused* → fewer car trips in Linden. Prediction for wea
 
 Every trap below fails one of the two tests: true, or on target.
 
-- **True but irrelevant.** The most common trap: numbers read correctly that don't touch the claim. In hard questions every choice may be accurate.
+- **True but irrelevant.** A very common trap: numbers read correctly that don't touch the claim. In hard questions every choice may be accurate.
 - **Right number, wrong row.** A real value, attached to the wrong group, year or condition.
 - **Half the claim.** The claim has two parts and the choice proves only one, like (C) in Example 1.
 - **One point posing as a trend.** A claim about change or "every year" needs at least two points, sometimes all of them.

@@ -11,7 +11,7 @@ minutes: 12
 
 ## What this question looks like
 
-You get one short text (science, history, fiction or a poem) and one question about the text's **job**, not its facts. Expect two or three per module, in one of three forms:
+You get one short text (science, history, fiction or a poem) and one question about the text's **job**, not its facts. The question comes in one of three forms:
 
 - **Main purpose:** "Which choice best states the main purpose of the text?"
 - **Function of a part:** "Which choice best describes the function of the underlined sentence in the text as a whole?"
@@ -42,7 +42,7 @@ Label what each sentence does, predict the job, then test every part of each cho
 | explain | tells why or how something happens |
 | illustrate / exemplify | gives a specific example of a general point |
 | support | gives evidence that a claim is true |
-| emphasize | stresses a point already made |
+| emphasize | stresses a point so it stands out |
 | contrast | shows how two things differ |
 | concede | admits a point for the other side before pushing back |
 | qualify | limits a claim: "true, but only in some cases" |
@@ -175,8 +175,6 @@ Each trap names a job the text doesn't actually do.
 - **Too strong.** *Proves*, *refutes*, *rejects* or *argues* when the text only suggests, notes a limit or describes.
 - **Wrong order.** A structure answer must follow the text's sequence: if the text goes claim then evidence, "evidence then claim" is wrong.
 - **Recycled words.** Reusing the text's vocabulary isn't the same as matching its job.
-
-> **Trap:** Don't judge an underlined sentence on its own. Ask what it does *for the text*: does it set up, support, turn against or conclude the ideas around it?
 
 ## Quick checklist
 

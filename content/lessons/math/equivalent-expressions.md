@@ -203,7 +203,7 @@ Desmos is built into every math question and is a strong check for "which is equ
 - Graphs hide single missing points (holes), and "x > 0" means only the right half must match. Read the restriction first.
 - Typing four long choices takes time. On short questions, plain algebra is faster.
 
-> **Tip:** Wrap fractional exponents in parentheses: type `x^(2/3)`, because `x^2/3` means x² divided by 3.
+> **Tip:** Wrap fractional exponents in parentheses: type `x^(2/3)`. Then check that the whole 2/3 sits up in the exponent, not x² divided by 3.
 
 ## Quick checklist
 

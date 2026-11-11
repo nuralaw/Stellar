@@ -217,9 +217,9 @@ Why the others are wrong: (C) skipped the check. (B) kept the fake answer and th
 
 Desmos is allowed on every Math question, and this skill is where it pays off most.
 
-- **Type the equation itself.** Enter `x^2-6x+5=0` and Desmos draws a vertical line at each solution. Click where the lines meet the x-axis to read the values.
+- **Type the equation itself.** Enter `x^2-6x+5=0` and Desmos draws a vertical line at each solution. Read the x-values off the grid; if clicking a line shows no label, graph `y=x^2-6x+5` and click its gray x-intercept dots.
 - **It works for every type.** Use `sqrt(x+7)+5=x` for a root, `abs(2x-5)=x+1` for absolute value, and parentheses around any denominator.
-- **Fake roots never appear.** Desmos graphs the original equation, so it only shows real solutions. For Example 3, `y=sqrt(x+7)+5` and `y=x` meet only at (9, 9), so x = 2 never shows up.
+- **Fake roots never appear.** Desmos graphs the original equation, so it only shows true solutions. For Example 3, `y=sqrt(x+7)+5` and `y=x` meet only at (9, 9), so x = 2 never shows up.
 - **Systems: click the gray dots.** For Example 1, type `y=x^2-5x+2` and `y=x-3`. The crossing dots show (1, −2) and (5, 2).
 - **"How many solutions?" Count crossings.** Count where `y = (your quadratic)` meets the x-axis, or count a system's crossing dots. Zoom out once so nothing hides off-screen.
 - **Unknown constant? Use a slider.** Type `y=-5x+k` with the parabola and add the slider for k. Drag until the line just touches the parabola, then confirm exactly or try each choice as k.

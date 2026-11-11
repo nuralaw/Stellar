@@ -43,7 +43,7 @@ These are the facts to know cold:
 - **Whole passage.** The main idea fits the first and last sentences, not just one example in the middle.
 - **Topic isn't the main idea.** "Coyotes" is a topic. "A study found coyotes eat less human food than expected" is a main idea.
 - **Pivot words show the author's view.** "People used to think X. But Y." The passage is about Y.
-- **Every word must be supported.** The College Board's own explanations mostly reject choices because the text gives no evidence for part of them.
+- **Every word must be supported.** Most wrong choices fail because the text gives no evidence for part of them.
 - **No outside knowledge.** A choice can be true in real life and still be wrong if the passage doesn't say it.
 - **Details come from one place.** For "according to the text", you should be able to point at the sentence that proves it.
 - **Match the strength.** If the text says "suggests" or "may", an answer with "proves" or "always" is too strong.
@@ -124,7 +124,7 @@ According to the text, what was the main reason farmers near Carrow built the st
 
 ## Traps to avoid
 
-Every wrong choice fails in one of these ways:
+Wrong choices usually fail in one of these ways:
 
 - **Too narrow:** a true detail (a number, one example, how a study was done) dressed up as the main idea. Does it cover the whole passage or just one sentence?
 - **Too broad:** a claim about one study or character stretched into a rule about everything. If it could be the main idea of a different passage, it's too broad.

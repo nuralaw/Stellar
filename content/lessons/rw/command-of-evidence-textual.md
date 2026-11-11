@@ -4,7 +4,7 @@ skill: command-of-evidence-textual
 domain: information-ideas
 section: rw
 summary: Pick the finding or quotation that proves a specific claim, or weakens it, without falling for choices that are only on-topic.
-minutes: 10
+minutes: 11
 ---
 
 > **Key idea:** All four choices usually sound related to the topic. Only one actually proves (or breaks) the specific claim.
@@ -33,7 +33,7 @@ You never need outside knowledge, and you never need to have read the book. Ever
 
 Turn the claim into a short formula, predict the proof, then test each choice against the formula.
 
-1. **Read the question first and spot the job word:** *support*, *weaken* or *illustrate*. These need opposite thinking, so lock it in first.
+1. **Read the question first and spot the job word:** *support*, *weaken* or *illustrate*. Support and weaken need opposite thinking, so lock it in first.
 2. **Find the exact claim.** It's usually in the last sentence or two, after a signal verb like *hypothesizes*, *argues*, *claims*, *concludes* or *suggests*. The background before it matters less.
 3. **Shrink the claim into a formula.** A few words: "pale rocks → cooler → lizards choose them", "Odile = proud AND embarrassed". Keep every part and qualifier (*only*, *mainly*, *at first*, *both*).
 4. **Predict what proof would look like.** If the claim is true, what result should show up? For *weaken*, flip it: what result should *not* happen if the claim is true?
@@ -56,10 +56,10 @@ What strong evidence looks like for common claims:
 | X causes Y | Y with X, no Y without X | Y without X, or another cause |
 | A is greater than B | A measured higher | B equal or higher |
 | Effect happens *because of* a reason | Change the reason, the effect changes | Remove the reason, the effect stays |
-| A character feels two things | One quote showing both | Not tested |
-| The author uses a technique | A quote that uses it | Not tested |
+| A character feels two things | One quote showing both | Rarely asked |
+| The author uses a technique | A quote that uses it | Rarely asked |
 
-Literary questions ask you to illustrate, never to weaken, which is why those cells say "Not tested".
+Literary questions almost always ask you to illustrate a claim, not weaken it, which is why those cells say "Rarely asked".
 
 > **Tip:** Strange science words don't matter. "Protein KR-7 increases root growth" is just "Thing K → more roots". You're judging the logic, not the biology.
 
@@ -115,12 +115,12 @@ Prediction: a cause claim is weakened when something else could explain the resu
 
 ### Example 3: Illustrate a literary claim
 
-The following is from an invented novel written for this lesson. In the novel, Odile, the narrator's younger sister, works after school in her family's small bakery. The narrator suggests that Odile feels both proud of the bakery and embarrassed by it.
+In an invented novel written for this lesson, Odile, the narrator's younger sister, works after school in her family's small bakery. The narrator suggests that Odile feels both proud of the bakery and embarrassed by it.
 
 Which quotation from the novel most effectively illustrates this claim?
 
 - (A) "Every morning the ovens were lit before dawn, and the smell of rye bread drifted down the whole length of Mercer Street."
-- (B) "At school Odile told everyone our bread was the best in the city, and then she walked home the long way so no one would see her go in through the flour-dusted door."
+- (B) "At school Odile told everyone our bread was the best in the city, and then she took the long way to the shop so no one would see her go in through the flour-dusted door."
 - (C) "Our father had bought the bakery from his uncle, who had run it for almost forty years."
 - (D) "Odile turned red whenever her classmates saw her behind the counter in her stained apron."
 
@@ -139,7 +139,7 @@ Job word: *illustrate*. Formula: "Odile = proud AND embarrassed." Both parts are
 
 Most wrong choices are on-topic but don't do the job:
 
-- **True but irrelevant:** accurate and on topic, but it doesn't affect the claim. This is the most common wrong answer. Ask: "So what? Does this change my belief in the claim?"
+- **True but irrelevant:** accurate and on topic, but it doesn't affect the claim. This is a very common wrong answer. Ask: "So what? Does this change my belief in the claim?"
 - **Opposite job:** supports when you were asked to weaken, or the reverse. This catches strong students under time pressure. Reread the job word before you click.
 - **Half the claim:** proves only one part of a two-part claim. It looks great but loses to the choice that proves both.
 - **Wrong subject:** evidence about a related species, a different group or a different character. Close isn't the same.

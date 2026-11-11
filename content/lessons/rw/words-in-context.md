@@ -14,7 +14,7 @@ minutes: 12
 You get a short passage (often two or three sentences) and one of two question stems. These questions usually come first in each Reading and Writing module.
 
 - **Fill the blank** (most common): "Which choice completes the text with the most logical and precise word or phrase?"
-- **Meaning of a word:** "As used in the text, what does the word *X* most nearly mean?" This shows up more in older literary passages.
+- **Meaning of a word:** "As used in the text, what does the word *X* most nearly mean?" This one is less common.
 
 All four choices are real words that usually fit the grammar. So the question isn't "which word sounds okay?" but "which word does the passage *prove* belongs here?"
 
@@ -35,8 +35,7 @@ Mentally cross out the quoted word and treat it as a blank. Predict a meaning fr
 ### When you don't know a word in the choices
 
 - Eliminate the words you *do* know. If three clearly fail, the unknown word is the answer.
-- Don't pick a word *because* it's hard. In one count of official practice tests, the hardest-looking choice was right only about a quarter of the time, no better than guessing.
-- Use word parts as a hint: *in-*, *un-*, *a-* usually mean "not" (*atypical* = not typical); *-able* / *-ible* mean "can be" (*perceptible* = can be noticed).
+- Use word parts as a hint: *in-*, *un-*, *a-* often mean "not" (*atypical* = not typical); *-able* / *-ible* mean "can be" (*perceptible* = can be noticed).
 - Never leave it blank. There's no penalty for guessing.
 
 ## Rules and formulas you need
@@ -52,11 +51,11 @@ Mentally cross out the quoted word and treat it as a blank. Predict a meaning fr
 
 **Continuation** words (*also*, *similarly*, *in fact*, *moreover*) keep going in the same direction as the idea before them.
 
-> **Tip:** Restatement is one of the most common clues. Look right after the blank for a colon, a dash, or a phrase starting with "so," "such that" or "meaning"; the passage often explains the blank in plain words there.
+> **Tip:** The clue often comes *after* the blank. Look there for a colon, a dash or a phrase like "that is" or "meaning"; the passage often explains the blank in plain words there.
 
-### High-frequency Digital SAT words
+### Harder words worth knowing
 
-Most correct answers are ordinary words. The ones below are harder words that keep showing up as answers *and* as wrong choices; learn them in the sense given here.
+Most correct answers are ordinary words. The ones below are harder words of the kind these questions use, as answers *and* as wrong choices; learn them in the sense given here.
 
 | Word | Plain meaning |
 |---|---|
@@ -185,15 +184,13 @@ Which choice completes the text with the most logical and precise word or phrase
 
 Most wrong choices fall into one of these patterns.
 
-- **The reversal.** The opposite of what the passage needs, usually from a missed *however* or *although*. It's the most common wrong answer, so cross these out first.
+- **The reversal.** The opposite of what the passage needs, usually from a missed *however* or *although*. It's a very common wrong answer, so cross these out first.
 - **The everyday meaning.** A real definition, just not the one used here (*qualify* = "earn" in Example 3). Test the meaning against the passage, not your memory.
 - **Right direction, wrong strength.** "Proves" when the passage only "suggests," *furious* when someone is just *annoyed*. Match the passage's hedging words (*may*, *some*, *only*, *tended to*).
 - **Right meaning, wrong tone.** *Frugal* (careful with money, positive) and *stingy* (negative) mean nearly the same thing. Pick the feeling the passage has.
 - **On topic but unsupported.** A word that fits the subject but nothing in the passage backs up, like *contentious* in Example 1.
-- **The fancy-word magnet.** Picking the most impressive word because it "sounds like the SAT." Simple answers like *show*, *reduce* or *absent* win all the time.
+- **The fancy-word magnet.** Picking the most impressive word because it "sounds like the SAT." Simple answers like *show*, *reduce* or *absent* are often right.
 - **"It sounds fine."** Every choice usually fits the grammar, so "it flows" proves nothing. Ask which word the clue *demands*.
-
-> **Trap:** Don't skip what comes *after* the blank. On the Digital SAT the clue is often in the next clause or the next sentence.
 
 ## Quick checklist
 

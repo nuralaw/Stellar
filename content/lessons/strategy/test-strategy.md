@@ -29,7 +29,7 @@ Two rules shape everything else:
 
 ### Question formats
 
-- **Reading and Writing:** every question is multiple choice with four choices and one short passage.
+- **Reading and Writing:** every question is multiple choice with four choices and one short passage (two short texts for Cross-Text Connections).
 - **Math:** about 75% multiple choice and 25% **student-produced response** (SPR), where you type your own answer. A calculator is allowed on every question.
 
 ### Why Module 1 matters so much
@@ -39,7 +39,7 @@ The test is **multistage adaptive**: it adapts once per section, not after every
 - a harder Module 2, if Module 1 went well
 - an easier Module 2, if it didn't
 
-Both versions mix difficulties, but only the harder one can take you to the top scores. Prep companies estimate that a student routed to the easier Module 2 tops out around the low 600s for that section, even with a perfect Module 2. College Board doesn't publish the cutoffs, so treat that number as rough.
+Both versions mix difficulties, but only the harder one can take you to the top scores. A common rough estimate is that a student routed to the easier Module 2 tops out around the low 600s for that section, even with a perfect Module 2. College Board doesn't publish the cutoffs, so don't lean on that number.
 
 So **Module 1 is not a warm-up.** A careless mistake there costs you twice: once for the question, and once by possibly locking you out of the higher ceiling.
 
@@ -68,7 +68,7 @@ Reading and Writing questions come in a fixed order of question types, so the sl
 - **Standard English Conventions:** grammar and punctuation
 - **Expression of Ideas:** Transitions, Rhetorical Synthesis (notes questions)
 
-Within each group of similar questions, they go from easiest to hardest. The grammar block is ordered easiest to hardest as a whole, whatever rule it tests. Your checkpoints:
+Within each group of similar questions, they go from easiest to hardest. The grammar block is ordered easiest to hardest as a whole, whatever rule it tests. Your checkpoints (the question ranges are approximate and shift a little from test to test):
 
 1. **Q1–7 (vocabulary and structure):** about 75 seconds each. Finish Q7 with about 23 minutes left.
 2. **Q8–14 (main idea, evidence, graphs, inferences):** the slowest, about 85 seconds each. Finish Q14 with about 13 minutes left.
@@ -99,7 +99,7 @@ Always guess before you flag. If time runs out, a guessed answer might be right;
 ### Guessing
 
 - **Eliminate first.** Cutting four choices to two doubles your odds, from 25% to 50%.
-- **Never leave a blank.** There's no penalty, so a blank is a wasted chance.
+- **Never leave a blank.** A blank is a wasted chance.
 - **Out of time on several questions?** Pick one letter (say, B) and fill it in for all of them. It's faster than thinking, and you'll still expect about one right in every four.
 - **Can't solve a typed-in math answer?** Enter a reasonable estimate rather than leaving it empty.
 
@@ -139,10 +139,10 @@ Typing `3 1/2` gets no credit, and `31/2` means thirty-one halves.
 Most test-day trouble comes from skipped setup, so do these in order:
 
 - **1–5 days before:** open Bluebook on the device you'll test on, sign in, and complete **exam setup**. This creates your admission ticket. Print it if you can.
-- **What to bring:** your charged device with Bluebook set up, your admission ticket, an acceptable physical photo ID (not on your phone), pencils or pens, your College Board username and password, and an approved calculator if you want one.
+- **What to bring:** your charged device with Bluebook set up, your admission ticket, an acceptable physical photo ID (not on your phone), pencils or pens, your College Board username and password in case you need to sign in again, and an approved calculator if you want one.
 - **Nice to have:** a charger or portable battery, a watch with no alarm, and a drink and snack for the break.
 - **Arrival:** at a weekend test center, doors usually open at 7:45 a.m. and close at 8:00 a.m., unless your ticket says otherwise. If you're late, you can't get in.
-- **Timing:** testing usually starts around 8:15–8:30, and standard time finishes around 10:45–11:00.
+- **Timing:** check-in and directions come first, and with standard time most students finish in the late morning.
 - **Scratch paper:** staff hand it out and collect it at the end.
 - **Phones and smart devices:** collected or stored away from your desk, even during the break. A phone that buzzes or gets used can get you dismissed and your scores canceled.
 - **The break:** 10 minutes between Reading and Writing and Math. Eat, drink water, stand up. If you take an extra unscheduled break, the clock keeps running.
@@ -156,8 +156,8 @@ Scores rise from fixing mistakes, so build your prep around review:
 1. **Take a full Bluebook practice test first.** It's adaptive and timed, the closest thing to the real exam. Your score report in My Practice shows every question, your answer and the explanation.
 2. **Keep an error log.** For every miss (and every lucky guess), note the test, module, question type, and *why*: didn't know it, careless slip, ran out of time, or fell for a trap.
 3. **Re-solve misses from scratch** before reading the explanation. Reading an explanation feels like learning, but solving it yourself is what sticks.
-4. **Drill weak skills** with the official **Student Question Bank**, which filters by section, domain, skill and difficulty. Save the full Bluebook tests for timed practice so you don't see their questions early.
-5. **Re-test every couple of weeks,** not every day. Many top scorers spend as long reviewing a practice test as taking it.
+4. **Drill weak skills** with College Board's free **SAT Suite Question Bank**, which filters by section, domain, skill and difficulty. Save the full Bluebook tests for timed practice.
+5. **Re-test every couple of weeks,** not every day. Plan to spend about as long reviewing a practice test as taking it.
 6. **In the final week,** stop learning brand-new material. Review your error log, do a couple of timed modules, and sleep well.
 
 ## Worked examples
@@ -174,7 +174,7 @@ You're in Reading and Writing Module 1. You just answered Q15, and the timer sho
 
 You're in Math Module 1 on Q7. You've been working on a word problem for 2 minutes, filled half your scratch paper, and still don't have an answer. The timer shows 26 minutes left.
 
-**Solution:** You've already spent more than double the average time. Q7 should be fairly easy, so being stuck usually means you misread something, and fresh eyes later often fix that. Meanwhile, the hardest questions at the end need that time. Cross out any choices that are clearly impossible (for example, a negative length), pick the most reasonable remaining choice, flag it and move on. If you finish Q22 with a few minutes left, come back and re-read the question from the very first line.
+**Solution:** You've already spent double the time an early question deserves (about 60 seconds). Q7 should be fairly easy, so being stuck usually means you misread something, and fresh eyes later often fix that. Meanwhile, the hardest questions at the end need that time. Cross out any choices that are clearly impossible (for example, a negative length), pick the most reasonable remaining choice, flag it and move on. If you finish Q22 with a few minutes left, come back and re-read the question from the very first line.
 
 **Answer:** Eliminate what you can, enter your best guess, Mark for Review, and move on. Return only after you've reached the end of the module.
 
@@ -192,12 +192,12 @@ On two student-produced response questions, you work out the answers **23/9** an
 
 **Solution:** For 23/9: the fraction `23/9` is only 4 characters, so it fits. Type it as is. You could also type `2.555` or `2.556` (both use all 5 characters), but `2.56` would be too short and get no credit. For −5/6: the fraction `-5/6` is 4 characters, well under the 6 allowed for a negative answer. That's the safest entry. If you used the decimal, it would need to be `-.8333` or `-0.833` (6 characters each). `-0.83` is too short. Check Bluebook's preview each time.
 
-**Answer:** Type `23/9` and `-5/6`. When a fraction fits, it's usually the safest choice. If you use a decimal, fill all the allowed characters.
+**Answer:** Type `23/9` and `-5/6`. When a fraction fits, it's usually the safest choice. If you use a decimal that doesn't end, fill all the allowed characters.
 
 ## Traps to avoid
 
 - **Fighting one question for minutes.** It's the most common pacing mistake. Every question is worth the same, so after about a minute with no progress, guess, flag and go.
-- **Rushing the easy early questions.** An easy question is worth as much as a hard one, and a careless slip on Q3 in Module 1 hurts more than missing Q22.
+- **Rushing the easy early questions.** An easy question is worth as much as a hard one, and a careless slip on Q3 in Module 1 can hurt more than missing Q22.
 - **Panicking when Module 2 feels hard.** A noticeably harder Module 2 usually means Module 1 went well. Keep your normal pace and don't try to guess your score mid-test.
 - **Meeting Bluebook for the first time on test day.** Practice with the tools, especially Desmos and the eliminator, before the real test.
 - **Taking test after test without reviewing.** Scores go up from fixing mistakes, not from piling up practice tests.
@@ -210,4 +210,4 @@ On two student-produced response questions, you work out the answers **23/9** an
 - Math: finish Q8 with about 27 minutes left and Q16 with about 15 minutes left.
 - Stuck for about a minute? Guess, flag, move on.
 - Last minute of every module: no blanks, anywhere.
-- SPR: no mixed numbers, no symbols, and decimals filled out to 5 characters (6 with a minus).
+- SPR: no mixed numbers, no symbols, and long decimals filled out to 5 characters (6 with a minus).
