@@ -553,7 +553,7 @@ export function SolveView({
                       onClick={reshuffle}
                       disabled={rest < 2}
                       title="Shuffle the questions (this one and the ones after it)"
-                      className="inline-flex items-center gap-1.5 rounded-xl border border-line px-3.5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 active:scale-95 disabled:opacity-40"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-line px-3.5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 disabled:opacity-40"
                     >
                       <Icon d={I.shuffle} className="h-4 w-4" />
                       <span className="hidden sm:inline">Shuffle</span>

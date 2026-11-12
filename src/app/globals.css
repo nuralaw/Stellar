@@ -155,6 +155,38 @@ textarea,
   cursor: not-allowed;
 }
 
+/* Buttons come a little closer on hover and press in on click: every <button> and every rounded link (button-styled
+   links, cards). Wide ones (full-width rows, cards) move less, so everything grows by a few pixels.
+   Left still: disabled buttons, flat list rows and thin progress segments (unrounded + full width, with their own
+   hover), anything inside Desmos, anything marked data-zoom="off".
+   Unlayered on purpose, like the cursor rules: this transition list has to beat transition-colors & co. */
+:is(button:not(:disabled), a[class*="rounded"]):not(
+    [aria-disabled="true"],
+    [data-zoom="off"],
+    [data-zoom="off"] *,
+    [class*="dcg-"] *,
+    button:not([class*="rounded"]):is([class*="w-full"], [class*="flex-1"])
+  ) {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, translate, scale, rotate;
+  transition-duration: var(--tw-duration, 180ms);
+  transition-timing-function: var(--tw-ease, cubic-bezier(0.2, 0.8, 0.2, 1));
+
+  @media (prefers-reduced-motion: no-preference) {
+    @media (hover: hover) {
+      &:hover {
+        scale: var(--zoom-in, 1.05);
+      }
+    }
+    &:active {
+      scale: var(--zoom-press, 0.95);
+    }
+  }
+}
+:is(button, a)[class*="rounded"]:is([class*="w-full"], [class*="flex-1"], [class*="rounded-2xl"], [class*="rounded-3xl"]) {
+  --zoom-in: 1.015;
+  --zoom-press: 0.985;
+}
+
 /* Study calendar (components/home/StudyCalendar.tsx): month slide + flickering day flames. */
 @keyframes cal-next {
   from {
