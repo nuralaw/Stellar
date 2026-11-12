@@ -4,8 +4,6 @@ import { formatMath } from "@/components/RichText";
 // Renders the small Markdown subset used by lessons (content/lessons/README.md):
 // ## / ### headings, paragraphs, - bullets, 1. numbered lists, tables, > **Label:** callouts,
 // **bold**, *italic*, `code`, [links](https://…), math notation in text (x^2, 2^(x+1), x_1, sqrt(x)).
-// In worked examples, everything from a "**Solution.**" paragraph through the "**Answer:**" line sits behind
-// "Show solution".
 
 export function slugify(s: string) {
   return s
@@ -150,53 +148,16 @@ function Callout({ lines }: { lines: string[] }) {
   return <div className={`my-5 rounded-xl border-l-4 px-4 py-3 text-[15px] leading-relaxed ${tone}`}>{inline(text)}</div>;
 }
 
-const isSolution = (b: Block) => b.t === "p" && /^\*\*Solution[.:]?\*\*/.test(b.text);
-
-/** The lesson body. h2s get ids (for the table of contents). */
+/** A step's teaching text. */
 export function Markdown({ source }: { source: string }) {
-  const blocks = parseBlocks(source);
-  // Group "**Solution.** … **Answer:** …" (up to the next heading) so it can be revealed on demand.
-  const items: (Block | { t: "solution"; blocks: Block[] })[] = [];
-  for (let i = 0; i < blocks.length; i++) {
-    if (!isSolution(blocks[i])) {
-      items.push(blocks[i]);
-      continue;
-    }
-    // The hidden part ends with the "**Answer:** …" paragraph (or at the next heading if there's none).
-    const group: Block[] = [];
-    while (i < blocks.length && blocks[i].t !== "h2" && blocks[i].t !== "h3") {
-      const b = blocks[i++];
-      group.push(b);
-      if (b.t === "p" && /^\*\*Answer:?\*\*/.test(b.text)) break;
-    }
-    i--;
-    items.push({ t: "solution", blocks: group });
-  }
   return (
     <div className="text-[16px] leading-[1.75] text-ink/90">
-      {items.map((b, i) => {
-        if (b.t === "solution")
-          return (
-            <details key={i} className="group my-5 rounded-xl border border-line bg-surface">
-              <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-semibold text-primary select-none [&::-webkit-details-marker]:hidden">
-                <span className="transition-transform group-open:rotate-90" aria-hidden="true">
-                  ▸
-                </span>
-                <span className="group-open:hidden">Show solution</span>
-                <span className="hidden group-open:inline">Hide solution</span>
-              </summary>
-              <div className="border-t border-line px-4 pb-1">
-                <Markdown.Blocks blocks={b.blocks} />
-              </div>
-            </details>
-          );
-        return <Markdown.Blocks key={i} blocks={[b]} />;
-      })}
+      <Blocks blocks={parseBlocks(source)} />
     </div>
   );
 }
 
-function renderBlocks({ blocks }: { blocks: Block[] }) {
+function Blocks({ blocks }: { blocks: Block[] }) {
   return (
     <>
       {blocks.map((b, i) => {
@@ -285,12 +246,4 @@ function renderBlocks({ blocks }: { blocks: Block[] }) {
       })}
     </>
   );
-}
-Markdown.Blocks = renderBlocks;
-
-/** h2 headings, for the "On this page" list. */
-export function headings(source: string) {
-  return parseBlocks(source)
-    .filter((b): b is { t: "h2"; text: string } => b.t === "h2")
-    .map((b) => ({ id: slugify(b.text), text: b.text.replace(/[*`]/g, "") }));
 }

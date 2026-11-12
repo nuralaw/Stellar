@@ -3,182 +3,190 @@ title: Command of Evidence: Quantitative
 skill: command-of-evidence-quantitative
 domain: information-ideas
 section: rw
-summary: Use a table or graph to complete, support or weaken a claim by picking the data that matches exactly what the claim says.
-minutes: 11
+summary: Use a table or graph to complete, support or weaken a claim by picking the choice that is both accurate and on target.
 ---
 
-> **Key idea:** The right answer passes two tests at once: it's **true** according to the graphic, and it **does the job** the question asks for. Most wrong choices pass one test and fail the other.
+## Text plus a table or graph
 
-## What this question looks like
+You get a short text with a **table, bar graph or line graph**. The text ends with a claim or a blank, and the question asks you to *complete*, *support* or *weaken* it using the data. No real math: at most you compare numbers.
 
-You get a short passage plus a graphic, usually a **table, bar graph or line graph**. The passage usually ends with a claim or with a sentence that has a blank.
+> **Key idea:** The right choice is **accurate** (true in the data) **and relevant** (it does the claim's job). Most wrong choices pass only one of the two tests.
 
-Typical question stems:
+```quiz
+A café owner counted the drinks she sold in one day: coffee 65 cups, tea 40, juice 20. She noted that coffee was by far her most popular drink: ______
+Which choice most effectively uses the data to complete the statement?
+- tea sold 40 cups, twice as many as juice. :: Accurate, but it's about tea and juice. It never shows coffee on top.
+- coffee sold 65 cups, but tea sold even more. :: Inaccurate: tea sold 40. It would also go against the claim.
+* coffee sold 65 cups, far more than tea (40) or juice (20).
+- juice sold 20 cups, the fewest of the three drinks. :: Accurate, but it only puts juice last. It doesn't show coffee far ahead.
+> The claim needs coffee compared with the other drinks, by a wide margin. 65 cups against 40 and 20 does it. The other accurate choices leave coffee out or only rank the losers.
+```
 
-- "Which choice most effectively uses data from the table to *complete the statement*?"
-- "Which choice most effectively uses data from the graph to *support* the researchers' hypothesis?"
-- "Which choice best describes data from the table that *weaken* the student's conclusion?"
+## Claim first, data second
 
-It looks like math, but it's a reading question. You rarely need more than a comparison or a quick subtraction; what's tested is whether you pick the data that fits the *exact* claim.
+Don't start with the numbers. Start with the claim and break it into parts:
 
-## The method
+- **Who:** which groups or items?
+- **What:** which measure (count, percent, days)?
+- **When:** which years or conditions?
+- **How:** which relationship (*more than*, *rose*, *the highest*, *both*)?
 
-Read the claim before the graphic, so you know which numbers matter.
+Then do a **relevance pass**: cross out choices that couldn't do the job even if their numbers were right. That often removes two choices before you read the graph.
 
-1. **Read the question and the passage's last sentence first.** Skip the graphic for now. Find the job word (*complete*, *support* or *weaken*) and the claim or blank.
-2. **Break the claim into parts.** Which groups? Which measure (counts, percents, time)? When (years, conditions)? What relationship (*more than*, *increased*, *the highest*)?
-3. **Predict the data you'd need.** Turn the claim into a test, like "blue highest in the morning AND a different color highest in the afternoon."
-4. **Do a logic pass.** Without the graphic, cross out choices that couldn't do the job *even if their numbers were right*. This often removes one or two fast.
-5. **Read the graphic's edges, then only what you need.** Check the title, headers or axis labels, units and legend. Then find just the rows, bars or years your test needs.
-6. **Verify the remaining choices.** Check group, year, unit and direction. Pick the one that is both accurate and on target.
+```quiz
+A graph shows how students in Lake County got to school in 2010 and 2020. A researcher claims that in 2020, walking was more common than biking.
+Without looking at the graph, which choice could support the claim if its numbers are accurate?
+- In 2010, 22% of students walked and 30% biked. :: Wrong year. The claim is about 2020.
+- In 2020, 40% of students rode the bus. :: The bus isn't part of the claim. Wrong item.
+- From 2010 to 2020, the share of students who walked rose from 22% to 35%. :: A rise in walking alone can't show that walking passed biking. Half the comparison.
+* In 2020, 35% of students walked and 25% biked.
+> The claim compares walking with biking, in 2020. Only one choice gives both, for that year, in the right order. You can find it before checking the graph, then confirm its numbers.
+```
 
-## Rules and formulas you need
+## Read the labels before numbers
 
-### Reading the graphic
+Now read the graphic, edges first: **title, headers or axis labels, units, legend**. Then find only the numbers you need.
 
-- **Tables:** each number sits where a row meets a column. Read both headers before using it.
-- **Bar graphs:** check where the vertical axis starts. If it isn't 0, a bar that looks twice as tall may be only a little bigger.
-- **Line graphs:** the horizontal axis is usually time. Use the legend to tell the lines apart.
-- **Units:** "in thousands", "percent", "per 1,000 people" and "average" all change what a number means.
+**Visitors to two city parks (thousands)**
 
-### Claim words and what they require
-
-| Claim word | What the data must show |
-|---|---|
-| increased / decreased | Start value vs. end value |
-| steadily / every year | Every step moves the same way; one reversal breaks it |
-| peaked | Highest point, lower on both sides |
-| the most / the highest | Above *every* other item, not just one |
-| more than half / a majority | Above 50%; exactly 50% doesn't count |
-| gap widened / narrowed | Difference between two lines, start vs. end |
-| varied widely | Values far apart |
-
-### Count vs. percent
-
-"More people" is about **counts**; "more common" or "a larger share" is about percents. A big group can have more people and a smaller percent.
-
-### Weakening a cause claim
-
-If the claim says "A caused B", look for B happening just as much where A was absent, or B starting before A did.
-
-## Worked examples
-
-### Example 1: Complete the statement
-
-**Average bee visits per hour, by flower color**
-
-| Flower color | Morning | Afternoon |
+| Year | Elm Park | Oak Park |
 |---|---|---|
-| Blue | 42 | 18 |
-| Yellow | 30 | 35 |
-| White | 25 | 22 |
-| Red | 8 | 6 |
+| 2019 | 42 | 55 |
+| 2021 | 61 | 48 |
+| 2023 | 70 | 52 |
 
-Biologist Mara Ellison counted bee visits to flowers of four colors in a meadow. She noticed that the bees' favorite color seemed to change over the course of the day: ______
-
+```quiz
+A city planner states that in 2021, Elm Park drew more visitors than Oak Park: ______
 Which choice most effectively uses data from the table to complete the statement?
+* Elm Park had 61,000 visitors, while Oak Park had 48,000.
+- Elm Park had 70,000 visitors, while Oak Park had 52,000. :: Those are the 2023 numbers. Wrong row.
+- Elm Park had 61 visitors, while Oak Park had 48. :: The table counts in thousands, so 61 means 61,000. Wrong unit.
+- Elm Park had 61,000 visitors, while Oak Park had 55,000. :: 55,000 is Oak Park's 2019 number. In 2021 it had 48,000. Wrong row.
+> Find the 2021 row, then read across: Elm 61, Oak 48, in thousands. Every wrong choice uses real numbers from the table, attached to the wrong row or unit, and still sounds like support.
+```
 
-- (A) blue flowers received 42 visits per hour in the morning, more than any other color, but in the afternoon yellow flowers received the most visits, with 35 per hour.
-- (B) blue flowers received the most visits of any color in both the morning and the afternoon.
-- (C) yellow flowers received more visits per hour in the afternoon (35) than in the morning (30).
-- (D) white flowers received 25 visits per hour in the morning and 22 visits per hour in the afternoon.
+## Claim words set the test
 
-**Solution**
+The claim's key word decides which numbers you need.
 
-Claim to complete: the *favorite* color *changed* during the day. Test: one color is highest in the morning, a *different* color is highest in the afternoon.
+| The claim says | The data must show |
+|---|---|
+| rose / fell | end vs. start |
+| steadily | every step the same way |
+| peaked | top value, lower on both sides |
+| the most | above **every** other item |
+| a majority | more than 50% |
+| the biggest increase | largest change, not highest end |
+| the gap widened | bigger difference at the end |
 
-Logic pass: (D) only describes white flowers and can't show which color is the favorite, so it's out before checking numbers. (B) says the favorite stayed the same, the opposite of "changed". (It's also false: in the afternoon blue had only 18 visits.)
+```quiz
+Members of a school chess club, by year: 2019: 20 · 2020: 26 · 2021: 24 · 2022: 31.
+Which claim do the data support?
+- Membership grew steadily from 2019 to 2022. :: "Steadily" needs every step to go up, but 2020 to 2021 went down, from 26 to 24.
+- Membership peaked in 2020. :: 2020 (26) isn't the top. 2022 (31) is higher.
+* Membership was higher in 2022 than in 2019.
+- Membership more than doubled from 2019 to 2022. :: Double 20 is 40, and membership only reached 31.
+> Each claim word has its own test. *Higher than* needs just two points: 31 beats 20. *Steadily* fails at the dip, and *peaked* needs the highest value with lower values on both sides.
+```
 
-Verify the rest:
+## Count versus share
 
-- (A) Morning: blue 42 beats 30, 25 and 8. Afternoon: yellow 35 beats 18, 22 and 6. True, and it shows the favorite switching. Keep it.
-- (C) True, but it only shows yellow went up. Yellow could have risen and still not become the favorite. Half the job.
+A **count** says how many (1,400 riders). A **share** says what part of the group (7% of workers). *Rate*, *share*, *percent* and *more common* point to a share; *more people* points to a count. A big city can have more cyclists **and** a smaller share of them.
 
-**Answer:** (A)
+**Workers who bike to work, 2024**
 
-### Example 2: Support a two-part hypothesis
-
-**Average time to solve a puzzle (seconds)**
-
-| Background sound | Word puzzles | Number puzzles |
+| City | Bikers | Share of workers |
 |---|---|---|
-| Silence | 95 | 80 |
-| Instrumental music | 97 | 79 |
-| Music with lyrics | 128 | 84 |
+| Alton | 1,080 | 9% |
+| Brisk | 450 | 15% |
+| Calder | 1,400 | 7% |
+| Dunmore | 600 | 12% |
 
-A team of psychologists asked volunteers to solve word puzzles and number puzzles while listening to different background sounds. The team hypothesized that music with lyrics slows people down on word puzzles, because the brain must handle two streams of language at once, but has little effect on number puzzles.
+```quiz
+A Dunmore official claims that Dunmore has the highest rate of bike commuting of the four cities.
+Which choice best describes data from the table that weaken the official's claim?
+- Calder had more bike commuters (1,400) than Dunmore (600). :: A count. Calder's share is only 7%, lower than Dunmore's. Count-versus-share trap.
+* Brisk had a larger share of workers who bike (15%) than Dunmore (12%).
+- Dunmore had a larger share of workers who bike (12%) than Alton (9%). :: Accurate, but it shows Dunmore winning. That supports the claim. Opposite job.
+- Dunmore had more bike commuters (600) than Brisk (450). :: A count again, and it makes Dunmore look good. A count can't weaken a claim about a rate.
+> *Rate* means share. To weaken "Dunmore is highest", find any city with a bigger share than 12%. Brisk's 15% does it. Calder has the most bikers but the lowest share.
+```
 
-Which choice most effectively uses data from the table to support the team's hypothesis?
+## Two-part claims need both
 
-- (A) In every condition, volunteers solved number puzzles faster than word puzzles.
-- (B) Volunteers who heard music with lyrics took 128 seconds on average to solve word puzzles, compared with 95 seconds in silence and 97 seconds with instrumental music, while number-puzzle times stayed between 79 and 84 seconds in every condition.
-- (C) Volunteers who heard instrumental music solved number puzzles in 79 seconds on average, slightly faster than volunteers who worked in silence.
-- (D) Volunteers who heard music with lyrics took longer to solve number puzzles than to solve word puzzles.
+Many hypotheses have **two parts**. The right choice proves both, usually by comparing the groups.
 
-**Solution**
+**Snails resting on rocks of three colors**
 
-Break the claim into two parts: (1) lyrics slow down *word* puzzles, compared with the other conditions; (2) lyrics have *little effect* on number puzzles. A full answer needs both.
-
-Logic pass: (A) compares puzzle types, not sound conditions, so it can't say anything about lyrics. (C) is about instrumental music, not lyrics. Both are out on logic alone.
-
-Verify the rest:
-
-- (B) 128 is much slower than 95 and 97 (part 1). Number times of 80, 79 and 84 are all close together (part 2). True and complete. Keep it.
-- (D) False: with lyrics, number puzzles took 84 seconds and word puzzles took 128, so number puzzles were *faster*.
-
-**Answer:** (B)
-
-### Example 3: Weaken a cause claim
-
-**Average weekday car trips downtown (thousands)**
-
-| Year | Linden | Ashford |
+| Rock | Body temp (°C) | Water lost (% of body mass) |
 |---|---|---|
-| 2015 | 52 | 47 |
-| 2016 | 51 | 46 |
-| 2017 | 47 | 42 |
-| 2018 | 44 | 39 |
-| 2019 | 43 | 38 |
+| White | 31 | 4 |
+| Gray | 36 | 7 |
+| Black | 41 | 11 |
 
-The neighboring towns of Linden and Ashford are similar in size. In 2017, Linden opened a network of protected bike lanes downtown; Ashford did not build any. A Linden city planner pointed to the drop in Linden's downtown car trips after 2016 and concluded that the new bike lanes caused the decline.
+```quiz
+Biologist Kwame Asante hypothesized that desert snails resting on lighter rocks stay cooler and lose less water than snails resting on darker rocks.
+Which choice best describes data from the table that support Asante's hypothesis?
+- Snails on white rocks were 31°C, and snails on black rocks lost 11% of their body mass in water. :: Both numbers are right, but they describe different measures for different rocks. Nothing is compared.
+- Snails on black rocks were hotter than snails on gray rocks, 41°C versus 36°C. :: Accurate, but temperature only. Half the hypothesis.
+- Snails on gray rocks lost more water than snails on black rocks. :: Inaccurate: gray lost 7% and black lost 11%.
+* Snails on white rocks were the coolest and lost the least water, while snails on black rocks were the hottest and lost the most.
+> Two parts: lighter rocks mean cooler **and** less water lost. White is lowest in both columns (31°C, 4%), and black is highest in both (41°C, 11%).
+> Only that choice compares the rocks on both measures, and every number in it is right.
+```
 
-Which choice best describes data from the table that weaken the planner's conclusion?
+## The trap: true but useless
 
-- (A) Car trips in Linden fell from 51,000 in 2016 to 44,000 in 2018.
-- (B) From 2016 to 2019, car trips in Ashford, which built no bike lanes, fell by about the same amount as car trips in Linden.
-- (C) Linden had more downtown car trips than Ashford in every year shown.
-- (D) Car trips in Ashford rose after 2017.
+On hard questions, **every choice can be accurate**, so only relevance decides. For each choice, finish two sentences: "The data show…" and "That proves the claim because…". If you can't finish the second, the choice is accurate but irrelevant.
 
-**Solution**
+**Tomato plants in four plots**
 
-Claim: bike lanes → *caused* → fewer car trips in Linden. Prediction for weaken: the drop also happens where there were *no* bike lanes. Ashford is exactly that comparison town.
+| Plot | Sun (hours a day) | Height (cm) |
+|---|---|---|
+| A | 8 | 95 |
+| B | 8 | 92 |
+| C | 4 | 60 |
+| D | 4 | 58 |
 
-- (A) True, but it shows Linden's drop, which is the planner's own evidence. It supports, not weakens.
-- (B) Linden: 51 → 43, a drop of 8. Ashford: 46 → 38, also a drop of 8. True. If the town without bike lanes fell just as much, something else probably caused the decline. Keep it.
-- (C) True, but Linden simply having more trips tells us nothing about what caused the change.
-- (D) False: Ashford went 42 → 39 → 38, which is a fall, not a rise.
+```quiz
+Plots A and C were watered daily, and plots B and D weekly. A gardener concludes that sunlight, not watering, explains the differences in plant height.
+Which choice most effectively uses data from the table to support the gardener's conclusion?
+- Plot A got 8 hours of sun a day, and its plants grew to 95 cm. :: Accurate, but one plot shows no comparison, so it can't tie height to sunlight.
+- Plot A's plants were taller than Plot B's, 95 cm versus 92 cm. :: Accurate, but A and B differ only in watering. This is about water, not sunlight.
+* With 8 hours of sun, plants reached 92–95 cm whether watered daily or weekly; with 4 hours, they reached only 58–60 cm.
+- Plot D had the shortest plants of the four plots, at 58 cm. :: Accurate, but one fact about one plot can't show what explains the differences.
+> The conclusion has two parts: sunlight matters, and watering doesn't. The right choice shows a big gap between sun levels and almost none between watering schedules. Every choice is true; only one proves the claim.
+```
 
-**Answer:** (B)
+## Your turn: easy
 
-## Traps to avoid
+The statement covers two groups. Find the lowest value for each one before choosing.
 
-Every trap below fails one of the two tests: true, or on target.
+```check
+rw-0439
+```
 
-- **True but irrelevant.** A very common trap: numbers read correctly that don't touch the claim. In hard questions every choice may be accurate.
-- **Right number, wrong row.** A real value, attached to the wrong group, year or condition.
-- **Half the claim.** The claim has two parts and the choice proves only one, like (C) in Example 1.
-- **One point posing as a trend.** A claim about change or "every year" needs at least two points, sometimes all of them.
-- **Count vs. percent mix-up.** "More students" and "a higher percentage of students" are different claims.
-- **Reversed comparison.** The right items with the direction flipped, like (D) in Example 2.
-- **Opposite job.** Data that supports when you were asked to weaken, like (A) in Example 3.
-- **Overreach.** *All*, *always* or *caused* when the graphic shows only one sample or one pattern.
-- **Logical but false.** A choice that would do the job perfectly, except the graphic says otherwise. Always check the numbers.
+## Your turn: medium
 
-## Quick checklist
+A two-part hypothesis about two animals. Your choice must compare both animals on both parts.
 
-- Did I read the claim before the graphic and find the job word?
-- Did I list the claim's parts: groups, measure, time, relationship?
-- Did I check the title, labels, units and legend?
-- Is my choice true, with the right row, column and year?
-- Does it do the whole job: every part of the claim, in the right direction?
-- Does every other choice fail at least one of the two tests?
+```check
+rw-0433
+```
+
+## Your turn: hard
+
+Accuracy won't decide this one. Ask which choice proves the student's exact argument.
+
+```check
+rw-0269
+```
+
+## Recap
+
+- Read the job word and the claim before the graphic.
+- Break the claim into who, what measure, when and how.
+- Relevance pass: cross out choices that couldn't do the job even with the right numbers.
+- Accuracy pass: read the title, labels and units, then check each number's row and column.
+- Match the claim word (*steadily*, *peaked*, *the most*) and the kind of number (count or share).
+- Two parts in the claim? The answer must prove both.

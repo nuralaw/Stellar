@@ -3,150 +3,152 @@ title: Evaluating Statistical Claims
 skill: statistical-claims
 domain: problem-solving
 section: math
-summary: Read how a study was done and decide whether it can show cause and effect, and which group its results apply to.
-minutes: 10
+also-skills: inference-sample
+summary: Read how a study picked and grouped its subjects, then choose the conclusion it supports: cause or link, and for which group.
 ---
 
-> **Key idea:** Random sampling decides *who* the results apply to. Random assignment decides *whether* you can say "causes."
+## Spot a study question
 
-## What this question looks like
+A paragraph describes a study or survey, and the choices are conclusions. There's nothing to calculate. Two details in the description decide the answer:
 
-These are reading questions in a math costume. A paragraph describes a study: who was in it, how they were picked, and what was compared. Then you choose the most appropriate conclusion, or the population the results apply to.
+1. **How were the subjects chosen?** This decides *who* the results describe.
+2. **How were the groups formed?** This decides whether you can say *causes*.
 
-Typical stems:
+```quiz
+A study of students at one school finds that those who sleep more tend to get higher grades. Which detail decides whether the results apply to all students at the school?
+- How many students were in the study :: Size doesn't fix how people got into the sample.
+* Whether the students were chosen at random from all students at the school
+- Whether the students were randomly assigned to sleep more :: That decides whether you can claim a cause, not who the results describe.
+> Who the results describe depends on how the subjects were chosen. A random sample from the whole school speaks for the whole school.
+```
 
-- "Which of the following is an appropriate conclusion from the study?"
-- "Based on the design of the study, to which population can the results be generalized?"
-- "Which of the following best explains why the results cannot be applied to all…?"
+## Who do the results describe?
 
-The right choice says no more than the study design allows, and two yes/no questions decide that.
+**Rule 1:** If the subjects were chosen **at random from a group**, the results apply to that group: no bigger, and not only the people in the study.
 
-## The method
+Read the group's description word by word: *one* hospital, *night-shift* nurses, *first-year* students. Every word narrows the group.
 
-Answer two yes/no questions about the design, then match the choices to what it allows.
+```quiz
+A researcher randomly selects 60 of the 400 nurses at one hospital and asks how many hours they sleep. What is the largest group the results can be applied to?
+- The 60 nurses who were asked :: Too small. A random sample speaks for the whole group it was drawn from.
+* All 400 nurses at the hospital
+- All nurses in the city :: Nurses at other hospitals had no chance of being picked.
+- All workers at the hospital :: Only nurses were sampled. Doctors and other staff weren't.
+> The 60 nurses were chosen at random from the hospital's 400 nurses, so the results describe those 400: no more, no fewer.
+```
 
-1. **Was there random sampling?** Look for "selected at random from…" or "a random sample of…". If yes, write down which group they were chosen from: that group is the population.
-2. **Was there random assignment?** Did the researchers use chance (a coin flip, a random number) to put participants into treatment groups? If people chose their own group, or researchers only watched what people already do, the answer is no.
-3. **Look up the result** in the table under Rules and formulas.
-4. **Check each choice on both parts.** Does it claim cause, and is that allowed? Does it name a group, and is it the right group?
-5. **Pick the most careful choice** that still says something true.
+## Biased samples don't generalize
 
-## Rules and formulas you need
+If the sample wasn't chosen at random from the population, it may not speak for it:
 
-One table tells you what any study can conclude.
+- **Volunteers:** people chose to answer (online polls, call-in shows). People with strong opinions answer more often.
+- **Convenience:** whoever was easy to reach (one class, one store, one entrance).
+- **Wrong group:** asking only gym members whether the city needs a new gym.
 
-| | Randomly assigned | Not randomly assigned |
+A bigger sample doesn't fix any of these. 10,000 volunteers are still volunteers.
+
+```quiz
+A fitness app asks its users to rate a new workout plan. Of the 6,000 users who choose to answer, 85% love it. Which is the best reason this result may not represent all of the app's users?
+- 6,000 users is too small a sample. :: 6,000 is plenty. The problem is who chose to answer, and more volunteers wouldn't fix it.
+* The users chose whether to answer, so they may differ from users who didn't.
+- The users weren't randomly assigned to the plan. :: Random assignment matters for claims of cause, not for estimating an opinion.
+- 85% is too high to be accurate. :: A lopsided result isn't a flaw by itself. A fair sample could give it too.
+> This is a volunteer sample. Users with strong feelings about the plan are more likely to answer, so the 85% may not match all users.
+```
+
+## Can you say "causes"?
+
+**Rule 2:** A cause-and-effect claim needs **random assignment**: the researchers use chance (like a coin flip) to decide who gets the treatment. Then the groups tend to be alike in every other way, so a difference can be blamed on the treatment.
+
+If people chose their own group, or the researchers only watched or asked (an **observational study**), you can conclude only an **association** (a link). Some other difference could explain it.
+
+```quiz
+Which study could show that a new fertilizer causes tomato plants to grow taller?
+- Comparing the plants of gardeners who chose the fertilizer with the plants of gardeners who didn't :: Gardeners who chose it may also water more. Without random assignment, only a link.
+* Randomly assigning 50 plants to get the fertilizer and 50 plants to get none
+- Surveying 2,000 randomly selected gardeners about their fertilizer and their plants' height :: A big random survey still only watches. No plant was assigned the fertilizer.
+> Only random assignment makes the two groups alike, on average, in everything but the fertilizer. Then a height difference can be blamed on the fertilizer.
+```
+
+## Check the verbs
+
+Match the claim's words to what the study allows.
+
+| Claims a cause | Claims only a link |
+|---|---|
+| causes, leads to | is associated with |
+| improves, reduces | is linked to |
+| increases, results in | tends to, is related to |
+
+```quiz
+A random sample of 800 adults in a state answered questions about their habits. On average, adults who read before bed reported falling asleep faster than adults who don't. Which conclusion is most appropriate?
+- Reading before bed causes adults in the state to fall asleep faster. :: No one was assigned to read. Readers may differ in other ways, like screen time.
+- For adults in the whole country, reading before bed is associated with falling asleep faster. :: Right claim, wrong group. Only this state was sampled.
+* For adults in the state, reading before bed is associated with falling asleep faster.
+- No conclusion can be drawn, because no one was assigned to read. :: Too strong. Without random assignment you can still conclude a link.
+> Chosen how? At random from the state's adults, so the results describe the state.
+> Groups formed how? People chose their own habits, so it's observational: only a link. Together: "is associated with", for adults in the state.
+```
+
+## Put both answers together
+
+| | Assigned at random | Not assigned |
 |---|---|---|
-| **Randomly sampled** | Cause and effect, for the whole population | Association only, for the whole population |
-| **Not randomly sampled** | Cause and effect, only for people like the participants | Association only, only for people like the participants |
+| Random sample | Cause, the sampled group | Link, the sampled group |
+| Not random | Cause, people like these | Link, people like these |
 
-"Randomly assigned" means the study is an experiment; "not randomly assigned" means it's observational.
+Cross out choices that claim **more** than the design allows (a cause, a bigger group, "every person") and choices that claim **less** ("no conclusion").
 
-### Words to know
+```quiz
+A researcher randomly selected 120 of the 2,000 employees at a company. She then randomly assigned 60 of them to take a 10-minute walk at lunch, and the other 60 didn't. The walkers reported less afternoon tiredness, on average. Which conclusion is most appropriate?
+- Lunch walks likely reduce afternoon tiredness for all office workers. :: Only this company's employees were sampled.
+- Lunch walks are linked to less tiredness, but no cause can be shown. :: Too weak. Random assignment is exactly what allows a cause.
+- Lunch walks reduce every employee's tiredness by the same amount. :: Studies compare averages. Some employees may not change at all.
+* Lunch walks likely reduce afternoon tiredness for employees at this company.
+> Chosen how? At random from this company, so the results describe its employees.
+> Groups formed how? The walks were assigned at random, so a cause is allowed. Together: walks likely reduce tiredness for this company's employees.
+```
 
-- **Experiment:** the researchers *give* a treatment (a drug, a study app, a fertilizer) to some subjects and not others.
-- **Observational study:** the researchers only *watch or ask*. People are already in their groups by their own choice (coffee drinkers vs. non-coffee drinkers).
-- **Association** (or correlation, relationship): two things tend to happen together. That's all.
-- **Causation:** one thing actually makes the other happen.
-- **Confounding variable:** a hidden third factor that could explain the link. People who exercise might also eat better, which is why observational studies can't prove cause.
-- **Population:** the group the random sample came from. Not bigger, not different.
+## The trap: volunteers can show cause
 
-### Why randomness matters
+> **Trap:** Volunteers limit *who* the results describe, not *whether* it's a cause. With random assignment, a cause is allowed, but only for people like the volunteers.
 
-- **Random assignment allows "cause."** When chance decides who gets the treatment, the groups end up similar in everything else (age, habits, motivation). So if results differ, the treatment is the best explanation.
-- **Random sampling allows "generalize."** When everyone in a group had a fair chance to be picked, the sample tends to look like the group.
+```quiz
+A researcher recruited 90 adult volunteers through an online ad. She randomly assigned 45 of them to drink green tea daily, and the other 45 drank none. After 8 weeks, the tea group had lower blood pressure, on average. Which conclusion is most appropriate?
+- Because the subjects were volunteers, the study can't show that the tea caused anything. :: The trap. Volunteers limit who the result applies to. Random assignment still allows a cause.
+* Green tea likely lowers blood pressure for people similar to the volunteers.
+- Green tea likely lowers blood pressure for all adults. :: Volunteers from an ad aren't a random sample of all adults.
+> Chosen how? Volunteers, so the results describe only people like them. Groups formed how? At random, so a cause is allowed. Together: a likely cause, for people like the volunteers.
+```
 
-### Sampling problems that block generalizing
+## Your turn: easy
 
-- **Volunteers or self-selection:** people chose to answer (online polls, call-in surveys), and they often feel strongly.
-- **Convenience samples:** whoever was easy to reach (people at one gym, one class, one store).
-- **Wrong frame:** sampling one school, city or age group and then talking about everyone.
-- **Low response:** many people chosen never answered, and those who did may be different.
+Ask how the subjects were chosen. Does that sample speak for the group the council cares about?
 
-## Worked examples
+```check
+m-1343
+```
 
-### Example 1: Volunteers, but random assignment
+## Your turn: medium
 
-A researcher placed an online ad and recruited 200 adult volunteers. She randomly assigned 100 of them to use a breathing-exercise app for 10 minutes each day and the other 100 to not use the app. After four weeks, the app group reported significantly lower stress levels on average than the other group. Which conclusion is most appropriate?
+Find the exact group the gamers were chosen at random from. The results reach that group only.
 
-- (A) Using the app causes lower stress for adults in general.
-- (B) Using the app likely causes lower stress for people similar to the volunteers in the study.
-- (C) Using the app will lower the stress level of every person who uses it.
-- (D) Using the app is associated with lower stress, but no cause-and-effect conclusion is possible because the participants were volunteers.
+```check
+m-16938
+```
 
-**Solution**
+## Your turn: hard
 
-Random sampling? No, they answered an ad. Random assignment? Yes. Table: cause and effect is allowed, but only for the participants and people like them.
+Read the description of the group the trees were randomly chosen from, word by word.
 
-Why the others are wrong: (A) generalizes to all adults, but the volunteers were not a random sample of adults. (C) says "every person". The study is about averages, and some individuals may not benefit. (D) mixes up the two ideas: volunteering limits *who* the results apply to, but random assignment still supports a causal conclusion.
+```check
+m-1552
+```
 
-**Answer:** (B)
+## Recap
 
-### Example 2: Random sample, no assignment
-
-A random sample of 500 adults living in Oak City was surveyed. The adults who reported drinking at least two cups of coffee a day also reported sleeping fewer hours per night, on average, than those who drank less. Which conclusion is best supported?
-
-- (A) Drinking at least two cups of coffee a day causes adults in Oak City to sleep less.
-- (B) For adults in Oak City, drinking at least two cups of coffee a day is associated with sleeping fewer hours per night.
-- (C) Drinking at least two cups of coffee a day causes adults everywhere to sleep less.
-- (D) For adults in the whole country, drinking at least two cups of coffee a day is associated with sleeping fewer hours per night.
-
-**Solution**
-
-Random sampling? Yes, from adults in Oak City. Random assignment? No, people chose their own coffee habits. Table: association only, for adults in Oak City.
-
-Why the others are wrong: (A) claims cause with no random assignment. Maybe people who sleep less drink coffee to stay awake, or a stressful job causes both. (C) claims cause and also overgeneralizes. (D) uses the right word, "associated", but for the wrong population. Only Oak City adults were sampled.
-
-**Answer:** (B)
-
-### Example 3: Which population?
-
-Ridgeview High School has 2,400 students, and 600 of them play on a school sports team. A nutritionist selected 80 students at random from the 600 team athletes and asked how many hours they slept on the night before a game. The average was 6.9 hours. To which group can the results of the survey most reasonably be generalized?
-
-- (A) The 80 students who were surveyed only
-- (B) All 2,400 students at Ridgeview High School
-- (C) All high school athletes in the state
-- (D) The 600 students at Ridgeview High School who play on a school sports team
-
-**Solution**
-
-The random sample was taken from the **600 team athletes**, so that is the population. Results extend to exactly that group.
-
-Why the others are wrong: (A) is too narrow. Because the 80 were chosen at random, they do speak for the larger group they came from. (B) includes non-athletes, who had no chance of being chosen. (C) includes other schools that were never sampled.
-
-**Answer:** (D)
-
-### Example 4: Why can't we generalize?
-
-A music website posted a poll asking visitors whether they think streaming services pay artists fairly. Of the 5,000 visitors who chose to respond, 78% answered "no". Which is the best reason the result should not be used to estimate the opinion of all music listeners?
-
-- (A) A sample of 5,000 is too small to represent all music listeners.
-- (B) The respondents chose to take part, so they may not be representative of all music listeners.
-- (C) The poll did not randomly assign visitors to groups.
-- (D) A result as high as 78% is too extreme to be accurate.
-
-**Solution**
-
-This is a **self-selected** (volunteer) sample from one website. People who visit a music site and bother to answer may care more about artists' pay than typical listeners do. That's a bias problem, not a size problem.
-
-Why the others are wrong: (A) blames size, but 5,000 is plenty; the issue is *how* people got into the sample. (C) random assignment is needed for cause-and-effect claims, not for estimating an opinion. (D) a lopsided result is not a problem by itself; a fair random sample could give 78% too.
-
-**Answer:** (B)
-
-## Traps to avoid
-
-- **"Causes" with no random assignment.** If people picked their own group (diet, sport, screen time), the answer can say "associated with," never "causes" or "leads to."
-- **Rejecting cause just because of volunteers.** Random assignment alone is enough for cause and effect *within* the study group. Volunteers only limit who it applies to.
-- **Stretching the population.** Results apply to the group the random sample was drawn from. One school, one city or one age group means just that.
-- **Shrinking the population.** With random sampling, you *can* go beyond the people actually surveyed, to the group they came from.
-- **"Every" or "all individuals."** Studies describe averages and tendencies. Choices claiming the result holds for each person are wrong.
-- **Trusting a big sample.** Size never fixes self-selection or a convenience sample: 10,000 volunteers are still volunteers.
-
-## Quick checklist
-
-- Random sampling? From which exact group?
-- Random assignment by the researchers, or did people choose?
-- Cause is allowed only with random assignment.
-- Generalizing is allowed only to the group that was randomly sampled.
-- Cross out "every," "all," "proves" and any group that wasn't sampled.
-- Pick the choice that claims exactly what the design supports.
+- How were the subjects chosen? A random sample describes exactly the group it came from.
+- Volunteers, convenience or the wrong group: no generalizing, and size doesn't fix it.
+- How were the groups formed? Random assignment allows a cause. Otherwise: only a link.
+- Build the answer: cause or link, plus which group.
+- Cross out choices that claim more (cause, bigger group, "every") or less ("no conclusion").

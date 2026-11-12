@@ -3,187 +3,188 @@ title: Transitions
 skill: transitions
 domain: expression-ideas
 section: rw
-summary: Pick the right transition every time by naming how the two ideas connect before you look at the choices.
-minutes: 11
+summary: Name how two ideas connect before you look at the choices, then pick the transition that shows exactly that link.
 ---
 
-> **Key idea:** Decide how the two ideas connect (same direction, opposite direction, or result) before you look at the choices, then pick the word that does that job.
+## Spot the transition question
 
-## What this question looks like
+A short text with one blank, and always the same question: "Which choice completes the text with the most logical transition?"
 
-You'll see a short text (usually 2–5 sentences) with one blank, often at the start of the last sentence, and always this question:
+All four choices are real linking words with the same punctuation, so grammar never decides. **Logic** does: how does the idea after the blank connect to the idea before it?
 
-**"Which choice completes the text with the most logical transition?"**
+```quiz
+Owls hunt mostly at night. ______ hawks hunt mostly during the day.
+Which choice completes the text with the most logical transition?
+- Therefore, :: Owls' habits don't cause hawks' habits. Nothing here is a result.
+* In contrast,
+- For example, :: Hawks aren't an example of hunting at night. They do the opposite.
+> Night versus day: the second idea goes the opposite way. That's contrast, and *In contrast* is the only contrast word here.
+```
 
-All four choices are real linking words or phrases, like *However*, *Therefore* or *For example*, usually with the same punctuation. So it's a **logic** question, not a grammar one: which word shows how the ideas connect? These questions appear near the end of each Reading and Writing module.
+## Predict with a simple word
 
-Think of a transition as a road sign. It tells the reader whether the next idea goes the same way, turns around, or follows as a result.
+1. **Cover the choices.** If you read them first, they all start to sound fine.
+2. Find the **two ideas** the blank links: usually the sentence before the blank and the sentence with it.
+3. Join them with a simple word: **and, but, so, for example, in fact**. That's your prediction.
+4. Uncover the choices and cross out every one from the wrong family.
+5. Read your answer in place.
 
-## The method
+```quiz
+The bakery raised its prices by 30%. ______ many regular customers started buying bread elsewhere.
+Which simple word joins these two ideas?
+- but :: Customers leaving doesn't go against a price rise. It's what you'd expect after one.
+* so
+- for example :: Leaving isn't one case of a price rise. It's a reaction to it.
+> Prices went up, so customers left: the second idea is a result of the first. "So" points you to *As a result*, *Therefore* or *Consequently*.
+```
 
-Work out the logic first, then pick the word.
+## Learn the main families
 
-1. **Cover the choices.** If you look first, every one will "sound fine," and that's how you get tricked.
-2. **Read the whole text.** It's short, and the blank sometimes connects to an idea two sentences back.
-3. **Sum up the two ideas** in a few words each. Before the blank: "people thought X." After: "study found not-X."
-4. **Name the relationship.** Ask which simple word would join the two ideas: *and* (addition), *but* (contrast), *so* (result), *for example* (example), or *then* (sequence).
-5. **Predict a word, then eliminate.** Cross out every choice from the wrong family. Usually only one survives.
-6. **Read it back.** Put your answer in the blank and read the full sentence. The logic should get clearer, not stranger.
+Sort transitions by job, not as one long list.
 
-### If the relationship is hard to name
-
-Ask these questions in order and stop at the first "yes":
-
-1. Does the second idea **go against** the first, or against what you'd expect? → contrast or concession
-2. Does it **happen because of** the first? → cause–effect
-3. Is it one case of, the exact detail of, or a restatement of the first? → example, specification, clarification
-4. Does it come before, after, or at the same time? → sequence
-5. Does it push the same idea further, or show the same thing in a different subject? → emphasis or similarity
-6. Nothing else fits? → plain addition
-
-> **Tip:** Plain addition (*Moreover*, *Additionally*) fits loosely almost anywhere, which makes it the test makers' favorite decoy. Rule out the sharper relationships first.
-
-## Rules and formulas you need
-
-Learn transitions by **job**, not as one long list.
-
-| Job | Use it when the next idea… | Common words |
+| Family | Idea 2… | Words |
 |---|---|---|
-| Contrast | goes the opposite way | however, by contrast, on the other hand, conversely, yet |
-| Replacement | happens *in place of* the first | instead, rather |
-| Concession | is true *despite* the first | nevertheless, nonetheless, even so, still, regardless, that said |
-| Admitting a point | grants something before the main point | admittedly, granted, of course |
-| Addition | adds a point in the same direction | moreover, furthermore, in addition, additionally, also, besides |
-| Similarity | shows the same thing elsewhere | similarly, likewise, in the same way |
-| Cause–effect | is a result of the first | therefore, thus, as a result, consequently, hence, accordingly |
-| Example | is one case of the general idea | for example, for instance |
-| Specification | names the exact detail meant | specifically, in particular, namely |
-| Clarification | says the same thing in other words | in other words, that is |
-| Sequence / time | comes next, earlier or at the same time | then, next, later, subsequently, previously, meanwhile, finally |
-| Emphasis | makes the first idea stronger | in fact, indeed |
-| Conclusion | sums up | in conclusion, in sum, ultimately, overall |
+| Contrast | goes the other way | however, by contrast, yet |
+| Result | follows from idea 1 | therefore, thus, as a result |
+| Addition | adds a point, same way | moreover, also, in addition |
+| Example | is one case of idea 1 | for example, for instance |
+| Similarity | shows another thing alike | similarly, likewise |
+| Time | comes before, after, alongside | then, later, meanwhile |
 
-### Look-alike pairs
+Two choices that mean the same thing cancel out: if *thus* and *therefore* both appear, neither is right.
 
-Harder questions test words that seem close but do different jobs.
-
-- *However* vs. *instead*: *However* just turns the direction. *Instead* means "in place of that," so the first sentence must mention something that didn't happen or was rejected.
-- *However* vs. *nevertheless*: *Nevertheless* means "this is still true even though the first thing is true."
-- *For example* vs. *specifically*: *For example* gives one case out of several. *Specifically* narrows down to the exact thing.
-- *In fact* vs. *in other words*: *In fact* adds a stronger claim. *In other words* repeats the same claim in new words.
-- *Moreover* vs. *similarly*: *Moreover* adds another point about the same subject. *Similarly* shows a different subject behaving the same way.
-- *Meanwhile*: it means "at the same time" or "elsewhere," not a plain "but."
-
-> **Tip:** If two choices do exactly the same job (say, *Therefore* and *Thus*), they can't both be right, so the answer is probably neither. Use this as a double-check, not your main method.
-
-## Worked examples
-
-### Example 1: Expectation vs. evidence
-
-For decades, many ecologists assumed that coyotes living in cities survived mainly by raiding garbage cans and eating pet food. ______ when researchers in one Midwestern city studied what more than a thousand coyotes had eaten, they found that rodents, deer and wild fruit made up most of the animals' diets.
-
+```quiz
+Many desert plants store water in their thick stems. ______ the saguaro cactus can swell with hundreds of liters of water after a single storm.
 Which choice completes the text with the most logical transition?
+- Similarly, :: *Similarly* needs a different thing that acts alike. The saguaro isn't separate from desert plants; it's one of them.
+* For example,
+- Therefore, :: Other plants storing water doesn't cause the saguaro to swell. There's no result here.
+- However, :: The saguaro does exactly what sentence 1 describes. Nothing turns around.
+> Idea 1 is general (many desert plants). Idea 2 is one plant doing exactly that. One case of a general idea is an example.
+```
 
-- (A) Similarly,
-- (B) For instance,
-- (C) However,
-- (D) Therefore,
+## Concession: admit, then push back
 
-**Solution**
+Concession is the family students know least. It has two moves:
 
-Idea 1: people *assumed* coyotes eat trash. Idea 2: the study found they mostly eat wild food. The second idea goes against the first, so we need **contrast**. Prediction: "but."
+- **Admit** a point against your main idea: *granted, admittedly, of course*.
+- **Push back** anyway: *nevertheless, still, even so, that said*. Idea 2 holds **despite** idea 1.
 
-- (A) *Similarly* needs a matching case. The finding doesn't match the assumption; it disproves it.
-- (B) *For instance* would make the study an example of trash-eating. It's the opposite.
-- (C) *However* signals the turn from belief to evidence. Fits.
-- (D) *Therefore* would mean the assumption caused the finding. It didn't.
+At the start of a sentence, *still* means "despite this", not "even now".
 
-**Answer:** (C)
-
-### Example 2: Cause and effect
-
-Venus flytraps grow in bogs where the soil contains very little nitrogen, a nutrient plants need to build proteins. ______ the plant has developed another way to get nitrogen: it traps and digests insects.
-
+```quiz
+The museum's new wing is small, with only six galleries. ______ it draws more visitors each year than the entire old building, so size clearly isn't what brings people in.
 Which choice completes the text with the most logical transition?
+- Therefore, :: Being small doesn't cause big crowds. The crowds come despite the size.
+* Even so,
+- Granted, :: *Granted* admits a point against the main idea. This sentence is the main idea: size isn't what brings people in.
+- In other words, :: Big crowds don't reword "small". They're a new point that pulls the other way.
+> Idea 1 is a drawback: the wing is small. Idea 2 is the main point, and it holds anyway. That's the push-back move, and *Even so* means "despite that".
+```
 
-- (A) Similarly,
-- (B) As a result,
-- (C) For example,
-- (D) In other words,
+## Stronger, reworded, or exact?
 
-**Solution**
+These look alike but do different jobs:
 
-Idea 1: the soil lacks nitrogen. Idea 2: the plant gets nitrogen from insects instead. Why does it eat insects? *Because* the soil is poor. The second idea follows from the first, so we need **cause–effect**. Prediction: "so."
+- *In fact*, *indeed*: idea 2 is a **stronger** version of idea 1, often a striking detail.
+- *In other words*, *that is*: idea 2 says idea 1 **again**, more plainly. No new facts.
+- *Specifically*: idea 2 pins down **exactly** what idea 1 said in general.
 
-- (A) *Similarly* would need a second plant or situation that matches. There isn't one.
-- (B) *As a result* shows the effect of nitrogen-poor soil. Fits.
-- (C) *For example* would make trapping insects an example of poor soil. That doesn't make sense.
-- (D) *In other words* would mean sentence 2 repeats sentence 1. It adds new information.
+Restatement words tend to be wrong answers, but logic decides: if idea 2 adds a new fact, they're out.
 
-**Answer:** (B)
-
-### Example 3: Concession (with a sneaky "because")
-
-The first electric streetcars, introduced in the 1880s, were noisy, broke down often and frightened horses on the street. ______ cities across the United States rushed to install them, because the cars were faster and cheaper to run than the horse-drawn carriages they replaced.
-
+```quiz
+The new phone's battery lasts a long time. ______ in lab tests, it ran for three full days on a single charge.
 Which choice completes the text with the most logical transition?
+- In other words, :: Three days in a lab test is a new, specific fact, not the same idea reworded.
+* In fact,
+- However, :: Three days backs up "lasts a long time". Nothing turns around.
+- Similarly, :: *Similarly* needs a second thing that behaves the same way. This is still the same battery.
+> Idea 2 takes "lasts a long time" and makes it stronger with a striking number. A stronger version calls for *In fact*.
+```
 
-- (A) Consequently,
-- (B) Even so,
-- (C) Specifically,
-- (D) Likewise,
+## Link the right two ideas
 
-**Solution**
+The blank links its sentence to the **sentence just before it**. Don't jump back to an earlier sentence that already has its own transition.
 
-Idea 1: the streetcars had lots of problems. Idea 2: cities wanted them anyway. The second idea is true *despite* the first, so we need **concession**. Prediction: "but still."
+The rule holds when the blank sits mid-sentence ("The results, ______ surprised everyone."). After a semicolon, the blank links the two halves of that sentence.
 
-- (A) *Consequently* is tempting because the sentence contains "because." But that "because" explains the cities' choice *inside* sentence 2. The blank links sentence 2 to sentence 1, and the problems didn't *cause* cities to want streetcars.
-- (B) *Even so* means "despite that." Fits.
-- (C) *Specifically* would introduce a detail about the problems. The sentence moves on to something new.
-- (D) *Likewise* needs a matching situation. Rushing to buy something isn't a match for its flaws.
+A *because* or *but* inside the blank's sentence isn't the link. Compare whole ideas.
 
-**Answer:** (B)
-
-### Example 4: The exact detail
-
-The town council considered several ways to reduce traffic on Main Street, including adding bike lanes, raising parking fees and closing the street to cars on weekends. In the end, the council chose only one of these options. ______ it voted to close Main Street to cars every Saturday and Sunday starting in June.
-
+```quiz
+Scientists long believed that adult brains could not grow new nerve cells. However, studies in the 1990s found new cells forming in adult brains. ______ one later study suggested that a single brain region may add hundreds of new cells each day.
 Which choice completes the text with the most logical transition?
+- However, :: That links to sentence 1, which already got its turn from the first *However*. Sentence 3 agrees with sentence 2.
+* In fact,
+- Instead, :: *Instead* needs something replaced. Nothing in sentence 2 is swapped out.
+- In other words, :: Hundreds of cells a day is a new, specific detail, not a rewording of sentence 2.
+> Link the blank to sentence 2: new cells do form in adult brains. Sentence 3 makes that stronger with a striking figure, so the job is emphasis: *In fact*.
+> The trap is jumping back to sentence 1 ("no new cells"), which sentence 2 has already answered.
+```
 
-- (A) For instance,
-- (B) Specifically,
-- (C) Similarly,
-- (D) Nonetheless,
+## Phrases: check every word
 
-**Solution**
+Some questions offer whole phrases, like "Despite this limitation," or "To address this problem,". Read each phrase in two parts:
 
-Idea 1: the council picked *one* option. Idea 2: here is exactly which one. That's **specification**: the second sentence names the precise thing the first sentence was talking about.
+1. **Family:** does it show the right link?
+2. **Details:** is every word true to the text? "Despite this limitation" needs a limitation in idea 1.
 
-- (A) *For instance* means "here is one example of several." But the council chose only one option, so there's nothing to give an example *of*. This is the hard trap.
-- (B) *Specifically* narrows to the exact choice. Fits.
-- (C) *Similarly* would need a second, matching decision.
-- (D) *Nonetheless* signals "despite that," but closing the street doesn't go against choosing one option. It *is* that option.
+A phrase from the right family with one wrong detail is still wrong.
 
-**Answer:** (B)
+```quiz
+Early solar panels turned only about 6% of sunlight into electricity. ______ engineers spent decades testing new materials, and many panels now convert more than 20%.
+Which choice completes the text with the most logical transition?
+- Despite this success, :: Wrong detail. A 6% rate isn't presented as a success; it's the weak point.
+- Just as experts predicted, :: Wrong detail. The text never mentions a prediction.
+* To improve on this figure,
+- In addition to this figure, :: Wrong family. The engineers' work isn't an extra item next to the 6%; it's a response to it.
+> Idea 1 is a weak number. Idea 2 is the work that raised it. "To improve on this figure" fits in family (a response) and in detail: there is a figure, and it got better.
+```
 
-## Traps to avoid
+## The trap: the Moreover default
 
-Every choice is a real transition, so wrong answers win by sounding right. Watch for these.
+Addition words (*moreover, in addition, also*) fit loosely almost anywhere, so they're the favorite decoy. Before you pick one, rule out the **sharper** links: result, example, contrast, emphasis.
 
-- **"It sounds smooth."** All four sound fine at first. Choose by logic, never by rhythm or how fancy the word is.
-- **The Moreover default.** Addition words are right only when the second idea simply adds another point in the same direction.
-- **The inside-the-sentence trap.** A "because" or "but" *inside* the blank's sentence can pull you to the wrong family. The transition links this sentence to the one before (Example 3).
-- **Reversed cause and effect.** *Therefore* needs sentence 2 to be the *result* of sentence 1. If sentence 2 is the *reason*, *Therefore* is backwards.
-- **Contrast with an expectation.** When sentence 1 sets up what you'd expect and sentence 2 overturns it, that's still contrast, even with no "negative" words.
-- **Example vs. result.** *For example* and *As a result* are common decoys for each other. Ask: is sentence 2 *one case of* sentence 1, or something that *happened because of* it?
-- **Reading only the nearest sentence.** In longer texts, the blank may connect to the main claim two sentences back.
-- **Instead without a replacement.** *Instead* works only if something was expected, planned or rejected and a different thing happened.
+> **Trap:** Addition is right only when idea 2 is a separate point in the same direction and nothing sharper fits.
 
-## Quick checklist
+```quiz
+Fresh snow reflects most of the sunlight that hits it. ______ skiers can get sunburned even on freezing days.
+Which choice completes the text with the most logical transition?
+- Moreover, :: Trap. The sunburn isn't a separate extra fact; it happens because of the reflected light. Addition hides that link.
+* As a result,
+- However, :: The surprise ("even on freezing days") is inside the sentence. Compared with sentence 1, sunburn is a result, not a turn.
+- Similarly, :: Skiers aren't a second thing that reflects light.
+> Ask "and, but or so?" Snow bounces sunlight back, so skiers burn. That's a result, and *As a result* says it.
+```
 
-- Did I cover the choices and read the whole text?
-- Can I sum up the idea before and after the blank in a few words?
-- Which simple word joins them: and, but, so, for example, then?
-- Did I check contrast, cause and example before settling on plain addition?
-- Did I cross out every choice from the wrong family?
-- Does my answer still make sense when I read the full sentence back?
+## Your turn: easy
+
+The blank is mid-sentence: link this sentence to the one just before it.
+
+```check
+rw-0624
+```
+
+## Your turn: medium
+
+Compare whole ideas. A word inside the blank's sentence doesn't decide the link.
+
+```check
+rw-0706
+```
+
+## Your turn: hard
+
+Phrase choices: check the family first, then every detail of each phrase.
+
+```check
+rw-0599
+```
+
+## Recap
+
+- Cover the choices and find the two ideas the blank links, usually with the sentence just before.
+- Predict with a simple word: and, but, so, for example, in fact.
+- Cross out every choice from the wrong family, and any two that mean the same thing.
+- Concession holds despite idea 1, restatement adds nothing new, and *in fact* pushes further.
+- Rule out the sharper links before you settle on *moreover*.
+- For phrase choices, check every word against the text.

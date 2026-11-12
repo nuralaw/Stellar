@@ -3,211 +3,174 @@ title: Ratios, Rates, Proportions, and Units
 skill: ratios-rates
 domain: problem-solving
 section: math
-summary: Set up ratio, rate, scale, density and unit-conversion questions so the units cancel and the answer comes out right the first time.
-minutes: 10
+summary: Set up ratio, rate, unit conversion, density and scale questions so the units cancel and the answer comes out right.
 ---
 
-> **Key idea:** Most mistakes here are setup mistakes, not arithmetic. Write every number with its unit, arrange things so the units cancel, and the calculator does the rest.
+## Spot it: units on every number
 
-## What this question looks like
+Short word problems about recipes, speeds, prices, maps or mass. Clues: *ratio of A to B*, *per*, *at this rate*, *proportional*, *density*, or a conversion in parentheses like (1 mile = 1,760 yards).
 
-These are short word problems about real things: recipes, maps, speeds, prices, paint, water flow or mass. You can spot them by the words on screen:
+Almost every mistake here is a **setup** mistake, so:
 
-- **Ratio words:** "the ratio of A to B is 3 : 5", "for every 4 … there are 7 …"
-- **Rate words:** "per", "each", "at this rate", "miles per hour", "dollars per pound"
-- **Proportion words:** "directly proportional to", "varies directly with", "scale", "1 inch represents 20 miles"
-- **Unit words:** two units in one question (meters and kilometers, minutes and hours), often with a conversion like "1 yard = 3 feet" given
-- **Density words:** "grams per cubic centimeter", "people per square mile"
+1. Write the target with its unit: "? liters".
+2. Write every number with its unit: 18 liters per 4 minutes.
+3. For *at this rate*, find the **unit rate** (the amount for one unit), then multiply.
 
-Some are multiple choice; others ask you to type a number. Easy ones take one step. Hard ones chain two or three steps or hide a squared or cubed unit.
+```quiz
+A pump fills 18 liters in 4 minutes. At this rate, how many liters does it fill in 10 minutes?
+- About 2.2 :: Liters and minutes swapped places on one side. Keep liters on top on both sides: 18/4 = x/10.
+- 180 :: The 18 liters took 4 minutes, not 1. Divide by 4 first.
+* 45
+> Unit rate: 18 ÷ 4 = 4.5 liters per minute.
+> In 10 minutes: 4.5 × 10 = 45 liters.
+```
 
-## The method
+## Ratio with a total: use k
 
-Follow the same six steps every time, and put your effort into steps 1–5.
+If red : blue = 3 : 5, call the parts **3k** and **5k**, where k is the size of one part. The total is 8k and the difference is 2k. Solve for k, then multiply.
 
-1. **Name what you want, with its unit.** Write "cost in dollars" or "speed in km per hour". This tells you where to stop.
-2. **Attach a unit to every number.** Write `15 m/s`, not just `15`. Units are your safety net.
-3. **Pick the tool that fits** (see the table below).
-4. **Put the same thing in the same place.** In a proportion, if apples are on top on the left, apples go on top on the right.
-5. **Cancel units before you multiply.** If the leftover unit isn't the one from step 1, fix the setup before you calculate.
-6. **Check size and direction.** Converting to a smaller unit (km → m) should give a bigger number. Ask: "Does this make sense?"
+Red is 3/8 of the whole, **not 3/5**. The ratio 3 : 5 compares two parts, not a part and the total.
 
-| If you see… | Use… |
-|---|---|
-| A ratio and a total | The multiplier: parts 3x and 5x |
-| "At this rate" or "proportional" | A proportion, or the unit rate |
-| Different units | A conversion chain |
-| Density or "per area" | `density = amount ÷ size` |
+```quiz
+A jar holds only red and blue beads. The ratio of red beads to blue beads is 3 to 5, and there are 64 beads in all. How many red beads are there?
+- 8 :: That's k, the size of one part. Red is 3k.
+- 40 :: That's the blue beads. Reread what's asked.
+- 38.4 :: 3 : 5 is part to part. Red is 3/8 of the total, not 3/5.
+* 24
+> 3k + 5k = 8k = 64, so k = 8.
+> Red = 3k = 24. Check: blue = 5k = 40, and 24 + 40 = 64 ✓
+```
 
-## Rules and formulas you need
+## Convert with fractions equal to 1
 
-These are the facts to know cold, grouped by type.
+A **conversion factor** is a fraction worth 1, like (3 ft)/(1 yd) or (1 yd)/(3 ft). Pick the version that puts the unit you want gone on the **opposite** level (top or bottom), so it cancels. Chain as many as you need.
 
-### Ratios
+Size check: a smaller unit means a bigger number.
 
-| Fact | Example |
-|---|---|
-| a : b can be written a/b or "a to b" | 3 : 5 = 3/5 |
-| Multiply or divide *both* parts by the same number | 3 : 5 = 6 : 10 = 30 : 50 |
-| Part-to-part is not part-to-whole | boys : girls = 3 : 5 → boys are 3/8 |
-| With a total, parts are ax and bx | 3x + 5x = 8x |
-| The real total is a multiple of a + b | with 3 : 5, 32 works, 30 doesn't |
+```quiz
+A garden hose is 1,080 inches long. How long is it in yards? (1 foot = 12 inches and 1 yard = 3 feet)
+- 90 :: That's the length in feet. One more step: feet to yards.
+- 270 :: The second factor is upside down. To cancel feet, use (1 yd)/(3 ft): divide by 3.
+- 38,880 :: Both factors are upside down. Yards are bigger than inches, so the number must get smaller.
+* 30
+> 1,080 in × (1 ft)/(12 in) × (1 yd)/(3 ft) = 1,080 ÷ 12 ÷ 3 = 30 yards.
+> Inches cancel, feet cancel, and yards are left.
+```
 
-### Proportions and rates
+## A rate needs two conversions
 
-A **unit rate** is the amount for *one* unit, like $6 for 4 pounds = $1.50 per pound.
+In meters per second, **both** units may need to change: the top (meters) and the bottom (seconds). Give each one its own factor. And 1 hour = 60 × 60 = **3,600** seconds.
 
-| Fact | Example |
-|---|---|
-| Proportion: cross-multiply | `x/12 = 5/4` → `4x = 60` → x = 15 |
-| Direct: `y = kx`, y/x stays the same | line through (0, 0) |
-| Inverse: `y = k/x`, x × y stays the same | 4 workers × 6 h = 3 × 8 h |
-| `distance = rate × time` | 50 mph for 3 h = 150 mi |
-| `density = mass ÷ volume` | 40 g in 8 cm³ = 5 g/cm³ |
+> **Tip:** In Desmos, type the multiplications first and the division last, like `6*3600/1000`. Everything typed after `/` goes into the bottom of the fraction until you press the right arrow key.
 
-In a direct proportion, k is the unit rate. Density can also be amount ÷ area, like people per square mile.
+```quiz
+A drone flies at 6 meters per second. What is its speed in kilometers per hour? (1 kilometer = 1,000 meters)
+- 0.36 :: You used 60 seconds per hour. An hour is 60 × 60 = 3,600 seconds.
+- 21,600 :: That's meters per hour. You still need to turn meters into kilometers.
+- 0.006 :: You converted only the top unit. That's kilometers per second.
+* 21.6
+> Target: kilometers per hour. Convert the top and the bottom:
+> 6 m/s × (3,600 s)/(1 h) × (1 km)/(1,000 m) = 6 × 3,600 ÷ 1,000 = 21.6 km/h.
+> Seconds cancel and meters cancel, which leaves kilometers per hour.
+```
 
-### Unit conversion
+## Letters? Treat them like numbers
 
-- A **conversion factor** is a fraction equal to 1, like `(3 ft)/(1 yd)`. It changes the units, not the amount.
-- Put the unit you want to remove on the *opposite* level (top vs. bottom) so it cancels.
-- For a rate like m/s, convert the top unit and the bottom unit separately.
-- For area, use the factor twice. For volume, use it three times.
+Some rates use letters: *a printer makes p pages in m minutes*. Do exactly what you'd do with numbers. The unit rate is p/m pages per minute; then multiply by the time, in the **same unit**.
+
+To check, plug in easy numbers for the letters and compare the choices.
+
+```quiz
+A bakery fills 6c boxes in t hours, where c and t are positive constants. At this rate, how many boxes does it fill in 20 minutes?
+- t/(18c) :: That uses hours per box, the rate upside down.
+- 120c/t :: You multiplied by 20 as if it were 20 hours. 20 minutes is 1/3 hour.
+- 2ct :: The unit rate is 6c ÷ t. You multiplied by t instead of dividing.
+* 2c/t
+> Unit rate: 6c/t boxes per hour. Time in hours: 20 minutes = 1/3 hour.
+> Boxes: (6c/t) × 1/3 = 2c/t.
+> Check: c = 3 and t = 2 mean 18 boxes in 2 hours, or 9 per hour, so 3 in 20 minutes. And 2(3)/2 = 3 ✓
+```
+
+## Area and volume: square or cube
+
+1 yd = 3 ft, so a square yard is a 3-by-3 grid: **9** ft². A cubic yard is 3 × 3 × 3 = **27** ft³.
 
 | Length | Area | Volume |
 |---|---|---|
 | 1 yd = 3 ft | 1 yd² = 9 ft² | 1 yd³ = 27 ft³ |
+| 1 ft = 12 in | 1 ft² = 144 in² | 1 ft³ = 1,728 in³ |
 | 1 m = 100 cm | 1 m² = 10,000 cm² | 1 m³ = 1,000,000 cm³ |
 
-**Scale:** if a model's lengths are k times the real ones, its areas are k² times and its volumes k³ times.
+Maps and models work the same way: if 1 cm stands for 4 km, then 1 cm² stands for 16 km².
 
-Know these by heart (the test usually gives the rarer ones):
+```quiz
+A floor has an area of 30 square yards. Tile costs $4 per square foot. How much does tile for the whole floor cost? (1 yard = 3 feet)
+- $120 :: You treated square yards as square feet. Convert first.
+- $360 :: You multiplied by 3 once. Square units need the factor twice: 1 yd² = 9 ft².
+* $1,080
+- $3,240 :: 27 is the factor for cubic yards. A floor is an area, so use 9.
+> 30 yd² × 9 ft² per yd² = 270 ft².
+> 270 ft² × $4 per ft² = $1,080.
+```
 
-- 60 seconds = 1 minute; 60 minutes = 1 hour
-- 12 inches = 1 foot; 3 feet = 1 yard; 5,280 feet = 1 mile
-- 100 centimeters = 1 meter; 1,000 meters = 1 kilometer
-- 1,000 grams = 1 kilogram; 1 cm³ = 1 milliliter
+## Density: amount per size
 
-## Worked examples
+**Density = mass ÷ volume**, in units like grams per cubic centimeter (g/cm³). **Population density = people ÷ area**. Rearrange as needed: mass = density × volume.
 
-### Example 1: Ratio with a total
+Same material means same density, so you can find it from one object and use it for another.
 
-In a school orchestra, the ratio of string players to wind players is 7 : 4. There are 66 string and wind players in all. How many more string players than wind players are there?
+```quiz
+A solid metal cube has edges 2 centimeters long and a mass of 64.8 grams. What is its density, in grams per cubic centimeter?
+- 32.4 :: You divided by the edge, 2 cm. Density needs the volume: 2³ = 8 cm³.
+- 16.2 :: 2² = 4 is the area of one face. A cube's volume is 2³ = 8.
+* 8.1
+- About 0.12 :: That's volume ÷ mass, upside down. Density is mass ÷ volume.
+> Volume: 2 × 2 × 2 = 8 cm³.
+> Density: 64.8 g ÷ 8 cm³ = 8.1 g/cm³.
+```
 
-- (A) 3
-- (B) 18
-- (C) 24
-- (D) 42
+## The trap: seconds squared
 
-**Solution**
+Hard questions hide a squared unit inside a rate. Read the unit word by word before you convert.
 
-Call the groups 7x and 4x. Together they make 11x.
+```quiz
+A car's speed increases at a rate of 3 meters per second squared. What is this rate in meters per minute squared?
+- 180 :: Trap: you used 60 once. "Per second squared" means per second per second, so the factor 60 is needed twice.
+- 0.05 :: A minute is longer than a second, so the rate per minute squared is bigger. Multiply, don't divide.
+* 10,800
+> m/s² means meters per second per second. Each "per second" needs its own (60 s)/(1 min).
+> 3 × 60 × 60 = 10,800 meters per minute squared.
+```
 
-`11x = 66`, so x = 6.
+## Your turn: easy
 
-String players: 7 × 6 = 42. Wind players: 4 × 6 = 24. Difference: 42 − 24 = 18.
+Find the unit rate first, then use it.
 
-Why the others are wrong: (A) is 7 − 4, the difference in ratio parts before scaling. (C) is the number of wind players. (D) is the number of string players. Both are real numbers from the problem, but not the one asked for.
+```check
+m-1309
+```
 
-**Answer:** (B)
+## Your turn: medium
 
-### Example 2: Converting a rate
+Chain the conversion factors so each unit cancels.
 
-A delivery drone flies at a constant speed of 15 meters per second. What is its speed in kilometers per hour? (1 kilometer = 1,000 meters)
+```check
+m-1451
+```
 
-- (A) 0.9
-- (B) 54
-- (C) 900
-- (D) 54,000
+## Your turn: hard
 
-**Solution**
+Square units take the length factor twice, and the time unit needs its own factor.
 
-You want km per hour. Convert the top (meters → kilometers) and the bottom (seconds → hours) separately:
+```check
+m-1510
+```
 
-`(15 m / 1 s) × (3,600 s / 1 h) × (1 km / 1,000 m)`
+## Recap
 
-Seconds cancel, meters cancel, and km per hour is left.
-
-15 × 3,600 = 54,000, and 54,000 ÷ 1,000 = 54.
-
-Size check: 54 km/h is a fast bike or slow car speed, which fits a drone.
-
-Why the others are wrong: (A) uses 60 instead of 3,600, so it is km per *minute*. (C) is meters per minute. (D) is meters per hour; the meters were never changed to kilometers.
-
-**Answer:** (B)
-
-### Example 3: The squared-units trap
-
-A rectangular rug is 3 yards long and 4 yards wide. A cleaning company charges $1.50 per square foot. How much will it cost to clean the rug? (1 yard = 3 feet)
-
-- (A) $18
-- (B) $54
-- (C) $162
-- (D) $486
-
-**Solution**
-
-The safest move: convert the lengths first, then find the area.
-
-3 yd = 9 ft and 4 yd = 12 ft. Area = 9 × 12 = 108 ft².
-
-Cost = 108 × $1.50 = $162.
-
-(Same thing another way: 12 yd² × 9 ft² per yd² = 108 ft².)
-
-Why the others are wrong: (A) is 12 × 1.50, which treats square yards as square feet. (B) multiplies by 3 only once, as if area converted like length. (D) multiplies by 27, which is the factor for cubic units.
-
-**Answer:** (C)
-
-### Example 4: Density (student-produced response)
-
-A solid cube made of a certain wax has edges 5 centimeters long and a mass of 112.5 grams. A second solid block made of the same wax has a volume of 300 cubic centimeters. What is the mass, in grams, of the second block?
-
-**Solution**
-
-Same material means same density. Find the density from the cube.
-
-Volume of the cube: 5 × 5 × 5 = 125 cm³.
-
-Density: 112.5 ÷ 125 = 0.9 grams per cm³.
-
-Mass of the second block: 300 cm³ × 0.9 g/cm³ = 270 grams.
-
-Check the units: cm³ × (g/cm³) leaves grams. Good.
-
-A common slip is using 5 cm as if it were the volume: 112.5 ÷ 5 = 22.5 would give 6,750 g, which is far too heavy for a small wax block.
-
-**Answer:** 270
-
-## Traps to avoid
-
-Each of these gives a wrong answer that is usually sitting among the choices.
-
-- **Part-to-part vs. part-to-whole.** Boys to girls 3 : 5 does not make boys 3/5 of the class. Add the parts: boys are 3/8.
-- **Flipping one side of a proportion.** `apples/oranges` on the left with `oranges/apples` on the right gives a wrong answer that often appears as a choice.
-- **Converting only half a rate.** m/s to km/h needs *two* conversions. Doing one gives a choice that looks reasonable.
-- **Using 60 when you need 3,600.** Seconds to hours is 60 × 60.
-- **Forgetting to square or cube.** 1 yd² is 9 ft², not 3. 1 m³ is 1,000,000 cm³, not 100. Convert lengths before finding area or volume.
-- **Stopping one step early.** The question wants the difference, cost or mass, but the in-between numbers are choices too.
-- **Answering in the wrong unit.** Reread the unit asked for (hours or minutes? grams or kilograms?) before you click.
-- **Treating a ratio as exact counts.** 2 : 3 could be 2 and 3, or 20 and 30. You need a total or one real count.
-
-## Desmos shortcut
-
-Desmos won't set up the problem, but it's great once the setup is right.
-
-- Type a whole conversion chain on one line, like `15*3600/1000`, so you never round in the middle.
-- Type a proportion as an equation, like `7/4=x/24`. Desmos shows the solution (x = 42) as a vertical line you can click.
-- For "which point is proportional" questions, find k, graph `y=kx`, and see which given point lands on the line.
-
-> **Tip:** On easy one-step questions, mental math is faster. Save Desmos for long chains and messy decimals.
-
-## Quick checklist
-
-- Did I write the unit I want before starting?
-- Is every number carrying its unit?
-- Is the same quantity in the same spot on both sides of my proportion?
-- Did every unwanted unit cancel, including those on the bottom of a rate?
-- For area or volume, did I square or cube the conversion?
-- Did I answer the exact thing asked, in the exact unit asked?
-- Does the size of the answer make sense?
+- Write the target unit, and a unit next to every number.
+- Ratio with a total: the parts are 3k and 5k, and the whole is 8k.
+- At this rate: find the unit rate, then multiply, with the time in matching units.
+- Convert with fractions equal to 1. A rate needs one for the top unit and one for the bottom.
+- Area: square the factor. Volume: cube it. Per second squared: 60 × 60.
+- Check the size of the answer, and answer in the unit asked.

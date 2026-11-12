@@ -3,188 +3,164 @@ title: Percentages
 skill: percentages
 domain: problem-solving
 section: math
-summary: Solve any percent question (percent of, percent change, stacked changes, finding the original) with one reliable tool: the multiplier.
-minutes: 9
+summary: Turn every percent into a multiplier, then multiply forward or divide back to solve any percent question.
 ---
 
-> **Key idea:** A multiplier is the share of the original you end up with. 25% off means you keep 75%, so multiply by 0.75. Then every percent problem is just multiplying or dividing.
+## Spot a percent question
 
-## What this question looks like
+You'll see a % sign or the word *percent*, usually in a story about prices, discounts, tax, populations or scores. The question wants a part, a new value after a change, the original value before it, or a percent change.
 
-Percent questions are short word problems about prices, discounts, tax, populations, scores or surveys, sometimes with the data in a table. Watch for:
+One tool covers all of them. *Percent* means "out of 100", so 30% = 0.30. Then translate: *of* means ×, *is* means =, and *what number* is the unknown.
 
-- "What is 35% of …?" or "… is what percent of …?"
-- "increased by", "decreased by", "discount", "markup", "sales tax", "tip"
-- "… is p% greater than …" or "p% less than …"
-- "After a 20% discount, the price was $48. What was the original price?"
-- Two changes in a row: "rose 10%, then fell 5%"
-- Letters instead of numbers: "x is 30% more than y"
+```quiz
+54 is 30% of what number?
+- 16.2 :: That's 30% of 54. But 54 is the part here; the unknown is the whole.
+* 180
+- 70.2 :: That adds 30% of 54 to 54. Nothing in the question is increasing.
+- 1.8 :: You divided by 30 instead of 0.30. Turn the percent into a decimal first.
+> Translate: 54 = 0.30 × n. Divide: n = 54 ÷ 0.30 = 180.
+> Check: 30% of 180 is 54, and the whole is bigger than its part.
+```
 
-Easy versions take one step. Harder ones chain changes, use variables or ask for the original value. The math stays simple; the challenge is the number of steps and picking the right base.
+## Changes are multipliers
 
-## The method
+> **Key idea:** A percent change is a multiplication, never an addition.
 
-Turn every percent into a multiplier, then multiply or divide.
+- Increase by r%: multiply by 1 + r/100.
+- Decrease by r%: multiply by 1 − r/100.
 
-1. **Find the base (the 100%).** Ask "percent *of what*?" It's the number after "of" or "than", or the starting value in a change.
-2. **Turn each percent into a multiplier.** 35% of → × 0.35; up 8% → × 1.08; down 8% → × 0.92.
-3. **Chain the multipliers in order.** Each change acts on the result of the one before.
-4. **Going forward? Multiply.** Going back to the original? Divide by the multiplier.
-5. **For percent change, put the starting value on the bottom:** `(new − old) ÷ old`.
-6. **Answer in the form asked:** 25 or 0.25, dollars, "percent of" (108%) or "percent change" (8%).
+| Words | Multiplier |
+|---|---|
+| up 6% | × 1.06 |
+| down 6% | × 0.94 |
+| 6% of | × 0.06 |
 
-## Rules and formulas you need
+To read a multiplier back, subtract 1: × 0.82 is an 18% decrease, and × 1.24 is a 24% increase.
 
-Every common percent situation fits one line of this table.
+```quiz
+Which expression represents the result of decreasing a positive quantity x by 35%?
+- 0.35x :: That keeps 35% of x, the part that was taken away. A 35% decrease keeps 65%.
+* 0.65x
+- 1.35x :: That's a 35% increase. A decrease multiplies by 1 − 0.35.
+- x − 0.35 :: That subtracts 0.35, not 35% of x. A percent is always a share of something.
+> Decreasing by 35% leaves 100% − 35% = 65% of x, so multiply by 0.65.
+> Check with x = 100: a 35% drop gives 65, and 0.65 × 100 = 65.
+```
 
-| Situation | What to do | Example |
-|---|---|---|
-| p% of N | `(p/100) × N` | 35% of 80 = 28 |
-| A is what % of B? | `(A ÷ B) × 100` | 18 of 24 → 75% |
-| Increase by p% | `× (1 + p/100)` | 50 up 12% = 56 |
-| Decrease by p% | `× (1 − p/100)` | 50 down 12% = 44 |
-| Percent change | `(new − old) ÷ old × 100` | 40 → 50 is +25% |
-| Find the original | `final ÷ multiplier` | 56 ÷ 1.12 = 50 |
-| Two changes in a row | multiply the multipliers | 1.1 × 0.8 = 0.88 (−12%) |
-| Percent of a percent | multiply the decimals | 0.4 × 0.3 × 200 = 24 |
-| Same change n times | `× (multiplier)ⁿ` | +5% for 3 years → × 1.05³ |
+## Of versus greater than
 
-### Reading a multiplier as a percent
+Big percents hide the classic trap.
 
-| Multiplier | Share of original | Change |
-|---|---|---|
-| 1.08 | 108% | 8% increase |
-| 0.92 | 92% | 8% decrease |
-| 1.5 | 150% | 50% increase |
-| 2.5 | 250% | 150% increase |
+- 150% **of** 40 is 1.5 × 40 = 60.
+- 150% **greater than** 40 adds 150% on top: 40 × 2.5 = 100.
 
-### Useful facts
+*Greater than*, *more than* and *increased by* always mean × (1 + r/100), even when r is over 100. The base is the number after *than*.
 
-- Up p% then down p% always ends *below* the start: 1.2 × 0.8 = 0.96.
-- Undoing an increase takes a *smaller* percent decrease: +25% is undone by −20% (1.25 × 0.8 = 1).
-- **Percentage points** are a plain difference of two percents: 20% → 25% is up 5 points, which is a 25% increase (5 ÷ 20).
-- "x is p% of y" and "y is what percent of x" have different answers. If x is 20% of y, y is 500% of x.
-- Tax and tip usually apply to the price *after* any discount.
-- Quick mental math: 10% → move the decimal one place left; 1% → two places; 5% is half of 10%; 25% = 1/4; 12.5% = 1/8.
+```quiz
+The positive number k is 2.4 times the number n. The number k is what percent greater than n?
+- 240% :: That's k as a percent *of* n. *Greater than* asks only for the extra part: 240% − 100%.
+* 140%
+- 40% :: That uses only the .4 after the decimal point. The extra part is 2.4 − 1 = 1.4, not 0.4.
+> Split the multiplier into 1 plus the extra part: 2.4 = 1 + 1.4. The extra part, 1.4, is 140%.
+> Check: 140% greater than 100 is 100 + 140 = 240, which is 2.4 × 100.
+```
 
-## Worked examples
+## Going back: divide
 
-### Example 1: Finding the original price
+When the question gives the value **after** a change, the original is the unknown.
 
-After a 15% discount, a jacket costs $68. What was the price of the jacket before the discount?
+original × multiplier = new, so **original = new ÷ multiplier**.
 
-- (A) $57.80
-- (B) $78.20
-- (C) $80.00
-- (D) $453.33
+Don't add the percent back on. The percent was taken of the original, not of the new value.
 
-**Solution**
+```quiz
+After a 25% discount, a backpack costs $48. What was the price before the discount?
+- $60 :: That adds 25% of $48. But the 25% was taken of the original price, not of $48.
+* $64
+- $36 :: That takes 25% off again. You need to undo the discount, not repeat it.
+- $192 :: You divided by 0.25, the part saved. Divide by 0.75, the part paid.
+> A 25% discount keeps 75%: 0.75 × P = 48.
+> Divide: P = 48 ÷ 0.75 = 64.
+> Check: 25% of $64 is $16, and $64 − $16 = $48.
+```
 
-A 15% discount means you pay 85% of the original. Call the original price P.
+## Changes in a row multiply
 
-`0.85P = 68`, so P = 68 ÷ 0.85 = 80.
+When one change follows another, the second acts on the new amount. So **multiply the multipliers**, then subtract 1 to read the net change.
 
-Check: 15% of $80 is $12, and $80 − $12 = $68. Correct.
+Up 20%, then down 20%: 1.2 × 0.8 = 0.96. That's a 4% loss overall, not 0%.
 
-Why the others are wrong: (A) takes 15% off *again* (68 × 0.85). (B) adds 15% of $68 back on (68 × 1.15). That uses the wrong base, because the 15% was 15% of the *original* price, not of $68. (D) divides by 0.15, the part you *saved*, instead of 0.85, the part you *paid*.
+```quiz
+A painting's value rose 150% from 2018 to 2021 and then fell 40% from 2021 to 2024. What was the net percent change from 2018 to 2024?
+- A 110% increase :: That subtracts the percents, 150 − 40. The 40% came off the bigger 2021 value, so multiply instead.
+- A 10% decrease :: You used × 1.5 for *rose 150%*. That's 150% *of*; rising 150% is × 2.5.
+* A 50% increase
+- A 150% increase :: 1.5 is the net multiplier. Subtract 1 to get the change: 0.5, or 50%.
+> Rose 150%: × 2.5. Fell 40%: × 0.6. Net: 2.5 × 0.6 = 1.5. Subtract 1: 0.5, a 50% increase.
+> With numbers: $100 grows to $250, then loses 40% of $250, which is $100. That leaves $150, or $50 more than the start.
+```
 
-**Answer:** (C)
+## No numbers? Start at 100
 
-### Example 2: Two changes in a row
+Some questions chain comparisons between letters. Write each sentence as a multiplier on the letter after *than*: "x is 30% greater than y" becomes x = 1.3y. Then substitute and multiply.
 
-A town's population increased by 20% from 2020 to 2022. Then it decreased by 10% from 2022 to 2024. The town's 2024 population is what percent of its 2020 population?
+> **Tip:** Or set the letter at the end of the chain to 100 and work out the others one sentence at a time. It's the fastest way to catch a wrong base.
 
-- (A) 8%
-- (B) 90%
-- (C) 108%
-- (D) 110%
+```quiz
+The number a is 20% less than the number b, and b is 60% greater than the positive number c. The number a is what percent of c?
+- 140% :: That adds the percents: 100 + 60 − 20. But the 20% is a percent of b, not of c.
+* 128%
+- 80% :: That uses only the first sentence. Link a to c through b.
+> a = 0.8b and b = 1.6c, so a = 0.8 × 1.6c = 1.28c. That's 128% of c.
+> Pick 100: c = 100, so b = 160, and a = 160 − 32 = 128.
+```
 
-**Solution**
+## The trap: the wrong base
 
-Turn each change into a multiplier and multiply in order:
+Percent change = (new − old) ÷ old.
 
-`1.20 × 0.90 = 1.08`
+> **Trap:** Dividing by the new value instead of the starting value gives a wrong answer that is usually one of the choices.
 
-So the 2024 population is 1.08 times, or 108% of, the 2020 population.
+A store sold 1,500 umbrellas in March and 1,200 in April.
 
-To see it with numbers, pretend 2020 had 100 people. Up 20% gives 120. Down 10% of 120 is 12, which leaves 108.
+```quiz
+By what percent did the number of umbrellas sold decrease from March to April?
+- 25% :: You divided 300 by 1,200, the April number. A change is measured from where it started: March.
+* 20%
+- 80% :: April is 80% *of* March. The question asks for the decrease: 100% − 80%.
+> Change: 1,500 − 1,200 = 300. Divide by the starting value: 300 ÷ 1,500 = 0.20, a 20% decrease.
+> Check: 1,500 × 0.80 = 1,200.
+```
 
-Why the others are wrong: (A) is the overall percent *change*, but the question asks what percent *of* 2020 the new value is. (B) uses only the second change. (D) adds the percents (+20 − 10 = +10), but the 10% drop was taken from the bigger 2022 number, not from the 2020 number.
+## Your turn: easy
 
-**Answer:** (C)
+The result is given and the original is unknown. Divide by the multiplier.
 
-### Example 3: Percent greater than (student-produced response)
+```check
+m-1386
+```
 
-Plant A is 48 centimeters tall. Plant B is 60 centimeters tall. The height of Plant B is p% greater than the height of Plant A. What is the value of p?
+## Your turn: medium
 
-**Solution**
+Find the original number first, then answer exactly what the question asks.
 
-"Greater than *Plant A*" makes Plant A the base, so it goes on the bottom.
+```check
+m-1459
+```
 
-Difference: 60 − 48 = 12.
+## Your turn: hard
 
-`12 ÷ 48 = 0.25`, which is 25%.
+Turn each change into a multiplier, multiply, then subtract 1.
 
-Check with a multiplier: 48 × 1.25 = 60. Correct.
+```check
+m-1569
+```
 
-Type **25**, not 0.25 and not 25%. The question already says "p%". Also, don't divide by 60: that gives 20, which answers a different question ("Plant A is what percent *shorter* than Plant B?").
+## Recap
 
-**Answer:** 25
-
-### Example 4: Percents with variables
-
-The number k is 40% less than the number m, and m is 25% greater than the positive number n. The value of k is what percent of n?
-
-- (A) 60%
-- (B) 75%
-- (C) 85%
-- (D) about 133%
-
-**Solution**
-
-Write each sentence as a multiplier equation.
-
-"k is 40% less than m": `k = 0.60m`
-
-"m is 25% greater than n": `m = 1.25n`
-
-Substitute: `k = 0.60 × 1.25n = 0.75n`. So k is 75% of n.
-
-Quick number check: let n = 100. Then m = 125, and k = 60% of 125 = 75. Since 75 is 75% of 100, it works.
-
-Why the others are wrong: (A) ignores the second relationship. (C) adds the percents (−40 + 25 = −15, so 85%). (D) is n as a percent of k (1 ÷ 0.75), which flips the question.
-
-**Answer:** (B)
-
-## Traps to avoid
-
-Each trap below produces a wrong answer that is usually one of the choices.
-
-- **Wrong base in percent change.** Divide by the *starting* value (or the value after "than"), never the new value.
-- **Adding stacked percents.** +20% then −10% is not +10%: 1.2 × 0.9 = 1.08. Two 20% discounts are 36% off (0.8 × 0.8 = 0.64), not 40%.
-- **Undoing with the same percent.** A price raised 20% doesn't return to the original after a 20% cut. Divide by 1.2 instead.
-- **Adding the percent back to find the original.** If $68 is the price after 15% off, the original is 68 ÷ 0.85, not 68 + 15% of 68.
-- **Keeping the wrong share.** A 30% discount leaves 70%. Multiply by 0.7, not 0.3.
-- **Mixing up "150% of" and "a 150% increase".** 150% of x is 1.5x. A 150% increase gives 2.5x.
-- **Percentage points vs. percent.** 40% to 50% is up 10 percentage points, but that's a 25% increase, not 10%.
-- **Wrong form of the answer.** For p in "p%", type 25, not 0.25. Never type % or $ in a typed answer, and round only at the end.
-- **Wrong row or total in a table.** For "what percent of the renters", divide by the number of renters, not everyone surveyed.
-
-## Desmos shortcut
-
-Desmos is handy for percent problems with several steps.
-
-- **Find an original without rearranging:** type the story as an equation, like `x*0.8*1.08=864`. Desmos shows the answer (x = 1000) as a vertical line you can click.
-- **Check a combined change:** type `1.3*0.8` and read 1.04, a 4% increase overall.
-- **Messy percent change:** type `(56.64-48)/48` and get 0.18, an 18% increase, with no early rounding.
-
-> **Tip:** For clean numbers (10%, 25%, 50%), mental math beats Desmos. Save Desmos for chains and ugly decimals.
-
-## Quick checklist
-
-- What is the base: percent *of what*, or greater *than what*?
-- Did I turn each percent into a multiplier (keep 85%, not 15%)?
-- Did I multiply stacked changes instead of adding them?
-- Am I going forward (multiply) or back to the original (divide)?
-- For percent change, is the starting value on the bottom?
-- Is the answer in the asked form: percent of, percent change or dollars?
+- Find the base: the starting value, or the number after *of* or *than*.
+- Turn every change into a multiplier: up r% is 1 + r/100, down r% is 1 − r/100.
+- Several changes in a row: multiply the multipliers, never add the percents.
+- Going back to the original: divide by the multiplier.
+- Percent change is (new − old) ÷ old; read a multiplier back by subtracting 1.
+- Answer the exact question (new value, original, amount or percent), and type only the number.

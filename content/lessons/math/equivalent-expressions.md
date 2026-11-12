@@ -3,214 +3,176 @@ title: Equivalent Expressions
 skill: equivalent-expressions
 domain: advanced-math
 section: math
-summary: Rewrite expressions with exponent rules, factoring and expanding, find the equivalent choice fast, and check it with a plug-in number or Desmos.
-minutes: 12
+summary: Expand, factor, combine fractions, use exponent rules and match coefficients to find the equivalent form, then check it with a number.
 ---
 
-> **Key idea:** Equivalent means equal for every allowed x. Rewrite toward the form the choices use, then confirm by plugging in x = 2 or 3 or by overlapping graphs in Desmos.
+## Spot it: same value, every x
+
+Two expressions are **equivalent** when they give the same value for **every** allowed x: (x + 3)(x − 3) and x² − 9 are one expression in two forms. Clue words: *equivalent*, *can be written as*, *true for all values of x*.
+
+1. **Look at the choices first.** Expanded, factored, one fraction? That's your target form.
+2. **Check with a number** like x = 3. Skip 0 and 1: many different expressions agree there.
+3. **Long one?** Graph the original and a choice in Desmos. The equivalent choice lies exactly on top.
+
+```quiz
+Which expression is equivalent to x² − 16?
+- (x − 4)² :: That's x² − 8x + 16. A square of a difference has a middle term.
+* (x + 4)(x − 4)
+- (x − 8)(x + 2) :: These multiply to −16 but add to −6, giving x² − 6x − 16. Here the middle term is 0.
+- x(x − 16) :: That's x² − 16x. The 16 isn't multiplied by x.
+> Plug in x = 5: x² − 16 = 9, and (5 + 4)(5 − 4) = 9 ✓.
+> The others give (5 − 4)² = 1, (5 − 8)(5 + 2) = −21 and 5(5 − 16) = −55, so they're out.
+```
+
+## Subtract every term in the group
+
+A minus sign before parentheses flips **every** sign inside, not just the first: −(x² − 4x + 1) = −x² + 4x − 1.
+
+Then combine **like terms**: same letter, same power. 3x² and 5x² combine; 3x² and 5x don't.
+
+```quiz
+Which expression is equivalent to (5x² − 2x + 7) − (2x² − 6x − 3)?
+- 3x² − 8x + 4 :: You flipped only the first sign. Subtracting −6x adds 6x, and subtracting −3 adds 3.
+- 3x² + 4x + 4 :: The −3 flips too: 7 − (−3) = 10.
+* 3x² + 4x + 10
+- 7x² − 8x + 4 :: You added the two groups instead of subtracting.
+> Flip every sign in the second group: 5x² − 2x + 7 − 2x² + 6x + 3.
+> Combine like terms: (5 − 2)x² + (−2 + 6)x + (7 + 3) = 3x² + 4x + 10.
+```
+
+## Exponent rules: same base only
+
+| You see | Do this | Example |
+|---|---|---|
+| x^a · x^b | add | x³ · x⁴ = x⁷ |
+| x^a / x^b | subtract | x⁷ / x² = x⁵ |
+| (x^a)^b | multiply | (x³)⁴ = x¹² |
+| x^(−a) | flip | x^(−2) = 1/x² |
+| x^(m/n) | root on the bottom | x^(2/3) = ∛(x²) |
+
+A power also reaches the number in front: (2x)³ = 8x³. To combine roots, write each one as a fraction exponent: √x = x^(1/2) and ∛x = x^(1/3).
+
+```quiz
+For x > 0, which expression is equivalent to (x² · ∛x) / √x?
+- x^(17/6) :: Dividing by √x subtracts its 1/2. You added it.
+- x^(9/2) :: ∛x is x^(1/3), not x³. The root goes on the bottom of the fraction.
+- x^(1/6) :: Multiplying powers adds exponents: 2 + 1/3, not 2 × 1/3.
+* x^(11/6)
+> Write the roots as exponents: ∛x = x^(1/3) and √x = x^(1/2).
+> Multiplying adds and dividing subtracts: 2 + 1/3 − 1/2 = 12/6 + 2/6 − 3/6 = 11/6.
+> So the expression is x^(11/6).
+```
+
+## Factor in a fixed order
+
+1. **Common factor** first: 6x³ − 9x² = 3x²(2x − 3).
+2. **Difference of squares:** a² − b² = (a + b)(a − b).
+3. **Three terms:** for x² + bx + c, find two numbers that multiply to c and add to b. So x² + x − 12 = (x + 4)(x − 3).
+4. **Keep going** until no factor breaks down further.
+
+```quiz
+Which expression is equivalent to 3x³ − 12x?
+- 3x(x − 2)² :: That multiplies out to 3x³ − 12x² + 12x. A perfect square has a middle term.
+- 3x(x − 4)(x + 4) :: You used 4 instead of its square root, 2. That gives 3x(x² − 16).
+- 3(x − 2)(x + 2) :: You dropped the x from the common factor 3x. This equals 3x² − 12.
+* 3x(x − 2)(x + 2)
+> Take out the common factor 3x: 3x(x² − 4).
+> x² − 4 is a difference of squares, x² − 2², so it factors as (x − 2)(x + 2).
+```
+
+## Fractions: factors, not terms
+
+- **Simplify:** factor the top and the bottom, then cancel only common **factors** (things multiplied). In (x + 6)/x you can't cancel the x's.
+- **Add or subtract:** use a common denominator, often the product of the two bottoms. Multiply each top by the factor its bottom is missing.
+
+```quiz
+Which expression is equivalent to 2/(x + 3) + 5/(x − 1)?
+- 7/(2x + 2) :: You added the tops and added the bottoms. Fractions need a common denominator first.
+- 7/((x + 3)(x − 1)) :: Each top must be multiplied by the factor its bottom is missing.
+- (7x + 17)/((x + 3)(x − 1)) :: Sign slip: 2(x − 1) = 2x − 2, not 2x + 2.
+* (7x + 13)/((x + 3)(x − 1))
+> The common denominator is (x + 3)(x − 1).
+> New tops: 2(x − 1) + 5(x + 3) = 2x − 2 + 5x + 15 = 7x + 13.
+> Check with x = 2: 2/5 + 5/1 = 5.4, and 27/(5 · 1) = 5.4 ✓
+```
+
+## True for all x: match terms
+
+If two polynomials are equal for **every** x, their parts match: x² terms with x² terms, x terms with x terms, constants with constants.
+
+Expand the side with the unknowns, group it by powers of x, then set each pair equal. Shortcut: plug in x = 0 to match the constants in one step.
+
+```quiz
+(ax + 2)(x − 5) = 3x² + bx − 10 is true for all values of x, where a and b are constants. What is the value of b?
+- 3 :: That's a. Finish the job: b is the coefficient of x.
+- −15 :: You missed the 2 · x term. The x terms are −5ax and 2x.
+- 17 :: Sign slip: −5a = −15, so b = 2 − 15.
+* −13
+> Expand: ax² − 5ax + 2x − 10 = ax² + (2 − 5a)x − 10.
+> Match the x² terms: a = 3. Match the x terms: b = 2 − 5(3) = −13.
+> Check: (3x + 2)(x − 5) = 3x² − 13x − 10 ✓
+```
 
-## What this question looks like
+## Solve a formula for one letter
 
-These questions ask you to rewrite an expression, not solve an equation. Two expressions are **equivalent** when they give the same value for *every* allowed value of the variable: `(x − 3)(x + 3)` and `x² − 9` are one expression in two forms.
+Treat every other letter as a number. Undo what was done to your letter in **reverse order**. If your letter sits in two terms, collect them and **factor it out**.
 
-Expect a few per test, mostly multiple choice, sometimes student-produced response (you type a number). Typical stems:
+To check a choice, pick easy values, work out the result from the original formula, and see which choice gives it.
 
-- "Which expression is equivalent to `(2x − 5)² − 3x`?"
-- "For x > 0, which expression is equivalent to x^(3/2) · √x?"
-- "`(ax + 2)(x − 4) = 3x² − 10x − 8` is true for all values of x, where a is a constant. What is a?"
-- "`x² − 8x + 21` can be written as `(x − h)² + k`. What is k?"
-- "Which expression is equivalent to `(x² − 4)/(x + 2)`, for x ≠ −2?"
+```quiz
+A = P(1 + rt). Which equation gives t in terms of A, P and r?
+- t = (A − P)/r :: You forgot to divide by P. From A = P + Prt you get Prt = A − P.
+- t = (A − 1)/(Pr) :: The 1 is multiplied by P. Subtract P, not 1.
+- t = Pr/(A − P) :: You flipped the fraction at the end. t is on top in Prt = A − P.
+* t = (A − P)/(Pr)
+> Distribute: A = P + Prt. Subtract P: Prt = A − P. Divide by Pr: t = (A − P)/(Pr).
+> Check: P = 100, r = 0.05 and t = 2 give A = 110, and (110 − 100)/(100 × 0.05) = 2 ✓
+```
 
-Clue words are *equivalent*, *for all values of x*, *can be written as*, and *where a and b are constants*.
+## The trap: the missing middle term
 
-## The method
+Squaring a binomial is where most points go: (a − b)² means (a − b)(a − b), which is four products, not two.
 
-Let the answer choices tell you where to go, then do the algebra in small steps.
+```quiz
+Which expression is equivalent to (3x − 2)² − 4?
+- 9x² :: Trap: (3x − 2)² is not 9x² + 4. You dropped the middle term, −2(3x)(2) = −12x.
+- 9x² − 6x :: The middle term is 2 · a · b = 2 · 3x · 2 = 12x. You dropped the 2.
+- 9x² − 12x − 8 :: (−2)² is +4, not −4.
+* 9x² − 12x
+> (3x − 2)² = (3x)² − 2(3x)(2) + 2² = 9x² − 12x + 4.
+> Subtract 4: 9x² − 12x.
+> Check with x = 2: (6 − 2)² − 4 = 12, and 36 − 24 = 12 ✓
+```
 
-1. **Look at the choices first.** They show the target form: factored, expanded, or with fractional exponents.
-2. **Work one layer at a time.** Clear parentheses, distribute negatives to *every* term, then combine like terms (same variable, same power).
-3. **For "true for all x", match coefficients.** Expand both sides, line up the x² terms, x terms and constants, and set each pair equal.
-4. **If the algebra gets messy, plug in a number.** Pick x = 2 or 3, evaluate the original and each choice, and cross out any choice that differs.
-5. **Or graph in Desmos.** The equivalent choice lies exactly on top of the original.
-6. **Break ties.** If two choices match your number, test a second number.
+## Your turn: easy
 
-Algebra is usually fastest on short expressions. Plugging in and graphing are your safety net for long ones or a final double-check.
+Flip every sign in the second group, then combine like terms.
 
-## Rules and formulas you need
+```check
+m-0197
+```
 
-### Exponent rules
+## Your turn: medium
 
-These rules only work when the bases match.
+Common denominator first, then subtract the whole second top.
 
-| Rule | Example |
-|---|---|
-| x^a · x^b = x^(a + b) | x³ · x⁴ = x⁷ |
-| x^a / x^b = x^(a − b) | x⁹ / x² = x⁷ |
-| (x^a)^b = x^(ab) | (x³)⁴ = x¹² |
-| (xy)^a = x^a · y^a | (2x)³ = 8x³, not 2x³ |
-| x⁰ = 1 (x ≠ 0) | 7⁰ = 1 |
-| x^(−a) = 1/x^a | x^(−2) = 1/x² |
-| x^(m/n) = (n-th root of x)^m | 8^(2/3) = (∛8)² = 4 |
+```check
+m-0107
+```
 
-For fractional exponents, remember **power over root**: the top number is the power, the bottom is the root. So √x = x^(1/2) and ∛x = x^(1/3). To simplify messy radicals, turn every root into an exponent, apply the rules, then turn it back if the choices use roots.
+## Your turn: hard
 
-### Special products
+Expand the left side and match each power of x.
 
-Know these both ways, forward and backward.
+```check
+m-0042
+```
 
-| Pattern | Expanded form |
-|---|---|
-| (a + b)² | a² + 2ab + b² |
-| (a − b)² | a² − 2ab + b² |
-| (a + b)(a − b) | a² − b² (difference of squares) |
+## Recap
 
-### Factoring, in this order
-
-1. Pull out the **greatest common factor** (GCF): `6x³ − 9x² = 3x²(2x − 3)`.
-2. Two squares with a minus between them: `25x² − 4 = (5x − 2)(5x + 2)`. It can repeat: `x⁴ − 16 = (x² + 4)(x + 2)(x − 2)`.
-3. Three terms: check for a perfect square (`x² − 10x + 25 = (x − 5)²`), then find two numbers that multiply to the constant and add to the middle coefficient: `x² + x − 12 = (x + 4)(x − 3)`.
-4. Multiply back out to check.
-
-### Other must-knows
-
-- **Multiplying polynomials:** every term in the first meets every term in the second. A 2-term times 3-term product has 6 pieces before combining.
-- **Subtracting polynomials:** the minus flips every sign in the second group: `(4x² − x + 3) − (x² − 5x − 2) = 3x² + 4x + 5`.
-- **Rational expressions** (fractions with variables): factor the top and bottom fully, then cancel common factors (things multiplied).
-- **Matching coefficients:** if `ax² + bx + c = dx² + ex + f` for all x, then a = d, b = e and c = f.
-- **Completing the square** reveals a hidden constant: `x² − 8x + 21 = (x − 4)² + 5`.
-- **Splitting a fraction:** rewrite the top to contain the bottom: `(x² + 5x + 7)/(x + 2) = x + 3 + 1/(x + 2)`.
-- **Radicals:** pull out perfect squares, like √(50x³) = 5x√(2x) for x ≥ 0. Radicals multiply (√a · √b = √(ab)) but don't add (√a + √b ≠ √(a + b)).
-
-## Worked examples
-
-### Example 1: Expand and subtract
-
-Which expression is equivalent to `(3x − 2)² − (x + 4)(x − 4)`?
-
-- (A) `8x² + 20`
-- (B) `8x² − 12x − 12`
-- (C) `8x² − 12x + 20`
-- (D) `10x² − 12x − 12`
-
-**Solution**
-
-Expand each piece on its own first.
-
-- `(3x − 2)² = 9x² − 12x + 4` (don't forget the middle term: 2 · 3x · 2 = 12x).
-- `(x + 4)(x − 4) = x² − 16` (difference of squares).
-
-Now subtract the whole second piece: `9x² − 12x + 4 − x² + 16 = 8x² − 12x + 20`.
-
-Quick plug-in check with x = 2: the original is (4)² − (6)(−2) = 16 + 12 = 28, and choice (C) gives 32 − 24 + 20 = 28. They match.
-
-Why the others are wrong: (A) drops the middle term of the square. (B) forgets that subtracting −16 makes +16. (D) adds the second product instead of subtracting it.
-
-**Answer:** (C)
-
-### Example 2: Fractional exponents
-
-For x > 0, which expression is equivalent to `(8x⁶)^(2/3) / √x`?
-
-- (A) `4x⁴√x`
-- (B) `4x³√x`
-- (C) `8x³√x`
-- (D) `2x³√x`
-
-**Solution**
-
-Apply the 2/3 power to *both* factors inside the parentheses.
-
-- `8^(2/3)`: the cube root of 8 is 2, and 2² = 4.
-- `(x⁶)^(2/3) = x^(6 · 2/3) = x⁴`.
-
-So the top is 4x⁴. Write √x as `x^(1/2)` and divide by subtracting exponents: `x^(4 − 1/2) = x^(7/2)`. Since 7/2 = 3 + 1/2, that is x³ · √x. The whole thing is 4x³√x.
-
-Check with x = 4: the top is (8 · 4096)^(2/3) = 32768^(2/3) = 1024, and 1024 / √4 = 512. Choice (B): 4 · 64 · 2 = 512. It matches.
-
-Why the others are wrong: (A) adds the exponents (4 + 1/2) instead of subtracting. (C) never applies the 2/3 power to the 8. (D) takes the cube root of 8 but forgets to square it.
-
-**Answer:** (B)
-
-### Example 3: True for all values of x (student-produced response)
-
-The equation `(ax + 5)(x − k) = 3x² − 7x − 20` is true for all values of x, where a and k are constants. What is the value of a + k?
-
-**Solution**
-
-Expand the left side: `ax² − akx + 5x − 5k`, which groups as `ax² + (5 − ak)x − 5k`.
-
-Match it to `3x² − 7x − 20`, piece by piece:
-
-- x² terms: a = 3.
-- Constants: −5k = −20, so k = 4.
-- x terms (use as a check): 5 − ak = 5 − 3 · 4 = −7. It works.
-
-So a + k = 3 + 4 = 7.
-
-> **Trap:** Seeing "x − k" next to "−20" tempts people to write k = −4. Always expand and match. Never guess the sign.
-
-**Answer:** 7
-
-### Example 4: Rational expression in disguise
-
-Which expression is equivalent to `(x² − 9)/(x² + x − 6)`, for x ≠ −3 and x ≠ 2?
-
-- (A) `1 − 1/(x − 2)`
-- (B) `1 + 1/(x − 2)`
-- (C) `(x + 3)/(x + 2)`
-- (D) `−9/(x − 6)`
-
-**Solution**
-
-Factor top and bottom: `(x − 3)(x + 3) / ((x + 3)(x − 2))`. Cancel the common factor (x + 3) to get `(x − 3)/(x − 2)`.
-
-None of the choices look like that, so rewrite the top to contain the bottom: x − 3 = (x − 2) − 1. That gives `(x − 2)/(x − 2) − 1/(x − 2) = 1 − 1/(x − 2)`.
-
-Plug-in check with x = 4: the original is 7/14 = 1/2, and (A) gives 1 − 1/2 = 1/2. Choices (B), (C) and (D) give 3/2, 7/6 and 9/2.
-
-Why the others are wrong: (B) has the sign of the leftover flipped. (C) comes from factoring the bottom wrong as (x − 3)(x + 2). (D) "cancels" the x² terms, which are added terms, not factors.
-
-**Answer:** (A)
-
-## Traps to avoid
-
-Test makers build a wrong choice around each of these slips.
-
-- **Losing the middle term.** `(x + 5)² = x² + 10x + 25`, never x² + 25. Squaring a sum always makes a middle term.
-- **Half-distributing a minus sign.** In `−(2x − 7)` the −7 becomes +7. There's always a choice where only the first sign flipped.
-- **Canceling terms instead of factors.** In `(x + 6)/x` you can't cross out the x's, because the top x is added to 6, not multiplied.
-- **Forgetting the coefficient in a power.** `(3x²)³ = 27x⁶`. The 3 gets cubed too.
-- **Treating a negative exponent as a negative number.** x^(−3) is 1/x³, which is positive when x is positive.
-- **Adding exponents when you add terms.** x³ + x⁴ is not x⁷. Exponent rules are for multiplying and dividing only.
-- **Missing a reordered answer.** `−4 + 3x` and `3x − 4` are the same, and the right choice is often rearranged.
-- **Testing with 0 or 1.** Many different expressions agree there, so a match proves nothing.
-- **Solving when you should match.** "True for all x" means matching coefficients, not solving for x.
-
-## Desmos shortcut
-
-Desmos is built into every math question and is a strong check for "which is equivalent" questions.
-
-1. **Overlap test.** Type the original as `y = …` on line 1 and each choice below it. The equivalent choice sits exactly on top. Click a line's colored circle to hide and show it, so you can tell a true match from a near miss.
-2. **Difference test (cleaner).** Type `y = (original) − (choice)`. A flat line at y = 0 means equivalent; any bump or slope means not.
-3. **Table test.** Type `f(x) = original` and `g(x) = choice`, add a table with x-values like 2, 3, −1.5 and 7, and compare the f and g columns.
-4. **Slider for a constant.** For "true for all x", graph both sides with a letter like k for the unknown. Drag the slider (or type values) until the graphs overlap, then confirm by matching coefficients.
-5. **Regression for several constants (advanced).** Type `x₁ = [1, 2, 3, 4, 5]`, then `y₁ = 3x₁² − 7x₁ − 20`, then `y₁ ~ (a x₁ + 5)(x₁ − k)`. Desmos reports a = 3 and k = 4; check that R² = 1 (a perfect fit).
-
-### Desmos tips that save points
-
-- If the question uses another letter (like t or n), retype it as x, or Desmos makes a slider instead of a graph.
-- If the expression has constants like a or b, keep their sliders and move them. The right choice must stay on top for every value.
-- Graphs hide single missing points (holes), and "x > 0" means only the right half must match. Read the restriction first.
-- Typing four long choices takes time. On short questions, plain algebra is faster.
-
-> **Tip:** Wrap fractional exponents in parentheses: type `x^(2/3)`. Then check that the whole 2/3 sits up in the exponent, not x² divided by 3.
-
-## Quick checklist
-
-- Did I check the choices to see which form they want?
-- Did I distribute every negative sign to every term?
-- Did I include the middle term when squaring a binomial?
-- Did I apply exponents to the coefficients too?
-- Did I cancel only factors, never terms?
-- For "true for all x", did I match every power of x and use one match as a check?
-- Did I confirm with x = 2 or 3, or a Desmos overlap?
+- Look at the choices first: their form is your target.
+- Expanding: a minus flips every sign in the group, and (a ± b)² has a middle term, ±2ab.
+- Exponents: multiplying adds, dividing subtracts, a power of a power multiplies, and the root goes on the bottom.
+- Fractions: cancel factors only, and add or subtract over a common denominator.
+- True for all x: match each power of x.
+- Check your pick with a number like x = 3, never 0 or 1.

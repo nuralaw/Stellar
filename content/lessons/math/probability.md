@@ -3,149 +3,195 @@ title: Probability and Conditional Probability
 skill: probability
 domain: problem-solving
 section: math
-summary: Find basic and "given that" probabilities from tables and word problems by always picking the right group to divide by.
-minutes: 8
+summary: Find any probability from a table or a story by picking the right group to divide by, including "given that" questions.
 ---
 
-> **Key idea:** The question tells you what to divide by. "Selected at random from all…" means the grand total; "from those who…" or "given that…" means only that row or column total.
+## Spot a probability question
 
-## What this question looks like
+You see a group of things (a table, a bag of marbles, a list of numbers) and the words **selected at random**: every item has the same chance. The question asks for the chance that the pick has some feature.
 
-You get some data and are asked about something chosen **at random**. The data usually comes as one of these:
+Every probability is one fraction between 0 and 1:
 
-- a **two-way table**: rows for one category (like grade), columns for another (like favorite sport), with totals
-- a short story with counts or percents ("60% of the members are…, and of those, 25%…")
-- a bag, jar or list of items
+probability = (how many fit) / (how many you choose from)
 
-Typical stems:
+The division is easy. Points are won or lost on the bottom number.
 
-- "If one of these people is selected at random, what is the probability that…"
-- "If a person who owns a bike is selected at random, what is the probability that…"
-- "What is the probability that a randomly selected student is a junior, given that the student plays chess?"
-- Less often, the reverse: "The probability of choosing a yellow marble is 1/5. How many yellow marbles are there?"
+```quiz
+A box holds 4 red, 6 blue and 10 green pens. One pen is selected at random. What is the probability that it is blue?
+- 3/7 :: You divided by the 14 pens that aren't blue. The bottom is every pen you could pick.
+- 1/3 :: Three colors doesn't mean equal chances. Count pens, not colors.
+* 3/10 :: Right. 6 blue pens out of 20 pens.
+> All 20 pens can be picked, so the bottom is 4 + 6 + 10 = 20. Six are blue: 6/20 = 3/10.
+```
 
-The math is rarely hard. The points come from reading carefully and dividing by the right number.
+## Find the group first
 
-## The method
+Before any math, ask: **out of whom** am I choosing?
 
-Every probability is a fraction, and the question's wording tells you which group goes on the bottom.
+1. **Find the group.** No condition means everyone. A condition shrinks it.
+2. **Count** the ones in that group with the feature. That's the top.
+3. **Divide** by the group's total.
 
-1. **Find the group you're choosing from.** Read the "selected at random" part slowly: everyone, or only one group (bike owners, seniors)? That group's total is your **denominator** (the bottom of the fraction).
-2. **Count what you want inside that group.** Only people in the chosen group who also have the asked-about feature count. That's your numerator (the top).
-3. **Divide:** probability = numerator / denominator.
-4. **Sanity check.** The answer must be between 0 and 1, and the bottom must match the group from step 1.
-5. **For percent word problems,** invent a nice total (100 or 1,000 people), turn every percent into a count, and build a small table. Then do steps 1–3.
+> **Tip:** Rewrite the question as "Out of the ___, how many are ___?" The first blank is your denominator (the bottom number).
 
-## Rules and formulas you need
+```quiz
+"If a student who owns a bike is selected at random, what is the probability that the student also owns a skateboard?" Which number goes on the bottom?
+- All students :: "A student who owns a bike" shrinks the group. Not everyone can be picked.
+- Students who own a skateboard :: Skateboards are what you count inside the group. The group itself is the bike owners.
+* Students who own a bike
+- Students who own both :: That's the top: bike owners who also own a skateboard.
+> Out of the bike owners, how many own a skateboard? The bike owners are the group, so their total goes on the bottom.
+```
 
-Five formulas cover almost every SAT probability question.
+## Read a two-way table
 
-### The formulas
+A **two-way table** sorts people by two features at once. How 60 students get to school:
 
-| Idea | Rule | Signal words |
+| | Bus | Car |
 |---|---|---|
-| Basic | P(A) = ways A happens / all outcomes | "from all" |
-| Conditional | P(A given B) = number in both / number in B | "given that", "of those", "among" |
-| Not | P(not A) = 1 − P(A) | "not", "does not" |
-| Or | P(A or B) = P(A) + P(B) − P(A and B) | "or", "either" |
-| And (table) | A-and-B cell / grand total | "and", "both" |
+| Grade 9 | 18 | 12 |
+| Grade 10 | 14 | 16 |
 
-### Facts to know cold
+- An **inside cell** has both features: grade 10 *and* car = 16.
+- A **row or column total** has one feature: car = 12 + 16 = 28.
+- The **grand total** is everyone: 60.
 
-- A probability is always between 0 and 1. 0 means impossible, 1 means certain.
-- **P(A given B)** is usually not the same as P(B given A), because the denominators differ.
-- In a two-way table, each row total and column total is a ready-made denominator for a "given" question.
-- Missing cells: each row and column must add up to its total, so fill blanks by subtracting.
-- Relative frequency is the same idea as probability: a part divided by a whole, often as a decimal or percent.
-- Two events are independent if knowing one doesn't change the chance of the other: P(A given B) = P(A). The SAT rarely asks this by name.
-- Drawing without replacement (not putting it back): the second draw has one fewer item in the total.
+```quiz
+One of the 60 students is selected at random. What is the probability that the student is in grade 10 and comes by car?
+- 8/15 :: That's 16/30: you divided by the grade 10 row. That answers "given grade 10".
+* 4/15
+- 4/7 :: That's 16/28: you divided by the car column. Nothing shrank the group here.
+> There's no condition, so the group is all 60 students. "Grade 10 and car" is one cell: 16. So 16/60 = 4/15.
+```
 
-## Worked examples
+## "Given that" shrinks the group
 
-### Example 1: Two-way table, "given" question
+These words mean you choose only from one group: **given that**, **of the**, **among**, **if the person is**, **one of the ___ who ___**. That group's row or column total goes on the bottom.
 
-A science museum asked 220 visitors which exhibit they liked best. The results are shown.
+A class of 80 students took a test:
 
-| | Space | Dinosaurs | Oceans | Total |
-|---|---|---|---|---|
-| Child | 30 | 54 | 16 | 100 |
-| Adult | 50 | 26 | 44 | 120 |
-| Total | 80 | 80 | 60 | 220 |
+| | Passed | Failed |
+|---|---|---|
+| Studied | 45 | 5 |
+| Didn't study | 15 | 15 |
 
-If one of the visitors whose favorite exhibit was Dinosaurs is selected at random, what is the probability that the visitor is a child?
+```quiz
+One of the students who passed is selected at random. What is the probability that the student studied?
+- 9/16 :: That's 45/80, the grand total. "One of the students who passed" shrinks the group.
+- 9/10 :: That's 45/50, the chance that a student who studied passed. You flipped the condition.
+* 3/4
+- 1/4 :: That's 15/60: right group, wrong cell. You counted the students who didn't study.
+> Out of the students who passed, how many studied?
+> Group: everyone who passed, 45 + 15 = 60. Inside it, 45 studied. So 45/60 = 3/4.
+```
 
-- (A) 27/110
-- (B) 27/50
-- (C) 27/40
-- (D) 13/40
+## Add every category that fits
 
-**Solution**
+Some questions cover more than one cell. Add every category that matches the words:
 
-Step 1: we choose only from visitors whose favorite was Dinosaurs. That's the Dinosaurs column, total **80**. Step 2: inside that column, children = **54**. Step 3: 54/80 = 27/40.
+- **not A:** everything except A, or 1 − P(A)
+- **at least 2:** 2 and every category above it
+- **A or B:** add both, but count the overlap only once
 
-Why the others are wrong: (A) is 54/220, using the grand total. (B) is 54/100, the chance a *child* picked Dinosaurs (the condition flipped). (D) is 26/80, the adults in the column instead of the children.
+Pets in 80 households:
 
-**Answer:** (C)
+| Pets | Households |
+|---|---|
+| 0 | 22 |
+| 1 | 25 |
+| 2 | 18 |
+| 3 or more | 15 |
 
-### Example 2: Working backward from a probability
+```quiz
+A household with at least 1 pet is selected at random. What is the probability that it has at least 2 pets?
+- 33/80 :: You divided by all 80. "With at least 1 pet" drops the 22 homes with no pets.
+- 9/29 :: That's 18/58: right group, but "at least 2" also includes "3 or more".
+* 33/58
+- 25/58 :: That's the opposite: homes with exactly 1 pet.
+> Group: at least 1 pet is 25 + 18 + 15 = 58 households. Inside it, at least 2 pets is 18 + 15 = 33. So 33/58.
+```
 
-A jar contains only red, green and yellow marbles. There are 12 red marbles and 20 green marbles. If one marble is chosen at random from the jar, the probability that it is yellow is 1/5. How many yellow marbles are in the jar?
+## No table? Build one
 
-**Solution**
+Stories give counts or percents instead of a table. Turn them into counts first:
 
-Let y = the number of yellow marbles. The total number of marbles is 12 + 20 + y = 32 + y, because the yellow marbles are part of the jar too.
+- **Percents:** pretend there are 100 (or 1,000) people.
+- **"In each of 3 classes":** multiply to get the full count.
 
-So `y / (32 + y) = 1/5`. Cross-multiply: 5y = 32 + y, so 4y = 32 and y = 8.
+Then find the group and divide as usual.
 
-Check: 8 yellow out of 40 marbles = 8/40 = 1/5. ✓
+```quiz
+At a school, 60% of students ride the bus. Of the bus riders, 25% live more than 5 miles away. Of the other students, 10% live more than 5 miles away. A student who lives more than 5 miles away is selected at random. What is the probability that the student rides the bus?
+- 3/20 :: That's 15 out of all 100 students. The group is only the students who live far away.
+- 1/4 :: That's 25%, the chance that a bus rider lives far away. You flipped the condition.
+- 19/100 :: That's the chance that any student lives far away. It's the size of the group, not the answer.
+* 15/19
+> Pretend there are 100 students. Bus: 60, and 25% of 60 = 15 live far away. Others: 40, and 10% of 40 = 4 live far away.
+> Group: the 15 + 4 = 19 students who live far away. Inside it, 15 ride the bus. So 15/19.
+```
 
-The common mistake is to take 1/5 of 32 and get 6.4. That forgets that the yellow marbles also count in the total. (And a marble count can't be a decimal anyway.)
+## Work backward to a count
 
-**Answer:** 8
+Some questions give the probability and ask for a count.
 
-### Example 3: Percents, no table given
+- **count = probability × total.** If P(red) = 0.3 and there are 50 cards, there are 0.3 × 50 = 15 red cards.
+- If the total is unknown, write an equation: P(red) = red ÷ total. A missing count is part of the total too: n red and 12 blue give n/(n + 12).
 
-At a high school, 60% of the students take Spanish and the rest take French. No student takes both. Of the Spanish students, 25% are in the drama club. Of the French students, 40% are in the drama club. If a student in the drama club is selected at random, what is the probability that the student takes French?
+```quiz
+A jar holds only red and blue marbles. There are 12 red marbles. If one marble is selected at random, the probability that it is red is 3/8. How many blue marbles are in the jar?
+- 32 :: That's every marble in the jar. Subtract the 12 red ones.
+* 20
+- 4.5 :: You multiplied 12 by 3/8. That works only when 12 is the total, and it isn't.
+> 12/total = 3/8, so total = 12 × 8/3 = 32 marbles. Blue = 32 − 12 = 20. Check: 12/32 = 3/8.
+```
 
-- (A) 2/5
-- (B) 4/25
-- (C) 16/31
-- (D) 31/100
+## The trap: the flipped condition
 
-**Solution**
+> **Trap:** "the chance a driver is a senior" and "the chance a senior drives" are different numbers, and the test puts both in the choices. The group after **given** or **of the** is the bottom. Point at it before you divide.
 
-Pretend the school has 1,000 students and build a table.
+| | Drives | Doesn't drive |
+|---|---|---|
+| Junior | 10 | 50 |
+| Senior | 30 | 20 |
 
-| | Drama | Not drama | Total |
-|---|---|---|---|
-| Spanish | 150 | 450 | 600 |
-| French | 160 | 240 | 400 |
-| Total | 310 | 690 | 1,000 |
+```quiz
+Using the table, what is the probability that a randomly selected driver is a senior?
+- 3/5 :: The trap. 30/50 is the chance that a senior drives. You divided by seniors, not drivers.
+- 3/11 :: That's 30/110, the grand total. "A driver" limits the group.
+* 3/4
+- 1/4 :: Right group, wrong cell: 10/40 counts the juniors.
+> The group is the drivers: 10 + 30 = 40. Inside it, 30 are seniors. So 30/40 = 3/4.
+```
 
-Spanish: 60% of 1,000 = 600, and 25% of 600 = 150 in drama. French: 400 students, and 40% of 400 = 160 in drama.
+## Your turn: easy
 
-We choose from **drama club members only**: denominator = 310. French students among them = 160. Probability = 160/310 = 16/31.
+Is there a condition? If not, the group is everyone.
 
-Why the others are wrong: (A) is 40%, the chance a *French student* is in drama (condition flipped). (B) is 160/1,000, the chance a random student is French **and** in drama. (D) is 310/1,000, the chance a random student is in drama at all.
+```check
+m-1278
+```
 
-**Answer:** (C)
+## Your turn: medium
 
-## Traps to avoid
+Find the group after "given that" first. Its total goes on the bottom.
 
-- **Dividing by the grand total on a "given" question.** This is the number one mistake, and that wrong answer is almost always in the choices.
-- **Flipping the condition.** "Probability a dinosaur fan is a child" divides by dinosaur fans; "probability a child is a dinosaur fan" divides by children. Both show up as choices.
-- **Reading "and" as "given".** "A child and a dinosaur fan" chosen from everyone uses the grand total. Only "given," "of those" or "among" shrinks the group.
-- **Grabbing the neighboring cell.** You picked the right group but took adults instead of children. Point at the cell before you divide.
-- **Answering the complement.** The question asks for "not in the drama club" and you give the chance of being in it. Underline the word *not*.
-- **Adding "or" probabilities without removing the overlap.** People in both groups get counted twice. A probability above 1 is a sure sign.
-- **Leaving the unknown out of the total** (Example 2). When you work backward, the missing count belongs in the denominator too.
-- **Typing a percent into a student-produced response.** If the answer is 0.25, don't enter 25.
+```check
+m-1503
+```
 
-## Quick checklist
+## Your turn: hard
 
-- Who exactly is being chosen at random? That group's total is my denominator.
-- Did I count only people inside that group for the top of the fraction?
-- Is my answer between 0 and 1?
-- Did I watch for flipped-condition, grand-total and complement answers in the choices?
-- For percents, did I use 100 or 1,000 people and build a table?
-- Working backward? The unknown goes in the total too.
+No table here, so build the counts first. Then divide by the group you're given.
+
+```check
+m-1246
+```
+
+## Recap
+
+- Find the group you choose from. No condition: everyone.
+- "Given that", "of the", "among" or "who": only that group.
+- Count inside the group, then divide by the group's total.
+- "And" is one cell. "Not", "or" and "at least" add cells.
+- No table? Pretend there are 100 people and build the counts.
+- Check: between 0 and 1, and not the flipped condition.

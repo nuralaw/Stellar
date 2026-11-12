@@ -3,155 +3,185 @@ title: Command of Evidence: Textual
 skill: command-of-evidence-textual
 domain: information-ideas
 section: rw
-summary: Pick the finding or quotation that proves a specific claim, or weakens it, without falling for choices that are only on-topic.
-minutes: 11
+summary: Pick the finding that supports or weakens a claim, or the quotation that shows it, and skip choices that are only on topic.
 ---
 
-> **Key idea:** All four choices usually sound related to the topic. Only one actually proves (or breaks) the specific claim.
+## Find the claim and the job
 
-## What this question looks like
+Every question gives you a **claim** and a **job**.
 
-A short passage (usually under 150 words) builds up to a **claim**, and the question asks for evidence that does a job for it. The claim might be a scientist's hypothesis, a historian's argument, or a statement about a character in a novel or poem.
+- **Claim:** the hypothesis, argument or conclusion, usually near the end, after words like *hypothesizes*, *argues* or *concludes*. In quotation questions, it's the sentence that ends with a colon and a blank.
+- **Job:** the verb in the question: **support**, **weaken** or **illustrate**.
 
-Typical question stems:
+The background sentences set the scene. The claim tells you exactly what the evidence must prove.
 
-- "Which finding, if true, would most directly **support** the researcher's hypothesis?"
-- "Which finding, if true, would most directly **weaken** the team's conclusion?"
-- "Which quotation from the poem most effectively **illustrates** the claim?"
-- "Which quotation from a historian would best support the student's claim?"
+```quiz
+Glass frogs have nearly see-through skin. Biologist Ken Ito noticed that resting glass frogs are hard to spot on green leaves. He hypothesizes that their see-through skin helps them hide from birds by letting the leaf's color show through.
+The question asks which finding would most directly weaken Ito's hypothesis. What must that finding make less likely?
+- That glass frogs rest on green leaves. :: That's background Ito observed, not his claim. Nobody is doubting it.
+* That see-through skin helps the frogs hide from birds.
+- That glass frogs have nearly see-through skin. :: That's a fact the text states, not the claim being tested.
+> The claim comes after "hypothesizes": see-through skin makes the frogs harder for birds to spot. A weakening finding attacks that link, for example: birds find glass frogs just as easily as frogs with solid-colored skin.
+```
 
-There are two main flavors:
+## Predict what you'd see
 
-| Flavor | The passage | The choices |
-|---|---|---|
-| Hypothesis / argument | A science or social-science study | Possible findings, "if true" |
-| Literary | A line about a novel, poem or play, then a claim | Four quotations from that work |
+Before reading the choices, finish this sentence: **"If the claim is true, we should see…"**
 
-You never need outside knowledge, and you never need to have read the book. Everything is in the claim and the choices.
+For a cause claim (X causes Y), the best support changes X and watches Y: add X and Y appears, take X away and Y goes away, with everything else kept the same.
 
-## The method
+> **Key idea:** Findings are "if true". Never reject one because it sounds unlikely. Accept it, and ask only what it does to the claim.
 
-Turn the claim into a short formula, predict the proof, then test each choice against the formula.
+```quiz
+Songbirds of one species sing at a higher pitch in cities than in forests. Ecologist Maya Ferreira hypothesizes that loud, low-pitched traffic noise causes the birds to raise their pitch so that other birds can still hear them.
+Which finding, if true, would most directly support Ferreira's hypothesis?
+- City birds of this species lay more eggs per nest than forest birds do. :: Egg numbers say nothing about noise or pitch. On topic, but no bearing on the claim.
+* When traffic noise was played in a quiet forest, the birds there sang higher, then went back to their usual pitch when it stopped.
+- City birds in quiet parks sing just as high as city birds next to busy roads. :: This shows pitch doesn't depend on noise, so it weakens the claim.
+- Forest birds of this species sing most often in the early morning. :: When the birds sing says nothing about noise and pitch.
+> Prediction: add noise and the pitch should rise; remove it and the pitch should fall. The forest test does exactly that, with the same birds in the same place, so nothing else can explain the change.
+> The quiet-park result points the other way: if noise were the cause, park birds should sing lower.
+```
 
-1. **Read the question first and spot the job word:** *support*, *weaken* or *illustrate*. Support and weaken need opposite thinking, so lock it in first.
-2. **Find the exact claim.** It's usually in the last sentence or two, after a signal verb like *hypothesizes*, *argues*, *claims*, *concludes* or *suggests*. The background before it matters less.
-3. **Shrink the claim into a formula.** A few words: "pale rocks → cooler → lizards choose them", "Odile = proud AND embarrassed". Keep every part and qualifier (*only*, *mainly*, *at first*, *both*).
-4. **Predict what proof would look like.** If the claim is true, what result should show up? For *weaken*, flip it: what result should *not* happen if the claim is true?
-5. **Test each choice against the formula, not the topic.** Assume the choice is true. Does it make the claim more believable, less believable, or change nothing?
-6. **Pick the choice that works with no extra steps.** Finish the sentence "This supports the claim because…". If you have to add a fact of your own, it's probably a trap.
+## On topic is not enough
 
-## Rules and formulas you need
+Most wrong choices are about the **right topic** but not the **relationship** in the claim. Test each one:
 
-Good evidence matches the claim exactly. Four rules:
+1. Same subjects as the claim (same species, group, place, time)?
+2. Does it touch the link the claim describes?
+3. Would it change the mind of someone who doubts the claim?
 
-- **"If true" means don't argue with the choice.** Don't ask whether a finding is realistic. Treat it as fact and judge only what it does to the claim.
-- **Match the subject.** Evidence about a different animal, group, time period or character doesn't count, even if it's similar.
-- **Match every part.** A two-part claim ("proud *and* embarrassed", "helps plants *but not* animals") needs evidence for both parts.
-- **Results, not methods.** How a study was run (sample size, equipment, location) proves nothing until it says what was found.
+Choices that only repeat the background, or describe how a study was run, prove nothing.
 
-What strong evidence looks like for common claims:
+```quiz
+Biologist Rafa Lim claims that river gobies, a small fish, can recognize their own reflection. To test this, he painted a small dot on each goby's throat, a spot the fish can see only in a mirror.
+Which finding, if true, would most directly support Lim's claim?
+- Gobies spend most of the day near the bottom of the river. :: About gobies, but nothing about reflections. On topic, no bearing.
+- Lim used mirrors that were about the size of a goby. :: That's how the test was run, not what happened. Method, not result.
+* Gobies ignored the dot until they were given a mirror, then rubbed their throats against rocks.
+- Many fish species have natural spots on their throats. :: Wrong subject: other species and natural markings, not gobies reacting to a mirror.
+> If a goby knows the fish in the mirror is itself, the mirror should make it notice the dot on its own body. Rubbing only after seeing the mirror shows exactly that. The others mention gobies, mirrors or spots but never link the mirror to self-recognition.
+```
 
-| Claim | Supports it | Weakens it |
-|---|---|---|
-| X causes Y | Y with X, no Y without X | Y without X, or another cause |
-| A is greater than B | A measured higher | B equal or higher |
-| Effect happens *because of* a reason | Change the reason, the effect changes | Remove the reason, the effect stays |
-| A character feels two things | One quote showing both | Rarely asked |
-| The author uses a technique | A quote that uses it | Rarely asked |
+## Weaken: break the link
 
-Literary questions almost always ask you to illustrate a claim, not weaken it, which is why those cells say "Rarely asked".
+To weaken, flip your prediction: **"If the claim is true, we should NOT see…"**
 
-> **Tip:** Strange science words don't matter. "Protein KR-7 increases root growth" is just "Thing K → more roots". You're judging the logic, not the biology.
+| Claim | Weakened by |
+|---|---|
+| X caused Y | Y without X, or Y before X |
+| A is bigger than B | B as big as A |
+| All Z do this | one Z that doesn't |
 
-## Worked examples
+Or show that **something else** could explain the result.
 
-### Example 1: Support a hypothesis
+```quiz
+Between 1850 and 1870, the river town of Millbrook tripled in size. Historian Clara Osei argues that the main cause was a toll-free bridge built in 1851, which let farmers from across the river sell their goods at Millbrook's market.
+Which finding, if true, would most directly weaken Osei's argument?
+- Farmers from across the river sold much more grain in Millbrook after 1851 than before. :: That's how the bridge would cause growth, so it supports the argument. Opposite job.
+* Millbrook had been growing just as fast for twenty years before the bridge was built.
+- The stone for the bridge came from a quarry near Millbrook. :: Where the stone came from can't explain why people moved there. No bearing.
+> If the town was already growing just as fast with no bridge, the bridge isn't needed to explain the growth. That's "Y without X", the classic way to weaken a cause claim.
+```
 
-Biologist Lina Okafor noticed that banded sand lizards often rest on pale rocks rather than dark ones during the middle of the day. She hypothesizes that the lizards choose pale rocks because pale surfaces absorb less heat than dark surfaces, which helps the lizards avoid overheating.
+## Match every part of the claim
 
-Which finding, if true, would most directly support Okafor's hypothesis?
+Split the claim into parts and keep its **limits**: *only*, *mainly*, *at night*, *both … and*, *at first … later*. A finding that covers one part loses to one that covers every part.
 
-- (A) Banded sand lizards are more active in the early morning than at midday.
-- (B) When pale and dark rocks were equally available, the lizards strongly preferred pale rocks at midday but showed no preference during the cool early morning.
-- (C) Pale rocks are much more common than dark rocks in the lizards' habitat.
-- (D) The skin of the banded sand lizard is a light tan color that blends in with pale surfaces.
+"The drug helps adults **but not** children" needs a result for adults **and** a result for children.
 
-**Solution**
+```quiz
+Biologist Tom Reyes hypothesizes that a desert gecko stores water in its tail during the dry season but not during the rainy season.
+Which finding, if true, would most directly support Reyes's hypothesis?
+- The gecko's tail holds more water than any other part of its body. :: Nothing about seasons. It misses the "dry season but not rainy season" part.
+- The gecko's tail is thicker in the dry season because it fills with fat. :: The season pattern fits, but the tail stores fat, not water. Wrong relationship.
+* The gecko's tail swells with stored water in the dry season and stays thin in the rainy season.
+- Geckos drink more often in the rainy season than in the dry season. :: About drinking, not about storing water in the tail. No bearing.
+> The claim has a thing (water in the tail) and a limit (dry season, not rainy season). Only one choice matches both. The fat choice copies the season pattern but swaps what is stored.
+```
 
-Job word: *support*. Formula: "pale rocks chosen *because* they keep lizards from overheating."
+## Quotations: translate, then match
 
-Prediction: if heat is the reason, the lizards should prefer pale rocks *when it's hot* and not care when it's cool.
+In quotation questions, the claim is usually about a character, a narrator or a poem's speaker. You don't need to know the work.
 
-- (A) is about when lizards are active, not which rocks they pick. Related, but it doesn't touch the reason for the choice.
-- (B) matches the prediction exactly. The preference appears only when overheating is a risk, which links the choice of rock to heat. Keep it.
-- (C) actually hurts the hypothesis: if pale rocks are just everywhere, the lizards might sit on them by chance, not by choice.
-- (D) suggests a different reason (hiding from predators). An alternative explanation can't support Okafor's heat explanation.
+1. Split the claim into its parts.
+2. Translate each quotation into a plain modern sentence. In poems, a slash ( / ) marks a line break.
+3. Keep the quotation that **shows** every part, about the right person.
 
-**Answer:** (B)
+A quotation that just repeats a word from the claim isn't automatically right. It has to show the idea.
 
-### Example 2: Weaken a conclusion
+```quiz
+"Night Train to the City" is an early 1900s poem by Isabel Varga. In the poem, the speaker expresses both wonder at the city and a feeling of loneliness there: ______
+Which quotation from the poem most effectively illustrates the claim?
+- "A thousand windows burn like captured stars, / And every street is humming with a song." :: Shining windows and singing streets: wonder only. Half the claim.
+- "I walk among the crowds as if through rain, / And not one face turns toward me as I pass." :: Nobody notices the speaker: loneliness only. Half the claim.
+* "How bright the towers rise, how proud, how tall! / And yet among their lights I know no one."
+- "At dawn the market wagons rumble in / With apples, bread and milk from distant farms." :: It describes the city but shows neither feeling.
+> Translate it: the towers are amazing, *and yet* the speaker knows nobody there. That's wonder plus loneliness in one quotation. Each of the others shows one feeling or none.
+```
 
-In a study of twelve high schools, students at schools that start classes at 8:30 a.m. or later had higher attendance rates than students at schools that start at 7:30 a.m. Based on these results, an education researcher concluded that later start times cause students to attend school more regularly.
+## One idea over another
 
-Which finding, if true, would most directly weaken the researcher's conclusion?
+Some questions give two explanations and ask which finding supports **A over B**. Predict what each one expects:
 
-- (A) Students at the later-start schools reported getting more sleep on school nights than students at the earlier-start schools.
-- (B) The later-start schools were the only schools in the study that offered free bus service, which other research has linked to higher attendance.
-- (C) A few students at the earlier-start schools had perfect attendance for the entire year.
-- (D) Later start times have become more common in high schools across the country.
+- A result that A predicts and B doesn't: supports A over B.
+- A result **both** would expect: useless, because it can't pick a winner.
 
-**Solution**
+```quiz
+Each morning, male ridge-tailed lizards turn dark blue, and the color fades by noon. Biologist Amara Nwosu thinks the dark color helps them warm up after cold nights. Her colleague Tomas Lind thinks it warns rival males to stay away.
+Which finding, if true, would most directly support Nwosu's idea over Lind's?
+- Males that turn the darkest blue win more fights against rivals. :: That fits Lind's warning-signal idea, not Nwosu's.
+- Males living in crowded groups turn blue on cold mornings. :: Both ideas expect this: there's cold and there are rivals. It can't pick a winner.
+- The blue color comes from tiny crystals in the lizards' skin. :: That explains how the color is made, not why. No bearing on either idea.
+* Males kept alone, with no rivals nearby, still turn blue, and they turn darker on colder mornings.
+> Heat idea: the color should follow the temperature, even with no rivals around. Signal idea: the color should depend on rivals. Lone males turning darker on colder mornings fits heat and makes no sense for a signal.
+```
 
-Job word: *weaken*. Formula: "later start → *causes* → better attendance."
+## The trap: the opposite job
 
-Prediction: a cause claim is weakened when something else could explain the result. So look for another difference between the two groups of schools.
+The most common mistake on these questions: picking a strong **supporter** when the question says **weaken**, or the reverse. The wrong choice feels great because it's clearly about the claim.
 
-- (A) gives a believable reason later starts would help (more sleep). That *supports* the conclusion. It's the opposite job.
-- (B) gives a second difference between the groups: free buses. Now we can't tell whether the start time or the buses raised attendance. That weakens the cause claim. Keep it.
-- (C) talks about a few individual students. The conclusion is about group averages, so a few exceptions change nothing.
-- (D) is about national trends, which say nothing about whether start times cause attendance changes.
+> **Trap:** Before you click, reread the job word and ask: does this push the claim **up** or **down**?
 
-**Answer:** (B)
+```quiz
+Researcher Lena Brandt concluded that a new reading app improves children's reading speed, because children who used it for a month read faster afterward.
+Which finding, if true, would most directly weaken Brandt's conclusion?
+- Children who used the app for two months improved more than those who used it for one. :: This makes the app look more effective. It supports the conclusion: opposite job.
+* Similar children who never used the app got just as much faster over the same month.
+- Most children said they enjoyed using the app. :: Enjoying the app isn't the same as reading faster. No bearing.
+- The app was designed by a team of teachers. :: Who made the app says nothing about its results. No bearing.
+> If children without the app sped up just as much, the gain probably came from something else, like a month of school. That breaks the link between the app and faster reading.
+```
 
-### Example 3: Illustrate a literary claim
+## Your turn: easy
 
-In an invented novel written for this lesson, Odile, the narrator's younger sister, works after school in her family's small bakery. The narrator suggests that Odile feels both proud of the bakery and embarrassed by it.
+Find the hypothesis, then predict what the sea stars should do if it's true.
 
-Which quotation from the novel most effectively illustrates this claim?
+```check
+rw-0029
+```
 
-- (A) "Every morning the ovens were lit before dawn, and the smell of rye bread drifted down the whole length of Mercer Street."
-- (B) "At school Odile told everyone our bread was the best in the city, and then she took the long way to the shop so no one would see her go in through the flour-dusted door."
-- (C) "Our father had bought the bakery from his uncle, who had run it for almost forty years."
-- (D) "Odile turned red whenever her classmates saw her behind the counter in her stained apron."
+## Your turn: medium
 
-**Solution**
+A quotation question. Split the claim into its parts and translate each quotation.
 
-Job word: *illustrate*. Formula: "Odile = proud AND embarrassed." Both parts are needed.
+```check
+rw-0261
+```
 
-- (A) describes the setting. It's vivid, but it shows nothing about how Odile feels.
-- (B) shows pride (she brags that the bread is the best) *and* embarrassment (she hides that she goes into the shop). Both parts in one quotation. Keep it.
-- (C) is family history, with no feelings at all.
-- (D) shows embarrassment only. It's half the claim, so it loses to (B).
+## Your turn: hard
 
-**Answer:** (B)
+"Undermine" means weaken. Follow the chain to its end, then flip your prediction.
 
-## Traps to avoid
+```check
+rw-0201
+```
 
-Most wrong choices are on-topic but don't do the job:
+## Recap
 
-- **True but irrelevant:** accurate and on topic, but it doesn't affect the claim. This is a very common wrong answer. Ask: "So what? Does this change my belief in the claim?"
-- **Opposite job:** supports when you were asked to weaken, or the reverse. This catches strong students under time pressure. Reread the job word before you click.
-- **Half the claim:** proves only one part of a two-part claim. It looks great but loses to the choice that proves both.
-- **Wrong subject:** evidence about a related species, a different group or a different character. Close isn't the same.
-- **Keyword match:** a quotation that repeats a word from the claim (like "journey" or "proud") without showing the idea. Pick the quote that shows the claim in action.
-- **Extra-step answer:** works only if you add your own assumption. The right answer connects directly.
-- **Method, not result:** "The researchers studied 500 lizards over three summers" sounds impressive but contains no finding.
-
-## Quick checklist
-
-- Did I spot the job word: support, weaken or illustrate?
-- Can I state the claim as a short formula, with every part and qualifier?
-- Did I predict what the proof should look like before reading the choices?
-- Is my choice about the same subject and the same direction as the claim?
-- Does it cover *every* part of the claim?
-- Can I finish "This supports/weakens the claim because…" without adding facts?
+- Find the claim and the job word: support, weaken or illustrate.
+- Split the claim: subjects, relationship, limits, every part.
+- Predict first: "If the claim is true, we should (or should NOT) see…"
+- Accept every finding as true. Judge only whether it moves the claim.
+- Cut choices that are on topic but don't touch the relationship.
+- Quotations: translate each one, keep the one that shows every part. Then reread the job word.

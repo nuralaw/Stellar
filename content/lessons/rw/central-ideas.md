@@ -3,143 +3,181 @@ title: Central Ideas and Details
 skill: central-ideas
 domain: information-ideas
 section: rw
-summary: Find the one point a short passage makes, and pick the exact detail a question asks for without falling for half-right answers.
-minutes: 10
+summary: Find the one point a short text makes and the exact detail a question asks for, without falling for half-right choices.
 ---
 
-> **Key idea:** The right answer says what the passage says. Wrong answers say a little more, a little less, or something different.
+## Main idea or detail?
 
-## What this question looks like
+You get one short text (25–150 words) and one question about what it says. Read the **question first** and decide which kind it is:
 
-You get one short passage (about 25–150 words) and one question that asks for either the big point or one specific fact. The passage might be a science study, a bit of history, a story or a poem.
+| The question says | You need |
+|---|---|
+| "main idea", "main topic" | the whole text in one sentence |
+| "according to the text", "based on the text" | one detail you can point to |
 
-Typical question wording:
+That decides how you read: for the big picture, or hunting for one line.
 
-- "Which choice best states the main idea of the text?"
-- "Based on the text, what is true about [a person, study or object]?"
-- "According to the text, why did [someone] do [something]?"
-- "Which choice best describes [a character]'s reaction to…?" (stories and poems)
+```quiz
+Which of these questions asks for a detail, not the main idea?
+- Which choice best states the main idea of the text? :: This one wants the whole text boiled down to one sentence.
+* According to the text, why did the town build the dam? :: Right. One specific reason, stated somewhere in the text.
+- Which choice best states the main topic of the text? :: The main topic also covers the whole text, so read it like a main idea question.
+> "According to the text" asks about one fact, here the town's reason. You should be able to put your finger on the sentence that states it.
+```
 
-The wording tells you which kind you have:
+## Predict: topic + point
 
-- **Main idea:** the whole passage boiled down to one sentence.
-- **Detail** ("according to the text", "based on the text, what is true"): one fact you can find and point to.
+Before reading the choices, say the answer in your own words: **topic + point**. Who or what is the text about, and what does it say about them?
 
-## The method
+- Topic: *city coyotes*. Not a main idea yet.
+- Topic + point: *city coyotes eat mostly wild food, not trash.*
 
-Read once with a purpose, predict, then go back only to check specific words.
+Check that your prediction covers the whole text, first sentence to last.
 
-1. **Read the question first.** Decide: main idea or one detail?
-2. **Read the whole passage once.** Watch for pivot words like *but*, *however*, *yet*, *instead* and *in fact*. The author's real point usually comes right after one.
-3. **Predict in your own words before you look at the choices.** For a main idea, use *topic + what the author says about it*: "Coyote study → they eat less human food than people thought." For a detail, find the sentence that answers the question and restate it.
-4. **Match.** Pick the choice that means the same as your prediction, even if the wording differs.
-5. **Check every part of your pick.** If even one word isn't backed by the text, cross it out.
-6. **Name the flaw in each choice you cross out:** too narrow, too broad, never said, or twisted. Naming it makes you faster and surer.
+> **Key idea:** The right answer says what the text says, in new words. Wrong answers say a little more, a little less, or something different.
 
-## Rules and formulas you need
+```quiz
+In a garden study, honeybees visited purple flowers far more often than white ones. When researcher Ana Ruiz painted some white flowers purple, bees began visiting those flowers just as often. Ruiz concluded that the bees were choosing flowers by color rather than by scent.
+Which prediction states the main idea as topic + point?
+- Honeybees and flowers. :: That's only the topic. It doesn't say what the text claims about them.
+- Ruiz painted some white flowers purple. :: That's one step of the study, not its point. Too narrow.
+* Bees in the study picked flowers by color, not scent.
+- Bees like purple better than every other color. :: The text compares only purple and white. Too broad, and it misses the point about color versus scent.
+> Topic: how the bees choose flowers. Point: by color, not scent. The painted flowers are the evidence for that point, so they aren't the main idea themselves.
+```
 
-These are the facts to know cold:
+## Watch for the pivot word
 
-- **Whole passage.** The main idea fits the first and last sentences, not just one example in the middle.
-- **Topic isn't the main idea.** "Coyotes" is a topic. "A study found coyotes eat less human food than expected" is a main idea.
-- **Pivot words show the author's view.** "People used to think X. But Y." The passage is about Y.
-- **Every word must be supported.** Most wrong choices fail because the text gives no evidence for part of them.
-- **No outside knowledge.** A choice can be true in real life and still be wrong if the passage doesn't say it.
-- **Details come from one place.** For "according to the text", you should be able to point at the sentence that proves it.
-- **Match the strength.** If the text says "suggests" or "may", an answer with "proves" or "always" is too strong.
+Many SAT texts have this shape: **people used to think X. But a study found Y.** The main idea is Y, often phrased as "a study challenges X".
 
-### Stories and poems
+Words that mark the turn: *but*, *however*, *yet*, *in fact*, *instead*, *now*. What comes after them usually matters most. A choice that states X is the **old view**, the one the text argues against.
 
-The main idea is usually *what happens* plus *what it shows about the character*. A choice that only lists an action or only describes the setting is usually too narrow. Don't credit a character with feelings the text never hints at.
-
-## Worked examples
-
-### Example 1: The pivot word
-
-For many years, wildlife researchers assumed that coyotes living in cities survived mostly by eating garbage and pet food. But when ecologist Dana Ferreira and her team examined more than 700 droppings collected from city parks, they found that rodents, rabbits and wild fruit made up most of the coyotes' diet. Human food showed up in fewer than one sample out of five.
-
+```quiz
+For decades, biologists assumed that octopuses sleep in only one quiet state. However, when Lena Park's team filmed sleeping octopuses, they saw that about once an hour the animals entered a short active stage: their skin flashed colors and their arms twitched, much like the dreaming sleep of mammals.
 Which choice best states the main idea of the text?
+- Octopuses sleep in a single, quiet state. :: That's the old view, the one the text argues against after "However".
+* Filming showed that octopus sleep includes an active stage, not just a quiet one.
+- Octopuses dream in the same way that mammals do. :: Too strong. The active stage looks like mammals' dreaming sleep; the text never says octopuses dream the same way.
+- Park's team filmed octopuses while they slept. :: True, but that's how the study worked, not what it found. Too narrow.
+> *However* splits the text in two: the old belief (one quiet state), then the finding (an active stage too). The main idea is the finding.
+```
 
-- (A) Coyotes in cities eat more rodents than coyotes in the countryside do.
-- (B) A study challenged the belief that city coyotes depend mostly on human food.
-- (C) Human food is unhealthy for coyotes and should be kept out of city parks.
-- (D) Ferreira's team collected more than 700 samples from city parks.
+## Not too narrow, not too broad
 
-**Solution**
+The right main idea is the **same size** as the text.
 
-The question asks for the main idea, so we need the whole passage in one sentence. Spot the pivot: "researchers assumed… **But**… they found." The old belief was "coyotes eat mostly human food." The study found the opposite. Prediction: *a study showed city coyotes eat mostly wild food, not human food.*
+- **Too narrow:** one true detail, one example or one number. Ask: does this cover the whole text, or one sentence?
+- **Too broad:** one case stretched into a rule about everything (*all animals*, *most artists*). Ask: could this be the main idea of a totally different text?
 
-- (A) compares city and countryside coyotes. The passage never mentions countryside coyotes. Never said.
-- (B) matches the prediction: a study, an old belief, and the finding that goes against it. Every part is supported.
-- (C) makes a health claim and gives advice. The passage does neither. Never said.
-- (D) is true, but it's one detail about how the study was done. Too narrow.
-
-**Answer:** (B)
-
-### Example 2: A short story
-
-The following text is from a short story.
-
-Every Sunday, Lena's grandmother asked her to play the old piano in the hallway, and every Sunday Lena had an excuse. The keys stuck, she said, or the pedal squeaked, or she had too much homework. Today, alone in the house, she lifted the lid and pressed a single key. The note came out flat and a little sour, filling the empty hall. Lena sat down and, without quite deciding to, began the tune her grandmother always hummed while cooking.
-
+```quiz
+Painter Rosa Vidal grew up in a fishing town, and her work keeps returning to it. Her early canvases show its harbor at dawn. Her later abstract pieces use the blue-gray paint of its boats. Even her portraits often place people against nets or sails.
 Which choice best states the main idea of the text?
+- Vidal's early canvases show the harbor at dawn. :: True, but it's one of three examples. Too narrow.
+- Most painters draw on the places where they grew up. :: The text is only about Vidal. Too broad.
+* Vidal's hometown shows up throughout her work, in many different forms.
+- Vidal's later work is more abstract than her early work. :: The text hints at this, but it isn't the point. Every example is there to show the hometown's pull.
+> The first sentence makes a claim (her hometown keeps returning), and the next three sentences are examples. The main idea is the claim, not any one example.
+```
 
-- (A) Lena won't play the piano because it is badly out of tune.
-- (B) Lena, who has long avoided the piano, plays it when no one else is around.
-- (C) Lena's grandmother is disappointed that Lena never practices.
-- (D) Lena learned to play the piano by listening to her grandmother cook.
+## Keep both halves
 
-**Solution**
+Some texts hold two linked ideas: **useful but costly**, **praised, then forgotten**, **possible but unproven**. The main idea keeps both. A choice with only one half is wrong, even if that half is perfect.
 
-Story main ideas are *what happens + what it shows*. What happens: Lena always made excuses, then plays when she's alone. Prediction: *Lena has been avoiding the piano, but she plays it when nobody is watching.*
+Harder texts often **grant a point first**: "That is possible. But…" The author's view is the part after *but*, together with the small point they granted.
 
-- (A) takes Lena's excuses at face value and ignores the ending, where she does play. Twisted, and too narrow.
-- (B) covers both halves of the passage: the long avoidance and the moment alone. Supported.
-- (C) describes the grandmother's feelings. The text never says how she feels. Never said.
-- (D) goes too far. Lena plays the tune her grandmother hummed, but the text doesn't say that's how she learned piano. Never said.
+```quiz
+Some historians say the town of Ellery was founded by miners, since several of its early buildings were mine offices. That is possible. But the oldest records in the town hall are farm deeds, dated decades before any mine opened, and no historian has yet explained them.
+Which choice best states the main idea of the text?
+- Ellery was founded by miners. :: That's the view the author questions. The "But" sentence raises a problem with it.
+- Several of Ellery's early buildings were mine offices. :: That's the historians' evidence, one detail. It leaves out the author's doubt.
+- Farmers, not miners, founded Ellery. :: Too strong. The author still calls the miner theory possible and never says who founded the town.
+* The miner theory is possible, but it leaves the town's older farm deeds unexplained.
+> The author grants one point ("That is possible") and then pushes back ("But…"). The main idea keeps both: the theory is plausible, yet an important piece of evidence is still unexplained.
+```
 
-**Answer:** (B)
+## Details: point to the line
 
-### Example 3: A detail question
+For "according to the text" questions, the answer is **stated**. Find the sentence that answers the exact question, then pick the choice that says the same thing in other words.
 
-Many of the stone walls on the hills near the village of Carrow are only waist-high, too low to stop sheep from jumping over them. Local historian Bríd Nolan explains that the walls were never meant to hold animals in. Farmers built them mainly to get rid of the stones they dug up while clearing their fields, since stacking the rocks along the edge of a field was easier than carting them away. The walls did end up marking property lines, Nolan adds, but that was a side benefit.
+Check what is asked: which person, which reason, which time. The favorite trap is a **real detail with the wrong job**: something the text does say, but it answers a different question.
 
-According to the text, what was the main reason farmers near Carrow built the stone walls?
+```quiz
+In the 1920s, the town of Halden painted its streetlights yellow. Engineer Mira Holt explains why: the town's fog was so thick that white lamps seemed to vanish in it, while yellow light carried farther. Years later, tourists praised the yellow glow, and the color became a symbol of the town.
+According to the text, why did Halden paint its streetlights yellow?
+- Tourists found the yellow glow charming. :: Real detail, wrong job. The praise came years later, so it can't be the reason.
+* Yellow light could be seen better through the fog.
+- The town wanted a symbol to attract visitors. :: The color became a symbol afterward. The text never says the town planned that.
+- White lamps cost too much to run. :: Never said. The text doesn't mention cost at all.
+> Holt's sentence gives the reason: white lamps vanished in the fog, and yellow light carried farther. The tourists and the symbol came later, so they can't explain the choice.
+```
 
-- (A) To keep sheep from wandering onto a neighbor's land
-- (B) To mark the boundaries between properties
-- (C) To get rid of stones cleared from their fields
-- (D) To shield crops from strong winds off the sea
+## Stories: actions show feelings
 
-**Solution**
+Novels, stories, poems and plays test the same skill. Read the line above the text first: it tells you who is who.
 
-"According to the text" means find the exact sentence. The question asks for the *main* reason. Nolan says farmers built the walls "mainly to get rid of the stones they dug up." Prediction: *to get rid of the stones from clearing fields.*
+- Main idea = **who + what happens + what it shows**.
+- Feelings come from what characters **do**, say and notice. Match the feeling **and its strength**: *uneasy* is not *terrified*.
+- If the scene shifts (*but*, *yet*, *only then*), the answer includes the shift.
 
-- (A) is the opposite of what the text says: the walls "were never meant to hold animals in."
-- (B) is in the passage, which makes it tempting, but the text calls it "a side benefit," not the main reason. Real detail, wrong role.
-- (C) restates the "mainly" sentence. Supported.
-- (D) Wind is never mentioned. Never said.
+```quiz
+When the letter came, Nora read it twice, folded it into a small square and said, "Well, that's settled." She made dinner as usual. Only after everyone had gone to bed did she sit by the window, turning the folded letter over and over in her hands.
+Based on the text, how does Nora respond to the letter?
+* She seems calm, but she is privately troubled by it.
+- She is openly furious about the news. :: Nothing she says or does is angry. She stays calm in front of others. Too strong.
+- She is relieved that a problem is finally settled. :: That takes "that's settled" at face value and ignores what she does when alone.
+- She has forgotten the letter by evening. :: Opposite. Late at night she is still turning it over in her hands.
+> Two halves: calm in front of others ("that's settled", dinner as usual) and restless when alone (sitting up, turning the letter). The right answer keeps both.
+```
 
-**Answer:** (C)
+## The trap: one wrong word
 
-## Traps to avoid
+Many wrong choices are **half right**: they start well, then add one thing the text doesn't say. Read every choice to the end and check each part:
 
-Wrong choices usually fail in one of these ways:
+- Is it in the text, not just true in real life?
+- Is it as strong as the text? *Suggests* is not *proves*, *some* is not *all*.
+- Is it about the right person, cause and time?
 
-- **Too narrow:** a true detail (a number, one example, how a study was done) dressed up as the main idea. Does it cover the whole passage or just one sentence?
-- **Too broad:** a claim about one study or character stretched into a rule about everything. If it could be the main idea of a different passage, it's too broad.
-- **Half right, half wrong:** the first half matches, then the second half adds something unsupported. Read every choice to the end.
-- **Never said:** sounds sensible, may even be true in real life, but the passage doesn't say it.
-- **Real detail, wrong role:** something from the passage used to answer the wrong question, like a "side benefit" offered as the "main reason."
-- **The old view:** in "people thought X, but actually Y" passages, a choice stating X is the view the author argues *against*.
-- **Twisted words:** the passage's own words with a changed meaning, often "may" turned into "does" or who-did-what swapped.
-- **Feelings that aren't there:** in stories, a character called "angry" or "jealous" when nothing in the text shows it.
+One unsupported word makes the whole choice wrong.
 
-## Quick checklist
+```quiz
+In a small study, students who took a ten-minute walk before a math quiz scored slightly higher, on average, than students who sat quietly. Researcher Omar Haddad says the results suggest that a short walk may help some students focus, though larger studies are needed.
+Which choice best states the main idea of the text?
+- A study proves that a walk before a test raises every student's score. :: Too strong. The text says "suggest" and "some", and scores were only slightly higher on average.
+* A small study hints that a short walk before a quiz may help some students do a bit better.
+- Walking is the best way for students to prepare for a math quiz. :: Never said. The study compared walking only with sitting, not with other ways to prepare.
+- Haddad's results suggest a walk may help some students, so schools should add walking breaks. :: Starts right, then adds advice about schools that the text never gives. Half right is wrong.
+> The text is careful: "small study", "slightly", "suggest", "may", "some". The right answer keeps that careful strength and adds nothing.
+```
 
-- Does the question want the main idea or one detail?
-- Did I find the pivot word and the point after it?
-- Did I predict in my own words before reading the choices?
-- Does my answer cover the whole passage (main idea) or match one exact sentence (detail)?
-- Is every word supported, with nothing extra?
-- Can I say why each of the other three is wrong?
+## Your turn: easy
+
+A detail question. Find the sentence that gives this exact reason, then match it.
+
+```check
+rw-0383
+```
+
+## Your turn: medium
+
+Main idea. Find the pivot, then predict topic + point before reading the choices.
+
+```check
+rw-0132
+```
+
+## Your turn: hard
+
+A dense argument. Notice what the author grants, then what comes after *but*.
+
+```check
+rw-0129
+```
+
+## Recap
+
+- Main idea or detail? Read the question first.
+- Predict before the choices: topic + point. For a story: who + what happens + what it shows.
+- Find the pivot (*but*, *however*, *yet*): the point usually comes after it.
+- Main idea: same size as the text, both halves kept. Detail: point to the line.
+- Check every word: in the text, same strength, right person and time.
+- Name the flaw in each wrong choice: too narrow, too broad, half right, never said, old view.

@@ -3,156 +3,163 @@ title: Inference from Samples and Margin of Error
 skill: inference-sample
 domain: problem-solving
 section: math
-summary: Use a random sample to estimate a whole population, read a margin of error as a range of believable values, and know what a bigger sample changes.
-minutes: 10
+summary: Scale a random sample up to a whole population and read a margin of error as a range of plausible values.
 ---
 
-> **Key idea:** A margin of error turns one number into a range of believable values for the population. It describes the group's average or share, never every single member.
+## Spot a sample question
 
-## What this question looks like
+A paragraph describes a survey or study of a **sample**: a smaller group chosen, usually at random, from a bigger group, the **population**. It gives a result, like a percent, a proportion or a mean, and sometimes a **margin of error**.
 
-A short paragraph describes a survey or study of a **sample**, a smaller group picked from a bigger one. Then you're asked one of these:
+There's little or no math. The work is knowing what the sample can tell you about the population.
 
-- "Based on the sample, which is the best estimate of the number of [people/items] in the whole [town/school/factory] that…?"
-- "The estimate has an associated margin of error of 3%. Which of the following is the most appropriate conclusion?"
-- "Which of the following values is plausible for…?" or "…is NOT plausible?"
-- "Which change would most likely decrease the margin of error?"
+```quiz
+A researcher selects 200 of a city's 9,000 bus riders at random and asks how long they usually wait for a bus. What is the population?
+- The 200 riders who were asked :: That's the sample: the people actually asked.
+* All 9,000 bus riders in the city
+- Everyone who lives in the city :: People who don't ride the bus had no chance of being picked.
+- All bus riders in the country :: Only this city's riders could be chosen.
+> The population is the group the sample was chosen from: the city's 9,000 bus riders. The results describe them, and only them.
+```
 
-The calculations are small. Most points are lost by reading the conclusion choices too quickly.
+## Scale up to the population
 
-### Words to know
+To estimate a count for the whole population:
 
-- **Population:** the whole group you care about (all 48,000 households in a city).
-- **Sample:** the smaller group that was actually measured (400 of those households).
-- **Random sample:** everyone in the population had a fair chance to be picked. Only a random sample lets you make reliable estimates about the population.
-- **Sample statistic:** a number from the sample, like a sample mean (average) or sample proportion (fraction).
-- **Margin of error:** how far the true population value could plausibly be from the sample's number, just from the luck of who got picked.
+1. **Sample proportion** = number with the trait ÷ sample size.
+2. **Multiply** by the population size, not the sample size.
 
-## The method
+This works because the sample was random, so the population should have about the same share.
 
-There are two kinds of question: scaling up to a best estimate, and reading a margin of error.
+```quiz
+A town has 3,000 households. In a random sample of 80 of them, 12 households own a cat. Based on the sample, what is the best estimate of the number of households in the town that own a cat?
+- 12 :: That's the count in the sample. Scale it up to all 3,000 households.
+* 450
+- 2,550 :: That's the households without a cat: 85% of 3,000.
+- 2,920 :: That's 3,000 − 80, the households that weren't surveyed.
+> Sample proportion: 12/80 = 0.15, so 15% of the sample owns a cat.
+> Scale up: 0.15 × 3,000 = 450 households.
+```
 
-### For "best estimate" questions
+## Build the interval
 
-1. Find the sample proportion: part / sample size.
-2. Multiply it by the **population** size, not the sample size.
-3. Check that the result is sensible: smaller than the population and roughly the right share.
+A **margin of error** says how far the true population value could reasonably be from the sample's estimate. Build the interval:
 
-### For margin-of-error questions
+**estimate − margin** to **estimate + margin**
 
-1. Build the interval: (estimate − margin) to (estimate + margin). Write both ends down before reading the choices.
-2. Note what the interval is about: the population mean or proportion, for the population that was sampled.
-3. Pick the choice that says the true value is *plausibly* or *likely* inside that interval.
-4. For a claim like "a majority" or "more than 40%", check the whole interval. The claim holds only if every value in the interval agrees with it.
+Values inside are **plausible** (reasonable to believe). A margin in percent is added and subtracted directly: 40% with a margin of error of 3% gives 37% to 43%.
 
-## Rules and formulas you need
+```quiz
+A random sample estimates that 62% of a town's voters support a new park, with an associated margin of error of 4%. Which range gives plausible values for the percent of all the town's voters who support the park?
+- 62% to 66% :: The margin goes both ways. Subtract it too.
+- 59.52% to 64.48% :: You took 4% of 62. Add and subtract 4 percentage points directly.
+* 58% to 66%
+> 62 − 4 = 58 and 62 + 4 = 66. Any value from 58% to 66% is plausible for the whole town.
+```
 
-You need three calculations and a few facts about what changes the margin.
+## It's about the population's mean
 
-### Estimates and intervals
+The interval is about one number: the **mean or proportion of the whole population**. It is not about:
 
-| Fact | Example |
-|---|---|
-| Estimate = sample proportion × population size | 34% of the sample → about 34% of the population |
-| Interval = estimate ± margin | 52% ± 3% → 49% to 55% |
-| Margin = half the interval's width | 0.31 to 0.39 → margin 0.04, estimate 0.35 (the midpoint) |
+- **each person:** individuals can be far outside it
+- **the sample:** its mean is already known exactly
+- **a group that wasn't sampled:** other schools, cities or countries
 
-### What changes the margin of error
+```quiz
+In a random sample of 120 members of a gym, the mean workout time last week was 4.2 hours, with an associated margin of error of 0.6 hours. Which conclusion is most appropriate?
+- Every member of the gym worked out between 3.6 and 4.8 hours last week. :: The interval is about the mean. Many members worked out far more or less.
+- The mean for the 120 members in the sample could be anywhere from 3.6 to 4.8 hours. :: The sample mean isn't uncertain: it's exactly 4.2. The interval is for the population.
+* It is plausible that the mean for all members of the gym is between 3.6 and 4.8 hours.
+- It is plausible that the mean for all gym members in the country is between 3.6 and 4.8 hours. :: Only this gym's members could be chosen.
+> Interval: 4.2 − 0.6 = 3.6 to 4.2 + 0.6 = 4.8.
+> The sample came from this gym, so the interval gives plausible values for the mean of all its members. Only one choice names the right number (the mean) for the right group (all of this gym's members).
+```
 
-- A larger random sample gives a smaller margin of error.
-- A smaller margin means a narrower interval, so a more precise estimate. Smaller is better.
-- A higher confidence level gives a larger margin. Being more sure costs you a wider range.
-- The margin shrinks with the **square root** of the sample size: to cut it roughly in half, you need about 4 times as many people, not 2 times.
+## Careful words win
 
-The SAT mostly tests the direction (bigger sample, smaller margin), so you won't need a margin-of-error formula.
+A sample gives an **estimate**, never a certainty. Right answers use words like **plausible**, **likely** and **estimate**. Wrong answers often say **exactly**, **must** or **impossible**.
 
-## Worked examples
+- Values outside the interval are unlikely, not impossible.
+- Another random sample would most likely give a slightly different result.
 
-### Example 1: Best estimate for a population
+```quiz
+A random sample of a city's adults estimates that 30% of them bike to work, with an associated margin of error of 3%. Which statement is best supported?
+- Exactly 30% of the city's adults bike to work. :: 30% is only an estimate. Plausible values run from 27% to 33%.
+- It is impossible that fewer than 27% of the city's adults bike to work. :: Values outside the interval are unlikely, not impossible.
+- Another random sample of the city's adults would also find 30%. :: A new random sample would most likely give a slightly different percent.
+* It is plausible that 32% of the city's adults bike to work.
+> The interval is 27% to 33%. 32% is inside it, so it's plausible. The other choices claim a certainty a sample can't give.
+```
 
-A city has 48,000 households. A random sample of 400 households in the city was surveyed, and 136 of them reported owning a dog. Based on the survey, which of the following is the best estimate of the number of households in the city that own a dog?
+## Bigger sample, smaller margin
 
-- (A) 120
-- (B) 136
-- (C) 16,320
-- (D) 31,680
+With the same method, a **larger random sample** gives a **smaller margin of error**: a narrower, more precise interval.
 
-**Solution**
+- It isn't proportional: about **4 times** the sample halves the margin. Doubling doesn't.
+- The margin covers only random chance. It doesn't fix a biased sample, like volunteers.
 
-Sample proportion: 136/400 = 0.34. Scale up to the population: 0.34 × 48,000 = 16,320.
+```quiz
+Two groups use the same method to estimate the mean commute time in a city. Group A surveys 300 adults chosen at random, and group B surveys 1,200. Which is most likely true?
+- Group B's margin of error is about one-fourth of group A's. :: 4 times the sample cuts the margin to about half, not a fourth.
+* Group B's margin of error is smaller than group A's.
+- The two margins are about the same, since both samples come from the same city. :: The sample size, not the city, mainly sets the margin.
+- Group B's estimate equals the true mean commute time. :: No sample, however big, guarantees the exact value.
+> Group B's sample is larger, so its margin of error is most likely smaller: with 4 times the people, about half as big.
+```
 
-Why the others are wrong: (A) is 48,000 ÷ 400, which is the scale factor, not a count of dog owners. (B) is just the sample count, not scaled up. (D) is 0.66 × 48,000, the households that do **not** own a dog.
+## Turn the interval into counts
 
-**Answer:** (C)
+To find a plausible **count**, build the percent interval, then multiply both ends by the population size. Any count between the two results is plausible.
 
-### Example 2: What a margin of error really says
+```quiz
+In a random sample of 200 of a town's 8,000 households, 25% have solar panels, with an associated margin of error of 5%. Which is a plausible number of households in the town with solar panels?
+- 50 :: That's 25% of the 200 in the sample. Scale up to all 8,000 households.
+- 1,500 :: The interval starts at 20% of 8,000 = 1,600. 1,500 is below it.
+* 2,200
+- 2,500 :: The interval ends at 30% of 8,000 = 2,400. 2,500 is above it.
+> Interval: 20% to 30%. Counts: 0.20 × 8,000 = 1,600 and 0.30 × 8,000 = 2,400. Only 2,200 is between them.
+```
 
-A researcher selected 150 members of a large running club at random and recorded how far each one ran in one week. The sample mean was 18.4 miles, with an associated margin of error of 1.2 miles. Which of the following is the most appropriate conclusion?
+## The trap: an interval across 50%
 
-- (A) Every member of the running club ran between 17.2 and 19.6 miles that week.
-- (B) The mean distance run that week by all members of the running club was exactly 18.4 miles.
-- (C) It is plausible that the mean distance run that week by all members of the running club is between 17.2 and 19.6 miles.
-- (D) It is plausible that the mean weekly distance for all adult runners in the country is between 17.2 and 19.6 miles.
+> **Trap:** A claim like "a majority" needs the **whole interval** above 50%. If the interval crosses the line, neither side is shown. Same for two groups: if their intervals overlap, you can't say which true value is higher.
 
-**Solution**
+```quiz
+A random sample of a state's voters finds that 52% support a new law, with an associated margin of error of 3%. Which conclusion is best supported?
+- A majority of the state's voters support the law. :: The trap. 49% is still plausible, so the data doesn't show a majority.
+* It is plausible that between 49% and 55% of the state's voters support the law.
+- Fewer than half of the state's voters support the law. :: Most of the interval is above 50%. This isn't shown either.
+> 52 − 3 = 49 and 52 + 3 = 55. Values below and above 50% are both plausible, so the data can't settle "majority". The interval itself is the safe conclusion.
+```
 
-Interval: 18.4 − 1.2 = 17.2 and 18.4 + 1.2 = 19.6. The sample came from the running club, so the interval is about the **mean** for **club members**. Choice (C) says exactly that, using "plausible".
+## Your turn: easy
 
-Why the others are wrong: (A) talks about every individual. The interval is about the average, and plenty of members could run 5 or 40 miles. (B) says "exactly". A sample only gives an estimate. (D) jumps to all runners in the country, a group that was never sampled.
+Find the sample proportion, then multiply by the population size.
 
-**Answer:** (C)
+```check
+m-1505
+```
 
-### Example 3: Can you claim a majority?
+## Your turn: medium
 
-A random sample of likely voters in a town was asked about a plan to build a new library. Of those surveyed, 53% supported the plan. The margin of error for this estimate is 4 percentage points. Which conclusion is best supported by the survey?
+Build the interval. Then ask what each choice is about: the population's mean, each item, or the sample?
 
-- (A) A majority of the town's likely voters support the plan.
-- (B) Fewer than half of the town's likely voters support the plan.
-- (C) Exactly 53% of the town's likely voters support the plan.
-- (D) It is plausible that between 49% and 57% of the town's likely voters support the plan.
+```check
+m-1238
+```
 
-**Solution**
+## Your turn: hard
 
-Interval: 53 − 4 = 49 and 53 + 4 = 57. So the believable range is 49% to 57%.
+Build the percent interval, then turn both ends into counts for the whole population.
 
-Why the others are wrong: (A) needs every value in the interval to be above 50%, but 49% is still plausible, so a majority is not proven. (B) is also not supported, because most of the interval is above 50%. (C) treats the estimate as exact.
+```check
+m-1339
+```
 
-**Answer:** (D)
+## Recap
 
-### Example 4: Effect of sample size
-
-Two students each surveyed a random sample of the 2,000 students at their school about how many hours they sleep on school nights. Priya surveyed 100 students and Marco surveyed 400 students. Both used the same method and the same confidence level. Which statement is most likely true?
-
-- (A) Priya's estimate will have a smaller margin of error, because her sample is easier to measure.
-- (B) The two estimates will have the same margin of error, because both samples come from the same school.
-- (C) Marco's estimate will have a smaller margin of error, because his sample is larger.
-- (D) Marco's sample mean will be exactly equal to the mean for the whole school.
-
-**Solution**
-
-With the same method and confidence level, a larger random sample gives a smaller margin of error. Marco's sample is 4 times bigger, so his margin is likely about half of Priya's.
-
-Why the others are wrong: (A) has the rule backward. (B) ignores sample size, which is what drives the margin of error. (D) says "exactly". Even a big sample only estimates.
-
-**Answer:** (C)
-
-## Traps to avoid
-
-- **Scaling with the wrong number.** Multiply the sample proportion by the population size. Using the sample size, or dividing the wrong way, gives a choice that's waiting for you.
-- **Mean vs. individuals.** An interval for the mean says nothing about each member. "All," "every" or "each" in a choice is almost always wrong.
-- **"Exactly" answers.** A sample never pins the population value down exactly. Look for "plausible," "likely" or "approximately."
-- **Claiming a direction the interval doesn't support.** If the interval crosses the line (like 50%), neither side is proven.
-- **Generalizing to an unsampled group.** A sample from one club, school or city speaks only for that club, school or city.
-- **Thinking a bigger margin is better.** A bigger margin means a less precise estimate.
-- **Thinking a big sample fixes a bad sample.** The margin of error doesn't cover bias. A huge online poll of volunteers can still be biased; random selection matters more than size.
-- **Mixing up width and margin.** The full width of the interval is twice the margin of error.
-- **Comparing overlapping intervals.** If two groups' intervals overlap, you can't confidently say one group's true value is higher.
-
-## Quick checklist
-
-- Was the sample random? From which population?
-- For estimates: proportion × population size.
-- For margins: write both ends of the interval before reading the choices.
-- Is the interval about a mean or proportion, not individuals?
-- Does the claim hold for the whole interval?
-- Cross out "exactly," "all," "every" and any group that wasn't sampled.
+- The population is the group the random sample was drawn from.
+- Count: sample proportion × population size.
+- Interval: estimate − margin to estimate + margin.
+- It's about the population's mean or proportion: not each person, not the sample.
+- Pick "plausible" over "exactly", "must" and "every".
+- Bigger random sample, smaller margin (4 times the sample, about half the margin).

@@ -3,191 +3,187 @@ title: Right Triangles and Trigonometry
 skill: right-triangles-trig
 domain: geometry-trig
 section: math
-summary: Find any missing side or trig ratio in a right triangle using the Pythagorean theorem, special triangles, SOH-CAH-TOA and the sin–cos rule.
-minutes: 10
+summary: Find any side or ratio in a right triangle with triples, SOH-CAH-TOA, special triangles and the sine–cosine swap.
 ---
 
-> **Key idea:** Label the sides from the angle the question asks about, then use SOH-CAH-TOA. In a right triangle, the sine of one acute angle is the cosine of the other.
+## Spot the right triangle
 
-## What this question looks like
+These questions show or describe a triangle with a 90° angle. Often it hides: a rectangle's diagonal, a ladder against a wall. Sketch it and mark the right angle.
 
-These questions almost always have a right triangle in them, either drawn or described in words ("triangle ABC has a right angle at C"). Typical stems:
+The Pythagorean theorem, a² + b² = c², is on the reference sheet. **c is the hypotenuse**, the side across from the right angle and always the longest.
 
-- "What is the value of sin A?" or "What is tan R?" when some side lengths are given.
-- "In right triangle PQR, cos P = 5/13. What is sin R?" (one ratio given, another asked).
-- "sin(3x + 4)° = cos(5x − 10)°. What is x?" (a sine and a cosine set equal).
-- A triangle with a 30°, 45° or 60° angle and one side given, asking for another side, a perimeter or an area.
-- Two similar right triangles, where a ratio from one is used in the other.
-- Now and then, a conversion between degrees and radians.
+Before doing arithmetic, look for a **triple** (or a multiple of one): 3-4-5, 5-12-13, 8-15-17, 7-24-25.
 
-Expect about 2–4 of these per test. Most are medium difficulty, and the hard ones are usually two easy steps chained together.
+```quiz
+A 26-foot ladder leans against a wall. Its foot is on level ground, 10 feet from the wall. How high up the wall does the ladder reach?
+* 24 feet
+- 16 feet :: You subtracted the lengths, 26 − 10. Subtract the squares instead.
+- √776 feet :: You added 26² and 10². The ladder is the hypotenuse c, so subtract: 26² − 10².
+- 576 feet :: That's the height squared. Take the square root.
+> The wall and the ground make the right angle, so the ladder is the hypotenuse: 26² − 10² = 676 − 100 = 576, and √576 = 24.
+> Faster: 10 and 26 are 2 × 5 and 2 × 13. That's the 5-12-13 triple doubled, so the height is 2 × 12 = 24.
+```
 
-## The method
+## Name the sides from your angle
 
-1. **Sketch and label.** If no figure is given, draw one. Mark the right angle and every side or angle you know.
-2. **Pick your reference angle.** Circle the angle the question asks about, and label the three sides from that angle (see below).
-3. **Fill in missing sides.** Use a Pythagorean triple you recognize, a special triangle, or `a² + b² = c²`.
-4. **Choose the tool.** A ratio asked? Use SOH-CAH-TOA. A sine and a cosine set equal? Use the 90° rule. A 30°, 45° or 60° angle? Use the special-triangle ratios.
-5. **Answer the exact question.** A side, a ratio, a perimeter or an area? For angle A or angle B?
+Trig ratios start from one of the two **acute** angles (the ones smaller than 90°). The two sides that form the right angle are the **legs**. Stand at your angle and name the sides:
 
-The three sides, named from your reference angle:
-
-- **Hypotenuse:** across from the right angle. It's always the longest side.
+- **Hypotenuse:** across from the right angle.
 - **Opposite:** the leg across from your angle.
-- **Adjacent:** the leg touching your angle (the one that isn't the hypotenuse).
+- **Adjacent:** the leg that touches your angle.
 
-> **Remember:** A trig ratio depends only on the angle, not on the triangle's size. If tan P = 7/24, you can simply *pretend* the legs are 7 and 24. Any real triangle with that angle is just a scaled copy.
+When the question moves to the other acute angle, opposite and adjacent **trade places**. Relabel every time.
 
-## Rules and formulas you need
+```quiz
+In right triangle ABC, angle C is the right angle. Which side is adjacent to angle B?
+- AC :: AC doesn't touch angle B. It's across from B, so it's the opposite side.
+* BC
+- AB :: AB is across from the right angle, so it's the hypotenuse.
+> Angle B touches two sides, AB and BC. AB is the hypotenuse, so the adjacent leg is BC.
+```
 
-The reference sheet (the formula button in the test app) gives the Pythagorean theorem, both special right triangles, and the facts that a circle has 360° or 2π radians and a triangle's angles add to 180°. Everything marked "No" below you must know cold.
+## SOH-CAH-TOA
 
-| Fact | Formula | On reference sheet? |
-|---|---|---|
-| Pythagorean theorem | `a² + b² = c²` | Yes |
-| 45-45-90 triangle | x : x : x√2 | Yes |
-| 30-60-90 triangle | x : x√3 : 2x | Yes |
-| SOH | sin θ = opposite/hypotenuse | No |
-| CAH | cos θ = adjacent/hypotenuse | No |
-| TOA | tan θ = opposite/adjacent | No |
-| 90° rule | sin x° = cos(90 − x)° | No |
-| Radians | 180° = π radians | Partly (360° = 2π is) |
+These three ratios are **not** on the reference sheet. Learn them as SOH-CAH-TOA:
 
-- In the Pythagorean theorem, c is the hypotenuse.
-- In a 30-60-90 triangle, the shortest side x is across from 30°, the x√3 side is across from 60°, and the hypotenuse is exactly double the shortest side.
-- **90° rule:** if sin A = cos B and both angles are acute, then A + B = 90.
-- To convert, multiply degrees by π/180 to get radians.
-
-### Pythagorean triples
-
-Spot these instantly, along with any multiple of them:
-
-| Triple | Common multiples |
+| Ratio | Equals |
 |---|---|
-| 3, 4, 5 | 6-8-10, 9-12-15, 12-16-20 |
-| 5, 12, 13 | 10-24-26 |
-| 8, 15, 17 | 16-30-34 |
-| 7, 24, 25 | 14-48-50 |
+| sin (SOH) | opposite / hypotenuse |
+| cos (CAH) | adjacent / hypotenuse |
+| tan (TOA) | opposite / adjacent |
 
-### Special angle values
+For an acute angle, sine and cosine are always less than 1, because the hypotenuse is the longest side. A sine or cosine above 1 means you divided by a leg instead of the hypotenuse.
 
-These come straight from the special triangles:
+```quiz
+In right triangle PQR, angle Q is the right angle. PQ = 8, QR = 15 and PR = 17. What is sin P?
+* 15/17
+- 8/17 :: That's cos P. PQ touches angle P, so it's the adjacent side, not the opposite.
+- 15/8 :: That's tan P. Sine divides by the hypotenuse, not by a leg.
+- 17/15 :: Upside down. A sine is never above 1, so the hypotenuse goes on the bottom.
+> Stand at P. The side across from it is QR = 15, and the hypotenuse is PR = 17. So sin P = 15/17.
+```
 
-| Angle | sin | cos | tan |
-|---|---|---|---|
-| 30° (π/6) | 1/2 | √3/2 | √3/3 |
-| 45° (π/4) | √2/2 | √2/2 | 1 |
-| 60° (π/3) | √3/2 | 1/2 | √3 |
+## One ratio? Build the triangle
 
-### The two acute angles
+A ratio depends only on the angle, not on the size of the triangle. So when you're given one ratio, **make up a triangle that fits it**. For cos A = 3/5, use adjacent side 3 and hypotenuse 5. Find the third side (4), then read any ratio you need.
 
-In a right triangle, the two acute angles add to 90°. The leg opposite one of them is adjacent to the other, so sin A = cos B and tan A = 1/tan B.
+> **Key idea:** Similar triangles have the same angles, so they have the same ratios. A scale factor or a side of the bigger triangle is often extra information.
 
-> **Tip:** Similar triangles have the same angles, so they have the same trig ratios. If a question gives you a scale factor, area or perimeter for the second triangle, that's often information you don't need.
+```quiz
+Right triangle ABC has its right angle at C, and tan A = 8/15. Triangle DEF is similar to triangle ABC, with D, E and F matching A, B and C. Each side of DEF is 4 times as long. What is sin D?
+* 8/17
+- 8/15 :: That's tan A, the ratio you were given. Sine needs the hypotenuse.
+- 15/17 :: That's cos A: 15 is the leg touching A. Sine uses the opposite leg.
+- 32/17 :: You scaled only the top by 4. Scaling both sides gives 32/68 = 8/17: size never changes a ratio.
+> Build triangle ABC: the leg across from A is 8 and the leg touching A is 15.
+> The hypotenuse is √(64 + 225) = √289 = 17, the 8-15-17 triple.
+> D matches A, so sin D = sin A = opposite/hypotenuse = 8/17. The size of DEF changes nothing.
+```
 
-## Worked examples
+## Two acute angles add to 90°
 
-### Example 1: The sine–cosine swap
+In right triangle ABC with the right angle at C, angles A and B add to 90°. The leg across from A is the leg touching B, so:
 
-For acute angles, `sin((4k + 6)°) = cos((2k + 24)°)`. What is the value of k?
+- sin A = cos B, and cos A = sin B.
+- In general, sin x° = cos(90 − x)°.
+- tan A and tan B are reciprocals, like 3/4 and 4/3.
 
-- (A) 9
-- (B) 10
-- (C) 15
-- (D) 25
+This swap is **not** on the reference sheet.
 
-**Solution**
+> **Trap:** If both angles are acute, sin a° = cos b° means **a + b = 90**. Don't set the angles equal.
 
-A sine equals a cosine when the two angles are complementary, meaning they add to 90°. So set the sum equal to 90:
+```quiz
+Both angles are acute, and sin(3k + 12)° = cos(2k − 2)°. What is the value of k?
+* 16
+- −14 :: You set the angles equal. A sine equals a cosine when the angles add to 90°.
+- 18 :: You dropped the +12 and −2. Add the whole angles: 5k + 10 = 90.
+- 34 :: You used 180. Sine and cosine swap for angles that add to 90°.
+> Add the angles and set the sum to 90: (3k + 12) + (2k − 2) = 90.
+> So 5k + 10 = 90, 5k = 80 and k = 16.
+> Check: 3(16) + 12 = 60° and 2(16) − 2 = 30°. They add to 90°, and sin 60° = cos 30°.
+```
 
-`(4k + 6) + (2k + 24) = 90`
+## Special right triangles
 
-`6k + 30 = 90`, so `6k = 60` and k = 10.
+Both are on the reference sheet. The skill is knowing **which side sits across from which angle**.
 
-Check: the angles are 46° and 44°, which add to 90°. Choice (A) comes from setting the two angles *equal* (that only works for sin = sin). Choice (C) forgets the +6 and +24. Choice (D) uses 180 instead of 90.
+| Triangle | Sides | Hides in |
+|---|---|---|
+| 45°-45°-90° | s, s, s√2 | half a square |
+| 30°-60°-90° | x, x√3, 2x | half an equilateral triangle |
 
-**Answer:** (B)
+In the 30°-60°-90° triangle, the shortest side x is across from 30°, x√3 is across from 60°, and the hypotenuse is 2x (no √3). These give exact values such as sin 30° = 1/2 and cos 30° = √3/2.
 
-### Example 2: One ratio gives you another
+```quiz
+In a 30°-60°-90° triangle, the side across from the 60° angle is 9. How long is the hypotenuse?
+* 6√3
+- 3√3 :: That's x, the shortest side. The hypotenuse is 2x.
+- 18 :: You treated 9 as the shortest side. The side across from 60° is x√3.
+- 9√2 :: That's the 45°-45°-90° rule. Here the hypotenuse is 2x.
+> The side across from 60° is x√3, so x√3 = 9 and x = 9/√3 = 3√3.
+> The hypotenuse is 2x = 6√3, about 10.4. It's longer than 9, as it must be.
+```
 
-In right triangle PQR, angle Q is the right angle and tan P = 7/24. What is cos R?
+## Degrees and radians
 
-- (A) 7/24
-- (B) 7/25
-- (C) 24/25
-- (D) 24/7
+Radians are another unit for angles. The reference sheet says a circle has 360°, or 2π radians, so **180° = π**.
 
-**Solution**
+- Degrees to radians: multiply by π/180. So 60° = π/3.
+- Radians to degrees: multiply by 180/π.
 
-From P, tan P = opposite / adjacent = QR / PQ = 7/24. Pretend QR = 7 and PQ = 24. The hypotenuse PR is 25 (it's the 7-24-25 triple).
+> **Remember:** Before any trig in Desmos, check the angle mode. Open the wrench (graph settings) and pick Degrees. Test it with `sin(30)`: degree mode shows 0.5, radian mode shows about −0.988.
 
-Now switch to angle R. The leg touching R (besides the hypotenuse) is QR = 7. So cos R = adjacent / hypotenuse = 7/25.
+```quiz
+What is 150° in radians?
+* 5π/6
+- 5π/12 :: You used 360° = π. A full circle is 2π, so 180° = π.
+- 6π/5 :: Upside down: that's 180/150. Multiply 150 by π/180.
+> 150 × π/180 = 150π/180. Divide the top and bottom by 30 to get 5π/6.
+```
 
-Shortcut check: P and R are the two acute angles, so cos R = sin P = 7/25. (A) is tan P. (C) is cos P, which you get if you forget to switch the labels to angle R. (D) is tan R.
+## The trap: the wrong angle
 
-**Answer:** (B)
+Many questions name both acute angles, or give facts about one and ask about the other. Every ratio of the wrong angle is waiting among the choices, so label from the angle in the last line.
 
-### Example 3: Two special triangles glued together
+```quiz
+In right triangle ABC, angle C is the right angle. AC = 20, BC = 21 and AB = 29. What is cos B?
+* 21/29
+- 20/29 :: That's cos A, the trap. You labeled from A. From B, the leg touching it is BC = 21.
+- 20/21 :: That's tan B. Cosine divides by the hypotenuse.
+- 21/20 :: That's tan A: two legs, and from the wrong angle.
+> Stand at B. It touches AB, the hypotenuse, and BC, so BC is adjacent. cos B = BC/AB = 21/29.
+> It equals sin A, as the 90° swap says.
+```
 
-In triangle ABC, point D is on side AC and BD is perpendicular to AC. Angle A measures 45°, angle C measures 30°, and BD = 6. What is the length of AC?
+## Your turn: easy
 
-- (A) 12
-- (B) 6 + 2√3
-- (C) 6 + 6√3
-- (D) 12 + 6√2
+Build a triangle from the ratio you're given, then use TOA.
 
-**Solution**
+```check
+m-17140
+```
 
-The height BD splits the big triangle into two right triangles, which meet along BD.
+## Your turn: medium
 
-- Triangle ABD is 45-45-90, so its legs are equal: AD = BD = 6.
-- Triangle CBD is 30-60-90. BD is across from the 30° angle at C, so BD is the short side x = 6. DC is across from the 60° angle, so DC = 6√3.
+A cosine equals a sine. What must the two angles add up to?
 
-AC = AD + DC = `6 + 6√3`.
+```check
+m-1610
+```
 
-(B) comes from dividing by √3 instead of multiplying (6/√3 = 2√3). (D) adds the two slanted sides, AB = 6√2 and BC = 12, instead of the base pieces. (A) treats both pieces as 6.
+## Your turn: hard
 
-**Answer:** (C)
+Build the triangle from the ratio, then relabel from the angle the question asks about.
 
-### Example 4: Similar triangles (student-produced response)
+```check
+m-1890
+```
 
-Right triangles ABC and DEF are similar, with angle C corresponding to angle F (both right angles), A corresponding to D, and B corresponding to E. In triangle ABC, AC = 36 and AB = 39. The longest side of triangle DEF is 13. What is the value of tan E?
+## Recap
 
-**Solution**
-
-Matching angles in similar triangles have equal trig ratios, so tan E = tan B. The size of DEF doesn't matter.
-
-Find the missing side of ABC: `BC = √(39² − 36²) = √(1521 − 1296) = √225 = 15`. (It's the 5-12-13 triple times 3.)
-
-From angle B, the opposite leg is AC = 36 and the adjacent leg is BC = 15. So tan B = 36/15 = 12/5.
-
-Double check in DEF: the scale is 13/39 = 1/3, so DF = 12 and EF = 5, and tan E = DF/EF = 12/5. Same answer.
-
-**Answer:** 12/5 (2.4 is also accepted)
-
-## Traps to avoid
-
-- **Labeling from the wrong angle.** "Opposite" and "adjacent" change when the angle changes. Relabel every time the question switches from A to B.
-- **Writing sin A = sin B.** For the two acute angles, the true link is sin A = cos B. Sines are equal only when the angles are equal.
-- **Setting the angles equal in a sin = cos equation.** The angles must *add* to 90, not match.
-- **Putting √3 on the wrong side.** In a 30-60-90 triangle, √3 goes across from 60°, and the side across from 30° is the shortest.
-- **Using the hypotenuse in tangent.** Tangent uses the two legs. Only sine and cosine use the hypotenuse.
-- **Giving the side when they want the ratio** (or the reverse). Reread the last line.
-- **Calculator in the wrong mode.** sin(30) is 0.5 in degrees but about −0.99 in radians, and the calculator gives no warning.
-- **Forgetting the square root.** `a² + b² = c²` gives c², so finish with √.
-
-## Desmos shortcut
-
-- **Check the angle mode first.** Click the wrench (settings) and pick Degrees or Radians to match the question. A ° symbol means degrees; π or the word "radians" means radians. Quick test: type `sin(30)`. If you see 0.5, you're in degrees.
-- **Let Desmos do the square roots.** Type `sqrt(39^2 - 36^2)` instead of doing the arithmetic by hand.
-- **Graph a sin = cos equation.** In degree mode, type `y = sin(4x + 6)` and `y = cos(2x + 24)`, then click where they cross. There are many crossings, so pick the one where both angles are between 0° and 90°. The 90° rule by hand is usually faster, so use this as a check.
-- **Don't over-use it.** For most right-triangle questions, a quick sketch and SOH-CAH-TOA beat the calculator.
-
-## Quick checklist
-
-- Did I draw the triangle and mark the right angle?
-- Did I label opposite and adjacent from the angle the question asks about?
-- Can I see a triple (3-4-5, 5-12-13, 8-15-17, 7-24-25) or a special triangle?
-- A sine equal to a cosine? Do the two angles add to 90?
-- Is Desmos in the right mode (degrees or radians)?
-- Did I answer the exact thing asked (side, ratio, perimeter, area)?
+- Sketch the triangle and mark the right angle. The hypotenuse is across from it.
+- Label opposite and adjacent from the angle the question names, and relabel when it switches.
+- Missing side: look for a triple, then use a² + b² = c².
+- One ratio given: build a triangle with those sides. Size never changes a ratio.
+- Acute angles with sin a° = cos b°: a + b = 90, not a = b.
+- 30°-60°-90°: x across from 30°, x√3 across from 60°, 2x across from 90°.

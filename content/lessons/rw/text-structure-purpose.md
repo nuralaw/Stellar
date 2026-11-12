@@ -3,184 +3,183 @@ title: Text Structure and Purpose
 skill: text-structure-purpose
 domain: craft-structure
 section: rw
-summary: Work out what a whole text, or one sentence in it, is doing, and pick the choice that names that job with nothing extra or wrong.
-minutes: 12
+summary: Name what a text, or one part of it, is doing, then pick the choice whose verb and object both fit exactly.
 ---
 
-> **Key idea:** These questions ask **why** the author wrote something or **how** it's built, not what it says. A choice can repeat true facts from the text and still be wrong because it names the wrong job.
+## What is the text doing?
 
-## What this question looks like
+These questions ask about a text's **job**, not its facts. They come in three forms:
 
-You get one short text (science, history, fiction or a poem) and one question about the text's **job**, not its facts. The question comes in one of three forms:
+- **Purpose:** "Which choice best states the main purpose of the text?"
+- **Structure:** "Which choice best describes the overall structure of the text?"
+- **Function:** "…the function of the underlined sentence in the text as a whole?"
 
-- **Main purpose:** "Which choice best states the main purpose of the text?"
-- **Function of a part:** "Which choice best describes the function of the underlined sentence in the text as a whole?"
-- **Overall structure:** "Which choice best describes the overall structure of the text?"
+The choices usually start with verbs (*To argue…*, *It introduces…*). A choice can state true facts and still name the wrong job.
 
-The choices give it away: they start with verbs (*To argue…*, *It introduces…*) or describe the text in parts (*"It presents a claim, then…"*).
-
-## The method
-
-Label what each sentence does, predict the job, then test every part of each choice.
-
-1. **Read the question first.** Decide the scope: the whole text (purpose or structure) or one underlined sentence (function).
-2. **Read the whole text, even for an underlined sentence.** A sentence's job depends on what comes before and after it.
-3. **Label each sentence in two or three words:** *background*, *common view*, *claim*, *example*, *contrast*, *result*, *limit*, *conclusion*. Pivot words (*however*, *but*, *yet*, *for example*, *as a result*, *therefore*) show where the jobs change.
-4. **Predict in your own words.** Use a verb plus an object: "to show that dandelions help bees." For structure questions, chain the labels: "old belief → study against it → caution."
-5. **Check each choice piece by piece.** Is the verb right? Is the object (what the verb acts on) right? In a two- or three-part choice, is every part true, in order?
-6. **Pick the choice with nothing wrong in it.** That's often the plain, modest one, not the most impressive-sounding.
-
-## Rules and formulas you need
-
-### Function verbs and what they really mean
-
-| Verb | Plain meaning |
-|---|---|
-| introduce | brings up a topic for the first time |
-| provide context / background | gives facts you need before the main point |
-| describe | tells what something is like, without arguing |
-| explain | tells why or how something happens |
-| illustrate / exemplify | gives a specific example of a general point |
-| support | gives evidence that a claim is true |
-| emphasize | stresses a point so it stands out |
-| contrast | shows how two things differ |
-| concede | admits a point for the other side before pushing back |
-| qualify | limits a claim: "true, but only in some cases" |
-| challenge / question | casts doubt on an idea |
-| refute / dispute | says an idea is wrong, with reasons (stronger than *challenge*) |
-| propose | suggests a solution or plan |
-| speculate / hypothesize | offers a possible, unproven explanation |
-| conclude | states the final takeaway the text builds toward |
-
-### Purpose is not the same as main idea
-
-The **main idea** is *what* the text says ("dandelions help bees"). The purpose is *what the author does* with it ("to argue that gardeners should leave dandelions alone"). Get the verb right first.
-
-### Common text structures
-
-| Pattern | What it looks like |
-|---|---|
-| Common view → challenge | "Many people believed X. But new research shows Y." |
-| Claim → evidence | A statement, then a study or example backing it |
-| Observation → explanation | A puzzling fact, then a possible reason |
-| Problem → solution | An issue, then a proposed fix |
-| Finding → limitation | A result, then "however, the sample was small…" |
-| Scene → feeling (fiction) | Concrete details that reveal a character's emotion |
-
-### Match the strength of the verb
-
-The verb in your answer should be exactly as strong as the text. If the text only describes, *argues* or *advocates* goes too far; if it only raises doubts, *refutes* is too strong.
-
-## Worked examples
-
-### Example 1: Main purpose
-
-Many gardeners pull up dandelions as soon as they appear, treating them as nothing more than weeds. But dandelions bloom early in spring, when few other flowers are open, and their pollen and nectar feed bees that have just come out of winter. Botanist Lena Okafor found that lawns where dandelions were left alone in April got nearly twice as many bee visits as lawns that had been cleared. For gardeners who want to help pollinators, then, a few weeks of patience may matter more than planting new flowers.
-
+```quiz
+Many people think goldfish remember things for only a few seconds. In fact, goldfish trained to push a lever for food still remembered the trick months later.
 Which choice best states the main purpose of the text?
+- To explain how to train a goldfish :: The training is only evidence. The text never gives any steps.
+* To correct a common belief about goldfish
+- To compare goldfish with other pets :: No other animals appear. The comparison is invented.
+> Label the two sentences: a common belief, then *In fact*, evidence against it. The job is to correct the belief. The lever detail is true, but it's the evidence, not the purpose.
+```
 
-- (A) To describe the process by which dandelions produce pollen and nectar
-- (B) To compare the number of bees active in spring with the number active in summer
-- (C) To suggest that a plant often treated as a weed can benefit bees, so gardeners may want to leave it alone for a while
-- (D) To criticize botanists for overlooking the role dandelions play in gardens
+## Label each sentence's job
 
-**Solution**
+Read the question first: is it about the **whole text** or **one part**? Then read the whole text anyway and give each sentence a short label: *old view*, *claim*, *example*, *study*, *result*, *limit*, *conclusion*.
 
-Labels: common view (weeds) → *But* they feed early bees → study as evidence → *then*, be patient. Prediction: "dandelions help bees, so don't pull them right away."
+On the test, the part you're asked about is underlined. In this lesson's quizzes, it's in **bold**.
 
-- (A) The text never explains *how* pollen is made.
-- (B) Summer is never mentioned.
-- (C) matches every part: weed → helps bees → leave it alone.
-- (D) Wrong target. Gardeners pull dandelions; a botanist supplies the evidence.
+```quiz
+Honeybees can count, at least up to four. **In one study, bees learned to fly past three markers and land at the fourth, even after the markers were spaced farther apart.** This suggests the bees were counting markers, not judging distance.
+Which label best fits the bold sentence?
+* Evidence for the claim in the first sentence
+- A second claim that conflicts with the first :: It doesn't conflict. It backs the first sentence up.
+- The text's conclusion :: The conclusion comes next: the bees were counting, not judging distance.
+> Claim → study (bold) → what the study shows. The bold sentence is the evidence that makes the first sentence believable.
+```
 
-**Answer:** (C)
+## Find the turn
 
-### Example 2: Function of an underlined sentence
+Words like *but*, *however*, *yet* and *in fact* mark where a text changes direction. What follows the turn, often the last sentence, carries the author's real point.
 
-*(On the test the sentence is underlined; here it's in bold.)*
+The most common shape: **"People thought X. But new evidence shows Y."** The purpose is about Y.
 
-The novelist Teodora Vance is best known for her sprawling family sagas, which often run past 700 pages. Critics have praised these books for their rich detail but have complained that their plots move slowly. **Vance's final book, however, is a 140-page novella set during a single afternoon.** Several reviewers have argued that this tight focus gives the novella an urgency her longer works lack, which suggests that Vance's talents were well suited to shorter forms.
+```quiz
+For decades, historians treated one town's 1890s cookbooks as simple recipe collections. But historian Dana Okoro noticed that their margins are full of handwritten notes on prices, shortages and who could afford what. Read closely, she argues, the cookbooks are a record of the town's economic life.
+Which choice best states the main purpose of the text?
+- To describe the recipes in some old cookbooks :: That's the old view, before *But*. The text never describes a single recipe.
+- To explain why food prices rose in the 1890s :: Prices appear only as one kind of note. No rise is described or explained.
+* To present a historian's argument that some old cookbooks are richer sources than once believed
+- To criticize historians for ignoring local history :: Too strong, and the wrong target. The text corrects a view; it doesn't attack anyone.
+> Labels: old view (just recipes) → *But* (the turn) → the notes → her claim. The point comes after the turn: the cookbooks hold more than historians thought.
+```
 
-Which choice best describes the function of the underlined sentence in the text as a whole?
+## Predict a verb and object
 
-- (A) It introduces a work that breaks from the pattern described earlier, setting up the reviewers' claim that follows.
-- (B) It provides an example of the slow-moving plots that critics complained about.
-- (C) It explains why Vance's family sagas were praised for their detail.
-- (D) It states the conclusion that reviewers reached about Vance's longer novels.
+Before reading the choices, say the job in your own words.
 
-**Solution**
+| Question | Predict in this shape |
+|---|---|
+| Purpose | "To (verb) (what)" |
+| Structure | "First X, then Y, then Z" |
+| Function | "It (verb)s the idea before or after it" |
 
-Labels: her usual books (long) → their weakness (slow) → *however*, a short book → reviewers' claim about it. The bold sentence breaks the pattern, and the next sentence builds on it.
+For a function question, ask: **what would be lost** if this part were deleted?
 
-- (A) gets both halves right: a departure from the pattern, and a setup for the reviewers' claim.
-- (B) is the opposite. The novella contrasts with the slow books; it isn't an example of them.
-- (C) has the right topic but the wrong verb. The sentence doesn't explain anything about the sagas.
-- (D) It states a fact, not a conclusion, and the reviewers' conclusion is about the novella.
+```quiz
+Biologist Rui Tan found that city sparrows sing at a higher pitch than country sparrows, probably so their songs can be heard over traffic. **Tan studied birds in only two cities, however, both with unusually heavy traffic.** Whether sparrows everywhere make the same shift is still unknown.
+Which choice best describes the function of the bold sentence in the text as a whole?
+- It gives evidence that a higher pitch helps sparrows be heard over traffic. :: Right topic, wrong job. It doesn't support the finding; it warns how far the finding reaches.
+- It presents a result that contradicts Tan's main finding. :: Nothing is contradicted. The sentence says where Tan worked, not what she found.
+- It explains why Tan chose those two cities. :: No reason for her choice is given. That's invented.
+* It points out a limit of the study that the last sentence builds on.
+> Labels: finding → bold: *only two cities, however* → still unknown elsewhere. What's lost without the bold sentence? The last sentence would have no reason behind it.
+> Prediction: "It names a limit of the study." The right choice matches the verb (points out a limit), the object (the study) and the link to the next sentence.
+```
 
-**Answer:** (A)
+## Know what the verbs demand
 
-### Example 3: Overall structure
+The verb carries the answer. These cause the most mistakes:
 
-For years, the standard advice for language classes was to avoid students' native language entirely. Teachers worried that any translation would slow learners down. Linguist Paulo Ferreira tested this idea by teaching two groups of adult beginners the same Portuguese lessons. One group heard only Portuguese, while the other got brief explanations in English whenever they were confused. After ten weeks, the second group scored higher on reading and listening tests. Ferreira cautions, though, that his groups were small and that the effect may shrink for advanced learners.
+| Verb | The text must… |
+|---|---|
+| challenge | say an idea may be wrong |
+| refute | show it's definitely wrong |
+| qualify | limit a claim: true, but only partly |
+| reject | throw a claim out |
+| concede | admit a point against its own view |
+| illustrate | give an example of an idea |
 
+When the text only hedges, pick the milder verb.
+
+```quiz
+Thomas Edison is often credited with inventing the light bulb. In fact, more than twenty inventors had built light bulbs before him. Still, Edison's long-lasting bulb and his power system made electric light practical for homes, so his fame is partly deserved.
+Which choice best states the main purpose of the text?
+- To refute the idea that Edison mattered in the history of electric light :: *Refute* is too strong. The last sentence says his fame is partly deserved.
+- To explain how Edison's power system worked :: The power system is mentioned once. Nothing explains how it works.
+* To qualify a common claim about Edison by separating inventing the bulb from making it practical
+- To defend Edison against critics of his business methods :: No critics or business methods appear. That's invented.
+> Common claim → *In fact*, others came first → *Still*, he made it practical. The text doesn't accept the claim or throw it out. It narrows it, which is what *qualify* means.
+```
+
+## Every part must be true
+
+Structure choices come in two or three parts. Test each part on its own, and check the **order**. One false part, or parts in the wrong order, sinks the whole choice.
+
+Stories and poems work the same way. Look for the **shift**: from past to present, from what someone expected to what happened, from one mood to another.
+
+```quiz
+Every summer, Marta counted the days until she could leave her grandmother's quiet farm. Now, years later, she stood in her noisy city apartment and found herself missing the creak of the porch swing and the long, empty evenings.
 Which choice best describes the overall structure of the text?
+- It describes a farm, then explains why the grandmother sold it. :: The farm appears, but no sale is ever mentioned. One false part sinks the choice.
+- It shows a character missing a place, then explains why she once wanted to leave it. :: Wrong order: the wish to leave comes first. And the text never explains that wish.
+* It recalls a character's past feeling about a place, then shows how that feeling has changed.
+- It compares farm life with city life, then argues that farms are better. :: The text shows a feeling, not an argument. Nothing claims farms are better.
+> Labels: back then, eager to leave → *Now, years later* (the shift) → missing small things. Past feeling, then a changed feeling. Only one choice gets both parts right, in order.
+```
 
-- (A) It presents a popular teaching method, explains why it works, and urges more teachers to adopt it.
-- (B) It compares two languages, identifies which is easier for adults to learn, and explains why.
-- (C) It describes an experiment, shows that the experiment was badly flawed, and rejects its findings.
-- (D) It describes a widely held belief, reports a study whose results cut against that belief, and notes a limitation of the study.
+## Describe the part, not its neighbor
 
-**Solution**
+For a function question, look hardest at the sentences just **before and after** the bold part. Its job only makes sense next to its neighbors.
 
-Labels: standard advice → reason → study → result against the advice → *though*, a caution.
+A classic wrong answer correctly describes a **different** sentence, often the next one. Check that the choice fits the bold part itself.
 
-- (A) The text doesn't say the method works. The study points the other way.
-- (B) Only one language is learned; nothing is compared.
-- (C) is too strong. Ferreira notes a limit; he doesn't throw out his own results.
-- (D) matches all three parts in order.
+```quiz
+Early maps showed the Vell River running straight to the sea. **In 1820, a surveyor named Ida Holm walked its full length, taking notes as she went.** Her notes revealed that the river loops back on itself twice before reaching the coast.
+Which choice best describes the function of the bold sentence in the text as a whole?
+- It reports the finding that the river loops back on itself. :: That's the next sentence's job. The bold sentence says what Holm did, not what she found.
+* It introduces the work that led to a correction of the early maps.
+- It explains why the early maps were wrong. :: The text never says why the mapmakers erred. It only shows that they did, in the next sentence.
+- It challenges Holm's own earlier records. :: Holm has no earlier records in the text. That's invented.
+> Labels: old maps (straight) → bold: Holm's survey → her finding (loops). The bold sentence is the work that sets up the correction. The finding itself belongs to the next sentence, which makes it the classic wrong-part trap.
+```
 
-**Answer:** (D)
+## The trap: says, not does
 
-### Example 4: Main purpose of a fiction text
+> **Trap:** The most tempting wrong answer gets the content right but names the wrong job, or a job that's too strong. Ask: does the text really *do* this verb, to this object?
 
-Inés had walked past the old bakery on Calle Mayor every morning for twenty years without once going in. Today the windows were papered over, and a sign announced that the shop would close for good on Friday. She stood on the sidewalk longer than she meant to, breathing in the smell of bread she had never tasted, and found herself strangely reluctant to walk on.
+Right answers are usually plain and modest. Wrong ones add a debate, critics or a solution, or use *refute* when the text only raises doubts.
 
+```quiz
+Many bread recipes say dough must rise in a warm place. A test kitchen found that dough left overnight in a refrigerator rose just as well, and most tasters preferred its flavor. The kitchen's bakers note, though, that they tested only one kind of bread.
 Which choice best states the main purpose of the text?
+- To report that dough left in a refrigerator rose as well as dough kept warm :: True, but that's only the middle sentence. It skips the advice being questioned and the limit at the end.
+* To present a finding that challenges common advice, along with a limit of that finding
+- To prove that bread recipes give bakers bad advice :: Too strong. One test of one bread raises doubts; it can't prove the advice wrong.
+> Labels: common advice → test against it → *though*, a limit. The purpose covers all three moves. One wrong choice repeats a true fact but misses the job; the other inflates the job.
+```
 
-- (A) To trace the history of a neighborhood bakery
-- (B) To show a character feeling an unexpected sense of loss over something she had taken for granted
-- (C) To explain why a character never went into a certain shop
-- (D) To criticize a town for letting a local business fail
+## Your turn: easy
 
-**Solution**
+Label the underlined sentence, then see what the next sentence does with it.
 
-In fiction, the purpose is usually to reveal a character or a feeling. Labels: twenty years ignoring the shop → it's closing → she lingers. Prediction: "she's surprisingly sad to lose something she ignored."
+```check
+rw-1270
+```
 
-- (A) No history of the bakery is given.
-- (B) matches the prediction. *Strangely reluctant* and *bread she had never tasted* show loss she didn't expect.
-- (C) The text never says why she didn't go in.
-- (D) Nothing blames the town.
+## Your turn: medium
 
-**Answer:** (B)
+Find the turn. The main purpose usually lives after it.
 
-## Traps to avoid
+```check
+rw-1154
+```
 
-Each trap names a job the text doesn't actually do.
+## Your turn: hard
 
-- **Too narrow.** One detail (a single study, one example) presented as the purpose of the whole text.
-- **Too broad.** A bigger project than the text attempts, like "to trace the history of language teaching" for one study.
-- **Right topic, wrong verb.** The right subject but the wrong job: *explains* when the sentence *contrasts*, or *provides an example of* when it *challenges*.
-- **Right verb, wrong object.** "Supports the claim" is only correct if it's the right claim. Check what the verb acts on.
-- **Half-right.** In a two- or three-part choice, one false part makes the whole choice wrong. Test each part on its own.
-- **Too strong.** *Proves*, *refutes*, *rejects* or *argues* when the text only suggests, notes a limit or describes.
-- **Wrong order.** A structure answer must follow the text's sequence: if the text goes claim then evidence, "evidence then claim" is wrong.
-- **Recycled words.** Reusing the text's vocabulary isn't the same as matching its job.
+Test every part of each choice, in order. One false part sinks it.
 
-## Quick checklist
+```check
+rw-1092
+```
 
-- Did I read the stem first and decide: whole text or one part?
-- Did I read the whole text and label each sentence's job?
-- Did I notice the pivot words (*however*, *but*, *for example*, *therefore*)?
-- Did I predict a verb plus an object before reading the choices?
-- Is every part of my choice true, in the right order?
-- Is my verb as strong as the author's, and no stronger?
+## Recap
+
+- Read the question: whole text or one part?
+- Label each sentence's job and find the turn.
+- Predict a verb and an object before reading the choices.
+- Check the verb's strength: *challenge* isn't *refute*, and *qualify* isn't *reject*.
+- For structure, every part must be true and in the right order.
+- For function, describe the underlined part, not its neighbor.

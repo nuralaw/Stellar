@@ -3,206 +3,197 @@ title: Linear Equations in One Variable
 skill: linear-equations-one-var
 domain: algebra
 section: math
-summary: Solve one-variable linear equations fast, build them from word problems, and tell if an equation has one, no, or infinitely many solutions.
-minutes: 11
+summary: Solve one-variable linear equations, find the exact value asked for, and tell when there is one, no, or infinitely many solutions.
 ---
 
-> **Key idea:** Simplify each side to the form `ax + b` before anything else. If the x-terms cancel, a false leftover (like 1 = 4) means no solution, and a true one (like 0 = 0) means infinitely many.
+## One letter, first power only
 
-## What this question looks like
+The equation has **one unknown letter** (x, t, n…). It is never squared, under a root or in a denominator. That's what *linear* means.
 
-You'll see one variable (usually x, but maybe t, n or p) and no squares or other powers. That's what **linear** means: the variable only appears to the first power. These are some of the most common SAT Math questions, and many sit early in a module.
+The question asks for one of these:
 
-There are four main versions:
+- the value of x
+- an expression, like 2x + 3
+- how many solutions there are
+- a constant, like k
 
-- **Straight solve.** Parentheses, fractions or x on both sides, like `4(x − 1) + 3 = 2x + 9`. You find x, or something built from it, like 3x or x + 5.
-- **Word problem.** A story with a flat fee plus a rate per hour, per item or per mile. You build the equation, then solve it.
-- **How many solutions?** Does the equation have exactly one solution, no solution, or infinitely many?
-- **Find the constant.** A letter like a, k or c stands for a fixed number you don't know yet. Which value gives no solution (or infinitely many)?
+Often it comes as a short story with a fee and a rate.
 
-Many of these are student-produced response questions. There are no choices; you type in your own number.
+```quiz
+Which of these is a linear equation in one variable?
+- x² + 4 = 13 :: x is squared, so this is quadratic, not linear.
+- 2x + y = 7 :: That has two letters, x and y. It's a linear equation in two variables.
+* 3(x − 2) = 5x + 1 :: Right. One letter, and it only appears to the first power.
+- 6/x = 2 :: x sits in a denominator, so this isn't linear.
+> One letter, only to the first power. Parentheses and plain-number fractions are fine.
+```
 
-## The method
+## Solve in four moves
 
-Use this routine on every straight solve and word problem.
+1. **Clear fractions** (next step).
+2. **Distribute.** A minus in front of parentheses flips **every** sign inside: −2(x − 3) = −2x + 6.
+3. **Collect** x-terms on one side, numbers on the other. Keep the x-term positive if you can.
+4. **Divide** by the number in front of x.
 
-1. **Read the last line first.** Find exactly what's wanted: x, 2x, x − 3 or a constant k. Note it on your scratch paper.
-2. **Clear fractions and decimals.** Multiply *every* term on both sides by the lowest common denominator, or by 10 or 100 for decimals.
-3. **Distribute and combine.** Multiply out the parentheses, watching any minus sign in front. Then combine like terms on each side.
-4. **Collect.** Move the x-terms to one side and the plain numbers to the other. Pick the side that keeps the x-coefficient positive, so you track fewer negatives.
-5. **Divide** by the number in front of x.
-6. **Answer the question asked.** If it wants 2x, double your x.
-7. **Check** your answer in the *original* equation, or with Desmos.
+Then check your answer in the original equation.
 
-### How many solutions, or find the constant
+> **Tip:** Messy numbers? Graph each side in Desmos: type `y=3(x-4)+2` on one line and `y=5x-16` on the next. Click the crossing point. Its x-coordinate is the answer.
 
-Don't solve all the way. Simplify each side to the form `ax + b`, then compare the two sides using the table in the next section.
+```quiz
+3(x − 4) + 2 = 5x − 16. What is the value of x?
+* 3
+- 7 :: The 3 multiplies both terms: 3(x − 4) = 3x − 12, not 3x − 4.
+- 13 :: Moving −10 to the other side makes it +10. You kept it as −10.
+- −3 :: Sign slip: −2x = −6 gives x = 3, because a negative divided by a negative is positive.
+> Distribute: 3x − 12 + 2 = 5x − 16, so 3x − 10 = 5x − 16.
+> Collect on the right to keep x positive: −10 + 16 = 5x − 3x, so 6 = 2x and x = 3.
+> Check: 3(3 − 4) + 2 = −1 and 5(3) − 16 = −1. Both sides match.
+```
 
-### Word problems
+## Clear fractions first
 
-First write down what your letter stands for, with units ("h = hours of labor"). The amount multiplied by the variable is the **rate**. The amount that stays the same no matter what is the flat fee or starting value.
+When several terms have fractions, multiply **every term on both sides** by the lowest common denominator (LCD). Whole numbers get multiplied too.
 
-## Rules and formulas you need
+x/2 + x/3 = 5 → multiply by 6 → 3x + 2x = 30 → x = 6.
 
-After you simplify both sides, every linear equation looks like `ax + b = cx + d`. Comparing the pieces tells you how many solutions it has.
+If only x has a fraction, like (2/3)x = 8, multiply by the flipped fraction: x = 8 × 3/2 = 12.
 
-| After simplifying | Solutions | Example |
-|---|---|---|
-| a ≠ c | Exactly one | `3x + 1 = 5x + 1` gives x = 0 |
-| a = c, b ≠ d | None | `3x + 1 = 3x + 4` gives 1 = 4 (false) |
-| a = c, b = d | Infinitely many | `3x + 1 = 3x + 1` gives 0 = 0 (true) |
+```quiz
+(x + 1)/3 − x/4 = 1. What is the value of x?
+* 8
+- −3 :: The 1 on the right gets multiplied by 12 too. You left it as 1.
+- 11 :: 12 × (x + 1)/3 is 4(x + 1) = 4x + 4. You multiplied only the x by 4.
+- −9 :: You swapped the multipliers. 12 ÷ 3 = 4 goes with (x + 1)/3, and 12 ÷ 4 = 3 goes with x/4.
+> The LCD of 3 and 4 is 12. Multiply every term: 4(x + 1) − 3x = 12.
+> Distribute: 4x + 4 − 3x = 12, so x + 4 = 12 and x = 8.
+> Check: 9/3 − 8/4 = 3 − 2 = 1.
+```
 
-- A linear equation can have 0, 1 or infinitely many solutions. It **never** has exactly 2.
-- A minus sign in front of parentheses changes the sign of *every* term inside: `−(2x − 5) = −2x + 5`.
+## Find what they ask, not x
 
-### Finding the constant
+Read the **last line** first. If it asks for 2x + 3 or x + 2, the value of x is usually a wrong choice waiting for you.
 
-- **No solution:** make the x-coefficients equal and check that the constants are different.
-- **Infinitely many:** make the x-coefficients equal *and* the constants equal.
-- **Plug-in shortcut** for infinitely many: the equation is true for every x, so x = 0 gives one condition and x = 1 gives another.
+Often you can skip x completely:
 
-### Word problem phrases
+- **Scale:** 4x + 6 = 30. Divide both sides by 2, and 2x + 3 = 15.
+- **Block:** if a group like (x + 2) appears twice, treat it as one thing. Call it u and solve for u.
 
-| Phrase | Meaning |
+```quiz
+7(x + 2) − 5 = 4(x + 2) + 13. What is the value of x + 2?
+* 6
+- 4 :: That's x. The question asks for x + 2.
+- 8/3 :: Moving −5 across makes it +5: 3u = 13 + 5 = 18. You subtracted instead.
+- 18 :: 3u = 18 means u = 6. You stopped before dividing by 3.
+> Call the block x + 2 "u": 7u − 5 = 4u + 13.
+> Subtract 4u and add 5: 3u = 18, so u = 6. That's x + 2 = 6, and you never needed x.
+```
+
+## Turn the story into an equation
+
+Name your letter first, with units: "s = number of sessions".
+
+| Words | Math |
 |---|---|
-| "flat fee," "initial," "one-time" | constant term (not times x) |
-| "per hour," "each," "for every" | coefficient of x (the rate) |
-| "5 less than x" | x − 5 (not 5 − x) |
-| "the same cost," "equal," "break even" | set the two expressions equal |
+| "per", "each", "every" | rate × the letter |
+| "fee", "starting", "one-time" | a number on its own |
+| "total", "is", "same as" | = |
 
-## Worked examples
+Then solve as usual. An impossible answer, like −4 hours or 2.5 tickets, means you should recheck the setup.
 
-### Example 1: Solve, then answer the real question
+```quiz
+A tutor charges a one-time $30 sign-up fee plus $15 per session. Ana paid $120 in total. How many sessions did she have?
+* 6
+- 3.5 :: You swapped the fee and the rate. The $15 repeats each session, so it multiplies s.
+- 8 :: You left out the $30 fee. Only 120 − 30 = 90 dollars paid for sessions.
+- 10 :: The fee is part of the $120, so subtract it. You added it.
+> Let s = sessions. The $15 repeats, so it multiplies s. The $30 is paid once, so it stands alone: 30 + 15s = 120.
+> Subtract 30: 15s = 90, so s = 6. Check: 30 + 15(6) = 120.
+```
 
-`5(x − 3) − 2x = 4x − 22`
+## Count the solutions
 
-What is the value of 2x?
+Simplify each side to the form ax + b. Then compare the x-coefficients (the numbers in front of x) and the plain numbers:
 
-- (A) −14
-- (B) 7
-- (C) 14
-- (D) 38
+| After simplifying | Solutions |
+|---|---|
+| Different x-coefficients | Exactly one |
+| Same x-coefficient, different numbers | None |
+| Both sides identical | Infinitely many |
 
-**Solution**
+When the x-terms cancel, read what's left. A false statement like 3 = 7 means **none**. A true one like 0 = 0 means **infinitely many**.
 
-The question asks for 2x, not x, so note that first.
+```quiz
+How many solutions does 4(x − 3) + x = 5x − 10 have?
+- Exactly one :: Combine like terms first: 4x + x = 5x. Both sides have 5x, so the x-terms cancel.
+* None
+- Infinitely many :: The x-terms cancel, but −12 = −10 is false. Infinitely many needs a true leftover.
+> Left side: 4x − 12 + x = 5x − 12. The equation is 5x − 12 = 5x − 10.
+> Subtract 5x: −12 = −10. That's false, so no value of x works.
+```
 
-Distribute the 5: `5x − 15 − 2x = 4x − 22`. Combine the x-terms on the left: `3x − 15 = 4x − 22`.
+## Find the missing constant
 
-Keep x positive by moving the 3x to the right and the −22 to the left: `−15 + 22 = 4x − 3x`, which gives 7 = x.
+Sometimes a letter like a, b or k stands for a fixed number you don't know yet.
 
-So 2x = 14. Check in the original equation: the left side is 5(4) − 14 = 6, and the right side is 28 − 22 = 6. They match.
+- **No solution:** make the x-coefficients equal. The plain numbers must be different.
+- **Infinitely many:** make the x-coefficients equal **and** the plain numbers equal.
 
-Why the others are wrong: (B) is x, not 2x. (A) comes from flipping the sign of x by mistake. (D) comes from distributing the 5 to the x but not to the 3 (writing 5x − 3), which gives x = 19.
+Distribute and combine first. A hidden x-term changes the coefficient.
 
-**Answer:** (C)
+```quiz
+2(ax − 3) + 4x = 10x + b. In the equation, a and b are constants, and it has infinitely many solutions. What is the value of a + b?
+* −3
+- −1 :: You missed the + 4x. The x-coefficient on the left is 2a + 4, not 2a.
+- 9 :: 2 × (−3) = −6, so b = −6, not 6.
+- 0 :: The 2 multiplies the −3 too. The left side's number is −6, so b = −6.
+> Simplify the left side: 2ax − 6 + 4x = (2a + 4)x − 6.
+> Infinitely many solutions means both sides match exactly.
+> x-coefficients: 2a + 4 = 10, so a = 3. Plain numbers: b = −6.
+> So a + b = 3 + (−6) = −3.
+```
 
-### Example 2: Two price plans
+## Trap: x = 0 still counts
 
-Studio A charges a one-time fee of $35 plus $18 per hour to rent a practice room. Studio B charges a one-time fee of $15 plus $23 per hour. For how many hours of rental will the two studios charge exactly the same total amount?
+Ending with x = 0 does **not** mean "no solution". No solution only comes from a false statement, like 3 = 7.
 
-**Solution**
+```quiz
+How many solutions does 5x + 3 = 2x + 3 have?
+* Exactly one
+- None :: Trap: x = 0 is a real answer. Check it: 5(0) + 3 = 3 and 2(0) + 3 = 3.
+- Infinitely many :: That needs identical sides. Here the x-coefficients, 5 and 2, are different.
+> Subtract 2x and 3 from both sides: 3x = 0, so x = 0.
+> Different x-coefficients always mean exactly one solution, even when that solution is 0.
+```
 
-Let h = the number of hours. The fees are the constants and the hourly prices are the coefficients:
+## Your turn: easy
 
-- Studio A: `35 + 18h`
-- Studio B: `15 + 23h`
+Name the letter, put the rate on it, and keep the fee on its own.
 
-"Exactly the same total" means set them equal: `35 + 18h = 15 + 23h`.
+```check
+m-0865
+```
 
-Move the smaller h-term over: `35 − 15 = 23h − 18h`, so 20 = 5h, and h = 4.
+## Your turn: medium
 
-Check: Studio A costs 35 + 72 = $107, and Studio B costs 15 + 92 = $107.
+A group appears on both sides. Solve for the group as one block.
 
-**Answer:** 4
+```check
+m-1133
+```
 
-### Example 3: Find the constant for no solution
+## Your turn: hard
 
-`6x − 2(x + 5) = ax + 7`
+Distribute first, then use the no-solution rule.
 
-In the equation above, a is a constant. For what value of a does the equation have no solution?
+```check
+m-0705
+```
 
-- (A) −4
-- (B) 4
-- (C) 6
-- (D) 8
+## Recap
 
-**Solution**
-
-Don't solve. Simplify each side and compare. Left side: `6x − 2x − 10 = 4x − 10`. The equation is now `4x − 10 = ax + 7`.
-
-For no solution, the x-coefficients must match and the constants must differ. The constants are −10 and 7, which are already different. So a = 4.
-
-Check: with a = 4 you get `4x − 10 = 4x + 7`. Subtract 4x and you're left with −10 = 7, which is false. That means no solution.
-
-Why the others are wrong: (C) skips the −2x that comes from distributing. (D) distributes the −2 as +2x. (A) has the wrong sign. With any value other than 4, the x-coefficients differ, so the equation has exactly one solution.
-
-**Answer:** (B)
-
-### Example 4: Two constants, infinitely many solutions
-
-`2(3x + p) − x = qx + 14`
-
-In the equation above, p and q are constants. If the equation has infinitely many solutions, what is the value of p + q?
-
-**Solution**
-
-Simplify the left side: `6x + 2p − x = 5x + 2p`. The equation is now `5x + 2p = qx + 14`.
-
-Infinitely many solutions means both sides are identical:
-
-- x-coefficients: q = 5
-- constants: 2p = 14, so p = 7
-
-So p + q = 7 + 5 = 12.
-
-Second method (plug in): if the equation is true for every x, then at x = 0 it reads 2p = 14, so p = 7. At x = 1 it reads `2(3 + 7) − 1 = q + 14`, so 19 = q + 14 and q = 5. Same result.
-
-**Answer:** 12
-
-## Traps to avoid
-
-- **Answering x when they asked for something else.** The test often asks for 2x, x + 4 or 1/x and puts the value of x among the choices. Re-read the last line.
-- **Dropping a negative when distributing.** `10 − 3(x − 2)` is `10 − 3x + 6`, not `10 − 3x − 6`. Many wrong choices come from this one slip.
-- **Clearing only some of the fractions.** *Every* term gets multiplied by the common denominator, including whole numbers with no fraction.
-- **Mixing up no solution and infinitely many.** Both start with the x-terms canceling. Read the leftover statement before you pick.
-- **Calling x = 0 "no solution."** If you end up with 4x = 0, then x = 0 is one perfectly good solution.
-- **Comparing coefficients too early.** In Example 3, the 6x in front isn't the coefficient that matters. Combine like terms first, then compare.
-- **Swapping fee and rate.** In "$35 plus $18 per hour," the 18 goes with the variable. `35h + 18` is a common trap answer.
-- **Keeping an impossible answer.** Negative hours or a negative number of tickets usually means a sign error.
-
-## Desmos shortcut
-
-Desmos is best for checking your work and for messy numbers. For simple equations, two lines of algebra are often faster, and for find-the-constant questions, comparing coefficients by hand is faster and exact.
-
-### Solve by typing the equation
-
-- Type the whole equation on one line, for example `5(x-3)-2x=4x-22`.
-- Desmos draws a vertical line at the solution (here x = 7). Read its x-value off the grid; if clicking the line shows no label, graph each side instead (below).
-- If the variable isn't x (say t), retype it with x. Otherwise Desmos offers to make t a slider.
-- No line showing? Zoom out. The answer might be off-screen.
-
-### Graph each side to count solutions
-
-- Line 1: `y=5(x-3)-2x`. Line 2: `y=4x-22`.
-- Click the point where they cross. Its x-coordinate is the solution.
-- Parallel lines that never cross mean no solution.
-- See only one line? The two graphs may sit on top of each other (infinitely many). Click the colored circle next to one line to hide it and check.
-- Lines with very close slopes can *look* parallel. For number-of-solutions questions, confirm by comparing coefficients.
-
-### Check an answer
-
-Type each side with your number in place of x, for example `5(7-3)-2(7)` and `4(7)-22`. If both show the same value, you're right.
-
-### Slider for constants (backup only)
-
-Type `y=4x-10` and `y=ax+7` and add a slider for a. The lines turn parallel at a = 4, but reading the coefficients is faster and exact.
-
-## Quick checklist
-
-- What exactly does the question ask for: x, an expression, or a constant?
-- Did I clear *all* fractions and distribute every negative sign?
-- Did I combine like terms on each side before comparing coefficients?
-- Did the x-terms cancel? If so, is the leftover false (no solution) or true (infinitely many)?
-- In a word problem, is the rate attached to the variable and the flat fee left alone?
-- Did I check my answer in the original equation or in Desmos?
+- Read the last line: do they want x, an expression, a count or a constant?
+- Clear fractions by multiplying every term, whole numbers too.
+- A minus in front of parentheses flips every sign inside.
+- Want an expression? Scale the equation or solve for the repeated block.
+- Count solutions by simplifying both sides to ax + b and comparing.
+- If the x-terms cancel: a false leftover means none, a true one means infinitely many.

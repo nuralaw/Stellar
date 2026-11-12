@@ -3,175 +3,188 @@ title: Area and Volume
 skill: area-volume
 domain: geometry-trig
 section: math
-summary: Pick the right area or volume formula, solve it forward or backward, and know how area and volume change when a shape is scaled.
-minutes: 10
+summary: Pick the right formula, work backward from an area or volume to a length, and scale shapes with k, k² and k³.
 ---
 
-> **Key idea:** Name the shape, write its formula, then plug in. When every length is multiplied by k, area is multiplied by k² and volume by k³.
+## Name the shape and the quantity
 
-## What this question looks like
+These questions measure a shape, often a real object like a tank or a can. Most fit one of four setups:
 
-These questions ask you to measure a shape: the area or perimeter of a flat figure, or the volume or surface area of a solid. Most come in one of four setups:
+- **Plug in:** lengths given, find the area or volume.
+- **Work backward:** area or volume given, find a length.
+- **Shaded or combined shapes:** add pieces or subtract a cutout.
+- **Scaling:** every length is multiplied by the same number.
 
-- **Plug in:** "A cone has radius 4 and height 9. What is its volume?" Pick the formula and calculate.
-- **Work backward:** you're given the area or volume and asked for a missing length, like a radius, height or side.
-- **Composite shapes:** a rectangle with a semicircle on one end, a box with a hole drilled through it, a cylinder topped by a half-sphere.
-- **Scaling:** "Every edge of the cube is tripled" or "the radius increases by 20%." You find how the area or volume changes, often with no actual lengths.
+Before any math, name the shape and the exact quantity: **area** (flat space inside), **perimeter** (distance around), **volume** (space inside a solid) or **surface area** (total area of its outside).
 
-Real-world stories about tanks, pools, gardens, boxes and cans are common. Under the story, it's always one of these four setups.
+```quiz
+A company wants to know how much cardboard it takes to make one closed box. Which quantity does it need?
+- The volume of the box :: Volume is how much the box holds, not how much material wraps it.
+* The surface area of the box :: Right. The cardboard covers every outside face, so you add the areas of all six faces.
+- The perimeter of the box's bottom :: Perimeter is a length around one flat face, not the material for the whole box.
+> Material that covers or wraps an object is surface area. What fits inside is volume.
+```
 
-## The method
+## Open the reference sheet
 
-1. **Name the shape and the quantity.** Write it down: "cylinder, volume" or "rectangle + semicircle, perimeter."
-2. **Write the formula before plugging in.** Open the reference sheet if you need it (the formula icon at the top of the screen in both Math modules).
-3. **Use the radius.** If you're given a diameter, halve it before it goes into any formula.
-4. **Substitute, then solve.** For backward problems, plug in first, then isolate the unknown. Keep π as a letter if the choices use it, since it often cancels.
-5. **Composite shape?** Add the pieces or subtract the cutouts, one piece at a time. Write each result down.
-6. **Scaling?** Find the length factor k first. Area changes by k² and volume by k³, so you don't need the actual dimensions.
-7. **Reread the last line.** Diameter or radius? The total, or only the shaded part? Answer that exact thing.
+The **Reference** button at the top of the screen opens these formulas any time:
 
-> **Tip:** Let the built-in Desmos calculator do the arithmetic. Type the whole expression at once, like `(1/3)π(4)^2(9)`, instead of in pieces, so you make fewer slips.
+| Shape | Formula |
+|---|---|
+| Rectangle, triangle | A = ℓw, A = ½bh |
+| Circle | A = πr², circumference 2πr |
+| Box, cylinder | V = ℓwh, V = πr²h |
+| Sphere | V = (4/3)πr³ |
+| Cone, pyramid | V = (1/3)πr²h, V = (1/3)ℓwh |
 
-## Rules and formulas you need
+Not on it: perimeter, squares and cubes (s², s³), surface area, and **volume = base area × height** for any prism. A cone or pyramid holds **one third** of the cylinder or box with the same base and height.
 
-The reference sheet gives the basic formulas, but not all of them. Know which ones are missing so you don't waste time looking.
+```quiz
+A cone and a cylinder have the same radius and the same height. The cylinder holds 600 cubic centimeters of water. How much does the cone hold?
+- 600 cm³ :: Same base and height doesn't mean same volume. The cone's formula has an extra 1/3.
+- 300 cm³ :: A cone isn't half a cylinder. Compare the sheet formulas: the cone has 1/3 in front.
+* 200 cm³ :: Right. (1/3)πr²h is one third of πr²h, so the cone holds 600 ÷ 3.
+- 1,800 cm³ :: You multiplied by 3. The cone fits inside the cylinder, so it must hold less.
+> Cylinder: πr²h. Cone: (1/3)πr²h. With the same r and h, the cone is exactly one third: 600 ÷ 3 = 200.
+```
 
-### Formulas
+## Radius, not diameter
 
-| Shape | Formula | On reference sheet? |
-|---|---|---|
-| Circle | area πr², circumference 2πr | Yes |
-| Rectangle | area ℓw | Yes |
-| Triangle | area ½bh | Yes |
-| Rectangular box | volume ℓwh | Yes |
-| Cylinder | volume πr²h | Yes |
-| Sphere | volume (4/3)πr³ | Yes |
-| Cone | volume (1/3)πr²h | Yes |
-| Rectangular pyramid | volume (1/3)ℓwh | Yes |
-| Any polygon | perimeter = sum of sides | No |
-| Square / cube | area s², volume s³ | No |
-| Parallelogram | area bh | No |
-| Trapezoid | area ½(b₁ + b₂)h | No |
-| Rhombus or square | area (d₁ × d₂)/2 | No |
-| Any prism or cylinder | volume = base area × h | No |
-| Box surface area | `2(ℓw + ℓh + wh)` | No |
-| Cube surface area | 6s² | No |
-| Cylinder surface area | `2πr² + 2πrh` | No |
-| Sphere surface area | 4πr² | No |
+Write the formula with letters first, then substitute. Most mistakes happen in that substitution:
 
-A few notes on the table:
+- **Diameter given?** Halve it. Every circle formula uses the radius r.
+- **Height** is the straight-up height, at a right angle to the base, not a slanted edge.
+- **Keep π** as a letter when the choices have it. A typed answer can't contain π: if the area is kπ and they ask for k, enter only k.
 
-- In a triangle or parallelogram, the height h is measured perpendicular to the base b.
-- In the rhombus formula, d₁ and d₂ are the two diagonals.
-- A cylinder's surface is two circles (2πr²) plus the side, which unrolls into a rectangle (2πrh).
-- The sphere's surface area formula is usually given in the question when you need it.
+```quiz
+A circular rug has a diameter of 12 feet. What is its area, in square feet?
+- 144π :: You used the diameter as the radius. Halve 12 first.
+* 36π :: Right. r = 12 ÷ 2 = 6, so the area is π(6)² = 36π.
+- 12π :: That's the circumference (2πr), the distance around the rug, not the space it covers.
+- 6π :: You forgot to square the radius. πr² means π × 6 × 6.
+> Halve the diameter: r = 6. Then A = πr² = π × 36 = 36π square feet.
+```
 
-**Surface area** is the total area of every outside face. If you forget a formula, list the faces and add their areas. An "open box" (no lid) has one fewer face.
+## Work backward to a length
 
-### Scaling
+When the area or volume is given and a length is missing:
 
-If every length of a shape is multiplied by k, the new shape is **similar** to the old one: same shape, different size.
+1. Write the formula and plug in everything you know.
+2. Divide until the unknown, like r³, stands alone. π usually cancels.
+3. Undo the power: square root for r² or s², **cube root** for r³ or s³. In Desmos, `cbrt(64)` gives 4.
+4. Reread the last line: radius or diameter? Edge or face?
 
-| Quantity | Multiplied by | When k = 3 |
-|---|---|---|
-| Length (side, radius, perimeter) | k | 3 times |
-| Area (including surface area) | k² | 9 times |
-| Volume | k³ | 27 times |
+```quiz
+A ball shaped like a sphere has a volume of 288π cubic inches. What is the diameter of the ball, in inches?
+- 6 :: That's the radius. The question asks for the diameter, which is twice as long.
+* 12 :: Right. r³ = 216, so r = 6, and the diameter is 2 × 6 = 12.
+- 72 :: You divided 216 by 3. A cube is undone by a cube root: 6 × 6 × 6 = 216.
+- 216 :: That's r³. Take the cube root to get r.
+> Sheet formula: (4/3)πr³ = 288π.
+> Divide both sides by π, then multiply by 3/4: r³ = 216.
+> Cube root: r = 6, because 6 × 6 × 6 = 216. The question wants the diameter: 2 × 6 = 12.
+```
 
-- **Going backward:** areas in a ratio of 25 to 1 mean lengths in a ratio of √25 = 5 to 1, so volumes are in a ratio of 5³ = 125 to 1.
-- **Percent changes:** "each length increases by 20%" means k = 1.2. Area is multiplied by 1.2² = 1.44 (44% more) and volume by 1.2³ = 1.728.
+## Surface area: add the faces
 
-> **Remember:** If only one dimension changes, apply only that change. Doubling a cylinder's height doubles its volume, but doubling its radius multiplies the volume by 4, because r is squared in πr²h. Tripling the radius and halving the height gives 9 × ½ = 4.5 times the volume.
+Surface area isn't on the reference sheet, and you don't need a formula. Unfold the solid in your head and add the area of every outside face.
 
-## Worked examples
+| Solid | Faces |
+|---|---|
+| Box | 3 pairs of rectangles |
+| Cube | 6 equal squares: 6s² |
+| Cylinder | 2 circles + side: 2πr² + 2πrh |
 
-### Example 1: Working backward from a volume
+A cylinder's side unrolls into a rectangle, 2πr long and h tall. An **open** box or can has no top, so leave that face out.
 
-A cylindrical water tank has a volume of 360π cubic feet and a height of 10 feet. What is the diameter of the tank, in feet?
+```quiz
+A closed box is 2 inches by 3 inches by 4 inches. What is its surface area, in square inches?
+- 24 :: That's the volume, 2 × 3 × 4. Surface area adds the areas of the faces.
+- 26 :: You counted 3 faces. A box has 6: top and bottom, front and back, left and right.
+* 52 :: Right. The faces are 6, 8 and 12, each twice: 2(6 + 8 + 12) = 52.
+> The three different faces are 2 × 3 = 6, 2 × 4 = 8 and 3 × 4 = 12. Each appears twice, so the total is 2(6 + 8 + 12) = 52 square inches.
+```
 
-- (A) 3
-- (B) 6
-- (C) 12
-- (D) 36
+## Shaded regions: whole minus part
 
-**Solution**
+For a shape with a piece cut out, find the **whole** area, then subtract the **cutout**. For a shape built from pieces, add the pieces.
 
-Shape: cylinder. Given: volume. Asked: diameter. Write the formula and plug in: `πr²(10) = 360π`. Divide both sides by 10π: r² = 36, so r = 6. The question asks for the diameter, so double it: 2 × 6 = 12.
+Perimeter is different: it counts only the outside edge. A line where two pieces meet is inside the shape, so it doesn't count.
 
-(B) is the radius, the classic "stopped one step early" trap. (A) halves the radius instead of doubling it. (D) is r², which means forgetting the square root.
+```quiz
+A circular pond has a radius of 3 meters. A path 2 meters wide runs all the way around it. What is the area of the path, in square meters?
+- 4π :: You squared the width, 5 − 3 = 2. Square each radius first, then subtract: 25π − 9π.
+- 25π :: That's the pond and the path together. Subtract the pond, 9π.
+- 40π :: The path adds 2 to the radius, not 4. The outer radius is 3 + 2 = 5.
+* 16π :: Right. Outer circle π(5)² = 25π, minus the pond π(3)² = 9π.
+> The path's outer edge is a circle with radius 3 + 2 = 5. Path = big circle − pond = 25π − 9π = 16π square meters.
+```
 
-**Answer:** (C)
+## Scaling: k, k², k³
 
-### Example 2: Similar solids
+If **every** length of a shape is multiplied by the same number k, the new shape is **similar**: same shape, new size.
 
-Two rectangular boxes are similar. The surface area of the larger box is 4 times the surface area of the smaller box. The smaller box has a volume of 30 cubic centimeters. What is the volume of the larger box, in cubic centimeters?
+| Measure | Multiplied by |
+|---|---|
+| Length, perimeter, radius | k |
+| Area, surface area | k² |
+| Volume | k³ |
 
-- (A) 120
-- (B) 240
-- (C) 480
-- (D) 1,920
+Given an area or volume ratio, **find k first**. An area ratio of 25 means k = √25 = 5. A volume ratio of 8 means k = ∛8 = 2. A 20% increase means k = 1.2.
 
-**Solution**
+```quiz
+Two cylinders are similar. The larger one has 9 times the surface area of the smaller one. The smaller one has a volume of 40 cubic centimeters. What is the volume of the larger one, in cubic centimeters?
+- 120 :: You multiplied by k = 3. Volume grows by k³, not k.
+- 360 :: You multiplied by the area ratio, 9. Volume doesn't grow like area.
+* 1,080 :: Right. k² = 9, so k = 3, and volume grows by 3³ = 27.
+- 29,160 :: You cubed 9, but 9 is the area ratio, not k. Take √9 = 3 first.
+> Surface area is an area, so k² = 9 and k = 3.
+> Volume grows by k³ = 3 × 3 × 3 = 27, so the larger cylinder holds 40 × 27 = 1,080 cubic centimeters.
+```
 
-Surface area is an area, so it scales by k². That means k² = 4, so the length factor is k = 2. Volume scales by k³ = 2³ = 8. The larger box has a volume of 30 × 8 = 240.
+## The trap: one length changes
 
-(A) multiplies by the area factor 4, as if volume scaled like area. (C) multiplies by 4² = 16, which squares the area ratio. (D) multiplies by 4³ = 64, which cubes the area ratio instead of the length ratio. Always get back to k (the length factor) first.
+k² and k³ only work when **every** length is multiplied by k. If just one length changes, put that change into the formula and see what factor comes out.
 
-**Answer:** (B)
+Example: triple only a box's height. ℓw(3h) = 3ℓwh, so the volume triples, not 27 times.
 
-### Example 3: Perimeter of a composite shape
+```quiz
+The radius of a cylinder is doubled, and its height stays the same. The new volume is how many times the old volume?
+- 2 :: The radius is squared in πr²h, so doubling it multiplies the volume by 2².
+* 4 :: Right. π(2r)²h = 4πr²h.
+- 8 :: That's k³, which needs every length doubled. The height didn't change, so only r² grows.
+> Put the change into the formula: π(2r)²h = π × 4r² × h = 4πr²h. Only the radius changed, and it's squared, so the volume is 2² = 4 times as large.
+```
 
-A garden is made of a rectangle that is 12 meters long and 8 meters wide, with a semicircle attached to one of its 8-meter sides. The diameter of the semicircle is that entire 8-meter side. What is the perimeter of the garden, in meters?
+## Your turn: easy
 
-- (A) 32 + 4π
-- (B) 40 + 4π
-- (C) 32 + 8π
-- (D) 96 + 8π
+Find the radius first, then use the cylinder formula.
 
-**Solution**
+```check
+m-1651
+```
 
-Picture walking around the outside edge. You walk two long sides (12 + 12), the one short side with no semicircle (8), and the curved edge of the semicircle. The 8-meter side where the semicircle attaches is inside the garden, so it doesn't count.
+## Your turn: medium
 
-The semicircle has diameter 8, so radius 4. A full circle would have circumference 2π(4) = 8π, and half of that is 4π. Perimeter = 12 + 12 + 8 + 4π = 32 + 4π.
+A cube has six equal square faces. Work back to the edge length first.
 
-(B) counts the hidden 8-meter side too. (C) uses the full circle's circumference. (D) is the garden's *area*: 12 × 8 = 96 plus half of π(4)² = 8π.
+```check
+m-1923
+```
 
-**Answer:** (A)
+## Your turn: hard
 
-### Example 4: Equal volumes (student-produced response)
+Similar solids: turn the surface-area ratio into k before you touch the volumes.
 
-A solid metal sphere with a radius of 3 centimeters is melted down, and all of the metal is recast into a solid cone. The cone's base has a radius of 3 centimeters. What is the height of the cone, in centimeters?
+```check
+m-13942
+```
 
-**Solution**
+## Recap
 
-Melting and recasting doesn't change the amount of metal, so the two volumes are equal.
-
-Sphere: `(4/3)π(3)³ = (4/3)π(27) = 36π`.
-
-Cone: `(1/3)π(3)²h = (1/3)π(9)h = 3πh`.
-
-Set them equal: 3πh = 36π. Divide by 3π: h = 12.
-
-Check: a cone 12 cm tall with radius 3 has volume (1/3)π(9)(12) = 36π. It matches.
-
-**Answer:** 12
-
-## Traps to avoid
-
-- **Diameter for radius.** Plugging in the diameter makes a circle's area 4 times too big and a sphere's volume 8 times too big.
-- **Giving the radius when they asked for the diameter** (or the reverse). Circle the word the question ends with.
-- **Forgetting the 1/3** in cones and pyramids. A cone holds exactly one-third of a cylinder with the same base and height.
-- **Using k instead of k² or k³.** Doubling every edge of a cube multiplies its volume by 8, not 2.
-- **Cubing or squaring the wrong ratio.** Given an area ratio, take its square root to get k before you cube.
-- **Counting a shared edge in a perimeter.** Where two pieces touch, the edge is inside the shape, not on its boundary.
-- **Mixing units.** Convert before you square or cube: 1 foot = 12 inches, but 1 square foot = 144 square inches and 1 cubic foot = 1,728 cubic inches.
-- **Area vs. perimeter, volume vs. surface area.** The choices usually include the "other" quantity, so reread the last line.
-
-## Quick checklist
-
-- Did I name the shape and the exact quantity asked for?
-- Am I using the radius, not the diameter?
-- Did I include the 1/3 for a cone or pyramid?
-- Scaling: did I find k first, then use k² for area and k³ for volume?
-- Composite shape: did I add the pieces, subtract the cutouts, and skip shared edges?
-- Are my units consistent, and does my answer match the form of the choices (with π or as a decimal)?
+- Name the shape and the exact quantity: area, perimeter, volume or surface area.
+- Write the formula with letters, then substitute. Radius, not diameter; cones and pyramids get 1/3.
+- Working backward: plug in, divide, then take a square root or cube root.
+- Surface area: add the faces. Shaded region: whole minus cutout.
+- Every length × k: areas × k², volumes × k³. Only one length changed? Put it into the formula.
+- Reread the last line: radius or diameter, one face or all of them.

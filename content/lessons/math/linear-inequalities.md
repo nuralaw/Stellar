@@ -3,213 +3,180 @@ title: Linear Inequalities
 skill: linear-inequalities
 domain: algebra
 section: math
-summary: Solve linear inequalities without sign mistakes, turn real-life limits into inequalities, and check which points fit a graph or system.
-minutes: 12
+summary: Solve inequalities without sign slips, turn limit words into symbols, round whole-number answers the right way, and test points.
 ---
 
-> **Key idea:** Solve an inequality just like an equation, but flip the sign every time you multiply or divide both sides by a negative number. No other step flips it.
+## Spot it: answers are ranges
 
-## What this question looks like
+Inequality questions use <, >, ≤ or ≥, or limit words like **at least** and **at most**. The answer is usually a range: x < 3 means every number below 3, including decimals and negatives.
 
-An inequality uses <, >, ≤ or ≥ instead of an equals sign, so its answer is usually a whole range of numbers. On the Digital SAT it comes in a few familiar forms:
+Expect five shapes: solve for x, write one from a story, find the greatest or least whole number, pick a point (x, y) that works, or match a graph.
 
-- **Solve it.** One variable, like `7 − 3(x + 2) ≥ 2x − 9`. Choices look like "x ≤ 2" or "x ≥ 2," so the sign's direction is the whole question.
-- **Word problem with a limit.** A budget, a weight limit or a minimum score, with phrases like "at most" or "at least." You write the inequality or find the greatest or least whole number that works.
-- **Write the system.** Two limits at once, like a money limit and a minimum number of items. You pick the pair of inequalities that models the story.
-- **Which point works?** Two-variable inequalities, or a graph with a shaded region. You pick the point (x, y) that's a solution.
-- **Read the region.** A graph with a dashed or solid line and shading. Which inequality matches it, or what's the greatest possible y?
+```quiz
+Which value of x is NOT a solution to 2x + 1 < 9?
+- 3.9 :: 2(3.9) + 1 = 8.8, which is less than 9, so it works.
+- 0 :: 2(0) + 1 = 1, and 1 < 9 is true.
+- −10 :: Negatives work too: 2(−10) + 1 = −19, which is less than 9.
+* 4
+> Solve: 2x < 8, so x < 4. Every number below 4 works.
+> 4 itself gives 9 < 9, which is false. A strict < or > leaves out the boundary; ≤ and ≥ include it.
+```
 
-## The method
+## Solve it like an equation
 
-Pick the routine that matches the question type.
+Use the same moves as for an equation. Only one move flips the sign:
 
-### One variable
-
-1. Solve it like an equation: clear fractions, distribute, collect x on one side, divide.
-2. Flip the sign on the exact step where you multiply or divide by a negative.
-3. If the answer ends up backwards, like 4 > x, read it right to left: x < 4.
-4. Test one easy number from your answer in the *original* inequality. If it fails, you made a sign error.
-
-### Word problem
-
-1. Name the variable, with units ("w = number of worksheets").
-2. Build the expression as you would for an equation: flat amount plus rate × variable.
-3. Pick the symbol from the wording (see the table below).
-4. Solve. If the variable counts whole things, round in the direction that still meets the limit.
-
-### Which point satisfies the system
-
-1. Plug each choice into **every** inequality. A point must make all of them true.
-2. As soon as a choice fails one inequality, cross it out and move on.
-
-### Graphs
-
-Rewrite the inequality as `y < mx + b` or `y > mx + b`. Then y > means shading **above** the line and y < means below. A dashed line means < or >; a solid line means ≤ or ≥.
-
-## Rules and formulas you need
-
-The sign stays the same for most moves. Know exactly which ones change it.
-
-- **Keeps the sign:** adding or subtracting anything (even a negative), and multiplying or dividing by a positive.
-- **Flips the sign:** multiplying or dividing by a negative.
-- **Swapping the two sides** turns the symbol around with them: 5 < x means the same as x > 5.
-
-### Words to symbols
-
-| Words in the problem | Symbol |
+| Move | Flip the sign? |
 |---|---|
-| at least, no less than, a minimum of | ≥ |
-| at most, no more than, a maximum of, cannot exceed | ≤ |
+| add or subtract anything | no |
+| multiply or divide by a positive | no |
+| multiply or divide by a **negative** | **yes** |
+
+If the variable ends up on the right, read it from the variable's side: 3 < x means x > 3.
+
+```quiz
+Which describes all solutions to −3x + 5 > 17?
+- x > −4 :: You divided by −3 without flipping the sign.
+* x < −4
+- x < −22/3 :: You added 5 instead of subtracting it: 17 − 5 = 12, not 22.
+- x < 4 :: 12 ÷ (−3) is −4, not 4.
+> Subtract 5: −3x > 12. Divide by −3, a negative, so flip: x < −4.
+> Check with x = −5: −3(−5) + 5 = 20, and 20 > 17 is true.
+```
+
+## Dodge the flip, then test 0
+
+You can skip the flip entirely: collect x on the side where its coefficient stays **positive**.
+
+Either way, finish with a test. Put an easy number, usually 0, into the **original** inequality. If it makes the inequality true, 0 must be inside your answer; if false, it must be outside.
+
+```quiz
+Which describes all solutions to 4 − 3(x − 2) ≥ x + 2?
+- x ≥ 2 :: You divided by a negative without flipping. Test 0: 4 − 3(−2) = 10 ≥ 2 is true, so 0 must be a solution.
+- x ≤ −1 :: −3 times −2 is +6, not −6. Distribute the negative to both terms.
+* x ≤ 2
+> Distribute: 4 − 3x + 6 ≥ x + 2, so 10 − 3x ≥ x + 2.
+> Keep x on the right, where it stays positive: add 3x and subtract 2 to get 8 ≥ 4x. Divide by 4: 2 ≥ x, which is x ≤ 2.
+> Test 0: 10 ≥ 2 is true, and 0 is in x ≤ 2.
+```
+
+## Turn limit words into symbols
+
+| Words | Symbol |
+|---|---|
+| at least, no less than, minimum | ≥ |
+| at most, no more than, maximum | ≤ |
 | more than, greater than, over | > |
 | less than, fewer than, under | < |
 
-> **Trap:** "5 less than x" is the expression x − 5, not an inequality. "5 is less than x" is the inequality 5 < x.
+Build the expression as you would for an equation: a one-time **fee** or starting amount stands alone, and a **rate** multiplies the variable.
 
-### Rounding whole-number answers
+```quiz
+A plant is 12 cm tall and grows 1.5 cm per week. Which inequality shows the numbers of weeks w for which the plant is more than 30 cm tall?
+- 12 + 1.5w ≥ 30 :: "More than 30" leaves out 30 itself, so the symbol is >, not ≥.
+- 1.5 + 12w > 30 :: The start height and the weekly rate are swapped. The rate multiplies w.
+* 12 + 1.5w > 30
+- 12 + 1.5w < 30 :: That's when the plant is still shorter than 30 cm.
+> The height after w weeks is 12 + 1.5w: the start plus the rate times w. "More than" is >, so 12 + 1.5w > 30.
+```
 
-| Limit type | Example | Round |
-|---|---|---|
-| "At most" (budget, capacity) | h ≤ 6.2 | Down to 6 |
-| "At least" (score, money raised) | w ≥ 8.4 | Up to 9 |
+## Whole numbers: which way to round
 
-### More facts
+When the answer must be a whole number (tickets, people, whole miles), solve, then round toward the side the limit allows:
 
-- **Compound inequality** like `−3 < 2x + 1 ≤ 9`: do every step to all three parts. Subtract 1 to get −4 < 2x ≤ 8, then divide by 2 to get −2 < x ≤ 4.
-- In a compound inequality, dividing by a negative flips **both** signs.
-- **Number lines:** an open circle means the endpoint is not included (< or >). A closed dot means it is (≤ or ≥).
-- **Test point for shading:** if the line doesn't pass through (0, 0), plug it in. If it makes the inequality true, shade the side with the origin.
-- **Systems:** the solution is the region where all the shadings overlap. Every point there works, and no point outside it does.
-- **If the x-terms cancel,** read what's left. A true statement (like 3 > 1) means every number works; a false one means none does.
+- an upper limit (budget, capacity): round **down**
+- a lower limit (goal, minimum): round **up**
 
-## Worked examples
+Then test your number and the next one in the story.
 
-### Example 1: The sign flip
+```quiz
+A taxi charges $9 plus $2.50 per mile. Rosa has $60. What is the greatest whole number of miles she can ride?
+- 21 :: You rounded 20.4 up. 21 miles cost 9 + 2.5(21) = $61.50, which is over $60.
+- 24 :: You left out the $9 fee: 60 ÷ 2.5 = 24.
+* 20
+- 27 :: You added the fee instead of subtracting it: 69 ÷ 2.5 = 27.6.
+> At most $60: 9 + 2.5m ≤ 60. Subtract 9: 2.5m ≤ 51. Divide by 2.5: m ≤ 20.4.
+> She can't go over, so round down to 20. Test: 20 miles cost $59, which fits; 21 miles cost $61.50, which doesn't.
+```
 
-Which of the following describes all solutions to `7 − 3(x + 2) ≥ 2x − 9`?
+## Which point works? Test every inequality
 
-- (A) x ≥ 2
-- (B) x ≤ 2
-- (C) x ≤ 22/5
-- (D) x ≥ 22/5
+Plug each choice into **every** inequality and cross it out at the first one it fails. Wrong choices are often built to pass just one.
 
-**Solution**
+A point exactly on a boundary line counts only for ≤ or ≥, never for < or >.
 
-Distribute the −3 to both terms inside: `7 − 3x − 6 ≥ 2x − 9`, which simplifies to `1 − 3x ≥ 2x − 9`.
+```quiz
+y > 2x − 1
+x + y ≤ 5
+Which point (x, y) is a solution to the system?
+- (3, 6) :: It passes the first, but 3 + 6 = 9, which is more than 5.
+- (3, 1) :: It passes the second, but 1 > 2(3) − 1 = 5 is false.
+- (2, 3) :: 3 > 2(2) − 1 = 3 is false. The point sits on the first boundary, and > leaves the boundary out.
+* (1, 3)
+> (1, 3): 3 > 2(1) − 1 = 1 is true, and 1 + 3 = 4 ≤ 5 is true. It passes both.
+```
 
-Subtract 2x from both sides and subtract 1 from both sides: `−5x ≥ −10`.
+## Graphs: the line, then the side
 
-Divide by −5. It's a negative, so flip: x ≤ 2.
+On a graph, the boundary line shows the symbol and the shading shows the direction:
 
-Second method (no flip needed): add 3x and 9 to both sides of `1 − 3x ≥ 2x − 9` instead. You get 10 ≥ 5x, so 2 ≥ x, which is x ≤ 2. Same answer.
+- **Solid** line: ≤ or ≥. **Dashed** line: < or >.
+- With y alone, y > or y ≥ is shaded **above** the line; y < or y ≤ is shaded **below** it.
 
-Check: x = 0 gives 1 ≥ −9, which is true, so 0 must be in the answer. That rules out (A) and (D). x = 3 gives −8 ≥ −3, which is false, so 3 can't be in the answer. That rules out (C), since 3 is less than 22/5.
+Getting y alone can mean dividing by a negative, and then the sign flips.
 
-Why the others are wrong: (A) forgets to flip. (C) distributes −3(+2) as +6 instead of −6. (D) makes both mistakes.
+```quiz
+An inequality's graph has the dashed boundary line y = 3x + 1, and the region below the line is shaded. Which inequality is it?
+- y ≤ 3x + 1 :: ≤ draws a solid line. A dashed line means < or >.
+- y > 3x + 1 :: y > is shaded above the line, not below.
+* y < 3x + 1
+- −y < −3x − 1 :: Multiply by −1 and flip: y > 3x + 1, which is shaded above.
+> Dashed means strict (< or >), and shaded below means y is less than the line: y < 3x + 1.
+```
 
-**Answer:** (B)
+## The trap: the hidden flip
 
-### Example 2: Least whole number
+The flip hides in stories about amounts that **go down**: a draining tank, a melting candle, money being spent. The rate is negative, so solving means dividing by a negative. Check your answer with one number from it.
 
-Priya has earned 78 points in a class so far. Each extra-credit project is worth 5 points. She needs a total of at least 120 points to get an A. What is the least number of extra-credit projects she must complete?
+```quiz
+A tank holds 200 liters and drains 8 liters per minute. Which describes the times t, in minutes, when the tank holds less than 40 liters?
+- t < 20 :: Trap: you divided by −8 without flipping. At t = 10 the tank still holds 120 liters.
+- t > 25 :: 200 ÷ 8 = 25 is when the tank is empty. The question asks when it drops below 40.
+- t ≥ 20 :: At t = 20 the tank holds exactly 40 liters, which isn't less than 40.
+* t > 20
+> Water left after t minutes: 200 − 8t. Set it below 40: 200 − 8t < 40. Subtract 200: −8t < −160.
+> Divide by −8 and flip: t > 20. Check t = 22: 200 − 176 = 24 liters, which is less than 40.
+```
 
-**Solution**
+## Your turn: easy
 
-Let w = the number of projects. "At least" means ≥: `78 + 5w ≥ 120`.
+A fee stands alone, a rate multiplies the variable, then pick the symbol.
 
-Subtract 78 to get 5w ≥ 42, then divide by 5 to get w ≥ 8.4.
+```check
+m-0640
+```
 
-She can't complete 0.4 of a project, and 8 isn't enough (8.4 is the minimum). So round **up** to 9.
+## Your turn: medium
 
-Check: 78 + 5(9) = 123, which reaches 120. But 78 + 5(8) = 118, which falls short.
+Plug in what you know, then solve the inequality that's left.
 
-**Answer:** 9
+```check
+m-0888
+```
 
-### Example 3: Write the system
+## Your turn: hard
 
-A florist makes small bouquets that use 4 roses each and large bouquets that use 10 roses each. She has no more than 200 roses, and she must make at least 12 bouquets in total. If s is the number of small bouquets and l is the number of large bouquets, which system models this situation?
+Ask yourself: what kind of number flips the sign?
 
-- (A) `4s + 10l ≤ 200` and `s + l ≥ 12`
-- (B) `4s + 10l ≥ 200` and `s + l ≤ 12`
-- (C) `10s + 4l ≤ 200` and `s + l ≥ 12`
-- (D) `s + l ≤ 200` and `4s + 10l ≥ 12`
+```check
+m-12833
+```
 
-**Solution**
+## Recap
 
-Build one inequality for each limit.
-
-- **Roses:** each small bouquet uses 4 and each large one uses 10, so the roses used are `4s + 10l`. "No more than 200" means ≤ 200.
-- **Bouquets:** the total number is s + l. "At least 12" means ≥ 12.
-
-That's choice (A).
-
-Why the others are wrong: (B) reverses both directions. (C) pairs each rate with the wrong bouquet size. (D) mixes up the two quantities: it limits the *number of bouquets* to 200 and the *roses* to at least 12.
-
-**Answer:** (A)
-
-### Example 4: Which point is in the solution region?
-
-`y > 2x − 3`
-`x + 2y ≤ 8`
-
-Which point (x, y) is a solution to the system of inequalities above?
-
-- (A) (0, −3)
-- (B) (4, 2)
-- (C) (1, 3)
-- (D) (−2, 6)
-
-**Solution**
-
-Test every choice in both inequalities. Drop it the moment it fails one.
-
-- (A) First inequality: is −3 > 2(0) − 3 = −3? No. −3 equals −3, and the sign is strict. The point lies on the boundary line, which isn't included for >, so it fails.
-- (B) First inequality: is 2 > 2(4) − 3 = 5? No. It fails.
-- (C) First inequality: is 3 > 2(1) − 3 = −1? Yes. Second inequality: is 1 + 2(3) = 7 ≤ 8? Yes. It passes both.
-- (D) First inequality: is 6 > −7? Yes. Second inequality: is −2 + 12 = 10 ≤ 8? No. It fails.
-
-Notice that (B) passes only the second inequality and (D) only the first. Those choices are there to catch students who check just one.
-
-**Answer:** (C)
-
-## Traps to avoid
-
-- **Forgetting the flip** after dividing by a negative. It's the most common inequality mistake, and the trap choice is the same number with the sign facing the other way.
-- **Flipping when you shouldn't.** Subtracting a negative, distributing a negative or moving terms across doesn't flip the sign.
-- **Rounding the wrong way.** A budget ("at most") rounds down; a goal ("at least") rounds up. Plugging your whole number back in settles it.
-- **Checking only one inequality.** In a system, a point must satisfy all of them. Wrong choices are often built to pass just one.
-- **Points on the boundary.** For < or >, a point exactly on the line is *not* a solution. For ≤ or ≥, it is.
-- **Shading from the wrong form.** "y >" means above only once y is alone. In `−2y > x + 4`, dividing by −2 flips the sign, so the region is *below* the line.
-- **Swapping rates and items.** In a two-variable word problem, multiply each rate by the variable it belongs to.
-
-## Desmos shortcut
-
-Desmos is strongest on "which point" and "read the region" questions. For a short one-variable inequality, solving by hand is about as fast, but Desmos makes a good check.
-
-### One variable
-
-- Type it exactly as written, for example `7-3(x+2)>=2x-9`. Typing `>=` gives ≥ and `<=` gives ≤.
-- Desmos shades a vertical band. Its edge is the boundary value (here x = 2), and the shaded side shows the direction.
-- A solid edge means the endpoint is included; a dashed edge means it isn't.
-
-### Systems of inequalities
-
-- Type each inequality on its own line: `y>2x-3` and `x+2y<=8`. You don't need to solve for y first.
-- The solution is the area where the two colors overlap.
-- Cleaner view: type `y>2x-3{x+2y<=8}`, with the second inequality in curly braces as a restriction. Desmos then shades *only* the overlap.
-- Add each answer choice as a point on its own line, like `(1,3)`. The correct choice sits inside the overlap.
-- If a point lands right on a boundary, check whether that line is dashed or solid, or plug the point in by hand.
-
-### Greatest or least value in a region
-
-Graph the system, then click the corner where the boundary lines cross to see its coordinates. That corner is usually where the greatest or least y-value happens.
-
-> **Remember:** Desmos won't translate a word problem or round to whole numbers. You still write the inequality and decide whether to round up or down.
-
-## Quick checklist
-
-- Did I multiply or divide by a negative? If so, did I flip the sign on that step?
-- Does an easy test number from my answer work in the original inequality?
-- Did I translate each phrase correctly (at least ≥, at most ≤, more than >, fewer than <)?
-- For whole-number answers, did I round in the direction that still meets the limit?
-- For a system, did my point pass *every* inequality, including any boundary?
-- For a graph, is the line dashed or solid, and is the shaded side correct?
+- Solve like an equation; flip only when you multiply or divide by a negative.
+- Test 0 (or another easy number) in the original inequality.
+- At least ≥, at most ≤, more than >, fewer than <.
+- Whole-number answers: budgets round down, goals round up. Test your number and the next.
+- A point must pass every inequality; a boundary counts only for ≤ and ≥.
+- Graphs: solid for ≤ and ≥, dashed for < and >; y > is above, y < is below.

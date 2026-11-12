@@ -3,223 +3,193 @@ title: Two-Variable Data and Scatterplots
 skill: two-var-data
 domain: problem-solving
 section: math
-summary: Read scatterplots and best-fit models, explain slope and intercept in context, make predictions, and tell linear growth from exponential growth.
-minutes: 12
+summary: Use a line of best fit to predict, explain its slope and intercept in context, and tell linear data from exponential data.
 ---
 
-> **Key idea:** A model describes the trend, not each data point. Predictions come from the line or equation, and good interpretations say "predicted," "estimated" or "on average."
+## Spot a scatterplot question
 
-## What this question looks like
+A **scatterplot** shows one dot per pair of values (x, y), often with a line or curve of best fit through the middle. Sometimes the data comes as a table instead. You'll predict a value, explain a number in the model, or pick the model.
 
-You get a scatterplot, a table or a model and answer one question about the trend. A **scatterplot** shows pairs of data as dots, like hours studied (x) and test score (y). The line or curve of best fit follows the overall trend: it's a model that gives a *predicted* y for each x, which usually isn't the real value.
+First read the axes: what x and y measure, their units, and what one gridline is worth.
 
-Typical stems:
+Dots that rise to the right show a **positive** association; dots that fall show a **negative** one.
 
-- "Based on the line of best fit, what is the predicted value of y when x = 12?"
-- "Which equation best models the data?"
-- "What is the best interpretation of the slope / the number 1,850 in this context?"
-- "For the data point at x = 6, how much greater is the actual value than the value predicted by the line of best fit?"
-- "Which model, linear or exponential, fits the data in the table?"
+```quiz
+A scatterplot shows the age x, in years, and the price y, in dollars, of 30 used bikes. The dots fall from left to right. Which statement is best supported?
+* Older bikes tend to have lower prices.
+- Every older bike costs less than every newer bike. :: A trend says what tends to happen. It makes no promise about every single bike.
+- Newer bikes tend to have lower prices. :: Read it the other way round: as age (x) goes up, price (y) goes down.
+> Falling dots mean a negative association: as x (age) goes up, y (price) tends to go down. *Tends to* matters, because a trend doesn't cover every single bike.
+```
 
-Often the graph does most of the work, and the math is one substitution.
+## Line predicts, dot is actual
 
-## The method
+The line, or its equation, gives **predicted** values. A dot is an **actual** value.
 
-Read the graph first, then let the model do the work.
+- To predict at some x, put x into the equation, or read the line at that x.
+- Residual = actual − predicted.
+- A dot above the line has actual > predicted, so its residual is positive.
 
-1. **Read the axes.** Note what x and y measure, their units, and what one gridline is worth. It's often 2, 5 or 10, not 1.
-2. **Read the trend.** Up to the right means a positive slope, down to the right a negative one. A bending curve means exponential or quadratic, not linear.
-3. **Use the model, not the dots.** Predictions come from the line or equation. A single dot is an *actual* value.
-4. **To predict,** plug x into the equation, or go up from x to the line and across to the y-axis.
-5. **To interpret a number,** decide whether it's the slope or the intercept. Then say it in the story's words, using "predicted" or "estimated."
-6. **To pick an equation,** eliminate by the sign of the slope, then the y-intercept, then the steepness. Use Desmos if two choices are still close.
+```quiz
+A line of best fit for a data set is y = 3x + 12. One data point is (8, 40). How much greater is the actual y-value than the predicted y-value at x = 8?
+- −4 :: That's predicted − actual. *How much greater is the actual* means actual − predicted.
+- 36 :: That's the predicted value itself. Subtract it from the actual value.
+- 16 :: You left out the + 12. The predicted value is 3(8) + 12 = 36.
+* 4
+> Predicted: 3(8) + 12 = 36. Actual: 40.
+> Actual − predicted = 40 − 36 = 4. The dot sits 4 units above the line.
+```
 
-## Rules and formulas you need
+## Read the line's equation
 
-Know what each part of a model means in the story, and how to tell linear from exponential.
+To get a line's equation from a graph:
 
-### Linear models: `y = mx + b`
+1. **Sign:** a line that falls to the right has a negative slope.
+2. **Slope:** pick two points **on the line** (not data dots), best where it passes through a grid corner. Slope = rise ÷ run.
+3. **Intercept:** where the line crosses the y-axis, at x = 0.
 
-| Part | Meaning in context |
+A good line of best fit has dots both above and below it.
+
+```quiz
+A line of best fit passes through about (0, 50) and (20, 20). Which equation best represents it?
+* y = −1.5x + 50
+- y = 1.5x + 50 :: The line falls from 50 to 20, so its slope is negative.
+- y = −1.5x + 20 :: 20 is the y-value at x = 20. The intercept is the value at x = 0.
+- y = −0.67x + 50 :: That's run ÷ rise (20 ÷ 30). Slope is rise ÷ run: −30 ÷ 20.
+> Slope: (20 − 50) ÷ (20 − 0) = −30 ÷ 20 = −1.5. The line crosses the y-axis at 50, so y = −1.5x + 50.
+```
+
+## Slope and intercept in context
+
+The slope is the number **multiplied by x**, even when the SAT writes y = a + bx.
+
+| Part | Meaning |
 |---|---|
-| slope m | *predicted* change in y for each +1 in x |
-| intercept b | *predicted* y when x = 0 |
+| slope | predicted change in y for each 1 more x |
+| intercept | predicted y when x = 0 |
 
-- The slope is a rate ("per year," "per hour"). The intercept is the starting value.
-- Slope from two points on the line: `m = (y₂ − y₁)/(x₂ − x₁)`. Pick points where the line crosses gridlines cleanly, not data dots.
+Say it as a sentence with units: "for each additional hour, the predicted score rises by 4 points". Keep *predicted*: a model describes a trend, not every case.
 
-### Residuals
+```quiz
+A store uses y = 420 − 12.5x to estimate the price y, in dollars, of a used phone x months after its release. What is the best interpretation of 12.5?
+- The estimated price at release is $12.50. :: That's the intercept's job, and the intercept here is 420.
+* Each month after release, the estimated price drops by $12.50.
+- Each month, every phone of this type loses exactly $12.50. :: A model estimates the trend. It can't promise *every* phone or *exactly*.
+- Each month, the estimated price drops by 12.5%. :: A linear model changes by a fixed amount. A fixed percent belongs to an exponential model.
+> 12.5 is multiplied by x, so it belongs to the slope: −12.5 dollars per month. The minus sign means the estimate falls by $12.50 for each extra month.
+> The intercept, 420, is the estimated price at release (x = 0).
+```
 
-A **residual** is actual value − predicted value.
+## Linear or exponential?
 
-- Dot above the line: positive residual, so the model *underestimated*.
-- Dot below the line: negative residual, so the model *overestimated*.
-- Dot on the line: residual 0.
+Check how y changes each time x goes up by 1.
 
-### Exponential models: `y = a·bˣ`
-
-| Part | Meaning in context |
+| Pattern | Model |
 |---|---|
-| a | starting value (y when x = 0) |
-| b greater than 1 | growth of (b − 1) × 100% per step |
-| b between 0 and 1 | decay of (1 − b) × 100% per step |
+| same amount added | linear, y = mx + b |
+| same factor multiplied | exponential, y = a(b)^x |
 
-For example, b = 1.2 means +20% per step, and b = 0.85 means −15% per step.
+In y = a(b)^x, a is the value at x = 0 and b is the factor: growth of 6% per step is b = 1.06.
 
-### Linear or exponential?
+```quiz
+In a table, x = 0, 1, 2, 3 gives y = 80, 120, 180, 270. Which equation models the data?
+- y = 80 + 40x :: That fits only the first step. The differences grow (40, 60, 90), so the data isn't linear.
+* y = 80(1.5)^x
+- y = 120(1.5)^x :: 120 is y at x = 1. The starting value a is y at x = 0.
+- y = 80(0.5)^x :: 0.5 is the growth rate. The factor is 1 + 0.5 = 1.5; a factor of 0.5 would halve y each step.
+> Differences: 40, 60, 90, not equal, so it isn't linear. Ratios: 120 ÷ 80, 180 ÷ 120 and 270 ÷ 180 all equal 1.5, so it's exponential with b = 1.5.
+> At x = 0, y = 80, so a = 80.
+```
 
-Linear adds the same **amount** each step; exponential multiplies by the same factor each step.
+## Let Desmos fit the line
 
-| If y changes by… | the model is… |
+Data in a table and close answer choices? Run a regression.
+
+1. Click **+**, choose **table**, and type the x-values under x₁ and the y-values under y₁.
+2. On a new line, type `y1~mx1+b` (on a US keyboard, ~ is Shift plus the key left of 1). Desmos turns each 1 into a subscript by itself. Don't type `_`: it traps the ~ in the subscript, and Desmos shows an error.
+3. Read m and b, then pick the closest choice.
+
+For an exponential model, type `y1~ab^x1`.
+
+```quiz
+Your data is in a Desmos table with columns x₁ and y₁. Which line makes Desmos fit a line of best fit to it?
+* `y1~mx1+b`
+- `y1=mx1+b` :: With an equals sign, Desmos doesn't fit anything. The tilde is what tells it to find the best m and b.
+- `y~mx+b` :: Plain x and y aren't the table's columns, so Desmos has no data to fit. Use x1 and y1.
+> The tilde means "fit this model to the data", and x1 and y1 point Desmos at the table columns. It then shows the best m and b.
+```
+
+## When every data point changes
+
+If every y-value is changed the same way, do the same to the line.
+
+| Change to every y | y = mx + b becomes |
 |---|---|
-| same amount (+30, +30, +30) | linear |
-| same percent or factor (×1.5, ×1.5) | exponential |
+| multiply by k | y = (km)x + kb |
+| add k | y = mx + (b + k) |
 
-- On a scatterplot, a straight band of dots is linear.
-- A curve that gets steeper (growth) or flattens out toward zero (decay) is exponential.
-- A U or upside-down U shape is quadratic.
-- In the long run, a growing exponential always overtakes a growing linear model, even if it starts below it.
+Multiplying stretches the whole line, so the slope **and** the intercept are both multiplied.
 
-### Describing the trend
+```quiz
+For data set A, a line of best fit is y = 6x + 40. Data set B is made by multiplying every y-value in A by 1.5. Which could be a line of best fit for B?
+- y = 6x + 60 :: You scaled only the intercept. Every point of the line is multiplied by 1.5, so the slope is too.
+- y = 9x + 40 :: You scaled only the slope. The y-value at x = 0 is multiplied too: 40 × 1.5.
+* y = 9x + 60
+- y = 7.5x + 41.5 :: You added 1.5 to both numbers. The y-values were multiplied by 1.5, not increased by it.
+> Multiply the whole equation by 1.5: y = 1.5(6x + 40) = 9x + 60.
+```
 
-- **Positive association:** y tends to go up as x goes up. Negative: y tends to go down.
-- Strong: dots hug the line. Weak: dots are loosely scattered.
-- A trend can be negative *and* strong.
+## Trap: first row isn't the intercept
 
-## Worked examples
+> **Trap:** The y-intercept is the predicted y when x = 0. If a table starts at x = 1, its first y-value is not the intercept.
 
-### Example 1: Interpreting the slope
+A club had y members x years after 2020.
 
-A dealership models the value of a certain used car with `y = −1,850x + 24,300`, where y is the predicted value, in dollars, of a car that is x years old, for cars between 1 and 10 years old. Which is the best interpretation of 1,850 in this context?
-
-- (A) The predicted value of a brand-new car is $1,850.
-- (B) For each additional year of age, the predicted value of the car decreases by $1,850.
-- (C) Every car of this type loses exactly $1,850 in value each year.
-- (D) For each additional year of age, the predicted value of the car increases by $1,850.
-
-**Solution**
-
-1,850 sits with x, so it's part of the slope: −1,850 dollars per year. The minus sign means the value goes *down* as age goes up. So the predicted value drops by $1,850 for each extra year.
-
-(A) describes the intercept, and the intercept is 24,300, not 1,850. (C) is too strong: the model predicts a trend, it doesn't promise that every single car loses exactly that much. (D) ignores the negative sign.
-
-**Answer:** (B)
-
-### Example 2: Actual vs. predicted
-
-A teacher recorded the hours five students studied and their test scores. The line of best fit for the data is `y = 4.5x + 54`, where y is the predicted score and x is the hours studied.
-
-| Hours studied | Test score |
+| x | y |
 |---|---|
-| 2 | 63 |
-| 3 | 67 |
-| 5 | 76 |
-| 6 | 85 |
-| 8 | 88 |
+| 1 | 46 |
+| 2 | 52 |
+| 3 | 58 |
+| 4 | 64 |
 
-For the student who studied 6 hours, how many points greater is the actual score than the score predicted by the line of best fit?
+```quiz
+Which equation models the number of members?
+- y = 6x + 46 :: 46 is y at x = 1. The intercept is y at x = 0, one step back: 46 − 6.
+* y = 6x + 40
+- y = 40x + 6 :: Swapped. The slope, 6 members per year, is the number multiplied by x.
+> y goes up 6 each year, so the slope is 6. One step back from x = 1 to x = 0 gives 46 − 6 = 40.
+> Check: 6(4) + 40 = 64.
+```
 
-- (A) −4
-- (B) 4
-- (C) 27
-- (D) 81
+## Your turn: easy
 
-**Solution**
+A predicted value comes from the model: put x into the equation.
 
-Predicted score at x = 6: 4.5(6) + 54 = 27 + 54 = 81. Actual score from the table: 85. Actual − predicted = 85 − 81 = 4.
+```check
+m-1079
+```
 
-(A) is predicted − actual, the subtraction done backwards. The question asks how much *greater* the actual score is, which is a positive 4. (C) is just 4.5 × 6, forgetting the intercept. (D) is the predicted score itself, not the difference.
+## Your turn: medium
 
-**Answer:** (B)
+Get the slope from two points on the line, then say it as a "for each" sentence.
 
-> **Tip:** If you ran your own regression in Desmos here, you'd get about `y = 4.46x + 54.37`, which is close but not the same. When the question *gives* you the line of best fit, always use the given equation.
+```check
+m-1327
+```
 
-### Example 3: Linear or exponential?
+## Your turn: hard
 
-The table shows the number of members, y, in a hiking club x years after it started.
+Read the line's slope and intercept from the graph, then do to the line what was done to the data.
 
-| Years, x | Members, y |
-|---|---|
-| 0 | 500 |
-| 1 | 600 |
-| 2 | 720 |
-| 3 | 864 |
+```check
+m-1236
+```
 
-Which equation models this relationship?
+## Recap
 
-- (A) `y = 500 + 100x`
-- (B) `y = 500(1.2)ˣ`
-- (C) `y = 600(1.2)ˣ`
-- (D) `y = 500(0.2)ˣ`
-
-**Solution**
-
-Check the differences: 100, then 120, then 144. They're not constant, so it isn't linear. Check the ratios: 600/500 = 1.2, 720/600 = 1.2, 864/720 = 1.2. The same factor every year means exponential, with b = 1.2. The starting value (x = 0) is 500, so `y = 500(1.2)ˣ`.
-
-(A) only matches the first step; at x = 2 it gives 700, not 720. (C) uses the year-1 value as the start, giving 600 at x = 0. (D) uses the 20% rate (0.2) instead of the growth factor (1.2), which would make the club shrink.
-
-**Answer:** (B)
-
-### Example 4: Choosing the line of best fit
-
-The table shows six data points from a scatterplot.
-
-| x | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| y | 9.8 | 8.1 | 7.2 | 5.9 | 4.6 | 3.1 |
-
-Which equation best models the data?
-
-- (A) `y = −1.3x + 11`
-- (B) `y = 1.3x + 11`
-- (C) `y = −1.3x + 3`
-- (D) `y = −0.5x + 11`
-
-**Solution**
-
-*By reasoning:* y falls as x rises, so the slope is negative. That removes (B). At x = 1 the data is near 10, so the y-intercept (one step back, at x = 0) should be a little above 10, around 11. That removes (C). From x = 1 to x = 6, y drops from 9.8 to 3.1, about 6.7 over 5 steps, or roughly −1.3 per step. That removes (D), whose slope is far too gentle.
-
-*By Desmos:* enter the table and type `y1 ~ mx1 + b`. Desmos gives m ≈ −1.29 and b ≈ 10.98, which matches (A).
-
-**Answer:** (A)
-
-## Traps to avoid
-
-- **Reading a dot instead of the line.** "Predicted" means use the line or equation. "Actual" or "observed" means use the dot.
-- **Backwards residuals.** Residual = actual − predicted, so a dot above the line has a positive residual.
-- **Mixing up slope and intercept.** The number multiplied by x is a rate. The constant is the x = 0 value.
-- **Dropping the sign.** A negative slope means "decreases by," not "increases by."
-- **Overconfident wording.** Models predict; they don't guarantee. Choices saying "exactly," "every" or "always" about individuals are usually wrong.
-- **Misreading the scale.** If each gridline is 5 units, a line that rises 2 boxes rose 10, not 2.
-- **Rate vs. factor in exponentials.** 20% growth means multiply by 1.2, not 0.2. 15% decay means multiply by 0.85, not 0.15.
-- **Trusting predictions far outside the data.** The trend might not continue there. An intercept at x = 0 can be meaningless if the data starts at x = 20.
-
-## Desmos shortcut
-
-Desmos can find the best-fit equation for you, the safest method when answer choices are close. But if the question already gives you the line of best fit, use that one: your own regression is for *choosing* a model, not replacing one you were handed.
-
-1. Click **+** and choose **table**. Type the x-values in the x₁ column and the y-values in the y₁ column.
-2. On a new line, type a regression with `~` (the tilde) instead of `=`, using one of the forms below. Desmos turns `x1` into x₁ automatically.
-3. Read off m and b (or a and b) and r² (shown as R² for curved models). The closer it is to 1, the better the fit, so when comparing a linear and an exponential fit, the larger r² wins.
-4. Use the values Desmos found like numbers. For a prediction at x = 12, type `12m + b`.
-
-Regressions to type:
-
-- Linear: `y1 ~ mx1 + b`
-- Exponential: `y1 ~ ab^x1`
-- Quadratic: `y1 ~ ax1^2 + bx1 + c`
-
-Other quick moves:
-
-- **Test answer choices.** Graph each choice over the table's points. The right one runs through the middle of the dots, with some above and some below.
-- **Residuals.** Type the given model, like `f(x) = 4.5x + 54`, then `85 - f(6)` gives the residual in one line.
-- **Use x₁ and y₁, not plain x and y.** `y ~ mx + b` won't fit the table.
-
-## Quick checklist
-
-- Did I read both axis labels, units and the gridline scale?
-- Is the trend positive or negative, straight or curved?
-- Does the question want a predicted value (line) or an actual value (dot)?
-- For a residual, did I compute actual − predicted?
-- For interpretation, did I match the number to slope (rate) or intercept (start) and keep its sign?
-- For exponentials, is b the growth factor (1 + rate) and a the value at x = 0?
+- Read the axes: what x and y measure, and what one gridline is worth.
+- The line gives predicted values; dots are actual. Residual = actual − predicted.
+- Slope, the number times x: the predicted change in y for each 1 more x. Intercept: the predicted y at x = 0.
+- Equal differences: linear. Equal ratios: exponential, y = a(b)^x.
+- Data changed? Do the same to the line: multiplying y scales slope and intercept; adding to y moves only the intercept.
+- Table and close choices: run `y1~mx1+b` in Desmos.

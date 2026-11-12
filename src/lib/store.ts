@@ -68,7 +68,31 @@ export interface TestSession {
 export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null, testTimeZone: null, focusSection: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
-const KEYS = { profile: "stellar:profile", attempts: "stellar:attempts", bookmarks: "stellar:bookmarks", tests: "stellar:tests", session: "stellar:test-session" } as const;
+/** Where a student is in one lesson (/lessons/[slug]). */
+export interface LessonProgress {
+  /** Step to resume at (0-based; === steps on the "lesson complete" screen). */
+  step: number;
+  /** Furthest step reached. */
+  max: number;
+  /** Step count when last saved (the lesson file can change). */
+  steps: number;
+  /** Answer per step index: the response ("2" = option index for quizzes, the choice/number for checks) and whether it was right. */
+  picks: Record<number, { r: string; ok: boolean }>;
+  /** Unix ms when first finished. */
+  done?: number;
+  /** Unix ms of the last change. */
+  at: number;
+}
+
+const KEYS = {
+  profile: "stellar:profile",
+  attempts: "stellar:attempts",
+  bookmarks: "stellar:bookmarks",
+  tests: "stellar:tests",
+  session: "stellar:test-session",
+  lessons: "stellar:lessons",
+} as const;
+const NO_LESSONS: Record<string, LessonProgress> = {};
 const NO_BOOKMARKS: string[] = [];
 const NO_TESTS: TestResult[] = [];
 
@@ -204,6 +228,22 @@ export function useTestSession(): TestSession | null {
   return useSyncExternalStore(subscribe, getTestSession, () => null);
 }
 
+// ---- lesson progress (slug → progress) ----
+export function getLessonProgress(): Record<string, LessonProgress> {
+  return read(KEYS.lessons, (raw) => {
+    const v = JSON.parse(raw);
+    return v && typeof v === "object" && !Array.isArray(v) ? v : NO_LESSONS;
+  }, NO_LESSONS);
+}
+
+export function saveLessonProgress(slug: string, p: LessonProgress) {
+  write(KEYS.lessons, { ...getLessonProgress(), [slug]: p });
+}
+
+export function useLessonProgress(): Record<string, LessonProgress> {
+  return useSyncExternalStore(subscribe, getLessonProgress, () => NO_LESSONS);
+}
+
 // ---- clock ----
 // Current time as an external store: 0 on the server, refreshed every minute in the browser.
 let clockNow = 0;
@@ -251,6 +291,7 @@ export function resetAllData() {
     localStorage.removeItem(KEYS.bookmarks);
     localStorage.removeItem(KEYS.tests);
     localStorage.removeItem(KEYS.session);
+    localStorage.removeItem(KEYS.lessons);
   } catch {}
   listeners.forEach((l) => l());
 }

@@ -3,189 +3,165 @@ title: Lines, Angles, and Triangles
 skill: lines-angles-triangles
 domain: geometry-trig
 section: math
-summary: Spot the angle or triangle rule in a figure, turn it into one equation, and solve for missing angles and side lengths.
-minutes: 12
+summary: Name the angle or triangle rule, turn it into one equation, and set up similar-triangle ratios with matching sides.
 ---
 
-> **Key idea:** Before you calculate, say the relationship in words (these angles are equal, these add to 180°, these triangles are similar). Then turn it into one equation.
+## Name the rule first
 
-## What this question looks like
+You see crossing lines, parallel lines or triangles and are asked for x, an angle or a side. Some ask which fact is **enough to prove** two triangles congruent or similar.
 
-You'll see a figure with lines, angles and triangles, and a question like "What is the value of x?" or "What is the length of BC?" Common setups:
+The method: name the rule before you write any number. Then turn the rule into one equation.
 
-- **Two parallel lines cut by a third line,** called a *transversal*. One or two angles are labeled, often with expressions like (3x + 10)°.
-- **A triangle with a missing angle.** It may be isosceles (two equal sides, shown by tick marks or stated in the text) or have one side extended past a corner.
-- **Similar triangles:** a small triangle tucked inside a big one, two triangles meeting at a point like a bowtie, or a word problem about shadows or ramps.
-- **"Which of the following is sufficient to prove…":** you pick the one extra fact that makes two triangles congruent or similar.
-- **Side-length limits:** "Two sides of a triangle are 7 and 12. Which could be the third side?"
+- **Straight line:** the angles add to 180°.
+- **Vertical angles** (opposite each other where two lines cross): equal.
+- **Around a point:** 360°.
 
-Figures are drawn to scale unless a note says otherwise, so a quick look can rule out silly answers. Still, prove your answer from the given facts, never by eyeballing.
+For angles, the reference sheet gives only 360° in a circle and 180° in a triangle. Learn the rest.
 
-## The method
+```quiz
+Two straight lines cross and make four angles. One of them measures 70°. What are the other three, going around the point?
+- 70°, 70°, 70° :: Only the opposite (vertical) angle is 70°. The two neighbors sit on a straight line with it.
+- 20°, 70°, 20° :: 20° + 70° = 90°. Neighbors on a straight line add to 180°, not 90°.
+* 110°, 70°, 110° :: Right. Each neighbor is 180° − 70°, and the opposite angle is equal.
+> Next to the 70° angle: 180° − 70° = 110° (straight line). Opposite it: 70° (vertical angles). The last one is opposite the 110°. Check: 70 + 110 + 70 + 110 = 360.
+```
 
-1. **Mark up the figure.** Sketch it on scratch paper and write every given value on it. Note which lines are stated (or marked) as parallel and which sides are equal.
-2. **Name the relationship before you calculate.** For example: "these two angles make a straight line, so they add to 180°" or "DE is parallel to BC, so the triangles are similar."
-3. **Write one equation** from that relationship, either "equal" or "adds to 180°."
-4. **Solve, then fill in more angles.** Each angle you find can unlock the next one. Work toward the angle you need.
-5. **For similar triangles, match corners first.** Line up equal angles, then write a ratio with the small triangle on top on both sides: `small/big = small/big`.
-6. **Answer the exact question.** If it asks for an angle measure, plug x back in. If it asks for a whole side, add the pieces.
+## Parallel lines: two sizes
 
-## Rules and formulas you need
+A line that crosses two **parallel** lines (a **transversal**) makes eight angles but only two sizes, a small one and a big one, that add to 180°.
 
-Only one fact here, the 180° triangle sum, is on the reference sheet. Learn the rest by heart.
+| Pair | Where | Rule |
+|---|---|---|
+| Corresponding | same spot at each crossing | equal |
+| Alternate interior | between the lines, opposite sides | equal |
+| Same-side interior | between the lines, same side | add to 180° |
 
-### Angle facts
+These rules need the lines to be **stated** parallel (or marked with arrows). Looking parallel isn't enough.
 
-| Angles | Rule |
+```quiz
+Parallel lines ℓ and m are drawn with ℓ above m, and line t crosses both. Where t crosses ℓ, the angle below ℓ and to the right of t is 65°. Where t crosses m, what is the angle above m and to the left of t?
+- 115° :: You used the same-side rule (add to 180°). These two angles are on opposite sides of t.
+* 65° :: Right. Both angles are between the lines, on opposite sides of t: alternate interior angles are equal.
+- 25° :: 25° + 65° = 90°. Parallel-line angles are either equal or add to 180°.
+> Both angles sit between ℓ and m, one right of t and one left of it. That makes them alternate interior angles, so they're equal: 65°.
+```
+
+## Triangle and polygon rules
+
+- The three angles add to **180°** (on the reference sheet). In a right triangle, the other two add to 90°.
+- **Exterior angle:** extend one side past a corner. The outside angle equals the **two far inside angles** added.
+- Any two sides add to more than the third side.
+- A polygon with n sides has inside angles adding to (n − 2) × 180°.
+
+```quiz
+In triangle ABC, side BC is extended past C to a point D. Angle A measures 50° and angle B measures 70°. What is the measure of angle ACD?
+- 60° :: That's angle ACB, the inside angle at C. Angle ACD is the outside angle next to it.
+- 110° :: That's 180° − 70°. Angle ACD makes a straight line with angle ACB, not with angle B.
+* 120° :: Right. The exterior angle equals the two far inside angles: 50° + 70°.
+> Exterior angle rule: ACD = A + B = 50° + 70° = 120°.
+> Long way to check: angle ACB = 180° − 50° − 70° = 60°, and ACD is on a straight line with it, so 180° − 60° = 120°.
+```
+
+## Isosceles: equal sides, equal angles
+
+An **isosceles** triangle has two equal sides. The angles **opposite** those sides are equal, and it works backward too: two equal angles mean two equal sides.
+
+The angle between the two equal sides is the odd one out. An **equilateral** triangle has all sides equal and every angle 60°.
+
+```quiz
+In triangle PQR, PQ = PR, and angle P measures 40°. What is the measure of angle Q?
+- 40° :: Angle P sits between the equal sides, so it's the odd one out. Angles Q and R are the equal pair.
+* 70° :: Right. Q and R are opposite the equal sides, so each is (180° − 40°) ÷ 2.
+- 100° :: That treats P as one of the equal angles. P is between the equal sides; Q and R face them.
+- 140° :: That's what Q and R share together. Split it between the two equal angles.
+> Angle Q faces side PR, and angle R faces side PQ. Those sides are equal, so Q = R.
+> Q + R = 180° − 40° = 140°, so each is 70°.
+```
+
+## Similar triangles: match, then ratio
+
+**Similar** triangles have equal angles, and every side is multiplied by the same k. Prove it with **AA**: two pairs of equal angles. A shared angle, vertical angles or parallel lines usually supply them.
+
+1. Match corners by equal angles. In triangle ABC ∼ triangle DEF, the letter order is the map: A↔D, B↔E, so AB↔DE.
+2. Write `small/big = small/big` with matching sides.
+3. Use **whole** sides, not pieces.
+
+```quiz
+In triangle ABC, point D is on side AB and point E is on side AC, so that DE is parallel to BC. AD = 3, DB = 6 and DE = 4. What is the length of BC?
+- 8 :: You used the piece DB = 6 as the big triangle's side. Its side is the whole AB = 9.
+- 6 :: You paired DB with AB. DB isn't a side of the small triangle; AD is.
+* 12 :: Right. 3/9 = 4/BC, so BC = 12.
+> DE ∥ BC, so angle ADE = angle ABC (corresponding angles), and both triangles share angle A. By AA, triangle ADE ∼ triangle ABC.
+> Small over big: AD/AB = DE/BC. The whole side AB = 3 + 6 = 9.
+> 3/9 = 4/BC, so BC = 12. Check: the big triangle is 3 times the small one, and 4 × 3 = 12.
+```
+
+## Congruent: same size too
+
+**Congruent** triangles are exact copies. The tests:
+
+| Test | Equal parts |
 |---|---|
-| Vertical angles | equal |
-| On a straight line | add to 180° |
-| All the way around a point | add to 360° |
-| Complementary | add to 90° |
-| Corresponding (parallel lines) | equal |
-| Alternate interior or exterior (parallel lines) | equal |
-| Same-side interior (parallel lines) | add to 180° |
+| SSS | three sides |
+| SAS | two sides and the angle between them |
+| ASA, AAS | two angles and one matching side |
+| HL | right triangles: hypotenuse and one leg |
 
-What the names mean:
+Not enough: **AAA** (proves only similar) and **SSA** (the angle isn't between the sides). In "which fact is sufficient" questions, a fact that is always true, like vertical angles, adds nothing.
 
-- **Vertical angles** sit opposite each other where two lines cross.
-- Corresponding angles are in the same position at each crossing, like both top-right.
-- Alternate angles are on opposite sides of the transversal: *interior* means between the parallel lines, *exterior* means outside them.
-- Same-side interior angles are between the parallel lines, on the same side of the transversal.
+```quiz
+In triangles ABC and DEF, angle A equals angle D and angle B equals angle E. Which extra fact proves the triangles are congruent?
+- Angle C equals angle F :: That's already true once two pairs match. Equal angles prove only similar, not congruent.
+* AB = DE :: Right. Two angles and the side between them: ASA.
+- AB = 2 × DE :: That makes ABC twice as big as DEF. They're similar, but not congruent.
+> Two pairs of equal angles already make the triangles similar. A pair of equal matching sides fixes the size too. AB sits between angles A and B, and DE between D and E, so ASA applies.
+```
 
-> **Remember:** A transversal across two parallel lines makes only two angle sizes, a "small" one and a "big" one (all eight are 90° if it's perpendicular). Every small angle equals every other small angle, and small + big = 180°. This works only when the lines are given as parallel.
+## The trap: equal or 180?
 
-### Triangle facts
+The tempting move is to set any two angle expressions equal. Stop first and decide: are these the **same size** (equal), or one big and one small (**add to 180°**)?
 
-| Fact | Rule |
-|---|---|
-| Angle sum | the three angles add to 180° |
-| Exterior angle | equals the two far interior angles added |
-| Isosceles | equal sides face equal angles |
-| Equilateral | all sides equal, every angle 60° |
-| Longest side | faces the biggest angle |
-| Third side | between a − b and a + b |
-| Polygon angle sum | (n − 2) × 180° for n sides |
+Then reread the last line: they may want x, one of the angles, or a different angle.
 
-- An **exterior angle** is made by extending one side past a corner.
-- In an isosceles triangle, the two equal sides sit opposite the two equal angles, and the reverse is true too.
-- The **triangle inequality** says each side is shorter than the other two added together. So if two sides are a and b with a > b, then `a − b < third side < a + b`.
+```quiz
+Lines ℓ and m are parallel, and line t crosses both. The two angles between ℓ and m on the right side of t measure (3x + 15)° and (x + 45)°. What is the measure of the larger angle?
+- 60° :: You set the angles equal. Between the lines on the same side of t, angles add to 180°.
+- 30° :: That's x. Plug it back in to get the angle.
+- 75° :: That's the smaller angle, x + 45.
+* 105° :: Right. 4x + 60 = 180, so x = 30 and 3x + 15 = 105.
+> Same-side interior angles add to 180°: (3x + 15) + (x + 45) = 180, so 4x = 120 and x = 30.
+> The angles are 3(30) + 15 = 105° and 30 + 45 = 75°. The larger one is 105°.
+```
 
-### Similar and congruent triangles
+## Your turn: easy
 
-**Similar triangles** have the same shape: equal angles, and every side multiplied by the same scale factor k. Their areas differ by a factor of k². Two triangles are similar if any of these is true:
+Triangle sum first, then share what's left between the two equal angles.
 
-- **AA:** two pairs of angles are equal. This is by far the most common. A shared angle, vertical angles, or a parallel line usually hands you the second pair.
-- **SAS similarity:** two pairs of sides have the same ratio, and the angles between them are equal.
-- **SSS similarity:** all three pairs of sides have the same ratio.
+```check
+m-1756
+```
 
-**Congruent triangles** are exact copies: same size and shape. They're congruent by SSS, SAS, ASA, AAS, or HL (right triangles with equal hypotenuses and one equal leg). AAA proves only similarity, and SSA (an angle that's not between the two sides) proves nothing.
+## Your turn: medium
 
-> **Tip:** Letter order is a map. If triangle ABC is similar to triangle DEF, then A matches D, B matches E, C matches F, and side AB matches side DE.
+Name the rule for each step: vertical angles, then parallel lines. Check which angle they want.
 
-The two classic similar-triangle pictures:
+```check
+m-1735
+```
 
-- **Triangle inside a triangle:** segment DE crosses triangle ABC parallel to side BC, cutting off a small triangle ADE at the top. It's similar to ABC, and they share angle A.
-- **Bowtie:** two segments cross at a point, and the segments joining their ends on each side are parallel. The two triangles have equal vertical angles at the crossing and equal alternate interior angles.
+## Your turn: hard
 
-## Worked examples
+Find two pairs of equal angles, then match the sides by the corners they connect.
 
-### Example 1: Parallel lines and algebra
+```check
+m-13342
+```
 
-Line ℓ is parallel to line m, and line ℓ is drawn above line m. Line t crosses both lines. Where t crosses ℓ, the angle below ℓ and to the right of t measures (3x − 6)°. Where t crosses m, the angle above m and to the right of t measures (2x + 16)°. What is the value of x?
+## Recap
 
-- (A) 22
-- (B) 34
-- (C) 84
-- (D) 96
-
-**Solution**
-
-Both angles are between the parallel lines and on the same side (right) of t, so they're same-side interior angles. Those add to 180°, not equal.
-
-`(3x − 6) + (2x + 16) = 180`, so 5x + 10 = 180, 5x = 170, and x = 34.
-
-Check: the angles are 3(34) − 6 = 96° and 2(34) + 16 = 84°, which add to 180°. One is "big" and one is "small," as expected.
-
-(A) comes from setting the angles equal. (C) and (D) are the two angle measures, not x.
-
-**Answer:** (B)
-
-### Example 2: A triangle inside a triangle
-
-In triangle ABC, point D lies on side AB and point E lies on side AC, so that segment DE is parallel to side BC. AD = 6, DB = 4, and DE = 9. What is the length of BC?
-
-- (A) 6
-- (B) 13.5
-- (C) 15
-- (D) 22.5
-
-**Solution**
-
-DE is parallel to BC, so angle ADE equals angle ABC (corresponding angles), and both triangles share angle A. By AA, triangle ADE is similar to triangle ABC.
-
-Match the sides: AD goes with AB, and DE goes with BC. The whole side AB = 6 + 4 = 10.
-
-`AD/AB = DE/BC`, so 6/10 = 9/BC. Cross-multiply: 6 × BC = 90, so BC = 15.
-
-Sense check: BC should be longer than DE, and the big triangle is 10/6 times the small one. 9 × 10/6 = 15.
-
-(B) uses the pieces 6 and 4 as if they were matching sides (9 × 6/4). (D) pairs DB with DE (9 × 10/4). (A) flips the piece ratio (9 × 4/6) and gives a BC shorter than DE, which can't happen.
-
-**Answer:** (C)
-
-### Example 3: Isosceles triangle with an extended side
-
-In triangle PQR, PQ = QR. Side PR is extended past R to a point S, so P, R and S lie on one straight line. Angle QRS measures 115°. What is the measure of angle PQR?
-
-- (A) 50°
-- (B) 57.5°
-- (C) 65°
-- (D) 115°
-
-**Solution**
-
-Angles QRP and QRS form a straight line, so angle QRP = 180° − 115° = 65°.
-
-PQ = QR, so the angles opposite those sides are equal. Angle QRP is opposite side PQ, and angle QPR is opposite side QR. So angle QPR = 65° too.
-
-Angle PQR = 180° − 65° − 65° = 50°.
-
-Check with the exterior angle rule: 115° should equal the two far-away angles, 65° + 50° = 115°. It does.
-
-(C) is a base angle, not the top angle. (B) treats 65° as the top angle and splits the rest: (180 − 65)/2. (D) is the outside angle.
-
-**Answer:** (A)
-
-### Example 4: Triangle inequality (student-produced response)
-
-Two sides of a triangle have lengths 7 and 12. The length of the third side is a whole number. What is the greatest possible perimeter of the triangle?
-
-**Solution**
-
-The third side must be longer than 12 − 7 = 5 and shorter than 12 + 7 = 19. It can't equal 19, because then the two short sides would lie flat along the long side and there'd be no triangle.
-
-The greatest whole number less than 19 is 18. Perimeter = 7 + 12 + 18 = 37.
-
-**Answer:** 37
-
-## Traps to avoid
-
-- **Setting same-side interior angles equal.** They add to 180°. If the two angles look different in size, they can't be equal.
-- **Using parallel-line rules on lines that aren't parallel.** Looking parallel doesn't count. The problem must say so or mark the lines with matching arrows.
-- **Reporting x when they asked for the angle** (or the reverse). The choices often include both.
-- **Using part of a side in a similarity ratio.** In a triangle inside a triangle, the big triangle's side is the *whole* side, so add the pieces first.
-- **Matching the wrong sides.** Match sides by the equal angles across from them, or by the letter order, never by where they sit on the page.
-- **Mixing up an isosceles triangle's base angles and top angle.** The equal angles are across from the equal sides.
-- **Thinking AAA proves congruence.** Equal angles mean same shape, not same size.
-- **Allowing "equal to" in the triangle inequality.** With sides 7 and 12, a third side of 5 or 19 is impossible. The inequality is strict.
-- **Scaling angles.** A scale factor stretches sides, but angles never change.
-
-## Quick checklist
-
-- Did I mark every given angle, equal side, and parallel line on my sketch?
-- Did I name the relationship (equal, adds to 180°, similar, isosceles) before writing an equation?
-- Are the lines actually given as parallel?
-- Similar triangles: did I match corners, use whole sides, and keep small-over-big on both sides?
-- Did I plug x back in if the question wants an angle?
-- Does my answer make sense: angles add to 180°, and the biggest side faces the biggest angle?
+- Name the rule before each number: straight line 180°, vertical angles equal, triangle 180°.
+- Parallel lines (only when stated): equal, or add to 180°? Decide before writing the equation.
+- Isosceles: the equal angles face the equal sides. Exterior angle = the two far inside angles.
+- Similar triangles: AA, match corners by letter order, use whole sides, small/big = small/big.
+- Congruent needs at least one pair of equal sides. AAA and SSA don't prove it.
+- Answer the exact question: x, an angle, or a side.

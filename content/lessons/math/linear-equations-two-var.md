@@ -3,182 +3,178 @@ title: Linear Equations in Two Variables
 skill: linear-equations-two-var
 domain: algebra
 section: math
-summary: Read slope and intercepts from any form of a line, handle parallel and perpendicular lines, and turn word problems into equations.
-minutes: 11
+summary: Read slope and intercepts from any form of a line, use parallel and perpendicular slopes, and read Ax + By = C in a story.
 ---
 
-> **Key idea:** Find the slope first: read m from `y = mx + b`, or use −A/B for `Ax + By = C`. Parallel lines share that slope; perpendicular lines use its negative reciprocal.
+## Spot it: two letters, one line
 
-## What this question looks like
+Equations like y = 3x − 5 or 4x + 7y = 140 have **two letters**, each to the first power. A *solution* is a pair (x, y) that makes the equation true. All the solutions together form a straight line.
 
-These questions give you a straight line in some form and ask for its slope, a point, or a matching equation. A **linear equation in two variables** has two unknowns (usually x and y), each to the first power and never multiplied together. Every point on its line is a solution.
+To test a point, put its x and its y into the equation. In (x, y), x always comes first.
 
-Typical stems:
+```quiz
+Which point lies on the line 3x + 2y = 12?
+* (2, 3)
+- (3, 2) :: You swapped x and y. For (3, 2): 3(3) + 2(2) = 13, not 12.
+- (0, 4) :: With x = 0, 2y = 12, so y = 6. You divided 12 by 3, the x-coefficient.
+> Put x = 2 and y = 3 in: 3(2) + 2(3) = 6 + 6 = 12. True, so (2, 3) is on the line.
+```
 
-- A story with two quantities and a total: "Adult tickets cost $12, child tickets $8, and the club collected $480. Which equation shows this?"
-- An equation in **standard form**, like `4x − 6y = 18`, with a question about its slope or intercepts.
-- "Line k is parallel (or perpendicular) to line ℓ and passes through (3, 5)…"
-- A line through two points, or a point with an unknown coordinate, like "(k, 0) lies on the line…"
-- "In the equation `0.08m + g = 22`, what does 0.08 represent?"
+## Find the slope: get y alone
 
-## The method
+In **y = mx + b**, m is the slope and b is the y-intercept.
 
-Use the same routine on every line question; word problems add four steps of their own.
+In **standard form**, Ax + By = C, the number in front of x is **not** the slope. Solve for y, or use the shortcut:
 
-### Line questions
+slope = −A/B, y-intercept = C/B
 
-1. **Spot the form.** Slope-intercept, standard, point-slope, or only words, a table or a graph?
-2. **Get the slope.** Read m from `y = mx + b`, use −A/B for `Ax + By = C`, or solve for y.
-3. **Get a point.** Use the y-intercept, a given point, or an intercept (set x or y to 0).
-4. **Apply the condition.** Parallel: same slope. Perpendicular: negative reciprocal. A point "on the line": plug it in.
-5. **Write the line.** Point-slope form `y − y₁ = m(x − x₁)` is fastest. Then rearrange to match the choices.
-6. **Check.** Plug a known point into your answer. If the choices are in another form, test the point in each choice instead of converting all four.
+Example: 6x + 3y = 9 becomes 3y = −6x + 9, so y = −2x + 3. The shortcut agrees: −6/3 = −2.
 
-### Word problems
+```quiz
+What is the slope of the line 3x + 4y = 20?
+* −3/4
+- 3 :: That's the x-coefficient. It is the slope only when y is alone.
+- 3/4 :: Moving 3x across makes it −3x: 4y = −3x + 20.
+- −4/3 :: Upside down. The slope is −A/B, with the x-coefficient on top.
+> Solve for y: 4y = −3x + 20, so y = −(3/4)x + 5. The slope is −3/4.
+> Shortcut: −A/B = −3/4.
+```
 
-1. Define each variable with units: "a = number of adult tickets".
-2. Multiply each **rate** ("$12 each", "per pound") by its own variable.
-3. Put a total alone on one side. Add any starting amount.
-4. Re-read the question: does it want the equation, a value, or what a number means?
+## Intercepts: set the other to 0
 
-## Rules and formulas you need
+- **x-intercept:** the line crosses the x-axis, so **y = 0**.
+- **y-intercept:** the line crosses the y-axis, so **x = 0**.
 
-These forms and slope facts cover almost every question.
+In standard form, just cover the other term. In 3x + 5y = 30, x = 0 leaves 5y = 30, so the y-intercept is (0, 6).
 
-| Form | Looks like | What you read off |
-|---|---|---|
-| Slope-intercept | `y = mx + b` | slope m, y-intercept (0, b) |
-| Standard | `Ax + By = C` | slope −A/B |
-| Point-slope | `y − y₁ = m(x − x₁)` | slope m, point (x₁, y₁) |
-| Horizontal | `y = k` | slope 0 |
-| Vertical | `x = h` | slope undefined (not 0) |
+> **Tip:** Ugly numbers? Type the equation into Desmos as given, like `3x+5y=30`, and click the line. Gray dots appear at both intercepts. Click one to see its coordinates.
 
-In standard form, the y-intercept is C/B and the x-intercept is C/A.
+```quiz
+The line 2x − 5y = 20 crosses the x-axis at (a, 0). What is the value of a?
+* 10
+- −4 :: That's where it crosses the y-axis. For the x-axis, set y = 0.
+- 4 :: Setting y = 0 removes the −5y term. You divided 20 by 5 instead of by 2.
+> On the x-axis, y = 0: 2a − 5(0) = 20, so 2a = 20 and a = 10.
+> The y-intercept is different: x = 0 gives −5y = 20, so y = −4.
+```
 
-| Relationship | Slopes | Example |
-|---|---|---|
-| Parallel | equal, different intercepts | 2/3 and 2/3 |
-| Perpendicular | negative reciprocals (product −1) | 2/3 and −3/2 |
-| Same line | equal slopes and intercepts | see below |
+## Line through two points
 
-### Facts to know cold
+1. **Slope** from the two points: m = (y_2 − y_1)/(x_2 − x_1).
+2. **Point-slope form** with either point: y − y_1 = m(x − x_1).
+3. Simplify to match the choices.
 
-- **Slope formula:** m = (y₂ − y₁)/(x₂ − x₁). Put the same point first on top and bottom.
-- **Intercepts:** for the x-intercept set y = 0; for the y-intercept set x = 0.
-- A point is on a line exactly when its coordinates make the equation true.
-- Point-slope signs flip: `y − 3 = 2(x + 4)` passes through (−4, 3).
-- Multiplying a whole equation by a number keeps the same line. So `y = (2/3)x + 3` and `2x − 3y = −9` are one line, and so are `y = 2x + 1` and `4x − 2y = −2`.
+Watch the signs. With the point (−1, 5), x − (−1) becomes **x + 1**.
 
-### Reading numbers in a story
+```quiz
+A line passes through (−1, 5) and (3, −3). What is the y-intercept of the line?
+* 3
+- 7 :: Sign slip: x − (−1) is x + 1, not x − 1.
+- 4.5 :: Your slope is upside down. Rise over run is −8/4 = −2.
+- 5 :: 5 is the y-value at x = −1. The y-intercept needs x = 0.
+> Slope: (−3 − 5)/(3 − (−1)) = −8/4 = −2.
+> Point-slope form with (−1, 5): y − 5 = −2(x + 1), so y = −2x − 2 + 5 = −2x + 3.
+> The y-intercept is 3. Check (3, −3): −2(3) + 3 = −3.
+```
 
-- In `12a + 8c = 480`, 12 is the price of one adult ticket and 480 is the total collected.
-- An intercept means "the other quantity is 0". Here a = 480/12 = 40: 40 adult tickets if no child tickets sold.
-- Solved for one variable, `c = 60 − 1.5a`. The slope −1.5 means each extra adult ticket replaces 1.5 child tickets for the same total.
+## Parallel and perpendicular
 
-## Worked examples
+- **Parallel** lines have the **same slope**.
+- **Perpendicular** slopes are *negative reciprocals*: flip the fraction and change the sign. 2/3 becomes −3/2, and 4 becomes −1/4. The two slopes multiply to −1.
 
-### Example 1: Build the equation, then solve
+Often every choice passes through the given point. Then only the slope decides.
 
-A school club sells small candles for $6 each and large candles for $15 each. Last month the club made exactly $540 from candle sales. If the club sold 30 small candles, how many large candles did it sell?
+```quiz
+Line k is parallel to the line 4x − 2y = 7 and passes through (1, 5). Which equation defines line k?
+* y = 2x + 3
+- y = −2x + 7 :: Lost a sign: −A/B = −4/(−2) = 2, which is positive.
+- y = 4x + 1 :: 4 is the x-coefficient, not the slope. Solve for y first.
+- y = −(1/2)x + 5.5 :: That's the perpendicular slope. Parallel lines share the slope 2.
+> Slope of 4x − 2y = 7: −A/B = −4/(−2) = 2. Line k is parallel, so its slope is 2 too.
+> Through (1, 5): 5 = 2(1) + b, so b = 3.
+> All four choices pass through (1, 5). Only the slope picks the answer.
+```
 
-**Solution**
+## Stories: Ax + By = C
 
-Let s = small candles and l = large candles. Each rate is multiplied by its own variable, and the total sits alone:
+Two items share one total. A club sells x T-shirts at $8 and y hats at $5 and takes in $200: 8x + 5y = 200.
 
-`6s + 15l = 540`
+| Part | Meaning |
+|---|---|
+| 8 | price of one T-shirt |
+| 8x | money from all T-shirts |
+| 200 | total money |
 
-Plug in s = 30: 6(30) + 15l = 540, so 180 + 15l = 540. Then 15l = 360 and l = 24.
+An intercept means **none of the other item**. Given one amount, substitute it and solve for the other.
 
-Check: 180 + 15(24) = 180 + 360 = 540. Correct.
+```quiz
+In 8x + 5y = 200, x is the number of T-shirts and y is the number of hats sold. What is the best interpretation of the y-intercept?
+* 40 hats and no T-shirts were sold.
+- 25 T-shirts and no hats were sold. :: That's the x-intercept, where y = 0. The y-intercept has x = 0.
+- 25 hats and no T-shirts were sold. :: With x = 0, 5y = 200. You divided by 8, the T-shirt price.
+- Each hat costs $40. :: 40 is a number of hats. Each hat costs $5.
+> The y-intercept has x = 0: no T-shirts. Then 5y = 200, so y = 40.
+> The point (0, 40) means 40 hats and no T-shirts bring in $200.
+```
 
-**Answer:** 24
+## Solve for one letter
 
-### Example 2: Parallel line from standard form
+Some questions give a formula and ask for one letter "in terms of" the others. Use the same moves as for x: distribute, move the other terms across, then divide. Treat the other letters like numbers.
 
-In the xy-plane, line ℓ is defined by `4x − 6y = 18`. Line k is parallel to line ℓ and passes through the point (3, 5). Which equation defines line k?
+```quiz
+5a = 2(b + c). Which equation expresses b in terms of a and c?
+* b = 5a/2 − c
+- b = 5a/2 + c :: To undo + c, subtract c from both sides.
+- b = (5a − c)/2 :: The 2 multiplies c too: 2(b + c) = 2b + 2c.
+- b = 10a − c :: To undo × 2, divide by 2. You multiplied.
+> Distribute: 5a = 2b + 2c. Subtract 2c: 5a − 2c = 2b.
+> Divide by 2: b = (5a − 2c)/2, which is 5a/2 − c.
+> Faster: divide by 2 first, so b + c = 5a/2, then subtract c.
+```
 
-- (A) `y = (2/3)x + 3`
-- (B) `y = −(2/3)x + 7`
-- (C) `y = −(3/2)x + 19/2`
-- (D) `y = (2/3)x − 3`
+## Trap: flip and change the sign
 
-**Solution**
+A perpendicular slope needs **both** moves. Doing only one gives a wrong answer that is usually among the choices.
 
-Slope of ℓ: −A/B = −4/(−6) = 2/3. You can also solve for y: −6y = −4x + 18, so y = (2/3)x − 3.
+```quiz
+Line k is perpendicular to the line 3x + 2y = 8. What is the slope of line k?
+* 2/3
+- −1/3 :: 3 is the x-coefficient, not the slope. In standard form the slope is −A/B = −3/2.
+- 3/2 :: Trap: you changed the sign of −3/2 but didn't flip it.
+- −2/3 :: Trap: you flipped −3/2 but kept the sign. Perpendicular slopes have opposite signs.
+> Slope of 3x + 2y = 8: −A/B = −3/2.
+> Flip it and change the sign: 2/3. Check: (−3/2) × (2/3) = −1.
+```
 
-Parallel means the same slope, 2/3. Plug in (3, 5): 5 = (2/3)(3) + b, so 5 = 2 + b and b = 3. Line k is `y = (2/3)x + 3`.
+## Your turn: easy
 
-(B) loses the sign when dividing by −6. (C) uses the perpendicular slope. (D) is line ℓ itself, and it misses the point: (2/3)(3) − 3 = −1, not 5.
+Standard form: use −A/B, or solve for y.
 
-**Answer:** (A)
+```check
+m-0718
+```
 
-### Example 3: Perpendicular line with an unknown point
+## Your turn: medium
 
-In the xy-plane, line p passes through the points (−2, 1) and (4, 4). Line q is perpendicular to line p and passes through the points (0, 6) and (k, 0). What is the value of k?
+Set y = 0 for one intercept and x = 0 for the other.
 
-**Solution**
+```check
+m-0812
+```
 
-Slope of p: (4 − 1)/(4 − (−2)) = 3/6 = 1/2.
+## Your turn: hard
 
-Perpendicular slope: flip and change the sign, which gives −2. Check: (1/2)(−2) = −1.
+Find the slope of line s, take its negative reciprocal, then use the slope formula.
 
-Line q goes through (0, 6), so its y-intercept is 6: `y = −2x + 6`.
+```check
+m-15640
+```
 
-(k, 0) is on q, so 0 = −2k + 6 and k = 3.
+## Recap
 
-If you used slope 2 (forgot the sign), you'd get k = −3. If you used −1/2 (forgot to flip), you'd get k = 12. Neither one gives a perpendicular line.
-
-**Answer:** 3
-
-### Example 4: What does the coefficient mean?
-
-A delivery van starts the day with a full tank of fuel. The equation `0.08m + g = 22` relates the number of miles the van has driven, m, to the number of gallons of fuel left in the tank, g. Which of the following is the best interpretation of 0.08 in this context?
-
-- (A) The van uses 0.08 gallons of fuel for each mile it drives.
-- (B) The van can drive 0.08 miles on each gallon of fuel.
-- (C) The tank holds 0.08 gallons of fuel when it is full.
-- (D) The amount of fuel in the tank increases by 0.08 gallons for each mile driven.
-
-**Solution**
-
-Solve for g to see the relationship clearly: `g = 22 − 0.08m`. When m goes up by 1 mile, g goes down by 0.08 gallons. So 0.08 is gallons used per mile.
-
-(B) flips the rate. It would be miles per gallon, which is 1 ÷ 0.08 = 12.5. (C) describes the starting amount, which is 22 gallons (m = 0). (D) gets the direction wrong.
-
-Bonus: the m-intercept is 22 ÷ 0.08 = 275, so the van can drive 275 miles before the tank is empty.
-
-**Answer:** (A)
-
-## Traps to avoid
-
-Each of these wrong answers shows up in the choices on purpose.
-
-- **Slope read straight from standard form.** In `5x + 2y = 11` the slope is −5/2, not 5. The x-coefficient is the slope only when y is alone.
-- **Sign lost while solving for y.** Dividing by a negative y-coefficient flips the sign of every term.
-- **Half of the perpendicular rule.** You must flip AND change the sign. Choices that do only one step are usually offered.
-- **Parallel and perpendicular mixed up.** Re-read the word before you pick; the other slope is usually a choice.
-- **Calling the same line "parallel".** Same slope and same intercept is one line, not two parallel lines.
-- **Point-slope sign flip.** `y + 2 = 3(x − 5)` passes through (5, −2), not (−5, 2).
-- **Prices swapped in a word problem.** Pair each price with its own item. Write "s = small" next to your equation.
-- **Rate turned upside down.** "Gallons per mile" and "miles per gallon" are different numbers. Ask what unit the coefficient carries.
-
-## Desmos shortcut
-
-Desmos graphs any form as typed, so you never need to rearrange `4x − 6y = 18` first.
-
-- **Intercepts:** type the equation, click the line, and click the gray dots where it crosses the axes.
-- **Slope or a line through two points:** put the points in a table (columns x₁ and y₁) and type `y1 ~ m x1 + b`. Desmos shows m and b as decimals, so turn 0.666667 back into 2/3.
-- **Testing choices:** type the given line, the point `(3, 5)`, and each choice. The right one hits the point and looks parallel (or crosses at a right angle). Confirm with slopes, since lines can *look* parallel without being parallel.
-- **Unknown constant:** type `y = −2x + 6` and `(k, 0)`, then drag the k slider until the point sits on the line. Or just click the x-intercept.
-- **Perpendicular slope:** type `−1/(2/3)` to get the negative reciprocal without a sign slip.
-
-> **Tip:** Desmos only graphs x and y. If a question uses letters like s and l, swap them for x and y (and track which is which), or solve by hand. For a one-step word problem, algebra is faster.
-
-## Quick checklist
-
-- Which form is this, and what is the slope? (−A/B for standard form.)
+- Test a point by putting both coordinates into the equation.
+- Standard form Ax + By = C: the slope is −A/B, or solve for y.
+- x-intercept: set y = 0. y-intercept: set x = 0.
+- Two points: slope first, then y − y_1 = m(x − x_1).
 - Parallel: same slope. Perpendicular: flip and change the sign.
-- Did I plug the given point into my final equation?
-- In a word problem, is each price or rate paired with the right variable?
-- What unit does each coefficient carry, and which way is the change?
-- If the choices are in another form, can I test a point instead of converting?
+- In a story, a coefficient is a price per item and the constant is the total.

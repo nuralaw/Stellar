@@ -3,241 +3,191 @@ title: Boundaries
 skill: boundaries
 domain: conventions
 section: rw
-summary: Pick the right punctuation, or none at all, by checking whether each side of the blank is a complete sentence.
-minutes: 16
+summary: Pick the right mark, or no mark, by testing whether the words on each side of the blank could stand alone as a sentence.
 ---
 
-> **Key idea:** Punctuation follows structure, not sound: cover each side of the blank, ask "Could this stand alone as a sentence?", and let the answer decide the mark.
+## Same words, moving marks
 
-## What this question looks like
+A Boundaries question gives you a short text with one blank. All four choices hold the **same words**; only the punctuation changes:
 
-A Boundaries question gives you a short text with a blank, and the four choices usually differ only in punctuation. The question always reads: *Which choice completes the text so that it conforms to the conventions of Standard English?*
+`river,` · `river;` · `river:` · `river`
 
-A typical set of choices:
+Sometimes a small word such as *and* or *which* comes along with the mark. If the words themselves change (*is / are*, *its / their*), it's the other grammar skill, Form, Structure, and Sense.
 
-- (A) `ocean,`
-- (B) `ocean;`
-- (C) `ocean:`
-- (D) `ocean`
+Expect about 5 to 8 of these per test. Wrong choices are built to sound fine, so your ear can't decide. Structure does.
 
-Three more things to know about the choices:
+```quiz
+Which set of choices signals a Boundaries question?
+- is / are / was / were :: The words change form. That's Form, Structure, and Sense (verb agreement).
+- however / therefore / for example / instead :: Choosing a linking word by its meaning is the Transitions skill.
+* ocean, / ocean; / ocean: / ocean :: Right. The word stays the same and only the mark changes.
+> In Boundaries, the words stay put and the marks move or swap. Your job is to decide which mark the structure allows.
+```
 
-- Some choices also move a transition like *however* or *therefore*, or add a small word like *and* or *which*.
-- There is no "NO CHANGE" option.
-- "No punctuation at all" is a real choice, and it's right more often than students expect.
+## Could it stand alone?
 
-Boundaries is one of the two skills in **Standard English Conventions**, which is about 26% of the Reading and Writing section (11–15 questions per test). Once the rules are automatic, most of these take 30–45 seconds.
+A **sentence** (an independent clause) has a subject, a main verb, and nothing that makes it lean on another clause.
 
-## The method
+- Hook words like *because, although, when, which, who* make a clause **dependent**: *because the dam broke*. So does *that* right after a noun: *a dam that broke*.
+- An *-ing* word or *to* + verb can't be the main verb: *covering the fields*.
+- *This, it, they* and *there* are **not** hook words. *This flooded the town* is a full sentence.
 
-The method is one test, done on both sides of the blank: could these words stand alone as a sentence? You need four terms to run it.
+Cover each side of the blank and ask: could it stand alone?
 
-### Four words you'll use
+```quiz
+Which of these could stand alone as a sentence?
+- Because the river rose overnight :: *Because* is a hook word, so this clause leans on another one.
+- Covering the road with mud :: There's no subject, and an *-ing* word can't be the main verb.
+- The river, swollen after days of rain :: There's a subject, but *swollen* only describes it. No main verb.
+* This closed the road for a week :: Right. Subject *this*, main verb *closed*, and no hook word.
+> Only the last one has a subject, a main verb and no hook word. Don't let *this* or *it* fool you: they can start a full sentence.
+```
 
-- A **clause** is a group of words with a subject (who or what) and a real verb (what the subject does or is).
-- An **independent clause** can stand alone as a full sentence: *The bridge collapsed.*
-- A **dependent clause** has a subject and verb but can't stand alone, because it starts with a hook word like *because, although, when, while, if, since, unless, after, whereas, which, who* or *that*: *because the bridge collapsed.*
-- A **phrase** has no subject-verb pair at all: *after the storm*, *a famous engineer*, *hoping for rain*.
+## Two sentences need a strong join
 
-*-ing* words and *to* + verb (*showing*, *to show*) don't count as real verbs on their own. "Scientists showing that ice melts" is not a sentence.
+When **both** sides could stand alone, only some joins work. **FANBOYS** are the seven joining words *for, and, nor, but, or, yet, so*.
 
-### The routine
+| Join | Verdict |
+|---|---|
+| Period or semicolon | Correct |
+| Comma + FANBOYS word | Correct |
+| Colon, if part two explains part one | Correct |
+| Comma alone | Wrong: **comma splice** |
+| No mark | Wrong: **run-on** |
 
-1. **Glance at the choices.** If only the punctuation changes, it's Boundaries. Note which marks are on offer.
-2. **Find the break.** Read the whole text so you know exactly where the blank sits.
-3. **Test the left side.** Cover everything after the blank. Could the words before it stand alone as a sentence?
-4. **Test the right side.** Cover everything before the blank. Could the words after it stand alone?
-5. **Match the rules below.** Two full sentences need a strong join. A sentence plus a non-sentence takes a comma, colon, dash or nothing, never a semicolon or period.
-6. **Check for pairs.** If the blank ends an extra, removable chunk, look back for the mark that opened it and close with the same mark.
-7. **Check for bonds.** Between a subject and its verb, a verb and its object, or a title and a name, the answer is almost always no punctuation.
-8. **Cross out twins.** If two choices do the same job (say, a period and a semicolon with nothing else different), neither can be the only right answer.
+> **Tip:** A period and a semicolon do the same job here. If both are offered with nothing else changed, neither can be the answer.
 
-## Rules and formulas you need
+```quiz
+The bridge was closed for ______ drivers had to take the long road around the lake.
+- repairs, :: Comma splice: two full sentences held together by only a comma.
+* repairs; :: Right. Both sides are full sentences, and a semicolon can join them.
+- repairs :: Run-on: two full sentences with nothing between them.
+- repairs. Because :: Fragment: "Because drivers had to take the long road around the lake" can't stand alone.
+> Left: "The bridge was closed for repairs." Right: "Drivers had to take the long road around the lake." Both stand alone, so they need a period, a semicolon, or a comma plus a word like *so*.
+```
 
-### Joining two complete sentences
+## A semicolon means a period
 
-This is the most tested rule in the skill, so learn this table cold. **FANBOYS** are the seven joining words *for, and, nor, but, or, yet, so*.
+A semicolon is legal only where a period would be: a full sentence on **both** sides. (Exception: between list items that contain commas.) When one side is just a piece (a phrase or a dependent clause), use a softer join:
 
-| Join | OK? | Example |
-|---|---|---|
-| Period | Yes | The lake froze. Kids skated on it. |
-| Semicolon | Yes | The lake froze; kids skated on it. |
-| Comma + FANBOYS | Yes | The lake froze, so kids skated on it. |
-| Colon | Yes, if part 2 explains part 1 | The lake was safe: the ice was a foot thick. |
-| Single dash | Yes, same job as a colon | The lake was safe—the ice was a foot thick. |
-| Comma alone | No: comma splice | The lake froze, kids skated on it. |
-| Nothing | No: run-on | The lake froze kids skated on it. |
-| Comma + *however* | No: still a comma splice | The lake froze, however, nobody skated. |
-| Semicolon + FANBOYS | No: two joins, one is enough | The lake froze; and kids skated on it. |
-| FANBOYS, no comma | No: comma goes before it | The lake froze and kids skated on it. |
+| Pattern | Use |
+|---|---|
+| Piece, then sentence | comma |
+| Sentence, then list or explanation | colon or dash |
+| Sentence, then extra detail | comma |
+| Sentence, then *because / if / when*… | usually no mark |
 
-A comma splice is two full sentences held together by only a comma. A run-on has nothing joining them at all.
+A colon also needs a full sentence **before** it. *The kit includes: a map and a compass* is wrong.
 
-> **Tip:** Treat the semicolon as a period in disguise. Swap in a period in your head: if both halves still work as sentences, the semicolon is fine; if either half falls apart, it's wrong.
+```quiz
+The town's famous bread uses only three ______ flour, water, and salt.
+- ingredients; :: A semicolon needs a full sentence after it, and "flour, water, and salt" is only a list.
+- ingredients, these are :: "These are flour, water, and salt" is a sentence, so a comma alone makes a comma splice.
+* ingredients: :: Right. A full sentence comes first, and the list after the colon names the three ingredients.
+- ingredients. :: "Flour, water, and salt." has no verb, so the period leaves a fragment.
+> The left side stands alone; the right side doesn't. The first part promises three ingredients, and the colon hands over the list.
+```
 
-### Joining a sentence to a non-sentence
+## However can't join sentences
 
-When one side isn't a complete sentence, a semicolon or period is never right. Use this instead:
+*However, therefore, for example* and *as a result* are **transitions**, not FANBOYS. They show how two ideas relate, but they can't join two sentences by themselves.
 
-- **Dependent clause or phrase first:** a comma after it. *When the ice melted, the kids went home.*
-- **Sentence first, then *because*, *that*, *if* or *when*:** usually nothing. *The kids went home because the ice melted.*
-- **Sentence first, then a list, example or explanation:** a colon or a dash. *They packed three things: skates, gloves, and cocoa.*
-- **Sentence first, then an extra description:** a comma or a dash. *They packed cocoa, a family tradition.*
+| Where it sits | Punctuation |
+|---|---|
+| Between two sentences | `; however,` or `. However,` |
+| Inside one sentence | `, however,` |
 
-A period in front of a non-sentence creates a **fragment**: a piece of a sentence pretending to be a whole one.
+Quick test: a transition can move around in its sentence (*The road, however, stayed open*). *But* can't.
 
-### Semicolons have only two jobs
+```quiz
+The first test flight ended in a ______ the second flight went perfectly.
+- crash, however, :: Comma splice. *However* can't join two sentences, so a comma in front of it isn't enough.
+- crash however, :: Run-on: no mark separates the two sentences.
+* crash; however, :: Right. The semicolon joins the two sentences, and a comma follows *however*.
+> "The first test flight ended in a crash" and "the second flight went perfectly" are both full sentences. Between them, a transition needs a semicolon or period before it and a comma after it.
+```
 
-1. Joining two complete sentences.
-2. Separating list items that already contain commas: *The tour visited Lima, Peru; Quito, Ecuador; and Bogotá, Colombia.*
+## Close what you opened
 
-### Colons and single dashes
+An **add-on** is extra detail the sentence could lose. Delete test: take it out. If a full sentence with the same message is left, it was an add-on.
 
-- The part before the mark must be a complete sentence.
-- The part after can be anything: a list, a phrase, a single word or a full sentence.
-- A colon promises "here's what I mean." Use it when the second part explains, lists or names what the first part set up.
+In the middle of a sentence, an add-on needs a **matching pair** of marks: two commas, two dashes, or two parentheses. When the blank ends an add-on, look back. Whatever mark opened it must close it.
 
-### Transition words
+```quiz
+The axolotl—a salamander that keeps its gills as an ______ can regrow lost legs and even parts of its heart.
+- adult, :: The add-on opened with a dash, so a comma can't close it.
+- adult; :: A semicolon never closes an add-on, and the words before it aren't a full sentence.
+- adult :: Nothing closes the add-on, so it runs straight into "can regrow."
+* adult— :: Right. The dash after "axolotl" opened the add-on, and a second dash closes it.
+> Delete the add-on and you get "The axolotl can regrow lost legs and even parts of its heart." That works, so the add-on needs a pair. It opened with a dash, so it closes with one.
+```
 
-Words like *however, therefore, moreover, for example, as a result, in fact, nevertheless* and *thus* are not joining words. They can't glue two sentences together the way *and* or *but* can.
+## Glued words take no mark
 
-- **Between two sentences:** a semicolon or period before the word, a comma after. *The plan was cheap; however, it was slow.*
-- **Inside one sentence, as an interruption:** a comma on both sides. *The second trial, however, failed.*
-- **Placing the semicolon:** find the exact spot where the first complete idea ends. The transition goes with the idea it introduces.
+Some neighbors are glued together. No single mark may split them.
 
-> **Tip:** Not sure if a word is a FANBOYS word or a transition? Try moving it. Transitions can move around (*it was, however, slow*). FANBOYS words can't.
+| Glued pair | Example |
+|---|---|
+| Subject + verb | The bridge across the river **was** closed. |
+| Verb + object | The study **found that** sleep helps. |
+| Title + name | painter **Frida Kahlo** |
+| *such as* + examples | birds **such as owls** |
 
-### Extra information
+Title and name: if the name tells you *which one*, it's glued. If the sentence already points to one person (*the lab's director, Ana Ruiz,*), the name is an add-on and takes commas.
 
-Some words add detail the sentence doesn't need. To check, use the **lift-out test**: remove the chunk, and if the sentence is still complete and means the same basic thing, the chunk is extra.
+```quiz
+In 1977, Kenyan ______ founded the Green Belt Movement, which has planted millions of trees in Kenya.
+- environmentalist, Wangari Maathai, :: The name tells you which environmentalist, so it isn't an add-on. No commas.
+* environmentalist Wangari Maathai :: Right. The title and name are glued, and so are the name and its verb.
+- environmentalist Wangari Maathai, :: This comma splits the subject from its verb, *founded*.
+- environmentalist: Wangari Maathai :: A colon needs a full sentence before it, and "In 1977, Kenyan environmentalist" isn't one.
+> The name picks out which Kenyan environmentalist, so nothing separates title and name. Nothing goes between the subject and *founded* either.
+```
 
-- Set extra information off with a matched pair: two commas, two dashes or two parentheses. Never mix them.
-- If the extra chunk ends the sentence, one comma or dash before it is enough. The period closes it.
-- Essential information gets no punctuation: a name right after a title (*the poet Maya Angelou*), most *that* clauses, and any detail that tells you *which one*.
+## Trap: the breath pause
 
-### Where punctuation never goes
+A long subject makes you want to pause before the verb, and wrong choices put a comma right there. A pause is not a rule: **one mark never splits a subject from its verb**.
 
-- Between a subject and its verb, even when the subject is long
-- Between a verb and its object
-- Between a preposition (*of, in, by, with*…) and its object
-- Right after *such as* or *including* (a comma can go before *such as*, never after it)
-- After a FANBOYS word that joins two sentences ("but, it rained" is wrong)
-- Between a title or description and the name it identifies
+Find the verb, then ask who or what does it. If the blank sits between them and no add-on is open, pick no mark.
 
-### End marks
+```quiz
+The tall stone tower at the edge of the old fishing ______ was built in 1642 as a lighthouse.
+- village, :: The pause trap. A single comma can't split the subject from its verb, *was built*.
+- village; :: A semicolon needs full sentences on both sides, and the left side has no verb.
+* village :: Right. Everything up to "village" is the subject, and nothing separates it from its verb.
+- village— :: No dash opened an add-on earlier, so a lone dash just splits the subject from its verb.
+> Subject: "The tall stone tower at the edge of the old fishing village." Verb: "was built." However long the subject gets, it stays glued to its verb.
+```
 
-A direct question ends with a question mark: *Why do cats purr?* A reported question ends with a period: *Scientists have long asked why cats purr.*
+## Your turn: easy
 
-## Worked examples
+Run the stand-alone test on both sides of the blank.
 
-### Example 1: Two full sentences
+```check
+rw-1723
+```
 
-An octopus can change the color and texture of its skin in under a second ______ it uses this skill both to hide from predators and to send signals to other octopuses.
+## Your turn: medium
 
-Which choice completes the text so that it conforms to the conventions of Standard English?
+Read past the blank, then look back: what mark opened the add-on?
 
-- (A) second,
-- (B) second;
-- (C) second
-- (D) second, which
+```check
+rw-1694
+```
 
-**Solution**
+## Your turn: hard
 
-Only the punctuation changes, so run the clause test.
+Is the part after the blank a full sentence? Let that pick the mark.
 
-Left side: "An octopus can change the color and texture of its skin in under a second." That's a complete sentence. Right side: "It uses this skill both to hide from predators and to send signals to other octopuses." Also a complete sentence. Two full sentences need a strong join.
+```check
+rw-1806
+```
 
-- (A) puts only a comma between two sentences. That's a comma splice.
-- (B) uses a semicolon. Both sides are complete, so this works.
-- (C) puts nothing between them. That's a run-on.
-- (D) tries to make the second part a dependent clause, but "which it uses this skill" doesn't make sense. The word *which* and the words *this skill* both point to the same thing, so the clause is broken.
+## Recap
 
-**Answer:** (B)
-
-### Example 2: Where does the semicolon go?
-
-The population of the old mill town fell sharply after the mill closed in 1987 ______ it has grown again as remote workers have moved in.
-
-Which choice completes the text so that it conforms to the conventions of Standard English?
-
-- (A) 1987; over the last decade, however,
-- (B) 1987, over the last decade, however;
-- (C) 1987; over the last decade however,
-- (D) 1987, over the last decade; however,
-
-**Solution**
-
-The choices move the semicolon and *however* around, so first find where the first complete idea ends.
-
-There are two ideas: the town shrank (back in 1987), and the town is growing again (recently). The first idea is complete at "closed in 1987." The phrase "over the last decade" describes the regrowth, so it belongs with the second idea. That means the semicolon must go right after "1987."
-
-- (B) and (D) put a comma after "1987" and attach "over the last decade" to the shrinking. That says the town shrank during the last decade, which clashes with the 1987 date. Both put the break in the wrong place.
-- (C) has the semicolon in the right place, but *however* interrupts the second clause and needs a comma on **both** sides. (C) is missing the comma before *however*.
-- (A) puts the semicolon after "1987" and sets off *however* with commas on both sides.
-
-**Answer:** (A)
-
-### Example 3: Close the pair
-
-The bar-tailed godwit—a shorebird with long legs and a slightly upturned bill______ can fly more than 7,000 miles from Alaska to New Zealand without stopping to eat or rest.
-
-Which choice completes the text so that it conforms to the conventions of Standard English?
-
-- (A) bill,
-- (B) bill—
-- (C) bill;
-- (D) bill
-
-**Solution**
-
-Look back before the blank: a dash already opens an extra chunk after "godwit." Lift the chunk out and you get "The bar-tailed godwit can fly more than 7,000 miles...", which is still a complete sentence. So the chunk is extra, and the blank must close it with the same mark that opened it.
-
-- (A) closes a dash with a comma. The pair doesn't match.
-- (B) closes the dash with a dash. That's a matched pair.
-- (C) puts a semicolon between the subject ("godwit") and its verb ("can fly"). The left side isn't a complete sentence, so a semicolon can't go there.
-- (D) leaves the dash open, so the extra chunk runs straight into the main sentence.
-
-**Answer:** (B)
-
-### Example 4: When nothing is the answer
-
-In 1928, the Scottish ______ noticed that a patch of mold had killed the bacteria growing around it on a lab dish he had left uncovered.
-
-Which choice completes the text so that it conforms to the conventions of Standard English?
-
-- (A) scientist, Alexander Fleming,
-- (B) scientist Alexander Fleming,
-- (C) scientist, Alexander Fleming
-- (D) scientist Alexander Fleming
-
-**Solution**
-
-Check for bonds. "The Scottish scientist" is a description, and "Alexander Fleming" tells us *which* scientist. Lift the name out and you get "the Scottish scientist noticed...", but which one? There have been many. So the name is essential, and it shouldn't be split off from its title. Right after the name comes the verb "noticed," and nothing goes between a subject and its verb either.
-
-- (A) puts commas around the name, treating it as removable extra information. But the name is essential.
-- (B) puts a comma between the subject ("Alexander Fleming") and the verb ("noticed").
-- (C) puts a single comma between the title and the name, which splits up a bond and opens a pair that never closes.
-- (D) uses no punctuation, which keeps the title, the name and the verb together.
-
-**Answer:** (D)
-
-## Traps to avoid
-
-- **The pause trap.** Wrong answers are built to sound natural read aloud. A comma that "feels right" often splits a long subject from its verb.
-- **The disguised comma splice.** When both clauses are long, it's easy to miss that a lone comma is holding two full sentences together.
-- ***However* with commas only.** "The plan was cheap, however, it was slow" sounds smooth but is still a comma splice.
-- **A semicolon before a non-sentence.** If the right side starts with *which*, *such as*, *because*, an *-ing* word or a plain noun phrase, a semicolon is wrong.
-- **A colon after an unfinished lead-in.** "The recipe calls for: flour and eggs" is wrong, because "The recipe calls for" isn't a complete sentence. The same goes for *such as*, *including*, *is* and *are*.
-- **Half pairs and mixed pairs.** A chunk opened with a dash must close with a dash. Always look back to see what opened it.
-- **Fear of "no punctuation."** Students assume something must go in the blank. Inside a bond (subject + verb, verb + object, title + name, *such as* + example), nothing is correct.
-- **Fragments that look like sentences.** A period and a capital letter don't make a sentence. "Hoping to find water. The explorers…" starts with a fragment.
-
-## Quick checklist
-
-- Did I cover each side of the blank and ask, "Is this a complete sentence?"
-- Two full sentences: am I using a period, semicolon, comma + FANBOYS, colon or dash?
-- Is there an earlier comma or dash my choice needs to match?
-- Is the blank inside a bond? Then no punctuation.
-- If I picked a colon, is the part before it a complete sentence?
-- Is *however* (or another transition) set off correctly and attached to the right clause?
-- Did I cross out any twins?
+- Same words, moving marks: it's Boundaries. Structure decides, not sound.
+- Two full sentences: period, semicolon, or comma + FANBOYS (a colon if part two explains). A comma alone is a splice.
+- A semicolon needs full sentences on both sides; a colon needs one before it.
+- Between two sentences, *however* takes a semicolon or period before it and a comma after it.
+- An add-on closes with the same mark that opened it.
+- Subject + verb, verb + object, title + name: no mark.

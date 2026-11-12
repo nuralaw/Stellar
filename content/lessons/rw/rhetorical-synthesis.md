@@ -3,164 +3,191 @@ title: Rhetorical Synthesis
 skill: rhetorical-synthesis
 domain: expression-ideas
 section: rw
-summary: Answer "student's notes" questions in under a minute by matching each choice to the goal, not to the notes.
-minutes: 10
+summary: Read the student's goal first, then pick the one sentence that does exactly that job with facts from the notes.
 ---
 
-> **Key idea:** All four choices are usually true to the notes, so accuracy won't decide it. Pick the one sentence that does exactly the job the goal asks for.
+## Spot the notes question
 
-## What this question looks like
+It opens with "While researching a topic, a student has taken the following notes:" and usually 4–6 bulleted facts. Then comes a goal: "The student wants to [goal]. Which choice most effectively uses relevant information from the notes to accomplish this goal?" These are the last questions in each module.
 
-You'll recognize this one at once. The left side starts with "While researching a topic, a student has taken the following notes:" and lists 4–6 bullet points of facts. The right side states a goal and asks:
+> **Key idea:** All four choices are usually true to the notes. The question is never "Is it true?" It's "**Does it do the job?**"
 
-**"The student wants to [goal]. Which choice most effectively uses relevant information from the notes to accomplish this goal?"**
+```quiz
+• Lake Kessa formed about 12,000 years ago.
+• It formed when a buried block of glacier ice melted, leaving a hollow.
+• It is 40 meters deep.
+The student wants to explain how Lake Kessa formed. Which choice does that?
+- Lake Kessa, which is 40 meters deep, formed about 12,000 years ago. :: True, but it says when, not how. Depth and age don't explain the formation.
+* Lake Kessa formed when a buried block of glacier ice melted, leaving a hollow.
+- Lake Kessa is 40 meters deep. :: True, but off-goal. The goal asks how the lake formed.
+> All three choices are true. Only one does the job the goal names: how the lake formed. That's the whole question type.
+```
 
-Each choice is one sentence built from the notes. These questions sit near the end of each Reading and Writing module, along with Transitions, and they're some of the fastest points on the test.
+## Turn the goal into a checklist
 
-## The method
+1. **Skip the notes.** Read "The student wants to…" first.
+2. Find the **task** (emphasize, contrast, introduce, explain…) and the **target** (which thing, which feature).
+3. Write a tiny checklist, like "both birds + diet + contrast".
+4. Test each choice against the checklist only.
+5. Check the last survivor against the notes.
 
-Read the goal, not the notes, and let it decide.
+```quiz
+The student wants to emphasize a difference in the diets of the two bird species. Which checklist fits this goal?
+* Both species + diet + contrast
+- One species + its diet :: A difference needs two things in the same sentence.
+- Both species + habitat + contrast :: Wrong feature. The goal names diet, not where the birds live.
+- Both species + diet + what they share :: That's a similarity. The goal asks for a difference.
+> Task: emphasize a difference. Target: the two species' diets. Every part is a requirement, so the right sentence names both birds, talks about food, and contrasts them.
+```
 
-1. **Read the goal first.** It's the sentence that starts "The student wants to…". Skip the bullets for now; reading them closely is where most students lose time.
-2. **Find the job and the target.** What must the sentence *do* (emphasize, contrast, introduce, explain, give an example)? And to *what* (which person, study, place or feature)?
-3. **Picture the right answer** in a few words, like "both animals + what they share" or "who she is + what she made."
-4. **Check each choice against the goal.** Ask: "Does this sentence do the whole job?" Cross out any choice that does a different job, only half the job, or talks about the wrong thing.
-5. **Use the notes only as a tie-breaker.** If two choices survive, glance at the notes to see which is accurate and complete. Usually you won't need to.
+## Comparisons need both sides
 
-> **Tip:** With practice, this takes 30–45 seconds. Bank that time for the harder reading questions.
+Similarity and difference goals need **both things in one sentence**, compared on the feature the goal names. A small signal word often shows the job:
 
-## Rules and formulas you need
+| Job | Signal words |
+|---|---|
+| similarity | both, like, also, similarly |
+| difference | while, whereas, unlike, but |
 
-The goal's verb tells you what the right sentence must contain.
+A similarity goal answered with *whereas* is wrong, even if every fact is right.
 
-| The goal says… | The answer must have… | Signal words |
-|---|---|---|
-| emphasize a similarity | both things + what they share | both, like, also, similarly |
-| emphasize a difference or contrast | both things + how they differ | while, whereas, unlike, but |
-| introduce X to an **unfamiliar** audience | who or what X is + basic info | a name with a label |
-| present X to a familiar audience | the new detail, no background | — |
-| present a study's findings | what the researchers found | found, showed, concluded |
-| describe a study's method or aim | how it was done or what it sought | used, measured, aimed to |
-| explain why (cause and effect) | the cause and result, linked | because, so, as a result |
-| give an example | one specific case | for example, such as |
-| make and support a generalization | broad claim + specific evidence | — |
-| emphasize a feature (size, age, cost…) | that feature up front | — |
-| specify a detail (date, place, amount) | that exact fact | — |
+```quiz
+• The sitar is a string instrument from India.
+• A sitar's body is often made from a dried gourd.
+• The banjo is a string instrument with roots in West Africa.
+• A banjo's round body is covered with a tight drumhead.
+The student wants to emphasize a similarity between the sitar and the banjo.
+- While the sitar's body is often a gourd, the banjo's is covered with a drumhead. :: Both instruments, but *while* sets up a difference. Wrong job.
+* Like the sitar, which comes from India, the banjo is a string instrument.
+- The banjo, a string instrument with roots in West Africa, has a round body. :: Only one instrument. A similarity needs both in the sentence.
+> Checklist: both instruments + what they share. Both are string instruments, and *Like* signals the match. The other choices are true but show a difference or cover one side.
+```
 
-A "label" is a short description next to a name, like "South African architect Lindiwe Mokoena."
+## Two-part goals need both parts
 
-Two more rules hold almost every time:
+Many goals have two jobs: "define the term **and** give an example", "present the study **and** its method", "make a claim **and** support it". The right answer does **every** part.
 
-- **Every part of the goal counts.** If the goal has two parts ("introduce the author *and* her novel"), the answer must do both.
-- **Use only the notes the goal needs.** The right answer leaves the other notes out, so a longer sentence isn't a better one.
+Expect a choice that does one part well and skips the other. It's accurate, often polished, and still wrong.
 
-## Worked examples
+```quiz
+• A keystone species is one that many other species in its habitat depend on.
+• Sea otters are a keystone species.
+• Otters eat sea urchins, which would otherwise destroy kelp forests.
+The student wants to define the term "keystone species" and give an example of one.
+- A keystone species is one that many other species in its habitat depend on. :: A definition with no example. Only half the goal.
+- Sea otters eat sea urchins, which would otherwise destroy kelp forests. :: An example, but the term is never named or defined. Only half the goal.
+* Sea otters are a keystone species, meaning that many other species in their habitat depend on them.
+> Two jobs: say what the term means and name one case of it. Only one choice does both. Each wrong choice is accurate but stops halfway.
+```
 
-### Example 1: A similarity goal
+## Aim, method or finding?
 
-While researching a topic, a student has taken the following notes:
+Study goals name one part of the research. Know which is which:
 
-- Leafcutter ants live in Central and South America.
-- They cut pieces of leaves but do not eat them.
-- Instead, they carry the leaves underground to feed a fungus, which the ants eat.
-- Ambrosia beetles live inside dead and dying trees around the world.
-- Ambrosia beetles plant a fungus in tunnels they dig in the wood, and they eat that fungus.
-- Leafcutter colonies can hold millions of ants, while ambrosia beetles live in small family groups.
+| Goal asks for | The sentence says |
+|---|---|
+| aim | what they wanted to learn |
+| method | what they did: built, measured, compared |
+| finding | what they found or concluded |
 
-The student wants to emphasize a similarity between leafcutter ants and ambrosia beetles. Which choice most effectively uses relevant information from the notes to accomplish this goal?
+These three are the favorite swap: a choice gives the finding when the goal wants the method.
 
-- (A) Leafcutter ant colonies can hold millions of ants, while ambrosia beetles live in small family groups.
-- (B) Both leafcutter ants and ambrosia beetles grow a fungus that they then eat.
-- (C) Leafcutter ants, which live in Central and South America, carry pieces of leaves underground.
-- (D) Ambrosia beetles dig tunnels in dead and dying trees, where they plant a fungus.
+```quiz
+• Ecologist Rina Cho wanted to learn whether bees prefer warmer flowers.
+• Her team offered bees heated and unheated fake flowers, each holding the same sugar water.
+• The bees visited the heated flowers more often.
+The student wants to present the study's method.
+- Cho wanted to learn whether bees prefer warmer flowers. :: That's the aim: what she wanted to learn, not what her team did.
+* Cho's team offered bees heated and unheated fake flowers, each holding the same sugar water.
+- Cho found that bees visited heated flowers more often. :: That's the finding. The method is what the team did to get it.
+> Method means actions: what the team set up. Only one choice describes the setup. The aim and the finding are true, but they answer other goals.
+```
 
-**Solution**
+## Know the audience
 
-Goal first: a **similarity** between **both insects**. So the right answer must mention both and say what they share.
+Audience clues change what the sentence must include:
 
-- (A) mentions both, but "while" signals a *difference*. Wrong job.
-- (B) mentions both and gives a shared trait, signaled by "both." This matches.
-- (C) talks only about the ants. You can't show a similarity with one thing.
-- (D) talks only about the beetles. Same problem.
+- **Unfamiliar** audience: say what the thing is, usually in a short phrase after its name: "Lagos, Nigeria's largest city, …"
+- **Familiar** audience: skip the basics and get to the new point.
+- No audience mentioned: skip this check.
 
-Notice that every choice is true. Only (B) does the job.
+```quiz
+• The Atacama is a desert in Chile.
+• It is one of the driest places on Earth.
+• Some of its weather stations have never recorded rain.
+The student wants to present the Atacama's dryness to an audience unfamiliar with the Atacama.
+- The Atacama is so dry that some of its weather stations have never recorded rain. :: Strong on dryness, but a new reader doesn't know what or where the Atacama is.
+* The Atacama, a desert in Chile, is so dry that some of its weather stations have never recorded rain.
+- The Atacama is a desert in Chile. :: It introduces the place but says nothing about its dryness. Half the goal.
+> Unfamiliar audience means: tell them what the thing is. "A desert in Chile" does that in four words, then the sentence delivers the dryness. Each wrong choice skips one of the two.
+```
 
-**Answer:** (B)
+## Check the facts last
 
-### Example 2: Introducing to an unfamiliar audience
+Once the goal has knocked out two or three choices, spend 10 seconds checking the survivor against the notes. Recent tests include choices that fit the goal but **change a fact**:
 
-While researching a topic, a student has taken the following notes:
+- facts swapped between the two things
+- a number, date or place changed
+- a claim made stronger: *some* becomes *most*, or *first* or *only* is added
+- a cause or comparison the notes never give
 
-- Lindiwe Mokoena is a South African architect.
-- In 2019, she designed the Thaba Library in a small mountain town.
-- The library's walls are made of rammed earth: soil packed tightly into forms.
-- Rammed earth keeps buildings cool during the day without air conditioning.
-- The library won a regional design award in 2021.
+```quiz
+• In a survey of 400 teens, 52% said they read for fun every week.
+• 18% said they never read for fun.
+The student wants to emphasize how many of the surveyed teens read for fun each week.
+- Nearly all of the 400 teens surveyed said they read for fun every week. :: Stronger than the notes. 52% is about half, not nearly all.
+* Just over half of the 400 teens surveyed said they read for fun every week.
+- The 400 teens surveyed read for fun more often than teens did ten years ago. :: The notes compare nothing to ten years ago. That's an added claim.
+> All three choices aim at the goal, so the notes decide. 52% is just over half. One choice inflates the number, and one adds a comparison the notes never make.
+```
 
-The student wants to introduce Mokoena and the Thaba Library to an audience unfamiliar with both. Which choice most effectively uses relevant information from the notes to accomplish this goal?
+## The trap: more isn't better
 
-- (A) The Thaba Library, which won a regional design award in 2021, has walls made of rammed earth.
-- (B) Mokoena's library uses rammed earth, which keeps buildings cool during the day without air conditioning.
-- (C) In 2019, South African architect Lindiwe Mokoena designed the Thaba Library, a building in a small mountain town.
-- (D) Rammed earth, soil packed tightly into forms, is a building material that keeps structures cool without air conditioning.
+The tempting wrong choice is often the **longest**. It packs in the most notes and sounds thorough.
 
-**Solution**
+But the right answer uses **only the notes the goal needs**. Extra facts earn nothing, and they often pull the sentence onto a different job. Never pick a choice because it's long or because it's true. Pick it because it does the goal.
 
-Goal first: **introduce two things** (Mokoena *and* the library) to readers who have **never heard of either**. So the sentence must tell us who Mokoena is and what the Thaba Library is.
+```quiz
+• Composer Lili Boulanger was born in Paris in 1893.
+• In 1913 she became the first woman to win the Prix de Rome, a top French prize for composers.
+• She wrote the cantata Faust et Hélène for that contest.
+• She died in 1918, at age 24.
+The student wants to emphasize Boulanger's historic achievement.
+- Born in Paris in 1893, Lili Boulanger wrote the cantata Faust et Hélène for the 1913 Prix de Rome contest and died in 1918, at age 24. :: It uses every note but never says she won, let alone as the first woman. Length isn't the job.
+* In 1913, Lili Boulanger became the first woman to win the Prix de Rome, a top French prize for composers.
+- Lili Boulanger won the Prix de Rome, a top French prize for composers. :: An achievement, but it skips what made it historic: she was the first woman to win.
+> The goal needs one note: she was the first woman to win the Prix de Rome. The long choice crams in a birth, a contest and a death, yet never says she won.
+```
 
-- (A) covers the library but never mentions Mokoena. Only half the goal.
-- (B) says "Mokoena's library" as if we already know her. A reader new to the topic still doesn't know who she is or which library this is.
-- (C) gives her full name, a label ("South African architect"), and explains what the Thaba Library is and where. Both parts are introduced.
-- (D) explains the building material, not the person or the library.
+## Your turn: easy
 
-**Answer:** (C)
+A study goal: decide whether it wants the aim, the method or the finding.
 
-### Example 3: A one-sided advantage
+```check
+rw-0557
+```
 
-While researching a topic, a student has taken the following notes:
+## Your turn: medium
 
-- Lithium-ion batteries can store electricity from solar panels.
-- They can release stored energy within milliseconds.
-- They lose effectiveness after about 10–15 years.
-- Pumped hydro storage uses extra electricity to pump water uphill into a reservoir.
-- Later, the water flows downhill through turbines to make electricity.
-- Pumped hydro facilities can operate for 50 years or more.
+Check the audience in the goal, then what each choice explains.
 
-The student wants to emphasize an advantage of pumped hydro storage over lithium-ion batteries. Which choice most effectively uses relevant information from the notes to accomplish this goal?
+```check
+rw-0566
+```
 
-- (A) Lithium-ion batteries can release stored energy within milliseconds, while pumped hydro must send water downhill through turbines.
-- (B) Pumped hydro storage works by pumping water uphill into a reservoir and later releasing it through turbines.
-- (C) Both lithium-ion batteries and pumped hydro facilities can store energy for later use.
-- (D) While lithium-ion batteries lose effectiveness after about 10–15 years, pumped hydro facilities can operate for 50 years or more.
+## Your turn: hard
 
-**Solution**
+A comparison: both sides, on the exact feature the goal names.
 
-Goal first: an **advantage** (a difference) that favors **pumped hydro**. The answer needs both technologies and a comparison where pumped hydro comes out ahead.
+```check
+rw-0840
+```
 
-- (A) compares both, but the point it makes is that *batteries* are fast. That's an advantage of the wrong side. This is the sneakiest trap: right topics, flipped direction.
-- (B) describes how pumped hydro works but never compares it to batteries.
-- (C) is a similarity, not an advantage.
-- (D) compares both and shows pumped hydro lasting much longer. That's a clear advantage for pumped hydro.
+## Recap
 
-**Answer:** (D)
-
-## Traps to avoid
-
-Wrong choices are usually accurate. They fail the goal in one of these ways.
-
-- **True but off-goal.** It matches the notes perfectly but does a different job, like showing a difference when the goal wants a similarity. This is the most common wrong answer because it looks correct.
-- **Half the goal.** The goal has two parts, or names two things, and the choice covers only one.
-- **Right topic, wrong direction.** It compares the right two things but makes the opposite point (Example 3, choice A).
-- **The kitchen-sink sentence.** A long choice that crams in many notes. Extra facts earn nothing, and they often pull the sentence off the goal.
-- **Assuming the reader knows.** For "unfamiliar audience" goals, a choice that drops a name with no explanation fails, even if it's accurate.
-- **Wrong subject.** It's about something related, not the exact person, study or feature the goal names.
-- **Extra or exaggerated claims.** Rarely, a choice adds something the notes don't say, or uses "always," "only" or "proves" when the notes are more careful. Cross it out.
-
-## Quick checklist
-
-- Did I read the goal before the notes?
-- Can I say in a few words what the right sentence must contain?
-- Does my choice do *every* part of the goal?
-- Is it about the exact thing the goal names?
-- For similarity or difference goals: are both things in the sentence, with the right signal word?
-- For audience goals: does it explain enough, or skip what the reader already knows?
+- Read the goal first and name the task and the target.
+- Every part of the goal is required. Half a goal is a wrong answer.
+- Comparisons need both things, the named feature and the right signal word.
+- Aim, method and finding are different jobs.
+- Unfamiliar audience: say what the thing is.
+- Check the survivor against the notes, and never pick a choice just because it's long.
