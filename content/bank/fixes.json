@@ -4,5 +4,431 @@
  },
  "m-0250": {
   "prompt": "x^2/(sqrt(x^2 - c^2)) = c^2/(sqrt(x^2 - c^2)) + 39\nIn the given equation, c is a positive constant. Which of the following is one of the solutions to the given equation?"
+ },
+ "m-0906": {
+  "prompt": "The table above gives the typical amounts of energy per gram, expressed in both food calories and kilojoules, of the three macronutrients in food. If x food calories is equivalent to k kilojoules, of the following, which best represents the relationship between x and k?",
+  "table": {
+   "caption": "Energy per Gram of Typical Macronutrients",
+   "headers": [
+    "Macronutrient",
+    "Food calories",
+    "Kilojoules"
+   ],
+   "rows": [
+    [
+     "Protein",
+     "4.0",
+     "16.7"
+    ],
+    [
+     "Fat",
+     "9.0",
+     "37.7"
+    ],
+    [
+     "Carbohydrate",
+     "4.0",
+     "16.7"
+    ]
+   ]
+  }
+ },
+ "m-0988": {
+  "prompt": "The table above shows some values of x and their corresponding values f(x) for the linear function f. What is the x-intercept of the graph of y = f(x) in the xy-plane?",
+  "table": {
+   "headers": [
+    "x",
+    "-11",
+    "-10",
+    "-9",
+    "-8"
+   ],
+   "rows": [
+    [
+     "f(x)",
+     "21",
+     "18",
+     "15",
+     "12"
+    ]
+   ]
+  }
+ },
+ "m-1164": {
+  "prompt": "The table above shows information about 14 cars listed for sale on an auto dealership’s website. If one of the cars listed for sale is selected at random, what is the probability that the car selected will be a hybrid car priced at no more than $25,000?",
+  "table": {
+   "caption": "Prices of 14 Different Cars",
+   "headers": [
+    "Type of car",
+    "Priced at no more than $25,000",
+    "Priced greater than $25,000",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Nonhybrid",
+     "5",
+     "3",
+     "8"
+    ],
+    [
+     "Hybrid",
+     "2",
+     "4",
+     "6"
+    ],
+    [
+     "Total",
+     "7",
+     "7",
+     "14"
+    ]
+   ]
+  }
+ },
+ "m-1185": {
+  "prompt": "On Tuesday, a local gas station had 135 customers. The table above summarizes whether or not the customers on Tuesday purchased gasoline, a beverage, both, or neither. Based on the data in the table, what is the probability that a gas station customer selected at random on that day did not purchase gasoline?",
+  "table": {
+   "caption": "Customer Purchases at a Gas Station",
+   "headers": [
+    "",
+    "Beverage purchased",
+    "Beverage not purchased",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Gasoline purchased",
+     "60",
+     "25",
+     "85"
+    ],
+    [
+     "Gasoline not purchased",
+     "35",
+     "15",
+     "50"
+    ],
+    [
+     "Total",
+     "90",
+     "40",
+     "135"
+    ]
+   ]
+  }
+ },
+ "m-1189": {
+  "prompt": "The data on the coat color and eye color for 48 Himalayan kittens available for adoption were collected and summarized in the table above. What fraction of the chocolate-colored kittens has deep blue eyes?",
+  "table": {
+   "headers": [
+    "Coat color",
+    "Eye color: Deep blue",
+    "Eye color: Light brown",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Cream-tortoiseshell",
+     "16",
+     "16",
+     "32"
+    ],
+    [
+     "Chocolate",
+     "12",
+     "4",
+     "16"
+    ],
+    [
+     "Total",
+     "28",
+     "20",
+     "48"
+    ]
+   ]
+  }
+ },
+ "m-1195": {
+  "prompt": "The table above shows the number of students from two different high schools who completed summer internships in each of five years. No student attended both schools. Of the students who completed a summer internship in 2010, which of the following represents the fraction of students who were from Valley High School?",
+  "table": {
+   "caption": "Number of High School Students Who Completed Summer Internships",
+   "headers": [
+    "High school",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012"
+   ],
+   "rows": [
+    [
+     "Foothill",
+     "87",
+     "80",
+     "75",
+     "76",
+     "70"
+    ],
+    [
+     "Valley",
+     "44",
+     "54",
+     "65",
+     "76",
+     "82"
+    ],
+    [
+     "Total",
+     "131",
+     "134",
+     "140",
+     "152",
+     "152"
+    ]
+   ]
+  }
+ },
+ "m-1213": {
+  "prompt": "A survey taken by 1,000 students at a school asked whether they played school sports. The table below summarizes all 1,000 responses from the students surveyed.\nHow many of the males surveyed responded that they do not play a school sport?",
+  "table": {
+   "headers": [
+    "",
+    "Males",
+    "Females"
+   ],
+   "rows": [
+    [
+     "Play a school sport",
+     "312",
+     "220"
+    ],
+    [
+     "Do not play a school sport",
+     "?",
+     "216"
+    ]
+   ]
+  }
+ },
+ "m-1216": {
+  "prompt": "Human blood can be classified into four common blood types—A, B, AB, and O. It is also characterized by the presence (+) or absence (-) of the rhesus factor. The table above shows the distribution of blood type and rhesus factor for a group of people. If one of these people who is rhesus negative (-) is chosen at random, the probability that the person has blood type B is 1/9. What is the value of x?",
+  "table": {
+   "headers": [
+    "Rhesus factor",
+    "Blood type A",
+    "Blood type B",
+    "Blood type AB",
+    "Blood type O"
+   ],
+   "rows": [
+    [
+     "+",
+     "33",
+     "9",
+     "3",
+     "37"
+    ],
+    [
+     "-",
+     "7",
+     "2",
+     "1",
+     "x"
+    ]
+   ]
+  }
+ },
+ "m-1217": {
+  "prompt": "The table below shows the number of state parks in a certain state that contain camping facilities and bicycle paths.\nIf one of these state parks is selected at random, what is the probability that it has camping facilities but does not have bicycle paths?",
+  "table": {
+   "headers": [
+    "",
+    "Has bicycle paths",
+    "Does not have bicycle paths"
+   ],
+   "rows": [
+    [
+     "Has camping facilities",
+     "20",
+     "5"
+    ],
+    [
+     "Does not have camping facilities",
+     "8",
+     "4"
+    ]
+   ]
+  }
+ },
+ "m-1296": {
+  "prompt": "In a study of cell phone use, 799 randomly selected US teens were asked how often they talked on a cell phone and about their texting behavior. The data are summarized in the table above. If one of the 799 teens surveyed is selected at random, what is the probability that the teen talks on a cell phone daily?",
+  "table": {
+   "headers": [
+    "Texting behavior",
+    "Talks on cell phone daily",
+    "Does not talk on cell phone daily",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Light",
+     "110",
+     "146",
+     "256"
+    ],
+    [
+     "Medium",
+     "139",
+     "164",
+     "303"
+    ],
+    [
+     "Heavy",
+     "166",
+     "74",
+     "240"
+    ],
+    [
+     "Total",
+     "415",
+     "384",
+     "799"
+    ]
+   ]
+  }
+ },
+ "m-1344": {
+  "prompt": "The table below shows the high and low temperatures in Houston, Texas, during a five-day period.\nWhat was the mean low temperature, in degrees Fahrenheit, during the five-day period?",
+  "table": {
+   "caption": "Temperatures in Houston, Texas (degrees Fahrenheit)",
+   "headers": [
+    "",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "rows": [
+    [
+     "High temperature",
+     "73",
+     "56",
+     "62",
+     "75",
+     "81"
+    ],
+    [
+     "Low temperature",
+     "49",
+     "37",
+     "41",
+     "54",
+     "63"
+    ]
+   ]
+  }
+ },
+ "m-1370": {
+  "prompt": "For a science project, Anka recorded whether it rained each weekday and weekend day for 12 weeks. Her results are summarized in the table below.\nIf one of the days on which there was no rain is selected at random, what is the probability the day was a weekend day?",
+  "table": {
+   "caption": "Weekday and Weekend Day Rain for 12 Weeks",
+   "headers": [
+    "",
+    "Rain",
+    "No rain",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Number of weekdays",
+     "12",
+     "48",
+     "60"
+    ],
+    [
+     "Number of weekend days",
+     "8",
+     "16",
+     "24"
+    ],
+    [
+     "Total",
+     "20",
+     "64",
+     "84"
+    ]
+   ]
+  }
+ },
+ "m-1528": {
+  "prompt": "The number of penguins in a zoo exhibit, sorted by gender and type of penguin, is shown in the table above. Which type of penguin has a female population that is the closest to being 1/3 of the total female penguin population in the exhibit?",
+  "table": {
+   "caption": "Penguin Exhibit",
+   "headers": [
+    "Type of penguin",
+    "Male",
+    "Female",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Chinstrap",
+     "41",
+     "59",
+     "100"
+    ],
+    [
+     "Emperor",
+     "8",
+     "27",
+     "35"
+    ],
+    [
+     "Gentoo",
+     "49",
+     "54",
+     "103"
+    ],
+    [
+     "Macaroni",
+     "42",
+     "40",
+     "82"
+    ],
+    [
+     "Total",
+     "140",
+     "180",
+     "320"
+    ]
+   ]
+  }
+ },
+ "m-1548": {
+  "prompt": "The table above shows the number of people who work in the Human Resources and Accounting departments of a company and the highest level of education they have completed. A person from one of these departments is to be chosen at random. If the person chosen works in the Human Resources department, what is the probability that the highest level of education the person completed is a master’s degree?",
+  "table": {
+   "headers": [
+    "",
+    "Human Resources",
+    "Accounting"
+   ],
+   "rows": [
+    [
+     "Bachelor’s degree",
+     "4",
+     "3"
+    ],
+    [
+     "Master’s degree",
+     "2",
+     "6"
+    ]
+   ]
+  }
+ },
+ "m-1658": {
+  "prompt": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 58 square centimeters (cm^2), and the surface area of right rectangular prism Y is 1,450 cm^2. The volume of right rectangular prism Y is 1,250 cubic centimeters (cm^3). What is the sum of the volumes, in cm^3, of right rectangular prism X and right rectangular prism Y?"
  }
 }

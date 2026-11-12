@@ -708,7 +708,7 @@
     "skill": "probability",
     "difficulty": "easy",
     "confidence": "high",
-    "explanation": "Only vanilla orders count: 20 with sprinkles and 30 without, for 50 total. The probability is 20/50 = 0.40. Choice B (0.13) divides 20 by all 240 orders, ignoring the \"given vanilla\" condition.",
+    "explanation": "Only vanilla orders count: 20 with sprinkles and 30 without, 50 in all, so the probability is 20/50 = 0.40. Choice A (0.08) divides 20 by all 240 orders, ignoring the \"given vanilla\" condition. Choice B (0.13) is 20/160: it divides by all orders with sprinkles, which answers the reversed question (vanilla, given sprinkles).",
     "fix": {
       "prompt": "The table gives the distribution of flavor and type of topping for customer orders at an ice cream shop.\nIf a customer order is selected at random, what is the probability of selecting an order with sprinkles, given the flavor of ice cream is vanilla?",
       "table": {

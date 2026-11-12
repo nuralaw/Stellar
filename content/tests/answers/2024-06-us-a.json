@@ -877,7 +877,7 @@
     "skill": "two-var-data",
     "difficulty": "medium",
     "confidence": "medium",
-    "explanation": "Subtracting 11 from every y-value shifts the whole data set, and its line of best fit, down 11 units, so the new y-intercept is the old one minus 11. The line for data set A crosses the y-axis at about 50, so the new intercept is about 39, and the closest choice is 42.75. Choice A adds 11 instead of subtracting it.",
+    "explanation": "Subtracting 11 from every y-value moves every point, and the line of best fit, down 11 units, so the new y-intercept is the old one minus 11. In this graph the line meets the y-axis at about 50, so the new intercept is about 39. Of the choices, 42.75 is the closest (32.75 is more than 6 away). Choice A adds 11 instead of subtracting it, and choice B is close to the original intercept, before the shift.",
     "note": "Graph as drawn has y-intercept ≈ 50 (→ ≈ 39 after shift), not 53.75; C is still the closest choice."
   },
   {

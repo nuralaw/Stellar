@@ -7,6 +7,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { cleanQuestion } from "./text-clean.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DIR = path.join(ROOT, "content", "tests");
@@ -107,7 +108,7 @@ function merge(q, a) {
     out.explanation = a.explanation;
     if (a.confidence === "low") out.unsure = true;
   }
-  return out;
+  return cleanQuestion(out);
 }
 
 const sources = fs.readdirSync(path.join(DIR, "source")).filter((f) => /^\d{4}-.*\.json$/.test(f));

@@ -6,6 +6,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { cleanQuestion } from "./text-clean.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const BANK = path.join(ROOT, "content", "bank");
@@ -125,7 +126,7 @@ for (const [id, file] of Object.entries(fileFixes)) {
 for (const [id, raw] of source) {
   const a = answers.get(id);
   if (!a) continue;
-  const q = applyFix(applyFix(raw, fileFixes[id]), a.fix);
+  const q = cleanQuestion(applyFix(applyFix(raw, fileFixes[id]), a.fix));
   if (a.confidence === "low") {
     lowConfidence++;
     continue;
