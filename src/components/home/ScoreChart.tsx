@@ -107,18 +107,42 @@ export function ScoreChart({ points, target }: { points: TestResult[]; target: n
           )}
 
           {/* series */}
-          {area && <path d={area} fill="var(--primary)" opacity={0.1} />}
-          {points.length > 1 && <path d={line} fill="none" stroke="var(--primary)" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />}
+          {/* Draws in: the line from left to right, the area fades in under it, each test's dot pops as the line reaches it. */}
+          {area && <path d={area} fill="var(--primary)" opacity={0.1} className="stat-fade" style={{ animationDelay: "500ms" }} />}
+          {points.length > 1 && <path d={line} pathLength={1} fill="none" stroke="var(--primary)" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" className="stat-line" />}
+          {points.length > 1 &&
+            points.map((p, i) => (
+              <circle
+                key={p.id}
+                cx={x(p.at)}
+                cy={y(p.total)}
+                r={3}
+                fill="var(--surface)"
+                stroke="var(--primary)"
+                strokeWidth={1.5}
+                className="lesson-pop [transform-box:fill-box] [transform-origin:center]"
+                style={{ animationDelay: `${Math.round((i / (points.length - 1)) * 1100) + 100}ms` }}
+              />
+            ))}
 
           {/* crosshair */}
           {active !== null && <line x1={x(a.at)} x2={x(a.at)} y1={M.top} y2={M.top + ih} stroke="var(--muted)" strokeWidth={1} opacity={0.6} />}
 
           {/* end / active dot with a surface ring */}
-          <circle cx={x(a.at)} cy={y(a.total)} r={5} fill="var(--primary)" stroke="var(--surface)" strokeWidth={2} />
+          <circle
+            cx={x(a.at)}
+            cy={y(a.total)}
+            r={5}
+            fill="var(--primary)"
+            stroke="var(--surface)"
+            strokeWidth={2}
+            className="lesson-pop [transform-box:fill-box] [transform-origin:center]"
+            style={{ animationDelay: "1250ms" }}
+          />
 
           {/* end label (latest value) */}
           {(!target || Math.abs(y(target) - y(last.total)) > 14) && (
-            <text x={M.left + iw + 8} y={y(last.total)} dy="0.32em" className="fill-ink text-xs font-semibold tabular-nums">
+            <text x={M.left + iw + 8} y={y(last.total)} dy="0.32em" className="stat-fade fill-ink text-xs font-semibold tabular-nums" style={{ animationDelay: "1300ms" }}>
               {last.total}
             </text>
           )}

@@ -5,16 +5,17 @@ import { useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { mastery, type computeStats, type Mastery, type Tally } from "@/lib/stats";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
+import { CountUp } from "./CountUp";
 
 type Stats = ReturnType<typeof computeStats>;
 
 const DIFF_LABEL = { easy: "Easy", medium: "Medium", hard: "Hard" } as const;
 
-/** Accuracy bar (0–100). A thin track; the fill is the brand color. */
-function Bar({ value, className = "h-2" }: { value: number | null; className?: string }) {
+/** Accuracy bar (0–100). A thin track; the fill is the brand color and grows in from the left. */
+function Bar({ value, className = "h-2", delay = 0 }: { value: number | null; className?: string; delay?: number }) {
   return (
     <div className={`overflow-hidden rounded-full bg-surface-2 ${className}`}>
-      <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${value ?? 0}%` }} />
+      <div className="stat-grow h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${value ?? 0}%`, animationDelay: `${delay}ms` }} />
     </div>
   );
 }
@@ -41,12 +42,12 @@ const pct = (t: Tally) => (t.accuracy === null ? "—" : `${t.accuracy}%`);
 
 /* ---------------- By section ---------------- */
 
-export function SectionCard({ s, stats }: { s: SectionId; stats: Stats }) {
+export function SectionCard({ s, stats, delay = 0 }: { s: SectionId; stats: Stats; delay?: number }) {
   const t = stats.bySection[s];
   const peak = Math.max(1, ...t.recent.map((d) => d.answered));
   const last7 = t.recent.slice(7).reduce((n, d) => n + d.answered, 0);
   return (
-    <div className="rounded-2xl border border-line bg-surface p-5">
+    <div className="lesson-in rounded-2xl border border-line bg-surface p-5" style={{ animationDelay: `${delay}ms` }}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="font-semibold">{SECTIONS[s].name}</h3>
@@ -60,20 +61,20 @@ export function SectionCard({ s, stats }: { s: SectionId; stats: Stats }) {
       </div>
 
       <div className="mt-4 flex items-end gap-3">
-        <p className="text-4xl font-bold tracking-tight tabular-nums">{pct(t)}</p>
+        <p className="text-4xl font-bold tracking-tight tabular-nums">{t.accuracy === null ? "—" : <CountUp value={t.accuracy} suffix="%" delay={delay + 150} />}</p>
         <p className="pb-1.5 text-xs text-muted">accuracy</p>
       </div>
       <div className="mt-2">
-        <Bar value={t.accuracy} />
+        <Bar value={t.accuracy} delay={delay + 150} />
       </div>
 
       {/* By difficulty */}
       <p className="mt-5 text-[11px] font-semibold tracking-[0.08em] text-muted uppercase">By difficulty</p>
       <ul className="mt-2 space-y-2.5">
-        {t.byDifficulty.map((d) => (
+        {t.byDifficulty.map((d, i) => (
           <li key={d.difficulty} className="grid grid-cols-[4.5rem_1fr_auto] items-center gap-3 text-sm">
             <span className="text-muted">{DIFF_LABEL[d.difficulty]}</span>
-            <Bar value={d.accuracy} className="h-1.5" />
+            <Bar value={d.accuracy} className="h-1.5" delay={delay + 300 + i * 90} />
             <span className="w-20 text-right text-xs tabular-nums">
               <span className="font-semibold">{pct(d)}</span>
               <span className="text-muted"> · {d.correct}/{d.answered}</span>
@@ -91,8 +92,8 @@ export function SectionCard({ s, stats }: { s: SectionId; stats: Stats }) {
         {t.recent.map((d, i) => (
           <div key={d.day} className="group relative flex h-full flex-1 items-end" title={`${new Date(`${d.day}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })}: ${d.answered}`}>
             <div
-              className={`w-full rounded-t-[4px] ${d.answered ? "bg-primary" : "bg-surface-2"} ${i === t.recent.length - 1 ? "" : "opacity-80"} group-hover:opacity-100`}
-              style={{ height: d.answered ? `${Math.max(8, (d.answered / peak) * 100)}%` : "3px" }}
+              className={`stat-rise w-full rounded-t-[4px] ${d.answered ? "bg-primary" : "bg-surface-2"} ${i === t.recent.length - 1 ? "" : "opacity-80"} group-hover:opacity-100`}
+              style={{ height: d.answered ? `${Math.max(8, (d.answered / peak) * 100)}%` : "3px", animationDelay: `${delay + 450 + i * 35}ms` }}
             />
           </div>
         ))}
@@ -138,8 +139,8 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
         <div className="mt-5 rounded-xl bg-accent-soft p-4">
           <p className="text-sm font-semibold">Focus next</p>
           <ul className="mt-2 flex flex-wrap gap-2">
-            {stats.focus.map((f) => (
-              <li key={f.skill.id}>
+            {stats.focus.map((f, i) => (
+              <li key={f.skill.id} className="lesson-in" style={{ animationDelay: `${i * 70}ms` }}>
                 <Link
                   href={`/practice?section=${f.domain.section}&skills=${f.skill.id}`}
                   className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1.5 text-sm transition-colors hover:border-primary/50"
@@ -156,9 +157,10 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
         </div>
       )}
 
-      <div className="mt-5 grid gap-4 md:grid-cols-2">
-        {domains.map((d) => (
-          <section key={d.domain.id} className="min-w-0 rounded-xl border border-line p-4">
+      {/* keyed by tab: switching sections replays the entrance */}
+      <div key={tab} className="mt-5 grid gap-4 md:grid-cols-2">
+        {domains.map((d, di) => (
+          <section key={d.domain.id} className="lesson-in min-w-0 rounded-xl border border-line p-4" style={{ animationDelay: `${di * 80}ms` }}>
             <div className="flex items-baseline justify-between gap-3">
               <Link href={`/practice?section=${d.domain.section}&domain=${d.domain.id}`} className="font-semibold hover:text-primary">
                 {d.domain.name}
@@ -169,10 +171,10 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
               {d.answered ? `${d.answered} answered · ${d.correct} correct` : "Not started"} · about {d.domain.weight} of the section
             </p>
             <div className="mt-2">
-              <Bar value={d.accuracy} />
+              <Bar value={d.accuracy} delay={di * 80 + 150} />
             </div>
             <ul className="mt-4 space-y-3">
-              {d.skills.map((s) => (
+              {d.skills.map((s, si) => (
                 <li key={s.skill.id}>
                   <Link href={`/practice?section=${d.domain.section}&skills=${s.skill.id}`} className="group block" title={`Practice ${s.skill.name}`}>
                     <div className="flex items-center justify-between gap-2 text-sm">
@@ -186,7 +188,7 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
                       </span>
                     </div>
                     <div className="mt-1.5">
-                      <Bar value={s.accuracy} className="h-1" />
+                      <Bar value={s.accuracy} className="h-1" delay={di * 80 + 250 + si * 60} />
                     </div>
                   </Link>
                 </li>

@@ -7,9 +7,11 @@ import { isFullTest, useAttempts, useHydrated, useNow, useProfile, useTestResult
 import type { SectionId } from "@/lib/taxonomy";
 import { PAGE } from "@/lib/ui";
 import { AccuracyDonut } from "./AccuracyDonut";
+import { CountUp } from "./CountUp";
 import { SectionCard, TopicBreakdown } from "./Breakdown";
+import { Reveal } from "./Reveal";
 import { ScoreChart } from "./ScoreChart";
-import { Card, EmptyChart, Skeleton, milestone } from "./parts";
+import { Card, EmptyChart, Skeleton, enter, milestone } from "./parts";
 
 /** One test so far: show the score instead of a one-point chart. */
 function FirstScore({ r, target }: { r: TestResult; target: number | null }) {
@@ -17,7 +19,9 @@ function FirstScore({ r, target }: { r: TestResult; target: number | null }) {
     <div className="flex h-60 flex-col justify-between rounded-xl bg-surface-2/40 p-5">
       <div>
         <p className="text-[13px] text-muted">Your first practice test</p>
-        <p className="mt-1 text-5xl font-bold tracking-tight tabular-nums">{r.total}</p>
+        <p className="mt-1 text-5xl font-bold tracking-tight tabular-nums">
+          <CountUp value={r.total} delay={200} duration={1200} />
+        </p>
         <p className="mt-2 text-sm text-muted tabular-nums">
           Reading and Writing <span className="font-semibold text-ink">{r.rw}</span> · Math <span className="font-semibold text-ink">{r.math}</span>
           {target !== null && r.total < target && (
@@ -59,35 +63,41 @@ export function Statistics() {
 
       {/* Totals */}
       <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-3">
-        <Card>
+        <Card {...enter(0)}>
           <p className="text-sm font-medium text-muted">Questions answered</p>
           {!hydrated ? (
             <Skeleton className="mt-3 h-10 w-24" />
           ) : (
             <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{stats.overall.answered.toLocaleString("en-US")}</p>
+              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
+                <CountUp value={stats.overall.answered} />
+              </p>
               <p className={tile}>{stats.overall.answered ? `R&W ${stats.bySection.rw.answered} · Math ${stats.bySection.math.answered}` : "none yet"}</p>
             </>
           )}
         </Card>
-        <Card>
+        <Card {...enter(1)}>
           <p className="text-sm font-medium text-muted">Active days</p>
           {!hydrated ? (
             <Skeleton className="mt-3 h-10 w-24" />
           ) : (
             <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{stats.days.size}</p>
+              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
+                <CountUp value={stats.days.size} delay={80} />
+              </p>
               <p className={tile}>{bestDay ? `best day: ${bestDay} questions` : "no study days yet"}</p>
             </>
           )}
         </Card>
-        <Card className="col-span-2 lg:col-span-1">
+        <Card className="lesson-in col-span-2 lg:col-span-1" style={{ animationDelay: "140ms" }}>
           <p className="text-sm font-medium text-muted">Practice tests</p>
           {!hydrated ? (
             <Skeleton className="mt-3 h-10 w-24" />
           ) : (
             <>
-              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{history.length}</p>
+              <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">
+                <CountUp value={history.length} delay={160} />
+              </p>
               {history.length ? (
                 <p className={tile}>best score {best}</p>
               ) : (
@@ -102,7 +112,7 @@ export function Statistics() {
 
       {/* Charts */}
       <div className="mt-4 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
-        <Card>
+        <Card {...enter(3)}>
           <h2 className="font-semibold">Score trend</h2>
           <p className="mt-0.5 text-[13px] text-muted">Your total score on each practice test (400–1600)</p>
           <div className="mt-4">
@@ -117,7 +127,7 @@ export function Statistics() {
             )}
           </div>
         </Card>
-        <Card>
+        <Card {...enter(4)}>
           <h2 className="font-semibold">Correct vs incorrect</h2>
           <p className="mt-0.5 text-[13px] text-muted">Every question you&apos;ve answered</p>
           <div className="mt-4">
@@ -134,19 +144,19 @@ export function Statistics() {
 
       {/* By section */}
       <h2 className="mt-8 font-semibold">By section</h2>
-      <div className="mt-3 grid gap-4 md:grid-cols-2">
+      <Reveal className="mt-3 grid gap-4 md:grid-cols-2">
         {hydrated ? (
-          (["rw", "math"] as SectionId[]).map((s) => <SectionCard key={s} s={s} stats={stats} />)
+          (["rw", "math"] as SectionId[]).map((s, i) => <SectionCard key={s} s={s} stats={stats} delay={i * 90} />)
         ) : (
           <>
             <Skeleton className="h-96 rounded-2xl" />
             <Skeleton className="h-96 rounded-2xl" />
           </>
         )}
-      </div>
+      </Reveal>
 
       {/* By topic */}
-      <div className="mt-6">{hydrated ? <TopicBreakdown stats={stats} /> : <Skeleton className="h-[40rem] rounded-2xl" />}</div>
+      <Reveal className="mt-6">{hydrated ? <TopicBreakdown stats={stats} /> : <Skeleton className="h-[40rem] rounded-2xl" />}</Reveal>
     </section>
   );
 }

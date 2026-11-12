@@ -2,9 +2,16 @@ import Link from "next/link";
 
 // Small building blocks shared by Home (Dashboard) and Statistics.
 
-export function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-2xl border border-line bg-surface p-5 ${className}`}>{children}</div>;
+export function Card({ children, className = "", style }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) {
+  return (
+    <div className={`rounded-2xl border border-line bg-surface p-5 ${className}`} style={style}>
+      {children}
+    </div>
+  );
 }
+
+/** Staggered entrance for the n-th block on a page (globals.css .lesson-in). */
+export const enter = (n: number) => ({ className: "lesson-in", style: { animationDelay: `${n * 70}ms` } });
 
 export function Skeleton({ className = "" }: { className?: string }) {
   return <div className={`animate-pulse rounded-lg bg-surface-2 ${className}`} />;

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CountUp } from "./CountUp";
 
 const R = 70; // ring radius (center of the stroke)
 const T = 22; // ring thickness
@@ -38,7 +39,7 @@ export function AccuracyDonut({ correct, wrong }: { correct: number; wrong: numb
       <div className="relative h-44 w-44 shrink-0">
         <svg viewBox="0 0 180 180" className="h-full w-full -rotate-90" role="img" aria-label={`${correct} correct and ${wrong} incorrect answers`}>
           <circle cx={90} cy={90} r={R} fill="none" stroke="var(--surface-2)" strokeWidth={T} />
-          {slices.map((s) => (
+          {slices.map((s, i) => (
             <circle
               key={s.key}
               cx={90}
@@ -51,7 +52,8 @@ export function AccuracyDonut({ correct, wrong }: { correct: number; wrong: numb
               strokeDashoffset={-s.offset}
               tabIndex={0}
               aria-label={`${s.label}: ${s.value} (${pct(s.value)}%)`}
-              className="cursor-pointer outline-none transition-[stroke-width]"
+              className="stat-draw cursor-pointer outline-none transition-[stroke-width]"
+              style={{ animationDelay: `${150 + i * 120}ms` }}
               onPointerEnter={() => setHover(s.key)}
               onPointerLeave={() => setHover(null)}
               onFocus={() => setHover(s.key)}
@@ -60,18 +62,19 @@ export function AccuracyDonut({ correct, wrong }: { correct: number; wrong: numb
           ))}
         </svg>
         <div className="pointer-events-none absolute inset-0 grid place-content-center text-center">
-          <p className="text-3xl font-bold tracking-tight tabular-nums">{center ? center.value : `${pct(correct)}%`}</p>
+          <p className="text-3xl font-bold tracking-tight tabular-nums">{center ? center.value : <CountUp value={pct(correct)} suffix="%" delay={150} duration={1100} />}</p>
           <p className="text-xs text-muted">{center ? `${center.label.toLowerCase()} · ${pct(center.value)}%` : "accuracy"}</p>
         </div>
       </div>
 
       <ul className="w-full min-w-0 space-y-2.5">
-        {parts.map((p) => (
+        {parts.map((p, i) => (
           <li
             key={p.key}
+            style={{ animationDelay: `${300 + i * 90}ms` }}
             onPointerEnter={() => setHover(p.key)}
             onPointerLeave={() => setHover(null)}
-            className={`flex items-center gap-3 rounded-xl px-3 py-2 transition-colors ${hover === p.key ? "bg-surface-2" : ""}`}
+            className={`lesson-in flex items-center gap-3 rounded-xl px-3 py-2 transition-colors ${hover === p.key ? "bg-surface-2" : ""}`}
           >
             <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full text-white" style={{ background: p.color }} aria-hidden="true">
               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={2.8} strokeLinecap="round" strokeLinejoin="round">
