@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import { SiteFooter } from "@/components/SiteFooter";
+import { Toaster } from "@/components/Toaster";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1">{children}</main>
           <SiteFooter />
         </div>
+        <Toaster />
       </body>
     </html>
   );

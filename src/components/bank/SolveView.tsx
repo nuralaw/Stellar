@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { addAttempt, toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain } from "@/lib/taxonomy";
@@ -8,6 +9,7 @@ import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
 import { CalculatorDock } from "@/components/CalculatorDock";
 import { useFocusMode } from "@/lib/focus";
+import { showToast } from "@/lib/toast";
 import { SyncNudge } from "@/components/SyncNudge";
 import { DifficultyBadge, QuestionCard } from "./QuestionCard";
 import { ReportButton } from "./ReportButton";
@@ -265,6 +267,7 @@ export function SolveView({
   onRestart: (ids: string[], title: string) => void;
 }) {
   useFocusMode();
+  const router = useRouter();
   const [pos, setPos] = useState(run.start);
   // Question order; "Shuffle" mixes up the current and upcoming questions.
   const [ids, setIds] = useState(run.ids);
@@ -376,6 +379,17 @@ export function SolveView({
     window.scrollTo({ top: 0 });
   };
   const showCalc = hasMath && calcOpen;
+  // Leaving mid-set: every answer is already saved (stats, Question Bank status), so say so.
+  const saved = () =>
+    showToast("Progress saved", answeredCount ? `${answeredCount} answer${answeredCount === 1 ? "" : "s"} saved to your stats.` : "Pick up any time in the Question Bank.");
+  const leave = () => {
+    saved();
+    onExit();
+  };
+  const goHome = () => {
+    saved();
+    router.push("/");
+  };
   const toggleCalc = () => {
     setCalcUsed(true);
     setCalcOpen((v) => !v);
@@ -387,7 +401,18 @@ export function SolveView({
       <div className="sticky top-0 z-20 -mx-4 border-b border-line bg-bg/90 px-4 pt-3 backdrop-blur md:-mx-8 md:px-8">
         <div className="flex items-center justify-between gap-2 sm:gap-3">
           <div className="flex min-w-0 items-center gap-2">
-            <button type="button" onClick={onExit} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
+            <button
+              type="button"
+              onClick={goHome}
+              title="Save and go to Home"
+              aria-label="Save and go to Home"
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1.5 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink"
+            >
+              <Icon d={I.home} className="h-4 w-4" />
+              <span className="hidden sm:inline">Home</span>
+            </button>
+            <span className="h-5 w-px bg-line" aria-hidden="true" />
+            <button type="button" onClick={leave} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
               <Icon d={I.chevronL} className="h-4 w-4" />
               <span className="hidden sm:inline">{run.from ?? "Question Bank"}</span>
             </button>

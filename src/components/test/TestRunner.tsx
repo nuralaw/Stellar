@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
 import { useFocusMode } from "@/lib/focus";
+import { showToast } from "@/lib/toast";
 import { I, Icon } from "@/components/bank/icons";
 import { addAttempts, addTestResult, saveTestSession, useHydrated, useTestResults, useTestSession, type TestResult, type TestSession } from "@/lib/store";
 import { MODULE_INFO, testName, type ModuleId, type PracticeTest, type TestQuestion } from "@/lib/test-types";
@@ -194,6 +195,7 @@ function Intro({ test, other }: { test: PracticeTest; other: TestSession | null 
 
 function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; onFinish: (s: TestSession) => void }) {
   useFocusMode();
+  const router = useRouter();
   const moduleId = s.modules[s.module] as ModuleId;
   const info = MODULE_INFO[moduleId];
   const qs = useMemo(() => test.modules[moduleId] ?? [], [test, moduleId]);
@@ -208,9 +210,16 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
 
   const isLast = s.module === s.modules.length - 1;
   const nextSection = !isLast && MODULE_INFO[s.modules[s.module + 1] as ModuleId].section !== info.section;
-  const left = s.endsAt === null ? info.minutes * 60_000 : s.endsAt - now;
+  const left = s.endsAt === null ? (s.paused ?? info.minutes * 60_000) : s.endsAt - now;
 
   const update = (patch: Partial<TestSession>) => saveTestSession({ ...s, ...patch });
+
+  /** Save and go Home: answers are already saved; a running module's clock pauses with the time left. */
+  const saveAndExit = () => {
+    if (s.endsAt !== null) update({ endsAt: null, paused: Math.max(1000, s.endsAt - Date.now()) });
+    showToast("Progress saved", "Continue your test any time from Practice Test.");
+    router.push("/");
+  };
 
   const submit = () => {
     if (submitted.current) return;
@@ -277,12 +286,24 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight">{info.label}</h1>
         <p className="mt-3 text-muted">
-          {qs.length} questions · {info.minutes} minutes. The timer starts when you press Start.
+          {s.paused !== undefined ? (
+            <>
+              Paused with <span className="font-semibold text-ink tabular-nums">{fmtClock(s.paused)}</span> left. Your answers are saved; the timer runs again when you continue.
+            </>
+          ) : (
+            <>
+              {qs.length} questions · {info.minutes} minutes. The timer starts when you press Start.
+            </>
+          )}
         </p>
-        {afterBreak && <p className="mt-4 rounded-xl bg-surface-2 px-4 py-3 text-sm">On the real test you&apos;d get a 10-minute break here. Take one if you like — the clock is paused.</p>}
+        {afterBreak && s.paused === undefined && <p className="mt-4 rounded-xl bg-surface-2 px-4 py-3 text-sm">On the real test you&apos;d get a 10-minute break here. Take one if you like — the clock is paused.</p>}
         <div className="mt-8 flex justify-center gap-3">
-          <button type="button" onClick={() => update({ endsAt: Date.now() + info.minutes * 60_000 })} className={`${btnPrimary} min-w-40`} autoFocus>
-            Start
+          <button type="button" onClick={() => update({ endsAt: Date.now() + (s.paused ?? info.minutes * 60_000), paused: undefined })} className={`${btnPrimary} min-w-40`} autoFocus>
+            {s.paused !== undefined ? "Continue" : "Start"}
+          </button>
+          <button type="button" onClick={saveAndExit} className={btnGhost}>
+            <Icon d={I.home} className="h-4 w-4" />
+            Save &amp; exit
           </button>
         </div>
         <QuitButton />
@@ -301,6 +322,10 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
       {/* Toolbar */}
       <div className="sticky top-0 z-30 -mx-4 border-b border-line bg-bg/90 px-4 py-2.5 backdrop-blur md:-mx-8 md:px-8">
         <div className="flex items-center gap-2 sm:gap-3">
+          <button type="button" onClick={saveAndExit} title="Pause the timer, save and go to Home" className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-lg border border-line bg-surface px-2.5 text-sm font-semibold text-muted transition-colors hover:bg-surface-2 hover:text-ink">
+            <Icon d={I.home} className="h-4 w-4" />
+            <span className="hidden sm:inline">Save &amp; exit</span>
+          </button>
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-semibold">{info.label}</p>
             <p className="truncate text-xs text-muted">{testName(test, true)}</p>

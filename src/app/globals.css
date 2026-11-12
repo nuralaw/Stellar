@@ -405,3 +405,39 @@ textarea,
 [data-reveal]:not([data-seen]) :is(.stat-grow, .stat-rise, .stat-draw, .stat-line, .stat-fade, .lesson-in, .lesson-pop) {
   animation-play-state: paused;
 }
+
+/* Toaster (components/Toaster.tsx): slides up, counts down, fades out. */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+}
+@keyframes toast-out {
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes toast-timer {
+  to {
+    transform: scaleX(0);
+  }
+}
+.toast-in {
+  animation: toast-in 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.toast-out {
+  animation: toast-out 0.25s ease-in forwards;
+}
+.toast-timer {
+  animation-name: toast-timer;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .toast-in,
+  .toast-out {
+    animation: none;
+  }
+}

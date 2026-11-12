@@ -58,8 +58,10 @@ export interface TestSession {
   modules: string[];
   /** Index into modules. */
   module: number;
-  /** Unix ms when the current module's time runs out (null while on a break / not started). */
+  /** Unix ms when the current module's time runs out (null while on a break / not started / paused). */
   endsAt: number | null;
+  /** ms left on the current module when the student saved and left mid-module (the clock is paused). */
+  paused?: number;
   responses: Record<string, string>;
   marked: string[];
   startedAt: number;

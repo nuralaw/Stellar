@@ -26,6 +26,7 @@ export const I = {
   expand: "M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7",
   shrink: "M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7",
   keyboard: "M3 6h18v12H3zM7 10h.01M11 10h.01M15 10h.01M7 14h10",
+  home: "M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z",
 } as const;
 
 export function Icon({ d, className = "h-5 w-5", filled, strokeWidth = 1.8 }: { d: string; className?: string; filled?: boolean; strokeWidth?: number }) {
