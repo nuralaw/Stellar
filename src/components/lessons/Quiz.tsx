@@ -76,9 +76,9 @@ export function Quiz({
               aria-checked={i === (picked ?? selected)}
               disabled={checked}
               onClick={() => onSelect(i)}
-              className={`group flex min-h-13 w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left transition-[background-color,border-color,opacity] sm:px-4 ${box}`}
+              className={`group flex min-h-13 w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left transition-[background-color,border-color,opacity] sm:px-4 ${box} ${state === "wrong" ? "lesson-shake" : ""}`}
             >
-              <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border-[1.5px] text-sm font-semibold transition-colors ${badge}`}>
+              <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border-[1.5px] text-sm font-semibold transition-colors ${badge} ${state === "correct" ? "lesson-pop" : ""}`}>
                 {state === "correct" ? (
                   <Icon d={I.check} className="h-4 w-4" strokeWidth={2.8} />
                 ) : state === "wrong" ? (
@@ -94,7 +94,7 @@ export function Quiz({
       </div>
 
       {checked && (
-        <div className={`mt-5 overflow-hidden rounded-xl border ${ok ? "border-success/40" : "border-danger/40"}`} role="status">
+        <div className={`lesson-in mt-5 overflow-hidden rounded-xl border ${ok ? "border-success/40" : "border-danger/40"}`} role="status">
           <div className={`flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 ${ok ? "bg-success-soft" : "bg-danger-soft"}`}>
             <span className={`grid h-6 w-6 place-items-center rounded-full text-surface ${ok ? "bg-success" : "bg-danger"}`}>
               <Icon d={ok ? I.check : I.x} className="h-3.5 w-3.5" strokeWidth={3} />

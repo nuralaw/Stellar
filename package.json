@@ -17,7 +17,8 @@
     "tests:build": "node scripts/tests-build.mjs",
     "tests:check": "node scripts/tests-build.mjs --check",
     "lessons:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-check.mjs",
-    "lessons:questions": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-questions.mjs"
+    "lessons:questions": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-questions.mjs",
+    "lessons:visuals": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-visuals.mjs"
   },
   "dependencies": {
     "next": "16.4.6",

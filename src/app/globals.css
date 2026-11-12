@@ -245,3 +245,72 @@ textarea,
   background-color: rgb(249 168 212 / 0.9);
   color: #111;
 }
+
+/* Lessons. Visuals (components/lessons/visuals): paused while off screen, still final frame for reduced motion. */
+.lv[data-play="off"] * {
+  animation-play-state: paused !important;
+}
+@keyframes lesson-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes lesson-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.12);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes lesson-shake {
+  0%,
+  100% {
+    transform: none;
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+}
+@keyframes lesson-cover {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+}
+.lesson-in {
+  animation: lesson-in 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.lesson-pop {
+  animation: lesson-pop 0.38s ease-out both;
+}
+.lesson-shake {
+  animation: lesson-shake 0.42s ease-out;
+}
+.lesson-cover {
+  animation: lesson-cover 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lv *,
+  .lesson-in,
+  .lesson-pop,
+  .lesson-shake,
+  .lesson-cover {
+    animation: none !important;
+  }
+}

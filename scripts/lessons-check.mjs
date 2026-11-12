@@ -51,8 +51,8 @@ for (const file of targets) {
   // Frontmatter
   for (const k of ["title", "skill", "domain", "section", "summary"]) if (!meta[k]) errors.push(`frontmatter: missing ${k}`);
   if (meta.section && meta.section !== section) errors.push(`frontmatter: section "${meta.section}" but the file is in ${section}/`);
-  if (meta.summary && meta.summary.length > 160) errors.push(`summary is ${meta.summary.length} chars (max 140)`);
-  else if (meta.summary && meta.summary.length > 140) warns.push(`summary is ${meta.summary.length} chars (max 140)`);
+  if (meta.summary && meta.summary.length > 120) errors.push(`summary is ${meta.summary.length} chars (max 80)`);
+  else if (meta.summary && meta.summary.length > 80) warns.push(`summary is ${meta.summary.length} chars (max 80)`);
   if (meta.minutes) warns.push("frontmatter: drop `minutes` (the site computes it)");
   const isSkill = section !== "strategy";
   if (isSkill) {
@@ -61,19 +61,29 @@ for (const file of targets) {
     else if (!dom.skills.some((s) => s.id === meta.skill)) errors.push(`frontmatter: skill "${meta.skill}" is not in domain ${meta.domain}`);
     if (meta.skill !== slug) errors.push(`frontmatter: skill "${meta.skill}" should equal the file name "${slug}"`);
   } else if (meta.domain !== "strategy" || meta.skill !== slug) errors.push("strategy lessons need domain: strategy and skill: <file name>");
+  if (!fs.existsSync(path.join(root, "src/components/lessons/visuals", `${slug}.tsx`))) warns.push(`no animation yet: src/components/lessons/visuals/${slug}.tsx`);
 
   // Steps
-  if (steps.length < 7 || steps.length > 13) errors.push(`${steps.length} steps (need 8–12)`);
-  else if (steps.length < 8 || steps.length > 12) warns.push(`${steps.length} steps (aim for 8–12)`);
+  const [lo, hi] = isSkill ? [9, 10] : [5, 8];
+  if (steps.length < lo - 1 || steps.length > hi + 1) errors.push(`${steps.length} steps (need ${lo}–${hi})`);
+  else if (steps.length < lo || steps.length > hi) warns.push(`${steps.length} steps (aim for ${lo}–${hi})`);
   let callouts = 0;
   let quizzes = 0;
+  let textWords = 0;
   const checks = [];
+  const examples = steps.filter((s) => s.block?.t === "example").length;
+  if (examples !== 1) errors.push(`${examples} example blocks (need exactly one, in the first step)`);
+  if (steps[0] && steps[0].block?.t !== "example") errors.push("the first step must end with the ```example block");
+  const passage = section === "rw" ? 30 : 0;
   steps.forEach((s, i) => {
     const where = `step ${i + 1} "${s.title}"`;
     const words = countWords(s.body);
-    if (words > 110) errors.push(`${where}: ${words} words of text (max 90)`);
-    else if (words > 90) warns.push(`${where}: ${words} words of text (max 90)`);
-    if (s.title.split(/\s+/).length > 6 && !/^Your turn/.test(s.title)) warns.push(`${where}: title longer than 6 words`);
+    textWords += words;
+    if (s.title !== "Recap") {
+      if (words > 40) errors.push(`${where}: ${words} words of text (max 25)`);
+      else if (words > 25) warns.push(`${where}: ${words} words of text (max 25)`);
+    }
+    if (s.title.split(/\s+/).length > 5 && !/^Your turn/.test(s.title)) warns.push(`${where}: title longer than 5 words`);
     const lines = s.body.split("\n").map((x) => x.trim());
     callouts += lines.filter((x) => /^>\s*\*\*[^*]+\*\*/.test(x)).length;
     lines.forEach((x, j) => {
@@ -82,16 +92,37 @@ for (const file of targets) {
       if (/^\s{2,}[-*]\s/.test(s.body.split("\n")[j] ?? "")) errors.push(`${where}: nested list`);
       if (x.startsWith("|") && x.split("|").length - 2 > 3 && j === lines.findIndex((y) => y.startsWith("|"))) warns.push(`${where}: table has more than 3 columns`);
     });
-    if (s.body.includes("```")) errors.push(`${where}: a code fence that isn't \`\`\`quiz or \`\`\`check`);
+    if (s.body.includes("```")) errors.push(`${where}: a code fence that isn't \`\`\`example, \`\`\`quiz or \`\`\`check`);
     const b = s.block;
+    if (b?.t === "example") {
+      const pw = countWords(b.prompt);
+      textWords += b.lines.reduce((n, l) => n + countWords(l.note ?? ""), 0);
+      if (pw > 60 + passage) errors.push(`${where}: example problem is ${pw} words (max ${40 + passage})`);
+      else if (pw > 40 + passage) warns.push(`${where}: example problem is ${pw} words (max ${40 + passage})`);
+      b.lines.forEach((l, k) => {
+        const tw = countWords(l.text);
+        const nw = countWords(l.note ?? "");
+        if (tw > 20) errors.push(`${where}: example line ${k + 1} is ${tw} words (max 14)`);
+        else if (tw > 14) warns.push(`${where}: example line ${k + 1} is ${tw} words (max 14)`);
+        if (nw > 16) errors.push(`${where}: note on example line ${k + 1} is ${nw} words (max 10)`);
+        else if (nw > 10) warns.push(`${where}: note on example line ${k + 1} is ${nw} words (max 10)`);
+      });
+    }
     if (b?.t === "quiz") {
       quizzes++;
+      const qw = countWords(b.prompt);
+      if (qw > 65 + passage) errors.push(`${where}: quiz question is ${qw} words (max ${40 + passage})`);
+      else if (qw > 40 + passage) warns.push(`${where}: quiz question is ${qw} words (max ${40 + passage})`);
       if (!b.explain.length) warns.push(`${where}: quiz has no > explanation`);
+      if (b.explain.length > 2) warns.push(`${where}: ${b.explain.length} explanation lines (max 2)`);
       const expWords = countWords(b.explain.join(" "));
-      if (expWords > 110) warns.push(`${where}: quiz explanation is ${expWords} words (max 60, worked example 100)`);
+      if (expWords > 45) errors.push(`${where}: quiz explanation is ${expWords} words (max 25)`);
+      else if (expWords > 25) warns.push(`${where}: quiz explanation is ${expWords} words (max 25)`);
       b.options.forEach((o) => {
         if (!o.correct && !o.feedback) warns.push(`${where}: wrong option "${o.text.slice(0, 30)}" has no :: feedback`);
-        if (o.feedback && countWords(o.feedback) > 35) warns.push(`${where}: feedback for "${o.text.slice(0, 30)}" is ${countWords(o.feedback)} words (max 25)`);
+        const fw = countWords(o.feedback ?? "");
+        if (fw > 20) errors.push(`${where}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
+        else if (fw > 12) warns.push(`${where}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
       });
       const texts = b.options.map((o) => o.text.toLowerCase());
       if (new Set(texts).size !== texts.length) errors.push(`${where}: two quiz options are the same`);
@@ -110,13 +141,25 @@ for (const file of targets) {
         const dupes = owner.get(b.id) ?? [];
         if (dupes.length > 1) errors.push(`${where}: ${b.id} is used more than once (${dupes.join(", ")})`);
       }
-      if (words > 25) warns.push(`${where}: ${words} words before a check (max 20)`);
+      if (words > 12) warns.push(`${where}: ${words} words before a check (max 12)`);
     }
   });
-  if (callouts > 3) warns.push(`${callouts} callouts (max 3)`);
+  if (callouts > 1) warns.push(`${callouts} callouts (max 1)`);
+  if (textWords > 200) errors.push(`${textWords} words of teaching text (max 160)`);
+  else if (textWords > 160) warns.push(`${textWords} words of teaching text (max 160)`);
   const last = steps.at(-1);
   if (!last || last.title !== "Recap") errors.push('the last step must be "## Recap"');
-  else if (last.block) errors.push("the Recap step has no quiz/check");
+  else {
+    if (last.block) errors.push("the Recap step has no example/quiz/check");
+    const bullets = last.body.split("\n").filter((x) => /^\s*[-*]\s/.test(x)).length;
+    const rw = countWords(last.body);
+    if (bullets < 2 || bullets > 3) warns.push(`Recap has ${bullets} bullets (2–3)`);
+    if (rw > 45) errors.push(`Recap is ${rw} words (max 30)`);
+    else if (rw > 30) warns.push(`Recap is ${rw} words (max 30)`);
+  }
+  const traps = steps.filter((s) => /^Trap:/.test(s.title));
+  if (traps.length !== 1) warns.push(`${traps.length} "## Trap: …" steps (need one)`);
+  else if (traps[0].block?.t !== "quiz") errors.push(`step "${traps[0].title}" needs a quiz`);
   if (isSkill) {
     const want = ["easy", "medium", "hard"];
     const turns = steps.filter((s) => /^Your turn/.test(s.title));
@@ -129,11 +172,11 @@ for (const file of targets) {
       if (q && q.difficulty !== d) warns.push(`step "${s.title}": ${q.id} is ${q.difficulty}`);
     });
   }
-  if (quizzes < 4) warns.push(`only ${quizzes} quizzes (most steps should end with one)`);
+  if (quizzes < 3) warns.push(`only ${quizzes} quizzes (aim for 3–5)`);
 
   const mins = estimateMinutes(steps, section);
   const ok = !errors.length;
-  console.log(`${ok ? "✓" : "✗"} ${rel} · ${steps.length} steps · ${quizzes} quizzes · ${checks.length} checks · ~${mins} min`);
+  console.log(`${ok ? "✓" : "✗"} ${rel} · ${steps.length} steps · ${quizzes} quizzes · ${checks.length} checks · ${textWords} words · ~${mins} min`);
   for (const e of errors) console.log(`  error: ${e}`);
   for (const w of warns) console.log(`  warn:  ${w}`);
   errorCount += errors.length;

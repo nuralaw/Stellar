@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LessonPlayer } from "@/components/lessons/LessonPlayer";
+import { lessonVisual } from "@/components/lessons/lessonVisual";
 import { getLesson, getLessons, lessonQuestions } from "@/lib/lessons";
 import { SECTIONS, getDomain, type SectionId } from "@/lib/taxonomy";
 
@@ -26,9 +27,11 @@ export default async function Page({ params }: PageProps<"/lessons/[slug]">) {
 
   return (
     <LessonPlayer
+      visual={lessonVisual(l.slug)}
       lesson={{
         slug: l.slug,
         title: l.title,
+        summary: l.summary,
         section: l.section,
         where: strategy ? "Start here" : `${SECTIONS[l.section as SectionId].short} · ${getDomain(l.domain)?.name ?? ""}`,
         minutes: l.minutes,

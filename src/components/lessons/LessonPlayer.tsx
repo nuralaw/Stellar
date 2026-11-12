@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
 import { DifficultyBadge, QuestionCard } from "@/components/bank/QuestionCard";
 import { I, Icon } from "@/components/bank/icons";
@@ -10,8 +10,10 @@ import type { Step } from "@/lib/lesson-format";
 import { addAttempt, saveLessonProgress, useHydrated, useLessonProgress, type LessonProgress } from "@/lib/store";
 import type { Question } from "@/lib/types";
 import { estMinutes } from "@/lib/ui";
+import { Example } from "./Example";
 import { Markdown } from "./Markdown";
 import { Quiz } from "./Quiz";
+import { Stage } from "./visuals/Stage";
 
 const btnPrimary =
   "inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors outline-none hover:bg-primary-hover focus-visible:ring-3 focus-visible:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-40";
@@ -22,6 +24,7 @@ const btnOutline = "inline-flex items-center justify-center gap-2 rounded-xl bor
 export interface PlayerLesson {
   slug: string;
   title: string;
+  summary: string;
   section: "rw" | "math" | "strategy";
   /** "R&W · Craft and Structure" / "Start here". */
   where: string;
@@ -33,23 +36,30 @@ export interface PlayerLesson {
   next: { slug: string; title: string } | null;
 }
 
-export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
+/**
+ * Plays a lesson. Screen 0 is the cover (the topic's animation, title, one line); screen i ≥ 1 is step i − 1 of the
+ * lesson file; screen n is "Lesson complete". Progress (screen, answers by screen) is saved per lesson.
+ */
+export function LessonPlayer({ lesson, visual }: { lesson: PlayerLesson; visual: ReactNode }) {
   useFocusMode();
   const { slug, steps, questions } = lesson;
-  const n = steps.length;
+  const n = steps.length + 1;
   const hydrated = useHydrated();
   const saved: LessonProgress | undefined = useLessonProgress()[slug];
-  // null = not moved yet in this visit: resume where the student left off (a finished lesson reopens at step 1).
+  // Saved progress only applies to the same version of the lesson (same screen count).
+  const same = saved?.steps === n;
+  // null = not moved yet in this visit: resume where the student left off (a finished lesson reopens at the cover).
   const [moved, setMoved] = useState<number | null>(null);
-  const resume = saved && !saved.done ? Math.min(saved.step, n) : 0;
+  const resume = same && saved && !saved.done ? Math.min(saved.step, n) : 0;
   const pos = moved ?? (hydrated ? resume : 0);
   const [sel, setSel] = useState<number | null>(null);
+  const [shown, setShown] = useState(0);
   const [calcOpen, setCalcOpen] = useState(false);
   const [calcUsed, setCalcUsed] = useState(false);
 
-  // Answers are keyed by step index, so they only apply to the same version of the lesson.
-  const picks = saved && saved.steps === n ? saved.picks : {};
-  const step = pos < n ? steps[pos] : null;
+  const picks = same && saved ? saved.picks : {};
+  const max = Math.max(same ? (saved?.max ?? 0) : 0, pos);
+  const step = pos > 0 && pos < n ? steps[pos - 1] : null;
   const block = step?.block ?? null;
   const question = block?.t === "check" ? questions[block.id] : undefined;
   const pick = picks[pos];
@@ -59,9 +69,14 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
   const hasMath = lesson.section === "math" || slug === "desmos";
   const showCalc = hasMath && calcOpen;
   const wide = Boolean(question && ((question.passage && question.section === "rw") || question.table || question.figure));
+  // A worked example opens line by line the first time; fully when revisited.
+  const exampleLines = block?.t === "example" ? block.lines.length : 0;
+  const revealed = pos < max ? exampleLines : Math.min(exampleLines, Math.max(1, shown));
+  const moreLines = block?.t === "example" && revealed < exampleLines;
 
   const save = (patch: Partial<LessonProgress>) => {
-    const base: LessonProgress = saved ?? { step: 0, max: 0, steps: n, picks: {}, at: Date.now() };
+    // A new version of the lesson starts fresh, but a lesson finished before stays finished.
+    const base: LessonProgress = same && saved ? saved : { step: 0, max: 0, steps: n, picks: {}, at: Date.now(), ...(saved?.done ? { done: saved.done } : {}) };
     saveLessonProgress(slug, { ...base, ...patch, steps: n, at: Date.now() });
   };
 
@@ -69,8 +84,9 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
     const to = Math.max(0, Math.min(n, i));
     setMoved(to);
     setSel(null);
+    setShown(1);
     const finished = to === n;
-    save({ step: to, max: Math.max(saved?.max ?? 0, to), ...(finished && !saved?.done ? { done: Date.now() } : {}) });
+    save({ step: to, max: Math.max(max, to), ...(finished && !(same && saved?.done) ? { done: Date.now() } : {}) });
     window.scrollTo({ top: 0 });
   };
   const next = () => go(pos + 1);
@@ -91,12 +107,14 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
     save({ picks: { ...picks, [pos]: { r: response, ok } } });
     addAttempt({ qid: question.id, section: question.section, domain: question.domain, skill: question.skill, difficulty: question.difficulty, correct: ok, at: Date.now() });
   };
+  const showLine = () => setShown(Math.min(exampleLines, revealed + 1));
 
   const needsCheck = block?.t === "quiz" && !pick;
 
-  // Keyboard on text/quiz steps (check steps use QuestionCard's own keys): A–D / 1–4 choose, Enter checks or continues.
+  // Keyboard on cover/text/example/quiz screens (check steps use QuestionCard's own keys):
+  // A–D / 1–4 choose, Enter checks, shows the next example line or continues.
   useEffect(() => {
-    if (!step || block?.t === "check") return;
+    if (pos >= n || block?.t === "check") return;
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       if ((e.target as Element | null)?.closest?.("[data-calculator]")) return;
@@ -105,6 +123,7 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
         if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
         e.preventDefault();
         if (needsCheck) checkQuiz();
+        else if (moreLines) showLine();
         else next();
         return;
       }
@@ -120,9 +139,9 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
 
   const answered = Object.values(picks);
   const right = answered.filter((p) => p.ok).length;
-  const checkSteps = steps.map((s, i) => (s.block?.t === "check" ? i : -1)).filter((i) => i >= 0);
-  const realRight = checkSteps.filter((i) => picks[i]?.ok).length;
-  const max = Math.max(saved?.max ?? 0, pos);
+  const checkScreens = steps.map((s, i) => (s.block?.t === "check" ? i + 1 : -1)).filter((i) => i >= 0);
+  const realRight = checkScreens.filter((i) => picks[i]?.ok).length;
+  const realCount = checkScreens.length;
 
   return (
     <section className={`mx-auto px-4 md:px-8 ${showCalc ? "max-w-[1600px]" : wide ? "max-w-6xl" : "max-w-3xl"}`}>
@@ -138,7 +157,7 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
             <span className="truncate text-sm font-semibold">{lesson.title}</span>
           </div>
           <div className="flex shrink-0 items-center gap-2">
-            {hasMath && (
+            {hasMath && pos > 0 && (
               <button
                 type="button"
                 onClick={() => {
@@ -157,53 +176,45 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
             )}
           </div>
         </div>
-        {/* Progress: one segment per step; visited ones can be revisited. */}
+        {/* Progress: one segment per screen; visited ones can be revisited. */}
         <div className="mt-3 flex gap-1 pb-3">
-          {steps.map((s, i) => (
-            <button
-              key={i}
-              type="button"
-              tabIndex={-1}
-              disabled={i > max}
-              onClick={() => go(i)}
-              title={s.title}
-              aria-label={`Step ${i + 1}: ${s.title}`}
-              className="group flex h-3 flex-1 items-center disabled:cursor-default"
-            >
-              <span className={`block w-full rounded-full transition-all ${i === pos ? "h-2 bg-primary" : i < pos || i <= max ? "h-1 bg-primary/45 group-hover:h-1.5" : "h-1 bg-line"}`} />
-            </button>
-          ))}
+          {Array.from({ length: n }, (_, i) => {
+            const label = i === 0 ? "Start" : steps[i - 1].title;
+            return (
+              <button
+                key={i}
+                type="button"
+                tabIndex={-1}
+                disabled={i > max}
+                onClick={() => go(i)}
+                title={label}
+                aria-label={`Step ${i + 1}: ${label}`}
+                className="group flex h-3 flex-1 items-center disabled:cursor-default"
+              >
+                <span className={`block w-full rounded-full transition-all duration-300 ${i === pos ? "h-2 bg-primary" : i <= max ? "h-1 bg-primary/45 group-hover:h-1.5" : "h-1 bg-line"}`} />
+              </button>
+            );
+          })}
         </div>
       </div>
 
       <CalculatorDock used={hasMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-24" fullHeight="calc(100vh - 7.5rem)">
         <div className="pt-8 md:pt-10">
-          {step ? (
-            <div key={pos} className="flex min-h-[calc(100dvh-8rem)] flex-col">
-              {pos === 0 && (
-                <div className="mb-8">
-                  <p className="text-sm font-medium text-primary">{lesson.where}</p>
-                  <h1 className="mt-1 text-3xl font-bold tracking-tight md:text-4xl">{lesson.title}</h1>
-                  <p className="mt-2 text-sm text-muted tabular-nums">
-                    {n} steps · about {lesson.minutes} min
-                  </p>
-                </div>
-              )}
-              {pos === 0 ? (
-                <h2 className="text-2xl font-bold tracking-tight">{title}</h2>
-              ) : (
-                <>
-                  <p className="text-xs font-semibold tracking-wide text-muted uppercase tabular-nums">
-                    Step {pos + 1} of {n}
-                  </p>
-                  <h1 className="mt-1.5 text-2xl font-bold tracking-tight md:text-3xl">{title}</h1>
-                </>
-              )}
+          {pos === 0 ? (
+            <Cover lesson={lesson} visual={visual} screens={n} realCount={realCount} onStart={next} />
+          ) : step ? (
+            <div key={pos} className="lesson-in flex min-h-[calc(100dvh-8rem)] flex-col">
+              <p className="text-xs font-semibold tracking-wide text-muted uppercase tabular-nums">
+                Step {pos} of {n - 1}
+              </p>
+              <h1 className="mt-1.5 text-2xl font-bold tracking-tight md:text-3xl">{title}</h1>
               {step.body && (
-                <div className="mt-4 [&>div>*:first-child]:mt-0">
+                <div className="mt-3 text-[17px] [&>div>*:first-child]:mt-0">
                   <Markdown source={step.body} />
                 </div>
               )}
+
+              {block?.t === "example" && <Example prompt={block.prompt} lines={block.lines} shown={revealed} />}
 
               {block?.t === "quiz" && (
                 <Quiz prompt={block.prompt} options={block.options} explain={block.explain} selected={sel} picked={quizPicked} onSelect={(i) => !pick && setSel(i)} />
@@ -222,7 +233,7 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
                       saved={pick ? { response: pick.r } : undefined}
                       onAnswered={(ok, r) => answerCheck(ok, r)}
                       onNext={next}
-                      onPrev={pos > 0 ? back : undefined}
+                      onPrev={back}
                       nextLabel={pos === n - 1 ? "Finish lesson" : "Continue"}
                     />
                   </div>
@@ -239,38 +250,83 @@ export function LessonPlayer({ lesson }: { lesson: PlayerLesson }) {
               {/* Bottom bar, pinned to the bottom of the screen (check steps use the question's own bar). */}
               <div className="h-8 shrink-0" aria-hidden="true" />
               {!(block?.t === "check" && question) && (
-                <div className="sticky bottom-0 z-10 -mx-4 mt-auto border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
-                  <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
-                    <button type="button" onClick={back} disabled={pos === 0} className={btnGhost} aria-label="Previous step">
-                      <Icon d={I.chevronL} className="h-4 w-4" />
-                      <span className="hidden sm:inline">Back</span>
-                    </button>
-                    <div className="flex-1" />
-                    {needsCheck ? (
-                      <>
-                        <button type="button" onClick={next} className={btnGhost}>
-                          Skip
-                        </button>
-                        <button type="button" onClick={checkQuiz} disabled={sel === null} className={`${btnPrimary} min-w-36`}>
-                          Check
-                        </button>
-                      </>
-                    ) : (
-                      <button type="button" onClick={next} className={`${btnPrimary} min-w-36`}>
-                        {pos === n - 1 ? "Finish lesson" : "Continue"}
-                        <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
+                <BottomBar>
+                  <button type="button" onClick={back} className={btnGhost} aria-label="Previous step">
+                    <Icon d={I.chevronL} className="h-4 w-4" />
+                    <span className="hidden sm:inline">Back</span>
+                  </button>
+                  <div className="flex-1" />
+                  {needsCheck ? (
+                    <>
+                      <button type="button" onClick={next} className={btnGhost}>
+                        Skip
                       </button>
-                    )}
-                  </div>
-                </div>
+                      <button type="button" onClick={checkQuiz} disabled={sel === null} className={`${btnPrimary} min-w-36`}>
+                        Check
+                      </button>
+                    </>
+                  ) : moreLines ? (
+                    <>
+                      <button type="button" onClick={() => setShown(exampleLines)} className={btnGhost}>
+                        Show all
+                      </button>
+                      <button type="button" onClick={showLine} className={`${btnPrimary} min-w-36`}>
+                        Next line
+                        <Icon d={I.chevronD} className="h-4 w-4" strokeWidth={2.2} />
+                      </button>
+                    </>
+                  ) : (
+                    <button type="button" onClick={next} className={`${btnPrimary} min-w-36`}>
+                      {pos === n - 1 ? "Finish lesson" : "Continue"}
+                      <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
+                    </button>
+                  )}
+                </BottomBar>
               )}
             </div>
           ) : (
-            <Complete lesson={lesson} answered={answered.length} right={right} real={checkSteps.length} realRight={realRight} onRestart={restart} onBack={back} />
+            <Complete lesson={lesson} answered={answered.length} right={right} real={realCount} realRight={realRight} onRestart={restart} onBack={back} />
           )}
         </div>
       </CalculatorDock>
     </section>
+  );
+}
+
+function BottomBar({ children }: { children: ReactNode }) {
+  return (
+    <div className="sticky bottom-0 z-10 -mx-4 mt-auto border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
+      <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">{children}</div>
+    </div>
+  );
+}
+
+/** Screen 0: the topic's animation in a big island, the title and one line on what the lesson teaches. */
+function Cover({ lesson, visual, screens, realCount, onStart }: { lesson: PlayerLesson; visual: ReactNode; screens: number; realCount: number; onStart: () => void }) {
+  return (
+    <div className="flex min-h-[calc(100dvh-8rem)] flex-col">
+      <div className="mx-auto w-full max-w-2xl text-center">
+        <p className="lesson-in text-sm font-medium text-primary">{lesson.where}</p>
+        <h1 className="lesson-in mt-1 text-3xl font-bold tracking-tight [animation-delay:60ms] md:text-4xl">{lesson.title}</h1>
+        {visual && (
+          <div className="lesson-cover mt-6 overflow-hidden rounded-3xl bg-surface shadow-[0_1px_0_var(--color-line),0_12px_40px_-12px_rgb(0_0_0/0.18)] ring-1 ring-line [animation-delay:120ms]">
+            <Stage className="aspect-[16/9] w-full p-[3%]">{visual}</Stage>
+          </div>
+        )}
+        {lesson.summary && <p className="lesson-in mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink [animation-delay:240ms]">{lesson.summary}</p>}
+        <p className="lesson-in mt-2 text-sm text-muted tabular-nums [animation-delay:300ms]">
+          {screens - 1} short steps · ~{lesson.minutes} min{realCount ? ` · ${realCount} real SAT questions` : ""}
+        </p>
+      </div>
+      <div className="h-8 shrink-0" aria-hidden="true" />
+      <BottomBar>
+        <div className="flex-1" />
+        <button type="button" onClick={onStart} className={`${btnPrimary} min-w-44`} autoFocus>
+          Start lesson
+          <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
+        </button>
+      </BottomBar>
+    </div>
   );
 }
 
@@ -293,8 +349,8 @@ function Complete({
 }) {
   const section = lesson.section === "strategy" ? null : lesson.section;
   return (
-    <div className="mx-auto max-w-xl pb-16 text-center">
-      <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-success-soft text-success">
+    <div className="lesson-in mx-auto max-w-xl pb-16 text-center">
+      <span className="lesson-pop mx-auto grid h-16 w-16 place-items-center rounded-full bg-success-soft text-success">
         <Icon d={I.check} className="h-8 w-8" strokeWidth={2.6} />
       </span>
       <h1 className="mt-5 text-3xl font-bold tracking-tight">Lesson complete</h1>

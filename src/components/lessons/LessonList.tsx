@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { Stage } from "@/components/lessons/visuals/Stage";
 import { computeStats } from "@/lib/stats";
 import { useAttempts, useHydrated, useLessonProgress, useNow, useProfile, type LessonProgress } from "@/lib/store";
 import { domainsFor, type SectionId } from "@/lib/taxonomy";
@@ -35,7 +36,8 @@ function readTab(): Tab | null {
 }
 
 const isDone = (p?: LessonProgress) => Boolean(p?.done);
-const inProgress = (p?: LessonProgress) => Boolean(p && !p.done && p.max > 0);
+/** Started and not finished, in the lesson's current version (the player restarts a lesson whose screens changed). */
+const inProgress = (p: LessonProgress | undefined, l: ListLesson) => Boolean(p && !p.done && p.max > 0 && p.steps === l.stepCount);
 
 function StepBar({ p, total }: { p: LessonProgress; total: number }) {
   const at = Math.min(p.step, total);
@@ -51,20 +53,34 @@ function StepBar({ p, total }: { p: LessonProgress; total: number }) {
   );
 }
 
-function LessonCard({ l, p }: { l: ListLesson; p?: LessonProgress }) {
+/** The topic's animation in a small island at the top of a card. */
+function Island({ visual, className = "" }: { visual: ReactNode; className?: string }) {
+  return (
+    <div className={`overflow-hidden rounded-xl bg-surface ring-1 ring-line transition-shadow duration-300 ${className}`}>
+      <Stage className="aspect-[16/9] w-full">{visual}</Stage>
+    </div>
+  );
+}
+
+function LessonCard({ l, p, visual, i }: { l: ListLesson; p?: LessonProgress; visual: ReactNode; i: number }) {
   const done = isDone(p);
   return (
-    <Link href={`/lessons/${l.slug}`} className="group flex min-h-24 flex-col rounded-2xl bg-surface p-4 ring-1 ring-line transition-shadow hover:ring-muted/60">
-      <div className="flex items-start justify-between gap-3">
-        <span className="font-semibold leading-snug group-hover:text-primary">{l.title}</span>
+    <Link
+      href={`/lessons/${l.slug}`}
+      style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }}
+      className="lesson-in group flex flex-col rounded-2xl bg-surface p-2 ring-1 ring-line transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-16px_rgb(0_0_0/0.35)] hover:ring-muted/50 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
+    >
+      {visual && <Island visual={visual} className="group-hover:ring-primary/30" />}
+      <div className="flex items-start justify-between gap-3 px-2 pt-3">
+        <span className="leading-snug font-semibold group-hover:text-primary">{l.title}</span>
         {done && (
           <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success-soft text-success" title="Done">
             <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={3} />
           </span>
         )}
       </div>
-      <div className="mt-auto pt-3">
-        {inProgress(p) ? (
+      <div className="mt-auto px-2 pt-2 pb-1.5">
+        {inProgress(p, l) ? (
           <StepBar p={p!} total={l.stepCount} />
         ) : (
           <span className="text-xs text-muted tabular-nums">
@@ -82,7 +98,7 @@ function useSuggestion(lessons: ListLesson[], progress: Record<string, LessonPro
   const now = useNow();
   const profile = useProfile();
   const pick = () => {
-    const open = lessons.filter((l) => inProgress(progress[l.slug])).sort((a, b) => progress[b.slug].at - progress[a.slug].at)[0];
+    const open = lessons.filter((l) => inProgress(progress[l.slug], l)).sort((a, b) => progress[b.slug].at - progress[a.slug].at)[0];
     if (open) return { lesson: open, kind: "continue" as const, why: "Pick up where you left off" };
     const todo = lessons.filter((l) => !isDone(progress[l.slug]));
     if (!todo.length) return null;
@@ -104,7 +120,7 @@ function useSuggestion(lessons: ListLesson[], progress: Record<string, LessonPro
   return pick();
 }
 
-export function LessonList({ lessons }: { lessons: ListLesson[] }) {
+export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visuals: Record<string, ReactNode> }) {
   const hydrated = useHydrated();
   const progress = useLessonProgress();
   const suggestion = useSuggestion(lessons, progress);
@@ -132,8 +148,9 @@ export function LessonList({ lessons }: { lessons: ListLesson[] }) {
       {/* One suggested lesson */}
       <div className="mt-8 min-h-[148px]">
         {hydrated && s && (
-          <div className="flex flex-col gap-4 rounded-2xl bg-primary-soft/50 p-5 ring-1 ring-primary/25 sm:flex-row sm:items-center sm:p-6">
-            <div className="min-w-0 flex-1">
+          <div className="lesson-in flex flex-col gap-4 rounded-2xl bg-primary-soft/50 p-3 ring-1 ring-primary/25 sm:flex-row sm:items-center sm:gap-6 sm:p-4">
+            {visuals[s.lesson.slug] && <Island visual={visuals[s.lesson.slug]} className="w-full shrink-0 sm:w-72" />}
+            <div className="min-w-0 flex-1 px-2 pb-1 sm:px-0 sm:pb-0">
               <p className="text-sm font-medium text-primary">{s.why}</p>
               <p className="mt-1 text-xl font-bold tracking-tight">{s.lesson.title}</p>
               <div className="mt-2 max-w-sm">
@@ -148,7 +165,7 @@ export function LessonList({ lessons }: { lessons: ListLesson[] }) {
             </div>
             <Link
               href={`/lessons/${s.lesson.slug}`}
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover"
+              className="mx-2 mb-1 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover sm:mx-0 sm:mr-2 sm:mb-0"
             >
               {s.kind === "continue" ? "Continue" : "Start lesson"}
               <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
@@ -187,8 +204,8 @@ export function LessonList({ lessons }: { lessons: ListLesson[] }) {
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {lessons
               .filter((l) => l.section === "strategy")
-              .map((l) => (
-                <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} />
+              .map((l, i) => (
+                <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} />
               ))}
           </div>
         ) : (
@@ -207,8 +224,8 @@ export function LessonList({ lessons }: { lessons: ListLesson[] }) {
                   )}
                 </div>
                 <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {list.map((l) => (
-                    <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} />
+                  {list.map((l, i) => (
+                    <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} />
                   ))}
                 </div>
               </div>

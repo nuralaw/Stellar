@@ -1,6 +1,6 @@
 // Lesson file format (content/lessons/README.md): frontmatter, then "## " steps, each with teaching text and
-// at most one ```quiz or ```check block. Shared by the site (lib/lessons.ts) and scripts/lessons-check.mjs,
-// so it has no imports and only type-strippable TypeScript.
+// at most one ```example, ```quiz or ```check block. Shared by the site (lib/lessons.ts) and
+// scripts/lessons-check.mjs, so it has no imports and only type-strippable TypeScript.
 
 export interface QuizOption {
   text: string;
@@ -9,9 +9,16 @@ export interface QuizOption {
   feedback?: string;
 }
 
+/** One line of a worked example: the math/text, and a few words on what was done. */
+export interface ExampleLine {
+  text: string;
+  note?: string;
+}
+
 export type Interactive =
   | { t: "quiz"; prompt: string; options: QuizOption[]; explain: string[] }
-  | { t: "check"; id: string };
+  | { t: "check"; id: string }
+  | { t: "example"; prompt: string; lines: ExampleLine[] };
 
 export interface Step {
   title: string;
@@ -64,6 +71,24 @@ function parseQuiz(lines: string[], where: string, errors: string[]): Interactiv
   return { t: "quiz", prompt: prompt.join("\n"), options, explain };
 }
 
+function parseExample(lines: string[], where: string, errors: string[]): Interactive {
+  const prompt: string[] = [];
+  const out: ExampleLine[] = [];
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t) continue;
+    const m = t.match(/^\d+\.\s+(.*)$/);
+    if (m) {
+      const [text, ...rest] = m[1].split(/\s+::\s+/);
+      out.push({ text: text.trim(), note: rest.length ? rest.join(" :: ").trim() : undefined });
+    } else if (out.length) errors.push(`${where}: example line "${t.slice(0, 40)}" after the numbered lines`);
+    else prompt.push(t);
+  }
+  if (!prompt.length) errors.push(`${where}: example has no problem (the lines before "1.")`);
+  if (out.length < 2 || out.length > 5) errors.push(`${where}: example needs 2–5 numbered lines, has ${out.length}`);
+  return { t: "example", prompt: prompt.join("\n"), lines: out };
+}
+
 export function parseLesson(raw: string): ParsedLesson | null {
   const fm = parseFrontmatter(raw);
   if (!fm) return null;
@@ -84,20 +109,21 @@ export function parseLesson(raw: string): ParsedLesson | null {
       if (t) errors.push(`text before the first "## " step: "${t.slice(0, 40)}"`);
       continue;
     }
-    const fence = t.match(/^```\s*(quiz|check)\s*$/);
+    const fence = t.match(/^```\s*(quiz|check|example)\s*$/);
     if (fence) {
       const where = `step "${cur.title}"`;
       const inner: string[] = [];
       i++;
       while (i < lines.length && !lines[i].trim().startsWith("```")) inner.push(lines[i++]);
       if (i >= lines.length) errors.push(`${where}: unclosed \`\`\`${fence[1]} block`);
-      if (cur.block) errors.push(`${where}: more than one quiz/check block`);
+      if (cur.block) errors.push(`${where}: more than one example/quiz/check block`);
       let block: Interactive;
       if (fence[1] === "check") {
         const ids = inner.map((l) => l.trim()).filter(Boolean);
         if (ids.length !== 1) errors.push(`${where}: a check block holds exactly one question id`);
         block = { t: "check", id: ids[0] ?? "" };
-      } else block = parseQuiz(inner, where, errors);
+      } else if (fence[1] === "example") block = parseExample(inner, where, errors);
+      else block = parseQuiz(inner, where, errors);
       if (!cur.block) cur.block = block;
       continue;
     }
@@ -106,7 +132,7 @@ export function parseLesson(raw: string): ParsedLesson | null {
     } else cur.body.push(line);
   }
   if (cur) steps.push({ title: cur.title, body: cur.body.join("\n").trim(), block: cur.block, after: cur.after.join("\n").trim() });
-  for (const s of steps) if (s.after) errors.push(`step "${s.title}": text after the quiz/check block (the block must end the step)`);
+  for (const s of steps) if (s.after) errors.push(`step "${s.title}": text after the example/quiz/check block (the block must end the step)`);
   return { meta: fm.meta, steps, errors };
 }
 
@@ -129,8 +155,12 @@ export function estimateMinutes(steps: Step[], section: string): number {
       quizzes++;
       words += countWords(s.block.prompt) + s.block.options.reduce((n, o) => n + countWords(o.text), 0) + countWords(s.block.explain.join(" "));
     }
+    if (s.block?.t === "example") {
+      quizzes++;
+      words += countWords(s.block.prompt) + s.block.lines.reduce((n, l) => n + countWords(l.text) + countWords(l.note ?? ""), 0);
+    }
     if (s.block?.t === "check") checks++;
   }
   const perCheck = section === "math" ? 1.6 : 1.2;
-  return Math.max(3, Math.round(words / 170 + quizzes * 0.4 + checks * perCheck));
+  return Math.max(2, Math.round(words / 170 + quizzes * 0.35 + checks * perCheck));
 }

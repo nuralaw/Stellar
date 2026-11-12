@@ -18,6 +18,7 @@ export interface LessonMeta {
   title: string;
   summary: string;
   minutes: number;
+  /** Screens in the player: the cover + one per step. */
   stepCount: number;
 }
 
@@ -43,7 +44,8 @@ function load(file: string, section: LessonSection): Lesson | null {
     title: meta.title ?? slug,
     summary: meta.summary ?? "",
     minutes: estimateMinutes(steps, section),
-    stepCount: steps.length,
+    // + the cover screen the player shows first
+    stepCount: steps.length + 1,
     steps,
   };
 }
