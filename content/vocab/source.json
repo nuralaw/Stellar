@@ -1,0 +1,4591 @@
+[
+ {
+  "word": "characterize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "constraint",
+  "pos": "noun",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "contradict",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "correlation",
+  "pos": "noun",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "deliberate",
+  "pos": "adjective/verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "disperse",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "distinct",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "foster",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "fragment",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "hypothesis",
+  "pos": "noun",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "imply",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "indigenous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "manipulate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "mitigate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "obscure",
+  "pos": "adjective/verb",
+  "list": "core",
+  "unit": 1,
+  "cram": true
+ },
+ {
+  "word": "prevalent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "prolonged",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "resemble",
+  "pos": "verb",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "substantial",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "yield",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 1
+ },
+ {
+  "word": "assess",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "bolster",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "compile",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "conventional",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "dense",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "exhibit",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "forage",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "hypothesize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "incorporate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "inhabit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "mechanism",
+  "pos": "noun",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "merely",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "methodology",
+  "pos": "noun",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "modest",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "negligible",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "notable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "objection",
+  "pos": "noun",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "plausible",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "proportion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "reductive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 2
+ },
+ {
+  "word": "abundant",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "adaptation",
+  "pos": "noun",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "apparent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "cite",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "comprehensive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "confer",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "discern",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "dynamic",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "emerge",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "exceed",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "inherent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "likelihood",
+  "pos": "noun",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "novel",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3,
+  "cram": true
+ },
+ {
+  "word": "overlook",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "phenomenon",
+  "pos": "noun",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "prioritize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "scholarly",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "solely",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "specimen",
+  "pos": "noun",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "thrive",
+  "pos": "verb",
+  "list": "core",
+  "unit": 3
+ },
+ {
+  "word": "acknowledge",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "approximate",
+  "pos": "adjective/verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "contemporary",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "correspond",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "demographic",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "elevate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "engage",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4,
+  "with": "in/with"
+ },
+ {
+  "word": "exclusively",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "flaw",
+  "pos": "noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "heterogeneous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "insight",
+  "pos": "noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "intellectual",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "paradigm",
+  "pos": "noun",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "persist",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "replicate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "retain",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "subsequent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "undermine",
+  "pos": "verb",
+  "list": "core",
+  "unit": 4,
+  "cram": true
+ },
+ {
+  "word": "vulnerable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "widespread",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 4
+ },
+ {
+  "word": "ambiguous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "artifact",
+  "pos": "noun",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "captive",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "categorize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "empirical",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5,
+  "cram": true
+ },
+ {
+  "word": "exploit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "impede",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "implement",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "inexplicable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "offset",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "originate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "posit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "predatory",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "prompt",
+  "pos": "verb/adjective",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "proxy",
+  "pos": "noun",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "reliance",
+  "pos": "noun",
+  "list": "core",
+  "unit": 5,
+  "with": "on"
+ },
+ {
+  "word": "supplemental",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5,
+  "with": "to"
+ },
+ {
+  "word": "sustainable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "trait",
+  "pos": "noun",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "transmit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 5
+ },
+ {
+  "word": "abrupt",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "accelerate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "accumulate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "acquire",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "advocate",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 6,
+  "cram": true
+ },
+ {
+  "word": "antecedent",
+  "pos": "noun/adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "clarify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "depict",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "dispute",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "disrupt",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "inconsistent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "innocuous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "linguistic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "mediate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "outright",
+  "pos": "adverb/adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "skeptical",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "striking",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "superficial",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 6,
+  "cram": true
+ },
+ {
+  "word": "tolerance",
+  "pos": "noun",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "validate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 6
+ },
+ {
+  "word": "alter",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "anticipate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "arise",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "coherent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "collective",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "commentary",
+  "pos": "noun",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "comparatively",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "consensus",
+  "pos": "noun",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "converge",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "critique",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "discretion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "dismiss",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "immense",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "impose",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "indicative",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 7,
+  "with": "of"
+ },
+ {
+  "word": "inhibit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "inverse",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "overshadow",
+  "pos": "verb",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "profound",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "scarce",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 7
+ },
+ {
+  "word": "adequate",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "assert",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "catalyst",
+  "pos": "noun",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "circumvent",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "concede",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "contentious",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "corroborate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "enduring",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "enhance",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "extraneous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "imitate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "influential",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "intricate",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "motive",
+  "pos": "noun",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "readily",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "reciprocity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "recount",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "restrained",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "ubiquitous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "undercut",
+  "pos": "verb",
+  "list": "core",
+  "unit": 8
+ },
+ {
+  "word": "aesthetic",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "ambient",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "attribute",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "authentic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "conjecture",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "diffuse",
+  "pos": "verb/adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "diminish",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "emit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "employ",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "engender",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "evident",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "inquiry",
+  "pos": "noun",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "integral",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "opaque",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "outspoken",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "perceive",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "pioneer",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "predate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "surreptitiously",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "threshold",
+  "pos": "noun",
+  "list": "core",
+  "unit": 9
+ },
+ {
+  "word": "adorn",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "align",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "breadth",
+  "pos": "noun",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "cognitive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "designate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "dispassionately",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "dominant",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "excavate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "impractical",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "inevitable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "intact",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "notion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "obviate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "prose",
+  "pos": "noun",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "resolve",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "robust",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "shortcoming",
+  "pos": "noun",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "subtle",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "unfold",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "utilize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 10
+ },
+ {
+  "word": "burden",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "complementary",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "contrived",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "convey",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "criterion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "cultivate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "discrepancy",
+  "pos": "noun",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "encompass",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "facile",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "invasive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "lineage",
+  "pos": "noun",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "neglect",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "outweigh",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "overturn",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "prescribe",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "proclaim",
+  "pos": "verb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "reluctant",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "rigid",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "shrewd",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "simultaneously",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 11
+ },
+ {
+  "word": "antagonistic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "appease",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "commonplace",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "domesticate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "drawback",
+  "pos": "noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "endorse",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "expertise",
+  "pos": "noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "fluctuation",
+  "pos": "noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "incidentally",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "inconsequential",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "optimal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "pose",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "reconstitute",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "retrospective",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "speculate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "suppress",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "tenuous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "trajectory",
+  "pos": "noun",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "unassuming",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 12
+ },
+ {
+  "word": "underscore",
+  "pos": "verb",
+  "list": "core",
+  "unit": 12,
+  "cram": true
+ },
+ {
+  "word": "ambivalent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13,
+  "cram": true
+ },
+ {
+  "word": "analogous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "authoritative",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "conceal",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "counteract",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "deceptive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "deplete",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "disseminate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "esteem",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "foretell",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "induce",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "infer",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "innovative",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "interchangeable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "motif",
+  "pos": "noun",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "navigate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "nonetheless",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "precision",
+  "pos": "noun",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "solitary",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "spatial",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 13
+ },
+ {
+  "word": "accordingly",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "annotate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "appraise",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "assign",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "bulk",
+  "pos": "noun",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "conflate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "defunct",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "desultory",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "disparage",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14,
+  "cram": true
+ },
+ {
+  "word": "durable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "fecundity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "flourish",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "impending",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "longitudinal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "manifest",
+  "pos": "verb/adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "nuance",
+  "pos": "noun",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "paucity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "pretentious",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "synthesize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "viable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 14
+ },
+ {
+  "word": "ancestral",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "aversion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "cohesion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "compelling",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "contrary",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "correspondence",
+  "pos": "noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "demarcate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "deterrent",
+  "pos": "noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "disparate",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "exhaustive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "facilitate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "govern",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "grasp",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "intrusive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "namely",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "outstrip",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "predetermine",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "recant",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "straightforward",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "transpose",
+  "pos": "verb",
+  "list": "core",
+  "unit": 15
+ },
+ {
+  "word": "abrasive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "amid",
+  "pos": "preposition",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "amplify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "capitalize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16,
+  "with": "on"
+ },
+ {
+  "word": "constitute",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "dogmatic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "extant",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "habituate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16,
+  "with": "to"
+ },
+ {
+  "word": "inconspicuous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "influx",
+  "pos": "noun",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "interfere",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16,
+  "with": "with"
+ },
+ {
+  "word": "juvenile",
+  "pos": "adjective/noun",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "lend",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "metaphor",
+  "pos": "noun",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "peripheral",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "portray",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "presuppose",
+  "pos": "verb",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "staple",
+  "pos": "noun/adjective",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "successor",
+  "pos": "noun",
+  "list": "core",
+  "unit": 16
+ },
+ {
+  "word": "susceptible",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 16,
+  "with": "to"
+ },
+ {
+  "word": "applicable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "arduous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "concur",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "counterintuitive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "deploy",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "disingenuously",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "elicit",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "enrich",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "expediency",
+  "pos": "noun",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "latent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "mimic",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "minimize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "modify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "perpetual",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "pronounced",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "propriety",
+  "pos": "noun",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "reconcile",
+  "pos": "verb",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "spurious",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "stance",
+  "pos": "noun",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "supposition",
+  "pos": "noun",
+  "list": "core",
+  "unit": 17
+ },
+ {
+  "word": "accomplished",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "authenticate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "civic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "conform",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18,
+  "with": "to"
+ },
+ {
+  "word": "envision",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "foundational",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "groundbreaking",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "haphazard",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "inducement",
+  "pos": "noun",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "ineffectual",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "interject",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "legacy",
+  "pos": "noun",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "mystify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "overstate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "preclude",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "profusion",
+  "pos": "noun",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "remnant",
+  "pos": "noun",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "rigorous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "subsume",
+  "pos": "verb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "succinctly",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 18
+ },
+ {
+  "word": "adjacent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "comparable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "contempt",
+  "pos": "noun",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "degrade",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "derive",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "dispel",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "diverge",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "hinge",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19,
+  "with": "on"
+ },
+ {
+  "word": "inertia",
+  "pos": "noun",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "monetize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "predominantly",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "regulate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "spontaneous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "supersede",
+  "pos": "verb",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "terrain",
+  "pos": "noun",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "tranquil",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "unobtrusive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "unvarying",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "verdict",
+  "pos": "noun",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "veritable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 19
+ },
+ {
+  "word": "adhere",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "detrimental",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "efficacy",
+  "pos": "noun",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "embedded",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "exemplify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "extrapolate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "fortify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "hitherto",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "incongruous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "marginal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "norm",
+  "pos": "noun",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "notional",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "premise",
+  "pos": "noun",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "prevail",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "resilience",
+  "pos": "noun",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "scrutinize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "singular",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "temporal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "undergo",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "unearth",
+  "pos": "verb",
+  "list": "core",
+  "unit": 20
+ },
+ {
+  "word": "arcane",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "contend",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "curtail",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "deviate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21,
+  "with": "from"
+ },
+ {
+  "word": "earnest",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "exert",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "leverage",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "misanthropic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "propensity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "protracted",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "prudent",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21,
+  "cram": true
+ },
+ {
+  "word": "questionable",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "recalcitrant",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "refute",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "regime",
+  "pos": "noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "render",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "scope",
+  "pos": "noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "spur",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "strive",
+  "pos": "verb",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "sustenance",
+  "pos": "noun",
+  "list": "core",
+  "unit": 21
+ },
+ {
+  "word": "buttress",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "causal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "coincide",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "differentiate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "epoch",
+  "pos": "noun",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "impervious",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22,
+  "with": "to"
+ },
+ {
+  "word": "inadvertently",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "ingest",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "integrity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "polarize",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "proficient",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "remedy",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "renowned",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "sanguine",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "stimulus",
+  "pos": "noun",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "stymie",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "subversive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "succumb",
+  "pos": "verb",
+  "list": "core",
+  "unit": 22,
+  "with": "to"
+ },
+ {
+  "word": "unbiased",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "warrant",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 22
+ },
+ {
+  "word": "aggregate",
+  "pos": "adjective/noun/verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "articulate",
+  "pos": "verb/adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "barren",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "coarse",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "compensate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23,
+  "with": "for"
+ },
+ {
+  "word": "dictate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "displace",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "distort",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "erode",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "evade",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "explicitly",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "homogeneous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "juxtaposition",
+  "pos": "noun",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "luminous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "porous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "proliferation",
+  "pos": "noun",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "startle",
+  "pos": "verb",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "transparency",
+  "pos": "noun",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "unpretentious",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "verisimilitude",
+  "pos": "noun",
+  "list": "core",
+  "unit": 23
+ },
+ {
+  "word": "adversely",
+  "pos": "adverb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "ascertain",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24,
+  "cram": true
+ },
+ {
+  "word": "elaborate",
+  "pos": "adjective/verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "ephemeral",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "exacerbate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "ideological",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "impart",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "inconclusive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "intuitive",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "merit",
+  "pos": "noun/verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "misconception",
+  "pos": "noun",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "naturalistic",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "plethora",
+  "pos": "noun",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "precede",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "prominence",
+  "pos": "noun",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "reinforce",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "reside",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "surmise",
+  "pos": "verb/noun",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "underlying",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "unravel",
+  "pos": "verb",
+  "list": "core",
+  "unit": 24
+ },
+ {
+  "word": "counterpart",
+  "pos": "noun",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "credible",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "disparity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "dwindle",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "entail",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "grapple",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25,
+  "with": "with"
+ },
+ {
+  "word": "intelligible",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "meticulous",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "minimal",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "presume",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "proximity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "quantitative",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "refine",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "repress",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "repudiate",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "signify",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "sincerity",
+  "pos": "noun",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "tangential",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "vague",
+  "pos": "adjective",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "withstand",
+  "pos": "verb",
+  "list": "core",
+  "unit": 25
+ },
+ {
+  "word": "abstruse",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "acquisitive",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "acute",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "affront",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "alleviate",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "allocate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "amenable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "amiable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "amoral",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "amorous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "amorphous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "anachronism",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "analogy",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "anecdote",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "annex",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "anomaly",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "anthology",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "anthropomorphic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "antipathy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "antipodal",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "antithesis",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "apathy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "apprehensive",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "assimilate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "astute",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "asylum",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "autocratic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "autonomous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "benediction",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "benefactor",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "benevolent",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "benign",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "bluster",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "bombast",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "brawn",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "brevity",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "burgeon",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "callous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "candor",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "capitalism",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "castigate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "cerebral",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "chronic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "chronicle",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "circumnavigate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "circumscribe",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "circumspect",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "complacent",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "congregate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "conspicuous",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "contiguous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "contraband",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "contretemps",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "corrugated",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "cosmopolitan",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "credulous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "culpable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "debase",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "debilitate",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "debunk",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "decry",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "defame",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "deference",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "defile",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "degenerate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "deign",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "dejected",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "denomination",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "denounce",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "deplore",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "deprecate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "deride",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "despondent",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "dextrous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "dictum",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "disdain",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "distinguish",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "dubious",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "elite",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "elocution",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "eloquent",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "elusive",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "empathy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "encroach",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "epitome",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "equanimity",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "equitable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "equivocal",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "erudition",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "eulogy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "evoke",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "exonerate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "exorbitant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "expatriate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "expedient",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "expedite",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "explicit",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "fallacy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "fiscal",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "flagrant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "flaunt",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "fledgling",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "flippant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "gaffe",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "gregarious",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "ignominy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "imperative",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "implication",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "implicit",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "impugn",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "impunity",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "indict",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "indifferent",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "indignant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "indignation",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "indolent",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "inept",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "innovation",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "insinuate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "insolent",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "insular",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "intractable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "invoke",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "irrevocable",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "lament",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "laud",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "lavish",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "lucid",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "magnanimous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "magnate",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "malaise",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "malapropism",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "malfeasance",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "malicious",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "malignant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "malinger",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "malleable",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "mediation",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "mercenary",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "mercurial",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "metamorphosis",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "myriad",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "neologism",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "nihilism",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "nomenclature",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "nominal",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "nostalgia",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "objective",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "ominous",
+  "pos": "adjective",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "omniscient",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "orthodox",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "oscillate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "palliate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "palliative",
+  "pos": "",
+  "list": "power"
+ },
+ {
+  "word": "partisan",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "pathology",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "pathos",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "pedantic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "penchant",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "penitent",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "peripatetic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "periphery",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "pervade",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "philanthropy",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "placate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "placebo",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "posterity",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "posthumous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "pragmatic",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "predilection",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "presage",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "proliferate",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "prolific",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "provisional",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "provocative",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "provoke",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "pseudonym",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "rapture",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "reciprocal",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "reciprocate",
+  "pos": "",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "redundant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "replete",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "repugnant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "resignation",
+  "pos": "noun",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "reticent",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "rhetoric",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "rudimentary",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "sagacious",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "sect",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "secular",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "sophomoric",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "specious",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "squander",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "stagnation",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "substantiate",
+  "pos": "verb",
+  "list": "power",
+  "cram": true
+ },
+ {
+  "word": "temporize",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "tentative",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "thwart",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "utilitarian",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "veracity",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "verity",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "vestige",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "vex",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "vie",
+  "pos": "verb",
+  "list": "power"
+ },
+ {
+  "word": "vigilant",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "vocation",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "vociferous",
+  "pos": "adjective",
+  "list": "power"
+ },
+ {
+  "word": "volition",
+  "pos": "noun",
+  "list": "power"
+ },
+ {
+  "word": "absolute value",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "arc",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "area",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "bisect",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "central angle",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "chord",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "circle",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "circumference",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "coefficient",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "collinear",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "complex number",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "compound interest",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "cone",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "congruent",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "consecutive (number)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "constant",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "cylinder",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "decimal",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "diagonal",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "diameter",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "digit",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "direct proportion (direct variation)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "distinct",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "divisible",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "equation",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "equilateral",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "even",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "exponent/power",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "exponential growth",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "expression",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "exterior angle",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "factor",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "function",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "histogram",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "imaginary number",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "inclusive",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "indirect proportion (inverse variation)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "inequality",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "inscribed (angle in a circle)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "integer",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "isoceles (triangle)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "linear growth",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "maximum",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "mean",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "median",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "mode",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "minimum",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "multiple",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "negative",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "odd",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "of",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "ordered pair",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "origin",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "outlier",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "parabola",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "parallelogram",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "per",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "percent",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "perpendicular",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "plane",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "polygon",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "polynomial",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "positive",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "prime (number)",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "probability",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "product",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "profit",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "quadrant",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "quadratic equation",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "quadrilateral",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "quotient",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "radian",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "radius",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "rate",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "ratio",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "real number",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "reciprocal",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "rectangle",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "remainder",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "revenue",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "scatterplot",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "sector",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "similar triangles",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "slope",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "solution",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "square",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "standard deviation",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "sum",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "surface area",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "system of equations",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "tangent line",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "undefined",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "variable",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "vertex",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "volume",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "xy-plane",
+  "pos": "",
+  "list": "math"
+ },
+ {
+  "word": "y-intercept",
+  "pos": "",
+  "list": "math"
+ }
+]

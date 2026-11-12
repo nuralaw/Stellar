@@ -19,6 +19,7 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { href: "/", label: "Home", icon: "M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z" },
       { href: "/lessons", label: "Lessons", icon: "M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2V5Zm0 15a2 2 0 0 0 2 2h13v-4" },
+      { href: "/vocabulary", label: "Vocabulary", icon: "M4 19 8.5 6h1L14 19M5.7 14.5h6.6M15.5 12.5c.6-1 1.6-1.5 2.8-1.5 1.7 0 2.7 1 2.7 2.7V19M21 15.5c-.6-.3-1.4-.5-2.3-.5-1.7 0-2.9.8-2.9 2.1 0 1.2 1 2 2.3 2 1.3 0 2.4-.6 2.9-1.6" },
       { href: "/statistics", label: "Statistics", icon: STATS_ICON },
     ],
   },

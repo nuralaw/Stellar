@@ -95,6 +95,7 @@ const KEYS = {
   tests: "stellar:tests",
   session: "stellar:test-session",
   lessons: "stellar:lessons",
+  vocab: "stellar:vocab",
 } as const;
 const NO_LESSONS: Record<string, LessonProgress> = {};
 const NO_BOOKMARKS: string[] = [];
@@ -248,6 +249,34 @@ export function useLessonProgress(): Record<string, LessonProgress> {
   return useSyncExternalStore(subscribe, getLessonProgress, () => NO_LESSONS);
 }
 
+// ---- vocabulary ----
+/** One word's progress: s = 0 new, 1 learning, 2 known; r / w = right / wrong quiz answers; at = last change. */
+export interface VocabState {
+  s: 0 | 1 | 2;
+  r: number;
+  w: number;
+  at: number;
+}
+const NO_VOCAB: Record<string, VocabState> = {};
+
+export function getVocab(): Record<string, VocabState> {
+  return read(KEYS.vocab, (raw) => {
+    const v = JSON.parse(raw);
+    return v && typeof v === "object" && !Array.isArray(v) ? v : NO_VOCAB;
+  }, NO_VOCAB);
+}
+
+/** Update one word (by vocabulary id). */
+export function setVocab(id: string, patch: Partial<VocabState>) {
+  const all = getVocab();
+  const cur = all[id] ?? { s: 0, r: 0, w: 0, at: 0 };
+  write(KEYS.vocab, { ...all, [id]: { ...cur, ...patch, at: Date.now() } });
+}
+
+export function useVocab(): Record<string, VocabState> {
+  return useSyncExternalStore(subscribe, getVocab, () => NO_VOCAB);
+}
+
 // ---- clock ----
 // Current time as an external store: 0 on the server, refreshed every minute in the browser.
 let clockNow = 0;
@@ -296,6 +325,7 @@ export function resetAllData() {
     localStorage.removeItem(KEYS.tests);
     localStorage.removeItem(KEYS.session);
     localStorage.removeItem(KEYS.lessons);
+    localStorage.removeItem(KEYS.vocab);
   } catch {}
   listeners.forEach((l) => l());
 }
