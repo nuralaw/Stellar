@@ -43,7 +43,7 @@ async function shrink(file: File): Promise<Blob> {
 }
 
 /**
- * Home page "Support" button (bottom right). Opens a panel from the right: contacts (Telegram / Instagram / other),
+ * "Support" button (bottom right) on every start page (components/SupportDock.tsx). Opens a panel from the right: contacts (Telegram / Instagram / other),
  * a screenshot of the question, and what went wrong. What's typed stays if the panel is closed before sending.
  */
 export function SupportButton() {
