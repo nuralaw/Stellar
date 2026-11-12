@@ -76,10 +76,14 @@ export interface LessonProgress {
   max: number;
   /** Step count when last saved (the lesson file can change). */
   steps: number;
+  /** The lesson version's fingerprint when last saved (lib/lessons.ts). */
+  sig?: string;
   /** Answer per step index: the response ("2" = option index for quizzes, the choice/number for checks) and whether it was right. */
   picks: Record<number, { r: string; ok: boolean }>;
   /** Unix ms when first finished. */
   done?: number;
+  /** Parts (subtopics) finished: part index → Unix ms. */
+  parts?: Record<number, number>;
   /** Unix ms of the last change. */
   at: number;
 }

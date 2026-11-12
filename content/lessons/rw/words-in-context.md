@@ -6,6 +6,9 @@ section: rw
 summary: Find the clue, predict your own word, then match a choice.
 ---
 
+# Clue, predict, match
+Find the clue. Predict a word. Match a choice.
+
 ## The text proves the word
 
 Find the **clue**. Predict your own plain word. Then match a choice. Never pick by sound.
@@ -21,8 +24,6 @@ Choices: fragile, pricey, hardy
 
 ## Clue in the next sentence
 
-The clue often comes after the blank.
-
 ```quiz
 For the mill town of Brenton, the railway was ______. When the line closed, the mill could not ship its cloth, and half the town's families left.
 * vital
@@ -31,9 +32,22 @@ For the mill town of Brenton, the railway was ______. When the line closed, the 
 > Without the railway the town fell apart, so it was necessary: *vital*.
 ```
 
+# Contrast words
+But, however, although: the blank is the opposite.
+
 ## Contrast flips the blank
 
 After *but*, *however* or *although*, the blank is the opposite of the clue.
+
+```example
+Although the trail looks ______ on the map, hikers need a full day to finish it.
+Choices: short, steep, scenic
+1. Clue: "need a full day" :: The trail is long.
+2. *Although* flips it :: The map shows the opposite.
+3. Answer: short :: The opposite of long.
+```
+
+## Flip it yourself
 
 ```quiz
 Critics first dismissed the album as ______. Ten years later, however, they ranked it among the decade's most original records.
@@ -43,21 +57,22 @@ Critics first dismissed the album as ______. Ten years later, however, they rank
 > Later view: "most original." *However* makes the first view the opposite: nothing special.
 ```
 
-## Match the strength
-
-Similar words differ in strength. Hedges like *one*, *small* and *still needed* call for a mild word.
-
-```quiz
-One small study ______ the theory: its results point the same way, but larger tests are still needed.
-- proves :: Too strong. More tests are still needed.
-* supports
-- contradicts :: Reversed. The results point the same way.
-> The results agree with the theory but don't settle it. *Supports* has the right strength.
-```
+# Negatives
+Not, far from: pick the opposite of what's true.
 
 ## Negatives flip it
 
 *Not*, *far from*, *by no means*: decide what is true, then pick its opposite.
+
+```example
+The lake is far from ______: swimmers can see the bottom at twenty feet.
+Choices: murky, clear, cold
+1. Clue: "see the bottom at twenty feet" :: True: the water is clear.
+2. *Far from* flips it :: The blank means not clear.
+3. Answer: murky :: Clear is what's true, so it's wrong.
+```
+
+## Far from what?
 
 ```quiz
 Critics called her films careless, but her notebooks show she planned every shot for weeks. Her method was far from ______.
@@ -67,9 +82,48 @@ Critics called her films careless, but her notebooks show she planned every shot
 > True: she planned carefully. *Far from* flips it, so the blank means unplanned: *haphazard*.
 ```
 
-## Trap: the meaning you know
+# Match the strength
+Mild clue, mild word. Strong clue, strong word.
 
-"Most nearly means": treat the word as a blank. The everyday meaning is usually a wrong choice.
+## How strong is it?
+
+Similar words differ in strength. Hedges like *slightly*, *one* or *still needed* call for a mild word.
+
+```example
+The drug ______ headaches: in a trial, patients reported slightly less pain, though none were cured.
+Choices: eliminates, eases, worsens
+1. Clue: "slightly less pain" :: A small effect.
+2. eliminates = removes fully :: Too strong: none were cured.
+3. Answer: eases :: Mild, like the clue.
+```
+
+## Pick the right strength
+
+```quiz
+One small study ______ the theory: its results point the same way, but larger tests are still needed.
+- proves :: Too strong. More tests are still needed.
+* supports
+- contradicts :: Reversed. The results point the same way.
+> The results agree with the theory but don't settle it. *Supports* has the right strength.
+```
+
+# Trap: the meaning you know
+"Most nearly means": the everyday meaning is usually wrong.
+
+## Treat it as a blank
+
+"Most nearly means": cover the word and predict, as with a blank.
+
+```example
+The new law will check the spread of the weed: stores may no longer sell its seeds.
+As used in the text, what does "check" most nearly mean?
+Choices: inspect, limit, mark
+1. Blank it: "will ______ the spread" :: Forget the meaning you know.
+2. Clue: "no longer sell its seeds" :: The law slows the spread.
+3. Answer: limit :: Inspect is the everyday meaning: the trap.
+```
+
+## Spot the trap
 
 ```quiz
 The board refused even to entertain the proposal: members voted it down without a minute of discussion.
@@ -79,6 +133,9 @@ As used in the text, what does "entertain" most nearly mean?
 - host :: You host guests, not proposals.
 > No discussion at all, so they refused to think about it: *consider*.
 ```
+
+# Real SAT questions
+Three real questions, easy to hard.
 
 ## Your turn: easy
 
@@ -103,9 +160,3 @@ rw-0964
 ```check
 rw-1223
 ```
-
-## Recap
-
-- Find the clue, predict a plain word, then match.
-- Contrast words and negatives flip the blank.
-- Match the strength. Ignore the everyday meaning.

@@ -16,6 +16,8 @@ export interface ListLesson {
   title: string;
   minutes: number;
   stepCount: number;
+  partCount: number;
+  sig: string;
 }
 
 type Tab = "strategy" | SectionId;
@@ -37,7 +39,7 @@ function readTab(): Tab | null {
 
 const isDone = (p?: LessonProgress) => Boolean(p?.done);
 /** Started and not finished, in the lesson's current version (the player restarts a lesson whose screens changed). */
-const inProgress = (p: LessonProgress | undefined, l: ListLesson) => Boolean(p && !p.done && p.max > 0 && p.steps === l.stepCount);
+const inProgress = (p: LessonProgress | undefined, l: ListLesson) => Boolean(p && !p.done && p.max > 0 && p.steps === l.stepCount && p.sig === l.sig);
 
 function StepBar({ p, total }: { p: LessonProgress; total: number }) {
   const at = Math.min(p.step, total);
@@ -84,7 +86,7 @@ function LessonCard({ l, p, visual, i }: { l: ListLesson; p?: LessonProgress; vi
           <StepBar p={p!} total={l.stepCount} />
         ) : (
           <span className="text-xs text-muted tabular-nums">
-            {l.minutes} min · {l.stepCount} steps
+            {l.partCount} parts · {l.minutes} min
           </span>
         )}
       </div>
@@ -158,7 +160,7 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
                   <StepBar p={sp} total={s.lesson.stepCount} />
                 ) : (
                   <p className="text-sm text-muted tabular-nums">
-                    {s.lesson.minutes} min · {s.lesson.stepCount} steps · ends with real SAT questions
+                    {s.lesson.partCount} parts · {s.lesson.minutes} min · ends with real SAT questions
                   </p>
                 )}
               </div>

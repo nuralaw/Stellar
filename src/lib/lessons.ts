@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import { estimateMinutes, parseLesson, type Step } from "./lesson-format";
+import { estimateMinutes, parseLesson, type Part, type Step } from "./lesson-format";
 import { getQuestionsByIds } from "./bank";
 import type { Question } from "./types";
 
@@ -20,10 +20,15 @@ export interface LessonMeta {
   minutes: number;
   /** Screens in the player: the cover + one per step. */
   stepCount: number;
+  /** Parts (subtopics). */
+  partCount: number;
+  /** Fingerprint of the lesson's steps: saved progress only applies to the same version. */
+  sig: string;
 }
 
 export interface Lesson extends LessonMeta {
   steps: Step[];
+  parts: Part[];
 }
 
 const ROOT = path.join(process.cwd(), "content", "lessons");
@@ -34,7 +39,7 @@ const STRATEGY_ORDER = ["digital-sat-format", "pacing-and-guessing", "desmos"];
 function load(file: string, section: LessonSection): Lesson | null {
   const parsed = parseLesson(fs.readFileSync(file, "utf8"));
   if (!parsed || !parsed.steps.length) return null;
-  const { meta, steps } = parsed;
+  const { meta, steps, parts } = parsed;
   const slug = path.basename(file, ".md");
   return {
     slug,
@@ -46,8 +51,18 @@ function load(file: string, section: LessonSection): Lesson | null {
     minutes: estimateMinutes(steps, section),
     // + the cover screen the player shows first
     stepCount: steps.length + 1,
+    partCount: parts.length,
+    sig: signature(steps),
     steps,
+    parts,
   };
+}
+
+/** Short hash of the step titles and block kinds (changes when the lesson is restructured). */
+function signature(steps: Step[]): string {
+  let h = 5381;
+  for (const ch of steps.map((s) => `${s.title}:${s.block?.t ?? ""}`).join("|")) h = ((h << 5) + h + ch.charCodeAt(0)) | 0;
+  return (h >>> 0).toString(36);
 }
 
 let cache: Lesson[] | null = null;
@@ -75,12 +90,17 @@ function all(): Lesson[] {
 
 export function getLessons(): LessonMeta[] {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  return all().map(({ steps, ...meta }) => meta);
+  return all().map(({ steps, parts, ...meta }) => meta);
 }
 
 export function getLesson(slug: string): Lesson | null {
   if (!/^[\w-]+$/.test(slug)) return null;
   return all().find((l) => l.slug === slug) ?? null;
+}
+
+/** Ids of the step visuals (```visual blocks) a lesson uses. */
+export function lessonStepVisuals(l: Lesson): string[] {
+  return l.steps.flatMap((s) => (s.block?.t === "visual" ? [s.block.id] : []));
 }
 
 /** The bank questions a lesson's check steps use, by id. */

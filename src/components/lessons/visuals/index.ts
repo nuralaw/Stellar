@@ -9,6 +9,15 @@ import * as commandOfEvidenceTextual from "./command-of-evidence-textual";
 import * as crossTextConnections from "./cross-text-connections";
 import * as desmos from "./desmos";
 import * as digitalSatFormat from "./digital-sat-format";
+import * as digitalSatFormatAdaptive from "./digital-sat-format--adaptive";
+import * as digitalSatFormatDecimal from "./digital-sat-format--decimal";
+import * as digitalSatFormatGuess from "./digital-sat-format--guess";
+import * as digitalSatFormatOrderMath from "./digital-sat-format--order-math";
+import * as digitalSatFormatOrderRw from "./digital-sat-format--order-rw";
+import * as digitalSatFormatScore from "./digital-sat-format--score";
+import * as digitalSatFormatShape from "./digital-sat-format--shape";
+import * as digitalSatFormatTools from "./digital-sat-format--tools";
+import * as digitalSatFormatTyped from "./digital-sat-format--typed";
 import * as equivalentExpressions from "./equivalent-expressions";
 import * as formStructureSense from "./form-structure-sense";
 import * as inferenceSample from "./inference-sample";
@@ -22,6 +31,7 @@ import * as nonlinearEquations from "./nonlinear-equations";
 import * as nonlinearFunctions from "./nonlinear-functions";
 import * as oneVarData from "./one-var-data";
 import * as pacingAndGuessing from "./pacing-and-guessing";
+import * as pacingAndGuessingCrossOut from "./pacing-and-guessing--cross-out";
 import * as percentages from "./percentages";
 import * as probability from "./probability";
 import * as ratiosRates from "./ratios-rates";
@@ -45,6 +55,15 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "cross-text-connections": { Visual: crossTextConnections.default, alt: crossTextConnections.alt },
   "desmos": { Visual: desmos.default, alt: desmos.alt },
   "digital-sat-format": { Visual: digitalSatFormat.default, alt: digitalSatFormat.alt },
+  "digital-sat-format--adaptive": { Visual: digitalSatFormatAdaptive.default, alt: digitalSatFormatAdaptive.alt },
+  "digital-sat-format--decimal": { Visual: digitalSatFormatDecimal.default, alt: digitalSatFormatDecimal.alt },
+  "digital-sat-format--guess": { Visual: digitalSatFormatGuess.default, alt: digitalSatFormatGuess.alt },
+  "digital-sat-format--order-math": { Visual: digitalSatFormatOrderMath.default, alt: digitalSatFormatOrderMath.alt },
+  "digital-sat-format--order-rw": { Visual: digitalSatFormatOrderRw.default, alt: digitalSatFormatOrderRw.alt },
+  "digital-sat-format--score": { Visual: digitalSatFormatScore.default, alt: digitalSatFormatScore.alt },
+  "digital-sat-format--shape": { Visual: digitalSatFormatShape.default, alt: digitalSatFormatShape.alt },
+  "digital-sat-format--tools": { Visual: digitalSatFormatTools.default, alt: digitalSatFormatTools.alt },
+  "digital-sat-format--typed": { Visual: digitalSatFormatTyped.default, alt: digitalSatFormatTyped.alt },
   "equivalent-expressions": { Visual: equivalentExpressions.default, alt: equivalentExpressions.alt },
   "form-structure-sense": { Visual: formStructureSense.default, alt: formStructureSense.alt },
   "inference-sample": { Visual: inferenceSample.default, alt: inferenceSample.alt },
@@ -58,6 +77,7 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "nonlinear-functions": { Visual: nonlinearFunctions.default, alt: nonlinearFunctions.alt },
   "one-var-data": { Visual: oneVarData.default, alt: oneVarData.alt },
   "pacing-and-guessing": { Visual: pacingAndGuessing.default, alt: pacingAndGuessing.alt },
+  "pacing-and-guessing--cross-out": { Visual: pacingAndGuessingCrossOut.default, alt: pacingAndGuessingCrossOut.alt },
   "percentages": { Visual: percentages.default, alt: percentages.alt },
   "probability": { Visual: probability.default, alt: probability.alt },
   "ratios-rates": { Visual: ratiosRates.default, alt: ratiosRates.alt },

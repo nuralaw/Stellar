@@ -1,11 +1,16 @@
 "use client";
 
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
-import type { QuizOption } from "@/lib/lesson-format";
+import type { DesmosMove, QuizOption } from "@/lib/lesson-format";
+import { DesmosDemo } from "./DesmosDemo";
 import { inline } from "./Markdown";
 
 const LETTERS = ["A", "B", "C", "D"];
+
+/** Desmos used only as a calculator (no graph, point, slider or table): it checks, it isn't a faster route. */
+const calcOnly = (moves: DesmosMove[]) =>
+  moves.every((m) => m.a === "say" || m.a === "zoom" || (m.a === "type" && !/[xy]/.test(m.latex.replace(/\\[a-zA-Z]+/g, ""))));
 
 /** Text with single line breaks kept (quiz questions can hold a short passage or two equations). */
 function Lines({ text }: { text: string }) {
@@ -23,12 +28,14 @@ function Lines({ text }: { text: string }) {
 
 /**
  * A lesson quiz. Controlled by the player: `selected` is the option being considered, `picked` the checked answer
- * (null until Check). The Check / Continue buttons live in the player's bottom bar.
+ * (null until Check). The Check / Continue buttons live in the player's bottom bar. A quiz with a Desmos
+ * walkthrough plays it right after a wrong answer (the fastest way to the answer); after a right one it's a button.
  */
 export function Quiz({
   prompt,
   options,
   explain,
+  desmos,
   selected,
   picked,
   onSelect,
@@ -36,6 +43,7 @@ export function Quiz({
   prompt: string;
   options: QuizOption[];
   explain: string[];
+  desmos: DesmosMove[];
   selected: number | null;
   picked: number | null;
   onSelect: (i: number) => void;
@@ -44,6 +52,7 @@ export function Quiz({
   const right = options.findIndex((o) => o.correct);
   const ok = checked && options[picked]?.correct;
   const feedback = checked ? options[picked]?.feedback : undefined;
+  const [showDesmos, setShowDesmos] = useState(false);
 
   return (
     <div className="mt-8 rounded-2xl border border-line bg-surface p-4 sm:p-6">
@@ -111,6 +120,23 @@ export function Quiz({
               ))}
             </div>
           )}
+          {desmos.length > 0 &&
+            (ok && !showDesmos ? (
+              <div className="border-t border-line bg-surface px-4 py-3">
+                <button
+                  type="button"
+                  onClick={() => setShowDesmos(true)}
+                  className="inline-flex items-center gap-2 rounded-lg px-1 text-sm font-semibold text-primary hover:underline"
+                >
+                  <Icon d={I.calculator} className="h-4 w-4" />
+                  See the fastest way in Desmos
+                </button>
+              </div>
+            ) : (
+              <div className="border-t border-line bg-surface p-3 sm:p-4">
+                <DesmosDemo moves={desmos} label={calcOnly(desmos) ? "Check it in Desmos" : ok ? "In Desmos" : "Faster in Desmos"} reveal={!ok} />
+              </div>
+            ))}
         </div>
       )}
     </div>

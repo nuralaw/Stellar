@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const all = getLessons();
-  const lessons = all.map(({ slug, section, domain, skill, title, minutes, stepCount }) => ({ slug, section, domain, skill, title, minutes, stepCount }));
+  const lessons = all.map(({ slug, section, domain, skill, title, minutes, stepCount, partCount, sig }) => ({ slug, section, domain, skill, title, minutes, stepCount, partCount, sig }));
   const visuals = Object.fromEntries(all.map((l) => [l.slug, lessonVisual(l.slug)]));
   return (
     <section className={PAGE}>

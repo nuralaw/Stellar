@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LessonPlayer } from "@/components/lessons/LessonPlayer";
 import { lessonVisual } from "@/components/lessons/lessonVisual";
-import { getLesson, getLessons, lessonQuestions } from "@/lib/lessons";
+import { getLesson, getLessons, lessonQuestions, lessonStepVisuals } from "@/lib/lessons";
 import { SECTIONS, getDomain, type SectionId } from "@/lib/taxonomy";
 
 export function generateStaticParams() {
@@ -28,14 +28,17 @@ export default async function Page({ params }: PageProps<"/lessons/[slug]">) {
   return (
     <LessonPlayer
       visual={lessonVisual(l.slug)}
+      stepVisuals={Object.fromEntries(lessonStepVisuals(l).map((id) => [id, lessonVisual(id)]))}
       lesson={{
         slug: l.slug,
+        sig: l.sig,
         title: l.title,
         summary: l.summary,
         section: l.section,
         where: strategy ? "Start here" : `${SECTIONS[l.section as SectionId].short} · ${getDomain(l.domain)?.name ?? ""}`,
         minutes: l.minutes,
         steps: l.steps,
+        parts: l.parts,
         questions: lessonQuestions(l),
         practice: strategy ? null : `/practice?section=${l.section}&skills=${l.skill}&status=new&practice=10`,
         next,

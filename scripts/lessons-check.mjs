@@ -9,8 +9,10 @@ import { DOMAINS } from "../src/lib/taxonomy.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const dir = path.join(root, "content/lessons");
+const visDir = path.join(root, "src/components/lessons/visuals");
 const bank = new Map(JSON.parse(fs.readFileSync(path.join(root, "content/bank/dist/questions.json"), "utf8")).map((q) => [q.id, q]));
 const SECTIONS = ["rw", "math", "strategy"];
+const TEACH = ["example", "desmos", "visual"];
 
 const files = [];
 for (const sec of SECTIONS) {
@@ -36,147 +38,149 @@ for (const file of targets) {
   const rel = path.relative(root, file).replace(/\\/g, "/");
   const section = path.basename(path.dirname(file));
   const slug = path.basename(file, ".md");
-  const raw = fs.readFileSync(file, "utf8");
   const errors = [];
   const warns = [];
-  const l = parseLesson(raw);
+  const l = parseLesson(fs.readFileSync(file, "utf8"));
   if (!l) {
     console.log(`✗ ${rel}\n  error: no frontmatter`);
     errorCount++;
     continue;
   }
   errors.push(...l.errors);
-  const { meta, steps } = l;
+  const { meta, steps, parts } = l;
+  const isSkill = section !== "strategy";
+  const visualOnly = meta["visual-only"] === "true";
 
   // Frontmatter
   for (const k of ["title", "skill", "domain", "section", "summary"]) if (!meta[k]) errors.push(`frontmatter: missing ${k}`);
   if (meta.section && meta.section !== section) errors.push(`frontmatter: section "${meta.section}" but the file is in ${section}/`);
   if (meta.summary && meta.summary.length > 120) errors.push(`summary is ${meta.summary.length} chars (max 80)`);
   else if (meta.summary && meta.summary.length > 80) warns.push(`summary is ${meta.summary.length} chars (max 80)`);
-  if (meta.minutes) warns.push("frontmatter: drop `minutes` (the site computes it)");
-  const isSkill = section !== "strategy";
   if (isSkill) {
     const dom = DOMAINS.find((d) => d.id === meta.domain && d.section === section);
     if (!dom) errors.push(`frontmatter: unknown ${section} domain "${meta.domain}"`);
     else if (!dom.skills.some((s) => s.id === meta.skill)) errors.push(`frontmatter: skill "${meta.skill}" is not in domain ${meta.domain}`);
     if (meta.skill !== slug) errors.push(`frontmatter: skill "${meta.skill}" should equal the file name "${slug}"`);
   } else if (meta.domain !== "strategy" || meta.skill !== slug) errors.push("strategy lessons need domain: strategy and skill: <file name>");
-  if (!fs.existsSync(path.join(root, "src/components/lessons/visuals", `${slug}.tsx`))) warns.push(`no animation yet: src/components/lessons/visuals/${slug}.tsx`);
+  if (!fs.existsSync(path.join(visDir, `${slug}.tsx`))) warns.push(`no topic animation: src/components/lessons/visuals/${slug}.tsx`);
 
-  // Steps
-  const [lo, hi] = isSkill ? [9, 10] : [5, 8];
-  if (steps.length < lo - 1 || steps.length > hi + 1) errors.push(`${steps.length} steps (need ${lo}–${hi})`);
-  else if (steps.length < lo || steps.length > hi) warns.push(`${steps.length} steps (aim for ${lo}–${hi})`);
-  let callouts = 0;
-  let quizzes = 0;
-  let textWords = 0;
-  const checks = [];
-  const examples = steps.filter((s) => s.block?.t === "example").length;
-  if (examples !== 1) errors.push(`${examples} example blocks (need exactly one, in the first step)`);
-  if (steps[0] && steps[0].block?.t !== "example") errors.push("the first step must end with the ```example block");
-  const passage = section === "rw" ? 30 : 0;
-  steps.forEach((s, i) => {
-    const where = `step ${i + 1} "${s.title}"`;
-    const words = countWords(s.body);
-    textWords += words;
-    if (s.title !== "Recap") {
-      if (words > 40) errors.push(`${where}: ${words} words of text (max 25)`);
-      else if (words > 25) warns.push(`${where}: ${words} words of text (max 25)`);
-    }
-    if (s.title.split(/\s+/).length > 5 && !/^Your turn/.test(s.title)) warns.push(`${where}: title longer than 5 words`);
-    const lines = s.body.split("\n").map((x) => x.trim());
-    callouts += lines.filter((x) => /^>\s*\*\*[^*]+\*\*/.test(x)).length;
-    lines.forEach((x, j) => {
-      if (x.startsWith("|") && !(lines[j + 1]?.startsWith("|") || lines[j - 1]?.startsWith("|"))) errors.push(`${where}: a line starts with "|" but isn't a table`);
-      if (/<\/?[a-z][^>]*>/i.test(x)) warns.push(`${where}: looks like HTML: ${x.slice(0, 50)}`);
-      if (/^\s{2,}[-*]\s/.test(s.body.split("\n")[j] ?? "")) errors.push(`${where}: nested list`);
-      if (x.startsWith("|") && x.split("|").length - 2 > 3 && j === lines.findIndex((y) => y.startsWith("|"))) warns.push(`${where}: table has more than 3 columns`);
-    });
-    if (s.body.includes("```")) errors.push(`${where}: a code fence that isn't \`\`\`example, \`\`\`quiz or \`\`\`check`);
-    const b = s.block;
-    if (b?.t === "example") {
-      const pw = countWords(b.prompt);
-      textWords += b.lines.reduce((n, l) => n + countWords(l.note ?? ""), 0);
-      if (pw > 60 + passage) errors.push(`${where}: example problem is ${pw} words (max ${40 + passage})`);
-      else if (pw > 40 + passage) warns.push(`${where}: example problem is ${pw} words (max ${40 + passage})`);
-      b.lines.forEach((l, k) => {
-        const tw = countWords(l.text);
-        const nw = countWords(l.note ?? "");
-        if (tw > 20) errors.push(`${where}: example line ${k + 1} is ${tw} words (max 14)`);
-        else if (tw > 14) warns.push(`${where}: example line ${k + 1} is ${tw} words (max 14)`);
-        if (nw > 16) errors.push(`${where}: note on example line ${k + 1} is ${nw} words (max 10)`);
-        else if (nw > 10) warns.push(`${where}: note on example line ${k + 1} is ${nw} words (max 10)`);
-      });
-    }
-    if (b?.t === "quiz") {
-      quizzes++;
-      const qw = countWords(b.prompt);
-      if (qw > 65 + passage) errors.push(`${where}: quiz question is ${qw} words (max ${40 + passage})`);
-      else if (qw > 40 + passage) warns.push(`${where}: quiz question is ${qw} words (max ${40 + passage})`);
-      if (!b.explain.length) warns.push(`${where}: quiz has no > explanation`);
-      if (b.explain.length > 2) warns.push(`${where}: ${b.explain.length} explanation lines (max 2)`);
-      const expWords = countWords(b.explain.join(" "));
-      if (expWords > 45) errors.push(`${where}: quiz explanation is ${expWords} words (max 25)`);
-      else if (expWords > 25) warns.push(`${where}: quiz explanation is ${expWords} words (max 25)`);
-      b.options.forEach((o) => {
-        if (!o.correct && !o.feedback) warns.push(`${where}: wrong option "${o.text.slice(0, 30)}" has no :: feedback`);
-        const fw = countWords(o.feedback ?? "");
-        if (fw > 20) errors.push(`${where}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
-        else if (fw > 12) warns.push(`${where}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
-      });
-      const texts = b.options.map((o) => o.text.toLowerCase());
-      if (new Set(texts).size !== texts.length) errors.push(`${where}: two quiz options are the same`);
-    }
-    if (b?.t === "check") {
-      const q = bank.get(b.id);
-      checks.push({ step: s, q });
-      if (!isSkill) errors.push(`${where}: strategy lessons don't use check blocks`);
-      if (!q) errors.push(`${where}: question ${b.id} is not in the live bank`);
-      else {
-        // `also-skills: a, b` lets a skill with too few bank questions borrow from a closely related skill.
-        const allowed = [meta.skill, ...(meta["also-skills"] ?? "").split(",").map((x) => x.trim()).filter(Boolean)];
-        if (!allowed.includes(q.skill)) errors.push(`${where}: ${b.id} is skill ${q.skill}, not ${allowed.join(" / ")}`);
-        if (q.choicesImage) errors.push(`${where}: ${b.id} has its choices in one image`);
-        if (q.figure?.fullPage) errors.push(`${where}: ${b.id} only has a full-page image`);
-        const dupes = owner.get(b.id) ?? [];
-        if (dupes.length > 1) errors.push(`${where}: ${b.id} is used more than once (${dupes.join(", ")})`);
-      }
-      if (words > 12) warns.push(`${where}: ${words} words before a check (max 12)`);
-    }
-  });
-  if (callouts > 1) warns.push(`${callouts} callouts (max 1)`);
-  if (textWords > 200) errors.push(`${textWords} words of teaching text (max 160)`);
-  else if (textWords > 160) warns.push(`${textWords} words of teaching text (max 160)`);
-  const last = steps.at(-1);
-  if (!last || last.title !== "Recap") errors.push('the last step must be "## Recap"');
-  else {
-    if (last.block) errors.push("the Recap step has no example/quiz/check");
-    const bullets = last.body.split("\n").filter((x) => /^\s*[-*]\s/.test(x)).length;
-    const rw = countWords(last.body);
-    if (bullets < 2 || bullets > 3) warns.push(`Recap has ${bullets} bullets (2–3)`);
-    if (rw > 45) errors.push(`Recap is ${rw} words (max 30)`);
-    else if (rw > 30) warns.push(`Recap is ${rw} words (max 30)`);
-  }
-  const traps = steps.filter((s) => /^Trap:/.test(s.title));
-  if (traps.length !== 1) warns.push(`${traps.length} "## Trap: …" steps (need one)`);
-  else if (traps[0].block?.t !== "quiz") errors.push(`step "${traps[0].title}" needs a quiz`);
+  // Parts
+  const practice = parts.filter((p) => p.title === "Real SAT questions");
+  const teaching = parts.filter((p) => p.title !== "Real SAT questions");
+  if (parts.length === 1 && parts[0].start === 0 && !/^#\s/m.test(fs.readFileSync(file, "utf8"))) errors.push('no "# " parts: split the lesson into parts (subtopics)');
   if (isSkill) {
-    const want = ["easy", "medium", "hard"];
-    const turns = steps.filter((s) => /^Your turn/.test(s.title));
-    if (checks.length !== 3) errors.push(`${checks.length} check blocks (need exactly 3)`);
-    if (turns.length !== 3 || turns.some((s, i) => s.title !== `Your turn: ${want[i]}`)) errors.push('need three steps "## Your turn: easy", "## Your turn: medium", "## Your turn: hard" in that order');
-    turns.forEach((s) => {
-      if (s.block?.t !== "check") errors.push(`step "${s.title}" needs a check block`);
-      const q = s.block?.t === "check" ? bank.get(s.block.id) : null;
-      const d = s.title.split(": ")[1];
-      if (q && q.difficulty !== d) warns.push(`step "${s.title}": ${q.id} is ${q.difficulty}`);
-    });
+    if (teaching.length < 3 || teaching.length > 5) errors.push(`${teaching.length} teaching parts (need 3–5)`);
+    if (practice.length !== 1 || parts.at(-1)?.title !== "Real SAT questions") errors.push('the last part must be "# Real SAT questions"');
+  } else if (parts.length < 3 || parts.length > 6) errors.push(`${parts.length} parts (need 3–6)`);
+  if (!teaching.some((p) => /^Trap:/.test(p.title)) && !visualOnly) warns.push('no "# Trap: …" part');
+
+  let total = 0;
+  let quizzes = 0;
+  let desmosFixes = 0;
+  const checks = [];
+  for (const p of parts) {
+    const ps = steps.slice(p.start, p.end);
+    const where = `part "${p.title}"`;
+    if (p.title.split(/\s+/).length > 5 && p.title !== "Real SAT questions") warns.push(`${where}: title longer than 5 words`);
+    if (!p.tagline) errors.push(`${where}: no tagline (one line under the "# " title)`);
+    else if (countWords(p.tagline) > 10) warns.push(`${where}: tagline is ${countWords(p.tagline)} words (max 10)`);
+    if (p.title === "Real SAT questions") {
+      if (!isSkill) errors.push(`${where}: strategy lessons have no real-question part`);
+      const want = ["easy", "medium", "hard"];
+      if (ps.length !== 3 || ps.some((s, i) => s.title !== `Your turn: ${want[i]}` || s.block?.t !== "check")) errors.push(`${where}: needs exactly "## Your turn: easy / medium / hard", each with a check`);
+      continue;
+    }
+    if (ps.length < 1 || ps.length > 3) errors.push(`${where}: ${ps.length} steps (2–3)`);
+    else if (ps.length < 2 && !visualOnly) warns.push(`${where}: only 1 step (add a quiz)`);
+    if (ps[0] && !TEACH.includes(ps[0].block?.t ?? "")) errors.push(`${where}: its first step must teach with an example, desmos or visual block`);
+    const teach = ps.filter((s) => TEACH.includes(s.block?.t ?? "")).length;
+    if (teach > 1 && !visualOnly) warns.push(`${where}: ${teach} teaching blocks (one example per part)`);
+    let words = 0;
+    for (const s of ps) {
+      const sw = `step "${s.title}"`;
+      const w = countWords(s.body);
+      words += w;
+      if (w > 40) errors.push(`${sw}: ${w} words of text (max 25)`);
+      else if (w > 25) warns.push(`${sw}: ${w} words of text (max 25)`);
+      if (visualOnly && w > 0) warns.push(`${sw}: visual-only lesson, but the step has text`);
+      if (s.title.split(/\s+/).length > 5) warns.push(`${sw}: title longer than 5 words`);
+      if (s.body.includes("```")) errors.push(`${sw}: a code fence that isn't a block`);
+      const b = s.block;
+      const passage = section === "rw" ? 30 : 0;
+      if (b?.t === "example") {
+        words += b.lines.reduce((n, x) => n + countWords(x.note ?? ""), 0);
+        const pw = countWords(b.prompt);
+        if (pw > 60 + passage) errors.push(`${sw}: example problem is ${pw} words (max ${40 + passage})`);
+        else if (pw > 40 + passage) warns.push(`${sw}: example problem is ${pw} words (max ${40 + passage})`);
+        b.lines.forEach((x, k) => {
+          if (countWords(x.text) > 20) errors.push(`${sw}: example line ${k + 1} is ${countWords(x.text)} words (max 14)`);
+          if (countWords(x.note ?? "") > 16) errors.push(`${sw}: note on example line ${k + 1} is too long (max 10 words)`);
+          else if (countWords(x.note ?? "") > 10) warns.push(`${sw}: note on example line ${k + 1} is ${countWords(x.note ?? "")} words (max 10)`);
+        });
+      }
+      if (b?.t === "desmos") {
+        if (b.moves.length < 2 || b.moves.length > 7) warns.push(`${sw}: ${b.moves.length} desmos moves (2–6)`);
+        for (const mv of b.moves) if (countWords(mv.caption ?? "") > 14) warns.push(`${sw}: desmos caption "${(mv.caption ?? "").slice(0, 30)}" is long (max 12 words)`);
+        if (section !== "math" && slug !== "desmos") warns.push(`${sw}: desmos block outside math`);
+      }
+      if (b?.t === "visual") {
+        if (!fs.existsSync(path.join(visDir, `${b.id}.tsx`))) errors.push(`${sw}: visual "${b.id}" has no file src/components/lessons/visuals/${b.id}.tsx`);
+        if (!b.id.startsWith(`${slug}--`)) errors.push(`${sw}: visual id must start with "${slug}--"`);
+      }
+      if (b?.t === "quiz") {
+        quizzes++;
+        const qw = countWords(b.prompt);
+        if (qw > 65 + passage) errors.push(`${sw}: quiz question is ${qw} words (max ${40 + passage})`);
+        else if (qw > 40 + passage) warns.push(`${sw}: quiz question is ${qw} words (max ${40 + passage})`);
+        if (!b.explain.length) warns.push(`${sw}: quiz has no > explanation`);
+        const ew = countWords(b.explain.join(" "));
+        if (ew > 45) errors.push(`${sw}: quiz explanation is ${ew} words (max 25)`);
+        else if (ew > 25) warns.push(`${sw}: quiz explanation is ${ew} words (max 25)`);
+        for (const o of b.options) {
+          if (!o.correct && !o.feedback) warns.push(`${sw}: wrong option "${o.text.slice(0, 30)}" has no :: feedback`);
+          const fw = countWords(o.feedback ?? "");
+          if (fw > 20) errors.push(`${sw}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
+          else if (fw > 12) warns.push(`${sw}: feedback for "${o.text.slice(0, 30)}" is ${fw} words (max 12)`);
+        }
+        if (new Set(b.options.map((o) => o.text.toLowerCase())).size !== b.options.length) errors.push(`${sw}: two quiz options are the same`);
+        if (b.desmos.length) {
+          desmosFixes++;
+          if (section !== "math" && slug !== "desmos") warns.push(`${sw}: desmos moves outside math`);
+          if (b.desmos.length > 7) warns.push(`${sw}: ${b.desmos.length} desmos moves (max 6)`);
+          for (const mv of b.desmos) if (countWords(mv.caption ?? "") > 14) warns.push(`${sw}: desmos caption "${(mv.caption ?? "").slice(0, 30)}" is long (max 12 words)`);
+        }
+      }
+      if (b?.t === "check") errors.push(`${sw}: check blocks belong in the "Real SAT questions" part`);
+    }
+    total += words;
+    if (words > 80) errors.push(`${where}: ${words} words of teaching text (max 60)`);
+    else if (words > 60) warns.push(`${where}: ${words} words of teaching text (max 60)`);
   }
-  if (quizzes < 3) warns.push(`only ${quizzes} quizzes (aim for 3–5)`);
+  for (const s of steps) {
+    if (s.block?.t !== "check") continue;
+    const q = bank.get(s.block.id);
+    checks.push(q);
+    const sw = `step "${s.title}"`;
+    if (!q) errors.push(`${sw}: question ${s.block.id} is not in the live bank`);
+    else {
+      const allowed = [meta.skill, ...(meta["also-skills"] ?? "").split(",").map((x) => x.trim()).filter(Boolean)];
+      if (!allowed.includes(q.skill)) errors.push(`${sw}: ${q.id} is skill ${q.skill}, not ${allowed.join(" / ")}`);
+      if (q.choicesImage) errors.push(`${sw}: ${q.id} has its choices in one image`);
+      if (q.figure?.fullPage) errors.push(`${sw}: ${q.id} only has a full-page image`);
+      if ((owner.get(q.id) ?? []).length > 1) errors.push(`${sw}: ${q.id} is used more than once (${owner.get(q.id).join(", ")})`);
+      const d = s.title.split(": ")[1];
+      if (d && q.difficulty !== d) warns.push(`${sw}: ${q.id} is ${q.difficulty}`);
+    }
+    if (countWords(s.body) > 12) warns.push(`${sw}: ${countWords(s.body)} words before a check (max 12)`);
+  }
+  if (total > 300) errors.push(`${total} words of teaching text (max 240)`);
+  else if (total > 240) warns.push(`${total} words of teaching text (max 240)`);
+  if (section === "math" && desmosFixes < 2) warns.push(`only ${desmosFixes} quizzes with a Desmos way (~ lines); add them where Desmos is faster`);
+  if (slug === "desmos" && steps.some((s) => s.block?.t === "quiz" && !s.block.desmos.length)) warns.push("every Desmos-lesson quiz should have ~ moves");
+  if (visualOnly && steps.some((s, i) => s.block?.t !== "visual" && s.block?.t !== "quiz" && i >= 0)) warns.push("visual-only: every teaching step should be a visual block");
 
   const mins = estimateMinutes(steps, section);
-  const ok = !errors.length;
-  console.log(`${ok ? "✓" : "✗"} ${rel} · ${steps.length} steps · ${quizzes} quizzes · ${checks.length} checks · ${textWords} words · ~${mins} min`);
+  console.log(`${errors.length ? "✗" : "✓"} ${rel} · ${parts.length} parts · ${steps.length} steps · ${quizzes} quizzes (${desmosFixes} with Desmos) · ${checks.length} checks · ${total} words · ~${mins} min`);
   for (const e of errors) console.log(`  error: ${e}`);
   for (const w of warns) console.log(`  warn:  ${w}`);
   errorCount += errors.length;

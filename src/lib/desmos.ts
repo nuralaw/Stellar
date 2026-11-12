@@ -10,6 +10,13 @@ export interface DesmosCalculator {
   destroy(): void;
   updateSettings(settings: Record<string, unknown>): void;
   setBlank(): void;
+  setExpression(expr: Record<string, unknown>): void;
+  removeExpression(expr: { id: string }): void;
+  setMathBounds(bounds: { left: number; right: number; bottom: number; top: number }): void;
+  /** The graph paper's size in pixels (the area that shows the graph). */
+  graphpaperBounds?: { pixelCoordinates: { width: number; height: number } };
+  /** Per expression id: whether Desmos could evaluate it (filled in asynchronously). */
+  expressionAnalysis?: Record<string, { isError?: boolean; errorMessage?: string; evaluation?: { type: string; value: number } }>;
 }
 
 interface DesmosGlobal {

@@ -24,7 +24,7 @@ const allSlugs = () =>
     .map((f) => path.basename(f, ".tsx"))
     .sort();
 
-const camel = (s) => s.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase());
+const camel = (s) => s.replace(/-+([a-z0-9])/g, (_, c) => c.toUpperCase());
 
 function writeIndex() {
   const slugs = allSlugs();
