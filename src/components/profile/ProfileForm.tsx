@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Avatar, fileToAvatar, isPhotoAvatar } from "@/components/Avatar";
-import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useProfile } from "@/lib/store";
+import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useLessonProgress, useProfile, useTestResults } from "@/lib/store";
 import { COUNTRY_ZONES } from "@/lib/tz-data";
 import { countryList, countryName, countryOfZone, deviceZone, mainZone, utcOffsetLabel, zoneCity } from "@/lib/timezone";
 
@@ -81,7 +81,16 @@ function Editor() {
   const [photoError, setPhotoError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [saved, setSaved] = useState(false);
-  const [confirmReset, setConfirmReset] = useState(false);
+  // Reset asks twice: "ask" warns, "confirm" names what will be lost; "done" confirms it happened.
+  const [reset, setReset] = useState<"idle" | "ask" | "confirm" | "done">("idle");
+  const testResults = useTestResults();
+  const lessonCount = Object.keys(useLessonProgress()).length;
+  const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
+  const losing = [
+    attempts.length > 0 && plural(attempts.length, "answered question"),
+    testResults.length > 0 && plural(testResults.length, "practice test result"),
+    lessonCount > 0 && `progress in ${plural(lessonCount, "lesson")}`,
+  ].filter((x): x is string => Boolean(x));
   const dirty = name.trim() !== profile.name || avatar !== profile.avatar;
 
   const onFile = async (file: File | undefined) => {
@@ -240,29 +249,55 @@ function Editor() {
         <p className="mt-1 text-sm text-muted">
           Everything is saved in this browser only. Sign-in to sync across devices is coming soon.
         </p>
-        {!confirmReset ? (
-          <button type="button" onClick={() => setConfirmReset(true)} className="mt-4 text-sm font-semibold text-danger hover:underline">
-            Reset all progress…
-          </button>
-        ) : (
+        {reset === "idle" || reset === "done" ? (
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <button type="button" onClick={() => setReset("ask")} className="text-sm font-semibold text-danger hover:underline">
+              Reset all progress…
+            </button>
+            {reset === "done" && (
+              <span className="text-sm text-muted" role="status">
+                Done: everything was deleted from this browser.
+              </span>
+            )}
+          </div>
+        ) : reset === "ask" ? (
           <div className="mt-4 rounded-xl border border-danger/40 bg-danger-soft p-4 text-sm">
             <p className="font-medium">This deletes your profile, goal, and all answered questions from this browser. It can&apos;t be undone.</p>
             <div className="mt-3 flex gap-2">
+              <button type="button" onClick={() => setReset("confirm")} className="rounded-lg bg-danger px-4 py-2 font-semibold text-surface">
+                Yes, continue
+              </button>
+              <button type="button" onClick={() => setReset("idle")} className="rounded-lg px-4 py-2 font-semibold text-muted hover:text-ink">
+                Cancel
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="mt-4 rounded-xl border border-danger/40 bg-danger-soft p-4 text-sm" role="alertdialog" aria-labelledby="reset-title">
+            <p id="reset-title" className="font-semibold">
+              Are you sure? This is the last step.
+            </p>
+            <p className="mt-1">
+              {losing.length ? `You'll lose ${new Intl.ListFormat("en").format(losing)}.` : "Your profile and goal will be deleted."} There&apos;s no backup, so
+              it can&apos;t be brought back.
+            </p>
+            {/* The safe button sits where "Yes, continue" was, so a double click can't delete anything. */}
+            <div className="mt-3 flex gap-2">
+              <button type="button" onClick={() => setReset("idle")} className="rounded-lg bg-surface px-4 py-2 font-semibold ring-1 ring-line hover:bg-surface-2">
+                No, keep my data
+              </button>
               <button
                 type="button"
                 onClick={() => {
                   resetAllData();
-                  setConfirmReset(false);
+                  setReset("done");
                   setName("");
                   setAvatar(AVATARS[0]);
                   setPhoto(null);
                 }}
                 className="rounded-lg bg-danger px-4 py-2 font-semibold text-surface"
               >
-                Yes, reset everything
-              </button>
-              <button type="button" onClick={() => setConfirmReset(false)} className="rounded-lg px-4 py-2 font-semibold text-muted hover:text-ink">
-                Cancel
+                Delete everything
               </button>
             </div>
           </div>
