@@ -1,0 +1,119 @@
+import "server-only";
+import fs from "node:fs";
+import path from "node:path";
+
+// Support requests from the Home page's Support button: contacts, a screenshot, and what went wrong.
+//  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/support.sql run once.
+//    The screenshot goes to the private storage bucket "support-screenshots", the row keeps its file name.
+//  - Local files (development fallback): .data/support.json + .data/support/<file>. Doesn't work on Vercel.
+
+export interface SupportRequest {
+  id: string;
+  telegram: string;
+  instagram: string;
+  other: string;
+  message: string;
+  /** File name of the screenshot (in .data/support/ or the storage bucket), if one was attached. */
+  screenshot: string | null;
+  /** Anonymous browser id (same as the competition id), if sent. */
+  userId: string | null;
+  at: number;
+}
+
+export class SupportError extends Error {
+  constructor(
+    message: string,
+    public status = 400,
+  ) {
+    super(message);
+  }
+}
+
+export const MAX_SCREENSHOT = 4 * 1024 * 1024;
+
+/** The image type from the file's first bytes (the browser's claimed type isn't trusted). */
+function imageType(b: Uint8Array): "jpg" | "png" | "webp" | null {
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return "jpg";
+  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return "png";
+  if (String.fromCharCode(...b.slice(0, 4)) === "RIFF" && String.fromCharCode(...b.slice(8, 12)) === "WEBP") return "webp";
+  return null;
+}
+
+const text = (v: FormDataEntryValue | null, max: number) => (typeof v === "string" ? v.trim().slice(0, max) : "");
+
+export async function parseSupport(form: FormData, now: number): Promise<{ req: SupportRequest; image: { bytes: Uint8Array<ArrayBuffer>; ext: string } | null }> {
+  const telegram = text(form.get("telegram"), 100);
+  const instagram = text(form.get("instagram"), 100);
+  const other = text(form.get("other"), 200);
+  const message = text(form.get("message"), 3000);
+  if (!telegram && !instagram && !other) throw new SupportError("Leave at least one contact so we can reply.");
+  if (message.length < 10) throw new SupportError("Describe the problem in a few words.");
+
+  let image: { bytes: Uint8Array<ArrayBuffer>; ext: string } | null = null;
+  const file = form.get("screenshot");
+  if (file instanceof File && file.size > 0) {
+    if (file.size > MAX_SCREENSHOT) throw new SupportError("The screenshot is too big (max 4 MB).");
+    const bytes = new Uint8Array(await file.arrayBuffer());
+    const ext = imageType(bytes);
+    if (!ext) throw new SupportError("The screenshot has to be a JPG, PNG or WebP image.");
+    image = { bytes, ext };
+  }
+
+  const raw = form.get("userId");
+  const userId = typeof raw === "string" && /^[0-9a-f-]{36}$/i.test(raw) ? raw.toLowerCase() : null;
+  const id = `${new Date(now).toISOString().slice(0, 10)}-${crypto.randomUUID().slice(0, 8)}`;
+  return { req: { id, telegram, instagram, other, message, screenshot: image ? `${id}.${image.ext}` : null, userId, at: now }, image };
+}
+
+const DIR = path.join(process.cwd(), ".data");
+const SB_URL = process.env.SUPABASE_URL?.replace(/\/$/, "");
+const SB_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const MIME = { jpg: "image/jpeg", png: "image/png", webp: "image/webp" } as Record<string, string>;
+
+export async function saveSupport(req: SupportRequest, image: { bytes: Uint8Array<ArrayBuffer>; ext: string } | null) {
+  if (SB_URL && SB_KEY) {
+    const auth = { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` };
+    if (image && req.screenshot) {
+      const up = await fetch(`${SB_URL}/storage/v1/object/support-screenshots/${req.screenshot}`, {
+        method: "POST",
+        headers: { ...auth, "Content-Type": MIME[image.ext] },
+        body: image.bytes,
+        cache: "no-store",
+      });
+      if (!up.ok) throw new SupportError("Couldn't upload the screenshot. Try again later.", 503);
+    }
+    const res = await fetch(`${SB_URL}/rest/v1/support_requests`, {
+      method: "POST",
+      headers: { ...auth, "Content-Type": "application/json", Prefer: "return=minimal" },
+      body: JSON.stringify({
+        id: req.id,
+        telegram: req.telegram,
+        instagram: req.instagram,
+        other: req.other,
+        message: req.message,
+        screenshot: req.screenshot,
+        user_id: req.userId,
+        created_at: new Date(req.at).toISOString(),
+      }),
+      cache: "no-store",
+    });
+    if (!res.ok) throw new SupportError("Couldn't send your message. Try again later.", 503);
+    return;
+  }
+  try {
+    const file = path.join(DIR, "support.json");
+    let all: SupportRequest[] = [];
+    try {
+      all = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch {}
+    if (image && req.screenshot) {
+      fs.mkdirSync(path.join(DIR, "support"), { recursive: true });
+      fs.writeFileSync(path.join(DIR, "support", req.screenshot), image.bytes);
+    }
+    all.push(req);
+    fs.mkdirSync(DIR, { recursive: true });
+    fs.writeFileSync(file, JSON.stringify(all, null, 1));
+  } catch {
+    throw new SupportError("Support isn't set up on this server yet.", 503);
+  }
+}
