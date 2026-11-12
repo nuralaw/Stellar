@@ -12,6 +12,9 @@ export interface Report {
   qid: string;
   reason: ReportReason;
   note: string;
+  /** Optional usernames, so we can reply. */
+  telegram: string;
+  instagram: string;
   /** Anonymous browser id (same as the competition id), if sent. */
   userId: string | null;
   at: number;
@@ -33,8 +36,9 @@ export function parseReport(b: Record<string, unknown>, now: number): Report {
   if (!(reason in REPORT_REASONS)) throw new ReportError("Pick what's wrong");
   const note = typeof b.note === "string" ? b.note.trim().slice(0, 1000) : "";
   if (reason === "other" && !note) throw new ReportError("Tell us what's wrong");
+  const contact = (v: unknown) => (typeof v === "string" ? v.trim().slice(0, 100) : "");
   const userId = typeof b.userId === "string" && /^[0-9a-f-]{36}$/i.test(b.userId) ? b.userId.toLowerCase() : null;
-  return { qid, reason, note, userId, at: now };
+  return { qid, reason, note, telegram: contact(b.telegram), instagram: contact(b.instagram), userId, at: now };
 }
 
 const FILE = path.join(process.cwd(), ".data", "reports.json");
@@ -46,7 +50,7 @@ export async function saveReport(r: Report) {
     const res = await fetch(`${SB_URL}/rest/v1/question_reports`, {
       method: "POST",
       headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, "Content-Type": "application/json", Prefer: "return=minimal" },
-      body: JSON.stringify({ qid: r.qid, reason: r.reason, note: r.note, user_id: r.userId, created_at: new Date(r.at).toISOString() }),
+      body: JSON.stringify({ qid: r.qid, reason: r.reason, note: r.note, telegram: r.telegram, instagram: r.instagram, user_id: r.userId, created_at: new Date(r.at).toISOString() }),
       cache: "no-store",
     });
     if (!res.ok) throw new ReportError("Couldn't save the report. Try again later.", 503);

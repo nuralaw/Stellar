@@ -4,6 +4,7 @@
 
 import { useSyncExternalStore } from "react";
 import type { Difficulty } from "./types";
+import { CONTACTS_KEY } from "./contacts";
 import type { SectionId } from "./taxonomy";
 
 export const AVATARS = ["🦊", "🐼", "🦉", "🐯", "🐙", "🚀", "⭐", "📚", "🎯", "🧠", "🌙", "🔥"] as const;
@@ -328,6 +329,7 @@ export function resetAllData() {
     localStorage.removeItem(KEYS.session);
     localStorage.removeItem(KEYS.lessons);
     localStorage.removeItem(KEYS.vocab);
+    localStorage.removeItem(CONTACTS_KEY);
   } catch {}
   listeners.forEach((l) => l());
 }

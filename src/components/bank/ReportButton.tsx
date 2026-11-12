@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { CONTACT_ICONS, loadContacts, saveContacts, type Contacts } from "@/lib/contacts";
 import { REPORT_REASONS, type ReportReason } from "@/lib/report-reasons";
 import { getUserId } from "@/lib/store";
 import { I, Icon } from "./icons";
@@ -12,6 +13,8 @@ export function ReportButton({ qid }: { qid: string }) {
   const [open, setOpen] = useState(false);
   const [reason, setReason] = useState<ReportReason | null>(null);
   const [note, setNote] = useState("");
+  // Optional, so we can reply; remembered for the next report.
+  const [contacts, setContacts] = useState<Contacts>(loadContacts);
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
@@ -49,10 +52,11 @@ export function ReportButton({ qid }: { qid: string }) {
       const res = await fetch("/api/report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ qid, reason, note, userId: getUserId() }),
+        body: JSON.stringify({ qid, reason, note, telegram: contacts.telegram.trim(), instagram: contacts.instagram.trim(), userId: getUserId() }),
       });
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);
+      saveContacts(contacts);
       setState("sent");
       setSentFor(qid);
     } catch (err) {
@@ -113,6 +117,26 @@ export function ReportButton({ qid }: { qid: string }) {
                 placeholder={reason === "other" ? "Tell us what's wrong (required)" : "Details (optional), e.g. the right answer is C because…"}
                 className="mt-3 block w-full resize-none rounded-xl border border-line bg-bg px-3 py-2 outline-none focus:border-primary focus:ring-1 focus:ring-primary"
               />
+              <p className="mt-3 text-xs text-muted">Your username, so we can reply (optional)</p>
+              <div className="mt-1.5 grid grid-cols-2 gap-2">
+                {(["telegram", "instagram"] as const).map((k) => (
+                  <label
+                    key={k}
+                    className="flex min-w-0 items-center gap-2 rounded-xl border border-line bg-bg pl-2.5 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary"
+                  >
+                    <Icon d={CONTACT_ICONS[k]} className="h-4 w-4 shrink-0 text-muted" />
+                    <input
+                      value={contacts[k]}
+                      onChange={(e) => setContacts((c) => ({ ...c, [k]: e.target.value }))}
+                      maxLength={100}
+                      autoComplete="off"
+                      placeholder={k === "telegram" ? "Telegram" : "Instagram"}
+                      aria-label={k === "telegram" ? "Telegram username" : "Instagram username"}
+                      className="w-full min-w-0 bg-transparent py-2 pr-2.5 outline-none placeholder:text-muted/70"
+                    />
+                  </label>
+                ))}
+              </div>
               {error && <p className="mt-2 text-danger">{error}</p>}
               <div className="mt-3 flex justify-end gap-2">
                 <button type="button" onClick={() => setOpen(false)} className="rounded-xl px-3 py-2 font-semibold text-muted hover:text-ink">

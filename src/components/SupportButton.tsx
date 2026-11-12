@@ -2,20 +2,19 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { CONTACT_ICONS, loadContacts, saveContacts } from "@/lib/contacts";
 import { getUserId } from "@/lib/store";
 
 const P = {
   chat: "M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.4A8.5 8.5 0 1 1 21 12Z",
-  telegram: "M21 4 3 11l6 2.2L11 20l3.3-4.2 4.7 3.5L21 4ZM9 13.2l9-6.2",
-  instagram: "M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm5-1.5h.01",
   at: "M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm0 0v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.6 7.2",
   upload: "M12 16V4m0 0-4 4m4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3",
   gift: "M4 11h16v9H4zM3 7h18v4H3zM12 7v13M12 7S10.5 3 8 3.5 7 7 12 7Zm0 0s1.5-4 4-3.5S17 7 12 7Z",
 };
 
 const CONTACTS = [
-  { key: "telegram", label: "Telegram", placeholder: "@username", icon: P.telegram },
-  { key: "instagram", label: "Instagram", placeholder: "@username", icon: P.instagram },
+  { key: "telegram", label: "Telegram", placeholder: "@username", icon: CONTACT_ICONS.telegram },
+  { key: "instagram", label: "Instagram", placeholder: "@username", icon: CONTACT_ICONS.instagram },
   { key: "other", label: "Other", placeholder: "WhatsApp, email…", icon: P.at },
 ] as const;
 type ContactKey = (typeof CONTACTS)[number]["key"];
@@ -49,7 +48,7 @@ async function shrink(file: File): Promise<Blob> {
  */
 export function SupportButton() {
   const [open, setOpen] = useState(false);
-  const [contacts, setContacts] = useState<Record<ContactKey, string>>({ telegram: "", instagram: "", other: "" });
+  const [contacts, setContacts] = useState<Record<ContactKey, string>>(() => ({ ...loadContacts(), other: "" }));
   const [message, setMessage] = useState("");
   const [shot, setShot] = useState<{ blob: Blob; url: string } | null>(null);
   const [shotError, setShotError] = useState<string | null>(null);
@@ -87,8 +86,8 @@ export function SupportButton() {
   const close = () => {
     setOpen(false);
     if (state === "sent") {
-      // Sent: start clean next time.
-      setContacts({ telegram: "", instagram: "", other: "" });
+      // Sent: start clean next time (remembered usernames stay).
+      setContacts({ ...loadContacts(), other: "" });
       setMessage("");
       removeImage();
       setState("idle");
@@ -138,6 +137,7 @@ export function SupportButton() {
       const res = await fetch("/api/support", { method: "POST", body: form });
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json.error ?? `Something went wrong (${res.status}). Try again.`);
+      saveContacts(contacts);
       setState("sent");
     } catch (err) {
       setState("idle");
