@@ -322,7 +322,7 @@ export function Dashboard() {
 
   // Getting started: the first step is already done, so nobody starts at 0%.
   const steps: Step[] = [
-    { label: "Open your free study space", done: true, action: null },
+    { label: "Open your study space", done: true, action: null },
     {
       label: "Pick your test date",
       done: profile.testDate !== null,

@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="space-y-3">
           <Logo variant="onDark" />
           <p className="max-w-md text-sm">
-            Free Digital SAT preparation for everyone. Practice questions, full-length adaptive tests, and clear
+            SAT prep for everyone. Practice questions, full-length adaptive tests, and clear
             lessons.
           </p>
         </div>

@@ -22,11 +22,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Stellar — Free Digital SAT Prep",
+    default: "Stellar — SAT Prep",
     template: "%s · Stellar",
   },
   description:
-    "Free Digital SAT practice: thousands of real-format questions with explanations, full-length adaptive practice tests, and clear lessons for Math and Reading & Writing.",
+    "Digital SAT practice: thousands of real-format questions with explanations, full-length adaptive practice tests, and clear lessons for Math and Reading & Writing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

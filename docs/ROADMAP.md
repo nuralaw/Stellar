@@ -1,6 +1,6 @@
 # Stellar — 20-day roadmap
 
-Free Digital SAT prep: question bank, timed adaptive practice test, lessons, progress tracking.
+Digital SAT prep: question bank, timed adaptive practice test, lessons, progress tracking.
 Stack: Next.js 16 (App Router) + Tailwind 4 + Supabase, deployed on Vercel.
 
 Start: 2026-11-10 · Target launch: 2026-11-29

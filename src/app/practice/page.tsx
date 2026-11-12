@@ -6,7 +6,7 @@ import { PAGE } from "@/lib/ui";
 export const metadata: Metadata = {
   title: "Question Bank",
   description:
-    "Free Digital SAT question bank: Math and Reading & Writing questions sorted by topic, skill, and difficulty, with step-by-step explanations.",
+    "Digital SAT question bank: Math and Reading & Writing questions sorted by topic, skill, and difficulty, with step-by-step explanations.",
 };
 
 export default function Page() {
