@@ -68,3 +68,90 @@ export async function saveReport(r: Report) {
     throw new ReportError("Reports aren't set up on this server yet.", 503);
   }
 }
+
+// ── Admin (Support list) ──
+
+export interface ReportItem extends Report {
+  /** Supabase row id, or the index in .data/reports.json. */
+  id: string;
+  resolved: boolean;
+  question: { n: number; section: string; skill: string; text: string; answer: string } | null;
+}
+
+function readFile(): (Report & { resolved?: boolean })[] {
+  try {
+    return JSON.parse(fs.readFileSync(FILE, "utf8"));
+  } catch {
+    return [];
+  }
+}
+
+async function sbCheck(res: Response) {
+  if (res.ok) return;
+  const body = await res.text();
+  if (res.status === 404 && body.includes("PGRST205")) throw new ReportError("The question_reports table doesn't exist yet: run supabase/setup.sql in the Supabase SQL Editor.", 503);
+  throw new ReportError(`Supabase ${res.status}: ${body.slice(0, 200)}`, 503);
+}
+
+/** Newest first, with a short summary of each reported question. */
+export async function listReports(): Promise<ReportItem[]> {
+  let items: Omit<ReportItem, "question">[];
+  if (SB_URL && SB_KEY) {
+    const res = await fetch(`${SB_URL}/rest/v1/question_reports?select=*&order=created_at.desc&limit=500`, {
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      cache: "no-store",
+    });
+    await sbCheck(res);
+    const rows: Record<string, unknown>[] = await res.json();
+    items = rows.map((r) => ({
+      id: String(r.id),
+      qid: String(r.qid),
+      reason: r.reason as ReportReason,
+      note: String(r.note ?? ""),
+      telegram: String(r.telegram ?? ""),
+      instagram: String(r.instagram ?? ""),
+      userId: typeof r.user_id === "string" ? r.user_id : null,
+      at: Date.parse(String(r.created_at)),
+      resolved: r.resolved === true,
+    }));
+  } else {
+    items = readFile()
+      .map((r, i) => ({ ...r, id: String(i), resolved: r.resolved === true }))
+      .reverse();
+  }
+  const byId = new Map(getQuestionsByIds([...new Set(items.map((r) => r.qid))]).map((q) => [q.id, q]));
+  return items.map((r) => {
+    const q = byId.get(r.qid);
+    return {
+      ...r,
+      question: q
+        ? {
+            n: Number(q.id.split("-")[1]),
+            section: q.section,
+            skill: q.skill,
+            text: q.prompt.replace(/<[^>]+>/g, "").slice(0, 220),
+            answer: q.type === "mcq" ? q.answer : q.answer.join(" or "),
+          }
+        : null,
+    };
+  });
+}
+
+export async function updateReport(id: string, patch: { resolved: boolean }) {
+  if (SB_URL && SB_KEY) {
+    if (!/^\d+$/.test(id)) throw new ReportError("Unknown report", 404);
+    const res = await fetch(`${SB_URL}/rest/v1/question_reports?id=eq.${id}`, {
+      method: "PATCH",
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, "Content-Type": "application/json", Prefer: "return=minimal" },
+      body: JSON.stringify({ resolved: patch.resolved }),
+      cache: "no-store",
+    });
+    await sbCheck(res);
+    return;
+  }
+  const all = readFile();
+  const item = all[Number(id)];
+  if (!item) throw new ReportError("Unknown report", 404);
+  item.resolved = patch.resolved;
+  fs.writeFileSync(FILE, JSON.stringify(all, null, 1));
+}

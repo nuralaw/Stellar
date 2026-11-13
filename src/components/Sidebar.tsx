@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
-import { ACCOUNT_NAV, NAV_GROUPS, isActive, type NavItem } from "@/lib/nav";
+import { ACCOUNT_NAV, ADMIN_NAV, NAV_GROUPS, isActive, type NavItem } from "@/lib/nav";
+import { useAdminFlag } from "@/lib/admin-flag";
 import { Avatar, isPhotoAvatar } from "./Avatar";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
@@ -74,7 +75,7 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: 
   );
 }
 
-function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
+function ProfileCard({ onNavigate, admin }: { onNavigate: () => void; admin: boolean }) {
   const hydrated = useHydrated();
   const profile = useProfile();
   const named = hydrated && profile.name;
@@ -89,7 +90,10 @@ function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
           </span>
         )}
         <span className="min-w-0 rail:sr-only">
-          <span className="block truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
+          <span className="flex min-w-0 items-center gap-1.5">
+            <span className="truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
+            {admin && <span className="shrink-0 rounded-full bg-primary/15 px-1.5 py-0.5 text-xs leading-none font-semibold text-accent">Admin</span>}
+          </span>
           <span className="block truncate text-xs text-side-muted">Saved on this device</span>
         </span>
       </Link>
@@ -107,6 +111,7 @@ function ProfileCard({ onNavigate }: { onNavigate: () => void }) {
 
 function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: string; onNavigate: () => void; collapsible?: boolean }) {
   const due = useDueCount();
+  const admin = useAdminFlag();
   return (
     <div className="flex h-full flex-col gap-8 p-4 rail:px-3">
       <div className="flex items-center justify-between gap-2 px-2 pt-2 rail:flex-col rail:gap-4 rail:px-0">
@@ -132,9 +137,9 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
         {NAV_GROUPS.map((g) => (
           <NavGroup key={g.title} title={g.title} items={g.items} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
         ))}
-        <NavGroup title="Account" items={ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
+        <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, ADMIN_NAV] : ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
       </nav>
-      <ProfileCard onNavigate={onNavigate} />
+      <ProfileCard onNavigate={onNavigate} admin={admin} />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import "server-only";
+import fs from "node:fs";
+import path from "node:path";
 import { getQuestionsByIds, sampleQuestions } from "./bank";
 import { isCorrect } from "./answers";
 import {
@@ -14,7 +16,7 @@ import {
   type ReviewItem,
   type RoundId,
 } from "./competition";
-import { store, type Entry } from "./competition-store";
+import { StoreUnavailable, store, storeKind, type Entry } from "./competition-store";
 import type { Difficulty, Question } from "./types";
 
 const DIFFS: Difficulty[] = ["easy", "medium", "hard"];
@@ -86,10 +88,17 @@ function review(qs: Question[], responses: Record<string, string>): ReviewItem[]
 
 /* ---------------- actions ---------------- */
 
-/** Starts (or resumes / reopens) the caller's round for this week. */
-export async function startRound(round: RoundId, userId: string, name: string, avatar: string, now: number) {
+/**
+ * Starts (or resumes / reopens) the caller's round for this week.
+ * `admin`: a finished or left round is replaced by a fresh one, so the owner can test rounds any number of times.
+ */
+export async function startRound(round: RoundId, userId: string, name: string, avatar: string, now: number, admin = false) {
   const week = weekId(now);
   let e = await store.get(week, round, userId);
+  if (e && admin && (e.submittedAt !== undefined || now - e.startedAt > REOPEN_MS)) {
+    await removeEntry(week, round, userId);
+    e = null;
+  }
   if (!e) {
     e = await store.create({ week, round, userId, name, avatar, ids: pick(round), startedAt: now, responses: {} });
   }
@@ -185,7 +194,8 @@ function rank(rows: Omit<LeaderRow, "rank">[]): LeaderRow[] {
   return sorted.map((r, i) => ({ ...r, rank: i > 0 && order(sorted[i - 1], r) === 0 ? 0 : i + 1 })).map((r, i, all) => ({ ...r, rank: r.rank || all[i - 1].rank }));
 }
 
-export async function boards(week: string, userId: string | null, now: number, top = 50) {
+/** `admin`: the caller's finished / left rounds show as "none", so the hub offers Start (→ a fresh round) again. */
+export async function boards(week: string, userId: string | null, now: number, top = 50, admin = false) {
   // Annulled attempts don't appear on the boards.
   const done = (await store.finished(week)).filter((e) => !e.annulled);
   const byRound = (round: RoundId) =>
@@ -217,7 +227,7 @@ export async function boards(week: string, userId: string | null, now: number, t
     mine = await Promise.all(
       (["rw", "math"] as RoundId[]).map(async (round): Promise<MyRound> => {
         const e = await store.get(week, round, userId);
-        if (!e) return { round, status: "none" };
+        if (!e || (admin && (e.submittedAt !== undefined || now - e.startedAt > REOPEN_MS))) return { round, status: "none" };
         if (e.submittedAt === undefined && now - e.startedAt <= REOPEN_MS) return { round, status: "running", startedAt: e.startedAt, endsAt: deadline(e) };
         // Started but left without submitting → annulled.
         const f = e.submittedAt === undefined ? await annul(e, now) : e;
@@ -227,4 +237,167 @@ export async function boards(week: string, userId: string | null, now: number, t
     );
   }
   return { overall: cut(all.overall), rw: cut(all.rw), math: cut(all.math), mine };
+}
+
+/* ---------------- admin tools (/admin → Competition) ---------------- */
+
+/** An entry as the admin list shows it (no question ids or responses). */
+export interface AdminEntry {
+  round: RoundId;
+  userId: string;
+  name: string;
+  avatar: string;
+  startedAt: number;
+  endsAt: number;
+  submittedAt?: number;
+  /** Questions with a saved answer. */
+  answered: number;
+  correct?: Record<Difficulty, number>;
+  score?: number;
+  seconds?: number;
+  /** running: timer still going · unsubmitted: time ran out, never submitted (annulled once seen) · submitted · annulled */
+  status: "running" | "unsubmitted" | "submitted" | "annulled";
+}
+
+/** A readable message for a store error (missing table, file not writable…), or null for other errors. */
+export function storeMessage(e: unknown): string | null {
+  if (!(e instanceof StoreUnavailable)) return null;
+  if (e.message.includes("PGRST205")) return "The competition_entries table doesn't exist yet: run supabase/setup.sql in the Supabase SQL Editor.";
+  return e.message.slice(0, 300);
+}
+
+// List and delete aren't part of the store: same two paths as competition-store.ts.
+const FILE = path.join(process.cwd(), ".data", "competition.json");
+const fileKey = (week: string, round: string, userId: string) => `${week}|${round}|${userId}`;
+
+function readAll(): Record<string, Entry> {
+  try {
+    return JSON.parse(fs.readFileSync(FILE, "utf8"));
+  } catch {
+    return {};
+  }
+}
+function writeAll(all: Record<string, Entry>) {
+  try {
+    fs.writeFileSync(FILE, JSON.stringify(all));
+  } catch (e) {
+    throw new StoreUnavailable(`Can't write ${FILE}: ${(e as Error).message}`);
+  }
+}
+
+async function sbAdmin(query: string, init: RequestInit = {}) {
+  const url = process.env.SUPABASE_URL!.replace(/\/$/, "");
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+  const res = await fetch(`${url}/rest/v1/competition_entries${query}`, {
+    ...init,
+    headers: { apikey: key, Authorization: `Bearer ${key}`, "Content-Type": "application/json", ...(init.headers ?? {}) },
+    cache: "no-store",
+  });
+  if (!res.ok) throw new StoreUnavailable(`Supabase ${res.status}: ${await res.text()}`);
+  return res.status === 204 ? null : res.json();
+}
+const eqv = (v: string) => `eq.${encodeURIComponent(v)}`;
+const num = (v: unknown) => (v == null ? undefined : Number(v));
+
+/** Removes one entry (that player can start the round again). True when something was deleted. */
+async function removeEntry(week: string, round: RoundId, userId: string): Promise<boolean> {
+  if (storeKind === "supabase") {
+    const rows = (await sbAdmin(`?week=${eqv(week)}&round=${eqv(round)}&user_id=${eqv(userId)}`, {
+      method: "DELETE",
+      headers: { Prefer: "return=representation" },
+    })) as unknown[];
+    return rows.length > 0;
+  }
+  const all = readAll();
+  const key = fileKey(week, round, userId);
+  if (!all[key]) return false;
+  delete all[key];
+  writeAll(all);
+  return true;
+}
+
+type Summary = Pick<Entry, "round" | "userId" | "name" | "avatar" | "startedAt" | "submittedAt" | "correct" | "score" | "seconds" | "annulled"> & { answered: number };
+
+function adminRow(e: Summary, now: number): AdminEntry {
+  const endsAt = e.startedAt + ROUNDS[e.round].minutes * 60_000;
+  const status = e.annulled ? "annulled" : e.submittedAt !== undefined ? "submitted" : now <= endsAt + GRACE_MS ? "running" : "unsubmitted";
+  return {
+    round: e.round,
+    userId: e.userId,
+    name: e.name,
+    avatar: e.avatar,
+    startedAt: e.startedAt,
+    endsAt,
+    ...(e.submittedAt !== undefined ? { submittedAt: e.submittedAt } : {}),
+    answered: e.answered,
+    ...(e.correct ? { correct: e.correct } : {}),
+    ...(e.score !== undefined ? { score: e.score } : {}),
+    ...(e.seconds !== undefined ? { seconds: e.seconds } : {}),
+    status,
+  };
+}
+const summary = (e: Entry): Summary => ({ ...e, answered: Object.keys(e.responses ?? {}).length });
+
+/** Every entry of a week (finished, annulled and unfinished), per round: submitted by score first, then the rest by start time. */
+export async function adminEntries(week: string, now: number): Promise<Record<RoundId, AdminEntry[]>> {
+  let rows: AdminEntry[];
+  if (storeKind === "supabase") {
+    const raw = (await sbAdmin(`?week=${eqv(week)}&select=round,user_id,name,avatar,started_at,submitted_at,correct,score,seconds,annulled,responses`)) as Record<string, unknown>[];
+    rows = raw.map((r) =>
+      adminRow(
+        {
+          round: r.round as RoundId,
+          userId: r.user_id as string,
+          name: r.name as string,
+          avatar: (r.avatar as string) ?? "",
+          startedAt: Number(r.started_at),
+          submittedAt: num(r.submitted_at),
+          correct: (r.correct as Record<Difficulty, number>) ?? undefined,
+          score: num(r.score),
+          seconds: num(r.seconds),
+          annulled: r.annulled === true,
+          answered: Object.keys((r.responses as object) ?? {}).length,
+        },
+        now,
+      ),
+    );
+  } else {
+    rows = Object.values(readAll())
+      .filter((e) => e.week === week)
+      .map((e) => adminRow(summary(e), now));
+  }
+  const group = (r: AdminEntry) => (r.status === "submitted" ? 0 : 1);
+  rows.sort((a, b) => group(a) - group(b) || (b.score ?? 0) - (a.score ?? 0) || (a.seconds ?? 0) - (b.seconds ?? 0) || a.startedAt - b.startedAt);
+  return { rw: rows.filter((r) => r.round === "rw"), math: rows.filter((r) => r.round === "math") };
+}
+
+/** Deletes an entry so that player can take the round again this week. */
+export async function adminReset(week: string, round: RoundId, userId: string) {
+  if (!(await removeEntry(week, round, userId))) throw new BadRequest("No such entry");
+  return { deleted: true };
+}
+
+/**
+ * Annul: off the boards (a round still open is closed with 0 points; a submitted one keeps its score for Restore).
+ * Restore: back on the boards, graded from the last answers saved (time as recorded).
+ */
+export async function adminSetAnnulled(week: string, round: RoundId, userId: string, annulled: boolean, now: number): Promise<AdminEntry> {
+  let e = await store.get(week, round, userId);
+  if (!e) throw new BadRequest("No such entry");
+  if (annulled && !e.annulled) {
+    if (e.submittedAt === undefined) e = await annul(e, now);
+    else {
+      await store.update(week, round, userId, { annulled: true });
+      e = { ...e, annulled: true };
+    }
+  } else if (!annulled && e.annulled) {
+    const correct: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0 };
+    for (const q of getQuestionsByIds(e.ids)) if (e.responses[q.id] && isCorrect(q, e.responses[q.id])) correct[q.difficulty]++;
+    const limit = ROUNDS[e.round].minutes * 60;
+    const seconds = e.seconds ?? limit;
+    const patch = { correct, ...computeScore(correct, seconds, limit), seconds, annulled: false };
+    await store.update(week, round, userId, patch);
+    e = { ...e, ...patch, annulled: undefined };
+  }
+  return adminRow(summary(e), now);
 }

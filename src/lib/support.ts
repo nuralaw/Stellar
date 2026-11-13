@@ -18,6 +18,9 @@ export interface SupportRequest {
   /** Anonymous browser id (same as the competition id), if sent. */
   userId: string | null;
   at: number;
+  /** Admin marks (Support list): a real bug (→ 50% off a subscription), and handled. */
+  bugConfirmed?: boolean;
+  resolved?: boolean;
 }
 
 export class SupportError extends Error {
@@ -115,5 +118,87 @@ export async function saveSupport(req: SupportRequest, image: { bytes: Uint8Arra
     fs.writeFileSync(file, JSON.stringify(all, null, 1));
   } catch {
     throw new SupportError("Support isn't set up on this server yet.", 503);
+  }
+}
+
+// ── Admin (Support list) ──
+
+function readFile(): SupportRequest[] {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(DIR, "support.json"), "utf8"));
+  } catch {
+    return [];
+  }
+}
+
+/** Throws with a hint when the Supabase table is missing. */
+async function sbCheck(res: Response, what: string) {
+  if (res.ok) return;
+  const body = await res.text();
+  if (res.status === 404 && body.includes("PGRST205")) throw new SupportError(`The ${what} table doesn't exist yet: run supabase/setup.sql in the Supabase SQL Editor.`, 503);
+  throw new SupportError(`Supabase ${res.status}: ${body.slice(0, 200)}`, 503);
+}
+
+/** Newest first. */
+export async function listSupport(): Promise<SupportRequest[]> {
+  if (SB_URL && SB_KEY) {
+    const res = await fetch(`${SB_URL}/rest/v1/support_requests?select=*&order=created_at.desc&limit=500`, {
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      cache: "no-store",
+    });
+    await sbCheck(res, "support_requests");
+    const rows: Record<string, unknown>[] = await res.json();
+    return rows.map((r) => ({
+      id: String(r.id),
+      telegram: String(r.telegram ?? ""),
+      instagram: String(r.instagram ?? ""),
+      other: String(r.other ?? ""),
+      message: String(r.message ?? ""),
+      screenshot: typeof r.screenshot === "string" ? r.screenshot : null,
+      userId: typeof r.user_id === "string" ? r.user_id : null,
+      at: Date.parse(String(r.created_at)),
+      bugConfirmed: r.bug_confirmed === true,
+      resolved: r.resolved === true,
+    }));
+  }
+  return readFile().reverse();
+}
+
+export async function updateSupport(id: string, patch: { resolved?: boolean; bugConfirmed?: boolean }) {
+  if (SB_URL && SB_KEY) {
+    const body: Record<string, boolean> = {};
+    if (patch.resolved !== undefined) body.resolved = patch.resolved;
+    if (patch.bugConfirmed !== undefined) body.bug_confirmed = patch.bugConfirmed;
+    const res = await fetch(`${SB_URL}/rest/v1/support_requests?id=eq.${encodeURIComponent(id)}`, {
+      method: "PATCH",
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, "Content-Type": "application/json", Prefer: "return=minimal" },
+      body: JSON.stringify(body),
+      cache: "no-store",
+    });
+    await sbCheck(res, "support_requests");
+    return;
+  }
+  const all = readFile();
+  const item = all.find((r) => r.id === id);
+  if (!item) throw new SupportError("Unknown request", 404);
+  Object.assign(item, patch);
+  fs.writeFileSync(path.join(DIR, "support.json"), JSON.stringify(all, null, 1));
+}
+
+/** A screenshot's bytes, by the file name saved with the request. */
+export async function readScreenshot(file: string): Promise<{ body: BodyInit; type: string } | null> {
+  const ext = /^[\w-]+\.(jpg|png|webp)$/.exec(file)?.[1];
+  if (!ext) return null;
+  if (SB_URL && SB_KEY) {
+    const res = await fetch(`${SB_URL}/storage/v1/object/support-screenshots/${file}`, {
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      cache: "no-store",
+    });
+    return res.ok ? { body: await res.arrayBuffer(), type: MIME[ext] } : null;
+  }
+  try {
+    return { body: new Uint8Array(fs.readFileSync(path.join(DIR, "support", file))), type: MIME[ext] };
+  } catch {
+    return null;
   }
 }
