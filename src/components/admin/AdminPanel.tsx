@@ -17,6 +17,7 @@ import { CompetitionTab } from "./CompetitionTab";
 import { ForgotPasswordLink } from "./ForgotPassword";
 import { OverviewTab } from "./OverviewTab";
 import { ReportsByQuestion } from "./ReportsByQuestion";
+import { TrafficTab } from "./TrafficTab";
 
 // /admin: sign in (email + password or Google, same admin email), then the admin tabs:
 // Overview, support requests from the Support button, problem reports on questions, Competition.
@@ -30,6 +31,7 @@ type Filter = "open" | "resolved" | "all";
 const TABS = [
   { id: "overview", label: "Overview" },
   { id: "accounts", label: "Accounts" },
+  { id: "traffic", label: "Traffic" },
   { id: "support", label: "Support requests" },
   { id: "reports", label: "Question reports" },
   { id: "competition", label: "Competition" },
@@ -378,6 +380,8 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
         return listView("reports", reports, (r) => [r.note, r.telegram, r.instagram, r.qid, REPORT_REASONS[r.reason] ?? r.reason].join(" "), (r) => <ReportCard key={r.id} r={r} update={update} />);
       case "accounts":
         return <AccountsTab />;
+      case "traffic":
+        return <TrafficTab />;
       case "competition":
         return (
           <div className="mt-5">
