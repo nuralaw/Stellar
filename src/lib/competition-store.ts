@@ -40,6 +40,8 @@ interface Store {
   update(week: string, round: RoundId, userId: string, patch: Partial<Entry>): Promise<void>;
   /** Finished entries of a week. */
   finished(week: string): Promise<Entry[]>;
+  /** Re-keys an entry to another participant id, unless that id already has one. True when moved. */
+  move(week: string, round: RoundId, from: string, to: string): Promise<boolean>;
 }
 
 /* ---------------- local file ---------------- */
@@ -85,6 +87,15 @@ const fileStore: Store = {
   },
   async finished(week) {
     return Object.values(readFile()).filter((e) => e.week === week && e.submittedAt !== undefined);
+  },
+  async move(week, round, from, to) {
+    const all = readFile();
+    const src = all[k(week, round, from)];
+    if (!src || all[k(week, round, to)]) return false;
+    all[k(week, round, to)] = { ...src, userId: to };
+    delete all[k(week, round, from)];
+    writeFile(all);
+    return true;
   },
 };
 
@@ -143,7 +154,9 @@ async function sb(query: string, init: RequestInit = {}) {
     cache: "no-store",
   });
   if (!res.ok) throw new StoreUnavailable(`Supabase ${res.status}: ${await res.text()}`);
-  return res.status === 204 ? null : res.json();
+  // return=minimal answers 201/204 with an empty body.
+  const text = await res.text();
+  return text ? JSON.parse(text) : null;
 }
 const eq = (v: string) => `eq.${encodeURIComponent(v)}`;
 
@@ -166,6 +179,20 @@ const supabaseStore: Store = {
   async finished(week) {
     const rows = (await sb(`?week=${eq(week)}&submitted_at=not.is.null&select=*`)) as Row[];
     return rows.map(fromRow);
+  },
+  async move(week, round, from, to) {
+    // The primary key (week, round, user_id) makes this fail if `to` already has an entry: nothing moves then.
+    try {
+      const rows = (await sb(`?week=${eq(week)}&round=${eq(round)}&user_id=${eq(from)}`, {
+        method: "PATCH",
+        body: JSON.stringify({ user_id: to }),
+        headers: { Prefer: "return=representation" },
+      })) as Row[];
+      return rows.length > 0;
+    } catch (e) {
+      if (e instanceof StoreUnavailable && e.message.startsWith("Supabase 409")) return false;
+      throw e;
+    }
   },
 };
 

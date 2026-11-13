@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { I, Icon } from "@/components/bank/icons";
 import { MAX_BASE, POINTS, ROUNDS, ROUND_MIX, ROUND_SIZE, SPEED_BONUS, shiftWeek, weekLabel, type Board, type MyRound, type RoundId } from "@/lib/competition";
 import { getUserId, updateProfile, useHydrated, useProfile } from "@/lib/store";
@@ -8,6 +9,7 @@ import { CompeteRound, RoundReview, WARN_ICON, fmtDuration, type RoundData } fro
 import { exitFullscreen, requestFullscreenNow, useCanFullscreen } from "@/lib/fullscreen";
 import { PAGE } from "@/lib/ui";
 import { Avatar, publicAvatar } from "@/components/Avatar";
+import { useAuth } from "@/lib/auth-client";
 
 interface Hub {
   week: string;
@@ -91,8 +93,10 @@ function StartWarning({ round, fullscreen, busy, onCancel, onStart }: { round: R
   );
 }
 
+// userId = this browser's anonymous id. Signed in, the server uses the account instead and moves this week's
+// guest rounds (anonId) to it, so a round played before signing in isn't lost and can't be replayed.
 async function fetchHub(userId: string, week: string | null): Promise<Hub> {
-  const res = await fetch(`/api/competition?userId=${userId}${week ? `&week=${week}` : ""}`, { cache: "no-store" });
+  const res = await fetch(`/api/competition?userId=${userId}&anonId=${userId}${week ? `&week=${week}` : ""}`, { cache: "no-store" });
   const json = await res.json();
   if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);
   return json;
@@ -111,6 +115,9 @@ export function Competition() {
   /** Round whose "before you start" warning is open. */
   const [gate, setGate] = useState<RoundId | null>(null);
   const canFullscreen = useCanFullscreen();
+  const auth = useAuth();
+  /** Signed-in account id (changes on sign-in / sign-out → the hub reloads as the new participant). */
+  const accountId = auth.user?.id ?? null;
 
   const userId = useMemo(() => (hydrated ? getUserId() : null), [hydrated]);
 
@@ -133,7 +140,7 @@ export function Competition() {
       alive = false;
       clearInterval(t);
     };
-  }, [userId, week, round]);
+  }, [userId, week, round, accountId]);
 
   const open = async (r: RoundId) => {
     if (!userId) return;
@@ -143,7 +150,7 @@ export function Competition() {
       const res = await fetch("/api/competition/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ round: r, userId, name: profile.name, avatar: await publicAvatar(profile.avatar) }),
+        body: JSON.stringify({ round: r, userId, anonId: userId, name: profile.name, avatar: await publicAvatar(profile.avatar) }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);
@@ -317,6 +324,20 @@ export function Competition() {
           );
         })}
       </div>
+
+      {/* Guests: results are tied to this browser only (honest, not a second loud button). */}
+      {auth.ready && !auth.user && isCurrent && (
+        <Link
+          href="/login?next=/compete"
+          className="mt-4 flex items-center justify-between gap-3 rounded-xl border border-line px-4 py-3 text-sm transition-colors hover:bg-surface-2"
+        >
+          <span>
+            <span className="font-semibold text-ink">Sign in to keep your result</span>
+            <span className="text-muted"> — guests&apos; results stay only in this browser.</span>
+          </span>
+          <Icon d={I.chevronR} className="h-4 w-4 shrink-0 text-muted" />
+        </Link>
+      )}
 
       {/* Rules */}
       <details className="mt-4 rounded-2xl border border-line bg-surface px-5 py-4 text-sm">

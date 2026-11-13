@@ -1,6 +1,11 @@
-// Student data kept in the browser (localStorage) until Supabase sync lands (Day 5).
-// React components read it with useProfile() / useAttempts(), which re-render on every change,
-// including changes made in other tabs.
+// Student data kept in the browser (localStorage). React components read it with useProfile() / useAttempts() etc.,
+// which re-render on every change, including changes made in other tabs.
+// Guests: the data lives only here. Signed-in students: lib/sync.ts copies it to their account (Supabase user_data).
+// This file knows nothing about Supabase: it tells sync.ts about every write through onStoreWrite(), lets it write
+// merged results back with applySynced() (which doesn't call the write hooks, so there is no push loop), and lets it
+// wipe the account on resetAllData() through onResetAll().
+// Sync bookkeeping kept next to the data: "stellar:bookmarks-at" ({ qid: [on 0|1, at] }, so a removed bookmark stays
+// removed on other devices) and "stellar:profile-at" (Unix ms of the last profile edit).
 
 import { useSyncExternalStore } from "react";
 import type { Difficulty } from "./types";
@@ -93,13 +98,28 @@ export interface LessonProgress {
 
 const KEYS = {
   profile: "stellar:profile",
+  profileAt: "stellar:profile-at",
   attempts: "stellar:attempts",
   bookmarks: "stellar:bookmarks",
+  bookmarksAt: "stellar:bookmarks-at",
   tests: "stellar:tests",
   session: "stellar:test-session",
   lessons: "stellar:lessons",
   vocab: "stellar:vocab",
 } as const;
+
+/** Data that follows a signed-in student to their account (lib/sync.ts). */
+export type SyncGroup = "profile" | "attempts" | "bookmarks" | "tests" | "lessons" | "vocab";
+const GROUP_OF: Partial<Record<string, SyncGroup>> = {
+  [KEYS.profile]: "profile",
+  [KEYS.attempts]: "attempts",
+  [KEYS.bookmarks]: "bookmarks",
+  [KEYS.tests]: "tests",
+  [KEYS.lessons]: "lessons",
+  [KEYS.vocab]: "vocab",
+};
+/** Bookmark state per question id: [on 0|1, Unix ms of the last toggle] (0 = from before sync existed). */
+export type BookmarkMap = Record<string, [0 | 1, number]>;
 const NO_LESSONS: Record<string, LessonProgress> = {};
 const NO_BOOKMARKS: string[] = [];
 const NO_TESTS: TestResult[] = [];
@@ -125,9 +145,73 @@ function read<T>(key: string, parse: (raw: string) => T, fallback: T): T {
   return value;
 }
 
-function write(key: string, value: unknown) {
+function put(key: string, value: unknown) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
+  } catch {}
+}
+
+/** A student's own change: saved, shown, and reported to the sync (added = the new attempts, for attempts). */
+function write(key: string, value: unknown, added?: Attempt[]) {
+  put(key, value);
+  listeners.forEach((l) => l());
+  const group = GROUP_OF[key];
+  if (group) writeHooks.forEach((h) => h(group, added));
+}
+
+// ---- hooks for lib/sync.ts (plain callbacks, so this file never imports Supabase) ----
+type WriteHook = (group: SyncGroup, added?: Attempt[]) => void;
+const writeHooks = new Set<WriteHook>();
+const resetHooks = new Set<() => void>();
+
+/** cb runs after every local change of synced data (not for applySynced). Returns unsubscribe. */
+export function onStoreWrite(cb: WriteHook): () => void {
+  writeHooks.add(cb);
+  return () => writeHooks.delete(cb);
+}
+
+/** cb runs when the student resets all data (after the local wipe). Returns unsubscribe. */
+export function onResetAll(cb: () => void): () => void {
+  resetHooks.add(cb);
+  return () => resetHooks.delete(cb);
+}
+
+/** Values applySynced() takes per group. */
+export interface SyncedValues {
+  profile: { at: number; data: Profile };
+  attempts: Attempt[];
+  bookmarks: BookmarkMap;
+  tests: TestResult[];
+  lessons: Record<string, LessonProgress>;
+  vocab: Record<string, VocabState>;
+}
+
+/** Writes a merged value from the account (lib/sync.ts): re-renders, but doesn't report a change back to the sync. */
+export function applySynced<G extends SyncGroup>(group: G, value: SyncedValues[G]) {
+  if (group === "profile") {
+    const v = value as SyncedValues["profile"];
+    put(KEYS.profile, v.data);
+    put(KEYS.profileAt, v.at);
+  } else if (group === "bookmarks") {
+    const map = value as BookmarkMap;
+    // Keep the local order; newly bookmarked ids go last, oldest first.
+    const kept = getBookmarks().filter((id) => map[id]?.[0] !== 0);
+    const added = Object.keys(map)
+      .filter((id) => map[id][0] === 1 && !kept.includes(id))
+      .sort((a, b) => map[a][1] - map[b][1]);
+    put(KEYS.bookmarksAt, map);
+    put(KEYS.bookmarks, [...kept, ...added]);
+  } else {
+    put(KEYS[group as "attempts" | "tests" | "lessons" | "vocab"], value);
+  }
+  listeners.forEach((l) => l());
+}
+
+/** Removes everything a student made in this browser (progress, sync bookkeeping, test in progress, contacts). Not the competition uid. */
+export function clearStudentData() {
+  try {
+    for (const k of Object.values(KEYS)) localStorage.removeItem(k);
+    localStorage.removeItem(CONTACTS_KEY);
   } catch {}
   listeners.forEach((l) => l());
 }
@@ -162,7 +246,13 @@ export function getProfile(): Profile {
 }
 
 export function updateProfile(patch: Partial<Profile>) {
+  put(KEYS.profileAt, Date.now());
   write(KEYS.profile, { ...getProfile(), ...patch });
+}
+
+/** Unix ms of the last profile edit in this browser (0 = never / before sync existed). */
+export function getProfileAt(): number {
+  return read(KEYS.profileAt, (raw) => Number(JSON.parse(raw)) || 0, 0);
 }
 
 export function useProfile(): Profile {
@@ -175,11 +265,11 @@ export function getAttempts(): Attempt[] {
 }
 
 export function addAttempt(a: Attempt) {
-  write(KEYS.attempts, [...getAttempts(), a]);
+  write(KEYS.attempts, [...getAttempts(), a], [a]);
 }
 
 export function addAttempts(list: Attempt[]) {
-  if (list.length) write(KEYS.attempts, [...getAttempts(), ...list]);
+  if (list.length) write(KEYS.attempts, [...getAttempts(), ...list], list);
 }
 
 export function useAttempts(): Attempt[] {
@@ -193,7 +283,30 @@ export function getBookmarks(): string[] {
 
 export function toggleBookmark(id: string) {
   const list = getBookmarks();
-  write(KEYS.bookmarks, list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
+  const on = !list.includes(id);
+  put(KEYS.bookmarksAt, { ...readBookmarkMeta(), [id]: [on ? 1 : 0, Date.now()] });
+  write(KEYS.bookmarks, on ? [...list, id] : list.filter((x) => x !== id));
+}
+
+function readBookmarkMeta(): BookmarkMap {
+  return read(KEYS.bookmarksAt, (raw) => {
+    const v = JSON.parse(raw);
+    return v && typeof v === "object" && !Array.isArray(v) ? v : NO_BOOKMARK_META;
+  }, NO_BOOKMARK_META);
+}
+const NO_BOOKMARK_META: BookmarkMap = {};
+
+/** Every bookmark toggled here, on or off, with when. The list decides on/off; entries without a matching toggle time get at = 0. */
+export function getBookmarkMap(): BookmarkMap {
+  const list = getBookmarks();
+  const out: BookmarkMap = {};
+  for (const [id, e] of Object.entries(readBookmarkMeta())) {
+    if (!Array.isArray(e)) continue;
+    const on = list.includes(id);
+    out[id] = [on ? 1 : 0, (e[0] === 1) === on ? Number(e[1]) || 0 : 0];
+  }
+  for (const id of list) out[id] ??= [1, 0];
+  return out;
 }
 
 export function useBookmarks(): string[] {
@@ -320,16 +433,8 @@ export function useHydrated(): boolean {
   );
 }
 
+/** "Reset all progress": wipes this browser; when signed in, lib/sync.ts also wipes the account (onResetAll). */
 export function resetAllData() {
-  try {
-    localStorage.removeItem(KEYS.profile);
-    localStorage.removeItem(KEYS.attempts);
-    localStorage.removeItem(KEYS.bookmarks);
-    localStorage.removeItem(KEYS.tests);
-    localStorage.removeItem(KEYS.session);
-    localStorage.removeItem(KEYS.lessons);
-    localStorage.removeItem(KEYS.vocab);
-    localStorage.removeItem(CONTACTS_KEY);
-  } catch {}
-  listeners.forEach((l) => l());
+  clearStudentData();
+  resetHooks.forEach((h) => h());
 }

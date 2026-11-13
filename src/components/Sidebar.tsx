@@ -11,6 +11,9 @@ import { Avatar, isPhotoAvatar } from "./Avatar";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { reviewQueue } from "@/lib/review";
+import { useAuth } from "@/lib/auth-client";
+import { useSyncState } from "@/lib/sync-status";
+import { loginHref, syncLabel } from "./profile/sync-label";
 
 function toggleCollapsed() {
   const el = document.documentElement;
@@ -75,9 +78,26 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: 
   );
 }
 
-function ProfileCard({ onNavigate, admin }: { onNavigate: () => void; admin: boolean }) {
+/** Second line of the profile card: where the progress lives (and, when signed in, how the sync is doing). */
+function SaveStatus() {
+  const auth = useAuth();
+  const sync = useSyncState();
+  // Blank until the session is known, so a signed-in student never sees "Saved on this device" flash.
+  if (!auth.ready) return <span className="block text-[13px] text-side-muted">&nbsp;</span>;
+  if (!auth.user) return <span className="block truncate text-[13px] text-side-muted">Saved on this device</span>;
+  const s = syncLabel(sync);
+  return (
+    <span className="flex min-w-0 items-center gap-1.5 text-[13px] text-side-muted" title={s.title}>
+      <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${s.dot}`} aria-hidden="true" />
+      <span className="truncate">{s.text}</span>
+    </span>
+  );
+}
+
+function ProfileCard({ onNavigate, admin, pathname }: { onNavigate: () => void; admin: boolean; pathname: string }) {
   const hydrated = useHydrated();
   const profile = useProfile();
+  const auth = useAuth();
   const named = hydrated && profile.name;
   return (
     <div className="rounded-xl border border-side-line bg-side-2 p-3 rail:border-0 rail:bg-transparent rail:p-0">
@@ -94,17 +114,19 @@ function ProfileCard({ onNavigate, admin }: { onNavigate: () => void; admin: boo
             <span className="truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
             {admin && <span className="shrink-0 rounded-full bg-primary/15 px-1.5 py-0.5 text-xs leading-none font-semibold text-accent">Admin</span>}
           </span>
-          <span className="block truncate text-xs text-side-muted">Saved on this device</span>
+          <SaveStatus />
         </span>
       </Link>
       {/* Quiet on purpose: the orange accent is for the page's main action. */}
-      <Link
-        href="/login"
-        onClick={onNavigate}
-        className="mt-3 block rounded-lg border border-side-line px-3 py-2 text-center text-sm font-semibold whitespace-nowrap text-side-ink transition-colors hover:bg-side-line rail:hidden"
-      >
-        Sign in
-      </Link>
+      {auth.ready && !auth.user && (
+        <Link
+          href={loginHref(pathname)}
+          onClick={onNavigate}
+          className="mt-3 block rounded-lg border border-side-line px-3 py-2.5 text-center text-sm font-semibold whitespace-nowrap text-side-ink transition-colors hover:bg-side-line rail:hidden"
+        >
+          Sign in
+        </Link>
+      )}
     </div>
   );
 }
@@ -139,7 +161,7 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
         ))}
         <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, ADMIN_NAV] : ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
       </nav>
-      <ProfileCard onNavigate={onNavigate} admin={admin} />
+      <ProfileCard onNavigate={onNavigate} admin={admin} pathname={pathname} />
     </div>
   );
 }

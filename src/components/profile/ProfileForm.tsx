@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { Avatar, fileToAvatar, isPhotoAvatar } from "@/components/Avatar";
 import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useLessonProgress, useProfile, useTestResults } from "@/lib/store";
 import { COUNTRY_ZONES } from "@/lib/tz-data";
+import { useAuth } from "@/lib/auth-client";
+import { AccountSection } from "./AccountSection";
 import { countryList, countryName, countryOfZone, deviceZone, mainZone, utcOffsetLabel, zoneCity } from "@/lib/timezone";
 
 const selectCls =
@@ -84,6 +86,9 @@ function Editor() {
   // Reset asks twice: "ask" warns, "confirm" names what will be lost; "done" confirms it happened.
   const [reset, setReset] = useState<"idle" | "ask" | "confirm" | "done">("idle");
   const testResults = useTestResults();
+  // Signed in: resetAllData() also erases the progress synced to the account, so the warnings must say so.
+  const signedIn = Boolean(useAuth().user);
+  const where = signedIn ? "from this browser and from your account" : "from this browser";
   const lessonCount = Object.keys(useLessonProgress()).length;
   const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
   const losing = [
@@ -231,6 +236,8 @@ function Editor() {
         </div>
       </form>
 
+      <AccountSection />
+
       <TestLocation />
 
       <div className="rounded-2xl border border-line bg-surface p-6">
@@ -247,27 +254,27 @@ function Editor() {
       <div className="rounded-2xl border border-line bg-surface p-6">
         <h2 className="font-semibold">Your data</h2>
         <p className="mt-1 text-sm text-muted">
-          Everything is saved in this browser only. Sign-in to sync across devices is coming soon.
+          {signedIn ? "Your progress is saved in this browser and synced to your account." : "Everything is saved in this browser only."}
         </p>
         {reset === "idle" || reset === "done" ? (
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-            <button type="button" onClick={() => setReset("ask")} className="text-sm font-semibold text-danger hover:underline">
+            <button type="button" onClick={() => setReset("ask")} className="inline-flex min-h-10 items-center text-sm font-semibold text-danger hover:underline">
               Reset all progress…
             </button>
             {reset === "done" && (
               <span className="text-sm text-muted" role="status">
-                Done: everything was deleted from this browser.
+                Done: everything was deleted {where}.
               </span>
             )}
           </div>
         ) : reset === "ask" ? (
           <div className="mt-4 rounded-xl border border-danger/40 bg-danger-soft p-4 text-sm">
-            <p className="font-medium">This deletes your profile, goal, and all answered questions from this browser. It can&apos;t be undone.</p>
+            <p className="font-medium">This deletes your profile, goal, and all answered questions {where}. It can&apos;t be undone.</p>
             <div className="mt-3 flex gap-2">
-              <button type="button" onClick={() => setReset("confirm")} className="rounded-lg bg-danger px-4 py-2 font-semibold text-surface">
+              <button type="button" onClick={() => setReset("confirm")} className="min-h-10 rounded-lg bg-danger px-4 py-2 font-semibold text-surface">
                 Yes, continue
               </button>
-              <button type="button" onClick={() => setReset("idle")} className="rounded-lg px-4 py-2 font-semibold text-muted hover:text-ink">
+              <button type="button" onClick={() => setReset("idle")} className="min-h-10 rounded-lg px-4 py-2 font-semibold text-muted hover:text-ink">
                 Cancel
               </button>
             </div>
@@ -278,12 +285,12 @@ function Editor() {
               Are you sure? This is the last step.
             </p>
             <p className="mt-1">
-              {losing.length ? `You'll lose ${new Intl.ListFormat("en").format(losing)}.` : "Your profile and goal will be deleted."} There&apos;s no backup, so
-              it can&apos;t be brought back.
+              {losing.length ? `You'll lose ${new Intl.ListFormat("en").format(losing)}.` : "Your profile and goal will be deleted."}{" "}
+              {signedIn && "That includes the progress saved in your account. "}There&apos;s no backup, so it can&apos;t be brought back.
             </p>
             {/* The safe button sits where "Yes, continue" was, so a double click can't delete anything. */}
             <div className="mt-3 flex gap-2">
-              <button type="button" onClick={() => setReset("idle")} className="rounded-lg bg-surface px-4 py-2 font-semibold ring-1 ring-line hover:bg-surface-2">
+              <button type="button" onClick={() => setReset("idle")} className="min-h-10 rounded-lg bg-surface px-4 py-2 font-semibold ring-1 ring-line hover:bg-surface-2">
                 No, keep my data
               </button>
               <button
@@ -295,7 +302,7 @@ function Editor() {
                   setAvatar(AVATARS[0]);
                   setPhoto(null);
                 }}
-                className="rounded-lg bg-danger px-4 py-2 font-semibold text-surface"
+                className="min-h-10 rounded-lg bg-danger px-4 py-2 font-semibold text-surface"
               >
                 Delete everything
               </button>

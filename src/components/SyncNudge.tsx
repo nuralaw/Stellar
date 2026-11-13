@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useAttempts, useHydrated } from "@/lib/store";
+import { useAuth } from "@/lib/auth-client";
+import { loginHref } from "./profile/sync-label";
 
 const DISMISS_KEY = "stellar:sync-nudge-dismissed";
 /** Ask to sign in only after the student has something worth keeping. */
@@ -20,15 +23,19 @@ function wasDismissed() {
 export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" }) {
   const hydrated = useHydrated();
   const attempts = useAttempts();
+  const auth = useAuth();
+  const pathname = usePathname();
   const [hidden, setHidden] = useState(false);
   const n = attempts.length;
-  if (!hydrated || n < MIN_ANSWERS || hidden) return null;
+  // Wait for the session too: a signed-in student's progress is already synced, so never flash this at them.
+  if (!hydrated || !auth.ready || auth.user || n < MIN_ANSWERS || hidden) return null;
+  const href = loginHref(pathname);
 
   if (variant === "inline")
     return (
       <p className="mt-6 text-sm text-muted">
         Your {n.toLocaleString("en-US")} answers are saved only in this browser.{" "}
-        <Link href="/login" className="font-semibold text-primary hover:underline">
+        <Link href={href} className="font-semibold text-primary hover:underline">
           Sign in to keep them
         </Link>
       </p>
@@ -47,7 +54,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
         <p className="mt-0.5 text-sm text-muted">They&apos;re saved only in this browser. Sign in to keep your progress on every device.</p>
       </div>
       <div className="flex items-center gap-1">
-        <Link href="/login" className="rounded-xl border border-line px-4 py-2 text-sm font-semibold transition-colors hover:bg-surface-2">
+        <Link href={href} className="rounded-xl border border-line px-4 py-2.5 text-sm font-semibold transition-colors hover:bg-surface-2">
           Sign in
         </Link>
         <button
@@ -58,7 +65,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
             } catch {}
             setHidden(true);
           }}
-          className="rounded-xl px-3 py-2 text-sm font-medium text-muted hover:text-ink"
+          className="rounded-xl px-3 py-2.5 text-sm font-medium text-muted hover:text-ink"
         >
           Later
         </button>

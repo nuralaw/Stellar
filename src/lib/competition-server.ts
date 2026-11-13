@@ -184,6 +184,42 @@ export async function updatePlayer(userId: string, name: string, avatar: string,
   return { updated };
 }
 
+/* ---------------- guest → account ---------------- */
+
+/** True when `id` is a Supabase Auth account (so it's never claimed as a guest id). Unsure → true. */
+async function isAccountId(id: string): Promise<boolean> {
+  const url = process.env.SUPABASE_URL?.replace(/\/$/, "");
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) return false; // no service key (local file store): can't check, guest ids are random UUIDs anyway
+  try {
+    const res = await fetch(`${url}/auth/v1/admin/users/${encodeURIComponent(id)}`, {
+      headers: { apikey: key, Authorization: `Bearer ${key}` },
+      cache: "no-store",
+    });
+    return res.status !== 404;
+  } catch {
+    return true;
+  }
+}
+
+/**
+ * A guest who signs in keeps this week's rounds: entries of the browser's anonymous id move to the account,
+ * per round, when the account has none for that round. Idempotent (once moved, the guest id has nothing left).
+ */
+export async function claimGuest(anonId: string, accountId: string, now: number) {
+  if (anonId === accountId) return { moved: 0 };
+  const week = weekId(now);
+  const rounds = ["rw", "math"] as RoundId[];
+  const guest = await Promise.all(rounds.map((round) => store.get(week, round, anonId)));
+  if (!guest.some(Boolean)) return { moved: 0 }; // the usual case: nothing played as a guest
+  const todo: RoundId[] = [];
+  for (const [i, round] of rounds.entries()) if (guest[i] && !(await store.get(week, round, accountId))) todo.push(round);
+  if (!todo.length || (await isAccountId(anonId))) return { moved: 0 };
+  let moved = 0;
+  for (const round of todo) if (await store.move(week, round, anonId, accountId)) moved++;
+  return { moved };
+}
+
 /* ---------------- leaderboards ---------------- */
 
 const totalCorrect = (c?: Record<Difficulty, number>) => (c ? c.easy + c.medium + c.hard : 0);
@@ -294,7 +330,9 @@ async function sbAdmin(query: string, init: RequestInit = {}) {
     cache: "no-store",
   });
   if (!res.ok) throw new StoreUnavailable(`Supabase ${res.status}: ${await res.text()}`);
-  return res.status === 204 ? null : res.json();
+  // return=minimal answers 201/204 with an empty body.
+  const text = await res.text();
+  return text ? JSON.parse(text) : null;
 }
 const eqv = (v: string) => `eq.${encodeURIComponent(v)}`;
 const num = (v: unknown) => (v == null ? undefined : Number(v));

@@ -1,9 +1,11 @@
 import { after } from "next/server";
+import { currentUser } from "@/lib/admin";
 import { emailSupportRequest } from "@/lib/mail";
 import { SupportError, parseSupport, saveSupport } from "@/lib/support";
 
 // POST multipart form { telegram?, instagram?, other?, message, screenshot? (image file), userId?, website (honeypot) }
 // → saves a support request (shown in /admin) and emails a copy to the admin. At least one contact is required.
+// userId: the signed-in account when there is one, else the anonymous browser id from the form.
 export async function POST(request: Request) {
   let form: FormData;
   try {
@@ -16,6 +18,9 @@ export async function POST(request: Request) {
   if (form.get("website")) return Response.json({ ok: true }, { headers });
   try {
     const { req, image } = await parseSupport(form, Date.now());
+    // Signed in: the account id, not the anonymous browser id from the form.
+    const user = await currentUser();
+    if (user) req.userId = user.id.toLowerCase();
     await saveSupport(req, image);
     const origin = new URL(request.url).origin;
     after(() => emailSupportRequest(req, image, origin));
