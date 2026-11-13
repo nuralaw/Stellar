@@ -12,6 +12,7 @@ import type { SupportRequest } from "@/lib/support";
 import { supabaseBrowser } from "@/lib/supabase/client";
 import { getSkill } from "@/lib/taxonomy";
 import { PAGE } from "@/lib/ui";
+import { AccountsTab } from "./AccountsTab";
 import { CompetitionTab } from "./CompetitionTab";
 import { ForgotPasswordLink } from "./ForgotPassword";
 import { OverviewTab } from "./OverviewTab";
@@ -28,6 +29,7 @@ type Filter = "open" | "resolved" | "all";
 // ── Tabs ── To add a tab: add it here and a case in renderTab() (inside Dashboard).
 const TABS = [
   { id: "overview", label: "Overview" },
+  { id: "accounts", label: "Accounts" },
   { id: "support", label: "Support requests" },
   { id: "reports", label: "Question reports" },
   { id: "competition", label: "Competition" },
@@ -374,6 +376,8 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
         return listView("support", support, (r) => [r.message, r.telegram, r.instagram, r.other].join(" "), (r) => <SupportCard key={r.id} r={r} update={update} />);
       case "reports":
         return listView("reports", reports, (r) => [r.note, r.telegram, r.instagram, r.qid, REPORT_REASONS[r.reason] ?? r.reason].join(" "), (r) => <ReportCard key={r.id} r={r} update={update} />);
+      case "accounts":
+        return <AccountsTab />;
       case "competition":
         return (
           <div className="mt-5">
