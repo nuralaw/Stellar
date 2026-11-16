@@ -38,3 +38,9 @@ export function upcomingSatDates(todayIso: string): SatDate[] {
 export function findSatDate(iso: string | null): SatDate | undefined {
   return SAT_DATES.find((d) => d.date === iso);
 }
+
+const DAY_MS = 86_400_000;
+/** Whole days from `today` to `iso` (both calendar dates "YYYY-MM-DD"). */
+export function daysUntil(iso: string, today: string): number {
+  return Math.round((Date.parse(`${iso}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / DAY_MS);
+}

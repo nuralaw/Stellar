@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { TEST_START_HOUR, findSatDate, upcomingSatDates, type SatDate } from "@/lib/sat-dates";
+import { TEST_START_HOUR, daysUntil, findSatDate, upcomingSatDates, type SatDate } from "@/lib/sat-dates";
 import { updateProfile } from "@/lib/store";
 import { countryName, countryOfZone, deviceZone, effectiveZone, todayIn, utcOffsetLabel, zoneCity, zonedInstant } from "@/lib/timezone";
 
@@ -30,9 +30,6 @@ function Unit({ value, label }: { value: number; label: string }) {
   );
 }
 
-const DAY_MS = 86_400_000;
-/** Whole days from today to an ISO date (both calendar dates). */
-const daysUntil = (iso: string, today: string) => Math.round((Date.parse(`${iso}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / DAY_MS);
 const inDays = (n: number) => (n === 0 ? "today" : n === 1 ? "tomorrow" : n < 60 ? `in ${n} days` : `in ${Math.round(n / 30.4)} months`);
 
 /** One line about registration for an official date. */

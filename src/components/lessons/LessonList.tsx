@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { PlusLock } from "@/components/PlusLock";
+import { PlusTag } from "@/components/plus/PlusMark";
+import { LINK_STRONG } from "@/components/plus/styles";
 import { Stage } from "@/components/lessons/visuals/Stage";
+import { useAccess } from "@/lib/access";
 import { computeStats } from "@/lib/stats";
 import { useAttempts, useHydrated, useLessonProgress, useNow, useProfile, type LessonProgress } from "@/lib/store";
 import { domainsFor, type SectionId } from "@/lib/taxonomy";
@@ -64,7 +68,7 @@ function Island({ visual, className = "" }: { visual: ReactNode; className?: str
   );
 }
 
-function LessonCard({ l, p, visual, i }: { l: ListLesson; p?: LessonProgress; visual: ReactNode; i: number }) {
+function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProgress; visual: ReactNode; i: number; locked: boolean }) {
   const done = isDone(p);
   return (
     <Link
@@ -87,6 +91,12 @@ function LessonCard({ l, p, visual, i }: { l: ListLesson; p?: LessonProgress; vi
         ) : (
           <span className="text-xs text-muted tabular-nums">
             {l.partCount} parts · {l.minutes} min
+            {locked && (
+              <>
+                {" · "}
+                <PlusTag />
+              </>
+            )}
           </span>
         )}
       </div>
@@ -126,6 +136,9 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
   const hydrated = useHydrated();
   const progress = useLessonProgress();
   const suggestion = useSuggestion(lessons, progress);
+  // Lessons are Plus. Locks only show once the plan is known (no flash while it loads); the server gates the lesson itself.
+  const access = useAccess();
+  const locked = access.ready && !access.can("lessons");
   // Tab: the one picked now, else the one remembered, else the suggested lesson's section.
   const [chosen, setChosen] = useState<Tab | null>(null);
   const remembered = hydrated ? readTab() : null;
@@ -143,17 +156,18 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
     return { done: hydrated ? list.filter((l) => isDone(progress[l.slug])).length : 0, total: list.length };
   };
   const s = suggestion;
+  const n = (sec: ListLesson["section"]) => lessons.filter((l) => l.section === sec).length;
   const sp = s ? progress[s.lesson.slug] : undefined;
 
   return (
     <>
       {/* One suggested lesson */}
       <div className="mt-8 min-h-[148px]">
-        {hydrated && s && (
+        {hydrated && s && access.ready && (
           <div className="lesson-in flex flex-col gap-4 rounded-2xl bg-primary-soft/50 p-3 ring-1 ring-primary/25 sm:flex-row sm:items-center sm:gap-6 sm:p-4">
             {visuals[s.lesson.slug] && <Island visual={visuals[s.lesson.slug]} className="w-full shrink-0 sm:w-72" />}
             <div className="min-w-0 flex-1 px-2 pb-1 sm:px-0 sm:pb-0">
-              <p className="text-sm font-medium text-primary">{s.why}</p>
+              <p className="text-sm font-medium text-primary-strong">{s.why}</p>
               <p className="mt-1 text-xl font-bold tracking-tight">{s.lesson.title}</p>
               <div className="mt-2 max-w-sm">
                 {s.kind === "continue" && sp ? (
@@ -164,15 +178,33 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
                   </p>
                 )}
               </div>
+              {locked && (
+                <p className="mt-2 text-sm text-muted">
+                  Part of Stellar Plus · all {lessons.length} lessons ·{" "}
+                  <Link href="/plus#plans" className={LINK_STRONG}>
+                    See plans
+                  </Link>
+                </p>
+              )}
             </div>
             <Link
               href={`/lessons/${s.lesson.slug}`}
-              className="mx-2 mb-1 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover sm:mx-0 sm:mr-2 sm:mb-0"
+              className={`mx-2 mb-1 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold text-primary-ink transition-colors sm:mx-0 sm:mr-2 sm:mb-0 ${
+                locked ? "bg-primary-strong hover:bg-primary-strong-hover" : "bg-primary hover:bg-primary-hover"
+              }`}
             >
-              {s.kind === "continue" ? "Continue" : "Start lesson"}
+              {locked ? "Preview lesson" : s.kind === "continue" ? "Continue" : "Start lesson"}
               <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
             </Link>
           </div>
+        )}
+        {hydrated && access.ready && !s && locked && (
+          <PlusLock
+            variant="row"
+            feature="lessons"
+            title={`All ${lessons.length} lessons come with Stellar Plus`}
+            fact={`${n("strategy")} Start here · ${n("rw")} Reading and Writing · ${n("math")} Math`}
+          />
         )}
       </div>
 
@@ -207,7 +239,7 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
             {lessons
               .filter((l) => l.section === "strategy")
               .map((l, i) => (
-                <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} />
+                <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
               ))}
           </div>
         ) : (
@@ -227,7 +259,7 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
                 </div>
                 <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {list.map((l, i) => (
-                    <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} />
+                    <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
                   ))}
                 </div>
               </div>

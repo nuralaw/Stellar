@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { TestList } from "@/components/test/TestList";
+import { freeTestIds } from "@/lib/free-tests";
 import { getTestIndex } from "@/lib/tests";
 
 export const metadata: Metadata = {
@@ -8,5 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <TestList tests={getTestIndex()} />;
+  const tests = getTestIndex();
+  return <TestList tests={tests} freeIds={[...freeTestIds(tests)]} />;
 }

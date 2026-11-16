@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
-import { ACCOUNT_NAV, ADMIN_NAV, NAV_GROUPS, isActive, type NavItem } from "@/lib/nav";
-import { useAdminFlag } from "@/lib/admin-flag";
+import { ACCOUNT_NAV, ADMIN_NAV, NAV_GROUPS, PLUS_NAV, isActive, type NavItem } from "@/lib/nav";
+import { useAccess, type Plan } from "@/lib/access";
+import { PlusBadge } from "./PlusLock";
 import { Avatar, isPhotoAvatar } from "./Avatar";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
@@ -32,12 +33,12 @@ function Icon({ d, className = "h-5 w-5" }: { d: string; className?: string }) {
   );
 }
 
-/** Mistakes due for review today (sidebar badge). */
-function useDueCount() {
+/** Mistakes due for review today (sidebar badge). Spaced review is Plus-only, so 0 unless `enabled`. */
+function useDueCount(enabled: boolean) {
   const hydrated = useHydrated();
   const attempts = useAttempts();
   const now = useNow();
-  return hydrated && now ? reviewQueue(attempts, now).due.length : 0;
+  return enabled && hydrated && now ? reviewQueue(attempts, now).due.length : 0;
 }
 
 function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void; badges?: Record<string, number> }) {
@@ -59,7 +60,7 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: 
                   active ? "bg-primary/15 text-accent" : "text-side-muted hover:bg-side-2 hover:text-side-ink"
                 }`}
               >
-                <span className="relative">
+                <span className={`relative ${item.href === PLUS_NAV.href && !active ? "text-accent" : ""}`}>
                   <Icon d={item.icon} />
                   {badges[item.href] > 0 && <span className="absolute -top-0.5 -right-0.5 hidden h-2 w-2 rounded-full bg-primary rail:block" aria-hidden="true" />}
                 </span>
@@ -94,7 +95,7 @@ function SaveStatus() {
   );
 }
 
-function ProfileCard({ onNavigate, admin, pathname }: { onNavigate: () => void; admin: boolean; pathname: string }) {
+function ProfileCard({ onNavigate, plan, pathname }: { onNavigate: () => void; plan: Plan | null; pathname: string }) {
   const hydrated = useHydrated();
   const profile = useProfile();
   const auth = useAuth();
@@ -112,7 +113,8 @@ function ProfileCard({ onNavigate, admin, pathname }: { onNavigate: () => void; 
         <span className="min-w-0 rail:sr-only">
           <span className="flex min-w-0 items-center gap-1.5">
             <span className="truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
-            {admin && <span className="shrink-0 rounded-full bg-primary/15 px-1.5 py-0.5 text-xs leading-none font-semibold text-accent">Admin</span>}
+            {plan === "admin" && <span className="shrink-0 rounded-full bg-primary/15 px-1.5 py-0.5 text-xs leading-none font-semibold text-accent">Admin</span>}
+            {plan === "plus" && <PlusBadge tone="onDark" />}
           </span>
           <SaveStatus />
         </span>
@@ -132,8 +134,10 @@ function ProfileCard({ onNavigate, admin, pathname }: { onNavigate: () => void; 
 }
 
 function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: string; onNavigate: () => void; collapsible?: boolean }) {
-  const due = useDueCount();
-  const admin = useAdminFlag();
+  const access = useAccess();
+  const due = useDueCount(access.ready && access.can("mistake-review"));
+  const admin = access.plan === "admin";
+  const plusItem = access.ready && access.plan === "plus" ? { ...PLUS_NAV, label: "Your Plus" } : PLUS_NAV;
   return (
     <div className="flex h-full flex-col gap-8 p-4 rail:px-3">
       <div className="flex items-center justify-between gap-2 px-2 pt-2 rail:flex-col rail:gap-4 rail:px-0">
@@ -159,9 +163,9 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
         {NAV_GROUPS.map((g) => (
           <NavGroup key={g.title} title={g.title} items={g.items} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
         ))}
-        <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, ADMIN_NAV] : ACCOUNT_NAV} pathname={pathname} onNavigate={onNavigate} />
+        <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, plusItem, ADMIN_NAV] : [...ACCOUNT_NAV, plusItem]} pathname={pathname} onNavigate={onNavigate} />
       </nav>
-      <ProfileCard onNavigate={onNavigate} admin={admin} pathname={pathname} />
+      <ProfileCard onNavigate={onNavigate} plan={access.ready ? access.plan : null} pathname={pathname} />
     </div>
   );
 }

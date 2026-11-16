@@ -8,6 +8,11 @@ import { DifficultyBadge } from "@/components/bank/QuestionCard";
 import { SolveView, type Run } from "@/components/bank/SolveView";
 import { lastResults, skillName, useBankIndex, type BankItem } from "@/components/bank/data";
 import { I, Icon } from "@/components/bank/icons";
+import { PlusLock } from "@/components/PlusLock";
+import { Dismissible, HideButton } from "@/components/plus/Dismissible";
+import { ReviewTimeline } from "@/components/plus/previews";
+import { LINK_STRONG } from "@/components/plus/styles";
+import { useAccess } from "@/lib/access";
 import { INTERVALS, dueLabel, reviewQueue, type MistakeCard } from "@/lib/review";
 import { useAttempts, useBookmarks, useHydrated, useNow } from "@/lib/store";
 import type { Difficulty } from "@/lib/types";
@@ -37,6 +42,8 @@ function Steps({ c, mastered }: { c: MistakeCard; mastered: boolean }) {
 export function Mistakes() {
   const params = useSearchParams();
   const hydrated = useHydrated();
+  const access = useAccess();
+  const canReview = access.can("mistake-review");
   const now = useNow();
   const attempts = useAttempts();
   const bookmarkList = useBookmarks();
@@ -51,7 +58,9 @@ export function Mistakes() {
   const queue = useMemo(() => (now ? reviewQueue(attempts, now) : { due: [], upcoming: [], mastered: [] }), [attempts, now]);
   const known = (list: MistakeCard[]) => list.filter((c) => byId.has(c.qid));
   const lists: Record<Tab, MistakeCard[]> = { due: known(queue.due), upcoming: known(queue.upcoming), mastered: known(queue.mastered) };
-  const shown = lists[tab];
+  // Free: one flat list of every mistake, newest first (no schedule).
+  const all = [...lists.due, ...lists.upcoming, ...lists.mastered].sort((a, b) => b.lastAt - a.lastAt);
+  const shown = canReview ? lists[tab] : all;
 
   const start = (ids: string[], title: string, at = 0) => {
     setRun({ ids, items: byId, title, start: at, from: "Mistakes" });
@@ -62,13 +71,13 @@ export function Mistakes() {
   // ?review=1 (Home's "Next up"): start the due set right away, once.
   const autoStarted = useRef(false);
   useEffect(() => {
-    if (autoStarted.current || !items || !now || params.get("review") !== "1") return;
+    if (autoStarted.current || !items || !now || !access.ready || params.get("review") !== "1") return;
     autoStarted.current = true;
     window.history.replaceState(null, "", "/mistakes");
     // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time start from a link
-    if (lists.due.length) reviewDue();
+    if (canReview && lists.due.length) reviewDue();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [items, now]);
+  }, [items, now, access.ready]);
 
   if (run)
     return (
@@ -82,15 +91,30 @@ export function Mistakes() {
       />
     );
 
-  const loading = !hydrated || !items || !now;
+  const loading = !hydrated || !items || !now || !access.ready;
   const dueMinutes = estMinutes(lists.due.length, lists.due.every((c) => c.section === "math") ? "math" : lists.due.some((c) => c.section === "math") ? "mixed" : "rw");
 
   return (
     <section className={PAGE}>
       <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Mistakes</h1>
       <p className="mt-2 max-w-2xl text-muted">
-        Every question you got wrong comes back after 1, 3 and 7 days. Get it right each time and it&apos;s mastered. Practicing early is fine, but only reviews on the
-        due day move it forward.
+        {canReview ? (
+          "Every question you got wrong comes back after 1, 3 and 7 days. Get it right each time and it's mastered. Practicing early is fine, but only reviews on the due day move it forward."
+        ) : (
+          <>
+            Every question you got wrong in the Question Bank, in one place. Practice them again whenever you like.
+            {access.ready && (
+              <>
+                {" "}
+                Plus adds{" "}
+                <Link href="/plus#review" className={LINK_STRONG}>
+                  spaced review
+                </Link>
+                .
+              </>
+            )}
+          </>
+        )}
       </p>
 
       {error && <p className="mt-6 rounded-xl border border-danger/40 bg-danger-soft px-4 py-3 text-sm text-danger">Couldn&apos;t load the question bank ({error}).</p>}
@@ -99,6 +123,25 @@ export function Mistakes() {
       <div className="mt-6 grid gap-4 rounded-2xl border border-line bg-surface p-5 sm:p-6 md:grid-cols-[1fr_auto] md:items-center">
         {loading ? (
           <div className="h-16 animate-pulse rounded-xl bg-surface-2" />
+        ) : !canReview ? (
+          <>
+            <div>
+              <p className="text-sm font-medium text-muted">Mistakes</p>
+              <p className="mt-1 text-3xl font-bold tracking-tight tabular-nums">{fmt(all.length)}</p>
+            </div>
+            {all.length > 0 ? (
+              <button
+                type="button"
+                onClick={() => start(all.map((c) => c.qid), `Mistakes · ${all.length}`)}
+                className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors hover:bg-primary-hover"
+              >
+                <Icon d={I.play} className="h-4 w-4" filled />
+                Practice all {fmt(all.length)}
+              </button>
+            ) : (
+              <p className="text-sm text-muted md:text-right">Nothing to review yet.</p>
+            )}
+          </>
         ) : (
           <>
             <div className="flex flex-wrap gap-x-10 gap-y-3">
@@ -130,7 +173,29 @@ export function Mistakes() {
         )}
       </div>
 
+      {/* Spaced review is Plus */}
+      {!loading && !canReview && all.length > 0 && (
+        <Dismissible id="mistakes">
+          {(hide) => (
+            <PlusLock
+              variant="card"
+              feature="review"
+              className="mt-4"
+              title={
+                lists.due.length > 0
+                  ? `${lists.due.length} of your ${all.length} mistakes would be due for review today`
+                  : `Spaced review would bring your ${all.length} ${all.length === 1 ? "mistake" : "mistakes"} back on a schedule`
+              }
+              body="With Plus, each one comes back after 1, 3 and 7 days until you get it right every time. Your list below stays free."
+              preview={<ReviewTimeline compact />}
+              aside={<HideButton onClick={hide} />}
+            />
+          )}
+        </Dismissible>
+      )}
+
       {/* Tabs */}
+      {canReview && (
       <div className="mt-8 flex gap-6 border-b border-line" role="tablist" aria-label="Mistakes">
         {TABS.map((t) => {
           const on = tab === t.id;
@@ -152,6 +217,7 @@ export function Mistakes() {
           );
         })}
       </div>
+      )}
 
       {/* List */}
       {loading ? (
@@ -163,10 +229,10 @@ export function Mistakes() {
       ) : shown.length === 0 ? (
         <div className="mt-4 rounded-2xl border border-dashed border-line px-6 py-14 text-center">
           <p className="font-semibold">
-            {tab === "due" ? "You're all caught up" : tab === "upcoming" ? "Nothing scheduled" : "Nothing mastered yet"}
+            {!canReview ? "No mistakes yet" : tab === "due" ? "You're all caught up" : tab === "upcoming" ? "Nothing scheduled" : "Nothing mastered yet"}
           </p>
           <p className="mt-1 text-sm text-muted">
-            {attempts.length === 0
+            {attempts.length === 0 || !canReview
               ? "Questions you get wrong in the Question Bank will show up here."
               : tab === "mastered"
                 ? "Get a mistake right on its 1-, 3- and 7-day reviews to master it."
@@ -180,7 +246,7 @@ export function Mistakes() {
         </div>
       ) : (
         <>
-          {tab !== "due" && (
+          {canReview && tab !== "due" && (
             <div className="mt-4 flex justify-end">
               <button
                 type="button"
@@ -198,7 +264,7 @@ export function Mistakes() {
                 <li key={c.qid}>
                   <button
                     type="button"
-                    onClick={() => start(shown.map((x) => x.qid), `${TABS.find((t) => t.id === tab)!.label} · ${shown.length}`, i)}
+                    onClick={() => start(shown.map((x) => x.qid), `${canReview ? TABS.find((t) => t.id === tab)!.label : "Mistakes"} · ${shown.length}`, i)}
                     className="group flex w-full items-start gap-4 px-4 py-4 text-left transition-colors hover:bg-surface-2/50 sm:px-5"
                   >
                     <span className="min-w-0 flex-1">
@@ -206,7 +272,9 @@ export function Mistakes() {
                         <span className="font-mono font-medium text-ink/70">#{it.n}</span>
                         <span className="font-medium">{skillName(it)}</span>
                         <span>· wrong {c.wrong}×</span>
-                        <span className={`sm:hidden ${tab === "due" ? "font-semibold text-primary" : ""}`}>· {tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
+                        {canReview && (
+                          <span className={`sm:hidden ${tab === "due" ? "font-semibold text-primary" : ""}`}>· {tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
+                        )}
                       </span>
                       <span className="mt-1 line-clamp-2 text-[15px] leading-relaxed">
                         {it.preview ? <RichText text={it.preview} math={it.section === "math"} /> : <span className="text-muted italic">Question with a figure</span>}
@@ -214,10 +282,12 @@ export function Mistakes() {
                     </span>
                     <span className="hidden shrink-0 flex-col items-end gap-2 self-center sm:flex">
                       <DifficultyBadge d={it.difficulty as Difficulty} />
-                      <span className="flex items-center gap-2 text-xs text-muted">
-                        <Steps c={c} mastered={tab === "mastered"} />
-                        <span className={tab === "due" ? "font-semibold text-primary" : ""}>{tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
-                      </span>
+                      {canReview && (
+                        <span className="flex items-center gap-2 text-xs text-muted">
+                          <Steps c={c} mastered={tab === "mastered"} />
+                          <span className={tab === "due" ? "font-semibold text-primary" : ""}>{tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
+                        </span>
+                      )}
                     </span>
                   </button>
                 </li>

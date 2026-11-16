@@ -46,6 +46,9 @@ export const ACCOUNT_NAV: NavItem[] = [
   { href: "/profile", label: "Profile", icon: "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9a7 7 0 0 1 14 0" },
 ];
 
+/** Stellar Plus page (sidebar Account group). */
+export const PLUS_NAV: NavItem = { href: "/plus", label: "Stellar Plus", icon: "M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3Z" };
+
 /** Shown under Profile only for the admin (see lib/admin-flag.ts). */
 export const ADMIN_NAV: NavItem = { href: "/admin", label: "Support list", icon: "M4 13h4l1.5 3h5L16 13h4M5 5h14l1 8v6H4v-6l1-8Z" };
 

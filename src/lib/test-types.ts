@@ -56,11 +56,25 @@ export const MODULE_INFO: Record<ModuleId, { section: SectionId; n: 1 | 2; minut
   math2: { section: "math", n: 2, minutes: 35, label: "Math · Module 2" },
 };
 
-const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+export const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 /** "May 2024 · International · Form A" */
 export function testName(t: Pick<PracticeTest, "year" | "month" | "version" | "form">, short = false) {
   const month = MONTHS[t.month - 1];
   const where = t.version === "US" ? "US" : short ? "Intl" : "International";
   return short ? `${month.slice(0, 3)} ${t.year} ${where} ${t.form}` : `${month} ${t.year} · ${where} · Form ${t.form}`;
+}
+
+export const questionCount = (t: Pick<TestIndexRow, "counts">) => Object.values(t.counts).reduce((a, b) => a + (b ?? 0), 0);
+export const minutesOf = (t: Pick<TestIndexRow, "counts">) => (Object.keys(t.counts) as ModuleId[]).reduce((a, m) => a + (MODULE_INFO[m]?.minutes ?? 0), 0);
+export const fmtMinutes = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h${m % 60 ? ` ${m % 60} min` : ""}` : `${m} min`);
+
+/** "October and September 2026" / "January 2027 and December 2026" / "October 2026" for the distinct months of `rows`, newest first. */
+export function monthsLabel(rows: ReadonlyArray<Pick<TestIndexRow, "year" | "month">>): string {
+  const keys = [...new Set(rows.map((r) => r.year * 12 + (r.month - 1)))].sort((a, b) => b - a);
+  const items = keys.map((k) => ({ y: Math.floor(k / 12), m: MONTHS[k % 12] }));
+  if (items.length === 0) return "";
+  const join = (parts: string[]) => (parts.length === 1 ? parts[0] : `${parts.slice(0, -1).join(", ")} and ${parts[parts.length - 1]}`);
+  if (items.every((i) => i.y === items[0].y)) return `${join(items.map((i) => i.m))} ${items[0].y}`;
+  return join(items.map((i) => `${i.m} ${i.y}`));
 }

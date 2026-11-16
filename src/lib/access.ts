@@ -1,39 +1,115 @@
-import { useAdminFlag } from "./admin-flag";
+import { useEffect, useMemo, useSyncExternalStore } from "react";
+import { setAdminFlag, useAdminFlag } from "./admin-flag";
+import { getAuth, onAuthChange, useAuth } from "./auth-client";
+import { accessFor, type Access, type Plan } from "./access-core";
 
-// Who may use what. Prepares for the paid plan (not built yet): pages gate features with can(feature).
-// The server is the real gate — use getAccess() from ./access-server in Route Handlers; useAccess() on the
-// client is for showing/hiding UI only (it trusts the localStorage admin flag, re-checked once per session).
+// Client side of access: the visitor's plan for showing/hiding UI. Shared types and planCan live in ./access-core.
+export * from "./access-core";
 
-export type Plan = "free" | "pro" | "admin";
+// --- client: the visitor's plan, fetched once per page load from /api/access (signed-in visitors only) ---
 
-/**
- * Planned gated features. Today every feature is free except "competition-retry" (admin only).
- * When the subscription lands, move features into PRO_FEATURES.
- */
-export type Feature = "unlimited-tests" | "all-lessons" | "competition-retry";
-
-const FREE_FEATURES: ReadonlySet<Feature> = new Set<Feature>(["unlimited-tests", "all-lessons"]);
-const PRO_FEATURES: ReadonlySet<Feature> = new Set<Feature>([...FREE_FEATURES]);
-
-/** Whether a plan includes a feature. Admin gets everything. */
-export function planCan(plan: Plan, feature: Feature): boolean {
-  if (plan === "admin") return true;
-  if (plan === "pro") return PRO_FEATURES.has(feature);
-  return FREE_FEATURES.has(feature);
-}
-
-export interface Access {
+interface Remote {
+  userId: string;
   plan: Plan;
-  isAdmin: boolean;
-  can: (feature: Feature) => boolean;
+  expiresAt: string | null;
+  /** The request failed (network / server error): `plan` is only a "free" placeholder, not a real answer. */
+  failed?: boolean;
 }
 
-export function accessFor(plan: Plan): Access {
-  return { plan, isAdmin: plan === "admin", can: (f) => planCan(plan, f) };
+let remote: Remote | null = null;
+let inflight: Promise<void> | null = null;
+/** The user id the inflight request was made for (it's only reused for that same user). */
+let inflightFor: string | null = null;
+/** Counts requests; only the newest one may store its answer. */
+let reqSeq = 0;
+/** The user id whose failed answer already got its one retry. */
+let retriedFor: string | null = null;
+let watching = false;
+const listeners = new Set<() => void>();
+
+function emit() {
+  listeners.forEach((l) => l());
 }
 
-/** Client hook (call from Client Components). Until the subscription exists, plan is "admin" or "free". */
+function fetchAccess(userId: string): Promise<void> {
+  const seq = ++reqSeq;
+  inflightFor = userId;
+  const request = (inflight = fetch("/api/access", { cache: "no-store" })
+    .then((r) => (r.ok ? (r.json() as Promise<{ plan?: Plan; expiresAt?: string | null }>) : null))
+    .catch(() => null)
+    .then((d) => {
+      // Signed out, switched account, or a newer request was started while this one ran: drop the answer.
+      if (getAuth().user?.id !== userId || seq !== reqSeq) return;
+      const plan: Plan = d?.plan === "plus" || d?.plan === "admin" ? d.plan : "free";
+      remote = { userId, plan, expiresAt: d?.expiresAt ?? null, ...(d ? {} : { failed: true }) };
+      emit();
+      if (d) {
+        retriedFor = null;
+      } else if (retriedFor !== userId) {
+        // Failed answer: try once more shortly.
+        retriedFor = userId;
+        setTimeout(() => {
+          if (getAuth().user?.id === userId && remote?.failed) void refreshAccess();
+        }, 5000);
+      }
+    })
+    .finally(() => {
+      // Only the newest request clears the slot (an older one finishing late must not).
+      if (inflight === request) inflight = null;
+    }));
+  return request;
+}
+
+/** Asks the server for the signed-in visitor's plan again (call after something may have changed it). Always starts a fresh request. */
+export function refreshAccess(): Promise<void> {
+  const userId = getAuth().user?.id;
+  if (!userId) {
+    if (remote) {
+      remote = null;
+      emit();
+    }
+    return Promise.resolve();
+  }
+  return fetchAccess(userId);
+}
+
+/** Fetch on first use and on every sign-in / sign-out. */
+function watch() {
+  if (watching || typeof window === "undefined") return;
+  watching = true;
+  let prevId: string | null = null;
+  onAuthChange((user) => {
+    // Signed out, or another account took over: the "this browser is an admin's" flag no longer applies.
+    if (prevId && user?.id !== prevId) setAdminFlag(false);
+    prevId = user?.id ?? null;
+    remote = null;
+    retriedFor = null;
+    emit();
+    if (user) void (inflight && inflightFor === user.id ? inflight : fetchAccess(user.id));
+  });
+}
+
+function subscribe(cb: () => void) {
+  listeners.add(cb);
+  return () => {
+    listeners.delete(cb);
+  };
+}
+
+/** Client hook (call from Client Components). `ready` is false until the plan is known. */
 export function useAccess(): Access {
   const admin = useAdminFlag();
-  return accessFor(admin ? "admin" : "free");
+  const auth = useAuth();
+  const known = useSyncExternalStore(subscribe, () => remote, () => null);
+  useEffect(watch, []);
+
+  const userId = auth.user?.id;
+  const mine = known && known.userId === userId ? known : null;
+  // The admin flag is only a fast path: once the server has answered (or we know nobody is signed in), that wins.
+  // A failed answer is no answer: the flag stays.
+  const isAdmin = admin && (userId ? !mine || mine.failed || mine.plan === "admin" : !auth.ready);
+  const plan: Plan = isAdmin ? "admin" : (mine?.plan ?? "free");
+  const expiresAt = isAdmin ? null : (mine?.expiresAt ?? null);
+  const ready = isAdmin || (auth.ready && (!userId || Boolean(mine)));
+  return useMemo(() => accessFor(plan, expiresAt, ready), [plan, expiresAt, ready]);
 }

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s · Stellar",
   },
   description:
-    "Digital SAT practice: thousands of real-format questions with explanations, full-length adaptive practice tests, and clear lessons for Math and Reading & Writing.",
+    "Digital SAT practice: thousands of real-format questions with explanations, full-length timed practice tests, and clear lessons for Math and Reading & Writing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

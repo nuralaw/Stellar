@@ -15,6 +15,7 @@ import { SECTIONS, type SectionId } from "@/lib/taxonomy";
 import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
 import { SyncNudge } from "@/components/SyncNudge";
 import { Avatar } from "@/components/Avatar";
+import { useAccess } from "@/lib/access";
 import { reviewQueue, type MistakeCard } from "@/lib/review";
 
 const SCORE_PRESETS = [1200, 1300, 1400, 1500];
@@ -43,9 +44,9 @@ const PLAN_KEY = "stellar:plan-skipped";
 type Stats = ReturnType<typeof computeStats>;
 const SET_SIZE = 10;
 
-/** The one set we'd suggest right now: due mistakes -> weakest skill -> weakest domain -> new questions in the chosen section. */
-function nextUp(stats: Stats, focus: SectionId | null, due: MistakeCard[]) {
-  if (due.length) {
+/** The one set we'd suggest right now: due mistakes (Plus only) -> weakest skill -> weakest domain -> new questions in the chosen section. */
+function nextUp(stats: Stats, focus: SectionId | null, due: MistakeCard[], canReview: boolean) {
+  if (canReview && due.length) {
     const math = due.filter((c) => c.section === "math").length;
     return {
       href: "/mistakes?review=1",
@@ -305,7 +306,9 @@ export function Dashboard() {
   const latest = history[history.length - 1];
   const change = history.length > 1 ? latest.total - history[0].total : null;
   const due = useMemo(() => (now ? reviewQueue(attempts, now).due : []), [attempts, now]);
-  const next = nextUp(stats, profile.focusSection, due);
+  const access = useAccess();
+  // Not "ready" yet counts as no: never flash a Plus-only link at a free user.
+  const next = nextUp(stats, profile.focusSection, due, access.ready && access.can("mistake-review"));
 
   // Brand-new student: open "Build your plan" right away (until saved or skipped).
   const firstRun = hydrated && !hasGoal && attempts.length === 0 && !readFlag(PLAN_KEY);
@@ -516,8 +519,8 @@ export function Dashboard() {
           <span className="block font-semibold">Statistics</span>
           <span className="mt-0.5 block text-[13px] text-muted">
             {hydrated && stats.overall.answered
-              ? `${stats.overall.answered.toLocaleString("en-US")} questions · ${stats.overall.accuracy}% correct · score trend, sections and topics`
-              : "Score trend, accuracy, sections and topics"}
+              ? `${stats.overall.answered.toLocaleString("en-US")} questions · ${stats.overall.accuracy}% correct · score trend and sections`
+              : "Score trend, accuracy and sections"}
           </span>
         </span>
         <span className="text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden="true">

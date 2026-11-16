@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { PlusBadge } from "@/components/PlusLock";
+import { useAccess } from "@/lib/access";
 import { computeStats } from "@/lib/stats";
 import { isFullTest, useAttempts, useHydrated, useNow, useProfile, useTestResults, type TestResult } from "@/lib/store";
 import type { SectionId } from "@/lib/taxonomy";
@@ -9,6 +11,7 @@ import { PAGE } from "@/lib/ui";
 import { AccuracyDonut } from "./AccuracyDonut";
 import { CountUp } from "./CountUp";
 import { SectionCard, TopicBreakdown } from "./Breakdown";
+import { PlusInsights, PlusInsightsPreview } from "./PlusInsights";
 import { Reveal } from "./Reveal";
 import { ScoreChart } from "./ScoreChart";
 import { Card, EmptyChart, Skeleton, enter, milestone } from "./parts";
@@ -48,6 +51,8 @@ export function Statistics() {
   const profile = useProfile();
   const attempts = useAttempts();
   const now = useNow();
+  const access = useAccess();
+  const plus = access.can("advanced-stats");
   const stats = computeStats(attempts, now);
   const tests = useTestResults();
   const history = useMemo(() => tests.filter(isFullTest).sort((a, b) => a.at - b.at), [tests]);
@@ -59,7 +64,7 @@ export function Statistics() {
   return (
     <section className={PAGE}>
       <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Statistics</h1>
-      <p className="mt-2 text-muted">How your practice is going: totals, score trend, and your strong and weak topics.</p>
+      <p className="mt-2 text-muted">How your practice is going: totals, score trend and accuracy by section. Plus adds your predicted score, weakest skills and a topic-by-topic breakdown.</p>
 
       {/* Totals */}
       <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-3">
@@ -155,8 +160,28 @@ export function Statistics() {
         )}
       </Reveal>
 
-      {/* By topic */}
-      <Reveal className="mt-6">{hydrated ? <TopicBreakdown stats={stats} /> : <Skeleton className="h-[40rem] rounded-2xl" />}</Reveal>
+      {/* Plus: predicted score, weak skills, topic breakdown */}
+      <h2 className="mt-8 flex items-center gap-2 font-semibold">
+        Plus insights <PlusBadge />
+      </h2>
+      {!hydrated || !access.ready ? (
+        <>
+          <div className="mt-3 grid gap-4 md:grid-cols-2">
+            <Skeleton className="h-64 rounded-2xl" />
+            <Skeleton className="h-64 rounded-2xl" />
+          </div>
+          <Skeleton className="mt-6 h-[40rem] rounded-2xl" />
+        </>
+      ) : plus ? (
+        <>
+          <PlusInsights stats={stats} history={history} target={profile.targetScore} />
+          <Reveal className="mt-6">
+            <TopicBreakdown stats={stats} />
+          </Reveal>
+        </>
+      ) : (
+        <PlusInsightsPreview stats={stats} history={history} />
+      )}
     </section>
   );
 }

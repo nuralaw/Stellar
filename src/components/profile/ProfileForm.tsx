@@ -7,6 +7,7 @@ import { AVATARS, resetAllData, updateProfile, useAttempts, useHydrated, useLess
 import { COUNTRY_ZONES } from "@/lib/tz-data";
 import { useAuth } from "@/lib/auth-client";
 import { AccountSection } from "./AccountSection";
+import { PlanSection } from "./PlanSection";
 import { countryList, countryName, countryOfZone, deviceZone, mainZone, utcOffsetLabel, zoneCity } from "@/lib/timezone";
 
 const selectCls =
@@ -237,6 +238,8 @@ function Editor() {
       </form>
 
       <AccountSection />
+
+      <PlanSection />
 
       <TestLocation />
 

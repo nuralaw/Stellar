@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { useAccess } from "@/lib/access";
 import { addAttempt, toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain } from "@/lib/taxonomy";
 import { SOURCES } from "@/lib/sources";
@@ -142,6 +143,7 @@ function Summary({
   onRestart: (ids: string[], title: string) => void;
   onExit: () => void;
 }) {
+  const access = useAccess();
   const answers = Object.values(session);
   const answered = answers.length;
   const correct = answers.filter((a) => a.correct).length;
@@ -199,13 +201,25 @@ function Summary({
             View progress
           </Link>
         </div>
-        {wrong.length > 0 && (
+        {wrong.length > 0 && access.ready && (
           <p className="mt-6 text-sm text-muted">
-            Your {wrong.length === 1 ? "mistake comes" : "mistakes come"} back tomorrow in{" "}
-            <Link href="/mistakes" className="font-semibold text-primary hover:underline">
-              Mistakes
-            </Link>{" "}
-            for a spaced review.
+            {access.can("mistake-review") ? (
+              <>
+                Your {wrong.length === 1 ? "mistake comes" : "mistakes come"} back tomorrow in{" "}
+                <Link href="/mistakes" className="font-semibold text-primary hover:underline">
+                  Mistakes
+                </Link>{" "}
+                for a spaced review.
+              </>
+            ) : (
+              <>
+                Your {wrong.length === 1 ? "mistake is" : "mistakes are"} saved in{" "}
+                <Link href="/mistakes" className="font-semibold text-primary hover:underline">
+                  Mistakes
+                </Link>
+                . Practice {wrong.length === 1 ? "it" : "them"} again any time.
+              </>
+            )}
           </p>
         )}
         <SyncNudge variant="inline" />

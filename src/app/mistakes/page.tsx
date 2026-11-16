@@ -5,7 +5,7 @@ import { PAGE } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "Mistakes",
-  description: "Your SAT mistakes notebook: questions you got wrong come back after 1, 3 and 7 days until you've mastered them.",
+  description: "Your SAT mistakes notebook: every question you got wrong, in one place. With Stellar Plus, each one comes back after 1, 3 and 7 days until it's mastered.",
 };
 
 export default function Page() {

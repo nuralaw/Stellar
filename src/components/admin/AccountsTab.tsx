@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { isLive, PlusRow, usePlusSubs } from "./PlusControls";
 import { type Bucket, ColumnChart, defaultCustomRange, periodOf, periodQuery, PeriodFilters, plural, type Preset, PRESETS, SeriesTable, StatTile } from "./charts";
 
 // /admin → Accounts: new accounts, sign-ins and active students over a chosen period (column chart),
@@ -152,35 +153,78 @@ export function AccountsTab() {
 
 function AccountList({ users, total }: { users: AccountRow[]; total: number }) {
   const [all, setAll] = useState(false);
-  const shown = all ? users : users.slice(0, 10);
+  const [plusOnly, setPlusOnly] = useState(false);
+  const plus = usePlusSubs();
+  const bySub = new Map((plus.subs ?? []).map((s) => [s.userId, s]));
+  const activePlus = (plus.subs ?? []).filter(isLive).length;
+  const expiredPlus = (plus.subs?.length ?? 0) - activePlus;
+
+  // "Plus only" also lists Plus students who fall outside the latest-accounts window.
+  const known = new Set(users.map((u) => u.id));
+  const extra: AccountRow[] = (plus.subs ?? [])
+    .filter((s) => !known.has(s.userId))
+    .map((s) => ({ id: s.userId, email: s.email, created_at: "", last_sign_in_at: null, provider: "", active_days_30: 0 }));
+  const rows = plusOnly ? [...users.filter((u) => bySub.has(u.id)), ...extra] : users;
+  const shown = all ? rows : rows.slice(0, 10);
+
   return (
     <section className="mt-4 rounded-2xl border border-line bg-surface p-4 sm:p-5">
-      <h2 className="font-semibold">Latest accounts</h2>
-      <p className="mt-0.5 text-sm text-muted">By last sign-in · {plural(total, ["account", "accounts"])} in total</p>
-      {!users.length ? (
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 className="font-semibold">Latest accounts</h2>
+          <p className="mt-0.5 text-sm text-muted">By last sign-in · {plural(total, ["account", "accounts"])} in total</p>
+          {plus.subs && (
+            <p className="mt-0.5 text-sm text-muted">
+              Stellar Plus: {activePlus} active{expiredPlus > 0 ? ` · ${expiredPlus} expired` : ""}
+            </p>
+          )}
+        </div>
+        {plus.subs && (
+          <button
+            type="button"
+            onClick={() => { setPlusOnly((p) => !p); setAll(false); }}
+            aria-pressed={plusOnly}
+            className={`inline-flex min-h-10 items-center rounded-xl border px-3.5 text-sm font-semibold ${plusOnly ? "border-primary bg-primary-soft" : "border-line hover:bg-surface-2"}`}
+          >
+            Plus only
+          </button>
+        )}
+      </div>
+      {plus.error && (
+        <p role="alert" className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-xl bg-danger-soft px-4 py-3 text-sm text-danger">
+          <span>{plus.error}</span>
+          <button type="button" onClick={plus.reload} className="font-semibold underline">
+            Retry
+          </button>
+        </p>
+      )}
+      {!rows.length ? (
         <div className="mt-4 flex flex-col items-center rounded-xl bg-surface-2 px-6 py-10 text-center">
           <Icon d={I.inbox} className="h-7 w-7 text-muted" />
-          <p className="mt-3 text-sm text-muted">No accounts yet. Students appear here after their first sign-in.</p>
+          <p className="mt-3 text-sm text-muted">{plusOnly ? "Nobody has Stellar Plus yet." : "No accounts yet. Students appear here after their first sign-in."}</p>
         </div>
       ) : (
         <ul className="mt-3 divide-y divide-line">
           {shown.map((u) => (
-            <li key={u.id} className="grid gap-x-4 gap-y-1 py-3 sm:grid-cols-[minmax(0,1fr)_auto_auto_auto] sm:items-center">
-              <span className="min-w-0 truncate font-medium" title={u.email ?? ""}>
-                {u.email ?? "(no email)"}
-              </span>
-              <span className="w-fit rounded-full bg-surface-2 px-2.5 py-0.5 text-[13px] capitalize text-muted">{u.provider}</span>
-              <span className="text-[13px] text-muted sm:w-36">Joined {shortDate(u.created_at)}</span>
-              <span className="text-[13px] text-muted sm:w-44 sm:text-right">
-                {ago(u.last_sign_in_at)} · {u.active_days_30} active {u.active_days_30 === 1 ? "day" : "days"}
-              </span>
+            <li key={u.id} className="py-3">
+              <div className="grid gap-x-4 gap-y-1 sm:grid-cols-[minmax(0,1fr)_auto_auto_auto] sm:items-center">
+                <span className="min-w-0 truncate font-medium" title={u.email ?? ""}>
+                  {u.email ?? "(no email)"}
+                </span>
+                <span className="w-fit rounded-full bg-surface-2 px-2.5 py-0.5 text-[13px] capitalize text-muted">{u.provider || "–"}</span>
+                <span className="text-[13px] text-muted sm:w-36">{u.created_at ? `Joined ${shortDate(u.created_at)}` : ""}</span>
+                <span className="text-[13px] text-muted sm:w-44 sm:text-right">
+                  {u.created_at ? `${ago(u.last_sign_in_at)} · ${u.active_days_30} active ${u.active_days_30 === 1 ? "day" : "days"}` : ""}
+                </span>
+              </div>
+              {plus.subs && <PlusRow userId={u.id} sub={bySub.get(u.id)} onChanged={plus.reload} />}
             </li>
           ))}
         </ul>
       )}
-      {users.length > 10 && (
+      {rows.length > 10 && (
         <button type="button" onClick={() => setAll((a) => !a)} className="mt-3 inline-flex min-h-10 items-center rounded-xl border border-line px-4 text-sm font-semibold hover:bg-surface-2">
-          {all ? "Show fewer" : `Show all ${users.length}`}
+          {all ? "Show fewer" : `Show all ${rows.length}`}
         </button>
       )}
     </section>

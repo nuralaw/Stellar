@@ -1,11 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ACCOUNT_NAV, MAIN_NAV } from "@/lib/nav";
+import { ACCOUNT_NAV, MAIN_NAV, PLUS_NAV } from "@/lib/nav";
 import { SupportButton } from "./SupportButton";
 
 /** The start page of every sidebar section (Home, Lessons, Vocabulary, …, Profile). */
-const START_PAGES = new Set([...MAIN_NAV, ...ACCOUNT_NAV].map((i) => i.href));
+const START_PAGES = new Set([...MAIN_NAV, ...ACCOUNT_NAV, PLUS_NAV].map((i) => i.href));
 
 /**
  * The Support button on every start page. Hidden on inner pages (a lesson, a word set, a test) and while solving

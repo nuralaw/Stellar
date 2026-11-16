@@ -40,6 +40,10 @@
   --primary-soft: #fff1e6;
   --accent: #f97316;
   --accent-soft: #ffedd5;
+  /* Stellar Plus: AA-safe orange for text and button fills (white text 5.18:1) and the charcoal Plus surface. */
+  --primary-strong: #c2410c;
+  --primary-strong-hover: #9a3412;
+  --plus-surface: #1e1e21;
   /* semantic */
   --success: #15803d;
   --success-soft: #dcfce7;
@@ -71,6 +75,9 @@
   --primary-soft: #2e1d10;
   --accent: #fb923c;
   --accent-soft: #33210f;
+  --primary-strong: #fb923c;
+  --primary-strong-hover: #fdba74;
+  --plus-surface: #18181a; /* lifted above --bg #111112; the ring-white/10 edge does the rest */
 
   --success: #4ade80;
   --success-soft: #0f2a1a;
@@ -99,6 +106,8 @@
   --color-primary-soft: var(--primary-soft);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-strong-hover: var(--primary-strong-hover);
   --color-success: var(--success);
   --color-success-soft: var(--success-soft);
   --color-danger: var(--danger);
@@ -116,6 +125,17 @@ body {
 
 ::selection {
   background: var(--accent-soft);
+}
+
+/* Stellar Plus surface (components/plus, PlusLock panel): charcoal block with a warm corner glow.
+   Text on it: text-side-ink (headings), text-side-ink/80 (body, ≥7.5:1 even over the glow). Never text-side-muted or
+   text-muted. Orange text only ≥24px bold. Pair with ring-1 ring-white/10 (its edge in dark mode). No animation. */
+@utility plus-surface {
+  background-color: var(--plus-surface);
+  background-image:
+    radial-gradient(70% 90% at 100% 0%, rgb(249 115 22 / 0.22), transparent 65%),
+    radial-gradient(60% 70% at 0% 100%, rgb(251 146 60 / 0.08), transparent 70%);
+  color: var(--side-ink);
 }
 
 /* Theme switch uses a View Transition; disable the default cross-fade so the circular reveal shows. */
