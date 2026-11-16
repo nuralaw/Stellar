@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/questions": ["./content/bank/dist/**"],
     "/api/bank/index": ["./content/bank/dist/**"],
+    "/lessons/*": ["./content/lessons/**", "./content/bank/dist/**"],
+    "/test/*": ["./content/tests/dist/**"],
   },
   partialPrefetching: true,
   async rewrites() {
