@@ -2,6 +2,7 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { estimateMinutes, parseLesson, type Part, type Step } from "./lesson-format";
+import { orderLessons } from "./lesson-order";
 import { getQuestionsByIds } from "./bank";
 import type { Question } from "./types";
 
@@ -58,10 +59,18 @@ function load(file: string, section: LessonSection): Lesson | null {
   };
 }
 
-/** Short hash of the step titles and block kinds (changes when the lesson is restructured). */
+/**
+ * Short hash of the step titles and what each step shows (changes when the lesson is restructured). A step with a
+ * visual and a block counts as "<block>+visual"; a ```more block doesn't change it (it adds no screen).
+ */
 function signature(steps: Step[]): string {
+  const kind = (s: Step) => {
+    const b = s.block;
+    const t = b ? (b.t === "quiz" && b.answers.length ? "quiz:typed" : b.t) : "";
+    return s.visual ? (t ? `${t}+visual` : "visual") : t;
+  };
   let h = 5381;
-  for (const ch of steps.map((s) => `${s.title}:${s.block?.t ?? ""}`).join("|")) h = ((h << 5) + h + ch.charCodeAt(0)) | 0;
+  for (const ch of steps.map((s) => `${s.title}:${kind(s)}`).join("|")) h = ((h << 5) + h + ch.charCodeAt(0)) | 0;
   return (h >>> 0).toString(36);
 }
 
@@ -98,9 +107,21 @@ export function getLesson(slug: string): Lesson | null {
   return all().find((l) => l.slug === slug) ?? null;
 }
 
+/**
+ * The lesson after this one, in the order the /lessons page shows (lib/lesson-order.ts): the same section only,
+ * except that the last "Start here" lesson leads on to the first Reading and Writing one.
+ */
+export function getNextLesson(slug: string): { slug: string; title: string } | null {
+  const ordered = orderLessons(getLessons());
+  const i = ordered.findIndex((x) => x.slug === slug);
+  const here = ordered[i];
+  const after = ordered[i + 1];
+  return here && after && (after.section === here.section || here.section === "strategy") ? { slug: after.slug, title: after.title } : null;
+}
+
 /** Ids of the step visuals (```visual blocks) a lesson uses. */
 export function lessonStepVisuals(l: Lesson): string[] {
-  return l.steps.flatMap((s) => (s.block?.t === "visual" ? [s.block.id] : []));
+  return l.steps.flatMap((s) => (s.visual ? [s.visual] : []));
 }
 
 /** The bank questions a lesson's check steps use, by id. */

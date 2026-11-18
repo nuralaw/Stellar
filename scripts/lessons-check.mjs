@@ -12,7 +12,13 @@ const dir = path.join(root, "content/lessons");
 const visDir = path.join(root, "src/components/lessons/visuals");
 const bank = new Map(JSON.parse(fs.readFileSync(path.join(root, "content/bank/dist/questions.json"), "utf8")).map((q) => [q.id, q]));
 const SECTIONS = ["rw", "math", "strategy"];
-const TEACH = ["example", "desmos", "visual"];
+const TEACH = ["example", "desmos"];
+// A step teaches when it has a visual or an example/desmos block.
+const teaches = (s) => Boolean(s.visual) || TEACH.includes(s.block?.t ?? "");
+const MAX_STEP_WORDS = 25; // teaching text of one step
+const MAX_PART_WORDS = 70; // teaching text of one part (the ```more text is not counted)
+const MAX_MORE_WORDS = 80;
+const MAX_LESSON_WORDS = 490; // 7 teaching parts × 70
 
 const files = [];
 for (const sec of SECTIONS) {
@@ -69,15 +75,18 @@ for (const file of targets) {
   const teaching = parts.filter((p) => p.title !== "Real SAT questions");
   if (parts.length === 1 && parts[0].start === 0 && !/^#\s/m.test(fs.readFileSync(file, "utf8"))) errors.push('no "# " parts: split the lesson into parts (subtopics)');
   if (isSkill) {
-    if (teaching.length < 3 || teaching.length > 5) errors.push(`${teaching.length} teaching parts (need 3–5)`);
+    if (teaching.length < 3 || teaching.length > 7) errors.push(`${teaching.length} teaching parts (need 3–7)`);
     if (practice.length !== 1 || parts.at(-1)?.title !== "Real SAT questions") errors.push('the last part must be "# Real SAT questions"');
-  } else if (parts.length < 3 || parts.length > 6) errors.push(`${parts.length} parts (need 3–6)`);
+  } else if (parts.length < 3 || parts.length > 7) errors.push(`${parts.length} parts (need 3–7)`);
   if (!teaching.some((p) => /^Trap:/.test(p.title)) && !visualOnly) warns.push('no "# Trap: …" part');
 
   let total = 0;
   let quizzes = 0;
   let desmosFixes = 0;
+  let typedQuizzes = 0;
   const checks = [];
+  // The last quiz before "# Real SAT questions" should read like the real thing (SAT wording and length).
+  const lastQuiz = steps.findLast((s) => s.block?.t === "quiz" && !practice.some((p) => steps.indexOf(s) >= p.start && steps.indexOf(s) < p.end));
   for (const p of parts) {
     const ps = steps.slice(p.start, p.end);
     const where = `part "${p.title}"`;
@@ -92,24 +101,28 @@ for (const file of targets) {
     }
     if (ps.length < 1 || ps.length > 3) errors.push(`${where}: ${ps.length} steps (2–3)`);
     else if (ps.length < 2 && !visualOnly) warns.push(`${where}: only 1 step (add a quiz)`);
-    if (ps[0] && !TEACH.includes(ps[0].block?.t ?? "")) errors.push(`${where}: its first step must teach with an example, desmos or visual block`);
-    const teach = ps.filter((s) => TEACH.includes(s.block?.t ?? "")).length;
+    if (ps[0] && !teaches(ps[0])) errors.push(`${where}: its first step must teach with an example, desmos or visual block`);
+    const teach = ps.filter(teaches).length;
     if (teach > 1 && !visualOnly) warns.push(`${where}: ${teach} teaching blocks (one example per part)`);
     let words = 0;
     for (const s of ps) {
       const sw = `step "${s.title}"`;
       const w = countWords(s.body);
       words += w;
-      if (w > 40) errors.push(`${sw}: ${w} words of text (max 25)`);
-      else if (w > 25) warns.push(`${sw}: ${w} words of text (max 25)`);
+      if (w > MAX_STEP_WORDS) errors.push(`${sw}: ${w} words of text (max ${MAX_STEP_WORDS}; put the rest in a \`\`\`more block)`);
       if (visualOnly && w > 0) warns.push(`${sw}: visual-only lesson, but the step has text`);
       if (s.title.split(/\s+/).length > 5) warns.push(`${sw}: title longer than 5 words`);
       if (s.body.includes("```")) errors.push(`${sw}: a code fence that isn't a block`);
       const b = s.block;
       const passage = section === "rw" ? 30 : 0;
+      if (s.more) {
+        const mw = countWords(s.more);
+        if (mw > MAX_MORE_WORDS) errors.push(`${sw}: the more block is ${mw} words (max ${MAX_MORE_WORDS})`);
+        if (visualOnly) warns.push(`${sw}: visual-only lesson, but the step has a more block`);
+      }
       if (b?.t === "example") {
         words += b.lines.reduce((n, x) => n + countWords(x.note ?? ""), 0);
-        const pw = countWords(b.prompt);
+        const pw = countWords(b.prompt) + b.choices.reduce((n, c) => n + countWords(c), 0);
         if (pw > 60 + passage) errors.push(`${sw}: example problem is ${pw} words (max ${40 + passage})`);
         else if (pw > 40 + passage) warns.push(`${sw}: example problem is ${pw} words (max ${40 + passage})`);
         b.lines.forEach((x, k) => {
@@ -123,19 +136,36 @@ for (const file of targets) {
         for (const mv of b.moves) if (countWords(mv.caption ?? "") > 14) warns.push(`${sw}: desmos caption "${(mv.caption ?? "").slice(0, 30)}" is long (max 12 words)`);
         if (section !== "math" && slug !== "desmos") warns.push(`${sw}: desmos block outside math`);
       }
-      if (b?.t === "visual") {
-        if (!fs.existsSync(path.join(visDir, `${b.id}.tsx`))) errors.push(`${sw}: visual "${b.id}" has no file src/components/lessons/visuals/${b.id}.tsx`);
-        if (!b.id.startsWith(`${slug}--`)) errors.push(`${sw}: visual id must start with "${slug}--"`);
+      if (s.visual !== null) {
+        if (!fs.existsSync(path.join(visDir, `${s.visual}.tsx`))) errors.push(`${sw}: visual "${s.visual}" has no file src/components/lessons/visuals/${s.visual}.tsx`);
+        if (!s.visual.startsWith(`${slug}--`)) errors.push(`${sw}: visual id must start with "${slug}--"`);
       }
       if (b?.t === "quiz") {
         quizzes++;
+        const typed = b.answers.length > 0;
+        if (typed) typedQuizzes++;
         const qw = countWords(b.prompt);
-        if (qw > 65 + passage) errors.push(`${sw}: quiz question is ${qw} words (max ${40 + passage})`);
+        if (s === lastQuiz && isSkill) {
+          // the last quiz is the bridge to the real questions: SAT wording and length
+          const [lo, hi] = section === "math" ? [25, 100] : [45, 180];
+          if (qw > hi) errors.push(`${sw}: the last quiz is ${qw} words (max ${hi}; real SAT length)`);
+          else if (qw < lo) warns.push(`${sw}: the last quiz before the real questions is ${qw} words; make it SAT wording and length (${lo}+ words)`);
+        } else if (qw > 65 + passage) errors.push(`${sw}: quiz question is ${qw} words (max ${40 + passage})`);
         else if (qw > 40 + passage) warns.push(`${sw}: quiz question is ${qw} words (max ${40 + passage})`);
         if (!b.explain.length) warns.push(`${sw}: quiz has no > explanation`);
         const ew = countWords(b.explain.join(" "));
         if (ew > 45) errors.push(`${sw}: quiz explanation is ${ew} words (max 25)`);
         else if (ew > 25) warns.push(`${sw}: quiz explanation is ${ew} words (max 25)`);
+        if (typed) {
+          if (section !== "math") warns.push(`${sw}: typed-answer quizzes are for math (R&W questions are multiple choice)`);
+          if (/[A-Za-z]{2,}/.test(b.answers.join(" "))) errors.push(`${sw}: accepted answers must be numbers`);
+          for (const w of b.wrong) {
+            if (!w.feedback) warns.push(`${sw}: wrong value "${w.value}" has no :: feedback`);
+            const fw = countWords(w.feedback ?? "");
+            if (fw > 20) errors.push(`${sw}: feedback for "${w.value}" is ${fw} words (max 12)`);
+            else if (fw > 12) warns.push(`${sw}: feedback for "${w.value}" is ${fw} words (max 12)`);
+          }
+        }
         for (const o of b.options) {
           if (!o.correct && !o.feedback) warns.push(`${sw}: wrong option "${o.text.slice(0, 30)}" has no :: feedback`);
           const fw = countWords(o.feedback ?? "");
@@ -153,8 +183,7 @@ for (const file of targets) {
       if (b?.t === "check") errors.push(`${sw}: check blocks belong in the "Real SAT questions" part`);
     }
     total += words;
-    if (words > 80) errors.push(`${where}: ${words} words of teaching text (max 60)`);
-    else if (words > 60) warns.push(`${where}: ${words} words of teaching text (max 60)`);
+    if (words > MAX_PART_WORDS) errors.push(`${where}: ${words} words of teaching text (max ${MAX_PART_WORDS}; the more blocks are not counted)`);
   }
   for (const s of steps) {
     if (s.block?.t !== "check") continue;
@@ -171,13 +200,17 @@ for (const file of targets) {
       const d = s.title.split(": ")[1];
       if (d && q.difficulty !== d) warns.push(`${sw}: ${q.id} is ${q.difficulty}`);
     }
-    if (countWords(s.body) > 12) warns.push(`${sw}: ${countWords(s.body)} words before a check (max 12)`);
+    // The first "Your turn" line may be a notation reminder ("△JKL means triangle JKL."); every one is ≤ 12 words.
+    if (countWords(s.body) > 12) errors.push(`${sw}: ${countWords(s.body)} words before a check (max 12)`);
+    if (s.more) errors.push(`${sw}: a check step has no more block`);
+    if (s.visual) errors.push(`${sw}: a check step has no visual`);
   }
-  if (total > 300) errors.push(`${total} words of teaching text (max 240)`);
-  else if (total > 240) warns.push(`${total} words of teaching text (max 240)`);
+  if (total > MAX_LESSON_WORDS) errors.push(`${total} words of teaching text (max ${MAX_LESSON_WORDS})`);
+  else if (total > MAX_LESSON_WORDS - 50) warns.push(`${total} words of teaching text (max ${MAX_LESSON_WORDS})`);
+  if (section === "math" && typedQuizzes < 1) warns.push("no typed-answer quiz (an \"answer:\" quiz): math lessons need at least one, like the SAT's student-produced response");
   if (section === "math" && desmosFixes < 2) warns.push(`only ${desmosFixes} quizzes with a Desmos way (~ lines); add them where Desmos is faster`);
   if (slug === "desmos" && steps.some((s) => s.block?.t === "quiz" && !s.block.desmos.length)) warns.push("every Desmos-lesson quiz should have ~ moves");
-  if (visualOnly && steps.some((s, i) => s.block?.t !== "visual" && s.block?.t !== "quiz" && i >= 0)) warns.push("visual-only: every teaching step should be a visual block");
+  if (visualOnly && steps.some((s) => !s.visual && s.block?.t !== "quiz")) warns.push("visual-only: every teaching step should be a visual block");
 
   const mins = estimateMinutes(steps, section);
   console.log(`${errors.length ? "✗" : "✓"} ${rel} · ${parts.length} parts · ${steps.length} steps · ${quizzes} quizzes (${desmosFixes} with Desmos) · ${checks.length} checks · ${total} words · ~${mins} min`);

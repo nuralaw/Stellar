@@ -5,7 +5,7 @@ import { LessonCoverSkeleton, LessonLocked } from "@/components/lessons/LessonLo
 import { LessonPlayer } from "@/components/lessons/LessonPlayer";
 import { lessonVisual } from "@/components/lessons/lessonVisual";
 import { getAccess } from "@/lib/access-server";
-import { getLesson, getLessons, lessonQuestions, lessonStepVisuals } from "@/lib/lessons";
+import { getLesson, getLessons, getNextLesson, lessonQuestions, lessonStepVisuals } from "@/lib/lessons";
 import { PLUS } from "@/lib/plus-config";
 import { lessonBlocks } from "@/lib/plus-facts";
 import { SECTIONS, getDomain, getSkill, type SectionId } from "@/lib/taxonomy";
@@ -51,11 +51,7 @@ async function Lesson({ params }: { params: PageProps<"/lessons/[slug]">["params
     );
   }
 
-  // Next lesson: the following one in the same section (strategy → first R&W lesson).
-  const all = getLessons();
-  const i = all.findIndex((x) => x.slug === l.slug);
-  const after = all[i + 1];
-  const next = after && (after.section === l.section || l.section === "strategy") ? { slug: after.slug, title: after.title } : null;
+  const next = getNextLesson(l.slug);
   const strategy = l.section === "strategy";
 
   return (

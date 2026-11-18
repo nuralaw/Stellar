@@ -19,11 +19,50 @@ export function Lines({ text }: { text: string }) {
   );
 }
 
+const LETTERS = ["A", "B", "C", "D"];
+const PUNCT = /([,;:.!?—–])/;
+
+/** Short choices (words and punctuation, like "stopped;") are set in monospace with the marks picked out. */
+const shortChoices = (choices: string[]) => choices.every((c) => c.length <= 28 && c.split(/\s+/).length <= 3 && !/[*`[]/.test(c));
+
+/**
+ * An example's answer choices as lettered chips in a row that wraps. Choices that are a word or two plus punctuation
+ * ("stopped," "stopped;") are shown in monospace with the punctuation mark highlighted, so the difference is obvious.
+ */
+export function ChoiceChips({ choices }: { choices: string[] }) {
+  const mono = shortChoices(choices);
+  return (
+    <ul className="mt-3 flex flex-wrap gap-2" aria-label="Answer choices">
+      {choices.map((c, i) => (
+        <li key={i} className="flex min-w-0 max-w-full items-center gap-2 rounded-xl border border-line bg-surface px-2 py-1.5 pr-3">
+          <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-surface-2 text-xs font-bold text-muted" aria-hidden="true">
+            {LETTERS[i]}
+          </span>
+          <span className={`min-w-0 text-[15px] leading-snug font-semibold text-ink ${mono ? "font-mono" : ""}`}>
+            <span className="sr-only">{LETTERS[i]}: </span>
+            {mono
+              ? c.split(PUNCT).map((part, j) =>
+                  PUNCT.test(part) ? (
+                    <span key={j} className="mx-px rounded bg-primary-soft px-0.5 text-[1.1em] font-bold text-primary">
+                      {part}
+                    </span>
+                  ) : (
+                    <Fragment key={j}>{part}</Fragment>
+                  ),
+                )
+              : inline(c)}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 /**
  * The lesson's one worked example. Lines appear one at a time (the player's bottom bar reveals the next one);
  * the last line is the answer. Hidden lines show as faint placeholders so the student sees how far it goes.
  */
-export function Example({ prompt, lines, shown }: { prompt: string; lines: ExampleLine[]; shown: number }) {
+export function Example({ prompt, choices, lines, shown }: { prompt: string; choices: string[]; lines: ExampleLine[]; shown: number }) {
   // Keep a newly opened line in view (long examples on a phone), but don't scroll on first render.
   const latest = useRef<HTMLLIElement>(null);
   const before = useRef(shown);
@@ -39,6 +78,7 @@ export function Example({ prompt, lines, shown }: { prompt: string; lines: Examp
         <div className="mt-1.5 text-[17px] leading-relaxed font-semibold text-ink">
           <Lines text={prompt} />
         </div>
+        {choices.length > 0 && <ChoiceChips choices={choices} />}
       </div>
       <ol className="relative px-4 py-4 sm:px-6 sm:py-5">
         {lines.map((l, i) => {

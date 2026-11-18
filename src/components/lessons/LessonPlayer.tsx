@@ -6,14 +6,15 @@ import { CalculatorDock } from "@/components/CalculatorDock";
 import { DifficultyBadge, QuestionCard } from "@/components/bank/QuestionCard";
 import { I, Icon } from "@/components/bank/icons";
 import { useFocusMode } from "@/lib/focus";
-import type { Part, Step } from "@/lib/lesson-format";
+import { gradeTyped, type Part, type Step } from "@/lib/lesson-format";
 import { addAttempt, saveLessonProgress, useHydrated, useLessonProgress, type LessonProgress } from "@/lib/store";
 import type { Question } from "@/lib/types";
 import { estMinutes } from "@/lib/ui";
 import { DesmosDemo } from "./DesmosDemo";
 import { Example } from "./Example";
 import { Markdown } from "./Markdown";
-import { Quiz } from "./Quiz";
+import { More } from "./More";
+import { Quiz, type QuizNote } from "./Quiz";
 import { Stage } from "./visuals/Stage";
 
 const btnPrimary =
@@ -61,6 +62,12 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
   const resume = same && saved && !saved.done ? Math.min(saved.step, n) : 0;
   const pos = moved ?? (hydrated ? resume : 0);
   const [sel, setSel] = useState<number | null>(null);
+  // Quiz retry: a first wrong answer lets the student try once more; the second one ends the quiz (see checkQuiz).
+  const [missed, setMissed] = useState<number[]>([]);
+  const [text, setText] = useState("");
+  const [note, setNote] = useState<QuizNote | null>(null);
+  // A typed entry the SAT does not take: shown under the retry note (if any), so "Try once more" stays visible.
+  const [hint, setHint] = useState<string | null>(null);
   const [shown, setShown] = useState(0);
   const [calcOpen, setCalcOpen] = useState(false);
   const [calcUsed, setCalcUsed] = useState(false);
@@ -76,7 +83,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
   const pick = picks[pos];
   // "Your turn: hard" → "Your turn"; the question's real difficulty shows as a badge.
   const title = step && block?.t === "check" ? step.title.replace(/^Your turn:.*$/, "Your turn") : (step?.title ?? "");
-  const quizPicked = block?.t === "quiz" && pick ? Number(pick.r) : null;
+  const typedQuiz = block?.t === "quiz" && block.answers.length > 0;
   const hasMath = lesson.section === "math" || slug === "desmos";
   const showCalc = hasMath && calcOpen;
   const wide = Boolean(question && ((question.passage && question.section === "rw") || question.table || question.figure));
@@ -91,10 +98,18 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
     saveLessonProgress(slug, { ...base, ...patch, steps: n, sig: lesson.sig, at: Date.now() });
   };
 
+  const resetQuiz = () => {
+    setSel(null);
+    setMissed([]);
+    setText("");
+    setNote(null);
+    setHint(null);
+  };
+
   const go = (i: number) => {
     const to = Math.max(0, Math.min(n, i));
     setMoved(to);
-    setSel(null);
+    resetQuiz();
     setShown(1);
     // Moving forward off the last step of a part finishes that part.
     const leaving = part && to === pos + 1 && pos === part.end ? { parts: { ...doneParts, [k]: doneParts[k] ?? Date.now() } } : {};
@@ -106,14 +121,34 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
   const back = () => go(pos - 1);
   const restart = () => {
     setMoved(0);
-    setSel(null);
+    resetQuiz();
     save({ step: 0, picks: {} });
     window.scrollTo({ top: 0 });
   };
 
+  // Right: done. First wrong: say so (with that choice's feedback) and let the student try again. Second wrong: the
+  // answer and the explanation. A typed entry that isn't a number (or is a mixed number) gets a hint and isn't a try.
   const checkQuiz = () => {
-    if (block?.t !== "quiz" || sel === null || pick) return;
-    save({ picks: { ...picks, [pos]: { r: String(sel), ok: Boolean(block.options[sel]?.correct) } } });
+    if (block?.t !== "quiz" || pick) return;
+    const final = (r: string, ok: boolean) => save({ picks: { ...picks, [pos]: { r, ok } } });
+    if (block.answers.length) {
+      const entry = text.trim();
+      if (!entry) return;
+      const g = gradeTyped(block, entry);
+      if (g.kind === "invalid") return setHint(g.hint);
+      setHint(null);
+      if (g.kind === "right" || missed.length) return final(entry, g.kind === "right");
+      setMissed([0]);
+      setNote({ kind: "retry", text: g.feedback });
+      setText("");
+      return;
+    }
+    if (sel === null) return;
+    const ok = Boolean(block.options[sel]?.correct);
+    if (ok || missed.length) return final(String(sel), ok);
+    setMissed([sel]);
+    setNote({ kind: "retry", text: block.options[sel]?.feedback });
+    setSel(null);
   };
   const answerCheck = (ok: boolean, response: string) => {
     if (!question) return;
@@ -147,7 +182,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
       if (block?.t === "quiz" && !pick) {
         const key = e.key.toUpperCase();
         const i = "ABCD".indexOf(key) >= 0 ? "ABCD".indexOf(key) : "1234".indexOf(key);
-        if (i >= 0 && i < block.options.length) setSel(i);
+        if (i >= 0 && i < block.options.length && !missed.includes(i)) setSel(i);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -244,7 +279,22 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
                 </div>
               )}
 
-              {block?.t === "example" && <Example prompt={block.prompt} lines={block.lines} shown={revealed} />}
+              {/* The step's animation comes first; next to an example or a Desmos walkthrough it is a little smaller. */}
+              {step.visual && (
+                <div
+                  className={`lesson-cover mt-6 overflow-hidden rounded-3xl bg-surface shadow-[0_1px_0_var(--color-line),0_12px_40px_-12px_rgb(0_0_0/0.18)] ring-1 ring-line ${
+                    block ? "mx-auto max-w-xl" : ""
+                  }`}
+                >
+                  {stepVisuals[step.visual] ? (
+                    <Stage className="aspect-[16/9] w-full p-[3%]">{stepVisuals[step.visual]}</Stage>
+                  ) : (
+                    <p className="p-6 text-sm text-muted">Animation not found: {step.visual}</p>
+                  )}
+                </div>
+              )}
+
+              {block?.t === "example" && <Example prompt={block.prompt} choices={block.choices} lines={block.lines} shown={revealed} />}
 
               {block?.t === "desmos" && (
                 <div className="mt-6">
@@ -252,25 +302,26 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
                 </div>
               )}
 
-              {block?.t === "visual" && (
-                <div className="lesson-cover mt-6 overflow-hidden rounded-3xl bg-surface shadow-[0_1px_0_var(--color-line),0_12px_40px_-12px_rgb(0_0_0/0.18)] ring-1 ring-line">
-                  {stepVisuals[block.id] ? (
-                    <Stage className="aspect-[16/9] w-full p-[3%]">{stepVisuals[block.id]}</Stage>
-                  ) : (
-                    <p className="p-6 text-sm text-muted">Animation not found: {block.id}</p>
-                  )}
-                </div>
-              )}
-
               {block?.t === "quiz" && (
                 <Quiz
                   prompt={block.prompt}
                   options={block.options}
+                  answers={block.answers}
+                  wrong={block.wrong}
                   explain={block.explain}
                   desmos={block.desmos}
                   selected={sel}
-                  picked={quizPicked}
-                  onSelect={(i) => !pick && setSel(i)}
+                  missed={missed}
+                  result={pick ?? null}
+                  note={note}
+                  hint={hint}
+                  value={text}
+                  onSelect={(i) => !pick && !missed.includes(i) && setSel(i)}
+                  onValue={(v) => {
+                    setText(v);
+                    setHint(null);
+                  }}
+                  onSubmit={checkQuiz}
                 />
               )}
 
@@ -301,6 +352,8 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
                 </div>
               )}
 
+              {step.more && <More source={step.more} />}
+
               {/* Bottom bar, pinned to the bottom of the screen (check steps use the question's own bar). */}
               <div className="h-8 shrink-0" aria-hidden="true" />
               {!(block?.t === "check" && question) && (
@@ -315,7 +368,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
                       <button type="button" onClick={next} className={btnGhost}>
                         Skip
                       </button>
-                      <button type="button" onClick={checkQuiz} disabled={sel === null} className={`${btnPrimary} min-w-36`}>
+                      <button type="button" onClick={checkQuiz} disabled={typedQuiz ? !text.trim() : sel === null} className={`${btnPrimary} min-w-36`}>
                         Check
                       </button>
                     </>

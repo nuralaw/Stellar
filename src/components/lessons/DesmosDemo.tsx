@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import type { DesmosMove } from "@/lib/lesson-format";
 import { loadDesmos, type DesmosCalculator } from "@/lib/desmos";
+import { desmosLatex, keystrokes } from "@/lib/desmos-keys";
 import { Lines } from "./Example";
 import { inline } from "./Markdown";
 
@@ -11,31 +12,17 @@ import { inline } from "./Markdown";
 const COLORS = ["#2d70b3", "#c74440", "#388c46", "#6042a6"];
 const ANSWER = "#ea580c";
 
-/** What the student would type for a Desmos LaTeX expression (shown as keystrokes). */
-export function keystrokes(latex: string): string {
-  let s = latex;
-  for (let k = 0; k < 4; k++) s = s.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, "$1/$2").replace(/\\sqrt\{([^{}]*)\}/g, "sqrt($1)");
-  return s
-    .replace(/\\left|\\right/g, "")
-    .replace(/\\le(q)?\b/g, "<=")
-    .replace(/\\ge(q)?\b/g, ">=")
-    .replace(/\\cdot|\\times/g, "*")
-    .replace(/\\sim/g, "~")
-    .replace(/\\pi/g, "pi")
-    .replace(/\\theta/g, "theta")
-    .replace(/\\(sin|cos|tan|ln|log)/g, "$1")
-    .replace(/\^\{([^{}]*)\}/g, "^$1")
-    .replace(/_\{([^{}]*)\}/g, "_$1")
-    .replace(/\\/g, "")
-    .replace(/\s+/g, "");
-}
-
 const fmt = (n: number) => String(Math.round(n * 1000) / 1000).replace("-", "−");
 
-/** Shows at least the window asked for, with equal units on both axes (circles stay round, right angles right). */
+/**
+ * Shows the window a zoom move asks for, exactly: Desmos allows different x and y scales, and a tall window such as
+ * x from −3 to 30, y from −100 to 900 is only readable that way. A window that is already close to square keeps
+ * equal units (circles stay round, right angles right), widened to fill the graph so nothing asked for is cut.
+ */
 function fit(c: DesmosCalculator, xmin: number, xmax: number, ymin: number, ymax: number) {
   const px = c.graphpaperBounds?.pixelCoordinates;
-  if (!px?.width || !px?.height) return c.setMathBounds({ left: xmin, right: xmax, bottom: ymin, top: ymax });
+  const shape = (xmax - xmin) / (ymax - ymin);
+  if (!px?.width || !px?.height || shape < 0.5 || shape > 2) return c.setMathBounds({ left: xmin, right: xmax, bottom: ymin, top: ymax });
   const unit = Math.max((xmax - xmin) / px.width, (ymax - ymin) / px.height);
   const cx = (xmin + xmax) / 2;
   const cy = (ymin + ymax) / 2;
@@ -55,7 +42,7 @@ function describe(m: DesmosMove): string {
     case "zoom":
       return "Zoom to fit";
     case "table":
-      return `Add a table: ${m.cols.map((c) => c.name).join(", ")}`;
+      return `Add a table: ${m.cols.map((c) => keystrokes(c.name)).join(", ")}`;
     default:
       return "";
   }
@@ -143,7 +130,7 @@ export function DesmosDemo({ moves, prompt, label = "In Desmos", reveal = false 
             await sleep(55);
           }
         setKeys(typed);
-        c.setExpression({ id: `m${i}`, latex: m.latex, color: COLORS[color++ % COLORS.length] });
+        c.setExpression({ id: `m${i}`, latex: desmosLatex(m.latex), color: COLORS[color++ % COLORS.length] });
         setTimeout(() => {
           const a = calc.current?.expressionAnalysis?.[`m${i}`];
           if (a?.isError) console.warn(`[desmos-demo] "${m.latex}": ${a.errorMessage ?? "error"}`);
@@ -179,7 +166,7 @@ export function DesmosDemo({ moves, prompt, label = "In Desmos", reveal = false 
         c.setExpression({
           id: `m${i}`,
           type: "table",
-          columns: m.cols.map((col, j) => ({ latex: col.name, values: col.values.map(String), ...(j ? { color: COLORS[color++ % COLORS.length] } : {}) })),
+          columns: m.cols.map((col, j) => ({ latex: desmosLatex(col.name), values: col.values.map(String), ...(j ? { color: COLORS[color++ % COLORS.length] } : {}) })),
         });
       }
       await sleep(calm ? 600 : m.a === "say" ? 1600 : 1500 + Math.min(1200, (m.caption?.length ?? 0) * 18));
@@ -210,6 +197,7 @@ export function DesmosDemo({ moves, prompt, label = "In Desmos", reveal = false 
                 {!done && move?.a === "type" && <span className="ml-px inline-block h-3.5 w-px translate-y-0.5 animate-pulse bg-ink" />}
               </code>
             )}
+            {keys.includes("→") && <span className="text-xs text-muted">→ = press the right arrow key</span>}
             {move?.caption && (
               <p key={at} className="lesson-in text-[15px] leading-snug text-ink">
                 {inline(move.caption)}

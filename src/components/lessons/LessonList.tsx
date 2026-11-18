@@ -10,7 +10,7 @@ import { Stage } from "@/components/lessons/visuals/Stage";
 import { useAccess } from "@/lib/access";
 import { computeStats } from "@/lib/stats";
 import { useAttempts, useHydrated, useLessonProgress, useNow, useProfile, type LessonProgress } from "@/lib/store";
-import { domainsFor, type SectionId } from "@/lib/taxonomy";
+import { lessonGroups, type LessonTab } from "@/lib/lesson-order";
 
 export interface ListLesson {
   slug: string;
@@ -24,7 +24,7 @@ export interface ListLesson {
   sig: string;
 }
 
-type Tab = "strategy" | SectionId;
+type Tab = LessonTab;
 const TABS: { id: Tab; label: string }[] = [
   { id: "strategy", label: "Start here" },
   { id: "rw", label: "Reading and Writing" },
@@ -150,7 +150,6 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
     } catch {}
   };
 
-  const bySkill = new Map(lessons.map((l) => [l.skill, l]));
   const count = (t: Tab) => {
     const list = lessons.filter((l) => l.section === t);
     return { done: hydrated ? list.filter((l) => isDone(progress[l.slug])).length : 0, total: list.length };
@@ -234,38 +233,28 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
       </div>
 
       <div role="tabpanel">
-        {tab === "strategy" ? (
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {lessons
-              .filter((l) => l.section === "strategy")
-              .map((l, i) => (
-                <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
-              ))}
-          </div>
-        ) : (
-          domainsFor(tab).map((d) => {
-            const list = d.skills.map((sk) => bySkill.get(sk.id)).filter((l): l is ListLesson => Boolean(l));
-            if (!list.length) return null;
-            const done = hydrated ? list.filter((l) => isDone(progress[l.slug])).length : 0;
-            return (
-              <div key={d.id} className="mt-8">
+        {lessonGroups(lessons, tab).map((g) => {
+          const done = hydrated ? g.lessons.filter((l) => isDone(progress[l.slug])).length : 0;
+          return (
+            <div key={g.id} className={g.name ? "mt-8" : "mt-6"}>
+              {g.name && (
                 <div className="flex items-baseline justify-between gap-3">
-                  <h2 className="text-base font-semibold">{d.name}</h2>
+                  <h2 className="text-base font-semibold">{g.name}</h2>
                   {done > 0 && (
                     <span className="text-xs text-muted tabular-nums">
-                      {done} of {list.length} done
+                      {done} of {g.lessons.length} done
                     </span>
                   )}
                 </div>
-                <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {list.map((l, i) => (
-                    <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
-                  ))}
-                </div>
+              )}
+              <div className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${g.name ? "mt-3" : ""}`}>
+                {g.lessons.map((l, i) => (
+                  <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
+                ))}
               </div>
-            );
-          })
-        )}
+            </div>
+          );
+        })}
       </div>
     </>
   );
