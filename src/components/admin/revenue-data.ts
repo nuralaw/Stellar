@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { PLUS } from "@/lib/plus-config";
 import { addDays, type Bucket, isoDay, periodQuery, startOfDay } from "./charts";
 
 // Data side of the admin Revenue views: the types of /api/admin/revenue (SQL in supabase/payments.sql),
@@ -74,7 +75,7 @@ export function rangeOf(id: RangeId): { from: Date; to: Date; bucket: Bucket } {
 }
 
 /** Same checks the Overview and Revenue tabs both need. */
-export const allConfigured = (c?: Configured) => Boolean(c && c.pingSecret && c.accessToken && c.webhookKey && c.monthlyUrl && c.passUrl);
+export const allConfigured = (c?: Configured) => Boolean(c && c.pingSecret && c.accessToken && c.webhookKey && c.monthlyUrl && (PLUS.plans.pass.comingSoon || c.passUrl));
 
 export function ago(iso: string) {
   const min = Math.round((Date.now() - Date.parse(iso)) / 60_000);

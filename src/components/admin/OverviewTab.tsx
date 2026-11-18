@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { PLUS } from "@/lib/plus-config";
 import type { ReportReason } from "@/lib/report-reasons";
 import type { ReportItem } from "@/lib/reports";
 import type { SupportRequest } from "@/lib/support";
@@ -210,7 +211,7 @@ export function OverviewTab({ inbox: given, revenue: givenRevenue }: { inbox?: A
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Tile label="Open support requests" value={inbox.errors.support ? "–" : openSupport} sub={openSupport ? "Waiting for a reply" : "All answered"} />
-        <Tile label="Confirmed bugs" value={inbox.errors.support ? "–" : bugs} sub={bugs === 1 ? "Owes one 50%-off subscription" : "Each owes a 50%-off subscription"} />
+        <Tile label="Confirmed bugs" value={inbox.errors.support ? "–" : bugs} sub={PLUS.bugDiscountPercent ? (bugs === 1 ? `Earned a ${PLUS.bugDiscountPercent}%-off first month` : `Each earned a ${PLUS.bugDiscountPercent}%-off first month`) : "Real bugs"} />
         <Tile label="Open question reports" value={inbox.errors.reports ? "–" : openReports.length} sub={`On ${groups.length} question${groups.length === 1 ? "" : "s"}`} />
         <Tile label="Reports, last 7 days" value={inbox.errors.reports ? "–" : lastWeek} sub="Open and resolved" />
       </div>

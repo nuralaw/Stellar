@@ -4,6 +4,8 @@ export const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 foc
 export const FOCUS_ON_DARK = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 const BASE = "inline-flex min-h-11 items-center justify-center gap-2 rounded-xl font-semibold transition-colors";
 export const BTN_PRIMARY = `${BASE} px-5 py-2.5 bg-primary-strong text-primary-ink hover:bg-primary-strong-hover ${FOCUS}`;
+/** Checkout button with the animated two-liquids fill (.btn-liquid in globals.css). Sets its own colours: no bg/text class here. */
+export const BTN_LIQUID = `${BASE} px-5 py-2.5 btn-liquid ${FOCUS}`;
 export const BTN_SECONDARY = `${BASE} px-5 py-2.5 border border-line bg-surface text-ink hover:bg-surface-2 ${FOCUS}`;
 export const BTN_QUIET = `${BASE} px-4 py-2 text-sm border border-primary-strong/30 text-primary-strong hover:bg-primary-soft ${FOCUS}`;
 export const BTN_ON_DARK = `${BASE} px-5 py-2.5 bg-accent text-side hover:brightness-110 ${FOCUS_ON_DARK}`;

@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import type { FreeFacts, LessonFacts, TestFacts } from "@/lib/plus-facts";
 import { PLUS, paymentsLive } from "@/lib/plus-config";
-import { INTERVALS } from "@/lib/review";
 import { PlusCta } from "./PlusCta";
 import { FinalDateLine, LaunchSentence } from "./PlusPersonal";
 import { PlusMark } from "./PlusMark";
@@ -13,7 +12,7 @@ import { EYEBROW, FOCUS, PLUS_SURFACE, SECTION } from "./styles";
 
 const num = (n: number) => n.toLocaleString("en-US");
 
-export function SectionHead({ id, eyebrow, title, body, center = false }: { id: string; eyebrow: string; title: string; body?: string; center?: boolean }) {
+function SectionHead({ id, eyebrow, title, body, center = false }: { id: string; eyebrow: string; title: string; body?: string; center?: boolean }) {
   return (
     <div className={center ? "text-center" : ""}>
       <p className={EYEBROW}>{eyebrow}</p>
@@ -22,79 +21,6 @@ export function SectionHead({ id, eyebrow, title, body, center = false }: { id: 
       </h2>
       {body && <p className={`mt-3 text-muted ${center ? "mx-auto max-w-2xl" : "max-w-xl"}`}>{body}</p>}
     </div>
-  );
-}
-
-function Cell({ value }: { value: boolean | string }) {
-  if (typeof value === "string") return <span className="text-sm">{value}</span>;
-  return value ? (
-    <>
-      <svg viewBox="0 0 24 24" className="mx-auto h-5 w-5 text-success" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="m5 12.5 4.5 4.5L19 7.5" />
-      </svg>
-      <span className="sr-only">Included</span>
-    </>
-  ) : (
-    <>
-      <span className="text-muted" aria-hidden="true">
-        –
-      </span>
-      <span className="sr-only">Not included</span>
-    </>
-  );
-}
-
-/** "Free and Plus, side by side": the comparison table (the Free card above already lists what free includes). */
-export function CompareSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
-  const rows: { name: string; free: boolean | string; plus: boolean | string }[] = [
-    { name: "Practice tests", free: `${t.free} newest`, plus: `All ${t.total}` },
-    { name: "Question Bank", free: "College Board", plus: f.generalQuestions ? `+ ${num(f.generalQuestions)} past-paper questions` : "+ past-paper questions" },
-    { name: "Lessons", free: false, plus: `All ${l.total}` },
-    { name: "Predicted score", free: false, plus: true },
-    { name: "Weakest skills and topic breakdown", free: false, plus: `${f.skills} skills` },
-    { name: "Mistakes", free: "List to practice again", plus: `Spaced review (${INTERVALS.join(", ")} days)` },
-    { name: "Vocabulary, tournament", free: true, plus: true },
-  ];
-  return (
-    <section id="compare" aria-labelledby="compare-title" className={SECTION}>
-      <SectionHead id="compare" eyebrow="Compare" title="Free and Plus, side by side" body="No trial clock and no card on Free. Here is what Plus adds." />
-      <div className="mt-6 overflow-hidden rounded-2xl border border-line bg-surface">
-        <table className="w-full table-fixed text-left text-sm">
-          <caption className="sr-only">Free compared with Stellar Plus</caption>
-          <thead>
-            <tr className="border-b border-line text-sm">
-              <th scope="col" className="px-3 py-3 sm:px-4">
-                <span className="sr-only">Feature</span>
-              </th>
-              <th scope="col" className="w-[28%] px-3 py-3 text-center font-semibold sm:px-4">
-                Free
-              </th>
-              <th scope="col" className="w-[30%] bg-accent-soft/40 px-3 py-3 text-center font-semibold text-primary-strong sm:px-4">
-                <span className="inline-flex items-center gap-1">
-                  <Icon d={I.star} filled className="h-3.5 w-3.5" />
-                  Plus
-                </span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={r.name} className="border-b border-line last:border-0">
-                <th scope="row" className="px-3 py-3 font-medium sm:px-4">
-                  {r.name}
-                </th>
-                <td className="px-3 py-3 text-center sm:px-4">
-                  <Cell value={r.free} />
-                </td>
-                <td className="bg-accent-soft/40 px-3 py-3 text-center sm:px-4">
-                  <Cell value={r.plus} />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </section>
   );
 }
 
@@ -126,14 +52,18 @@ export function FaqSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeF
     {
       id: "faq-plans",
       q: "What's the difference between Monthly and Until test day?",
-      a: `It's the same Plus, paid differently. Monthly is billed every month until it's cancelled. Until test day is one payment that covers you through the SAT date you pick, and it doesn't renew.${
-        PLUS.plans.pass.amountCents === null ? " Its price will be announced when payments open." : ""
-      } If your SAT is less than ${Math.round(PLUS.passRecommendMinDays / 7)} weeks away, Monthly is usually the better fit.`,
+      a: PLUS.plans.pass.comingSoon
+        ? "It's the same Plus, paid differently. Monthly is billed every month until it's cancelled. Until test day will be one payment that covers you through the SAT date you pick, without renewing. It's coming soon; for now, Plus is available as Monthly."
+        : `It's the same Plus, paid differently. Monthly is billed every month until it's cancelled. Until test day is one payment that covers you through the SAT date you pick, and it doesn't renew.${
+            PLUS.plans.pass.amountCents === null ? " Its price will be announced when payments open." : ""
+          } If your SAT is less than ${Math.round(PLUS.passRecommendMinDays / 7)} weeks away, Monthly is usually the better fit.`,
     },
     {
       id: "faq-renew",
       q: "Does Monthly renew automatically?",
-      a: `Yes. Monthly renews every month until it's cancelled.${PLUS.cancelText ? " " + PLUS.cancelText : ""} Until test day doesn't renew: it's one payment and it simply ends after your test date.`,
+      a: `Yes. Monthly renews every month until it's cancelled.${PLUS.cancelText ? " " + PLUS.cancelText : ""}${
+        PLUS.plans.pass.comingSoon ? "" : " Until test day doesn't renew: it's one payment and it simply ends after your test date."
+      }`,
     },
     { id: "faq-cancel", q: "How do I cancel?", show: Boolean(PLUS.cancelText), a: PLUS.cancelText },
     { id: "faq-refund", q: "Can I get a refund?", show: Boolean(PLUS.refundDays), a: `Yes, within ${PLUS.refundDays} days of paying. Write to us through Support.` },
@@ -151,7 +81,7 @@ export function FaqSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeF
       id: "faq-bug",
       q: "I reported a bug. Do I get a discount?",
       show: Boolean(PLUS.bugDiscountPercent),
-      a: `Yes. If we confirm a bug you reported through Support, you get ${PLUS.bugDiscountPercent}% off a Stellar subscription. We'll contact you using the details you left in your report.`,
+      a: `Yes. If we confirm a bug you reported through Support while signed in, you get ${PLUS.bugDiscountPercent}% off your first month of Monthly. It shows up on the Plus page and is applied at checkout.`,
     },
     {
       id: "faq-family",

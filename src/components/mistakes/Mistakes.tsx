@@ -111,7 +111,7 @@ export function Mistakes() {
               <>
                 {" "}
                 Plus adds{" "}
-                <Link href="/plus#inside" className={LINK_STRONG}>
+                <Link href="/plus#plans" className={LINK_STRONG}>
                   spaced review
                 </Link>
                 .
@@ -181,7 +181,7 @@ export function Mistakes() {
       {!loading && hiddenCount > 0 && (
         <p className="mt-3 text-sm text-muted">
           {fmt(hiddenCount)} more from the General bank open with Plus.{" "}
-          <Link href="/plus#compare" className={LINK_STRONG}>
+          <Link href="/plus#plans" className={LINK_STRONG}>
             See what&apos;s in Plus
           </Link>
         </p>

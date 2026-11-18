@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { PLUS } from "@/lib/plus-config";
 import { Notice } from "./OverviewTab";
 import { BAR, ColumnChart, plural, SeriesTable } from "./charts";
 import { formatMoney, moneyDelta } from "./money";
@@ -483,7 +484,8 @@ function SetupCard({ message, configured, databaseReady }: { message?: string; c
     { ok: Boolean(configured?.accessToken), label: "API token", env: "GUMROAD_ACCESS_TOKEN" },
     { ok: Boolean(configured?.webhookKey), label: "Webhook key", env: "GUMROAD_WEBHOOK_KEY" },
     { ok: Boolean(configured?.monthlyUrl), label: "Monthly checkout URL", env: "NEXT_PUBLIC_GUMROAD_MONTHLY_URL" },
-    { ok: Boolean(configured?.passUrl), label: "Pass checkout URL", env: "NEXT_PUBLIC_GUMROAD_PASS_URL" },
+    // "Until test day" isn't sold yet (comingSoon), so its checkout URL isn't a setup step.
+    ...(PLUS.plans.pass.comingSoon ? [] : [{ ok: Boolean(configured?.passUrl), label: "Pass checkout URL", env: "NEXT_PUBLIC_GUMROAD_PASS_URL" }]),
   ];
   const left = items.filter((i) => !i.ok).length;
   const pingUrl = `${window.location.origin}/api/gumroad/ping`;

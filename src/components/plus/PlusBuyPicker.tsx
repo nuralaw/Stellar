@@ -9,11 +9,11 @@ import { Skeleton } from "@/components/home/parts";
 import { loginHref } from "@/components/profile/sync-label";
 import { useAccess } from "@/lib/access";
 import { useAuth } from "@/lib/auth-client";
-import { PLUS, checkoutHref, formatPrice, isOnSale, paymentsLive, perDay, type PlanId } from "@/lib/plus-config";
+import { PLAN_ORDER, PLUS, checkoutHref, discountedCents, formatPrice, isOnSale, paymentsLive, perDay, type PlanId } from "@/lib/plus-config";
 import { daysUntil, upcomingSatDates } from "@/lib/sat-dates";
 import { useHydrated, useProfile } from "@/lib/store";
 import { LaunchSentence, useToday } from "./PlusPersonal";
-import { BTN_PRIMARY, BTN_SECONDARY, FOCUS } from "./styles";
+import { BTN_LIQUID, BTN_PRIMARY, BTN_SECONDARY, FOCUS } from "./styles";
 
 // The plan picker of /plus: the Pricing tab's switch sits in the Plus header row (<PlusBuyPicker>) and the buy row is the
 // footer of the Plus area (<PlusBuyFooter>). They share the chosen plan through <PlusBuyProvider>. Checkout is Gumroad
@@ -23,7 +23,7 @@ const pl = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : man
 const OPTION_DATE: Intl.DateTimeFormatOptions = { month: "short", day: "numeric", year: "numeric" };
 const SHORT_DATE: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
 const DISABLED = "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-primary-strong";
-const FOOTER = "mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4";
+const FOOTER = "mt-4 flex flex-wrap content-start items-center gap-3 border-t border-line pt-4";
 const NOTE = "text-[13px] text-muted sm:ml-auto";
 
 const Ctx = createContext<{ plan: PlanId; setPlan: (p: PlanId) => void } | null>(null);
@@ -43,7 +43,8 @@ export function PlusBuyProvider({ children }: { children: ReactNode }) {
 /** The Monthly / Until test day switch with its price (the header row of the Plus area). */
 export function PlusBuyPicker() {
   const { plan, setPlan } = usePlusBuy();
-  return <PlanPicker value={plan} onChange={setPlan} />;
+  const access = useAccess();
+  return <PlanPicker value={plan} onChange={setPlan} discountPercent={access.discount?.percent} />;
 }
 
 /** The buy row under the benefit list and showcase. */
@@ -62,7 +63,6 @@ export function PlusBuyFooter() {
   const date = picked ?? seed;
   const days = date && today ? daysUntil(date, today) : null;
 
-  const p = PLUS.plans[id];
   const plain = (text: ReactNode) => (
     <div className={FOOTER}>
       <p className="flex min-h-11 items-center text-sm text-muted">{text}</p>
@@ -101,77 +101,109 @@ export function PlusBuyFooter() {
       </div>
     );
 
-  if (!auth.user && !admin)
+  // The footer of one plan. Every plan's footer is rendered in the same grid cell (below), so the card keeps the size of the
+  // tallest one when the plan switch changes.
+  const footerFor = (pid: PlanId) => {
+    const p = PLUS.plans[pid];
+    if (p.comingSoon)
+      return (
+        <div className={FOOTER}>
+          <button type="button" disabled className={`${BTN_SECONDARY} w-full cursor-not-allowed opacity-60 hover:bg-surface sm:w-auto`}>
+            Coming soon
+          </button>
+          <p className={NOTE}>Monthly is available now.</p>
+        </div>
+      );
+
+    if (!auth.user && !admin)
+      return (
+        <div className={FOOTER}>
+          <Link href={loginHref("/plus")} className={`${BTN_PRIMARY} w-full sm:w-auto`}>
+            Sign in to get Plus
+          </Link>
+          <p className={NOTE}>Plus is tied to your Stellar account.</p>
+        </div>
+      );
+
+    const discount = pid === "monthly" ? access.discount : null; // a personal first-month discount, Monthly only
+    const href = isOnSale(p)
+      ? checkoutHref(p, { userId: auth.user?.id ?? "", email: auth.user?.email ?? undefined, testDate: pid === "pass" ? date : undefined, offerCode: discount?.code })
+      : null;
+    if (!href) return plain("Not on sale yet");
+
+    // The renewal sentence is already beside the price (PlanPicker); here only the cancel and refund lines.
+    const noteText = [p.billing === "month" ? PLUS.cancelText : null, PLUS.refundDays ? `Full refund within ${PLUS.refundDays} days.` : null].filter(Boolean).join(" ");
+    const note = noteText ? <p className={NOTE}>{noteText}</p> : null;
+    const adminNote = admin ? <p className="basis-full text-xs text-muted">Admin: Plus is already included; this is for testing the checkout.</p> : null;
+    const c = p.amountCents;
+
+    if (pid === "monthly")
+      return (
+        <div className={FOOTER}>
+          <a href={href} className={`${BTN_LIQUID} w-full sm:w-auto`}>
+            Get Monthly{c !== null ? (discount ? ` · ${formatPrice(discountedCents(c, discount.percent))} first month` : ` · ${formatPrice(c)}/mo`) : ""}
+          </a>
+          {note}
+          {discount ? (
+            <p className="basis-full text-xs text-muted">Your {discount.percent}% bug-report discount is applied at checkout.</p>
+          ) : (
+            c !== null && <p className="basis-full text-xs text-muted">{perDay(c)}</p>
+          )}
+          {adminNote}
+        </div>
+      );
+
+    const noDates = Boolean(today) && options.length === 0;
     return (
       <div className={FOOTER}>
-        <Link href={loginHref("/plus")} className={`${BTN_PRIMARY} w-full sm:w-auto`}>
-          Sign in to get Plus
-        </Link>
-        <p className={NOTE}>Plus is tied to your Stellar account.</p>
-      </div>
-    );
-
-  const href = isOnSale(p) ? checkoutHref(p, { userId: auth.user?.id ?? "", email: auth.user?.email ?? undefined, testDate: id === "pass" ? date : undefined }) : null;
-  if (!href) return plain("Not on sale yet");
-
-  // The renewal sentence is already beside the price (PlanPicker); here only the cancel and refund lines.
-  const noteText = [p.billing === "month" ? PLUS.cancelText : null, PLUS.refundDays ? `Full refund within ${PLUS.refundDays} days.` : null].filter(Boolean).join(" ");
-  const note = noteText ? <p className={NOTE}>{noteText}</p> : null;
-  const adminNote = admin ? <p className="basis-full text-xs text-muted">Admin: Plus is already included; this is for testing the checkout.</p> : null;
-  const c = p.amountCents;
-
-  if (id === "monthly")
-    return (
-      <div className={FOOTER}>
-        <a href={href} className={`${BTN_PRIMARY} w-full sm:w-auto`}>
-          Get Monthly{c !== null ? ` · ${formatPrice(c)}/mo` : ""}
-        </a>
+        {date && !noDates ? (
+          <a href={href} className={`${BTN_PRIMARY} w-full sm:w-auto`}>
+            Get Plus until {formatIsoDate(date, SHORT_DATE)}
+            {c !== null ? ` · ${formatPrice(c)}` : ""}
+          </a>
+        ) : (
+          <button type="button" disabled className={`${BTN_PRIMARY} w-full sm:w-auto ${DISABLED}`}>
+            Get Plus until your SAT
+          </button>
+        )}
+        {!noDates &&
+          (today ? (
+            <select
+              aria-label="Your SAT date"
+              value={date}
+              onChange={(e) => setPicked(e.target.value)}
+              className={`h-11 w-full min-w-0 rounded-xl border border-line bg-bg px-3 text-sm text-ink sm:w-60 ${FOCUS}`}
+            >
+              <option value="">Pick your SAT date</option>
+              {options.map((d) => (
+                <option key={d.date} value={d.date}>
+                  {formatIsoDate(d.date, OPTION_DATE)} · {d.anticipated ? "expected" : `in ${pl(daysUntil(d.date, today), "day", "days")}`}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <Skeleton className="h-11 w-full rounded-xl sm:w-60" />
+          ))}
         {note}
-        {c !== null && <p className="basis-full text-xs text-muted">{perDay(c)}</p>}
+        <p className="basis-full text-xs text-muted" aria-live="polite">
+          {noDates
+            ? `No SAT date within the next ${PLUS.passMaxDays} days. Monthly fits better.`
+            : date && days !== null
+              ? `${pl(days, "day", "days")} of prep.${days < PLUS.passRecommendMinDays ? " Monthly is a better fit for a test this close." : ""}`
+              : "Pick your SAT date to see how long Plus lasts."}
+        </p>
         {adminNote}
       </div>
     );
+  };
 
-  const noDates = Boolean(today) && options.length === 0;
   return (
-    <div className={FOOTER}>
-      {date && !noDates ? (
-        <a href={href} className={`${BTN_PRIMARY} w-full sm:w-auto`}>
-          Get Plus until {formatIsoDate(date, SHORT_DATE)}
-          {c !== null ? ` · ${formatPrice(c)}` : ""}
-        </a>
-      ) : (
-        <button type="button" disabled className={`${BTN_PRIMARY} w-full sm:w-auto ${DISABLED}`}>
-          Get Plus until your SAT
-        </button>
-      )}
-      {!noDates &&
-        (today ? (
-          <select
-            aria-label="Your SAT date"
-            value={date}
-            onChange={(e) => setPicked(e.target.value)}
-            className={`h-11 w-full min-w-0 rounded-xl border border-line bg-bg px-3 text-sm text-ink sm:w-60 ${FOCUS}`}
-          >
-            <option value="">Pick your SAT date</option>
-            {options.map((d) => (
-              <option key={d.date} value={d.date}>
-                {formatIsoDate(d.date, OPTION_DATE)} · {d.anticipated ? "expected" : `in ${pl(daysUntil(d.date, today), "day", "days")}`}
-              </option>
-            ))}
-          </select>
-        ) : (
-          <Skeleton className="h-11 w-full rounded-xl sm:w-60" />
-        ))}
-      {note}
-      <p className="basis-full text-xs text-muted" aria-live="polite">
-        {noDates
-          ? `No SAT date within the next ${PLUS.passMaxDays} days. Monthly fits better.`
-          : date && days !== null
-            ? `${pl(days, "day", "days")} of prep.${days < PLUS.passRecommendMinDays ? " Monthly is a better fit for a test this close." : ""}`
-            : "Pick your SAT date to see how long Plus lasts."}
-      </p>
-      {adminNote}
+    <div className="grid">
+      {PLAN_ORDER.map((pid) => (
+        <div key={pid} aria-hidden={pid === id ? undefined : true} className={pid === id ? "[grid-area:1/1]" : "invisible [grid-area:1/1]"}>
+          {footerFor(pid)}
+        </div>
+      ))}
     </div>
   );
 }

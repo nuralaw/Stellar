@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
-import { isLive, PlusRow, usePlusSubs } from "./PlusControls";
+import { DiscountRow, isLive, PlusRow, usePlusSubs } from "./PlusControls";
 import { type Bucket, ColumnChart, defaultCustomRange, periodOf, periodQuery, PeriodFilters, plural, type Preset, PRESETS, SeriesTable, StatTile } from "./charts";
 
 // /admin → Accounts: new accounts, sign-ins and active students over a chosen period (column chart),
@@ -12,7 +12,7 @@ type Metric = "signups" | "signins" | "active";
 type Point = { t: string; signups: number; signins: number; active: number };
 type Totals = Record<Metric, number>;
 type Stats = { series: Point[]; totals: Totals; previous: Totals; users_total: number };
-type AccountRow = { id: string; email: string | null; created_at: string; last_sign_in_at: string | null; provider: string; active_days_30: number };
+type AccountRow = { id: string; email: string | null; created_at: string; last_sign_in_at: string | null; provider: string; active_days_30: number; discountOpen?: boolean };
 
 const METRICS: { id: Metric; label: string; unit: [string, string]; hint: string }[] = [
   { id: "signups", label: "New accounts", unit: ["new account", "new accounts"], hint: "Registrations" },
@@ -37,7 +37,7 @@ export function AccountsTab() {
   const [preset, setPreset] = useState<Preset>("30d");
   const [custom, setCustom] = useState(defaultCustomRange);
   const [metric, setMetric] = useState<Metric>("signups");
-  const [data, setData] = useState<{ stats: Stats; users: AccountRow[]; bucket: Bucket } | null>(null);
+  const [data, setData] = useState<{ stats: Stats; users: AccountRow[]; bucket: Bucket; bugCode: boolean } | null>(null);
   /** Key of the last finished request; loading = the current key hasn't finished yet. */
   const [doneKey, setDoneKey] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -61,7 +61,7 @@ export function AccountsTab() {
         if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account to see account statistics.");
         if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
         if (live) {
-          setData({ stats: json.stats, users: json.users, bucket });
+          setData({ stats: json.stats, users: json.users, bucket, bugCode: json.bugCode !== false });
           setError(null);
         }
       })
@@ -144,14 +144,14 @@ export function AccountsTab() {
             )}
           </section>
 
-          <AccountList users={data.users} total={stats.users_total} />
+          <AccountList users={data.users} total={stats.users_total} bugCode={data.bugCode} />
         </div>
       )}
     </div>
   );
 }
 
-function AccountList({ users, total }: { users: AccountRow[]; total: number }) {
+function AccountList({ users, total, bugCode }: { users: AccountRow[]; total: number; bugCode: boolean }) {
   const [all, setAll] = useState(false);
   const [plusOnly, setPlusOnly] = useState(false);
   const plus = usePlusSubs();
@@ -218,6 +218,7 @@ function AccountList({ users, total }: { users: AccountRow[]; total: number }) {
                 </span>
               </div>
               {plus.subs && <PlusRow userId={u.id} sub={bySub.get(u.id)} onChanged={plus.reload} />}
+              <DiscountRow userId={u.id} open={Boolean(u.discountOpen)} bugCode={bugCode} />
             </li>
           ))}
         </ul>

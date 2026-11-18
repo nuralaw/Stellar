@@ -2,7 +2,9 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { useAuth } from "@/lib/auth-client";
 import { CONTACT_ICONS, loadContacts, saveContacts } from "@/lib/contacts";
+import { PLUS } from "@/lib/plus-config";
 import { getUserId } from "@/lib/store";
 
 const P = {
@@ -47,6 +49,7 @@ async function shrink(file: File): Promise<Blob> {
  * a screenshot of the question, and what went wrong. What's typed stays if the panel is closed before sending.
  */
 export function SupportButton() {
+  const auth = useAuth();
   const [open, setOpen] = useState(false);
   const [contacts, setContacts] = useState<Record<ContactKey, string>>(() => ({ ...loadContacts(), other: "" }));
   const [message, setMessage] = useState("");
@@ -186,8 +189,11 @@ export function SupportButton() {
                 </span>
                 <p className="mt-4 text-lg font-semibold">Message sent</p>
                 <p className="mt-1 max-w-xs text-sm text-muted">
-                  We&apos;ll reply on {replyOn ? `${replyOn.label} (${contacts[replyOn.key].trim()})` : "the contact you left"}. If we confirm the bug, your 50% discount
-                  comes there too.
+                  We&apos;ll reply on {replyOn ? `${replyOn.label} (${contacts[replyOn.key].trim()})` : "the contact you left"}.
+                  {Boolean(PLUS.bugDiscountPercent) &&
+                    (auth.user
+                      ? ` If we confirm the bug, ${PLUS.bugDiscountPercent}% off your first month of Plus appears on the Plus page.`
+                      : " Sign in before reporting next time so a discount can reach your account.")}
                 </p>
                 <button type="button" onClick={close} className="mt-6 rounded-xl border border-line px-5 py-2.5 font-semibold hover:bg-surface-2">
                   Close
@@ -198,12 +204,15 @@ export function SupportButton() {
                 <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5">
                   <p className="text-sm text-muted">Found a bug or stuck on something? Tell us what happened and we&apos;ll get back to you.</p>
 
-                  <div className="mt-4 flex gap-3 rounded-xl bg-accent-soft p-3.5 text-sm">
-                    <Icon d={P.gift} className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-                    <p>
-                      <span className="font-semibold">50% off for real bugs.</span> If we confirm the bug you report, you get 50% off a Stellar subscription.
-                    </p>
-                  </div>
+                  {Boolean(PLUS.bugDiscountPercent) && (
+                    <div className="mt-4 flex gap-3 rounded-xl bg-accent-soft p-3.5 text-sm">
+                      <Icon d={P.gift} className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                      <p>
+                        <span className="font-semibold">{PLUS.bugDiscountPercent}% off for real bugs.</span> Report it while signed in: if we confirm the bug, you get{" "}
+                        {PLUS.bugDiscountPercent}% off your first month of Plus Monthly.
+                      </p>
+                    </div>
+                  )}
 
                   {/* 1. Contacts */}
                   <fieldset className="mt-6">

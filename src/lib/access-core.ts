@@ -26,6 +26,12 @@ export function planCan(plan: Plan, feature: Feature): boolean {
   return FREE_FEATURES.has(feature);
 }
 
+/** A personal "first month of Monthly" discount: its percent and the Gumroad offer code to put in the checkout link. */
+export interface BugDiscount {
+  percent: number;
+  code: string;
+}
+
 export interface Access {
   plan: Plan;
   isAdmin: boolean;
@@ -33,9 +39,11 @@ export interface Access {
   expiresAt: string | null;
   /** False while the plan is still being looked up (client only): show a placeholder instead of a lock. Always true on the server. */
   ready: boolean;
+  /** The visitor's open discount (client only, from /api/access). null = none. */
+  discount: BugDiscount | null;
   can: (feature: Feature) => boolean;
 }
 
-export function accessFor(plan: Plan, expiresAt: string | null = null, ready = true): Access {
-  return { plan, isAdmin: plan === "admin", expiresAt: plan === "plus" ? expiresAt : null, ready, can: (f) => planCan(plan, f) };
+export function accessFor(plan: Plan, expiresAt: string | null = null, ready = true, discount: BugDiscount | null = null): Access {
+  return { plan, isAdmin: plan === "admin", expiresAt: plan === "plus" ? expiresAt : null, ready, discount, can: (f) => planCan(plan, f) };
 }

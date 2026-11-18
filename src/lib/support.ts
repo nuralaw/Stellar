@@ -21,6 +21,8 @@ export interface SupportRequest {
   /** Admin marks (Support list): a real bug (→ 50% off a subscription), and handled. */
   bugConfirmed?: boolean;
   resolved?: boolean;
+  /** Admin list only: the personal discount this request earned (supabase/discounts.sql). null = none recorded. */
+  discount?: "open" | "used" | "revoked" | null;
 }
 
 export class SupportError extends Error {
@@ -162,6 +164,21 @@ export async function listSupport(): Promise<SupportRequest[]> {
     }));
   }
   return readFile().reverse();
+}
+
+/** One request's id and user id (the account id only when the reporter was signed in), or null when it doesn't exist. */
+export async function getSupport(id: string): Promise<{ id: string; userId: string | null } | null> {
+  if (SB_URL && SB_KEY) {
+    const res = await fetch(`${SB_URL}/rest/v1/support_requests?id=eq.${encodeURIComponent(id)}&select=id,user_id&limit=1`, {
+      headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      cache: "no-store",
+    });
+    await sbCheck(res, "support_requests");
+    const rows: { id: string; user_id: string | null }[] = await res.json();
+    return rows[0] ? { id: rows[0].id, userId: typeof rows[0].user_id === "string" ? rows[0].user_id : null } : null;
+  }
+  const r = readFile().find((x) => x.id === id);
+  return r ? { id: r.id, userId: r.userId } : null;
 }
 
 export async function updateSupport(id: string, patch: { resolved?: boolean; bugConfirmed?: boolean }) {

@@ -44,6 +44,14 @@
   --primary-strong: #c2410c;
   --primary-strong-hover: #9a3412;
   --plus-surface: #1e1e21;
+  /* Animated checkout button (.btn-liquid): orange liquid (a) mixing with a white one (b). Ink on #f97316 is about 6:1. */
+  --liquid-base: #fff7ed;
+  --liquid-a: #f97316;
+  --liquid-a2: #fb923c;
+  --liquid-b: #ffffff;
+  --liquid-b2: #ffedd5;
+  --liquid-ink: #1c1c1e;
+  --liquid-ring: rgb(249 115 22 / 0.45);
   /* semantic */
   --success: #15803d;
   --success-soft: #dcfce7;
@@ -78,6 +86,14 @@
   --primary-strong: #fb923c;
   --primary-strong-hover: #fdba74;
   --plus-surface: #18181a; /* lifted above --bg #111112; the ring-white/10 edge does the rest */
+  /* .btn-liquid in dark: white text needs 4.5:1, so no oranges brighter than #cc4410 (white on it 4.77:1, on #c2410c 5.18:1). */
+  --liquid-base: #232326;
+  --liquid-a: #c2410c;
+  --liquid-a2: #cc4410;
+  --liquid-b: #2a2a2e;
+  --liquid-b2: #3a3a3f;
+  --liquid-ink: #ffffff;
+  --liquid-ring: rgb(251 146 60 / 0.35);
 
   --success: #4ade80;
   --success-soft: #0f2a1a;
@@ -699,5 +715,75 @@ div[data-tour-active] {
   .art-shoot {
     animation: none !important;
     display: none;
+  }
+}
+
+/* "Get Monthly" checkout button: two liquids (orange and white/gray) drifting into each other behind the text. Slow and calm.
+   The blurred layers sit at z-index -1 inside the button's own stacking context (isolation), so the label stays on top;
+   overflow hidden clips them to the rounded corners (the focus outline is outside the box and still shows). */
+.btn-liquid {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--liquid-base);
+  color: var(--liquid-ink);
+  box-shadow: inset 0 0 0 1px var(--liquid-ring);
+  transition:
+    filter 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.15s ease;
+}
+:root[data-theme="dark"] .btn-liquid {
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.35);
+}
+.btn-liquid:hover {
+  filter: saturate(1.15);
+  box-shadow:
+    inset 0 0 0 1px var(--liquid-ring),
+    0 6px 24px -8px rgb(249 115 22 / 0.55);
+}
+.btn-liquid::before,
+.btn-liquid::after {
+  content: "";
+  position: absolute;
+  inset: -60% -25%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(10px);
+}
+.btn-liquid::before {
+  background:
+    radial-gradient(45% 38% at 26% 42%, var(--liquid-a), transparent 70%),
+    radial-gradient(36% 42% at 68% 60%, var(--liquid-a2), transparent 70%),
+    radial-gradient(30% 34% at 48% 30%, var(--liquid-a), transparent 70%);
+  animation: liquid-a 7s ease-in-out infinite alternate;
+}
+.btn-liquid::after {
+  background:
+    radial-gradient(40% 38% at 72% 38%, var(--liquid-b), transparent 70%),
+    radial-gradient(36% 44% at 30% 62%, var(--liquid-b2), transparent 70%),
+    radial-gradient(30% 34% at 55% 68%, var(--liquid-b), transparent 70%);
+  animation: liquid-b 9.5s ease-in-out infinite alternate;
+}
+@keyframes liquid-a {
+  from {
+    transform: translate(-7%, 5%) rotate(-8deg) scale(1);
+  }
+  to {
+    transform: translate(8%, -6%) rotate(10deg) scale(1.12);
+  }
+}
+@keyframes liquid-b {
+  from {
+    transform: translate(8%, -4%) rotate(9deg) scale(1.1);
+  }
+  to {
+    transform: translate(-9%, 6%) rotate(-7deg) scale(0.96);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-liquid::before,
+  .btn-liquid::after {
+    animation: none;
   }
 }

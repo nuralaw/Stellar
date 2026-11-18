@@ -1,5 +1,6 @@
 import { after } from "next/server";
 import { currentUser } from "@/lib/admin";
+import { accountLookup } from "@/lib/discounts-server";
 import { emailSupportRequest } from "@/lib/mail";
 import { SupportError, parseSupport, saveSupport } from "@/lib/support";
 
@@ -21,6 +22,11 @@ export async function POST(request: Request) {
     // Signed in: the account id, not the anonymous browser id from the form.
     const user = await currentUser();
     if (user) req.userId = user.id.toLowerCase();
+    else if (req.userId) {
+      // Signed out: the form's id is untrusted, and a real account id here would let a visitor aim the bug discount at any account.
+      // Fail closed: keep it only when Supabase Auth definitely says no such account (404).
+      if ((await accountLookup(req.userId)) !== "none") req.userId = null;
+    }
     await saveSupport(req, image);
     const origin = new URL(request.url).origin;
     after(() => emailSupportRequest(req, image, origin));

@@ -8,6 +8,7 @@ import { setAdminFlag } from "@/lib/admin-flag";
 import { CONTACT_ICONS } from "@/lib/contacts";
 import { REPORT_REASONS } from "@/lib/report-reasons";
 import type { ReportItem } from "@/lib/reports";
+import { PLUS } from "@/lib/plus-config";
 import type { SupportRequest } from "@/lib/support";
 import { supabaseBrowser } from "@/lib/supabase/client";
 import { getSkill } from "@/lib/taxonomy";
@@ -28,7 +29,16 @@ import { TrafficTab } from "./TrafficTab";
 // Uses useSearchParams (?tab=…), so app/admin/page.tsx wraps this in <Suspense>.
 
 type Me = { configured: boolean; signedIn: boolean; admin: boolean; email: string | null };
-type Inbox = { support: SupportRequest[]; reports: ReportItem[]; errors: { support?: string; reports?: string } };
+type Inbox = { support: SupportRequest[]; reports: ReportItem[]; bugCode?: boolean; errors: { support?: string; reports?: string } };
+/** What the PATCH answers about the discount when a bug is (un)confirmed, in words. */
+const DISCOUNT_NOTICE: Record<string, string> = {
+  granted: "Bug confirmed: the discount was sent to the student's account.",
+  already: "Bug confirmed. That account already has this discount (or one is open), so nothing new was added.",
+  revoked: "Bug un-confirmed: the unused discount was taken back.",
+  "no-account": "Bug confirmed, but the reporter wasn't signed in, so there's no account to give it to. Use Accounts → \"50% off 1st month\".",
+  off: "Bug confirmed. Discounts are turned off (bugDiscountPercent in plus-config.ts).",
+  error: "Bug confirmed, but the discount couldn't be saved. Check the discounts table (supabase/discounts.sql) or give it from Accounts.",
+};
 type Filter = "open" | "resolved" | "all";
 
 // ── Tabs ── To add a tab: add it here and a case in renderTab() (inside Dashboard).
@@ -259,6 +269,8 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
   const [filter, setFilter] = useState<Filter>("open");
   const [query, setQuery] = useState<Record<ListTab, string>>({ support: "", reports: "" });
   const [error, setError] = useState<string | null>(null);
+  /** Result of the last bug confirmation (the discount), shown under the tabs. */
+  const [notice, setNotice] = useState<string | null>(null);
   /** Revenue KPIs: the header pill and the Overview strip share this one fetch. */
   const revenue = useRevenueKpis();
 
@@ -305,9 +317,15 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
       );
     const before = kind === "support" ? inbox?.support.find((r) => r.id === id) : inbox?.reports.find((r) => r.id === id);
     apply(patch);
+    setNotice(null);
     try {
       const res = await fetch("/api/admin/inbox", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind, id, ...patch }) });
       if (!res.ok) throw new Error((await res.json().catch(() => null))?.error ?? "Couldn't save");
+      if (kind === "support" && patch.bugConfirmed !== undefined) {
+        const out: { discount?: string } | null = await res.json().catch(() => null);
+        if (out?.discount && DISCOUNT_NOTICE[out.discount]) setNotice(DISCOUNT_NOTICE[out.discount]);
+        fetchInbox().then(show); // the card's discount status comes from the server
+      }
     } catch (e) {
       if (before) apply({ resolved: before.resolved, bugConfirmed: "bugConfirmed" in before ? before.bugConfirmed : undefined });
       setError(e instanceof Error ? e.message : "Couldn't save");
@@ -345,6 +363,12 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
           </div>
         </div>
         {tabError && <p className="mt-5 rounded-xl bg-accent-soft px-4 py-3 text-sm">{tabError}</p>}
+        {t === "support" && inbox?.bugCode === false && <p className="mt-5 rounded-xl bg-accent-soft px-4 py-3 text-sm">Set GUMROAD_BUG_CODE to apply discounts (they are still recorded).</p>}
+        {t === "support" && notice && (
+          <p role="status" className="mt-5 rounded-xl bg-accent-soft px-4 py-3 text-sm">
+            {notice}
+          </p>
+        )}
         <div className="mt-5 space-y-4">
           {!inbox && loading && <p className="text-muted">Loading…</p>}
           {inbox &&
@@ -591,6 +615,17 @@ function SupportCard({ r, update }: { r: SupportRequest; update: Update }) {
         <Toggle on={Boolean(r.resolved)} onClick={() => update("support", r.id, { resolved: !r.resolved })}>
           Resolved
         </Toggle>
+        {r.bugConfirmed && (
+          <span className="inline-flex min-h-11 items-center text-sm text-muted">
+            {r.discount === "open"
+              ? `${PLUS.bugDiscountPercent ?? 50}% off sent to account`
+              : r.discount === "used"
+                ? "Discount used"
+                : r.discount === "revoked"
+                  ? "Discount taken back"
+                  : "No discount recorded (give it from Accounts)"}
+          </span>
+        )}
       </div>
     </article>
   );

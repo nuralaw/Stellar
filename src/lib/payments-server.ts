@@ -1,6 +1,7 @@
 import "server-only";
 import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 import { extendPlus, getSubscription, removePlus, setPlus } from "./access-server";
+import { bugCode, markUsed } from "./discounts-server";
 import { PLUS } from "./plus-config";
 import { findSatDate } from "./sat-dates";
 
@@ -290,6 +291,7 @@ function pingFromApiSale(sale: Obj, saleId: string): Obj {
     test: pick("test"),
     subscription_id: pick("subscription_id"),
     is_recurring_charge: pick("recurring_charge", "is_recurring_charge"),
+    offer_code: pick("offer_code"),
     refunded: bool(sale.refunded),
     disputed: bool(sale.disputed) || bool(sale.chargedback),
     dispute_won: bool(sale.dispute_won),
@@ -328,6 +330,30 @@ function purchaseRow(d: Obj, o: { saleId: string; userId: string | null; plan: P
 
 const upsertPurchase = (row: Obj) =>
   pg("purchases?on_conflict=sale_id", { method: "POST", headers: { Prefer: "resolution=merge-duplicates,return=minimal" }, body: JSON.stringify(row) });
+
+/** The offer code a sale used: the ping sends a string, Gumroad's API sale an object with a name. */
+function offerCodeOf(d: Obj): string | undefined {
+  const v = d.offer_code;
+  return str(isObj(v) ? v.name : v);
+}
+
+/**
+ * First Monthly payment with the shared bug-report code (GUMROAD_BUG_CODE): closes that student's open discount. Returns a note, or
+ * null when the sale didn't use the code. Never throws (a failure is only a note), so it can't fail the webhook or the Plus grant.
+ * A repeated ping finds no open discount any more, so it changes nothing (and `repeat` keeps it from adding the "without" note).
+ */
+async function noteBugCode(d: Obj, plan: PlanId | null, userId: string | null, saleId: string, repeat: boolean): Promise<string | null> {
+  try {
+    const code = bugCode();
+    const used = offerCodeOf(d);
+    if (plan !== "monthly" || bool(d.is_recurring_charge) || !code || !used || used.toLowerCase() !== code.toLowerCase()) return null;
+    if (userId && (await markUsed(userId, saleId))) return "bug discount used";
+    return repeat ? null : "bug code used without an open discount"; // a retry of a sale we already stored finds its discount closed
+  } catch (e) {
+    console.error("[payments] bug discount:", e);
+    return "bug code used, but closing the discount failed";
+  }
+}
 
 /**
  * A sale. Signed pings (the seller's own Ping URL) are trusted. Without a signature the body is forgeable, so an unsigned sale is
@@ -386,6 +412,8 @@ async function handleSale(body: Obj, signed: boolean): Promise<Outcome> {
     else if (refunded || disputed) notes.push(`stored as ${refunded ? "refunded" : "disputed"}: ${await recomputeAccess(userId)}`);
     else notes.push("stored: the access end is already past, no access granted");
   }
+  const used = await noteBugCode(d, plan, userId, saleId, Boolean(existing));
+  if (used) notes.push(used);
   if (test) notes.push("test purchase");
   return { note: notes.join("; "), verified: true }; // signed, or confirmed by the Gumroad API above
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { PLUS } from "@/lib/plus-config";
 
 // Admin → Accounts: Stellar Plus status and hand-granted access per student. Data: /api/admin/subscriptions.
 
@@ -211,6 +212,43 @@ export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusS
 
       {error && (
         <p role="alert" className="mt-2 rounded-xl bg-danger-soft px-3 py-2 text-sm text-danger">
+          {error}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/** Hand-made "first month" discount for one student (/api/admin/discounts): a button to give it, or "Discount open · Remove". */
+export function DiscountRow({ userId, open, bugCode }: { userId: string; open: boolean; bugCode: boolean }) {
+  const [isOpen, setIsOpen] = useState(open);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function run(method: "POST" | "DELETE") {
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/admin/discounts", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId }), cache: "no-store" });
+      const json = await res.json().catch(() => null);
+      if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account first.");
+      if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
+      setIsOpen(method === "POST");
+    } catch (e) {
+      setError(e instanceof Error ? (e.message === "Failed to fetch" ? "Couldn't reach the server." : e.message) : "Something went wrong.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-2">
+      <button type="button" onClick={() => run(isOpen ? "DELETE" : "POST")} disabled={busy} className={btn}>
+        {busy ? "Saving…" : isOpen ? "Discount open · Remove" : `${PLUS.bugDiscountPercent ?? 50}% off 1st month`}
+      </button>
+      {isOpen && !bugCode && <span className="text-[13px] text-muted">Set GUMROAD_BUG_CODE to apply discounts</span>}
+      {error && (
+        <p role="alert" className="w-full rounded-xl bg-danger-soft px-3 py-2 text-sm text-danger">
           {error}
         </p>
       )}

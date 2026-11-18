@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { FeatureCarousel } from "@/components/auth/FeatureCarousel";
-import { PricingGrid, Watermark, featureSlides } from "@/components/auth/auth-views";
+import { PricingGrid, Watermark } from "@/components/auth/auth-views";
 import { FreeCardCta } from "@/components/plus/FreeCardCta";
 import { PlusBuyFooter, PlusBuyPicker, PlusBuyProvider } from "@/components/plus/PlusBuyPicker";
 import { MemberPanel } from "@/components/plus/PlusCta";
 import { PlusMark } from "@/components/plus/PlusMark";
-import { CompareSection, FaqSection, FinalBand, SectionHead } from "@/components/plus/sections";
-import { EYEBROW, LINK_STRONG, SECTION } from "@/components/plus/styles";
+import { FaqSection, FinalBand } from "@/components/plus/sections";
+import { EYEBROW } from "@/components/plus/styles";
 import { authFacts } from "@/lib/auth-facts";
 import { PLAN_ORDER, PLUS } from "@/lib/plus-config";
 import { PAGE } from "@/lib/ui";
@@ -38,9 +37,6 @@ export default function Page() {
             </h1>
           </div>
           <div className="lesson-in mt-2 [animation-delay:140ms] xl:mt-0 xl:text-right">
-            <a href="#compare" className={`${LINK_STRONG} text-sm`}>
-              Compare Free and Plus ↓
-            </a>
             <p className="mt-1 text-[12px] text-muted empty:hidden">
               {anyPrice && PLUS.priceNote}
             </p>
@@ -54,15 +50,6 @@ export default function Page() {
         </PlusBuyProvider>
       </section>
 
-      {/* What's inside: the sign-up screen's Features carousel. id="inside" is linked from the lock panels. */}
-      <section id="inside" aria-labelledby="inside-title" className={SECTION}>
-        <SectionHead id="inside" eyebrow="Features" title="Everything in Stellar" body="Free to start. Plus unlocks the rest, see the plans above." />
-        <div className="mt-8">
-          <FeatureCarousel slides={featureSlides(facts)} />
-        </div>
-      </section>
-
-      <CompareSection t={t} l={l} f={f} />
       <FaqSection t={t} l={l} f={f} />
       <FinalBand />
     </div>

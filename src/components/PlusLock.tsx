@@ -26,7 +26,7 @@ export type PlusFeature = "tests" | "lessons" | "insights" | "review" | "bank";
 
 export interface PlusLockProps {
   variant: "panel" | "card" | "row";
-  /** Which locked feature this is (the "What's in Plus" link goes to the features carousel on /plus; "bank" goes to the comparison table). */
+  /** Which locked feature this is (kept for callers; the "What's in Plus" link goes to the comparison island on /plus). */
   feature: PlusFeature;
   title: string;
   body?: string;
@@ -50,7 +50,7 @@ export interface PlusLockProps {
   className?: string;
 }
 
-export function PlusLock({ variant, feature, title, body, points, fact, preview, free, cta, aside, footer, headingLevel = 2, bare = false, className = "" }: PlusLockProps) {
+export function PlusLock({ variant, title, body, points, fact, preview, free, cta, aside, footer, headingLevel = 2, bare = false, className = "" }: PlusLockProps) {
   const H = headingLevel === 3 ? "h3" : "h2";
   const action = cta ?? { label: plusCtaLabel(), href: "/plus#plans" };
   const hint = priceHint();
@@ -97,7 +97,7 @@ export function PlusLock({ variant, feature, title, body, points, fact, preview,
               Or keep going free: {free.label} →
             </Link>
           )}
-          <Link href={feature === "bank" ? "/plus#compare" : "/plus#inside"} className={LINK_ON_DARK}>
+          <Link href="/plus#plans" className={LINK_ON_DARK}>
             What&apos;s in Plus
           </Link>
         </p>

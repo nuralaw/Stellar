@@ -1,7 +1,8 @@
 // Stellar Plus: plans, prices and launch state shown on /plus and across the app. Display only: the gate is
 // lib/access-core / access / access-server. Going live = set a price (amountCents) per plan and the two env vars
 // NEXT_PUBLIC_GUMROAD_MONTHLY_URL / NEXT_PUBLIC_GUMROAD_PASS_URL (the Gumroad product page URLs; read at build time,
-// so redeploy after changing them); no component changes. Full checklist: docs/PAYMENTS.md.
+// so redeploy after changing them); no component changes. For now only Monthly is sold: the pass is marked comingSoon.
+// Launching it = set its price, the pass env vars and drop comingSoon. Full checklist: docs/PAYMENTS.md.
 
 export type PlanId = "monthly" | "pass";
 
@@ -16,6 +17,8 @@ export interface PlusPlan {
   billing: "month" | "once";
   /** Gumroad product page URL, e.g. https://stellar1600.gumroad.com/l/plus (from env). null = not on sale. checkoutHref() adds the buyer's data. */
   checkoutUrl: string | null;
+  /** Shown as "Coming soon": no price, no checkout, even if a price or URL is set. Remove to put the plan on sale. */
+  comingSoon?: boolean;
 }
 
 export interface PlusConfig {
@@ -57,6 +60,7 @@ export const PLUS: PlusConfig = {
       amountCents: null,
       billing: "once",
       checkoutUrl: process.env.NEXT_PUBLIC_GUMROAD_PASS_URL || null,
+      comingSoon: true,
     },
   },
   passRecommendMinDays: 28,
@@ -71,7 +75,7 @@ export const PLUS: PlusConfig = {
 
 export const PLAN_ORDER: PlanId[] = ["monthly", "pass"];
 
-export const isOnSale = (p: PlusPlan) => p.amountCents !== null && p.checkoutUrl !== null;
+export const isOnSale = (p: PlusPlan) => !p.comingSoon && p.amountCents !== null && p.checkoutUrl !== null;
 /** True once any plan can be bought. */
 export const paymentsLive = () => PLAN_ORDER.some((id) => isOnSale(PLUS.plans[id]));
 
@@ -85,6 +89,8 @@ export function priceParts(cents: number): { whole: string; frac: string } {
   const i = s.indexOf(".");
   return i < 0 ? { whole: s, frac: "" } : { whole: s.slice(0, i), frac: s.slice(i) };
 }
+/** Price after a percent discount, rounded the way Gumroad does it: amount off = round(price * percent / 100). 961 at 50% → 480. */
+export const discountedCents = (cents: number, percent: number) => cents - Math.round((cents * percent) / 100);
 /** Monthly framing: "about 33¢ a day". */
 export function perDay(cents: number): string {
   const c = Math.round(cents / 30.44);
@@ -99,7 +105,7 @@ export const monthlyPaymentsFor = (days: number) => Math.max(1, Math.ceil(days /
 /** Which plan to highlight for a test `daysToTest` away; null = highlight nothing. */
 export function recommendedPlan(daysToTest: number | null): PlanId | null {
   if (daysToTest === null || daysToTest <= 0) return null;
-  if (PLUS.plans.monthly.amountCents === null || PLUS.plans.pass.amountCents === null) return null;
+  if (PLUS.plans.monthly.amountCents === null || PLUS.plans.pass.amountCents === null || PLUS.plans.pass.comingSoon) return null;
   return daysToTest >= PLUS.passRecommendMinDays ? "pass" : "monthly";
 }
 /** Label of every cross-page Plus CTA. */
@@ -114,12 +120,14 @@ export const launchUpcoming = (todayIso: string) => Boolean(PLUS.launchDate && t
 /**
  * Checkout link for a signed-in student: the product page opened straight at checkout (wanted=true), with the account id
  * (uid, how the webhook finds the account), the email (prefilled) and, for the pass, the SAT date (sat, 'YYYY-MM-DD').
+ * For Monthly an `offerCode` (the shared Gumroad discount code) goes into the URL path: .../l/<product>/<CODE>.
  * null when the plan isn't on sale.
  */
-export function checkoutHref(p: PlusPlan, ctx: { userId: string; email?: string; testDate?: string }): string | null {
+export function checkoutHref(p: PlusPlan, ctx: { userId: string; email?: string; testDate?: string; offerCode?: string }): string | null {
   if (!isOnSale(p) || !p.checkoutUrl) return null;
   try {
     const url = new URL(p.checkoutUrl);
+    if (p.id === "monthly" && ctx.offerCode) url.pathname = `${url.pathname.replace(/\/+$/, "")}/${encodeURIComponent(ctx.offerCode)}`;
     url.searchParams.set("wanted", "true");
     if (ctx.userId) url.searchParams.set("uid", ctx.userId);
     if (ctx.email) url.searchParams.set("email", ctx.email);

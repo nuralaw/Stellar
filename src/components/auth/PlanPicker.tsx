@@ -2,12 +2,15 @@
 
 import { useState, type KeyboardEvent } from "react";
 import { FOCUS } from "@/components/plus/styles";
-import { PLAN_ORDER, PLUS, formatPrice, priceParts, type PlanId } from "@/lib/plus-config";
+import { PLAN_ORDER, PLUS, discountedCents, formatPrice, priceParts, type PlanId } from "@/lib/plus-config";
 
 // Pricing tab of /register and /login: a two-way switch (Monthly / Until test day) with a sliding pill, the price beside it.
 
-/** Uncontrolled by default (Pricing tab); pass `value` + `onChange` to control it (/plus keeps the choice to drive the buy button). */
-export function PlanPicker({ value, onChange }: { value?: PlanId; onChange?: (id: PlanId) => void } = {}) {
+/**
+ * Uncontrolled by default (Pricing tab); pass `value` + `onChange` to control it (/plus keeps the choice to drive the buy button).
+ * `discountPercent` (/plus, signed-in student with a discount) shows Monthly's first-month price, the normal one struck through.
+ */
+export function PlanPicker({ value, onChange, discountPercent }: { value?: PlanId; onChange?: (id: PlanId) => void; discountPercent?: number } = {}) {
   const [own, setOwn] = useState<PlanId>("monthly");
   const id = value ?? own;
   const setId = (next: PlanId) => {
@@ -15,9 +18,6 @@ export function PlanPicker({ value, onChange }: { value?: PlanId; onChange?: (id
     onChange?.(next);
   };
   const idx = PLAN_ORDER.indexOf(id);
-  const p = PLUS.plans[id];
-  const c = p.amountCents;
-  const parts = c !== null ? priceParts(c) : null;
 
   const onKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
     const step = e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : e.key === "ArrowLeft" || e.key === "ArrowUp" ? -1 : 0;
@@ -54,30 +54,79 @@ export function PlanPicker({ value, onChange }: { value?: PlanId; onChange?: (id
           );
         })}
       </div>
-      {/* Stable live region around the keyed (re-animating) price, so plan changes get announced. */}
-      <div aria-live="polite">
-        <div key={id} className="lesson-in">
-          {c !== null && parts ? (
-            <p className="flex items-baseline">
-              <span className="sr-only">
-                {formatPrice(c)} {p.billing === "month" ? "per month" : "one payment"}
-              </span>
-              <span aria-hidden="true" className="text-3xl font-bold tracking-tight tabular-nums">
-                {parts.whole}
-              </span>
-              <span aria-hidden="true" className="text-xl font-bold tabular-nums">
-                {parts.frac}
-              </span>
-              <span aria-hidden="true" className="ml-1.5 text-sm text-muted">
-                {p.billing === "month" ? "/ month" : "one payment"}
-              </span>
-            </p>
+      {/* Stable live region. Every plan's price block sits in the same grid cell, so the cell is as big as the biggest one and
+          switching never resizes the card; the inactive blocks are invisible. The active block is keyed apart from its hidden
+          twin, so a switch remounts it (replays the animation, and the change is announced). */}
+      <div aria-live="polite" className="grid">
+        {PLAN_ORDER.map((pid) =>
+          pid === id ? (
+            <div key={`on-${pid}`} className="lesson-in [grid-area:1/1]">
+              <PriceBlock id={pid} discountPercent={discountPercent} />
+            </div>
           ) : (
-            <p className="text-2xl font-semibold text-muted">Price at launch</p>
-          )}
-          <p className="text-[12px] text-muted">{p.billing === "month" ? "Renews every month until you cancel." : "One payment. Nothing renews."}</p>
-        </div>
+            <div key={`off-${pid}`} aria-hidden="true" className="invisible [grid-area:1/1]">
+              <PriceBlock id={pid} discountPercent={discountPercent} />
+            </div>
+          ),
+        )}
       </div>
     </div>
+  );
+}
+
+/** The price (or "Coming soon") and its one-line note for one plan. */
+function PriceBlock({ id, discountPercent }: { id: PlanId; discountPercent?: number }) {
+  const p = PLUS.plans[id];
+  const c = p.amountCents;
+  const parts = c !== null ? priceParts(c) : null;
+  if (discountPercent && p.billing === "month" && !p.comingSoon && c !== null) {
+    const first = discountedCents(c, discountPercent);
+    const fp = priceParts(first);
+    return (
+      <>
+        <p className="flex items-baseline">
+          <span className="sr-only">
+            {formatPrice(first)} for the first month, was {formatPrice(c)}. Then {formatPrice(c)} per month.
+          </span>
+          <span aria-hidden="true" className="text-3xl font-bold tracking-tight tabular-nums">
+            {fp.whole}
+          </span>
+          <span aria-hidden="true" className="text-xl font-bold tabular-nums">
+            {fp.frac}
+          </span>
+          <span aria-hidden="true" className="ml-1.5 text-sm text-muted tabular-nums">
+            <s>{formatPrice(c)}</s>
+          </span>
+        </p>
+        <p className="text-[12px] text-muted">First month. Then {formatPrice(c)}/month until you cancel.</p>
+      </>
+    );
+  }
+  return (
+    <>
+      {p.comingSoon ? (
+        <p className="text-2xl font-semibold text-muted">Coming soon</p>
+      ) : c !== null && parts ? (
+        <p className="flex items-baseline">
+          <span className="sr-only">
+            {formatPrice(c)} {p.billing === "month" ? "per month" : "one payment"}
+          </span>
+          <span aria-hidden="true" className="text-3xl font-bold tracking-tight tabular-nums">
+            {parts.whole}
+          </span>
+          <span aria-hidden="true" className="text-xl font-bold tabular-nums">
+            {parts.frac}
+          </span>
+          <span aria-hidden="true" className="ml-1.5 text-sm text-muted">
+            {p.billing === "month" ? "/ month" : "one payment"}
+          </span>
+        </p>
+      ) : (
+        <p className="text-2xl font-semibold text-muted">Price at launch</p>
+      )}
+      <p className="text-[12px] text-muted">
+        {p.billing === "month" ? "Renews every month until you cancel." : p.comingSoon ? "One payment until your SAT. Not on sale yet." : "One payment. Nothing renews."}
+      </p>
+    </>
   );
 }

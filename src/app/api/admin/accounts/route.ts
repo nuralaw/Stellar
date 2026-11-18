@@ -1,7 +1,9 @@
 import { NO_STORE, adminOnly } from "@/lib/admin";
+import { bugCode, openDiscountUserIds } from "@/lib/discounts-server";
 
 // Admin only. GET ?from=<ISO>&to=<ISO>&bucket=day|week|month&tz=<IANA zone>
-// → { stats: { series, totals, previous, users_total }, users: [...] } from the SQL functions in supabase/account_stats.sql.
+// → { stats: { series, totals, previous, users_total }, users: [... each with discountOpen], bugCode } from the SQL functions in supabase/account_stats.sql.
+// discountOpen = the account has an open "first month" discount (supabase/discounts.sql); false when that can't be read. bugCode = GUMROAD_BUG_CODE is set.
 
 const SB_URL = process.env.SUPABASE_URL;
 const SB_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -54,7 +56,12 @@ export async function GET(request: Request) {
       rpc("admin_account_stats", { p_from: new Date(from).toISOString(), p_to: new Date(to).toISOString(), p_bucket: bucket, p_tz: tz }),
       rpc("admin_account_list", { p_limit: 100 }),
     ]);
-    return Response.json({ stats, users }, { headers: NO_STORE });
+    let open = new Set<string>();
+    try {
+      if (Array.isArray(users)) open = await openDiscountUserIds(users.map((u: { id: string }) => u.id));
+    } catch {} // the discounts table may not exist yet: the list still loads
+    const withDiscount = Array.isArray(users) ? users.map((u: { id: string }) => ({ ...u, discountOpen: open.has(u.id) })) : users;
+    return Response.json({ stats, users: withDiscount, bugCode: bugCode() !== null }, { headers: NO_STORE });
   } catch (e) {
     return Response.json({ error: e instanceof Error ? e.message : "Couldn't load." }, { status: 503, headers: NO_STORE });
   }

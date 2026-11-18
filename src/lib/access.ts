@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useSyncExternalStore } from "react";
 import { setAdminFlag, useAdminFlag } from "./admin-flag";
 import { getAuth, onAuthChange, useAuth } from "./auth-client";
-import { accessFor, type Access, type Plan } from "./access-core";
+import { accessFor, type Access, type BugDiscount, type Plan } from "./access-core";
 
 // Client side of access: the visitor's plan for showing/hiding UI. Shared types and planCan live in ./access-core.
 export * from "./access-core";
@@ -12,6 +12,7 @@ interface Remote {
   userId: string;
   plan: Plan;
   expiresAt: string | null;
+  discount: BugDiscount | null;
   /** The request failed (network / server error): `plan` is only a "free" placeholder, not a real answer. */
   failed?: boolean;
 }
@@ -35,13 +36,15 @@ function fetchAccess(userId: string): Promise<void> {
   const seq = ++reqSeq;
   inflightFor = userId;
   const request = (inflight = fetch("/api/access", { cache: "no-store" })
-    .then((r) => (r.ok ? (r.json() as Promise<{ plan?: Plan; expiresAt?: string | null }>) : null))
+    .then((r) => (r.ok ? (r.json() as Promise<{ plan?: Plan; expiresAt?: string | null; discount?: BugDiscount | null }>) : null))
     .catch(() => null)
     .then((d) => {
       // Signed out, switched account, or a newer request was started while this one ran: drop the answer.
       if (getAuth().user?.id !== userId || seq !== reqSeq) return;
       const plan: Plan = d?.plan === "plus" || d?.plan === "admin" ? d.plan : "free";
-      remote = { userId, plan, expiresAt: d?.expiresAt ?? null, ...(d ? {} : { failed: true }) };
+      const dc = d?.discount;
+      const discount = dc && typeof dc.percent === "number" && typeof dc.code === "string" ? { percent: dc.percent, code: dc.code } : null;
+      remote = { userId, plan, expiresAt: d?.expiresAt ?? null, discount, ...(d ? {} : { failed: true }) };
       emit();
       if (d) {
         retriedFor = null;
@@ -111,5 +114,7 @@ export function useAccess(): Access {
   const plan: Plan = isAdmin ? "admin" : (mine?.plan ?? "free");
   const expiresAt = isAdmin ? null : (mine?.expiresAt ?? null);
   const ready = isAdmin || (auth.ready && (!userId || Boolean(mine)));
-  return useMemo(() => accessFor(plan, expiresAt, ready), [plan, expiresAt, ready]);
+  const dPercent = isAdmin ? null : (mine?.discount?.percent ?? null);
+  const dCode = isAdmin ? null : (mine?.discount?.code ?? null);
+  return useMemo(() => accessFor(plan, expiresAt, ready, dPercent !== null && dCode ? { percent: dPercent, code: dCode } : null), [plan, expiresAt, ready, dPercent, dCode]);
 }
