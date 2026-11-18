@@ -632,3 +632,72 @@ div[data-tour-active] {
     visibility: hidden;
   }
 }
+
+/* Sign-up art (components/auth/StellarArt.tsx): twinkling stars, the 1600 star's glow and its orbit. */
+@keyframes art-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@keyframes art-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes art-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+}
+.art-twinkle {
+  animation: art-twinkle 3s ease-in-out infinite;
+}
+.art-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: art-spin 24s linear infinite;
+}
+.art-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: art-pulse 3.2s ease-in-out infinite;
+}
+@keyframes art-shoot {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(-25deg);
+  }
+  4% {
+    opacity: 1;
+  }
+  14%,
+  100% {
+    opacity: 0;
+    transform: translate(-280px, 130px) rotate(-25deg);
+  }
+}
+.art-shoot {
+  opacity: 0;
+  animation: art-shoot 9s ease-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .art-twinkle,
+  .art-spin,
+  .art-pulse {
+    animation: none !important;
+  }
+  .art-shoot {
+    animation: none !important;
+    display: none;
+  }
+}

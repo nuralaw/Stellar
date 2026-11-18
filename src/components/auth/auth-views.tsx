@@ -17,6 +17,8 @@ import { FeatureCarousel, type FeatureSlide } from "./FeatureCarousel";
 import { TabLink } from "./AuthTabs";
 import { PlanPicker } from "./PlanPicker";
 import { PlusShowcase, type Benefit } from "./PlusShowcase";
+import { StellarArt } from "./StellarArt";
+import { makeStars } from "./stars";
 
 // The three panels of /register and /login (server-rendered; the tab switching and the carousel are client components).
 // Every number comes from AuthFacts / lib/plus-config / lib/review, never typed in by hand.
@@ -31,31 +33,99 @@ const CARD = "rounded-2xl border border-line bg-surface p-4 shadow-[0_1px_0_var(
 
 /* ------------------------------------------------------------------ Account */
 
-export function AccountView({ facts, children }: { facts: AuthFacts; children: ReactNode }) {
-  const parts = [
-    facts.questions !== null && `${num(facts.questions)} questions`,
-    `${facts.tests.total} practice tests`,
-    `${facts.lessons.total} lessons`,
-    facts.free.vocabWords !== null && `${num(facts.free.vocabWords)} words`,
-  ].filter(Boolean);
+export function AccountView({ mode, facts, children }: { mode: "register" | "signin"; facts: AuthFacts; children: ReactNode }) {
   return (
-    <div className="w-full max-w-md">
-      <p className="lesson-in text-3xl leading-tight font-bold tracking-tight text-balance sm:text-4xl">Prep for the Digital SAT, all in one place</p>
-      <p className="lesson-in mt-3 text-muted [animation-delay:70ms]">
-        Practice questions, full-length timed tests and short interactive lessons, with your progress saved to your account.
-      </p>
-      <div className="lesson-in mt-8 [animation-delay:140ms]">{children}</div>
-      <div className="lesson-in mt-6 text-sm [animation-delay:220ms]">
-        <p className="text-muted tabular-nums">{parts.join(" · ")}</p>
-        <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
+    <>
+      <AuthBackdrop variant="account" />
+      {/* One tree: below xl a centred single column; at xl a two-column grid (card | art) with the links under the card. */}
+      <div className="flex w-full flex-col items-center xl:ml-[calc(37.5vw-12rem-16rem)] xl:grid xl:max-w-[68.5rem] xl:min-w-0 xl:flex-1 xl:grid-cols-[24rem_minmax(0,42rem)] xl:grid-rows-[auto_auto] xl:items-stretch xl:gap-x-10 xl:gap-y-4">
+        <p className="lesson-in mb-5 w-full max-w-sm text-2xl leading-tight font-bold tracking-tight text-balance xl:hidden">Prep for the Digital SAT, all in one place</p>
+        <div className="lesson-in w-full max-w-sm [animation-delay:80ms] xl:col-start-1 xl:row-start-1 xl:h-full xl:max-w-none">{children}</div>
+        {/* /register: the art's minimum = the sign-up card's height, so the row doesn't grow (and jump) when the form
+            replaces the shorter "Loading…" card. /login's card fits the default 26rem. */}
+        <StellarArt facts={facts} className={`hidden xl:col-start-2 xl:row-start-1 xl:flex ${mode === "register" ? "xl:min-h-[30rem]" : ""}`} />
+        <p className="lesson-in mt-4 flex w-full max-w-sm flex-wrap gap-x-5 gap-y-1 text-sm [animation-delay:160ms] xl:col-start-1 xl:row-start-2 xl:mt-0 xl:max-w-none">
           <TabLink to="features" className={LINK_STRONG}>
             See all features →
           </TabLink>
           <TabLink to="pricing" className={LINK_STRONG}>
             Pricing →
           </TabLink>
-        </div>
+        </p>
       </div>
+    </>
+  );
+}
+
+/* ----------------------------------------------------------------- Backdrop */
+
+type Variant = "features" | "pricing" | "account";
+
+const CONSTELLATION: Record<Variant, [number, number][]> = {
+  features: [[20, 150], [70, 130], [115, 140], [150, 105], [215, 95], [240, 40], [285, 60]],
+  pricing: [[20, 60], [80, 30], [140, 70], [200, 40], [260, 90], [230, 160], [150, 150]],
+  account: [[20, 100], [70, 60], [130, 80], [180, 30], [240, 70], [280, 140]],
+};
+const SEED: Record<Variant, number> = { features: 1000, pricing: 2000, account: 3000 };
+/** Where the glow, the constellation and the shooting star sit. The account panel has the art on its right, so its decorations lean left. */
+const POSITION: Record<Variant, { glowA: string; glowB: string; constellation: string; shoot: string }> = {
+  features: {
+    glowA: "-top-40 -right-40",
+    glowB: "-bottom-48 -left-24",
+    constellation: "right-10 w-[16rem] lg:block",
+    shoot: "left-[62%]",
+  },
+  pricing: {
+    glowA: "-top-40 -right-40",
+    glowB: "-bottom-48 -left-24",
+    constellation: "left-[38%] w-[14rem] lg:block",
+    shoot: "left-[48%] [animation-delay:4.5s]",
+  },
+  account: {
+    glowA: "-top-40 -left-40",
+    glowB: "-right-24 -bottom-48",
+    constellation: "left-10 w-[11rem] xl:block",
+    shoot: "left-[34%] [animation-delay:2s]",
+  },
+};
+
+/** Quiet star-themed background of the Features and Pricing panels (the panel must be `relative isolate overflow-hidden`). */
+function AuthBackdrop({ variant }: { variant: Variant }) {
+  const pts = CONSTELLATION[variant];
+  const pos = POSITION[variant];
+  const last = pts[pts.length - 1];
+  return (
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div className={`absolute ${pos.glowA} h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(closest-side,color-mix(in_srgb,var(--accent)_10%,transparent),transparent)]`} />
+      <div className={`absolute ${pos.glowB} h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(closest-side,color-mix(in_srgb,var(--primary)_6%,transparent),transparent)]`} />
+      <div className="absolute inset-0 opacity-70 [background-image:radial-gradient(var(--color-line)_1.2px,transparent_1.2px)] [background-size:22px_22px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
+      <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full text-ink opacity-40 dark:opacity-60">
+        {makeStars(60, SEED[variant]).map((st, i) => (
+          <circle
+            key={i}
+            cx={st.cx}
+            cy={st.cy}
+            r={st.r}
+            fill="currentColor"
+            opacity={st.o}
+            className={st.twinkle ? "art-twinkle" : undefined}
+            style={st.twinkle ? { animationDelay: `${st.delay}s`, animationDuration: `${st.dur}s` } : undefined}
+          />
+        ))}
+      </svg>
+      <svg
+        viewBox="0 0 300 200"
+        className={`absolute ${variant === "account" ? "top-4" : "top-6"} hidden text-ink opacity-25 dark:opacity-35 ${pos.constellation}`}
+      >
+        <polyline pathLength={1} fill="none" stroke="currentColor" strokeWidth="1" strokeLinejoin="round" className="stat-line" points={pts.map((p) => p.join(",")).join(" ")} />
+        {pts.slice(0, -1).map(([x, y], i) => (
+          <circle key={i} cx={x} cy={y} r="2.5" fill="currentColor" />
+        ))}
+        <circle cx={last[0]} cy={last[1]} r="3.5" fill="#f97316" className="art-pulse" />
+      </svg>
+      <span
+        className={`art-shoot absolute top-[14%] h-px w-32 bg-linear-to-r from-transparent via-ink/50 to-transparent ${pos.shoot}`}
+      />
     </div>
   );
 }
@@ -340,14 +410,17 @@ export function FeaturesView({ facts }: { facts: AuthFacts }) {
   ];
 
   return (
-    <div className="mx-auto max-w-5xl">
-      <p className={`lesson-in ${EYEBROW}`}>Features</p>
-      <h2 className={`${H2} [animation-delay:70ms]`}>What&apos;s inside Stellar</h2>
-      <p className="lesson-in mt-3 max-w-xl text-muted [animation-delay:140ms]">Free to start. Plus unlocks the rest, see Pricing.</p>
-      <div className="lesson-in mt-8 [animation-delay:200ms]">
-        <FeatureCarousel slides={slides} />
+    <>
+      <AuthBackdrop variant="features" />
+      <div className="relative mx-auto max-w-5xl">
+        <p className={`lesson-in ${EYEBROW}`}>Features</p>
+        <h2 className={`${H2} [animation-delay:70ms]`}>What&apos;s inside Stellar</h2>
+        <p className="lesson-in mt-3 max-w-xl text-muted [animation-delay:140ms]">Free to start. Plus unlocks the rest, see Pricing.</p>
+        <div className="lesson-in mt-8 [animation-delay:200ms]">
+          <FeatureCarousel slides={slides} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -516,6 +589,7 @@ export function PricingView({ mode, facts }: { mode: "register" | "signin"; fact
 
   return (
     <>
+      <AuthBackdrop variant="pricing" />
       <Watermark />
       <div className="relative mx-auto w-full max-w-6xl">
         <div className="xl:flex xl:items-end xl:justify-between xl:gap-6">

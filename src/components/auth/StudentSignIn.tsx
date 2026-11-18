@@ -24,10 +24,10 @@ export type Mode = "signin" | "register";
 const RESEND_SECONDS = 60;
 const CODE_LENGTH = 6;
 
-const PRIMARY = "min-h-12 w-full rounded-xl bg-primary px-5 py-3 font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:opacity-40";
-const OUTLINE = "flex min-h-12 w-full items-center justify-center gap-2.5 rounded-xl border border-line px-5 py-3 font-semibold transition-colors hover:bg-surface-2 disabled:opacity-60";
+const PRIMARY = "min-h-11 w-full rounded-xl bg-primary px-5 py-2.5 xl:min-h-10 xl:py-2 font-semibold text-primary-ink transition-colors hover:bg-primary-hover disabled:opacity-40";
+const OUTLINE = "flex min-h-11 w-full items-center justify-center gap-2.5 rounded-xl border border-line px-5 py-2.5 xl:min-h-10 xl:py-2 font-semibold transition-colors hover:bg-surface-2 disabled:opacity-60";
 // 16px text: iOS zooms into smaller inputs.
-const INPUT = "min-h-12 w-full rounded-xl border border-line bg-bg px-3.5 py-3 text-base outline-none focus:border-primary focus:ring-1 focus:ring-primary";
+const INPUT = "min-h-11 w-full rounded-xl border border-line bg-bg px-3.5 py-2.5 xl:min-h-10 xl:py-2 text-base outline-none focus:border-primary focus:ring-1 focus:ring-primary";
 
 const LINK_FAILED = "That sign-in link didn't work — it may have expired or been opened in another browser. Send a new one.";
 const GOOGLE_OFF = "Google sign-in isn't turned on yet — use your email.";
@@ -242,7 +242,7 @@ function SignedIn({ email, note, onContinue }: { email: string | null; note: str
         You&apos;re signed in as <span className="font-medium break-all text-ink">{email ?? "your account"}</span>. Your progress is saved to your account.
       </p>
       {note && <p className="mt-2 text-sm text-muted">{note}</p>}
-      <div className="mt-6 space-y-3">
+      <div className="mt-5 space-y-2.5">
         <button type="button" onClick={onContinue} className={PRIMARY}>
           Continue
         </button>
@@ -405,10 +405,10 @@ function SignInForm({ mode, next, switchHref, linkFailed, notice, step, setStep,
             e.preventDefault();
             verify(code);
           }}
-          className="mt-6 space-y-3"
+          className="mt-5 space-y-2.5"
         >
           <label className="block">
-            <span className="mb-1.5 block text-sm font-medium">6-digit code</span>
+            <span className="mb-1 block text-sm font-medium">6-digit code</span>
             <input
               type="text"
               inputMode="numeric"
@@ -449,7 +449,7 @@ function SignInForm({ mode, next, switchHref, linkFailed, notice, step, setStep,
             Different email
           </button>
         </div>
-        <p className="mt-4 text-[13px] text-muted">Nothing there? Check spam. The email can take a minute to arrive.</p>
+        <p className="mt-3 text-[13px] text-muted">Nothing there? Check spam. The email can take a minute to arrive.</p>
       </AuthPanel>
     );
   }
@@ -468,17 +468,17 @@ function SignInForm({ mode, next, switchHref, linkFailed, notice, step, setStep,
           e.preventDefault();
           submit();
         }}
-        className="mt-6 space-y-3"
+        className="mt-5 space-y-2.5"
       >
         {register && (
           <label className="block">
-            <span className="mb-1.5 block text-sm font-medium">Your name</span>
+            <span className="mb-1 block text-sm font-medium">Your name</span>
             <input type="text" required maxLength={NAME_MAX} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className={INPUT} />
           </label>
         )}
         <div>
           <label className="block">
-            <span className="mb-1.5 block text-sm font-medium">Email</span>
+            <span className="mb-1 block text-sm font-medium">Email</span>
             <input
               type="email"
               required
@@ -506,7 +506,7 @@ function SignInForm({ mode, next, switchHref, linkFailed, notice, step, setStep,
           {busy === "check" ? "Checking…" : busy === "send" ? "Sending…" : register ? "Create account" : "Continue"}
         </button>
       </form>
-      <div className="my-5 flex items-center gap-3 text-[13px] text-muted" aria-hidden="true">
+      <div className="my-4 flex items-center xl:my-3 gap-3 text-[13px] text-muted" aria-hidden="true">
         <span className="h-px flex-1 bg-line" />
         or
         <span className="h-px flex-1 bg-line" />
@@ -520,10 +520,10 @@ function SignInForm({ mode, next, switchHref, linkFailed, notice, step, setStep,
         {busy === "google" ? "Opening Google…" : "Continue with Google"}
       </button>
       {google === false && <p className="mt-2 text-[13px] text-muted">{GOOGLE_OFF}</p>}
-      <p className="mt-6 text-[13px] text-muted">
+      <p className="mt-4 text-[13px] text-muted">
         We&apos;ll only email you sign-in codes.{register ? "" : " Your progress in this browser moves into your account."}
       </p>
-      <p className="mt-4 text-sm text-muted">
+      <p className="mt-2 text-sm text-muted">
         {register ? "Already have an account? " : "New to Stellar? "}
         <Link href={switchHref} className="font-semibold text-primary-strong hover:underline">
           {register ? "Sign in" : "Create an account"}

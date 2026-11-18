@@ -142,7 +142,7 @@ export function AuthTabs({ mode, account, features, pricing }: { mode: "register
       </aside>
 
       <div className="relative lg:pl-64">
-        <div className="absolute top-4 right-4 z-10 hidden lg:block">
+        <div className="absolute top-7 right-7 z-10 hidden lg:block">
           <ThemeToggle className="border border-line bg-surface/90 text-ink shadow-sm hover:bg-surface-2" />
         </div>
         <section
@@ -150,11 +150,11 @@ export function AuthTabs({ mode, account, features, pricing }: { mode: "register
           role="tabpanel"
           aria-labelledby="auth-tab-account"
           hidden={tab !== "account"}
-          className="flex min-h-[calc(100svh-7rem)] flex-col items-center justify-center px-4 py-10 sm:px-8 lg:min-h-screen lg:py-16"
+          className="relative isolate overflow-x-clip flex min-h-[calc(100svh-7rem)] flex-col items-center justify-center px-4 py-8 sm:px-8 lg:min-h-screen xl:min-h-screen xl:flex-row xl:items-center xl:justify-start xl:py-6 xl:pr-4 xl:pl-0"
         >
           {account}
         </section>
-        <section id="auth-panel-features" role="tabpanel" aria-labelledby="auth-tab-features" hidden={tab !== "features"} className="px-4 py-10 sm:px-8 lg:px-12 lg:py-16">
+        <section id="auth-panel-features" role="tabpanel" aria-labelledby="auth-tab-features" hidden={tab !== "features"} className="relative isolate overflow-hidden px-4 py-10 sm:px-8 lg:min-h-screen lg:px-12 lg:py-16">
           {features}
         </section>
         <section
