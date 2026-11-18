@@ -32,7 +32,7 @@ digital-sat-format--adaptive
 ```
 
 # Question order
-Math climbs. Reading and Writing restarts.
+Math climbs. Conventions climb once.
 
 ## Math climbs
 
@@ -40,16 +40,16 @@ Math climbs. Reading and Writing restarts.
 digital-sat-format--order-math
 ```
 
-## Reading restarts
+## Conventions: one climb
 
 ```visual
 digital-sat-format--order-rw
 ```
 
 # Bluebook tools
-Five helpers built into the test.
+Nine helpers built into Bluebook.
 
-## Your tools
+## Bluebook's nine tools
 
 ```visual
 digital-sat-format--tools

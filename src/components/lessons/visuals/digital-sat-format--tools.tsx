@@ -1,55 +1,49 @@
 import type { ReactNode } from "react";
 import { C, Css, Svg } from "./kit";
 
-// The Bluebook tools: a countdown timer, the Desmos calculator, the formula (reference) sheet,
-// the flag (Mark for Review) and the cross-out (Option Eliminator).
+// The nine Bluebook tools, by Bluebook's own names, appear one by one.
 export const alt =
-  "Five built-in tools appear one by one: a timer, the Desmos graphing calculator drawing a parabola, a formula sheet, a flag to mark a question, and a line crossing out an answer choice.";
+  "Nine Bluebook tools appear one by one: Testing Timer, Calculator, Reference Sheet, Highlights & Notes, Mark for Review, Line Reader, Option Eliminator, Question Menu and Zoom.";
 
 const P = "v-digital-sat-format--tools-";
-/** Tile n arrives at t%, is the accent while its tool acts, then calms down. */
+const A = P + "a";
+const SCENE = P + "scene";
+/** Tile n arrives at t%, is the accent while it is new, then calms down. */
 const tile = (n: number, t: number) => {
   const g = P + "t" + n;
   const b = P + "o" + n;
   return `.${g} { transform-box: fill-box; transform-origin: center; animation-name: ${g}; }
-@keyframes ${g} { 0%, ${t}% { opacity: 0; transform: scale(0.85) } ${t + 4}%, 100% { opacity: 1; transform: none } }
+@keyframes ${g} { 0%, ${t}% { opacity: 0; transform: scale(0.88) } ${t + 4}%, 100% { opacity: 1; transform: none } }
 .${b} { animation-name: ${b}; }
-@keyframes ${b} { 0%, ${t + 13}% { stroke: ${C.primary}; fill: ${C.soft} } ${t + 17}%, 100% { stroke: ${C.line}; fill: ${C.fill} } }`;
-};
-/** A stroke that draws itself between a% and b%. */
-const draw = (n: string, a: number, b: number) => {
-  const k = P + n;
-  return `.${k} { stroke-dasharray: 100; animation-name: ${k}; }
-@keyframes ${k} { 0%, ${a}% { stroke-dashoffset: 100 } ${b}%, 100% { stroke-dashoffset: 0 } }`;
+@keyframes ${b} { 0%, ${t + 4}% { stroke: ${C.primary}; fill: ${C.soft} } ${t + 11}%, 100% { stroke: ${C.line}; fill: ${C.fill} } }`;
 };
 
 const css = `
 .v-digital-sat-format--tools-a { animation: 10s ease-in-out infinite; }
 .v-digital-sat-format--tools-scene { animation-name: v-digital-sat-format--tools-scene; }
 @keyframes v-digital-sat-format--tools-scene { 0% { opacity: 0 } 4%, 93% { opacity: 1 } 98%, 100% { opacity: 0 } }
-${tile(1, 5)}
-${tile(2, 22)}
-${tile(3, 39)}
-${tile(4, 56)}
-${tile(5, 73)}
-.v-digital-sat-format--tools-hand { transform-box: view-box; transform-origin: 64px 44px; animation-name: v-digital-sat-format--tools-hand; }
-@keyframes v-digital-sat-format--tools-hand { 0%, 8% { transform: rotate(0deg) } 20%, 100% { transform: rotate(360deg) } }
-${draw("curve", 27, 37)}
-.v-digital-sat-format--tools-form { animation-name: v-digital-sat-format--tools-form; }
-@keyframes v-digital-sat-format--tools-form { 0%, 44% { opacity: 0 } 50%, 100% { opacity: 1 } }
-.v-digital-sat-format--tools-flag { transform-box: fill-box; transform-origin: left center; animation-name: v-digital-sat-format--tools-flag; }
-@keyframes v-digital-sat-format--tools-flag { 0%, 61% { transform: scaleX(0) } 68%, 100% { transform: scaleX(1) } }
-${draw("strike", 78, 86)}
+${[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => tile(i + 1, 5 + i * 8.5)).join("\n")}
 `;
 
-function Tile({ x, y, label, g, b, children }: { x: number; y: number; label: string; g: string; b: string; children: ReactNode }) {
+const TW = 92;
+const TH = 46;
+
+function Tile({ n, label, children }: { n: number; label: string[]; children: ReactNode }) {
+  const col = (n - 1) % 3;
+  const row = Math.floor((n - 1) / 3);
+  const x = 16 + col * (TW + 6);
+  const y = 16 + row * (TH + 5);
   return (
-    <g className={g}>
-      <rect className={b} x={x} y={y} width={84} height={62} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
-      {children}
-      <text x={x + 42} y={y + 54} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.ink}>
-        {label}
-      </text>
+    <g className={`${A} ${P + "t" + n}`}>
+      <rect className={`${A} ${P + "o" + n}`} x={x} y={y} width={TW} height={TH} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
+      <g transform={`translate(${x + 19} ${y + 23})`} fill="none" stroke={C.ink} strokeWidth={1.75}>
+        {children}
+      </g>
+      {label.map((t, i) => (
+        <text key={t} x={x + 36} y={y + (label.length === 1 ? 27 : 20 + i * 13)} fontSize={11} fontWeight={700} fill={C.ink} stroke="none">
+          {t}
+        </text>
+      ))}
     </g>
   );
 }
@@ -58,46 +52,73 @@ export default function Visual() {
   return (
     <Svg label={alt}>
       <Css>{css}</Css>
-      <g className="v-digital-sat-format--tools-a v-digital-sat-format--tools-scene">
-        {/* Timer */}
-        <Tile x={22} y={20} label="timer" g="v-digital-sat-format--tools-a v-digital-sat-format--tools-t1" b="v-digital-sat-format--tools-a v-digital-sat-format--tools-o1">
-          <circle cx={64} cy={44} r={13} fill={C.bg} stroke={C.ink} strokeWidth={2} />
-          <line x1={64} y1={31} x2={64} y2={27} stroke={C.ink} strokeWidth={2} />
-          <line x1={60} y1={26.5} x2={68} y2={26.5} stroke={C.ink} strokeWidth={2} />
-          <line className="v-digital-sat-format--tools-a v-digital-sat-format--tools-hand" x1={64} y1={44} x2={64} y2={35} stroke={C.ink} strokeWidth={2.5} />
-          <circle cx={64} cy={44} r={1.8} fill={C.ink} />
+      <g className={`${A} ${SCENE}`}>
+        {/* 1 Testing Timer */}
+        <Tile n={1} label={["Testing", "Timer"]}>
+          <circle cx={0} cy={1} r={9} fill={C.bg} />
+          <line x1={0} y1={-8} x2={0} y2={-12} />
+          <line x1={-3} y1={-12} x2={3} y2={-12} />
+          <line x1={0} y1={1} x2={0} y2={-5} />
+          <line x1={0} y1={1} x2={4} y2={3} />
         </Tile>
 
-        {/* Desmos: axes and a parabola */}
-        <Tile x={118} y={20} label="Desmos" g="v-digital-sat-format--tools-a v-digital-sat-format--tools-t2" b="v-digital-sat-format--tools-a v-digital-sat-format--tools-o2">
-          <rect x={138} y={27} width={44} height={33} rx={4} fill={C.bg} stroke={C.line} strokeWidth={1} />
-          <line x1={141} y1={52} x2={179} y2={52} stroke={C.muted} strokeWidth={1.5} />
-          <line x1={160} y1={30} x2={160} y2={57} stroke={C.muted} strokeWidth={1.5} />
-          <path className="v-digital-sat-format--tools-a v-digital-sat-format--tools-curve" d="M144 33 Q160 71 176 33" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2.5} />
+        {/* 2 Calculator (Desmos): axes and a parabola */}
+        <Tile n={2} label={["Calculator"]}>
+          <rect x={-11} y={-11} width={22} height={22} rx={3} fill={C.bg} stroke={C.line} strokeWidth={1.25} />
+          <line x1={-8} y1={5} x2={8} y2={5} stroke={C.muted} strokeWidth={1.25} />
+          <line x1={0} y1={-8} x2={0} y2={8} stroke={C.muted} strokeWidth={1.25} />
+          <path d="M-7 -7 Q0 17 7 -7" stroke={C.primary} strokeWidth={2} />
         </Tile>
 
-        {/* Formula sheet */}
-        <Tile x={214} y={20} label="formulas" g="v-digital-sat-format--tools-a v-digital-sat-format--tools-t3" b="v-digital-sat-format--tools-a v-digital-sat-format--tools-o3">
-          <rect x={230} y={28} width={52} height={31} rx={4} fill={C.bg} stroke={C.ink} strokeWidth={1.5} />
-          <text className="v-digital-sat-format--tools-a v-digital-sat-format--tools-form" x={256} y={48} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink}>
-            A = πr²
-          </text>
+        {/* 3 Reference Sheet */}
+        <Tile n={3} label={["Reference", "Sheet"]}>
+          <rect x={-8} y={-11} width={16} height={22} rx={2} fill={C.bg} />
+          <line x1={-4} y1={-5} x2={4} y2={-5} strokeWidth={1.5} />
+          <line x1={-4} y1={0} x2={4} y2={0} strokeWidth={1.5} />
+          <line x1={-4} y1={5} x2={1} y2={5} strokeWidth={1.5} />
         </Tile>
 
-        {/* Flag: mark for review */}
-        <Tile x={70} y={98} label="flag" g="v-digital-sat-format--tools-a v-digital-sat-format--tools-t4" b="v-digital-sat-format--tools-a v-digital-sat-format--tools-o4">
-          <line x1={104} y1={107} x2={104} y2={138} stroke={C.ink} strokeWidth={2.5} />
-          <path className="v-digital-sat-format--tools-a v-digital-sat-format--tools-flag" d="M105 108 L126 115 L105 123 Z" fill={C.primary} stroke={C.primary} strokeWidth={1.5} />
+        {/* 4 Highlights & Notes */}
+        <Tile n={4} label={["Highlights", "& Notes"]}>
+          <rect x={-11} y={-4} width={22} height={7} rx={2} fill={C.soft} stroke="none" />
+          <line x1={-10} y1={-8} x2={10} y2={-8} strokeWidth={1.5} stroke={C.muted} />
+          <line x1={-10} y1={0} x2={10} y2={0} strokeWidth={1.5} />
+          <line x1={-10} y1={8} x2={3} y2={8} strokeWidth={1.5} stroke={C.muted} />
         </Tile>
 
-        {/* Cross-out: rule out a choice */}
-        <Tile x={166} y={98} label="cross out" g="v-digital-sat-format--tools-a v-digital-sat-format--tools-t5" b="v-digital-sat-format--tools-a v-digital-sat-format--tools-o5">
-          <rect x={180} y={111} width={56} height={22} rx={11} fill={C.bg} stroke={C.muted} strokeWidth={1.5} />
-          <text x={192} y={126} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.muted}>
-            B
-          </text>
-          <rect x={201} y={119} width={27} height={6} rx={3} fill={C.line} />
-          <line className="v-digital-sat-format--tools-a v-digital-sat-format--tools-strike" x1={176} y1={122} x2={240} y2={122} pathLength={100} stroke={C.ink} strokeWidth={2.5} />
+        {/* 5 Mark for Review: a bookmark */}
+        <Tile n={5} label={["Mark for", "Review"]}>
+          <path d="M-6 -11 H6 V11 L0 6 L-6 11 Z" fill={C.primary} stroke={C.primary} strokeWidth={1.5} />
+        </Tile>
+
+        {/* 6 Line Reader: one line in focus, the others dimmed */}
+        <Tile n={6} label={["Line", "Reader"]}>
+          <line x1={-10} y1={-8} x2={10} y2={-8} strokeWidth={1.5} stroke={C.line} />
+          <rect x={-12} y={-4} width={24} height={8} rx={2} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
+          <line x1={-9} y1={0} x2={9} y2={0} strokeWidth={1.5} />
+          <line x1={-10} y1={8} x2={10} y2={8} strokeWidth={1.5} stroke={C.line} />
+        </Tile>
+
+        {/* 7 Option Eliminator: a crossed-out choice */}
+        <Tile n={7} label={["Option", "Eliminator"]}>
+          <rect x={-12} y={-7} width={24} height={14} rx={7} fill={C.bg} stroke={C.muted} strokeWidth={1.5} />
+          <line x1={-15} y1={0} x2={15} y2={0} strokeWidth={2.25} />
+        </Tile>
+
+        {/* 8 Question Menu: a grid of questions, one marked */}
+        <Tile n={8} label={["Question", "Menu"]}>
+          <rect x={-11} y={-11} width={9} height={9} rx={2} fill={C.bg} strokeWidth={1.5} />
+          <rect x={2} y={-11} width={9} height={9} rx={2} fill={C.primary} stroke={C.primary} strokeWidth={1.5} />
+          <rect x={-11} y={2} width={9} height={9} rx={2} fill={C.bg} strokeWidth={1.5} />
+          <rect x={2} y={2} width={9} height={9} rx={2} fill={C.bg} strokeWidth={1.5} />
+        </Tile>
+
+        {/* 9 Zoom: a magnifier */}
+        <Tile n={9} label={["Zoom"]}>
+          <circle cx={-2} cy={-2} r={8} fill={C.bg} />
+          <line x1={4} y1={4} x2={11} y2={11} strokeWidth={2.5} />
+          <line x1={-5} y1={-2} x2={1} y2={-2} strokeWidth={1.5} stroke={C.primary} />
+          <line x1={-2} y1={-5} x2={-2} y2={1} strokeWidth={1.5} stroke={C.primary} />
         </Tile>
       </g>
     </Svg>

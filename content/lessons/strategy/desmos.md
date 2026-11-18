@@ -20,6 +20,10 @@ type x-y=-1 :: Each equation gets its own line.
 point (2, 3) :: Click the crossing: (x, y) = (2, 3).
 ```
 
+```more
+A **system** is two or more equations that share the same unknowns. A solution must make every equation true at the same time. On a graph, that is the point where the lines cross. Click the gray dot at the crossing to see its coordinates.
+```
+
 ## Answer what's asked
 
 ```quiz
@@ -34,8 +38,8 @@ point (2, 3) :: Click the crossing: (x, y) = (2, 3).
 ~ say :: The question asks for x + y: 3 + 1 = 4.
 ```
 
-# One equation
-Graph both sides. Zoom out. Count crossings.
+# Graph both sides
+Crossings solve it. Overlap shows equal.
 
 ## Graph both sides
 
@@ -48,6 +52,10 @@ type y=2x+8 :: The right side.
 point (-2, 4) :: One crossing on screen: x = −2.
 zoom -10 10 -5 25 :: Zoom out. A second crossing was hiding.
 point (4, 16) :: Two solutions: x = −2 and x = 4.
+```
+
+```more
+To **solve** an equation is to find the x that makes both sides equal. Where the two graphs cross, both sides have the same value. So the x of each crossing is a solution. A crossing can sit off the screen, so zoom out before you count.
 ```
 
 ## Zoom before you count
@@ -65,18 +73,38 @@ You graph `y=2^x` and `y=3x+1` to solve 2^x = 3x + 1. You see one crossing, at (
 ~ point (3.538, 11.613) :: A second crossing: two solutions.
 ```
 
+## Same graph, same value
+
+Equivalent expressions have the same value for every x. Graph both. Do the graphs overlap?
+
+```quiz
+Which expression is equivalent to (x − 2)² + 4x?
+* x² + 4
+- x² − 4 :: The constant is +4, because (−2)² = 4.
+- x² + 8x + 4 :: That comes from (x + 2)². The sign inside is −.
+> Graph each choice. Only y = x² + 4 lies exactly on top of y = (x − 2)² + 4x.
+~ type y=(x-2)^{2}+4x :: Type the original.
+~ type y=x^{2}-4 :: Not on top of the original: not equivalent.
+~ type y=x^{2}+4 :: This one covers the original exactly.
+```
+
 # Max and min
 Click the top or bottom point.
 
 ## Click the turning point
 
-Desmos graphs only x and y: retype other letters as x. The max or min **value** is the point's y.
+Type the function as y = …, or as f(x) = …. Other letters? Retype them as x. The max or min **value** is the point's y.
 
 ```desmos
-f(x) = x² − 6x + 5. What is the minimum value of f?
-type y=x^{2}-6x+5 :: Type f(x) as y.
+f(x) = x² − 6x + 5. Find f(7) and the minimum value of f.
+type f(x)=x^{2}-6x+5 :: Type f(x) as written. Desmos graphs it.
 point (3, -4) :: Click the lowest point: (3, −4).
 say :: The minimum value is y: −4. It happens at x = 3.
+type f(7) :: Type f(7): Desmos shows 12.
+```
+
+```more
+**f(x)** is a function. f(7) means: put 7 in for x. Type f(x) once, then type f(7) on a new line to get its value. A **maximum** is the highest value, a **minimum** the lowest. Desmos can also graph h(t) = … directly, but retyping with x and y is the safest habit.
 ```
 
 ## Read the right number
@@ -109,6 +137,10 @@ slider k = 3 .. -1 :: Drag k down until the line just touches.
 point (1, 1) :: One shared point at k = −1.
 ```
 
+```more
+A **slider** is a control that changes a letter's value while you watch the graph. A **constant** is a number you do not know yet, like k. Drag the slider and look for the moment the graph does what the question describes, such as touching a line once.
+```
+
 ## No solution
 
 ```quiz
@@ -139,8 +171,8 @@ The graph of y = x² − 4x + c touches the x-axis exactly once. What is c?
 ~ point (2, 0) :: One touch at c = 4.
 ```
 
-# Tables and regression
-Enter the points. Fit them with ~.
+# Tables and lists
+Fit points with ~. Mean and median in one line.
 
 ## Fit a table with ~
 
@@ -152,6 +184,10 @@ table x_1: 1, 2, 3; y_1: 5, 8, 11 :: Enter the points in a table.
 zoom -2 6 -2 14
 type y_{1}\sim mx_{1}+b :: Use ~, not =. Desmos finds m = 3 and b = 2.
 say :: The line is y = 3x + 2.
+```
+
+```more
+A **regression** finds the line or curve that fits points best. The ~ sign tells Desmos: find the numbers that make this model fit the table. For exponential data, which grows by the same factor each step, type y1~ab^x1 and read a and b.
 ```
 
 ## Which input fits?
@@ -167,22 +203,58 @@ A table holds points of a line. Which input makes Desmos find the slope m and th
 ~ type y_{1}\sim mx_{1}+b :: With ~ Desmos shows m = 3 and b = 1.
 ```
 
-## Two points are enough
+## Mean and median
+
+A table or list holds numbers. Desmos finds a mean or a median in one line, and sorts the list for you.
 
 ```quiz
-f is linear, f(2) = 7 and f(6) = 19. What is f(0)?
-* 1
-- 3 :: That's the slope m. f(0) is b.
-- 7 :: That's f(2). The question asks for f(0).
-> Slope = (19 − 7)/(6 − 2) = 3. Then 7 = 3(2) + b, so b = f(0) = 1.
-~ table x_1: 2, 6; y_1: 7, 19 :: Enter the two points.
-~ zoom -3 9 -3 22
-~ type y_{1}\sim mx_{1}+b :: Desmos shows m = 3 and b = 1.
-~ point (0, 1) :: f(0) is the y-intercept b: 1.
+What is the median of 12, 7, 9, 15, 7 and 10?
+* 9.5
+- 9 :: The list has 6 numbers. Average the two middle ones.
+- 10 :: That is the mean. The question asks for the median.
+> Sorted: 7, 7, 9, 10, 12, 15. The middle two are 9 and 10. Their average is 9.5.
+~ type L=\left[12,7,9,15,7,10\right] :: Put the data in a list called L.
+~ type \median\left(L\right) :: Desmos sorts the list and shows 9.5.
+~ type \mean\left(L\right) :: The mean is a different number: 10.
 ```
 
-# Trap: runaway fractions
-Press → to leave the fraction.
+```more
+The **mean** is the sum divided by how many numbers: the average. The **median** is the middle value of the sorted list. With an even count, it is the average of the two middle values. Type mean(L) or median(L) after you name a list L.
+```
+
+# Shading
+Shade the inequality. Test a point.
+
+## Shade the solutions
+
+Type the inequality. Desmos shades where it is true. A dashed line is not included. A solid line is.
+
+```desmos
+Which point is a solution of y < 2x + 1: (0, 3), (1, 3) or (2, 4)?
+type y<2x+1 :: Desmos shades the side where it is true.
+point (2, 4) :: (2, 4) sits in the shading: 4 < 5.
+say :: (1, 3) is on the dashed line, so it is not included.
+```
+
+```more
+An **inequality** compares two sides with <, >, ≤ or ≥. A **solution** is a point that makes it true. The shaded region holds all the solutions. For < and >, the boundary line is dashed and its points are not solutions. For ≤ and ≥, it is solid and they are.
+```
+
+## Solid or dashed?
+
+```quiz
+Which point is a solution of y ≥ 3x − 2?
+* (1, 1)
+- (1, 0) :: It is below the line: 0 ≥ 1 is false.
+- (0, −3) :: Below the line: −3 ≥ −2 is false.
+> (1, 1) is on the solid line, and ≥ includes the line: 1 ≥ 1 is true.
+~ type y\ge3x-2 :: A solid line: the line itself is included.
+~ point (1, 1) :: On the solid line: a solution.
+~ point (1, 0) :: Below the line, outside the shading: not a solution.
+```
+
+# Trap: typing slips
+Press → to leave a fraction. Brackets for long exponents.
 
 ## Escape the bottom
 
@@ -195,14 +267,32 @@ type y=\frac{1}{2}x+3 :: Type `y=1/2`, press →, then `x+3`.
 point (0, 3) :: A line through (0, 3). That's the right graph.
 ```
 
+```more
+The key → is the right arrow key. In a fraction, it moves the cursor out of the bottom part. Desmos shows your input as neat math, so always compare that picture with the question before you trust the graph.
+```
+
 ## Spot the runaway
 
 ```quiz
 You type `y=1/2x+3` without pressing →. What does Desmos graph?
-- y = (1/2)x + 3 :: Trap: without →, nothing leaves the bottom.
+- y = (1/2)x + 3 :: Without →, nothing leaves the bottom.
 - y = 1/(2x) + 3 :: The +3 lands in the bottom too.
 * y = 1/(2x + 3)
 > Type `y=1/2`, press →, then `x+3`. Check the neat line Desmos shows.
 ~ type y=\frac{1}{2x+3} :: Without →, x+3 stays in the bottom.
 ~ type y=\frac{1}{2}x+3 :: With → after the 2, you get the line.
+```
+
+## Brackets in exponents
+
+A + sign ends an exponent by itself. For a longer exponent, use brackets.
+
+```quiz
+You want the graph of y = 2^(x + 1). Which input is right?
+* `y=2^(x+1)`
+- `y=2^x+1` :: The + leaves the exponent. This graphs 2^x + 1.
+- `y=2^x→+1` :: → also leaves the exponent. Same wrong graph.
+> Brackets keep x + 1 together up in the exponent.
+~ type y=2^{x+1} :: With brackets: 2^(x+1).
+~ type y=2^{x}+1 :: This is 2^x + 1. The two graphs differ.
 ```

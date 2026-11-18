@@ -1,22 +1,51 @@
 import { C, Css, Svg } from "./kit";
 
-// Question order in Reading and Writing: questions come type by type. Inside a type they get harder,
-// and each new type starts easy again. (The run lengths are a sketch: the real counts vary by test.)
+// Question order in Reading and Writing: four domain groups in a fixed order. Craft, Ideas and Expression climb
+// skill by skill (short runs). Standard English Conventions is ONE climb, easiest to hardest, whatever the skill.
+// (The run lengths are a sketch: the real counts vary by test.)
 export const alt =
-  "A Reading and Writing module: 27 bars, one per question, in short climbing runs. Each run is one question type, and every new type starts easy again.";
+  "A Reading and Writing module: 27 bars in four groups: Craft, Ideas, Conventions, Expression. The other groups climb in short runs; Conventions is one single climb from easiest to hardest.";
 
 const P = "v-digital-sat-format--order-rw-";
-const BASE = 114;
-const RUNS = [5, 3, 1, 3, 4, 2, 5, 2, 2]; // 27 questions
-const bars = RUNS.flatMap((n, r) => Array.from({ length: n }, (_, k) => ({ r, k }))).map((b, i) => ({ ...b, i, x: 27 + i * 10, h: 20 + b.k * 12 }));
+const A = P + "a";
+const SCENE = P + "scene";
+const BAR = P + "bar";
+const TAG = P + "tag";
+const BASE = 108;
+const GROUPS: { name: string; runs: number[]; one?: boolean }[] = [
+  { name: "Craft", runs: [3, 3, 2] },
+  { name: "Ideas", runs: [3, 2, 2] },
+  { name: "Conventions", runs: [7], one: true },
+  { name: "Expression", runs: [3, 2] },
+];
 
-/** Each bar grows in turn; the first bar of every type ends as the accent. */
+// 27 bars. x: 9 per bar and 9 extra between groups.
+const bars: { i: number; g: number; x: number; h: number; one: boolean }[] = [];
+{
+  let x = 22;
+  let i = 0;
+  GROUPS.forEach((g, gi) => {
+    if (gi > 0) x += 9;
+    g.runs.forEach((n) => {
+      for (let k = 0; k < n; k++) {
+        bars.push({ i: i++, g: gi, x, h: g.one ? 12 + k * 10 : 14 + k * 14, one: Boolean(g.one) });
+        x += 9;
+      }
+    });
+  });
+}
+const groupX = GROUPS.map((_, gi) => {
+  const bs = bars.filter((b) => b.g === gi);
+  return (bs[0].x + bs[bs.length - 1].x + 6) / 2;
+});
+
+/** Each bar grows in turn; the Conventions bars end as the accent. */
 const barCss = bars
-  .map(({ i, k }) => {
-    const t = 8 + i * 1.7;
+  .map(({ i, one }) => {
+    const t = 6 + i * 1.7;
     const n = P + "b" + i;
-    const end = k === 0 ? C.primary : C.muted;
-    return `@keyframes ${n} { 0%, ${t.toFixed(1)}% { transform: scaleY(0); fill: ${C.muted} } ${(t + 4).toFixed(1)}%, 62% { transform: scaleY(1); fill: ${C.muted} } 68%, 100% { transform: scaleY(1); fill: ${end} } }`;
+    const end = one ? C.primary : C.muted;
+    return `@keyframes ${n} { 0%, ${t.toFixed(1)}% { transform: scaleY(0); fill: ${C.muted} } ${(t + 4).toFixed(1)}%, 60% { transform: scaleY(1); fill: ${C.muted} } 66%, 100% { transform: scaleY(1); fill: ${end} } }`;
   })
   .join("\n");
 
@@ -34,38 +63,36 @@ export default function Visual() {
   return (
     <Svg label={alt}>
       <Css>{css}</Css>
-      <g className="v-digital-sat-format--order-rw-a v-digital-sat-format--order-rw-scene">
-        <text x={27} y={34} fontSize={15} fontWeight={700} fill={C.ink}>
+      <g className={`${A} ${SCENE}`}>
+        <text x={22} y={30} fontSize={15} fontWeight={700} fill={C.ink}>
           Reading and Writing
         </text>
 
         {/* One bar per question: height = difficulty */}
-        <line x1={23} y1={BASE + 1} x2={298} y2={BASE + 1} stroke={C.line} strokeWidth={1.5} />
+        <line x1={18} y1={BASE + 1} x2={302} y2={BASE + 1} stroke={C.line} strokeWidth={1.5} />
         {bars.map((b) => (
           <rect
             key={b.i}
-            className="v-digital-sat-format--order-rw-a v-digital-sat-format--order-rw-bar"
+            className={`${A} ${BAR}`}
             style={{ animationName: `${P}b${b.i}` }}
             x={b.x}
             y={BASE - b.h}
             width={7}
             height={b.h}
             rx={2}
-            fill={b.k === 0 ? C.primary : C.muted}
+            fill={b.one ? C.primary : C.muted}
           />
         ))}
-        <text x={30.5} y={130} textAnchor="middle" fontSize={11} fill={C.muted}>
-          1
-        </text>
-        <text x={290.5} y={130} textAnchor="middle" fontSize={11} fill={C.muted}>
-          27
-        </text>
+        {GROUPS.map((g, gi) => (
+          <text key={g.name} x={g.one ? groupX[gi] - 8 : gi === 3 ? 302 : groupX[gi]} y={126} textAnchor={gi === 3 ? "end" : "middle"} fontSize={11} fontWeight={600} fill={g.one ? C.primary : C.muted}>
+            {g.name}
+          </text>
+        ))}
 
         {/* The point */}
-        <g className="v-digital-sat-format--order-rw-a v-digital-sat-format--order-rw-tag">
-          <rect x={27} y={142} width={7} height={14} rx={2} fill={C.primary} />
-          <text x={42} y={154} fontSize={13} fontWeight={700} fill={C.primary}>
-            new type: easy again
+        <g className={`${A} ${TAG}`}>
+          <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+            Conventions: one easy-to-hard climb
           </text>
         </g>
       </g>
