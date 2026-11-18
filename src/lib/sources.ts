@@ -24,13 +24,25 @@ export interface Bank {
   description: string;
   /** Sources included; null = every source. */
   sources: SourceId[] | null;
+  /** Needs Stellar Plus (the "question-bank" feature). */
+  plus: boolean;
 }
 
 export const BANKS: Bank[] = [
   // "all" is the general bank (id kept for old links): everything except College Board.
-  { id: "all", name: "General", description: "Questions from past SAT papers, sorted by topic and difficulty.", sources: ["past", "stellar"] },
-  { id: "cb", name: "College Board", description: "Only questions from the official College Board question bank.", sources: ["cb"] },
+  { id: "all", name: "General", description: "Questions from past SAT papers, sorted by topic and difficulty.", sources: ["past", "stellar"], plus: true },
+  { id: "cb", name: "College Board", description: "Only questions from the official College Board question bank.", sources: ["cb"], plus: false },
 ];
+
+/** Sources open to everyone; every other source needs the "question-bank" feature. */
+export const FREE_SOURCES: readonly SourceId[] = ["cb"];
+/** The bank a free visitor lands in. */
+export const FREE_BANK: BankId = "cb";
+
+/** Whether a question from `source` may be shown to a visitor (canBank = has the "question-bank" feature). */
+export function sourceOpen(source: SourceId, canBank: boolean): boolean {
+  return canBank || FREE_SOURCES.includes(source);
+}
 
 export function getBank(id: BankId): Bank {
   return BANKS.find((b) => b.id === id) ?? BANKS[0];

@@ -3,7 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { InlineScript } from "@/components/InlineScript";
 import { PageTracker } from "@/components/analytics/PageTracker";
 import { PlausibleScript } from "@/components/analytics/PlausibleScript";
+import { AppShell } from "@/components/AppShell";
+import { AuthGate } from "@/components/auth/AuthGate";
 import { Sidebar } from "@/components/Sidebar";
+import { SidebarTour } from "@/components/SidebarTour";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
@@ -41,14 +44,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SyncProvider />
         <PageTracker />
         <PlausibleScript />
-        {/* Desktop theme switch, top-right corner (mobile one lives in the top bar) */}
-        <ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />
-        <div className="flex min-h-screen flex-col transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px] focus-mode:pl-0!">
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </div>
+        <AuthGate />
+        {/* On /register and /login (bare pages) AppShell leaves out the theme switch, the sidebar padding and the footer. */}
+        <AppShell
+          // Desktop theme switch, top-right corner (mobile one lives in the top bar)
+          toggle={<ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />}
+          footer={<SiteFooter />}
+        >
+          {children}
+        </AppShell>
         <SupportDock />
         <Toaster />
+        <SidebarTour />
       </body>
     </html>
   );

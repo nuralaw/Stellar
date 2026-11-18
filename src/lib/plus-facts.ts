@@ -144,23 +144,30 @@ export function lessonFacts(): LessonFacts {
 }
 
 export interface FreeFacts {
-  bankQuestions: number | null;
+  /** College Board bank (free). */
+  cbQuestions: number | null;
+  /** General bank: past-paper and Stellar questions (Plus). */
+  generalQuestions: number | null;
   vocabWords: number | null;
   skills: number;
 }
-/** ONLY call from the static /plus page (bank files are traced for /api routes only; this runs at build there). */
+/** ONLY call from static pages: /plus, and /register and /login via lib/auth-facts.ts (bank files are traced for /api routes only; this runs at build there). */
 export function freeFacts(): FreeFacts {
-  let bankQuestions: number | null = null;
+  let cbQuestions: number | null = null;
+  let generalQuestions: number | null = null;
   let vocabWords: number | null = null;
   try {
-    bankQuestions = getIndex().length;
+    const rows = getIndex();
+    cbQuestions = rows.filter((row) => (row[5] ?? "cb") === "cb").length;
+    generalQuestions = rows.length - cbQuestions;
   } catch {
-    bankQuestions = null;
+    cbQuestions = null;
+    generalQuestions = null;
   }
   try {
     vocabWords = getVocabWords().length;
   } catch {
     vocabWords = null;
   }
-  return { bankQuestions, vocabWords, skills: DOMAINS.flatMap((d) => d.skills).length };
+  return { cbQuestions, generalQuestions, vocabWords, skills: DOMAINS.flatMap((d) => d.skills).length };
 }

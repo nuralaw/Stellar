@@ -11,6 +11,7 @@ import { useNow } from "@/lib/store";
 
 const INCLUDED = [
   { href: "/test", label: "Practice tests" },
+  { href: "/practice", label: "Question Bank" },
   { href: "/lessons", label: "Lessons" },
   { href: "/statistics", label: "Statistics" },
   { href: "/mistakes", label: "Mistakes review" },
@@ -39,7 +40,7 @@ export function PlanSection() {
         <div className="mt-3 flex gap-3 rounded-xl bg-primary-soft/50 p-4">
           <PlusMark size="md" />
           <div>
-            <p className="text-sm">Stellar Plus adds every past-paper practice test, all lessons, your predicted score and spaced review of your mistakes.</p>
+            <p className="text-sm">Stellar Plus adds every past-paper practice test, the full question bank, all lessons, your predicted score and spaced review of your mistakes.</p>
             <Link href="/plus" className={`mt-3 ${BTN_QUIET}`}>
               See Stellar Plus
             </Link>

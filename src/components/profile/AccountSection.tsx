@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { signOut, useAuth } from "@/lib/auth-client";
+import { startTour } from "@/components/SidebarTour";
+import { AUTH_CONFIGURED, goToRegister, signOut, useAuth } from "@/lib/auth-client";
 import { useSyncState } from "@/lib/sync-status";
 import { clearLocalStudentData, signOutAndClear } from "@/lib/sync";
 import { loginHref, syncLabel } from "./sync-label";
@@ -15,7 +15,6 @@ const outlineBtn =
 export function AccountSection() {
   const auth = useAuth();
   const sync = syncLabel(useSyncState());
-  const router = useRouter();
   const [busy, setBusy] = useState<"signout" | "delete" | null>(null);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -25,7 +24,7 @@ export function AccountSection() {
     setError(null);
     try {
       await signOutAndClear();
-      router.push("/");
+      goToRegister();
     } catch {
       setError("Couldn't sign out. Check your connection and try again.");
       setBusy(null);
@@ -41,7 +40,7 @@ export function AccountSection() {
       if (!res.ok) throw new Error(data.error || "Couldn't delete the account. Please try again.");
       clearLocalStudentData();
       await signOut().catch(() => {});
-      router.push("/");
+      goToRegister();
     } catch (e) {
       setError(e instanceof TypeError ? "No connection. Please try again." : (e as Error).message);
       setBusy(null);
@@ -126,6 +125,14 @@ export function AccountSection() {
         <p className="mt-3 text-sm text-danger" role="alert">
           {error}
         </p>
+      )}
+
+      {(auth.user || !AUTH_CONFIGURED) && (
+        <div className="mt-4 border-t border-line pt-4">
+          <button type="button" onClick={startTour} className="inline-flex min-h-10 items-center text-sm font-semibold text-muted hover:text-ink hover:underline">
+            Show the sidebar tour again
+          </button>
+        </div>
       )}
     </div>
   );

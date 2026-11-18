@@ -461,3 +461,174 @@ textarea,
     animation: none;
   }
 }
+
+/* Sidebar tour (components/SidebarTour.tsx): the "dynamic island" pops in, icons draw themselves, the pointed-at
+   sidebar item gets an orange ring with a soft pulse. */
+@keyframes tour-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+}
+@keyframes tour-out {
+  to {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+}
+@keyframes tour-fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes tour-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes tour-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+@keyframes tour-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 2px var(--primary), 0 0 0 0 color-mix(in srgb, var(--primary) 45%, transparent);
+  }
+  60% {
+    box-shadow: 0 0 0 2px var(--primary), 0 0 0 8px transparent;
+  }
+}
+.tour-island {
+  animation: tour-enter 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.tour-island[data-closing] {
+  animation: tour-out 0.22s ease-in forwards;
+}
+.tour-overlay {
+  animation: tour-fade 0.3s ease-out both;
+}
+.tour-overlay[data-closing] {
+  animation: tour-fade-out 0.22s ease-in forwards;
+}
+/* The icon is one path with pathLength="1": dash it, then reveal it. */
+.tour-draw {
+  stroke-dasharray: 1;
+  animation: tour-draw 0.9s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+[data-tour-active] {
+  box-shadow: 0 0 0 2px var(--primary);
+  animation: tour-pulse 1.8s ease-out infinite;
+}
+div[data-tour-active] {
+  border-radius: 0.75rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tour-island,
+  .tour-overlay,
+  .tour-draw,
+  [data-tour-active] {
+    animation: none !important;
+  }
+}
+
+/* Sign-up screen (components/auth): the feature carousel slides in from the right (next) or left (back), the old slide
+   leaves the other way; the current progress segment fills while autoplay runs; the flashcard flips in. */
+@keyframes feat-in-next {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+@keyframes feat-in-prev {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes feat-out-next {
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+@keyframes feat-out-prev {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+@keyframes feat-timer {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes feat-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes feat-flip {
+  from {
+    opacity: 0;
+    transform: perspective(800px) rotateY(-80deg);
+  }
+}
+@keyframes feat-shine {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+.feat-in-next {
+  animation: feat-in-next 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.feat-in-prev {
+  animation: feat-in-prev 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.feat-out-next {
+  animation: feat-out-next 0.5s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+.feat-out-prev {
+  animation: feat-out-prev 0.5s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+.feat-timer {
+  transform-origin: left center;
+  animation-name: feat-timer;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+.feat-float {
+  display: inline-block;
+  animation: feat-float 4s ease-in-out infinite;
+}
+.feat-flip {
+  animation: feat-flip 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.25s both;
+}
+.feat-shine {
+  animation: feat-shine 8s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .feat-in-next,
+  .feat-in-prev,
+  .feat-timer,
+  .feat-float,
+  .feat-flip,
+  .feat-shine {
+    animation: none !important;
+  }
+  .feat-out-next,
+  .feat-out-prev {
+    animation: none !important;
+    visibility: hidden;
+  }
+}

@@ -22,11 +22,11 @@ export function PlusBadge({ tone = "light", className = "" }: { tone?: "light" |
   );
 }
 
-export type PlusFeature = "tests" | "lessons" | "insights" | "review";
+export type PlusFeature = "tests" | "lessons" | "insights" | "review" | "bank";
 
 export interface PlusLockProps {
   variant: "panel" | "card" | "row";
-  /** "What's in Plus" link target /plus#<feature> (panel). */
+  /** "What's in Plus" link target /plus#<feature> (panel); "bank" has no section of its own and goes to /plus#compare. */
   feature: PlusFeature;
   title: string;
   body?: string;
@@ -97,7 +97,7 @@ export function PlusLock({ variant, feature, title, body, points, fact, preview,
               Or keep going free: {free.label} →
             </Link>
           )}
-          <Link href={`/plus#${feature}`} className={LINK_ON_DARK}>
+          <Link href={feature === "bank" ? "/plus#compare" : `/plus#${feature}`} className={LINK_ON_DARK}>
             What&apos;s in Plus
           </Link>
         </p>

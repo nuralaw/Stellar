@@ -10,6 +10,7 @@ import { useAccess, type Plan } from "@/lib/access";
 import { PlusBadge } from "./PlusLock";
 import { Avatar, isPhotoAvatar } from "./Avatar";
 import { SIDEBAR_KEY } from "@/lib/sidebar";
+import { isBarePath } from "@/lib/public-paths";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { reviewQueue } from "@/lib/review";
 import { useAuth } from "@/lib/auth-client";
@@ -41,7 +42,7 @@ function useDueCount(enabled: boolean) {
   return enabled && hydrated && now ? reviewQueue(attempts, now).due.length : 0;
 }
 
-function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void; badges?: Record<string, number> }) {
+function NavGroup({ title, items, pathname, onNavigate, badges = {}, tour }: { title: string; items: NavItem[]; pathname: string; onNavigate: () => void; badges?: Record<string, number>; tour?: boolean }) {
   return (
     <div>
       <p className="px-3 pb-2 text-[11px] font-semibold tracking-wider whitespace-nowrap text-side-muted uppercase rail:hidden">{title}</p>
@@ -53,6 +54,7 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {} }: { title: 
             <li key={item.href}>
               <Link
                 href={item.href}
+                data-tour={tour ? item.href : undefined}
                 onClick={onNavigate}
                 title={item.label}
                 aria-current={active ? "page" : undefined}
@@ -133,6 +135,7 @@ function ProfileCard({ onNavigate, plan, pathname }: { onNavigate: () => void; p
   );
 }
 
+/** `collapsible` = the desktop sidebar, the only one the tour (components/SidebarTour.tsx) points at (data-tour). */
 function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: string; onNavigate: () => void; collapsible?: boolean }) {
   const access = useAccess();
   const due = useDueCount(access.ready && access.can("mistake-review"));
@@ -140,7 +143,7 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
   const plusItem = access.ready && access.plan === "plus" ? { ...PLUS_NAV, label: "Your Plus" } : PLUS_NAV;
   return (
     <div className="flex h-full flex-col gap-8 p-4 rail:px-3">
-      <div className="flex items-center justify-between gap-2 px-2 pt-2 rail:flex-col rail:gap-4 rail:px-0">
+      <div data-tour={collapsible ? "intro" : undefined} className="flex items-center justify-between gap-2 px-2 pt-2 rail:flex-col rail:gap-4 rail:px-0">
         <div className="rail:hidden">
           <Logo eager variant="onDark" />
         </div>
@@ -161,9 +164,9 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
       </div>
       <nav className="flex flex-1 flex-col gap-5" aria-label="Main">
         {NAV_GROUPS.map((g) => (
-          <NavGroup key={g.title} title={g.title} items={g.items} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} />
+          <NavGroup key={g.title} title={g.title} items={g.items} pathname={pathname} onNavigate={onNavigate} badges={{ "/mistakes": due }} tour={collapsible} />
         ))}
-        <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, plusItem, ADMIN_NAV] : [...ACCOUNT_NAV, plusItem]} pathname={pathname} onNavigate={onNavigate} />
+        <NavGroup title="Account" items={admin ? [...ACCOUNT_NAV, plusItem, ADMIN_NAV] : [...ACCOUNT_NAV, plusItem]} pathname={pathname} onNavigate={onNavigate} tour={collapsible} />
       </nav>
       <ProfileCard onNavigate={onNavigate} plan={access.ready ? access.plan : null} pathname={pathname} />
     </div>
@@ -181,6 +184,9 @@ export function Sidebar() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
+
+  // /register and /login are full-screen pages without navigation.
+  if (isBarePath(pathname)) return null;
 
   return (
     <>
@@ -218,6 +224,7 @@ export function Sidebar() {
           open ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Menu"
+        data-tour-skip
         inert={!open}
       >
         <button

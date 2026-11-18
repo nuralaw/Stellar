@@ -14,11 +14,10 @@ import { useAttempts, useNow } from "@/lib/store";
 import { estMinutes } from "@/lib/ui";
 import { PlusMark } from "./PlusMark";
 import { LaunchSentence } from "./PlusPersonal";
-import { ShareWithParent } from "./ShareWithParent";
-import { BTN_GHOST_DARK, BTN_ON_DARK, BTN_PRIMARY, BTN_SECONDARY, FOCUS, LINK_STRONG } from "./styles";
+import { BTN_GHOST_DARK, BTN_ON_DARK, BTN_PRIMARY, FOCUS, LINK_STRONG } from "./styles";
 
 /** The buttons of /plus: hero, plans row and final band. They follow the visitor's plan. */
-export function PlusCta({ variant, tests, lessons }: { variant: "hero" | "plans" | "final"; tests: number; lessons: number }) {
+export function PlusCta({ variant }: { variant: "hero" | "plans" | "final" }) {
   const access = useAccess();
   const auth = useAuth();
   const live = paymentsLive();
@@ -58,7 +57,6 @@ export function PlusCta({ variant, tests, lessons }: { variant: "hero" | "plans"
             <a href="#plans" className={`${BTN_ON_DARK} w-full sm:w-auto`}>
               {live ? "Get Plus" : "See plans"}
             </a>
-            <ShareWithParent tests={tests} lessons={lessons} className={`${BTN_GHOST_DARK} w-full sm:w-auto`} />
           </div>
         )}
       </div>
@@ -103,33 +101,20 @@ export function PlusCta({ variant, tests, lessons }: { variant: "hero" | "plans"
         </p>
       ) : (
         <>
-          <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
-            {!live && !signedIn && (
-              <>
+          {(!signedIn || !live) && (
+            <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
+              {!signedIn && (
                 <Link href={loginHref("/plus#plans")} className={BTN_PRIMARY}>
-                  Sign in
+                  {live ? "Sign in to get Plus" : "Sign in"}
                 </Link>
-                <ShareWithParent tests={tests} lessons={lessons} className={BTN_SECONDARY} />
-              </>
-            )}
-            {!live && signedIn && (
-              <>
-                <ShareWithParent tests={tests} lessons={lessons} className={BTN_PRIMARY} />
-                <Link href="/practice" className={BTN_SECONDARY}>
+              )}
+              {signedIn && !live && (
+                <Link href="/practice" className={BTN_PRIMARY}>
                   Keep practicing free
                 </Link>
-              </>
-            )}
-            {live && !signedIn && (
-              <>
-                <Link href={loginHref("/plus#plans")} className={BTN_PRIMARY}>
-                  Sign in to get Plus
-                </Link>
-                <ShareWithParent tests={tests} lessons={lessons} className={BTN_SECONDARY} />
-              </>
-            )}
-            {live && signedIn && <ShareWithParent tests={tests} lessons={lessons} className={BTN_SECONDARY} />}
-          </div>
+              )}
+            </div>
+          )}
           {!live && !signedIn && <p className="max-w-md text-sm text-muted">Plus is tied to your Stellar account. Sign in now and your progress is saved there, on every device.</p>}
           {!live && (
             <p className="text-sm text-muted">

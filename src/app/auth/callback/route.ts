@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import type { EmailOtpType } from "@supabase/supabase-js";
+import { sameSitePath } from "@/lib/safe-next";
 import { supabaseServer } from "@/lib/supabase/server";
 
 // Auth links land here, then go on to ?next= (same-site paths only):
@@ -9,9 +10,9 @@ import { supabaseServer } from "@/lib/supabase/server";
 
 const OTP_TYPES: EmailOtpType[] = ["signup", "invite", "magiclink", "recovery", "email_change", "email"];
 
-/** Only paths on this site: blocks //evil.com and /\evil.com. */
+/** Only paths on this site (lib/safe-next.ts). */
 function safeNext(want: string | null) {
-  return want && want.startsWith("/") && !want.startsWith("//") && !want.startsWith("/\\") ? want : "/admin";
+  return want === null ? "/admin" : (sameSitePath(want) ?? "/");
 }
 
 export async function GET(request: NextRequest) {

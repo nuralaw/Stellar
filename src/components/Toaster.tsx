@@ -21,7 +21,7 @@ export function Toaster() {
 
   if (!t) return null;
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-5 z-50 flex justify-center px-4" aria-live="polite">
+    <div className="pointer-events-none fixed inset-x-0 bottom-5 z-[70] flex justify-center px-4" aria-live="polite" data-tour-keep>
       <div
         key={t.id}
         role="status"

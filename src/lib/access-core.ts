@@ -11,12 +11,13 @@ export type Plan = "free" | "plus" | "admin";
  * - "lessons": all lessons
  * - "advanced-stats": advanced statistics
  * - "mistake-review": spaced review in Mistakes
+ * - "question-bank": the General bank (past-paper and Stellar questions); the College Board bank stays free
  * - "competition-retry": admin only
  */
-export type Feature = "all-tests" | "lessons" | "advanced-stats" | "mistake-review" | "competition-retry";
+export type Feature = "all-tests" | "lessons" | "advanced-stats" | "mistake-review" | "question-bank" | "competition-retry";
 
 const FREE_FEATURES: ReadonlySet<Feature> = new Set<Feature>();
-const PLUS_FEATURES: ReadonlySet<Feature> = new Set<Feature>(["all-tests", "lessons", "advanced-stats", "mistake-review"]);
+const PLUS_FEATURES: ReadonlySet<Feature> = new Set<Feature>(["all-tests", "lessons", "advanced-stats", "mistake-review", "question-bank"]);
 
 /** Whether a plan includes a feature. Admin gets everything. */
 export function planCan(plan: Plan, feature: Feature): boolean {

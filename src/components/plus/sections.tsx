@@ -1,14 +1,13 @@
 import type { ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import type { FreeFacts, LessonFacts, TestFacts } from "@/lib/plus-facts";
-import { PLUS, formatPrice, parentMessage, paymentsLive } from "@/lib/plus-config";
+import { PLUS, paymentsLive } from "@/lib/plus-config";
 import { INTERVALS } from "@/lib/review";
 import { PlusCta } from "./PlusCta";
 import { FinalDateLine, LaunchSentence } from "./PlusPersonal";
 import { PlusMark } from "./PlusMark";
 import { OpenOnHash } from "./OpenOnHash";
-import { ShareWithParent } from "./ShareWithParent";
-import { BTN_PRIMARY, EYEBROW, FOCUS, PLUS_SURFACE, SECTION } from "./styles";
+import { EYEBROW, FOCUS, PLUS_SURFACE, SECTION } from "./styles";
 
 // The static sections of /plus (server-safe). Every number comes from the facts passed in or from the config.
 
@@ -60,7 +59,7 @@ function Cell({ value }: { value: boolean | string }) {
 
 export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
   const tiles = [
-    { title: "Question Bank", line: f.bankQuestions ? `${num(f.bankQuestions)} questions, each with an explanation` : "Thousands of questions with explanations" },
+    { title: "College Board question bank", line: f.cbQuestions ? `${num(f.cbQuestions)} official College Board questions` : "Official College Board questions" },
     { title: "Vocabulary", line: f.vocabWords ? `${f.vocabWords} words, with practice` : "SAT words, with practice" },
     { title: "Weekly tournament", line: "Rounds and leaderboards every week" },
     { title: "Statistics", line: "Score trend, accuracy and sections" },
@@ -69,11 +68,12 @@ export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: Free
   ];
   const rows: { name: string; free: boolean | string; plus: boolean | string }[] = [
     { name: "Practice tests", free: `${t.free} newest`, plus: `All ${t.total}` },
+    { name: "Question Bank", free: "College Board", plus: f.generalQuestions ? `+ ${num(f.generalQuestions)} past-paper questions` : "+ past-paper questions" },
     { name: "Lessons", free: false, plus: `All ${l.total}` },
     { name: "Predicted score", free: false, plus: true },
     { name: "Weakest skills and topic breakdown", free: false, plus: `${f.skills} skills` },
     { name: "Mistakes", free: "List to practice again", plus: `Spaced review (${INTERVALS.join(", ")} days)` },
-    { name: "Question Bank, vocabulary, tournament", free: true, plus: true },
+    { name: "Vocabulary, tournament", free: true, plus: true },
   ];
   return (
     <section id="free" aria-labelledby="free-title" className={SECTION}>
@@ -91,7 +91,9 @@ export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: Free
           </li>
         ))}
       </ul>
-      <h3 className="mt-12 text-lg font-semibold">Free and Plus, side by side</h3>
+      <h3 id="compare" className="mt-12 scroll-mt-20 text-lg font-semibold lg:scroll-mt-8">
+        Free and Plus, side by side
+      </h3>
       <div className="mt-4 overflow-hidden rounded-2xl border border-line bg-surface">
         <table className="w-full table-fixed text-left text-sm">
           <caption className="sr-only">Free compared with Stellar Plus</caption>
@@ -132,76 +134,19 @@ export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: Free
   );
 }
 
-export function ParentsSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
-  const m = PLUS.plans.monthly.amountCents;
-  const p = PLUS.plans.pass.amountCents;
-  const costs: { dt: string; dd: string }[] = [
-    { dt: "Monthly", dd: m !== null ? `${formatPrice(m)} a month, renews every month until cancelled` : "Price at launch" },
-    { dt: "Until test day", dd: p !== null ? `${formatPrice(p)}, one payment, no auto-renew` : "One payment, no auto-renew. Price announced when payments open." },
-    {
-      dt: "Stays free",
-      dd: `The Question Bank${f.bankQuestions ? ` (${num(f.bankQuestions)} questions)` : ""}, vocabulary, the weekly tournament, basic statistics and the newest practice tests.`,
-    },
-    ...(PLUS.noAds ? [{ dt: "Ads", dd: "None. Stellar has no ads." }] : []),
-    { dt: "Progress", dd: "Answers, scores and mistakes are saved to the student's account and stay even if Plus ends." },
-    ...(PLUS.cancelText ? [{ dt: "Cancelling", dd: PLUS.cancelText }] : []),
-    ...(PLUS.refundDays ? [{ dt: "Refunds", dd: `Full refund within ${PLUS.refundDays} days of paying.` }] : []),
-  ];
-  const days = INTERVALS.length > 1 ? `${INTERVALS.slice(0, -1).join(", ")} and ${INTERVALS[INTERVALS.length - 1]}` : String(INTERVALS[0]);
-  return (
-    <section id="parents" aria-labelledby="parents-title" className={`${SECTION} rounded-3xl border border-line bg-surface p-6 sm:p-10`}>
-      <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
-        <div>
-          <SectionHead
-            id="parents"
-            eyebrow="For parents"
-            title="What your student gets, and what it costs"
-            body="Stellar is free SAT practice. Plus is the paid part: the full set of practice tests, the lessons, and tools that show what to work on next."
-          />
-          <CheckList
-            items={[
-              `All ${t.total} past-paper Digital SAT practice tests, timed module by module, with an estimated score${t.allReviewed ? " and every question explained" : ""}.`,
-              `${l.total} short interactive lessons covering all ${f.skills} SAT skills.`,
-              "A predicted score range and a ranked list of weakest skills, updated after each full practice test.",
-              `Spaced review: every wrong answer comes back after ${days} days until it's right.`,
-            ]}
-          />
-          <div className="mt-8 rounded-2xl border border-line p-5">
-            <h3 className="font-semibold">Asking a parent?</h3>
-            <p className="mt-1 text-sm text-muted">This is the message Send to a parent shares, with a link to this section:</p>
-            <blockquote className="mt-3 rounded-xl bg-bg p-4 text-sm">
-              {parentMessage(t.total, l.total)} <span className="text-muted">[link to this page]</span>
-            </blockquote>
-            <ShareWithParent tests={t.total} lessons={l.total} className={`mt-4 ${BTN_PRIMARY} w-full sm:w-auto`} />
-          </div>
-        </div>
-        <div>
-          <dl className="divide-y divide-line rounded-2xl bg-bg p-5 text-sm">
-            {costs.map((c) => (
-              <div key={c.dt} className="py-3 first:pt-0 last:pb-0">
-                <dt className="font-semibold">{c.dt}</dt>
-                <dd className="mt-0.5 text-muted">{c.dd}</dd>
-              </div>
-            ))}
-          </dl>
-          <p className="mt-2 text-xs text-muted">{PLUS.priceNote}</p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export function FaqSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
   const items: { id: string; q: string; a: ReactNode; show?: boolean }[] = [
     {
       id: "faq-free",
       q: "Is the free plan really free?",
-      a: `Yes, with no time limit and no card. The Question Bank, ${f.vocabWords !== null ? `${f.vocabWords} vocabulary words` : "the vocabulary"}, the weekly tournament, basic statistics, your Mistakes list and the practice tests from ${t.freeLabel} are free, and they stay free.`,
+      a: `Yes, with no time limit and no card. The College Board question bank, ${f.vocabWords !== null ? `${f.vocabWords} vocabulary words` : "the vocabulary"}, the weekly tournament, basic statistics, your Mistakes list and the practice tests from ${t.freeLabel} are free, and they stay free.`,
     },
     {
       id: "faq-what",
       q: "What does Plus add?",
-      a: `All ${t.total} past-paper practice tests (free covers the ${t.free} newest), all ${l.total} lessons, a predicted score with your weakest skills and a topic breakdown, and spaced review of your mistakes.`,
+      a: `All ${t.total} past-paper practice tests (free covers the ${t.free} newest), the General question bank${
+        f.generalQuestions ? ` (${num(f.generalQuestions)} past-paper questions)` : ""
+      }, all ${l.total} lessons, a predicted score with your weakest skills and a topic breakdown, and spaced review of your mistakes.`,
     },
     { id: "faq-trial", q: "Is there a free trial?", a: "There's no trial clock. The free plan is the way to try Stellar, and it doesn't run out." },
     {
@@ -232,11 +177,6 @@ export function FaqSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeF
       id: "faq-end",
       q: "What happens when Plus ends?",
       a: "Nothing is deleted. Your answers, test scores, lesson progress and mistakes stay in your account. Lessons, older tests, the predicted score and spaced review lock again, and if you come back, spaced review picks up from your history.",
-    },
-    {
-      id: "faq-parent",
-      q: "Can a parent pay?",
-      a: "Yes. Plus belongs to the student's Stellar account, so the simplest way is to check out together on the student's signed-in account. Tap Send to a parent to share what's included and what it costs first.",
     },
     {
       id: "faq-tests",
@@ -276,7 +216,7 @@ export function FaqSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeF
   );
 }
 
-export function FinalBand({ tests, lessons }: { tests: number; lessons: number }) {
+export function FinalBand() {
   return (
     <>
       <section aria-labelledby="final-title" className={`mt-20 rounded-3xl px-6 py-10 text-center sm:px-10 md:mt-28 md:py-14 ${PLUS_SURFACE}`}>
@@ -284,9 +224,9 @@ export function FinalBand({ tests, lessons }: { tests: number; lessons: number }
         <h2 id="final-title" className="mt-5 text-3xl font-bold tracking-tight text-balance text-side-ink">
           Every past paper. Every lesson. A plan for every mistake.
         </h2>
-        <p className="mx-auto mt-3 max-w-xl text-side-ink/80">The Question Bank, vocabulary, weekly tournament and newest tests stay free for everyone.</p>
+        <p className="mx-auto mt-3 max-w-xl text-side-ink/80">The College Board question bank, vocabulary, weekly tournament and newest tests stay free for everyone.</p>
         <FinalDateLine />
-        <PlusCta variant="final" tests={tests} lessons={lessons} />
+        <PlusCta variant="final" />
       </section>
       {/* PAGE has pb-12: with this, 96px in all, so the Support button never covers the last CTA. */}
       <div aria-hidden="true" className="h-12" />

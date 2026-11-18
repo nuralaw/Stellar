@@ -7,10 +7,14 @@ import { createServerClient } from "@supabase/ssr";
 const URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
-export async function updateSession(request: NextRequest) {
+/** False when the Supabase env vars aren't set (local dev without Supabase): the proxy then gates nothing. */
+export const SUPABASE_ON = Boolean(URL && KEY);
+
+/** `signedIn`: getClaims() found a user. A visitor with no sb- cookies counts as signed out without any network call. */
+export async function updateSession(request: NextRequest): Promise<{ response: NextResponse; signedIn: boolean }> {
   let response = NextResponse.next({ request });
   // Not set up, or a visitor with no Supabase cookies at all: nothing to refresh.
-  if (!URL || !KEY || !request.cookies.getAll().some((c) => c.name.startsWith("sb-"))) return response;
+  if (!URL || !KEY || !request.cookies.getAll().some((c) => c.name.startsWith("sb-"))) return { response, signedIn: false };
 
   const sb = createServerClient(URL, KEY, {
     cookies: {
@@ -24,6 +28,8 @@ export async function updateSession(request: NextRequest) {
     },
   });
   // Don't put code between createServerClient and this call: it's what triggers the refresh.
-  await sb.auth.getClaims().catch(() => null);
-  return response;
+  const result = await sb.auth.getClaims().catch(() => null);
+  // If Supabase can't be reached (null = it threw), don't lock signed-in students out: treat them as signed in.
+  const signedIn = result === null || result.error?.name === "AuthRetryableFetchError" || Boolean(result.data?.claims?.sub);
+  return { response, signedIn };
 }

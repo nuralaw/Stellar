@@ -60,7 +60,8 @@ export function checkResponses(r: unknown, ids: string[]): Record<string, string
 const deadline = (e: Entry) => e.startedAt + ROUNDS[e.round].minutes * 60_000;
 
 function pick(round: RoundId): string[] {
-  // Easy → medium → hard, random within each difficulty, from every bank.
+  // Easy → medium → hard, random within each difficulty, from every bank (General and College Board) — owner's choice,
+  // even though the General bank is otherwise Plus-only.
   return DIFFS.flatMap((difficulty) =>
     sampleQuestions({ section: round, domain: "all", skill: "all", difficulty, limit: ROUND_MIX[difficulty] }).map((q) => q.id),
   );

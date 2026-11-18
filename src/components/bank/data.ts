@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useAccess } from "@/lib/access";
 import { DOMAINS, getDomain, type SectionId } from "@/lib/taxonomy";
 import type { Attempt } from "@/lib/store";
 import { BANKS, inBank, type BankId, type SourceId } from "@/lib/sources";
@@ -61,48 +62,65 @@ const DIFF_CODE = { e: "easy", m: "medium", h: "hard" } as const;
 
 // ---------- index loading ----------
 
-let indexPromise: Promise<BankItem[]> | null = null;
-function loadIndex(): Promise<BankItem[]> {
-  indexPromise ??= fetch("/api/bank/index")
-    .then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json() as Promise<BankIndexRow[]>;
-    })
-    .then((rows) =>
-      rows.map(
-        ([id, domain, skill, d, preview, source]): BankItem => ({
-          id,
-          n: Number(id.split("-")[1]),
-          section: id.startsWith("rw-") ? "rw" : "math",
-          source: source ?? "cb",
-          domain,
-          skill,
-          difficulty: DIFF_CODE[d],
-          preview,
-        }),
-      ),
-    )
-    .catch((e) => {
-      indexPromise = null; // allow retry
-      throw e;
-    });
-  return indexPromise!;
+// The server sends every row but blanks the previews of Plus-only questions for visitors without Plus,
+// so the two variants are cached separately.
+type IndexVariant = "full" | "free";
+const indexPromises = new Map<IndexVariant, Promise<BankItem[]>>();
+function loadIndex(variant: IndexVariant): Promise<BankItem[]> {
+  let p = indexPromises.get(variant);
+  if (!p) {
+    const request: Promise<BankItem[]> = fetch("/api/bank/index", { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        // The server gave the other variant (e.g. it couldn't confirm Plus): use the answer now, but don't keep it
+        // under this variant's name, so the next mount asks again.
+        const applied = r.headers.get("X-Bank-Access");
+        if (applied && applied !== variant && indexPromises.get(variant) === request) indexPromises.delete(variant);
+        return r.json() as Promise<BankIndexRow[]>;
+      })
+      .then((rows) =>
+        rows.map(
+          ([id, domain, skill, d, preview, source]): BankItem => ({
+            id,
+            n: Number(id.split("-")[1]),
+            section: id.startsWith("rw-") ? "rw" : "math",
+            source: source ?? "cb",
+            domain,
+            skill,
+            difficulty: DIFF_CODE[d],
+            preview,
+          }),
+        ),
+      )
+      .catch((e) => {
+        indexPromises.delete(variant); // allow retry
+        throw e;
+      });
+    indexPromises.set(variant, request);
+    p = request;
+  }
+  return p;
 }
 
+/** The question list for the visitor's plan. Waits until the plan is known; `items` stays null until then. */
 export function useBankIndex(): { items: BankItem[] | null; error: string | null } {
-  const [items, setItems] = useState<BankItem[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const access = useAccess();
+  const variant: IndexVariant = access.can("question-bank") ? "full" : "free";
+  const [state, setState] = useState<{ variant: IndexVariant; items: BankItem[] | null; error: string | null } | null>(null);
   useEffect(() => {
+    if (!access.ready) return;
     let alive = true;
-    loadIndex().then(
-      (x) => alive && setItems(x),
-      (e: Error) => alive && setError(e.message),
+    loadIndex(variant).then(
+      (items) => alive && setState({ variant, items, error: null }),
+      (e: Error) => alive && setState({ variant, items: null, error: e.message }),
     );
     return () => {
       alive = false;
     };
-  }, []);
-  return { items, error };
+  }, [access.ready, variant]);
+  // An answer for the other variant is stale (the plan changed): show nothing until the right one arrives.
+  const mine = access.ready && state?.variant === variant ? state : null;
+  return { items: mine?.items ?? null, error: mine?.error ?? null };
 }
 
 // ---------- full questions (fetched on demand, cached) ----------
@@ -113,12 +131,18 @@ export function cachedQuestion(id: string): Question | undefined {
   return questionCache.get(id);
 }
 
-export async function fetchQuestions(ids: string[]): Promise<void> {
-  const missing = ids.filter((id) => !questionCache.has(id));
-  if (!missing.length) return;
-  const res = await fetch(`/api/questions?ids=${missing.join(",")}`);
+/**
+ * Loads the questions that aren't cached yet. Throws on HTTP / network errors. Questions the server leaves out (this visitor
+ * can't open them, or they no longer exist) don't throw: they come back in `missing`, and `plan` says which variant the server applied.
+ */
+export async function fetchQuestions(ids: string[]): Promise<{ missing: string[]; plan: "full" | "free" | null }> {
+  const todo = ids.filter((id) => !questionCache.has(id));
+  if (!todo.length) return { missing: [], plan: null };
+  const res = await fetch(`/api/questions?ids=${todo.join(",")}`);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   for (const q of (await res.json()).questions as Question[]) questionCache.set(q.id, q);
+  const applied = res.headers.get("X-Bank-Access");
+  return { missing: todo.filter((id) => !questionCache.has(id)), plan: applied === "full" || applied === "free" ? applied : null };
 }
 
 // ---------- status ----------

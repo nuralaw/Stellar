@@ -327,7 +327,12 @@ export function SolveView({
   useEffect(() => {
     let alive = true;
     fetchQuestions(ids.slice(pos, pos + 5)).then(
-      () => alive && setLoaded((n) => n + 1),
+      ({ missing, plan }) => {
+        if (!alive) return;
+        setLoaded((n) => n + 1);
+        // Only the current question matters here; neighbours that didn't load are tried again when we get to them.
+        if (missing.includes(ids[pos])) setError(plan === "free" ? "it needs Stellar Plus, or your plan couldn't be confirmed" : "it isn't available");
+      },
       (e: Error) => alive && setError(e.message),
     );
     return () => {

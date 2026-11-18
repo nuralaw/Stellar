@@ -9,7 +9,7 @@ import { PlusMark } from "@/components/plus/PlusMark";
 import { MemberPanel, PlusCta } from "@/components/plus/PlusCta";
 import { HeroPersonal, ReviewPersonal, TrustLine } from "@/components/plus/PlusPersonal";
 import { HeroArt, LessonsPreview, ReviewTimeline, SampleMistake, StepsStrip, TestsPreview } from "@/components/plus/previews";
-import { CheckList, FaqSection, FinalBand, FreeSection, ParentsSection, SectionHead } from "@/components/plus/sections";
+import { CheckList, FaqSection, FinalBand, FreeSection, SectionHead } from "@/components/plus/sections";
 import { FOCUS, LINK_STRONG, PLUS_SURFACE, SECTION } from "@/components/plus/styles";
 import { PLUS } from "@/lib/plus-config";
 import { freeFacts, lessonFacts, testFacts } from "@/lib/plus-facts";
@@ -25,7 +25,7 @@ const LESSON_THUMBS = ["circles", "transitions", "percentages"];
 export async function generateMetadata(): Promise<Metadata> {
   const t = testFacts();
   const l = lessonFacts();
-  const description = `Stellar stays free. Plus adds all ${t.total} past-paper practice tests, ${l.total} interactive lessons, a predicted score and spaced review of your mistakes.`;
+  const description = `Stellar stays free. Plus adds all ${t.total} past-paper practice tests, the full question bank, ${l.total} interactive lessons, a predicted score and spaced review of your mistakes.`;
   return { title: "Stellar Plus", description, openGraph: { title: "Stellar Plus: every past paper, every lesson", description, type: "website" } };
 }
 
@@ -35,7 +35,6 @@ const JUMP: [string, string][] = [
   ["insights", "Score"],
   ["review", "Review"],
   ["plans", "Pricing"],
-  ["parents", "Parents"],
   ["faq", "FAQ"],
 ];
 
@@ -71,9 +70,9 @@ export default function Page() {
               <span className="text-accent">Fix what&apos;s costing you points.</span>
             </h1>
             <p className="lesson-in mt-5 max-w-xl text-lg text-side-ink/80 [animation-delay:140ms]">
-              Stellar stays free. Plus adds all {t.total} past-paper practice tests, {l.total} interactive lessons, your predicted score and a review plan for every mistake.
+              Stellar stays free. Plus adds all {t.total} past-paper practice tests, the full question bank, {l.total} interactive lessons, your predicted score and a review plan for every mistake.
             </p>
-            <PlusCta variant="hero" tests={t.total} lessons={l.total} />
+            <PlusCta variant="hero" />
             <TrustLine />
             <HeroPersonal freeIds={freeIds} plusOnly={t.plusOnly} />
           </div>
@@ -206,7 +205,7 @@ export default function Page() {
       <section id="plans" aria-labelledby="plans-title" className={SECTION}>
         <SectionHead id="plans" eyebrow="Pricing" title="Pick how long you need Plus" body="Both plans include everything in Plus." center />
         <ul className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-          {[`All ${t.total} practice tests`, `All ${l.total} lessons`, "Predicted score and weak skills", "Spaced review of mistakes"].map((x) => (
+          {[`All ${t.total} practice tests`, "Full question bank", `All ${l.total} lessons`, "Predicted score and weak skills", "Spaced review of mistakes"].map((x) => (
             <li key={x} className="inline-flex items-center gap-1.5">
               <Icon d={I.check} className="h-4 w-4 text-primary-strong" strokeWidth={2.4} />
               {x}
@@ -214,7 +213,7 @@ export default function Page() {
           ))}
         </ul>
         <PlanCards />
-        <PlusCta variant="plans" tests={t.total} lessons={l.total} />
+        <PlusCta variant="plans" />
         <div className="mx-auto mt-6 max-w-2xl space-y-1.5 text-center text-[13px] text-muted">
           <p>{PLUS.priceNote}</p>
           {PLUS.bugDiscountPercent ? (
@@ -229,9 +228,8 @@ export default function Page() {
       </section>
 
       <FreeSection t={t} l={l} f={f} />
-      <ParentsSection t={t} l={l} f={f} />
       <FaqSection t={t} l={l} f={f} />
-      <FinalBand tests={t.total} lessons={l.total} />
+      <FinalBand />
     </div>
   );
 }

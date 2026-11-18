@@ -7,6 +7,9 @@ import { supabaseBrowser } from "./supabase/client";
 // The signed-in student in the browser (Supabase Auth, session in cookies).
 // UI only: servers must check the session themselves (lib/admin.ts currentUser()).
 
+/** False when the Supabase env vars aren't set: there are no accounts then (inlined at build time). */
+export const AUTH_CONFIGURED = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY);
+
 export type AuthUser = { id: string; email: string | null };
 export type AuthState = { ready: boolean; user: AuthUser | null };
 
@@ -63,6 +66,11 @@ export function onAuthChange(cb: (user: AuthUser | null) => void): () => void {
   const off = subscribe(run);
   run();
   return off;
+}
+
+/** Full page load of /register (after signing out: the rest of the site is behind registration, and no stale state is kept). */
+export function goToRegister() {
+  window.location.href = new URL("/register", window.location.origin).href;
 }
 
 /** Signs out in this browser (the cookie session). */

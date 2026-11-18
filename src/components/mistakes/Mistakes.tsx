@@ -13,6 +13,7 @@ import { Dismissible, HideButton } from "@/components/plus/Dismissible";
 import { ReviewTimeline } from "@/components/plus/previews";
 import { LINK_STRONG } from "@/components/plus/styles";
 import { useAccess } from "@/lib/access";
+import { sourceOpen } from "@/lib/sources";
 import { INTERVALS, dueLabel, reviewQueue, type MistakeCard } from "@/lib/review";
 import { useAttempts, useBookmarks, useHydrated, useNow } from "@/lib/store";
 import type { Difficulty } from "@/lib/types";
@@ -56,8 +57,11 @@ export function Mistakes() {
   const bookmarks = useMemo(() => new Set(bookmarkList), [bookmarkList]);
   // While a set is open the list isn't shown, so the queue only matters between sets.
   const queue = useMemo(() => (now ? reviewQueue(attempts, now) : { due: [], upcoming: [], mastered: [] }), [attempts, now]);
-  const known = (list: MistakeCard[]) => list.filter((c) => byId.has(c.qid));
+  const canBank = access.can("question-bank");
+  // Only questions the visitor can open (without Plus, General-bank questions stay hidden).
+  const known = (list: MistakeCard[]) => list.filter((c) => byId.has(c.qid) && sourceOpen(byId.get(c.qid)!.source, canBank));
   const lists: Record<Tab, MistakeCard[]> = { due: known(queue.due), upcoming: known(queue.upcoming), mastered: known(queue.mastered) };
+  const hiddenCount = canBank ? 0 : [...queue.due, ...queue.upcoming, ...queue.mastered].filter((c) => byId.has(c.qid) && !sourceOpen(byId.get(c.qid)!.source, false)).length;
   // Free: one flat list of every mistake, newest first (no schedule).
   const all = [...lists.due, ...lists.upcoming, ...lists.mastered].sort((a, b) => b.lastAt - a.lastAt);
   const shown = canReview ? lists[tab] : all;
@@ -172,6 +176,16 @@ export function Mistakes() {
           </>
         )}
       </div>
+
+      {/* Mistakes from the General bank (Plus) aren't listed without Plus */}
+      {!loading && hiddenCount > 0 && (
+        <p className="mt-3 text-sm text-muted">
+          {fmt(hiddenCount)} more from the General bank open with Plus.{" "}
+          <Link href="/plus#compare" className={LINK_STRONG}>
+            See what&apos;s in Plus
+          </Link>
+        </p>
+      )}
 
       {/* Spaced review is Plus */}
       {!loading && !canReview && all.length > 0 && (

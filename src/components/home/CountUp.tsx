@@ -10,7 +10,7 @@ const calm = () => typeof window !== "undefined" && window.matchMedia("(prefers-
  */
 export function CountUp({ value, suffix = "", delay = 0, duration = 1000 }: { value: number; suffix?: string; delay?: number; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [shown, setShown] = useState(() => (calm() ? value : 0));
+  const [shown, setShown] = useState(0);
   const from = useRef(0);
 
   useEffect(() => {

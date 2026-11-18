@@ -5,6 +5,9 @@ import { toggleBookmark } from "@/lib/store";
 import { SECTIONS, getDomain, type SectionId } from "@/lib/taxonomy";
 import { BANKS, SOURCES, inBank, type BankId } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
+import { PlusBadge, PlusLock } from "@/components/PlusLock";
+import { SignInHint } from "@/components/plus/SignInHint";
+import { LINK_ON_DARK } from "@/components/plus/styles";
 import { RichText } from "@/components/RichText";
 import { DifficultyBadge } from "./QuestionCard";
 import { DIFF_STYLE, TopicsPanel } from "./FilterPanel";
@@ -90,6 +93,7 @@ function pageList(current: number, pages: number): (number | "…")[] {
 
 export function ListView({
   items,
+  canBank,
   filters,
   setFilters,
   results,
@@ -99,6 +103,8 @@ export function ListView({
   onPractice,
 }: {
   items: BankItem[];
+  /** Whether the visitor may use the General bank (Plus). */
+  canBank: boolean;
   filters: Filters;
   setFilters: (f: Filters) => void;
   results: Map<string, boolean>;
@@ -170,6 +176,8 @@ export function ListView({
     if (top < 0) listTop.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  const locked = BANKS.find((b) => b.id === filters.bank)?.plus === true && !canBank;
+
   const activeCount = filters.skills.length + filters.difficulties.length + (filters.status !== "all" ? 1 : 0) + (filters.search.trim() ? 1 : 0);
   const resetAll = () => update({ ...emptyFilters(filters.bank, filters.section), sort: filters.sort });
 
@@ -177,9 +185,10 @@ export function ListView({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const typing = e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement;
-      if (e.key === "/" && !typing) {
+      // (No search box while a locked bank shows the Plus panel.)
+      if (e.key === "/" && !typing && searchRef.current) {
         e.preventDefault();
-        searchRef.current?.focus();
+        searchRef.current.focus();
       }
       if (e.key === "Escape") setSheet(false);
     };
@@ -228,7 +237,10 @@ export function ListView({
               key={b.id}
               type="button"
               aria-pressed={on}
-              onClick={() => update({ ...emptyFilters(b.id, filters.section), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
+              onClick={() => {
+                setSheet(false);
+                update({ ...emptyFilters(b.id, filters.section), difficulties: filters.difficulties, status: filters.status, sort: filters.sort });
+              }}
               className={`group relative flex flex-col items-stretch justify-start rounded-2xl border p-4 text-left transition-colors sm:p-5 ${
                 on ? "border-primary bg-primary-soft/50 ring-1 ring-primary" : "border-line bg-surface hover:border-muted"
               }`}
@@ -237,7 +249,10 @@ export function ListView({
                 <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary/15 text-primary" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
                   <Icon d={b.id === "cb" ? I.badge : I.layers} className="h-5 w-5" />
                 </span>
-                <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
+                <span className="flex items-center gap-2">
+                  {b.plus && !canBank && <PlusBadge />}
+                  <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
+                </span>
               </span>
               <span className="mt-3 block leading-snug font-semibold">{b.name}</span>
               <span className="mt-0.5 hidden text-xs leading-relaxed text-muted sm:block">{b.description}</span>
@@ -263,6 +278,32 @@ export function ListView({
         </div>
       </div>
 
+      {locked ? (
+        <PlusLock
+          variant="panel"
+          feature="bank"
+          className="mt-8"
+          title={`Practice all ${fmt(bankTotals.all)} past-paper questions with Plus`}
+          points={[
+            "Questions from past Digital SAT papers, sorted by topic and difficulty",
+            "Filter by skill, then open any question or start a practice set",
+            "Wrong answers go straight to your Mistakes list",
+          ]}
+          fact={`${fmt(bankTotals.cb)} College Board questions stay free`}
+          footer={
+            <>
+              {/* A Link to this same URL wouldn't reset the state, so the free step is a button. */}
+              <p className="mt-3 text-sm">
+                <button type="button" onClick={() => update({ ...emptyFilters("cb", filters.section), sort: filters.sort })} className={LINK_ON_DARK}>
+                  Or keep going free: College Board questions →
+                </button>
+              </p>
+              <SignInHint />
+            </>
+          }
+        />
+      ) : (
+        <>
       {/* Section tabs */}
       <div className="mt-8 flex gap-6 border-b border-line" role="tablist" aria-label="Section">
         {(["rw", "math"] as SectionId[]).map((s) => {
@@ -590,6 +631,8 @@ export function ListView({
           </nav>
         )}
       </div>
+        </>
+      )}
     </section>
   );
 }

@@ -28,7 +28,7 @@ export interface PlusConfig {
   refundDays: number | null;
   /** Discount for confirmed bug reports (the promise in SupportButton.tsx). null hides it. */
   bugDiscountPercent: number | null;
-  /** Owner-confirmed: Stellar shows no ads. Gates the "no ads" line in the parents summary. */
+  /** Owner-confirmed: Stellar shows no ads (not shown anywhere right now). */
   noAds: boolean;
   /** Owner opt-in: list part titles (table of contents only) on the lesson lock page. */
   lockShowsPartTitles: boolean;
@@ -110,9 +110,4 @@ export const launchUpcoming = (todayIso: string) => Boolean(PLUS.launchDate && t
 export function checkoutHref(p: PlusPlan, ctx: { userId: string; testDate?: string }): string | null {
   if (!isOnSale(p) || !p.checkoutUrl) return null;
   return p.checkoutUrl.split("{userId}").join(encodeURIComponent(ctx.userId)).split("{testDate}").join(encodeURIComponent(ctx.testDate ?? ""));
-}
-/** The message "Send to a parent" shares (the link is added separately). Same text is shown in #parents. */
-export function parentMessage(tests: number, lessons: number): string {
-  const m = PLUS.plans.monthly.amountCents;
-  return `Hi! Could you look at Stellar Plus for my SAT prep? It has all ${tests} past-paper practice tests and ${lessons} interactive lessons${m !== null ? `, and Monthly is ${formatPrice(m)} a month` : ""}. Here's what it includes:`;
 }
