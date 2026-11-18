@@ -1,13 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { TestResult } from "@/lib/store";
-import { fmtDay, useWidth } from "./ScoreChart";
+import { fmtDay } from "./ScoreChart";
 
 // Dashboard "Target score" chart: total score of each full test on a real time axis (x = date, y = score), the target as a
 // dashed line, the latest test labelled (score to its right, date under it). Same look and interaction as ScoreChart.
 
-const H = 180;
+const MIN_H = 180;
+const TIP_W = 208; // tooltip width (w-52), so "Practice test #n · Thu, Nov 12" stays on one line
 const M = { top: 12, right: 52, bottom: 26, left: 40 };
 const DAY = 86_400_000;
 const CHAR_W = 5.8; // rough width of one 11px label character, to keep the date labels apart
@@ -15,10 +16,31 @@ const CHAR_W = 5.8; // rough width of one 11px label character, to keep the date
 /** "Nov 18", or "Nov 18, 2026" when asked for the year. */
 const dayLabel = (at: number, withYear: boolean) => fmtDay(at) + (withYear ? `, ${new Date(at).getFullYear()}` : "");
 
+/** Width and height of the element (ResizeObserver). */
+function useSize<T extends HTMLElement>() {
+  const ref = useRef<T>(null);
+  const [size, setSize] = useState({ w: 0, h: 0 });
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([e]) => {
+      const w = Math.round(e.contentRect.width);
+      const h = Math.round(e.contentRect.height);
+      setSize((s) => (s.w === w && s.h === h ? s : { w, h }));
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  return [ref, size] as const;
+}
+
+/** Fills its parent (absolute inset-0): the parent sets the size (Dashboard: min 180px, stretched to the card on wide screens). */
 export function TargetChart({ points, target }: { points: TestResult[]; target: number | null }) {
-  const [ref, width] = useWidth<HTMLDivElement>();
+  const [ref, size] = useSize<HTMLDivElement>();
   const [active, setActive] = useState<number | null>(null);
   if (!points.length) return null;
+  const width = size.w;
+  const H = Math.max(MIN_H, size.h);
 
   const values = points.map((p) => p.total).concat(target ?? []);
   let lo = Math.max(400, Math.floor((Math.min(...values) - 60) / 100) * 100);
@@ -76,7 +98,7 @@ export function TargetChart({ points, target }: { points: TestResult[]; target: 
   };
 
   return (
-    <div ref={ref} className="relative" style={{ minHeight: H }}>
+    <div ref={ref} className="absolute inset-0">
       {width > 0 && (
         <svg
           width={width}
@@ -163,8 +185,8 @@ export function TargetChart({ points, target }: { points: TestResult[]; target: 
       {/* tooltip */}
       {active !== null && width > 0 && (
         <div
-          className="pointer-events-none absolute top-2 z-10 w-44 rounded-xl border border-line bg-surface px-3 py-2 text-xs shadow-lg"
-          style={{ left: Math.min(Math.max(0, x(a.at) - 88), Math.max(0, width - 176)) }}
+          className="pointer-events-none absolute top-2 z-10 w-52 rounded-xl border border-line bg-surface px-3 py-2 text-xs shadow-lg"
+          style={{ left: Math.min(Math.max(0, x(a.at) - TIP_W / 2), Math.max(0, width - TIP_W)) }}
         >
           <p className="text-lg leading-tight font-bold tabular-nums">{a.total}</p>
           <p className="text-muted">

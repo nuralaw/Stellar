@@ -491,9 +491,10 @@ export function Dashboard() {
                 </span>
               </p>
             )}
-            <div className="mt-3">
+            {/* The chart fills what's left of the card (at least 180px; on wide screens the card is as tall as the calendar). */}
+            <div className="relative mt-3 min-h-[180px] flex-1">
               {!hydrated ? (
-                <Skeleton className="h-[180px] rounded-xl" />
+                <Skeleton className="absolute inset-0 rounded-xl" />
               ) : history.length === 0 ? (
                 <EmptyChart text="Your practice test scores will show up here, next to your target." href="/test" link="Take a practice test" />
               ) : (
