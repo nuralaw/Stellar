@@ -7,11 +7,14 @@ import type { ReportReason } from "@/lib/report-reasons";
 import type { ReportItem } from "@/lib/reports";
 import type { SupportRequest } from "@/lib/support";
 import { getSkill } from "@/lib/taxonomy";
+import { formatMoney, moneyDelta } from "./money";
+import { type Money, type RevenueData, type RevenueResult, useRevenueKpis } from "./revenue-data";
 
 // Admin Overview: the numbers at a glance + the most reported questions.
 //
 //   <OverviewTab />                 fetches /api/admin/inbox itself
 //   <OverviewTab inbox={inbox} />   uses the Support list's already-loaded inbox (no second fetch)
+//   revenue={result}                the same for the revenue strip (useRevenueKpis() result); omitted = fetches itself
 //
 // Also exports the bits ReportsByQuestion shares: useAdminInbox(), groupByQuestion(), questionTitle(), REASON_SHORT, Notice.
 
@@ -110,8 +113,66 @@ function Tile({ label, value, sub }: { label: string; value: number | string; su
   );
 }
 
-export function OverviewTab({ inbox: given }: { inbox?: AdminInbox | null } = {}) {
+const REVENUE_HREF = "/admin?tab=revenue";
+
+/** One compact tile of the revenue strip; the whole tile opens the Revenue tab. */
+function RevenueMini({ label, value, sub, delta }: { label: string; value: string; sub?: string; delta?: ReturnType<typeof moneyDelta> }) {
+  return (
+    <Link href={REVENUE_HREF} className="block rounded-2xl border border-line bg-surface p-3.5 transition-colors hover:border-primary">
+      <p className="text-[13px] text-muted">{label}</p>
+      <p className="mt-0.5 text-2xl font-bold tracking-tight tabular-nums">{value}</p>
+      {delta ? (
+        <p className={`mt-0.5 text-[13px] ${delta.cls}`}>
+          {delta.arrow && <span aria-hidden="true">{delta.arrow} </span>}
+          {delta.text}
+        </p>
+      ) : (
+        <p className="mt-0.5 text-[13px] text-muted">{sub}</p>
+      )}
+    </Link>
+  );
+}
+
+/** Today / This week / This month + active Plus. Never breaks the Overview: on any problem it's one quiet line. */
+function RevenueStrip({ result }: { result: RevenueResult | null }) {
+  if (!result) {
+    return (
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4" aria-busy="true" aria-label="Loading revenue">
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} className="h-20 animate-pulse rounded-2xl bg-surface-2" />
+        ))}
+      </div>
+    );
+  }
+  if (result.kind === "denied") return null;
+  if (result.kind !== "ok") {
+    return (
+      <p className="text-sm text-muted">
+        Revenue:{" "}
+        <Link href={REVENUE_HREF} className="font-semibold text-primary-strong hover:underline">
+          set up payments →
+        </Link>
+      </p>
+    );
+  }
+  const { kpis: k }: RevenueData = result.data;
+  const tile = (label: string, now: Money, before: Money, prev: string) => (
+    <RevenueMini label={label} value={formatMoney(now.gross_cents, k.currency)} delta={moneyDelta(now.gross_cents, before.gross_cents, k.currency, prev)} />
+  );
+  return (
+    <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      {tile("Revenue today", k.today, k.yesterday, "yesterday")}
+      {tile("Revenue this week", k.week, k.last_week, "the same days last week")}
+      {tile("Revenue this month", k.month, k.last_month, "the same days last month")}
+      <RevenueMini label="Active Plus members" value={k.active_plus.toLocaleString("en-US")} sub={`monthly ${k.active_monthly} · pass ${k.active_pass}`} />
+    </div>
+  );
+}
+
+export function OverviewTab({ inbox: given, revenue: givenRevenue }: { inbox?: AdminInbox | null; revenue?: RevenueResult | null } = {}) {
   const own = useAdminInbox(given !== undefined);
+  const ownRevenue = useRevenueKpis(givenRevenue !== undefined);
+  const revenue = givenRevenue !== undefined ? givenRevenue : ownRevenue.result;
   const inbox = given !== undefined ? given : own.inbox;
   // "Now" for the 7-day window: taken once on mount (good enough for an admin glance; keeps render pure).
   const [now] = useState(() => Date.now());
@@ -144,6 +205,8 @@ export function OverviewTab({ inbox: given }: { inbox?: AdminInbox | null } = {}
           ))}
         </div>
       )}
+
+      <RevenueStrip result={revenue} />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Tile label="Open support requests" value={inbox.errors.support ? "–" : openSupport} sub={openSupport ? "Waiting for a reply" : "All answered"} />

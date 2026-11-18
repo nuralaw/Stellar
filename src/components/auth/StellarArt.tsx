@@ -1,7 +1,7 @@
 import { I, Icon } from "@/components/bank/icons";
 import type { AuthFacts } from "@/lib/auth-facts";
 import { MAIN_NAV } from "@/lib/nav";
-import { makeStars } from "./stars";
+import { makeStars } from "@/lib/stars";
 
 // The picture on the right of /register and /login (xl+): a constellation climbing the SAT score scale to 1600, on the
 // charcoal Plus surface. An illustration, not data. Server component: the animations are CSS only (globals.css).

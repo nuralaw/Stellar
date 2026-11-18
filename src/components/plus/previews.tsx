@@ -60,22 +60,6 @@ export function ReviewMini({ className = "" }: { className?: string }) {
   );
 }
 
-/** Hero picture: a live lesson plus two small example cards. */
-export function HeroArt({ visual, title }: { visual: ReactNode; title: string }) {
-  return (
-    <figure className="relative xl:py-8">
-      <ScreenFrame tone="dark" label={`Lesson · ${title}`}>
-        {visual}
-      </ScreenFrame>
-      <div className="mt-4 grid grid-cols-2 gap-3 xl:mt-0 xl:block">
-        <ScoreMini className="xl:absolute xl:-bottom-6 xl:right-0 xl:w-56" />
-        <ReviewMini className="xl:absolute xl:top-0 xl:right-0 xl:w-52" />
-      </div>
-      <figcaption className="sr-only">Preview of Stellar Plus: an animated lesson, an example predicted score and an example mistake scheduled for review.</figcaption>
-    </figure>
-  );
-}
-
 export function TestsPreview({ tiles }: { tiles: TestTile[] }) {
   const sample = SAMPLE_HISTORY[1];
   return (
@@ -131,24 +115,6 @@ export function StepsStrip() {
         </li>
       ))}
     </ol>
-  );
-}
-
-export function LessonsPreview({ main, thumbs }: { main: { title: string; visual: ReactNode }; thumbs: { slug: string; title: string; visual: ReactNode }[] }) {
-  return (
-    <div>
-      <ScreenFrame tone="light" label={`Lesson · ${main.title}`}>
-        {main.visual}
-      </ScreenFrame>
-      <ul className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
-        {thumbs.map((t) => (
-          <li key={t.slug} className="rounded-xl bg-surface p-1.5 ring-1 ring-line">
-            <Stage className="aspect-[16/9] w-full">{t.visual}</Stage>
-            <p className="line-clamp-2 px-1 pt-1.5 pb-0.5 text-xs font-semibold sm:text-sm">{t.title}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
 

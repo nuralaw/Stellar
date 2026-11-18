@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { daysLeft, formatDate } from "@/components/PlanLabel";
-import { loginHref } from "@/components/profile/sync-label";
 import { useAccess } from "@/lib/access";
 import { useAuth } from "@/lib/auth-client";
 import { STATS_ICON } from "@/lib/nav";
@@ -13,114 +12,43 @@ import { reviewQueue } from "@/lib/review";
 import { useAttempts, useNow } from "@/lib/store";
 import { estMinutes } from "@/lib/ui";
 import { PlusMark } from "./PlusMark";
-import { LaunchSentence } from "./PlusPersonal";
-import { BTN_GHOST_DARK, BTN_ON_DARK, BTN_PRIMARY, FOCUS, LINK_STRONG } from "./styles";
+import { BTN_GHOST_DARK, BTN_ON_DARK, FOCUS } from "./styles";
 
-/** The buttons of /plus: hero, plans row and final band. They follow the visitor's plan. */
-export function PlusCta({ variant }: { variant: "hero" | "plans" | "final" }) {
+/** The buttons of the final band of /plus. They follow the visitor's plan. */
+export function PlusCta() {
   const access = useAccess();
-  const auth = useAuth();
   const live = paymentsLive();
   const member = access.plan === "plus";
-  const signedIn = Boolean(auth.user) || access.plan === "admin";
-  const until = access.expiresAt ? ` until ${formatDate(access.expiresAt)}` : "";
 
-  if (!access.ready) {
-    const box = variant === "plans" ? "bg-surface-2" : "bg-white/10";
-    const wrap = variant === "hero" ? "mt-8 min-h-[6.25rem] sm:min-h-11" : "mt-8";
+  if (!access.ready)
     return (
-      <div className={wrap} aria-hidden="true">
-        <div className={`flex flex-col gap-3 sm:flex-row ${variant === "hero" ? "" : "sm:justify-center"}`}>
-          <div className={`h-11 w-full animate-pulse rounded-xl sm:w-36 ${box}`} />
-          <div className={`h-11 w-full animate-pulse rounded-xl sm:w-44 ${box}`} />
+      <div className="mt-8" aria-hidden="true">
+        <div className="flex flex-col justify-center gap-3 sm:flex-row">
+          <div className="h-11 w-full animate-pulse rounded-xl bg-white/10 sm:w-36" />
+          <div className="h-11 w-full animate-pulse rounded-xl bg-white/10 sm:w-44" />
         </div>
       </div>
     );
-  }
 
-  if (variant === "hero") {
-    return (
-      <div className="mt-8 min-h-[6.25rem] sm:min-h-11">
-        {member ? (
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <p className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-4 text-sm font-semibold text-side-ink ring-1 ring-white/15">
-              <Icon d={I.check} className="h-4 w-4 text-accent" strokeWidth={3} />
-              You have Stellar Plus
-              <span className="font-normal text-side-ink/80">{until}</span>
-            </p>
-            <a href="#your-plus" className={BTN_GHOST_DARK}>
-              Your Plus
-            </a>
-          </div>
-        ) : (
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a href="#plans" className={`${BTN_ON_DARK} w-full sm:w-auto`}>
-              {live ? "Get Plus" : "See plans"}
-            </a>
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  if (variant === "final") {
-    return (
-      <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-        {member ? (
-          <>
-            <Link href="/test" className={BTN_ON_DARK}>
-              Take a practice test
-            </Link>
-            <Link href="/lessons" className={BTN_GHOST_DARK}>
-              Open a lesson
-            </Link>
-          </>
-        ) : (
-          <>
-            <a href="#plans" className={BTN_ON_DARK}>
-              {live ? "Get Plus" : "See plans"}
-            </a>
-            <Link href="/practice" className={BTN_GHOST_DARK}>
-              Keep practicing free
-            </Link>
-          </>
-        )}
-      </div>
-    );
-  }
-
-  // plans
   return (
-    <div className="mt-8 flex flex-col items-center gap-3 text-center">
+    <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
       {member ? (
-        <p className="text-sm text-muted">
-          You have Stellar Plus{until}.{" "}
-          <a href="#your-plus" className={LINK_STRONG}>
-            Your Plus
-          </a>
-        </p>
+        <>
+          <Link href="/test" className={BTN_ON_DARK}>
+            Take a practice test
+          </Link>
+          <Link href="/lessons" className={BTN_GHOST_DARK}>
+            Open a lesson
+          </Link>
+        </>
       ) : (
         <>
-          {(!signedIn || !live) && (
-            <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
-              {!signedIn && (
-                <Link href={loginHref("/plus#plans")} className={BTN_PRIMARY}>
-                  {live ? "Sign in to get Plus" : "Sign in"}
-                </Link>
-              )}
-              {signedIn && !live && (
-                <Link href="/practice" className={BTN_PRIMARY}>
-                  Keep practicing free
-                </Link>
-              )}
-            </div>
-          )}
-          {!live && !signedIn && <p className="max-w-md text-sm text-muted">Plus is tied to your Stellar account. Sign in now and your progress is saved there, on every device.</p>}
-          {!live && (
-            <p className="text-sm text-muted">
-              <LaunchSentence format="short" /> Nothing is charged before then.
-            </p>
-          )}
+          <a href="#plans" className={BTN_ON_DARK}>
+            {live ? "Get Plus" : "See plans"}
+          </a>
+          <Link href="/practice" className={BTN_GHOST_DARK}>
+            Keep practicing free
+          </Link>
         </>
       )}
     </div>

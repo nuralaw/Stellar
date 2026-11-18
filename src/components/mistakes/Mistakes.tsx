@@ -111,7 +111,7 @@ export function Mistakes() {
               <>
                 {" "}
                 Plus adds{" "}
-                <Link href="/plus#review" className={LINK_STRONG}>
+                <Link href="/plus#inside" className={LINK_STRONG}>
                   spaced review
                 </Link>
                 .

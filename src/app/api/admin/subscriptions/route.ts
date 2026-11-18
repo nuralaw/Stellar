@@ -1,5 +1,5 @@
 import { NO_STORE, adminOnly } from "@/lib/admin";
-import { removePlus, setPlus } from "@/lib/access-server";
+import { dropAdminFloor, removePlus, setPlus } from "@/lib/access-server";
 
 // Admin only. Stellar Plus is granted by hand for now.
 // GET    → { subscriptions: [{ userId, email, plan, expiresAt, source, note, createdAt, updatedAt }] }
@@ -103,6 +103,7 @@ export async function POST(request: Request) {
   if (typeof note === "string" && note.trim().length > 200) return bad("The note can be at most 200 characters.");
 
   try {
+    await dropAdminFloor(userId); // a hand-made grant replaces any floor a Gumroad sale saved from an earlier one
     const subscription = await setPlus(userId, end, typeof note === "string" ? note : null, "admin");
     return Response.json({ subscription }, { headers: NO_STORE });
   } catch (e) {
@@ -117,6 +118,7 @@ export async function DELETE(request: Request) {
   if (!b) return bad("Bad request.");
   if (typeof b.userId !== "string" || !UUID.test(b.userId)) return bad("Bad user id.");
   try {
+    await dropAdminFloor(b.userId);
     await removePlus(b.userId);
     return Response.json({ ok: true }, { headers: NO_STORE });
   } catch (e) {

@@ -6,8 +6,14 @@ import { PLAN_ORDER, PLUS, formatPrice, priceParts, type PlanId } from "@/lib/pl
 
 // Pricing tab of /register and /login: a two-way switch (Monthly / Until test day) with a sliding pill, the price beside it.
 
-export function PlanPicker() {
-  const [id, setId] = useState<PlanId>("monthly");
+/** Uncontrolled by default (Pricing tab); pass `value` + `onChange` to control it (/plus keeps the choice to drive the buy button). */
+export function PlanPicker({ value, onChange }: { value?: PlanId; onChange?: (id: PlanId) => void } = {}) {
+  const [own, setOwn] = useState<PlanId>("monthly");
+  const id = value ?? own;
+  const setId = (next: PlanId) => {
+    setOwn(next);
+    onChange?.(next);
+  };
   const idx = PLAN_ORDER.indexOf(id);
   const p = PLUS.plans[id];
   const c = p.amountCents;

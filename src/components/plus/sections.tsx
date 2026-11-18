@@ -25,19 +25,6 @@ export function SectionHead({ id, eyebrow, title, body, center = false }: { id: 
   );
 }
 
-export function CheckList({ items, className = "mt-5" }: { items: string[]; className?: string }) {
-  return (
-    <ul className={`${className} space-y-2.5 text-[15px]`}>
-      {items.map((t) => (
-        <li key={t} className="flex gap-2.5">
-          <Icon d={I.check} className="mt-0.5 h-5 w-5 shrink-0 text-primary-strong" strokeWidth={2.4} />
-          <span>{t}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 function Cell({ value }: { value: boolean | string }) {
   if (typeof value === "string") return <span className="text-sm">{value}</span>;
   return value ? (
@@ -57,15 +44,8 @@ function Cell({ value }: { value: boolean | string }) {
   );
 }
 
-export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
-  const tiles = [
-    { title: "College Board question bank", line: f.cbQuestions ? `${num(f.cbQuestions)} official College Board questions` : "Official College Board questions" },
-    { title: "Vocabulary", line: f.vocabWords ? `${f.vocabWords} words, with practice` : "SAT words, with practice" },
-    { title: "Weekly tournament", line: "Rounds and leaderboards every week" },
-    { title: "Statistics", line: "Score trend, accuracy and sections" },
-    { title: "Mistakes list", line: "Every wrong answer, ready to practice again" },
-    { title: "Newest practice tests", line: `The ${t.free} tests from ${t.freeLabel}` },
-  ];
+/** "Free and Plus, side by side": the comparison table (the Free card above already lists what free includes). */
+export function CompareSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: FreeFacts }) {
   const rows: { name: string; free: boolean | string; plus: boolean | string }[] = [
     { name: "Practice tests", free: `${t.free} newest`, plus: `All ${t.total}` },
     { name: "Question Bank", free: "College Board", plus: f.generalQuestions ? `+ ${num(f.generalQuestions)} past-paper questions` : "+ past-paper questions" },
@@ -76,25 +56,9 @@ export function FreeSection({ t, l, f }: { t: TestFacts; l: LessonFacts; f: Free
     { name: "Vocabulary, tournament", free: true, plus: true },
   ];
   return (
-    <section id="free" aria-labelledby="free-title" className={SECTION}>
-      <SectionHead id="free" eyebrow="Free plan" title="Free stays free" body="No trial clock and no card. Whether or not you get Plus, you keep:" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {tiles.map((x) => (
-          <li key={x.title} className="flex items-start gap-3 rounded-2xl border border-line bg-surface p-4">
-            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-success-soft text-success">
-              <Icon d={I.check} className="h-4 w-4" strokeWidth={3} />
-            </span>
-            <span>
-              <span className="block font-semibold">{x.title}</span>
-              <span className="block text-sm text-muted">{x.line}</span>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <h3 id="compare" className="mt-12 scroll-mt-20 text-lg font-semibold lg:scroll-mt-8">
-        Free and Plus, side by side
-      </h3>
-      <div className="mt-4 overflow-hidden rounded-2xl border border-line bg-surface">
+    <section id="compare" aria-labelledby="compare-title" className={SECTION}>
+      <SectionHead id="compare" eyebrow="Compare" title="Free and Plus, side by side" body="No trial clock and no card on Free. Here is what Plus adds." />
+      <div className="mt-6 overflow-hidden rounded-2xl border border-line bg-surface">
         <table className="w-full table-fixed text-left text-sm">
           <caption className="sr-only">Free compared with Stellar Plus</caption>
           <thead>
@@ -226,7 +190,7 @@ export function FinalBand() {
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-side-ink/80">The College Board question bank, vocabulary, weekly tournament and newest tests stay free for everyone.</p>
         <FinalDateLine />
-        <PlusCta variant="final" />
+        <PlusCta />
       </section>
       {/* PAGE has pb-12: with this, 96px in all, so the Support button never covers the last CTA. */}
       <div aria-hidden="true" className="h-12" />

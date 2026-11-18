@@ -7,6 +7,7 @@ import { AppShell } from "@/components/AppShell";
 import { AuthGate } from "@/components/auth/AuthGate";
 import { Sidebar } from "@/components/Sidebar";
 import { SidebarTour } from "@/components/SidebarTour";
+import { StarBackdrop } from "@/components/StarBackdrop";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           // Desktop theme switch, top-right corner (mobile one lives in the top bar)
           toggle={<ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />}
           footer={<SiteFooter />}
+          backdrop={<StarBackdrop variant="app" />}
         >
           {children}
         </AppShell>

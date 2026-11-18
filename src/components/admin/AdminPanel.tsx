@@ -11,16 +11,20 @@ import type { ReportItem } from "@/lib/reports";
 import type { SupportRequest } from "@/lib/support";
 import { supabaseBrowser } from "@/lib/supabase/client";
 import { getSkill } from "@/lib/taxonomy";
+import { FOCUS_ON_DARK } from "@/components/plus/styles";
 import { PAGE } from "@/lib/ui";
 import { AccountsTab } from "./AccountsTab";
 import { CompetitionTab } from "./CompetitionTab";
 import { ForgotPasswordLink } from "./ForgotPassword";
+import { formatMoney } from "./money";
 import { OverviewTab } from "./OverviewTab";
 import { ReportsByQuestion } from "./ReportsByQuestion";
+import { RevenueTab } from "./RevenueTab";
+import { useRevenueKpis } from "./revenue-data";
 import { TrafficTab } from "./TrafficTab";
 
 // /admin: sign in (email + password or Google, same admin email), then the admin tabs:
-// Overview, support requests from the Support button, problem reports on questions, Competition.
+// Overview, Revenue (Gumroad sales), Accounts, Traffic, support requests from the Support button, problem reports on questions, Competition.
 // Uses useSearchParams (?tab=…), so app/admin/page.tsx wraps this in <Suspense>.
 
 type Me = { configured: boolean; signedIn: boolean; admin: boolean; email: string | null };
@@ -30,6 +34,7 @@ type Filter = "open" | "resolved" | "all";
 // ── Tabs ── To add a tab: add it here and a case in renderTab() (inside Dashboard).
 const TABS = [
   { id: "overview", label: "Overview" },
+  { id: "revenue", label: "Revenue" },
   { id: "accounts", label: "Accounts" },
   { id: "traffic", label: "Traffic" },
   { id: "support", label: "Support requests" },
@@ -254,6 +259,8 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
   const [filter, setFilter] = useState<Filter>("open");
   const [query, setQuery] = useState<Record<ListTab, string>>({ support: "", reports: "" });
   const [error, setError] = useState<string | null>(null);
+  /** Revenue KPIs: the header pill and the Overview strip share this one fetch. */
+  const revenue = useRevenueKpis();
 
   /** The tab lives in the URL (?tab=support) so a refresh keeps it; Next keeps useSearchParams in sync with replaceState. */
   const selectTab = (id: Tab) => {
@@ -275,6 +282,7 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
   const load = () => {
     setLoading(true);
     fetchInbox().then(show);
+    revenue.reload();
   };
 
   useEffect(() => {
@@ -371,9 +379,11 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
       case "overview":
         return (
           <div className="mt-5">
-            <OverviewTab inbox={inbox} />
+            <OverviewTab inbox={inbox} revenue={revenue.result} />
           </div>
         );
+      case "revenue":
+        return <RevenueTab />;
       case "support":
         return listView("support", support, (r) => [r.message, r.telegram, r.instagram, r.other].join(" "), (r) => <SupportCard key={r.id} r={r} update={update} />);
       case "reports":
@@ -393,47 +403,63 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
 
   return (
     <section className={PAGE}>
-      <div className="flex flex-wrap items-start justify-between gap-4">
+      {/* Header card: plus-surface, so text is side-ink / side-ink/80 only (see globals.css). */}
+      <header className="plus-surface flex flex-wrap items-start justify-between gap-4 rounded-3xl p-6 text-side-ink ring-1 ring-white/10">
         <div className="min-w-0">
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Support list</h1>
-          <p className="mt-2 text-sm break-all text-muted sm:text-base">
-            Signed in as <span className="font-medium text-ink">{email}</span>
+          <h1 className="text-3xl font-bold tracking-tight text-side-ink md:text-4xl">Admin</h1>
+          <p className="mt-2 text-sm break-all text-side-ink/80 sm:text-base">
+            Signed in as <span className="font-medium text-side-ink">{email}</span>
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {revenue.result?.kind === "ok" && (
+            <button
+              type="button"
+              onClick={() => selectTab("revenue")}
+              className={`inline-flex min-h-11 items-center gap-1.5 rounded-full bg-white/10 px-4 text-sm text-side-ink/80 hover:bg-white/15 ${FOCUS_ON_DARK}`}
+            >
+              Revenue this month:
+              <span className="font-semibold text-side-ink tabular-nums">{formatMoney(revenue.result.data.kpis.month.gross_cents, revenue.result.data.kpis.currency)}</span>
+            </button>
+          )}
           <button
             type="button"
             onClick={load}
             disabled={loading}
             title="Refresh"
             aria-label="Refresh"
-            className="grid h-11 w-11 place-items-center rounded-xl border border-line text-muted hover:bg-surface-2 hover:text-ink disabled:opacity-50"
+            className={`grid h-11 w-11 place-items-center rounded-xl border border-white/20 text-side-ink hover:bg-white/10 disabled:opacity-50 ${FOCUS_ON_DARK}`}
           >
             <Icon d={REFRESH} className={`h-5 w-5 ${loading ? "animate-spin" : ""}`} />
           </button>
-          <button type="button" onClick={onSignOut} className="inline-flex h-11 items-center gap-2 rounded-xl border border-line px-4 text-sm font-semibold hover:bg-surface-2">
+          <button
+            type="button"
+            onClick={onSignOut}
+            className={`inline-flex h-11 items-center gap-2 rounded-xl border border-white/20 px-4 text-sm font-semibold text-side-ink hover:bg-white/10 ${FOCUS_ON_DARK}`}
+          >
             <Icon d={LOGOUT} className="h-4.5 w-4.5" />
             Sign out
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* Tabs scroll sideways on a phone instead of widening the page. */}
-      <div className="-mx-4 mt-8 overflow-x-auto border-b border-line px-4 [scrollbar-width:none] md:mx-0 md:px-0">
-        <div className="flex w-max gap-1" role="tablist">
+      {/* Pill-style tabs; they scroll sideways on a phone instead of widening the page. */}
+      <div className="-mx-4 mt-6 overflow-x-auto px-4 py-1 [scrollbar-width:none] md:mx-0 md:px-0">
+        <div className="flex w-max gap-1 rounded-2xl bg-surface p-1 ring-1 ring-line" role="tablist">
           {TABS.map(({ id, label }) => {
             const n = counts[id] ?? 0;
+            const active = tab === id;
             return (
               <button
                 key={id}
                 type="button"
                 role="tab"
-                aria-selected={tab === id}
+                aria-selected={active}
                 onClick={() => selectTab(id)}
-                className={`-mb-px flex min-h-11 items-center gap-2 border-b-2 px-3 text-sm font-semibold whitespace-nowrap transition-colors ${tab === id ? "border-primary text-ink" : "border-transparent text-muted hover:text-ink"}`}
+                className={`flex min-h-10 items-center gap-2 rounded-xl px-3.5 text-sm font-semibold whitespace-nowrap transition-colors ${active ? "bg-primary text-primary-ink" : "text-muted hover:text-ink"}`}
               >
                 {label}
-                {n > 0 && <span className="rounded-full bg-primary/15 px-2 py-0.5 text-xs text-accent tabular-nums">{n}</span>}
+                {n > 0 && <span className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${active ? "bg-primary-ink/20 text-primary-ink" : "bg-primary/15 text-accent"}`}>{n}</span>}
               </button>
             );
           })}

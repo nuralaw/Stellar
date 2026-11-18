@@ -8,6 +8,7 @@ import { LaunchSentence } from "@/components/plus/PlusPersonal";
 import { ReviewMini, ReviewTimeline, SampleMistake, ScoreMini, ScreenFrame, StepsStrip, TestsPreview } from "@/components/plus/previews";
 import { BTN_PRIMARY, EYEBROW, LINK_STRONG } from "@/components/plus/styles";
 import type { AuthFacts } from "@/lib/auth-facts";
+import { StarBackdrop } from "@/components/StarBackdrop";
 import { getLessons } from "@/lib/lessons";
 import { MAIN_NAV, PLUS_NAV, STATS_ICON } from "@/lib/nav";
 import { PLAN_ORDER, PLUS } from "@/lib/plus-config";
@@ -18,7 +19,6 @@ import { TabLink } from "./AuthTabs";
 import { PlanPicker } from "./PlanPicker";
 import { PlusShowcase, type Benefit } from "./PlusShowcase";
 import { StellarArt } from "./StellarArt";
-import { makeStars } from "./stars";
 
 // The three panels of /register and /login (server-rendered; the tab switching and the carousel are client components).
 // Every number comes from AuthFacts / lib/plus-config / lib/review, never typed in by hand.
@@ -36,7 +36,7 @@ const CARD = "rounded-2xl border border-line bg-surface p-4 shadow-[0_1px_0_var(
 export function AccountView({ mode, facts, children }: { mode: "register" | "signin"; facts: AuthFacts; children: ReactNode }) {
   return (
     <>
-      <AuthBackdrop variant="account" />
+      <StarBackdrop variant="account" />
       {/* One tree: below xl a centred single column; at xl a two-column grid (card | art) with the links under the card. */}
       <div className="flex w-full flex-col items-center xl:ml-[calc(37.5vw-12rem-16rem)] xl:grid xl:max-w-[68.5rem] xl:min-w-0 xl:flex-1 xl:grid-cols-[24rem_minmax(0,42rem)] xl:grid-rows-[auto_auto] xl:items-stretch xl:gap-x-10 xl:gap-y-4">
         <p className="lesson-in mb-5 w-full max-w-sm text-2xl leading-tight font-bold tracking-tight text-balance xl:hidden">Prep for the Digital SAT, all in one place</p>
@@ -54,79 +54,6 @@ export function AccountView({ mode, facts, children }: { mode: "register" | "sig
         </p>
       </div>
     </>
-  );
-}
-
-/* ----------------------------------------------------------------- Backdrop */
-
-type Variant = "features" | "pricing" | "account";
-
-const CONSTELLATION: Record<Variant, [number, number][]> = {
-  features: [[20, 150], [70, 130], [115, 140], [150, 105], [215, 95], [240, 40], [285, 60]],
-  pricing: [[20, 60], [80, 30], [140, 70], [200, 40], [260, 90], [230, 160], [150, 150]],
-  account: [[20, 100], [70, 60], [130, 80], [180, 30], [240, 70], [280, 140]],
-};
-const SEED: Record<Variant, number> = { features: 1000, pricing: 2000, account: 3000 };
-/** Where the glow, the constellation and the shooting star sit. The account panel has the art on its right, so its decorations lean left. */
-const POSITION: Record<Variant, { glowA: string; glowB: string; constellation: string; shoot: string }> = {
-  features: {
-    glowA: "-top-40 -right-40",
-    glowB: "-bottom-48 -left-24",
-    constellation: "right-10 w-[16rem] lg:block",
-    shoot: "left-[62%]",
-  },
-  pricing: {
-    glowA: "-top-40 -right-40",
-    glowB: "-bottom-48 -left-24",
-    constellation: "left-[38%] w-[14rem] lg:block",
-    shoot: "left-[48%] [animation-delay:4.5s]",
-  },
-  account: {
-    glowA: "-top-40 -left-40",
-    glowB: "-right-24 -bottom-48",
-    constellation: "left-10 w-[11rem] xl:block",
-    shoot: "left-[34%] [animation-delay:2s]",
-  },
-};
-
-/** Quiet star-themed background of the Features and Pricing panels (the panel must be `relative isolate overflow-hidden`). */
-function AuthBackdrop({ variant }: { variant: Variant }) {
-  const pts = CONSTELLATION[variant];
-  const pos = POSITION[variant];
-  const last = pts[pts.length - 1];
-  return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-      <div className={`absolute ${pos.glowA} h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(closest-side,color-mix(in_srgb,var(--accent)_10%,transparent),transparent)]`} />
-      <div className={`absolute ${pos.glowB} h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(closest-side,color-mix(in_srgb,var(--primary)_6%,transparent),transparent)]`} />
-      <div className="absolute inset-0 opacity-70 [background-image:radial-gradient(var(--color-line)_1.2px,transparent_1.2px)] [background-size:22px_22px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
-      <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full text-ink opacity-40 dark:opacity-60">
-        {makeStars(60, SEED[variant]).map((st, i) => (
-          <circle
-            key={i}
-            cx={st.cx}
-            cy={st.cy}
-            r={st.r}
-            fill="currentColor"
-            opacity={st.o}
-            className={st.twinkle ? "art-twinkle" : undefined}
-            style={st.twinkle ? { animationDelay: `${st.delay}s`, animationDuration: `${st.dur}s` } : undefined}
-          />
-        ))}
-      </svg>
-      <svg
-        viewBox="0 0 300 200"
-        className={`absolute ${variant === "account" ? "top-4" : "top-6"} hidden text-ink opacity-25 dark:opacity-35 ${pos.constellation}`}
-      >
-        <polyline pathLength={1} fill="none" stroke="currentColor" strokeWidth="1" strokeLinejoin="round" className="stat-line" points={pts.map((p) => p.join(",")).join(" ")} />
-        {pts.slice(0, -1).map(([x, y], i) => (
-          <circle key={i} cx={x} cy={y} r="2.5" fill="currentColor" />
-        ))}
-        <circle cx={last[0]} cy={last[1]} r="3.5" fill="#f97316" className="art-pulse" />
-      </svg>
-      <span
-        className={`art-shoot absolute top-[14%] h-px w-32 bg-linear-to-r from-transparent via-ink/50 to-transparent ${pos.shoot}`}
-      />
-    </div>
   );
 }
 
@@ -277,13 +204,14 @@ function TournamentMini() {
   );
 }
 
-export function FeaturesView({ facts }: { facts: AuthFacts }) {
+/** The Features carousel's slides (shared by the Features tab and /plus). */
+export function featureSlides(facts: AuthFacts): FeatureSlide[] {
   const { tests: t, lessons: l, free: f, questions, word } = facts;
   const general = f.generalQuestions;
   const lessonTitle = getLessons().find((m) => m.slug === LESSON_SLUG)?.title ?? LESSON_SLUG;
   const lessonArt = lessonVisual(LESSON_SLUG);
 
-  const slides: FeatureSlide[] = [
+  return [
     {
       id: "bank",
       label: "Question Bank",
@@ -408,16 +336,18 @@ export function FeaturesView({ facts }: { facts: AuthFacts }) {
       content: <FeatureSlide icon={iconOf("/compete")} tag="free" title="Weekly tournament" stat="Every week" body="Weekly rounds with leaderboards, free for everyone." visual={<TournamentMini />} />,
     },
   ];
+}
 
+export function FeaturesView({ facts }: { facts: AuthFacts }) {
   return (
     <>
-      <AuthBackdrop variant="features" />
+      <StarBackdrop variant="features" />
       <div className="relative mx-auto max-w-5xl">
         <p className={`lesson-in ${EYEBROW}`}>Features</p>
         <h2 className={`${H2} [animation-delay:70ms]`}>What&apos;s inside Stellar</h2>
         <p className="lesson-in mt-3 max-w-xl text-muted [animation-delay:140ms]">Free to start. Plus unlocks the rest, see Pricing.</p>
         <div className="lesson-in mt-8 [animation-delay:200ms]">
-          <FeatureCarousel slides={slides} />
+          <FeatureCarousel slides={featureSlides(facts)} />
         </div>
       </div>
     </>
@@ -458,7 +388,7 @@ function WeakMini() {
 }
 
 /** Big decorative "Stellar1600Plus" at the bottom right of the Pricing panel (the panel is `relative isolate overflow-hidden`). */
-function Watermark() {
+export function Watermark() {
   return (
     <p
       aria-hidden="true"
@@ -469,7 +399,8 @@ function Watermark() {
   );
 }
 
-function FreeCard({ mode, facts }: { mode: "register" | "signin"; facts: AuthFacts }) {
+/** The Free plan card. `cta` is the button under the list (the sign-up tabs pass a TabLink, /plus a plan-aware link). */
+export function FreeCard({ facts, cta }: { facts: AuthFacts; cta: ReactNode }) {
   const { tests: t, free: f } = facts;
   const items: { title: string; line: string }[] = [
     { title: "College Board bank", line: f.cbQuestions ? `${num(f.cbQuestions)} official questions` : "Official questions" },
@@ -500,24 +431,20 @@ function FreeCard({ mode, facts }: { mode: "register" | "signin"; facts: AuthFac
           </li>
         ))}
       </ul>
-      <div className="mt-auto pt-4">
-        <TabLink to="account" focusForm className={`${BTN_PRIMARY} w-full`}>
-          {mode === "register" ? "Create a free account" : "Sign in"}
-        </TabLink>
-      </div>
+      <div className="mt-auto pt-4">{cta}</div>
     </div>
   );
 }
 
-export function PricingView({ mode, facts }: { mode: "register" | "signin"; facts: AuthFacts }) {
+/** The six Plus benefits the showcase flips through (Pricing tab and /plus). */
+export function plusBenefits(facts: AuthFacts): Benefit[] {
   const { tests: t, lessons: l, free: f } = facts;
   const general = f.generalQuestions;
-  const anyPrice = PLAN_ORDER.some((id) => PLUS.plans[id].amountCents !== null);
   const lessonTitle = getLessons().find((m) => m.slug === LESSON_SLUG)?.title ?? LESSON_SLUG;
   const lessonArt = lessonVisual(LESSON_SLUG);
   const NOT_INCLUDED = "Not included";
 
-  const benefits: Benefit[] = [
+  return [
     {
       id: "tests",
       icon: iconOf("/test"),
@@ -586,10 +513,44 @@ export function PricingView({ mode, facts }: { mode: "register" | "signin"; fact
       ),
     },
   ];
+}
+
+/** The Plus half of the pricing grid: the Plus row, the plan `picker`, the auto-flipping benefit showcase and an optional `footer` (/plus puts its buy row there). */
+export function PlusArea({ facts, picker, footer }: { facts: AuthFacts; picker: ReactNode; footer?: ReactNode }) {
+  return (
+    <div className="lesson-cover rounded-3xl bg-surface/60 p-4 ring-1 ring-line [animation-delay:180ms]">
+      <div className="flex flex-wrap items-center justify-between gap-3 xl:flex-nowrap">
+        <div className="flex shrink-0 items-center gap-2.5">
+          <PlusMark size="sm" />
+          <p className="text-lg font-semibold">Plus</p>
+          <p className="hidden text-sm text-muted 2xl:inline">Everything in Free, plus:</p>
+        </div>
+        {picker}
+      </div>
+      <div className="mt-3 lg:grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start lg:gap-5">
+        <PlusShowcase benefits={plusBenefits(facts)} />
+      </div>
+      {footer}
+    </div>
+  );
+}
+
+/** Free card on the left, Plus area on the right (stacked below xl). */
+export function PricingGrid({ facts, freeCta, picker, footer }: { facts: AuthFacts; freeCta: ReactNode; picker: ReactNode; footer?: ReactNode }) {
+  return (
+    <div className="mt-4 grid gap-4 xl:grid-cols-[17rem_minmax(0,1fr)] xl:items-stretch">
+      <FreeCard facts={facts} cta={freeCta} />
+      <PlusArea facts={facts} picker={picker} footer={footer} />
+    </div>
+  );
+}
+
+export function PricingView({ mode, facts }: { mode: "register" | "signin"; facts: AuthFacts }) {
+  const anyPrice = PLAN_ORDER.some((id) => PLUS.plans[id].amountCents !== null);
 
   return (
     <>
-      <AuthBackdrop variant="pricing" />
+      <StarBackdrop variant="pricing" />
       <Watermark />
       <div className="relative mx-auto w-full max-w-6xl">
         <div className="xl:flex xl:items-end xl:justify-between xl:gap-6">
@@ -608,22 +569,15 @@ export function PricingView({ mode, facts }: { mode: "register" | "signin"; fact
           </div>
         </div>
 
-        <div className="mt-4 grid gap-4 xl:grid-cols-[17rem_minmax(0,1fr)] xl:items-stretch">
-          <FreeCard mode={mode} facts={facts} />
-          <div className="lesson-cover rounded-3xl bg-surface/60 p-4 ring-1 ring-line [animation-delay:180ms]">
-            <div className="flex flex-wrap items-center justify-between gap-3 xl:flex-nowrap">
-              <div className="flex shrink-0 items-center gap-2.5">
-                <PlusMark size="sm" />
-                <p className="text-lg font-semibold">Plus</p>
-                <p className="hidden text-sm text-muted 2xl:inline">Everything in Free, plus:</p>
-              </div>
-              <PlanPicker />
-            </div>
-            <div className="mt-3 lg:grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start lg:gap-5">
-              <PlusShowcase benefits={benefits} />
-            </div>
-          </div>
-        </div>
+        <PricingGrid
+          facts={facts}
+          freeCta={
+            <TabLink to="account" focusForm className={`${BTN_PRIMARY} w-full`}>
+              {mode === "register" ? "Create a free account" : "Sign in"}
+            </TabLink>
+          }
+          picker={<PlanPicker />}
+        />
       </div>
     </>
   );

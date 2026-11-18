@@ -1,5 +1,7 @@
 // Stellar Plus: plans, prices and launch state shown on /plus and across the app. Display only: the gate is
-// lib/access-core / access / access-server. Going live = fill amountCents + checkoutUrl per plan; no component changes.
+// lib/access-core / access / access-server. Going live = set a price (amountCents) per plan and the two env vars
+// NEXT_PUBLIC_GUMROAD_MONTHLY_URL / NEXT_PUBLIC_GUMROAD_PASS_URL (the Gumroad product page URLs; read at build time,
+// so redeploy after changing them); no component changes. Full checklist: docs/PAYMENTS.md.
 
 export type PlanId = "monthly" | "pass";
 
@@ -12,7 +14,7 @@ export interface PlusPlan {
   amountCents: number | null;
   /** "month" renews every month until cancelled; "once" is one payment that never renews. */
   billing: "month" | "once";
-  /** Provider checkout link. "{userId}" and "{testDate}" are replaced (URL-encoded). null = not on sale. */
+  /** Gumroad product page URL, e.g. https://stellar1600.gumroad.com/l/plus (from env). null = not on sale. checkoutHref() adds the buyer's data. */
   checkoutUrl: string | null;
 }
 
@@ -22,6 +24,8 @@ export interface PlusConfig {
   plans: Record<PlanId, PlusPlan>;
   /** With the SAT at least this many days away, the pass is recommended (only when BOTH plans have a price and a date is picked). */
   passRecommendMinDays: number;
+  /** The pass covers at most this many days from the purchase: later SAT dates can't be bought with it (the server enforces this too). */
+  passMaxDays: number;
   /** One true sentence on how to cancel Monthly. null hides the cancel FAQ and every cancel line. */
   cancelText: string | null;
   /** Full-refund window in days. null hides every refund line and the refund FAQ. */
@@ -44,7 +48,7 @@ export const PLUS: PlusConfig = {
       blurb: "Everything in Plus, month to month. A good fit if your SAT is close or you haven't picked a date yet.",
       amountCents: 999,
       billing: "month",
-      checkoutUrl: null,
+      checkoutUrl: process.env.NEXT_PUBLIC_GUMROAD_MONTHLY_URL || null,
     },
     pass: {
       id: "pass",
@@ -52,10 +56,11 @@ export const PLUS: PlusConfig = {
       blurb: "Everything in Plus until your SAT. Pay once and nothing renews.",
       amountCents: null,
       billing: "once",
-      checkoutUrl: null,
+      checkoutUrl: process.env.NEXT_PUBLIC_GUMROAD_PASS_URL || null,
     },
   },
   passRecommendMinDays: 28,
+  passMaxDays: 200,
   cancelText: null,
   refundDays: null,
   bugDiscountPercent: 50,
@@ -106,8 +111,21 @@ export function priceHint(): { text: string; sr: string } | null {
 }
 /** Launch day still ahead of `todayIso` ("" = unknown yet → false). Call only in the browser. */
 export const launchUpcoming = (todayIso: string) => Boolean(PLUS.launchDate && todayIso && PLUS.launchDate > todayIso);
-/** Checkout link for a signed-in student; null when the plan isn't on sale. */
-export function checkoutHref(p: PlusPlan, ctx: { userId: string; testDate?: string }): string | null {
+/**
+ * Checkout link for a signed-in student: the product page opened straight at checkout (wanted=true), with the account id
+ * (uid, how the webhook finds the account), the email (prefilled) and, for the pass, the SAT date (sat, 'YYYY-MM-DD').
+ * null when the plan isn't on sale.
+ */
+export function checkoutHref(p: PlusPlan, ctx: { userId: string; email?: string; testDate?: string }): string | null {
   if (!isOnSale(p) || !p.checkoutUrl) return null;
-  return p.checkoutUrl.split("{userId}").join(encodeURIComponent(ctx.userId)).split("{testDate}").join(encodeURIComponent(ctx.testDate ?? ""));
+  try {
+    const url = new URL(p.checkoutUrl);
+    url.searchParams.set("wanted", "true");
+    if (ctx.userId) url.searchParams.set("uid", ctx.userId);
+    if (ctx.email) url.searchParams.set("email", ctx.email);
+    if (p.id === "pass" && ctx.testDate) url.searchParams.set("sat", ctx.testDate);
+    return url.toString();
+  } catch {
+    return null;
+  }
 }

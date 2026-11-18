@@ -177,7 +177,26 @@ export function StatTile(props: { label: string; hint: string; value: number; pr
   );
 }
 
-export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: number }[]; bucket: Bucket; unit: [string, string] }) {
+/**
+ * `format` renders a value for the y axis, the bar labels and the tooltip (default: whole numbers; `where` says which).
+ * `valueLabels` puts the value above every bar when there's room (≤ 14 bars, wide enough); otherwise only the peak and the hovered bar.
+ * `tooltipExtra(i)` adds a line under the tooltip's date.
+ */
+export function ColumnChart({
+  points,
+  bucket,
+  unit,
+  format,
+  valueLabels = false,
+  tooltipExtra,
+}: {
+  points: { t: string; v: number }[];
+  bucket: Bucket;
+  unit: [string, string];
+  format?: (v: number, where?: "axis" | "label" | "tooltip") => string;
+  valueLabels?: boolean;
+  tooltipExtra?: (i: number) => ReactNode;
+}) {
   const box = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
   const [hover, setHover] = useState<number | null>(null);
@@ -204,6 +223,8 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
   const labelEvery = Math.max(1, Math.ceil(n / Math.max(1, Math.floor(plotW / 64))));
   const peakIndex = peak > 0 ? points.findIndex((p) => p.v === peak) : -1;
   const hovered = hover !== null ? points[hover] : null;
+  const show = (v: number, where: "axis" | "label" | "tooltip") => (format ? format(v, where) : where === "tooltip" ? plural(v, unit) : fmt(v));
+  const labelAll = valueLabels && n <= 14 && band >= 36;
 
   return (
     <div ref={box} className="relative w-full" onPointerLeave={() => setHover(null)}>
@@ -214,7 +235,7 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
             <g key={i}>
               <line x1={pad.l} x2={width - pad.r} y1={y(step * i)} y2={y(step * i)} stroke="var(--line)" strokeWidth={1} />
               <text x={pad.l - 8} y={y(step * i)} dy="0.32em" textAnchor="end" fontSize={12} fill="var(--muted)" className="tabular-nums">
-                {fmt(step * i)}
+                {show(step * i, "axis")}
               </text>
             </g>
           ))}
@@ -224,9 +245,9 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
             return (
               <g key={p.t}>
                 {p.v > 0 && <path d={columnPath(cx - barW / 2, y(p.v), barW, h)} fill={BAR} opacity={hover === null || hover === i ? 1 : 0.55} />}
-                {i === peakIndex && hover === null && (
+                {p.v > 0 && (labelAll || (i === peakIndex && hover === null) || (valueLabels && hover === i)) && (
                   <text x={cx} y={y(p.v) - 6} textAnchor="middle" fontSize={12} fontWeight={600} fill="var(--ink)" className="tabular-nums">
-                    {fmt(p.v)}
+                    {show(p.v, "label")}
                   </text>
                 )}
                 {i % labelEvery === 0 && (
@@ -242,7 +263,7 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
                   height={plotH}
                   fill="transparent"
                   tabIndex={0}
-                  aria-label={`${bucketLabel(p.t, bucket, true)}: ${plural(p.v, unit)}`}
+                  aria-label={`${bucketLabel(p.t, bucket, true)}: ${show(p.v, "tooltip")}`}
                   onPointerEnter={() => setHover(i)}
                   onFocus={() => setHover(i)}
                   onBlur={() => setHover(null)}
@@ -258,11 +279,12 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
           className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-lg border border-line bg-surface px-3 py-2 text-sm shadow-md"
           style={{
             left: Math.min(Math.max(pad.l + band * hover + band / 2, 70), width - 70),
-            top: Math.max(y(hovered.v) - 8, 44),
+            top: Math.max(y(hovered.v) - (valueLabels ? 26 : 8), 44),
           }}
         >
-          <span className="block font-semibold tabular-nums">{plural(hovered.v, unit)}</span>
+          <span className="block font-semibold tabular-nums">{show(hovered.v, "tooltip")}</span>
           <span className="block text-[13px] text-muted">{bucketLabel(hovered.t, bucket, true)}</span>
+          {tooltipExtra?.(hover)}
         </div>
       )}
     </div>
@@ -270,7 +292,7 @@ export function ColumnChart({ points, bucket, unit }: { points: { t: string; v: 
 }
 
 /** Table view of a series: one row per bucket (newest first), one numeric column per metric. */
-export function SeriesTable<P extends { t: string }>({ series, bucket, columns }: { series: P[]; bucket: Bucket; columns: { label: string; value: (p: P) => number }[] }) {
+export function SeriesTable<P extends { t: string }>({ series, bucket, columns }: { series: P[]; bucket: Bucket; columns: { label: string; value: (p: P) => number; format?: (v: number) => string }[] }) {
   return (
     <div className="mt-4 max-h-80 overflow-auto">
       <table className="w-full text-sm">
@@ -290,7 +312,7 @@ export function SeriesTable<P extends { t: string }>({ series, bucket, columns }
               <td className="py-2 pr-3">{bucketLabel(p.t, bucket, true)}</td>
               {columns.map((c) => (
                 <td key={c.label} className="py-2 pl-3 text-right tabular-nums">
-                  {fmt(c.value(p))}
+                  {(c.format ?? fmt)(c.value(p))}
                 </td>
               ))}
             </tr>

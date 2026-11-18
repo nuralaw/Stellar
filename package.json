@@ -19,7 +19,9 @@
     "lessons:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-check.mjs",
     "lessons:questions": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-questions.mjs",
     "lessons:visuals": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-visuals.mjs",
-    "vocab:build": "node scripts/vocab-build.mjs"
+    "vocab:build": "node scripts/vocab-build.mjs",
+    "db:apply": "node scripts/db-apply.mjs",
+    "gumroad:setup": "node scripts/gumroad-setup.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
@@ -37,6 +39,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "exceljs": "^4.4.0",
+    "pg": "^8.23.1",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   }

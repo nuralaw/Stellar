@@ -26,7 +26,7 @@ export type PlusFeature = "tests" | "lessons" | "insights" | "review" | "bank";
 
 export interface PlusLockProps {
   variant: "panel" | "card" | "row";
-  /** "What's in Plus" link target /plus#<feature> (panel); "bank" has no section of its own and goes to /plus#compare. */
+  /** Which locked feature this is (the "What's in Plus" link goes to the features carousel on /plus; "bank" goes to the comparison table). */
   feature: PlusFeature;
   title: string;
   body?: string;
@@ -97,7 +97,7 @@ export function PlusLock({ variant, feature, title, body, points, fact, preview,
               Or keep going free: {free.label} →
             </Link>
           )}
-          <Link href={feature === "bank" ? "/plus#compare" : `/plus#${feature}`} className={LINK_ON_DARK}>
+          <Link href={feature === "bank" ? "/plus#compare" : "/plus#inside"} className={LINK_ON_DARK}>
             What&apos;s in Plus
           </Link>
         </p>
