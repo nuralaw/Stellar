@@ -8,7 +8,8 @@ import { upcomingSatDates } from "@/lib/sat-dates";
 import { effectiveZone, todayIn } from "@/lib/timezone";
 import { Countdown } from "./Countdown";
 import { SatDatePicker } from "./SatDatePicker";
-import { Card, Skeleton, milestone } from "./parts";
+import { Card, EmptyChart, Skeleton, milestone } from "./parts";
+import { TargetChart } from "./TargetChart";
 import { STATS_ICON } from "@/lib/nav";
 import { isFullTest, updateProfile, useAttempts, useHydrated, useNow, useProfile, useTestResults } from "@/lib/store";
 import { SECTIONS, type SectionId } from "@/lib/taxonomy";
@@ -424,7 +425,7 @@ export function Dashboard() {
 
       {/* Headline numbers + a compact study calendar */}
       <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)]">
-        <div className="grid grid-cols-2 content-start gap-4 sm:grid-cols-3 lg:auto-rows-fr lg:grid-cols-1 lg:content-stretch">
+        <div className="grid grid-cols-2 content-start gap-4 lg:grid-rows-[auto_1fr] lg:content-stretch">
           <Card>
             <p className="text-sm font-medium text-muted">Latest test score</p>
             {!hydrated ? (
@@ -447,35 +448,6 @@ export function Dashboard() {
           </Card>
 
           <Card>
-            <div className="flex items-start justify-between gap-2">
-              <p className="text-sm font-medium text-muted">Target score</p>
-              {hydrated && hasGoal && !planOpen && (
-                <button type="button" onClick={openPlan} className="-mt-1 -mr-2 rounded-lg px-2 py-1 text-[13px] font-medium text-muted hover:bg-surface-2 hover:text-ink">
-                  Edit
-                </button>
-              )}
-            </div>
-            {!hydrated ? (
-              <Skeleton className="mt-3 h-10 w-24" />
-            ) : profile.targetScore === null ? (
-              <button type="button" onClick={openPlan} className="mt-3 text-left font-semibold text-primary hover:underline">
-                Set a target score →
-              </button>
-            ) : (
-              <>
-                <p className="mt-2 text-4xl font-bold tracking-tight tabular-nums">{profile.targetScore}</p>
-                <p className={tile}>
-                  {!latest
-                    ? "out of 1600"
-                    : latest.total >= profile.targetScore
-                      ? "reached 🎉"
-                      : `next milestone ${milestone(latest.total, profile.targetScore)} (+${milestone(latest.total, profile.targetScore) - latest.total})`}
-                </p>
-              </>
-            )}
-          </Card>
-
-          <Card className="col-span-2 sm:col-span-1">
             <p className="text-sm font-medium text-muted">Study streak</p>
             {!hydrated ? (
               <Skeleton className="mt-3 h-10 w-24" />
@@ -490,6 +462,44 @@ export function Dashboard() {
                 </p>
               </>
             )}
+          </Card>
+
+          <Card className="col-span-2 flex flex-col">
+            <div className="flex items-start justify-between gap-2">
+              <p className="text-sm font-medium text-muted">Target score</p>
+              {hydrated && hasGoal && !planOpen && (
+                <button type="button" onClick={openPlan} className="-mt-1 -mr-2 rounded-lg px-2 py-1 text-[13px] font-medium text-muted hover:bg-surface-2 hover:text-ink">
+                  Edit
+                </button>
+              )}
+            </div>
+            {!hydrated ? (
+              <Skeleton className="mt-2 h-8 w-24" />
+            ) : profile.targetScore === null ? (
+              <button type="button" onClick={openPlan} className="mt-2 w-fit text-left font-semibold text-primary hover:underline">
+                Set a target score →
+              </button>
+            ) : (
+              <p className="mt-1 flex flex-wrap items-baseline gap-x-2.5">
+                <span className="text-2xl font-bold tracking-tight tabular-nums">{profile.targetScore}</span>
+                <span className="text-[13px] text-muted">
+                  {!latest
+                    ? "out of 1600"
+                    : latest.total >= profile.targetScore
+                      ? "reached 🎉"
+                      : `next milestone ${milestone(latest.total, profile.targetScore)} (+${milestone(latest.total, profile.targetScore) - latest.total})`}
+                </span>
+              </p>
+            )}
+            <div className="mt-3">
+              {!hydrated ? (
+                <Skeleton className="h-[180px] rounded-xl" />
+              ) : history.length === 0 ? (
+                <EmptyChart text="Your practice test scores will show up here, next to your target." href="/test" link="Take a practice test" />
+              ) : (
+                <TargetChart points={history} target={profile.targetScore} />
+              )}
+            </div>
           </Card>
         </div>
 

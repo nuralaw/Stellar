@@ -6,9 +6,9 @@ import type { TestResult } from "@/lib/store";
 const H = 240;
 const M = { top: 16, right: 84, bottom: 28, left: 44 };
 
-const fmtDay = (at: number, long = false) => new Date(at).toLocaleDateString("en-US", { month: "short", day: "numeric", ...(long ? { weekday: "short" } : {}) });
+export const fmtDay = (at: number, long = false) => new Date(at).toLocaleDateString("en-US", { month: "short", day: "numeric", ...(long ? { weekday: "short" } : {}) });
 
-function useWidth<T extends HTMLElement>() {
+export function useWidth<T extends HTMLElement>() {
   const ref = useRef<T>(null);
   const [w, setW] = useState(0);
   useEffect(() => {
