@@ -70,7 +70,7 @@ begin
   ),
   su as (
     select date_trunc(p_bucket, u.created_at at time zone p_tz) t, count(*) n
-    from auth.users u where u.created_at >= p_from and u.created_at < p_to group by 1
+    from auth.users u where u.created_at >= p_from and u.created_at < p_to and u.email_confirmed_at is not null group by 1
   ),
   si as (
     select date_trunc(p_bucket, s.at at time zone p_tz) t, count(*) n
@@ -94,21 +94,22 @@ begin
       left join ac on ac.t = b.t
     ), '[]'::jsonb),
     'totals', jsonb_build_object(
-      'signups', (select count(*) from auth.users u where u.created_at >= p_from and u.created_at < p_to),
+      'signups', (select count(*) from auth.users u where u.created_at >= p_from and u.created_at < p_to and u.email_confirmed_at is not null),
       'signins', (select count(*) from public.account_signins s where s.at >= p_from and s.at < p_to),
       'active', (select count(distinct a.user_id) from public.account_activity a where a.at >= p_from and a.at < p_to)
     ),
     'previous', jsonb_build_object(
-      'signups', (select count(*) from auth.users u where u.created_at >= p_from - span and u.created_at < p_from),
+      'signups', (select count(*) from auth.users u where u.created_at >= p_from - span and u.created_at < p_from and u.email_confirmed_at is not null),
       'signins', (select count(*) from public.account_signins s where s.at >= p_from - span and s.at < p_from),
       'active', (select count(distinct a.user_id) from public.account_activity a where a.at >= p_from - span and a.at < p_from)
     ),
-    'users_total', (select count(*) from auth.users)
+    'users_total', (select count(*) from auth.users u where u.email_confirmed_at is not null)
   ) into result;
   return result;
 end $$;
 
--- Latest accounts for the list under the chart (admin only).
+-- Latest accounts for the list under the chart (admin only). Only confirmed accounts (email code/link or Google):
+-- signInWithOtp creates the user before the code is entered, so unfinished sign-ups are left out everywhere here.
 create or replace function public.admin_account_list(p_limit int default 100)
 returns jsonb language sql stable security definer set search_path = '' as $$
   select coalesce(jsonb_agg(x order by x.last_sign_in_at desc nulls last), '[]'::jsonb)
@@ -117,6 +118,7 @@ returns jsonb language sql stable security definer set search_path = '' as $$
            coalesce(u.raw_app_meta_data ->> 'provider', 'email') as provider,
            (select count(*) from public.account_activity a where a.user_id = u.id and a.at > now() - interval '30 days') as active_days_30
     from auth.users u
+    where u.email_confirmed_at is not null
     order by u.last_sign_in_at desc nulls last
     limit least(greatest(p_limit, 1), 500)
   ) x;

@@ -38,9 +38,11 @@ async function exists(email: string): Promise<boolean | null> {
       cache: "no-store",
     });
     if (!res.ok) return null;
-    const body = (await res.json()) as { users?: { email?: string | null }[] };
+    const body = (await res.json()) as { users?: { email?: string | null; email_confirmed_at?: string | null }[] };
     if (!Array.isArray(body.users)) return null;
-    return body.users.some((u) => u.email?.toLowerCase() === email);
+    // Only confirmed accounts count: signInWithOtp creates the user before the code is entered, and an unfinished
+    // sign-up must not block registering again with the same email.
+    return body.users.some((u) => u.email?.toLowerCase() === email && Boolean(u.email_confirmed_at));
   } catch {
     return null;
   }

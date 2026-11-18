@@ -46,7 +46,7 @@ export const PLUS: PlusConfig = {
       id: "monthly",
       name: "Monthly",
       blurb: "Everything in Plus, month to month. A good fit if your SAT is close or you haven't picked a date yet.",
-      amountCents: 999,
+      amountCents: 961,
       billing: "month",
       checkoutUrl: process.env.NEXT_PUBLIC_GUMROAD_MONTHLY_URL || null,
     },
