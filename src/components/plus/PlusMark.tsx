@@ -8,7 +8,7 @@ export function PlusMark({ size = "md", className = "" }: { size?: "sm" | "md" |
   return (
     <span
       aria-hidden="true"
-      className={`grid shrink-0 place-items-center bg-linear-to-br from-accent to-primary-strong text-white shadow-[0_6px_18px_-8px_rgb(234_88_12/0.7)] dark:from-primary-hover dark:to-accent dark:text-side ${S[size]} ${className}`}
+      className={`grid shrink-0 place-items-center bg-linear-to-br from-accent to-primary-hover text-primary-ink shadow-[0_6px_18px_-8px_var(--liquid-ring)] dark:from-primary-hover dark:to-accent ${S[size]} ${className}`}
     >
       <Icon d={I.star} filled className={ICON[size]} />
     </span>

@@ -553,7 +553,7 @@ function Dashboard({ me, onSignOut, onDenied }: { me: Me; onSignOut: () => void;
                 className={`flex min-h-10 items-center gap-2 rounded-xl px-3.5 text-sm font-semibold whitespace-nowrap transition-colors ${active ? "bg-primary text-primary-ink" : "text-muted hover:text-ink"}`}
               >
                 {label}
-                {n > 0 && <span className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${active ? "bg-primary-ink/20 text-primary-ink" : "bg-primary/15 text-accent"}`}>{n}</span>}
+                {n > 0 && <span className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${active ? "bg-white/35 text-primary-ink" : "bg-primary/15 text-primary-strong"}`}>{n}</span>}
               </button>
             );
           })}
@@ -638,7 +638,7 @@ function Toggle({ on, onClick, children }: { on: boolean; onClick: () => void; c
       onClick={onClick}
       aria-pressed={on}
       className={`inline-flex min-h-11 items-center gap-2 rounded-xl border px-3.5 text-sm font-semibold transition-colors ${
-        on ? "border-primary bg-primary/10 text-accent" : "border-line text-ink hover:bg-surface-2"
+        on ? "border-primary bg-primary/10 text-primary-strong" : "border-line text-ink hover:bg-surface-2"
       }`}
     >
       <span className={`grid h-4.5 w-4.5 place-items-center rounded-md border ${on ? "border-primary bg-primary text-primary-ink" : "border-line"}`}>
@@ -655,12 +655,12 @@ function Contacts({ telegram, instagram, other }: { telegram: string; instagram:
   return (
     <div className="mt-3 flex flex-wrap gap-2">
       {telegram && (
-        <a href={`https://t.me/${handle(telegram)}`} target="_blank" rel="noreferrer" className={`${chip} hover:text-accent`}>
+        <a href={`https://t.me/${handle(telegram)}`} target="_blank" rel="noreferrer" className={`${chip} hover:text-primary-strong`}>
           <Icon d={CONTACT_ICONS.telegram} className="h-4 w-4 shrink-0 text-muted" />@{handle(telegram)}
         </a>
       )}
       {instagram && (
-        <a href={`https://instagram.com/${handle(instagram)}`} target="_blank" rel="noreferrer" className={`${chip} hover:text-accent`}>
+        <a href={`https://instagram.com/${handle(instagram)}`} target="_blank" rel="noreferrer" className={`${chip} hover:text-primary-strong`}>
           <Icon d={CONTACT_ICONS.instagram} className="h-4 w-4 shrink-0 text-muted" />@{handle(instagram)}
         </a>
       )}
@@ -786,7 +786,7 @@ function ReportCard({ r, update }: { r: ReportItem; update: Update }) {
     <article className={`rounded-2xl border border-line bg-surface p-4 sm:p-5 ${r.resolved ? "opacity-70" : ""}`}>
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         {q ? (
-          <Link href={`/practice?section=${q.section}&q=${q.n}`} target="_blank" className="inline-flex min-h-10 items-center font-semibold hover:text-accent">
+          <Link href={`/practice?section=${q.section}&q=${q.n}`} target="_blank" className="inline-flex min-h-10 items-center font-semibold hover:text-primary-strong">
             {sectionName} #{q.n} · {getSkill(q.skill)?.name ?? q.skill}
           </Link>
         ) : (
@@ -794,7 +794,7 @@ function ReportCard({ r, update }: { r: ReportItem; update: Update }) {
         )}
         <time className="text-sm text-muted">{when(r.at)}</time>
       </div>
-      <p className="mt-2 text-sm font-medium text-accent">{REPORT_REASONS[r.reason] ?? r.reason}</p>
+      <p className="mt-2 text-sm font-medium text-primary-strong">{REPORT_REASONS[r.reason] ?? r.reason}</p>
       {r.locked ? <Locked why={r.locked} /> : r.note && <p className="mt-1 whitespace-pre-wrap break-words">{r.note}</p>}
       {q && (
         <div className="mt-3 rounded-xl bg-surface-2 px-3.5 py-3 text-sm">

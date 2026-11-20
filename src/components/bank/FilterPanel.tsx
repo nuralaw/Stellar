@@ -8,7 +8,7 @@ import { I, Icon } from "./icons";
 
 export const DIFF_STYLE: Record<Difficulty, { dot: string; text: string; on: string }> = {
   easy: { dot: "bg-success", text: "text-success", on: "border-success bg-success-soft text-success" },
-  medium: { dot: "bg-accent", text: "text-accent", on: "border-accent bg-accent-soft text-accent" },
+  medium: { dot: "bg-accent", text: "text-primary-strong", on: "border-accent bg-accent-soft text-primary-strong" },
   hard: { dot: "bg-danger", text: "text-danger", on: "border-danger bg-danger-soft text-danger" },
 };
 

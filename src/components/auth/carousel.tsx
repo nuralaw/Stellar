@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type FocusEvent, type KeyboardEvent, type PointerEvent, type ReactNode } from "react";
 
-// Shared autoplay carousel logic of the sign-up screen (Features tab and Pricing tab). Every slide is rendered, stacked in
+// Shared autoplay carousel logic of the landing page (Features and Pricing sections). Every slide is rendered, stacked in
 // one grid cell (so the box is as tall as the tallest one); the current one slides in from the right (next) or left (back).
 // The CSS animation of <CarouselTimer> IS the autoplay timer: pausing = animation-play-state, and a hidden tab
 // (display:none) has no running timer.

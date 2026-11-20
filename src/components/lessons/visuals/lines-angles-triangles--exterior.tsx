@@ -51,8 +51,8 @@ export default function Visual() {
         <g className={cls("far")}>
           <path d={wedge(A, 22, angA[0], angA[1])} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
           <path d={wedge(B, 24, -60, 0)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={A.x} y={A.y + 40} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} {...lab}>50°</text>
-          <text x={B.x + 36} y={B.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} {...lab}>60°</text>
+          <text x={A.x} y={A.y + 40} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>50°</text>
+          <text x={B.x + 36} y={B.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>60°</text>
         </g>
         {/* the angle inside at C */}
         <g className={cls("near")}>
@@ -62,7 +62,7 @@ export default function Visual() {
         {/* the exterior angle at C: from CD (0°) up to CA */}
         <g className={cls("extang")}>
           <path d={wedge(Cc, 24, angC, 0)} fill={C.soft} stroke={C.primary} strokeWidth={2} />
-          <text x={Cc.x + 30} y={Cc.y - 14} fontSize={12} fontWeight={700} fill={C.primary} {...lab}>110°</text>
+          <text x={Cc.x + 30} y={Cc.y - 14} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>110°</text>
         </g>
         <g fontSize={13} fontWeight={700} fill={C.ink} {...lab}>
           <text x={A.x} y={A.y - 8} textAnchor="middle">A</text>
@@ -72,7 +72,7 @@ export default function Visual() {
         </g>
 
         <text className={cls("p1")} x={212} y={52} fontSize={11} fill={C.muted} {...lab}>exterior angle</text>
-        <text className={cls("p1")} x={212} y={78} fontSize={22} fontWeight={700} fill={C.primary} {...lab}>110°</text>
+        <text className={cls("p1")} x={212} y={78} fontSize={22} fontWeight={700} fill={C.primaryText} {...lab}>110°</text>
         <text className={cls("p2")} x={212} y={104} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>= 50° + 60°</text>
         <text className={cls("p3")} x={212} y={130} fontSize={11} fill={C.muted} {...lab}>the two far angles</text>
       </g>

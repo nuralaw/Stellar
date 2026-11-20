@@ -21,7 +21,7 @@ export function EmptyChart({ text, href = "/practice", link = "Start practicing"
   return (
     <div className="grid h-44 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
       <p className="text-sm text-muted">{text}</p>
-      <Link href={href} className="mt-2 text-sm font-semibold text-primary hover:underline">
+      <Link href={href} className="mt-2 text-sm font-semibold text-primary-strong hover:underline">
         {link} →
       </Link>
     </div>

@@ -206,7 +206,7 @@ function Summary({
             {access.can("mistake-review") ? (
               <>
                 Your {wrong.length === 1 ? "mistake comes" : "mistakes come"} back tomorrow in{" "}
-                <Link href="/mistakes" className="font-semibold text-primary hover:underline">
+                <Link href="/mistakes" className="font-semibold text-primary-strong hover:underline">
                   Mistakes
                 </Link>{" "}
                 for a spaced review.
@@ -214,7 +214,7 @@ function Summary({
             ) : (
               <>
                 Your {wrong.length === 1 ? "mistake is" : "mistakes are"} saved in{" "}
-                <Link href="/mistakes" className="font-semibold text-primary hover:underline">
+                <Link href="/mistakes" className="font-semibold text-primary-strong hover:underline">
                   Mistakes
                 </Link>
                 . Practice {wrong.length === 1 ? "it" : "them"} again any time.
@@ -446,7 +446,7 @@ export function SolveView({
                 aria-pressed={calcOpen}
                 title={calcOpen ? "Hide calculator" : "Open Desmos calculator"}
                 className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 text-sm font-semibold transition-colors ${
-                  calcOpen ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface text-ink hover:bg-surface-2"
+                  calcOpen ? "border-primary bg-primary-soft text-primary-strong" : "border-line bg-surface text-ink hover:bg-surface-2"
                 }`}
               >
                 <Icon d={I.calculator} className="h-4.5 w-4.5" />

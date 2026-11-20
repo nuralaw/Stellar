@@ -242,7 +242,7 @@ export function Highlightable({ hkey, children, className = "" }: { hkey: string
           >
             {STYLES.map((s) => (
               <button key={s.id} type="button" onClick={() => apply(s.id)} title={s.label} aria-label={s.label} className="grid h-8 w-8 place-items-center rounded-lg hover:bg-surface-2">
-                <span className={`h-5 w-5 rounded-full border border-black/10 ${s.swatch}`} />
+                <span className={`h-5 w-5 rounded-full border border-ink/15 ${s.swatch}`} />
               </button>
             ))}
             <button type="button" onClick={() => apply("underline")} title="Underline" aria-label="Underline" className="grid h-8 w-8 place-items-center rounded-lg text-sm font-bold underline decoration-2 underline-offset-2 hover:bg-surface-2">

@@ -66,7 +66,7 @@ export default function Visual() {
           <text x={242} y={44} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.ink}>
             Harder module 2
           </text>
-          <text className="v-digital-sat-format-a v-digital-sat-format-top" x={242} y={62} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text className="v-digital-sat-format-a v-digital-sat-format-top" x={242} y={62} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             up to 800
           </text>
         </g>

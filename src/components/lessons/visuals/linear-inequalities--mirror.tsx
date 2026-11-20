@@ -77,13 +77,13 @@ export default function Visual() {
 
       {/* After: −2 > −3 */}
       <g className={`${a} ${fc(62)}`}>
-        <text x={160} y={38} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.primary}>
+        <text x={160} y={38} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.primaryText}>
           −2 &gt; −3
         </text>
-        <text x={X(-2)} y={72} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={X(-2)} y={72} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           −2
         </text>
-        <text x={X(-3)} y={72} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={X(-3)} y={72} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           −3
         </text>
       </g>

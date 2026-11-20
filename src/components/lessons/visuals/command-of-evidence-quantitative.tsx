@@ -18,8 +18,8 @@ const css = `
 @keyframes v-command-of-evidence-quantitative-val { 0%, 16% { opacity: 0 } 21%, 100% { opacity: 1 } }
 
 /* The claim's key word */
-.v-command-of-evidence-quantitative-key { fill: ${C.primary}; animation-name: v-command-of-evidence-quantitative-key; }
-@keyframes v-command-of-evidence-quantitative-key { 0%, 22% { fill: ${C.ink} } 27%, 100% { fill: ${C.primary} } }
+.v-command-of-evidence-quantitative-key { fill: ${C.primaryText}; animation-name: v-command-of-evidence-quantitative-key; }
+@keyframes v-command-of-evidence-quantitative-key { 0%, 22% { fill: ${C.ink} } 27%, 100% { fill: ${C.primaryText} } }
 
 /* Choice 1: true, but about tea. Tea and juice bars light up, then it is rejected. */
 .v-command-of-evidence-quantitative-c1 { animation-name: v-command-of-evidence-quantitative-c1; }

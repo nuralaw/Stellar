@@ -31,12 +31,12 @@ const css = `
   19% { opacity: 0.6 }
   28%, 100% { transform: scale(2.2); opacity: 0 }
 }
-.v-inference-sample-est { fill: ${C.primary}; animation-name: v-inference-sample-est; }
-@keyframes v-inference-sample-est { 0%, 14% { fill: ${C.ink} } 20%, 100% { fill: ${C.primary} } }
+.v-inference-sample-est { fill: ${C.primaryText}; animation-name: v-inference-sample-est; }
+@keyframes v-inference-sample-est { 0%, 14% { fill: ${C.ink} } 20%, 100% { fill: ${C.primaryText} } }
 
 /* Beat 2: the margin of error spreads 4 to the left and 4 to the right */
-.v-inference-sample-pm { fill: ${C.primary}; animation-name: v-inference-sample-pm; }
-@keyframes v-inference-sample-pm { 0%, 28% { fill: ${C.ink} } 33%, 100% { fill: ${C.primary} } }
+.v-inference-sample-pm { fill: ${C.primaryText}; animation-name: v-inference-sample-pm; }
+@keyframes v-inference-sample-pm { 0%, 28% { fill: ${C.ink} } 33%, 100% { fill: ${C.primaryText} } }
 .v-inference-sample-band { transform-box: fill-box; transform-origin: center; animation-name: v-inference-sample-band; }
 @keyframes v-inference-sample-band { 0%, 30% { transform: scaleX(0) } 50%, 100% { transform: scaleX(1) } }
 .v-inference-sample-capL { transform-box: fill-box; transform-origin: center; animation-name: v-inference-sample-capL; }
@@ -61,11 +61,11 @@ const css = `
 @keyframes v-inference-sample-stepR { 0%, 36% { opacity: 0; transform: translateX(-12px) } 46%, 100% { opacity: 1; transform: none } }
 
 /* Beat 3: the ends lock on 58 and 66, and the result appears */
-.v-inference-sample-end { fill: ${C.primary}; transform-box: fill-box; transform-origin: center; animation-name: v-inference-sample-end; }
+.v-inference-sample-end { fill: ${C.primaryText}; transform-box: fill-box; transform-origin: center; animation-name: v-inference-sample-end; }
 @keyframes v-inference-sample-end {
   0%, 50% { fill: ${C.muted}; transform: scale(1) }
-  54% { fill: ${C.primary}; transform: scale(1.3) }
-  59%, 100% { fill: ${C.primary}; transform: scale(1) }
+  54% { fill: ${C.primaryText}; transform: scale(1.3) }
+  59%, 100% { fill: ${C.primaryText}; transform: scale(1) }
 }
 .v-inference-sample-blank { opacity: 0; animation-name: v-inference-sample-blank; }
 @keyframes v-inference-sample-blank { 0%, 61% { opacity: 1 } 65%, 100% { opacity: 0 } }
@@ -117,10 +117,10 @@ export default function Visual() {
         </g>
         <line className="v-inference-sample-a v-inference-sample-capL" x1={X(58)} y1={AXIS - 13} x2={X(58)} y2={AXIS + 13} stroke={C.primary} strokeWidth={3} />
         <line className="v-inference-sample-a v-inference-sample-capR" x1={X(66)} y1={AXIS - 13} x2={X(66)} y2={AXIS + 13} stroke={C.primary} strokeWidth={3} />
-        <text className="v-inference-sample-a v-inference-sample-stepL" x={X(60)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text className="v-inference-sample-a v-inference-sample-stepL" x={X(60)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           −4
         </text>
-        <text className="v-inference-sample-a v-inference-sample-stepR" x={X(64)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text className="v-inference-sample-a v-inference-sample-stepR" x={X(64)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           +4
         </text>
 

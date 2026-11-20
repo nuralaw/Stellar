@@ -95,7 +95,7 @@ export default function Visual() {
 
       {/* Result */}
       <g className={cls("res")} textAnchor="middle">
-        <text x={160} y={150} fontSize={26} fontWeight={700} fill={C.primary}>
+        <text x={160} y={150} fontSize={26} fontWeight={700} fill={C.primaryText}>
           = 25 m/s
         </text>
       </g>

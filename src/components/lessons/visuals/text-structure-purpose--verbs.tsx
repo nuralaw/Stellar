@@ -20,8 +20,8 @@ ${show("sent", 30)}
 @keyframes v-text-structure-purpose--verbs-head { 0%, 52% { opacity: 0 } 56%, 100% { opacity: 1 } }
 .v-text-structure-purpose--verbs-dot { fill: ${C.primary}; animation-name: v-text-structure-purpose--verbs-dot; }
 @keyframes v-text-structure-purpose--verbs-dot { 0%, 54% { fill: ${C.fill} } 60%, 100% { fill: ${C.primary} } }
-.v-text-structure-purpose--verbs-word { fill: ${C.primary}; animation-name: v-text-structure-purpose--verbs-word; }
-@keyframes v-text-structure-purpose--verbs-word { 0%, 54% { fill: ${C.ink} } 60%, 100% { fill: ${C.primary} } }
+.v-text-structure-purpose--verbs-word { fill: ${C.primaryText}; animation-name: v-text-structure-purpose--verbs-word; }
+@keyframes v-text-structure-purpose--verbs-word { 0%, 54% { fill: ${C.ink} } 60%, 100% { fill: ${C.primaryText} } }
 `;
 
 const AXIS_Y = 104;

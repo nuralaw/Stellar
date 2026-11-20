@@ -27,7 +27,7 @@ export function Toaster() {
         role="status"
         className={`toast-in pointer-events-auto relative flex max-w-sm items-center gap-3 overflow-hidden rounded-2xl bg-side py-3 pr-3 pl-3.5 text-side-ink shadow-[0_18px_40px_-12px_rgb(0_0_0/0.45)] ring-1 ring-side-line ${leaving === t.id ? "toast-out" : ""}`}
       >
-        <span className="lesson-pop grid h-8 w-8 shrink-0 place-items-center rounded-full bg-success text-white">
+        <span className="lesson-pop grid h-8 w-8 shrink-0 place-items-center rounded-full bg-success text-surface">
           <Icon d={I.check} className="h-4 w-4" strokeWidth={3} />
         </span>
         <span className="min-w-0 flex-1">

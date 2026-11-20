@@ -54,7 +54,7 @@ export default function Visual() {
           <text x={X(s.h)} y={130} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.ink}>
             {s.h}
           </text>
-          <text x={X(s.h)} y={154} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={X(s.h)} y={154} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             {s.e}
           </text>
         </g>
@@ -64,7 +64,7 @@ export default function Visual() {
       {[0, 1].map((i) => (
         <g key={i} className={`${a} ${fc(i === 0 ? 20 : 48)}`}>
           <path d={`M${X(3 * i) + 32} 59 H${X(3 * i + 3) - 32} M${X(3 * i + 3) - 38} 54 L${X(3 * i + 3) - 32} 59 L${X(3 * i + 3) - 38} 64`} fill="none" stroke={C.primary} strokeWidth={2} />
-          <text x={(X(3 * i) + X(3 * i + 3)) / 2} y={50} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={(X(3 * i) + X(3 * i + 3)) / 2} y={50} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             × 2
           </text>
         </g>

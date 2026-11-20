@@ -4,31 +4,27 @@ import { I, Icon } from "@/components/bank/icons";
 import { CountUp } from "@/components/home/CountUp";
 import { lessonVisual } from "@/components/lessons/lessonVisual";
 import { ExampleChip, PlusMark } from "@/components/plus/PlusMark";
-import { LaunchSentence } from "@/components/plus/PlusPersonal";
 import { ReviewMini, ReviewTimeline, SampleMistake, ScoreMini, ScreenFrame, StepsStrip, TestsPreview } from "@/components/plus/previews";
-import { BTN_PRIMARY, EYEBROW, LINK_STRONG } from "@/components/plus/styles";
+import { LINK_STRONG } from "@/components/plus/styles";
 import type { AuthFacts } from "@/lib/auth-facts";
 import { StarBackdrop } from "@/components/StarBackdrop";
 import { getLessons } from "@/lib/lessons";
-import { MAIN_NAV, PLUS_NAV, STATS_ICON } from "@/lib/nav";
-import { PLAN_ORDER, PLUS } from "@/lib/plus-config";
+import { MAIN_NAV, STATS_ICON } from "@/lib/nav";
 import { INTERVALS } from "@/lib/review";
 import { DOMAINS } from "@/lib/taxonomy";
-import { FeatureCarousel, type FeatureSlide } from "./FeatureCarousel";
-import { TabLink } from "./AuthTabs";
-import { PlanPicker } from "./PlanPicker";
+import type { FeatureSlide } from "./FeatureCarousel";
 import { PlusShowcase, type Benefit } from "./PlusShowcase";
 import { StellarArt } from "./StellarArt";
 
-// The three panels of /register and /login (server-rendered; the tab switching and the carousel are client components).
-// Every number comes from AuthFacts / lib/plus-config / lib/review, never typed in by hand.
+// The pieces shared by /register, /login, /plus and the public landing page (components/landing/dusk): the account card
+// layout, the Features carousel slides, the Free card and the Plus benefits. Server-rendered; the carousels are client
+// components. Every number comes from AuthFacts / lib/plus-config / lib/review, never typed in by hand.
 
-/** Which lesson the Features tab shows (the owner can change this). */
+/** Which lesson the Features carousel shows (the owner can change this). */
 export const LESSON_SLUG = "linear-functions";
 
 const num = (n: number) => n.toLocaleString("en-US");
 const iconOf = (href: string) => MAIN_NAV.find((i) => i.href === href)?.icon ?? "";
-const H2 = "lesson-in mt-2 text-2xl font-bold tracking-tight text-balance md:text-3xl";
 const CARD = "rounded-2xl border border-line bg-surface p-4 shadow-[0_1px_0_var(--color-line),0_12px_40px_-12px_rgb(0_0_0/0.18)]";
 
 /* ------------------------------------------------------------------ Account */
@@ -38,19 +34,19 @@ export function AccountView({ mode, facts, children }: { mode: "register" | "sig
     <>
       <StarBackdrop variant="account" />
       {/* One tree: below xl a centred single column; at xl a two-column grid (card | art) with the links under the card. */}
-      <div className="flex w-full flex-col items-center xl:ml-[calc(37.5vw-12rem-16rem)] xl:grid xl:max-w-[68.5rem] xl:min-w-0 xl:flex-1 xl:grid-cols-[24rem_minmax(0,42rem)] xl:grid-rows-[auto_auto] xl:items-stretch xl:gap-x-10 xl:gap-y-4">
+      <div className="flex w-full flex-col items-center xl:mx-auto xl:grid xl:max-w-[68.5rem] xl:min-w-0 xl:flex-1 xl:grid-cols-[24rem_minmax(0,42rem)] xl:grid-rows-[auto_auto] xl:items-stretch xl:gap-x-10 xl:gap-y-4">
         <p className="lesson-in mb-5 w-full max-w-sm text-2xl leading-tight font-bold tracking-tight text-balance xl:hidden">Prep for the Digital SAT, all in one place</p>
         <div className="lesson-in w-full max-w-sm [animation-delay:80ms] xl:col-start-1 xl:row-start-1 xl:h-full xl:max-w-none">{children}</div>
         {/* /register: the art's minimum = the sign-up card's height, so the row doesn't grow (and jump) when the form
             replaces the shorter "Loading…" card. /login's card fits the default 26rem. */}
         <StellarArt facts={facts} className={`hidden xl:col-start-2 xl:row-start-1 xl:flex ${mode === "register" ? "xl:min-h-[30rem]" : ""}`} />
         <p className="lesson-in mt-4 flex w-full max-w-sm flex-wrap gap-x-5 gap-y-1 text-sm [animation-delay:160ms] xl:col-start-1 xl:row-start-2 xl:mt-0 xl:max-w-none">
-          <TabLink to="features" className={LINK_STRONG}>
+          <Link href="/#features" className={LINK_STRONG}>
             See all features →
-          </TabLink>
-          <TabLink to="pricing" className={LINK_STRONG}>
+          </Link>
+          <Link href="/#pricing" className={LINK_STRONG}>
             Pricing →
-          </TabLink>
+          </Link>
         </p>
       </div>
     </>
@@ -141,7 +137,7 @@ function VocabMini({ word }: { word: { word: string; pos: string; def: string } 
         <p className="mt-3 text-[15px]">{word.def}</p>
         <div className="mt-5 flex gap-2">
           <span className="rounded-full border border-line px-3 py-1 text-xs font-semibold">Again</span>
-          <span className="rounded-full bg-primary-strong px-3 py-1 text-xs font-semibold text-primary-ink">Got it</span>
+          <span className="rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-ink">Got it</span>
         </div>
       </div>
     </div>
@@ -192,7 +188,7 @@ function TournamentMini() {
           <div
             key={p.rank}
             className={`stat-rise flex flex-1 justify-center rounded-t-xl pt-2 text-2xl font-bold tabular-nums ${
-              p.rank === 1 ? "bg-primary-strong text-primary-ink" : "bg-surface-2 text-ink ring-1 ring-line"
+              p.rank === 1 ? "bg-primary text-primary-ink" : "bg-surface-2 text-ink ring-1 ring-line"
             }`}
             style={{ height: `${p.height}%`, animationDelay: `${p.delay}ms` }}
           >
@@ -204,7 +200,7 @@ function TournamentMini() {
   );
 }
 
-/** The Features carousel's slides (shared by the Features tab and /plus). */
+/** The Features carousel's slides (the public landing page's Features section). */
 export function featureSlides(facts: AuthFacts): FeatureSlide[] {
   const { tests: t, lessons: l, free: f, questions, word } = facts;
   const general = f.generalQuestions;
@@ -338,26 +334,9 @@ export function featureSlides(facts: AuthFacts): FeatureSlide[] {
   ];
 }
 
-export function FeaturesView({ facts }: { facts: AuthFacts }) {
-  return (
-    <>
-      <StarBackdrop variant="features" />
-      <div className="relative mx-auto max-w-5xl">
-        <p className={`lesson-in ${EYEBROW}`}>Features</p>
-        <h2 className={`${H2} [animation-delay:70ms]`}>What&apos;s inside Stellar</h2>
-        <p className="lesson-in mt-3 max-w-xl text-muted [animation-delay:140ms]">Free to start. Plus unlocks the rest, see Pricing.</p>
-        <div className="lesson-in mt-8 [animation-delay:200ms]">
-          <FeatureCarousel slides={featureSlides(facts)} />
-        </div>
-      </div>
-    </>
-  );
-}
-
-
 /* ------------------------------------------------------------------ Pricing */
 
-/** Pricing tab: "Weakest skills" with real skill names and sample accuracies. */
+/** Pricing: "Weakest skills" with real skill names and sample accuracies. */
 function WeakMini() {
   const picks = [DOMAINS[0], DOMAINS[Math.floor(DOMAINS.length / 2)], DOMAINS[DOMAINS.length - 1]].map((d) => d.skills[0]);
   const acc = [48, 55, 61];
@@ -387,7 +366,7 @@ function WeakMini() {
   );
 }
 
-/** Big decorative "Stellar1600Plus" at the bottom right of the Pricing panel (the panel is `relative isolate overflow-hidden`). */
+/** Big decorative "Stellar1600Plus" at the bottom right of the pricing block (which must be `relative isolate overflow-hidden`). */
 export function Watermark() {
   return (
     <p
@@ -399,7 +378,7 @@ export function Watermark() {
   );
 }
 
-/** The Free plan card. `cta` is the button under the list (the sign-up tabs pass a TabLink, /plus a plan-aware link). */
+/** The Free plan card. `cta` is the button under the list (the landing page passes a /register link, /plus a plan-aware one). */
 export function FreeCard({ facts, cta }: { facts: AuthFacts; cta: ReactNode }) {
   const { tests: t, free: f } = facts;
   const items: { title: string; line: string }[] = [
@@ -411,7 +390,7 @@ export function FreeCard({ facts, cta }: { facts: AuthFacts; cta: ReactNode }) {
     { title: "Weekly tournament", line: "Rounds and leaderboards" },
   ];
   return (
-    <div className="lesson-cover flex flex-col rounded-3xl bg-surface p-4 ring-1 ring-line [animation-delay:120ms]">
+    <div data-dk-watch className="lesson-cover flex flex-col rounded-3xl bg-surface p-4 ring-1 ring-line [animation-delay:120ms]">
       <div className="flex items-center justify-between gap-2">
         <p className="text-lg font-semibold">Free</p>
         <span className="rounded-full bg-success-soft px-2.5 py-0.5 text-xs font-semibold text-success">Forever</span>
@@ -436,7 +415,7 @@ export function FreeCard({ facts, cta }: { facts: AuthFacts; cta: ReactNode }) {
   );
 }
 
-/** The six Plus benefits the showcase flips through (Pricing tab and /plus). */
+/** The six Plus benefits the showcase flips through (landing page and /plus). */
 export function plusBenefits(facts: AuthFacts): Benefit[] {
   const { tests: t, lessons: l, free: f } = facts;
   const general = f.generalQuestions;
@@ -518,7 +497,7 @@ export function plusBenefits(facts: AuthFacts): Benefit[] {
 /** The Plus half of the pricing grid: the Plus row, the plan `picker`, the auto-flipping benefit showcase and an optional `footer` (/plus puts its buy row there). */
 export function PlusArea({ facts, picker, footer }: { facts: AuthFacts; picker: ReactNode; footer?: ReactNode }) {
   return (
-    <div className="lesson-cover rounded-3xl bg-surface/60 p-4 ring-1 ring-line [animation-delay:180ms]">
+    <div data-dk-watch className="lesson-cover rounded-3xl bg-surface/60 p-4 ring-1 ring-line [animation-delay:180ms]">
       <div className="flex flex-wrap items-center justify-between gap-3 xl:flex-nowrap">
         <div className="flex shrink-0 items-center gap-2.5">
           <PlusMark size="sm" />
@@ -542,43 +521,5 @@ export function PricingGrid({ facts, freeCta, picker, footer }: { facts: AuthFac
       <FreeCard facts={facts} cta={freeCta} />
       <PlusArea facts={facts} picker={picker} footer={footer} />
     </div>
-  );
-}
-
-export function PricingView({ mode, facts }: { mode: "register" | "signin"; facts: AuthFacts }) {
-  const anyPrice = PLAN_ORDER.some((id) => PLUS.plans[id].amountCents !== null);
-
-  return (
-    <>
-      <StarBackdrop variant="pricing" />
-      <Watermark />
-      <div className="relative mx-auto w-full max-w-6xl">
-        <div className="xl:flex xl:items-end xl:justify-between xl:gap-6">
-          <div>
-            <p className={`lesson-in ${EYEBROW}`}>Pricing</p>
-            <h2 className={`${H2} [animation-delay:70ms]`}>Start free. Add Plus when you need it.</h2>
-          </div>
-          <div className="lesson-in mt-2 [animation-delay:140ms] xl:mt-0 xl:text-right">
-            <Link href={PLUS_NAV.href} className={`${LINK_STRONG} text-sm`}>
-              Compare plans and FAQ →
-            </Link>
-            <p className="mt-1 text-[12px] text-muted empty:hidden">
-              {anyPrice && `${PLUS.priceNote} `}
-              <LaunchSentence format="short" />
-            </p>
-          </div>
-        </div>
-
-        <PricingGrid
-          facts={facts}
-          freeCta={
-            <TabLink to="account" focusForm className={`${BTN_PRIMARY} w-full`}>
-              {mode === "register" ? "Create a free account" : "Sign in"}
-            </TabLink>
-          }
-          picker={<PlanPicker />}
-        />
-      </div>
-    </>
   );
 }

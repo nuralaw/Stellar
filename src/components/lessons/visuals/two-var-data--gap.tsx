@@ -66,7 +66,7 @@ export default function Visual() {
       {/* The actual dot, the predicted point and the gap */}
       <g className={cls("dot")}>
         <circle cx={px(8)} cy={py(40)} r={4} fill={C.primary} />
-        <text x={px(8) - 10} y={py(40) - 8} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="end">
+        <text x={px(8) - 10} y={py(40) - 8} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="end">
           dot: 40
         </text>
       </g>

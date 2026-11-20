@@ -239,7 +239,7 @@ export function CalculatorDock({
                 title="Drag to resize · double-click to reset"
                 className="group absolute right-0 bottom-0 hidden h-4 w-4 cursor-nwse-resize touch-none lg:block"
               >
-                <svg viewBox="0 0 16 16" className={`h-4 w-4 transition-colors ${dragging === "xy" ? "text-primary" : "text-muted/60 group-hover:text-primary"}`}>
+                <svg viewBox="0 0 16 16" className={`h-4 w-4 transition-colors ${dragging === "xy" ? "text-primary" : "text-muted/60 group-hover:text-primary-strong"}`}>
                   <path d="M14 6 6 14M14 10l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </div>

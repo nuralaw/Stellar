@@ -133,14 +133,14 @@ export default function Visual() {
         </text>
 
         {/* Angle labels */}
-        <text className="v-lines-angles-triangles-a v-lines-angles-triangles-t1" x={P1.x + R + 6} y={Y1 - 7} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className="v-lines-angles-triangles-a v-lines-angles-triangles-t1" x={P1.x + R + 6} y={Y1 - 7} fontSize={12} fontWeight={700} fill={C.primaryText}>
           70°
         </text>
         <text className="v-lines-angles-triangles-a v-lines-angles-triangles-t2" x={P1.x - R - 6} y={Y1 - 7} textAnchor="end" fontSize={12} fontWeight={700} fill={C.ink}>
           110°
         </text>
         <g className="v-lines-angles-triangles-a v-lines-angles-triangles-t3" fontSize={12} fontWeight={700}>
-          <text x={n(P2.x - R - 6)} y={Y2 + 17} textAnchor="end" fill={C.primary}>
+          <text x={n(P2.x - R - 6)} y={Y2 + 17} textAnchor="end" fill={C.primaryText}>
             70°
           </text>
           <text x={n(P2.x + R + 6)} y={Y2 + 17} fill={C.ink}>
@@ -153,7 +153,7 @@ export default function Visual() {
           <text x={212} y={66} fontSize={12} fill={C.muted}>
             equal
           </text>
-          <text x={212} y={87} fontSize={17} fontWeight={700} fill={C.primary}>
+          <text x={212} y={87} fontSize={17} fontWeight={700} fill={C.primaryText}>
             70° = 70°
           </text>
         </g>
@@ -162,7 +162,7 @@ export default function Visual() {
             add to 180°
           </text>
           <text x={212} y={135} fontSize={17} fontWeight={700} fill={C.ink}>
-            <tspan fill={C.primary}>70°</tspan> + 110°
+            <tspan fill={C.primaryText}>70°</tspan> + 110°
           </text>
         </g>
       </g>

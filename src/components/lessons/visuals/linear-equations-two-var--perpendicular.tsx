@@ -48,10 +48,10 @@ export default function Visual() {
       {/* The slope triangle before the turn: run 5, rise 2 */}
       <g className={`${a} ${first}`}>
         <path d="M130 120 H200 V92 Z" fill={C.soft} stroke={C.primary} strokeWidth={2} />
-        <text x={165} y={136} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={165} y={136} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           run 5
         </text>
-        <text x={207} y={110} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={207} y={110} fontSize={12} fontWeight={700} fill={C.primaryText}>
           rise 2
         </text>
       </g>
@@ -61,10 +61,10 @@ export default function Visual() {
         <path d="M130 120 V50 H102 Z" fill={C.soft} stroke={C.primary} strokeWidth={2} />
       </g>
       <g className={`${a} ${fc(70)}`}>
-        <text x={152} y={88} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={152} y={88} fontSize={12} fontWeight={700} fill={C.primaryText}>
           5 up
         </text>
-        <text x={124} y={42} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={124} y={42} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           2 left
         </text>
       </g>

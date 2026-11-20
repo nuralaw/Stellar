@@ -59,16 +59,16 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {}, tour }: { t
                 title={item.label}
                 aria-current={active ? "page" : undefined}
                 className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors rail:justify-center rail:px-0 ${
-                  active ? "bg-primary/15 text-accent" : "text-side-muted hover:bg-side-2 hover:text-side-ink"
+                  active ? "bg-side-2 text-side-accent shadow-[inset_3px_0_0_var(--side-accent)]" : "text-side-muted hover:bg-side-2 hover:text-side-ink"
                 }`}
               >
-                <span className={`relative ${item.href === PLUS_NAV.href && !active ? "text-accent" : ""}`}>
+                <span className={`relative ${item.href === PLUS_NAV.href && !active ? "text-side-accent" : ""}`}>
                   <Icon d={item.icon} />
                   {badges[item.href] > 0 && <span className="absolute -top-0.5 -right-0.5 hidden h-2 w-2 rounded-full bg-primary rail:block" aria-hidden="true" />}
                 </span>
                 <span className="flex-1 whitespace-nowrap rail:sr-only">{item.label}</span>
                 {badges[item.href] > 0 && (
-                  <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[11px] leading-none font-semibold text-accent tabular-nums rail:hidden" title={`${badges[item.href]} due today`}>
+                  <span className="rounded-full bg-white/10 px-1.5 py-0.5 text-[11px] leading-none font-semibold text-side-accent tabular-nums rail:hidden" title={`${badges[item.href]} due today`}>
                     {badges[item.href]}
                   </span>
                 )}
@@ -108,14 +108,14 @@ function ProfileCard({ onNavigate, plan, pathname }: { onNavigate: () => void; p
         {hydrated && isPhotoAvatar(profile.avatar) ? (
           <Avatar value={profile.avatar} className="h-10 w-10" />
         ) : (
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary/15 text-xl text-accent">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white/10 text-xl text-side-accent">
             {hydrated ? profile.avatar : <Icon d={ACCOUNT_NAV[0].icon} />}
           </span>
         )}
         <span className="min-w-0 rail:sr-only">
           <span className="flex min-w-0 items-center gap-1.5">
             <span className="truncate text-sm font-semibold text-side-ink">{named ? profile.name : "Guest"}</span>
-            {plan === "admin" && <span className="shrink-0 rounded-full bg-primary/15 px-1.5 py-0.5 text-xs leading-none font-semibold text-accent">Admin</span>}
+            {plan === "admin" && <span className="shrink-0 rounded-full bg-white/10 px-1.5 py-0.5 text-xs leading-none font-semibold text-side-accent">Admin</span>}
             {plan === "plus" && <PlusBadge tone="onDark" />}
           </span>
           <SaveStatus />
@@ -193,13 +193,14 @@ export function Sidebar() {
       {/* Desktop: collapsible sidebar (full width ↔ icon rail) */}
       <aside
         data-rail
+        data-chrome
         className="fixed inset-y-0 left-0 z-30 hidden w-64 overflow-x-hidden overflow-y-auto border-r border-side-line bg-side transition-[width] duration-200 ease-out lg:block rail:w-[72px] focus-mode:hidden!"
       >
         <SidebarContent pathname={pathname} onNavigate={() => {}} collapsible />
       </aside>
 
       {/* Mobile: top bar + slide-in drawer */}
-      <div className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden focus-mode:hidden">
+      <div data-chrome className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-side-line bg-side px-4 lg:hidden focus-mode:hidden">
         <Logo eager variant="onDark" className="h-6" />
         <div className="flex items-center gap-1">
           <ThemeToggle className="text-side-ink hover:bg-side-2" />
@@ -215,11 +216,13 @@ export function Sidebar() {
         </div>
       </div>
       <div
+        data-chrome
         className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
         onClick={close}
         aria-hidden="true"
       />
       <aside
+        data-chrome
         className={`fixed inset-y-0 left-0 z-50 w-72 max-w-[85vw] border-r border-side-line bg-side shadow-xl transition-transform lg:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}

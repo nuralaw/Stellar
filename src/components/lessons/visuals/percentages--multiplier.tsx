@@ -37,11 +37,11 @@ export default function Visual() {
       </g>
       <g className={cls("add")}>
         <rect x={X0 + 100 * K} y={38} width={20 * K} height={30} rx={4} fill={C.primary} />
-        <text x={X0 + 110 * K} y={58} fontSize={11} fontWeight={700} fill={C.bg} textAnchor="middle">
+        <text x={X0 + 110 * K} y={58} fontSize={11} fontWeight={700} fill={C.onPrimary} textAnchor="middle">
           +20%
         </text>
       </g>
-      <text className={cls("m1")} x={278} y={60} fontSize={18} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("m1")} x={278} y={60} fontSize={18} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         × 1.2
       </text>
 
@@ -58,7 +58,7 @@ export default function Visual() {
           −20%
         </text>
       </g>
-      <text className={cls("m2")} x={278} y={124} fontSize={18} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("m2")} x={278} y={124} fontSize={18} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         × 0.8
       </text>
 

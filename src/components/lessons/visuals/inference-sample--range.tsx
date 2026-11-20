@@ -65,7 +65,7 @@ export default function Visual() {
         <path d={`M${px(62)} 62 V84`} stroke={C.muted} strokeWidth={1.5} fill="none" />
       </g>
 
-      <text className={cls("res")} x={160} y={30} fontSize={16} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={30} fontSize={16} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         plausible: 58% to 66%
       </text>
     </Svg>

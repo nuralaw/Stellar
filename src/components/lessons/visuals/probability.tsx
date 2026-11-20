@@ -12,7 +12,7 @@ const css = `
 
 /* Beat 1: "bus rider" picks the group, the Bus column. The other column fades back. */
 .v-probability-w1 { animation-name: v-probability-w1; }
-@keyframes v-probability-w1 { 0%, 11% { fill: ${C.ink} } 14%, 46% { fill: ${C.primary} } 50%, 100% { fill: ${C.ink} } }
+@keyframes v-probability-w1 { 0%, 11% { fill: ${C.ink} } 14%, 46% { fill: ${C.primaryText} } 50%, 100% { fill: ${C.ink} } }
 .v-probability-fill { animation-name: v-probability-fill; }
 @keyframes v-probability-fill { 0%, 12% { opacity: 0 } 18%, 100% { opacity: 1 } }
 .v-probability-ring { stroke-dasharray: 100; animation-name: v-probability-ring; }
@@ -42,13 +42,13 @@ const css = `
 
 /* Beat 3: "grade 9" picks the cell that fits; it goes on top */
 .v-probability-w2 { animation-name: v-probability-w2; }
-@keyframes v-probability-w2 { 0%, 47% { fill: ${C.ink} } 50%, 70% { fill: ${C.primary} } 74%, 100% { fill: ${C.ink} } }
+@keyframes v-probability-w2 { 0%, 47% { fill: ${C.ink} } 50%, 70% { fill: ${C.primaryText} } 74%, 100% { fill: ${C.ink} } }
 .v-probability-row { fill: ${C.ink}; animation-name: v-probability-row; }
 @keyframes v-probability-row { 0%, 48% { fill: ${C.muted} } 51%, 100% { fill: ${C.ink} } }
 .v-probability-chip { transform-box: fill-box; transform-origin: center; animation-name: v-probability-chip; }
 @keyframes v-probability-chip { 0%, 48% { transform: scale(0) } 52% { transform: scale(1.12) } 55%, 100% { transform: none } }
-.v-probability-cell { fill: ${C.bg}; animation-name: v-probability-cell; }
-@keyframes v-probability-cell { 0%, 50% { fill: ${C.ink} } 52%, 100% { fill: ${C.bg} } }
+.v-probability-cell { fill: ${C.onPrimary}; animation-name: v-probability-cell; }
+@keyframes v-probability-cell { 0%, 50% { fill: ${C.ink} } 52%, 100% { fill: ${C.onPrimary} } }
 .v-probability-num { transform-box: fill-box; transform-origin: center; animation-name: v-probability-num; }
 @keyframes v-probability-num {
   0%, 53% { opacity: 0; transform: translate(-58px, -.6px) scale(.68) }
@@ -87,7 +87,7 @@ export default function Visual() {
         <path className="v-probability-a v-probability-ring" d={COLUMN} pathLength={100} fill="none" stroke={C.primary} strokeWidth={1.5} />
 
         {/* The top of the fraction starts under the chip and slides out of it */}
-        <text className="v-probability-a v-probability-num" x={214} y={98} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.primary}>
+        <text className="v-probability-a v-probability-num" x={214} y={98} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.primaryText}>
           18
         </text>
         {/* The cell that fits */}

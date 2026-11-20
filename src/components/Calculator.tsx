@@ -78,7 +78,7 @@ export function Calculator({ visible }: { visible: boolean }) {
 
   return (
     <div className="relative h-full w-full bg-white" data-calculator>
-      <p className="absolute inset-0 grid place-content-center text-sm text-neutral-500">Loading calculator…</p>
+      <p className="absolute inset-0 grid place-content-center text-sm text-[#3b4668]">Loading calculator…</p>
       <div ref={host} className="relative h-full w-full" />
     </div>
   );

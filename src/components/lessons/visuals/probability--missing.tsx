@@ -80,7 +80,7 @@ export default function Visual() {
       </g>
 
       {/* The missing cell: ? becomes 18 */}
-      <text className={cls("q")} x={cx(2)} y={ROWY[1] + 18} fontSize={15} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("q")} x={cx(2)} y={ROWY[1] + 18} fontSize={15} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         ?
       </text>
       <g className={cls("ans")}>
@@ -95,7 +95,7 @@ export default function Visual() {
       {/* Check with the column */}
       <rect className={cls("col")} x={COLX[2]} y={22} width={COLW[2]} height={98} rx={3} fill="none" stroke={C.good} strokeWidth={2} />
 
-      <text className={cls("txt1")} x={160} y={142} fontSize={13} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("txt1")} x={160} y={142} fontSize={13} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         row adds to 30: 12 + ? = 30
       </text>
       <text className={cls("txt2")} x={160} y={162} fontSize={14} fontWeight={700} fill={C.good} textAnchor="middle">

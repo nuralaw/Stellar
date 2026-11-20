@@ -57,8 +57,8 @@ export default function Visual() {
         <g className={cls("base")}>
           <path d={wedge(Q, 20, -65, 0)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
           <path d={wedge(R, 20, 180, 245)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={Q.x + 30} y={Q.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} {...lab}>65°</text>
-          <text x={R.x - 30} y={R.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} {...lab}>65°</text>
+          <text x={Q.x + 30} y={Q.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>65°</text>
+          <text x={R.x - 30} y={R.y - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>65°</text>
         </g>
         <g fontSize={13} fontWeight={700} fill={C.ink} {...lab}>
           <text x={Pp.x} y={Pp.y - 8} textAnchor="middle">P</text>
@@ -71,7 +71,7 @@ export default function Visual() {
         <text className={cls("p2")} x={200} y={92} fontSize={11} fill={C.muted} {...lab}>equal sides face</text>
         <text className={cls("p2")} x={200} y={108} fontSize={11} fill={C.muted} {...lab}>equal angles</text>
         <text className={cls("p3")} x={200} y={132} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>∠Q = ∠R = 65°</text>
-        <text className={cls("p4")} x={200} y={152} fontSize={13} fontWeight={700} fill={C.primary} {...lab}>∠P = 50°</text>
+        <text className={cls("p4")} x={200} y={152} fontSize={13} fontWeight={700} fill={C.primaryText} {...lab}>∠P = 50°</text>
       </g>
     </Svg>
   );

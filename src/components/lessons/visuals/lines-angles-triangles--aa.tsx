@@ -81,7 +81,7 @@ export default function Visual() {
         <text className={cls("w1")} x={206} y={90} fontSize={11} fontWeight={700} fill={C.ink} {...lab}>AC = 8</text>
         <text className={cls("w2")} x={206} y={112} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>AD/AC = AE/AB</text>
         <text className={cls("w2")} x={206} y={130} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>4/8 = 3/AB</text>
-        <text className={cls("w3")} x={206} y={154} fontSize={17} fontWeight={700} fill={C.primary} {...lab}>AB = 6</text>
+        <text className={cls("w3")} x={206} y={154} fontSize={17} fontWeight={700} fill={C.primaryText} {...lab}>AB = 6</text>
       </g>
     </Svg>
   );

@@ -35,7 +35,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
     return (
       <p className="mt-6 text-sm text-muted">
         Your {n.toLocaleString("en-US")} answers are saved only in this browser.{" "}
-        <Link href={href} className="font-semibold text-primary hover:underline">
+        <Link href={href} className="font-semibold text-primary-strong hover:underline">
           Sign in to keep them
         </Link>
       </p>
@@ -44,7 +44,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
   if (wasDismissed()) return null;
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-3 rounded-2xl border border-line bg-surface px-5 py-4">
-      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary" aria-hidden="true">
+      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary-strong" aria-hidden="true">
         <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4 4 0 0 1-.5 9.5H7zM12 11v5M9.5 13.5 12 11l2.5 2.5" />
         </svg>

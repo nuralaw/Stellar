@@ -279,7 +279,7 @@ export function Competition() {
                 {m?.status === "done" && (
                   <span className="rounded-lg bg-success-soft px-2 py-1 text-xs font-semibold text-success">Done{m.rank ? ` · #${m.rank}` : ""}</span>
                 )}
-                {m?.status === "running" && <span className="rounded-lg bg-accent-soft px-2 py-1 text-xs font-semibold text-accent">In progress</span>}
+                {m?.status === "running" && <span className="rounded-lg bg-accent-soft px-2 py-1 text-xs font-semibold text-primary-strong">In progress</span>}
                 {m?.status === "annulled" && <span className="rounded-lg bg-danger-soft px-2 py-1 text-xs font-semibold text-danger">Annulled</span>}
               </div>
               {m?.status === "done" ? (

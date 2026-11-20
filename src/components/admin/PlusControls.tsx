@@ -150,7 +150,7 @@ export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusS
         {mode === "remove" && (
           <span className="ml-auto flex flex-wrap items-center gap-2 text-sm">
             <span className="text-muted">Remove Plus from this student?</span>
-            <button type="button" onClick={remove} disabled={busy} className="inline-flex min-h-10 items-center rounded-xl bg-danger px-3.5 text-sm font-semibold text-white disabled:opacity-50">
+            <button type="button" onClick={remove} disabled={busy} className="inline-flex min-h-10 items-center rounded-xl bg-danger px-3.5 text-sm font-semibold text-white dark:text-primary-ink disabled:opacity-50">
               {busy ? "Removing…" : "Yes, remove"}
             </button>
             <button type="button" onClick={() => setMode("idle")} disabled={busy} className={btn}>

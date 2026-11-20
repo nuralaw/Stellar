@@ -43,7 +43,7 @@ export function ChoiceChips({ choices }: { choices: string[] }) {
             {mono
               ? c.split(PUNCT).map((part, j) =>
                   PUNCT.test(part) ? (
-                    <span key={j} className="mx-px rounded bg-primary-soft px-0.5 text-[1.1em] font-bold text-primary">
+                    <span key={j} className="mx-px rounded bg-primary-soft px-0.5 text-[1.1em] font-bold text-primary-strong">
                       {part}
                     </span>
                   ) : (
@@ -74,7 +74,7 @@ export function Example({ prompt, choices, lines, shown }: { prompt: string; cho
   return (
     <div className="mt-6 overflow-hidden rounded-2xl border border-line bg-surface">
       <div className="border-b border-line bg-surface-2/40 px-4 py-4 sm:px-6 sm:py-5">
-        <p className="text-xs font-semibold tracking-wide text-primary uppercase">Example</p>
+        <p className="text-xs font-semibold tracking-wide text-primary-strong uppercase">Example</p>
         <div className="mt-1.5 text-[17px] leading-relaxed font-semibold text-ink">
           <Lines text={prompt} />
         </div>
@@ -90,14 +90,14 @@ export function Example({ prompt, choices, lines, shown }: { prompt: string; cho
               {!last && <span aria-hidden="true" className={`absolute top-8 bottom-0 left-[13px] w-0.5 rounded-full transition-colors duration-500 ${i + 1 < shown ? "bg-primary/40" : "bg-line"}`} />}
               <span
                 className={`relative z-[1] grid h-7 w-7 shrink-0 place-items-center rounded-full text-[13px] font-bold tabular-nums transition-colors duration-300 ${
-                  !open ? "bg-surface-2 text-muted" : last ? "lesson-pop bg-primary text-primary-ink" : "bg-primary-soft text-primary"
+                  !open ? "bg-surface-2 text-muted" : last ? "lesson-pop bg-primary text-primary-ink" : "bg-primary-soft text-primary-strong"
                 }`}
               >
                 {open && last ? <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={3} /> : i + 1}
               </span>
               {open ? (
                 <div className={`lesson-in min-w-0 flex-1 ${last ? "-my-1 rounded-xl bg-primary-soft px-3 py-1.5" : "pt-0.5"}`}>
-                  <p className={`text-[16px] leading-relaxed font-semibold ${last ? "text-primary" : "text-ink"}`}>{inline(l.text)}</p>
+                  <p className={`text-[16px] leading-relaxed font-semibold ${last ? "text-primary-strong" : "text-ink"}`}>{inline(l.text)}</p>
                   {l.note && <p className="mt-0.5 text-sm leading-relaxed text-muted">{inline(l.note)}</p>}
                 </div>
               ) : (

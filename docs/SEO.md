@@ -4,7 +4,7 @@
 
 Only pages a signed-out visitor can open:
 
-- `/` is the public landing page (`src/components/landing/Landing.tsx`). For a signed-out visitor `src/proxy.ts` rewrites `/` to
+- `/` is the public landing page (`src/components/landing/dusk/DuskLanding.tsx`, "Dusk to Stars"). For a signed-out visitor `src/proxy.ts` rewrites `/` to
   `app/landing` (the address stays `/`); a signed-in student gets the Dashboard. The landing page is static, so it never reads the session.
 - `/plus` is Free vs Plus, with the FAQ.
 - `/register` is the sign-up page. Its canonical has no query, so `/register?next=...` collapses into it.

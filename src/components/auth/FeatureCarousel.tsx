@@ -4,7 +4,7 @@ import { I, Icon } from "@/components/bank/icons";
 import { FOCUS } from "@/components/plus/styles";
 import { CarouselSlides, CarouselTimer, useCarousel, type CarouselSlide } from "./carousel";
 
-// The Features tab of /register and /login: a progress bar (one segment per slide), Previous / Play-Pause / Next, and the
+// The landing page's Features section: a progress bar (one segment per slide), Previous / Play-Pause / Next, and the
 // slides. The state machine lives in ./carousel.
 
 export type FeatureSlide = CarouselSlide;

@@ -95,7 +95,7 @@ export default function Visual() {
       </g>
       <g className={cls("grp")}>
         <rect x={COLX[2] + 8} y={ROWY[3] + 3} width={COLW[2] - 16} height={18} rx={9} fill={C.primary} />
-        <text x={COLX[2] + COLW[2] / 2} y={ROWY[3] + 17} fontSize={13} fontWeight={700} fill={C.bg} textAnchor="middle">
+        <text x={COLX[2] + COLW[2] / 2} y={ROWY[3] + 17} fontSize={13} fontWeight={700} fill={C.onPrimary} textAnchor="middle">
           30
         </text>
       </g>
@@ -106,7 +106,7 @@ export default function Visual() {
         </text>
       </g>
 
-      <text className={cls("txt1")} x={160} y={142} fontSize={13} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("txt1")} x={160} y={142} fontSize={13} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         group: the 30 bus riders
       </text>
       <text className={cls("txt2")} x={160} y={162} fontSize={14} fontWeight={700} fill={C.good} textAnchor="middle">

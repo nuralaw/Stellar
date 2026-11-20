@@ -37,9 +37,10 @@ const SUN = "M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1
 const MOON = "M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z";
 
 /** Light/dark switch. Icon is picked by CSS (dark: variant), so there's no hydration mismatch. */
-export function ThemeToggle({ className = "" }: { className?: string }) {
+export function ThemeToggle({ className = "", ...rest }: { className?: string; "data-chrome"?: boolean }) {
   return (
     <button
+      {...rest}
       type="button"
       onClick={toggleTheme}
       aria-label="Toggle dark mode"

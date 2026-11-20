@@ -31,7 +31,7 @@ export function inline(text: string): ReactNode[] {
     if (link) {
       const external = /^https?:\/\//.test(link[2]);
       return (
-        <a key={i} href={link[2]} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="font-medium text-primary underline-offset-2 hover:underline">
+        <a key={i} href={link[2]} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="font-medium text-primary-strong underline-offset-2 hover:underline">
           {link[1]}
         </a>
       );
@@ -201,7 +201,7 @@ function Blocks({ blocks }: { blocks: Block[] }) {
               <ol key={i} className="my-4 space-y-2.5">
                 {b.items.map((it, j) => (
                   <li key={j} className="flex gap-3">
-                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-primary-soft text-xs font-bold text-primary tabular-nums">{j + 1}</span>
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-primary-soft text-xs font-bold text-primary-strong tabular-nums">{j + 1}</span>
                     <span className="min-w-0">{inline(it)}</span>
                   </li>
                 ))}

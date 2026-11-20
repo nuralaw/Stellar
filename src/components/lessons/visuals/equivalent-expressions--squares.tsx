@@ -65,10 +65,10 @@ export default function Visual() {
 
       {/* Side lengths */}
       <g className={`${a} ${fc(56)}`}>
-        <text x={108} y={36} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={108} y={36} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           x + 2
         </text>
-        <text x={52} y={72} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={52} y={72} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText}>
           x − 2
         </text>
       </g>

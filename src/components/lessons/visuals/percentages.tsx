@@ -74,7 +74,7 @@ export default function Visual() {
 
           {/* One more step: +20% */}
           <rect className="v-percentages-a v-percentages-new" x={240} y={44} width={40} height={32} rx={7} fill={C.primary} />
-          <text className="v-percentages-a v-percentages-p20" x={260} y={35} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+          <text className="v-percentages-a v-percentages-p20" x={260} y={35} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
             +20%
           </text>
 
@@ -91,7 +91,7 @@ export default function Visual() {
         </text>
         <g className="v-percentages-a v-percentages-mult">
           <rect x={119} y={126} width={66} height={30} rx={15} fill={C.soft} />
-          <text x={152} y={148} textAnchor="middle" fontSize={21} fontWeight={700} fill={C.primary}>
+          <text x={152} y={148} textAnchor="middle" fontSize={21} fontWeight={700} fill={C.primaryText}>
             × 1.2
           </text>
         </g>

@@ -31,7 +31,7 @@ export default function Visual() {
       {/* Overlap band */}
       <g className={cls("ov")}>
         <rect x={px(52)} y={40} width={px(56) - px(52)} height={82} rx={4} fill={C.soft} stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
-        <text x={(px(52) + px(56)) / 2} y={34} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="middle">
+        <text x={(px(52) + px(56)) / 2} y={34} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
           overlap
         </text>
       </g>
@@ -69,7 +69,7 @@ export default function Visual() {
         ))}
       </g>
 
-      <text className={cls("res")} x={160} y={166} fontSize={14} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={166} fontSize={14} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         overlap: no convincing difference
       </text>
     </Svg>

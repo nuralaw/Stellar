@@ -142,7 +142,7 @@ export function Quiz({
               dim: "border-line bg-surface opacity-60",
             }[state];
             const badge = {
-              idle: "border-line text-muted group-hover:border-primary/60 group-hover:text-primary",
+              idle: "border-line text-muted group-hover:border-primary/60 group-hover:text-primary-strong",
               selected: "border-primary bg-primary text-primary-ink",
               correct: "border-success bg-success text-surface",
               wrong: "border-danger bg-danger text-surface",
@@ -223,7 +223,7 @@ export function Quiz({
                 <button
                   type="button"
                   onClick={() => setShowDesmos(true)}
-                  className="inline-flex items-center gap-2 rounded-lg px-1 text-sm font-semibold text-primary hover:underline"
+                  className="inline-flex items-center gap-2 rounded-lg px-1 text-sm font-semibold text-primary-strong hover:underline"
                 >
                   <Icon d={I.calculator} className="h-4 w-4" />
                   See the fastest way in Desmos

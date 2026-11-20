@@ -78,11 +78,11 @@ export default function Visual() {
 
       {/* Rise and run */}
       <line className={cls("run")} x1={px(2)} y1={py(35)} x2={px(6)} y2={py(35)} pathLength={100} stroke={C.primary} strokeWidth={2.5} />
-      <text className={cls("runt")} x={(px(2) + px(6)) / 2} y={py(35) + 16} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("runt")} x={(px(2) + px(6)) / 2} y={py(35) + 16} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         run: 4 weeks
       </text>
       <line className={cls("rise")} x1={px(6)} y1={py(35)} x2={px(6)} y2={py(45)} pathLength={100} stroke={C.primary} strokeWidth={2.5} />
-      <text className={cls("riset")} x={px(6) + 8} y={(py(35) + py(45)) / 2 + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+      <text className={cls("riset")} x={px(6) + 8} y={(py(35) + py(45)) / 2 + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
         rise: 10 cm
       </text>
 

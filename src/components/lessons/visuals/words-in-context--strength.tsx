@@ -52,7 +52,7 @@ export default function Visual() {
       <Css>{css}</Css>
       <g className={`v-words-in-context--strength-a v-words-in-context--strength-scene`}>
         <g className={`v-words-in-context--strength-a v-words-in-context--strength-clue`}>
-          <text x={160} y={30} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+          <text x={160} y={30} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
             “slightly less pain, none cured”
           </text>
         </g>
@@ -60,7 +60,7 @@ export default function Visual() {
         {/* the band the clue allows */}
         <g className={`v-words-in-context--strength-a v-words-in-context--strength-band`}>
           <rect x={122} y={94} width={56} height={40} rx={8} fill={C.soft} stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
-          <text x={150} y={152} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primary}>
+          <text x={150} y={152} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
             slightly less
           </text>
         </g>

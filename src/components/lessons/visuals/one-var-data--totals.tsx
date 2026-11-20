@@ -67,10 +67,10 @@ export default function Visual() {
           <line x1={52} y1={0} x2={246} y2={0} stroke={C.primary} strokeWidth={2.5} strokeDasharray="6 4" />
         </g>
       </g>
-      <text className={cls("t1")} x={254} y={BASE - 10 * K + 4} fontSize={13} fontWeight={700} fill={C.primary}>
+      <text className={cls("t1")} x={254} y={BASE - 10 * K + 4} fontSize={13} fontWeight={700} fill={C.primaryText}>
         mean 10
       </text>
-      <text className={cls("t2")} x={254} y={BASE - 8 * K + 4} fontSize={13} fontWeight={700} fill={C.primary}>
+      <text className={cls("t2")} x={254} y={BASE - 8 * K + 4} fontSize={13} fontWeight={700} fill={C.primaryText}>
         mean 8
       </text>
 

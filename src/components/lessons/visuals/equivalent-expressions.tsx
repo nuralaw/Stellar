@@ -14,13 +14,13 @@ const css = `
 
 /* Beat 1: each factor lights up with its side */
 .v-equivalent-expressions-fa { animation-name: v-equivalent-expressions-fa; }
-@keyframes v-equivalent-expressions-fa { 0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primary} } 15%, 100% { fill: ${C.ink} } }
+@keyframes v-equivalent-expressions-fa { 0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primaryText} } 15%, 100% { fill: ${C.ink} } }
 .v-equivalent-expressions-fb { animation-name: v-equivalent-expressions-fb; }
-@keyframes v-equivalent-expressions-fb { 0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primary} } 22%, 100% { fill: ${C.ink} } }
+@keyframes v-equivalent-expressions-fb { 0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primaryText} } 22%, 100% { fill: ${C.ink} } }
 .v-equivalent-expressions-pa { animation-name: v-equivalent-expressions-pa; }
-@keyframes v-equivalent-expressions-pa { 0%, 6% { fill: ${C.muted} } 9%, 12% { fill: ${C.primary} } 15%, 100% { fill: ${C.muted} } }
+@keyframes v-equivalent-expressions-pa { 0%, 6% { fill: ${C.muted} } 9%, 12% { fill: ${C.primaryText} } 15%, 100% { fill: ${C.muted} } }
 .v-equivalent-expressions-pb { animation-name: v-equivalent-expressions-pb; }
-@keyframes v-equivalent-expressions-pb { 0%, 13% { fill: ${C.muted} } 16%, 19% { fill: ${C.primary} } 22%, 100% { fill: ${C.muted} } }
+@keyframes v-equivalent-expressions-pb { 0%, 13% { fill: ${C.muted} } 16%, 19% { fill: ${C.primaryText} } 22%, 100% { fill: ${C.muted} } }
 .v-equivalent-expressions-ea { stroke-dasharray: 100; opacity: 0; animation-name: v-equivalent-expressions-ea; }
 @keyframes v-equivalent-expressions-ea {
   0%, 6% { stroke-dashoffset: 100; opacity: 0 }
@@ -39,25 +39,25 @@ const css = `
 /* Side labels: lit with their factor (beat 1), then with each tile they multiply into (beat 3) */
 .v-equivalent-expressions-tx { animation-name: v-equivalent-expressions-tx; }
 @keyframes v-equivalent-expressions-tx {
-  0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primary} } 15%, 34.5% { fill: ${C.ink} }
-  36.5%, 44% { fill: ${C.primary} } 46%, 100% { fill: ${C.ink} }
+  0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primaryText} } 15%, 34.5% { fill: ${C.ink} }
+  36.5%, 44% { fill: ${C.primaryText} } 46%, 100% { fill: ${C.ink} }
 }
 .v-equivalent-expressions-t3 { animation-name: v-equivalent-expressions-t3; }
 @keyframes v-equivalent-expressions-t3 {
-  0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primary} } 15%, 44.5% { fill: ${C.ink} }
-  46.5%, 54% { fill: ${C.primary} } 56%, 100% { fill: ${C.ink} }
+  0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primaryText} } 15%, 44.5% { fill: ${C.ink} }
+  46.5%, 54% { fill: ${C.primaryText} } 56%, 100% { fill: ${C.ink} }
 }
 .v-equivalent-expressions-sx { animation-name: v-equivalent-expressions-sx; }
 @keyframes v-equivalent-expressions-sx {
-  0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primary} } 22%, 34.5% { fill: ${C.ink} }
-  36.5%, 39% { fill: ${C.primary} } 41%, 44.5% { fill: ${C.ink} }
-  46.5%, 49% { fill: ${C.primary} } 51%, 100% { fill: ${C.ink} }
+  0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primaryText} } 22%, 34.5% { fill: ${C.ink} }
+  36.5%, 39% { fill: ${C.primaryText} } 41%, 44.5% { fill: ${C.ink} }
+  46.5%, 49% { fill: ${C.primaryText} } 51%, 100% { fill: ${C.ink} }
 }
 .v-equivalent-expressions-s2 { animation-name: v-equivalent-expressions-s2; }
 @keyframes v-equivalent-expressions-s2 {
-  0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primary} } 22%, 39.5% { fill: ${C.ink} }
-  41.5%, 44% { fill: ${C.primary} } 46%, 49.5% { fill: ${C.ink} }
-  51.5%, 54% { fill: ${C.primary} } 56%, 100% { fill: ${C.ink} }
+  0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primaryText} } 22%, 39.5% { fill: ${C.ink} }
+  41.5%, 44% { fill: ${C.primaryText} } 46%, 49.5% { fill: ${C.ink} }
+  51.5%, 54% { fill: ${C.primaryText} } 56%, 100% { fill: ${C.ink} }
 }
 
 /* Beat 2: two cuts, then the four tiles move apart */
@@ -83,34 +83,34 @@ const css = `
 .v-equivalent-expressions-l { transform-box: fill-box; transform-origin: center; }
 .v-equivalent-expressions-l1 { animation-name: v-equivalent-expressions-l1; }
 @keyframes v-equivalent-expressions-l1 {
-  0%, 35.5% { opacity: 0; transform: scale(0.4); fill: ${C.primary} }
-  38.5% { opacity: 1; transform: scale(1.18); fill: ${C.primary} }
-  40.5% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 35.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
+  38.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
+  40.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
   43%, 57% { opacity: 1; transform: none; fill: ${C.ink} }
   59% { opacity: 1; transform: scale(1.22); fill: ${C.ink} }
   61%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
 }
 .v-equivalent-expressions-l2 { animation-name: v-equivalent-expressions-l2; }
 @keyframes v-equivalent-expressions-l2 {
-  0%, 40.5% { opacity: 0; transform: scale(0.4); fill: ${C.primary} }
-  43.5% { opacity: 1; transform: scale(1.18); fill: ${C.primary} }
-  45.5% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 40.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
+  43.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
+  45.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
   48%, 62% { opacity: 1; transform: none; fill: ${C.ink} }
-  65%, 100% { opacity: 1; transform: none; fill: ${C.primary} }
+  65%, 100% { opacity: 1; transform: none; fill: ${C.primaryText} }
 }
 .v-equivalent-expressions-l3 { animation-name: v-equivalent-expressions-l3; }
 @keyframes v-equivalent-expressions-l3 {
-  0%, 45.5% { opacity: 0; transform: scale(0.4); fill: ${C.primary} }
-  48.5% { opacity: 1; transform: scale(1.18); fill: ${C.primary} }
-  50.5% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 45.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
+  48.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
+  50.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
   53%, 62% { opacity: 1; transform: none; fill: ${C.ink} }
-  65%, 100% { opacity: 1; transform: none; fill: ${C.primary} }
+  65%, 100% { opacity: 1; transform: none; fill: ${C.primaryText} }
 }
 .v-equivalent-expressions-l4 { animation-name: v-equivalent-expressions-l4; }
 @keyframes v-equivalent-expressions-l4 {
-  0%, 50.5% { opacity: 0; transform: scale(0.4); fill: ${C.primary} }
-  53.5% { opacity: 1; transform: scale(1.18); fill: ${C.primary} }
-  55.5% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 50.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
+  53.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
+  55.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
   58%, 67% { opacity: 1; transform: none; fill: ${C.ink} }
   69% { opacity: 1; transform: scale(1.22); fill: ${C.ink} }
   71%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
@@ -173,13 +173,13 @@ export default function Visual() {
           </g>
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m2">
             <rect className="v-equivalent-expressions-a v-equivalent-expressions-like" x={X} y={Y + 69} width={65} height={26} rx={6} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l2" x={X + 32.5} y={Y + 87} fontSize={15} fill={C.primary}>
+            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l2" x={X + 32.5} y={Y + 87} fontSize={15} fill={C.primaryText}>
               2x
             </text>
           </g>
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m3">
             <rect className="v-equivalent-expressions-a v-equivalent-expressions-like" x={X + 69} y={Y} width={39} height={65} rx={6} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l3" x={X + 88.5} y={Y + 38} fontSize={15} fill={C.primary}>
+            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l3" x={X + 88.5} y={Y + 38} fontSize={15} fill={C.primaryText}>
               3x
             </text>
           </g>
@@ -211,7 +211,7 @@ export default function Visual() {
           = x²<tspan fill="none"> + 5x + 6</tspan>
         </text>
         <text className="v-equivalent-expressions-a v-equivalent-expressions-r2" {...sum}>
-          <tspan fill="none">= x² </tspan>+ <tspan fill={C.primary}>5x</tspan>
+          <tspan fill="none">= x² </tspan>+ <tspan fill={C.primaryText}>5x</tspan>
           <tspan fill="none"> + 6</tspan>
         </text>
         <text className="v-equivalent-expressions-a v-equivalent-expressions-r3" {...sum}>

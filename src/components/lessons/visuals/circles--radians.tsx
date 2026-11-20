@@ -45,7 +45,7 @@ export default function Visual() {
         <path className={cls("arc")} d={arcPath} pathLength={100} fill="none" stroke={C.primary} strokeWidth={4} />
         <circle cx={O.x} cy={O.y} r={3.5} fill={C.ink} />
         <text className={cls("p1")} x={f(O.x + 12)} y={f(O.y + 16)} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>r = 6</text>
-        <text className={cls("p2")} x={f(O.x + 20)} y={f(O.y - 6)} fontSize={12} fontWeight={700} fill={C.primary} {...lab}>π/3</text>
+        <text className={cls("p2")} x={f(O.x + 20)} y={f(O.y - 6)} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>π/3</text>
 
         <g className={cls("p3")} fill={C.ink} {...lab}>
           <text x={186} y={42} fontSize={13} fontWeight={700}>π rad = 180°</text>
@@ -54,7 +54,7 @@ export default function Visual() {
         <text className={cls("p4")} x={186} y={104} fontSize={12} fill={C.muted} {...lab}>arc length s = rθ</text>
         <g className={cls("p5")} {...lab}>
           <text x={186} y={126} fontSize={14} fontWeight={700} fill={C.ink}>= 6 · π/3</text>
-          <text x={186} y={150} fontSize={19} fontWeight={700} fill={C.primary}>= 2π</text>
+          <text x={186} y={150} fontSize={19} fontWeight={700} fill={C.primaryText}>= 2π</text>
         </g>
       </g>
     </Svg>

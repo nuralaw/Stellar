@@ -23,8 +23,8 @@ ${bad("b2", 54)}
 ${show("fill", 72)}
 .v-words-in-context--charge-ok { fill: ${C.goodSoft}; stroke: ${C.good}; animation-name: v-words-in-context--charge-ok; }
 @keyframes v-words-in-context--charge-ok { 0%, 62% { fill: ${C.fill}; stroke: ${C.line} } 68%, 100% { fill: ${C.goodSoft}; stroke: ${C.good} } }
-.v-words-in-context--charge-clue { fill: ${C.primary}; animation-name: v-words-in-context--charge-clue; }
-@keyframes v-words-in-context--charge-clue { 0%, 14% { fill: ${C.ink} } 20%, 100% { fill: ${C.primary} } }
+.v-words-in-context--charge-clue { fill: ${C.primaryText}; animation-name: v-words-in-context--charge-clue; }
+@keyframes v-words-in-context--charge-clue { 0%, 14% { fill: ${C.ink} } 20%, 100% { fill: ${C.primaryText} } }
 `;
 
 const FS = 13;
@@ -71,7 +71,7 @@ export default function Visual() {
         </g>
         <g className={`v-words-in-context--charge-a v-words-in-context--charge-plus`}>
           <circle cx={74} cy={26} r={9} fill={C.primary} />
-          <text x={74} y={31} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.bg}>
+          <text x={74} y={31} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.onPrimary}>
             +
           </text>
         </g>
@@ -86,7 +86,7 @@ export default function Visual() {
           <text x={244} y={50} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.good}>
             benevolent
           </text>
-          <text x={160} y={164} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={160} y={164} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             match the clue’s charge
           </text>
         </g>

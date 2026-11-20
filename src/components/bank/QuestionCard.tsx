@@ -102,7 +102,7 @@ export function ChoiceRow({
     dim: "border-line bg-surface opacity-60",
   }[state];
   const badge = {
-    idle: "border-line text-muted group-hover:border-primary/60 group-hover:text-primary",
+    idle: "border-line text-muted group-hover:border-primary/60 group-hover:text-primary-strong",
     selected: "border-primary bg-primary text-primary-ink",
     correct: "border-success bg-success text-surface",
     wrong: "border-danger bg-danger text-surface",

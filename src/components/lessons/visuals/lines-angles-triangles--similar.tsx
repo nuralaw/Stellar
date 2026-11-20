@@ -93,21 +93,21 @@ export default function Visual() {
         <g className={cls("m2")}>
           <line x1={T.P.x} y1={T.P.y} x2={T.Q.x} y2={T.Q.y} stroke={C.primary} strokeWidth={3.5} />
           <line x1={X.P.x} y1={X.P.y} x2={X.Q.x} y2={X.Q.y} stroke={C.primary} strokeWidth={3.5} />
-          <text x={f((T.P.x + T.Q.x) / 2 - 6)} y={f((T.P.y + T.Q.y) / 2 + 4)} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primary} stroke="none">3</text>
-          <text x={f((X.P.x + X.Q.x) / 2 - 8)} y={f((X.P.y + X.Q.y) / 2 + 4)} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primary} stroke="none">12</text>
+          <text x={f((T.P.x + T.Q.x) / 2 - 6)} y={f((T.P.y + T.Q.y) / 2 + 4)} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primaryText} stroke="none">3</text>
+          <text x={f((X.P.x + X.Q.x) / 2 - 8)} y={f((X.P.y + X.Q.y) / 2 + 4)} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText} stroke="none">12</text>
         </g>
         <g className={cls("m3")}>
           <line x1={T.P.x} y1={T.P.y} x2={T.R.x} y2={T.R.y} stroke={C.primary} strokeWidth={3.5} />
           <line x1={X.P.x} y1={X.P.y} x2={X.R.x} y2={X.R.y} stroke={C.primary} strokeWidth={3.5} />
-          <text x={f((T.P.x + T.R.x) / 2)} y={T.P.y + 16} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} stroke="none">7</text>
-          <text x={f((X.P.x + X.R.x) / 2)} y={X.P.y + 16} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary} stroke="none">28</text>
+          <text x={f((T.P.x + T.R.x) / 2)} y={T.P.y + 16} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} stroke="none">7</text>
+          <text x={f((X.P.x + X.R.x) / 2)} y={X.P.y + 16} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText} stroke="none">28</text>
         </g>
 
         {/* the work (top middle, above the big triangle's long side) */}
         <text className={cls("m1")} x={128} y={30} fontSize={13} fontWeight={700} fill={C.ink} stroke="none">△PQR ~ △XYZ</text>
         <text className={cls("m2")} x={128} y={50} fontSize={12} fontWeight={700} fill={C.ink} stroke="none">PQ 3 → XY 12</text>
         <text className={cls("m3")} x={128} y={68} fontSize={12} fontWeight={700} fill={C.ink} stroke="none">PR 7 → XZ 28</text>
-        <text className={cls("m3")} x={270} y={138} fontSize={14} fontWeight={700} fill={C.primary} stroke="none">× 4</text>
+        <text className={cls("m3")} x={270} y={138} fontSize={14} fontWeight={700} fill={C.primaryText} stroke="none">× 4</text>
       </g>
     </Svg>
   );

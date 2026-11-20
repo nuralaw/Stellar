@@ -15,7 +15,7 @@ const pulse = (n: string, t: number) => `.${P}${n} { fill: ${C.fill}; stroke: ${
 const tag = (n: string, t: number) => `.${P}${n} { fill: ${C.muted}; animation-name: ${P}${n}; }
 @keyframes ${P}${n} {
   0%, ${t}% { fill: ${C.muted} }
-  ${t + 5}%, ${t + 22}% { fill: ${C.primary} }
+  ${t + 5}%, ${t + 22}% { fill: ${C.primaryText} }
   ${t + 28}%, 100% { fill: ${C.muted} }
 }`;
 

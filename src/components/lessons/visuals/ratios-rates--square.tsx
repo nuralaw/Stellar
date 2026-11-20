@@ -68,7 +68,7 @@ export default function Visual() {
           </g>
         ))}
       </g>
-      <text className={cls("l1")} x={GX + 33} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("l1")} x={GX + 33} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         1 yd² = 3 × 3 = 9 ft²
       </text>
 
@@ -84,7 +84,7 @@ export default function Visual() {
           <Grid x={layer(0).x} y={layer(0).y} c={LC} fill={C.soft} />
         </g>
       </g>
-      <text className={cls("l2")} x={LX + 38} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("l2")} x={LX + 38} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         1 yd³ = 3 × 3 × 3 = 27 ft³
       </text>
     </Svg>

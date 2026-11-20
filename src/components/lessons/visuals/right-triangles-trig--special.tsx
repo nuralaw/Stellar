@@ -12,7 +12,7 @@ const f = (n: number) => Math.round(n * 10) / 10;
 const r = (n: string, kf: string, extra = "") => `.${P}${n} { ${extra} animation-name: ${P}${n}; } @keyframes ${P}${n} { ${kf} }`;
 const pop = (n: string, t: number) => r(n, `0%, ${t}% { opacity: 0 } ${t + 6}%, 100% { opacity: 1 }`);
 /** Angle label and its opposite side flash in the accent together, then settle. */
-const pair = (n: string, t: number) => r(n, `0%, ${t}% { fill: ${C.ink} } ${t + 3}%, ${t + 11}% { fill: ${C.primary} } ${t + 14}%, 100% { fill: ${C.ink} }`);
+const pair = (n: string, t: number) => r(n, `0%, ${t}% { fill: ${C.ink} } ${t + 3}%, ${t + 11}% { fill: ${C.primaryText} } ${t + 14}%, 100% { fill: ${C.ink} }`);
 const css = [
   `.${a} { animation: 10s ease-in-out infinite; }`,
   r("scene", "0% { opacity: 0 } 5%, 93% { opacity: 1 } 99%, 100% { opacity: 0 }"),

@@ -78,7 +78,7 @@ function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProg
     >
       {visual && <Island visual={visual} className="group-hover:ring-primary/30" />}
       <div className="flex items-start justify-between gap-3 px-2 pt-3">
-        <span className="leading-snug font-semibold group-hover:text-primary">{l.title}</span>
+        <span className="leading-snug font-semibold group-hover:text-primary-strong">{l.title}</span>
         {done && (
           <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success-soft text-success" title="Done">
             <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={3} />
@@ -188,8 +188,8 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
             </div>
             <Link
               href={`/lessons/${s.lesson.slug}`}
-              className={`mx-2 mb-1 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold text-primary-ink transition-colors sm:mx-0 sm:mr-2 sm:mb-0 ${
-                locked ? "bg-primary-strong hover:bg-primary-strong-hover" : "bg-primary hover:bg-primary-hover"
+              className={`mx-2 mb-1 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold transition-colors sm:mx-0 sm:mr-2 sm:mb-0 ${
+                locked ? "bg-primary-strong text-primary-strong-ink hover:bg-primary-strong-hover" : "bg-primary text-primary-ink hover:bg-primary-hover"
               }`}
             >
               {locked ? "Preview lesson" : s.kind === "continue" ? "Continue" : "Start lesson"}
@@ -224,7 +224,7 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
               }`}
             >
               {t.label}
-              <span className={`rounded-full px-1.5 py-0.5 text-xs tabular-nums ${on ? "bg-primary-soft text-primary" : "bg-surface-2 text-muted"}`}>
+              <span className={`rounded-full px-1.5 py-0.5 text-xs tabular-nums ${on ? "bg-primary-soft text-primary-strong" : "bg-surface-2 text-muted"}`}>
                 {c.done ? `${c.done}/${c.total}` : c.total}
               </span>
             </button>

@@ -16,7 +16,7 @@ const LEVELS = [
 ];
 const level = (n: number) => (n <= 0 ? -1 : LEVELS.reduce((l, s, i) => (n >= s.min ? i : l), 0));
 /** Warm glow behind a day's flame (stronger for bigger days). */
-const halo = (l: number) => (l < 0 ? undefined : `radial-gradient(circle at 50% 80%, rgb(249 115 22 / ${LEVELS[l].halo}), transparent 72%)`);
+const halo = (l: number) => (l < 0 ? undefined : `radial-gradient(circle at 50% 80%, color-mix(in oklab, var(--accent) ${Math.round(LEVELS[l].halo * 100)}%, transparent), transparent 72%)`);
 
 const FLAME_OUTER = "M12 1.5c.8 3.2-1.2 5.1-2.6 7C7.6 10.9 6 13 6 15.8 6 19.5 8.7 22 12 22s6-2.5 6-6.2c0-2.6-1.3-4.6-2.6-6.1-.3 1.6-1.1 2.7-2.2 3.1.6-3.9-.3-8.6-1.2-11.3Z";
 const FLAME_INNER = "M12 11.5c.3 1.6-.6 2.6-1.3 3.5-.6.8-1.2 1.6-1.2 2.8 0 1.8 1.1 3.2 2.5 3.2s2.5-1.3 2.5-3.1c0-1.5-.8-2.6-1.4-3.4-.2.7-.6 1.1-1 1.3.1-1.6-.1-3.2-.1-4.3Z";
@@ -51,7 +51,7 @@ function Flame({ id, l, seed = 0, still = false, className = "", height }: { id:
       style={{
         height,
         opacity: f.opacity,
-        filter: `saturate(${f.saturate})${f.glow ? ` drop-shadow(0 0 ${f.glow}px rgb(249 115 22 / 0.7))` : ""}`,
+        filter: `saturate(${f.saturate})${f.glow ? ` drop-shadow(0 0 ${f.glow}px color-mix(in oklab, var(--accent) 70%, transparent))` : ""}`,
         animationDuration: `${f.speed}s`,
         // Different phase per day, so the fires don't flicker in sync.
         animationDelay: `-${(seed * 0.37) % f.speed}s`,
@@ -146,7 +146,7 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
                 go(monthKey(today));
                 setSelected(today);
               }}
-              className="ml-1 rounded-lg px-2 py-1 text-xs font-semibold text-primary hover:bg-primary-soft"
+              className="ml-1 rounded-lg px-2 py-1 text-xs font-semibold text-primary-strong hover:bg-primary-soft"
             >
               Today
             </button>
@@ -219,18 +219,18 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
               )}
               <span
                 className={`relative leading-none ${compact ? "text-[13px] tabular-nums" : "text-[10px] sm:text-xs"} ${
-                  l >= 2 ? "font-bold text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.65)]" : l >= 0 ? "font-semibold text-ink" : future ? "font-medium text-muted/60" : "font-medium text-muted"
+                  l >= 2 ? "font-bold text-ink [text-shadow:0_1px_3px_var(--bg)]" : l >= 0 ? "font-semibold text-ink" : future ? "font-medium text-muted/60" : "font-medium text-muted"
                 }`}
               >
                 {Number(iso.slice(8))}
               </span>
               {n > 0 && !compact && (
-                <span className={`relative mt-auto self-center text-xs font-bold tabular-nums sm:self-end sm:text-lg ${l >= 2 ? "text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.65)]" : "text-ink"}`}>{n}</span>
+                <span className={`relative mt-auto self-center text-xs font-bold tabular-nums sm:self-end sm:text-lg ${l >= 2 ? "text-ink [text-shadow:0_1px_3px_var(--bg)]" : "text-ink"}`}>{n}</span>
               )}
               {(sat || isTest) && (
                 <span
                   className={`absolute rounded px-1 text-[8px] leading-tight font-bold tracking-wide uppercase ${compact ? "top-0.5 right-0.5" : "top-1 right-1 sm:text-[9px]"} ${
-                    isTest ? "bg-accent text-white" : "bg-ink/80 text-bg"
+                    isTest ? "bg-accent text-primary-ink" : "bg-ink/80 text-bg"
                   }`}
                 >
                   <span className="sm:hidden">{isTest ? "★" : "S"}</span>
@@ -262,7 +262,7 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
         )}
         {testDate && monthKey(testDate) === month && (
           <span className="flex items-center gap-1.5">
-            <span className="rounded bg-accent px-1 text-[9px] font-bold text-white">TEST</span> your test day
+            <span className="rounded bg-accent px-1 text-[9px] font-bold text-primary-ink">TEST</span> your test day
           </span>
         )}
       </div>
@@ -272,7 +272,7 @@ export function StudyCalendar({ days, now, testDate, compact = false }: { days: 
         <p className="font-semibold">
           {fmtDay(selected)}
           {selected === today && <span className="ml-2 text-xs font-medium text-muted">today</span>}
-          {selected === testDate && <span className="ml-2 rounded bg-accent px-1.5 py-0.5 text-[10px] font-bold text-white uppercase">Your SAT</span>}
+          {selected === testDate && <span className="ml-2 rounded bg-accent px-1.5 py-0.5 text-[10px] font-bold text-primary-ink uppercase">Your SAT</span>}
           {selSat && selected !== testDate && <span className="ml-2 text-xs font-medium text-muted">official SAT date{selSat.anticipated ? " (anticipated)" : ""}</span>}
         </p>
         {sel ? (

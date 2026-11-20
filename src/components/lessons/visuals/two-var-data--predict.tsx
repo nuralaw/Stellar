@@ -68,10 +68,10 @@ export default function Visual() {
       <g className={cls("pts")}>
         <circle cx={px(0)} cy={py(20)} r={4.5} fill={C.primary} />
         <circle cx={px(10)} cy={py(50)} r={4.5} fill={C.primary} />
-        <text x={52} y={136} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={52} y={136} fontSize={12} fontWeight={700} fill={C.primaryText}>
           (0, 20)
         </text>
-        <text x={226} y={57} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="end">
+        <text x={226} y={57} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="end">
           (10, 50)
         </text>
       </g>

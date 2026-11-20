@@ -16,8 +16,8 @@ const css = `
 @keyframes v-text-structure-purpose-tag1 { 0%, 12% { opacity: 0; transform: translateX(-8px) } 19%, 100% { opacity: 1; transform: none } }
 
 /* Beat 2: the turn lights up, the second sentence gets its label */
-.v-text-structure-purpose-turn { fill: ${C.primary}; animation-name: v-text-structure-purpose-turn; }
-@keyframes v-text-structure-purpose-turn { 0%, 28% { fill: ${C.ink} } 33%, 100% { fill: ${C.primary} } }
+.v-text-structure-purpose-turn { fill: ${C.primaryText}; animation-name: v-text-structure-purpose-turn; }
+@keyframes v-text-structure-purpose-turn { 0%, 28% { fill: ${C.ink} } 33%, 100% { fill: ${C.primaryText} } }
 .v-text-structure-purpose-tag2 { animation-name: v-text-structure-purpose-tag2; }
 @keyframes v-text-structure-purpose-tag2 { 0%, 34% { opacity: 0; transform: translateX(-8px) } 41%, 100% { opacity: 1; transform: none } }
 
@@ -50,7 +50,7 @@ function Tag({ y, w, word, accent }: { y: number; w: number; word: string; accen
   return (
     <>
       <rect x={20} y={y} width={w} height={18} rx={9} fill={accent ? C.soft : C.fill} stroke={accent ? C.primary : C.line} strokeWidth={1.5} />
-      <text x={20 + w / 2} y={y + 13} textAnchor="middle" fontSize={11} fontWeight={700} fill={accent ? C.primary : C.ink} stroke="none">
+      <text x={20 + w / 2} y={y + 13} textAnchor="middle" fontSize={11} fontWeight={700} fill={accent ? C.primaryText : C.ink} stroke="none">
         {word}
       </text>
     </>

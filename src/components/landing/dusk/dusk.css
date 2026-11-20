@@ -1,0 +1,1969 @@
+/* ==========================================================================
+   Stellar · Dusk to Stars (public landing page, shown at "/" to signed-out visitors).
+   One evening: a static sky as tall as the page, one path, five chapters.
+
+   EVERY selector is scoped under .dk (the landing root): this global sheet stays loaded after a client-side navigation,
+   so nothing here may touch another page. Custom properties are prefixed --dk-, keyframes dk-. Bare element rules skip
+   .dk-app (the app components inside Features / Pricing keep their own Tailwind styling).
+   ========================================================================== */
+
+.dk {
+  color-scheme: light;
+
+  /* ---------- Sky: one stop per zone boundary (see §3). Never reorder. ---------- */
+  --dk-sky-0: #BFE4FF;  /* top of hero (day) */
+  --dk-sky-1: #FDE7C8;  /* bottom of chapter 1 = top of chapter 2 */
+  --dk-sky-2: #FFCB8E;  /* bottom of chapter 2 = top of chapter 3 */
+  --dk-sky-3: #F9A65A;  /* bottom of chapter 3 = top of dusk band */
+  --dk-sky-4: #F2793B;  /* dusk band 40%: the horizon */
+  --dk-sky-5: #B5446E;  /* dusk band 68% */
+  --dk-sky-5b: #592C68; /* dusk band 86%: easing stop on the 5 -> 6 line, softens the kink into twilight */
+  --dk-sky-6: #3A2466;  /* bottom of dusk band = top of chapter 4 */
+  --dk-sky-7: #1E1B4F;  /* bottom of chapter 4 = top of chapter 5 */
+  --dk-sky-8: #0A0F2C;  /* bottom of chapter 5; solid for plans, FAQ, final CTA, footer */
+
+  --dk-sky-day:      linear-gradient(to bottom, var(--dk-sky-0), var(--dk-sky-1));
+  --dk-sky-golden:   linear-gradient(to bottom, var(--dk-sky-1), var(--dk-sky-2));
+  --dk-sky-late:     linear-gradient(to bottom, var(--dk-sky-2), var(--dk-sky-3));
+  --dk-sky-dusk:     linear-gradient(to bottom, var(--dk-sky-3) 0%, var(--dk-sky-4) 40%, var(--dk-sky-5) 68%, var(--dk-sky-5b) 86%, var(--dk-sky-6) 100%);
+  --dk-sky-twilight: linear-gradient(to bottom, var(--dk-sky-6), var(--dk-sky-7));
+  --dk-sky-night:    linear-gradient(to bottom, var(--dk-sky-7), var(--dk-sky-8));
+
+  /* ---------- Text and UI colours (only these pairs, see §2.3) ---------- */
+  --dk-ink: #0E1A3A;
+  --dk-ink-muted: #3B4668;
+  --dk-cream: #FFF6E5;
+  --dk-cream-muted: #C8C6E0;
+  --dk-orange: #F26B1D;        /* sun; CTA fill in day zones */
+  --dk-orange-night: #FF8A3D;  /* CTA fill and accents from twilight on */
+  --dk-cloud: #FFFFFF;         /* header bar, day UI panel */
+  --dk-night: #0A0F2C;         /* = --sky-8 */
+  --dk-night-panel: #141A45;   /* night UI panel, sticky dock */
+  --dk-night-line: #7F86B0;    /* borders and hairlines at night */
+
+  /* ---------- Art only: never behind text, never as text ---------- */
+  --dk-sun-core: #FFD9A8;
+  --dk-sun-glow: rgb(242 107 29 / 0.35);
+  --dk-sun-glow-dusk: rgb(255 217 168 / 0.55);
+  --dk-horizon: rgb(255 217 168 / 0.6);
+  --dk-spark-glow: rgb(255 138 61 / 0.42);
+  --dk-star: var(--dk-cream);
+  --dk-track-day: rgb(14 26 58 / 0.28);
+  --dk-track-night: rgb(255 246 229 / 0.35);
+  --dk-line-day: rgb(14 26 58 / 0.16);
+  --dk-bar-track: rgb(127 134 176 / 0.35);
+  --dk-shadow-cloud: 0 1px 2px rgb(14 26 58 / 0.08), 0 18px 40px -18px rgb(14 26 58 / 0.32);
+  /* revision 2: a bloom lighter than the sky, and the dusk-band flats (art only) */
+  --dk-sun-bloom-a: rgb(255 236 200 / 0.85);
+  --dk-sun-bloom-b: rgb(255 244 224 / 0.35);
+  --dk-cloud-hi: rgb(255 226 190 / 0.34);
+  --dk-cloud-mid: rgb(255 236 210 / 0.22);
+  --dk-cloud-shade: rgb(181 68 110 / 0.4);
+  --dk-water-1: rgb(58 36 102 / 0.18);
+  --dk-water-2: rgb(58 36 102 / 0.28);
+  --dk-water-3: rgb(30 27 79 / 0.34);
+  --dk-constellation: rgb(255 246 229 / 0.3);
+
+  /* ---------- Type ---------- */
+  --dk-font: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --dk-fs-h1: clamp(2.375rem, 1.348rem + 4.565vw, 5rem);        /* 38 -> 80 */
+  --dk-fw-h1: 400;
+  --dk-lh-h1: 1.1;
+  --dk-ls-h1: -0.02em;
+  --dk-fs-count: clamp(5.75rem, 0.8rem + 21vw, 6.5rem);         /* mobile 88 -> 104 (spec 72); from 768 the spec ramp below, weight 300 */
+  --dk-fs-hours: clamp(1.75rem, 1.359rem + 1.739vw, 2.75rem);   /* 28 -> 44, weight 400 */
+  --dk-fs-price: clamp(2.5rem, 1.913rem + 2.609vw, 4rem);       /* 40 -> 64, weight 300 */
+  --dk-fs-score: clamp(3rem, 2.609rem + 1.739vw, 4rem);         /* 48 -> 64, weight 300 */
+  --dk-fs-h2: clamp(1.625rem, 1.185rem + 1.957vw, 2.75rem);     /* 26 -> 44 */
+  --dk-fw-h2: 600;
+  --dk-lh-h2: 1.2;
+  --dk-fs-h3: clamp(1.1875rem, 1.114rem + 0.326vw, 1.375rem);   /* 19 -> 22, weight 600 */
+  --dk-fs-lead: clamp(1.0625rem, 0.965rem + 0.435vw, 1.3125rem);/* 17 -> 21, hero subline and ch5 target line */
+  --dk-fs-body: clamp(1rem, 0.951rem + 0.217vw, 1.125rem);      /* 16 -> 18 */
+  --dk-fs-date: clamp(1.25rem, 1.054rem + 0.87vw, 1.75rem);     /* 20 -> 28, static SAT date list, weight 400 */
+  --dk-fs-label: clamp(0.75rem, 0.726rem + 0.109vw, 0.8125rem); /* 12 -> 13, weight 600, uppercase */
+  --dk-fs-ui: clamp(0.875rem, 0.5rem + 1.6vw, 1rem);            /* 14 -> 16, header links and button */
+  --dk-fs-small: 0.875rem;                                      /* 14: notes, disclaimer, tags' neighbours */
+  --dk-lh-body: 1.65;
+  --dk-lh-tight: 1.2;
+  --dk-ls-label: 0.18em;
+  --dk-ls-tag: 0.08em;
+  --dk-measure: 30em;                                           /* about 59 characters of Sora */
+
+  /* ---------- Space ---------- */
+  --dk-space-1: 0.25rem;  /* 4 */
+  --dk-space-2: 0.5rem;   /* 8 */
+  --dk-space-3: 0.75rem;  /* 12 */
+  --dk-space-4: 1rem;     /* 16 */
+  --dk-space-5: 1.5rem;   /* 24 */
+  --dk-space-6: 2rem;     /* 32 */
+  --dk-space-7: 3rem;     /* 48 */
+  --dk-space-8: 4rem;     /* 64 */
+  --dk-space-9: 6rem;     /* 96 */
+  --dk-chapter-pad: clamp(3.5rem, 2.13rem + 6.087vw, 7rem);     /* 56 -> 112, top and bottom of every chapter */
+  --dk-hero-pad-top: clamp(1.75rem, 0.87rem + 3.913vw, 4rem);   /* 28 -> 64 */
+
+  /* ---------- Layout (mobile values; overrides below) ---------- */
+  --dk-gutter: 16px;
+  --dk-wrap-max: 1120px;
+  --dk-side: calc((100% - min(var(--dk-wrap-max), 100% - 2 * var(--dk-gutter))) / 2); /* left edge of .wrap; valid only inside full-width boxes */
+  --dk-rail: 28px;                              /* indent of chapter content, the path lives in it */
+  --dk-path-x: calc(var(--dk-side) + 4px);         /* centre of the path, from the left edge of a full-width box */
+  --dk-trail-x: var(--dk-path-x);                  /* centre of the trailhead dot in the hero */
+  --dk-lane: 0px;                               /* desktop centre lane */
+  --dk-header-h: 108px;                      /* phones: a 64 px row (logo, account) + a 44 px row (Features, Pricing); 72 from 768 */
+  --dk-logo-h: clamp(24px, 7.5vw, 30px);
+  --dk-path-w: 2px;
+  --dk-head-size: 14px;
+  --dk-ms-size: 22px;                           /* chapter star marker */
+  --dk-dot-size: 12px;                          /* how-it-works step dot */
+  --dk-sun-size: clamp(7.5rem, 38vw, 9.5rem);   /* mobile sun 120 -> 152, half cropped by the right edge (spec: 72) */
+  --dk-sun-top: 8px;
+  --dk-sun-right: calc(var(--dk-sun-size) * -0.5);
+  --dk-halo-inset: -60%;
+  --dk-set-sun: 88px;                           /* the setting sun in the dusk band */
+  --dk-set-sun-right: 24px;
+  --dk-dusk-h: 40svh;                           /* mobile: the sunset gets its own place (spec: 32) */
+  --dk-horizon-ratio: 0.4;
+  --dk-horizon-y: calc(var(--dk-dusk-h) * var(--dk-horizon-ratio));
+  --dk-spark-size: 112px;                       /* the brand sparkle in chapter 5 */
+  --dk-arrive-h: 96px;                          /* path run-in above the sparkle */
+  --dk-countdown-h: 16rem;                      /* mobile reserve; the live face defines the real height (spec: 300) */
+  --dk-dock-h: 64px;
+  --dk-pen-y: 62svh;                            /* where the pen tip sits on screen */
+  --dk-pen-lead: 38svh;                         /* = 100svh - --pen-y */
+
+  /* ---------- Radii ---------- */
+  --dk-r-panel: 20px;
+  --dk-r-option: 12px;
+  --dk-r-pill: 999px;
+
+  /* ---------- Motion ---------- */
+  --dk-dur-fast: 150ms;
+  --dk-dur-dock: 220ms;
+  --dk-dur-reveal: 400ms;
+  --dk-dur-twinkle: 2600ms;
+  --dk-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dk-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dk-reveal-shift: 16px;
+
+  /* ---------- Stacking ---------- */
+  --dk-z-art: 1;      /* sun, path, markers, stars, dusk art */
+  --dk-z-content: 2;  /* every text block and panel */
+  --dk-z-dock: 20;
+  --dk-z-skip: 30;
+  --dk-z-pill: 25;    /* "Following the path" pill: above the dock, below the skip link */
+}
+
+@media (min-width: 768px) {
+  .dk {
+    --dk-gutter: 40px;
+    --dk-rail: 56px;
+    --dk-path-x: calc(var(--dk-side) + 20px);
+    --dk-trail-x: var(--dk-path-x);
+    --dk-header-h: 72px;
+    --dk-logo-h: 32px;
+    --dk-fw-h1: 300;
+    --dk-lh-h1: 1.05;
+    --dk-fw-h2: 400;
+    --dk-ms-size: 28px;
+    --dk-dot-size: 14px;
+    --dk-sun-size: 12.5rem;                    /* tablet sun 200, 40% cropped (spec: 96) */
+    --dk-sun-top: 24px;
+    --dk-sun-right: calc(var(--dk-sun-size) * -0.4);
+    --dk-set-sun-right: var(--dk-gutter);
+    --dk-dusk-h: 40svh;
+    --dk-fs-count: clamp(4.5rem, 2.348rem + 9.565vw, 10rem);      /* 72 -> 160 */
+    --dk-countdown-h: clamp(18.75rem, 17.772rem + 4.348vw, 23rem);
+    --dk-spark-size: 136px;
+    --dk-arrive-h: 112px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .dk {
+    --dk-gutter: 96px;
+    --dk-lane: 128px;
+    --dk-path-x: 50%;
+    --dk-trail-x: calc(var(--dk-side) + 20px);
+    --dk-logo-h: 34px;
+    --dk-lh-h2: 1.15;
+    --dk-head-size: 16px;
+    --dk-ms-size: 32px;
+    --dk-sun-size: 96px;                       /* desktop sun fills the right gutter, with a large bloom (spec: 64) */
+    --dk-sun-top: 80px;
+    --dk-halo-inset: -110%;
+    --dk-set-sun: 96px;
+    --dk-sun-right: calc(var(--dk-side) / 2 - var(--dk-sun-size) / 2);   /* centre of the right gutter */
+    --dk-set-sun-right: calc(var(--dk-side) / 2 - var(--dk-set-sun) / 2);
+    --dk-sun-grow: 1;                                                 /* = --set-sun / --sun-size (96 / 96) */
+    --dk-sun-travel: calc(100svh - var(--dk-dusk-h) + var(--dk-horizon-y) - var(--dk-header-h) - var(--dk-sun-top) - var(--dk-sun-size) / 2);
+    --dk-spark-size: 168px;
+    --dk-arrive-h: 128px;
+    --dk-dusk-h: 40svh;
+  }
+}
+
+/* ---------- Derived spacing (mobile first), kept as tokens so the page stays portable ---------- */
+.dk {
+  --dk-gap-block: 1.25rem;                                      /* between blocks inside a chapter: 20 -> 32 */
+  --dk-gap-item: 1.25rem;                                       /* between steps and features: 20 -> 28 */
+  --dk-gap-group: var(--dk-space-6);                               /* before the free note and the tournament: 32 -> 40 */
+  --dk-chapter-pad: 2.5rem;                                     /* mobile: 40 (the spec's 56 -> 112 ramp starts at 768) */
+  --dk-hero-cap: 32rem;                                         /* mobile hero never grows past 512 px on tall phones */
+}
+@media (min-width: 768px) {
+  .dk {
+    --dk-gap-block: var(--dk-space-6);
+    --dk-gap-item: calc(var(--dk-space-6) - var(--dk-space-1));
+    --dk-gap-group: calc(var(--dk-space-5) + var(--dk-space-4));
+    --dk-chapter-pad: clamp(3.5rem, 2.13rem + 6.087vw, 7rem);     /* 56 -> 112 */
+    --dk-hero-cap: 100rem;
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html:not([data-dk-away]):has(.dk) {
+  background-color: #0A0F2C; /* = --dk-night: the overscroll area */
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.dk {
+  margin: 0;
+  font-family: var(--dk-font);
+  color: var(--dk-text);
+  font-size: var(--dk-fs-body);
+  line-height: var(--dk-lh-body);
+  overflow-wrap: break-word;
+}
+
+.dk h1:where(:not(.dk-app *)),
+.dk h2:where(:not(.dk-app *)),
+.dk h3:where(:not(.dk-app *)),
+.dk p:where(:not(.dk-app *)),
+.dk ol:where(:not(.dk-app *)),
+.dk ul:where(:not(.dk-app *)),
+.dk dl:where(:not(.dk-app *)),
+.dk dd:where(:not(.dk-app *)),
+.dk figure:where(:not(.dk-app *)) { margin: 0; }
+.dk ol:where(:not(.dk-app *)),
+.dk ul:where(:not(.dk-app *)) { padding: 0; list-style: none; }
+.dk img:where(:not(.dk-app *)),
+.dk svg:where(:not(.dk-app *)) { display: block; }
+.dk a:where(:not(.dk-app *)) { color: inherit; }
+.dk p:where(:not(.dk-app *)) { max-width: var(--dk-measure); text-wrap: pretty; }
+.dk time:where(:not(.dk-app *)) { font-variant-numeric: tabular-nums; }
+
+.dk h1:where(:not(.dk-app *)) {
+  font-size: var(--dk-fs-h1);
+  font-weight: var(--dk-fw-h1);
+  line-height: var(--dk-lh-h1);
+  letter-spacing: var(--dk-ls-h1);
+  text-wrap: balance;
+}
+.dk h2:where(:not(.dk-app *)) {
+  font-size: var(--dk-fs-h2);
+  font-weight: var(--dk-fw-h2);
+  line-height: var(--dk-lh-h2);
+  text-wrap: balance;
+}
+.dk h3:where(:not(.dk-app *)) {
+  font-size: var(--dk-fs-h3);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Focus: every interactive element, 3 px ring with 3 px offset */
+.dk a:focus-visible:where(:not(.dk-app *)),
+.dk button:focus-visible:where(:not(.dk-app *)),
+.dk summary:focus-visible:where(:not(.dk-app *)) {
+  outline: 3px solid var(--dk-focus);
+  outline-offset: 3px;
+}
+.dk .dk-main:focus { outline: none; }
+
+/* ==========================================================================
+   Zones: sky segment + role variables (§2.3)
+   ========================================================================== */
+.dk,
+.dk .zone--day,
+.dk .zone--golden,
+.dk .zone--late,
+.dk .site-header,
+.dk .panel--cloud {
+  --dk-text: var(--dk-ink);
+  --dk-text-muted: var(--dk-ink-muted);
+  --dk-focus: var(--dk-ink);
+  --dk-btn-bg: var(--dk-orange);
+  --dk-btn-border: var(--dk-ink);
+  --dk-path-fill: var(--dk-ink);
+  --dk-path-track: var(--dk-track-day);
+  --dk-head-fill: var(--dk-orange);
+  --dk-head-ring: var(--dk-ink);
+  --dk-ms-base: var(--dk-cloud);
+  --dk-ms-lit: var(--dk-orange);
+  --dk-ms-stroke: var(--dk-ink);
+  --dk-tag-free-bg: var(--dk-cloud);
+  --dk-tag-free-fg: var(--dk-ink);
+  --dk-tag-free-border: var(--dk-ink);
+  --dk-tag-plus-bg: var(--dk-orange);
+  --dk-tag-plus-fg: var(--dk-ink);
+  --dk-tag-plus-border: var(--dk-ink);
+}
+.dk .zone--late { --dk-text-muted: var(--dk-ink); } /* muted ink is banned in this zone */
+
+.dk .zone--twilight,
+.dk .zone--night,
+.dk .zone--deep,
+.dk .panel--night,
+.dk .dock {
+  --dk-text: var(--dk-cream);
+  --dk-text-muted: var(--dk-cream-muted);
+  --dk-focus: var(--dk-cream);
+  --dk-btn-bg: var(--dk-orange-night);
+  --dk-btn-border: var(--dk-orange-night);
+  --dk-path-fill: var(--dk-cream);
+  --dk-path-track: var(--dk-track-night);
+  --dk-head-fill: var(--dk-orange-night);
+  --dk-head-ring: var(--dk-cream);
+  --dk-ms-base: var(--dk-night-panel);
+  --dk-ms-lit: var(--dk-orange-night);
+  --dk-ms-stroke: var(--dk-cream);
+  --dk-tag-free-bg: var(--dk-night-panel);
+  --dk-tag-free-fg: var(--dk-cream);
+  --dk-tag-free-border: var(--dk-night-line);
+  --dk-tag-plus-bg: var(--dk-orange-night);
+  --dk-tag-plus-fg: var(--dk-ink);
+  --dk-tag-plus-border: transparent;
+}
+
+.dk .zone--day,
+.dk .zone--golden,
+.dk .zone--late,
+.dk .zone--twilight,
+.dk .zone--night,
+.dk .zone--deep,
+.dk .site-header,
+.dk .panel,
+.dk .dock {
+  color: var(--dk-text);
+}
+
+.dk .zone--day      { background: var(--dk-sky-day); }
+.dk .zone--golden   { background: var(--dk-sky-golden); }
+.dk .zone--late     { background: var(--dk-sky-late); }
+.dk .zone--twilight { background: var(--dk-sky-twilight); }
+.dk .zone--night    { background: var(--dk-sky-night); }
+.dk .zone--deep     { background: var(--dk-sky-8); }
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+.dk .sr-only,
+.dk .skip-link:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.dk .skip-link:focus {
+  position: fixed;
+  top: var(--dk-space-2);
+  left: var(--dk-space-2);
+  z-index: var(--dk-z-skip);
+  padding: var(--dk-space-3) var(--dk-space-4);
+  border-radius: var(--dk-r-option);
+  background: var(--dk-cloud);
+  color: var(--dk-ink);
+  font-weight: 600;
+  text-decoration: none;
+  outline: 3px solid var(--dk-ink);
+  outline-offset: 3px;
+}
+
+.dk .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.dk .wrap {
+  position: relative;
+  z-index: var(--dk-z-content);
+  width: min(var(--dk-wrap-max), 100% - 2 * var(--dk-gutter));
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+/* ---------- Buttons ---------- */
+.dk .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 var(--dk-space-5);
+  border: 2px solid var(--dk-btn-border);
+  border-radius: var(--dk-r-pill);
+  background: var(--dk-btn-bg);
+  color: var(--dk-ink);
+  font-size: var(--dk-fs-body);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+.dk .btn--sm {
+  min-height: 44px;
+  padding: 0 clamp(10px, 3vw, 20px);
+  font-size: var(--dk-fs-ui);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .dk .btn { transition: transform var(--dk-dur-fast) var(--dk-ease-out); }
+  .dk .btn:hover { transform: translateY(-2px); }
+  .dk .btn:active { transform: translateY(0); }
+}
+
+/* ---------- Links ---------- */
+.dk .link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dk-space-2);
+  min-height: 44px;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+.dk .link:hover { text-decoration-thickness: 2px; }
+
+/* ---------- Icons ---------- */
+.dk .icon {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Labels ---------- */
+.dk .chapter-label,
+.dk .section-label,
+.dk .label,
+.dk .route__label {
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: var(--dk-lh-tight);
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+  color: var(--dk-text-muted);
+}
+.dk .chapter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  min-height: var(--dk-ms-size);
+  margin-bottom: var(--dk-space-3);
+  max-width: none;
+}
+.dk .chapter-label > :not(.chapter-label__name) { flex: none; white-space: nowrap; }
+.dk .chapter-label__name { color: var(--dk-text); }
+.dk .section-label { margin-bottom: var(--dk-space-3); }
+
+/* ---------- Tags (always text) ---------- */
+.dk .tag {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: var(--dk-r-pill);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: var(--dk-ls-tag);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.dk .tag--free { background: var(--dk-tag-free-bg); color: var(--dk-tag-free-fg); border: 1.5px solid var(--dk-tag-free-border); }
+.dk .tag--plus { background: var(--dk-tag-plus-bg); color: var(--dk-tag-plus-fg); border: 1.5px solid var(--dk-tag-plus-border); }
+.dk .tag--both {
+  padding: 0;
+  overflow: hidden;
+  border: 1.5px solid var(--dk-tag-free-border);
+}
+.dk .tag__half {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+.dk .tag__half--free { background: var(--dk-tag-free-bg); color: var(--dk-tag-free-fg); }
+.dk .tag__half--plus { background: var(--dk-tag-plus-bg); color: var(--dk-tag-plus-fg); border-left: 1.5px solid var(--dk-tag-free-border); }
+
+/* ---------- Chip ("Example") ---------- */
+.dk .chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border: 1px solid var(--dk-text-muted);
+  border-radius: var(--dk-r-pill);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: var(--dk-ls-tag);
+  text-transform: uppercase;
+}
+
+/* ---------- Panels (UI examples only) ---------- */
+.dk .panel {
+  position: relative;
+  z-index: var(--dk-z-content);
+  padding: 20px;
+  border-radius: var(--dk-r-panel);
+}
+.dk .panel--cloud { background: var(--dk-cloud); box-shadow: var(--dk-shadow-cloud); }
+.dk .panel--night { background: var(--dk-night-panel); border: 1px solid var(--dk-night-line); }
+@media (min-width: 768px) {
+  .dk .panel { padding: 28px; }
+}
+
+/* ---------- Features ---------- */
+.dk .feature__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--dk-space-2) var(--dk-space-3);
+}
+.dk .feature p { margin-top: var(--dk-space-2); }
+.dk .features { display: grid; gap: var(--dk-gap-item); }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.dk .site-header {
+  position: relative;
+  z-index: var(--dk-z-content); /* paints above the sun's halo */
+  height: var(--dk-header-h);
+  background: var(--dk-cloud);
+  border-bottom: 1px solid var(--dk-line-day);
+}
+.dk .site-header {
+  background: linear-gradient(var(--dk-line-day), var(--dk-line-day)) 0 64px / 100% 1px no-repeat, var(--dk-cloud); /* hairline above the second row */
+}
+.dk .site-header__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 64px 44px;
+  align-items: center;
+  height: 100%;
+}
+.dk .site-header__inner > .logo-link { grid-area: 1 / 1; justify-self: start; }
+.dk .site-header__inner > nav[aria-label="Account"] { grid-area: 1 / 2; }
+.dk .site-header__inner > nav[aria-label="Sections"] { grid-area: 2 / 1 / 3 / 3; margin-left: calc(-1 * var(--dk-space-2)); }
+.dk .site-header nav {
+  display: flex;
+  align-items: center;
+  gap: var(--dk-space-1);
+}
+.dk .logo-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.dk .site-header img { height: var(--dk-logo-h); width: auto; }
+.dk .header-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--dk-space-2);
+  color: var(--dk-text);
+  font-size: var(--dk-fs-ui);
+  font-weight: 600;
+  text-decoration: none;
+}
+.dk .header-link:hover { text-decoration: underline; text-underline-offset: 0.22em; }
+@media (min-width: 768px) {
+  .dk .site-header { background: var(--dk-cloud); }
+  .dk .site-header nav { gap: var(--dk-space-4); }
+  .dk .site-header__inner { display: flex; }
+  .dk .site-header__inner > nav[aria-label="Sections"] { margin-left: var(--dk-space-6); }
+  .dk .site-header__inner > nav[aria-label="Account"] { margin-left: auto; }
+}
+
+/* ==========================================================================
+   Path system (§4.11)
+   ========================================================================== */
+.dk .path-seg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--dk-path-x);
+  width: var(--dk-path-w);
+  margin-left: calc(var(--dk-path-w) / -2);
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .path-seg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+  background: var(--dk-path-track);
+}
+.dk .path-seg__fill {
+  position: absolute;
+  inset: 0;
+  background: var(--dk-path-fill);
+  transform-origin: 50% 0;
+}
+.dk .path-seg__head {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: var(--dk-head-size);
+  margin-left: calc(var(--dk-head-size) / -2);
+  opacity: 0;
+}
+.dk .path-seg__head::before,
+.dk .path-seg__head::after,
+.dk .trailhead::before,
+.dk .trailhead::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+}
+/* the pen's tip is a small four-point sparkle (outer ring layer + inner fill), not a dot like the step markers */
+.dk .path-seg__head::before {
+  left: calc(var(--dk-head-size) * -0.3);
+  bottom: calc(var(--dk-head-size) * -0.8);
+  width: calc(var(--dk-head-size) * 1.6);
+  height: calc(var(--dk-head-size) * 1.6);
+  background: var(--dk-head-ring);
+}
+.dk .path-seg__head::after {
+  left: calc(var(--dk-head-size) * 0.05);
+  bottom: calc(var(--dk-head-size) * -0.45);
+  width: calc(var(--dk-head-size) * 0.9);
+  height: calc(var(--dk-head-size) * 0.9);
+  background: var(--dk-head-fill);
+}
+
+.dk .path-seg--dusk::before { background: linear-gradient(to bottom, var(--dk-track-day), var(--dk-track-night)); }
+.dk .path-seg--dusk .path-seg__fill { background: linear-gradient(to bottom, var(--dk-ink), var(--dk-cream)); }
+
+.dk .path-seg--start { top: 22px; }
+.dk .path-seg--arrive { bottom: auto; height: calc(var(--dk-arrive-h) + var(--dk-spark-size) / 2); display: none; }
+
+/* Curved connector */
+.dk .connector {
+  position: absolute;
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .connector svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke-linecap: round;
+}
+.dk .connector__track path { stroke: var(--dk-path-track); stroke-width: 1px; }
+.dk .connector__draw path { stroke: var(--dk-path-fill); stroke-width: 2px; }
+.dk .connector--hero { display: none; }
+.dk .connector--arrive {
+  left: var(--dk-path-x);
+  right: 50%;
+  top: 0;
+  height: calc(var(--dk-arrive-h) + var(--dk-spark-size) / 2);
+}
+
+/* Trailhead dot (hero) */
+.dk .trailhead {
+  position: absolute;
+  top: 15px;
+  left: var(--dk-trail-x);
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .trailhead::before { left: -4px; top: -4px; width: 22px; height: 22px; background: var(--dk-head-ring); }
+.dk .trailhead::after  { left: 0.5px; top: 0.5px; width: 13px; height: 13px; background: var(--dk-head-fill); }
+
+/* Chapter marker: the chapter's star */
+.dk .milestone {
+  position: absolute;
+  top: var(--dk-chapter-pad);
+  left: var(--dk-path-x);
+  width: var(--dk-ms-size);
+  height: var(--dk-ms-size);
+  margin-left: calc(var(--dk-ms-size) / -2);
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .milestone svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+}
+.dk .milestone__base { fill: var(--dk-ms-base); stroke: var(--dk-ms-stroke); }
+.dk .milestone__lit  { fill: var(--dk-ms-lit);  stroke: var(--dk-ms-stroke); }
+
+@media (min-width: 1100px) {
+  .dk .path-seg--start { display: none; }
+  .dk .path-seg--arrive { display: block; }
+  .dk .connector--hero { display: block; left: var(--dk-trail-x); right: 50%; top: 22px; bottom: 0; }
+  .dk .connector--arrive { display: none; }
+}
+
+/* ==========================================================================
+   Hero (§5.2)
+   ========================================================================== */
+.dk .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: max(480px, min(calc(100svh - var(--dk-header-h) - 88px), var(--dk-hero-cap)));
+  padding-top: var(--dk-hero-pad-top);
+  overflow-x: clip; /* clips only the sun's soft halo at the viewport edge */
+}
+.dk .hero__copy {
+  position: relative;
+  z-index: var(--dk-z-content);
+  max-width: 36rem;
+}
+.dk .kicker {
+  display: block;
+  margin-bottom: var(--dk-space-3);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: var(--dk-lh-tight);
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .hero__sub {
+  margin-top: var(--dk-space-4);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-lead);
+  line-height: 1.55;
+}
+.dk .hero__cta { margin-top: var(--dk-space-5); }
+.dk .trust {
+  margin-top: var(--dk-space-3);
+  color: var(--dk-text);
+  font-weight: 600;
+}
+.dk .hero__trail {
+  position: relative;
+  flex: 1 0 auto;
+  min-height: 7.5rem;
+  margin-top: var(--dk-space-6);
+}
+.dk .trail-link { padding-left: var(--dk-rail); }
+/* with JS and motion, the link scrolls the page down slowly: a play glyph replaces the arrow */
+.dk .trail-link__play,
+.dk .trail-link__hint { display: none; }
+.dk .trail-link__play { flex: none; width: 20px; height: 20px; }
+.dk .trail-link__play circle { fill: none; stroke: currentColor; stroke-width: 1.5px; }
+.dk .trail-link__play path { fill: currentColor; }
+@media (prefers-reduced-motion: no-preference) {
+  html[data-dusk-js] .dk .trail-link__down { display: none; }
+  html[data-dusk-js] .dk .trail-link__play { display: block; }
+  html[data-dusk-js] .dk .trail-link__hint { display: inline; }
+}
+
+/* The sun */
+.dk .sun {
+  position: absolute;
+  top: var(--dk-sun-top);
+  right: var(--dk-sun-right);
+  width: var(--dk-sun-size);
+  height: var(--dk-sun-size);
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .sun__halo {
+  position: absolute;
+  inset: var(--dk-halo-inset);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--dk-sun-bloom-a), var(--dk-sun-bloom-b) 55%, transparent);
+}
+.dk .sun__disc {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 40%, var(--dk-orange-night), var(--dk-orange) 68%);
+}
+
+/* Chapter route (desktop only) */
+.dk .route { display: none; }
+
+@media (min-width: 1100px) {
+  .dk .hero__grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+  }
+  .dk .hero__copy { max-width: none; }
+  .dk .hero__sub { max-width: var(--dk-measure); }
+  .dk .hero__cta { display: flex; align-items: center; gap: var(--dk-space-5); }
+  .dk .trust { margin-top: 0; }
+  .dk .trail-link { padding-left: 44px; }
+
+  .dk .route { display: block; justify-self: end; width: 18rem; }
+  .dk .route__label { margin-bottom: var(--dk-space-2); }
+  .dk .route ol { position: relative; }
+  .dk .route ol::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    bottom: 26px;
+    left: 8px;
+    width: 1px;
+    margin-left: -0.5px;
+    background: var(--dk-track-day);
+  }
+  .dk .route a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--dk-space-3);
+    min-height: 52px;
+    color: var(--dk-text);
+    text-decoration: none;
+  }
+  .dk .route a:hover .route__name { text-decoration: underline; text-underline-offset: 0.22em; }
+  .dk .route__dot {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--dk-ink);
+    border-radius: 50%;
+  }
+  .dk .route__dot--1 { background: var(--dk-sky-1); }
+  .dk .route__dot--2 { background: var(--dk-sky-2); }
+  .dk .route__dot--3 { background: var(--dk-sky-3); }
+  .dk .route__dot--4 { background: var(--dk-sky-6); }
+  .dk .route__dot--spark {
+    border: 0;
+    border-radius: 0;
+    fill: var(--dk-cream);
+    stroke: var(--dk-ink);
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    overflow: visible;
+  }
+  .dk .route__text { display: flex; flex-direction: column; }
+  .dk .route__chapter {
+    color: var(--dk-text-muted);
+    font-size: var(--dk-fs-label);
+    font-weight: 600;
+    line-height: var(--dk-lh-tight);
+    letter-spacing: var(--dk-ls-label);
+    text-transform: uppercase;
+  }
+  .dk .route__name { font-size: 1.0625rem; font-weight: 600; line-height: 1.3; }
+}
+
+/* ==========================================================================
+   Chapters (shared)
+   ========================================================================== */
+.dk .chapter {
+  position: relative;
+  padding-block: var(--dk-chapter-pad);
+}
+.dk .chapter__inner {
+  position: relative;
+  padding-left: var(--dk-rail);
+}
+.dk .chapter__inner > * + * { margin-top: var(--dk-gap-block); }
+.dk .chapter__inner > .intro { margin-top: var(--dk-space-4); }
+.dk .chapter__head h2 { margin-bottom: 0; }
+.dk .chapter__head > .intro { margin-top: var(--dk-space-4); }
+.dk .intro { color: var(--dk-text); }
+
+@media (min-width: 768px) {
+  .dk .chapter__inner { max-width: calc(36rem + var(--dk-rail)); }
+}
+
+/* ---------- Chapter 1 ---------- */
+.dk .steps { display: grid; gap: var(--dk-gap-item); }
+.dk .step { position: relative; }
+.dk .step__label {
+  margin-bottom: var(--dk-space-1);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .step p:last-child { margin-top: var(--dk-space-2); }
+.dk .step__dot {
+  position: absolute;
+  top: calc(var(--dk-fs-label) * 1.2 + var(--dk-space-1) + var(--dk-fs-h3) * 1.3 / 2 - var(--dk-dot-size) / 2);
+  left: calc(-1 * var(--dk-rail) + 4px - var(--dk-dot-size) / 2);
+  width: var(--dk-dot-size);
+  height: var(--dk-dot-size);
+  border-radius: 50%;
+  background: var(--dk-ms-base);
+  box-shadow: 0 0 0 2px var(--dk-ms-stroke);
+}
+.dk .step__dot-lit {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--dk-ms-lit);
+}
+@media (min-width: 768px) {
+  .dk .step__dot { left: calc(-1 * var(--dk-rail) + 20px - var(--dk-dot-size) / 2); }
+}
+.dk .chapter__inner > .free-note { margin-top: var(--dk-gap-group); }
+.dk .free-note .link { margin-top: var(--dk-space-1); }
+
+/* ---------- Chapter 2: example question ---------- */
+.dk .qcard__cap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--dk-space-2) var(--dk-space-3);
+  margin-bottom: var(--dk-space-4);
+}
+.dk .qcard__meta {
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .qcard__q { color: var(--dk-ink); font-size: 1.125rem; font-weight: 600; line-height: 1.4; }
+.dk .qcard__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: var(--dk-space-4);
+}
+.dk .qcard__options li {
+  display: flex;
+  align-items: center;
+  gap: var(--dk-space-2);
+  min-height: 52px;
+  padding: 0 12px;
+  border: 1.5px solid var(--dk-line-day);
+  border-radius: var(--dk-r-option);
+  font-weight: 600;
+}
+.dk .qcard__letter {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--dk-text-muted);
+  border-radius: 50%;
+  font-size: var(--dk-fs-small);
+  line-height: 1;
+}
+.dk .qcard__options .is-correct {
+  border: 2px solid var(--dk-ink);
+  background: var(--dk-orange);
+  color: var(--dk-ink);
+}
+.dk .is-correct .qcard__letter { border-color: var(--dk-ink); background: var(--dk-cloud); color: var(--dk-ink); }
+.dk .qcard__tick { margin-left: auto; }
+.dk .qcard__answer { margin-top: var(--dk-space-4); font-weight: 600; }
+.dk .qcard__why {
+  margin-top: var(--dk-space-4);
+  padding-top: var(--dk-space-4);
+  border-top: 1px solid var(--dk-line-day);
+}
+.dk .qcard__why .label { margin-bottom: var(--dk-space-1); }
+
+@media (min-width: 768px) {
+  .dk .qcard { max-width: 30rem; }
+}
+
+/* ---------- Chapter 3: review strip ---------- */
+.dk .review { max-width: 30rem; }
+.dk .review__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.dk .review__steps::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: var(--dk-ink);
+}
+.dk .review__steps li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--dk-space-2);
+  text-align: center;
+}
+.dk .review__icon {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--dk-ink);
+  border-radius: 50%;
+  background: var(--dk-cloud);
+  color: var(--dk-ink);
+}
+.dk .review__icon .icon { stroke-width: 2px; }
+.dk .review__star {
+  width: 22px;
+  height: 22px;
+  fill: var(--dk-ms-lit);
+  stroke: var(--dk-ms-stroke);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+.dk .review__label { font-size: 1rem; font-weight: 600; line-height: 1.3; color: var(--dk-ink); }
+
+/* ---------- Chapter 4 ---------- */
+.dk .tests > * + * { margin-top: var(--dk-space-4); }
+.dk .tagrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--dk-space-2) var(--dk-space-3);
+}
+.dk .facts { display: flex; margin-top: var(--dk-space-5); max-width: 30rem; }
+.dk .facts__item {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-rows: 1fr auto;
+  row-gap: var(--dk-space-1);
+  min-width: 0;
+  padding: 0 var(--dk-space-2);
+}
+.dk .facts dd { grid-row: 1; align-self: start; }
+.dk .facts dt { grid-row: 2; }
+.dk .facts__item:first-child { padding-left: 0; }
+.dk .facts__item:last-child { padding-right: 0; }
+.dk .facts__item + .facts__item { border-left: 1px solid var(--dk-night-line); }
+.dk .facts dd { font-size: clamp(1.375rem, 8.57vw - 0.34rem, 1.75rem); font-weight: 400; line-height: 1.2; color: var(--dk-text); }
+.dk .facts dt {
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: var(--dk-lh-tight);
+  letter-spacing: var(--dk-ls-tag);
+  text-transform: uppercase;
+}
+
+.dk .score__cap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--dk-space-2) var(--dk-space-3); margin-bottom: var(--dk-space-4); }
+.dk .score__meta {
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .score__label {
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .score__total { margin-top: var(--dk-space-2); font-size: var(--dk-fs-score); font-weight: 300; line-height: 1; color: var(--dk-text); }
+.dk .score__of { color: var(--dk-text-muted); font-size: 1.25rem; font-weight: 400; }
+.dk .score__parts { display: grid; gap: var(--dk-space-4); margin-top: var(--dk-space-5); }
+.dk .score__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  row-gap: 6px;
+  font-weight: 600;
+}
+.dk .score__row::after {
+  content: "";
+  grid-column: 1 / -1;
+  height: 6px;
+  border-radius: 3px;
+  background:
+    linear-gradient(var(--dk-orange-night), var(--dk-orange-night)) 0 0 / var(--dk-fill) 100% no-repeat,
+    var(--dk-bar-track);
+}
+.dk .score__row--rw   { --dk-fill: 91.25%; }
+.dk .score__row--math { --dk-fill: 90%; }
+.dk .score__note { margin-top: var(--dk-space-5); color: var(--dk-text-muted); font-size: var(--dk-fs-small); }
+@media (min-width: 768px) {
+  .dk .score { max-width: 26rem; }
+}
+
+.dk .chapter__inner > .tournament { margin-top: var(--dk-gap-group); }
+.dk .rules { display: grid; gap: var(--dk-space-2); margin-top: var(--dk-space-3); max-width: var(--dk-measure); }
+.dk .rules li { position: relative; padding-left: 22px; font-size: var(--dk-fs-body); }
+.dk .rules li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc((var(--dk-fs-body) * var(--dk-lh-body) - 10px) / 2);
+  width: 10px;
+  height: 10px;
+  background: var(--dk-orange-night);
+  clip-path: path("M5 0A5 5 0 0 0 10 5A5 5 0 0 0 5 10A5 5 0 0 0 0 5A5 5 0 0 0 5 0Z");
+}
+
+/* ---------- Chapter 5: test day ---------- */
+.dk .chapter--5 { padding-top: 0; text-align: center; }
+.dk .chapter--5 .chapter__inner {
+  max-width: 40rem;
+  margin-inline: auto;
+  padding-top: var(--dk-gap-block);
+  padding-left: 0;
+}
+.dk .chapter--5 .chapter-label { justify-content: center; }
+.dk .chapter--5 p { margin-inline: auto; }
+.dk .chapter--5 .chapter__inner > * + * { margin-top: var(--dk-gap-block); }
+.dk .chapter--5 .chapter-label + h2 { margin-top: 0; }
+.dk .chapter--5 .chapter__inner > .countdown { margin-top: var(--dk-space-5); }
+.dk .feature--center .feature__head { justify-content: center; }
+.dk .target { color: var(--dk-text); font-size: var(--dk-fs-lead); line-height: 1.5; }
+.dk .cta-block .trust { margin-top: var(--dk-space-3); }
+
+.dk .arrival {
+  position: relative;
+  height: calc(var(--dk-arrive-h) + var(--dk-spark-size));
+}
+.dk .spark-big {
+  position: absolute;
+  left: 50%;
+  top: var(--dk-arrive-h);
+  width: var(--dk-spark-size);
+  height: var(--dk-spark-size);
+  margin-left: calc(var(--dk-spark-size) / -2);
+  z-index: var(--dk-z-art);
+}
+.dk .spark-big__glow {
+  position: absolute;
+  inset: -60%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--dk-spark-glow), transparent);
+}
+.dk .spark-big__shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--dk-cream);
+  overflow: visible;
+}
+.dk .twinkle {
+  position: absolute;
+  z-index: var(--dk-z-art);
+  width: var(--dk-s);
+  height: var(--dk-s);
+  margin: calc(var(--dk-s) / -2);
+  border-radius: 50%;
+  background: var(--dk-star);
+  opacity: 0.8;
+}
+
+/* Countdown: two faces share one reserved box */
+.dk .countdown {
+  display: grid;
+  min-height: var(--dk-countdown-h);
+  align-content: center;
+}
+.dk .countdown__face { grid-area: 1 / 1; align-self: center; }
+.dk .countdown__face--live { visibility: hidden; }
+.dk .countdown.is-live .countdown__face--static { visibility: hidden; }
+.dk .countdown.is-live .countdown__face--live { visibility: visible; }
+.dk .countdown__label {
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: var(--dk-lh-tight);
+  letter-spacing: var(--dk-ls-label);
+  text-transform: uppercase;
+}
+.dk .date-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 12px 32px;
+  margin-top: var(--dk-space-4);
+  font-size: var(--dk-fs-date);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--dk-text);
+}
+.dk .count { position: relative; display: block; width: fit-content; margin: var(--dk-space-3) auto 0; line-height: 1; color: var(--dk-text); }
+.dk .count__days {
+  display: inline-block;
+  min-inline-size: 2ch;
+  font-size: var(--dk-fs-count);
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+/* the unit hangs off the numeral's right edge, so the numeral itself stays centred */
+.dk .count__unit { position: absolute; left: 100%; bottom: 0.6em; margin-left: 0.4em; font-size: var(--dk-fs-h3); font-weight: 600; }
+.dk .count__hours { margin: var(--dk-space-2) auto 0; font-size: var(--dk-fs-hours); font-weight: 400; line-height: 1.3; color: var(--dk-text); }
+.dk .count__date { margin: var(--dk-space-4) auto 0; color: var(--dk-text-muted); }
+.dk .count__later { margin: var(--dk-space-2) auto 0; color: var(--dk-text-muted); font-size: var(--dk-fs-small); }
+
+/* ==========================================================================
+   Dusk band: no text, no controls (§5.6)
+   ========================================================================== */
+.dk .dusk {
+  position: relative;
+  height: var(--dk-dusk-h);
+  background: var(--dk-sky-dusk);
+  overflow: clip;
+  --dk-head-fill: var(--dk-cream);
+  --dk-head-ring: var(--dk-ink);
+}
+.dk .dusk__horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: var(--dk-horizon-y);
+  height: 1px;
+  background: var(--dk-horizon);
+  z-index: var(--dk-z-art);
+}
+.dk .dusk__glow {
+  position: absolute;
+  top: calc(var(--dk-horizon-y) - var(--dk-set-sun) * 1.5);
+  right: calc(var(--dk-set-sun-right) + var(--dk-set-sun) / 2 - var(--dk-set-sun) * 1.5);
+  width: calc(var(--dk-set-sun) * 3);
+  height: calc(var(--dk-set-sun) * 3);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--dk-sun-glow-dusk), transparent);
+  z-index: var(--dk-z-art);
+}
+.dk .dusk__sun {
+  position: absolute;
+  top: calc(var(--dk-horizon-y) - var(--dk-set-sun) / 2);
+  right: var(--dk-set-sun-right);
+  width: var(--dk-set-sun);
+  height: calc(var(--dk-set-sun) * 1.5);
+  overflow: visible;
+  z-index: var(--dk-z-art);
+}
+.dk .stop-core { stop-color: var(--dk-sun-core); }
+.dk .stop-rim  { stop-color: var(--dk-orange); }
+.dk .glint { fill: var(--dk-sun-core); }
+
+/* ==========================================================================
+   After dusk: star field, plans, FAQ, final CTA, footer
+   ========================================================================== */
+.dk .after-dusk { position: relative; }
+.dk .starfield {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+  overflow: visible;
+  fill: var(--dk-star);
+}
+
+.dk .plans,
+.dk .faq,
+.dk .final { padding-block: var(--dk-chapter-pad); }
+.dk .plans h2,
+.dk .faq h2 { margin-bottom: var(--dk-space-6); }
+.dk .plans h2 { margin-bottom: var(--dk-space-6); }
+
+/* FAQ */
+.dk .faq .wrap { max-width: 46rem; }
+.dk .faq__list { border-top: 1px solid var(--dk-night-line); }
+.dk .faq details { border-bottom: 1px solid var(--dk-night-line); }
+.dk .faq summary,
+.dk .more summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--dk-space-4);
+  min-height: 56px;
+  padding: 16px 0;
+  color: var(--dk-text);
+  font-weight: 600;
+  line-height: 1.4;
+  list-style: none;
+  cursor: pointer;
+}
+.dk .faq summary::-webkit-details-marker,
+.dk .more summary::-webkit-details-marker { display: none; }
+.dk .disclosure__icon { position: relative; flex: none; width: 20px; height: 20px; }
+.dk .disclosure__icon::before,
+.dk .disclosure__icon::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--dk-cream-muted);
+}
+.dk .disclosure__icon::after { transform: rotate(90deg); }
+.dk .faq details[open] .disclosure__icon,
+.dk .more[open] .disclosure__icon { transform: rotate(45deg); }
+.dk .faq details p { padding-bottom: 20px; color: var(--dk-text-muted); }
+.dk .more {
+  max-width: var(--dk-measure);
+  margin-top: var(--dk-space-4);
+  border-top: 1px solid var(--dk-night-line);
+  border-bottom: 1px solid var(--dk-night-line);
+}
+.dk .more summary { min-height: 48px; padding: 12px 0; }
+.dk .more .rules { margin-top: 0; padding-bottom: var(--dk-space-4); }
+@media (prefers-reduced-motion: no-preference) {
+  .dk .disclosure__icon { transition: transform var(--dk-dur-fast) var(--dk-ease-out); }
+}
+
+/* Final CTA */
+.dk .final { text-align: center; }
+.dk .final .wrap { display: flex; flex-direction: column; align-items: center; }
+.dk .final__sky {
+  width: 100%;
+  max-width: 26rem;
+  height: 5rem;
+  margin-bottom: var(--dk-space-2);
+  fill: var(--dk-cream);
+  overflow: visible;
+}
+.dk .faq { position: relative; }
+.dk .night-sep {
+  position: absolute;
+  left: 0;
+  top: calc((var(--dk-chapter-pad) - min(var(--dk-chapter-pad), 64px)) / 2);
+  width: 100%;
+  height: min(var(--dk-chapter-pad), 64px);
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+  overflow: visible;
+}
+.dk .night-sep polyline,
+.dk .final__sky polyline {
+  fill: none;
+  stroke: var(--dk-constellation);
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.dk .night-sep circle,
+.dk .final__sky circle { fill: var(--dk-star); }
+.dk .final__text { margin-top: var(--dk-space-3); color: var(--dk-text-muted); }
+.dk .final .btn { margin-top: var(--dk-space-5); }
+.dk .final__signin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.35em;
+  margin-top: var(--dk-space-3);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-small);
+}
+
+/* Footer */
+.dk .site-footer {
+  border-top: 1px solid var(--dk-night-line);
+  padding: var(--dk-space-6) 0 calc(var(--dk-space-6) + env(safe-area-inset-bottom));
+}
+.dk .site-footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--dk-space-3);
+}
+.dk .site-footer img { height: 28px; width: auto; }
+.dk .site-footer ul { display: flex; flex-wrap: wrap; gap: 0 var(--dk-space-5); }
+.dk .disclaimer {
+  max-width: none;
+  margin-top: var(--dk-space-5);
+  color: var(--dk-text-muted);
+  font-size: var(--dk-fs-small);
+}
+.dk .copyright { margin-top: var(--dk-space-3); color: var(--dk-text-muted); font-size: var(--dk-fs-small); }
+@media (min-width: 1100px) {
+  .dk .site-footer__row { flex-direction: row; align-items: center; justify-content: space-between; }
+}
+
+/* ==========================================================================
+   Sticky dock (mobile, JS only)
+   ========================================================================== */
+.dk .dock {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--dk-z-dock);
+  padding: 8px var(--dk-gutter) calc(8px + env(safe-area-inset-bottom));
+  background: var(--dk-night-panel);
+  box-shadow: 0 -1px 0 var(--dk-night-line);
+}
+.dk .dock .btn { width: 100%; min-height: 48px; }
+html[data-dusk-js] .dk .dock {
+  display: block;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+html[data-dusk-js] .dk .dock.is-shown { visibility: visible; transform: none; }
+html[data-dusk-js]:has(.dk) { scroll-padding-bottom: calc(var(--dk-dock-h) + env(safe-area-inset-bottom)); }
+@media (min-width: 768px) {
+  html[data-dusk-js] .dk .dock { display: none; }
+  html[data-dusk-js]:has(.dk) { scroll-padding-bottom: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-dusk-js] .dk .dock { transition: transform var(--dk-dur-dock) var(--dk-ease-out), visibility 0s linear var(--dk-dur-dock); }
+  html[data-dusk-js] .dk .dock.is-shown { transition: transform var(--dk-dur-dock) var(--dk-ease-out), visibility 0s; }
+}
+
+/* ==========================================================================
+   Desktop layouts (>= 1100): chapters become two columns around the centre lane
+   ========================================================================== */
+@media (min-width: 1100px) {
+  .dk .chapter__inner { max-width: none; padding-left: 0; }
+  .dk .chapter--1 .chapter__inner,
+.dk .chapter--2 .chapter__inner,
+.dk .chapter--3 .chapter__inner,
+.dk .chapter--4 .chapter__inner {
+    display: grid;
+    grid-template-columns: 1fr var(--dk-lane) 1fr;
+    align-items: start;
+  }
+  .dk .chapter--1 .chapter__inner > *,
+.dk .chapter--2 .chapter__inner > *,
+.dk .chapter--3 .chapter__inner > *,
+.dk .chapter--4 .chapter__inner > * { margin-top: 0; }
+
+  .dk .step__dot { left: calc(-1 * var(--dk-lane) / 2 - var(--dk-dot-size) / 2); }
+
+  /* Chapter 1 */
+  .dk .chapter--1 .chapter__inner { grid-template-areas: "head . steps" "free . steps"; }
+  .dk .chapter--1 .chapter__head { grid-area: head; }
+  .dk .chapter--1 .steps { grid-area: steps; margin-top: 6rem; }
+  .dk .chapter--1 .free-note { grid-area: free; margin-top: calc(var(--dk-space-5) + var(--dk-space-4)); }
+
+  /* Chapter 2 */
+  .dk .chapter--2 .chapter__inner { grid-template-areas: "panel . head" "panel . intro" "panel . features"; }
+  .dk .chapter--2 .chapter__head { grid-area: head; }
+  .dk .chapter--2 .intro { grid-area: intro; margin-top: var(--dk-space-4); }
+  .dk .chapter--2 .features { grid-area: features; margin-top: var(--dk-space-6); }
+  .dk .chapter--2 .qcard { grid-area: panel; justify-self: end; width: 100%; max-width: 26rem; margin-top: 5rem; }
+
+  /* Chapter 3 */
+  .dk .chapter--3 .chapter__inner { grid-template-areas: "head . ." "mistakes . strip" "stats . ."; }
+  .dk .chapter--3 .chapter__head { grid-area: head; }
+  .dk .chapter--3 .feature--mistakes { grid-area: mistakes; margin-top: var(--dk-space-6); }
+  .dk .chapter--3 .review { grid-area: strip; align-self: center; width: 100%; max-width: 26rem; justify-self: center; }
+  .dk .chapter--3 .feature--stats { grid-area: stats; margin-top: var(--dk-space-6); }
+
+  /* Chapter 4 */
+  .dk .chapter--4 .chapter__inner { grid-template-areas: "panel . head" "panel . tests" ". . tournament"; }
+  .dk .chapter--4 .chapter__head { grid-area: head; }
+  .dk .chapter--4 .tests { grid-area: tests; margin-top: var(--dk-space-4); }
+  .dk .chapter--4 .score { grid-area: panel; justify-self: end; width: 100%; max-width: 24rem; margin-top: 1rem; }
+  .dk .chapter--4 .tournament { grid-area: tournament; margin-top: var(--dk-space-7); }
+
+  /* Chapter 5 keeps its centred column */
+  .dk .chapter--5 .chapter__inner { max-width: 40rem; }
+}
+
+/* ==========================================================================
+   Reveal (JS adds .reveal only when motion is allowed)
+   ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-dusk-js][data-dusk-reveal] .dk .chapter__inner:not(.is-in) {
+    opacity: 0;
+    transform: translateY(var(--dk-reveal-shift));
+  }
+  html[data-dusk-js][data-dusk-reveal] .dk .chapter__inner {
+    transition: opacity var(--dk-dur-reveal) var(--dk-ease-out), transform var(--dk-dur-reveal) var(--dk-ease-out);
+  }
+}
+
+/* ==========================================================================
+   Enhancement: the pen, stars and sparkle on scroll timelines (§6.2)
+   Base state (above) is the complete page: line drawn, stars lit, sun still.
+   ========================================================================== */
+@keyframes dk-pen-draw   { from { transform: scaleY(0); }            to { transform: scaleY(1); } }
+@keyframes dk-pen-head   { from { transform: translateY(-100%); opacity: 1; } to { transform: translateY(0); opacity: 1; } }
+@keyframes dk-pen-reveal { from { clip-path: inset(0 0 100% 0); }    to { clip-path: inset(0 0 0 0); } }
+/* the connector's 2 px stroke is centred on the box edge at both ends, so its clip box is widened */
+@keyframes dk-pen-reveal-wide { from { clip-path: inset(-4px -4px 100% -4px); } to { clip-path: inset(-4px -4px -4px -4px); } }
+@keyframes dk-light-up   { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes dk-stars-in   { from { opacity: 0; }                       to { opacity: 1; } }
+@keyframes dk-ignite     { from { opacity: 0.2; transform: scale(0.55) rotate(-45deg); } to { opacity: 1; transform: scale(1) rotate(0deg); } }
+@keyframes dk-glow-in    { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes dk-sun-descend { from { transform: translateY(0) scale(1); } to { transform: translateY(var(--dk-sun-travel)) scale(var(--dk-sun-grow)); } }
+@keyframes dk-sun-set    { from { opacity: 1; }                       to { opacity: 0; } }
+@keyframes dk-twinkle    { 0%, 100% { opacity: 0.55; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.25); } }
+
+@supports (animation-timeline: view()) and (animation-range: cover 0% cover 100%) {
+  @media (prefers-reduced-motion: no-preference) {
+
+    /* The pen: every piece uses the same range, so the drawn tip is always at --pen-y on screen. */
+    /* view-timeline-inset: 0 on every view timeline. By default (auto) it follows the page's scroll-padding,
+       and the mobile dock sets scroll-padding-bottom, which would shift the pen 64 px up the screen. */
+    html[data-dusk-js] .dk .path-seg,
+html[data-dusk-js] .dk .connector  { view-timeline: --dk-seg block; view-timeline-inset: 0px; }
+
+    html[data-dusk-js] .dk .path-seg__fill {
+      animation-name: dk-pen-draw;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --dk-seg;
+      animation-range: cover var(--dk-pen-lead) cover calc(100% - var(--dk-pen-y));
+    }
+    html[data-dusk-js] .dk .path-seg--dusk .path-seg__fill,
+html[data-dusk-js] .dk .connector__draw {
+      animation-name: dk-pen-reveal;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --dk-seg;
+      animation-range: cover var(--dk-pen-lead) cover calc(100% - var(--dk-pen-y));
+    }
+    html[data-dusk-js] .dk .connector__draw { animation-name: dk-pen-reveal-wide; }
+    html[data-dusk-js] .dk .path-seg__head {
+      display: block;
+      animation-name: dk-pen-head;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: none;            /* visible only while its piece is being drawn */
+      animation-timeline: --dk-seg;
+      animation-range: cover var(--dk-pen-lead) cover calc(100% - var(--dk-pen-y));
+    }
+    html[data-dusk-js] .dk .path-seg--start .path-seg__head { animation-fill-mode: backwards; } /* waits under the CTA at load */
+    html[data-dusk-js] .dk .trailhead { display: none; }                    /* below 1100 the waiting head replaces it */
+    @media (min-width: 1100px) {
+      html[data-dusk-js] .dk .trailhead { display: block; }                 /* desktop: connector has no head, keep the dot */
+    }
+
+    /* Chapter stars and step dots light up as the pen passes their centre. */
+    html[data-dusk-js] .dk .milestone  { view-timeline: --dk-ms block; view-timeline-inset: 0px; }
+    html[data-dusk-js] .dk .milestone__lit {
+      animation-name: dk-light-up;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --dk-ms;
+      animation-range: cover var(--dk-pen-lead) cover calc(var(--dk-pen-lead) + var(--dk-ms-size));
+    }
+    html[data-dusk-js] .dk .step__dot  { view-timeline: --dk-dot block; view-timeline-inset: 0px; }
+    html[data-dusk-js] .dk .step__dot-lit {
+      animation-name: dk-light-up;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --dk-dot;
+      animation-range: cover var(--dk-pen-lead) cover calc(var(--dk-pen-lead) + var(--dk-dot-size));
+    }
+
+    /* First stars: the whole field fades in while the top of chapter 4 climbs from 85% to 15% of the screen. */
+    html[data-dusk-js] .dk .starfield {
+      animation-name: dk-stars-in;
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: view(block 0px);
+      animation-range: entry 15% entry 85%;
+    }
+
+    /* The brightest star ignites as the pen reaches its centre. */
+    html[data-dusk-js] .dk .spark-big { view-timeline: --dk-spark block; view-timeline-inset: 0px; }
+    html[data-dusk-js] .dk .spark-big__shape,
+html[data-dusk-js] .dk .spark-big__glow {
+      animation-duration: 1ms;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --dk-spark;
+      animation-range: cover calc(var(--dk-pen-lead) + var(--dk-spark-size) / 2 - 4rem)
+                       cover calc(var(--dk-pen-lead) + var(--dk-spark-size) / 2);
+    }
+    html[data-dusk-js] .dk .spark-big__shape { animation-name: dk-ignite; }
+    html[data-dusk-js] .dk .spark-big__glow  { animation-name: dk-glow-in; }
+
+    /* Twelve stars twinkle once (JS adds .is-twinkling when the arrival area is half on screen). Max end: 2200 + 2600 = 4800 ms. */
+    html[data-dusk-js] .dk .arrival.is-twinkling .twinkle {
+      animation: dk-twinkle var(--dk-dur-twinkle) var(--dk-ease-in-out) var(--dk-d, 0ms) 1 both;
+    }
+  }
+}
+
+/* ---------- The travelling sun (>= 1100 px only, §6.3) ---------- */
+@supports (animation-timeline: view()) and (timeline-scope: --dk-a) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 1100px) {
+    html[data-dusk-js] .dk .dk-main     { timeline-scope: --dk-dusk; }
+    html[data-dusk-js] .dk .daytime { view-timeline: --dk-daytime block; view-timeline-inset: 0px; }
+    html[data-dusk-js] .dk .dusk    { view-timeline: --dk-dusk block; view-timeline-inset: 0px; }
+    html[data-dusk-js] .dk .sun {
+      position: fixed;
+      top: calc(var(--dk-header-h) + var(--dk-sun-top));
+      right: var(--dk-sun-right);
+      animation-name: dk-sun-descend, dk-sun-set;
+      animation-duration: 1ms, 1ms;
+      animation-timing-function: linear, linear;
+      animation-fill-mode: both, both;
+      animation-timeline: --dk-daytime, --dk-dusk;
+      animation-range: contain 0% contain 100%, entry 80% entry 100%;   /* the two suns trade places only in the last 20% */
+    }
+    html[data-dusk-js] .dk .dusk__sun,
+html[data-dusk-js] .dk .dusk__glow {
+      animation: dk-stars-in 1ms linear both;
+      animation-timeline: --dk-dusk;
+      animation-range: entry 80% entry 100%;
+    }
+  }
+}
+
+/* ==========================================================================
+   Dusk flats: clouds, a far shore and swells (art only, no text)
+   ========================================================================== */
+.dk .dusk__cloud,
+.dk .dusk__shore,
+.dk .dusk__water {
+  position: absolute;
+  z-index: var(--dk-z-art);
+  pointer-events: none;
+}
+.dk .dusk__cloud { height: max(5px, calc(var(--dk-dusk-h) * 0.022)); border-radius: var(--dk-r-pill); }
+.dk .dusk__cloud--1 { top: calc(var(--dk-dusk-h) * 0.13); left: -6%; width: 54%; background: var(--dk-cloud-hi); }
+.dk .dusk__cloud--2 { top: calc(var(--dk-dusk-h) * 0.215); right: -10%; width: 62%; height: max(6px, calc(var(--dk-dusk-h) * 0.03)); background: var(--dk-cloud-mid); }
+.dk .dusk__cloud--3 { top: calc(var(--dk-dusk-h) * 0.31); left: 8%; width: 44%; background: var(--dk-cloud-shade); }
+.dk .dusk__shore {
+  top: calc(var(--dk-horizon-y) - 14px);
+  left: 0;
+  width: 44%;
+  height: 15px;
+  background: var(--dk-sky-5b);
+  clip-path: polygon(0 100%, 0 38%, 9% 52%, 20% 22%, 31% 46%, 43% 30%, 56% 56%, 70% 40%, 84% 68%, 100% 100%);
+}
+.dk .dusk__water { background: linear-gradient(to right, transparent, var(--dk-water-c) 18%, var(--dk-water-c) 82%, transparent); }
+.dk .dusk__water--1 { --dk-water-c: var(--dk-water-1); top: calc(var(--dk-dusk-h) * 0.45); left: 0; right: 0; height: calc(var(--dk-dusk-h) * 0.035); }
+.dk .dusk__water--2 { --dk-water-c: var(--dk-water-2); top: calc(var(--dk-dusk-h) * 0.54); left: 10%; right: 0; height: calc(var(--dk-dusk-h) * 0.04); }
+.dk .dusk__water--3 { --dk-water-c: var(--dk-water-2); top: calc(var(--dk-dusk-h) * 0.64); left: 0; right: 18%; height: calc(var(--dk-dusk-h) * 0.05); }
+.dk .dusk__water--4 { --dk-water-c: var(--dk-water-3); top: calc(var(--dk-dusk-h) * 0.76); left: 8%; right: 8%; height: calc(var(--dk-dusk-h) * 0.06); }
+
+/* ==========================================================================
+   Next-SAT chip in the hero (reserved size, static fallback)
+   ========================================================================== */
+.dk .hero__trail-row { display: flex; flex-direction: column; align-items: flex-start; }
+.dk .next-chip {
+  position: relative;
+  display: grid;
+  width: fit-content;
+  max-width: calc(100% - var(--dk-rail));
+  margin: var(--dk-space-4) 0 0 var(--dk-rail);
+}
+.dk .next-chip::before {          /* a short branch from the path to the chip */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--dk-rail) + 5px);
+  width: calc(var(--dk-rail) - 5px);
+  height: 2px;
+  background: var(--dk-path-fill);
+}
+.dk .next-chip__face {
+  grid-area: 1 / 1;
+  justify-self: start;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dk-space-2);
+  padding: 8px 14px 8px 12px;
+  border-radius: var(--dk-r-pill);
+  background: var(--dk-cloud);
+  box-shadow: var(--dk-shadow-cloud);
+  color: var(--dk-ink);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.dk .next-chip__face--live { visibility: hidden; }
+.dk .next-chip.is-live .next-chip__face--static { visibility: hidden; }
+.dk .next-chip.is-live .next-chip__face--live { visibility: visible; }
+.dk .next-chip__star {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: var(--dk-ms-lit);
+  stroke: var(--dk-ms-stroke);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+@media (min-width: 768px) {
+  .dk .hero__trail-row { flex-direction: row; flex-wrap: wrap; align-items: center; column-gap: var(--dk-space-5); }
+  .dk .next-chip { margin: 0; }
+  .dk .next-chip::before { display: none; }
+}
+
+/* ==========================================================================
+   Slow descent: "Follow the path" scrolls the page down by itself (script.js)
+   Present only with JS and no reduced-motion preference; the pill is fixed, so it reserves no space.
+   ========================================================================== */
+.dk .follow-pill {
+  position: fixed;
+  top: calc(var(--dk-space-2) + env(safe-area-inset-top));
+  left: 50%;
+  z-index: var(--dk-z-pill);
+  max-width: calc(100vw - var(--dk-space-4));
+  min-height: 44px;
+  border-radius: var(--dk-r-pill);
+  background: var(--dk-cloud);
+  box-shadow: var(--dk-shadow-cloud);
+  color: var(--dk-ink);
+  font-size: var(--dk-fs-label);
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  transform: translate(-50%, var(--dk-follow-y, 0px));
+  visibility: hidden;
+  opacity: 0;
+}
+.dk .follow-pill.is-on { visibility: visible; opacity: 1; }
+.dk .follow-pill.is-away { visibility: hidden; opacity: 0; }   /* a focused control sits under it */
+/* collapsed after a stop: a compact control in the bottom-right corner, above the mobile dock */
+.dk .follow-pill.is-mini {
+  top: auto;
+  left: auto;
+  right: var(--dk-space-4);
+  bottom: calc(var(--dk-dock-h) + env(safe-area-inset-bottom) + var(--dk-space-3));
+  transform: none;
+}
+.dk .follow-pill__full,
+.dk .follow-pill__mini { align-items: center; gap: var(--dk-space-2); }
+.dk .follow-pill__full { display: flex; padding: 0 0 0 var(--dk-space-4); }
+.dk .follow-pill__mini { display: none; padding: 0 0 0 var(--dk-space-1); }
+.dk .follow-pill.is-mini .follow-pill__full { display: none; }
+.dk .follow-pill.is-mini .follow-pill__mini { display: flex; }
+.dk .follow-pill__spark {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  fill: var(--dk-orange);
+  stroke: var(--dk-ink);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+.dk .follow-pill__btn {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--dk-ink);
+  cursor: pointer;
+}
+.dk .follow-pill__btn:hover { background: var(--dk-line-day); }
+.dk .follow-pill__go {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dk-space-1);
+  min-height: 44px;
+  padding: 0 var(--dk-space-3);
+  border: 2px solid var(--dk-ink);
+  border-radius: var(--dk-r-pill);
+  background: var(--dk-orange);
+  color: var(--dk-ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dk .follow-pill__label {            /* icon only on phones; the name stays available to screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .dk .follow-pill.is-mini { bottom: calc(var(--dk-space-4) + env(safe-area-inset-bottom)); }
+  .dk .follow-pill__go { padding: 0 var(--dk-space-4) 0 var(--dk-space-3); }
+  .dk .follow-pill__label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+  }
+}
+.dk .icon--fill { fill: currentColor; stroke-width: 1.5px; }
+@media (prefers-reduced-motion: no-preference) {
+  .dk .follow-pill { transition: opacity var(--dk-dur-fast) linear, visibility 0s linear var(--dk-dur-fast); }
+  .dk .follow-pill.is-on { transition: opacity var(--dk-dur-fast) linear, visibility 0s; }
+}
+
+/* ==========================================================================
+   Print
+   ========================================================================== */
+@media print {
+  .dk .dock,
+.dk .skip-link,
+.dk .follow-pill { display: none; }
+  html[data-dusk-js][data-dusk-reveal] .dk .chapter__inner:not(.is-in) { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   Integration with the app
+   ========================================================================== */
+
+/* The app frame (sidebar and its mobile top bar, theme switch, footer, star backdrop, support button, tour) marks itself
+   data-chrome; AppShell's padded wrapper is data-shell. The landing is a full-screen page of its own: while it is in the
+   document the frame goes away. Pure CSS on server-rendered markup, so there is no flash and no hydration difference.
+   Every other page is unaffected: the selectors need .dk, and after a client-side navigation away the page may stay in the
+   document (hidden), so DuskBehavior sets html[data-dk-away] while the landing is not the visible page. */
+html:not([data-dk-away]) body:has(.dk) { background: #0A0F2C; }
+html:not([data-dk-away]) body:has(.dk) [data-chrome] { display: none !important; }
+html:not([data-dk-away]) body:has(.dk) [data-shell] { padding-left: 0 !important; }
+
+/* ---------- Features and Pricing: the app's own components, in a "night glass" palette ----------
+   The app's colour tokens are re-declared on the wrapper, so every Tailwind utility inside (bg-surface, text-muted,
+   text-primary-strong ...) follows the evening look whatever theme the visitor picked. data-theme="dark" on the wrapper
+   also switches the dark: variants on. Contrast on the night sky (#0A0F2C): cream ink 16:1, muted 9:1, orange text 7:1,
+   dark ink on the orange fill 7:1. */
+.dk .dk-app {
+  --bg: #0A0F2C;
+  --surface: rgb(20 26 69 / 0.78);
+  --surface-2: rgb(44 54 120 / 0.8);
+  --ink: #FFF6E5;
+  --muted: #C8C6E0;
+  --line: rgb(127 134 176 / 0.45);
+  --side: #0A0F2C;
+  --side-2: #141A45;
+  --side-ink: #FFF6E5;
+  --side-muted: #C8C6E0;
+  --side-line: rgb(127 134 176 / 0.4);
+  --primary: #FF8A3D;
+  --primary-hover: #FFA566;
+  --primary-ink: #0E1A3A;
+  --primary-soft: rgb(255 138 61 / 0.16);
+  --accent: #FF8A3D;
+  --accent-soft: rgb(255 138 61 / 0.2);
+  --primary-strong: #FF8A3D;
+  --primary-strong-ink: #0E1A3A;
+  --primary-strong-hover: #FFA566;
+  --plus-surface: #0F1538;
+  --liquid-ring: rgb(255 138 61 / 0.35);
+  --success: #4ADE80;
+  --success-soft: rgb(74 222 128 / 0.14);
+  --danger: #F87171;
+  --danger-soft: rgb(248 113 113 / 0.16);
+  --chart-correct: #4ADE80;
+  --chart-wrong: #F87171;
+  color: var(--ink);
+  color-scheme: dark;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Text selection on the evening sky: orange glow (the app-wide ::selection follows the visitor's theme tokens). */
+.dk ::selection {
+  background: rgb(255 138 61 / 0.35);
+}
+
+/* Their entrance animations and the carousels' autoplay timers (CSS animations) wait until the block is on screen: the
+   script marks each [data-dk-watch] data-inview="true" / "false". Without JS (no data-dusk-js) nothing is paused. */
+html[data-dusk-js] .dk [data-dk-watch]:not([data-inview="true"]),
+html[data-dusk-js] .dk [data-dk-watch]:not([data-inview="true"]) *,
+html[data-dusk-js] .dk [data-dk-watch]:not([data-inview="true"]) *::before,
+html[data-dusk-js] .dk [data-dk-watch]:not([data-inview="true"]) *::after {
+  animation-play-state: paused !important;
+}
+
+.dk .dk-app--pricing {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-bottom: clamp(4.5rem, 10vw, 9rem); /* room for the big "Stellar1600Plus" watermark under the cards */
+}
+.dk .anchor-alias { display: block; height: 0; }
+
+/* Section headers of Features and Pricing */
+.dk .sec-head { margin-bottom: var(--dk-space-6); }
+.dk .sec-head h2 { margin-bottom: 0; }
+.dk .sec-head__sub { margin-top: var(--dk-space-3); color: var(--dk-text-muted); }
+.dk .sec-head--row { display: flex; flex-direction: column; gap: var(--dk-space-3); }
+.dk .sec-note { margin-top: var(--dk-space-1); color: var(--dk-text-muted); font-size: var(--dk-fs-small); }
+.dk .sec-note:empty { display: none; }
+@media (min-width: 1100px) {
+  .dk .sec-head--row { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: var(--dk-space-6); }
+  .dk .sec-head__aside { text-align: right; }
+  .dk .sec-head__aside .sec-note { margin-left: auto; }
+}
+
+/* The carousel box is as tall as its tallest slide, so the Features section needs less room below it. */
+.dk .features-sec { padding-bottom: calc(var(--dk-chapter-pad) * 0.6); }
+
+/* Features: the carousel box is as tall as its tallest slide (so nothing below ever moves when slides change); shorter
+   slides sit in the middle of it instead of leaving all the spare room underneath. */
+.dk .dk-app--features [aria-roledescription="slide"] { align-self: center; }
+.dk .pricing-sec { padding-top: calc(var(--dk-chapter-pad) * 0.6); }
+
+/* Pricing, night look: the "Stellar1600Plus" watermark is a faint cream with a narrow warm shine (the app's orange at low
+   opacity turns brown on the night sky), and the Plus preview panel gets an indigo / soft-orange glow instead of the
+   app's orange corner glow. /plus is unaffected (these need .dk). */
+.dk .dk-app--pricing > .feat-shine {
+  background-image: linear-gradient(
+    to right,
+    rgb(255 246 229 / 0.12) 0%,
+    rgb(255 246 229 / 0.12) 42%,
+    rgb(255 214 170 / 0.75) 50%,
+    rgb(255 246 229 / 0.12) 58%,
+    rgb(255 246 229 / 0.12) 100%
+  );
+}
+.dk .dk-app .plus-surface {
+  background-image:
+    radial-gradient(70% 90% at 100% 0%, rgb(124 116 230 / 0.2), transparent 65%),
+    radial-gradient(60% 70% at 0% 100%, rgb(255 138 61 / 0.08), transparent 70%);
+}

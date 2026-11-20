@@ -60,7 +60,7 @@ export default function Visual() {
         <text x={PX(16, 3)} y={84} textAnchor="middle" fontSize={12} fill={C.muted}>
           vertex
         </text>
-        <text x={PX(16, 3)} y={100} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={PX(16, 3)} y={100} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           (3, 45)
         </text>
       </g>
@@ -87,12 +87,12 @@ export default function Visual() {
       <path className={`${a} ${dc(52)}`} d={EXP} pathLength={100} fill="none" stroke={C.ink} strokeWidth={2.5} />
       <circle className={`${a} ${pc(72)}`} cx={PX(164, 0)} cy={124 - 27} r={5} fill={C.primary} />
       <g className={`${a} ${fc(74)}`}>
-        <text x={PX(164, 0) + 10} y={116} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={PX(164, 0) + 10} y={116} fontSize={12} fontWeight={700} fill={C.primaryText}>
           start 300
         </text>
       </g>
       <g className={`${a} ${fc(80)}`}>
-        <text x={252} y={98} fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={252} y={98} fontSize={13} fontWeight={700} fill={C.primaryText}>
           × 1.2
         </text>
         <text x={252} y={112} fontSize={11} fill={C.muted}>

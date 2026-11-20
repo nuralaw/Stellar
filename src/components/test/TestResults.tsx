@@ -118,7 +118,7 @@ export function TestResults({ test, result }: { test: PracticeTest; result: Test
                       className="flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-surface-2 sm:px-5"
                     >
                       <span
-                        className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-white ${ok ? "bg-[var(--chart-correct)]" : r ? "bg-[var(--chart-wrong)]" : "bg-muted/60"}`}
+                        className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-white dark:text-primary-ink ${ok ? "bg-[var(--chart-correct)]" : r ? "bg-[var(--chart-wrong)]" : "bg-muted/60"}`}
                         aria-label={ok ? "Correct" : r ? "Incorrect" : "Not answered"}
                       >
                         <Icon d={ok ? I.check : I.x} className="h-3.5 w-3.5" strokeWidth={2.8} />

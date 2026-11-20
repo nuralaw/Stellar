@@ -131,7 +131,7 @@ export default function Visual() {
         />
 
         {/* Captions */}
-        <text className="v-pacing-and-guessing-a v-pacing-and-guessing-cap1" x={160} y={154} textAnchor="middle" fontSize={15} fontWeight={600} fill={C.primary}>
+        <text className="v-pacing-and-guessing-a v-pacing-and-guessing-cap1" x={160} y={154} textAnchor="middle" fontSize={15} fontWeight={600} fill={C.primaryText}>
           95 s gone, no plan
         </text>
         <text className="v-pacing-and-guessing-a v-pacing-and-guessing-cap2" x={160} y={154} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.ink}>

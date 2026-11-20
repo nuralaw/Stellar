@@ -10,8 +10,8 @@ const show = (n: string, t: number) => `.${P}${n} { animation-name: ${P}${n}; }
 /** A tick dot turns to the accent at t%. */
 const light = (n: string, t: number) => `.${P}${n} { fill: ${C.primary}; animation-name: ${P}${n}; }
 @keyframes ${P}${n} { 0%, ${t}% { fill: ${C.fill} } ${t + 5}%, 100% { fill: ${C.primary} } }`;
-const word = (n: string, t: number) => `.${P}${n} { fill: ${C.primary}; animation-name: ${P}${n}; }
-@keyframes ${P}${n} { 0%, ${t}% { fill: ${C.ink} } ${t + 5}%, 100% { fill: ${C.primary} } }`;
+const word = (n: string, t: number) => `.${P}${n} { fill: ${C.primaryText}; animation-name: ${P}${n}; }
+@keyframes ${P}${n} { 0%, ${t}% { fill: ${C.ink} } ${t + 5}%, 100% { fill: ${C.primaryText} } }`;
 
 const css = `
 .v-inferences--strength-a { animation: 9s ease-in-out infinite; }

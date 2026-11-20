@@ -13,8 +13,8 @@ const css = `
 @keyframes v-command-of-evidence-textual-scene { 0% { opacity: 0 } 6%, 92% { opacity: 1 } 99%, 100% { opacity: 0 } }
 
 /* Beat 1: the claim's two key words light up */
-.v-command-of-evidence-textual-key { fill: ${C.primary}; animation-name: v-command-of-evidence-textual-key; }
-@keyframes v-command-of-evidence-textual-key { 0%, 9% { fill: ${C.ink} } 15%, 100% { fill: ${C.primary} } }
+.v-command-of-evidence-textual-key { fill: ${C.primaryText}; animation-name: v-command-of-evidence-textual-key; }
+@keyframes v-command-of-evidence-textual-key { 0%, 9% { fill: ${C.ink} } 15%, 100% { fill: ${C.primaryText} } }
 
 /* Beat 2: finding A is tested, shakes, is rejected */
 .v-command-of-evidence-textual-shake { animation-name: v-command-of-evidence-textual-shake; }
@@ -44,8 +44,8 @@ const css = `
   50%, 62% { fill: ${C.soft}; stroke: ${C.primary} }
   67%, 100% { fill: ${C.goodSoft}; stroke: ${C.good} }
 }
-.v-command-of-evidence-textual-keyB { fill: ${C.primary}; animation-name: v-command-of-evidence-textual-keyB; }
-@keyframes v-command-of-evidence-textual-keyB { 0%, 52% { fill: ${C.ink} } 58%, 100% { fill: ${C.primary} } }
+.v-command-of-evidence-textual-keyB { fill: ${C.primaryText}; animation-name: v-command-of-evidence-textual-keyB; }
+@keyframes v-command-of-evidence-textual-keyB { 0%, 52% { fill: ${C.ink} } 58%, 100% { fill: ${C.primaryText} } }
 .v-command-of-evidence-textual-tagB { animation-name: v-command-of-evidence-textual-tagB; }
 @keyframes v-command-of-evidence-textual-tagB { 0%, 64% { opacity: 0; transform: translateX(-4px) } 70%, 100% { opacity: 1; transform: none } }
 `;

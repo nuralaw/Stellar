@@ -21,8 +21,8 @@ const css = `
 }
 .v-nonlinear-equations-ya { opacity: 0; animation-name: v-nonlinear-equations-ya; }
 @keyframes v-nonlinear-equations-ya {
-  0%, 4% { opacity: 0; transform: translateX(-6px); fill: ${C.primary} }
-  9%, 20% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 4% { opacity: 0; transform: translateX(-6px); fill: ${C.primaryText} }
+  9%, 20% { opacity: 1; transform: none; fill: ${C.primaryText} }
   25%, 37% { opacity: 1; transform: none; fill: ${C.ink} }
   41%, 100% { opacity: 0; transform: none; fill: ${C.ink} }
 }
@@ -37,8 +37,8 @@ const css = `
 }
 .v-nonlinear-equations-rb { animation-name: v-nonlinear-equations-rb; }
 @keyframes v-nonlinear-equations-rb {
-  0%, 19% { opacity: 0; transform: translateX(-6px); fill: ${C.primary} }
-  24%, 33% { opacity: 1; transform: none; fill: ${C.primary} }
+  0%, 19% { opacity: 0; transform: translateX(-6px); fill: ${C.primaryText} }
+  24%, 33% { opacity: 1; transform: none; fill: ${C.primaryText} }
   38%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
 }
 /* The y of the second equation stays accented: it is what gets replaced. */
@@ -52,11 +52,11 @@ const css = `
 /* Beat 3: substitute. x² leaves the first equation and takes the place of y in the second. */
 .v-nonlinear-equations-x2 { animation-name: v-nonlinear-equations-x2; }
 @keyframes v-nonlinear-equations-x2 {
-  0%, 4% { opacity: 0; transform: translate(30px, -30px); fill: ${C.primary} }
-  9%, 20% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primary} }
+  0%, 4% { opacity: 0; transform: translate(30px, -30px); fill: ${C.primaryText} }
+  9%, 20% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primaryText} }
   25%, 33% { opacity: 1; transform: translate(36px, -30px); fill: ${C.ink} }
-  37%, 40% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primary} }
-  49%, 52% { opacity: 1; transform: none; fill: ${C.primary} }
+  37%, 40% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primaryText} }
+  49%, 52% { opacity: 1; transform: none; fill: ${C.primaryText} }
   57%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
 }
 
@@ -153,7 +153,7 @@ export default function Visual() {
           <text className="v-nonlinear-equations-a v-nonlinear-equations-ya" x={231} y={44} textAnchor="end">
             y =
           </text>
-          <text className="v-nonlinear-equations-a v-nonlinear-equations-yb" x={216} y={74} textAnchor="end" fill={C.primary}>
+          <text className="v-nonlinear-equations-a v-nonlinear-equations-yb" x={216} y={74} textAnchor="end" fill={C.primaryText}>
             y
           </text>
           <text className="v-nonlinear-equations-a v-nonlinear-equations-x2" x={216} y={74} textAnchor="end">

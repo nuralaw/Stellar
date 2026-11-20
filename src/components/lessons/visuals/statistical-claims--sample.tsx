@@ -69,7 +69,7 @@ export default function Visual() {
             <circle key={i} cx={x} cy={y} r={4.5} />
           ))}
         </g>
-        <text x={248} y={166} fontSize={12} fontWeight={600} fill={C.primary} textAnchor="middle">
+        <text x={248} y={166} fontSize={12} fontWeight={600} fill={C.primaryText} textAnchor="middle">
           random sample
         </text>
       </g>

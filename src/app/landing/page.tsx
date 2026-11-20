@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Landing } from "@/components/landing/Landing";
+import { DuskLanding } from "@/components/landing/dusk/DuskLanding";
+import { duskFacts, faqItems, jsonLd, satClock } from "@/components/landing/dusk/facts";
+import { JsonLd } from "@/components/JsonLd";
 import { authFacts } from "@/lib/auth-facts";
 import { OG_BASE } from "@/lib/site";
 
 // The public home page. Nobody links here: src/proxy.ts answers "/" with this page for a signed-out visitor (the address stays "/"),
-// so its canonical is "/". Static page: the counts are computed at build time, like /plus, /register and /login.
+// so its canonical is "/". Static page: the counts are computed at build time, like /plus, /register and /login; the SAT
+// dates still ahead come from a cached function (components/landing/dusk/facts.ts), and the browser does the live countdown.
 
 export async function generateMetadata(): Promise<Metadata> {
   const { tests: t, lessons: l, questions } = authFacts();
@@ -18,6 +21,13 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function Page() {
-  return <Landing facts={authFacts()} />;
+export default async function Page() {
+  const facts = authFacts();
+  return (
+    <>
+      {/* WebSite, Organization and the FAQPage: the same list (faqItems) as the visible FAQ */}
+      <JsonLd json={jsonLd(faqItems(duskFacts(facts)))} />
+      <DuskLanding facts={facts} clock={await satClock()} />
+    </>
+  );
 }

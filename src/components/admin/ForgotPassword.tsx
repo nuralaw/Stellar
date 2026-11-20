@@ -10,7 +10,7 @@ import { AuthCard, ErrorNote, FIELD, PRIMARY } from "./ResetPassword";
 /** Small link for the sign-in form, under the password field. */
 export function ForgotPasswordLink() {
   return (
-    <Link href="/auth/forgot" className="text-sm font-medium text-muted hover:text-accent">
+    <Link href="/auth/forgot" className="text-sm font-medium text-muted hover:text-primary-strong">
       Forgot password?
     </Link>
   );
@@ -62,7 +62,7 @@ export function ForgotPasswordForm() {
           {busy ? "Sending…" : "Send reset link"}
         </button>
       </form>
-      <Link href="/admin" className="mt-4 block text-center text-sm font-medium text-muted hover:text-accent">
+      <Link href="/admin" className="mt-4 block text-center text-sm font-medium text-muted hover:text-primary-strong">
         Back to sign in
       </Link>
     </AuthCard>

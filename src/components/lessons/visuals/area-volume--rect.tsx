@@ -50,7 +50,7 @@ export default function Visual() {
         <rect className={cls("walk")} x={x0} y={y0} width={W} height={H} pathLength={100} fill="none" stroke={C.primary} strokeWidth={3.5} />
         <text className={cls("nine")} x={x0 + W / 2} y={y0 - 8} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.ink} {...lab}>9</text>
         <text className={cls("q")} x={x0 - 8} y={y0 + H / 2 + 5} textAnchor="end" fontSize={14} fontWeight={700} fill={C.muted} {...lab}>w</text>
-        <text className={cls("six")} x={x0 - 8} y={y0 + H / 2 + 5} textAnchor="end" fontSize={14} fontWeight={700} fill={C.primary} {...lab}>6</text>
+        <text className={cls("six")} x={x0 - 8} y={y0 + H / 2 + 5} textAnchor="end" fontSize={14} fontWeight={700} fill={C.primaryText} {...lab}>6</text>
 
         <g className={cls("p1")} {...lab}>
           <text x={186} y={46} fontSize={11} fill={C.muted}>perimeter = 30</text>
@@ -58,7 +58,7 @@ export default function Visual() {
         </g>
         <text className={cls("p2")} x={186} y={84} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>9 + w = 15, w = 6</text>
         <text className={cls("p3")} x={186} y={122} fontSize={11} fill={C.muted} {...lab}>area: squares inside</text>
-        <text className={cls("p4")} x={186} y={146} fontSize={17} fontWeight={700} fill={C.primary} {...lab}>9 × 6 = 54</text>
+        <text className={cls("p4")} x={186} y={146} fontSize={17} fontWeight={700} fill={C.primaryText} {...lab}>9 × 6 = 54</text>
       </g>
     </Svg>
   );

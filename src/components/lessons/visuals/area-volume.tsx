@@ -49,8 +49,8 @@ const css = `
 @keyframes v-area-volume-s4 { 0%, 61.7% { opacity: 0 } 63.4%, 100% { opacity: 1 } }
 .v-area-volume-hl { stroke-dasharray: 100; animation-name: v-area-volume-hl; }
 @keyframes v-area-volume-hl { 0%, 50% { stroke-dashoffset: 100 } 67%, 100% { stroke-dashoffset: 0 } }
-.v-area-volume-ht { fill: ${C.primary}; animation-name: v-area-volume-ht; }
-@keyframes v-area-volume-ht { 0%, 50% { fill: ${C.ink} } 56%, 100% { fill: ${C.primary} } }
+.v-area-volume-ht { fill: ${C.primaryText}; animation-name: v-area-volume-ht; }
+@keyframes v-area-volume-ht { 0%, 50% { fill: ${C.ink} } 56%, 100% { fill: ${C.primaryText} } }
 
 /* The work, one line per beat */
 .v-area-volume-t1 { animation-name: v-area-volume-t1; }
@@ -65,8 +65,8 @@ const css = `
 @keyframes v-area-volume-p2 { 0%, 32% { opacity: 1 } 36%, 100% { opacity: 0 } }
 .v-area-volume-p3 { opacity: 0; animation-name: v-area-volume-p3; }
 @keyframes v-area-volume-p3 { 0%, 60% { opacity: 1 } 64%, 100% { opacity: 0 } }
-.v-area-volume-ans { fill: ${C.primary}; animation-name: v-area-volume-ans; }
-@keyframes v-area-volume-ans { 0%, 70% { fill: ${C.ink} } 75%, 100% { fill: ${C.primary} } }
+.v-area-volume-ans { fill: ${C.primaryText}; animation-name: v-area-volume-ans; }
+@keyframes v-area-volume-ans { 0%, 70% { fill: ${C.ink} } 75%, 100% { fill: ${C.primaryText} } }
 `;
 
 // Cylinder geometry in canvas units.
@@ -158,7 +158,7 @@ export default function Visual() {
           <text className="v-area-volume-a v-area-volume-d" x={CX} y={TOP - 20} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink}>
             6
           </text>
-          <text className="v-area-volume-a v-area-volume-r" x={CX + RX / 2} y={TOP - 20} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text className="v-area-volume-a v-area-volume-r" x={CX + RX / 2} y={TOP - 20} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             3
           </text>
         </g>

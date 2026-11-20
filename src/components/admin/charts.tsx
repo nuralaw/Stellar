@@ -19,8 +19,8 @@ export const PRESETS: { id: Preset; label: string; prev: string }[] = [
   { id: "12m", label: "12 months", prev: "previous 12 months" },
   { id: "custom", label: "Custom", prev: "previous period" },
 ];
-/** Series color: validated (dataviz checks) against both the light and the dark surface. */
-export const BAR = "#ea580c";
+/** Series color: the theme orange (--primary), a graphic on both the night and day surfaces. */
+export const BAR = "var(--primary)";
 const DAY = 86_400_000;
 
 export const startOfDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate());

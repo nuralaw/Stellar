@@ -61,7 +61,7 @@ export default function Visual() {
           + 700
         </text>
         <line className="v-digital-sat-format--score-a v-digital-sat-format--score-rule" x1={232} y1={120} x2={302} y2={120} pathLength={100} stroke={C.ink} strokeWidth={2} />
-        <text className="v-digital-sat-format--score-a v-digital-sat-format--score-sum" x={300} y={147} textAnchor="end" fontSize={24} fontWeight={700} fill={C.primary}>
+        <text className="v-digital-sat-format--score-a v-digital-sat-format--score-sum" x={300} y={147} textAnchor="end" fontSize={24} fontWeight={700} fill={C.primaryText}>
           1350
         </text>
 

@@ -95,7 +95,7 @@ export default function Visual() {
             random sample
           </text>
           <text x={174} y={105} fontSize={17} fontWeight={700} fill={C.ink}>
-            <tspan fill={C.primary}>60</tspan> of 400
+            <tspan fill={C.primaryText}>60</tspan> of 400
           </text>
         </g>
         <g className="v-statistical-claims-a v-statistical-claims-in2">

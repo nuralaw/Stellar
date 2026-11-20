@@ -15,7 +15,7 @@ export function SupportDock() {
   const pathname = useAppPathname();
   if (!START_PAGES.has(pathname)) return null;
   return (
-    <div className="focus-mode:hidden">
+    <div data-chrome className="focus-mode:hidden">
       <SupportButton />
     </div>
   );

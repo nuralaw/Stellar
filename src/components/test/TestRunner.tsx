@@ -281,7 +281,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
     const afterBreak = s.module > 0 && MODULE_INFO[s.modules[s.module - 1] as ModuleId].section !== info.section;
     return (
       <div className="mx-auto grid min-h-[70vh] max-w-xl place-content-center px-4 py-10 text-center">
-        <p className="text-sm font-semibold text-primary">
+        <p className="text-sm font-semibold text-primary-strong">
           {testName(test, true)} · Module {s.module + 1} of {s.modules.length}
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight">{info.label}</h1>
@@ -350,7 +350,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
               }}
               aria-pressed={calcOpen}
               title="Desmos calculator"
-              className={`${iconBtn} ${calcOpen ? "border-primary text-primary" : "text-muted"}`}
+              className={`${iconBtn} ${calcOpen ? "border-primary text-primary-strong" : "text-muted"}`}
             >
               <Icon d={I.calculator} className="h-4.5 w-4.5" />
             </button>
@@ -389,7 +389,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
                     type="button"
                     onClick={() => toggleMark(q.key)}
                     aria-pressed={s.marked.includes(q.key)}
-                    className={`inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm font-medium transition-colors ${s.marked.includes(q.key) ? "text-accent" : "text-muted hover:text-ink"}`}
+                    className={`inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm font-medium transition-colors ${s.marked.includes(q.key) ? "text-primary-strong" : "text-muted hover:text-ink"}`}
                   >
                     <Icon d={I.flag} className="h-4 w-4" filled={s.marked.includes(q.key)} />
                     {s.marked.includes(q.key) ? "Marked for review" : "Mark for review"}
@@ -459,7 +459,7 @@ function QuitButton() {
 
 function cell(answered: boolean, marked: boolean, current: boolean) {
   return `relative grid h-10 place-items-center rounded-lg border text-sm font-semibold tabular-nums transition-colors ${
-    answered ? "border-primary/50 bg-primary-soft text-primary" : "border-dashed border-muted/50 bg-surface text-muted hover:border-muted hover:text-ink"
+    answered ? "border-primary/50 bg-primary-soft text-primary-strong" : "border-dashed border-muted/50 bg-surface text-muted hover:border-muted hover:text-ink"
   } ${current ? "ring-2 ring-primary ring-offset-2 ring-offset-surface" : ""} ${marked ? "after:absolute after:-top-1 after:-right-1 after:h-2.5 after:w-2.5 after:rounded-full after:bg-accent" : ""}`;
 }
 

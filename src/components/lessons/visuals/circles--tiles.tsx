@@ -60,16 +60,16 @@ export default function Visual() {
         <rect className={cls("ghost")} x={x0 + X} y={y0 + X} width={T} height={T} rx={2} fill="none" stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
         <g className={cls("cor")}>
           <rect x={x0 + X} y={y0 + X} width={T} height={T} rx={2} fill={C.soft} stroke={C.primary} strokeWidth={2} />
-          <text x={x0 + X + T / 2} y={y0 + X + T / 2 + 5} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primary} {...t}>4</text>
+          <text x={x0 + X + T / 2} y={y0 + X + T / 2 + 5} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primaryText} {...t}>4</text>
         </g>
 
         {/* the algebra */}
         <text className={cls("e1")} x={168} y={60} fontSize={16} fontWeight={700} fill={C.ink} {...t}>x² + 4x</text>
         <text className={cls("e2")} x={168} y={86} fontSize={11} fill={C.muted} {...t}>half of 4 is 2</text>
         <text className={cls("e3")} x={168} y={112} fontSize={16} fontWeight={700} fill={C.ink} {...t}>
-          x² + 4x <tspan fill={C.primary}>+ 4</tspan>
+          x² + 4x <tspan fill={C.primaryText}>+ 4</tspan>
         </text>
-        <text className={cls("e4")} x={168} y={140} fontSize={19} fontWeight={700} fill={C.primary} {...t}>= (x + 2)²</text>
+        <text className={cls("e4")} x={168} y={140} fontSize={19} fontWeight={700} fill={C.primaryText} {...t}>= (x + 2)²</text>
       </g>
     </Svg>
   );

@@ -66,7 +66,7 @@ export default function Visual() {
         <g className={cls("s1")} fontSize={12} fontWeight={700} fill={C.muted} {...lab}>
           <text x={(O.x + Q.x) / 2} y={O.y + 15} textAnchor="middle">3</text>
           <text x={Q.x + 7} y={(Q.y + Pt.y) / 2 + 4}>4</text>
-          <text x={(O.x + Pt.x) / 2 - 8} y={(O.y + Pt.y) / 2 + 2} textAnchor="end" fill={C.primary}>r</text>
+          <text x={(O.x + Pt.x) / 2 - 8} y={(O.y + Pt.y) / 2 + 2} textAnchor="end" fill={C.primaryText}>r</text>
         </g>
 
         {/* the work */}

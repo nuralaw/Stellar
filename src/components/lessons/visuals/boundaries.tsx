@@ -76,11 +76,11 @@ export default function Visual() {
 
         {/* Both sides can stand alone */}
         <path className="v-boundaries-a v-boundaries-line v-boundaries-l1" d="M22 68 H140" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-        <text className="v-boundaries-a v-boundaries-t1" x={81} y={86} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primary}>
+        <text className="v-boundaries-a v-boundaries-t1" x={81} y={86} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primaryText}>
           full sentence
         </text>
         <path className="v-boundaries-a v-boundaries-line v-boundaries-l2" d="M180 68 H298" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-        <text className="v-boundaries-a v-boundaries-t2" x={239} y={86} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primary}>
+        <text className="v-boundaries-a v-boundaries-t2" x={239} y={86} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primaryText}>
           full sentence
         </text>
 

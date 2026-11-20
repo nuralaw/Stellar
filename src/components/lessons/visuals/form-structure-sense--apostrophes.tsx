@@ -53,7 +53,7 @@ export default function Visual() {
       <g className={`${A} ${SCENE}`}>
         <Cell i={0} tag="one owner">
           <text y={46}>
-            the girl<tspan fill={C.primary}>{"’"}s</tspan> book
+            the girl<tspan fill={C.primaryText}>{"’"}s</tspan> book
           </text>
           <text y={64} fontSize={11} fontWeight={600} fill={C.muted}>
             apostrophe before s
@@ -61,7 +61,7 @@ export default function Visual() {
         </Cell>
         <Cell i={1} tag="several owners">
           <text y={46}>
-            the girls<tspan fill={C.primary}>{"’"}</tspan> books
+            the girls<tspan fill={C.primaryText}>{"’"}</tspan> books
           </text>
           <text y={64} fontSize={11} fontWeight={600} fill={C.muted}>
             apostrophe after s

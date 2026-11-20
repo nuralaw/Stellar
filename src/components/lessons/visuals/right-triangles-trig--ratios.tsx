@@ -65,7 +65,7 @@ export default function Visual() {
         <g className={cls("pa")}>
           <path d={wedge(A.x, A.y, 24, 180, 180 + angA)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
           <line x1={B.x} y1={B.y} x2={Cc.x} y2={Cc.y} stroke={C.primary} strokeWidth={4} />
-          <text x={B.x - 8} y={f((B.y + Cc.y) / 2 + 4)} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={B.x - 8} y={f((B.y + Cc.y) / 2 + 4)} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText} stroke="none">
             opposite
           </text>
         </g>
@@ -79,7 +79,7 @@ export default function Visual() {
           <text x={232} y={62} fontSize={12} fill={C.muted} stroke="none">
             from angle
           </text>
-          <text x={232} y={90} fontSize={26} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={232} y={90} fontSize={26} fontWeight={700} fill={C.primaryText} stroke="none">
             A
           </text>
         </g>
@@ -88,13 +88,13 @@ export default function Visual() {
         <g className={cls("pc")}>
           <path d={wedge(Cc.x, Cc.y, 24, f(angA), 90)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
           <line x1={B.x} y1={B.y} x2={A.x} y2={A.y} stroke={C.primary} strokeWidth={4} />
-          <text x={f((B.x + A.x) / 2)} y={B.y + 30} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={f((B.x + A.x) / 2)} y={B.y + 30} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText} stroke="none">
             opposite
           </text>
           <text x={232} y={62} fontSize={12} fill={C.muted} stroke="none">
             from angle
           </text>
-          <text x={232} y={90} fontSize={26} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={232} y={90} fontSize={26} fontWeight={700} fill={C.primaryText} stroke="none">
             C
           </text>
         </g>

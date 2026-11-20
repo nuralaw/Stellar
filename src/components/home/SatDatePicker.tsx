@@ -88,7 +88,7 @@ export function SatDatePicker({ value, onChange, dates }: { value: string; onCha
                   aria-pressed={on}
                   title={sat.anticipated ? "Anticipated SAT date (not confirmed yet)" : "SAT date"}
                   className={`grid h-9 place-items-center rounded-lg text-sm font-semibold transition-colors ${
-                    on ? "bg-primary text-primary-ink" : "bg-primary-soft text-primary ring-1 ring-primary/40 hover:bg-primary hover:text-primary-ink"
+                    on ? "bg-primary text-primary-ink" : "bg-primary-soft text-primary-strong ring-1 ring-primary/40 hover:bg-primary hover:text-primary-ink"
                   }`}
                 >
                   {day}

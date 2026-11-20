@@ -19,7 +19,7 @@ export function More({ source }: { source: string }) {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls={id}
-        className="group -ml-2 inline-flex items-center gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold text-muted transition-colors outline-none hover:text-primary focus-visible:ring-3 focus-visible:ring-primary/30"
+        className="group -ml-2 inline-flex items-center gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold text-muted transition-colors outline-none hover:text-primary-strong focus-visible:ring-3 focus-visible:ring-primary/30"
       >
         {open ? "Show less" : "Not clear? Explain more"}
         <Icon d={I.chevronD} className={`h-4 w-4 transition-transform duration-300 motion-reduce:transition-none ${open ? "rotate-180" : ""}`} strokeWidth={2.2} />

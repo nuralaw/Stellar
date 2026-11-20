@@ -107,7 +107,7 @@ export function QuestionBank() {
     return (
       <section className="mx-auto max-w-3xl px-4 py-16 text-center md:px-8">
         <p className="font-semibold">Couldn&apos;t load the question bank ({error}).</p>
-        <button type="button" onClick={() => window.location.reload()} className="mt-3 text-sm font-semibold text-primary hover:underline">
+        <button type="button" onClick={() => window.location.reload()} className="mt-3 text-sm font-semibold text-primary-strong hover:underline">
           Reload
         </button>
       </section>

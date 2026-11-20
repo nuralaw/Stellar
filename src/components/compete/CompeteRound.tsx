@@ -232,7 +232,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
   const cell = (i: number) => {
     const done = Boolean(responses[qs[i].id]);
     return `grid h-10 place-items-center rounded-lg border text-sm font-semibold tabular-nums transition-colors ${
-      done ? "border-primary/50 bg-primary-soft text-primary" : "border-dashed border-muted/50 bg-surface text-muted hover:text-ink"
+      done ? "border-primary/50 bg-primary-soft text-primary-strong" : "border-dashed border-muted/50 bg-surface text-muted hover:text-ink"
     } ${i === pos && !checking ? "ring-2 ring-primary ring-offset-2 ring-offset-surface" : ""}`;
   };
 
@@ -269,7 +269,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
               }}
               aria-pressed={calcOpen}
               title="Desmos calculator"
-              className={`grid h-9 w-9 place-items-center rounded-lg border bg-surface transition-colors hover:bg-surface-2 ${calcOpen ? "border-primary text-primary" : "border-line text-muted"}`}
+              className={`grid h-9 w-9 place-items-center rounded-lg border bg-surface transition-colors hover:bg-surface-2 ${calcOpen ? "border-primary text-primary-strong" : "border-line text-muted"}`}
             >
               <Icon d={I.calculator} className="h-4.5 w-4.5" />
             </button>
@@ -447,7 +447,7 @@ export function RoundReview({ data, rank, onBack }: { data: RoundData; rank?: nu
             <div key={q.id} className="border-b border-line last:border-b-0">
               <button type="button" onClick={() => setOpen(isOpen ? null : q.id)} aria-expanded={isOpen} className="flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-surface-2 sm:px-5">
                 <span
-                  className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-white ${rv?.correct ? "bg-[var(--chart-correct)]" : resp ? "bg-[var(--chart-wrong)]" : "bg-muted/60"}`}
+                  className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-bg ${rv?.correct ? "bg-[var(--chart-correct)]" : resp ? "bg-[var(--chart-wrong)]" : "bg-muted"}`}
                   aria-label={rv?.correct ? "Correct" : resp ? "Incorrect" : "Not answered"}
                 >
                   <Icon d={rv?.correct ? I.check : I.x} className="h-3.5 w-3.5" strokeWidth={2.8} />

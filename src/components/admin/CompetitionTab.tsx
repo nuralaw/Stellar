@@ -14,7 +14,7 @@ type Action = "annul" | "restore" | "reset";
 
 const REFRESH = "M20 11a8 8 0 0 0-14.9-4M4 4v4h4M4 13a8 8 0 0 0 14.9 4M20 20v-4h-4";
 const STATUS: Record<AdminEntry["status"], [string, string]> = {
-  running: ["In progress", "bg-accent-soft text-accent"],
+  running: ["In progress", "bg-accent-soft text-primary-strong"],
   unsubmitted: ["Not submitted", "bg-surface-2 text-muted"],
   submitted: ["Submitted", "bg-success-soft text-success"],
   annulled: ["Annulled", "bg-danger-soft text-danger"],
@@ -238,7 +238,7 @@ function Row({
               onClick={() => onDo(confirming)}
               disabled={busy}
               className={`inline-flex min-h-10 items-center rounded-xl px-4 text-sm font-semibold disabled:opacity-40 ${
-                confirming === "restore" ? "bg-primary text-primary-ink hover:bg-primary-hover" : "bg-danger text-white hover:opacity-90"
+                confirming === "restore" ? "bg-primary text-primary-ink hover:bg-primary-hover" : "bg-danger text-white dark:text-primary-ink hover:opacity-90"
               }`}
             >
               {busy ? "Saving…" : CONFIRM[confirming][1]}

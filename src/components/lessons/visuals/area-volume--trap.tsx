@@ -42,16 +42,16 @@ export default function Visual() {
         </g>
         <g className={cls("big")}>
           <Cyl cx={134} rx={40} fill={C.soft} />
-          <text x={134} y={yTop + hh + 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary} {...lab}>2r</text>
+          <text x={134} y={yTop + hh + 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText} {...lab}>2r</text>
           <text x={93} y={46} textAnchor="middle" fontSize={11} fill={C.muted} {...lab}>same height</text>
         </g>
 
         <text className={cls("p1")} x={196} y={50} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>πr²h</text>
         <g className={cls("p2")} {...lab}>
-          <text x={196} y={76} fontSize={13} fontWeight={700} fill={C.ink}>π(<tspan fill={C.primary}>2r</tspan>)²h</text>
+          <text x={196} y={76} fontSize={13} fontWeight={700} fill={C.ink}>π(<tspan fill={C.primaryText}>2r</tspan>)²h</text>
         </g>
         <text className={cls("p3")} x={196} y={102} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>= 4 · πr²h</text>
-        <text className={cls("p4")} x={196} y={140} fontSize={22} fontWeight={700} fill={C.primary} {...lab}>× 4</text>
+        <text className={cls("p4")} x={196} y={140} fontSize={22} fontWeight={700} fill={C.primaryText} {...lab}>× 4</text>
         <text className={cls("p4")} x={246} y={140} fontSize={11} fill={C.muted} {...lab}>not × 8</text>
       </g>
     </Svg>

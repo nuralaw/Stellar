@@ -115,7 +115,7 @@ function TodayCard({ stats, next, now }: { stats: Stats; next: ReturnType<typeof
       <div>
         <div className="flex items-baseline justify-between gap-3">
           <p className="text-sm font-medium text-muted">Today&apos;s goal</p>
-          <p className="text-sm font-medium text-primary">{stats.today >= DAILY_GOAL ? "Done 🎉" : `${DAILY_GOAL - stats.today} to go`}</p>
+          <p className="text-sm font-medium text-primary-strong">{stats.today >= DAILY_GOAL ? "Done 🎉" : `${DAILY_GOAL - stats.today} to go`}</p>
         </div>
         <p className="mt-2 text-3xl font-bold tracking-tight tabular-nums">
           {stats.today}
@@ -124,7 +124,7 @@ function TodayCard({ stats, next, now }: { stats: Stats; next: ReturnType<typeof
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-2">
           <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${pct}%` }} />
         </div>
-        <p className={`mt-2 text-[13px] ${atRisk ? "font-medium text-accent" : "text-muted"}`}>
+        <p className={`mt-2 text-[13px] ${atRisk ? "font-medium text-primary-strong" : "text-muted"}`}>
           {atRisk
             ? `Your ${stats.streak}-day streak ends in ${hoursToMidnight(now)} h — one question keeps it.`
             : stats.streak > 0
@@ -236,7 +236,7 @@ function GoalsForm({ onDone, firstRun = false }: { onDone: () => void; firstRun?
                 type="button"
                 onClick={() => setScore(String(s))}
                 className={`rounded-full border px-2.5 py-0.5 text-xs font-medium ${
-                  score === String(s) ? "border-primary bg-primary-soft text-primary" : "border-line text-muted hover:text-ink"
+                  score === String(s) ? "border-primary bg-primary-soft text-primary-strong" : "border-line text-muted hover:text-ink"
                 }`}
               >
                 {s}
@@ -270,7 +270,7 @@ function GoalsForm({ onDone, firstRun = false }: { onDone: () => void; firstRun?
                 aria-checked={focus === v}
                 onClick={() => setFocus(v)}
                 className={`rounded-xl border px-3.5 py-2 text-sm font-medium transition-colors ${
-                  focus === v ? "border-primary bg-primary-soft text-primary" : "border-line text-muted hover:text-ink"
+                  focus === v ? "border-primary bg-primary-soft text-primary-strong" : "border-line text-muted hover:text-ink"
                 }`}
               >
                 {label}
@@ -331,7 +331,7 @@ export function Dashboard() {
       label: "Pick your test date",
       done: profile.testDate !== null,
       action: (
-        <button type="button" onClick={openPlan} className="text-left font-medium hover:text-primary">
+        <button type="button" onClick={openPlan} className="text-left font-medium hover:text-primary-strong">
           Pick your test date →
         </button>
       ),
@@ -340,7 +340,7 @@ export function Dashboard() {
       label: "Set a target score",
       done: profile.targetScore !== null,
       action: (
-        <button type="button" onClick={openPlan} className="text-left font-medium hover:text-primary">
+        <button type="button" onClick={openPlan} className="text-left font-medium hover:text-primary-strong">
           Set a target score →
         </button>
       ),
@@ -349,7 +349,7 @@ export function Dashboard() {
       label: "Answer 10 questions",
       done: attempts.length >= 10,
       action: (
-        <Link href={next.href} className="font-medium hover:text-primary">
+        <Link href={next.href} className="font-medium hover:text-primary-strong">
           Answer 10 questions ({Math.min(attempts.length, 10)}/10) →
         </Link>
       ),
@@ -358,7 +358,7 @@ export function Dashboard() {
       label: "Take a practice test",
       done: tests.length > 0,
       action: (
-        <Link href="/test" className="font-medium hover:text-primary">
+        <Link href="/test" className="font-medium hover:text-primary-strong">
           Take a practice test →
         </Link>
       ),
@@ -440,7 +440,7 @@ export function Dashboard() {
             ) : (
               <>
                 <p className="mt-2 text-4xl font-bold tracking-tight text-muted">—</p>
-                <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary hover:underline">
+                <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary-strong hover:underline">
                   take a practice test →
                 </Link>
               </>
@@ -457,7 +457,7 @@ export function Dashboard() {
                   {stats.streak}
                   <span className="ml-1.5 text-base font-medium text-muted">{stats.streak === 1 ? "day" : "days"}</span>
                 </p>
-                <p className={stats.streak > 0 && !stats.today ? "mt-1 text-[13px] font-medium text-accent" : tile}>
+                <p className={stats.streak > 0 && !stats.today ? "mt-1 text-[13px] font-medium text-primary-strong" : tile}>
                   {stats.today ? "kept today ✓" : stats.streak > 0 ? `ends in ${hoursToMidnight(now)} h` : "start one today"}
                 </p>
               </>
@@ -476,7 +476,7 @@ export function Dashboard() {
             {!hydrated ? (
               <Skeleton className="mt-2 h-8 w-24" />
             ) : profile.targetScore === null ? (
-              <button type="button" onClick={openPlan} className="mt-2 w-fit text-left font-semibold text-primary hover:underline">
+              <button type="button" onClick={openPlan} className="mt-2 w-fit text-left font-semibold text-primary-strong hover:underline">
                 Set a target score →
               </button>
             ) : (

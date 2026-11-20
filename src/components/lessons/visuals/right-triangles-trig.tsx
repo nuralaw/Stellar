@@ -21,9 +21,9 @@ const css = `
 @keyframes v-right-triangles-trig-adj { 0%, 48% { stroke: ${C.ink} } 54%, 100% { stroke: ${C.primary} } }
 
 .v-right-triangles-trig-n3 { animation-name: v-right-triangles-trig-n3; }
-@keyframes v-right-triangles-trig-n3 { 0%, 26% { fill: ${C.ink} } 31%, 100% { fill: ${C.primary} } }
+@keyframes v-right-triangles-trig-n3 { 0%, 26% { fill: ${C.ink} } 31%, 100% { fill: ${C.primaryText} } }
 .v-right-triangles-trig-n5 { animation-name: v-right-triangles-trig-n5; }
-@keyframes v-right-triangles-trig-n5 { 0%, 26% { fill: ${C.ink} } 31%, 64% { fill: ${C.primary} } 70%, 100% { fill: ${C.ink} } }
+@keyframes v-right-triangles-trig-n5 { 0%, 26% { fill: ${C.ink} } 31%, 64% { fill: ${C.primaryText} } 70%, 100% { fill: ${C.ink} } }
 
 .v-right-triangles-trig-sin { animation-name: v-right-triangles-trig-sin; }
 @keyframes v-right-triangles-trig-sin { 0%, 24% { opacity: 0; transform: translateX(-8px) } 31%, 100% { opacity: 1; transform: none } }
@@ -55,7 +55,7 @@ export default function Visual() {
           <text x={59} y={129} fontSize={12} fontWeight={600} fill={C.muted}>
             θ
           </text>
-          <text className="v-right-triangles-trig-a v-right-triangles-trig-n3" x={159} y={94} fontSize={15} fontWeight={700} fill={C.primary}>
+          <text className="v-right-triangles-trig-a v-right-triangles-trig-n3" x={159} y={94} fontSize={15} fontWeight={700} fill={C.primaryText}>
             3
           </text>
           <text className="v-right-triangles-trig-a v-right-triangles-trig-n5" x={80} y={80} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.ink}>
@@ -74,10 +74,10 @@ export default function Visual() {
           className="v-right-triangles-trig-a v-right-triangles-trig-draw v-right-triangles-trig-hyp"
           x1={148} y1={44} x2={28} y2={134} pathLength={100} stroke={C.ink} strokeWidth={2.5}
         />
-        <text className="v-right-triangles-trig-a v-right-triangles-trig-q" x={88} y={153} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primary}>
+        <text className="v-right-triangles-trig-a v-right-triangles-trig-q" x={88} y={153} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primaryText}>
           ?
         </text>
-        <text className="v-right-triangles-trig-a v-right-triangles-trig-four" x={88} y={153} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primary}>
+        <text className="v-right-triangles-trig-a v-right-triangles-trig-four" x={88} y={153} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primaryText}>
           4
         </text>
 

@@ -81,7 +81,7 @@ export function ReportsByQuestion({ reports: given, onChange }: { reports?: Repo
               <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-2">
                 <div className="min-w-0">
                   {q ? (
-                    <Link href={practiceHref(q)} target="_blank" className="font-semibold break-words hover:text-accent">
+                    <Link href={practiceHref(q)} target="_blank" className="font-semibold break-words hover:text-primary-strong">
                       {questionTitle(g.reports[0])}
                     </Link>
                   ) : (
@@ -115,7 +115,7 @@ export function ReportsByQuestion({ reports: given, onChange }: { reports?: Repo
                 {g.reports.map((r) => (
                   <li key={r.id} className="py-3 first:pt-1 last:pb-0">
                     <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                      <span className="text-sm font-medium text-accent">{REPORT_REASONS[r.reason] ?? r.reason}</span>
+                      <span className="text-sm font-medium text-primary-strong">{REPORT_REASONS[r.reason] ?? r.reason}</span>
                       <time className="text-[13px] text-muted">{when(r.at)}</time>
                     </div>
                     {r.locked ? (
@@ -144,7 +144,7 @@ export function ReportsByQuestion({ reports: given, onChange }: { reports?: Repo
 
 function ContactChip({ href, icon, name }: { href: string; icon: string; name: string }) {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="inline-flex max-w-full items-center gap-1.5 rounded-lg bg-surface-2 px-2.5 py-1 text-[13px] hover:text-accent">
+    <a href={href} target="_blank" rel="noreferrer" className="inline-flex max-w-full items-center gap-1.5 rounded-lg bg-surface-2 px-2.5 py-1 text-[13px] hover:text-primary-strong">
       <Icon d={icon} className="h-3.5 w-3.5 shrink-0 text-muted" />
       <span className="truncate">@{name}</span>
     </a>

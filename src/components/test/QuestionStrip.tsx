@@ -11,7 +11,7 @@ export interface StripItem {
 
 const DIFF: Record<Difficulty, { label: string; dot: string; bar: string; chip: string }> = {
   easy: { label: "Easy", dot: "bg-success", bar: "group-hover:bg-success/70", chip: "bg-success-soft text-success" },
-  medium: { label: "Medium", dot: "bg-accent", bar: "group-hover:bg-accent/75", chip: "bg-accent-soft text-accent" },
+  medium: { label: "Medium", dot: "bg-accent", bar: "group-hover:bg-accent/75", chip: "bg-accent-soft text-primary-strong" },
   hard: { label: "Hard", dot: "bg-danger", bar: "group-hover:bg-danger/70", chip: "bg-danger-soft text-danger" },
 };
 

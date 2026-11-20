@@ -55,11 +55,11 @@ export default function Visual() {
         {/* the two sides sin(A) gives */}
         <g className={cls("opp")}>
           <line x1={B.x} y1={B.y} x2={Cc.x} y2={Cc.y} stroke={C.primary} strokeWidth={4} />
-          <text x={B.x - 8} y={(B.y + Cc.y) / 2 + 5} textAnchor="end" fontSize={16} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={B.x - 8} y={(B.y + Cc.y) / 2 + 5} textAnchor="end" fontSize={16} fontWeight={700} fill={C.primaryText} stroke="none">
             8
           </text>
         </g>
-        <text className={cls("hyp")} x={(A.x + Cc.x) / 2 + 12} y={(A.y + Cc.y) / 2 - 8} fontSize={16} fontWeight={700} fill={C.primary} stroke="none">
+        <text className={cls("hyp")} x={(A.x + Cc.x) / 2 + 12} y={(A.y + Cc.y) / 2 - 8} fontSize={16} fontWeight={700} fill={C.primaryText} stroke="none">
           17
         </text>
         {/* the missing side */}
@@ -85,7 +85,7 @@ export default function Visual() {
             = 15
           </text>
         </g>
-        <text className={cls("s3")} x={200} y={146} fontSize={15} fontWeight={700} fill={C.primary} stroke="none">
+        <text className={cls("s3")} x={200} y={146} fontSize={15} fontWeight={700} fill={C.primaryText} stroke="none">
           tan(A) = 8/15
         </text>
       </g>

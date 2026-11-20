@@ -2,7 +2,7 @@ import "server-only";
 import { freeFacts, lessonFacts, testFacts, type FreeFacts, type LessonFacts, type TestFacts } from "./plus-facts";
 import { getVocabWords } from "./vocab";
 
-// Numbers and the sample word shown on /register and /login (Features and Pricing tabs). Static pages only
+// Numbers and the sample word shown on the landing page (Features, Pricing), /plus and the /register art. Static pages only
 // (freeFacts reads the bank at build time). Every number comes from the data, never typed in by hand.
 
 export interface AuthFacts {

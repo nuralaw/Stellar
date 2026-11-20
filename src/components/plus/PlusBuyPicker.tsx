@@ -15,14 +15,14 @@ import { useHydrated, useProfile } from "@/lib/store";
 import { LaunchSentence, useToday } from "./PlusPersonal";
 import { BTN_LIQUID, BTN_PRIMARY, BTN_SECONDARY, FOCUS } from "./styles";
 
-// The plan picker of /plus: the Pricing tab's switch sits in the Plus header row (<PlusBuyPicker>) and the buy row is the
+// The plan picker of /plus: the landing page's Pricing switch sits in the Plus header row (<PlusBuyPicker>) and the buy row is the
 // footer of the Plus area (<PlusBuyFooter>). They share the chosen plan through <PlusBuyProvider>. Checkout is Gumroad
 // (plain link, same tab); the buyer's account id, email and (for the pass) SAT date ride along in the URL (checkoutHref).
 
 const pl = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 const OPTION_DATE: Intl.DateTimeFormatOptions = { month: "short", day: "numeric", year: "numeric" };
 const SHORT_DATE: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
-const DISABLED = "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-primary-strong";
+const DISABLED = "disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-primary";
 const FOOTER = "mt-4 flex flex-wrap content-start items-center gap-3 border-t border-line pt-4";
 const NOTE = "text-[13px] text-muted sm:ml-auto";
 

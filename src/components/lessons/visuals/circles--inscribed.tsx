@@ -76,9 +76,9 @@ export default function Visual() {
         {/* the numbers */}
         <text className={cls("e1")} x={194} y={46} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>∠ACB = 40°</text>
         <text className={cls("e1")} x={194} y={64} fontSize={11} fill={C.muted} {...lab}>on the circle</text>
-        <text className={cls("e2")} x={194} y={98} fontSize={14} fontWeight={700} fill={C.primary} {...lab}>∠AOB = 80°</text>
+        <text className={cls("e2")} x={194} y={98} fontSize={14} fontWeight={700} fill={C.primaryText} {...lab}>∠AOB = 80°</text>
         <text className={cls("e2")} x={194} y={116} fontSize={11} fill={C.muted} {...lab}>2 × 40°</text>
-        <text className={cls("e3")} x={194} y={146} fontSize={14} fontWeight={700} fill={C.primary} {...lab}>arc = 80/360</text>
+        <text className={cls("e3")} x={194} y={146} fontSize={14} fontWeight={700} fill={C.primaryText} {...lab}>arc = 80/360</text>
       </g>
     </Svg>
   );

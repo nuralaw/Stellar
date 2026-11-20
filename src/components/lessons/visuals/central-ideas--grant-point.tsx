@@ -39,14 +39,14 @@ export default function Visual() {
         {/* The turn */}
         <g className={`v-central-ideas--grant-point-a v-central-ideas--grant-point-but`}>
           <rect x={136} y={66} width={48} height={24} rx={12} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={160} y={83} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={160} y={83} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             but
           </text>
         </g>
 
         {/* The point */}
         <g className={`v-central-ideas--grant-point-a v-central-ideas--grant-point-point`}>
-          <text x={16} y={110} fontSize={11} fontWeight={600} fill={C.primary}>
+          <text x={16} y={110} fontSize={11} fontWeight={600} fill={C.primaryText}>
             …then makes the point
           </text>
           <rect className={`v-central-ideas--grant-point-a v-central-ideas--grant-point-pointBox`} x={16} y={116} width={288} height={30} rx={8} strokeWidth={1.5} />
@@ -56,7 +56,7 @@ export default function Visual() {
         </g>
 
         <g className={`v-central-ideas--grant-point-a v-central-ideas--grant-point-main`}>
-          <text x={160} y={166} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+          <text x={160} y={166} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
             main idea = the point
           </text>
         </g>

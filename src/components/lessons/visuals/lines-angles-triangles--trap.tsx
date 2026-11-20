@@ -54,7 +54,7 @@ export default function Visual() {
         {/* the acute angle (x + 10)°, between the line going right and the transversal */}
         <g className={cls("ac")}>
           <path d={wedge(P1, 20, -TH, 0)} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={f(P1.x + 28)} y={f(P1.y - 14)} fontSize={12} fontWeight={700} fill={C.primary} {...lab}>(x + 10)°</text>
+          <text x={f(P1.x + 28)} y={f(P1.y - 14)} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>(x + 10)°</text>
         </g>
         {/* the obtuse angle (4x − 30)° on the other side of the transversal */}
         <g className={cls("ob")}>
@@ -73,7 +73,7 @@ export default function Visual() {
           <text x={186} y={110} fontSize={13} fontWeight={700} fill={C.ink}>5x − 20 = 180</text>
           <text x={186} y={130} fontSize={13} fontWeight={700} fill={C.ink}>x = 40</text>
         </g>
-        <text className={cls("fin")} x={186} y={154} fontSize={13} fontWeight={700} fill={C.primary} {...lab}>50° and 130°</text>
+        <text className={cls("fin")} x={186} y={154} fontSize={13} fontWeight={700} fill={C.primaryText} {...lab}>50° and 130°</text>
       </g>
     </Svg>
   );

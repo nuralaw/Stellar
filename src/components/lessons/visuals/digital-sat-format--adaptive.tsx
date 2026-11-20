@@ -33,8 +33,8 @@ const css = `
 @keyframes v-digital-sat-format--adaptive-hard { 0%, 68% { fill: ${C.fill}; stroke: ${C.line} } 73%, 100% { fill: ${C.soft}; stroke: ${C.primary} } }
 .v-digital-sat-format--adaptive-f2 { transform-box: fill-box; transform-origin: left center; animation-name: v-digital-sat-format--adaptive-f2; }
 @keyframes v-digital-sat-format--adaptive-f2 { 0%, 70% { transform: scaleX(0) } 82%, 100% { transform: scaleX(1) } }
-.v-digital-sat-format--adaptive-top { fill: ${C.primary}; animation-name: v-digital-sat-format--adaptive-top; }
-@keyframes v-digital-sat-format--adaptive-top { 0%, 80% { fill: ${C.muted} } 84%, 100% { fill: ${C.primary} } }
+.v-digital-sat-format--adaptive-top { fill: ${C.primaryText}; animation-name: v-digital-sat-format--adaptive-top; }
+@keyframes v-digital-sat-format--adaptive-top { 0%, 80% { fill: ${C.muted} } 84%, 100% { fill: ${C.primaryText} } }
 `;
 
 const DOTS = [33, 47, 61, 75];
@@ -65,7 +65,7 @@ export default function Visual() {
         {/* Routes */}
         <path className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-r1" d="M92 100 C130 100 128 134 166 134" pathLength={100} fill="none" stroke={C.muted} strokeWidth={2.5} />
         <path className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-r2" d="M92 80 C130 80 128 46 166 46" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2.5} />
-        <text className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-more" x={94} y={40} fontSize={11} fontWeight={600} fill={C.primary}>
+        <text className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-more" x={94} y={40} fontSize={11} fontWeight={600} fill={C.primaryText}>
           more right
         </text>
         <text className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-few" x={94} y={149} fontSize={11} fontWeight={600} fill={C.muted}>

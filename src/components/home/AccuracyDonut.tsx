@@ -76,7 +76,7 @@ export function AccuracyDonut({ correct, wrong }: { correct: number; wrong: numb
             onPointerLeave={() => setHover(null)}
             className={`lesson-in flex items-center gap-3 rounded-xl px-3 py-2 transition-colors ${hover === p.key ? "bg-surface-2" : ""}`}
           >
-            <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full text-white" style={{ background: p.color }} aria-hidden="true">
+            <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full text-primary-ink" style={{ background: p.color }} aria-hidden="true">
               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={2.8} strokeLinecap="round" strokeLinejoin="round">
                 <path d={p.icon} />
               </svg>

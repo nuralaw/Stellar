@@ -75,7 +75,7 @@ export default function Visual() {
         </g>
         <path className={`v-words-in-context--contrast-side-a v-words-in-context--contrast-side-arc1`} d="M109 52 Q177 12 246 54" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
         <g className={`v-words-in-context--contrast-side-a v-words-in-context--contrast-side-t1`}>
-          <text x={177} y={30} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={177} y={30} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             opposite sides: opposite
           </text>
         </g>
@@ -93,7 +93,7 @@ export default function Visual() {
         </g>
         <path className={`v-words-in-context--contrast-side-a v-words-in-context--contrast-side-arc2`} d="M41 126 Q96 96 151 126" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
         <g className={`v-words-in-context--contrast-side-a v-words-in-context--contrast-side-t2`}>
-          <text x={96} y={104} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={96} y={104} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             same side: same
           </text>
         </g>

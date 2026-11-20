@@ -59,7 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* On /register and /login (bare pages) AppShell leaves out the theme switch, the sidebar padding and the footer. */}
         <AppShell
           // Desktop theme switch, top-right corner (mobile one lives in the top bar)
-          toggle={<ThemeToggle className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />}
+          toggle={<ThemeToggle data-chrome className="fixed top-4 right-4 z-30 hidden border border-line bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface-2 lg:grid focus-mode:hidden!" />}
           footer={<SiteFooter />}
           backdrop={<StarBackdrop variant="app" />}
         >

@@ -48,7 +48,7 @@ export default function Visual() {
       <g className={`${A} ${SCENE}`}>
         {BUCKETS.map((b) => (
           <g key={b.head}>
-            <text x={b.x + BW / 2} y={32} textAnchor="middle" fontSize={17} fontWeight={700} fill={C.primary}>
+            <text x={b.x + BW / 2} y={32} textAnchor="middle" fontSize={17} fontWeight={700} fill={C.primaryText}>
               {b.head}
             </text>
             <text x={b.x + BW / 2} y={48} textAnchor="middle" fontSize={11} fill={C.muted}>

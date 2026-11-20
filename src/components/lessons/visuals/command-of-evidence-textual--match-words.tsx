@@ -7,8 +7,8 @@ const P = "v-command-of-evidence-textual--match-words-";
 
 const show = (n: string, t: number) => `.${P}${n} { animation-name: ${P}${n}; }
 @keyframes ${P}${n} { 0%, ${t}% { opacity: 0; transform: translateY(6px) } ${t + 6}%, 100% { opacity: 1; transform: none } }`;
-const hl = (n: string, t: number) => `.${P}${n} { fill: ${C.primary}; font-weight: 700; animation-name: ${P}${n}; }
-@keyframes ${P}${n} { 0%, ${t}% { fill: ${C.ink}; font-weight: 600 } ${t + 5}%, 100% { fill: ${C.primary}; font-weight: 700 } }`;
+const hl = (n: string, t: number) => `.${P}${n} { fill: ${C.primaryText}; font-weight: 700; animation-name: ${P}${n}; }
+@keyframes ${P}${n} { 0%, ${t}% { fill: ${C.ink}; font-weight: 600 } ${t + 5}%, 100% { fill: ${C.primaryText}; font-weight: 700 } }`;
 
 const css = `
 .v-command-of-evidence-textual--match-words-a { animation: 10s ease-in-out infinite; }
@@ -29,7 +29,7 @@ function Part({ x, n, word }: { x: number; n: string; word: string }) {
     <>
       <rect x={x} y={10} width={112} height={28} rx={14} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
       <circle cx={x + 16} cy={24} r={8} fill={C.primary} />
-      <text x={x + 16} y={28} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.bg}>
+      <text x={x + 16} y={28} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.onPrimary}>
         {n}
       </text>
       <text x={x + 30} y={29} fontSize={13} fontWeight={700} fill={C.ink}>

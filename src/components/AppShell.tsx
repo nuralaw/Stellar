@@ -14,7 +14,7 @@ export function AppShell({ toggle, footer, backdrop, children }: { toggle: React
     <>
       {!bare && backdrop}
       {!bare && toggle}
-      <div className={`flex min-h-screen flex-col ${bare ? "" : "transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px] focus-mode:pl-0!"}`}>
+      <div data-shell={bare ? undefined : ""} className={`flex min-h-screen flex-col ${bare ? "" : "transition-[padding] duration-200 ease-out lg:pl-64 lg:sb-collapsed:pl-[72px] focus-mode:pl-0!"}`}>
         <main className="flex-1">{children}</main>
         {!bare && footer}
       </div>

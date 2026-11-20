@@ -150,7 +150,7 @@ export default function Visual() {
             <text className="v-one-var-data-a v-one-var-data-m6" x={MID + 13} y={145} {...val} fill={C.ink}>
               6
             </text>
-            <text className="v-one-var-data-a v-one-var-data-m8" x={MID + 13} y={145} {...val} fill={C.primary}>
+            <text className="v-one-var-data-a v-one-var-data-m8" x={MID + 13} y={145} {...val} fill={C.primaryText}>
               <tspan fill={C.muted}>6</tspan>
               <tspan fill={C.muted} fontWeight={500}>
                 {" "}

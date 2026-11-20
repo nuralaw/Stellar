@@ -53,7 +53,7 @@ const Angles = ({ c }: { c: { x: number; y: number } }) => (
     {QUADS.map((q) => {
       const l = label(c, q);
       return (
-        <text key={`t${q.a0}`} x={l.x} y={l.y} textAnchor="middle" fontSize={11} fontWeight={700} fill={q.big ? C.ink : C.primary} stroke="none">
+        <text key={`t${q.a0}`} x={l.x} y={l.y} textAnchor="middle" fontSize={11} fontWeight={700} fill={q.big ? C.ink : C.primaryText} stroke="none">
           {q.big ? 110 : 70}°
         </text>
       );
@@ -90,7 +90,7 @@ export default function Visual() {
         {/* key */}
         <g className={cls("k1")} stroke="none">
           <rect x={206} y={44} width={12} height={12} rx={3} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={224} y={55} fontSize={14} fontWeight={700} fill={C.primary}>70° × 4</text>
+          <text x={224} y={55} fontSize={14} fontWeight={700} fill={C.primaryText}>70° × 4</text>
           <rect x={206} y={68} width={12} height={12} rx={3} fill={C.fill} stroke={C.ink} strokeWidth={1.5} />
           <text x={224} y={79} fontSize={14} fontWeight={700} fill={C.ink}>110° × 4</text>
         </g>

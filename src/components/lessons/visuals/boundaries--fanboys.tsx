@@ -57,7 +57,7 @@ export default function Visual() {
         {LETTERS.map((l, i) => (
           <g key={l}>
             <g className={`${A} ${LET + i}`}>
-              <text x={X0 + i * DX} y={36} textAnchor="middle" fontSize={26} fontWeight={700} fill={C.primary}>
+              <text x={X0 + i * DX} y={36} textAnchor="middle" fontSize={26} fontWeight={700} fill={C.primaryText}>
                 {l}
               </text>
             </g>
@@ -81,7 +81,7 @@ export default function Visual() {
           </text>
         </g>
         <g className={`${A} ${COMMA}`}>
-          <text x={121} y={108} textAnchor="middle" fontSize={50} fontWeight={700} fill={C.primary}>
+          <text x={121} y={108} textAnchor="middle" fontSize={50} fontWeight={700} fill={C.primaryText}>
             ,
           </text>
         </g>
@@ -96,7 +96,7 @@ export default function Visual() {
         <g className={`${A} ${EX}`}>
           <text x={160} y={150} textAnchor="middle" fontSize={16} fontWeight={600} fill={C.ink}>
             It rained
-            <tspan fill={C.primary} fontSize={24} fontWeight={700}>
+            <tspan fill={C.primaryText} fontSize={24} fontWeight={700}>
               ,
             </tspan>
             <tspan fill={C.good} fontWeight={700}>

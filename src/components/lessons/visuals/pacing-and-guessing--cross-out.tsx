@@ -105,7 +105,7 @@ export default function Visual() {
         <text className={`${A} ${ODDS1}`} x={160} y={162} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.ink}>
           Guess: 1 in 4
         </text>
-        <text className={`${A} ${ODDS2}`} x={160} y={162} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.primary}>
+        <text className={`${A} ${ODDS2}`} x={160} y={162} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.primaryText}>
           Guess: 1 in 2
         </text>
       </g>

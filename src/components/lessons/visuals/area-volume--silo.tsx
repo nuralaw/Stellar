@@ -53,7 +53,7 @@ export default function Visual() {
         </g>
         <g className={cls("p2")} {...lab}>
           <text x={168} y={100} fontSize={11} fill={C.muted}>hemisphere: half a sphere</text>
-          <text x={168} y={118} fontSize={13} fontWeight={700} fill={C.primary}>½ × 36π = 18π</text>
+          <text x={168} y={118} fontSize={13} fontWeight={700} fill={C.primaryText}>½ × 36π = 18π</text>
         </g>
         <text className={cls("p3")} x={168} y={148} fontSize={16} fontWeight={700} fill={C.ink} {...lab}>total 108π</text>
       </g>

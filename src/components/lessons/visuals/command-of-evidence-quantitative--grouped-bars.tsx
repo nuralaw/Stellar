@@ -95,10 +95,10 @@ export default function Visual() {
         <g className={`v-command-of-evidence-quantitative--grouped-bars-a v-command-of-evidence-quantitative--grouped-bars-sun`}>
           <path d={`M104 ${BASE - 95 * K} H212 M158 ${BASE - 60 * K} H212`} fill="none" stroke={C.primary} strokeWidth={1} strokeDasharray="3 3" />
           <path d={`M206 ${BASE - 95 * K} H214 V${BASE - 60 * K} H206`} fill="none" stroke={C.primary} strokeWidth={2} />
-          <text x={222} y={BASE - 78 * K - 4} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={222} y={BASE - 78 * K - 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
             sun:
           </text>
-          <text x={222} y={BASE - 78 * K + 12} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={222} y={BASE - 78 * K + 12} fontSize={12} fontWeight={700} fill={C.primaryText}>
             about 35 cm
           </text>
         </g>

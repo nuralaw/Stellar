@@ -206,7 +206,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
               <span className="hidden sm:inline">Lessons</span>
             </Link>
             <span className="hidden h-5 w-px bg-line sm:block" aria-hidden="true" />
-            <button type="button" onClick={() => go(0)} disabled={pos === 0} className="min-w-0 truncate rounded-lg px-1 py-1 text-left text-sm font-semibold hover:text-primary disabled:hover:text-ink" title="All parts of this lesson">
+            <button type="button" onClick={() => go(0)} disabled={pos === 0} className="min-w-0 truncate rounded-lg px-1 py-1 text-left text-sm font-semibold hover:text-primary-strong disabled:hover:text-ink" title="All parts of this lesson">
               {lesson.title}
               {part && <span className="font-normal text-muted"> · {part.title}</span>}
             </button>
@@ -222,7 +222,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
                 aria-pressed={calcOpen}
                 title={calcOpen ? "Hide calculator" : "Open Desmos calculator"}
                 className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 text-sm font-semibold transition-colors ${
-                  calcOpen ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface text-ink hover:bg-surface-2"
+                  calcOpen ? "border-primary bg-primary-soft text-primary-strong" : "border-line bg-surface text-ink hover:bg-surface-2"
                 }`}
               >
                 <Icon d={I.calculator} className="h-4.5 w-4.5" />
@@ -265,7 +265,7 @@ export function LessonPlayer({ lesson, visual, stepVisuals }: { lesson: PlayerLe
           ) : step && part ? (
             <div key={pos} className="lesson-in flex min-h-[calc(100dvh-8rem)] flex-col">
               <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold tracking-wide uppercase tabular-nums">
-                <span key={k} className={`rounded-full px-2 py-0.5 ${pos - 1 === part.start ? "lesson-pop bg-primary text-primary-ink" : "bg-primary-soft text-primary"}`}>
+                <span key={k} className={`rounded-full px-2 py-0.5 ${pos - 1 === part.start ? "lesson-pop bg-primary text-primary-ink" : "bg-primary-soft text-primary-strong"}`}>
                   Part {k + 1} of {parts.length}
                 </span>
                 <span className="text-muted">
@@ -434,7 +434,7 @@ function Overview({
     <div className="flex min-h-[calc(100dvh-8rem)] flex-col">
       <div className="mx-auto w-full max-w-2xl">
         <div className="text-center">
-          <p className="lesson-in text-sm font-medium text-primary">{lesson.where}</p>
+          <p className="lesson-in text-sm font-medium text-primary-strong">{lesson.where}</p>
           <h1 className="lesson-in mt-1 text-3xl font-bold tracking-tight [animation-delay:60ms] md:text-4xl">{lesson.title}</h1>
         </div>
         {visual && (
@@ -473,7 +473,7 @@ function Overview({
                     {done ? <Icon d={I.check} className="h-4 w-4" strokeWidth={3} /> : i + 1}
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block leading-snug font-semibold group-hover:text-primary">{p.title}</span>
+                    <span className="block leading-snug font-semibold group-hover:text-primary-strong">{p.title}</span>
                     {p.tagline && <span className="mt-0.5 block text-sm leading-snug text-muted">{p.tagline}</span>}
                   </span>
                   <span className="shrink-0 text-xs text-muted tabular-nums">{count === 1 ? "1 step" : `${count} steps`}</span>

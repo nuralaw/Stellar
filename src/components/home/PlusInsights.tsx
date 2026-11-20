@@ -58,7 +58,7 @@ function Predicted({ history, target }: { history: TestResult[]; target: number 
       ) : (
         <div className="mt-4 grid h-36 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
           <p className="text-sm text-muted">Take a practice test to get a prediction.</p>
-          <Link href="/test" className="mt-2 text-sm font-semibold text-primary hover:underline">
+          <Link href="/test" className="mt-2 text-sm font-semibold text-primary-strong hover:underline">
             Practice tests →
           </Link>
         </div>
@@ -91,7 +91,7 @@ function WeakSkills({ stats }: { stats: Stats }) {
                 title={`Practice ${s.skill.name}`}
               >
                 <span className="min-w-0 flex-1">
-                  <span className="block truncate text-sm font-medium group-hover:text-primary">{s.skill.name}</span>
+                  <span className="block truncate text-sm font-medium group-hover:text-primary-strong">{s.skill.name}</span>
                   <span className="text-xs text-muted tabular-nums">
                     {s.accuracy}% · {s.correct}/{s.answered} correct
                   </span>
@@ -107,7 +107,7 @@ function WeakSkills({ stats }: { stats: Stats }) {
       ) : (
         <div className="mt-4 grid h-36 place-content-center rounded-xl border border-dashed border-line px-6 text-center">
           <p className="text-sm text-muted">Answer {MIN_ANSWERED}+ questions in a skill and your weakest ones show up here.</p>
-          <Link href="/practice" className="mt-2 text-sm font-semibold text-primary hover:underline">
+          <Link href="/practice" className="mt-2 text-sm font-semibold text-primary-strong hover:underline">
             Start practicing →
           </Link>
         </div>

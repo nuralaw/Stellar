@@ -84,14 +84,14 @@ export default function Visual() {
           />
         ))}
         {GROUPS.map((g, gi) => (
-          <text key={g.name} x={g.one ? groupX[gi] - 8 : gi === 3 ? 302 : groupX[gi]} y={126} textAnchor={gi === 3 ? "end" : "middle"} fontSize={11} fontWeight={600} fill={g.one ? C.primary : C.muted}>
+          <text key={g.name} x={g.one ? groupX[gi] - 8 : gi === 3 ? 302 : groupX[gi]} y={126} textAnchor={gi === 3 ? "end" : "middle"} fontSize={11} fontWeight={600} fill={g.one ? C.primaryText : C.muted}>
             {g.name}
           </text>
         ))}
 
         {/* The point */}
         <g className={`${A} ${TAG}`}>
-          <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+          <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
             Conventions: one easy-to-hard climb
           </text>
         </g>

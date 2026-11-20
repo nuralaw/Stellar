@@ -83,7 +83,7 @@ function DateMenu({ value, today, label, className }: { value: string | null; to
                     className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition-colors ${on ? "bg-primary-soft" : "hover:bg-surface-2"}`}
                   >
                     <span className="min-w-0 flex-1">
-                      <span className={`block text-sm font-semibold ${on ? "text-primary" : ""}`}>
+                      <span className={`block text-sm font-semibold ${on ? "text-primary-strong" : ""}`}>
                         {formatIsoDate(d.date, { weekday: "short", month: "long", day: "numeric", year: "numeric" })}
                       </span>
                       <span className="block text-xs text-muted">
@@ -92,7 +92,7 @@ function DateMenu({ value, today, label, className }: { value: string | null; to
                       </span>
                     </span>
                     {on && (
-                      <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-primary" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-primary-strong" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M5 12.5l4.5 4.5L19 7" />
                       </svg>
                     )}
@@ -123,7 +123,7 @@ export function Countdown({ testDate, testTimeZone }: { testDate: string | null;
     <p className="mt-1 text-sm text-muted">
       Time zone: {where}
       {testTimeZone ? "" : " · from your device"}{" "}
-      <Link href="/profile#test-location" className="font-medium text-primary hover:underline">
+      <Link href="/profile#test-location" className="font-medium text-primary-strong hover:underline">
         Change
       </Link>
     </p>
@@ -189,7 +189,7 @@ export function Countdown({ testDate, testTimeZone }: { testDate: string | null;
             Doors close at {startText} local time{!sameZone && <> · {yourTime} on this device</>}
           </p>
           {location}
-          {!official && <p className="mt-2 text-xs text-accent">This isn&apos;t an official SAT weekend date. Check it on the College Board website.</p>}
+          {!official && <p className="mt-2 text-xs text-primary-strong">This isn&apos;t an official SAT weekend date. Check it on the College Board website.</p>}
           {official?.register && official.register >= today && left > 0 && (
             <p className="mt-2 text-xs text-muted">Registration deadline: {formatIsoDate(official.register, { month: "long", day: "numeric" })}</p>
           )}
@@ -202,11 +202,11 @@ export function Countdown({ testDate, testTimeZone }: { testDate: string | null;
             ))}
           </div>
         ) : !testOver ? (
-          <p className="text-2xl font-bold tracking-tight text-primary">Test day — good luck! 🍀</p>
+          <p className="text-2xl font-bold tracking-tight text-primary-strong">Test day — good luck! 🍀</p>
         ) : (
           <div className="lg:text-right">
             <p className="font-semibold">This test date has passed.</p>
-            <DateMenu value={testDate} today={today} label="Pick your next date →" className="mt-2 text-sm font-semibold text-primary hover:underline" />
+            <DateMenu value={testDate} today={today} label="Pick your next date →" className="mt-2 text-sm font-semibold text-primary-strong hover:underline" />
           </div>
         )}
       </div>

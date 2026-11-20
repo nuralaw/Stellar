@@ -5,7 +5,7 @@ import { I, Icon } from "@/components/bank/icons";
 import { FOCUS_ON_DARK, PLUS_SURFACE } from "@/components/plus/styles";
 import { CarouselSlides, CarouselTimer, useCarousel } from "./carousel";
 
-// Pricing tab of /register and /login: what Plus adds. Left: a list of benefits (the active one expands and carries the
+// Landing page Pricing section and /plus: what Plus adds. Left: a list of benefits (the active one expands and carries the
 // autoplay timer); right: a dark preview of it with a Free -> Plus comparison. State machine: ./carousel.
 
 export interface Benefit {
@@ -59,7 +59,7 @@ export function PlusShowcase({ benefits }: { benefits: Benefit[] }) {
           <span aria-hidden="true" className="leading-none text-side-ink/60">
             ↓
           </span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 font-semibold text-side">
+          <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 font-semibold text-primary-ink">
             <Icon d={I.star} filled className="h-3 w-3" />
             Plus: {b.plus}
           </span>
@@ -94,7 +94,7 @@ export function PlusShowcase({ benefits }: { benefits: Benefit[] }) {
               >
                 <span className="flex items-center gap-3">
                   <span
-                    className={`grid h-7 w-7 shrink-0 place-items-center rounded-lg transition-colors ${active ? "bg-primary-strong text-primary-ink" : "bg-primary/10 text-primary-strong"}`}
+                    className={`grid h-7 w-7 shrink-0 place-items-center rounded-lg transition-colors ${active ? "bg-primary text-primary-ink" : "bg-primary/10 text-primary-strong"}`}
                   >
                     <Icon d={b.icon} className="h-3.5 w-3.5" />
                   </span>

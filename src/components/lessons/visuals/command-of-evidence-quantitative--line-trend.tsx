@@ -67,7 +67,7 @@ export default function Visual() {
           {X.map((v, i) => (
             <g key={i}>
               <circle cx={XS[i]} cy={yOf(v)} r={4.5} fill={C.primary} />
-              <text x={XS[i]} y={yOf(v) + xLabelDy[i]} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primary}>
+              <text x={XS[i]} y={yOf(v) + xLabelDy[i]} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
                 {v}
               </text>
             </g>
@@ -75,7 +75,7 @@ export default function Visual() {
         </g>
 
         <g className={`v-command-of-evidence-quantitative--line-trend-a v-command-of-evidence-quantitative--line-trend-names`}>
-          <text x={250} y={yOf(90) + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={250} y={yOf(90) + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
             Site X
           </text>
           <text x={250} y={yOf(50) + 4} fontSize={12} fontWeight={700} fill={C.ink}>
@@ -87,7 +87,7 @@ export default function Visual() {
         <g className={`v-command-of-evidence-quantitative--line-trend-a v-command-of-evidence-quantitative--line-trend-cross`}>
           <circle cx={144} cy={116} r={8} fill="none" stroke={C.primary} strokeWidth={2} />
           <path d="M144 96 V107" stroke={C.primary} strokeWidth={1.5} fill="none" />
-          <text x={150} y={92} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={150} y={92} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primaryText}>
             X passes Y
           </text>
         </g>

@@ -82,10 +82,10 @@ export default function Visual() {
         <line className="v-two-var-data-a v-two-var-data-up" x1={X(6)} y1={Y(0)} x2={X(6)} y2={Y(38)} pathLength={100} stroke={C.primary} strokeWidth={2} />
         <line className="v-two-var-data-a v-two-var-data-over" x1={X(6)} y1={Y(38)} x2={X(0)} y2={Y(38)} pathLength={100} stroke={C.primary} strokeWidth={2} />
         <circle className="v-two-var-data-a v-two-var-data-hit" cx={X(6)} cy={Y(38)} r={4.5} fill={C.primary} />
-        <text className="v-two-var-data-a v-two-var-data-x6" x={X(6)} y={161} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className="v-two-var-data-a v-two-var-data-x6" x={X(6)} y={161} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           6
         </text>
-        <text className="v-two-var-data-a v-two-var-data-ans" x={X(0) - 5} y={Y(38) + 4} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className="v-two-var-data-a v-two-var-data-ans" x={X(0) - 5} y={Y(38) + 4} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primaryText}>
           38
         </text>
 
@@ -103,7 +103,7 @@ export default function Visual() {
             predicted at x = 6
           </text>
           <text x={186} y={133} fontSize={18} fontWeight={700} fill={C.ink}>
-            3(6) + 20 = <tspan fill={C.primary}>38</tspan>
+            3(6) + 20 = <tspan fill={C.primaryText}>38</tspan>
           </text>
         </g>
       </g>

@@ -12,7 +12,7 @@ const css = `
 
 /* Beat 1: the −2 we divide by lights up and the "÷ (−2)" step appears */
 .v-linear-inequalities-coef { animation-name: v-linear-inequalities-coef; }
-@keyframes v-linear-inequalities-coef { 0%, 7% { fill: ${C.ink} } 10%, 24% { fill: ${C.primary} } 30%, 100% { fill: ${C.ink} } }
+@keyframes v-linear-inequalities-coef { 0%, 7% { fill: ${C.ink} } 10%, 24% { fill: ${C.primaryText} } 30%, 100% { fill: ${C.ink} } }
 .v-linear-inequalities-chip { transform-box: fill-box; transform-origin: center; animation-name: v-linear-inequalities-chip; }
 @keyframes v-linear-inequalities-chip { 0%, 8% { opacity: 0; transform: scale(0.7) } 14%, 100% { opacity: 1; transform: scale(1) } }
 .v-linear-inequalities-arrow { stroke-dasharray: 100; animation-name: v-linear-inequalities-arrow; }
@@ -86,7 +86,7 @@ export default function Visual() {
             ÷ (−2)
           </text>
         </g>
-        <text className="v-linear-inequalities-a v-linear-inequalities-cap" x={168} y={AX + 30} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primary}>
+        <text className="v-linear-inequalities-a v-linear-inequalities-cap" x={168} y={AX + 30} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primaryText}>
           negative → flip
         </text>
 

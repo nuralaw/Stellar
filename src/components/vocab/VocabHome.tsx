@@ -75,7 +75,7 @@ export function VocabHome({ sets, words, lists }: { sets: HomeSet[]; words: Home
         {hydrated && next && (
           <div className="lesson-in flex flex-col gap-4 rounded-2xl bg-primary-soft/50 p-5 ring-1 ring-primary/25 sm:flex-row sm:items-center sm:p-6">
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-medium text-primary">{open ? "Pick up where you left off" : totalKnown ? "Next set" : "Start here"}</p>
+              <p className="text-sm font-medium text-primary-strong">{open ? "Pick up where you left off" : totalKnown ? "Next set" : "Start here"}</p>
               <p className="mt-1 text-xl font-bold tracking-tight">
                 {next.title} <span className="text-base font-medium text-muted">· {lists.find((l) => l.id === next.list)?.label}</span>
               </p>
@@ -147,7 +147,7 @@ export function VocabHome({ sets, words, lists }: { sets: HomeSet[]; words: Home
                   }`}
                 >
                   {l.label}
-                  <span className={`rounded-full px-1.5 py-0.5 text-xs tabular-nums ${on ? "bg-primary-soft text-primary" : "bg-surface-2 text-muted"}`}>
+                  <span className={`rounded-full px-1.5 py-0.5 text-xs tabular-nums ${on ? "bg-primary-soft text-primary-strong" : "bg-surface-2 text-muted"}`}>
                     {k ? `${k}/${uniq.length}` : uniq.length}
                   </span>
                 </button>
@@ -169,7 +169,7 @@ export function VocabHome({ sets, words, lists }: { sets: HomeSet[]; words: Home
                     className="lesson-in group flex min-h-28 flex-col rounded-2xl bg-surface p-4 ring-1 ring-line transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-16px_rgb(0_0_0/0.35)] hover:ring-muted/50"
                   >
                     <div className="flex items-start justify-between gap-3">
-                      <span className="leading-snug font-semibold group-hover:text-primary">{s.title}</span>
+                      <span className="leading-snug font-semibold group-hover:text-primary-strong">{s.title}</span>
                       {done ? (
                         <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success-soft text-success" title="All known">
                           <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={3} />
@@ -179,7 +179,7 @@ export function VocabHome({ sets, words, lists }: { sets: HomeSet[]; words: Home
                       )}
                     </div>
                     <p className="mt-1 line-clamp-2 text-sm text-muted">{s.subtitle}</p>
-                    <div className="mt-auto pt-3">{k > 0 ? <Progress have={k} total={s.ids.length} /> : <span className="text-xs font-medium text-primary">Not started</span>}</div>
+                    <div className="mt-auto pt-3">{k > 0 ? <Progress have={k} total={s.ids.length} /> : <span className="text-xs font-medium text-primary-strong">Not started</span>}</div>
                   </Link>
                 );
               })}

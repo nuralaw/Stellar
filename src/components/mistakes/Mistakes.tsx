@@ -150,7 +150,7 @@ export function Mistakes() {
           <>
             <div className="flex flex-wrap gap-x-10 gap-y-3">
               {[
-                { label: "Due now", value: lists.due.length, cls: lists.due.length ? "text-primary" : "" },
+                { label: "Due now", value: lists.due.length, cls: lists.due.length ? "text-primary-strong" : "" },
                 { label: "Coming back", value: lists.upcoming.length, cls: "" },
                 { label: "Mastered", value: lists.mastered.length, cls: "" },
               ].map((s) => (
@@ -224,7 +224,7 @@ export function Mistakes() {
             >
               <span className="sm:hidden">{t.short}</span>
               <span className="hidden sm:inline">{t.label}</span>
-              <span className={`rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums ${on ? "bg-primary-soft text-primary" : "bg-surface-2 text-muted"}`}>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums ${on ? "bg-primary-soft text-primary-strong" : "bg-surface-2 text-muted"}`}>
                 {loading ? "–" : fmt(lists[t.id].length)}
               </span>
             </button>
@@ -287,7 +287,7 @@ export function Mistakes() {
                         <span className="font-medium">{skillName(it)}</span>
                         <span>· wrong {c.wrong}×</span>
                         {canReview && (
-                          <span className={`sm:hidden ${tab === "due" ? "font-semibold text-primary" : ""}`}>· {tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
+                          <span className={`sm:hidden ${tab === "due" ? "font-semibold text-primary-strong" : ""}`}>· {tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
                         )}
                       </span>
                       <span className="mt-1 line-clamp-2 text-[15px] leading-relaxed">
@@ -299,7 +299,7 @@ export function Mistakes() {
                       {canReview && (
                         <span className="flex items-center gap-2 text-xs text-muted">
                           <Steps c={c} mastered={tab === "mastered"} />
-                          <span className={tab === "due" ? "font-semibold text-primary" : ""}>{tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
+                          <span className={tab === "due" ? "font-semibold text-primary-strong" : ""}>{tab === "mastered" ? "mastered" : dueLabel(c.dueDay, now)}</span>
                         </span>
                       )}
                     </span>

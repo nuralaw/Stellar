@@ -68,13 +68,13 @@ export default function Visual() {
         <rect x={px(2)} y={107} width={px(7) - px(2)} height={28} fill={C.soft} />
       </g>
       <line className={cls("mline")} x1={px(5)} y1={107} x2={px(5)} y2={135} stroke={C.primary} strokeWidth={3.5} />
-      <text className={cls("mtxt")} x={px(5)} y={101} fontSize={12} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("mtxt")} x={px(5)} y={101} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         median 5
       </text>
 
       {/* Range */}
       <path className={cls("rng")} d={`M${px(1)} 48 H${px(9)} M${px(1)} 43 V53 M${px(9)} 43 V53`} pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-      <text className={cls("rtxt")} x={160} y={37} fontSize={14} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("rtxt")} x={160} y={37} fontSize={14} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         range = 9 − 1 = 8
       </text>
     </Svg>

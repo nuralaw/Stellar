@@ -62,7 +62,7 @@ function Panel({ x0, same }: { x0: number; same: boolean }) {
         </text>
         <text x={x0 + 70} y={162} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.ink}>
           {same ? "x + y = 3, " : "x + y = 3, "}
-          <tspan fill={C.primary}>{same ? "2x + 2y = 6" : "x + y = 5"}</tspan>
+          <tspan fill={C.primaryText}>{same ? "2x + 2y = 6" : "x + y = 5"}</tspan>
         </text>
       </g>
     </g>

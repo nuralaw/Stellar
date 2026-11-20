@@ -4,10 +4,10 @@ import { useState, type KeyboardEvent } from "react";
 import { FOCUS } from "@/components/plus/styles";
 import { PLAN_ORDER, PLUS, discountedCents, formatPrice, priceParts, type PlanId } from "@/lib/plus-config";
 
-// Pricing tab of /register and /login: a two-way switch (Monthly / Until test day) with a sliding pill, the price beside it.
+// Landing page Pricing section and /plus: a two-way switch (Monthly / Until test day) with a sliding pill, the price beside it.
 
 /**
- * Uncontrolled by default (Pricing tab); pass `value` + `onChange` to control it (/plus keeps the choice to drive the buy button).
+ * Uncontrolled by default (landing page); pass `value` + `onChange` to control it (/plus keeps the choice to drive the buy button).
  * `discountPercent` (/plus, signed-in student with a discount) shows Monthly's first-month price, the normal one struck through.
  */
 export function PlanPicker({ value, onChange, discountPercent }: { value?: PlanId; onChange?: (id: PlanId) => void; discountPercent?: number } = {}) {

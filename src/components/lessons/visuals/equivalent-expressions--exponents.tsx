@@ -15,9 +15,9 @@ const css = `
 .v-equivalent-expressions--exponents-a { animation: 9s ease-in-out infinite; }
 ${[4, 20, 44, 66].map(fade).join("\n")}
 .v-equivalent-expressions--exponents-den { fill: ${C.ink}; animation-name: v-equivalent-expressions--exponents-den; }
-@keyframes v-equivalent-expressions--exponents-den { 0%, 18% { fill: ${C.ink} } 24%, 40% { fill: ${C.primary} } 46%, 100% { fill: ${C.ink} } }
+@keyframes v-equivalent-expressions--exponents-den { 0%, 18% { fill: ${C.ink} } 24%, 40% { fill: ${C.primaryText} } 46%, 100% { fill: ${C.ink} } }
 .v-equivalent-expressions--exponents-num { fill: ${C.ink}; animation-name: v-equivalent-expressions--exponents-num; }
-@keyframes v-equivalent-expressions--exponents-num { 0%, 42% { fill: ${C.ink} } 48%, 62% { fill: ${C.primary} } 68%, 100% { fill: ${C.ink} } }
+@keyframes v-equivalent-expressions--exponents-num { 0%, 42% { fill: ${C.ink} } 48%, 62% { fill: ${C.primaryText} } 68%, 100% { fill: ${C.ink} } }
 `;
 const a = `${P}a`;
 const den = `${P}den`;

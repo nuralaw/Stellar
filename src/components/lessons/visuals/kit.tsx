@@ -18,6 +18,10 @@ export const C = {
   fill: "var(--surface-2)",
   /** The one accent: the thing to look at right now. */
   primary: "var(--primary)",
+  /** The accent as TEXT: AA on light surfaces (plain --primary is only 3:1 there); same orange at night. */
+  primaryText: "var(--primary-strong)",
+  /** Text drawn on a solid C.primary fill (navy in both themes; white on the day orange is only 3:1). */
+  onPrimary: "var(--primary-ink)",
   /** Soft accent fill behind a highlighted thing. */
   soft: "var(--primary-soft)",
   /** "Right" / the correct choice locking in. */

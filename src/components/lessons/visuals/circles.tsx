@@ -23,10 +23,10 @@ const css = `
   97%, 100% { transform: scale(1); opacity: 0 }
 }
 
-.v-circles-hc { fill: ${C.primary}; animation-name: v-circles-hc; }
-@keyframes v-circles-hc { 0%, 30% { fill: ${C.ink} } 34%, 90% { fill: ${C.primary} } 97%, 100% { fill: ${C.ink} } }
-.v-circles-hr { fill: ${C.primary}; animation-name: v-circles-hr; }
-@keyframes v-circles-hr { 0%, 50% { fill: ${C.ink} } 54%, 90% { fill: ${C.primary} } 97%, 100% { fill: ${C.ink} } }
+.v-circles-hc { fill: ${C.primaryText}; animation-name: v-circles-hc; }
+@keyframes v-circles-hc { 0%, 30% { fill: ${C.ink} } 34%, 90% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
+.v-circles-hr { fill: ${C.primaryText}; animation-name: v-circles-hr; }
+@keyframes v-circles-hr { 0%, 50% { fill: ${C.ink} } 54%, 90% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
 
 .v-circles-in1 { animation-name: v-circles-in1; }
 @keyframes v-circles-in1 {

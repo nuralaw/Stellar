@@ -46,7 +46,7 @@ const css = `
 .v-ratios-rates-chip { opacity: 0; animation-name: v-ratios-rates-chip; }
 @keyframes v-ratios-rates-chip { 0%, 41% { opacity: 0 } 43%, 50% { opacity: 1 } 53%, 100% { opacity: 0 } }
 .v-ratios-rates-min { fill: ${C.muted}; animation-name: v-ratios-rates-min; }
-@keyframes v-ratios-rates-min { 0%, 41% { fill: ${C.ink} } 43%, 50% { fill: ${C.primary} } 53%, 100% { fill: ${C.muted} } }
+@keyframes v-ratios-rates-min { 0%, 41% { fill: ${C.ink} } 43%, 50% { fill: ${C.primaryText} } 53%, 100% { fill: ${C.muted} } }
 .v-ratios-rates-s1 { stroke-dasharray: 100; animation-name: v-ratios-rates-s1; }
 @keyframes v-ratios-rates-s1 {
   0%, 43% { stroke-dashoffset: 100; opacity: 0 }
@@ -145,7 +145,7 @@ export default function Visual() {
             <Min x={145.5} y={83} strike="v-ratios-rates-s2" />
           </g>
         </g>
-        <text className="v-ratios-rates-a v-ratios-rates-tag1" x={107} y={124} fill={C.primary} {...TAG}>
+        <text className="v-ratios-rates-a v-ratios-rates-tag1" x={107} y={124} fill={C.primaryText} {...TAG}>
           minutes cancel
         </text>
 
@@ -157,7 +157,7 @@ export default function Visual() {
           <g className="v-ratios-rates-a v-ratios-rates-askY">
             <g className="v-ratios-rates-a v-ratios-rates-pop">
               <rect className="v-ratios-rates-a v-ratios-rates-pill" x={218.3} y={59} width={68} height={34} rx={11} strokeWidth={1.5} />
-              <text className="v-ratios-rates-a v-ratios-rates-q" x={244.1} y={83} textAnchor="middle" fontSize={20} fontWeight={700} fill={C.primary}>
+              <text className="v-ratios-rates-a v-ratios-rates-q" x={244.1} y={83} textAnchor="middle" fontSize={20} fontWeight={700} fill={C.primaryText}>
                 ?
               </text>
               <text className="v-ratios-rates-a v-ratios-rates-ans" x={257.7} y={83} textAnchor="end" {...T}>

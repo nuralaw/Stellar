@@ -41,7 +41,7 @@ const css = `
 .v-rhetorical-synthesis-tag3 { animation-name: v-rhetorical-synthesis-tag3; }
 @keyframes v-rhetorical-synthesis-tag3 { 0%, 64% { opacity: 0; transform: translateX(-6px) } 69%, 100% { opacity: 1; transform: none } }
 .v-rhetorical-synthesis-tagTxt3 { fill: ${C.good}; animation-name: v-rhetorical-synthesis-tagTxt3; }
-@keyframes v-rhetorical-synthesis-tagTxt3 { 0%, 70% { fill: ${C.primary} } 75%, 100% { fill: ${C.good} } }
+@keyframes v-rhetorical-synthesis-tagTxt3 { 0%, 70% { fill: ${C.primaryText} } 75%, 100% { fill: ${C.good} } }
 .v-rhetorical-synthesis-pop { transform-box: fill-box; transform-origin: center; animation-name: v-rhetorical-synthesis-pop; }
 @keyframes v-rhetorical-synthesis-pop { 0%, 70% { transform: scale(1) } 75% { transform: scale(1.03) } 80%, 100% { transform: scale(1) } }
 `;
@@ -61,7 +61,7 @@ export default function Visual() {
         <g className={`${A} v-rhetorical-synthesis-goal`}>
           <text x={160} y={38} textAnchor="middle" fontSize={14} fontWeight={600} fill={C.ink}>
             <tspan fill={C.muted}>Goal: </tspan>explain{" "}
-            <tspan fill={C.primary} fontWeight={700}>
+            <tspan fill={C.primaryText} fontWeight={700}>
               how
             </tspan>{" "}
             the lake formed

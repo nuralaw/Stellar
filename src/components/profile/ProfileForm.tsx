@@ -247,7 +247,7 @@ function Editor() {
         <h2 className="font-semibold">Your goal and progress</h2>
         <p className="mt-1 text-sm text-muted">
           Your target score, test date, and stats live on the{" "}
-          <Link href="/" className="font-medium text-primary hover:underline">
+          <Link href="/" className="font-medium text-primary-strong hover:underline">
             Home
           </Link>{" "}
           tab.

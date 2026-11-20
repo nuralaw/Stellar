@@ -71,7 +71,7 @@ export default function Visual() {
         </g>
         <text className={cls("p4")} x={192} y={122} fontSize={11} fill={C.muted} {...lab}>each face twice:</text>
         <text className={cls("p4")} x={192} y={142} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>2 × (6 + 8 + 12)</text>
-        <text className={cls("p4")} x={192} y={164} fontSize={19} fontWeight={700} fill={C.primary} {...lab}>= 52</text>
+        <text className={cls("p4")} x={192} y={164} fontSize={19} fontWeight={700} fill={C.primaryText} {...lab}>= 52</text>
       </g>
     </Svg>
   );

@@ -71,7 +71,7 @@ export default function Visual() {
         <g className={cls("lens")} fontSize={12} fontWeight={700} fill={C.muted} {...lab}>
           <text x={f((A.x + D.x) / 2 - 8)} y={f((A.y + D.y) / 2 + 4)} textAnchor="end">4</text>
           <text x={f((D.x + Bp.x) / 2 - 8)} y={f((D.y + Bp.y) / 2 + 4)} textAnchor="end">2</text>
-          <text x={f((D.x + E.x) / 2)} y={D.y - 6} textAnchor="middle" fill={C.primary}>6</text>
+          <text x={f((D.x + E.x) / 2)} y={D.y - 6} textAnchor="middle" fill={C.primaryText}>6</text>
           <text x={f((Bp.x + Cp.x) / 2)} y={Bp.y + 16} textAnchor="middle">9</text>
         </g>
 
@@ -79,8 +79,8 @@ export default function Visual() {
         <text className={cls("w1")} x={206} y={44} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>DE ∥ BC</text>
         <text className={cls("w1")} x={206} y={62} fontSize={11} fill={C.muted} {...lab}>△ADE ~ △ABC</text>
         <text className={cls("w2")} x={206} y={96} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>AD/AB = DE/BC</text>
-        <text className={cls("w3")} x={206} y={122} fontSize={15} fontWeight={700} fill={C.primary} {...lab}>4/6 = 6/9</text>
-        <text className={cls("w3")} x={206} y={144} fontSize={15} fontWeight={700} fill={C.primary} {...lab}>= 2/3</text>
+        <text className={cls("w3")} x={206} y={122} fontSize={15} fontWeight={700} fill={C.primaryText} {...lab}>4/6 = 6/9</text>
+        <text className={cls("w3")} x={206} y={144} fontSize={15} fontWeight={700} fill={C.primaryText} {...lab}>= 2/3</text>
       </g>
     </Svg>
   );

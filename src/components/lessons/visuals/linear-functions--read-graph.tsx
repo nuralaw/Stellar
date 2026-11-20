@@ -49,13 +49,13 @@ export default function Visual() {
 
       {/* b: where the line meets the y-axis */}
       <circle className={`${a} ${fc(22)}`} cx={px(0)} cy={py(3)} r={5} fill={C.primary} />
-      <text className={`${a} ${fc(22)}`} x={px(0) + 8} y={py(3) + 16} fontSize={12} fontWeight={700} fill={C.primary}>
+      <text className={`${a} ${fc(22)}`} x={px(0) + 8} y={py(3) + 16} fontSize={12} fontWeight={700} fill={C.primaryText}>
         b = 3
       </text>
 
       {/* m: one step right, two up */}
       <path className={`${a} ${dc(34)}`} d={`M${px(1)} ${py(5)} H${px(2)} V${py(7)}`} pathLength={100} fill="none" stroke={C.primary} strokeWidth={2.5} />
-      <text className={`${a} ${fc(40)}`} x={px(2) + 8} y={py(6) + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+      <text className={`${a} ${fc(40)}`} x={px(2) + 8} y={py(6) + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
         up 2
       </text>
 
@@ -84,7 +84,7 @@ export default function Visual() {
       </g>
       <g className={`${a} ${fc(56)}`}>
         {[0, 1, 2].map((i) => (
-          <text key={i} x={221 + 30 * i} y={96} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text key={i} x={221 + 30 * i} y={96} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             +2
           </text>
         ))}

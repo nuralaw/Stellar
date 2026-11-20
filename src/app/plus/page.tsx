@@ -29,7 +29,7 @@ export default function Page() {
 
   return (
     <div className={PAGE}>
-      {/* Pricing: the same Free card + Plus showcase as the sign-up screen's Pricing tab, with working checkout. id="plans" is linked from other pages. */}
+      {/* Pricing: the same Free card + Plus showcase as the landing page's Pricing section, with working checkout. id="plans" is linked from other pages. */}
       <section id="plans" aria-labelledby="plus-title" className="relative isolate scroll-mt-20 overflow-hidden px-1 pb-24 sm:pb-32 lg:scroll-mt-8 lg:pb-36">
         <Watermark />
         <div className="xl:flex xl:items-end xl:justify-between xl:gap-6">

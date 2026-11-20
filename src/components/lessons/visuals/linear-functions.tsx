@@ -45,8 +45,8 @@ const css = `
 @keyframes v-linear-functions-scene { 0%, 91% { opacity: 1 } 97%, 100% { opacity: 0 } }
 
 /* Beat 1: the 1 leaves the rule and lands on the y-axis. That is where the line starts. */
-.v-linear-functions-hb { fill: ${C.primary}; animation-name: v-linear-functions-hb; }
-@keyframes v-linear-functions-hb { 0%, 5% { fill: ${C.ink} } 7%, 91% { fill: ${C.primary} } 97%, 100% { fill: ${C.ink} } }
+.v-linear-functions-hb { fill: ${C.primaryText}; animation-name: v-linear-functions-hb; }
+@keyframes v-linear-functions-hb { 0%, 5% { fill: ${C.ink} } 7%, 91% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
 .v-linear-functions-f1x { animation-name: v-linear-functions-f1x; }
 @keyframes v-linear-functions-f1x {
   0%, 7% { transform: translateX(${FLY1.x}px); animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1) }
@@ -64,8 +64,8 @@ const css = `
 @keyframes v-linear-functions-cb { 0%, 17% { opacity: 0; transform: translateY(-4px) } 22%, 100% { opacity: 1; transform: none } }
 
 /* Beat 2: the 2 leaves the rule and becomes the climb of every step */
-.v-linear-functions-hm { fill: ${C.primary}; animation-name: v-linear-functions-hm; }
-@keyframes v-linear-functions-hm { 0%, 22% { fill: ${C.ink} } 24%, 91% { fill: ${C.primary} } 97%, 100% { fill: ${C.ink} } }
+.v-linear-functions-hm { fill: ${C.primaryText}; animation-name: v-linear-functions-hm; }
+@keyframes v-linear-functions-hm { 0%, 22% { fill: ${C.ink} } 24%, 91% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
 .v-linear-functions-f2x { animation-name: v-linear-functions-f2x; }
 @keyframes v-linear-functions-f2x {
   0%, 24% { transform: translateX(${FLY2.x}px); animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1) }
@@ -139,12 +139,12 @@ export default function Visual() {
           ))}
         </g>
         <g className="v-linear-functions-a v-linear-functions-f2x">
-          <text className="v-linear-functions-a v-linear-functions-f2y" x={X(1) + 5} y={Y(2) + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text className="v-linear-functions-a v-linear-functions-f2y" x={X(1) + 5} y={Y(2) + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
             +2
           </text>
         </g>
         {[2, 3].map((i) => (
-          <text key={i} className={`v-linear-functions-a v-linear-functions-up${i}`} x={X(i) + 5} y={Y(2 * i) + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text key={i} className={`v-linear-functions-a v-linear-functions-up${i}`} x={X(i) + 5} y={Y(2 * i) + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
             +2
           </text>
         ))}
@@ -158,7 +158,7 @@ export default function Visual() {
         ))}
         <circle className="v-linear-functions-a v-linear-functions-pt0" cx={X(0)} cy={Y(1)} r={5} fill={C.primary} stroke={C.bg} strokeWidth={1.5} />
         <g className="v-linear-functions-a v-linear-functions-f1x">
-          <text className="v-linear-functions-a v-linear-functions-f1y" x={X(0) - 9} y={Y(1) + 4} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text className="v-linear-functions-a v-linear-functions-f1y" x={X(0) - 9} y={Y(1) + 4} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primaryText}>
             1
           </text>
         </g>

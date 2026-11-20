@@ -30,7 +30,7 @@ type Setup = { error: string; configured?: Configured };
 const REFRESH = "M20 11a8 8 0 0 0-14.9-4M4 4v4h4M4 13a8 8 0 0 0 14.9 4M20 20v-4h-4";
 const PLANS: { id: PlanKey; label: string; color: string }[] = [
   { id: "monthly", label: "Monthly", color: BAR },
-  { id: "pass", label: "Until test day", color: "#0ea5e9" },
+  { id: "pass", label: "Until test day", color: "#0284c7" },
   { id: "other", label: "Other", color: "var(--muted)" },
 ];
 const PLAN_LABEL: Record<string, string> = { monthly: "Monthly", pass: "Until test day" };

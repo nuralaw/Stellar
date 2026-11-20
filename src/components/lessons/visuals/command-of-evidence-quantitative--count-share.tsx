@@ -66,7 +66,7 @@ export default function Visual() {
         {/* ÷ students */}
         <g className={`v-command-of-evidence-quantitative--count-share-a v-command-of-evidence-quantitative--count-share-arrow`}>
           <path d="M138 86 H166 M160 81 L167 86 L160 91" fill="none" stroke={C.primary} strokeWidth={2} />
-          <text x={152} y={76} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primary}>
+          <text x={152} y={76} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
             ÷ size
           </text>
         </g>
@@ -79,7 +79,7 @@ export default function Visual() {
         <Bar x={202} v={30} cls="s1" fill={C.soft} stroke={C.primary} />
         <Bar x={246} v={18} cls="s2" fill={C.fill} stroke={C.muted} />
         <g className={`v-command-of-evidence-quantitative--count-share-a v-command-of-evidence-quantitative--count-share-sv`}>
-          <text x={217} y={BASE - 30 * K - 4} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primary}>
+          <text x={217} y={BASE - 30 * K - 4} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
             30%
           </text>
           <text x={261} y={BASE - 18 * K - 4} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.ink}>

@@ -43,12 +43,12 @@ export default function Visual() {
         </g>
         <g className={cls("rr")}>
           <line x1={cx} y1={yBase} x2={cx + R} y2={yBase} stroke={C.primary} strokeWidth={3} />
-          <text x={cx + R / 2} y={yBase + 28} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary} {...lab}>r = 4</text>
+          <text x={cx + R / 2} y={yBase + 28} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText} {...lab}>r = 4</text>
         </g>
         <text className={cls("vol")} x={cx} y={yApex - 8} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.ink} {...lab}>V = 48π</text>
         <rect x={cx - 16} y={yLab - 9} width={32} height={16} rx={3} fill={C.fill} stroke="none" />
         <text className={cls("q")} x={cx} y={yLab + 4} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.muted} {...lab}>h = ?</text>
-        <text className={cls("hh")} x={cx} y={yLab + 4} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary} {...lab}>h = 9</text>
+        <text className={cls("hh")} x={cx} y={yLab + 4} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>h = 9</text>
 
         <text className={cls("p1")} x={150} y={50} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>⅓ · π · 4² · h = 48π</text>
         <g className={cls("p2")} {...lab}>
@@ -57,7 +57,7 @@ export default function Visual() {
         </g>
         <g className={cls("p3")} {...lab}>
           <text x={150} y={128} fontSize={11} fill={C.muted}>divide by 16</text>
-          <text x={150} y={152} fontSize={20} fontWeight={700} fill={C.primary}>h = 9</text>
+          <text x={150} y={152} fontSize={20} fontWeight={700} fill={C.primaryText}>h = 9</text>
         </g>
       </g>
     </Svg>

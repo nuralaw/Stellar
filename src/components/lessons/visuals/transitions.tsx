@@ -35,8 +35,8 @@ const css = `
 @keyframes v-transitions-winBox { 0%, 56% { fill: ${C.fill}; stroke: ${C.line} } 60%, 100% { fill: ${C.goodSoft}; stroke: ${C.good} } }
 
 /* The clue: easy vs failed */
-.v-transitions-clue { fill: ${C.primary}; animation-name: v-transitions-clue; }
-@keyframes v-transitions-clue { 0%, 62% { fill: ${C.ink} } 66%, 100% { fill: ${C.primary} } }
+.v-transitions-clue { fill: ${C.primaryText}; animation-name: v-transitions-clue; }
+@keyframes v-transitions-clue { 0%, 62% { fill: ${C.ink} } 66%, 100% { fill: ${C.primaryText} } }
 .v-transitions-tag { animation-name: v-transitions-tag; }
 @keyframes v-transitions-tag { 0%, 64% { opacity: 0; transform: translateY(4px) } 70%, 100% { opacity: 1; transform: none } }
 `;
@@ -84,7 +84,7 @@ export default function Visual() {
         </g>
 
         <g className="v-transitions-a v-transitions-tag">
-          <text x={296} y={50} textAnchor="end" fontSize={12} fontWeight={600} fill={C.primary}>
+          <text x={296} y={50} textAnchor="end" fontSize={12} fontWeight={600} fill={C.primaryText}>
             easy ↔ failed
           </text>
           <text x={296} y={66} textAnchor="end" fontSize={11} fill={C.muted}>

@@ -239,7 +239,7 @@ export function OverviewTab({ inbox: given, revenue: givenRevenue }: { inbox?: A
                   <span className="mt-0.5 w-5 shrink-0 text-right text-sm text-muted tabular-nums">{i + 1}</span>
                   <div className="min-w-0 flex-1">
                     {r.question ? (
-                      <Link href={practiceHref(r.question)} target="_blank" className="inline-flex max-w-full items-center gap-1 font-semibold hover:text-accent">
+                      <Link href={practiceHref(r.question)} target="_blank" className="inline-flex max-w-full items-center gap-1 font-semibold hover:text-primary-strong">
                         <span className="truncate">{questionTitle(r)}</span>
                         <Icon d={I.expand} className="h-3.5 w-3.5 shrink-0 text-muted" />
                       </Link>
@@ -255,7 +255,7 @@ export function OverviewTab({ inbox: given, revenue: givenRevenue }: { inbox?: A
                       ))}
                     </div>
                   </div>
-                  <span className="shrink-0 rounded-full bg-primary/15 px-2.5 py-0.5 text-sm font-semibold text-accent tabular-nums" title="Open reports">
+                  <span className="shrink-0 rounded-full bg-primary/15 px-2.5 py-0.5 text-sm font-semibold text-primary-strong tabular-nums" title="Open reports">
                     {g.reports.length}
                   </span>
                 </li>

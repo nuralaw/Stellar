@@ -60,7 +60,7 @@ export default function Visual() {
         </g>
 
         <g className={`v-cross-text-connections--venn-a v-cross-text-connections--venn-cap`}>
-          <text x={160} y={162} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={160} y={162} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
             agreement = only the overlap
           </text>
         </g>

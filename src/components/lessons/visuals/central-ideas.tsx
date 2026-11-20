@@ -13,8 +13,8 @@ const css = `
 /* Beat 1: the pivot word lights up */
 .v-central-ideas-pill { fill: ${C.soft}; stroke: ${C.primary}; animation-name: v-central-ideas-pill; }
 @keyframes v-central-ideas-pill { 0%, 12% { fill: ${C.fill}; stroke: ${C.line} } 17%, 100% { fill: ${C.soft}; stroke: ${C.primary} } }
-.v-central-ideas-but { fill: ${C.primary}; animation-name: v-central-ideas-but; }
-@keyframes v-central-ideas-but { 0%, 12% { fill: ${C.ink} } 17%, 100% { fill: ${C.primary} } }
+.v-central-ideas-but { fill: ${C.primaryText}; animation-name: v-central-ideas-but; }
+@keyframes v-central-ideas-but { 0%, 12% { fill: ${C.ink} } 17%, 100% { fill: ${C.primaryText} } }
 .v-central-ideas-pop { transform-box: fill-box; transform-origin: center; animation-name: v-central-ideas-pop; }
 @keyframes v-central-ideas-pop { 0%, 12% { transform: scale(1) } 17% { transform: scale(1.18) } 23%, 100% { transform: scale(1) } }
 
@@ -25,8 +25,8 @@ const css = `
 @keyframes v-central-ideas-tag1 { 0%, 27% { opacity: 0; transform: translateX(6px) } 33%, 100% { opacity: 1; transform: none } }
 
 /* Beat 3: after the pivot = the point */
-.v-central-ideas-point { fill: ${C.primary}; animation-name: v-central-ideas-point; }
-@keyframes v-central-ideas-point { 0%, 40% { fill: ${C.ink} } 46%, 100% { fill: ${C.primary} } }
+.v-central-ideas-point { fill: ${C.primaryText}; animation-name: v-central-ideas-point; }
+@keyframes v-central-ideas-point { 0%, 40% { fill: ${C.ink} } 46%, 100% { fill: ${C.primaryText} } }
 .v-central-ideas-tag2 { animation-name: v-central-ideas-tag2; }
 @keyframes v-central-ideas-tag2 { 0%, 41% { opacity: 0; transform: translateX(6px) } 47%, 100% { opacity: 1; transform: none } }
 
@@ -70,7 +70,7 @@ export default function Visual() {
         <text x={296} y={42} textAnchor="end" fontSize={11} fill={C.muted} className="v-central-ideas-a v-central-ideas-tag1">
           old view
         </text>
-        <text x={296} y={68} textAnchor="end" fontSize={11} fontWeight={700} fill={C.primary} className="v-central-ideas-a v-central-ideas-tag2">
+        <text x={296} y={68} textAnchor="end" fontSize={11} fontWeight={700} fill={C.primaryText} className="v-central-ideas-a v-central-ideas-tag2">
           point
         </text>
         <text x={296} y={94} textAnchor="end" fontSize={11} fill={C.muted} className="v-central-ideas-a v-central-ideas-tag3">

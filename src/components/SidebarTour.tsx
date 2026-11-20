@@ -280,6 +280,7 @@ function TourIsland({ step, closing }: { step: number; closing: boolean }) {
       {/* Dims the page (on desktop: not the sidebar). Doesn't close the tour when clicked. */}
       <div
         data-tour-root
+        data-chrome
         data-closing={closing || undefined}
         aria-hidden="true"
         className="tour-overlay fixed inset-0 z-[45] bg-black/40 lg:left-64 lg:sb-collapsed:left-[72px]"
@@ -287,6 +288,7 @@ function TourIsland({ step, closing }: { step: number; closing: boolean }) {
       {ready && (
         <div
           data-tour-root
+          data-chrome
           className={desktop ? "fixed z-[60]" : "pointer-events-none fixed inset-x-0 bottom-4 z-[60] flex justify-center px-4"}
           style={desktop && pos ? { left: pos.left, top: pos.top, transition: slide ? `top ${MOVE}, left ${MOVE}` : "none" } : undefined}
         >
@@ -317,7 +319,7 @@ function TourIsland({ step, closing }: { step: number; closing: boolean }) {
 
             {/* Keyed by step: the tile pops in, its icon draws itself, the text fades up one line after the other. */}
             <div key={step} className="mt-4 min-h-0 flex-1 overflow-y-auto">
-              <span className="lesson-pop grid h-11 w-11 place-items-center rounded-2xl bg-primary/15 text-accent">
+              <span className="lesson-pop grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-side-accent">
                 {s.icon ? (
                   <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d={s.icon} pathLength={1} className="tour-draw" />

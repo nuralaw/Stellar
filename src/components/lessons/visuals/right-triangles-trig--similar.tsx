@@ -54,9 +54,9 @@ export default function Visual() {
         </g>
         <path className={cls("small")} d={`M${SB.x} ${SB.y} L${SA.x} ${SA.y} L${SC.x} ${SC.y} Z`} pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
         <g className={cls("smalll")}>
-          <text x={SB.x - 6} y={SB.y - 14} textAnchor="end" {...lab} fill={C.primary}>3</text>
-          <text x={SB.x + 2 * U} y={SB.y + 16} textAnchor="middle" {...lab} fill={C.primary}>4</text>
-          <text x={f((SA.x + SC.x) / 2 + 10)} y={f((SA.y + SC.y) / 2 - 4)} {...lab} fill={C.primary}>5</text>
+          <text x={SB.x - 6} y={SB.y - 14} textAnchor="end" {...lab} fill={C.primaryText}>3</text>
+          <text x={SB.x + 2 * U} y={SB.y + 16} textAnchor="middle" {...lab} fill={C.primaryText}>4</text>
+          <text x={f((SA.x + SC.x) / 2 + 10)} y={f((SA.y + SC.y) / 2 - 4)} {...lab} fill={C.primaryText}>5</text>
         </g>
         {/* the equal angle A in both */}
         <g className={cls("arcs")}>
@@ -74,7 +74,7 @@ export default function Visual() {
           <text x={150} y={62} fontSize={11} fill={C.muted}>big</text>
           <text x={186} y={64} fontSize={19} fontWeight={700} fill={C.ink}>6/10</text>
           <text x={150} y={88} fontSize={11} fill={C.muted}>small</text>
-          <text x={186} y={90} fontSize={19} fontWeight={700} fill={C.primary}>3/5</text>
+          <text x={186} y={90} fontSize={19} fontWeight={700} fill={C.primaryText}>3/5</text>
         </g>
         <text className={cls("p3")} x={244} y={128} fontSize={14} fontWeight={700} fill={C.ink} stroke="none">
           both 0.6

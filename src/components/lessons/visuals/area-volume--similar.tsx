@@ -54,7 +54,7 @@ export default function Visual() {
           <text x={212} y={69} fontSize={11} fill={C.muted}>k² = 4 · 10 → 40</text>
         </g>
         <g className={cls("p2")} {...lab}>
-          <text x={212} y={106} fontSize={14} fontWeight={700} fill={C.primary}>volume × 8</text>
+          <text x={212} y={106} fontSize={14} fontWeight={700} fill={C.primaryText}>volume × 8</text>
           <text x={212} y={123} fontSize={11} fill={C.muted}>k³ = 8 · 6 → 48</text>
         </g>
       </g>

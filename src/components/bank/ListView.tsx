@@ -43,7 +43,7 @@ function StatusIcon({ result }: { result: boolean | undefined }) {
 
 /** Little icon in each status tab, matching the marks in the list rows. */
 function StatusMark({ id, on }: { id: Status; on: boolean }) {
-  const tone = (c: string) => (on ? "bg-primary-ink/20 text-primary-ink" : c);
+  const tone = (c: string) => (on ? "bg-white/35 text-primary-ink" : c);
   switch (id) {
     case "new":
       return <span className={`h-3 w-3 rounded-full border-2 ${on ? "border-primary-ink/80" : "border-muted"}`} aria-hidden="true" />;
@@ -246,12 +246,12 @@ export function ListView({
               }`}
             >
               <span className="flex items-center justify-between gap-3">
-                <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary/15 text-primary" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
+                <span className={`grid h-9 w-9 place-items-center rounded-xl ${on ? "bg-primary/15 text-primary-strong" : "bg-surface-2 text-muted group-hover:text-ink"}`}>
                   <Icon d={b.id === "cb" ? I.badge : I.layers} className="h-5 w-5" />
                 </span>
                 <span className="flex items-center gap-2">
                   {b.plus && !canBank && <PlusBadge />}
-                  <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
+                  <span className={`text-sm font-semibold tabular-nums ${on ? "text-primary-strong" : "text-muted"}`}>{fmt(bankTotals[b.id])}</span>
                 </span>
               </span>
               <span className="mt-3 block leading-snug font-semibold">{b.name}</span>
@@ -263,7 +263,7 @@ export function ListView({
         <div className="col-span-2 rounded-2xl border border-line bg-surface p-4 sm:p-5 lg:col-span-1">
           <div className="flex items-baseline justify-between gap-4">
             <p className="text-sm font-medium text-muted">Today&apos;s goal</p>
-            <p className="text-sm font-medium text-primary">{today >= DAILY_GOAL ? "Done 🎉" : `${DAILY_GOAL - today} to go`}</p>
+            <p className="text-sm font-medium text-primary-strong">{today >= DAILY_GOAL ? "Done 🎉" : `${DAILY_GOAL - today} to go`}</p>
           </div>
           <p className="mt-2 text-2xl font-bold tracking-tight tabular-nums">
             {fmt(Math.min(today, 999))}
@@ -320,7 +320,7 @@ export function ListView({
               }`}
             >
               {SECTIONS[s].name}
-              <span className={`rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums ${on ? "bg-primary-soft text-primary" : "bg-surface-2 text-muted"}`}>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums ${on ? "bg-primary-soft text-primary-strong" : "bg-surface-2 text-muted"}`}>
                 {fmt(progress.bySection[s].total)}
               </span>
             </button>
@@ -407,7 +407,7 @@ export function ListView({
               onClick={() => setSheet((o) => !o)}
               aria-expanded={sheet}
               className={`inline-flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-sm font-semibold transition-colors sm:gap-2 sm:px-3 ${
-                filters.skills.length ? "border-primary bg-primary-soft text-primary" : "border-line bg-surface hover:border-muted"
+                filters.skills.length ? "border-primary bg-primary-soft text-primary-strong" : "border-line bg-surface hover:border-muted"
               }`}
             >
               <Icon d={I.filter} className="hidden h-4 w-4 sm:block" />
@@ -434,7 +434,7 @@ export function ListView({
                 <h2 className="font-semibold">Topics</h2>
                 <div className="flex items-center gap-1">
                   {filters.skills.length > 0 && (
-                    <button type="button" onClick={() => set({ skills: [] })} className="rounded-lg px-2 py-1 text-xs font-semibold text-primary hover:bg-surface-2">
+                    <button type="button" onClick={() => set({ skills: [] })} className="rounded-lg px-2 py-1 text-xs font-semibold text-primary-strong hover:bg-surface-2">
                       Clear
                     </button>
                   )}
@@ -492,7 +492,7 @@ export function ListView({
             </>
           )}
           {activeCount > 0 && (
-            <button type="button" onClick={resetAll} className="ml-auto text-xs font-semibold text-primary hover:underline">
+            <button type="button" onClick={resetAll} className="ml-auto text-xs font-semibold text-primary-strong hover:underline">
               Reset all
             </button>
           )}

@@ -132,7 +132,7 @@ export function TestList({ tests, freeIds }: { tests: TestIndexRow[]; freeIds: s
           className="group mt-6 flex flex-col gap-4 rounded-2xl border border-line bg-surface px-5 py-4 transition-colors hover:border-primary/50 sm:flex-row sm:items-center"
         >
           <span className="min-w-0 flex-1">
-            <span className="text-sm font-medium text-primary">Recommended next</span>
+            <span className="text-sm font-medium text-primary-strong">Recommended next</span>
             <span className="mt-0.5 block text-lg font-semibold">{testName(recommended)}</span>
             <span className="text-sm text-muted">
               The newest full test you haven&apos;t taken · {questionCount(recommended)} questions · {fmtMinutes(minutesOf(recommended))}
@@ -159,7 +159,7 @@ export function TestList({ tests, freeIds }: { tests: TestIndexRow[]; freeIds: s
               {MODULE_INFO[session.modules[session.module] as ModuleId]?.label} · module {session.module + 1} of {session.modules.length}
             </span>
           </span>
-          <Icon d={I.chevronR} className="h-5 w-5 text-primary" />
+          <Icon d={I.chevronR} className="h-5 w-5 text-primary-strong" />
         </Link>
       )}
 

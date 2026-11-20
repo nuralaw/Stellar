@@ -70,15 +70,15 @@ export default function Visual() {
         <text x={221} y={BASE - 480 * S - 6} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.muted}>
           480
         </text>
-        <text x={245} y={BASE - 518.4 * S - 5} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primary}>
+        <text x={245} y={BASE - 518.4 * S - 5} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
           518
         </text>
       </g>
       <g className={`${a} ${fc(70)}`}>
-        <text x={258} y={84} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={258} y={84} fontSize={12} fontWeight={700} fill={C.primaryText}>
           the gap
         </text>
-        <text x={258} y={100} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={258} y={100} fontSize={12} fontWeight={700} fill={C.primaryText}>
           grows
         </text>
       </g>

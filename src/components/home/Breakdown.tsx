@@ -24,7 +24,7 @@ const MASTERY: Record<Mastery, { label: string; cls: string; icon?: string }> = 
   none: { label: "Not started", cls: "text-muted" },
   new: { label: "Just started", cls: "text-muted" },
   weak: { label: "Needs work", cls: "bg-danger-soft text-danger", icon: "M12 8v5m0 3h.01" },
-  fair: { label: "Getting there", cls: "bg-accent-soft text-accent", icon: "M6 12h12" },
+  fair: { label: "Getting there", cls: "bg-accent-soft text-primary-strong", icon: "M6 12h12" },
   strong: { label: "Strong", cls: "bg-success-soft text-success", icon: I.check },
 };
 
@@ -162,7 +162,7 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
         {domains.map((d, di) => (
           <section key={d.domain.id} className="lesson-in min-w-0 rounded-xl border border-line p-4" style={{ animationDelay: `${di * 80}ms` }}>
             <div className="flex items-baseline justify-between gap-3">
-              <Link href={`/practice?section=${d.domain.section}&domain=${d.domain.id}`} className="font-semibold hover:text-primary">
+              <Link href={`/practice?section=${d.domain.section}&domain=${d.domain.id}`} className="font-semibold hover:text-primary-strong">
                 {d.domain.name}
               </Link>
               <span className="shrink-0 text-lg font-bold tabular-nums">{pct(d)}</span>
@@ -178,7 +178,7 @@ export function TopicBreakdown({ stats }: { stats: Stats }) {
                 <li key={s.skill.id}>
                   <Link href={`/practice?section=${d.domain.section}&skills=${s.skill.id}`} className="group block" title={`Practice ${s.skill.name}`}>
                     <div className="flex items-center justify-between gap-2 text-sm">
-                      <span className="min-w-0 truncate group-hover:text-primary">{s.skill.name}</span>
+                      <span className="min-w-0 truncate group-hover:text-primary-strong">{s.skill.name}</span>
                       <span className="flex shrink-0 items-center gap-2">
                         <span className="text-xs whitespace-nowrap text-muted tabular-nums">{s.answered ? `${pct(s)} · ${s.answered}` : ""}</span>
                         {/* Phones: the % and bar say enough; only flag the skills that need attention. */}

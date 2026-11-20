@@ -15,8 +15,8 @@ const css = `
 @keyframes v-form-structure-sense--verb-slot-scene { 0% { opacity: 0 } 4%, 93% { opacity: 1 } 99%, 100% { opacity: 0 } }
 
 /* Row 1: the main verb "opened" is spotted */
-.v-form-structure-sense--verb-slot-mv { fill: ${C.primary}; animation-name: v-form-structure-sense--verb-slot-mv; }
-@keyframes v-form-structure-sense--verb-slot-mv { 0%, 10% { fill: ${C.ink} } 16%, 100% { fill: ${C.primary} } }
+.v-form-structure-sense--verb-slot-mv { fill: ${C.primaryText}; animation-name: v-form-structure-sense--verb-slot-mv; }
+@keyframes v-form-structure-sense--verb-slot-mv { 0%, 10% { fill: ${C.ink} } 16%, 100% { fill: ${C.primaryText} } }
 .v-form-structure-sense--verb-slot-mvTag { animation-name: v-form-structure-sense--verb-slot-mvTag; }
 @keyframes v-form-structure-sense--verb-slot-mvTag { 0%, 12% { opacity: 0; transform: translateY(4px) } 18%, 100% { opacity: 1; transform: none } }
 
@@ -80,7 +80,7 @@ export default function Visual() {
           opened.
         </text>
         <g className={`${A} ${P + "mvTag"}`}>
-          <text x={282} y={26} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.primary}>
+          <text x={282} y={26} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.primaryText}>
             main verb
           </text>
         </g>

@@ -56,11 +56,11 @@ export default function Visual() {
         Poll B: 2,000 people
       </text>
       <rect className={cls("bb")} x={px(48)} y={102} width={px(52) - px(48)} height={14} rx={3} fill={C.soft} stroke={C.primary} strokeWidth={2} />
-      <text className={cls("mb")} x={px(52) + 8} y={114} fontSize={13} fontWeight={700} fill={C.primary}>
+      <text className={cls("mb")} x={px(52) + 8} y={114} fontSize={13} fontWeight={700} fill={C.primaryText}>
         ± 2
       </text>
 
-      <text className={cls("res")} x={160} y={26} fontSize={15} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={26} fontSize={15} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         bigger sample: narrower range
       </text>
     </Svg>

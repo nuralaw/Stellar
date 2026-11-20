@@ -184,7 +184,7 @@ export function DesmosDemo({ moves, prompt, label = "In Desmos", reveal = false 
     <div className="overflow-hidden rounded-2xl border border-line bg-surface">
       <div className="flex items-start gap-3 border-b border-line bg-surface-2/40 px-4 py-3 sm:px-5">
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-semibold tracking-wide text-primary uppercase">{label}</p>
+          <p className="text-xs font-semibold tracking-wide text-primary-strong uppercase">{label}</p>
           {prompt && (
             <div className="mt-1 text-[16px] leading-relaxed font-semibold text-ink">
               <Lines text={prompt} />
@@ -227,7 +227,7 @@ export function DesmosDemo({ moves, prompt, label = "In Desmos", reveal = false 
         </ol>
       ) : (
         <div ref={box} className="relative h-[300px] bg-white sm:h-[320px]" data-calculator>
-          {!ready && <p className="absolute inset-0 grid place-content-center text-sm text-neutral-500">Loading Desmos…</p>}
+          {!ready && <p className="absolute inset-0 grid place-content-center text-sm text-[#3b4668]">Loading Desmos…</p>}
           <div ref={host} className="absolute inset-0" />
         </div>
       )}

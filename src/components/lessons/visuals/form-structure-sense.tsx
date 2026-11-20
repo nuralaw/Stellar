@@ -39,8 +39,8 @@ const css = `
 @keyframes v-form-structure-sense-extraTag { 0%, 42% { opacity: 0; transform: translateY(4px) } 48%, 100% { opacity: 1; transform: none } }
 
 /* The subject: "box" */
-.v-form-structure-sense-subj { fill: ${C.primary}; animation-name: v-form-structure-sense-subj; }
-@keyframes v-form-structure-sense-subj { 0%, 50% { fill: ${C.ink} } 56%, 100% { fill: ${C.primary} } }
+.v-form-structure-sense-subj { fill: ${C.primaryText}; animation-name: v-form-structure-sense-subj; }
+@keyframes v-form-structure-sense-subj { 0%, 50% { fill: ${C.ink} } 56%, 100% { fill: ${C.primaryText} } }
 .v-form-structure-sense-subjTag { animation-name: v-form-structure-sense-subjTag; }
 @keyframes v-form-structure-sense-subjTag { 0%, 52% { opacity: 0; transform: translateY(-4px) } 58%, 100% { opacity: 1; transform: none } }
 
@@ -104,7 +104,7 @@ export default function Visual() {
         {/* The subject */}
         <g className="v-form-structure-sense-a v-form-structure-sense-subjTag">
           <path d="M 67 76 H 95" fill="none" stroke={C.primary} strokeWidth={2} />
-          <text x={81} y={94} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primary}>
+          <text x={81} y={94} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primaryText}>
             one box
           </text>
         </g>

@@ -50,12 +50,12 @@ export default function Visual() {
         <path className={cls("arc")} d={arcPath} pathLength={100} fill="none" stroke={C.primary} strokeWidth={4} />
         <circle cx={O.x} cy={O.y} r={3.5} fill={C.ink} />
         <text className={cls("p1")} x={f(O.x + 16)} y={f(O.y + 15)} fontSize={11} fontWeight={700} fill={C.ink} {...lab}>r = 10</text>
-        <text className={cls("p1")} x={f(O.x + 22)} y={f(O.y - 8)} fontSize={12} fontWeight={700} fill={C.primary} {...lab}>72°</text>
+        <text className={cls("p1")} x={f(O.x + 22)} y={f(O.y - 8)} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>72°</text>
 
         <text className={cls("p1")} x={182} y={46} fontSize={15} fontWeight={700} fill={C.ink} {...lab}>72/360 = 1/5</text>
         <g className={cls("p2")} {...lab}>
           <text x={182} y={78} fontSize={11} fill={C.muted}>circle: 2π · 10 = 20π</text>
-          <text x={182} y={97} fontSize={14} fontWeight={700} fill={C.primary}>1/5 × 20π = 4π</text>
+          <text x={182} y={97} fontSize={14} fontWeight={700} fill={C.primaryText}>1/5 × 20π = 4π</text>
         </g>
         <g className={cls("p3")} {...lab}>
           <text x={182} y={126} fontSize={11} fill={C.muted}>area: π · 10² = 100π</text>

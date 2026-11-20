@@ -52,7 +52,7 @@ export default function Visual() {
       {squares.map((s) => (
         <g key={s.num}>
           <rect className={s.num <= 8 ? cls("s" + s.num) : undefined} x={s.x} y={s.y} width={46} height={SQ - 1.5} rx={2} fill={C.fill} stroke={C.line} strokeWidth={1} />
-          <text x={s.x + 23} y={s.y + 12.5} fontSize={11.5} fontWeight={600} fill={s.num === 8 ? C.bg : C.ink} textAnchor="middle">
+          <text x={s.x + 23} y={s.y + 12.5} fontSize={11.5} fontWeight={600} fill={s.num === 8 ? C.onPrimary : C.ink} textAnchor="middle">
             {s.num}
           </text>
         </g>
@@ -67,7 +67,7 @@ export default function Visual() {
         ))}
       </g>
 
-      <text className={cls("res")} x={160} y={168} fontSize={14} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={168} fontSize={14} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         the 8th is a 7: median = 7
       </text>
     </Svg>

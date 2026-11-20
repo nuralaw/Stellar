@@ -41,7 +41,7 @@ export default function Visual() {
         <text x={30} y={36} fontSize={15} fontWeight={700} fill={C.ink}>
           Math
         </text>
-        <text className="v-digital-sat-format--order-math-a v-digital-sat-format--order-math-tag" x={30} y={54} fontSize={12} fontWeight={600} fill={C.primary}>
+        <text className="v-digital-sat-format--order-math-a v-digital-sat-format--order-math-tag" x={30} y={54} fontSize={12} fontWeight={600} fill={C.primaryText}>
           hardest last
         </text>
 

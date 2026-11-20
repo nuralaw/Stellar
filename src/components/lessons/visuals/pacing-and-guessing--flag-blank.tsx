@@ -99,7 +99,7 @@ export default function Visual() {
             blank = 0
           </text>
         </g>
-        <text className={`${A} ${FIX}`} x={160} y={160} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text className={`${A} ${FIX}`} x={160} y={160} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           Fix: choose a guess, then flag
         </text>
       </g>

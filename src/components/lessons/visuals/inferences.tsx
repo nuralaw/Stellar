@@ -87,7 +87,7 @@ export default function Visual() {
 
         {/* So + the blank */}
         <g className="v-inferences-a v-inferences-so">
-          <text x={20} y={100} fontSize={15} fontWeight={700} fill={C.primary}>
+          <text x={20} y={100} fontSize={15} fontWeight={700} fill={C.primaryText}>
             So
           </text>
           <rect x={56} y={82} width={132} height={26} rx={13} fill="none" stroke={C.muted} strokeWidth={1.5} strokeDasharray="4 4" />

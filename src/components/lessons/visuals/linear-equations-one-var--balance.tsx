@@ -46,10 +46,10 @@ export default function Visual() {
       ))}
       {MOVES.map((m) => (
         <g key={m.y} className={`${a} ${fc(m.t)}`}>
-          <text x={150} y={m.y} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={150} y={m.y} textAnchor="end" fontSize={12} fontWeight={700} fill={C.primaryText}>
             {m.m}
           </text>
-          <text x={170} y={m.y} fontSize={12} fontWeight={700} fill={C.primary}>
+          <text x={170} y={m.y} fontSize={12} fontWeight={700} fill={C.primaryText}>
             {m.m}
           </text>
         </g>

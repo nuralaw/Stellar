@@ -37,7 +37,7 @@ function FirstScore({ r, target }: { r: TestResult; target: number | null }) {
       </div>
       <p className="text-sm text-muted">
         Take one more test to see your trend.{" "}
-        <Link href="/test" className="font-semibold text-primary hover:underline">
+        <Link href="/test" className="font-semibold text-primary-strong hover:underline">
           Practice tests →
         </Link>
       </p>
@@ -106,7 +106,7 @@ export function Statistics() {
               {history.length ? (
                 <p className={tile}>best score {best}</p>
               ) : (
-                <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary hover:underline">
+                <Link href="/test" className="mt-1 block text-[13px] font-medium text-primary-strong hover:underline">
                   take a practice test →
                 </Link>
               )}

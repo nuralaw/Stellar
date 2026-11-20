@@ -24,7 +24,7 @@ const btnGhost = "inline-flex items-center justify-center gap-1.5 rounded-xl px-
 
 const STATUS = [
   { label: "New", cls: "bg-surface-2 text-muted" },
-  { label: "Learning", cls: "bg-accent-soft text-accent" },
+  { label: "Learning", cls: "bg-accent-soft text-primary-strong" },
   { label: "Known", cls: "bg-success-soft text-success" },
 ] as const;
 
@@ -38,7 +38,7 @@ function Example({ w, blank = false }: { w: SetWord; blank?: boolean }) {
       {blank ? (
         <span className="mx-0.5 inline-block w-20 border-b-2 border-primary align-baseline" aria-label="blank" />
       ) : (
-        <strong className="font-semibold text-primary">{w.example.slice(i, i + w.form.length)}</strong>
+        <strong className="font-semibold text-primary-strong">{w.example.slice(i, i + w.form.length)}</strong>
       )}
       {w.example.slice(i + w.form.length)}
     </>
@@ -88,7 +88,7 @@ export function VocabSetView({
       </Link>
       <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-medium text-primary">{set.list}</p>
+          <p className="text-sm font-medium text-primary-strong">{set.list}</p>
           <h1 className="mt-0.5 text-3xl font-bold tracking-tight md:text-4xl">{set.title}</h1>
           <div className="mt-3 flex w-72 max-w-full items-center gap-2.5">
             <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-line">
@@ -281,7 +281,7 @@ function Flashcards({ words, st, onQuiz, onList }: { words: SetWord[]; st: (id: 
             <span className="absolute bottom-5 text-xs text-muted">Tap or press Space to flip</span>
           </span>
           <span className="absolute inset-0 flex rotate-y-180 flex-col justify-center rounded-3xl bg-surface p-7 shadow-[0_18px_50px_-24px_rgb(0_0_0/0.35)] ring-1 ring-primary/30 backface-hidden">
-            <span className="text-xs font-semibold tracking-wide text-primary uppercase">{name(w)}</span>
+            <span className="text-xs font-semibold tracking-wide text-primary-strong uppercase">{name(w)}</span>
             <span className="mt-2 text-xl leading-snug font-semibold">{w.def}</span>
             <span className="mt-4 text-[15px] leading-relaxed text-muted">
               <Example w={w} />

@@ -59,7 +59,7 @@ export default function Visual() {
         <Arrow x1={206} x2={216} cls={`v-command-of-evidence-textual--chain-b3`} />
         <Box cx={262} cls={`v-command-of-evidence-textual--chain-b3`} l1="coast" l2="rises" end />
 
-        <text className={`v-command-of-evidence-textual--chain-a v-command-of-evidence-textual--chain-end`} x={262} y={32} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className={`v-command-of-evidence-textual--chain-a v-command-of-evidence-textual--chain-end`} x={262} y={32} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           end result
         </text>
 

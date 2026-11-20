@@ -60,7 +60,7 @@ export default function Visual() {
       <line className={`${a} ${dc(46)}`} x1={px(1)} y1={py(4)} x2={px(0)} y2={py(2)} pathLength={100} stroke={C.primary} strokeWidth={2.5} />
       <g className={`${a} ${fc(60)}`}>
         <circle cx={px(0)} cy={py(2)} r={5} fill={C.primary} />
-        <text x={px(0) + 8} y={py(2) + 16} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={px(0) + 8} y={py(2) + 16} fontSize={12} fontWeight={700} fill={C.primaryText}>
           (0, 2)
         </text>
       </g>
@@ -77,7 +77,7 @@ export default function Visual() {
         </text>
       </g>
       <g className={`${a} ${fc(46)}`}>
-        <text x={160} y={106} fontSize={18} fontWeight={700} fill={C.primary}>
+        <text x={160} y={106} fontSize={18} fontWeight={700} fill={C.primaryText}>
           = 2d + 2
         </text>
       </g>

@@ -61,12 +61,12 @@ export default function Visual() {
       <line className={`${a} ${dc(30)}`} x1={px(1)} y1={py(2)} x2={px(5)} y2={py(2)} pathLength={100} stroke={C.primary} strokeWidth={2.5} />
       <line className={`${a} ${dc(38)}`} x1={px(5)} y1={py(2)} x2={px(5)} y2={py(8)} pathLength={100} stroke={C.primary} strokeWidth={2.5} />
       <g className={`${a} ${fc(30)}`}>
-        <text x={px(3)} y={py(2) - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={px(3)} y={py(2) - 6} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           run 4
         </text>
       </g>
       <g className={`${a} ${fc(38)}`}>
-        <text x={px(5) + 8} y={py(5) + 4} fontSize={12} fontWeight={700} fill={C.primary}>
+        <text x={px(5) + 8} y={py(5) + 4} fontSize={12} fontWeight={700} fill={C.primaryText}>
           rise 6
         </text>
       </g>

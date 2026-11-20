@@ -67,7 +67,7 @@ export default function Visual() {
           <text x={216} y={146} fontSize={13} fontWeight={700} fill={C.muted}>sin = 1/2</text>
           <text x={216} y={160} fontSize={11} fill={C.muted}>up</text>
         </g>
-        <text className={cls("p4")} x={f(O.x + 27)} y={f(O.y - 4)} fontSize={12} fontWeight={700} fill={C.primary} stroke="none">
+        <text className={cls("p4")} x={f(O.x + 27)} y={f(O.y - 4)} fontSize={12} fontWeight={700} fill={C.primaryText} stroke="none">
           π/6
         </text>
       </g>

@@ -57,7 +57,7 @@ export default function Visual() {
         {/* the slopes */}
         <g className={cls("s1")} {...lab}>
           <text x={212} y={44} fontSize={11} fill={C.muted}>radius slope</text>
-          <text x={212} y={64} fontSize={18} fontWeight={700} fill={C.primary}>1/2</text>
+          <text x={212} y={64} fontSize={18} fontWeight={700} fill={C.primaryText}>1/2</text>
         </g>
         <g className={cls("s2")} {...lab}>
           <text x={212} y={96} fontSize={11} fill={C.muted}>tangent slope</text>

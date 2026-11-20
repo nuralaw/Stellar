@@ -76,7 +76,7 @@ export default function Visual() {
 
       {/* Key */}
       <g className={cls("hit")}>
-        <text x={64} y={40} fontSize={14} fontWeight={700} fill={C.primary}>
+        <text x={64} y={40} fontSize={14} fontWeight={700} fill={C.primaryText}>
           y = 5(2)
           <tspan dy={-6} fontSize={11}>
             x

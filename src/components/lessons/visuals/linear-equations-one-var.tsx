@@ -40,23 +40,23 @@ const css = `
 .v-linear-equations-one-var-p3 { fill: ${C.fill}; animation-name: v-linear-equations-one-var-p3; }
 @keyframes v-linear-equations-one-var-p3 { 0%, 59% { fill: ${C.soft} } 63%, 100% { fill: ${C.fill} } }
 .v-linear-equations-one-var-t1 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t1; }
-@keyframes v-linear-equations-one-var-t1 { 0%, 27% { fill: ${C.primary} } 30%, 100% { fill: ${C.muted} } }
+@keyframes v-linear-equations-one-var-t1 { 0%, 27% { fill: ${C.primaryText} } 30%, 100% { fill: ${C.muted} } }
 .v-linear-equations-one-var-t2 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t2; }
-@keyframes v-linear-equations-one-var-t2 { 0%, 43% { fill: ${C.primary} } 46%, 100% { fill: ${C.muted} } }
+@keyframes v-linear-equations-one-var-t2 { 0%, 43% { fill: ${C.primaryText} } 46%, 100% { fill: ${C.muted} } }
 .v-linear-equations-one-var-t3 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t3; }
-@keyframes v-linear-equations-one-var-t3 { 0%, 59% { fill: ${C.primary} } 63%, 100% { fill: ${C.muted} } }
+@keyframes v-linear-equations-one-var-t3 { 0%, 59% { fill: ${C.primaryText} } 63%, 100% { fill: ${C.muted} } }
 
 /* The pieces a move takes away light up with it ... */
 .v-linear-equations-one-var-b1 { animation-name: v-linear-equations-one-var-b1; }
 @keyframes v-linear-equations-one-var-b1 { 0%, 11% { fill: ${C.fill}; stroke: ${C.ink} } 14%, 100% { fill: ${C.soft}; stroke: ${C.primary} } }
 .v-linear-equations-one-var-x1 { animation-name: v-linear-equations-one-var-x1; }
-@keyframes v-linear-equations-one-var-x1 { 0%, 11% { fill: ${C.ink} } 14%, 100% { fill: ${C.primary} } }
+@keyframes v-linear-equations-one-var-x1 { 0%, 11% { fill: ${C.ink} } 14%, 100% { fill: ${C.primaryText} } }
 .v-linear-equations-one-var-d2 { animation-name: v-linear-equations-one-var-d2; }
 @keyframes v-linear-equations-one-var-d2 { 0%, 27% { fill: ${C.muted} } 30%, 100% { fill: ${C.primary} } }
 .v-linear-equations-one-var-b3 { animation-name: v-linear-equations-one-var-b3; }
 @keyframes v-linear-equations-one-var-b3 { 0%, 43% { fill: ${C.fill}; stroke: ${C.ink} } 46%, 100% { fill: ${C.soft}; stroke: ${C.primary} } }
 .v-linear-equations-one-var-x3 { animation-name: v-linear-equations-one-var-x3; }
-@keyframes v-linear-equations-one-var-x3 { 0%, 43% { fill: ${C.ink} } 46%, 100% { fill: ${C.primary} } }
+@keyframes v-linear-equations-one-var-x3 { 0%, 43% { fill: ${C.ink} } 46%, 100% { fill: ${C.primaryText} } }
 .v-linear-equations-one-var-d3 { animation-name: v-linear-equations-one-var-d3; }
 @keyframes v-linear-equations-one-var-d3 { 0%, 43% { fill: ${C.muted} } 46%, 100% { fill: ${C.primary} } }
 

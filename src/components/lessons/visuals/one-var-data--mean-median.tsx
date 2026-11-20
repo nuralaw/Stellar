@@ -68,10 +68,10 @@ export default function Visual() {
       <g transform={`translate(${px(8)} 126)`}>
         <path className={cls("mm")} d="M-6 10 L0 0 L6 10 Z" fill={C.primary} />
       </g>
-      <text className={cls("l6")} x={px(6)} y={156} fontSize={13} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("l6")} x={px(6)} y={156} fontSize={13} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         mean 6
       </text>
-      <text className={cls("l8")} x={px(8)} y={156} fontSize={13} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("l8")} x={px(8)} y={156} fontSize={13} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         mean 6 → 8
       </text>
     </Svg>

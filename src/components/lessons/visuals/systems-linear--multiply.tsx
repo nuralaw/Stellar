@@ -14,8 +14,8 @@ const fade = (t: number) => {
 const css = `
 .v-systems-linear--multiply-a { animation: 9s ease-in-out infinite; }
 ${[4, 20, 30, 44, 56, 70].map(fade).join("\n")}
-.v-systems-linear--multiply-hot { fill: ${C.primary}; animation-name: v-systems-linear--multiply-hot; }
-@keyframes v-systems-linear--multiply-hot { 0%, 44% { fill: ${C.ink} } 50%, 90% { fill: ${C.primary} } 97%, 100% { fill: ${C.ink} } }
+.v-systems-linear--multiply-hot { fill: ${C.primaryText}; animation-name: v-systems-linear--multiply-hot; }
+@keyframes v-systems-linear--multiply-hot { 0%, 44% { fill: ${C.ink} } 50%, 90% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
 `;
 const a = `${P}a`;
 const hot = `${P}hot`;
@@ -38,7 +38,7 @@ export default function Visual() {
       {/* Multiply the first by 2 */}
       <g className={`${a} ${fc(20)}`}>
         <path d="M130 41 H154 M148 36 L154 41 L148 46" fill="none" stroke={C.primary} strokeWidth={2} />
-        <text x={142} y={32} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={142} y={32} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           × 2
         </text>
       </g>

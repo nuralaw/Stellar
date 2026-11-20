@@ -28,8 +28,8 @@ const css = `
 @keyframes v-linear-equations-two-var-eq2 { 0%, 19% { opacity: 0; transform: translateX(-8px) } 26%, 100% { opacity: 1; transform: none } }
 
 /* Beat 2: the 4 is the y-intercept */
-.v-linear-equations-two-var-hb { fill: ${C.primary}; animation-name: v-linear-equations-two-var-hb; }
-@keyframes v-linear-equations-two-var-hb { 0%, 30% { fill: ${C.ink} } 33%, 100% { fill: ${C.primary} } }
+.v-linear-equations-two-var-hb { fill: ${C.primaryText}; animation-name: v-linear-equations-two-var-hb; }
+@keyframes v-linear-equations-two-var-hb { 0%, 30% { fill: ${C.ink} } 33%, 100% { fill: ${C.primaryText} } }
 .v-linear-equations-two-var-dot { transform-box: fill-box; transform-origin: center; animation-name: v-linear-equations-two-var-dot; }
 @keyframes v-linear-equations-two-var-dot { 0%, 30% { transform: scale(0) } 34% { transform: scale(1.6) } 37%, 100% { transform: scale(1) } }
 .v-linear-equations-two-var-capb { animation-name: v-linear-equations-two-var-capb; }
@@ -38,8 +38,8 @@ const css = `
 /* Beat 3: −2/3 is the slope: right 3 (the denominator), down 2 (the numerator) */
 .v-linear-equations-two-var-hd { fill: ${C.primary}; stroke: ${C.primary}; animation-name: v-linear-equations-two-var-hd; }
 @keyframes v-linear-equations-two-var-hd { 0%, 45% { fill: ${C.ink}; stroke: ${C.ink} } 49%, 100% { fill: ${C.primary}; stroke: ${C.primary} } }
-.v-linear-equations-two-var-hn { fill: ${C.primary}; animation-name: v-linear-equations-two-var-hn; }
-@keyframes v-linear-equations-two-var-hn { 0%, 52% { fill: ${C.ink} } 56%, 100% { fill: ${C.primary} } }
+.v-linear-equations-two-var-hn { fill: ${C.primaryText}; animation-name: v-linear-equations-two-var-hn; }
+@keyframes v-linear-equations-two-var-hn { 0%, 52% { fill: ${C.ink} } 56%, 100% { fill: ${C.primaryText} } }
 .v-linear-equations-two-var-step1 { stroke-dasharray: 100 200; animation-name: v-linear-equations-two-var-step1; }
 @keyframes v-linear-equations-two-var-step1 {
   0%, 44% { stroke-dashoffset: 101; opacity: 0 }
@@ -93,10 +93,10 @@ export default function Visual() {
         {/* Slope steps from the y-intercept: right 3, down 2, twice */}
         <path className="v-linear-equations-two-var-a v-linear-equations-two-var-step2" d="M 155 108 H 218 V 150" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} opacity={0.45} />
         <path className="v-linear-equations-two-var-a v-linear-equations-two-var-step1" d="M 92 66 H 155 V 108" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-        <text className="v-linear-equations-two-var-a v-linear-equations-two-var-run" x={123.5} y={60} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className="v-linear-equations-two-var-a v-linear-equations-two-var-run" x={123.5} y={60} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           3
         </text>
-        <text className="v-linear-equations-two-var-a v-linear-equations-two-var-drop" x={165.5} y={81} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primary}>
+        <text className="v-linear-equations-two-var-a v-linear-equations-two-var-drop" x={165.5} y={81} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           −2
         </text>
 
@@ -109,7 +109,7 @@ export default function Visual() {
           <circle cx={92} cy={66} r={4.5} />
         </g>
         <g className="v-linear-equations-two-var-a v-linear-equations-two-var-capb">
-          <text x={80} y={72} textAnchor="end" fontSize={17} fontWeight={700} fill={C.primary}>
+          <text x={80} y={72} textAnchor="end" fontSize={17} fontWeight={700} fill={C.primaryText}>
             4
           </text>
           <text x={80} y={87} textAnchor="end" fontSize={11} fill={C.muted}>
@@ -122,14 +122,14 @@ export default function Visual() {
           <text x={246} y={93} fontSize={11} fill={C.muted}>
             slope
           </text>
-          <text x={246} y={120} fontSize={17} fontWeight={700} fill={C.primary}>
+          <text x={246} y={120} fontSize={17} fontWeight={700} fill={C.primaryText}>
             −
           </text>
-          <text x={267} y={110.5} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={267} y={110.5} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             2
           </text>
           <path d="M 260 114.3 H 274" stroke={C.primary} strokeWidth={1.5} />
-          <text x={267} y={128.5} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={267} y={128.5} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             3
           </text>
         </g>

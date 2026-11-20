@@ -94,7 +94,7 @@ export default function Visual() {
         {/* The whole test */}
         <g className="v-digital-sat-format--shape-a v-digital-sat-format--shape-sum">
           <rect x={56} y={132} width={208} height={30} rx={15} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={160} y={152} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primary}>
+          <text x={160} y={152} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.primaryText}>
             98 questions · 2 h 14 min
           </text>
         </g>

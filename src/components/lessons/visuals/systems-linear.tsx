@@ -87,10 +87,10 @@ export default function Visual() {
           <text x={263} y={54} textAnchor="middle" fill={C.ink}>=</text>
           <text x={275} y={54} fill={C.ink}>7</text>
 
-          <text x={220} y={77} textAnchor="end" fill={C.primary}>2x</text>
+          <text x={220} y={77} textAnchor="end" fill={C.primaryText}>2x</text>
           <text className="v-systems-linear-a v-systems-linear-y" x={241} y={77} textAnchor="middle">− y</text>
-          <text x={263} y={77} textAnchor="middle" fill={C.primary}>=</text>
-          <text x={275} y={77} fill={C.primary}>5</text>
+          <text x={263} y={77} textAnchor="middle" fill={C.primaryText}>=</text>
+          <text x={275} y={77} fill={C.primaryText}>5</text>
         </g>
         <line className="v-systems-linear-a v-systems-linear-cut" x1={228} y1={49} x2={254} y2={49} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
         <line className="v-systems-linear-a v-systems-linear-cut" x1={228} y1={72} x2={254} y2={72} pathLength={100} stroke={C.muted} strokeWidth={1.5} />

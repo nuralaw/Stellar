@@ -60,7 +60,7 @@ export default function Visual() {
         {/* the shared side */}
         <g className={cls("side")}>
           <line x1={Cc.x} y1={Cc.y} x2={B.x} y2={B.y} stroke={C.primary} strokeWidth={4} />
-          <text x={f((Cc.x + B.x) / 2)} y={Cc.y + 18} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primary} stroke="none">
+          <text x={f((Cc.x + B.x) / 2)} y={Cc.y + 18} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.primaryText} stroke="none">
             3
           </text>
         </g>
@@ -74,7 +74,7 @@ export default function Visual() {
         <text className={cls("p2")} x={196} y={82} fontSize={16} fontWeight={700} fill={C.ink} stroke="none">
           sin(A) = 3/5
         </text>
-        <text className={cls("p3")} x={196} y={110} fontSize={16} fontWeight={700} fill={C.primary} stroke="none">
+        <text className={cls("p3")} x={196} y={110} fontSize={16} fontWeight={700} fill={C.primaryText} stroke="none">
           cos(B) = 3/5
         </text>
       </g>

@@ -91,10 +91,10 @@ export default function Visual() {
 
       {/* Side lengths */}
       <g className={`${a} ${fc(46)}`}>
-        <text x={OX + (XS + 3 * U) / 2} y={OY - 8} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={OX + (XS + 3 * U) / 2} y={OY - 8} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           x + 3
         </text>
-        <text x={OX - 8} y={OY + (XS + 2 * U) / 2 + 4} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={OX - 8} y={OY + (XS + 2 * U) / 2 + 4} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText}>
           x + 2
         </text>
       </g>
@@ -109,7 +109,7 @@ export default function Visual() {
         </text>
       </g>
       <g className={`${a} ${fc(72)}`}>
-        <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primary}>
+        <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
           2 × 3 = 6 and 2 + 3 = 5
         </text>
       </g>

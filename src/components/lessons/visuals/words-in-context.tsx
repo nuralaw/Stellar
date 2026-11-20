@@ -11,8 +11,8 @@ const css = `
 @keyframes v-words-in-context-scene { 0% { opacity: 0 } 5%, 93% { opacity: 1 } 99%, 100% { opacity: 0 } }
 
 /* Beat 1: the clue lights up and gets underlined */
-.v-words-in-context-clue { fill: ${C.primary}; animation-name: v-words-in-context-clue; }
-@keyframes v-words-in-context-clue { 0%, 10% { fill: ${C.ink} } 16%, 100% { fill: ${C.primary} } }
+.v-words-in-context-clue { fill: ${C.primaryText}; animation-name: v-words-in-context-clue; }
+@keyframes v-words-in-context-clue { 0%, 10% { fill: ${C.ink} } 16%, 100% { fill: ${C.primaryText} } }
 .v-words-in-context-line { stroke-dasharray: 100; stroke-dashoffset: 0; animation-name: v-words-in-context-line; }
 @keyframes v-words-in-context-line { 0%, 10% { stroke-dashoffset: 100 } 24%, 100% { stroke-dashoffset: 0 } }
 
@@ -79,7 +79,7 @@ export default function Visual() {
         {/* The prediction */}
         <g className="v-words-in-context-a v-words-in-context-pred">
           <text x={160} y={108} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.muted}>
-            clue → predict: <tspan fill={C.primary} fontWeight={700}>tough</tspan>
+            clue → predict: <tspan fill={C.primaryText} fontWeight={700}>tough</tspan>
           </text>
         </g>
 

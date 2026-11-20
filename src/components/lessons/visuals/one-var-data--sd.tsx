@@ -81,7 +81,7 @@ export default function Visual() {
         <path d={`M${px(5)} 133 H${px(3)} M${px(5)} 133 H${px(7)}`} />
       </g>
 
-      <text className={cls("res")} x={160} y={26} fontSize={14} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={26} fontSize={14} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         B is more spread out: larger SD
       </text>
     </Svg>

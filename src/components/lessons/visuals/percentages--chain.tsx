@@ -65,7 +65,7 @@ export default function Visual() {
 
       {/* Guide: where 40% of b falls, and the answer */}
       <line className={cls("guide")} x1={X0 + 40 * K} y1={66} x2={X0 + 40 * K} y2={128} stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
-      <text className={cls("res")} x={160} y={28} fontSize={16} fontWeight={700} fill={C.primary} textAnchor="middle">
+      <text className={cls("res")} x={160} y={28} fontSize={16} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         c = 40% of b
       </text>
     </Svg>
