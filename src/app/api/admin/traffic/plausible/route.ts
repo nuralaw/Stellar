@@ -19,7 +19,7 @@ function validZone(tz: string) {
 }
 
 export async function GET(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   if (!plausibleConfigured()) return Response.json({ configured: false } satisfies TrafficNotConfigured, { headers: NO_STORE });
 

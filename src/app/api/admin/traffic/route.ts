@@ -17,7 +17,7 @@ function validZone(tz: string) {
 }
 
 export async function GET(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   if (!trafficConfigured()) return Response.json({ error: "Supabase isn't configured on this server." }, { status: 503, headers: NO_STORE });
 

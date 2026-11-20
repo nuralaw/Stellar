@@ -21,7 +21,7 @@ async function body(request: Request): Promise<Record<string, unknown> | null> {
 const bad = (error: string) => Response.json({ error }, { status: 400, headers: NO_STORE });
 
 export async function POST(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   const b = await body(request);
   if (!b) return bad("Bad request.");
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   const b = await body(request);
   if (!b) return bad("Bad request.");

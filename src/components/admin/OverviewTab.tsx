@@ -8,6 +8,7 @@ import type { ReportReason } from "@/lib/report-reasons";
 import type { ReportItem } from "@/lib/reports";
 import type { SupportRequest } from "@/lib/support";
 import { getSkill } from "@/lib/taxonomy";
+import { loadInbox } from "./inbox-data";
 import { formatMoney, moneyDelta } from "./money";
 import { type Money, type RevenueData, type RevenueResult, useRevenueKpis } from "./revenue-data";
 
@@ -68,9 +69,10 @@ export function useAdminInbox(skip = false) {
 
   const fetchIt = useCallback(async (): Promise<Partial<State>> => {
     try {
-      const res = await fetch("/api/admin/inbox", { cache: "no-store" });
-      if (res.status === 401 || res.status === 403) return { denied: true, loading: false };
-      return { inbox: await res.json(), loading: false, error: null, denied: false };
+      const inbox = await loadInbox();
+      if (inbox === "denied") return { denied: true, loading: false };
+      if (inbox === "offline") return { loading: false, error: "Couldn't load the list. Check your connection." };
+      return { inbox, loading: false, error: null, denied: false };
     } catch {
       return { loading: false, error: "Couldn't load the list. Check your connection." };
     }

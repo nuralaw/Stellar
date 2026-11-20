@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Avatar } from "@/components/Avatar";
 import { I, Icon } from "@/components/bank/icons";
+import { adminFetch } from "@/lib/admin-keys";
 import { ROUNDS, ROUND_SIZE, shiftWeek, weekLabel, type RoundId } from "@/lib/competition";
 import type { AdminEntry } from "@/lib/competition-server";
 
@@ -29,7 +30,7 @@ const when = (at: number) => new Date(at).toLocaleString(undefined, { weekday: "
 const keyOf = (e: AdminEntry) => `${e.round}|${e.userId}`;
 
 async function fetchWeek(week: string | null): Promise<Data> {
-  const res = await fetch(`/api/admin/competition${week ? `?week=${week}` : ""}`, { cache: "no-store" });
+  const res = await adminFetch(`/api/admin/competition${week ? `?week=${week}` : ""}`, { cache: "no-store" });
   const json = await res.json().catch(() => null);
   if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account to see the competition.");
   if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
@@ -70,7 +71,7 @@ export function CompetitionTab() {
     setError(null);
     try {
       const body = { week: data.week, round: e.round, userId: e.userId, ...(action === "reset" ? {} : { annulled: action === "annul" }) };
-      const res = await fetch("/api/admin/competition", {
+      const res = await adminFetch("/api/admin/competition", {
         method: action === "reset" ? "DELETE" : "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

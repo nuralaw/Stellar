@@ -1,11 +1,14 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
+import { sealBytesServer, sealConfigured, sealJsonServer } from "./seal-server";
 
 // Support requests from the Home page's Support button: contacts, a screenshot, and what went wrong.
-//  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/support.sql run once.
+//  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/support.sql (+ sealed.sql) run once.
 //    The screenshot goes to the private storage bucket "support-screenshots", the row keeps its file name.
 //  - Local files (development fallback): .data/support.json + .data/support/<file>. Doesn't work on Vercel.
+// Personal data is never stored in the clear: contacts + message go into `sealed` (encrypted with the admin's public key,
+// see seal-server.ts) and the screenshot is stored as an encrypted blob (*.enc). Without ADMIN_SEAL_PUBLIC_KEY requests are refused.
 
 export interface SupportRequest {
   id: string;
@@ -13,8 +16,14 @@ export interface SupportRequest {
   instagram: string;
   other: string;
   message: string;
-  /** File name of the screenshot (in .data/support/ or the storage bucket), if one was attached. */
+  /** File name of the screenshot (in .data/support/ or the storage bucket), if one was attached. New ones end in .enc (sealed). */
   screenshot: string | null;
+  /** Sealed {telegram, instagram, other, message, shotMime?}; the plain fields above are '' when this is set. The admin's browser opens it. */
+  sealed?: string | null;
+  /** Browser-only (set after decrypting in the admin panel): why a sealed request couldn't be opened here. */
+  locked?: "no-key" | "wrong-key";
+  /** Browser-only: the screenshot's real type, from the sealed data. */
+  shotMime?: string;
   /** Anonymous browser id (same as the competition id), if sent. */
   userId: string | null;
   at: number;
@@ -67,7 +76,7 @@ export async function parseSupport(form: FormData, now: number): Promise<{ req: 
   const raw = form.get("userId");
   const userId = typeof raw === "string" && /^[0-9a-f-]{36}$/i.test(raw) ? raw.toLowerCase() : null;
   const id = `${new Date(now).toISOString().slice(0, 10)}-${crypto.randomUUID().slice(0, 8)}`;
-  return { req: { id, telegram, instagram, other, message, screenshot: image ? `${id}.${image.ext}` : null, userId, at: now }, image };
+  return { req: { id, telegram, instagram, other, message, screenshot: image ? `${id}.enc` : null, userId, at: now }, image };
 }
 
 const DIR = path.join(process.cwd(), ".data");
@@ -75,14 +84,26 @@ const SB_URL = process.env.SUPABASE_URL?.replace(/\/$/, "");
 const SB_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const MIME = { jpg: "image/jpeg", png: "image/png", webp: "image/webp" } as Record<string, string>;
 
-export async function saveSupport(req: SupportRequest, image: { bytes: Uint8Array<ArrayBuffer>; ext: string } | null) {
+export async function saveSupport(plain: SupportRequest, image: { bytes: Uint8Array<ArrayBuffer>; ext: string } | null) {
+  if (!sealConfigured()) throw new SupportError("Support isn't set up yet.", 503);
+  let sealed: string;
+  let shot: Uint8Array<ArrayBuffer> | null = null;
+  try {
+    const { telegram, instagram, other, message } = plain;
+    sealed = await sealJsonServer({ telegram, instagram, other, message, shotMime: image ? MIME[image.ext] : undefined });
+    if (image) shot = await sealBytesServer(image.bytes);
+  } catch (e) {
+    console.error("[support] couldn't seal the request:", e instanceof Error ? e.message : e);
+    throw new SupportError("Support isn't set up yet.", 503);
+  }
+  const req: SupportRequest = { ...plain, telegram: "", instagram: "", other: "", message: "", sealed };
   if (SB_URL && SB_KEY) {
     const auth = { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` };
-    if (image && req.screenshot) {
+    if (shot && req.screenshot) {
       const up = await fetch(`${SB_URL}/storage/v1/object/support-screenshots/${req.screenshot}`, {
         method: "POST",
-        headers: { ...auth, "Content-Type": MIME[image.ext] },
-        body: image.bytes,
+        headers: { ...auth, "Content-Type": "application/octet-stream" },
+        body: shot,
         cache: "no-store",
       });
       if (!up.ok) throw new SupportError("Couldn't upload the screenshot. Try again later.", 503);
@@ -96,6 +117,7 @@ export async function saveSupport(req: SupportRequest, image: { bytes: Uint8Arra
         instagram: req.instagram,
         other: req.other,
         message: req.message,
+        sealed: req.sealed,
         screenshot: req.screenshot,
         user_id: req.userId,
         created_at: new Date(req.at).toISOString(),
@@ -111,9 +133,9 @@ export async function saveSupport(req: SupportRequest, image: { bytes: Uint8Arra
     try {
       all = JSON.parse(fs.readFileSync(file, "utf8"));
     } catch {}
-    if (image && req.screenshot) {
+    if (shot && req.screenshot) {
       fs.mkdirSync(path.join(DIR, "support"), { recursive: true });
-      fs.writeFileSync(path.join(DIR, "support", req.screenshot), image.bytes);
+      fs.writeFileSync(path.join(DIR, "support", req.screenshot), shot);
     }
     all.push(req);
     fs.mkdirSync(DIR, { recursive: true });
@@ -157,6 +179,7 @@ export async function listSupport(): Promise<SupportRequest[]> {
       other: String(r.other ?? ""),
       message: String(r.message ?? ""),
       screenshot: typeof r.screenshot === "string" ? r.screenshot : null,
+      sealed: typeof r.sealed === "string" ? r.sealed : null,
       userId: typeof r.user_id === "string" ? r.user_id : null,
       at: Date.parse(String(r.created_at)),
       bugConfirmed: r.bug_confirmed === true,
@@ -202,19 +225,21 @@ export async function updateSupport(id: string, patch: { resolved?: boolean; bug
   fs.writeFileSync(path.join(DIR, "support.json"), JSON.stringify(all, null, 1));
 }
 
-/** A screenshot's bytes, by the file name saved with the request. */
-export async function readScreenshot(file: string): Promise<{ body: BodyInit; type: string } | null> {
-  const ext = /^[\w-]+\.(jpg|png|webp)$/.exec(file)?.[1];
+/** A screenshot's bytes, by the file name saved with the request. `sealed` = a *.enc file: encrypted, returned as stored. */
+export async function readScreenshot(file: string): Promise<{ body: BodyInit; type: string; sealed: boolean } | null> {
+  const ext = /^[\w-]+\.(jpg|png|webp|enc)$/.exec(file)?.[1];
   if (!ext) return null;
+  const sealed = ext === "enc";
+  const type = sealed ? "application/octet-stream" : MIME[ext];
   if (SB_URL && SB_KEY) {
     const res = await fetch(`${SB_URL}/storage/v1/object/support-screenshots/${file}`, {
       headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
       cache: "no-store",
     });
-    return res.ok ? { body: await res.arrayBuffer(), type: MIME[ext] } : null;
+    return res.ok ? { body: await res.arrayBuffer(), type, sealed } : null;
   }
   try {
-    return { body: new Uint8Array(fs.readFileSync(path.join(DIR, "support", file))), type: MIME[ext] };
+    return { body: new Uint8Array(fs.readFileSync(path.join(DIR, "support", file))), type, sealed };
   } catch {
     return null;
   }

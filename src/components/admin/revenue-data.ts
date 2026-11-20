@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { adminFetch } from "@/lib/admin-keys";
 import { PLUS } from "@/lib/plus-config";
+import { openSealed } from "./inbox-data";
 import { addDays, type Bucket, isoDay, periodQuery, startOfDay } from "./charts";
 
 // Data side of the admin Revenue views: the types of /api/admin/revenue (SQL in supabase/payments.sql),
@@ -34,6 +36,10 @@ export type Purchase = {
   sale_id: string;
   sale_at: string;
   email: string | null;
+  /** Buyer email + ping, sealed for the admin (see openEmails). New rows only; old rows have `email`. */
+  sealed?: string | null;
+  /** Browser-only: the email is encrypted and this browser can't open it. */
+  emailLocked?: boolean;
   user_id: string | null;
   plan: "monthly" | "pass" | null;
   product_name: string | null;
@@ -87,6 +93,19 @@ export function ago(iso: string) {
   return d < 30 ? `${d} d ago` : new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
+/** Fills `email` of sealed purchases by decrypting in this browser; rows it can't open get emailLocked. */
+async function openEmails(rows: Purchase[]): Promise<Purchase[]> {
+  return Promise.all(
+    rows.map(async (p) => {
+      if (!p.sealed) return p;
+      const o = await openSealed(p.sealed);
+      if (!o.ok) return { ...p, emailLocked: true };
+      const email = o.data && typeof o.data === "object" ? (o.data as { email?: unknown }).email : undefined;
+      return { ...p, email: typeof email === "string" && email ? email : null };
+    }),
+  );
+}
+
 export async function fetchRevenue(from: Date, to: Date, bucket: Bucket): Promise<RevenueResult> {
   if (process.env.NODE_ENV !== "production") {
     const mock = new URLSearchParams(window.location.search).get("mock");
@@ -102,10 +121,10 @@ export async function fetchRevenue(from: Date, to: Date, bucket: Bucket): Promis
   try {
     const q = periodQuery(from.getTime(), bucket, "");
     q.set("to", to.toISOString());
-    const res = await fetch(`/api/admin/revenue?${q}`, { cache: "no-store" });
+    const res = await adminFetch(`/api/admin/revenue?${q}`, { cache: "no-store" });
     const json = await res.json().catch(() => null);
     if (res.status === 401 || res.status === 403) return { kind: "denied" };
-    if (res.ok && json?.stats && json?.kpis) return { kind: "ok", data: json };
+    if (res.ok && json?.stats && json?.kpis) return { kind: "ok", data: { ...json, recent: await openEmails(json.recent ?? []) } };
     if (json?.setup) return { kind: "setup", error: json.error, configured: json.configured };
     return { kind: "error", error: json?.error ?? `HTTP ${res.status}`, configured: json?.configured };
   } catch {

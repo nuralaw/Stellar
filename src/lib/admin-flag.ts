@@ -51,7 +51,9 @@ function verifyOnce() {
     return;
   }
   verifying = true;
-  fetch("/api/admin/me", { cache: "no-store" })
+  // Loaded on demand: only the admin's browser needs the signing code (the layout bundle stays small for everyone else).
+  import("./admin-keys")
+    .then((k) => k.adminFetch("/api/admin/me", { cache: "no-store" }))
     .then((r) => (r.ok ? r.json() : null))
     .then((m: { admin?: boolean } | null) => {
       if (!m) return; // server hiccup: keep the flag, try again next load

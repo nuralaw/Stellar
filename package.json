@@ -21,7 +21,8 @@
     "lessons:visuals": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/lessons-visuals.mjs",
     "vocab:build": "node scripts/vocab-build.mjs",
     "db:apply": "node scripts/db-apply.mjs",
-    "gumroad:setup": "node scripts/gumroad-setup.mjs"
+    "gumroad:setup": "node scripts/gumroad-setup.mjs",
+    "data:seal": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seal-existing.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

@@ -53,8 +53,8 @@ async function listRows(): Promise<Row[]> {
   return res.json();
 }
 
-export async function GET() {
-  const denied = await adminOnly();
+export async function GET(request: Request) {
+  const denied = await adminOnly(request);
   if (denied) return denied;
   if (!SB_URL || !SB_KEY) return Response.json({ error: "Supabase isn't configured on this server." }, { status: 503, headers: NO_STORE });
   try {
@@ -84,7 +84,7 @@ async function body(request: Request): Promise<Record<string, unknown> | null> {
 const bad = (error: string) => Response.json({ error }, { status: 400, headers: NO_STORE });
 
 export async function POST(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   const b = await body(request);
   if (!b) return bad("Bad request.");
@@ -112,7 +112,7 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   const b = await body(request);
   if (!b) return bad("Bad request.");

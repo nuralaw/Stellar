@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { adminFetch, getSealKey, onKeysChange, openBytesAny, promotePendingDeviceKey } from "@/lib/admin-keys";
 import { setAdminFlag } from "@/lib/admin-flag";
 import { CONTACT_ICONS } from "@/lib/contacts";
 import { REPORT_REASONS } from "@/lib/report-reasons";
@@ -17,10 +18,12 @@ import { PAGE } from "@/lib/ui";
 import { AccountsTab } from "./AccountsTab";
 import { CompetitionTab } from "./CompetitionTab";
 import { ForgotPasswordLink } from "./ForgotPassword";
+import { LOCKED_TEXT, loadInbox, type Inbox } from "./inbox-data";
 import { formatMoney } from "./money";
 import { OverviewTab } from "./OverviewTab";
 import { ReportsByQuestion } from "./ReportsByQuestion";
 import { RevenueTab } from "./RevenueTab";
+import { SecurityTab, type SecurityMe } from "./SecurityTab";
 import { useRevenueKpis } from "./revenue-data";
 import { TrafficTab } from "./TrafficTab";
 
@@ -28,8 +31,7 @@ import { TrafficTab } from "./TrafficTab";
 // Overview, Revenue (Gumroad sales), Accounts, Traffic, support requests from the Support button, problem reports on questions, Competition.
 // Uses useSearchParams (?tab=…), so app/admin/page.tsx wraps this in <Suspense>.
 
-type Me = { configured: boolean; signedIn: boolean; admin: boolean; email: string | null };
-type Inbox = { support: SupportRequest[]; reports: ReportItem[]; bugCode?: boolean; errors: { support?: string; reports?: string } };
+type Me = { configured: boolean; signedIn: boolean; admin: boolean; email: string | null } & SecurityMe;
 /** What the PATCH answers about the discount when a bug is (un)confirmed, in words. */
 const DISCOUNT_NOTICE: Record<string, string> = {
   granted: "Bug confirmed: the discount was sent to the student's account.",
@@ -50,6 +52,7 @@ const TABS = [
   { id: "support", label: "Support requests" },
   { id: "reports", label: "Question reports" },
   { id: "competition", label: "Competition" },
+  { id: "security", label: "Security" },
 ] as const;
 type Tab = (typeof TABS)[number]["id"];
 /** The two inbox lists (filter + search + cards). */
@@ -74,7 +77,8 @@ const when = (at: number) => new Date(at).toLocaleString(undefined, { day: "nume
 
 async function fetchMe(): Promise<Me> {
   try {
-    const m: Me = await (await fetch("/api/admin/me", { cache: "no-store" })).json();
+    await promotePendingDeviceKey().catch(() => {}); // a replacement device key the server accepts by now becomes the active one
+    const m: Me = await (await adminFetch("/api/admin/me", { cache: "no-store" })).json();
     setAdminFlag(m.admin);
     return m;
   } catch {
@@ -82,15 +86,7 @@ async function fetchMe(): Promise<Me> {
   }
 }
 
-async function fetchInbox(): Promise<Inbox | "denied" | "offline"> {
-  try {
-    const res = await fetch("/api/admin/inbox", { cache: "no-store" });
-    if (res.status === 401 || res.status === 403) return "denied";
-    return await res.json();
-  } catch {
-    return "offline";
-  }
-}
+const fetchInbox = loadInbox;
 
 /** Is the Google provider on in Supabase? (Public /auth/v1/settings.) null = couldn't tell, try anyway. */
 async function googleEnabled(): Promise<boolean | null> {
@@ -146,7 +142,9 @@ export function AdminPanel() {
       </Centered>
     );
   }
-  return <Dashboard email={me.email ?? ""} onSignOut={signOut} onDenied={loadMe} />;
+  // Admin account, but this browser isn't an allowed device yet: only the setup screen (every admin API would answer 403).
+  if (me.device !== "ok") return <SecurityGate me={me} onReload={loadMe} onSignOut={signOut} />;
+  return <Dashboard me={me} onSignOut={signOut} onDenied={loadMe} />;
 }
 
 function Centered({ title, children }: { title: string; children: ReactNode }) {
@@ -260,7 +258,70 @@ function SignIn({ onSignedIn }: { onSignedIn: () => unknown }) {
   );
 }
 
-function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: () => void; onDenied: () => unknown }) {
+/** Header card (the same plus-surface as the dashboard's), so text is side-ink / side-ink/80 only. */
+function SetupHeader({ title, email, children }: { title: string; email: string; children: ReactNode }) {
+  return (
+    <header className="plus-surface flex flex-wrap items-start justify-between gap-4 rounded-3xl p-6 text-side-ink ring-1 ring-white/10">
+      <div className="min-w-0">
+        <h1 className="text-3xl font-bold tracking-tight text-side-ink md:text-4xl">{title}</h1>
+        <p className="mt-2 text-sm break-all text-side-ink/80 sm:text-base">
+          Signed in as <span className="font-medium text-side-ink">{email}</span>
+        </p>
+      </div>
+      <div className="flex flex-wrap items-center gap-2">{children}</div>
+    </header>
+  );
+}
+
+const HEADER_BTN = `inline-flex h-11 items-center gap-2 rounded-xl border border-white/20 px-4 text-sm font-semibold text-side-ink hover:bg-white/10 ${FOCUS_ON_DARK}`;
+
+/** Shown instead of the dashboard while this browser can't use the admin APIs. */
+function SecurityGate({ me, onReload, onSignOut }: { me: Me; onReload: () => unknown; onSignOut: () => void }) {
+  return (
+    <section className={PAGE}>
+      <SetupHeader title="Admin security" email={me.email ?? ""}>
+        <button type="button" onClick={onReload} className={HEADER_BTN}>
+          Check again
+        </button>
+        <button type="button" onClick={onSignOut} className={HEADER_BTN}>
+          <Icon d={LOGOUT} className="h-4.5 w-4.5" />
+          Sign out
+        </button>
+      </SetupHeader>
+      <p className="mt-5 rounded-xl bg-accent-soft px-4 py-3 text-sm">The admin pages are locked to approved devices. Set this browser up below; the dashboard opens as soon as the server accepts it.</p>
+      <SecurityTab me={me} onChanged={onReload} />
+    </section>
+  );
+}
+
+/** Does this browser hold the key the server seals for? Drives the banner on the dashboard. */
+function useSealState(server: string | null | undefined): "loading" | "ok" | "no-server" | "no-key" | "mismatch" {
+  const [key, setKey] = useState<string | null | undefined>(undefined);
+  useEffect(() => {
+    let live = true;
+    const read = () => getSealKey().then((k) => live && setKey(k?.spki ?? null));
+    read();
+    const off = onKeysChange(read);
+    return () => {
+      live = false;
+      off();
+    };
+  }, []);
+  if (key === undefined) return "loading";
+  if (!server) return "no-server";
+  if (!key) return "no-key";
+  return key === server ? "ok" : "mismatch";
+}
+
+const SEAL_BANNER = {
+  "no-server": "Personal data isn't encrypted yet: new support requests and reports are refused until you create a decryption key.",
+  "no-key": "This browser has no decryption key, so encrypted requests, reports and buyer emails can't be read here.",
+  mismatch: "The key in this browser doesn't match the server's, so new encrypted data can't be read here.",
+} as const;
+
+function Dashboard({ me, onSignOut, onDenied }: { me: Me; onSignOut: () => void; onDenied: () => unknown }) {
+  const email = me.email ?? "";
+  const sealState = useSealState(me.sealPublicKey);
   const searchParams = useSearchParams();
   const urlTab = searchParams.get("tab");
   const tab: Tab = isTab(urlTab) ? urlTab : DEFAULT_TAB;
@@ -305,6 +366,13 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
     };
   }, [show]);
 
+  // A key made or restored in the Security tab: read the lists again so the rows open.
+  const reload = useRef(load);
+  useEffect(() => {
+    reload.current = load;
+  });
+  useEffect(() => onKeysChange(() => reload.current()), []);
+
   /** Optimistic: flip it now, put it back if the server says no. */
   const update = async (kind: "support" | "report", id: string, patch: { resolved?: boolean; bugConfirmed?: boolean }) => {
     const apply = (p: typeof patch) =>
@@ -319,7 +387,7 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
     apply(patch);
     setNotice(null);
     try {
-      const res = await fetch("/api/admin/inbox", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind, id, ...patch }) });
+      const res = await adminFetch("/api/admin/inbox", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind, id, ...patch }) });
       if (!res.ok) throw new Error((await res.json().catch(() => null))?.error ?? "Couldn't save");
       if (kind === "support" && patch.bugConfirmed !== undefined) {
         const out: { discount?: string } | null = await res.json().catch(() => null);
@@ -415,13 +483,15 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
       case "accounts":
         return <AccountsTab />;
       case "traffic":
-        return <TrafficTab />;
+        return <TrafficTab onDenied={onDenied} />;
       case "competition":
         return (
           <div className="mt-5">
             <CompetitionTab />
           </div>
         );
+      case "security":
+        return <SecurityTab me={me} onChanged={onDenied} />;
     }
   };
 
@@ -489,6 +559,15 @@ function Dashboard({ email, onSignOut, onDenied }: { email: string; onSignOut: (
           })}
         </div>
       </div>
+
+      {sealState !== "ok" && sealState !== "loading" && tab !== "security" && (
+        <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-xl bg-accent-soft px-4 py-3 text-sm">
+          {SEAL_BANNER[sealState]}
+          <button type="button" onClick={() => selectTab("security")} className="font-semibold underline underline-offset-2">
+            Open Security
+          </button>
+        </p>
+      )}
 
       {error && (
         <p role="alert" className="mt-5 rounded-xl bg-danger-soft px-4 py-3 text-sm text-danger">
@@ -590,24 +669,93 @@ function Contacts({ telegram, instagram, other }: { telegram: string; instagram:
   );
 }
 
+/** Placeholder for a sealed row this browser can't open. */
+export function Locked({ why }: { why: "no-key" | "wrong-key" }) {
+  return <p className="mt-2 rounded-xl bg-surface-2 px-3.5 py-3 text-sm text-muted">{LOCKED_TEXT[why]}</p>;
+}
+
+/**
+ * A support request's screenshot. The file is fetched with the device signature (an <img src> can't carry it), opened here when it's
+ * sealed (*.enc), and shown from a blob URL that is revoked on unmount. Loads when the card scrolls near the screen.
+ */
+function Screenshot({ file, mime }: { file: string; mime?: string }) {
+  const box = useRef<HTMLDivElement>(null);
+  const [near, setNear] = useState(false);
+  const [url, setUrl] = useState<string | null>(null);
+  const [failed, setFailed] = useState<string | null>(null);
+
+  useEffect(() => {
+    const el = box.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setNear(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((x) => x.isIntersecting)) return;
+        setNear(true);
+        io.disconnect();
+      },
+      { rootMargin: "300px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!near) return;
+    let live = true;
+    let made: string | null = null;
+    (async () => {
+      try {
+        const res = await adminFetch(`/api/admin/screenshot/${file}`, { cache: "no-store" });
+        if (!res.ok) throw new Error("The screenshot couldn't be loaded.");
+        let blob: Blob;
+        if (file.endsWith(".enc")) {
+          const opened = await openBytesAny(new Uint8Array(await res.arrayBuffer()));
+          if (!opened.ok) throw new Error(LOCKED_TEXT[opened.why]);
+          blob = new Blob([opened.data], { type: mime && /^image\/(jpeg|png|webp)$/.test(mime) ? mime : "image/png" });
+        } else blob = await res.blob();
+        if (!live) return;
+        made = URL.createObjectURL(blob);
+        setUrl(made);
+      } catch (e) {
+        if (live) setFailed(e instanceof Error ? e.message : "The screenshot couldn't be opened.");
+      }
+    })();
+    return () => {
+      live = false;
+      if (made) URL.revokeObjectURL(made);
+    };
+  }, [near, file, mime]);
+
+  return (
+    <div ref={box} className="mt-3 w-fit max-w-full">
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" className="block w-fit max-w-full">
+          {/* eslint-disable-next-line @next/next/no-img-element -- private, admin-only image */}
+          <img src={url} alt="Screenshot from the request (opens full size)" decoding="async" className="max-h-64 max-w-full rounded-xl bg-surface-2 object-contain ring-1 ring-line" />
+        </a>
+      ) : (
+        <p className="rounded-xl bg-surface-2 px-3.5 py-3 text-sm text-muted">{failed ?? "Loading the screenshot…"}</p>
+      )}
+    </div>
+  );
+}
+
 function SupportCard({ r, update }: { r: SupportRequest; update: Update }) {
   return (
     <article className={`rounded-2xl border border-line bg-surface p-4 sm:p-5 ${r.resolved ? "opacity-70" : ""}`}>
       <time className="text-sm text-muted">{when(r.at)}</time>
-      <p className="mt-2 whitespace-pre-wrap break-words">{r.message}</p>
-      {r.screenshot && (
-        <a href={`/api/admin/screenshot/${r.screenshot}`} target="_blank" rel="noreferrer" className="mt-3 block w-fit max-w-full">
-          {/* eslint-disable-next-line @next/next/no-img-element -- private, admin-only image */}
-          <img
-            src={`/api/admin/screenshot/${r.screenshot}`}
-            alt="Screenshot from the request (opens full size)"
-            loading="lazy"
-            decoding="async"
-            className="max-h-64 max-w-full rounded-xl bg-surface-2 object-contain ring-1 ring-line"
-          />
-        </a>
+      {r.locked ? (
+        <Locked why={r.locked} />
+      ) : (
+        <>
+          <p className="mt-2 whitespace-pre-wrap break-words">{r.message}</p>
+          {r.screenshot && <Screenshot file={r.screenshot} mime={r.shotMime} />}
+          <Contacts telegram={r.telegram} instagram={r.instagram} other={r.other} />
+        </>
       )}
-      <Contacts telegram={r.telegram} instagram={r.instagram} other={r.other} />
       <div className="mt-4 flex flex-wrap gap-2 border-t border-line pt-4">
         <Toggle on={Boolean(r.bugConfirmed)} onClick={() => update("support", r.id, { bugConfirmed: !r.bugConfirmed })}>
           Real bug · 50% off
@@ -647,7 +795,7 @@ function ReportCard({ r, update }: { r: ReportItem; update: Update }) {
         <time className="text-sm text-muted">{when(r.at)}</time>
       </div>
       <p className="mt-2 text-sm font-medium text-accent">{REPORT_REASONS[r.reason] ?? r.reason}</p>
-      {r.note && <p className="mt-1 whitespace-pre-wrap break-words">{r.note}</p>}
+      {r.locked ? <Locked why={r.locked} /> : r.note && <p className="mt-1 whitespace-pre-wrap break-words">{r.note}</p>}
       {q && (
         <div className="mt-3 rounded-xl bg-surface-2 px-3.5 py-3 text-sm">
           <p className="line-clamp-2 text-muted">{q.text}</p>
@@ -656,7 +804,7 @@ function ReportCard({ r, update }: { r: ReportItem; update: Update }) {
           </p>
         </div>
       )}
-      <Contacts telegram={r.telegram} instagram={r.instagram} />
+      {!r.locked && <Contacts telegram={r.telegram} instagram={r.instagram} />}
       <div className="mt-4 border-t border-line pt-4">
         <Toggle on={r.resolved} onClick={() => update("report", r.id, { resolved: !r.resolved })}>
           Resolved

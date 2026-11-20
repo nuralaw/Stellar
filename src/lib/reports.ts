@@ -3,10 +3,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { getQuestionsByIds } from "./bank";
 import { REPORT_REASONS, type ReportReason } from "./report-reasons";
+import { sealConfigured, sealJsonServer } from "./seal-server";
 
 // Problem reports on questions ("the answer key is wrong", typos…).
-//  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/reports.sql run once.
+//  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/reports.sql (+ sealed.sql) run once.
 //  - Local file (development fallback): .data/reports.json. Doesn't work on Vercel (read-only file system).
+// The note and contacts are personal: they're stored sealed with the admin's public key (seal-server.ts), the plain fields stay ''.
+// qid and reason aren't personal and stay readable. Without ADMIN_SEAL_PUBLIC_KEY reports are refused.
 
 export interface Report {
   qid: string;
@@ -18,6 +21,10 @@ export interface Report {
   /** Anonymous browser id (same as the competition id), if sent. */
   userId: string | null;
   at: number;
+  /** Sealed {note, telegram, instagram}; the plain fields above are '' when this is set. The admin's browser opens it. */
+  sealed?: string | null;
+  /** Browser-only (set after decrypting in the admin panel): why a sealed report couldn't be opened here. */
+  locked?: "no-key" | "wrong-key";
 }
 
 export class ReportError extends Error {
@@ -45,12 +52,21 @@ const FILE = path.join(process.cwd(), ".data", "reports.json");
 const SB_URL = process.env.SUPABASE_URL?.replace(/\/$/, "");
 const SB_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-export async function saveReport(r: Report) {
+export async function saveReport(plain: Report) {
+  if (!sealConfigured()) throw new ReportError("Reports aren't set up yet.", 503);
+  let sealed: string;
+  try {
+    sealed = await sealJsonServer({ note: plain.note, telegram: plain.telegram, instagram: plain.instagram });
+  } catch (e) {
+    console.error("[reports] couldn't seal the report:", e instanceof Error ? e.message : e);
+    throw new ReportError("Reports aren't set up yet.", 503);
+  }
+  const r: Report = { ...plain, note: "", telegram: "", instagram: "", sealed };
   if (SB_URL && SB_KEY) {
     const res = await fetch(`${SB_URL}/rest/v1/question_reports`, {
       method: "POST",
       headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, "Content-Type": "application/json", Prefer: "return=minimal" },
-      body: JSON.stringify({ qid: r.qid, reason: r.reason, note: r.note, telegram: r.telegram, instagram: r.instagram, user_id: r.userId, created_at: new Date(r.at).toISOString() }),
+      body: JSON.stringify({ qid: r.qid, reason: r.reason, note: r.note, telegram: r.telegram, instagram: r.instagram, sealed: r.sealed, user_id: r.userId, created_at: new Date(r.at).toISOString() }),
       cache: "no-store",
     });
     if (!res.ok) throw new ReportError("Couldn't save the report. Try again later.", 503);
@@ -110,6 +126,7 @@ export async function listReports(): Promise<ReportItem[]> {
       note: String(r.note ?? ""),
       telegram: String(r.telegram ?? ""),
       instagram: String(r.instagram ?? ""),
+      sealed: typeof r.sealed === "string" ? r.sealed : null,
       userId: typeof r.user_id === "string" ? r.user_id : null,
       at: Date.parse(String(r.created_at)),
       resolved: r.resolved === true,

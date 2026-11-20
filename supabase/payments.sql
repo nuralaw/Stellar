@@ -20,7 +20,7 @@ create table if not exists public.purchases (
   disputed        boolean     not null default false,
   sale_at         timestamptz not null,
   access_until    timestamptz,                                   -- the Plus end date this sale granted
-  raw             jsonb,                                         -- the ping minus the card
+  raw             jsonb,                                         -- the ping minus the card (legacy rows; new ones are sealed, see sealed.sql)
   created_at      timestamptz not null default now(),
   updated_at      timestamptz not null default now()
 );
@@ -48,6 +48,10 @@ create table if not exists public.payment_events (
   at            timestamptz not null default now()
 );
 create index if not exists payment_events_at on public.payment_events (at);
+
+-- Personal data (buyer email, the ping) is stored encrypted for the admin only (see sealed.sql); these columns hold the ciphertext.
+alter table public.purchases add column if not exists sealed text;
+alter table public.payment_events add column if not exists sealed text;
 
 alter table public.purchases enable row level security;
 alter table public.payment_events enable row level security;
@@ -186,7 +190,7 @@ create or replace function public.admin_recent_purchases(p_limit int default 50)
 returns jsonb language sql stable security definer set search_path = '' as $$
   select coalesce(jsonb_agg(x order by x.sale_at desc), '[]'::jsonb)
   from (
-    select p.sale_id, p.sale_at, p.email, p.user_id, p.plan, p.product_name, p.price_cents, p.fee_cents, p.currency,
+    select p.sale_id, p.sale_at, p.email, p.sealed, p.user_id, p.plan, p.product_name, p.price_cents, p.fee_cents, p.currency,
            p.is_recurring, p.test, p.refunded, p.disputed
     from public.purchases p
     where p.provider = 'gumroad'

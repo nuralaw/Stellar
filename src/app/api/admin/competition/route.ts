@@ -33,7 +33,7 @@ async function body(request: Request): Promise<Record<string, unknown>> {
 }
 
 export async function GET(request: NextRequest) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   return run(async () => {
     const now = Date.now();
@@ -45,7 +45,7 @@ export async function GET(request: NextRequest) {
 }
 
 export async function PATCH(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   return run(async () => {
     const b = await body(request);
@@ -55,7 +55,7 @@ export async function PATCH(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   return run(async () => {
     const b = await body(request);

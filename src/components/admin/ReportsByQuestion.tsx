@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { adminFetch } from "@/lib/admin-keys";
 import { CONTACT_ICONS } from "@/lib/contacts";
 import { REPORT_REASONS } from "@/lib/report-reasons";
 import type { ReportItem } from "@/lib/reports";
+import { LOCKED_TEXT } from "./inbox-data";
 import { Notice, REASON_SHORT, groupByQuestion, practiceHref, questionTitle, useAdminInbox } from "./OverviewTab";
 
 // Open question reports, one card per question, with "Resolve all".
@@ -30,7 +32,7 @@ export function ReportsByQuestion({ reports: given, onChange }: { reports?: Repo
     const flip = (resolved: boolean) => own.setInbox((x) => ({ ...x, reports: x.reports.map((r) => (r.id === id ? { ...r, resolved } : r)) }));
     flip(patch.resolved);
     try {
-      const res = await fetch("/api/admin/inbox", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "report", id, ...patch }) });
+      const res = await adminFetch("/api/admin/inbox", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "report", id, ...patch }) });
       if (!res.ok) throw new Error((await res.json().catch(() => null))?.error ?? "Couldn't save");
     } catch (e) {
       flip(!patch.resolved);
@@ -116,7 +118,13 @@ export function ReportsByQuestion({ reports: given, onChange }: { reports?: Repo
                       <span className="text-sm font-medium text-accent">{REPORT_REASONS[r.reason] ?? r.reason}</span>
                       <time className="text-[13px] text-muted">{when(r.at)}</time>
                     </div>
-                    {r.note ? <p className="mt-1 text-sm whitespace-pre-wrap break-words">{r.note}</p> : <p className="mt-1 text-[13px] text-muted">No note.</p>}
+                    {r.locked ? (
+                      <p className="mt-1 text-[13px] text-muted">{LOCKED_TEXT[r.locked]}</p>
+                    ) : r.note ? (
+                      <p className="mt-1 text-sm whitespace-pre-wrap break-words">{r.note}</p>
+                    ) : (
+                      <p className="mt-1 text-[13px] text-muted">No note.</p>
+                    )}
                     {(r.telegram || r.instagram) && (
                       <div className="mt-2 flex flex-wrap gap-2">
                         {r.telegram && <ContactChip href={`https://t.me/${handle(r.telegram)}`} icon={CONTACT_ICONS.telegram} name={handle(r.telegram)} />}

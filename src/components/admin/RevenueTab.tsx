@@ -394,6 +394,9 @@ function Linked({ p }: { p: Purchase }) {
 const planName = (p: Purchase) => (p.plan ? PLAN_LABEL[p.plan] : "–");
 const counted = (p: Purchase) => !p.test && !p.refunded && !p.disputed;
 
+/** Encrypted emails this browser can't open say so (Admin -> Security restores the key). */
+const emailText = (p: Purchase) => p.email ?? (p.emailLocked ? "Encrypted (restore key in Security)" : "(no email)");
+
 function RecentSales({ rows }: { rows: Purchase[] }) {
   const [all, setAll] = useState(false);
   const shown = all ? rows : rows.slice(0, 10);
@@ -427,7 +430,7 @@ function RecentSales({ rows }: { rows: Purchase[] }) {
                     <td className="max-w-64 px-3 py-2.5">
                       <span className="flex items-center gap-2">
                         <span className="min-w-0 truncate" title={p.email ?? ""}>
-                          {p.email ?? "(no email)"}
+                          {emailText(p)}
                         </span>
                         <Linked p={p} />
                       </span>
@@ -450,7 +453,7 @@ function RecentSales({ rows }: { rows: Purchase[] }) {
               <li key={p.sale_id} className="py-3">
                 <div className="flex items-start justify-between gap-3">
                   <span className="min-w-0 truncate font-medium" title={p.email ?? ""}>
-                    {p.email ?? "(no email)"}
+                    {emailText(p)}
                   </span>
                   <span className={`shrink-0 font-semibold tabular-nums ${counted(p) ? "" : "text-muted line-through"}`}>{formatMoney(p.price_cents, p.currency)}</span>
                 </div>

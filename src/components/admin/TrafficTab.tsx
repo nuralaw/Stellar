@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { adminFetch } from "@/lib/admin-keys";
 import type { TrafficPoint, TrafficRow, TrafficSource, TrafficStats } from "@/lib/traffic-types";
 import { BAR, ColumnChart, defaultCustomRange, fmt, periodOf, periodQuery, PeriodFilters, plural, type Preset, PRESETS, SeriesTable, StatTile } from "./charts";
 
@@ -22,7 +23,8 @@ const SOURCES: { id: TrafficSource; label: string }[] = [
 ];
 const ENDPOINT: Record<TrafficSource, string> = { supabase: "/api/admin/traffic", plausible: "/api/admin/traffic/plausible" };
 
-export function TrafficTab() {
+/** `onDenied`: a 401/403 (signed out, or this browser isn't an allowed admin device) re-reads /api/admin/me, like the inbox does. */
+export function TrafficTab({ onDenied }: { onDenied: () => unknown }) {
   const [preset, setPreset] = useState<Preset>("30d");
   const [custom, setCustom] = useState(defaultCustomRange);
   const [metric, setMetric] = useState<Metric>("visitors");
@@ -48,7 +50,7 @@ export function TrafficTab() {
   useEffect(() => {
     let live = true;
     const q = periodQuery(startOfToday(), "day", "");
-    fetch(`${ENDPOINT.plausible}?${q}`, { cache: "no-store" })
+    adminFetch(`${ENDPOINT.plausible}?${q}`, { cache: "no-store" })
       .then((res) => (res.ok ? res.json() : null))
       .then((json: (TrafficStats & { configured?: boolean }) | null) => {
         if (live && json && json.configured !== false && json.source === "plausible") setPlausible(true);
@@ -63,10 +65,13 @@ export function TrafficTab() {
     if (fromMs === undefined || !bucket) return;
     let live = true;
     const q = periodQuery(fromMs, bucket, customTo);
-    fetch(`${ENDPOINT[source]}?${q}`, { cache: "no-store" })
+    adminFetch(`${ENDPOINT[source]}?${q}`, { cache: "no-store" })
       .then(async (res) => {
         const json = await res.json().catch(() => null);
-        if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account to see traffic statistics.");
+        if (res.status === 401 || res.status === 403) {
+          if (live) onDenied();
+          return;
+        }
         if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
         if (json?.configured === false) throw new Error("Plausible isn't set up yet.");
         if (live) {
@@ -79,7 +84,7 @@ export function TrafficTab() {
     return () => {
       live = false;
     };
-  }, [source, fromMs, bucket, customTo, requestKey]);
+  }, [source, fromMs, bucket, customTo, requestKey, onDenied]);
 
   const prevLabel = PRESETS.find((p) => p.id === preset)!.prev;
   const m = METRICS.find((x) => x.id === metric)!;

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { adminFetch } from "@/lib/admin-keys";
 import { DiscountRow, isLive, PlusRow, usePlusSubs } from "./PlusControls";
 import { type Bucket, ColumnChart, defaultCustomRange, periodOf, periodQuery, PeriodFilters, plural, type Preset, PRESETS, SeriesTable, StatTile } from "./charts";
 
@@ -55,7 +56,7 @@ export function AccountsTab() {
     if (fromMs === undefined || !bucket) return;
     let live = true;
     const q = periodQuery(fromMs, bucket, customTo);
-    fetch(`/api/admin/accounts?${q}`, { cache: "no-store" })
+    adminFetch(`/api/admin/accounts?${q}`, { cache: "no-store" })
       .then(async (res) => {
         const json = await res.json().catch(() => null);
         if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account to see account statistics.");

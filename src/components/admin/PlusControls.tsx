@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { adminFetch } from "@/lib/admin-keys";
 import { PLUS } from "@/lib/plus-config";
 
 // Admin → Accounts: Stellar Plus status and hand-granted access per student. Data: /api/admin/subscriptions.
@@ -17,7 +18,7 @@ function localDay(d: Date) {
 }
 
 async function call(method: "POST" | "DELETE", payload: object) {
-  const res = await fetch("/api/admin/subscriptions", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), cache: "no-store" });
+  const res = await adminFetch("/api/admin/subscriptions", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), cache: "no-store" });
   const json = await res.json().catch(() => null);
   if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account first.");
   if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
@@ -32,7 +33,7 @@ export function usePlusSubs() {
 
   useEffect(() => {
     let live = true;
-    fetch("/api/admin/subscriptions", { cache: "no-store" })
+    adminFetch("/api/admin/subscriptions", { cache: "no-store" })
       .then(async (res) => {
         const json = await res.json().catch(() => null);
         if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account first.");
@@ -229,7 +230,7 @@ export function DiscountRow({ userId, open, bugCode }: { userId: string; open: b
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch("/api/admin/discounts", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId }), cache: "no-store" });
+      const res = await adminFetch("/api/admin/discounts", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId }), cache: "no-store" });
       const json = await res.json().catch(() => null);
       if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account first.");
       if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);

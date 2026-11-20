@@ -12,8 +12,8 @@ import { PLUS } from "@/lib/plus-config";
 
 const message = (e: unknown) => (e instanceof SupportError || e instanceof ReportError ? e.message : "Couldn't load from the database.");
 
-export async function GET() {
-  const denied = await adminOnly();
+export async function GET(request: Request) {
+  const denied = await adminOnly(request);
   if (denied) return denied;
   const [support, reports] = await Promise.allSettled([listSupport(), listReports()]);
   let list = support.status === "fulfilled" ? support.value : [];
@@ -56,7 +56,7 @@ async function applyDiscount(id: string, confirmed: boolean): Promise<"granted" 
 }
 
 export async function PATCH(request: Request) {
-  const denied = await adminOnly();
+  const denied = await adminOnly(request);
   if (denied) return denied;
   let b: Record<string, unknown>;
   try {

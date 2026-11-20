@@ -4,10 +4,13 @@ import { extendPlus, getSubscription, removePlus, setPlus } from "./access-serve
 import { bugCode, markUsed } from "./discounts-server";
 import { PLUS } from "./plus-config";
 import { findSatDate } from "./sat-dates";
+import { sealConfigured, sealJsonServer } from "./seal-server";
 
 // Gumroad → Stellar Plus. The webhook route (app/api/gumroad/ping) hands every request to handleGumroadRequest().
 // Tables: supabase/payments.sql (purchases, payment_events); Plus itself lives in subscriptions (access-server.ts).
 // See docs/PAYMENTS.md for the rules in plain words.
+// The buyer's email and the raw ping are personal: they're stored sealed with the admin's public key (seal-server.ts), never in the
+// clear. Without ADMIN_SEAL_PUBLIC_KEY they aren't stored at all; encryption never makes a payment fail.
 //
 // Env: GUMROAD_PING_SECRET (Ping signing secret), GUMROAD_WEBHOOK_KEY (?key= on the resource-subscription URLs),
 // GUMROAD_ACCESS_TOKEN (API token, used to double-check unsigned events), GUMROAD_SELLER_ID (optional),
@@ -139,7 +142,8 @@ async function pg(path: string, init: RequestInit = {}): Promise<Response> {
   });
   if (!res.ok) {
     const body = await res.text();
-    if (body.includes("PGRST205") || body.includes("PGRST202") || body.includes("42P01")) throw new PaymentsSetupError(SETUP_MESSAGE);
+    // PGRST204 = an unknown column (e.g. `sealed` before supabase/sealed.sql ran).
+    if (body.includes("PGRST205") || body.includes("PGRST202") || body.includes("PGRST204") || body.includes("42P01")) throw new PaymentsSetupError(SETUP_MESSAGE);
     console.error(`[payments] ${init.method ?? "GET"} ${path.split("?")[0]}: ${res.status} ${body.slice(0, 300)}`);
     throw new Error("Couldn't reach the payments tables.");
   }
@@ -155,13 +159,29 @@ async function patchPurchase(saleId: string, patch: Obj) {
   await pg(`purchases?sale_id=eq.${encodeURIComponent(saleId)}`, { method: "PATCH", body: JSON.stringify(patch) });
 }
 
+/**
+ * The payload columns of an event row: `{}` stays as is (rejected requests log no body), anything else goes sealed (payload null).
+ * When it can't be sealed (no key, or an error) neither column is sent, so the row is still logged and the `sealed` column
+ * is only ever named once there is something to put in it (it doesn't exist before supabase/sealed.sql).
+ */
+async function sealedPayload(body: Obj): Promise<Obj> {
+  if (Object.keys(body).length === 0) return { payload: {} };
+  if (!sealConfigured()) return {};
+  try {
+    return { payload: null, sealed: await sealJsonServer(cleanPayload(body)) };
+  } catch (err) {
+    console.error(`[payments] couldn't seal the event payload: ${err instanceof Error ? err.message : "unknown"}`);
+    return {};
+  }
+}
+
 /** Best effort: logging must never change the answer to Gumroad. */
 async function logEvent(e: { resource: string | null; ref: string | null; verified: boolean; note: string; payload: Obj }) {
   try {
     await pg("payment_events", {
       method: "POST",
       headers: { Prefer: "return=minimal" },
-      body: JSON.stringify({ provider: "gumroad", resource_name: e.resource, ref_id: e.ref, verified: e.verified, note: e.note.slice(0, 500), payload: cleanPayload(e.payload) }),
+      body: JSON.stringify({ provider: "gumroad", resource_name: e.resource, ref_id: e.ref, verified: e.verified, note: e.note.slice(0, 500), ...(await sealedPayload(e.payload)) }),
     });
   } catch (err) {
     console.error(`[payments] couldn't log the event: ${err instanceof Error ? err.message : "unknown"}`);
@@ -328,8 +348,32 @@ function purchaseRow(d: Obj, o: { saleId: string; userId: string | null; plan: P
   };
 }
 
-const upsertPurchase = (row: Obj) =>
-  pg("purchases?on_conflict=sale_id", { method: "POST", headers: { Prefer: "resolution=merge-duplicates,return=minimal" }, body: JSON.stringify(row) });
+/**
+ * Writes the sale. email + raw never go to the table in the clear: they're sealed into `sealed` (email/raw columns set to null).
+ * When they can't be sealed (no seal key, or an error) email, raw and sealed are left out of the write altogether: a new row gets
+ * null there, and an existing row keeps whatever it has (a sealed value, or an old plaintext email not migrated yet), so a repeat
+ * or refund ping never wipes it. Returns a note for the event log in that case; the sale itself is still stored.
+ */
+async function upsertPurchase(row: Obj): Promise<string | null> {
+  const { email, raw, ...rest } = row;
+  let sealed: string | null = null;
+  let note: string | null = null;
+  if (!sealConfigured()) note = "email and raw ping not stored: ADMIN_SEAL_PUBLIC_KEY isn't set";
+  else {
+    try {
+      sealed = await sealJsonServer({ email, raw });
+    } catch (err) {
+      console.error(`[payments] couldn't seal the purchase: ${err instanceof Error ? err.message : "unknown"}`);
+      note = "email and raw ping not stored: sealing failed";
+    }
+  }
+  await pg("purchases?on_conflict=sale_id", {
+    method: "POST",
+    headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
+    body: JSON.stringify(sealed ? { ...rest, email: null, raw: null, sealed } : rest),
+  });
+  return note;
+}
 
 /** The offer code a sale used: the ping sends a string, Gumroad's API sale an object with a name. */
 function offerCodeOf(d: Obj): string | undefined {
@@ -402,11 +446,13 @@ async function handleSale(body: Obj, signed: boolean): Promise<Outcome> {
   if (plan && userId && !refunded && !disputed && until && until.getTime() > Date.now()) {
     // Purchase row FIRST, then Plus: if the purchase write fails, no Plus is granted (Gumroad retries), so a later
     // refund always finds the row and can take Plus back. Never write the two in parallel.
-    await upsertPurchase(row);
+    const sealNote = await upsertPurchase(row);
+    if (sealNote) notes.push(sealNote);
     const { subscription, changed } = await extendPlus(userId, until, `Gumroad ${plan}`, "gumroad");
     notes.push(changed ? `${plan} sale: Plus until ${until.toISOString().slice(0, 10)}` : `${plan} sale: Plus unchanged (already ${subscription.expiresAt ? `until ${subscription.expiresAt.slice(0, 10)}` : "no end date"})`);
   } else {
-    await upsertPurchase(row);
+    const sealNote = await upsertPurchase(row);
+    if (sealNote) notes.push(sealNote);
     if (!plan) notes.push("stored: product isn't mapped to a plan (check GUMROAD_PRODUCT_MONTHLY / _PASS), access unchanged");
     else if (!userId) notes.push("stored: no account matched the uid or email, no access granted");
     else if (refunded || disputed) notes.push(`stored as ${refunded ? "refunded" : "disputed"}: ${await recomputeAccess(userId)}`);
@@ -438,10 +484,10 @@ async function handleSaleFlags(body: Obj, resource: string): Promise<Outcome> {
     const parsedAt = Date.parse(str(d.sale_timestamp) ?? "");
     const params = isObj(d.url_params) ? d.url_params : {};
     const userId = await findUserId(str(params.uid), str(d.email));
-    await upsertPurchase(purchaseRow(d, { saleId, userId, plan: planFor(d), saleAt: Number.isFinite(parsedAt) ? new Date(parsedAt) : new Date(), test: false, refunded, disputed, until: null }));
+    const sealNote = await upsertPurchase(purchaseRow(d, { saleId, userId, plan: planFor(d), saleAt: Number.isFinite(parsedAt) ? new Date(parsedAt) : new Date(), test: false, refunded, disputed, until: null }));
     // Recheck Plus anyway: covers Plus that exists without this purchase row (e.g. an older partial write).
     const access = userId ? await recomputeAccess(userId) : "no account matched";
-    return { note: `${resource}: sale not stored yet, kept a stub from Gumroad's data (refunded=${refunded} disputed=${disputed}); ${access}`, verified: true };
+    return { note: `${resource}: sale not stored yet, kept a stub from Gumroad's data (refunded=${refunded} disputed=${disputed}); ${access}${sealNote ? `; ${sealNote}` : ""}`, verified: true };
   }
   const patch: Obj = {};
   if (refundKnown) patch.refunded = refunded;
