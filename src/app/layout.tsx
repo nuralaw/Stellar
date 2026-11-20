@@ -30,14 +30,14 @@ const geistMono = Geist_Mono({
 
 // No canonical here: it would be inherited by every page. Pages that are indexed set their own (/, /plus, /register).
 const DESCRIPTION =
-  "Free Digital SAT prep: thousands of real-format questions with explanations, full-length timed practice tests, and clear lessons for Math and Reading & Writing.";
+  "Digital SAT prep: thousands of real-format practice questions with explanations, full-length timed practice tests and clear lessons for Math and Reading & Writing.";
 const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   title: {
-    default: "Stellar — Free Digital SAT Prep",
+    default: "Stellar — Digital SAT Prep & Practice Tests",
     template: "%s · Stellar",
   },
   description: DESCRIPTION,

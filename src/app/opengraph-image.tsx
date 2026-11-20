@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 // The share image (Open Graph and Twitter) for every page: charcoal with an orange glow, the wordmark and the headline.
 // Public (see lib/public-paths.ts), so crawlers can fetch it signed out.
 
-export const alt = "Stellar: Free Digital SAT prep";
+export const alt = "Stellar: Digital SAT prep and practice tests";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -28,7 +28,7 @@ export default function Image() {
           Stellar
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 96, fontWeight: 800, lineHeight: 1.05, letterSpacing: -3 }}>Free Digital SAT prep</div>
+          <div style={{ fontSize: 96, fontWeight: 800, lineHeight: 1.05, letterSpacing: -3 }}>Digital SAT prep</div>
           <div style={{ marginTop: 28, fontSize: 36, color: "#d4d4d8" }}>Practice questions · Full-length practice tests · Lessons</div>
         </div>
       </div>

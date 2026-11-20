@@ -8,8 +8,8 @@ import { OG_BASE } from "@/lib/site";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { tests: t, lessons: l, questions } = authFacts();
-  const description = `Free Digital SAT prep: ${questions !== null ? `${questions.toLocaleString("en-US")} practice questions, ` : "practice questions, "}${t.total} past-paper practice tests and ${l.total} interactive lessons for Math and Reading & Writing.`;
-  const title = "Stellar: Free Digital SAT Practice Tests, Questions & Lessons";
+  const description = `Digital SAT prep: ${questions !== null ? `${questions.toLocaleString("en-US")} practice questions, ` : "practice questions, "}${t.total} past-paper practice tests and ${l.total} interactive lessons for Math and Reading & Writing.`;
+  const title = "Stellar: Digital SAT Practice Tests, Questions & Lessons";
   return {
     title: { absolute: title },
     description,
