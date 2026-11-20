@@ -22,7 +22,10 @@
     "vocab:build": "node scripts/vocab-build.mjs",
     "db:apply": "node scripts/db-apply.mjs",
     "gumroad:setup": "node scripts/gumroad-setup.mjs",
-    "data:seal": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seal-existing.mjs"
+    "data:seal": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seal-existing.mjs",
+    "elo:test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test src/lib/elo.test.ts",
+    "elo:store-test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --conditions=react-server --test src/lib/elo-store.test.ts",
+    "elo:server-test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --conditions=react-server --test src/lib/elo-server.test.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

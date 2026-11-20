@@ -5,7 +5,8 @@ import { MAIN_NAV, PLUS_NAV } from "@/lib/nav";
 export function SiteFooter() {
   return (
     <footer data-chrome className="mt-24 bg-side text-side-muted focus-mode:hidden">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1fr_auto] md:px-8">
+      {/* Text column keeps a real minimum; the links wrap inside their share (an `auto` column grew with every new nav item and squeezed the text to one word per line). */}
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[minmax(16rem,1fr)_minmax(0,1.4fr)] md:px-8">
         <div className="space-y-3">
           <Logo variant="onDark" />
           <p className="max-w-md text-sm">
@@ -13,7 +14,7 @@ export function SiteFooter() {
             lessons.
           </p>
         </div>
-        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+        <nav className="flex flex-wrap content-start gap-x-6 gap-y-2 text-sm md:justify-end" aria-label="Footer">
           {[...MAIN_NAV.filter((i) => i.href !== "/"), PLUS_NAV].map((item) => (
             <Link key={item.href} href={item.href} className="transition-colors hover:text-side-accent">
               {item.label}

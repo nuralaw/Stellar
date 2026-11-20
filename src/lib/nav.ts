@@ -35,6 +35,8 @@ export const NAV_GROUPS: NavGroup[] = [
     title: "Tournaments",
     items: [
       { href: "/compete", label: "Weekly tournament", icon: "M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" },
+      { href: "/ranked", label: "Ranked", icon: "M13 3 4 14h7l-1 7 9-11h-7l1-7Z" },
+      { href: "/leaderboard", label: "Leaderboard", icon: "M3 21h18M5 21v-8h4v8M10 21V5h4v16M15 21v-6h4v6" },
     ],
   },
 ];

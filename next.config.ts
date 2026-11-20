@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
     "/api/bank/index": ["./content/bank/dist/**"],
     "/lessons/*": ["./content/lessons/**", "./content/bank/dist/**"],
     "/test/*": ["./content/tests/dist/**"],
+    // Ranked matches serve question images through a match-scoped route (src/app/api/ranked/[id]/img) that reads public/ from disk;
+    // on Vercel public/ is a CDN folder and isn't part of the function unless it is traced in here.
+    "/api/ranked/*/img": ["./public/bank/img/**", "./public/tests/img/**"],
   },
   partialPrefetching: true,
   async rewrites() {

@@ -21,6 +21,7 @@ import { ForgotPasswordLink } from "./ForgotPassword";
 import { LOCKED_TEXT, loadInbox, type Inbox } from "./inbox-data";
 import { formatMoney } from "./money";
 import { OverviewTab } from "./OverviewTab";
+import { RankedTab } from "./RankedTab";
 import { ReportsByQuestion } from "./ReportsByQuestion";
 import { RevenueTab } from "./RevenueTab";
 import { SecurityTab, type SecurityMe } from "./SecurityTab";
@@ -52,6 +53,7 @@ const TABS = [
   { id: "support", label: "Support requests" },
   { id: "reports", label: "Question reports" },
   { id: "competition", label: "Competition" },
+  { id: "ranked", label: "Ranked" },
   { id: "security", label: "Security" },
 ] as const;
 type Tab = (typeof TABS)[number]["id"];
@@ -488,6 +490,12 @@ function Dashboard({ me, onSignOut, onDenied }: { me: Me; onSignOut: () => void;
         return (
           <div className="mt-5">
             <CompetitionTab />
+          </div>
+        );
+      case "ranked":
+        return (
+          <div className="mt-5">
+            <RankedTab />
           </div>
         );
       case "security":
