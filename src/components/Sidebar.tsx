@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import { useEffect, useState } from "react";
 import { Logo, LogoMark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
@@ -174,7 +174,7 @@ function SidebarContent({ pathname, onNavigate, collapsible }: { pathname: strin
 }
 
 export function Sidebar() {
-  const pathname = usePathname();
+  const pathname = useAppPathname();
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 

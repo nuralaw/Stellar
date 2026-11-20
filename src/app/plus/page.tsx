@@ -8,12 +8,18 @@ import { FaqSection, FinalBand } from "@/components/plus/sections";
 import { EYEBROW } from "@/components/plus/styles";
 import { authFacts } from "@/lib/auth-facts";
 import { PLAN_ORDER, PLUS } from "@/lib/plus-config";
+import { OG_BASE } from "@/lib/site";
 import { PAGE } from "@/lib/ui";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { tests: t, lessons: l } = authFacts();
   const description = `Stellar stays free. Plus adds all ${t.total} past-paper practice tests, the full question bank, ${l.total} interactive lessons, a predicted score and spaced review of your mistakes.`;
-  return { title: "Stellar Plus", description, openGraph: { title: "Stellar Plus: every past paper, every lesson", description, type: "website" } };
+  return {
+    title: "Stellar Plus",
+    description,
+    alternates: { canonical: "/plus" },
+    openGraph: { ...OG_BASE, title: "Stellar Plus: every past paper, every lesson", description, url: "/plus" },
+  };
 }
 
 export default function Page() {

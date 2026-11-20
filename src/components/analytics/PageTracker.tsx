@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import { useEffect } from "react";
 import { getUserId } from "@/lib/store";
 
@@ -37,7 +37,7 @@ function send(path: string, referrer: string | undefined) {
 }
 
 export function PageTracker() {
-  const pathname = usePathname();
+  const pathname = useAppPathname();
 
   useEffect(() => {
     if (!pathname || pathname === lastPath) return;

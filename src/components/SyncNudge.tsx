@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import { useState } from "react";
 import { useAttempts, useHydrated } from "@/lib/store";
 import { useAuth } from "@/lib/auth-client";
@@ -24,7 +24,7 @@ export function SyncNudge({ variant = "card" }: { variant?: "card" | "inline" })
   const hydrated = useHydrated();
   const attempts = useAttempts();
   const auth = useAuth();
-  const pathname = usePathname();
+  const pathname = useAppPathname();
   const [hidden, setHidden] = useState(false);
   const n = attempts.length;
   // Wait for the session too: a signed-in student's progress is already synced, so never flash this at them.

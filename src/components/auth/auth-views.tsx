@@ -24,7 +24,7 @@ import { StellarArt } from "./StellarArt";
 // Every number comes from AuthFacts / lib/plus-config / lib/review, never typed in by hand.
 
 /** Which lesson the Features tab shows (the owner can change this). */
-const LESSON_SLUG = "linear-functions";
+export const LESSON_SLUG = "linear-functions";
 
 const num = (n: number) => n.toLocaleString("en-US");
 const iconOf = (href: string) => MAIN_NAV.find((i) => i.href === href)?.icon ?? "";

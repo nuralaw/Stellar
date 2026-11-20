@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import { ACCOUNT_NAV, MAIN_NAV, PLUS_NAV } from "@/lib/nav";
 import { SupportButton } from "./SupportButton";
 
@@ -12,7 +12,7 @@ const START_PAGES = new Set([...MAIN_NAV, ...ACCOUNT_NAV, PLUS_NAV].map((i) => i
  * (focus mode: practice sets, tests and rounds open inside these same pages).
  */
 export function SupportDock() {
-  const pathname = usePathname();
+  const pathname = useAppPathname();
   if (!START_PAGES.has(pathname)) return null;
   return (
     <div className="focus-mode:hidden">

@@ -91,7 +91,8 @@ export function TestsPreview({ tiles }: { tiles: TestTile[] }) {
   );
 }
 
-const STEPS = [
+/** The four stages of a lesson (StepsStrip here, and the landing demo). */
+export const LESSON_STEPS = [
   { icon: I.play, label: "See the idea" },
   { icon: I.layers, label: "Worked example" },
   { icon: I.check, label: "Check yourself" },
@@ -101,13 +102,13 @@ const STEPS = [
 export function StepsStrip() {
   return (
     <ol className="mt-5 flex flex-wrap items-center gap-2">
-      {STEPS.map((s, i) => (
+      {LESSON_STEPS.map((s, i) => (
         <li key={s.label} className="inline-flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-surface px-3 py-1.5 text-sm font-medium ring-1 ring-line">
             <Icon d={s.icon} className="h-4 w-4 text-primary-strong" />
             {s.label}
           </span>
-          {i < STEPS.length - 1 && (
+          {i < LESSON_STEPS.length - 1 && (
             <span aria-hidden="true" className="text-muted">
               →
             </span>

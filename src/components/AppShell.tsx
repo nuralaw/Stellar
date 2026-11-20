@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import type { ReactNode } from "react";
 import { isBarePath } from "@/lib/public-paths";
 
@@ -9,7 +9,7 @@ import { isBarePath } from "@/lib/public-paths";
  * On /register and /login (no sidebar): just the page, full width. `toggle`, `footer` and `backdrop` (the star background) are server-rendered by the layout.
  */
 export function AppShell({ toggle, footer, backdrop, children }: { toggle: ReactNode; footer: ReactNode; backdrop: ReactNode; children: ReactNode }) {
-  const bare = isBarePath(usePathname());
+  const bare = isBarePath(useAppPathname());
   return (
     <>
       {!bare && backdrop}

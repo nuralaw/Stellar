@@ -10,6 +10,7 @@ import { SidebarTour } from "@/components/SidebarTour";
 import { StarBackdrop } from "@/components/StarBackdrop";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SIDEBAR_INIT_SCRIPT } from "@/lib/sidebar";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SupportDock } from "@/components/SupportDock";
@@ -27,13 +28,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// No canonical here: it would be inherited by every page. Pages that are indexed set their own (/, /plus, /register).
+const DESCRIPTION =
+  "Free Digital SAT prep: thousands of real-format questions with explanations, full-length timed practice tests, and clear lessons for Math and Reading & Writing.";
+const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION?.trim();
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
   title: {
-    default: "Stellar — SAT Prep",
+    default: "Stellar — Free Digital SAT Prep",
     template: "%s · Stellar",
   },
-  description:
-    "Digital SAT practice: thousands of real-format questions with explanations, full-length timed practice tests, and clear lessons for Math and Reading & Writing.",
+  description: DESCRIPTION,
+  openGraph: { siteName: SITE_NAME, type: "website", locale: "en_US" },
+  twitter: { card: "summary_large_image" },
+  ...(GOOGLE_VERIFICATION ? { verification: { google: GOOGLE_VERIFICATION } } : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

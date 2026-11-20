@@ -4,11 +4,15 @@ import { AuthPanel } from "@/components/auth/AuthPanel";
 import { AuthScreen } from "@/components/auth/AuthScreen";
 import { StudentSignIn } from "@/components/auth/StudentSignIn";
 import { authFacts } from "@/lib/auth-facts";
+import { OG_BASE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Create your account",
   description:
     "Create a free Stellar account to prepare for the Digital SAT: real-format practice questions, timed practice tests and interactive lessons, with your progress saved on every device.",
+  // One canonical without the query, so /register?next=... addresses collapse into it.
+  alternates: { canonical: "/register" },
+  openGraph: { ...OG_BASE, url: "/register" },
 };
 
 // Static page: the counts are computed at build time; the form (useSearchParams) renders on the client under Suspense.

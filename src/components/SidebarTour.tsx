@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useAppPathname } from "@/lib/use-app-pathname";
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import { LogoMark } from "@/components/Logo";
 import { AUTH_CONFIGURED, useAuth } from "@/lib/auth-client";
@@ -134,7 +134,7 @@ function useDesktop() {
 
 export function SidebarTour() {
   const t = useSyncExternalStore(subscribe, () => tour, () => IDLE);
-  const pathname = usePathname();
+  const pathname = useAppPathname();
   const auth = useAuth();
   const hydrated = useHydrated();
   const bare = isBarePath(pathname);
