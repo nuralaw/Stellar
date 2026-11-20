@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { adminFetch } from "@/lib/admin-keys";
 import { PLUS } from "@/lib/plus-config";
 
@@ -74,9 +74,22 @@ const CHOICES: { id: Choice; label: string }[] = [
 
 const btn = "inline-flex min-h-10 items-center rounded-xl border border-line px-3.5 text-sm font-semibold hover:bg-surface-2 disabled:opacity-50";
 
-/** Badge + Grant / Extend / Remove for one student, with an inline editor and an inline remove confirmation. */
+/** Mirrors lib/membership-server.ts (that file is server-only). */
+type Membership = { status: "active" | "cancelling" | "ended" | "unknown"; endsAt: string | null; lastChargeAt: string; sellerUrl: string };
+
+/** Badge + Grant / Extend / Stop billing / Remove for one student, with an inline editor, billing panel and remove confirmation. */
 export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusSub | undefined; onChanged: () => void }) {
-  const [mode, setMode] = useState<"idle" | "edit" | "remove">("idle");
+  const [mode, setMode] = useState<"idle" | "edit" | "remove" | "billing">("idle");
+  const [membership, setMembership] = useState<Membership | null>(null);
+  const [checking, setChecking] = useState(false);
+  const alive = useRef(true);
+  const reqId = useRef(0);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+    };
+  }, []);
   const [choice, setChoice] = useState<Choice>("1");
   const [date, setDate] = useState("");
   const [note, setNote] = useState("");
@@ -123,6 +136,39 @@ export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusS
     }
   }
 
+  /** Reads the student's Monthly membership from Gumroad (through the admin API). Stale answers are dropped. */
+  async function checkBilling() {
+    const id = ++reqId.current;
+    setChecking(true);
+    setMembership(null);
+    setError(null);
+    try {
+      const res = await adminFetch(`/api/admin/subscriptions/membership?userId=${userId}`, { cache: "no-store" });
+      const json = await res.json().catch(() => null);
+      if (res.status === 401 || res.status === 403) throw new Error("Sign in with the admin account first.");
+      if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
+      if (!alive.current || id !== reqId.current) return;
+      setMembership(json?.membership ?? null);
+    } catch (e) {
+      if (!alive.current || id !== reqId.current) return;
+      setError(e instanceof Error ? (e.message === "Failed to fetch" ? "Couldn't reach the server." : e.message) : "Something went wrong.");
+    } finally {
+      if (alive.current && id === reqId.current) setChecking(false);
+    }
+  }
+
+  function openBilling() {
+    setMode("billing");
+    void checkBilling();
+  }
+
+  function closeBilling() {
+    reqId.current++; // drop an answer still on its way
+    setChecking(false);
+    setError(null);
+    setMode("idle");
+  }
+
   const save = () => run(() => call("POST", { userId, expiresAt: end ? end.toISOString() : null, note: note.trim() || null }));
   const remove = () => run(() => call("DELETE", { userId }));
 
@@ -141,6 +187,11 @@ export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusS
               {!sub ? "Grant Plus" : live ? "Extend" : "Renew"}
             </button>
             {sub && (
+              <button type="button" onClick={openBilling} className={btn}>
+                Stop billing
+              </button>
+            )}
+            {sub && (
               <button type="button" onClick={() => { setError(null); setMode("remove"); }} className={`${btn} text-danger`}>
                 Remove
               </button>
@@ -158,7 +209,60 @@ export function PlusRow({ userId, sub, onChanged }: { userId: string; sub: PlusS
             </button>
           </span>
         )}
+        {mode === "remove" && sub && (
+          <p className="w-full text-[13px] text-danger">
+            This only removes Plus on the site. If the student pays monthly, Gumroad keeps charging until the membership is cancelled: check Stop billing first.
+          </p>
+        )}
       </div>
+
+      {mode === "billing" && (
+        <div className="mt-3 rounded-xl bg-surface-2 p-3 sm:p-4">
+          {checking ? (
+            <p className="text-sm text-muted">Checking Gumroad…</p>
+          ) : error ? null : !membership ? (
+            <p className="text-sm">No monthly Gumroad membership found for this student, so nothing renews.</p>
+          ) : membership.status === "cancelling" ? (
+            <p className="text-sm">
+              Cancelled. No more charges.{membership.endsAt ? ` The paid period ends ${day(membership.endsAt)}.` : ""} Plus stays until its end date above.
+            </p>
+          ) : membership.status === "ended" ? (
+            <p className="text-sm">Membership ended{membership.endsAt ? ` ${day(membership.endsAt)}` : ""}. Nothing renews.</p>
+          ) : (
+            <>
+              <p className="text-sm">
+                {membership.status === "active"
+                  ? `Monthly membership is active. Last charge ${day(membership.lastChargeAt)}; Gumroad charges again about a month after that.`
+                  : "Couldn't read the membership's status from Gumroad."}
+              </p>
+              <p className="mt-3 text-sm">Gumroad only lets the seller cancel from its own dashboard:</p>
+              <ol className="mt-2 list-decimal space-y-2 pl-5 text-sm">
+                <li>
+                  <a
+                    href={membership.sellerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-10 items-center rounded-xl bg-primary px-4 text-sm font-semibold text-primary-ink hover:bg-primary-hover"
+                  >
+                    Open in Gumroad
+                  </a>
+                </li>
+                <li>Click “Cancel subscription” there. The student keeps Plus until the end of the paid month and is never charged again.</li>
+                <li>Come back and press Check again.</li>
+              </ol>
+              <p className="mt-3 text-[13px] text-muted">If the link doesn&apos;t open the sale, find it in Gumroad → Sales by the student&apos;s email.</p>
+            </>
+          )}
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button type="button" onClick={() => void checkBilling()} disabled={checking} className={btn}>
+              Check again
+            </button>
+            <button type="button" onClick={closeBilling} className={btn}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {mode === "edit" && (
         <div className="mt-3 rounded-xl bg-surface-2 p-3 sm:p-4">

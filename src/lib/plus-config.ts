@@ -65,7 +65,7 @@ export const PLUS: PlusConfig = {
   },
   passRecommendMinDays: 28,
   passMaxDays: 200,
-  cancelText: null,
+  cancelText: "You can cancel any time from your Profile page. Plus stays until the end of the month you paid for.",
   refundDays: null,
   bugDiscountPercent: 50,
   noAds: true,

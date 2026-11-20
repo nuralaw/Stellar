@@ -191,7 +191,7 @@ async function logEvent(e: { resource: string | null; ref: string | null; verifi
 // --- Gumroad API (the truth for events that aren't signed) ----------------------------------------------------------
 
 /** GET /v2/<path>?access_token=…, or null when Gumroad says 404. Throws (→ Gumroad retries) on anything else. 4 s timeout: Gumroad waits only 5 s for our answer. Never logs the URL. */
-async function gumroadGet(path: string): Promise<Obj | null> {
+export async function gumroadGet(path: string): Promise<Obj | null> {
   const token = env("GUMROAD_ACCESS_TOKEN");
   if (!token) throw new Error("No GUMROAD_ACCESS_TOKEN.");
   let res: Response;

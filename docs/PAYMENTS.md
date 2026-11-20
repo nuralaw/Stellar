@@ -64,6 +64,16 @@ Local testing without Gumroad: `node scripts/gumroad-ping-test.mjs` sends a fake
   your latest real sale flagged as a test: it changes nothing here.
 - Revenue figures exclude test purchases, refunds and disputes. Gross = price, net = price minus Gumroad's fee.
 
+## Cancelling a membership
+
+Gumroad's API can't cancel a membership, it can only read one. So cancelling happens on Gumroad's own pages:
+
+- **Student:** /profile → "Manage or cancel subscription" opens Gumroad's manage page (if the student isn't signed in there, Gumroad emails a magic link).
+- **Admin:** Accounts → "Stop billing" → "Open in Gumroad" → "Cancel subscription" on the sale page in the seller dashboard. "Check again" then shows the new status.
+- Either way Plus runs to the end of the paid month (see "Cancelled but not ended"); `subscription_ended` cuts it when Gumroad reports the end.
+- "Remove" in Accounts only removes site access. It does **not** stop Gumroad charging; use "Stop billing" first.
+- The status shown (active, cancelled, ended) is read from Gumroad, so it needs `GUMROAD_ACCESS_TOKEN`. Without it the status is "unknown" and the links still work.
+
 ## Bug-report discounts
 
 A student whose bug report is confirmed gets a personal "first month of Monthly" discount of `PLUS.bugDiscountPercent` (50%).
