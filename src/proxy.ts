@@ -38,7 +38,9 @@ export async function proxy(request: NextRequest) {
     return carryOver(response, NextResponse.rewrite(to));
   }
 
-  const gated = SUPABASE_ON && !signedIn && !pathname.startsWith("/api/") && !isPublicPath(pathname);
+  // "/" is public only as the landing page (GET/HEAD, above); anything else sent there signed out still goes to /register.
+  const open = isPublicPath(pathname) && (pathname !== "/" || asGet);
+  const gated = SUPABASE_ON && !signedIn && !pathname.startsWith("/api/") && !open;
   if (!gated) return response;
 
   const to = request.nextUrl.clone();

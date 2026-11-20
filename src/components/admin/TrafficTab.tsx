@@ -69,7 +69,10 @@ export function TrafficTab({ onDenied }: { onDenied: () => unknown }) {
       .then(async (res) => {
         const json = await res.json().catch(() => null);
         if (res.status === 401 || res.status === 403) {
-          if (live) onDenied();
+          if (live) {
+            setError("Access denied. Sign in again or check this browser in the Security tab.");
+            onDenied();
+          }
           return;
         }
         if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
