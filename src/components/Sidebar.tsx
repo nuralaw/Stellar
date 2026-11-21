@@ -14,8 +14,7 @@ import { isBarePath } from "@/lib/public-paths";
 import { useAttempts, useHydrated, useNow, useProfile } from "@/lib/store";
 import { reviewQueue } from "@/lib/review";
 import { useAuth } from "@/lib/auth-client";
-import { useSyncState } from "@/lib/sync-status";
-import { loginHref, syncLabel } from "./profile/sync-label";
+import { loginHref } from "./profile/sync-label";
 
 function toggleCollapsed() {
   const el = document.documentElement;
@@ -81,22 +80,7 @@ function NavGroup({ title, items, pathname, onNavigate, badges = {}, tour }: { t
   );
 }
 
-/** Second line of the profile card: where the progress lives (and, when signed in, how the sync is doing). */
-function SaveStatus() {
-  const auth = useAuth();
-  const sync = useSyncState();
-  // Blank until the session is known, so a signed-in student never sees "Saved on this device" flash.
-  if (!auth.ready) return <span className="block text-[13px] text-side-muted">&nbsp;</span>;
-  if (!auth.user) return <span className="block truncate text-[13px] text-side-muted">Saved on this device</span>;
-  const s = syncLabel(sync);
-  return (
-    <span className="flex min-w-0 items-center gap-1.5 text-[13px] text-side-muted" title={s.title}>
-      <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${s.dot}`} aria-hidden="true" />
-      <span className="truncate">{s.text}</span>
-    </span>
-  );
-}
-
+/** Bottom of the sidebar: avatar, name and plan badge (Plus / Admin); a Sign in button for guests. */
 function ProfileCard({ onNavigate, plan, pathname }: { onNavigate: () => void; plan: Plan | null; pathname: string }) {
   const hydrated = useHydrated();
   const profile = useProfile();
@@ -118,7 +102,6 @@ function ProfileCard({ onNavigate, plan, pathname }: { onNavigate: () => void; p
             {plan === "admin" && <span className="shrink-0 rounded-full bg-white/10 px-1.5 py-0.5 text-xs leading-none font-semibold text-side-accent">Admin</span>}
             {plan === "plus" && <PlusBadge tone="onDark" />}
           </span>
-          <SaveStatus />
         </span>
       </Link>
       {/* Quiet on purpose: the orange accent is for the page's main action. */}

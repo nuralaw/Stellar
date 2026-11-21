@@ -1,6 +1,6 @@
 import type { SyncState } from "@/lib/sync-status";
 
-// How the account sync reads in the sidebar card and on /profile (signed-in students only).
+// How the account sync reads on /profile (signed-in students only).
 
 /** text: short label; title: tooltip; detail: extra words where there is room (/profile); dot: status-dot classes. */
 export type SyncLabel = { text: string; title?: string; detail?: string; dot: string };
