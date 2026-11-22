@@ -1,5 +1,6 @@
 // Run: npm run elo:server-test  (node:test on the LOCAL file store and a small fake question bank; --conditions=react-server lets
-// "server-only" load under plain Node). Covers docs/ELO.md 9.5-9.6 for the server logic (src/lib/elo-server.ts).
+// "server-only" load under plain Node). Covers docs/ELO-live.md 8.3 (and the unchanged checks of docs/ELO.md 9.5-9.6) for the server
+// logic (src/lib/elo-server.ts): the queue, parallel play, the start deadline, abandoned parts, forfeits and the leak checks.
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -8,15 +9,19 @@ import os from "node:os";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { applyElo, difficultyMix, questionPoints } from "./elo.ts";
-import { MATCH_SIZE, MAX_WAITING_MATCHES, MIXED_LAYOUT, NETWORK_GRACE_MS } from "./elo-config.ts";
-import { buildQuestionSet, createRankedService, publicImagePath, RankedError, splitMix, STALE_PART_MS, type QuestionBank } from "./elo-server.ts";
-import { createLocalStore, EloActiveMatchError, type EloStore, type LocalDb } from "./elo-store.ts";
+import { ABANDON_AFTER_S, MATCH_SIZE, MAX_MATCHES_PER_DAY, MIXED_LAYOUT, NETWORK_GRACE_MS, QUEUE, START_DEADLINE_S, START_RATING } from "./elo-config.ts";
+import { buildQuestionSet, createRankedService, publicImagePath, RankedError, splitMix, type QuestionBank } from "./elo-server.ts";
+import { createLocalStore, type EloMatch, type EloStore, type LocalDb } from "./elo-store.ts";
 import type { MatchState, NextResponse } from "./elo-api-types.ts";
 import type { Difficulty, Question } from "./types";
 import type { SectionId } from "./taxonomy";
 
 const H = 3_600_000;
+const DAY = 24 * H;
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const T0 = Date.UTC(2026, 10, 20, 12, 0, 0);
+/** When the players start playing: a second after the pair is made at T0 (well inside the 90 s start deadline). */
+const S = T0 + 1000;
 const DIFFS: Difficulty[] = ["easy", "medium", "hard"];
 
 /* ---------------- fixtures ---------------- */
@@ -113,6 +118,16 @@ const questionOf = (n: Extract<NextResponse, { done: false }>) => BY_PROMPT.get(
 const rightAnswer = (q: Question) => (q.type === "mcq" ? q.answer : q.answer[0]);
 const wrongAnswer = (q: Question) => (q.type === "mcq" ? "C" : "99");
 
+/** A question handed out and answered at once: `after` = ms after the question was issued (and the network grace) the answer arrives. */
+async function step(c: Ctx, userId: string, matchId: string, now: number, o: { right?: boolean; after?: number } = {}) {
+  const n = await c.svc.next(userId, matchId, now);
+  assert.equal(n.done, false);
+  if (n.done) throw new Error("the part is already done");
+  const q = questionOf(n);
+  const at = n.issuedAt + NETWORK_GRACE_MS + (o.after ?? 0);
+  return { next: n, at, res: await c.svc.answer(userId, matchId, n.idx, o.right === false ? wrongAnswer(q) : rightAnswer(q), at) };
+}
+
 /** Plays (all or the first `count`) questions of a match. `after` = ms after the question was issued the answer arrives. */
 async function playThrough(
   c: Ctx,
@@ -135,13 +150,46 @@ async function playThrough(
   return { answers, end: now };
 }
 
-const play = (c: Ctx, userId: string, now = T0) => c.svc.play(userId, { mode: "mixed" }, now);
+/** The first player searches at `now`, the second a millisecond later and the pair is made: the first one is A. Returns the match id. */
+async function pair(c: Ctx, first: string, second: string, now = T0): Promise<string> {
+  assert.equal((await c.svc.queueJoin(first, { mode: "mixed" }, now)).status, "searching");
+  const q = await c.svc.queueJoin(second, { mode: "mixed" }, now + 1);
+  assert.equal(q.status, "matched");
+  return q.matchId!;
+}
+
+/** A void match row (counts as "started" for the daily limit) for faking the history straight in the file. */
+function fakeMatch(id: string, playerA: string, createdAt: number): EloMatch {
+  return {
+    id,
+    mode: "mixed",
+    status: "void",
+    playerA,
+    playerB: null,
+    questionIds: Array.from({ length: MATCH_SIZE }, (_, i) => `QID_fake_${i}`),
+    createdAt,
+    aStartedAt: null,
+    bStartedAt: null,
+    aFinishedAt: null,
+    bFinishedAt: null,
+    startBy: null,
+    finishedAt: null,
+    pointsA: null,
+    pointsB: null,
+    forfeit: null,
+    result: null,
+    ratingABefore: null,
+    ratingBBefore: null,
+    deltaA: null,
+    deltaB: null,
+  };
+}
 
 async function rejects(p: Promise<unknown>, status: number, code?: string) {
   await assert.rejects(p, (e: unknown) => e instanceof RankedError && e.status === status && (code === undefined || e.code === code), `expected ${status} ${code ?? ""}`);
 }
 
-/** No answer / explanation / question id anywhere in a pre-completion response. */
+/** No answer / explanation / question id anywhere in a response before the match is over. */
 function assertNoLeak(value: unknown, label: string) {
   const json = JSON.stringify(value);
   assert.ok(!/"(answer|explanation|qid)"\s*:/.test(json), `${label}: answer/explanation/qid key`);
@@ -192,90 +240,127 @@ test("buildQuestionSet: avoids recent questions when the bank allows, repeats th
 
 /* ---------------- a whole match ---------------- */
 
-test("two players: playing_a -> waiting -> playing_b -> finished, ELO as case E1 (+12 / -12)", async () => {
+test("two players play in parallel (calls interleaved): playing -> finished, new players at 100 (winner +12, loser stays at the floor)", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const m0 = (await c.store.getMatch(id))!;
+  assert.deepEqual([m0.status, m0.playerA, m0.playerB, m0.pointsA, m0.pointsB], ["playing", a, b, null, null]);
+  assert.equal(m0.startBy, m0.createdAt + START_DEADLINE_S * 1000);
 
-  const pa = await play(c, a, T0);
-  assert.equal(pa.role, "a");
-  assert.equal(pa.opponent, null);
-  assert.equal(pa.resumed, false);
-  assert.equal((await c.store.getMatch(pa.matchId))!.status, "playing_a");
+  // Before anybody starts: both see the start deadline, nothing of the opponent.
+  const s0 = await c.svc.state(a, id, S);
+  assert.deepEqual([s0.status, s0.myPartDone, s0.opponentDone, s0.startBy, s0.serverNow, s0.review], ["playing", false, false, m0.startBy, S, null]);
 
-  const ra = await playThrough(c, a, pa.matchId, T0, { right: true, after: 1000 });
-  assert.ok(ra.answers.every((x) => x.res.points > 0));
-  assert.equal(ra.answers.at(-1)!.res.done, true);
-  const wait = (await c.store.getMatch(pa.matchId))!;
-  assert.equal(wait.status, "waiting");
-  assert.equal(wait.pointsA, ra.answers.at(-1)!.res.totalPoints);
-  assert.ok(wait.aFinishedAt !== null && wait.expiresAt !== null);
+  let ta = S;
+  let tb = S + 500;
+  const ra: { next: Extract<NextResponse, { done: false }>; res: Awaited<ReturnType<Ctx["svc"]["answer"]>> }[] = [];
+  const rb: typeof ra = [];
+  for (let i = 0; i < MATCH_SIZE; i++) {
+    const x = await step(c, a, id, ta, { right: true, after: 1000 });
+    ta = x.at;
+    ra.push(x);
+    if (i === 0) assert.equal((await c.svc.state(a, id, ta)).startBy, null, "started: no start deadline any more");
+    if (i === MATCH_SIZE - 1) {
+      // A is done, B still plays: A waits. No review, no opponent points, no outcome; opponentDone false for A, true for B.
+      assert.equal(x.res.done, true);
+      const wait = (await c.store.getMatch(id))!;
+      assert.deepEqual([wait.status, wait.pointsA, wait.pointsB], ["playing", x.res.totalPoints, null]);
+      assert.ok(wait.aFinishedAt !== null && wait.bFinishedAt === null);
+      const sa = await c.svc.state(a, id, ta);
+      assert.deepEqual([sa.status, sa.myPartDone, sa.opponentDone, sa.opponentPoints, sa.outcome, sa.delta, sa.review], ["playing", true, false, null, null, null, null]);
+      assert.equal(sa.myPoints, x.res.totalPoints);
+      const sb = await c.svc.state(b, id, ta);
+      assert.deepEqual([sb.status, sb.myPartDone, sb.opponentDone, sb.opponentPoints, sb.review], ["playing", false, true, null, null]);
+      assert.deepEqual(await c.svc.next(a, id, ta + 1000), { done: true, totalPoints: x.res.totalPoints });
+      const hubA = await c.svc.hub(a, ta);
+      assert.deepEqual([hubA.active!.id, hubA.active!.myPartDone, hubA.active!.opponentDone], [id, true, false]);
+    } else {
+      const sa = await c.svc.state(a, id, ta);
+      assert.deepEqual([sa.review, sa.opponentPoints, sa.opponentDone], [null, null, false]);
+    }
+    const y = await step(c, b, id, tb, { right: false, after: 2000 });
+    tb = y.at;
+    rb.push(y);
+    if (i < MATCH_SIZE - 1) assert.equal((await c.svc.state(b, id, tb)).review, null);
+  }
+  assert.ok(ra.every((x) => x.res.points > 0));
+  assert.ok(rb.every((x) => x.res.points === 0));
+  assert.equal(rb.at(-1)!.res.done, true);
 
-  // B joins the same set.
-  const pb = await play(c, b, T0 + H);
-  assert.equal(pb.role, "b");
-  assert.equal(pb.matchId, pa.matchId);
-  assert.equal(pb.resumed, false);
-  assert.ok(pb.opponent && pb.opponent.rating === 1000);
-  assert.equal((await c.store.getMatch(pa.matchId))!.status, "playing_b");
-  const rb = await playThrough(c, b, pa.matchId, T0 + H, { right: false });
-  assert.ok(rb.answers.every((x) => x.res.points === 0));
-  assert.equal(rb.answers.at(-1)!.res.done, true);
-
-  const fin = (await c.store.getMatch(pa.matchId))!;
+  const fin = (await c.store.getMatch(id))!;
   assert.equal(fin.status, "finished");
   assert.equal(fin.result, "a");
-  const exp = applyElo({ a: { rating: 1000, matches: 10 }, b: { rating: 1000, matches: 10 }, result: "a" });
-  assert.deepEqual([exp.deltaA, exp.deltaB], [12, -12]);
-  assert.deepEqual([fin.deltaA, fin.deltaB], [12, -12]);
-  assert.equal((await c.store.getPlayer(a))!.rating, 1012);
-  assert.equal((await c.store.getPlayer(b))!.rating, 988);
+  assert.ok(fin.bFinishedAt !== null && fin.finishedAt !== null);
+  const exp = applyElo({ a: { rating: START_RATING, matches: 10 }, b: { rating: START_RATING, matches: 10 }, result: "a" });
+  assert.deepEqual([exp.deltaA, exp.deltaB], [12, 0], "B would drop to 88: the floor keeps 100, delta 0");
+  assert.deepEqual([fin.deltaA, fin.deltaB], [12, 0]);
+  assert.equal((await c.store.getPlayer(a))!.rating, START_RATING + 12);
+  assert.equal((await c.store.getPlayer(b))!.rating, START_RATING);
 
-  // Both get the same questions in the same order.
-  const qa = ra.answers.map((x) => x.next.question.prompt);
-  const qb = rb.answers.map((x) => x.next.question.prompt);
-  assert.deepEqual(qa, qb);
+  // Both got the same questions in the same order.
+  assert.deepEqual(
+    ra.map((x) => x.next.question.prompt),
+    rb.map((x) => x.next.question.prompt),
+  );
 
-  const sa = await c.svc.state(a, pa.matchId, T0 + 2 * H);
-  assert.equal(sa.status, "finished");
-  assert.equal(sa.outcome, "win");
-  assert.equal(sa.delta, 12);
-  assert.equal(sa.ratingBefore, 1000);
-  assert.equal(sa.ratingAfter, 1012);
-  assert.equal(sa.opponentPoints, 0);
-  assert.equal(sa.myPoints, wait.pointsA);
-  const sb = await c.svc.state(b, pa.matchId, T0 + 2 * H);
-  assert.equal(sb.outcome, "loss");
-  assert.equal(sb.delta, -12);
-  assert.equal(sb.ratingAfter, 988);
-  assert.equal(sb.opponentPoints, wait.pointsA);
-  // The review is there once the own part is done, with answers and explanations.
+  const sa = await c.svc.state(a, id, tb + H);
+  assert.deepEqual([sa.status, sa.outcome, sa.delta, sa.ratingBefore, sa.ratingAfter, sa.opponentPoints, sa.myPoints], ["finished", "win", 12, START_RATING, START_RATING + 12, 0, fin.pointsA]);
+  assert.deepEqual([sa.myPartDone, sa.opponentDone], [true, true]);
+  const sb = await c.svc.state(b, id, tb + H);
+  assert.deepEqual([sb.outcome, sb.delta, sb.ratingAfter, sb.opponentPoints], ["loss", 0, START_RATING, fin.pointsA]);
+  // The review comes only now, with answers and explanations, and has no question id (only the slot number).
   assert.equal(sa.review!.length, MATCH_SIZE);
   assert.ok(sa.review!.every((r) => typeof r.explanation === "string" && r.answer !== undefined && r.correct && r.status === "answered"));
   assert.ok(sb.review!.every((r) => !r.correct));
-  // The review has no question id either (only the slot number).
   assert.ok(sa.review!.every((r) => !("id" in r) && !("qid" in r) && !("id" in r.question)));
 
   // Double finish does not apply ELO twice.
-  await c.store.finishMatch(pa.matchId);
-  assert.equal((await c.store.getPlayer(a))!.rating, 1012);
+  await c.store.finishMatch(id);
+  assert.equal((await c.store.getPlayer(a))!.rating, START_RATING + 12);
+  assert.equal((await c.store.getPlayer(a))!.matches, 11);
+});
+
+test("whoever finishes first sees opponentDone false -> true: B first, then A", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const first = await step(c, a, id, S); // A has started and is mid-part
+  const r = await playThrough(c, b, id, S, { right: false });
+  const sb = await c.svc.state(b, id, r.end);
+  assert.deepEqual([sb.status, sb.myPartDone, sb.opponentDone, sb.review, sb.opponentPoints], ["playing", true, false, null, null]);
+  const sa = await c.svc.state(a, id, r.end);
+  assert.deepEqual([sa.myPartDone, sa.opponentDone, sa.review], [false, true, null]);
+  assert.equal((await c.svc.hub(b, r.end)).active!.opponentDone, false);
+  await playThrough(c, a, id, first.at, { right: true, count: MATCH_SIZE - 1 });
+  const sb2 = await c.svc.state(b, id, r.end + H);
+  assert.deepEqual([sb2.status, sb2.myPartDone, sb2.opponentDone, sb2.outcome], ["finished", true, true, "loss"]);
+  assert.equal(sb2.review!.length, MATCH_SIZE);
 });
 
 test("scoring is the server's: Q1 of the spec (RW easy, 10 s) = 140 points; the grace is subtracted", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const n = await c.svc.next(a, id, S);
   assert.ok(!n.done);
   if (n.done) return;
   assert.equal(n.section, "rw");
   assert.equal(n.difficulty, "easy");
   assert.equal(n.limitS, 60);
   assert.equal(n.idx, 0);
-  assert.equal(n.issuedAt, T0);
-  assert.equal(n.serverNow, T0);
+  assert.equal(n.issuedAt, S);
+  assert.equal(n.serverNow, S);
+  // The part started: the server stamped it (once).
+  assert.equal((await c.store.getMatch(id))!.aStartedAt, S);
+  assert.equal((await c.store.getMatch(id))!.bStartedAt, null);
+  await c.svc.next(a, id, S + 1000);
+  assert.equal((await c.store.getMatch(id))!.aStartedAt, S, "a repeated next doesn't move the start");
   // 12 s after issue = 10 s of thinking + 2 s of network grace.
-  const res = await c.svc.answer(a, p.matchId, 0, rightAnswer(questionOf(n)), T0 + 12_000);
+  const res = await c.svc.answer(a, id, 0, rightAnswer(questionOf(n)), S + 12_000);
   assert.deepEqual([res.base, res.bonus, res.points, res.elapsedMs, res.correct, res.timedOut], [100, 40, 140, 10_000, true, false]);
   assert.equal(res.totalPoints, 140);
   assert.equal(res.done, false);
@@ -285,15 +370,15 @@ test("the client's clock is irrelevant: the same schedule an hour apart gives th
   const c = setup();
   const x = await user(c, { matches: 10 });
   const y = await user(c, { matches: 10 });
-  const px = await play(c, x, T0);
-  const rx = await playThrough(c, x, px.matchId, T0, { after: 5000 });
-  // y plays a separate match one hour (and later) on the server's clock; the offsets inside each question are equal.
-  const py = await c.svc.play(y, { mode: "mixed" }, T0 + 5 * H);
-  assert.equal(py.role, "b"); // joins x's match (same questions)
-  const ry = await playThrough(c, y, py.matchId, T0 + 5 * H, { after: 5000 });
+  const x2 = await user(c, { matches: 10 });
+  const y2 = await user(c, { matches: 10 });
+  const m1 = await pair(c, x, y, T0);
+  const m2 = await pair(c, x2, y2, T0 + 5 * H);
+  const r1 = await playThrough(c, x, m1, S, { after: 5000 });
+  const r2 = await playThrough(c, x2, m2, S + 5 * H, { after: 5000 });
   assert.deepEqual(
-    rx.answers.map((r) => r.res.points),
-    ry.answers.map((r) => r.res.points),
+    r1.answers.map((r) => r.res.points),
+    r2.answers.map((r) => r.res.points),
   );
 });
 
@@ -302,33 +387,35 @@ test("the client's clock is irrelevant: the same schedule an hour apart gives th
 test("a second answer to a question is 409; so is an answer to a question never issued", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const n = await c.svc.next(a, id, S);
   assert.ok(!n.done);
   if (n.done) return;
-  await c.svc.answer(a, p.matchId, 0, rightAnswer(questionOf(n)), T0 + 3000);
-  await rejects(c.svc.answer(a, p.matchId, 0, rightAnswer(questionOf(n)), T0 + 4000), 409, "conflict");
-  await rejects(c.svc.answer(a, p.matchId, 1, "B", T0 + 4000), 409, "conflict"); // idx 1 not issued yet
-  await rejects(c.svc.answer(a, p.matchId, 7, "B", T0 + 4000), 409, "conflict");
-  assert.equal((await c.store.getAnswers(p.matchId, a))[0].points > 0, true); // the first answer still stands
+  await c.svc.answer(a, id, 0, rightAnswer(questionOf(n)), S + 3000);
+  await rejects(c.svc.answer(a, id, 0, rightAnswer(questionOf(n)), S + 4000), 409, "conflict");
+  await rejects(c.svc.answer(a, id, 1, "B", S + 4000), 409, "conflict"); // idx 1 not issued yet
+  await rejects(c.svc.answer(a, id, 7, "B", S + 4000), 409, "conflict");
+  assert.equal((await c.store.getAnswers(id, a))[0].points > 0, true); // the first answer still stands
 });
 
 test("an answer after the limit is 0 points and a timeout", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const n = await c.svc.next(a, id, S);
   assert.ok(!n.done);
   if (n.done) return;
-  const late = T0 + n.limitS * 1000 + NETWORK_GRACE_MS + 1; // 1 ms over the limit after the grace
-  const res = await c.svc.answer(a, p.matchId, 0, rightAnswer(questionOf(n)), late);
+  const late = S + n.limitS * 1000 + NETWORK_GRACE_MS + 1; // 1 ms over the limit after the grace
+  const res = await c.svc.answer(a, id, 0, rightAnswer(questionOf(n)), late);
   assert.deepEqual([res.points, res.base, res.bonus, res.timedOut, res.correct], [0, 0, 0, true, false]);
-  assert.equal((await c.store.getAnswers(p.matchId, a))[0].status, "timeout");
+  assert.equal((await c.store.getAnswers(id, a))[0].status, "timeout");
   // Exactly at the limit still counts (4.3: t > L is the timeout), with the minimum speed bonus of 0.
-  const n2 = await c.svc.next(a, p.matchId, late);
+  const n2 = await c.svc.next(a, id, late);
   assert.ok(!n2.done);
   if (n2.done) return;
-  const ok = await c.svc.answer(a, p.matchId, 1, rightAnswer(questionOf(n2)), n2.issuedAt + n2.limitS * 1000 + NETWORK_GRACE_MS);
+  const ok = await c.svc.answer(a, id, 1, rightAnswer(questionOf(n2)), n2.issuedAt + n2.limitS * 1000 + NETWORK_GRACE_MS);
   const exp = questionPoints({ section: n2.section, difficulty: n2.difficulty, correct: true, elapsedMs: n2.limitS * 1000 });
   assert.equal(ok.points, exp.points);
   assert.equal(ok.bonus, 0);
@@ -337,93 +424,101 @@ test("an answer after the limit is 0 points and a timeout", async () => {
 test("next is idempotent while a question is open: same idx and issuedAt, current serverNow; no way to skip it", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  const n0 = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const n0 = await c.svc.next(a, id, S);
   assert.ok(!n0.done);
   if (n0.done) return;
   // Double clicks, reloads, double effects: the same question comes back, the countdown keeps the original issuedAt.
   for (const dt of [0, 1, 5000, 20_000]) {
-    const again = await c.svc.next(a, p.matchId, T0 + dt);
+    const again = await c.svc.next(a, id, S + dt);
     assert.ok(!again.done);
     if (again.done) return;
-    assert.deepEqual([again.idx, again.issuedAt, again.serverNow, again.question.prompt], [0, T0, T0 + dt, n0.question.prompt]);
+    assert.deepEqual([again.idx, again.issuedAt, again.serverNow, again.question.prompt], [0, S, S + dt, n0.question.prompt]);
     assert.equal(again.limitS, n0.limitS);
   }
-  assert.deepEqual((await c.store.getAnswers(p.matchId, a)).map((r) => [r.idx, r.status]), [[0, "open"]]);
+  assert.deepEqual((await c.store.getAnswers(id, a)).map((r) => [r.idx, r.status]), [[0, "open"]]);
   // Still open at limit + grace exactly (the same boundary as `answer`): nothing is skipped.
-  const edge = await c.svc.next(a, p.matchId, T0 + n0.limitS * 1000 + NETWORK_GRACE_MS);
+  const edge = await c.svc.next(a, id, S + n0.limitS * 1000 + NETWORK_GRACE_MS);
   assert.ok(!edge.done && edge.idx === 0);
   // The open question can still be answered after the repeats.
-  const res = await c.svc.answer(a, p.matchId, 0, rightAnswer(questionOf(n0)), T0 + 12_000);
+  const res = await c.svc.answer(a, id, 0, rightAnswer(questionOf(n0)), S + 12_000);
   assert.equal(res.correct, true);
   // After it is answered, next moves on.
-  const n1 = await c.svc.next(a, p.matchId, T0 + 13_000);
-  assert.ok(!n1.done && n1.idx === 1 && n1.issuedAt === T0 + 13_000);
+  const n1 = await c.svc.next(a, id, S + 13_000);
+  assert.ok(!n1.done && n1.idx === 1 && n1.issuedAt === S + 13_000);
 });
 
-test("next after the limit closes the open question as a timeout and moves on", async () => {
+test("next after the limit closes the open question as a timeout and moves on; a whole part of timeouts completes", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  const n0 = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const n0 = await c.svc.next(a, id, S);
   assert.ok(!n0.done);
   if (n0.done) return;
-  const late = T0 + n0.limitS * 1000 + NETWORK_GRACE_MS + 1;
-  const n1 = await c.svc.next(a, p.matchId, late);
+  const late = S + n0.limitS * 1000 + NETWORK_GRACE_MS + 1;
+  const n1 = await c.svc.next(a, id, late);
   assert.ok(!n1.done && n1.idx === 1 && n1.issuedAt === late);
-  const rows = await c.store.getAnswers(p.matchId, a);
+  const rows = await c.store.getAnswers(id, a);
   assert.deepEqual(rows.map((r) => [r.idx, r.status, r.points]), [[0, "timeout", 0], [1, "open", 0]]);
   // The closed question can't be answered any more.
-  await rejects(c.svc.answer(a, p.matchId, 0, "B", late + 1000), 409, "conflict");
-  // A whole match of waiting it out: every question is a timeout, the part still completes.
+  await rejects(c.svc.answer(a, id, 0, "B", late + 1000), 409, "conflict");
+  // A whole match of waiting each question out: every question is a timeout, the part still completes. (B never started: the start
+  // deadline passed meanwhile, so B forfeited and the match ends together with A's part.)
   let now = late;
+  let cur: NextResponse = n1;
   for (let i = 2; i <= MATCH_SIZE; i++) {
-    now += 200_000; // longer than any limit + grace
-    const r = await c.svc.next(a, p.matchId, now);
-    if (i < MATCH_SIZE) assert.ok(!r.done && r.idx === i);
-    else assert.deepEqual(r, { done: true, totalPoints: 0 });
+    assert.ok(!cur.done);
+    if (cur.done) return;
+    now = cur.issuedAt + cur.limitS * 1000 + NETWORK_GRACE_MS + 1;
+    cur = await c.svc.next(a, id, now);
+    if (i < MATCH_SIZE) assert.ok(!cur.done && cur.idx === i);
   }
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "waiting");
-  assert.equal((await c.store.getMatch(p.matchId))!.pointsA, 0);
+  assert.deepEqual(cur, { done: true, totalPoints: 0 });
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.pointsA, m.forfeit, m.status], [0, "b", "finished"]);
   // next on a finished part is harmless.
-  assert.deepEqual(await c.svc.next(a, p.matchId, now + 99_000), { done: true, totalPoints: 0 });
+  assert.deepEqual(await c.svc.next(a, id, now + 99_000), { done: true, totalPoints: 0 });
 });
 
 test("annul gives 0 points, can be repeated, and doesn't touch an answered question", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const n = await c.svc.next(a, id, S);
   assert.ok(!n.done);
-  const res = await c.svc.annul(a, p.matchId, 0, T0 + 4000);
+  const res = await c.svc.annul(a, id, 0, S + 4000);
   assert.deepEqual([res.points, res.base, res.bonus, res.correct, res.totalPoints, res.done], [0, 0, 0, false, 0, false]);
-  assert.equal((await c.store.getAnswers(p.matchId, a))[0].status, "annulled");
+  assert.equal((await c.store.getAnswers(id, a))[0].status, "annulled");
   // Repeated: the same result. The question can't be answered after that.
-  assert.equal((await c.svc.annul(a, p.matchId, 0, T0 + 5000)).points, 0);
-  await rejects(c.svc.answer(a, p.matchId, 0, "B", T0 + 5000), 409);
+  assert.equal((await c.svc.annul(a, id, 0, S + 5000)).points, 0);
+  await rejects(c.svc.answer(a, id, 0, "B", S + 5000), 409);
   // An answered question can't be annulled.
-  const n1 = await c.svc.next(a, p.matchId, T0 + 6000);
+  const n1 = await c.svc.next(a, id, S + 6000);
   assert.ok(!n1.done);
   if (n1.done) return;
-  await c.svc.answer(a, p.matchId, 1, rightAnswer(questionOf(n1)), T0 + 9000);
-  await rejects(c.svc.annul(a, p.matchId, 1, T0 + 9500), 409);
-  await rejects(c.svc.annul(a, p.matchId, 5, T0 + 9500), 409); // never issued
-  await rejects(c.svc.annul(a, p.matchId, 99, T0 + 9500), 400, "bad_request");
+  await c.svc.answer(a, id, 1, rightAnswer(questionOf(n1)), S + 9000);
+  await rejects(c.svc.annul(a, id, 1, S + 9500), 409);
+  await rejects(c.svc.annul(a, id, 5, S + 9500), 409); // never issued
+  await rejects(c.svc.annul(a, id, 99, S + 9500), 400, "bad_request");
 });
 
 test("bad bodies are 400", async () => {
   const c = setup();
   const a = await user(c);
-  const p = await play(c, a);
-  await c.svc.next(a, p.matchId, T0);
-  await rejects(c.svc.answer(a, p.matchId, "0", "B", T0), 400, "bad_request");
-  await rejects(c.svc.answer(a, p.matchId, 1.5, "B", T0), 400, "bad_request");
-  await rejects(c.svc.answer(a, p.matchId, -1, "B", T0), 400, "bad_request");
-  await rejects(c.svc.answer(a, p.matchId, 0, 5, T0), 400, "bad_request");
-  await rejects(c.svc.answer(a, p.matchId, 0, "x".repeat(13), T0), 400, "bad_request");
-  await rejects(c.svc.play(a, { mode: "rw" }, T0), 400, "bad_request");
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  await c.svc.next(a, id, S);
+  await rejects(c.svc.answer(a, id, "0", "B", S), 400, "bad_request");
+  await rejects(c.svc.answer(a, id, 1.5, "B", S), 400, "bad_request");
+  await rejects(c.svc.answer(a, id, -1, "B", S), 400, "bad_request");
+  await rejects(c.svc.answer(a, id, 0, 5, S), 400, "bad_request");
+  await rejects(c.svc.answer(a, id, 0, "x".repeat(13), S), 400, "bad_request");
+  await rejects(c.svc.queueJoin(a, { mode: "rw" }, S), 400, "bad_request");
   // A wrong answer text is just wrong, a blank one too.
-  const res = await c.svc.answer(a, p.matchId, 0, "", T0 + 3000);
+  const res = await c.svc.answer(a, id, 0, "", S + 3000);
   assert.deepEqual([res.correct, res.points, res.timedOut], [false, 0, false]);
 });
 
@@ -432,99 +527,169 @@ test("bad bodies are 400", async () => {
 test("a stranger gets 404 on every route of someone else's match; unknown ids too", async () => {
   const c = setup();
   const a = await user(c);
+  const b = await user(c);
   const x = await user(c);
-  const p = await play(c, a);
-  await c.svc.next(a, p.matchId, T0);
-  await rejects(c.svc.state(x, p.matchId, T0), 404, "not_found");
-  await rejects(c.svc.next(x, p.matchId, T0), 404, "not_found");
-  await rejects(c.svc.answer(x, p.matchId, 0, "B", T0), 404, "not_found");
-  await rejects(c.svc.annul(x, p.matchId, 0, T0), 404, "not_found");
-  await rejects(c.svc.leave(x, p.matchId, T0), 404, "not_found");
-  await rejects(c.svc.state(a, randomUUID(), T0), 404, "not_found");
-  await rejects(c.svc.state(a, "not-an-id", T0), 404, "not_found");
+  const id = await pair(c, a, b);
+  await c.svc.next(a, id, S);
+  await rejects(c.svc.state(x, id, S), 404, "not_found");
+  await rejects(c.svc.next(x, id, S), 404, "not_found");
+  await rejects(c.svc.answer(x, id, 0, "B", S), 404, "not_found");
+  await rejects(c.svc.annul(x, id, 0, S), 404, "not_found");
+  await rejects(c.svc.leave(x, id, S), 404, "not_found");
+  await rejects(c.svc.image(x, id, 0, "figure"), 404, "not_found");
+  await rejects(c.svc.state(a, randomUUID(), S), 404, "not_found");
+  await rejects(c.svc.state(a, "not-an-id", S), 404, "not_found");
   // A stranger's attempts changed nothing.
-  assert.equal((await c.store.getAnswers(p.matchId, a)).length, 1);
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "playing_a");
+  assert.equal((await c.store.getAnswers(id, a)).length, 1);
+  assert.equal((await c.store.getAnswers(id, x)).length, 0);
+  assert.equal((await c.store.getMatch(id))!.status, "playing");
 });
 
-test("a player can't become their own opponent", async () => {
+/* ---------------- the queue ---------------- */
+
+test("queue join: the search state, the growing window, 'players searching', and a repeated join keeps `since`", async () => {
   const c = setup();
   const a = await user(c);
-  const p1 = await play(c, a);
-  await playThrough(c, a, p1.matchId, T0);
-  assert.equal((await c.store.getMatch(p1.matchId))!.status, "waiting");
-  const p2 = await play(c, a, T0 + H);
-  assert.equal(p2.role, "a");
-  assert.notEqual(p2.matchId, p1.matchId);
-  assert.equal((await c.store.getMatch(p1.matchId))!.playerB, null);
+  const x = await user(c, { rating: 1000 }); // too far from A to pair for the first two minutes
+  const j = await c.svc.queueJoin(a, { mode: "mixed" }, T0);
+  assert.deepEqual(j, {
+    status: "searching",
+    since: T0,
+    window: 100,
+    until: T0 + QUEUE.searchMaxS * 1000,
+    matchId: null,
+    opponent: null,
+    searching: 0,
+    serverNow: T0,
+  });
+  assert.equal((await c.svc.queueJoin(x, { mode: "mixed" }, T0 + 1000)).searching, 1);
+  // A repeated join only refreshes the sign of life; the search clock keeps running.
+  const again = await c.svc.queueJoin(a, { mode: "mixed" }, T0 + 10_000);
+  assert.deepEqual([again.status, again.since, again.window, again.searching, again.serverNow], ["searching", T0, 100, 1, T0 + 10_000]);
+  // Poll: the window follows the search time; `until` stays. X polls too (so both stay in the queue) but is out of reach.
+  const checkpoints: [number, number][] = [[10, 100], [20, 100], [29, 100], [30, 200], [40, 200], [50, 200], [59, 200], [60, 300], [70, 300], [80, 300], [89, 300], [90, 400], [100, 400], [110, 400], [119, 400]];
+  for (const [sec, w] of checkpoints) {
+    await c.svc.queuePoll(x, T0 + sec * 1000);
+    const p = await c.svc.queuePoll(a, T0 + sec * 1000);
+    assert.deepEqual([p.status, p.window, p.until, p.since, p.serverNow, p.searching], ["searching", w, T0 + 300_000, T0, T0 + sec * 1000, 1], `${sec} s`);
+  }
+  // From 2 minutes on there is no limit and the two meet.
+  await c.svc.queuePoll(x, T0 + 120_000);
+  const open = await c.svc.queuePoll(a, T0 + 120_000);
+  assert.deepEqual([open.status, open.window, open.opponent!.rating], ["matched", null, 1000]);
 });
 
-test("play resumes the match in progress (as A and as B) instead of creating another", async () => {
+test("queue: two players pair into one match, A = who joined first, both polls say matched with the opponent", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0);
+  const qb = await c.svc.queueJoin(b, { mode: "mixed" }, T0 + 5000);
+  assert.equal(qb.status, "matched");
+  assert.ok(qb.matchId);
+  assert.deepEqual([qb.window, qb.until, qb.since === T0 + 5000], [null, null, true]);
+  assert.equal(qb.opponent!.name, (await c.store.getPlayer(a))!.name);
+  assert.equal(qb.opponent!.rating, START_RATING);
+  assert.equal(qb.serverNow, T0 + 5000);
+  const pa = await c.svc.queuePoll(a, T0 + 6000);
+  assert.deepEqual([pa.status, pa.matchId, pa.window, pa.until], ["matched", qb.matchId, null, null]);
+  assert.equal(pa.opponent!.name, (await c.store.getPlayer(b))!.name);
+  const m = (await c.store.getMatch(qb.matchId!))!;
+  assert.deepEqual([m.status, m.playerA, m.playerB], ["playing", a, b]);
+  assert.equal(m.createdAt, T0 + 5000);
+  // The hub shows the same.
+  const h = await c.svc.hub(b, T0 + 7000);
+  assert.deepEqual([h.queue.status, h.queue.matchId, h.active!.id, h.active!.role], ["matched", qb.matchId, qb.matchId, "b"]);
+  assert.equal(h.active!.opponent!.name, (await c.store.getPlayer(a))!.name);
+  // Joining again, or polling, doesn't make a second match.
+  await rejects(c.svc.queueJoin(a, { mode: "mixed" }, T0 + 8000), 409, "in_match");
+  assert.equal(Object.keys((JSON.parse(fs.readFileSync(c.file, "utf8")) as LocalDb).matches).length, 1);
+});
+
+test("queue cancel: idle when searching, matched when the pair is already made", async () => {
   const c = setup();
   const a = await user(c);
   const b = await user(c);
-  const p = await play(c, a);
-  await playThrough(c, a, p.matchId, T0, { count: 3 });
-  const again = await play(c, a, T0 + 60_000);
-  assert.deepEqual([again.matchId, again.role, again.resumed, again.opponent], [p.matchId, "a", true, null]);
-  assert.equal((await c.store.listMatches(a)).active!.id, p.matchId);
-  // The rest of the part: the next question continues where it stopped.
-  const n = await c.svc.next(a, p.matchId, T0 + 70_000);
-  assert.ok(!n.done && n.idx === 3);
-
-  // Question 3 is open: asking again returns it. Finish A by letting every remaining question run out.
-  const same = await c.svc.next(a, p.matchId, T0 + 71_000);
-  assert.ok(!same.done && same.idx === 3 && same.issuedAt === T0 + 70_000);
-  for (let t = T0 + 300_000; ; t += 300_000) {
-    if ((await c.svc.next(a, p.matchId, t)).done) break;
-  }
-  const pb = await play(c, b, T0 + H);
-  assert.equal(pb.role, "b");
-  await playThrough(c, b, p.matchId, T0 + H, { count: 2 });
-  const resumedB = await play(c, b, T0 + H + 10 * 60_000);
-  assert.deepEqual([resumedB.matchId, resumedB.role, resumedB.resumed], [p.matchId, "b", true]);
-  assert.ok(resumedB.opponent);
-  assert.equal(resumedB.opponent!.name, (await c.store.getPlayer(a))!.name);
+  const x = await user(c, { rating: 1000 });
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0);
+  const cancelled = await c.svc.queueCancel(a, T0 + 1000);
+  assert.deepEqual(cancelled, { status: "idle", since: null, window: null, until: null, matchId: null, opponent: null, searching: 0, serverNow: T0 + 1000 });
+  assert.equal((await c.svc.queuePoll(a, T0 + 2000)).status, "idle");
+  // Cancelling when nothing is going on is harmless.
+  assert.equal((await c.svc.queueCancel(x, T0)).status, "idle");
+  // A cancelled player is out of the way: B doesn't pair with them ...
+  assert.equal((await c.svc.queueJoin(b, { mode: "mixed" }, T0 + 3000)).status, "searching");
+  // ... and once the pair exists, cancelling doesn't undo it.
+  assert.equal((await c.svc.queueJoin(a, { mode: "mixed" }, T0 + 4000)).status, "matched");
+  const late = await c.svc.queueCancel(b, T0 + 5000);
+  assert.equal(late.status, "matched");
+  assert.ok(late.matchId && late.opponent);
 });
 
-test("play needs a public name (403 name), saves it, and keeps the stored one when none is sent", async () => {
+test("queue timeout: after 5 minutes of searching it says timeout once, then idle", async () => {
+  const c = setup();
+  const a = await user(c);
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0);
+  for (let sec = 10; sec < QUEUE.searchMaxS; sec += 10) assert.equal((await c.svc.queuePoll(a, T0 + sec * 1000)).status, "searching", `${sec} s`);
+  const t = await c.svc.queuePoll(a, T0 + QUEUE.searchMaxS * 1000);
+  assert.deepEqual([t.status, t.window, t.until, t.matchId, t.opponent], ["timeout", null, null, null, null]);
+  assert.equal((await c.svc.queuePoll(a, T0 + QUEUE.searchMaxS * 1000 + 2000)).status, "idle");
+  // A silent player drops out of the queue (no poll for 15 s) and the next search starts from scratch.
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0 + H);
+  const back = await c.svc.queuePoll(a, T0 + H + (QUEUE.dropAfterS + 1) * 1000);
+  assert.equal(back.status, "idle");
+});
+
+test("queue join needs a public name (403 name), saves it, and keeps the stored one when none is sent", async () => {
   const c = setup();
   const id = randomUUID();
-  await rejects(c.svc.play(id, { mode: "mixed" }, T0), 403, "name");
+  await rejects(c.svc.queueJoin(id, { mode: "mixed" }, T0), 403, "name");
   const hub0 = await c.svc.hub(id, T0);
   assert.equal(hub0.me.needsName, true);
-  assert.equal(hub0.me.rating, 1000);
-  const p = await c.svc.play(id, { mode: "mixed", name: "Vega", avatar: "star" }, T0);
-  assert.equal(p.role, "a");
+  assert.equal(hub0.me.rating, START_RATING);
+  assert.equal(hub0.queue.status, "idle");
+  const p = await c.svc.queueJoin(id, { mode: "mixed", name: "Vega", avatar: "star" }, T0);
+  assert.equal(p.status, "searching");
   const rec = (await c.store.getPlayer(id))!;
   assert.deepEqual([rec.name, rec.avatar], ["Vega", "star"]);
   // New name from the profile replaces it; none sent keeps it.
-  await c.svc.play(id, { mode: "mixed", name: "Vega2" }, T0);
+  await c.svc.queueJoin(id, { mode: "mixed", name: "Vega2" }, T0);
   assert.equal((await c.store.getPlayer(id))!.name, "Vega2");
-  await c.svc.play(id, { mode: "mixed" }, T0);
+  await c.svc.queueJoin(id, { mode: "mixed" }, T0);
   assert.equal((await c.store.getPlayer(id))!.name, "Vega2");
   assert.equal((await c.svc.hub(id, T0)).me.needsName, false);
 });
 
-test("limits: a 4th waiting match is 429 limit_waiting; the daily limit is 429 limit_daily", async () => {
+test("queue join: 409 in_match while a match is playing (even after the own part is done); a parallel double join is one search", async () => {
   const c = setup();
-  const a = await user(c);
-  for (let i = 0; i < MAX_WAITING_MATCHES; i++) {
-    const p = await play(c, a, T0 + i * H);
-    await playThrough(c, a, p.matchId, T0 + i * H);
-  }
-  assert.equal((await c.svc.hub(a, T0 + 4 * H)).limits.waitingLeft, 0);
-  await rejects(play(c, a, T0 + 4 * H), 429, "limit_waiting");
-  // The daily limit: 30 matches started in the last day (rows faked straight into the file).
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await rejects(c.svc.queueJoin(a, { mode: "mixed" }, S), 409, "in_match");
+  const r = await playThrough(c, a, id, S);
+  assert.equal((await c.store.getMatch(id))!.status, "playing");
+  await rejects(c.svc.queueJoin(a, { mode: "mixed" }, r.end + 1000), 409, "in_match");
+  await rejects(c.svc.queueJoin(b, { mode: "mixed" }, r.end + 1000), 409, "in_match");
+  // Once the match is over, the way is free.
+  await playThrough(c, b, id, r.end + 2000);
+  assert.equal((await c.store.getMatch(id))!.status, "finished");
+  const [j1, j2] = await Promise.all([c.svc.queueJoin(a, { mode: "mixed" }, T0 + H), c.svc.queueJoin(a, { mode: "mixed" }, T0 + H)]);
+  assert.deepEqual([j1.status, j2.status, j1.since, j2.since], ["searching", "searching", T0 + H, T0 + H]);
+});
+
+test("the daily limit: the 31st match in 24 hours is 429 limit_daily", async () => {
+  const c = setup();
   const d = await user(c);
   edit(c.file, (db) => {
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < MAX_MATCHES_PER_DAY; i++) {
       const id = randomUUID();
-      db.matches[id] = { ...Object.values(db.matches)[0], id, playerA: d, playerB: null, status: "expired", createdAt: T0 + 5 * H };
+      db.matches[id] = fakeMatch(id, d, T0 + 5 * H);
     }
   });
-  await rejects(play(c, d, T0 + 6 * H), 429, "limit_daily");
+  await rejects(c.svc.queueJoin(d, { mode: "mixed" }, T0 + 6 * H), 429, "limit_daily");
   assert.equal((await c.svc.hub(d, T0 + 6 * H)).limits.dailyLeft, 0);
+  // A day later the oldest ones fall out of the window.
+  assert.equal((await c.svc.queueJoin(d, { mode: "mixed" }, T0 + 5 * H + DAY + 1)).status, "searching");
 });
 
 /* ---------------- forfeit ---------------- */
@@ -533,152 +698,506 @@ test("forfeit loses regardless of points: B ahead on points leaves and loses", a
   const c = setup();
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await playThrough(c, a, p.matchId, T0, { right: false }); // A scores 0
-  await play(c, b, T0 + H);
-  const r = await playThrough(c, b, p.matchId, T0 + H, { right: true, count: 3 });
+  const id = await pair(c, a, b);
+  await playThrough(c, a, id, S, { right: false }); // A scores 0
+  const r = await playThrough(c, b, id, S, { right: true, count: 3 });
   const earned = r.answers.at(-1)!.res.totalPoints;
   assert.ok(earned > 0);
-  assert.deepEqual(await c.svc.leave(b, p.matchId, T0 + H + 60_000), { forfeit: true });
-  const m = (await c.store.getMatch(p.matchId))!;
+  assert.equal((await c.store.getMatch(id))!.status, "playing");
+  assert.deepEqual(await c.svc.leave(b, id, r.end + 60_000), { forfeit: true });
+  const m = (await c.store.getMatch(id))!;
   assert.deepEqual([m.status, m.forfeit, m.result, m.pointsB, m.pointsA], ["finished", "b", "a", earned, 0]);
   assert.ok(m.pointsB! > m.pointsA!);
-  assert.deepEqual([m.deltaA, m.deltaB], [12, -12]);
-  const rows = await c.store.getAnswers(p.matchId, b);
+  assert.deepEqual([m.deltaA, m.deltaB], [12, 0]);
+  const rows = await c.store.getAnswers(id, b);
   assert.equal(rows.length, MATCH_SIZE);
   assert.deepEqual(rows.slice(3).map((x) => x.status), Array(7).fill("annulled"));
-  const sb = await c.svc.state(b, p.matchId, T0 + 2 * H);
+  const sb = await c.svc.state(b, id, r.end + 2 * H);
   assert.deepEqual([sb.outcome, sb.forfeit, sb.myPartDone], ["loss", "b", true]);
   assert.equal(sb.review!.length, MATCH_SIZE);
   // Leaving again is harmless; a finished part can't be left.
-  assert.deepEqual(await c.svc.leave(b, p.matchId, T0 + 3 * H), { forfeit: true });
-  await rejects(c.svc.leave(a, p.matchId, T0 + 3 * H), 409, "conflict");
+  assert.deepEqual(await c.svc.leave(b, id, r.end + 3 * H), { forfeit: true });
+  await rejects(c.svc.leave(a, id, r.end + 3 * H), 409, "conflict");
 });
 
-test("A forfeits at once: the match waits, B plays it and wins with any points", async () => {
+test("A forfeits mid-match: B still plays its part and wins whatever the points; the loss is applied when B finishes", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await c.svc.next(a, p.matchId, T0);
-  await c.svc.leave(a, p.matchId, T0 + 1000);
-  const waiting = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([waiting.status, waiting.forfeit, waiting.pointsA], ["waiting", "a", 0]);
-  assert.equal((await c.store.getAnswers(p.matchId, a)).length, MATCH_SIZE);
-  // The forfeiter's own view; the hub lists the match as waiting.
-  assert.equal((await c.svc.state(a, p.matchId, T0 + 2000)).myPartDone, true);
-  assert.equal((await c.svc.hub(a, T0 + 2000)).waiting[0].id, p.matchId);
-  await play(c, b, T0 + H);
-  await playThrough(c, b, p.matchId, T0 + H, { right: false });
-  const fin = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([fin.status, fin.result, fin.forfeit], ["finished", "b", "a"]);
-  assert.equal((await c.store.getPlayer(a))!.rating, 988);
-  assert.equal((await c.store.getPlayer(b))!.rating, 1012);
+  const id = await pair(c, a, b);
+  const r = await playThrough(c, a, id, S, { count: 2 }); // A scores something ...
+  await c.svc.leave(a, id, r.end + 1000);
+  const m1 = (await c.store.getMatch(id))!;
+  assert.deepEqual([m1.status, m1.forfeit, m1.pointsA, m1.pointsB], ["playing", "a", r.answers.at(-1)!.res.totalPoints, null]);
+  assert.ok(m1.pointsA! > 0);
+  assert.equal((await c.store.getAnswers(id, a)).length, MATCH_SIZE);
+  // The forfeiter's own view: done, waiting for the opponent, no result yet and no review (B is playing the same set).
+  const sa = await c.svc.state(a, id, r.end + 2000);
+  assert.deepEqual([sa.myPartDone, sa.status, sa.forfeit, sa.review, sa.outcome], [true, "playing", "a", null, null]);
+  assert.equal((await c.svc.hub(a, r.end + 2000)).active!.id, id);
+  assert.deepEqual(await c.svc.next(a, id, r.end + 3000), { done: true, totalPoints: m1.pointsA });
+  // B plays everything wrong (0 points against A's positive ones) and still wins.
+  await playThrough(c, b, id, r.end + 3000, { right: false });
+  const fin = (await c.store.getMatch(id))!;
+  assert.deepEqual([fin.status, fin.result, fin.forfeit, fin.pointsB, fin.deltaA, fin.deltaB], ["finished", "b", "a", 0, 0, 12]);
+  assert.ok(fin.pointsA! > fin.pointsB!);
+});
+
+test("A forfeits at once: B plays on with the worst play and still wins; B sees the forfeit only at the end", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await c.svc.next(a, id, S);
+  await c.svc.leave(a, id, S + 1000);
+  const m1 = (await c.store.getMatch(id))!;
+  assert.deepEqual([m1.status, m1.forfeit, m1.pointsA], ["playing", "a", 0]);
+  assert.equal((await c.store.getAnswers(id, a)).length, MATCH_SIZE);
+  const r = await playThrough(c, b, id, S + 2000, { right: false, count: 4 });
+  const mid = await c.svc.state(b, id, r.end);
+  assert.deepEqual([mid.status, mid.forfeit, mid.opponentDone, mid.review], ["playing", null, true, null]);
+  await playThrough(c, b, id, r.end, { right: false, count: MATCH_SIZE - 4 });
+  const fin = (await c.store.getMatch(id))!;
+  assert.deepEqual([fin.status, fin.result, fin.forfeit, fin.pointsB], ["finished", "b", "a", 0]);
+  assert.equal((await c.store.getPlayer(a))!.rating, START_RATING);
+  assert.equal((await c.store.getPlayer(b))!.rating, START_RATING + 12);
+  assert.equal((await c.svc.state(b, id, r.end + H)).forfeit, "a");
 });
 
 test("leave before the first question works too (nothing issued yet)", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await c.svc.leave(a, p.matchId, T0);
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "waiting");
-  assert.equal((await c.store.getAnswers(p.matchId, a)).length, MATCH_SIZE);
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await c.svc.leave(a, id, S);
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.pointsA], ["playing", "a", 0]);
+  assert.equal((await c.store.getAnswers(id, a)).length, MATCH_SIZE);
+});
+
+test("the first forfeit stands: A leaves, then B leaves too (or is abandoned) and B still wins", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await c.svc.next(a, id, S);
+  await c.svc.leave(a, id, S + 1000);
+  await c.svc.next(b, id, S + 2000);
+  await c.svc.leave(b, id, S + 3000);
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.result], ["finished", "a", "b"]);
+  assert.equal((await c.store.getPlayer(b))!.rating, START_RATING + 12);
+  // The same when B just stops playing (abandoned) instead of leaving.
+  const a2 = await user(c, { matches: 10 });
+  const b2 = await user(c, { matches: 10 });
+  const id2 = await pair(c, a2, b2, T0 + 5 * H);
+  const base = T0 + 5 * H + 1000;
+  await c.svc.leave(a2, id2, base);
+  const r2 = await playThrough(c, b2, id2, base, { count: 1 });
+  await c.svc.hub(a2, r2.end + 121_000); // B's part is abandoned now
+  const m2 = (await c.store.getMatch(id2))!;
+  assert.deepEqual([m2.status, m2.forfeit, m2.result], ["finished", "a", "b"]);
+});
+
+/* ---------------- start deadline ---------------- */
+
+test("start deadline: nobody started -> void, ratings untouched; the deadline itself is still fine", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  assert.ok(startBy !== null);
+  assert.equal((await c.svc.state(a, id, startBy!)).status, "playing"); // exactly at the deadline
+  const s1 = await c.svc.state(a, id, startBy! + 1);
+  assert.deepEqual([s1.status, s1.outcome, s1.delta, s1.startBy, s1.forfeit, s1.review, s1.myPartDone], ["void", null, null, null, null, null, false]);
+  assert.deepEqual([(await c.store.getPlayer(a))!.rating, (await c.store.getPlayer(a))!.matches, (await c.store.getPlayer(b))!.matches], [START_RATING, 10, 10]);
+  assert.equal((await c.store.getAnswers(id, a)).length + (await c.store.getAnswers(id, b)).length, 0);
+  assert.deepEqual([(await c.svc.state(b, id, startBy! + 2)).status], ["void"]);
+  await rejects(c.svc.next(b, id, startBy! + 3), 409, "conflict");
+  const h = await c.svc.hub(a, startBy! + 4);
+  assert.deepEqual([h.active, h.recent[0].status, h.recent[0].id, h.queue.status], [null, "void", id, "idle"]);
+  // Both are free to search again, and a void match doesn't count as having played each other.
+  await c.svc.queueJoin(a, { mode: "mixed" }, startBy! + 5000);
+  assert.equal((await c.svc.queueJoin(b, { mode: "mixed" }, startBy! + 6000)).status, "matched");
+});
+
+test("start deadline: only A started -> B loses (when A finishes, or at once if A is done)", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10, rating: 1000 });
+  const b = await user(c, { matches: 10, rating: 1000 });
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  const r = await playThrough(c, a, id, S, { right: false }); // A plays everything wrong: B still loses
+  assert.ok(r.end < startBy!);
+  assert.equal((await c.store.getMatch(id))!.status, "playing");
+  const sb = await c.svc.state(b, id, startBy! + 1);
+  assert.deepEqual([sb.status, sb.outcome, sb.delta, sb.forfeit, sb.myPartDone, sb.ratingAfter], ["finished", "loss", -12, "b", true, 988]);
+  assert.equal(sb.review!.length, MATCH_SIZE);
+  assert.ok(sb.review!.every((x) => x.status === "annulled" && x.points === 0));
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.result, m.forfeit, m.deltaA, m.deltaB, m.pointsA, m.pointsB], ["a", "b", 12, -12, 0, 0]);
+  assert.deepEqual([(await c.store.getPlayer(a))!.rating, (await c.store.getPlayer(b))!.rating], [1012, 988]);
+});
+
+test("start deadline: A is mid-part when B no-shows -> B's part is closed, the match goes on and A wins when done", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10, rating: 1000 });
+  const b = await user(c, { matches: 10, rating: 1000 });
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  const r = await playThrough(c, a, id, S, { count: 3 });
+  const sb = await c.svc.state(b, id, startBy! + 1);
+  assert.deepEqual([sb.status, sb.myPartDone, sb.opponentDone, sb.startBy, sb.forfeit, sb.review], ["playing", true, false, null, "b", null]);
+  assert.equal((await c.svc.state(a, id, startBy! + 1)).opponentDone, true);
+  // A, 80 s after the last answer, is fine and finishes.
+  assert.ok(startBy! + 2 - r.end < ABANDON_AFTER_S * 1000);
+  await playThrough(c, a, id, startBy! + 2, { right: false, count: MATCH_SIZE - 3 });
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.result, m.forfeit], ["finished", "a", "b"]);
+  assert.deepEqual([(await c.store.getPlayer(a))!.rating, (await c.store.getPlayer(b))!.rating], [1012, 988]);
+});
+
+test("start deadline: a first question opened after the deadline is too late (that part is forfeited)", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  await c.svc.next(b, id, S);
+  const done = await c.svc.next(a, id, startBy! + 1); // A is the one who didn't start
+  assert.deepEqual(done, { done: true, totalPoints: 0 });
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.pointsA, m.aStartedAt], ["playing", "a", 0, null]);
+});
+
+/* ---------------- abandoned parts ---------------- */
+
+test("an abandoned part is forfeited after 120 s without a sign of life, not at 119 s (seen from the opponent's side)", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, b, id, S, { right: false });
+  const ra = await playThrough(c, a, id, S, { count: 2, after: 1000 });
+  assert.equal(ABANDON_AFTER_S, 120);
+  assert.equal((await c.svc.state(b, id, ra.end + 119_000)).status, "playing");
+  assert.equal((await c.svc.state(b, id, ra.end + 120_000)).status, "playing", "exactly 120 s is not over it");
+  assert.equal((await c.store.getMatch(id))!.pointsA, null);
+  const fin = await c.svc.state(b, id, ra.end + 121_000);
+  assert.equal(fin.status, "finished");
+  assert.deepEqual([fin.outcome, fin.forfeit, fin.opponentPoints], ["win", "a", ra.answers.at(-1)!.res.totalPoints]);
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.result, m.forfeit, m.deltaA, m.deltaB], ["b", "a", 0, 12]);
+  const rows = await c.store.getAnswers(id, a);
+  assert.equal(rows.length, MATCH_SIZE);
+  assert.deepEqual(rows.slice(2).map((x) => x.status), Array(8).fill("annulled"));
+  assert.equal(m.pointsA, rows.slice(0, 2).reduce((t, x) => t + x.points, 0));
+  // A coming back finds the match lost; next just says done.
+  assert.equal((await c.svc.state(a, id, ra.end + 200_000)).outcome, "loss");
+  assert.equal((await c.svc.next(a, id, ra.end + 200_000)).done, true);
+});
+
+test("the abandon clock starts when the open question's time limit ends; the hub of the abandoning player resolves it too", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, b, id, S);
+  const n = await c.svc.next(a, id, S);
+  assert.ok(!n.done);
+  if (n.done) return;
+  const limitEnd = S + n.limitS * 1000;
+  assert.equal((await c.svc.state(b, id, limitEnd + 119_000)).status, "playing");
+  const h = await c.svc.hub(a, limitEnd + 121_000);
+  assert.equal(h.active, null);
+  assert.deepEqual([h.recent[0].status, h.recent[0].outcome], ["finished", "loss"]);
+});
+
+test("a no-show or abandoned match doesn't block the queue: queueJoin resolves it first", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  await rejects(c.svc.queueJoin(a, { mode: "mixed" }, startBy! - 1000), 409, "in_match");
+  assert.equal((await c.svc.queueJoin(a, { mode: "mixed" }, startBy! + 1)).status, "searching"); // nobody started: void
+  assert.equal((await c.store.getMatch(id))!.status, "void");
+
+  // Abandoned: B played, A opened a question and vanished.
+  const a2 = await user(c, { matches: 10 });
+  const b2 = await user(c, { matches: 10 });
+  const t = T0 + 3 * H;
+  const id2 = await pair(c, a2, b2, t);
+  await playThrough(c, b2, id2, t + 1000);
+  const n = await c.svc.next(a2, id2, t + 1000);
+  assert.ok(!n.done);
+  if (n.done) return;
+  await rejects(c.svc.queueJoin(a2, { mode: "mixed" }, t + 1000 + n.limitS * 1000 + 119_000), 409, "in_match");
+  const j = await c.svc.queueJoin(a2, { mode: "mixed" }, t + 1000 + n.limitS * 1000 + 121_000);
+  assert.equal(j.status, "searching");
+  assert.deepEqual([(await c.store.getMatch(id2))!.status, (await c.store.getMatch(id2))!.forfeit], ["finished", "a"]);
+});
+
+test("poll doesn't resolve matches (only the hub, the match and next do)", async () => {
+  const c = setup();
+  const a = await user(c);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  const { startBy } = (await c.store.getMatch(id))!;
+  const p = await c.svc.queuePoll(a, startBy! + 60_000);
+  assert.deepEqual([p.status, p.matchId], ["matched", id]);
+  assert.equal((await c.store.getMatch(id))!.status, "playing");
+});
+
+/* ---------------- who gives up first ---------------- */
+
+test("leave racing the opponent's poll: the leaver still loses (the forfeit is recorded before any row is closed)", async () => {
+  // Every close of a row is followed by a pause, so the opponent's state calls land between the last annul and the leaver's own settle.
+  let slow = false;
+  const c = setup((inner) => ({
+    ...inner,
+    closeAnswer: async (...args: Parameters<EloStore["closeAnswer"]>) => {
+      const r = await inner.closeAnswer(...args);
+      if (slow) await sleep(60);
+      return r;
+    },
+  }));
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, a, id, S, { right: false }); // A finishes with 0 points
+  const r = await playThrough(c, b, id, S, { right: true, count: 3 }); // B is ahead
+  slow = true;
+  let over = false;
+  const leaving = c.svc.leave(b, id, r.end + 1000).finally(() => (over = true));
+  while (!over) {
+    await c.svc.state(a, id, r.end + 1000);
+    await sleep(15);
+  }
+  await leaving;
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.result, m.deltaA, m.deltaB], ["finished", "b", "a", 12, 0]);
+  assert.ok(m.pointsB! > m.pointsA!);
+  // A retried leave is not a 409.
+  assert.deepEqual(await c.svc.leave(b, id, r.end + 5000), { forfeit: true });
+});
+
+test("both parts abandoned: the one who went silent first loses, whatever the side", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, b, id, S, { count: 1 }); // B's last sign of life: S + 2 s
+  await playThrough(c, a, id, S + 58_000, { count: 1 }); // A's: S + 60 s
+  const h = await c.svc.hub(a, S + 600_000);
+  assert.equal(h.active, null);
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.result], ["finished", "b", "a"]);
+  // And the other way round.
+  const a2 = await user(c, { matches: 10 });
+  const b2 = await user(c, { matches: 10 });
+  const id2 = await pair(c, a2, b2, T0 + 5 * H);
+  const t = T0 + 5 * H + 1000;
+  await playThrough(c, a2, id2, t, { count: 1 });
+  await playThrough(c, b2, id2, t + 58_000, { count: 1 });
+  await c.svc.state(b2, id2, t + 600_000);
+  const m2 = (await c.store.getMatch(id2))!;
+  assert.deepEqual([m2.status, m2.forfeit, m2.result], ["finished", "a", "b"]);
+});
+
+test("a no-show gives up at the start deadline, before any abandon (last sign + 120 s is always later): the no-show loses", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, a, id, S, { count: 1 }); // A started and then went silent; B never started
+  await c.svc.hub(a, S + 3600_000);
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.result], ["finished", "b", "a"]);
+  // The same with the roles swapped.
+  const a2 = await user(c, { matches: 10 });
+  const b2 = await user(c, { matches: 10 });
+  const id2 = await pair(c, a2, b2, T0 + 5 * H);
+  await playThrough(c, b2, id2, T0 + 5 * H + 1000, { count: 1 });
+  await c.svc.hub(b2, T0 + 5 * H + 3600_000);
+  const m2 = (await c.store.getMatch(id2))!;
+  assert.deepEqual([m2.status, m2.forfeit, m2.result], ["finished", "a", "b"]);
+});
+
+test("leave first settles an opponent who has been silent for over 120 s: they are the first forfeit, the leaver's own forfeit comes second", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  await playThrough(c, b, id, S, { count: 2 }); // B's last sign of life: about S + 4 s
+  const ra = await playThrough(c, a, id, S + 80_000, { count: 2 });
+  assert.ok(S + 130_000 - ra.end < ABANDON_AFTER_S * 1000); // A itself is still fine
+  assert.deepEqual(await c.svc.leave(a, id, S + 130_000), { forfeit: true });
+  const m = (await c.store.getMatch(id))!;
+  assert.deepEqual([m.status, m.forfeit, m.result, m.deltaA, m.deltaB], ["finished", "b", "a", 12, 0]);
+});
+
+test("a match whose points are both stored but whose finish failed is finished by the hub, by queueJoin, and by next", async () => {
+  let fail = false;
+  const c = setup((inner) => ({
+    ...inner,
+    finishMatch: async (...args: Parameters<EloStore["finishMatch"]>) => {
+      if (fail) {
+        fail = false;
+        throw new Error("boom");
+      }
+      return inner.finishMatch(...args);
+    },
+  }));
+  // Plays a match where B's last answer is the one whose finish fails.
+  const stuck = async (t: number) => {
+    const a = await user(c, { matches: 10 });
+    const b = await user(c, { matches: 10 });
+    const id = await pair(c, a, b, t);
+    await playThrough(c, a, id, t + 1000);
+    const r = await playThrough(c, b, id, t + 1000, { count: MATCH_SIZE - 1 });
+    const n = await c.svc.next(b, id, r.end);
+    assert.ok(!n.done);
+    if (n.done) throw new Error("unexpected");
+    fail = true;
+    await assert.rejects(c.svc.answer(b, id, n.idx, rightAnswer(questionOf(n)), r.end + 3000), /boom/);
+    const m = (await c.store.getMatch(id))!;
+    assert.deepEqual([m.status, m.pointsA !== null, m.pointsB !== null], ["playing", true, true]);
+    return { a, b, id, at: r.end + 5000 };
+  };
+  const s1 = await stuck(T0);
+  const h = await c.svc.hub(s1.a, s1.at);
+  assert.deepEqual([h.active, h.recent[0].status], [null, "finished"]);
+  assert.equal((await c.store.getMatch(s1.id))!.status, "finished");
+  assert.equal((await c.store.getPlayer(s1.a))!.matches, 11);
+
+  const s2 = await stuck(T0 + 5 * H);
+  assert.equal((await c.svc.queueJoin(s2.b, { mode: "mixed" }, s2.at)).status, "searching");
+  assert.equal((await c.store.getMatch(s2.id))!.status, "finished");
+
+  const s3 = await stuck(T0 + 10 * H);
+  assert.deepEqual(await c.svc.next(s3.a, s3.id, s3.at), { done: true, totalPoints: (await c.store.getMatch(s3.id))!.pointsA });
+  assert.equal((await c.store.getMatch(s3.id))!.status, "finished");
 });
 
 /* ---------------- no leaks ---------------- */
 
-test("no answer / explanation / question id in any response before the player's part is done", async () => {
+test("no answer / explanation / question id in any response before the match is over", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
   const seen: [string, unknown][] = [];
   const keep = <T>(label: string, v: T): T => (seen.push([label, v]), v);
 
-  const p = keep("play a", await play(c, a));
-  keep("hub", await c.svc.hub(a, T0));
-  keep("state 0", await c.svc.state(a, p.matchId, T0));
-  let now = T0;
+  keep("join a", await c.svc.queueJoin(a, { mode: "mixed" }, T0));
+  keep("poll a", await c.svc.queuePoll(a, T0 + 1000));
+  const qb = keep("join b", await c.svc.queueJoin(b, { mode: "mixed" }, T0 + 2000));
+  const id = qb.matchId!;
+  keep("poll a matched", await c.svc.queuePoll(a, T0 + 3000));
+  keep("hub", await c.svc.hub(a, T0 + 3000));
+  keep("state a 0", await c.svc.state(a, id, T0 + 3000));
+  keep("state b 0", await c.svc.state(b, id, T0 + 3000));
+  let now = S;
   for (let i = 0; i < MATCH_SIZE; i++) {
-    const n = keep(`next ${i}`, await c.svc.next(a, p.matchId, now));
+    const n = keep(`next a ${i}`, await c.svc.next(a, id, now));
     assert.ok(!n.done);
     if (n.done) break;
     assert.ok(!("id" in n.question));
-    if (i === 2) keep("annul", await c.svc.annul(a, p.matchId, i, now + 2000));
-    else if (i === 4) keep("late", await c.svc.answer(a, p.matchId, i, "B", now + 200_000));
-    else if (i < MATCH_SIZE - 1) {
-      keep(`answer ${i}`, await c.svc.answer(a, p.matchId, i, rightAnswer(questionOf(n)), now + 4000));
-      keep(`state ${i + 1}`, await c.svc.state(a, p.matchId, now + 4500));
-    } else break;
+    if (i === 2) keep("annul", await c.svc.annul(a, id, i, now + 2000));
+    else if (i === 4) keep("late", await c.svc.answer(a, id, i, "B", now + 200_000));
+    else keep(`answer a ${i}`, await c.svc.answer(a, id, i, rightAnswer(questionOf(n)), now + 4000));
+    keep(`state a ${i + 1}`, await c.svc.state(a, id, now + 4500));
+    if (i < MATCH_SIZE - 1) {
+      const nb = keep(`next b ${i}`, await c.svc.next(b, id, now));
+      assert.ok(!nb.done);
+      if (!nb.done) keep(`answer b ${i}`, await c.svc.answer(b, id, i, rightAnswer(questionOf(nb)), now + 5000));
+      keep(`state b ${i + 1}`, await c.svc.state(b, id, now + 5500));
+    }
     now += 10_000;
   }
-  // idx 9 is open: the part isn't done yet; look at everything again.
-  keep("state mid", await c.svc.state(a, p.matchId, now));
-  keep("hub mid", await c.svc.hub(a, now));
+  // A is done (all 10 closed), B has 9 answered: look at everything again.
+  keep("state a done", await c.svc.state(a, id, now));
+  keep("state b final", await c.svc.state(b, id, now));
+  keep("hub a", await c.svc.hub(a, now));
+  keep("hub b", await c.svc.hub(b, now));
+  keep("next a done", await c.svc.next(a, id, now));
+  keep("cancel a", await c.svc.queueCancel(a, now)); // matched: the pair is already made
+  keep("leave b", await c.svc.leave(b, id, now)); // B gives up: the match is over, so nothing is looked at after this
   for (const [label, v] of seen) {
     assertNoLeak(v, label);
     if (label.startsWith("state")) assert.equal((v as MatchState).review, null, label);
   }
-  // B, before the finish, sees nothing of A's answers either, and A's points stay hidden until the match is finished.
-  await c.svc.next(a, p.matchId, now + 300_000); // 9 ran out: closed as a timeout -> done
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "waiting");
-  const pb = await play(c, b, T0 + H);
-  const sb0 = await c.svc.state(b, p.matchId, T0 + H);
-  assertNoLeak(sb0, "state b 0");
-  assert.equal(sb0.review, null);
-  assert.equal(sb0.opponentPoints, null);
-  assertNoLeak(pb, "play b");
-  const n = await c.svc.next(b, p.matchId, T0 + H);
-  assertNoLeak(n, "next b");
-  const sa = await c.svc.state(a, p.matchId, T0 + H); // A is done but B isn't: review yes, opponent points no
-  assert.ok(sa.review);
-  assert.equal(sa.opponentPoints, null);
-  assert.equal(sa.outcome, null);
-  assert.equal(sa.delta, null);
+  const sa = seen.find(([l]) => l === "state a done")![1] as MatchState;
+  assert.deepEqual([sa.status, sa.myPartDone, sa.opponentDone, sa.opponentPoints, sa.outcome, sa.delta, sa.forfeit], ["playing", true, false, null, null, null, null]);
+  const sb = seen.find(([l]) => l === "state b final")![1] as MatchState;
+  assert.deepEqual([sb.myPartDone, sb.opponentDone, sb.opponentPoints], [false, true, null]);
 });
 
 /* ---------------- hub ---------------- */
 
-test("hub: me, active, waiting, recent and limits", async () => {
+test("hub: me, queue, active, recent and limits through a whole match", async () => {
   const c = setup();
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const h1 = await c.svc.hub(a, T0);
-  assert.equal(h1.active!.id, p.matchId);
-  assert.deepEqual([h1.active!.status, h1.active!.role, h1.active!.answered, h1.active!.total], ["playing_a", "a", 0, MATCH_SIZE]);
-  assert.equal(h1.waiting.length + h1.recent.length, 0);
-  assert.equal(h1.me.rating, 1000);
-  assert.equal(h1.me.level.level, 4);
-  assert.equal(h1.limits.dailyLeft, 29);
-  assert.equal(h1.limits.waitingLeft, 3);
+  const h0 = await c.svc.hub(a, T0);
+  assert.deepEqual([h0.active, h0.recent.length, h0.queue.status, h0.limits.dailyLeft], [null, 0, "idle", MAX_MATCHES_PER_DAY]);
+  assert.equal(h0.me.rating, START_RATING);
+  assert.equal(h0.me.level.level, 1);
+  assert.equal("waiting" in h0, false);
 
-  await playThrough(c, a, p.matchId, T0);
-  const h2 = await c.svc.hub(a, T0 + 1000);
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0 + 1000);
+  const h1 = await c.svc.hub(a, T0 + 2000);
+  assert.deepEqual([h1.queue.status, h1.queue.since, h1.queue.window, h1.queue.serverNow, h1.active], ["searching", T0 + 1000, 100, T0 + 2000, null]);
+
+  assert.equal((await c.svc.queueJoin(b, { mode: "mixed" }, T0 + 3000)).status, "matched"); // A has been searching since T0+1000
+  const m = (await c.store.listMatches(a)).active!;
+  const h2 = await c.svc.hub(a, T0 + 4000);
+  assert.deepEqual([h2.active!.id, h2.active!.status, h2.active!.role, h2.active!.answered, h2.active!.total], [m.id, "playing", "a", 0, MATCH_SIZE]);
+  assert.deepEqual([h2.active!.myPartDone, h2.active!.opponentDone, h2.active!.startBy, h2.queue.status, h2.queue.matchId], [false, false, m.startBy, "matched", m.id]);
+  assert.equal(h2.active!.opponent!.name, (await c.store.getPlayer(b))!.name);
+  assert.equal(h2.limits.dailyLeft, MAX_MATCHES_PER_DAY - 1);
+  assert.equal(h2.recent.length, 0);
+});
+
+test("hub: the player's own part done = still active; both done = recent; the queue is idle again", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const b = await user(c, { matches: 10 });
+  const id = await pair(c, a, b);
+  const ra = await playThrough(c, a, id, S);
+  const h1 = await c.svc.hub(a, ra.end);
+  assert.deepEqual([h1.active!.id, h1.active!.answered, h1.active!.myPartDone, h1.active!.opponentDone, h1.active!.myPoints, h1.recent.length], [id, MATCH_SIZE, true, false, ra.answers.at(-1)!.res.totalPoints, 0]);
+  assert.equal(h1.active!.startBy, null);
+  const rb = await playThrough(c, b, id, S, { right: false });
+  const h2 = await c.svc.hub(a, rb.end + 1000);
   assert.equal(h2.active, null);
-  assert.equal(h2.waiting.length, 1);
-  assert.equal(h2.waiting[0].status, "waiting");
-  assert.equal(h2.waiting[0].opponent, null);
-  assert.equal(h2.waiting[0].expiresAt, (await c.store.getMatch(p.matchId))!.expiresAt);
-  assert.equal(h2.waiting[0].answered, MATCH_SIZE);
-  assert.equal(h2.limits.waitingLeft, 2);
+  assert.equal(h2.queue.status, "idle");
+  assert.equal(h2.recent.length, 1);
+  assert.deepEqual([h2.recent[0].status, h2.recent[0].outcome, h2.recent[0].delta, h2.recent[0].opponentPoints, h2.recent[0].myPartDone, h2.recent[0].opponentDone], ["finished", "win", 12, 0, true, true]);
+  assert.equal(h2.recent[0].opponent!.name, (await c.store.getPlayer(b))!.name);
+  assert.equal(h2.me.rating, START_RATING + 12);
+  assert.deepEqual([h2.me.matches, h2.me.wins], [11, 1]);
+  const hb = await c.svc.hub(b, rb.end + 1000);
+  assert.deepEqual([hb.recent[0].outcome, hb.recent[0].delta, hb.recent[0].role], ["loss", 0, "b"]);
+});
 
-  await play(c, b, T0 + H);
-  await playThrough(c, b, p.matchId, T0 + H, { right: false });
-  const h3 = await c.svc.hub(a, T0 + 2 * H);
-  assert.equal(h3.waiting.length, 0);
-  assert.equal(h3.recent.length, 1);
-  assert.deepEqual([h3.recent[0].outcome, h3.recent[0].delta, h3.recent[0].opponentPoints], ["win", 12, 0]);
-  assert.equal(h3.recent[0].opponent!.name, (await c.store.getPlayer(b))!.name);
-  assert.equal(h3.me.rating, 1012);
-  assert.deepEqual([h3.me.matches, h3.me.wins], [11, 1]);
-  const hb = await c.svc.hub(b, T0 + 2 * H);
-  assert.deepEqual([hb.recent[0].outcome, hb.recent[0].delta, hb.recent[0].role], ["loss", -12, "b"]);
+test("hub is a sign of life in the queue and pairs the player when the window opens", async () => {
+  const c = setup();
+  const a = await user(c, { matches: 10 });
+  const x = await user(c, { matches: 10, rating: 1000 });
+  await c.svc.queueJoin(a, { mode: "mixed" }, T0);
+  await c.svc.queueJoin(x, { mode: "mixed" }, T0);
+  for (let sec = 10; sec < 120; sec += 10) {
+    await c.svc.queuePoll(x, T0 + sec * 1000);
+    assert.equal((await c.svc.hub(a, T0 + sec * 1000)).queue.status, "searching", `${sec} s`);
+  }
+  await c.svc.queuePoll(x, T0 + 115_000);
+  const h = await c.svc.hub(a, T0 + 120_000);
+  assert.deepEqual([h.queue.status, h.queue.window, h.active!.status, h.active!.opponent!.rating], ["matched", null, "playing", 1000]);
 });
 
 /* ---------------- races ---------------- */
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-const MIN = 60_000;
 
 test("parallel next calls never open two questions or skip one", async () => {
   // The first close of a question is slowed down by 50 ms, so the two requests interleave.
@@ -694,38 +1213,26 @@ test("parallel next calls never open two questions or skip one", async () => {
     },
   }));
   const a = await user(c);
-  const p = await play(c, a);
+  const b = await user(c);
+  const id = await pair(c, a, b);
+  await c.svc.next(b, id, S); // B has started too, so the start deadline doesn't interfere
 
   // Nothing open yet: three parallel calls hand out the same first question.
-  const first = await Promise.all([0, 1, 2].map(() => c.svc.next(a, p.matchId, T0)));
-  assert.ok(first.every((n) => !n.done && n.idx === 0 && n.issuedAt === T0));
-  assert.equal((await c.store.getAnswers(p.matchId, a)).length, 1);
+  const first = await Promise.all([0, 1, 2].map(() => c.svc.next(a, id, S)));
+  assert.ok(first.every((n) => !n.done && n.idx === 0 && n.issuedAt === S));
+  assert.equal((await c.store.getAnswers(id, a)).length, 1);
+  assert.equal((await c.store.getMatch(id))!.aStartedAt, S);
 
   // The question ran out: two parallel calls both close it (one slowly) and both land on question 1.
-  const late = T0 + 200_000;
+  const late = S + 100_000;
   slow = true;
-  const both = await Promise.all([c.svc.next(a, p.matchId, late), c.svc.next(a, p.matchId, late)]);
+  const both = await Promise.all([c.svc.next(a, id, late), c.svc.next(a, id, late)]);
   for (const n of both) assert.ok(!n.done && n.idx === 1 && n.issuedAt === late);
-  const rows = await c.store.getAnswers(p.matchId, a);
+  const rows = await c.store.getAnswers(id, a);
   assert.deepEqual(rows.map((r) => [r.idx, r.status]), [[0, "timeout"], [1, "open"]]);
   // And the match continues normally from question 1.
-  const n2 = await c.svc.next(a, p.matchId, late + 1000);
+  const n2 = await c.svc.next(a, id, late + 1000);
   assert.ok(!n2.done && n2.idx === 1);
-});
-
-test("a parallel /play that created the match first is resumed, not an error", async () => {
-  const c = setup((inner) => ({
-    ...inner,
-    createMatch: async (input: Parameters<EloStore["createMatch"]>[0]) => {
-      await inner.createMatch(input); // the other request wins the race ...
-      throw new EloActiveMatchError("The player already has a match in progress"); // ... and the unique index refuses ours
-    },
-  }));
-  const a = await user(c);
-  const p = await play(c, a);
-  assert.equal(p.resumed, true);
-  assert.equal(p.role, "a");
-  assert.equal((await c.store.listMatches(a)).active!.id, p.matchId);
 });
 
 /* ---------------- images ---------------- */
@@ -735,16 +1242,19 @@ test("question images are match-scoped URLs: no bank path in any pre-completion 
   const a = await user(c, { matches: 10 });
   const b = await user(c, { matches: 10 });
   const x = await user(c);
-  const p = await play(c, a);
-  let now = T0;
   const seen: unknown[] = [];
+  seen.push(await c.svc.queueJoin(a, { mode: "mixed" }, T0));
+  const qb = await c.svc.queueJoin(b, { mode: "mixed" }, T0 + 1);
+  seen.push(qb);
+  const id = qb.matchId!;
+  let now = S;
   let mcqSeen = 0;
   for (let i = 0; i < MATCH_SIZE; i++) {
-    const n = await c.svc.next(a, p.matchId, now);
+    const n = await c.svc.next(a, id, now);
     assert.ok(!n.done);
     if (n.done) break;
-    seen.push(n, await c.svc.state(a, p.matchId, now), await c.svc.hub(a, now));
-    const url = (k: string) => `/api/ranked/${p.matchId}/img?idx=${i}&k=${k}`;
+    seen.push(n, await c.svc.state(a, id, now), await c.svc.hub(a, now));
+    const url = (k: string) => `/api/ranked/${id}/img?idx=${i}&k=${k}`;
     assert.equal(n.question.figure!.src, url("figure"));
     if (n.question.type === "mcq") {
       mcqSeen++;
@@ -752,22 +1262,23 @@ test("question images are match-scoped URLs: no bank path in any pre-completion 
       assert.deepEqual(n.question.choiceImages, { A: url("A"), B: url("B"), C: url("C"), D: url("D") });
     }
     // The route resolves its own player's issued question to the real file ...
-    assert.equal(await c.svc.image(a, p.matchId, i, "figure"), `bank/img/${n.section}/${n.section}-${n.difficulty}-${questionOf(n).id.split("_")[3]}.webp`);
+    assert.equal(await c.svc.image(a, id, i, "figure"), `bank/img/${n.section}/${n.section}-${n.difficulty}-${questionOf(n).id.split("_")[3]}.webp`);
     // ... but not a question that wasn't issued yet, another player, or garbage.
-    await rejects(c.svc.image(a, p.matchId, i + 1, "figure"), i + 1 < MATCH_SIZE ? 404 : 400);
-    await rejects(c.svc.image(x, p.matchId, i, "figure"), 404, "not_found");
-    await rejects(c.svc.image(a, p.matchId, i, "Z"), 400, "bad_request");
-    await rejects(c.svc.image(a, p.matchId, -1, "figure"), 400, "bad_request");
-    if (n.question.type === "spr") await rejects(c.svc.image(a, p.matchId, i, "choices"), 404, "not_found");
+    await rejects(c.svc.image(a, id, i + 1, "figure"), i + 1 < MATCH_SIZE ? 404 : 400);
+    await rejects(c.svc.image(x, id, i, "figure"), 404, "not_found");
+    await rejects(c.svc.image(a, id, i, "Z"), 400, "bad_request");
+    await rejects(c.svc.image(a, id, -1, "figure"), 400, "bad_request");
+    if (n.question.type === "spr") await rejects(c.svc.image(a, id, i, "choices"), 404, "not_found");
     now = n.issuedAt + 4000;
-    seen.push(await c.svc.answer(a, p.matchId, i, rightAnswer(questionOf(n)), now));
+    seen.push(await c.svc.answer(a, id, i, rightAnswer(questionOf(n)), now));
     now += 1000;
   }
   assert.ok(mcqSeen > 0);
-  seen.push(await play(c, b, T0 + H));
   for (const v of seen) assertNoLeak(v, "images");
-  // After the part is done, the review may carry the real bank paths.
-  const st = await c.svc.state(a, p.matchId, now);
+  // A is done, B is still playing: no review. After B leaves the match is over and the review may carry the real bank paths.
+  assert.equal((await c.svc.state(a, id, now)).review, null);
+  await c.svc.leave(b, id, now + 1000);
+  const st = await c.svc.state(a, id, now + 2000);
   assert.ok(st.review!.every((r) => r.question.figure!.src.startsWith("/bank/img/")));
 });
 
@@ -777,141 +1288,4 @@ test("publicImagePath only allows plain /bank/ and /tests/ paths", () => {
   for (const bad of ["/bank/../.env.local", "/bank/img/../../x.webp", "/etc/passwd", "bank/img/a.webp", "/bank//a.webp", "/bank/a b.webp", "/bank/a\\b", "/bank/a?x=1", "https://x.test/bank/a.webp", ""]) {
     assert.equal(publicImagePath(bad), null, bad);
   }
-});
-
-/* ---------------- abandoned parts ---------------- */
-
-test("a stale B part is forfeited lazily (hub of A), a fresh one is left alone", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await playThrough(c, a, p.matchId, T0);
-  await play(c, b, T0 + H);
-  const r = await playThrough(c, b, p.matchId, T0 + H, { count: 2, after: 1000 });
-  // The last sign of life is B's second answer.
-  assert.equal(STALE_PART_MS, 30 * MIN);
-  assert.equal((await c.svc.hub(a, r.end + 29 * MIN)).waiting[0].status, "playing_b");
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "playing_b");
-  const hubA = await c.svc.hub(a, r.end + 31 * MIN);
-  assert.equal(hubA.waiting.length, 0);
-  assert.deepEqual([hubA.recent[0].outcome, hubA.recent[0].delta], ["win", 12]);
-  const m = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([m.status, m.forfeit, m.result], ["finished", "b", "a"]);
-  const rows = await c.store.getAnswers(p.matchId, b);
-  assert.equal(rows.length, MATCH_SIZE);
-  assert.deepEqual(rows.slice(2).map((x) => x.status), Array(8).fill("annulled"));
-  assert.equal(m.pointsB, rows.slice(0, 2).reduce((t, x) => t + x.points, 0));
-  // B coming back finds the match lost; next just says done.
-  assert.equal((await c.svc.state(b, p.matchId, r.end + 40 * MIN)).outcome, "loss");
-  assert.equal((await c.svc.next(b, p.matchId, r.end + 40 * MIN)).done, true);
-});
-
-test("the stale clock starts when the open question's time limit ends", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await playThrough(c, a, p.matchId, T0);
-  await play(c, b, T0 + H);
-  const n = await c.svc.next(b, p.matchId, T0 + H);
-  assert.ok(!n.done);
-  if (n.done) return;
-  const limitEnd = T0 + H + n.limitS * 1000;
-  assert.equal((await c.svc.state(a, p.matchId, limitEnd + 29 * MIN)).status, "playing_b");
-  assert.equal((await c.svc.state(a, p.matchId, limitEnd + 31 * MIN)).status, "finished");
-});
-
-test("a stale A part that answered something is forfeited into waiting; B can still play it and win", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const r = await playThrough(c, a, p.matchId, T0, { count: 2 });
-  const earned = r.answers.at(-1)!.res.totalPoints;
-  const sa = await c.svc.state(a, p.matchId, r.end + 31 * MIN); // the player's own view triggers it too
-  const m = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([m.status, m.forfeit, m.pointsA], ["waiting", "a", earned]);
-  assert.equal(sa.myPartDone, true);
-  assert.equal(sa.forfeit, "a");
-  await play(c, b, r.end + 32 * MIN);
-  // B can't see A's forfeit while playing; after the finish it shows.
-  const mid = await c.svc.state(b, p.matchId, r.end + 33 * MIN);
-  assert.equal(mid.forfeit, null);
-  await playThrough(c, b, p.matchId, r.end + 33 * MIN, { right: false });
-  const fin = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([fin.status, fin.result], ["finished", "b"]);
-  assert.equal((await c.svc.state(b, p.matchId, r.end + 99 * MIN)).forfeit, "a");
-  assert.equal((await c.store.getPlayer(b))!.rating, 1012);
-});
-
-test("a stale A part that answered nothing just expires, and play starts a fresh match", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
-  assert.ok(!n.done);
-  if (n.done) return;
-  // Within the limit + 30 minutes the match is still resumed.
-  const soon = await play(c, a, T0 + n.limitS * 1000 + 29 * MIN);
-  assert.deepEqual([soon.matchId, soon.resumed], [p.matchId, true]);
-  const later = await play(c, a, T0 + n.limitS * 1000 + 31 * MIN);
-  assert.equal(later.resumed, false);
-  assert.notEqual(later.matchId, p.matchId);
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "expired");
-  assert.equal((await c.store.getPlayer(a))!.rating, 1000);
-});
-
-test("a stale B part is also ended when B plays again, and B can then start a new match", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  await playThrough(c, a, p.matchId, T0);
-  await play(c, b, T0 + H);
-  await c.svc.next(b, p.matchId, T0 + H);
-  const again = await play(c, b, T0 + H + 3 * 60 * MIN);
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "finished");
-  assert.deepEqual([again.resumed, again.role], [false, "a"]); // nobody else is waiting: a new match as A
-});
-
-test("the first forfeit stands: A stale-forfeits, B then leaves too, and B still wins", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const b = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const r = await playThrough(c, a, p.matchId, T0, { count: 2 });
-  await c.svc.state(a, p.matchId, r.end + 31 * MIN); // A abandoned: forfeit a, waiting
-  await play(c, b, r.end + 32 * MIN);
-  await c.svc.next(b, p.matchId, r.end + 32 * MIN);
-  await c.svc.leave(b, p.matchId, r.end + 33 * MIN);
-  const m = (await c.store.getMatch(p.matchId))!;
-  assert.deepEqual([m.status, m.forfeit, m.result], ["finished", "a", "b"]);
-  assert.equal((await c.store.getPlayer(b))!.rating, 1012);
-  // The same when B just stops playing (stale) instead of leaving.
-  const a2 = await user(c, { matches: 10 });
-  const b2 = await user(c, { matches: 10 });
-  const p2 = await play(c, a2, T0 + 5 * H);
-  const r2 = await playThrough(c, a2, p2.matchId, T0 + 5 * H, { count: 1 });
-  await c.svc.state(a2, p2.matchId, r2.end + 31 * MIN);
-  await play(c, b2, r2.end + 32 * MIN);
-  await c.svc.hub(a2, r2.end + 100 * MIN); // B's part is stale now
-  const m2 = (await c.store.getMatch(p2.matchId))!;
-  assert.deepEqual([m2.status, m2.forfeit, m2.result], ["finished", "a", "b"]);
-});
-
-test("hub shows the real answered count of an abandoned A match that expired", async () => {
-  const c = setup();
-  const a = await user(c, { matches: 10 });
-  const p = await play(c, a);
-  const n = await c.svc.next(a, p.matchId, T0);
-  assert.ok(!n.done);
-  if (n.done) return;
-  // Question 0 timed out (closed by the next call), then the player vanished with nothing answered.
-  const n1 = await c.svc.next(a, p.matchId, T0 + 200_000);
-  assert.ok(!n1.done && n1.idx === 1);
-  const h = await c.svc.hub(a, T0 + 200_000 + 4 * H);
-  assert.equal((await c.store.getMatch(p.matchId))!.status, "expired");
-  const s = h.recent.find((m) => m.id === p.matchId)!;
-  assert.deepEqual([s.status, s.answered], ["expired", 1]); // question 0 closed (timeout), question 1 still open, not 10
 });

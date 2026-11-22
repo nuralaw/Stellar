@@ -10,11 +10,11 @@ import {
   ELO_SCALE,
   K_FACTOR,
   LEVELS,
-  MATCH_WINDOW,
   MS_PER_S,
   NETWORK_GRACE_MS,
   PERMILLE,
   PLACEMENT_MATCHES,
+  QUEUE_WINDOW,
   RATING_FLOOR,
   RESULT_SCORE,
   SPEED_BONUS_SHARE,
@@ -145,15 +145,20 @@ export function levelOf(rating: number, matches: number): LevelInfo {
   return { level: cur.level, name: cur.name, min: cur.min, max: cur.max, next, progress, placement: left > 0, left };
 }
 
-// --- Match set and matchmaking (5) ---
+// --- Match set and matchmaking (5, ELO-live 2) ---
 
-/** How many easy / medium / hard questions a match gets, by the creator's rating (5.2). */
+/** How many easy / medium / hard questions a match gets, by the creator's rating (5.2; the creator is the player who searched longer). */
 export function difficultyMix(rating: number): Record<Difficulty, number> {
   const row = DIFFICULTY_MIX.find((r) => rating < r.below) ?? DIFFICULTY_MIX[DIFFICULTY_MIX.length - 1];
   return { ...row.mix };
 }
 
-/** Allowed rating gap to the opponent after waiting this many hours (5.4). */
-export function matchWindow(hoursWaiting: number): number {
-  return Math.min(MATCH_WINDOW.cap, MATCH_WINDOW.base + MATCH_WINDOW.perHour * Math.max(0, hoursWaiting));
+/**
+ * Allowed rating gap to the opponent after searching this many ms (ELO-live 2.1): base + step x floor(s / everyS) while s < openAfterS,
+ * then null = no limit. Negative time counts as 0.
+ */
+export function queueWindow(searchedMs: number): number | null {
+  const s = Math.max(0, searchedMs) / MS_PER_S;
+  if (s >= QUEUE_WINDOW.openAfterS) return null;
+  return QUEUE_WINDOW.base + QUEUE_WINDOW.step * Math.floor(s / QUEUE_WINDOW.everyS);
 }

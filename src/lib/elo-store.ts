@@ -4,34 +4,40 @@ import path from "node:path";
 import { randomUUID } from "node:crypto";
 import type { Difficulty } from "./types";
 import type { SectionId } from "./taxonomy";
-import { applyElo, matchResult, matchWindow, type MatchResult } from "./elo.ts";
+import { applyElo, matchResult, queueWindow, type MatchResult } from "./elo.ts";
 import {
   LEADERBOARD_MIN_MATCHES,
   MATCH_SIZE,
   MAX_MATCHES_PER_DAY,
-  MAX_WAITING_MATCHES,
   MS_PER_S,
+  QUEUE,
+  QUEUE_WINDOW,
   RATING_FLOOR,
   REMATCH_COOLDOWN_H,
+  START_DEADLINE_S,
   START_RATING,
-  WAITING_EXPIRY_H,
 } from "./elo-config.ts";
 
-// Storage of ranked matches (docs/ELO.md section 8). One interface, two implementations:
+// Storage of ranked matches (docs/ELO.md section 8, live matchmaking: docs/ELO-live.md). One interface, two implementations:
 //  - Supabase (production): SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and supabase/elo.sql applied. REST for rows, RPC for the atomic
-//    parts (finish, void, claim, leaderboards, season close). The tables have RLS on with no policies.
-//  - Local file (development fallback): .data/elo.json, the same rules in TypeScript (finish uses applyElo, claim uses matchWindow).
+//    parts (the queue, finish, void, leaderboards, season close). The tables have RLS on with no policies.
+//  - Local file (development fallback): .data/elo.json, the same rules in TypeScript (the queue uses queueWindow, finish uses applyElo).
 //    Doesn't work on Vercel (read-only file system).
 // The store only stores and applies the rules of the database. Who may play, which questions a match gets, scoring an answer and the
-// full-screen rule belong to elo-server.ts (stage 3).
+// full-screen rule belong to elo-server.ts.
+// Matches are made by the queue only: queueJoin / queuePoll pair two searching players into a match in status "playing" (both players,
+// A's question set, a start deadline). Only finishMatch / voidMatch change a match's status afterwards.
 // Times are Unix ms everywhere. Methods that take `now` use it as the clock in the local store (so tests can move time); the
 // Supabase store uses the database clock for finish / void / leaderboards and `now` only where it sends a timestamp.
 
-export type MatchStatus = "playing_a" | "waiting" | "playing_b" | "finished" | "expired" | "void";
+/** playing: both players are set and at least one part is open; finished: rating applied; void: no rating change (or reverted). */
+export type MatchStatus = "playing" | "finished" | "void";
 export type MatchMode = "mixed" | "rw" | "math";
 export type Forfeit = "a" | "b";
 export type Board = "global" | "season" | "week";
 export type AnswerStatus = "open" | "answered" | "timeout" | "annulled";
+/** idle: no queue row; searching; matched (a match was made, see matchId); timeout (the search ran out, reported once). */
+export type QueueStatus = "idle" | "searching" | "matched" | "timeout";
 
 /** A player's rating row. `name` / `avatar` are the public leaderboard identity (set from the profile when a match starts). */
 export interface EloPlayerRecord {
@@ -53,16 +59,24 @@ export interface EloMatch {
   id: string;
   mode: MatchMode;
   status: MatchStatus;
+  /** The player who started searching first; the match plays A's question set. */
   playerA: string;
+  /** Null only if this player's account was deleted. */
   playerB: string | null;
   /** Exactly MATCH_SIZE question ids, in the order both players get them. */
   questionIds: string[];
+  /** When the pair was made by the queue. */
   createdAt: number;
-  aFinishedAt: number | null;
+  /** A / B opened their first question. */
+  aStartedAt: number | null;
   bStartedAt: number | null;
+  /** A's / B's part is closed (played or forfeited). */
+  aFinishedAt: number | null;
+  bFinishedAt: number | null;
+  /** createdAt + START_DEADLINE_S: a side that has not started by then loses (nobody started: void). */
+  startBy: number | null;
+  /** The rating change was applied. */
   finishedAt: number | null;
-  /** aFinishedAt + 48 h. */
-  expiresAt: number | null;
   pointsA: number | null;
   pointsB: number | null;
   forfeit: Forfeit | null;
@@ -73,12 +87,12 @@ export interface EloMatch {
   deltaB: number | null;
 }
 
-/** What `updateMatch` may change. The status moves on through claimWaiting / finishMatch / voidMatch, never through a patch. */
+/** What `updateMatch` may change. The status moves on only through finishMatch / voidMatch, never through a patch. */
 export interface MatchPatch {
-  /** playing_a -> waiting (A is done) or waiting -> expired. Moving to "waiting" sets expiresAt = aFinishedAt + 48 h unless given. */
-  status?: "waiting" | "expired";
+  aStartedAt?: number;
+  bStartedAt?: number;
   aFinishedAt?: number;
-  expiresAt?: number;
+  bFinishedAt?: number;
   pointsA?: number;
   pointsB?: number;
   forfeit?: Forfeit;
@@ -167,12 +181,21 @@ export interface LeaderPage {
 }
 
 export interface MatchLists {
-  /** The match this user is playing right now (A in playing_a, B in playing_b). */
+  /** The match this user is playing right now (status playing, as A or B). */
   active: EloMatch | null;
-  /** Matches this user created and finished their part of, still without a result: status waiting or playing_b. */
-  waiting: EloMatch[];
-  /** Finished / expired / void matches of either role, newest first. */
+  /** Finished / void matches of either role, newest first. */
   recent: EloMatch[];
+}
+
+/** Where a player stands in the matchmaking queue (docs/ELO-live.md 2). */
+export interface QueueRecord {
+  status: QueueStatus;
+  /** When the search started (Unix ms); null when idle. */
+  since: number | null;
+  /** The match made for this player (status matched); null otherwise. */
+  matchId: string | null;
+  /** How many OTHER players are searching in the same mode right now. */
+  searching: number;
 }
 
 export class EloSetupError extends Error {}
@@ -181,12 +204,12 @@ export class EloStoreUnavailable extends Error {}
 export class EloInvalidIdError extends Error {}
 /** finishMatch / voidMatch of a match that doesn't exist (API: 404). */
 export class EloNotFoundError extends Error {}
-/** The player already has a match in progress (playing_a / playing_b) and can't claim another (API: 409). */
+/** The player already has a match in progress (status playing) and can't join the queue (API: 409). */
 export class EloActiveMatchError extends Error {}
 /** A per-player limit of docs/ELO.md 5.4 was hit: the API turns it into 429. */
 export class EloLimitError extends Error {
-  kind: "waiting" | "daily";
-  constructor(kind: "waiting" | "daily", message: string) {
+  kind: "daily";
+  constructor(kind: "daily", message: string) {
     super(message);
     this.kind = kind;
   }
@@ -194,26 +217,37 @@ export class EloLimitError extends Error {
 
 export interface EloStore {
   readonly kind: "supabase" | "file";
-  /** Gets the player's row, creating it at 1000 first. A given name / avatar replaces the stored one (the profile is the source). */
+  /** Gets the player's row, creating it at START_RATING first. A given name / avatar replaces the stored one (the profile is the source). */
   ensurePlayer(userId: string, profile?: { name?: string; avatar?: string }, now?: number): Promise<EloPlayerRecord>;
   getPlayer(userId: string): Promise<EloPlayerRecord | null>;
   /** Several rows at once (opponent names), keyed by user id; unknown ids are absent. */
   getPlayers(userIds: string[]): Promise<Record<string, EloPlayerRecord>>;
-  /** A new match in status playing_a. Throws EloLimitError at 3 waiting matches or 30 started matches in the last 24 h. */
-  createMatch(input: { mode: MatchMode; playerA: string; questionIds: string[]; now?: number }): Promise<EloMatch>;
   /**
-   * Takes the oldest waiting match this player may join (5.4) and makes them player B; null if none. Expires stale matches first.
-   * Throws EloActiveMatchError if the player already has a match in progress, EloLimitError at the daily limit.
+   * Starts (or keeps) a search and tries to pair at once. `rating` and `questionIds` (exactly MATCH_SIZE, prepared by the server) are stored
+   * in the queue row; a repeated call while searching only refreshes the sign of life (since, rating and questions stay). After a
+   * timeout it starts a new search. Throws EloActiveMatchError if the player has a match in status playing, EloLimitError("daily") at
+   * MAX_MATCHES_PER_DAY started matches in the last 24 h.
    */
-  claimWaiting(input: { userId: string; rating: number; mode: MatchMode; now?: number }): Promise<EloMatch | null>;
+  queueJoin(input: { userId: string; mode: MatchMode; rating: number; questionIds: string[]; now?: number }): Promise<QueueRecord>;
+  /**
+   * One poll (docs/ELO-live.md 2.2): drops players who stopped polling (QUEUE.dropAfterS), times out searches older than QUEUE.searchMaxS,
+   * refreshes the caller's sign of life and tries to pair them. "timeout" is answered once, then the row is gone (idle).
+   * A matched row is kept while its match is playing and removed once it is not.
+   */
+  queuePoll(input: { userId: string; now?: number }): Promise<QueueRecord>;
+  /** Leaves the queue (a searching / timeout row). A pair that is already made can't be cancelled: the answer is then matched. */
+  queueCancel(input: { userId: string; now?: number }): Promise<QueueRecord>;
   getMatch(id: string): Promise<EloMatch | null>;
   /** Applies the patch; with `onlyIfStatus` only while the match is in one of these statuses. Returns the updated match, or null when nothing was updated. */
   updateMatch(id: string, patch: MatchPatch, onlyIfStatus?: MatchStatus[]): Promise<EloMatch | null>;
-  /** Active / waiting / recent matches of a user. Expires stale waiting matches first. */
-  listMatches(userId: string, opts?: { now?: number; recentLimit?: number }): Promise<MatchLists>;
-  /** Matches of this user (as A) in status waiting. */
-  countWaiting(userId: string): Promise<number>;
-  /** Matches this user started since the given time (created as A, or joined as B). */
+  /**
+   * Records who gave up, atomically and only while the match is playing and nobody has forfeited yet (the first forfeit stands).
+   * Returns true when this call set it, false when the match is gone, not playing, or already has a forfeit.
+   */
+  setForfeit(id: string, side: Forfeit): Promise<boolean>;
+  /** The active match (status playing, as A or B) and the recent finished / void matches (newest first, `recentLimit` default 10). */
+  listMatches(userId: string, opts?: { recentLimit?: number }): Promise<MatchLists>;
+  /** Matches this user started (as A or B, by createdAt) since the given time. */
   countStarted(userId: string, sinceMs: number): Promise<number>;
   /** Writes the open row of a question when it is issued. A repeated call returns the existing row untouched. */
   openAnswer(a: NewAnswer): Promise<EloAnswer>;
@@ -224,8 +258,9 @@ export interface EloStore {
   /** Question ids this player was issued since the given time (5.2: avoid repeats). */
   recentQuestionIds(userId: string, sinceMs: number): Promise<string[]>;
   /**
-   * Atomically applies the rating change of a playing_b match whose points are already stored. Idempotent. A match whose second player
-   * is gone (account deleted) becomes void with no rating change. Throws EloNotFoundError for an unknown match.
+   * Atomically applies the rating change of a playing match whose points (both sides) are already stored. Idempotent: any other status
+   * returns the stored outcome unchanged. A match whose second player is gone (account deleted) becomes void with no rating change.
+   * Throws EloNotFoundError for an unknown match, and an Error when a side has no points yet.
    */
   finishMatch(matchId: string, now?: number): Promise<MatchOutcome>;
   /** Voids a match, reverting its rating change if it was applied. Idempotent. Throws EloNotFoundError for an unknown match. */
@@ -233,8 +268,6 @@ export interface EloStore {
   leaderboard(input: { board: Board; page?: number; size?: number; userId?: string | null; now?: number }): Promise<LeaderPage>;
   /** Saves the final table of a finished month 'YYYY-MM'. Returns the number of rows; calling again changes nothing. */
   closeSeason(season: string, now?: number): Promise<number>;
-  /** Waiting matches older than 48 h become expired (no rating change). Returns how many. */
-  expireStale(now?: number): Promise<number>;
 }
 
 /* ---------------- shared helpers ---------------- */
@@ -248,16 +281,19 @@ const RECENT_DEFAULT = 10;
 const SETUP_MESSAGE =
   "Ranked tables aren't set up: run supabase/elo.sql (npm run db:apply -- supabase/elo.sql, or paste it into the Supabase SQL Editor).";
 
-function expiryOf(aFinishedAt: number | null): number | null {
-  return aFinishedAt === null ? null : aFinishedAt + WAITING_EXPIRY_H * HOUR_MS;
-}
+/** The queue rules sent to the database functions as p_rules (keys of supabase/elo.sql); the local store reads the same config directly. */
+const QUEUE_RULES = {
+  base: QUEUE_WINDOW.base,
+  step: QUEUE_WINDOW.step,
+  every_s: QUEUE_WINDOW.everyS,
+  open_after_s: QUEUE_WINDOW.openAfterS,
+  drop_after_s: QUEUE.dropAfterS,
+  search_max_s: QUEUE.searchMaxS,
+  start_deadline_s: START_DEADLINE_S,
+  rematch_h: REMATCH_COOLDOWN_H,
+} as const;
 
-/** Fills expiresAt when a match moves to "waiting". */
-function withExpiry(patch: MatchPatch, current: Pick<EloMatch, "aFinishedAt">): MatchPatch {
-  if (patch.status !== "waiting" || patch.expiresAt !== undefined) return patch;
-  const exp = expiryOf(patch.aFinishedAt ?? current.aFinishedAt);
-  return exp === null ? patch : { ...patch, expiresAt: exp };
-}
+const IDLE: QueueRecord = { status: "idle", since: null, matchId: null, searching: 0 };
 
 function checkQuestionIds(ids: string[]) {
   if (ids.length !== MATCH_SIZE || ids.some((q) => typeof q !== "string" || q === "")) {
@@ -277,18 +313,12 @@ function clampSize(size: number | undefined): number {
   return Math.min(BOARD_PAGE_MAX, Math.max(1, Math.floor(size ?? BOARD_PAGE_MAX)));
 }
 
-/** When this match last mattered to the user: created (as A) or joined (as B). Lists are newest first by this time. */
-function activityAt(userId: string, m: EloMatch): number {
-  return m.playerB === userId ? (m.bStartedAt ?? m.createdAt) : m.createdAt;
-}
-
 /** Splits one user's matches into the groups of MatchLists. */
 function classify(userId: string, all: EloMatch[], recentLimit: number): MatchLists {
-  const sorted = [...all].sort((x, y) => activityAt(userId, y) - activityAt(userId, x));
-  const active = sorted.find((m) => (m.playerA === userId && m.status === "playing_a") || (m.playerB === userId && m.status === "playing_b")) ?? null;
-  const waiting = sorted.filter((m) => m.playerA === userId && (m.status === "waiting" || m.status === "playing_b"));
-  const recent = sorted.filter((m) => m.status === "finished" || m.status === "expired" || m.status === "void").slice(0, recentLimit);
-  return { active, waiting, recent };
+  const mine = all.filter((m) => m.playerA === userId || m.playerB === userId).sort((x, y) => y.createdAt - x.createdAt);
+  const active = mine.find((m) => m.status === "playing") ?? null;
+  const recent = mine.filter((m) => m.status === "finished" || m.status === "void").slice(0, recentLimit);
+  return { active, recent };
 }
 
 function outcomeOf(m: EloMatch, changed: boolean): MatchOutcome {
@@ -344,7 +374,7 @@ interface HistoryRow {
   at: number;
   ratingBefore: number;
   ratingAfter: number;
-  /** "reset": an admin put the rating back to 1000 (supabase/elo-admin.sql). */
+  /** "reset": an admin put the rating back to START_RATING (supabase/elo-admin.sql). */
   reason: "match" | "void" | "reset";
 }
 
@@ -355,9 +385,24 @@ interface SeasonRow {
   rating: number;
 }
 
+/** A row of the local queue (the twin of public.elo_queue). */
+export interface QueueRow {
+  userId: string;
+  mode: MatchMode;
+  rating: number;
+  questionIds: string[];
+  since: number;
+  /** The last poll: the player's sign of life. */
+  lastSeen: number;
+  status: "searching" | "matched" | "timeout";
+  matchId: string | null;
+}
+
 export interface LocalDb {
   players: Record<string, EloPlayerRecord>;
   matches: Record<string, EloMatch>;
+  /** The matchmaking queue, by user id. */
+  queue: Record<string, QueueRow>;
   /** Key: matchId|userId|idx. */
   answers: Record<string, EloAnswer>;
   history: HistoryRow[];
@@ -365,14 +410,26 @@ export interface LocalDb {
   nextHistoryId: number;
 }
 
-const emptyDb = (): LocalDb => ({ players: {}, matches: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1 });
+const emptyDb = (): LocalDb => ({ players: {}, matches: {}, queue: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1 });
+/**
+ * Brings a file written by the old (asynchronous) flow up to date, like the migration in supabase/elo.sql: playing_a / waiting / playing_b / expired
+ * matches become void (no rating was applied to them) and the removed expiresAt field is dropped. Changes the given object and returns it.
+ */
+export function migrateLocalDb(db: LocalDb): LocalDb {
+  const old = new Set(["playing_a", "waiting", "playing_b", "expired"]);
+  for (const m of Object.values(db.matches)) {
+    if (old.has(m.status as string)) m.status = "void";
+    delete (m as { expiresAt?: unknown }).expiresAt;
+  }
+  return db;
+}
 const answerKey = (matchId: string, userId: string, idx: number) => `${matchId}|${userId}|${idx}`;
 
 /** File-backed store with the rules of supabase/elo.sql in TypeScript. Single process, synchronous read-modify-write per call. */
 export function createLocalStore(file: string): EloStore {
   function load(): LocalDb {
     try {
-      return { ...emptyDb(), ...JSON.parse(fs.readFileSync(/* turbopackIgnore: true */ file, "utf8")) };
+      return migrateLocalDb({ ...emptyDb(), ...JSON.parse(fs.readFileSync(/* turbopackIgnore: true */ file, "utf8")) });
     } catch {
       return emptyDb();
     }
@@ -397,26 +454,91 @@ export function createLocalStore(file: string): EloStore {
     return { userId, rating: START_RATING, peak: START_RATING, matches: 0, wins: 0, losses: 0, draws: 0, name: "", avatar: "", updatedAt: now };
   }
 
-  function expire(db: LocalDb, now: number): number {
-    let n = 0;
-    for (const m of Object.values(db.matches)) {
-      const exp = m.expiresAt ?? expiryOf(m.aFinishedAt);
-      if (m.status === "waiting" && exp !== null && exp <= now) {
-        m.status = "expired";
-        n++;
-      }
-    }
-    return n;
+  const playingOf = (db: LocalDb, userId: string) => Object.values(db.matches).some((m) => m.status === "playing" && (m.playerA === userId || m.playerB === userId));
+  const startedSince = (db: LocalDb, userId: string, since: number) =>
+    Object.values(db.matches).filter((m) => (m.playerA === userId || m.playerB === userId) && m.createdAt >= since).length;
+
+  function queueRecord(db: LocalDb, userId: string): QueueRecord {
+    const q = db.queue[userId];
+    if (!q) return { ...IDLE };
+    const searching = Object.values(db.queue).filter((o) => o.status === "searching" && o.mode === q.mode && o.userId !== userId).length;
+    return { status: q.status, since: q.since, matchId: q.matchId, searching };
   }
 
-  const waitingOf = (db: LocalDb, userId: string) => Object.values(db.matches).filter((m) => m.playerA === userId && m.status === "waiting").length;
-  const startedSince = (db: LocalDb, userId: string, since: number) =>
-    Object.values(db.matches).filter((m) => (m.playerA === userId && m.createdAt >= since) || (m.playerB === userId && (m.bStartedAt ?? 0) >= since)).length;
+  /** Housekeeping of supabase/elo.sql elo_queue_sweep: silent players leave, finished pairs are forgotten, old searches time out. */
+  function sweep(db: LocalDb, now: number) {
+    for (const [id, q] of Object.entries(db.queue)) {
+      const silent = (q.status === "searching" || q.status === "timeout") && q.lastSeen < now - QUEUE.dropAfterS * MS_PER_S;
+      const over = q.status === "matched" && (q.matchId === null || db.matches[q.matchId]?.status !== "playing");
+      if (silent || over) delete db.queue[id];
+    }
+    for (const q of Object.values(db.queue)) {
+      if (q.status === "searching" && q.since <= now - QUEUE.searchMaxS * MS_PER_S) q.status = "timeout";
+    }
+  }
+
+  /** The pairing of supabase/elo.sql elo_queue_try_match (docs/ELO-live.md 2.2) for one searching player. */
+  function tryMatch(db: LocalDb, userId: string, now: number) {
+    const me = db.queue[userId];
+    if (!me || me.status !== "searching") return;
+    const myWindow = queueWindow(now - me.since);
+    const matches = Object.values(db.matches);
+    const fits = Object.values(db.queue)
+      .filter((q) => {
+        if (q.status !== "searching" || q.mode !== me.mode || q.userId === me.userId) return false;
+        if (q.lastSeen < now - QUEUE.dropAfterS * MS_PER_S) return false;
+        if (matches.some((x) => x.status === "playing" && [x.playerA, x.playerB].some((u) => u === q.userId || u === me.userId))) return false;
+        const rematch = matches.some(
+          (x) =>
+            x.status !== "void" &&
+            x.playerB !== null &&
+            ((x.playerA === me.userId && x.playerB === q.userId) || (x.playerA === q.userId && x.playerB === me.userId)) &&
+            x.createdAt > now - REMATCH_COOLDOWN_H * HOUR_MS,
+        );
+        if (rematch) return false;
+        const theirs = queueWindow(now - q.since);
+        return myWindow === null || theirs === null || Math.abs(q.rating - me.rating) <= Math.max(myWindow, theirs);
+      })
+      .sort((x, y) => x.since - y.since || (x.userId < y.userId ? -1 : x.userId > y.userId ? 1 : 0));
+    const other = fits[0];
+    if (!other) return;
+    // A = whoever started searching first (tie: the smaller user id); the match plays A's question set.
+    const meFirst = me.since < other.since || (me.since === other.since && me.userId < other.userId);
+    const [a, b] = meFirst ? [me, other] : [other, me];
+    const m: EloMatch = {
+      id: randomUUID(),
+      mode: me.mode,
+      status: "playing",
+      playerA: a.userId,
+      playerB: b.userId,
+      questionIds: [...a.questionIds],
+      createdAt: now,
+      aStartedAt: null,
+      bStartedAt: null,
+      aFinishedAt: null,
+      bFinishedAt: null,
+      startBy: now + START_DEADLINE_S * MS_PER_S,
+      finishedAt: null,
+      pointsA: null,
+      pointsB: null,
+      forfeit: null,
+      result: null,
+      ratingABefore: null,
+      ratingBBefore: null,
+      deltaA: null,
+      deltaB: null,
+    };
+    db.matches[m.id] = m;
+    me.status = "matched";
+    me.matchId = m.id;
+    other.status = "matched";
+    other.matchId = m.id;
+  }
 
   function applyFinish(db: LocalDb, m: EloMatch, now: number): MatchOutcome {
-    if (m.status !== "playing_b") return outcomeOf(m, false);
+    if (m.status !== "playing") return outcomeOf(m, false);
     if (m.playerB === null) {
-      // The second player's account is gone: nobody to rate against, so the match is void and no rating changes.
+      // A player's account is gone: nobody to rate against, so the match is void and no rating changes.
       m.status = "void";
       return outcomeOf(m, true);
     }
@@ -471,13 +593,13 @@ export function createLocalStore(file: string): EloStore {
         if (m.result === own) p.wins = Math.max(0, p.wins - 1);
         else if (m.result === "draw") p.draws = Math.max(0, p.draws - 1);
         else p.losses = Math.max(0, p.losses - 1);
-        // The peak counts only matches after the player's latest reset (a reset puts it back to 1000).
+        // The peak counts only matches after the player's latest reset (a reset puts it back to START_RATING).
         const kept = db.history.filter((h) => h.userId === p.userId && h.reason === "match" && h.at > resetAt && db.matches[h.matchId]?.status !== "void");
         p.peak = Math.max(rating, ...kept.map((h) => h.ratingAfter), START_RATING);
         p.updatedAt = now;
       }
     }
-    return outcomeOf(m, wasFinished);
+    return outcomeOf(m, true); // the status changed (SQL: elo_void_match answers changed = true for any match it voids)
   }
 
   function toRow(p: EloPlayerRecord, rank: number | null, points?: number): LeaderRow {
@@ -510,13 +632,11 @@ export function createLocalStore(file: string): EloStore {
     } else {
       const w = weekWindow(o.now);
       const parts: { u: string; mid: string; pts: number }[] = [];
+      // Both sides of FINISHED matches, by the time the match finished (a void or still playing match scores nothing).
       for (const m of Object.values(db.matches)) {
-        if (m.status !== "void" && m.pointsA !== null && m.aFinishedAt !== null && m.aFinishedAt >= w.from && m.aFinishedAt < w.to) {
-          parts.push({ u: m.playerA, mid: m.id, pts: m.pointsA });
-        }
-        if (m.status === "finished" && m.playerB !== null && m.pointsB !== null && m.finishedAt !== null && m.finishedAt >= w.from && m.finishedAt < w.to) {
-          parts.push({ u: m.playerB, mid: m.id, pts: m.pointsB });
-        }
+        if (m.status !== "finished" || m.finishedAt === null || m.finishedAt < w.from || m.finishedAt >= w.to) continue;
+        if (m.pointsA !== null) parts.push({ u: m.playerA, mid: m.id, pts: m.pointsA });
+        if (m.playerB !== null && m.pointsB !== null) parts.push({ u: m.playerB, mid: m.id, pts: m.pointsB });
       }
       const byUser: Record<string, { points: number; correct: number; ms: number }> = {};
       for (const pt of parts) {
@@ -567,68 +687,37 @@ export function createLocalStore(file: string): EloStore {
       return out;
     },
 
-    async createMatch({ mode, playerA, questionIds, now = Date.now() }) {
+    async queueJoin({ userId, mode, rating, questionIds, now = Date.now() }) {
       checkQuestionIds(questionIds);
       return write((db) => {
-        expire(db, now);
-        // The database has a unique index on (player_a) where status = playing_a; the same rule here.
-        if (Object.values(db.matches).some((x) => x.playerA === playerA && x.status === "playing_a")) throw new EloActiveMatchError("The player already has a match in progress");
-        if (waitingOf(db, playerA) >= MAX_WAITING_MATCHES) throw new EloLimitError("waiting", `At most ${MAX_WAITING_MATCHES} matches can wait for an opponent`);
-        if (startedSince(db, playerA, now - DAY_MS) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
-        const m: EloMatch = {
-          id: randomUUID(),
-          mode,
-          status: "playing_a",
-          playerA,
-          playerB: null,
-          questionIds: [...questionIds],
-          createdAt: now,
-          aFinishedAt: null,
-          bStartedAt: null,
-          finishedAt: null,
-          expiresAt: null,
-          pointsA: null,
-          pointsB: null,
-          forfeit: null,
-          result: null,
-          ratingABefore: null,
-          ratingBBefore: null,
-          deltaA: null,
-          deltaB: null,
-        };
-        db.matches[m.id] = m;
-        return { ...m };
+        // The database has unique indexes on (player_a) / (player_b) where status = playing, and the join checks it; the same rule here.
+        if (playingOf(db, userId)) throw new EloActiveMatchError("The player already has a match in progress");
+        if (startedSince(db, userId, now - DAY_MS) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
+        sweep(db, now);
+        const cur = db.queue[userId];
+        if (cur?.status === "searching") cur.lastSeen = now;
+        else db.queue[userId] = { userId, mode, rating, questionIds: [...questionIds], since: now, lastSeen: now, status: "searching", matchId: null };
+        tryMatch(db, userId, now);
+        return queueRecord(db, userId);
       });
     },
-
-    async claimWaiting({ userId, rating, mode, now = Date.now() }) {
+    async queuePoll({ userId, now = Date.now() }) {
       return write((db) => {
-        if (Object.values(db.matches).some((m) => (m.playerA === userId && m.status === "playing_a") || (m.playerB === userId && m.status === "playing_b"))) {
-          throw new EloActiveMatchError("The player already has a match in progress");
-        }
-        expire(db, now);
-        if (startedSince(db, userId, now - DAY_MS) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
-        const candidates = Object.values(db.matches)
-          .filter((m) => m.status === "waiting" && m.mode === mode && m.playerA !== userId)
-          .sort((x, y) => x.createdAt - y.createdAt);
-        const hit = candidates.find((m) => {
-          const ratingA = db.players[m.playerA]?.rating ?? START_RATING;
-          const waited = (now - (m.aFinishedAt ?? m.createdAt)) / HOUR_MS;
-          if (Math.abs(ratingA - rating) > matchWindow(waited)) return false;
-          const rematch = Object.values(db.matches).some(
-            (x) =>
-              x.status !== "void" &&
-              x.playerB !== null &&
-              ((x.playerA === m.playerA && x.playerB === userId) || (x.playerA === userId && x.playerB === m.playerA)) &&
-              (x.bStartedAt ?? x.createdAt) > now - REMATCH_COOLDOWN_H * HOUR_MS,
-          );
-          return !rematch;
-        });
-        if (!hit) return null;
-        hit.status = "playing_b";
-        hit.playerB = userId;
-        hit.bStartedAt = now;
-        return { ...hit };
+        sweep(db, now);
+        const q = db.queue[userId];
+        if (q?.status === "searching") q.lastSeen = now;
+        tryMatch(db, userId, now);
+        const rec = queueRecord(db, userId);
+        if (rec.status === "timeout") delete db.queue[userId]; // reported once
+        return rec;
+      });
+    },
+    async queueCancel({ userId }) {
+      return write((db) => {
+        const q = db.queue[userId];
+        if (q?.status === "matched" && (q.matchId === null || db.matches[q.matchId]?.status !== "playing")) delete db.queue[userId];
+        else if (q && q.status !== "matched") delete db.queue[userId];
+        return queueRecord(db, userId);
       });
     },
 
@@ -639,28 +728,26 @@ export function createLocalStore(file: string): EloStore {
       return write((db) => {
         const m = db.matches[id];
         if (!m || (onlyIfStatus && !onlyIfStatus.includes(m.status))) return null;
-        const p = withExpiry(patch, m);
-        if (p.status !== undefined) m.status = p.status;
-        if (p.aFinishedAt !== undefined) m.aFinishedAt = p.aFinishedAt;
-        if (p.expiresAt !== undefined) m.expiresAt = p.expiresAt;
-        if (p.pointsA !== undefined) m.pointsA = p.pointsA;
-        if (p.pointsB !== undefined) m.pointsB = p.pointsB;
-        if (p.forfeit !== undefined) m.forfeit = p.forfeit;
+        if (patch.aStartedAt !== undefined) m.aStartedAt = patch.aStartedAt;
+        if (patch.bStartedAt !== undefined) m.bStartedAt = patch.bStartedAt;
+        if (patch.aFinishedAt !== undefined) m.aFinishedAt = patch.aFinishedAt;
+        if (patch.bFinishedAt !== undefined) m.bFinishedAt = patch.bFinishedAt;
+        if (patch.pointsA !== undefined) m.pointsA = patch.pointsA;
+        if (patch.pointsB !== undefined) m.pointsB = patch.pointsB;
+        if (patch.forfeit !== undefined) m.forfeit = patch.forfeit;
         return { ...m };
       });
     },
-    async listMatches(userId, { now = Date.now(), recentLimit = RECENT_DEFAULT } = {}) {
-      return classify(
-        userId,
-        write((db) => {
-          expire(db, now);
-          return Object.values(db.matches).filter((m) => m.playerA === userId || m.playerB === userId);
-        }),
-        recentLimit,
-      );
+    async setForfeit(id, side) {
+      return write((db) => {
+        const m = db.matches[id];
+        if (!m || m.status !== "playing" || m.forfeit !== null) return false;
+        m.forfeit = side;
+        return true;
+      });
     },
-    async countWaiting(userId) {
-      return waitingOf(load(), userId);
+    async listMatches(userId, { recentLimit = RECENT_DEFAULT } = {}) {
+      return classify(userId, Object.values(load().matches), recentLimit);
     },
     async countStarted(userId, sinceMs) {
       return startedSince(load(), userId, sinceMs);
@@ -754,9 +841,6 @@ export function createLocalStore(file: string): EloStore {
         return rows.length;
       });
     },
-    async expireStale(now = Date.now()) {
-      return write((db) => expire(db, now));
-    },
   };
 }
 
@@ -798,10 +882,12 @@ const toMatch = (r: Row): EloMatch => ({
   playerB: r.player_b === null || r.player_b === undefined ? null : String(r.player_b),
   questionIds: (r.question_ids as string[]) ?? [],
   createdAt: tsOrNull(r.created_at) ?? 0,
-  aFinishedAt: tsOrNull(r.a_finished_at),
+  aStartedAt: tsOrNull(r.a_started_at),
   bStartedAt: tsOrNull(r.b_started_at),
+  aFinishedAt: tsOrNull(r.a_finished_at),
+  bFinishedAt: tsOrNull(r.b_finished_at),
+  startBy: tsOrNull(r.start_by),
   finishedAt: tsOrNull(r.finished_at),
-  expiresAt: tsOrNull(r.expires_at),
   pointsA: numOrNull(r.points_a),
   pointsB: numOrNull(r.points_b),
   forfeit: (r.forfeit as Forfeit | null) ?? null,
@@ -863,11 +949,19 @@ const toLeaderRow = (j: Row): LeaderRow => {
   return row;
 };
 
+const toQueue = (j: Row): QueueRecord => ({
+  status: (j.status as QueueStatus | undefined) ?? "idle",
+  since: tsOrNull(j.since),
+  matchId: typeof j.match_id === "string" ? j.match_id : null,
+  searching: num(j.searching ?? 0),
+});
+
 function patchBody(patch: MatchPatch): Row {
   const r: Row = {};
-  if (patch.status !== undefined) r.status = patch.status;
+  if (patch.aStartedAt !== undefined) r.a_started_at = iso(patch.aStartedAt);
+  if (patch.bStartedAt !== undefined) r.b_started_at = iso(patch.bStartedAt);
   if (patch.aFinishedAt !== undefined) r.a_finished_at = iso(patch.aFinishedAt);
-  if (patch.expiresAt !== undefined) r.expires_at = iso(patch.expiresAt);
+  if (patch.bFinishedAt !== undefined) r.b_finished_at = iso(patch.bFinishedAt);
   if (patch.pointsA !== undefined) r.points_a = patch.pointsA;
   if (patch.pointsB !== undefined) r.points_b = patch.pointsB;
   if (patch.forfeit !== undefined) r.forfeit = patch.forfeit;
@@ -889,8 +983,8 @@ export function createSupabaseStore(baseUrl: string, serviceKey: string): EloSto
       // PGRST205 = unknown table, PGRST202 = unknown function, PGRST204 = unknown column, 42P01 / 42883 = Postgres' own versions.
       if (body.includes("ELO_NOT_FOUND")) throw new EloNotFoundError("Match not found");
       if (body.includes("ELO_ACTIVE_MATCH")) throw new EloActiveMatchError("The player already has a match in progress");
-      // 23505 on elo_matches_one_playing_a: a second playing_a match for the same player (two concurrent /play calls).
-      if (body.includes("23505") && body.includes("elo_matches_one_playing_a")) throw new EloActiveMatchError("The player already has a match in progress");
+      // 23505 on elo_matches_one_playing_as_a / _as_b: a second playing match for the same player (the queue functions already check it).
+      if (body.includes("23505") && body.includes("elo_matches_one_playing")) throw new EloActiveMatchError("The player already has a match in progress");
       if (["PGRST205", "PGRST202", "PGRST204", "42P01", "42883"].some((c) => body.includes(c))) throw new EloSetupError(SETUP_MESSAGE);
       console.error(`[elo] ${init.method ?? "GET"} ${pathAndQuery.split("?")[0]}: ${res.status} ${body.slice(0, 300)}`);
       throw new EloStoreUnavailable("Couldn't reach the ranked tables.");
@@ -907,17 +1001,12 @@ export function createSupabaseStore(baseUrl: string, serviceKey: string): EloSto
   }
   const ret = { Prefer: "return=representation" };
 
-  async function countWaiting(userId: string) {
-    if (!isUuid(userId)) return 0;
-    return (await rows(`elo_matches?player_a=eq.${enc(uuid(userId))}&status=eq.waiting&select=id&limit=50`)).length;
-  }
+  /** PostgREST filter: matches where this user is A or B. */
+  const ofUser = (u: string) => `or=(player_a.eq.${u},player_b.eq.${u})`;
   async function countStarted(userId: string, sinceMs: number) {
     if (!isUuid(userId)) return 0;
-    const u = enc(uuid(userId));
-    const since = enc(iso(sinceMs));
-    const asA = await rows(`elo_matches?player_a=eq.${u}&created_at=gte.${since}&select=id&limit=200`);
-    const asB = await rows(`elo_matches?player_b=eq.${u}&b_started_at=gte.${since}&select=id&limit=200`);
-    return asA.length + asB.length;
+    const r = await rows(`elo_matches?${ofUser(enc(uuid(userId)))}&created_at=gte.${enc(iso(sinceMs))}&select=id&limit=200`);
+    return r.length;
   }
   async function getMatch(id: string): Promise<EloMatch | null> {
     if (!isUuid(id)) return null;
@@ -929,15 +1018,6 @@ export function createSupabaseStore(baseUrl: string, serviceKey: string): EloSto
     const r = await rows(`elo_players?user_id=eq.${enc(uuid(userId))}&select=*`);
     return r[0] ? toPlayer(r[0]) : null;
   }
-  async function expireStale(now = Date.now()): Promise<number> {
-    const r = await rows(`elo_matches?status=eq.waiting&expires_at=lte.${enc(iso(now))}&select=id`, {
-      method: "PATCH",
-      headers: ret,
-      body: JSON.stringify({ status: "expired" }),
-    });
-    return r.length;
-  }
-
   return {
     kind: "supabase",
 
@@ -971,43 +1051,43 @@ export function createSupabaseStore(baseUrl: string, serviceKey: string): EloSto
       return out;
     },
 
-    async createMatch({ mode, playerA, questionIds, now = Date.now() }) {
+    async queueJoin({ userId, mode, rating, questionIds, now = Date.now() }) {
       checkQuestionIds(questionIds);
-      if ((await countWaiting(playerA)) >= MAX_WAITING_MATCHES) throw new EloLimitError("waiting", `At most ${MAX_WAITING_MATCHES} matches can wait for an opponent`);
-      if ((await countStarted(playerA, now - DAY_MS)) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
-      const body = { mode, status: "playing_a", player_a: uuid(playerA), question_ids: questionIds, created_at: iso(now) };
-      const created = await rows("elo_matches", { method: "POST", headers: ret, body: JSON.stringify(body) });
-      return toMatch(created[0]);
+      const u = uuid(userId);
+      // The same order as the local store: a match in progress first, then the daily limit (the function re-checks the first under its lock).
+      if ((await rows(`elo_matches?status=eq.playing&${ofUser(enc(u))}&select=id&limit=1`)).length > 0) throw new EloActiveMatchError("The player already has a match in progress");
+      if ((await countStarted(u, now - DAY_MS)) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
+      const j = await rpc("elo_queue_join", { p_user: u, p_mode: mode, p_rating: rating, p_question_ids: questionIds, p_now: iso(now), p_rules: QUEUE_RULES });
+      return toQueue(j as Row);
     },
-    async claimWaiting({ userId, rating, mode, now = Date.now() }) {
-      if ((await countStarted(userId, now - DAY_MS)) >= MAX_MATCHES_PER_DAY) throw new EloLimitError("daily", `At most ${MAX_MATCHES_PER_DAY} matches a day`);
-      const id = await rpc("elo_claim_waiting", { p_user: uuid(userId), p_rating: rating, p_mode: mode, p_now: iso(now) });
-      return typeof id === "string" ? getMatch(id) : null;
+    async queuePoll({ userId, now = Date.now() }) {
+      if (!isUuid(userId)) return { ...IDLE };
+      return toQueue((await rpc("elo_queue_poll", { p_user: uuid(userId), p_now: iso(now), p_rules: QUEUE_RULES })) as Row);
+    },
+    async queueCancel({ userId, now = Date.now() }) {
+      if (!isUuid(userId)) return { ...IDLE };
+      return toQueue((await rpc("elo_queue_cancel", { p_user: uuid(userId), p_now: iso(now) })) as Row);
     },
 
     getMatch,
     async updateMatch(id, patch, onlyIfStatus) {
       if (!isUuid(id)) return null;
-      const needsCurrent = patch.status === "waiting" && patch.expiresAt === undefined && patch.aFinishedAt === undefined;
-      const cur = needsCurrent ? await getMatch(id) : null;
-      const p = withExpiry(patch, { aFinishedAt: cur?.aFinishedAt ?? null });
       const filter = onlyIfStatus ? `&status=in.(${onlyIfStatus.join(",")})` : "";
-      const updated = await rows(`elo_matches?id=eq.${enc(uuid(id))}${filter}`, { method: "PATCH", headers: ret, body: JSON.stringify(patchBody(p)) });
+      const updated = await rows(`elo_matches?id=eq.${enc(uuid(id))}${filter}`, { method: "PATCH", headers: ret, body: JSON.stringify(patchBody(patch)) });
       return updated[0] ? toMatch(updated[0]) : null;
     },
-    async listMatches(userId, { now = Date.now(), recentLimit = RECENT_DEFAULT } = {}) {
-      if (!isUuid(userId)) return { active: null, waiting: [], recent: [] };
-      await expireStale(now);
-      const u = enc(userId);
-      // Two newest-first queries, one per role, each ordered by its own "activity" time (created as A, joined as B), so a match the
-      // user just joined as B is never cut off by the limit however old its created_at is.
-      const asA = await rows(`elo_matches?player_a=eq.${u}&order=created_at.desc&limit=100&select=*`);
-      const asB = await rows(`elo_matches?player_b=eq.${u}&order=b_started_at.desc.nullslast&limit=100&select=*`);
-      const byId = new Map<string, EloMatch>();
-      for (const r of [...asA, ...asB]) byId.set(String(r.id), toMatch(r));
-      return classify(userId, [...byId.values()], recentLimit);
+    async setForfeit(id, side) {
+      if (!isUuid(id)) return false;
+      const updated = await rows(`elo_matches?id=eq.${enc(uuid(id))}&status=eq.playing&forfeit=is.null`, { method: "PATCH", headers: ret, body: JSON.stringify({ forfeit: side }) });
+      return updated.length > 0;
     },
-    countWaiting,
+    async listMatches(userId, { recentLimit = RECENT_DEFAULT } = {}) {
+      if (!isUuid(userId)) return { active: null, recent: [] };
+      const u = ofUser(enc(userId));
+      const active = await rows(`elo_matches?status=eq.playing&${u}&order=created_at.desc&limit=1&select=*`);
+      const recent = await rows(`elo_matches?status=in.(finished,void)&${u}&order=created_at.desc&limit=${Math.max(1, Math.floor(recentLimit))}&select=*`);
+      return { active: active[0] ? toMatch(active[0]) : null, recent: recent.map(toMatch) };
+    },
     countStarted,
 
     async openAnswer(a) {
@@ -1080,7 +1160,6 @@ export function createSupabaseStore(baseUrl: string, serviceKey: string): EloSto
       if (!seasonWindow(season)) throw new Error(`Season must look like YYYY-MM, got ${season}`);
       return num(await rpc("elo_close_season", { p_season: season }));
     },
-    expireStale,
   };
 }
 

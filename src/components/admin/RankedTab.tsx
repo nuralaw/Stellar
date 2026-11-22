@@ -5,22 +5,21 @@ import { Avatar } from "@/components/Avatar";
 import { I, Icon } from "@/components/bank/icons";
 import { adminFetch } from "@/lib/admin-keys";
 import type { AdminList, AdminLogRow, AdminMatchDetail, AdminMatchRow, AdminPlayer, AdminResetResult, AdminVoidResult } from "@/lib/elo-admin-server";
+import { START_RATING } from "@/lib/elo-config";
 import { FLAG_LABEL, type MatchFlag } from "@/lib/elo-flags";
 import type { EloAnswer, MatchStatus } from "@/lib/elo-store";
 
 // /admin → Ranked: ELO matches with filters (status, flags of docs/ELO.md 6.4, player, dates), a detail drawer with the timing of every
-// question, "Void match" (reverts the rating of both players) and "Reset rating" (back to 1000), and the admin log. Every action is logged.
+// question, "Void match" (reverts the rating of both players) and "Reset rating" (back to the start rating), and the admin log. Every action is logged.
 
 const REFRESH = "M20 11a8 8 0 0 0-14.9-4M4 4v4h4M4 13a8 8 0 0 0 14.9 4M20 20v-4h-4";
-const STATUSES: MatchStatus[] = ["playing_a", "waiting", "playing_b", "finished", "expired", "void"];
 const STATUS: Record<MatchStatus, [string, string]> = {
-  playing_a: ["A playing", "bg-accent-soft text-primary-strong"],
-  waiting: ["Waiting", "bg-surface-2 text-muted"],
-  playing_b: ["B playing", "bg-accent-soft text-primary-strong"],
+  playing: ["Playing", "bg-accent-soft text-primary-strong"],
   finished: ["Finished", "bg-success-soft text-success"],
-  expired: ["Expired", "bg-surface-2 text-muted"],
   void: ["Void", "bg-danger-soft text-danger"],
 };
+// Same list as MATCH_STATUSES in elo-admin-data.ts (server-only, so it can't be imported here): the Record above makes it exhaustive.
+const STATUSES = Object.keys(STATUS) as MatchStatus[];
 const ACTION: Record<string, string> = { void_match: "Voided match", reset_rating: "Reset rating" };
 
 interface Filters {
@@ -36,7 +35,7 @@ const when = (at: number) => new Date(at).toLocaleString(undefined, { day: "nume
 const sign = (n: number | null) => (n === null ? "–" : n > 0 ? `+${n}` : n < 0 ? `−${Math.abs(n)}` : "0");
 const seconds = (ms: number | null) => (ms === null ? "–" : `${(ms / 1000).toFixed(1)} s`);
 const shortId = (id: string) => id.slice(0, 8);
-const nameOf = (p: AdminPlayer | null) => (p ? p.name || `Player ${shortId(p.userId)}` : "No opponent yet");
+const nameOf = (p: AdminPlayer | null) => (p ? p.name || `Player ${shortId(p.userId)}` : "Deleted player");
 
 async function call<T>(url: string, init: RequestInit = {}): Promise<T> {
   const res = await adminFetch(url, { cache: "no-store", ...init });
@@ -311,7 +310,7 @@ function MatchTr({ r, onOpen }: { r: AdminMatchRow; onOpen: () => void }) {
 function logText(r: AdminLogRow): string {
   const d = r.details;
   if (r.action === "reset_rating") {
-    return d.changed === false ? "already at 1000, nothing changed" : `rating ${String(d.rating_before)} → ${String(d.rating_after)}, peak ${String(d.peak_before)} → ${String(d.rating_after)}`;
+    return d.changed === false ? `already at ${START_RATING}, nothing changed` : `rating ${String(d.rating_before)} → ${String(d.rating_after)}, peak ${String(d.peak_before)} → ${String(d.rating_after)}`;
   }
   if (r.action === "void_match") {
     const before = String(d.status_before ?? "");
@@ -402,7 +401,7 @@ function Drawer({ id, onClose, onChanged }: { id: string; onClose: () => void; o
   const doReset = (p: AdminPlayer) =>
     run(`/api/admin/ranked/player/${p.userId}/reset`, (j) => {
       const r = j as AdminResetResult;
-      return r.changed ? `Rating reset: ${r.ratingBefore} → ${r.ratingAfter}.` : "That player was already at 1000. Nothing changed.";
+      return r.changed ? `Rating reset: ${r.ratingBefore} → ${r.ratingAfter}.` : `That player was already at ${START_RATING}. Nothing changed.`;
     });
 
   const m = detail?.match;
@@ -439,10 +438,24 @@ function Drawer({ id, onClose, onChanged }: { id: string; onClose: () => void; o
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <span className={`rounded-lg px-2 py-0.5 text-xs font-semibold ${STATUS[m.status][1]}`}>{STATUS[m.status][0]}</span>
               <span className="text-muted">
-                created {when(m.createdAt)}
+                paired {when(m.createdAt)}
                 {m.finishedAt ? ` · finished ${when(m.finishedAt)}` : ""}
               </span>
             </div>
+
+            <dl className="grid grid-cols-[auto_1fr_1fr] gap-x-4 gap-y-1 rounded-2xl border border-line bg-surface p-4 text-sm" aria-label="Timing">
+              <dt className="text-muted">Start deadline</dt>
+              <dd className="col-span-2 tabular-nums">{m.startBy ? when(m.startBy) : "–"}</dd>
+              <dt />
+              <dd className="text-xs font-semibold text-muted">A</dd>
+              <dd className="text-xs font-semibold text-muted">B</dd>
+              <dt className="text-muted">Started</dt>
+              <dd className="tabular-nums">{m.aStartedAt ? when(m.aStartedAt) : "not started"}</dd>
+              <dd className="tabular-nums">{m.bStartedAt ? when(m.bStartedAt) : "not started"}</dd>
+              <dt className="text-muted">Part closed</dt>
+              <dd className="tabular-nums">{m.aFinishedAt ? when(m.aFinishedAt) : "–"}</dd>
+              <dd className="tabular-nums">{m.bFinishedAt ? when(m.bFinishedAt) : "–"}</dd>
+            </dl>
 
             {detail.flags.length > 0 && (
               <section aria-label="Flags" className="rounded-2xl border border-line bg-surface p-4">
@@ -468,7 +481,7 @@ function Drawer({ id, onClose, onChanged }: { id: string; onClose: () => void; o
 
             {confirm?.kind === "reset" && (
               <ConfirmBox
-                text={`Reset ${nameOf(confirm.player)} to rating 1000? Their peak goes back to 1000 too; match counts stay. This is logged and can't be undone from here.`}
+                text={`Reset ${nameOf(confirm.player)} to rating ${START_RATING}? Their peak goes back to ${START_RATING} too; match counts stay. This is logged and can't be undone from here.`}
                 note="Void the suspicious matches first, then reset."
                 action="Reset rating"
                 busy={busy}

@@ -1,11 +1,13 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
+import { START_RATING } from "./elo-config.ts";
 import { flagsForMatch, type GainRow, type MatchFlag } from "./elo-flags.ts";
 import {
   EloNotFoundError,
   EloSetupError,
   EloStoreUnavailable,
+  migrateLocalDb,
   store,
   type AnswerStatus,
   type EloAnswer,
@@ -26,7 +28,7 @@ import type { MatchResult } from "./elo";
 
 export class AdminBadRequest extends Error {}
 
-export const MATCH_STATUSES: readonly MatchStatus[] = ["playing_a", "waiting", "playing_b", "finished", "expired", "void"];
+export const MATCH_STATUSES: readonly MatchStatus[] = ["playing", "finished", "void"];
 /** With "flagged only", this many newest matches (after the other filters) are checked for flags, then paged. */
 export const FLAG_SCAN = 300;
 const PAGE_MAX = 50;
@@ -37,7 +39,6 @@ const DAY_MS = 24 * 3_600_000;
 const PAIR_SPAN_MS = 7 * DAY_MS;
 /** The nil uuid: a rating reset belongs to no match (elo_history.match_id is not null). */
 const NIL_UUID = "00000000-0000-0000-0000-000000000000";
-const START_RATING = 1000;
 /** Matches per answers request: 45 x 20 answer rows = 900, under the PostgREST 1000-row cap even before paging. */
 const SB_ANSWER_CHUNK = 45;
 const SB_CHUNK = 80;
@@ -112,7 +113,7 @@ export interface AdminResetResult {
   ratingBefore: number;
   peakBefore: number;
   ratingAfter: number;
-  /** False when the player was already at 1000 / 1000: nothing was changed (still logged). */
+  /** False when the player was already at the start rating (rating and peak): nothing was changed (still logged). */
   changed: boolean;
 }
 
@@ -193,7 +194,7 @@ export interface AdminData {
   /** User ids by user id or public-name search (at most 100). */
   findUsers(q: string): Promise<string[]>;
   answers(matchIds: string[]): Promise<EloAnswer[]>;
-  /** Matches of these users (either side) that got their second player (b_started_at) in [since, until]. */
+  /** Matches of these users (either side) made by the queue (created_at) in [since, until]. */
   pairedBetween(users: string[], since: number, until: number): Promise<EloMatch[]>;
   /** Finished matches of these users with finished_at in [since, until]. */
   finishedBetween(users: string[], since: number, until: number): Promise<EloMatch[]>;
@@ -218,10 +219,12 @@ const toMatch = (r: Row): EloMatch => ({
   playerB: r.player_b === null || r.player_b === undefined ? null : String(r.player_b),
   questionIds: (r.question_ids as string[]) ?? [],
   createdAt: tsOrNull(r.created_at) ?? 0,
-  aFinishedAt: tsOrNull(r.a_finished_at),
+  aStartedAt: tsOrNull(r.a_started_at),
   bStartedAt: tsOrNull(r.b_started_at),
+  aFinishedAt: tsOrNull(r.a_finished_at),
+  bFinishedAt: tsOrNull(r.b_finished_at),
+  startBy: tsOrNull(r.start_by),
   finishedAt: tsOrNull(r.finished_at),
-  expiresAt: tsOrNull(r.expires_at),
   pointsA: numOrNull(r.points_a),
   pointsB: numOrNull(r.points_b),
   forfeit: (r.forfeit as EloMatch["forfeit"]) ?? null,
@@ -360,7 +363,7 @@ export function createSupabaseAdminData(baseUrl: string, key: string): AdminData
     async pairedBetween(users, since, until) {
       const byId = new Map<string, EloMatch>();
       for (const part of chunks(users, SB_CHUNK)) {
-        const r = await allRows(`elo_matches?${usersOr(part)}&b_started_at=gte.${enc(iso(since))}&b_started_at=lte.${enc(iso(until))}&select=*&order=id.asc`);
+        const r = await allRows(`elo_matches?${usersOr(part)}&created_at=gte.${enc(iso(since))}&created_at=lte.${enc(iso(until))}&select=*&order=id.asc`);
         for (const x of r) byId.set(String(x.id), toMatch(x));
       }
       return [...byId.values()];
@@ -422,9 +425,9 @@ function localData(): AdminData {
   /** A fresh read of the store's file (read-only here, except the rating reset below). */
   const load = (): LocalDb => {
     try {
-      return { players: {}, matches: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1, ...JSON.parse(fs.readFileSync(/* turbopackIgnore: true */ LOCAL_DB, "utf8")) };
+      return migrateLocalDb({ players: {}, matches: {}, queue: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1, ...JSON.parse(fs.readFileSync(/* turbopackIgnore: true */ LOCAL_DB, "utf8")) });
     } catch {
-      return { players: {}, matches: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1 };
+      return { players: {}, matches: {}, queue: {}, answers: {}, history: [], seasons: [], nextHistoryId: 1 };
     }
   };
   const readLog = (): AdminLogRow[] => {
@@ -462,7 +465,7 @@ function localData(): AdminData {
     },
     async pairedBetween(users, since, until) {
       const set = new Set(users);
-      return Object.values(load().matches).filter((m) => m.bStartedAt !== null && m.bStartedAt >= since && m.bStartedAt <= until && ofUsers(m, set));
+      return Object.values(load().matches).filter((m) => m.createdAt >= since && m.createdAt <= until && ofUsers(m, set));
     },
     async finishedBetween(users, since, until) {
       const set = new Set(users);
@@ -526,10 +529,8 @@ const data: AdminData =
 
 /* ---------------- flags ---------------- */
 
-/** The pair is dated by when B joined (bStartedAt), not when A created the match: a match can wait up to 48 h for its opponent. */
-export const pairTime = (m: Pick<EloMatch, "bStartedAt" | "createdAt">) => m.bStartedAt ?? m.createdAt;
-
-export const flagMatch = (m: EloMatch) => ({ id: m.id, playerA: m.playerA, playerB: m.playerB, status: m.status, createdAt: pairTime(m), finishedAt: m.finishedAt, deltaA: m.deltaA, deltaB: m.deltaB });
+/** The pair is dated by createdAt: the moment the queue made it (both players are known from then on). */
+export const flagMatch = (m: EloMatch) => ({ id: m.id, playerA: m.playerA, playerB: m.playerB, status: m.status, createdAt: m.createdAt, finishedAt: m.finishedAt, deltaA: m.deltaA, deltaB: m.deltaB });
 
 function gainRows(userId: string, finished: EloMatch[]): GainRow[] {
   const out: GainRow[] = [];
@@ -546,7 +547,7 @@ async function flagsOf(ms: EloMatch[]): Promise<Map<string, MatchFlag[]>> {
   const out = new Map<string, MatchFlag[]>();
   if (ms.length === 0) return out;
   const users = [...new Set(ms.flatMap((m) => (m.playerB ? [m.playerA, m.playerB] : [m.playerA])))];
-  const created = ms.map(pairTime);
+  const created = ms.map((m) => m.createdAt);
   const finished = ms.flatMap((m) => (m.finishedAt === null ? [] : [m.finishedAt]));
   const [answers, around, recent] = await Promise.all([
     data.answers(ms.map((m) => m.id)),
@@ -640,7 +641,7 @@ export async function adminVoidMatch(id: string, adminEmail: string): Promise<Ad
   return { match, outcome };
 }
 
-/** Rating back to 1000 (peak too), counters kept; written to elo_history (reason 'reset') and the admin log. */
+/** Rating back to the start rating (peak too), counters kept; written to elo_history (reason 'reset') and the admin log. */
 export async function adminResetPlayer(userId: string, adminEmail: string): Promise<AdminResetResult> {
   const id = checkId(userId);
   if (!(await store.getPlayer(id))) throw new EloNotFoundError("Player not found");

@@ -9,7 +9,7 @@ import { TestQuestionView } from "@/components/test/TestQuestionView";
 import { levelOf } from "@/lib/elo";
 import type { MatchState, RankedHub, ReviewItem } from "@/lib/elo-api-types";
 import { PAGE } from "@/lib/ui";
-import { fmtDelta, fmtLeft, fmtSeconds, rankedGet } from "./api";
+import { fmtDelta, fmtSeconds, rankedGet } from "./api";
 import { ErrorPanel } from "./ErrorPanel";
 import { LevelBadge } from "./LevelBadge";
 import { LevelProgress } from "./LevelProgress";
@@ -18,6 +18,9 @@ import { useStartRanked } from "./useStartRanked";
 
 const nf = new Intl.NumberFormat("en-US");
 const DIFF_LABEL = { easy: "Easy", medium: "Medium", hard: "Hard" } as const;
+
+/** How often a finished player looks at the match while the opponent is still playing. */
+const POLL_MS = 3000;
 
 const reduced = () => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -159,7 +162,6 @@ function ReviewList({ items, matchId }: { items: ReviewItem[]; matchId: string }
 export function MatchResult({ state: initial }: { state: MatchState }) {
   const [state, setState] = useState(initial);
   const [hub, setHub] = useState<RankedHub | null>(null);
-  const [now, setNow] = useState(() => Date.now());
   const { openGate, starting, error, clearError, dialog } = useStartRanked();
   const finished = state.status === "finished" && state.outcome !== null;
 
@@ -176,8 +178,9 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
     };
   }, [finished]);
 
-  // Waiting for the opponent: look again every ~20 s while the tab is visible, so the result appears by itself.
-  const pending = state.status === "waiting" || state.status === "playing_b";
+  // My part is done but the opponent is still playing: look again every 3 s while the tab is visible, so the result appears by itself
+  // (this is also what lets the server settle an abandoned match).
+  const pending = state.status === "playing";
   const matchId = state.id;
   useEffect(() => {
     if (!pending) return;
@@ -185,11 +188,11 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
     const poll = () => {
       if (document.visibilityState !== "visible") return;
       rankedGet<MatchState>(`/api/ranked/${matchId}`).then(
-        (s) => alive && setState(s),
+        (s) => alive && setState((p) => (p.status !== "playing" ? p : s)),
         () => {},
       );
     };
-    const t = setInterval(poll, 20_000);
+    const t = setInterval(poll, POLL_MS);
     document.addEventListener("visibilitychange", poll);
     return () => {
       alive = false;
@@ -197,11 +200,6 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
       document.removeEventListener("visibilitychange", poll);
     };
   }, [pending, matchId]);
-
-  useEffect(() => {
-    const t = setInterval(() => setNow(Date.now()), 30_000);
-    return () => clearInterval(t);
-  }, []);
 
   const gaveUp = state.forfeit === state.role;
   const theyGaveUp = state.forfeit !== null && !gaveUp;
@@ -212,19 +210,16 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
     title = state.outcome === "win" ? "Win" : state.outcome === "loss" ? "Loss" : "Draw";
     tone = state.outcome === "win" ? "text-success" : state.outcome === "loss" ? "text-danger" : "text-ink";
     text = gaveUp ? "You gave up this match." : theyGaveUp ? "Your opponent gave up." : state.outcome === "win" ? "More points than your opponent on the same ten questions." : state.outcome === "loss" ? "Your opponent scored more on the same ten questions." : "Same points on the same ten questions.";
-  } else if (state.status === "waiting") {
-    title = "Waiting for an opponent";
-    text = `Your result is locked in. When someone plays the same ten questions the winner is decided and your rating updates.${state.expiresAt ? ` The match waits ${fmtLeft(state.expiresAt - now)} more.` : ""}`;
-  } else if (state.status === "playing_b") {
-    title = "Your opponent is playing";
-    text = "They are answering your ten questions right now. The result appears here as soon as they finish.";
-  } else if (state.status === "expired") {
-    const abandoned = state.answered < state.total;
-    title = abandoned ? "Match expired" : "No opponent came";
-    text = abandoned ? "You left this match before finishing, so it expired. No rating change." : "Nobody played this set in time, so the match expired. Your rating didn't change.";
+  } else if (state.status === "playing") {
+    title = state.opponentDone ? "Wrapping up…" : "Your opponent is still playing…";
+    text = state.opponentDone
+      ? "Both of you are done. The result is being worked out and appears here in a moment."
+      : `${gaveUp ? "Your part is closed." : "Your points are locked in."} The result appears here as soon as your opponent finishes the same ten questions.`;
   } else if (state.status === "void") {
-    title = "Match voided";
-    text = "This match was cancelled. Your rating didn't change.";
+    // A match nobody started in time is void, and so is one an admin voided (this part may have answers or not): keep it neutral without answers.
+    const played = state.answered > 0;
+    title = played ? "Match voided" : "Match didn't count";
+    text = played ? "This match was cancelled. Your rating didn't change." : "This match was voided, so your rating didn't change.";
   } else {
     title = "In progress";
     text = "This match isn't finished yet.";
@@ -243,14 +238,14 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
         {gaveUp && (
           <p className="mt-3 max-w-2xl rounded-xl border border-danger/40 bg-danger-soft px-4 py-2.5 text-sm font-medium text-danger" role="status">
             {state.status === "finished"
-              ? "You left this match, so it counts as a loss."
-              : "You left this match, so the questions you hadn't answered scored 0. Your opponent will play it and win."}
+              ? "You left this match or didn't start in time, so it counts as a loss."
+              : "You left this match or didn't start in time, so the questions you hadn't answered scored 0. Your opponent finishes their part and wins."}
           </p>
         )}
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4">
           <Side name="You" avatar={hub?.me.avatar ?? null} label={state.myPoints === null ? "No points yet" : "Your score"} points={state.myPoints} />
-          <Side name={state.opponent?.name ?? "Opponent"} avatar={state.opponent?.avatar ?? null} label={state.opponent ? `${state.opponent.rating} · ${state.opponent.level.placement ? "Placing" : state.opponent.level.name}` : "Not found yet"} points={state.opponentPoints} />
+          <Side name={state.opponent?.name ?? "Opponent"} avatar={state.opponent?.avatar ?? null} label={state.opponent ? `${state.opponent.rating} · ${state.opponent.level.placement ? "Placing" : state.opponent.level.name}` : "Account deleted"} points={state.opponentPoints} />
         </div>
 
         {finished && state.ratingBefore !== null && state.ratingAfter !== null && state.delta !== null && (
@@ -263,16 +258,22 @@ export function MatchResult({ state: initial }: { state: MatchState }) {
           </div>
         )}
         <div className="mt-6 flex flex-wrap gap-2">
-          <button type="button" onClick={openGate} disabled={starting} className={`${BTN_PRIMARY} disabled:opacity-40`}>
-            Play again
-          </button>
+          {!pending && (
+            <button type="button" onClick={openGate} disabled={starting} className={`${BTN_PRIMARY} disabled:opacity-40`}>
+              Play again
+            </button>
+          )}
           <Link href="/leaderboard" className={BTN_SECONDARY}>
             Leaderboard
           </Link>
         </div>
       </section>
 
-      {state.review && state.review.length > 0 && <ReviewList items={state.review} matchId={state.id} />}
+      {state.review !== null ? (
+        state.review.length > 0 && <ReviewList items={state.review} matchId={state.id} />
+      ) : (
+        pending && <p className="mt-8 text-sm text-muted">Answers and explanations appear when the match ends.</p>
+      )}
       {dialog}
     </div>
   );

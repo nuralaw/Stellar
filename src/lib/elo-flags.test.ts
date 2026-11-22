@@ -82,8 +82,8 @@ test("same_pair: other pairs, void matches and the target itself are ignored", (
     pm("v2", "x", "y", T0 - 2 * D, "void"),
     pm("o1", "x", "z", T0 - D),
     pm("o2", "z", "y", T0 - D),
-    pm("o3", "x", "y", T0 - D, "waiting"),
-    pm("n1", "x", null, T0 - D, "waiting"),
+    pm("o3", "x", "y", T0 - D, "playing"),
+    pm("n1", "x", null, T0 - D, "playing"),
   ];
   const r = samePair(target, others);
   assert.equal(r.count, 2); // the target and o3
@@ -91,7 +91,7 @@ test("same_pair: other pairs, void matches and the target itself are ignored", (
 });
 
 test("same_pair: a match without an opponent is never flagged; a void target is still evaluated", () => {
-  assert.equal(samePair(pm("m", "x", null, T0, "waiting"), []).flagged, false);
+  assert.equal(samePair(pm("m", "x", null, T0, "playing"), []).flagged, false);
   const others = [pm("m1", "x", "y", T0 - D), pm("m2", "x", "y", T0 - 2 * D), pm("m3", "x", "y", T0 - 3 * D)];
   assert.equal(samePair(pm("m4", "x", "y", T0, "void"), others).flagged, true);
 });
@@ -139,6 +139,6 @@ test("flagsForMatch: collects flags per side and adds the match itself to the ga
 });
 
 test("flagsForMatch: a match that isn't finished gets no rating flag", () => {
-  const m: FlagMatch = { id: "m", playerA: "x", playerB: "y", status: "playing_b", createdAt: T0, finishedAt: null, deltaA: null, deltaB: null };
+  const m: FlagMatch = { id: "m", playerA: "x", playerB: "y", status: "playing", createdAt: T0, finishedAt: null, deltaA: null, deltaB: null };
   assert.deepEqual(flagsForMatch(m, { answersA: [], answersB: [], pairMatches: [], gainsA: [], gainsB: [] }), []);
 });

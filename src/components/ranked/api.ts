@@ -37,18 +37,32 @@ export function rankedPost<T>(path: string, body: Record<string, unknown> = {}):
   return call<T>(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...body, userId: id, anonId: id }) });
 }
 
+export function rankedDelete<T>(path: string): Promise<T> {
+  const id = getUserId();
+  return call<T>(`${path}${path.includes("?") ? "&" : "?"}userId=${id}&anonId=${id}`, { method: "DELETE" });
+}
+
+/** Fire-and-forget DELETE that survives the page going away (leaving the search screen: unmount, reload, close). */
+export function rankedDeleteKeepalive(path: string) {
+  const id = getUserId();
+  void fetch(`${path}${path.includes("?") ? "&" : "?"}userId=${id}&anonId=${id}`, { method: "DELETE", keepalive: true, cache: "no-store" }).catch(() => {});
+}
+
 /** Fire-and-forget POST that survives the page going away (reload / close). */
 export function rankedBeacon(path: string, body: Record<string, unknown>) {
   const id = getUserId();
   navigator.sendBeacon?.(path, new Blob([JSON.stringify({ ...body, userId: id, anonId: id })], { type: "application/json" }));
 }
 
-/** "47h 12m", "35m", "less than a minute". */
-export function fmtLeft(ms: number): string {
-  const m = Math.floor(ms / 60_000);
-  if (m < 1) return "less than a minute";
-  const h = Math.floor(m / 60);
-  return h > 0 ? `${h}h ${m % 60}m` : `${m}m`;
+/** "0:07", "2:35": elapsed or remaining time as m:ss. */
+export function fmtClock(ms: number): string {
+  const s = Math.max(0, Math.floor(ms / 1000));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+}
+
+/** A countdown as m:ss, rounded up: "0:01" stays until the last second has really passed. */
+export function fmtCountdown(ms: number): string {
+  return fmtClock(Math.ceil(Math.max(0, ms) / 1000) * 1000);
 }
 
 /** "+12", "−8", "0" (real minus sign). */
@@ -60,6 +74,3 @@ export function fmtDelta(n: number): string {
 export function fmtSeconds(ms: number | null): string {
   return ms === null ? "–" : `${(ms / 1000).toFixed(1)} s`;
 }
-
-/** Set by the hub right before opening a match it just started (it already went full screen on that click). */
-export const GO_KEY = "stellar:ranked:go";

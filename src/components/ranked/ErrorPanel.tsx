@@ -18,8 +18,8 @@ function copyFor(e: RankedApiError): Copy {
       return { title: "Confirm your email first", text: "Open the confirmation link we sent you, then come back. Ranked matches need a confirmed email.", action: "retry" };
     case "name":
       return { title: "Choose a public name", text: "Other players see your name and photo on the leaderboard and in matches. Pick one in Profile.", action: "profile" };
-    case "limit_waiting":
-      return { title: "Too many matches waiting", text: "You already have the maximum of matches waiting for an opponent. Wait until one is played or expires, then start a new one.", action: "hub" };
+    case "in_match":
+      return { title: "You're already in a match.", text: "Finish it before you look for another opponent. You'll find it on the Ranked page.", action: "hub" };
     case "limit_daily":
       return { title: "Daily limit reached", text: "You've played the most ranked matches allowed per day. Come back tomorrow, or keep practicing in the Question Bank.", action: "hub" };
     case "not_found":
@@ -66,7 +66,7 @@ export function ErrorPanel({ error, next = "/ranked", onRetry, compact = false }
             Try again
           </button>
         )}
-        {c.action === "hub" && !compact && (
+        {c.action === "hub" && (!compact || error.code === "in_match") && (
           <Link href="/ranked" className={BTN_SECONDARY}>
             <Icon d={I.chevronL} className="h-4 w-4" /> Back to Ranked
           </Link>

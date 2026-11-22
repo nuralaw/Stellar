@@ -1,12 +1,12 @@
--- Stellar ranked matches (ELO): players, matches, per-question answers, rating history, season results, and the SQL twins of the
--- formulas in src/lib/elo.ts (see docs/ELO.md sections 3-8). Safe to re-run. Needs nothing but Supabase Auth.
+-- Stellar ranked matches (ELO): players, the live matchmaking queue, matches, per-question answers, rating history, season results, and the
+-- SQL twins of the formulas in src/lib/elo.ts (see docs/ELO.md sections 3-8 and docs/ELO-live.md). Safe to re-run. Needs nothing but Supabase Auth.
 -- Only the site's server (service-role key) can read or write these: RLS on with no policies, functions executable by service_role only.
 -- After applying, run supabase/elo-check.sql in the SQL Editor to verify the formulas.
 
 create table if not exists public.elo_players (
   user_id        uuid        primary key references auth.users (id) on delete cascade,
-  rating         int         not null default 1000 check (rating >= 100),
-  peak           int         not null default 1000,
+  rating         int         not null default 100 check (rating >= 100),
+  peak           int         not null default 100,
   matches        int         not null default 0,            -- finished matches only
   wins           int         not null default 0,
   losses         int         not null default 0,
@@ -15,19 +15,26 @@ create table if not exists public.elo_players (
   avatar         text        not null default '',           -- public avatar: an emoji or a small data: image
   updated_at     timestamptz not null default now()         -- last rating change (leaderboard tie-break: who got there first)
 );
+-- The start rating is 100 (START_RATING in src/lib/elo-config.ts, equal to the floor). Re-runnable: moves the column defaults of a database
+-- created when the start was 1000 (existing rows keep their ratings).
+alter table public.elo_players alter column rating set default 100, alter column peak set default 100;
 
+-- Matches are made by the queue (elo_queue_join / elo_queue_poll below): both players are known from the start, status 'playing'
+-- until both parts are closed, then 'finished' (elo_finish_match) or 'void' (nobody started in time, or an admin voided it).
 create table if not exists public.elo_matches (
   id              uuid        primary key default gen_random_uuid(),
   mode            text        not null default 'mixed' check (mode in ('mixed', 'rw', 'math')),
-  status          text        not null check (status in ('playing_a', 'waiting', 'playing_b', 'finished', 'expired', 'void')),
-  player_a        uuid        not null references auth.users (id) on delete cascade,
+  status          text        not null check (status in ('playing', 'finished', 'void')),
+  player_a        uuid        not null references auth.users (id) on delete cascade,   -- the one who started searching first
   player_b        uuid        references auth.users (id) on delete set null,
-  question_ids    text[]      not null check (cardinality(question_ids) = 10),   -- exactly 10, fixed order
-  created_at      timestamptz not null default now(),
-  a_finished_at   timestamptz,
-  b_started_at    timestamptz,
-  finished_at     timestamptz,
-  expires_at      timestamptz,                              -- a_finished_at + 48 h
+  question_ids    text[]      not null check (cardinality(question_ids) = 10),   -- exactly 10, fixed order (A's set)
+  created_at      timestamptz not null default now(),       -- when the pair was made
+  a_started_at    timestamptz,                              -- A opened the first question
+  b_started_at    timestamptz,                              -- B opened the first question
+  a_finished_at   timestamptz,                              -- A's part is closed
+  b_finished_at   timestamptz,                              -- B's part is closed
+  start_by        timestamptz,                              -- created_at + the start deadline: a side that hasn't started by then loses
+  finished_at     timestamptz,                              -- the rating change was applied
   points_a        int,
   points_b        int,
   forfeit         text        check (forfeit in ('a', 'b')),
@@ -38,13 +45,57 @@ create table if not exists public.elo_matches (
   delta_b         int,
   check (player_b is null or player_b <> player_a)
 );
-create index if not exists elo_matches_waiting on public.elo_matches (created_at) where status = 'waiting';
+-- Re-runnable migration of a database made by the older (asynchronous) flow: new columns, the status list, the indexes.
+alter table public.elo_matches add column if not exists a_started_at  timestamptz;
+alter table public.elo_matches add column if not exists b_finished_at timestamptz;
+alter table public.elo_matches add column if not exists start_by       timestamptz;
+drop function if exists public.elo_claim_waiting(uuid, int, text, timestamptz);   -- replaced by the queue
+drop index if exists public.elo_matches_waiting;
+drop index if exists public.elo_matches_one_playing_a;
+drop index if exists public.elo_matches_a_finished;
+do $$
+declare
+  c record;
+begin
+  -- 1. drop the old status check (the one that still lists 'waiting' etc.), whatever its name is
+  for c in
+    select conname from pg_catalog.pg_constraint
+    where conrelid = 'public.elo_matches'::regclass and contype = 'c'
+      and pg_catalog.pg_get_constraintdef(oid) ilike '%status%' and pg_catalog.pg_get_constraintdef(oid) ilike '%waiting%'
+  loop
+    execute pg_catalog.format('alter table public.elo_matches drop constraint %I', c.conname);
+  end loop;
+  -- 2. unfinished matches of the old flow become void: no rating was applied to them, so there is nothing to revert
+  update public.elo_matches set status = 'void' where status in ('playing_a', 'waiting', 'playing_b', 'expired');
+  -- 3. the new status list
+  if not exists (
+    select 1 from pg_catalog.pg_constraint
+    where conrelid = 'public.elo_matches'::regclass and contype = 'c' and pg_catalog.pg_get_constraintdef(oid) ilike '%status%'
+  ) then
+    alter table public.elo_matches add constraint elo_matches_status_check check (status in ('playing', 'finished', 'void'));
+  end if;
+end $$;
+alter table public.elo_matches drop column if exists expires_at;
 create index if not exists elo_matches_a on public.elo_matches (player_a, created_at desc);
--- One match in progress as A per player: two concurrent /play calls can't both create a playing_a match (the second insert fails with 23505).
-create unique index if not exists elo_matches_one_playing_a on public.elo_matches (player_a) where status = 'playing_a';
+-- One match in progress per player, as A and as B: the queue can never put a player into two matches.
+create unique index if not exists elo_matches_one_playing_as_a on public.elo_matches (player_a) where status = 'playing';
+create unique index if not exists elo_matches_one_playing_as_b on public.elo_matches (player_b) where status = 'playing';
 create index if not exists elo_matches_b on public.elo_matches (player_b, created_at desc);
 create index if not exists elo_matches_finished on public.elo_matches (finished_at) where status = 'finished';
-create index if not exists elo_matches_a_finished on public.elo_matches (a_finished_at) where a_finished_at is not null;
+
+-- The live matchmaking queue (docs/ELO-live.md 2): one row per searching player. 'searching' -> 'matched' (match_id set) or 'timeout'.
+-- A 'matched' row lives while its match is 'playing' (a reload returns the player to the match), then it is deleted on the next read.
+create table if not exists public.elo_queue (
+  user_id      uuid        primary key references auth.users (id) on delete cascade,
+  mode         text        not null default 'mixed' check (mode in ('mixed', 'rw', 'math')),
+  rating       int         not null,
+  question_ids text[]      not null check (cardinality(question_ids) = 10),   -- prepared when the player joins; used if they become A
+  since        timestamptz not null,                                          -- when the search started (never reset by a repeated join)
+  last_seen    timestamptz not null,                                          -- the last poll: the player's sign of life
+  status       text        not null check (status in ('searching', 'matched', 'timeout')),
+  match_id     uuid        references public.elo_matches (id) on delete set null
+);
+create index if not exists elo_queue_searching on public.elo_queue (mode, since) where status = 'searching';
 
 create table if not exists public.elo_answers (
   match_id     uuid        not null references public.elo_matches (id) on delete cascade,
@@ -92,6 +143,7 @@ create index if not exists elo_players_board on public.elo_players (rating desc,
 
 alter table public.elo_players        enable row level security;
 alter table public.elo_matches        enable row level security;
+alter table public.elo_queue          enable row level security;
 alter table public.elo_answers        enable row level security;
 alter table public.elo_history        enable row level security;
 alter table public.elo_season_results enable row level security;
@@ -106,8 +158,8 @@ alter table public.elo_season_results enable row level security;
 create or replace function public.elo_calc(ra int, rb int, ma int, mb int, result text)
 returns jsonb language plpgsql immutable set search_path = '' as $$
 declare
-  a_rating int := greatest(100, coalesce(ra, 1000));
-  b_rating int := greatest(100, coalesce(rb, 1000));
+  a_rating int := greatest(100, coalesce(ra, 100));
+  b_rating int := greatest(100, coalesce(rb, 100));
   sa numeric;
   sb numeric;
   ea numeric;
@@ -162,8 +214,8 @@ returns jsonb language sql security definer set search_path = '' as $$
   from public.elo_matches m where m.id = p_match;
 $$;
 
--- Finishes a match atomically (docs/ELO.md 8.3). The server writes points_a / points_b (and forfeit) first, then calls this.
--- Idempotent: anything but 'playing_b' returns the stored outcome unchanged (changed = false).
+-- Finishes a match atomically (docs/ELO.md 8.3). The server writes points_a / points_b (and forfeit) first, then calls this once both
+-- parts are closed. Idempotent: anything but 'playing' returns the stored outcome unchanged (changed = false).
 create or replace function public.elo_finish_match(p_match uuid)
 returns jsonb language plpgsql security definer set search_path = '' as $$
 declare
@@ -180,8 +232,8 @@ declare
 begin
   select * into m from public.elo_matches where id = p_match for update;
   if not found then raise exception 'ELO_NOT_FOUND: elo_finish_match: match % not found', p_match; end if;
-  if m.status <> 'playing_b' then return public.elo_match_json(p_match, false); end if;
-  -- The second player's account was deleted (player_b is set null): nobody to rate against, so the match is void, no rating change.
+  if m.status <> 'playing' then return public.elo_match_json(p_match, false); end if;
+  -- A player's account was deleted (player_b is set null): nobody to rate against, so the match is void, no rating change.
   if m.player_b is null then
     update public.elo_matches set status = 'void' where id = m.id;
     return public.elo_match_json(m.id, true);
@@ -190,7 +242,7 @@ begin
     raise exception 'elo_finish_match: match % has no points yet', p_match;
   end if;
 
-  -- Both players exist at 1000 if they never played; lock their rows in user_id order so two matches can't deadlock.
+  -- Both players exist at 100 (the start rating, the column default) if they never played; lock their rows in user_id order so two matches can't deadlock.
   insert into public.elo_players (user_id) select t.u from unnest(array[m.player_a, m.player_b]) as t(u) order by t.u on conflict (user_id) do nothing;
   perform 1 from public.elo_players where user_id in (m.player_a, m.player_b) order by user_id for update;
   select * into pa from public.elo_players where user_id = m.player_a;
@@ -247,10 +299,10 @@ end $$;
 
 -- Voids a match (admin). A finished match is reverted by subtracting each player's own delta from their CURRENT rating
 -- (later matches stay counted), floor 100, with the counters fixed and a reverting history row each; peak is recomputed from the
--- remaining matches. Any other status simply becomes 'void'. Idempotent: a voided match returns unchanged (changed = false).
+-- remaining matches. A 'playing' match simply becomes 'void'. Idempotent: a voided match returns unchanged (changed = false).
 -- A player whose latest 'reset' history row (supabase/elo-admin.sql) is later than this match's finish keeps their rating: the reset
 -- already wiped this match's effect, so subtracting the delta again would punish them twice. The counters are still fixed and the
--- reverting history row is still written (rating_before = rating_after). The peak counts only matches after the latest reset (min 1000).
+-- reverting history row is still written (rating_before = rating_after). The peak counts only matches after the latest reset (min 100).
 create or replace function public.elo_void_match(p_match uuid)
 returns jsonb language plpgsql security definer set search_path = '' as $$
 declare
@@ -288,10 +340,10 @@ begin
       wins = greatest(p.wins - case when m.result = 'a' then 1 else 0 end, 0),
       losses = greatest(p.losses - case when m.result = 'b' then 1 else 0 end, 0),
       draws = greatest(p.draws - case when m.result = 'draw' then 1 else 0 end, 0),
-      peak = greatest(v_ra, 1000, coalesce((
+      peak = greatest(v_ra, 100, coalesce((
         select max(h.rating_after) from public.elo_history h join public.elo_matches mm on mm.id = h.match_id
         where h.user_id = p.user_id and h.reason = 'match' and mm.status <> 'void' and (v_reset_a is null or h.at > v_reset_a)
-      ), 1000)),   -- never below the start rating 1000 (START_RATING in elo-config.ts)
+      ), 100)),   -- never below the start rating 100 (START_RATING in elo-config.ts)
       updated_at = v_now
     where p.user_id = pa.user_id;
     insert into public.elo_history (user_id, match_id, at, rating_before, rating_after, reason)
@@ -307,10 +359,10 @@ begin
       wins = greatest(p.wins - case when m.result = 'b' then 1 else 0 end, 0),
       losses = greatest(p.losses - case when m.result = 'a' then 1 else 0 end, 0),
       draws = greatest(p.draws - case when m.result = 'draw' then 1 else 0 end, 0),
-      peak = greatest(v_rb, 1000, coalesce((
+      peak = greatest(v_rb, 100, coalesce((
         select max(h.rating_after) from public.elo_history h join public.elo_matches mm on mm.id = h.match_id
         where h.user_id = p.user_id and h.reason = 'match' and mm.status <> 'void' and (v_reset_b is null or h.at > v_reset_b)
-      ), 1000)),
+      ), 100)),
       updated_at = v_now
     where p.user_id = pb.user_id;
     insert into public.elo_history (user_id, match_id, at, rating_before, rating_after, reason)
@@ -320,58 +372,180 @@ begin
   return public.elo_match_json(m.id, true);
 end $$;
 
--- Matchmaking (docs/ELO.md 5.4): expires stale waiting matches (48 h after A finished, no rating change), then takes the OLDEST
--- waiting match this player may join and makes them player B. Returns the match id, or null when there is none.
--- A match fits when: not the player's own, same mode, A's current rating is within min(400, 100 + 50 x hours waited) of p_rating,
--- and the two have not been paired within the last 24 h. FOR UPDATE SKIP LOCKED: two players never take the same match.
--- (Window numbers live in src/lib/elo-config.ts MATCH_WINDOW; the per-player limits - 3 waiting, 30 a day - are the server's job.)
-create or replace function public.elo_claim_waiting(p_user uuid, p_rating int, p_mode text, p_now timestamptz default now())
-returns uuid language plpgsql security definer set search_path = '' as $$
+-- ---------------------------------------------------------------------------------------------------------------------
+-- Live matchmaking (docs/ELO-live.md 2 and 4.1). Three public functions: elo_queue_join, elo_queue_poll, elo_queue_cancel; each answers
+-- { status: 'idle' | 'searching' | 'matched' | 'timeout', since, match_id, searching } (searching = how many OTHER players search in the same mode).
+-- The numbers of the rules come from src/lib/elo-config.ts as p_rules jsonb {base, step, every_s, open_after_s, drop_after_s,
+-- search_max_s, start_deadline_s, rematch_h}; nothing is hard-coded here. All three take the same transaction lock first, so two
+-- simultaneous polls can never make two matches. p_now is the caller's clock (the server's), as everywhere else.
+
+-- One rule number out of p_rules; a missing key is a bug of the caller, not a silent null.
+create or replace function public.elo_queue_rule(p_rules jsonb, p_key text)
+returns numeric language plpgsql immutable set search_path = '' as $$
 declare
+  v numeric := (p_rules ->> p_key)::numeric;
+begin
+  if v is null then raise exception 'elo_queue: rule % is missing', p_key; end if;
+  return v;
+end $$;
+
+-- Allowed rating gap after searching p_searched_s seconds: base + step x floor(s / every_s) while s < open_after_s, then null = no limit.
+-- Twin of queueWindow() in src/lib/elo.ts.
+create or replace function public.elo_queue_window(p_searched_s numeric, p_rules jsonb)
+returns int language plpgsql immutable set search_path = '' as $$
+declare
+  s numeric := greatest(p_searched_s, 0);
+begin
+  if s >= public.elo_queue_rule(p_rules, 'open_after_s') then return null; end if;
+  return (public.elo_queue_rule(p_rules, 'base') + public.elo_queue_rule(p_rules, 'step') * floor(s / public.elo_queue_rule(p_rules, 'every_s')))::int;
+end $$;
+
+-- The answer of the queue functions for one player: idle when there is no row.
+create or replace function public.elo_queue_state(p_user uuid)
+returns jsonb language plpgsql security definer set search_path = '' as $$
+declare
+  q public.elo_queue%rowtype;
+  v_n int;
+begin
+  select * into q from public.elo_queue where user_id = p_user;
+  if not found then
+    return jsonb_build_object('status', 'idle', 'since', null, 'match_id', null, 'searching', 0);
+  end if;
+  select count(*) into v_n from public.elo_queue o where o.status = 'searching' and o.mode = q.mode and o.user_id <> p_user;
+  return jsonb_build_object('status', q.status, 'since', q.since, 'match_id', q.match_id, 'searching', v_n);
+end $$;
+
+-- Housekeeping, run by join and poll under the lock: searching / timeout rows with no poll for drop_after_s are deleted (the player left),
+-- 'matched' rows whose match is no longer 'playing' are deleted, searches older than search_max_s become 'timeout'.
+create or replace function public.elo_queue_sweep(p_now timestamptz, p_rules jsonb)
+returns void language plpgsql security definer set search_path = '' as $$
+declare
+  v_drop interval := pg_catalog.make_interval(secs => public.elo_queue_rule(p_rules, 'drop_after_s')::double precision);
+  v_max interval := pg_catalog.make_interval(secs => public.elo_queue_rule(p_rules, 'search_max_s')::double precision);
+begin
+  delete from public.elo_queue where status in ('searching', 'timeout') and last_seen < p_now - v_drop;
+  delete from public.elo_queue q
+  where q.status = 'matched'
+    and not exists (select 1 from public.elo_matches m where m.id = q.match_id and m.status = 'playing');
+  update public.elo_queue set status = 'timeout' where status = 'searching' and since <= p_now - v_max;
+end $$;
+
+-- Tries to pair p_user (who must be 'searching') with the player who has searched longest among those that fit (docs/ELO-live.md 2.2):
+-- same mode, still polling, nobody in a 'playing' match, this pair has no non-void match in the last rematch_h hours, and
+-- |rating gap| <= the larger of the two windows (null window = any rating). A = whoever started searching first (tie: smaller user_id);
+-- the match gets A's question set, created_at = p_now, start_by = p_now + start_deadline_s. Both queue rows become 'matched'.
+create or replace function public.elo_queue_try_match(p_user uuid, p_now timestamptz, p_rules jsonb)
+returns void language plpgsql security definer set search_path = '' as $$
+declare
+  me public.elo_queue%rowtype;
+  o public.elo_queue%rowtype;
+  v_a public.elo_queue%rowtype;
+  v_b public.elo_queue%rowtype;
+  v_drop interval := pg_catalog.make_interval(secs => public.elo_queue_rule(p_rules, 'drop_after_s')::double precision);
+  v_rematch interval := pg_catalog.make_interval(secs => (public.elo_queue_rule(p_rules, 'rematch_h') * 3600)::double precision);
+  v_deadline interval := pg_catalog.make_interval(secs => public.elo_queue_rule(p_rules, 'start_deadline_s')::double precision);
+  v_my_window int;
   v_id uuid;
 begin
-  -- One claim per player at a time (two quick taps must not take two matches), and never while they are already in a match.
-  perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtextextended(p_user::text, 0));
-  if exists (
-    select 1 from public.elo_matches x
-    where (x.player_a = p_user and x.status = 'playing_a') or (x.player_b = p_user and x.status = 'playing_b')
-  ) then
-    raise exception 'ELO_ACTIVE_MATCH: player % already has a match in progress', p_user;
-  end if;
+  select * into me from public.elo_queue where user_id = p_user and status = 'searching';
+  if not found then return; end if;
+  v_my_window := public.elo_queue_window(extract(epoch from (p_now - me.since))::numeric, p_rules);
 
-  update public.elo_matches set status = 'expired'
-  where status = 'waiting' and coalesce(expires_at, a_finished_at + interval '48 hours') <= p_now;
-
-  select m.id into v_id
-  from public.elo_matches m
-  left join public.elo_players pa on pa.user_id = m.player_a
-  where m.status = 'waiting'
-    and m.mode = p_mode
-    and m.player_a <> p_user
-    and abs(coalesce(pa.rating, 1000) - p_rating)
-        <= least(400, 100 + 50 * greatest(0, extract(epoch from (p_now - coalesce(m.a_finished_at, m.created_at))) / 3600))
+  select q.* into o
+  from public.elo_queue q
+  where q.status = 'searching'
+    and q.mode = me.mode
+    and q.user_id <> me.user_id
+    and q.last_seen >= p_now - v_drop
     and not exists (
       select 1 from public.elo_matches x
-      where x.status <> 'void'
-        and x.player_b is not null
-        and ((x.player_a = m.player_a and x.player_b = p_user) or (x.player_a = p_user and x.player_b = m.player_a))
-        and coalesce(x.b_started_at, x.created_at) > p_now - interval '24 hours'
+      where x.status = 'playing' and (x.player_a in (q.user_id, me.user_id) or x.player_b in (q.user_id, me.user_id))
     )
-  order by m.created_at
-  limit 1
-  for update of m skip locked;
+    and not exists (
+      select 1 from public.elo_matches x
+      where x.status <> 'void' and x.player_b is not null
+        and ((x.player_a = me.user_id and x.player_b = q.user_id) or (x.player_a = q.user_id and x.player_b = me.user_id))
+        and x.created_at > p_now - v_rematch
+    )
+    and (
+      v_my_window is null
+      or public.elo_queue_window(extract(epoch from (p_now - q.since))::numeric, p_rules) is null
+      or abs(q.rating - me.rating) <= greatest(v_my_window, public.elo_queue_window(extract(epoch from (p_now - q.since))::numeric, p_rules))
+    )
+  order by q.since, q.user_id
+  limit 1;
+  if not found then return; end if;
 
-  if v_id is null then return null; end if;
-  update public.elo_matches set status = 'playing_b', player_b = p_user, b_started_at = p_now where id = v_id;
-  return v_id;
+  if (me.since, me.user_id) <= (o.since, o.user_id) then
+    v_a := me; v_b := o;
+  else
+    v_a := o; v_b := me;
+  end if;
+  insert into public.elo_matches (mode, status, player_a, player_b, question_ids, created_at, start_by)
+    values (me.mode, 'playing', v_a.user_id, v_b.user_id, v_a.question_ids, p_now, p_now + v_deadline)
+    returning id into v_id;
+  update public.elo_queue set status = 'matched', match_id = v_id where user_id in (me.user_id, o.user_id);
+end $$;
+
+-- Joins the queue. Raises 'ELO_ACTIVE_MATCH' when the player has a match in 'playing'. A repeated join while searching only refreshes last_seen
+-- (since, rating and question set stay); after 'timeout' it starts a new search. Then the same pairing attempt as in poll.
+create or replace function public.elo_queue_join(p_user uuid, p_mode text, p_rating int, p_question_ids text[], p_now timestamptz, p_rules jsonb)
+returns jsonb language plpgsql security definer set search_path = '' as $$
+begin
+  perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtext('elo_queue'));
+  if exists (select 1 from public.elo_matches x where x.status = 'playing' and (x.player_a = p_user or x.player_b = p_user)) then
+    raise exception 'ELO_ACTIVE_MATCH: player % already has a match in progress', p_user;
+  end if;
+  perform public.elo_queue_sweep(p_now, p_rules);
+
+  insert into public.elo_queue as qq (user_id, mode, rating, question_ids, since, last_seen, status)
+    values (p_user, p_mode, p_rating, p_question_ids, p_now, p_now, 'searching')
+  on conflict (user_id) do update set
+    mode         = case when qq.status = 'searching' then qq.mode         else excluded.mode         end,
+    rating       = case when qq.status = 'searching' then qq.rating       else excluded.rating       end,
+    question_ids = case when qq.status = 'searching' then qq.question_ids else excluded.question_ids end,
+    since        = case when qq.status = 'searching' then qq.since        else excluded.since        end,
+    last_seen    = excluded.last_seen,
+    status       = 'searching',
+    match_id     = null;
+
+  perform public.elo_queue_try_match(p_user, p_now, p_rules);
+  return public.elo_queue_state(p_user);
+end $$;
+
+-- One poll: housekeeping, refresh last_seen, try to pair, answer. 'timeout' is answered once, then the row is deleted (next answer: idle).
+create or replace function public.elo_queue_poll(p_user uuid, p_now timestamptz, p_rules jsonb)
+returns jsonb language plpgsql security definer set search_path = '' as $$
+declare
+  v_state jsonb;
+begin
+  perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtext('elo_queue'));
+  perform public.elo_queue_sweep(p_now, p_rules);
+  update public.elo_queue set last_seen = p_now where user_id = p_user and status = 'searching';
+  perform public.elo_queue_try_match(p_user, p_now, p_rules);
+  v_state := public.elo_queue_state(p_user);
+  if v_state ->> 'status' = 'timeout' then delete from public.elo_queue where user_id = p_user; end if;
+  return v_state;
+end $$;
+
+-- Cancels the search: deletes a 'searching' / 'timeout' row. A pair that is already made can't be cancelled (the answer is 'matched'),
+-- unless its match is over (then the row is just gone). p_now is unused: the cancel needs no rules; it is here so the three calls look alike.
+create or replace function public.elo_queue_cancel(p_user uuid, p_now timestamptz)
+returns jsonb language plpgsql security definer set search_path = '' as $$
+begin
+  perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtext('elo_queue'));
+  delete from public.elo_queue q
+  where q.user_id = p_user and q.status = 'matched'
+    and not exists (select 1 from public.elo_matches m where m.id = q.match_id and m.status = 'playing');
+  delete from public.elo_queue where user_id = p_user and status in ('searching', 'timeout');
+  return public.elo_queue_state(p_user);
 end $$;
 
 -- Leaderboards (docs/ELO.md 7). p_board: 'global' | 'season' | 'week'. Page is 1-based, size is capped at 50.
 --   global: players with >= 10 finished matches, by rating desc, matches desc, updated_at asc (who got there first).
 --   season: the current UTC month; players with >= 5 matches finished in it; same order.
---   week:   the current UTC week (Monday 00:00 -> next Monday): the sum of every player's points over their finished part of
---           non-void matches (as player A: a_finished_at in the week -> points_a; as player B: finished_at in the week and
---           status 'finished' -> points_b); ties: more correct answers, then less total elapsed time.
+--   week:   the current UTC week (Monday 00:00 -> next Monday): the sum of both players' points over FINISHED matches whose
+--           finished_at is in the week (points_a for A, points_b for B); ties: more correct answers, then less total elapsed time.
 -- Returns { total, rows: [{ rank, name, avatar, rating, matches, wins, losses, draws, points? }], me }. Public fields only.
 -- me is the caller's row with their real rank; a player who is not on the board yet gets rank null with their stats; null if unknown.
 create or replace function public.elo_leaderboard(p_board text, p_page int, p_size int, p_user uuid)
@@ -398,8 +572,8 @@ begin
   with parts as (
     select m.player_a as u, m.id as mid, m.points_a as pts
     from public.elo_matches m
-    where p_board = 'week' and m.status <> 'void' and m.points_a is not null
-      and m.a_finished_at >= v_from and m.a_finished_at < v_to
+    where p_board = 'week' and m.status = 'finished' and m.points_a is not null
+      and m.finished_at >= v_from and m.finished_at < v_to
     union all
     select m.player_b, m.id, m.points_b
     from public.elo_matches m
@@ -494,7 +668,7 @@ begin
   from (
     select c.u, c.cnt,
            coalesce((select h.rating_after from public.elo_history h where h.user_id = c.u and h.at < v_to
-                     order by h.at desc, h.id desc limit 1), 1000) as rating,
+                     order by h.at desc, h.id desc limit 1), 100) as rating,
            (select max(h.at) from public.elo_history h where h.user_id = c.u and h.at < v_to) as last_at
     from (
       select x.u, count(*) as cnt from (
@@ -516,13 +690,23 @@ revoke all on function public.elo_calc(int, int, int, int, text) from public, an
 revoke all on function public.elo_match_json(uuid, boolean) from public, anon, authenticated;
 revoke all on function public.elo_finish_match(uuid) from public, anon, authenticated;
 revoke all on function public.elo_void_match(uuid) from public, anon, authenticated;
-revoke all on function public.elo_claim_waiting(uuid, int, text, timestamptz) from public, anon, authenticated;
+revoke all on function public.elo_queue_rule(jsonb, text) from public, anon, authenticated;
+revoke all on function public.elo_queue_window(numeric, jsonb) from public, anon, authenticated;
+revoke all on function public.elo_queue_state(uuid) from public, anon, authenticated;
+revoke all on function public.elo_queue_sweep(timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.elo_queue_try_match(uuid, timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.elo_queue_join(uuid, text, int, text[], timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.elo_queue_poll(uuid, timestamptz, jsonb) from public, anon, authenticated;
+revoke all on function public.elo_queue_cancel(uuid, timestamptz) from public, anon, authenticated;
 revoke all on function public.elo_leaderboard(text, int, int, uuid) from public, anon, authenticated;
 revoke all on function public.elo_close_season(text) from public, anon, authenticated;
 grant execute on function public.elo_calc(int, int, int, int, text) to service_role;
 grant execute on function public.elo_match_json(uuid, boolean) to service_role;
 grant execute on function public.elo_finish_match(uuid) to service_role;
 grant execute on function public.elo_void_match(uuid) to service_role;
-grant execute on function public.elo_claim_waiting(uuid, int, text, timestamptz) to service_role;
+grant execute on function public.elo_queue_join(uuid, text, int, text[], timestamptz, jsonb) to service_role;
+grant execute on function public.elo_queue_poll(uuid, timestamptz, jsonb) to service_role;
+grant execute on function public.elo_queue_cancel(uuid, timestamptz) to service_role;
+-- (the helpers elo_queue_rule / _window / _state / _sweep / _try_match are internal: only the functions above call them)
 grant execute on function public.elo_leaderboard(text, int, int, uuid) to service_role;
 grant execute on function public.elo_close_season(text) to service_role;

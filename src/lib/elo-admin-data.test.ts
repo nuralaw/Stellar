@@ -3,7 +3,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
-import { AdminBadRequest, createSupabaseAdminData, flagMatch, pairTime, parseListFilter } from "./elo-admin-data.ts";
+import { AdminBadRequest, createSupabaseAdminData, flagMatch, MATCH_STATUSES, parseListFilter } from "./elo-admin-data.ts";
 import type { EloMatch } from "./elo-store.ts";
 
 const H = 3_600_000;
@@ -82,15 +82,54 @@ test("a chunk is paged until the total is reached, whatever Max Rows the server 
   }
 });
 
-test("same pair is dated by when B joined, not when A created the match", () => {
-  const m = { bStartedAt: T0 + 40 * H, createdAt: T0 } as EloMatch;
-  assert.equal(pairTime(m), T0 + 40 * H);
-  assert.equal(pairTime({ bStartedAt: null, createdAt: T0 } as EloMatch), T0);
+test("same pair is dated by createdAt: the moment the queue made the match", () => {
   const full: EloMatch = {
-    id: "m", mode: "mixed", status: "finished", playerA: "a", playerB: "b", questionIds: [], createdAt: T0, aFinishedAt: T0, bStartedAt: T0 + 40 * H, finishedAt: T0 + 41 * H,
-    expiresAt: null, pointsA: 1, pointsB: 2, forfeit: null, result: "b", ratingABefore: 1000, ratingBBefore: 1000, deltaA: -10, deltaB: 10,
+    id: "m", mode: "mixed", status: "finished", playerA: "a", playerB: "b", questionIds: [], createdAt: T0, aStartedAt: T0 + 20_000, bStartedAt: T0 + 40_000,
+    aFinishedAt: T0 + H, bFinishedAt: T0 + 2 * H, startBy: T0 + 90_000, finishedAt: T0 + 2 * H,
+    pointsA: 1, pointsB: 2, forfeit: null, result: "b", ratingABefore: 1000, ratingBBefore: 1000, deltaA: -10, deltaB: 10,
   };
-  assert.equal(flagMatch(full).createdAt, T0 + 40 * H);
+  assert.equal(flagMatch(full).createdAt, T0);
+  assert.equal(flagMatch({ ...full, bStartedAt: null }).createdAt, T0, "a side that never started changes nothing");
+});
+
+test("the status filter knows exactly playing / finished / void", () => {
+  assert.deepEqual([...MATCH_STATUSES], ["playing", "finished", "void"]);
+  const f = (q: string) => parseListFilter(new URLSearchParams(q));
+  assert.equal(f("status=playing").status, "playing");
+  assert.equal(f("status=all").status, null);
+  for (const old of ["playing_a", "waiting", "playing_b", "expired"]) assert.throws(() => f(`status=${old}`), AdminBadRequest);
+});
+
+test("pairedBetween looks at created_at (when the pair was made), both ends inclusive", async () => {
+  const fake = fakePostgrest("elo_matches", []);
+  try {
+    await createSupabaseAdminData("http://sb.test", "key").pairedBetween(["u1", "u2"], T0, T0 + H);
+    assert.equal(fake.seen.length, 1);
+    const q = new URLSearchParams(fake.seen[0].split("?")[1]);
+    assert.deepEqual(q.getAll("created_at"), [`gte.${new Date(T0).toISOString()}`, `lte.${new Date(T0 + H).toISOString()}`]);
+    assert.equal(q.has("b_started_at"), false);
+  } finally {
+    fake.restore();
+  }
+});
+
+test("a match row is mapped with the new columns (a_started_at, b_finished_at, start_by) and no expires_at", async () => {
+  const row = {
+    id: "m1", mode: "mixed", status: "playing", player_a: "a", player_b: "b", question_ids: [], created_at: new Date(T0).toISOString(),
+    a_started_at: new Date(T0 + 10_000).toISOString(), b_started_at: null, a_finished_at: null, b_finished_at: new Date(T0 + H).toISOString(),
+    start_by: new Date(T0 + 90_000).toISOString(), finished_at: null, points_a: null, points_b: 7,
+  };
+  const fake = fakePostgrest("elo_matches", [row]);
+  try {
+    const { rows, total } = await createSupabaseAdminData("http://sb.test", "key").matches({ status: "playing", users: null, from: null, to: null }, 0, 25);
+    assert.equal(total, 1);
+    const m = rows[0];
+    assert.deepEqual([m.status, m.aStartedAt, m.bStartedAt, m.aFinishedAt, m.bFinishedAt, m.startBy, m.pointsB], ["playing", T0 + 10_000, null, null, T0 + H, T0 + 90_000, 7]);
+    assert.equal("expiresAt" in m, false);
+    assert.ok(fake.seen[0].includes("status=eq.playing"));
+  } finally {
+    fake.restore();
+  }
 });
 
 test("list filter: impossible calendar dates are rejected, real ones and the leap day pass", () => {

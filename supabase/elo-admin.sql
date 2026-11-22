@@ -34,13 +34,13 @@ begin
   end if;
 end $$;
 
--- 3. Reset a player's rating to the start value (1000, START_RATING in src/lib/elo-config.ts).
---  - rating := 1000 and peak := 1000 (the peak is reset too: after a cheating case it is the inflated number). A history row with
+-- 3. Reset a player's rating to the start value (100, START_RATING in src/lib/elo-config.ts).
+--  - rating := 100 and peak := 100 (the peak is reset too: after a cheating case it is the inflated number). A history row with
 --    reason 'reset' is written whenever something changes (match_id = the nil uuid: a reset belongs to no match); elo_void_match
 --    uses its time to tell matches played before the reset from later ones.
 --  - matches / wins / losses / draws are kept (they drive the calibration K factor and the leaderboard threshold, and the matches did happen).
 --  - updated_at moves only when the rating changes (it is the leaderboard tie-break "who reached the rating first").
---  - Idempotent-safe: on a player already at 1000 / 1000 nothing changes; the call is still logged with changed = false.
+--  - Idempotent-safe: on a player already at 100 / 100 nothing changes; the call is still logged with changed = false.
 --  - Raises 'ELO_NOT_FOUND: ...' for a player without a rating row.
 -- Voiding a match the player played BEFORE the reset doesn't take its delta off again (elo_void_match skips the rating for a player
 -- whose latest 'reset' is later than the match's finish, and counts the peak only from matches after the reset).
@@ -54,21 +54,21 @@ begin
   select * into p from public.elo_players where user_id = p_user for update;
   if not found then raise exception 'ELO_NOT_FOUND: elo_reset_player: player % not found', p_user; end if;
 
-  v_changed := p.rating <> 1000 or p.peak <> 1000;
+  v_changed := p.rating <> 100 or p.peak <> 100;
   if v_changed then
     insert into public.elo_history (user_id, match_id, at, rating_before, rating_after, reason)
-      values (p.user_id, '00000000-0000-0000-0000-000000000000', v_now, p.rating, 1000, 'reset');
-    update public.elo_players set rating = 1000, peak = 1000,
-      updated_at = case when p.rating <> 1000 then v_now else updated_at end
+      values (p.user_id, '00000000-0000-0000-0000-000000000000', v_now, p.rating, 100, 'reset');
+    update public.elo_players set rating = 100, peak = 100,
+      updated_at = case when p.rating <> 100 then v_now else updated_at end
     where user_id = p.user_id;
   end if;
 
   insert into public.elo_admin_log (at, admin_email, action, match_id, user_id, details)
     values (v_now, coalesce(p_admin, ''), 'reset_rating', null, p.user_id,
-            pg_catalog.jsonb_build_object('rating_before', p.rating, 'peak_before', p.peak, 'rating_after', 1000, 'changed', v_changed));
+            pg_catalog.jsonb_build_object('rating_before', p.rating, 'peak_before', p.peak, 'rating_after', 100, 'changed', v_changed));
 
   return pg_catalog.jsonb_build_object(
-    'user_id', p.user_id, 'rating_before', p.rating, 'peak_before', p.peak, 'rating_after', 1000, 'peak_after', 1000, 'changed', v_changed
+    'user_id', p.user_id, 'rating_before', p.rating, 'peak_before', p.peak, 'rating_after', 100, 'peak_after', 100, 'changed', v_changed
   );
 end $$;
 

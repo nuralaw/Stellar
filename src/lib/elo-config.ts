@@ -36,7 +36,8 @@ export const NETWORK_GRACE_MS = 2000;
 
 // --- 4. ELO -----------------------------------------------------------------------------------------------------------
 
-export const START_RATING = 1000;
+/** New players start at the floor (docs/ELO.md 4.4: a newcomer's loss at 100 changes nothing, so ratings inflate slowly; deliberate). */
+export const START_RATING = 100;
 export const RATING_FLOOR = 100;
 /** Finished matches a player needs to leave calibration (4.3, 4.5). */
 export const PLACEMENT_MATCHES = 10;
@@ -90,15 +91,24 @@ export const DIFFICULTY_MIX: readonly { below: number; mix: Record<Difficulty, n
 /** Avoid questions the player saw in ranked matches within this many days, when the bank allows (5.2). */
 export const RECENT_QUESTIONS_DAYS = 30;
 
-/** Matchmaking rating window (5.4): min(cap, base + perHour x hours waited). */
-export const MATCH_WINDOW = { base: 100, perHour: 50, cap: 400 } as const;
+/** Live matchmaking queue (docs/ELO-live.md 2.1). */
+export const QUEUE = {
+  /** The client polls the queue this often (ms). */
+  pollMs: 2000,
+  /** No poll for this many seconds: the player drops out of the queue. */
+  dropAfterS: 15,
+  /** A search ends by itself after this many seconds ("timeout"). */
+  searchMaxS: 300,
+} as const;
+/** Rating window: base + step x floor(seconds searched / everyS); from openAfterS on there is no limit. */
+export const QUEUE_WINDOW = { base: 100, step: 100, everyS: 30, openAfterS: 120 } as const;
+/** After a match is made each player has this many seconds to open the first question. */
+export const START_DEADLINE_S = 90;
+/** A started part with no sign of life for this many seconds counts as a forfeit (replaces the 30 min stale limit). */
+export const ABANDON_AFTER_S = 120;
 
-/** A waiting match without an opponent expires after this many hours (5.3). */
-export const WAITING_EXPIRY_H = 48;
 /** The same pair cannot meet again within this many hours (5.4). */
 export const REMATCH_COOLDOWN_H = 24;
-/** Max matches of one player waiting for an opponent at once (5.4). */
-export const MAX_WAITING_MATCHES = 3;
 /** Max matches a player may start per day (5.4). */
 export const MAX_MATCHES_PER_DAY = 30;
 

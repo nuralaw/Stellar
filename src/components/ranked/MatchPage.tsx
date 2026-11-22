@@ -9,7 +9,8 @@ import type { MatchState } from "@/lib/elo-api-types";
 import { requestFullscreenNow, useCanFullscreen } from "@/lib/fullscreen";
 import { useHydrated } from "@/lib/store";
 import { PAGE } from "@/lib/ui";
-import { GO_KEY, RankedApiError, rankedGet } from "./api";
+import { RankedApiError, fmtCountdown, rankedGet } from "./api";
+import { serverNowAt, stampServer, useTicker, type ServerStamp } from "./clock";
 import { ErrorPanel } from "./ErrorPanel";
 import { LevelBadge } from "./LevelBadge";
 import { MatchResult } from "./MatchResult";
@@ -19,7 +20,7 @@ import { Rules, RulesIcon } from "./Rules";
 type Phase = "load" | "ready" | "run" | "result";
 
 /** This player still has questions to play in this match. */
-const playable = (s: MatchState) => !s.myPartDone && ((s.status === "playing_a" && s.role === "a") || (s.status === "playing_b" && s.role === "b"));
+const playable = (s: MatchState) => s.status === "playing" && !s.myPartDone;
 
 /** /ranked/[id]: ready screen -> the questions -> the result. Which one is decided by the match state from the server. */
 export function MatchPage({ id }: { id: string }) {
@@ -30,6 +31,8 @@ export function MatchPage({ id }: { id: string }) {
   const [phase, setPhase] = useState<Phase>("load");
   const [fsError, setFsError] = useState(false);
   const [reload, setReload] = useState(0);
+  /** The server's clock when `state` arrived: the start countdown runs from it, not from the device clock. */
+  const [stamp, setStamp] = useState<ServerStamp | null>(null);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -38,13 +41,10 @@ export function MatchPage({ id }: { id: string }) {
       (s) => {
         if (!alive) return;
         setState(s);
+        setStamp(stampServer(s.serverNow));
         setError(null);
-        // The hub just started this match from a click that already went full screen (or the browser has none): no second "Start".
-        let go = false;
-        try {
-          go = sessionStorage.getItem(GO_KEY) === id && (!document.fullscreenEnabled || Boolean(document.fullscreenElement));
-        } catch {}
-        setPhase((p) => (p !== "load" ? p : !playable(s) ? "result" : go ? "run" : "ready"));
+        // First load: the ready screen or the result. A reload (the start deadline ran out, the match was resolved) can only move on to the result.
+        setPhase((p) => (p === "run" ? p : !playable(s) ? "result" : p === "load" ? "ready" : p));
       },
       (e: RankedApiError) => alive && setError(e),
     );
@@ -64,12 +64,39 @@ export function MatchPage({ id }: { id: string }) {
 
   // The runner reports the end of this player's part: load the final state and show it.
   const onFinished = () => {
-    try {
-      sessionStorage.removeItem(GO_KEY);
-    } catch {}
     setPhase("load");
     setReload((n) => n + 1);
   };
+
+  // The ready screen counts down to the start deadline on the server's clock. At 0 the server decides (a loss for the one who
+  // didn't start, a void if nobody did): load the state again and the page shows the result.
+  const startBy = phase === "ready" ? (state?.startBy ?? null) : null;
+  const perf = useTicker(startBy !== null);
+  const msLeft = startBy !== null && stamp ? startBy - serverNowAt(stamp, perf) : null;
+  const overdue = msLeft !== null && msLeft <= 0;
+  // If that load fails (the connection is down), try again every ~3 s.
+  useEffect(() => {
+    if (!overdue) return;
+    const t = setTimeout(() => setReload((n) => n + 1), error ? 3000 : 800);
+    return () => clearTimeout(t);
+  }, [overdue, state, error]);
+
+  // Found while the tab was in the background: say so in the tab title (the hub can't, the page title is replaced when this page opens).
+  const onReady = phase === "ready";
+  useEffect(() => {
+    if (!onReady) return;
+    const title = document.title;
+    const sync = () => {
+      if (document.hidden) document.title = "Opponent found!";
+      else document.title = title;
+    };
+    sync();
+    document.addEventListener("visibilitychange", sync);
+    return () => {
+      document.removeEventListener("visibilitychange", sync);
+      document.title = title;
+    };
+  }, [onReady]);
 
   if (error && (!state || phase === "load")) {
     return (
@@ -111,7 +138,13 @@ export function MatchPage({ id }: { id: string }) {
             <LevelBadge level={state.opponent.level} size="sm" />
           </div>
         ) : (
-          <p className="mt-2 text-sm text-muted">You play first: your result waits for an opponent for up to 48 hours, then the two are compared.</p>
+          <p className="mt-2 text-sm text-muted">Your opponent&apos;s account is no longer available.</p>
+        )}
+        {msLeft !== null && (
+          <p className={`mt-3 text-sm font-semibold tabular-nums ${msLeft <= 15_000 ? "text-danger" : "text-ink"}`} role="timer">
+            Start within {fmtCountdown(msLeft)}
+            <span className="font-normal text-muted"> · if you don&apos;t, the match is lost</span>
+          </p>
         )}
         {state.answered > 0 && (
           <p className="mt-3 text-sm text-muted tabular-nums">
@@ -121,13 +154,18 @@ export function MatchPage({ id }: { id: string }) {
         <div className="mt-4">
           <Rules fullscreen={canFullscreen} />
         </div>
+        {overdue && error && (
+          <p className="mt-4 text-sm text-danger" role="alert">
+            Couldn&apos;t reach the server. Trying again…
+          </p>
+        )}
         {fsError && (
           <p className="mt-4 text-sm text-danger" role="alert">
             Your browser didn&apos;t allow full screen, so the match wasn&apos;t started. Try again, or use another browser.
           </p>
         )}
         <div className="mt-6 flex flex-wrap gap-2">
-          <button type="button" autoFocus onClick={() => void begin()} className={`${BTN_PRIMARY} flex-1`}>
+          <button type="button" autoFocus onClick={() => void begin()} disabled={overdue} className={`${BTN_PRIMARY} flex-1 disabled:opacity-40`}>
             {canFullscreen ? "Start in full screen" : "I understand, start"}
           </button>
           <Link href="/ranked" className={`${BTN_SECONDARY} border-transparent bg-transparent`}>

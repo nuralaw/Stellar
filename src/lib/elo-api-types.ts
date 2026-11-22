@@ -1,5 +1,5 @@
-// Ranked matches (docs/ELO.md §8.4): the JSON contract between the API (/api/ranked/**, /api/leaderboard) and the UI.
-// Stages 3–6 are built in parallel against this file: the API produces exactly these shapes, the pages consume them.
+// Ranked matches (docs/ELO-live.md, with docs/ELO.md §8.4 for the unchanged parts): the JSON contract between the API
+// (/api/ranked/**, /api/leaderboard) and the UI. The API produces exactly these shapes, the pages consume them.
 // All times are epoch milliseconds (server clock). Change a shape only together with every producer and consumer.
 
 import type { CompetitionQuestion } from "./competition";
@@ -10,7 +10,12 @@ import type { Difficulty } from "./types";
 /** Only Mixed for now (5 RW + 5 Math); "rw" / "math" come with stage 7. */
 export type RankedMode = "mixed";
 export type RankedRole = "a" | "b";
-export type RankedStatus = "playing_a" | "waiting" | "playing_b" | "finished" | "expired" | "void";
+/**
+ * Live matchmaking (docs/ELO-live.md): a match exists only once two players are paired from the queue; both then
+ * play the same 10 questions at the same time. "playing" = at least one part still open; "finished" = both parts done and
+ * ELO applied; "void" = nobody started in time (or voided by an admin), no rating change.
+ */
+export type RankedStatus = "playing" | "finished" | "void";
 /** From the viewer's side. */
 export type RankedOutcome = "win" | "loss" | "draw";
 
@@ -49,30 +54,46 @@ export interface MatchSummary {
   outcome: RankedOutcome | null;
   /** Rating change for this player (after the floor); null until finished. */
   delta: number | null;
-  /** While waiting for an opponent: when the match expires. */
-  expiresAt: number | null;
+  /** This player's part is complete (all 10 questions closed). */
+  myPartDone: boolean;
+  /** The opponent's part is complete (their points stay hidden until the match is finished). */
+  opponentDone: boolean;
+  /** While this player hasn't opened their first question: the start deadline (pairing + 90 s); null once started. */
+  startBy: number | null;
 }
 
 /** GET /api/ranked */
 export interface RankedHub {
   me: RankedMe;
-  /** A match this player still has to play (playing_a as creator, playing_b as opponent). */
+  /** The match this player is in right now (status "playing"), whether or not their own part is done. */
   active: MatchSummary | null;
-  /** This player's finished part, opponent pending (waiting / playing_b as creator). */
-  waiting: MatchSummary[];
-  /** Last 10 finished / expired / void matches. */
+  /** Last 10 finished / void matches. */
   recent: MatchSummary[];
-  limits: { waitingLeft: number; dailyLeft: number };
+  /** This player's queue state (so a reload during a search shows the search screen again). */
+  queue: QueueState;
+  limits: { dailyLeft: number };
 }
 
-/** POST /api/ranked/play  { mode } */
-export interface PlayResponse {
-  matchId: string;
-  role: RankedRole;
-  /** The opponent when joining as B; null when playing first as A. */
+/**
+ * The matchmaking queue. POST /api/ranked/queue { mode, name, avatar } joins (or refreshes) the search;
+ * GET /api/ranked/queue is the heartbeat + poll (every ~2 s while the search screen is open — a player who stops polling
+ * for 15 s drops out of the queue); DELETE /api/ranked/queue cancels. Any of them can return "matched".
+ * The search stops by itself after 5 minutes ("timeout"): no match is created, nothing changes.
+ */
+export interface QueueState {
+  status: "idle" | "searching" | "matched" | "timeout";
+  /** When the current search started; null when idle. */
+  since: number | null;
+  /** The current rating window (± points); null when not searching, or when there is no limit any more (after 2 minutes). */
+  window: number | null;
+  /** When the search gives up (since + 5 min); null when not searching. */
+  until: number | null;
+  /** Set when status is "matched". */
+  matchId: string | null;
   opponent: PublicPlayer | null;
-  /** True when an unfinished match was returned instead of a new one. */
-  resumed: boolean;
+  /** Other players searching right now (any rating, same mode) — for "N players searching". */
+  searching: number;
+  serverNow: number;
 }
 
 /** A question as the player sees it during a match: no answer, no explanation, no bank id. */
@@ -109,7 +130,7 @@ export interface AnswerResponse {
   done: boolean;
 }
 
-/** One question in the review, available only after this player's part is done. */
+/** One question in the review, available only once the match is no longer "playing" (finished or void). */
 export interface ReviewItem {
   idx: number;
   section: SectionId;
@@ -129,12 +150,13 @@ export interface ReviewItem {
 
 /** GET /api/ranked/[id] */
 export interface MatchState extends MatchSummary {
-  myPartDone: boolean;
+  /** The server's clock when this was answered: count down to `startBy` from it, not from the device clock. */
+  serverNow: number;
   ratingBefore: number | null;
   ratingAfter: number | null;
   /** Set when this player (or the opponent) forfeited. */
   forfeit: RankedRole | null;
-  /** Null until this player's part is done. */
+  /** Null while the match is "playing" (the opponent may still be playing the same questions), and when there is nothing to review. */
   review: ReviewItem[] | null;
 }
 
@@ -170,8 +192,11 @@ export interface LeaderboardResponse {
   period?: string;
 }
 
-/** Every error response: `{ error, code }` with the HTTP status from docs/ELO.md §8.4. */
-export type RankedErrorCode = "auth" | "verify" | "name" | "limit_waiting" | "limit_daily" | "not_found" | "conflict" | "bad_request" | "setup";
+/**
+ * Every error response: `{ error, code }` with the HTTP status from docs/ELO.md §8.4 (docs/ELO-live.md 5.2).
+ * "in_match" (409): tried to queue while already in a "playing" match (the UI should open that match instead).
+ */
+export type RankedErrorCode = "auth" | "verify" | "name" | "in_match" | "limit_daily" | "not_found" | "conflict" | "bad_request" | "setup";
 export interface RankedError {
   error: string;
   code: RankedErrorCode;

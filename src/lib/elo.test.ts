@@ -9,13 +9,13 @@ import {
   kFactor,
   levelOf,
   matchResult,
-  matchWindow,
+  queueWindow,
   questionPoints,
   roundHalfAway,
   serverElapsedMs,
   timeLimitS,
 } from "./elo.ts";
-import { BASE_POINTS, MATCH_SIZE, MIXED_LAYOUT } from "./elo-config.ts";
+import { BASE_POINTS, MATCH_SIZE, MIXED_LAYOUT, RATING_FLOOR, START_RATING } from "./elo-config.ts";
 
 // --- 9.1 Points per question (3.4) ---
 
@@ -168,6 +168,14 @@ test("E6: rating floor at 100; delta is the real change", () => {
   assert.equal(r.deltaB, 12);
 });
 
+test("start rating = floor (100): a newcomer's loss changes nothing, the winner gains", () => {
+  assert.equal(START_RATING, 100);
+  assert.equal(START_RATING, RATING_FLOOR);
+  assert.equal(levelOf(START_RATING, 10).level, 1);
+  const r = applyElo({ a: p(START_RATING), b: p(START_RATING), result: "a" });
+  assert.deepEqual([r.deltaA, r.deltaB, r.ratingA, r.ratingB], [12, 0, 112, 100]);
+});
+
 test("expectedScore is symmetric", () => {
   near(expectedScore(1200, 1000) + expectedScore(1000, 1200), 1);
 });
@@ -259,10 +267,17 @@ test("Mixed layout: 5 RW + 5 Math, alternating", () => {
   MIXED_LAYOUT.forEach((s, i) => assert.equal(s, i % 2 === 0 ? "rw" : "math"));
 });
 
-test("matchWindow: 100 + 50/hour, cap 400", () => {
-  assert.equal(matchWindow(0), 100);
-  assert.equal(matchWindow(2), 200);
-  assert.equal(matchWindow(6), 400);
-  assert.equal(matchWindow(10), 400);
-  assert.equal(matchWindow(48), 400);
+test("queueWindow: 100 + 100 per 30 s, no limit from 120 s", () => {
+  assert.equal(queueWindow(0), 100);
+  assert.equal(queueWindow(29_000), 100);
+  assert.equal(queueWindow(29_999), 100);
+  assert.equal(queueWindow(30_000), 200);
+  assert.equal(queueWindow(59_999), 200);
+  assert.equal(queueWindow(60_000), 300);
+  assert.equal(queueWindow(89_999), 300);
+  assert.equal(queueWindow(90_000), 400);
+  assert.equal(queueWindow(119_000), 400);
+  assert.equal(queueWindow(120_000), null);
+  assert.equal(queueWindow(10 * 60_000), null);
+  assert.equal(queueWindow(-5_000), 100, "negative time counts as 0");
 });

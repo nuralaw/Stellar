@@ -11,7 +11,7 @@ import type { AnswerResponse, NextResponse, PublicPlayer } from "@/lib/elo-api-t
 import { useFocusMode } from "@/lib/focus";
 import { exitFullscreen, requestFullscreenNow } from "@/lib/fullscreen";
 import type { ChoiceLetter, Difficulty } from "@/lib/types";
-import { GO_KEY, RankedApiError, rankedBeacon, rankedPost } from "./api";
+import { RankedApiError, rankedBeacon, rankedPost } from "./api";
 import { LevelBadge } from "./LevelBadge";
 import { TimerRing } from "./TimerRing";
 import { toView } from "./toView";
@@ -305,9 +305,6 @@ export function MatchRunner({ matchId, opponent, onFinished }: { matchId: string
     return () => {
       const f = flags;
       if (!f.finishing.current && !f.submitted.current && f.cur.current !== null) rankedBeacon(`/api/ranked/${matchId}/annul`, { idx: f.cur.current });
-      try {
-        sessionStorage.removeItem(GO_KEY);
-      } catch {}
     };
   }, [matchId]);
 
@@ -350,10 +347,7 @@ export function MatchRunner({ matchId, opponent, onFinished }: { matchId: string
                 </div>
               </div>
             ) : (
-              <div>
-                <p className="truncate text-sm font-semibold">You play first</p>
-                <p className="text-xs text-muted">Your result will be matched with an opponent</p>
-              </div>
+              <p className="truncate text-sm font-semibold">Ranked match</p>
             )}
           </div>
           {isMath && (

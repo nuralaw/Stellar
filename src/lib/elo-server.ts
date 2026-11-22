@@ -1,15 +1,17 @@
 import "server-only";
 import { getQuestionsByIds, sampleQuestions } from "./bank.ts";
 import { isCorrect } from "./answers.ts";
-import { difficultyMix, levelOf, questionPoints, serverElapsedMs, timeLimitS } from "./elo.ts";
+import { difficultyMix, levelOf, queueWindow, questionPoints, serverElapsedMs, timeLimitS } from "./elo.ts";
 import {
+  ABANDON_AFTER_S,
   MATCH_SIZE,
   MAX_MATCHES_PER_DAY,
-  MAX_WAITING_MATCHES,
   MIXED_LAYOUT,
   MS_PER_S,
   NETWORK_GRACE_MS,
+  QUEUE,
   RECENT_QUESTIONS_DAYS,
+  START_DEADLINE_S,
   START_RATING,
 } from "./elo-config.ts";
 import {
@@ -24,13 +26,13 @@ import {
   type EloMatch,
   type EloPlayerRecord,
   type EloStore,
+  type QueueRecord,
 } from "./elo-store.ts";
 import type {
   AnswerResponse,
   MatchState,
   MatchSummary,
   NextResponse,
-  PlayResponse,
   PublicPlayer,
   RankedErrorCode,
   RankedHub,
@@ -38,14 +40,15 @@ import type {
   RankedMode,
   RankedOutcome,
   RankedQuestion,
+  QueueState,
   RankedRole,
   ReviewItem,
 } from "./elo-api-types.ts";
 import type { Difficulty, Question } from "./types";
 import type { SectionId } from "./taxonomy";
 
-// Server side of ranked matches (docs/ELO.md sections 5, 6, 8.4): who plays which questions, server-only timing, grading,
-// matchmaking and finishing a match. Storage is elo-store.ts (Supabase or a local file); the formulas are elo.ts.
+// Server side of ranked matches (docs/ELO.md sections 5, 6, 8.4; live matchmaking: docs/ELO-live.md): who plays which questions,
+// server-only timing, grading, the matchmaking queue and finishing a match. Storage is elo-store.ts (Supabase or a local file); the formulas are elo.ts.
 // Everything here is independent of HTTP and of the login: the routes (src/app/api/ranked/**) authenticate and call `ranked`.
 // Time is always passed in as `now` (the server clock of the route); the client's clock is never read.
 
@@ -68,12 +71,12 @@ const badRequest = (message: string) => new RankedError(400, "bad_request", mess
 export function translateError(e: unknown): unknown {
   if (e instanceof RankedError) return e;
   if (e instanceof EloLimitError) {
-    return new RankedError(429, e.kind === "waiting" ? "limit_waiting" : "limit_daily", e.message);
+    return new RankedError(429, "limit_daily", e.message);
   }
   if (e instanceof EloSetupError || e instanceof EloStoreUnavailable) return new RankedError(503, "setup", e.message);
   if (e instanceof EloInvalidIdError) return badRequest("Invalid id");
   if (e instanceof EloNotFoundError) return notFound();
-  if (e instanceof EloActiveMatchError) return conflict(e.message);
+  if (e instanceof EloActiveMatchError) return new RankedError(409, "in_match", e.message);
   return e;
 }
 
@@ -96,13 +99,6 @@ const DIFFS: readonly Difficulty[] = ["easy", "medium", "hard"];
 const SECTIONS: readonly SectionId[] = ["rw", "math"];
 const HOUR_MS = 60 * 60 * MS_PER_S;
 const DAY_MS = 24 * HOUR_MS;
-/**
- * A part nobody has touched for this long (counted from the last thing that happened: the match start, an answer, or the end of
- * the last issued question's time limit) is abandoned. It is resolved lazily on the next read of the hub / the match / play / next:
- * a B part is forfeited (annulled, loss, match finished); an A part that answered something is forfeited too (the match goes on to
- * waiting, so B can still play it and win); an A part that answered nothing just expires (no rating change).
- */
-export const STALE_PART_MS = 30 * 60 * MS_PER_S;
 
 /**
  * Splits the creator's difficulty mix (10 questions) between the two sections, 5 + 5: every difficulty is halved, and the odd
@@ -221,11 +217,15 @@ const pointsOf = (rows: EloAnswer[]) => rows.reduce((sum, r) => sum + r.points, 
 const closedCount = (rows: EloAnswer[]) => rows.filter((r) => r.status !== "open").length;
 /** All questions of the match issued and closed. */
 const partDone = (rows: EloAnswer[]) => rows.length >= MATCH_SIZE && closedCount(rows) >= MATCH_SIZE;
-/** The match is waiting for this very player to play (A in playing_a, B in playing_b). */
-const isActive = (m: EloMatch, role: RankedRole) => (role === "a" ? m.status === "playing_a" : m.status === "playing_b");
+/** The match is still being played and this side's part is not closed yet (its points are written when the part closes). */
+const isActive = (m: EloMatch, role: RankedRole) => m.status === "playing" && (role === "a" ? m.pointsA : m.pointsB) === null;
 /** How long a question has been open, capped at its limit (for timeouts / annulments). */
 const heldMs = (row: EloAnswer, now: number) => Math.min(row.limitS * MS_PER_S, Math.max(0, now - row.issuedAt));
 const roleOf = (m: EloMatch, userId: string): RankedRole | null => (m.playerA === userId ? "a" : m.playerB === userId ? "b" : null);
+const ownPoints = (m: EloMatch, role: RankedRole) => (role === "a" ? m.pointsA : m.pointsB);
+const startedAtOf = (m: EloMatch, role: RankedRole) => (role === "a" ? m.aStartedAt : m.bStartedAt);
+/** When a side that hasn't opened its first question loses the match (3.2). Old rows without `startBy` fall back to the rule. */
+const startDeadline = (m: EloMatch) => m.startBy ?? m.createdAt + START_DEADLINE_S * MS_PER_S;
 
 function publicPlayer(p: EloPlayerRecord | undefined): PublicPlayer {
   const rating = p?.rating ?? START_RATING;
@@ -242,6 +242,7 @@ function summarize(userId: string, m: EloMatch, players: Record<string, EloPlaye
   const role = m.playerA === userId ? "a" : "b";
   const oppId = role === "a" ? m.playerB : m.playerA;
   const finished = m.status === "finished";
+  const mine = ownPoints(m, role);
   return {
     id: m.id,
     mode: m.mode as RankedMode,
@@ -255,7 +256,10 @@ function summarize(userId: string, m: EloMatch, players: Record<string, EloPlaye
     opponent: oppId ? publicPlayer(players[oppId]) : null,
     outcome: outcomeOf(m, role),
     delta: finished ? (role === "a" ? m.deltaA : m.deltaB) : null,
-    expiresAt: m.status === "waiting" ? m.expiresAt : null,
+    myPartDone: mine !== null,
+    // Only whether the other part is closed: their points stay hidden until the match is finished.
+    opponentDone: (role === "a" ? m.pointsB : m.pointsA) !== null,
+    startBy: m.status === "playing" && mine === null && startedAtOf(m, role) === null ? startDeadline(m) : null,
   };
 }
 
@@ -289,24 +293,28 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
   }
 
   /**
-   * If the caller's part is fully played, moves the match on: A -> waiting (points and aFinishedAt stored), B -> points stored and the
-   * match finished (ELO applied, atomic and idempotent in the store). Safe to call again after a failure half-way.
+   * Closes the caller's side of the match once its part is fully played: this side's points and finish time are stored, then, when
+   * both sides have points, the match is finished (ELO applied, atomic and idempotent in the store). The forfeit is not written
+   * here: forfeitPart records it BEFORE the rows are closed, so a concurrent settle can't close the part without it.
+   * Safe to call again after a failure half-way.
    */
-  async function settle(matchId: string, userId: string, role: RankedRole, now: number, forfeit?: RankedRole): Promise<EloMatch | null> {
+  async function settle(matchId: string, userId: string, role: RankedRole, now: number): Promise<EloMatch | null> {
     const m = await store.getMatch(matchId);
-    if (!m || !isActive(m, role)) return m;
-    const rows = await store.getAnswers(matchId, userId);
-    if (!partDone(rows)) return m;
-    const points = pointsOf(rows);
-    // The first forfeit stands: a match already marked as forfeited by the other player keeps that loser.
-    const fo = m.forfeit === null ? forfeit : undefined;
-    if (role === "a") {
-      const patch = { status: "waiting" as const, aFinishedAt: now, pointsA: points, ...(fo ? { forfeit: fo } : {}) };
-      return (await store.updateMatch(matchId, patch, ["playing_a"])) ?? (await store.getMatch(matchId));
+    if (!m || m.status !== "playing") return m;
+    let cur = m;
+    if (ownPoints(m, role) === null) {
+      const rows = await store.getAnswers(matchId, userId);
+      if (partDone(rows)) {
+        const points = pointsOf(rows);
+        const patch = role === "a" ? { pointsA: points, aFinishedAt: now } : { pointsB: points, bFinishedAt: now };
+        cur = (await store.updateMatch(matchId, patch, ["playing"])) ?? (await store.getMatch(matchId)) ?? m;
+      }
     }
-    await store.updateMatch(matchId, { pointsB: points, ...(fo ? { forfeit: fo } : {}) }, ["playing_b"]);
-    await store.finishMatch(matchId, now);
-    return store.getMatch(matchId);
+    if (cur.status === "playing" && cur.pointsA !== null && cur.pointsB !== null) {
+      await store.finishMatch(matchId, now);
+      return store.getMatch(matchId);
+    }
+    return cur;
   }
 
   const closeZero = (status: "timeout" | "annulled", row: EloAnswer, now: number) =>
@@ -321,8 +329,13 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
       points: 0,
     });
 
-  /** Gives the part up: every open and unplayed question is annulled, then the match moves on with the forfeit (loss) recorded. */
+  /**
+   * Gives the part up. The forfeit is recorded FIRST (atomically, only if nobody has forfeited yet: the first forfeit stands), then
+   * every open and unplayed question is annulled and the part is settled. Recording it first matters: as soon as the last row is
+   * closed another request (the opponent's poll, a hub read) may settle this part, and it must not do so without the forfeit.
+   */
   async function forfeitPart(match: EloMatch, userId: string, role: RankedRole, rows: EloAnswer[], now: number) {
+    await store.setForfeit(match.id, role);
     for (let idx = 0; idx < MATCH_SIZE; idx++) {
       let row = rows.find((r) => r.idx === idx);
       if (row && row.status !== "open") continue;
@@ -334,44 +347,132 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
       }
       await closeZero("annulled", row, now);
     }
-    await settle(match.id, userId, role, now, role);
+    await settle(match.id, userId, role, now);
   }
 
   /**
-   * Lazily ends an abandoned part (STALE_PART_MS without activity): see STALE_PART_MS for the rules. Only a match in playing_a /
-   * playing_b is touched. Returns the match as it is afterwards.
+   * Lazily moves a match on (docs/ELO-live.md 3.2-3.3), for BOTH sides; does nothing unless the status is "playing":
+   *  0. both parts are closed but the match isn't finished (finishMatch failed once): it is finished now;
+   *  1. self-heal: a side whose rows are all closed but whose points are missing is settled (the match is finished when both are in);
+   *  2. start deadline: past `startBy` nobody started -> void;
+   *  3. every side still open has a moment when it gives up: the start deadline if it never started, else its last sign of life +
+   *     ABANDON_AFTER_S (the last sign is the latest of the part's start, an answer, and the end of the open question's time limit).
+   *     The sides whose moment has passed forfeit in the order of those moments (tie: A), so whoever gave up first is the first
+   *     forfeit, and that one stands.
+   * A side that forfeited before its first question (leave) counts as started on purpose: it loses even if the other never shows.
+   * Returns the match as it is afterwards.
    */
-  async function resolveStale(m: EloMatch, now: number): Promise<EloMatch> {
-    const role: RankedRole | null = m.status === "playing_a" ? "a" : m.status === "playing_b" ? "b" : null;
-    const userId = role === "a" ? m.playerA : role === "b" ? m.playerB : null;
-    if (!role || !userId) return m;
-    const rows = await store.getAnswers(m.id, userId);
-    if (partDone(rows)) return (await settle(m.id, userId, role, now)) ?? m;
-    // Last sign of life: the part started, a question's time limit ended, or an answer arrived.
-    const start = role === "a" ? m.createdAt : (m.bStartedAt ?? m.createdAt);
-    const lastAt = rows.reduce(
-      (t, r) => Math.max(t, r.status === "open" ? r.issuedAt + r.limitS * MS_PER_S : (r.answeredAt ?? r.issuedAt)),
-      start,
-    );
-    if (now - lastAt <= STALE_PART_MS) return m;
-    if (role === "a" && !rows.some((r) => r.status === "answered")) {
-      return (await store.updateMatch(m.id, { status: "expired" }, ["playing_a"])) ?? (await store.getMatch(m.id)) ?? m;
+  async function resolveMatch(m: EloMatch, now: number): Promise<EloMatch> {
+    if (m.status !== "playing") return m;
+    const fresh = async () => (await store.getMatch(m.id)) ?? m;
+    if (m.playerB === null) {
+      // The other player's account is gone: nobody to play against, no rating change.
+      await store.voidMatch(m.id, now);
+      return fresh();
     }
-    await forfeitPart(m, userId, role, rows, now);
-    return (await store.getMatch(m.id)) ?? m;
+    if (m.pointsA !== null && m.pointsB !== null) {
+      await store.finishMatch(m.id, now);
+      return fresh();
+    }
+    const playerB = m.playerB;
+    const sides = (x: EloMatch) => [
+      { role: "a" as RankedRole, userId: x.playerA, points: x.pointsA, startedAt: x.aStartedAt },
+      { role: "b" as RankedRole, userId: playerB, points: x.pointsB, startedAt: x.bStartedAt },
+    ];
+    let cur = m;
+
+    // 1. Self-heal.
+    for (const s of sides(cur)) {
+      if (s.points !== null) continue;
+      if (partDone(await store.getAnswers(m.id, s.userId))) cur = (await settle(m.id, s.userId, s.role, now)) ?? cur;
+      if (cur.status !== "playing") return cur;
+    }
+
+    // 2 + 3. Who gives up when.
+    const deadline = startDeadline(cur);
+    const open: { role: RankedRole; userId: string; rows: EloAnswer[]; started: boolean; giveUpAt: number }[] = [];
+    for (const s of sides(cur)) {
+      if (s.points !== null) continue;
+      const rows = await store.getAnswers(m.id, s.userId);
+      const started = rows.length > 0 || s.startedAt !== null;
+      const lastAt = rows.reduce(
+        (t, r) => Math.max(t, r.status === "open" ? r.issuedAt + r.limitS * MS_PER_S : (r.answeredAt ?? r.issuedAt)),
+        s.startedAt ?? 0,
+      );
+      open.push({ role: s.role, userId: s.userId, rows, started, giveUpAt: started ? lastAt + ABANDON_AFTER_S * MS_PER_S : deadline });
+    }
+    if (open.length === 2 && open.every((s) => !s.started) && now > deadline) {
+      await store.voidMatch(m.id, now);
+      return fresh();
+    }
+    const due = open.filter((s) => now > s.giveUpAt).sort((x, y) => x.giveUpAt - y.giveUpAt || (x.role < y.role ? -1 : 1));
+    for (const s of due) {
+      await forfeitPart(cur, s.userId, s.role, s.rows, now);
+      cur = await fresh();
+      if (cur.status !== "playing") return cur;
+    }
+    return cur;
+  }
+
+  /** The queue row as the API shows it (docs/ELO-live.md 2): the window and the end of the search are worked out from the clock. */
+  async function queueState(userId: string, rec: QueueRecord, now: number): Promise<QueueState> {
+    const since = rec.status === "searching" ? rec.since : null;
+    let opponent: PublicPlayer | null = null;
+    if (rec.status === "matched" && rec.matchId) {
+      const m = await store.getMatch(rec.matchId);
+      const oppId = m ? (m.playerA === userId ? m.playerB : m.playerA) : null;
+      if (oppId) opponent = publicPlayer((await store.getPlayers([oppId]))[oppId]);
+    }
+    return {
+      status: rec.status,
+      since: rec.since,
+      // null = not searching, or no limit any more (queueWindow returns null from QUEUE_WINDOW.openAfterS on)
+      window: since === null ? null : queueWindow(now - since),
+      until: since === null ? null : since + QUEUE.searchMaxS * MS_PER_S,
+      matchId: rec.matchId,
+      opponent,
+      searching: rec.searching,
+      serverNow: now,
+    };
+  }
+
+  /* ----- /api/ranked/queue ----- */
+
+  /** Joins (or refreshes) the search. Pairing happens in the store, at once if someone suitable is already searching. */
+  async function queueJoin(userId: string, input: { mode?: unknown; name?: string; avatar?: string }, now: number): Promise<QueueState> {
+    const mode = input.mode ?? "mixed";
+    if (mode !== "mixed") throw badRequest("Only the Mixed mode exists for now");
+    const existing = await store.getPlayer(userId);
+    const name = input.name ?? existing?.name ?? "";
+    if (!name) throw new RankedError(403, "name", "Pick a public name before playing ranked matches.");
+    const me = await store.ensurePlayer(userId, { name, avatar: input.avatar ?? existing?.avatar ?? "" }, now);
+    // A no-show or abandoned match must not block the queue: it is ended first (the store itself refuses a player still in a match).
+    const active = (await store.listMatches(userId)).active;
+    if (active) await resolveMatch(active, now);
+    const recent = new Set(await store.recentQuestionIds(userId, now - RECENT_QUESTIONS_DAYS * DAY_MS));
+    const rec = await store.queueJoin({ userId, mode: "mixed", rating: me.rating, questionIds: buildQuestionSet(me.rating, recent, bank), now });
+    return queueState(userId, rec, now);
+  }
+
+  /** The heartbeat + poll. Matches are not resolved here (it runs every 2 s): the hub, the match page and `next` do that. */
+  async function queuePoll(userId: string, now: number): Promise<QueueState> {
+    return queueState(userId, await store.queuePoll({ userId, now }), now);
+  }
+
+  async function queueCancel(userId: string, now: number): Promise<QueueState> {
+    return queueState(userId, await store.queueCancel({ userId, now }), now);
   }
 
   /* ----- GET /api/ranked ----- */
 
   async function hub(userId: string, now: number): Promise<RankedHub> {
     const rec = await store.getPlayer(userId);
-    let lists = await store.listMatches(userId, { now });
-    // Abandoned parts (the player's own match in progress, or an opponent's part the player's waiting match is stuck on) end here.
-    const inProgress = [lists.active, ...lists.waiting.filter((m) => m.status === "playing_b")];
-    let changed = false;
-    for (const m of inProgress) if (m && (await resolveStale(m, now)).status !== m.status) changed = true;
-    if (changed) lists = await store.listMatches(userId, { now });
-    const matches = [...(lists.active ? [lists.active] : []), ...lists.waiting, ...lists.recent];
+    // An abandoned or no-show match ends here (either player's part); reading the hub is also a sign of life in the queue and may pair the player.
+    const before = (await store.listMatches(userId)).active;
+    if (before) await resolveMatch(before, now);
+    const queue = await queueState(userId, await store.queuePoll({ userId, now }), now);
+    const lists = await store.listMatches(userId);
+    const matches = [...(lists.active ? [lists.active] : []), ...lists.recent];
     const oppIds = new Set<string>();
     for (const m of matches) {
       const opp = m.playerA === userId ? m.playerB : m.playerA;
@@ -382,12 +483,11 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
     for (const m of matches) {
       if (summaries.has(m.id)) continue;
       const role = m.playerA === userId ? "a" : "b";
-      // Only a match in progress (or a voided one) can have an unfinished part; the others are fully played.
-      const partial = lists.active?.id === m.id || m.status === "void" || (m.status === "expired" && m.aFinishedAt === null);
+      // A finished match has both parts fully played; a playing or void one may have an unfinished part.
+      const partial = m.status !== "finished";
       const rows = partial ? await store.getAnswers(m.id, userId) : [];
       const answered = partial ? closedCount(rows) : MATCH_SIZE;
-      const stored = role === "a" ? m.pointsA : m.pointsB;
-      summaries.set(m.id, summarize(userId, m, players, answered, partial && rows.length ? pointsOf(rows) : stored));
+      summaries.set(m.id, summarize(userId, m, players, answered, partial && rows.length ? pointsOf(rows) : ownPoints(m, role)));
     }
     const sum = (m: EloMatch) => summaries.get(m.id)!;
     const me: RankedMe = {
@@ -402,68 +502,10 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
     return {
       me,
       active: lists.active ? sum(lists.active) : null,
-      waiting: lists.waiting.map(sum),
       recent: lists.recent.map(sum),
-      limits: {
-        waitingLeft: Math.max(0, MAX_WAITING_MATCHES - (await store.countWaiting(userId))),
-        dailyLeft: Math.max(0, MAX_MATCHES_PER_DAY - (await store.countStarted(userId, now - DAY_MS))),
-      },
+      queue,
+      limits: { dailyLeft: Math.max(0, MAX_MATCHES_PER_DAY - (await store.countStarted(userId, now - DAY_MS))) },
     };
-  }
-
-  /* ----- POST /api/ranked/play ----- */
-
-  async function play(userId: string, input: { mode?: unknown; name?: string; avatar?: string }, now: number): Promise<PlayResponse> {
-    const mode = input.mode ?? "mixed";
-    if (mode !== "mixed") throw badRequest("Only the Mixed mode exists for now");
-    const existing = await store.getPlayer(userId);
-    const name = input.name ?? existing?.name ?? "";
-    if (!name) throw new RankedError(403, "name", "Pick a public name before playing ranked matches.");
-    const me = await store.ensurePlayer(userId, { name, avatar: input.avatar ?? existing?.avatar ?? "" }, now);
-
-    const resume = async (m: EloMatch): Promise<PlayResponse> => {
-      const role = roleOf(m, userId)!;
-      const oppId = role === "b" ? m.playerA : m.playerB;
-      const opp = oppId ? (await store.getPlayers([oppId]))[oppId] : undefined;
-      return { matchId: m.id, role, opponent: role === "b" ? publicPlayer(opp) : null, resumed: true };
-    };
-
-    // 5.4.1: a match in progress is continued, never duplicated.
-    const lists = await store.listMatches(userId, { now });
-    if (lists.active) {
-      // An abandoned one (STALE_PART_MS) is ended first and doesn't count as "in progress".
-      const m = await resolveStale(lists.active, now);
-      if (m.status === lists.active.status) return resume(m);
-    }
-
-    // 5.4.2: the oldest suitable waiting match.
-    let claimed: EloMatch | null = null;
-    try {
-      claimed = await store.claimWaiting({ userId, rating: me.rating, mode: "mixed", now });
-    } catch (e) {
-      if (!(e instanceof EloActiveMatchError)) throw e;
-      // Raced with another request of the same player that already started a match.
-      const again = (await store.listMatches(userId, { now })).active;
-      if (again) return resume(again);
-      throw e;
-    }
-    if (claimed) {
-      const opp = (await store.getPlayers([claimed.playerA]))[claimed.playerA];
-      return { matchId: claimed.id, role: "b", opponent: publicPlayer(opp), resumed: false };
-    }
-
-    // 5.4.3: nobody to play with: a new match, this player is A.
-    const recent = new Set(await store.recentQuestionIds(userId, now - RECENT_QUESTIONS_DAYS * DAY_MS));
-    try {
-      const created = await store.createMatch({ mode: "mixed", playerA: userId, questionIds: buildQuestionSet(me.rating, recent, bank), now });
-      return { matchId: created.id, role: "a", opponent: null, resumed: false };
-    } catch (e) {
-      if (!(e instanceof EloActiveMatchError)) throw e;
-      // A parallel /play of the same player created their match first: continue that one.
-      const again = (await store.listMatches(userId, { now })).active;
-      if (again) return resume(again);
-      throw e;
-    }
   }
 
   /* ----- POST /api/ranked/[id]/next ----- */
@@ -471,7 +513,7 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
   async function next(userId: string, matchId: string, now: number): Promise<NextResponse> {
     const loaded = await load(userId, matchId);
     const role = loaded.role;
-    const match = await resolveStale(loaded.match, now);
+    const match = await resolveMatch(loaded.match, now);
     const serve = (row: EloAnswer, rows: EloAnswer[]): NextResponse => {
       const q = bank.byIds([row.qid])[0];
       if (!q) throw new Error(`Question ${row.qid} of match ${matchId} is not in the bank`);
@@ -514,7 +556,13 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
       if (!q) throw new Error(`Question ${match.questionIds[idx]} of match ${matchId} is not in the bank`);
       // The server's clock stamps the moment the question is handed out; a row opened meanwhile by a parallel request is kept as is.
       const row = await store.openAnswer({ matchId, userId, idx, qid: q.id, section: q.section, difficulty: q.difficulty, limitS: timeLimitS(q.section, q.difficulty), issuedAt: now });
-      if (row.status === "open") return serve(row, rows);
+      if (row.status === "open") {
+        // The part starts with its first question: the server's clock stamps it (once; a parallel request may have done it already).
+        if (idx === 0 && startedAtOf((await store.getMatch(matchId)) ?? match, role) === null) {
+          await store.updateMatch(matchId, role === "a" ? { aStartedAt: now } : { bStartedAt: now }, ["playing"]);
+        }
+        return serve(row, rows);
+      }
     }
     throw conflict("busy"); // rare: parallel requests kept changing the rows; the client may simply retry
   }
@@ -598,9 +646,14 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
 
   /** Forfeit (4.2): the match is lost whatever the points; open and unplayed questions are annulled. */
   async function leave(userId: string, matchId: string, now: number): Promise<{ forfeit: true }> {
-    const { match, role } = await load(userId, matchId);
-    if (match.forfeit === role) return { forfeit: true };
-    if (!isActive(match, role)) throw conflict("There is nothing to leave: your part of this match is done");
+    const loaded = await load(userId, matchId);
+    const role = loaded.role;
+    // An opponent who has been silent for long enough gave up first: that has to be settled before this player's own forfeit.
+    const match = await resolveMatch(loaded.match, now);
+    if (!isActive(match, role)) {
+      if (match.forfeit === role) return { forfeit: true };
+      throw conflict("There is nothing to leave: your part of this match is done");
+    }
     await forfeitPart(match, userId, role, await store.getAnswers(matchId, userId), now);
     return { forfeit: true };
   }
@@ -610,20 +663,19 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
   async function state(userId: string, matchId: string, now: number): Promise<MatchState> {
     const loaded = await load(userId, matchId);
     const role = loaded.role;
-    // An abandoned part (either player's) ends here; self-heal: the last answer was stored but moving the match on failed.
-    await resolveStale(loaded.match, now);
+    // Either side's no-show / abandoned part ends here; then self-heal: the last answer was stored but moving the match on failed.
+    await resolveMatch(loaded.match, now);
     const match = (await settle(matchId, userId, role, now)) ?? (await load(userId, matchId)).match;
     const rows = await store.getAnswers(matchId, userId);
-    const done = partDone(rows);
     const oppId = role === "a" ? match.playerB : match.playerA;
     const players = oppId ? await store.getPlayers([oppId]) : {};
-    const stored = role === "a" ? match.pointsA : match.pointsB;
-    const summary = summarize(userId, match, players, closedCount(rows), done ? (stored ?? pointsOf(rows)) : null);
+    const summary = summarize(userId, match, players, closedCount(rows), ownPoints(match, role) ?? (partDone(rows) ? pointsOf(rows) : null));
 
+    // 3.4: the review (answers, explanations) only once the whole match is over; before that the opponent is playing the same set.
     let review: ReviewItem[] | null = null;
-    if (done) {
+    if (match.status !== "playing") {
       const byId = new Map(bank.byIds(rows.map((r) => r.qid)).map((q) => [q.id, q]));
-      review = rows.flatMap((r): ReviewItem[] => {
+      const items = rows.flatMap((r): ReviewItem[] => {
         const q = byId.get(r.qid);
         if (!q || r.status === "open") return [];
         return [
@@ -645,12 +697,13 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
           },
         ];
       });
+      review = items.length ? items : null; // a match nobody started (void) has nothing to review
     }
     const finished = match.status === "finished";
     const before = role === "a" ? match.ratingABefore : match.ratingBBefore;
     return {
       ...summary,
-      myPartDone: done,
+      serverNow: now,
       ratingBefore: finished ? before : null,
       ratingAfter: finished && before !== null && summary.delta !== null ? before + summary.delta : null,
       // The opponent's forfeit stays hidden until the match is finished.
@@ -680,7 +733,9 @@ export function createRankedService(store: EloStore, bank: QuestionBank = liveBa
   return {
     image: guard(image),
     hub: guard(hub),
-    play: guard(play),
+    queueJoin: guard(queueJoin),
+    queuePoll: guard(queuePoll),
+    queueCancel: guard(queueCancel),
     next: guard(next),
     answer: guard(answer),
     annul: guard(annul),

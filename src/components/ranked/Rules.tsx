@@ -1,3 +1,4 @@
+import { START_DEADLINE_S } from "@/lib/elo-config";
 import { WARN_ICON } from "@/components/compete/CompeteRound";
 import { Icon } from "@/components/bank/icons";
 
@@ -6,7 +7,7 @@ export function Rules({ fullscreen }: { fullscreen: boolean }) {
   return (
     <ul className="space-y-2 text-sm text-muted">
       <li>
-        • <span className="font-semibold text-ink">10 questions, one at a time</span> (5 Reading &amp; Writing, 5 Math), each with its own timer. You can&apos;t go back.
+        • <span className="font-semibold text-ink">The same 10 questions as your opponent</span>, played at the same time, each at your own pace (5 Reading &amp; Writing, 5 Math). One at a time, each with its own timer. You can&apos;t go back.
       </li>
       <li>
         • <span className="font-semibold text-ink">Points for right and fast.</span> A correct answer scores 100 / 150 / 200 by difficulty, plus up to 40% for speed. Wrong or late is 0.
@@ -22,9 +23,12 @@ export function Rules({ fullscreen }: { fullscreen: boolean }) {
             <span className="font-semibold text-ink">Stay on this page.</span> Switching apps or tabs scores the current question 0.
           </>
         )}{" "}
-        Away for more than <span className="font-semibold text-danger">15 seconds</span> counts as giving up: a loss.
+        Away for more than <span className="font-semibold text-danger">15 seconds</span>, or <span className="font-semibold text-danger">2 minutes with no activity</span>, counts as giving up: a loss.
       </li>
-      <li>• Answers and explanations appear after your part is done.</li>
+      <li>
+        • After an opponent is found you have <span className="font-semibold text-ink">{START_DEADLINE_S} seconds</span> to start. <span className="font-semibold text-danger">Not starting loses the match.</span>
+      </li>
+      <li>• Answers and explanations appear when the match ends.</li>
     </ul>
   );
 }
