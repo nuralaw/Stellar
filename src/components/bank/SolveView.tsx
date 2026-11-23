@@ -9,10 +9,12 @@ import { SECTIONS, getDomain } from "@/lib/taxonomy";
 import { SOURCES } from "@/lib/sources";
 import type { Difficulty } from "@/lib/types";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { ReferenceButton } from "@/components/reference/ReferenceButton";
 import { useFocusMode } from "@/lib/focus";
 import { showToast } from "@/lib/toast";
 import { SyncNudge } from "@/components/SyncNudge";
-import { DifficultyBadge, QuestionCard } from "./QuestionCard";
+import { DifficultyBadge, QuestionCard, btnGhost } from "./QuestionCard";
+import { QuestionIsland, answerTone } from "./QuestionIsland";
 import { ReportButton } from "./ReportButton";
 import { cachedQuestion, fetchQuestions, shuffle, skillName, type BankItem } from "./data";
 import { exitFullscreen, toggleFullscreen, useCanFullscreen, useIsFullscreen } from "@/lib/fullscreen";
@@ -25,6 +27,8 @@ export interface Run {
   items: Map<string, BankItem>;
   title: string;
   start: number;
+  /** No fixed length: questions keep coming until the student presses Finish (Question Bank's "Practice"). */
+  endless?: boolean;
 }
 
 interface Answer {
@@ -39,12 +43,26 @@ const fmtTime = (s: number) => (s >= 3600 ? `${Math.floor(s / 3600)}:${String(Ma
 const iconBtn = "grid h-9 w-9 place-items-center rounded-lg border border-line bg-surface transition-colors hover:bg-surface-2 disabled:opacity-40";
 
 function cellStyle(r: Answer | undefined, current: boolean) {
-  const base = r === undefined ? "border-line bg-surface text-muted hover:border-muted hover:text-ink" : r.correct ? "border-success/60 bg-success-soft text-success" : "border-danger/60 bg-danger-soft text-danger";
-  return `${base} ${current ? "ring-2 ring-primary ring-offset-2 ring-offset-surface" : ""}`;
+  return `${answerTone(r?.correct)} ${current ? "ring-2 ring-primary ring-offset-2 ring-offset-surface" : ""}`;
 }
 
 /** Popover grid of every question in the set. */
-function Navigator({ ids, session, bookmarks, pos, go }: { ids: string[]; session: Record<string, Answer>; bookmarks: Set<string>; pos: number; go: (i: number) => void }) {
+function Navigator({
+  ids,
+  session,
+  bookmarks,
+  pos,
+  go,
+  endless,
+}: {
+  ids: string[];
+  session: Record<string, Answer>;
+  bookmarks: Set<string>;
+  pos: number;
+  go: (i: number) => void;
+  /** No fixed length: no total, and `ids` holds only the questions seen so far. */
+  endless?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -70,7 +88,7 @@ function Navigator({ ids, session, bookmarks, pos, go }: { ids: string[]; sessio
       >
         <Icon d={I.grid} className="h-4 w-4 text-muted" />
         {pos + 1}
-        <span className="font-medium text-muted">/ {ids.length}</span>
+        {!endless && <span className="hidden font-medium text-muted sm:inline">/ {ids.length}</span>}
         <Icon d={I.chevronD} className={`hidden h-3.5 w-3.5 text-muted transition-transform sm:block ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
@@ -78,7 +96,7 @@ function Navigator({ ids, session, bookmarks, pos, go }: { ids: string[]; sessio
           <div className="flex items-center justify-between">
             <p className="text-sm font-semibold">Questions</p>
             <p className="text-xs text-muted tabular-nums">
-              {Object.keys(session).length} of {ids.length} answered
+              {endless ? `${Object.keys(session).length} answered` : `${Object.keys(session).length} of ${ids.length} answered`}
             </p>
           </div>
           <div className="mt-3 grid max-h-72 grid-cols-7 gap-1.5 overflow-y-auto p-1">
@@ -283,6 +301,11 @@ export function SolveView({
   useFocusMode();
   const router = useRouter();
   const [pos, setPos] = useState(run.start);
+  // Questions the student actually opened (jumping ahead in the island doesn't count the gap); an endless run only summarises these.
+  const [opened, setOpened] = useState(() => new Set([run.ids[run.start]]));
+  const endless = Boolean(run.endless);
+  // The bar below the question: its Skip / Check / Next buttons are rendered into this slot by QuestionCard.
+  const [actionsSlot, setActionsSlot] = useState<HTMLElement | null>(null);
   // Question order; "Shuffle" mixes up the current and upcoming questions.
   const [ids, setIds] = useState(run.ids);
   const fullscreen = useIsFullscreen();
@@ -352,6 +375,7 @@ export function SolveView({
     if (i < 0 || i >= total) return;
     flushTime();
     setPos(i);
+    setOpened((s) => new Set(s).add(ids[i]));
     setError(null);
     setFinished(false);
     window.scrollTo({ top: 0 });
@@ -368,7 +392,7 @@ export function SolveView({
     if (finished) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
-      if ((e.target as Element | null)?.closest?.("[data-calculator]")) return; // arrows pan the Desmos graph
+      if ((e.target as Element | null)?.closest?.("[data-calculator], [data-reference]")) return; // arrows pan the Desmos graph
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement) return;
       if (e.key === "ArrowRight") go(pos + 1);
       if (e.key === "ArrowLeft") go(pos - 1);
@@ -377,7 +401,11 @@ export function SolveView({
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  if (finished) return <Summary run={{ ...run, ids }} session={session} onReview={go} onRestart={onRestart} onExit={onExit} />;
+  if (finished) {
+    // Endless: only what was opened.
+    const seen = endless ? ids.filter((x) => opened.has(x)) : ids;
+    return <Summary run={{ ...run, ids: seen }} session={session} onReview={(i) => go(ids.indexOf(seen[i]))} onRestart={onRestart} onExit={onExit} />;
+  }
 
   const answeredCount = Object.keys(session).length;
   const correctCount = Object.values(session).filter((a) => a.correct).length;
@@ -386,18 +414,28 @@ export function SolveView({
   const secs = answer ? answer.secs : Math.floor(((spent[id] ?? 0) + Math.max(0, now - enteredAt)) / 1000);
   // Two columns (text / table / picture on the left) need the wide layout.
   const wide = q ? Boolean(q.table || q.figure || (q.section !== "math" && q.passage)) : meta?.section !== "math";
-  const rest = ids.length - pos; // current + upcoming
-  /** Every press: new random order for this question and the ones after it, so a different question shows now. */
+  // Shuffling needs another unanswered question to show (the current one counts only if it's still open).
+  const canShuffle = ids.slice(pos).filter((x) => !session[x]).length >= (answer ? 1 : 2);
+  /** Every press: new random order for the unanswered questions from this one on, so a different question shows now. Answered ones never come back. */
   const reshuffle = () => {
-    if (rest < 2) return;
+    if (!canShuffle) return;
     flushTime();
-    let next = shuffle(ids.slice(pos));
-    while (next[0] === id) next = shuffle(next);
-    setIds([...ids.slice(0, pos), ...next]);
+    const rest = ids.slice(pos);
+    const done = rest.filter((x) => session[x]);
+    let open = shuffle(rest.filter((x) => !session[x]));
+    while (!answer && open[0] === id) open = shuffle(open);
+    setIds([...ids.slice(0, pos), ...done, ...open]);
+    setPos(pos + done.length);
+    // The mixed-back questions are unseen again; only the new current one counts as opened.
+    setOpened(new Set([...ids.slice(0, pos).filter((x) => opened.has(x)), ...done, open[0]]));
     setError(null);
     window.scrollTo({ top: 0 });
   };
+  // Navigator prefix of an endless run: up to the furthest opened question (gaps are fine).
+  const reached = Math.max(pos, ids.findLastIndex((x) => opened.has(x)));
   const showCalc = hasMath && calcOpen;
+  // Toolbar height: the progress row is 12px of segments, a 4px bar, or nothing (endless).
+  const toolbarH = endless ? 61 : total <= 60 ? 85 : 77;
   // Leaving mid-set: every answer is already saved (stats, Question Bank status), so say so.
   const saved = () =>
     showToast("Progress saved", answeredCount ? `${answeredCount} answer${answeredCount === 1 ? "" : "s"} saved to your stats.` : "Pick up any time in the Question Bank.");
@@ -425,15 +463,15 @@ export function SolveView({
               onClick={goHome}
               title="Save and go to Home"
               aria-label="Save and go to Home"
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1.5 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink"
+              className="hidden shrink-0 items-center gap-1.5 rounded-lg px-2 py-1.5 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink sm:inline-flex"
             >
               <Icon d={I.home} className="h-4 w-4" />
-              <span className="hidden sm:inline">Home</span>
+              <span className="hidden lg:inline">Home</span>
             </button>
-            <span className="h-5 w-px bg-line" aria-hidden="true" />
+            <span className="hidden h-5 w-px bg-line sm:block" aria-hidden="true" />
             <button type="button" onClick={leave} className="inline-flex shrink-0 items-center gap-1 rounded-lg py-1.5 pr-2 pl-1 text-sm font-medium text-muted hover:bg-surface-2 hover:text-ink">
               <Icon d={I.chevronL} className="h-4 w-4" />
-              <span className="hidden sm:inline">{run.from ?? "Question Bank"}</span>
+              <span className="hidden md:inline">{run.from ?? "Question Bank"}</span>
             </button>
             <span className="hidden h-5 w-px bg-line md:block" aria-hidden="true" />
             <span className="hidden truncate text-sm font-semibold md:block">{run.title}</span>
@@ -445,22 +483,23 @@ export function SolveView({
                 onClick={toggleCalc}
                 aria-pressed={calcOpen}
                 title={calcOpen ? "Hide calculator" : "Open Desmos calculator"}
-                className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 text-sm font-semibold transition-colors ${
+                className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2 text-sm font-semibold transition-colors sm:px-2.5 ${
                   calcOpen ? "border-primary bg-primary-soft text-primary-strong" : "border-line bg-surface text-ink hover:bg-surface-2"
                 }`}
               >
                 <Icon d={I.calculator} className="h-4.5 w-4.5" />
-                <span className="hidden sm:inline">Calculator</span>
+                <span className="hidden lg:inline">Calculator</span>
               </button>
             )}
+            {hasMath && <ReferenceButton variant="icon" calcOpen={calcOpen} onCloseCalc={() => setCalcOpen(false)} />}
             <button
               type="button"
               onClick={() => setShowTimer((v) => !v)}
               title={showTimer ? "Hide timer" : "Show timer"}
               aria-label={showTimer ? `Time on this question ${fmtTime(secs)}. Hide timer` : "Show timer"}
-              className={`inline-flex h-9 items-center gap-1.5 rounded-lg px-2 text-sm font-medium tabular-nums transition-colors hover:bg-surface-2 sm:px-2.5 ${answer ? "text-muted" : "text-ink"}`}
+              className={`inline-flex h-9 items-center gap-1.5 rounded-lg px-1.5 text-sm font-medium tabular-nums transition-colors hover:bg-surface-2 sm:px-2.5 ${answer ? "text-muted" : "text-ink"}`}
             >
-              <Icon d={I.clock} className="h-4 w-4 text-muted" />
+              <Icon d={I.clock} className="hidden h-4 w-4 text-muted sm:block" />
               {showTimer ? fmtTime(secs) : <span className="text-muted">Show</span>}
             </button>
             <button
@@ -473,7 +512,7 @@ export function SolveView({
             >
               <Icon d={I.star} className="h-4.5 w-4.5" filled={marked} />
             </button>
-            <Navigator ids={ids} session={session} bookmarks={bookmarks} pos={pos} go={go} />
+            <Navigator ids={endless ? ids.slice(0, reached + 1) : ids} session={session} bookmarks={bookmarks} pos={pos} go={go} endless={endless} />
             {canFullscreen && (
               <button
                 type="button"
@@ -486,15 +525,27 @@ export function SolveView({
                 <Icon d={fullscreen ? I.shrink : I.expand} className="h-4 w-4" />
               </button>
             )}
-            <button type="button" onClick={finish} className="ml-0.5 h-9 rounded-lg bg-ink px-3 text-sm font-semibold text-bg transition-opacity hover:opacity-85 sm:px-3.5">
+            <button
+              type="button"
+              onClick={() => {
+                // An endless run doesn't count the question on screen if it was never answered.
+                if (endless && !answer)
+                  setOpened((s) => {
+                    const n = new Set(s);
+                    n.delete(id);
+                    return n;
+                  });
+                finish();
+              }}
+              className="ml-0.5 h-9 rounded-lg bg-ink px-2.5 text-sm font-semibold text-bg transition-opacity hover:opacity-85 sm:px-3.5">
               Finish
             </button>
           </div>
         </div>
 
         {/* Progress */}
-        <div className="mt-3 pb-3">
-          {total <= 60 ? (
+        <div className={endless ? "pb-3" : "mt-3 pb-3"}>
+          {endless ? null : total <= 60 ? (
             <div className="flex gap-1" aria-hidden="true">
               {ids.map((x, i) => {
                 const a = session[x];
@@ -526,7 +577,8 @@ export function SolveView({
 
       {/* Desmos calculator: docked left on desktop (drag to resize), bottom sheet on mobile */}
       <CalculatorDock used={hasMath && calcUsed} open={showCalc} onClose={() => setCalcOpen(false)} stickyClass="lg:top-28" fullHeight="calc(100vh - 8.5rem)">
-        <div>
+        {/* At least as tall as the screen below the toolbar, so the action bar sits at the bottom even under a short question. */}
+        <div className="flex flex-col" style={{ minHeight: `calc(100dvh - ${toolbarH}px)` }}>
           {/* Meta */}
           {meta && (
             <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-xs text-muted">
@@ -556,7 +608,7 @@ export function SolveView({
             </div>
           )}
 
-          <div className="mt-4">
+          <div className="mt-4 flex flex-1 flex-col">
             {error ? (
               <div className="rounded-2xl border border-danger/40 bg-danger-soft p-6 text-sm">
                 Couldn&apos;t load this question ({error}).{" "}
@@ -589,21 +641,7 @@ export function SolveView({
                 timeSpent={answer?.secs}
                 nextLabel={pos + 1 < total ? "Next" : "See results"}
                 onNext={next}
-                onPrev={pos > 0 ? () => go(pos - 1) : undefined}
-                leftActions={
-                  total > 2 && (
-                    <button
-                      type="button"
-                      onClick={reshuffle}
-                      disabled={rest < 2}
-                      title="Shuffle the questions (this one and the ones after it)"
-                      className="inline-flex items-center gap-1.5 rounded-xl border border-line px-3.5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 disabled:opacity-40"
-                    >
-                      <Icon d={I.shuffle} className="h-4 w-4" />
-                      <span className="hidden sm:inline">Shuffle</span>
-                    </button>
-                  )
-                }
+                actionsSlot={actionsSlot}
                 onAnswered={(ok, response) => {
                   const t = Date.now();
                   const s = Math.round(((spent[q.id] ?? 0) + (t - enteredAt)) / 1000);
@@ -612,16 +650,53 @@ export function SolveView({
                 }}
               />
             )}
+
+            <p className="mt-4 hidden text-center text-xs text-muted md:block">
+              <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
+              {meta?.section === "rw" && <> · select text to highlight</>}
+            </p>
+            <div className="min-h-6 flex-1" />
+
+            <div className="qc-actions @container sticky bottom-0 z-10 -mx-4 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
+              <div className="pb-[env(safe-area-inset-bottom)]">
+                <div className="relative flex items-center gap-2">
+                  {/* A tab on the bar's top edge in narrow columns (-top-3 = the bar's py-3), centred in the row in wide ones. */}
+                  <div className={`absolute -top-3 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 @2xl:top-1/2 ${showCalc ? "max-lg:hidden" : ""}`}>
+                    <QuestionIsland ids={ids} items={run.items} session={session} prior={prior} bookmarks={bookmarks} pos={pos} go={go} />
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {total > 2 && (
+                      <button
+                        type="button"
+                        onClick={reshuffle}
+                        onMouseDown={keepFocus}
+                        disabled={!canShuffle}
+                        title="Shuffle the unanswered questions (this one and the ones after it)"
+                        className="inline-flex items-center gap-1.5 rounded-xl border border-line px-3.5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 disabled:opacity-40"
+                      >
+                        <Icon d={I.shuffle} className="h-4 w-4" />
+                        <span className="hidden sm:inline">Shuffle</span>
+                      </button>
+                    )}
+                    <button type="button" onClick={() => go(pos - 1)} onMouseDown={keepFocus} disabled={pos === 0} className={btnGhost} aria-label="Previous question">
+                      <Icon d={I.chevronL} className="h-4 w-4" />
+                      <span className="hidden sm:inline">Back</span>
+                    </button>
+                  </div>
+                  <div ref={setActionsSlot} className="ml-auto flex items-center justify-end gap-2" />
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="mt-2 mb-6 hidden text-center text-xs text-muted md:block">
-            <Kbd>A</Kbd>–<Kbd>D</Kbd> choose · <Kbd>Shift</Kbd>+<Kbd>A</Kbd> cross out · <Kbd>Enter</Kbd> check / next · <Kbd>←</Kbd> <Kbd>→</Kbd> move
-            {meta?.section === "rw" && <> · select text to highlight</>}
-          </p>
         </div>
       </CalculatorDock>
     </section>
   );
 }
+
+// Shuffle / Back stay mounted between questions: a click mustn't leave them focused, or Enter would press them again
+// instead of checking the answer (QuestionCard ignores Enter on a focused button). They stay reachable with Tab.
+const keepFocus = (e: React.MouseEvent) => e.preventDefault();
 
 function Kbd({ children }: { children: React.ReactNode }) {
   return <kbd className="mx-0.5 rounded border border-line bg-surface px-1.5 py-0.5 font-mono text-[10px]">{children}</kbd>;

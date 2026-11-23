@@ -24,6 +24,9 @@ export function QuestionBank() {
   // The run and the filters live here, so a change of plan (which restarts the list below) doesn't drop them.
   const [run, setRun] = useState<Run | null>(null);
   const [filters, setFiltersState] = useState<Filters | null>(null);
+  // The topic whose squares are open in the list (also kept through a run). null = closed by hand, undefined = the default
+  // (closed, except a search that matches a single topic).
+  const [openTopic, setOpenTopic] = useState<string | null | undefined>(undefined);
   // The last list the server gave, with the plan it was made for. It's kept while the plan is looked up again
   // (sign-in, refresh), so only the first load shows the skeleton.
   const [kept, setKept] = useState<{ items: BankItem[]; canBank: boolean } | null>(null);
@@ -40,6 +43,9 @@ export function QuestionBank() {
 
   const setFilters = (f: Filters) => {
     setFiltersState(f);
+    // A topic that is gone closes for good (it doesn't pop open if it's ticked again); a new search starts from the default.
+    const gone = (id: string) => f.section !== filters?.section || f.bank !== filters?.bank || (f.skills.length ? !f.skills.includes(id) : !f.search.trim());
+    setOpenTopic((o) => ((o ? gone(o) : f.search !== filters?.search) ? undefined : o));
     // Keep filters in the URL (shareable, survives refresh) without a navigation.
     window.history.replaceState(null, "", `/practice?${filtersToQuery(f)}`);
   };
@@ -61,17 +67,21 @@ export function QuestionBank() {
     setRun(r);
     window.scrollTo({ top: 0 });
   };
-  const open = (list: BankItem[], index: number) => start({ ids: list.map((x) => x.id), items: byId, title: `${describe(filters!)} · ${list.length.toLocaleString("en-US")} questions`, start: index });
-  const practice = (list: BankItem[], size: number) => {
-    const picked = shuffle(list).slice(0, size || list.length);
-    start({ ids: picked.map((x) => x.id), items: byId, title: `Practice set · ${describe(filters!)}`, start: 0 });
+  const open = (list: BankItem[], index: number) => {
+    // A run over one topic (e.g. from a topic's squares) is named after it.
+    const one = list.length && list.every((x) => x.skill === list[0].skill) ? skillName(list[0]) : null;
+    const title = one ? `${filters!.bank === "cb" ? "College Board · " : ""}${one}` : describe(filters!);
+    start({ ids: list.map((x) => x.id), items: byId, title: `${title} · ${list.length.toLocaleString("en-US")} ${list.length === 1 ? "question" : "questions"}`, start: index });
+  };
+  // No set size: questions keep coming until the student finishes (or the filtered pool runs out).
+  const practice = (list: BankItem[]) => {
+    start({ ids: shuffle(list).map((x) => x.id), items: byId, title: `Practice · ${describe(filters!)}`, start: 0, endless: true });
   };
 
-  // ?practice=10 (e.g. Home's "Next up" link): start a set from the URL's filters right away, once.
+  // ?practice=1 (e.g. Home's "Next up" link; any non-zero number works, so old ?practice=10 links too): start practicing with the URL's filters right away, once.
   const autoStarted = useRef(false);
   useEffect(() => {
-    const size = Number(params.get("practice"));
-    if (autoStarted.current || !kept || !filters || !size) return;
+    if (autoStarted.current || !kept || !filters || !Number(params.get("practice"))) return;
     autoStarted.current = true;
     window.history.replaceState(null, "", `/practice?${filtersToQuery(filters)}`);
     if (getBank(filters.bank).plus && !kept.canBank) return;
@@ -79,11 +89,11 @@ export function QuestionBank() {
     // Nothing new left with these filters: fall back to the same topics, any status.
     if (!list.length && filters.status !== "all") list = applyFilters(kept.items, { ...filters, status: "all" }, { results, bookmarks });
     // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time start from a link
-    if (list.length) practice(list, size);
+    if (list.length) practice(list);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [kept, filters]);
 
-  // Questions answered today (for the daily goal in the list header).
+  // Questions answered today (for the daily goal in the header).
   const now = useNow();
   const today = useMemo(() => {
     const k = localDay(now);
@@ -118,17 +128,15 @@ export function QuestionBank() {
       <section className={PAGE} aria-label="Loading question bank">
         <div className="h-10 w-64 animate-pulse rounded-lg bg-surface-2" />
         <div className="mt-3 h-5 w-96 max-w-full animate-pulse rounded-lg bg-surface-2" />
-        <div className="mt-10 h-8 w-80 max-w-full animate-pulse rounded-lg bg-surface-2" />
-        <div className="mt-6 grid gap-8 lg:grid-cols-[300px_1fr]">
-          <div className="hidden h-[32rem] animate-pulse rounded-2xl bg-surface-2 lg:block" />
-          <div className="space-y-3">
-            <div className="h-11 animate-pulse rounded-xl bg-surface-2" />
-            <div className="h-20 animate-pulse rounded-2xl bg-surface-2" />
-            {Array.from({ length: 5 }, (_, i) => (
-              <div key={i} className="h-24 animate-pulse rounded-2xl bg-surface-2" />
-            ))}
-          </div>
+        <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-3">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className={`h-36 animate-pulse rounded-2xl bg-surface-2 ${i === 2 ? "col-span-2 lg:col-span-1" : ""}`} />
+          ))}
         </div>
+        <div className="mt-8 h-8 w-80 max-w-full animate-pulse rounded-lg bg-surface-2" />
+        <div className="mt-6 h-11 animate-pulse rounded-xl bg-surface-2" />
+        <div className="mt-4 h-11 w-[36rem] max-w-full animate-pulse rounded-xl bg-surface-2" />
+        <div className="mt-4 h-20 animate-pulse rounded-2xl bg-surface-2" />
       </section>
     );
 
@@ -154,6 +162,8 @@ export function QuestionBank() {
         results={results}
         bookmarks={bookmarks}
         today={today}
+        openTopic={openTopic}
+        setOpenTopic={setOpenTopic}
         onOpen={open}
         onPractice={practice}
       />

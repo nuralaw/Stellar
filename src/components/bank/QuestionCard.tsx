@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { RichText } from "@/components/RichText";
 import { isCorrect } from "@/lib/answers";
 import type { ChoiceLetter, Difficulty, Question } from "@/lib/types";
@@ -154,10 +155,11 @@ export function ChoiceRow({
 
 const btnPrimary =
   "inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-ink transition-colors outline-none hover:bg-primary-hover focus-visible:ring-3 focus-visible:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-40";
-const btnGhost = "inline-flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-3 text-sm font-semibold text-muted transition-colors hover:bg-surface-2 hover:text-ink disabled:opacity-40 disabled:hover:bg-transparent";
+export const btnGhost = "inline-flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-3 text-sm font-semibold text-muted transition-colors hover:bg-surface-2 hover:text-ink disabled:opacity-40 disabled:hover:bg-transparent";
 
 /**
- * One question: stimulus, answer input, Check, feedback + explanation, and the bottom action bar.
+ * One question: stimulus, answer input, Check and feedback + explanation. Its right-hand buttons (Skip / Check / Next)
+ * are rendered into `actionsSlot`, a bar the parent keeps mounted across questions.
  * Mount with key={q.id} so state resets per question; pass `saved` to show an answer given earlier in the session.
  */
 export function QuestionCard({
@@ -165,22 +167,20 @@ export function QuestionCard({
   saved,
   onAnswered,
   onNext,
-  onPrev,
   nextLabel,
   timeSpent,
-  leftActions,
+  actionsSlot,
 }: {
   q: Question;
   saved?: { response: string };
   /** Called once when the student checks an answer. */
   onAnswered: (correct: boolean, response: string) => void;
   onNext?: () => void;
-  onPrev?: () => void;
   nextLabel: string;
   /** Seconds spent, shown in the feedback once answered. */
   timeSpent?: number;
-  /** Extra buttons in the bottom-left of the action bar (e.g. Shuffle). */
-  leftActions?: React.ReactNode;
+  /** Where the Skip / Check answer / Next buttons go (the parent's action bar). */
+  actionsSlot: HTMLElement | null;
 }) {
   const [response, setResponse] = useState(saved?.response ?? "");
   const [checked, setChecked] = useState(Boolean(saved));
@@ -221,7 +221,7 @@ export function QuestionCard({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
-      if ((e.target as Element | null)?.closest?.("[data-calculator]")) return; // keys typed into Desmos
+      if ((e.target as Element | null)?.closest?.("[data-calculator], [data-reference]")) return; // keys typed into Desmos
       const typing = e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement;
       if (e.key === "Enter") {
         if (e.target instanceof HTMLButtonElement || (typing && !(e.target as HTMLElement).dataset.answer)) return;
@@ -348,37 +348,30 @@ export function QuestionCard({
     </div>
   );
 
-  const actions = (
-    <div className="qc-actions sticky bottom-0 z-10 -mx-4 mt-6 border-t border-line bg-bg/90 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
-      <div className="flex items-center gap-2 pb-[env(safe-area-inset-bottom)]">
-        {leftActions}
-        <button type="button" onClick={onPrev} disabled={!onPrev} className={btnGhost} aria-label="Previous question">
-          <Icon d={I.chevronL} className="h-4 w-4" />
-          <span className="hidden sm:inline">Back</span>
-        </button>
-        <div className="flex-1" />
-        {!checked ? (
-          <>
-            {onNext && (
-              <button type="button" onClick={onNext} className={btnGhost}>
-                Skip
-              </button>
-            )}
-            <button type="button" onClick={check} disabled={!response.trim()} className={`${btnPrimary} min-w-36`}>
-              Check answer
+  const actions =
+    actionsSlot &&
+    createPortal(
+      !checked ? (
+        <>
+          {onNext && (
+            <button type="button" onClick={onNext} className={btnGhost}>
+              Skip
             </button>
-          </>
-        ) : (
-          onNext && (
-            <button type="button" onClick={onNext} autoFocus className={`${btnPrimary} min-w-36`}>
-              {nextLabel}
-              <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
-            </button>
-          )
-        )}
-      </div>
-    </div>
-  );
+          )}
+          <button type="button" onClick={check} disabled={!response.trim()} className={`${btnPrimary} min-w-36`}>
+            Check answer
+          </button>
+        </>
+      ) : (
+        onNext && (
+          <button type="button" onClick={onNext} autoFocus className={`${btnPrimary} min-w-36`}>
+            {nextLabel}
+            <Icon d={I.chevronR} className="h-4 w-4" strokeWidth={2.2} />
+          </button>
+        )
+      ),
+      actionsSlot,
+    );
 
   if (twoColumn)
     return (

@@ -183,7 +183,9 @@ type Facet = "skills" | "difficulties" | "status";
 /** Applies all filters except `skip` (used for facet counts). */
 export function applyFilters(items: BankItem[], f: Filters, ctx: FilterContext, skip?: Facet): BankItem[] {
   const q = f.search.trim().toLowerCase();
-  const num = /^\d+$/.test(q) ? Number(q) : null;
+  // "123" or "#123" is a question number if there is such a question here; otherwise it is looked up in the text.
+  const num = /^#?\d+$/.test(q) ? Number(q.replace("#", "")) : null;
+  const byNumber = num !== null && items.some((it) => it.n === num && it.section === f.section && inBank(f.bank, it.source));
   return items.filter(
     (it) =>
       it.section === f.section &&
@@ -191,7 +193,7 @@ export function applyFilters(items: BankItem[], f: Filters, ctx: FilterContext, 
       (skip === "skills" || !f.skills.length || f.skills.includes(it.skill)) &&
       (skip === "difficulties" || !f.difficulties.length || f.difficulties.includes(it.difficulty)) &&
       (skip === "status" || statusOf(it.id, ctx.results, ctx.bookmarks, f.status)) &&
-      (!q || it.n === num || it.preview.toLowerCase().includes(q)),
+      (!q || (byNumber ? it.n === num : it.preview.toLowerCase().includes(q))),
   );
 }
 

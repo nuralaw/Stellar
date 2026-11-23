@@ -86,7 +86,7 @@ function WeakSkills({ stats }: { stats: Stats }) {
           {weak.map((s) => (
             <li key={s.skill.id}>
               <Link
-                href={`/practice?section=${s.section}&skills=${s.skill.id}&status=new&practice=10`}
+                href={`/practice?section=${s.section}&skills=${s.skill.id}&status=new&practice=1`}
                 className="group flex items-center gap-3 py-2.5"
                 title={`Practice ${s.skill.name}`}
               >

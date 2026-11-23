@@ -43,7 +43,6 @@ const CHECKLIST_KEY = "stellar:checklist-dismissed";
 const PLAN_KEY = "stellar:plan-skipped";
 
 type Stats = ReturnType<typeof computeStats>;
-const SET_SIZE = 10;
 
 /** The one set we'd suggest right now: due mistakes (Plus only) -> weakest skill -> weakest domain -> new questions in the chosen section. */
 function nextUp(stats: Stats, focus: SectionId | null, due: MistakeCard[], canReview: boolean) {
@@ -54,38 +53,38 @@ function nextUp(stats: Stats, focus: SectionId | null, due: MistakeCard[], canRe
       title: `Review ${due.length} ${due.length === 1 ? "mistake" : "mistakes"}`,
       why: "Due today — reviewing on time is what makes them stick",
       section: (math === due.length ? "math" : math ? "mixed" : "rw") as SectionId | "mixed",
-      count: due.length,
+      count: due.length as number | null,
       cta: `Review ${due.length}`,
     };
   }
   const f = stats.focus[0];
   if (f)
     return {
-      href: `/practice?section=${f.domain.section}&skills=${f.skill.id}&status=new&practice=${SET_SIZE}`,
+      href: `/practice?section=${f.domain.section}&skills=${f.skill.id}&status=new&practice=1`,
       title: f.skill.name,
       why: `${f.accuracy}% correct so far — your weakest topic`,
       section: f.domain.section as SectionId | "mixed",
-      count: SET_SIZE,
-      cta: `Practice ${SET_SIZE} questions`,
+      count: null,
+      cta: "Start practicing",
     };
   const d = stats.weakest;
   if (d && (d.accuracy ?? 100) < 75)
     return {
-      href: `/practice?section=${d.domain.section}&domain=${d.domain.id}&status=new&practice=${SET_SIZE}`,
+      href: `/practice?section=${d.domain.section}&domain=${d.domain.id}&status=new&practice=1`,
       title: d.domain.name,
       why: `${d.accuracy}% correct so far — your weakest area`,
       section: d.domain.section as SectionId | "mixed",
-      count: SET_SIZE,
-      cta: `Practice ${SET_SIZE} questions`,
+      count: null,
+      cta: "Start practicing",
     };
   const sec: SectionId = focus ?? (stats.bySection.rw.answered > stats.bySection.math.answered ? "math" : "rw");
   return {
-    href: `/practice?section=${sec}&status=new&practice=${SET_SIZE}`,
+    href: `/practice?section=${sec}&status=new&practice=1`,
     title: `New ${SECTIONS[sec].name} questions`,
     why: stats.overall.answered ? "Fresh questions you haven't seen yet" : "A mixed first set to find your strong and weak spots",
     section: sec as SectionId | "mixed",
-    count: SET_SIZE,
-    cta: `Practice ${SET_SIZE} questions`,
+    count: null,
+    cta: "Start practicing",
   };
 }
 
@@ -142,7 +141,7 @@ function TodayCard({ stats, next, now }: { stats: Stats; next: ReturnType<typeof
           <Link href={next.href} className="rounded-xl bg-primary px-5 py-2.5 font-semibold text-primary-ink transition-colors hover:bg-primary-hover">
             {next.cta}
           </Link>
-          <span className="text-[13px] text-muted">about {estMinutes(next.count, next.section)} min</span>
+          <span className="text-[13px] text-muted">{next.count !== null ? `about ${estMinutes(next.count, next.section)} min` : "Finish whenever you want"}</span>
         </div>
       </div>
     </div>

@@ -1,47 +1,22 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { toggleBookmark } from "@/lib/store";
-import { SECTIONS, getDomain, type SectionId } from "@/lib/taxonomy";
-import { BANKS, SOURCES, inBank, type BankId } from "@/lib/sources";
-import type { Difficulty } from "@/lib/types";
+import { DOMAINS, SECTIONS, type SectionId } from "@/lib/taxonomy";
+import { BANKS, inBank, type BankId } from "@/lib/sources";
 import { PlusBadge, PlusLock } from "@/components/PlusLock";
 import { SignInHint } from "@/components/plus/SignInHint";
 import { LINK_ON_DARK } from "@/components/plus/styles";
-import { RichText } from "@/components/RichText";
-import { DifficultyBadge } from "./QuestionCard";
 import { DIFF_STYLE, TopicsPanel } from "./FilterPanel";
-import { DIFFS, SORTS, STATUSES, applyFilters, emptyFilters, skillName, sortItems, statusOf, type BankItem, type Filters, type Sort, type Status } from "./data";
+import { QuestionGrid } from "./QuestionGrid";
+import { DIFFS, SORTS, STATUSES, applyFilters, emptyFilters, filtersToQuery, sortItems, statusOf, type BankItem, type Filters, type Sort, type Status } from "./data";
 import { I, Icon } from "./icons";
-import { DAILY_GOAL, PAGE, estMinutes } from "@/lib/ui";
-
-const PAGE_SIZE = 20;
-/** Questions in a "Practice" set. */
-const SET_SIZE = 10;
+import { DAILY_GOAL, PAGE } from "@/lib/ui";
 
 function fmt(n: number) {
   return n.toLocaleString("en-US");
 }
 
-function StatusIcon({ result }: { result: boolean | undefined }) {
-  if (result === undefined)
-    return (
-      <span className="grid h-6 w-6 place-items-center" title="Unsolved">
-        <span className="h-3.5 w-3.5 rounded-full border-2 border-muted/60" />
-      </span>
-    );
-  return result ? (
-    <span className="grid h-6 w-6 place-items-center rounded-full bg-success-soft text-success" title="Answered correctly">
-      <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={2.6} />
-    </span>
-  ) : (
-    <span className="grid h-6 w-6 place-items-center rounded-full bg-danger-soft text-danger" title="Answered incorrectly">
-      <Icon d={I.x} className="h-3.5 w-3.5" strokeWidth={2.6} />
-    </span>
-  );
-}
-
-/** Little icon in each status tab, matching the marks in the list rows. */
+/** Little icon in each status tab, matching the squares' colours. */
 function StatusMark({ id, on }: { id: Status; on: boolean }) {
   const tone = (c: string) => (on ? "bg-white/35 text-primary-ink" : c);
   switch (id) {
@@ -78,19 +53,6 @@ function Chip({ children, onRemove, label }: { children: React.ReactNode; onRemo
   );
 }
 
-/** Page numbers with ellipses: 1 … 4 5 6 … 20 */
-function pageList(current: number, pages: number): (number | "…")[] {
-  if (pages <= 7) return Array.from({ length: pages }, (_, i) => i);
-  const set = new Set([0, pages - 1, current - 1, current, current + 1].filter((p) => p >= 0 && p < pages));
-  const sorted = [...set].sort((a, b) => a - b);
-  const out: (number | "…")[] = [];
-  sorted.forEach((p, i) => {
-    if (i && p - sorted[i - 1] > 1) out.push("…");
-    out.push(p);
-  });
-  return out;
-}
-
 export function ListView({
   items,
   canBank,
@@ -99,6 +61,8 @@ export function ListView({
   results,
   bookmarks,
   today,
+  openTopic,
+  setOpenTopic,
   onOpen,
   onPractice,
 }: {
@@ -111,13 +75,16 @@ export function ListView({
   bookmarks: Set<string>;
   /** Questions answered today (all sections). */
   today: number;
+  /** The topic whose squares are shown (see QuestionBank). */
+  openTopic: string | null | undefined;
+  setOpenTopic: (id: string | null) => void;
   onOpen: (list: BankItem[], index: number) => void;
-  onPractice: (list: BankItem[], size: number) => void;
+  onPractice: (list: BankItem[]) => void;
 }) {
-  const [page, setPage] = useState(0);
   const [sheet, setSheet] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
-  const listTop = useRef<HTMLDivElement>(null);
+  const topicsBtn = useRef<HTMLButtonElement>(null);
+  const squares = useRef<HTMLDivElement>(null);
   const ctx = { results, bookmarks };
 
   /* eslint-disable react-hooks/exhaustive-deps -- ctx is rebuilt from results/bookmarks */
@@ -133,6 +100,27 @@ export function ListView({
     return Object.fromEntries(STATUSES.map((s) => [s.id, base.filter((it) => statusOf(it.id, results, bookmarks, s.id)).length])) as Record<Status, number>;
   }, [items, filters, results, bookmarks]);
   /* eslint-enable react-hooks/exhaustive-deps */
+
+  // An island per topic: the ticked ones (even without matches, so they can be removed), or with a search and nothing ticked every topic with matches. Taxonomy order.
+  const byId = useMemo(() => new Map(items.map((it) => [it.id, it])), [items]);
+  const topics = useMemo(() => {
+    const ticked = filters.skills.length > 0;
+    if (!ticked && !filters.search.trim()) return [];
+    const bySkill = new Map<string, BankItem[]>();
+    for (const it of filtered) {
+      const list = bySkill.get(it.skill);
+      if (list) list.push(it);
+      else bySkill.set(it.skill, [it]);
+    }
+    return DOMAINS.filter((d) => d.section === filters.section)
+      .flatMap((d) => d.skills)
+      .filter((k) => (ticked ? filters.skills.includes(k.id) : bySkill.has(k.id)))
+      .map((k) => ({ id: k.id, name: k.name, ticked, list: bySkill.get(k.id) ?? [] }));
+  }, [filtered, filters.skills, filters.search, filters.section]);
+  // Nothing opened (or the search has moved on from it): a search that matches a single topic opens that one.
+  const shown = topics.find((t) => t.id === openTopic) ?? (openTopic !== null && topics.length === 1 && filters.search.trim() ? topics[0] : undefined);
+  const active = shown?.list.length ? shown : undefined;
+  const activeIds = useMemo(() => active?.list.map((it) => it.id) ?? [], [active]);
 
   const bankItems = useMemo(() => items.filter((it) => inBank(filters.bank, it.source)), [items, filters.bank]);
   const bankTotals = useMemo(
@@ -161,25 +149,12 @@ export function ListView({
   }, [bankItems, results]);
   const sec = progress.bySection[filters.section];
 
-  const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-  const current = Math.min(page, pages - 1);
-  const rows = filtered.slice(current * PAGE_SIZE, (current + 1) * PAGE_SIZE);
-
-  const update = (f: Filters) => {
-    setFilters(f);
-    setPage(0);
-  };
-  const set = (patch: Partial<Filters>) => update({ ...filters, ...patch });
-  const goPage = (p: number) => {
-    setPage(p);
-    const top = listTop.current?.getBoundingClientRect().top ?? 0;
-    if (top < 0) listTop.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
 
   const locked = BANKS.find((b) => b.id === filters.bank)?.plus === true && !canBank;
 
   const activeCount = filters.skills.length + filters.difficulties.length + (filters.status !== "all" ? 1 : 0) + (filters.search.trim() ? 1 : 0);
-  const resetAll = () => update({ ...emptyFilters(filters.bank, filters.section), sort: filters.sort });
+  const resetAll = () => setFilters({ ...emptyFilters(filters.bank, filters.section), sort: filters.sort });
 
   // "/" focuses search; Esc closes the mobile filter sheet.
   useEffect(() => {
@@ -209,23 +184,13 @@ export function ListView({
 
   const pct = (a: number, b: number) => (b ? Math.round((a / b) * 100) : 0);
   const doneHere = filtered.filter((it) => results.has(it.id)).length;
-  const setCount = Math.min(SET_SIZE, filtered.length);
-
-  // Chips for every active filter.
-  const chips: { key: string; label: string; node: React.ReactNode; remove: () => void }[] = [];
-  if (filters.search.trim()) chips.push({ key: "q", label: `“${filters.search.trim()}”`, node: <>“{filters.search.trim()}”</>, remove: () => set({ search: "" }) });
-  for (const s of filters.skills) {
-    const dom = getDomain(items.find((x) => x.skill === s)?.domain ?? "");
-    const name = dom?.skills.find((k) => k.id === s)?.name ?? s;
-    chips.push({ key: s, label: name, node: name, remove: () => set({ skills: filters.skills.filter((x) => x !== s) }) });
-  }
 
   return (
     <section className={PAGE}>
       {/* Header */}
       <div className="lg:pr-14">
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Question Bank</h1>
-        <p className="mt-2 text-muted">Choose a bank, filter by topic and difficulty, then open any question or start a practice set.</p>
+        <p className="mt-2 text-muted">Choose a bank and topics, then pick a question or start practicing.</p>
       </div>
 
       {/* Bank switcher + progress */}
@@ -239,7 +204,7 @@ export function ListView({
               aria-pressed={on}
               onClick={() => {
                 setSheet(false);
-                update({ ...emptyFilters(b.id, filters.section), difficulties: filters.difficulties, status: filters.status, sort: filters.sort });
+                setFilters({ ...emptyFilters(b.id, filters.section), difficulties: filters.difficulties, status: filters.status, sort: filters.sort });
               }}
               className={`group relative flex flex-col items-stretch justify-start rounded-2xl border p-4 text-left transition-colors sm:p-5 ${
                 on ? "border-primary bg-primary-soft/50 ring-1 ring-primary" : "border-line bg-surface hover:border-muted"
@@ -286,7 +251,7 @@ export function ListView({
           title={`Practice all ${fmt(bankTotals.all)} past-paper questions with Plus`}
           points={[
             "Questions from past Digital SAT papers, sorted by topic and difficulty",
-            "Filter by skill, then open any question or start a practice set",
+            "Filter by skill, then pick any question or start practicing",
             "Wrong answers go straight to your Mistakes list",
           ]}
           fact={`${fmt(bankTotals.cb)} College Board questions stay free`}
@@ -294,7 +259,7 @@ export function ListView({
             <>
               {/* A Link to this same URL wouldn't reset the state, so the free step is a button. */}
               <p className="mt-3 text-sm">
-                <button type="button" onClick={() => update({ ...emptyFilters("cb", filters.section), sort: filters.sort })} className={LINK_ON_DARK}>
+                <button type="button" onClick={() => setFilters({ ...emptyFilters("cb", filters.section), sort: filters.sort })} className={LINK_ON_DARK}>
                   Or keep going free: College Board questions →
                 </button>
               </p>
@@ -314,7 +279,7 @@ export function ListView({
               type="button"
               role="tab"
               aria-selected={on}
-              onClick={() => update({ ...emptyFilters(filters.bank, s), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
+              onClick={() => setFilters({ ...emptyFilters(filters.bank, s), difficulties: filters.difficulties, status: filters.status, sort: filters.sort })}
               className={`relative -mb-px flex items-center gap-2 border-b-2 pb-3 text-[15px] font-semibold transition-colors ${
                 on ? "border-primary text-ink" : "border-transparent text-muted hover:text-ink"
               }`}
@@ -328,7 +293,7 @@ export function ListView({
         })}
       </div>
 
-      <div className="mt-6 min-w-0" ref={listTop}>
+      <div className="mt-6 min-w-0">
         {/* Search + sort */}
         <div className="flex gap-2">
           <div className="relative min-w-0 flex-1">
@@ -374,7 +339,7 @@ export function ListView({
           </div>
         </div>
 
-        {/* Status: tabs right above the list, so Unsolved / Solved is impossible to miss */}
+        {/* Status: tabs, so Unsolved / Solved is impossible to miss */}
         <div className="-mx-4 mt-4 overflow-x-auto px-4 [scrollbar-width:none] md:mx-0 md:px-0">
           <div className="inline-flex gap-1 rounded-2xl border border-line bg-surface p-1" role="tablist" aria-label="Status">
             {STATUSES.map((s) => {
@@ -403,6 +368,7 @@ export function ListView({
         <div className="mt-3 flex flex-wrap items-center gap-1.5 sm:gap-2">
           <div className="relative">
             <button
+              ref={topicsBtn}
               type="button"
               onClick={() => setSheet((o) => !o)}
               aria-expanded={sheet}
@@ -447,7 +413,7 @@ export function ListView({
                 <TopicsPanel
                   key={filters.section}
                   filters={filters}
-                  setFilters={update}
+                  setFilters={setFilters}
                   forSkills={forSkills}
                   doneBySkill={progress.doneBySkill}
                   totalBySkill={progress.totalBySkill}
@@ -481,14 +447,12 @@ export function ListView({
             );
           })}
 
-          {chips.length > 0 && (
+          {filters.search.trim() && (
             <>
               <span className="mx-1 hidden h-5 w-px bg-line sm:block" aria-hidden="true" />
-              {chips.map((c) => (
-                <Chip key={c.key} label={c.label} onRemove={c.remove}>
-                  {c.node}
-                </Chip>
-              ))}
+              <Chip label={`“${filters.search.trim()}”`} onRemove={() => set({ search: "" })}>
+                “{filters.search.trim()}”
+              </Chip>
             </>
           )}
           {activeCount > 0 && (
@@ -506,12 +470,12 @@ export function ListView({
             </p>
             <p className="mt-0.5 text-xs text-muted">
               {doneHere ? `${fmt(doneHere)} attempted · ${fmt(filtered.length - doneHere)} new` : "None attempted yet"}
-              {setCount > 0 && <> · a set of {fmt(setCount)} takes about {fmt(estMinutes(setCount, filters.section))} min</>}
+              {filtered.length > 0 && <> · no limit, finish whenever you want</>}
             </p>
           </div>
           <button
             type="button"
-            onClick={() => onPractice(filtered, SET_SIZE)}
+            onClick={() => onPractice(filtered)}
             disabled={!filtered.length}
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-2.5 text-sm font-semibold whitespace-nowrap text-primary-ink transition-colors hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
           >
@@ -520,8 +484,92 @@ export function ListView({
           </button>
         </div>
 
-        {/* List */}
-        {rows.length === 0 ? (
+        {/* One island per topic; the open one shows its squares below */}
+        {topics.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {topics.map((t) => {
+              const on = active?.id === t.id;
+              const done = t.list.filter((it) => results.has(it.id)).length;
+              return (
+                <div
+                  key={t.id}
+                  className={`inline-flex max-w-full items-center rounded-full border shadow-sm transition-[opacity,scale,background-color,border-color] duration-200 starting:scale-95 starting:opacity-0 ${
+                    on ? "border-primary bg-primary-soft text-primary-strong" : "border-line bg-surface"
+                  } ${t.list.length ? "" : "text-muted"}`}
+                >
+                  <button
+                    type="button"
+                    disabled={!t.list.length}
+                    aria-expanded={on}
+                    aria-controls={on ? "topic-squares" : undefined}
+                    onClick={() => {
+                      setOpenTopic(on ? null : t.id);
+                      // Bring the squares fully into view (once they are laid out).
+                      if (!on) setTimeout(() => squares.current?.scrollIntoView({ block: "nearest", behavior: "smooth" }), 60);
+                    }}
+                    className={`inline-flex h-9 min-w-0 items-center gap-2 rounded-full pl-3.5 ${t.ticked ? "pr-2" : "pr-3.5"} ${t.list.length ? "" : "cursor-default"}`}
+                  >
+                    <span className="min-w-0 truncate text-sm font-semibold">{t.name}</span>
+                    <span className="shrink-0 text-xs text-muted tabular-nums">
+                      {done}/{t.list.length}
+                    </span>
+                    <Icon d={I.chevronD} className={`h-3.5 w-3.5 shrink-0 text-muted transition-transform ${on ? "rotate-180" : ""}`} />
+                  </button>
+                  {t.ticked && (
+                    <button
+                      type="button"
+                      onClick={() => set({ skills: filters.skills.filter((x) => x !== t.id) })}
+                      aria-label={`Remove topic: ${t.name}`}
+                      className="mr-1.5 grid h-6 w-6 shrink-0 place-items-center rounded-full text-muted hover:bg-surface-2 hover:text-ink"
+                    >
+                      <Icon d={I.x} className="h-3 w-3" strokeWidth={2.4} />
+                    </button>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {active && (
+          <div
+            key={active.id}
+            id="topic-squares"
+            ref={squares}
+            className="mt-3 scroll-mb-4 rounded-2xl border border-line bg-surface transition-[opacity,translate] duration-200 starting:-translate-y-2 starting:opacity-0"
+          >
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1.5 px-4 pt-3 pb-1">
+              <p className="min-w-0 truncate font-semibold">{active.name}</p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-muted">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-sm bg-success" /> Correct
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-sm bg-danger" /> Incorrect
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-sm border border-line" /> Unanswered
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-accent" /> Bookmarked
+                </span>
+              </div>
+            </div>
+            <QuestionGrid
+              ids={activeIds}
+              items={byId}
+              tone={(id) => results.get(id)}
+              bookmarks={bookmarks}
+              align="start"
+              onPick={(i) => onOpen(active.list, i)}
+              maxHeight="18rem"
+              label={`${active.name} questions`}
+              resetKey={`${active.id}|${filtersToQuery(filters)}`}
+            />
+          </div>
+        )}
+
+        {filtered.length === 0 ? (
           <div className="mt-4 rounded-2xl border border-dashed border-line px-6 py-14 text-center">
             <span className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-surface-2 text-muted">
               <Icon d={I.inbox} className="h-6 w-6" />
@@ -533,102 +581,25 @@ export function ListView({
             </button>
           </div>
         ) : (
-          <ul className="mt-4 divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
-            {rows.map((it, i) => {
-              const marked = bookmarks.has(it.id);
-              const r = results.get(it.id);
-              return (
-                <li key={it.id} className="group relative flex items-start gap-3 px-4 py-4 transition-colors hover:bg-surface-2/50 sm:gap-4 sm:px-5">
-                  <div className="mt-0.5 shrink-0">
-                    <StatusIcon result={r} />
-                  </div>
-                  <button type="button" onClick={() => onOpen(filtered, current * PAGE_SIZE + i)} className="min-w-0 flex-1 text-left outline-none after:absolute after:inset-0 after:rounded-none focus-visible:after:ring-2 focus-visible:after:ring-primary focus-visible:after:ring-inset">
-                    <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
-                      <span className="font-mono font-medium text-ink/70">#{it.n}</span>
-                      <span aria-hidden="true" className="text-line">
-                        |
-                      </span>
-                      <span className="font-medium">{skillName(it)}</span>
-                      <span className="inline-flex items-center gap-1 capitalize sm:hidden">
-                        <span className={`h-1.5 w-1.5 rounded-full ${DIFF_STYLE[it.difficulty as Difficulty].dot}`} aria-hidden="true" />
-                        {it.difficulty}
-                      </span>
-                      {filters.bank === "all" && it.source === "cb" && (
-                        <span className="inline-flex items-center gap-1 text-muted" title={`Source: ${SOURCES[it.source].name}`}>
-                          <Icon d={I.badge} className="h-3.5 w-3.5" />
-                          CB
-                        </span>
-                      )}
-                    </span>
-                    <span className={`mt-1 line-clamp-2 text-[15px] leading-relaxed ${r !== undefined ? "text-ink/75" : ""}`}>
-                      {it.preview ? (
-                        <RichText text={it.preview} math={it.section === "math"} />
-                      ) : (
-                        <span className="inline-flex items-center gap-1.5 text-muted italic">
-                          <Icon d={I.image} className="h-4 w-4" /> Question with a figure
-                        </span>
-                      )}
-                    </span>
-                  </button>
-                  <div className="relative z-10 flex shrink-0 items-center gap-1 self-center">
-                    <span className="hidden sm:block">
-                      <DifficultyBadge d={it.difficulty as Difficulty} />
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => toggleBookmark(it.id)}
-                      aria-pressed={marked}
-                      aria-label={marked ? `Remove bookmark from #${it.n}` : `Bookmark #${it.n}`}
-                      title={marked ? "Remove bookmark" : "Bookmark"}
-                      className={`grid h-9 w-9 place-items-center rounded-lg transition-colors hover:bg-surface-2 ${marked ? "text-accent" : "text-muted/50 hover:text-muted"}`}
-                    >
-                      <Icon d={I.star} className="h-4.5 w-4.5" filled={marked} />
-                    </button>
-                    <Icon d={I.chevronR} className="hidden h-4 w-4 text-muted opacity-0 transition-opacity group-hover:opacity-100 sm:block" />
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-
-        {/* Pagination */}
-        {pages > 1 && (
-          <nav className="mt-5 flex flex-wrap items-center justify-between gap-3" aria-label="Pagination">
-            <p className="text-sm text-muted tabular-nums">
-              {fmt(current * PAGE_SIZE + 1)}–{fmt(Math.min((current + 1) * PAGE_SIZE, filtered.length))} of {fmt(filtered.length)}
-            </p>
-            <div className="flex items-center gap-1">
-              <button type="button" onClick={() => goPage(current - 1)} disabled={current === 0} aria-label="Previous page" className="grid h-9 w-9 place-items-center rounded-lg border border-line bg-surface hover:bg-surface-2 disabled:opacity-40">
-                <Icon d={I.chevronL} className="h-4 w-4" />
-              </button>
-              {pageList(current, pages).map((p, i) =>
-                p === "…" ? (
-                  <span key={`e${i}`} className="hidden w-6 text-center text-sm text-muted sm:block">
-                    …
-                  </span>
-                ) : (
-                  <button
-                    key={p}
-                    type="button"
-                    onClick={() => goPage(p)}
-                    aria-current={p === current ? "page" : undefined}
-                    className={`hidden h-9 min-w-9 rounded-lg px-2 text-sm font-semibold tabular-nums transition-colors sm:block ${
-                      p === current ? "bg-primary text-primary-ink" : "text-muted hover:bg-surface-2 hover:text-ink"
-                    }`}
-                  >
-                    {p + 1}
-                  </button>
-                ),
-              )}
-              <span className="px-2 text-sm text-muted tabular-nums sm:hidden">
-                {current + 1} / {pages}
-              </span>
-              <button type="button" onClick={() => goPage(current + 1)} disabled={current >= pages - 1} aria-label="Next page" className="grid h-9 w-9 place-items-center rounded-lg border border-line bg-surface hover:bg-surface-2 disabled:opacity-40">
-                <Icon d={I.chevronR} className="h-4 w-4" />
+          // No topic or search yet.
+          topics.length === 0 && (
+            <div className="mt-4 rounded-2xl border border-dashed border-line px-6 py-8 text-center">
+              <p className="font-semibold">Choose a topic to see its questions</p>
+              <p className="mt-1 text-sm text-muted">Or press Practice to start with everything here.</p>
+              <button
+                type="button"
+                onClick={() => {
+                  setSheet(true);
+                  // On desktop the dropdown hangs under the Topics button.
+                  topicsBtn.current?.scrollIntoView({ block: "nearest" });
+                  topicsBtn.current?.focus({ preventScroll: true }); // the dropdown comes right after it in Tab order
+                }}
+                className="mt-4 rounded-xl border border-line bg-surface px-4 py-2 text-sm font-semibold hover:bg-surface-2"
+              >
+                Choose topics
               </button>
             </div>
-          </nav>
+          )
         )}
       </div>
         </>
