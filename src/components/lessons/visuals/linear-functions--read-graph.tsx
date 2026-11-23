@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Read m and b from a graph or a table: b is the output at x = 0, m is the change in output per 1 step of x.
 export const alt =
@@ -49,9 +49,9 @@ export default function Visual() {
 
       {/* b: where the line meets the y-axis */}
       <circle className={`${a} ${fc(22)}`} cx={px(0)} cy={py(3)} r={5} fill={C.primary} />
-      <text className={`${a} ${fc(22)}`} x={px(0) + 8} y={py(3) + 16} fontSize={12} fontWeight={700} fill={C.primaryText}>
-        b = 3
-      </text>
+      <g className={`${a} ${fc(22)}`}>
+        <Tex x={px(0) + 8} y={py(3) + 14} size={14} anchor="start" width={50} color={C.primaryText}>{String.raw`b=3`}</Tex>
+      </g>
 
       {/* m: one step right, two up */}
       <path className={`${a} ${dc(34)}`} d={`M${px(1)} ${py(5)} H${px(2)} V${py(7)}`} pathLength={100} fill="none" stroke={C.primary} strokeWidth={2.5} />
@@ -64,9 +64,7 @@ export default function Visual() {
         <text x={152} y={42} fontSize={12} fill={C.muted}>
           x
         </text>
-        <text x={152} y={76} fontSize={12} fill={C.muted}>
-          f(x)
-        </text>
+        <Tex x={152} y={73} size={13} anchor="start" width={48} color={C.muted}>{String.raw`f(x)`}</Tex>
         {TABLE_X.map((x, i) => (
           <g key={x}>
             <text x={206 + 30 * i} y={42} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.ink}>
@@ -90,12 +88,8 @@ export default function Visual() {
         ))}
       </g>
       <g className={`${a} ${fc(72)}`}>
-        <text x={152} y={134} fontSize={12} fill={C.muted}>
-          f(x) = mx + b
-        </text>
-        <text x={152} y={156} fontSize={18} fontWeight={700} fill={C.good}>
-          f(x) = 2x + 3
-        </text>
+        <Tex x={152} y={130} size={14} anchor="start" width={120} color={C.muted}>{String.raw`f(x)=mx+b`}</Tex>
+        <Tex x={152} y={153} size={19} anchor="start" width={140} color={C.good}>{String.raw`f(x)=2x+3`}</Tex>
       </g>
     </Svg>
   );

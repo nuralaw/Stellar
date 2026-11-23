@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // √(x + 6) = x: squaring adds the lower branch −√(x + 6). The line y = x meets the top branch at (3, 3) only; (−2, −2) is a fake.
 export const alt =
@@ -62,24 +62,16 @@ export default function Visual() {
 
       {/* Verdicts */}
       <g className={`${a} ${fc(4)}`}>
-        <text x={200} y={44} fontSize={14} fontWeight={700} fill={C.ink}>
-          √(x + 6) = x
-        </text>
+        <Tex x={200} y={40} size={17} anchor="start" width={110}>{String.raw`\sqrt{x+6}=x`}</Tex>
       </g>
       <g className={`${a} ${fc(44)}`}>
-        <text x={200} y={78} fontSize={14} fontWeight={700} fill={C.good}>
-          x = 3 works
-        </text>
+        <Tex x={200} y={74} size={15} anchor="start" width={110} color={C.good}>{String.raw`x=3\ \text{works}`}</Tex>
       </g>
       <g className={`${a} ${fc(70)}`}>
-        <text x={200} y={108} fontSize={14} fontWeight={700} fill={C.bad}>
-          x = −2 fails
-        </text>
+        <Tex x={200} y={104} size={15} anchor="start" width={110} color={C.bad}>{String.raw`x=-2\ \text{fails}`}</Tex>
       </g>
       <g className={`${a} ${fc(80)}`}>
-        <text x={200} y={128} fontSize={11} fill={C.muted}>
-          √4 is 2, not −2
-        </text>
+        <Tex x={200} y={125} size={13} anchor="start" width={110} color={C.muted}>{String.raw`\sqrt{4}=2,\ \text{not}\ -2`}</Tex>
       </g>
     </Svg>
   );

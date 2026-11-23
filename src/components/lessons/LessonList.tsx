@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { PlusLock } from "@/components/PlusLock";
 import { PlusTag } from "@/components/plus/PlusMark";
@@ -10,7 +10,9 @@ import { Stage } from "@/components/lessons/visuals/Stage";
 import { useAccess } from "@/lib/access";
 import { computeStats } from "@/lib/stats";
 import { useAttempts, useHydrated, useLessonProgress, useNow, useProfile, type LessonProgress } from "@/lib/store";
-import { lessonGroups, type LessonTab } from "@/lib/lesson-order";
+import { domainLessons, lessonGroups, type LessonTab } from "@/lib/lesson-order";
+import { rememberTab, useRememberedTab } from "@/lib/lesson-tab";
+import { SECTIONS, domainsFor, type Domain } from "@/lib/taxonomy";
 
 export interface ListLesson {
   slug: string;
@@ -30,37 +32,28 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "rw", label: "Reading and Writing" },
   { id: "math", label: "Math" },
 ];
-const TAB_KEY = "stellar:lessons-tab";
 
-function readTab(): Tab | null {
-  try {
-    const t = localStorage.getItem(TAB_KEY);
-    return t === "strategy" || t === "rw" || t === "math" ? t : null;
-  } catch {
-    return null;
-  }
-}
-
-const isDone = (p?: LessonProgress) => Boolean(p?.done);
+export const isDone = (p?: LessonProgress) => Boolean(p?.done);
 /** Started and not finished, in the lesson's current version (the player restarts a lesson whose screens changed). */
 const inProgress = (p: LessonProgress | undefined, l: ListLesson) => Boolean(p && !p.done && p.max > 0 && p.steps === l.stepCount && p.sig === l.sig);
 
 function StepBar({ p, total }: { p: LessonProgress; total: number }) {
-  const at = Math.min(p.step, total);
+  // Screens are 1-based (0 is the overview, total + 1 the complete screen).
+  const at = Math.max(1, Math.min(p.step, total));
   return (
     <div className="flex items-center gap-2.5">
       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-line">
         <div className="h-full rounded-full bg-primary" style={{ width: `${Math.max(6, (at / total) * 100)}%` }} />
       </div>
       <span className="shrink-0 text-xs font-medium text-muted tabular-nums">
-        Step {Math.min(at + 1, total)} of {total}
+        Step {at} of {total}
       </span>
     </div>
   );
 }
 
 /** The topic's animation in a small island at the top of a card. */
-function Island({ visual, className = "" }: { visual: ReactNode; className?: string }) {
+export function Island({ visual, className = "" }: { visual: ReactNode; className?: string }) {
   return (
     <div className={`overflow-hidden rounded-xl bg-surface ring-1 ring-line transition-shadow duration-300 ${className}`}>
       <Stage className="aspect-[16/9] w-full">{visual}</Stage>
@@ -68,7 +61,7 @@ function Island({ visual, className = "" }: { visual: ReactNode; className?: str
   );
 }
 
-function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProgress; visual: ReactNode; i: number; locked: boolean }) {
+export function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProgress; visual: ReactNode; i: number; locked: boolean }) {
   const done = isDone(p);
   return (
     <Link
@@ -90,7 +83,7 @@ function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProg
           <StepBar p={p!} total={l.stepCount} />
         ) : (
           <span className="text-xs text-muted tabular-nums">
-            {l.partCount} parts · {l.minutes} min
+            {l.partCount} {l.partCount === 1 ? "subtopic" : "subtopics"} · {l.minutes} min
             {locked && (
               <>
                 {" · "}
@@ -98,6 +91,55 @@ function LessonCard({ l, p, visual, i, locked }: { l: ListLesson; p?: LessonProg
               </>
             )}
           </span>
+        )}
+      </div>
+    </Link>
+  );
+}
+
+/** A domain of a section: its name and weight, how many lessons and minutes, and how many are done. Opens the domain's lesson list. */
+function DomainCard({ d, lessons, progress, visual, i, locked }: { d: Domain; lessons: ListLesson[]; progress?: Record<string, LessonProgress>; visual: ReactNode; i: number; locked: boolean }) {
+  const total = lessons.length;
+  const done = progress ? lessons.filter((l) => isDone(progress[l.slug])).length : 0;
+  const all = total > 0 && done === total;
+  const minutes = lessons.reduce((sum, l) => sum + l.minutes, 0);
+  return (
+    <Link
+      href={`/lessons/${d.id}`}
+      style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }}
+      className="lesson-in group flex flex-col rounded-2xl bg-surface p-2 ring-1 ring-line transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-16px_rgb(0_0_0/0.35)] hover:ring-muted/50 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
+    >
+      {visual && <Island visual={visual} className="group-hover:ring-primary/30" />}
+      <div className="flex items-start justify-between gap-3 px-2 pt-3">
+        <span className="leading-snug font-semibold group-hover:text-primary-strong">{d.name}</span>
+        {all && (
+          <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success-soft text-success" title="All done">
+            <Icon d={I.check} className="h-3.5 w-3.5" strokeWidth={3} />
+          </span>
+        )}
+      </div>
+      <p className="px-2 pt-1 text-xs text-muted">
+        ≈{d.weight} of {SECTIONS[d.section].short} questions
+      </p>
+      <div className="mt-auto px-2 pt-2 pb-1.5">
+        <span className="text-xs text-muted tabular-nums">
+          {total} {total === 1 ? "lesson" : "lessons"} · {minutes} min
+          {locked && (
+            <>
+              {" · "}
+              <PlusTag />
+            </>
+          )}
+        </span>
+        {done > 0 && (
+          <div className="mt-2 flex items-center gap-2.5">
+            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-line">
+              <div className="h-full rounded-full bg-primary" style={{ width: `${(done / total) * 100}%` }} />
+            </div>
+            <span className="shrink-0 text-xs font-medium text-muted tabular-nums">
+              {done} of {total} done
+            </span>
+          </div>
         )}
       </div>
     </Link>
@@ -139,16 +181,10 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
   // Lessons are Plus. Locks only show once the plan is known (no flash while it loads); the server gates the lesson itself.
   const access = useAccess();
   const locked = access.ready && !access.can("lessons");
-  // Tab: the one picked now, else the one remembered, else the suggested lesson's section.
-  const [chosen, setChosen] = useState<Tab | null>(null);
-  const remembered = hydrated ? readTab() : null;
-  const tab: Tab = chosen ?? remembered ?? (hydrated && suggestion ? suggestion.lesson.section : "rw");
-  const pick = (t: Tab) => {
-    setChosen(t);
-    try {
-      localStorage.setItem(TAB_KEY, t);
-    } catch {}
-  };
+  // Tab: the remembered one (picked here, or set by a domain or lesson page), else the suggested lesson's section.
+  const remembered = useRememberedTab();
+  const tab: Tab = remembered ?? (hydrated && suggestion ? suggestion.lesson.section : "rw");
+  const pick = rememberTab;
 
   const count = (t: Tab) => {
     const list = lessons.filter((l) => l.section === t);
@@ -173,7 +209,7 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
                   <StepBar p={sp} total={s.lesson.stepCount} />
                 ) : (
                   <p className="text-sm text-muted tabular-nums">
-                    {s.lesson.partCount} parts · {s.lesson.minutes} min · ends with real SAT questions
+                    {s.lesson.partCount} {s.lesson.partCount === 1 ? "subtopic" : "subtopics"} · {s.lesson.minutes} min · Easy, Medium and Hard tasks after each
                   </p>
                 )}
               </div>
@@ -233,28 +269,24 @@ export function LessonList({ lessons, visuals }: { lessons: ListLesson[]; visual
       </div>
 
       <div role="tabpanel">
-        {lessonGroups(lessons, tab).map((g) => {
-          const done = hydrated ? g.lessons.filter((l) => isDone(progress[l.slug])).length : 0;
-          return (
-            <div key={g.id} className={g.name ? "mt-8" : "mt-6"}>
-              {g.name && (
-                <div className="flex items-baseline justify-between gap-3">
-                  <h2 className="text-base font-semibold">{g.name}</h2>
-                  {done > 0 && (
-                    <span className="text-xs text-muted tabular-nums">
-                      {done} of {g.lessons.length} done
-                    </span>
-                  )}
-                </div>
-              )}
-              <div className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${g.name ? "mt-3" : ""}`}>
+        {tab === "strategy" ? (
+          lessonGroups(lessons, "strategy").map((g) => (
+            <div key={g.id} className="mt-6">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {g.lessons.map((l, i) => (
                   <LessonCard key={l.slug} l={l} p={hydrated ? progress[l.slug] : undefined} visual={visuals[l.slug]} i={i} locked={locked} />
                 ))}
               </div>
             </div>
-          );
-        })}
+          ))
+        ) : (
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {domainsFor(tab).map((d, i) => {
+              const list = domainLessons(lessons, d.id);
+              return list.length ? <DomainCard key={d.id} d={d} lessons={list} progress={hydrated ? progress : undefined} visual={visuals[list[0].slug]} i={i} locked={locked} /> : null;
+            })}
+          </div>
+        )}
       </div>
     </>
   );

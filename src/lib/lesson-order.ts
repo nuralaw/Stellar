@@ -1,4 +1,4 @@
-import { domainsFor } from "./taxonomy";
+import { domainsFor, getDomain } from "./taxonomy";
 
 // The one lesson order: the /lessons page shows it, and "Next lesson" follows it.
 // Start here (in the order lessons.ts gives), then Reading and Writing, then Math, each by domain and skill (taxonomy.ts).
@@ -29,6 +29,12 @@ export function lessonGroups<T extends Orderable>(lessons: T[], tab: LessonTab):
   const listed = new Set(groups.flatMap((g) => g.lessons));
   const rest = own.filter((l) => !listed.has(l));
   return rest.length ? [...groups, { id: `${tab}-other`, name: "More", lessons: rest }] : groups;
+}
+
+/** The lessons of one domain, in the domain's skill order. */
+export function domainLessons<T extends { skill: string }>(lessons: T[], domainId: string): T[] {
+  const bySkill = new Map(lessons.map((l) => [l.skill, l]));
+  return (getDomain(domainId)?.skills ?? []).map((s) => bySkill.get(s.id)).filter((l): l is T => Boolean(l));
 }
 
 /** Every lesson in the order the /lessons page shows them. */

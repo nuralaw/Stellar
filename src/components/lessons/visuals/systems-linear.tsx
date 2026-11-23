@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Systems: add the two equations so y cancels, solve, and the answer is the point where the two lines cross.
 export const alt = "The lines x + y = 7 and 2x − y = 5 cross at (4, 3). Adding the equations cancels y: 3x = 12, so x = 4 and y = 3.";
@@ -15,8 +15,10 @@ const css = `
 
 .v-systems-linear-rule { animation-name: v-systems-linear-rule; }
 @keyframes v-systems-linear-rule { 0%, 32% { opacity: 0 } 37%, 100% { opacity: 1 } }
-.v-systems-linear-y { fill: ${C.muted}; animation-name: v-systems-linear-y; }
-@keyframes v-systems-linear-y { 0%, 36% { fill: ${C.ink} } 42%, 100% { fill: ${C.muted} } }
+.v-systems-linear-yink { opacity: 0; animation-name: v-systems-linear-yink; }
+@keyframes v-systems-linear-yink { 0%, 36% { opacity: 1 } 42%, 100% { opacity: 0 } }
+.v-systems-linear-ymut { animation-name: v-systems-linear-ymut; }
+@keyframes v-systems-linear-ymut { 0%, 36% { opacity: 0 } 42%, 100% { opacity: 1 } }
 .v-systems-linear-cut { stroke-dasharray: 100; animation-name: v-systems-linear-cut; }
 @keyframes v-systems-linear-cut { 0%, 36% { stroke-dashoffset: 100 } 42%, 100% { stroke-dashoffset: 0 } }
 
@@ -47,6 +49,38 @@ const OY = 146;
 const U = 18;
 const px = (x: number) => OX + x * U;
 const py = (y: number) => OY - y * U;
+
+// Typeset equations in a column at x = EX, size 16. The y term is its own piece so it can grey out.
+const EX = 192;
+const FS = 18;
+const EQ = { x: 0.578, y: 0.489, "2": 0.5, "+": 1.222, "-": 1.222 } as Record<string, number>;
+const w = (t: string) => [...t].reduce((n, c) => n + (EQ[c] ?? 0.5), 0) * FS;
+const YX1 = EX + w("x+");
+const YX2 = EX + w("2x-");
+const eq = (y: number, a: string, mid: string, end: string, color: string) => {
+  const x1 = EX + w(a.replace(/[^0-9a-z]/g, ""));
+  const midW = mid.includes("+") ? w("+y") : w("-y");
+  return (
+    <g>
+      <Tex x={EX} y={y} size={FS} anchor="start" color={color} width={60}>
+        {a}
+      </Tex>
+      <g className="v-systems-linear-a v-systems-linear-yink">
+        <Tex x={x1} y={y} size={FS} anchor="start" width={60}>
+          {mid}
+        </Tex>
+      </g>
+      <g className="v-systems-linear-a v-systems-linear-ymut">
+        <Tex x={x1} y={y} size={FS} anchor="start" color={C.muted} width={60}>
+          {mid}
+        </Tex>
+      </g>
+      <Tex x={x1 + midW} y={y} size={FS} anchor="start" color={color} width={60}>
+        {end}
+      </Tex>
+    </g>
+  );
+};
 
 export default function Visual() {
   return (
@@ -80,36 +114,29 @@ export default function Visual() {
         </g>
         <circle className="v-systems-linear-a v-systems-linear-dot" cx={px(4)} cy={py(3)} r={5} fill={C.good} stroke={C.bg} strokeWidth={1.5} />
 
-        {/* The equations, added */}
-        <g fontSize={16} fontWeight={600}>
-          <text x={220} y={54} textAnchor="end" fill={C.ink}>x</text>
-          <text className="v-systems-linear-a v-systems-linear-y" x={241} y={54} textAnchor="middle">+ y</text>
-          <text x={263} y={54} textAnchor="middle" fill={C.ink}>=</text>
-          <text x={275} y={54} fill={C.ink}>7</text>
-
-          <text x={220} y={77} textAnchor="end" fill={C.primaryText}>2x</text>
-          <text className="v-systems-linear-a v-systems-linear-y" x={241} y={77} textAnchor="middle">− y</text>
-          <text x={263} y={77} textAnchor="middle" fill={C.primaryText}>=</text>
-          <text x={275} y={77} fill={C.primaryText}>5</text>
-        </g>
-        <line className="v-systems-linear-a v-systems-linear-cut" x1={228} y1={49} x2={254} y2={49} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
-        <line className="v-systems-linear-a v-systems-linear-cut" x1={228} y1={72} x2={254} y2={72} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
+        {/* The equations, added: the y terms are the ones that cancel */}
+        {eq(53, String.raw`x`, String.raw`{}+y`, String.raw`{}=7`, C.ink)}
+        {eq(77, String.raw`2x`, String.raw`{}-y`, String.raw`{}=5`, C.primaryText)}
+        <line className="v-systems-linear-a v-systems-linear-cut" x1={YX1 - 1} y1={55} x2={YX1 + 11} y2={55} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
+        <line className="v-systems-linear-a v-systems-linear-cut" x1={YX2 - 1} y1={78} x2={YX2 + 11} y2={78} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
 
         <g className="v-systems-linear-a v-systems-linear-rule">
-          <text x={182} y={77} fontSize={16} fontWeight={600} fill={C.muted}>+</text>
+          <Tex x={176} y={80} size={18} color={C.muted} width={20}>
+            {String.raw`+`}
+          </Tex>
           <line x1={182} y1={87} x2={294} y2={87} stroke={C.muted} strokeWidth={1.5} />
         </g>
-        <g className="v-systems-linear-a v-systems-linear-sum" fontSize={16} fontWeight={700} fill={C.ink}>
-          <text x={220} y={108} textAnchor="end">3x</text>
-          <text x={263} y={108} textAnchor="middle">=</text>
-          <text x={275} y={108}>12</text>
+        <g className="v-systems-linear-a v-systems-linear-sum">
+          <Tex x={EX} y={108} size={19} anchor="start" width={100}>
+            {String.raw`3x=12`}
+          </Tex>
         </g>
 
         <g className="v-systems-linear-a v-systems-linear-ans">
           <rect x={185} y={121} width={106} height={26} rx={8} fill={C.goodSoft} />
-          <text x={238} y={139.5} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.good}>
-            x = 4, y = 3
-          </text>
+          <Tex x={238} y={134} size={15} color={C.good} width={100}>
+            {String.raw`x=4,\;y=3`}
+          </Tex>
         </g>
       </g>
     </Svg>

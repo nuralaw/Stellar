@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Lines, angles, triangles: a line crossing two parallel lines makes eight angles but only two sizes.
 // The 70° angle turns into its opposite, its neighbors are 110°, and the whole set slides to the other crossing.
@@ -153,17 +153,14 @@ export default function Visual() {
           <text x={212} y={66} fontSize={12} fill={C.muted}>
             equal
           </text>
-          <text x={212} y={87} fontSize={17} fontWeight={700} fill={C.primaryText}>
-            70° = 70°
-          </text>
+          <Tex x={212} y={83} size={17} anchor="start" width={100} color={C.primaryText}>{String.raw`70^\circ=70^\circ`}</Tex>
         </g>
         <g className="v-lines-angles-triangles-a v-lines-angles-triangles-in2">
           <text x={212} y={114} fontSize={12} fill={C.muted}>
             add to 180°
           </text>
-          <text x={212} y={135} fontSize={17} fontWeight={700} fill={C.ink}>
-            <tspan fill={C.primaryText}>70°</tspan> + 110°
-          </text>
+          <Tex x={212} y={131} size={17} anchor="start" width={40} color={C.primaryText}>{String.raw`70^\circ`}</Tex>
+          <Tex x={238} y={131} size={17} anchor="start" width={70}>{String.raw`+110^\circ`}</Tex>
         </g>
       </g>
     </Svg>

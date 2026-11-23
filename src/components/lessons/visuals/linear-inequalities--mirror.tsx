@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Multiplying by −1 mirrors the number line, so the order flips: 2 < 3 becomes −2 > −3.
 export const alt =
@@ -66,9 +66,9 @@ export default function Visual() {
 
       {/* Before: 2 < 3 (only while it plays) */}
       <g className={`${a} ${first}`}>
-        <text x={160} y={38} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.ink}>
-          2 &lt; 3
-        </text>
+        <Tex x={160} y={38} size={26} width={120}>
+          {String.raw`2<3`}
+        </Tex>
       </g>
 
       {/* The dots swap sides of 0 */}
@@ -77,9 +77,9 @@ export default function Visual() {
 
       {/* After: −2 > −3 */}
       <g className={`${a} ${fc(62)}`}>
-        <text x={160} y={38} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.primaryText}>
-          −2 &gt; −3
-        </text>
+        <Tex x={160} y={38} size={26} color={C.primaryText} width={140}>
+          {String.raw`-2>-3`}
+        </Tex>
         <text x={X(-2)} y={72} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.primaryText}>
           −2
         </text>
@@ -96,9 +96,9 @@ export default function Visual() {
         </text>
       </g>
       <g className={`${a} ${fc(76)}`}>
-        <text x={160} y={156} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.ink}>
-          × (−1) mirrors the line: flip the sign
-        </text>
+        <Tex x={160} y={156} size={15} width={280}>
+          {String.raw`\times({-1})\ \text{mirrors the line: flip the sign}`}
+        </Tex>
       </g>
     </Svg>
   );

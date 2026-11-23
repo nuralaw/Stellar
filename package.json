@@ -10,7 +10,7 @@
     "bank:import": "node scripts/bank-import.mjs",
     "bank:build": "node scripts/bank-build.mjs",
     "bank:check": "node scripts/bank-build.mjs --check",
-    "prebuild": "npm run tests:build && npm run bank:build",
+    "prebuild": "npm run tests:build && npm run bank:build && npm run lessons:check -- --strict",
     "predev": "npm run tests:build && npm run bank:build",
     "bank:review": "node scripts/bank-review.mjs",
     "tests:import": "python scripts/tests-import.py",
@@ -30,6 +30,7 @@
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.119.0",
+    "katex": "0.19.1",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",

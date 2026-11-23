@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Typed math answers: 5 characters (6 with a minus sign). A decimal that doesn't fit must fill the box:
 // for 2/3, 0.66 is too short; 0.666 and .6667 are accepted. For −2/3, -.6667 uses all 6.
@@ -59,15 +59,11 @@ export default function Visual() {
       <Css>{css}</Css>
       <g className="v-digital-sat-format--decimal-a v-digital-sat-format--decimal-scene">
         {/* The answers to enter */}
-        <text x={46} y={62} textAnchor="middle" fontSize={24} fontWeight={700} fill={C.ink}>
-          2/3
-        </text>
-        <text x={46} y={80} textAnchor="middle" fontSize={11} fill={C.muted}>
-          = 0.6666…
-        </text>
-        <text className="v-digital-sat-format--decimal-a v-digital-sat-format--decimal-neg" x={46} y={156} textAnchor="middle" fontSize={24} fontWeight={700} fill={C.ink}>
-          −2/3
-        </text>
+        <Tex x={46} y={52} size={24} width={64} color={C.ink}>{String.raw`\frac{2}{3}`}</Tex>
+        <Tex x={46} y={82} size={12} width={80} color={C.muted}>{String.raw`=0.6666\ldots`}</Tex>
+        <g className="v-digital-sat-format--decimal-a v-digital-sat-format--decimal-neg">
+          <Tex x={46} y={150} size={24} width={72} color={C.ink}>{String.raw`-\frac{2}{3}`}</Tex>
+        </g>
         <line x1={16} y1={122} x2={304} y2={122} stroke={C.line} strokeWidth={1.5} strokeDasharray="3 5" />
 
         {ROWS.map((r) => (

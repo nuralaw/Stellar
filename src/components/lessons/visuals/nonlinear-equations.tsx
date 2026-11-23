@@ -1,8 +1,21 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Nonlinear equations and systems: substitute to turn a parabola-and-line system into one equation;
 // its solutions are the x-values where the two graphs cross.
 export const alt = "The system y = x² and y = x + 2 becomes one equation, x² = x + 2. Its solutions, x = −1 and x = 2, are where the line crosses the parabola.";
+
+const P = "v-nonlinear-equations-";
+const cls = (n: string) => `${P}a ${P}${n}`;
+/** A formula in two layers (ink and accent) that cross-fade, because a typeset formula cannot animate its fill.
+ *  `wins` are the loop ranges (%) where the accent shows. */
+const lit = (n: string, wins: [number, number][]) => {
+  const pts: [number, number][] = [[0, 0]];
+  for (const [s, e] of wins) pts.push([s, 0], [s + 2, 1], [e, 1], [e + 2, 0]);
+  const frames = (inv: boolean) => pts.map(([p, v]) => `${p}% { opacity: ${inv ? 1 - v : v} }`).join(" ");
+  const [hc, cc] = [`${P}${n}h`, `${P}${n}c`];
+  return `.${hc} { opacity: 0; animation-name: ${hc}; } @keyframes ${hc} { ${frames(false)} }
+.${cc} { opacity: 1; animation-name: ${cc}; } @keyframes ${cc} { ${frames(true)} }`;
+};
 
 const css = `
 .v-nonlinear-equations-a { animation: 9s ease-in-out infinite; }
@@ -21,11 +34,13 @@ const css = `
 }
 .v-nonlinear-equations-ya { opacity: 0; animation-name: v-nonlinear-equations-ya; }
 @keyframes v-nonlinear-equations-ya {
-  0%, 4% { opacity: 0; transform: translateX(-6px); fill: ${C.primaryText} }
-  9%, 20% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  25%, 37% { opacity: 1; transform: none; fill: ${C.ink} }
-  41%, 100% { opacity: 0; transform: none; fill: ${C.ink} }
+  0%, 4% { opacity: 0; transform: translateX(-6px) }
+  9%, 37% { opacity: 1; transform: none }
+  41%, 100% { opacity: 0; transform: none }
 }
+${lit("ya", [[5, 22]])}
+${lit("x2", [[5, 23], [36, 55]])}
+${lit("rb", [[5, 36]])}
 
 /* Beat 2: y = x + 2 and its line */
 .v-nonlinear-equations-lin { stroke-dasharray: 100; animation-name: v-nonlinear-equations-lin; }
@@ -37,9 +52,8 @@ const css = `
 }
 .v-nonlinear-equations-rb { animation-name: v-nonlinear-equations-rb; }
 @keyframes v-nonlinear-equations-rb {
-  0%, 19% { opacity: 0; transform: translateX(-6px); fill: ${C.primaryText} }
-  24%, 33% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  38%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
+  0%, 19% { opacity: 0; transform: translateX(-6px) }
+  24%, 100% { opacity: 1; transform: none }
 }
 /* The y of the second equation stays accented: it is what gets replaced. */
 .v-nonlinear-equations-yb { opacity: 0; animation-name: v-nonlinear-equations-yb; }
@@ -52,12 +66,9 @@ const css = `
 /* Beat 3: substitute. x² leaves the first equation and takes the place of y in the second. */
 .v-nonlinear-equations-x2 { animation-name: v-nonlinear-equations-x2; }
 @keyframes v-nonlinear-equations-x2 {
-  0%, 4% { opacity: 0; transform: translate(30px, -30px); fill: ${C.primaryText} }
-  9%, 20% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primaryText} }
-  25%, 33% { opacity: 1; transform: translate(36px, -30px); fill: ${C.ink} }
-  37%, 40% { opacity: 1; transform: translate(36px, -30px); fill: ${C.primaryText} }
-  49%, 52% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  57%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
+  0%, 4% { opacity: 0; transform: translate(30px, -30px) }
+  9%, 40% { opacity: 1; transform: translate(36px, -30px) }
+  49%, 100% { opacity: 1; transform: none }
 }
 
 /* Beat 4: the crossings are the solutions */
@@ -103,9 +114,9 @@ function Answer({ x, text, name }: { x: number; text: string; name: string }) {
   return (
     <g className={`v-nonlinear-equations-a v-nonlinear-equations-ans ${name}`}>
       <rect x={x} y={94} width={56} height={26} rx={13} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-      <text x={x + 28} y={112} textAnchor="middle" fontSize={15} fontWeight={700} fill={C.ink}>
+      <Tex x={x + 28} y={107} size={16} width={56}>
         {text}
-      </text>
+      </Tex>
     </g>
   );
 }
@@ -148,25 +159,38 @@ export default function Visual() {
           2
         </text>
 
-        {/* The system. Row 1: y = x². Row 2: y = x + 2, where x² then replaces y. */}
-        <g fontSize={18} fontWeight={700} fill={C.ink}>
-          <text className="v-nonlinear-equations-a v-nonlinear-equations-ya" x={231} y={44} textAnchor="end">
-            y =
-          </text>
-          <text className="v-nonlinear-equations-a v-nonlinear-equations-yb" x={216} y={74} textAnchor="end" fill={C.primaryText}>
-            y
-          </text>
-          <text className="v-nonlinear-equations-a v-nonlinear-equations-x2" x={216} y={74} textAnchor="end">
-            x²
-          </text>
-          <text className="v-nonlinear-equations-a v-nonlinear-equations-rb" x={221} y={74}>
-            = x + 2
-          </text>
+        {/* The system. Row 1: y = x². Row 2: y = x + 2, where x² then replaces y. Each formula has an ink and an accent layer. */}
+        <g className={cls("ya")}>
+          <g className={cls("yac")}>
+            <Tex x={231} y={38} size={20} anchor="end" width={60}>{String.raw`y=`}</Tex>
+          </g>
+          <g className={cls("yah")}>
+            <Tex x={231} y={38} size={20} anchor="end" width={60} color={C.primaryText}>{String.raw`y=`}</Tex>
+          </g>
+        </g>
+        <g className={cls("yb")}>
+          <Tex x={216} y={68} size={20} anchor="end" width={30} color={C.primaryText}>{String.raw`y`}</Tex>
+        </g>
+        <g className={cls("x2")}>
+          <g className={cls("x2c")}>
+            <Tex x={216} y={68} size={20} anchor="end" width={40}>{String.raw`x^2`}</Tex>
+          </g>
+          <g className={cls("x2h")}>
+            <Tex x={216} y={68} size={20} anchor="end" width={40} color={C.primaryText}>{String.raw`x^2`}</Tex>
+          </g>
+        </g>
+        <g className={cls("rb")}>
+          <g className={cls("rbc")}>
+            <Tex x={218} y={68} size={20} anchor="start" width={80}>{String.raw`=x+2`}</Tex>
+          </g>
+          <g className={cls("rbh")}>
+            <Tex x={218} y={68} size={20} anchor="start" width={80} color={C.primaryText}>{String.raw`=x+2`}</Tex>
+          </g>
         </g>
 
         {/* The solutions */}
-        <Answer x={178} text="x = −1" name="v-nonlinear-equations-a1" />
-        <Answer x={242} text="x = 2" name="v-nonlinear-equations-a2" />
+        <Answer x={178} text={String.raw`x=-1`} name="v-nonlinear-equations-a1" />
+        <Answer x={242} text={String.raw`x=2`} name="v-nonlinear-equations-a2" />
       </g>
     </Svg>
   );

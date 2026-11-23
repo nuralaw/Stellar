@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Nonlinear functions: two shapes. A parabola has a vertex (its turning point); an exponential has a start and
 // a multiplier. Left: y = −5(x − 3)² + 45, vertex (3, 45). Right: y = 300(1.2)^x, start 300, × 1.2 each step.
@@ -50,9 +50,7 @@ export default function Visual() {
       <g className={`${a} ${fc(4)}`}>
         <rect x={16} y={34} width={140} height={96} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
         <path d="M30 42 V124 H146" fill="none" stroke={C.muted} strokeWidth={1.5} />
-        <text x={86} y={26} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink}>
-          y = −5(x − 3)² + 45
-        </text>
+        <Tex x={86} y={21} size={14} width={140}>{String.raw`y=-5(x-3)^2+45`}</Tex>
       </g>
       <path className={`${a} ${dc(8)}`} d={`M${PX(16, 0)} 124 Q${PX(16, 3)} ${124 - 1.8 * 90} ${PX(16, 6)} 124`} pathLength={100} fill="none" stroke={C.ink} strokeWidth={2.5} />
       <circle className={`${a} ${pc(26)}`} cx={PX(16, 3)} cy={124 - 1.8 * 45} r={5} fill={C.primary} />
@@ -77,12 +75,7 @@ export default function Visual() {
       <g className={`${a} ${fc(48)}`}>
         <rect x={164} y={34} width={140} height={96} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
         <path d="M178 42 V124 H294" fill="none" stroke={C.muted} strokeWidth={1.5} />
-        <text x={234} y={26} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink}>
-          y = 300 · 1.2
-          <tspan dy={-5} fontSize={10}>
-            x
-          </tspan>
-        </text>
+        <Tex x={234} y={21} size={14} width={140}>{String.raw`y=300(1.2)^x`}</Tex>
       </g>
       <path className={`${a} ${dc(52)}`} d={EXP} pathLength={100} fill="none" stroke={C.ink} strokeWidth={2.5} />
       <circle className={`${a} ${pc(72)}`} cx={PX(164, 0)} cy={124 - 27} r={5} fill={C.primary} />

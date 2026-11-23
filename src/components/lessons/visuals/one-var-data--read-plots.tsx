@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Read a graph: the same 11 values (1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9) as a dot plot and a box plot. Median 5, range 9 − 1 = 8.
 export const alt = "A dot plot of 11 values and, below it on the same scale, their box plot: minimum 1, Q1 2, median 5, Q3 7, maximum 9. The range is 9 − 1 = 8.";
@@ -74,9 +74,9 @@ export default function Visual() {
 
       {/* Range */}
       <path className={cls("rng")} d={`M${px(1)} 48 H${px(9)} M${px(1)} 43 V53 M${px(9)} 43 V53`} pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-      <text className={cls("rtxt")} x={160} y={37} fontSize={14} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        range = 9 − 1 = 8
-      </text>
+      <g className={cls("rtxt")}>
+        <Tex x={160} y={32} size={14} color={C.primaryText}>{String.raw`\text{range}=9-1=8`}</Tex>
+      </g>
     </Svg>
   );
 }

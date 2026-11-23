@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // A line crossing two parallel lines at 70°: eight angles, only two sizes (70° and 110°), and 70 + 110 = 180.
 export const alt =
@@ -90,14 +90,14 @@ export default function Visual() {
         {/* key */}
         <g className={cls("k1")} stroke="none">
           <rect x={206} y={44} width={12} height={12} rx={3} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={224} y={55} fontSize={14} fontWeight={700} fill={C.primaryText}>70° × 4</text>
+          <Tex x={224} y={50} size={14} anchor="start" width={84} color={C.primaryText}>{String.raw`70^\circ\times4`}</Tex>
           <rect x={206} y={68} width={12} height={12} rx={3} fill={C.fill} stroke={C.ink} strokeWidth={1.5} />
-          <text x={224} y={79} fontSize={14} fontWeight={700} fill={C.ink}>110° × 4</text>
+          <Tex x={224} y={74} size={14} anchor="start" width={84}>{String.raw`110^\circ\times4`}</Tex>
         </g>
         <g className={cls("k2")} stroke="none">
           <text x={206} y={112} fontSize={11} fill={C.muted}>next to each other:</text>
-          <text x={206} y={132} fontSize={14} fontWeight={700} fill={C.ink}>70° + 110°</text>
-          <text x={206} y={152} fontSize={14} fontWeight={700} fill={C.ink}>= 180°</text>
+          <Tex x={206} y={129} size={14} anchor="start" width={104}>{String.raw`70^\circ+110^\circ`}</Tex>
+          <Tex x={206} y={149} size={14} anchor="start" width={104}>{String.raw`{=}180^\circ`}</Tex>
         </g>
       </g>
     </Svg>

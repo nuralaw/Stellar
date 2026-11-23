@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Trap: adding percents. $100, up 20% = $120, down 20% of 120 = $96, which is below the $100 start.
 export const alt = "Three bars: $100, then $120 after a 20% rise, then $96 after a 20% fall. The last bar is below the $100 line, so up 20% then down 20% is not back to the start.";
@@ -54,9 +54,9 @@ export default function Visual() {
       <g className={cls("ref")}>
         <line x1={44} y1={BASE - 100 * K} x2={268} y2={BASE - 100 * K} stroke={C.ink} strokeWidth={1.5} strokeDasharray="5 4" />
       </g>
-      <text className={cls("res")} x={160} y={26} fontSize={15} fontWeight={700} fill={C.bad} textAnchor="middle">
-        −20% of $120 = $24, so $96
-      </text>
+      <g className={cls("res")}>
+        <Tex x={160} y={20} size={15} width={260} color={C.bad}>{String.raw`-20\%\text{ of }\$120=\$24,\ \text{so }\$96`}</Tex>
+      </g>
     </Svg>
   );
 }

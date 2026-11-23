@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Right triangles and trig: one ratio (sin θ = 3/5) builds the whole 3-4-5 triangle, then any other ratio reads off it.
 export const alt = "A right triangle with sin θ = 3/5: the missing side is 4 because 5² − 3² = 4², so tan θ = 3/4.";
@@ -86,18 +86,14 @@ export default function Visual() {
           <text x={196} y={46} fontSize={11} fill={C.muted}>
             given
           </text>
-          <text x={196} y={66} fontSize={17} fontWeight={700} fill={C.ink}>
-            sin θ = 3/5
-          </text>
+          <Tex x={196} y={68} size={17} anchor="start" width={110}>{String.raw`\sin\theta=\dfrac{3}{5}`}</Tex>
         </g>
-        <text className="v-right-triangles-trig-a v-right-triangles-trig-pyth" x={196} y={96} fontSize={14} fontWeight={600} fill={C.muted}>
-          5² − 3² = 4²
-        </text>
+        <g className="v-right-triangles-trig-a v-right-triangles-trig-pyth">
+          <Tex x={196} y={98} size={14} anchor="start" width={110} color={C.muted}>{String.raw`5^2-3^2=4^2`}</Tex>
+        </g>
         <g className="v-right-triangles-trig-a v-right-triangles-trig-tan">
-          <rect x={188} y={112} width={116} height={32} rx={8} fill={C.goodSoft} />
-          <text x={196} y={134} fontSize={17} fontWeight={700} fill={C.good}>
-            tan θ = 3/4
-          </text>
+          <rect x={188} y={110} width={116} height={46} rx={8} fill={C.goodSoft} />
+          <Tex x={196} y={133} size={17} anchor="start" width={104} color={C.good}>{String.raw`\tan\theta=\dfrac{3}{4}`}</Tex>
         </g>
       </g>
     </Svg>

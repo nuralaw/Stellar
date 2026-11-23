@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Two special systems: parallel lines (no solution) and the same line written twice (infinitely many).
 export const alt =
@@ -60,10 +60,12 @@ function Panel({ x0, same }: { x0: number; same: boolean }) {
         <text x={x0 + 70} y={146} textAnchor="middle" fontSize={15} fontWeight={700} fill={same ? C.good : C.ink}>
           {same ? "Infinitely many" : "No solution"}
         </text>
-        <text x={x0 + 70} y={162} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.ink}>
-          {same ? "x + y = 3, " : "x + y = 3, "}
-          <tspan fill={C.primaryText}>{same ? "2x + 2y = 6" : "x + y = 5"}</tspan>
-        </text>
+        <Tex x={x0 + 70 - 7} y={162} size={12} anchor="end" width={64}>
+          {String.raw`x+y=3`}
+        </Tex>
+        <Tex x={x0 + 70 + 7} y={162} size={12} anchor="start" color={C.primaryText} width={68}>
+          {same ? String.raw`2x+2y=6` : String.raw`x+y=5`}
+        </Tex>
       </g>
     </g>
   );

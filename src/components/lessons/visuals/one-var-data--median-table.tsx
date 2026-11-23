@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Median from a table: 15 scores as stacked bars (6: 4, 7: 5, 8: 3, 9: 3). Count up to position (15 + 1)/2 = 8, which lands in the 7s.
 export const alt = "A histogram of 15 quiz scores: four 6s, five 7s, three 8s and three 9s. Counting the scores from the left, the 8th one is in the bar for 7, so the median is 7.";
@@ -45,9 +45,9 @@ export default function Visual() {
     <Svg label={alt}>
       <Css>{css}</Css>
 
-      <text className={cls("top")} x={160} y={30} fontSize={15} fontWeight={700} fill={C.ink} textAnchor="middle">
-        (15 + 1)/2 = 8th score
-      </text>
+      <g className={cls("top")}>
+        <Tex x={160} y={26} size={13}>{String.raw`\dfrac{15+1}{2}=8\text{th score}`}</Tex>
+      </g>
 
       {squares.map((s) => (
         <g key={s.num}>

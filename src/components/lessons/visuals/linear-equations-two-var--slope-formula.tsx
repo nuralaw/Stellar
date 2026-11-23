@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Slope from two points: rise over run. (1, 2) and (5, 8): rise 6, run 4, slope 3/2.
 export const alt = "A line through the points (1, 2) and (5, 8). The run is 4 and the rise is 6, so the slope is 6/4 = 3/2.";
@@ -73,24 +73,24 @@ export default function Visual() {
 
       {/* The formula */}
       <g className={`${a} ${fc(22)}`}>
-        <text x={168} y={52} fontSize={13} fill={C.muted}>
-          slope = rise ÷ run
-        </text>
+        <Tex x={166} y={26} size={16} anchor="start" width={150} color={C.muted}>
+          {String.raw`\text{slope}=\dfrac{\text{rise}}{\text{run}}`}
+        </Tex>
       </g>
       <g className={`${a} ${fc(46)}`}>
-        <text x={168} y={88} fontSize={15} fontWeight={600} fill={C.ink}>
-          = (8 − 2) ÷ (5 − 1)
-        </text>
+        <Tex x={166} y={66} size={17} anchor="start" width={150} color={C.ink}>
+          {String.raw`=\dfrac{8-2}{5-1}`}
+        </Tex>
       </g>
       <g className={`${a} ${fc(60)}`}>
-        <text x={168} y={116} fontSize={15} fontWeight={600} fill={C.ink}>
-          = 6 ÷ 4
-        </text>
+        <Tex x={166} y={106} size={17} anchor="start" width={150} color={C.ink}>
+          {String.raw`=\dfrac{6}{4}`}
+        </Tex>
       </g>
       <g className={`${a} ${fc(74)}`}>
-        <text x={168} y={146} fontSize={20} fontWeight={700} fill={C.good}>
-          = 3/2
-        </text>
+        <Tex x={166} y={148} size={20} anchor="start" width={150} color={C.good}>
+          {String.raw`=\dfrac{3}{2}`}
+        </Tex>
       </g>
     </Svg>
   );

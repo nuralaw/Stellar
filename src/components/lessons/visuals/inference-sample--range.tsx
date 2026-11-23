@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Estimate ± margin: 62% ± 4% gives the plausible range 58% to 66%.
 export const alt = "A number line with the sample estimate 62%. A bar reaches 4 below and 4 above it, from 58% to 66%. That range is plausible for the whole population.";
@@ -47,13 +47,9 @@ export default function Visual() {
         <line x1={px(58)} y1={100} x2={px(58)} y2={118} />
         <line x1={px(66)} y1={100} x2={px(66)} y2={118} />
       </g>
-      <g className={cls("pm")} fontSize={13} fontWeight={700} fill={C.primary} textAnchor="middle">
-        <text x={(px(58) + px(62)) / 2} y={78}>
-          − 4
-        </text>
-        <text x={(px(62) + px(66)) / 2} y={78}>
-          + 4
-        </text>
+      <g className={cls("pm")}>
+        <Tex x={(px(58) + px(62)) / 2} y={76} size={15} width={50} color={C.primaryText}>{String.raw`-4`}</Tex>
+        <Tex x={(px(62) + px(66)) / 2} y={76} size={15} width={50} color={C.primaryText}>{String.raw`+4`}</Tex>
       </g>
 
       {/* The estimate */}

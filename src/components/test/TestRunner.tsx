@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { ReferenceButton } from "@/components/reference/ReferenceButton";
 import { useFocusMode } from "@/lib/focus";
 import { showToast } from "@/lib/toast";
 import { I, Icon } from "@/components/bank/icons";
@@ -260,7 +261,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const t = e.target as HTMLElement | null;
-      if (t?.closest?.("[data-calculator]") || t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) return;
+      if (t?.closest?.("[data-calculator], [data-reference]") || t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) return;
       const q = qs[pos];
       if (e.key === "ArrowRight") setPos((p) => Math.min(qs.length - 1, p + 1));
       else if (e.key === "ArrowLeft") setPos((p) => Math.max(0, p - 1));
@@ -355,6 +356,7 @@ function Session({ test, s, onFinish }: { test: PracticeTest; s: TestSession; on
               <Icon d={I.calculator} className="h-4.5 w-4.5" />
             </button>
           )}
+          {isMath && <ReferenceButton variant="icon" calcOpen={calcOpen} onCloseCalc={() => setCalcOpen(false)} />}
         </div>
         {/* Question switcher: hover a segment for its number and difficulty */}
         <QuestionStrip

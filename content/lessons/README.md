@@ -1,30 +1,35 @@
 # Lessons
 
-One lesson per Digital SAT skill (30) plus three strategy lessons. Opening a lesson shows its **parts**
-(subtopics) under the topic's animation; the student picks one or goes in order. Each part teaches **one idea with
-one clear example**, then checks it. No filler: every word must earn its place.
+One lesson per Digital SAT skill (30) plus three strategy lessons. A lesson is 4–7 **subtopics**. Each subtopic is one
+**Learn screen** (an animation, the key ideas, an optional "Not sure?" theory island) followed by an **Easy**, a **Medium**
+and a **Hard** task. Spec and screen design: `docs/lessons-v2.md`. This file is the author's reference.
 
 ```
 content/lessons/
   rw/<skill-id>.md         Reading and Writing skills (ids from src/lib/taxonomy.ts)
   math/<skill-id>.md       Math skills
   strategy/<slug>.md       digital-sat-format, pacing-and-guessing, desmos
+  _briefs/<visual-id>.md   a brief for a visual that is not built yet (see "Visuals")
 src/components/lessons/visuals/<slug>.tsx          the lesson's topic animation (rules: visuals/README.md)
-src/components/lessons/visuals/<slug>--<name>.tsx  a step animation (```visual blocks)
+src/components/lessons/visuals/<slug>--<name>.tsx  a subtopic animation (```visual blocks)
 ```
 
 Tools:
 
 ```
-npm run lessons:check -- [slug…]                   validate lessons (all of them without arguments)
+npm run lessons:check -- [slug…] [--strict]        validate lessons (all of them without arguments); --strict: a visual without
+                                                   a file is an error even if a brief exists
 npm run lessons:visuals -- <id>                    check an animation and save its storyboard PNG
-npm run lessons:questions -- <skill-id>            candidate bank questions for a skill, by difficulty
-npm run lessons:questions -- --show <id> [<id>…]   full text, choices, answer and explanation
+npm run lessons:questions -- <skill-id> [--level easy|medium|hard] [--grep text] [--full] [--all] [--include-used]
+                                                   candidate bank questions for a skill (questions already used by a lesson are hidden)
+npm run lessons:questions -- --show <id> [<id>…]   the question as stored: raw passage/prompt (copy highlight phrases from it),
+                                                   choices, answer, explanation, and whether a lesson already uses it
+npm run lessons:questions -- --used [<skill-id>]   the ids already used by a lesson, with lesson, slot and difficulty
 ```
 
 ## Shape
 
-```
+````
 ---
 title: Circles
 skill: circles
@@ -33,56 +38,109 @@ section: math
 summary: Read the center and radius from the equation. Find arcs and sectors.
 ---
 
-# Center and radius                      ← a part (subtopic): "# " + title (≤ 5 words)
-Flip the signs, root the right side.      ← its tagline (≤ 10 words), shown on the lesson overview
+# Center and radius                       ← a subtopic: "# " + title (≤ 5 words)
+Flip the signs inside, root the right.     ← its tagline (≤ 10 words), shown on the overview
 
-## Read center and radius                 ← a step: "## " + title (≤ 5 words)
-**(x − h)² + (y − k)² = r²** …            ← teaching text (≤ 25 words)
-```example … ```                          ← the part's one worked example
+```visual
+circles--center-point
+```
 
-## Read it yourself
-```quiz … ```
+## Key ideas
+Markdown, 80–220 words: the rules, formulas, when to use them, the classic trap.
+\[(x - h)^2 + (y - k)^2 = r^2\]
 
-# Complete the square
-…
-
-# Real SAT questions                      ← skill lessons end with this part
-Three real questions, easy to hard.
-## Your turn: easy
-```check … ```
-## Your turn: medium
-…
-## Your turn: hard
+```example                                   ← optional: one worked example (and/or one ```desmos)
 …
 ```
+
+```theory
+Markdown, 120–400 words: definitions of the terms used, why the rule works, extra examples,
+edge cases, how the SAT words this, more traps. Shown in the "Not sure?" island.
+```
+
+## Easy
+```task
+bank: m-12345
+highlight:
+- "tangent to the x-axis" :: Tangent to the x-axis: the radius reaches the axis.
+- "(5, -4)" :: The center is 4 units from the axis, so r = 4.
+explain:
+Markdown, 60–250 words, step by step, ends with the answer.
+```
+
+## Medium
+```task
+In the \(xy\)-plane, a circle has center \((2, -3)\) and passes through \((5, 1)\). What is its radius?
+* 5
+- 7 :: You added the coordinates instead of subtracting.
+- 25 :: That is \(r^2\), not \(r\).
+- \(\sqrt{7}\) :: Square the differences before adding.
+highlight:
+- "center \((2, -3)\)" :: Start from the center.
+- "passes through \((5, 1)\)" :: The radius is the distance to this point.
+explain:
+…
+```
+
+## Hard
+```task
+…
+```
+
+# Next subtopic
+…
+````
 
 - Frontmatter: `skill` / `domain` / `section` match `src/lib/taxonomy.ts` (strategy: `skill: <slug>`,
   `domain: strategy`, `section: strategy`). `summary` ≤ 80 characters. `also-skills: <skill-id>` only when the bank
   is short of questions for this skill.
-- **Skill lessons: 3–7 teaching parts + the `# Real SAT questions` part** (exactly the three `## Your turn: …`
-  steps, ≤ 12 words of text each, one `check` each).
-- **Strategy lessons: 3–7 parts**, no checks.
-- **A teaching part = 2–3 steps:** step 1 teaches the idea (one `example` or `desmos`, optionally with one `visual`
-  above it; or a `visual` alone); the next 1–2 steps are quizzes. Step text ≤ 25 words. **≤ 70 words of teaching
-  text per part** (step text + example notes; the `more` text is not counted).
-- A step is its text, then the blocks in this order: an optional `visual`, at most one of `example` / `desmos` /
-  `quiz` / `check`, and an optional `more`. A `visual` can only be paired with an `example` or `desmos`.
-  **All the step's text goes above the blocks.** Text between or after blocks is an error ("text after a block; move
-  it above the blocks"), because the player shows the step's text first and would otherwise show it under the block
-  and outside the word limits.
-- One part per lesson is the classic trap: title it `Trap: …` (e.g. `# Trap: inscribed angles`).
-- No Recap: the overview's part titles and taglines are the recap.
+- **4–7 subtopics per lesson.** Each one, in this order: `# title`, tagline, one `visual` block, `## Key ideas`
+  (text, then the optional `example` / `desmos` blocks, then one `theory` block), `## Easy`, `## Medium`, `## Hard`,
+  each with exactly one `task` block. Text outside blocks is allowed only in the tagline and in Key ideas, and in Key
+  ideas **all text goes above the blocks** (the checker errors on text after a block).
+- One subtopic per lesson is often the classic trap: title it `Trap: …`.
+- No Recap, no final "Real SAT questions" part: real questions sit in every subtopic.
+- Strategy lessons (digital-sat-format, pacing-and-guessing, desmos) have the same shape; their tasks are own questions
+  (format facts, pacing decisions, Desmos moves).
+- Word ranges (the checker warns outside them): Key ideas 80–220, theory 120–400, explain 60–250, tagline ≤ 10, titles ≤ 5,
+  highlight note ≤ 20, option feedback ≤ 12.
+
+## Tasks
+
+Every subtopic has three: Easy, Medium, Hard. A task is **one question**, then `highlight:`, then `explain:` (to the
+end of the block):
+
+- **A bank question:** `bank: <id>` on the first line. Find candidates with `npm run lessons:questions -- <skill-id>`
+  (used ones are hidden), solve one yourself with `--show <id>`. Pick the slot by the bank's difficulty (the checker
+  warns when it differs). Avoid `choices-image` / `page-image` questions (the checker errors on them). Bank questions
+  are the "Real SAT question" tasks; never call them "original".
+- **An own question:** the question syntax below (prompt lines, options or `answer:`, optional `~` Desmos lines). It
+  must read like the SAT: wording, notation (△JKL, xy-plane, "respectively"), length, four options with plausible
+  distractors.
+- **`highlight:`** 2–5 lines `- "<exact phrase>" :: <note ≤ 20 words>`, in the order you reason. After the student's
+  **second wrong answer** the player lights these phrases up in the question one by one, each with its note. The
+  phrase must be an **exact substring** of what the student reads:
+  - bank question: the stored `passage` or `prompt` text. Copy it from `lessons:questions -- --show <id>`; it keeps the
+    bank's notation (`x^2`, `sqrt(3)`, `−`, `π`). Do not use text from the choices.
+  - own question: the Markdown source of the prompt. A phrase may contain whole formulas (`center \((2, -3)\)`) but must
+    not start or end inside one.
+  
+- **`explain:`** the full step-by-step explanation, 60–250 words, ends with the answer. Shown by "Still confused?"
+  (after the hints) and "See why" (after a right answer). It must work for someone who guessed.
+- **No question is used twice anywhere on the site** (the same bank id, or the same own prompt). The checker errors.
+- Math lessons need at least one typed-answer task (own `answer:` question, or a bank grid-in), like the SAT's
+  student-produced response.
 
 ## Blocks
 
-### Example: a worked example that opens line by line
+### Example: a worked example (in Key ideas)
 
 ````
 ```example
-x² + y² − 6x + 10y + 9 = 0. Find the center and the radius.
-1. (x² − 6x) + (y² + 10y) = −9 :: Group x and y. Move the number.
-2. (x − 3)² + (y + 5)² = 25 :: Add 9 and 25 to both sides.
-3. Center (3, −5), radius 5 :: Flip the signs. √25 = 5.
+\(x^2 + y^2 - 6x + 10y + 9 = 0\). Find the center and the radius.
+1. \((x^2 - 6x) + (y^2 + 10y) = -9\) :: Group \(x\) and \(y\). Move the number.
+2. \((x - 3)^2 + (y + 5)^2 = 25\) :: Add 9 and 25 to both sides.
+3. Center \((3, -5)\), radius 5 :: Flip the signs. \(\sqrt{25} = 5\).
 ```
 ````
 
@@ -108,42 +166,52 @@ Write the punctuation as part of the choice, exactly as the SAT choice has it. C
 word limit. Also accepted (older lessons): `Choices:` at the end of the last problem line, and a comma-separated
 list of single words (`Choices: fragile, pricey, hardy`). Write new ones the canonical way.
 
-### Quiz: our own question (+ the Desmos way)
+### Own question (inside a task block)
+
+An own question is the lines before `highlight:`. Multiple choice, with the Desmos way:
 
 ````
-```quiz
-x + y = 7 and 2x − y = 5. What is x?
+```task
+\(x + y = 7\) and \(2x - y = 5\). What is \(x\)?
 * 4
 - 3 :: That's y. The question asks for x.
 - 12 :: That's 3x. Divide by 3.
-> Add the equations: 3x = 12, so x = 4.
+- 2 :: You subtracted the equations. Add them to cancel y.
 ~ type x+y=7 :: Type both equations as they are.
 ~ type 2x-y=5
 ~ point (4, 3) :: Click the crossing: x = 4.
+highlight:
+- "\(2x - y = 5\)" :: The second equation: add it to the first to cancel \(y\).
+- "What is \(x\)?" :: The question asks for \(x\) only.
+explain:
+Add the equations to cancel \(y\): …
 ```
 ````
 
-- 2–4 options, `*` = correct (exactly one), `-` = wrong with `:: feedback` (≤ 12 words, names the mistake).
-- `>` explanation, ≤ 25 words.
+- The prompt is one or more lines. 2–4 options (aim for four, like the SAT), `*` = correct (exactly one), `-` = wrong
+  with `:: feedback` (≤ 12 words, names the mistake). A line starting with `>` is an error: the explanation goes in
+  `explain:`.
 - **Retry:** a first wrong pick shows that option's feedback (or "Not quite. Try once more.") and the student tries
-  again (the wrong option is crossed out). A second wrong pick reveals the answer, the feedback and the
-  explanation; so does a right pick ("Correct!"). So write feedback that helps a second attempt, and an explanation
-  that works for someone who guessed.
+  again. The second wrong answer starts the highlights (see "Tasks"). So write feedback that helps a second attempt.
 - `~` lines (math only, optional): **the fastest way in Desmos.** The site plays them on the real Desmos
-  calculator right after a wrong answer (and offers them after a right one). Add them whenever Desmos is a genuinely
+  calculator after a wrong answer (and offers them after a right one). Add them whenever Desmos is a genuinely
   faster or safer route: systems, intersections, solutions/zeros, max/min, "how many solutions", checking
   equivalence, regressions, sliders for unknown constants. Skip them when Desmos doesn't help.
 
-### Typed-answer quiz (the SAT's student-produced response)
+### Typed answer (the SAT's student-produced response)
 
 ````
-```quiz
+```task
 2x + 1 = 10.5. What is the value of x?
 answer: 4.75, 19/4
 - 9.5 :: That is 2x. Subtract 1 first, then divide.
 - 4.5 :: You added 1 instead of subtracting.
-> 2x = 9.5, so x = 4.75 = 19/4.
 ~ type 2x+1=10.5 :: Check it in Desmos.
+highlight:
+- "What is the value of x?" :: Solve for x, not 2x.
+- "10.5" :: Undo the +1 first.
+explain:
+…
 ```
 ````
 
@@ -152,7 +220,7 @@ answer: 4.75, 19/4
   really has two answers (`answer: 3, -3`). Write values as an integer, a decimal or an integer fraction (`-2.5`, `.5`,
   `17/4`). Write an answer that repeats as a fraction (`2/3`), never as a rounded decimal.
 - Optional `- value :: feedback` lines (0–3) are **common wrong values**, with the usual ≤ 12-word feedback naming the
-  mistake. No `*` lines. The prompt, the `>` explanation and the `~` lines work as in a multiple-choice quiz.
+  mistake. No `*` lines. The prompt and the `~` lines work as in a multiple-choice question.
 - The player shows a text input (so `/` and `−` can be typed on iOS) and Check. Spaces are allowed only around `/`
   and after a leading minus; `−` and `-` are the same. Fractions and decimals are equivalent (`17/4` = `4.25`,
   `.5` = `0.5` = `1/2`, a leading `.` is fine).
@@ -163,11 +231,9 @@ answer: 4.75, 19/4
   the right value but more characters than the grid holds (`16.667`) gets the hint "Too long for the answer grid"
   and does not count as a try.
 - A **mixed number** (`4 1/4`) and anything that is not a number (`12 3`, `4,25`, letters) get a hint ("The SAT
-  doesn't take mixed numbers…", "Enter a number…") and do not count as a try. After a first miss the "Try once more"
-  note stays on screen, with the hint under it.
-- Retry works as above: a first wrong value shows its feedback and lets the student try again; a second wrong value
-  reveals the answer ("the answer is 4.75 or 19/4") and the explanation.
-- Typed quizzes are for **math** lessons. Every math lesson should have at least one (the checker warns if none).
+  doesn't take mixed numbers…", "Enter a number…") and do not count as a try.
+- Typed answers are for **math** lessons (R&W is multiple choice). The checker warns when a math lesson has no typed
+  task; a bank grid-in counts.
 
 ### Desmos moves (in `~` lines and ```desmos blocks)
 
@@ -198,97 +264,107 @@ exponent, radical or denominator). Write the LaTeX normally; the chip, and its n
 right arrow key", are made for you (`src/lib/desmos-keys.ts`). In your captions, never tell students to type the
 LaTeX form.
 
-### Desmos: a step that teaches in Desmos
+### Desmos: a walkthrough in Key ideas
 
 ````
 ```desmos
-2x + y = 7 and x − y = 2. Find (x, y).
+\(2x + y = 7\) and \(x - y = 2\). Find \((x, y)\).
 type 2x+y=7 :: Type each equation on its own line.
 type x-y=2
 point (3, 1) :: Click the crossing: (3, 1).
 ```
 ````
 
-The problem line(s) first, then the moves. Used as a part's teaching block (the Desmos lesson does this everywhere).
+The problem line(s) first, then the moves. At most one `example` and one `desmos` block per subtopic, after the Key
+ideas text and before the `theory` block (the Desmos lesson uses `desmos` blocks everywhere).
 
-### Visual: a step that teaches with an animation
+### Visual: the subtopic's animation
 
 ````
 ```visual
-digital-sat-format--modules
+circles--center-point
 ```
 ````
 
-Plays `src/components/lessons/visuals/<id>.tsx` big. The id is `<lesson slug>--<name>` (the checker requires the
-slug prefix and the file). Same rules as topic animations (visuals/README.md); the CSS prefix is `v-<id>-`. A lesson
-with `visual-only: true` in its frontmatter (digital-sat-format) teaches only with visuals: no step text, every
-teaching step a `visual`.
+One id per subtopic, under the tagline. It plays `src/components/lessons/visuals/<id>.tsx` in the Learn screen's visual
+island. Convention for the id: `<lesson slug>--<name>`. Rules for the animation: `src/components/lessons/visuals/README.md`;
+check it with `npm run lessons:visuals -- <id>`. Formulas inside a visual use the kit's `<Tex>`.
 
-**A visual and an example (or desmos) in one step:** at most one of each, the `visual` block written first. The player
-shows the visual (a little smaller than a lone visual), then the example or Desmos walkthrough under it:
+**A visual that doesn't exist yet:** write a brief to `content/lessons/_briefs/<visual-id>.md` (what it shows, the
+frames/storyboard, the labels and formulas, which colours to stress) and use that id in the lesson. The checker then
+reports a **warning** "visual missing — brief exists" instead of an error, so writers can see progress; the visual
+builders implement the briefs. An id with neither a file nor a brief is an error. Reuse an existing visual only when it
+truly fits the subtopic.
+
+### Theory: the "Not sure?" island
 
 ````
-## Read the center and radius
-Flip the signs of the numbers in the brackets.
-
-```visual
-circles--center-radius
-```
-
-```example
-x² + y² − 6x + 10y + 9 = 0. Find the center and the radius.
-1. (x² − 6x) + (y² + 10y) = −9 :: Group x and y. Move the number.
-2. (x − 3)² + (y + 5)² = 25 :: Add 9 and 25 to both sides.
-3. Center (3, −5), radius 5 :: Flip the signs. √25 = 5.
+```theory
+Markdown (formulas, lists, small tables), 120–400 words.
 ```
 ````
 
-A visual can't be paired with a `quiz` or `check`, and a step can't hold two visuals. The pair counts as one teaching
-block.
+Inside `## Key ideas`, after the text and after any `example` / `desmos` block. Key ideas say **what to do**; theory
+says **why** and goes deeper: definitions of the terms, the reasoning, extra examples, edge cases, how the SAT words
+it, more traps.
 
-### More: "Not clear? Explain more"
+## Math
 
-````
-```more
-A **full sentence** has a subject and a verb and can stand alone: *The rain stopped.* A phrase like *After the rain*
-can't.
-```
-````
+Formulas are typeset with KaTeX. Write them in LaTeX between delimiters:
 
-A `more` block is the **last thing in a step**, after its text and blocks. Markdown, **≤ 80 words**, at most one per
-step. Use it for a term's definition, an intermediate step the example skips, or the same idea in other words. The
-player shows the step as usual with a quiet "Not clear? Explain more" button under it. Clicking opens the text
-(a short height and opacity animation, none with reduced motion), the button becomes "Show less", and it is closed
-again on every visit. Not allowed on `check` steps. It does not count toward the 25-word step or 70-word part limits,
-and adding or removing one does not reset a student's saved progress.
-
-### Check: a real question from the bank
+- `\( … \)` **inline** (inside a sentence).
+- `\[ … \]` **display**. On a line of its own in Key ideas, theory or an explanation it is a centered block. Anywhere
+  else (example problem and lines, question, options, feedback, highlight notes, captions, list items, a
+  sentence) it is set in display style but stays inline, so it never breaks the layout. Put the key formula of a
+  subtopic on its own line; use it in an example or option only when a big fraction really helps.
+- Never `$…$`: money like `$12` is common in SAT word problems and stays plain text.
+- A formula sits on **one line** (the checker errors on a `\(` without its `\)`, and on LaTeX that KaTeX can't
+  read). Everything between the delimiters is LaTeX: no `**bold**`, no `::`, and write `\vert` for a bar (a `|` inside a
+  formula or `code span` does not split a table cell, but `\vert` is safer).
+- A whole formula counts as **one word** in every word limit, so converting a formula never breaks a limit.
 
 ````
-```check
-m-0566
-```
+\[(x - h)^2 + (y - k)^2 = r^2\]
+Center \((h, k)\), radius \(r\). Know a point on the circle? Its distance to the center is \(r\).
 ````
 
-Pick one easy, one medium and one hard question **of this skill**; solve each yourself (`--show`) first; avoid
-`choices-image` / `page-image`; never reuse a question across lessons.
+What goes in a formula:
 
-The text above a check (≤ 12 words) is a hint. The `Your turn: easy` step may instead carry **one notation line**
-that the real questions assume, e.g. `△JKL means triangle JKL.` or `xy-plane: the plane with an x-axis and a y-axis.`
+- The subtopic's **key formula** as a display line (above). Short expressions inline: `\(72^\circ\)`, `\(2\pi r\)`,
+  `\(\frac{1}{5}\)`, `\(y = 2x + 1\)`, coordinates `\((-5, 2)\)`.
+- **Variables mentioned in prose**: `\(x\)`, `\(k\)`, `\(r^2\)`, `\(x\)-axis`, `\(xy\)-plane`.
+- **Stays text:** plain numbers in prose ("legs 3 and 4", "radius 7", "5 units"), money (`$12`), point labels
+  (A, B, C), and a lone `=` in a sentence you do not need typeset. Typed answers (`answer:` line) stay plain numbers.
+- Write LaTeX the standard way: `\frac{a}{b}`, `\sqrt{x}`, `\pi`, `\theta`, `\le` / `\ge`, `\ne`,
+  `\cdot` (for ×), `\div`, `^{…}` and `_{…}` **with braces** (`x^{10}`, `x_{1}`), `^\circ` for degrees,
+  `\text{…}` for words, a plain `-` for minus.
+- **Do not bold formulas** (`**\(x\)**` renders, but the formula stays regular weight). Bold the term, not the math,
+  and write `the \(xy\)-plane`, not `**\(xy\)-plane**`.
+- A formula inside a `` `code span` `` is not a formula (the span stays as written), so `` `\(` `` never pairs with a later `\)`.
+- Only plain LaTeX: `\href`, `\url`, `\includegraphics` and `\htmlId` are not allowed (the checker errors).
+- Formulas work everywhere lesson text does: Key ideas, theory, example problem / lines / notes, own questions and
+  their options and `::` feedback, highlight notes, `explain:`, Desmos captions. **Subtopic titles and taglines** take
+  inline `\( \)` formulas too (`# Radius meets tangent at \(90^\circ\)`); keep them short, and never `\[ \]` there
+  (error). Bank questions are plain text in the bank's own notation (`x^2`, `sqrt(3)`), so a highlight phrase on a bank
+  question is copied as stored. The one place formulas do not work: the `Choices:` of an R&W example.
+- **Desmos `type` moves stay Desmos LaTeX** (`type y=2x+1`). They are not wrapped in `\( \)`. Captions after `::`
+  are ordinary lesson text, so formulas there are wrapped.
+- `npm run lessons:check` renders every formula with KaTeX (errors) and warns, once per piece of text (key ideas, theory, each task part), about math still written
+  outside formulas, in titles and taglines too: Unicode math (² √ π ≤ × ÷ ° …, a − between numbers or letters; `°` after a number before C or F is a temperature and fine) and bank notation (`x^2`, `sqrt(`,
+  `x_1`). Bank questions themselves are not checked for this (their text is stored as it is).
+
 
 ## Writing rules
 
-- **Short.** Step text ≤ 25 words, ≤ 70 words of teaching text per part, ≤ 490 per lesson (`more` blocks don't
-  count). Say a fact once. No intros, no filler, no hedging, no motivational lines.
-- Plain English a 16-year-old gets on first read. **Define a term at its first use** in 3–6 words ("slope: how steep
-  the line is") or, if it needs more, in the step's `more` block.
-- **The last quiz before `# Real SAT questions` matches the SAT:** its wording, notation (△JKL, xy-plane, congruent,
-  respectively …) and length (25–100 words in math; a passage plus a question in R&W). The checker warns if it is short.
-- **Math lessons include at least one typed-answer quiz** (`answer:`), because the SAT has student-produced
-  responses. The checker warns if there is none.
-- Quiz feedback in plain words a non-native speaker can read ("You added instead of subtracting"), not one-word verdicts.
-- **Accurate first.** Solve every quiz and example twice. Each wrong option is wrong for the reason its feedback
-  states. Desmos moves must give exactly the answer shown.
-- Our own words only. Bank questions are "real SAT questions", never "original".
-- Markdown: paragraphs, `-` bullets, `**bold**`, `*italic*`, `` `code` ``, small tables (≤ 3 columns). Math in
-  Unicode (x², √x, ≤, −, π) or bank notation (`x^2`, `sqrt(x)`). True minus sign (−) in math text.
+- **Teach the SAT, not the book.** Cover every rule and trick that actually appears in SAT questions for this skill,
+  and fix every error listed in the lesson's compare report. **Our own words only:** never copy sentences or examples
+  from the extracted book text; use it to know what to teach and build new examples with new numbers and contexts.
+- Plain English a 16-year-old gets on first read. **Define a term at its first use** in 3–6 words, or in the theory.
+  Friendly, concrete, no filler, no hedging, no motivational lines.
+- **Key ideas = what you need to answer; theory = why and more depth.** Show the formula, then a tiny worked example.
+- R&W: visuals show structure (clauses, punctuation slots, text roles, evidence → claim), not just text.
+- Feedback in plain words a non-native speaker can read ("You added instead of subtracting"), not one-word verdicts.
+  Each wrong option is wrong for the reason its feedback states.
+- **Accurate first.** Solve every task and example twice. Desmos moves must give exactly the answer shown.
+- Markdown: paragraphs, `-` bullets, `1.` lists, `**bold**`, `*italic*`, `` `code` ``, small tables (≤ 3 columns).
+  **Math is always a formula** (next section); plain text outside formulas is for words and plain numbers only.

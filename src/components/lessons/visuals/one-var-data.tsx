@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import { C, Css, Svg } from "./kit";
 
-// One-variable data: one extreme value drags the mean (the balance point) along; the median (the middle value) stays.
-export const alt = "Values 2, 4, 6, 8, 10 balance on a beam at 6. The 10 becomes 20 and rolls out: the mean follows from 6 to 8, the median stays 6.";
+// One-variable data: one extreme value drags the mean (the balance point) a long way; the median (the middle value) moves far less (here not at all).
+export const alt = "Values 2, 4, 6, 8, 10 balance on a beam at 6. The 10 becomes 20 and rolls out: the mean follows from 6 to 8, while the median stays at 6 in this set.";
 
 /** x of a value on the beam: 14.4 canvas units per 1, so every distance is to scale. */
 const X = (v: number) => 30 + (v - 2) * 14.4;

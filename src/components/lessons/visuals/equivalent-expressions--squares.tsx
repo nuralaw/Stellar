@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Difference of squares: x² with a 2 × 2 corner cut out can be rearranged into a rectangle (x + 2) by (x − 2).
 export const alt =
@@ -53,9 +53,7 @@ export default function Visual() {
       {/* The corner that was cut out (only at the start) */}
       <g className={`${a} ${hole}`}>
         <rect x={108} y={92} width={24} height={24} fill="none" stroke={C.muted} strokeWidth={1.5} strokeDasharray="4 3" />
-        <text x={120} y={109} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.muted}>
-          2²
-        </text>
+        <Tex x={120} y={104} size={13} width={30} color={C.muted}>{String.raw`2^2`}</Tex>
       </g>
 
       {/* The strip: starts below, ends upright on the right */}
@@ -65,24 +63,16 @@ export default function Visual() {
 
       {/* Side lengths */}
       <g className={`${a} ${fc(56)}`}>
-        <text x={108} y={36} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          x + 2
-        </text>
-        <text x={52} y={72} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          x − 2
-        </text>
+        <Tex x={108} y={30} size={15} width={60} color={C.primaryText}>{String.raw`x+2`}</Tex>
+        <Tex x={50} y={68} size={15} anchor="end" width={60} color={C.primaryText}>{String.raw`x-2`}</Tex>
       </g>
 
       {/* The result */}
       <g className={`${a} ${fc(4)}`}>
-        <text x={176} y={68} fontSize={15} fontWeight={600} fill={C.muted}>
-          x² − 2²
-        </text>
+        <Tex x={176} y={62} size={17} anchor="start" width={110} color={C.muted}>{String.raw`x^2-2^2`}</Tex>
       </g>
       <g className={`${a} ${fc(80)}`}>
-        <text x={176} y={94} fontSize={14} fontWeight={700} fill={C.good}>
-          = (x + 2)(x − 2)
-        </text>
+        <Tex x={176} y={92} size={17} anchor="start" width={130} color={C.good}>{String.raw`=(x+2)(x-2)`}</Tex>
       </g>
     </Svg>
   );

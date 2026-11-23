@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Right angle at C. Side BC (3) is opposite A and adjacent to B, so sin(A) = cos(B) = 3/5. Drawn 3 : 4 : 5.
 export const alt =
@@ -68,15 +68,15 @@ export default function Visual() {
           opposite A · adjacent to B
         </text>
 
-        <text className={cls("p1")} x={196} y={46} fontSize={13} fontWeight={600} fill={C.muted} stroke="none">
-          A + B = 90°
-        </text>
-        <text className={cls("p2")} x={196} y={82} fontSize={16} fontWeight={700} fill={C.ink} stroke="none">
-          sin(A) = 3/5
-        </text>
-        <text className={cls("p3")} x={196} y={110} fontSize={16} fontWeight={700} fill={C.primaryText} stroke="none">
-          cos(B) = 3/5
-        </text>
+        <g className={cls("p1")}>
+          <Tex x={196} y={40} size={14} anchor="start" width={110} color={C.muted}>{String.raw`A+B=90^\circ`}</Tex>
+        </g>
+        <g className={cls("p2")}>
+          <Tex x={196} y={80} size={16} anchor="start" width={110}>{String.raw`\sin(A)=\dfrac{3}{5}`}</Tex>
+        </g>
+        <g className={cls("p3")}>
+          <Tex x={196} y={120} size={16} anchor="start" width={110} color={C.primaryText}>{String.raw`\cos(B)=\dfrac{3}{5}`}</Tex>
+        </g>
       </g>
     </Svg>
   );

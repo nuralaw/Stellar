@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Line or curve: four dots (0, 5), (1, 10), (2, 20), (3, 40). A line misses them, the curve y = 5(2)^x hits all four.
 export const alt = "A scatterplot with dots at (0, 5), (1, 10), (2, 20) and (3, 40). A straight line misses every dot by a clear gap. The curve y = 5(2)^x passes through all four.";
@@ -76,12 +76,9 @@ export default function Visual() {
 
       {/* Key */}
       <g className={cls("hit")}>
-        <text x={64} y={40} fontSize={14} fontWeight={700} fill={C.primaryText}>
-          y = 5(2)
-          <tspan dy={-6} fontSize={11}>
-            x
-          </tspan>
-          <tspan dy={6}> fits all 4</tspan>
+        <Tex x={64} y={36} size={15} anchor="start" width={80} color={C.primaryText}>{String.raw`y=5(2)^x`}</Tex>
+        <text x={140} y={40} fontSize={14} fontWeight={700} fill={C.primaryText}>
+          fits all 4
         </text>
       </g>
       <text className={cls("miss")} x={64} y={58} fontSize={12} fill={C.muted}>

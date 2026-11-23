@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Linear equations in one variable: an equation is a balance. Make the same move on both sides until x is alone.
 export const alt = "3x + 2 = x + 8 on a balance: take x off both sides, then 2, then halve both sides. One x balances 3, so x = 3.";
@@ -39,12 +39,18 @@ const css = `
 @keyframes v-linear-equations-one-var-p2 { 0%, 43% { fill: ${C.soft} } 46%, 100% { fill: ${C.fill} } }
 .v-linear-equations-one-var-p3 { fill: ${C.fill}; animation-name: v-linear-equations-one-var-p3; }
 @keyframes v-linear-equations-one-var-p3 { 0%, 59% { fill: ${C.soft} } 63%, 100% { fill: ${C.fill} } }
-.v-linear-equations-one-var-t1 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t1; }
-@keyframes v-linear-equations-one-var-t1 { 0%, 27% { fill: ${C.primaryText} } 30%, 100% { fill: ${C.muted} } }
-.v-linear-equations-one-var-t2 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t2; }
-@keyframes v-linear-equations-one-var-t2 { 0%, 43% { fill: ${C.primaryText} } 46%, 100% { fill: ${C.muted} } }
-.v-linear-equations-one-var-t3 { fill: ${C.muted}; animation-name: v-linear-equations-one-var-t3; }
-@keyframes v-linear-equations-one-var-t3 { 0%, 59% { fill: ${C.primaryText} } 63%, 100% { fill: ${C.muted} } }
+.v-linear-equations-one-var-t1 { animation-name: v-linear-equations-one-var-t1; }
+@keyframes v-linear-equations-one-var-t1 { 0%, 27% { opacity: 1 } 30%, 100% { opacity: 0 } }
+.v-linear-equations-one-var-m1 { animation-name: v-linear-equations-one-var-m1; }
+@keyframes v-linear-equations-one-var-m1 { 0%, 27% { opacity: 0 } 30%, 100% { opacity: 1 } }
+.v-linear-equations-one-var-t2 { animation-name: v-linear-equations-one-var-t2; }
+@keyframes v-linear-equations-one-var-t2 { 0%, 43% { opacity: 1 } 46%, 100% { opacity: 0 } }
+.v-linear-equations-one-var-m2 { animation-name: v-linear-equations-one-var-m2; }
+@keyframes v-linear-equations-one-var-m2 { 0%, 43% { opacity: 0 } 46%, 100% { opacity: 1 } }
+.v-linear-equations-one-var-t3 { animation-name: v-linear-equations-one-var-t3; }
+@keyframes v-linear-equations-one-var-t3 { 0%, 59% { opacity: 1 } 63%, 100% { opacity: 0 } }
+.v-linear-equations-one-var-m3 { animation-name: v-linear-equations-one-var-m3; }
+@keyframes v-linear-equations-one-var-m3 { 0%, 59% { opacity: 0 } 63%, 100% { opacity: 1 } }
 
 /* The pieces a move takes away light up with it ... */
 .v-linear-equations-one-var-b1 { animation-name: v-linear-equations-one-var-b1; }
@@ -69,6 +75,10 @@ const css = `
 @keyframes v-linear-equations-one-var-out3 { 0%, 47% { opacity: 1; transform: none } 54%, 100% { opacity: 0; transform: translateY(-12px) } }
 
 /* What is left is the answer: it turns green */
+.v-linear-equations-one-var-eqInk { animation-name: v-linear-equations-one-var-eqInk; }
+@keyframes v-linear-equations-one-var-eqInk { 0%, 59% { opacity: 1 } 64%, 100% { opacity: 0 } }
+.v-linear-equations-one-var-eqOk { animation-name: v-linear-equations-one-var-eqOk; }
+@keyframes v-linear-equations-one-var-eqOk { 0%, 59% { opacity: 0 } 64%, 100% { opacity: 1 } }
 .v-linear-equations-one-var-okInk { fill: ${C.good}; animation-name: v-linear-equations-one-var-okInk; }
 @keyframes v-linear-equations-one-var-okInk { 0%, 59% { fill: ${C.ink} } 64%, 100% { fill: ${C.good} } }
 .v-linear-equations-one-var-okBox { fill: ${C.goodSoft}; stroke: ${C.good}; animation-name: v-linear-equations-one-var-okBox; }
@@ -98,15 +108,15 @@ function One({ x, row = 0, dot }: { x: number; row?: number; dot: string }) {
 }
 
 /** The two sides of one line of the equation; its = sign sits above the pivot. */
-function Sides({ l, r, y, size }: { l: string; r: string; y: number; size: number }) {
+function Sides({ l, r, y, size, color = C.ink }: { l: string; r: string; y: number; size: number; color?: string }) {
   return (
     <>
-      <text x={160 - size / 2} y={y} textAnchor="end">
+      <Tex x={160 - size * 0.75} y={y - size / 3} size={size + 1} anchor="end" width={110} color={color}>
         {l}
-      </text>
-      <text x={160 + size / 2} y={y} textAnchor="start">
+      </Tex>
+      <Tex x={160 + size * 0.75} y={y - size / 3} size={size + 1} anchor="start" width={110} color={color}>
         {r}
-      </text>
+      </Tex>
     </>
   );
 }
@@ -118,9 +128,16 @@ function Move({ n, label }: { n: number; label: string }) {
       {[17 + n * 34, 167 + n * 34].map((x) => (
         <g key={x}>
           <rect className={`v-linear-equations-one-var-a v-linear-equations-one-var-p${n}`} x={x - 15} y={132} width={30} height={18} rx={9} />
-          <text className={`v-linear-equations-one-var-a v-linear-equations-one-var-t${n}`} x={x} y={145} textAnchor="middle" fontSize={12} fontWeight={700}>
-            {label}
-          </text>
+          <g className={`v-linear-equations-one-var-a v-linear-equations-one-var-t${n}`}>
+            <Tex x={x} y={141} size={13} width={30} color={C.primaryText}>
+              {label}
+            </Tex>
+          </g>
+          <g className={`v-linear-equations-one-var-a v-linear-equations-one-var-m${n}`}>
+            <Tex x={x} y={141} size={13} width={30} color={C.muted}>
+              {label}
+            </Tex>
+          </g>
         </g>
       ))}
     </g>
@@ -135,30 +152,35 @@ export default function Visual() {
       <g className="v-linear-equations-one-var-a v-linear-equations-one-var-scene">
         {/* The given equation, kept as a note once the solving starts */}
         <g className="v-linear-equations-one-var-a v-linear-equations-one-var-given" fontSize={13} fontWeight={600} fill={C.muted}>
-          <Sides l="3x + 2" r="x + 8" y={38} size={13} />
-          <text x={160} y={38} textAnchor="middle">
+          <Sides l="3x+2" r="x+8" y={38} size={13} color={C.muted} />
+          <Tex x={160} y={38 - 4} size={14} width={20} color={C.muted}>
             =
-          </text>
+          </Tex>
         </g>
 
         {/* The equation as it stands now */}
         <g className="v-linear-equations-one-var-a v-linear-equations-one-var-pop" fontSize={18} fontWeight={700} fill={C.ink}>
-          <text className="v-linear-equations-one-var-a v-linear-equations-one-var-okInk" x={160} y={66} textAnchor="middle">
-            =
-          </text>
+          <g className="v-linear-equations-one-var-a v-linear-equations-one-var-eqInk">
+            <Tex x={160} y={60} size={19} width={20} color={C.ink}>
+              =
+            </Tex>
+          </g>
+          <g className="v-linear-equations-one-var-a v-linear-equations-one-var-eqOk">
+            <Tex x={160} y={60} size={19} width={20} color={C.good}>
+              =
+            </Tex>
+          </g>
           <g className="v-linear-equations-one-var-a v-linear-equations-one-var-s0">
-            <Sides l="3x + 2" r="x + 8" y={66} size={18} />
+            <Sides l="3x+2" r="x+8" y={66} size={18} />
           </g>
           <g className="v-linear-equations-one-var-a v-linear-equations-one-var-s1">
-            <Sides l="2x + 2" r="8" y={66} size={18} />
+            <Sides l="2x+2" r="8" y={66} size={18} />
           </g>
           <g className="v-linear-equations-one-var-a v-linear-equations-one-var-s2">
             <Sides l="2x" r="6" y={66} size={18} />
           </g>
           <g className="v-linear-equations-one-var-a v-linear-equations-one-var-s3">
-            <g className="v-linear-equations-one-var-a v-linear-equations-one-var-okInk">
-              <Sides l="x" r="3" y={66} size={18} />
-            </g>
+            <Sides l="x" r="3" y={66} size={18} color={C.good} />
           </g>
         </g>
 
@@ -191,9 +213,9 @@ export default function Visual() {
         <One x={249} dot="okDot" />
 
         {/* The same three moves under both sides */}
-        <Move n={1} label="− x" />
-        <Move n={2} label="− 2" />
-        <Move n={3} label="÷ 2" />
+        <Move n={1} label="-x" />
+        <Move n={2} label="-2" />
+        <Move n={3} label="\div 2" />
       </g>
     </Svg>
   );

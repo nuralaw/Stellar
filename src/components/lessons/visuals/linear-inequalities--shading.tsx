@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Reading a shaded graph: dashed line for < and >, solid line for ≤ and ≥; shade above for y >, below for y <.
 export const alt =
@@ -32,9 +32,9 @@ export default function Visual() {
       {/* Left: y > x − 1, dashed, shade above */}
       <g className={`${a} ${fc(4)}`}>
         <rect x={L} y={34} width={140} height={96} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
-        <text x={L + 70} y={26} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.ink}>
-          y &gt; x − 1
-        </text>
+        <Tex x={L + 70} y={18} size={16} width={130}>
+          {String.raw`y>x-1`}
+        </Tex>
       </g>
       <g className={`${a} ${fc(14)}`}>
         <polygon
@@ -57,9 +57,9 @@ export default function Visual() {
       {/* Right: y ≤ −x + 3, solid, shade below */}
       <g className={`${a} ${fc(50)}`}>
         <rect x={R} y={34} width={140} height={96} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
-        <text x={R + 70} y={26} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.ink}>
-          y ≤ −x + 3
-        </text>
+        <Tex x={R + 70} y={18} size={16} width={130}>
+          {String.raw`y\le -x+3`}
+        </Tex>
       </g>
       <g className={`${a} ${fc(60)}`}>
         <polygon

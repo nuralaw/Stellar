@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { ReferenceButton } from "@/components/reference/ReferenceButton";
 import { useFocusMode } from "@/lib/focus";
 import { exitFullscreen } from "@/lib/fullscreen";
 import { I, Icon } from "@/components/bank/icons";
@@ -211,7 +212,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const t = e.target as HTMLElement | null;
-      if (t?.closest?.("[data-calculator]") || t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) return;
+      if (t?.closest?.("[data-calculator], [data-reference]") || t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) return;
       const q = qs[pos];
       if (e.key === "ArrowRight") setPos((p) => Math.min(qs.length - 1, p + 1));
       else if (e.key === "ArrowLeft") setPos((p) => Math.max(0, p - 1));
@@ -239,7 +240,7 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
   return (
     <section className="mx-auto max-w-7xl px-4 md:px-8">
       <div className="sticky top-0 z-30 -mx-4 border-b border-line bg-bg/90 px-4 py-2.5 backdrop-blur md:-mx-8 md:px-8">
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3">
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-semibold">{ROUNDS[data.round].name} round</p>
             <p className="truncate text-xs text-muted tabular-nums">
@@ -247,17 +248,17 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
             </p>
           </div>
           <span
-            className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-danger/40 bg-danger-soft px-2.5 text-xs font-semibold text-danger"
+            className="inline-flex h-9 items-center gap-1.5 rounded-lg border border-danger/40 bg-danger-soft px-2 text-xs sm:px-2.5 font-semibold text-danger"
             title={fsRule ? "Leaving full screen annuls this attempt" : "Leaving this page annuls this attempt"}
           >
             <Icon d={WARN_ICON} className="h-4 w-4" strokeWidth={2} />
             <span className="hidden md:inline">{fsRule ? "Stay in full screen" : "Stay on this page"}</span>
           </span>
           <span
-            className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2.5 font-mono text-sm font-semibold tabular-nums ${lowTime ? "border-danger/50 bg-danger-soft text-danger" : "border-line bg-surface"}`}
+            className={`inline-flex h-9 items-center gap-1.5 rounded-lg border px-2 font-mono text-sm font-semibold tabular-nums sm:px-2.5 ${lowTime ? "border-danger/50 bg-danger-soft text-danger" : "border-line bg-surface"}`}
             aria-label="Time left"
           >
-            <Icon d={I.clock} className="h-4 w-4" />
+            <Icon d={I.clock} className="hidden h-4 w-4 min-[400px]:block" />
             {fmtClock(left)}
           </span>
           {isMath && (
@@ -274,7 +275,8 @@ export function CompeteRound({ data, userId, onDone, onExit }: { data: RoundData
               <Icon d={I.calculator} className="h-4.5 w-4.5" />
             </button>
           )}
-          <button type="button" onClick={() => setChecking(true)} className="h-9 rounded-lg bg-ink px-3 text-sm font-semibold text-bg hover:opacity-85">
+          {isMath && <ReferenceButton variant="icon" calcOpen={calcOpen} onCloseCalc={() => setCalcOpen(false)} />}
+          <button type="button" onClick={() => setChecking(true)} className="h-9 rounded-lg bg-ink px-2.5 text-sm font-semibold text-bg hover:opacity-85 sm:px-3">
             Submit
           </button>
         </div>

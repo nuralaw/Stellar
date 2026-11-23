@@ -97,12 +97,13 @@ export interface LessonBlocks {
 /** Block counts of one lesson (numbers only, safe to render on a lock page). */
 export function lessonBlocks(l: Lesson): LessonBlocks {
   const out: LessonBlocks = { examples: 0, quizzes: 0, checks: 0, desmos: 0 };
-  for (const s of l.steps) {
-    const t = s.block?.t;
-    if (t === "example") out.examples++;
-    else if (t === "quiz") out.quizzes++;
-    else if (t === "check") out.checks++;
-    else if (t === "desmos") out.desmos++;
+  for (const s of l.subtopics) {
+    if (s.example) out.examples++;
+    if (s.desmos) out.desmos++;
+    for (const t of s.tasks) {
+      if (t.kind === "bank") out.checks++;
+      else out.quizzes++;
+    }
   }
   return out;
 }

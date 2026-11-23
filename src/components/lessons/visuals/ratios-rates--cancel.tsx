@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Convert a rate: 90 km/h × (1,000 m)/(1 km) × (1 h)/(3,600 s). km cancels, h cancels, m/s is left: 25 m/s.
 export const alt = "90 km per hour multiplied by 1,000 m per km and by 1 hour per 3,600 s. The kilometers cancel and the hours cancel, leaving meters per second: 25 m/s.";
@@ -47,9 +47,7 @@ export default function Visual() {
           h
         </text>
         <line x1={10} y1={BAR} x2={62} y2={BAR} stroke={C.ink} strokeWidth={1.5} />
-        <text x={76} y={BAR + 5} fill={C.muted}>
-          ×
-        </text>
+        <Tex x={76} y={BAR} size={15} width={20} color={C.muted}>{String.raw`\times`}</Tex>
 
         {/* 1,000 m / 1 km */}
         <text x={106} y={NUM}>
@@ -65,9 +63,7 @@ export default function Visual() {
           km
         </text>
         <line x1={86} y1={BAR} x2={154} y2={BAR} stroke={C.ink} strokeWidth={1.5} />
-        <text x={168} y={BAR + 5} fill={C.muted}>
-          ×
-        </text>
+        <Tex x={168} y={BAR} size={15} width={20} color={C.muted}>{String.raw`\times`}</Tex>
 
         {/* 1 h / 3,600 s */}
         <text x={192} y={NUM}>
@@ -95,9 +91,7 @@ export default function Visual() {
 
       {/* Result */}
       <g className={cls("res")} textAnchor="middle">
-        <text x={160} y={150} fontSize={26} fontWeight={700} fill={C.primaryText}>
-          = 25 m/s
-        </text>
+        <Tex x={160} y={146} size={26} width={220} color={C.primaryText}>{String.raw`=25\ \text{m/s}`}</Tex>
       </g>
     </Svg>
   );

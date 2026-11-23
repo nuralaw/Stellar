@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Pick the group: a two-way table with Total row and column. "Given that the student takes the bus" makes the Bus column the group.
 export const alt = "A table of 50 students by grade and how they travel, with totals. Given the student takes the bus, the group is the Bus column, 30. Grade 9 on the bus is 18: probability 18/30 = 3/5.";
@@ -14,7 +14,8 @@ const css = `
 ${at("tbl", 2)}
 ${at("col", 16)}
 ${at("grp", 30)}
-${at("txt1", 32)}
+.${n("txt1")} { opacity: 0; animation-name: ${n("txt1")}; }
+@keyframes ${n("txt1")} { 0%, 32% { opacity: 0 } 37%, 52% { opacity: 1 } 56%, 100% { opacity: 0 } }
 ${at("fit", 48)}
 ${at("txt2", 56)}
 `;
@@ -109,9 +110,9 @@ export default function Visual() {
       <text className={cls("txt1")} x={160} y={142} fontSize={13} fontWeight={700} fill={C.primaryText} textAnchor="middle">
         group: the 30 bus riders
       </text>
-      <text className={cls("txt2")} x={160} y={162} fontSize={14} fontWeight={700} fill={C.good} textAnchor="middle">
-        fit 18 → 18/30 = 3/5
-      </text>
+      <g className={cls("txt2")}>
+        <Tex x={160} y={146} size={18} width={200} color={C.good}>{String.raw`\dfrac{18}{30}=\dfrac{3}{5}`}</Tex>
+      </g>
     </Svg>
   );
 }

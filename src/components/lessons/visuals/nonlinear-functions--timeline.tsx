@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // P = 400(2)^(x/3): the exponent x/3 grows by 1 every 3 hours, so the amount doubles every 3 hours.
 export const alt =
@@ -39,9 +39,7 @@ export default function Visual() {
         <text x={16} y={130} fontSize={11} fill={C.muted}>
           hours
         </text>
-        <text x={16} y={154} fontSize={11} fill={C.muted}>
-          x/3
-        </text>
+        <Tex x={14} y={154} size={14} anchor="start" width={44} color={C.muted}>{String.raw`\tfrac{x}{3}`}</Tex>
       </g>
 
       {STOPS.map((s) => (

@@ -8,14 +8,26 @@ import * as areaVolumeSheet from "./area-volume--sheet";
 import * as areaVolumeSilo from "./area-volume--silo";
 import * as areaVolumeSimilar from "./area-volume--similar";
 import * as areaVolumeTrap from "./area-volume--trap";
+import * as areaVolumeTrapezoid from "./area-volume--trapezoid";
 import * as boundaries from "./boundaries";
+import * as boundariesClauseTest from "./boundaries--clause-test";
+import * as boundariesColonDash from "./boundaries--colon-dash";
+import * as boundariesDependent from "./boundaries--dependent";
 import * as boundariesFanboys from "./boundaries--fanboys";
+import * as boundariesHoweverSlot from "./boundaries--however-slot";
+import * as boundariesNoMarks from "./boundaries--no-marks";
+import * as boundariesPairs from "./boundaries--pairs";
 import * as boundariesTree from "./boundaries--tree";
 import * as centralIdeas from "./central-ideas";
+import * as centralIdeasFindLine from "./central-ideas--find-line";
 import * as centralIdeasGrantPoint from "./central-ideas--grant-point";
 import * as centralIdeasRightSize from "./central-ideas--right-size";
+import * as centralIdeasSaysDoes from "./central-ideas--says-does";
+import * as centralIdeasSmallStep from "./central-ideas--small-step";
+import * as centralIdeasStrength from "./central-ideas--strength";
 import * as circles from "./circles";
 import * as circlesCenterPoint from "./circles--center-point";
+import * as circlesDiameter from "./circles--diameter";
 import * as circlesInscribed from "./circles--inscribed";
 import * as circlesRadians from "./circles--radians";
 import * as circlesSector from "./circles--sector";
@@ -23,53 +35,108 @@ import * as circlesTangent from "./circles--tangent";
 import * as circlesTiles from "./circles--tiles";
 import * as commandOfEvidenceQuantitative from "./command-of-evidence-quantitative";
 import * as commandOfEvidenceQuantitativeCountShare from "./command-of-evidence-quantitative--count-share";
+import * as commandOfEvidenceQuantitativeCrossOut from "./command-of-evidence-quantitative--cross-out";
 import * as commandOfEvidenceQuantitativeGroupedBars from "./command-of-evidence-quantitative--grouped-bars";
 import * as commandOfEvidenceQuantitativeLineTrend from "./command-of-evidence-quantitative--line-trend";
+import * as commandOfEvidenceQuantitativeReadHeadings from "./command-of-evidence-quantitative--read-headings";
+import * as commandOfEvidenceQuantitativeTwoParts from "./command-of-evidence-quantitative--two-parts";
 import * as commandOfEvidenceTextual from "./command-of-evidence-textual";
 import * as commandOfEvidenceTextualChain from "./command-of-evidence-textual--chain";
+import * as commandOfEvidenceTextualClaimJob from "./command-of-evidence-textual--claim-job";
 import * as commandOfEvidenceTextualMatchWords from "./command-of-evidence-textual--match-words";
+import * as commandOfEvidenceTextualOldWords from "./command-of-evidence-textual--old-words";
+import * as commandOfEvidenceTextualPredictMatch from "./command-of-evidence-textual--predict-match";
+import * as commandOfEvidenceTextualWeakenFlip from "./command-of-evidence-textual--weaken-flip";
 import * as crossTextConnections from "./cross-text-connections";
+import * as crossTextConnectionsAdds from "./cross-text-connections--adds";
+import * as crossTextConnectionsEvidenceTest from "./cross-text-connections--evidence-test";
+import * as crossTextConnectionsHalves from "./cross-text-connections--halves";
+import * as crossTextConnectionsStrength from "./cross-text-connections--strength";
 import * as crossTextConnectionsVenn from "./cross-text-connections--venn";
 import * as desmos from "./desmos";
+import * as desmosBothSides from "./desmos--both-sides";
+import * as desmosListsRestrictions from "./desmos--lists-restrictions";
+import * as desmosRegression from "./desmos--regression";
+import * as desmosSettingsTyping from "./desmos--settings-typing";
+import * as desmosSlider from "./desmos--slider";
+import * as desmosTurningPoint from "./desmos--turning-point";
 import * as digitalSatFormat from "./digital-sat-format";
 import * as digitalSatFormatAdaptive from "./digital-sat-format--adaptive";
 import * as digitalSatFormatDecimal from "./digital-sat-format--decimal";
 import * as digitalSatFormatGuess from "./digital-sat-format--guess";
+import * as digitalSatFormatOrder from "./digital-sat-format--order";
 import * as digitalSatFormatOrderMath from "./digital-sat-format--order-math";
 import * as digitalSatFormatOrderRw from "./digital-sat-format--order-rw";
 import * as digitalSatFormatScore from "./digital-sat-format--score";
 import * as digitalSatFormatShape from "./digital-sat-format--shape";
 import * as digitalSatFormatTools from "./digital-sat-format--tools";
+import * as digitalSatFormatToolsBySection from "./digital-sat-format--tools-by-section";
 import * as digitalSatFormatTyped from "./digital-sat-format--typed";
 import * as equivalentExpressions from "./equivalent-expressions";
 import * as equivalentExpressionsExponents from "./equivalent-expressions--exponents";
+import * as equivalentExpressionsFormula from "./equivalent-expressions--formula";
+import * as equivalentExpressionsFractions from "./equivalent-expressions--fractions";
+import * as equivalentExpressionsMatch from "./equivalent-expressions--match";
+import * as equivalentExpressionsPowers from "./equivalent-expressions--powers";
 import * as equivalentExpressionsSquares from "./equivalent-expressions--squares";
 import * as equivalentExpressionsTiles from "./equivalent-expressions--tiles";
 import * as formStructureSense from "./form-structure-sense";
 import * as formStructureSenseApostrophes from "./form-structure-sense--apostrophes";
+import * as formStructureSenseModifier from "./form-structure-sense--modifier";
+import * as formStructureSenseParallel from "./form-structure-sense--parallel";
+import * as formStructureSensePronounArrow from "./form-structure-sense--pronoun-arrow";
+import * as formStructureSenseTimeline from "./form-structure-sense--timeline";
 import * as formStructureSenseVerbSlot from "./form-structure-sense--verb-slot";
 import * as inferenceSample from "./inference-sample";
+import * as inferenceSampleFairPick from "./inference-sample--fair-pick";
+import * as inferenceSampleMarginFactors from "./inference-sample--margin-factors";
+import * as inferenceSampleMeanVsPerson from "./inference-sample--mean-vs-person";
+import * as inferenceSampleNotGuarantee from "./inference-sample--not-guarantee";
 import * as inferenceSampleOverlap from "./inference-sample--overlap";
 import * as inferenceSampleRange from "./inference-sample--range";
+import * as inferenceSampleScale from "./inference-sample--scale";
 import * as inferenceSampleSize from "./inference-sample--size";
 import * as inferences from "./inferences";
+import * as inferencesCues from "./inferences--cues";
+import * as inferencesNotStronger from "./inferences--not-stronger";
+import * as inferencesPredict from "./inferences--predict";
 import * as inferencesScope from "./inferences--scope";
 import * as inferencesStrength from "./inferences--strength";
+import * as inferencesTraps from "./inferences--traps";
+import * as inferencesUseEveryFact from "./inferences--use-every-fact";
 import * as linearEquationsOneVar from "./linear-equations-one-var";
 import * as linearEquationsOneVarBalance from "./linear-equations-one-var--balance";
+import * as linearEquationsOneVarBlock from "./linear-equations-one-var--block";
+import * as linearEquationsOneVarClearDenominators from "./linear-equations-one-var--clear-denominators";
+import * as linearEquationsOneVarFeeRate from "./linear-equations-one-var--fee-rate";
+import * as linearEquationsOneVarRearrange from "./linear-equations-one-var--rearrange";
 import * as linearEquationsOneVarSolutions from "./linear-equations-one-var--solutions";
 import * as linearEquationsTwoVar from "./linear-equations-two-var";
+import * as linearEquationsTwoVarParallel from "./linear-equations-two-var--parallel";
 import * as linearEquationsTwoVarPerpendicular from "./linear-equations-two-var--perpendicular";
 import * as linearEquationsTwoVarSlopeFormula from "./linear-equations-two-var--slope-formula";
+import * as linearEquationsTwoVarSlopeIntercept from "./linear-equations-two-var--slope-intercept";
+import * as linearEquationsTwoVarStoryEquation from "./linear-equations-two-var--story-equation";
+import * as linearEquationsTwoVarWriteEquation from "./linear-equations-two-var--write-equation";
 import * as linearFunctions from "./linear-functions";
 import * as linearFunctionsExtendBack from "./linear-functions--extend-back";
+import * as linearFunctionsFirstNUnits from "./linear-functions--first-n-units";
+import * as linearFunctionsInputOutput from "./linear-functions--input-output";
+import * as linearFunctionsRateStart from "./linear-functions--rate-start";
 import * as linearFunctionsReadGraph from "./linear-functions--read-graph";
+import * as linearFunctionsTranslate from "./linear-functions--translate";
 import * as linearInequalities from "./linear-inequalities";
+import * as linearInequalitiesBudget from "./linear-inequalities--budget";
+import * as linearInequalitiesFeeRate from "./linear-inequalities--fee-rate";
 import * as linearInequalitiesMirror from "./linear-inequalities--mirror";
+import * as linearInequalitiesOverlap from "./linear-inequalities--overlap";
 import * as linearInequalitiesShading from "./linear-inequalities--shading";
+import * as linearInequalitiesWords from "./linear-inequalities--words";
 import * as linesAnglesTriangles from "./lines-angles-triangles";
 import * as linesAnglesTrianglesAa from "./lines-angles-triangles--aa";
+import * as linesAnglesTrianglesCongruence from "./lines-angles-triangles--congruence";
 import * as linesAnglesTrianglesExterior from "./lines-angles-triangles--exterior";
+import * as linesAnglesTrianglesInequality from "./lines-angles-triangles--inequality";
 import * as linesAnglesTrianglesIsosceles from "./lines-angles-triangles--isosceles";
 import * as linesAnglesTrianglesNested from "./lines-angles-triangles--nested";
 import * as linesAnglesTrianglesSimilar from "./lines-angles-triangles--similar";
@@ -78,8 +145,17 @@ import * as linesAnglesTrianglesTrap from "./lines-angles-triangles--trap";
 import * as nonlinearEquations from "./nonlinear-equations";
 import * as nonlinearEquationsDiscriminant from "./nonlinear-equations--discriminant";
 import * as nonlinearEquationsExtraneous from "./nonlinear-equations--extraneous";
+import * as nonlinearEquationsFormula from "./nonlinear-equations--formula";
+import * as nonlinearEquationsSumProduct from "./nonlinear-equations--sum-product";
+import * as nonlinearEquationsTwoCases from "./nonlinear-equations--two-cases";
+import * as nonlinearEquationsZeroProduct from "./nonlinear-equations--zero-product";
 import * as nonlinearFunctions from "./nonlinear-functions";
+import * as nonlinearFunctionsAxis from "./nonlinear-functions--axis";
+import * as nonlinearFunctionsForms from "./nonlinear-functions--forms";
+import * as nonlinearFunctionsGrowDecay from "./nonlinear-functions--grow-decay";
 import * as nonlinearFunctionsGrowth from "./nonlinear-functions--growth";
+import * as nonlinearFunctionsPeriods from "./nonlinear-functions--periods";
+import * as nonlinearFunctionsShifts from "./nonlinear-functions--shifts";
 import * as nonlinearFunctionsTimeline from "./nonlinear-functions--timeline";
 import * as oneVarData from "./one-var-data";
 import * as oneVarDataHistogram from "./one-var-data--histogram";
@@ -88,52 +164,97 @@ import * as oneVarDataMedianTable from "./one-var-data--median-table";
 import * as oneVarDataReadPlots from "./one-var-data--read-plots";
 import * as oneVarDataSd from "./one-var-data--sd";
 import * as oneVarDataTotals from "./one-var-data--totals";
+import * as oneVarDataWeighted from "./one-var-data--weighted";
 import * as pacingAndGuessing from "./pacing-and-guessing";
+import * as pacingAndGuessingBudget from "./pacing-and-guessing--budget";
+import * as pacingAndGuessingCheckScreen from "./pacing-and-guessing--check-screen";
 import * as pacingAndGuessingCrossOut from "./pacing-and-guessing--cross-out";
+import * as pacingAndGuessingFillBlanks from "./pacing-and-guessing--fill-blanks";
 import * as pacingAndGuessingFlagBlank from "./pacing-and-guessing--flag-blank";
 import * as percentages from "./percentages";
 import * as percentagesBars from "./percentages--bars";
 import * as percentagesChain from "./percentages--chain";
+import * as percentagesChange from "./percentages--change";
+import * as percentagesGoBack from "./percentages--go-back";
 import * as percentagesMultiplier from "./percentages--multiplier";
+import * as percentagesPartWhole from "./percentages--part-whole";
 import * as probability from "./probability";
+import * as probabilityCells from "./probability--cells";
+import * as probabilityCounts from "./probability--counts";
 import * as probabilityFlipped from "./probability--flipped";
+import * as probabilityFraction from "./probability--fraction";
+import * as probabilityIndependent from "./probability--independent";
 import * as probabilityMissing from "./probability--missing";
+import * as probabilityOrOverlap from "./probability--or-overlap";
 import * as probabilityTable from "./probability--table";
 import * as ratiosRates from "./ratios-rates";
 import * as ratiosRatesCancel from "./ratios-rates--cancel";
+import * as ratiosRatesDensity from "./ratios-rates--density";
+import * as ratiosRatesParts from "./ratios-rates--parts";
+import * as ratiosRatesScale from "./ratios-rates--scale";
 import * as ratiosRatesSquare from "./ratios-rates--square";
 import * as rhetoricalSynthesis from "./rhetorical-synthesis";
+import * as rhetoricalSynthesisAudience from "./rhetorical-synthesis--audience";
 import * as rhetoricalSynthesisChecklist from "./rhetorical-synthesis--checklist";
+import * as rhetoricalSynthesisCompare from "./rhetorical-synthesis--compare";
+import * as rhetoricalSynthesisEmphasis from "./rhetorical-synthesis--emphasis";
+import * as rhetoricalSynthesisGoalFirst from "./rhetorical-synthesis--goal-first";
+import * as rhetoricalSynthesisStudy from "./rhetorical-synthesis--study";
+import * as rhetoricalSynthesisTwoJobs from "./rhetorical-synthesis--two-jobs";
 import * as rightTrianglesTrig from "./right-triangles-trig";
 import * as rightTrianglesTrigBuild from "./right-triangles-trig--build";
 import * as rightTrianglesTrigComplement from "./right-triangles-trig--complement";
+import * as rightTrianglesTrigPythagoras from "./right-triangles-trig--pythagoras";
+import * as rightTrianglesTrigRadians from "./right-triangles-trig--radians";
 import * as rightTrianglesTrigRatios from "./right-triangles-trig--ratios";
 import * as rightTrianglesTrigSimilar from "./right-triangles-trig--similar";
 import * as rightTrianglesTrigSpecial from "./right-triangles-trig--special";
 import * as rightTrianglesTrigUnitCircle from "./right-triangles-trig--unit-circle";
 import * as statisticalClaims from "./statistical-claims";
+import * as statisticalClaimsAssociation from "./statistical-claims--association";
+import * as statisticalClaimsBias from "./statistical-claims--bias";
+import * as statisticalClaimsConfounder from "./statistical-claims--confounder";
 import * as statisticalClaimsDesign from "./statistical-claims--design";
 import * as statisticalClaimsGrid from "./statistical-claims--grid";
 import * as statisticalClaimsSample from "./statistical-claims--sample";
 import * as systemsLinear from "./systems-linear";
+import * as systemsLinearCombine from "./systems-linear--combine";
 import * as systemsLinearLines from "./systems-linear--lines";
 import * as systemsLinearMultiply from "./systems-linear--multiply";
+import * as systemsLinearStory from "./systems-linear--story";
+import * as systemsLinearSubstitute from "./systems-linear--substitute";
+import * as systemsLinearThreeCases from "./systems-linear--three-cases";
 import * as textStructurePurpose from "./text-structure-purpose";
+import * as textStructurePurposeNeighbors from "./text-structure-purpose--neighbors";
+import * as textStructurePurposeStrength from "./text-structure-purpose--strength";
 import * as textStructurePurposeStructure from "./text-structure-purpose--structure";
+import * as textStructurePurposeTraps from "./text-structure-purpose--traps";
+import * as textStructurePurposeTurn from "./text-structure-purpose--turn";
 import * as textStructurePurposeVerbs from "./text-structure-purpose--verbs";
 import * as transitions from "./transitions";
+import * as transitionsAddExample from "./transitions--add-example";
 import * as transitionsBuckets from "./transitions--buckets";
+import * as transitionsConcession from "./transitions--concession";
+import * as transitionsContrastKinds from "./transitions--contrast-kinds";
+import * as transitionsInFact from "./transitions--in-fact";
+import * as transitionsPhrase from "./transitions--phrase";
+import * as transitionsResultTime from "./transitions--result-time";
 import * as twoVarData from "./two-var-data";
 import * as twoVarDataAssociation from "./two-var-data--association";
 import * as twoVarDataCurve from "./two-var-data--curve";
 import * as twoVarDataGap from "./two-var-data--gap";
+import * as twoVarDataLineGraph from "./two-var-data--line-graph";
 import * as twoVarDataPredict from "./two-var-data--predict";
 import * as twoVarDataScale from "./two-var-data--scale";
 import * as twoVarDataSlope from "./two-var-data--slope";
 import * as wordsInContext from "./words-in-context";
 import * as wordsInContextCharge from "./words-in-context--charge";
+import * as wordsInContextCluePredict from "./words-in-context--clue-predict";
 import * as wordsInContextContrastSide from "./words-in-context--contrast-side";
+import * as wordsInContextNegation from "./words-in-context--negation";
+import * as wordsInContextSecondMeaning from "./words-in-context--second-meaning";
 import * as wordsInContextStrength from "./words-in-context--strength";
+import * as wordsInContextTopicTrap from "./words-in-context--topic-trap";
 
 /** Lesson visual per lesson slug. */
 export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
@@ -145,14 +266,26 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "area-volume--silo": { Visual: areaVolumeSilo.default, alt: areaVolumeSilo.alt },
   "area-volume--similar": { Visual: areaVolumeSimilar.default, alt: areaVolumeSimilar.alt },
   "area-volume--trap": { Visual: areaVolumeTrap.default, alt: areaVolumeTrap.alt },
+  "area-volume--trapezoid": { Visual: areaVolumeTrapezoid.default, alt: areaVolumeTrapezoid.alt },
   "boundaries": { Visual: boundaries.default, alt: boundaries.alt },
+  "boundaries--clause-test": { Visual: boundariesClauseTest.default, alt: boundariesClauseTest.alt },
+  "boundaries--colon-dash": { Visual: boundariesColonDash.default, alt: boundariesColonDash.alt },
+  "boundaries--dependent": { Visual: boundariesDependent.default, alt: boundariesDependent.alt },
   "boundaries--fanboys": { Visual: boundariesFanboys.default, alt: boundariesFanboys.alt },
+  "boundaries--however-slot": { Visual: boundariesHoweverSlot.default, alt: boundariesHoweverSlot.alt },
+  "boundaries--no-marks": { Visual: boundariesNoMarks.default, alt: boundariesNoMarks.alt },
+  "boundaries--pairs": { Visual: boundariesPairs.default, alt: boundariesPairs.alt },
   "boundaries--tree": { Visual: boundariesTree.default, alt: boundariesTree.alt },
   "central-ideas": { Visual: centralIdeas.default, alt: centralIdeas.alt },
+  "central-ideas--find-line": { Visual: centralIdeasFindLine.default, alt: centralIdeasFindLine.alt },
   "central-ideas--grant-point": { Visual: centralIdeasGrantPoint.default, alt: centralIdeasGrantPoint.alt },
   "central-ideas--right-size": { Visual: centralIdeasRightSize.default, alt: centralIdeasRightSize.alt },
+  "central-ideas--says-does": { Visual: centralIdeasSaysDoes.default, alt: centralIdeasSaysDoes.alt },
+  "central-ideas--small-step": { Visual: centralIdeasSmallStep.default, alt: centralIdeasSmallStep.alt },
+  "central-ideas--strength": { Visual: centralIdeasStrength.default, alt: centralIdeasStrength.alt },
   "circles": { Visual: circles.default, alt: circles.alt },
   "circles--center-point": { Visual: circlesCenterPoint.default, alt: circlesCenterPoint.alt },
+  "circles--diameter": { Visual: circlesDiameter.default, alt: circlesDiameter.alt },
   "circles--inscribed": { Visual: circlesInscribed.default, alt: circlesInscribed.alt },
   "circles--radians": { Visual: circlesRadians.default, alt: circlesRadians.alt },
   "circles--sector": { Visual: circlesSector.default, alt: circlesSector.alt },
@@ -160,53 +293,108 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "circles--tiles": { Visual: circlesTiles.default, alt: circlesTiles.alt },
   "command-of-evidence-quantitative": { Visual: commandOfEvidenceQuantitative.default, alt: commandOfEvidenceQuantitative.alt },
   "command-of-evidence-quantitative--count-share": { Visual: commandOfEvidenceQuantitativeCountShare.default, alt: commandOfEvidenceQuantitativeCountShare.alt },
+  "command-of-evidence-quantitative--cross-out": { Visual: commandOfEvidenceQuantitativeCrossOut.default, alt: commandOfEvidenceQuantitativeCrossOut.alt },
   "command-of-evidence-quantitative--grouped-bars": { Visual: commandOfEvidenceQuantitativeGroupedBars.default, alt: commandOfEvidenceQuantitativeGroupedBars.alt },
   "command-of-evidence-quantitative--line-trend": { Visual: commandOfEvidenceQuantitativeLineTrend.default, alt: commandOfEvidenceQuantitativeLineTrend.alt },
+  "command-of-evidence-quantitative--read-headings": { Visual: commandOfEvidenceQuantitativeReadHeadings.default, alt: commandOfEvidenceQuantitativeReadHeadings.alt },
+  "command-of-evidence-quantitative--two-parts": { Visual: commandOfEvidenceQuantitativeTwoParts.default, alt: commandOfEvidenceQuantitativeTwoParts.alt },
   "command-of-evidence-textual": { Visual: commandOfEvidenceTextual.default, alt: commandOfEvidenceTextual.alt },
   "command-of-evidence-textual--chain": { Visual: commandOfEvidenceTextualChain.default, alt: commandOfEvidenceTextualChain.alt },
+  "command-of-evidence-textual--claim-job": { Visual: commandOfEvidenceTextualClaimJob.default, alt: commandOfEvidenceTextualClaimJob.alt },
   "command-of-evidence-textual--match-words": { Visual: commandOfEvidenceTextualMatchWords.default, alt: commandOfEvidenceTextualMatchWords.alt },
+  "command-of-evidence-textual--old-words": { Visual: commandOfEvidenceTextualOldWords.default, alt: commandOfEvidenceTextualOldWords.alt },
+  "command-of-evidence-textual--predict-match": { Visual: commandOfEvidenceTextualPredictMatch.default, alt: commandOfEvidenceTextualPredictMatch.alt },
+  "command-of-evidence-textual--weaken-flip": { Visual: commandOfEvidenceTextualWeakenFlip.default, alt: commandOfEvidenceTextualWeakenFlip.alt },
   "cross-text-connections": { Visual: crossTextConnections.default, alt: crossTextConnections.alt },
+  "cross-text-connections--adds": { Visual: crossTextConnectionsAdds.default, alt: crossTextConnectionsAdds.alt },
+  "cross-text-connections--evidence-test": { Visual: crossTextConnectionsEvidenceTest.default, alt: crossTextConnectionsEvidenceTest.alt },
+  "cross-text-connections--halves": { Visual: crossTextConnectionsHalves.default, alt: crossTextConnectionsHalves.alt },
+  "cross-text-connections--strength": { Visual: crossTextConnectionsStrength.default, alt: crossTextConnectionsStrength.alt },
   "cross-text-connections--venn": { Visual: crossTextConnectionsVenn.default, alt: crossTextConnectionsVenn.alt },
   "desmos": { Visual: desmos.default, alt: desmos.alt },
+  "desmos--both-sides": { Visual: desmosBothSides.default, alt: desmosBothSides.alt },
+  "desmos--lists-restrictions": { Visual: desmosListsRestrictions.default, alt: desmosListsRestrictions.alt },
+  "desmos--regression": { Visual: desmosRegression.default, alt: desmosRegression.alt },
+  "desmos--settings-typing": { Visual: desmosSettingsTyping.default, alt: desmosSettingsTyping.alt },
+  "desmos--slider": { Visual: desmosSlider.default, alt: desmosSlider.alt },
+  "desmos--turning-point": { Visual: desmosTurningPoint.default, alt: desmosTurningPoint.alt },
   "digital-sat-format": { Visual: digitalSatFormat.default, alt: digitalSatFormat.alt },
   "digital-sat-format--adaptive": { Visual: digitalSatFormatAdaptive.default, alt: digitalSatFormatAdaptive.alt },
   "digital-sat-format--decimal": { Visual: digitalSatFormatDecimal.default, alt: digitalSatFormatDecimal.alt },
   "digital-sat-format--guess": { Visual: digitalSatFormatGuess.default, alt: digitalSatFormatGuess.alt },
+  "digital-sat-format--order": { Visual: digitalSatFormatOrder.default, alt: digitalSatFormatOrder.alt },
   "digital-sat-format--order-math": { Visual: digitalSatFormatOrderMath.default, alt: digitalSatFormatOrderMath.alt },
   "digital-sat-format--order-rw": { Visual: digitalSatFormatOrderRw.default, alt: digitalSatFormatOrderRw.alt },
   "digital-sat-format--score": { Visual: digitalSatFormatScore.default, alt: digitalSatFormatScore.alt },
   "digital-sat-format--shape": { Visual: digitalSatFormatShape.default, alt: digitalSatFormatShape.alt },
   "digital-sat-format--tools": { Visual: digitalSatFormatTools.default, alt: digitalSatFormatTools.alt },
+  "digital-sat-format--tools-by-section": { Visual: digitalSatFormatToolsBySection.default, alt: digitalSatFormatToolsBySection.alt },
   "digital-sat-format--typed": { Visual: digitalSatFormatTyped.default, alt: digitalSatFormatTyped.alt },
   "equivalent-expressions": { Visual: equivalentExpressions.default, alt: equivalentExpressions.alt },
   "equivalent-expressions--exponents": { Visual: equivalentExpressionsExponents.default, alt: equivalentExpressionsExponents.alt },
+  "equivalent-expressions--formula": { Visual: equivalentExpressionsFormula.default, alt: equivalentExpressionsFormula.alt },
+  "equivalent-expressions--fractions": { Visual: equivalentExpressionsFractions.default, alt: equivalentExpressionsFractions.alt },
+  "equivalent-expressions--match": { Visual: equivalentExpressionsMatch.default, alt: equivalentExpressionsMatch.alt },
+  "equivalent-expressions--powers": { Visual: equivalentExpressionsPowers.default, alt: equivalentExpressionsPowers.alt },
   "equivalent-expressions--squares": { Visual: equivalentExpressionsSquares.default, alt: equivalentExpressionsSquares.alt },
   "equivalent-expressions--tiles": { Visual: equivalentExpressionsTiles.default, alt: equivalentExpressionsTiles.alt },
   "form-structure-sense": { Visual: formStructureSense.default, alt: formStructureSense.alt },
   "form-structure-sense--apostrophes": { Visual: formStructureSenseApostrophes.default, alt: formStructureSenseApostrophes.alt },
+  "form-structure-sense--modifier": { Visual: formStructureSenseModifier.default, alt: formStructureSenseModifier.alt },
+  "form-structure-sense--parallel": { Visual: formStructureSenseParallel.default, alt: formStructureSenseParallel.alt },
+  "form-structure-sense--pronoun-arrow": { Visual: formStructureSensePronounArrow.default, alt: formStructureSensePronounArrow.alt },
+  "form-structure-sense--timeline": { Visual: formStructureSenseTimeline.default, alt: formStructureSenseTimeline.alt },
   "form-structure-sense--verb-slot": { Visual: formStructureSenseVerbSlot.default, alt: formStructureSenseVerbSlot.alt },
   "inference-sample": { Visual: inferenceSample.default, alt: inferenceSample.alt },
+  "inference-sample--fair-pick": { Visual: inferenceSampleFairPick.default, alt: inferenceSampleFairPick.alt },
+  "inference-sample--margin-factors": { Visual: inferenceSampleMarginFactors.default, alt: inferenceSampleMarginFactors.alt },
+  "inference-sample--mean-vs-person": { Visual: inferenceSampleMeanVsPerson.default, alt: inferenceSampleMeanVsPerson.alt },
+  "inference-sample--not-guarantee": { Visual: inferenceSampleNotGuarantee.default, alt: inferenceSampleNotGuarantee.alt },
   "inference-sample--overlap": { Visual: inferenceSampleOverlap.default, alt: inferenceSampleOverlap.alt },
   "inference-sample--range": { Visual: inferenceSampleRange.default, alt: inferenceSampleRange.alt },
+  "inference-sample--scale": { Visual: inferenceSampleScale.default, alt: inferenceSampleScale.alt },
   "inference-sample--size": { Visual: inferenceSampleSize.default, alt: inferenceSampleSize.alt },
   "inferences": { Visual: inferences.default, alt: inferences.alt },
+  "inferences--cues": { Visual: inferencesCues.default, alt: inferencesCues.alt },
+  "inferences--not-stronger": { Visual: inferencesNotStronger.default, alt: inferencesNotStronger.alt },
+  "inferences--predict": { Visual: inferencesPredict.default, alt: inferencesPredict.alt },
   "inferences--scope": { Visual: inferencesScope.default, alt: inferencesScope.alt },
   "inferences--strength": { Visual: inferencesStrength.default, alt: inferencesStrength.alt },
+  "inferences--traps": { Visual: inferencesTraps.default, alt: inferencesTraps.alt },
+  "inferences--use-every-fact": { Visual: inferencesUseEveryFact.default, alt: inferencesUseEveryFact.alt },
   "linear-equations-one-var": { Visual: linearEquationsOneVar.default, alt: linearEquationsOneVar.alt },
   "linear-equations-one-var--balance": { Visual: linearEquationsOneVarBalance.default, alt: linearEquationsOneVarBalance.alt },
+  "linear-equations-one-var--block": { Visual: linearEquationsOneVarBlock.default, alt: linearEquationsOneVarBlock.alt },
+  "linear-equations-one-var--clear-denominators": { Visual: linearEquationsOneVarClearDenominators.default, alt: linearEquationsOneVarClearDenominators.alt },
+  "linear-equations-one-var--fee-rate": { Visual: linearEquationsOneVarFeeRate.default, alt: linearEquationsOneVarFeeRate.alt },
+  "linear-equations-one-var--rearrange": { Visual: linearEquationsOneVarRearrange.default, alt: linearEquationsOneVarRearrange.alt },
   "linear-equations-one-var--solutions": { Visual: linearEquationsOneVarSolutions.default, alt: linearEquationsOneVarSolutions.alt },
   "linear-equations-two-var": { Visual: linearEquationsTwoVar.default, alt: linearEquationsTwoVar.alt },
+  "linear-equations-two-var--parallel": { Visual: linearEquationsTwoVarParallel.default, alt: linearEquationsTwoVarParallel.alt },
   "linear-equations-two-var--perpendicular": { Visual: linearEquationsTwoVarPerpendicular.default, alt: linearEquationsTwoVarPerpendicular.alt },
   "linear-equations-two-var--slope-formula": { Visual: linearEquationsTwoVarSlopeFormula.default, alt: linearEquationsTwoVarSlopeFormula.alt },
+  "linear-equations-two-var--slope-intercept": { Visual: linearEquationsTwoVarSlopeIntercept.default, alt: linearEquationsTwoVarSlopeIntercept.alt },
+  "linear-equations-two-var--story-equation": { Visual: linearEquationsTwoVarStoryEquation.default, alt: linearEquationsTwoVarStoryEquation.alt },
+  "linear-equations-two-var--write-equation": { Visual: linearEquationsTwoVarWriteEquation.default, alt: linearEquationsTwoVarWriteEquation.alt },
   "linear-functions": { Visual: linearFunctions.default, alt: linearFunctions.alt },
   "linear-functions--extend-back": { Visual: linearFunctionsExtendBack.default, alt: linearFunctionsExtendBack.alt },
+  "linear-functions--first-n-units": { Visual: linearFunctionsFirstNUnits.default, alt: linearFunctionsFirstNUnits.alt },
+  "linear-functions--input-output": { Visual: linearFunctionsInputOutput.default, alt: linearFunctionsInputOutput.alt },
+  "linear-functions--rate-start": { Visual: linearFunctionsRateStart.default, alt: linearFunctionsRateStart.alt },
   "linear-functions--read-graph": { Visual: linearFunctionsReadGraph.default, alt: linearFunctionsReadGraph.alt },
+  "linear-functions--translate": { Visual: linearFunctionsTranslate.default, alt: linearFunctionsTranslate.alt },
   "linear-inequalities": { Visual: linearInequalities.default, alt: linearInequalities.alt },
+  "linear-inequalities--budget": { Visual: linearInequalitiesBudget.default, alt: linearInequalitiesBudget.alt },
+  "linear-inequalities--fee-rate": { Visual: linearInequalitiesFeeRate.default, alt: linearInequalitiesFeeRate.alt },
   "linear-inequalities--mirror": { Visual: linearInequalitiesMirror.default, alt: linearInequalitiesMirror.alt },
+  "linear-inequalities--overlap": { Visual: linearInequalitiesOverlap.default, alt: linearInequalitiesOverlap.alt },
   "linear-inequalities--shading": { Visual: linearInequalitiesShading.default, alt: linearInequalitiesShading.alt },
+  "linear-inequalities--words": { Visual: linearInequalitiesWords.default, alt: linearInequalitiesWords.alt },
   "lines-angles-triangles": { Visual: linesAnglesTriangles.default, alt: linesAnglesTriangles.alt },
   "lines-angles-triangles--aa": { Visual: linesAnglesTrianglesAa.default, alt: linesAnglesTrianglesAa.alt },
+  "lines-angles-triangles--congruence": { Visual: linesAnglesTrianglesCongruence.default, alt: linesAnglesTrianglesCongruence.alt },
   "lines-angles-triangles--exterior": { Visual: linesAnglesTrianglesExterior.default, alt: linesAnglesTrianglesExterior.alt },
+  "lines-angles-triangles--inequality": { Visual: linesAnglesTrianglesInequality.default, alt: linesAnglesTrianglesInequality.alt },
   "lines-angles-triangles--isosceles": { Visual: linesAnglesTrianglesIsosceles.default, alt: linesAnglesTrianglesIsosceles.alt },
   "lines-angles-triangles--nested": { Visual: linesAnglesTrianglesNested.default, alt: linesAnglesTrianglesNested.alt },
   "lines-angles-triangles--similar": { Visual: linesAnglesTrianglesSimilar.default, alt: linesAnglesTrianglesSimilar.alt },
@@ -215,8 +403,17 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "nonlinear-equations": { Visual: nonlinearEquations.default, alt: nonlinearEquations.alt },
   "nonlinear-equations--discriminant": { Visual: nonlinearEquationsDiscriminant.default, alt: nonlinearEquationsDiscriminant.alt },
   "nonlinear-equations--extraneous": { Visual: nonlinearEquationsExtraneous.default, alt: nonlinearEquationsExtraneous.alt },
+  "nonlinear-equations--formula": { Visual: nonlinearEquationsFormula.default, alt: nonlinearEquationsFormula.alt },
+  "nonlinear-equations--sum-product": { Visual: nonlinearEquationsSumProduct.default, alt: nonlinearEquationsSumProduct.alt },
+  "nonlinear-equations--two-cases": { Visual: nonlinearEquationsTwoCases.default, alt: nonlinearEquationsTwoCases.alt },
+  "nonlinear-equations--zero-product": { Visual: nonlinearEquationsZeroProduct.default, alt: nonlinearEquationsZeroProduct.alt },
   "nonlinear-functions": { Visual: nonlinearFunctions.default, alt: nonlinearFunctions.alt },
+  "nonlinear-functions--axis": { Visual: nonlinearFunctionsAxis.default, alt: nonlinearFunctionsAxis.alt },
+  "nonlinear-functions--forms": { Visual: nonlinearFunctionsForms.default, alt: nonlinearFunctionsForms.alt },
+  "nonlinear-functions--grow-decay": { Visual: nonlinearFunctionsGrowDecay.default, alt: nonlinearFunctionsGrowDecay.alt },
   "nonlinear-functions--growth": { Visual: nonlinearFunctionsGrowth.default, alt: nonlinearFunctionsGrowth.alt },
+  "nonlinear-functions--periods": { Visual: nonlinearFunctionsPeriods.default, alt: nonlinearFunctionsPeriods.alt },
+  "nonlinear-functions--shifts": { Visual: nonlinearFunctionsShifts.default, alt: nonlinearFunctionsShifts.alt },
   "nonlinear-functions--timeline": { Visual: nonlinearFunctionsTimeline.default, alt: nonlinearFunctionsTimeline.alt },
   "one-var-data": { Visual: oneVarData.default, alt: oneVarData.alt },
   "one-var-data--histogram": { Visual: oneVarDataHistogram.default, alt: oneVarDataHistogram.alt },
@@ -225,50 +422,95 @@ export const VISUALS: Record<string, { Visual: ComponentType; alt: string }> = {
   "one-var-data--read-plots": { Visual: oneVarDataReadPlots.default, alt: oneVarDataReadPlots.alt },
   "one-var-data--sd": { Visual: oneVarDataSd.default, alt: oneVarDataSd.alt },
   "one-var-data--totals": { Visual: oneVarDataTotals.default, alt: oneVarDataTotals.alt },
+  "one-var-data--weighted": { Visual: oneVarDataWeighted.default, alt: oneVarDataWeighted.alt },
   "pacing-and-guessing": { Visual: pacingAndGuessing.default, alt: pacingAndGuessing.alt },
+  "pacing-and-guessing--budget": { Visual: pacingAndGuessingBudget.default, alt: pacingAndGuessingBudget.alt },
+  "pacing-and-guessing--check-screen": { Visual: pacingAndGuessingCheckScreen.default, alt: pacingAndGuessingCheckScreen.alt },
   "pacing-and-guessing--cross-out": { Visual: pacingAndGuessingCrossOut.default, alt: pacingAndGuessingCrossOut.alt },
+  "pacing-and-guessing--fill-blanks": { Visual: pacingAndGuessingFillBlanks.default, alt: pacingAndGuessingFillBlanks.alt },
   "pacing-and-guessing--flag-blank": { Visual: pacingAndGuessingFlagBlank.default, alt: pacingAndGuessingFlagBlank.alt },
   "percentages": { Visual: percentages.default, alt: percentages.alt },
   "percentages--bars": { Visual: percentagesBars.default, alt: percentagesBars.alt },
   "percentages--chain": { Visual: percentagesChain.default, alt: percentagesChain.alt },
+  "percentages--change": { Visual: percentagesChange.default, alt: percentagesChange.alt },
+  "percentages--go-back": { Visual: percentagesGoBack.default, alt: percentagesGoBack.alt },
   "percentages--multiplier": { Visual: percentagesMultiplier.default, alt: percentagesMultiplier.alt },
+  "percentages--part-whole": { Visual: percentagesPartWhole.default, alt: percentagesPartWhole.alt },
   "probability": { Visual: probability.default, alt: probability.alt },
+  "probability--cells": { Visual: probabilityCells.default, alt: probabilityCells.alt },
+  "probability--counts": { Visual: probabilityCounts.default, alt: probabilityCounts.alt },
   "probability--flipped": { Visual: probabilityFlipped.default, alt: probabilityFlipped.alt },
+  "probability--fraction": { Visual: probabilityFraction.default, alt: probabilityFraction.alt },
+  "probability--independent": { Visual: probabilityIndependent.default, alt: probabilityIndependent.alt },
   "probability--missing": { Visual: probabilityMissing.default, alt: probabilityMissing.alt },
+  "probability--or-overlap": { Visual: probabilityOrOverlap.default, alt: probabilityOrOverlap.alt },
   "probability--table": { Visual: probabilityTable.default, alt: probabilityTable.alt },
   "ratios-rates": { Visual: ratiosRates.default, alt: ratiosRates.alt },
   "ratios-rates--cancel": { Visual: ratiosRatesCancel.default, alt: ratiosRatesCancel.alt },
+  "ratios-rates--density": { Visual: ratiosRatesDensity.default, alt: ratiosRatesDensity.alt },
+  "ratios-rates--parts": { Visual: ratiosRatesParts.default, alt: ratiosRatesParts.alt },
+  "ratios-rates--scale": { Visual: ratiosRatesScale.default, alt: ratiosRatesScale.alt },
   "ratios-rates--square": { Visual: ratiosRatesSquare.default, alt: ratiosRatesSquare.alt },
   "rhetorical-synthesis": { Visual: rhetoricalSynthesis.default, alt: rhetoricalSynthesis.alt },
+  "rhetorical-synthesis--audience": { Visual: rhetoricalSynthesisAudience.default, alt: rhetoricalSynthesisAudience.alt },
   "rhetorical-synthesis--checklist": { Visual: rhetoricalSynthesisChecklist.default, alt: rhetoricalSynthesisChecklist.alt },
+  "rhetorical-synthesis--compare": { Visual: rhetoricalSynthesisCompare.default, alt: rhetoricalSynthesisCompare.alt },
+  "rhetorical-synthesis--emphasis": { Visual: rhetoricalSynthesisEmphasis.default, alt: rhetoricalSynthesisEmphasis.alt },
+  "rhetorical-synthesis--goal-first": { Visual: rhetoricalSynthesisGoalFirst.default, alt: rhetoricalSynthesisGoalFirst.alt },
+  "rhetorical-synthesis--study": { Visual: rhetoricalSynthesisStudy.default, alt: rhetoricalSynthesisStudy.alt },
+  "rhetorical-synthesis--two-jobs": { Visual: rhetoricalSynthesisTwoJobs.default, alt: rhetoricalSynthesisTwoJobs.alt },
   "right-triangles-trig": { Visual: rightTrianglesTrig.default, alt: rightTrianglesTrig.alt },
   "right-triangles-trig--build": { Visual: rightTrianglesTrigBuild.default, alt: rightTrianglesTrigBuild.alt },
   "right-triangles-trig--complement": { Visual: rightTrianglesTrigComplement.default, alt: rightTrianglesTrigComplement.alt },
+  "right-triangles-trig--pythagoras": { Visual: rightTrianglesTrigPythagoras.default, alt: rightTrianglesTrigPythagoras.alt },
+  "right-triangles-trig--radians": { Visual: rightTrianglesTrigRadians.default, alt: rightTrianglesTrigRadians.alt },
   "right-triangles-trig--ratios": { Visual: rightTrianglesTrigRatios.default, alt: rightTrianglesTrigRatios.alt },
   "right-triangles-trig--similar": { Visual: rightTrianglesTrigSimilar.default, alt: rightTrianglesTrigSimilar.alt },
   "right-triangles-trig--special": { Visual: rightTrianglesTrigSpecial.default, alt: rightTrianglesTrigSpecial.alt },
   "right-triangles-trig--unit-circle": { Visual: rightTrianglesTrigUnitCircle.default, alt: rightTrianglesTrigUnitCircle.alt },
   "statistical-claims": { Visual: statisticalClaims.default, alt: statisticalClaims.alt },
+  "statistical-claims--association": { Visual: statisticalClaimsAssociation.default, alt: statisticalClaimsAssociation.alt },
+  "statistical-claims--bias": { Visual: statisticalClaimsBias.default, alt: statisticalClaimsBias.alt },
+  "statistical-claims--confounder": { Visual: statisticalClaimsConfounder.default, alt: statisticalClaimsConfounder.alt },
   "statistical-claims--design": { Visual: statisticalClaimsDesign.default, alt: statisticalClaimsDesign.alt },
   "statistical-claims--grid": { Visual: statisticalClaimsGrid.default, alt: statisticalClaimsGrid.alt },
   "statistical-claims--sample": { Visual: statisticalClaimsSample.default, alt: statisticalClaimsSample.alt },
   "systems-linear": { Visual: systemsLinear.default, alt: systemsLinear.alt },
+  "systems-linear--combine": { Visual: systemsLinearCombine.default, alt: systemsLinearCombine.alt },
   "systems-linear--lines": { Visual: systemsLinearLines.default, alt: systemsLinearLines.alt },
   "systems-linear--multiply": { Visual: systemsLinearMultiply.default, alt: systemsLinearMultiply.alt },
+  "systems-linear--story": { Visual: systemsLinearStory.default, alt: systemsLinearStory.alt },
+  "systems-linear--substitute": { Visual: systemsLinearSubstitute.default, alt: systemsLinearSubstitute.alt },
+  "systems-linear--three-cases": { Visual: systemsLinearThreeCases.default, alt: systemsLinearThreeCases.alt },
   "text-structure-purpose": { Visual: textStructurePurpose.default, alt: textStructurePurpose.alt },
+  "text-structure-purpose--neighbors": { Visual: textStructurePurposeNeighbors.default, alt: textStructurePurposeNeighbors.alt },
+  "text-structure-purpose--strength": { Visual: textStructurePurposeStrength.default, alt: textStructurePurposeStrength.alt },
   "text-structure-purpose--structure": { Visual: textStructurePurposeStructure.default, alt: textStructurePurposeStructure.alt },
+  "text-structure-purpose--traps": { Visual: textStructurePurposeTraps.default, alt: textStructurePurposeTraps.alt },
+  "text-structure-purpose--turn": { Visual: textStructurePurposeTurn.default, alt: textStructurePurposeTurn.alt },
   "text-structure-purpose--verbs": { Visual: textStructurePurposeVerbs.default, alt: textStructurePurposeVerbs.alt },
   "transitions": { Visual: transitions.default, alt: transitions.alt },
+  "transitions--add-example": { Visual: transitionsAddExample.default, alt: transitionsAddExample.alt },
   "transitions--buckets": { Visual: transitionsBuckets.default, alt: transitionsBuckets.alt },
+  "transitions--concession": { Visual: transitionsConcession.default, alt: transitionsConcession.alt },
+  "transitions--contrast-kinds": { Visual: transitionsContrastKinds.default, alt: transitionsContrastKinds.alt },
+  "transitions--in-fact": { Visual: transitionsInFact.default, alt: transitionsInFact.alt },
+  "transitions--phrase": { Visual: transitionsPhrase.default, alt: transitionsPhrase.alt },
+  "transitions--result-time": { Visual: transitionsResultTime.default, alt: transitionsResultTime.alt },
   "two-var-data": { Visual: twoVarData.default, alt: twoVarData.alt },
   "two-var-data--association": { Visual: twoVarDataAssociation.default, alt: twoVarDataAssociation.alt },
   "two-var-data--curve": { Visual: twoVarDataCurve.default, alt: twoVarDataCurve.alt },
   "two-var-data--gap": { Visual: twoVarDataGap.default, alt: twoVarDataGap.alt },
+  "two-var-data--line-graph": { Visual: twoVarDataLineGraph.default, alt: twoVarDataLineGraph.alt },
   "two-var-data--predict": { Visual: twoVarDataPredict.default, alt: twoVarDataPredict.alt },
   "two-var-data--scale": { Visual: twoVarDataScale.default, alt: twoVarDataScale.alt },
   "two-var-data--slope": { Visual: twoVarDataSlope.default, alt: twoVarDataSlope.alt },
   "words-in-context": { Visual: wordsInContext.default, alt: wordsInContext.alt },
   "words-in-context--charge": { Visual: wordsInContextCharge.default, alt: wordsInContextCharge.alt },
+  "words-in-context--clue-predict": { Visual: wordsInContextCluePredict.default, alt: wordsInContextCluePredict.alt },
   "words-in-context--contrast-side": { Visual: wordsInContextContrastSide.default, alt: wordsInContextContrastSide.alt },
+  "words-in-context--negation": { Visual: wordsInContextNegation.default, alt: wordsInContextNegation.alt },
+  "words-in-context--second-meaning": { Visual: wordsInContextSecondMeaning.default, alt: wordsInContextSecondMeaning.alt },
   "words-in-context--strength": { Visual: wordsInContextStrength.default, alt: wordsInContextStrength.alt },
+  "words-in-context--topic-trap": { Visual: wordsInContextTopicTrap.default, alt: wordsInContextTopicTrap.alt },
 };

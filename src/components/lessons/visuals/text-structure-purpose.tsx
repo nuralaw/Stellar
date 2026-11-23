@@ -2,7 +2,7 @@ import { C, Css, Svg } from "./kit";
 
 // Text structure and purpose: label each sentence's job (belief, then correction); the choice that names that job locks in.
 export const alt =
-  "\"Goldfish forget in seconds. In fact, they remember for months.\" The sentences are labeled belief and correction; the purpose \"To correct a belief\" locks in.";
+  "\"Many think goldfish forget in seconds. Actually, they remember for months.\" The turn word Actually lights up; the purpose \"To correct a belief\" locks in.";
 
 const css = `
 .v-text-structure-purpose-a { animation: 9s ease-in-out infinite; }
@@ -80,7 +80,7 @@ export default function Visual() {
           <Tag y={20} w={50} word="belief" />
         </g>
         <text x={20} y={57} fontSize={15} fontWeight={600} fill={C.ink}>
-          Goldfish forget in seconds.
+          Many think goldfish forget in seconds.
         </text>
 
         {/* Sentence 2 and its job */}
@@ -88,7 +88,7 @@ export default function Visual() {
           <Tag y={72} w={78} word="correction" accent />
         </g>
         <text x={20} y={109} fontSize={15} fontWeight={600} fill={C.ink}>
-          <tspan className="v-text-structure-purpose-a v-text-structure-purpose-turn">In fact,</tspan> they remember for months.
+          <tspan className="v-text-structure-purpose-a v-text-structure-purpose-turn">Actually,</tspan> they remember for months.
         </text>
 
         {/* The purpose choices */}

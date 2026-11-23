@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Trap: square and cubic units. 1 yd = 3 ft, but 1 yd² = 3 × 3 = 9 ft² and 1 yd³ = 3 × 3 × 3 = 27 ft³.
 export const alt = "A square yard as a 3 by 3 grid of square feet: 9 ft². Three stacked layers of 9 make a cubic yard: 27 ft³. So 1 yd is 3 ft, but 1 yd² is 9 ft² and 1 yd³ is 27 ft³.";
@@ -45,9 +45,9 @@ export default function Visual() {
     <Svg label={alt}>
       <Css>{css}</Css>
 
-      <text className={cls("top")} x={160} y={26} fontSize={14} fontWeight={700} fill={C.ink} textAnchor="middle">
-        1 yd = 3 ft
-      </text>
+      <g className={cls("top")}>
+        <Tex x={160} y={24} size={15} width={120}>{String.raw`1\ \text{yd}=3\ \text{ft}`}</Tex>
+      </g>
 
       {/* Side labels: 1 yd across the top, 3 ft down the side */}
       <g className={cls("side")} fontSize={12} fontWeight={700} fill={C.ink} textAnchor="middle">
@@ -68,9 +68,9 @@ export default function Visual() {
           </g>
         ))}
       </g>
-      <text className={cls("l1")} x={GX + 33} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        1 yd² = 3 × 3 = 9 ft²
-      </text>
+      <g className={cls("l1")}>
+        <Tex x={GX + 33} y={GY + 3 * CELL + 20} size={12} width={130} color={C.primaryText}>{String.raw`1\ \text{yd}^2=3\times3=9\ \text{ft}^2`}</Tex>
+      </g>
 
       {/* Cubic yard: 3 layers of 9 */}
       <g>
@@ -84,9 +84,9 @@ export default function Visual() {
           <Grid x={layer(0).x} y={layer(0).y} c={LC} fill={C.soft} />
         </g>
       </g>
-      <text className={cls("l2")} x={LX + 38} y={GY + 3 * CELL + 22} fontSize={12} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        1 yd³ = 3 × 3 × 3 = 27 ft³
-      </text>
+      <g className={cls("l2")}>
+        <Tex x={LX + 38} y={GY + 3 * CELL + 20} size={12} width={150} color={C.primaryText}>{String.raw`1\ \text{yd}^3=3\times3\times3=27\ \text{ft}^3`}</Tex>
+      </g>
     </Svg>
   );
 }

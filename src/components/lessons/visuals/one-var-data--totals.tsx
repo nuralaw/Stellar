@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Think in totals: four numbers (16, 8, 8, 8) have mean 10 and total 40. Remove the 16: the total is 24 and the mean of 3 numbers is 8.
 export const alt = "Four bars of height 16, 8, 8 and 8 with a mean line at 10, so the total is 4 × 10 = 40. The 16 is removed: three bars of 8 remain, the mean is 8 and the total is 24.";
@@ -75,12 +75,12 @@ export default function Visual() {
       </text>
 
       {/* Totals */}
-      <text className={cls("t1")} x={160} y={30} fontSize={16} fontWeight={700} fill={C.ink} textAnchor="middle">
-        total: 4 × 10 = 40
-      </text>
-      <text className={cls("t2")} x={160} y={30} fontSize={16} fontWeight={700} fill={C.ink} textAnchor="middle">
-        total: 40 − 16 = 24, 24 ÷ 3
-      </text>
+      <g className={cls("t1")}>
+        <Tex x={160} y={30} size={16} width={260}>{String.raw`\text{total: }4\times 10=40`}</Tex>
+      </g>
+      <g className={cls("t2")}>
+        <Tex x={160} y={30} size={16} width={260}>{String.raw`\text{total: }40-16=24,\ 24\div 3=8`}</Tex>
+      </g>
     </Svg>
   );
 }

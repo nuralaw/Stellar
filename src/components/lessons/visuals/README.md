@@ -54,7 +54,43 @@ after every change. Fix anything clipped, overlapping, unreadable or off-center.
 - Draw lines with `pathLength={100}` + `stroke-dasharray: 100` and animate `stroke-dashoffset` 100 → 0.
 - `<text>` inherits `stroke` from its group: put strokes on shapes, or give text `stroke="none"`.
 - Text: `fontSize` in canvas units, `fontWeight` 600–700 for main text, `fill` set explicitly. `textAnchor`
-  for alignment. Use Unicode math: − × ÷ ² ³ √ π θ ≤ ≥ ≠ °. Use the true minus sign (−) in math.
+  for alignment. Plain numbers, short labels and coordinates like `(4, 6)` stay `<text>`; use the true minus sign (−).
+- **Formulas use `<Tex>`** (below), not Unicode math in `<text>`.
 - Math must be exact: a line drawn with slope 2 rises 2 grid units per 1; a bar at 60% is 60% long; a labelled
   right triangle has sides that fit a² + b² = c². Check every number you draw.
 - Keep the file under 16 KB.
+
+## Formulas: `<Tex>`
+
+`<Tex>` from `./kit` typesets a LaTeX formula with KaTeX inside the SVG, so fractions, roots, exponents and `\pi` look
+like they do in the lesson text. It is server-rendered HTML in a `<foreignObject>` (no JS), and the colour follows the
+theme. The storyboard (`npm run lessons:visuals -- <id>`) renders it in headless Chrome, with the KaTeX fonts.
+
+```tsx
+import { C, Css, Svg, Tex } from "./kit";
+…
+<g className={cls("s3")}>
+  <Tex x={196} y={126} size={13} anchor="start" width={118} color={C.primaryText}>{String.raw`(x-1)^2+(y-2)^2`}</Tex>
+</g>
+```
+
+- `children`: LaTeX **without** `\( \)`. Always write it as a `String.raw` template literal, so the backslashes stay (`\frac{1}{2}`,
+  `\pi`, `\sqrt{x}`, `\text{total}`, `\tfrac` for a small fraction inside a line).
+- `x`, `y`: the anchor point. `y` is the middle of the formula's box. `anchor` says what `x` is: `"middle"` (default,
+  the center), `"start"` (left edge) or `"end"` (right edge). **Use `"start"` for formulas in a left-aligned column.**
+- `size`: font size in canvas units, like `<text fontSize>` (default 14). KaTeX looks about one step smaller than
+  the sans-serif `<text>` at the same size, so use 13–16 for the main formula and 12 at the least.
+- `color`: a `C.*` color (default `C.ink`); use `C.primaryText` for an accent formula, never hex.
+- `width` / `height`: the box the formula sits in (default 220 wide and 2.6 × `size` tall). Anything wider than
+  `width` is cut off, so give the formula enough room; the box draws nothing and takes no clicks. Put two lines of
+  work as two `<Tex>` (about 18–20 units apart).
+- **Animate a `<g>` that wraps the `<Tex>`** (opacity, transform, a class from `cls(…)`), never the `<Tex>` itself:
+  Safari handles transforms on `<foreignObject>` badly.
+- A formula that KaTeX cannot read fails the render ("render failed" in the storyboard run).
+- Do not use raw `<foreignObject>`: the checker forbids it outside `./kit`.
+
+`<Tex>` uses KaTeX's **MathML output** (native math inside the `<foreignObject>`: Safari 14.1+, Chrome 109+, Firefox), because
+KaTeX's HTML output uses absolutely positioned spans that WebKit mis-places inside SVG transforms and animated groups.
+MathML shows in the system's math font and an inline `\frac` is set small: use `\dfrac{a}{b}` for a full-size fraction
+(and give it room: a fraction is about two lines tall). If a formula cannot be rendered, `<Tex>` logs the error and shows
+the source as plain `<text>`, so one bad formula never breaks a page.

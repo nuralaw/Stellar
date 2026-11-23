@@ -1,8 +1,23 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Equivalent expressions: a rectangle with sides (x + 3) and (x + 2) is cut into four tiles.
 // Sides multiplied = tiles added, so (x + 3)(x + 2) = x² + 5x + 6. Unit = 13: x is drawn as 65, 3 as 39, 2 as 26.
 export const alt = "A rectangle with sides x + 3 and x + 2 is cut into four tiles: x², 2x, 3x and 6. Added up, (x + 3)(x + 2) = x² + 5x + 6.";
+
+const P = "v-equivalent-expressions-";
+const cls = (n: string) => `${P}a ${P}${n}`;
+/** A formula in two layers (ink and accent) that cross-fade, because a typeset formula cannot animate its fill.
+ *  `wins` are the loop ranges (%) where the accent shows; it stays on at the end if the last range reaches 100. */
+const lit = (n: string, wins: [number, number][]) => {
+  const pts: [number, number][] = [[0, 0]];
+  for (const [s, e] of wins) pts.push([s, 0], [s + 2, 1], [e, 1], ...(e >= 100 ? [] : [[e + 2, 0] as [number, number]]));
+  const last = wins[wins.length - 1][1] >= 100;
+  const h = last ? 1 : 0;
+  const frames = (inv: boolean) => pts.map(([p, v]) => `${p}% { opacity: ${inv ? 1 - v : v} }`).join(" ");
+  const [hc, cc] = [`${P}${n}h`, `${P}${n}c`];
+  return `.${hc} { opacity: ${h}; animation-name: ${hc}; } @keyframes ${hc} { ${frames(false)} }
+.${cc} { opacity: ${1 - h}; animation-name: ${cc}; } @keyframes ${cc} { ${frames(true)} }`;
+};
 
 // Beats (% of 10 s): 0–5 in · 6–22 each factor is a side · 22–34 cut · 35–56 each tile = its two sides multiplied ·
 // 57–77 add the tiles, 2x + 3x = 5x · hold · 92–100 out
@@ -12,11 +27,9 @@ const css = `
 .v-equivalent-expressions-scene { animation-name: v-equivalent-expressions-scene; }
 @keyframes v-equivalent-expressions-scene { 0% { opacity: 0 } 5%, 92% { opacity: 1 } 99%, 100% { opacity: 0 } }
 
-/* Beat 1: each factor lights up with its side */
-.v-equivalent-expressions-fa { animation-name: v-equivalent-expressions-fa; }
-@keyframes v-equivalent-expressions-fa { 0%, 6% { fill: ${C.ink} } 9%, 12% { fill: ${C.primaryText} } 15%, 100% { fill: ${C.ink} } }
-.v-equivalent-expressions-fb { animation-name: v-equivalent-expressions-fb; }
-@keyframes v-equivalent-expressions-fb { 0%, 13% { fill: ${C.ink} } 16%, 19% { fill: ${C.primaryText} } 22%, 100% { fill: ${C.ink} } }
+/* Beat 1: each factor lights up with its side (the formula layers cross-fade) */
+${lit("fa", [[8, 13]])}
+${lit("fb", [[15, 20]])}
 .v-equivalent-expressions-pa { animation-name: v-equivalent-expressions-pa; }
 @keyframes v-equivalent-expressions-pa { 0%, 6% { fill: ${C.muted} } 9%, 12% { fill: ${C.primaryText} } 15%, 100% { fill: ${C.muted} } }
 .v-equivalent-expressions-pb { animation-name: v-equivalent-expressions-pb; }
@@ -83,38 +96,36 @@ const css = `
 .v-equivalent-expressions-l { transform-box: fill-box; transform-origin: center; }
 .v-equivalent-expressions-l1 { animation-name: v-equivalent-expressions-l1; }
 @keyframes v-equivalent-expressions-l1 {
-  0%, 35.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
-  38.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
-  40.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  43%, 57% { opacity: 1; transform: none; fill: ${C.ink} }
-  59% { opacity: 1; transform: scale(1.22); fill: ${C.ink} }
-  61%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
+  0%, 35.5% { opacity: 0; transform: scale(0.4) }
+  38.5% { opacity: 1; transform: scale(1.18) }
+  40.5%, 57% { opacity: 1; transform: none }
+  59% { opacity: 1; transform: scale(1.22) }
+  61%, 100% { opacity: 1; transform: none }
 }
 .v-equivalent-expressions-l2 { animation-name: v-equivalent-expressions-l2; }
 @keyframes v-equivalent-expressions-l2 {
-  0%, 40.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
-  43.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
-  45.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  48%, 62% { opacity: 1; transform: none; fill: ${C.ink} }
-  65%, 100% { opacity: 1; transform: none; fill: ${C.primaryText} }
+  0%, 40.5% { opacity: 0; transform: scale(0.4) }
+  43.5% { opacity: 1; transform: scale(1.18) }
+  45.5%, 100% { opacity: 1; transform: none }
 }
 .v-equivalent-expressions-l3 { animation-name: v-equivalent-expressions-l3; }
 @keyframes v-equivalent-expressions-l3 {
-  0%, 45.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
-  48.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
-  50.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  53%, 62% { opacity: 1; transform: none; fill: ${C.ink} }
-  65%, 100% { opacity: 1; transform: none; fill: ${C.primaryText} }
+  0%, 45.5% { opacity: 0; transform: scale(0.4) }
+  48.5% { opacity: 1; transform: scale(1.18) }
+  50.5%, 100% { opacity: 1; transform: none }
 }
 .v-equivalent-expressions-l4 { animation-name: v-equivalent-expressions-l4; }
 @keyframes v-equivalent-expressions-l4 {
-  0%, 50.5% { opacity: 0; transform: scale(0.4); fill: ${C.primaryText} }
-  53.5% { opacity: 1; transform: scale(1.18); fill: ${C.primaryText} }
-  55.5% { opacity: 1; transform: none; fill: ${C.primaryText} }
-  58%, 67% { opacity: 1; transform: none; fill: ${C.ink} }
-  69% { opacity: 1; transform: scale(1.22); fill: ${C.ink} }
-  71%, 100% { opacity: 1; transform: none; fill: ${C.ink} }
+  0%, 50.5% { opacity: 0; transform: scale(0.4) }
+  53.5% { opacity: 1; transform: scale(1.18) }
+  55.5%, 67% { opacity: 1; transform: none }
+  69% { opacity: 1; transform: scale(1.22) }
+  71%, 100% { opacity: 1; transform: none }
 }
+${lit("g1", [[36, 41]])}
+${lit("g2", [[41, 46], [64, 100]])}
+${lit("g3", [[46, 51], [64, 100]])}
+${lit("g4", [[51, 56]])}
 
 /* Beat 4: add the tiles up. The like terms 2x and 3x light up and become 5x */
 .v-equivalent-expressions-like { fill: ${C.soft}; stroke: ${C.primary}; animation-name: v-equivalent-expressions-like; }
@@ -132,8 +143,25 @@ const css = `
 // Tile block: left/top corner of the x² tile. Tiles end up 4 apart.
 const X = 45;
 const Y = 52;
-// The sum is three texts laid out from the same start, each painting only its own term, so the spacing is the font's own.
-const sum = { x: 183, y: 111, fontSize: 18, fontWeight: 600, fill: C.ink };
+const SUM = { x: 176, y: 105, size: 18, width: 130 } as const;
+
+/** A formula in an ink layer and an accent layer (see `lit`). */
+function Lit({ n, x, y, size, width, anchor = "middle", children }: { n: string; x: number; y: number; size: number; width: number; anchor?: "start" | "middle" | "end"; children: string }) {
+  return (
+    <>
+      <g className={cls(`${n}c`)}>
+        <Tex x={x} y={y} size={size} width={width} anchor={anchor}>
+          {children}
+        </Tex>
+      </g>
+      <g className={cls(`${n}h`)}>
+        <Tex x={x} y={y} size={size} width={width} anchor={anchor} color={C.primaryText}>
+          {children}
+        </Tex>
+      </g>
+    </>
+  );
+}
 
 export default function Visual() {
   return (
@@ -167,27 +195,27 @@ export default function Visual() {
         <g strokeWidth={1.5} fontWeight={700} textAnchor="middle" stroke="none">
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m1">
             <rect x={X} y={Y} width={65} height={65} rx={6} fill={C.fill} stroke={C.line} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l1" x={X + 32.5} y={Y + 39} fontSize={18} fill={C.ink}>
-              x²
-            </text>
+            <g className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l1">
+              <Lit n="g1" x={X + 32.5} y={Y + 33} size={20} width={44}>{String.raw`x^2`}</Lit>
+            </g>
           </g>
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m2">
             <rect className="v-equivalent-expressions-a v-equivalent-expressions-like" x={X} y={Y + 69} width={65} height={26} rx={6} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l2" x={X + 32.5} y={Y + 87} fontSize={15} fill={C.primaryText}>
-              2x
-            </text>
+            <g className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l2">
+              <Lit n="g2" x={X + 32.5} y={Y + 82} size={17} width={36}>{String.raw`2x`}</Lit>
+            </g>
           </g>
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m3">
             <rect className="v-equivalent-expressions-a v-equivalent-expressions-like" x={X + 69} y={Y} width={39} height={65} rx={6} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l3" x={X + 88.5} y={Y + 38} fontSize={15} fill={C.primaryText}>
-              3x
-            </text>
+            <g className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l3">
+              <Lit n="g3" x={X + 88.5} y={Y + 33} size={17} width={36}>{String.raw`3x`}</Lit>
+            </g>
           </g>
           <g className="v-equivalent-expressions-a v-equivalent-expressions-m4">
             <rect x={X + 69} y={Y + 69} width={39} height={26} rx={6} fill={C.fill} stroke={C.line} />
-            <text className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l4" x={X + 88.5} y={Y + 87} fontSize={15} fill={C.ink}>
-              6
-            </text>
+            <g className="v-equivalent-expressions-a v-equivalent-expressions-l v-equivalent-expressions-l4">
+              <Lit n="g4" x={X + 88.5} y={Y + 82} size={17} width={30}>{String.raw`6`}</Lit>
+            </g>
           </g>
         </g>
 
@@ -200,24 +228,22 @@ export default function Visual() {
           <line className="v-equivalent-expressions-a v-equivalent-expressions-cut" x1={X + 2} y1={Y + 67} x2={X + 106} y2={Y + 67} pathLength={100} strokeWidth={2} />
         </g>
 
-        {/* Sides multiplied … */}
-        <text x={183} y={81} fontSize={18} fontWeight={600} fill={C.ink}>
-          <tspan className="v-equivalent-expressions-a v-equivalent-expressions-fa">(x + 3)</tspan>
-          <tspan className="v-equivalent-expressions-a v-equivalent-expressions-fb">(x + 2)</tspan>
-        </text>
+        {/* Sides multiplied … : two formula halves meeting at one seam, so the accent keeps its place whatever the font */}
+        <Lit n="fa" x={230} y={75} size={18} width={80} anchor="end">{String.raw`(x+3)`}</Lit>
+        <Lit n="fb" x={231} y={75} size={18} width={80} anchor="start">{String.raw`(x+2)`}</Lit>
 
-        {/* … = tiles added: x², then 2x + 3x = 5x, then 6 */}
-        <text className="v-equivalent-expressions-a v-equivalent-expressions-r1" {...sum}>
-          = x²<tspan fill="none"> + 5x + 6</tspan>
-        </text>
-        <text className="v-equivalent-expressions-a v-equivalent-expressions-r2" {...sum}>
-          <tspan fill="none">= x² </tspan>+ <tspan fill={C.primaryText}>5x</tspan>
-          <tspan fill="none"> + 6</tspan>
-        </text>
-        <text className="v-equivalent-expressions-a v-equivalent-expressions-r3" {...sum}>
-          <tspan fill="none">= x² + 5x </tspan>+ 6
-        </text>
-        <text className="v-equivalent-expressions-a v-equivalent-expressions-cap" x={183} y={133} fontSize={11.5} fill={C.muted}>
+        {/* … = tiles added: x², then 2x + 3x = 5x, then 6. Phantoms keep every layer in the same place. */}
+        <g className="v-equivalent-expressions-a v-equivalent-expressions-r1">
+          <Tex x={SUM.x} y={SUM.y} size={SUM.size} width={SUM.width} anchor="start">{String.raw`=x^2`}</Tex>
+        </g>
+        <g className="v-equivalent-expressions-a v-equivalent-expressions-r2">
+          <Tex x={SUM.x} y={SUM.y} size={SUM.size} width={SUM.width} anchor="start">{String.raw`\phantom{=x^2}+`}</Tex>
+          <Tex x={SUM.x} y={SUM.y} size={SUM.size} width={SUM.width} anchor="start" color={C.primaryText}>{String.raw`\phantom{=x^2+}5x`}</Tex>
+        </g>
+        <g className="v-equivalent-expressions-a v-equivalent-expressions-r3">
+          <Tex x={SUM.x} y={SUM.y} size={SUM.size} width={SUM.width} anchor="start">{String.raw`\phantom{=x^2+5x}+6`}</Tex>
+        </g>
+        <text className="v-equivalent-expressions-a v-equivalent-expressions-cap" x={176} y={133} fontSize={11.5} fill={C.muted}>
           same area, new form
         </text>
       </g>

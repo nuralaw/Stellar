@@ -799,3 +799,26 @@ div[data-tour-active] {
     animation: none;
   }
 }
+
+/* Lesson formulas (KaTeX, see components/lessons/Markdown.tsx): colour is inherited, size matches the 16px body text. */
+html .katex {
+  font-size: 1.08em;
+}
+/* <Tex> inside a lesson visual (visuals/kit.tsx): the font size is the one the visual asks for, like <text fontSize>. */
+html .kit-tex .katex {
+  font-size: 1em;
+}
+.math-block {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.25rem 0;
+}
+.math-block .katex-display {
+  margin: 0;
+}
+/* Auto margins centre a formula that fits and let a wider one scroll from its left edge (no `safe center` needed). */
+.math-block > span {
+  margin-inline: auto;
+}

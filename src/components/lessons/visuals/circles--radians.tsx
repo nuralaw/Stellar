@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Radians: π = 180°, so 60° = π/3. Arc length s = rθ: radius 6, θ = π/3 gives s = 2π.
 export const alt =
@@ -33,7 +33,6 @@ const p0 = pt(0);
 const p60 = pt(-60);
 const wedge = `M${O.x} ${O.y} L${p0.x} ${p0.y} A${R} ${R} 0 0 0 ${p60.x} ${p60.y} Z`;
 const arcPath = `M${p0.x} ${p0.y} A${R} ${R} 0 0 0 ${p60.x} ${p60.y}`;
-const lab = { stroke: "none" } as const;
 
 export default function Visual() {
   return (
@@ -44,17 +43,23 @@ export default function Visual() {
         <path className={cls("wedge")} d={wedge} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
         <path className={cls("arc")} d={arcPath} pathLength={100} fill="none" stroke={C.primary} strokeWidth={4} />
         <circle cx={O.x} cy={O.y} r={3.5} fill={C.ink} />
-        <text className={cls("p1")} x={f(O.x + 12)} y={f(O.y + 16)} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>r = 6</text>
-        <text className={cls("p2")} x={f(O.x + 20)} y={f(O.y - 6)} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>π/3</text>
-
-        <g className={cls("p3")} fill={C.ink} {...lab}>
-          <text x={186} y={42} fontSize={13} fontWeight={700}>π rad = 180°</text>
-          <text x={186} y={64} fontSize={13} fontWeight={700}>π/3 rad = 60°</text>
+        <g className={cls("p1")}>
+          <Tex x={f(O.x + 12)} y={f(O.y + 12)} size={13} anchor="start" width={50}>{String.raw`r=6`}</Tex>
         </g>
-        <text className={cls("p4")} x={186} y={104} fontSize={12} fill={C.muted} {...lab}>arc length s = rθ</text>
-        <g className={cls("p5")} {...lab}>
-          <text x={186} y={126} fontSize={14} fontWeight={700} fill={C.ink}>= 6 · π/3</text>
-          <text x={186} y={150} fontSize={19} fontWeight={700} fill={C.primaryText}>= 2π</text>
+        <g className={cls("p2")}>
+          <Tex x={f(O.x + 20)} y={f(O.y - 10)} size={13} anchor="start" width={40} color={C.primaryText}>{String.raw`\pi/3`}</Tex>
+        </g>
+
+        <g className={cls("p3")}>
+          <Tex x={186} y={38} size={14} anchor="start" width={126}>{String.raw`\pi\text{ rad}=180^\circ`}</Tex>
+          <Tex x={186} y={58} size={14} anchor="start" width={126}>{String.raw`\pi/3\text{ rad}=60^\circ`}</Tex>
+        </g>
+        <g className={cls("p4")}>
+          <Tex x={186} y={94} size={13} anchor="start" width={126} color={C.muted}>{String.raw`\text{arc length }s=r\theta`}</Tex>
+        </g>
+        <g className={cls("p5")}>
+          <Tex x={186} y={122} size={15} anchor="start" width={126}>{String.raw`{=}6\cdot\dfrac{\pi}{3}`}</Tex>
+          <Tex x={186} y={152} size={19} anchor="start" width={126} color={C.primaryText}>{String.raw`{=}2\pi`}</Tex>
         </g>
       </g>
     </Svg>

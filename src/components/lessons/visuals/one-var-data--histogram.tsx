@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Read a histogram: bar height = how many values are in the bin. 2 + 5 + 8 + 4 + 1 = 20 values; the 10th and 11th are in the 20–29 bin.
 export const alt = "A histogram of 20 values in bins 0–9, 10–19, 20–29, 30–39 and 40–49 with counts 2, 5, 8, 4 and 1. The counts add to 20, and the 10th and 11th values both fall in the 20–29 bin, so the median is there.";
@@ -56,9 +56,9 @@ export default function Visual() {
         ))}
       </g>
 
-      <text className={cls("tot")} x={160} y={26} fontSize={15} fontWeight={700} fill={C.ink} textAnchor="middle">
-        2 + 5 + 8 + 4 + 1 = 20 values
-      </text>
+      <g className={cls("tot")}>
+        <Tex x={160} y={26} size={15}>{String.raw`2+5+8+4+1=20\text{ values}`}</Tex>
+      </g>
 
       <g className={cls("mid")} fontSize={11} fontWeight={700} fill={C.primary} textAnchor="middle">
         <text x={BX(2) + 22} y={BASE - 34}>

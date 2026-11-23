@@ -1,9 +1,9 @@
 import { C, Css, Svg } from "./kit";
 
-// Adaptive routing: few right answers in module 1 lead to the easier module 2 (score capped);
-// more right answers lead to the harder module 2, the only path up to 800.
+// Adaptive routing: few right answers in module 1 lead to the easier module 2 (which usually limits the top score);
+// more right answers lead to the harder module 2, the route to scores near 800. College Board publishes no cutoffs.
 export const alt =
-  "Module 1 decides module 2. Fewer right answers lead to the easier module 2, where the score is capped. More right answers lead to the harder module 2, which can reach 800.";
+  "Module 1 decides module 2. Fewer right answers lead to the easier module 2, which usually limits your top score. More right answers lead to the harder module 2, the route to scores near 800.";
 
 const css = `
 .v-digital-sat-format--adaptive-a { animation: 10s ease-in-out infinite; }
@@ -72,7 +72,7 @@ export default function Visual() {
           fewer right
         </text>
 
-        {/* Harder module 2: the score can reach 800 */}
+        {/* Harder module 2: the route to scores near 800 */}
         <rect className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-hard" x={166} y={18} width={138} height={56} rx={10} strokeWidth={1.5} />
         <text x={178} y={38} fontSize={13} fontWeight={700} fill={C.ink}>
           Harder module 2
@@ -86,7 +86,7 @@ export default function Visual() {
           800
         </text>
 
-        {/* Easier module 2: the score stops short */}
+        {/* Easier module 2: the top score is usually limited (soft, dashed marker: no published cutoff) */}
         <rect x={166} y={106} width={138} height={56} rx={10} fill={C.fill} stroke={C.line} strokeWidth={1.5} />
         <text x={178} y={126} fontSize={13} fontWeight={700} fill={C.ink}>
           Easier module 2
@@ -97,9 +97,9 @@ export default function Visual() {
           200
         </text>
         <g className="v-digital-sat-format--adaptive-a v-digital-sat-format--adaptive-cap">
-          <line x1={249} y1={128} x2={249} y2={146} stroke={C.ink} strokeWidth={2.5} />
+          <line x1={249} y1={128} x2={249} y2={146} stroke={C.ink} strokeWidth={2.5} strokeDasharray="3 3" />
           <text x={292} y={155} textAnchor="end" fontSize={11} fontWeight={600} fill={C.ink}>
-            capped
+            usually lower
           </text>
         </g>
       </g>

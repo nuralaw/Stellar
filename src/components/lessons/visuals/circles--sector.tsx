@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // A 72° sector is 72/360 = 1/5 of a circle with radius 10: arc = 1/5 × 20π = 4π, area = 1/5 × 100π = 20π.
 export const alt =
@@ -49,17 +49,21 @@ export default function Visual() {
         <path className={cls("wedge")} d={wedge} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
         <path className={cls("arc")} d={arcPath} pathLength={100} fill="none" stroke={C.primary} strokeWidth={4} />
         <circle cx={O.x} cy={O.y} r={3.5} fill={C.ink} />
-        <text className={cls("p1")} x={f(O.x + 16)} y={f(O.y + 15)} fontSize={11} fontWeight={700} fill={C.ink} {...lab}>r = 10</text>
+        <g className={cls("p1")}>
+          <Tex x={f(O.x + 14)} y={f(O.y + 12)} size={12} anchor="start" width={50}>{String.raw`r=10`}</Tex>
+        </g>
         <text className={cls("p1")} x={f(O.x + 22)} y={f(O.y - 8)} fontSize={12} fontWeight={700} fill={C.primaryText} {...lab}>72°</text>
 
-        <text className={cls("p1")} x={182} y={46} fontSize={15} fontWeight={700} fill={C.ink} {...lab}>72/360 = 1/5</text>
-        <g className={cls("p2")} {...lab}>
-          <text x={182} y={78} fontSize={11} fill={C.muted}>circle: 2π · 10 = 20π</text>
-          <text x={182} y={97} fontSize={14} fontWeight={700} fill={C.primaryText}>1/5 × 20π = 4π</text>
+        <g className={cls("p1")}>
+          <Tex x={182} y={34} size={14} anchor="start" width={120}>{String.raw`\dfrac{72}{360}=\dfrac{1}{5}`}</Tex>
         </g>
-        <g className={cls("p3")} {...lab}>
-          <text x={182} y={126} fontSize={11} fill={C.muted}>area: π · 10² = 100π</text>
-          <text x={182} y={145} fontSize={14} fontWeight={700} fill={C.ink}>1/5 × 100π = 20π</text>
+        <g className={cls("p2")}>
+          <Tex x={182} y={64} size={12} anchor="start" width={130} color={C.muted}>{String.raw`\text{circle: }2\pi\cdot10=20\pi`}</Tex>
+          <Tex x={182} y={88} size={14} anchor="start" width={130} color={C.primaryText}>{String.raw`\dfrac{1}{5}\times20\pi=4\pi`}</Tex>
+        </g>
+        <g className={cls("p3")}>
+          <Tex x={182} y={118} size={12} anchor="start" width={130} color={C.muted}>{String.raw`\text{area: }\pi\cdot10^2=100\pi`}</Tex>
+          <Tex x={182} y={146} size={14} anchor="start" width={130}>{String.raw`\dfrac{1}{5}\times100\pi=20\pi`}</Tex>
         </g>
       </g>
     </Svg>

@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Ratios and rates: turn the words into a fraction with units, multiply, and the unwanted unit cancels.
 export const alt = "\"15 L in 3 min, ? L in 8 min\" turns into 15 L over 3 min, times 8 min. The minutes cross out and 40 L is left.";
@@ -134,9 +134,9 @@ export default function Visual() {
         <text className="v-ratios-rates-a v-ratios-rates-in2" x={152.7} y={113} {...OP}>
           in
         </text>
-        <text className="v-ratios-rates-a v-ratios-rates-times" x={111.3} y={83} {...OP}>
-          ×
-        </text>
+        <g className="v-ratios-rates-a v-ratios-rates-times">
+          <Tex x={111.3} y={77} size={20} width={24} color={C.muted}>{String.raw`\times`}</Tex>
+        </g>
         <g className="v-ratios-rates-a v-ratios-rates-eightX">
           <g className="v-ratios-rates-a v-ratios-rates-eightY">
             <text x={140.9} y={83} textAnchor="end" {...T}>

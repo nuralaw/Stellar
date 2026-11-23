@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // The net of a 2 × 3 × 4 box (12 px per unit; edges 4, 2 and 3 are labelled). Faces come in pairs: 2×3 = 6, 2×4 = 8, 3×4 = 12, each twice. Total 52.
 export const alt =
@@ -64,14 +64,20 @@ export default function Visual() {
           <text x={X0 + 6 * U + 7} y={Y0 + U + 4}>2</text>
           <text x={X0 - 7} y={Y0 + 3.5 * U + 4} textAnchor="end">3</text>
         </g>
-        <g fontSize={13} fontWeight={700} fill={C.ink} {...lab}>
-          <text className={cls("p1")} x={192} y={50}>2 × 3 = 6</text>
-          <text className={cls("p2")} x={192} y={72}>2 × 4 = 8</text>
-          <text className={cls("p3")} x={192} y={94}>3 × 4 = 12</text>
+        <g className={cls("p1")}>
+          <Tex x={192} y={46} size={14} anchor="start" width={110}>{String.raw`2\times3=6`}</Tex>
         </g>
-        <text className={cls("p4")} x={192} y={122} fontSize={11} fill={C.muted} {...lab}>each face twice:</text>
-        <text className={cls("p4")} x={192} y={142} fontSize={13} fontWeight={700} fill={C.ink} {...lab}>2 × (6 + 8 + 12)</text>
-        <text className={cls("p4")} x={192} y={164} fontSize={19} fontWeight={700} fill={C.primaryText} {...lab}>= 52</text>
+        <g className={cls("p2")}>
+          <Tex x={192} y={68} size={14} anchor="start" width={110}>{String.raw`2\times4=8`}</Tex>
+        </g>
+        <g className={cls("p3")}>
+          <Tex x={192} y={90} size={14} anchor="start" width={110}>{String.raw`3\times4=12`}</Tex>
+        </g>
+        <text className={cls("p4")} x={192} y={118} fontSize={11} fill={C.muted} {...lab}>each face twice:</text>
+        <g className={cls("p4")}>
+          <Tex x={192} y={136} size={14} anchor="start" width={120}>{String.raw`2(6+8+12)`}</Tex>
+          <Tex x={192} y={157} size={18} anchor="start" width={90} color={C.primaryText}>{String.raw`{=}52`}</Tex>
+        </g>
       </g>
     </Svg>
   );

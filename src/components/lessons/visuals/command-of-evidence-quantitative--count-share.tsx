@@ -1,7 +1,7 @@
 import { C, Css, Svg } from "./kit";
 
 // Command of evidence (quantitative), "Compare shares": West has more band students (36 vs 30), but East has the larger share (30% vs 18%).
-export const alt = "Left, counts of band students: East 30, West 36, so West has more. Right, shares after dividing by school size: East 30 percent, West 18 percent, so East's share is larger.";
+export const alt = "Count column: East 30, West 36, so West has more. Percent column: East 30 percent, West 18 percent, so East has the larger share. Read the column; no dividing.";
 
 const P = "v-command-of-evidence-quantitative--count-share-";
 
@@ -40,7 +40,7 @@ export default function Visual() {
       <g className={`v-command-of-evidence-quantitative--count-share-a v-command-of-evidence-quantitative--count-share-scene`}>
         {/* Counts */}
         <text x={81} y={30} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.muted}>
-          count
+          count column
         </text>
         <path d={`M30 ${BASE} H132`} stroke={C.muted} strokeWidth={1.5} fill="none" />
         <Bar x={46} v={30} cls="c1" fill={C.fill} stroke={C.muted} />
@@ -63,17 +63,17 @@ export default function Visual() {
           West has more
         </text>
 
-        {/* ÷ students */}
+        {/* switch to the percent column */}
         <g className={`v-command-of-evidence-quantitative--count-share-a v-command-of-evidence-quantitative--count-share-arrow`}>
           <path d="M138 86 H166 M160 81 L167 86 L160 91" fill="none" stroke={C.primary} strokeWidth={2} />
           <text x={152} y={76} textAnchor="middle" fontSize={11} fontWeight={700} fill={C.primaryText}>
-            ÷ size
+            switch
           </text>
         </g>
 
         {/* Shares */}
         <text x={238} y={30} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.muted}>
-          share of students
+          percent column
         </text>
         <path d={`M176 ${BASE} H300`} stroke={C.muted} strokeWidth={1.5} fill="none" />
         <Bar x={202} v={30} cls="s1" fill={C.soft} stroke={C.primary} />
@@ -93,7 +93,7 @@ export default function Visual() {
           West
         </text>
         <text className={`v-command-of-evidence-quantitative--count-share-a v-command-of-evidence-quantitative--count-share-yes`} x={238} y={154} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.good}>
-          East is larger
+          larger share: East
         </text>
       </g>
     </Svg>

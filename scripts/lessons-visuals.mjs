@@ -16,6 +16,7 @@ const cacheRoot = path.join(root, "node_modules/.cache/lesson-visuals");
 const NOT_VISUALS = new Set(["kit", "index", "Stage"]);
 const CHROME = ["C:/Program Files/Google/Chrome/Application/chrome.exe", "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", "/usr/bin/google-chrome", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"].find((p) => fs.existsSync(p));
 const FONT = path.join(root, "node_modules/next/dist/esm/next-devtools/server/font/geist-latin.woff2");
+const KATEX_CSS = path.join(root, "node_modules/katex/dist/katex.min.css"); // for <Tex> (foreignObject): fonts load from its fonts/ folder
 
 const allSlugs = () =>
   fs
@@ -55,7 +56,7 @@ function lint(slug, src) {
   if (!/export default function/.test(src)) errors.push("missing `export default function Visual()`");
   if (!/<Svg\b/.test(src)) errors.push("draw inside <Svg label={alt}> from ./kit");
   if (/<(animate|animateTransform|animateMotion|set)\b/.test(src)) errors.push("no SMIL (<animate>…): animate with CSS keyframes so the page can pause it");
-  if (/<(image|foreignObject|script|use)\b/.test(src)) errors.push("no <image>, <foreignObject>, <script> or <use>");
+  if (/<(image|foreignObject|script|use)\b/.test(src)) errors.push("no <image>, <foreignObject>, <script> or <use> (typeset formulas with <Tex> from ./kit)");
   if (/https?:\/\//.test(src)) errors.push("no URLs");
   if (/#[0-9a-fA-F]{3,8}\b/.test(src) || /\b(rgb|rgba|hsl|hsla)\(/.test(src)) errors.push("hard-coded color: use C.* from ./kit (theme variables)");
   const fills = [...src.matchAll(/\b(?:fill|stroke)=["']([a-z]+)["']/g)].map((m) => m[1]).filter((c) => !["none", "currentColor"].includes(c));
@@ -117,8 +118,8 @@ async function render(slug) {
 }
 
 const THEMES = {
-  light: "--bg:#f5f5f4;--surface:#ffffff;--surface-2:#ececea;--ink:#1c1c1e;--muted:#6b6b70;--line:#e2e2df;--primary:#ea580c;--primary-soft:#fff1e6;--success:#15803d;--success-soft:#dcfce7;--danger:#b91c1c;--danger-soft:#fee2e2;",
-  dark: "--bg:#111112;--surface:#1a1a1c;--surface-2:#232326;--ink:#ededee;--muted:#9d9da3;--line:#2b2b2f;--primary:#fb923c;--primary-soft:#2e1d10;--success:#4ade80;--success-soft:#0f2a1a;--danger:#f87171;--danger-soft:#2f1414;",
+  light: "--bg:#f5f5f4;--surface:#ffffff;--surface-2:#ececea;--ink:#1c1c1e;--muted:#6b6b70;--line:#e2e2df;--primary:#ea580c;--primary-strong:#b4400b;--primary-ink:#0e1a3a;--primary-soft:#fff1e6;--success:#15803d;--success-soft:#dcfce7;--danger:#b91c1c;--danger-soft:#fee2e2;",
+  dark: "--bg:#111112;--surface:#1a1a1c;--surface-2:#232326;--ink:#ededee;--muted:#9d9da3;--line:#2b2b2f;--primary:#fb923c;--primary-strong:#ff8a3d;--primary-ink:#0e1a3a;--primary-soft:#2e1d10;--success:#4ade80;--success-soft:#0f2a1a;--danger:#f87171;--danger-soft:#2f1414;",
 };
 const FRAMES = [0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 0.95];
 
@@ -126,8 +127,9 @@ function storyboard(out, slug, svg) {
   const cell = (theme, f) =>
     `<figure><div class="isle" style="${THEMES[theme]}" data-f="${f}">${svg}</div><figcaption>${f === "still" ? "still (reduced motion)" : `${Math.round(f * 100)}% of the loop`}</figcaption></figure>`;
   const row = (theme) => `<section style="${THEMES[theme]}background:var(--bg);color:var(--muted)"><h2>${slug} · ${theme}</h2><div class="grid">${[...FRAMES, "still"].map((f) => cell(theme, f)).join("")}</div></section>`;
-  const html = `<!doctype html><html><head><meta charset="utf-8"><style>
+  const html = `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${pathToFileURL(KATEX_CSS).href}"><style>
 @font-face{font-family:Geist;src:url("${pathToFileURL(FONT).href}") format("woff2");font-weight:100 900}
+.kit-tex .katex{font-size:1em}
 body{margin:0;font-family:Geist,"Segoe UI",system-ui,sans-serif}
 section{padding:14px 16px 6px}h2{margin:0 0 8px;font:600 13px Geist,sans-serif}
 .grid{display:grid;grid-template-columns:repeat(4,320px);gap:10px 16px}

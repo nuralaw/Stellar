@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Two similar cones, k = 2: every length is doubled (drawn r : h the same in both). Area × k² = 4, volume × k³ = 8.
 export const alt =
@@ -45,17 +45,17 @@ export default function Visual() {
           <text x={140} y={yBase + 24} textAnchor="middle" fontSize={11} fill={C.muted} {...lab}>big</text>
         </g>
         <g className={cls("k")} {...lab}>
-          <text x={98} y={44} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.ink}>k = 2</text>
-          <text x={98} y={60} textAnchor="middle" fontSize={11} fill={C.muted}>every length × 2</text>
+          <Tex x={98} y={42} size={17} width={70}>{String.raw`k=2`}</Tex>
+          <text x={98} y={62} textAnchor="middle" fontSize={11} fill={C.muted}>every length × 2</text>
         </g>
 
         <g className={cls("p1")} {...lab}>
           <text x={212} y={52} fontSize={14} fontWeight={700} fill={C.ink}>area × 4</text>
-          <text x={212} y={69} fontSize={11} fill={C.muted}>k² = 4 · 10 → 40</text>
+          <Tex x={212} y={70} size={12} anchor="start" width={100} color={C.muted}>{String.raw`k^2=4:\ 10\to40`}</Tex>
         </g>
         <g className={cls("p2")} {...lab}>
           <text x={212} y={106} fontSize={14} fontWeight={700} fill={C.primaryText}>volume × 8</text>
-          <text x={212} y={123} fontSize={11} fill={C.muted}>k³ = 8 · 6 → 48</text>
+          <Tex x={212} y={124} size={12} anchor="start" width={100} color={C.muted}>{String.raw`k^3=8:\ 6\to48`}</Tex>
         </g>
       </g>
     </Svg>

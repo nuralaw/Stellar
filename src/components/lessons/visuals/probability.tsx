@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Probability: the condition picks the group (the Bus column, 18 + 12 = 30), the cell that fits (18) goes on top.
 export const alt = "A two-way table. For the chance a bus rider is in grade 9, the Bus column is the group: 18 + 12 = 30. 18 of them fit, so 18/30 = 3/5.";
@@ -145,10 +145,8 @@ export default function Visual() {
           <text x={240} y={113} fontSize={20} fontWeight={700} fill={C.ink}>
             =
           </text>
-          <rect x={258} y={93} width={44} height={26} rx={13} fill={C.goodSoft} stroke={C.good} strokeWidth={1.5} />
-          <text x={280} y={112.5} textAnchor="middle" fontSize={18} fontWeight={700} fill={C.good}>
-            3/5
-          </text>
+          <rect x={256} y={86} width={48} height={40} rx={14} fill={C.goodSoft} stroke={C.good} strokeWidth={1.5} />
+          <Tex x={280} y={106} size={16} width={48} color={C.good}>{String.raw`\dfrac{3}{5}`}</Tex>
         </g>
       </g>
     </Svg>

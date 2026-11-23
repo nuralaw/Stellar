@@ -1,7 +1,7 @@
-// Lesson file format (content/lessons/README.md): frontmatter, then "# " parts (subtopics), each with "## " steps.
-// A step has teaching text, then (in this order) an optional ```visual, at most one of ```example, ```desmos,
-// ```quiz or ```check, and an optional ```more (the "Not clear? Explain more" text). A visual can only be paired
-// with an example or desmos block.
+// Lesson file format v2 (content/lessons/README.md, spec docs/lessons-v2.md): frontmatter, then subtopics.
+// A subtopic is "# title", a tagline, one ```visual, "## Key ideas" (Markdown, with an optional ```example and/or
+// ```desmos block, then one ```theory block), and "## Easy" / "## Medium" / "## Hard" with one ```task each.
+// A task is a bank question ("bank: m-1234") or an own question (the quiz syntax), plus `highlight:` and `explain:`.
 // Shared by the site (lib/lessons.ts) and scripts/lessons-check.mjs, so it has no imports and only
 // type-strippable TypeScript.
 
@@ -12,7 +12,7 @@ export interface QuizOption {
   feedback?: string;
 }
 
-/** A typed-answer quiz: a common wrong value and what it means (shown when the student enters it). */
+/** A typed-answer question: a common wrong value and what it means (shown when the student enters it). */
 export interface QuizWrong {
   value: string;
   feedback?: string;
@@ -42,41 +42,97 @@ export type DesmosMove =
   | { a: "table"; cols: { name: string; values: number[] }[]; caption?: string }
   | { a: "say"; caption?: string };
 
-export type Interactive =
-  // Multiple choice: `options` (exactly one correct). Typed answer: `answers` (accepted values) and `wrong`; `options` is empty.
-  | { t: "quiz"; prompt: string; options: QuizOption[]; answers: string[]; wrong: QuizWrong[]; explain: string[]; desmos: DesmosMove[] }
-  | { t: "check"; id: string }
-  // `choices`: an R&W example's answer choices ("Choices: a / b / c"), shown as lettered chips.
-  | { t: "example"; prompt: string; choices: string[]; lines: ExampleLine[] }
-  | { t: "desmos"; prompt: string; moves: DesmosMove[] };
-
-export interface Step {
-  title: string;
-  /** Teaching text (Markdown) before the blocks. */
-  body: string;
-  /** The id of the step's ```visual animation (shown first, above the block), or null. */
-  visual: string | null;
-  block: Interactive | null;
-  /** The ```more text (Markdown): the expandable "Not clear? Explain more" under the step, or null. */
-  more: string | null;
-  /** Text after the block (not allowed by the format, but rendered if present). */
-  after: string;
+/** A worked example (```example): the problem, optional R&W answer choices, and 2–5 numbered lines. */
+export interface ExampleBlock {
+  prompt: string;
+  /** An R&W example's answer choices ("Choices: a / b / c"), shown as lettered chips; empty for math. */
+  choices: string[];
+  lines: ExampleLine[];
 }
 
-/** A part (subtopic) of a lesson: steps[start..end). */
-export interface Part {
+/** A Desmos walkthrough (```desmos): the problem line(s), then the moves. */
+export interface DesmosBlock {
+  prompt: string;
+  moves: DesmosMove[];
+}
+
+/** An own question (v1 quiz syntax). Multiple choice: `options` (exactly one correct). Typed answer: `answers` + `wrong`, `options` empty. */
+export interface OwnQuestion {
+  /** Markdown with \( \) formulas; lines joined with "\n". */
+  prompt: string;
+  options: QuizOption[];
+  /** Typed answer: the accepted values ("4", "-2.5", "17/4"). Empty for multiple choice. */
+  answers: string[];
+  /** Typed answer: common wrong values with feedback (0–3). */
+  wrong: QuizWrong[];
+  /** Optional "~" lines: the fast way in Desmos, played after a wrong answer (math only). */
+  desmos: DesmosMove[];
+}
+
+/**
+ * One key phrase of a task. After the 2nd wrong answer the player lights the phrases up in the prompt/passage one by
+ * one, each with its note. `phrase` is an exact substring of the task's prompt or passage text as stored (for own
+ * questions: the Markdown source of `prompt`, formulas included; for bank questions: the bank's `passage` or `prompt`).
+ */
+export interface Highlight {
+  phrase: string;
+  /** Markdown (formulas allowed), ≤ 20 words. */
+  note: string;
+}
+
+export type TaskLevel = "easy" | "medium" | "hard";
+export const LEVELS: TaskLevel[] = ["easy", "medium", "hard"];
+
+interface TaskBase {
+  /** The slot the task sits in ("## Easy" / "## Medium" / "## Hard"). */
+  level: TaskLevel;
+  /** 2–5 key phrases, in reasoning order. */
+  highlights: Highlight[];
+  /** The full step-by-step explanation (Markdown, ends with the answer): shown by "Still confused?" / "See why". */
+  explain: string;
+}
+
+/** A question from the bank (content/bank/dist/questions.json), by id. Load it with lessonQuestions(). */
+export interface BankTask extends TaskBase {
+  kind: "bank";
+  id: string;
+}
+
+/** An own SAT-style question written in the lesson file. */
+export interface OwnTask extends TaskBase {
+  kind: "own";
+  question: OwnQuestion;
+}
+
+export type Task = BankTask | OwnTask;
+
+/**
+ * One subtopic = one Learn screen + three task screens (Easy, Medium, Hard).
+ * A lesson with no format errors has all fields filled and `tasks.length === 3` in the order easy, medium, hard
+ * (with errors, missing pieces are "" / null / left out; the checker reports them).
+ */
+export interface Subtopic {
   title: string;
-  /** One line under the title on the lesson's overview. */
+  /** One line under the title (the overview list and the Learn screen header). */
   tagline: string;
-  start: number;
-  end: number;
+  /** Id of the animation in src/components/lessons/visuals/ (rendered by lessonVisual(id)). */
+  visual: string;
+  /** "## Key ideas": Markdown text (paragraphs, bullets, display formulas, small tables), without the blocks below. */
+  keyIdeas: string;
+  /** The optional worked example shown under the key ideas. */
+  example: ExampleBlock | null;
+  /** The optional Desmos walkthrough shown under the key ideas (after the example if both exist). */
+  desmos: DesmosBlock | null;
+  /** The ```theory text (Markdown): what the "Not sure?" island opens. */
+  theory: string;
+  /** Easy, Medium, Hard. */
+  tasks: Task[];
 }
 
 export interface ParsedLesson {
+  /** Frontmatter: title, skill, domain, section, summary, optional also-skills. */
   meta: Record<string, string>;
-  /** All steps in order (parts index into this). */
-  steps: Step[];
-  parts: Part[];
+  subtopics: Subtopic[];
   /** Format problems found while parsing (the checker reports them). */
   errors: string[];
 }
@@ -243,28 +299,29 @@ export function gradeTyped(q: { answers: string[]; wrong: QuizWrong[] }, raw: st
   return { kind: "wrong", feedback: q.wrong.find((w) => matchesAnswer(raw, [w.value]))?.feedback };
 }
 
-function parseQuiz(lines: string[], where: string, errors: string[]): Interactive {
+
+/** Reads one quiz-syntax question (the prompt lines, then options or an "answer:" line, then optional "~" lines). */
+function parseQuestion(lines: string[], where: string, errors: string[]): OwnQuestion {
   const prompt: string[] = [];
   const options: QuizOption[] = [];
   const wrong: QuizWrong[] = [];
   const answers: string[] = [];
   let typed = false;
-  const explain: string[] = [];
+  let sawOption = false;
   const desmos: DesmosMove[] = [];
   for (const line of lines) {
     const t = line.trim();
     if (!t) continue;
     const opt = t.match(/^([-*])\s+(.*)$/);
-    const exp = t.match(/^>\s?(.*)$/);
     const dz = t.match(/^~\s+(.*)$/);
     const ans = t.match(/^answer:\s*(.*)$/i);
-    if (dz) {
+    if (/^>/.test(t)) errors.push(`${where}: no ">" explanation line in a task (write the explanation in the explain: part)`);
+    else if (dz) {
       const mv = parseMove(dz[1], where, errors);
       if (mv) desmos.push(mv);
       else errors.push(`${where}: "~ ${dz[1].slice(0, 30)}" is not a desmos move (${MOVES.join(", ")})`);
-    } else if (exp) explain.push(exp[1].trim());
-    else if (ans) {
-      if (typed) errors.push(`${where}: quiz has two "answer:" lines (put every accepted value on one line, separated by commas)`);
+    } else if (ans) {
+      if (typed) errors.push(`${where}: question has two "answer:" lines (put every accepted value on one line, separated by commas)`);
       typed = true;
       for (const v of ans[1].split(",").map((x) => x.trim()).filter(Boolean)) {
         if (parseEntry(v).kind === "num") answers.push(v);
@@ -272,31 +329,32 @@ function parseQuiz(lines: string[], where: string, errors: string[]): Interactiv
       }
       if (!ans[1].trim()) errors.push(`${where}: "answer:" needs at least one accepted value`);
     } else if (opt) {
+      sawOption = true;
       const [text, ...rest] = opt[2].split(/\s+::\s+/);
       const feedback = rest.length ? rest.join(" :: ").trim() : undefined;
       if (typed) {
-        // typed quiz: "- 3 :: feedback" is a common wrong value
-        if (opt[1] === "*") errors.push(`${where}: a typed quiz lists its right answers on the "answer:" line, not as * options`);
+        // typed answer: "- 3 :: feedback" is a common wrong value
+        if (opt[1] === "*") errors.push(`${where}: a typed question lists its right answers on the "answer:" line, not as * options`);
         else if (parseEntry(text).kind !== "num") errors.push(`${where}: wrong value "${text.trim().slice(0, 20)}" is not a number, decimal or fraction`);
         else wrong.push({ value: text.trim(), feedback });
       } else options.push({ text: text.trim(), correct: opt[1] === "*", feedback });
-    } else if (options.length || explain.length || typed) errors.push(`${where}: quiz line "${t.slice(0, 40)}" after the options (options start with - or *, explanation with >, Desmos moves with ~)`);
+    } else if (sawOption || typed || desmos.length) errors.push(`${where}: line "${t.slice(0, 40)}" after the options (options start with - or *, Desmos moves with ~)`);
     else prompt.push(t);
   }
-  if (!prompt.length) errors.push(`${where}: quiz has no question`);
+  if (!prompt.length) errors.push(`${where}: question has no prompt`);
   if (typed) {
-    if (options.length) errors.push(`${where}: a quiz is either multiple choice (- / * options) or typed (an "answer:" line), not both`);
+    if (options.length) errors.push(`${where}: a question is either multiple choice (- / * options) or typed (an "answer:" line), not both`);
     for (const w of wrong) if (matchesAnswer(w.value, answers)) errors.push(`${where}: wrong value "${w.value}" is also an accepted answer`);
-    if (wrong.length > 3) errors.push(`${where}: a typed quiz lists at most 3 common wrong values, has ${wrong.length}`);
+    if (wrong.length > 3) errors.push(`${where}: a typed question lists at most 3 common wrong values, has ${wrong.length}`);
   } else {
-    if (options.length < 2 || options.length > 4) errors.push(`${where}: quiz needs 2–4 options, has ${options.length}`);
+    if (options.length < 2 || options.length > 4) errors.push(`${where}: question needs 2–4 options, has ${options.length}`);
     const right = options.filter((o) => o.correct).length;
-    if (right !== 1) errors.push(`${where}: quiz needs exactly one correct (*) option, has ${right}`);
+    if (right !== 1) errors.push(`${where}: question needs exactly one correct (*) option, has ${right}`);
   }
-  return { t: "quiz", prompt: prompt.join("\n"), options, answers, wrong, explain, desmos };
+  return { prompt: prompt.join("\n"), options, answers, wrong, desmos };
 }
 
-function parseExample(lines: string[], where: string, errors: string[]): Interactive {
+function parseExample(lines: string[], where: string, errors: string[]): ExampleBlock {
   const prompt: string[] = [];
   let choices: string[] = [];
   const out: ExampleLine[] = [];
@@ -326,10 +384,10 @@ function parseExample(lines: string[], where: string, errors: string[]): Interac
   }
   if (!prompt.length) errors.push(`${where}: example has no problem (the lines before "1.")`);
   if (out.length < 2 || out.length > 5) errors.push(`${where}: example needs 2–5 numbered lines, has ${out.length}`);
-  return { t: "example", prompt: prompt.join("\n"), choices, lines: out };
+  return { prompt: prompt.join("\n"), choices, lines: out };
 }
 
-function parseDesmos(lines: string[], where: string, errors: string[]): Interactive {
+function parseDesmos(lines: string[], where: string, errors: string[]): DesmosBlock {
   const prompt: string[] = [];
   const moves: DesmosMove[] = [];
   for (const line of lines) {
@@ -341,7 +399,58 @@ function parseDesmos(lines: string[], where: string, errors: string[]): Interact
     else prompt.push(t);
   }
   if (!moves.length) errors.push(`${where}: desmos block has no moves`);
-  return { t: "desmos", prompt: prompt.join("\n"), moves };
+  return { prompt: prompt.join("\n"), moves };
+}
+
+/** The inside of a ```task block: "bank: <id>" or a quiz-syntax question, then "highlight:" lines, then "explain:" to the end. */
+function parseTask(lines: string[], level: TaskLevel, where: string, errors: string[]): Task {
+  const e = lines.findIndex((l) => /^\s*explain:/i.test(l));
+  const head = e < 0 ? lines : lines.slice(0, e);
+  const explain = e < 0 ? "" : [lines[e].replace(/^\s*explain:\s*/i, ""), ...lines.slice(e + 1)].join("\n").trim();
+  if (e < 0) errors.push(`${where}: no explain: part (the full step-by-step explanation, to the end of the task block)`);
+  else if (!explain) errors.push(`${where}: explain: is empty`);
+
+  const h = head.findIndex((l) => /^\s*highlight:\s*$/i.test(l));
+  const questionLines = h < 0 ? head : head.slice(0, h);
+  const highlights: Highlight[] = [];
+  if (h < 0) errors.push(`${where}: no highlight: part (2–5 lines: - "phrase" :: note), and it comes before explain:`);
+  else
+    for (const line of head.slice(h + 1)) {
+      const t = line.trim();
+      if (!t) continue;
+      const m = t.match(/^-\s+"(.+?)"\s+::\s+(.+)$/);
+      if (m) highlights.push({ phrase: m[1], note: m[2].trim() });
+      else errors.push(`${where}: highlight line "${t.slice(0, 40)}" must look like - "exact phrase" :: note`);
+    }
+
+  const bank = questionLines.find((l) => l.trim())?.trim().match(/^bank:\s*(.*)$/i);
+  if (bank) {
+    const id = bank[1].trim();
+    if (!/^[\w-]+$/.test(id)) errors.push(`${where}: bank: needs one question id (like m-1234)`);
+    const extra = questionLines.filter((l) => l.trim()).slice(1);
+    if (extra.length) errors.push(`${where}: a bank task has only the bank: line, then highlight: and explain: (found "${extra[0].trim().slice(0, 30)}")`);
+    return { kind: "bank", level, id, highlights, explain };
+  }
+  return { kind: "own", level, question: parseQuestion(questionLines, where, errors), highlights, explain };
+}
+
+const SECTION_TITLES: Record<string, "key" | TaskLevel> = { "key ideas": "key", easy: "easy", medium: "medium", hard: "hard" };
+const FENCES = ["visual", "theory", "example", "desmos", "task"];
+const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
+
+interface Draft {
+  title: string;
+  tagline: string[];
+  visual: string | null;
+  key: string[];
+  example: ExampleBlock | null;
+  desmos: DesmosBlock | null;
+  theory: string | null;
+  tasks: Partial<Record<TaskLevel, Task>>;
+  /** Sections seen so far, in order. */
+  seen: ("key" | TaskLevel)[];
+  /** Key ideas text may not follow a block. */
+  keyBlock: boolean;
 }
 
 export function parseLesson(raw: string): ParsedLesson | null {
@@ -349,115 +458,232 @@ export function parseLesson(raw: string): ParsedLesson | null {
   if (!fm) return null;
   const errors: string[] = [];
   const lines = fm.body.split("\n");
-  const steps: Step[] = [];
-  const parts: { title: string; tagline: string[]; start: number }[] = [];
-  type Cur = { title: string; body: string[]; visual: string | null; block: Interactive | null; more: string | null; after: string[] };
-  let cur: Cur | null = null;
+  const subtopics: Subtopic[] = [];
+  let cur: Draft | null = null;
+  let sec: "head" | "key" | TaskLevel = "head";
+
   const close = () => {
-    if (cur) steps.push({ title: cur.title, body: cur.body.join("\n").trim(), visual: cur.visual, block: cur.block, more: cur.more, after: cur.after.join("\n").trim() });
+    const d = cur;
+    if (!d) return;
+    const where = `subtopic "${d.title}"`;
+    if (!d.tagline.length) errors.push(`${where}: no tagline (one line under the "# " title)`);
+    if (d.visual === null) errors.push(`${where}: no \`\`\`visual block (every subtopic has one animation)`);
+    if (!d.seen.includes("key")) errors.push(`${where}: no "## Key ideas"`);
+    else if (!d.key.join("").trim()) errors.push(`${where}: "## Key ideas" has no text`);
+    if (d.theory === null) errors.push(`${where}: no \`\`\`theory block (in "## Key ideas", after the text)`);
+    for (const lv of LEVELS) if (!d.tasks[lv]) errors.push(`${where}: no "## ${cap(lv)}" task`);
+    subtopics.push({
+      title: d.title,
+      tagline: d.tagline.join(" ").trim(),
+      visual: d.visual ?? "",
+      keyIdeas: d.key.join("\n").trim(),
+      example: d.example,
+      desmos: d.desmos,
+      theory: d.theory ?? "",
+      tasks: LEVELS.flatMap((lv) => (d.tasks[lv] ? [d.tasks[lv]] : [])),
+    });
     cur = null;
   };
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const t = line.trim();
-    if (/^#\s/.test(t)) {
-      close();
-      parts.push({ title: t.replace(/^#\s+/, "").trim(), tagline: [], start: steps.length });
-      continue;
-    }
-    if (/^##\s/.test(t)) {
-      close();
-      cur = { title: t.replace(/^##\s+/, "").trim(), body: [], visual: null, block: null, more: null, after: [] };
-      continue;
-    }
-    if (!cur) {
-      if (!t) continue;
-      if (parts.length) parts[parts.length - 1].tagline.push(t);
-      else errors.push(`text before the first "# " part or "## " step: "${t.slice(0, 40)}"`);
-      continue;
-    }
-    const fence = t.match(/^```\s*(quiz|check|example|desmos|visual|more)\s*$/);
+    const fence = t.match(/^```\s*(\w+)?\s*$/);
     if (fence) {
-      const kind = fence[1];
-      const where = `step "${cur.title}"`;
+      const kind = fence[1] ?? "";
       const inner: string[] = [];
       i++;
       while (i < lines.length && !lines[i].trim().startsWith("```")) inner.push(lines[i++]);
+      const d = cur as Draft | null;
+      if (!d) {
+        errors.push(`\`\`\`${kind} block before the first "# " subtopic`);
+        continue;
+      }
+      const where = `subtopic "${d.title}"`;
       if (i >= lines.length) errors.push(`${where}: unclosed \`\`\`${kind} block`);
-      if (cur.more !== null) errors.push(`${where}: the more block must be the last thing in the step (found a ${kind} block after it)`);
-      if (kind === "more") {
-        const text = inner.join("\n").trim();
-        if (cur.more !== null) errors.push(`${where}: more than one more block`);
-        else if (!text) errors.push(`${where}: empty more block`);
-        else cur.more = text;
-      } else if (kind === "visual") {
+      if (!FENCES.includes(kind)) {
+        errors.push(`${where}: unknown block \`\`\`${kind || "(none)"} (use ${FENCES.join(", ")})`);
+        continue;
+      }
+      if (kind === "visual") {
         const ids = inner.map((l) => l.trim()).filter(Boolean);
         if (ids.length !== 1) errors.push(`${where}: a visual block holds exactly one id`);
-        if (cur.visual !== null) errors.push(`${where}: more than one visual block`);
-        else if (cur.block) errors.push(`${where}: put the visual block before the ${cur.block.t} block (the visual is shown first)`);
-        else cur.visual = ids[0] ?? "";
+        if (sec !== "head") errors.push(`${where}: the visual block goes under the tagline, before "## Key ideas"`);
+        if (d.visual !== null) errors.push(`${where}: more than one visual block`);
+        else d.visual = ids[0] ?? "";
+      } else if (kind === "task") {
+        if (sec === "head" || sec === "key") {
+          errors.push(`${where}: a task block belongs under "## Easy", "## Medium" or "## Hard"`);
+          continue;
+        }
+        const label = `${where} · ${cap(sec)} task`;
+        if (d.tasks[sec]) errors.push(`${label}: more than one task block`);
+        else d.tasks[sec] = parseTask(inner, sec, label, errors);
       } else {
-        let block: Interactive;
-        if (kind === "check") {
-          const ids = inner.map((l) => l.trim()).filter(Boolean);
-          if (ids.length !== 1) errors.push(`${where}: a check block holds exactly one id`);
-          block = { t: "check", id: ids[0] ?? "" };
-        } else if (kind === "example") block = parseExample(inner, where, errors);
-        else if (kind === "desmos") block = parseDesmos(inner, where, errors);
-        else block = parseQuiz(inner, where, errors);
-        if (cur.block) errors.push(`${where}: more than one block (a step has one example, desmos, quiz or check, plus an optional visual and more)`);
-        else {
-          if (cur.visual !== null && (block.t === "quiz" || block.t === "check")) errors.push(`${where}: a visual can only be paired with an example or desmos block, not a ${block.t}`);
-          cur.block = block;
+        if (sec !== "key") {
+          errors.push(`${where}: a ${kind} block belongs in "## Key ideas"`);
+          continue;
+        }
+        d.keyBlock = true;
+        if (kind === "theory") {
+          const text = inner.join("\n").trim();
+          if (d.theory !== null) errors.push(`${where}: more than one theory block`);
+          else if (!text) errors.push(`${where}: empty theory block`);
+          else d.theory = text;
+        } else if (kind === "example") {
+          if (d.theory !== null) errors.push(`${where}: the example block goes above the theory block`);
+          if (d.example) errors.push(`${where}: more than one example block`);
+          else d.example = parseExample(inner, where, errors);
+        } else {
+          if (d.theory !== null) errors.push(`${where}: the desmos block goes above the theory block`);
+          if (d.desmos) errors.push(`${where}: more than one desmos block`);
+          else d.desmos = parseDesmos(inner, where, errors);
         }
       }
       continue;
     }
-    if (cur.block || cur.visual !== null || cur.more !== null) {
-      if (t) cur.after.push(line);
-    } else cur.body.push(line);
+    if (/^#\s/.test(t)) {
+      close();
+      cur = { title: t.replace(/^#\s+/, "").trim(), tagline: [], visual: null, key: [], example: null, desmos: null, theory: null, tasks: {}, seen: [], keyBlock: false };
+      sec = "head";
+      continue;
+    }
+    if (/^##\s/.test(t)) {
+      const name = t.replace(/^##\s+/, "").trim();
+      const kind = SECTION_TITLES[name.toLowerCase()];
+      const d = cur as Draft | null;
+      if (!d) errors.push(`"## ${name}" before the first "# " subtopic`);
+      else if (!kind) errors.push(`subtopic "${d.title}": unknown section "## ${name}" (use Key ideas, Easy, Medium, Hard)`);
+      else {
+        const want = (["key", ...LEVELS] as const)[d.seen.length];
+        if (d.seen.includes(kind)) errors.push(`subtopic "${d.title}": "## ${name}" appears twice`);
+        else if (kind !== want) errors.push(`subtopic "${d.title}": sections must come in the order Key ideas, Easy, Medium, Hard ("## ${name}" is out of order)`);
+        d.seen.push(kind);
+        sec = kind;
+      }
+      continue;
+    }
+    const d = cur as Draft | null;
+    if (!t) {
+      if (d && sec === "key") d.key.push(line);
+      continue;
+    }
+    if (!d) errors.push(`text before the first "# " subtopic: "${t.slice(0, 40)}"`);
+    else if (sec === "head") d.tagline.push(t);
+    else if (sec === "key") {
+      if (d.keyBlock) errors.push(`subtopic "${d.title}": text after a block; put all the Key ideas text above the example, desmos and theory blocks ("${t.slice(0, 30)}")`);
+      d.key.push(line);
+    } else errors.push(`subtopic "${d.title}": text under "## ${cap(sec)}" outside the task block ("${t.slice(0, 30)}")`);
   }
   close();
-  for (const s of steps) if (s.after) errors.push(`step "${s.title}": text after a block; move it above the blocks (a step is its text, then the blocks)`);
-
-  // No "# " parts: the whole lesson is one part.
-  const list = parts.length ? parts : [{ title: fm.meta.title ?? "Lesson", tagline: [], start: 0 }];
-  if (parts.length && parts[0].start > 0) errors.push('steps before the first "# " part');
-  const out: Part[] = list.map((p, k) => ({ title: p.title, tagline: p.tagline.join(" ").trim(), start: p.start, end: list[k + 1]?.start ?? steps.length }));
-  for (const p of out) if (p.end <= p.start) errors.push(`part "${p.title}" has no steps`);
-  return { meta: fm.meta, steps, parts: out, errors };
+  if (!subtopics.length) errors.push('no subtopics (each starts with "# title")');
+  return { meta: fm.meta, subtopics, errors };
 }
+/**
+ * One pass over lesson text: a `code span` (no group matched: it is kept as it is), a formula \( … \) (group 1, inline)
+ * or \[ … \] (group 2, display), on one line. Rendered with KaTeX, see components/lessons/Markdown.tsx.
+ */
+export const TOKEN_RE = /`[^`]+`|\\\((.+?)\\\)|\\\[(.+?)\\\]/g;
 
-/** Rough word count of Markdown prose (tables and markup ignored as symbols). */
+/** Rough word count of Markdown prose (tables and markup ignored as symbols). A whole formula counts as one word. */
 export function countWords(md: string): number {
   return md
+    .replace(TOKEN_RE, (m, a, b) => (a === undefined && b === undefined ? m : " F "))
     .replace(/[|*`#>_[\]()-]+/g, " ")
     .split(/\s+/)
     .filter((w) => /[A-Za-z0-9]/.test(w)).length;
 }
 
-/** Honest time estimate: reading + answering + watching. */
-export function estimateMinutes(steps: Step[], section: string): number {
+/**
+ * Honest time estimate: reading the tagline, key ideas and example (theory is optional, counted a little), watching
+ * the visual, answering the three tasks.
+ */
+export function estimateMinutes(subtopics: Subtopic[], section: string): number {
+  const taskMinutes: Record<TaskLevel, number> = { easy: 0.5, medium: 0.9, hard: 1.4 };
+  const k = section === "math" ? 1.2 : 1;
   let words = 0;
-  let quizzes = 0;
-  let checks = 0;
-  let shows = 0;
-  for (const s of steps) {
-    words += countWords(s.body) + countWords(s.after);
-    const b = s.block;
-    if (b?.t === "quiz") {
-      quizzes++;
-      words += countWords(b.prompt) + b.options.reduce((n, o) => n + countWords(o.text), 0) + countWords(b.explain.join(" "));
-    }
-    if (b?.t === "example") {
-      quizzes++;
-      words += countWords(b.prompt) + b.choices.reduce((n, c) => n + countWords(c), 0) + b.lines.reduce((n, l) => n + countWords(l.text) + countWords(l.note ?? ""), 0);
-    }
-    if (b?.t === "desmos" || s.visual) shows++;
-    if (s.more) words += countWords(s.more) * 0.1; // optional, so it only counts a little
-    if (b?.t === "check") checks++;
+  let minutes = 0;
+  for (const s of subtopics) {
+    words += countWords(s.tagline) + countWords(s.keyIdeas);
+    if (s.example) words += countWords(s.example.prompt) + s.example.lines.reduce((n, l) => n + countWords(l.text) + countWords(l.note ?? ""), 0);
+    if (s.desmos) words += countWords(s.desmos.prompt) + 20;
+    words += countWords(s.theory) * 0.15;
+    minutes += 0.3; // the visual
+    for (const t of s.tasks) minutes += taskMinutes[t.level] * k;
   }
-  const perCheck = section === "math" ? 1.6 : 1.2;
-  return Math.max(2, Math.round(words / 170 + quizzes * 0.35 + shows * 0.3 + checks * perCheck));
+  return Math.max(2, Math.round(words / 170 + minutes));
+}
+
+/* ---------------- highlights: where a task's key phrases sit ---------------- */
+// One rule for the player (components/lessons/v2/highlight.ts) and the checker (scripts/lessons-check.mjs).
+
+/**
+ * Where a task's key phrases sit in its texts (the passage and/or prompt, as stored: for bank questions the question's
+ * own text, for own questions the Markdown source). The match is on the RAW text, before anything is rendered, so a
+ * phrase may contain a formula `\( … \)`; the pieces are rendered afterwards one by one.
+ */
+export interface Placement {
+  /** Which text (index into the `texts` given to locate()) the phrase is in. */
+  text: number;
+  start: number;
+  end: number;
+  /** The highlight's number in the task's list (0-based, authoring order). */
+  highlight: number;
+}
+
+export interface Located {
+  /** Found phrases in the author's order (hint i = placements[i]). */
+  placements: Placement[];
+  /** Highlights that could not be placed, with why (the player logs them and skips them; the checker errors). */
+  problems: string[];
+}
+
+/** Ranges a split must not cut through: formulas, code spans, **bold** and *italic* runs, bank math notation. */
+export function protectedRanges(text: string): [number, number][] {
+  const out: [number, number][] = [];
+  for (const m of text.matchAll(TOKEN_RE)) out.push([m.index, m.index + m[0].length]);
+  for (const m of text.matchAll(/\*\*(?:[^*]|\*(?!\*))+\*\*|\*[^*\s][^*]*\*/g)) out.push([m.index, m.index + m[0].length]);
+  // The bank's plain math notation: x^2, (x - 1)^(1/2), sqrt(3), x_1 (a run of underscores is a blank, not a subscript).
+  for (const m of text.matchAll(/[A-Za-z0-9)]\^(?:\((?:[^()]|\([^()]*\))*\)|-?\w+)|\b(?:sqrt|cbrt)\((?:[^()]|\([^()]*\))*\)|[A-Za-z0-9)]_(?!_)(?:\((?:[^()]|\([^()]*\))*\)|\w+)/g)) out.push([m.index, m.index + m[0].length]);
+  return out;
+}
+
+/**
+ * Why [s, e) of `text` is not a clean place to cut, or null. A cut must not go through a protected range (overlap it
+ * without covering it whole), and, for the bank's plain notation (`x^(1/2)`, `sqrt(3)`, `x_1`), must not end on `^` or `_`,
+ * start right after one, or leave a `(` open.
+ */
+function cutReason(text: string, s: number, e: number, ranges: [number, number][]): string | null {
+  if (ranges.some(([a, b]) => s < b && e > a && !(s <= a && e >= b))) return "starts or ends inside a formula, `code` or **bold**/*italic* run";
+  const phrase = text.slice(s, e);
+  // (a run of underscores, like the blank "______" in R&W text, is not a subscript mark)
+  const sub = (i: number) => text[i] === "^" || (text[i] === "_" && text[i - 1] !== "_" && text[i + 1] !== "_");
+  if ((e > s && sub(e - 1)) || (s > 0 && sub(s - 1))) return "cuts a ^ or _ off from its exponent or subscript";
+  if ((phrase.match(/\(/g) ?? []).length > (phrase.match(/\)/g) ?? []).length) return "leaves a ( open";
+  return null;
+}
+
+/** Places each highlight in the first text where it fits (not cutting anything, not overlapping an earlier one). */
+export function locate(texts: string[], highlights: Highlight[]): Located {
+  const ranges = texts.map(protectedRanges);
+  const placements: Placement[] = [];
+  const problems: string[] = [];
+  highlights.forEach((h, highlight) => {
+    if (!h.phrase) return;
+    let reason = "not found in the task text";
+    for (let t = 0; t < texts.length; t++) {
+      for (let at = texts[t].indexOf(h.phrase); at >= 0; at = texts[t].indexOf(h.phrase, at + 1)) {
+        const end = at + h.phrase.length;
+        const cut = cutReason(texts[t], at, end, ranges[t]);
+        if (cut) reason = cut;
+        else if (placements.some((p) => p.text === t && at < p.end && end > p.start)) reason = "overlaps another highlight";
+        else {
+          placements.push({ text: t, start: at, end, highlight });
+          return;
+        }
+      }
+    }
+    problems.push(`highlight "${h.phrase}": ${reason}`);
+  });
+  return { placements, problems };
 }

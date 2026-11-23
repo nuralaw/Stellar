@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Completing the square with tiles: x² plus two 2x strips is not yet a square. The missing 2 × 2 corner is +4.
 export const alt =
@@ -38,20 +38,20 @@ export default function Visual() {
         {/* the x by x tile */}
         <g className={cls("sq")}>
           <rect x={x0} y={y0} width={X} height={X} rx={2} fill={C.fill} stroke={C.muted} strokeWidth={1.5} />
-          <text x={x0 + X / 2} y={y0 + X / 2 + 6} textAnchor="middle" fontSize={18} fontWeight={700} fill={C.ink} {...t}>x²</text>
+          <Tex x={x0 + X / 2} y={y0 + X / 2} size={19} width={50}>{String.raw`x^2`}</Tex>
         </g>
         {/* its two side lengths */}
-        <g className={cls("sq")} fontSize={12} fontWeight={700} fill={C.muted} {...t}>
-          <text x={x0 + X / 2} y={y0 - 8} textAnchor="middle">x</text>
-          <text x={x0 - 8} y={y0 + X / 2 + 4} textAnchor="end">x</text>
+        <g className={cls("sq")}>
+          <Tex x={x0 + X / 2} y={y0 - 12} size={14} width={20} color={C.muted}>{String.raw`x`}</Tex>
+          <Tex x={x0 - 8} y={y0 + X / 2} size={14} anchor="end" width={20} color={C.muted}>{String.raw`x`}</Tex>
         </g>
 
         {/* the two 2x strips (the 4x) */}
         <g className={cls("st")}>
           <rect x={x0 + X} y={y0} width={T} height={X} rx={2} fill={C.fill} stroke={C.ink} strokeWidth={1.5} />
           <rect x={x0} y={y0 + X} width={X} height={T} rx={2} fill={C.fill} stroke={C.ink} strokeWidth={1.5} />
-          <text x={x0 + X + T / 2} y={y0 + X / 2 + 4} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink} {...t}>2x</text>
-          <text x={x0 + X / 2} y={y0 + X + T / 2 + 4} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.ink} {...t}>2x</text>
+          <Tex x={x0 + X + T / 2} y={y0 + X / 2} size={14} width={30}>{String.raw`2x`}</Tex>
+          <Tex x={x0 + X / 2} y={y0 + X + T / 2} size={14} width={30}>{String.raw`2x`}</Tex>
           <text x={x0 + X + T / 2} y={y0 - 8} textAnchor="middle" fontSize={12} fontWeight={700} fill={C.muted} {...t}>2</text>
           <text x={x0 - 8} y={y0 + X + T / 2 + 4} textAnchor="end" fontSize={12} fontWeight={700} fill={C.muted} {...t}>2</text>
         </g>
@@ -64,12 +64,17 @@ export default function Visual() {
         </g>
 
         {/* the algebra */}
-        <text className={cls("e1")} x={168} y={60} fontSize={16} fontWeight={700} fill={C.ink} {...t}>x² + 4x</text>
+        <g className={cls("e1")}>
+          <Tex x={168} y={56} size={17} anchor="start" width={120}>{String.raw`x^2+4x`}</Tex>
+        </g>
         <text className={cls("e2")} x={168} y={86} fontSize={11} fill={C.muted} {...t}>half of 4 is 2</text>
-        <text className={cls("e3")} x={168} y={112} fontSize={16} fontWeight={700} fill={C.ink} {...t}>
-          x² + 4x <tspan fill={C.primaryText}>+ 4</tspan>
-        </text>
-        <text className={cls("e4")} x={168} y={140} fontSize={19} fontWeight={700} fill={C.primaryText} {...t}>= (x + 2)²</text>
+        <g className={cls("e3")}>
+          <Tex x={168} y={108} size={17} anchor="start" width={120}>{String.raw`x^2+4x\phantom{+4}`}</Tex>
+          <Tex x={168} y={108} size={17} anchor="start" width={120} color={C.primaryText}>{String.raw`\phantom{x^2+4x}+4`}</Tex>
+        </g>
+        <g className={cls("e4")}>
+          <Tex x={168} y={136} size={20} anchor="start" width={130} color={C.primaryText}>{String.raw`{=}(x+2)^2`}</Tex>
+        </g>
       </g>
     </Svg>
   );

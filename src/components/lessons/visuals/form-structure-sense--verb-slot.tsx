@@ -91,7 +91,7 @@ export default function Visual() {
           connecting
         </text>
         <text className={`${A} ${P + "cap1"}`} x={160} y={76} textAnchor="middle" fontSize={12} fill={C.muted}>
-          main verb is here: blank = -ing, -ed or to
+          main verb is here: blank = describing form
         </text>
 
         {/* Row 2: no main verb yet */}

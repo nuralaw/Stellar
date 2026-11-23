@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // △ABC with AB = 6, AC = 8 and angle A = 70°. D on AB with AD = 4, E on AC with AE = 3.
 // AD/AC = AE/AB = 1/2 and ∠A is shared, so △ADE ~ △ACB (SAS) and ∠ADE = ∠ACB. 16 px per unit.
@@ -75,13 +75,19 @@ export default function Visual() {
           <text x={f(mAE.x + 8)} y={f(mAE.y - 2)}>3</text>
         </g>
 
-        <text className={cls("w1")} x={206} y={40} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>△ADE ~ △ACB</text>
-        <text className={cls("w1")} x={206} y={56} fontSize={11} fill={C.muted} {...lab}>∠A is shared</text>
-        <text className={cls("w1")} x={206} y={70} fontSize={11} fill={C.muted} {...lab}>∠ADE = ∠ACB</text>
-        <text className={cls("w1")} x={206} y={90} fontSize={11} fontWeight={700} fill={C.ink} {...lab}>AC = 8</text>
-        <text className={cls("w2")} x={206} y={112} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>AD/AC = AE/AB</text>
-        <text className={cls("w2")} x={206} y={130} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>4/8 = 3/AB</text>
-        <text className={cls("w3")} x={206} y={154} fontSize={17} fontWeight={700} fill={C.primaryText} {...lab}>AB = 6</text>
+        <g className={cls("w1")}>
+          <Tex x={206} y={28} size={12} anchor="start" width={106}>{String.raw`\triangle ADE\sim\triangle ACB`}</Tex>
+          <Tex x={206} y={43} size={11} anchor="start" width={106} color={C.muted}>{String.raw`\angle A\ \text{is shared}`}</Tex>
+          <Tex x={206} y={58} size={11} anchor="start" width={106} color={C.muted}>{String.raw`\angle ADE=\angle ACB`}</Tex>
+          <Tex x={206} y={73} size={12} anchor="start" width={106}>{String.raw`AC=8`}</Tex>
+        </g>
+        <g className={cls("w2")}>
+          <Tex x={206} y={97} size={12} anchor="start" width={106}>{String.raw`\dfrac{AD}{AC}=\dfrac{AE}{AB}`}</Tex>
+          <Tex x={206} y={131} size={13} anchor="start" width={106}>{String.raw`\dfrac{4}{8}=\dfrac{3}{AB}`}</Tex>
+        </g>
+        <g className={cls("w3")}>
+          <Tex x={206} y={160} size={17} anchor="start" width={106} color={C.primaryText}>{String.raw`AB=6`}</Tex>
+        </g>
       </g>
     </Svg>
   );

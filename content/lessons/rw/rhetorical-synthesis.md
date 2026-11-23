@@ -7,278 +7,589 @@ summary: Read the goal first, then pick the sentence that does exactly that job.
 ---
 
 # Goal first
-True isn't enough. Do the goal's job.
+Name the job. Pick the sentence that does it.
 
-## True isn't enough
+```visual
+rhetorical-synthesis--goal-first
+```
 
-Every choice usually matches the notes. **Pick the one that does what the goal asks.**
+## Key ideas
+A **notes question** gives three to six bullet notes and a goal: "The student wants to *emphasize*…" Every choice is built from the notes, so almost all of them are true. Your job is not to find the true sentence. It is to find the one that does the goal's job.
+
+1. Read the **goal** first. Circle the verb (*emphasize*, *specify*, *explain*, *describe*, *identify*) and the topic.
+2. Go straight to the choices. Which one delivers that job and nothing else?
+3. Go back to the notes only to break a tie.
+
+*Identify*, *indicate* and *specify* ask for one fact. *Emphasize* asks you to put one thing in the spotlight. *Explain how* or *why* needs the process or the reason, not just the thing.
 
 ```example
 Notes:
-• Lake Kessa is 40 meters deep.
-• It is about 12,000 years old.
-• Melting glacier ice formed it.
-Goal: explain how the lake formed.
-1. Goal: explain **how** it formed :: Read the goal first. Name the job.
-2. "Lake Kessa is 40 meters deep." → depth :: True, but not the job.
-3. "The lake is about 12,000 years old." → age :: True again. Still not how.
-4. Answer: "Melting glacier ice formed Lake Kessa." :: Only this one says how.
+• Vera Lund was a Norwegian sculptor.
+• Her bronze Tide Gate stands in Bergen harbor.
+• Tide Gate is 14 meters tall.
+Goal: emphasize how tall Tide Gate is.
+1. Goal: emphasize **height** :: Name the job before the choices.
+2. "Vera Lund made Tide Gate, a bronze work." :: True, but it says nothing about height.
+3. "Tide Gate stands in Bergen harbor." :: True again. Place is not height.
+4. Answer: "The bronze Tide Gate is 14 meters tall." :: It states the height.
 ```
 
-```more
-The **notes** are the facts the student collected. The **goal** is the job the new sentence must do: explain, emphasize, compare, introduce. Read the goal before the choices. Then ask of each choice: does it do this job?
+```theory
+**Rhetorical synthesis** means putting notes together into one sentence for a purpose. The question always names the purpose: introduce a person, compare two things, present a study, define a term, emphasize a number. College Board calls the skill rhetorical synthesis. Prep books call these notes questions.
+
+Why start with the goal? The notes are a pool of facts, and each wrong choice is made from the same pool. A wrong choice is usually true and written in smooth English, but it uses a different note or does only half of the job. If you read the choices without the goal, they will all seem fine.
+
+**Shortcut.** Read the goal, read the four choices, pick the one that matches. Open the notes only when two choices both seem to do the job.
+
+**Facts.** You do not usually need to check the facts. Wrong choices rarely contradict the notes. Now and then one changes a detail (for instance, "the entire city" where the notes say "much of the city"). Look for that only after two choices both do the job.
+
+**The right choice is rarely a copy.** It may reword a note or keep only the part that serves the goal ("Mexican painter" instead of a birthplace and date). It may also carry a small extra detail that fits, such as the artist's country. Do not reject a choice because it is longer or shorter. Reject it because it does not do the job.
+
+Typical traps: a true sentence about the wrong note, a sentence that does only one of two jobs, and a sentence aimed at the wrong audience.
 ```
 
-## Goal first, then choices
+## Easy
+```task
+bank: rw-0569
+highlight:
+- "emphasize the distance covered" :: The goal asks for distance, not date or status.
+- "It was sixty-two miles long." :: The only note that gives distance.
+explain:
+Start with the goal: emphasize the **distance** covered by the turnpike. Distance is a length, so look for the note with a number of miles.
 
-```quiz
-• The Atacama Desert is in northern Chile.
-• It covers about 105,000 square kilometers.
-• Some of its weather stations have never recorded rain.
-The student wants to emphasize how dry the Atacama is. Which choice does that?
-- The Atacama Desert covers about 105,000 square kilometers. :: True, but that is its size, not its dryness.
-* Some weather stations in the Atacama Desert have never recorded rain.
-- The Atacama Desert is in northern Chile. :: True, but that is its location, not its dryness.
-> The job is dryness. Only the "never recorded rain" sentence shows it.
+The notes give four facts: when it was built (1792–1794), that it was the first private turnpike, which cities it connected, and that it was sixty-two miles long. Only the last one is about distance.
+
+Choice A uses it: "The sixty-two-mile-long Philadelphia and Lancaster Turnpike connected the Pennsylvania cities of Philadelphia and Lancaster." The other choices focus on its status as a private turnpike or on the dates.
+
+The answer is **A**.
 ```
 
-# Comparing two things
-Both sides in one sentence, with the right signal word.
+## Medium
+```task
+bank: rw-0601
+highlight:
+- "specify how the salt enables energy storage" :: The job is a how: the salt's role in storage.
+- "When the salt is in a solid state, energy stops flowing and is stored in the battery." :: This note links the salt's state to storage.
+explain:
+The goal is to specify **how** the salt enables energy storage. That needs a mechanism, a link between the salt and the storing of energy.
 
-## Name both sides
+The notes give it: when the salt is solid, energy stops flowing and is stored in the battery. Choice C says exactly that: when the molten salt solidifies at room temperature, energy stops flowing and is stored.
 
-*Like* and *both* show a similarity. *While* and *unlike* show a difference.
+The other choices are about other jobs. A describes the salt but never mentions storage. B explains how stored energy is used later, which is the reverse of storing it. D gives the battery's performance, not the mechanism.
+
+The answer is **C**.
+```
+
+## Hard
+```task
+bank: rw-0756
+highlight:
+- "explain why nautical miles are used to measure distances in seafaring navigation" :: A why: the sentence must give a reason.
+- "A nautical mile directly correlates to one minute (1/60th of a degree) of latitude." :: This ties nautical miles to coordinates.
+- "Measuring distances with latitude and longitude coordinates takes into account Earth’s curvature." :: The reason coordinates work well at sea.
+explain:
+The goal asks you to explain **why** nautical miles are used. A why needs a reason, not just a description.
+
+Piece the reason together from the notes. A nautical mile equals one minute of latitude, so it matches the coordinates on nautical charts. Coordinates take Earth's curvature into account, and mariners use charts to calculate distances and positions quickly. So nautical miles are an efficient way to measure distance at sea.
+
+Choice B puts this chain into one sentence. A only describes the link to latitude and gives no reason. C contradicts the notes about coordinates. D is about charts, not nautical miles.
+
+The answer is **B**.
+```
+
+# Similarity and difference
+Both things, on the same feature, with a signal word.
+
+```visual
+rhetorical-synthesis--compare
+```
+
+## Key ideas
+When the goal says *similarity*, *difference*, *compare* or *contrast*, the answer must:
+
+- name **both** things,
+- talk about the **same feature** of each,
+- say how they relate, with a **signal word**.
+
+Similarity signals: *both*, *like*, *also*, *as with*, *similarly*. Difference signals: *while*, *whereas*, *unlike*, *but*, *in contrast*.
+
+Naming both things is not enough. "A is red and B is square" does not compare them. A sentence about only one thing never compares, and a similarity sentence is wrong when the goal wants a difference.
 
 ```example
 Notes:
-• Frogs and toads are amphibians.
-• Frogs have smooth, moist skin.
-• Toads have dry, bumpy skin.
-Goal: emphasize a difference between frogs and toads.
-1. Goal: a **difference** → both animals :: Name the job.
-2. "Both frogs and toads are amphibians." → similarity :: Both animals, wrong job.
-3. "Toads have dry, bumpy skin." → toads only :: A difference needs both.
-4. Answer: "While frogs have smooth skin, toads have bumpy skin." :: *While* contrasts the two.
+• Pine Hill library opened in 1921.
+• It holds 40,000 books.
+• Cedar Park library opened in 1987.
+• It also holds 40,000 books.
+Goal: emphasize a similarity between the libraries.
+1. Goal: a **similarity** → both libraries :: A match needs both sides.
+2. "Pine Hill opened in 1921, Cedar Park in 1987." :: Both named, but the dates differ.
+3. "Pine Hill holds 40,000 books." :: One library only.
+4. Answer: "Both libraries hold 40,000 books." :: Same feature, same value.
 ```
 
-```more
-A **similarity** is how two things are alike. A **difference** is how they are not alike. A comparison goal needs both things in the sentence. A choice about only one of them cannot compare.
+```theory
+Comparison goals come in several forms: *emphasize a similarity*, *emphasize a difference*, *compare*, *contrast*, and sometimes *compare some disadvantages* or *the causes proposed in two theories*. The last forms add a feature to match: "compare the disadvantages" means the sentence must give a disadvantage of each item, side by side.
+
+Check each choice with three questions.
+1. **Does it name both things?** If one is missing, it cannot compare.
+2. **Is the feature the same for both?** Dates against dates, genus against genus. A choice that gives one thing's location and the other thing's size has no real comparison.
+3. **Is the direction right?** *Both* and *like* express a match, while *while* and *unlike* express a difference. A choice can use a perfect signal word for the wrong goal.
+
+Common traps:
+- **One-sided sentence.** True and well written, but about one item.
+- **Both named, no link.** "A has X, and B has Y," with no signal that the two differ or match.
+- **Wrong direction.** The goal wants a difference and the choice stresses what both share.
+- **Wrong feature.** The goal asks about the books themselves, and the choice compares the laws they influenced.
+- **Wrong half of the job.** "Compare disadvantages" answered with an advantage of one item.
+
+When two choices compare the right things, look at which one uses the feature the goal asks for.
 ```
 
-## Find the similarity
+## Easy
+```task
+bank: rw-0563
+highlight:
+- "emphasize a similarity between the two specimens" :: The sentence must name both specimens and a shared feature.
+- "Sue is a member of the genus Tyrannosaurus." :: Sue's genus.
+- "Big Mike is a member of the genus Tyrannosaurus." :: Big Mike's genus is the same, so this is the shared feature.
+explain:
+The goal is a **similarity** between the two specimens, so the answer must name both of them and say what they share.
 
-```quiz
-• The sitar, from India, is a string instrument with a gourd body.
-• The banjo, with West African roots, is a string instrument with a drum-like body.
-The student wants to emphasize a similarity between the two instruments. Which choice does that?
-- While the sitar has a gourd body, the banjo's body is drum-like. :: *While* sets up a difference. The goal wants a similarity.
-- The banjo is a string instrument with West African roots. :: Only one instrument. A similarity needs both.
-* Like the sitar, the banjo is a string instrument.
-> Both are string instruments, and *Like* signals the match.
+Look through the notes for a feature both have in common. Sue is a member of the genus Tyrannosaurus, and so is Big Mike. The other notes are different: each specimen is housed in a different museum in a different city.
+
+Choice C says both are members of the genus Tyrannosaurus. D uses *While* to stress where each is housed, which is a difference. A and B talk about only one specimen.
+
+The answer is **C**.
+```
+
+## Medium
+```task
+bank: rw-0598
+highlight:
+- "emphasize a difference between the two books" :: The difference must be in the books themselves.
+- "The Interesting Narrative of the Life of Olaudah Equiano (1789) is the autobiography" :: Equiano's book is a true life story.
+- "The Jungle (1906) is a fictional work by Upton Sinclair" :: Sinclair's book is fiction. That is the difference.
+explain:
+The goal is a **difference** between the two books. The answer must name both books and set them against each other on one feature.
+
+The notes show several shared points: both influenced readers and both contributed to new laws. They also show a real difference in kind. Equiano's *Interesting Narrative* is an autobiography, while Sinclair's *The Jungle* is a work of fiction.
+
+Choice A contrasts exactly that: "Equiano's book is an autobiography, while Sinclair's is fictional." C compares which laws followed, which is about the laws, not the books. B and D stress what the books share.
+
+The answer is **A**.
+```
+
+## Hard
+```task
+bank: rw-0840
+highlight:
+- "compare some disadvantages of docked and dockless bike-share programs" :: Needs a drawback of each system, side by side.
+- "Docked programs are orderly and offer consistency to riders but require significant space and money to implement." :: The docked drawback: space and money.
+- "Dockless programs can be disorganized." :: The dockless drawback: disorganization.
+explain:
+The goal is to **compare disadvantages** of two programs. So the sentence must give a drawback of docked programs and a drawback of dockless programs.
+
+From the notes, the docked drawback is that they require a lot of space and money. The dockless drawback is that they can be disorganized.
+
+Choice C names both: docked programs are more resource-intensive, but they avoid dockless programs' organizational challenges. A gives only the dockless downside next to a docked advantage. B gets flexibility backwards. D does not discuss disadvantages at all.
+
+The answer is **C**.
 ```
 
 # Aim, method, finding
 Wanted to learn, did, found.
 
-## Three parts of a study
+```visual
+rhetorical-synthesis--study
+```
 
-**Aim:** what researchers wanted to learn. **Method:** what they did. **Finding:** what they found.
+## Key ideas
+Notes about a study usually contain three kinds of information.
+
+- **Aim** (or *goal*, *question*): what the researchers wanted to learn. Words: *wanted to*, *aimed to*, *asked whether*.
+- **Method** (or *design*): what they did. Words: *used*, *measured*, *compared*, *recorded*.
+- **Finding** (or *result*, *conclusion*): what they found or decided. Words: *found*, *showed*, *concluded*.
+
+The goal tells you which part. "Present the aim" means the aim. "Present the study and its findings" or "aim and methodology" means **two parts**, and a choice with only one of them fails, even if it is a fine sentence.
 
 ```example
 Notes:
-• Biologists asked whether city birds sing higher than forest birds.
-• They recorded great tits in both places.
-• The city birds sang at higher pitches.
-Goal: present the study's finding.
-1. Goal: the **finding** → the result :: Name the job.
-2. "Biologists recorded great tits in both places." → method :: What they did.
-3. Answer: "City great tits sang at higher pitches than forest ones." :: What they found.
+• Ecologists asked whether urban foxes avoid busy streets.
+• They fitted 20 foxes with GPS collars for a year.
+• The foxes stayed off busy streets during rush hour.
+Goal: present the study's method.
+1. Goal: **method** → what they did :: Not the question, not the result.
+2. "Ecologists asked whether urban foxes avoid busy streets." :: That is the aim.
+3. "The foxes stayed off busy streets at rush hour." :: That is the finding.
+4. Answer: "They tracked 20 foxes with GPS collars for a year." :: That is what they did.
 ```
 
-```more
-A **study** is research that answers a question. *Aim* words: wanted to know, asked whether. *Method* words: recorded, measured, offered, compared. *Finding* words: found, showed, sang higher. Match the goal's word to the right part.
+```theory
+Study questions are common because the notes of a research summary are naturally sorted into stages. Each stage has typical language.
+
+**Aim.** The reason the study exists. It is usually phrased as a want or a question: "wanted to know whether owls hunt by sound alone," "asked whether bees prefer warm flowers." A sentence beginning with *To determine whether…* also expresses the aim.
+
+**Method (design).** Procedures, samples, tools and conditions: "recorded great tits in both places," "fitted foxes with collars," "placed sensors on three glaciers." Some books call the method together with the question the *design*: "To determine X, researchers did Y."
+
+**Finding or conclusion.** What came out of the work: "city birds sang at higher pitches." A *conclusion* is what the researchers conclude from the findings, so it often carries a hedge like *may* or *suggests*.
+
+Combined goals are common: *present the study and its findings*, *present the study's aim and methodology*. The correct choice joins the named parts into one sentence. A sentence that has only the method and the result, but not the aim, fails an "aim and method" goal. Count the parts the goal names and count them in the choice.
+
+Wrong choices usually do an adjacent part: the aim when the method was requested, a result when the aim was requested. They are true and well written, so name the part before you compare.
 ```
 
-## Pick the method
+## Easy
+```task
+bank: rw-0557
+highlight:
+- "present the primary aim of the research study" :: The goal asks for the aim: what they wanted to learn.
+- "wanted to better understand the mechanics behind these structural properties" :: "Wanted to" marks the aim.
+explain:
+The goal is the study's **aim**, meaning what the researchers set out to learn. Aims use language of wanting or asking.
 
-```quiz
-• Researchers wanted to know whether bees prefer warm flowers.
-• They offered bees heated and unheated fake flowers.
-• The bees visited the heated flowers more often.
-The student wants to present the study's method. Which choice does that?
-- Researchers wanted to know whether bees prefer warm flowers. :: That is the aim: what they wanted to learn.
-* Researchers offered bees heated and unheated fake flowers.
-- Bees visited heated flowers more often than unheated ones. :: That is the finding: what the study showed.
-> The method is what the researchers did: they set out two kinds of flowers.
+In the notes, one line does that: the team led by Yashraj Bhosale "wanted to better understand the mechanics behind these structural properties" of bird nests. The other notes describe what they did (laboratory models, analyzing contact points) and what they found (more contact points made the nests stiffer).
+
+Choice A states the aim. B gives methods, C gives a finding, and D only says what nests are like.
+
+The answer is **A**.
 ```
 
-# New audience
-Unfamiliar reader? Say what the thing is.
+## Medium
+```task
+bank: rw-0900
+highlight:
+- "present LIGO’s aim and methodology" :: Two parts: the aim and the method.
+- "LIGO’s goal is to detect and analyze gravitational waves." :: This is the aim.
+- "LIGO uses a pair of massive gravitational wave detectors" :: This is the method.
+explain:
+The goal names **two** parts: aim and methodology. A correct choice has to contain both.
 
-## Say what it is
+The aim is in the note "LIGO's goal is to detect and analyze gravitational waves." The method is the pair of massive interferometers that are thousands of miles apart.
 
-"Unfamiliar with X" adds a second job: a few words saying what X is.
+Choice D has both: LIGO is "a physics study designed to detect and analyze gravitational waves" and "uses a pair of massive interferometers." C gives the method and only says "to achieve its aims" without stating them. A and B are about the 2015 detection, which is a finding.
 
-```example
-Notes:
-• Mochi is a Japanese rice cake.
-• It is made by pounding steamed rice.
-Goal: explain how mochi is made to an audience unfamiliar with mochi.
-1. Two jobs: what mochi **is** + **how** it's made :: The audience adds a job.
-2. "Mochi is made by pounding steamed rice." → how only :: Never says what mochi is.
-3. Answer: "Mochi, a Japanese rice cake, is made by pounding steamed rice." :: Both jobs done.
+The answer is **D**.
 ```
 
-```more
-The **audience** is the readers. **Unfamiliar** means they do not know the topic yet. Such readers need a few words that say what the thing is, for example "a Japanese rice cake". The sentence must also do the goal's main job. If the audience already knows the topic, skip the definition.
+## Hard
+```task
+While researching a topic, a student has taken the following notes:
+• Marine biologist Lena Hartmann studied whether noise from ships affects how often humpback whales sing.
+• She placed underwater microphones along a shipping lane for two summers.
+• The whales sang 30 percent less on days with heavy ship traffic.
+• Hartmann concluded that ship noise may disrupt whale communication.
+
+The student wants to present the study's aim and its conclusion. Which choice most effectively uses relevant information from the notes to accomplish this goal?
+- Hartmann recorded humpback whales for two summers to find out whether ship noise affects their singing. :: Aim and method. It has no conclusion.
+* Hartmann studied whether ship noise affects how often humpback whales sing, and she concluded that the noise may disrupt whale communication.
+- Hartmann placed underwater microphones along a shipping lane for two summers and found that humpback whales sang 30 percent less on days with heavy ship traffic. :: Method and finding. It has neither the aim nor the conclusion.
+- After humpback whales sang 30 percent less on days with heavy ship traffic, Hartmann concluded that ship noise may disrupt whale communication. :: Finding and conclusion. The aim is missing.
+highlight:
+- "present the study's aim and its conclusion" :: Two parts: the aim and the conclusion.
+- "studied whether noise from ships affects how often humpback whales sing" :: This note is the aim: what she wanted to learn.
+- "Hartmann concluded that ship noise may disrupt whale communication" :: This note is the conclusion: what she decided.
+explain:
+Count the parts. The goal asks for the **aim** and the **conclusion**, so both must be in the sentence. The method (microphones for two summers) and the raw finding (30 percent less singing) are not asked for.
+
+The aim is what Hartmann studied: whether ship noise affects how often humpback whales sing. The conclusion is that ship noise may disrupt whale communication.
+
+The second choice has both, joined by "and." The first adds the method but has no conclusion. The third has the method and the finding but neither of the named parts. The fourth gives the finding and the conclusion, but no aim.
+
+The answer is **the second choice**.
 ```
 
-## Describe it for newcomers
-
-```quiz
-• Kintsugi is a Japanese method of repairing broken pottery.
-• The cracks are filled with gold lacquer, so the repair stays visible.
-The student wants to describe how kintsugi looks to an audience unfamiliar with kintsugi. Which choice does that?
-- In kintsugi, the cracks are filled with visible gold lacquer. :: A new reader still does not know what kintsugi is.
-- Kintsugi is a Japanese method of repairing broken pottery. :: It says what kintsugi is but skips the look.
-* Kintsugi, a Japanese method of repairing broken pottery, fills the cracks with visible gold lacquer.
-> Two jobs: say what kintsugi is and describe the look. Only one choice does both.
-```
-
-# A work and its creator
-Title, creator, and what kind of work.
-
-## Introduce a work
-
-To introduce a book or film, name the title, the creator, and what kind of work it is.
-
-```example
-Notes:
-• Wildfire Season is a documentary film.
-• Ines Calder directed it.
-• It follows firefighters in Oregon.
-Goal: introduce the film and its director to an audience unfamiliar with them.
-1. Needs: title + director + kind of work :: The audience is new to it.
-2. "Ines Calder directed a film about firefighters." → no title :: The title is missing.
-3. Answer: "Wildfire Season is a documentary film directed by Ines Calder." :: All three, in one sentence.
-```
-
-```more
-A **creator** made the work: an author writes a book, a director makes a film, a composer writes music. A **documentary** is a film about real events. An introduction names the work, names its creator, and says what kind of work it is.
-```
-
-## Title and author
-
-```quiz
-• Salt Road is a 2019 novel.
-• Mei Tan wrote it.
-• It is set in a fishing town.
-The student wants to introduce the novel and its author to an audience unfamiliar with them. Which choice does that?
-- Mei Tan wrote a novel that is set in a fishing town. :: The novel's title is missing.
-- Salt Road, set in a fishing town, was published in 2019. :: It never names the author.
-* Salt Road is a 2019 novel by Mei Tan, set in a fishing town.
-> The new reader needs the title, the author and the kind of work. Only one choice has all three.
-```
-
-# Check the facts
-Right job, wrong facts is still wrong.
-
-## Two checks
-
-Check two things: does it do the goal's job, and do its facts match the notes?
+# Familiar or unfamiliar
+Strangers need a few words of definition. Insiders do not.
 
 ```visual
-rhetorical-synthesis--checklist
+rhetorical-synthesis--audience
 ```
+
+## Key ideas
+Many goals name an audience. It changes what the sentence must include.
+
+- **Unfamiliar with X** or **a new audience**: tell them who or what X is, in a few words ("Kenyan author Mia Otieno"), and do the main job.
+- **Already familiar with X**: do **not** explain X. Use the space for the new information the goal asks for.
+
+Test each choice with the reader in mind. Would a stranger understand it? If the audience knows X, is the sentence wasting words defining it?
+
+A choice that defines X but skips the main job is wrong for either audience. The best choice does the goal's job and adds the right amount of background.
 
 ```example
 Notes:
-• Sea otters live along Pacific coasts.
-• They eat sea urchins and crabs.
-• They float on their backs while eating.
-Goal: say what otters eat.
-Choices: Otters eat sea urchins and fish. / Otters eat sea urchins and crabs.
-1. Goal: what otters **eat** :: Both choices name food.
-2. "…and fish" → the notes say crabs :: Fish is not in the notes.
-3. Answer: "Otters eat sea urchins and crabs." :: Right job, true to the notes.
+• The theremin is an electronic instrument.
+• It is played without touching it.
+• Clara Rockmore performed on it in the 1940s.
+Goal: introduce the theremin to an audience unfamiliar with it.
+1. Audience: unfamiliar → say what it **is** :: A newcomer needs a label first.
+2. "Players never touch the theremin." :: Never says what a theremin is.
+3. "Clara Rockmore played it in the 1940s." :: No label, and not the topic.
+4. Answer: "The theremin, an electronic instrument, is played without being touched." :: A label plus the main fact.
 ```
 
-```more
-Wrong choices often copy the goal's job but change one fact: a number, a place, a name, or a word like *all* instead of *much*. After you find the right job, find each fact of the choice in the notes.
+```theory
+The audience in the goal tells you how much the reader already knows. The College Board's questions are built so that each wrong choice fails this test in a specific way.
+
+**Unfamiliar audience.** The answer gives a short identification of the topic (what it is, who the person is, what kind of work it is) and then the information the goal wants. Names are usually given in full and with a role, such as "Kenyan author Mia Otieno." Often the correct choice is longer than the others because it carries that background. Wrong choices leave the topic unexplained or mention only a side detail (a sequel, a year).
+
+**Familiar audience.** The answer is shorter on background. It assumes the reader knows who or what X is and goes directly to what the goal requests: the study, the new fact, the description. Wrong choices spend a clause defining the familiar term or re-introducing the person the audience already knows.
+
+**Mixed audiences** appear on harder questions: familiar with one thing but not another. Handle each term separately. Explain the unfamiliar one and skip the familiar one.
+
+**Two jobs.** An audience goal adds a second job to the main one. "Describe how a vase was made to an audience unfamiliar with a technique" requires the description *and* a short explanation of the technique. A choice that only names the technique is not enough.
+
+Introduction goals (*introduce an artist and a book to a new audience*) usually need the person, the work, and what kind of work it is.
 ```
 
-## Match the notes
+## Easy
+```task
+bank: rw-0887
+highlight:
+- "to a new audience" :: The readers know neither Selvon nor his novel. Say who and what.
+- "Samuel Selvon was a Trinidadian author." :: This note says who he is.
+- "It is about a group of men who emigrate from the Caribbean to Great Britain after World War II." :: This note says what the novel is about.
+explain:
+The goal is to introduce a person and his novel to a **new audience**. People who have never heard of Selvon need to learn who he is and what the book is.
 
-```quiz
-• The Lisbon earthquake happened in 1755.
-• It destroyed much of the city.
-• A tsunami and fires followed it.
-The student wants to emphasize how much damage the earthquake caused. Which choice does that?
-- The Lisbon earthquake happened in 1755. :: True, but it gives the date, not the damage.
-- The 1755 Lisbon earthquake destroyed the entire city. :: The notes say "much of" the city, not all.
-* The 1755 Lisbon earthquake destroyed much of the city, and a tsunami and fires followed.
-> The goal is damage. The notes say much of the city, so "the entire city" is false.
+From the notes, the useful pieces are: Selvon was a Trinidadian author, *The Lonely Londoners* is one of his most celebrated novels, it was published in 1956, and it is about men who emigrate from the Caribbean to Great Britain after World War II.
+
+Choice A includes all of them in one sentence, naming both author and book. C never names Selvon. B and D are about a different novel, *Moses Ascending*.
+
+The answer is **A**.
 ```
 
-# Trap: unasked notes
-Extra notes the goal didn't ask for? Reject.
+## Medium
+```task
+bank: rw-0565
+highlight:
+- "already familiar with environmental DNA" :: The audience knows eDNA. Do not define it.
+- "analyzed eDNA in water samples from the Florida Everglades" :: The study itself is the new information.
+- "to detect invasive constrictor snake species in the area" :: The purpose of the study.
+explain:
+The audience already knows what environmental DNA is, so a definition would only use up space. The goal is to **present the study**.
 
-## Count the jobs
+The study's key facts are who did it (geneticist Sara Oyler-McCance's team), where (water samples from the Florida Everglades), and why (to detect invasive constrictor snakes).
 
-Count the jobs in the goal. A choice with notes the goal didn't ask for is a trap.
+Choice A gives exactly that. C and D spend part of the sentence explaining eDNA, which this audience does not need. B talks about eDNA in general and never mentions the study.
 
-```example
-Notes:
-• Mount Everest is in the Himalayas.
-• It is 8,849 meters tall.
-• Climbers first reached its top in 1953.
-Goal: emphasize the mountain's height.
-1. Goal: **height** → one note :: One job. Ignore the other notes.
-2. "Mount Everest, in the Himalayas, was first climbed in 1953." → place, date :: Two unasked notes, no height.
-3. Answer: "Mount Everest is 8,849 meters tall." :: One job, one note.
+The answer is **A**.
 ```
 
-```more
-A longer choice is not wrong because it is long. It is wrong when its extra notes do not match the goal. If the goal asks for two jobs, like "what it is" and "how it is made", the longer choice that does both is right. A goal may also ask for a generalization (a broad claim) or an example (one specific case). Match the direction.
-```
-
-## Spot the padded choice
-
-```quiz
+## Hard
+```task
 While researching a topic, a student has taken the following notes:
-• Lili Boulanger was born in Paris in 1893.
-• In 1913 she became the first woman to win the Prix de Rome, a French prize for composers.
-• She died in 1918, at age 24.
-The student wants to emphasize Boulanger's historic achievement. Which choice most effectively uses relevant information from the notes to accomplish this goal?
-* In 1913, Lili Boulanger became the first woman to win the Prix de Rome.
-- Born in Paris in 1893, Lili Boulanger competed for the Prix de Rome, a French prize for composers, and died in 1918, at age 24. :: Three notes, but it never says she won.
-- Lili Boulanger won the Prix de Rome, a French prize for composers. :: It skips what made the win historic: first woman.
-> "Historic" points to one note: the first woman to win. Her birth and death dates do not help.
+• Mei Lin Zhao is a ceramic artist based in Vancouver.
+• Her vase Tidepool was made in 2021.
+• Raku firing is a technique in which a piece is taken from the kiln while still glowing hot.
+• Tidepool was made with raku firing, which left its glaze crackled and blue-green.
+
+The student wants to describe how Tidepool was made to an audience already familiar with Mei Lin Zhao but unfamiliar with raku firing. Which choice most effectively uses relevant information from the notes to accomplish this goal?
+- Mei Lin Zhao, a Vancouver ceramic artist, made Tidepool in 2021 with raku firing. :: It introduces Zhao, whom the audience knows, and never explains raku firing.
+- Raku firing is a technique in which a piece is taken from the kiln while still glowing hot, and it can leave a crackled glaze. :: It defines raku firing but never says Tidepool was made with it.
+- Tidepool's crackled, blue-green glaze is a product of raku firing. :: It names raku firing but never explains it to newcomers.
+* Tidepool, Zhao's 2021 vase, was made with raku firing, a technique in which a piece is taken from the kiln while still glowing hot.
+highlight:
+- "describe how Tidepool was made" :: The main job: the way the vase was made.
+- "already familiar with Mei Lin Zhao" :: Do not introduce Zhao.
+- "unfamiliar with raku firing" :: Explain raku firing in a few words.
+explain:
+Handle each part of the audience separately. They already know Mei Lin Zhao, so a sentence introducing her as a Vancouver ceramic artist wastes space. They do not know raku firing, so the sentence must explain it. The main job is to describe how *Tidepool* was made.
+
+The last choice does all three. It says the vase was made with raku firing, which is how it was made, and it defines raku firing as a technique in which a piece is taken from the kiln while still glowing hot, without re-introducing Zhao.
+
+The first choice re-introduces Zhao and leaves raku unexplained. The second defines raku but does not connect it to the vase. The third names raku without explaining it and describes the glaze instead of the making.
+
+The answer is **the fourth choice**.
 ```
 
-# Real SAT questions
-Three real questions, easy to hard.
+# Two jobs in one sentence
+A goal with "and" asks for two things. Count them.
 
-## Your turn: easy
-
-Aim, method or finding? Name the job first.
-
-```check
-rw-0557
+```visual
+rhetorical-synthesis--two-jobs
 ```
 
-## Your turn: medium
+## Key ideas
+Look for two jobs joined by **and**, or hidden in one phrase:
 
-Check the audience, then what each choice describes.
+- *define a term and give an example*
+- *provide an explanation and an example*
+- *make and support a generalization*
+- *describe an approach and explain its significance*
 
-```check
-rw-0566
+Count the jobs, then check every choice. A choice that does only one job is out, however good it is.
+
+- **Definition vs example.** A definition says what a thing is. An example is one specific case. One does not replace the other.
+- **Generalization + support.** A broad claim (*teenagers who sleep more score higher*) plus a fact that backs it up. Numbers alone are not a claim, and a claim alone has no support.
+- **Quotation goals** (*use a quotation to support…*): the quote must do the stated job.
+
+```example
+Notes:
+• A keystone species shapes its whole ecosystem.
+• Sea otters are a keystone species on the Pacific coast.
+• Otters eat urchins, which protects kelp forests.
+Goal: define "keystone species" and give an example.
+1. Two jobs: **define** + **example** :: Count them first.
+2. "Sea otters protect kelp forests." :: An example only. No definition.
+3. "A keystone species shapes its ecosystem." :: A definition only. No example.
+4. Answer: "A keystone species, such as the sea otter, shapes its whole ecosystem." :: Both jobs.
 ```
 
-## Your turn: hard
+```theory
+Notes questions often combine goals. The College Board wants to see whether you can build one sentence that carries two pieces of information in the right relationship.
 
-Both programs, on the exact feature the goal names.
+**Define and give an example.** The sentence names the term, says what it means, and names a specific instance: "The term 'apex predator' describes an animal at the top of its food chain, such as the orca." An explanation can come first and the example next, or the other way around. A sentence with only the example, however accurate, leaves the term undefined.
 
-```check
-rw-0840
+**Explanation and example.** Explain the idea and then show one concrete case. The example must actually be a case of the idea. Check that it is not a separate fact about a related thing.
+
+**Make and support a generalization.** A generalization is a broad statement about a group: *teenagers who sleep more tend to score higher*. The support is the reason or evidence for it: *because rested brains retain more of what they learn*. A sentence that only gives statistics has support but no generalization. A sentence that only states the claim has no support.
+
+**Describe and explain significance.** First say what was done or what a thing is like. Then say why it matters, often by tying it to a bigger idea in the notes, such as a quoted description of a tradition.
+
+**Quotation goals.** Read the verb: *support*, *explain*, *illustrate*, *challenge*. A quote is right only if it does that verb for the claim, and it should be quoted accurately.
+```
+
+## Easy
+```task
+bank: rw-0586
+highlight:
+- "define the term “Lazarus species” and provide an example of one" :: Two jobs: a definition and an example.
+- "“Lazarus species” is a term for living species of organisms that were once believed to be extinct." :: This note is the definition.
+- "The mountain pygmy possum is considered a Lazarus species." :: This note is the example.
+explain:
+Count the jobs. The goal has two: **define** the term and **give an example**.
+
+The notes supply both. The definition: a Lazarus species is a living species once believed to be extinct. The example: the mountain pygmy possum is considered one.
+
+Choice A does both in a single sentence: "The term 'Lazarus species' describes a living species of organism, such as the mountain pygmy possum, that was once believed to be extinct." B gives the example but never defines the term. C has neither the term nor its meaning, and D describes the idea without the term or an example.
+
+The answer is **A**.
+```
+
+## Medium
+```task
+bank: rw-0627
+highlight:
+- "make and support a generalization about honeybees" :: Two jobs: a broad claim and its support.
+- "This vegetation provides a varied diet for honeybees, strengthening bees’ immune systems." :: The reason that backs up the claim.
+- "62.5 percent of bees in an urban area will survive a harsh winter" :: Evidence that urban bees do better.
+explain:
+The goal asks for a **generalization** about honeybees and **support** for it. A generalization is a broad claim, and the support is the reason for it.
+
+The notes build the argument. Cities have varied flowering vegetation, which gives bees a varied diet and stronger immune systems. In cities, 62.5 percent survive a harsh winter, against 40 percent in rural areas.
+
+Choice D states the claim, "Honeybees are more likely to thrive in cities than in rural areas," and supports it with the varied diet strengthening their immune systems. B gives only statistics, so it has no generalization. A is about vegetation, not bees. C is about diet but never says that bees do better in cities.
+
+The answer is **D**.
+```
+
+## Hard
+```task
+bank: rw-0929
+highlight:
+- "describe Shanawdithit’s approach and explain its significance" :: Two jobs: what she did, and why it matters.
+- "Her maps are notable for depicting the experiences the Beothuk had within the landscape." :: Her approach: mapping experiences, not just land.
+- "experienced space, or place" :: Pearce's idea explains why that approach matters.
+explain:
+Two jobs again: **describe** Shanawdithit's approach and **explain its significance**.
+
+Her approach, from the notes: her maps show the encounters and experiences the Beothuk had around Beothuk Lake, rather than just the landscape. Its significance: that is what Pearce says Indigenous cartography does, emphasizing "experienced space, or place."
+
+Choice D joins them. It describes what her maps depict, and it links that to Indigenous cartography's emphasis on experienced space. C uses her maps only as an example and never says what she did. B attaches Pearce's description of the Western convention (universal, homogenized space) to her maps, which is the opposite. A is only about Indigenous cartography in general.
+
+The answer is **D**.
+```
+
+# Order, size, significance
+Show the sequence, the number, or why it matters.
+
+```visual
+rhetorical-synthesis--emphasis
+```
+
+## Key ideas
+*Emphasize* goals ask you to push one idea forward. Three common ones:
+
+- **Order** (*the order in which two events happened*): the sentence must show which came first: *followed by*, *a year later*, *before*, *after*. A choice with one date, or two dates with no sequence, fails.
+- **Size or amount** (*the distance, the height, how many*): state the number with what it measures.
+- **Significance** (*why it matters, the achievement, the uniqueness*): the plain fact is not enough. The sentence needs the note that explains why it matters: *first*, *only*, *one of the few*, a link to a larger event.
+
+Match each goal to its signal. Then look for the choice that contains it.
+
+```example
+Notes:
+• Ana Kovac flew solo across the Atlantic in 1987.
+• She flew a small single-engine plane.
+• She was the first woman from Croatia to do so.
+Goal: emphasize the significance of Kovac's flight.
+1. Goal: **significance** → why it matters :: Look for first, only or rare.
+2. "Ana Kovac flew a single-engine plane in 1987." :: A fact, but not why it matters.
+3. "In 1987, Kovac flew solo across the Atlantic." :: The event, without its importance.
+4. Answer: "In 1987, Ana Kovac became the first Croatian woman to fly solo across the Atlantic." :: It says why it matters.
+```
+
+```theory
+Emphasis goals are less about the topic and more about the *angle*. The notes contain many true facts, and the goal picks the angle.
+
+**Order.** Wrong choices mention both events, or both dates, but do not say which came first. The right choice makes the sequence explicit with *followed by*, *a year later*, *after*, or by putting the earlier event first with its date. Check that the order is right, because a choice can state the sequence backwards.
+
+**Size, amount, distance, duration.** The number carries the point. The correct choice puts it next to the quantity: "sixty-two miles long," "14 meters tall." Choices that mention the thing but leave out the number do not emphasize the size.
+
+**Significance, achievement, uniqueness, historical context.** These goals ask why something matters. Look for the note that places the fact in a larger picture: it was the first, the only one, one of few, or it happened during a particular war. For example, a patent date matters because it fell one week before a famous rival filed. A choice that only lists the date gives no reason for it to matter.
+
+**Significance of a similarity.** This asks for two things: name the shared feature, and say why it matters, such as how it affects a judgment. A sentence that states the similarity alone does only half the job.
+
+In all of these, the winning choice may drop small details from the notes. That is fine, because the angle matters more than completeness.
+```
+
+## Easy
+```task
+bank: rw-0653
+highlight:
+- "emphasize the order in which two of Jordan Bennett’s exhibitions were held" :: Order: the sentence must show which came first.
+- "His 2017 exhibition Wije’wi" :: This exhibition came first.
+- "His 2018 exhibition Ketu’elmita’jik" :: This one came a year later.
+explain:
+The goal is the **order** of two exhibitions. The notes give two exhibitions with dates: *Wije'wi* in 2017 and *Ketu'elmita'jik* in 2018. To emphasize order, the sentence has to say which came first.
+
+Choice A does that: "*Wije'wi* was followed a year later by *Ketu'elmita'jik*." The words "followed a year later" make the sequence clear.
+
+D mentions only one year and gives no sequence. B mentions both years but not as a sequence and focuses on his paintings. C counts exhibitions and gives no order.
+
+The answer is **A**.
+```
+
+## Medium
+```task
+bank: rw-0770
+highlight:
+- "emphasize the historical significance of Stephen Amos’s enlistment date" :: Significance: tie the date to why it matters.
+- "He enlisted in the US Navy in November 1863." :: The date in question.
+- "A small number of US Navy sailors of Filipino descent served during the US Civil War (1861–1865)." :: Why it matters: few Filipino sailors served in the Civil War.
+explain:
+The goal is the **historical significance** of Amos's enlistment date. A date is only significant if the sentence says why it matters.
+
+The notes give the reason. Few US Navy sailors of Filipino descent served during the Civil War (1861–1865), and Amos enlisted in November 1863, during the war.
+
+Choice C ties the two: his 1863 enlistment made him one of the few sailors of Filipino descent to serve in the Civil War. A compares his date to another sailor's and never says why 1863 matters. B and D bring in Raphael Ignases, who is not the subject of the goal.
+
+The answer is **C**.
+```
+
+## Hard
+```task
+bank: rw-0849
+highlight:
+- "emphasize the significance of a similarity between two of the kits" :: Two jobs: name a similarity and say why it matters.
+- "Pbact was the most effective" :: The researchers' ranking of the kits.
+- "it was the only one with both a sufficiently high yield and a purity rate close to the ideal of 1.8" :: Why Pbact won: the other two each fell short.
+explain:
+Break the goal in two. It asks for a **similarity** between two kits, and for its **significance**.
+
+The researchers judged Pbact the most effective because it was the only kit with both a high enough yield and a purity close to 1.8. CTAB 2X had a high yield but a purity ratio of 2.2, far from 1.8, and Pplant had a low yield and a ratio of 1.5. So CTAB 2X and Pplant are alike in falling short on yield or purity, and that is why the researchers judged them less effective than Pbact.
+
+Choice A states this similarity and its significance. C states a similarity but not why it matters, and its numbers are not the point. D is factually wrong, since CTAB 2X and Pbact had different purity ratios. B compares yield only and calls Pplant ineffective on that basis alone.
+
+The answer is **A**.
 ```

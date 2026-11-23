@@ -1,5 +1,4 @@
-import type { ReactNode } from "react";
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Area and volume: the radius sweeps out the base (its area), then the base lifts through the height and
 // stacks into the solid (its volume). Drawn to scale, 16 units per unit of length: diameter 6, height 5.
@@ -65,8 +64,8 @@ const css = `
 @keyframes v-area-volume-p2 { 0%, 32% { opacity: 1 } 36%, 100% { opacity: 0 } }
 .v-area-volume-p3 { opacity: 0; animation-name: v-area-volume-p3; }
 @keyframes v-area-volume-p3 { 0%, 60% { opacity: 1 } 64%, 100% { opacity: 0 } }
-.v-area-volume-ans { fill: ${C.primaryText}; animation-name: v-area-volume-ans; }
-@keyframes v-area-volume-ans { 0%, 70% { fill: ${C.ink} } 75%, 100% { fill: ${C.primaryText} } }
+.v-area-volume-ans { animation-name: v-area-volume-ans; }
+@keyframes v-area-volume-ans { 0%, 70% { opacity: 0 } 75%, 100% { opacity: 1 } }
 `;
 
 // Cylinder geometry in canvas units.
@@ -83,16 +82,25 @@ const HX = 41; // the height marker
 const rim = (y: number) => `M${L} ${y} A${RX} ${RY} 0 0 0 ${R} ${y}`;
 
 /** One line of work: a small label, and the math that replaces a placeholder bar when its beat comes. */
-function Work({ n, y, label, children }: { n: number; y: number; label: string; children: ReactNode }) {
+function Work({ n, y, label, tex, ans, dx = 0 }: { n: number; y: number; label: string; tex: string; ans?: string; dx?: number }) {
   return (
     <>
       <text x={188} y={y} fontSize={12} fill={C.muted}>
         {label}
       </text>
       <rect className={`v-area-volume-a v-area-volume-p${n}`} x={188} y={y + 8} width={64} height={12} rx={6} fill={C.fill} />
-      <text className={`v-area-volume-a v-area-volume-t${n}`} x={188} y={y + 20} fontSize={17} fontWeight={700} fill={C.ink}>
-        {children}
-      </text>
+      <g className={`v-area-volume-a v-area-volume-t${n}`}>
+        <Tex x={188} y={y + 14} size={16} anchor="start" width={120}>
+          {tex}
+        </Tex>
+        {ans && (
+          <g className="v-area-volume-a v-area-volume-ans">
+            <Tex x={188 + dx} y={y + 14} size={16} anchor="start" width={60} color={C.primaryText}>
+              {ans}
+            </Tex>
+          </g>
+        )}
+      </g>
     </>
   );
 }
@@ -164,15 +172,9 @@ export default function Visual() {
         </g>
 
         {/* The same steps as numbers */}
-        <Work n={1} y={38} label="radius">
-          6 ÷ 2 = 3
-        </Work>
-        <Work n={2} y={84} label="base area">
-          π × 3² = 9π
-        </Work>
-        <Work n={3} y={130} label="volume">
-          9π × 5 = <tspan className="v-area-volume-a v-area-volume-ans">45π</tspan>
-        </Work>
+        <Work n={1} y={38} label="radius" tex={String.raw`6\div2=3`} />
+        <Work n={2} y={84} label="base area" tex={String.raw`\pi\times3^2=9\pi`} />
+        <Work n={3} y={130} label="volume" tex={String.raw`9\pi\times5=`} ans={String.raw`45\pi`} dx={62} />
       </g>
     </Svg>
   );

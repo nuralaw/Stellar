@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Percentages: a $50 bar is 100%. It grows by one 20% step to 120%, so the new price is 50 × 1.2 = 60.
 export const alt = "A $50 bar marked 100% grows by a 20% step to 120%, so the price is multiplied by 1.2: $50 × 1.2 = $60.";
@@ -91,14 +91,11 @@ export default function Visual() {
         </text>
         <g className="v-percentages-a v-percentages-mult">
           <rect x={119} y={126} width={66} height={30} rx={15} fill={C.soft} />
-          <text x={152} y={148} textAnchor="middle" fontSize={21} fontWeight={700} fill={C.primaryText}>
-            × 1.2
-          </text>
+          <Tex x={152} y={141} size={21} width={66} color={C.primaryText}>{String.raw`\times1.2`}</Tex>
         </g>
         <g className="v-percentages-a v-percentages-res">
-          <text x={226} y={148} textAnchor="middle" fontSize={22} fontWeight={700} fill={C.ink}>
-            = <tspan fill={C.good}>$60</tspan>
-          </text>
+          <Tex x={196} y={141} size={22} anchor="start" width={20}>{String.raw`=`}</Tex>
+          <Tex x={218} y={141} size={22} anchor="start" width={60} color={C.good}>{String.raw`\$60`}</Tex>
         </g>
       </g>
     </Svg>

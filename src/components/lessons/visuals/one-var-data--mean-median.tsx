@@ -1,7 +1,7 @@
 import { C, Css, Svg } from "./kit";
 
-// Mean moves, median stays: the dot at 10 slides out to 20. The mean goes 6 → 8, the median stays 6.
-export const alt = "A dot plot of 2, 4, 6, 8 and 10. The dot at 10 slides to 20. The mean marker moves from 6 to 8, while the median marker stays at 6.";
+// An extreme value moves the mean much more than the median: the dot at 10 slides out to 20. The mean goes 6 → 8, the median stays 6 in this set.
+export const alt = "A dot plot of 2, 4, 6, 8 and 10. The dot at 10 slides to 20. The mean marker moves from 6 to 8, while the median marker stays at 6 in this set.";
 
 const P = "v-one-var-data--mean-median-";
 const n = (k: string) => P + k;

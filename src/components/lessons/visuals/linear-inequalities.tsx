@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Linear inequalities: divide by a negative and the sign flips; the answer is a whole range on the number line.
 export const alt = "−2x > 8 is divided by −2: the > sign flips over into <, giving x < −4, drawn on a number line as an open dot at −4 with a ray going left.";
@@ -12,7 +12,9 @@ const css = `
 
 /* Beat 1: the −2 we divide by lights up and the "÷ (−2)" step appears */
 .v-linear-inequalities-coef { animation-name: v-linear-inequalities-coef; }
-@keyframes v-linear-inequalities-coef { 0%, 7% { fill: ${C.ink} } 10%, 24% { fill: ${C.primaryText} } 30%, 100% { fill: ${C.ink} } }
+@keyframes v-linear-inequalities-coef { 0%, 7% { opacity: 1 } 10%, 24% { opacity: 0 } 30%, 100% { opacity: 1 } }
+.v-linear-inequalities-coefhot { opacity: 0; animation-name: v-linear-inequalities-coefhot; }
+@keyframes v-linear-inequalities-coefhot { 0%, 7% { opacity: 0 } 10%, 24% { opacity: 1 } 30%, 100% { opacity: 0 } }
 .v-linear-inequalities-chip { transform-box: fill-box; transform-origin: center; animation-name: v-linear-inequalities-chip; }
 @keyframes v-linear-inequalities-chip { 0%, 8% { opacity: 0; transform: scale(0.7) } 14%, 100% { opacity: 1; transform: scale(1) } }
 .v-linear-inequalities-arrow { stroke-dasharray: 100; animation-name: v-linear-inequalities-arrow; }
@@ -55,9 +57,8 @@ const css = `
 @keyframes v-linear-inequalities-tip { 0%, 56% { transform: translateX(124px); opacity: 0 } 57% { opacity: 1 } 72%, 100% { transform: translateX(0px); opacity: 1 } }
 `;
 
-// Top row: the math axis (the middle of the signs) and the text baseline.
+// Top row: the math axis (the middle of the signs).
 const AX = 48;
-const BL = 56;
 // Number line: 24 units per 1, so −4 sits at x = 160.
 const NY = 120;
 const nx = (v: number) => 160 + (v + 4) * 24;
@@ -69,34 +70,46 @@ export default function Visual() {
 
       <g className="v-linear-inequalities-a v-linear-inequalities-scene">
         {/* −2x > 8 */}
-        <text x={69} y={BL} textAnchor="end" fontSize={22} fontWeight={700} fill={C.ink}>
-          <tspan className="v-linear-inequalities-a v-linear-inequalities-coef">−2</tspan>x
-        </text>
+        <Tex x={69} y={AX} size={25} anchor="end" width={70}>
+          {String.raw`x`}
+        </Tex>
+        <g className="v-linear-inequalities-a v-linear-inequalities-coef">
+          <Tex x={69 - 14.5} y={AX} size={25} anchor="end" width={60}>
+            {String.raw`-2`}
+          </Tex>
+        </g>
+        <g className="v-linear-inequalities-a v-linear-inequalities-coefhot">
+          <Tex x={69 - 14.5} y={AX} size={25} anchor="end" color={C.primaryText} width={60}>
+            {String.raw`-2`}
+          </Tex>
+        </g>
         <polyline className="v-linear-inequalities-a v-linear-inequalities-old" points={`77.5,${AX - 6.5} 88.5,${AX} 77.5,${AX + 6.5}`} fill="none" stroke={C.ink} strokeWidth={2.6} />
-        <text x={97} y={BL} fontSize={22} fontWeight={700} fill={C.ink}>
-          8
-        </text>
+        <Tex x={97} y={AX} size={25} anchor="start" width={40}>
+          {String.raw`8`}
+        </Tex>
 
         {/* The step: divide both sides by −2 */}
         <line className="v-linear-inequalities-a v-linear-inequalities-arrow" x1={119} y1={AX} x2={217} y2={AX} pathLength={100} stroke={C.muted} strokeWidth={1.5} />
         <polyline className="v-linear-inequalities-a v-linear-inequalities-head" points={`212,${AX - 4.5} 217.5,${AX} 212,${AX + 4.5}`} fill="none" stroke={C.muted} strokeWidth={1.5} />
         <g className="v-linear-inequalities-a v-linear-inequalities-chip">
           <rect x={136} y={AX - 12} width={64} height={24} rx={12} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-          <text x={168} y={AX + 4.5} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.ink}>
-            ÷ (−2)
-          </text>
+          <Tex x={168} y={AX} size={14} width={60}>
+            {String.raw`\div({-2})`}
+          </Tex>
         </g>
         <text className="v-linear-inequalities-a v-linear-inequalities-cap" x={168} y={AX + 30} textAnchor="middle" fontSize={12} fontWeight={600} fill={C.primaryText}>
           negative → flip
         </text>
 
         {/* x < −4: the sign arrives from the left expression, flipped */}
-        <text className="v-linear-inequalities-a v-linear-inequalities-res" x={239} y={BL} textAnchor="end" fontSize={22} fontWeight={700} fill={C.ink}>
-          x
-        </text>
-        <text className="v-linear-inequalities-a v-linear-inequalities-res" x={267} y={BL} fontSize={22} fontWeight={700} fill={C.ink}>
-          −4
-        </text>
+        <g className="v-linear-inequalities-a v-linear-inequalities-res">
+          <Tex x={239} y={AX} size={25} anchor="end" width={40}>
+            {String.raw`x`}
+          </Tex>
+          <Tex x={267} y={AX} size={25} anchor="start" width={60}>
+            {String.raw`{-4}`}
+          </Tex>
+        </g>
         <g className="v-linear-inequalities-a v-linear-inequalities-hopx">
           <g className="v-linear-inequalities-a v-linear-inequalities-hopy">
             <polyline className="v-linear-inequalities-a v-linear-inequalities-spin" points={`258.5,${AX - 6.5} 247.5,${AX} 258.5,${AX + 6.5}`} fill="none" stroke={C.primary} strokeWidth={2.6} />

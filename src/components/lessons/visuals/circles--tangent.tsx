@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Center (1, 2), tangent point (3, 3). The radius has slope 1/2; the tangent is perpendicular, slope −2. 28 px per unit.
 export const alt =
@@ -56,14 +56,14 @@ export default function Visual() {
 
         {/* the slopes */}
         <g className={cls("s1")} {...lab}>
-          <text x={212} y={44} fontSize={11} fill={C.muted}>radius slope</text>
-          <text x={212} y={64} fontSize={18} fontWeight={700} fill={C.primaryText}>1/2</text>
+          <text x={212} y={36} fontSize={11} fill={C.muted}>radius slope</text>
+          <Tex x={212} y={62} size={18} anchor="start" width={60} color={C.primaryText}>{String.raw`\dfrac{1}{2}`}</Tex>
         </g>
         <g className={cls("s2")} {...lab}>
-          <text x={212} y={96} fontSize={11} fill={C.muted}>tangent slope</text>
-          <text x={212} y={116} fontSize={18} fontWeight={700} fill={C.ink}>−2</text>
+          <text x={212} y={98} fontSize={11} fill={C.muted}>tangent slope</text>
+          <Tex x={212} y={118} size={18} anchor="start" width={60}>{String.raw`-2`}</Tex>
         </g>
-        <text className={cls("s3")} x={212} y={146} fontSize={12} fontWeight={600} fill={C.muted} {...lab}>
+        <text className={cls("s3")} x={212} y={150} fontSize={12} fontWeight={600} fill={C.muted} {...lab}>
           flip, change sign
         </text>
       </g>

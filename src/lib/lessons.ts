@@ -1,13 +1,13 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import { estimateMinutes, parseLesson, type Part, type Step } from "./lesson-format";
+import { estimateMinutes, parseLesson, type Subtopic } from "./lesson-format";
 import { orderLessons } from "./lesson-order";
 import { getQuestionsByIds } from "./bank";
 import type { Question } from "./types";
 
-// Lessons: Markdown files in content/lessons/{strategy,rw,math}/<slug>.md, played as steps
-// (format: content/lessons/README.md, parser: lib/lesson-format.ts).
+// Lessons: Markdown files in content/lessons/{strategy,rw,math}/<slug>.md, played as subtopics: a Learn screen, then an
+// Easy, a Medium and a Hard task (format: content/lessons/README.md, spec docs/lessons-v2.md, parser: lib/lesson-format.ts).
 
 export type LessonSection = "rw" | "math" | "strategy";
 
@@ -19,17 +19,16 @@ export interface LessonMeta {
   title: string;
   summary: string;
   minutes: number;
-  /** Screens in the player: the cover + one per step. */
+  /** Screens in the lesson: 4 per subtopic (Learn, Easy, Medium, Hard); the overview and the complete screen are extra. */
   stepCount: number;
-  /** Parts (subtopics). */
+  /** Subtopics. */
   partCount: number;
-  /** Fingerprint of the lesson's steps: saved progress only applies to the same version. */
+  /** Fingerprint of the lesson's structure: saved progress only applies to the same version. */
   sig: string;
 }
 
 export interface Lesson extends LessonMeta {
-  steps: Step[];
-  parts: Part[];
+  subtopics: Subtopic[];
 }
 
 const ROOT = path.join(process.cwd(), "content", "lessons");
@@ -39,9 +38,15 @@ const STRATEGY_ORDER = ["digital-sat-format", "pacing-and-guessing", "desmos"];
 
 function load(file: string, section: LessonSection): Lesson | null {
   const parsed = parseLesson(fs.readFileSync(file, "utf8"));
-  if (!parsed || !parsed.steps.length) return null;
-  const { meta, steps, parts } = parsed;
   const slug = path.basename(file, ".md");
+  if (!parsed || !parsed.subtopics.length) return null;
+  // A lesson with format errors is not shown (npm run lessons:check lists them): the player expects complete subtopics.
+  if (parsed.errors.length) {
+    const first = parsed.errors.slice(0, 3).join(" | ");
+    console.error(`lesson ${path.relative(process.cwd(), file)} skipped: ${parsed.errors.length} format error(s) (npm run lessons:check -- ${slug}). First: ${first}`);
+    return null;
+  }
+  const { meta, subtopics } = parsed;
   return {
     slug,
     section,
@@ -49,28 +54,23 @@ function load(file: string, section: LessonSection): Lesson | null {
     skill: meta.skill ?? slug,
     title: meta.title ?? slug,
     summary: meta.summary ?? "",
-    minutes: estimateMinutes(steps, section),
-    // + the cover screen the player shows first
-    stepCount: steps.length + 1,
-    partCount: parts.length,
-    sig: signature(steps),
-    steps,
-    parts,
+    minutes: estimateMinutes(subtopics, section),
+    stepCount: subtopics.length * 4,
+    partCount: subtopics.length,
+    sig: signature(subtopics),
+    subtopics,
   };
 }
 
 /**
- * Short hash of the step titles and what each step shows (changes when the lesson is restructured). A step with a
- * visual and a block counts as "<block>+visual"; a ```more block doesn't change it (it adds no screen).
+ * Short hash of the lesson's structure: the subtopic titles, and for each task its slot and what it is (the bank id,
+ * or an own question's kind). It changes when the lesson is restructured or a question is swapped, not when texts or
+ * explanations are edited.
  */
-function signature(steps: Step[]): string {
-  const kind = (s: Step) => {
-    const b = s.block;
-    const t = b ? (b.t === "quiz" && b.answers.length ? "quiz:typed" : b.t) : "";
-    return s.visual ? (t ? `${t}+visual` : "visual") : t;
-  };
+function signature(subtopics: Subtopic[]): string {
+  const task = (t: Subtopic["tasks"][number]) => `${t.level}:${t.kind === "bank" ? t.id : t.question.answers.length ? "typed" : "mc"}`;
   let h = 5381;
-  for (const ch of steps.map((s) => `${s.title}:${kind(s)}`).join("|")) h = ((h << 5) + h + ch.charCodeAt(0)) | 0;
+  for (const ch of subtopics.map((s) => `${s.title}:${s.example ? "e" : ""}${s.desmos ? "d" : ""}:${s.tasks.map(task).join(",")}`).join("|")) h = ((h << 5) + h + ch.charCodeAt(0)) | 0;
   return (h >>> 0).toString(36);
 }
 
@@ -99,7 +99,7 @@ function all(): Lesson[] {
 
 export function getLessons(): LessonMeta[] {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  return all().map(({ steps, parts, ...meta }) => meta);
+  return all().map(({ subtopics, ...meta }) => meta);
 }
 
 export function getLesson(slug: string): Lesson | null {
@@ -119,13 +119,13 @@ export function getNextLesson(slug: string): { slug: string; title: string } | n
   return here && after && (after.section === here.section || here.section === "strategy") ? { slug: after.slug, title: after.title } : null;
 }
 
-/** Ids of the step visuals (```visual blocks) a lesson uses. */
-export function lessonStepVisuals(l: Lesson): string[] {
-  return l.steps.flatMap((s) => (s.visual ? [s.visual] : []));
+/** Ids of the visuals a lesson's subtopics use (one per subtopic, in order; render each with lessonVisual(id)). */
+export function lessonVisuals(l: Lesson): string[] {
+  return [...new Set(l.subtopics.map((s) => s.visual).filter(Boolean))];
 }
 
-/** The bank questions a lesson's check steps use, by id. */
+/** The bank questions the lesson's tasks use, by id (own questions are not in the bank). */
 export function lessonQuestions(l: Lesson): Record<string, Question> {
-  const ids = l.steps.flatMap((s) => (s.block?.t === "check" ? [s.block.id] : []));
+  const ids = l.subtopics.flatMap((s) => s.tasks.flatMap((t) => (t.kind === "bank" ? [t.id] : [])));
   return Object.fromEntries(getQuestionsByIds(ids).map((q) => [q.id, q]));
 }

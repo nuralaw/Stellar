@@ -86,6 +86,13 @@ function conv(s: string): [string, Open[]] {
     const c = s[i];
     if (c === "\\") {
       const name = s.slice(i + 1).match(/^[a-zA-Z]+/)?.[0] ?? "";
+      if (s[i + 1] === "{" || s[i + 1] === "}") {
+        // a literal curly brace (also after left/right), typed as itself: a restriction like y=x^2{x>1}
+        close(s[i + 1] === "}");
+        out += s[i + 1];
+        i += 2;
+        continue;
+      }
       if (!name) {
         i += 2; // "\ " "\," "\;": spacing only
         continue;

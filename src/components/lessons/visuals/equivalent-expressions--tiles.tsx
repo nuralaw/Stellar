@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Factoring x² + 5x + 6: the tiles x², five x-strips and six 1-squares fit into a rectangle (x + 3) by (x + 2).
 export const alt =
@@ -55,9 +55,7 @@ export default function Visual() {
       {/* The x² tile */}
       <g className={`${a} ${sc(0)}`}>
         <rect x={OX} y={OY} width={XS} height={XS} fill={C.soft} stroke={C.primary} strokeWidth={strokeW} />
-        <text x={OX + XS / 2} y={OY + XS / 2 + 5} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.ink}>
-          x²
-        </text>
+        <Tex x={OX + XS / 2} y={OY + XS / 2} size={18} width={44}>{String.raw`x^2`}</Tex>
       </g>
 
       {/* Three vertical x-strips (the right side) */}
@@ -91,27 +89,17 @@ export default function Visual() {
 
       {/* Side lengths */}
       <g className={`${a} ${fc(46)}`}>
-        <text x={OX + (XS + 3 * U) / 2} y={OY - 8} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          x + 3
-        </text>
-        <text x={OX - 8} y={OY + (XS + 2 * U) / 2 + 4} textAnchor="end" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          x + 2
-        </text>
+        <Tex x={OX + (XS + 3 * U) / 2} y={OY - 13} size={15} width={60} color={C.primaryText}>{String.raw`x+3`}</Tex>
+        <Tex x={OX - 6} y={OY + (XS + 2 * U) / 2} size={15} anchor="end" width={60} color={C.primaryText}>{String.raw`x+2`}</Tex>
       </g>
 
       {/* The result */}
       <g className={`${a} ${fc(58)}`}>
-        <text x={176} y={72} fontSize={15} fontWeight={600} fill={C.muted}>
-          x² + 5x + 6
-        </text>
-        <text x={176} y={100} fontSize={15} fontWeight={700} fill={C.good}>
-          = (x + 2)(x + 3)
-        </text>
+        <Tex x={176} y={66} size={17} anchor="start" width={130} color={C.muted}>{String.raw`x^2+5x+6`}</Tex>
+        <Tex x={176} y={96} size={17} anchor="start" width={130} color={C.good}>{String.raw`=(x+2)(x+3)`}</Tex>
       </g>
       <g className={`${a} ${fc(72)}`}>
-        <text x={160} y={152} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          2 × 3 = 6 and 2 + 3 = 5
-        </text>
+        <Tex x={160} y={148} size={15} width={240} color={C.primaryText}>{String.raw`2\cdot3=6\ \text{and}\ 2+3=5`}</Tex>
       </g>
     </Svg>
   );

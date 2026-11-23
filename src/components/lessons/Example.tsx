@@ -23,7 +23,7 @@ const LETTERS = ["A", "B", "C", "D"];
 const PUNCT = /([,;:.!?—–])/;
 
 /** Short choices (words and punctuation, like "stopped;") are set in monospace with the marks picked out. */
-const shortChoices = (choices: string[]) => choices.every((c) => c.length <= 28 && c.split(/\s+/).length <= 3 && !/[*`[]/.test(c));
+const shortChoices = (choices: string[]) => choices.every((c) => c.length <= 28 && c.split(/\s+/).length <= 3 && !/[*`[\\]/.test(c));
 
 /**
  * An example's answer choices as lettered chips in a row that wraps. Choices that are a word or two plus punctuation

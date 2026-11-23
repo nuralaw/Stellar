@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Center (1, 2) and a point (4, 6): the distance is 3-4-5, so r = 5 and the equation is (x − 1)² + (y − 2)² = 25. 14 px per unit.
 export const alt =
@@ -69,14 +69,14 @@ export default function Visual() {
           <text x={(O.x + Pt.x) / 2 - 8} y={(O.y + Pt.y) / 2 + 2} textAnchor="end" fill={C.primaryText}>r</text>
         </g>
 
-        {/* the work */}
-        <g className={cls("s2")} fill={C.ink} {...lab}>
-          <text x={196} y={72} fontSize={14} fontWeight={700}>r² = 3² + 4²</text>
-          <text x={196} y={92} fontSize={14} fontWeight={700}>= 25</text>
+        {/* the work (formulas typeset with <Tex>) */}
+        <g className={cls("s2")}>
+          <Tex x={196} y={67} size={14} anchor="start" width={110}>{String.raw`r^2 = 3^2 + 4^2`}</Tex>
+          <Tex x={196} y={87} size={14} anchor="start" width={110}>{String.raw`= 25`}</Tex>
         </g>
-        <g className={cls("s3")} fill={C.primary} {...lab}>
-          <text x={196} y={130} fontSize={13} fontWeight={700}>(x − 1)² + (y − 2)²</text>
-          <text x={196} y={148} fontSize={13} fontWeight={700}>= 25</text>
+        <g className={cls("s3")}>
+          <Tex x={196} y={126} size={13} anchor="start" width={118} color={C.primaryText}>{String.raw`(x-1)^2+(y-2)^2`}</Tex>
+          <Tex x={196} y={144} size={13} anchor="start" width={118} color={C.primaryText}>{String.raw`= 25`}</Tex>
         </g>
       </g>
     </Svg>

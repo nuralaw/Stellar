@@ -3,6 +3,7 @@
 import { useEffect, useEffectEvent, useRef, useState } from "react";
 import { Avatar } from "@/components/Avatar";
 import { CalculatorDock } from "@/components/CalculatorDock";
+import { ReferenceButton } from "@/components/reference/ReferenceButton";
 import { I, Icon } from "@/components/bank/icons";
 import { WARN_ICON } from "@/components/compete/CompeteRound";
 import { BTN_PRIMARY, BTN_SECONDARY, FOCUS } from "@/components/plus/styles";
@@ -221,7 +222,7 @@ export function MatchRunner({ matchId, opponent, onFinished }: { matchId: string
   const onKey = useEffectEvent((e: KeyboardEvent) => {
     if (!q || fb || giveUp || away !== null || sending || e.ctrlKey || e.metaKey || e.altKey) return;
     const t = e.target as HTMLElement | null;
-    if (t?.closest?.("[data-calculator]")) return;
+    if (t?.closest?.("[data-calculator], [data-reference]")) return;
     if (e.key === "Enter") {
       if (t instanceof HTMLButtonElement || t instanceof HTMLAnchorElement) return;
       if (response.trim()) void submit();
@@ -365,6 +366,7 @@ export function MatchRunner({ matchId, opponent, onFinished }: { matchId: string
               <span className="sr-only">Calculator</span>
             </button>
           )}
+          {isMath && <ReferenceButton variant="icon" className={FOCUS} calcOpen={calcOpen} onCloseCalc={() => setCalcOpen(false)} />}
           {q && <TimerRing leftMs={left} limitMs={limitMs} />}
           <button type="button" onClick={() => setGiveUp(true)} className={`h-9 rounded-lg px-3 text-sm font-semibold text-muted transition-colors hover:bg-surface-2 hover:text-ink ${FOCUS}`}>
             Give up

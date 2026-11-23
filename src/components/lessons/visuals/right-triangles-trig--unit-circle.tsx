@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Unit circle (radius 64 px = 1). The angle π/6 = 30°: the point is (cos 30°, sin 30°) = (√3/2, 1/2).
 export const alt =
@@ -33,7 +33,6 @@ const th = 30;
 const Pt = { x: f(O.x + R * Math.cos(rad(th))), y: f(O.y - R * Math.sin(rad(th))) };
 const Ft = { x: Pt.x, y: O.y };
 const arc = `M${O.x + 24} ${O.y} A24 24 0 0 0 ${f(O.x + 24 * Math.cos(rad(th)))} ${f(O.y - 24 * Math.sin(rad(th)))}`;
-const row = { fontSize: 12, fontWeight: 700, fill: C.ink, stroke: "none" } as const;
 
 export default function Visual() {
   return (
@@ -54,22 +53,28 @@ export default function Visual() {
         <line className={cls("cos")} x1={O.x} y1={O.y} x2={Ft.x} y2={Ft.y} pathLength={100} stroke={C.ink} strokeWidth={3.5} />
         <line className={cls("sin")} x1={Ft.x} y1={Ft.y} x2={Pt.x} y2={Pt.y} pathLength={100} stroke={C.muted} strokeWidth={3.5} />
         <circle cx={Pt.x} cy={Pt.y} r={4} fill={C.primary} />
-        <text className={cls("p1")} x={f(Pt.x + 7)} y={f(Pt.y - 6)} fontSize={11} fontWeight={700} fill={C.ink} stroke="none">(√3/2, 1/2)</text>
+        <g className={cls("p1")}>
+          <Tex x={f(Pt.x + 8)} y={f(Pt.y - 10)} size={12} anchor="start" width={70}>{String.raw`\left(\dfrac{\sqrt{3}}{2},\dfrac{1}{2}\right)`}</Tex>
+        </g>
 
         {/* the table of values */}
-        <text className={cls("p0")} x={216} y={44} {...row}>π rad = 180°</text>
-        <text className={cls("p1")} x={216} y={72} {...row}>π/6 rad = 30°</text>
-        <g className={cls("p2")} stroke="none">
-          <text x={216} y={104} fontSize={13} fontWeight={700} fill={C.ink}>cos = √3/2</text>
-          <text x={216} y={122} fontSize={11} fill={C.muted}>across</text>
+        <g className={cls("p0")}>
+          <Tex x={216} y={34} size={13} anchor="start" width={98}>{String.raw`\pi\text{ rad}=180^\circ`}</Tex>
         </g>
-        <g className={cls("p3")} stroke="none">
-          <text x={216} y={146} fontSize={13} fontWeight={700} fill={C.muted}>sin = 1/2</text>
-          <text x={216} y={160} fontSize={11} fill={C.muted}>up</text>
+        <g className={cls("p1")}>
+          <Tex x={216} y={54} size={13} anchor="start" width={98}>{String.raw`\pi/6\text{ rad}=30^\circ`}</Tex>
         </g>
-        <text className={cls("p4")} x={f(O.x + 27)} y={f(O.y - 4)} fontSize={12} fontWeight={700} fill={C.primaryText} stroke="none">
-          π/6
-        </text>
+        <g className={cls("p2")}>
+          <Tex x={216} y={88} size={14} anchor="start" width={80}>{String.raw`\cos=\dfrac{\sqrt{3}}{2}`}</Tex>
+          <text x={216} y={115} fontSize={11} fill={C.muted} stroke="none">across</text>
+        </g>
+        <g className={cls("p3")}>
+          <Tex x={216} y={138} size={14} anchor="start" width={80} color={C.muted}>{String.raw`\sin=\dfrac{1}{2}`}</Tex>
+          <text x={216} y={162} fontSize={11} fill={C.muted} stroke="none">up</text>
+        </g>
+        <g className={cls("p4")}>
+          <Tex x={f(O.x + 33)} y={f(O.y - 8)} size={12} width={30} color={C.primaryText}>{String.raw`\pi/6`}</Tex>
+        </g>
       </g>
     </Svg>
   );

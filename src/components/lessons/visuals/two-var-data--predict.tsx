@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Predict with the line: read two points off the drawn line, get y = 3x + 20, then predict y at x = 6.
 export const alt = "A scatterplot with a line of best fit through (0, 20) and (10, 50). The equation is y = 3x + 20, and at x = 6 the line predicts y = 38.";
@@ -76,9 +76,9 @@ export default function Visual() {
         </text>
       </g>
 
-      <text className={cls("eq")} x={56} y={44} fontSize={16} fontWeight={700} fill={C.ink}>
-        y = 3x + 20
-      </text>
+      <g className={cls("eq")}>
+        <Tex x={56} y={40} size={16} anchor="start" width={110}>{String.raw`y=3x+20`}</Tex>
+      </g>
 
       {/* Predict at x = 6 */}
       <line className={cls("v")} x1={px(6)} y1={150} x2={px(6)} y2={py(38)} pathLength={100} stroke={C.good} strokeWidth={2} />

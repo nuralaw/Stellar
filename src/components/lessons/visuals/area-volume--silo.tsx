@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // A cylinder (r = 3, h = 10) topped by a hemisphere (r = 3): 90π + 18π = 108π. Drawn to scale, 9 px per unit.
 export const alt =
@@ -49,13 +49,15 @@ export default function Visual() {
 
         <g className={cls("p1")} {...lab}>
           <text x={168} y={52} fontSize={11} fill={C.muted}>cylinder</text>
-          <text x={168} y={70} fontSize={13} fontWeight={700} fill={C.ink}>π · 3² · 10 = 90π</text>
+          <Tex x={168} y={66} size={13} anchor="start" width={140}>{String.raw`\pi \cdot 3^2 \cdot 10 = 90\pi`}</Tex>
         </g>
         <g className={cls("p2")} {...lab}>
           <text x={168} y={100} fontSize={11} fill={C.muted}>hemisphere: half a sphere</text>
-          <text x={168} y={118} fontSize={13} fontWeight={700} fill={C.primaryText}>½ × 36π = 18π</text>
+          <Tex x={168} y={118} size={13} anchor="start" width={140} color={C.primaryText}>{String.raw`\dfrac{1}{2} \cdot 36\pi = 18\pi`}</Tex>
         </g>
-        <text className={cls("p3")} x={168} y={148} fontSize={16} fontWeight={700} fill={C.ink} {...lab}>total 108π</text>
+        <g className={cls("p3")}>
+          <Tex x={168} y={144} size={16} anchor="start" width={140}>{String.raw`\text{total } 108\pi`}</Tex>
+        </g>
       </g>
     </Svg>
   );

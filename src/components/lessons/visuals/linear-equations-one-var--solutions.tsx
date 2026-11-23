@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Three kinds of answer: two lines that cross (one solution), parallel lines (none), the same line (infinitely many).
 export const alt =
@@ -26,9 +26,9 @@ ${[20, 42, 64].map(fade).join("\n")}
 
 const a = `${P}a`;
 const PANELS = [
-  { x: 16, t: 6, line: 10, cap: 20, eq: "x = 3", label: "one solution" },
-  { x: 116, t: 28, line: 32, cap: 42, eq: "4 = 7", label: "no solution" },
-  { x: 216, t: 50, line: 54, cap: 64, eq: "6 = 6", label: "every x works" },
+  { x: 16, t: 6, line: 10, cap: 20, eq: String.raw`x=3`, label: "one solution" },
+  { x: 116, t: 28, line: 32, cap: 42, eq: String.raw`4=7`, label: "no solution" },
+  { x: 216, t: 50, line: 54, cap: 64, eq: String.raw`6=6`, label: "every x works" },
 ] as const;
 
 /** Lines inside a 88 × 96 panel whose top-left is (x, 22). */
@@ -81,9 +81,9 @@ export default function Visual() {
             />
             {i === 0 && <circle className={`${a} ${fc(p.cap)}`} cx={p.x + 44} cy={72} r={5} fill={C.good} />}
             <g className={`${a} ${fc(p.cap)}`}>
-              <text x={p.x + 44} y={142} textAnchor="middle" fontSize={16} fontWeight={700} fill={C.ink}>
+              <Tex x={p.x + 44} y={136} size={17} width={88} color={C.ink}>
                 {p.eq}
-              </text>
+              </Tex>
               <text x={p.x + 44} y={160} textAnchor="middle" fontSize={12} fill={i === 0 ? C.good : C.muted} fontWeight={600}>
                 {p.label}
               </text>

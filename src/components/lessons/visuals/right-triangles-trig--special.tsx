@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // The two reference-sheet triangles, drawn to scale: 45-45-90 (x, x, x√2) and 30-60-90 (x, x√3, 2x).
 // Each side is opposite its angle: x faces 30, x√3 faces 60, 2x faces 90.
@@ -35,7 +35,6 @@ const C1 = { x: B1.x, y: 140 - U };
 const B2 = { x: 172, y: 140 };
 const A2 = { x: B2.x + f(U * S3), y: 140 };
 const C2 = { x: B2.x, y: 140 - U };
-const t = { fontSize: 14, fontWeight: 700, stroke: "none" } as const;
 const small = { fontSize: 11, fontWeight: 600, fill: C.muted, stroke: "none" } as const;
 
 export default function Visual() {
@@ -47,9 +46,9 @@ export default function Visual() {
         <path className={cls("t1")} d={`M${B1.x} ${B1.y} L${A1.x} ${A1.y} L${C1.x} ${C1.y} Z`} pathLength={100} fill="none" stroke={C.ink} strokeWidth={2} />
         <path d={`M${B1.x} ${B1.y - 8} h8 v8`} fill="none" stroke={C.muted} strokeWidth={1.5} />
         <g className={cls("l1")}>
-          <text x={B1.x - 6} y={B1.y - 20} textAnchor="end" fill={C.ink} {...t}>x</text>
-          <text x={B1.x + U / 2} y={B1.y + 18} textAnchor="middle" fill={C.ink} {...t}>x</text>
-          <text x={f((A1.x + C1.x) / 2 + 10)} y={f((A1.y + C1.y) / 2 - 4)} fill={C.ink} {...t}>x√2</text>
+          <Tex x={B1.x - 6} y={B1.y - 24} size={15} anchor="end" width={20}>{String.raw`x`}</Tex>
+          <Tex x={B1.x + U / 2} y={B1.y + 14} size={15} width={20}>{String.raw`x`}</Tex>
+          <Tex x={f((A1.x + C1.x) / 2 + 8)} y={f((A1.y + C1.y) / 2 - 8)} size={15} anchor="start" width={50}>{String.raw`x\sqrt{2}`}</Tex>
           <text x={A1.x + 6} y={A1.y + 4} {...small}>45°</text>
           <text x={C1.x + 6} y={C1.y - 6} {...small}>45°</text>
         </g>
@@ -58,9 +57,15 @@ export default function Visual() {
         <path className={cls("t2")} d={`M${B2.x} ${B2.y} L${A2.x} ${A2.y} L${C2.x} ${C2.y} Z`} pathLength={100} fill="none" stroke={C.ink} strokeWidth={2} />
         <path d={`M${B2.x} ${B2.y - 8} h8 v8`} fill="none" stroke={C.muted} strokeWidth={1.5} />
         <g className={cls("l2")}>
-          <text className={cls("g30")} x={B2.x - 6} y={B2.y - 20} textAnchor="end" fill={C.ink} {...t}>x</text>
-          <text className={cls("g60")} x={f(B2.x + (A2.x - B2.x) / 2)} y={B2.y + 18} textAnchor="middle" fill={C.ink} {...t}>x√3</text>
-          <text className={cls("g90")} x={f((A2.x + C2.x) / 2 + 8)} y={f((A2.y + C2.y) / 2 - 8)} fill={C.ink} {...t}>2x</text>
+          <g className={cls("g30")}>
+            <Tex x={B2.x - 6} y={B2.y - 24} size={15} anchor="end" width={20}>{String.raw`x`}</Tex>
+          </g>
+          <g className={cls("g60")}>
+            <Tex x={f(B2.x + (A2.x - B2.x) / 2)} y={B2.y + 14} size={15} width={50}>{String.raw`x\sqrt{3}`}</Tex>
+          </g>
+          <g className={cls("g90")}>
+            <Tex x={f((A2.x + C2.x) / 2 + 8)} y={f((A2.y + C2.y) / 2 - 12)} size={15} anchor="start" width={36}>{String.raw`2x`}</Tex>
+          </g>
           <text className={cls("g30")} x={A2.x + 6} y={A2.y + 4} {...small}>30°</text>
           <text className={cls("g60")} x={C2.x + 6} y={C2.y - 6} {...small}>60°</text>
           <text className={cls("g90")} x={B2.x + 12} y={B2.y - 12} {...small}>90°</text>

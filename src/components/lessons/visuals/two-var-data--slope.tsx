@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Slope and intercept: a rise/run triangle with units on the line y = 2.5x + 30 (plant height in cm, x in weeks).
 export const alt = "A scatterplot of plant height in cm against weeks with the line y = 2.5x + 30. A triangle shows a run of 4 weeks and a rise of 10 cm, so the slope is 2.5 cm per week. The line starts at 30 cm.";
@@ -87,9 +87,7 @@ export default function Visual() {
       </text>
 
       <g className={cls("res")} textAnchor="middle">
-        <text x={216} y={124} fontSize={16} fontWeight={700} fill={C.ink}>
-          10 ÷ 4 = 2.5
-        </text>
+        <Tex x={216} y={114} size={15} width={110}>{String.raw`\dfrac{10}{4}=2.5`}</Tex>
         <text x={216} y={142} fontSize={12} fill={C.muted}>
           cm per week
         </text>

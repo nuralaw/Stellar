@@ -1,4 +1,13 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
+
+// The equation is drawn as three layers of the same formula (phantoms keep every glyph in place): the plain parts in ink,
+// and the center numbers and the right side twice: in ink, then in the accent once the beat reaches them.
+const ph = (s: string) => String.raw`\phantom{${s}}`;
+const EQ = {
+  rest: String.raw`(x-` + ph("3") + String.raw`)^2+(y+` + ph("1") + String.raw`)^2=` + ph("16"),
+  c: ph(String.raw`(x-`) + "3" + ph(String.raw`)^2+(y+`) + "1" + ph(String.raw`)^2=16`),
+  r: ph(String.raw`(x-3)^2+(y+1)^2=`) + "16",
+};
 
 // Circles: the equation's numbers become the circle's center and radius (signs flip, the right side is r²).
 export const alt = "The equation (x − 3)² + (y + 1)² = 16 drawn as a circle: center (3, −1), radius 4.";
@@ -23,10 +32,14 @@ const css = `
   97%, 100% { transform: scale(1); opacity: 0 }
 }
 
-.v-circles-hc { fill: ${C.primaryText}; animation-name: v-circles-hc; }
-@keyframes v-circles-hc { 0%, 30% { fill: ${C.ink} } 34%, 90% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
-.v-circles-hr { fill: ${C.primaryText}; animation-name: v-circles-hr; }
-@keyframes v-circles-hr { 0%, 50% { fill: ${C.ink} } 54%, 90% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
+.v-circles-hc { animation-name: v-circles-hc; }
+@keyframes v-circles-hc { 0%, 30% { opacity: 1 } 34%, 90% { opacity: 0 } 97%, 100% { opacity: 1 } }
+.v-circles-hca { animation-name: v-circles-hca; }
+@keyframes v-circles-hca { 0%, 30% { opacity: 0 } 34%, 90% { opacity: 1 } 97%, 100% { opacity: 0 } }
+.v-circles-hr { animation-name: v-circles-hr; }
+@keyframes v-circles-hr { 0%, 50% { opacity: 1 } 54%, 90% { opacity: 0 } 97%, 100% { opacity: 1 } }
+.v-circles-hra { animation-name: v-circles-hra; }
+@keyframes v-circles-hra { 0%, 50% { opacity: 0 } 54%, 90% { opacity: 1 } 97%, 100% { opacity: 0 } }
 
 .v-circles-in1 { animation-name: v-circles-in1; }
 @keyframes v-circles-in1 {
@@ -67,10 +80,21 @@ export default function Visual() {
       </g>
 
       {/* The equation */}
-      <text className="v-circles-a v-circles-eq" x={160} y={32} textAnchor="middle" fontSize={17} fontWeight={600} fill={C.ink}>
-        (x − <tspan className="v-circles-a v-circles-hc">3</tspan>)² + (y + <tspan className="v-circles-a v-circles-hc">1</tspan>)² ={" "}
-        <tspan className="v-circles-a v-circles-hr">16</tspan>
-      </text>
+      <g className="v-circles-a v-circles-eq">
+        <Tex x={160} y={30} size={18} width={220}>{EQ.rest}</Tex>
+        <g className="v-circles-a v-circles-hc">
+          <Tex x={160} y={30} size={18} width={220}>{EQ.c}</Tex>
+        </g>
+        <g className="v-circles-a v-circles-hca">
+          <Tex x={160} y={30} size={18} width={220} color={C.primaryText}>{EQ.c}</Tex>
+        </g>
+        <g className="v-circles-a v-circles-hr">
+          <Tex x={160} y={30} size={18} width={220}>{EQ.r}</Tex>
+        </g>
+        <g className="v-circles-a v-circles-hra">
+          <Tex x={160} y={30} size={18} width={220} color={C.primaryText}>{EQ.r}</Tex>
+        </g>
+      </g>
 
       {/* The circle, its center and a sweeping radius */}
       <circle className="v-circles-a v-circles-ring" cx={100} cy={112} r={46} pathLength={100} stroke={C.ink} strokeWidth={2.5} fill="none" />
@@ -92,9 +116,7 @@ export default function Visual() {
         <text x={206} y={140} fontSize={12} fill={C.muted}>
           radius
         </text>
-        <text x={206} y={161} fontSize={18} fontWeight={700} fill={C.ink}>
-          √16 = 4
-        </text>
+        <Tex x={206} y={157} size={18} anchor="start" width={100}>{String.raw`\sqrt{16}=4`}</Tex>
       </g>
     </Svg>
   );

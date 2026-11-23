@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Triangle ABC with A = 50°, B = 60°, C = 70°. Extend BC to D: the exterior angle at C is 180 − 70 = 110 = 50 + 60.
 export const alt =
@@ -73,7 +73,9 @@ export default function Visual() {
 
         <text className={cls("p1")} x={212} y={52} fontSize={11} fill={C.muted} {...lab}>exterior angle</text>
         <text className={cls("p1")} x={212} y={78} fontSize={22} fontWeight={700} fill={C.primaryText} {...lab}>110°</text>
-        <text className={cls("p2")} x={212} y={104} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>= 50° + 60°</text>
+        <g className={cls("p2")}>
+          <Tex x={212} y={100} size={14} anchor="start" width={100}>{String.raw`{=}50^\circ+60^\circ`}</Tex>
+        </g>
         <text className={cls("p3")} x={212} y={130} fontSize={11} fill={C.muted} {...lab}>the two far angles</text>
       </g>
     </Svg>

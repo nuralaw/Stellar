@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Perpendicular slopes: the 2/5 slope triangle turns 90 degrees and becomes a −5/2 triangle.
 export const alt =
@@ -70,13 +70,13 @@ export default function Visual() {
       </g>
 
       {/* Slopes */}
-      <text x={254} y={74} fontSize={14} fontWeight={700} fill={C.muted}>
-        2/5
-      </text>
+      <Tex x={254} y={68} size={16} anchor="start" width={40} color={C.muted}>
+        {String.raw`\dfrac{2}{5}`}
+      </Tex>
       <g className={`${a} ${fc(70)}`}>
-        <text x={60} y={56} fontSize={14} fontWeight={700} fill={C.ink}>
-          −5/2
-        </text>
+        <Tex x={52} y={50} size={16} anchor="start" width={50} color={C.ink}>
+          {String.raw`-\dfrac{5}{2}`}
+        </Tex>
       </g>
     </Svg>
   );

@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Two right triangles with the same angle A: 3-4-5 and 6-8-10 (drawn 1 : 2). The ratio sin(A) is 3/5 in both.
 export const alt =
@@ -67,18 +67,18 @@ export default function Visual() {
         </g>
 
         {/* the ratio, side by side */}
-        <text className={cls("p1")} x={150} y={36} fontSize={11} fill={C.muted} stroke="none">
-          sin A = opp/hyp
-        </text>
-        <g className={cls("p2")} stroke="none">
-          <text x={150} y={62} fontSize={11} fill={C.muted}>big</text>
-          <text x={186} y={64} fontSize={19} fontWeight={700} fill={C.ink}>6/10</text>
-          <text x={150} y={88} fontSize={11} fill={C.muted}>small</text>
-          <text x={186} y={90} fontSize={19} fontWeight={700} fill={C.primaryText}>3/5</text>
+        <g className={cls("p1")}>
+          <Tex x={150} y={24} size={12} anchor="start" width={150} color={C.muted}>{String.raw`\sin A=\text{opp}/\text{hyp}`}</Tex>
         </g>
-        <text className={cls("p3")} x={244} y={128} fontSize={14} fontWeight={700} fill={C.ink} stroke="none">
-          both 0.6
-        </text>
+        <g className={cls("p2")}>
+          <text x={150} y={55} fontSize={11} fill={C.muted} stroke="none">big</text>
+          <Tex x={186} y={50} size={16} anchor="start" width={50}>{String.raw`\dfrac{6}{10}`}</Tex>
+          <text x={150} y={89} fontSize={11} fill={C.muted} stroke="none">small</text>
+          <Tex x={186} y={84} size={16} anchor="start" width={50} color={C.primaryText}>{String.raw`\dfrac{3}{5}`}</Tex>
+        </g>
+        <g className={cls("p3")}>
+          <Tex x={244} y={124} size={14} anchor="start" width={70}>{String.raw`\text{both }0.6`}</Tex>
+        </g>
       </g>
     </Svg>
   );

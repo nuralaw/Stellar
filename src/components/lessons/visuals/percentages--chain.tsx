@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Chain two percents: a = 60% of b and a = 150% of c, so c = 0.6 ÷ 1.5 = 40% of b.
 export const alt = "Three bars: b is 100 long, a is 60% of b, and c is the length that fits into a 1.5 times, which is 40% of b. So if a is 60% of b and 150% of c, then c is 40% of b.";
@@ -50,24 +50,22 @@ export default function Visual() {
 
       {/* a = 60% of b */}
       <rect className={cls("abar")} x={X0} y={86} width={60 * K} height={22} rx={4} fill={C.soft} stroke={C.primary} strokeWidth={1.5} />
-      <text className={cls("alab")} x={X0 + 60 * K + 8} y={101} fontSize={12} fontWeight={700} fill={C.ink}>
-        a = 60% of b
-      </text>
+      <g className={cls("alab")}>
+        <Tex x={X0 + 60 * K + 8} y={97} size={13} anchor="start" width={120}>{String.raw`a=60\%\text{ of }b`}</Tex>
+      </g>
 
       {/* c: a is 150% of c */}
       <rect className={cls("cbar")} x={X0} y={128} width={40 * K} height={22} rx={4} fill={C.fill} stroke={C.ink} strokeWidth={1.5} />
       <g className={cls("cext")}>
         <rect x={X0 + 40 * K} y={128} width={20 * K} height={22} rx={4} fill="none" stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
-        <text x={X0 + 60 * K + 8} y={143} fontSize={12} fontWeight={700} fill={C.ink}>
-          a = 150% of c
-        </text>
+        <Tex x={X0 + 60 * K + 8} y={139} size={13} anchor="start" width={120}>{String.raw`a=150\%\text{ of }c`}</Tex>
       </g>
 
       {/* Guide: where 40% of b falls, and the answer */}
       <line className={cls("guide")} x1={X0 + 40 * K} y1={66} x2={X0 + 40 * K} y2={128} stroke={C.primary} strokeWidth={1.5} strokeDasharray="4 3" />
-      <text className={cls("res")} x={160} y={28} fontSize={16} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        c = 40% of b
-      </text>
+      <g className={cls("res")}>
+        <Tex x={160} y={26} size={17} width={200} color={C.primaryText}>{String.raw`c=40\%\text{ of }b`}</Tex>
+      </g>
     </Svg>
   );
 }

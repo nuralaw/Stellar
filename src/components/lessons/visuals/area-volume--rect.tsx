@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Perimeter is the distance around; area is the squares inside. A 9-by-w rectangle with perimeter 30: w = 6, area 54.
 export const alt =
@@ -54,11 +54,15 @@ export default function Visual() {
 
         <g className={cls("p1")} {...lab}>
           <text x={186} y={46} fontSize={11} fill={C.muted}>perimeter = 30</text>
-          <text x={186} y={64} fontSize={12} fontWeight={700} fill={C.ink}>2 × (9 + w) = 30</text>
+          <Tex x={186} y={62} size={14} anchor="start" width={120}>{String.raw`2(9+w)=30`}</Tex>
         </g>
-        <text className={cls("p2")} x={186} y={84} fontSize={12} fontWeight={700} fill={C.ink} {...lab}>9 + w = 15, w = 6</text>
+        <g className={cls("p2")}>
+          <Tex x={186} y={84} size={14} anchor="start" width={120}>{String.raw`9+w=15,\ w=6`}</Tex>
+        </g>
         <text className={cls("p3")} x={186} y={122} fontSize={11} fill={C.muted} {...lab}>area: squares inside</text>
-        <text className={cls("p4")} x={186} y={146} fontSize={17} fontWeight={700} fill={C.primaryText} {...lab}>9 × 6 = 54</text>
+        <g className={cls("p4")}>
+          <Tex x={186} y={142} size={17} anchor="start" width={120} color={C.primaryText}>{String.raw`9\times6=54`}</Tex>
+        </g>
       </g>
     </Svg>
   );

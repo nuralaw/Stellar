@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Two-variable data: a line of best fit runs through the dots; put x into it to read the predicted y.
 export const alt = "A line of best fit, y = 3x + 20, is drawn through scattered dots, then used to predict y = 38 at x = 6.";
@@ -94,17 +94,13 @@ export default function Visual() {
           <text x={186} y={56} fontSize={12} fill={C.muted}>
             line of best fit
           </text>
-          <text x={186} y={77} fontSize={18} fontWeight={700} fill={C.ink}>
-            y = 3x + 20
-          </text>
+          <Tex x={186} y={77} size={18} anchor="start" width={120}>{String.raw`y=3x+20`}</Tex>
         </g>
         <g className="v-two-var-data-a v-two-var-data-ans">
           <text x={186} y={112} fontSize={12} fill={C.muted}>
             predicted at x = 6
           </text>
-          <text x={186} y={133} fontSize={18} fontWeight={700} fill={C.ink}>
-            3(6) + 20 = <tspan fill={C.primaryText}>38</tspan>
-          </text>
+          <Tex x={186} y={133} size={18} anchor="start" width={120}>{String.raw`3(6)+20=38`}</Tex>
         </g>
       </g>
     </Svg>

@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // y = x² − 6x + c. Raise c and the parabola lifts off the x-axis: c = 5 crosses twice, c = 9 touches once, c = 13 misses.
 export const alt =
@@ -28,18 +28,16 @@ const a = `${P}a`;
 // y = (x − 3)² + (c − 9). Vertex below the axis by 4 (c = 5), on it (c = 9), above it by 4 (c = 13). Drawn for x from 1 to 5.
 const AXIS = 88;
 const PANELS = [
-  { x0: 16, c: 5, vy: AXIS + 24, ends: AXIS, t: 4, dr: 8, lab: 20, cap: 34, text: "two solutions", disc: "b² − 4ac = 16" },
-  { x0: 116, c: 9, vy: AXIS, ends: AXIS - 24, t: 34, dr: 38, lab: 50, cap: 50, text: "one solution", disc: "b² − 4ac = 0" },
-  { x0: 216, c: 13, vy: AXIS - 24, ends: AXIS - 48, t: 64, dr: 68, lab: 80, cap: 80, text: "no solution", disc: "b² − 4ac = −16" },
+  { x0: 16, c: 5, vy: AXIS + 24, ends: AXIS, t: 4, dr: 8, lab: 20, cap: 34, text: "two solutions", disc: String.raw`b^2-4ac=16` },
+  { x0: 116, c: 9, vy: AXIS, ends: AXIS - 24, t: 34, dr: 38, lab: 50, cap: 50, text: "one solution", disc: String.raw`b^2-4ac=0` },
+  { x0: 216, c: 13, vy: AXIS - 24, ends: AXIS - 48, t: 64, dr: 68, lab: 80, cap: 80, text: "no solution", disc: String.raw`b^2-4ac=-16` },
 ] as const;
 
 export default function Visual() {
   return (
     <Svg label={alt}>
       <Css>{css}</Css>
-      <text x={160} y={22} textAnchor="middle" fontSize={13} fontWeight={600} fill={C.muted}>
-        y = x² − 6x + c
-      </text>
+      <Tex x={160} y={17} size={15} width={160} color={C.muted}>{String.raw`y=x^2-6x+c`}</Tex>
       {PANELS.map((p, i) => {
         const mid = p.x0 + 44;
         const left = mid - 32;
@@ -61,12 +59,8 @@ export default function Visual() {
                 </>
               )}
               {i === 1 && <circle cx={mid} cy={AXIS} r={5} fill={gc} />}
-              <text x={mid} y={137} textAnchor="middle" fontSize={14} fontWeight={700} fill={C.ink}>
-                c = {p.c}
-              </text>
-              <text x={mid} y={151} textAnchor="middle" fontSize={11} fontWeight={600} fill={C.ink}>
-                {p.disc}
-              </text>
+              <Tex x={mid} y={128} size={15} width={80}>{`c=${p.c}`}</Tex>
+              <Tex x={mid} y={145} size={12} width={88}>{p.disc}</Tex>
               <text x={mid} y={164} textAnchor="middle" fontSize={12} fontWeight={600} fill={gc}>
                 {p.text}
               </text>

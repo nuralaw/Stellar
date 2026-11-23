@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // △PQR (PQ = 3, QR = 6, PR = 7) and △XYZ = 4 × △PQR (XY = 12, YZ = 24, XZ = 28), drawn to scale (8 px per unit for the big one's
 // quarter: small 8 px per unit, big 32). P ↔ X, Q ↔ Y, R ↔ Z. Equal angles get the same arc marks: one arc at P/X, two at R/Z.
@@ -104,10 +104,16 @@ export default function Visual() {
         </g>
 
         {/* the work (top middle, above the big triangle's long side) */}
-        <text className={cls("m1")} x={128} y={30} fontSize={13} fontWeight={700} fill={C.ink} stroke="none">△PQR ~ △XYZ</text>
-        <text className={cls("m2")} x={128} y={50} fontSize={12} fontWeight={700} fill={C.ink} stroke="none">PQ 3 → XY 12</text>
-        <text className={cls("m3")} x={128} y={68} fontSize={12} fontWeight={700} fill={C.ink} stroke="none">PR 7 → XZ 28</text>
-        <text className={cls("m3")} x={270} y={138} fontSize={14} fontWeight={700} fill={C.primaryText} stroke="none">× 4</text>
+        <g className={cls("m1")}>
+          <Tex x={128} y={28} size={14} anchor="start" width={150}>{String.raw`\triangle PQR\sim\triangle XYZ`}</Tex>
+        </g>
+        <g className={cls("m2")}>
+          <Tex x={128} y={48} size={13} anchor="start" width={150}>{String.raw`PQ\ 3\to XY\ 12`}</Tex>
+        </g>
+        <g className={cls("m3")}>
+          <Tex x={128} y={66} size={13} anchor="start" width={150}>{String.raw`PR\ 7\to XZ\ 28`}</Tex>
+          <Tex x={270} y={138} size={15} anchor="start" width={40} color={C.primaryText}>{String.raw`\times4`}</Tex>
+        </g>
       </g>
     </Svg>
   );

@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // One multiplier: 100% plus 20% is 120% (× 1.2). 100% minus 20% is 80% (× 0.8).
 export const alt = "A bar for 100% gets a 20% piece added to make 120%, so up 20% is × 1.2. A second bar of 100% loses a 20% piece to leave 80%, so down 20% is × 0.8.";
@@ -41,9 +41,9 @@ export default function Visual() {
           +20%
         </text>
       </g>
-      <text className={cls("m1")} x={278} y={60} fontSize={18} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        × 1.2
-      </text>
+      <g className={cls("m1")}>
+        <Tex x={278} y={53} size={18} width={60} color={C.primaryText}>{String.raw`\times1.2`}</Tex>
+      </g>
 
       {/* Down 20% */}
       <g className={cls("r2")}>
@@ -58,9 +58,9 @@ export default function Visual() {
           −20%
         </text>
       </g>
-      <text className={cls("m2")} x={278} y={124} fontSize={18} fontWeight={700} fill={C.primaryText} textAnchor="middle">
-        × 0.8
-      </text>
+      <g className={cls("m2")}>
+        <Tex x={278} y={117} size={18} width={60} color={C.primaryText}>{String.raw`\times0.8`}</Tex>
+      </g>
 
       <text x={160} y={158} fontSize={12} fill={C.muted} textAnchor="middle">
         old amount = 100%

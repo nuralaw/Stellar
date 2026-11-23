@@ -1,7 +1,7 @@
 import { C, Css, Svg } from "./kit";
 
 // Text structure and purpose, "The job verbs": choices name a sentence's job with a verb; the verbs run from agreeing to pushing back.
-export const alt = "A scale of job verbs from builds the point to pushes back: supports, concedes, qualifies, undermines, refutes. The sentence Admittedly, a turbine can hum points to concedes.";
+export const alt = "A scale of job verbs from builds the point to pushes back: supports, concedes, qualifies, refutes. The sentence Admittedly, a turbine can hum points to concedes.";
 
 const P = "v-text-structure-purpose--verbs-";
 
@@ -27,10 +27,9 @@ ${show("sent", 30)}
 const AXIS_Y = 104;
 const TICKS = [
   { x: 48, word: "supports", above: true },
-  { x: 104, word: "concedes", above: false, active: true },
-  { x: 160, word: "qualifies", above: true },
-  { x: 216, word: "undermines", above: false },
-  { x: 272, word: "refutes", above: true },
+  { x: 122.7, word: "concedes", above: false, active: true },
+  { x: 197.3, word: "qualifies", above: true },
+  { x: 272, word: "refutes", above: false },
 ];
 
 export default function Visual() {
@@ -76,8 +75,8 @@ export default function Visual() {
             Admittedly, a turbine can hum.
           </text>
         </g>
-        <path className={`v-text-structure-purpose--verbs-a v-text-structure-purpose--verbs-arrow`} d="M104 42 V84" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
-        <path className={`v-text-structure-purpose--verbs-a v-text-structure-purpose--verbs-head`} d="M98 78 L104 86 L110 78" fill="none" stroke={C.primary} strokeWidth={2} />
+        <path className={`v-text-structure-purpose--verbs-a v-text-structure-purpose--verbs-arrow`} d="M122.7 42 V84" pathLength={100} fill="none" stroke={C.primary} strokeWidth={2} />
+        <path className={`v-text-structure-purpose--verbs-a v-text-structure-purpose--verbs-head`} d="M116.7 78 L122.7 86 L128.7 78" fill="none" stroke={C.primary} strokeWidth={2} />
       </g>
     </Svg>
   );

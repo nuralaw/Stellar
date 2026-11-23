@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Linear functions: the rule's two numbers are the line. The 1 lands on the y-axis (the start); the 2 becomes
 // the climb for every 1 across (the slope). Same step each time, so the points make a straight line.
@@ -12,8 +12,9 @@ const Y = (n: number) => 162 - U * n;
 // The rule is centered on x = EQ; its digits sit at these centers (Geist 24/700), 8.5 above the baseline.
 const EQ = 222;
 const TWO = EQ + 8;
-const ONE = EQ + 60.5;
-const DIGIT_Y = 88 - 8.5;
+const ONE = EQ + 67;
+const RULE_Y = 88;
+const DIGIT_Y = RULE_Y;
 // Flights: each small label starts on its digit in the rule (twice its size) and lands on the graph.
 const TICK = X(0) - 12.5; // center of the "1" beside the y-axis
 const FLY1 = { x: ONE - TICK, y: DIGIT_Y - Y(1) };
@@ -45,8 +46,10 @@ const css = `
 @keyframes v-linear-functions-scene { 0%, 91% { opacity: 1 } 97%, 100% { opacity: 0 } }
 
 /* Beat 1: the 1 leaves the rule and lands on the y-axis. That is where the line starts. */
-.v-linear-functions-hb { fill: ${C.primaryText}; animation-name: v-linear-functions-hb; }
-@keyframes v-linear-functions-hb { 0%, 5% { fill: ${C.ink} } 7%, 91% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
+.v-linear-functions-hb { animation-name: v-linear-functions-hb; }
+@keyframes v-linear-functions-hb { 0%, 5% { opacity: 0 } 7%, 91% { opacity: 1 } 97%, 100% { opacity: 0 } }
+.v-linear-functions-hbi { opacity: 0; animation-name: v-linear-functions-hbi; }
+@keyframes v-linear-functions-hbi { 0%, 5% { opacity: 1 } 7%, 91% { opacity: 0 } 97%, 100% { opacity: 1 } }
 .v-linear-functions-f1x { animation-name: v-linear-functions-f1x; }
 @keyframes v-linear-functions-f1x {
   0%, 7% { transform: translateX(${FLY1.x}px); animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1) }
@@ -64,8 +67,10 @@ const css = `
 @keyframes v-linear-functions-cb { 0%, 17% { opacity: 0; transform: translateY(-4px) } 22%, 100% { opacity: 1; transform: none } }
 
 /* Beat 2: the 2 leaves the rule and becomes the climb of every step */
-.v-linear-functions-hm { fill: ${C.primaryText}; animation-name: v-linear-functions-hm; }
-@keyframes v-linear-functions-hm { 0%, 22% { fill: ${C.ink} } 24%, 91% { fill: ${C.primaryText} } 97%, 100% { fill: ${C.ink} } }
+.v-linear-functions-hm { animation-name: v-linear-functions-hm; }
+@keyframes v-linear-functions-hm { 0%, 22% { opacity: 0 } 24%, 91% { opacity: 1 } 97%, 100% { opacity: 0 } }
+.v-linear-functions-hmi { opacity: 0; animation-name: v-linear-functions-hmi; }
+@keyframes v-linear-functions-hmi { 0%, 22% { opacity: 1 } 24%, 91% { opacity: 0 } 97%, 100% { opacity: 1 } }
 .v-linear-functions-f2x { animation-name: v-linear-functions-f2x; }
 @keyframes v-linear-functions-f2x {
   0%, 24% { transform: translateX(${FLY2.x}px); animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1) }
@@ -108,23 +113,32 @@ export default function Visual() {
       </g>
       <path d={`M${X(0)} ${Y(8)} V${Y(0)} H${X(5)}`} stroke={C.muted} strokeWidth={1.5} fill="none" />
 
-      {/* The rule */}
-      <text x={EQ} y={88} textAnchor="middle" fontSize={24} fontWeight={700} fill={C.ink}>
-        f(x) = <tspan className="v-linear-functions-a v-linear-functions-hm">2</tspan>x +{" "}
-        <tspan className="v-linear-functions-a v-linear-functions-hb">1</tspan>
-      </text>
+      {/* The rule: the 2 and the 1 turn orange (a crossfade of two typeset layers) */}
+      <Tex x={EQ} y={RULE_Y} size={26} width={170}>{String.raw`f(x)=\phantom{2}x+\phantom{1}`}</Tex>
+      <g className="v-linear-functions-a v-linear-functions-hmi">
+        <Tex x={EQ} y={RULE_Y} size={26} width={170}>{String.raw`\phantom{f(x)=}2\phantom{x+1}`}</Tex>
+      </g>
+      <g className="v-linear-functions-a v-linear-functions-hm">
+        <Tex x={EQ} y={RULE_Y} size={26} width={170} color={C.primaryText}>{String.raw`\phantom{f(x)=}2\phantom{x+1}`}</Tex>
+      </g>
+      <g className="v-linear-functions-a v-linear-functions-hbi">
+        <Tex x={EQ} y={RULE_Y} size={26} width={170}>{String.raw`\phantom{f(x)=2x}\mathbin{\phantom{+}}1`}</Tex>
+      </g>
+      <g className="v-linear-functions-a v-linear-functions-hb">
+        <Tex x={EQ} y={RULE_Y} size={26} width={170} color={C.primaryText}>{String.raw`\phantom{f(x)=2x}\mathbin{\phantom{+}}1`}</Tex>
+      </g>
 
       <g className="v-linear-functions-a v-linear-functions-scene">
         {/* What the two numbers are called */}
         <g className="v-linear-functions-a v-linear-functions-cm">
-          <line x1={TWO - 7} y1={96} x2={TWO + 7} y2={96} stroke={C.primary} strokeWidth={2} />
-          <text x={TWO} y={112} textAnchor="middle" fontSize={12} fontWeight={500} fill={C.muted}>
+          <line x1={TWO - 7} y1={104} x2={TWO + 7} y2={104} stroke={C.primary} strokeWidth={2} />
+          <text x={TWO} y={120} textAnchor="middle" fontSize={12} fontWeight={500} fill={C.muted}>
             slope
           </text>
         </g>
         <g className="v-linear-functions-a v-linear-functions-cb">
-          <line x1={ONE - 6.5} y1={96} x2={ONE + 6.5} y2={96} stroke={C.primary} strokeWidth={2} />
-          <text x={ONE} y={112} textAnchor="middle" fontSize={12} fontWeight={500} fill={C.muted}>
+          <line x1={ONE - 6.5} y1={104} x2={ONE + 6.5} y2={104} stroke={C.primary} strokeWidth={2} />
+          <text x={ONE} y={120} textAnchor="middle" fontSize={12} fontWeight={500} fill={C.muted}>
             start
           </text>
         </g>

@@ -76,22 +76,22 @@ export interface TestSession {
 export const DEFAULT_PROFILE: Profile = { name: "", avatar: AVATARS[0], targetScore: null, testDate: null, testTimeZone: null, focusSection: null };
 const NO_ATTEMPTS: Attempt[] = [];
 
-/** Where a student is in one lesson (/lessons/[slug]). */
+/** Where a student is in one lesson (/lessons/[slug]). Screens: 0 overview, then 4 per subtopic (Learn, Easy, Medium, Hard), then "complete". */
 export interface LessonProgress {
-  /** Step to resume at (0-based; === steps on the "lesson complete" screen). */
+  /** Screen to resume at (0-based; === steps + 1 on the "lesson complete" screen). */
   step: number;
-  /** Furthest step reached. */
+  /** Furthest screen reached. */
   max: number;
-  /** Step count when last saved (the lesson file can change). */
+  /** Screen count when last saved, without overview and complete (4 per subtopic; the lesson file can change). */
   steps: number;
   /** The lesson version's fingerprint when last saved (lib/lessons.ts). */
   sig?: string;
-  /** Answer per step index: the response ("2" = option index for quizzes, the choice/number for checks) and whether it was right. */
+  /** Finished tasks by screen index: how ("right", or "shown" = the explanation was opened first) and whether the first answer was right. */
   picks: Record<number, { r: string; ok: boolean }>;
+  /** Tasks checked at least once in this pass: screen index → whether the FIRST answer was right (also what the attempt log got). */
+  tried?: Record<number, boolean>;
   /** Unix ms when first finished. */
   done?: number;
-  /** Parts (subtopics) finished: part index → Unix ms. */
-  parts?: Record<number, number>;
   /** Unix ms of the last change. */
   at: number;
 }

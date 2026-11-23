@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Desmos: type a system exactly as written, the two lines draw themselves, the crossing is the answer.
 export const alt = "3x + 2y = 12 and x − y = −1 are typed into Desmos; the two lines are drawn and cross at the solution (2, 3).";
@@ -67,12 +67,8 @@ export default function Visual() {
         <line x1={20} y1={76} x2={140} y2={76} stroke={C.line} strokeWidth={1.5} />
         <circle cx={34} cy={58} r={5} fill={C.primary} />
         <circle cx={34} cy={94} r={5} fill={C.ink} />
-        <text x={47} y={63} fontSize={14} fontWeight={600} fill={C.ink}>
-          3x + 2y = 12
-        </text>
-        <text x={47} y={99} fontSize={14} fontWeight={600} fill={C.ink}>
-          x − y = −1
-        </text>
+        <Tex x={47} y={58} size={15} anchor="start" width={92}>{String.raw`3x+2y=12`}</Tex>
+        <Tex x={47} y={94} size={15} anchor="start" width={92}>{String.raw`x-y=-1`}</Tex>
         <rect className="v-desmos-a v-desmos-cover v-desmos-type1" x={44} y={46} width={93} height={24} fill={C.fill} />
         <rect className="v-desmos-a v-desmos-cover v-desmos-type2" x={44} y={82} width={93} height={24} fill={C.fill} />
         <line className="v-desmos-a v-desmos-caret v-desmos-caret1" x1={45} y1={50} x2={45} y2={66} stroke={C.primary} strokeWidth={1.5} />

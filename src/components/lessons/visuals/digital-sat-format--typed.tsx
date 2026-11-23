@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Typed math answers: a mixed number is not accepted. 4¼ must be entered as 17/4 or 4.25;
 // "4 1/4" is rejected and "41/4" is read as 41 ÷ 4 = 10.25.
@@ -55,9 +55,7 @@ export default function Visual() {
         <text x={58} y={72} textAnchor="middle" fontSize={11} fill={C.muted}>
           answer
         </text>
-        <text x={58} y={108} textAnchor="middle" fontSize={34} fontWeight={700} fill={C.ink}>
-          4¼
-        </text>
+        <Tex x={58} y={102} size={32} width={80} color={C.ink}>{String.raw`4\frac{1}{4}`}</Tex>
         <path d="M96 92 H112 M107 87 L112 92 L107 97" fill="none" stroke={C.muted} strokeWidth={1.5} />
 
         {/* Four ways to type it */}

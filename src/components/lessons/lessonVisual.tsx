@@ -1,3 +1,4 @@
+import "katex/dist/katex.min.css"; // for <Tex> in visuals (kit.tsx): the page may not load it otherwise
 import type { ReactNode } from "react";
 import { VISUALS } from "./visuals";
 

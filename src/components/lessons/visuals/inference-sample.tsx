@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Inference from a sample: the sample's 62% lands on a number line, the margin of error (4) spreads both ways,
 // and the range 58% to 66% is what is plausible for the whole population.
@@ -84,15 +84,15 @@ export default function Visual() {
 
       <g className="v-inference-sample-a v-inference-sample-scene">
         {/* What the sample says */}
-        <text x={160} y={38} textAnchor="middle" fontSize={20} fontWeight={700} fill={C.ink}>
-          <tspan fontSize={12} fontWeight={500} fill={C.muted}>
-            sample
-          </tspan>
-          <tspan className="v-inference-sample-a v-inference-sample-est" dx={7}>
-            62%
-          </tspan>
-          <tspan className="v-inference-sample-a v-inference-sample-pm"> ± 4%</tspan>
+        <text x={78} y={42} textAnchor="start" fontSize={12} fontWeight={500} fill={C.muted}>
+          sample
         </text>
+        <g className="v-inference-sample-a v-inference-sample-est">
+          <Tex x={126} y={38} size={22} anchor="start" width={56} color={C.primaryText}>{String.raw`62\%`}</Tex>
+        </g>
+        <g className="v-inference-sample-a v-inference-sample-pm">
+          <Tex x={174} y={38} size={22} anchor="start" width={80} color={C.primaryText}>{String.raw`\pm 4\%`}</Tex>
+        </g>
 
         {/* The number line */}
         <line x1={24} y1={AXIS} x2={296} y2={AXIS} stroke={C.muted} strokeWidth={1.5} />
@@ -117,12 +117,12 @@ export default function Visual() {
         </g>
         <line className="v-inference-sample-a v-inference-sample-capL" x1={X(58)} y1={AXIS - 13} x2={X(58)} y2={AXIS + 13} stroke={C.primary} strokeWidth={3} />
         <line className="v-inference-sample-a v-inference-sample-capR" x1={X(66)} y1={AXIS - 13} x2={X(66)} y2={AXIS + 13} stroke={C.primary} strokeWidth={3} />
-        <text className="v-inference-sample-a v-inference-sample-stepL" x={X(60)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          −4
-        </text>
-        <text className="v-inference-sample-a v-inference-sample-stepR" x={X(64)} y={AXIS - 22} textAnchor="middle" fontSize={13} fontWeight={700} fill={C.primaryText}>
-          +4
-        </text>
+        <g className="v-inference-sample-a v-inference-sample-stepL">
+          <Tex x={X(60)} y={AXIS - 24} size={15} width={44} color={C.primaryText}>{String.raw`-4`}</Tex>
+        </g>
+        <g className="v-inference-sample-a v-inference-sample-stepR">
+          <Tex x={X(64)} y={AXIS - 24} size={15} width={44} color={C.primaryText}>{String.raw`+4`}</Tex>
+        </g>
 
         {/* The sample's estimate */}
         <circle className="v-inference-sample-a v-inference-sample-ping" cx={X(62)} cy={AXIS} r={7} fill="none" stroke={C.primary} strokeWidth={2} />

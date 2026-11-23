@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // Trap: a dot is actual, the line predicts. Line y = 3x + 12; the dot (8, 40) sits 4 above the prediction (8, 36).
 export const alt = "A scatterplot with the line y = 3x + 12. At x = 8 the line predicts 36, but the data dot is at 40. The gap between them is 4, actual minus predicted.";
@@ -84,9 +84,9 @@ export default function Visual() {
         gap 4
       </text>
 
-      <text className={cls("eq")} x={228} y={122} fontSize={16} fontWeight={700} fill={C.ink} textAnchor="middle">
-        40 − 36 = 4
-      </text>
+      <g className={cls("eq")}>
+        <Tex x={228} y={122} size={16} width={110}>{String.raw`40-36=4`}</Tex>
+      </g>
     </Svg>
   );
 }

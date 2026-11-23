@@ -1,4 +1,4 @@
-import { C, Css, Svg } from "./kit";
+import { C, Css, Svg, Tex } from "./kit";
 
 // The inscribed angle ACB = 40° sees the same arc AB as the central angle AOB = 80°: double it. Arc AB = 80/360 = 2/9 of the circle.
 export const alt =
@@ -74,11 +74,17 @@ export default function Visual() {
         <circle cx={O.x} cy={O.y} r={3} fill={C.ink} />
 
         {/* the numbers */}
-        <text className={cls("e1")} x={194} y={46} fontSize={14} fontWeight={700} fill={C.ink} {...lab}>∠ACB = 40°</text>
+        <g className={cls("e1")}>
+          <Tex x={194} y={42} size={15} anchor="start" width={118}>{String.raw`\angle ACB=40^\circ`}</Tex>
+        </g>
         <text className={cls("e1")} x={194} y={64} fontSize={11} fill={C.muted} {...lab}>on the circle</text>
-        <text className={cls("e2")} x={194} y={98} fontSize={14} fontWeight={700} fill={C.primaryText} {...lab}>∠AOB = 80°</text>
-        <text className={cls("e2")} x={194} y={116} fontSize={11} fill={C.muted} {...lab}>2 × 40°</text>
-        <text className={cls("e3")} x={194} y={146} fontSize={14} fontWeight={700} fill={C.primaryText} {...lab}>arc = 80/360</text>
+        <g className={cls("e2")}>
+          <Tex x={194} y={94} size={15} anchor="start" width={118} color={C.primaryText}>{String.raw`\angle AOB=80^\circ`}</Tex>
+          <Tex x={194} y={112} size={12} anchor="start" width={118} color={C.muted}>{String.raw`2\times40^\circ`}</Tex>
+        </g>
+        <g className={cls("e3")}>
+          <Tex x={194} y={144} size={15} anchor="start" width={118} color={C.primaryText}>{String.raw`\text{arc}=\dfrac{80}{360}`}</Tex>
+        </g>
       </g>
     </Svg>
   );

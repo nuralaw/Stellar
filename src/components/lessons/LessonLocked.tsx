@@ -2,10 +2,12 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { I, Icon } from "@/components/bank/icons";
 import { Skeleton } from "@/components/home/parts";
+import { inline } from "@/components/lessons/Markdown";
 import { Stage } from "@/components/lessons/visuals/Stage";
 import { PlusBadge, PlusLock } from "@/components/PlusLock";
 import { SignInHint } from "@/components/plus/SignInHint";
 import { LINK_STRONG } from "@/components/plus/styles";
+import { RememberTab } from "@/lib/lesson-tab";
 import type { LessonBlocks } from "@/lib/plus-facts";
 import { PAGE } from "@/lib/ui";
 
@@ -13,6 +15,8 @@ const pl = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : man
 
 export interface LessonLockedProps {
   where: string;
+  /** The lesson's domain page (null for strategy lessons). */
+  domain: { name: string; href: string } | null;
   title: string;
   summary: string;
   visual: ReactNode;
@@ -29,29 +33,40 @@ export interface LessonLockedProps {
  * What a visitor without Plus sees at /lessons/[slug]: the lesson's cover and what's inside, as strings and numbers only
  * (never the steps, parts or questions; part titles only when PLUS.lockShowsPartTitles is on).
  */
-export function LessonLocked({ where, title, summary, visual, parts, minutes, blocks, partTitles, counts, strategy, free }: LessonLockedProps) {
+export function LessonLocked({ where, domain, title, summary, visual, parts, minutes, blocks, partTitles, counts, strategy, free }: LessonLockedProps) {
   const inside: { icon: string; label: string }[] = [
     ...(visual ? [{ icon: I.play, label: "The idea, animated" }] : []),
     ...(blocks.examples ? [{ icon: I.layers, label: pl(blocks.examples, "worked example", "worked examples") }] : []),
-    ...(blocks.quizzes ? [{ icon: I.check, label: pl(blocks.quizzes, "quick check with an explanation", "quick checks with explanations") }] : []),
+    ...(blocks.quizzes + blocks.checks ? [{ icon: I.check, label: `${pl(blocks.quizzes + blocks.checks, "task", "tasks")}: Easy, Medium and Hard after every subtopic` }] : []),
     ...(blocks.desmos ? [{ icon: I.calculator, label: blocks.desmos === 1 ? "A Desmos walkthrough" : `${blocks.desmos} Desmos walkthroughs` }] : []),
-    ...(blocks.checks ? [{ icon: I.badge, label: pl(blocks.checks, "real SAT question at the end", "real SAT questions at the end") }] : []),
+    ...(blocks.checks ? [{ icon: I.badge, label: pl(blocks.checks, "real SAT question among the tasks", "real SAT questions among the tasks") }] : []),
   ];
   const points = [
     ...(visual && blocks.examples ? ["See the idea animated, then follow a worked example"] : visual ? ["See the idea animated"] : blocks.examples ? ["Follow a worked example"] : []),
-    ...(blocks.quizzes > 0 ? ["Quick checks with explanations as you go"] : []),
+    ...(blocks.quizzes + blocks.checks > 0 ? ["Easy, Medium and Hard tasks after every subtopic, with hints and full explanations"] : []),
     ...(blocks.desmos > 0 ? [blocks.desmos === 1 ? "A step-by-step Desmos walkthrough" : `${blocks.desmos} Desmos walkthroughs`] : []),
-    ...(blocks.checks ? [`Finish with ${pl(blocks.checks, "real SAT question", "real SAT questions")} on this ${strategy ? "topic" : "skill"}`] : []),
+    ...(blocks.checks ? [`Includes ${pl(blocks.checks, "real SAT question", "real SAT questions")} on this ${strategy ? "topic" : "skill"}`] : []),
   ];
-  const meta = [pl(parts, "part", "parts"), `~${minutes} min`, blocks.checks ? pl(blocks.checks, "real SAT question", "real SAT questions") : null].filter(Boolean).join(" · ");
+  const meta = [pl(parts, "subtopic", "subtopics"), `~${minutes} min`, blocks.checks ? pl(blocks.checks, "real SAT question", "real SAT questions") : null].filter(Boolean).join(" · ");
   return (
     <div className={PAGE}>
       <div className="mx-auto max-w-3xl">
-        <Link href="/lessons" className={`text-sm ${LINK_STRONG}`}>
-          ← All lessons
+        {strategy && <RememberTab tab="strategy" />}
+        <Link href={domain?.href ?? "/lessons"} aria-label={domain ? `Back to ${domain.name}` : "All lessons"} className={`text-sm ${LINK_STRONG}`}>
+          ← {domain ? domain.name : "All lessons"}
         </Link>
         <div className="mt-6 text-center">
-          <p className="lesson-in text-sm font-medium text-primary-strong">{where}</p>
+          <p className="lesson-in text-sm font-medium text-primary-strong">
+            {where}
+            {domain && (
+              <>
+                {" · "}
+                <Link href={domain.href} className="hover:underline">
+                  {domain.name}
+                </Link>
+              </>
+            )}
+          </p>
           <h1 className="lesson-in mt-1 text-3xl font-bold tracking-tight [animation-delay:60ms] md:text-4xl">{title}</h1>
         </div>
         {visual && (
@@ -80,7 +95,7 @@ export function LessonLocked({ where, title, summary, visual, parts, minutes, bl
           {partTitles.length > 0 && (
             <ol className="mt-4 list-decimal space-y-1 pl-5 text-sm">
               {partTitles.map((t) => (
-                <li key={t}>{t}</li>
+                <li key={t}>{inline(t)}</li>
               ))}
             </ol>
           )}
