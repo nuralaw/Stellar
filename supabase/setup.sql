@@ -127,6 +127,7 @@ create policy "own rows: delete" on public.user_data for delete to authenticated
 -- Account statistics for /admin → Accounts: sign-ins and active days, recorded from Supabase Auth sessions.
 -- (Supabase's own audit log is off, and sessions are deleted on sign-out, so we keep our own history.)
 -- Only the site's server (service-role key) can read these; RLS on, no policies. Safe to re-run.
+-- The account search (admin_account_search) reads the student's name from user_data, so run user_data.sql first.
 
 create table if not exists public.account_signins (
   id       bigint generated always as identity primary key,
@@ -234,27 +235,60 @@ begin
   return result;
 end $$;
 
--- Latest accounts for the list under the chart (admin only). Only confirmed accounts (email code/link or Google):
--- signInWithOtp creates the user before the code is entered, so unfinished sign-ups are left out everywhere here.
-create or replace function public.admin_account_list(p_limit int default 100)
-returns jsonb language sql stable security definer set search_path = '' as $$
-  select coalesce(jsonb_agg(x order by x.last_sign_in_at desc nulls last), '[]'::jsonb)
-  from (
-    select u.id, u.email, u.created_at, u.last_sign_in_at,
-           coalesce(u.raw_app_meta_data ->> 'provider', 'email') as provider,
-           (select count(*) from public.account_activity a where a.user_id = u.id and a.at > now() - interval '30 days') as active_days_30
-    from auth.users u
-    where u.email_confirmed_at is not null
-    order by u.last_sign_in_at desc nulls last
-    limit least(greatest(p_limit, 1), 500)
-  ) x;
-$$;
+-- Account search for /admin → Accounts (admin only). Needs user_data.sql first (the profile name lives there).
+-- Only confirmed accounts (email code/link or Google): signInWithOtp creates the user before the code is entered,
+-- so unfinished sign-ups are left out everywhere here.
+-- p_q is split on whitespace into at most 5 lowercase words; an account matches when EVERY word is a substring of
+-- "email, profile name, Google name, id". strpos (not LIKE), so % and _ in the input are literal.
+-- Profile name = user_data row 'profile': value -> 'data' ->> 'name' (the stored value is { at, data: Profile }, see src/lib/sync.ts).
+-- admin_account_list is deliberately NOT dropped: the previous deploy still calls it until the new one is live. Drop it later by hand.
+create or replace function public.admin_account_search(p_q text, p_limit int default 50)
+returns jsonb language plpgsql stable security definer set search_path = '' as $$
+declare
+  words text[];
+begin
+  select coalesce(array_agg(w), '{}') into words
+  from (select w from regexp_split_to_table(lower(coalesce(p_q, '')), '[[:space:]]+') w where w <> '' limit 5) s;
+  if cardinality(words) = 0 then return '[]'::jsonb; end if;
+
+  return coalesce((
+    select jsonb_agg(
+      jsonb_build_object(
+        'id', x.id,
+        'email', x.email,
+        'name', x.name,
+        'created_at', x.created_at,
+        'last_sign_in_at', x.last_sign_in_at,
+        'provider', x.provider,
+        'active_days_30', (select count(*) from public.account_activity a where a.user_id = x.id and a.at > now() - interval '30 days')
+      ) order by x.last_sign_in_at desc nulls last, x.id
+    )
+    from (
+      select u.id, u.email, u.created_at, u.last_sign_in_at,
+             coalesce(u.raw_app_meta_data ->> 'provider', 'email') as provider,
+             left(coalesce(nullif(btrim(m.profile), ''), nullif(btrim(m.google), '')), 80) as name
+      from auth.users u
+      left join public.user_data d on d.user_id = u.id and d.key = 'profile'
+      cross join lateral (
+        select d.value -> 'data' ->> 'name' as profile,
+               coalesce(nullif(btrim(u.raw_user_meta_data ->> 'full_name'), ''), nullif(btrim(u.raw_user_meta_data ->> 'name'), '')) as google
+      ) m
+      where u.email_confirmed_at is not null
+        and not exists (
+          select 1 from unnest(words) w
+          where strpos(lower(concat_ws(' ', u.email, m.profile, m.google, u.id::text)), w) = 0
+        )
+      order by u.last_sign_in_at desc nulls last, u.id
+      limit least(greatest(p_limit, 1), 100)
+    ) x
+  ), '[]'::jsonb);
+end $$;
 
 revoke all on function public.admin_account_stats(timestamptz, timestamptz, text, text) from public, anon, authenticated;
-revoke all on function public.admin_account_list(int) from public, anon, authenticated;
+revoke all on function public.admin_account_search(text, int) from public, anon, authenticated;
 revoke all on function public.track_auth_session() from public, anon, authenticated;
 grant execute on function public.admin_account_stats(timestamptz, timestamptz, text, text) to service_role;
-grant execute on function public.admin_account_list(int) to service_role;
+grant execute on function public.admin_account_search(text, int) to service_role;
 
 -- ═══ traffic.sql ═══
 -- Site traffic for /admin → Traffic: our own anonymous page-view counter (no cookies banner needed, nothing personal).

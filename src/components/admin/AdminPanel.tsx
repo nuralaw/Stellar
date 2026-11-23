@@ -24,6 +24,7 @@ import { OverviewTab } from "./OverviewTab";
 import { RankedTab } from "./RankedTab";
 import { ReportsByQuestion } from "./ReportsByQuestion";
 import { RevenueTab } from "./RevenueTab";
+import { SearchBox } from "./SearchBox";
 import { SecurityTab, type SecurityMe } from "./SecurityTab";
 import { useRevenueKpis } from "./revenue-data";
 import { TrafficTab } from "./TrafficTab";
@@ -607,32 +608,6 @@ function Empty({ children }: { children: ReactNode }) {
     <div className="mt-5 flex flex-col items-center rounded-2xl bg-surface-2 px-6 py-12 text-center text-sm text-muted">
       <Icon d={I.inbox} className="mb-3 h-8 w-8" />
       {children}
-    </div>
-  );
-}
-
-function SearchBox({ value, onChange, placeholder }: { value: string; onChange: (v: string) => void; placeholder: string }) {
-  return (
-    <div className="relative w-full sm:max-w-sm">
-      <Icon d={I.search} className="pointer-events-none absolute top-1/2 left-3.5 h-4.5 w-4.5 -translate-y-1/2 text-muted" />
-      <input
-        type="search"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
-        aria-label={placeholder}
-        className="h-11 w-full rounded-xl border border-line bg-bg pr-11 pl-10 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary [&::-webkit-search-cancel-button]:hidden"
-      />
-      {value && (
-        <button
-          type="button"
-          onClick={() => onChange("")}
-          aria-label="Clear search"
-          className="absolute top-1/2 right-0.5 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-lg text-muted hover:text-ink"
-        >
-          <Icon d={I.x} className="h-4 w-4" />
-        </button>
-      )}
     </div>
   );
 }
