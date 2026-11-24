@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { I, Icon } from "@/components/bank/icons";
+import { Example } from "@/components/vocab/Example";
 import { getVocab, setVocab, useHydrated, useVocab, type VocabState } from "@/lib/store";
 
 export interface SetWord {
@@ -27,23 +28,6 @@ const STATUS = [
   { label: "Learning", cls: "bg-accent-soft text-primary-strong" },
   { label: "Known", cls: "bg-success-soft text-success" },
 ] as const;
-
-/** The example with the word's form highlighted. */
-function Example({ w, blank = false }: { w: SetWord; blank?: boolean }) {
-  const i = w.example.toLowerCase().indexOf(w.form.toLowerCase());
-  if (i < 0) return <>{w.example}</>;
-  return (
-    <>
-      {w.example.slice(0, i)}
-      {blank ? (
-        <span className="mx-0.5 inline-block w-20 border-b-2 border-primary align-baseline" aria-label="blank" />
-      ) : (
-        <strong className="font-semibold text-primary-strong">{w.example.slice(i, i + w.form.length)}</strong>
-      )}
-      {w.example.slice(i + w.form.length)}
-    </>
-  );
-}
 
 const name = (w: SetWord) => (w.with ? `${w.word} (${w.with})` : w.word);
 const shuffle = <T,>(a: T[]) => {

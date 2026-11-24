@@ -2,7 +2,7 @@
 // Everything else sends them to /register first. "/" is public too (exact match only): for a signed-out visitor the proxy
 // shows the public landing page there (app/landing, see src/proxy.ts). The generated share images must be public for crawlers.
 
-const PUBLIC = ["/register", "/login", "/auth", "/admin", "/plus", "/opengraph-image", "/twitter-image"];
+const PUBLIC = ["/register", "/login", "/auth", "/admin", "/plus", "/sat-score-calculator", "/sat-dates", "/sat-vocabulary", "/opengraph-image", "/twitter-image"];
 /** Full-screen sign-up / sign-in pages: no sidebar, footer or support button. */
 const BARE = ["/register", "/login"];
 

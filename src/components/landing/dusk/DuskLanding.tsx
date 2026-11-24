@@ -8,6 +8,7 @@ import { PlanPicker } from "@/components/auth/PlanPicker";
 import { LaunchSentence } from "@/components/plus/PlusPersonal";
 import { BTN_PRIMARY } from "@/components/plus/styles";
 import type { AuthFacts } from "@/lib/auth-facts";
+import { RESOURCE_NAV } from "@/lib/nav";
 import { PLAN_ORDER, PLUS } from "@/lib/plus-config";
 import logo from "../../../../public/logo.png";
 import logoDark from "../../../../public/logo-dark.png";
@@ -715,6 +716,13 @@ export function DuskLanding({ facts, clock }: { facts: AuthFacts; clock: { dates
                     Free vs Plus
                   </Link>
                 </li>
+                {RESOURCE_NAV.map((item) => (
+                  <li key={item.href}>
+                    <Link className="link" href={item.href}>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>

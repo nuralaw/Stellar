@@ -54,6 +54,13 @@ export const PLUS_NAV: NavItem = { href: "/plus", label: "Stellar Plus", icon: "
 /** Shown under Profile only for the admin (see lib/admin-flag.ts). */
 export const ADMIN_NAV: NavItem = { href: "/admin", label: "Support list", icon: "M4 13h4l1.5 3h5L16 13h4M5 5h14l1 8v6H4v-6l1-8Z" };
 
+/** Free public pages (no account needed): linked from the footers, listed in sitemap.ts. Names start with "sat-", see docs/SEO.md. */
+export const RESOURCE_NAV: { href: string; label: string }[] = [
+  { href: "/sat-score-calculator", label: "SAT score calculator" },
+  { href: "/sat-dates", label: "SAT test dates" },
+  { href: "/sat-vocabulary", label: "SAT vocabulary list" },
+];
+
 export function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 }

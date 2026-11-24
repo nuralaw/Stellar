@@ -103,22 +103,8 @@ export async function satClock(): Promise<{ dates: string[]; year: number }> {
   return { dates: (official.length > 0 ? official : ahead).slice(0, 4).map((d) => d.date), year: new Date(now).getUTCFullYear() };
 }
 
-const UTC = { timeZone: "UTC" } as const;
-const SHORT = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", ...UTC });
-const WITH_YEAR = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", ...UTC });
-const at = (iso: string) => new Date(`${iso}T00:00:00Z`);
-
-/** "Dec 5" */
-export const shortDate = (iso: string) => SHORT.format(at(iso));
-/** "Dec 5, 2026" */
-export const dateWithYear = (iso: string) => WITH_YEAR.format(at(iso));
-/** "2026–27", or "2027" when every date falls in one year. */
-export function seasonLabel(dates: string[]): string {
-  if (dates.length === 0) return "";
-  const first = dates[0].slice(0, 4);
-  const last = dates[dates.length - 1].slice(0, 4);
-  return first === last ? first : `${first}–${last.slice(2)}`;
-}
+// Date formatters live in lib/sat-format.ts (dependency-free); re-exported for the landing page.
+export { dateWithYear, seasonLabel, shortDate } from "@/lib/sat-format";
 
 /** The Q&As shown in the FAQ section and sent to search engines as FAQPage JSON-LD (one list, so they always match). */
 export function faqItems(d: DuskFacts): { q: string; a: string }[] {
@@ -147,7 +133,13 @@ export function faqItems(d: DuskFacts): { q: string; a: string }[] {
 /** JSON-LD: WebSite, Organization and the FAQPage. Serialized so it can't close the script tag. */
 export function jsonLd(faq: { q: string; a: string }[]): string {
   const data = [
-    { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE_NAME,
+      alternateName: ["Stellar SAT", "Stellar 1600", "stellar1600.com"],
+      url: `${SITE_URL}/`,
+    },
     { "@context": "https://schema.org", "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/logo.png` },
     {
       "@context": "https://schema.org",

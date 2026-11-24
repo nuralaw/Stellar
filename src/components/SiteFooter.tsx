@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { MAIN_NAV, PLUS_NAV } from "@/lib/nav";
+import { MAIN_NAV, PLUS_NAV, RESOURCE_NAV } from "@/lib/nav";
 
 export function SiteFooter() {
   return (
@@ -14,13 +14,22 @@ export function SiteFooter() {
             lessons.
           </p>
         </div>
-        <nav className="flex flex-wrap content-start gap-x-6 gap-y-2 text-sm md:justify-end" aria-label="Footer">
-          {[...MAIN_NAV.filter((i) => i.href !== "/"), PLUS_NAV].map((item) => (
-            <Link key={item.href} href={item.href} className="transition-colors hover:text-side-accent">
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="space-y-3">
+          <nav className="flex flex-wrap content-start gap-x-6 gap-y-2 text-sm md:justify-end" aria-label="Footer">
+            {[...MAIN_NAV.filter((i) => i.href !== "/"), PLUS_NAV].map((item) => (
+              <Link key={item.href} href={item.href} className="transition-colors hover:text-side-accent">
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <nav className="flex flex-wrap content-start gap-x-6 gap-y-2 border-t border-side-line pt-3 text-sm md:justify-end" aria-label="Free SAT tools">
+            {RESOURCE_NAV.map((item) => (
+              <Link key={item.href} href={item.href} className="transition-colors hover:text-side-accent">
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
       <div className="border-t border-side-line">
         <p className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed md:px-8">
