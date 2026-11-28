@@ -12,7 +12,7 @@ export interface NavGroup {
   items: NavItem[];
 }
 
-/** Sidebar sections: learn → practice → tournaments. */
+/** Sidebar sections: learn → practice → tournaments → admission. */
 export const NAV_GROUPS: NavGroup[] = [
   {
     title: "Learn",
@@ -37,6 +37,12 @@ export const NAV_GROUPS: NavGroup[] = [
       { href: "/compete", label: "Weekly tournament", icon: "M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" },
       { href: "/ranked", label: "Ranked", icon: "M13 3 4 14h7l-1 7 9-11h-7l1-7Z" },
       { href: "/leaderboard", label: "Leaderboard", icon: "M3 21h18M5 21v-8h4v8M10 21V5h4v16M15 21v-6h4v6" },
+    ],
+  },
+  {
+    title: "Admission",
+    items: [
+      { href: "/admission", label: "Admission", icon: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z" },
     ],
   },
 ];

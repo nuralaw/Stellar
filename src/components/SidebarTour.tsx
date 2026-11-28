@@ -31,13 +31,14 @@ const COPY: Record<string, string> = {
   "/mistakes": `Every question you got wrong, ready to try again. With Plus they come back on a ${INTERVALS.join("-")} day schedule.`,
   "/test": "Timed past-paper tests, module by module, with an estimated score and a full review.",
   "/compete": "Timed rounds every week, with leaderboards to see how you rank.",
+  "/admission": "Spin the globe, pick a destination and see its universities: SAT and English requirements, deadlines and tuition.",
   "/profile": "Your name, avatar, SAT date and account.",
   "/plus": "See what Plus adds to the free site, from every past paper to spaced review of your mistakes.",
 };
 
 type Step = { key: string; title: string; body: string; icon: string | null };
 
-/** Every sidebar item in sidebar order (Learn, Practice, Tournaments, then Profile and Stellar Plus; not the admin one). */
+/** Every sidebar item in sidebar order (Learn, Practice, Tournaments, Admission, then Profile and Stellar Plus; not the admin one). */
 const ITEMS = [...NAV_GROUPS.flatMap((g) => g.items), ...ACCOUNT_NAV, PLUS_NAV];
 const STEPS: Step[] = [
   { key: "intro", title: "Welcome to Stellar!", body: "Here's what each button in the sidebar does.", icon: null },
